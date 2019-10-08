@@ -1,0 +1,8 @@
+namespace: hubrise-www
+
+commonLabels:
+  app: website
+
+resources:
+  - website/service.yaml
+  - website/deployment.yaml

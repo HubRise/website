@@ -18,9 +18,7 @@ docker run -v $(pwd):/var/www/website -p8000:8000 hubrise/website-dev
 
 ## Build production image
 
-```shell
-docker build -t hubrise/website .
-```
+Same process as a Rails app (see cluster/doc/build_deploy_app.md)
 
 ## 🧐 What's inside?
 

@@ -1,0 +1,28 @@
+kind: Deployment
+apiVersion: apps/v1
+
+metadata:
+  name: website
+
+spec:
+  replicas: 1
+
+  template:
+    metadata:
+      annotations:
+        # Change value to force pod restart
+        checksum/config: ""
+
+    spec:
+      containers:
+        - name: website
+          # We use the ":latest" image
+          imagePullPolicy: Always
+
+          resources:
+            requests:
+              cpu: 30m
+              memory: 80Mi
+            limits:
+              cpu: 50m
+              memory: 150Mi

@@ -1,0 +1,86 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+
+metadata:
+  name: website-com
+  namespace: hubrise-www
+  labels:
+    app: website
+  annotations:
+    certmanager.k8s.io/cluster-issuer: letsencrypt-production
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
+
+spec:
+  tls:
+    - hosts:
+        - hubrise.com
+        - www.hubrise.com
+      secretName: website-com-cert
+
+  rules:
+    - host: www.hubrise.com
+      http:
+        paths:
+          - backend:
+              serviceName: website
+              servicePort: 80
+
+---
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+
+metadata:
+  name: website-co-uk
+  namespace: hubrise-www
+  labels:
+    app: website
+  annotations:
+    certmanager.k8s.io/cluster-issuer: letsencrypt-production
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
+    nginx.ingress.kubernetes.io/permanent-redirect: https://www.hubrise.com
+
+spec:
+  tls:
+    - hosts:
+        - hubrise.co.uk
+        - www.hubrise.co.uk
+      secretName: website-co-uk-cert
+
+  rules:
+    - host: www.hubrise.co.uk
+      http:
+        paths:
+          - backend:
+              serviceName: website
+              servicePort: 80
+
+---
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+
+metadata:
+  name: website-fr
+  namespace: hubrise-www
+  labels:
+    app: website
+  annotations:
+    certmanager.k8s.io/cluster-issuer: letsencrypt-production
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
+    nginx.ingress.kubernetes.io/permanent-redirect: https://www.hubrise.com/fr
+
+spec:
+  tls:
+    - hosts:
+        - hubrise.fr
+        - www.hubrise.fr
+      secretName: website-fr-cert
+
+  rules:
+    - host: www.hubrise.fr
+      http:
+        paths:
+          - backend:
+              serviceName: website
+              servicePort: 80
