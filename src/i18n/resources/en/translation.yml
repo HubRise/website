@@ -57,6 +57,7 @@ layout:
       email: contact@hubrise.com
     copyright: Copyright © {{ year }} HubRise
   menu:
+    title: Menu
     links:
       - title: Home
         to: /

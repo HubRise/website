@@ -47,6 +47,7 @@ export const PricingPage = ({ callToActionExtra }) => {
             <Link
               className='button button_white button_section'
               to={`https://manager.hubrise.com/signup${queryString}`}
+              newTab={false}
             >
               {t(`pages.pricing.offer.button`)}
             </Link>
@@ -59,6 +60,7 @@ export const PricingPage = ({ callToActionExtra }) => {
             <Link
               className='section__description-link section__description-link_black'
               to={`https://manager.hubrise.com/signup${queryString}`}
+              newTab={false}
             >
               text
             </Link>

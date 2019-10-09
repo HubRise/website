@@ -5,35 +5,41 @@ import { Link as GatsbyLink } from 'gatsby'
 
 import locales from '../i18n/locales'
 
-const Link = ({ to, children, ...other }) => {
-  const isInternalPage = to.startsWith(`/`)
-  const isWithinCurrentPage = to.startsWith(`#`)
+const Link = ({ to, children, newTab, ...other }) => {
+  const leadsToInternalPage = to.startsWith(`/`)
+  const isAnchorWithinCurrentPage = to.startsWith(`#`)
   const { i18n: { language } } = useTranslation()
 
-  return isInternalPage ? (
-    <GatsbyLink
-      to={locales[language].default
-        ? to
-        : `/${language}${to}`}
-      {...other}
-    >
-      {children}
-    </GatsbyLink>
-  ) : (
+  if (leadsToInternalPage) {
+    return (
+      <GatsbyLink
+        to={locales[language].default
+          ? to
+          : `/${language}${to}`}
+        {...other}
+      >
+        {children}
+      </GatsbyLink>
+    )
+  }
+
+  if (newTab && !isAnchorWithinCurrentPage) {
+    return (
+      <a
+        href={to}
+        target='_blank'
+        rel='noopener noreferrer'
+        {...other}
+      >
+        {children}
+      </a>
+    )
+  }
+
+  return (
     <a
       href={to}
       {...other}
-      {...(
-        // Open only external links in a new tab.
-        // Don't do this if a link leads to a section within the current page.
-        !isWithinCurrentPage
-          ? {
-            target: `_blank`,
-            rel: `noopener noreferrer`
-          }
-          : {}
-      )}
-
     >
       {children}
     </a>
@@ -42,11 +48,13 @@ const Link = ({ to, children, ...other }) => {
 
 Link.propTypes = {
   to: PropTypes.string.isRequired,
-  children: PropTypes.node
+  children: PropTypes.node,
+  newTab: PropTypes.bool
 }
 
 Link.defaultProps = {
-  children: <></>
+  children: <></>,
+  newTab: true
 }
 
 export default Link

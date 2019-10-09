@@ -47,12 +47,21 @@ const HeaderMobile = () => {
             }}
             onClick={() => setIsVisible(!isVisible)}
           />
-          <Link className='mobile-bar__logo' to='/'>
-            <img src={logo} alt='company-logo' />
+          <Link
+            className='mobile-bar__logo'
+            to='/'
+          >
+            <img
+              src={logo}
+              alt='company-logo'
+            />
           </Link>
         </div>
         {isVisible && (
-          <div id='mobile-bar-menu' className='mobile-bar__menu'>
+          <div
+            id='mobile-bar-menu'
+            className='mobile-bar__menu'
+          >
             <div className='mobile-bar__header'>
               <button
                 onClick={() => setIsVisible(!isVisible)}
@@ -60,16 +69,29 @@ const HeaderMobile = () => {
                 id='mobile-bar-close'
               >
                 <i className='fa fa-angle-left fa-pull-left' />
-                <span className='mobile-bar__sclose-button-span'>Menu</span>
+                <span className='mobile-bar__sclose-button-span'>
+                  {t(`layout.menu.title`)}
+                </span>
               </button>
-              <div className='header__social-block header__social-block_sidenav'>
+              <div
+                className={`
+                  header__social-block
+                  header__social-block_sidenav
+                `}
+              >
                 {social.map(({ icon, to }, idx) => (
                   <Link
                     key={generateKey(icon, idx)}
                     to={to}
                     className='header__social-block-link'
                   >
-                    <i className={`fa ${icon} header__social-block-icon`} />
+                    <i
+                      className={`
+                        fa
+                        ${icon}
+                        header__social-block-icon
+                      `}
+                    />
                   </Link>
                 ))}
               </div>
@@ -92,11 +114,17 @@ const HeaderMobile = () => {
                 <Link
                   to='https://manager.hubrise.com/signup'
                   className='header__action-signup'
+                  newTab={false}
                 >
-                  Sign up
+                  {t(`layout.header.buttons.signup`)}
                 </Link>
                 <button className='header__action-login'>
-                  <Link to='https://manager.hubrise.com/login'>Login</Link>
+                  <Link
+                    to='https://manager.hubrise.com/login'
+                    newTab={false}
+                  >
+                    {t(`layout.header.buttons.login`)}
+                  </Link>
                 </button>
               </div>
             </nav>
