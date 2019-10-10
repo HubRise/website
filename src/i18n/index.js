@@ -15,6 +15,7 @@ i18n
       fr: { translation: translationFr }
     },
     fallbackLng: `en`,
+    whitelist: [`fr`, `en`],
     debug: false,
     interpolation: { escapeValue: false },
     returnObjects: true,
