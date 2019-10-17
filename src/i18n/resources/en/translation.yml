@@ -4,8 +4,8 @@ pages:
       title: Centralize the data of your retail store
       description: Connect your POS, your website and all your applications.<1>Read more</1>
     main:
-      title: HubRise makes POS integration easy
-      description: HubRise stores your data in the Cloud for easy sharing between your applications. Your HubRise-compatible applications can be connected in one click and start communicating together instantly.
+      title: HubRise makes integrations easy
+      description: HubRise stores your data in the Cloud to make it available for all your applications. Your HubRise-compatible applications can be connected in one click and start communicating together instantly.
       features:
         - Online Ordering Website
         - Dashboard
