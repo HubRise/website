@@ -95,11 +95,12 @@ export const appPageQuery = graphql`
 `
 
 AppPage.propTypes = {
-  data: PropTypes.shape({
-    mdx: PropTypes.shape({
+  data: PropTypes.exact({
+    currentPage: PropTypes.exact({
       frontmatter: PropTypes.shape({
-        appName: PropTypes.string.isRequired,
-        info: PropTypes.shape({
+        position: PropTypes.number,
+        title: PropTypes.string,
+        info: PropTypes.exact({
           category: PropTypes.string,
           availability: PropTypes.string,
           priceRange: PropTypes.string,
@@ -114,7 +115,8 @@ AppPage.propTypes = {
         })
       ).isRequired,
       fields: PropTypes.shape({
-        slug: PropTypes.string.isRequired
+        slug: PropTypes.string.isRequired,
+        appId: PropTypes.string.isRequired
       }).isRequired,
       body: PropTypes.string.isRequired
     }),
@@ -126,11 +128,12 @@ AppPage.propTypes = {
         })
       )
     }),
-    helpPages: PropTypes.shape({
+    relatedPages: PropTypes.exact({
       nodes: PropTypes.arrayOf(
-        PropTypes.shape({
-          frontmatter: PropTypes.shape({
-            title: PropTypes.string.isRequired
+        PropTypes.exact({
+          frontmatter: PropTypes.exact({
+            title: PropTypes.string.isRequired,
+            position: PropTypes.number.isRequired
           }).isRequired,
           headings: PropTypes.arrayOf(
             PropTypes.shape({
@@ -138,7 +141,7 @@ AppPage.propTypes = {
               value: PropTypes.string.isRequired
             })
           ),
-          fields: PropTypes.shape({
+          fields: PropTypes.exact({
             slug: PropTypes.string.isRequired
           }).isRequired
         })
