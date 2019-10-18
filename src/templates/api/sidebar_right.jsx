@@ -16,6 +16,8 @@ const sortPagesAsc = (pages) => {
 
 const SidebarRight = ({ currentPath, pages, title, logo }) => {
   const [isExpanded, setIsExpanded] = useState(false)
+  const [currentPage] = pages
+    .filter(({ fields }) => currentPath.endsWith(fields.slug))
 
   return (
     <div
@@ -48,7 +50,7 @@ const SidebarRight = ({ currentPath, pages, title, logo }) => {
           className='content-nav__title content-nav__title_small'
           onClick={() => setIsExpanded(!isExpanded)}
         >
-          {title || `Content`}
+          {currentPage.frontmatter.title || `Content`}
           <i
             className={`
               fa
@@ -121,12 +123,12 @@ SidebarRight.propTypes = {
       }).isRequired,
       headings: PropTypes.arrayOf(
         PropTypes.shape({
-          depth: PropTypes.number.isRequired,
-          value: PropTypes.string.isRequired
+          depth: PropTypes.number,
+          value: PropTypes.string
         })
       ).isRequired,
       fields: PropTypes.shape({
-        slug: PropTypes.string.isRequired
+        slug: PropTypes.string
       }).isRequired
     })
   ).isRequired
