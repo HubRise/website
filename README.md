@@ -1,3 +1,5 @@
+![](https://github.com/hubrise/website/workflows/spec/badge.svg)
+
 ## Setup
 
 1. Install docker
