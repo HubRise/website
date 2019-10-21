@@ -89,7 +89,15 @@ const Gallery = ({ images, appName }) => {
     window.addEventListener(`keydown`, handler)
 
     return () => window.removeEventListener(`keydown`, handler)
-  }, [ isSliderVisible ])
+  }, [isSliderVisible])
+
+  useEffect(() => {
+    if (isSliderVisible) {
+      document.body.classList.toggle(`no-vertical-scroll`)
+
+      return () => document.body.classList.toggle(`no-vertical-scroll`)
+    }
+  }, [isSliderVisible])
 
   return (
     <div className='section__content'>
