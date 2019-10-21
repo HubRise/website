@@ -141,6 +141,11 @@
       padding-top: $block-padding;
       padding-bottom: $block-padding;
       background: #ffffff;
+
+      @include breakpoint(medium down) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
     }
 
     .section__sidebar_right {

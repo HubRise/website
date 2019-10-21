@@ -5,9 +5,9 @@
     position: relative;
     padding-top: 1rem;
     margin-bottom: 0;
-    color: #cccccc;
+    color: #555;
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 1rem;
     padding-left: 1rem;
     cursor: pointer;
@@ -24,17 +24,17 @@
     }
     @include breakpoint(medium down) {
       margin-bottom: 0;
-      padding: 1rem 1.5rem;
+      padding: 1rem;
       display: block;
     }
   }
 
   &__list {
     display: block;
-    margin-top: 1rem;
+    padding: 1rem 0;
 
     @include breakpoint(medium down) {
-      margin-top: 0;
+      padding: 0;
     }
   }
 
@@ -65,7 +65,7 @@
   }
 
   &__item:last-child {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
 
   &__item_active {
@@ -85,8 +85,8 @@
     font-size: 0.9375rem;
     display: inline-block;
     width: 100%;
+    padding: 0.2rem 0;
     padding-left: 1rem;
-    padding-top: 0.2rem;
     &:hover {
       color: $main-green;
     }
