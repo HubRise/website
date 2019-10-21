@@ -8,21 +8,6 @@ import { generateKey } from './utils'
 import logo from '../images/logo.png'
 import button from '../images/bread_button.png'
 
-const social = [
-  {
-    icon: 'fa-twitter',
-    to: 'https://www.twitter.com'
-  },
-  {
-    icon: 'fa-facebook',
-    to: 'https://www.facebook.com'
-  },
-  {
-    icon: 'fa-envelope',
-    to: 'mailto:contact@hubrise.com'
-  }
-]
-
 const HeaderMobile = () => {
   const [ isVisible, setIsVisible ] = useState(false)
   const { t } = useTranslation()
@@ -62,17 +47,6 @@ const HeaderMobile = () => {
                 <i className='fa fa-angle-left fa-pull-left' />
                 <span className='mobile-bar__sclose-button-span'>Menu</span>
               </button>
-              <div className='header__social-block header__social-block_sidenav'>
-                {social.map(({ icon, to }, idx) => (
-                  <Link
-                    key={generateKey(icon, idx)}
-                    to={to}
-                    className='header__social-block-link'
-                  >
-                    <i className={`fa ${icon} header__social-block-icon`} />
-                  </Link>
-                ))}
-              </div>
             </div>
             <nav className='mobile-bar__content'>
               <ul className='leftbar-menu'>
