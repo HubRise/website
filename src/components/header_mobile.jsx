@@ -22,16 +22,20 @@ const HeaderMobile = () => {
       )}
       <div className='header__mobile'>
         <div className='mobile-bar'>
-          <button
-            id='mobile-bar-button'
-            className='mobile-bar__button'
-            type='button'
-            style={{
-              backgroundImage: `url(${button})`,
-              backgroundRepeat: 'no-repeat'
-            }}
+          <div
+            className='mobile-bar__button-wrapper'
             onClick={() => setIsVisible(!isVisible)}
-          />
+          >
+            <button
+              id='mobile-bar-button'
+              className='mobile-bar__button'
+              type='button'
+              style={{
+                backgroundImage: `url(${button})`,
+                backgroundRepeat: 'no-repeat'
+              }}
+            />
+          </div>
           <Link className='mobile-bar__logo' to='/'>
             <img src={logo} alt='company-logo' />
           </Link>
@@ -40,12 +44,24 @@ const HeaderMobile = () => {
           <div id='mobile-bar-menu' className='mobile-bar__menu'>
             <div className='mobile-bar__header'>
               <button
-                onClick={() => setIsVisible(!isVisible)}
                 className='mobile-bar__close-button'
                 id='mobile-bar-close'
               >
-                <i className='fa fa-angle-left fa-pull-left' />
-                <span className='mobile-bar__sclose-button-span'>Menu</span>
+                <div
+                  className='mobile-bar__close-button-icon-wrapper'
+                  onClick={() => setIsVisible(!isVisible)}
+                >
+                  <i
+                    className={`
+                    fa
+                    fa-angle-left
+                    mobile-bar__close-button-icon
+                  `}
+                  />
+                </div>
+                <span>
+                  Menu
+                </span>
               </button>
             </div>
             <nav className='mobile-bar__content'>

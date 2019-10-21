@@ -16,11 +16,18 @@
     display: flex;
   }
 
+  &__button-wrapper {
+    display: grid;
+    align-items: center;
+    height: inherit;
+    width: 3rem;
+    cursor: pointer;
+  }
+
   &__button {
     width: 21px;
     height: 21px;
     display: block;
-    cursor: pointer;
   }
 
   &__logo {
@@ -61,13 +68,19 @@
   }
 
   &__close-button {
+    position: relative;
     font-size: 1.2rem;
     color: $main-green;
     width: 100%;
     text-transform: uppercase;
-    i {
-      width: 1.75rem;
-      cursor: pointer;
-    }
+  }
+
+  &__close-button-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: -1.5rem;
+    width: 3rem;
+    cursor: pointer;
   }
 }
