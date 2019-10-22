@@ -47,7 +47,11 @@ const SidebarRight = ({ currentPath, pages, title, logo }) => {
         </h5>
         <h5
           id='content-nav'
-          className='content-nav__title content-nav__title_small'
+          className={`
+            content-nav__title
+            content-nav__title_small
+            ${isExpanded ? 'content-nav__title_small_bottom_border' : ''}
+          `}
           onClick={() => setIsExpanded(!isExpanded)}
         >
           {currentPage.frontmatter.title || `Content`}

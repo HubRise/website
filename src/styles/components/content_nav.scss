@@ -23,10 +23,14 @@
       display: none;
     }
     @include breakpoint(medium down) {
+      display: block;
       margin-bottom: 0;
       padding: 1rem;
-      display: block;
     }
+  }
+
+  &__title_small_bottom_border {
+    border-bottom: 1px solid $main-green;
   }
 
   &__list {
@@ -61,18 +65,15 @@
     font-size: 0.9375rem;
     width: 100%;
     display: inline-block;
-    margin-bottom: 0.2rem;
-  }
-
-  &__item:last-child {
-    margin-bottom: 0;
   }
 
   &__item_active {
     color: $white;
+
     .content-nav__link {
       color: $white;
       background: $main-green;
+
       &:hover {
         color: $white;
       }
@@ -85,8 +86,9 @@
     font-size: 0.9375rem;
     display: inline-block;
     width: 100%;
-    padding: 0.2rem 0;
+    padding: 0.25rem 0;
     padding-left: 1rem;
+
     &:hover {
       color: $main-green;
     }
