@@ -7,7 +7,7 @@ import Overview from './overview'
 import Gallery from './gallery'
 import Info from './info'
 import Layout from '../api/layout'
-import SidebarRight from '../api/sidebar_right'
+import SectionNavigation from '../api/section_navigation'
 
 const AppPage = ({ data, path }) => {
   const { currentPage, relatedPages, appImages } = data
@@ -19,7 +19,7 @@ const AppPage = ({ data, path }) => {
         title={frontmatter.title}
         content={body}
       />
-      <SidebarRight
+      <SectionNavigation
         logo={appImages.nodes.find(({ name }) => name === `logo`)}
         currentPath={path}
         pages={[

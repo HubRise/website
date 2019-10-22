@@ -5,7 +5,7 @@ import { capitalize } from 'lodash'
 import PropTypes from 'prop-types'
 
 import Layout from './layout'
-import SidebarRight from './sidebar_right'
+import SectionNavigation from './section_navigation'
 
 const ApiPage = ({ data, path }) => {
   const { currentPage, relatedPages } = data
@@ -23,7 +23,7 @@ const ApiPage = ({ data, path }) => {
           </MDXRenderer>
         </div>
       </div>
-      <SidebarRight
+      <SectionNavigation
         logo={data.appLogo}
         currentPath={path}
         title={fields.appId && capitalize(fields.appId)}
