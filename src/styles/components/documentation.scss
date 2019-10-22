@@ -127,30 +127,47 @@
   /* -----------
       Code
      ----------- */
+  // Coming from a plugin {{{
   .prism-code {
     padding: 2.5rem 1.25rem;
     margin: 1.5rem auto;
+    background-color: #fbfbfb;
     border-top: 1px solid $gray-color;
     border-bottom: 1px solid $gray-color;
+    font-family: Consolas, 'Liberation Mono', Courier, monospace;
+    font-weight: normal;
 
-    & .prism-code__wrapper {
+    .prism-code_wrapper {
       position: relative;
       white-space: inherit;
+      font-size: 0.9375rem;
+    }
+
+    .token-line {
+      display: block;
+      border: none;
+      padding: 0;
+      font-family: Consolas, 'Liberation Mono', Courier, monospace !important;
+      color: #555;
+
+      span:last-child {
+        margin-right: 1.25rem;
+      }
+
+      .token.string {
+        color: #b2564f;
+      }
     }
   }
 
-  .token-line {
-    display: block;
-    border: none;
-    padding: 0;
-    & span:last-child {
-      margin-right: 1.25rem;
-    }
+  .prism-code.prism-code_inline {
+    padding: 0 2px;
+    margin: 0 2px;
+    border: 1px solid #cacaca;
+    background-color: #e6e6e6;
+    color: #0a0a0a;
   }
-
-  code {
-    background-color: inherit;
-  }
+  // }}}
 
   figure {
     width: 100%;
@@ -167,12 +184,6 @@
 
     tr {
       border: none;
-    }
-
-    .line {
-      font-family: Consolas, 'Liberation Mono', Courier, monospace !important;
-      font-size: 0.9375rem;
-      color: #555;
     }
   }
 

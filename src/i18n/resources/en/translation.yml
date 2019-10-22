@@ -2,7 +2,7 @@ pages:
   home:
     hero:
       title: Centralize the data of your retail store
-      description: Connect your POS your website and all your applications.<1>Read more</1>
+      description: Connect your POS, your website and all your applications.<1>Read more</1>
     main:
       title: HubRise makes POS integration easy
       description: HubRise stores your data in the Cloud for easy sharing between your applications. Your HubRise-compatible applications can be connected in one click and start communicating together instantly.
@@ -32,7 +32,7 @@ pages:
         title: Integration
         description: Integration checklist, covering several types of applications
   pricing:
-    title: Single monthly fee unlimited usage
+    title: Single monthly fee, unlimited usage
     offer:
       value: 25€ / month <1>per location</1>
       features:
@@ -57,6 +57,7 @@ layout:
       email: contact@hubrise.com
     copyright: Copyright © {{ year }} HubRise
   menu:
+    title: Menu
     links:
       - title: Home
         to: /

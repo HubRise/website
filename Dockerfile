@@ -15,9 +15,12 @@ RUN yarn install
 # Add project files
 COPY . .
 
+# For sentry
+ENV SENTRY_DSN https://96b4d1defd7648308c6e30f8a3470cfd@sentry.io/1776244
+ENV NODE_ENV production
+
 # Build project
 RUN ./node_modules/.bin/gatsby build
-
 
 # ****************************
 # **      Deploy stage      **

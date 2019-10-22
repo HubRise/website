@@ -1,5 +1,6 @@
 ---
 title: API Extensions
+position: 6
 ---
 
 The HubRise API can be extended in two ways:

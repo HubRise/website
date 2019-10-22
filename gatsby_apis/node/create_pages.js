@@ -1,5 +1,5 @@
 const path = require('path')
-const locales = require(path.resolve(process.cwd(), 'src/i18n/locales'))
+const locales = require(path.resolve(process.cwd(), 'src/i18n/locales.json'))
 
 const templates = path.resolve(process.cwd(), `src/templates`)
 const docsTemplate = path.join(templates, `api/index.jsx`)

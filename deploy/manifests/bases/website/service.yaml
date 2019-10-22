@@ -1,0 +1,16 @@
+kind: Service
+apiVersion: v1
+
+metadata:
+  name: website
+  labels:
+    app: website
+
+spec:
+  selector:
+    app: website
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80

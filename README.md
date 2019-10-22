@@ -1,3 +1,5 @@
+![](https://github.com/hubrise/website/workflows/spec/badge.svg)
+
 ## Setup
 
 1. Install docker
@@ -16,11 +18,15 @@ To run project on http://localhost:8000:
 docker run -v $(pwd):/var/www/website -p8000:8000 hubrise/website-dev
 ```
 
-## Build production image
+## Run the test suite
 
 ```shell
-docker build -t hubrise/website .
+docker run -v $(pwd):/var/www/website hubrise/website-dev "yarn test && yarn test:e2e && test:e2e:ci"
 ```
+
+## Build production image
+
+Same process as a Rails app (see cluster/doc/build_deploy_app.md)
 
 ## 🧐 What's inside?
 

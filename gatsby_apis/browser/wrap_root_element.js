@@ -14,7 +14,7 @@ import { generateHeaders } from '../../src/components/utils'
 import i18n from '../../src/i18n'
 
 let components = {
-  ...generateHeaders(),
+  ...generateHeaders([`h2`, `h3`]),
   a: ({ href, ...other }) => <Link to={href} {...other} />,
   pre: ({ children: { props } }) => (
     <HighlightCode

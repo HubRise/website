@@ -42,11 +42,15 @@ const Header = ({ path }) => {
             <Link
               className='header__action-signup'
               to='https://manager.hubrise.com/signup'
+              newTab={false}
             >
               {t(`layout.header.buttons.signup`)}
             </Link>
             <button className='header__action-login'>
-              <Link to='https://manager.hubrise.com/login'>
+              <Link
+                to='https://manager.hubrise.com/login'
+                newTab={false}
+              >
                 {t(`layout.header.buttons.login`)}
               </Link>
             </button>

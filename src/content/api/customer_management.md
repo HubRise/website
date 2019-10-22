@@ -1,5 +1,6 @@
 ---
 title: Customer management
+position: 5
 ---
 
 ## 1. Customer lists

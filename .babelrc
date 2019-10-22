@@ -3,13 +3,10 @@
     ["prismjs", {
         "languages": ["json", "http", "ruby"],
         "plugins": ["line-numbers"],
-        "theme": "default",
         "css": true
     }]
   ],
   "presets": [
-    [
-      "babel-preset-gatsby"
-    ]
+    [ "babel-preset-gatsby" ]
   ]
 }

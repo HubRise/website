@@ -1,5 +1,6 @@
 ---
 title: Order management
+position: 3
 ---
 
 ## 1. Orders
@@ -18,23 +19,23 @@ Almost all fields are optional. In fact the simplest order that can be created o
 
 #### Parameters:
 
-| Name                                                                  | Type                                                    | Description                                                                                                                                                                     |
-| --------------------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `private_ref` <Label type="optional" />                               | string                                                  | The client internal id for this order. This field is only visible by the client and will typically be used to lookup an order.                                                  |
-| `status`                                                              | [OrderStatus](#3-order-status)                          | The order status                                                                                                                                                                |
-| `service_type` <Label type="optional" />                              | [ServiceType](/api/general-concepts/#service-type)      | How the order is delivered/served to the customer.                                                                                                                              |
-| `customer` <Label type="optional" />                                  | [Customer](#2-orders-customer)                          | The id of the customer who placed the order. See the customer matching rules section.                                                                                           |
-| `customer_list_id` / `customer_private_ref` <Label type="optional" /> | string                                                  | If `customer_id` is not provided, a combination of `customer_list_id` and `customer_private_ref` can be used to identify the customer. See the customer matching rules section. |
-| `expected_time` <Label type="optional" />                             | [Time](/api/general-concepts/#date-time)                | The time the customer is expecting to get his order.                                                                                                                            |
-| `customer_notes` <Label type="optional" />                            | string                                                  | Information given by the customer, eg: delivery notes, etc.                                                                                                                     |
-| `total` <Label type="optional" />                                     | [Money](/api/general-concepts/#monetary-value)          | The amount paid by the customer.                                                                                                                                                |
-| `custom_fields` <Label type="optional" />                             | [CustomFields](/api/extensions/#custom-fields)          | Additional data attached to the order.                                                                                                                                          |
-| `items` <Label type="optional" />                                     | [OrderItem](#4-order-items)[]                           | The order items.                                                                                                                                                                |
-| `deals` <Label type="optional" />                                     | [OrderDeal](#4-order-items)[]                           | The deals used in this order.                                                                                                                                                   |
-| `discounts` <Label type="optional" />                                 | [OrderDiscount](#8-order-discounts)[]                   | The discounts applied.                                                                                                                                                          |
-| `charges` <Label type="optional" />                                   | [OrderCharge](#9-order-charges)[]                       | The charges incurred on this order.                                                                                                                                             |
-| `payments` <Label type="optional" />                                  | [OrderPayment](#10-order-payments)[]                    | The payment method(s) used.                                                                                                                                                     |
-| `loyalty_operations` <Label type="optional" />                        | [OrderLoyaltyOperation](#11-order-loyalty-operations)[] | Add or remove points to the customer loyalty card(s). Can only be used for orders linked to a customer.                                                                         |
+| Name                                                                  | Type                                                 | Description                                                                                                                                                                     |
+| --------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `private_ref` <Label type="optional" />                               | string                                               | The client internal id for this order. This field is only visible by the client and will typically be used to lookup an order.                                                  |
+| `status`                                                              | [OrderStatus](#order-status)                         | The order status                                                                                                                                                                |
+| `service_type` <Label type="optional" />                              | [ServiceType](/api/general-concepts/#service-type)   | How the order is delivered/served to the customer.                                                                                                                              |
+| `customer` <Label type="optional" />                                  | [Customer](#orders-customer)                         | The id of the customer who placed the order. See the customer matching rules section.                                                                                           |
+| `customer_list_id` / `customer_private_ref` <Label type="optional" /> | string                                               | If `customer_id` is not provided, a combination of `customer_list_id` and `customer_private_ref` can be used to identify the customer. See the customer matching rules section. |
+| `expected_time` <Label type="optional" />                             | [Time](/api/general-concepts/#date-time)             | The time the customer is expecting to get his order.                                                                                                                            |
+| `customer_notes` <Label type="optional" />                            | string                                               | Information given by the customer, eg: delivery notes, etc.                                                                                                                     |
+| `total` <Label type="optional" />                                     | [Money](/api/general-concepts/#monetary-value)       | The amount paid by the customer.                                                                                                                                                |
+| `custom_fields` <Label type="optional" />                             | [CustomFields](/api/extensions/#custom-fields)       | Additional data attached to the order.                                                                                                                                          |
+| `items` <Label type="optional" />                                     | [OrderItem](#order-items)[]                          | The order items.                                                                                                                                                                |
+| `deals` <Label type="optional" />                                     | [OrderDeal](#order-items)[]                          | The deals used in this order.                                                                                                                                                   |
+| `discounts` <Label type="optional" />                                 | [OrderDiscount](#order-discounts)[]                  | The discounts applied.                                                                                                                                                          |
+| `charges` <Label type="optional" />                                   | [OrderCharge](#order-charges)[]                      | The charges incurred on this order.                                                                                                                                             |
+| `payments` <Label type="optional" />                                  | [OrderPayment](#order-payments)[]                    | The payment method(s) used.                                                                                                                                                     |
+| `loyalty_operations` <Label type="optional" />                        | [OrderLoyaltyOperation](#order-loyalty-operations)[] | Add or remove points to the customer loyalty card(s). Can only be used for orders linked to a customer.                                                                         |
 
 #### Example request:
 
@@ -308,7 +309,7 @@ Orders do not have to go through all steps. The sequence actually depends on the
 | `sku_ref` <Label type="optional" />       | string                                         | The ref of the sku.                                                                                                                                                                         |
 | `price`                                   | [Money](/api/general-concepts/#monetary-value) | The unit price of the sku, without the cost of options.                                                                                                                                     |
 | `quantity`                                | decimal                                        | The quantity of items ordered.                                                                                                                                                              |
-| `options` <Label type="optional" />       | [OrderOption](#6-order-options)[]              | Item customization.                                                                                                                                                                         |
+| `options` <Label type="optional" />       | [OrderOption](#order-options)[]                | Item customization.                                                                                                                                                                         |
 | `points_earned` <Label type="optional" /> | decimal                                        | Loyalty points earned by the customer. This field is not linked to a particular loyalty card: a loyalty operation must be included in the order to effectively add/remove points to a card. |
 | `points_used` <Label type="optional" />   | decimal                                        | Loyalty points used by the customer. Same remark as above.                                                                                                                                  |
 
@@ -385,12 +386,12 @@ An order deal associates an order item's `deal_key` to a particular deal.
 #### Example:
 
 ```json
-[
-    "0": {
-      "name": "Buy a dessert, get a drink for 1€",
-      "ref": "FREEDRINK"
-    }
-]
+{
+  "0": {
+    "name": "Buy a dessert, get a drink for 1€",
+    "ref": "FREEDRINK"
+  }
+}
 ```
 
 ## 8. Order discounts

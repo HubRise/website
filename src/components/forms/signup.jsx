@@ -5,6 +5,8 @@ import * as yup from 'yup'
 
 import Form from './base/form'
 
+import locales from '../../i18n/locales'
+
 const structure = {
   formId: `signup`,
   sections: [
@@ -103,8 +105,10 @@ const SignupEnhanced = withFormik({
     password: ``
   }),
   validationSchema: ({ t }) => createSignupSchema(t),
-  handleSubmit: () => {
-    window.location = `https://manager.hubrise.com/signup`
+  handleSubmit: (_values, { props }) => {
+    const queryString = `?locale=${locales[props.i18n.language].tag}`
+
+    window.location = `https://manager.hubrise.com/signup${queryString}`
   }
 })(Signup)
 

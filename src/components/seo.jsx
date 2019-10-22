@@ -9,28 +9,27 @@ import favicon32 from '../images/favicons/favicon-32x32.png'
 import favicon16 from '../images/favicons/favicon-16x16.png'
 
 function SEO ({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
-    graphql`
-      query getSiteMetadata {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
+  const { site } = useStaticQuery(graphql`
+    query getSiteMetadata {
+      site {
+        siteMetadata {
+          title
+          description
+          author
         }
       }
-    `
-  )
+    }
+  `)
 
   const metaDescription = description || site.siteMetadata.description
+  const pageTitle = title || site.siteMetadata.title
 
   return (
     <Helmet
       htmlAttributes={{
         lang
       }}
-      title={site.siteMetadata.title}
+      title={pageTitle}
       meta={[
         {
           name: `description`,
@@ -38,7 +37,7 @@ function SEO ({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title
+          content: pageTitle
         },
         {
           property: `og:description`,
@@ -58,7 +57,7 @@ function SEO ({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title
+          content: pageTitle
         },
         {
           name: `twitter:description`,
@@ -87,17 +86,17 @@ function SEO ({ description, lang, meta, title }) {
 }
 
 SEO.defaultProps = {
+  description: ``,
   lang: `en`,
-  title: ``,
   meta: [],
-  description: ``
+  title: `HubRise`
 }
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired
+  title: PropTypes.string
 }
 
 export default SEO

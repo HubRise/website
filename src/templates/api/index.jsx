@@ -99,7 +99,7 @@ ApiPage.propTypes = {
       ).isRequired,
       fields: PropTypes.exact({
         slug: PropTypes.string.isRequired,
-        appId: PropTypes.string.isRequired
+        appId: PropTypes.string
       }).isRequired,
       body: PropTypes.string.isRequired
     }),

@@ -35,6 +35,7 @@
     "gatsby-source-filesystem": "^2.1.7",
     "gatsby-transformer-sharp": "^2.2.5",
     "i18next": "^17.0.13",
+    "i18next-browser-languagedetector": "^4.0.0",
     "jquery": "^3.4.1",
     "motion-ui": "^1.2.3",
     "node-sass": "^4.12.0",
@@ -99,6 +100,7 @@
     "globals": [
       "describe",
       "it",
+      "expect",
       "cy",
       "jest"
     ]

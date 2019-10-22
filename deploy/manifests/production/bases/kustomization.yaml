@@ -1,0 +1,5 @@
+bases:
+  - ../../bases
+
+resources:
+  - website/ingress.yaml

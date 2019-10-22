@@ -7,6 +7,9 @@ FROM node:10.16.0-stretch
 # Base packages
 RUN apt-get update -qq && apt-get install -y vim less curl sudo
 
+# Cypress dependencies
+RUN apt-get install -y xvfb libgtk-3-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
+
 # Convenient alias
 RUN echo "alias ll='ls -lah --color'" >> /root/.bashrc
 

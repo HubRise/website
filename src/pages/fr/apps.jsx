@@ -183,7 +183,6 @@ const AppSection = ({ id, blocks, hasSuggestApp }) => {
                   <Link
                     to={to}
                     className='app__box'
-                    target='_blank'
                   >
                     <img
                       className='app__box-image'
@@ -203,7 +202,6 @@ const AppSection = ({ id, blocks, hasSuggestApp }) => {
                     <Link
                       to={to}
                       className='app__more-link'
-                      target='_blank'
                     >
                       {domain}
                     </Link>
