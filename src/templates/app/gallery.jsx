@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faTimes, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import Img from 'gatsby-image'
 import Slider from 'react-slick'
 
@@ -12,33 +12,34 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 const NextArrow = ({
-  className,
-  style,
   onClick,
   currentImageNumber,
   totalNumberOfImages
 }) => {
-  return currentImageNumber < totalNumberOfImages && (
-    <div
-      className={className}
-      style={style}
+  return (
+    <button
+      style={{
+        visibility: currentImageNumber < totalNumberOfImages ? `unset` : `hidden`
+      }}
+      className='image-slider__arrow_next'
       onClick={(e) => { e.stopPropagation(); onClick() }}
-    />
+    >
+      <FontAwesomeIcon icon={faArrowRight} />
+    </button>
   )
 }
 
-const PrevArrow = ({
-  className,
-  style,
-  onClick,
-  currentImageNumber
-}) => {
-  return currentImageNumber !== 1 && (
-    <div
-      className={className}
-      style={style}
+const PrevArrow = ({ onClick, currentImageNumber }) => {
+  return (
+    <button
+      style={{
+        visibility: currentImageNumber !== 1 ? `unset` : `hidden`
+      }}
+      className='image-slider__arrow_previous'
       onClick={(e) => { e.stopPropagation(); onClick() }}
-    />
+    >
+      <FontAwesomeIcon icon={faArrowLeft} />
+    </button>
   )
 }
 
@@ -109,23 +110,23 @@ const Gallery = ({ images, appName }) => {
         onClick={() => setIsSliderVisible(false)}
       >
         <section
-          className='image-slider-wrapper__topbar'
+          className='image-slider__topbar'
           onClick={(e) => e.stopPropagation()}
         >
-          <p className='image-slider-wrapper__title'>
-            <span className='image-slider-wrapper__title-app-name'>
+          <p className='image-slider__title'>
+            <span className='image-slider__title-app-name'>
               {appName}
             </span>
           </p>
+          <p className='image-slider__count'>
+            {currentImageNumber} / {totalNumberOfImages}
+          </p>
           <button
-            className='image-slider-wrapper__close_button'
+            className='image-slider__button_close'
             onClick={() => setIsSliderVisible(false)}
           >
             <FontAwesomeIcon icon={faTimes} />
           </button>
-          <p className='image-slider-wrapper__count'>
-            {currentImageNumber} / {totalNumberOfImages}
-          </p>
         </section>
         <Slider
           ref={slider}

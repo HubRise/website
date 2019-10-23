@@ -1,13 +1,18 @@
 // NOTE: slick-* classes are coming from react-slick carousel component
 
-.image-slider {
-  align-self: center;
+.image-slider,
+.image-slider__topbar {
   /* override display prop on .slick-list */
   display: grid !important;
-  grid-template-areas: 'previous_arrow slide next_arrow';
   grid-template-columns: 6% 1fr 6%;
-  width: inherit;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.image-slider {
+  grid-template-areas: 'arrow_previous slide arrow_next';
   align-items: center;
+  width: inherit;
 
   & .slick-list {
     grid-area: slide;
@@ -18,68 +23,70 @@
     padding-right: 0.25rem;
   }
 
-  & .slick-next,
-  & .slick-prev {
-    justify-self: center;
-    position: initial;
-    height: auto;
-    width: auto;
-  }
-
-  & .slick-next {
-    right: 0;
-    grid-area: next_arrow;
-
-    &::before {
-      content: '\f061';
-    }
-  }
-
-  & .slick-prev {
-    grid-area: previous_arrow;
-    left: 0;
-
-    &::before {
-      content: '\f060';
-    }
-  }
-
-  & .slick-prev::before,
-  & .slick-next::before {
-    font-family: FontAwesome;
-    font-size: 1.5rem;
-
-    @include breakpoint(small down) {
-      font-size: 1rem;
-    }
-
-    @include breakpoint(xxlarge up) {
-      font-size: 2rem;
-    }
-  }
-
   &__slide {
     border-radius: 0.6rem;
   }
-}
 
-.image-slider-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: grid;
-  grid-template-rows: max-content 1fr;
-  height: 100vh;
-  width: 100vw;
-  z-index: 11;
-  background-color: rgba(0, 0, 0, 0.85);
+  &__arrow_previous {
+    grid-area: arrow_previous;
+  }
+
+  &__arrow_next {
+    grid-area: arrow_next;
+  }
+
+  &__arrow_previous,
+  &__arrow_next,
+  &__button_close {
+    justify-self: center;
+    display: grid;
+    place-items: center;
+    width: 1.1rem;
+    height: 1.1rem;
+    font-size: 0.55rem;
+    border-radius: 50%;
+    border: 1px solid $white;
+    color: $white;
+    opacity: 0.5;
+
+    & svg {
+      margin: auto;
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    @include breakpoint(medium up) {
+      font-size: 1rem;
+      width: 1.75rem;
+      height: 1.75rem;
+    }
+
+    @include breakpoint(large up) {
+      font-size: 1.25rem;
+      width: 2.25rem;
+      height: 2.25rem;
+    }
+
+    @media screen and (min-width: 1600px) {
+      font-size: 1.75rem;
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
 
   &__topbar {
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr max-content;
+    grid-template-areas: 'app_title count close_button';
+    place-items: center;
     width: 100vw;
-    padding: 1rem;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: rgba(0, 0, 0, 0.6);
 
     @include breakpoint(medium down) {
@@ -88,41 +95,48 @@
   }
 
   &__title {
-    align-self: center;
+    grid-area: app_title;
+    width: 1rem;
     color: $white;
     margin-bottom: 0;
-  }
 
-  &__count {
-    position: absolute;
-    display: grid;
-    place-items: center;
-    height: 100%;
-    width: 100%;
-    color: $gray-color;
-    margin-bottom: 0;
+    @include breakpoint(medium up) {
+      width: 1.75rem;
+    }
+
+    @include breakpoint(large up) {
+      width: 2.25rem;
+    }
+
+    @media screen and (min-width: 1600px) {
+      width: 3.5rem;
+    }
   }
 
   &__title-app-name {
     font-weight: bold;
   }
 
-  &__close_button {
-    font-size: 1.5rem;
-    z-index: 12;
+  &__count {
+    grid-area: count;
     color: $gray-color;
-
-    &:hover {
-      cursor: pointer;
-      color: $white;
-    }
-
-    @include breakpoint(small down) {
-      font-size: 1rem;
-    }
-
-    @include breakpoint(xxlarge up) {
-      font-size: 2rem;
-    }
+    margin-bottom: 0;
   }
+
+  &__close-button {
+    grid-area: close_button;
+  }
+}
+
+.image-slider-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  align-items: center;
+  grid-template-rows: max-content 1fr;
+  height: 100vh;
+  width: 100vw;
+  z-index: 11;
+  background-color: rgba(0, 0, 0, 0.85);
 }
