@@ -1,14 +1,14 @@
 import React from 'react'
 
 import Link from '../../components/link'
-import { generateKey, splitCamelCase } from '../../components/utils'
+import { generateKey } from '../../components/utils'
 
 const Info = ({ content }) => {
   return (
     <div className='section__content'>
       <ul>
         {Object.entries(content).map(([ label, value ]) => {
-          const labelWithSpaces = splitCamelCase(label)
+          const labelWithSpaces = label.split(`_`).join(` `)
           const capitalizedLabel = labelWithSpaces[0].toUpperCase() + labelWithSpaces.slice(1)
 
           return (

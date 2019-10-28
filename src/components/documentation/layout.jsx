@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default ({ children }) => (
+const Layout = ({ children }) => (
   <section className='section'>
     <div
       className={`
@@ -14,3 +14,5 @@ export default ({ children }) => (
     </div>
   </section>
 )
+
+export default Layout

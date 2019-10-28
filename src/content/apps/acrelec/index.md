@@ -4,7 +4,7 @@ title: Overview
 info:
   category: POS
   availability: France, Switzerland, UK
-  priceRange: $50-150 / month
+  price_range: $50-150 / month
   website: ikentoo.com
   contact: phone / email
 ---

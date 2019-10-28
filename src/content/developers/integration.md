@@ -1,5 +1,6 @@
 ---
 title: Integration
+position: 3
 ---
 
 We are working on this chapter.

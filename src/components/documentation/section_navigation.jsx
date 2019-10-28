@@ -16,8 +16,6 @@ const sortPagesAsc = (pages) => {
 
 const SidebarRight = ({ currentPath, pages, title, logo }) => {
   const [isExpanded, setIsExpanded] = useState(false)
-  const [currentPage] = pages
-    .filter(({ fields }) => currentPath.endsWith(fields.slug))
 
   return (
     <div
@@ -54,7 +52,7 @@ const SidebarRight = ({ currentPath, pages, title, logo }) => {
           `}
           onClick={() => setIsExpanded(!isExpanded)}
         >
-          {currentPage.frontmatter.title || `Content`}
+          {title || `Content`}
           <i
             className={`
               fa
@@ -70,7 +68,7 @@ const SidebarRight = ({ currentPath, pages, title, logo }) => {
             ${isExpanded ? '' : 'content-nav__list_hidden'}
           `}
         >
-          {sortPagesAsc(pages)
+          {sortPagesAsc(pages.nodes)
             .map(({ frontmatter, fields, headings }, idx) => {
               const { slug } = fields
               const isCurrentPage = currentPath.endsWith(slug)
@@ -119,23 +117,25 @@ const SidebarRight = ({ currentPath, pages, title, logo }) => {
 
 SidebarRight.propTypes = {
   currentPath: PropTypes.string.isRequired,
-  pages: PropTypes.arrayOf(
-    PropTypes.shape({
-      frontmatter: PropTypes.shape({
-        title: PropTypes.string,
-        position: PropTypes.number
-      }).isRequired,
-      headings: PropTypes.arrayOf(
-        PropTypes.shape({
-          depth: PropTypes.number,
-          value: PropTypes.string
-        })
-      ).isRequired,
-      fields: PropTypes.shape({
-        slug: PropTypes.string
-      }).isRequired
-    })
-  ).isRequired
+  pages: PropTypes.shape({
+    nodes: PropTypes.arrayOf(
+      PropTypes.shape({
+        frontmatter: PropTypes.shape({
+          title: PropTypes.string.isRequired,
+          position: PropTypes.number.isRequired
+        }),
+        fields: PropTypes.shape({
+          slug: PropTypes.string.isRequired
+        }),
+        headings: PropTypes.arrayOf(
+          PropTypes.shape({
+            depth: PropTypes.number.isRequired,
+            value: PropTypes.string.isRequired
+          })
+        )
+      })
+    )
+  })
 }
 
 export default SidebarRight
