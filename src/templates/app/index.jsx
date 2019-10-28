@@ -10,7 +10,7 @@ import Layout from '../api/layout'
 import SectionNavigation from '../api/section_navigation'
 
 const AppPage = ({ data, path }) => {
-  const { currentPage, relatedPages, appImages } = data
+  const { currentPage, siblingPages, appImages } = data
   const { frontmatter, body, fields } = currentPage
 
   return (
@@ -24,7 +24,7 @@ const AppPage = ({ data, path }) => {
         currentPath={path}
         pages={[
           currentPage,
-          ...relatedPages.nodes.map((node) => ({ ...node }))
+          ...siblingPages.nodes.map((node) => ({ ...node }))
         ]}
         title={capitalize(fields.appId)}
       />
@@ -41,7 +41,7 @@ export const appPageQuery = graphql`
   query getAppPageContent(
     $id: String!,
     $appImagesFilter: FileFilterInput!,
-    $relatedPagesFilter: MdxFilterInput!
+    $siblingPagesFilter: MdxFilterInput!
   ) {
     currentPage: mdx(id: { eq: $id }) {
       frontmatter {
@@ -65,7 +65,7 @@ export const appPageQuery = graphql`
       }
       body
     }
-    relatedPages: allMdx(filter: $relatedPagesFilter) {
+    siblingPages: allMdx(filter: $siblingPagesFilter) {
       nodes {
         frontmatter {
           title
@@ -128,7 +128,7 @@ AppPage.propTypes = {
         })
       )
     }),
-    relatedPages: PropTypes.exact({
+    siblingPages: PropTypes.exact({
       nodes: PropTypes.arrayOf(
         PropTypes.exact({
           frontmatter: PropTypes.exact({
@@ -147,7 +147,7 @@ AppPage.propTypes = {
         })
       )
     })
-  }).isRequired
+  })
 }
 
 export default AppPage

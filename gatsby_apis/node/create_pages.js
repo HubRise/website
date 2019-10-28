@@ -13,6 +13,7 @@ const createPages = async ({ graphql, actions }) => {
       allMdx {
         nodes {
           id
+          fileAbsolutePath
           fields {
             slug
             appId
@@ -26,19 +27,16 @@ const createPages = async ({ graphql, actions }) => {
     return Promise.reject(result.errors)
   }
 
-  result.data.allMdx.nodes.forEach(({ id, fields }) => {
+  result.data.allMdx.nodes.forEach(({ id, fileAbsolutePath, fields }) => {
     const { slug, appId } = fields
-    const notCurrentIdFilter = { id: { ne: id } }
+    const parentDirectoryPath = path.dirname(fileAbsolutePath)
+    const siblingPagesFilter = {
+      id: { ne: id },
+      fileAbsolutePath: { glob: `${parentDirectoryPath}/*` }
+    }
 
     if (appId) {
       const isOverviewPage = slug.match(new RegExp(`${appId}/$`))
-      const allAppPagesFilter = {
-        fields: {
-          slug: {
-            regex: `/apps/${appId}/`
-          }
-        }
-      }
 
       if (isOverviewPage) {
         // Generate app overview page.
@@ -51,10 +49,7 @@ const createPages = async ({ graphql, actions }) => {
               relativeDirectory: { regex: `/${appId}/` },
               sourceInstanceName: { eq: `images` }
             },
-            relatedPagesFilter: {
-              ...notCurrentIdFilter,
-              ...allAppPagesFilter
-            }
+            siblingPagesFilter
           }
         })
       } else {
@@ -65,10 +60,7 @@ const createPages = async ({ graphql, actions }) => {
           context: {
             id,
             appLogoRelativePath: { regex: `/apps/${appId}/logo/` },
-            relatedPagesFilter: {
-              ...notCurrentIdFilter,
-              ...allAppPagesFilter
-            }
+            siblingPagesFilter
           }
         })
       }
@@ -91,14 +83,7 @@ const createPages = async ({ graphql, actions }) => {
         context: {
           id,
           appLogoRelativePath: { eq: null },
-          relatedPagesFilter: {
-            ...notCurrentIdFilter,
-            fields: {
-              slug: {
-                glob: `/api/*`
-              }
-            }
-          }
+          siblingPagesFilter
         }
       })
     })

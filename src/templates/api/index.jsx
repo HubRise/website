@@ -8,7 +8,7 @@ import Layout from './layout'
 import SectionNavigation from './section_navigation'
 
 const ApiPage = ({ data, path }) => {
-  const { currentPage, relatedPages } = data
+  const { currentPage, siblingPages } = data
   const { frontmatter, body, fields } = data.currentPage
 
   return (
@@ -29,7 +29,7 @@ const ApiPage = ({ data, path }) => {
         title={fields.appId && capitalize(fields.appId)}
         pages={[
           currentPage,
-          ...relatedPages.nodes.map((node) => ({ ...node }))
+          ...siblingPages.nodes.map((node) => ({ ...node }))
         ]}
       />
     </Layout>
@@ -39,7 +39,7 @@ const ApiPage = ({ data, path }) => {
 export const apiPageQuery = graphql`
   query getApiPageContent(
     $id: String!,
-    $relatedPagesFilter: MdxFilterInput!
+    $siblingPagesFilter: MdxFilterInput!
     $appLogoRelativePath: StringQueryOperatorInput!
   ) {
     currentPage: mdx(id: { eq: $id }) {
@@ -57,7 +57,7 @@ export const apiPageQuery = graphql`
       }
       body
     }
-    relatedPages: allMdx(filter: $relatedPagesFilter) {
+    siblingPages: allMdx(filter: $siblingPagesFilter) {
       nodes {
         frontmatter {
           title
@@ -103,7 +103,7 @@ ApiPage.propTypes = {
       }).isRequired,
       body: PropTypes.string.isRequired
     }),
-    relatedPages: PropTypes.exact({
+    siblingPages: PropTypes.exact({
       nodes: PropTypes.arrayOf(
         PropTypes.exact({
           frontmatter: PropTypes.exact({
