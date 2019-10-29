@@ -30,13 +30,15 @@ const DocPage = ({ data, path }) => {
         title={fields.appId}
         pages={currentAndSiblingPages}
       />
-      {appImages.nodes.length > 1 && (
-        <Gallery
-          appName={fields.appId}
-          images={appImages.nodes.filter(({ name }) => name !== `logo`)}
-        />
+      {frontmatter.info && appImages.nodes.length > 1 && (
+        <>
+          <Gallery
+            appName={fields.appId}
+            images={appImages.nodes.filter(({ name }) => name !== `logo`)}
+          />
+          <AppInfo content={frontmatter.info} />
+        </>
       )}
-      {frontmatter.info && <AppInfo content={frontmatter.info} />}
     </Layout>
   )
 }
