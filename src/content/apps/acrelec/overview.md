@@ -5,7 +5,6 @@ gallery:
   - screencap_0.png
   - screencap_1.png
   - screencap_2.png
-logo: apps/acrelec/images/logo.png
 pathOverride: /
 info:
   category: POS

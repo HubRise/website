@@ -75,7 +75,7 @@ export const docPageQuery = graphql`
     $id: String!,
     $currentAndSiblingPagesFilter: MdxFilterInput!
     $galleryImagesFilter: FileFilterInput,
-    $logoRelativePath: StringQueryOperatorInput,
+    $logoAbsolutePath: StringQueryOperatorInput,
   ) {
     currentPage: mdx(id: { eq: $id }) { id }
     currentAndSiblingPages: allMdx(filter: $currentAndSiblingPagesFilter) {
@@ -107,7 +107,7 @@ export const docPageQuery = graphql`
     galleryImages: allFile(filter: $galleryImagesFilter) {
       nodes { ...Image }
     }
-    logo: file(relativePath: $logoRelativePath) {
+    logo: file(absolutePath: $logoAbsolutePath) {
       ...Image
     }
   }

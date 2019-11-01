@@ -1,4 +1,5 @@
 {
   "chapterTitle": "Acrelec",
-  "basePath": "/apps/acrelec"
+  "basePath": "/apps/acrelec",
+  "logoFileName": "logo.png"
 }
