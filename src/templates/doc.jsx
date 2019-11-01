@@ -10,7 +10,28 @@ import {
   AppInfo
 } from '../components/documentation'
 
-const DocPage = ({ data, path }) => {
+const applyPathOverride = (page) => {
+  const { frontmatter, fields } = page
+
+  if (frontmatter.pathOverride) {
+    const slugParts = fields.slug.split(`/`).filter(Boolean)
+    const slugWithoutPageName = slugParts.slice(0, slugParts.length - 1).join(`/`)
+    const adjustedSlug = `/` + slugWithoutPageName + frontmatter.pathOverride
+
+    return {
+      ...page,
+      fields: {
+        ...fields,
+        slug: adjustedSlug
+      }
+    }
+  }
+
+  return page
+}
+
+const DocPage = ({ data, path, pageContext }) => {
+  const { chapterTitle } = pageContext
   const { currentAndSiblingPages, galleryImages, logo } = data
   const [ currentPage ] = currentAndSiblingPages.nodes
     .filter(({ id }) => id === data.currentPage.id)
@@ -25,8 +46,8 @@ const DocPage = ({ data, path }) => {
       <SectionNavigation
         logo={logo}
         currentPath={path}
-        title={fields.appId}
-        pages={currentAndSiblingPages}
+        title={chapterTitle}
+        pages={currentAndSiblingPages.nodes.map(applyPathOverride)}
       />
       {galleryImages.nodes.length > 1 && (
         <Gallery
@@ -63,6 +84,7 @@ export const docPageQuery = graphql`
         frontmatter {
           title
           position
+          pathOverride
           info {
             category
             availability

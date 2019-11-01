@@ -6,6 +6,7 @@ gallery:
   - screencap_1.png
   - screencap_2.png
 logo: apps/acrelec/images/logo.png
+pathOverride: /
 info:
   category: POS
   availability: France, Switzerland, UK

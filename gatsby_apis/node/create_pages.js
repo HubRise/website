@@ -1,3 +1,4 @@
+const fs = require('fs')
 const path = require('path')
 const locales = require(path.resolve(process.cwd(), 'src/i18n/locales.json'))
 
@@ -15,6 +16,7 @@ const createPages = async ({ graphql, actions }) => {
             template
             gallery
             logo
+            pathOverride
           }
           fileAbsolutePath
           fields {
@@ -31,8 +33,16 @@ const createPages = async ({ graphql, actions }) => {
   }
 
   data.allMdx.nodes.forEach(({ id, fileAbsolutePath, fields, frontmatter }) => {
-    const { slug } = fields
-    const { template, gallery, logo } = frontmatter
+    const { template, gallery, logo, pathOverride } = frontmatter
+    const parentDir = path.dirname(fileAbsolutePath)
+    const fileName = path.basename(fileAbsolutePath, `.md`).replace(/_/g, `-`)
+    const pathToConfig = path.join(parentDir, `customization.json`)
+    const config = fs.existsSync(pathToConfig) && JSON.parse(
+      fs.readFileSync(pathToConfig, `utf-8`)
+    )
+    const slug = config
+      ? config.basePath + (pathOverride || `/${fileName}/`)
+      : fields.slug
 
     Object.values(locales).forEach((props) => {
       createPage({
@@ -41,12 +51,14 @@ const createPages = async ({ graphql, actions }) => {
         context: {
           id,
           currentAndSiblingPagesFilter: {
-            fileAbsolutePath: { glob: `${path.dirname(fileAbsolutePath)}/*` }
+            fileAbsolutePath: { glob: `${parentDir}/*` }
           },
           galleryImagesFilter: {
             base: { in: gallery || [null] }
           },
-          logoRelativePath: { eq: logo || `` }
+          logoRelativePath: { eq: logo || `` },
+          ...config,
+          slug
         }
       })
     })
