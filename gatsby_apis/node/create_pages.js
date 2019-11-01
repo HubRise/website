@@ -15,7 +15,7 @@ const createPages = async ({ graphql, actions }) => {
           frontmatter {
             template
             gallery
-            pathOverride
+            path_override
           }
           fileAbsolutePath
           fields {
@@ -32,7 +32,7 @@ const createPages = async ({ graphql, actions }) => {
   }
 
   data.allMdx.nodes.forEach(({ id, fileAbsolutePath, fields, frontmatter }) => {
-    const { template, gallery, pathOverride } = frontmatter
+    const { template, gallery, path_override: pathOverride } = frontmatter
     const parentDir = path.dirname(fileAbsolutePath)
     const fileName = path.basename(fileAbsolutePath, `.md`).replace(/_/g, `-`)
     const pathToConfig = path.join(parentDir, `customization.json`)
@@ -40,7 +40,7 @@ const createPages = async ({ graphql, actions }) => {
       fs.readFileSync(pathToConfig, `utf-8`)
     )
     const slug = config
-      ? config.basePath + (pathOverride || `/${fileName}/`)
+      ? config.base_path + (pathOverride || `/${fileName}/`)
       : fields.slug
 
     Object.values(locales).forEach((props) => {
@@ -56,8 +56,8 @@ const createPages = async ({ graphql, actions }) => {
             base: { in: gallery || [null] }
           },
           logoAbsolutePath: {
-            eq: config.logoFileName
-              ? `${parentDir}/images/${config.logoFileName}`
+            eq: config.logo
+              ? `${parentDir}/images/${config.logo}`
               : ``
           },
           ...config

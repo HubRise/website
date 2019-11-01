@@ -12,11 +12,12 @@ import {
 
 const applyPathOverride = (page) => {
   const { frontmatter, fields } = page
+  const { path_override: pathOverride } = frontmatter
 
-  if (frontmatter.pathOverride) {
+  if (pathOverride) {
     const slugParts = fields.slug.split(`/`).filter(Boolean)
     const slugWithoutPageName = slugParts.slice(0, slugParts.length - 1).join(`/`)
-    const adjustedSlug = `/` + slugWithoutPageName + frontmatter.pathOverride
+    const adjustedSlug = `/` + slugWithoutPageName + pathOverride
 
     return {
       ...page,
@@ -31,7 +32,7 @@ const applyPathOverride = (page) => {
 }
 
 const DocPage = ({ data, path, pageContext }) => {
-  const { chapterTitle } = pageContext
+  const { name: chapterTitle } = pageContext
   const { currentAndSiblingPages, galleryImages, logo } = data
   const [ currentPage ] = currentAndSiblingPages.nodes
     .filter(({ id }) => id === data.currentPage.id)
@@ -84,7 +85,7 @@ export const docPageQuery = graphql`
         frontmatter {
           title
           position
-          pathOverride
+          path_override
           info {
             category
             availability

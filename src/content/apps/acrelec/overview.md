@@ -5,7 +5,7 @@ gallery:
   - screencap_0.png
   - screencap_1.png
   - screencap_2.png
-pathOverride: /
+path_override: /
 info:
   category: POS
   availability: France, Switzerland, UK
