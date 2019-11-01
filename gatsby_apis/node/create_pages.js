@@ -6,13 +6,15 @@ const getTemplate = (name) => path.join(templates, `${name || 'doc'}.jsx`)
 
 const createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  const result = await graphql(`
+  const { data, errors } = await graphql(`
     query loadMdxDataForCreatingPages {
       allMdx {
         nodes {
           id
           frontmatter {
             template
+            gallery
+            logo
           }
           fileAbsolutePath
           fields {
@@ -24,28 +26,27 @@ const createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  if (result.errors) {
-    return Promise.reject(result.errors)
+  if (errors) {
+    return Promise.reject(errors)
   }
 
-  result.data.allMdx.nodes.forEach(({ id, fileAbsolutePath, fields, frontmatter }) => {
-    const { slug, appId } = fields
-    const component = getTemplate(frontmatter.template)
+  data.allMdx.nodes.forEach(({ id, fileAbsolutePath, fields, frontmatter }) => {
+    const { slug } = fields
+    const { template, gallery, logo } = frontmatter
 
     Object.values(locales).forEach((props) => {
       createPage({
         path: (props.default ? `` : props.code) + slug,
-        component,
+        component: getTemplate(template),
         context: {
           id,
           currentAndSiblingPagesFilter: {
             fileAbsolutePath: { glob: `${path.dirname(fileAbsolutePath)}/*` }
           },
-          appImagesFilter: {
-            relativeDirectory: appId
-              ? { regex: `/${appId}/images/` }
-              : { eq: null }
-          }
+          galleryImagesFilter: {
+            base: { in: gallery || [null] }
+          },
+          logoRelativePath: { eq: logo || `` }
         }
       })
     })

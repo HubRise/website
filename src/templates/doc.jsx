@@ -11,12 +11,10 @@ import {
 } from '../components/documentation'
 
 const DocPage = ({ data, path }) => {
-  const { currentAndSiblingPages, appImages } = data
+  const { currentAndSiblingPages, galleryImages, logo } = data
   const [ currentPage ] = currentAndSiblingPages.nodes
     .filter(({ id }) => id === data.currentPage.id)
   const { frontmatter, body, fields } = currentPage
-  const [ appLogo ] = appImages.nodes
-    .filter(({ name }) => name === `logo`)
 
   return (
     <Layout>
@@ -25,29 +23,38 @@ const DocPage = ({ data, path }) => {
         content={body}
       />
       <SectionNavigation
-        logo={appLogo}
+        logo={logo}
         currentPath={path}
         title={fields.appId}
         pages={currentAndSiblingPages}
       />
-      {frontmatter.info && appImages.nodes.length > 1 && (
-        <>
-          <Gallery
-            appName={fields.appId}
-            images={appImages.nodes.filter(({ name }) => name !== `logo`)}
-          />
-          <AppInfo content={frontmatter.info} />
-        </>
+      {galleryImages.nodes.length > 1 && (
+        <Gallery
+          appName={fields.appId}
+          images={galleryImages.nodes}
+        />
       )}
+      {frontmatter.info && <AppInfo content={frontmatter.info} />}
     </Layout>
   )
 }
 
 export const docPageQuery = graphql`
+  fragment Image on File {
+    name
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        presentationWidth
+      }
+    }
+  }
+
   query getDocPageContent(
     $id: String!,
     $currentAndSiblingPagesFilter: MdxFilterInput!
-    $appImagesFilter: FileFilterInput,
+    $galleryImagesFilter: FileFilterInput,
+    $logoRelativePath: StringQueryOperatorInput,
   ) {
     currentPage: mdx(id: { eq: $id }) { id }
     currentAndSiblingPages: allMdx(filter: $currentAndSiblingPagesFilter) {
@@ -75,16 +82,11 @@ export const docPageQuery = graphql`
         body
       }
     }
-    appImages: allFile(filter: $appImagesFilter) {
-      nodes {
-        name
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            presentationWidth
-          }
-        }
-      }
+    galleryImages: allFile(filter: $galleryImagesFilter) {
+      nodes { ...Image }
+    }
+    logo: file(relativePath: $logoRelativePath) {
+      ...Image
     }
   }
 `
@@ -123,7 +125,7 @@ DocPage.propTypes = {
         })
       )
     }),
-    appImages: PropTypes.shape({
+    galleryImages: PropTypes.shape({
       nodes: PropTypes.arrayOf(
         PropTypes.shape({
           name: PropTypes.string.isRequired,

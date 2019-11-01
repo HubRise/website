@@ -1,6 +1,11 @@
 ---
 position: 1
 title: Overview
+gallery:
+  - screencap_0.png
+  - screencap_1.png
+  - screencap_2.png
+logo: apps/acrelec/images/logo.png
 info:
   category: POS
   availability: France, Switzerland, UK
