@@ -31,6 +31,12 @@ const applyPathOverride = (page) => {
   return page
 }
 
+const sortGalleryImages = (ordered, nodes) => {
+  return ordered.reduce((reorderedNodes, base) => {
+    return [...reorderedNodes, nodes.find((node) => node.base === base)]
+  }, [])
+}
+
 const DocPage = ({ data, path, pageContext }) => {
   const { name: chapterTitle } = pageContext
   const { currentAndSiblingPages, galleryImages, logo } = data
@@ -53,7 +59,7 @@ const DocPage = ({ data, path, pageContext }) => {
       {galleryImages.nodes.length > 1 && (
         <Gallery
           appName={fields.appId}
-          images={galleryImages.nodes}
+          images={sortGalleryImages(frontmatter.gallery, galleryImages.nodes)}
         />
       )}
       {frontmatter.info && <AppInfo content={frontmatter.info} />}
@@ -64,6 +70,7 @@ const DocPage = ({ data, path, pageContext }) => {
 export const docPageQuery = graphql`
   fragment Image on File {
     name
+    base
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -85,6 +92,7 @@ export const docPageQuery = graphql`
         frontmatter {
           title
           position
+          gallery
           path_override
           info {
             category
