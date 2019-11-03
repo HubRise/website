@@ -35,6 +35,7 @@ const createPages = async ({ graphql, actions }) => {
     const { template, gallery, path_override: pathOverride } = frontmatter
     const parentDir = path.dirname(fileAbsolutePath)
     const fileName = path.basename(fileAbsolutePath, `.md`).replace(/_/g, `-`)
+    const pathToImages = `${parentDir}/images`
     const pathToConfig = path.join(parentDir, `customization.json`)
     const config = fs.existsSync(pathToConfig) && JSON.parse(
       fs.readFileSync(pathToConfig, `utf-8`)
@@ -53,11 +54,12 @@ const createPages = async ({ graphql, actions }) => {
             fileAbsolutePath: { glob: `${parentDir}/*` }
           },
           galleryImagesFilter: {
-            base: { in: gallery || [null] }
+            absolutePath: { glob: `${pathToImages}/*` },
+            base: { in: gallery || [] }
           },
           logoAbsolutePath: {
             eq: config.logo
-              ? `${parentDir}/images/${config.logo}`
+              ? `${pathToImages}/${config.logo}`
               : ``
           },
           ...config
