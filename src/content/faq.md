@@ -1,6 +1,6 @@
 ---
 title: F.A.Q
-template: faq
+layout: faq
 ---
 
 import ContactFormToggle from '../components/markdown/contact_form_toggle.jsx'

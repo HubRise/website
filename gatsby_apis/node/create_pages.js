@@ -2,8 +2,8 @@ const fs = require('fs')
 const path = require('path')
 const locales = require(path.resolve(process.cwd(), 'src/i18n/locales.json'))
 
-const templates = path.resolve(process.cwd(), `src/templates`)
-const getTemplate = (name) => path.join(templates, `${name || 'doc'}.jsx`)
+const layouts = path.resolve(process.cwd(), `src/layouts`)
+const getLayout = (name) => path.join(layouts, `${name || 'doc'}.jsx`)
 
 const createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -13,7 +13,7 @@ const createPages = async ({ graphql, actions }) => {
         nodes {
           id
           frontmatter {
-            template
+            layout
             gallery
             path_override
           }
@@ -32,7 +32,7 @@ const createPages = async ({ graphql, actions }) => {
   }
 
   data.allMdx.nodes.forEach(({ id, fileAbsolutePath, fields, frontmatter }) => {
-    const { template, gallery, path_override: pathOverride } = frontmatter
+    const { layout, gallery, path_override: pathOverride } = frontmatter
     const parentDir = path.dirname(fileAbsolutePath)
     const fileName = path.basename(fileAbsolutePath, `.md`).replace(/_/g, `-`)
     const pathToImages = `${parentDir}/images`
@@ -47,7 +47,7 @@ const createPages = async ({ graphql, actions }) => {
     Object.values(locales).forEach((props) => {
       createPage({
         path: (props.default ? `` : props.code) + slug,
-        component: getTemplate(template),
+        component: getLayout(layout),
         context: {
           id,
           currentAndSiblingPagesFilter: {
