@@ -1,5 +1,3 @@
 export { default as AppInfo } from './app_info'
 export { default as Gallery } from './gallery'
-export { default as Layout } from './layout'
-export { default as MainSection } from './main_section'
 export { default as SectionNavigation } from './section_navigation'

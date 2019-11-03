@@ -1,10 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 import PropTypes from 'prop-types'
 
 import {
-  Layout,
-  MainSection,
   SectionNavigation,
   Gallery,
   AppInfo
@@ -45,25 +44,40 @@ const DocPage = ({ data, path, pageContext }) => {
   const { frontmatter, body, fields } = currentPage
 
   return (
-    <Layout>
-      <MainSection
-        title={frontmatter.title}
-        content={body}
-      />
-      <SectionNavigation
-        logo={logo}
-        currentPath={path}
-        title={chapterTitle}
-        pages={currentAndSiblingPages.nodes.map(applyPathOverride)}
-      />
-      {galleryImages.nodes.length > 1 && (
-        <Gallery
-          appName={fields.appId}
-          images={sortGalleryImages(frontmatter.gallery, galleryImages.nodes)}
+    <section className='section'>
+      <div
+        className={`
+          section__in
+          section__in_padding
+          section__in_reverse
+          section__in_developers
+        `}
+      >
+        <div className='section__content'>
+          <div className='documentation'>
+            <h1>
+              {frontmatter.title}
+            </h1>
+            <MDXRenderer>
+              {body}
+            </MDXRenderer>
+          </div>
+        </div>
+        <SectionNavigation
+          logo={logo}
+          currentPath={path}
+          title={chapterTitle}
+          pages={currentAndSiblingPages.nodes.map(applyPathOverride)}
         />
-      )}
-      {frontmatter.info && <AppInfo content={frontmatter.info} />}
-    </Layout>
+        {galleryImages.nodes.length > 1 && (
+          <Gallery
+            appName={fields.appId}
+            images={sortGalleryImages(frontmatter.gallery, galleryImages.nodes)}
+          />
+        )}
+        {frontmatter.info && <AppInfo content={frontmatter.info} />}
+      </div>
+    </section>
   )
 }
 
