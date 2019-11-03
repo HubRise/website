@@ -36,7 +36,7 @@ const sortGalleryImages = (ordered, nodes) => {
   }, [])
 }
 
-const DocPage = ({ data, path, pageContext }) => {
+const DocumentationPage = ({ data, path, pageContext }) => {
   const { name: chapterTitle } = pageContext
   const { currentAndSiblingPages, galleryImages, logo } = data
   const [ currentPage ] = currentAndSiblingPages.nodes
@@ -81,7 +81,7 @@ const DocPage = ({ data, path, pageContext }) => {
   )
 }
 
-export const docPageQuery = graphql`
+export const documentationPageQuery = graphql`
   fragment Image on File {
     name
     base
@@ -93,7 +93,7 @@ export const docPageQuery = graphql`
     }
   }
 
-  query getDocPageContent(
+  query getDocumentationPageContent(
     $id: String!,
     $currentAndSiblingPagesFilter: MdxFilterInput!
     $galleryImagesFilter: FileFilterInput,
@@ -136,7 +136,7 @@ export const docPageQuery = graphql`
   }
 `
 
-DocPage.propTypes = {
+DocumentationPage.propTypes = {
   data: PropTypes.shape({
     currentPage: PropTypes.exact({
       id: PropTypes.string.isRequired
@@ -181,4 +181,4 @@ DocPage.propTypes = {
   })
 }
 
-export default DocPage
+export default DocumentationPage
