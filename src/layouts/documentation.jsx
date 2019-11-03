@@ -75,7 +75,7 @@ const DocumentationPage = ({ data, path, pageContext }) => {
             images={sortGalleryImages(frontmatter.gallery, galleryImages.nodes)}
           />
         )}
-        {frontmatter.info && <AppInfo content={frontmatter.info} />}
+        {frontmatter.app_info && <AppInfo content={frontmatter.app_info} />}
       </div>
     </section>
   )
@@ -108,7 +108,7 @@ export const documentationPageQuery = graphql`
           position
           gallery
           path_override
-          info {
+          app_info {
             category
             availability
             price_range
@@ -148,7 +148,7 @@ DocumentationPage.propTypes = {
           frontmatter: PropTypes.shape({
             title: PropTypes.string.isRequired,
             position: PropTypes.number.isRequired,
-            info: PropTypes.shape({
+            app_info: PropTypes.shape({
               category: PropTypes.string,
               availability: PropTypes.string,
               price_range: PropTypes.string,

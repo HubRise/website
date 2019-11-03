@@ -7,7 +7,7 @@ gallery:
   - screencap_1.png
   - screencap_2.png
 path_override: /
-info:
+app_info:
   category: POS
   availability: France, Switzerland, UK
   price_range: $50-150 / month
