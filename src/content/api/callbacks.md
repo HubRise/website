@@ -1,6 +1,7 @@
 ---
 title: Callbacks
 position: 7
+layout: documentation
 ---
 
 A **callback** is a convenient way for an application to be notified of a change on a particular set or resources. It can be used to monitor orders, customers, locations or catalogs.

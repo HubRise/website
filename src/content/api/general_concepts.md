@@ -1,6 +1,7 @@
 ---
 title: General concepts
 position: 1
+layout: documentation
 ---
 
 This chapter takes a close look at the API. If you're looking for a brief introduction, check our [Quick Start](/developers/quick-start) tutorial.

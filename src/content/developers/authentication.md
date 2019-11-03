@@ -1,6 +1,7 @@
 ---
 title: Authentication
 position: 2
+layout: documentation
 ---
 
 ## 1. Introduction to OAuth 2.0

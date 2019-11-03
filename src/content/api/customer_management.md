@@ -1,6 +1,7 @@
 ---
 title: Customer management
 position: 5
+layout: documentation
 ---
 
 ## 1. Customer lists

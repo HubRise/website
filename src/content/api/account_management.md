@@ -1,6 +1,7 @@
 ---
 title: Account management
 position: 2
+layout: documentation
 ---
 
 ## 1. Location

@@ -1,6 +1,7 @@
 ---
 position: 1
 title: Overview
+layout: documentation
 gallery:
   - screencap_0.png
   - screencap_1.png

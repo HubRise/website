@@ -1,6 +1,7 @@
 ---
 title: Integration
 position: 3
+layout: documentation
 ---
 
 We are working on this chapter.

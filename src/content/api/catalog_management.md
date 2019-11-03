@@ -1,6 +1,7 @@
 ---
 title: Catalog management
 position: 4
+layout: documentation
 ---
 
 ## 1. Catalogs

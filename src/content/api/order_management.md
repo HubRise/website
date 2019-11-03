@@ -1,6 +1,7 @@
 ---
 title: Order management
 position: 3
+layout: documentation
 ---
 
 ## 1. Orders

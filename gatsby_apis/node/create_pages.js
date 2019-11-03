@@ -3,7 +3,7 @@ const path = require('path')
 const locales = require(path.resolve(process.cwd(), 'src/i18n/locales.json'))
 
 const layouts = path.resolve(process.cwd(), `src/layouts`)
-const getLayout = (name) => path.join(layouts, `${name || 'doc'}.jsx`)
+const getLayout = (name) => path.join(layouts, `${name}.jsx`)
 
 const createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
