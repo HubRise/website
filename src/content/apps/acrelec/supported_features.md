@@ -3,7 +3,11 @@ title: Supported Features
 position: 2
 ---
 
+![Diagram](./diagram.png)
+
 A **callback** is a convenient way for an application to be notified of a change on a particular set or resources. It can be used to monitor orders, customers, locations or catalogs.
+
+![FedEx](./fedex.jpg)
 
 There are 2 types of callbacks:
 
