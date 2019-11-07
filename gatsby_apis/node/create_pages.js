@@ -5,14 +5,10 @@ const { flattenDeep } = require('lodash')
 const { partialRight } = require('lodash/fp')
 
 const locales = require(path.join(process.cwd(), `src/i18n/locales.json`))
-const {
-  getDirectoriesRecursive,
-  getDefaultLocale
-} = require(path.join(process.cwd(), `gatsby_apis/node/utils`))
+const { getDefaultLocale } = require(path.join(process.cwd(), `gatsby_apis/node/utils`))
 
 const pathToLayouts = path.join(process.cwd(), `src/layouts`)
 const pathToContent = path.join(process.cwd(), `src/content`)
-const chapters = fs.readdirSync(pathToContent)
 
 const getLayout = (name) => path.join(pathToLayouts, `${name}.jsx`)
 
@@ -77,55 +73,65 @@ const createPageFromMdxNode = (node, locale, actions) => {
   })
 }
 
-const _createPages = (
+const _createPages = async (
   pathToPages,
   locale,
   actions,
   graphql
 ) => {
-  const subdirectories = getDirectoriesRecursive(pathToPages)
+  const { allMdx: { nodes: mdxNodes } } = await getMdxContent(pathToPages, graphql)
 
-  return subdirectories
-    .map(async function createPagesInSubdirectories (path) {
-      const { allMdx: { nodes: mdxNodes } } = await getMdxContent(path, graphql)
-
-      mdxNodes.forEach((node) => createPageFromMdxNode(node, locale, actions))
-    })
+  mdxNodes.forEach((node) => createPageFromMdxNode(node, locale, actions))
 }
 
-const createPages = async ({ graphql, actions }) => {
+const createPagesForEachChapter = (
+  pathToContent,
+  locale,
+  createPagesForLocale
+) => {
+  return fs.readdirSync(pathToContent).map((chapterName) => {
+    const pathToChapter = path.join(pathToContent, chapterName)
+
+    // Apps maintain their own localized content.
+    // Go one level deeper and loop over every app folder.
+    if (chapterName === `apps`) {
+      return createPagesForEachChapter(pathToChapter, locale, createPagesForLocale)
+    }
+
+    const pathToLocalizedPages = path.join(pathToChapter, locale.code)
+
+    if (fs.existsSync(pathToLocalizedPages)) {
+      return createPagesForLocale(pathToLocalizedPages)
+    }
+
+    // Current locale is default and respective folder with pages is missing -
+    // don't create anything in that case.
+    if (locale.default) return
+
+    const pathToPagesInDefaulLocale = path.join(
+      pathToChapter,
+      getDefaultLocale().code
+    )
+
+    // For every other locale, fallback to content in default locale, if available.
+    if (fs.existsSync(pathToPagesInDefaulLocale)) {
+      return createPagesForLocale(pathToPagesInDefaulLocale)
+    }
+  })
+}
+
+const createPages = async ({ actions, graphql }) => {
   const createPagePromises = Object.values(locales)
     .map(function createPagesForEachLocale (locale) {
       const createPagesForLocale = partialRight(_createPages, [locale, actions, graphql])
 
-      return chapters.map(function createPagesForEachChapter (chapterName) {
-        const pathToChapter = path.join(pathToContent, chapterName)
-        const pathToLocalizedPages = path.join(pathToChapter, locale.code)
-
-        if (fs.existsSync(pathToLocalizedPages)) {
-          return createPagesForLocale(pathToLocalizedPages)
-        }
-
-        // Current locale is default and respective folder with pages is missing -
-        // don't create anything in that case.
-        if (locale.default) return
-
-        const pathToPagesInDefaulLocale = path.join(
-          pathToChapter,
-          getDefaultLocale().code
-        )
-
-        // For every other locale, fallback to content in default locale.
-        if (fs.existsSync(pathToPagesInDefaulLocale)) {
-          return createPagesForLocale(pathToPagesInDefaulLocale)
-        }
-      })
+      return createPagesForEachChapter(pathToContent, locale, createPagesForLocale)
     })
 
   try {
     await Promise.all(flattenDeep(createPagePromises))
-  } catch (e) {
-    console.error(`An error occurred while creating pages from MDX`, e)
+  } catch (error) {
+    console.error(`An error occurred while creating pages from MDX`, error)
   }
 }
 
