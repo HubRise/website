@@ -26,6 +26,9 @@ const getMdxContent = async (pathToPages, graphql) => {
         nodes {
           id
           fileAbsolutePath
+          fields {
+            slug
+          }
           frontmatter {
             layout
             gallery
@@ -44,23 +47,21 @@ const getMdxContent = async (pathToPages, graphql) => {
 }
 
 const createPageFromMdxNode = (node, locale, actions) => {
-  const { id, fileAbsolutePath, frontmatter } = node
-  const { layout, gallery, path_override: pathOverride } = frontmatter
-  const parentDir = path.dirname(fileAbsolutePath)
-  const fileName = path.basename(fileAbsolutePath, `.md`).replace(/_/g, `-`)
-  const pathToImages = `${parentDir}/images`
+  const { id, fileAbsolutePath, frontmatter, fields } = node
+  const { layout, gallery } = frontmatter
+  const parentDirectory = path.dirname(fileAbsolutePath)
+  const pathToImages = `${parentDirectory}/images`
   const config = yaml.safeLoad(
-    fs.readFileSync(path.join(parentDir, `customization.yaml`), `utf-8`)
+    fs.readFileSync(path.join(parentDirectory, `customization.yaml`), `utf-8`)
   )
-  const slug = config.base_path + (pathOverride || `/${fileName}/`)
 
   actions.createPage({
-    path: (locale.default ? `` : locale.code) + slug,
+    path: (locale.default ? `` : locale.code) + fields.slug,
     component: getLayout(layout),
     context: {
       id,
       currentAndSiblingPagesFilter: {
-        fileAbsolutePath: { glob: `${parentDir}/*` }
+        fileAbsolutePath: { glob: `${parentDirectory}/*` }
       },
       galleryImagesFilter: {
         absolutePath: { glob: `${pathToImages}/*` },

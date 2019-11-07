@@ -9,27 +9,6 @@ import {
   AppInfo
 } from '../components/documentation'
 
-const applyPathOverride = (page) => {
-  const { frontmatter, fields } = page
-  const { path_override: pathOverride } = frontmatter
-
-  if (pathOverride) {
-    const slugParts = fields.slug.split(`/`).filter(Boolean)
-    const slugWithoutPageName = slugParts.slice(0, slugParts.length - 1).join(`/`)
-    const adjustedSlug = `/` + slugWithoutPageName + pathOverride
-
-    return {
-      ...page,
-      fields: {
-        ...fields,
-        slug: adjustedSlug
-      }
-    }
-  }
-
-  return page
-}
-
 const sortGalleryImages = (ordered, nodes) => {
   return ordered.reduce((reorderedNodes, base) => {
     return [...reorderedNodes, nodes.find((node) => node.base === base)]
@@ -67,7 +46,7 @@ const DocumentationPage = ({ data, path, pageContext }) => {
           logo={logo}
           currentPath={path}
           title={chapterTitle}
-          pages={currentAndSiblingPages.nodes.map(applyPathOverride)}
+          pages={currentAndSiblingPages.nodes}
         />
         {galleryImages.nodes.length > 1 && (
           <Gallery
