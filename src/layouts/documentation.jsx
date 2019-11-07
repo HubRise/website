@@ -41,7 +41,7 @@ const DocumentationPage = ({ data, path, pageContext }) => {
   const { currentAndSiblingPages, galleryImages, logo } = data
   const [ currentPage ] = currentAndSiblingPages.nodes
     .filter(({ id }) => id === data.currentPage.id)
-  const { frontmatter, body, fields } = currentPage
+  const { frontmatter, body } = currentPage
 
   return (
     <section className='section'>
@@ -71,7 +71,7 @@ const DocumentationPage = ({ data, path, pageContext }) => {
         />
         {galleryImages.nodes.length > 1 && (
           <Gallery
-            appName={fields.appId}
+            title={chapterTitle}
             images={sortGalleryImages(frontmatter.gallery, galleryImages.nodes)}
           />
         )}
@@ -118,7 +118,6 @@ export const documentationPageQuery = graphql`
         }
         fields {
           slug
-          appId
         }
         headings {
           value
@@ -157,8 +156,7 @@ DocumentationPage.propTypes = {
             })
           }),
           fields: PropTypes.shape({
-            slug: PropTypes.string.isRequired,
-            appId: PropTypes.string
+            slug: PropTypes.string.isRequired
           }),
           headings: PropTypes.arrayOf(
             PropTypes.shape({

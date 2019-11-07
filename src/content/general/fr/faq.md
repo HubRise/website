@@ -1,9 +1,10 @@
 ---
 title: F.A.Q
+path_override: /
 layout: faq
 ---
 
-import ContactFormToggle from '../components/markdown/contact_form_toggle.jsx'
+import ContactFormToggle from '../../../components/markdown/contact_form_toggle.jsx'
 
 #### Abonnement
 

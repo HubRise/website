@@ -43,7 +43,7 @@ const PrevArrow = ({ onClick, currentImageNumber }) => {
   )
 }
 
-const Gallery = ({ images, appName }) => {
+const Gallery = ({ images, title }) => {
   const slider = useRef(null)
   const [ isSliderVisible, setIsSliderVisible ] = useState(false)
   const [ currentImageNumber, setCurrentImageNumber ] = useState(1)
@@ -115,7 +115,7 @@ const Gallery = ({ images, appName }) => {
         >
           <p className='image-slider__title'>
             <span className='image-slider__title-app-name'>
-              {appName}
+              {title}
             </span>
           </p>
           <p className='image-slider__count'>
