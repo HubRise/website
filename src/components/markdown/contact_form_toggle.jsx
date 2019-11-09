@@ -5,7 +5,14 @@ import { useLayoutContext } from '../../context/layout'
 function ContactFormToggle ({ text }) {
   const { forms } = useLayoutContext()
 
-  return <button onClick={forms.contact.toggle}>{text}</button>
+  return (
+    <button
+      className='documentation__link'
+      onClick={forms.contact.toggle}
+    >
+      {text}
+    </button>
+  )
 }
 
 export default ContactFormToggle

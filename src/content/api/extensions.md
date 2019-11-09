@@ -11,7 +11,7 @@ The HubRise API can be extended in two ways:
 
 Extensions let clients implement use cases not natively supported by the API.
 
-The HubRise development team monitors how extensions are used in an effort to document and "standardize" the most common fields and endpoints. You can [contact us](mailto:contact@hubrise.com) to discuss about your use case and see if it could fit into existing and well supported extensions.
+The HubRise development team monitors how extensions are used in an effort to document and "standardize" the most common fields and endpoints. You can <ContactFormToggle text="contact us" /> to discuss about your use case and see if it could fit into existing and well supported extensions.
 
 ## 1. Custom fields
 
