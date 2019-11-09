@@ -5,7 +5,8 @@ const { flattenDeep } = require('lodash')
 const { partialRight } = require('lodash/fp')
 
 const locales = require(path.join(process.cwd(), `src/i18n/locales.json`))
-const { getDefaultLocale } = require(path.join(process.cwd(), `gatsby_apis/node/utils`))
+const allLocaleCodes = Object.keys(locales)
+const { getDefaultLocale } = require(path.join(__dirname, `utils`))
 
 const pathToLayouts = path.join(process.cwd(), `src/layouts`)
 const pathToContent = path.join(process.cwd(), `src/content`)
@@ -91,10 +92,10 @@ const createPagesForEachChapter = (
 ) => {
   return fs.readdirSync(pathToContent).map((chapterName) => {
     const pathToChapter = path.join(pathToContent, chapterName)
+    const nestedChapters = fs.readdirSync(pathToChapter)
+      .filter((subdir) => subdir !== `images` && !allLocaleCodes.includes(subdir))
 
-    // Apps maintain their own localized content.
-    // Go one level deeper and loop over every app folder.
-    if (chapterName === `apps`) {
+    if (nestedChapters.length > 0) {
       return createPagesForEachChapter(pathToChapter, locale, createPagesForLocale)
     }
 
