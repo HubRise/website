@@ -46,10 +46,11 @@ const getMdxContent = async (pathToPages, graphql) => {
 const createPageFromMdxNode = (node, locale, actions) => {
   const { id, fileAbsolutePath, frontmatter, fields } = node
   const { layout, gallery } = frontmatter
-  const parentDirectory = path.dirname(fileAbsolutePath)
+  const currentDirectory = path.dirname(fileAbsolutePath)
+  const parentDirectory = path.dirname(currentDirectory)
   const pathToImages = `${parentDirectory}/images`
   const config = yaml.safeLoad(
-    fs.readFileSync(path.join(parentDirectory, `customization.yaml`), `utf-8`)
+    fs.readFileSync(path.join(currentDirectory, `customization.yaml`), `utf-8`)
   )
 
   actions.createPage({
@@ -58,7 +59,7 @@ const createPageFromMdxNode = (node, locale, actions) => {
     context: {
       id,
       currentAndSiblingPagesFilter: {
-        fileAbsolutePath: { glob: `${parentDirectory}/*` }
+        fileAbsolutePath: { glob: `${currentDirectory}/*` }
       },
       galleryImagesFilter: {
         absolutePath: { glob: `${pathToImages}/*` },
