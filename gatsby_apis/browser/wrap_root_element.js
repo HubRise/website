@@ -21,9 +21,9 @@ let components = {
   a: ({ href, ...other }) => (
     <Link
       to={href}
-      className='documentation__link'
       {...other}
-    />),
+    />
+  ),
   pre: ({ children: { props } }) => (
     <HighlightCode
       language={props.className && props.className.split(`-`)[1]}
