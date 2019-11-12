@@ -8,7 +8,12 @@ export const Philosophy = ({ title, description }) => {
         <h3 className='section__title'>
           {title}
         </h3>
-        {description}
+        <p className='section__description section__description_black'>
+          {description.paragraph_1}
+        </p>
+        <p className='section__description'>
+          {description.paragraph_2}
+        </p>
       </div>
     </section>
   )
@@ -16,5 +21,8 @@ export const Philosophy = ({ title, description }) => {
 
 Philosophy.propTypes = {
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired
+  description: PropTypes.shape({
+    paragraph_1: PropTypes.string.isRequired,
+    paragraph_2: PropTypes.string.isRequired
+  }).isRequired
 }

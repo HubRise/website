@@ -56,11 +56,20 @@ export const frontPageQuery = graphql`
         content {
           hero {
             title
-            description
+            description {
+              paragraph
+              link
+            }
           }
           signup_form {
             title
-            description
+            description {
+              paragraph
+              link {
+                text
+                to
+              }
+            }
             button
           }
           main {
@@ -83,7 +92,20 @@ export const frontPageQuery = graphql`
           }
           compatible_apps {
             title
-            description
+            description {
+              paragraph_1
+              paragraph_2
+              link_1 {
+                text
+                to
+              }
+              hint_1
+              link_2 {
+                text
+                to
+              }
+              hint_2
+            }
             carousel {
               file
               title
@@ -93,7 +115,10 @@ export const frontPageQuery = graphql`
           }
           philosophy {
             title
-            description
+            description {
+              paragraph_1
+              paragraph_2
+            }
           }
         }
       }
@@ -111,11 +136,20 @@ FrontPage.propTypes = {
         content: PropTypes.shape({
           hero: PropTypes.shape({
             title: PropTypes.string.isRequired,
-            description: PropTypes.string.isRequired
+            description: PropTypes.shape({
+              paragraph: PropTypes.string.isRequired,
+              link: PropTypes.string.isRequired
+            }).isRequired
           }),
           signup_form: PropTypes.shape({
             title: PropTypes.string.isRequired,
-            description: PropTypes.string.isRequired,
+            description: PropTypes.shape({
+              paragraph: PropTypes.string.isRequired,
+              link: PropTypes.shape({
+                text: PropTypes.string.isRequired,
+                to: PropTypes.string.isRequired
+              }).isRequired
+            }).isRequired,
             button: PropTypes.string.isRequired
           }).isRequired,
           main: PropTypes.shape({
@@ -140,7 +174,20 @@ FrontPage.propTypes = {
           }),
           compatible_apps: PropTypes.shape({
             title: PropTypes.string.isRequired,
-            description: PropTypes.string.isRequired,
+            description: PropTypes.shape({
+              paragraph_1: PropTypes.string.isRequired,
+              paragraph_2: PropTypes.string.isRequired,
+              link_1: PropTypes.shape({
+                text: PropTypes.string.isRequired,
+                to: PropTypes.string.isRequired
+              }),
+              hint_1: PropTypes.string.isRequired,
+              link_2: PropTypes.shape({
+                text: PropTypes.string.isRequired,
+                to: PropTypes.string.isRequired
+              }),
+              hint_2: PropTypes.string.isRequired
+            }).isRequired,
             carousel: PropTypes.arrayOf(
               PropTypes.shape({
                 file: PropTypes.string.isRequired,
@@ -152,7 +199,10 @@ FrontPage.propTypes = {
           }),
           philosophy: PropTypes.shape({
             title: PropTypes.string.isRequired,
-            description: PropTypes.string.isRequired
+            description: PropTypes.shape({
+              paragraph_1: PropTypes.string.isRequired,
+              paragraph_2: PropTypes.string.isRequired
+            }).isRequired
           })
         })
       })

@@ -5,10 +5,16 @@ path_override: /
 content:
   hero:
     title: Centralize the data of your retail store
-    description: Connect your POS, your website and all your applications.<1>Read more</1>
+    description:
+      paragraph: Connect your POS, your website and all your applications.
+      link: Read more
   signup_form:
     title: Get started now
-    description: <0>HubRise is free up to 50 orders per month.</0> <1>See pricing</1>
+    description:
+      paragraph: HubRise is free up to 50 orders per month.
+      link:
+        text: See pricing
+        to: /pricing
     link_to_pricing: /pricing
     button: Create your account
   main:

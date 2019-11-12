@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Image from 'gatsby-image'
 
+import Link from '../../link'
 import { useInterval } from '../../custom_hooks'
 import { generateKey } from '../../utils'
 
@@ -31,7 +32,29 @@ export const CompatibleApps = ({
           {title}
         </h3>
         <p className='section__description'>
-          {description}
+          {description.paragraph_1}
+          <br />
+          {description.paragraph_2}
+          <br />
+          <Link
+            to={description.link_1.to}
+            className='section__description-link'
+          >
+            {description.link_1.text}
+          </Link>
+          <span className='section__description-span'>
+            {description.hint_1}
+          </span>
+          -
+          <Link
+            to={description.link_2.to}
+            className='section__description-link'
+          >
+            {description.link_2.text}
+          </Link>
+          <span className='section__description-span'>
+            {description.hint_2}
+          </span>
         </p>
         <div
           className='index-carousel orbit-wrapper'
@@ -135,7 +158,20 @@ export const CompatibleApps = ({
 
 CompatibleApps.propTypes = {
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.shape({
+    paragraph_1: PropTypes.string.isRequired,
+    paragraph_2: PropTypes.string.isRequired,
+    link_1: PropTypes.shape({
+      text: PropTypes.string.isRequired,
+      to: PropTypes.string.isRequired
+    }),
+    hint_1: PropTypes.string.isRequired,
+    link_2: PropTypes.shape({
+      text: PropTypes.string.isRequired,
+      to: PropTypes.string.isRequired
+    }),
+    hint_2: PropTypes.string.isRequired
+  }).isRequired,
   carouselImages: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,

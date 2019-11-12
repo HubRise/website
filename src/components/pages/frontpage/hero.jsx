@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import SignupForm from '../../forms/signup'
+import Link from '../../link'
 
 export const Hero = ({ title, description, signupForm }) => {
   return (
@@ -13,7 +14,13 @@ export const Hero = ({ title, description, signupForm }) => {
               {title}
             </h3>
             <p className='index-hero__description'>
-              {description}
+              {description.paragraph}
+              <Link
+                to='#more'
+                className='index-hero__link'
+              >
+                {description.link}
+              </Link>
             </p>
           </div>
         </div>
@@ -23,7 +30,16 @@ export const Hero = ({ title, description, signupForm }) => {
               {signupForm.title}
             </h5>
             <p className='index-hero__form-description'>
-              {signupForm.description}
+              <span>
+                {signupForm.description.paragraph}
+              </span>
+              {` `}
+              <Link
+                className='index-hero__form-link'
+                to={signupForm.description.link.to}
+              >
+                {signupForm.description.link.text}
+              </Link>
             </p>
             <SignupForm buttonText={signupForm.button} />
           </div>
@@ -35,10 +51,19 @@ export const Hero = ({ title, description, signupForm }) => {
 
 Hero.propTypes = {
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.shape({
+    paragraph: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired
+  }).isRequired,
   signupForm: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    description: PropTypes.shape({
+      paragraph: PropTypes.string.isRequired,
+      link: PropTypes.shape({
+        text: PropTypes.string.isRequired,
+        to: PropTypes.string.isRequired
+      }).isRequired
+    }).isRequired,
     button: PropTypes.string.isRequired
   }).isRequired
 }
