@@ -1,7 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-import PropTypes from 'prop-types'
 
 import {
   SectionNavigation,
@@ -9,18 +9,13 @@ import {
   AppInfo
 } from '../components/documentation'
 
-const sortGalleryImages = (ordered, nodes) => {
-  return ordered.reduce((reorderedNodes, base) => {
-    return [...reorderedNodes, nodes.find((node) => node.base === base)]
-  }, [])
-}
-
 const DocumentationPage = ({ data, path, pageContext }) => {
-  const { name: chapterTitle } = pageContext
-  const { currentAndSiblingPages, galleryImages, logo } = data
+  const { name: chapterTitle, logo: logoBase } = pageContext.config
+  const { currentAndSiblingPages, images } = data
   const [ currentPage ] = currentAndSiblingPages.nodes
     .filter(({ id }) => id === data.currentPage.id)
   const { frontmatter, body } = currentPage
+  const { title, gallery, appInfo } = frontmatter
 
   return (
     <section className='section'>
@@ -35,7 +30,7 @@ const DocumentationPage = ({ data, path, pageContext }) => {
         <div className='section__content'>
           <div className='documentation'>
             <h1>
-              {frontmatter.title}
+              {title}
             </h1>
             <MDXRenderer>
               {body}
@@ -43,40 +38,31 @@ const DocumentationPage = ({ data, path, pageContext }) => {
           </div>
         </div>
         <SectionNavigation
-          logo={logo}
+          logo={images.nodes.find(({ base }) => base === logoBase)}
           currentPath={path}
           title={chapterTitle}
           pages={currentAndSiblingPages.nodes}
         />
-        {galleryImages.nodes.length > 1 && (
+        {gallery && (
           <Gallery
             title={chapterTitle}
-            images={sortGalleryImages(frontmatter.gallery, galleryImages.nodes)}
+            images={gallery.reduce((result, base) => {
+              const match = images.nodes.find((node) => node.base === base)
+              return result.concat(match || [])
+            }, [])}
           />
         )}
-        {frontmatter.app_info && <AppInfo content={frontmatter.app_info} />}
+        {appInfo && <AppInfo content={appInfo} />}
       </div>
     </section>
   )
 }
 
 export const documentationPageQuery = graphql`
-  fragment Image on File {
-    name
-    base
-    childImageSharp {
-      fluid {
-        ...GatsbyImageSharpFluid_withWebp_tracedSVG
-        presentationWidth
-      }
-    }
-  }
-
   query getDocumentationPageContent(
     $id: String!,
-    $currentAndSiblingPagesFilter: MdxFilterInput!
-    $galleryImagesFilter: FileFilterInput,
-    $logoAbsolutePath: StringQueryOperatorInput,
+    $currentAndSiblingPagesFilter: MdxFilterInput!,
+    $imagesFilter: FileFilterInput,
   ) {
     currentPage: mdx(id: { eq: $id }) { id }
     currentAndSiblingPages: allMdx(filter: $currentAndSiblingPagesFilter) {
@@ -105,11 +91,8 @@ export const documentationPageQuery = graphql`
         body
       }
     }
-    galleryImages: allFile(filter: $galleryImagesFilter) {
+    images: allFile(filter: $imagesFilter) {
       nodes { ...Image }
-    }
-    logo: file(absolutePath: $logoAbsolutePath) {
-      ...Image
     }
   }
 `
@@ -147,7 +130,7 @@ DocumentationPage.propTypes = {
         })
       )
     }),
-    galleryImages: PropTypes.shape({
+    images: PropTypes.shape({
       nodes: PropTypes.arrayOf(
         PropTypes.shape({
           name: PropTypes.string.isRequired,

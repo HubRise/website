@@ -1,6 +1,5 @@
 ---
 title: F.A.Q
-path_override: /
 layout: faq
 ---
 

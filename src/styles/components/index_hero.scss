@@ -2,6 +2,9 @@
   width: 100%;
   height: auto;
   display: inline-block;
+  background-image: url(../images/hero_image_optimized.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &__container {
     padding-top: $block-padding;
