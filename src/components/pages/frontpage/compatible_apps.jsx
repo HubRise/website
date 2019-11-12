@@ -8,12 +8,12 @@ import { generateKey } from '../../utils'
 export const CompatibleApps = ({
   title,
   description,
-  carousel,
+  carouselImages,
   screen_reader_pointer: screenReaderPointer
 }) => {
   const [activeIndex, setActiveIndex] = useState(0)
   const [lastActiveIndex, setLastActiveIndex] = useState()
-  const lastIndex = carousel.length - 1
+  const lastIndex = carouselImages.length - 1
 
   useInterval(function rotateBanners () {
     setLastActiveIndex(activeIndex)
@@ -69,7 +69,7 @@ export const CompatibleApps = ({
                 setActiveIndex(newIndex > lastIndex ? 0 : newIndex)
               }}
             />
-            {carousel.map(({ title, childImageSharp }, idx) => {
+            {carouselImages.map(({ title, childImageSharp }, idx) => {
               return (
                 <li
                   key={generateKey(title, idx)}
@@ -103,7 +103,7 @@ export const CompatibleApps = ({
             })}
           </ul>
           <nav className='index-carousel__bullets orbit-bullets'>
-            {carousel.map(({ description }, idx) => {
+            {carouselImages.map(({ description }, idx) => {
               const isCurrentSlide = activeIndex === idx
               return (
                 <button
@@ -136,7 +136,7 @@ export const CompatibleApps = ({
 CompatibleApps.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  carousel: PropTypes.arrayOf(
+  carouselImages: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,

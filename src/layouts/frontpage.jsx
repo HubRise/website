@@ -13,13 +13,7 @@ import {
 
 export const FrontPage = ({ data }) => {
   const { mdx, images } = data
-  const { frontmatter } = mdx
-  const {
-    content,
-    diagram: diagramBase,
-    video: videoBase,
-    carousel
-  } = frontmatter
+  const { content } = mdx.frontmatter
 
   return (
     <>
@@ -28,19 +22,19 @@ export const FrontPage = ({ data }) => {
         {...content.hero}
       />
       <Main
-        diagram={images.nodes.find(({ base }) => base === diagramBase)}
         {...content.main}
+        diagramImage={images.nodes.find(({ base }) => base === content.main.diagram)}
       />
-      {content.video && (
+      {content.demonstration && (
         <Demonstration
-          video={images.nodes.find(({ base }) => base === videoBase)}
-          {...content.video}
+          videoFile={images.nodes.find(({ base }) => base === content.demonstration.video)}
+          {...content.demonstration}
         />
       )}
       {content.faq && <Faq {...content.faq} />}
       {content.compatible_apps && (
         <CompatibleApps
-          carousel={carousel.reduce((result, item) => {
+          carouselImages={content.compatible_apps.carousel.reduce((result, item) => {
             const match = images.nodes.find(({ base }) => item.file === base)
             return result.concat(match ? { ...item, ...match } : [])
           }, [])}
@@ -59,13 +53,6 @@ export const frontPageQuery = graphql`
   ) {
     mdx(id: { eq: $id }) {
       frontmatter {
-        diagram
-        video
-        carousel {
-          file
-          title
-          description
-        }
         content {
           hero {
             title
@@ -80,9 +67,11 @@ export const frontPageQuery = graphql`
             title
             description
             features
+            diagram
           }
-          video {
+          demonstration {
             title
+            video
             unsupported
           }
           faq {
@@ -95,6 +84,11 @@ export const frontPageQuery = graphql`
           compatible_apps {
             title
             description
+            carousel {
+              file
+              title
+              description
+            }
             screen_reader_pointer
           }
           philosophy {
@@ -114,15 +108,6 @@ FrontPage.propTypes = {
   data: PropTypes.shape({
     mdx: PropTypes.shape({
       frontmatter: PropTypes.shape({
-        diagram: PropTypes.string.isRequired,
-        video: PropTypes.string,
-        carousel: PropTypes.arrayOf(
-          PropTypes.shape({
-            file: PropTypes.string.isRequired,
-            title: PropTypes.string.isRequired,
-            description: PropTypes.string.isRequired
-          })
-        ),
         content: PropTypes.shape({
           hero: PropTypes.shape({
             title: PropTypes.string.isRequired,
@@ -136,11 +121,13 @@ FrontPage.propTypes = {
           main: PropTypes.shape({
             title: PropTypes.string.isRequired,
             description: PropTypes.string.isRequired,
-            features: PropTypes.arrayOf(PropTypes.string).isRequired
+            features: PropTypes.arrayOf(PropTypes.string).isRequired,
+            diagram: PropTypes.string.isRequired
           }).isRequired,
-          video: PropTypes.shape({
+          demonstration: PropTypes.shape({
             title: PropTypes.string.isRequired,
-            unsupported: PropTypes.string.isRequired
+            unsupported: PropTypes.string.isRequired,
+            video: PropTypes.string.isRequired
           }),
           faq: PropTypes.shape({
             title: PropTypes.string.isRequired,
@@ -154,6 +141,13 @@ FrontPage.propTypes = {
           compatible_apps: PropTypes.shape({
             title: PropTypes.string.isRequired,
             description: PropTypes.string.isRequired,
+            carousel: PropTypes.arrayOf(
+              PropTypes.shape({
+                file: PropTypes.string.isRequired,
+                title: PropTypes.string.isRequired,
+                description: PropTypes.string.isRequired
+              })
+            ).isRequired,
             screen_reader_pointer: PropTypes.string.isRequired
           }),
           philosophy: PropTypes.shape({

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export const Demonstration = ({ video, title, unsupported }) => {
+export const Demonstration = ({ videoFile, title, unsupported }) => {
   return (
     <section className='section'>
       <div className={`
@@ -17,7 +17,7 @@ export const Demonstration = ({ video, title, unsupported }) => {
           width='400'
           controls
         >
-          <source src={video.publicURL} />
+          <source src={videoFile.publicURL} />
           {unsupported}
         </video>
       </div>
@@ -26,7 +26,7 @@ export const Demonstration = ({ video, title, unsupported }) => {
 }
 
 Demonstration.propTypes = {
-  video: PropTypes.shape({
+  videoFile: PropTypes.shape({
     publicURL: PropTypes.string.isRequired
   }).isRequired,
   title: PropTypes.string.isRequired,

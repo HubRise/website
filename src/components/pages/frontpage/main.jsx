@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { NonStretchedImage } from '../../image'
 import { generateKey } from '../../utils'
 
-export const Main = ({ title, description, features, diagram }) => {
+export const Main = ({ title, description, features, diagramImage }) => {
   return (
     <section
       id='more'
@@ -32,8 +32,8 @@ export const Main = ({ title, description, features, diagram }) => {
         <div className='section__diagram'>
           <NonStretchedImage
             className='section__diagram-image'
-            alt={diagram.name}
-            {...diagram.childImageSharp}
+            alt={diagramImage.name}
+            {...diagramImage.childImageSharp}
           />
         </div>
       </div>
@@ -45,7 +45,7 @@ Main.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   features: PropTypes.arrayOf(PropTypes.string).isRequired,
-  diagram: PropTypes.shape({
+  diagramImage: PropTypes.shape({
     name: PropTypes.string.isRequired,
     childImageSharp: PropTypes.object.isRequired
   }).isRequired
