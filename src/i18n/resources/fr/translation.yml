@@ -1,21 +1,4 @@
 pages:
-  developers:
-    hero:
-      title: Connectez votre application à HubRise
-      description: Une seule intégration rend votre application compatible avec tout l'écosystème HubRise. <1></1> <2>Contactez-nous</2> pour plus d'informations ou pour toute question technique.
-    thumbs:
-      quick_start:
-        title: Démarrage rapide
-        description: En 10 minutes, envoyez vos premières requêtes à l'API (en anglais)
-      general_concepts:
-        title: Référence de l'API
-        description: Toutes les ressources de l'API sont documentées ici (en anglais)
-      authentication:
-        title: Authentification
-        description: Introduction à OAuth 2.0 et son implémentation dans HubRise (en anglais)
-      integration:
-        title: Intégration
-        description: Checklist d'intégration, couvrant plusieurs types d'applications (en anglais)
   pricing:
     title: Un abonnement mensuel pour une utilisation illimitée
     offer:

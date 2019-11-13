@@ -1,21 +1,4 @@
 pages:
-  developers:
-    hero:
-      title: Connect your application to HubRise
-      description: An integration to HubRise makes your application connected to the HubRise ecosystem. <1></1> <2>Contact us</2> for more information or technical assistance.
-    thumbs:
-      quick_start:
-        title: Quick Start
-        description: 10-minute guide to learn how to send your first API requests
-      general_concepts:
-        title: API reference
-        description: The resources available in the API are documented here
-      authentication:
-        title: Authentication
-        description: Introduction to OAuth 2.0 and how it is implemented in HubRise
-      integration:
-        title: Integration
-        description: Integration checklist, covering several types of applications
   pricing:
     title: Single monthly fee, unlimited usage
     offer:
