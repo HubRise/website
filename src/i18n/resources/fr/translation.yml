@@ -1,18 +1,4 @@
 pages:
-  pricing:
-    title: Un abonnement mensuel pour une utilisation illimitée
-    offer:
-      value: 25€ HT / mois <1>par point de vente</1>
-      features:
-        - "Nombre de commandes : illimité"
-        - "Nombre de clients : illimité"
-        - "Nombre de produits : illimité"
-        - "Nombre d'applications connectées : illimité"
-      button: Démarrer maintenant
-    special:
-      free: <0>Gratuit :</0> Jusqu'à 50 commandes et 50 clients par mois. <2>Démarrer maintenant</2>
-      large_accounts: <0>Pour les chaînes :</0> Tarifs dégressifs à partir de 5 points de vente. <2>Nous contacter</2>
-      faq: Voir notre F.A.Q. concernant l'abonnement
   apps:
     hero:
       title: Les applications disponibles <1></1> ou bientôt disponibles
