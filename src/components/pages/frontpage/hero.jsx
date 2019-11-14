@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import SignupForm from '../../forms/signup'
 import Link from '../../link'
 
-export const Hero = ({ title, description, signupForm }) => {
+export const Hero = ({ title, description, signupFormContent }) => {
   return (
     <div className='index-hero'>
       <div className='index-hero__container'>
@@ -27,21 +27,21 @@ export const Hero = ({ title, description, signupForm }) => {
         <div className='index-hero__form'>
           <div className='index-hero__form-in'>
             <h5 className='index-hero__form-title'>
-              {signupForm.title}
+              {signupFormContent.title}
             </h5>
             <p className='index-hero__form-description'>
               <span>
-                {signupForm.description.paragraph}
+                {signupFormContent.description.paragraph}
               </span>
               {` `}
               <Link
                 className='index-hero__form-link'
-                to={signupForm.description.link.to}
+                to={signupFormContent.description.link.to}
               >
-                {signupForm.description.link.text}
+                {signupFormContent.description.link.text}
               </Link>
             </p>
-            <SignupForm buttonText={signupForm.button} />
+            <SignupForm buttonText={signupFormContent.button} />
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@ Hero.propTypes = {
     paragraph: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired
   }).isRequired,
-  signupForm: PropTypes.shape({
+  signupFormContent: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.shape({
       paragraph: PropTypes.string.isRequired,

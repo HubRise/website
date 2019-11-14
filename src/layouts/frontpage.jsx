@@ -11,14 +11,14 @@ import {
   Philosophy
 } from '../components/pages/frontpage'
 
-export const FrontPage = ({ data }) => {
+const FrontPage = ({ data }) => {
   const { mdx, images } = data
   const { content } = mdx.frontmatter
 
   return (
     <>
       <Hero
-        signupForm={content.signup_form}
+        signupFormContent={content.signup_form}
         {...content.hero}
       />
       <Main
@@ -49,7 +49,7 @@ export const FrontPage = ({ data }) => {
 export const frontPageQuery = graphql`
   query getFrontPageContent(
     $id: String!,
-    $imagesFilter: FileFilterInput
+    $imagesFilter: FileFilterInput!
   ) {
     mdx(id: { eq: $id }) {
       frontmatter {
