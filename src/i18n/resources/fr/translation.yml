@@ -1,84 +1,3 @@
-pages:
-  apps:
-    hero:
-      title: Les applications disponibles <1></1> ou bientôt disponibles
-      description:
-        contact: "
-        Vous êtes commerçant et votre application ne figure pas dans cette liste ?
-        <1>Contactez-nous</1>"
-        developers: "
-        Vous êtes développeur et souhaitez intégrer votre application à HubRise ?
-        <1>Voir la documentation technique</1>"
-    sections:
-      shared:
-        suggest_app:
-          title: Proposer une application
-          description: Votre application ne se trouve pas dans cette liste ?
-          button: Proposer
-      cashier:
-        title: Logiciels de caisse
-        jdc:
-          title: Kezia II / JDC
-          description: Logiciel de caisse développé par JDC, le leader français des solutions d'encaissement. Kezia II s'adapte à tous les types de commerces.
-        orderlord:
-          title: OrderLord POS
-          description: Logiciel de caisse spécialisé en livraison. Nombreuses fonctionnalités de gestion de livreurs.
-          additional_info: En anglais uniquement
-        nestor:
-          title: Nestor
-          description: Un logiciel de caisse conçu pour la livraison à domicile et la vente à emporter.
-        my_order_box:
-          title: MyOrderBox
-          description: Logiciel de caisse facile à installer.
-          additional_info: En anglais uniquement
-        cashpad:
-          title: CashPad
-          description: Logiciel de caisse et caisse enregistreuse iPad pour la restauration.
-          additional_info: Intégration prévue
-      order_online:
-        title: Commande en ligne
-        livepepper:
-          title: LivePepper
-          description: Solution de commande en ligne pour les restaurants. Adapté aux indépendants comme aux chaînes.
-        acrelec:
-          title: Acrelec
-          description: Solutions Drive et bornes de commande avec terminal de paiement intégré.
-          additional_info: En cours d'intégration
-        alloresto:
-          title: AlloResto
-          description: Portail de vente en ligne de repas.
-          additional_info: Intégration prévue
-        nextmenu:
-          title: NextMenu
-          description: Tablettes de commande individuelles pour les restaurants.
-          additional_info: Intégration prévue
-        yproximite:
-          title: Y-Proximité
-          description: Agence digitale et éditeur de solutions de commande en ligne pour les PME et petits commerçants.
-          additional_info: En cours d'intégration
-      other:
-        title: Autres applications
-        orderlord:
-          title: OrderLord
-          description: Logiciel de gestion de flotte de livreurs, connecté aux livreurs par des terminaux GPS.
-        mailchimp:
-          title: MailChimp
-          description: Solution d'envoi d'emails et de newsletter personnalisés.
-    developers:
-      title: Vous êtes développeur ?
-      description: "
-      <0>
-        Utilisez notre API pour construire une application utile aux
-        commerçants. Proposez-la aux utilisateurs d'HubRise en la publiant sur
-        notre site.
-      </0>
-      <1>
-        Nos utilisateurs sont des professionnels en recherche de solutions
-        pour moderniser leur activité. <1></1>
-        Il y a beaucoup à faire, et les bonnes idées d'aujourd'hui sont les
-        standards de demain.
-      </1>"
-
 layout:
   header:
     buttons:
@@ -136,9 +55,10 @@ forms:
     button: Envoyer
     modal_title: Contactez-Nous
   suggest_app:
-    subtitle_contact: "A propos de Vous :"
-    subtitle_app: "A propos de l'Application :"
-    button: Envoyer
     modal:
       title: Proposer une Application
       description: Dnteger viverra non lorem vitae efficitur. Nam quis nunc erat. Mauris aliquet ullamcorper maximus. Quisque faucibus felis metus, eget iaculis lectus aliquet non.
+    subtitles:
+      contact: "A propos de Vous : "
+      app: "A propos de l'Application : "
+    button: Envoyer

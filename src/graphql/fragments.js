@@ -5,6 +5,7 @@ export const Image = graphql`
     name
     base
     publicURL
+    relativeDirectory
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid_withWebp_tracedSVG

@@ -62,7 +62,7 @@ const createPageFromMdxNode = (node, locale, actions) => {
         fileAbsolutePath: { glob: `${currentDirectory}/*` }
       },
       imagesFilter: {
-        absolutePath: { glob: `${pathToImages}/*` }
+        absolutePath: { glob: `${pathToImages}/**/*` }
       },
       config
     }
