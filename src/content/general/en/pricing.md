@@ -13,18 +13,16 @@ content:
       - Unlimited customers
       - Unlimited products
       - Unlimited connections
-    button:
+    link:
       text: Start now
       to: https://manager.hubrise.com/signup
   specials:
-    free:
-      chunk_1: 'Free: '
-      chunk_2: Up to 50 orders and 50 customers per month.
+    - paragraph_chunk_1: 'Free: '
+      paragraph_chunk_2: Up to 50 orders and 50 customers per month.
       link:
         text: Start Now
         to: https://manager.hubrise.com/signup
-    large_accounts:
-      chunk_1: 'Large accounts: '
-      chunk_2: prices are negotiable starting from 10 locations.
+    - paragraph_chunk_1: 'Large accounts: '
+      paragraph_chunk_2: prices are negotiable starting from 10 locations.
       button: Contact Us
 ---
