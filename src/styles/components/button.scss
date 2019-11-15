@@ -20,4 +20,18 @@
   &_section {
     margin-top: 1rem;
   }
+
+  &_contact {
+    color: #6db24f;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: #5d9a43;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }

@@ -7,7 +7,7 @@ function ContactFormToggle ({ text }) {
 
   return (
     <button
-      className='markdown__button'
+      className='button_contact'
       onClick={forms.contact.toggle}
     >
       {text}
