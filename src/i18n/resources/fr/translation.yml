@@ -31,13 +31,14 @@ forms:
     app_contact_required: Sorry, but we cannot proceed without company's contact details.
     app_name_required: Sorry, but we cannot proceed without company's name.
     email: Provided email seems to be incorrect. Could you double check?
-    email_required: Sorry, but we cannot proceed without your email.
-    last_name_required: Sorry, but we cannot proceed without your last name.
-    message_min: We'd really appreciate a message longer than {{ length }} characters.
-    message_required: Sorry, but empty messages are no fun.
-    name_required: Sorry, but we cannot proceed without your name.
-    password_min: It's a good practice to have at least {{ length }} symbols in your password.
-    password_required: Please choose a password.
+    email_required: Veuillez indiquer une adresse email.
+    first_name_required: Veuillez indiquer votre prénom.
+    last_name_required: Veuillez indiquer votre nom.
+    message_min: Nous aimerions vraiment un message d'au moins {{ length }} caractères.
+    message_required: Un message vide ? Faites un effort !
+    name_required: Veuillez indiquer votre nom.
+    password_min: Pour des raisons de sécurité, votre mot de passe doit contenir au moins {{ length }} symboles.
+    password_required: Veuillez choisir un mot de passe.
   placeholders:
     app_contact: Qui devons-nous contacter ?
     app_extra: Quelque chose à ajouter ?

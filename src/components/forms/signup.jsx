@@ -71,17 +71,22 @@ const Signup = ({ t, _i18n, buttonText, ...formikProps }) => {
 }
 
 const createSignupSchema = (t) => {
-  const lastNameMinLength = 2
-  const passwordLength = 10
+  const nameMinLength = 2
+  const passwordLength = 8
 
   return yup.object().shape({
     first_name: yup
-      .string(),
+      .string()
+      .min(
+        nameMinLength,
+        t(`forms.validation.min`, { length: nameMinLength })
+      )
+      .required(t(`forms.validation.first_name_required`)),
     last_name: yup
       .string()
       .min(
-        lastNameMinLength,
-        t(`forms.validation.min`, { length: lastNameMinLength })
+        nameMinLength,
+        t(`forms.validation.min`, { length: nameMinLength })
       )
       .required(t(`forms.validation.last_name_required`)),
     email: yup

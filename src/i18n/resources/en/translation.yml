@@ -24,13 +24,17 @@ forms:
     min: Minimum allowed length for this field is {{ length }} characters.
     required: This field is required.
     # }
+    app_contact_required: Please enter your company contact details.
+    app_name_required: Please enter your company name.
     email: Provided email seems to be incorrect. Could you double check?
-    email_required: Sorry, but we cannot proceed without your email.
-    last_name_required: Sorry, but we cannot proceed without your last name.
+    email_required: Please enter your email address.
+    first_name_required: Please enter your first name.
+    last_name_required: Please enter your last name.
     message_min: We'd really appreciate a message longer than {{ length }} characters.
     message_required: Sorry, but empty messages are no fun.
+    name_required: Please enter your name.
     password_min: It's a good practice to have at least {{ length }} symbols in your password.
-    password_required: Please choose a password.
+    password_required: Choose a password.
   placeholders:
     email: Your email
     first_name: First name
