@@ -99,6 +99,7 @@
     width: 1rem;
     color: $white;
     margin-bottom: 0;
+    text-transform: capitalize;
 
     @include breakpoint(medium up) {
       width: 1.75rem;

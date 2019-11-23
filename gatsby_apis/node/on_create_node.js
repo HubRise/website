@@ -1,28 +1,30 @@
+const fs = require(`fs`)
 const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const yaml = require('js-yaml')
 
-const onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions
-
+const onCreateNode = ({ node, actions }) => {
   if (node.internal.type === `Mdx`) {
-    const [ parentDirName, dirname ] = path.dirname(node.fileAbsolutePath)
-      .split(`/`)
-      .filter(Boolean)
-      .slice(-2)
+    const { createNodeField } = actions
+    const { fileAbsolutePath, frontmatter } = node
+    const config = yaml.safeLoad(
+      fs.readFileSync(
+        path.join(path.dirname(fileAbsolutePath), `customization.yaml`),
+        `utf-8`
+      )
+    )
+    const fileName = path.basename(
+      fileAbsolutePath,
+      path.extname(fileAbsolutePath)
+    )
+    const slug = (
+      (config.base_path === `/` ? `` : config.base_path) +
+      (frontmatter.path_override ? frontmatter.path_override : `/${fileName}/`)
+    )
 
-    if (parentDirName === `apps`) {
-      createNodeField({
-        node,
-        name: `appId`,
-        value: dirname
-      })
-    }
-
-    const slug = createFilePath({ node, getNode })
     createNodeField({
       node,
       name: `slug`,
-      value: `${slug.replace('_', '-')}`
+      value: slug.replace(/_/g, `-`)
     })
   }
 }

@@ -5,9 +5,9 @@
   "version": "0.1.0",
   "author": "Pavel Ermolin <pavel.2@icloud.com>",
   "scripts": {
-    "build": "gatsby build",
+    "build": "yarn clean && gatsby build",
     "clean": "gatsby clean",
-    "start:dev": "gatsby develop",
+    "start:dev": "yarn clean &&  gatsby develop",
     "start:prod": "gatsby build && gatsby serve --port 9009",
     "cy:open": "cypress open",
     "cy:run": "CYPRESS_BASE_URL=http://localhost:9009 cypress run",

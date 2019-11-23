@@ -24,6 +24,7 @@ function defineContent ({ formId, sections }, t) {
 
 const CompleteForm = ({
   buttonClasses,
+  buttonText,
   formProps,
   structure,
   t,
@@ -54,7 +55,7 @@ const CompleteForm = ({
         type='submit'
         name='submit'
       >
-        {t(`forms.${structure.formId}.button`)}
+        {buttonText || t(`forms.${structure.formId}.button`)}
       </button>
     </Form>
   )
