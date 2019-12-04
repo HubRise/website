@@ -1,7 +1,8 @@
 ---
 position: 1
 title: Overview
-info:
+layout: documentation
+app_info:
   category: POS
   availability: France, Switzerland, UK
   website: www.ikentoo.com

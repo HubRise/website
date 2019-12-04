@@ -1,6 +1,7 @@
 ---
 title: Developer guide
 position: 4
+layout: documentation
 ---
 
 Order JSON sent to iKentoo API:
