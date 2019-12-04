@@ -42,20 +42,19 @@ content:
           logo: cashpad.png
           title: CashPad
           description: Point of Sales on iPAD for restaurants, boulangeries and bars.
-          additional_info: Integration scheduled to start
           additional_info: Documentation in French
         - to: https://www.ikentoo.com
           domain: ikentoo.com
-          logo: ikentoo.png
+          logo: ikentoo_lightspeed.png
           title: iKentoo by LightSpeed
-          description: Point of Sales cloud on iPAD for restaurants.
+          description: iPad-based Point of Sales system for restaurants and hoteliers in use around the world.
     - title: Commande en ligne
       apps:
         - to: http://www.livepepper.fr/
           domain: livepepper.fr
           logo: livepepper.png
           title: LivePepper
-          description: Online Ordering solution for restaurants. Adapté aux indépendants comme aux chaînes.
+          description: Online Ordering solution for home delivery and takeaway restaurants, both in France and internationally.
         - to: http://www.acrelec.fr/
           domain: acrelec.fr
           logo: acrelec.png
