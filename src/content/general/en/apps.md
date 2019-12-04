@@ -15,11 +15,6 @@ content:
     - title: Point of Sales
       has_suggest_app: true
       apps:
-        - to: https://www.orderlord.com
-          domain: orderlord.com
-          logo: orderlord.png
-          title: OrderLord POS
-          description: OrderLord provides a Point of Sale combined with a Delivery Mangement solution, a Kitchen Screens and advanced reporting.
         - to: https://3s-pos.com
           domain: 3s-pos.com
           logo: 3spos.png
@@ -47,6 +42,16 @@ content:
           title: Nestor
           description: A Point of Sales solution designed for home delivery and takeaway restaurants.
           additional_info: Documentation in French
+        - to: https://www.orderlord.com
+          domain: orderlord.com
+          logo: orderlord.png
+          title: OrderLord POS
+          description: OrderLord provides a Point of Sale combined with a Delivery Mangement solution, a Kitchen Screens and advanced reporting.
+        - to: https://www.partech.com/pixel-point-software/
+          domain: partech.com
+          logo: pixelpoint.png
+          title: PixelPoint
+          description: A Point of Sales solution for restaurants and entertainment industry sector used for cost management, loss prevention and loyalty programs.
     - title: Online Ordering
       apps:
         - to: http://www.livepepper.fr/
