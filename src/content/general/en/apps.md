@@ -59,7 +59,7 @@ content:
           domain: nextsourcia.com
           logo: nextsourcia.png
           title: nextSourcia
-          description: Digital agency and Online Ordering software editor for SMEs and smaller retail stores.
+          description: Consulting, development of e-commerce site monitoring, hosting and specific developments.
           additional_info: Documentation in French
     - title: Autres applications
       apps:
