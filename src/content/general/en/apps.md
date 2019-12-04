@@ -59,7 +59,7 @@ content:
           domain: nextsourcia.com
           logo: nextsourcia.png
           title: nextSourcia
-          description: Consulting, development of e-commerce site monitoring, hosting and specific developments.
+          description: Consulting and development of e-commerce website for restaurants and retail stores as well as hosting and specific developments.
           additional_info: Documentation in French
     - title: Autres applications
       apps:
