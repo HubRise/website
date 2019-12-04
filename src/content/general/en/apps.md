@@ -47,10 +47,8 @@ content:
         - to: https://www.ikentoo.com
           domain: ikentoo.com
           logo: ikentoo.png
-          title: CashPad
-          description: Point of Sales on iPAD for restaurants, boulangeries and bars.
-          additional_info: Integration scheduled to start
-          additional_info: Documentation in French
+          title: iKentoo by LightSpeed
+          description: Point of Sales cloud on iPAD for restaurants.
     - title: Commande en ligne
       apps:
         - to: http://www.livepepper.fr/
