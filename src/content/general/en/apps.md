@@ -3,53 +3,61 @@ title: Applications
 layout: apps
 content:
   hero:
-    title_chunk_1: Les applications disponibles
-    title_chunk_2: ou bientôt disponibles
+    title_chunk_1: Available apps
+    title_chunk_2: or soon available apps
     description:
-      paragraph_1_text: Vous êtes commerçant et votre application ne figure pas dans cette liste ?
-      paragraph_1_link_text: Contactez-nous
-      paragraph_2_text: Vous êtes développeur et souhaitez intégrer votre application à HubRise ?
-      paragraph_2_link_text: Voir la documentation technique
-      paragraph_2_link_to: /developpeurs
+      paragraph_1_text: Are you a retail and applications you use are not available on this page?
+      paragraph_1_link_text: Contact us
+      paragraph_2_text: Are you a developer and you would like to integrate your solution with HubRise?
+      paragraph_2_link_text: See the technical documentation
+      paragraph_2_link_to: /developers
   sections:
-    - title: Logiciels de caisse
+    - title: Point of Sales
       has_suggest_app: true
       apps:
-        - to: https://www.jdc.fr/caisse-enregistreuse/
-          domain: jdc.fr
-          logo: jdc.png
-          title: Kezia II / JDC
-          description: Logiciel de caisse développé par JDC, le leader français des solutions d'encaissement. Kezia II s'adapte à tous les types de commerces.
         - to: https://www.orderlord.com
           domain: orderlord.com
           logo: orderlord.png
           title: OrderLord POS
-          description: Logiciel de caisse spécialisé en livraison. Nombreuses fonctionnalités de gestion de livreurs.
-          additional_info: En anglais uniquement
-        - to: http://www.logiciel-de-livraison.com/
-          domain: logiciel-de-livraison.com
-          logo: nestor.png
-          title: Nestor
-          description: Un logiciel de caisse conçu pour la livraison à domicile et la vente à emporter.
+          description: Point of Sales solution developed by Orderlord includes fully embedded, and advanced Delivery Management features.
         - to: http://www.myorderboxhq.com
           domain: myorderboxhq.com
           logo: myorderbox.png
           title: MyOrderBox
-          description: Logiciel de caisse facile à installer.
-          additional_info: En anglais uniquement
+          description: Point of Sales Easy to install and get hands on.
+        - to: https://www.jdc.fr/caisse-enregistreuse/
+          domain: jdc.fr
+          logo: jdc.png
+          title: Kezia II / JDC
+          description: Point of Sales solution developed by JDC, a French market leader. Kezia II adapts to all types of businesses.
+          additional_info: Documentation in French
+        - to: http://www.logiciel-de-livraison.com/
+          domain: logiciel-de-livraison.com
+          logo: nestor.png
+          title: Nestor
+          description: A Point of Sales solution designed for home delivery and takeaway restaurants.
+          additional_info: Documentation in French
         - to: https://www.cashpad.fr
           domain: cashpad.fr
           logo: cashpad.png
           title: CashPad
-          description: Logiciel de caisse et caisse enregistreuse iPad pour la restauration.
-          additional_info: Intégration prévue
+          description: Point of Sales on iPAD for restaurants, boulangeries and bars.
+          additional_info: Integration scheduled to start
+          additional_info: Documentation in French
+        - to: https://www.ikentoo.com
+          domain: ikentoo.com
+          logo: ikentoo.png
+          title: CashPad
+          description: Point of Sales on iPAD for restaurants, boulangeries and bars.
+          additional_info: Integration scheduled to start
+          additional_info: Documentation in French
     - title: Commande en ligne
       apps:
         - to: http://www.livepepper.fr/
           domain: livepepper.fr
           logo: livepepper.png
           title: LivePepper
-          description: Solution de commande en ligne pour les restaurants. Adapté aux indépendants comme aux chaînes.
+          description: Online Ordering solution for restaurants. Adapté aux indépendants comme aux chaînes.
         - to: http://www.acrelec.fr/
           domain: acrelec.fr
           logo: acrelec.png
