@@ -37,48 +37,30 @@ content:
           title: Nestor
           description: A Point of Sales solution designed for home delivery and takeaway restaurants.
           additional_info: Documentation in French
-        - to: https://www.cashpad.fr
-          domain: cashpad.fr
-          logo: cashpad.png
-          title: CashPad
-          description: Point of Sales on iPAD for restaurants, boulangeries and bars.
-          additional_info: Documentation in French
         - to: https://www.ikentoo.com
           domain: ikentoo.com
           logo: ikentoo_lightspeed.png
           title: iKentoo by LightSpeed
           description: iPad-based Point of Sales system for restaurants and hoteliers in use around the world.
-    - title: Commande en ligne
+    - title: Online Ordering
       apps:
         - to: http://www.livepepper.fr/
           domain: livepepper.fr
           logo: livepepper.png
           title: LivePepper
-          description: Online Ordering solution for home delivery and takeaway restaurants, both in France and internationally.
-        - to: http://www.acrelec.fr/
-          domain: acrelec.fr
-          logo: acrelec.png
-          title: Acrelec
-          description: Solutions Drive et bornes de commande avec terminal de paiement intégré.
-          additional_info: En cours d'intégration
-        - to: https://www.just-eat.fr/
-          domain: just-eat.fr
-          logo: alloresto.png
-          title: AlloResto
-          description: Portail de vente en ligne de repas.
-          additional_info: Intégration prévue
-        - to: https://www.nextmenu.com/
-          domain: nextmenu.com
-          logo: nextmenu.png
-          title: NextMenu
-          description: Tablettes de commande individuelles pour les restaurants.
-          additional_info: Intégration prévue
+          description: Online Ordering solution for home delivery and takeaway restaurants, in France, in the UK and internationally.
         - to: http://www.y-proximite.fr/
           domain: y-proximite.fr
           logo: yproximite.png
           title: Y-Proximité
-          description: Agence digitale et éditeur de solutions de commande en ligne pour les PME et petits commerçants.
-          additional_info: En cours d'intégration
+          description: Digital agency and Online Ordering software editor for SMEs and smaller retail stores.
+          additional_info: Documentation in French
+        - to: https://www.nextsourcia.com
+          domain: nextsourcia.com
+          logo: nextsourcia.png
+          title: nextSourcia
+          description: Digital agency and Online Ordering software editor for SMEs and smaller retail stores.
+          additional_info: Documentation in French
     - title: Autres applications
       apps:
         - to: https://www.orderlord.com
