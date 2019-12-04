@@ -59,30 +59,35 @@ content:
           logo: livepepper.png
           title: LivePepper
           description: Online Ordering solution for home delivery and takeaway restaurants, in France, in the UK and internationally.
-        - to: http://www.y-proximite.fr/
-          domain: y-proximite.fr
-          logo: yproximite.png
-          title: Y-Proximité
-          description: Digital agency and Online Ordering software editor for SMEs and smaller retail stores.
-          additional_info: Documentation in French
         - to: https://www.nextsourcia.com
           domain: nextsourcia.com
           logo: nextsourcia.png
           title: nextSourcia
           description: Development of e-commerce website for restaurants and retail stores alike as well as hosting and specific development work.
           additional_info: Documentation in French
-    - title: Delivery Management solutions
+        - to: http://www.y-proximite.fr/
+          domain: y-proximite.fr
+          logo: yproximite.png
+          title: Y-Proximité
+          description: Digital agency and Online Ordering software editor for SMEs and smaller retail stores.
+          additional_info: Documentation in French
+    - title: Delivery Management solutions and services
       apps:
+      - to: http://www.captain.ai
+          domain: captain.ai
+          logo: captain.png
+          title: Captain
+          description: Captain Delivery Management suite of solutions designed to support and improve restaurant delivery through order management and live customer order tracking.
         - to: https://www.orderlord.com
           domain: orderlord.com
           logo: orderlord.png
           title: OrderLord
           description: The OrderLord Delivery Management solution includes an app for couriers to be informed and for them to navigate. Customers can also track their order.
-        - to: http://www.captain.ai
-          domain: captain.ai
-          logo: captain.png
-          title: Captain
-          description: Captain Delivery Management suite of solutions designed to support and improve restaurant delivery through order management and live customer order tracking.
+        - to: https://orkestro.com
+          domain: orkestro.com
+          logo: orkestro.png
+          title: Orkestro
+          description: A delivery operations manager solution to organise inhouse deliveries or outsource to delivery companies on-demand and on the same day.
      - title: Marketing solutions
         - to: https://mailchimp.com
           domain: mailchimp.com
