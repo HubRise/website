@@ -19,7 +19,7 @@ content:
           domain: orderlord.com
           logo: orderlord.png
           title: OrderLord POS
-          description: Point of Sales solution developed by Orderlord includes fully embedded, and advanced Delivery Management features.
+          description: OrderLord provides a Point of Sale combined with a Delivery Mangement solution, a Kitchen Screens and advanced reporting.
         - to: http://www.myorderboxhq.com
           domain: myorderboxhq.com
           logo: myorderbox.png
@@ -59,30 +59,36 @@ content:
           domain: nextsourcia.com
           logo: nextsourcia.png
           title: nextSourcia
-          description: Consulting and development of e-commerce website for restaurants and retail stores as well as hosting and specific developments.
+          description: Development of e-commerce website for restaurants and retail stores alike as well as hosting and specific development work.
           additional_info: Documentation in French
-    - title: Autres applications
+    - title: Delivery Management solutions
       apps:
         - to: https://www.orderlord.com
           domain: orderlord.com
           logo: orderlord.png
           title: OrderLord
-          description: Logiciel de gestion de flotte de livreurs, connecté aux livreurs par des terminaux GPS.
+          description: The OrderLord Delivery Management solution includes an app for couriers to be informed and for them to navigate. Customers can also track their order.
+        - to: http://www.captain.ai
+          domain: captain.ai
+          logo: captain.png
+          title: Captain
+          description: Captain Delivery Management suite of solutions designed to support and improve restaurant delivery through order management and live customer order tracking.
+     - title: Marketing solutions
         - to: https://mailchimp.com/
           domain: mailchimp.com
           logo: mailchimp.png
           title: MailChimp
-          description: Solution d'envoi d'emails et de newsletter personnalisés.
+          description: All‑in‑one Marketing platform from which customised emails and newsletters can be sent. 
   additional_sections:
     suggest_app:
-      title: Proposer une application
-      description: Votre application ne se trouve pas dans cette liste ?
-      button: Proposer
+      title: Suggest an application
+      description: Your application is not in this list?
+      button: Suggest
   developers:
-    title: Vous êtes développeur ?
+    title: You are a developer?
     description:
-      paragraph_1: Utilisez notre API pour construire une application utile aux commerçants. Proposez-la aux utilisateurs d'HubRise en la publiant sur notre site.
+      paragraph_1: Use our API to buid an useful application for restaurants or retail stores. Suggest it to HubRise users by posting it on our site and app store.
       paragraph_2:
-        chunk_1: Nos utilisateurs sont des professionnels en recherche de solutions pour moderniser leur activité.
-        chunk_2: Il y a beaucoup à faire, et les bonnes idées d'aujourd'hui sont les standards de demain.
+        chunk_1: HubRise users are professionals looking for solutions to modernize their business.
+        chunk_2: There is a lot to do, and today's good ideas are the standards of tomorrow.
 ---
