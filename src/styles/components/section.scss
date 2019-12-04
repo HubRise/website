@@ -190,7 +190,7 @@
 
   &__sidebar_logo {
     margin-bottom: 1rem;
-    padding: 1rem 0;
+    padding: 1rem;
     background: $white;
 
     @include breakpoint(medium down) {

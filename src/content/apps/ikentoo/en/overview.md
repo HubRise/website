@@ -2,6 +2,7 @@
 position: 1
 title: Overview
 layout: documentation
+path_override: /
 app_info:
   category: POS
   availability: France, Switzerland, UK
