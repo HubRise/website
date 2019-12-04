@@ -20,28 +20,33 @@ content:
           logo: orderlord.png
           title: OrderLord POS
           description: OrderLord provides a Point of Sale combined with a Delivery Mangement solution, a Kitchen Screens and advanced reporting.
-        - to: http://www.myorderboxhq.com
-          domain: myorderboxhq.com
-          logo: myorderbox.png
-          title: MyOrderBox
-          description: Point of Sales Easy to install and get hands on.
+        - to: https://3s-pos.com
+          domain: 3s-pos.com
+          logo: 3spos.png
+          title: 3S POS
+          description: Full ePOS suite for all types of hospitality businesses. 3S POS can be customised to fit exact business and operational requirements.
+        - to: https://www.ikentoo.com
+          domain: ikentoo.com
+          logo: ikentoo_lightspeed.png
+          title: iKentoo by LightSpeed
+          description: iPad-based Point of Sales system for restaurants and hoteliers in use around the world.
         - to: https://www.jdc.fr/caisse-enregistreuse/
           domain: jdc.fr
           logo: jdc.png
           title: Kezia II / JDC
           description: Point of Sales solution developed by JDC, a French market leader. Kezia II adapts to all types of businesses.
           additional_info: Documentation in French
+        - to: http://www.myorderboxhq.com
+          domain: myorderboxhq.com
+          logo: myorderbox.png
+          title: MyOrderBox
+          description: Point of Sales Easy to install and get hands on.
         - to: http://www.logiciel-de-livraison.com/
           domain: logiciel-de-livraison.com
           logo: nestor.png
           title: Nestor
           description: A Point of Sales solution designed for home delivery and takeaway restaurants.
           additional_info: Documentation in French
-        - to: https://www.ikentoo.com
-          domain: ikentoo.com
-          logo: ikentoo_lightspeed.png
-          title: iKentoo by LightSpeed
-          description: iPad-based Point of Sales system for restaurants and hoteliers in use around the world.
     - title: Online Ordering
       apps:
         - to: http://www.livepepper.fr/
@@ -74,11 +79,17 @@ content:
           title: Captain
           description: Captain Delivery Management suite of solutions designed to support and improve restaurant delivery through order management and live customer order tracking.
      - title: Marketing solutions
-        - to: https://mailchimp.com/
+        - to: https://mailchimp.com
           domain: mailchimp.com
           logo: mailchimp.png
           title: MailChimp
           description: All‑in‑one Marketing platform from which customised emails and newsletters can be sent. 
+     - title: Other solutions
+        - to: https://tickncook.com
+          domain: tickncook.com
+          logo: tickncook.png
+          title: Tick'N'Cook
+          description: Kitchen display screen for independent restaurants and chains. Highly customizable modules with estimated preparation time of each item and specialized screens (bar, pastry, kitchen, etc.).
   additional_sections:
     suggest_app:
       title: Suggest an application
