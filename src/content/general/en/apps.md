@@ -52,17 +52,22 @@ content:
           logo: orderlord.png
           title: OrderLord POS
           description: OrderLord provides a Point of Sale combined with a Delivery Mangement solution, a Kitchen Screens and advanced reporting.
+        - to: https://www.partech.com/pixel-point-software
+          domain: partech.com
+          logo: pixelpoint.png
+          title: PixelPoint (web API)
+          description: A Point of Sales solution for restaurants and entertainment industry sector used for cost management, loss prevention and loyalty programs.
+        - to: https://www.partech.com/pixel-point-software
+          domain: partech.com
+          logo: pixelpoint.png
+          title: PixelPoint (Windows API)
+          description: A Point of Sales solution for restaurants and entertainment industry sector used for cost management, loss prevention and loyalty programs.
         - to: https://zelty.fr
           domain: zelty.fr
           logo: zelty.png
           title: Zelty
           description: Complete suite of solutions designed for multisite, franchises and chains. Zelty is suitable for any type of restaurant from fast food to traditional catering.
           additional_info: Documentation in French        
-        - to: https://www.partech.com/pixel-point-software
-          domain: partech.com
-          logo: pixelpoint.png
-          title: PixelPoint
-          description: A Point of Sales solution for restaurants and entertainment industry sector used for cost management, loss prevention and loyalty programs.
     - title: Online Ordering and aggregators
       apps:
         - to: http://www.livepepper.fr
@@ -104,13 +109,23 @@ content:
           logo: orkestro.png
           title: Orkestro
           description: A delivery operations manager solution to organise inhouse deliveries or outsource to delivery companies on-demand and on the same day.
-     - title: Marketing solutions
+     - title: Loyalty and Marketing solutions
        apps:
         - to: https://mailchimp.com
           domain: mailchimp.com
           logo: mailchimp.png
           title: MailChimp
           description: All‑in‑one Marketing platform from which customised emails and newsletters can be sent. 
+        - to: https://sailplay.com
+          domain: sailplay.com
+          logo: sailplay.png
+          title: SailPlay
+          description: Marketing automation platform that helps retailers to build loyalty programs and set mass and triggered email campaigns.
+        - to: https://www.smg.com
+          domain: smg.com
+          logo: smg.png
+          title: Service Management Group
+          description: SMG combines technology and strategic services to collect, analyze, and share feedback and behavioral data for brands to deliver and activate insights across their enterprise.
      - title: Other solutions
        apps:
         - to: https://tickncook.com
