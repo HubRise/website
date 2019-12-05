@@ -92,6 +92,7 @@ content:
           logo: ubereats.png
           title: Uber Eats
           description: Online food ordering and delivery platform for local restaurants. End client can order food online or via an app.
+          additional_info: Integration in progress
         - to: http://www.y-proximite.fr
           domain: y-proximite.fr
           logo: yproximite.png
