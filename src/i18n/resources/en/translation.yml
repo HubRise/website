@@ -13,6 +13,8 @@ layout:
     links:
       - title: Home
         to: /
+      - title: Apps
+        to: /apps
       - title: Pricing
         to: /pricing
       - title: Developers
