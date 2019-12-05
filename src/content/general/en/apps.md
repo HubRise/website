@@ -105,12 +105,14 @@ content:
           title: Orkestro
           description: A delivery operations manager solution to organise inhouse deliveries or outsource to delivery companies on-demand and on the same day.
      - title: Marketing solutions
+       apps:
         - to: https://mailchimp.com
           domain: mailchimp.com
           logo: mailchimp.png
           title: MailChimp
           description: All‑in‑one Marketing platform from which customised emails and newsletters can be sent. 
      - title: Other solutions
+       apps:
         - to: https://tickncook.com
           domain: tickncook.com
           logo: tickncook.png
