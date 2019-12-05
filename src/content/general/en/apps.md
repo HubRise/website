@@ -30,7 +30,7 @@ content:
           logo: ikentoo_lightspeed.png
           title: iKentoo by LightSpeed
           description: iPad-based Point of Sales system for restaurants and hoteliers. In use around the world.
-        - to: https://www.jdc.fr/caisse-enregistreuse/
+        - to: https://www.jdc.fr/caisse-enregistreuse
           domain: jdc.fr
           logo: jdc.png
           title: Kezia II / JDC
@@ -41,7 +41,7 @@ content:
           logo: myorderbox.png
           title: MyOrderBox
           description: Point of Sales Easy to install and get hands on.
-        - to: http://www.logiciel-de-livraison.com/
+        - to: http://www.logiciel-de-livraison.com
           domain: logiciel-de-livraison.com
           logo: nestor.png
           title: Nestor
@@ -58,14 +58,14 @@ content:
           title: Zelty
           description: Complete suite of solutions designed for multisite, franchises and chains. Zelty is suitable for any type of restaurant from fast food to traditional catering.
           additional_info: Documentation in French        
-        - to: https://www.partech.com/pixel-point-software/
+        - to: https://www.partech.com/pixel-point-software
           domain: partech.com
           logo: pixelpoint.png
           title: PixelPoint
           description: A Point of Sales solution for restaurants and entertainment industry sector used for cost management, loss prevention and loyalty programs.
-    - title: Online Ordering
+    - title: Online Ordering and aggregators
       apps:
-        - to: http://www.livepepper.fr/
+        - to: http://www.livepepper.fr
           domain: livepepper.fr
           logo: livepepper.png
           title: LivePepper
@@ -76,7 +76,12 @@ content:
           title: nextSourcia
           description: Development of e-commerce website for restaurants and retail stores alike as well as hosting and specific development work.
           additional_info: Documentation in French
-        - to: http://www.y-proximite.fr/
+        - to: https://www.ubereats.com
+          domain: ubereats.com
+          logo: ubereats.png
+          title: Uber Eats
+          description: Online food ordering and delivery platform for local restaurants. End client can order food online or via an app.
+        - to: http://www.y-proximite.fr
           domain: y-proximite.fr
           logo: yproximite.png
           title: Y-Proximité
