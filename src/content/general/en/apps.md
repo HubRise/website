@@ -17,7 +17,7 @@ content:
       apps:
         - to: https://3s-pos.com
           domain: 3s-pos.com
-          logo: 3spos.png
+          logo: 3spos.jpg
           title: 3S POS
           description: A complete EPOS suite for all types of hospitality businesses. Feature-rich, 3S POS can be customised to fit exact business and operational requirements.
         - to: https://iikosoftware.com
@@ -89,7 +89,7 @@ content:
           additional_info: Documentation in French
         - to: https://www.ubereats.com
           domain: ubereats.com
-          logo: ubereats.png
+          logo: notavailable.png
           title: Uber Eats
           description: Online food ordering and delivery platform for local restaurants. End client can order food online or via an app.
           additional_info: Integration in progress
@@ -116,8 +116,8 @@ content:
           logo: orkestro.png
           title: Orkestro
           description: A delivery operations manager solution to organise inhouse deliveries or outsource to delivery companies on-demand and on the same day.
-     - title: Loyalty and Marketing solutions
-       apps:
+    - title: Loyalty and Marketing solutions
+      apps:
         - to: https://www.como.com
           domain: como.com
           logo: como.png
@@ -125,7 +125,7 @@ content:
           description: A loyalty programme solution for retail and hospitality companies that gathers data about purchases and preferences to approach customers with more personalized offers. 
         - to: https://myemma.com
           domain: myemma.com
-          logo: emma.jpeg
+          logo: notavailable.png
           title: Emma
           description: Email campaign platform with support available to lend a hand in email marketing strategy, content and design to help maximize your results.
         - to: https://mailchimp.com
@@ -140,11 +140,11 @@ content:
           description: Marketing automation platform that helps retailers to build loyalty programs and set mass and triggered email campaigns.
         - to: https://www.smg.com
           domain: smg.com
-          logo: smg.png
+          logo: smg.jpg
           title: Service Management Group
           description: SMG combines technology and strategic services to collect, analyze, and share feedback and behavioral data for brands to deliver and activate insights across their enterprise.
-     - title: Other solutions
-       apps:
+    - title: Other solutions
+      apps:
         - to: https://tickncook.com
           domain: tickncook.com
           logo: tickncook.png
