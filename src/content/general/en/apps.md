@@ -89,7 +89,7 @@ content:
           additional_info: Documentation in French
     - title: Delivery Management solutions and services
       apps:
-      - to: http://www.captain.ai
+        - to: http://www.captain.ai
           domain: captain.ai
           logo: captain.png
           title: Captain
