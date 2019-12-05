@@ -19,12 +19,17 @@ content:
           domain: 3s-pos.com
           logo: 3spos.png
           title: 3S POS
-          description: Full ePOS suite for all types of hospitality businesses. 3S POS can be customised to fit exact business and operational requirements.
+          description: A complete EPOS suite for all types of hospitality businesses. Feature-rich, 3S POS can be customised to fit exact business and operational requirements.
+        - to: https://iikosoftware.com
+          domain: iikosoftware.com
+          logo: iiko.png
+          title: iiko
+          description: Over 30 000 businesses use iiko to automate every aspect of their operations. 100% cloud, easy to deploy and scale for single and multi-store businesses.
         - to: https://www.ikentoo.com
           domain: ikentoo.com
           logo: ikentoo_lightspeed.png
           title: iKentoo by LightSpeed
-          description: iPad-based Point of Sales system for restaurants and hoteliers in use around the world.
+          description: iPad-based Point of Sales system for restaurants and hoteliers. In use around the world.
         - to: https://www.jdc.fr/caisse-enregistreuse/
           domain: jdc.fr
           logo: jdc.png
@@ -47,6 +52,12 @@ content:
           logo: orderlord.png
           title: OrderLord POS
           description: OrderLord provides a Point of Sale combined with a Delivery Mangement solution, a Kitchen Screens and advanced reporting.
+        - to: https://zelty.fr
+          domain: zelty.fr
+          logo: zelty.png
+          title: Zelty
+          description: Complete suite of solutions designed for multisite, franchises and chains. Zelty is suitable for any type of restaurant from fast food to traditional catering.
+          additional_info: Documentation in French        
         - to: https://www.partech.com/pixel-point-software/
           domain: partech.com
           logo: pixelpoint.png
