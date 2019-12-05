@@ -122,6 +122,11 @@ content:
           logo: como.png
           title: Como
           description: A loyalty programme solution for retail and hospitality companies that gathers data about purchases and preferences to approach customers with more personalized offers. 
+        - to: https://myemma.com
+          domain: myemma.com
+          logo: emma.jpeg
+          title: Emma
+          description: Email campaign platform with support available to lend a hand in email marketing strategy, content and design to help maximize your results.
         - to: https://mailchimp.com
           domain: mailchimp.com
           logo: mailchimp.png
