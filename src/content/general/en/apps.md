@@ -70,6 +70,12 @@ content:
           additional_info: Documentation in French        
     - title: Online Ordering and aggregators
       apps:
+        - to: https://www.app4takeaways.com
+          domain: app4takeaways.com
+          logo: app4.png
+          title: App4
+          description: Offers a branded online ordering system, mobile app and associated applications for takeaways, restaurants, pubs, cafes and food outlets. 
+          additional_info: Integration in progress
         - to: http://www.livepepper.fr
           domain: livepepper.fr
           logo: livepepper.png
@@ -111,6 +117,11 @@ content:
           description: A delivery operations manager solution to organise inhouse deliveries or outsource to delivery companies on-demand and on the same day.
      - title: Loyalty and Marketing solutions
        apps:
+        - to: https://www.como.com
+          domain: como.com
+          logo: como.png
+          title: Como
+          description: A loyalty programme solution for retail and hospitality companies that gathers data about purchases and preferences to approach customers with more personalized offers. 
         - to: https://mailchimp.com
           domain: mailchimp.com
           logo: mailchimp.png
