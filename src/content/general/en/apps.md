@@ -148,7 +148,7 @@ content:
           logo: smg.png
           title: Service Management Group
           description: SMG combines technology and strategic services to collect, analyze, and share feedback and behavioral data for brands to deliver and activate insights across their enterprise.
-    - title: Other solutions
+    - title: Other apps
       apps:
         - to: https://tickncook.com
           domain: tickncook.com
