@@ -73,7 +73,7 @@ content:
           title: Zelty
           description: Complete suite of solutions designed for multisite, franchises and chains. Zelty is suitable for any type of restaurant from fast food to traditional catering.
           additional_info: Documentation in French        
-    - title: Online Ordering and aggregators
+    - title: Online Ordering
       apps:
         - to: https://www.app4takeaways.com
           domain: app4takeaways.com
@@ -104,7 +104,7 @@ content:
           title: Y-Proximité
           description: Digital agency and Online Ordering software editor for SMEs and smaller retail stores.
           additional_info: Documentation in French
-    - title: Delivery Management solutions and services
+    - title: Delivery Management
       apps:
         - to: http://www.captain.ai
           domain: captain.ai
@@ -121,7 +121,7 @@ content:
           logo: orkestro.png
           title: Orkestro
           description: A delivery operations manager solution to organise inhouse deliveries or outsource to delivery companies on-demand and on the same day.
-    - title: Loyalty and Marketing solutions
+    - title: Loyalty and Marketing
       apps:
         - to: https://www.como.com
           domain: como.com
