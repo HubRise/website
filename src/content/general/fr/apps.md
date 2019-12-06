@@ -79,7 +79,7 @@ content:
           description: Caisse enregistreuse sur iPad. Solution complète, pensée pour le multisite, les franchises, les chaines et qui s'adapte a tout type de restaurant.             
     - title: Commande en ligne
       apps:
-         - to: https://www.app4takeaways.com
+        - to: https://www.app4takeaways.com
           domain: app4takeaways.com
           logo: app4.png
           title: App4
