@@ -120,8 +120,6 @@ content:
           title: OrderLord
           description: Une solution pour les entreprises de livraison ou pour les restaurants, suivant à la trace les commandes ainsi que les livreurs connectés par des terminaux GPS, tout en apportant aux clients avec une expérience de livraison transparente.
           additional_info: Documentation en anglais
-          
-          
     - title: Fidélité et marketing
       apps:
         - to: https://www.como.com
@@ -148,15 +146,13 @@ content:
           title: SailPlay
           description: Plate-forme utilisée pour l'automatisation de campagnes d'emailing et pour mieux connaître ses clients afin de les fidéliser.
           additional_info: Documentation en anglais
-          
-          
         - to: https://www.smg.com
           domain: smg.com
           logo: smg.png
           title: Service Management Group
           description: SMG associe la technoclogie et le service pour la collecte et l'analyse de données permettant de mieux comprendre les comportements et d'agir en conséquence.
           additional_info: Documentation en anglais
-- title: Autres applications
+    - title: Autres applications
       apps:
         - to: https://tickncook.com
           domain: tickncook.com
