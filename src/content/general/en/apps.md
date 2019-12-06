@@ -17,15 +17,15 @@ content:
         - to: https://3s-pos.com
           logo: 3spos.png
           title: 3S POS
-          description: A complete EPOS suite for all types of hospitality businesses. Feature-rich, 3S POS can be customised to fit exact business and operational requirements.
+          description: 3S POS offers a complete EPOS suite for all types of hospitality businesses. Feature-rich, 3S POS can be customised to fit specific business and operational requirements.
         - to: https://iikosoftware.com
           logo: iiko.png
           title: iiko
-          description: Over 30 000 businesses use iiko to automate every aspect of their operations. 100% cloud, easy to deploy and scale for single and multi-store businesses.
+          description: Over 30 000 businesses use iiko to automate every aspect of their operations. iiko is 100% cloud, easy to deploy and scale for single and multi-store businesses.
         - to: https://www.ikentoo.com
           logo: ikentoo-lightspeed.png
           title: iKentoo by LightSpeed
-          description: iPad-based Point of Sales system for restaurants and hoteliers. In use around the world.
+          description: iKentoo is an iPad-based Point of Sales system for restaurants and hoteliers worldwide. iKentoo acquired by Lightspeed will keep expanding to new international markets. 
         - to: https://www.jdc.fr/caisse-enregistreuse
           logo: jdc.png
           title: Kezia II / JDC
@@ -34,11 +34,11 @@ content:
         - to: http://www.myorderboxhq.com
           logo: myorderbox.png
           title: MyOrderBox
-          description: Point of Sales Easy to install and get hands on.
+          description: My Order Box is an affordable cloud based Point of Sales for Takeaway and Restaurants. My Order Box is easy to install and get hands on.
         - to: http://www.logiciel-de-livraison.com
           logo: nestor.png
           title: Nestor
-          description: A Point of Sales solution designed for home delivery and takeaway restaurants.
+          description: Nestor is a French Point of Sales solution designed for home delivery and takeaway restaurants. 
           additional_info: Documentation in French
         - to: https://www.pointone-epos.co.uk/
           logo: pointone.png
