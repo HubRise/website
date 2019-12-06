@@ -1,21 +1,21 @@
-#name: deploy-staging
-#
-#on: push
-#
-#jobs:
-#  test:
-#    runs-on: ubuntu-latest
-#    name: Deploy to staging environment
-#
-#    # https://github.com/Azure/k8s-deploy
-#
-#    container:
-#      image: node:8.16.2-buster
-#
-#    steps:
-#      - name: Clone repository
-#        uses: actions/checkout@v1
-#
+name: deploy-staging
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Deploy to staging environment
+
+    # https://github.com/Azure/k8s-deploy
+
+    container:
+      image: node:8.16.2-buster
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v1
+
 #      - name: Build image
 #        run: |
 #          docker build . -t hubrise/website:${{ github.sha }}
