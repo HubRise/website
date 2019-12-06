@@ -17,7 +17,7 @@ content:
       apps:
         - to: https://3s-pos.com
           domain: 3s-pos.com
-          logo: 3spos.jpg
+          logo: 3spos.png
           title: 3S POS
           description: A complete EPOS suite for all types of hospitality businesses. Feature-rich, 3S POS can be customised to fit exact business and operational requirements.
         - to: https://iikosoftware.com
@@ -27,7 +27,7 @@ content:
           description: Over 30 000 businesses use iiko to automate every aspect of their operations. 100% cloud, easy to deploy and scale for single and multi-store businesses.
         - to: https://www.ikentoo.com
           domain: ikentoo.com
-          logo: ikentoo_lightspeed.png
+          logo: ikentoo-lightspeed.png
           title: iKentoo by LightSpeed
           description: iPad-based Point of Sales system for restaurants and hoteliers. In use around the world.
         - to: https://www.jdc.fr/caisse-enregistreuse
@@ -47,6 +47,11 @@ content:
           title: Nestor
           description: A Point of Sales solution designed for home delivery and takeaway restaurants.
           additional_info: Documentation in French
+        - to: https://www.pointone-epos.co.uk/
+          domain: pointone-epos.co.uk
+          logo: pointone.png
+          title: pointOne
+          description: Touch-screen Point of Sales, simple to use with online ordering, kitchen screens, smart phone applications, reporting as well as stock control.
         - to: https://www.orderlord.com
           domain: orderlord.com
           logo: orderlord.png
@@ -54,12 +59,12 @@ content:
           description: OrderLord provides a Point of Sale combined with a Delivery Mangement solution, a Kitchen Screens and advanced reporting.
         - to: https://www.partech.com/pixel-point-software
           domain: partech.com
-          logo: pixelpoint.png
+          logo: par-pixelpoint.png
           title: PixelPoint (web API)
           description: A Point of Sales solution for restaurants and entertainment industry sector used for cost management, loss prevention and loyalty programs.
         - to: https://www.partech.com/pixel-point-software
           domain: partech.com
-          logo: pixelpoint.png
+          logo: par-pixelpoint.png
           title: PixelPoint (Windows API)
           description: A Point of Sales solution for restaurants and entertainment industry sector used for cost management, loss prevention and loyalty programs.
         - to: https://zelty.fr
@@ -125,7 +130,7 @@ content:
           description: A loyalty programme solution for retail and hospitality companies that gathers data about purchases and preferences to approach customers with more personalized offers. 
         - to: https://myemma.com
           domain: myemma.com
-          logo: emma.jpg
+          logo: emma.png
           title: Emma
           description: Email campaign platform with support available to lend a hand in email marketing strategy, content and design to help maximize your results.
         - to: https://mailchimp.com
@@ -140,7 +145,7 @@ content:
           description: Marketing automation platform that helps retailers to build loyalty programs and set mass and triggered email campaigns.
         - to: https://www.smg.com
           domain: smg.com
-          logo: smg.jpg
+          logo: smg.png
           title: Service Management Group
           description: SMG combines technology and strategic services to collect, analyze, and share feedback and behavioral data for brands to deliver and activate insights across their enterprise.
     - title: Other solutions
