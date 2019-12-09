@@ -64,7 +64,7 @@ content:
         - to: https://zelty.fr
           logo: zelty.png
           title: Zelty
-          description: Zelty est une caisse enregistreuse sur iPad. Zelty offre une solution complète, pensée pour le multisite, les franchises et les chaines. Zelty s'adapte a tout type de restaurant.             
+          description: Zelty est une caisse enregistreuse sur iPad. Zelty offre une solution complète, pensée pour le multisite, les franchises et les chaines. Zelty s'adapte a tout type de restaurant.
     - title: Commande en ligne
       apps:
         - to: https://www.app4takeaways.com
@@ -99,7 +99,7 @@ content:
         - to: https://www.orderlord.com
           logo: orderlord.png
           title: OrderLord
-          description: OrderLord est une solution pour les entreprises de livraison ou pour les restaurants, permettant de suivre à la trace les commandes ainsi que les livreurs connectés par des terminaux GPS. OrderLord apporte aux clients finaux une expérience de livraison transparente.
+          description: OrderLord est une solution pour les entreprises de livraison ou pour les restaurants, permettant de suivre à la trace les commandes ainsi que les livreurs connectés par des terminaux GPS. OrderLord apporte aux clients une expérience de livraison transparente.
           additional_info: Documentation en anglais
     - title: Fidélité et marketing
       apps:
@@ -133,7 +133,7 @@ content:
         - to: https://tickncook.com
           logo: tickncook.png
           title: Tick'N'Cook
-          description:  Tick'n'Cook permet de voir apparaître en temps réel sur des écrans tactiles, les commandes validées par les bornes, les sites internet ou les systèmes de caisse. Les modules sont personnalisables avec le temps de préparation et écrans spécialisés (bar, pâtisserie, cuisine, etc.).
+          description: Tick'n'Cook permet de voir apparaître en temps réel sur des écrans tactiles, les commandes validées par les bornes, les sites internet ou les systèmes de caisse. Les modules sont personnalisables avec le temps de préparation et écrans spécialisés (bar, pâtisserie, cuisine, etc.).
   additional_sections:
     suggest_app:
       title: Proposer une application
