@@ -4,10 +4,6 @@ position: 3
 layout: documentation
 ---
 
-## Data flow
-
-- **Orders** in HubRise are sent to iKentoo.
-
 ## Menu setup
 
 This app is a *push-only* integration, therefore iKentoo product and option codes must be copied manually from iKentoo into your menu.

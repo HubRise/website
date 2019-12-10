@@ -15,9 +15,6 @@ iKentoo is an iPad POS and management solution for restaurants and hospitality b
 
 ## About this integration
 
-This integration uses iKentoo API v2.
-
-Typical use cases:
-
-- Connect your online ordering site or aggregator (Uber Eats, etc.) to your POS
-
+This integration relies on iKentoo API v2:
+- **Orders** are sent one-way: from HubRise to iKentoo
+- No catalog synchronization 

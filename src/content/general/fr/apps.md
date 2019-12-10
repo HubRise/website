@@ -34,8 +34,8 @@ content:
           description: Kezia II est un logiciel de caisse développé par JDC, le leader français des solutions d'encaissement. Kezia II s'adapte à tous les types de commerces.
         - to: http://www.myorderboxhq.com
           logo: myorderbox.png
-          title: My Order Box
-          description: My Order Box est une solution d'encaissement facile à installer et à utiliser au quotidien.
+          title: MyOrderBox
+          description: MyOrderBox est une solution d'encaissement facile à installer et à utiliser au quotidien.
           additional_info: Documentation en anglais
         - to: http://www.logiciel-de-livraison.com
           logo: nestor.png
