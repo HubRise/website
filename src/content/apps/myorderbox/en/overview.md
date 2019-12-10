@@ -11,9 +11,9 @@ app_info:
 
 ## Description
 
-MyOrderBox is an affordable cloud based Point of Sales for Takeaway and Restaurants. My Order Box is easy to install and get hands on.
+My Order Box is an affordable cloud based Point of Sales for Takeaway and Restaurants. My Order Box is easy to install and get hands on.
 
 ## About this integration
 
-- **Orders** are sent from HubRise to MyOrderBox
-- **Catalogs** are pushed from MyOrderBox to HubRise
+- **Orders** are sent from HubRise to My Order Box
+- **Catalogs** are pushed from My Order Box to HubRise

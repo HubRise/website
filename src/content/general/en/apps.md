@@ -33,8 +33,8 @@ content:
           additional_info: Documentation in French
         - to: http://www.myorderboxhq.com
           logo: myorderbox.png
-          title: MyOrderBox
-          description: MyOrderBox is an affordable cloud based Point of Sales for Takeaway and Restaurants. My Order Box is easy to install and get hands on.
+          title: My Order Box
+          description: My Order Box is an affordable cloud based Point of Sales for Takeaway and Restaurants. My Order Box is easy to install and get hands on.
         - to: http://www.logiciel-de-livraison.com
           logo: nestor.png
           title: Nestor
