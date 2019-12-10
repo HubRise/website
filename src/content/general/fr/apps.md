@@ -22,12 +22,12 @@ content:
         - to: https://iikosoftware.com
           logo: iiko.png
           title: iiko
-          description: Plus de 30 000 entreprises utilisent iiko pour automatiser tous les aspects de leurs opérations. iiko, 100% cloud est facile à déployer et à faire évoluer pour les entreprises mono ou multisite.
+          description: iiko, 100% cloud est facile à déployer et à faire évoluer pour les entreprises mono ou multisite. Plus de 30 000 entreprises utilisent iiko pour automatiser tous les aspects de leurs opérations. 
           additional_info: Documentation en anglais
         - to: https://www.ikentoo.com
           logo: ikentoo-lightspeed.png
           title: iKentoo par LightSpeed
-          description: iKentoo, par LightSpeed est une caisse enregistreuse sur iPad pour restaurants and hoteliers avec une forte présence à l'international.
+          description: iKentoo, par LightSpeed, est une caisse enregistreuse cloud sur iPad utilisée dans la restauration et dans l'hôtellerie, avec une forte présence à l'international.
         - to: https://www.jdc.fr/caisse-enregistreuse
           logo: jdc.png
           title: Kezia II par JDC
@@ -70,12 +70,12 @@ content:
         - to: https://www.app4takeaways.com
           logo: app4.png
           title: App4
-          description: App4 est une solution de commande en ligne en propre, avec application mobile. App4 s'adapte aux besoins de la vente à emporter, de restaurants et pubs ou commerce de détail alimentaire.
-          additional_info: Intégration en cours. Documentation en anglais.
+          description: App4 est une solution de commande en ligne, avec application mobile. App4 s'adapte aux besoins de la vente à emporter, de restaurants et pubs ou de commerce de détail alimentaire.
+          additional_info: Documentation en anglais. Intégration en cours. 
         - to: http://www.livepepper.fr/
           logo: livepepper.png
           title: LivePepper
-          description: Solution de commande en ligne pour les restaurants, conçu pour la livraison à domicile et la vente à emporter. Adapté aux indépendants comme aux chaînes. LivePepper est untilisé en France, en Grande Bretagne et à l'international.
+          description: LivePepper est un solution de commande en ligne pour les restaurants, conçu pour la livraison à domicile et la vente à emporter. Adapté aux indépendants comme aux chaînes. LivePepper est untilisé en France, en Grande Bretagne et à l'international.
         - to: https://www.nextsourcia.com
           logo: nextsourcia.png
           title: nextSourcia
@@ -100,6 +100,11 @@ content:
           logo: orderlord.png
           title: OrderLord
           description: OrderLord est une solution pour les entreprises de livraison ou pour les restaurants, permettant de suivre à la trace les commandes ainsi que les livreurs connectés par des terminaux GPS. OrderLord apporte aux clients une expérience de livraison transparente.
+          additional_info: Documentation en anglais
+        - to: https://orkestro.com
+          logo: orkestro.png
+          title: Orkestro
+          description: Orkestro permet de gérer les livraisons en interne ou de les externaliser à des opérateurs offrant des services de livraison à la demande.
           additional_info: Documentation en anglais
     - title: Fidélité et marketing
       apps:
@@ -133,11 +138,11 @@ content:
         - to: https://tickncook.com
           logo: tickncook.png
           title: Tick'N'Cook
-          description: Tick'n'Cook permet de voir apparaître en temps réel sur des écrans tactiles, les commandes validées par les bornes, les sites internet ou les systèmes de caisse. Les modules sont personnalisables avec le temps de préparation et écrans spécialisés (bar, pâtisserie, cuisine, etc.).
+          description: Tick'n'Cook permet de voir apparaître en temps réel sur des écrans tactiles, les commandes validées par les bornes, les sites internet ou les systèmes de caisse. Les modules sont personnalisables avec le temps de préparation et écrans spécialisés, bar, pâtisserie, cuisine.
   additional_sections:
     suggest_app:
       title: Proposer une application
-      description: Votre application ne se trouve pas dans cette liste ?
+      description: Votre application ne se trouve pas dans cette liste ? Envoyez-nous quelques informations et HubRise se chargera de les contacter.
       button: Proposer
   developers:
     title: Vous êtes développeur ?
