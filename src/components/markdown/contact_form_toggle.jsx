@@ -6,12 +6,12 @@ function ContactFormToggle ({ text }) {
   const { forms } = useLayoutContext()
 
   return (
-    <button
-      className='button button_contact'
+    <a
+      className='contact-toggle'
       onClick={forms.contact.toggle}
     >
       {text}
-    </button>
+    </a>
   )
 }
 
