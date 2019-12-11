@@ -16,7 +16,6 @@ export const AppSection = ({ title, apps, logos, suggestAppContent }) => {
         <ul className='apps'>
           {apps.map(({
             to,
-            domain,
             logo,
             title,
             description,
@@ -24,9 +23,6 @@ export const AppSection = ({ title, apps, logos, suggestAppContent }) => {
           }, idx) => {
             return (
               <li key={generateKey(title, idx)} className='app'>
-                <div className='app__title'>
-                  {title}
-                </div>
                 <Link
                   to={to}
                   className='app__box'
@@ -45,14 +41,6 @@ export const AppSection = ({ title, apps, logos, suggestAppContent }) => {
                     </p>
                   )}
                 </div>
-                <div className='app__more'>
-                  <Link
-                    to={to}
-                    className='app__more-link'
-                  >
-                    {domain}
-                  </Link>
-                </div>
               </li>
             )
           })}
@@ -68,7 +56,6 @@ AppSection.propTypes = {
   apps: PropTypes.arrayOf(
     PropTypes.shape({
       to: PropTypes.string.isRequired,
-      domain: PropTypes.string.isRequired,
       logo: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,

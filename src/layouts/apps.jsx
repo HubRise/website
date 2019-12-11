@@ -52,8 +52,7 @@ export const appsPageQuery = graphql`
       frontmatter {
         content {
           hero {
-            title_chunk_1
-            title_chunk_2
+            title
             description {
               paragraph_1_text
               paragraph_1_link_text
@@ -67,7 +66,6 @@ export const appsPageQuery = graphql`
             has_suggest_app
             apps {
               to
-              domain
               logo
               title
               description
@@ -106,8 +104,7 @@ AppsPage.propTypes = {
       frontmatter: PropTypes.shape({
         content: PropTypes.shape({
           hero: PropTypes.shape({
-            title_chunk_1: PropTypes.string.isRequired,
-            title_chunk_2: PropTypes.string.isRequired,
+            title: PropTypes.string.isRequired,
             description: PropTypes.shape({
               paragraph_1_text: PropTypes.string.isRequired,
               paragraph_1_link_text: PropTypes.string.isRequired,
@@ -123,7 +120,6 @@ AppsPage.propTypes = {
               apps: PropTypes.arrayOf(
                 PropTypes.shape({
                   to: PropTypes.string.isRequired,
-                  domain: PropTypes.string.isRequired,
                   logo: PropTypes.string.isRequired,
                   title: PropTypes.string.isRequired,
                   description: PropTypes.string.isRequired,

@@ -1,0 +1,9 @@
+bases:
+  - ../bases
+
+patchesStrategicMerge:
+  - website/deployment-patch.yaml
+
+images:
+  - name: hubrise/website
+    newTag: __TAG__

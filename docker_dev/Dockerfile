@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:experimental
 FROM node:10.16.0-buster
 
 # -------------
@@ -27,7 +28,10 @@ WORKDIR $HEXO_ROOT
 
 COPY package.json .
 COPY yarn.lock .
-RUN yarn install --modules-folder /usr/local/node_modules
+
+RUN --mount=type=cache,target=/node_modules \
+    yarn install --modules-folder /node_modules; \
+    cp -Rf /node_modules /usr/local
 
 # -------------
 # Add project files

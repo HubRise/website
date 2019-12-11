@@ -1,0 +1,20 @@
+kind: Deployment
+apiVersion: apps/v1
+
+metadata:
+  name: website
+
+spec:
+  replicas: 1
+
+  template:
+    spec:
+      containers:
+        - name: website
+          resources:
+            requests:
+              cpu: 30m
+              memory: 80Mi
+            limits:
+              cpu: 200m
+              memory: 200Mi

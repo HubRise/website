@@ -2,8 +2,11 @@ import React from 'react'
 import { MDXProvider } from '@mdx-js/react'
 import { I18nextProvider } from 'react-i18next'
 
-import HighlightCode from '../../src/components/markdown/highlight_code'
-import CallSummaryTable from '../../src/components/markdown/call_summary_table'
+import {
+  HighlightCode,
+  CallSummaryTable,
+  ContactFormToggle
+} from '../../src/components/markdown'
 import Label from '../../src/components/markdown/label'
 import Link from '../../src/components/link'
 
@@ -15,7 +18,12 @@ import i18n from '../../src/i18n'
 
 let components = {
   ...generateHeaders([`h2`, `h3`]),
-  a: ({ href, ...other }) => <Link to={href} {...other} />,
+  a: ({ href, ...other }) => (
+    <Link
+      to={href}
+      {...other}
+    />
+  ),
   pre: ({ children: { props } }) => (
     <HighlightCode
       language={props.className && props.className.split(`-`)[1]}
@@ -24,7 +32,8 @@ let components = {
   ),
   inlineCode: ({ children }) => <HighlightCode inline code={children} />,
   CallSummaryTable,
-  Label
+  Label,
+  ContactFormToggle
 }
 
 export const wrapRootElement = ({ element }) => {

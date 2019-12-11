@@ -11,9 +11,7 @@ export const Hero = ({ content }) => {
     <section className='section'>
       <div className='section__in section__in_padding'>
         <h3 className='section__title'>
-          {content.title_chunk_1}
-          <br />
-          {content.title_chunk_2}
+          {content.title}
         </h3>
         <div className='section__description'>
           <p>
@@ -48,8 +46,7 @@ export const Hero = ({ content }) => {
 
 Hero.propTypes = {
   content: PropTypes.shape({
-    title_chunk_1: PropTypes.string.isRequired,
-    title_chunk_2: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
     description: PropTypes.shape({
       paragraph_1_text: PropTypes.string.isRequired,
       paragraph_1_link_text: PropTypes.string.isRequired,

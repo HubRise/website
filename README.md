@@ -7,6 +7,7 @@
 2. In console, `cd` to the project root then type:
 
 ```shell
+export DOCKER_BUILDKIT=1
 docker build -f docker_dev/Dockerfile -t hubrise/website-dev .
 ```
 
