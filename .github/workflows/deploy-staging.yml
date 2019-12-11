@@ -1,0 +1,37 @@
+name: deploy-staging
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Deploy to staging environment
+
+    # https://github.com/Azure/k8s-deploy
+
+    container:
+      image: node:8.16.2-buster
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v1
+
+#      - name: Build image
+#        run: |
+#          docker build . -t hubrise/website:${{ github.sha }}
+#
+#      - name: Push to docker
+#        run: |
+#          docker login --username ${{ secrets.REGISTRY_USERNAME }} --password ${{ secrets.REGISTRY_PASSWORD }}
+#          docker push hubrise/website:${{ github.sha }}
+#
+#      - name: Login to HubRise cluster
+#        uses: Azure/k8s-set-context@v1
+#          with:
+#            kubeconfig: ${{ secrets.KUBE_CONFIG }}
+#
+#      - name: Deploy
+#        run:
+#          kubectl
+#          kustomize build deploy/manifests/staging/staging-1 | sed "s/__TAG__/${{ github.sha }}/" | kubectl apply -f -
+#

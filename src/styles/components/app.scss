@@ -11,10 +11,11 @@
   }
 
   &__box {
+    display: flex;
+    justify-content: center;
     height: 130px;
     width: 100%;
     text-decoration: none;
-    display: block;
   }
 
   &__box-image {

@@ -1,51 +1,3 @@
-pages:
-  home:
-    hero:
-      title: Centralize the data of your retail store
-      description: Connect your POS, your website and all your applications.<1>Read more</1>
-    main:
-      title: HubRise makes POS integration easy
-      description: HubRise stores your data in the Cloud for easy sharing between your applications. Your HubRise-compatible applications can be connected in one click and start communicating together instantly.
-      features:
-        - Online Ordering Website
-        - Dashboard
-        - Fleet Managment
-        - POS
-        - Emailing Solution
-        - Loyalty Solution
-        - And More
-  developers:
-    hero:
-      title: Connect your application to HubRise
-      description: An integration to HubRise makes your application connected to the HubRise ecosystem. <1></1> <2>Contact us</2> for more information or technical assistance.
-    thumbs:
-      quick_start:
-        title: Quick Start
-        description: 10-minute guide to learn how to send your first API requests
-      general_concepts:
-        title: API reference
-        description: The resources available in the API are documented here
-      authentication:
-        title: Authentication
-        description: Introduction to OAuth 2.0 and how it is implemented in HubRise
-      integration:
-        title: Integration
-        description: Integration checklist, covering several types of applications
-  pricing:
-    title: Single monthly fee, unlimited usage
-    offer:
-      value: 25€ / month <1>per location</1>
-      features:
-        - Unlimited orders
-        - Unlimited customers
-        - Unlimited products
-        - Unlimited connections
-      button: Start now
-    special:
-      free: <0>Free:</0> Up to 50 orders and 50 customers per month. <2>Start Now</2>
-      large_accounts: <0>Large accounts:</0> prices are negotiable starting from 10 locations. <2>Contact Us</2>
-      faq: ""
-
 layout:
   header:
     buttons:
@@ -61,6 +13,8 @@ layout:
     links:
       - title: Home
         to: /
+      - title: Apps
+        to: /apps
       - title: Pricing
         to: /pricing
       - title: Developers
@@ -93,8 +47,3 @@ forms:
   contact:
     modal_title: Contact Us
     button: Send
-  signup:
-    title: Get started now
-    description: <0>HubRise is free up to 50 orders per month.</0> <1>See pricing</1>
-    link_to_pricing: /pricing
-    button: Create your account

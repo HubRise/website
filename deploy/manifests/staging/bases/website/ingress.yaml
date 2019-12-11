@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+
+metadata:
+  name: website-staging
+  namespace: hubrise-www
+  labels:
+    app: website-staging
+
+spec:
+  rules:
+    - host: __TAG__.website.hubrise-staging.com
+      http:
+        paths:
+          - backend:
+              serviceName: website
+              servicePort: 80

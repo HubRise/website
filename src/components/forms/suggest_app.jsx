@@ -9,7 +9,7 @@ const structure = {
   formId: `suggest_app`,
   sections: [
     {
-      subtitle_key: `subtitle_contact`,
+      subtitle_key: `subtitles.contact`,
       rows: [
         {
           fields: [
@@ -46,7 +46,7 @@ const structure = {
       ]
     },
     {
-      subtitle_key: `subtitle_app`,
+      subtitle_key: `subtitles.app`,
       rows: [
         {
           fields: [

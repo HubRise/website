@@ -12,6 +12,13 @@ module.exports = {
     author: ``
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-104746398-1`,
+        respectDNT: true
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
@@ -23,6 +30,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1200,
+              linkImagesToOriginal: false,
               withWebp: true,
               tracedSVG: true
             }
