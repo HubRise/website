@@ -1,0 +1,13 @@
+.contact-toggle {
+  color: #6db24f;
+
+  &:hover,
+  &:focus {
+    color: #5d9a43;
+    background-color: unset;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
