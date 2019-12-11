@@ -197,29 +197,20 @@
       Table reset
      ----------- */
 
-  thead {
-    display: none;
-  }
-
   tbody {
     background: none;
+  }
+
+  tr {
     border: none;
+  }
 
-    tr:nth-child(even) {
-      background-color: inherit;
-    }
+  td,
+  td:first-child {
+    padding: 0.6rem;
+  }
 
-    tr {
-      border-top: 1px solid $gray-standard;
-      border-bottom: 1px solid $gray-standard;
-    }
-
-    td {
-      padding: 0.6rem;
-    }
-
-    td a {
-      text-decoration: none;
-    }
+  td a {
+    text-decoration: none;
   }
 }

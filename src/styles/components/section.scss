@@ -1,5 +1,5 @@
 .section {
-  margin: ($block-padding / 2) 0;
+  margin: $block-padding auto;
   @include flex();
   @include flex-grid-row();
   justify-content: center;
@@ -182,7 +182,7 @@
     position: sticky;
     top: 1rem;
     max-height: calc(100vh - 2rem);
-    overflow-y: scroll;
+    overflow-y: auto;
 
     @include breakpoint(medium down) {
       position: unset;
