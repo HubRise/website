@@ -22,8 +22,6 @@
       display: none;
     }
     @include breakpoint(medium down) {
-      margin-bottom: 0;
-      padding: 1rem 1.5rem;
       display: block;
       margin-bottom: 0;
       padding: 1rem;
@@ -61,12 +59,11 @@
   }
 
   &__item {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 0.2rem;
-    color: #555;
+    color: #555555;
     font-weight: 500;
     font-size: 0.9375rem;
+    width: 100%;
+    display: inline-block;
   }
 
   &__item_active {

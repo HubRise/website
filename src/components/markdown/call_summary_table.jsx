@@ -25,7 +25,7 @@ const CallSummaryTable = ({ endpoint, shortEndpoint, accessLevel }) => {
     <table className='call-summary'>
       <tbody>
         <tr>
-          <TableCell>Endpoint</TableCell>
+          <TableCell>Endpoint:</TableCell>
           <TableCell>
             <span className='call-summary__url'>{endpoint}</span>
           </TableCell>
