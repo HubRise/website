@@ -73,7 +73,7 @@ content:
         - to: http://www.livepepper.fr
           logo: livepepper.png
           title: LivePepper
-          description: LivePepper is an Online Ordering solution for home delivery and takeaway restaurants. LivePepper is used by independent restaurants and large franchises alike based in France, in the UK and internationally.
+          description: LivePepper is an online ordering solution for home delivery and takeaway restaurants. LivePepper is used by independent restaurants and large franchises based in France, in the UK and internationally.
         - to: https://www.nextsourcia.com
           logo: nextsourcia.png
           title: nextSourcia
