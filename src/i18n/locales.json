@@ -4,6 +4,9 @@
     "default": true
   },
   "fr": {
-    "code": "fr"
+    "code": "fr",
+    "pathMappings": {
+      "/developers": "/developpeurs"
+    }
   }
 }

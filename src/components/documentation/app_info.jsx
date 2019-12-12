@@ -3,7 +3,7 @@ import React from 'react'
 import Link from '../../components/link'
 import { generateKey } from '../../components/utils'
 
-const Info = ({ content }) => {
+export const AppInfo = ({ content }) => {
   return (
     <div className='section__content'>
       <ul>
@@ -33,5 +33,3 @@ const Info = ({ content }) => {
     </div>
   )
 }
-
-export default Info

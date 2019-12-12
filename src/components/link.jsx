@@ -5,20 +5,29 @@ import { Link as GatsbyLink } from 'gatsby'
 
 import locales from '../i18n/locales'
 
+const newTabProps = {
+  target: `_blank`,
+  rel: `noopener noreferrer`
+}
+
 const Link = ({ to: initialTo, children, newTab, ...other }) => {
   const leadsToInternalPage = initialTo.startsWith(`/`)
   const leadsToDashboard = initialTo.includes(`manager.hubrise.com`)
   const isAnchorWithinCurrentPage = initialTo.startsWith(`#`)
   const { i18n: { language } } = useTranslation()
+  const isDefaultLanguage = locales[language].default
   const queryString = `?locale=${locales[language].tag}`
   const to = initialTo + (leadsToDashboard ? queryString : ``)
+  const mappedTo = (
+    locales[language][`pathMappings`] && locales[language][`pathMappings`][to]
+  )
 
   if (leadsToInternalPage) {
     return (
       <GatsbyLink
-        to={locales[language].default
+        to={isDefaultLanguage
           ? to
-          : `/${language}${to}`}
+          : `/${language}${mappedTo || to}`}
         {...other}
       >
         {children}
@@ -26,22 +35,10 @@ const Link = ({ to: initialTo, children, newTab, ...other }) => {
     )
   }
 
-  if (newTab && !isAnchorWithinCurrentPage) {
-    return (
-      <a
-        href={to}
-        target='_blank'
-        rel='noopener noreferrer'
-        {...other}
-      >
-        {children}
-      </a>
-    )
-  }
-
   return (
     <a
       href={to}
+      {...((newTab && !isAnchorWithinCurrentPage) && newTabProps)}
       {...other}
     >
       {children}

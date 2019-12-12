@@ -1,6 +1,5 @@
 .section {
-  margin-top: $block-padding;
-  margin-bottom: $block-padding;
+  margin: $block-padding auto;
   @include flex();
   @include flex-grid-row();
   justify-content: center;
@@ -182,9 +181,12 @@
   &__sidebar_sticky {
     position: sticky;
     top: 1rem;
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
 
     @include breakpoint(medium down) {
       position: unset;
+      max-height: unset;
     }
   }
 

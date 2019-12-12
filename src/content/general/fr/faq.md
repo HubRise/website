@@ -66,7 +66,7 @@ HubRise vous donne immédiatement accès à l'écosystème des commerçants et r
 ##### Pouvez-vous m'aider à promouvoir mon application ?
 
 Nous mettrons prochainement en avant les meilleures applications sur notre blog et nos réseaux sociaux.
-Si votre application répond à certaines spécifications, elle pourra être publiée sur notre App Store, accessible à nos utilisateurs. <ContactFormToggle text={`Contactez-nous`} /> pour nous présenter votre projet.
+Si votre application répond à certaines spécifications, elle pourra être publiée sur notre App Store, accessible à nos utilisateurs. <ContactFormToggle text="Contactez-nous" /> pour nous présenter votre projet.
 
 ##### HubRise peut-il me rétribuer pour mes applications ?
 

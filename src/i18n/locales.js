@@ -6,6 +6,9 @@ export default {
   },
   fr: {
     code: `fr`,
-    tag: `fr-FR`
+    tag: `fr-FR`,
+    pathMappings: {
+      '/developers': `/developpeurs`
+    }
   }
 }

@@ -43,7 +43,7 @@ const PrevArrow = ({ onClick, currentImageNumber }) => {
   )
 }
 
-const Gallery = ({ images, title }) => {
+export const Gallery = ({ images, title }) => {
   const slider = useRef(null)
   const [ isSliderVisible, setIsSliderVisible ] = useState(false)
   const [ currentImageNumber, setCurrentImageNumber ] = useState(1)
@@ -167,5 +167,3 @@ const Gallery = ({ images, title }) => {
     </div>
   )
 }
-
-export default Gallery

@@ -54,8 +54,8 @@
       display: inline-block;
       width: 100%;
       padding: 0;
-      font-size: 0.9375rem;
       color: $gray-nav;
+      font-size: 0.9375rem;
       font-weight: 400;
       &:hover {
         color: $main-green;
@@ -69,21 +69,22 @@
   }
 
   &__action-signup {
+    padding-right: 1rem;
     color: $gray-nav;
     font-size: 0.9375rem;
-    padding-right: 1rem;
+    font-weight: 600;
     &:hover {
       color: $main-green;
     }
   }
 
   &__action-login {
+    padding: 0.6rem 1.5rem;
+    border-radius: 3px;
     color: $white;
     background: $main-green;
     font-size: 0.9375rem;
-    padding: 0.6rem 1.5rem;
-    border-radius: 3px;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     & a {
       color: $white;

@@ -6,7 +6,8 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import {
   SectionNavigation,
   Gallery,
-  AppInfo
+  AppInfo,
+  Breadcrumbs
 } from '../components/documentation'
 
 const DocumentationPage = ({ data, path, pageContext }) => {
@@ -18,43 +19,46 @@ const DocumentationPage = ({ data, path, pageContext }) => {
   const { title, gallery, appInfo } = frontmatter
 
   return (
-    <section className='section'>
-      <div
-        className={`
+    <>
+      <Breadcrumbs path={path} />
+      <section className='section'>
+        <div
+          className={`
           section__in
           section__in_padding
           section__in_reverse
           section__in_developers
         `}
-      >
-        <div className='section__content'>
-          <div className='documentation'>
-            <h1>
-              {title}
-            </h1>
-            <MDXRenderer>
-              {body}
-            </MDXRenderer>
+        >
+          <div className='section__content'>
+            <div className='documentation'>
+              <h1>
+                {title}
+              </h1>
+              <MDXRenderer>
+                {body}
+              </MDXRenderer>
+            </div>
           </div>
-        </div>
-        <SectionNavigation
-          logo={images.nodes.find(({ base }) => base === logoBase)}
-          currentPath={path}
-          title={chapterTitle}
-          pages={currentAndSiblingPages.nodes}
-        />
-        {gallery && (
-          <Gallery
+          <SectionNavigation
+            logo={images.nodes.find(({ base }) => base === logoBase)}
+            currentPath={path}
             title={chapterTitle}
-            images={gallery.reduce((result, base) => {
-              const match = images.nodes.find((node) => node.base === base)
-              return result.concat(match || [])
-            }, [])}
+            pages={currentAndSiblingPages.nodes}
           />
-        )}
-        {appInfo && <AppInfo content={appInfo} />}
-      </div>
-    </section>
+          {gallery && (
+            <Gallery
+              title={chapterTitle}
+              images={gallery.reduce((result, base) => {
+                const match = images.nodes.find((node) => node.base === base)
+                return result.concat(match || [])
+              }, [])}
+            />
+          )}
+          {appInfo && <AppInfo content={appInfo} />}
+        </div>
+      </section>
+    </>
   )
 }
 

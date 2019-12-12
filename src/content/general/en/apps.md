@@ -21,11 +21,11 @@ content:
         - to: https://iikosoftware.com
           logo: iiko.png
           title: iiko
-          description: Over 30 000 businesses use iiko to automate every aspect of their operations. iiko is 100% cloud, easy to deploy and scale for single and multi-store businesses.
+          description: iiko is 100% cloud, easy to deploy and scale for single and multi-store businesses. Over 30,000 businesses use iiko to automate every aspect of their operations. 
         - to: https://www.ikentoo.com
           logo: ikentoo-lightspeed.png
           title: iKentoo by LightSpeed
-          description: iKentoo is an iPad-based Point of Sales system for restaurants and hoteliers used worldwide. Acquired by Lightspeed, iKentoo will keep expanding to new international markets. 
+          description: iKentoo is an iPad and cloud Point of Sales system for restaurants and hoteliers. Acquired by Lightspeed, iKentoo will keep expanding to new international markets. 
         - to: https://www.jdc.fr/caisse-enregistreuse
           logo: jdc.png
           title: Kezia II / JDC
@@ -34,7 +34,7 @@ content:
         - to: http://www.myorderboxhq.com
           logo: myorderbox.png
           title: My Order Box
-          description: My Order Box is an affordable cloud based Point of Sales for Takeaway and Restaurants. My Order Box is easy to install and get hands on.
+          description: My Order Box is an affordable cloud based Point of Sales for takeaway and restaurants. My Order Box is easy to install and get hands on.
         - to: http://www.logiciel-de-livraison.com
           logo: nestor.png
           title: Nestor
@@ -43,21 +43,21 @@ content:
         - to: https://www.pointone-epos.co.uk/
           logo: pointone.png
           title: pointOne
-          description: pointOne is a Touch-screen Point of Sales simple to use. pointOne includes online ordering, kitchen screens, smart phone applications, reporting as well as stock control.
+          description: pointOne is a touch-screen Point of Sales simple to use. pointOne includes online ordering, kitchen screens, smart phone applications, reporting as well as stock control.
         - to: https://www.orderlord.com
           logo: orderlord.png
           title: OrderLord POS
-          description: OrderLord provides a Point of Sale combined with a Delivery Mangement solution, a Kitchen Screens and advanced reporting.
+          description: OrderLord provides a Point of Sale combined with a Delivery Mangement solution, kitchen screens and advanced reporting.
         - to: https://www.partech.com/pixel-point-software
           logo: par-pixelpoint.png
           title: PixelPoint (web API)
-          description: PixelPoint by PAR integrated via it's Web API is a Point of Sales solution for restaurants and entertainment industry sectors. PixelPoint is used for cost management, loss prevention and loyalty programs.
+          description: PixelPoint by PAR, integrated via its Web API, is a Point of Sales solution for restaurants and entertainment industry sectors. PixelPoint is used for cost management, loss prevention and loyalty programs.
           additional_info: Web API integration
         - to: https://www.partech.com/pixel-point-software
           logo: par-pixelpoint.png
           title: PixelPoint (Windows API)
-          description: PixelPoint by PAR integrated via it's Windows API is a Point of Sale solution for restaurants and entertainment industry sectors. PixelPoint is used for cost management, loss prevention and loyalty programs.
-          additional_info: Windows API integration by Slowey Systems
+          description: PixelPoint by PAR, integrated via its Windows API, is a Point of Sale solution for restaurants and entertainment industry sectors. PixelPoint is used for cost management, loss prevention and loyalty programs.
+          additional_info: Slowey Systems Windows API integration
         - to: https://zelty.fr
           logo: zelty.png
           title: Zelty
@@ -77,7 +77,7 @@ content:
         - to: https://www.nextsourcia.com
           logo: nextsourcia.png
           title: nextSourcia
-          description: nextSourcia offers e-commerce solutions for retail stores as well as hosting services and specific development work.
+          description: nextSourcia creates e-commerce websites for retail stores. It offers also hosting services and specific development work.
           additional_info: Documentation in French
         - to: https://www.ubereats.com
           logo: ubereats.png
@@ -87,32 +87,32 @@ content:
         - to: http://www.y-proximite.fr
           logo: yproximite.png
           title: Y-Proximité
-          description: Y-Proximité is a digital agency and Online Ordering software editor for SMEs and smaller retail stores.
+          description: Y-Proximité is a digital agency and online ordering software editor used by SMEs and smaller retail stores.
           additional_info: Documentation in French
     - title: Delivery Management
       apps:
         - to: http://www.captain.ai
           logo: captain.png
           title: Captain
-          description: Captain Delivery Management suite of solutions has been designed to support restaurant delivery through order management and live customer order tracking.
+          description: Captain delivery management suite of solutions has been designed to support restaurant delivery through order management and live customer order tracking.
         - to: https://www.orderlord.com
           logo: orderlord.png
           title: OrderLord
-          description: The OrderLord Delivery Management solution includes an app for couriers to be informed and for them to navigate. Customers can also track their order.
+          description: OrderLord delivery management solution can be used by restaurants, retails or delivery services agencies. Orderlord includes a dashboard for managers, an app for couriers and a tracking system for customers.
         - to: https://orkestro.com
           logo: orkestro.png
           title: Orkestro
-          description: A delivery operations manager solution to organise inhouse deliveries or outsource to delivery companies on-demand and on the same day.
+          description: Orkestro is a delivery operations manager solution used to organise inhouse deliveries or outsource to delivery companies on-demand and on the same day.
     - title: Loyalty and Marketing
       apps:
         - to: https://www.como.com
           logo: como.png
           title: Como
-          description: Como is a loyalty programme solution for retail and hospitality companies. Como gathers data about purchases and preferences to approach customers with a personalized offers. 
+          description: Como is a loyalty programme solution for retail and hospitality companies. Como gathers data about purchases and preferences to approach customers with personalised offers. 
         - to: https://myemma.com
           logo: emma.png
           title: Emma
-          description: Emma is an email campaign platform with support available in email marketing strategy, content and design to help maximize your results.
+          description: Emma is an email campaign platform with support available in email marketing strategy, content and design to help maximise your results.
         - to: https://mailchimp.com
           logo: mailchimp.png
           title: MailChimp
@@ -124,17 +124,17 @@ content:
         - to: https://www.smg.com
           logo: smg.png
           title: Service Management Group
-          description: SMG combines technology and services to collect, analyze, and share feedback on data for brands to deliver and decide on actions with insights across their enterprise.
+          description: SMG combines technology and services to collect, analyse, and share feedback on data for brands to make decisions with insights across their enterprise.
     - title: Other apps
       apps:
         - to: https://tickncook.com
           logo: tickncook.png
           title: Tick'N'Cook
-          description: Tick'N'Cook is a kitchen display screen for independent restaurants and chains. Tick'N'Cook can be customised with estimated preparation time and specialized screens (bar, pastry, kitchen, etc.).
+          description: Tick'N'Cook is a kitchen display screen for independent restaurants and chains. Tick'N'Cook can be customised with estimated preparation time and specialised screens for bar, pastry or kitchen.
   additional_sections:
     suggest_app:
       title: Suggest an application
-      description: Your application is not in this list?
+      description: Your application is not in this list? Send us some details about your application. HubRise will contact them to suggest an integration.
       button: Suggest
   developers:
     title: You are a developer?

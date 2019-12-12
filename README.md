@@ -16,13 +16,14 @@ docker build -f docker_dev/Dockerfile -t hubrise/website-dev .
 To run project on http://localhost:8000:
 
 ```shell
-docker run -v $(pwd):/var/www/website -p8000:8000 hubrise/website-dev
+docker run -t -v $(pwd):/var/www/website -p8000:8000 hubrise/website-dev
+docker rm $(docker stop $(docker ps -a -q --filter ancestor=hubrise/website-dev --format="{{.ID}}"))
 ```
 
 ## Run the test suite
 
 ```shell
-docker run -v $(pwd):/var/www/website hubrise/website-dev "yarn test && yarn test:e2e && test:e2e:ci"
+docker run -t -v $(pwd):/var/www/website hubrise/website-dev "yarn test && yarn test:e2e && test:e2e:ci"
 ```
 
 ## Build production image

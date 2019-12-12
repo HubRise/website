@@ -1,0 +1,43 @@
+.breadcrumbs-wrapper {
+  @include flex-grid-row();
+  margin-bottom: calc(-#{$block-padding} + 1rem);
+  margin-top: calc(#{$block-padding} - 1rem);
+
+  &__list {
+    @include flex-grid-row();
+    flex-flow: row wrap;
+    margin-left: unset;
+    padding-left: 1rem;
+  }
+
+  &__list-item {
+    position: relative;
+    margin-right: 0.5rem;
+    font-size: 0.8125rem;
+    color: #555;
+    text-transform: capitalize;
+
+    &::after {
+      content: '>';
+      margin-left: 0.5rem;
+    }
+
+    &:last-of-type {
+      color: #777;
+
+      &::after {
+        content: '';
+      }
+    }
+  }
+
+  &__list-item_link {
+    color: #555;
+
+    &:hover,
+    &:focus {
+      color: inherit;
+      cursor: pointer;
+    }
+  }
+}

@@ -14,7 +14,7 @@ const sortPagesAsc = (pages) => {
   })
 }
 
-const SidebarRight = ({ currentPath, pages, title, logo }) => {
+export const SectionNavigation = ({ currentPath, pages, title, logo }) => {
   const [isExpanded, setIsExpanded] = useState(false)
 
   return (
@@ -115,7 +115,7 @@ const SidebarRight = ({ currentPath, pages, title, logo }) => {
   )
 }
 
-SidebarRight.propTypes = {
+SectionNavigation.propTypes = {
   currentPath: PropTypes.string.isRequired,
   pages: PropTypes.arrayOf(
     PropTypes.shape({
@@ -135,5 +135,3 @@ SidebarRight.propTypes = {
     })
   )
 }
-
-export default SidebarRight

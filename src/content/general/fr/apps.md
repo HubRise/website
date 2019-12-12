@@ -17,65 +17,65 @@ content:
         - to: https://3s-pos.com
           logo: 3spos.png
           title: 3S POS
-          description: 3S POS est une suite complète aux fonctionnalités personnalisables pour répondre aux besoins de chaque restaurant ou hotelier.
+          description: 3S POS est une suite complète aux fonctionnalités personnalisables pour répondre aux besoins de chaque restaurant ou hôtelier.
           additional_info: Documentation en anglais
         - to: https://iikosoftware.com
           logo: iiko.png
           title: iiko
-          description: Plus de 30 000 entreprises utilisent iiko pour automatiser tous les aspects de leurs opérations. iiko, 100% cloud est facile à déployer et à faire évoluer pour les entreprises mono ou multisite.
+          description: iiko est une solution cloud facile à déployer et à faire évoluer. Plus de 30.000 entreprises mono ou multisites l'utilisent pour automatiser leurs opérations. 
           additional_info: Documentation en anglais
         - to: https://www.ikentoo.com
           logo: ikentoo-lightspeed.png
           title: iKentoo par LightSpeed
-          description: iKentoo, par LightSpeed est une caisse enregistreuse sur iPad pour restaurants and hoteliers avec une forte présence à l'international.
+          description: iKentoo, par LightSpeed, est une caisse enregistreuse cloud sur iPad pour la restauration et l'hôtellerie, avec une forte présence à l'international.
         - to: https://www.jdc.fr/caisse-enregistreuse
           logo: jdc.png
           title: Kezia II par JDC
-          description: Kezia II est un logiciel de caisse développé par JDC, le leader français des solutions d'encaissement. Kezia II s'adapte à tous les types de commerces.
+          description: Kezia II est un logiciel de caisse développé par JDC, un leader français des solutions d'encaissement. Kezia II s'adapte à tous les types de commerces.
         - to: http://www.myorderboxhq.com
           logo: myorderbox.png
           title: My Order Box
-          description: My Order Box est une solution d'encaissement facile à installer et à utiliser au quotidien.
+          description: My Order Box est une solution d'encaissement facile à installer et à utiliser.
           additional_info: Documentation en anglais
         - to: http://www.logiciel-de-livraison.com
           logo: nestor.png
           title: Nestor
-          description: Nestor es un logiciel de caisse spécialement conçu pour la livraison à domicile et la vente à emporter.
+          description: Nestor est un logiciel de caisse conçu pour la livraison à domicile et la vente à emporter.
         - to: https://www.pointone-epos.co.uk/
           logo: pointone.png
           title: pointOne
-          description: pointOne est une solution simple a utiliser et complète avec gestion de stock, rapports et analyses des données.
+          description: pointOne est une solution simple à utiliser et complète avec gestion de stock, rapports et analyses des données.
           additional_info: Documentation en anglais
         - to: https://www.orderlord.com
           logo: orderlord.png
           title: OrderLord POS
-          description: Orderlord est un logiciel de caisse spécialisé en livraison. Orderlord offre de nombreuses fonctionnalités pour faciliter le travail en cuisine, la gestion de livreurs et l'analyse des données.
+          description: OrderLord est un logiciel de caisse spécialisé pour la livraison. OrderLord offre de nombreuses fonctionnalités pour faciliter le travail en cuisine, la gestion de livreurs et l'analyse des données.
           additional_info: Documentation en anglais
         - to: https://www.partech.com/pixel-point-software
           logo: par-pixelpoint.png
           title: PixelPoint (web API)
-          description: PixelPoint par PAR, intégré via son API web, répond aux besoins de la restauration et du divertissement, avec un focus sur la gestion des coûts, la prévention des pertes et la fidélisation. 
+          description: PixelPoint, edité par PAR, intégré via son API web, répond aux besoins de la restauration et du divertissement, avec un focus sur la gestion des coûts, la prévention des pertes et la fidélisation. 
           additional_info: Intégration via son API web. Documentation en anglais
         - to: https://www.partech.com/pixel-point-software
           logo: par-pixelpoint.png
           title: PixelPoint (Windows API)
-          description: PixelPoint par PAR, intégré via son API Windows, répond aux besoins de la restauration et du divertissement, avec un focus sur la gestion des coûts, la prévention des pertes et la fidélisation. 
+          description: PixelPoint, edité par PAR, intégré via son API Windows, répond aux besoins de la restauration et du divertissement, avec un focus sur la gestion des coûts, la prévention des pertes et la fidélisation. 
           additional_info: Intégration via son API Windows. Documentation en anglais.
         - to: https://zelty.fr
           logo: zelty.png
           title: Zelty
-          description: Zelty est une caisse enregistreuse sur iPad. Zelty offre une solution complète, pensée pour le multisite, les franchises et les chaines. Zelty s'adapte a tout type de restaurant.
+          description: Zelty est une caisse enregistreuse sur iPad, offrant une solution complète et pensée pour les chaînes. La solution s'adapte cependant à tout type de restaurant.
     - title: Commande en ligne
       apps:
         - to: https://www.app4takeaways.com
           logo: app4.png
           title: App4
-          description: App4 est une solution de commande en ligne en propre, avec application mobile. App4 s'adapte aux besoins de la vente à emporter, de restaurants et pubs ou commerce de détail alimentaire.
-          additional_info: Intégration en cours. Documentation en anglais.
+          description: App4 est une solution de commande en ligne et application mobile, qui s'adapte aux besoins de la vente à emporter, des cafés/restaurants et des commerces de détail alimentaire.
+          additional_info: Documentation en anglais. Intégration en cours. 
         - to: http://www.livepepper.fr/
           logo: livepepper.png
           title: LivePepper
-          description: Solution de commande en ligne pour les restaurants, conçu pour la livraison à domicile et la vente à emporter. Adapté aux indépendants comme aux chaînes. LivePepper est untilisé en France, en Grande Bretagne et à l'international.
+          description: LivePepper est un solution de commande en ligne pour les restaurants, conçue pour la livraison à domicile et la vente à emporter. Adaptée aux indépendants comme aux chaînes. LivePepper est untilisé en France, en Grande-Bretagne et à l'international.
         - to: https://www.nextsourcia.com
           logo: nextsourcia.png
           title: nextSourcia
@@ -83,12 +83,12 @@ content:
         - to: https://www.ubereats.com
           logo: ubereats.png
           title: Uber Eats
-          description: Plate-forme de commande de repas en ligne depuis le site ou via une application mobile avec service de livraison à domicile.
-          additional_info: Integration en cours
+          description: Plateforme de commande de repas en ligne depuis le site ou via une application mobile avec service de livraison à domicile.
+          additional_info: Intégration en cours
         - to: http://www.y-proximite.fr
           logo: yproximite.png
           title: Y-Proximité
-          description: Y-Proximité est une agence digitale et un éditeur de solutions de commande en ligne pour les PME et petits commerçants.
+          description: Y-Proximité est une agence digitale et un éditeur de solutions de commande en ligne pour les PME et les petits commerçants.
     - title: Gestion de livreurs
       apps:
         - to: http://www.captain.ai
@@ -99,7 +99,12 @@ content:
         - to: https://www.orderlord.com
           logo: orderlord.png
           title: OrderLord
-          description: OrderLord est une solution pour les entreprises de livraison ou pour les restaurants, permettant de suivre à la trace les commandes ainsi que les livreurs connectés par des terminaux GPS. OrderLord apporte aux clients une expérience de livraison transparente.
+          description: OrderLord est une solution conçue pour les entreprises de livraison et les restaurants, permettant de suivre les livraisons grâce à une application mobile utilisant le GPS. OrderLord apporte aux clients une expérience de livraison transparente.
+          additional_info: Documentation en anglais
+        - to: https://orkestro.com
+          logo: orkestro.png
+          title: Orkestro
+          description: Orkestro permet de gérer les livraisons en interne ou de les externaliser à des opérateurs offrant des services de livraison à la demande.
           additional_info: Documentation en anglais
     - title: Fidélité et marketing
       apps:
@@ -107,7 +112,7 @@ content:
           logo: como.png
           title: Como
           description: Como est une solution de fidélité client pour les commerçants, les hôteliers et les restaurateurs permettant de personnaliser les offres grâce à l'analyse des données clients.
-          additional_info: Documentation en anglais
+          additional_info: Documentation en anglais. Intégration en cours.
         - to: https://myemma.com
           logo: emma.png
           title: Emma
@@ -121,23 +126,23 @@ content:
         - to: https://sailplay.com
           logo: sailplay.png
           title: SailPlay
-          description: SailPlay est une plate-forme utilisée pour l'automatisation de campagnes d'emailing. SailPlay permet de mieux connaître ses clients afin de les fidéliser.
+          description: SailPlay est une plateforme utilisée pour l'automatisation des campagnes d'emailing. Elle permet de mieux connaître ses clients afin de les fidéliser.
           additional_info: Documentation en anglais
         - to: https://www.smg.com
           logo: smg.png
           title: Service Management Group
-          description: SMG associe la technoclogie et le service pour la collecte et l'analyse de données permettant de mieux comprendre les comportements et d'agir en conséquence.
+          description: SMG associe la technologie et le service pour collecter et analyser vos données, afin de comprendre les comportements de vos clients et d'agir en conséquence.
           additional_info: Documentation en anglais
     - title: Autres applications
       apps:
         - to: https://tickncook.com
           logo: tickncook.png
           title: Tick'N'Cook
-          description: Tick'n'Cook permet de voir apparaître en temps réel sur des écrans tactiles, les commandes validées par les bornes, les sites internet ou les systèmes de caisse. Les modules sont personnalisables avec le temps de préparation et écrans spécialisés (bar, pâtisserie, cuisine, etc.).
+          description: Tick'n'Cook est un écran cuisine. Les commandes provenant de votre site Internet, de vos bornes ou de votre caisse apparaissent en temps réel sur des écrans tactiles. La solution est personnalisable avec possibilité de mettre en place des écrans spécialisés par atelier (bar, cuisine...)
   additional_sections:
     suggest_app:
       title: Proposer une application
-      description: Votre application ne se trouve pas dans cette liste ?
+      description: Votre application ne se trouve pas dans cette liste ? Envoyez-nous quelques informations et HubRise se chargera de les contacter.
       button: Proposer
   developers:
     title: Vous êtes développeur ?
