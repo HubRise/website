@@ -79,6 +79,10 @@ content:
           title: nextSourcia
           description: nextSourcia creates e-commerce websites for retail stores. It offers also hosting services and specific development work.
           additional_info: Documentation in French
+        - to: https://www.restajet.com/
+          logo: restajet.png
+          title: RestaJet
+          description: RestaJet offers a mobile app for reservations and an online ordering website for restaurants. Content management, reporting and marketing tools are available on the RestaJet console.
         - to: https://www.ubereats.com
           logo: ubereats.png
           title: Uber Eats
@@ -108,7 +112,8 @@ content:
         - to: https://www.como.com
           logo: como.png
           title: Como
-          description: Como is a loyalty programme solution for retail and hospitality companies. Como gathers data about purchases and preferences to approach customers with personalised offers. 
+          description: Como is a loyalty programme solution for retail and hospitality companies. Como gathers data about purchases and preferences to approach customers with personalised offers.
+          additional_info: Integration in progress
         - to: https://myemma.com
           logo: emma.png
           title: Emma
@@ -131,6 +136,10 @@ content:
           logo: tickncook.png
           title: Tick'N'Cook
           description: Tick'N'Cook is a kitchen display screen for independent restaurants and chains. Tick'N'Cook can be customised with estimated preparation time and specialised screens for bar, pastry or kitchen.
+        - to: https://www.hubrise.com/
+          logo: orderline.png
+          title: OrderLine
+          description: OrderLine by HubRise centralises orders received from an e-commerce website and aggregators. Orders can be managed and printed.    
   additional_sections:
     suggest_app:
       title: Suggest an application

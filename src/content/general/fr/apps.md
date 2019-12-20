@@ -54,12 +54,12 @@ content:
         - to: https://www.partech.com/pixel-point-software
           logo: par-pixelpoint.png
           title: PixelPoint (web API)
-          description: PixelPoint, edité par PAR, intégré via son API web, répond aux besoins de la restauration et du divertissement, avec un focus sur la gestion des coûts, la prévention des pertes et la fidélisation. 
+          description: PixelPoint, édité par PAR, intégré via son API web, répond aux besoins de la restauration et du divertissement, avec un focus sur la gestion des coûts, la prévention des pertes et la fidélisation. 
           additional_info: Intégration via son API web. Documentation en anglais
         - to: https://www.partech.com/pixel-point-software
           logo: par-pixelpoint.png
           title: PixelPoint (Windows API)
-          description: PixelPoint, edité par PAR, intégré via son API Windows, répond aux besoins de la restauration et du divertissement, avec un focus sur la gestion des coûts, la prévention des pertes et la fidélisation. 
+          description: PixelPoint, édité par PAR, intégré via son API Windows, répond aux besoins de la restauration et du divertissement, avec un focus sur la gestion des coûts, la prévention des pertes et la fidélisation. 
           additional_info: Intégration via son API Windows. Documentation en anglais.
         - to: https://zelty.fr
           logo: zelty.png
@@ -80,6 +80,11 @@ content:
           logo: nextsourcia.png
           title: nextSourcia
           description: nextSourcia est une solution de e-commerce B2B et B2C pour tout type de commerce avec faculté d'adaptation.
+        - to: https://www.restajet.com/
+          logo: restajet.png
+          title: RestaJet
+          description: RestaJet propose une application mobile pour les réservations et un site de commande en ligne pour les restaurants. Des outils de gestion de contenu et de marketing sont disponibles sur la console RestaJet.
+          additional_info: Documentation en anglais.
         - to: https://www.ubereats.com
           logo: ubereats.png
           title: Uber Eats
@@ -139,6 +144,10 @@ content:
           logo: tickncook.png
           title: Tick'N'Cook
           description: Tick'n'Cook est un écran cuisine. Les commandes provenant de votre site Internet, de vos bornes ou de votre caisse apparaissent en temps réel sur des écrans tactiles. La solution est personnalisable avec possibilité de mettre en place des écrans spécialisés par atelier (bar, cuisine...)
+        - to: https://www.hubrise.com/
+          logo: orderline.png
+          title: OrderLine
+          description: OrderLine édité par HubRise centralise les commandes passées depuis un site e-commerce ou autre plateforme de commande en ligne. Les commandes sont ainsi gérées et imprimés.  
   additional_sections:
     suggest_app:
       title: Proposer une application
