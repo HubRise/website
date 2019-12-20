@@ -84,7 +84,7 @@ content:
           logo: restajet.png
           title: RestaJet
           description: RestaJet propose une application mobile pour les réservations et un site de commande en ligne pour les restaurants. Des outils de gestion de contenu et de marketing sont disponibles sur la console RestaJet.
-          additional_info: Documentation en anglais.
+          additional_info: Documentation en anglais. Intégration en cours.
         - to: https://www.ubereats.com
           logo: ubereats.png
           title: Uber Eats
