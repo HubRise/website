@@ -17,7 +17,9 @@ export const getLanguage = (path) => {
   if (result) {
     return result.groups.languageCode
   } else {
-    const [{ code }] = Object.values(locales).filter((info) => info.default === true)
+    const [{ code }] = Object.values(locales).filter(
+      (info) => info.default === true
+    )
     return code
   }
 }
