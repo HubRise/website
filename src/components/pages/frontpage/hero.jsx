@@ -15,12 +15,6 @@ export const Hero = ({ title, description, signupFormContent }) => {
             </h3>
             <p className='index-hero__description'>
               {description.paragraph}
-              <Link
-                to='#more'
-                className='index-hero__link'
-              >
-                {description.link}
-              </Link>
             </p>
           </div>
         </div>

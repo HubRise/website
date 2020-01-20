@@ -6,7 +6,6 @@ content:
     title: Centralize the data of your retail store
     description:
       paragraph: Connect your POS, your website and all your applications.
-      link: Read more
   signup_form:
     title: Get started now
     description:
