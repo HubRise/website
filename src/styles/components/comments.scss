@@ -14,12 +14,12 @@
 
   &__new {
     display: inline-block;
-    color: $green;
+    color: $hr-green;
     font-weight: 500;
     font-size: 0.8125rem;
     text-decoration: underline;
     &:hover {
-      color: $green;
+      color: $hr-green;
     }
     @include breakpoint(medium down) {
       width: 100%;
@@ -38,48 +38,48 @@
   }
 
   &__author {
-    color: $green;
+    color: $hr-green;
     font-size: 0.8125rem;
     font-weight: 500;
     padding-right: 0.3rem;
     &:hover {
-      color: $green;
+      color: $hr-green;
     }
   }
 
   &__date {
-    color: $light-gray;
+    color: $hr-light-gray;
     font-weight: 400;
     font-size: 0.8125rem;
   }
 
   &__text {
-    color: $light-gray;
+    color: $hr-light-gray;
     font-weight: 400;
     font-size: 0.8125rem;
     margin-bottom: 0.5rem;
   }
 
   &__reply {
-    color: $green;
+    color: $hr-green;
     font-size: 0.8125rem;
     font-weight: 500;
     padding-right: 0.3rem;
     text-decoration: underline;
     &:hover {
-      color: $green;
+      color: $hr-green;
     }
   }
 
   &__sub-title {
-    color: $dim-gray;
+    color: $hr-dim-gray;
     font-size: 1.125rem;
     font-weight: 600;
     margin-top: 2rem;
   }
 
   &__reply-to {
-    color: $green;
+    color: $hr-green;
     font-size: 1.125rem;
     text-decoration: underline;
     display: inline-block;
@@ -91,7 +91,7 @@
     height: 4px;
     border-radius: 50%;
     display: inline-block;
-    background: $light-gray;
+    background: $hr-light-gray;
     vertical-align: middle;
   }
 
@@ -99,7 +99,7 @@
     font-size: 1rem;
     font-weight: 400;
     text-decoration: underline;
-    color: $green;
+    color: $hr-green;
     padding: 0 0.3rem;
   }
 }

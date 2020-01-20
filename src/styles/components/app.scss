@@ -37,13 +37,13 @@
     justify-content: center;
     span {
       font-size: 6rem;
-      color: $green;
+      color: $hr-green;
       font-weight: 600;
     }
   }
 
   &__title {
-    color: $dim-gray;
+    color: $hr-dim-gray;
     font-weight: bold;
     font-size: 1rem;
     margin: 0 0 1rem 0;
@@ -51,7 +51,7 @@
   }
 
   &__description {
-    color: $light-gray;
+    color: $hr-light-gray;
     line-height: 1.4rem;
     margin: 1rem 0 0.5rem 0;
     font-weight: 400;
@@ -66,15 +66,15 @@
 
   &__more {
     font-size: 0.9375rem;
-    color: $dim-gray;
+    color: $hr-dim-gray;
     font-weight: 600;
   }
 
   &__more-link {
-    color: $dim-gray;
+    color: $hr-dim-gray;
     font-size: 0.9375rem;
     font-weight: 500;
-    border-bottom: 1px solid $silver-gray;
+    border-bottom: 1px solid $hr-silver-gray;
     display: inline-block;
     margin-left: 0.2rem;
     line-height: 1;
@@ -82,8 +82,8 @@
     &:hover,
     &:focus,
     &:active {
-      color: $green;
-      border-bottom: 1px solid $green;
+      color: $hr-green;
+      border-bottom: 1px solid $hr-green;
       cursor: pointer;
     }
   }

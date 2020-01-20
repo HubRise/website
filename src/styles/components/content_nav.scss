@@ -5,7 +5,7 @@
     position: relative;
     padding-top: 1rem;
     margin-bottom: 0;
-    color: $dim-gray;
+    color: $hr-dim-gray;
     font-weight: bold;
     font-size: 1rem;
     padding-left: 1rem;
@@ -29,7 +29,7 @@
   }
 
   &__title_small_bottom_border {
-    border-bottom: 1px solid $green;
+    border-bottom: 1px solid $hr-green;
   }
 
   &__list {
@@ -48,7 +48,7 @@
   }
 
   &__arrow {
-    color: $green;
+    color: $hr-green;
     font-size: 1.3em;
     float: right;
     cursor: pointer;
@@ -59,7 +59,7 @@
   }
 
   &__item {
-    color: $dim-gray;
+    color: $hr-dim-gray;
     font-weight: 500;
     font-size: 0.9375rem;
     width: 100%;
@@ -71,7 +71,7 @@
 
     .content-nav__link {
       color: $white;
-      background: $green;
+      background: $hr-green;
 
       &:hover {
         color: $white;
@@ -84,12 +84,12 @@
     width: 100%;
     padding: 0.25rem 0;
     padding-left: 1rem;
-    color: $dim-gray;
+    color: $hr-dim-gray;
     font-weight: 500;
     font-size: 0.9375rem;
 
     &:hover {
-      color: $green;
+      color: $hr-green;
     }
   }
 }

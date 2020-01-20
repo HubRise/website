@@ -31,7 +31,7 @@
   }
 
   h1 {
-    color: $dark-gray;
+    color: $hr-dark-gray;
     font-weight: bold;
     font-size: 2.625rem;
     position: relative;
@@ -48,12 +48,12 @@
       margin: 10px auto;
       width: 15%;
       height: 3px;
-      background: $green;
+      background: $hr-green;
     }
   }
 
   h2 {
-    color: $dim-gray;
+    color: $hr-dim-gray;
     font-size: 1.563rem;
     text-align: left;
     font-weight: 600;
@@ -61,7 +61,7 @@
   }
 
   h3 {
-    color: $gray;
+    color: $hr-gray;
     font-weight: 500;
     font-size: 1rem;
     text-transform: uppercase;
@@ -70,7 +70,7 @@
   }
 
   h4 {
-    color: $gray;
+    color: $hr-gray;
     font-weight: 500;
     font-size: 1rem;
     margin: 0.5rem 0;
@@ -79,18 +79,18 @@
 
   p {
     font-size: 1rem;
-    color: $dim-gray;
+    color: $hr-dim-gray;
     font-weight: 400;
   }
 
   a {
     font-weight: 400;
     font-size: 1rem;
-    color: $green;
+    color: $hr-green;
     text-decoration: underline;
 
     &:hover {
-      color: $green;
+      color: $hr-green;
       cursor: pointer;
     }
   }
@@ -104,7 +104,7 @@
   li {
     font-size: 1rem;
     font-weight: 400;
-    color: $dim-gray;
+    color: $hr-dim-gray;
   }
 
   ul li {
@@ -117,7 +117,7 @@
       content: '';
       width: 4px;
       height: 4px;
-      background: $gray;
+      background: $hr-gray;
       border-radius: 50%;
       left: 0;
       position: absolute;
@@ -133,8 +133,8 @@
     padding: 2.5rem 1.25rem;
     margin: 1.5rem auto;
     background-color: #fbfbfb;
-    border-top: 1px solid $light-gray;
-    border-bottom: 1px solid $light-gray;
+    border-top: 1px solid $hr-light-gray;
+    border-bottom: 1px solid $hr-light-gray;
     font-family: Consolas, 'Liberation Mono', Courier, monospace;
     font-weight: normal;
 
@@ -149,7 +149,7 @@
       border: none;
       padding: 0;
       font-family: Consolas, 'Liberation Mono', Courier, monospace !important;
-      color: $dim-gray;
+      color: $hr-dim-gray;
 
       span:last-child {
         margin-right: 1.25rem;

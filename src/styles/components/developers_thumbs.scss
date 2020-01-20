@@ -25,7 +25,7 @@
   &__icon {
     float: left;
     font-size: 3.25rem;
-    color: $green;
+    color: $hr-green;
     line-height: 4.2rem;
     height: 160px;
     margin-right: 2rem;
@@ -33,13 +33,13 @@
 
   &__title {
     font-size: 1.5rem;
-    color: $dim-gray;
+    color: $hr-dim-gray;
     font-weight: bold;
   }
 
   &__description {
     font-size: 1rem;
-    color: $light-gray;
+    color: $hr-light-gray;
     font-weight: 400;
   }
 }

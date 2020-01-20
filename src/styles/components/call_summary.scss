@@ -1,5 +1,5 @@
 .call-summary {
-  color: $gray;
+  color: $hr-gray;
   background-color: #fafafa;
 
   tr {
@@ -29,7 +29,7 @@
   }
 
   &__url {
-    color: $green;
+    color: $hr-green;
     font-weight: 500;
     line-height: 3;
   }

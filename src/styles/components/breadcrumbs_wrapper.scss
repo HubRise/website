@@ -1,7 +1,7 @@
 .breadcrumbs-wrapper {
   @include flex-grid-row();
-  margin-bottom: calc(-#{$block-padding} + 1rem);
-  margin-top: calc(#{$block-padding} - 1rem);
+  margin-bottom: calc(-#{$hr-block-padding} + 1rem);
+  margin-top: calc(#{$hr-block-padding} - 1rem);
 
   &__list {
     @include flex-grid-row();
@@ -14,7 +14,7 @@
     position: relative;
     margin-right: 0.5rem;
     font-size: 0.8125rem;
-    color: $dim-gray;
+    color: $hr-dim-gray;
     text-transform: capitalize;
 
     &::after {
@@ -23,7 +23,7 @@
     }
 
     &:last-of-type {
-      color: $gray;
+      color: $hr-gray;
 
       &::after {
         content: '';
@@ -32,7 +32,7 @@
   }
 
   &__list-item_link {
-    color: $dim-gray;
+    color: $hr-dim-gray;
 
     &:hover,
     &:focus {
