@@ -350,7 +350,7 @@
   &__description-link {
     border-bottom: 1px solid $gray-standard;
     display: inline-block;
-    color: inherit;
+    color: $main-green;
     margin-left: 0.2rem;
     margin-right: 0.2rem;
     line-height: 1;
@@ -364,18 +364,8 @@
     }
   }
 
-  &__description-link_black {
-    color: #555555;
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: #555555;
-    }
-  }
-
   &__description-span {
-    color: $gray-standard;
+    color: $gray-color;
     margin-left: 0.2rem;
     margin-right: 0.2rem;
   }
@@ -391,7 +381,6 @@
   &__description-link_bold {
     font-weight: bold;
     font-size: 1.25rem;
-    color: #555555;
   }
 
   &__diagram {
@@ -414,8 +403,8 @@
   }
 
   &__link-block {
-    padding-top: 2rem;
-    margin-top: 1rem;
+    padding-top: 3rem;
+    margin-top: 1.5rem;
     position: relative;
 
     &:after {

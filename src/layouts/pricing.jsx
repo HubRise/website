@@ -21,7 +21,6 @@ const PricingPage = ({ data }) => {
             <Link
               className={`
                 section__description-link
-                section__description-link_black
                 section__description-link_bold
               `}
               to={content.faq.to}

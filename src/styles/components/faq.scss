@@ -26,16 +26,15 @@
     display: inline-block;
     color: #555555;
     font-weight: 600;
-    font-size: 1.125rem;
+    font-size: 1rem;
     margin-bottom: 0.15rem;
     text-align: left;
   }
 
   p {
     text-align: left;
-    color: #555555;
+    color: $gray-color;
     font-weight: 400;
-    font-size: 1.125rem;
     margin-bottom: 2rem;
   }
 }

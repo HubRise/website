@@ -23,10 +23,7 @@ export const Specials = ({ items }) => {
           {` `}
           {item.link && item.link.to ? (
             <Link
-              className={`
-              section__description-link
-              section__description-link_black
-            `}
+              className='section__description-link'
               to={item.link.to}
               newTab={false}
             >
@@ -34,10 +31,7 @@ export const Specials = ({ items }) => {
             </Link>
           ) : (
             <button
-              className={`
-              section__description-link
-              section__description-link_black
-            `}
+              className='section__description-link'
               data-open='contact-us'
               aria-controls='contact-us'
               aria-haspopup='true'

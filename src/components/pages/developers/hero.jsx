@@ -16,7 +16,7 @@ export const Hero = ({ title, description }) => {
           {description.paragraph_1}
           <br />
           <button
-            className='section__description-link section__description-link_black'
+            className='section__description-link'
             onClick={forms.contact.toggle}
           >
             {description.paragraph_2.button}
