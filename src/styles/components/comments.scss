@@ -14,12 +14,12 @@
 
   &__new {
     display: inline-block;
-    color: $main-green;
+    color: $green;
     font-weight: 500;
     font-size: 0.8125rem;
     text-decoration: underline;
     &:hover {
-      color: $main-green;
+      color: $green;
     }
     @include breakpoint(medium down) {
       width: 100%;
@@ -38,48 +38,48 @@
   }
 
   &__author {
-    color: $main-green;
+    color: $green;
     font-size: 0.8125rem;
     font-weight: 500;
     padding-right: 0.3rem;
     &:hover {
-      color: $main-green;
+      color: $green;
     }
   }
 
   &__date {
-    color: #999999;
+    color: $light-gray;
     font-weight: 400;
     font-size: 0.8125rem;
   }
 
   &__text {
-    color: #999999;
+    color: $light-gray;
     font-weight: 400;
     font-size: 0.8125rem;
     margin-bottom: 0.5rem;
   }
 
   &__reply {
-    color: $main-green;
+    color: $green;
     font-size: 0.8125rem;
     font-weight: 500;
     padding-right: 0.3rem;
     text-decoration: underline;
     &:hover {
-      color: $main-green;
+      color: $green;
     }
   }
 
   &__sub-title {
-    color: #555555;
+    color: $dim-gray;
     font-size: 1.125rem;
     font-weight: 600;
     margin-top: 2rem;
   }
 
   &__reply-to {
-    color: $main-green;
+    color: $green;
     font-size: 1.125rem;
     text-decoration: underline;
     display: inline-block;
@@ -91,7 +91,7 @@
     height: 4px;
     border-radius: 50%;
     display: inline-block;
-    background: #999999;
+    background: $light-gray;
     vertical-align: middle;
   }
 
@@ -99,7 +99,7 @@
     font-size: 1rem;
     font-weight: 400;
     text-decoration: underline;
-    color: $main-green;
+    color: $green;
     padding: 0 0.3rem;
   }
 }

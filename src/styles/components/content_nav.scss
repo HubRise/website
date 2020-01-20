@@ -29,7 +29,7 @@
   }
 
   &__title_small_bottom_border {
-    border-bottom: 1px solid $main-green;
+    border-bottom: 1px solid $green;
   }
 
   &__list {
@@ -48,7 +48,7 @@
   }
 
   &__arrow {
-    color: $main-green;
+    color: $green;
     font-size: 1.3em;
     float: right;
     cursor: pointer;
@@ -59,7 +59,7 @@
   }
 
   &__item {
-    color: #555555;
+    color: $dim-gray;
     font-weight: 500;
     font-size: 0.9375rem;
     width: 100%;
@@ -71,7 +71,7 @@
 
     .content-nav__link {
       color: $white;
-      background: $main-green;
+      background: $green;
 
       &:hover {
         color: $white;
@@ -89,7 +89,7 @@
     font-size: 0.9375rem;
 
     &:hover {
-      color: $main-green;
+      color: $green;
     }
   }
 }

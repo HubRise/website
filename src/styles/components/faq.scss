@@ -1,6 +1,6 @@
 .faq {
   h4 {
-    color: #333333;
+    color: $dark-gray;
     font-weight: bold;
     font-size: 1.5rem;
     position: relative;
@@ -24,7 +24,7 @@
   h5 {
     width: 100%;
     display: inline-block;
-    color: #555555;
+    color: $dim-gray;
     font-weight: 600;
     font-size: 1rem;
     margin-bottom: 0.15rem;
@@ -33,7 +33,7 @@
 
   p {
     text-align: left;
-    color: $gray-color;
+    color: $light-gray;
     font-weight: 400;
     margin-bottom: 2rem;
   }

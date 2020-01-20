@@ -18,7 +18,7 @@
     &:after {
       width: 5px;
       height: 5px;
-      background: $gray-standard;
+      background: $silver-gray;
       display: inline-block;
       content: '';
       border-radius: 50%;
@@ -34,7 +34,7 @@
 
   &__span {
     font-size: 1.125rem;
-    color: #555555;
+    color: $dim-gray;
     font-weight: 500;
     padding-left: 0.3rem;
     padding-right: 0.4rem;

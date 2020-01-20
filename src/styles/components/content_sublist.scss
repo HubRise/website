@@ -4,18 +4,18 @@
   list-style: none;
 
   li a {
-    color: #555555;
+    color: $dim-gray;
     font-weight: 400;
     font-size: 0.9375rem;
     display: inline-block;
     width: 100%;
 
     &:hover {
-      color: $main-green;
+      color: $green;
     }
   }
 
   li a.active {
-    color: $main-green;
+    color: $green;
   }
 }

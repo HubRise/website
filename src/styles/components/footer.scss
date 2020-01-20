@@ -81,7 +81,7 @@
     line-height: 1.1;
     &:hover,
     &:active {
-      color: $main-green;
+      color: $green;
     }
     @include breakpoint(medium down) {
       width: 100%;
@@ -89,7 +89,7 @@
   }
 
   &__copyright {
-    background: #333333;
+    background: $dark-gray;
     width: 100%;
     display: flex;
     align-items: center;
@@ -104,7 +104,7 @@
     right: 5%;
     width: 46px;
     height: 46px;
-    background: $main-green;
+    background: $green;
     border-radius: 50%;
     text-align: center;
     color: $white;
@@ -113,7 +113,7 @@
   }
 
   &__copyright-span {
-    color: #cccccc;
+    color: $silver-gray;
     font-weight: 300;
     font-size: 0.8125rem;
   }

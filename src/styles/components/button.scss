@@ -5,7 +5,7 @@
 
   &_white {
     background: $white;
-    color: $main-green;
+    color: $green;
     text-transform: uppercase;
     font-weight: 500;
 
@@ -13,7 +13,7 @@
     &:active,
     &:focus {
       background-color: $white;
-      color: $main-green;
+      color: $green;
     }
   }
 

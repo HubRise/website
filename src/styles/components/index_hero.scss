@@ -33,7 +33,7 @@
   }
 
   &__banner-in {
-    background: $main-green;
+    background: $green;
     padding-top: $block-padding;
     padding-bottom: $block-padding;
     height: 100%;
@@ -48,7 +48,7 @@
       top: 0;
       bottom: 0;
       content: '';
-      background: $main-green;
+      background: $green;
       position: absolute;
     }
 
@@ -115,7 +115,7 @@
   }
 
   &__form-title {
-    color: #555555;
+    color: $dim-gray;
     font-weight: bold;
     font-size: 1.125rem;
     margin-bottom: 0;
@@ -125,13 +125,13 @@
     display: inline-block;
     width: 100%;
     font-size: 0.8125rem;
-    color: $gray-nav;
+    color: $gray;
     font-weight: 300;
   }
 
   &__form-link {
-    color: $main-green;
-    border-bottom: 1px solid $main-green;
+    color: $green;
+    border-bottom: 1px solid $green;
     line-height: 1;
     display: inline-block;
   }

@@ -1,6 +1,6 @@
 .header {
   height: 80px;
-  border-bottom: 3px solid $main-green;
+  border-bottom: 3px solid $green;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
   width: 100%;
   background: $white;
@@ -54,11 +54,11 @@
       display: inline-block;
       width: 100%;
       padding: 0;
-      color: $gray-nav;
+      color: $gray;
       font-size: 0.9375rem;
       font-weight: 400;
       &:hover {
-        color: $main-green;
+        color: $green;
       }
     }
 
@@ -70,11 +70,11 @@
 
   &__action-signup {
     padding-right: 1rem;
-    color: $gray-nav;
+    color: $gray;
     font-size: 0.9375rem;
     font-weight: 600;
     &:hover {
-      color: $main-green;
+      color: $green;
     }
   }
 
@@ -82,7 +82,7 @@
     padding: 0.6rem 1.5rem;
     border-radius: 3px;
     color: $white;
-    background: $main-green;
+    background: $green;
     font-size: 0.9375rem;
     font-weight: 600;
     cursor: pointer;

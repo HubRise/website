@@ -7,7 +7,7 @@
   }
 
   &__title {
-    color: #555555;
+    color: $dim-gray;
     font-size: 1rem;
     display: inline-block;
     width: 100%;
@@ -60,12 +60,12 @@
       margin: 0.1rem 0.3rem 0.1rem 0.3rem;
       background-color: #ececec;
       &:hover {
-        background-color: #333333;
+        background-color: $dark-gray;
       }
     }
 
     button.is-active {
-      background-color: #333333;
+      background-color: $dark-gray;
     }
   }
 

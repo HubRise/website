@@ -58,7 +58,7 @@
     min-height: 4rem;
     height: auto;
     background: $white;
-    border-bottom: 2px solid $main-green;
+    border-bottom: 2px solid $green;
     padding: 0 1rem;
     display: flex;
     align-items: center;
@@ -72,7 +72,7 @@
   &__close-button {
     position: relative;
     font-size: 1.2rem;
-    color: $main-green;
+    color: $green;
     width: 100%;
     text-transform: uppercase;
   }
