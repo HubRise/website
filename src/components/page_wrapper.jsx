@@ -12,6 +12,10 @@ import { useLayoutContext } from '../context/layout'
 const PageWrapper = ({ element, props }) => {
   const { forms } = useLayoutContext()
   const { t, i18n } = useTranslation()
+  const { pageContext } = props
+
+  const isSSR = typeof window === 'undefined'
+  if (isSSR) i18n.changeLanguage(pageContext.lang)
 
   return (
     <>

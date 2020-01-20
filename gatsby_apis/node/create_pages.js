@@ -64,7 +64,8 @@ const createPageFromMdxNode = (node, locale, actions) => {
       imagesFilter: {
         absolutePath: { glob: `${pathToImages}/**/*` }
       },
-      config
+      config,
+      lang: locale.code
     }
   })
 }
