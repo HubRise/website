@@ -14,29 +14,22 @@ export const Feedback = () => {
 
   return (
     <section className='feedback'>
-      <section
-        className={`
-          feedback__section
-          ${isExpanded ? 'feedback__section_highlighted' : ''}
-        `}
-      >
+      <section className='feedback__section'>
         <div
-          className='feedback__expand-button-wrapper'
+          className={`
+            feedback__title-wrapper
+            ${isExpanded ? 'feedback__title-wrapper_highlighted' : ''}
+          `}
           onClick={() => setIsExpanded(!isExpanded)}
         >
-          <button
-            className={`
-            feedback__expand-button
-            ${isExpanded ? 'feedback__expand-button_highlighted' : ''}
-          `}
-          >
+          <button className='feedback__title-icon'>
             <FontAwesomeIcon
               icon={faAngleDown}
               flip={isExpanded && `vertical`}
               fixedWidth
             />
           </button>
-          <p className='feedback__paragraph'>
+          <p className='feedback__title'>
             {t(`misc.feedback.title`)}
           </p>
         </div>

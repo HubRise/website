@@ -24,12 +24,13 @@ layout:
 
 misc:
   feedback:
-    title: Feedback on this page
-    description: 'If you spot an error or need an improvement, you can:'
+    title: Feedback sur cette page
+    description: 'Si vous avez repéré une erreur ou souhaitez améliorer cette page, vous pouvez :'
     options:
-      - text: Send us an email
-      - text: Fix it yourself in a pull request
-        to: https://github.com/HubRise/website/pulls
+      - text: Nous envoyer un email
+        to: 'mailto:support@hubrise.com'
+      - text: Ou éditer cette page et nous soumettre un Pull Request
+        to: https://github.com/HubRise/website
 
 forms:
   validation:
