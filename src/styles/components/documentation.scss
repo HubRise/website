@@ -79,7 +79,7 @@
 
   p {
     font-size: 1rem;
-    color: #555;
+    color: $dim-gray;
     font-weight: 400;
   }
 
@@ -149,7 +149,7 @@
       border: none;
       padding: 0;
       font-family: Consolas, 'Liberation Mono', Courier, monospace !important;
-      color: #555;
+      color: $dim-gray;
 
       span:last-child {
         margin-right: 1.25rem;
