@@ -348,7 +348,6 @@
   }
 
   &__description-link {
-    border-bottom: 1px solid $hr-silver-gray;
     display: inline-block;
     color: $hr-green;
     margin-left: 0.2rem;
@@ -358,8 +357,7 @@
     &:hover,
     &:active,
     &:focus {
-      border-bottom: 1px solid $hr-silver-gray;
-      color: inherit;
+      color: $hr-dark-gray;
       cursor: pointer;
     }
   }

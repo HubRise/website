@@ -13,7 +13,6 @@
       grid-area: anchor;
       align-self: center;
       color: transparent;
-      text-decoration: none;
 
       &::after {
         content: '#';
@@ -25,8 +24,11 @@
     }
 
     &:hover a {
-      color: green;
-      text-decoration: underline;
+      color: $hr-green;
+
+      &:hover {
+        color: $hr-dark-gray;
+      }
     }
   }
 
@@ -87,10 +89,9 @@
     font-weight: 400;
     font-size: 1rem;
     color: $hr-green;
-    text-decoration: underline;
 
     &:hover {
-      color: $hr-green;
+      color: $hr-dark-gray;
       cursor: pointer;
     }
   }
@@ -209,9 +210,5 @@
   td,
   td:first-child {
     padding: 0.6rem;
-  }
-
-  td a {
-    text-decoration: none;
   }
 }
