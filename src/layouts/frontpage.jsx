@@ -58,7 +58,6 @@ export const frontPageQuery = graphql`
             title
             description {
               paragraph
-              link
             }
           }
           signup_form {
@@ -137,8 +136,7 @@ FrontPage.propTypes = {
           hero: PropTypes.shape({
             title: PropTypes.string.isRequired,
             description: PropTypes.shape({
-              paragraph: PropTypes.string.isRequired,
-              link: PropTypes.string.isRequired
+              paragraph: PropTypes.string.isRequired
             }).isRequired
           }),
           signup_form: PropTypes.shape({

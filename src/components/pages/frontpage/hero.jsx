@@ -46,8 +46,7 @@ export const Hero = ({ title, description, signupFormContent }) => {
 Hero.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.shape({
-    paragraph: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired
+    paragraph: PropTypes.string.isRequired
   }).isRequired,
   signupFormContent: PropTypes.shape({
     title: PropTypes.string.isRequired,
