@@ -329,10 +329,6 @@
     font-weight: 400;
     text-align: center;
     margin-top: 0;
-
-    & button {
-      font-weight: 500;
-    }
   }
 
   &__description-title {
@@ -369,7 +365,7 @@
   }
 
   &__description_large {
-    color: $hr-dark-gray;
+    color: $hr-gray;
     font-weight: 500;
     font-size: 1.25rem;
   }

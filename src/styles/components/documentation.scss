@@ -81,7 +81,7 @@
 
   p {
     font-size: 1rem;
-    color: $hr-light-gray;
+    color: $hr-gray;
     font-weight: 400;
   }
 
@@ -91,7 +91,7 @@
     color: $hr-green;
 
     &:hover {
-      color: $hr-light-gray;
+      color: $hr-gray;
       cursor: pointer;
     }
   }
@@ -105,7 +105,7 @@
   li {
     font-size: 1rem;
     font-weight: 400;
-    color: $hr-light-gray;
+    color: $hr-gray;
   }
 
   ul li {
@@ -118,7 +118,7 @@
       content: '';
       width: 4px;
       height: 4px;
-      background: $hr-light-gray;
+      background: $hr-gray;
       border-radius: 50%;
       left: 0;
       position: absolute;
@@ -201,7 +201,7 @@
 
   tbody {
     background: none;
-    color: $hr-light-gray;
+    color: $hr-gray;
   }
 
   tr {
