@@ -326,17 +326,13 @@
 
   &__description {
     color: $hr-light-gray;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
     margin-top: 0;
 
     & button {
       font-weight: 500;
     }
-  }
-
-  &__description_black {
-    color: $hr-dim-gray;
   }
 
   &__description-title {
@@ -373,11 +369,8 @@
   }
 
   &__description_large {
-    font-size: 1.25rem;
-  }
-
-  &__description-link_bold {
-    font-weight: bold;
+    color: $hr-dim-gray;
+    font-weight: 500;
     font-size: 1.25rem;
   }
 

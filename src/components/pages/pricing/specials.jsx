@@ -13,10 +13,7 @@ export const Specials = ({ items }) => {
       {items.map((item, idx) => (
         <p
           key={generateKey(item.paragraph_chunk_1, idx)}
-          className={`
-          section__description
-          section__description_large
-        `}
+          className="section__description"
         >
           <b>{item.paragraph_chunk_1}</b>
           {item.paragraph_chunk_2}

@@ -8,7 +8,7 @@ export const Philosophy = ({ title, description }) => {
         <h3 className='section__title'>
           {title}
         </h3>
-        <p className='section__description section__description_black'>
+        <p className='section__description section__description_large'>
           {description.paragraph_1}
         </p>
         <p className='section__description'>
