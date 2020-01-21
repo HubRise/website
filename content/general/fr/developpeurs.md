@@ -1,5 +1,8 @@
 ---
 layout: developers
+meta:
+    title:
+    description:
 content:
   hero:
     title: Connectez votre application à HubRise

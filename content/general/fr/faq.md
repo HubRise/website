@@ -1,6 +1,9 @@
 ---
 title: F.A.Q
 layout: faq
+meta:
+    title:
+    description:
 ---
 
 import ContactFormToggle from '../../../src/components/markdown/contact_form_toggle.jsx'

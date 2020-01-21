@@ -1,5 +1,8 @@
 ---
 layout: apps
+meta:
+    title:
+    description:
 content:
   hero:
     title: Applications intégrées

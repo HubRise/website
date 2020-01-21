@@ -2,6 +2,9 @@
 title: Customer management
 position: 5
 layout: documentation
+meta:
+    title:
+    description:
 ---
 
 ## 1. Customer lists

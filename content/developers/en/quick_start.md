@@ -2,6 +2,9 @@
 title: Quick Start
 position: 1
 layout: documentation
+meta:
+    title:
+    description:
 ---
 
 ## 1. Setting up an OAuth client

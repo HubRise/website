@@ -1,5 +1,8 @@
 ---
 layout: frontpage
+meta:
+    title:
+    description:
 path_override: /
 content:
   hero:

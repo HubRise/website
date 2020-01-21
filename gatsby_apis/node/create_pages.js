@@ -30,6 +30,10 @@ const getMdxContent = async (pathToPages, graphql) => {
             layout
             gallery
             path_override
+            meta {
+              description
+              title
+            }
           }
         }
       }
@@ -45,7 +49,7 @@ const getMdxContent = async (pathToPages, graphql) => {
 
 const createPageFromMdxNode = (node, locale, actions) => {
   const { id, fileAbsolutePath, frontmatter, fields } = node
-  const { layout } = frontmatter
+  const { layout, meta } = frontmatter
   const currentDirectory = path.dirname(fileAbsolutePath)
   const parentDirectory = path.dirname(currentDirectory)
   const pathToImages = `${parentDirectory}/images`
@@ -64,6 +68,7 @@ const createPageFromMdxNode = (node, locale, actions) => {
       imagesFilter: {
         absolutePath: { glob: `${pathToImages}/**/*` }
       },
+      meta,
       config,
       lang: locale.code
     }

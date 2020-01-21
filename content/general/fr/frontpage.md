@@ -1,6 +1,9 @@
 ---
 layout: frontpage
 path_override: /
+meta:
+    title:
+    description:
 content:
   hero:
     title: HubRise centralise les données de votre commerce
