@@ -10,9 +10,10 @@
   }
 
   &__desktop {
+    @include flex();
     @include flex-grid-row();
-    @include flex() // @include flex-grid-column(9);
-      height: 100%;
+    // @include flex-grid-column(9);
+    height: 100%;
     align-items: center;
     max-width: 75rem;
     padding: 0 1rem;
