@@ -5,7 +5,7 @@ content:
   hero:
     title: HubRise centralise les données de votre commerce
     description:
-      paragraph: Reliez votre caisse votre site Internet et tous vos logiciels.
+      paragraph: Reliez votre caisse, votre site Internet et tous vos logiciels.
   signup_form:
     title: Démarrez maintenant
     description:
