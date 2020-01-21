@@ -1,5 +1,8 @@
 ---
 layout: pricing
+meta:
+  title: Pricing - HubRise
+  description:
 content:
   hero:
     title: Single monthly fee, unlimited usage

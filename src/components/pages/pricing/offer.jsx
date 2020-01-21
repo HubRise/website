@@ -28,19 +28,12 @@ export const Offer = ({ pricing, features, link }) => {
           `}
         >
           {pricing.chunk_1}
-          <span className='section__title-span'>
-            {pricing.chunk_2}
-          </span>
+          <span className="section__title-span">{pricing.chunk_2}</span>
         </h3>
-        <ul className='section__price-list'>
+        <ul className="section__price-list">
           {features.map((feature, idx) => (
-            <li
-              key={generateKey(feature, idx)}
-              className='section__price-item'
-            >
-              <span className='section__price-span'>
-                {feature}
-              </span>
+            <li key={generateKey(feature, idx)} className="section__price-item">
+              <span className="section__price-span">{feature}</span>
             </li>
           ))}
         </ul>

@@ -2,6 +2,9 @@
 title: Developer guide
 position: 4
 layout: documentation
+meta:
+  title:
+  description:
 ---
 
 Order JSON sent to iKentoo API:

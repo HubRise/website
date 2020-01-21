@@ -12,20 +12,23 @@ const Header = ({ path }) => {
   const { t } = useTranslation()
 
   return (
-    <header className='header'>
-      <div className='header__in'>
-        <div className='header__desktop'>
-          <div className='header__logo'>
-            <Link to='/'>
-              <img src={logo} alt='company-logo' />
+    <header className="header">
+      <div className="header__in">
+        <div className="header__desktop">
+          <div className="header__logo">
+            <Link to="/">
+              <img src={logo} alt="company-logo" />
             </Link>
           </div>
-          <nav className='topbar-menu'>
-            <ul className='topbar-menu__list'>
+          <nav className="topbar-menu">
+            <ul className="topbar-menu__list">
               {t(`layout.menu.links`)
                 .filter(({ to }) => to !== `/`)
                 .map(({ title, to }, idx) => (
-                  <li key={generateKey(title, idx)} className='topbar-menu__item'>
+                  <li
+                    key={generateKey(title, idx)}
+                    className="topbar-menu__item"
+                  >
                     <Link
                       className={`topbar-menu__link ${
                         path.startsWith(to) ? 'topbar-menu__link_active' : ''
@@ -38,19 +41,16 @@ const Header = ({ path }) => {
                 ))}
             </ul>
           </nav>
-          <div className='header__action'>
+          <div className="header__action">
             <Link
-              className='header__action-signup'
-              to='https://manager.hubrise.com/signup'
+              className="header__action-signup"
+              to="https://manager.hubrise.com/signup"
               newTab={false}
             >
               {t(`layout.header.buttons.signup`)}
             </Link>
-            <button className='header__action-login'>
-              <Link
-                to='https://manager.hubrise.com/login'
-                newTab={false}
-              >
+            <button className="header__action-login">
+              <Link to="https://manager.hubrise.com/login" newTab={false}>
                 {t(`layout.header.buttons.login`)}
               </Link>
             </button>

@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   en: {
     code: `en`,
     tag: `en-GB`,
@@ -6,9 +6,6 @@ export default {
   },
   fr: {
     code: `fr`,
-    tag: `fr-FR`,
-    pathMappings: {
-      '/developers': `/developpeurs`
-    }
+    tag: `fr-FR`
   }
 }

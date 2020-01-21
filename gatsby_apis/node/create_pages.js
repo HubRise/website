@@ -4,7 +4,7 @@ const yaml = require('js-yaml')
 const { flattenDeep } = require('lodash')
 const { partialRight } = require('lodash/fp')
 
-const locales = require(path.join(process.cwd(), `src/i18n/locales.json`))
+const locales = require(path.join(process.cwd(), `src/i18n/locales.js`))
 const allLocaleCodes = Object.keys(locales)
 const { getDefaultLocale } = require(path.join(__dirname, `utils`))
 
@@ -30,6 +30,10 @@ const getMdxContent = async (pathToPages, graphql) => {
             layout
             gallery
             path_override
+            meta {
+              description
+              title
+            }
           }
         }
       }
@@ -45,7 +49,7 @@ const getMdxContent = async (pathToPages, graphql) => {
 
 const createPageFromMdxNode = (node, locale, actions) => {
   const { id, fileAbsolutePath, frontmatter, fields } = node
-  const { layout } = frontmatter
+  const { layout, meta } = frontmatter
   const currentDirectory = path.dirname(fileAbsolutePath)
   const parentDirectory = path.dirname(currentDirectory)
   const pathToImages = `${parentDirectory}/images`
@@ -64,6 +68,7 @@ const createPageFromMdxNode = (node, locale, actions) => {
       imagesFilter: {
         absolutePath: { glob: `${pathToImages}/**/*` }
       },
+      meta,
       config,
       lang: locale.code
     }

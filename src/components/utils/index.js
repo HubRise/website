@@ -9,7 +9,10 @@ import React from 'react'
  * @returns {string}
  */
 export const kebabify = (string, keepCase = false) => {
-  const result = string.split(/[^\w]+/g).filter(Boolean).join(`-`)
+  const result = string
+    .split(/[^\w]+/g)
+    .filter(Boolean)
+    .join(`-`)
 
   return keepCase ? result : result.toLowerCase()
 }
@@ -21,7 +24,10 @@ export const kebabify = (string, keepCase = false) => {
  * @returns {string}
  */
 export const splitCamelCase = (string, keepCase = false) => {
-  const result = string.split(/([A-Z]?[a-z]+)/).filter(Boolean).join(` `)
+  const result = string
+    .split(/([A-Z]?[a-z]+)/)
+    .filter(Boolean)
+    .join(` `)
 
   return keepCase ? result : result.toLowerCase()
 }
@@ -35,7 +41,7 @@ export const splitCamelCase = (string, keepCase = false) => {
  * @example
  *   1.2. Retrieve order => retrieve-order
  */
-export function createHeaderAnchor (header) {
+export function createHeaderAnchor(header) {
   // Detects leading chapter numbers.
   const regex = /^[\d.]+\s/
 
@@ -50,12 +56,14 @@ export function createHeaderAnchor (header) {
  *
  * @returns {object} Object containing specified headers as React elements.
  */
-export function generateHeaders (headers) {
+export function generateHeaders(headers) {
   return headers.reduce((obj, header) => {
     obj[header] = ({ children: headerText }) => {
       const headerAnchor = createHeaderAnchor(headerText)
 
-      return React.createElement(header, { id: headerAnchor }, (
+      return React.createElement(
+        header,
+        { id: headerAnchor },
         <>
           <a
             href={`#${headerAnchor}`}
@@ -63,7 +71,7 @@ export function generateHeaders (headers) {
           />
           {headerText}
         </>
-      ))
+      )
     }
 
     return obj

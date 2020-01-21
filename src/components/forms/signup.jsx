@@ -77,17 +77,11 @@ const createSignupSchema = (t) => {
   return yup.object().shape({
     first_name: yup
       .string()
-      .min(
-        nameMinLength,
-        t(`forms.validation.min`, { length: nameMinLength })
-      )
+      .min(nameMinLength, t(`forms.validation.min`, { length: nameMinLength }))
       .required(t(`forms.validation.first_name_required`)),
     last_name: yup
       .string()
-      .min(
-        nameMinLength,
-        t(`forms.validation.min`, { length: nameMinLength })
-      )
+      .min(nameMinLength, t(`forms.validation.min`, { length: nameMinLength }))
       .required(t(`forms.validation.last_name_required`)),
     email: yup
       .string()

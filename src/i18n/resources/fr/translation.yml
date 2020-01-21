@@ -70,6 +70,6 @@ forms:
       title: Proposer une Application
       description: Dnteger viverra non lorem vitae efficitur. Nam quis nunc erat. Mauris aliquet ullamcorper maximus. Quisque faucibus felis metus, eget iaculis lectus aliquet non.
     subtitles:
-      contact: "A propos de Vous : "
+      contact: 'A propos de Vous : '
       app: "A propos de l'Application : "
     button: Envoyer

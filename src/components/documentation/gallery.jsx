@@ -1,6 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimes, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import {
+  faTimes,
+  faArrowLeft,
+  faArrowRight
+} from '@fortawesome/free-solid-svg-icons'
 import Img from 'gatsby-image'
 import Slider from 'react-slick'
 
@@ -11,18 +15,18 @@ import { generateKey } from '../../components/utils'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-const NextArrow = ({
-  onClick,
-  currentImageNumber,
-  totalNumberOfImages
-}) => {
+const NextArrow = ({ onClick, currentImageNumber, totalNumberOfImages }) => {
   return (
     <button
       style={{
-        visibility: currentImageNumber < totalNumberOfImages ? `unset` : `hidden`
+        visibility:
+          currentImageNumber < totalNumberOfImages ? `unset` : `hidden`
       }}
-      className='image-slider__arrow_next'
-      onClick={(e) => { e.stopPropagation(); onClick() }}
+      className="image-slider__arrow_next"
+      onClick={(e) => {
+        e.stopPropagation()
+        onClick()
+      }}
     >
       <FontAwesomeIcon icon={faArrowRight} />
     </button>
@@ -35,8 +39,11 @@ const PrevArrow = ({ onClick, currentImageNumber }) => {
       style={{
         visibility: currentImageNumber !== 1 ? `unset` : `hidden`
       }}
-      className='image-slider__arrow_previous'
-      onClick={(e) => { e.stopPropagation(); onClick() }}
+      className="image-slider__arrow_previous"
+      onClick={(e) => {
+        e.stopPropagation()
+        onClick()
+      }}
     >
       <FontAwesomeIcon icon={faArrowLeft} />
     </button>
@@ -45,8 +52,8 @@ const PrevArrow = ({ onClick, currentImageNumber }) => {
 
 export const Gallery = ({ images, title }) => {
   const slider = useRef(null)
-  const [ isSliderVisible, setIsSliderVisible ] = useState(false)
-  const [ currentImageNumber, setCurrentImageNumber ] = useState(1)
+  const [isSliderVisible, setIsSliderVisible] = useState(false)
+  const [currentImageNumber, setCurrentImageNumber] = useState(1)
 
   const totalNumberOfImages = images.length
 
@@ -101,45 +108,39 @@ export const Gallery = ({ images, title }) => {
   }, [isSliderVisible])
 
   return (
-    <div className='section__content'>
+    <div className="section__content">
       <div
-        className='image-slider-wrapper'
+        className="image-slider-wrapper"
         style={{
           display: isSliderVisible ? `grid` : `none`
         }}
         onClick={() => setIsSliderVisible(false)}
       >
         <section
-          className='image-slider__topbar'
+          className="image-slider__topbar"
           onClick={(e) => e.stopPropagation()}
         >
-          <p className='image-slider__title'>
-            <span className='image-slider__title-app-name'>
-              {title}
-            </span>
+          <p className="image-slider__title">
+            <span className="image-slider__title-app-name">{title}</span>
           </p>
-          <p className='image-slider__count'>
+          <p className="image-slider__count">
             {currentImageNumber} / {totalNumberOfImages}
           </p>
           <button
-            className='image-slider__button_close'
+            className="image-slider__button_close"
             onClick={() => setIsSliderVisible(false)}
           >
             <FontAwesomeIcon icon={faTimes} />
           </button>
         </section>
-        <Slider
-          ref={slider}
-          className='image-slider'
-          {...sliderSettings}
-        >
+        <Slider ref={slider} className="image-slider" {...sliderSettings}>
           {images.map(({ name, childImageSharp }, idx) => (
             <div
               key={generateKey(name, idx)}
               onClick={(e) => e.stopPropagation()}
             >
               <Img
-                className='image-slider__slide'
+                className="image-slider__slide"
                 alt={name}
                 {...childImageSharp}
               />
@@ -147,20 +148,17 @@ export const Gallery = ({ images, title }) => {
           ))}
         </Slider>
       </div>
-      <section className='image-grid'>
+      <section className="image-grid">
         {images.map(({ name, childImageSharp }, idx) => (
           <div
-            className='image-grid__item-wrapper'
+            className="image-grid__item-wrapper"
             key={generateKey(name, idx)}
             onClick={() => {
               slider.current.slickGoTo(idx)
               setIsSliderVisible(!isSliderVisible)
             }}
           >
-            <NonStretchedImage
-              alt={name}
-              {...childImageSharp}
-            />
+            <NonStretchedImage alt={name} {...childImageSharp} />
           </div>
         ))}
       </section>

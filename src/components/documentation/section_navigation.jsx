@@ -27,11 +27,8 @@ export const SectionNavigation = ({ currentPath, pages, title, logo }) => {
       `}
     >
       {logo && (
-        <div className='section__sidebar_logo'>
-          <NonStretchedImage
-            alt={logo.name}
-            {...logo.childImageSharp}
-          />
+        <div className="section__sidebar_logo">
+          <NonStretchedImage alt={logo.name} {...logo.childImageSharp} />
         </div>
       )}
       <div
@@ -40,11 +37,9 @@ export const SectionNavigation = ({ currentPath, pages, title, logo }) => {
           ${logo ? '' : 'section__sidebar_sticky'}
         `}
       >
-        <h5 className='content-nav__title'>
-          {title || `Content`}
-        </h5>
+        <h5 className="content-nav__title">{title || `Content`}</h5>
         <h5
-          id='content-nav'
+          id="content-nav"
           className={`
             content-nav__title
             content-nav__title_small
@@ -62,53 +57,52 @@ export const SectionNavigation = ({ currentPath, pages, title, logo }) => {
           />
         </h5>
         <ul
-          id='content-nav-list'
+          id="content-nav-list"
           className={`
             content-nav__list
             ${isExpanded ? '' : 'content-nav__list_hidden'}
           `}
         >
-          {sortPagesAsc(pages)
-            .map(({ frontmatter, fields, headings }, idx) => {
-              const { slug } = fields
-              const isCurrentPage = currentPath.endsWith(slug)
+          {sortPagesAsc(pages).map(({ frontmatter, fields, headings }, idx) => {
+            const { slug } = fields
+            const isCurrentPage = currentPath.endsWith(slug)
 
-              return (
-                <li
-                  key={generateKey(frontmatter.title, idx)}
-                  className={`content-nav__item ${
-                    isCurrentPage ? 'content-nav__item_active' : ''
-                  }`}
-                >
-                  <Link to={slug} className='content-nav__link'>
-                    {frontmatter.title}
-                  </Link>
-                  {isCurrentPage && (headings.length !== 0) && (
-                    <ol className='content-sublist'>
-                      {headings
-                        .filter(({ depth }) => depth === 2)
-                        .map(({ value: headingText }, idx) => {
-                          return (
-                            <li
-                              key={generateKey(headingText, idx)}
-                              className='content-sublist-item content-sublist-level-2'
+            return (
+              <li
+                key={generateKey(frontmatter.title, idx)}
+                className={`content-nav__item ${
+                  isCurrentPage ? 'content-nav__item_active' : ''
+                }`}
+              >
+                <Link to={slug} className="content-nav__link">
+                  {frontmatter.title}
+                </Link>
+                {isCurrentPage && headings.length !== 0 && (
+                  <ol className="content-sublist">
+                    {headings
+                      .filter(({ depth }) => depth === 2)
+                      .map(({ value: headingText }, idx) => {
+                        return (
+                          <li
+                            key={generateKey(headingText, idx)}
+                            className="content-sublist-item content-sublist-level-2"
+                          >
+                            <Link
+                              className="content-sublist-link"
+                              to={`#${createHeaderAnchor(headingText)}`}
                             >
-                              <Link
-                                className='content-sublist-link'
-                                to={`#${createHeaderAnchor(headingText)}`}
-                              >
-                                <span className='content-sublist-text'>
-                                  {headingText}
-                                </span>
-                              </Link>
-                            </li>
-                          )
-                        })}
-                    </ol>
-                  )}
-                </li>
-              )
-            })}
+                              <span className="content-sublist-text">
+                                {headingText}
+                              </span>
+                            </Link>
+                          </li>
+                        )
+                      })}
+                  </ol>
+                )}
+              </li>
+            )
+          })}
         </ul>
       </div>
     </div>

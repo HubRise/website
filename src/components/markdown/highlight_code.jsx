@@ -10,10 +10,7 @@ const HighlightCode = ({ code, language, inline }) => {
     return (
       <Highlight code={code} language={language} Prism={Prism}>
         {({ className, style }) => (
-          <code
-            className={`${className} prism-code_inline`}
-            style={style}
-          >
+          <code className={`${className} prism-code_inline`} style={style}>
             {code}
           </code>
         )}
@@ -25,7 +22,7 @@ const HighlightCode = ({ code, language, inline }) => {
     <Highlight code={code} language={language} Prism={Prism}>
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <pre className={`${className} line-numbers`} style={style}>
-          <div className='prism-code_wrapper'>
+          <div className="prism-code_wrapper">
             {tokens.map((line, i) => {
               return (
                 !line[0].empty && (
@@ -41,7 +38,7 @@ const HighlightCode = ({ code, language, inline }) => {
                 )
               )
             })}
-            <span aria-hidden className='line-numbers-rows'>
+            <span aria-hidden className="line-numbers-rows">
               {tokens.map((line, idx) => {
                 return !line[0].empty ? (
                   <span key={generateKey(line[0].content, idx)} />

@@ -18,7 +18,7 @@ const CompleteField = ({ fieldProps, formikProps }) => {
       />
       <ErrorMessage
         name={name}
-        render={(msg) => <p className='error__message'>{msg}</p>}
+        render={(msg) => <p className="error__message">{msg}</p>}
       />
     </div>
   )

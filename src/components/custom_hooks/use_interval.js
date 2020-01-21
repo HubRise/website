@@ -6,7 +6,7 @@ import { useEffect, useRef } from 'react'
  * @param {number} delay in milliseconds
  * @return {void}
  */
-export function useInterval (fn, delay) {
+export function useInterval(fn, delay) {
   const savedCallback = useRef()
 
   useEffect(() => {
@@ -14,7 +14,7 @@ export function useInterval (fn, delay) {
   })
 
   useEffect(() => {
-    function tick () {
+    function tick() {
       savedCallback.current()
     }
     if (delay !== null) {

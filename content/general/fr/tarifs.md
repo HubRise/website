@@ -1,5 +1,8 @@
 ---
 layout: pricing
+meta:
+  title: Tarifs - HubRise 
+  description:
 content:
   hero:
     title: Un abonnement mensuel pour une utilisation illimitée

@@ -17,9 +17,15 @@ const PageWrapper = ({ element, props }) => {
   const isSSR = typeof window === 'undefined'
   if (isSSR) i18n.changeLanguage(pageContext.lang)
 
+  const { meta } = pageContext
+
   return (
     <>
-      <Seo lang={i18n.language} />
+      <Seo
+        lang={i18n.language}
+        title={meta ? meta.title : ''}
+        description={meta ? meta.description : ''}
+      />
       <Layout {...props}>
         {element}
       </Layout>

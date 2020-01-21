@@ -5,18 +5,11 @@ import Link from '../../link'
 
 export const Thumb = ({ to, icon, title, description }) => {
   return (
-    <li className='developers-thumbs__item'>
-      <Link
-        className='developers-thumbs__link'
-        to={to}
-      >
+    <li className="developers-thumbs__item">
+      <Link className="developers-thumbs__link" to={to}>
         <i className={`developers-thumbs__icon fa ${icon}`} />
-        <span className='developers-thumbs__title'>
-          {title}
-        </span>
-        <p className='developers-thumbs__description'>
-          {description}
-        </p>
+        <span className="developers-thumbs__title">{title}</span>
+        <p className="developers-thumbs__description">{description}</p>
       </Link>
     </li>
   )
