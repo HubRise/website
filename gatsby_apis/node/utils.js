@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const { flatten } = require('lodash')
-const locales = require('../../src/i18n/locales.json')
+const locales = require('../../src/i18n/locales')
 
 /**
  * Checks whether a given path is a directory.

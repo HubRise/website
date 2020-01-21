@@ -4,7 +4,7 @@ const yaml = require('js-yaml')
 const { flattenDeep } = require('lodash')
 const { partialRight } = require('lodash/fp')
 
-const locales = require(path.join(process.cwd(), `src/i18n/locales.json`))
+const locales = require(path.join(process.cwd(), `src/i18n/locales.js`))
 const allLocaleCodes = Object.keys(locales)
 const { getDefaultLocale } = require(path.join(__dirname, `utils`))
 

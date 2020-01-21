@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
+import { useTranslation } from 'react-i18next'
 
 import {
   SectionNavigation,
@@ -12,17 +13,45 @@ import {
 } from '../components/documentation'
 
 const DocumentationPage = ({ data, path, pageContext }) => {
+  const { i18n } = useTranslation()
   const { name: chapterTitle, logo: logoBase } = pageContext.config
   const { currentAndSiblingPages, images } = data
-  const [ currentPage ] = currentAndSiblingPages.nodes
-    .filter(({ id }) => id === data.currentPage.id)
+  const [currentPage] = currentAndSiblingPages.nodes.filter(
+    ({ id }) => id === data.currentPage.id
+  )
   const { frontmatter, body } = currentPage
   const { title, gallery, app_info } = frontmatter
 
+  const breadcrumbs = getBreadcrumbs(
+    data.currentAndSiblingPages.nodes,
+    data.currentPage.id
+  )
+
+  function getBreadcrumbs() {
+    const pageNodes = currentAndSiblingPages.nodes
+    const currentPageId = data.currentPage.id
+
+    const firstPage = pageNodes.find((node) => node.frontmatter.position === 1)
+    const currentPage = pageNodes.find((node) => node.id === currentPageId)
+
+    const rootLink =
+      i18n.language === 'fr'
+        ? { title: 'Développeurs', to: '/developpeurs' }
+        : { to: '/developers', title: 'Developers' }
+
+    return [
+      { id: 1, path: rootLink.to, label: rootLink.title },
+      pageContext.config.base_path === '/api'
+        ? { id: 2, path: firstPage.fields.slug, label: chapterTitle }
+        : null,
+      { id: 3, path: null, label: currentPage.frontmatter.title }
+    ].filter(Boolean)
+  }
+
   return (
     <>
-      <Breadcrumbs path={path} />
-      <section className='section'>
+      <Breadcrumbs breadcrumbs={breadcrumbs} />
+      <section className="section">
         <div
           className={`
           section__in
@@ -31,14 +60,10 @@ const DocumentationPage = ({ data, path, pageContext }) => {
           section__in_developers
         `}
         >
-          <div className='section__content'>
-            <div className='documentation'>
-              <h1>
-                {title}
-              </h1>
-              <MDXRenderer>
-                {body}
-              </MDXRenderer>
+          <div className="section__content">
+            <div className="documentation">
+              <h1>{title}</h1>
+              <MDXRenderer>{body}</MDXRenderer>
             </div>
           </div>
           <SectionNavigation
@@ -66,11 +91,13 @@ const DocumentationPage = ({ data, path, pageContext }) => {
 
 export const documentationPageQuery = graphql`
   query getDocumentationPageContent(
-    $id: String!,
-    $currentAndSiblingPagesFilter: MdxFilterInput!,
-    $imagesFilter: FileFilterInput,
+    $id: String!
+    $currentAndSiblingPagesFilter: MdxFilterInput!
+    $imagesFilter: FileFilterInput
   ) {
-    currentPage: mdx(id: { eq: $id }) { id }
+    currentPage: mdx(id: { eq: $id }) {
+      id
+    }
     currentAndSiblingPages: allMdx(filter: $currentAndSiblingPagesFilter) {
       nodes {
         id
@@ -98,7 +125,9 @@ export const documentationPageQuery = graphql`
       }
     }
     images: allFile(filter: $imagesFilter) {
-      nodes { ...Image }
+      nodes {
+        ...Image
+      }
     }
   }
 `

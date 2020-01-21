@@ -14,22 +14,16 @@ const Link = ({ to: initialTo, children, newTab, ...other }) => {
   const leadsToInternalPage = initialTo.startsWith(`/`)
   const leadsToDashboard = initialTo.includes(`manager.hubrise.com`)
   const isAnchorWithinCurrentPage = initialTo.startsWith(`#`)
-  const { i18n: { language } } = useTranslation()
+  const {
+    i18n: { language }
+  } = useTranslation()
   const isDefaultLanguage = locales[language].default
   const queryString = `?locale=${locales[language].tag}`
   const to = initialTo + (leadsToDashboard ? queryString : ``)
-  const mappedTo = (
-    locales[language][`pathMappings`] && locales[language][`pathMappings`][to]
-  )
 
   if (leadsToInternalPage) {
     return (
-      <GatsbyLink
-        to={isDefaultLanguage
-          ? to
-          : `/${language}${mappedTo || to}`}
-        {...other}
-      >
+      <GatsbyLink to={isDefaultLanguage ? to : `/${language}${to}`} {...other}>
         {children}
       </GatsbyLink>
     )
@@ -38,7 +32,7 @@ const Link = ({ to: initialTo, children, newTab, ...other }) => {
   return (
     <a
       href={to}
-      {...((newTab && !isAnchorWithinCurrentPage) && newTabProps)}
+      {...(newTab && !isAnchorWithinCurrentPage && newTabProps)}
       {...other}
     >
       {children}
