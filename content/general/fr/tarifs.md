@@ -1,7 +1,7 @@
 ---
 layout: pricing
 meta:
-    title:
+    title: Tarifs - HubRise 
     description:
 content:
   hero:

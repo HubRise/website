@@ -2,7 +2,7 @@
 title: F.A.Q
 layout: faq
 meta:
-    title:
+    title: F.A.Q. - HubRise
     description:
 ---
 

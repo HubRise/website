@@ -2,7 +2,7 @@
 layout: frontpage
 path_override: /
 meta:
-    title:
+    title: HubRise
     description:
 content:
   hero:

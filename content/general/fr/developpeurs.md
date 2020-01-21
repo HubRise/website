@@ -1,7 +1,7 @@
 ---
 layout: developers
 meta:
-    title:
+    title: Documentation développeurs - HubRise
     description:
 content:
   hero:

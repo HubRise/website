@@ -1,8 +1,8 @@
 ---
 layout: developers
 meta:
-    title: HubRise centralizes your data
-    description: HubRise stores your data in Cloud
+  title: Developers documentation - HubRise
+  description:
 content:
   hero:
     title: Connect your application to HubRise

@@ -1,7 +1,7 @@
 ---
 layout: frontpage
 meta:
-    title:
+    title: HubRise
     description:
 path_override: /
 content:
