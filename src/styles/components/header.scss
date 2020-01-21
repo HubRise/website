@@ -55,7 +55,7 @@
       display: inline-block;
       width: 100%;
       padding: 0;
-      color: $hr-gray;
+      color: $hr-light-gray;
       font-size: 0.9375rem;
       font-weight: 400;
       &:hover {
@@ -71,7 +71,7 @@
 
   &__action-signup {
     padding-right: 1rem;
-    color: $hr-gray;
+    color: $hr-light-gray;
     font-size: 0.9375rem;
     font-weight: 600;
     &:hover {

@@ -43,7 +43,7 @@
   }
 
   &__title {
-    color: $hr-dim-gray;
+    color: $hr-dark-gray;
     font-weight: bold;
     font-size: 1rem;
     margin: 0 0 1rem 0;
@@ -66,12 +66,12 @@
 
   &__more {
     font-size: 0.9375rem;
-    color: $hr-dim-gray;
+    color: $hr-dark-gray;
     font-weight: 600;
   }
 
   &__more-link {
-    color: $hr-dim-gray;
+    color: $hr-dark-gray;
     font-size: 0.9375rem;
     font-weight: 500;
     border-bottom: 1px solid $hr-silver-gray;

@@ -14,7 +14,7 @@
     position: relative;
     margin-right: 0.5rem;
     font-size: 0.8125rem;
-    color: $hr-dim-gray;
+    color: $hr-dark-gray;
     text-transform: capitalize;
 
     &::after {
@@ -23,7 +23,7 @@
     }
 
     &:last-of-type {
-      color: $hr-gray;
+      color: $hr-light-gray;
 
       &::after {
         content: '';
@@ -32,7 +32,7 @@
   }
 
   &__list-item_link {
-    color: $hr-dim-gray;
+    color: $hr-dark-gray;
 
     &:hover,
     &:focus {

@@ -55,7 +55,7 @@
   }
 
   h2 {
-    color: $hr-dim-gray;
+    color: $hr-dark-gray;
     font-size: 1.563rem;
     text-align: left;
     font-weight: 600;
@@ -63,7 +63,7 @@
   }
 
   h3 {
-    color: $hr-gray;
+    color: $hr-dark-gray;
     font-weight: 500;
     font-size: 1rem;
     text-transform: uppercase;
@@ -72,7 +72,7 @@
   }
 
   h4 {
-    color: $hr-gray;
+    color: $hr-dark-gray;
     font-weight: 500;
     font-size: 1rem;
     margin: 0.5rem 0;
@@ -81,7 +81,7 @@
 
   p {
     font-size: 1rem;
-    color: $hr-dim-gray;
+    color: $hr-light-gray;
     font-weight: 400;
   }
 
@@ -91,7 +91,7 @@
     color: $hr-green;
 
     &:hover {
-      color: $hr-dark-gray;
+      color: $hr-light-gray;
       cursor: pointer;
     }
   }
@@ -105,7 +105,7 @@
   li {
     font-size: 1rem;
     font-weight: 400;
-    color: $hr-dim-gray;
+    color: $hr-light-gray;
   }
 
   ul li {
@@ -118,7 +118,7 @@
       content: '';
       width: 4px;
       height: 4px;
-      background: $hr-gray;
+      background: $hr-light-gray;
       border-radius: 50%;
       left: 0;
       position: absolute;
@@ -150,7 +150,7 @@
       border: none;
       padding: 0;
       font-family: Consolas, 'Liberation Mono', Courier, monospace !important;
-      color: $hr-dim-gray;
+      color: $hr-dark-gray;
 
       span:last-child {
         margin-right: 1.25rem;
@@ -165,9 +165,9 @@
   .prism-code.prism-code_inline {
     padding: 0 2px;
     margin: 0 2px;
-    border: 1px solid #cacaca;
-    background-color: #e6e6e6;
-    color: #0a0a0a;
+    border: 1px solid #dddddd;
+    background-color: #eeeeee;
+    color: #333333;
   }
   // }}}
 
@@ -201,6 +201,7 @@
 
   tbody {
     background: none;
+    color: $hr-light-gray;
   }
 
   tr {
