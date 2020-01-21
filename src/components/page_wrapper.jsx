@@ -26,9 +26,7 @@ const PageWrapper = ({ element, props }) => {
         title={meta ? meta.title : ''}
         description={meta ? meta.description : ''}
       />
-      <Layout {...props}>
-        {element}
-      </Layout>
+      <Layout {...props}>{element}</Layout>
       {forms.contact.isVisible && (
         <Modal
           title={t(`forms.contact.modal_title`)}
