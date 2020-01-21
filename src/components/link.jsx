@@ -20,15 +20,10 @@ const Link = ({ to: initialTo, children, newTab, ...other }) => {
   const isDefaultLanguage = locales[language].default
   const queryString = `?locale=${locales[language].tag}`
   const to = initialTo + (leadsToDashboard ? queryString : ``)
-  const mappedTo =
-    locales[language][`pathMappings`] && locales[language][`pathMappings`][to]
 
   if (leadsToInternalPage) {
     return (
-      <GatsbyLink
-        to={isDefaultLanguage ? to : `/${language}${mappedTo || to}`}
-        {...other}
-      >
+      <GatsbyLink to={isDefaultLanguage ? to : `/${language}${to}`} {...other}>
         {children}
       </GatsbyLink>
     )

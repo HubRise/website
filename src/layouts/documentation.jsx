@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
+import { useTranslation } from 'react-i18next'
 
 import {
   SectionNavigation,
@@ -12,6 +13,7 @@ import {
 } from '../components/documentation'
 
 const DocumentationPage = ({ data, path, pageContext }) => {
+  const { i18n } = useTranslation()
   const { name: chapterTitle, logo: logoBase } = pageContext.config
   const { currentAndSiblingPages, images } = data
   const [currentPage] = currentAndSiblingPages.nodes.filter(
@@ -20,9 +22,35 @@ const DocumentationPage = ({ data, path, pageContext }) => {
   const { frontmatter, body } = currentPage
   const { title, gallery, app_info } = frontmatter
 
+  const breadcrumbs = getBreadcrumbs(
+    data.currentAndSiblingPages.nodes,
+    data.currentPage.id
+  )
+
+  function getBreadcrumbs() {
+    const pageNodes = currentAndSiblingPages.nodes
+    const currentPageId = data.currentPage.id
+
+    const firstPage = pageNodes.find((node) => node.frontmatter.position === 1)
+    const currentPage = pageNodes.find((node) => node.id === currentPageId)
+
+    const rootLink =
+      i18n.language === 'fr'
+        ? { title: 'Développeurs', to: '/developpeurs' }
+        : { to: '/developers', title: 'Developers' }
+
+    return [
+      { id: 1, path: rootLink.to, label: rootLink.title },
+      pageContext.config.base_path === '/api'
+        ? { id: 2, path: firstPage.fields.slug, label: chapterTitle }
+        : null,
+      { id: 3, path: null, label: currentPage.frontmatter.title }
+    ].filter(Boolean)
+  }
+
   return (
     <>
-      <Breadcrumbs path={path} />
+      <Breadcrumbs breadcrumbs={breadcrumbs} />
       <section className="section">
         <div
           className={`
