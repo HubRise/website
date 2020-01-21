@@ -22,7 +22,7 @@ content:
         text: Démarrer maintenant
         to: https://manager.hubrise.com/signup
     - paragraph_chunk_1: 'Pour les chaînes : '
-      paragraph_chunk_2: Tarifs dégressifs à partir de 5 points de vente.
+      paragraph_chunk_2: Tarifs dégressifs à partir de 50 points de vente.
       button: Nous contacter
   faq:
     text: Voir notre F.A.Q. concernant l'abonnement

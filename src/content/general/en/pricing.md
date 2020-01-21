@@ -22,6 +22,6 @@ content:
         text: Start Now
         to: https://manager.hubrise.com/signup
     - paragraph_chunk_1: 'Large accounts: '
-      paragraph_chunk_2: prices are negotiable starting from 10 locations.
+      paragraph_chunk_2: prices are negotiable starting from 50 locations.
       button: Contact Us
 ---
