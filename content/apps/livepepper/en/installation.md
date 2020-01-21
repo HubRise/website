@@ -9,7 +9,7 @@ layout: documentation
 - Navigate to `Settings` / `Add-ons`
 
 - In the `HubRise` section, tick the checkbox:
- 
+
 ![](../images/installation_hubrise_checkbox.png)
 
 - A`Connect to HubRise` button shows up:

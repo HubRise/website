@@ -7,7 +7,7 @@ import Footer from './footer'
 const Layout = ({ children, ...other }) => (
   <>
     <Header {...other} />
-    <main className='content' data-floater-content>
+    <main className="content" data-floater-content>
       {children}
     </main>
     <Footer {...other} />

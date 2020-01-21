@@ -117,12 +117,18 @@ const createSuggestAppSchema = (t) => {
     phone: yup.string(),
     app_name: yup
       .string()
-      .min(appNameMinLength, t(`forms.validation.min`, { length: appNameMinLength }))
+      .min(
+        appNameMinLength,
+        t(`forms.validation.min`, { length: appNameMinLength })
+      )
       .required(t(`forms.validation.app_name_required`)),
     app_site: yup.string(),
     app_contact: yup
       .string()
-      .min(appContactMinLength, t(`forms.validation.min`, { length: appContactMinLength }))
+      .min(
+        appContactMinLength,
+        t(`forms.validation.min`, { length: appContactMinLength })
+      )
       .required(t(`forms.validation.app_contact_required`)),
     app_extra: yup.string()
   })

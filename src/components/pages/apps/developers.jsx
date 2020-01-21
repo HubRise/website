@@ -5,24 +5,24 @@ export const Developers = ({ content }) => {
   const { title, description } = content
 
   return (
-    <section className={`
+    <section
+      className={`
       section
       section_full-width
       section_padding
-    `}>
-      <div className={`
+    `}
+    >
+      <div
+        className={`
         section__in
         section__in
         section__in_green
         section__in_padding
-      `}>
-        <h3 className='section__title section__title_white'>
-          {title}
-        </h3>
-        <p className='section__description_white'>
-          {description.paragraph_1}
-        </p>
-        <p className='section__description_white'>
+      `}
+      >
+        <h3 className="section__title section__title_white">{title}</h3>
+        <p className="section__description_white">{description.paragraph_1}</p>
+        <p className="section__description_white">
           {description.paragraph_2.chunk_1}
           <br />
           {description.paragraph_2.chunk_2}

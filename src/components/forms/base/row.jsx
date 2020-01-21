@@ -14,7 +14,7 @@ const Row = ({ fields, formikProps }) => {
         return isSingleField ? (
           <Field key={key} fieldProps={fieldProps} formikProps={formikProps} />
         ) : (
-          <div key={key} className='form__block form__block_medium'>
+          <div key={key} className="form__block form__block_medium">
             <Field fieldProps={fieldProps} formikProps={formikProps} />
           </div>
         )

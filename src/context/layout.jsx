@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const LayoutContext = createContext()
 
-function LayoutProvider ({ children }) {
+function LayoutProvider({ children }) {
   const [isContactVisible, setContactVisibility] = useState(false)
   const [isSuggestAppVisible, setSuggestAppVisibility] = useState(false)
 
@@ -27,7 +27,7 @@ function LayoutProvider ({ children }) {
   )
 }
 
-function useLayoutContext () {
+function useLayoutContext() {
   const context = useContext(LayoutContext)
 
   if (!context) {
@@ -41,7 +41,4 @@ LayoutProvider.propTypes = {
   children: PropTypes.node.isRequired
 }
 
-export {
-  useLayoutContext,
-  LayoutProvider
-}
+export { useLayoutContext, LayoutProvider }

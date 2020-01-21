@@ -3,7 +3,7 @@ title: F.A.Q
 layout: faq
 ---
 
-import ContactFormToggle from '../../../components/markdown/contact_form_toggle.jsx'
+import ContactFormToggle from '../../../src/components/markdown/contact_form_toggle.jsx'
 
 #### Abonnement
 

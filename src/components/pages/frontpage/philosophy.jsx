@@ -3,17 +3,13 @@ import PropTypes from 'prop-types'
 
 export const Philosophy = ({ title, description }) => {
   return (
-    <section className='section'>
-      <div className='section__in section__in_padding'>
-        <h3 className='section__title'>
-          {title}
-        </h3>
-        <p className='section__description section__description_black'>
+    <section className="section">
+      <div className="section__in section__in_padding">
+        <h3 className="section__title">{title}</h3>
+        <p className="section__description section__description_black">
           {description.paragraph_1}
         </p>
-        <p className='section__description'>
-          {description.paragraph_2}
-        </p>
+        <p className="section__description">{description.paragraph_2}</p>
       </div>
     </section>
   )

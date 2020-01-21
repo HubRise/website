@@ -9,20 +9,19 @@ const DevelopersPage = ({ data }) => {
   const { content } = data.mdx.frontmatter
 
   return (
-    <div className='index'>
+    <div className="index">
       <Hero {...content.hero} />
-      <section className='section'>
-        <div className={`
+      <section className="section">
+        <div
+          className={`
           section__in
           section__in_padding
           section__in_reverse
-        `}>
-          <ul className='developers-thumbs'>
+        `}
+        >
+          <ul className="developers-thumbs">
             {content.thumbs.map((props, idx) => (
-              <Thumb
-                key={generateKey(props.title, idx)}
-                {...props}
-              />
+              <Thumb key={generateKey(props.title, idx)} {...props} />
             ))}
           </ul>
         </div>

@@ -9,15 +9,13 @@ const PricingPage = ({ data }) => {
   const { content } = data.mdx.frontmatter
 
   return (
-    <section className='section section_white'>
-      <div className='section__in section__in_padding'>
-        <h3 className='section__title'>
-          {content.hero.title}
-        </h3>
+    <section className="section section_white">
+      <div className="section__in section__in_padding">
+        <h3 className="section__title">{content.hero.title}</h3>
         <Offer {...content.offer} />
         <Specials items={content.specials} />
         {content.faq && (
-          <div className='section__link-block'>
+          <div className="section__link-block">
             <Link
               className={`
                 section__description-link
@@ -40,7 +38,9 @@ export const pricingPageQuery = graphql`
     mdx(id: { eq: $id }) {
       frontmatter {
         content {
-          hero { title }
+          hero {
+            title
+          }
           offer {
             pricing {
               chunk_1

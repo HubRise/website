@@ -38,10 +38,10 @@ export const Specials = ({ items }) => {
               section__description-link
               section__description-link_black
             `}
-              data-open='contact-us'
-              aria-controls='contact-us'
-              aria-haspopup='true'
-              tabIndex='0'
+              data-open="contact-us"
+              aria-controls="contact-us"
+              aria-haspopup="true"
+              tabIndex="0"
               onClick={forms.contact.toggle}
             >
               {item.button}

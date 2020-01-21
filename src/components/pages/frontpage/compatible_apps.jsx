@@ -16,54 +16,54 @@ export const CompatibleApps = ({
   const [lastActiveIndex, setLastActiveIndex] = useState()
   const lastIndex = carouselImages.length - 1
 
-  useInterval(function rotateBanners () {
+  useInterval(function rotateBanners() {
     setLastActiveIndex(activeIndex)
     setActiveIndex(activeIndex >= lastIndex ? 0 : activeIndex + 1)
   }, 5000)
 
   return (
-    <section className='section'>
-      <div className={`
+    <section className="section">
+      <div
+        className={`
         section__in
         section__in_padding
         section__in_reverse
-      `}>
-        <h3 className='section__title'>
-          {title}
-        </h3>
-        <p className='section__description'>
+      `}
+      >
+        <h3 className="section__title">{title}</h3>
+        <p className="section__description">
           {description.paragraph_1}
           <br />
           {description.paragraph_2}
           <br />
           <Link
             to={description.link_1.to}
-            className='section__description-link'
+            className="section__description-link"
           >
             {description.link_1.text}
           </Link>
-          <span className='section__description-span'>
+          <span className="section__description-span">
             {description.hint_1}
           </span>
           -
           <Link
             to={description.link_2.to}
-            className='section__description-link'
+            className="section__description-link"
           >
             {description.link_2.text}
           </Link>
-          <span className='section__description-span'>
+          <span className="section__description-span">
             {description.hint_2}
           </span>
         </p>
         <div
-          className='index-carousel orbit-wrapper'
-          role='region'
-          aria-label='Compatible Applications'
+          className="index-carousel orbit-wrapper"
+          role="region"
+          aria-label="Compatible Applications"
         >
           <ul
-            className='index-carousel__container orbit-container'
-            tabIndex='0'
+            className="index-carousel__container orbit-container"
+            tabIndex="0"
           >
             <i
               className={`
@@ -71,8 +71,8 @@ export const CompatibleApps = ({
                 index-carousel__arrow_previous
                 orbit-previous fa fa-chevron-circle-left
               `}
-              tabIndex='0'
-              onClick={function goToPreviousSlide () {
+              tabIndex="0"
+              onClick={function goToPreviousSlide() {
                 setLastActiveIndex(activeIndex)
                 const newIndex = activeIndex - 1
                 setActiveIndex(newIndex < 0 ? lastIndex : newIndex)
@@ -85,8 +85,8 @@ export const CompatibleApps = ({
                 orbit-next
                 fa fa-chevron-circle-right
               `}
-              tabIndex='0'
-              onClick={function goToNextSlide () {
+              tabIndex="0"
+              onClick={function goToNextSlide() {
                 setLastActiveIndex(activeIndex)
                 const newIndex = activeIndex + 1
                 setActiveIndex(newIndex > lastIndex ? 0 : newIndex)
@@ -96,10 +96,10 @@ export const CompatibleApps = ({
               return (
                 <li
                   key={generateKey(title, idx)}
-                  className='index-carousel__slide orbit-slide'
+                  className="index-carousel__slide orbit-slide"
                   style={{
                     visibility: `${
-                      (activeIndex === idx || lastActiveIndex === idx)
+                      activeIndex === idx || lastActiveIndex === idx
                         ? 'visible'
                         : 'hidden'
                     }`,
@@ -107,17 +107,15 @@ export const CompatibleApps = ({
                       activeIndex === idx
                         ? '0'
                         : idx < activeIndex
-                          ? '-100'
-                          : '100'
+                        ? '-100'
+                        : '100'
                     }%)`,
                     transition: `transform .55s ease-out`
                   }}
                 >
-                  <span className='index-carousel__title'>
-                    {title}
-                  </span>
+                  <span className="index-carousel__title">{title}</span>
                   <Image
-                    className='index-carousel__image orbit-image'
+                    className="index-carousel__image orbit-image"
                     alt={title}
                     {...childImageSharp}
                   />
@@ -125,7 +123,7 @@ export const CompatibleApps = ({
               )
             })}
           </ul>
-          <nav className='index-carousel__bullets orbit-bullets'>
+          <nav className="index-carousel__bullets orbit-bullets">
             {carouselImages.map(({ description }, idx) => {
               const isCurrentSlide = activeIndex === idx
               return (
@@ -138,13 +136,9 @@ export const CompatibleApps = ({
                     setActiveIndex(idx)
                   }}
                 >
-                  <span className='show-for-sr'>
-                    {description}
-                  </span>
+                  <span className="show-for-sr">{description}</span>
                   {isCurrentSlide && (
-                    <span className='show-for-sr'>
-                      {screenReaderPointer}
-                    </span>
+                    <span className="show-for-sr">{screenReaderPointer}</span>
                   )}
                 </button>
               )

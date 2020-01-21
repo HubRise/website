@@ -12,6 +12,7 @@ layout: documentation
 - Pictures: on products, but not on deals
 
 Not supported:
+
 - Tags on options
 
 ## Menu setup
@@ -22,14 +23,15 @@ If a code is missing or not recognized (on a sku, deal, etc.), the order is reje
 
 HubRise and My Order Box use different terminology:
 
-| HubRise | My Order Box |
-| --- | --- |
-| option_lists | Options |
-| options | Option values |
+| HubRise      | My Order Box  |
+| ------------ | ------------- |
+| option_lists | Options       |
+| options      | Option values |
 
 `Options` in My Order Box are of two types: `Add-on` or `Reference`
 
 My Order Box relies on the following naming convention:
+
 - if an `Option`'s name starts with the word `Toppings`, it is sent as a unique `option_ist` in HubRise, with one `option` per `Option Value`. The `option_ist`'s name is "Toppings".
 - otherwise the `Option` is sent as a separate `option_list` in HubRise
 

@@ -20,12 +20,13 @@ const AppsPage = ({ data }) => {
       {content.sections.map((props, idx) => (
         <AppSection
           key={generateKey(props.title, idx)}
-          logos={data.images.nodes.filter(({ relativeDirectory }) => (
-            relativeDirectory === `general/images/app_logos`
-          ))}
-          suggestAppContent={props.has_suggest_app && (
-            content.additional_sections.suggest_app
+          logos={data.images.nodes.filter(
+            ({ relativeDirectory }) =>
+              relativeDirectory === `general/images/app_logos`
           )}
+          suggestAppContent={
+            props.has_suggest_app && content.additional_sections.suggest_app
+          }
           {...props}
         />
       ))}
@@ -44,10 +45,7 @@ const AppsPage = ({ data }) => {
 }
 
 export const appsPageQuery = graphql`
-  query getAppsPageContent(
-    $id: String!,
-    $imagesFilter: FileFilterInput!
-  ) {
+  query getAppsPageContent($id: String!, $imagesFilter: FileFilterInput!) {
     mdx(id: { eq: $id }) {
       frontmatter {
         content {
@@ -93,7 +91,9 @@ export const appsPageQuery = graphql`
       }
     }
     images: allFile(filter: $imagesFilter) {
-      nodes { ...Image }
+      nodes {
+        ...Image
+      }
     }
   }
 `

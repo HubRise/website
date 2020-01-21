@@ -68,7 +68,10 @@ const createContactSchema = (t) => {
       .required(t(`forms.validation.email_required`)),
     message: yup
       .string()
-      .min(messageMinLength, t(`forms.validation.message_min`, { length: messageMinLength }))
+      .min(
+        messageMinLength,
+        t(`forms.validation.message_min`, { length: messageMinLength })
+      )
       .required(t(`forms.validation.message_required`))
   })
 }

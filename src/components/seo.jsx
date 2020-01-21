@@ -8,7 +8,7 @@ import safariPinnedTab from '../images/favicons/safari-pinned-tab.svg'
 import favicon32 from '../images/favicons/favicon-32x32.png'
 import favicon16 from '../images/favicons/favicon-16x16.png'
 
-function SEO ({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(graphql`
     query getSiteMetadata {
       site {
@@ -77,10 +77,10 @@ function SEO ({ description, lang, meta, title }) {
         }
       ].concat(meta)}
     >
-      <link rel='apple-touch-icon' sizes='180x180' href={appleTouchIcon} />
-      <link rel='mask-icon' href={safariPinnedTab} color='#5bbad5' />
-      <link rel='icon' type='image/png' sizes='32x32' href={favicon32} />
-      <link rel='icon' type='image/png' sizes='32x32' href={favicon16} />
+      <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIcon} />
+      <link rel="mask-icon" href={safariPinnedTab} color="#5bbad5" />
+      <link rel="icon" type="image/png" sizes="32x32" href={favicon32} />
+      <link rel="icon" type="image/png" sizes="32x32" href={favicon16} />
     </Helmet>
   )
 }

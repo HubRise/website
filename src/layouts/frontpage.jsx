@@ -17,27 +17,31 @@ const FrontPage = ({ data }) => {
 
   return (
     <>
-      <Hero
-        signupFormContent={content.signup_form}
-        {...content.hero}
-      />
+      <Hero signupFormContent={content.signup_form} {...content.hero} />
       <Main
         {...content.main}
-        diagramImage={images.nodes.find(({ base }) => base === content.main.diagram)}
+        diagramImage={images.nodes.find(
+          ({ base }) => base === content.main.diagram
+        )}
       />
       {content.demonstration && (
         <Demonstration
-          videoFile={images.nodes.find(({ base }) => base === content.demonstration.video)}
+          videoFile={images.nodes.find(
+            ({ base }) => base === content.demonstration.video
+          )}
           {...content.demonstration}
         />
       )}
       {content.faq && <Faq {...content.faq} />}
       {content.compatible_apps && (
         <CompatibleApps
-          carouselImages={content.compatible_apps.carousel.reduce((result, item) => {
-            const match = images.nodes.find(({ base }) => item.file === base)
-            return result.concat(match ? { ...item, ...match } : [])
-          }, [])}
+          carouselImages={content.compatible_apps.carousel.reduce(
+            (result, item) => {
+              const match = images.nodes.find(({ base }) => item.file === base)
+              return result.concat(match ? { ...item, ...match } : [])
+            },
+            []
+          )}
           {...content.compatible_apps}
         />
       )}
@@ -47,10 +51,7 @@ const FrontPage = ({ data }) => {
 }
 
 export const frontPageQuery = graphql`
-  query getFrontPageContent(
-    $id: String!,
-    $imagesFilter: FileFilterInput!
-  ) {
+  query getFrontPageContent($id: String!, $imagesFilter: FileFilterInput!) {
     mdx(id: { eq: $id }) {
       frontmatter {
         content {
@@ -124,7 +125,9 @@ export const frontPageQuery = graphql`
       }
     }
     images: allFile(filter: $imagesFilter) {
-      nodes { ...Image }
+      nodes {
+        ...Image
+      }
     }
   }
 `

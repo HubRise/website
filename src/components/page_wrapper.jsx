@@ -20,9 +20,7 @@ const PageWrapper = ({ element, props }) => {
   return (
     <>
       <Seo lang={i18n.language} />
-      <Layout {...props}>
-        {element}
-      </Layout>
+      <Layout {...props}>{element}</Layout>
       {forms.contact.isVisible && (
         <Modal
           title={t(`forms.contact.modal_title`)}

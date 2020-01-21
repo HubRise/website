@@ -6,32 +6,20 @@ import { generateKey } from '../../utils'
 
 export const Main = ({ title, description, features, diagramImage }) => {
   return (
-    <section
-      id='more'
-      className='section'
-    >
-      <div className='section__in section__in_padding'>
-        <h3 className='section__title'>
-          {title}
-        </h3>
-        <p className='section__description'>
-          {description}
-        </p>
-        <ul className='index-about'>
+    <section id="more" className="section">
+      <div className="section__in section__in_padding">
+        <h3 className="section__title">{title}</h3>
+        <p className="section__description">{description}</p>
+        <ul className="index-about">
           {features.map((feature, idx) => (
-            <li
-              key={generateKey(feature, idx)}
-              className='index-about__item'
-            >
-              <span className='index-about__span'>
-                {feature}
-              </span>
+            <li key={generateKey(feature, idx)} className="index-about__item">
+              <span className="index-about__span">{feature}</span>
             </li>
           ))}
         </ul>
-        <div className='section__diagram'>
+        <div className="section__diagram">
           <NonStretchedImage
-            className='section__diagram-image'
+            className="section__diagram-image"
             alt={diagramImage.name}
             {...diagramImage.childImageSharp}
           />

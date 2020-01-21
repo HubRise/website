@@ -7,16 +7,14 @@ export const Hero = ({ title, description }) => {
   const { forms } = useLayoutContext()
 
   return (
-    <section className='section'>
-      <div className='section__in section__in_padding'>
-        <h3 className='section__title'>
-          {title}
-        </h3>
-        <p className='section__description'>
+    <section className="section">
+      <div className="section__in section__in_padding">
+        <h3 className="section__title">{title}</h3>
+        <p className="section__description">
           {description.paragraph_1}
           <br />
           <button
-            className='section__description-link section__description-link_black'
+            className="section__description-link section__description-link_black"
             onClick={forms.contact.toggle}
           >
             {description.paragraph_2.button}

@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 const TableCell = ({ children }) => {
   return (
     <td>
-      <div className='call-summary__cell-wrapper--outer'>
-        <div className='call-summary__cell-wrapper--inner'>{children}</div>
+      <div className="call-summary__cell-wrapper--outer">
+        <div className="call-summary__cell-wrapper--inner">{children}</div>
       </div>
     </td>
   )
@@ -22,21 +22,21 @@ const CallSummaryTable = ({ endpoint, shortEndpoint, accessLevel }) => {
   }
 
   return (
-    <table className='call-summary'>
+    <table className="call-summary">
       <tbody>
         <tr>
           <TableCell>Endpoint:</TableCell>
           <TableCell>
-            <span className='call-summary__url'>{endpoint}</span>
+            <span className="call-summary__url">{endpoint}</span>
           </TableCell>
         </tr>
         {shortEndpoint && (
           <tr>
             <TableCell>Short endpoint:</TableCell>
             <TableCell>
-              <span className='call-summary__url'>{url}</span>
+              <span className="call-summary__url">{url}</span>
               {extra && (
-                <span className='call-summary__extra'>{`(${extra}`}</span>
+                <span className="call-summary__extra">{`(${extra}`}</span>
               )}
             </TableCell>
           </tr>
