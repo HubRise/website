@@ -21,7 +21,7 @@ content:
         - to: https://iikosoftware.com
           logo: iiko.png
           title: iiko
-          description: iiko est une solution cloud facile à déployer et à faire évoluer. Plus de 30.000 entreprises mono ou multisites l'utilisent pour automatiser leurs opérations. 
+          description: iiko est une solution cloud facile à déployer et à faire évoluer. Plus de 30.000 entreprises mono ou multisites l'utilisent pour automatiser leurs opérations.
           additional_info: Documentation en anglais
         - to: https://www.ikentoo.com
           logo: ikentoo-lightspeed.png
@@ -53,12 +53,12 @@ content:
         - to: https://www.partech.com/pixel-point-software
           logo: par-pixelpoint.png
           title: PixelPoint (web API)
-          description: PixelPoint, édité par PAR, intégré via son API web, répond aux besoins de la restauration et du divertissement, avec un focus sur la gestion des coûts, la prévention des pertes et la fidélisation. 
+          description: PixelPoint, édité par PAR, intégré via son API web, répond aux besoins de la restauration et du divertissement, avec un focus sur la gestion des coûts, la prévention des pertes et la fidélisation.
           additional_info: Intégration via son API web. Documentation en anglais
         - to: https://www.partech.com/pixel-point-software
           logo: par-pixelpoint.png
           title: PixelPoint (Windows API)
-          description: PixelPoint, édité par PAR, intégré via son API Windows, répond aux besoins de la restauration et du divertissement, avec un focus sur la gestion des coûts, la prévention des pertes et la fidélisation. 
+          description: PixelPoint, édité par PAR, intégré via son API Windows, répond aux besoins de la restauration et du divertissement, avec un focus sur la gestion des coûts, la prévention des pertes et la fidélisation.
           additional_info: Intégration via son API Windows. Documentation en anglais.
         - to: https://zelty.fr
           logo: zelty.png
@@ -70,7 +70,7 @@ content:
           logo: app4.png
           title: App4
           description: App4 est une solution de commande en ligne et application mobile, qui s'adapte aux besoins de la vente à emporter, des cafés/restaurants et des commerces de détail alimentaire.
-          additional_info: Documentation en anglais. Intégration en cours. 
+          additional_info: Documentation en anglais. Intégration en cours.
         - to: http://www.livepepper.fr/
           logo: livepepper.png
           title: LivePepper
@@ -120,7 +120,7 @@ content:
         - to: https://myemma.com
           logo: emma.png
           title: Emma
-          description: Emma est une solution d'envoi d'emails et de newsletter personnalisés, avec support à la stratégie et à la conception de la campagne marketing. 
+          description: Emma est une solution d'envoi d'emails et de newsletter personnalisés, avec support à la stratégie et à la conception de la campagne marketing.
           additional_info: Documentation en anglais
         - to: https://mailchimp.com
           logo: mailchimp.png
@@ -146,7 +146,7 @@ content:
         - to: https://www.hubrise.com/
           logo: orderline.png
           title: OrderLine
-          description: OrderLine édité par HubRise centralise les commandes passées depuis un site e-commerce ou autre plateforme de commande en ligne. Les commandes sont ainsi gérées et imprimés.  
+          description: OrderLine édité par HubRise centralise les commandes passées depuis un site e-commerce ou autre plateforme de commande en ligne. Les commandes sont ainsi gérées et imprimés.
   additional_sections:
     suggest_app:
       title: Proposer une application

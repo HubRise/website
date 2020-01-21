@@ -9,7 +9,7 @@ const allLocaleCodes = Object.keys(locales)
 const { getDefaultLocale } = require(path.join(__dirname, `utils`))
 
 const pathToLayouts = path.join(process.cwd(), `src/layouts`)
-const pathToContent = path.join(process.cwd(), `src/content`)
+const pathToContent = path.join(process.cwd(), `content`)
 
 const getLayout = (name) => path.join(pathToLayouts, `${name}.jsx`)
 

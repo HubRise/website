@@ -18,7 +18,7 @@ app_info:
 
 LivePepper is an online ordering solution for home delivery and takeaway restaurants. LivePepper has been developed both for restaurant chains and independent restaurants. It can easily be localised for international market.
 
-LivePepper might incorporate the online ordering module into an existing marketing website or create one. Sites can be customised from a template or designed and tailored to the restaurant specifications. 
+LivePepper might incorporate the online ordering module into an existing marketing website or create one. Sites can be customised from a template or designed and tailored to the restaurant specifications.
 
 Restaurants are autonomous in the handling of their data: menu changes, promotions setup, inventory, opening hours or closings for vacations, delivery times and area with corresponding charges or discounts. A dashboard shares standard statistics but the data can also be exported in different formats for analysis or use for marketing campaigns.
 

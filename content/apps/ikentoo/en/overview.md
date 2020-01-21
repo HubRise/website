@@ -16,5 +16,6 @@ iKentoo is an iPad POS and management solution for restaurants and hospitality b
 ## About this integration
 
 This integration relies on iKentoo API v2:
+
 - **Orders** are sent one-way: from HubRise to iKentoo
-- No catalog synchronization 
+- No catalog synchronization

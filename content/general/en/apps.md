@@ -20,11 +20,11 @@ content:
         - to: https://iikosoftware.com
           logo: iiko.png
           title: iiko
-          description: iiko is 100% cloud, easy to deploy and scale for single and multi-store businesses. Over 30,000 businesses use iiko to automate every aspect of their operations. 
+          description: iiko is 100% cloud, easy to deploy and scale for single and multi-store businesses. Over 30,000 businesses use iiko to automate every aspect of their operations.
         - to: https://www.ikentoo.com
           logo: ikentoo-lightspeed.png
           title: iKentoo by LightSpeed
-          description: iKentoo is an iPad and cloud Point of Sales system for restaurants and hoteliers. Acquired by Lightspeed, iKentoo will keep expanding to new international markets. 
+          description: iKentoo is an iPad and cloud Point of Sales system for restaurants and hoteliers. Acquired by Lightspeed, iKentoo will keep expanding to new international markets.
         - to: https://www.jdc.fr/caisse-enregistreuse
           logo: jdc.png
           title: Kezia II / JDC
@@ -37,7 +37,7 @@ content:
         - to: http://www.logiciel-de-livraison.com
           logo: nestor.png
           title: Nestor
-          description: Nestor is a French Point of Sales solution designed for home delivery and takeaway restaurants. 
+          description: Nestor is a French Point of Sales solution designed for home delivery and takeaway restaurants.
           additional_info: Documentation in French
         - to: https://www.pointone-epos.co.uk/
           logo: pointone.png
@@ -67,7 +67,7 @@ content:
         - to: https://www.app4takeaways.com
           logo: app4.png
           title: App4
-          description: App4 offers a branded online ordering system, mobile app and associated applications for takeaways, restaurants, pubs, cafes and food outlets. 
+          description: App4 offers a branded online ordering system, mobile app and associated applications for takeaways, restaurants, pubs, cafes and food outlets.
           additional_info: Integration in progress
         - to: http://www.livepepper.fr
           logo: livepepper.png
@@ -121,7 +121,7 @@ content:
         - to: https://mailchimp.com
           logo: mailchimp.png
           title: MailChimp
-          description: MailChimp all‑in‑one marketing platform from which customised emails and newsletters can be sent. 
+          description: MailChimp all‑in‑one marketing platform from which customised emails and newsletters can be sent.
         - to: https://sailplay.com
           logo: sailplay.png
           title: SailPlay
@@ -139,7 +139,7 @@ content:
         - to: https://www.hubrise.com/
           logo: orderline.png
           title: OrderLine
-          description: OrderLine by HubRise centralises orders received from an e-commerce website and aggregators. Orders can be managed and printed.    
+          description: OrderLine by HubRise centralises orders received from an e-commerce website and aggregators. Orders can be managed and printed.
   additional_sections:
     suggest_app:
       title: Suggest an application
