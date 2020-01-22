@@ -35,13 +35,10 @@ content:
     video: coming_soon.mp4
   faq:
     title: F.A.Q.
-    links:
-      - text: Every request, every bit of data is traced
-        to: /faq
-      - text: Access control with thin grained permissions
-        to: /faq
-      - text: The data belongs to you
-        to: /faq
+    bullets:
+      - Every request, every bit of data is traced
+      - Access control with thin grained permissions
+      - The data belongs to you
   compatible_apps:
     title: De nouvelles applications tous les mois
     description:

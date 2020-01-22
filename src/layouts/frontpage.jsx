@@ -85,10 +85,7 @@ export const frontPageQuery = graphql`
           }
           faq {
             title
-            links {
-              text
-              to
-            }
+            bullets
           }
           compatible_apps {
             title
