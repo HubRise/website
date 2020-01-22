@@ -1,6 +1,6 @@
 ---
 title: F.A.Q
-layout: faq
+layout: simple
 meta:
   title: F.A.Q. - HubRise
   description:
