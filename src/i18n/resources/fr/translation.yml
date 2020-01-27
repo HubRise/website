@@ -27,10 +27,8 @@ misc:
     title: Feedback sur cette page
     description: 'Si vous avez repéré une erreur ou souhaitez améliorer cette page, vous pouvez :'
     options:
-      - text: Nous envoyer un email
-        to: 'mailto:support@hubrise.com'
-      - text: Ou éditer cette page et nous soumettre un Pull Request
-        to: https://github.com/HubRise/website
+      send_email: Nous envoyer un email
+      edit_page: Ou éditer cette page et nous soumettre un Pull Request
 
 forms:
   validation:

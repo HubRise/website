@@ -84,7 +84,7 @@ const DocumentationPage = ({ data, path, pageContext }) => {
           {app_info && <AppInfo content={app_info} />}
         </div>
       </section>
-      <Feedback />
+      <Feedback relativeFilePath={pageContext.relativePath} />
     </>
   )
 }

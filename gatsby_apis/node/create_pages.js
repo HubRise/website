@@ -13,12 +13,16 @@ const pathToContent = path.join(process.cwd(), `content`)
 
 const getLayout = (name) => path.join(pathToLayouts, `${name}.jsx`)
 
+function normalizePath(filePath) {
+  return filePath.split(path.sep).join(path.posix.sep);
+}
+
 const getMdxContent = async (pathToPages, graphql) => {
   const glob = `"${pathToPages}/*"`
   const { data, errors } = await graphql(`
     query loadMdxDataForCreatingPages {
       allMdx (
-        filter: { fileAbsolutePath: { glob: ${glob} }}
+        filter: { fileAbsolutePath: { glob: ${normalizePath(glob)} }}
       ) {
         nodes {
           id
@@ -57,20 +61,23 @@ const createPageFromMdxNode = (node, locale, actions) => {
     fs.readFileSync(path.join(currentDirectory, `customization.yaml`), `utf-8`)
   )
 
+  const relativePath = normalizePath(path.posix.sep + path.relative(process.cwd(), fileAbsolutePath));
+
   actions.createPage({
     path: (locale.default ? `` : locale.code) + fields.slug,
     component: getLayout(layout),
     context: {
       id,
       currentAndSiblingPagesFilter: {
-        fileAbsolutePath: { glob: `${currentDirectory}/*` }
+        fileAbsolutePath: { glob: normalizePath(`${currentDirectory}/*`) }
       },
       imagesFilter: {
-        absolutePath: { glob: `${pathToImages}/**/*` }
+        absolutePath: { glob: normalizePath(`${pathToImages}/**/*`) }
       },
       meta,
       config,
-      lang: locale.code
+      lang: locale.code,
+      relativePath
     }
   })
 }

@@ -25,10 +25,8 @@ misc:
     title: Feedback on this page
     description: 'If you spotted an error or a need for improvement, you can:'
     options:
-      - text: Send us an email
-        to: 'mailto:support@hubrise.com'
-      - text: Or edit this page and submit a Pull Request
-        to: https://github.com/HubRise/website
+      send_email: Send us an email
+      edit_page: Or edit this page and submit a Pull Request
 
 forms:
   validation:

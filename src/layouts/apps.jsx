@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 import Modal from '../components/modal'
 import SuggestAppForm from '../components/forms/suggest_app'
 import { Hero, Developers, AppSection } from '../components/pages/apps'
-import { generateKey } from '../components/utils'
+import { generateKey, replaceBackslash } from '../components/utils'
 import { useLayoutContext } from '../context/layout'
 
 const AppsPage = ({ data }) => {
@@ -22,7 +22,7 @@ const AppsPage = ({ data }) => {
           key={generateKey(props.title, idx)}
           logos={data.images.nodes.filter(
             ({ relativeDirectory }) =>
-              relativeDirectory === `general/images/app_logos`
+              replaceBackslash(relativeDirectory) === `general/images/app_logos`
           )}
           suggestAppContent={
             props.has_suggest_app && content.additional_sections.suggest_app
