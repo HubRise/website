@@ -66,6 +66,7 @@
     "eslint-plugin-cypress": "^2.6.1",
     "eslint-plugin-flowtype": "2.x",
     "eslint-plugin-react-hooks": "^2.0.1",
+    "gatsby-plugin-sentry": "^1.0.1",
     "husky": "^3.0.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",

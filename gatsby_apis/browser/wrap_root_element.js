@@ -15,6 +15,7 @@ import { LayoutProvider } from '../../src/context/layout'
 import { generateHeaders } from '../../src/components/utils'
 
 import i18n from '../../src/i18n'
+import ErrorBoundary from '../../src/components/error_boundary'
 
 let components = {
   ...generateHeaders([`h2`, `h3`]),
@@ -38,12 +39,14 @@ let components = {
 
 export const wrapRootElement = ({ element }) => {
   return (
-    <I18nextProvider i18n={i18n}>
-      <LayoutProvider>
-        <MDXProvider components={components}>
-          {element}
-        </MDXProvider>
-      </LayoutProvider>
-    </I18nextProvider>
+    <ErrorBoundary>
+      <I18nextProvider i18n={i18n}>
+        <LayoutProvider>
+          <MDXProvider components={components}>
+            {element}
+          </MDXProvider>
+        </LayoutProvider>
+      </I18nextProvider>
+    </ErrorBoundary>
   )
 }

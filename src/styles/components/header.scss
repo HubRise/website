@@ -73,7 +73,6 @@
     padding-right: 1rem;
     color: $hr-light-gray;
     font-size: 0.9375rem;
-    font-weight: 600;
     &:hover {
       color: $hr-green;
     }
@@ -85,7 +84,6 @@
     color: $white;
     background: $hr-green;
     font-size: 0.9375rem;
-    font-weight: 600;
     cursor: pointer;
     & a {
       color: $white;

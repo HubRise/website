@@ -19,6 +19,15 @@ module.exports = {
         respectDNT: true
       }
     },
+    {
+      resolve: 'gatsby-plugin-sentry',
+      options: {
+        dsn: process.env.SENTRY_DSN,
+        // Optional settings, see https://docs.sentry.io/clients/node/config/#optional-settings
+        environment: process.env.NODE_ENV,
+        enabled: (() => ['production'].indexOf(process.env.NODE_ENV) !== -1)()
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {

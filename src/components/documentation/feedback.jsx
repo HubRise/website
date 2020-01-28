@@ -2,14 +2,12 @@ import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { useTranslation } from 'react-i18next'
+import PropTypes from 'prop-types'
 
-import { useLayoutContext } from '../../context/layout'
 import Link from '../../components/link'
-import { generateKey } from '../../components/utils'
 
-export const Feedback = () => {
+export const Feedback = ({ relativeFilePath }) => {
   const [isExpanded, setIsExpanded] = useState(false)
-  const { forms } = useLayoutContext()
   const { t } = useTranslation()
 
   return (
@@ -38,28 +36,30 @@ export const Feedback = () => {
             {t(`misc.feedback.description`)}
           </p>
           <ul>
-            {t(`misc.feedback.options`).map(({ text, to }, idx) => (
-              <li
-                key={generateKey(text, idx)}
-                className="feedback__instructions-list-item"
+            <li className="feedback__instructions-list-item">
+              <Link className="feedback__link" to="mailto:support@hubrise.com">
+                {t('misc.feedback.options.send_email')}
+              </Link>
+            </li>
+
+            <li className="feedback__instructions-list-item">
+              <Link
+                className="feedback__link"
+                to={
+                  'https://github.com/HubRise/website/edit/master' +
+                  relativeFilePath
+                }
               >
-                {to ? (
-                  <Link className="feedback__link" to={to}>
-                    {text}
-                  </Link>
-                ) : (
-                  <button
-                    className="feedback__contact-button"
-                    onClick={forms.contact.toggle}
-                  >
-                    {text}
-                  </button>
-                )}
-              </li>
-            ))}
+                {t('misc.feedback.options.edit_page')}
+              </Link>
+            </li>
           </ul>
         </section>
       )}
     </section>
   )
+}
+
+Feedback.propTypes = {
+  relativeFilePath: PropTypes.string
 }
