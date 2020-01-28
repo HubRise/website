@@ -13,7 +13,7 @@ import {
 } from '../components/documentation'
 
 const DocumentationPage = ({ data, path, pageContext }) => {
-  const { i18n } = useTranslation()
+  const { i18n, t } = useTranslation()
   const { name: chapterTitle, logo: logoBase } = pageContext.config
   const { currentAndSiblingPages, images } = data
   const [currentPage] = currentAndSiblingPages.nodes.filter(
@@ -47,6 +47,17 @@ const DocumentationPage = ({ data, path, pageContext }) => {
       { id: 3, path: null, label: currentPage.frontmatter.title }
     ].filter(Boolean)
   }
+
+  const feedbackOptions = [
+    {
+      title: t('misc.feedback.options.send_email'),
+      url: 'mailto:support@hubrise.com'
+    },
+    {
+      title: t('misc.feedback.options.edit_page'),
+      url: `https://github.com/HubRise/website/edit/master${pageContext.relativePath}`
+    }
+  ]
 
   return (
     <>
@@ -84,7 +95,7 @@ const DocumentationPage = ({ data, path, pageContext }) => {
           {app_info && <AppInfo content={app_info} />}
         </div>
       </section>
-      <Feedback relativeFilePath={pageContext.relativePath} />
+      <Feedback options={feedbackOptions} />
     </>
   )
 }

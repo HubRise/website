@@ -19,6 +19,8 @@ layout:
         to: /developpeurs
       - title: Tarifs
         to: /tarifs
+      - title: Blog
+        to: /blog
       - title: F.A.Q.
         to: /faq
 

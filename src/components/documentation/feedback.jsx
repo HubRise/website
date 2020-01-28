@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 
 import Link from '../../components/link'
 
-export const Feedback = ({ relativeFilePath }) => {
+export const Feedback = ({ options }) => {
   const [isExpanded, setIsExpanded] = useState(false)
   const { t } = useTranslation()
 
@@ -36,23 +36,13 @@ export const Feedback = ({ relativeFilePath }) => {
             {t(`misc.feedback.description`)}
           </p>
           <ul>
-            <li className="feedback__instructions-list-item">
-              <Link className="feedback__link" to="mailto:support@hubrise.com">
-                {t('misc.feedback.options.send_email')}
-              </Link>
-            </li>
-
-            <li className="feedback__instructions-list-item">
-              <Link
-                className="feedback__link"
-                to={
-                  'https://github.com/HubRise/website/edit/master' +
-                  relativeFilePath
-                }
-              >
-                {t('misc.feedback.options.edit_page')}
-              </Link>
-            </li>
+            {options.map((option) => (
+              <li className="feedback__instructions-list-item">
+                <Link className="feedback__link" to={option.url}>
+                  {option.title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </section>
       )}
@@ -61,5 +51,10 @@ export const Feedback = ({ relativeFilePath }) => {
 }
 
 Feedback.propTypes = {
-  relativeFilePath: PropTypes.string
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      url: PropTypes.string
+    })
+  )
 }

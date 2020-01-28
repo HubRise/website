@@ -1,10 +1,9 @@
 const fs = require('fs')
 const path = require('path')
 const yaml = require('js-yaml')
-const { flattenDeep } = require('lodash')
-const { partialRight } = require('lodash/fp')
 
-const locales = require(path.join(process.cwd(), `src/i18n/locales.js`))
+const locales = require('../../src/i18n/locales');
+
 const allLocaleCodes = Object.keys(locales)
 const { getDefaultLocale } = require(path.join(__dirname, `utils`))
 
@@ -17,8 +16,12 @@ function normalizePath(filePath) {
   return filePath.split(path.sep).join(path.posix.sep);
 }
 
-const getMdxContent = async (pathToPages, graphql) => {
-  const glob = `"${pathToPages}/*"`
+/** Get content from MDX files of certain directory */
+const getMdxContent = async (pathToDirectory, graphql) => {
+
+  /** this glob matches all files inside directory */
+  const glob = `"${pathToDirectory}/*"`
+
   const { data, errors } = await graphql(`
     query loadMdxDataForCreatingPages {
       allMdx (
@@ -82,63 +85,64 @@ const createPageFromMdxNode = (node, locale, actions) => {
   })
 }
 
-const _createPages = async (
-  pathToPages,
-  locale,
-  actions,
-  graphql
-) => {
-  const { allMdx: { nodes: mdxNodes } } = await getMdxContent(pathToPages, graphql)
+const getDirectoriesWithMdxFiles = () => {
+  const mdxDirectories = [];
 
-  mdxNodes.forEach((node) => createPageFromMdxNode(node, locale, actions))
-}
+  const parseDirectory = ({ pathToDirectory, locale }) => {
+    const filenames = fs.readdirSync(pathToDirectory);
 
-const createPagesForEachChapter = (
-  pathToContent,
-  locale,
-  createPagesForLocale
-) => {
-  return fs.readdirSync(pathToContent).map((chapterName) => {
-    const pathToChapter = path.join(pathToContent, chapterName)
-    const nestedChapters = fs.readdirSync(pathToChapter)
-      .filter((subdir) => subdir !== `images` && !allLocaleCodes.includes(subdir))
+    return filenames.map((fileName) => {
+      const pathToFile = path.join(pathToDirectory, fileName)
 
-    if (nestedChapters.length > 0) {
-      return createPagesForEachChapter(pathToChapter, locale, createPagesForLocale)
-    }
 
-    const pathToLocalizedPages = path.join(pathToChapter, locale.code)
+      const isNestedFolderName = filename => filename !== 'images' && !allLocaleCodes.includes(filename);
 
-    if (fs.existsSync(pathToLocalizedPages)) {
-      return createPagesForLocale(pathToLocalizedPages)
-    }
+      const nestedFolderList = fs.readdirSync(pathToFile)
+        .filter(isNestedFolderName)
 
-    // Current locale is default and respective folder with pages is missing -
-    // don't create anything in that case.
-    if (locale.default) return
+      if (nestedFolderList.length > 0) {
+        /** Search recursively in nested directories */
+        return parseDirectory({ pathToDirectory: pathToFile, locale })
+      }
 
-    const pathToPagesInDefaulLocale = path.join(
-      pathToChapter,
-      getDefaultLocale().code
-    )
+      const pathToLocalizedPages = path.join(pathToFile, locale.code)
 
-    // For every other locale, fallback to content in default locale, if available.
-    if (fs.existsSync(pathToPagesInDefaulLocale)) {
-      return createPagesForLocale(pathToPagesInDefaulLocale)
-    }
-  })
+      if (fs.existsSync(pathToLocalizedPages)) {
+        mdxDirectories.push({ path: pathToLocalizedPages, locale });
+        return;
+      }
+
+      // Current locale is default and respective folder with pages is missing -
+      // don't create anything in that case.
+      if (locale.default) return
+
+      const pathToPagesInDefaultLocale = path.join(
+        pathToFile,
+        getDefaultLocale().code
+      )
+
+      // For every other locale, fallback to content in default locale, if available.
+      if (fs.existsSync(pathToPagesInDefaultLocale)) {
+        mdxDirectories.push({ path: pathToPagesInDefaultLocale, locale });
+      }
+    })
+  }
+
+  Object.values(locales).forEach(locale => parseDirectory({ pathToDirectory: pathToContent, locale }));
+
+  return mdxDirectories;
 }
 
 const createPages = async ({ actions, graphql }) => {
-  const createPagePromises = Object.values(locales)
-    .map(function createPagesForEachLocale (locale) {
-      const createPagesForLocale = partialRight(_createPages, [locale, actions, graphql])
+  const directoriesWithMdxFiles = getDirectoriesWithMdxFiles();
 
-      return createPagesForEachChapter(pathToContent, locale, createPagesForLocale)
-    })
+  const promises = directoriesWithMdxFiles.map(async directory => {
+    const { allMdx: { nodes: mdxNodes } } = await getMdxContent(directory.path, graphql)
+    mdxNodes.forEach((node) => createPageFromMdxNode(node, directory.locale, actions))
+  })
 
   try {
-    await Promise.all(flattenDeep(createPagePromises))
+    await Promise.all(promises)
   } catch (error) {
     console.error(`An error occurred while creating pages from MDX`, error)
   }

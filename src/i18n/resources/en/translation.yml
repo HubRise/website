@@ -19,6 +19,8 @@ layout:
         to: /developers
       - title: Pricing
         to: /pricing
+      - title: Blog
+        to: /blog
 
 misc:
   feedback:
