@@ -7,7 +7,7 @@ meta:
   description:
 ---
 
-- Open the HubRise apps page: https://manager.hubrise.com/apps
+- Open your HubRise back office and go to CONNECTIONS in HubRise’s menu, then click on  apps page: https://manager.hubrise.com/apps
 
 - Find the iKentoo app and connect it
 
