@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
-const shell = require('child_process').execSync
 const yaml = require('js-yaml')
+const rimraf = require('rimraf')
 
 const copyTranslations = () => {
   try {
@@ -11,7 +11,7 @@ const copyTranslations = () => {
     const locales = fs.readdirSync(source)
 
     if (fs.existsSync(target)) {
-      shell(`rm -rf ${target}`)
+      rimraf.sync(target)
     }
 
     fs.mkdirSync(target)

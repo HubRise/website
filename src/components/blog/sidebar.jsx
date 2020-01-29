@@ -1,28 +1,29 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import cx from 'classnames'
 
 import { colors } from '../../constants/theme'
 
-function getRecentPosts(postList) {
+function getRecentPosts (postList) {
   return [...postList].sort((a, b) => a.date - b.date).slice(0, 5)
 }
 
-function Sidebar({ postList, searchQuery, onQueryChange, hideSearchInput }) {
+function Sidebar ({ postList, searchQuery, onQueryChange, hideSearchInput }) {
   const [query, setQuery] = useState(searchQuery || '')
   const recentPosts = getRecentPosts(postList)
 
-  const shouldExpandList = window
-    ? window.matchMedia('(min-width: 1024px)').matches
-    : false
+  const [isRecentPostsExpanded, setRecentPostsExpanded] = useState(true)
+  const [isArchiveExpanded, setArchiveExpanded] = useState(true)
 
-  const [isRecentPostsExpanded, setRecentPostsExpanded] = useState(
-    shouldExpandList
-  )
-  const [isArchiveExpanded, setArchiveExpanded] = useState(shouldExpandList)
+  useEffect(() => {
+    const shouldExpandList = window.matchMedia('(min-width: 1024px)').matches
 
-  function handleSearchSubmit(event) {
+    setRecentPostsExpanded(shouldExpandList)
+    setArchiveExpanded(shouldExpandList)
+  }, [])
+
+  function handleSearchSubmit (event) {
     event.preventDefault()
 
     if (query.trim() !== searchQuery) {
@@ -35,12 +36,12 @@ function Sidebar({ postList, searchQuery, onQueryChange, hideSearchInput }) {
         <form onSubmit={handleSearchSubmit}>
           <InputContainer>
             <SearchInput
-              type="search"
-              placeholder="Search"
+              type='search'
+              placeholder='Search'
               value={query}
               onChange={(event) => setQuery(event.target.value)}
             />
-            <Icon className="fa fa-search" />
+            <Icon className='fa fa-search' />
           </InputContainer>
         </form>
       )}

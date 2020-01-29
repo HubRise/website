@@ -1,16 +1,22 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import { navigate } from 'gatsby'
 
 import Hero from '../components/blog/hero'
 import Sidebar from '../components/blog/sidebar'
 import Post from '../components/blog/post'
 
-function Blog({ postList }) {
+function Blog ({ postList }) {
   const [searchQuery, setSearchQuery] = useState('')
 
   const filteredPostList = postList.filter((post) =>
     post.title.toLowerCase().includes(searchQuery.toLowerCase())
   )
+
+  function handleQueryChange (newQuery) {
+    setSearchQuery(newQuery)
+    navigate(`/blog?q=${newQuery.trim()}`)
+  }
 
   return (
     <div>
@@ -25,7 +31,7 @@ function Blog({ postList }) {
           <Sidebar
             postList={postList}
             searchQuery={searchQuery}
-            onQueryChange={(newQuery) => setSearchQuery(newQuery)}
+            onQueryChange={handleQueryChange}
           />
           <Content>
             <PostList>

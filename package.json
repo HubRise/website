@@ -79,6 +79,7 @@
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "react-test-renderer": "^16.9.0",
+    "rimraf": "^3.0.1",
     "standardx": "^3.0.1",
     "start-server-and-test": "^1.10.0",
     "typescript": "^3.6.3"

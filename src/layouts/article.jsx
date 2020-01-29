@@ -4,15 +4,13 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { graphql } from 'gatsby'
 import { useTranslation } from 'react-i18next'
 
-import Hero from '../components/blog/hero'
 import Sidebar from '../components/blog/sidebar'
 import { convertBlogPostList } from '../components/utils/blog'
 import Post from '../components/blog/post'
-import { Feedback } from '../components/documentation'
+import { Breadcrumbs, Feedback } from '../components/documentation'
 
-function Article({ data }) {
+function Article ({ data, pageContext }) {
   const { t } = useTranslation()
-  console.log('Article data', data)
   const postList = convertBlogPostList(data.articleList.edges)
 
   const currentPost = postList.find((post) => post.id === data.currentPost.id)
@@ -27,20 +25,24 @@ function Article({ data }) {
     }
   ]
 
+  const breadcrumbs = [
+    {
+      id: 1,
+      path: pageContext.config.base_path,
+      label: pageContext.config.name
+    },
+    { id: 2, path: currentPost.url, label: currentPost.title }
+  ]
+
   return (
     <div>
-      <Hero
-        title={'The HubRise Blog'}
-        description={
-          'Fresh news about new applications, API evolutions and real-word use of our platform'
-        }
-      />
+      <Breadcrumbs breadcrumbs={breadcrumbs} />
       <MainContainer>
         <Inner>
           <Sidebar postList={postList} hideSearchInput />
           <Content>
             <Post {...currentPost} hideReadMoreLink />
-            <div className="documentation">
+            <div className='documentation'>
               <MDXRenderer>{currentPost.body}</MDXRenderer>
             </div>
           </Content>
