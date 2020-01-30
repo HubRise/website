@@ -28,3 +28,8 @@ If type = `multiple`, shows as a set of checkboxes. Some `option_list` names are
 - "Ingredients" or "Ingredients 1" or "Ingredients 2"
 
 The variants with a trailing digit (1 or 2) are used for half & half products.
+
+### Things not to forget
+The iKentoo integration requires to be included in Configuration / Moyens de paiement
+
+![](../images/ikentoo_payment-info.png)
