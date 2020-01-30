@@ -30,6 +30,6 @@ If type = `multiple`, shows as a set of checkboxes. Some `option_list` names are
 The variants with a trailing digit (1 or 2) are used for half & half products.
 
 ### Things not to forget
-The iKentoo integration requires to be included in Configuration / Moyens de paiement
+The iKentoo integration requires include the payment code in Settings / Payment settings. Select your payment method and include the corresponding POS code in "Advanced settings"
 
 ![](../images/ikentoo_payment-info.png)
