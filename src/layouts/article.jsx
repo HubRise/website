@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { graphql } from 'gatsby'
 import { useTranslation } from 'react-i18next'
@@ -35,21 +34,21 @@ function Article ({ data, pageContext }) {
   ]
 
   return (
-    <div>
+    <>
       <Breadcrumbs breadcrumbs={breadcrumbs} />
-      <MainContainer>
-        <Inner>
+      <div className='section'>
+        <div className='section__in section__in_padding section__in_green section__in_left section__in_sidebar section__in_blog'>
           <Sidebar postList={postList} hideSearchInput />
-          <Content>
-            <Post {...currentPost} hideReadMoreLink />
+          <div className='section__content'>
+            <Post post={currentPost} hideReadMoreLink />
             <div className='documentation'>
               <MDXRenderer>{currentPost.body}</MDXRenderer>
             </div>
-          </Content>
-        </Inner>
-      </MainContainer>
+          </div>
+        </div>
+      </div>
       <Feedback options={feedbackOptions} />
-    </div>
+    </>
   )
 }
 
@@ -69,7 +68,11 @@ export const articlePageQuery = graphql`
           frontmatter {
             title
             picture {
-              publicURL
+              childImageSharp {
+                fixed(width: 260, height: 160) {
+                  ...GatsbyImageSharpFixed_withWebp_noBase64
+                }
+              }
             }
             layout
             shortDescription
@@ -81,27 +84,6 @@ export const articlePageQuery = graphql`
       }
     }
   }
-`
-
-const MainContainer = styled.section`
-  margin: 75px auto;
-  max-width: 1200px;
-  width: 100%;
-`
-
-const Inner = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 1024px) {
-    flex-direction: row;
-  }
-`
-
-const Content = styled.div`
-  flex: 1;
-  padding: 75px 15px;
-  background-color: #ffffff;
 `
 
 export default Article

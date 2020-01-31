@@ -1,4 +1,4 @@
-export function convertBlogPostList(edges) {
+export function convertBlogPostList (edges) {
   return edges.map((edge) => {
     const { fields, frontmatter, id, body } = edge.node
     return {
@@ -9,7 +9,9 @@ export function convertBlogPostList(edges) {
       description: frontmatter.description,
       author: frontmatter.author,
       date: new Date(frontmatter.date),
-      imageUrl: frontmatter.picture ? frontmatter.picture.publicURL : null,
+      image: frontmatter.picture
+        ? frontmatter.picture.childImageSharp.fixed
+        : null,
       body
     }
   })

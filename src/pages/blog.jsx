@@ -22,7 +22,11 @@ export const blogPageQuery = graphql`
           frontmatter {
             title
             picture {
-              publicURL
+              childImageSharp {
+                fixed(width: 260, height: 160) {
+                  ...GatsbyImageSharpFixed_withWebp_noBase64
+                }
+              }
             }
             layout
             shortDescription
