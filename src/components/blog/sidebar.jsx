@@ -3,11 +3,11 @@ import { Link } from 'gatsby'
 import cx from 'classnames'
 import { useMedia } from 'react-use'
 
-function getRecentPosts (postList) {
+function getRecentPosts(postList) {
   return [...postList].sort((a, b) => a.date - b.date).slice(0, 5)
 }
 
-function Sidebar ({ postList, searchQuery, onQueryChange, hideSearchInput }) {
+function Sidebar({ postList, searchQuery, onQueryChange, hideSearchInput }) {
   const isDesktop = useMedia('(min-width: 1024px)')
   const [query, setQuery] = useState(searchQuery || '')
   const recentPosts = getRecentPosts(postList)
@@ -20,7 +20,7 @@ function Sidebar ({ postList, searchQuery, onQueryChange, hideSearchInput }) {
     setArchiveExpanded(isDesktop)
   }, [isDesktop])
 
-  function handleSearchSubmit (event) {
+  function handleSearchSubmit(event) {
     event.preventDefault()
 
     if (query.trim() !== searchQuery) {
@@ -28,17 +28,17 @@ function Sidebar ({ postList, searchQuery, onQueryChange, hideSearchInput }) {
     }
   }
   return (
-    <aside className='section__sidebar'>
+    <aside className="section__sidebar">
       {hideSearchInput ? null : (
-        <form className='widget_search' onSubmit={handleSearchSubmit}>
+        <form className="widget_search" onSubmit={handleSearchSubmit}>
           <input
-            className='widget_search__input-search'
-            type='text'
-            placeholder='Search'
+            className="widget_search__input-search"
+            type="text"
+            placeholder="Search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
           />
-          <i className='widget_search__search-submit fa fa-search' />
+          <i className="widget_search__search-submit fa fa-search" />
         </form>
       )}
 
@@ -49,8 +49,8 @@ function Sidebar ({ postList, searchQuery, onQueryChange, hideSearchInput }) {
         )}
       >
         <h5
-          className='blog_widget__title'
-          onClick={() => setRecentPostsExpanded((prev) => !prev)}
+          className="blog_widget__title"
+          onClick={() => !isDesktop && setRecentPostsExpanded((prev) => !prev)}
         >
           Recent Posts
           <i
@@ -77,8 +77,8 @@ function Sidebar ({ postList, searchQuery, onQueryChange, hideSearchInput }) {
         )}
       >
         <h5
-          className='blog_widget__title'
-          onClick={() => setArchiveExpanded((prev) => !prev)}
+          className="blog_widget__title"
+          onClick={() => !isDesktop && setArchiveExpanded((prev) => !prev)}
         >
           Archives
           <i

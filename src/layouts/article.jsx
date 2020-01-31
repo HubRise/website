@@ -8,7 +8,7 @@ import { convertBlogPostList } from '../components/utils/blog'
 import Post from '../components/blog/post'
 import { Breadcrumbs, Feedback } from '../components/documentation'
 
-function Article ({ data, pageContext }) {
+function Article({ data, pageContext }) {
   const { t } = useTranslation()
   const postList = convertBlogPostList(data.articleList.edges)
 
@@ -36,12 +36,12 @@ function Article ({ data, pageContext }) {
   return (
     <>
       <Breadcrumbs breadcrumbs={breadcrumbs} />
-      <div className='section'>
-        <div className='section__in section__in_padding section__in_green section__in_left section__in_sidebar section__in_blog'>
+      <div className="section">
+        <div className="section__in section__in_padding section__in_green section__in_left section__in_sidebar section__in_blog">
           <Sidebar postList={postList} hideSearchInput />
-          <div className='section__content'>
+          <div className="section__content">
             <Post post={currentPost} hideReadMoreLink />
-            <div className='documentation'>
+            <div className="documentation">
               <MDXRenderer>{currentPost.body}</MDXRenderer>
             </div>
           </div>

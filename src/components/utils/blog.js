@@ -1,4 +1,4 @@
-export function convertBlogPostList (edges) {
+export function convertBlogPostList(edges) {
   return edges.map((edge) => {
     const { fields, frontmatter, id, body } = edge.node
     return {
