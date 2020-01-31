@@ -18,7 +18,6 @@ export const blogPageQuery = graphql`
           fields {
             slug
           }
-          body
           frontmatter {
             title
             picture {
@@ -28,7 +27,6 @@ export const blogPageQuery = graphql`
                 }
               }
             }
-            layout
             shortDescription
             description
             author

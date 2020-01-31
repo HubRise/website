@@ -4,7 +4,40 @@ import cx from 'classnames'
 import { useMedia } from 'react-use'
 
 function getRecentPosts(postList) {
-  return [...postList].sort((a, b) => a.date - b.date).slice(0, 5)
+  return [...postList].sort((a, b) => b.date - a.date).slice(0, 5)
+}
+
+const monthList = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'
+]
+
+function getArchiveList(postList) {
+  const sortedPostList = [...postList].sort((a, b) => b.date - a.date)
+  const archiveSet = new Set()
+
+  sortedPostList.forEach((post) => {
+    const archiveCell =
+      post.date.getFullYear() === new Date().getFullYear()
+        ? `${monthList[post.date.getMonth()]} ${post.date.getFullYear()}`
+        : post.date.getFullYear().toString()
+
+    if (!archiveSet.has(archiveCell)) {
+      archiveSet.add(archiveCell)
+    }
+  })
+
+  return Array.from(archiveSet.values())
 }
 
 function Sidebar({ postList, searchQuery, onQueryChange, hideSearchInput }) {
@@ -27,6 +60,8 @@ function Sidebar({ postList, searchQuery, onQueryChange, hideSearchInput }) {
       onQueryChange(query.trim())
     }
   }
+
+  const archiveList = getArchiveList(postList)
   return (
     <aside className="section__sidebar">
       {hideSearchInput ? null : (
@@ -90,12 +125,11 @@ function Sidebar({ postList, searchQuery, onQueryChange, hideSearchInput }) {
           />
         </h5>
         <ul>
-          <li>
-            <Link to={'/blog'}>November 2016</Link>
-          </li>
-          <li>
-            <Link to={'/blog'}>November 2016</Link>
-          </li>
+          {archiveList.map((archiveName) => (
+            <li>
+              <Link to={'/blog'}>{archiveName}</Link>
+            </li>
+          ))}
         </ul>
       </div>
     </aside>
