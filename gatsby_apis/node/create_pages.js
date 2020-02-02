@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const yaml = require('js-yaml')
 
-const locales = require('../../src/i18n/locales');
+const locales = require('../../src/i18n/locales')
 
 const allLocaleCodes = Object.keys(locales)
 const { getDefaultLocale } = require(path.join(__dirname, `utils`))
@@ -13,12 +13,11 @@ const pathToContent = path.join(process.cwd(), `content`)
 const getLayout = (name) => path.join(pathToLayouts, `${name}.jsx`)
 
 function normalizePath(filePath) {
-  return filePath.split(path.sep).join(path.posix.sep);
+  return filePath.split(path.sep).join(path.posix.sep)
 }
 
 /** Get content from MDX files of certain directory */
 const getMdxContent = async (pathToDirectory, graphql) => {
-
   /** this glob matches all files inside directory */
   const glob = `"${pathToDirectory}/*"`
 
@@ -64,7 +63,9 @@ const createPageFromMdxNode = (node, locale, actions) => {
     fs.readFileSync(path.join(currentDirectory, `customization.yaml`), `utf-8`)
   )
 
-  const relativePath = normalizePath(path.posix.sep + path.relative(process.cwd(), fileAbsolutePath));
+  const relativePath = normalizePath(
+    path.posix.sep + path.relative(process.cwd(), fileAbsolutePath)
+  )
 
   actions.createPage({
     path: (locale.default ? `` : locale.code) + fields.slug,
@@ -86,18 +87,19 @@ const createPageFromMdxNode = (node, locale, actions) => {
 }
 
 const getDirectoriesWithMdxFiles = () => {
-  const mdxDirectories = [];
+  const mdxDirectories = []
 
   const parseDirectory = ({ pathToDirectory, locale }) => {
-    const filenames = fs.readdirSync(pathToDirectory);
+    const filenames = fs.readdirSync(pathToDirectory)
 
-    return filenames.map((fileName) => {
+    return filenames.forEach((fileName) => {
       const pathToFile = path.join(pathToDirectory, fileName)
 
+      const isNestedFolderName = (filename) =>
+        filename !== 'images' && !allLocaleCodes.includes(filename)
 
-      const isNestedFolderName = filename => filename !== 'images' && !allLocaleCodes.includes(filename);
-
-      const nestedFolderList = fs.readdirSync(pathToFile)
+      const nestedFolderList = fs
+        .readdirSync(pathToFile)
         .filter(isNestedFolderName)
 
       if (nestedFolderList.length > 0) {
@@ -108,8 +110,8 @@ const getDirectoriesWithMdxFiles = () => {
       const pathToLocalizedPages = path.join(pathToFile, locale.code)
 
       if (fs.existsSync(pathToLocalizedPages)) {
-        mdxDirectories.push({ path: pathToLocalizedPages, locale });
-        return;
+        mdxDirectories.push({ path: pathToLocalizedPages, locale })
+        return
       }
 
       // Current locale is default and respective folder with pages is missing -
@@ -123,26 +125,187 @@ const getDirectoriesWithMdxFiles = () => {
 
       // For every other locale, fallback to content in default locale, if available.
       if (fs.existsSync(pathToPagesInDefaultLocale)) {
-        mdxDirectories.push({ path: pathToPagesInDefaultLocale, locale });
+        mdxDirectories.push({ path: pathToPagesInDefaultLocale, locale })
       }
     })
   }
 
-  Object.values(locales).forEach(locale => parseDirectory({ pathToDirectory: pathToContent, locale }));
+  Object.values(locales).forEach((locale) =>
+    parseDirectory({ pathToDirectory: pathToContent, locale })
+  )
 
-  return mdxDirectories;
+  return mdxDirectories
+}
+
+const getBlogPostList = async (graphql) => {
+  const { data, errors } = await graphql(`
+    query getPostList {
+      allMdx(filter: { fields: { slug: { glob: "/blog/*" } } }) {
+        edges {
+          node {
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              picture {
+                childImageSharp {
+                  fixed(width: 260, height: 160) {
+                    ...GatsbyImageSharpFixed_withWebp_noBase64
+                  }
+                }
+              }
+              shortDescription
+              author
+              date
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  if (errors) {
+    return Promise.reject(errors)
+  }
+
+  return data
+}
+
+const getArchiveInfoFromPostDate = (date) => {
+  return {
+    year: date.getFullYear(),
+    month: date.getMonth(),
+    isCurrentYear: date.getFullYear() === new Date().getFullYear()
+  }
+}
+
+const generateArchiveList = (postDateList) => {
+  const sortedDates = [...postDateList].sort((a, b) => b - a)
+  const archiveMap = new Map()
+
+  sortedDates.forEach((date) => {
+    const archiveInfo = getArchiveInfoFromPostDate(date)
+    const archiveKey = archiveInfo.isCurrentYear
+      ? [archiveInfo.year, archiveInfo.month].join('_')
+      : archiveInfo.year.toString()
+
+    if (!archiveMap.has(archiveKey)) {
+      archiveMap.set(archiveKey, archiveInfo)
+    }
+  })
+
+  return Array.from(archiveMap.values())
+}
+
+const createBlogPages = async ({ actions, graphql }) => {
+  const {
+    allMdx: { edges: postList }
+  } = await getBlogPostList(graphql)
+
+  actions.createPage({
+    path: '/blog',
+    component: getLayout('blog'),
+    context: {
+      // TODO add meta
+      // id,
+      // meta,
+      config: null,
+      lang: 'en',
+      pageType: 'BLOG'
+    }
+  })
+
+  const archiveList = generateArchiveList(
+    postList.map((post) => new Date(post.node.frontmatter.date))
+  )
+
+  archiveList.forEach((archive) => {
+    actions.createPage({
+      path: archive.isCurrentYear
+        ? `/blog/${archive.year}/${archive.month}`
+        : `/blog/${archive.year}`,
+      component: getLayout('blog'),
+      context: {
+        // TODO add meta
+        // id,
+        // meta,
+        config: null,
+        lang: 'en',
+        pageType: 'BLOG_ARCHIVE',
+        archive
+      }
+    })
+  })
+
+  postList.forEach((postEdge) => {
+    const { fields, frontmatter, id, body, fileAbsolutePath } = postEdge.node
+    const { layout, meta, date } = frontmatter
+
+    const fileName = path.basename(
+      fileAbsolutePath,
+      path.extname(fileAbsolutePath)
+    )
+
+    actions.createPage({
+      path: `/blog/${fileName}`,
+      component: getLayout(layout),
+      context: {
+        id,
+        meta,
+        config: null,
+        lang: 'en',
+        currentPost: {
+          id,
+          url: `/blog/${fileName}`
+        },
+        pageType: 'BLOG_ARTICLE'
+      }
+    })
+
+    const archiveInfo = getArchiveInfoFromPostDate(new Date(date))
+
+    /** "2020-01-29_article-title" -> "2020-01-29_article-title" */
+    const archiveArticleUrl = `/blog/${archiveInfo.year}/${
+      archiveInfo.month
+    }/${fileName.slice(11)}`
+
+    actions.createPage({
+      path: archiveArticleUrl,
+      component: getLayout(layout),
+      context: {
+        id,
+        meta,
+        config: null,
+        lang: 'en',
+        currentPost: {
+          id,
+          url: archiveArticleUrl
+        },
+        pageType: 'BLOG_ARCHIVE_ARTICLE',
+        archive: archiveInfo
+      }
+    })
+  })
 }
 
 const createPages = async ({ actions, graphql }) => {
-  const directoriesWithMdxFiles = getDirectoriesWithMdxFiles();
+  const directoriesWithMdxFiles = getDirectoriesWithMdxFiles()
 
-  const promises = directoriesWithMdxFiles.map(async directory => {
-    const { allMdx: { nodes: mdxNodes } } = await getMdxContent(directory.path, graphql)
-    mdxNodes.forEach((node) => createPageFromMdxNode(node, directory.locale, actions))
+  const promises = directoriesWithMdxFiles.map(async (directory) => {
+    const {
+      allMdx: { nodes: mdxNodes }
+    } = await getMdxContent(directory.path, graphql)
+    mdxNodes.forEach((node) =>
+      createPageFromMdxNode(node, directory.locale, actions)
+    )
   })
 
+  const blogPromise = createBlogPages({ actions, graphql })
+
   try {
-    await Promise.all(promises)
+    await Promise.all([...promises, blogPromise])
   } catch (error) {
     console.error(`An error occurred while creating pages from MDX`, error)
   }

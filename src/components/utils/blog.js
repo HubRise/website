@@ -6,7 +6,6 @@ export function convertBlogPostList(edges) {
       url: fields.slug,
       title: frontmatter.title,
       shortDescription: frontmatter.shortDescription,
-      description: frontmatter.description,
       author: frontmatter.author,
       date: new Date(frontmatter.date),
       image: frontmatter.picture

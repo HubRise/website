@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
-import { navigate } from 'gatsby'
+import { graphql, navigate } from 'gatsby'
 
 import Hero from '../components/blog/hero'
 import Sidebar from '../components/blog/sidebar'
 import Post from '../components/blog/post'
+import { convertBlogPostList } from '../components/utils/blog'
 
-function Blog({ postList }) {
+function Blog({ data }) {
+  const postList = convertBlogPostList(data.allMdx.edges)
+
   const [searchQuery, setSearchQuery] = useState('')
 
   const filteredPostList = postList.filter((post) =>
@@ -44,5 +47,34 @@ function Blog({ postList }) {
     </div>
   )
 }
+
+export const blogPageQuery = graphql`
+  query getArticleList {
+    allMdx(filter: { fields: { slug: { glob: "/blog/*" } } }) {
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            picture {
+              childImageSharp {
+                fixed(width: 260, height: 160) {
+                  ...GatsbyImageSharpFixed_withWebp_noBase64
+                }
+              }
+            }
+            shortDescription
+            description
+            author
+            date
+          }
+        }
+      }
+    }
+  }
+`
 
 export default Blog
