@@ -20,7 +20,7 @@ const DocumentationPage = ({ data, path, pageContext }) => {
     ({ id }) => id === data.currentPage.id
   )
   const { frontmatter, body } = currentPage
-  const { title, gallery, app_info } = frontmatter
+  const { title, gallery, app_info, extension_info } = frontmatter
 
   const breadcrumbs = getBreadcrumbs(
     data.currentAndSiblingPages.nodes,
@@ -82,6 +82,7 @@ const DocumentationPage = ({ data, path, pageContext }) => {
             />
           )}
           {app_info && <AppInfo content={app_info} />}
+          {extension_info && <AppInfo content={extension_info} />}
         </div>
       </section>
       <Feedback relativeFilePath={pageContext.relativePath} />
@@ -112,6 +113,9 @@ export const documentationPageQuery = graphql`
             price_range
             website
             contact
+          }
+          extension_info {
+            current_version
           }
         }
         fields {
@@ -150,6 +154,9 @@ DocumentationPage.propTypes = {
               price_range: PropTypes.string,
               website: PropTypes.string,
               contact: PropTypes.string
+            }),
+            extension_info: PropTypes.shape({
+              current_version: PropTypes.string
             })
           }),
           fields: PropTypes.shape({
