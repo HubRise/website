@@ -1,13 +1,29 @@
 import React, { useState } from 'react'
 import { graphql, navigate } from 'gatsby'
+import { useTranslation } from 'react-i18next'
 
 import Hero from '../components/blog/hero'
 import Sidebar from '../components/blog/sidebar'
 import Post from '../components/blog/post'
-import { convertBlogPostList } from '../components/utils/blog'
+import { convertArticleData, getArchiveTitle } from '../components/utils/blog'
+import { Breadcrumbs } from '../components/documentation'
 
-function Blog({ data }) {
-  const postList = convertBlogPostList(data.allMdx.edges)
+function Blog({ data, pageContext }) {
+  const { t } = useTranslation()
+  const { archive } = pageContext
+  let postList = data.allMdx.edges.map((articleEdge) =>
+    convertArticleData(articleEdge.node)
+  )
+
+  /** Display only articles from selected archive */
+  if (archive) {
+    postList = postList.filter((post) =>
+      archive.isCurrentYear
+        ? archive.year === post.date.getFullYear() &&
+          archive.month === post.date.getMonth()
+        : archive.year === post.date.getFullYear()
+    )
+  }
 
   const [searchQuery, setSearchQuery] = useState('')
 
@@ -17,23 +33,43 @@ function Blog({ data }) {
 
   function handleQueryChange(newQuery) {
     setSearchQuery(newQuery)
-    navigate(`/blog?q=${newQuery.trim()}`)
+    navigate(`${window.location.pathname}?q=${newQuery.trim()}`)
   }
 
-  return (
-    <div>
-      <Hero
-        title={'The HubRise Blog'}
-        description={
-          'Fresh news about new applications, API evolutions and real-word use of our platform'
+  const breadcrumbs = archive
+    ? [
+        {
+          id: 1,
+          path: '/blog',
+          label: 'Blog'
+        },
+        {
+          id: 2,
+          path: null,
+          label: `${t('misc.archive')} - ${getArchiveTitle(archive, t)}`
         }
-      />
+      ]
+    : []
+
+  return (
+    <>
+      {archive ? (
+        <Breadcrumbs breadcrumbs={breadcrumbs} />
+      ) : (
+        <Hero
+          title={'The HubRise Blog'}
+          description={
+            'Fresh news about new applications, API evolutions and real-word use of our platform'
+          }
+        />
+      )}
       <section className="section">
         <div className="section__in section__in_padding section__in_green section__in_left section__in_sidebar section__in_blog">
           <Sidebar
             postList={postList}
             searchQuery={searchQuery}
             onQueryChange={handleQueryChange}
+            hideSearchInput={Boolean(archive)}
           />
           <div className="section__content">
             <ul className="articles">
@@ -44,7 +80,7 @@ function Blog({ data }) {
           </div>
         </div>
       </section>
-    </div>
+    </>
   )
 }
 
@@ -67,7 +103,6 @@ export const blogPageQuery = graphql`
               }
             }
             shortDescription
-            description
             author
             date
           }

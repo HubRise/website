@@ -1,7 +1,6 @@
 const fs = require(`fs`)
 const path = require(`path`)
 const yaml = require('js-yaml')
-const util = require('util')
 
 const onCreateNode = ({ node, actions }) => {
   if (node.internal.type === `Mdx`) {
@@ -13,20 +12,20 @@ const onCreateNode = ({ node, actions }) => {
         `utf-8`
       )
     )
+
     let fileName = path.basename(
       fileAbsolutePath,
       path.extname(fileAbsolutePath)
     )
 
     if (config.base_path === '/blog') {
-      /** "2020-01-29_article-title" -> "2020-01-29_article-title" */
+      /** "2020-01-29_article-title" -> "article-title" */
       fileName = fileName.slice(11)
     }
 
-    const slug = (
+    const slug =
       (config.base_path === `/` ? `` : config.base_path) +
       (frontmatter.path_override ? frontmatter.path_override : `/${fileName}/`)
-    )
 
     createNodeField({
       node,

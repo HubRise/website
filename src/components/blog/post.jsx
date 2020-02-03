@@ -1,8 +1,11 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import GatsbyImage from 'gatsby-image'
+import { useTranslation } from 'react-i18next'
+
+import Link from '../link'
 
 function Post({ post, hideLinks }) {
+  const { t } = useTranslation()
   const { title, image, shortDescription, date, author, url } = post
   return (
     <li className="articles__item">
@@ -19,16 +22,16 @@ function Post({ post, hideLinks }) {
         )}
         <div className="articles__description-block">
           <p className="articles__date">
-            Posted on{' '}
+            {t('misc.posted_on')}{' '}
             <span className="articles__date-value">
               {date.toLocaleDateString()}
             </span>{' '}
-            by {author}
+            {t('misc.by')} {author}
           </p>
           <p className="articles__description">{shortDescription}</p>
           {hideLinks ? null : (
             <Link to={url} className="articles__read-more">
-              Read More
+              {t('misc.read_more')}
             </Link>
           )}
         </div>

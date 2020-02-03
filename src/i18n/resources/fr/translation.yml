@@ -26,11 +26,35 @@ layout:
 
 misc:
   feedback:
-    title: Feedback sur cette page
-    description: 'Si vous avez repéré une erreur ou souhaitez améliorer cette page, vous pouvez :'
+    title:
+      default: Feedback sur cette page
+      article: Commentaires sur cet article
+    description:
+      default: 'Si vous avez repéré une erreur ou souhaitez améliorer cette page, vous pouvez :'
+      article: Les commentaires sont les bienvenus. N'hésitez pas à nous faire part de vos remarques [en nous envoyant un message]. Nous vous répondrons.
     options:
       send_email: Nous envoyer un email
       edit_page: Ou éditer cette page et nous soumettre un Pull Request
+  month_list:
+    - Janvier
+    - Février
+    - Mars
+    - Avril
+    - Mai
+    - Juin
+    - Juillet
+    - Aout
+    - Septembre
+    - Octobre
+    - Novembre
+    - Décembre
+  archive: Archive
+  archives: Les archives
+  recent_posts: Messages récents
+  read_more: Lire la suite
+  posted_on: Publié le
+  by: par
+  search: Chercher
 
 forms:
   validation:

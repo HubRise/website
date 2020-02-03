@@ -24,11 +24,35 @@ layout:
 
 misc:
   feedback:
-    title: Feedback on this page
-    description: 'If you spotted an error or a need for improvement, you can:'
+    title:
+      default: Feedback on this page
+      article: Feedback on this article
+    description:
+      default: 'If you spotted an error or a need for improvement, you can:'
+      article: Comments on this article are welcome. Don't hesitate to share your thoughts [by sending us a message]. We will reply to you.
     options:
       send_email: Send us an email
       edit_page: Or edit this page and submit a Pull Request
+  month_list:
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+  archive: Archive
+  archives: Archives
+  recent_posts: Recent posts
+  read_more: Read More
+  posted_on: Posted on
+  by: by
+  search: Search
 
 forms:
   validation:

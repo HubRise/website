@@ -39,6 +39,10 @@
       &:hover {
         color: $hr-green;
       }
+
+      &.active {
+        color: $hr-green;
+      }
     }
   }
   &__hidden {

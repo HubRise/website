@@ -148,17 +148,12 @@ const getBlogPostList = async (graphql) => {
               slug
             }
             frontmatter {
-              title
-              picture {
-                childImageSharp {
-                  fixed(width: 260, height: 160) {
-                    ...GatsbyImageSharpFixed_withWebp_noBase64
-                  }
-                }
+              meta {
+                description
+                title
               }
-              shortDescription
-              author
               date
+              layout
             }
           }
         }
@@ -204,88 +199,36 @@ const createBlogPages = async ({ actions, graphql }) => {
     allMdx: { edges: postList }
   } = await getBlogPostList(graphql)
 
-  actions.createPage({
-    path: '/blog',
-    component: getLayout('blog'),
-    context: {
-      // TODO add meta
-      // id,
-      // meta,
-      config: null,
-      lang: 'en',
-      pageType: 'BLOG'
-    }
-  })
-
   const archiveList = generateArchiveList(
     postList.map((post) => new Date(post.node.frontmatter.date))
   )
 
-  archiveList.forEach((archive) => {
+  const BLOG_PAGE_PATH = '/blog'
+
+  Object.values(locales).forEach((locale) => {
     actions.createPage({
-      path: archive.isCurrentYear
-        ? `/blog/${archive.year}/${archive.month}`
-        : `/blog/${archive.year}`,
+      path: (locale.default ? `` : locale.code) + BLOG_PAGE_PATH,
       component: getLayout('blog'),
       context: {
-        // TODO add meta
-        // id,
-        // meta,
         config: null,
-        lang: 'en',
-        pageType: 'BLOG_ARCHIVE',
-        archive
-      }
-    })
-  })
-
-  postList.forEach((postEdge) => {
-    const { fields, frontmatter, id, body, fileAbsolutePath } = postEdge.node
-    const { layout, meta, date } = frontmatter
-
-    const fileName = path.basename(
-      fileAbsolutePath,
-      path.extname(fileAbsolutePath)
-    )
-
-    actions.createPage({
-      path: `/blog/${fileName}`,
-      component: getLayout(layout),
-      context: {
-        id,
-        meta,
-        config: null,
-        lang: 'en',
-        currentPost: {
-          id,
-          url: `/blog/${fileName}`
-        },
-        pageType: 'BLOG_ARTICLE'
+        lang: locale.code
       }
     })
 
-    const archiveInfo = getArchiveInfoFromPostDate(new Date(date))
-
-    /** "2020-01-29_article-title" -> "2020-01-29_article-title" */
-    const archiveArticleUrl = `/blog/${archiveInfo.year}/${
-      archiveInfo.month
-    }/${fileName.slice(11)}`
-
-    actions.createPage({
-      path: archiveArticleUrl,
-      component: getLayout(layout),
-      context: {
-        id,
-        meta,
-        config: null,
-        lang: 'en',
-        currentPost: {
-          id,
-          url: archiveArticleUrl
-        },
-        pageType: 'BLOG_ARCHIVE_ARTICLE',
-        archive: archiveInfo
-      }
+    archiveList.forEach((archive) => {
+      actions.createPage({
+        path:
+          (locale.default ? `` : locale.code) +
+          (archive.isCurrentYear
+            ? `${BLOG_PAGE_PATH}/${archive.year}/${archive.month + 1}`
+            : `${BLOG_PAGE_PATH}/${archive.year}`),
+        component: getLayout('blog'),
+        context: {
+          config: null,
+          lang: locale.code,
+          archive
+        }
+      })
     })
   })
 }

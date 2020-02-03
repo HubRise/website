@@ -1,49 +1,39 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import cx from 'classnames'
 import { useMedia } from 'react-use'
+import { useTranslation } from 'react-i18next'
 
-function getRecentPosts(postList) {
-  return [...postList].sort((a, b) => b.date - a.date).slice(0, 5)
+import {
+  generateArchiveList,
+  getArchiveLink,
+  getArchiveTitle
+} from '../utils/blog'
+import Link from '../link'
+
+function getRecentPosts(articleEdges) {
+  return articleEdges
+    .map((edge) => {
+      const { frontmatter, id, fields } = edge.node
+      return {
+        id,
+        title: frontmatter.title,
+        date: new Date(frontmatter.date),
+        url: fields.slug
+      }
+    })
+    .sort((a, b) => b.date - a.date)
+    .slice(0, 5)
 }
 
-const monthList = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December'
-]
+function Sidebar({ searchQuery, onQueryChange, hideSearchInput }) {
+  const { t } = useTranslation()
+  const {
+    allMdx: { edges: articleEdges }
+  } = useStaticQuery(blogSidebarQuery)
 
-function getArchiveList(postList) {
-  const sortedPostList = [...postList].sort((a, b) => b.date - a.date)
-  const archiveSet = new Set()
-
-  sortedPostList.forEach((post) => {
-    const archiveCell =
-      post.date.getFullYear() === new Date().getFullYear()
-        ? `${monthList[post.date.getMonth()]} ${post.date.getFullYear()}`
-        : post.date.getFullYear().toString()
-
-    if (!archiveSet.has(archiveCell)) {
-      archiveSet.add(archiveCell)
-    }
-  })
-
-  return Array.from(archiveSet.values())
-}
-
-function Sidebar({ postList, searchQuery, onQueryChange, hideSearchInput }) {
   const isDesktop = useMedia('(min-width: 1024px)')
   const [query, setQuery] = useState(searchQuery || '')
-  const recentPosts = getRecentPosts(postList)
 
   const [isRecentPostsExpanded, setRecentPostsExpanded] = useState(true)
   const [isArchiveExpanded, setArchiveExpanded] = useState(true)
@@ -61,7 +51,12 @@ function Sidebar({ postList, searchQuery, onQueryChange, hideSearchInput }) {
     }
   }
 
-  const archiveList = getArchiveList(postList)
+  const recentPosts = getRecentPosts(articleEdges)
+
+  const archiveList = generateArchiveList(
+    articleEdges.map((edge) => new Date(edge.node.frontmatter.date))
+  )
+
   return (
     <aside className="section__sidebar">
       {hideSearchInput ? null : (
@@ -69,7 +64,7 @@ function Sidebar({ postList, searchQuery, onQueryChange, hideSearchInput }) {
           <input
             className="widget_search__input-search"
             type="text"
-            placeholder="Search"
+            placeholder={t('misc.search')}
             value={query}
             onChange={(event) => setQuery(event.target.value)}
           />
@@ -87,7 +82,7 @@ function Sidebar({ postList, searchQuery, onQueryChange, hideSearchInput }) {
           className="blog_widget__title"
           onClick={() => !isDesktop && setRecentPostsExpanded((prev) => !prev)}
         >
-          Recent Posts
+          {t('misc.recent_posts')}
           <i
             className={cx(
               'fa',
@@ -99,7 +94,9 @@ function Sidebar({ postList, searchQuery, onQueryChange, hideSearchInput }) {
         <ul>
           {recentPosts.map((post) => (
             <li key={post.id}>
-              <Link to={post.url}>{post.title}</Link>
+              <Link to={post.url} activeClassName="active">
+                {post.title}
+              </Link>
             </li>
           ))}
         </ul>
@@ -115,7 +112,7 @@ function Sidebar({ postList, searchQuery, onQueryChange, hideSearchInput }) {
           className="blog_widget__title"
           onClick={() => !isDesktop && setArchiveExpanded((prev) => !prev)}
         >
-          Archives
+          {t('misc.archives')}
           <i
             className={cx(
               'fa',
@@ -125,9 +122,11 @@ function Sidebar({ postList, searchQuery, onQueryChange, hideSearchInput }) {
           />
         </h5>
         <ul>
-          {archiveList.map((archiveName) => (
+          {archiveList.map((archiveInfo) => (
             <li>
-              <Link to={'/blog'}>{archiveName}</Link>
+              <Link to={getArchiveLink(archiveInfo)} activeClassName="active">
+                {getArchiveTitle(archiveInfo, t)}
+              </Link>
             </li>
           ))}
         </ul>
@@ -135,5 +134,24 @@ function Sidebar({ postList, searchQuery, onQueryChange, hideSearchInput }) {
     </aside>
   )
 }
+
+const blogSidebarQuery = graphql`
+  query getSidebarData {
+    allMdx(filter: { fields: { slug: { glob: "/blog/*" } } }) {
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            date
+          }
+        }
+      }
+    }
+  }
+`
 
 export default Sidebar

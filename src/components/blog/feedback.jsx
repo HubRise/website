@@ -27,12 +27,14 @@ export const ArticleFeedback = ({ options }) => {
               fixedWidth
             />
           </button>
-          <p className="feedback__title">Feedback on this article</p>
+          <p className="feedback__title">{t(`misc.feedback.title.article`)}</p>
         </div>
       </section>
       {isExpanded && (
         <section className="feedback__section feedback__instructions">
-          <p className="feedback__paragraph">Lorem ipsum</p>
+          <p className="feedback__paragraph">
+            {t(`misc.feedback.description.article`)}
+          </p>
           <ul>
             {options.map((option) => (
               <li className="feedback__instructions-list-item">
