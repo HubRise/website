@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
-const FaqPage = ({ data }) => {
+const SimplePage = ({ data }) => {
   const { frontmatter, body } = data.mdx
   return (
     <section className="section faq">
@@ -18,7 +18,7 @@ const FaqPage = ({ data }) => {
 }
 
 export const faqPageQuery = graphql`
-  query getFaqPageContent($id: String!) {
+  query getSimplePageContent($id: String!) {
     mdx(id: { eq: $id }) {
       frontmatter {
         title
@@ -28,7 +28,7 @@ export const faqPageQuery = graphql`
   }
 `
 
-FaqPage.propTypes = {
+SimplePage.propTypes = {
   data: PropTypes.shape({
     mdx: PropTypes.shape({
       frontmatter: PropTypes.shape({
@@ -39,4 +39,4 @@ FaqPage.propTypes = {
   })
 }
 
-export default FaqPage
+export default SimplePage
