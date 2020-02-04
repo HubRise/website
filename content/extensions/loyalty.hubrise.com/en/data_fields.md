@@ -7,10 +7,11 @@ meta:
   description:
 ---
 
-| Resource  | Field name | Type | Description |
-| --- | --- | --- | --- |
-| `customers/:id` | `member_id` | string | Identifies a member of the loyalty club |
+## Customer
 
+| Field name | Type | Description |
+| --- | --- | --- |
+| `member_id` | string | Identifies a member of the loyalty club |
 
 #### Example:
 
