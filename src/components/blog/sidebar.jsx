@@ -27,10 +27,14 @@ function getRecentPosts(articleEdges) {
 }
 
 function Sidebar({ searchQuery, onQueryChange, hideSearchInput }) {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const {
     allMdx: { edges: articleEdges }
   } = useStaticQuery(blogSidebarQuery)
+
+  const filteredArticleEdges = articleEdges.filter(
+    (edge) => edge.node.fields.contentLang === i18n.language
+  )
 
   const isDesktop = useMedia('(min-width: 1024px)')
   const [query, setQuery] = useState(searchQuery || '')
@@ -51,10 +55,10 @@ function Sidebar({ searchQuery, onQueryChange, hideSearchInput }) {
     }
   }
 
-  const recentPosts = getRecentPosts(articleEdges)
+  const recentPosts = getRecentPosts(filteredArticleEdges)
 
   const archiveList = generateArchiveList(
-    articleEdges.map((edge) => new Date(edge.node.frontmatter.date))
+    filteredArticleEdges.map((edge) => new Date(edge.node.frontmatter.date))
   )
 
   return (
@@ -143,6 +147,7 @@ const blogSidebarQuery = graphql`
           id
           fields {
             slug
+            contentLang
           }
           frontmatter {
             title

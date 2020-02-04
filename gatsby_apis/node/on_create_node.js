@@ -1,6 +1,23 @@
 const fs = require(`fs`)
 const path = require(`path`)
 const yaml = require('js-yaml')
+const locales = require('../../src/i18n/locales')
+
+function normalizePath(filePath) {
+  return filePath.split(path.sep).join(path.posix.sep)
+}
+
+function getContentLangFromPath(relativePath) {
+  const defaultLocale = Object.values(locales).find((locale) => locale.default)
+  const defaultLang = defaultLocale ? defaultLocale.code : 'en'
+
+  const contentLocale = Object.values(locales).find((locale) => {
+    const langPath = path.posix.sep + locale.code + path.posix.sep
+    return relativePath.includes(langPath)
+  })
+
+  return contentLocale ? contentLocale.code : defaultLang
+}
 
 const onCreateNode = ({ node, actions }) => {
   if (node.internal.type === `Mdx`) {
@@ -31,6 +48,16 @@ const onCreateNode = ({ node, actions }) => {
       node,
       name: `slug`,
       value: slug.replace(/_/g, `-`)
+    })
+
+    const relativePath = normalizePath(
+      path.posix.sep + path.relative(process.cwd(), fileAbsolutePath)
+    )
+
+    createNodeField({
+      node,
+      name: `contentLang`,
+      value: getContentLangFromPath(relativePath)
     })
   }
 }

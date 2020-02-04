@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { useTranslation } from 'react-i18next'
-import PropTypes from 'prop-types'
 
-import Link from '../../components/link'
+import { useLayoutContext } from '../../context/layout'
 
-export const ArticleFeedback = ({ options }) => {
+export const ArticleFeedback = () => {
   const [isExpanded, setIsExpanded] = useState(false)
+  const { forms } = useLayoutContext()
   const { t } = useTranslation()
 
   return (
@@ -33,28 +33,17 @@ export const ArticleFeedback = ({ options }) => {
       {isExpanded && (
         <section className="feedback__section feedback__instructions">
           <p className="feedback__paragraph">
-            {t(`misc.feedback.description.article`)}
+            {t(`misc.feedback.description.article_part_1`)}{' '}
+            <span
+              onClick={forms.contact.toggle}
+              className="feedback__contact-button"
+            >
+              {t(`misc.feedback.description.article_part_2`)}
+            </span>
+            . {t(`misc.feedback.description.article_part_3`)}
           </p>
-          <ul>
-            {options.map((option) => (
-              <li className="feedback__instructions-list-item">
-                <Link className="feedback__link" to={option.url}>
-                  {option.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
         </section>
       )}
     </section>
-  )
-}
-
-ArticleFeedback.propTypes = {
-  options: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string,
-      url: PropTypes.string
-    })
   )
 }

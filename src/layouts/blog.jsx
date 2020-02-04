@@ -11,9 +11,9 @@ import { Breadcrumbs } from '../components/documentation'
 function Blog({ data, pageContext }) {
   const { t } = useTranslation()
   const { archive } = pageContext
-  let postList = data.allMdx.edges.map((articleEdge) =>
-    convertArticleData(articleEdge.node)
-  )
+  let postList = data.allMdx.edges
+    .filter((edge) => edge.node.fields.contentLang === pageContext.lang)
+    .map((articleEdge) => convertArticleData(articleEdge.node))
 
   /** Display only articles from selected archive */
   if (archive) {
@@ -92,6 +92,7 @@ export const blogPageQuery = graphql`
           id
           fields {
             slug
+            contentLang
           }
           frontmatter {
             title
