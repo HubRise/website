@@ -13,17 +13,6 @@ function Article({ data, pageContext }) {
   const { t } = useTranslation()
   const article = convertArticleData(data.currentArticle)
 
-  const feedbackOptions = [
-    {
-      title: t('misc.feedback.options.send_email'),
-      url: 'mailto:support@hubrise.com'
-    },
-    {
-      title: t('misc.feedback.options.edit_page'),
-      url: `https://github.com/HubRise/website`
-    }
-  ]
-
   const breadcrumbs = [
     {
       id: 1,
@@ -47,7 +36,7 @@ function Article({ data, pageContext }) {
           </div>
         </div>
       </div>
-      <ArticleFeedback options={feedbackOptions} />
+      <ArticleFeedback />
     </>
   )
 }

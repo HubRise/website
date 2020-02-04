@@ -24,17 +24,17 @@ layout:
 
 misc:
   feedback:
-    title:
-      default: Feedback on this page
-      article: Feedback on this article
-    description:
-      default: 'If you spotted an error or a need for improvement, you can:'
-      article_part_1: Comments on this article are welcome. Don't hesitate to share your thoughts
-      article_part_2: by sending us a message
-      article_part_3: We will reply to you.
-    options:
-      send_email: Send us an email
-      edit_page: Or edit this page and submit a Pull Request
+    blog:
+      title: Feedback on this article
+      part_1: Share your thoughts
+      part_2: by sending us a message
+      part_3: We will reply to you.
+    documentation:
+      title: Feedback on this page
+      description: 'If you spotted an error or a need for improvement, you can:'
+      options:
+        send_email: Send us an email
+        edit_page: Or edit this page and submit a Pull Request
   month_list:
     - January
     - February

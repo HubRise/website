@@ -27,20 +27,20 @@ export const ArticleFeedback = () => {
               fixedWidth
             />
           </button>
-          <p className="feedback__title">{t(`misc.feedback.title.article`)}</p>
+          <p className="feedback__title">{t(`misc.feedback.blog.title`)}</p>
         </div>
       </section>
       {isExpanded && (
         <section className="feedback__section feedback__instructions">
           <p className="feedback__paragraph">
-            {t(`misc.feedback.description.article_part_1`)}{' '}
+            {t(`misc.feedback.blog.part_1`)}{' '}
             <span
               onClick={forms.contact.toggle}
               className="feedback__contact-button"
             >
-              {t(`misc.feedback.description.article_part_2`)}
+              {t(`misc.feedback.blog.part_2`)}
             </span>
-            . {t(`misc.feedback.description.article_part_3`)}
+            . {t(`misc.feedback.blog.part_3`)}
           </p>
         </section>
       )}

@@ -26,17 +26,17 @@ layout:
 
 misc:
   feedback:
-    title:
-      default: Feedback sur cette page
-      article: Commentaires sur cet article
-    description:
-      default: 'Si vous avez repéré une erreur ou souhaitez améliorer cette page, vous pouvez :'
-      article_part_1: Les commentaires sur cet article sont les bienvenus. N'hésitez pas à partager vos réflexions
-      article_part_2: en nous envoyant un message
-      article_part_3: Nous vous répondrons.
-    options:
-      send_email: Nous envoyer un email
-      edit_page: Ou éditer cette page et nous soumettre un Pull Request
+    blog:
+      title: Commentaires sur cet article
+      part_1: Faites nous part de vos commentaires
+      part_2: en nous envoyant un message
+      part_3: Nous vous répondrons.
+    documentation:
+      title: Feedback sur cette page
+      description: 'Si vous avez repéré une erreur ou souhaitez améliorer cette page, vous pouvez :'
+      options:
+        send_email: Nous envoyer un email
+        edit_page: Ou éditer cette page et nous soumettre un Pull Request
   month_list:
     - Janvier
     - Février

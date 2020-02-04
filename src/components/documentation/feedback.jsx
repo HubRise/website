@@ -27,13 +27,13 @@ export const Feedback = ({ options }) => {
               fixedWidth
             />
           </button>
-          <p className="feedback__title">{t(`misc.feedback.title.default`)}</p>
+          <p className="feedback__title">{t(`misc.feedback.documentation.title`)}</p>
         </div>
       </section>
       {isExpanded && (
         <section className="feedback__section feedback__instructions">
           <p className="feedback__paragraph">
-            {t(`misc.feedback.description.default`)}
+            {t(`misc.feedback.documentation.description`)}
           </p>
           <ul>
             {options.map((option) => (

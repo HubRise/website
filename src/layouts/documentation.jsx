@@ -50,11 +50,11 @@ const DocumentationPage = ({ data, path, pageContext }) => {
 
   const feedbackOptions = [
     {
-      title: t('misc.feedback.options.send_email'),
+      title: t('misc.feedback.documentation.options.send_email'),
       url: 'mailto:support@hubrise.com'
     },
     {
-      title: t('misc.feedback.options.edit_page'),
+      title: t('misc.feedback.documentation.options.edit_page'),
       url: `https://github.com/HubRise/website/edit/master${pageContext.relativePath}`
     }
   ]
