@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { graphql, navigate } from 'gatsby'
 import { useTranslation } from 'react-i18next'
 
@@ -7,6 +7,7 @@ import Sidebar from '../components/blog/sidebar'
 import Post from '../components/blog/post'
 import { convertArticleData, getArchiveTitle } from '../components/utils/blog'
 import { Breadcrumbs } from '../components/documentation'
+import { getLocalizedUrl } from '../components/utils/link'
 
 function Blog({ data, pageContext }) {
   const { t } = useTranslation()
@@ -27,13 +28,21 @@ function Blog({ data, pageContext }) {
 
   const [searchQuery, setSearchQuery] = useState('')
 
+  useEffect(() => {
+    const searchParams = new URLSearchParams(window.location.search)
+    if (searchParams.has('q')) {
+      setSearchQuery(searchParams.get('q'))
+    }
+  }, [])
+
   const filteredPostList = postList.filter((post) =>
     post.title.toLowerCase().includes(searchQuery.toLowerCase())
   )
 
   function handleQueryChange(newQuery) {
     setSearchQuery(newQuery)
-    navigate(`${window.location.pathname}?q=${newQuery.trim()}`)
+    let pathname = getLocalizedUrl('/blog', pageContext.lang)
+    navigate(`${pathname}?q=${newQuery.trim()}`)
   }
 
   const breadcrumbs = archive
@@ -69,7 +78,6 @@ function Blog({ data, pageContext }) {
             postList={postList}
             searchQuery={searchQuery}
             onQueryChange={handleQueryChange}
-            hideSearchInput={Boolean(archive)}
           />
           <div className="section__content">
             <ul className="articles">

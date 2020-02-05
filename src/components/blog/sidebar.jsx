@@ -39,6 +39,13 @@ function Sidebar({ searchQuery, onQueryChange, hideSearchInput }) {
   const isDesktop = useMedia('(min-width: 1024px)')
   const [query, setQuery] = useState(searchQuery || '')
 
+  useEffect(() => {
+    if (query !== searchQuery) {
+      setQuery(searchQuery)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchQuery])
+
   const [isRecentPostsExpanded, setRecentPostsExpanded] = useState(true)
   const [isArchiveExpanded, setArchiveExpanded] = useState(true)
 
@@ -72,7 +79,10 @@ function Sidebar({ searchQuery, onQueryChange, hideSearchInput }) {
             value={query}
             onChange={(event) => setQuery(event.target.value)}
           />
-          <i className="widget_search__search-submit fa fa-search" />
+          <i
+            className="widget_search__search-submit fa fa-search"
+            onClick={handleSearchSubmit}
+          />
         </form>
       )}
 

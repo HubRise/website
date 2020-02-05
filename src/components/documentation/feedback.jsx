@@ -27,7 +27,9 @@ export const Feedback = ({ options }) => {
               fixedWidth
             />
           </button>
-          <p className="feedback__title">{t(`misc.feedback.documentation.title`)}</p>
+          <p className="feedback__title">
+            {t(`misc.feedback.documentation.title`)}
+          </p>
         </div>
       </section>
       {isExpanded && (
