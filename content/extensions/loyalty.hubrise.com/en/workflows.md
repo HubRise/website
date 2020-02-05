@@ -7,7 +7,8 @@ meta:
   description:
 ---
 
-## Customer registration
+## Customer identification
+
 
 
 ## Show benefits
