@@ -194,6 +194,10 @@
     }
   }
 
+  &__sidebar-in-wrapper {
+    min-height: 54px;
+  }
+
   &__sidebar-in {
     background: $white;
 
