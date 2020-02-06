@@ -15,6 +15,7 @@ function Blog({ data, pageContext }) {
   let postList = data.allMdx.edges
     .filter((edge) => edge.node.fields.contentLang === pageContext.lang)
     .map((articleEdge) => convertArticleData(articleEdge.node))
+    .sort((a, b) => b.date - a.date)
 
   /** Display only articles from selected archive */
   if (archive) {
