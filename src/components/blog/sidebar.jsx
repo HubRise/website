@@ -40,8 +40,9 @@ function Sidebar({ searchQuery, onQueryChange, hideSearchInput }) {
   const [query, setQuery] = useState(searchQuery || '')
 
   useEffect(() => {
-    if (query !== searchQuery) {
-      setQuery(searchQuery)
+    const updatedSearchQuery = searchQuery || ''
+    if (query !== updatedSearchQuery) {
+      setQuery(updatedSearchQuery)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchQuery])
@@ -137,7 +138,7 @@ function Sidebar({ searchQuery, onQueryChange, hideSearchInput }) {
         </h5>
         <ul>
           {archiveList.map((archiveInfo) => (
-            <li>
+            <li key={[archiveInfo.year, archiveInfo.month].join('_')}>
               <Link to={getArchiveLink(archiveInfo)} activeClassName="active">
                 {getArchiveTitle(archiveInfo, t)}
               </Link>

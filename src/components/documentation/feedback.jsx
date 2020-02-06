@@ -23,7 +23,7 @@ export const Feedback = ({ options }) => {
           <button className="feedback__title-icon">
             <FontAwesomeIcon
               icon={faAngleDown}
-              flip={isExpanded && `vertical`}
+              flip={isExpanded ? `vertical` : undefined}
               fixedWidth
             />
           </button>
@@ -39,7 +39,7 @@ export const Feedback = ({ options }) => {
           </p>
           <ul>
             {options.map((option) => (
-              <li className="feedback__instructions-list-item">
+              <li key={option.url} className="feedback__instructions-list-item">
                 <Link className="feedback__link" to={option.url}>
                   {option.title}
                 </Link>
