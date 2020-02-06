@@ -15,25 +15,17 @@ import {
 const DocumentationPage = ({ data, path, pageContext }) => {
   const { i18n, t } = useTranslation()
   const { name: chapterTitle, logo: logoBase } = pageContext.config
-  const { currentAndSiblingPages, images } = data
-  const [currentPage] = currentAndSiblingPages.nodes.filter(
-    ({ id }) => id === data.currentPage.id
-  )
+  const { images } = data
+
+  const pageNodes = data.currentAndSiblingPages.nodes
+  const currentPageId = data.currentPage.id
+  const firstPage = pageNodes.find((node) => node.frontmatter.position === 1)
+  const currentPage = pageNodes.find((node) => node.id === currentPageId)
+
   const { frontmatter, body } = currentPage
   const { title, gallery, app_info } = frontmatter
 
-  const breadcrumbs = getBreadcrumbs(
-    data.currentAndSiblingPages.nodes,
-    data.currentPage.id
-  )
-
   function getBreadcrumbs() {
-    const pageNodes = currentAndSiblingPages.nodes
-    const currentPageId = data.currentPage.id
-
-    const firstPage = pageNodes.find((node) => node.frontmatter.position === 1)
-    const currentPage = pageNodes.find((node) => node.id === currentPageId)
-
     const rootLink =
       i18n.language === 'fr'
         ? { title: 'Développeurs', to: '/developpeurs' }
@@ -59,6 +51,8 @@ const DocumentationPage = ({ data, path, pageContext }) => {
     }
   ]
 
+  const breadcrumbs = getBreadcrumbs()
+
   return (
     <>
       <Breadcrumbs breadcrumbs={breadcrumbs} />
@@ -80,8 +74,8 @@ const DocumentationPage = ({ data, path, pageContext }) => {
           <SectionNavigation
             logo={images.nodes.find(({ base }) => base === logoBase)}
             currentPath={path}
-            title={chapterTitle}
-            pages={currentAndSiblingPages.nodes}
+            title={currentPage.frontmatter.title}
+            pages={pageNodes}
           />
           {gallery && (
             <Gallery

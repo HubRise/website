@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React, { useLayoutEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
+import cx from 'classnames'
+import { useMedia } from 'react-use'
 
 import { NonStretchedImage } from '../../components/image'
 import Link from '../../components/link'
@@ -14,8 +16,57 @@ const sortPagesAsc = (pages) => {
   })
 }
 
+const getCurrentTitle = () => {
+  const titleNodeList = Array.from(document.querySelectorAll('h2')).reverse()
+
+  const currentTitleNode = titleNodeList.find((titleNode) => {
+    const rect = titleNode.getBoundingClientRect()
+    const nodeTop = rect.top + window.pageYOffset
+
+    return nodeTop <= document.documentElement.scrollTop + 60
+  })
+
+  return currentTitleNode ? currentTitleNode.textContent : null
+}
+
 export const SectionNavigation = ({ currentPath, pages, title, logo }) => {
   const [isExpanded, setIsExpanded] = useState(false)
+  const [isFixed, setFixed] = useState(false)
+  const containerRef = useRef()
+  const isDesktop = useMedia('(min-width: 1024px)')
+  const [currentTitle, setCurrentTitle] = useState(title)
+
+  useLayoutEffect(() => {
+    if (isDesktop && isFixed) {
+      setFixed(false)
+    }
+  }, [isDesktop, isFixed])
+
+  useLayoutEffect(() => {
+    if (isDesktop) return
+
+    function listener() {
+      const newTitle = getCurrentTitle() || title
+      if (currentTitle !== newTitle) {
+        setCurrentTitle(newTitle)
+      }
+
+      const rect = containerRef.current.getBoundingClientRect()
+      const top = rect.top + window.pageYOffset
+
+      if (top <= document.documentElement.scrollTop && !isFixed) {
+        setFixed(true)
+      }
+
+      if (top > document.documentElement.scrollTop && isFixed) {
+        setFixed(false)
+      }
+    }
+
+    document.addEventListener('scroll', listener)
+
+    return () => document.removeEventListener('scroll', listener)
+  }, [setCurrentTitle, currentTitle, isDesktop, isFixed, title])
 
   return (
     <div
@@ -25,6 +76,7 @@ export const SectionNavigation = ({ currentPath, pages, title, logo }) => {
         section__sidebar_small-padding
         ${logo ? 'section__sidebar_sticky' : ''}
       `}
+      ref={containerRef}
     >
       {logo && (
         <div className="section__sidebar_logo">
@@ -32,12 +84,13 @@ export const SectionNavigation = ({ currentPath, pages, title, logo }) => {
         </div>
       )}
       <div
-        className={`
-          section__sidebar-in
-          ${logo ? '' : 'section__sidebar_sticky'}
-        `}
+        className={cx(
+          'section__sidebar-in',
+          logo && 'section__sidebar_sticky',
+          isFixed && 'section__sidebar_fixed'
+        )}
       >
-        <h5 className="content-nav__title">{title || `Content`}</h5>
+        <h5 className="content-nav__title">{currentTitle || `Content`}</h5>
         <h5
           id="content-nav"
           className={`
@@ -47,7 +100,7 @@ export const SectionNavigation = ({ currentPath, pages, title, logo }) => {
           `}
           onClick={() => setIsExpanded(!isExpanded)}
         >
-          {title || `Content`}
+          {currentTitle || `Content`}
           <i
             className={`
               fa
@@ -74,7 +127,11 @@ export const SectionNavigation = ({ currentPath, pages, title, logo }) => {
                   isCurrentPage ? 'content-nav__item_active' : ''
                 }`}
               >
-                <Link to={slug} className="content-nav__link">
+                <Link
+                  to={slug}
+                  className="content-nav__link"
+                  onClick={isDesktop ? undefined : () => setIsExpanded(false)}
+                >
                   {frontmatter.title}
                 </Link>
                 {isCurrentPage && headings.length !== 0 && (
@@ -90,6 +147,11 @@ export const SectionNavigation = ({ currentPath, pages, title, logo }) => {
                             <Link
                               className="content-sublist-link"
                               to={`#${createHeaderAnchor(headingText)}`}
+                              onClick={
+                                isDesktop
+                                  ? undefined
+                                  : () => setIsExpanded(false)
+                              }
                             >
                               <span className="content-sublist-text">
                                 {headingText}
