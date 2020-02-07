@@ -11,15 +11,15 @@ describe(`website`, () => {
       '/apps/ikentoo/developer_guide',
       '/apps/ikentoo/installation',
       '/apps/ikentoo/integration_guide',
-      '/apps/ikentoo/overview',
+      '/apps/ikentoo',
 
       '/apps/livepepper/installation',
       '/apps/livepepper/integration_guide',
-      '/apps/livepepper/overview',
+      '/apps/livepepper',
 
       '/apps/myorderbox/installation',
       '/apps/myorderbox/integration_guide',
-      '/apps/myorderbox/overview',
+      '/apps/myorderbox',
 
       '/developers/authentication',
       '/developers/integration',
