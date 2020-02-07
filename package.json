@@ -10,10 +10,11 @@
     "start:dev": "yarn clean && gatsby develop",
     "start:prod": "yarn build && gatsby serve --port 9009",
     "cy:open": "cypress open",
-    "cy:run": "CYPRESS_BASE_URL=http://localhost:9009 cypress run",
-    "test": "jest --config='./jest/config.js'",
+    "cy:run": "cross-env CYPRESS_BASE_URL=http://localhost:9009 cypress run",
+    "test:unit-testing": "jest --config='./jest/config.js'",
     "test:e2e": "start-server-and-test start:dev http://localhost:8000 cy:open",
-    "test:e2e:ci": "start-server-and-test start:prod http://localhost:9009 cy:run"
+    "test:e2e:ci": "start-server-and-test start:prod http://localhost:9009 cy:run",
+    "test:all:ci": "yarn test:unit-testing && yarn test:e2e:ci"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
@@ -64,6 +65,7 @@
     "babel-plugin-prismjs": "^1.1.1",
     "babel-plugin-styled-components": "^1.10.7",
     "babel-preset-gatsby": "^0.2.13",
+    "cross-env": "6.x",
     "cypress": "^3.4.1",
     "eslint": "^6.5.1",
     "eslint-config-prettier": "^6.10.0",
