@@ -99,10 +99,16 @@ const ContactEnhanced = withFormik({
           headers: {
             'Content-Type': 'application/json'
           }
-        }).catch(console.error)
+        })
+          .then(() => {
+            window.alert('Message is successfully sent')
+          })
+          .catch((error) => {
+            console.error(error)
+            window.alert('Message sending was failed')
+          })
       })
 
-    window.alert(`Let's pretend its sent!`)
     resetForm()
   }
 })(Contact)
