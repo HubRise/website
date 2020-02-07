@@ -86,7 +86,7 @@
     &::before {
       content: '';
       position: absolute;
-      top: 50%;
+      top: .75rem;
       transform: translateY(-50%);
       left: -0.75rem;
       height: 6px;
