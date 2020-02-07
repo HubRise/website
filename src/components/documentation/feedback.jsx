@@ -39,7 +39,7 @@ export const Feedback = ({ options }) => {
           </p>
           <ul>
             {options.map((option) => (
-              <li className="feedback__instructions-list-item">
+              <li key={option.url} className="feedback__instructions-list-item">
                 <Link className="feedback__link" to={option.url}>
                   {option.title}
                 </Link>
