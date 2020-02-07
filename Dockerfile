@@ -16,8 +16,11 @@ RUN yarn install
 COPY . .
 
 # For sentry
-ENV SEND_GRID_API_KEY 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
 ENV SENTRY_DSN https://96b4d1defd7648308c6e30f8a3470cfd@sentry.io/1776244
+
+# For reCAPTCHA
+ENV RECAPTCHA_SITE_KEY 6LfjbNYUAAAAAPx_tCv_YyhueK2JIjf58b2HGU8d
+
 ENV NODE_ENV production
 
 # Build project

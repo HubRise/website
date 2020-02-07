@@ -84,33 +84,25 @@ const ContactEnhanced = withFormik({
   }),
   validationSchema: ({ t }) => createContactSchema(t),
   handleSubmit: (values, { resetForm }) => {
-    // window.alert(`Let's pretend its sent!`)
-    fetch('https://api.sendgrid.com/v3/mail/send', {
-      method: 'POST',
-      mode: 'cors',
-      headers: {
-        Authorization: `Bearer ${process.env.SEND_GRID_API_KEY}`,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        personalizations: [
-          {
-            to: [
-              // { email: 'contact@hubrise.com' }
-              { email: 'ivan.saranchenkov@gmail.com' }
-            ]
+    window.grecaptcha
+      .execute(process.env.RECAPTCHA_SITE_KEY, { action: 'send_email' })
+      .then((token) => {
+        fetch('http://localhost:8080/api/mail/send', {
+          method: 'POST',
+          body: JSON.stringify({
+            name: values.name,
+            email: values.email,
+            message: values.message,
+            recaptchaResponse: token
+          }),
+          mode: 'cors',
+          headers: {
+            'Content-Type': 'application/json'
           }
-        ],
-        from: { email: values.email },
-        subject: 'Contact message',
-        content: [
-          {
-            type: 'text/html',
-            value: `<html><head></head><div><h2>${values.name}</h2><p>${values.message}</p></body></html>`
-          }
-        ]
+        }).catch(console.error)
       })
-    }).catch(console.error)
+
+    window.alert(`Let's pretend its sent!`)
     resetForm()
   }
 })(Contact)

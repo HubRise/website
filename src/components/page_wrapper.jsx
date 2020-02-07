@@ -6,6 +6,7 @@ import ContactForm from './forms/contact'
 import Modal from '../components/modal'
 import Layout from './layout'
 import Seo from './seo'
+import { Helmet } from 'react-helmet'
 
 import { useLayoutContext } from '../context/layout'
 
@@ -21,6 +22,11 @@ const PageWrapper = ({ element, props }) => {
 
   return (
     <>
+      <Helmet>
+        <script
+          src={`https://www.google.com/recaptcha/api.js?render=${process.env.RECAPTCHA_SITE_KEY}`}
+        />
+      </Helmet>
       <Seo
         lang={i18n.language}
         title={meta ? meta.title : ''}
