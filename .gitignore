@@ -72,3 +72,7 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# Test email server files
+server/node_modules
+server/.env
