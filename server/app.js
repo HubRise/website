@@ -3,7 +3,7 @@ const morgan = require('morgan')
 const request = require('request')
 const cors = require('cors')
 
-require('dotenv').config()
+require('dotenv').config({ path: 'server/.env' })
 
 const app = express()
 app.use(cors())
@@ -22,12 +22,12 @@ function sendEmail({ email, name, message }) {
               to: [{ email: process.env.CONTACT_EMAIL }]
             }
           ],
-          from: { email: email },
-          subject: 'Contact message',
+          from: { email: process.env.CONTACT_EMAIL },
+          subject: 'Message sent from hubrise.com',
           content: [
             {
               type: 'text/html',
-              value: `<html><head></head><div><h2>${name}</h2><p>${message}</p></body></html>`
+              value: `<html><head></head><div><p>Email: ${email}</p><p>Name: ${name}</p><p>Message: ${message}</p></body></html>`
             }
           ]
         },
@@ -40,6 +40,8 @@ function sendEmail({ email, name, message }) {
       (error, response, body) => {
         if (error) {
           reject(error)
+        } else if (response.body && response.body.errors) {
+          reject(response.body.errors)
         } else {
           resolve()
         }
