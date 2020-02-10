@@ -178,6 +178,7 @@ Returns a customer's details.
   "delivery_notes": null,
   "sms_marketing": true,
   "email_marketing": true,
+  "anonymized": false,
   "nb_orders": 2,
   "order_total": "28.40 GBP",
   "first_order_date": "2017-01-18T17:15:11+01:00",
@@ -229,7 +230,7 @@ Returns the customers of a customer list. Some filters can be passed.
 
 ### 2.3. Create customer
 
-Creates a new customer. The only mandatory fields are the first and last name.
+Creates a new customer.
 
 <CallSummaryTable
   endpoint="POST /customer_lists/:customer_list_id/customers"
@@ -242,8 +243,8 @@ Creates a new customer. The only mandatory fields are the first and last name.
 | ---------------------------------------- | ------- | ------------------------------------------------------------------------------------------ |
 | `private_ref` <Label type="optional" />  | string  | The customer internal id, visible only to the client who set it. Used for customer lookup. |
 | `email` <Label type="optional" />        | string  | Email                                                                                      |
-| `first_name`                             | string  | First name                                                                                 |
-| `last_name`                              | string  | Last name                                                                                  |
+| `first_name` <Label type="optional" />   | string  | First name                                                                                 |
+| `last_name` <Label type="optional" />    | string  | Last name                                                                                  |
 | `gender` <Label type="optional" />       | string  | If defined, must be either `male` or `female`                                              |
 | `birth_date` <Label type="optional" />   | date    | Birth date (eg. `1999-01-01`)                                                              |
 | `company_name` <Label type="optional" /> | string  | Company name                                                                               |
@@ -264,9 +265,9 @@ Creates a new customer. The only mandatory fields are the first and last name.
 ```json
 {
   "first_name": "Charles",
-  "last_name": "Moore",
-  "email": "charles.moore@xxx.com",
-  "private_ref": "charles.moore@xxx.com"
+  "last_name": "Mooren",
+  "email": "charlesmooren@gmail.com",
+  "private_ref": "charlesmooren@gmail.com"
 }
 ```
 
@@ -288,6 +289,25 @@ Updates a customer.
   "first_name": "Claude"
 }
 ```
+
+### 2.5. Anonymize a customer
+
+Anonymizes a customer by deleting his/her personal information.
+
+The following fields are deleted when a customer is anonymized: `email`, `first_name`, `last_name`, `gender`, `birth_date`, `company_name`, `phone`, `address_1`, `address_2`, `postal_code`, `latitude`, `longitude`, `delivery_notes`.
+
+When a customer is anonymized, the customer resource returns a `true` value for the `anonymized` field, and the anonymized fields retun a `null` value.
+
+Anonymizing a customer also anonymizes his/her orders. The `customer` resource of anonymized orders are modified in the same way as described above.
+
+<CallSummaryTable
+  endpoint="POST /customer_lists/:customer_list_id/customers/:customer_id/anonymize"
+  accessLevel="location, account"
+/>
+
+#### Example request:
+
+`POST /customer_lists/ag8u4/customers/asdf2/anonymize`
 
 ## 3. Loyalty cards
 
