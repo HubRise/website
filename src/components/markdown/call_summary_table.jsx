@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const TableCell = ({ children }) => {
   return (
-    <td>
+    <td className="call-summary__cell">
       <div className="call-summary__cell-wrapper--outer">
         <div className="call-summary__cell-wrapper--inner">{children}</div>
       </div>
@@ -22,17 +22,17 @@ const CallSummaryTable = ({ endpoint, shortEndpoint, accessLevel }) => {
   }
 
   return (
-    <div className="call-summary-wrapper">
-      <table className="call-summary">
+    <div className="call-summary">
+      <table className="call-summary__table">
         <tbody>
-          <tr>
+          <tr className="call-summary__row">
             <TableCell>Endpoint:</TableCell>
             <TableCell>
               <span className="call-summary__url">{endpoint}</span>
             </TableCell>
           </tr>
           {shortEndpoint && (
-            <tr>
+            <tr className="call-summary__row">
               <TableCell>Short endpoint:</TableCell>
               <TableCell>
                 <span className="call-summary__url">{url}</span>
@@ -42,7 +42,7 @@ const CallSummaryTable = ({ endpoint, shortEndpoint, accessLevel }) => {
               </TableCell>
             </tr>
           )}
-          <tr>
+          <tr className="call-summary__row">
             <TableCell>Access level:</TableCell>
             <TableCell>{accessLevel}</TableCell>
           </tr>
