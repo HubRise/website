@@ -9,6 +9,7 @@ import Seo from './seo'
 import { Helmet } from 'react-helmet'
 
 import { useLayoutContext } from '../context/layout'
+import ToastProvider from './toast'
 
 const PageWrapper = ({ element, props }) => {
   const { forms } = useLayoutContext()
@@ -21,7 +22,7 @@ const PageWrapper = ({ element, props }) => {
   const { meta } = pageContext
 
   return (
-    <>
+    <ToastProvider>
       <Helmet>
         <script
           src={`https://www.google.com/recaptcha/api.js?render=${process.env.RECAPTCHA_SITE_KEY}`}
@@ -41,7 +42,7 @@ const PageWrapper = ({ element, props }) => {
           <ContactForm />
         </Modal>
       )}
-    </>
+    </ToastProvider>
   )
 }
 

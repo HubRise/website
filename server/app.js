@@ -3,7 +3,7 @@ const morgan = require('morgan')
 const request = require('request')
 const cors = require('cors')
 
-require('dotenv').config({ path: 'server/.env' })
+require('dotenv').config({ path: '.env' })
 
 const app = express()
 app.use(cors())

@@ -55,6 +55,11 @@ misc:
   posted_on: Posted on
   by: by
   search: Search
+  success: Success
+  failure: Failure
+  messages:
+    email_send_success: Your message has been sent. We'll reply to you shortly
+    email_send_failure: Oops... An error occurred while sending your message, please try again or email us at contact@hubrise.com
 
 forms:
   validation:

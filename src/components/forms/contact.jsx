@@ -1,9 +1,11 @@
 import React from 'react'
 import { withTranslation } from 'react-i18next'
-import { withFormik } from 'formik'
+import { Formik } from 'formik'
 import * as yup from 'yup'
 
 import Form from './base/form'
+import { useToast } from '../toast'
+import { useLayoutContext } from '../../context/layout'
 
 const structure = {
   formId: `contact`,
@@ -39,18 +41,76 @@ const structure = {
     }
   ]
 }
-const Contact = ({ t, _i18n, ...formikProps }) => {
+const Contact = ({ t, _i18n }) => {
+  const { forms } = useLayoutContext()
+  const toast = useToast()
+
+  function onSubmit(values, { setSubmitting }) {
+    window.grecaptcha
+      .execute(process.env.RECAPTCHA_SITE_KEY, { action: 'send_email' })
+      .then((token) => {
+        return fetch('http://localhost:8080/api/mail/send', {
+          method: 'POST',
+          body: JSON.stringify({
+            name: values.name,
+            email: values.email,
+            message: values.message,
+            recaptchaResponse: token
+          }),
+          mode: 'cors',
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        })
+          .then((response) => {
+            if (response.ok) {
+              toast({
+                variant: 'success',
+                title: t('misc.success'),
+                text: t('misc.messages.email_send_success')
+              })
+              forms.contact.toggle()
+              console.log('Message is successfully sent')
+            } else {
+              throw new Error(`${response.statusText}`)
+            }
+          })
+          .catch((error) => {
+            toast({
+              variant: 'error',
+              title: t('misc.failure'),
+              text: t('misc.messages.email_send_failure')
+            })
+            console.error(error)
+            console.error('Message sending was failed')
+            setSubmitting(false)
+          })
+      })
+  }
+
   return (
-    <Form
-      buttonClasses={[`form__button_full-width`, `form__button_modal`]}
-      formProps={{
-        id: `contact-us__form`,
-        classNames: [`form form_modal`]
+    <Formik
+      initialValues={{
+        name: ``,
+        email: ``,
+        message: ``
       }}
-      structure={structure}
-      t={t}
-      formikProps={formikProps}
-    />
+      validationSchema={createContactSchema(t)}
+      onSubmit={onSubmit}
+    >
+      {(formikProps) => (
+        <Form
+          buttonClasses={[`form__button_full-width`, `form__button_modal`]}
+          formProps={{
+            id: `contact-us__form`,
+            classNames: [`form form_modal`]
+          }}
+          structure={structure}
+          t={t}
+          formikProps={formikProps}
+        />
+      )}
+    </Formik>
   )
 }
 
@@ -76,41 +136,4 @@ const createContactSchema = (t) => {
   })
 }
 
-const ContactEnhanced = withFormik({
-  mapPropsToValues: () => ({
-    name: ``,
-    email: ``,
-    message: ``
-  }),
-  validationSchema: ({ t }) => createContactSchema(t),
-  handleSubmit: (values, { resetForm }) => {
-    window.grecaptcha
-      .execute(process.env.RECAPTCHA_SITE_KEY, { action: 'send_email' })
-      .then((token) => {
-        fetch('http://localhost:8080/api/mail/send', {
-          method: 'POST',
-          body: JSON.stringify({
-            name: values.name,
-            email: values.email,
-            message: values.message,
-            recaptchaResponse: token
-          }),
-          mode: 'cors',
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        })
-          .then(() => {
-            window.alert('Message is successfully sent')
-          })
-          .catch((error) => {
-            console.error(error)
-            window.alert('Message sending was failed')
-          })
-      })
-
-    resetForm()
-  }
-})(Contact)
-
-export default withTranslation()(ContactEnhanced)
+export default withTranslation()(Contact)

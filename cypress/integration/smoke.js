@@ -31,17 +31,9 @@ describe(`website`, () => {
 
     const frenchPages = englishPages.map((page) => '/fr' + page)
 
-    const englishOnlyPages = [
-      '/developers',
-      '/pricing',
-      '/about'
-    ]
+    const englishOnlyPages = ['/developers', '/pricing', '/about']
 
-    const frenchOnlyPages = [
-      '/developpeurs',
-      '/faq',
-      '/tarifs'
-    ].map(
+    const frenchOnlyPages = ['/developpeurs', '/faq', '/tarifs'].map(
       (page) => '/fr' + page
     )
 

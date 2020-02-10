@@ -57,6 +57,11 @@ misc:
   posted_on: Publié le
   by: par
   search: Chercher
+  success: Succès
+  failure: Échec
+  messages:
+    email_send_success: Votre message a bien été envoyée et nous allons vous répondre rapidement
+    email_send_failure: Zut... Une erreur s'est produite durant l'envoi de votre message. Veuillez réessayer ou écrivez-nous directement sur contact@hubrise.com
 
 forms:
   validation:
