@@ -5,6 +5,10 @@ const cors = require('cors')
 
 require('dotenv').config({ path: '.env' })
 
+console.log(`RECAPTCHA_SECRET_KEY = ${process.env.RECAPTCHA_SECRET_KEY}`)
+console.log(`SEND_GRID_API_KEY = ${process.env.SEND_GRID_API_KEY}`)
+console.log(`CONTACT_EMAIL = ${process.env.CONTACT_EMAIL}`)
+
 const app = express()
 app.use(cors())
 app.use(morgan('combined'))
@@ -22,12 +26,15 @@ function sendEmail({ email, name, message }) {
               to: [{ email: process.env.CONTACT_EMAIL }]
             }
           ],
-          from: { email: process.env.CONTACT_EMAIL },
-          subject: 'Message sent from hubrise.com',
+          from: {
+            name: name,
+            email: email
+          },
+          subject: 'Message from hubrise.com',
           content: [
             {
               type: 'text/html',
-              value: `<html><head></head><div><p>Email: ${email}</p><p>Name: ${name}</p><p>Message: ${message}</p></body></html>`
+              value: `<html><head></head><body>${message}</body></html>`
             }
           ]
         },
@@ -81,7 +88,7 @@ app.post('/api/mail/send', async (req, res, next) => {
     })
     .then((isRecaptchaValid) => {
       if (!isRecaptchaValid) {
-        res.status(403).send('Forbidden. You are robot')
+        console.error(`STOP!!!! ${isRecaptchaValid}`)
         return
       }
 
