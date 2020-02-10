@@ -27,7 +27,7 @@ function Toast({
   id,
   onClose,
   isHideDisabled,
-  timeout = 5000
+  timeout = 10000
 }) {
   const toastRef = useRef(null)
 
@@ -50,7 +50,7 @@ function Toast({
   }, [hideToast, isHideDisabled, timeout])
 
   return (
-    <div className={cx('toast', variant)} ref={toastRef}>
+    <div className={cx('toast__inner', variant)} ref={toastRef}>
       <div className="toast__icon">
         <FontAwesomeIcon icon={getIcon(variant)} color="white" />
       </div>

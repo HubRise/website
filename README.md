@@ -57,8 +57,8 @@ Same process as a Rails app (see cluster/doc/build_deploy_app.md)
 
 # Test email-sending forms locally
 
-1. create file `.env.development` in the root directory with env variable `RECAPTCHA_SITE_KEY=`
-2. go to `/server` directory, create file `.env` and specify the same variables as in `/server/.env.example`
-3. install dependencies in `/server` directory via `yarn`
-4. run server via `node server/index.js`
-5. from a separate terminal, run gatsby via `yarn start:dev`
+1. Create file `.env.development` in the root directory with env variable `RECAPTCHA_SITE_KEY=`
+2. Go to `/server` directory, create file `.env` and specify the same variables as in `/server/.env.example`
+3. Install dependencies in `/server` directory via `yarn`
+4. Run server via `cd server; node index.js`
+5. From a separate terminal, run gatsby via `yarn start:dev`

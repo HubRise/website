@@ -22,7 +22,7 @@ function ToastProvider({ children }) {
 
   return (
     <ToastContext.Provider value={toast}>
-      <div className="toast-list" data-test-id="toast-list">
+      <div className="toast" data-test-id="toast-list">
         {toasts.map((item) => (
           <Toast key={item.id} {...item} onClose={closeToast} />
         ))}

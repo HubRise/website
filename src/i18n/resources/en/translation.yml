@@ -69,14 +69,14 @@ forms:
     # }
     app_contact_required: Please enter your company contact details.
     app_name_required: Please enter your company name.
-    email: Provided email seems to be incorrect. Could you double check?
+    email: Provided email is invalid.
     email_required: Please enter your email address.
     first_name_required: Please enter your first name.
     last_name_required: Please enter your last name.
-    message_min: We'd really appreciate a message longer than {{ length }} characters.
-    message_required: Sorry, but empty messages are no fun.
+    message_min: Your message should be no shorter than {{ length }} characters.
+    message_required: Empty message?
     name_required: Please enter your name.
-    password_min: It's a good practice to have at least {{ length }} symbols in your password.
+    password_min: Please use at least {{ length }} symbols in your password.
     password_required: Choose a password.
   placeholders:
     email: Your email
