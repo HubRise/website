@@ -13,27 +13,19 @@ import {
 } from '../components/documentation'
 
 const DocumentationPage = ({ data, path, pageContext }) => {
-  const { i18n } = useTranslation()
+  const { i18n, t } = useTranslation()
   const { name: chapterTitle, logo: logoBase } = pageContext.config
-  const { currentAndSiblingPages, images } = data
-  const [currentPage] = currentAndSiblingPages.nodes.filter(
-    ({ id }) => id === data.currentPage.id
-  )
+  const { images } = data
+
+  const pageNodes = data.currentAndSiblingPages.nodes
+  const currentPageId = data.currentPage.id
+  const firstPage = pageNodes.find((node) => node.frontmatter.position === 1)
+  const currentPage = pageNodes.find((node) => node.id === currentPageId)
+
   const { frontmatter, body } = currentPage
   const { title, gallery, app_info, extension_info } = frontmatter
 
-  const breadcrumbs = getBreadcrumbs(
-    data.currentAndSiblingPages.nodes,
-    data.currentPage.id
-  )
-
   function getBreadcrumbs() {
-    const pageNodes = currentAndSiblingPages.nodes
-    const currentPageId = data.currentPage.id
-
-    const firstPage = pageNodes.find((node) => node.frontmatter.position === 1)
-    const currentPage = pageNodes.find((node) => node.id === currentPageId)
-
     const rootLink =
       i18n.language === 'fr'
         ? { title: 'Développeurs', to: '/developpeurs' }
@@ -47,6 +39,19 @@ const DocumentationPage = ({ data, path, pageContext }) => {
       { id: 3, path: null, label: currentPage.frontmatter.title }
     ].filter(Boolean)
   }
+
+  const feedbackOptions = [
+    {
+      title: t('misc.feedback.documentation.options.send_email'),
+      url: 'mailto:support@hubrise.com'
+    },
+    {
+      title: t('misc.feedback.documentation.options.edit_page'),
+      url: `https://github.com/HubRise/website/edit/master${pageContext.relativePath}`
+    }
+  ]
+
+  const breadcrumbs = getBreadcrumbs()
 
   return (
     <>
@@ -69,8 +74,8 @@ const DocumentationPage = ({ data, path, pageContext }) => {
           <SectionNavigation
             logo={images.nodes.find(({ base }) => base === logoBase)}
             currentPath={path}
-            title={chapterTitle}
-            pages={currentAndSiblingPages.nodes}
+            title={currentPage.frontmatter.title}
+            pages={pageNodes}
           />
           {gallery && (
             <Gallery
@@ -85,7 +90,7 @@ const DocumentationPage = ({ data, path, pageContext }) => {
           {extension_info && <AppInfo content={extension_info} />}
         </div>
       </section>
-      <Feedback relativeFilePath={pageContext.relativePath} />
+      <Feedback options={feedbackOptions} />
     </>
   )
 }

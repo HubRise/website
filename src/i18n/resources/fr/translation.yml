@@ -19,16 +19,44 @@ layout:
         to: /developpeurs
       - title: Tarifs
         to: /tarifs
+#      - title: Blog
+#        to: /blog
       - title: F.A.Q.
         to: /faq
 
 misc:
   feedback:
-    title: Feedback sur cette page
-    description: 'Si vous avez repéré une erreur ou souhaitez améliorer cette page, vous pouvez :'
-    options:
-      send_email: Nous envoyer un email
-      edit_page: Ou éditer cette page et nous soumettre un Pull Request
+    blog:
+      title: Commentaires sur cet article
+      part_1: Faites nous part de vos commentaires
+      part_2: en nous envoyant un message
+      part_3: Nous vous répondrons.
+    documentation:
+      title: Feedback sur cette page
+      description: 'Si vous avez repéré une erreur ou souhaitez améliorer cette page, vous pouvez :'
+      options:
+        send_email: Nous envoyer un email
+        edit_page: Ou éditer cette page et nous soumettre un Pull Request
+  month_list:
+    - Janvier
+    - Février
+    - Mars
+    - Avril
+    - Mai
+    - Juin
+    - Juillet
+    - Aout
+    - Septembre
+    - Octobre
+    - Novembre
+    - Décembre
+  archive: Archive
+  archives: Les archives
+  recent_posts: Messages récents
+  read_more: Lire la suite
+  posted_on: Publié le
+  by: par
+  search: Chercher
 
 forms:
   validation:

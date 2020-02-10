@@ -19,14 +19,42 @@ layout:
         to: /developers
       - title: Pricing
         to: /pricing
+#      - title: Blog
+#        to: /blog
 
 misc:
   feedback:
-    title: Feedback on this page
-    description: 'If you spotted an error or a need for improvement, you can:'
-    options:
-      send_email: Send us an email
-      edit_page: Or edit this page and submit a Pull Request
+    blog:
+      title: Feedback on this article
+      part_1: Share your thoughts
+      part_2: by sending us a message
+      part_3: We will reply to you.
+    documentation:
+      title: Feedback on this page
+      description: 'If you spotted an error or a need for improvement, you can:'
+      options:
+        send_email: Send us an email
+        edit_page: Or edit this page and submit a Pull Request
+  month_list:
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+  archive: Archive
+  archives: Archives
+  recent_posts: Recent posts
+  read_more: Read More
+  posted_on: Posted on
+  by: by
+  search: Search
 
 forms:
   validation:

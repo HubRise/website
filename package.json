@@ -10,10 +10,11 @@
     "start:dev": "yarn clean && gatsby develop",
     "start:prod": "yarn build && gatsby serve --port 9009",
     "cy:open": "cypress open",
-    "cy:run": "CYPRESS_BASE_URL=http://localhost:9009 cypress run",
-    "test": "jest --config='./jest/config.js'",
+    "cy:run": "cross-env CYPRESS_BASE_URL=http://localhost:9009 cypress run",
+    "test:unit-testing": "jest --config='./jest/config.js'",
     "test:e2e": "start-server-and-test start:dev http://localhost:8000 cy:open",
-    "test:e2e:ci": "start-server-and-test start:prod http://localhost:9009 cy:run"
+    "test:e2e:ci": "start-server-and-test start:prod http://localhost:9009 cy:run",
+    "test:all:ci": "yarn test:unit-testing && yarn test:e2e:ci"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
@@ -21,6 +22,7 @@
     "@fortawesome/react-fontawesome": "^0.1.6",
     "@mdx-js/mdx": "^1.1.4",
     "@mdx-js/react": "^1.1.4",
+    "classnames": "^2.2.6",
     "font-awesome": "^4.7.0",
     "formik": "^1.5.8",
     "foundation-sites": "^6.5.3",
@@ -48,6 +50,7 @@
     "react-helmet": "^5.2.1",
     "react-i18next": "^10.12.2",
     "react-slick": "^0.25.2",
+    "react-use": "^13.22.4",
     "slick-carousel": "^1.8.1",
     "webpack": "^4.0.0",
     "what-input": "^5.2.6",
@@ -60,12 +63,20 @@
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "babel-plugin-prismjs": "^1.1.1",
+    "babel-plugin-styled-components": "^1.10.7",
     "babel-preset-gatsby": "^0.2.13",
+    "cross-env": "6.x",
     "cypress": "^3.4.1",
     "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-config-react-app": "^5.2.0",
     "eslint-plugin-cypress": "^2.6.1",
-    "eslint-plugin-flowtype": "2.x",
-    "eslint-plugin-react-hooks": "^2.0.1",
+    "eslint-plugin-flowtype": "^4.6.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
     "gatsby-plugin-sentry": "^1.0.1",
     "husky": "^3.0.3",
     "identity-obj-proxy": "^3.0.0",
@@ -75,7 +86,7 @@
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "react-test-renderer": "^16.9.0",
-    "standardx": "^3.0.1",
+    "rimraf": "^3.0.1",
     "start-server-and-test": "^1.10.0",
     "typescript": "^3.6.3"
   },
@@ -90,32 +101,9 @@
       "git add"
     ],
     "**/*.{js,jsx}": [
-      "standardx --fix",
+      "eslint --fix",
       "git add"
     ]
-  },
-  "standardx": {
-    "parser": "babel-eslint",
-    "plugins": [
-      "react-hooks",
-      "cypress"
-    ],
-    "globals": [
-      "describe",
-      "it",
-      "expect",
-      "cy",
-      "jest"
-    ]
-  },
-  "eslintConfig": {
-    "rules": {
-      "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn",
-      "cypress/no-assigning-return-values": "error",
-      "cypress/no-unnecessary-waiting": "error",
-      "cypress/assertion-before-screenshot": "warn"
-    }
   },
   "keywords": [
     "gatsby",

@@ -27,8 +27,17 @@ docker rm $(docker stop $(docker ps -a -q --filter ancestor=hubrise/website-dev 
 
 ## Run the test suite
 
+In interactive mode - could not make it work inside a Docker container.
+Safe bet is to install the yarn dependencies and cypress on the host and run:
+
+```
+cypress run
+```
+
+The non-interactive, continous integration version can run in a Docker container however:
+
 ```shell
-docker run -t -v $(pwd):/var/www/website hubrise/website-dev "yarn test && yarn test:e2e && test:e2e:ci"
+docker run -v $(pwd):/var/www/website hubrise/website-dev /usr/local/bin/yarn test:all:ci 
 ```
 
 ## Run the production image locally

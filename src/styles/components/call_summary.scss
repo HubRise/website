@@ -1,17 +1,21 @@
 .call-summary {
-  color: $hr-light-gray;
-  background-color: #fafafa;
+  overflow: auto;
 
-  tr {
+  &__table {
+    color: $hr-light-gray;
+    background-color: #fafafa;
+  }
+
+  &__row {
     vertical-align: middle;
-    height: 3rem;
+    height: 2rem;
 
     &:nth-child(even) {
       background: none;
     }
   }
 
-  td:first-of-type {
+  &__cell:first-of-type {
     width: 33%;
   }
 
@@ -22,16 +26,12 @@
   }
 
   &__cell-wrapper--inner {
-    position: absolute;
-    width: 100%;
     white-space: nowrap;
-    overflow-x: auto;
   }
 
   &__url {
     color: $hr-green;
     font-weight: 500;
-    line-height: 3;
   }
 
   &__extra {

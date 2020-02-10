@@ -1,6 +1,56 @@
 describe(`website`, () => {
   it(`doesn't crash and burn`, () => {
-    cy.visit(`/`)
+    const englishPages = [
+      '/api/account_management',
+      '/api/callbacks',
+      '/api/catalog_management',
+      '/api/extensions',
+      '/api/general_concepts',
+      '/api/order_management',
+
+      '/apps/ikentoo/developer_guide',
+      '/apps/ikentoo/installation',
+      '/apps/ikentoo/integration_guide',
+      '/apps/ikentoo',
+
+      '/apps/livepepper/installation',
+      '/apps/livepepper/integration_guide',
+      '/apps/livepepper',
+
+      '/apps/myorderbox/installation',
+      '/apps/myorderbox/integration_guide',
+      '/apps/myorderbox',
+
+      '/developers/authentication',
+      '/developers/integration',
+      '/developers/quick_start',
+
+      '/apps',
+      '/'
+    ]
+
+    const frenchPages = englishPages.map((page) => '/fr' + page)
+
+    const englishOnlyPages = [
+      '/developers',
+      '/pricing',
+      '/about'
+    ]
+
+    const frenchOnlyPages = [
+      '/developpeurs',
+      '/faq',
+      '/tarifs'
+    ].map(
+      (page) => '/fr' + page
+    )
+
+    englishPages
+      .concat(englishOnlyPages, frenchPages, frenchOnlyPages)
+      .map((pagePath) => pagePath.replace(/_/g, '-'))
+      .forEach((page) => {
+        cy.visit(page)
+      })
   })
 
   it(`renders elements, allows interaction and navigation between various pages`, () => {
