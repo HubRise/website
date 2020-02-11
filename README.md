@@ -36,6 +36,7 @@ gem install docker-sync
 
 Start docker-sync and the server:
 ```
+export COMPOSE_DOCKER_CLI_BUILD=1
 docker-sync start
 docker-compose -f mac-docker-compose.yml up --build
 ```
