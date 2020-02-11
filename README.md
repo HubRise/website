@@ -30,15 +30,14 @@ File synchronization with Docker is very slow on Mac OS. A solution is to use do
 
 Initial setup (to be done only once):
 ```
-brew install ruby
+brew install rbenv ruby-build
 gem install docker-sync
 ```
 
-Start docker-sync and the server:
+Start the server:
 ```
-export COMPOSE_DOCKER_CLI_BUILD=1
 docker-sync start
-docker-compose -f mac-docker-compose.yml up --build
+docker-compose -f docker-compose.mac.yml up --build
 ```
 
 ## Run the test suite

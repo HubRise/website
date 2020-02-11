@@ -4,7 +4,7 @@ services:
   website:
     build:
       context: .
-      dockerfile: docker_dev/Dockerfile
+      dockerfile: docker_dev/Dockerfile.mac
     image: hubrise/website-dev
     volumes:
       - website-sync:/var/www/website

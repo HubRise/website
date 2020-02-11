@@ -1,7 +1,7 @@
 version: "2"
 
 options:
-  compose-file-path: "mac-docker-compose.yml"
+  compose-file-path: "docker-compose.mac.yml"
 
 syncs:
   website-sync:
