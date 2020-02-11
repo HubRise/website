@@ -13,7 +13,6 @@ docker build -f docker_dev/Dockerfile -t hubrise/website-dev .
 
 # Development cycle
 
-
 ## Run in development mode
 
 Runs on: http://localhost:8000
@@ -23,6 +22,22 @@ Pages are immediately reloaded on code update.
 ```shell
 docker run -t -v $(pwd):/var/www/website -p8000:8000 hubrise/website-dev
 docker rm $(docker stop $(docker ps -a -q --filter ancestor=hubrise/website-dev --format="{{.ID}}"))
+```
+
+## Special notes for development on Mac OS
+
+File synchronization with Docker is very slow on Mac OS. A solution is to use docker-sync: https://docker-sync.readthedocs.io/
+
+Initial setup (to be done only once):
+```
+brew install ruby
+gem install docker-sync
+```
+
+Start docker-sync and the server:
+```
+docker-sync start
+docker-compose -f mac-docker-compose.yml up --build
 ```
 
 ## Run the test suite

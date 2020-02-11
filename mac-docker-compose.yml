@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  website:
+    build:
+      context: .
+      dockerfile: docker_dev/Dockerfile
+    image: hubrise/website-dev
+    volumes:
+      - website-sync:/var/www/website
+    ports:
+      - "8000:8000"
+
+volumes:
+  website-sync:
+    external: true
