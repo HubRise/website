@@ -30,7 +30,7 @@ File synchronization with Docker is very slow on Mac OS. A solution is to use do
 
 Initial setup (to be done only once):
 ```
-brew install rbenv ruby-build
+brew install rbenv ruby-build unison eugenmayer/dockersync/unox
 gem install docker-sync
 ```
 

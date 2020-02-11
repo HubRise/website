@@ -28,7 +28,7 @@ WORKDIR $HEXO_ROOT
 
 COPY package.json yarn.lock ./
 
-RUN yarn install --modules-folder /node_modules
+RUN yarn install --modules-folder /usr/local/node_modules
 
 # -------------
 # Add project files
