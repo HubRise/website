@@ -1,0 +1,10 @@
+version: "2"
+
+options:
+  compose-file-path: "docker-compose.mac.yml"
+
+syncs:
+  website-sync:
+    sync_strategy: "native_osx"
+    src: "."
+    sync_excludes: ['.cache', 'public', '.idea', 'node_modules' ]
