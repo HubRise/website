@@ -13,13 +13,17 @@ export const Hero = ({ title, description }) => {
         <p className="section__description">
           {description.paragraph_1}
           <br />
-          <button
-            className="section__description-link"
-            onClick={forms.contact.toggle}
-          >
-            {description.paragraph_2.button}
-          </button>
-          {description.paragraph_2.text}
+          {description.paragraph_2 ? (
+            <>
+              <button
+                className="section__description-link"
+                onClick={forms.contact.toggle}
+              >
+                {description.paragraph_2.button}
+              </button>
+              {description.paragraph_2.text}
+            </>
+          ) : null}
         </p>
       </div>
     </section>

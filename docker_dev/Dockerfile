@@ -26,12 +26,13 @@ WORKDIR $HEXO_ROOT
 # The entry point links the directory to [workdir]/node_modules after the host's app directory is bind mounted
 # -------------
 
-COPY package.json .
-COPY yarn.lock .
+COPY package.json yarn.lock ./
 
 RUN --mount=type=cache,target=/node_modules \
     yarn install --modules-folder /node_modules; \
     cp -Rf /node_modules /usr/local
+
+RUN /usr/local/node_modules/cypress/bin/cypress install
 
 # -------------
 # Add project files

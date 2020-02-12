@@ -1,0 +1,103 @@
+.articles {
+  @include breakpoint(medium down) {
+    margin-top: 2rem;
+  }
+  &__item {
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  &__title {
+    color: $hr-dark-gray;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    text-align: left;
+    font-size: 2.125rem;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: inherit;
+      top: 100%;
+      margin: 5px auto;
+      width: 15%;
+      height: 3px;
+      background: $hr-green;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  &__image-block {
+    flex: 1;
+    min-width: 260px;
+    @include breakpoint(small only) {
+      width: 100%;
+      flex: none;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: 160px;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+  &__description-block {
+    flex: 4;
+    padding-left: 1rem;
+    @include breakpoint(small only) {
+      width: 100%;
+      padding-left: 0;
+      margin-top: 1rem;
+      flex: none;
+    }
+  }
+  &__date {
+    color: #999999;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+  }
+  &__date-value {
+    color: #777777;
+    padding: 0 0.3rem;
+  }
+  &__author {
+    color: #555555;
+    text-decoration: underline;
+    padding: 0 0.3rem;
+    &:hover {
+      color: $hr-green;
+    }
+  }
+  &__description {
+    color: #777777;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+  }
+  &__read-more {
+    text-align: center;
+    color: $white;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    background: #555555;
+    border-radius: 3px;
+    padding: 0.3rem 1.8rem;
+    transition: 0.1s ease-in-out;
+    &:hover {
+      background: $hr-green;
+      color: $white;
+    }
+    @include breakpoint(small only) {
+      width: 100%;
+      display: inline-block;
+    }
+  }
+}

@@ -55,6 +55,19 @@
     }
   }
 
+  &__in_left {
+    &:before {
+      right: 100%;
+      left: inherit;
+      width: 9999px;
+      top: 0;
+      bottom: 0;
+      content: '';
+      background: #fefefe;
+      position: absolute;
+    }
+  }
+
   &__in_full-width {
     @include flex-grid-row();
 
@@ -115,6 +128,18 @@
     }
   }
 
+  &__in_blog {
+    width: 100%;
+
+    &:before {
+      z-index: 1;
+    }
+
+    .section__sidebar {
+      z-index: 1;
+    }
+  }
+
   &__in_developers {
     background: transparent;
     padding-top: 0;
@@ -169,6 +194,10 @@
     }
   }
 
+  &__sidebar-in-wrapper {
+    min-height: 54px;
+  }
+
   &__sidebar-in {
     background: $white;
 
@@ -188,6 +217,13 @@
       position: unset;
       max-height: unset;
     }
+  }
+
+  &__sidebar_fixed {
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    box-shadow: 0px 3px 4px 2px rgba(109, 178, 79, 0.2);
   }
 
   &__sidebar_logo {

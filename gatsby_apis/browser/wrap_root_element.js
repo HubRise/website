@@ -19,11 +19,11 @@ import ErrorBoundary from '../../src/components/error_boundary'
 
 let components = {
   ...generateHeaders([`h2`, `h3`]),
-  a: ({ href, ...other }) => (
-    <Link
-      to={href}
-      {...other}
-    />
+  a: ({ href, ...other }) => <Link to={href} {...other} />,
+  table: (tableProps) => (
+    <div className="table-container">
+      <table {...tableProps} />
+    </div>
   ),
   pre: ({ children: { props } }) => (
     <HighlightCode
@@ -42,9 +42,7 @@ export const wrapRootElement = ({ element }) => {
     <ErrorBoundary>
       <I18nextProvider i18n={i18n}>
         <LayoutProvider>
-          <MDXProvider components={components}>
-            {element}
-          </MDXProvider>
+          <MDXProvider components={components}>{element}</MDXProvider>
         </LayoutProvider>
       </I18nextProvider>
     </ErrorBoundary>

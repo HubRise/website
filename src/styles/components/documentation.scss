@@ -3,16 +3,10 @@
 
   h2,
   h3 {
-    display: grid;
-    grid-template-columns: max-content min-content;
-    grid-auto-flow: column;
-    grid-template-areas: 'header anchor';
-    grid-gap: 0.33rem;
-
     a {
-      grid-area: anchor;
-      align-self: center;
       color: transparent;
+      margin-left: 0.33rem;
+      vertical-align: middle;
 
       &::after {
         content: '#';
@@ -35,11 +29,15 @@
   h1 {
     color: $hr-dark-gray;
     font-weight: bold;
-    font-size: 2.625rem;
+    font-size: 2.125rem;
     position: relative;
     margin: 0 0 2.5rem 0;
     width: 100%;
     line-height: 1;
+
+    @media screen and (min-width: 415px) {
+      font-size: 2.625rem;
+    }
 
     &:after {
       content: '';
@@ -83,6 +81,7 @@
     font-size: 1rem;
     color: $hr-gray;
     font-weight: 400;
+    overflow: auto;
   }
 
   a {
@@ -100,6 +99,7 @@
   ol {
     display: block;
     margin-bottom: 1rem;
+    overflow: auto;
   }
 
   li {
@@ -198,6 +198,10 @@
   /* -----------
       Table reset
      ----------- */
+
+  .table-container {
+    overflow: auto;
+  }
 
   tbody {
     background: none;

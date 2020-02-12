@@ -17,7 +17,7 @@
     column-gap: 0;
   }
 
-  &__item {
+  &__item-wrapper {
     position: relative;
 
     &:before {
@@ -43,18 +43,13 @@
     }
   }
 
-  &__link {
+  &__item {
     margin-left: 0.3rem;
     color: $white;
-    border-bottom: 1px solid $white;
     display: inline-block;
     line-height: 1;
     text-align: left;
     font-size: 1.125rem;
-
-    &:hover {
-      color: $white;
-    }
 
     @include breakpoint(medium down) {
       margin-left: 1rem;

@@ -65,11 +65,11 @@ export function generateHeaders(headers) {
         header,
         { id: headerAnchor },
         <>
+          {headerText}
           <a
             href={`#${headerAnchor}`}
             arial-label={`${headerText} permalink`}
           />
-          {headerText}
         </>
       )
     }
@@ -106,4 +106,4 @@ export const getPathSegments = (path) => {
  * @param   {string} path.
  * @returns {string} result string
  */
-export const replaceBackslash = path => path.split('\\').join('/');
+export const replaceBackslash = (path) => path.split('\\').join('/')
