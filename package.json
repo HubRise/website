@@ -14,7 +14,8 @@
     "test:unit-testing": "jest --config='./jest/config.js'",
     "test:e2e": "start-server-and-test start:dev http://localhost:8000 cy:open",
     "test:e2e:ci": "start-server-and-test start:prod http://localhost:9009 cy:run",
-    "test:all:ci": "yarn test:unit-testing && yarn test:e2e:ci"
+    "test:all:ci": "yarn test:unit-testing && yarn test:e2e:ci",
+    "md:lint": "markdownlint \"content/**/*.md\""
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
@@ -83,6 +84,8 @@
     "jest": "^24.9.0",
     "js-yaml": "^3.13.1",
     "lint-staged": "^9.2.5",
+    "markdownlint": "^0.19.0",
+    "markdownlint-cli": "^0.22.0",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "react-test-renderer": "^16.9.0",
