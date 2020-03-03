@@ -23,6 +23,4 @@ jobs:
         run: yarn install
 
       - name: Run tests
-        run: |
-          yarn test:unit-testing &&
-          yarn test:e2e:ci
+        run: yarn test:all:ci

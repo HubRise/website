@@ -15,8 +15,8 @@ The OAuth 2.0 flow is a series of interactions between:
 
 - A **resource owner**: the HubRise user
 - A **client**: your application, ie a program or a website making protected requests on behalf of the user
-- An **authorization server**: Hubrise OAuth API, which issues an access token to the client. It is hosted at: http://manager.hubrise.com/oauth2/v1
-- A **resource server**: Hubrise API, which provides access your user data. It is hosted at: http://api.hubrise.com/v1
+- An **authorization server**: HubRise OAuth API, which issues an access token to the client. It is hosted at: http://manager.hubrise.com/oauth2/v1
+- A **resource server**: HubRise API, which provides access your user data. It is hosted at: http://api.hubrise.com/v1
 
 Although it seems complicated at first, OAuth actually makes things simpler for both you and your users, and it dramatically reduces security risks for everyone:
 

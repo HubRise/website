@@ -17,19 +17,20 @@ Extensions let clients implement use cases not natively supported by the API.
 
 The HubRise development team monitors how extensions are used in an effort to document and "standardize" the most common fields and endpoints. You can <ContactFormToggle text="contact us" /> to discuss about your use case and see if it could fit into existing and well supported extensions.
 
-## 1. Custom fields
+## 1. Custom Fields
 
 Custom fields can be defined on the following resources:
 
 - `Customer`
 - `Order`
 - `Location`
+- `Sku`
 
 Each resource of the above types has a `custom_fields` field, which can be populated with arbitrary data.
 
 The field is retrieved in `GET` operations upon the resources, and is updated with `POST`, `PUT` or `PATCH` operations.
 
-### 1.1. Example workflow
+### 1.1. Example Workflow
 
 ```http
 POST /location/orders
@@ -79,7 +80,7 @@ GET /location/orders/bd1f2
 
 Custom fields work in the same way on orders, customers and locations.
 
-### 1.2. Data constraints
+### 1.2. Data Constraints
 
 A custom field can be of any type. You can even pass JSON objects as values:
 
@@ -103,6 +104,6 @@ The only limitation is the size: the JSON representation of `custom_fields` must
 
 Custom fields work nicely with [callbacks](/api/callbacks). Updating the custom fields of a resource triggers the update callback of the resource.
 
-## 2. Custom endpoints
+## 2. Custom Endpoints
 
 Coming soon

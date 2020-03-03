@@ -20,12 +20,12 @@ content:
           logo: 3spos.png
           title: 3S POS
           description: 3S POS est une suite complète aux fonctionnalités personnalisables pour répondre aux besoins de chaque restaurant ou hôtelier.
-          additional_info: Documentation en anglais
+          additional_info: Documentation en anglais.
         - to: https://iikosoftware.com
           logo: iiko.png
           title: iiko
           description: iiko est une solution cloud facile à déployer et à faire évoluer. Plus de 30.000 entreprises mono ou multisites l'utilisent pour automatiser leurs opérations.
-          additional_info: Documentation en anglais
+          additional_info: Documentation en anglais.
         - to: https://www.ikentoo.com
           logo: ikentoo-lightspeed.png
           title: iKentoo par LightSpeed
@@ -38,7 +38,7 @@ content:
           logo: myorderbox.png
           title: My Order Box
           description: My Order Box est une solution d'encaissement facile à installer et à utiliser.
-          additional_info: Documentation en anglais
+          additional_info: Documentation en anglais.
         - to: http://www.logiciel-de-livraison.com
           logo: nestor.png
           title: Nestor
@@ -47,17 +47,17 @@ content:
           logo: pointone.png
           title: pointOne
           description: pointOne est une solution simple à utiliser et complète avec gestion de stock, rapports et analyses des données.
-          additional_info: Documentation en anglais
+          additional_info: Documentation en anglais.
         - to: https://www.orderlord.com
           logo: orderlord.png
           title: OrderLord POS
           description: OrderLord est un logiciel de caisse spécialisé pour la livraison. OrderLord offre de nombreuses fonctionnalités pour faciliter le travail en cuisine, la gestion de livreurs et l'analyse des données.
-          additional_info: Documentation en anglais
+          additional_info: Documentation en anglais.
         - to: https://www.partech.com/pixel-point-software
           logo: par-pixelpoint.png
           title: PixelPoint (web API)
           description: PixelPoint, édité par PAR, intégré via son API web, répond aux besoins de la restauration et du divertissement, avec un focus sur la gestion des coûts, la prévention des pertes et la fidélisation.
-          additional_info: Intégration via son API web. Documentation en anglais
+          additional_info: Intégration via son API web. Documentation en anglais.
         - to: https://www.partech.com/pixel-point-software
           logo: par-pixelpoint.png
           title: PixelPoint (Windows API)
@@ -87,11 +87,16 @@ content:
           title: RestaJet
           description: RestaJet propose une application mobile pour les réservations et un site de commande en ligne pour les restaurants. Des outils de gestion de contenu et de marketing sont disponibles sur la console RestaJet.
           additional_info: Documentation en anglais. Intégration en cours.
+        - to: https://www.tastycloud.fr
+          logo: tastycloud.png
+          title: TastyCloud
+          description: TastyCloud propose des menus digitalisés in et out store pour les restaurants et les hôtels. L'offre comprend des menus sur tablettes, des porte-menus extérieurs, un site de click and collect, des écrans dynamiques, et une application mobile de prise de commande par scan de QR codes.
+          additional_info: Intégration en cours.
         - to: https://www.ubereats.com
           logo: ubereats.png
           title: Uber Eats
           description: Plateforme de commande de repas en ligne depuis le site ou via une application mobile avec service de livraison à domicile.
-          additional_info: Intégration en cours
+          additional_info: Intégration en cours.
         - to: http://www.y-proximite.fr
           logo: yproximite.png
           title: Y-Proximité
@@ -102,17 +107,17 @@ content:
           logo: captain.png
           title: Captain
           description: Captain est une solution de traitement des commandes et de tracking des livreurs.
-          additional_info: Documentation en anglais
+          additional_info: Documentation en anglais.
         - to: https://www.orderlord.com
           logo: orderlord.png
           title: OrderLord
           description: OrderLord est une solution conçue pour les entreprises de livraison et les restaurants, permettant de suivre les livraisons grâce à une application mobile utilisant le GPS. OrderLord apporte aux clients une expérience de livraison transparente.
-          additional_info: Documentation en anglais
+          additional_info: Documentation en anglais.
         - to: https://orkestro.com
           logo: orkestro.png
           title: Orkestro
           description: Orkestro permet de gérer les livraisons en interne ou de les externaliser à des opérateurs offrant des services de livraison à la demande.
-          additional_info: Documentation en anglais
+          additional_info: Documentation en anglais.
     - title: Fidélité et marketing
       apps:
         - to: https://www.como.com
@@ -124,22 +129,22 @@ content:
           logo: emma.png
           title: Emma
           description: Emma est une solution d'envoi d'emails et de newsletter personnalisés, avec support à la stratégie et à la conception de la campagne marketing.
-          additional_info: Documentation en anglais
+          additional_info: Documentation en anglais.
         - to: https://mailchimp.com
           logo: mailchimp.png
           title: MailChimp
           description: MailChimp est une solution d'envoi d'emails et de newsletter personnalisés.
-          additional_info: Documentation en anglais
+          additional_info: Documentation en anglais.
         - to: https://sailplay.com
           logo: sailplay.png
           title: SailPlay
           description: SailPlay est une plateforme utilisée pour l'automatisation des campagnes d'emailing. Elle permet de mieux connaître ses clients afin de les fidéliser.
-          additional_info: Documentation en anglais
+          additional_info: Documentation en anglais.
         - to: https://www.smg.com
           logo: smg.png
           title: Service Management Group
           description: SMG associe la technologie et le service pour collecter et analyser vos données, afin de comprendre les comportements de vos clients et d'agir en conséquence.
-          additional_info: Documentation en anglais
+          additional_info: Documentation en anglais.
     - title: Autres applications
       apps:
         - to: https://tickncook.com

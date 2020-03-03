@@ -1,5 +1,5 @@
 ---
-title: Catalog management
+title: Catalog Management
 position: 4
 layout: documentation
 meta:
@@ -15,7 +15,7 @@ Account-level catalogs are accessible by all the locations of the account. They 
 
 Catalogs are identified by their name. Catalog names must be unique for any account or location. For instance, two locations can have two different location-level catalogs with the same name. But a location and its holding account cannot have two catalogs with the same name.
 
-### 1.1. Retrieve catalog
+### 1.1. Retrieve Catalog
 
 <CallSummaryTable
   endpoint="GET /catalogs/:id"
@@ -42,7 +42,7 @@ Catalogs are identified by their name. Catalog names must be unique for any acco
 
 The resource either has a `location_id` (location level catalog) or an `account_id` (account level catalog).
 
-### 1.2. List catalogs
+### 1.2. List Catalogs
 
 Return the catalogs a location has access to, including the account-level and location-level catalogs.
 
@@ -87,7 +87,7 @@ Catalogs returned by the location level form of this request (above example) can
 
 The `data` field of the catalogs is not returned by this request. To retrieve the actual content of a catalog, you need to retrieve the catalog individually, using the `/catalogs/:id` resource URL.
 
-### 1.3. Create catalog
+### 1.3. Create Catalog
 
 Creates a new catalog. The products, categories, options, etc. of the catalog can be passed along in the request.
 
@@ -180,7 +180,7 @@ To create an account-level catalog:
 }
 ```
 
-### 1.4. Update catalog
+### 1.4. Update Catalog
 
 Update a catalog.
 
@@ -219,7 +219,7 @@ Response:
 }
 ```
 
-### 1.5. Delete catalog
+### 1.5. Delete Catalog
 
 Delete a catalog and all its content (ie categories, products, ...).
 
@@ -238,7 +238,7 @@ The categories of a catalog form a tree: categories without a `parent_id` are th
 
 The tree is sorted. Categories and products are retrieved in the same order as they were uploaded in the catalog creation/update.
 
-### 2.1. Category in catalog upload
+### 2.1. Category in Catalog Upload
 
 #### Parameters:
 
@@ -263,7 +263,7 @@ The tree is sorted. Categories and products are retrieved in the same order as t
 }
 ```
 
-### 2.2. Retrieve category
+### 2.2. Retrieve Category
 
 <CallSummaryTable
   endpoint="GET /catalogs/:catalog_id/categories/:id"
@@ -294,7 +294,7 @@ The tree is sorted. Categories and products are retrieved in the same order as t
 }
 ```
 
-### 2.3. List categories
+### 2.3. List Categories
 
 Return the categories of the catalog. Categories are returned in a deep first traversal order (category 1, then category 1's children, then category 2, then category 2's children, etc.)
 
@@ -325,7 +325,7 @@ Return the categories of the catalog. Categories are returned in a deep first tr
 
 A product belongs to a category. A product has one or several skus.
 
-### 3.1. Product in catalog upload
+### 3.1. Product in Catalog Upload
 
 #### Parameters:
 
@@ -363,7 +363,7 @@ A product belongs to a category. A product has one or several skus.
 }
 ```
 
-### 3.2. Retrieve product
+### 3.2. Retrieve Product
 
 <CallSummaryTable
   endpoint="GET /catalogs/:catalog_id/products/:id"
@@ -408,7 +408,7 @@ A product belongs to a category. A product has one or several skus.
 }
 ```
 
-### 3.3. List products
+### 3.3. List Products
 
 Retrieve the list of products in the catalog.
 
@@ -439,7 +439,7 @@ Skus ("Stock Keeping Unit") is a distinct type of item for sale, such as a produ
 
 A product contains one or several skus. A sku is always attached to a product.
 
-### 4.1. Sku in catalog upload
+### 4.1. Sku in Catalog Upload
 
 #### Parameters:
 
@@ -463,7 +463,7 @@ A product contains one or several skus. A sku is always attached to a product.
 }
 ```
 
-### 4.2. Retrieve sku
+### 4.2. Retrieve Sku
 
 <CallSummaryTable
   endpoint="GET /catalogs/:catalog_id/products/:product_id/skus/:id"
@@ -496,7 +496,7 @@ A product contains one or several skus. A sku is always attached to a product.
 }
 ```
 
-### 4.3. List skus
+### 4.3. List Skus
 
 <CallSummaryTable
   endpoint="GET /catalogs/:catalog_id/products/:product_id/skus"
@@ -518,13 +518,13 @@ A product contains one or several skus. A sku is always attached to a product.
 ]
 ```
 
-## 5. Option lists
+## 5. Option Lists
 
 An option list can be attached to one or several skus. It has one or several options.
 
 An option list is either of type `single` (a single option must be applied to a sku) or `multiple` (zero, one or several options can be applied to a sku).
 
-### 5.1. Option list in catalog upload
+### 5.1. Option List in Catalog Upload
 
 #### Parameters:
 
@@ -561,7 +561,7 @@ An option list is either of type `single` (a single option must be applied to a 
 
 If the list type is `single`, one single option should be set as default. A default option will be chosen arbitrarily otherwise.
 
-### 5.2. Retrieve option list
+### 5.2. Retrieve Option List
 
 Retrieve an option list and the possible choices (options).
 
@@ -601,7 +601,7 @@ Retrieve an option list and the possible choices (options).
 }
 ```
 
-### 5.3. List option lists
+### 5.3. List Option Lists
 
 <CallSummaryTable
   endpoint="GET /catalogs/:catalog_id/option_lists"
@@ -626,7 +626,7 @@ Retrieve an option list and the possible choices (options).
 
 ## 6. Options
 
-### 6.1. Option in catalog upload
+### 6.1. Option in Catalog Upload
 
 #### Parameters:
 
@@ -649,7 +649,7 @@ Retrieve an option list and the possible choices (options).
 }
 ```
 
-### 6.2. Retrieve option
+### 6.2. Retrieve Option
 
 <CallSummaryTable
   endpoint="GET /catalogs/:catalog_id/option_lists/:option_list_id/options/:id"
@@ -680,7 +680,7 @@ Retrieve an option list and the possible choices (options).
 }
 ```
 
-### 6.3. List options
+### 6.3. List Options
 
 <CallSummaryTable
   endpoint="GET /catalogs/:catalog_id/option_lists/:option_list_id/options"
@@ -706,7 +706,7 @@ Retrieve an option list and the possible choices (options).
 
 ## 7. Deals
 
-### 7.1. Deal in catalog upload
+### 7.1. Deal in Catalog Upload
 
 #### Parameters:
 
@@ -759,7 +759,7 @@ Retrieve an option list and the possible choices (options).
 }
 ```
 
-### 7.2. Retrieve deal
+### 7.2. Retrieve Deal
 
 <CallSummaryTable
   endpoint="GET /catalogs/:catalog_id/deals/:id"
@@ -795,7 +795,7 @@ Retrieve an option list and the possible choices (options).
 }
 ```
 
-### 7.2. List deals
+### 7.2. List Deals
 
 <CallSummaryTable
   endpoint="GET /catalogs/:catalog_id/deals"
@@ -823,7 +823,7 @@ Retrieve an option list and the possible choices (options).
 
 A discount is a reduction of the order total price.
 
-### 8.1. Discount in catalog upload
+### 8.1. Discount in Catalog Upload
 
 #### Parameters:
 
@@ -849,7 +849,7 @@ A discount is a reduction of the order total price.
 }
 ```
 
-### 8.2. Retrieve discount
+### 8.2. Retrieve Discount
 
 <CallSummaryTable
   endpoint="GET /catalogs/:catalog_id/discounts/:id"
@@ -873,7 +873,7 @@ A discount is a reduction of the order total price.
 }
 ```
 
-### 8.3. List discounts
+### 8.3. List Discounts
 
 <CallSummaryTable
   endpoint="GET /catalogs/:catalog_id/discounts"
@@ -901,7 +901,7 @@ A discount is a reduction of the order total price.
 
 A charge is an additional fee billed to the customer. Examples of charges include delivery charge and tip.
 
-### 9.1. Charge in catalog upload
+### 9.1. Charge in Catalog Upload
 
 #### Parameters:
 
@@ -923,7 +923,7 @@ A charge is an additional fee billed to the customer. Examples of charges includ
 }
 ```
 
-### 9.2. Retrieve charge
+### 9.2. Retrieve Charge
 
 <CallSummaryTable
   endpoint="GET /catalogs/:catalog_id/charges/:id"
@@ -954,7 +954,7 @@ A charge is an additional fee billed to the customer. Examples of charges includ
 }
 ```
 
-### 9.3. List charges
+### 9.3. List Charges
 
 Retrieve the list of charges in the catalog.
 
@@ -1033,7 +1033,7 @@ Images must be uploaded before catalog data, since the images' `id`s must be pas
 
 There is no endpoint to delete an image: when an image is left unattached for 30 days in a row, it is automatically removed.
 
-### 11.1. Create image
+### 11.1. Create Image
 
 Upload an image.
 
@@ -1069,7 +1069,7 @@ Response:
 }
 ```
 
-### 11.2. Retrieve image
+### 11.2. Retrieve Image
 
 <CallSummaryTable
   endpoint="GET /catalogs/:catalog_id/images/:id"
@@ -1100,7 +1100,7 @@ Response:
 }
 ```
 
-### 11.3. Retrieve image data
+### 11.3. Retrieve Image Data
 
 Return the image data. The reply's `Content-Type` header contains the MIME image type.
 
@@ -1118,7 +1118,7 @@ Content-Type: image/jpeg
 Response body: image data
 ```
 
-### 11.4. List images
+### 11.4. List Images
 
 Retrieve the list of images in the catalog.
 
@@ -1157,7 +1157,7 @@ An inventory is specific to a particular location. If several locations share th
 
 Inventories cannot be created or deleted. An inventory is automatically associated to each pair of _catalog_ and _location_, where _location_ has access to _catalog_.
 
-### 12.1. Retrieve inventory
+### 12.1. Retrieve Inventory
 
 Returns the list of inventory entries of the inventory.
 
@@ -1201,7 +1201,7 @@ The skus and options' `ref`s are also provided for convenience in the reply.
 
 An inventory is an empty set by default. Every sku or option not specified in the inventory set has **unlimited** supply.
 
-### 12.2. Update inventory
+### 12.2. Update Inventory
 
 Overwrites the inventory. The request body has the same format as the [Retrieve inventory](#retrieve-inventory) response body.
 

@@ -27,7 +27,7 @@ Restaurants are autonomous in the handling of their data: menu changes, promotio
 
 LivePepper integrates seamlessly with tools used for traffic analysis, online advertising and conversion tracking.
 
-## About this integration
+## About This Integration
 
 - **Orders** are sent from LivePepper to HubRise
 - **Catalogs** can be pushed to HubRise and pulled from HubRise

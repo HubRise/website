@@ -1,5 +1,5 @@
 ---
-title: Account management
+title: Account Management
 position: 2
 layout: documentation
 meta:
@@ -9,7 +9,7 @@ meta:
 
 ## 1. Location
 
-### 1.1 Retrieve location
+### 1.1 Retrieve Location
 
 Get location details.
 
@@ -47,7 +47,7 @@ Get location details.
 }
 ```
 
-### 1.2 Update location
+### 1.2 Update Location
 
 Update the `custom_fields` of the location
 
@@ -70,7 +70,7 @@ Update the `custom_fields` of the location
 }
 ```
 
-### 1.3 List locations
+### 1.3 List Locations
 
 Returns the locations of the account.
 
@@ -101,7 +101,7 @@ Returns the locations of the account.
 
 ## 2. Account
 
-### 2.1 Retrieve account
+### 2.1 Retrieve Account
 
 Get account details.
 
@@ -125,7 +125,7 @@ Get account details.
 
 ## 3. User
 
-### 3.1 Retrieve user
+### 3.1 Retrieve User
 
 Get user information.
 

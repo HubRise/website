@@ -6,11 +6,11 @@ meta:
 path_override: /
 content:
   hero:
-    title: Centralize the data of your retail store
+    title: Centralize the Data of Your Retail Store
     description:
       paragraph: Connect your POS, your website and all your applications.
   signup_form:
-    title: Get started now
+    title: Get Started Now
     description:
       paragraph: HubRise is free up to 50 orders per month.
       link:
@@ -19,7 +19,7 @@ content:
     link_to_pricing: /pricing
     button: Create your account
   main:
-    title: HubRise makes POS integration easy
+    title: HubRise Makes POS Integration Easy
     description: HubRise stores your data in the Cloud for easy sharing between your applications. Your HubRise-compatible applications can be connected in one click and start communicating together instantly.
     features:
       - Online Ordering Website

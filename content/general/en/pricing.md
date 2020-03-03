@@ -5,10 +5,10 @@ meta:
   description:
 content:
   hero:
-    title: Single monthly fee, unlimited usage
+    title: Single Monthly Fee, Unlimited Usage
   offer:
     pricing:
-      chunk_1: 25€ / month
+      chunk_1: 25€ / Month
       chunk_2: per location
     features:
       - Unlimited orders

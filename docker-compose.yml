@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  website_dev:
+    build:
+      context: .
+      dockerfile: docker_dev/Dockerfile
+    image: hubrise/website-dev
+    container_name: website_dev
+    volumes:
+      - .:/var/www/website
+    ports:
+      - "8000:8000"
+
+  website_test:
+    build:
+      context: .
+      dockerfile: docker_dev/Dockerfile
+    image: hubrise/website-dev
+    container_name: website_test
+    volumes:
+      - .:/var/www/website
+    command: /usr/local/bin/yarn test:all:ci
+
+  website_prod:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: hubrise/website
+    container_name: website_prod
+    ports:
+      - "8001:80"

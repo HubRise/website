@@ -1,5 +1,5 @@
 ---
-title: Developer guide
+title: Developer Guide
 position: 4
 layout: documentation
 meta:

@@ -1,5 +1,5 @@
 ---
-title: Customer management
+title: Customer Management
 position: 5
 layout: documentation
 meta:
@@ -7,13 +7,13 @@ meta:
   description:
 ---
 
-## 1. Customer lists
+## 1. Customer Lists
 
 Like catalogs, customer lists exist at either location or account level.
 
 Name unicity is ruled by the same constraints as catalogs: at the location level, they are uniquely identified by their name. And an account level customer list cannot have the same name as another account or location level customer list.
 
-### 1.1. Retrieve customer list
+### 1.1. Retrieve Customer List
 
 Returns a customer list.
 
@@ -33,7 +33,7 @@ Returns a customer list.
 }
 ```
 
-### 1.2. List customer lists
+### 1.2. List Customer Lists
 
 Returns a location's Customer Lists. Includes location and account level Customer Lists.
 
@@ -70,7 +70,7 @@ Account level Customer Lists of an account:
 ]
 ```
 
-### 1.3. Create customer list
+### 1.3. Create Customer List
 
 Creates a new customer list.
 
@@ -108,7 +108,7 @@ To create an account-level customer list:
 
 If a customer list with the same name already exists, it returns an error.
 
-### 1.4. Update customer list
+### 1.4. Update Customer List
 
 Update a customer list.
 
@@ -129,7 +129,7 @@ Update a customer list.
 
 If `name` is used by another customer list, it returns an error.
 
-### 1.5. Delete customer list
+### 1.5. Delete Customer List
 
 Delete a customer list and its customers.
 
@@ -144,7 +144,7 @@ Delete a customer list and its customers.
 
 ## 2. Customers
 
-### 2.1. Retrieve customer
+### 2.1. Retrieve Customer
 
 Returns a customer's details.
 
@@ -194,7 +194,7 @@ Returns a customer's details.
 }
 ```
 
-### 2.2. List customers
+### 2.2. List Customers
 
 Returns the customers of a customer list. Some filters can be passed.
 
@@ -227,7 +227,7 @@ Returns the customers of a customer list. Some filters can be passed.
 ]
 ```
 
-### 2.3. Create customer
+### 2.3. Create Customer
 
 Creates a new customer. The only mandatory fields are the first and last name.
 
@@ -270,7 +270,7 @@ Creates a new customer. The only mandatory fields are the first and last name.
 }
 ```
 
-### 2.4. Update customer
+### 2.4. Update Customer
 
 Updates a customer.
 
@@ -289,9 +289,9 @@ Updates a customer.
 }
 ```
 
-## 3. Loyalty cards
+## 3. Loyalty Cards
 
-### 3.1. Retrieve loyalty card
+### 3.1. Retrieve Loyalty Card
 
 Returns a loyalty card.
 
@@ -322,7 +322,7 @@ The `balance` is updated automatically by HubRise when a loyalty operation is cr
 }
 ```
 
-### 3.2. List loyalty cards
+### 3.2. List Loyalty Cards
 
 Returns the loyalty cards belonging to a customer list. Some filters can be passed.
 
@@ -378,7 +378,7 @@ Returns the loyalty cards belonging to a customer list. Some filters can be pass
 ]
 ```
 
-### 3.3. Create loyalty card
+### 3.3. Create Loyalty Card
 
 Creates a new loyalty card for a customer.
 
@@ -409,7 +409,7 @@ Creates a new loyalty card for a customer.
 
 If the request succeeds, the loyalty card is created with an initial `balance` set to 0.0
 
-### 3.4. Update loyalty card
+### 3.4. Update Loyalty Card
 
 Update a loyalty card.
 
@@ -439,9 +439,9 @@ Note that only the name and the ref can be updated. It's not possible to change 
 
 `balance` cannot be changed directly as well. To update it, just create an operation.
 
-## 4. Loyalty operations
+## 4. Loyalty Operations
 
-### 4.1. Retrieve operation
+### 4.1. Retrieve Operation
 
 Returns a loyalty card operation.
 
@@ -467,7 +467,7 @@ Returns a loyalty card operation.
 }
 ```
 
-### 4.2. List operations
+### 4.2. List Operations
 
 Returns the operations on a given loyalty card, sorted by descending chronological order.
 
@@ -492,7 +492,7 @@ Returns the operations on a given loyalty card, sorted by descending chronologic
 ]
 ```
 
-### 4.3. Create operation
+### 4.3. Create Operation
 
 Create a loyalty card operation and updates the balance accordingly.
 

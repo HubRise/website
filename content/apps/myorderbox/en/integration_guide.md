@@ -7,7 +7,7 @@ meta:
   description:
 ---
 
-## Supported features
+## Supported Features
 
 - Tags on products
 - Options
@@ -18,7 +18,7 @@ Not supported:
 
 - Tags on options
 
-## Menu setup
+## Menu Setup
 
 If a code is missing or not recognized (on a sku, deal, etc.), the order is rejected with an error 422 (as of Dec. 2019, My Order Box is considering changing their policy to accept such orders).
 

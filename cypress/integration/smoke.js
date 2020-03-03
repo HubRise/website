@@ -50,7 +50,7 @@ describe(`website`, () => {
 
     cy.visit(`/`)
     cy.contains(`form`, `Create your account`)
-    cy.contains(`HubRise makes POS integration easy`)
+    cy.contains(`HubRise Makes POS Integration Easy`)
     cy.contains(`li`, `Developers`).click()
     cy.contains(`Contact us`).click()
     cy.get(`div[role="dialog"]`).should(`be.visible`)

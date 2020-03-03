@@ -4,7 +4,7 @@ meta:
   title: Blog
   description:
 
-title: Title of second blog article
+title: Title of Second Blog Article
 date: 2020-02-29
 shortDescription: |
   2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -12,7 +12,7 @@ picture: ../images/test-image2.jpg
 author: Vital Ozierski
 ---
 
-## 1. Setting up an OAuth client
+## 1. Setting up an OAuth Client
 
 First of all, you need to create an account. It's free and it takes a minute. Once you are there, click on "Developer", and create an OAuth 2.0 client. Download the client secret JSON, which should look like:
 
@@ -25,7 +25,7 @@ First of all, you need to create an account. It's free and it takes a minute. On
 
 The client's **id** and **secret** uniquely identify your application. A client can access several HubRise accounts, so you will generally need to create only one client.
 
-## 2. Requesting authorization
+## 2. Requesting Authorization
 
 To access a HubRise account, you need the account owner approval. Open a web browser with this URL:
 

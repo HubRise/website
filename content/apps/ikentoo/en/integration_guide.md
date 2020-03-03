@@ -7,18 +7,18 @@ meta:
   description:
 ---
 
-## Menu setup
+## Menu Setup
 
 This app is a _push-only_ integration, therefore iKentoo product and option codes must be copied manually from iKentoo into your menu.
 
-### iKentoo menu export
+### iKentoo Menu Export
 
 You can find the codes from the iKentoo back-office. You can also view an export of your menu in a browser and fetch the codes from here:
 
 - open this URL in your browser: https://pos.ikentoo.com/integration/1/menus?businessLocationId=xyz - replace "xyz" by the business location id
 - enter your iKentoo email and password when prompted
 
-### Code matching
+### Code Matching
 
 - **Product/sku codes**:
 

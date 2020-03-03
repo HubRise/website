@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  website_dev:
+    build:
+      context: .
+      dockerfile: docker_dev/Dockerfile.mac
+    image: hubrise/website-dev
+    container_name: website_dev
+    volumes:
+      - website-sync:/var/www/website
+    ports:
+      - "8000:8000"
+
+  website_test:
+    build:
+      context: .
+      dockerfile: docker_dev/Dockerfile.mac
+    image: hubrise/website-dev
+    container_name: website_test
+    volumes:
+      - website-sync:/var/www/website
+    command: /usr/local/bin/yarn test:all:ci
+
+volumes:
+  website-sync:
+    external: true

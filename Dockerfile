@@ -6,10 +6,8 @@ FROM node:10.16.0-buster AS build-stage
 # Working directory
 WORKDIR /website
 
-# Install NodeJS packages into a directory outside the workdir
-# The entry point links the directory to [workdir]/node_modules after the host's app directory is bind mounted
-COPY package.json .
-COPY yarn.lock .
+# Install NodeJS packages
+COPY package.json yarn.lock ./
 RUN yarn install
 
 # Add project files

@@ -5,7 +5,7 @@ meta:
   description:
 content:
   hero:
-    title: Connect your application to HubRise
+    title: Connect Your Application to HubRise
     description:
       paragraph_1: An integration to HubRise makes your application connected to the HubRise ecosystem.
       paragraph_2:
@@ -16,7 +16,7 @@ content:
       description: 10-minute guide to learn how to send your first API requests
       to: /developers/quick-start
       icon: fa-fast-forward
-    - title: API reference
+    - title: API Reference
       description: The resources available in the API are documented here
       to: /api/general-concepts
       icon: fa-cogs

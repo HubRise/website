@@ -5,7 +5,7 @@ meta:
   description:
 content:
   hero:
-    title: Integrated apps
+    title: Integrated Apps
     description:
       paragraph_1_text: Are you a retail and applications you use are not available on this page?
       paragraph_1_link_text: Contact us
@@ -32,7 +32,7 @@ content:
           logo: jdc.png
           title: Kezia II / JDC
           description: Kezia II is a Point of Sales solution developed by JDC, a French market leader. Kezia II adapts to all types of businesses.
-          additional_info: Documentation in French
+          additional_info: Documentation in French.
         - to: http://www.myorderboxhq.com
           logo: myorderbox.png
           title: My Order Box
@@ -41,7 +41,7 @@ content:
           logo: nestor.png
           title: Nestor
           description: Nestor is a French Point of Sales solution designed for home delivery and takeaway restaurants.
-          additional_info: Documentation in French
+          additional_info: Documentation in French.
         - to: https://www.pointone-epos.co.uk/
           logo: pointone.png
           title: pointOne
@@ -54,24 +54,24 @@ content:
           logo: par-pixelpoint.png
           title: PixelPoint (web API)
           description: PixelPoint by PAR, integrated via its Web API, is a Point of Sales solution for restaurants and entertainment industry sectors. PixelPoint is used for cost management, loss prevention and loyalty programs.
-          additional_info: Web API integration
+          additional_info: Web API integration.
         - to: https://www.partech.com/pixel-point-software
           logo: par-pixelpoint.png
           title: PixelPoint (Windows API)
           description: PixelPoint by PAR, integrated via its Windows API, is a Point of Sale solution for restaurants and entertainment industry sectors. PixelPoint is used for cost management, loss prevention and loyalty programs.
-          additional_info: Slowey Systems Windows API integration
+          additional_info: Slowey Systems Windows API integration.
         - to: https://zelty.fr
           logo: zelty.png
           title: Zelty
           description: Zelty is a complete suite of solutions designed for multisite. Zelty is suitable for any type of restaurant from fast food to traditional catering.
-          additional_info: Documentation in French
+          additional_info: Documentation in French.
     - title: Online Ordering
       apps:
         - to: https://www.app4takeaways.com
           logo: app4.png
           title: App4
           description: App4 offers a branded online ordering system, mobile app and associated applications for takeaways, restaurants, pubs, cafes and food outlets.
-          additional_info: Integration in progress
+          additional_info: Integration in progress.
         - to: http://www.livepepper.fr
           logo: livepepper.png
           title: LivePepper
@@ -80,22 +80,27 @@ content:
           logo: nextsourcia.png
           title: nextSourcia
           description: nextSourcia creates e-commerce websites for retail stores. It offers also hosting services and specific development work.
-          additional_info: Documentation in French
+          additional_info: Documentation in French.
         - to: https://www.restajet.com/
           logo: restajet.png
           title: RestaJet
           description: RestaJet offers a mobile app for reservations and an online ordering website for restaurants. Content management, reporting and marketing tools are available on the RestaJet console.
-          additional_info: Integration in progress
+          additional_info: Integration in progress.
+        - to: https://www.tastycloud.fr
+          logo: tastycloud.png
+          title: TastyCloud
+          description: TastyCloud creates in and out store digital menus for restaurants and hotels. Their offer includes digital menus, outside menu stands, dynamic screens, click and collect online ordering, and smartphone ordering with menu scan by QR codes.
+          additional_info: Integration in progress.
         - to: https://www.ubereats.com
           logo: ubereats.png
           title: Uber Eats
           description: Uber Eats is an online food ordering and delivery platform for local restaurants. End client can order food online or via an app.
-          additional_info: Integration in progress
+          additional_info: Integration in progress.
         - to: http://www.y-proximite.fr
           logo: yproximite.png
           title: Y-Proximité
           description: Y-Proximité is a digital agency and online ordering software editor used by SMEs and smaller retail stores.
-          additional_info: Documentation in French
+          additional_info: Documentation in French.
     - title: Delivery Management
       apps:
         - to: http://www.captain.ai
@@ -116,7 +121,7 @@ content:
           logo: como.png
           title: Como
           description: Como is a loyalty programme solution for retail and hospitality companies. Como gathers data about purchases and preferences to approach customers with personalised offers.
-          additional_info: Integration in progress
+          additional_info: Integration in progress.
         - to: https://myemma.com
           logo: emma.png
           title: Emma
@@ -133,7 +138,7 @@ content:
           logo: smg.png
           title: Service Management Group
           description: SMG combines technology and services to collect, analyse, and share feedback on data for brands to make decisions with insights across their enterprise.
-    - title: Other apps
+    - title: Other Apps
       apps:
         - to: https://tickncook.com
           logo: tickncook.png
@@ -149,7 +154,7 @@ content:
       description: Your application is not in this list? Send us some details about your application. HubRise will contact them to suggest an integration.
       button: Suggest
   developers:
-    title: You are a developer?
+    title: Are You a Developer?
     description:
       paragraph_1: Use our API to buid an useful application for restaurants or retail stores. Suggest it to HubRise users by posting it on our site and app store.
       paragraph_2:

@@ -1,5 +1,5 @@
 ---
-title: General concepts
+title: General Concepts
 position: 1
 layout: documentation
 meta:
@@ -70,13 +70,13 @@ Body:
   ]
 ```
 
-## 3. Rate limiting
+## 3. Rate Limiting
 
 If a connection makes too many requests in a short time window, HubRise will return a `429` (Too Many Requests) HTTP status code.
 
 A connection is limited to 500 requests per 60-second window.
 
-## 4. Overriding HTTP method
+## 4. Overriding HTTP Method
 
 Some HTTP clients can only send GET and POST requests.
 
@@ -89,9 +89,9 @@ Headers: X-Http-Method-Override=PUT
 
 This parameter is **not** accepted in a GET request, since a GET request should not change the state of a resource.
 
-## 5. Common data types
+## 5. Common Data Types
 
-### Monetary value
+### Monetary Value
 
 A number with 2 decimal digits, followed by a space and the [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency name. Can be preceded by a `-` sign for negative amounts.
 
@@ -100,7 +100,7 @@ Examples:
 - `8.90 EUR`
 - `-0.05 GBP`
 
-### Date/time
+### Date/Time
 
 Encoded using the [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601). A date/time passed to the API is assumed to be in the location's timezone, unless otherwise specified. The API returns times in the local timezone, with the timezone explicitly specified.
 
@@ -109,11 +109,11 @@ Encoded using the [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601). A d
 - Explicit timezone: `2017-08-20T06:42:46+02:00`
 - Assume location's timezone: `2017-08-20T06:42:46`
 
-### Service type
+### Service Type
 
 Can be one of `delivery`, `collection` or `eat_in`.
 
-## 6. HTTP status codes
+## 6. HTTP Status Codes
 
 The API returns appropriate [HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) for every request.
 

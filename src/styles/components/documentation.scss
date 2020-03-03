@@ -102,6 +102,11 @@
     overflow: auto;
   }
 
+  ol {
+    margin-left: 0;
+    padding-left: 1rem;
+  }
+
   li {
     font-size: 1rem;
     font-weight: 400;
@@ -112,7 +117,7 @@
     display: inline-block;
     width: 100%;
     position: relative;
-    padding-left: 0.8rem;
+    padding-left: 1rem;
 
     &:before {
       content: '';
