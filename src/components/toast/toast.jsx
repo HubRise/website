@@ -64,7 +64,7 @@ function Toast({
         onClick={() => onClose(id)}
         data-testid="close-toast-button"
       >
-        <FontAwesomeIcon icon={faTimesCircle} color="white" size={20} />
+        <FontAwesomeIcon icon={faTimesCircle} color="white" />
       </button>
     </div>
   )
