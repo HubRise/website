@@ -49,18 +49,19 @@ const Contact = ({ t, _i18n }) => {
     window.grecaptcha
       .execute(process.env.RECAPTCHA_SITE_KEY, { action: 'send_email' })
       .then((token) => {
-        return fetch('http://localhost:8080/api/mail/send', {
+        // Use application/x-www-form-urlencoded content type (instead of application/json)
+        // to skip CORS preflight check, which has not been implemented on the server side.
+        return fetch('http://manager.hubrise.localtest.me:4003/api/contact_message', {
           method: 'POST',
-          body: JSON.stringify({
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+          },
+          body: encodeFormData({
             name: values.name,
             email: values.email,
             message: values.message,
             recaptchaResponse: token
-          }),
-          mode: 'cors',
-          headers: {
-            'Content-Type': 'application/json'
-          }
+          })
         })
           .then((response) => {
             if (response.ok) {
@@ -134,6 +135,12 @@ const createContactSchema = (t) => {
       )
       .required(t(`forms.validation.message_required`))
   })
+}
+
+const encodeFormData = (params) => {
+  return Object.keys(params).map((key) => {
+    return encodeURIComponent(key) + '=' + encodeURIComponent(params[key])
+  }).join('&')
 }
 
 export default withTranslation()(Contact)
