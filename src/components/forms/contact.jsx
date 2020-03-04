@@ -61,7 +61,8 @@ const Contact = ({ t, _i18n }) => {
             email: values.email,
             message: values.message,
             recaptchaResponse: token
-          })
+          }),
+          mode: 'no-cors'
         })
           .then((response) => {
             if (response.ok) {
