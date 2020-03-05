@@ -24,7 +24,7 @@ jobs:
 
       - name: Run tests
         env:
-          NODE_ENV=local
-          SENTRY_DSN=https://96b4d1defd7648308c6e30f8a3470cfd@sentry.io/1776244
-          RECAPTCHA_SITE_KEY=6LfjbNYUAAAAAPx_tCv_YyhueK2JIjf58b2HGU8d
+          NODE_ENV: test
+          SENTRY_DSN: https://96b4d1defd7648308c6e30f8a3470cfd@sentry.io/1776244
+          RECAPTCHA_SITE_KEY: 6LfjbNYUAAAAAPx_tCv_YyhueK2JIjf58b2HGU8d
         run: yarn test:all:ci
