@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { withTranslation } from 'react-i18next'
 import { Formik } from 'formik'
 import * as yup from 'yup'
@@ -41,13 +42,13 @@ const structure = {
     }
   ]
 }
-const Contact = ({ t, _i18n }) => {
+const Contact = ({ recaptchaSiteKey, t, _i18n }) => {
   const { forms } = useLayoutContext()
   const toast = useToast()
 
   function onSubmit(values, { setSubmitting }) {
     window.grecaptcha
-      .execute(process.env.RECAPTCHA_SITE_KEY, { action: 'send_email' })
+      .execute(recaptchaSiteKey, { action: 'send_email' })
       .then((token) => {
         // Use application/x-www-form-urlencoded content type (instead of application/json)
         // to skip CORS preflight check, which has not been implemented on the server side.
@@ -142,6 +143,10 @@ const encodeFormData = (params) => {
   return Object.keys(params).map((key) => {
     return encodeURIComponent(key) + '=' + encodeURIComponent(params[key])
   }).join('&')
+}
+
+Contact.propTypes = {
+  recaptchaSiteKey: PropTypes.string
 }
 
 export default withTranslation()(Contact)
