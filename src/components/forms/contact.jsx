@@ -62,8 +62,7 @@ const Contact = ({ recaptchaSiteKey, t, _i18n }) => {
             email: values.email,
             message: values.message,
             recaptchaResponse: token
-          }),
-          mode: 'no-cors'
+          })
         })
           .then((response) => {
             if (response.ok) {
@@ -73,7 +72,7 @@ const Contact = ({ recaptchaSiteKey, t, _i18n }) => {
                 text: t('misc.messages.email_send_success')
               })
               forms.contact.toggle()
-              console.log('Message is successfully sent')
+              console.log('Message sent successfully')
             } else {
               throw new Error(`${response.statusText}`)
             }
@@ -85,7 +84,7 @@ const Contact = ({ recaptchaSiteKey, t, _i18n }) => {
               text: t('misc.messages.email_send_failure')
             })
             console.error(error)
-            console.error('Message sending was failed')
+            console.error('Message sending failed')
             setSubmitting(false)
           })
       })
