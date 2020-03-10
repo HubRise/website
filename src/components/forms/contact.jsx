@@ -1,9 +1,12 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { withTranslation } from 'react-i18next'
-import { withFormik } from 'formik'
+import { Formik } from 'formik'
 import * as yup from 'yup'
 
 import Form from './base/form'
+import { useToast } from '../toast'
+import { useLayoutContext } from '../../context/layout'
 
 const structure = {
   formId: `contact`,
@@ -39,18 +42,77 @@ const structure = {
     }
   ]
 }
-const Contact = ({ t, _i18n, ...formikProps }) => {
+const Contact = ({ recaptchaSiteKey, contactMessageUrl, t, _i18n }) => {
+  const { forms } = useLayoutContext()
+  const toast = useToast()
+
+  function onSubmit(values, { setSubmitting }) {
+    window.grecaptcha
+      .execute(recaptchaSiteKey, { action: 'send_email' })
+      .then((token) => {
+        // Use application/x-www-form-urlencoded content type (instead of application/json)
+        // to skip CORS preflight check, which has not been implemented on the server side.
+        return fetch(contactMessageUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+          },
+          body: encodeFormData({
+            name: values.name,
+            email: values.email,
+            message: values.message,
+            recaptchaResponse: token
+          })
+        })
+          .then((response) => {
+            if (response.ok) {
+              toast({
+                variant: 'success',
+                title: t('misc.success'),
+                text: t('misc.messages.email_send_success')
+              })
+              forms.contact.toggle()
+              console.log('Message sent successfully')
+            } else {
+              throw new Error(`${response.statusText}`)
+            }
+          })
+          .catch((error) => {
+            toast({
+              variant: 'error',
+              title: t('misc.failure'),
+              text: t('misc.messages.email_send_failure')
+            })
+            console.error(error)
+            console.error('Message sending failed')
+            setSubmitting(false)
+          })
+      })
+  }
+
   return (
-    <Form
-      buttonClasses={[`form__button_full-width`, `form__button_modal`]}
-      formProps={{
-        id: `contact-us__form`,
-        classNames: [`form form_modal`]
+    <Formik
+      initialValues={{
+        name: ``,
+        email: ``,
+        message: ``
       }}
-      structure={structure}
-      t={t}
-      formikProps={formikProps}
-    />
+      validationSchema={createContactSchema(t)}
+      onSubmit={onSubmit}
+    >
+      {(formikProps) => (
+        <Form
+          buttonClasses={[`form__button_full-width`, `form__button_modal`]}
+          formProps={{
+            id: `contact-us__form`,
+            classNames: [`form form_modal`]
+          }}
+          structure={structure}
+          t={t}
+          formikProps={formikProps}
+        />
+      )}
+    </Formik>
   )
 }
 
@@ -76,17 +138,15 @@ const createContactSchema = (t) => {
   })
 }
 
-const ContactEnhanced = withFormik({
-  mapPropsToValues: () => ({
-    name: ``,
-    email: ``,
-    message: ``
-  }),
-  validationSchema: ({ t }) => createContactSchema(t),
-  handleSubmit: (_values, { resetForm }) => {
-    window.alert(`Let's pretend its sent!`)
-    resetForm()
-  }
-})(Contact)
+const encodeFormData = (params) => {
+  return Object.keys(params).map((key) => {
+    return encodeURIComponent(key) + '=' + encodeURIComponent(params[key])
+  }).join('&')
+}
 
-export default withTranslation()(ContactEnhanced)
+Contact.propTypes = {
+  recaptchaSiteKey: PropTypes.string,
+  contactMessageUrl: PropTypes.string
+}
+
+export default withTranslation()(Contact)

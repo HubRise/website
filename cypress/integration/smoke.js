@@ -31,17 +31,9 @@ describe(`website`, () => {
 
     const frenchPages = englishPages.map((page) => '/fr' + page)
 
-    const englishOnlyPages = [
-      '/developers',
-      '/pricing',
-      '/about'
-    ]
+    const englishOnlyPages = ['/developers', '/pricing', '/about']
 
-    const frenchOnlyPages = [
-      '/developpeurs',
-      '/faq',
-      '/tarifs'
-    ].map(
+    const frenchOnlyPages = ['/developpeurs', '/faq', '/tarifs'].map(
       (page) => '/fr' + page
     )
 
@@ -58,7 +50,7 @@ describe(`website`, () => {
 
     cy.visit(`/`)
     cy.contains(`form`, `Create your account`)
-    cy.contains(`HubRise makes POS integration easy`)
+    cy.contains(`HubRise Makes POS Integration Easy`)
     cy.contains(`li`, `Developers`).click()
     cy.contains(`Contact us`).click()
     cy.get(`div[role="dialog"]`).should(`be.visible`)

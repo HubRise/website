@@ -23,4 +23,9 @@ jobs:
         run: yarn install
 
       - name: Run tests
+        env:
+          NODE_ENV: test
+          SENTRY_DSN: https://96b4d1defd7648308c6e30f8a3470cfd@sentry.io/1776244
+          RECAPTCHA_SITE_KEY: 6LfjbNYUAAAAAPx_tCv_YyhueK2JIjf58b2HGU8d
+          CONTACT_MESSAGE_URL: http://localhost/api/contact_message
         run: yarn test:all:ci

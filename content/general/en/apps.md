@@ -5,7 +5,7 @@ meta:
   description:
 content:
   hero:
-    title: Integrated apps
+    title: Integrated Apps
     description:
       paragraph_1_text: Are you a retail and applications you use are not available on this page?
       paragraph_1_link_text: Contact us
@@ -138,7 +138,7 @@ content:
           logo: smg.png
           title: Service Management Group
           description: SMG combines technology and services to collect, analyse, and share feedback on data for brands to make decisions with insights across their enterprise.
-    - title: Other apps
+    - title: Other Apps
       apps:
         - to: https://tickncook.com
           logo: tickncook.png
@@ -154,7 +154,7 @@ content:
       description: Your application is not in this list? Send us some details about your application. HubRise will contact them to suggest an integration.
       button: Suggest
   developers:
-    title: You are a developer?
+    title: Are You a Developer?
     description:
       paragraph_1: Use our API to buid an useful application for restaurants or retail stores. Suggest it to HubRise users by posting it on our site and app store.
       paragraph_2:

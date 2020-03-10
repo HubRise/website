@@ -13,9 +13,12 @@ RUN yarn install
 # Add project files
 COPY . .
 
-# For sentry
+# ENV variables need to be set at build stage or `gatbsy build` fails
+# TODO: fix this
 ENV SENTRY_DSN https://96b4d1defd7648308c6e30f8a3470cfd@sentry.io/1776244
 ENV NODE_ENV production
+ENV RECAPTCHA_SITE_KEY 6LfjbNYUAAAAAPx_tCv_YyhueK2JIjf58b2HGU8d
+ENV CONTACT_MESSAGE_URL https://manager.hubrise.com/api/contact_message
 
 # Build project
 RUN ./node_modules/.bin/gatsby build

@@ -7,6 +7,11 @@ services:
       dockerfile: docker_dev/Dockerfile.mac
     image: hubrise/website-dev
     container_name: website_dev
+    environment:
+      - NODE_ENV=local
+      - SENTRY_DSN=https://96b4d1defd7648308c6e30f8a3470cfd@sentry.io/1776244
+      - RECAPTCHA_SITE_KEY=6LfjbNYUAAAAAPx_tCv_YyhueK2JIjf58b2HGU8d
+      - CONTACT_MESSAGE_URL=http://manager.hubrise.localtest.me:4003/api/contact_message
     volumes:
       - website-sync:/var/www/website
     ports:
@@ -18,6 +23,11 @@ services:
       dockerfile: docker_dev/Dockerfile.mac
     image: hubrise/website-dev
     container_name: website_test
+    environment:
+      - NODE_ENV=local
+      - SENTRY_DSN=https://96b4d1defd7648308c6e30f8a3470cfd@sentry.io/1776244
+      - RECAPTCHA_SITE_KEY=6LfjbNYUAAAAAPx_tCv_YyhueK2JIjf58b2HGU8d
+      - CONTACT_MESSAGE_URL=http://localhost/api/contact_message
     volumes:
       - website-sync:/var/www/website
     command: /usr/local/bin/yarn test:all:ci

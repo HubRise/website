@@ -17,7 +17,7 @@ app_info:
 
 iKentoo is an iPad POS and management solution for restaurants and hospitality businesses.
 
-## About this integration
+## About This Integration
 
 This integration relies on iKentoo API v2:
 

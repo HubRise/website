@@ -49,7 +49,7 @@ If the callback fails to acknowledge, HubRise attempts to resend the events late
 
 A callback is specific to a connection. A connection can have no more than one callback.
 
-### 1.1. Retrieve callback
+### 1.1. Retrieve Callback
 
 Returns the connection's callback details, including the URL and the types of events the callback listens to.
 
@@ -84,7 +84,7 @@ If no callback has been set, the response will be as follows:
 }
 ```
 
-### 1.2. Create callback
+### 1.2. Create Callback
 
 Creates a callback for the connection.
 
@@ -128,7 +128,7 @@ The allowed combinations are:
 }
 ```
 
-### 1.3. Delete callback
+### 1.3. Delete Callback
 
 Unregister the connection's callback.
 
@@ -141,7 +141,7 @@ Events will not be triggered and the callback URL will not be called any more.
 
 ## 2. Events
 
-### 2.1. Retrieve event
+### 2.1. Retrieve Event
 
 Returns the event.
 
@@ -182,7 +182,7 @@ The returned event contains:
 - the ids of the affected resource and the parent resources
 - a copy of the state of the resource before and after the change (for update and create), or the difference between both states (for patch)
 
-### 2.2. List events
+### 2.2. List Events
 
 Returns the events that have not been acknowledged (ie deleted).
 
@@ -211,7 +211,7 @@ Returns the events that have not been acknowledged (ie deleted).
 
 The previous and new states are not included to save bandwidth. Individual retrieve operations must be performed if states are needed.
 
-### 2.3. Delete event
+### 2.3. Delete Event
 
 Deletes (ie acknowledges) a callback event
 

@@ -1,5 +1,5 @@
 ---
-title: Order management
+title: Order Management
 position: 3
 layout: documentation
 meta:
@@ -9,7 +9,7 @@ meta:
 
 ## 1. Orders
 
-### 1.1. Create order
+### 1.1. Create Order
 
 This method creates an order.
 
@@ -139,7 +139,7 @@ Almost all fields are optional. In fact the simplest order that can be created o
 
 HubRise calculates the order total. If total is passed but not matching HubRise's calculation, the difference is stored in the `total_discrepancy` field.
 
-### 1.2. Retrieve order
+### 1.2. Retrieve Order
 
 Returns an order resource.
 
@@ -183,7 +183,7 @@ The `customer` object represents the state of the customer at the time of order 
 
 The `id`, `private_ref` and `customer_list_id` fields of this object are returned only if the customer has not been deleted since the order was created.
 
-### 1.3. List orders
+### 1.3. List Orders
 
 Returns the orders of a location or an account.
 
@@ -229,7 +229,7 @@ Orders of any location of the account:
 ]
 ```
 
-### 1.4. Update order
+### 1.4. Update Order
 
 Updates an order. The following fields can be updated:
 
@@ -254,7 +254,7 @@ Updates an order. The following fields can be updated:
 }
 ```
 
-## 2. Order's customer
+## 2. Order's Customer
 
 A customer can optionally be attached to an order. There are 3 possible cases:
 
@@ -264,7 +264,7 @@ A customer can optionally be attached to an order. There are 3 possible cases:
 
 When a customer is attached to an order, all customer fields are copied in the order. If the order is later retrieved using a GET operation, the customer state _at the time of the order creation_ is returned in the `customer` field.
 
-## 3. Order status
+## 3. Order Status
 
 The status of an order. Used in the order's `status` field.
 
@@ -304,7 +304,7 @@ Orders do not have to go through all steps. The sequence actually depends on the
 1. `accepted` (order placed in the POS)
 1. `completed`
 
-## 4. Order items
+## 4. Order Items
 
 | Name                                      | Type                                           | Description                                                                                                                                                                                 |
 | ----------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -338,7 +338,7 @@ Orders do not have to go through all steps. The sequence actually depends on the
 }
 ```
 
-## 5. Order items (deal line)
+## 5. Order Items in a Deal
 
 Order items which are part of a deal include a `deal_line` field. This field is an object with the following fields:
 
@@ -353,7 +353,7 @@ Order items which are part of a deal include a `deal_line` field. This field is 
 
 When an order is created, each `deal_key` used in an order item must exist in the order's `deals` field, or the request will fail.
 
-## 6. Order options
+## 6. Order Options
 
 | Name                                | Type                                           | Description                                                                                   |
 | ----------------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------- |
@@ -376,7 +376,7 @@ When an order is created, each `deal_key` used in an order item must exist in th
 
 A removed option can define a `price`. In this case, it's the price charged to the customer to remove the option.
 
-## 7. Order deals
+## 7. Order Deals
 
 An order deal associates an order item's `deal_key` to a particular deal.
 
@@ -398,7 +398,7 @@ An order deal associates an order item's `deal_key` to a particular deal.
 }
 ```
 
-## 8. Order discounts
+## 8. Order Discounts
 
 An order discount is a discount applied to the whole order, as opposed to deals which apply to a set of order items.
 
@@ -427,7 +427,7 @@ An order discount is a discount applied to the whole order, as opposed to deals 
 ]
 ```
 
-## 9. Order charges
+## 9. Order Charges
 
 Order charges increase the price paid by the customer.
 
@@ -453,7 +453,7 @@ Order charges increase the price paid by the customer.
 ]
 ```
 
-## 10. Order payments
+## 10. Order Payments
 
 If one or several payments are defined, the sum of the amounts of the payments should equal the order's `total`, otherwise the difference is stored in the order's `payment_discrepancy` field.
 
@@ -494,7 +494,7 @@ If order payments are omitted, the order should be considered as not paid.
 ]
 ```
 
-## 11. Order loyalty operations
+## 11. Order Loyalty Operations
 
 Add or remove points to a customer's loyalty card(s).
 

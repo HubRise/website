@@ -9,7 +9,9 @@ module.exports = {
   siteMetadata: {
     title: `HubRise`,
     description: ``,
-    author: ``
+    author: ``,
+    recaptchaSiteKey: process.env.RECAPTCHA_SITE_KEY,
+    contactMessageUrl: process.env.CONTACT_MESSAGE_URL
   },
   plugins: [
     {

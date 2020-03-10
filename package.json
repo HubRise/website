@@ -64,7 +64,6 @@
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "babel-plugin-prismjs": "^1.1.1",
-    "babel-plugin-styled-components": "^1.10.7",
     "babel-preset-gatsby": "^0.2.13",
     "cross-env": "6.x",
     "cypress": "^3.4.1",
