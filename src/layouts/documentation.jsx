@@ -74,7 +74,7 @@ const DocumentationPage = ({ data, path, pageContext }) => {
           <SectionNavigation
             logo={images.nodes.find(({ base }) => base === logoBase)}
             currentPath={path}
-            title={currentPage.frontmatter.title}
+            title={chapterTitle}
             pages={pageNodes}
           />
           {gallery && (

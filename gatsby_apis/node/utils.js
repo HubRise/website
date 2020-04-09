@@ -18,8 +18,9 @@ const isDirectory = (path) => fs.lstatSync(path).isDirectory()
  * @returns {Array[string]} List of paths to subdirectories.
  */
 const getDirectories = (srcPath) => {
-  return fs.readdirSync(srcPath)
-    .map(item => path.join(srcPath, item))
+  return fs
+    .readdirSync(srcPath)
+    .map((item) => path.join(srcPath, item))
     .filter(isDirectory)
 }
 
@@ -30,7 +31,7 @@ const getDirectories = (srcPath) => {
  * @returns {Array[string]} List of paths to all subdirectories.
  */
 const getDirectoriesRecursive = (path) => {
-  return [ path, ...flatten(getDirectories(path).map(getDirectoriesRecursive)) ]
+  return [path, ...flatten(getDirectories(path).map(getDirectoriesRecursive))]
 }
 
 /**
@@ -39,8 +40,9 @@ const getDirectoriesRecursive = (path) => {
  * @returns {Object}
  */
 const getDefaultLocale = () => {
-  const [ defaultLocale ] = Object.values(locales)
-    .filter((locale) => locale.default)
+  const [defaultLocale] = Object.values(locales).filter(
+    (locale) => locale.default
+  )
 
   return defaultLocale
 }

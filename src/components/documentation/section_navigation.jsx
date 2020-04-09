@@ -43,8 +43,6 @@ export const SectionNavigation = ({ currentPath, pages, title, logo }) => {
   }, [isDesktop, isFixed])
 
   useLayoutEffect(() => {
-    if (isDesktop) return
-
     function listener() {
       const newTitle = getCurrentTitle() || title
       if (currentTitle !== newTitle) {
@@ -74,7 +72,8 @@ export const SectionNavigation = ({ currentPath, pages, title, logo }) => {
         section__sidebar
         section__sidebar_right
         section__sidebar_small-padding
-        ${logo ? 'section__sidebar_sticky' : ''}
+        section__sidebar_sticky
+        ${isDesktop ? 'section__sidebar_desktop' : ''}
       `}
     >
       {logo && (
@@ -90,7 +89,9 @@ export const SectionNavigation = ({ currentPath, pages, title, logo }) => {
             isFixed && 'section__sidebar_fixed'
           )}
         >
-          <h5 className="content-nav__title">{currentTitle || `Content`}</h5>
+          <h5 className="content-nav__title">
+            {isDesktop ? title : currentTitle || `Content`}
+          </h5>
           <h5
             id="content-nav"
             className={`
@@ -148,7 +149,9 @@ export const SectionNavigation = ({ currentPath, pages, title, logo }) => {
                                 className="content-sublist-item content-sublist-level-2"
                               >
                                 <Link
-                                  className="content-sublist-link"
+                                  className={`content-sublist-link ${
+                                    currentTitle === headingText ? 'active' : ''
+                                  }`}
                                   to={`#${createHeaderAnchor(headingText)}`}
                                   onClick={
                                     isDesktop
