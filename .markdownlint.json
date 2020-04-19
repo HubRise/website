@@ -1,0 +1,10 @@
+{
+  "default": true,
+  "line-length": false,
+  "no-trailing-punctuation": false,
+  "no-duplicate-heading": false,
+  "no-inline-html": false,
+  "heading-increment": false,
+  "no-alt-text": false,
+  "no-bare-urls": false
+}

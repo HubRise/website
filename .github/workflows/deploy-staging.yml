@@ -10,7 +10,7 @@ jobs:
     # https://github.com/Azure/k8s-deploy
 
     container:
-      image: node:8.16.2-buster
+      image: node:10.19.0-buster
 
     steps:
       - name: Clone repository
