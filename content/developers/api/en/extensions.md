@@ -102,7 +102,7 @@ The only limitation is the size: the JSON representation of `custom_fields` must
 
 ### 1.3. Callbacks
 
-Custom fields work nicely with [callbacks](/api/callbacks). Updating the custom fields of a resource triggers the update callback of the resource.
+Custom fields work nicely with [callbacks](/developers/api/callbacks). Updating the custom fields of a resource triggers the update callback of the resource.
 
 ## 2. Custom Endpoints
 
