@@ -37,7 +37,7 @@ If you have already exported your products from your EPOS or other connected app
 - Products with variants, options, prices, within their respective product categories.
 - Deals.
 - **IMPORTANT NOTE**: Importing a catalog from HubRise will replace the products in your LivePepper account. Verify that they are accurate before importing them.
-- **IMPORTANT NOTE:** Once imported, the content and the structure of the menu you will see in LivePepper matches that of the menu imported in the HubRise catalog, nothing more, nothing less. The catalog cannot be edited in HubRise.
+- **IMPORTANT NOTE**: Once imported, the content and the structure of the menu you will see in LivePepper matches that of the menu imported in the HubRise catalog, nothing more, nothing less. The catalog cannot be edited in HubRise.
 
 To import from a HubRise Catalog into LivePepper:
 
@@ -116,7 +116,7 @@ To add a POS Code to a Payment Method:
 
 1. Select **Settings** > **Payment settings**.
 2. Click the payment method to update.
-3. Click the edit icon ![Edit Icon.](../images/023-edit-icon.png).
+3. Click the edit icon ![Edit Icon](../images/023-edit-icon.png).
 4. Enter the **POS code**.
 5. Click **Save**.
 

@@ -9,16 +9,16 @@ This file includes useful commands for generating the files and images used for 
 
 ## Required Software
 
-Converting movie files into other formats uses the following programs. When possible, Open Source software is selected. Most can be installed with [Homebrew](https://brew.sh/) for Mac and Linux users.
+Converting movie files into other formats uses the following programs. When possible, Open Source software is selected.
 
-- ffmpeg - converts movie files. Installed with `brew install ffmpeg`.
-- gificle - used to convert movie files into animated gifs of fairly decent quality and size. Installed with `brew install gifsicle`.
+- ffmpeg - converts movie files. Installed with `apt-get install ffmpeg` (Linux) or `brew install ffmpeg` (Mac).
+- gificle - used to convert movie files into animated gifs of fairly decent quality and size. Installed with `brew install gifsicle` (Mac)
 
 ## Converting raw movie files
 
-Depending on how you capture your screen in movie format, you may have different movie files. This section is written for MAC users who will capture QuickTime movie files, but the instructions will work for other systems.
+Depending on how you capture your screen in movie format, you may have different movie files. For example QuickTime (Mac) captures `.mov` files.
 
-Movie files work best as WEBM files. The latter will take a long time to convert, but offers excellent compression and quality, and is HTML5 compliant. The settings below will convert the image, and downscale it to a 1280x720 image
+Movie files work best as WEBM files. The latter will take a long time to convert, but offers excellent compression and quality, and is HTML5 compliant. The command below converts a mov file into webm format.
 
 ```bash
 ffmpeg -i source.mov target.webm

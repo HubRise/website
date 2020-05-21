@@ -7,9 +7,9 @@ meta:
   description: How to manage HubRise settings.
 ---
 
-## Profile and Password
+## Profile
 
-The profile page on **SETTINGS > PROFILE** displays your user information, and allows you to update it or change your password.
+The profile page on **SETTINGS** > **PROFILE** displays your user information, and allows you to update it or change your password.
 
 To update your user profile:
 
@@ -17,27 +17,40 @@ To update your user profile:
 2. Update your name, email address, or correspondence language. The **Correspondence Language** sets all communications (emails, etc) from HubRise to you as the specified language.
 3. Select **Update**.
 
-- **IMPORTANT NOTE:** When changing your email address, verify that it is accurate and able to receive emails. Otherwise password resets and other notifications will not work.
+----------------
+
+**IMPORTANT NOTE**: When changing your email address, verify that it is accurate and able to receive emails. Otherwise password resets and other notifications will not work.
+
+----------------
+
+![HubRise User Profile](../images/054-en-2x-profile.png)
 
 To update your password:
 
-1. Select **SETTINGS > PROFILE**.
+1. Select **SETTINGS** > **PROFILE**.
 2. Enter your current password in the **Current password** field.
 3. Enter your new password in **New password** and **Confirm new password** fields. Both fields must match.
 4. Click **Update**.
+
+![HubRise Change password](../images/055-en-2x-change-password.png)
 
 The Profile page includes information on your **Permissions**. This includes:
 
 - The **Account** and **Location** that you have access to.
 - The **Role** you have been assigned for the Account or Location.
 
-To remove your granted permission to an Account, select the trash icon ![Trash icon.](../images/trashcan.png).
+To remove your granted permission to an Account, select the trash icon <InlineImage width="15" height="16">![Trash icon](../images/057-2x-trash-icon.png)</InlineImage>
 
-- **IMPORTANT NOTE**: You cannot remove yourself from an Account if you are the last Admin. If you attempt to do so, an error message will be displayed. If you need to remove yourself as the last Admin for an Account, create another user as an Admin for that Account, then remove yourself.
+----------------
 
+**IMPORTANT NOTE**: You cannot remove yourself from an Account if you are the last Admin. If you attempt to do so, an error message will be displayed. If you need to remove yourself as the last Admin for an Account, create another user as an Admin for that Account, then remove yourself.
+
+----------------
 For more information, see [Permissions](#permissions).
 
 To create a new Account from the Profile page, select **Create Account**. For more information see [Create an Account](#account).
+
+![HubRise My Permissions](../images/056-en-2x-my-permissions.png)
 
 ## Accounts
 
@@ -45,7 +58,7 @@ As described in [Accounts and Locations](/docs/getting-started/#accounts-and-loc
 
 ### Account
 
-The **SETTINGS > ACCOUNTS **section lists all Accounts you have been granted access to with the following information:
+The **SETTINGS** > **ACCOUNTS** section lists all Accounts you have been granted access to with the following information:
 
 - **NAME**: The name and unique identifier of the Account.
 - **ROLE**: Your role for the Account. For more information on roles, see [Permissions](#permissions).
@@ -75,50 +88,46 @@ The primary differences between the settings for Accounts and Locations to note 
 
 When creating a new Account, the first Location must be created at the same time through the following steps:
 
-1. To create a new Account and it’s first location, click **SETTINGS > ACCOUNTS > Create Account**.
-2. Enter the following information:
-   1. Account settings:
-      1. **Account Name. **The recommended naming convention is to name the Account with the name you give your business or brand. For example, if your brand is called Fast Pizza, the **Account Name** will be **Fast Pizza**.
-      2. **Currency**.
-   2. Location settings:
-      3. **Location Name. **The recommended naming convention is to name the location after the city or street address. For example, if the location is the only one in a town like Hayseed, the location could be named **Hayseed**.
-      4. **Country**.
-      5. **Timezone**.
-      6. **Address**.
-      7. **Postcode**.
-      8. **City**.
-3. When finished, click **Create**.
+To create a new Account and it’s first location, click **SETTINGS** > **ACCOUNTS** > **Create Account**. Enter the information required and click **Create**.
+
+![Create an account on HubRise](../images/064-en-2x-create-account.png)
+
+The **Account Name** is the name you give your business or brand. For example, if your brand is called Fast Pizza, the **Account Name** will be **Fast Pizza**.
+
+The **Location Name** could be the city, the area, or the street name. For example, if the location is the only one in a town like London, the location could be named **London**.
+
+It is important to enter the correct **Currency** as you will not be able to change it later.
 
 <video controls title="Create an Account">
-  <source src="../images/038-settings-account-create-account.webm" type="video/webm"/>
+  <source src="../images/038-en-settings-account-create-account.webm" type="video/webm"/>
 </video>
 
 #### Modify an Account
 
 The only field that can be modified is the **Account Name**.
+It is recommended to name the Account the same as your business or brand. 
 
-- **IMPORTANT NOTE**: The currency value can only be set when the Account is created, and can not be modified once created. If the currency for the HubRise Account does not match the currency set on the connected apps, errors may occur.
+----------------
 
-If an Account is created with the wrong currency, create a new one with the correct currency and use that Account to connect your apps to instead.
+**IMPORTANT NOTE**: The currency value can only be set when the Account is created, and can not be modified. If the currency for the HubRise Account does not match the currency set on the connected apps, errors may occur. Create a new Account with the correct currency and use that Account to connect your apps instead.
+
+----------------
 
 To modify an existing Account:
 
-1. Select **SETTINGS > ACCOUNT**.
+1. Select **SETTINGS** > **ACCOUNT**.
 2. If there are multiple Accounts, click the name of the Account to update.
 3. Click **Modify**.
-4. Update the following as required:
-   1. **Name**. It is recommended to name the Account the same as your business or brand. This field is required.
-   2. **Intra-Community VAT number**. This will be included on your invoices. This field is not required by HubRise, but it is a legal requirement. Invalid VAT numbers will display an error notice.
-   3. **Country**.
-   4. **Address**.
-   5. **Postcode**.
-   6. **City**.
-5. Click **Modify**.
+4. Update the fields as required and Click **Modify**.
 
-- **IMPORTANT NOTE**: The VAT number is a legal requirement. HubRise will display a notification to update the VAT number if this information is missing from your Account.
+----------------
+
+**IMPORTANT NOTE**: It is a legal requirement to include the Intra-Community VAT number. HubRise will display a notification to update the VAT number if this information is missing from your Account.
+
+----------------
 
 <video controls title="Change account information">
-  <source src="../images/019-settings-account-change-account-name.webm" type="video/webm"/>
+  <source src="../images/019-en-settings-account-change-account-name.webm" type="video/webm"/>
 </video>
 
 ### Locations
@@ -129,9 +138,13 @@ As described in [Accounts and Locations](/docs/getting-started/#accounts-and-loc
 - The unique identifier for the Account they are associated with.
 - The number indicating in what order the Location was added (starting at zero).
 
-For example, **Baker Street z6q31-0** indicates the Location name of **Baker Street**, that it belongs to Account **z6q31**, and **-0** signifies it was the first Location added to this Account.
+For example, `Baker Street z6q31-0` indicates the Location name of **Baker Street**, that it belongs to Account **z6q31**, and **-0** signifies it was the first Location added to this Account.
 
-- **IMPORTANT NOTE**: Depending on your business, the Location may have a different VAT number than the Account. Verify that all VAT numbers are correctly configured on all Accounts and Locations you manage.
+----------------
+
+**IMPORTANT NOTE**: Depending on your business, the Location may have a different VAT number than the Account. Verify that all VAT numbers are correctly configured on all Accounts and Locations you manage.
+
+----------------
 
 #### Location Details
 
@@ -151,44 +164,32 @@ The first Location is created simultaneously with the Account. For more informat
 
 To add a new Locations to an existing Account:
 
-1. Click **SETTINGS > ACCOUNTS.**
+1. Click **SETTINGS** > **ACCOUNTS**.
 2. If you have multiple Accounts, select the Account that the Location will be added to.
 3. In the **Locations** section, click on **Add a location**.
-4. Enter the following information:
-   1. The **Name**. The recommended naming convention is to name the Location the same name as your Account followed by a short location name in the format **Account Name - Location Name**. For example, if your brand is called **Fast Pizza**, and the location **Baker Street**, the location name will be **Fast Pizza - Baker Street**.
-   2. **Country**.
-   3. **Timezone.**
-   4. **Address**.
-   5. **Postcode**.
-   6. **City**.
-5. Click **Add a new location** to save the new values.
+4. Enter the required information. 
+5. If this Location has a VAT number separate from the Account, enter it here in the **Intra-Community VAT number** field provided.
+6. If the billing address is different than the Location’s address, check **The billing address is different from the location address** and fill out the form.
+7. Click **Add a new location** to save the new values.
+
+It is recommended to name the location after the city, the area or street it is located at.
 
 <video controls title="Add Location example">
-  <source src="../images/020-settings-account-locations-add-location.webm" type="video/webm"/>
+  <source src="../images/020-en-settings-account-locations-add-location.webm" type="video/webm"/>
 </video>
 
 #### Updating Location Details
 
 To update the name and address for a location, follow these steps:
 
-1. Click **SETTINGS > ACCOUNT.**
+1. Click **SETTINGS** > **ACCOUNT**.
 2. If you have multiple Accounts, select the Account that the Location will be added to.
 3. Select the Location to update.
 4. Click **Modify**.
-5. Update the following values as needed:
-   1. The **Name**. It is recommended to name the location after the city or street it is located at.
-   2. **Country.**
-   3. **Timezone**.
-   4. **Address**.
-   5. **Postcode**.
-   6. **City**.
-   7. **Intra-Community VAT number**. If this Location has a VAT number separate from the Account, enter it here.
-6. If the billing address is different than the Location’s address, check **The billing address is different from the location address** and fill out the following:
-   1. **Country**.
-   2. **Address**.
-   3. **Postcode**.
-   4. **City**.
-7. Click **Update** to save the changes.
+5. Update the values as needed. 
+6. If this Location has a VAT number separate from the Account, enter it here in the **Intra-Community VAT number** field provided.
+7. If the billing address is different than the Location’s address, check **The billing address is different from the location address** and fill out the form.
+8. Click **Update** to save the changes.
 
 ### Usage
 
@@ -221,9 +222,13 @@ When there is an issue with a plan, Account admins will receive an email and hav
 
 If a payment notification appears, click the link and follow the instructions to resolve the issue. For more information, see [Usage](#usage).
 
-![Pay subscription.](../images/022-pay-subscription.png)
+![Pay subscription](../images/022-en-pay-subscription.png)
 
-- IMPORTANT NOTE: If there is a problem with your payment method, admin users will receive an email notification and a message will display in the HubRise back office. Failing a response after two weeks, the HubRise Account will be automatically suspended.
+----------------
+
+**IMPORTANT NOTE**: If there is a problem with your payment method, admin users will receive an email notification and a message will display in the HubRise back office. Failing a response after two weeks, the HubRise Account will be automatically suspended.
+
+----------------
 
 ##### Change Plan
 
@@ -237,7 +242,11 @@ To change your plan for a location:
 4. Under **Usage**, select **Change plan**.
 5. To set your plan to use the paid plan that allows more transactions a month, click **Upgrade**. To change the plan to one that allows fewer orders and customers a month, click **Downgrade**. Please note that once you have reached the transaction limit for a free plan, you must upgrade to the paid plan again.
 
-- **IMPORTANT NOTE**: If upgrading, you must have your Payment type set. For information on setting your payment method, see [Payment](#payment). Your Account will not be charged until you exceed the free monthly limitation.
+----------------
+
+**IMPORTANT NOTE**: If upgrading, you must have your Payment type set. For information on setting your payment method, see [Payment](#payment). Your Account will not be charged until you exceed the free monthly limitation.
+
+----------------
 
 ### Payment
 
@@ -254,24 +263,26 @@ To change whether your Location uses your HubRise Account payment method, or whe
 1. Go to **SETTINGS** > **ACCOUNTS**.
 2. For users with multiple Accounts, select the Account containing the specific Location.
 3. Click the Location to update.
-4. Under **Payment:**
+4. Under **Payment**:
    1. To set a location that uses its own payment method to use the same payment method as its Account, click **Make the account pay for the subscription**.
    2. If the location uses the same payment method as the Account and you want it to have a separate payment method, click click **Make the location pay for it**.
 
 <video controls title="Payment by Account or Location example">
-  <source src="../images/042-settings-payment-byaccount-bylocation.webm" type="video/webm"/>
+  <source src="../images/042-en-settings-payment-byaccount-bylocation.webm" type="video/webm"/>
 </video>
 
 #### Add or Change Payment Method
 
 To update your payment method for an Account or Location:
 
-1. Go to **SETTINGS > ACCOUNTS**.
+1. Go to **SETTINGS** > **ACCOUNTS**.
    1. To update the payment method for an Account, select the Account and scroll down to the Payment section.
    2. To update the payment method for a Location, select the Account, then select the Location, and scroll down to the Payment section.
 2. If there is no existing payment method, click **Add payment method**. If there is a previously set method, click **Change your payment method**.
 3. Enter your credit card information. Credit cards must be valid to be accepted.
-4. When finished, click **Save**. <video controls title="Add payment type"><source src="../images/040-settings-payment-add-payment-type.webm" type="video/webm"/></video>
+4. When finished, click **Save**.
+
+<video controls title="Add payment type"><source src="../images/040-en-settings-payment-add-payment-type.webm" type="video/webm"/></video>
 
 #### Process Pending Quotes
 
@@ -283,12 +294,12 @@ To process a payment from the notification:
 2. Click **View the earliest quote **link, then click **Pay**. To check on all unpaid quotes, click **check your account** from the notification.
 
 <video controls title="Pay subscription example">
-  <source src="../images/022-pay-subscription.webm" type="video/webm"/>
+  <source src="../images/041-en-process-pending-quotes.webm" type="video/webm"/>
 </video>
 
 #### Payment History
 
-Payments made to HubRise are listed in the **SETTINGS > ACCOUNT\*\***S\***\* > Payment** > **Payment history** link. Payments are listed in reverse historical order, with the most recent payments displayed first.
+Payments made to HubRise are listed in the **SETTINGS** > **ACCOUNTS** > **Payment** > **Payment history** link. Payments are listed in reverse historical order, with the most recent payments displayed first.
 
 Select **Payment history** to display all payments made for the selected HubRise Account or Location. Each payment will display:
 
@@ -297,13 +308,13 @@ Select **Payment history** to display all payments made for the selected HubRise
 - **Description**: The purpose of the charge.
 - **Payment Method**: The specific payment method used for this charge.
 
-Admin users receive invoices via email. The invoice can also be saved as a PDF file by selecting the download icon ![Download icon.](../images/download.png).
+Admin users receive invoices via email. The invoice can also be saved as a PDF file by selecting the download icon <InlineImage width="15" height="14">![Download icon](../images/058-download.png)</InlineImage>.
 
-![Invoice example.](../images/043-invoice-example.png)
+![Invoice example](../images/043-en-2x-invoice-example.png)
 
 Payment history for Accounts will group Location payments for the date.
 
-![Payment history example.](../images/044-payment-history.png)
+![Payment history example](../images/044-en-payment-history.png)
 
 The payment history for locations will display invoices paid by the Account and all of its Locations.
 
@@ -330,32 +341,36 @@ Admins can grant access to other users provided they have an existing profile on
 
 To add a user:
 
-1. To grant access for the Account and all of its Locations, select **S\*\***ETTINGS > ACCOUNTS**. Admins with multiple Accounts, select the Account to modify. To grant access only for a specific Location, select the location’s name in the **Locations\*\* section.
+1. To grant access for the Account and all of its Locations, select **SETTINGS** > **ACCOUNTS**. Admins with multiple Accounts, select the Account to modify. To grant access only for a specific Location, select the location’s name in the **Locations** section.
 2. In the Permissions section, select **Add**.
 3. Enter the user’s email address in the column marked **EMAIL**.
 4. In the **ROLE** column, set the new user’s role as Admin or Manager.
-5. Click the plus icon ![Plus icon.](../images/Hubrise-add-icon.png) to add the new user.
+5. Click the plus icon <InlineImage width="13" height="13">![Plus icon](../images/059-add-icon.png)</InlineImage> to add the new user.
 
 <video controls title="Add user example">
-  <source src="../images/023-permissions-add-user.webm" type="video/webm"/>
+  <source src="../images/023-en-permissions-add-user.webm" type="video/webm"/>
 </video>
 
 #### Remove a User
 
 To remove a user:
 
-1. Click the remove icon ![Remove icon.](../images/trashcan.png)for the user to remove.
+1. Click the remove icon <InlineImage width="15" height="16">![Trash icon](../images/057-2x-trash-icon.png)</InlineImage>for the user to remove.
 2. When prompted, click **Delete** to confirm removing the user.
 
-- **IMPORTANT NOTE**: You can not remove your own user profile from **Permissions**. To remove your profile from an Account, set another user as an Admin, and have them remove your profile from the Account.
+----------------
+
+**IMPORTANT NOTE**: You can not remove your own user profile from **Permissions**. To remove your profile from an Account, set another user as an Admin, and have them remove your profile from the Account.
+
+----------------
 
 <video controls title="Remove a user example">
-  <source src="../images/024-permissions-remove-user.webm" type="video/webm"/>
+  <source src="../images/024-en-permissions-remove-user.webm" type="video/webm"/>
 </video>
 
 ### Catalogs
 
-The **SETTINGS > ACCOUNTS > Catalogs** section allows you to create, edit, or remove the catalogs used by your HubRise Account.
+The **SETTINGS** > **ACCOUNTS** > **Catalogs** section allows you to create, edit, or remove the catalogs used by your HubRise Account.
 
 The rules for Catalogs are as follows:
 
@@ -365,7 +380,7 @@ The rules for Catalogs are as follows:
   - You can create a test Catalog to be used without impacting production.
   - Create Catalogs for a Location that offers different products from the other Locations.
 
-![Catalog Rules example.](../images/047-catalog-rules.png)
+![Catalog Rules example](../images/047-en-2x-catalog-rules.png)
 
 The list of products, their descriptions and details are managed from the third party app. Connecting and importing products into the HubRise catalog can only be done from your third party app.
 
@@ -385,14 +400,14 @@ To view the list of products included within a catalog, see [Catalogs](#catalogs
 
 The following information is displayed in the **SETTINGS** > **ACCOUNTS** > **Catalogs** section:
 
-1. **Name:** The name of the catalog, followed by its unique character code. This unique character code does not change even if the name of the catalog is changed. For example: The catalog **Baker Street** would be displayed as **Baker Street - abc123**. If the catalog **Baker Street** is renamed to **Dunning Street**, it will be displayed as **Dunning Street - abc123**.
+1. **Name**: The name of the catalog, followed by its unique character code. This unique character code does not change even if the name of the catalog is changed. For example: The catalog **Baker Street** would be displayed as **Baker Street - abc123**. If the catalog **Baker Street** is renamed to **Dunning Street**, it will be displayed as **Dunning Street - abc123**.
 2. **Created**: The date the catalog was created in HubRise.
 3. **Products**: The number of products imported from your app into this catalog.
 
 To view the contents of a Catalog, click the name of the Catalog. It will connect you to the **DATA** > **Catalog** screen for the specific Catalog.
 
 <video controls title="Catalog link example">
-  <source src="../images/045-catalog-link.webm" type="video/webm"/>
+  <source src="../images/045-en-catalog-link.webm" type="video/webm"/>
 </video>
 
 #### Edit a Catalog
@@ -403,9 +418,11 @@ Changes to the Catalog in HubRise does not effect the list of products in connec
 
 To change the name of a Catalog:
 
-1. In the **SETTINGS > ACCOUNTS > Catalogs** section, click the edit icon ![Edit icon.](../images/028-pen-icon.png)for the catalog to edit.
+1. In the **SETTINGS** > **ACCOUNTS** > **Catalogs** section, click the edit icon for the catalog to edit.
 2. Enter the new name for the Catalog.
 3. Click **Update** to save the new settings.
+
+![HubRise Edit Catalog](../images/065-en-2x-edit-remove-catalog.png)
 
 #### Remove a Catalog
 
@@ -418,7 +435,7 @@ Removing a catalog from HubRise does not effect the product list in third party 
 
 To remove a catalog:
 
-1. In the **SETTINGS > ACCOUNTS > Catalogs** section, click the remove icon![Remove icon.](../images/trashcan.png) for the catalog to delete.
+1. In the **SETTINGS** > **ACCOUNTS** > **Catalogs** section, click the remove icon<InlineImage width="15" height="16">![Trash icon](../images/057-2x-trash-icon.png)</InlineImage> for the catalog to delete.
 2. Click **Delete** to confirm the removal of the catalog.
 
 ### Customer Lists
@@ -439,14 +456,14 @@ Adding or editing a customer list does not effect third party applications.
 
 The **Customer list** section displays the following information:
 
-- **Name:** The name of the customer list, followed by its unique character code. This unique character code does not change even if the name of the catalog is changed. For example: The catalog **Baker Street** would be displayed as **Baker Street - abc123**. If the catalog **Baker Street** is renamed to **Dunning Street**, it will be displayed as **Dunning Street - abc123**.
+- **Name**: The name of the customer list, followed by its unique character code. This unique character code does not change even if the name of the catalog is changed. For example: The catalog **Baker Street** would be displayed as **Baker Street - abc123**. If the catalog **Baker Street** is renamed to **Dunning Street**, it will be displayed as **Dunning Street - abc123**.
 - **Customer Count**: The number of customers imported into HubRise. To view customer list details, see [Customers](/docs/data/#customers).
 
 #### Add a customer list
 
 To add a customer list:
 
-1. In the section **SETTINGS > ACCOUNTS > Customer lists**, click **Add a customer list**.
+1. In the section **SETTINGS** > **ACCOUNTS** > **Customer lists**, click **Add a customer list**.
 2. Enter the name for the new customer list. The recommended naming convention is to name the Account customer list with the same name as your Account, and location customer lists as **Account Name - Location Name**. For example, your default Account customer list may be **Fast Pizza**, and the customer list for a location would be **Fast Pizza - Baker Street**.
 3. Click **Add a customer list** to save the new list.
 
@@ -455,14 +472,14 @@ To add a customer list:
 To view the details of a customer list, click the name of the list. It will automatically link you to the **DATA** > **Customers** page for the specific list.
 
 <video controls title="Customer list link">
-  <source src="../images/049-access-account-from-dashboard.webm" type="video/webm"/>
+  <source src="../images/049-en-access-account-from-dashboard.webm" type="video/webm"/>
 </video>
 
 #### Edit a customer list
 
 To change the name of a customer list:
 
-1. In **SETTINGS > ACCOUNTS > Customer lists** section, click the edit icon ![Edit icon.](../images/028-pen-icon.png)for the customer list to update.
+1. In **SETTINGS** > **ACCOUNTS** > **Customer lists** section, click the edit icon <InlineImage width="15" height="15">![Edit Icon](../images/028-en-pen-icon.png)</InlineImage>for the customer list to update.
 2. Enter the new name of the customer list.
 3. Click **Edit customer list** to save the changes.
 
@@ -470,9 +487,9 @@ To change the name of a customer list:
 
 Customer lists can only be deleted when there are no active connections to them from an app, or when removing them will leave no Customer lists connected to the Account.
 
-1. In **SETTINGS** > **ACCOUNTS** > **Customer lists** section, click the remove icon ![Remove icon.](../images/trashcan.png)for the customer list to delete.
+1. In **SETTINGS** > **ACCOUNTS** > **Customer lists** section, click the remove icon <InlineImage width="15" height="16">![Trash icon](../images/057-2x-trash-icon.png)</InlineImage>for the customer list to delete.
 2. Click **Delete** to confirm.
 
 ## Developer
 
-The **SETTINGS > DEVELOPER** section is provided for you to create your own integrations into the HubRise ecosystem. It could be an app you have created, or a third party solution you customised to your needs in need of transactional data available in HubRise. For more information, see [HubRise Developer page](https://www.hubrise.com/developers/). The HubRise API is public; anyone is welcome to integrate.
+The **SETTINGS** > **DEVELOPER** section is provided for you to create your own integrations into the HubRise ecosystem. It could be an app you have created, or a third party solution you customised to your needs in need of transactional data available in HubRise. For more information, see [HubRise Developer page](https://www.hubrise.com/developers/). The HubRise API is public; anyone is welcome to integrate.

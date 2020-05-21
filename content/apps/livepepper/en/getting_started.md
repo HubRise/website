@@ -11,9 +11,9 @@ LivePepper can be configured with one site for independent restaurants or as a m
 
 The instructions below detail how to connect a LivePepper site to a new HubRise Account as this is the most common scenario. For instructions on how to connect a multisite, or on how to connect a site to an existing HubRise Account, see the [FAQ](/apps/livepepper/faq/).
 
-- **IMPORTANT NOTE:** If connecting to a pre-existing HubRise account with additional customer lists and catalogs, you can specify which customer list or catalog to use. For more information, see the [FAQ](/apps/livepepper/faq/).
+- **IMPORTANT NOTE**: If connecting to a pre-existing HubRise account with additional customer lists and catalogs, you can specify which customer list or catalog to use. For more information, see the [FAQ](/apps/livepepper/faq/).
 
-- **IMPORTANT NOTE:** Note that both LivePepper and HubRise have their own vocabulary, and may refer to the same things by different names. For example, the branch in LivePepper is a Location in HubRise. For more information on the terms and definitions used between these two platforms, see [HubRise Definitions vs LivePepper Definitions](/apps/livepepper/troubleshooting/#hubrise-definitions-vs-livepepper-definitions).
+- **IMPORTANT NOTE**: Note that both LivePepper and HubRise have their own vocabulary, and may refer to the same things by different names. For example, the branch in LivePepper is a Location in HubRise. For more information on the terms and definitions used between these two platforms, see [HubRise Definitions vs LivePepper Definitions](/apps/livepepper/troubleshooting/#hubrise-definitions-vs-livepepper-definitions).
 
 ## Connect LivePepper to HubRise
 

@@ -82,7 +82,7 @@ To accept an Order, open the Order Card and click **ACCEPTED**.
 
 Users can add a personalised message to the customer, adjust the delivery time, and have those updates delivered to the customer. To update the date or add a comment, click on the pen ![pen icon](pen.jpg), adjust the date and time, write your message and click **ACCEPTED**. An automated email will be sent to the customer with your message and the delivery time updated.
 
-- **IMPORTANT NOTE:** Delivery time updates and messaging must be supported by your online ordering system. For more information, see Additional Data Prompt.
+- **IMPORTANT NOTE**: Delivery time updates and messaging must be supported by your online ordering system. For more information, see Additional Data Prompt.
 
 Once accepted, the Order status changes to Accepted. You may print the order receipt and change the status again when you are ready.
 
@@ -135,7 +135,7 @@ OrderLine also prints order receipts automatically upon order reception, skippin
 
 Receipts are presented into sections for readability with a solid line starting and ending each section. These reflect the same information as listed on the Order Card. For more information on Order Cards see [View Order](#view-order).
 
-![Order Receipt Example](../images/030-receipt-examplea.png)
+![Order Receipt Example](../images/030-en-2x-receipt-example.png)
 
 Receipts include the following information:
 

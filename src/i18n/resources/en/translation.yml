@@ -19,8 +19,8 @@ layout:
         to: /pricing
       - title: Developers
         to: /developers
-#      - title: Help
-#        to: /docs
+      - title: Help
+        to: /docs
 #      - title: Blog
 #        to: /blog
 

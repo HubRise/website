@@ -11,7 +11,7 @@ meta:
 
 To verify that all LivePepper menu items have had a POS code assigned, select **Maintenance > Custom Actions** menu from the left navigation panel. One of the reports displayed is **Missing POS codes**. It shows all products, deals and related attributes that do not have POS codes assigned. Missing POS codes for payment methods, service type and delivery charges will not be reported here as these depend on the EPOS you are connecting with.
 
-![Missing POS Codes screen.](../images/020-missing-pos-codes.png)
+![Missing POS Codes screen](../images/020-missing-pos-codes.png)
 
 ## Verify LivePepper Connection
 
