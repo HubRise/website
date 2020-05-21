@@ -174,7 +174,7 @@ For more information, view [View App Logs](/docs/connections/#view-app-logs)
 HubRise provides several different resources to help you.
 
 - Check out the [HubRise Integrated Apps](/apps/) page to find the documentation for the specific app you are trying to connect to HubRise.
-- The [HubRise API Reference](/api/general-concepts/) page is a handy place for developers to learn how to connect their products and the HubRise platform.
+- The [HubRise API Reference](/developers/api/general-concepts/) page is a handy place for developers to learn how to connect their products and the HubRise platform.
 - If you still need assistance, contact HubRise at [support@hubrise.com](mailto:support@hubrise.com) so we can help resolve your questions.
 
 ## What App Can I Connect to HubRise?
