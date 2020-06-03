@@ -4,7 +4,7 @@ position: 5
 layout: documentation
 meta:
   title: LivePepper Connection to HubRise FAQs
-  description: Frequency asked questions and their answers.
+  description: Frequently asked questions and their answers.
 ---
 
 - <Link to="/apps/livepepper/faqs/connect-site-to-existing-hubrise-account/">Connect LivePepper to HubRise: One Branch, Existing HubRise Account</Link>
