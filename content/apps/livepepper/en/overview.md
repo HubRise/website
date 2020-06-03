@@ -39,4 +39,4 @@ To establish a connection between LivePepper and HubRise, you must have an exist
 
 ## Why Connect?
 
-LivePepper can be connected to HubRise for your site and other apps to work as a cohesive whole. It could be your EPOS, your loyalty systems, the kitchen display screen you use or your preferred marketing solution. This allows you to sync your menu, your customer and order information. For more information, see the [HubRise Help](/docs).
+LivePepper can be connected to HubRise for your site and other apps to work as a cohesive whole. It could be your EPOS, your loyalty systems, the kitchen display screen you use or your preferred marketing solution. This allows you to sync your menu, your customer and order information. For more information, see the HubRise [Help](/docs).
