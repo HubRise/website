@@ -330,16 +330,15 @@ A product belongs to a category. A product has one or several skus.
 
 #### Parameters:
 
-| Name                                     | Type                          | Description                                                                                                     |
-| ---------------------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `ref` <Label type="optional" />          | string                        | The ref of the product.                                                                                         |
-| `category_ref`                           | string                        | The ref of the parent category.                                                                                 |
-| `name`                                   | string                        | The name of the product.                                                                                        |
-| `description` <Label type="optional" />  | string                        | The description of the product.                                                                                 |
-| `restrictions` <Label type="optional" /> | [Restrictions](#restrictions) | Availability restrictions.                                                                                      |
-| `tags` <Label type="optional" />         | string[]                      | List of tags. A tag is a free text used to describe some particular characteristics of a product or a category. |
-| `image_ids` <Label type="optional" />    | string[]                      | List of image ids attached to the product                                                                       |
-| `skus`                                   | [Sku](#skus)[]                | List of skus of this product. A product must contain at least one sku.                                          |
+| Name                                    | Type           | Description                                                                                                     |
+| --------------------------------------- | -------------- | --------------------------------------------------------------------------------------------------------------- |
+| `ref` <Label type="optional" />         | string         | The ref of the product.                                                                                         |
+| `category_ref`                          | string         | The ref of the parent category.                                                                                 |
+| `name`                                  | string         | The name of the product.                                                                                        |
+| `description` <Label type="optional" /> | string         | The description of the product.                                                                                 |
+| `tags` <Label type="optional" />        | string[]       | List of tags. A tag is a free text used to describe some particular characteristics of a product or a category. |
+| `image_ids` <Label type="optional" />   | string[]       | List of image ids attached to the product                                                                       |
+| `skus`                                  | [Sku](#skus)[] | List of skus of this product. A product must contain at least one sku.                                          |
 
 #### Example:
 
@@ -348,9 +347,6 @@ A product belongs to a category. A product has one or several skus.
   "ref": "REG",
   "category_ref": "PIZ",
   "name": "Regina",
-  "restrictions": {
-    "dow": "12345--"
-  },
   "tags": ["pizza", "vegetarian"],
   "image_ids": ["clom9"],
   "skus": [
@@ -448,6 +444,7 @@ A product contains one or several skus. A sku is always attached to a product.
 | -------------------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | `ref` <Label type="optional" />              | string                                                     | The ref of the sku, which will be passed along in orders.                                                               |
 | `name` <Label type="optional" />             | string                                                     | The name of the sku. Skus belonging to a same product must have unique names. One sku per product can have a null name. |
+| `restrictions` <Label type="optional" />     | [Restrictions](#restrictions)                              | An optional set of conditions that must be matched for the sku to be available.                                         |
 | `price`                                      | [Money](/developers/api/general-concepts/#monetary-values) | The price of the sku.                                                                                                   |
 | `option_list_refs` <Label type="optional" /> | string[]                                                   | The refs of the option lists this sku is attached to.                                                                   |
 | `tags` <Label type="optional" />             | string[]                                                   | List of tags.                                                                                                           |
@@ -458,6 +455,9 @@ A product contains one or several skus. A sku is always attached to a product.
 {
   "ref": "MAR-SM",
   "name": "Small",
+  "restrictions": {
+    "end_time": "13:30"
+  },
   "price": "9.80 EUR",
   "option_list_refs": ["SAUCE", "PIZZA_TOPPINGS"],
   "tags": ["hidden"]
@@ -718,7 +718,7 @@ Retrieve an option list and the possible choices (options).
 | `name`                                              | string                                                     | The deal name.                                                                                                                                                                                                                                                                   |
 | `description` <Label type="optional" />             | string                                                     | The description of the deal.                                                                                                                                                                                                                                                     |
 | `coupon_codes` <Label type="optional" />            | string[]                                                   | The coupon codes that trigger this deal.                                                                                                                                                                                                                                         |
-| `restrictions` <Label type="optional" />            | [Restrictions](#restrictions)                              | Availability restrictions.                                                                                                                                                                                                                                                       |
+| `restrictions` <Label type="optional" />            | [Restrictions](#restrictions)                              | An optional set of conditions that must be matched for the deal to be available.                                                                                                                                                                                                 |
 | `tags` <Label type="optional" />                    | string[]                                                   | List of tags.                                                                                                                                                                                                                                                                    |
 | `image_ids` <Label type="optional" />               | string[]                                                   | List of image ids attached to the deal.                                                                                                                                                                                                                                          |
 | `lines`                                             | array                                                      | List of deal lines. A deal should contain at least one line, with at least one sku.                                                                                                                                                                                              |
@@ -836,7 +836,7 @@ A discount is a reduction of the order total price.
 | `name`                                    | string                        | The name of the discount.                                                                                                                                             |
 | `description` <Label type="optional" />   | string                        | The description of the discount.                                                                                                                                      |
 | `coupon_codes` <Label type="optional" />  | string[]                      | The coupon codes that trigger the discount.                                                                                                                           |
-| `restrictions` <Label type="optional" />  | [Restrictions](#restrictions) | Availability restrictions.                                                                                                                                            |
+| `restrictions` <Label type="optional" />  | [Restrictions](#restrictions) | An optional set of conditions that must be matched for the discount to be available.                                                                                  |
 | `pricing_effect`                          | string                        | One of: `price_off`, `percentage_off`.                                                                                                                                |
 | `pricing_value` <Label type="optional" /> | depends                       | Depends on `pricing_effect`. It is a [Money](/developers/api/general-concepts/#monetary-values) for `price_off`, and a number between 0 and 100 for `percentage_off`. |
 | `image_ids` <Label type="optional" />     | string[]                      | List of image ids attached to the discount.                                                                                                                           |
@@ -847,6 +847,9 @@ A discount is a reduction of the order total price.
 {
   "ref": "25OFF",
   "name": "25% off your order",
+  "restrictions": {
+    "min_order_amount": "30.00 EUR"
+  },
   "pricing_effect": "percentage_off",
   "pricing_value": "25"
 }
@@ -866,8 +869,8 @@ A discount is a reduction of the order total price.
 ```json
 {
   "id": "av1up",
-  "name": "5€ off your order",
   "ref": "5OFF",
+  "name": "5€ off your order",
   "restrictions": {
     "dow": "123----"
   },
@@ -891,8 +894,8 @@ A discount is a reduction of the order total price.
 [
   {
     "id": "av1up",
-    "name": "5€ off your order",
     "ref": "5OFF",
+    "name": "5€ off your order",
     "pricing_effect": "price_off",
     "pricing_value": "5.00 EUR"
   },
@@ -985,7 +988,7 @@ Retrieve the list of charges in the catalog.
 
 ## 10. Restrictions
 
-A `restrictions` map can be used in [Product](#products), [Discount](#discounts) and [Deal](#deals) resources.
+A `restrictions` map can be used in [Sku](#skus), [Discount](#discounts) and [Deal](#deals) resources.
 
 It defines a set of conditions for a particular item to be available.
 
