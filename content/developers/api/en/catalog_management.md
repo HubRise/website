@@ -471,15 +471,16 @@ A product contains one or several skus. A sku is always attached to a product.
   accessLevel="location, account"
 />
 
-| Name                                        | Type                                                       | Description                                          |
-| ------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------- |
-| `id`                                        | string                                                     | The id of the sku.                                   |
-| `ref` <Label type="optional" />             | string                                                     | The ref of the sku.                                  |
-| `name` <Label type="optional" />            | string                                                     | The name of the sku.                                 |
-| `product_id`                                | string                                                     | The id of the sku's parent product.                  |
-| `price`                                     | [Money](/developers/api/general-concepts/#monetary-values) | The price of the sku.                                |
-| `option_list_ids` <Label type="optional" /> | string[]                                                   | The ids of the option lists this sku is attached to. |
-| `tags` <Label type="optional" />            | string[]                                                   | List of tags.                                        |
+| Name                                        | Type                                                       | Description                                                         |
+| ------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------- |
+| `id`                                        | string                                                     | The id of the sku.                                                  |
+| `ref` <Label type="optional" />             | string                                                     | The ref of the sku.                                                 |
+| `name` <Label type="optional" />            | string                                                     | The name of the sku.                                                |
+| `restrictions` <Label type="optional" />    | [Restrictions](#restrictions)                              | Set of conditions that must be matched for the sku to be available. |
+| `product_id`                                | string                                                     | The id of the sku's parent product.                                 |
+| `price`                                     | [Money](/developers/api/general-concepts/#monetary-values) | The price of the sku.                                               |
+| `option_list_ids` <Label type="optional" /> | string[]                                                   | The ids of the option lists this sku is attached to.                |
+| `tags` <Label type="optional" />            | string[]                                                   | List of tags.                                                       |
 
 #### Example request:
 
@@ -490,6 +491,9 @@ A product contains one or several skus. A sku is always attached to a product.
   "id": "sb65k",
   "ref": "MAR-SM",
   "name": "Small",
+  "restrictions": {
+    "end_time": "13:30"
+  }, 
   "product_id": "abg5a",
   "price": "9.80 EUR",
   "option_list_ids": ["e2sfj"],
