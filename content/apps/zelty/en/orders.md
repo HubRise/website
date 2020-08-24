@@ -1,6 +1,6 @@
 ---
 title: Orders
-position: 4
+position: 5
 layout: documentation
 meta:
   title: Zelty - Receive Orders from HubRise

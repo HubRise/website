@@ -1,6 +1,6 @@
 ---
 title: Zelty Terms
-position: 6
+position: 7
 layout: documentation
 meta:
   title: Zelty - Terminology

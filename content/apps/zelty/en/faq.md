@@ -1,6 +1,6 @@
 ---
 title: FAQs
-position: 7
+position: 8
 layout: documentation
 meta:
   title: Zelty - HubRise FAQs

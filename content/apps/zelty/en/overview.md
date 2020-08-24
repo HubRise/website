@@ -46,4 +46,14 @@ Connecting Zelty to HubRise allows Zelty to:
 
 ## Why Connect?
 
-Connecting Zelty to HubRise makes your EPOS and your other apps work as a cohesive whole. Synchronize your menu, your customer and order information with mobile ordering apps, ordering websites, loyalty systems, marketing or business intelligence solutions, delivery services. For more information on HubRise, see our [User Guide](/docs).
+Connecting Zelty to HubRise makes your EPOS and your other apps work as a cohesive whole. Synchronize your menu, your customer and order information with:
+
+- Mobile ordering apps
+- Ordering websites
+- Loyalty systems
+- Marketing solutions
+- Business intelligence solutions
+- Delivery services,
+- And more.
+
+For more information on HubRise, see our [User Guide](/docs).

@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-position: 5
+position: 6
 layout: documentation
 meta:
   title: Zelty - Troubleshooting Connection Issues
