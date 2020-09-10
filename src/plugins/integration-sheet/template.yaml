@@ -1,0 +1,153 @@
+info:
+  support_contact:
+  dev_contact:
+  integration_type:
+  client_name:
+  client_id:
+  development_platform:
+  app_descrition:
+  integration_requirements:
+  history_of_changes:
+chapters:
+  _connection_:
+    name: Connection
+    sections:
+      _establishing_connection_:
+        name: Establishing the connection
+        features:
+          1000:
+            question: "Is a HubRise connection page available to all users?
+              (In Developer notes) If not, describe the setup process."
+            required:
+            description: Can users set up the integration autonomously, or do they need the help from the support team?
+            answer:
+            developer_notes:
+            changes_required:
+          1001:
+            question: If a connection page is available, can users connect in one click (ie with no manual entry)?
+            required: Y
+            description: To answer "yes", the user should be able to complete the connection with no manual entry, just by clicking on links.
+            answer:
+            developer_notes:
+            changes_required:
+          1002:
+            question: If HubRise can be connected in one click, do you pass the country to the HubRise authorization page?
+            required: N
+            description: "Sample URL: https://manager.hubrise.com/oauth2/v1/authorize?redirect_uri=...&client_id=...&scope=...&account_name=La+Salsa&location_name=Paris&country=FR Passing the country in the URL ensures the right currency will be set if the account needs to be created."
+            answer:
+            developer_notes:
+            changes_required:
+          1003:
+            question: If HubRise can be connected in one click, do you pass the account_name and/or the location_name to the HubRise authorization page?
+            required: N
+            description: "See the sample URL above. Passing account/location names in the URL makes registration easier if the user does not yet have an HubRise account/location."
+            answer:
+            developer_notes:
+            changes_required:
+          1004:
+            question: Can you connect HubRise without disconnecting other solutions?
+            required: Y
+            description: In some scenarios, the user will want to use HubRise concurrently with a direct integration.
+            answer:
+            developer_notes:
+            changes_required:
+          1005:
+            question: When HubRise is connected, can the user see the name and ids of all the relevant resources (account, location, catalog and customer list) from your back office?
+            required: Y
+            description: "This is an example of such information: https://i.imgur.com/sDIPRqU.png"
+            answer:
+            developer_notes:
+            changes_required:
+          1006:
+            question: When HubRise is connected, can the user disconnect in one click?
+            required: Y
+            description: This is useful to reconnect to a different HubRise location
+            answer:
+            developer_notes:
+            changes_required:
+          1007:
+            question: When HubRise is connected, does your settings page show a link to the HubRise back-office (https://manager.hubrise.com)?
+            required: Y
+            description: For example, when a chain has multiple stores.
+            answer:
+            developer_notes:
+            changes_required:
+          1008:
+            question: Do you support multiple locations for the same account?
+            required: N
+            description: The scope expresses the set of permissions required by your app. Make sure you only request the access level that you need.
+            answer:
+            developer_notes:
+            changes_required:
+          1009:
+            question: (In Developer notes) What scope does your connection require?
+            required: N
+            description: The scope expresses the set of permissions required by your app. Make sure you only request the access level that you need.
+            answer:
+            developer_notes:
+            changes_required:
+          1010:
+            question: If your app is a POS or an online ordering solution, do you connect at the location level?
+            required: Y
+            description: Apps whose main purpose is to push or pull orders (eg. online ordering and POS solutions) should connect at the location level, not the account level.
+            answer:
+            developer_notes:
+            changes_required:
+          1011:
+            question: "Do you use a callback? (In Developer notes) If yes, which events does your callback register to?"
+            required: N
+            description: A callback informs your app of changes in HubRise, for example an order creation or update
+            answer:
+            developer_notes:
+            changes_required:
+          1012:
+            question: Do you use an active callback?
+            required: N
+            description: An active callback is triggered automatically by specific events (for example, a new order). Passive callbacks poll HubRise for new events on a regular basis (for example, every 30 seconds). Active callbacks should be preferred when possible.
+            answer:
+            developer_notes:
+            changes_required:
+  _catalog_:
+    name: Catalog
+    titles:
+      _available_features_: AVAILABLE FEATURES
+      _hubrise_integration_: HUBRISE INTEGRATION
+    sections:
+      _general_:
+        name: General
+        title_id: _available_features_
+        features:
+          2000:
+            question: Does the app manipulate products or deals?
+            required: N
+            description: "Sample URL: https://manager.hubrise.com/oauth2/v1/authorize?redirect_uri=...&client_id=...&scope=...&account_name=La+Salsa&location_name=Paris&country=FR
+                             Passing the country in the URL ensures the right currency will be set if the account needs to be created."
+            answer:
+            developer_notes:
+            changes_required:
+          2001:
+            question: Skip to the next tab if you answered No to the previous question
+            required:
+            description:
+            answer:
+            developer_notes:
+            changes_required:
+      _categories_:
+        name: Categories
+        title_id: _available_features_
+        features:
+          2100:
+            question: Are categories of products supported?
+            required: N
+            description:
+            answer:
+            developer_notes:
+            changes_required:
+          2101:
+            question: Is the order of categories customisable?
+            required: N
+            description:
+            answer:
+            developer_notes:
+            changes_required:
+
