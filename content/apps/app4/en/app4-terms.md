@@ -10,7 +10,12 @@ meta:
 | Description      | HubRise Name | App4 Name |
 | ---------------- | ------------ | --------- |
 | List of products | Catalog      | Menu      |
-
+| List of product modifiers | Options | Menu Item attributes |
+| Product modifier items| OptionLists| Menu Item attribute values|
+| Venue | Location | Restaurant/Outlet|
+|Deals | Deals | Menu item group or Discount |
+| Discount | Discount | Discount |
+| Additional charges | Charges | Tip/Delivery fee/Admin fee|
 <!--
 What terms are you using for:
 - Actual restaurant ("location" in HubRise):
