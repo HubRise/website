@@ -7,7 +7,7 @@ meta:
   description: Instructions on connecting Aquila with HubRise
 ---
 
-Connecting Aquila to HubRise requires the HubRise plugin to be installed and enabled.
+Connecting Aquila to HubRise requires the HubRise plugin to be installed and enabled. You should request the plugin to [contact@nextsourcia.com](mailto:contact@nextsourcia.com).
 
 ## Install the HubRise Plugin
 
