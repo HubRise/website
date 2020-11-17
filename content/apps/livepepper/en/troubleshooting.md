@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-position: 4
+position: 5
 layout: documentation
 meta:
   title: LivePepper Connection to HubRise Troubleshooting

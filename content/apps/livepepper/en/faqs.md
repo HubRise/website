@@ -1,6 +1,6 @@
 ---
 title: FAQs
-position: 6
+position: 7
 layout: documentation
 meta:
   title: LivePepper Connection to HubRise FAQs

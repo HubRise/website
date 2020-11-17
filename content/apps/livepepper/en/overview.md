@@ -3,8 +3,8 @@ position: 1
 title: Overview
 layout: documentation
 meta:
-  title: LivePepper Connection to HubRise Overview
-  description: Overview of LivePepper and how to connect it to HubRise.
+  title: LivePepper Connection to HubRise - Overview
+  description: LivePepper overview and why you should connect it to HubRise. With a connection to HubRise, send orders to tools you use every day including your EPOS.
 gallery:
   - 026-en-2x-kfc-livepepper.png
   - 027-en-2x-pizza-hut-livepepper.png
@@ -18,11 +18,7 @@ app_info:
   contact: contact@livepepper.com / +33 4 92 38 09 82
 ---
 
-[comment]: # 'We need background effect for images on apps overview page too'
-
 ## Description
-
-[comment]: # 'We need background effect for images on apps overview page too'
 
 LivePepper is an online ordering solution for home delivery and takeaway restaurants.
 
@@ -34,10 +30,21 @@ LivePepper comes with a rich palette of features and can answer the needs of the
 
 Restaurant managers have complete control over their LivePepper site. They can make changes to their menu, set up promotions, set business hours and vacation periods, delivery times, or other settings to best fit their needs. Data can be exported for analysis.
 
-## Prerequisites
+## Integration Features
 
-To establish a connection between LivePepper and HubRise, you must have an existing LivePepper site. A test site can be created from the [LivePepper website](https://www.livepepper.com). Connecting with HubRise is easy, and can be done in just a few minutes. A HubRise user profile and account can be created from the LivePepper back office at any time.
+Connecting LivePepper to HubRise allows LivePepper to:
+
+- Push orders into HubRise.
+- Pull order status from HubRise into LivePepper.
+- Push customer information into HubRise, including customer loyalty information.
+- Pull customer information from HubRise, including customer loyalty information.
+- Pull the catalog from HubRise.
+- Push the menu into a HubRise catalog.
 
 ## Why Connect?
 
-LivePepper can be connected to HubRise for your site and other apps to work as a cohesive whole. It could be your EPOS, your loyalty systems, the kitchen display screen you use or your preferred marketing solution. This allows you to sync your menu, your customer and order information. For more information on HubRise, see the [HubRise User Guide](/docs).
+LivePepper can be connected to HubRise for your website and other apps you use every day to work as a cohesive whole. It could be your EPOS, your customer loyalty management systems, the Kitchen Display Screen you use, or your preferred marketing solution. Connecting with HubRise allows you to sync your menu, your customer and order information. For more information on HubRise, see the [HubRise User Guide](/docs).
+
+## Prerequisites
+
+To establish a connection between LivePepper and HubRise, you must have an existing LivePepper online ordering website. A test site can be created from the [LivePepper website](https://www.livepepper.com). Connecting it with HubRise is easy. A HubRise user profile and account can be created directly from the LivePepper back office.
