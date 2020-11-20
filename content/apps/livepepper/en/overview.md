@@ -4,7 +4,7 @@ title: Overview
 layout: documentation
 meta:
   title: LivePepper Connection to HubRise - Overview
-  description: LivePepper overview and why you should connect it to HubRise. With a connection to HubRise, send orders to tools you use every day including your EPOS.
+  description: LivePepper overview and why you should connect it to HubRise. With a connection to HubRise, send your orders to the tools you use every day including your EPOS.
 gallery:
   - 026-en-2x-kfc-livepepper.png
   - 027-en-2x-pizza-hut-livepepper.png
@@ -24,11 +24,11 @@ LivePepper is an online ordering solution for home delivery and takeaway restaur
 
 LivePepper clients are mainly located in France and the UK, but the system operates in multiple international markets in the Americas, mainland Europe, North Africa, Middle East and South Asia. LivePepper can easily be localised for the international market.
 
-LivePepper can create a full site including static marketing pages and online ordering. Restaurants can also incorporate LivePepper's online ordering module into an existing marketing website. Sites can be customised from a template, or designed from scratch and tailored to the restaurant specifications.
+LivePepper can create a full website including static marketing pages and online ordering. Restaurants can also incorporate LivePepper's online ordering module into an existing marketing website. LivePepper websites can be customised from a template, or designed from scratch and tailored to the restaurant specifications.
 
 LivePepper comes with a rich palette of features and can answer the needs of the most demanding restaurants and international franchises.
 
-Restaurant managers have complete control over their LivePepper site. They can make changes to their menu, set up promotions, set business hours and vacation periods, delivery times, or other settings to best fit their needs. Data can be exported for analysis.
+Restaurant managers have complete control over their LivePepper website. They can make changes to their menu, set up promotions, set business hours and vacation periods, delivery times, or other settings to best fit their needs. Data can be exported for analysis.
 
 ## Integration Features
 
