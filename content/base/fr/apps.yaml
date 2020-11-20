@@ -114,6 +114,12 @@ content:
           title: Smood
           description: Smood est une plateforme de service de livraison à domicile qui opère sur tout le marché Suisse. Les clients peuvent commander en ligne ou via une app mobile dans leurs restaurants préférés ainsi que dans leurs Migros.
           additional_info: Intégration en cours.
+        - website: https://www.justeattakeaway.com/
+          documentation:
+          logo: takeaway.png
+          title: Takeaway.com
+          description: Takeaway.com est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Disponible en Belgique, Bulgarie, Luxembourg, Portugal, Roumanie, et en Suisse.
+          additional_info: Intégration en cours.
         - website: https://www.ubereats.com
           documentation: /apps/uber-eats
           logo: ubereats.png
@@ -150,7 +156,7 @@ content:
           title: Obypay
           description: Obypay est une solution de commande en ligne et de commande à table pour les restaurants avec une conciergierie digitale pour les hotels.
         - website: https://www.shopify.com/
-          documentation:
+          documentation: /apps/shopify
           logo: shopify.png
           title: Shopify
           description: Shopify peut être utilisé pour créer un site de e-commerce quelle que soit l'activité. Sa plateforme offre une expérience utilisateur omnicanale sur le web, les smartphones, les réseaux sociaux, les magasins ou simple boutiques éphémères.
@@ -167,7 +173,7 @@ content:
           title: TastyCloud
           description: TastyCloud propose des menus digitalisés in et out store pour les restaurants et les hôtels. L'offre comprend des menus sur tablettes, des porte-menus extérieurs, un site de click and collect, des écrans dynamiques, et une application mobile de prise de commande par scan de QR codes.
         - website: https://woocommerce.com/
-          documentation:
+          documentation: /apps/woocommerce
           logo: woocommerce.png
           title: WooCommerce
           description: WooCommerce est une extension WordPress open source pour créer une boutique en ligne. Personnalisable et facile à modifier, elle est utilisée par les petites et les grandes entreprises.

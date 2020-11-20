@@ -13,6 +13,7 @@ content:
       - Unlimited orders
       - Unlimited products
       - Unlimited connections
+      - No commitment
     link:
       text: Start now
       to: https://manager.hubrise.com/signup

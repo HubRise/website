@@ -4,7 +4,7 @@ position: 3
 layout: documentation
 meta:
   title: Zelty - Mapping Ref Codes in HubRise
-  description: Connect Zelty to the apps you use everyday: food ordering platforms, mobile apps, ordering sites, marketing and loyalty solutions, delivery services, and more.
+  description: "Connect Zelty to the apps you use everyday: food ordering platforms, mobile apps, ordering sites, marketing and loyalty solutions, delivery services, and more."
 ---
 
 After connecting your Zelty EPOS to your HubRise account, you can sync information between them. For it to work however, certain steps need to be taken. Items in the Zelty EPOS are identified by unique codes. When you set up other apps to connect via HubRise, you need to provide these codes.

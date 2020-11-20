@@ -18,7 +18,7 @@ This guide includes useful commands for generating short videos that can be used
 
 ## Required Software
 
-You should convert movie files into other formats using the following programs. When possible, the use of Open Source software is preferred.
+You should convert movie files into other formats using the following programs. When possible, the use of open source software is preferred.
 
 - ffmpeg - converts movie files. It can be installed with `apt-get install ffmpeg` (Linux) or `brew install ffmpeg` (Mac). An executable file is available to download for Windows.
 - gifsicle - used to convert movie files into animated gifs of fairly decent quality and size. It can be installed with `apt-get install gifsicle` (Linux) or `brew install gifsicle` (Mac).

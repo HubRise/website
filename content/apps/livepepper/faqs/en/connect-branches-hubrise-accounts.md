@@ -20,4 +20,4 @@ To connect your LivePepper site multiple branches to the corresponding HubRise a
 
 - If the corresponding HubRise **Account** and **Location** is not available, select **Create a new location** to connect your LivePepper Branch to a new HubRise Location. If you select this method, fill-in the required fields to create the new location, then **Allow** LivePepper to connect.
 
-1. Repeat the steps above for each LivePepper branch to connect.
+Repeat the steps above for each LivePepper branch to connect.

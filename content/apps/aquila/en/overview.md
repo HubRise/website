@@ -28,7 +28,7 @@ Aquila allows businesses to:
 - Enable new features through plugins.
 - Track customers and their reviews to enhance service.
 
-NextSourcia offers Aquila as a hosted version, or as Open Source software that companies can install and manage themselves. New features can be added through licensed plugins, letting you tweak Aquila to best match your company's needs.
+NextSourcia offers Aquila as a hosted version, or as open source software that companies can install and manage themselves. New features can be added through licensed plugins, letting you tweak Aquila to best match your company's needs.
 
 ## Prerequisites
 

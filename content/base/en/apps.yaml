@@ -112,6 +112,12 @@ content:
           title: Smood
           description: Smood is an online food ordering and delivery platform that operates throughout the Swiss market. Customers can order food online or via a mobile app from their favorite restaurants or from their Migros.
           additional_info: Integration in progress.
+        - website: https://www.justeattakeaway.com/
+          documentation:
+          logo: takeaway.png
+          title: Takeaway.com
+          description: Takeaway.com is an online food ordering and delivery platform for local restaurants. Customers can order food online or via a mobile app. They operate in Belgium, Bulgaria, Luxembourg, Portugal, Romania, and in Switzerland.
+          additional_info: Integration in progress.
         - website: https://www.ubereats.com
           documentation: /apps/uber-eats
           logo: ubereats.png
@@ -148,7 +154,7 @@ content:
           description: Obypay is an online and a table ordering solution for restaurants with a digital conciergerie app for hotels.
           additional_info: Documentation in French.
         - website: https://www.shopify.com/
-          documentation:
+          documentation: /apps/shopify/
           logo: shopify.png
           title: Shopify
           description: Shopify is an e-commerce platform for any type of business. It offers an omnichannel user experience on the web, smartphones, social networks, marketplaces, and in-store.
@@ -165,7 +171,7 @@ content:
           title: TastyCloud
           description: TastyCloud is a digital menu solution for restaurants and hotels. They offer digital menus, outdoor menu display cases, dynamic screens, click and collect online ordering, and smartphone ordering via QR code scanning.
         - website: https://woocommerce.com/
-          documentation:
+          documentation: /apps/woocommerce
           logo: woocommerce.png
           title: WooCommerce
           description: WooCommerce is an open-source e-commerce plugin for WordPress. Customisable and developer friendly, it is used by small to large businesses.
