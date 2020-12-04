@@ -272,6 +272,7 @@ There is no mandatory field so a customer can be created with no information the
 | `delivery_notes` <Label type="optional" />  | string                                                      | Information provided by the customer to help with the delivery.                                                                                          |
 | `sms_marketing` <Label type="optional" />   | boolean                                                     | Whether the customer agrees to receive marketing messages via SMS. Defaults to `false`.                                                                  |
 | `email_marketing` <Label type="optional" /> | boolean                                                     | Whether the customer agrees to receive marketing messages via email. Defaults to `false`.                                                                |
+| `loyalty_cards` <Label type="optional" />   | [LoyaltyCard](#loyalty-cards-in-a-customer)[]               | Loyalty cards associated to the customer.                                                                                                                |
 | `custom_fields` <Label type="optional" />   | [CustomFields](/developers/api/extensions/#custom-fields)   | Additional data attached to the customer.                                                                                                                |
 
 (\*) The E.164 format must be used for any new implementation. Be aware however that phone numbers retrieved from the API can be encoded in a different format. The E.164 will become mandatory in a future release.
@@ -297,13 +298,20 @@ There is no mandatory field so a customer can be created with no information the
   "state": null,
   "country": "FR",
   "latitude": "48.8589507",
-  "longitude": "2.2770205"
+  "longitude": "2.2770205",
+  "loyalty_cards": [
+    {
+      "name": "Come back!",
+      "ref": "LOY",
+      "balance": "0.0"
+    }
+  ]
 }
 ```
 
 ### 2.4. Update Customer
 
-Updates a customer. Only the fields present in the request are updated.
+Updates a customer. This requests takes the same parameters as the [customer creation](#create-customer) request.
 
 <CallSummaryTable
   endpoint="PATCH /customer_lists/:customer_list_id/customers/:customer_id"
@@ -358,7 +366,7 @@ A customer can have zero, one or many loyalty cards. Each loyalty card defines:
 
 A null `ref` can be used for no more than one of any customer's loyalty cards. A store running a single loyalty scheme would typically use loyalty cards with a null `ref` for each customer.
 
-`balance` is updated automatically by HubRise when loyalty operations are created. This field cannot be changed directly.
+You can update `balance` either by specifying the new balance, or by creating a loyalty operation containing the difference of points. In both cases, the balance is updated and a loyalty operation is created.
 
 ### 3.1. Retrieve Loyalty Card
 
@@ -450,11 +458,15 @@ Creates a new loyalty card for a customer.
 
 #### Request parameters:
 
-| Name                             | Type   | Description                                                                                                            |
-| -------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------- |
-| `customer_id`                    | string | The customer's `id`. Must exist or the request will fail.                                                              |
-| `name` <Label type="optional" /> | string | The marketing name of the loyalty scheme.                                                                              |
-| `ref`                            | string | The loyalty card ref. Must be unique for any given customer. No more than one card per customer can have a `null` ref. |
+| Name                                          | Type                                                        | Description                                                                                                            |
+| --------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `customer_id`                                 | string                                                      | The customer's `id`. Must exist or the request will fail.                                                              |
+| `name` <Label type="optional" />              | string                                                      | The marketing name of the loyalty scheme.                                                                              |
+| `ref`                                         | string                                                      | The loyalty card ref. Must be unique for any given customer. No more than one card per customer can have a `null` ref. |
+| `balance` <Label type="optional" />           | [decimal](/developers/api/general-concepts/#decimal-values) | The initial number of points on the card.                                                                              |
+| `adjustment_reason` <Label type="optional" /> | string                                                      | The reason used in the initial loyalty operation.                                                                      |
+
+If `balance` is specified and not equal to zero, a loyalty operation is created to match the specified balance, with the optionally specified `adjustment_reason`.
 
 #### Example request:
 
@@ -468,7 +480,7 @@ Creates a new loyalty card for a customer.
 }
 ```
 
-If the request succeeds, a loyalty card is created with an initial `balance` set to `"0.0"`.
+If the request succeeds, a loyalty card is created with an initial `balance` set to `0.0`.
 
 ### 3.4. Update Loyalty Card
 
@@ -481,10 +493,14 @@ Update a loyalty card.
 
 #### Request parameters:
 
-| Name                             | Type   | Description                  |
-| -------------------------------- | ------ | ---------------------------- |
-| `name` <Label type="optional" /> | string | The loyalty card name.       |
-| `ref` <Label type="optional" />  | string | The loyalty card unique ref. |
+| Name                                          | Type                                                        | Description                                                                                           |
+| --------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| `name` <Label type="optional" />              | string                                                      | The loyalty card name.                                                                                |
+| `ref` <Label type="optional" />               | string                                                      | The loyalty card unique ref.                                                                          |
+| `balance` <Label type="optional" />           | [decimal](/developers/api/general-concepts/#decimal-values) | The new balance of points.                                                                            |
+| `adjustment_reason` <Label type="optional" /> | string                                                      | The reason used in the loyalty operation if the current balance differs from the specified `balance`. |
+
+If `balance` is specified and differs from the loyalty card current balance, a loyalty operation is created to match the balance, with the optionally specified `adjustment_reason`.
 
 #### Example request:
 
@@ -492,13 +508,48 @@ Update a loyalty card.
 
 ```json
 {
-  "ref": "LOYALTY"
+  "balance": "21.0",
+  "adjustment_reason": "Website adjustment"
 }
 ```
 
-Note that only `name` and `ref` can be updated. It is not possible to change `customer_id`.
+If the loyalty card current balance is `19.0`, this request creates a loyalty operation with `delta` equal to the difference of points (here `21.0` - `19.0` = `2.0`), and the specified reason.
 
-`balance` cannot be changed directly as well. To update the balance, create a loyalty operation.
+If the specified balance equals the current balance, no action is taken.
+
+### 3.5. Loyalty Cards in a Customer
+
+Loyalty cards can be created or updated within the [customer creation](#create-customer) and the [customer update](#update-customer) requests.
+
+| Name                                                          | Type                                                        | Description                               |
+| ------------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------- |
+| `loyalty_cards[].name` <Label type="optional" />              | string                                                      | Loyalty card name.                        |
+| `loyalty_cards[].ref` <Label type="optional" />               | string                                                      | Loyalty card unique ref.                  |
+| `loyalty_cards[].balance` <Label type="optional" />           | [decimal](/developers/api/general-concepts/#decimal-values) | The new balance of points.                |
+| `loyalty_cards[].adjustment_reason` <Label type="optional" /> | string                                                      | The reason used in the loyalty operation. |
+
+#### Example request - customer update:
+
+`PATCH /customer_lists/ag8u4/customers/asdf2`
+
+```json
+{
+  "first_name": "Claude",
+  "loyalty_cards": [
+    {
+      "ref": "LOY",
+      "balance": "13.0",
+      "adjustment_reason": "Website adjustment"
+    }
+  ]
+}
+```
+
+This request updates the first name of the customer, then looks for a loyalty card with a ref equal to "LOY".
+
+If no such loyalty card exists, it is created along with a loyalty operation, for the card to match the specified balance of points. If a reason is specified, it is attached to the loyalty operation.
+
+In the opposite case, the existing loyalty card balance is compared with the new balance, here "13.0". If both balances match, no action is taken. Otherwise, a loyalty operation is created on the loyalty card, with the optionally specified reason, for the card to match the new balance.
 
 ## 4. Loyalty Operations
 
