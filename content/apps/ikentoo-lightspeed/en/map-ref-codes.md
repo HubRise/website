@@ -35,9 +35,9 @@ To export the iKentoo menu, follow these steps.
 
 To check the ref codes for the items, you can open the downloaded CSV file in Excel or a text editor. The ref codes appear under the **SKU** column.
 
-## Creating Ref Codes for Delivery Platforms
+## Creating Ref Codes in iKentoo
 
-If you connect iKentoo to delivery platforms such as Deliveroo, Uber Eats, and Just Eat, you need to create special service types, payments, charges, and discounts for every delivery platform you support.
+If you connect iKentoo to delivery platforms such as Deliveroo, Uber Eats, and Just Eat, or to other online ordering solutions, you need to create special service types, payments, charges, and discounts for every platform you support.
 To simplify troubleshooting, we recommend that you use the specific codes provided in the page [Integrating with delivery platforms](/apps/ikentoo-lightspeed/food-ordering-platforms).
 
 To create the ref codes in your iKentoo account, you have these two options:
@@ -47,27 +47,27 @@ To create the ref codes in your iKentoo account, you have these two options:
 
 ### Creating Service Types in iKentoo
 
-Service types are known as _account profiles_ on iKentoo. To create a service type for a delivery platform, follow these steps.
+Service types are known as _account profiles_ on iKentoo. To create a service type, follow these steps.
 
 1. From your iKentoo back office, select **Configuration**, then select **Settings** > **Account profiles**.
 1. Click **Add an account profile**, then click **OK**.
 1. In the **Base options** section, specify the ref code for your service type in the **Code** field.
 1. Fill in the other sections in the page as needed, then click **Save**.
-1. Repeat the process for all the service types you support for each delivery platform.
+1. Repeat the process for all the service types you support on every platform.
 
 ### Creating Discounts in iKentoo
 
-To create a discount for a delivery platform, follow these steps.
+To create a discount, follow these steps.
 
 1. From your iKentoo back office, select **Configuration**, then select **Settings** > **Discounts**.
 1. Click **Add a discount**.
 1. In the **Add new discount** page, specify the discount code in the first field.
 1. Fill in the other sections in the page as needed, then click **Save**.
-1. Repeat the process for all the discounts you support for each delivery platform.
+1. Repeat the process for all the discounts you support on every platform.
 
 ### Creating Charges in iKentoo
 
-To create a charge for a delivery platform, you need to create an item by following these steps.
+To create a charge, you need to create an item by following these steps.
 
 1. From your iKentoo back office, select **Configuration**, then select **Items** > **Items**.
 2. Click **Add item**.
@@ -75,14 +75,14 @@ To create a charge for a delivery platform, you need to create an item by follow
 4. A field appears where you can include the ref code for your charge.
 5. For **Price structure**, make sure you select **Single price** from the dropdown menu.
 6. Fill in the other sections in the page as needed, then click **Save**.
-7. Repeat the process for all the charges you support for each delivery platform.
+7. Repeat the process for all the charges you support on every platform.
 
 ### Creating Payment Methods in iKentoo
 
-To create a payment method for a delivery platform, follow these steps.
+To create a payment method, follow these steps.
 
 1. From your iKentoo back office, select **Configuration**, then select **Settings** > **Payment methods**.
 1. Click **Add a payment method**.
 1. In the **Add new payment method** page, specify the code for your payment method in the **Code** field.
 1. Fill in the other sections in the page as needed, then click **Save**.
-1. Repeat the process for all the payment methods you support for each delivery platform.
+1. Repeat the process for all the payment methods you support on every platform.
