@@ -38,7 +38,7 @@ To check the ref codes for the items, you can open the downloaded CSV file in Ex
 ## Creating Ref Codes in iKentoo
 
 If you connect iKentoo to delivery platforms such as Deliveroo, Uber Eats, and Just Eat, or to other online ordering solutions, you need to create special service types, payments, charges, and discounts for every platform you support.
-To simplify troubleshooting, we recommend that you use the specific codes provided in the page [Integrating with delivery platforms](/apps/ikentoo-lightspeed/food-ordering-platforms).
+To simplify troubleshooting, we recommend that you use the specific codes provided in the page [Food ordering platforms](/apps/ikentoo-lightspeed/food-ordering-platforms).
 
 To create the ref codes in your iKentoo account, you have these two options:
 
