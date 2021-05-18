@@ -35,11 +35,11 @@ Restaurant managers have complete control over their LivePepper website. They ca
 Connecting LivePepper to HubRise allows LivePepper to:
 
 - Push orders into HubRise.
-- Pull order status from HubRise into LivePepper.
-- Push customer information into HubRise, including customer loyalty information.
-- Pull customer information from HubRise, including customer loyalty information.
-- Pull the catalog from HubRise.
+- Pull order status from HubRise.
+- Push customer information into HubRise, including loyalty.
+- Pull customer information from HubRise, including loyalty.
 - Push the menu into a HubRise catalog.
+- Pull the menu from a HubRise catalog.
 
 ## Why Connect?
 
@@ -47,4 +47,4 @@ LivePepper can be connected to HubRise for your website and other apps you use e
 
 ## Prerequisites
 
-To establish a connection between LivePepper and HubRise, you must have an existing LivePepper online ordering website. A test site can be created from the [LivePepper website](https://www.livepepper.com). Connecting it with HubRise is easy. A HubRise user profile and account can be created directly from the LivePepper back office.
+LivePepper can be connected to HubRise from the LivePepper back office. You only need a LivePepper account to complete the connection.

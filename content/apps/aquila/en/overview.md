@@ -30,14 +30,12 @@ Aquila allows businesses to:
 
 NextSourcia offers Aquila as a hosted version, or as open source software that companies can install and manage themselves. New features can be added through licensed plugins, letting you tweak Aquila to best match your company's needs.
 
-## Prerequisites
-
-To establish a connection between Aquila and HubRise, you must have an existing Aquila CMS account, and the HubRise connection module installed by NextSourcia.
-
-The HubRise connection module makes connecting HubRise easy. Aquila can connect to an existing or new HubRise Account.
-
 ## Why Connect?
 
 Connecting your Aquila site to HubRise provides an omnichannel advantage to your business. Customer information can be transferred to marketing and loyalty apps, orders submitted to the EPOS of your choice.
 
 The connection between Aquila and HubRise synchronises customer information between the two systems. Product information can be pulled from HubRise and used to create new products in Aquila, or update product prices and names. Orders made in Aquila are pushed to HubRise. For more information, see the [HubRise Overview](/docs).
+
+## Prerequisites
+
+Aquila can be connected to HubRise from the Aquila back office. You will need an Aquila website and the HubRise connection module edited by NextSourcia to complete the connection.

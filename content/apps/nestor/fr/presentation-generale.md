@@ -31,10 +31,11 @@ Nestor fonctionne sous Windows. Il est disponible uniquement en français.
 
 ## Fonctionnalités de l'intégration
 
-L'intégration de Nestor avec HubRise permet de :
+L'intégration de Nestor avec HubRise permet à Nestor de :
 
-- Recevoir les commandes et les clients HubRise dans Nestor.
-- Envoyer un catalogue Nestor vers HubRise.
+- Recevoir les commandes depuis HubRise.
+- Recevoir les informations clients depuis HubRise.
+- Envoyer le menu vers un catalogue HubRise.
 - Synchroniser le délai de livraison avec HubRise.
 
 ---
@@ -49,4 +50,4 @@ En connectant Nestor à HubRise, vous recevrez les commandes de votre site Inter
 
 ## Prérequis
 
-Pour établir la connexion entre Nestor et HubRise, vous devez disposer d'une licence Nestor et d'un compte HubRise.
+La connexion de Nestor à HubRise s'établit depuis Nestor. Vous devez seulement disposer d'une licence Nestor pour effectuer la connexion.
