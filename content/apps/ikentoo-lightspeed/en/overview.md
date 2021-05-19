@@ -19,13 +19,13 @@ app_info:
 
 ## Description
 
-iKentoo Bridge is an app developed by HubRise that allows the communication between HubRise and the iKentoo EPOS.
+iKentoo Lightspeed K-Series is an iPad and cloud Point of Sales system for restaurants and hoteliers. Acquired by Lightspeed, iKentoo will keep expanding to new international markets.
 
-iKentoo is now **Lightspeed K-Series**. For more information, read the [announcement on Lightspeed blog](https://www.lightspeedhq.co.uk/blog/lightspeed-restaurant-k-series/).
+iKentoo Bridge is an app developed by HubRise that allows the communication between HubRise and the iKentoo Lightspeed K-Series EPOS.
 
 ## Integration features
 
-iKentoo connects to your HubRise account through iKentoo Bridge, an app developed by HubRise. iKentoo Bridge provides a user interface to see the requests sent to the EPOS and responses received.
+iKentoo Lightspeed K-Series connects to your HubRise account through iKentoo Bridge, an app developed by HubRise. iKentoo Bridge provides a user interface to see the requests sent to the EPOS and responses received.
 
 Connecting iKentoo Bridge to HubRise allows iKentoo to:
 
