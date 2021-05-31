@@ -60,7 +60,7 @@ Zelty can be connected to HubRise from the HubRise or from the Zelty back office
 
 Connecting Zelty to HubRise allows your EPOS to communicate with other applications you use everyday.
 
-Synchronise your menu, your customer and order information with online ordering, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management, delivery services, eMarketing (SMS/emailing), business intelligence, stock management, loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our  [Apps page](/apps)
+Via HubRise, synchronise your menu, your customer and order information with online ordering, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management, delivery services, eMarketing (SMS/emailing), business intelligence, stock management, loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our  [Apps page](/apps).
 
 ## Prerequisites
 
