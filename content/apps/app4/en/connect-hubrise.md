@@ -3,7 +3,7 @@ title: Connection to HubRise
 position: 2
 layout: documentation
 meta:
-  title: Connection to HubRise | App4 | HubRise 
+  title: Connection to HubRise | App4 | HubRise
   description: App4 overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 ---
 

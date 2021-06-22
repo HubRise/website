@@ -3,7 +3,10 @@ module.exports = {
     'react-app',
     'prettier',
     'prettier/react',
-    'plugin:cypress/recommended'
+    'plugin:cypress/recommended',
+    'plugin:import/typescript',
+    'plugin:import/errors',
+    'plugin:import/warnings'
   ],
   plugins: ['prettier', 'cypress'],
   env: {
@@ -20,5 +23,20 @@ module.exports = {
     'cypress/no-assigning-return-values': 'error',
     'cypress/no-unnecessary-waiting': 'error',
     'cypress/assertion-before-screenshot': 'warn'
+  },
+  settings: {
+    'import/resolver': {
+      // Allow `@/` to map to `src/client/`
+      alias: {
+        map: [
+          ['@components', './src/components'],
+          ['@contexts', './src/contexts'],
+          ['@images', './src/images'],
+          ['@layouts', './src/layouts'],
+          ['@utils', './src/utils']
+        ],
+        extensions: ['.ts', '.tsx', '.js', '.jsx', '.json']
+      }
+    }
   }
 }

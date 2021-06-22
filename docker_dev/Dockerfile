@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:experimental
-FROM node:12.18.3-stretch
+FROM node:14.17.0-buster
 
 # -------------
 # Install packages

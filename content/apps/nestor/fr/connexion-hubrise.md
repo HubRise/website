@@ -25,7 +25,8 @@ Pour établir la connexion entre un point de vente Nestor et HubRise :
 
 ---
 
-   ![Connexion à HubRise - Choix du point de vente](../images/002-fr-nestor-connexion-location.png)
+![Connexion à HubRise - Choix du point de vente](../images/002-fr-nestor-connexion-location.png)
+
 1. Copiez le code affiché et collez-le dans la fenêtre **Configuration HubRise** de l'utilitaire WebNES.
    ![Connexion à HubRise - Affichage du code](../images/003-fr-nestor-connexion-code.png)
 1. Cliquez sur **Valider**. L'interface WebNES affiche **Connecté à HubRise**, ainsi que les informations de votre point de vente.
@@ -45,7 +46,7 @@ Il est conseillé de donner à l'éditeur du logiciel Nestor l'accès à votre c
 1. Depuis votre espace HubRise, sélectionnez **CONFIGURATION** > **COMPTES** dans le menu de gauche. La liste de vos comptes s'affiche.
 1. Sélectionnez le compte auquel votre point de vente est rattaché.
 1. Dans la section **Points de vente**, sélectionnez votre point de vente.
-1. Dans la section **Permissions**, ajoutez *info@svitex.com* en sélectionnant l'option **Manager** (et non **Admin**) dans la liste déroulante des rôles, puis cliquez sur l'icône *+*. L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre point de vente, le partage de mot de passe est déconseillé pour des raisons de sécurité.
+1. Dans la section **Permissions**, ajoutez *info@svitex.com* en sélectionnant l'option **Manager** (et non **Admin**) dans la liste déroulante des rôles, puis cliquez sur l'icône _+_. L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre point de vente, le partage de mot de passe est déconseillé pour des raisons de sécurité.
 
 ## Déconnecter Nestor
 

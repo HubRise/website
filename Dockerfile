@@ -1,7 +1,7 @@
 # ****************************
 # **      Build stage       **
 # ****************************
-FROM node:12.18.3-stretch AS build-stage
+FROM node:14.17.0-buster AS build-stage
 
 # Working directory
 WORKDIR /website
@@ -13,8 +13,11 @@ RUN yarn install
 # Add project files
 COPY . .
 
-# ENV variables need to be set at build stage or `gatbsy build` fails
-# TODO: fix this
+# Clean build artefacts from project files
+RUN ./node_modules/.bin/gatsby clean
+
+## ENV variables need to be set at build stage or `gatbsy build` fails
+## TODO: fix this
 ENV SENTRY_DSN https://96b4d1defd7648308c6e30f8a3470cfd@sentry.io/1776244
 ENV NODE_ENV production
 ENV RECAPTCHA_SITE_KEY 6LfjbNYUAAAAAPx_tCv_YyhueK2JIjf58b2HGU8d

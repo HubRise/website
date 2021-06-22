@@ -6,7 +6,7 @@ meta:
   title: Présentation générale | OrderLine | HubRise
   description: Présente l'utilisation et les fonctionnalités d'OrderLine permettant de gérer les boutiques physiques ou en ligne.
 gallery:
-  - 001-en-2x-desktop-view.png
+  - __gallery-001.png
 path_override: /
 app_info:
   category: Gestion des commandes

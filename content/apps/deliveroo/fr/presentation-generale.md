@@ -6,8 +6,8 @@ meta:
   title: Présentation générale | Deliveroo | HubRise
   description: Deliveroo Bridge vous permet de connecter votre restaurant Deliveroo à HubRise, et de recevoir vos commandes Deliveroo dans votre solution d'encaissement.
 gallery:
-  - 006-fr-deliveroo-screenshot.png
-  - 002-fr-configuration-page.png 
+  - __gallery-fr-001.png
+  - __gallery-fr-002.png
 path_override: /
 app_info:
   category: Plateformes de livraison de repas

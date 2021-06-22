@@ -16,6 +16,12 @@
     }
   }
 
+  &__title__link,
+  &__title__link:hover,
+  &__title__link:focus {
+    color: $hr-dark-gray;
+  }
+
   &__title_small {
     display: block;
     margin-bottom: 0;

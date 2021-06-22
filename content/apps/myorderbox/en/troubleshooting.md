@@ -7,15 +7,13 @@ meta:
   description: Troubleshooting MyOrderBox connection with HubRise for your EPOS and other apps to work as a cohesive whole. Connect apps and synchronise your data.
 ---
 
-## Rejected orders
+## What does "Item may be missing" on receipts mean?
 
-If a product ref code is missing or not recognised on an order MyOrderBox pulled from HubRise, the full order will be rejected. HubRise related order logs will show an error 422.
+If a product or option ref code is missing or not recognised on an order MyOrderBox pulled from HubRise, the following note is included at the bottom of the order receipt.
 
----
+![Invalid ref code in MyOrderBox receipt](../images/001-invalid-ref-code.png)
 
-**IMPORTANT NOTE:** MyOrderBox is considering changing their policy to accept such orders.
-
----
+To resolve the issue, check the ref code of the missing product or option. See [Map Ref Codes](/apps/myorderbox/map-ref-codes).
 
 ## MyOrderBox Support
 

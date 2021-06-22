@@ -7,11 +7,11 @@ meta:
   description: Guidelines to include screenshots in the HubRise documentation.
 ---
 
-[comment]: # (This page is a duplicate from .../contributing/en)
+[comment]: # 'This page is a duplicate from .../contributing/en'
 
 ## General Recommendations
 
-For website screenshots,  always resize your browser width to 1200px before taking the capture.
+For website screenshots, always resize your browser width to 1200px before taking the capture.
 
 Screenshots should ideally be taken on 4K High Definition screens.
 

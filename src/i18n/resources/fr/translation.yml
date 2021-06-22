@@ -2,6 +2,14 @@ apps:
   view_documentation: Consulter la documentation
   visit_website: Accéder au site de l'éditeur
 
+blog:
+  title: Blog
+
+documentation:
+  language_warning:
+    en: Cette documentation est disponible en anglais uniquement.
+    fr: Cette documentation est disponible en français uniquement.
+
 layout:
   header:
     buttons:

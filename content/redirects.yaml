@@ -1,0 +1,17 @@
+# Developers page
+- fromPath: /developers/api
+  toPath: /developers/api/general-concepts
+- fromPath: /fr/developers/api
+  toPath: /fr/developers/api/general-concepts
+
+# iKentoo <-> Lightspeed
+- fromPath: /apps/ikentoo
+  toPath: /apps/ikentoo-lightspeed
+- fromPath: /fr/apps/ikentoo
+  toPath: /fr/apps/ikentoo-lightspeed
+
+# Aquila
+- fromPath: /apps/aquila
+  toPath: /apps/aquila-cms
+- fromPath: /fr/apps/aquila
+  toPath: /fr/apps/aquila-cms

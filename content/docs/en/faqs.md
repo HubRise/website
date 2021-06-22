@@ -4,7 +4,7 @@ position: 16
 layout: documentation
 meta:
   title: Frequently Asked Questions | HubRise
-description: Frequently asked questions and answers on quotas, on plans, on user profile, on accounts, on connections and a lot more.  
+  description: Frequently asked questions and answers on quotas, on plans, on user profile, on accounts, on connections and a lot more.
 ---
 
 - <Link to="/docs/faqs/free-plan-quota-exceeded-what-happens/">What Happens If My Free Plan Quota Is Exceeded?</Link>

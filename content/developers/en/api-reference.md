@@ -7,4 +7,4 @@ meta:
   description:
 ---
 
-To see the API documentation, check our [API Reference](/developers/api/general-concepts). 
+To see the API documentation, check our [API Reference](/developers/api/general-concepts).

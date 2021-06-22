@@ -64,10 +64,11 @@ https://manager.hubrise.com/oauth2/v1/authorize?
 ```
 
 When the page loads, HubRise:
-- Authenticates the user. Users can log in if they already have a HubRise account. If they don't, they can create an account in a few simple steps: `country`, `account_name` and `location_name` parameters are then used to prefill the signup form.  
+
+- Authenticates the user. Users can log in if they already have a HubRise account. If they don't, they can create an account in a few simple steps: `country`, `account_name` and `location_name` parameters are then used to prefill the signup form.
 - Prompts the user to select the location, catalog and/or customer list to connect.
 - Requests user approval to access the data.
-  
+
 If the user approves the request, HubRise calls the `redirect_uri` URL you specified, and includes the authorisation code in the `code` query parameter:
 
 ```http
@@ -80,7 +81,7 @@ https://<<YOUR-DOMAIN-HERE>>/oauth_callback?code=ffae0047c4d6b9e02f95e76a3f6a32
 
 ---
 
-If the authorisation fails, HubRise calls the `redirect_uri` URL,  with an error message in the `error` query parameter:
+If the authorisation fails, HubRise calls the `redirect_uri` URL, with an error message in the `error` query parameter:
 
 ```http
 https://<<YOUR-DOMAIN-HERE>>/oauth_callback?error=access_denied

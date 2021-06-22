@@ -7,13 +7,14 @@ meta:
   description: Instructions on mapping LivePepper product ref codes with other apps after connecting your EPOS with HubRise. Connect apps and synchronise your data.
 ---
 
-Once your LivePepper site is connected with a HubRise account, customer and order information will be pushed into HubRise automatically. For the connection to work with all apps in HubRise, some configuration on the LivePepper side may be needed. This is particularly true for the connection with an EPOS.
+For LivePepper orders to be processed by your EPOS, you need to configure ref codes for each item in the menu, including toppings and options, ingredients, product sizes and deals. In some cases, the EPOS will also require ref codes for payment methods, service types and delivery charges. Refer to your EPOS documentation on the HubRise website for details.
 
-To properly process orders from LivePepper to your EPOS, product ref codes are required for each and every item in the menu, including product variants, toppings and options as well as ingredients, product sizes and deals.
+This page explains how to configure these different ref codes in LivePepper.
 
-In some cases, the EPOS will also require ref codes for payment methods, service types and delivery charges to understand some of the LivePepper functionalities. Always refer to your EPOS documentation on the HubRise website for details.
+## Product
 
-Your LivePepper menu can either be created directly in LivePepper, or imported from a HubRise catalog.
+The full product catalog can be pulled from HubRise into LivePepper. For more information, see [Pulling the Menu](/apps/livepepper/menu#pulling-the-menu). 
+If you cannot import the catalog from HubRise, you will need to map product EPOS ref codes manually in LivePepper. The first step is to export a list of EPOS ref codes from your EPOS system. This may be exported as a CSV or Excel file. Whatever format they are exported to, the next step will be to copy those codes into LivePepper.
 
 ---
 
@@ -21,38 +22,7 @@ Your LivePepper menu can either be created directly in LivePepper, or imported f
 
 ---
 
-## Catalog Import
-
-If you have already exported your products from your EPOS or other connected app to HubRise, the entire catalog can be imported from HubRise. This will include:
-
-- Products with variants, options, prices, within their respective product categories.
-- Deals.
-
----
-
-**IMPORTANT NOTE:** Importing a catalog from HubRise will replace the products in your LivePepper Menu. You can edit the menu in LivePepper after the import. Catalogs cannot be edited in HubRise.
-
----
-
-To import from a HubRise Catalog into LivePepper:
-
-1. LivePepper must be connected to a HubRise Account and Location. For instructions on this process, see [Connect HubRise](/apps/livepepper/#connect-hubrise/).
-1. From LivePepper, click **Menu** > **Import** / **Export**.
-1. Scroll down to HubRise connection and click **Import**.
-1. Authenticate your credentials and click **Import from HubRise**.
-1. The import process will remove your current products and replace them with the ones from your HubRise catalog.
-
-In this example, one of the sizes for the Coke offerings was removed from LivePepper, and then restored when imported from the connected HubRise catalog along with its EPOS ref code.
-
-<video controls title="Import HubRise Catalog">
-  <source src="../images/009-import-hubrise-catalog.webm" type="video/webm"/>
-</video>
-
-## Product
-
-If you cannot import the catalog from HubRise, you will need to map product EPOS ref codes manually in LivePepper. The first step is to export a list of EPOS ref codes from your EPOS system. This may be exported as a CSV or Excel file. Whatever format they are exported to, the next step will be to copy those codes into LivePepper.
-
-LivePepper support does support inserting those EPOS ref codes for you, if contracted to do so. See your LivePepper support representative for more information.
+LivePepper could insert those EPOS ref codes for you, if contracted to do so. See your LivePepper support representative for more information.
 
 ### Add EPOS Ref Codes to Products
 
@@ -98,7 +68,7 @@ To update the EPOS code for each product ingredient:
    2. Click **Use POS codes above**. If the toppings share the same cost and availability, those options can be checked as well.
 1. When finished, click **Save**.
 
-At the end of the process you can check if all product values and attributes have been mapped. For more information, see [Verify Product Mapping](/apps/livepepper/troubleshooting/#verify-product-mapping/)
+At the end of the process you can check if all product values and attributes have been mapped. For more information, see [Verify Product Mapping](/apps/livepepper/troubleshooting/#verify-product-mapping/).
 
 <video controls title="Update Ingredients EPOS Code">
   <source src="../images/018-ingredients-pos-code-update.webm" type="video/webm"/>
@@ -161,19 +131,4 @@ To add an EPOS Code to a Delivery charge:
 
 <video controls title="Add EPOS to Delivery Method">
   <source src="../images/025-delivery-method-add-pos.webm" type="video/webm"/>
-</video>
-
-## Catalog Export
-
-If needed, your LivePepper menu can be exported to your HubRise account catalog to be shared with other connected Apps.
-
-To export your LivePepper products to a HubRise catalog:
-
-1. LivePepper must be connected to a HubRise Account and Location. For instructions on this process, see [Connect HubRise](/apps/livepepper/#connect-hubrise/).
-2. From LivePepper, click **Menu** > **Import** / **Export**.
-3. The HubRise connection will be listed. Click **Export**.
-4. The HubRise catalog will be updated.
-
-<video controls title="Export to HubRise Catalog">
-  <source src="../images/006-export-to-hubrise-catalog.webm" type="video/webm"/>
 </video>

@@ -18,11 +18,11 @@ To find the ref codes for specific items, follow these steps.
 - The ref codes appear under the **Code** column.
   ![](../images/007-en-integration-sku-codes.png)
 
-You can then copy the codes in the connected app. For detailed instructions, follow the steps in the connected app's documentation in the HubRise website. 
+You can then copy the codes in the connected app. For detailed instructions, follow the steps in the connected app's documentation in the HubRise website.
 
 ## Exporting iKentoo Menus
 
-In some cases, it is useful to download the menu from your iKentoo account to manage the items and the ref codes with a separate software. 
+In some cases, it is useful to download the menu from your iKentoo account to manage the items and the ref codes with a separate software.
 
 To export the iKentoo menu, follow these steps.
 

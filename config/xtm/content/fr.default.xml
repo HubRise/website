@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<srx version="2.0" xmlns="http://www.lisa.org/srx20"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.lisa.org/srx20 srx20.xsd">
+    <header cascade="no" segmentsubflows="no">
+        <formathandle include="no" type="start"/>
+        <formathandle include="yes" type="end"/>
+        <formathandle include="yes" type="isolated"/>
+    </header>
+    <body>
+        <languagerules>
+            <languagerule languagerulename="French">
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po})\p{Nd}\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po})\p{Lu}\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Aa]dd\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Aa]dm\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))aff\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Aa]gr\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Aa]l\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))alc\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Aa]pprox\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Aa]pr\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Aa]rr\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))art\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Aa]ssoc\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))att\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Aa]v\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Aa]vr\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Bb]is\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Bb]r\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Bb]ull\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Cc]\.-à-d\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Cc]f\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))cfr\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))Ch\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Cc]hap\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Cc]ie\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Cc]irc\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))cit\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Cc]oeff\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Cc]oll\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Cc]om\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))Comm\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Cc]omp\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Cc]onc\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Dd]ep\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Dd]iam\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Dd]ir\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Dd]iv\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))doc\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))docs\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Dd]r\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Dd]éc\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Dd]écr\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Dd]ép\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Ee]d\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Ee]lectr\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Ee]nv\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))est\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Ee]x\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Ee]xc\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Ee]xp\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Ee]xt\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Ff]ig\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))Fr\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))H\.T\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))incl\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))Ind\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Ii]ng\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Ii]nst\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Ii]nt\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))it\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Jj]\.O\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Jj]an\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Jj]uil\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Ll]ic\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))M\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Mm]aj\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Mm]ax\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Mm]lle\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Mm]lles\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))MM\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Mm]me\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Mm]mes\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))ms\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Nn]eg\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Nn]o\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Nn]os\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Nn]ov\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Nn]°\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Nn]°s\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Oo]\.J\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))Obj\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Oo]ct\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))Off\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Oo]rig\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Pp]-ê\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Pp]ar\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Pp]ara\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Pp]athol\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Pp]hys\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Pp]hysiol\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Pp]os\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Pp]p\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Pp]rep\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Pp]rof\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Pp]réc\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))pt\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))pts\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Pp]ubl\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Qq]qch\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Qq]qf\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Qq]qn\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Qq]ual\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Rr]ap\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Rr]ec\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Rr]ecomm\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Rr]ef\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))reg\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Rr]es\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Rr]esp\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))ress\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Rr]ev\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Rr]f\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Rr]ègl\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))Rép\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))rév\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))S\.A\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))S\.A\.S\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))sem\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Ss]ept\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))sid\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))S\.N\.C\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Ss]oc\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))spp\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))stbld\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))sub\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Ss]uppl\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Tt]el\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Tt]emp\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Tt]er\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Tt]él\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Uu]niv\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+                    <beforebreak>(^|\p{Zs}|\p{Ps}|\p{Po}|(&lt;[^&gt;]*&gt;))[Vv]ar\.</beforebreak>
+                    <afterbreak>\p{Zs}</afterbreak>
+                </rule>
+                <rule break="no">
+					<beforebreak>[.?!;]</beforebreak>
+					<afterbreak>[.!?;]</afterbreak>
+				</rule>
+				
+                <rule break="yes">
+                    <beforebreak>[.?!][\u00BB\u2019\u201D\u203A\u2E03\u2E05\u2E0A\u2E0D\u2E1D"]*([\s&#xA0;]*((&lt;/[^&gt;]*&gt;)|(&lt;\?xtm end[^&gt;]*\?&gt;)|(&lt;xtmhtml:inline text="&amp;lt;/.*?&amp;gt;"/&gt;))+)*</beforebreak>
+                    <afterbreak>(([\s ]*+(&lt;[^&gt;]*&gt;[\s ]*+)++)|[\s ])[\s ]*+[\p{Ps}\u00AB\u2018\u201B\u201C\u201F\u2039\u2E02\u2E04\u2E09\u2E0C\u2E1C"-]*[\s ]*+\p{Lu}</afterbreak>
+                </rule>
+                <rule break="yes">
+                    <beforebreak>[.?!;]([\s&#xA0;]*((&lt;/[^&gt;]*&gt;)|(&lt;\?xtm end[^&gt;]*\?&gt;)|(&lt;xtmhtml:inline text="&amp;lt;/.*?&amp;gt;"/&gt;))+)*</beforebreak>
+                    <afterbreak>[\s ]*+(&lt;[^&gt;]*&gt;[\s ]*+)*+[\s ]*+$</afterbreak>
+                </rule>
+                
+                <!-- segment on bullet 2022 -->
+                <rule break="yes">
+                    <beforebreak>[^\u2022]</beforebreak>
+                    <afterbreak>\u2022</afterbreak>
+                </rule>
+                <!-- segment on bullet 2022 -->
+                <rule break="yes">
+                    <beforebreak>\u2022</beforebreak>
+                    <afterbreak/>
+                </rule>
+                <!--<rule break="yes">
+					<beforebreak>[;]</beforebreak>
+					<afterbreak>(((\s|&#xA0;)*(&lt;[^&gt;]*&gt;(\s|&#xA0;)*)+)|(\s|&#xA0;))(\s|&#xA0;)*\p{Ps}*\p{L}</afterbreak>
+				</rule>-->
+            </languagerule>
+        </languagerules>
+        <maprules>
+            <languagemap languagepattern="fr*" languagerulename="French"/>
+        </maprules>
+    </body>
+</srx>

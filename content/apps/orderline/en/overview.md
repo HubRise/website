@@ -6,7 +6,7 @@ meta:
   title: Overview | OrderLine | HubRise
   description: OrderLine overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 gallery:
-  - 001-en-2x-desktop-view.png
+  - __gallery-001.png
 path_override: /
 app_info:
   category: Order Management

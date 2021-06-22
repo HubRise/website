@@ -28,7 +28,8 @@
     @include hr-link-hover($hr-green);
   }
 
-  &__nav-link_active {
+  &__nav-link_active,
+  &__nav-item_active {
     color: $hr-green;
   }
 

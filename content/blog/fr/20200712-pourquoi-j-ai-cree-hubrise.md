@@ -1,14 +1,12 @@
 ---
-layout: blog-post
-meta:
-  title: Pourquoi j'ai créé HubRise?
-  description:
-
 title: Pourquoi j'ai créé HubRise?
 date: 2020-07-12
 excerpt: |
   En 2015, j'étais responsable technique d'une solution de commande en ligne pour la restauration. En quelques années, nous avions du nous intégrer à une douzaine de logiciels de caisse, et nos clients nous en demandaient davantage. Ces intégrations étaient devenues l'un des freins à notre développement : chronophages, difficiles à maintenir, et peu réutilisables en raison de la fragmentation du marché. Et ce problème affectait tous les éditeurs du marché.
 author: Antoine Monnier
+meta:
+  title: Pourquoi j'ai créé HubRise?
+  description:
 ---
 
 En 2015, j'étais responsable technique d'une solution de commande en ligne pour la restauration. En quelques années, nous avions du nous intégrer à une douzaine de logiciels de caisse, et nos clients nous en demandaient davantage. Ces intégrations étaient devenues l'un des freins à notre développement : chronophages, difficiles à maintenir, et peu réutilisables en raison de la fragmentation du marché. Et ce problème affectait tous les éditeurs du marché.

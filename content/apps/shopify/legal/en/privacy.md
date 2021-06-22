@@ -3,7 +3,7 @@ title: Privacy Policy
 position: 1
 layout: documentation
 meta:
-  title: Privacy Policy - Shopify Bridge 
+  title: Privacy Policy - Shopify Bridge
   description: This Privacy Policy was written to help you better understand how we collect, use, and store your information.
 ---
 
@@ -14,10 +14,12 @@ when you install or use the App in connection with your Shopify-supported store.
 ### Personal Information the App Collects
 
 When you install the App, we are automatically able to access certain types of information from your Shopify account:
+
 - Your orders
 - Your catalog of products
 
 Additionally, we collect the following types of personal information from your customers once you have installed the App:
+
 - Name
 - Delivery address
 - Email address
@@ -39,7 +41,7 @@ warrant or other lawful request for information we receive, or to otherwise prot
 ### Your Rights
 
 If you are a European resident, you have the right to access personal information we hold about you and to ask that your
-personal information be corrected, updated, or deleted. If you would like to exercise this right, please contact us 
+personal information be corrected, updated, or deleted. If you would like to exercise this right, please contact us
 through the contact information below.
 
 Additionally, if you are a European resident we note that we are processing your information in order to fulfill contracts

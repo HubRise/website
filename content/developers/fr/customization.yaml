@@ -1,2 +1,3 @@
 name: Développeurs
 path_override: developers
+copy_files_from: en

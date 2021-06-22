@@ -6,8 +6,8 @@ meta:
   title: Overview | Deliveroo | HubRise
   description: Deliveroo overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 gallery:
-  - 006-en-deliveroo-screenshot.png
-  - 002-en-configuration-page.png
+  - __gallery-en-001.png
+  - __gallery-en-002.png
 path_override: /
 app_info:
   category: Food Ordering Platforms
@@ -21,30 +21,31 @@ app_info:
 Deliveroo is an online delivery platform for restaurants and convenience stores.
 It is based in the United Kingdom but operates in 13 different countries in Europe, Asia, and Oceania.
 
-Restaurants and convenience stores can benefit from Deliveroo's large pool of customers to grow their business and find new clients.
-At the same time, they can concentrate on what they do best (preparing food, selling groceries) while Deliveroo takes care of the online ordering solution and associated marketing, as well as the delivery logistics.
+Deliveroo connects to your HubRise account through Deliveroo Bridge, an app developed by HubRise.
 
 ## Integration Features
 
-Deliveroo connects to your HubRise account through Deliveroo Bridge, an app developed by HubRise.
-
 Connecting Deliveroo Bridge allows Deliveroo to:
 
-- Push orders to HubRise.
+- Push orders to HubRise, including order status.
 - Push delivery information to HubRise, for orders delivered by your team.
 
 ![Diagram of the connection flow between Deliveroo, Deliveroo Bridge, and HubRise](../images/000-en-2x-connection-diagram.png)
 
 ---
 
-**IMPORTANT NOTE:** Product catalog and product availability cannot currently be synchronised, but HubRise is planning to release this feature in 2021.
+**IMPORTANT NOTE:** Pulling catalog and inventory from HubRise will soon be supported. Contact us for more information.
 
 ---
 
+Deliveroo Bridge can be connected to HubRise from the HubRise back office.
+
 ## Why Connect?
 
-Connecting your Deliveroo online restaurant or convenience store to HubRise allows you to receive Deliveroo orders directly in your EPOS or Kitchen Display Screen also connected with HubRise.
+Connecting your Deliveroo online restaurant or convenience store to HubRise allows you to receive Deliveroo orders directly in your EPOS or Kitchen Display System also connected with HubRise.
 You will be able to manage Deliveroo orders alongside other orders, using your own tools. Deliveroo orders will flow through your existing setup, as all other orders already do.
+
+Via HubRise, synchronise your menu, your customer and order information with online ordering, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management, delivery services, eMarketing (SMS/emailing), business intelligence, stock management, loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our [Apps page](/apps).
 
 ## Prerequisites
 

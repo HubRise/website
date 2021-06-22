@@ -1,6 +1,6 @@
 ---
 title: Guide de la marque
-layout: simple
+layout: documentation-simple
 meta:
   title: Guide de la marque, logos et textes à utiliser | HubRise
   description: Téléchargez le logo de HubRise. Trouvez des descriptions à réutiliser et à adapter, pour expliquer à vos clients ce que leur apporte votre intégration avec HubRise.

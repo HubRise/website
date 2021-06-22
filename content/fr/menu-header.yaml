@@ -1,0 +1,13 @@
+- title: Accueil
+  to: /fr
+  mobile_only: true
+- title: Apps
+  to: /fr/apps
+- title: Tarifs
+  to: /fr/tarifs
+- title: Développeurs
+  to: /fr/developers
+- title: Aide
+  to: /fr/docs
+- title: F.A.Q.
+  to: /fr/faq

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--********************************************
+ *
+ * Copyright (c) 2003-2018 XML-INTL Ltd.
+ *
+ * All Rights Reserved
+ *
+ *******************************************-->
+<its:rules its:version="1.0" xmlns:its="http://www.w3.org/2005/11/its">
+    <its:translateRule selector="//fenced-code-block/descendant-or-self::*" translate="no"/>
+    <its:translateRule selector="//indented-code-block/descendant-or-self::*" translate="no"/>
+
+    <its:translateRule selector="//link-label-reference[not(@first)]/descendant-or-self::*" translate="no"/>
+    <its:withinTextRule selector="//link-label-reference" withinText="yes"/>
+    <its:translateRule selector="//link-label-definition/descendant-or-self::*" translate="no"/>
+    <its:withinTextRule selector="//link-label-definition" withinText="yes"/>
+    <its:translateRule selector="//url" translate="no"/>
+    <its:withinTextRule selector="//url" withinText="yes"/>
+    <its:withinTextRule selector="//link-title" withinText="yes"/>
+    <its:withinTextRule selector="//link-text" withinText="yes"/>
+
+    <its:translateRule selector="//syntax/descendant-or-self::*" translate="no"/>
+
+    <its:translateRule selector="//html-block/descendant-or-self::*" translate="no"/>
+
+    <its:withinTextRule selector="//code-span" withinText="nested"/>
+    <its:translateRule selector="//code-span" translate="no"/>
+
+    <its:withinTextRule selector="//emphasis" withinText="yes"/>
+    <its:withinTextRule selector="//text" withinText="yes"/>
+
+    <its:withinTextRule selector="//new-line" withinText="nested"/>
+    <its:translateRule selector="//ws" translate="no"/>
+
+    <its:withinTextRule selector="//ws" withinText="nested"/>
+    <its:translateRule selector="//ws" translate="no"/>
+</its:rules>

@@ -1,6 +1,6 @@
 ---
 title: Connexion à HubRise
-position: 2 
+position: 2
 layout: documentation
 meta:
   title: Connexion | Uber Eats | HubRise

@@ -1,5 +1,5 @@
 html {
-  scroll-padding-top:  $hr-header-height;
+  scroll-padding-top: $hr-header-height;
 }
 
 body {
@@ -20,11 +20,6 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-// TODO: remove when foundation is removed
-a:focus {
-  color: inherit;
 }
 
 h1,

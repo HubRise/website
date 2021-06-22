@@ -10,7 +10,8 @@
     grid-gap: 0 1rem;
   }
 
-  &__first, &__second {
+  &__first,
+  &__second {
     text-align: center;
 
     @media (min-width: $br-large) {
@@ -34,7 +35,8 @@
       left: 100%;
     }
 
-    &__first:before, &__second:after {
+    &__first:before,
+    &__second:after {
       position: absolute;
       top: 0;
       height: 100%;
@@ -44,7 +46,8 @@
     }
   }
 
-  &__first, &__second {
+  &__first,
+  &__second {
     position: relative;
     padding: 2rem 1rem;
     background-color: $white;

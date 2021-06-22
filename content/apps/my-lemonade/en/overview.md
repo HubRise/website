@@ -6,9 +6,9 @@ meta:
   title: Overview | My Lemonade | HubRise
   description: My Lemonade overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 gallery:
-  - 002-fr-my-lemonade-sample-app.png
-  - 003-fr-my-lemonade-sample-back-office-product.png
-  - 004-fr-my-lemonade-sample-back-office-deal.png
+  - __gallery-001.png
+  - __gallery-002.png
+  - __gallery-003.png
 path_override: /
 app_info:
   category: Online ordering
@@ -24,7 +24,7 @@ My Lemonade is a table ordering solution. Customers flash the QR code or use the
 
 My Lemonade also offers a web back office to update the menu of your restaurant, set promotional periods, edit your settings, and use features like room management, service activation, and presence validation to limit the risk of no-shows and abusive orders.
 
-A Kitchen Display Screen is available to restaurants without EPOS integration to receive orders and update product availabilities.
+A Kitchen Display System is available to restaurants without EPOS integration to receive orders and update product availabilities.
 
 ## Integration Features
 
@@ -38,7 +38,7 @@ Connecting My Lemonade to HubRise allows My Lemonade to:
 
 ## Why Connect?
 
-My Lemonade can be connected to HubRise for your website and other apps you use every day to work as a cohesive whole. It could be your EPOS, your Kitchen Display Screen or your preferred marketing solution. Connecting with HubRise allows you to sync your product catalog, your customer and order information. For more information on HubRise, see the [HubRise User Guide](/docs).
+My Lemonade can be connected to HubRise for your website and other apps you use every day to work as a cohesive whole. It could be your EPOS, your Kitchen Display System or your preferred marketing solution. Connecting with HubRise allows you to sync your product catalog, your customer and order information. For more information on HubRise, see the [HubRise User Guide](/docs).
 
 ## Prerequisites
 

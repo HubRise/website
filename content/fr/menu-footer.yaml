@@ -1,0 +1,27 @@
+sections:
+  - title: Intégrations
+    links:
+      - title: Apps
+        to: /fr/apps
+      - title: Contribuer à la documentation
+        to: /fr/contributing
+  - title: Développeurs
+    links:
+      - title: Démarrage Rapide
+        to: /fr/developers/quick-start
+      - title: Guide d'Intégration
+        to: /fr/developers/integration-guide
+      - title: Référence de l'API
+        to: /fr/developers/api/general-concepts
+  - title: Ressources
+    links:
+      - title: Guide utilisateur
+        to: /fr/docs
+      - title: Conditions Générales
+        to: /fr/legal/conditions-generales
+      - title: Mentions Légales
+        to: /fr/legal/mentions-legales
+  - title: Société
+    links:
+      - title: Guide de la marque
+        to: /fr/branding

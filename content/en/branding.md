@@ -1,6 +1,6 @@
 ---
 title: Branding Guidelines
-layout: simple
+layout: documentation-simple
 meta:
   title: Branding Guidelines, Logos and Text to use | HubRise
   description:

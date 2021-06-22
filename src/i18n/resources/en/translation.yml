@@ -2,6 +2,14 @@ apps:
   view_documentation: View documentation
   visit_website: Open editor website
 
+blog:
+  title: Blog
+
+documentation:
+  language_warning:
+    en: This documentation is available in English only.
+    fr: This documentation is available in French only.
+
 layout:
   header:
     buttons:

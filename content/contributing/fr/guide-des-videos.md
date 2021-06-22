@@ -7,7 +7,7 @@ meta:
   description:
 ---
 
-[comment]: # (This page is a duplicate from .../contributing/en)
+[comment]: # 'This page is a duplicate from .../contributing/en'
 
 ## General Recommendations
 

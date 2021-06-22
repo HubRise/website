@@ -7,7 +7,7 @@ meta:
   description: How to contribute diagrams to the HubRise website.
 ---
 
-[comment]: # (This page has been duplicated in .../contributing/fr)
+[comment]: # 'This page has been duplicated in .../contributing/fr'
 
 ## Primary Examples
 

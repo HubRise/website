@@ -6,8 +6,8 @@ meta:
   title: Overview | foodpanda | HubRise
   description: foodpanda overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 gallery:
-  - 006-en-foodpanda-pk-screenshot.png
-  - 002-en-configuration-page.png
+  - __gallery-001.png
+  - __gallery-002.png
 path_override: /
 app_info:
   category: Online ordering and food delivery
@@ -21,16 +21,13 @@ app_info:
 foodpanda is an online ordering and food delivery platform part of the Delivery Hero network.
 It is present in several countries in Asia, and in Bulgaria and Romania in Europe.
 
-Restaurants can benefit from foodpanda's large pool of customers to grow their business and find new clients.
-At the same time, they can concentrate on what they do best (preparing food) while letting foodpanda take care of the logistics of food delivery.
+foodpanda connects to your HubRise account through foodpanda Bridge, an app developed by HubRise.
 
 ## Integration Features
 
-foodpanda connects to your HubRise account through foodpanda Bridge, an app developed by HubRise.
-
 Connecting foodpanda Bridge allows foodpanda to:
 
-- Push orders to HubRise. 
+- Push orders to HubRise, including orders status.
 - Push delivery information to HubRise, for orders delivered by your team.
 
 ![Diagram of the connection flow between foodpanda, foodpanda Bridge, and HubRise](../images/001-en-2x-connection-diagram.png)
@@ -41,10 +38,14 @@ Connecting foodpanda Bridge allows foodpanda to:
 
 ---
 
+foodpanda Bridge can be connected to HubRise from the HubRise back office.
+
 ## Why Connect?
 
-Connecting your foodpanda online restaurant or convenience store to HubRise allows you to receive foodpanda orders directly in your EPOS or Kitchen Display Screen also connected with HubRise.
+Connecting your foodpanda online restaurant or convenience store to HubRise allows you to receive foodpanda orders directly in your EPOS or Kitchen Display System also connected with HubRise.
 You will be able to manage foodpanda orders alongside other orders, using your own tools. foodpanda orders will flow through your existing setup, as all other orders already do.
+
+Via HubRise, synchronise your menu, your customer and order information with online ordering, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management, delivery services, eMarketing (SMS/emailing), business intelligence, stock management, loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our [Apps page](/apps).
 
 ## Prerequisites
 

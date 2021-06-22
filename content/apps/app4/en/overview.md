@@ -4,13 +4,14 @@ position: 1
 layout: documentation
 meta:
   title: Overview | App4 | HubRise
-  description: App4 overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
+  description: App4 overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your online ordering solution and your apps.
 gallery:
-  - 005-en-fireaway-pizza-app.png
-  - 002-en-atpizza-app.png
+  - __gallery-001.png
+  - __gallery-002.png
 path_override: /
 app_info:
-  category: Online ordering for restaurants
+  category: Online ordering
+  availability: United Kingdom
   price_range: From £40 per week
   website: https://www.app4.co.uk
   contact: info@goapp4.com / +44 1332 742511
@@ -20,20 +21,24 @@ app_info:
 
 App4 is an online ordering system that lets restaurant customers place orders from their browser, from an app, or from their table. It provides a host of benefits to restaurants such as loyalty programs and table booking.
 
-From its back office, restaurants can manage multiple aspects of their business, including the restaurant's menu and delivery options as well as its marketing strategy and ensure it is paying off thanks to reports.
-
-## Prerequisites
-
-To establish a connection between App4 and HubRise, you must have an existing App4 site. If you don't have an App4 site yet, go to the [App4 Contact Us page](https://www.app4.co.uk/#callback) and arrange for one.
+From the back office, restaurants can manage multiple aspects of their business: editing the restaurant's menu and delivery options, launch marketing operations and ensure they are paying off thanks to reports.
 
 ## Integration Features
 
-The connection between App4 and HubRise supports the following:
+Connecting App4 to HubRise allows the online ordering solution to:
 
-- Import a menu from HubRise.
-- Export orders to HubRise.
-- Export customer information to HubRise.
+- Push orders into HubRise, including order status.
+- Push customer information into HubRise.
+- Pull the menu from a HubRise catalog.
+
+App4 can be connected to HubRise via the App4 support line.
 
 ## Why Connect?
 
-Connecting App4 to HubRise provides access to an ever expanding ecosystem of apps. Via HubRise, you will be sharing customers between different apps, export or import your menu between platforms, and track your orders through one interface. For more information, see the [HubRise User Guide](/docs).
+Connecting App4 to HubRise allows your online ordering solution to communicate with other applications you use every day.
+
+Via HubRise, synchronise your menu, your customer and order information with EPOS solutions, delivery management, delivery services, eMarketing (SMS/emailing), business intelligence, stock management, loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our [Apps page](/apps)
+
+## Prerequisites
+
+To establish a connection between App4 and HubRise, you must have an existing App4 site.

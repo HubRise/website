@@ -15,7 +15,7 @@ To create an account for another business:
 1. Access the [HubRise registration page](https://manager.hubrise.com/signup).
 1. Enter the business the user details and click on **Create account**.
 1. Enter the account details for the business and click **Create**.
-1. Navigate to **SETTINGS** > **Permissions** section. 
+1. Navigate to **SETTINGS** > **Permissions** section.
 1. To keep access to the account you just created, include your HubRise user profile **email**, change the role to **Manager** and click the plus icon <InlineImage width="13" height="13">![Plus icon](../../images/059-add-icon.png)</InlineImage>.
 1. To prompt the user to enter their own secure password, go to the [password reset page](https://manager.hubrise.com/reset_password/new).
 1. Enter the email address for the new user and click **Reset Password**. The user will receive an email with instructions on entering their own password.

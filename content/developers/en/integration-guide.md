@@ -96,7 +96,7 @@ If storing the HubRise IDs is not an option, you can use the HubRise `private_re
 
 ### Encoding Orders
 
-When you push orders to HubRise, encode names and ref codes for all the fields included in the payload. For a complete list, see our [API reference](https://www.hubrise.com/developers/api/order-management/), and the **Orders** tab in the [Integration Sheet](https://docs.google.com/spreadsheets/d/1df-QRlD9h8M58bpFoFaCEzU5pbmYSeHXOLqIVip9-5s/edit#gid=615578553).
+When you push orders to HubRise, encode names and ref codes for all the fields included in the payload. For a complete list, see our [API reference](/developers/api/order-management/), and the **Orders** tab in the [Integration Sheet](https://docs.google.com/spreadsheets/d/1df-QRlD9h8M58bpFoFaCEzU5pbmYSeHXOLqIVip9-5s/edit#gid=615578553).
 
 Pay attention to a few common traps:
 
@@ -130,7 +130,7 @@ It generally involves the following steps, which are described in further detail
 
 We recommend that you follow our general best practices and connect to HubRise at the location level.
 
-You should also register an active callback to listen to order update events. This will allow your application to inform a user whenever the status of an order is changed on HubRise, for example when it is accepted or cancelled by the EPOS. For more details about callbacks, see our [Developers documentation](https://www.hubrise.com/developers/api/callbacks/#callbacks).
+You should also register an active callback to listen to order update events. This will allow your application to inform a user whenever the status of an order is changed on HubRise, for example when it is accepted or cancelled by the EPOS. For more details about callbacks, see our [Developers documentation](/developers/api/callbacks/#callbacks).
 
 **Main suggestions**
 
@@ -144,7 +144,7 @@ You should also register an active callback to listen to order update events. Th
 If users can create an account on your solution, you should push their details to HubRise as soon as they register.
 More generally, every time users update their details, you should update them on HubRise, as well.
 
-You should also anonymise customers immediately if they request so, or if they have been inactive for a certain period of time (for example, 3 years). This is a legal requirement in many markets, including for example the EU countries under GDPR regulations. For more details, see [Anonymise customer](https://www.hubrise.com/developers/api/customer-management/#anonymise-customer).
+You should also anonymise customers immediately if they request so, or if they have been inactive for a certain period of time (for example, 3 years). This is a legal requirement in many markets, including for example the EU countries under GDPR regulations. For more details, see [Anonymise customer](/developers/api/customer-management/#anonymise-customer).
 
 **Main suggestions**
 

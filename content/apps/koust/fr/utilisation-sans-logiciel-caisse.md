@@ -32,5 +32,5 @@ Pour importer un fichier CSV dans Koust, suivez les étapes suivantes :
    ![Utilisation sans logiciel de caisse - Données importées](../images/016-fr-koust-import-reussi.png)
 1. Cliquez sur **Terminer**.
    ![Utilisation sans logiciel de caisse - Liste des articles](../images/017-fr-koust-articles-apres-import.png)
-   
+
 Contrairement aux articles importés depuis le catalogue HubRise, les codes ref des articles importés en CSV ne peuvent pas être modifiés. Si vous devez modifier le code ref d'un article, supprimez cet article puis importez à nouveau.

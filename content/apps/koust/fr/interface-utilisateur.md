@@ -12,15 +12,15 @@ Le tableau de bord Koust permet de consulter les commandes, et les articles prov
 ## Commandes
 
 Pour accéder à l'historique de vos commandes passées depuis d'autres applications, consultez la page **Détail Ventes caisse**. Pour y accéder, dans le menu latéral, sélectionnez **Ventes - Conso.** > **Historique ventes**.
-   ![Interface utilisateur - Liste des commandes](../images/008-fr-koust-page-commandes.png)
+![Interface utilisateur - Liste des commandes](../images/008-fr-koust-page-commandes.png)
 
 Pour accéder au détail d'une commande, cliquez sur son nom ou son montant total.
-   ![Interface utilisateur - Détail d'une commande](../images/009-fr-koust-detail-commande.png)
-   
+![Interface utilisateur - Détail d'une commande](../images/009-fr-koust-detail-commande.png)
+
 ## Articles
 
 Après avoir importé un catalogue HubRise, vous pouvez retrouver les articles dans la page **Articles caisse**. Pour y accéder, dans le menu latéral, sélectionnez **Ventes - Conso.** > **Articles**.
-   ![Interface utilisateur - Liste des articles](../images/007-fr-koust-page-articles.png)
+![Interface utilisateur - Liste des articles](../images/007-fr-koust-page-articles.png)
 
 Lors de la réception d'une commande, Koust utilise les codes ref des articles pour rechercher les produits correspondants dans le catalogue importé depuis HubRise. Les articles non trouvés sont créés automatiquement et peuvent être consultés sur cette page.
 

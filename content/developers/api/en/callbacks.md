@@ -45,7 +45,7 @@ Active callbacks receive a `POST` HTTP request each time an event occurs. The re
 
 The callback must return a `200` HTTP code to acknowledge the reception of the event. This return code makes HubRise delete the event. If the callback fails to acknowledge the event, HubRise attempts to resend it later. In the meantime, unacknowledged events remain accessible through `GET /callback/events`.
 
-If you use an active callback, we recommend that you check the authenticity of each event. The verification relies on computing the hexadecimal HMAC digest of the event request body. Here is a sample script in Ruby that you can use as a reference: 
+If you use an active callback, we recommend that you check the authenticity of each event. The verification relies on computing the hexadecimal HMAC digest of the event request body. Here is a sample script in Ruby that you can use as a reference:
 
 ```ruby
 require "openssl"

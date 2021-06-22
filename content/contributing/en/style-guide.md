@@ -35,7 +35,7 @@ Be conversational rather than formal but do not overdo it. Be friendly, and resp
 
 Don't use gender-specific pronouns unless the person you're referring to is actually that gender.
 
-In particular, don't use **he*, **him**, **his**, **she**, or **her** as gender-neutral pronouns, and don't use **he/she** or **(s)he** or other such punctuational approaches.
+In particular, don't use **he**, **him**, **his**, **she**, or **her** as gender-neutral pronouns, and don't use **he/she** or **(s)he** or other such punctuational approaches.
 
 ## Capitalisation
 
@@ -297,7 +297,7 @@ For example:
 
 ### Optional steps
 
-When a step is optional, add *Optional:* as the first word of the step.
+When a step is optional, add _Optional:_ as the first word of the step.
 
 > Incorrect: (Optional) Click **Log in**.
 
@@ -343,13 +343,13 @@ A meta title and meta description should be added to every file.
 
 ### Meta Title
 
-Meta titles are composed by concatenating the page title, the section name, and the word "HubRise", separated by `|`. 
+Meta titles are composed by concatenating the page title, the section name, and the word "HubRise", separated by `|`.
 
 If the resulting title contains more than 60 characters, try shrinking the first part, by summarizing the page title.
 
 Meta titles should be capitalised following HubRise's title rules written in _Title Case_ with no full stop at the end. For more information on capitalisation rules, see [Capitalisation](#capitalisation).
 
-> Right: Overview | Lightspeed K Series | HubRise 
+> Right: Overview | Lightspeed K Series | HubRise
 
 ### Meta Description
 

@@ -53,7 +53,7 @@ Ne pas mettre de majuscule aux titres. Accentuer les majuscules.
 
 Écrivez une courte liste sous forme de phrase. Si la liste a plus de trois éléments ou qu'elle contient des instructions longues, écrivez-la sous forme de liste à puces.
 
-Dans une liste à puces, chaque élément de la liste commence par une majuscule et se termine par un point, et non par un point-virgule. S'il s'agit d'un mot isolé, ne mettez aucune ponctuation à la fin de l'élément de la liste. 
+Dans une liste à puces, chaque élément de la liste commence par une majuscule et se termine par un point, et non par un point-virgule. S'il s'agit d'un mot isolé, ne mettez aucune ponctuation à la fin de l'élément de la liste.
 
 Par exemple, écrivez ainsi une courte liste : _Une commande prend successivement les statuts **Reçue**, **En attente**, et **Validée**._
 
@@ -174,7 +174,7 @@ Lorsque vous décrivez une action à réaliser, indiquez d'abord l'endroit où l
 
 ### Actions optionnelles
 
-Si une action à réaliser est optionnelle, ajoutez *Optionnel :* avant la description de cette action.
+Si une action à réaliser est optionnelle, ajoutez _Optionnel :_ avant la description de cette action.
 
 > Incorrect : (Optionnel) Cliquez sur **Se connecter**.
 
@@ -190,7 +190,7 @@ Pour les pages de la documentation, le méta-titre est composé du titre de la p
 
 Si le méta-titre ainsi obtenu comporte plus de 60 caractères, essayez d'en raccourcir la première partie, en résumant le titre de la page.
 
-Les méta-titres suivent les même règles de capitalisation et de ponctuation que les autres titres. 
+Les méta-titres suivent les même règles de capitalisation et de ponctuation que les autres titres.
 
 > Correct: Présentation générale | Lightspeed K Series | HubRise
 

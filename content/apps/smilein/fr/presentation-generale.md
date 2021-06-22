@@ -6,10 +6,10 @@ meta:
   title: Présentation générale | smilein | HubRise
   description: Présentation de la solution de commande et de paiement en ligne smilein, et description des fonctionnalités de son intégration avec HubRise.
 gallery:
-  - 001-fr-smilein-app-accueil.jpeg
-  - 002-fr-smilein-app-menu.jpeg
-  - 003-fr-smilein-app-choix-produit.jpeg
-  - 004-fr-smilein-app-commande.jpeg
+  - __gallery-fr-001.jpeg
+  - __gallery-fr-002.jpeg
+  - __gallery-fr-003.jpeg
+  - __gallery-fr-004.jpeg
 path_override: /
 app_info:
   category: Commande en ligne
@@ -44,7 +44,6 @@ L'intégration de smilein avec HubRise permet de :
 **REMARQUE IMPORTANTE :** smilein pourra bientôt importer les catalogues HubRise. Pour plus d'informations, contactez l'éditeur.
 
 ---
-
 
 ## Pourquoi se connecter ?
 
