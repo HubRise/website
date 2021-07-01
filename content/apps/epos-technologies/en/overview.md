@@ -6,24 +6,20 @@ meta:
   title: Overview | EPOS Technologies | HubRise
   description: EPOS Technologies overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 gallery:
+  - __gallery-en-001.png
+  - __gallery-en-002.png
 path_override: /
 app_info:
   category: Point of Sales
-  availability: United Kingdom, France, Turkey, USA
+  availability: United Kingdom
   price_range:
   website: https://www.epostechnologies.co.uk
   contact: info@epostechnologies.co.uk
 ---
 
----
-
-**IMPORTANT NOTE:** A full documentation of this integration is in progress.
-
----
-
 ## Description
 
-EPOS Technologies is a software EPOS solution for hospitality and retail settings.
+EPOS Technologies is a software EPOS solution for hospitality and retail venues.
 
 ## Integration Features
 
