@@ -1,9 +1,9 @@
 ---
-title: Receiving Orders
+title: Sending Orders
 position: 8
 layout: documentation
 meta:
-  title: Just Eat Takeaway Connection to HubRise - Receiving Orders
+  title: Just Eat Takeaway Connection to HubRise - Sending Orders
   description: Find out the technical details of how orders are sent from Just Eat Takeaway to HubRise, which fields are passed and which are not.
 ---
 
