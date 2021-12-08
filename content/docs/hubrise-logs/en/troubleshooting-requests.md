@@ -3,7 +3,7 @@ title: Troubleshooting Requests
 position: 8
 layout: documentation
 meta:
-  title: Troubleshooting Requests - How to Read HubRise logs
+  title: Troubleshooting Requests | How to Read HubRise logs
   description: Error codes, order statuses and missing or wrong ref codes shown in HubRise logs help understand issues.
 ---
 

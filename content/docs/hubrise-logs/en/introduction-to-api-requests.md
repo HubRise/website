@@ -3,7 +3,7 @@ title: Introduction to API Requests
 position: 5
 layout: documentation
 meta:
-  title: Introduction to API Requests - How to Read HubRise logs
+  title: Introduction to API Requests | How to Read HubRise logs
   description: Short introduction to API request in non-technical terms to better understand HubRise requests.
 ---
 

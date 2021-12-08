@@ -3,7 +3,7 @@ title: JSON Requests in HubRise
 position: 6
 layout: documentation
 meta:
-  title: JSON Requests in HubRise - How to Read HubRise logs
+  title: JSON Requests in HubRise | How to Read HubRise logs
   description: Typical JSON logs and requests in HubRise.
 ---
 

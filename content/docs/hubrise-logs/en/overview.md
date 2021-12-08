@@ -3,8 +3,8 @@ position: 1
 title: Overview
 layout: documentation
 meta:
-  title: How to Read HubRise logs
-  description: Introduction on how to read and understand logs in HubRise.
+  title: Overview | How to Read HubRise logs
+  description: Brief introduction on how to read and understand logs or requests in HubRise.
 path_override: /
 ---
 

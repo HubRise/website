@@ -3,7 +3,7 @@ title: A Practical Example
 position: 3
 layout: documentation
 meta:
-  title: A Practical Example - How to Read HubRise logs
+  title: A Practical Example | How to Read HubRise logs
   description: Example of an order and its corresponding JSON request.
 ---
 
