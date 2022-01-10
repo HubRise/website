@@ -6,6 +6,8 @@ meta:
   title: Présentation générale | Kezia II | HubRise
   description: Présentation générale de Kezia II, les raisons de connecter votre caisse à HubRise et les fonctionnalités de l'intégration avec HubRise.
 gallery:
+  - __gallery-001.png
+  - __gallery-002.png
 path_override: /
 app_info:
   category: Logiciels de caisse
@@ -15,19 +17,13 @@ app_info:
   contact: licencekezia@jdc.fr
 ---
 
----
-
-**REMARQUE IMPORTANTE :** Une documentation complète de l'intégration est en cours de rédaction.
-
----
-
 ## Description
+
+Kezia II est un logiciel de caisse pour le commerce de détail spécialisé et les commerces d'alimentation et de restauration rapide ou de vente à emporter. Il est intégré à la caisse enregistreuse tactile fournie par JDC, éditrice du logiciel.
 
 JDC est une société créée en 1989 possédant des agences réparties dans toute la France et intervenant dans cinq secteurs d'activité, dont celui des caisses enregistreuses et des terminaux points de vente.
 
-Le logiciel de gestion de caisse Kezia II de JDC est une solution d'encaissement pour le commerce de détail spécialisé ainsi que les commerces d'alimentation et de restauration rapide ou de vente à emporter. Il est intégré à la caisse enregistreuse tactile fournie par JDC.
-
-Kezia II est un outil de gestion central avec développement de la fidélité, optimisation de la logistique, gestion des stocks et achats simplifié, statistiques avancées, synchronisation des données multipostes & multisites et management des équipes. Ces fonctionnalités peuvent être complémentés par la création de cartes de fidélité, de la vidéosurveillance intelligente, ou encore de la monétique intégrée.
+Kezia II est un outil de gestion centralisé permettant la gestion des stocks et des achats, la synchronisation des données multipostes & multisites, l'édition de statistiques avancées et la gestion des ressources humaines. La société JDC propose en complément des solutions de cartes de fidélité, de vidéosurveillance, ou encore de monétique intégrée.
 
 Kezia II est certifié NF525, et donc conforme à la loi française "anti-fraudes" du 1er janvier 2018.
 
@@ -42,11 +38,11 @@ Connecter Kezia II à HubRise permet à votre solution d'encaissement de :
 - Envoyer un catalogue à HubRise.
 - Envoyer l'inventaire à HubRise.
 
-Kezia II peut être connecté à HubRise après l'installation d'un module par le support de JDC. Kezia II se connecte ensuite depuis le back-office de Kezia II.
+Pour connecter Kezia II à HubRise, vous devez demander au support de JDC l'installation du module HubRise. Vous pouvez ensuite vous connecter à HubRise depuis Kezia II.
 
 ## Pourquoi se connecter ?
 
-En connectant Kezia II à HubRise, vous permettez à votre solution d'encaissement de communiquer avec les autres applications que vous utilisez de manière quotidienne. Recevez les commandes provenant de votre solution de commande en ligne, de commande à table, ou des plateformes de livraison de repas sur votre solution d'encaissement ou votre écran cuisine. Exportez votre menu vers d'autres applications.
+En connectant Kezia II à HubRise, vous permettez à votre solution d'encaissement de communiquer avec les autres applications que vous utilisez de manière quotidienne. Recevez les commandes provenant de votre solution de commande en ligne, de commande à table, ou des plateformes de livraison de repas sur votre solution d'encaissement. Exportez vos produits vers d'autres applications.
 
 Grâce à HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes avec votre solution d'encaissement, de commande en ligne, les plateformes de livraison de repas (dont Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs ou de services de livraison, les solutions eMarketing (SMS / eMailing), business intelligence, systèmes de gestion de stock et de fidélisation client, et bien d'autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, consultez notre [page Apps](/apps).
 

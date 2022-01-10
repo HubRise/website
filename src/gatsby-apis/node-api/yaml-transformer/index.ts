@@ -1,17 +1,14 @@
-import * as yaml from 'js-yaml'
-import { CreateNodeArgs, CreateResolversArgs } from 'gatsby'
+import * as yaml from "js-yaml"
+import { CreateNodeArgs, CreateResolversArgs } from "gatsby"
 
-export async function onCreateNode({
+export const onCreateNode = async ({
   node,
   actions,
   loadNodeContent,
   createNodeId,
-  createContentDigest
-}: CreateNodeArgs) {
-  if (
-    node.internal.type === 'File' &&
-    (node.base as string).endsWith(`.yaml`)
-  ) {
+  createContentDigest,
+}: CreateNodeArgs): Promise<void> => {
+  if (node.internal.type === "File" && (node.base as string).endsWith(`.yaml`)) {
     const content = await loadNodeContent(node)
     const id = createNodeId(`${node.id} >>> Yaml`)
 
@@ -22,8 +19,8 @@ export async function onCreateNode({
       internal: {
         content,
         contentDigest: createContentDigest(content),
-        type: 'Yaml'
-      }
+        type: "Yaml",
+      },
     }
 
     const { createNode, createParentChildLink } = actions
@@ -33,15 +30,13 @@ export async function onCreateNode({
   }
 }
 
-export async function createResolvers({
-  createResolvers
-}: CreateResolversArgs) {
+export const createResolvers = async ({ createResolvers }: CreateResolversArgs): Promise<void> => {
   createResolvers({
     Yaml: {
       parsedContent: {
         type: `JSON`,
-        resolve: (source) => yaml.load(source.internal.content)
-      }
-    }
+        resolve: (source) => yaml.load(source.internal.content),
+      },
+    },
   })
 }

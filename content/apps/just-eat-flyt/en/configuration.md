@@ -3,7 +3,7 @@ title: Configuration
 position: 4
 layout: documentation
 meta:
-  title: Just Eat Connection to HubRise - Configuration
+  title: Configuration | Just Eat Flyt | HubRise
   description: See instructions to configure Just Eat Flyt Bridge to work seamlessly with Just Eat and your EPOS or other apps connected to HubRise. Configuration is simple.
 ---
 
@@ -36,7 +36,6 @@ This section of the configuration page allows you to specify the ref codes for t
 
 From this section, you can customise the availability of your Just Eat menu. For more information, see [Updating the Menu](/apps/just-eat-flyt/pulling-menu#availability).
 
-
 ## Saving the Configuration
 
 Once you are happy with the configuration of Just Eat Bridge, click **Save** at the top of the page to go back to the Operations page.
@@ -49,7 +48,7 @@ To pull your HubRise catalog into Just Eat, from the **Actions** section at the 
 
 ---
 
-**IMPORTANT NOTE:** Pulling the HubRise catalog into Just Eat will erase your current menu on your Just Eat store. This action cannot be reverted. 
+**IMPORTANT NOTE:** Pulling the HubRise catalog into Just Eat will erase your current menu on your Just Eat store. This action cannot be reverted.
 
 ---
 

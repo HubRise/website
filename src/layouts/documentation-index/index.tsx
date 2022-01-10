@@ -1,19 +1,24 @@
-import * as React from 'react'
-import { graphql } from 'gatsby'
+import * as React from "react"
+import { graphql } from "gatsby"
 
-import { generateKey } from '@utils/misc'
-import SEO, { Meta } from '@components/Seo'
-import Hero, { IHero } from './components/Hero'
-import Thumb from './components/Thumb'
-import { DocumentationIndexContext } from './interface'
+import Hero, { IHero } from "./Hero"
+
+import SEO, { Meta } from "@layouts/shared/components/Seo"
+import ThumbList from "@layouts/documentation-index/ThumbList"
 
 interface DocumentationIndexProps {
   data: DocumentationIndexData
-  pageContext: DocumentationIndexContext
 }
 
 interface DocumentationIndexData {
   mdx: DocumentationIndexNode
+}
+
+export interface IThumb {
+  description: string
+  icon: string
+  title: string
+  to: string
 }
 
 interface DocumentationIndexNode {
@@ -21,12 +26,7 @@ interface DocumentationIndexNode {
     meta?: Meta
     content: {
       hero: IHero
-      thumbs: Array<{
-        description: string
-        icon: string
-        title: string
-        to: string
-      }>
+      thumbs: Array<IThumb>
     }
   }
 }
@@ -62,15 +62,12 @@ export const graphqlQuery = graphql`
   }
 `
 
-const DocumentationIndex = ({
-  data,
-  pageContext
-}: DocumentationIndexProps): JSX.Element => {
+const DocumentationIndex = ({ data }: DocumentationIndexProps): JSX.Element => {
   const { meta, content } = data.mdx.frontmatter
 
   return (
     <>
-      <SEO localeCode={pageContext.localeCode} meta={meta} />
+      <SEO meta={meta} />
 
       <div className="index">
         <Hero {...content.hero} />
@@ -83,11 +80,7 @@ const DocumentationIndex = ({
             section__in_reverse
           `}
           >
-            <ul className="developers-thumbs">
-              {content.thumbs.map((thumb, idx) => (
-                <Thumb key={generateKey(thumb.title, idx)} {...thumb} />
-              ))}
-            </ul>
+            <ThumbList thumbs={content.thumbs} />
           </div>
         </section>
       </div>

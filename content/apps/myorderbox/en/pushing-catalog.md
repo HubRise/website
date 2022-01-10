@@ -1,6 +1,6 @@
 ---
 title: Pushing The Catalog
-position: 4
+position: 5
 layout: documentation
 meta:
   title: MyOrderBox Connection to HubRise - Pushing The Catalog
@@ -31,10 +31,11 @@ The following sections provide more details on how your MyOrderBox catalog is ma
 
 ### Categories
 
-The categories in the MyOrderBox catalog are mapped one-to-one to categories of products on HubRise. 
+The categories in the MyOrderBox catalog are mapped one-to-one to categories of products on HubRise.
 Categories sent to HubRise are ordered by ascending value of ref code.
 
 For every category, the following fields are sent to HubRise:
+
 - `name`: The name of the category.
 - `ref`: The ref code of the category.
 
@@ -46,17 +47,17 @@ MyOrderBox supports products and skus, and this product structure is mapped one-
 
 For every product, MyOrderBox sends the following information to HubRise:
 
-- `name`: The name of the product.             
-- `ref`: The ref code of the product, which will be passed along in orders.  
+- `name`: The name of the product.
+- `ref`: The ref code of the product, which will be passed along in orders.
 - `description`: The description of the product.
 - `skus`: The list of skus associated with the product.
 - `image_ids`: The list of image IDs associated with the product.
 
 For every sku in the list, MyOrderBox sends the following information to HubRise:
 
-- `name`: The name of the sku.             
-- `ref`: The ref code of the sku, which will be passed along in orders.  
-- `price`: The price of the sku.            
+- `name`: The name of the sku.
+- `ref`: The ref code of the sku, which will be passed along in orders.
+- `price`: The price of the sku.
 - `option_list_refs`: The list of options attached to the sku.
 
 ### Options
@@ -65,7 +66,7 @@ MyOrderBox supports option lists and options, and this information is mapped one
 
 Additionally, MyOrderBox relies on the following naming convention:
 
-- If the name of an option group starts with the word **Toppings**, the option group is sent to HubRise as an `option_list` with the `name` field set to "Toppings". One HubRise `option` is created for every option value in MyOrderBox which is not enabled by default. If the option group contains one or more option values enabled by default, these values are grouped together and sent to HubRise in a new `option_list`, whose name is "Ingredients". 
+- If the name of an option group starts with the word **Toppings**, the option group is sent to HubRise as an `option_list` with the `name` field set to "Toppings". One HubRise `option` is created for every option value in MyOrderBox which is not enabled by default. If the option group contains one or more option values enabled by default, these values are grouped together and sent to HubRise in a new `option_list`, whose name is "Ingredients".
 
 - Otherwise, the option group is sent as a separate `option_list` to HubRise.
 

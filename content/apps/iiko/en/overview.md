@@ -10,7 +10,7 @@ path_override: /
 app_info:
   category: Point of Sales
   availability: World
-  price_range: From €49 to €99 monthly
+  price_range: From €49 to €99 per month
   website: https://iikosoftware.com
   contact: https://iikosoftware.com/contact-us
 ---

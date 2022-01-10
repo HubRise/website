@@ -14,7 +14,7 @@ content:
   apps:
     title: Nouvelles intégrations pour votre app
     description: |
-      HubRise connecte votre app à celles que vos clients utilisent. Concentrez-vous sur le développement de votre app, nous nous occupons des intégrations. [Plus de 40 intégrations disponibles](/fr/apps).
+      HubRise connecte votre app à celles que vos clients utilisent. Concentrez-vous sur le développement de votre app, nous nous occupons des intégrations. [Plus de 80 intégrations disponibles](/fr/apps).
     categories:
       - Logiciels de caisse
       - Commande en ligne
@@ -66,8 +66,6 @@ content:
         filename: dan.jpg
       - name: Dimitri
         filename: dimitri.jpg
-      - name: Léo
-        filename: leo.jpg
       - name: Nick
         filename: nick.jpg
       - name: Vova

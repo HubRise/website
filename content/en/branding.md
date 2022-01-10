@@ -3,8 +3,7 @@ title: Branding Guidelines
 layout: documentation-simple
 meta:
   title: Branding Guidelines, Logos and Text to use | HubRise
-  description:
-Did you mean: Download the HubRise logo. Find HubRise descriptions to adapt and reuse on your app's back office or website when referring to HubRise.
+  description: Download the HubRise logo. Find HubRise descriptions to adapt and reuse on your app's back office or website when referring to HubRise.
 ---
 
 If you are integrated with our ecosystem you can refer to HubRise in your corporate website, your back office and other marketing materials that you might have. To help, we prepared a few images for you to download as well as HubRise descriptions you can adapt and reuse.

@@ -12,8 +12,8 @@ The profile page on **SETTINGS** > **PROFILE** displays your user information, a
 To update your user profile:
 
 1. Click **Modify**.
-2. Update your name, email address, or correspondence language. The **Correspondence Language** sets all communications (emails, etc) from HubRise to you as the specified language.
-3. Select **Update**.
+1. Update your name, email address, or correspondence language. The **Correspondence Language** sets all communications (emails, etc) from HubRise to you as the specified language.
+1. Select **Update**.
 
 ---
 
@@ -26,9 +26,9 @@ To update your user profile:
 To update your password:
 
 1. Select **SETTINGS** > **PROFILE**.
-2. Enter your current password in the **Current password** field.
-3. Enter your new password in **New password** and **Confirm new password** fields. Both fields must match.
-4. Click **Update**.
+1. Enter your current password in the **Current password** field.
+1. Enter your new password in **New password** and **Confirm new password** fields. Both fields must match.
+1. Click **Update**.
 
 ![HubRise Change password](../images/055-en-2x-change-password.png)
 

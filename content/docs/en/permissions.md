@@ -15,8 +15,8 @@ Permissions lists the users, their email address, and role. The role refers to t
 You can add or remove users for the HubRise Account, or for specific Locations. To view and update the permissions for a Location:
 
 1. **SETTINGS** > **ACCOUNTS** > **Locations**.
-2. For users with multiple Accounts, select the Account containing the specific Location.
-3. Click the Location to modify.
+1. For users with multiple Accounts, select the Account containing the specific Location.
+1. Click the Location to modify.
 
 You can also view and edit your own permissions from **SETTINGS** > **PROFILE**. For more information, see [Profile and Password](/docs/profile-password/).
 
@@ -27,10 +27,10 @@ Admins can grant access to other users provided they have an existing profile on
 To add a user:
 
 1. To grant access for the Account and all of its Locations, select **SETTINGS** > **ACCOUNTS**. Admins with multiple Accounts, select the Account to modify. To grant access only for a specific Location, select the location's name in the **Locations** section.
-2. In the Permissions section, select **Add**.
-3. Enter the user's email address in the column marked **EMAIL**.
-4. In the **ROLE** column, set the new user's role as Admin or Manager.
-5. Click the plus icon <InlineImage width="13" height="13">![Plus icon](../images/059-add-icon.png)</InlineImage> to add the new user.
+1. In the **Permissions** section, select **Add**.
+1. Enter the user's email address in the column marked **EMAIL**.
+1. In the **ROLE** column, set the new user's role as Admin or Manager.
+1. Click the plus icon <InlineImage width="13" height="13">![Plus icon](../images/059-add-icon.png)</InlineImage> to add the new user.
 
 <video controls title="Add user example">
   <source src="../images/023-en-permissions-add-user.webm" type="video/webm"/>
@@ -41,7 +41,7 @@ To add a user:
 To remove a user:
 
 1. Click the remove icon <InlineImage width="15" height="16">![Trash icon](../images/057-2x-trash-icon.png)</InlineImage>for the user to remove.
-2. When prompted, click **Delete** to confirm removing the user.
+1. When prompted, click **Delete** to confirm removing the user.
 
 ---
 

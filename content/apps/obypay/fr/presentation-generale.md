@@ -4,7 +4,7 @@ position: 1
 layout: documentation
 meta:
   title: Présentation générale | Obypay | HubRise
-  description: Présentation générale de Obypay, les raisons de connecter votre caisse à HubRise et liste des fonctionnalités de l'intégration avec HubRise.
+  description: Présentation générale de Obypay, les raisons de connecter Obypay à HubRise et fonctionnalités de l'intégration avec HubRise.
 gallery:
 path_override: /
 app_info:
@@ -37,7 +37,7 @@ Obypay offre un back-office complet, qui permet de personnaliser l'apparence de 
 
 Connecter Obypay à HubRise permet à Obypay de :
 
-- Envoyer les commandes à HubRise.
+- Envoyer les commandes à HubRise, dont les statuts de commande.
 - Recevoir les statuts de commande de HubRise.
 - Recevoir les informations clients de HubRise.
 

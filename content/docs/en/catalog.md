@@ -28,8 +28,8 @@ You cannot edit your list of products from HubRise. Removing a catalog from HubR
 To add a catalog:
 
 1. In the **SETTINGS** > **ACCOUNTS** > **Catalogs** section, click **Add a catalog**.
-2. Enter the name for the catalog. Catalogs should have the same name as your Account. If you have multiple Locations with their own different catalogs, it is preferable to follow a strict naming convention such as: **Account Name - Location Name**. For example, your default Account catalog may be **Fast Pizza**, and the catalog for a location would be **Fast Pizza - Baker Street**.
-3. Click **Create** to save the new catalog.
+1. Enter the name for the catalog. Catalogs should have the same name as your Account. If you have multiple Locations with their own different catalogs, it is preferable to follow a strict naming convention such as: **Account Name - Location Name**. For example, your default Account catalog may be **Fast Pizza**, and the catalog for a location would be **Fast Pizza - Baker Street**.
+1. Click **Create** to save the new catalog.
 
 ## Catalog Details
 
@@ -38,8 +38,8 @@ To view the list of products included within a catalog, see [Catalogs](#catalogs
 The following information is displayed in the **SETTINGS** > **ACCOUNTS** > **Catalogs** section:
 
 1. **Name**: The name of the catalog, followed by its unique character code. This unique character code does not change even if the name of the catalog is changed. For example: The catalog **Baker Street** would be displayed as **Baker Street - abc123**. If the catalog **Baker Street** is renamed to **Dunning Street**, it will be displayed as **Dunning Street - abc123**.
-2. **Created**: The date the catalog was created in HubRise.
-3. **Products**: The number of products imported from your app into this catalog.
+1. **Created**: The date the catalog was created in HubRise.
+1. **Products**: The number of products imported from your app into this catalog.
 
 To view the contents of a Catalog, click the name of the Catalog. It will connect you to the **DATA** > **Catalog** screen for the specific Catalog.
 
@@ -56,8 +56,8 @@ Changes to the Catalog in HubRise does not effect the list of products in connec
 To change the name of a Catalog:
 
 1. In the **SETTINGS** > **ACCOUNTS** > **Catalogs** section, click the edit icon for the catalog to edit.
-2. Enter the new name for the Catalog.
-3. Click **Update** to save the new settings.
+1. Enter the new name for the Catalog.
+1. Click **Update** to save the new settings.
 
 ![HubRise Edit Catalog](../images/065-en-2x-edit-remove-catalog.png)
 
@@ -73,4 +73,4 @@ Removing a catalog from HubRise does not effect the product list in third party 
 To remove a catalog:
 
 1. In the **SETTINGS** > **ACCOUNTS** > **Catalogs** section, click the remove icon<InlineImage width="15" height="16">![Trash icon](../images/057-2x-trash-icon.png)</InlineImage> for the catalog to delete.
-2. Click **Delete** to confirm the removal of the catalog.
+1. Click **Delete** to confirm the removal of the catalog.

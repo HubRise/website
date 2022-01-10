@@ -1,4 +1,4 @@
-import { CreatePagesArgs } from 'gatsby'
+import { CreatePagesArgs } from "gatsby"
 
 interface RedirectsData {
   file: {
@@ -17,9 +17,7 @@ interface Redirect {
  * Read and parses the content/redirects.yaml file.
  * @param graphql
  */
-export async function getRedirects(
-  graphql: CreatePagesArgs['graphql']
-): Promise<Array<Redirect>> {
+export async function getRedirects(graphql: CreatePagesArgs["graphql"]): Promise<Array<Redirect>> {
   const { data, errors } = await graphql<RedirectsData>(`
     query {
       file(base: { eq: "redirects.yaml" }, relativeDirectory: { eq: "" }) {
@@ -31,7 +29,7 @@ export async function getRedirects(
   `)
 
   if (errors) throw errors
-  if (!data) throw 'GraphQL returned no data'
+  if (!data) throw "GraphQL returned no data"
 
   return data.file.childYaml.parsedContent
 }

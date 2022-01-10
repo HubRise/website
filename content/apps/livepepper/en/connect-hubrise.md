@@ -7,7 +7,7 @@ meta:
   description: See how to connect LivePepper with HubRise in a few simple steps. HubRise transmits your LivePepper orders into your EPOS and other apps you use every day.
 ---
 
-Connecting LivePepper to HubRise can be done with a few simple steps. If you don't already have a HubRise account, it will be created automatically in the process. 
+Connecting LivePepper to HubRise can be done with a few simple steps. If you don't already have a HubRise account, it will be created automatically in the process.
 
 ---
 

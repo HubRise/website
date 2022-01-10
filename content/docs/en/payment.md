@@ -18,14 +18,14 @@ Locations can be set to their own payment method rather than using the Account. 
 To change whether your Location uses your HubRise Account payment method, or whether the Location will use a separate payment method, follow these steps:
 
 1. Go to **SETTINGS** > **ACCOUNTS**.
-2. For users with multiple Accounts, select the Account containing the specific Location.
-3. Click the Location to update.
-4. Under **Payment**:
-   1. To set a location that uses its own payment method to use the same payment method as its Account, click **Make the account pay for the subscription**.
-   2. If the location uses the same payment method as the Account and you want it to have a separate payment method, click click **Make the location pay for it**.
+1. For users with multiple Accounts, select the Account containing the specific Location.
+1. Click the Location to update.
+1. Under **Payment**:
+   - To set a location that uses its own payment method to use the same payment method as its Account, click **Make the account pay for the subscription**.
+   - If the location uses the same payment method as the Account and you want it to have a separate payment method, click click **Make the location pay for it**.
 
 <video controls title="Payment by Account or Location example">
-  <source src="../images/042-en-settings-payment-byaccount-bylocation.webm" type="video/webm"/>
+ <source src="../images/042-en-settings-payment-byaccount-bylocation.webm" type="video/webm"/>
 </video>
 
 ## Add a Payment Method
@@ -33,15 +33,12 @@ To change whether your Location uses your HubRise Account payment method, or whe
 To add a payment method for an Account or Location:
 
 1. Go to **SETTINGS** > **ACCOUNTS**.
-
-- To update the payment method for an Account, select the Account and scroll down to the Payment section.
-- To update the payment method for a Location, select the Account, then select the Location, and scroll down to the Payment section.
-
-2. If there is no existing payment method, click **Add payment method**. If there is a previously set method, click **Change your payment method**.
-3. Enter your credit card information. Credit cards must be valid to be accepted.
-4. When finished, click **Save**.
-
-<video controls title="Add payment type"><source src="../images/040-en-settings-payment-add-payment-type.webm" type="video/webm"/></video>
+   - To update the payment method for an Account, select the Account and scroll down to the Payment section.
+   - To update the payment method for a Location, select the Account, then select the Location, and scroll down to the Payment section.
+1. If there is no existing payment method, click **Add payment method**. If there is a previously set method, click **Change your payment method**.
+1. Enter your credit card information. Credit cards must be valid to be accepted.
+1. When finished, click **Save**.
+   <video controls title="Add payment type"><source src="../images/040-en-settings-payment-add-payment-type.webm" type="video/webm"/></video>
 
 ## Process Pending Quotes
 
@@ -50,10 +47,10 @@ When a plan has been changed, the payment must be authorized before the credit c
 To process a payment from the notification:
 
 1. Make sure a credit card is saved on your Account or Location. If not, see the instructions in [Add a Payment Method](#add-a-payment-method).
-2. Click **View the earliest quote **link, then click **Pay**. To check on all unpaid quotes, click **check your account** from the notification.
+1. Click **View the earliest quote **link, then click **Pay**. To check on all unpaid quotes, click **check your account** from the notification.
 
 <video controls title="Pay subscription example">
-  <source src="../images/041-en-process-pending-quotes.webm" type="video/webm"/>
+ <source src="../images/041-en-process-pending-quotes.webm" type="video/webm"/>
 </video>
 
 ---

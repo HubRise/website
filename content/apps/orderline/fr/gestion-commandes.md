@@ -84,8 +84,8 @@ OrderLine se connecte aux imprimantes reconnues par le système d'exploitation. 
 Pour imprimer un reçu de commande sur une imprimante locale, procédez comme suit :
 
 1. Ouvrez la carte de la commande.
-2. Cliquez sur **IMPRIMER**.
-3. Suivez les instructions indiquées dans la boîte de dialogue d'impression.
+1. Cliquez sur **IMPRIMER**.
+1. Suivez les instructions indiquées dans la boîte de dialogue d'impression.
 
 OrderLine peut également imprimer les reçus de commande de façon automatique dès la réception de la commande, sans passer par la boîte de dialogue d'impression. L'impression automatique nécessite que l'imprimante soit enregistrée dans Google Cloud Print. Pour plus de détails, voir la rubrique [Impression](/apps/orderline/parametres/#impression).
 

@@ -10,7 +10,7 @@ gallery:
   - __gallery-002.png
 path_override: /
 app_info:
-  category: Online ordering
+  category: Online Ordering
   availability: United Kingdom
   price_range: From £40 per week
   website: https://www.app4.co.uk

@@ -1,11 +1,14 @@
-import * as React from 'react'
-import { graphql } from 'gatsby'
+import * as React from "react"
+import { graphql } from "gatsby"
 
-import { generateKey } from '@utils/misc'
-import SEO from '@components/Seo'
-import { AppsContext } from './interface'
-import { App, Developer, Hero, Nav } from './components'
-import { AppImageNode } from './components/App'
+import { AppsContext } from "./interface"
+import AppGroup, { AppImageNode } from "./AppGroup"
+import Developer from "./Developer"
+import Hero from "./Hero"
+import Nav from "./Nav"
+
+import SEO from "@layouts/shared/components/Seo"
+import { generateKey } from "@utils/misc"
 
 interface AppsProps {
   data: AppsData
@@ -39,12 +42,12 @@ export const graphqlQuery = graphql`
 
 const Apps = ({ data, pageContext, path }: AppsProps): JSX.Element => {
   const { logos } = data
-  const { localeCode, apps, categoryTitle } = pageContext
+  const { apps, categoryTitle } = pageContext
   const { meta, content, path: allAppsPath } = apps
 
   return (
     <>
-      <SEO localeCode={localeCode} meta={meta} />
+      <SEO meta={meta} />
 
       <Hero hero={content.hero} />
 
@@ -58,7 +61,7 @@ const Apps = ({ data, pageContext, path }: AppsProps): JSX.Element => {
       {content.categories.map(({ title, apps, has_suggest_app }, idx) => {
         if (!categoryTitle || categoryTitle === title) {
           return (
-            <App
+            <AppGroup
               key={generateKey(title, idx)}
               title={title}
               showTitle={!categoryTitle}
@@ -77,4 +80,4 @@ const Apps = ({ data, pageContext, path }: AppsProps): JSX.Element => {
 
 export default Apps
 
-export type { AppsContext } from './interface'
+export type { AppsContext } from "./interface"

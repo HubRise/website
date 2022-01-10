@@ -22,10 +22,10 @@ Apps are connected either with a HubRise Account or Location depending on the ap
 To connect a new app to your HubRise Account:
 
 1. Log in to HubRise from the [HubRise Login page](https://manager.hubrise.com/login).
-2. Click **CONNECTIONS** on the left navigation panel.
-3. Select **View available apps**.
-4. Select the app you want to install.
-5. Follow the instructions for the specific app. When installing a new app, you will be required to grant the app access to your HubRise Account.
+1. Click **CONNECTIONS** on the left navigation panel.
+1. Select **View available apps**.
+1. Select the app you want to install.
+1. Follow the instructions for the specific app. When installing a new app, you will be required to grant the app access to your HubRise Account.
 
 If you need to connect multiple instances of the same app to a single HubRise location, see [Connecting Multiple Instances of the Same App](/docs/faqs/connect-multiple-instances-same-app).
 
@@ -74,7 +74,7 @@ At the top, the log page displays general information about the connection:
 Logs can be filtered by resource and method through the following process:
 
 1. Select **Edit**.
-2. Select the resources and methods that you want to display. To view all log records, uncheck all resources and methods, or click **Reset**.
+1. Select the resources and methods that you want to display. To view all log records, uncheck all resources and methods, or click **Reset**.
 
 ![HubRise Connection filter](../images/052-en-2x-filter-logs.png)
 
@@ -95,7 +95,7 @@ To download either the request or response, select the download icon <InlineImag
 
 For more information, see [Understanding Logs in HubRise](/docs/hubrise-logs). For a complete reference on the HubRise API, see the [HubRise API Reference page](/developers/api/general-concepts).
 
-[comment]: # 'Understanding Logs in HubRise link not working'
+[comment]: # "Understanding Logs in HubRise link not working"
 
 <video controls title="Log details">
   <source src="../images/013-en-connections-view-logs.webm" type="video/webm"/>

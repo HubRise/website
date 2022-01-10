@@ -12,8 +12,8 @@ The **SETTINGS** > **ACCOUNTS** > **Usage** section displays the number of order
 To view Usage details for an Account or Location:
 
 1. Select **SETTINGS** > **ACCOUNTS**.
-2. For profiles with multiple Accounts, select the specific Account to view. The **Usage** section will display across the entire Account and all of its Locations.
-3. To view information for one location, select the specific Location.
+1. For profiles with multiple Accounts, select the specific Account to view. The **Usage** section will display across the entire Account and all of its Locations.
+1. To view information for one location, select the specific Location.
 
 ## Usage Plans
 
@@ -51,10 +51,10 @@ You can change your plan to best meet your needs and the traffic of your busines
 To change your plan for a location:
 
 1. Select **SETTINGS** > **ACCOUNTS**.
-2. For users with multiple Accounts, select the Account containing the specific Location.
-3. Click the Location to update.
-4. Under **Usage**, select **Change plan**.
-5. To set your plan to use the paid plan that allows more transactions a month, click **Upgrade**. To change the plan to one that allows fewer orders and customers a month, click **Downgrade**. Once you have reached the transaction limit for a free plan, you must upgrade to the paid plan again.
+1. For users with multiple Accounts, select the Account containing the specific Location.
+1. Click the Location to update.
+1. Under **Usage**, select **Change plan**.
+1. To set your plan to use the paid plan that allows more transactions a month, click **Upgrade**. To change the plan to one that allows fewer orders and customers a month, click **Downgrade**. Once you have reached the transaction limit for a free plan, you must upgrade to the paid plan again.
 
 ---
 

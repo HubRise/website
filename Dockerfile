@@ -1,7 +1,7 @@
 # ****************************
 # **      Build stage       **
 # ****************************
-FROM node:14.17.0-buster AS build-stage
+FROM node:16.1.0-buster AS build-stage
 
 # Working directory
 WORKDIR /website

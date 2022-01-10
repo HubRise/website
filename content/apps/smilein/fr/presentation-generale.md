@@ -19,6 +19,12 @@ app_info:
   contact: https://www.smilein.io/contactez-nous
 ---
 
+---
+
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+
+---
+
 ## Description
 
 smilein est une solution de commande et de paiement depuis le smartphone, dédiée à l'hôtellerie et à la restauration. Elle est particulièrement adaptée aux chaines et aux food courts en raison de ses fonctionnalités de gestion multi-sites.
@@ -45,9 +51,13 @@ L'intégration de smilein avec HubRise permet de :
 
 ---
 
+smilein peut être connecté à HubRise via le support de smilein.
+
 ## Pourquoi se connecter ?
 
-En connectant smilein à HubRise, les commandes passées sur votre site internet sont transmises à votre logiciel de caisse ou toute autre solution intégrée à HubRise. Pour voir les applications que vous pouvez connecter, consultez la [page Apps](/apps).
+En connectant smilein à HubRise, les commandes passées sur votre site internet sont transmises à votre logiciel de caisse ou toute autre solution intégrée à HubRise.
+
+Grâce à HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes avec votre solution d'encaissement, de commande en ligne, les plateformes de livraison de repas (dont Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs ou de services de livraison, les solutions eMarketing (SMS / eMailing), business intelligence, systèmes de gestion de stock et de fidélisation client, et bien d'autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, consultez notre [page Apps](/apps).
 
 ## Prérequis
 

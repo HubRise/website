@@ -24,7 +24,7 @@ GET https://api.hubrise.com/v1/location/orders
 X-Access-Token: [your_access_token]
 ```
 
-Access tokens are created via OAuth 2.0. See [Authentication](/developers/authentication).
+Access tokens are created via OAuth 2.0. See [Authentication](/developers/api/authentication).
 
 **Note**: further in this documentation, the root part of the request URLs will be omitted. For example, we will use `GET /location/orders` in lieu of `GET https://api.hubrise.com/v1/location/orders`.
 
@@ -209,7 +209,7 @@ HubRise allows API clients to attach their own internal references to various ob
 
 A private ref is only visible to the client that set it. For example, let's assume client A assigns a private ref to an order:
 
-**CLIENT A**: `PUT /location/orders/sd89mm`
+**CLIENT A**: `PATCH /location/orders/sd89mm`
 
 ```json
 {
@@ -217,7 +217,7 @@ A private ref is only visible to the client that set it. For example, let's assu
 }
 ```
 
-When client A later retrieves the order, the `private_ref` is included in the response: 
+When client A later retrieves the order, the `private_ref` is included in the response:
 
 **CLIENT A**: `GET /location/orders/sd89mm`
 

@@ -26,8 +26,14 @@ This documentation presents the solution and the procedure to follow to connect 
 
 For the overview page, which is the first visible page of this documentation, you must provide the following elements:
 
-- A description containing 150-250 words (no superlatives) presenting the solution and its features in detail.
+- A description containing 150-300 words (no superlatives) presenting the solution and its features in detail.
 - 2-6 screenshots of the application, all with the same width-height ratio.
+
+### Description of the Solution
+
+You should only provide the content of the **Description** section. Our team will take care of writing the **Integration Features**, **Why Connect?** and **Prerequisites** sections.
+
+### Screenshots width-height ratio
 
 The illustration below shows why screenshots must have the same width-height ratio.
 

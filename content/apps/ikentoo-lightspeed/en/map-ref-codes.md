@@ -3,86 +3,73 @@ title: Map Ref Codes
 position: 4
 layout: documentation
 meta:
-  title: Map Ref Codes | iKentoo by Lightspeed | HubRise
-  description: Instructions on mapping iKentoo by Lightspeed product ref codes with other apps after connecting your EPOS with HubRise. Connect apps and synchronise your data.
+  title: Map Ref Codes | Lightspeed Restaurant (K Series) | HubRise
+  description: Instructions on mapping Lightspeed Restaurant (K Series) product ref codes with other apps after connecting your EPOS with HubRise. Connect apps and synchronise your data.
 ---
 
-iKentoo Bridge is a _push-only_ integration. For this reason, when you connect a delivery platform or an online ordering solution to iKentoo via HubRise, you must manually set the same ref codes you use on iKentoo to ensure a smooth communication among all the integrations.  
-To correctly receive orders from delivery platforms, you also need to create special items on iKentoo.
+---
 
-## Finding ref codes
+**IMPORTANT NOTE:** Lightspeed Restaurant (K Series) was formerly known as iKentoo. iKentoo Bridge will soon be renamed Lightspeed Bridge to align with the new name.
 
-To find the ref codes for specific items, follow these steps.
+---
 
-- From your iKentoo back office, select **Configuration**, then select **Items** > **Items**.
-- The ref codes appear under the **Code** column.
-  ![](../images/007-en-integration-sku-codes.png)
+Lightspeed expects all incoming orders to contain specific ref codes for each sku, option, deal, discount, charge, service type, and payment present. You must ensure that all connected apps use the correct ref codes if you want your orders to be correctly processed.
 
-You can then copy the codes in the connected app. For detailed instructions, follow the steps in the connected app's documentation in the HubRise website.
+This page explains how to find the ref codes by either downloading your Lightspeed catalog in bulk, or by checking individual items in the back office.
 
-## Exporting iKentoo Menus
+You can also export your Lightspeed catalog directly into HubRise with iKentoo Bridge.
+Some connected apps offer the ability to import the catalog directly from HubRise, and therefore to autopopulate the ref codes.
+For more details about this feature and its limitations in iKentoo Bridge, see [Pushing the Catalog](/apps/ikentoo-lightspeed/pushing-catalog).
 
-In some cases, it is useful to download the menu from your iKentoo account to manage the items and the ref codes with a separate software.
+## Downloading The Catalog In Bulk
 
-To export the iKentoo menu, follow these steps.
+You can download your Lightspeed catalog to manage the items and the ref codes with a separate software.
 
-- From your iKentoo back office, select **Configuration**, then select **Items** > **Items**.
-- Click the **Export** button.
-  ![](../images/009-en-export-items.png)
-- In the popup window, choose your operating system type: Mac or Windows (or Manual configuration), then click **Export**.
-- After the export is complete, select **Click here to download the exported file** to download the CSV file with your menu.
-  ![Download items CSV](../images/006-en-2x-download-items.png)
+To download the Lightspeed catalog, follow these steps.
+
+1. From your Lightspeed back office, select **Configuration**, then select **Items** > **Items**.
+1. Click the **Export** button.
+1. ![Export button in the items page of the Lightspeed back office](../images/006-en-lightspeed-export-items.png)
+1. In the popup window, choose your operating system type: Mac or Windows (or Manual configuration), then click **Export**.
+   ![Choosing the operating system when exporting the catalog in Lightspeed](../images/007-en-lightspeed-system-choice.png)
+1. After the export is complete, select **Click here to download the exported file** to download the CSV file with your menu.
+   ![Download items CSV](../images/008-en-2x-lightspeed-download-csv.png)
 
 To check the ref codes for the items, you can open the downloaded CSV file in Excel or a text editor. The ref codes appear under the **SKU** column.
 
-## Creating Ref Codes for Delivery Platforms
+## Finding Ref Codes For Individual Items
 
-If you connect iKentoo to delivery platforms such as Deliveroo, Uber Eats, and Just Eat, you need to create special service types, payments, charges, and discounts for every delivery platform you support.
-To simplify troubleshooting, we recommend that you use the specific codes provided in the page [Integrating with delivery platforms](/apps/ikentoo-lightspeed/food-ordering-platforms).
+You can find the ref codes for skus, options, deals, discounts, charges, service types, and payments from your Lightspeed back office.
 
-To create the ref codes in your iKentoo account, you have these two options:
+### Skus, Options, And Charges
 
-1. You can contact Lightspeed support and ask them to include the codes in your back office for you.
-2. You can include these codes in your back office autonomously. In this case, follow the procedures below.
+To find the ref codes for specific skus and options, follow these steps.
 
-### Creating Service Types in iKentoo
+1. From the top menu in your Lightspeed back office, select **Configuration**, then **Items** > **Items**.
+1. The ref codes for skus and options appear under the **Code** column.
+   ![](../images/009-en-lightspeed-skus-options-codes.png)
 
-Service types are known as _account profiles_ on iKentoo. To create a service type for a delivery platform, follow these steps.
+You can then copy the codes in the connected app. For detailed instructions, follow the documentation for the connected app in the HubRise website.
 
-1. From your iKentoo back office, select **Configuration**, then select **Settings** > **Account profiles**.
-1. Click **Add an account profile**, then click **OK**.
-1. In the **Base options** section, specify the ref code for your service type in the **Code** field.
-1. Fill in the other sections in the page as needed, then click **Save**.
-1. Repeat the process for all the service types you support for each delivery platform.
+If you created charges as skus, as described in [Create Ref Codes](/apps/ikentoo-lightspeed/create-ref-codes#charges), you will find their ref codes in the same way as above.
 
-### Creating Discounts in iKentoo
+### Service Types
 
-To create a discount for a delivery platform, follow these steps.
+Service types are called _account profiles_ on Lightspeed. To find the ref code for a specific service type, follow these steps.
 
-1. From your iKentoo back office, select **Configuration**, then select **Settings** > **Discounts**.
-1. Click **Add a discount**.
-1. In the **Add new discount** page, specify the discount code in the first field.
-1. Fill in the other sections in the page as needed, then click **Save**.
-1. Repeat the process for all the discounts you support for each delivery platform.
+1. From your Lightspeed back office, select **Configuration**, then select **Settings** > **Account profiles**.
+1. For each service type available under the **Name** column, you can find the corresponding ref code under the **Code** column.
 
-### Creating Charges in iKentoo
+### Discounts
 
-To create a charge for a delivery platform, you need to create an item by following these steps.
+To find the ref code for a specific discount, follow these steps.
 
-1. From your iKentoo back office, select **Configuration**, then select **Items** > **Items**.
-2. Click **Add item**.
-3. Next to **Sku**, select **Click here to add your custom SKU manually**.
-4. A field appears where you can include the ref code for your charge.
-5. For **Price structure**, make sure you select **Single price** from the dropdown menu.
-6. Fill in the other sections in the page as needed, then click **Save**.
-7. Repeat the process for all the charges you support for each delivery platform.
+1. From your Lightspeed back office, select **Configuration**, then select **Settings** > **Discounts**.
+1. For each discount, you can find the corresponding ref code under the **Code** column.
 
-### Creating Payment Methods in iKentoo
+### Payment Methods
 
-To create a payment method for a delivery platform, follow these steps.
+To find the ref code for a payment method, follow these steps.
 
-1. From your iKentoo back office, select **Configuration**, then select **Settings** > **Payment methods**.
-1. Click **Add a payment method**.
-1. In the **Add new payment method** page, specify the code for your payment method in the **Code** field.
-1. Fill in the other sections in the page as needed, then click **Save**.
-1. Repeat the process for all the payment methods you support for each delivery platform.
+1. From your Lightspeed back office, select **Configuration**, then select **Settings** > **Payment methods**.
+1. For each payment method available under the **Name** column, you can find the corresponding ref code under the **Code** column.

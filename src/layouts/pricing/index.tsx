@@ -1,15 +1,14 @@
-import * as React from 'react'
-import { graphql } from 'gatsby'
+import * as React from "react"
+import { graphql } from "gatsby"
 
-import { IPricing } from './interface'
-import Offer from './components/Offer'
-import Specials from './components/Specials'
-import SEO from '@components/Seo'
-import { YamlContext } from '@utils/context'
+import { IPricing } from "./interface"
+import Offer from "./Offer"
+import Specials from "./Specials"
+
+import SEO from "@layouts/shared/components/Seo"
 
 interface PricingProps {
   data: PricingData
-  pageContext: YamlContext
 }
 
 interface PricingData {
@@ -30,12 +29,12 @@ export const graphqlQuery = graphql`
   }
 `
 
-const Pricing = ({ data, pageContext }: PricingProps): JSX.Element => {
+const Pricing = ({ data }: PricingProps): JSX.Element => {
   const { meta, content } = data.file.childYaml.parsedContent
 
   return (
     <>
-      <SEO localeCode={pageContext.localeCode} meta={meta} />
+      <SEO meta={meta} />
 
       <section className="section section_white pricing">
         <div className="section__in section__in_padding">

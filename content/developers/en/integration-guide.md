@@ -68,7 +68,7 @@ When you first create your integration client, you should typically connect to H
 
 In more advanced scenarios where you read or modify the catalog of products, your solution should request `read` or `write` permission for the catalog, as well.
 
-For more information about scopes, see [OAuth scopes](/developers/authentication#oauth-scopes).
+For more information about scopes, see [OAuth scopes](/developers/api/authentication#oauth-scopes).
 
 ### Connection Workflow
 
@@ -76,7 +76,7 @@ You should provide your users with an easy way to connect your solution to HubRi
 
 Once a user establishes a connection with HubRise, you should display all the relevant information about the account:
 
-- Location name and ID
+- Account name, Location name and Location ID
 - Catalog name and ID
 - Customer list name and ID
 

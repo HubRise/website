@@ -34,4 +34,4 @@ To find the ref codes for specific items, follow these steps.
 1. Click on a category from the list to reveal the list of items in that category.
 1. Click on an item to show its details. The item ref code appears in the **Public ID** field.
 
-You can now copy this code in the connected app. For detailed instructions, follow the steps in the connected app's documentation in the HubRise website. 
+You can now copy this code in the connected app. For detailed instructions, follow the steps in the connected app's documentation in the HubRise website.

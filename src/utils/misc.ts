@@ -1,5 +1,5 @@
-import remark from 'remark'
-import remarkHtml from 'remark-html'
+import remark from "remark"
+import remarkHtml from "remark-html"
 
 /**
  * Applies kebab case to a regular string.
@@ -9,7 +9,7 @@ import remarkHtml from 'remark-html'
  * @param   keepCase - Keep original letter casing, or transform into lowercase.
  * @returns
  */
-export const kebabify = (input: string, keepCase: boolean = false): string => {
+export const kebabify = (input: string, keepCase = false): string => {
   const result = input
     .split(/[^\w]+/g)
     .filter(Boolean)
@@ -21,14 +21,12 @@ export const kebabify = (input: string, keepCase: boolean = false): string => {
 /**
  * Generatey key prop for repeating sibling React elements.
  */
-export const generateKey = (prefix: string, suffix: string | number): string =>
-  `${prefix}--${suffix}`
+export const generateKey = (prefix: string, suffix: string | number): string => `${prefix}--${suffix}`
 
-export const markdownToHtml = (markdown: string): string =>
-  remark()
-    .use(remarkHtml)
-    .processSync(markdown.replace(/\n/g, '\n\n'))
-    .toString()
+export const markdownToHtml = (markdown: string): string => {
+  // @ts-ignore
+  return remark().use(remarkHtml).processSync(markdown.replace(/\n/g, "\n\n")).toString()
+}
 
 /**
  * Strips headers of chapters and subchapters, transforming
@@ -43,7 +41,5 @@ export function createHeaderAnchor(header: string): string {
   // Detects leading chapter numbers.
   const regex = /^[\d.]+\s/
 
-  return header.match(regex)
-    ? kebabify(header.replace(regex, ``))
-    : kebabify(header)
+  return header.match(regex) ? kebabify(header.replace(regex, ``)) : kebabify(header)
 }

@@ -7,7 +7,7 @@ meta:
   description: Comment trouver votre identifiant de restaurant Deliveroo. Cet identifiant vous sera demandé lors de la connexion de votre restaurant Deliveroo à HubRise.
 ---
 
-L'identifiant de restaurant est l’identificateur unique de votre restaurant Deliveroo. On parle également d'ID d'agence, ID administrateur, ID de tablette ou ID de point de vente, selon le contexte.
+L'identifiant de restaurant est l'identificateur unique de votre restaurant Deliveroo. On parle également d'ID d'agence, ID administrateur, ID de tablette ou ID de point de vente, selon le contexte.
 
 Pour trouver votre identifiant de restaurant Deliveroo, procédez comme suit :
 

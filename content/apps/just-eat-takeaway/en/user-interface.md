@@ -1,9 +1,9 @@
 ---
 title: User Interface
-position: 3
+position: 5
 layout: documentation
 meta:
-  title: Just Eat Takeaway Connection to HubRise - User Interface
+  title: User Interface | Just Eat Takeaway | HubRise
   description: How to navigate the Just Eat Takeaway Bridge main page to access information about the orders and customise the behaviour of the bridge.
 ---
 

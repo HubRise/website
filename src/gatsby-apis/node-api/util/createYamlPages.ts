@@ -1,11 +1,11 @@
-import { CreatePagesArgs } from 'gatsby'
+import { CreatePagesArgs } from "gatsby"
 
-import { YamlContext } from '../../../utils/context'
-import { LocaleCode, localeCodes } from '../../../utils/locales'
+import { YamlContext } from "../../../utils/context"
+import { LocaleCode, localeCodes } from "../../../utils/locales"
 
-import { generateLanguagePaths, parseRelativePath } from './locale'
-import { pathWithLocale } from './urls'
-import { getLayoutPath } from './layout'
+import { generateLanguagePaths, parseRelativePath } from "./locale"
+import { pathWithLocale } from "./urls"
+import { getLayoutPath } from "./layout"
 
 interface YamlData {
   allFile: {
@@ -21,11 +21,7 @@ interface YamlNode {
   }
 }
 
-export async function createYamlPages(
-  yamlFile: string,
-  layoutName: string,
-  args: CreatePagesArgs
-): Promise<void> {
+export async function createYamlPages(yamlFile: string, layoutName: string, args: CreatePagesArgs): Promise<void> {
   const { actions, graphql } = args
 
   const { data, errors } = await graphql<YamlData>(`
@@ -43,21 +39,16 @@ export async function createYamlPages(
   `)
 
   if (errors) throw errors
-  if (!data) throw 'GraphQL returned no data'
+  if (!data) throw "GraphQL returned no data"
 
   const getNode = (localeCode: LocaleCode): YamlNode => {
-    const node = data.allFile.nodes.find(
-      (node) => parseRelativePath(node.absolutePath).localeCode === localeCode
-    )
+    const node = data.allFile.nodes.find((node) => parseRelativePath(node.absolutePath).localeCode === localeCode)
     if (!node) throw `No ${yamlFile} file found for locale ${localeCode}`
     return node
   }
 
   const getPath = (localeCode: LocaleCode): string => {
-    return pathWithLocale(
-      localeCode,
-      getNode(localeCode).childYaml.parsedContent.path
-    )
+    return pathWithLocale(localeCode, getNode(localeCode).childYaml.parsedContent.path)
   }
 
   localeCodes.forEach((localeCode) => {
@@ -69,8 +60,8 @@ export async function createYamlPages(
       context: {
         id: node.id,
         languagePaths: generateLanguagePaths(localeCode, getPath),
-        localeCode
-      }
+        localeCode,
+      },
     })
   })
 }

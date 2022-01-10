@@ -10,8 +10,8 @@ gallery:
   - __gallery-002.png
 path_override: /
 app_info:
-  category: Online ordering and food delivery
-  availability: Laos, Cambodia, Myanmar, Thailand, Hong Kong, Japan, Taiwan, Malaysia, Singapore, Pakistan, Bangladesh, Bulgaria, Romania,
+  category: Food Ordering Platforms
+  availability: Bangladesh, Bulgaria, Cambodia, Hong Kong, Japan, Laos, Malaysia, Myanmar, Pakistan, Romania, Singapore, Taiwan, Thailand
   website: https://foodpanda.com
   contact: support@hubrise.com
 ---

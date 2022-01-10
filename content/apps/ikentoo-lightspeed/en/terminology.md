@@ -1,15 +1,15 @@
 ---
 title: Terminology
-position: 7
+position: 11
 layout: documentation
 meta:
-  title: Terminology | iKentoo by Lightspeed | HubRise
-  description: Correspondence table showing terms used by iKentoo by Lightspeed and those used on HubRise for the same concept. Connect apps and synchronise your data.
+  title: Terminology | Lightspeed K Series | HubRise
+  description: Correspondence table showing terms used by Lightspeed and those used on HubRise for the same concept. Connect apps and synchronise your data.
 ---
 
-HubRise and iKentoo each use their own terminology. The same concept can therefore have a different designation in each solution. The correspondence table below shows these differences.
+HubRise and Lightspeed each use their own terminology. The same concept can therefore have a different designation in each solution. The correspondence table below shows these differences.
 
-| iKentoo         | HubRise      | Description                                                                                               |
+| Lightspeed      | HubRise      | Description                                                                                               |
 | --------------- | ------------ | --------------------------------------------------------------------------------------------------------- |
 | Account profile | Service type | Type of service associated with an order. For example: restaurant delivery, food platform, or collection. |
 | Menu            | Catalog      | The products and variants sold by the store.                                                              |

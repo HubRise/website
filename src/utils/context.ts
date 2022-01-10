@@ -1,4 +1,4 @@
-import { LocaleCode } from '@utils/locales'
+import { LocaleCode } from "@utils/locales"
 
 export type LanguagePaths = {
   /** For each locale, the path of the corresponding page (eg. {en: '/docs/deliveroo', fr: '/fr/docs/deliveroo'}) */

@@ -4,27 +4,29 @@ meta:
   description:
 content:
   hero:
-    title: Un abonnement mensuel pour une utilisation illimitée
+    title: Un tarif accessible, pas d'engagement
   offer:
     pricing:
       chunk_1: 25€ HT / mois
       chunk_2: par point de vente
     features:
-      - 'Nombre de commandes : illimité'
-      - 'Nombre de produits : illimité'
-      - "Nombre d'applications connectées : illimité"
-      - 'Aucun engagement'
+      - Nombre de commandes illimité
+      - Nombre de connexions illimité
+      - Pas de frais d'installation
     link:
       text: Démarrer maintenant
       to: https://manager.hubrise.com/signup
   specials:
-    - paragraph_chunk_1: 'Gratuit : '
-      paragraph_chunk_2: Jusqu'à 50 commandes et 50 clients par mois.
+    - highlight: "Inscription gratuite :"
+      text: Sans frais et sans carte bancaire.
       link:
         text: Démarrer maintenant
         to: https://manager.hubrise.com/signup
-    - paragraph_chunk_1: 'Pour les chaînes : '
-      paragraph_chunk_2: Tarifs dégressifs à partir de 50 points de vente.
+    - highlight: "Pour les chaînes :"
+      text: Tarifs dégressifs à partir de 50 points de vente.
+      button: Nous contacter
+    - highlight: "Dark kitchen :"
+      text: Des frais additionnels peuvent s'appliquer.
       button: Nous contacter
   faq:
     text: Voir notre F.A.Q. concernant l'abonnement

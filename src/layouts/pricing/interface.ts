@@ -30,8 +30,8 @@ export interface IOffer {
 }
 
 export interface ISpecial {
-  paragraph_chunk_1: string
-  paragraph_chunk_2: string
+  highlight: string
+  text: string
   link?: {
     text: string
     to: string

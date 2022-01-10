@@ -1,7 +1,7 @@
 // Start the inspector (debugger back-end) in blocking mode
 
-if (process.env.ENABLE_INSPECTOR === 'true') {
-  const inspector = require('inspector')
+if (process.env.ENABLE_INSPECTOR === "true") {
+  const inspector = require("inspector")
 
   // Gatsby 2.24.15 seems to start the inspector by default. Close it.
   inspector.close()
@@ -18,6 +18,6 @@ if (process.env.ENABLE_INSPECTOR === 'true') {
 !!! EXECUTION PAUSED: attach a debugger to resume the process.
 !!! To disable the debugger, restart the process without setting the ENABLE_INSPECTOR environment variable.
 `)
-    inspector.open(9229, '0.0.0.0', true)
+    inspector.open(9229, "0.0.0.0", true)
   }
 }

@@ -1,14 +1,15 @@
-import path from 'path'
-import fs from 'fs'
-import * as rimraf from 'rimraf'
-import * as yaml from 'js-yaml'
+import path from "path"
+import fs from "fs"
+
+import * as rimraf from "rimraf"
+import * as yaml from "js-yaml"
 
 export const onPostBuild = copyTranslationsToJson
 export const onPostBootstrap = copyTranslationsToJson
 
 function copyTranslationsToJson(): void {
   try {
-    const sourcePath = path.resolve(process.cwd(), `src/i18n/resources`)
+    const sourcePath = path.resolve(process.cwd(), `src/i18n`)
     const targetPath = path.resolve(process.cwd(), `public/locales`)
 
     const locales = fs.readdirSync(sourcePath)
@@ -25,14 +26,9 @@ function copyTranslationsToJson(): void {
       const translations = fs.readdirSync(path.join(sourcePath, locale))
 
       translations.forEach((name) => {
-        const [content] = yaml.loadAll(
-          fs.readFileSync(path.join(sourcePath, locale, name), 'utf8')
-        )
+        const [content] = yaml.loadAll(fs.readFileSync(path.join(sourcePath, locale, name), "utf8"))
 
-        fs.writeFileSync(
-          path.join(targetPath, locale, name.replace(`yml`, `json`)),
-          JSON.stringify(content, null, 2)
-        )
+        fs.writeFileSync(path.join(targetPath, locale, name.replace(`yml`, `json`)), JSON.stringify(content, null, 2))
       })
     })
   } catch (e) {

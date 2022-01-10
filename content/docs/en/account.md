@@ -73,9 +73,9 @@ It is recommended to name the Account the same as your business or brand.
 To modify an existing Account:
 
 1. Select **SETTINGS** > **ACCOUNT**.
-2. If there are multiple Accounts, click the name of the Account to update.
-3. Click **Modify**.
-4. Update the fields as required and Click **Modify**.
+1. If there are multiple Accounts, click the name of the Account to update.
+1. Click **Modify**.
+1. Update the fields as required and Click **Modify**.
 
 ---
 

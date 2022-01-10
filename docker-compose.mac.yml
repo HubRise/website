@@ -24,13 +24,14 @@ services:
     image: hubrise/website-dev
     container_name: website_test
     environment:
-      - NODE_ENV=local
+      - NODE_ENV=test
       - SENTRY_DSN=https://96b4d1defd7648308c6e30f8a3470cfd@sentry.io/1776244
       - RECAPTCHA_SITE_KEY=6LfjbNYUAAAAAPx_tCv_YyhueK2JIjf58b2HGU8d
       - CONTACT_MESSAGE_URL=http://localhost/api/contact_message
+      - WAIT_ON_TIMEOUT=1200000 # (in milliseconds) 20 minute timeout for start-server-and-test
     volumes:
       - website-sync:/var/www/website
-    command: /usr/local/bin/yarn test:all:ci
+    command: /usr/local/bin/yarn test:all
 
 volumes:
   website-sync:

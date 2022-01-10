@@ -1,13 +1,14 @@
-import * as React from 'react'
-import { graphql } from 'gatsby'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
+import * as React from "react"
+import { graphql } from "gatsby"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
-import SEO, { Meta } from '@components/Seo'
-import { DocumentationSimpleContext } from '@layouts/documentation-simple/interface'
+import { StyledMDX } from "./Styles"
+
+import MDXProvider from "@layouts/shared/components/MdxProvider"
+import SEO, { Meta } from "@layouts/shared/components/Seo"
 
 interface DocumentationSimpleProps {
   data: DocumentationSimpleData
-  pageContext: DocumentationSimpleContext
 }
 
 interface DocumentationSimpleData {
@@ -37,27 +38,24 @@ export const graphqlQuery = graphql`
   }
 `
 
-const DocumentationSimple = ({
-  data,
-  pageContext
-}: DocumentationSimpleProps): JSX.Element => {
+const DocumentationSimple = ({ data }: DocumentationSimpleProps): JSX.Element => {
   const { frontmatter, body } = data.mdx
   const { meta } = frontmatter
 
   return (
-    <>
-      <SEO localeCode={pageContext.localeCode} meta={meta} />
+    <MDXProvider>
+      <SEO meta={meta} />
 
-      <section className="section faq">
+      <div className="section">
         <div className="section__in section__in_padding section__in_reverse">
-          <h3 className="section__title section__title_align-left">
-            {frontmatter.title}
-          </h3>
+          <h3 className="section__title section__title_align-left">{frontmatter.title}</h3>
 
-          <MDXRenderer>{body}</MDXRenderer>
+          <StyledMDX>
+            <MDXRenderer>{body}</MDXRenderer>
+          </StyledMDX>
         </div>
-      </section>
-    </>
+      </div>
+    </MDXProvider>
   )
 }
 

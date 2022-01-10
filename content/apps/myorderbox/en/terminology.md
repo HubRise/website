@@ -1,6 +1,6 @@
 ---
 title: Terminology
-position: 5
+position: 6
 layout: documentation
 meta:
   title: Terminology | MyOrderBox | HubRise

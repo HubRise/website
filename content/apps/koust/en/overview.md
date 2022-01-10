@@ -4,12 +4,41 @@ position: 1
 layout: documentation
 meta:
   title: Overview | Koust | HubRise
-  description: Koust overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
+  description: Koust overview, reasons for connecting Koust to HubRise and summary of integrated features. Synchronise data between your EPOS, Koust and your other apps.
 path_override: /
 ---
 
 ---
 
-**IMPORTANT NOTE:** This documentation is available <Link to="/fr/apps/koust" addLocalePrefix={false}>in French only</Link>.
+**IMPORTANT NOTE**: Full documentation available <Link to="/fr/apps/koust" addLocalePrefix={false}>in French</Link>.
 
 ---
+
+## Description
+
+Koust is an application for restaurateurs to manage costs and inventory. Koust is designed for all types of food establishments, from independent restaurants to chains and collective catering outlets.
+
+It offers a broad range of features split into different branches:
+
+- The management branch provides dashboards to track your establishment's revenues and margins in real time.
+- The stock branch allows you to place procurement orders, carry out inventories and analyse purchases.
+- The production branch offers production schedules and semi-finished products tracking.
+
+Koust was created in September 2016. Its main goals are to increase restaurateurs' gross margin, improve productivity and reduce commodity costs.
+
+## Integration features
+
+When connected with HubRise, Koust can be used to:
+
+- Pull the menu from a HubRise catalog.
+- Pull orders from HubRise.
+
+## Why connect?
+
+By connecting Koust to HubRise, you can manage purchases and sales from your EPOS, your website and your other applications. You can also manage your stocks and inventories, and synchronise your catalog and your orders.
+
+Thanks to HubRise, synchronise your menu, your customer and order information with your EPOS, online ordering, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management, delivery services, eMarketing (SMS/emailing), business intelligence, inventory management, loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our [Apps page](/apps).
+
+## Prerequisites
+
+You must have a Koust account to establish a connection between Koust and HubRise. To create your Koust account, visit https://koustapp.com.

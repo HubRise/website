@@ -7,7 +7,7 @@ meta:
   description:
 ---
 
-[comment]: # 'This page has been duplicated in .../contributing/fr'
+[comment]: # "This page has been duplicated in .../contributing/fr"
 
 ## General Recommendations
 

@@ -4,25 +4,27 @@ meta:
   description:
 content:
   hero:
-    title: Single Monthly Fee, Unlimited Usage
+    title: Fair Pricing. No Commitment.
   offer:
     pricing:
       chunk_1: 25€ / Month
       chunk_2: per location
     features:
       - Unlimited orders
-      - Unlimited products
       - Unlimited connections
-      - No commitment
+      - No setup fee
     link:
       text: Start now
       to: https://manager.hubrise.com/signup
   specials:
-    - paragraph_chunk_1: 'Free: '
-      paragraph_chunk_2: Up to 50 orders and 50 customers per month.
+    - highlight: "Free Signup:"
+      text: No setup fee, no credit card required.
       link:
         text: Start Now
         to: https://manager.hubrise.com/signup
-    - paragraph_chunk_1: 'Large accounts: '
-      paragraph_chunk_2: prices are negotiable starting from 50 locations.
+    - highlight: "Large Accounts:"
+      text: Volume discount available for 50 locations or more.
+      button: Contact Us
+    - highlight: "Dark Kitchen:"
+      text: Additional fees may apply.
       button: Contact Us

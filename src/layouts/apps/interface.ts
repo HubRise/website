@@ -1,4 +1,4 @@
-import { RootContext } from '@utils/context'
+import { RootContext } from "@utils/context"
 
 export interface AppsContext extends RootContext {
   apps: IApps

@@ -3,6 +3,10 @@
   toPath: /developers/api/general-concepts
 - fromPath: /fr/developers/api
   toPath: /fr/developers/api/general-concepts
+- fromPath: /developers/authentication
+  toPath: /developers/api/authentication
+- fromPath: /fr/developers/authentication
+  toPath: /fr/developers/api/authentication
 
 # iKentoo <-> Lightspeed
 - fromPath: /apps/ikentoo

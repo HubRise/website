@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:experimental
-FROM node:14.17.0-buster
+FROM node:16.1.0-buster
 
 # -------------
 # Install packages
@@ -50,4 +50,4 @@ ENTRYPOINT ["docker_dev/bin/entrypoint.sh"]
 
 # Launch Gatsby server (local development)
 USER node
-CMD ["./node_modules/.bin/gatsby", "develop", "-H", "0.0.0.0", "-p", "8000"]
+CMD ["bash", "-c", "yarn run gatsby clean ; yarn run gatsby develop -H 0.0.0.0 -p 8000"]

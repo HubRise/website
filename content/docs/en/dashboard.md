@@ -17,4 +17,4 @@ Click the **SALES**, **ORDERS**, or **NEW CUSTOMERS** tabs to display the relate
   <source src="../images/010-en-dashboard-tab-switching.webm" type="video/webm"/>
 </video>
 
-[comment]: # 'poor video resolution'
+[comment]: # "poor video resolution"

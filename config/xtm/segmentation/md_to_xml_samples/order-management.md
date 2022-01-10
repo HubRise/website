@@ -518,12 +518,12 @@ Order charges increase the price paid by the customer.
 
 #### Attributes:
 
-| Name                                 | Type                                                        | Description                                                        |
-| ------------------------------------ | ----------------------------------------------------------- | ------------------------------------------------------------------ |
-| `name`                               | string                                                      | The name of the charge.                                            |
-| `ref` <Label type="optional" />      | string                                                      | The ref that identifies the charge.                                |
-| `price`                              | [Money](/developers/api/general-concepts/#monetary-values)  | The charge amount.                                                 |
-| `tax_rate` <Label type="optional" /> | [decimal](/developers/api/general-concepts/#decimal-values) | The tax rate applied to the charge. See [Tax Rates](#tax-rates).   |
+| Name                                 | Type                                                        | Description                                                      |
+| ------------------------------------ | ----------------------------------------------------------- | ---------------------------------------------------------------- |
+| `name`                               | string                                                      | The name of the charge.                                          |
+| `ref` <Label type="optional" />      | string                                                      | The ref that identifies the charge.                              |
+| `price`                              | [Money](/developers/api/general-concepts/#monetary-values)  | The charge amount.                                               |
+| `tax_rate` <Label type="optional" /> | [decimal](/developers/api/general-concepts/#decimal-values) | The tax rate applied to the charge. See [Tax Rates](#tax-rates). |
 
 **Note:** the `charge_type`, `charge_price` and `charge_ref` fields are deprecated. They are present in the API for backwards compatibility, but their values should be ignored.
 

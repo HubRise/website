@@ -4,12 +4,12 @@ position: 1
 layout: documentation
 meta:
   title: Overview | TastyCloud | HubRise
-  description: TastyCloud overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
+  description: TastyCloud overview, reasons for connecting TastyCloud to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 gallery:
   - __gallery-001.png
 path_override: /
 app_info:
-  category: Online ordering for restaurants
+  category: Online Ordering
   availability: France
   price_range:
   website: https://www.tastycloud.fr
@@ -18,30 +18,30 @@ app_info:
 
 ## Description
 
-TastyCloud is a digital menu and ordering solution for restaurants, which offers multiple options to your customers:
+TastyCloud is an online ordering solution intended for French restaurateurs.
 
-- View the menu at the restaurant on a variety of screen types.
-- Order from a self ordering kiosk, or at the table by scanning a QR code with their smartphone.
-- Order delivery or collection from your own website on their smartphones, tablets, or desktop computer from anywhere at anytime.
+TastyCloud includes a back office that can be used to create and edit a menu with descriptions and images, customise the payment journey, configure the store's business hours, translate the menu in up to 25 languages of your choice, access the list of customers and track sales.
 
-TastyCloud lets you set your hours of operation and delivery, change your menu on the fly, and offer alternatives. Are your customers craving gluten free, vegan or other options? TastyCloud makes it easy for them to find these.
+Customers can consult the restaurant's menu from their table via a QR code, or order online via the website.
 
-TastyCloud integrates with your existing marketing website and your Facebook, Twitter, and other social networks.
+The restaurateur can set up delivery and click & collect systems.
+
+## Integration features
+
+Once connected to HubRise, TastyCloud can be used to:
+
+- Push orders into HubRise, including order statuses.
+- Push customer information into HubRise.
+- Pull the menu from a HubRise catalog.
+
+TastyCloud can be connected to HubRise via the TastyCloud support line.
+
+## Why connect?
+
+By connecting TastyCloud to HubRise, your online ordering solution can communicate with your other everyday applications. Push online orders to your EPOS, your connected printer, your kitchen display screen or your inventory management solution. Import your EPOS solution's product catalog into TastyCloud.
+
+Thanks to HubRise, you can synchronise your menu, your customer information and your orders with your EPOS solution, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management solutions or delivery services, eMarketing (SMS/emailing) solutions, business intelligence, stock management and customer loyalty systems, and more. The number of compatible applications is constantly increasing. To see which apps you can connect, see our [Apps page](/apps).
 
 ## Prerequisites
 
-To create a connection between TastyCloud and HubRise, you must have an existing TastyCloud website and HubRise Account.
-
-If you don't have a TastyCloud website, you can register for a demo through the [TastyCloud website](https://www.tastycloud.fr/).
-If you don't have an existing HubRise Account, you can register one in just a few clicks on the [HubRise Signup page](https://manager.hubrise.com/signup).
-
-## Integration Features
-
-Connecting TastyCloud to HubRise allows TastyCloud to:
-
-- Push orders and customers to HubRise.
-- Pull a catalog from HubRise to ease the manual ref code mapping process.
-
-## Why Connect?
-
-TastyCloud can be connected to HubRise for your website and other apps to work as a cohesive whole. It could be your EPOS, your loyalty systems, the kitchen display system you use or your preferred marketing solution. This allows you to sync your menu, your customer and order information. For more information, see the [HubRise User Guide](/docs).
+You must have a TastyCloud account to establish a connection between TastyCloud and HubRise.

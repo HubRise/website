@@ -9,9 +9,10 @@ gallery:
   - __gallery-001.png
   - __gallery-002.png
   - __gallery-003.png
+  - __gallery-004.png
 path_override: /
 app_info:
-  category: Online ordering for restaurants
+  category: Online Ordering
   availability: Worldwide
   price_range: €69-€109 / month
   website: https://www.livepepper.com
@@ -28,8 +29,9 @@ Designed for both independent restaurants and franchises, LivePepper comes with 
 
 LivePepper can create a full website including static marketing pages and online ordering. Restaurants can also incorporate LivePepper's online ordering module into an existing marketing website. LivePepper websites can be customised from a template, or designed from scratch and tailored to the restaurant's graphical charter and specifications.
 
-Restaurant managers have complete control over their LivePepper website. 
+Restaurant managers have complete control over their LivePepper website.
 From the back office they can:
+
 - Make changes to the marketing website copy and assets.
 - Create and update the online menu, with product customisation and limit on toppings.
 - Set up promotions, loyalty and a referral program.
@@ -39,6 +41,7 @@ From the back office they can:
 - Add new payment methods.
 - Change many other settings to best fit their needs.
 
+Finally, customers can contract LivePepper to manually populate their catalog's ref codes by contacting their LivePepper support representative.
 
 ## Integration Features
 
@@ -56,7 +59,7 @@ LivePepper can be connected to HubRise from the LivePepper back office.
 
 ## Why Connect?
 
-Connecting LivePepper to HubRise allows your online ordering solution to communicate with other applications you use every day. Send online orders to your EPOS, to an intelligent printer, a Kitchen Display screen or to your inventory management solution. Synchronise loyalty points and emailing lists. Pull food delivery platforms orders into LivePepper to manage all your online orders in the same user interface. 
+Connecting LivePepper to HubRise allows your online ordering solution to communicate with other applications you use every day. Send online orders to your EPOS, to an intelligent printer, a Kitchen Display screen or to your inventory management solution. Synchronise loyalty points and emailing lists. Pull food delivery platforms orders into LivePepper to manage all your online orders in the same user interface.
 
 Via HubRise, synchronise your menu, your customer and order information with your EPOS, online ordering, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management, delivery services, eMarketing (SMS/emailing), business intelligence, stock management, loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our [Apps page](/apps).
 

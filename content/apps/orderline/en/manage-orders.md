@@ -84,8 +84,8 @@ OrderLine connects to printers recognised by the operating system. It uses the s
 To print an Order receipt from a local printer, follow these steps:
 
 1. View order details.
-2. Click **PRINT**.
-3. Follow the instructions on the browser print dialog.
+1. Click **PRINT**.
+1. Follow the instructions on the browser print dialog.
 
 OrderLine also prints order receipts automatically upon order reception, skipping the print dialog. Auto printing requires the printer to be registered in Google Cloud Print. For more details, see [Printing](/apps/orderline/settings/#printing).
 

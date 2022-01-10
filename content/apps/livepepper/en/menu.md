@@ -15,6 +15,12 @@ Some EPOS solutions offer the ability to export the menu to HubRise, allowing yo
 
 Before pulling your menu into LivePepper, you first need to populate a HubRise catalog. Refer to your connected EPOS documentation on the HubRise website for more information.
 
+---
+
+**IMPORTANT NOTE:** Make sure to associate ref codes to every product and option in your catalog. LivePepper will not pull a HubRise catalog if a ref code is missing.
+
+---
+
 To pull a HubRise catalog into LivePepper:
 
 1. Log in to your LivePepper back office.
@@ -36,14 +42,14 @@ In this example, we have removed a product size from LivePepper, and then restor
 
 ## Pushing the Menu
 
-You can push your LivePepper menu to HubRise, if you want to share it with other connected apps.
+You can push your LivePepper menu into HubRise, if you want to share it with other connected apps.
 
-To push your menu to HubRise:
+To push your menu into HubRise:
 
 1. Log in to your LivePepper back office.
 1. Click **My menu** > **Import / Export**.
 1. In the **HubRise** section, click **Export**.
 
-<video controls title="Export to HubRise Catalog">
-  <source src="../images/006-export-to-hubrise-catalog.webm" type="video/webm"/>
-</video>
+The export can take a bit of time, especially if your menu contains pictures.
+
+If some ref codes are missing in your menu, LivePepper will generate unique ref codes using product or option names.

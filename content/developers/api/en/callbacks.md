@@ -1,6 +1,6 @@
 ---
 title: Callbacks
-position: 7
+position: 8
 layout: documentation
 meta:
   title: Callbacks | API | HubRise
@@ -45,7 +45,7 @@ Active callbacks receive a `POST` HTTP request each time an event occurs. The re
 
 The callback must return a `200` HTTP code to acknowledge the reception of the event. This return code makes HubRise delete the event. If the callback fails to acknowledge the event, HubRise attempts to resend it later. In the meantime, unacknowledged events remain accessible through `GET /callback/events`.
 
-If you use an active callback, we recommend that you check the authenticity of each event. The verification relies on computing the hexadecimal HMAC digest of the event request body. Here is a sample script in Ruby that you can use as a reference:
+If you use an active callback, we recommend that you check the authenticity of each event. The verification relies on computing the hexadecimal HMAC digest of the event request body. Here is a sample script in Ruby:
 
 ```ruby
 require "openssl"
@@ -55,6 +55,17 @@ payload = request.raw_body
 
 digest = OpenSSL::Digest.new('sha256')
 calculated_hmac = OpenSSL::HMAC.hexdigest(digest, client_secret, payload)
+```
+
+The same script in Javascript, using Node's `crypto` lib:
+
+```javascript
+import { createHmac } from "crypto"
+
+client_secret = "your_client_secret"
+payload = req.rawBody
+
+const calculatedHmac = createHmac("sha256", client_secret).update(payload).digest("hex")
 ```
 
 Compare the calculated HMAC to the value in the `X-HubRise-Hmac-SHA256` header of the event notification. If they match, then you can be sure that the event was sent from HubRise. Otherwise, simply return an error and ignore the event.
@@ -98,9 +109,9 @@ If no callback has been set, the response will be as follows:
 }
 ```
 
-### 1.2. Create Callback
+### 1.2. Create or Update Callback
 
-Creates a callback for the connection.
+Creates a callback if none exists, replace the existing callback otherwise.
 
 <CallSummaryTable
   endpoint="POST /callback"

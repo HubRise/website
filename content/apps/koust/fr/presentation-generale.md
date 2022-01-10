@@ -4,7 +4,7 @@ position: 1
 layout: documentation
 meta:
   title: Présentation générale | Koust | HubRise
-  description: Présentation générale de Koust, les raisons de connecter votre caisse à HubRise et liste des fonctionnalités de l'intégration avec HubRise.
+  description: Présentation générale de Koust, les raisons de connecter votre caisse à HubRise et fonctionnalités de l'intégration avec HubRise.
 gallery:
 path_override: /
 app_info:
@@ -36,7 +36,9 @@ L'intégration de Koust avec HubRise permet de :
 
 ## Pourquoi se connecter ?
 
-En connectant Koust à HubRise, vous pourrez gérer les achats et les ventes provenant de votre système d'encaissement, de votre site internet, et de vos autres applications. Vous pourrez aussi gérer vos stocks et vos inventaires, ainsi que synchroniser votre catalogue et vos commandes. Pour voir les applications vous pouvez connecter, consultez la [page Apps](/apps).
+En connectant Koust à HubRise, vous pourrez gérer les achats et les ventes provenant de votre système d'encaissement, de votre site internet, et de vos autres applications. Vous pourrez aussi gérer vos stocks et vos inventaires, ainsi que synchroniser votre catalogue et vos commandes.
+
+Grâce à HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes avec votre solution d'encaissement, de commande en ligne, les plateformes de livraison de repas (dont Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs ou de services de livraison, les solutions eMarketing (SMS / eMailing), business intelligence, systèmes de gestion de stock et de fidélisation client, et bien d'autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, consultez notre [page Apps](/apps).
 
 ## Prérequis
 

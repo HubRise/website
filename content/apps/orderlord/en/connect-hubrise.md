@@ -20,8 +20,8 @@ Before you connect your HubRise account to OrderLord, you should include OrderLo
 1. From the HubRise back office, select **SETTINGS** > **ACCOUNTS**. If you have multiple accounts, select the account to modify.
 1. In the **Permissions** section, select **Add**.
 1. In the **EMAIL** column, enter `support@orderlord.com`.
-2. In the **ROLE** column, set `Manager` as the new user's role.
-3. Click the plus icon <InlineImage width="13" height="13">![Plus icon](../images/add-icon.png)</InlineImage> to add the new user.
+1. In the **ROLE** column, set `Manager` as the new user's role.
+1. Click the plus icon <InlineImage width="13" height="13">![Plus icon](../images/add-icon.png)</InlineImage> to add the new user.
 
 Then, contact OrderLord support at [support@orderlord.com](mailto:support@orderlord.com) and provide them with your HubRise account name and ID and the specific locations where you want to activate the integration.
 OrderLord support will be able to access your account and enable the integration for you.

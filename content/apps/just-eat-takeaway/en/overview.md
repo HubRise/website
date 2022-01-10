@@ -3,15 +3,15 @@ position: 1
 title: Overview
 layout: documentation
 meta:
-  title: Just Eat Takeaway.com Connection to HubRise - Overview
-  description: Connect Just Eat Takeaway.com to HubRise, and receive your orders in your EPOS, Kitchen Display System (KDS), or Delivery Management Solution (DMS).
+  title: Overview | Just Eat Takeaway | HubRise
+  description: Just Eat Takeaway Bridge overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 gallery:
-  - __gallery-001.png
-  - __gallery-002.png
+  - __gallery-001-en.png
+  - __gallery-002-en.png
 path_override: /
 app_info:
   category: Food Ordering Platforms
-  availability: Austria, Belgium, Bulgaria, Denmark, France, Germany, Ireland, Italy, Luxembourg, Netherlands, Norway, Poland, Portugal, Romania, Spain, Switzerland, United Kingdom, Australia, New Zealand, Israel, Canada
+  availability: Australia, Austria, Belgium, Bulgaria, Canada, Denmark, France, Germany, Ireland, Israel, Italy, Luxembourg, Netherlands, New Zealand, Norway, Poland, Portugal, Romania, Spain, Switzerland, United Kingdom
   website: https://www.justeattakeaway.com/
   contact:
 ---

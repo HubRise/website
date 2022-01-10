@@ -1,15 +1,15 @@
-import * as React from 'react'
-import { graphql, navigate } from 'gatsby'
-import { useTranslation } from 'react-i18next'
+import * as React from "react"
+import { graphql, navigate } from "gatsby"
+import { useTranslation } from "react-i18next"
 
-import SEO from '@components/Seo'
-import MDXProvider from '@components/MdxProvider'
-import Breadcrumbs, { Breadcrumb } from '@components/Breadcrumbs'
-import { Post, Sidebar } from '@components/blog'
-import { BlogNode } from '@components/blog/Post/interface'
-import { BlogPostContext } from './interface'
-import { Meta } from '@components/Seo'
-import { getLocalizedUrl } from '@utils/locales'
+import { BlogPostContext } from "./interface"
+
+import SEO, { Meta } from "@layouts/shared/components/Seo"
+import MDXProvider from "@layouts/shared/components/MdxProvider"
+import Breadcrumbs, { Breadcrumb } from "@layouts/shared/components/Breadcrumbs"
+import { Post, Sidebar } from "@layouts/shared/components/Blog"
+import { BlogNode } from "@layouts/shared/components/Blog/Post/interface"
+import { getLocalizedUrl, useLocaleCode } from "@utils/locales"
 
 export interface BlogPostProps {
   data: BlogPostData
@@ -21,7 +21,7 @@ interface BlogPostData {
 }
 
 interface BlogPostNode extends BlogNode {
-  frontmatter: BlogNode['frontmatter'] & {
+  frontmatter: BlogNode["frontmatter"] & {
     body: string
     meta: Meta
   }
@@ -50,27 +50,29 @@ export const graphqlQuery = graphql`
 `
 
 const BlogPost = ({ data, pageContext }: BlogPostProps): JSX.Element => {
+  const { t } = useTranslation()
+  const localeCode = useLocaleCode()
+
   const mdxNode = data.mdxNode
   const { frontmatter } = mdxNode
   const { meta } = frontmatter
-  const { t } = useTranslation()
 
   function handleQueryChange(newQuery: string): void {
-    let pathname = getLocalizedUrl('/blog', pageContext.localeCode)
+    const pathname = getLocalizedUrl("/blog", localeCode)
     navigate(`${pathname}?q=${newQuery.trim()}`)
   }
 
   const breadcrumbs: Array<Breadcrumb> = [
     {
       path: pageContext.mainBlogPath,
-      label: t('blog.title')
+      label: t("blog.title"),
     },
-    { label: mdxNode.frontmatter.title }
+    { label: mdxNode.frontmatter.title },
   ]
 
   return (
     <MDXProvider>
-      <SEO localeCode={pageContext.localeCode} meta={meta} />
+      <SEO meta={meta} />
 
       <Breadcrumbs breadcrumbs={breadcrumbs} />
 

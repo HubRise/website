@@ -1,6 +1,6 @@
 ---
 title: FAQs
-position: 7
+position: 9
 layout: documentation
 meta:
   title: FAQs | Deliveroo | HubRise

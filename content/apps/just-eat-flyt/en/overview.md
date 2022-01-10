@@ -3,15 +3,15 @@ position: 1
 title: Overview
 layout: documentation
 meta:
-  title: Just Eat Flyt Connection to HubRise - Overview
-  description: Just Eat overview and why restaurants and convenience stores should connect it to HubRise. With a connection orders are sent to your working tools - EPOS, KDS.
+  title: Overview | Just Eat Flyt | HubRise
+  description: Just Eat Flyt Bridge overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 gallery:
   - __gallery-001.png
   - __gallery-002.png
 path_override: /
 app_info:
   category: Food Ordering Platforms
-  availability: United Kingdom, Ireland, Canada
+  availability: Canada, Ireland, United Kingdom
   website: https://just-eat.co.uk
   contact:
 ---
@@ -28,6 +28,7 @@ Just Eat Flyt Bridge allows you to connect to HubRise the following platforms:
 
 - Just-Eat.co.uk
 - Just-Eat.ie
+- Menulog.com.au
 - SkipTheDishes.com
 
 ---

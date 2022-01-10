@@ -4,7 +4,7 @@ position: 1
 layout: documentation
 meta:
   title: Présentation générale | Store Factory | HubRise
-  description: Présentation générale de Store Factory, les raisons de connecter votre solution de commande en ligne à HubRise et liste des fonctionnalités de l'intégration avec HubRise.
+  description: Présentation générale de Store Factory, les raisons de connecter votre solution de commande en ligne à HubRise et fonctionnalités de l'intégration avec HubRise.
 gallery:
 path_override: /
 app_info:

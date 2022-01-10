@@ -56,7 +56,7 @@ Follow the instructions in the previous section. In the **Mapping des produits**
 
 ## Discounts (Promotions)
 
-Promotions in TastyCloud are called discounts in HubRise. Discounts cannot need be mapped on TastyCloud, which means that they are sent ot HubRise without a ref code. This may create issues with some EPOS systems. Refer to your connected EPOS documentation on the HubRise website to verify if this works for you, or contact TastyCloud support.
+Promotions in TastyCloud are called discounts in HubRise. Discounts cannot be mapped on TastyCloud, which means that they are sent to HubRise without a ref code. This may create issues with some EPOS systems. Refer to your connected EPOS documentation on the HubRise website to verify if this works for you, or contact TastyCloud support.
 
 ## Payment Methods
 

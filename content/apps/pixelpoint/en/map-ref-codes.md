@@ -52,4 +52,4 @@ Your PixelPoint EPOS has a different code for each payment method. Each payment 
 
 When the customer chooses to pay upon delivery or collection, no payment information is sent to the EPOS, as doing so would close the transaction.
 
-[comment]: # 'Need to check all links to: Setting Service Types.'
+[comment]: # "Need to check all links to: Setting Service Types."

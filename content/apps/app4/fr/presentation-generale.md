@@ -4,7 +4,7 @@ position: 1
 layout: documentation
 meta:
   title: Présentation générale | App4 | HubRise
-  description: Présentation générale d'App4, les raisons de connecter votre site à HubRise et liste des fonctionnalités de l'intégration avec HubRise.
+  description: Présentation générale d'App4, les raisons de connecter votre site à HubRise et fonctionnalités de l'intégration avec HubRise.
 gallery:
   - __gallery-001.png
   - __gallery-002.png
@@ -43,7 +43,7 @@ App4 peut être connecté à HubRise via le support de App4.
 
 En connectant App4 à HubRise, vous permettez à votre solution de commande en ligne de communiquer avec d'autres applications que vous utilisez de manière quotidienne.
 
-Synchronisez votre menu, vos informations clients et vos commandes avec les solutions d'encaissement, les solutions de gestion de livreurs ou de services de livraison, les solutions eMarketing (SMS / eMailing), business intelligence, systèmes de gestion de stock et de fidélisation client, et bien d’autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, consultez notre [page Apps](/apps).
+Synchronisez votre menu, vos informations clients et vos commandes avec les solutions d'encaissement, les solutions de gestion de livreurs ou de services de livraison, les solutions eMarketing (SMS / eMailing), business intelligence, systèmes de gestion de stock et de fidélisation client, et bien d'autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, consultez notre [page Apps](/apps).
 
 ## Prérequis
 

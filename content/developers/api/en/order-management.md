@@ -1,6 +1,6 @@
 ---
 title: Order Management
-position: 3
+position: 4
 layout: documentation
 meta:
   title: Order Management | API | HubRise
@@ -34,7 +34,7 @@ Almost all fields are optional. In fact the simplest order that can be created o
 | `customer_id` <Label type="optional" />                               | string                                                     | The id of the customer who placed the order. Cannot be used together with `customer_list_id`, `customer_private_ref`, or `customer`. For more information, see [Order's Customer](#order-s-customer).                                                                       |
 | `customer_list_id` & `customer_private_ref` <Label type="optional" /> | string                                                     | The private ref and customer list of the customer who placed the order. Cannot be used together with `customer_id` or `customer`. For more information, see [Order's Customer](#order-s-customer).                                                                          |
 | `customer` <Label type="optional" />                                  | [Customer](#order-s-customer)                              | When none of `customer_id`, `customer_list_id`, or `customer_private_ref` are passed, the order is a guest order. In this case, the `customer` object can include customer details specific to this order. For more information, see [Order's Customer](#order-s-customer). |
-| `customer_notes` <Label type="optional" />                            | string                                                     | Information provided by the customer, eg: delivery notes, etc.                                                                                                                                                                                                              |
+| `customer_notes` <Label type="optional" />                            | string                                                     | Information provided by the customer about the order.                                                                                                                                                                                                                       |
 | `seller_notes` <Label type="optional" />                              | string                                                     | Information or message by the merchant, for example a note to notify the customer that a product has been switched with another.                                                                                                                                            |
 | `coupon_codes` <Label type="optional" />                              | string[]                                                   | The coupon codes used in this order.                                                                                                                                                                                                                                        |
 | `collection_code` <Label type="optional" />                           | string                                                     | An order reference shared with the customer to ease the processing and collection or delivery of an order. It does not have to be unique.                                                                                                                                   |
@@ -352,13 +352,13 @@ Orders of any location of the account:
 
 #### Parameters:
 
-| Name            | Type                                                      | Description                                                                                                                                      |
-| --------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `private_ref`   | string                                                    | Filters results by `private_ref`, for instance: `private_ref=13456`.                                                                             |
-| `status`        | string                                                    | Filters results by `status`, for instance: `status=accepted`.                                                                                    |
-| `created_by`    | string                                                    | Filters results by client name. For instance, `created_by=shopify` only returns the orders placed through this client.                           |
-| `after, before` | [Time](/developers/api/general-concepts/#dates-and-times) | `after` is inclusive, `before` is exclusive. For instance, `after=2020-07-01T00:00&before=2020-07-02T00:00` returns orders placed on 2020-07-01. |
-| `customer_id`   | string                                                    | Returns the orders placed by a customer, for instance: `customer_id=ve343`.                                                                      |
+| Name            | Type                                                      | Description                                                                                                                                                                                         |
+| --------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `private_ref`   | string                                                    | Filters orders by `private_ref`, for instance: `private_ref=13456`.                                                                                                                                 |
+| `status`        | string                                                    | Filters orders by `status`, for instance: `status=accepted`.                                                                                                                                        |
+| `created_by`    | string                                                    | Filters orders by client name. For instance, `created_by=shopify` only returns the orders placed through this client.                                                                               |
+| `after, before` | [Time](/developers/api/general-concepts/#dates-and-times) | Filters orders by creation time. `after` is inclusive, `before` is exclusive. For instance, `after=2020-07-01T00:00:00+02:00&before=2020-07-02T00:00:00+02:00` returns orders placed on 2020-07-01. |
+| `customer_id`   | string                                                    | Returns the orders placed by a customer, for instance: `customer_id=ve343`.                                                                                                                         |
 
 <details>
 
@@ -732,7 +732,7 @@ Orders do not have to go through all steps. The sequence actually depends on the
 1. `new` (order placed online)
 1. `received` (received in the POS)
 1. `accepted` (accepted by a store operator)
-1. `shipped`
+1. `in_delivery`
 1. `completed`
 
 #### Retail order created in the POS:
@@ -752,7 +752,7 @@ Orders do not have to go through all steps. The sequence actually depends on the
 | `quantity`                                 | [decimal](/developers/api/general-concepts/#decimal-values) | The quantity of items ordered.                                                                                                                                                              |
 | `subtotal` <Label type="optional" />       | [Money](/developers/api/general-concepts/#monetary-values)  | Calculated by HubRise. It is the sum of the price of the item and its options, multiplied by the quantity.                                                                                  |
 | `tax_rate` <Label type="optional" />       | [decimal](/developers/api/general-concepts/#decimal-values) | The tax rate applied to the item. See [Tax Rates](#tax-rates).                                                                                                                              |
-| `customer_notes` <Label type="optional" /> | string                                                      | Information provided by the customer about the preparation or delivery of the item.                                                                                                         |
+| `customer_notes` <Label type="optional" /> | string                                                      | Information provided by the customer about the preparation of the item.                                                                                                                     |
 | `points_earned` <Label type="optional" />  | [decimal](/developers/api/general-concepts/#decimal-values) | Loyalty points earned by the customer. This field is not linked to a particular loyalty card: a loyalty operation must be included in the order to effectively add/remove points to a card. |
 | `points_used` <Label type="optional" />    | [decimal](/developers/api/general-concepts/#decimal-values) | Loyalty points used by the customer. Same remark as above.                                                                                                                                  |
 | `options` <Label type="optional" />        | [OrderOption](#order-options)[]                             | Item customization.                                                                                                                                                                         |

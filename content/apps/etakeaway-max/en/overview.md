@@ -15,12 +15,6 @@ app_info:
   contact: info@etakeawaymax.co.uk
 ---
 
----
-
-**IMPORTANT NOTE:** A full documentation of this integration is in progress.
-
----
-
 ## Description
 
 eTakeaway Max offers both online ordering and EPOS solutions for hospitality and retail settings. The existing integration allows to connect HubRise with the eTakeaway Max EPOS.

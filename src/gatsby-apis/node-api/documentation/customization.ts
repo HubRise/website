@@ -1,5 +1,5 @@
-import { GraphQLFunction } from '../util/types'
-import { LocaleCode } from '../../../utils/locales'
+import { GraphQLFunction } from "../util/types"
+import { LocaleCode } from "../../../utils/locales"
 
 export interface Customization {
   name: string
@@ -25,9 +25,7 @@ interface CustomizationGQL {
  * Returns a map allowing to find a Customization by its directory path relative to /content (eg "apps/deliveroo/en")
  * @param graphql
  */
-export async function generateCustomizationMap(
-  graphql: GraphQLFunction
-): Promise<CustomizationMap> {
+export async function generateCustomizationMap(graphql: GraphQLFunction): Promise<CustomizationMap> {
   const { data, errors } = await graphql<CustomizationGQL>(`
     query generateCustomizationMap {
       allFile(filter: { name: { eq: "customization" } }) {
@@ -41,10 +39,10 @@ export async function generateCustomizationMap(
     }
   `)
   if (errors) throw errors
-  if (!data) throw 'GraphQL returned no data'
+  if (!data) throw "GraphQL returned no data"
 
   const result = new Map<string, Customization>()
-  for (let node of data.allFile.nodes) {
+  for (const node of data.allFile.nodes) {
     if (!node.childYaml.parsedContent) {
       throw `The content/${node.relativeDirectory}/customization.yaml file is empty. It must at least define a "name".`
     }

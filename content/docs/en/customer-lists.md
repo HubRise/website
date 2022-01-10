@@ -31,8 +31,8 @@ The **Customer list** section displays the following information:
 To add a customer list:
 
 1. In the section **SETTINGS** > **ACCOUNTS** > **Customer lists**, click **Add a customer list**.
-2. Enter the name for the new customer list. The recommended naming convention is to name the Account customer list with the same name as your Account, and location customer lists as **Account Name - Location Name**. For example, your default Account customer list may be **Fast Pizza**, and the customer list for a location would be **Fast Pizza - Baker Street**.
-3. Click **Add a customer list** to save the new list.
+1. Enter the name for the new customer list. The recommended naming convention is to name the Account customer list with the same name as your Account, and location customer lists as **Account Name - Location Name**. For example, your default Account customer list may be **Fast Pizza**, and the customer list for a location would be **Fast Pizza - Baker Street**.
+1. Click **Add a customer list** to save the new list.
 
 ## View a Customer List
 
@@ -47,12 +47,12 @@ To view the details of a customer list, click the name of the list. It will auto
 To change the name of a customer list:
 
 1. In **SETTINGS** > **ACCOUNTS** > **Customer lists** section, click the edit icon <InlineImage width="15" height="15">![Edit Icon](../images/028-en-pen-icon.png)</InlineImage>for the customer list to update.
-2. Enter the new name of the customer list.
-3. Click **Edit customer list** to save the changes.
+1. Enter the new name of the customer list.
+1. Click **Edit customer list** to save the changes.
 
 ## Delete a Customer List
 
 Customer lists can only be deleted when there are no active connections to them from an app, or when removing them will leave no Customer lists connected to the Account.
 
 1. In **SETTINGS** > **ACCOUNTS** > **Customer lists** section, click the remove icon <InlineImage width="15" height="16">![Trash icon](../images/057-2x-trash-icon.png)</InlineImage>for the customer list to delete.
-2. Click **Delete** to confirm.
+1. Click **Delete** to confirm.

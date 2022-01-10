@@ -10,7 +10,7 @@ gallery:
   - __gallery-002.png
 path_override: /
 app_info:
-  category: Online ordering
+  category: Online Ordering
   availability: France
   price_range:
   website: https://www.aquila-cms.com/
@@ -29,12 +29,6 @@ Aquila CMS allows businesses to:
 - Track customers and their reviews to enhance service.
 
 NextSourcia offers Aquila CMS as a hosted version, or as open source software that companies can install and manage themselves. New features can be added through licensed plugins, letting you tweak Aquila to best match your company's needs.
-
-## Prerequisites
-
-To establish a connection between Aquila and HubRise, you must have an existing Aquila CMS account, and the HubRise connection module installed by NextSourcia.
-
-The HubRise connection module makes connecting HubRise easy. Aquila can connect to an existing or new HubRise Account.
 
 ## Integration Features
 

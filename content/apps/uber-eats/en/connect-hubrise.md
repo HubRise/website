@@ -24,6 +24,8 @@ Contact us at [support@hubrise.com](mailto:support@hubrise.com) and include the 
 - The URL link of the Uber Eats store you wish to connect. For example: [https://www.ubereats.com/gb/london/food-delivery/basilico-lavender-hill/tG_8KYb4RkaRPKOmZuERUA](https://www.ubereats.com/gb/london/food-delivery/basilico-lavender-hill/tG_8KYb4RkaRPKOmZuERUA).
 - Your HubRise location name and identifier. For example: `Fast Pizza London z6q31-0`.
 - The order acceptance mode you want to use for your store: manual accept or offered state mode. For more details, see our [FAQ](/apps/uber-eats/faqs/send-orders-to-epos-without-tablet).
+- If you intend to switch off your Uber Eats tablet and only rely on your EPOS to accept orders (enable RD-optional). For more details, see our [FAQ](/apps/uber-eats/faqs/send-orders-to-epos-without-tablet).
+- If you want to automatically cancel orders that cannot be sent to the EPOS (enable auto-cancel). For more details, see our [FAQ](/apps/uber-eats/faqs/send-orders-to-epos-without-tablet).
 - The service provided by Uber Eats, with or without delivery.
 - If you use product-level comments on your Uber Eats store, inform us if you want to keep using them, otherwise they will be disabled by default. For more information on managing product-level comments on HubRise, see [Product-Level Comments](/apps/uber-eats/map-ref-codes#product-level-comments).
 

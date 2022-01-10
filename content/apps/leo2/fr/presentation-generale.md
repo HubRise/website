@@ -4,7 +4,7 @@ position: 1
 layout: documentation
 meta:
   title: Présentation générale | LEO2 | HubRise
-  description: Présentation générale de LEO2, les raisons de connecter votre caisse à HubRise et liste des fonctionnalités de l'intégration avec HubRise.
+  description: Présentation générale de LEO2, les raisons de connecter votre caisse à HubRise et fonctionnalités de l'intégration avec HubRise.
 gallery:
   - __gallery-001.png
   - __gallery-002.png
@@ -17,22 +17,15 @@ app_info:
   contact: atoo@atoosarl.fr
 ---
 
----
-
-**REMARQUE IMPORTANTE :** Une documentation complète de l'intégration est en cours de rédaction.
-
----
-
 ## Description
 
-LEO2 est un logiciel de caisse développé par la société Atoo. Il est utilisé en dans de nombreux domaines, tels que la restauration, la boulangerie, ou encore la coiffure.
+LEO2 est un logiciel de caisse sous Windows développé par la société Atoo, disponible en français et en anglais. Il est utilisé dans de nombreux domaines, tels que la restauration, la boulangerie, ou encore la coiffure.
 
-LEO2 permet d'enregistrer les informations client et de visualiser l'historique des commandes. Il offre beaucoup d'autres fonctionnalités, telles que la gestion du multi-sites, la possibilité de mettre en place du click & collect, la visualisation de statistiques et des stocks, ou encore la gestion de la fidélité client.
+LEO2 permet la gestion du multi-sites, le suivi des stocks, la consultation de statistiques, ou encore la gestion de la fidélité client.
 
-LEO2 peut communiquer avec plusieurs types d'appareils, tels que des doseurs électroniques, des balances connectées, des
-monnayeurs, ou encore des écrans de production. Il est aussi possible de connecter à LEO2 un site internet e-commerce afin de centraliser toutes les commandes sur la caisse du commerçant.
+LEO2 peut communiquer avec des périphériques spécialisés, tels que des doseurs électroniques, des balances, des monnayeurs, ou encore des écrans de production.
 
-LEO2 fonctionne sous Windows, et est certifié NF525 depuis octobre 2014.
+LEO2 est certifié NF525, et donc conforme à la loi française "anti-fraudes" du 1er janvier 2018.
 
 ## Fonctionnalités de l'intégration
 
@@ -59,4 +52,4 @@ Grâce à HubRise, vous pouvez synchroniser votre menu, vos informations clients
 
 ## Prérequis
 
-Pour établir la connexion entre LEO2 et HubRise, vous devez simplement disposer d'une licence LEO2.
+Pour établir la connexion entre LEO2 et HubRise, vous devez disposer d'une licence LEO2 et du module Vente Externe.

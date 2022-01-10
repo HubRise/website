@@ -14,7 +14,7 @@ content:
   apps:
     title: New integrations for your app
     description: |
-      HubRise connects your app to the ones your customers use. Focus on the development of your app, while we look after integrations. [More than 40 available integrations](/apps).
+      HubRise connects your app to the ones your customers use. Focus on the development of your app, while we look after integrations. [More than 80 available integrations](/apps).
     categories:
       - EPOS
       - Online Ordering
@@ -66,8 +66,6 @@ content:
         filename: dan.jpg
       - name: Dimitri
         filename: dimitri.jpg
-      - name: Léo
-        filename: leo.jpg
       - name: Nick
         filename: nick.jpg
       - name: Vova

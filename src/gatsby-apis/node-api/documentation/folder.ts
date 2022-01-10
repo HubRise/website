@@ -1,11 +1,8 @@
-import { Customization, CustomizationMap } from './customization'
-import { GraphQLFunction } from '../util/types'
-import { defaultLocaleCode, LocaleCode } from '../../../utils/locales'
-import {
-  applyCopyFilesFrom,
-  buildFolderFiles,
-  buildFolders
-} from './folder.helpers'
+import { GraphQLFunction } from "../util/types"
+import { defaultLocaleCode, LocaleCode } from "../../../utils/locales"
+
+import { Customization, CustomizationMap } from "./customization"
+import { applyCopyFilesFrom, buildFolderFiles, buildFolders } from "./folder.helpers"
 
 export interface Folder {
   /** The folder name (eg "deliveroo"). */
@@ -32,7 +29,7 @@ export interface MDXDocumentationNode {
     localeCode: LocaleCode
   }
   frontmatter: {
-    layout: 'documentation' | 'documentation-index' | 'documentation-simple'
+    layout: "documentation" | "documentation-index" | "documentation-simple"
     path_override?: string
     position: number
     title: string
@@ -60,24 +57,11 @@ interface FolderGQL {
  * @param graphql
  * @param customizationsMap
  */
-export async function generateFolders(
-  graphql: GraphQLFunction,
-  customizationsMap: CustomizationMap
-): Promise<Folder> {
+export async function generateFolders(graphql: GraphQLFunction, customizationsMap: CustomizationMap): Promise<Folder> {
   const { data, errors } = await graphql<FolderGQL>(`
     query generateFolders {
       allMdx(
-        filter: {
-          frontmatter: {
-            layout: {
-              in: [
-                "documentation"
-                "documentation-index"
-                "documentation-simple"
-              ]
-            }
-          }
-        }
+        filter: { frontmatter: { layout: { in: ["documentation", "documentation-index", "documentation-simple"] } } }
       ) {
         nodes {
           fields {
@@ -102,12 +86,9 @@ export async function generateFolders(
     }
   `)
   if (errors) throw errors
-  if (!data) throw 'GraphQL returned no data'
+  if (!data) throw "GraphQL returned no data"
 
-  const folderFilesByPath = buildFolderFiles(
-    data.allMdx.nodes,
-    customizationsMap
-  )
+  const folderFilesByPath = buildFolderFiles(data.allMdx.nodes, customizationsMap)
   const rootFolder = buildFolders(folderFilesByPath)
   applyCopyFilesFrom(rootFolder)
   return rootFolder
@@ -121,25 +102,17 @@ export async function generateFolders(
  */
 export function getFolderPath(folder: Folder, localeCode: LocaleCode): string {
   if (!folder.parent) {
-    return localeCode === defaultLocaleCode ? '/' : `/${localeCode}`
+    return localeCode === defaultLocaleCode ? "/" : `/${localeCode}`
   }
 
   const customization = getFolderFiles(folder, localeCode)?.customization
   const parentPath = getFolderPath(folder.parent, localeCode)
   const overridenName = customization?.path_override || folder.name
-  return parentPath === '/'
-    ? `/${overridenName}`
-    : `${parentPath}/${overridenName}`
+  return parentPath === "/" ? `/${overridenName}` : `${parentPath}/${overridenName}`
 }
 
-export function getFolderFiles(
-  folder: Folder,
-  localeCode: LocaleCode
-): FolderFiles | undefined {
-  return (
-    folder.folderFilesMap[localeCode] ||
-    folder.folderFilesMap[defaultLocaleCode]
-  )
+export function getFolderFiles(folder: Folder, localeCode: LocaleCode): FolderFiles | undefined {
+  return folder.folderFilesMap[localeCode] || folder.folderFilesMap[defaultLocaleCode]
 }
 
 /**
@@ -147,5 +120,5 @@ export function getFolderFiles(
  * @param folder
  */
 export function getImagesRelativeDirectory(folder: Folder): string {
-  return folder.relativeDirectory + '/images'
+  return folder.relativeDirectory + "/images"
 }

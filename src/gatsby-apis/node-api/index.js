@@ -1,9 +1,9 @@
-'use strict'
+"use strict"
 
-require('./util/gatsby-inspector')
+require("./util/gatsby-inspector")
 
-require('source-map-support').install()
-require('ts-node').register()
+require("source-map-support").install()
+require("ts-node").register()
 
 const plugins = [
   require(`./404`),
@@ -14,13 +14,11 @@ const plugins = [
   require(`./pricing`),
   require(`./redirects`),
   require(`./translations`),
-  require(`./yaml-transformer`)
+  require(`./yaml-transformer`),
 ]
 
 async function runApiForPlugins(api, helpers) {
-  await Promise.all(
-    plugins.map((plugin) => plugin[api] && plugin[api](helpers))
-  )
+  await Promise.all(plugins.map((plugin) => plugin[api] && plugin[api](helpers)))
 }
 
 exports.createSchemaCustomization = async (helpers) => {

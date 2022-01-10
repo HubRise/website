@@ -4,7 +4,7 @@ position: 1
 layout: documentation
 meta:
   title: Présentation générale | PrestaShop | HubRise
-  description: Présentation générale de PrestaShop, les raisons de connecter votre solution de commande à HubRise et liste des fonctionnalités de l'intégration avec HubRise.
+  description: Présentation générale de PrestaShop, les raisons de connecter votre solution de commande à HubRise et fonctionnalités de l'intégration avec HubRise.
 gallery:
   - __gallery-fr-001.png
   - __gallery-fr-002.png

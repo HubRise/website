@@ -10,8 +10,8 @@ meta:
 HubRise supports an ever growing number of applications. The HubRise App Store is available from within HubRise through the following steps:
 
 1. Log in to HubRise through the [HubRise Login page](https://manager.hubrise.com/login). Don't have a user profile yet? You can create one for free with just your name, email address, and a secure password at the [HubRise registration page](https://manager.hubrise.com/signup).
-2. Click **CONNECTIONS**, then **View available apps**.
-3. Select the app to connect to your HubRise Account. Each app has instructions on how to connect to your Account or Location.
+1. Click **CONNECTIONS**, then **View available apps**.
+1. Select the app to connect to your HubRise Account. Each app has instructions on how to connect to your Account or Location.
 
 Apps are connected either with a HubRise Account or Location depending on the app. Typically, EPOS or Online Ordering System will connect to a Location, while marketing solutions connect to either the Account or Locations.
 

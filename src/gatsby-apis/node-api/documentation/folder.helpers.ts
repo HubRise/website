@@ -1,22 +1,21 @@
-import { Folder, FolderFiles, MDXDocumentationNode } from './folder'
-import { CustomizationMap } from './customization'
-import { localeCodes } from '../../../utils/locales'
+import { localeCodes } from "../../../utils/locales"
+
+import { Folder, FolderFiles, MDXDocumentationNode } from "./folder"
+import { CustomizationMap } from "./customization"
 
 export function findOrInsertFolder(rootFolder: Folder, path: string): Folder {
   let folder = rootFolder
 
-  path.split('/').forEach((dirname) => {
+  path.split("/").forEach((dirname) => {
     let childFolder = folder.children.find((folder) => folder.name === dirname)
     if (!childFolder) {
-      const relativeDirectory = folder.relativeDirectory
-        ? `${folder.relativeDirectory}/${dirname}`
-        : dirname
+      const relativeDirectory = folder.relativeDirectory ? `${folder.relativeDirectory}/${dirname}` : dirname
       childFolder = {
         children: [],
         folderFilesMap: {},
         name: dirname,
         parent: folder,
-        relativeDirectory
+        relativeDirectory,
       }
       folder.children.push(childFolder)
     }
@@ -28,7 +27,7 @@ export function findOrInsertFolder(rootFolder: Folder, path: string): Folder {
 
 export function buildFolderFiles(
   nodes: Array<MDXDocumentationNode>,
-  customizationsMap: CustomizationMap
+  customizationsMap: CustomizationMap,
 ): Map<string, FolderFiles> {
   const result = new Map<string, FolderFiles>()
 
@@ -37,12 +36,12 @@ export function buildFolderFiles(
     result.set(path, folderFiles)
   })
 
-  for (let mdxNode of nodes) {
+  for (const mdxNode of nodes) {
     const path = mdxNode.parent.relativeDirectory
-    let folderFiles = result.get(path)
+    const folderFiles = result.get(path)
     if (!folderFiles) {
       console.log(
-        `Skipping ${mdxNode.parent.relativePath}: no customization.yaml file was found in this file's directory.`
+        `Skipping ${mdxNode.parent.relativePath}: no customization.yaml file was found in this file's directory.`,
       )
       continue
     }
@@ -52,14 +51,12 @@ export function buildFolderFiles(
   return result
 }
 
-export function buildFolders(
-  folderFilesByPath: Map<string, FolderFiles>
-): Folder {
+export function buildFolders(folderFilesByPath: Map<string, FolderFiles>): Folder {
   const rootFolder: Folder = {
     children: [],
     folderFilesMap: {},
-    name: '',
-    relativeDirectory: ''
+    name: "",
+    relativeDirectory: "",
   }
 
   folderFilesByPath.forEach((folderFiles, path) => {
@@ -67,15 +64,15 @@ export function buildFolders(
     const localeCode = localeCodes.find((code) => path.endsWith(code))
     if (!localeCode) {
       console.log(
-        `The MD files located in ${path} will be skipped because they do not belong to a language folder (/en, /fr, etc.).`
+        `The MD files located in ${path} will be skipped because they do not belong to a language folder (/en, /fr, etc.).`,
       )
       return
     }
 
-    const folderPath = path.replace(new RegExp(`(\/|^)${localeCode}$`), '')
+    const folderPath = path.replace(new RegExp(`(\/|^)${localeCode}$`), "")
 
     let folder: Folder
-    if (folderPath === '') {
+    if (folderPath === "") {
       folder = rootFolder
     } else {
       folder = findOrInsertFolder(rootFolder, folderPath)
@@ -85,7 +82,7 @@ export function buildFolders(
     folderFiles.mdxNodes.sort(
       (node1, node2) =>
         (node1.frontmatter.position || Number.MAX_SAFE_INTEGER) -
-        (node2.frontmatter.position || Number.MAX_SAFE_INTEGER)
+        (node2.frontmatter.position || Number.MAX_SAFE_INTEGER),
     )
 
     folder.folderFilesMap[localeCode] = folderFiles
@@ -95,20 +92,20 @@ export function buildFolders(
 }
 
 export function applyCopyFilesFrom(folder: Folder): void {
-  for (let localeCode of localeCodes) {
+  for (const localeCode of localeCodes) {
     const folderFiles = folder.folderFilesMap[localeCode]
     if (!folderFiles) continue
 
     const copyFilesFrom = folderFiles.customization?.copy_files_from
     if (copyFilesFrom) {
-      for (let node of folder.folderFilesMap[copyFilesFrom]?.mdxNodes || []) {
-        if (node.frontmatter.layout !== 'documentation') continue
+      for (const node of folder.folderFilesMap[copyFilesFrom]?.mdxNodes || []) {
+        if (node.frontmatter.layout !== "documentation") continue
         folderFiles.mdxNodes = [...folderFiles.mdxNodes, node]
       }
     }
   }
 
-  for (let childFolder of folder.children) {
+  for (const childFolder of folder.children) {
     applyCopyFilesFrom(childFolder)
   }
 }

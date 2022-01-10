@@ -68,7 +68,7 @@ To retrieve these values, follow these steps.
 - Select **Sales Type Setup**.
 - Copy each value in the configuration file.
 
-[comment]: # 'Get screenshots from John'
+[comment]: # "Get screenshots from John"
 
 ### Payment
 
@@ -81,7 +81,7 @@ To retrieve the value for `MethodNum`, follow these steps.
 - Select **Payment Method Setup**.
 - Copy the value in the configuration file.
 
-[comment]: # 'Get screenshots from John'
+[comment]: # "Get screenshots from John"
 
 ### Settings
 

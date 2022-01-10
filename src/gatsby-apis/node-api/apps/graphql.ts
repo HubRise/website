@@ -1,8 +1,8 @@
-import { GraphQLFunction } from '../util/types'
-import { parseRelativePath } from '../util/locale'
-import { pathWithLocale } from '../util/urls'
-import { LocaleCode } from '../../../utils/locales'
-import { IApps } from '../../../layouts/apps/interface'
+import { GraphQLFunction } from "../util/types"
+import { parseRelativePath } from "../util/locale"
+import { pathWithLocale } from "../util/urls"
+import { LocaleCode } from "../../../utils/locales"
+import { IApps } from "../../../layouts/apps/interface"
 
 /** Associate a locale code to an IApps  */
 export type IAppsMap = Map<LocaleCode, IApps>
@@ -32,15 +32,12 @@ export async function getAppsMap(graphql: GraphQLFunction): Promise<IAppsMap> {
     }
   `)
   if (errors) throw errors
-  if (!data) throw 'GraphQL returned no data'
+  if (!data) throw "GraphQL returned no data"
 
   const appsMap: IAppsMap = new Map<LocaleCode, IApps>()
 
   data.allFile.nodes.forEach((node) => {
-    appsMap.set(
-      parseRelativePath(node.relativePath).localeCode,
-      node.childYaml.parsedContent
-    )
+    appsMap.set(parseRelativePath(node.relativePath).localeCode, node.childYaml.parsedContent)
   })
 
   appsMap.forEach((apps, localeCode) => generatePaths(localeCode, apps))
@@ -48,24 +45,21 @@ export async function getAppsMap(graphql: GraphQLFunction): Promise<IAppsMap> {
   return appsMap
 }
 
-const APPS_PAGE_PATH = '/apps'
+const APPS_PAGE_PATH = "/apps"
 
-export function getAppsPagePath(
-  localeCode: LocaleCode,
-  categoryTitle?: string
-) {
+export function getAppsPagePath(localeCode: LocaleCode, categoryTitle?: string): string {
   let path = pathWithLocale(localeCode, APPS_PAGE_PATH)
   if (categoryTitle) {
-    const slug = categoryTitle.replace(/ +/g, '-').toLowerCase()
+    const slug = categoryTitle.replace(/ +/g, "-").toLowerCase()
     path = path + `/${slug}`
   }
   return path
 }
 
-function generatePaths(localeCode: LocaleCode, apps: IApps) {
+function generatePaths(localeCode: LocaleCode, apps: IApps): void {
   apps.path = getAppsPagePath(localeCode)
   apps.content.categories = apps.content.categories.map((category) => ({
     ...category,
-    path: getAppsPagePath(localeCode, category.title)
+    path: getAppsPagePath(localeCode, category.title),
   }))
 }

@@ -25,8 +25,8 @@ content:
       description: Checklist and best practices to integrate to HubRise
       to: /developers/integration-guide
       icon: fa-list-alt
-    - title: Authentication
-      description: Introduction to OAuth 2.0 and how it is implemented in HubRise
-      to: /developers/authentication
+    - title: Conventions and edge cases
+      description: Conventions used by other developers to cover edge cases
+      to: /developers/conventions
       icon: fa-sign-out
 ---

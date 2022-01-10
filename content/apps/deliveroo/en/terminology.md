@@ -1,6 +1,6 @@
 ---
 title: Terminology
-position: 6
+position: 8
 layout: documentation
 meta:
   title: Terminology | Deliveroo | HubRise

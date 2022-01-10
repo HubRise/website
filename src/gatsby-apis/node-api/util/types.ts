@@ -1,3 +1,3 @@
-import { CreatePagesArgs } from 'gatsby'
+import { CreatePagesArgs } from "gatsby"
 
-export type GraphQLFunction = CreatePagesArgs['graphql']
+export type GraphQLFunction = CreatePagesArgs["graphql"]

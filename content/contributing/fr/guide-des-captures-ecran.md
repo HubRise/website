@@ -7,7 +7,7 @@ meta:
   description: Guidelines to include screenshots in the HubRise documentation.
 ---
 
-[comment]: # 'This page is a duplicate from .../contributing/en'
+[comment]: # "This page is a duplicate from .../contributing/en"
 
 ## General Recommendations
 

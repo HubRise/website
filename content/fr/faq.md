@@ -8,13 +8,9 @@ meta:
 
 #### Abonnement
 
-###### Puis-je tester gratuitement HubRise ?
-
-Tout à fait. La création d'un compte est gratuite. L'abonnement n'est facturé qu'à partir de 50 commandes par mois.
-
 ###### Dois-je entrer mes coordonnées bancaires pour faire un test gratuit ?
 
-Non, vous devez simplement indiquer votre nom et votre e-mail.
+Non, vous devez simplement indiquer votre nom et votre e-mail. La facturation ne se mettra en place qu'une fois les premières commandes effectuées.
 
 ###### Quelle est la durée d'engagement ?
 
@@ -22,11 +18,11 @@ Aucune. Vous pouvez arrêter votre abonnement à tout moment.
 
 ###### Comment puis-je régler l'abonnement ?
 
-Par carte bancaire uniquement. Une fois votre carte enregistrée, l'abonnement est prélevé tous les mois.
+Par prélèvement mensuel sur votre carte bancaire. Si vous n'avez pas de carte bancaire, vous pouvez régler par virement avec un engagement minimum de 12 mois.
 
 ###### J'ai plusieurs magasins, dois-je payer un abonnement par magasin ?
 
-Oui. Notez que des remises sont appliquées à partir du 5ème point de vente. <ContactFormToggle text="Contactez-nous" /> pour en savoir plus.
+Oui. Notez que des remises sont possibles pour les chaînes de 50 points de vente ou plus. <ContactFormToggle text="Contactez-nous" /> pour en savoir plus.
 
 #### Données
 
@@ -86,9 +82,9 @@ Pas encore, mais nous prévoyons de mettre rapidement en place un processus d'au
 
 ###### Quelles sont les technologies utilisées par l'API ?
 
-L'API suit les principes du REST et les données sont en format JSON. Tous les échanges se font en HTTPS. L'authentification des applications utilise le protocole OAuth 2.
+L'API suit les principes du REST et les données sont en format JSON. Tous les échanges se font en HTTPS. L'authentification des applications utilise le protocole OAuth 2.0.
 
-###### Quelles données peuvent être stockés sur HubRise ?
+###### Quelles sont les données stockées sur HubRise ?
 
 HubRise stocke les commandes, le fichier clients, les produits, les promotions et l'inventaire.
 
@@ -98,10 +94,10 @@ Les _custom fields_ ("champs personnalisés") permettent de stocker des données
 
 ###### Comment une application est-elle informée de l'arrivée d'une nouvelle commmande ou de la mise à jour d'une donnée ?
 
-Deux solutions sont à la disposition des applications :<br />
+Les applications peuvent, au choix :<br />
 \- interroger notre serveur à intervalle régulier pour récupérer les nouveaux événements (_passive callback_)<br />
-\- publier une URL qui sera appellée par notre serveur dès réalisation d'un nouvel événement (_active callback_)
+\- publier une URL qui sera appellée par notre serveur dès apparition d'un nouvel événement (_active callback_)
 
 ###### J'ai plusieurs points de vente dont certains partagent le même catalogue de produits. Comment faire ?
 
-HubRise permet de créer un nombre illimité de catalogues, et de les affecter individuellement par point de vente : vous pouvez donc les partager entre plusieurs points de vente. Même chose pour vos listes de clients.
+HubRise permet de créer plusieurs catalogues, et de les affecter individuellement à chaque point de vente ou de les partager entre plusieurs points de vente. Même chose pour vos listes de clients.

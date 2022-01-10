@@ -4,7 +4,7 @@ position: 1
 layout: documentation
 meta:
   title: Présentation générale | GonnaOrder | HubRise
-  description: Présentation générale de GonnaOrder, les raisons de connecter votre solution de commande en ligne à HubRise et liste des fonctionnalités de l'intégration avec HubRise.
+  description: Présentation générale de GonnaOrder, les raisons de connecter votre solution de commande en ligne à HubRise et fonctionnalités de l'intégration avec HubRise.
 gallery:
 path_override: /
 app_info:
@@ -17,17 +17,14 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
-
+**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link to="/apps/gonnaorder" addLocalePrefix={false}>en anglais uniquement</Link>.
 ---
 
 ## Description
 
-GonnaOrder est une solution de commande en ligne destinée aux restaurateurs.
+GonnaOrder est une solution de commande en ligne destinée aux restaurateurs. Elle permet aux clients de commander sur place, en emporté, ou en livraison.
 
 GonnaOrder offre un back-office permettant d'éditer le menu, d'ajouter des photos aux produits, de mettre en avant les plats du jour, et de traduire le menu en plus de 80 langues. Il permet aussi de consulter la liste des commandes, et d'informer le client du statut en temps réel de sa commande.
-
-GonnaOrder permet au client de commander sur place, en emporté, ou en livraison.
 
 En commande sur place, le client scanne un QR code disposé sur la table pour accéder au menu depuis son smartphone et commander. Aucune installation d'application n'est nécessaire.
 

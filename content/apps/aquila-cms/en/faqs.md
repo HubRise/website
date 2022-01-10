@@ -7,7 +7,7 @@ meta:
   description: FAQs on connecting Aquila CMS with HubRise for your EPOS to work with other apps as a cohesive whole. Connect apps and synchronise your data.
 ---
 
-[comment]: # 'FAQs to create'
+[comment]: # "FAQs to create"
 
 - Connect One Site to a New HubRise Account.
 - <Link to="/apps/aquila-cms/faqs/connect-site-to-existing-hubrise-account/">Connect One Site to an Existing HubRise Account.</Link>

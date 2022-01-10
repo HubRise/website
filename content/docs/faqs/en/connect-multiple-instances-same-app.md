@@ -18,7 +18,7 @@ To connect the second instance of the app, follow these steps.
 1. Select **View available apps**.
 1. Select the same app you installed before, then click **Connect**.
 1. In the authorisation page, select the correct HubRise location from the dropdown menu.
-1. Click on the URL in the navigation bar and include `device_id=2&` after the initial portion of the URL: `https://manager.hubrise.com/oauth2/v1/authorize?`, and before `account_id=`.
+1. Click on the URL in the navigation bar and include `device_id=BrandName&` after the initial portion of the URL: `https://manager.hubrise.com/oauth2/v1/authorize?`, and before `account_id=`. BrandName within `device_id=BrandName&` should be replaced by the name of the brand. For more information, see [Naming Rules](#naming-rules).
    ![Authorisation page with URL including the `device_id=2&` string.](../../images/066-en-autorisation-page-device-id.png)
 1. Then hit the Return key on your keyboard.
 1. Click **Allow** to connect the app.
@@ -40,7 +40,7 @@ You will be able to distinguish the various instances by the device ID value you
 ## Naming Rules
 
 To help you identify your app instances, you can freely choose the device ID value during the initial setup.
-You can include any combination of the following characters:
+In `device_id=BrandName&`, BrandName can include any combination of the following characters:
 
 - Letters, both lowercase and uppercase
 - Numbers

@@ -3,7 +3,7 @@ title: User Interface
 position: 3
 layout: documentation
 meta:
-  title: Just Eat Connection to HubRise - User Interface
+  title: User Interface | Just Eat Flyt | HubRise
   description: How to navigate the Just Eat Flyt Bridge main page to access information about the orders and customise the behaviour of the bridge.
 ---
 
@@ -28,7 +28,6 @@ The **System request** label indicates that the operation is not related to a sp
 Clicking on a row will open a new page displaying the logs associated with the operation.
 
 ## Orders Page
-
 
 Selecting an order operation from the list in the main page will display all the logs of the API requests exchanged between HubRise and Just Eat via Just Eat Flyt Bridge.
 

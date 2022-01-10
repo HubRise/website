@@ -4,7 +4,7 @@ position: 1
 layout: documentation
 meta:
   title: Présentation générale | Barratio | HubRise
-  description: Présentation générale de Barratio, les raisons de connecter votre caisse à HubRise et liste des fonctionnalités de l'intégration avec HubRise.
+  description: Présentation générale de Barratio, les raisons de connecter Barratio à HubRise et fonctionnalités de l'intégration avec HubRise.
 gallery:
   - __gallery-001.png
 path_override: /

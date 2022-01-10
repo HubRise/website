@@ -30,7 +30,8 @@ Then, you need to create an OAuth 2.0 client for your application.
 
 - Log in to the [HubRise back office](https://manager.hubrise.com/).
 - Go to **SETTINGS** > **DEVELOPER**, then click on **Create an OAuth 2.0 client**.
-- Enter a name for your application, then click the **Create** button.
+- Enter a name for your client. We recommend using the name of your application.
+- Click the **Create** button.
 
 Download the client secret JSON, which should look like this:
 
@@ -162,20 +163,36 @@ Unlike active callbacks, events need to be manually deleted after being processe
 
 ## Next Steps
 
-### Install OrderLine
+After this brief introduction to HubRise, you are now ready to take the next steps. Here is what we recommend.
 
-OrderLine is a simple, free application you can connect to your HubRise account to manage incoming orders. With OrderLine, you will be able to accept or reject incoming test orders and inspect the different logs from Postman.
+### Install Developer Tools, Catalog Manager, and OrderLine
 
-To connect OrderLine to your HubRise location, click on **CONNECTIONS** > **View available apps**, then scroll down the list and select OrderLine.
+Because API logs are available from the HubRise back-office, the following applications are great tools to see how the API works:
 
-### Experiment with the API
+- **Developer Tools** is a free application to inject fake orders and catalogs.
+- **Catalog Manager** is a free application to view and edit catalogs.
+- **OrderLine** is a simple, free application to manage incoming orders. With OrderLine, you will be able to accept or reject incoming test orders.
 
-The Postman collection contains other typical requests to obtain the account's information, create and update customers, and update order statuses. Test the various endpoints according to your needs.
-
-### From Postman to Code
-
-Postman has a useful built-in functionality that allows to transform your test requests to actual code snippets in various languages. In this way, you will be able to transition from testing to integrating really quickly.
+To connect an application, click on **CONNECTIONS** > **View available apps**, then scroll down the list and select the application.
 
 ### Explore the API
 
-To learn more about the HubRise API, you can explore our [API Reference](/developers/api/general-concepts), or you can visit the [Authentication](/developers/authentication/) page to learn more about the possible authentication mechanisms.
+Check our comprehensive [API Reference](/developers/api/general-concepts) and see how your application fits into the API.
+
+The [Conventions and special cases](/developers/conventions) guide documents the conventions used by other developers to address use cases which are not natively covered by the API.
+
+### Check the Integration Guide
+
+The [Integration Guide](/developers/integration-guide) is a hands-on, developer oriented, guide containing integration best practices. It is organised in several chapters, each covering a specific integration scenario.
+
+You can use it as an integration checklist, and it can also help you estimate the integration effort before writing any code.
+
+### Experiment with the Postman collection
+
+The [HubRise Postman collection](https://drive.google.com/drive/folders/1fn5u-4sY0-bnrxJY9RFPvpCu0bANGNBd?usp=sharing) contains typical requests to create and update orders and customers, send or receive a catalog, and update order statuses.
+
+Postman has a useful built-in functionality that allows to transform requests into actual code snippets in various languages. In this way, you will be able to transition from testing to integrating really quickly.
+
+### Chat with Us
+
+Last but not least, our friendly team of engineers is always available by email or video call to help you integrate. To start the conversation, send us an email at integration@hubrise.com.

@@ -1,6 +1,6 @@
 ---
 title: Understanding Logs
-position: 5
+position: 8
 layout: documentation
 meta:
   title: Understanding Logs | PixelPoint Bridge | HubRise
