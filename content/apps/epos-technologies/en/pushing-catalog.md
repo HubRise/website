@@ -16,11 +16,10 @@ To export your EPOS Technologies catalog to HubRise, follow these steps.
 1. Log in to your EPOS Technologies back office.
 1. From the navigation menu, select **Company Settings** > **Locations**.
 1. From the **Locations** page, click the <InlineImage width="20" height="20">![Edit icon](../images/edit-icon.png)</InlineImage> **Edit** icon next to the location you want to connect.
-   
    ![The Locations page in your EPOS Technologies back office](../images/001-en-epos-tech-locations.png)
-2. From the **Edit Location** page, navigate to the bottom to find the **HubRise** card, then click **Export Catalog**.
+1. From the **Edit Location** page, navigate to the bottom to find the **HubRise** card, then click **Export Catalog**.
    ![The Export Catalog button in your EPOS Technologies back office](../images/002-en-epos-tech-hubrise-connection.png)
-3. Click **Yes** to confirm the operation.
+1. Click **Yes** to confirm the operation.
 
 ---
 
@@ -36,8 +35,7 @@ The following sections provide more details on how your EPOS Technologies catalo
 
 ### Categories
 
-The categories in the EPOS Technologies catalog are mapped one-to-one to categories of products on HubRise. 
-Categories sent to HubRise are ordered by ascending value of ref code.
+The categories in the EPOS Technologies catalog are mapped one-to-one to categories of products on HubRise. Categories sent to HubRise are ordered by ascending value of ref code.
 
 For every category, the following fields are sent to HubRise.
 
@@ -52,17 +50,17 @@ EPOS Technologies supports products and skus, and this product structure is mapp
 
 For every product, EPOS Technologies sends the following information to HubRise.
 
-- `name`: The name of the product.             
-- `ref`: The ref code of the product, which will be passed along in orders.  
+- `name`: The name of the product.
+- `ref`: The ref code of the product, which will be passed along in orders.
 - `description`: The description of the product.
 - `skus`: The list of skus associated with the product.
 - `image_ids`: The list of image IDs associated with the product.
 
 For every sku in the list, EPOS Technologies sends the following information to HubRise.
 
-- `name`: The name of the sku.             
-- `ref`: The ref code of the sku, which will be passed along in orders.  
-- `price`: The price of the sku.            
+- `name`: The name of the sku.
+- `ref`: The ref code of the sku, which will be passed along in orders.
+- `price`: The price of the sku.
 - `option_list_refs`: The list of options attached to the sku.
 - `price_overrides`: The list of conditional price changes for the sku.
 
@@ -72,16 +70,16 @@ EPOS Technologies supports option lists and options, and this information is map
 
 For every option list, EPOS Technologies sends the following information to HubRise.
 
-- `name`: The name of the option list.             
-- `ref`: The ref code of the option list.  
+- `name`: The name of the option list.
+- `ref`: The ref code of the option list.
 - `description`: The type of option list.
 - `options`: The list of options associated with the option list.
 
 For every option in the list, EPOS Technologies sends the following information to HubRise.
 
-- `name`: The name of the option.             
-- `ref`: The ref code of the option, which will be passed along in orders.  
-- `price`: The price of the option.            
+- `name`: The name of the option.
+- `ref`: The ref code of the option, which will be passed along in orders.
+- `price`: The price of the option.
 
 ### Deals
 
@@ -115,9 +113,9 @@ These are sent to HubRise when you export the catalog.
 For every charge, the following information is sent to HubRise.
 
 - `type`: The type of charge.
-- `name`: The name of the option.             
-- `price`: The price of the option.            
-- `ref`: Available only for delivery charges. The hardcoded value is `RES_DEL` for all delivery charges.  
+- `name`: The name of the option.
+- `price`: The price of the option.
+- `ref`: Available only for delivery charges. The hardcoded value is `RES_DEL` for all delivery charges.
 
 ### Discounts
 

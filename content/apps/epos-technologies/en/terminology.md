@@ -10,7 +10,7 @@ meta:
 HubRise and EPOS Technologies each use their own terminology. The same concept can therefore have a different designation in each solution. The correspondence table below shows these differences.
 
 | EPOS Technologies | HubRise     |
-|-------------------|-------------|
+| ----------------- | ----------- |
 | Department        | Category    |
 | Modifier group    | Option list |
 | Modifier          | Option      |

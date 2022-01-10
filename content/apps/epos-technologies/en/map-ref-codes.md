@@ -9,17 +9,17 @@ meta:
 
 When you create a product or option, you need to assign a ref code so that EPOS Technologies can correctly receive orders from your connected solutions.
 
-For existing items, you can check individual ref codes or review the ref codes for the entire catalog in bulk from the **Products** page in your back office.
+## Products
+
+You can check individual ref codes or review the ref codes for the entire catalog in bulk from the **System Programming** > **Products** page in your back office.
 
 ![The Products page in your EPOS Technologies back office](../images/003-en-epos-tech-products-page.png)
-
-## Checking Individual Ref Codes
 
 If you need to find the ref code associated to a specific product, follow these steps.
 
 1. From the navigation menu, go to **System Programming** > **Products**.
-2. From the list of products, click the <InlineImage width="20" height="20">![Edit icon](../images/edit-icon.png)</InlineImage> **Edit** icon next to the product of interest.
-3. Go to the **Details** tab. The ref code, if present, appears in the **SKU** field.
+1. From the list of products, click the <InlineImage width="20" height="20">![Edit icon](../images/edit-icon.png)</InlineImage> **Edit** icon next to the product of interest.
+1. Go to the **Details** tab. The ref code, if present, appears in the **SKU** field.
 
 ![Finding product ref codes in EPOS Technologies back office](../images/004-en-epos-tech-product-details.png)
 
