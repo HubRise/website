@@ -17,10 +17,6 @@ Lightspeed Restaurant can receive the complete information about items and optio
 
 Every item on Lightspeed must have a ref code. Orders containing items with incorrect or missing ref codes are rejected by the EPOS. For this reason, when sending an order to the EPOS, Lightspeed Restaurant Bridge skips all items without a ref code.
 
-## Order Statuses
-
-To be done
-
 ## Payments
 
 Lightspeed does not support split payments. Therefore, when an order contains multiple payments, Lightspeed Restaurant Bridge sends only the first payment of the list, while the others are discarded.
