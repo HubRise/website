@@ -32,6 +32,12 @@ When the total payment amount does not match the total price for the order as ca
 - If the total payment amount is greater than the expected amount, Lightspeed rejects the order.
 - If the total payment amount is less than the expected amount, Lightspeed accepts the order. However, the order remains open for payment in the EPOS.
 
+---
+
+**Related FAQ**: <Link to="/apps/lightspeed-restaurant/faqs/handle-price-differences/">How Do I Troubleshoot Price Difference Errors?</Link>
+
+---
+
 ## Service Types
 
 Lightspeed Restaurant requires each service type (delivery, collection, eat-in) to be defined as an account profile.

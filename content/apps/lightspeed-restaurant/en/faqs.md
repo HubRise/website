@@ -12,3 +12,4 @@ meta:
 - <Link to="/apps/lightspeed-restaurant/faqs/create-ref-codes/">How Do I Create Ref Codes In Lightspeed?</Link>
 - <Link to="/apps/lightspeed-restaurant/faqs/troubleshooting-failed-orders/">Why Are Some Orders Not Received Correctly in Lightspeed?</Link>
 - <Link to="/apps/lightspeed-restaurant/faqs/check-restrictions-error/">How Do I Troubleshoot The "Check Restrictions" Error?</Link>
+- <Link to="/apps/lightspeed-restaurant/faqs/handle-price-differences/">How Do I Troubleshoot Price Difference Errors?</Link>
