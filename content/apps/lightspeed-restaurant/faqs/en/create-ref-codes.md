@@ -1,6 +1,6 @@
 ---
 title: How Do I Create Ref Codes In Lightspeed?
-position: 5
+position: 3
 layout: documentation
 meta:
   title: Create Ref Codes | Lightspeed Restaurant | HubRise

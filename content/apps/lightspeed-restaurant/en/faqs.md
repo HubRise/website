@@ -9,5 +9,6 @@ meta:
 
 - <Link to="/apps/lightspeed-restaurant/faqs/get-lightspeed-test-account/">How Do I Get A Lightspeed Test Account?</Link>
 - <Link to="/apps/lightspeed-restaurant/faqs/migrating-from-deliverect/">I Just Migrated from Deliverect. What Should I Do To Receive Orders?</Link>
-- <Link to="/apps/lightspeed-restaurant/faqs/troubleshooting-failed-orders/">Why Are Some Orders Not Received Correctly in Lightspeed?</Link>
 - <Link to="/apps/lightspeed-restaurant/faqs/create-ref-codes/">How Do I Create Ref Codes In Lightspeed?</Link>
+- <Link to="/apps/lightspeed-restaurant/faqs/troubleshooting-failed-orders/">Why Are Some Orders Not Received Correctly in Lightspeed?</Link>
+- <Link to="/apps/lightspeed-restaurant/faqs/check-restrictions-error/">How Do I Troubleshoot The "Check Restrictions" Error?</Link>

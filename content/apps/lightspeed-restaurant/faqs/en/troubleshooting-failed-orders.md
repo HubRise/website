@@ -1,6 +1,6 @@
 ---
 title: Why Are Some Orders Not Received Correctly in Lightspeed?
-position: 3
+position: 4
 layout: documentation
 meta:
   title: Troubleshooting Orders | Lightspeed Restaurant | HubRise
