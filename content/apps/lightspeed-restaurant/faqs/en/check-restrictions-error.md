@@ -34,5 +34,5 @@ To remove sales restrictions from a product, follow these steps:
 1. From the menu bar, select **Items > Items**.
 1. From the list of products, find the product mentioned in the error message, then click <InlineImage width="20" height="20">![Edit icon](../../images/022-edit-icon.png)</InlineImage> **Edit** in the **Actions** column.
 1. In the **Item details** section, disable the checkbox next to **Enable a counter on this item to restrict the available quantity**.
-   ![Disable sales restrictions on an item](../../images/023-en-sales-restrictions.png)
+   ![Disable sales restrictions on an item](../../images/023-en-lightspeed-sales-restrictions.png)
 2. Click **Save**.
