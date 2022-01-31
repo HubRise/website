@@ -435,12 +435,6 @@ content:
           title: SATO
           description: SATO provides intelligent thermal printers for retail stores and restaurants. SATO printers are used in over 90 countries around the world.
           additional_info: Integration in progress.
-        - website: https://spleatthebill.io
-          documentation: /apps/spleat-the-bill
-          logo: spleat-the-bill.png
-          title: Spleat the bill
-          description: Spleat the bill is a pay at the table solution for bars and restaurants. Users can pay and share the bill from their smartphones.
-          additional_info: Integration in progress.
         - website: https://tickncook.com
           documentation: /apps/tickncook
           logo: tickncook.png
