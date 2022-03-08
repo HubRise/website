@@ -21,7 +21,7 @@ As a first step, the HubRise integration must be enabled on your Deliveroo accou
 
 Contact us at [support@hubrise.com](mailto:support@hubrise.com) and include the following information in your email:
 
-- The URL link to your restaurant page on the Uber Eats website. For example: [https://deliveroo.co.uk/menu/london/clapham/camile-thai-clapham](https://deliveroo.co.uk/menu/london/clapham/camile-thai-clapham).
+- The URL link to your restaurant page on the Deliveroo website. For example: [https://deliveroo.co.uk/menu/london/clapham/camile-thai-clapham](https://deliveroo.co.uk/menu/london/clapham/camile-thai-clapham).
 - The Deliveroo Restaurant ID of the store. For more details, see our FAQ: [How Do I Find My Deliveroo Restaurant ID](/apps/deliveroo/faqs/find-deliveroo-restaurant-id).
 - The email address you use to log in to the Deliveroo back office.
 - The email address of your Deliveroo account manager.
