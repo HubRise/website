@@ -25,8 +25,13 @@ Once your catalog is populated on HubRise, you can publish it on your Just Eat s
 1. Log in to your HubRise account.
 1. Select the location connected with your Just Eat store.
 1. Select **Just Eat Flyt Bridge** from the list of connected apps.
-1. From the Just Eat Flyt Bridge operations page, click the arrow <InlineImage width="20" height="20">![Arrow icon](../images/arrow-icon.jpg)</InlineImage> at the top right corner of the page to expand the menu, then click **Configuration**.
-1. On the configuration page, from the **Actions** section at the bottom of the page, select **Publish menu on the platform**.
+1. In Just Eat Flyt Bridge, click the **Actions** tab, then select **Publish menu on the platform**.
+
+---
+
+**IMPORTANT NOTE:** Publishing the HubRise catalog to Just Eat will erase your current menu on your Just Eat store. This action cannot be reverted.
+
+---
 
 ## Technical Reference
 
@@ -63,6 +68,10 @@ For more information about skus in the HubRise catalog, see [Skus](/developers/a
 **IMPORTANT NOTE:** Products without a ref code are not pushed to Just Eat. For more information, see [Why Are Some Products Not Exported](/apps/just-eat-flyt/faqs/products-not-exported/).
 
 ---
+
+### Images
+
+Just Eat requires images to be 1024x768 pixels.
 
 ### Product Tags
 
@@ -110,14 +119,4 @@ Deals and discounts are not supported on Just Eat. Therefore, deals and discount
 
 ### Availability
 
-From the configuration page of Just Eat Flyt Bridge, you can select the availability for your menu.
-
-You can choose to make your products available for delivery, collection, or both.
-
-You can also set the opening and closing times of your store for each day of the week. Customers will not be able to order from your Just Eat store outside of these time windows.
-
----
-
-**IMPORTANT NOTE:** By default, closing times for delivery will be set half an hour earlier on the Just Eat store than the value you set on Just Eat Flyt Bridge. Closing times for collection, instead, are not modified.
-
----
+Every time you push your HubRise catalog to Just Eat, you also update the availability of your menu, based on the values you set from the [configuration page](/apps/just-eat-flyt/configuration/#menu) of Just Eat Flyt Bridge.

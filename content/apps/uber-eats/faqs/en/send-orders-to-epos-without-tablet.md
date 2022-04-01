@@ -14,12 +14,12 @@ This page explains the different available options that you can request during t
 
 Uber Eats allows restaurants to receive orders in two different modes: **manual accept** and **offered state**.
 
-- With **manual accept** mode, new orders need to be accepted on Uber Eats tablet first, and after that they are sent to the EPOS.
+- With **manual accept** mode, new orders need to be accepted on Uber Eats tablet first, and they are then sent to the EPOS.
 - With **offered state** mode, new orders are directly sent to the EPOS, and they need to be accepted or rejected there.
 
-HubRise supports both modes seemlessly. Let us know which mode suits your business needs best during the initial configuration. If you do not specify your preferred mode, your store will use the offered state mode by default.
+HubRise supports both modes seamlessly. Let us know which mode suits your business needs best during the initial configuration.
 
-Uber Eats controls which mode is activated on your store from their back office. At any moment, you can switch to a different mode by contacting Uber Eats support or your Uber Eats Account Manager.
+At any moment, you can switch to a different mode by contacting Uber Eats support or your Uber Eats Account Manager.
 
 ## Switching Off the Tablet
 

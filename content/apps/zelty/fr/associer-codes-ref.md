@@ -7,7 +7,7 @@ meta:
   description: Instructions pour associer les codes ref des produits Zelty avec d'autres applications connectées à HubRise pour la synchronisation des données.
 ---
 
-Après avoir connecté votre solution d’encaissement Zelty à votre compte HubRise, vous pouvez synchroniser les informations entre les deux. Toutefois, pour que cela fonctionne, vous devez suivre quelques étapes. Les articles contenus dans la solution d'encaissement Zelty sont identifiés par des codes uniques. Lorsque vous configurez d'autres applications pour qu'elles se connectent via HubRise, vous devez fournir ces codes.
+Après avoir connecté votre solution d'encaissement Zelty à votre compte HubRise, vous pouvez synchroniser les informations entre les deux. Toutefois, pour que cela fonctionne, vous devez suivre quelques étapes. Les articles contenus dans la solution d'encaissement Zelty sont identifiés par des codes uniques. Lorsque vous configurez d'autres applications pour qu'elles se connectent via HubRise, vous devez fournir ces codes.
 
 ## Exporter le catalogue
 
@@ -71,7 +71,7 @@ Pour exporter l'ensemble de votre carte dans un fichier externe :
 
 ## Modes de paiement
 
-Votre solution d’encaissement Zelty offre différentes options de paiement, dont le règlement en espèces ou en ligne, ainsi que via un compte client. Il peut être nécessaire de spécifier le code du mode de paiement correspondant à chaque mode de paiement autorisé dans le système pour se connecter via HubRise. Pour obtenir les codes, adressez-vous à Zelty.
+Votre solution d'encaissement Zelty offre différentes options de paiement, dont le règlement en espèces ou en ligne, ainsi que via un compte client. Il peut être nécessaire de spécifier le code du mode de paiement correspondant à chaque mode de paiement autorisé dans le système pour se connecter via HubRise. Pour obtenir les codes, adressez-vous à Zelty.
 
 ## Types de service
 

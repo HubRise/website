@@ -9,7 +9,7 @@ meta:
 
 ## Présentation générale
 
-Les requêtes d’API permettent la communication entre différents systèmes. En des termes non techniques, elles transmettent les informations nécessaires pour envoyer ou extraire les données depuis et vers un système, et pour modifier son état. Par exemple, un système de commande en ligne connecté à HubRise peut utiliser des requêtes d'API pour envoyer les détails d'une nouvelle commande à HubRise.
+Les requêtes d'API permettent la communication entre différents systèmes. En des termes non techniques, elles transmettent les informations nécessaires pour envoyer ou extraire les données depuis et vers un système, et pour modifier son état. Par exemple, un système de commande en ligne connecté à HubRise peut utiliser des requêtes d'API pour envoyer les détails d'une nouvelle commande à HubRise.
 
 Le contenu effectif de la requête est un objet JSON contenant des paires d'informations clé/valeur conformes à une syntaxe prédéfinie. Pour plus d'informations, voir [Organisation des informations](/docs/hubrise-logs/organisation-informations) et [Comprendre la syntaxe JSON](/docs/hubrise-logs/comprendre-syntaxe-json). Une requête d'API ne se résume cependant pas uniquement à son contenu.
 

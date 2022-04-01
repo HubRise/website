@@ -16,6 +16,6 @@ HubRise and Zelty each use their own terminology. The same concept can therefore
 | Carte           | Catalog     | The entire menu.                      |
 | Catalogue       | n/a         | Subset of the entire menu for export. |
 | Tag             | Category    | Product type (starter, main, etc.).   |
-| Menu            | Deal        | A deal or discount offered.           |
+| Menu            | Deal        | Special offer on specific items.      |
 | Option          | Option List | A list of options.                    |
 | Valeur possible | Option      | An option from the option list.       |

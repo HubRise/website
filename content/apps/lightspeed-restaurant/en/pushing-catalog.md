@@ -9,13 +9,12 @@ meta:
 
 This page describes how to export your Lightspeed catalog and what information is sent to HubRise.
 
-## Exporting The Catalog To HubRise
+## Exporting the Catalog to HubRise
 
-To export your Lightspeed catalog to HubRise, follow these steps.
+To export your Lightspeed catalog to HubRise, follow these steps:
 
-1. From the Lightspeed Restaurant Bridge main page, click the arrow <InlineImage width="20" height="20">![Arrow icon](../images/001-arrow.jpg)</InlineImage> at the top right corner of the page to expand the menu, then click **Configuration**.
-1. From the **Actions** section at the bottom of the page, click on **Pull menu from Lightspeed**.
-1. Click **Confirm** when prompted.
+1. From the Lightspeed Restaurant Bridge main page, select the **Actions** tab, then click **Pull menu from Lightspeed**.
+2. Click **Confirm** when prompted.
 
 ---
 

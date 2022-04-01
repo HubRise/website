@@ -6,10 +6,12 @@ meta:
   title: Présentation générale | [SOLUTION] | HubRise
   description: Présentation générale de [SOLUTION], les raisons de connecter [SOLUTION] à HubRise et les fonctionnalités de l'intégration avec HubRise.
 gallery:
+  - __gallery-001.png ?
+  - __gallery-002.png ?
 path_override: /
 app_info:
   category:
-  availability:
+  availability: Logiciels de caisse - Plateformes de livraison de repas - Commande en ligne - Gestion de livreurs - Fidélité et marketing - Gestion et inventaire - Autres applications ?
   price_range:
   website:
   contact:

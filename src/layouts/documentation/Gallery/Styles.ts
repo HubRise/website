@@ -26,17 +26,26 @@ export const ImageSlider = styled.div<{ isVisible: boolean }>`
     grid-area: slide;
   }
 
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+
   .slick-slide {
     padding-left: 0.25rem;
     padding-right: 0.25rem;
     text-align: center;
+
+    img {
+      max-height: calc(100vh - 5rem);
+    }
   }
 `
 
 export const Topbar = styled.section`
   padding: 1rem 0.5rem;
   display: grid;
-  grid-template-columns: 1fr 6% 1fr;
+  grid-template-columns: 1fr 8rem 1fr;
   place-items: center;
   background-color: rgba(0, 0, 0, 0.6);
 `

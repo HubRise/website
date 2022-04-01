@@ -83,6 +83,22 @@ To add or update a payment method at the Location level, follow these steps:
 1. Enter your credit card information. Credit cards must be valid to be accepted.
 1. When finished, click **Save**.
 
+## Remove a Payment Method
+
+To remove a payment method, follow these steps:
+
+1. Log in to your HubRise account.
+1. If you have access to multiple Accounts, select the relevant Account.
+1. Go to **SETTINGS**.
+1. To check for payment set at Account level, verify that **All locations** is selected. To check for payment set at Location level, select the Location from the Location dropdown.
+1. In the Payment section, click **Delete** and **Confirm** in the dialog prompt.
+
+---
+
+**Related FAQ**: <Link to="/docs/faqs/stop-paying-subscription/">How Do I Stop Paying For My Subscription?</Link>
+
+---
+
 ## Process Pending Quotes
 
 When you change your plan, the payment must be authorized before the credit card can be charged. Admin users will receive notifications reminding them to complete the payment process. For more information on notifications, see [Plan Notifications](/docs/usage-plan/#plan-notifications).

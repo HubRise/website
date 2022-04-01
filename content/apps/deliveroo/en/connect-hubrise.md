@@ -25,23 +25,15 @@ Contact us at [support@hubrise.com](mailto:support@hubrise.com) and include the 
 - The Deliveroo Restaurant ID of the store. For more details, see our FAQ: [How Do I Find My Deliveroo Restaurant ID](/apps/deliveroo/faqs/find-deliveroo-restaurant-id).
 - The email address you use to log in to the Deliveroo back office.
 - The email address of your Deliveroo account manager.
-- If your Deliveroo store is connected to another middleware or EPOS.
-- The type of Deliveroo services you have with the platform: Delivery by Deliveroo, takeaway or delivery by the restaurant. For more information, see [Service Types](/apps/deliveroo/terminology#service-types).
+- Whether your Deliveroo store is connected to another middleware or EPOS.
+- The service type(s) you support on Deliveroo: Delivery by Deliveroo, Restaurant delivery, Takeaway. For more information, see [Service Types](/apps/deliveroo/terminology#service-types).
 - Your HubRise location name and identifier. For example: `Fast Pizza Baker Street z6q31-0`.
 
 With this information in hand, the Deliveroo integration team will enable the HubRise connection for your store. New connections are approved on Tuesdays and Thursdays only.
 
----
+Alternatively, [enable HubRise directly from your Deliveroo back office](/apps/deliveroo/faqs/connect-from-deliveroo-back-office).
 
-**IMPORTANT NOTE:** Deliveroo will not enable the HubRise connection if some product ref codes are missing. For details, see [Map Ref Codes](/apps/deliveroo/map-ref-codes/).
-
----
-
-## 2. Map Products to Ref Codes
-
-Most apps require a ref code for each product to identify every item and process orders correctly. As a result, each item on your Deliveroo menu should have a corresponding product ref code. For more information, see [Map Ref Codes](/apps/deliveroo/map-ref-codes).
-
-## 3. Connect the Bridge
+## 2. Connect the Bridge
 
 ---
 
@@ -61,9 +53,20 @@ To connect Deliveroo Bridge to HubRise, follow these steps.
 
 ![Deliveroo Restaurant ID](../images/001-en-deliveroo-restaurant-id.png)
 
-## 4. Configure Your Preferences
+## 3. Configure Your Preferences
 
 After connecting the bridge, you need to configure a few parameters on the Configuration page to send orders correctly to your EPOS.
 
 For more information about the Configuration page and how to navigate to it, see [User Interface](/apps/deliveroo/user-interface/#configuration-page). For details on how to configure the parameters of Deliveroo Bridge, see [Configuration](/apps/deliveroo/configuration).
 
+## 4. Map Products Ref Codes
+
+Each product in Deliveroo needs to have a corresponding ref code. This ensures that your EPOS can identify every item correctly.
+
+To learn how to map ref codes on Deliveroo, see [Map Ref Codes](/apps/deliveroo/map-ref-codes).
+
+---
+
+**IMPORTANT NOTE:** Deliveroo will not enable the HubRise connection if some product ref codes are missing.
+
+---

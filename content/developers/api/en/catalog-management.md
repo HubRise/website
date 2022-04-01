@@ -1051,19 +1051,22 @@ It defines a set of conditions for a particular item to be available.
 
 #### Parameters:
 
-| Name                                         | Type                                                        | Description                                                                                                   |
-| -------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `dow` <Label type="optional" />              | [DOW](/developers/api/general-concepts/#days-of-the-week)   | Available on certain days of the week.                                                                        |
-| `start_time` <Label type="optional" />       | string                                                      | Available from a certain time of the day. Format: `HH:MM`.                                                    |
-| `end_time` <Label type="optional" />         | string                                                      | Available until a certain time of the day. Format: `HH:MM`.                                                   |
-| `start_date` <Label type="optional" />       | [Date](/developers/api/general-concepts/#dates-and-times)   | Available from a certain date.                                                                                |
-| `end_date` <Label type="optional" />         | [Date](/developers/api/general-concepts/#dates-and-times)   | Available until a certain date.                                                                               |
-| `service_types` <Label type="optional" />    | string[]                                                    | Available for the specified service types. One or several values among: `delivery`, `collection` or `eat_in`. |
-| `min_order_amount` <Label type="optional" /> | [Money](/developers/api/general-concepts/#monetary-values)  | Available for order equal or greater than.                                                                    |
-| `max_per_order` <Label type="optional" />    | [decimal](/developers/api/general-concepts/#decimal-values) | Max number of items per order.                                                                                |
-| `max_per_customer` <Label type="optional" /> | [decimal](/developers/api/general-concepts/#decimal-values) | Max number of items per customer.                                                                             |
+| Name                                          | Type                                                        | Description                                                                                                   |
+| --------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `dow` <Label type="optional" />               | [DOW](/developers/api/general-concepts/#days-of-the-week)   | Available on certain days of the week.                                                                        |
+| `start_time` <Label type="optional" />        | string                                                      | Available from a certain time of the day. Format: `HH:MM`.                                                    |
+| `end_time` <Label type="optional" />          | string                                                      | Available until a certain time of the day. Format: `HH:MM`.                                                   |
+| `start_date` <Label type="optional" />        | [Date](/developers/api/general-concepts/#dates-and-times)   | Available from a certain date.                                                                                |
+| `end_date` <Label type="optional" />          | [Date](/developers/api/general-concepts/#dates-and-times)   | Available until a certain date.                                                                               |
+| `service_types` <Label type="optional" />     | string[]                                                    | Available for the specified service types. One or several values among: `delivery`, `collection` or `eat_in`. |
+| `service_type_refs` <Label type="optional" /> | string[]                                                    | Available for the specified service type refs.                                                                |
+| `min_order_amount` <Label type="optional" />  | [Money](/developers/api/general-concepts/#monetary-values)  | Available for order equal or greater than.                                                                    |
+| `max_per_order` <Label type="optional" />     | [decimal](/developers/api/general-concepts/#decimal-values) | Max number of items per order.                                                                                |
+| `max_per_customer` <Label type="optional" />  | [decimal](/developers/api/general-concepts/#decimal-values) | Max number of items per customer.                                                                             |
 
-All the fields above are optional. Fields with a `null` value are ignored. All conditions must be met simultaneously for an item to be available.
+All the fields above are optional. Fields with a `null` value are ignored. Fields with a `string[]` value must be either omitted or contain at least one value, and they cannot contain duplicate values.
+
+All conditions must be met simultaneously for an item to be available.
 
 #### Example:
 
@@ -1074,6 +1077,7 @@ All the fields above are optional. Fields with a `null` value are ignored. All c
   "end_time": "13:30",
   "end_date": "2020-02-02",
   "service_types": ["collection", "eat_in"],
+  "service_type_refs": ["WEBSITE", "UBEREATS"],
   "min_order_amount": "20.00 EUR",
   "max_per_order": "1"
 }
@@ -1087,17 +1091,18 @@ The structure of a rule is described below.
 
 #### Parameters:
 
-| Name                                      | Type                                                       | Description                                                                                                 |
-| ----------------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `dow` <Label type="optional" />           | [DOW](/developers/api/general-concepts/#days-of-the-week)  | Applies on certain days of the week.                                                                        |
-| `start_time` <Label type="optional" />    | string                                                     | Applies from a certain time of the day. Format: `HH:MM`.                                                    |
-| `end_time` <Label type="optional" />      | string                                                     | Applies until a certain time of the day. Format: `HH:MM`.                                                   |
-| `start_date` <Label type="optional" />    | [Date](/developers/api/general-concepts/#dates-and-times)  | Applies from a certain date.                                                                                |
-| `end_date` <Label type="optional" />      | [Date](/developers/api/general-concepts/#dates-and-times)  | Applies until a certain date.                                                                               |
-| `service_types` <Label type="optional" /> | string[]                                                   | Applies for the specified service types. One or several values among: `delivery`, `collection` or `eat_in`. |
-| `price`                                   | [Money](/developers/api/general-concepts/#monetary-values) | The new price if the rule matches.                                                                          |
+| Name                                          | Type                                                       | Description                                                                                                 |
+| --------------------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `dow` <Label type="optional" />               | [DOW](/developers/api/general-concepts/#days-of-the-week)  | Applies on certain days of the week.                                                                        |
+| `start_time` <Label type="optional" />        | string                                                     | Applies from a certain time of the day. Format: `HH:MM`.                                                    |
+| `end_time` <Label type="optional" />          | string                                                     | Applies until a certain time of the day. Format: `HH:MM`.                                                   |
+| `start_date` <Label type="optional" />        | [Date](/developers/api/general-concepts/#dates-and-times)  | Applies from a certain date.                                                                                |
+| `end_date` <Label type="optional" />          | [Date](/developers/api/general-concepts/#dates-and-times)  | Applies until a certain date.                                                                               |
+| `service_types` <Label type="optional" />     | string[]                                                   | Applies for the specified service types. One or several values among: `delivery`, `collection` or `eat_in`. |
+| `service_type_refs` <Label type="optional" /> | string[]                                                   | Applies for orders using one of the specified service type refs.                                            |
+| `price`                                       | [Money](/developers/api/general-concepts/#monetary-values) | The new price if the rule matches.                                                                          |
 
-All the fields above are optional, except `price`. Fields with a `null` value are ignored.
+All the fields above are optional, except `price`. Fields with a `null` value are ignored. Fields with a `string[]` value must be either omitted or contain at least one value, and they cannot contain duplicate values.
 
 All conditions must be met simultaneously for a rule to match. When several rules match, the price of the last matching rule applies.
 

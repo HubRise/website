@@ -26,6 +26,7 @@ If you prefer to let Lightspeed support configure these ref codes for you, make 
 | Deliveroo       | `Deliveroo`            |
 | Eat.ch          | `Eat.ch (EAT)`         |
 | Just Eat        | `Just Eat (JE)`        |
+| HOP Delivery    | `HOP Delivery`         |
 | Takeaway.com    | `Takeaway.com (TA)`    |
 | Thuisbezorgd.nl | `Thuisbezorgd.nl (TH)` |
 | Uber Eats       | `Uber Eats`            |
@@ -96,6 +97,21 @@ Depending on your needs, you may have to create some products in Lightspeed. If 
 | Payments       | Online payment ref code                  | `JEPM`                                                              |
 | Payments       | Cash payment ref code                    | (leave empty)                                                       |
 | Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Received"`                   |
+
+## HOP Delivery
+
+To receive your HOP Delivery orders in Lightspeed, use the following values to configure HOP Delivery. For assistance, contact HOP Delivery support team.
+
+| Section       | Name                          | Ref code      |
+| ------------- | ----------------------------- | ------------- |
+| Service types | HOP fulfilled ref code        | `HOPDEL`      |
+| Service types | Restaurant fulfilled ref code | `HOPREST`     |
+| Service types | Takeaway ref code             | `HOPCOL`      |
+| Discounts     | Offer ref code                | `HOP99`       |
+| Charges       | Delivery charge ref code      | `HOP77`       |
+| Charges       | Service fee ref code          | `HOP88`       |
+| Payments      | HOP payment ref code          | `HOPPM`       |
+| Payments      | Cash payment ref code         | (leave empty) |
 
 ## Takeaway.com
 

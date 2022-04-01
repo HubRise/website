@@ -6,10 +6,12 @@ meta:
   title: Overview | [SOLUTION] | HubRise
   description: [SOLUTION] overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 gallery:
+  - __gallery-001.png ?
+  - __gallery-002.png ?
 path_override: /
 app_info:
-  category:
-  availability:
+  category: Point of Sales - Food Ordering Platforms - Online Ordering - Delivery Management - Loyalty and Marketing - Operations and Inventory - Other Apps ?
+  availability: 
   price_range:
   website:
   contact:
@@ -26,8 +28,8 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**:  This documentation is available <Link to="/fr/apps/solution" addLocalePrefix={false}>in French only</Link>.
-**IMPORTANT NOTE**: Full documentation available <Link to="/fr/apps/koust" addLocalePrefix={false}>in French</Link>.
+**IMPORTANT NOTE**: This documentation is available <Link to="/fr/apps/[SOLUTION]" addLocalePrefix={false}>in French only</Link>.
+**IMPORTANT NOTE**: Full documentation available <Link to="/fr/apps/[SOLUTION]" addLocalePrefix={false}>in French only</Link>.
 
 ---
 

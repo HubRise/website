@@ -21,9 +21,9 @@ app_info:
 
 ---
 
-SuperDigital.fr est une solution de commande en ligne pour les restaurants, en livraison ou à emporter. Grâce à son partenariat avec LightSpeed et son intégration avec HubRise, SuperDigital.fr permet de centraliser et d’organiser les ventes provenant de différents canaux. SuperDigital.fr s'occupe de toute l'installation pour ses clients restaurateurs.
+SuperDigital.fr est une solution de commande en ligne pour les restaurants, en livraison ou à emporter. Grâce à son partenariat avec LightSpeed et son intégration avec HubRise, SuperDigital.fr permet de centraliser et d'organiser les ventes provenant de différents canaux. SuperDigital.fr s'occupe de toute l'installation pour ses clients restaurateurs.
 
-La solution de commande SuperDigital.fr a été conçue et optimisée pour le marché français. Elle a la structure d’un site internet, avec un nom de domaine propre, un hébergement sécurisé, et une page d’accueil contenant toutes les informations nécessaires au client ou prospect d'un restaurant. SuperDigital.fr offre aussi la possibilité d’ajouter des pages avec du contenu, indispensable au référencement, ainsi que des images, des vidéos, des cartes, des liens vers les réseaux sociaux, et bien d'autres choses encore.
+La solution de commande SuperDigital.fr a été conçue et optimisée pour le marché français. Elle a la structure d'un site internet, avec un nom de domaine propre, un hébergement sécurisé, et une page d'accueil contenant toutes les informations nécessaires au client ou prospect d'un restaurant. SuperDigital.fr offre aussi la possibilité d'ajouter des pages avec du contenu, indispensable au référencement, ainsi que des images, des vidéos, des cartes, des liens vers les réseaux sociaux, et bien d'autres choses encore.
 
 Le site s'adapte et reproduit l'identité visuelle du restaurant.
 

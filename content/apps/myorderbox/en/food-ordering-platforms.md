@@ -48,7 +48,7 @@ the [Deliveroo Configuration page](/apps/deliveroo/configuration).
 | Charges        | Surcharge ref code                    | (leave empty)                                              |
 | Payments       | Deliveroo payment ref code            | (leave empty)                                              |
 | Payments       | Cash payment ref code                 | (leave empty)                                              |
-| Order statuses | Mark orders as Accepted               | ` when they are sent to HubRise`                           |
+| Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Accepted"`          |
 
 ## Uber Eats
 
@@ -72,7 +72,7 @@ the [Uber Eats Configuration page](/apps/uber-eats/configuration).
 | Charges        | Small order fee ref code              | (leave empty)                                              |
 | Charges        | Tip ref code                          | (leave empty)                                              |
 | Payments       | Payment ref code                      | (leave empty)                                              |
-| Order statuses | Mark orders as Accepted               | ` when they are sent to HubRise`                           |
+| Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Accepted"`          |
 
 (\*) BYOC - Bring Your Own Courier
 
@@ -99,4 +99,4 @@ To correctly receive your orders, specify the following values in the Just Eat F
 | Charges        | Other charge ref code                    | (leave empty)                                              |
 | Payments       | Online payment ref code                  | (leave empty)                                              |
 | Payments       | Cash payment ref code                    | (leave empty)                                              |
-| Order statuses | Mark orders as Accepted                  | ` when they are sent to HubRise`                           |
+| Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Accepted"`          |

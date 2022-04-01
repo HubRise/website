@@ -9,6 +9,8 @@ meta:
 
 With WooCommerce Bridge, you can pull your HubRise catalog directly into your WooCommerce store with a single click.
 
+You can also configure the bridge to pull your catalog into WooCommerce every time it is updated on HubRise. For more information, see [Catalog](/apps/woocommerce/configuration#catalog).
+
 This page explains how you can pull and update your products on WooCommerce, and what information about HubRise catalogs can be pulled into the platform.
 
 ## Populating a HubRise Catalog

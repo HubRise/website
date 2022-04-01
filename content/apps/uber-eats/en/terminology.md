@@ -1,6 +1,6 @@
 ---
 title: Terminology
-position: 7
+position: 8
 layout: documentation
 meta:
   title: Terminology | Uber Eats | HubRise
@@ -20,10 +20,11 @@ HubRise and Uber Eats each use their own terminology. The same concept can there
 
 ## Service Types
 
-Uber Eats offers three types of services to its customers.
+Uber Eats offers three types of services to its customers:
 
-- **Delivery by Uber Eats**: Uber Eats delivers the order to the customer.
+- **Uber delivery**: Uber Eats dispatches a driver to collect the order from the restaurant.
 - **Restaurant delivery**: You are responsible for delivering the order to the customer.
 - **Takeaway**: The customer collects the order from your restaurant.
+- **Eat-in**: The customer eats on site.
 
 

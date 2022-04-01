@@ -30,11 +30,6 @@ If you want to delay all orders by a specific amount, enter the value in minutes
 By default, Lightspeed Restaurant Bridge does not pull local orders into HubRise.
 If you want to pull local orders to HubRise as soon as they are paid, from **Behaviour** select **Pull sales from Lightspeed on payment**.
 
-## Pulling the Menu
-
-To pull your Lightspeed catalog into HubRise, from the **Actions** section, select **Pull menu from Lightspeed**. For more information on how Lightspeed catalogs are mapped to HubRise, see [Pushing the Catalog](/apps/lightspeed-restaurant/pushing-catalog).
-
-
 ## Saving the Configuration
 
 Once you are happy with the configuration of Lightspeed Restaurant Bridge, click **Save** at the top of the page to go back to the Operations page.

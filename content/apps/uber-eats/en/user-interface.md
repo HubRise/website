@@ -65,6 +65,4 @@ Clicking on the Uber Eats and HubRise logos on top of any page of Uber Eats Brid
 
 To access the Uber Eats Bridge Configuration page, click on the arrow <InlineImage width="20" height="20">![Arrow icon](../images/arrow-icon.jpg)</InlineImage> at the top right corner of the page to expand the menu, then click **Configuration**.
 
-![Configuration page on Uber Eats Bridge](../images/002-en-configuration-page.png)
-
 From this page, you will be able to customise the behaviour of Uber Eats Bridge. For more details, see [Configuration](/apps/uber-eats/configuration).
