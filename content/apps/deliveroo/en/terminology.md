@@ -1,11 +1,13 @@
 ---
 title: Terminology
-position: 8
+position: 9
 layout: documentation
 meta:
   title: Terminology | Deliveroo | HubRise
   description: Correspondence table showing terms used by Deliveroo and those used on HubRise for the same concept. Connect apps and synchronise your data.
 ---
+
+## Correspondence table
 
 HubRise and Deliveroo each use their own terminology. The same concept can therefore have a different designation in each solution. The correspondence table below shows these differences.
 
@@ -19,8 +21,8 @@ HubRise and Deliveroo each use their own terminology. The same concept can there
 
 ## Service Types
 
-Deliveroo offers three types of services to its customers.
+Deliveroo offers three types of services to its customers:
 
-- **Delivery by Deliveroo**: Deliveroo delivers the order to the customer.
-- **Restaurant delivery**: You are responsible for delivering the order to the customer. This service is also referred to as Deliveroo M+.
-- **Takeaway**: The customer collects the order from your restaurant.
+- **Delivery by Deliveroo**: Deliveroo dispatches a driver to collect the order from the restaurant.
+- **Restaurant delivery**: The restaurant is responsible for delivering the order to the customer. This service is also referred to as Deliveroo M+.
+- **Takeaway**: The customer collects the order from the restaurant.

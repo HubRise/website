@@ -65,6 +65,4 @@ Clicking on the Deliveroo and HubRise logos on top of any page of Deliveroo Brid
 
 To access the Deliveroo Bridge Configuration page, click on the arrow <InlineImage width="20" height="20">![Arrow icon](../images/arrow-icon.jpg)</InlineImage> at the top right corner of the page to expand the menu, then click **Configuration**.
 
-![Deliveroo Bridge configuration page](../images/002-en-configuration-page.png)
-
 From this page, you will be able to customise the behaviour of Deliveroo Bridge. For more details, see [Configuration](/apps/deliveroo/configuration).

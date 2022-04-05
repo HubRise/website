@@ -12,6 +12,7 @@ HubRise and Solution each use their own terminology. The same concept can theref
 | Solution   | HubRise  | Description                         |
 | ---------- | -------- | ----------------------------------- |
 | PLU code   | Ref code | Product code.                       |
+| Deal       | Deal     | Special offer on specific items.    |
 | Discount   | Discount | Special offer on the overall order. |
 | Restaurant | Location | The actual restaurant.              |
 | Brand      | Account  | Business brand.                     |

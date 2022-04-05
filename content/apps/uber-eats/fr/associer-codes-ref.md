@@ -27,7 +27,7 @@ Notez que les articles se trouvant sous l'onglet **Groupes de modificateurs** co
 
 ---
 
-**REMARQUE IMPORTANTE :** les commentaires au niveau des produits sont automatiquement désactivés sur votre boutique Uber Eats lorsque vous vous connectez à HubRise.
+**REMARQUE IMPORTANTE :** Les commentaires au niveau des produits sont automatiquement désactivés sur votre boutique Uber Eats lorsque vous vous connectez à HubRise.
 
 ---
 

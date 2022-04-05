@@ -45,7 +45,7 @@ SmartResto.Net can be connected to HubRise from the SmartResto.Net back office.
 
 ## Why Connect?
 
-Connecting SmartResto.Net to HubRise allows orders to be sent to other applications you use every day. Send online orders to your EPOS, to an intelligent printer, a Kitchen Display Screen, or to your inventory management solution. Import your EPOS menu into SmartResto.Net.
+Connecting SmartResto.Net to HubRise allows orders to be sent to other applications you use every day. Send online orders to your EPOS, to an autonomous printer, a Kitchen Display Screen, or to your inventory management solution. Import your EPOS menu into SmartResto.Net.
 
 Thanks to HubRise, synchronise your menu, your customer and order information with your EPOS, online ordering, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management, delivery services, eMarketing (SMS/emailing), business intelligence, stock management, loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our [Apps page](/apps).
 

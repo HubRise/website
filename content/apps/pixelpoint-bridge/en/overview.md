@@ -51,5 +51,5 @@ Thanks to HubRise, synchronise your menu, your customer and order information wi
 To establish a successful connection with your PAR PixelPoint EPOS, PixelPoint Bridge requires:
 
 - PixelHQ and PixelPoint version 12.3 or above.
-- The API token provided by the PAR PixelPoint support team.
+- PixelPoint's EOI (External Order Interface).
 - The HubRise account setup with locations to connect. For more information about accounts and locations, see the [HubRise User Guide](/docs).

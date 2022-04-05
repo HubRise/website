@@ -9,7 +9,7 @@ meta:
 
 Vous pouvez connecter Koust à HubRise de manière autonome, en seulement quelques étapes.
 
-## Se connecter
+## Connecter Koust
 
 Pour établir la connexion entre Koust et HubRise :
 
@@ -43,7 +43,7 @@ Il est conseillé de donner au support de Koust l'accès à votre compte HubRise
 1. Dans la section **Points de vente**, sélectionnez votre point de vente.
 1. Dans la section **Permissions**, ajoutez *contact@koust.fr* en sélectionnant l'option **Manager** (et non **Admin**) dans la liste déroulante des rôles, puis cliquez sur l'icône _+_. L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre point de vente, le partage de mot de passe est déconseillé pour des raisons de sécurité.
 
-## Se déconnecter
+## Déconnecter Koust
 
 1. Suivez les 3 premières étapes de la partie [Se connecter](/apps/koust/connexion-hubrise#se-connecter).
    ![Connexion à HubRise - Onglet Intégrations après connexion](../images/004-fr-koust-onglet-integrations-connecte.png)

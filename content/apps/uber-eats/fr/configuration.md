@@ -61,7 +61,7 @@ Si vous souhaitez réinitialiser la configuration et effacer ses valeurs, clique
 
 ---
 
-**REMARQUE IMPORTANTE :** la réinitialisation de la configuration effacera également votre UUID de magasin Uber Eats. Pour recevoir à nouveau les commandes Uber Eats, vous devrez resaisir votre UUID de magasin.
+**REMARQUE IMPORTANTE :** La réinitialisation de la configuration effacera également votre UUID de magasin Uber Eats. Pour recevoir à nouveau les commandes Uber Eats, vous devrez resaisir votre UUID de magasin.
 
 ---
 

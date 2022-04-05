@@ -3,7 +3,7 @@ title: Why Are My Orders Not Received on HubRise?
 position: 2
 layout: documentation
 meta:
-  title: Orders Not Received - Uber Eats Connected to HubRise
+  title: Orders Not Received | Uber Eats FAQs | HubRise
   description: If you think your Uber Eats Bridge configuration is correct, and you still do not receive orders from Uber Eats, there might be products with missing ref codes in your menu.
 ---
 

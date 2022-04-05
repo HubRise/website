@@ -7,48 +7,45 @@ meta:
   description: How to manage HubRise permissions.
 ---
 
-Permissions lists the users, their email address, and role. The role refers to the list of actions the user is able to take. HubRise supports the following roles:
+Permissions are a way to control the actions that Users can take on your Account and Locations. You can change the permissions level for a User by assigning different roles from the **Permissions** section in the **SETTINGS** page.
 
-- **Admin**: Admins have access to all areas of HubRise, including invoice. They are responsible for keeping the payment information up to date. They will receive invoices by email when a payment is made or notifications regarding HubRise pending payments. They can also grant access to other users.
-- **Manager**: Managers have access to all areas except HubRise invoices. They will not receive notifications emails on outstanding payments to HubRise.
+## HubRise Roles
 
-You can add or remove users for the HubRise Account, or for specific Locations. To view and update the permissions for a Location:
+HubRise supports two roles: Admins and Managers.
 
-1. **SETTINGS** > **ACCOUNTS** > **Locations**.
-1. For users with multiple Accounts, select the Account containing the specific Location.
-1. Click the Location to modify.
+- **Admins** have access to all areas of HubRise, including invoices. They are responsible for keeping the payment information up to date. They will receive invoices by email when a payment is made or notifications regarding HubRise pending payments. They can also grant access to other users and disconnect apps from HubRise.
+- **Managers** have access to all areas except HubRise invoices. They will not receive notifications emails on outstanding payments to HubRise. They can connect apps to HubRise but not disconnect them.
 
-You can also view and edit your own permissions from **SETTINGS** > **PROFILE**. For more information, see [Profile and Password](/docs/profile-password/).
+You can also view and edit your own permissions from your User profile. For more information, see [Profile and Password](/docs/profile-password/).
 
 ## Add a User
 
 Admins can grant access to other users provided they have an existing profile on HubRise. New HubRise users can create a profile in the [HubRise signup page](https://manager.hubrise.com/signup). If you create a new profile on someone else's behalf, use the [HubRise Reset password page](https://manager.hubrise.com/reset_password/new) to have the user enter their own secure password.
 
-To add a user:
+To grant a User permissions on an Account, follow these steps:
 
-1. To grant access for the Account and all of its Locations, select **SETTINGS** > **ACCOUNTS**. Admins with multiple Accounts, select the Account to modify. To grant access only for a specific Location, select the location's name in the **Locations** section.
-1. In the **Permissions** section, select **Add**.
-1. Enter the user's email address in the column marked **EMAIL**.
+1. Select **SETTINGS**.
+1. In the **Permissions** section, enter the User's email address in the column marked **EMAIL**.
 1. In the **ROLE** column, set the new user's role as Admin or Manager.
 1. Click the plus icon <InlineImage width="13" height="13">![Plus icon](../images/059-add-icon.png)</InlineImage> to add the new user.
 
-<video controls title="Add user example">
-  <source src="../images/023-en-permissions-add-user.webm" type="video/webm"/>
-</video>
+To grant a User permissions on a Location, follow these steps:
+
+1. Select **SETTINGS**.
+1. Select the Location from the **Location** dropdown.
+1. In the **Permissions** section, enter the User's email address in the column marked **EMAIL**.
+1. In the **ROLE** column, set the new User's role as Admin or Manager.
+1. Click the plus icon <InlineImage width="13" height="13">![Plus icon](../images/059-add-icon.png)</InlineImage> to add the new user.
 
 ## Remove a User
 
 To remove a user:
 
-1. Click the remove icon <InlineImage width="15" height="16">![Trash icon](../images/057-2x-trash-icon.png)</InlineImage>for the user to remove.
-1. When prompted, click **Delete** to confirm removing the user.
+1. In the **Permissions** section for either an Account or a Location, click the remove icon <InlineImage width="15" height="16">![Trash icon](../images/057-2x-trash-icon.png)</InlineImage> for the user you want to remove.
+1. When prompted, click **Delete** to confirm.
 
 ---
 
 **IMPORTANT NOTE**: An account cannot be left without Admin. Before you remove your user profile from an Account make sure there is an Admin user with permissions. If not, you can change permissions of an existing user or give Admin permissions to **test@hubrise.com**.
 
 ---
-
-<video controls title="Remove a user example">
-  <source src="../images/024-en-permissions-remove-user.webm" type="video/webm"/>
-</video>

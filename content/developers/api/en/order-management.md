@@ -73,7 +73,8 @@ Almost all fields are optional. In fact the simplest order that can be created o
           "option_list_name": "Sauce",
           "name": "Barbecue",
           "ref": "BBQ",
-          "price": "1.00 EUR"
+          "price": "1.00 EUR",
+          "quantity": 1
         }
       ]
     },
@@ -273,7 +274,8 @@ In addition, each `item`, `charge`, `payment` and `discount` is returned with a 
           "option_list_name": "Sauce",
           "name": "BBQ",
           "ref": "31",
-          "price": "0.50 EUR"
+          "price": "0.50 EUR",
+          "quantity": 1
         }
       ],
       "deleted": false
@@ -776,7 +778,8 @@ Orders do not have to go through all steps. The sequence actually depends on the
       "option_list_name": "Sauce",
       "name": "Barbecue",
       "ref": "BBQ",
-      "price": "1.00 EUR"
+      "price": "1.00 EUR",
+      "quantity": 1
     }
   ]
 }
@@ -799,13 +802,14 @@ Order items which are part of a deal include a `deal_line` field. This field is 
 
 ## 6. Order Options
 
-| Name                                | Type                                                       | Description                                                                                   |
-| ----------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| `option_list_name`                  | string                                                     | The name of the list the option belongs to, eg. "Toppings", "Sauce", etc.                     |
-| `name`                              | string                                                     | The option name.                                                                              |
-| `ref` <Label type="optional" />     | string                                                     | The optional ref of the option.                                                               |
-| `price` <Label type="optional" />   | [Money](/developers/api/general-concepts/#monetary-values) | The unit price of the option. If omitted the option is free.                                  |
-| `removed` <Label type="optional" /> | boolean                                                    | When this flag is true, the option is removed (for instance, a removed ingredient in a dish). |
+| Name                                 | Type                                                       | Description                                                                                   |
+| ------------------------------------ | ---------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| `option_list_name`                   | string                                                     | The name of the list the option belongs to, eg. "Toppings", "Sauce", etc.                     |
+| `name`                               | string                                                     | The option name.                                                                              |
+| `ref` <Label type="optional" />      | string                                                     | The optional ref of the option.                                                               |
+| `price` <Label type="optional" />    | [Money](/developers/api/general-concepts/#monetary-values) | The unit price of the option. If omitted the option is free.                                  |
+| `quantity` <Label type="optional" /> | integer                                                    | The number of selections for this option, relative to a single item unit. Default: `1`.       |
+| `removed` <Label type="optional" />  | boolean                                                    | When this flag is true, the option is removed (for instance, a removed ingredient in a dish). |
 
 #### Example:
 
@@ -814,7 +818,8 @@ Order items which are part of a deal include a `deal_line` field. This field is 
   "option_list_name": "Sauce",
   "name": "Barbecue",
   "ref": "BBQ",
-  "price": "1.00 EUR"
+  "price": "1.00 EUR",
+  "quantity": 1
 }
 ```
 

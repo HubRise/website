@@ -8,7 +8,7 @@ meta:
 ---
 
 Connecting Uber Eats to HubRise allows you to receive Uber Eats orders directly in your EPOS. This page describes the information that is passed by Uber Eats Bridge for the orders you receive.
- 
+
 ## Items and Options
 
 ### Items Encoding
@@ -59,7 +59,9 @@ Other HubRise status values are not supported and are not sent to Uber Eats.
 
 ### Change the status of an order in HubRise
 
-Uber Eats Bridge does not change order statuses in HubRise.
+When eaters cancel their orders, Uber Eats immediately marks them as `cancelled` on HubRise.
+
+When Uber Eats rejects orders because you fail to acknowledge them in time, it does not update their status on HubRise.
 
 ## Service Types
 

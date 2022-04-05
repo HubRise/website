@@ -33,7 +33,7 @@ Maakyo propose aussi un système de Click & Collect intégré.
 
 ## Fonctionnalités de l'intégration
 
-Connecter Maakyo à HubRise permet à Maakyo de :
+Connecter Maakyo à HubRise permet à votre solution de commande en ligne de :
 
 - Envoyer les commandes à HubRise.
 - Recevoir un catalogue de HubRise.
@@ -42,7 +42,7 @@ Maakyo peut être connecté à HubRise depuis le back-office de Maakyo.
 
 ## Pourquoi se connecter ?
 
-En connectant Maakyo à HubRise, vous permettez à votre solution de commande à table d'envoyer les commandes à d'autres applications que vous utilisez de manière quotidienne, telles que votre logiciel de caisse, votre solution d'inventaire, ou votre imprimante connectée.
+En connectant Maakyo à HubRise, vous permettez à votre solution de commande à table d'envoyer les commandes à d'autres applications que vous utilisez de manière quotidienne, telles que votre logiciel de caisse, votre solution d'inventaire, ou votre imprimante autonome.
 
 Grâce à HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes avec votre solution d'encaissement, de commande en ligne, les plateformes de livraison de repas (dont Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs ou de services de livraison, les solutions eMarketing (SMS / eMailing), business intelligence, systèmes de gestion de stock et de fidélisation client, et bien d'autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, consultez notre [page Apps](/apps).
 

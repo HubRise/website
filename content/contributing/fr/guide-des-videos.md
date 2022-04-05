@@ -3,7 +3,7 @@ title: Video Guide (en anglais)
 position: 4
 layout: documentation
 meta:
-  title: Video Guide - HubRise
+  title: Video Guide | HubRise
   description:
 ---
 

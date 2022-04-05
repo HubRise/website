@@ -9,12 +9,10 @@ meta:
 
 HubRise provides a free plan that includes a monthly usage quota. When a free plan has met this usage quota, the Account must be upgraded from the free plan to a paid plan. For more information on HubRise plan pricing, see the [HubRise pricing page](/pricing).
 
-If the payment method is registered, the Account will be automatically upgraded when the free quota is exceeded.
+If a payment method is registered, the Account is automatically upgraded to the paid plan when the free quota is exceeded. For more information on adding a payment method, see [Update a Payment Method](/docs/payment#add-a-payment-method).
 
-When the free plan usage quota has been exceeded, admin users for the Account or Location will receive an email and a notice on the HubRise page informing them they must register a payment method and upgrade their plan.
+If no payment method is registered when the free plan usage quota is exceeded, Admin users for the Account or Location receive an email and see a notice on the HubRise back office informing them they must register a payment method and upgrade their plan.
 
-If the payment method is not set two weeks after the first email alert is sent, the Account will be suspended.
+If you do not set a payment method within two weeks after the first email alert, the Account will be suspended. To prevent such inconvenience, you can include a payment method as soon as you start using HubRise. You will not be charged until your Account exceeds the free quota limit.
 
-If you know that you will have more transactions than the current plan provides, you can upgrade the plan before being notified. The upgraded plan will not begin until your Account exceeds the free quota limitation, even if you have selected the upgraded tier level and set your payment method.
-
-For More information, see [Usage](/docs/usage-plan/).
+For more information, see [Usage](/docs/usage-plan/).

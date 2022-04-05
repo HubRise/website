@@ -3,7 +3,7 @@ title: HubRise Data Model
 position: 7
 layout: documentation
 meta:
-  title: HubRise Data Model - How to Read HubRise logs
+  title: HubRise Data Model | How to Read HubRise logs
   description: The typical JSON keys in the body of a HubRise request.
 ---
 

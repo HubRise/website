@@ -3,7 +3,7 @@ title: Diagram Guide (en anglais)
 position: 5
 layout: documentation
 meta:
-  title: Diagram Guide - HubRise
+  title: Diagram Guide | HubRise
   description: How to contribute diagrams to the HubRise website.
 ---
 

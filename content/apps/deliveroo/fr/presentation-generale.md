@@ -35,7 +35,13 @@ Deliveroo Bridge permet de :
 
 ---
 
-**REMARQUE IMPORTANTE :** le catalogue et la disponibilité des produits ne peuvent pas encore être synchronisés, mais HubRise prévoit de mettre en place cette fonctionnalité courant 2021.
+**REMARQUE IMPORTANTE :** Le catalogue et la disponibilité des produits ne peuvent pas encore être synchronisés, mais HubRise prévoit de mettre en place cette fonctionnalité prochainement.
+
+---
+
+---
+
+**REMARQUE IMPORTANTE :** Les tablettes Deliveroo doivent rester allumées pour recevoir les commandes dans HubRise. Deliveroo prévoit de supporter les intégrations sans tablette d'ici mi-2022.
 
 ---
 
