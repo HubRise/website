@@ -7,7 +7,7 @@ meta:
   description: Instructions on connecting Aquila CMS with HubRise for your EPOS to work with other apps as a cohesive whole. Connect apps and synchronise your data.
 ---
 
-Connecting Aquila to HubRise requires the HubRise plugin to be installed and enabled. You should request the plugin to [contact@nextsourcia.com](mailto:contact@nextsourcia.com).
+To connect Aquila to HubRise, you need to install the HubRise plugin. For more information, contact [contact@nextsourcia.com](mailto:contact@nextsourcia.com).
 
 ## Install the HubRise Plugin
 
