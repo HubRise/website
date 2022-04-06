@@ -10,7 +10,7 @@ path_override: /
 
 ---
 
-**IMPORTANT NOTE**: Full documentation available <Link to="/fr/apps/solution" addLocalePrefix={false}>in French</Link>.
+**IMPORTANT NOTE**: Full documentation available <Link to="/fr/apps/coursicab" addLocalePrefix={false}>in French</Link>.
 
 ---
 

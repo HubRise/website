@@ -34,7 +34,7 @@ Connecting foodpanda Bridge allows foodpanda to:
 
 ---
 
-**IMPORTANT NOTE:** Product catalog and product availability cannot currently be synchronised, but HubRise is planning to release this feature in 2021.
+**IMPORTANT NOTE:** Product catalog and product availability cannot currently be synchronised, but HubRise is planning to release this feature in 2022.
 
 ---
 

@@ -49,7 +49,7 @@ Si vous souhaitez réinitialiser la configuration et effacer ses valeurs, clique
 
 ---
 
-**REMARQUE IMPORTANTE :** la réinitialisation de la configuration effacera également votre identifiant de restaurant Deliveroo. Pour recevoir à nouveau les commandes Deliveroo, vous devrez resaisir votre identifiant de restaurant.
+**REMARQUE IMPORTANTE :** La réinitialisation de la configuration effacera également votre identifiant de restaurant Deliveroo. Pour recevoir à nouveau les commandes Deliveroo, vous devrez resaisir votre identifiant de restaurant.
 
 ---
 

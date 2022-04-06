@@ -11,7 +11,7 @@ Pour traiter correctement les commandes, la plupart des solution d'encaissement 
 
 ---
 
-**REMARQUE IMPORTANTE :** si vous n'attribuez pas de code ref à tous vos produits, Deliveroo ne traitera pas correctement la commande. Pour plus d'informations, voir la rubrique [Pourquoi mes commandes ne sont-elles pas reçues par HubRise ?](/apps/deliveroo/faqs/commandes-non-recues-code-ref-manquants)
+**REMARQUE IMPORTANTE :** Si vous n'attribuez pas de code ref à tous vos produits, Deliveroo ne traitera pas correctement la commande. Pour plus d'informations, voir la rubrique [Pourquoi mes commandes ne sont-elles pas reçues par HubRise ?](/apps/deliveroo/faqs/commandes-non-recues-code-ref-manquants)
 
 ---
 
@@ -27,6 +27,6 @@ Pour attribuer des codes ref à vos produits Deliveroo en passant par l'outil Ge
 
 ---
 
-**REMARQUE IMPORTANTE :** pour pouvoir saisir manuellement des codes ref dans le Gestionnaire de menu Deliveroo, l'API Menu ne doit pas être activée sur votre compte Deliveroo. Pour activer le Gestionnaire de menu et afficher les champs de PLU dans votre back-office Deliveroo, contactez [restaurants@deliveroo.fr](restaurants@deliveroo.fr).
+**REMARQUE IMPORTANTE :** Pour pouvoir saisir manuellement des codes ref dans le Gestionnaire de menu Deliveroo, l'API Menu ne doit pas être activée sur votre compte Deliveroo. Pour activer le Gestionnaire de menu et afficher les champs de PLU dans votre back-office Deliveroo, contactez [restaurants@deliveroo.fr](restaurants@deliveroo.fr).
 
 ---

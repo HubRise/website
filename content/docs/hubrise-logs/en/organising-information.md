@@ -3,7 +3,7 @@ title: Organising Information
 position: 2
 layout: documentation
 meta:
-  title: Organisation Information - How to Read HubRise logs
+  title: Organisation Information | How to Read HubRise logs
   description: Short introduction to key values, objects and lists of elements in JSON to understand HubRise logs and requests.
 ---
 

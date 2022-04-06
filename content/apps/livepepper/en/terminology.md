@@ -13,7 +13,7 @@ HubRise and LivePepper each use their own terminology. The same concept can ther
 | ---------------------- | -------- | -------------------------------------- |
 | Account                | User ID  | Restaurant Managers unique identifier. |
 | Branch                 | Location | The actual restaurant.                 |
-| Deal on Specific Items | Deal     | Special offer on products.             |
+| Deal on Specific Items | Deal     | Special offer on specific items.       |
 | Deal on the Order      | Discount | Special offer on the overall order.    |
 | Menu                   | Catalog  | List of products.                      |
 | POS Code               | Ref code | Product code.                          |

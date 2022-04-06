@@ -54,4 +54,4 @@ Grâce à HubRise, vous pouvez synchroniser votre menu, vos informations clients
 
 ## Prérequis
 
-Pour établir la connexion entre Carré POS et HubRise, vous devez disposer d'une licence Carré POS Connect.
+Pour établir la connexion entre Carré POS et HubRise, vous devez avoir une licence Carré POS version PRO et être abonné au service Carré POS Cloud.

@@ -258,21 +258,25 @@ Typical uses:
 
 ## Conventions for EPOS
 
-### Orders custom fields
+### Order custom fields
 
 The following custom fields can be attached to an order:
 
-| Custom field           | Encoding         | Description                                                                                  |
-| ---------------------- | ---------------- | -------------------------------------------------------------------------------------------- |
-| `epos.order_id`        | `string`         | Order identifier on the EPOS.                                                                |
-| `epos.rejection`       | (see&nbsp;below) | Information about an order rejection. Can only be present if the order status is `rejected`. |
-| `epos.rejection.cause` | `string`         | Short description of the problem. Ideally includes resolution steps.                         |
-| `epos.rejection.info`  | `object`         | Free-format object with additional information about the problem.                            |
+| Custom field           | Encoding         | Description                                                                                         |
+| ---------------------- | ---------------- | --------------------------------------------------------------------------------------------------- |
+| `epos.order_id`        | `string`         | Order identifier on the EPOS.                                                                       |
+| `epos.rejection`       | (see&nbsp;below) | Information about an order rejection. Can only be present if the order status is `rejected`.        |
+| `epos.rejection.cause` | `string`         | Short description of the problem. Ideally includes resolution steps. Use Markdown syntax for links. |
+| `epos.rejection.info`  | `object`         | Free-format JSON object containing information about the problem.                                   |
 
 Typical uses:
 
 - The EPOS sets the `epos.order_id` custom field on order creation. Ordering solutions may use this field to include the order identifier in customer emails or in their back-office.
 - When the EPOS rejects an order, it sets the `epos.rejection` object. This field is visible in the HubRise back-office, and it helps support teams and users troubleshoot an issue.
+
+The rejection cause appears in the HubRise back-office, on the order page, which potentially allows users to troubleshoot the issue. The info object is visible when the user clicks **See more information**.
+
+![The EPOS rejected the order](../images/005-epos-rejection.png)
 
 <details>
 
@@ -289,7 +293,7 @@ Typical uses:
     "epos": {
       "order_id": "645433012",
       "rejection": {
-        "cause": "At least one item in this order is not attached to a menu. See https://epos.com/info/35346",
+        "cause": "At least one item in this order is not attached to a menu. See [documentation](https://epos.com/info/35346).",
         "info": {
           "status": "FAILED",
           "reason": "Could not add item 117192477640169 (not found)",

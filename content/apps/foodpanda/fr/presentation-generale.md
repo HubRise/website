@@ -39,7 +39,7 @@ La connexion avec foodpanda Bridge permet à foodpanda de :
 
 ---
 
-**REMARQUE IMPORTANTE :** le catalogue et la disponibilité des produits ne peuvent pas encore être synchronisés, mais HubRise prévoit de mettre en place cette fonctionnalité courant 2021.
+**REMARQUE IMPORTANTE :** Le catalogue et la disponibilité des produits ne peuvent pas encore être synchronisés, mais HubRise prévoit de mettre en place cette fonctionnalité en 2022.
 
 ---
 

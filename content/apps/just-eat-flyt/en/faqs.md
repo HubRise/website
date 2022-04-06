@@ -1,6 +1,6 @@
 ---
 title: FAQs
-position: 7
+position: 8
 layout: documentation
 meta:
   title: FAQs | Just Eat Flyt | HubRise
@@ -8,3 +8,4 @@ meta:
 ---
 
 - <Link to="/apps/just-eat-flyt/faqs/products-not-exported/">Why Are Some Products Not Exported To Just Eat?</Link>
+- <Link to="/apps/just-eat-flyt/faqs/auto-accept/">Do I Want Auto-Accept Activated on Just Eat?</Link>

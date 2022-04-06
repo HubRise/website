@@ -7,25 +7,39 @@ meta:
   description: How to manage HubRise Locations.
 ---
 
-As described in [Accounts and Locations](/docs/getting-started/#accounts-and-locations), Locations refers to the different points of sales for an Account. Locations are displayed with:
+Locations are the different points of sales for an Account. Each Location identifies a physical outlet. Accounts might be associated with one or multiple Locations. You can switch from one Location to another using the **Location** dropdown at the very top of the HubRise back office.
 
-- The Location name
+The **SETTINGS** page displays information about your Location and allows you to make configuration changes. You can also make changes to the Account by selecting **All locations** from the **Location** dropdown.
+
+## Location Name and ID
+
+Locations are displayed with:
+
+- The Location name.
 - The unique identifier for the Account they are associated with.
 - The number indicating in what order the Location was added (starting at zero).
 
-For example, **Baker Street z6q31-0** indicates the Location name of **Baker Street**, that it belongs to Account **z6q31**, and **-0** signifies it was the first Location added to this Account.
+For example, `Baker Street z6q31-0` indicates the Location name of `Baker Street`, that it belongs to Account `z6q31`, and `-0` signifies it was the first Location added to this Account.
+
+---
+
+**IMPORTANT NOTE**: To check our recommended naming convention for Locations, see [Create a Location](/docs/locations#create-a-location).
+
+---
 
 ## Location Settings
 
 To view Location details:
 
-1. Go to **SETTINGS** > **ACCOUNTS**.
-1. If you have multiple Accounts, select the Account for the Location
-1. In the **Locations **section click on the Location's name.
+1. Go to **SETTINGS**.
+1. If you have access to multiple Accounts, select the Account of the Location.
+1. From the **Location** dropdown, click on the Location's name.
 
 Locations are managed in the same way as Accounts, but the information is specific to the selected Location.
 
-Change of settings for specific locations allows you to have different payment methods per location, different users access and roles, and so on. For more information, see [Accounts](/docs/account/).
+Different settings for specific locations allow you to have different [payment methods per location](/docs/payment#account-or-location-payments), different users [permissions](/docs/permissions), and so on. For more information, see [Accounts](/docs/account/).
+
+If you operate in a country where including the Intra-Community VAT number is a legal requirement, HubRise will display a notification to update the VAT number if this information is missing from your Account.
 
 ---
 
@@ -35,32 +49,26 @@ Change of settings for specific locations allows you to have different payment m
 
 ## Create a Location
 
-The first Location is created simultaneously with the Account. For more information, see [Create an Account](/docs/account/#create-an-account).
+The first Location must be created with the Account. For more information, see [Create an Account](/docs/account/#create-an-account).
 
-To add a new Locations to an existing Account:
+To add a new Location to an existing Account:
 
-1. Click **SETTINGS** > **ACCOUNTS**.
-1. If you have multiple Accounts, select the Account that the Location will be added to.
-1. In the **Locations** section, click on **Add a location**.
+1. Click **SETTINGS**.
+1. If you have access to multiple Accounts, select the Account you need to add a Location to.
+1. In the **Account** section, click **Add a location**.
 1. Enter the required information.
-1. If this Location has a VAT number separate from the Account, enter it here in the **Intra-Community VAT number** field provided.
-1. If the billing address is different than the Location's address, check **The billing address is different from the location address** and fill out the form.
-1. Click **Add a new location** to save the new values.
+1. Click **Create** to save the new Location.
 
-It is recommended to name the location after the city, the area or street it is located at.
-
-<video controls title="Add Location example">
-  <source src="../images/020-en-settings-account-locations-add-location.webm" type="video/webm"/>
-</video>
+It is recommended to name the Location after the city, the area or street it is located at. For example, if you only have one location in London, the Location name could be `London`. If you have multiple locations in London, you could name them after their street address, for example `Baker Street`, `Dublin Street`, and `Duncannon Street`.
 
 ## Modify Location Details
 
-To update the name and address for a location, follow these steps:
+To update the name and address for a Location, follow these steps:
 
-1. Click **SETTINGS** > **ACCOUNT**.
-1. If you have multiple Accounts, select the Account that the Location will be added to.
+1. Click **SETTINGS**.
+1. If you have access to multiple Accounts, select the Account that the Location will be added to.
 1. Select the Location to update.
-1. Click **Modify**.
+1. In the **Location** section, click **Modify**.
 1. Update the values as needed.
 1. If this Location has a VAT number separate from the Account, enter it here in the **Intra-Community VAT number** field provided.
 1. If the billing address is different than the Location's address, check **The billing address is different from the location address** and fill out the form.

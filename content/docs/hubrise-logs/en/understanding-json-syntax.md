@@ -3,7 +3,7 @@ title: Understanding JSON Syntax
 position: 4
 layout: documentation
 meta:
-  title: Understanding JSON Syntax - How to Read HubRise logs
+  title: Understanding JSON Syntax | How to Read HubRise logs
   description: Short introduction to JSON syntax in non-technical terms to better understand HubRise requests.
 ---
 

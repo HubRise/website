@@ -3,7 +3,7 @@ title: Pushing The Catalog
 position: 5
 layout: documentation
 meta:
-  title: MyOrderBox Connection to HubRise - Pushing The Catalog
+  title: Pushing The Catalog | MyOrderBox | HubRise
   description: Find out how to export your MyOrderBox catalog to HubRise, how items and options are encoded, and which features are supported.
 ---
 

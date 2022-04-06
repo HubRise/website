@@ -1,5 +1,5 @@
 ---
-title: How Do I Check If I already Have a User Profile in HubRise?
+title: How Do I Check If I Already Have a User Profile in HubRise?
 position: 70
 layout: documentation
 meta:

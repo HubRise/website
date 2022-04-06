@@ -7,29 +7,25 @@ meta:
   description: How to manage HubRise Accounts.
 ---
 
-As described in [Accounts and Locations](/docs/getting-started/#accounts-and-locations), Accounts refers to the brand, and contains one or more Locations.
+An Account refers to the brand, and contains one or more Locations. Users on HubRise might have access to one or multiple Accounts. You can switch from one Account to another using the **Account** dropdown at the very top of the HubRise back office.
 
-Users with a single Account will have it selected by default. For users with multiple Accounts, the **SETTINGS** > **ACCOUNTS** section lists all Accounts you have been granted access to with the following information:
-
-- **NAME**: The name and unique identifier of the Account.
-- **ROLE**: Your role for the Account. For more information on roles, see [Permissions](/docs/permissions/).
-
-To view details for a specific Account, click its name.
-
-Users with only one Account will automatically be entered into their sole Account.
+The **SETTINGS** page displays information about your Account and allows you to make configuration changes.
+You can also make changes to any individual Location that is part of the Account.
 
 ## Account Settings
 
-Accounts and Locations have many of the same sub-sections and settings. Depending on your situation, you may have given your Locations different settings than the Account it belongs to.
+Accounts and Locations have many of the same sub-sections and settings. Depending on your situation, you might give your Locations different settings than the Account it belongs to.
 
-The ability to have different settings for Accounts and Locations allows you to:
+You can have different settings for Accounts and Locations in the following scenarios:
 
-- Have one payment method setup for all locations or differentiate them from one location to another. This is useful if you need to have a Location use a different payment method for accounting purposes.
-- Permissions can be granted for users at either the Account level or the Location level. For example, you may grant one user complete access to an Account as an Admin, but allow another user only to view and manage a specific Location.
-- View data across an Account, or filter information to a specific Location.
-- Modify your Account and Locations in ways that best fits your business needs.
+- You have one payment method set up at **All Locations** level, or you can have different payment methods for different Locations.
+  This is useful if you need to have a Location use a different payment method for accounting purposes.
+- You can grant users permissions to the whole Account or to specific Locations.
+  For example, you can grant one user complete access to an Account as an Admin, but allow another user only to view and manage a specific Location.
+- You can view data across the Account, or filter information based on a specific Location.
+- You can modify your Account and Locations in ways that best fit your business needs.
 
-The primary differences between the settings for Accounts and Locations to note are:
+The main differences between the settings for Accounts and Locations are the following:
 
 - Accounts contain one or more Locations. Each Location is attached to only one Account.
 - Currency settings are set at the Account level, and can not be changed once created. If you have made a mistake in the currency selection, you will have to create a new Account with the correct currency value.
@@ -39,19 +35,23 @@ The primary differences between the settings for Accounts and Locations to note 
 
 When creating a new Account, the first Location must be created at the same time through the following steps:
 
-To create a new Account and it's first location, click **SETTINGS** > **ACCOUNTS** > **Create Account**. Enter the information required and click **Create**.
+1. Click your name in the top right corner of the back office, then click **Profile**.
+2. From the **Permissions** section, click **Create Account**.
+3. Enter the information required, then click **Create**.
 
 ![Create an account on HubRise](../images/064-en-2x-create-account.png)
 
-The **Account Name** is the name you give your business or brand. For example, if your brand is called Fast Pizza, the **Account Name** will be **Fast Pizza**.
+The **Account Name** is the name you give your business or brand. For example, if your brand is called Fast Pizza, the **Account Name** will be `Fast Pizza`.
 
-The **Location Name** could be the city, the area, or the street name. For example, if the location is the only one in a town like London, the location could be named **London**. If you have multiple locations in London, you could name it after their street address **Baker Street**, **Dublin Street**, and **Duncannon Street**.
+The **Location Name** could be the city, the area, or the street name. For example, if the location is the only one in a town like London, the location could be named `London`. If you have multiple locations in London, you could name it after their street address, for example `Baker Street`, `Dublin Street`, and `Duncannon Street`.
 
-It is important to enter the correct **Currency** as you will not be able to change it later.
+Finally, enter the correct **Currency** for the market that you operate in.
 
-<video controls title="Create an Account">
-  <source src="../images/038-en-settings-account-create-account.webm" type="video/webm"/>
-</video>
+---
+
+**IMPORTANT NOTE**: The currency value can only be set when the Account is created, and can not be modified. If the currency for the HubRise Account does not match the currency set on the connected apps, errors may occur. Create a new Account with the correct currency and use that Account to connect your apps instead.
+
+---
 
 ---
 
@@ -61,28 +61,14 @@ It is important to enter the correct **Currency** as you will not be able to cha
 
 ## Modify Account Details
 
-The only field that can be modified is the **Account Name**.
-It is recommended to name the Account the same as your business or brand.
+To modify an existing Account, follow these steps:
+
+1. Select **SETTINGS**.
+2. From the **Account** section, click **Modify Account**.
+3. Update the fields as required, then click **Update**.
 
 ---
 
-**IMPORTANT NOTE**: The currency value can only be set when the Account is created, and can not be modified. If the currency for the HubRise Account does not match the currency set on the connected apps, errors may occur. Create a new Account with the correct currency and use that Account to connect your apps instead.
+**IMPORTANT NOTE**: In some countries, providing your Intra-Community VAT number is a legal requirement. HubRise will display a notification to update the VAT number if this information is missing from your Account.
 
 ---
-
-To modify an existing Account:
-
-1. Select **SETTINGS** > **ACCOUNT**.
-1. If there are multiple Accounts, click the name of the Account to update.
-1. Click **Modify**.
-1. Update the fields as required and Click **Modify**.
-
----
-
-**IMPORTANT NOTE**: It is a legal requirement to include the Intra-Community VAT number. HubRise will display a notification to update the VAT number if this information is missing from your Account.
-
----
-
-<video controls title="Change account information">
-  <source src="../images/019-en-settings-account-change-account-name.webm" type="video/webm"/>
-</video>

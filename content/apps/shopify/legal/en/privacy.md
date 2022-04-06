@@ -3,7 +3,7 @@ title: Privacy Policy
 position: 1
 layout: documentation
 meta:
-  title: Privacy Policy - Shopify Bridge
+  title: Privacy Policy | Shopify Bridge
   description: This Privacy Policy was written to help you better understand how we collect, use, and store your information.
 ---
 

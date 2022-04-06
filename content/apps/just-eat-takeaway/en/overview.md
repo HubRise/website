@@ -36,7 +36,7 @@ Just Eat Takeaway Bridge allows you to connect the following platforms to HubRis
 
 ---
 
-**IMPORTANT NOTE:** If you wish to connect a Just Eat store in Ireland or in the United Kingdom, you should use [Just Eat Flyt Bridge](/apps/just-eat-flyt/) instead.
+**IMPORTANT NOTE:** To connect a store on a different Just Eat Takeaway.com platform, you should use [Just Eat Flyt Bridge](/apps/just-eat-flyt/) instead.
 
 ---
 
@@ -48,6 +48,12 @@ Connecting Just Eat Takeaway Bridge allows you to:
 - Push delivery information into HubRise, for orders delivered by your team.
 
 ![Diagram of the connection flow between Just Eat Takeaway, Just Eat Takeaway Bridge, and HubRise](../images/000-en-2x-jet-connection-diagram.png)
+
+---
+
+**IMPORTANT NOTE:** The Just Eat OrderPad will need to remain switched on to receive orders in HubRise.
+
+---
 
 Just Eat Takeaway Bridge can be connected to HubRise from the HubRise back office.
 

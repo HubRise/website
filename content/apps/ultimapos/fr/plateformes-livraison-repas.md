@@ -1,6 +1,6 @@
 ---
 title: Plateformes de livraison de repas
-position: 2
+position: 4
 layout: documentation
 meta:
   title: Plateformes de livraison de repas | UltimaPOS | HubRise
@@ -23,6 +23,8 @@ Si les champs **Types de service** ne sont pas renseignés, UltimaPOS assigne ch
 
 Dans la page de configuration de Deliveroo Bridge, utilisez les codes ref suivants.
 
+En fonction de vos besoins, vous devez créer des articles, promotions et centres de profit dans UltimaPOS. Si vous n'utilisez pas ces fonctionnalités, il est inutile de créer ces éléments, et vous pouvez alors laisser vides les champs correspondants.
+
 | Section             | Nom                                               | Code ref                                                                          |
 | ------------------- | ------------------------------------------------- | --------------------------------------------------------------------------------- |
 | Types de service    | Code ref livraison par Deliveroo                  | Voir [Centres de profit](#centres-de-profit)                                      |
@@ -42,18 +44,23 @@ Pour savoir comment accéder à cette page, consultez l'aide sur la [configurati
 
 Dans la page de configuration de Uber Eats Bridge, utilisez les codes ref suivants.
 
-| Section             | Nom                                               | Code ref                                                                    |
-| ------------------- | ------------------------------------------------- | --------------------------------------------------------------------------- |
-| Types de service    | Code ref livraison Uber                           | Voir [Centres de profit](#centres-de-profit)                                |
-| Types de service    | Code ref livraison par le restaurant              | Voir [Centres de profit](#centres-de-profit)                                |
-| Types de service    | Code ref à emporter                               | Voir [Centres de profit](#centres-de-profit)                                |
-| Types de service    | Code ref sur place                                | Voir [Centres de profit](#centres-de-profit)                                |
-| Types de service    | Envoyer les commandes livrées par Uber [...]      | `commandes en livraison`                                                    |
-| Articles spéciaux   | Code ref jetables                                 | Créer un article `Jetables` dans UltimaPOS et utiliser son code ref.        |
-| Remises             | Code ref remise                                   | Créer une promotion `Uber Eats` dans UltimaPOS et utiliser son identifiant. |
-| Paiements           | Code ref paiement                                 | Créer un règlement `Uber Eats` dans UltimaPOS et utiliser son identifiant.  |
-| Statuts de commande | Marquer les commandes comme Acceptées             | `lorsque leur statut HubRise passe à "Reçue"`                               |
-| Menu                | Activer les notes de préparation sur les articles | Cocher la case                                                              |
+En fonction de vos besoins, vous devez créer des articles, promotions et centres de profit dans UltimaPOS. Si vous n'utilisez pas ces fonctionnalités, il est inutile de créer ces éléments, et vous pouvez alors laisser vides les champs correspondants.
+
+| Section             | Nom                                               | Code ref                                                           |
+| ------------------- | ------------------------------------------------- | ------------------------------------------------------------------ |
+| Types de service    | Code ref livraison Uber                           | Voir [Centres de profit](#centres-de-profit)                       |
+| Types de service    | Code ref livraison par le restaurant              | Voir [Centres de profit](#centres-de-profit)                       |
+| Types de service    | Code ref à emporter                               | Voir [Centres de profit](#centres-de-profit)                       |
+| Types de service    | Code ref sur place                                | Voir [Centres de profit](#centres-de-profit)                       |
+| Types de service    | Envoyer les commandes livrées par Uber [...]      | `commandes en livraison`                                           |
+| Articles spéciaux   | Code ref jetables                                 | Créer un article `Jetables` et utiliser son code ref.              |
+| Remises             | Code ref remise                                   | Créer une promotion `Uber Eats` et utiliser son identifiant.       |
+| Frais               | Code ref frais de livraison                       | Créer un article `Frais de livraison` et utiliser son identifiant. |
+| Frais               | Code ref supplément petite commande               | Créer un article `Petite commande` et utiliser son identifiant.    |
+| Frais               | Code ref pourboire                                | Créer un article `Pourboire` et utiliser son identifiant.          |
+| Paiements           | Code ref paiement                                 | Créer un règlement `Uber Eats` et utiliser son identifiant.        |
+| Statuts de commande | Marquer les commandes comme Acceptées             | `lorsque leur statut HubRise passe à "Reçue"`                      |
+| Menu                | Activer les notes de préparation sur les articles | Cocher la case                                                     |
 
 Pour savoir comment accéder à cette page, consultez l'aide sur la [configuration de Uber Eats Bridge](/apps/uber-eats/configuration).
 
@@ -62,6 +69,8 @@ UltimaPOS peut afficher les commentaires produits indiqués par vos clients lors
 ## Just Eat
 
 Dans la page de configuration de Just Eat Takeaway Bridge, utilisez les codes ref suivants.
+
+En fonction de vos besoins, vous devez créer des articles, promotions et centres de profit dans UltimaPOS. Si vous n'utilisez pas ces fonctionnalités, il est inutile de créer ces éléments, et vous pouvez alors laisser vides les champs correspondants.
 
 | Section             | Nom                                                   | Code ref                                                                          |
 | ------------------- | ----------------------------------------------------- | --------------------------------------------------------------------------------- |

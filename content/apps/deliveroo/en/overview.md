@@ -38,6 +38,12 @@ Connecting Deliveroo Bridge allows Deliveroo to:
 
 ---
 
+---
+
+**IMPORTANT NOTE:** OrderPad tablets are currently required to receive orders in HubRise. Deliveroo is planning to support tabletless integration by mid-2022.
+
+---
+
 Deliveroo Bridge can be connected to HubRise from the HubRise back office.
 
 ## Why Connect?

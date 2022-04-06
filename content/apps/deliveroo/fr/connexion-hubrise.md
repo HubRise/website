@@ -32,7 +32,7 @@ Avec ces informations, l'équipe d'intégration de Deliveroo pourra activer la c
 
 ---
 
-**REMARQUE IMPORTANTE :** si des codes ref de produits sont manquants, Deliveroo n'activera pas la connexion HubRise. Pour plus de détails, voir la page [Associer les codes ref](/apps/deliveroo/associer-codes-ref/).
+**REMARQUE IMPORTANTE :** Si des codes ref de produits sont manquants, Deliveroo n'activera pas la connexion HubRise. Pour plus de détails, voir la page [Associer les codes ref](/apps/deliveroo/associer-codes-ref/).
 
 ---
 

@@ -15,12 +15,6 @@ app_info:
   contact: contact@ultimapos.fr
 ---
 
----
-
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
-
----
-
 ## Description
 
 Depuis 2014, UltimaSOFT édite des solutions d'encaissement adaptées aux besoins des restaurants,  snacks,  boulangeries-pâtisseries,  boucheries, épiceries ou de tout autre commerce de bouche. Leurs solutions répondent également aux besoins des salons de coiffure, instituts de beauté, pressings ou laveries.

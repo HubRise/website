@@ -6,13 +6,15 @@ meta:
   title: Présentation générale | Inpulse | HubRise
   description: Présentation générale d'Inpulse, les raisons de connecter votre solution de gestion à HubRise et les fonctionnalités de l'intégration avec HubRise.
 gallery:
+  - __gallery-001.png
+  - __gallery-002.png
 path_override: /
 app_info:
   category: Gestion et Inventaire
   availability: France
   price_range:
-  website: https://www.inpulse.ai/
-  contact: +33 1 87 66 15 91
+  website: https://www.inpulse.ai
+  contact: +33 1 87 66 15 91 / support@inpulse.ai
 ---
 
 ---

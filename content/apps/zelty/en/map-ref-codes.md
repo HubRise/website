@@ -72,7 +72,7 @@ To export the entire menu in an external file:
 ## Payment Methods
 
 Your Zelty EPOS offers various payment methods, including cash and online payment as well as client account.
-It might be necessary to specify the corresponding payment method code for each payment method allowed in the system to connect via HubRise. You will need ask Zelty for it.
+It might be necessary to specify the corresponding payment method code for each payment method allowed in the system to connect via HubRise. You will need to ask Zelty for it.
 
 ## Service Types
 

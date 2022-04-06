@@ -20,6 +20,12 @@ content:
           logo: 3spos.png
           title: 3S POS
           description: 3S POS est une suite complète aux fonctionnalités personnalisables pour répondre aux besoins de chaque restaurant ou hôtelier.
+        - website: https://adipos.fr/
+          documentation: /apps/adipos
+          logo: adipos.png
+          title: Adipos
+          description: Adipos est une solution de caisse pour iOS et Android. Elle est adaptée aux besoins de la restauration en salle, livraison et click & collect, pour les entreprises mono ou multi établissements. Adipos propose des applications interconnectées, dont des bornes de commande, une solution de commande en ligne et un écran cuisine.
+          additional_info: Intégration en cours.
         - website: https://www.carrepos-online.fr/
           documentation: /apps/carre-pos
           logo: carrepos.png
@@ -43,12 +49,6 @@ content:
           title: iiko
           description: iiko est une solution cloud facile à déployer et à faire évoluer. Plus de 30.000 entreprises mono ou multisites l'utilisent pour automatiser leurs opérations.
           additional_info: Intégration en cours.
-        - website: https://www.ikentoo.com
-          documentation: /apps/ikentoo-lightspeed
-          logo: ikentoo-lightspeed.png
-          title: Lightspeed K Series / iKentoo
-          description: iKentoo Lightspeed K Series est une caisse enregistreuse cloud sur iPad pour la restauration et l'hôtellerie, avec une forte présence à l'international.
-          additional_info:
         - website: https://www.jdc.fr/caisse-enregistreuse
           documentation: /apps/jalia
           logo: jalia.png
@@ -67,10 +67,10 @@ content:
           description: LEO2 est un logiciel de caisse développé par Atoo. LEO2 s'adapte à tous les types de commerces, dont les restaurants, les boulangeries, les épiceries, les bouchers ou encore les fleuristes.
           additional_info:
         - website: https://www.lightspeedhq.com
-          documentation: /apps/ikentoo-lightspeed
-          logo: lightspeed.png
-          title: Lightspeed K-Series / iKentoo
-          description: Lightspeed propose des solutions de gestion sur le cloud pour les commerces et les restaurants dans plus de 100 pays. Son design soigné et son interface intuitive permettent la gestion sur site, à distance ou en déplacement pour des entreprises mono et multisites.
+          documentation: /apps/lightspeed-restaurant
+          logo: lightspeed-restaurant.png
+          title: Lightspeed Restaurant (K-Series)
+          description: Lightspeed Restaurant est une solution de gestion cloud pour les restaurants, disponible dans plus de 100 pays. Son design soigné et son interface intuitive permettent la gestion sur site, à distance ou en déplacement pour des entreprises mono et multisites.
         - website: http://www.myorderboxhq.com
           documentation: /apps/myorderbox
           logo: myorderbox.png
@@ -81,6 +81,11 @@ content:
           logo: nestor.png
           title: Nestor
           description: Nestor est un logiciel de caisse conçu pour la livraison à domicile et la vente à emporter.
+        - website: https://nextorder.com/fr-fr
+          documentation: /apps/next-order
+          logo: next-order.png
+          title: Next Order
+          description: Next Order propose une suite logicielle complète pour tout type de restaurant. Next Order fonctionne en mode Cloud et peut être utilisé sur n'importe quel appareil. Riche en fonctionnalités, Next Order aide à rationaliser les opérations.
         - website: https://www.orderlord.com
           documentation: /apps/orderlord
           logo: orderlord.png
@@ -109,13 +114,25 @@ content:
           logo: restaurant-manager.png
           title: Restaurant Manager
           description: Restaurant Manager, vendu dans le monde entier par des revendeurs agréés, est conçu pour répondre aux besoins de tous types d'établissements de la restauration au bars.
-          additional_info: Intégration par Crystal Mind en cours.
+          additional_info: Intégration par Crystal Mind.
+        - website: https://www.synapsy.fr/
+          documentation: /apps/synapsy
+          logo: synapsy.png
+          title: Synapsy
+          description: Synapsy est une solution de gestion pour les métiers de bouche et de commerce de détail, qui inclut l'encaissement, les bornes de commande et le click & collect. Synapsy intègre des outils décisionnels et marketing, et répond aux besoins des indépendants et des réseaux de magasins.
+          additional_info: Intégration en cours.
         - website: https://www.sicom.com/
           documentation: /apps/sicom
           logo: sicom.png
           title: SICOM
           description: SICOM propose une suite complète pour la restauration rapide. Les franchises et les gérants utilisent SICOM pour gérer, contrôler et standardiser les processus en capturant et analysant des données.
           additional_info: Intégration par MyTec en cours.
+        - website: https://swoopos.com
+          documentation: /apps/swoopos
+          logo: swoopos.png
+          title: Swoopos
+          description: Swoopos est une solution d'encaissement mobile, multi-fonctions, facile à utiliser et économique conçue pour la restauration et le commerce de proximité. Elle inclut une solution de paiement, de réservation et de commande commande à table par QR code.
+          additional_info:
         - website: http://www.talc.fr/
           documentation: /apps/talc
           logo: talc.png
@@ -126,7 +143,7 @@ content:
           documentation: /apps/ultimapos
           logo: ultimapos.png
           title: UltimaPOS
-          description: UltimaPOS de UltimaSOFT propose des logiciels d’encaissement et de gestion de point de vente adaptés aux besoins des restaurants, ainsi que des épiceries, instituts de beauté, pressing et laveries. Un back office permet de paramétrer son système et consulter ses résultats.
+          description: UltimaPOS de UltimaSOFT propose des logiciels d'encaissement et de gestion de point de vente adaptés aux besoins des restaurants, ainsi que des épiceries, instituts de beauté, pressing et laveries. Un back office permet de paramétrer son système et consulter ses résultats.
           additional_info:
         - website: https://zelty.fr
           documentation: /apps/zelty
@@ -159,6 +176,12 @@ content:
           title: Foodpanda
           description: Foodpanda est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Disponible dans 14 pays.
           additional_info:
+        - website:
+          documentation: /apps/hop-delivery
+          logo: hop-delivery.png
+          title: Hop Delivery
+          description: Hop Delivery est un service de commande en ligne et de livraison pour les restaurants et autres commerces. Les clients  commandent en ligne, soit depuis la plateforme Hop Delivery, soit sur le site en marque blanche fourni par Hop Delivery. Hop Delivery livre à Genève, en Suisse.
+          additional_info:
         - website: https://www.just-eat.fr/
           documentation: /apps/just-eat-flyt
           logo: just-eat.png
@@ -189,7 +212,7 @@ content:
           description: Skip The Dishes est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander un repas ou des boissons alcoolisées en ligne ou via une app mobile. Disponible au Canada.
           additional_info:
         - website: https://www.smood.ch/fr
-          documentation:
+          documentation: /apps/smood
           logo: smood.png
           title: Smood
           description: Smood est une plateforme de service de livraison à domicile qui opère sur tout le marché Suisse. Les clients peuvent commander en ligne ou via une app mobile dans leurs restaurants préférés ainsi que dans leurs Migros. HubRise est intégré à Dismatch, leur service de livraison.
@@ -199,6 +222,12 @@ content:
           title: Takeaway.com
           description: Takeaway.com est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Disponible en Belgique, au Luxembourg, au Portugal, en Roumanie, et en Bulgarie.
           additional_info:
+        - website: https://www.talabat.com
+          documentation: /apps/talabat
+          logo: talabat.png
+          title: Talabat
+          description: Talabat est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Disponible au Koweït, en Arabie saoudite, au Bahreïn, aux Émirats Arabes Unis, à Oman, au Qatar, en Jordanie, en Égypte et en Irak.
+          additional_info: Intégration en cours.
         - website: https://www.thuisbezorgd.nl/fr/
           documentation: /apps/just-eat-takeaway
           logo: thuisbezorgd.png
@@ -235,20 +264,25 @@ content:
           documentation: /apps/dood
           logo: dood.png
           title: DOOD
-          description: DOOD est une solution e-commerce et e-marketing destinés au food retail. Adaptée aux indépendants comme aux chaînes, la solution de commande en ligne en marque blanche de DOOD permet le Click & Collect, la livraison, et le service à table. DOOD inclut une suite d'outils marketing pour développer la fidélisation client.
+          description: DOOD est une solution e-commerce et e-marketing destinés au food retail. Adaptée aux indépendants comme aux chaînes, la solution de commande en ligne en marque blanche de DOOD permet le click & collect, la livraison, et le service à table. DOOD inclut une suite d'outils marketing pour développer la fidélisation client.
         - website: https://www.gonnaorder.com/?lang=fr
           documentation: /apps/gonnaorder
           logo: gonnaorder.png
           title: GonnaOrder
           description: GonnaOrder propose un système de commande en ligne économique, disponible dans 14 pays. Via un site personnalisé et des applications iOS et Android natives, GonnaOrder permet de commander à emporter, en livraison ou à table dans des restaurants, bars, pubs et cafés.
           additional_info:
+        - website: https://latoquemagique.com/
+          documentation: /apps/la-toque-magique
+          logo: la-toque-magique.png
+          title: La Toque Magique
+          description: La Toque Magique est une solution de commande en ligne optimisée pour le SEO et les réseaux sociaux. Elle permet de regrouper sur une seule interface les commandes et les livraisons de tous les canaux, dont les plateformes de livraison de repas.
         - website: https://www.livepepper.fr
           documentation: /apps/livepepper
           logo: livepepper.png
           title: LivePepper
-          description: LivePepper est un solution de commande en ligne pour les restaurants, conçue pour la livraison à domicile et la vente à emporter. Adaptée aux indépendants comme aux chaînes. LivePepper est untilisé en France, en Grande-Bretagne et à l'international.
-          additional_info:
-        - website: https://maakyo.com/
+          description: LivePepper est une solution de commande en ligne pour les restaurants, conçue pour la livraison à domicile et la vente à emporter. Adaptée aux indépendants comme aux chaînes. LivePepper est untilisé en France, en Grande-Bretagne et à l'international.
+          additional_info: Documentation en anglais.
+        - website: https://maakyo.com
           documentation: /apps/maakyo
           logo: maakyo.png
           title: Maakyo
@@ -260,10 +294,10 @@ content:
           description: My Lemonade est une solution de commande à table. Le client scanne le QR code ou le tag NFC placés sur la table, accède au menu dans sa langue sur son smartphone, et commande en ligne. Aucune app à installer.
           additional_info:
         - website: https://mynober.nl/en/home-2/
-          documentation:
+          documentation: /apps/mynober
           logo: mynober.png
           title: MynOber
-          description: MynOber est une solution de commande par QR code, commande en ligne et commande sur kiosque pour l'hôtellerie et la restauration. MynOber peut être utilisé comme solution autonome ou combiné avec une solution d'encaissement tierce.
+          description: MynOber propose une solution de commande en ligne, un kiosque de commande et un système d'encaissement simplifié pour l'hôtellerie et la restauration. MynOber peut être utilisé comme solution autonome ou combiné avec une autre solution d'encaissement.
           additional_info:
         - website: https://obypay.fr
           documentation: /apps/obypay
@@ -283,7 +317,7 @@ content:
           description: RestaJet propose une application mobile pour les réservations et un site de commande en ligne pour les restaurants. Des outils de gestion de contenu et de marketing sont disponibles sur la console RestaJet.
           additional_info:
         - website: https://restaurant-internet.com
-          documentation:
+          documentation: /apps/restaurant-internet
           logo: restaurant-internet.png
           title: Restaurant-internet
           description: Restaurant-internet propose un site vitrine avec réservation de table et solution de commande en ligne. La solution couvre en particulier les besoins de la livraison à domicile et la vente à emporter.
@@ -298,7 +332,7 @@ content:
           documentation: /apps/smartresto
           logo: smartresto.png
           title: SmartResto.Net
-          description: SmartResto.Net propose des menu digitalisés interactifs accessibles par QR code, et des sites de click & collect. La solution est conçue pour les cafés, restaurants, traiteurs, street food, hôtels et tout autre métier de la restauration.
+          description: SmartResto.Net propose des menu digitalisés interactifs accessibles par QR code, et des sites de click & collect. La solution est conçue pour les cafés, restaurants, traiteurs, street food, hôtels et tout autre métier de la restauration.
           additional_info:
         - website: https://www.smilein.io
           documentation: /apps/smilein
@@ -320,7 +354,7 @@ content:
           documentation: /apps/tastycloud
           logo: tastycloud.png
           title: TastyCloud
-          description: TastyCloud propose des menus digitalisés in et out store pour les restaurants et les hôtels. L'offre comprend des menus sur tablettes, des porte-menus extérieurs, un site de click & collect, des écrans dynamiques, et une application mobile de prise de commande par scan de QR codes.
+          description: TastyCloud propose des menus digitalisés in et out store pour les restaurants et les hôtels. L'offre comprend des menus sur tablettes, des porte-menus extérieurs, un site de click & collect, des écrans dynamiques, et une application mobile de prise de commande par scan de QR codes.
           additional_info:
         - website: https://woocommerce.com/
           documentation: /apps/woocommerce
@@ -337,7 +371,7 @@ content:
     - title: Gestion de livreurs
       apps:
         - website: http://www.captain.ai
-          documentation:
+          documentation: /apps/captain
           logo: captain.png
           title: Captain
           description: Captain est une solution de traitement des commandes et de tracking des livreurs.
@@ -355,16 +389,22 @@ content:
           description: OrderLord est une solution conçue pour les entreprises de livraison et les restaurants, permettant de suivre les livraisons grâce à une application mobile utilisant le GPS. OrderLord apporte aux clients une expérience de livraison transparente.
           additional_info:
         - website: https://orkestro.com
-          documentation:
+          documentation: /apps/orkestro
           logo: orkestro.png
           title: Orkestro
           description: Orkestro permet de gérer les livraisons en interne ou de les externaliser à des opérateurs offrant des services de livraison à la demande.
           additional_info:
-        - website: https://stuart.com/fr/
+        - website: https://useseconds.com
+          documentation: /apps/seconds
+          logo: seconds.png
+          title: Seconds
+          description: Seconds permet aux commerçants de gérer leurs livraisons avec leur propre flotte ou d'utiliser  des services de livraison tiers. Seconds transmet automatiquement les commandes aux services de livraison ou aux livreurs du magasin via une app dédiée.
+          additional_info:
+        - website: https://stuart.com/fr
           documentation:
           logo: stuart.png
           title: Stuart
-          description: Stuart propose aux commerces de toutes tailles et de tous secteurs, des services de livraison rapide sur demande avec une méthode de transport personnalisée. Disponible dans 3 pays et 80 villes.
+          description: Stuart propose aux commerces de toutes tailles et de tous secteurs, des services de livraison rapide sur demande avec une méthode de transport personnalisée. Disponible dans 4 pays et 100 villes.
           additional_info:
     - title: Fidélité et marketing
       apps:
@@ -381,7 +421,7 @@ content:
           description: dotdigital est un outil d'automatisation marketing omnicanal utilisé pour engager et créer des relations avec ses clients grâce à des campagnes marketing par e-mail, SMS, notifications en push, chat et annonces sur les réseaux sociaux.
           additional_info:
         - website: https://myemma.com
-          documentation:
+          documentation: /apps/emma
           logo: emma.png
           title: Emma
           description: Emma est une solution d'envoi d'e-mails et de newsletters personnalisés, avec support à la stratégie et à la conception de la campagne marketing.
@@ -393,7 +433,7 @@ content:
           description: MailChimp est une solution d'envoi d'e-mails, de newsletters personnalisés et de SMS.
           additional_info:
         - website: https://sailplay.com
-          documentation:
+          documentation: /apps/sailplay
           logo: sailplay.png
           title: SailPlay
           description: SailPlay est une plateforme utilisée pour l'automatisation des campagnes d'e-mailing. Elle permet de mieux connaître ses clients afin de les fidéliser.
@@ -406,6 +446,12 @@ content:
           additional_info:
     - title: Gestion et inventaire
       apps:
+        - website: https://get.apicbase.com/fr/
+          documentation: /apps/apicbase
+          logo: apicbase.png
+          title: Apicbase
+          description: Apicbase est un logiciel de gestion pour les restaurants et les hôtels à plusieurs points de vente. Apicbase vous permet de contrôler les coûts des produits finis, l'inventaire et les achats. Vos données sont disponibles à tout moment, où que vous soyez et sur tout type d'appareil.
+          additional_info:
         - website: https://barratio.fr
           documentation: /apps/barratio
           logo: barratio.png
@@ -431,7 +477,7 @@ content:
         - website: https://www.somm-it.com/
           documentation: /apps/somm-it
           logo: somm-it.png
-          title: SOMM’IT
+          title: SOMM'IT
           description: SOMM'IT vous accompagne dans la gestion de votre carte des vins. Synchronisez votre inventaire avec votre EPOS, et éditez une carte des vins à jour. SOMM'IT inclut une large bibliothèque de vins, et un module de gestion des commandes fournisseurs.
     - title: Autres applications
       apps:
@@ -446,18 +492,11 @@ content:
           title: OrderLine
           description: OrderLine édité par HubRise centralise les commandes passées depuis un site marchand ou autre plateforme de commande en ligne. Les commandes sont ainsi gérées et imprimés.
           additional_info:
-        - website: https://www.satoeurope.com/fr/?lang=true
-          documentation:
+        - website: https://www.satoeurope.com/fr
+          documentation: /apps/sato
           logo: sato.png
           title: SATO
-          description: SATO fournit des imprimantes thermiques intelligentes pour les commerces de proximité et les restaurants. Présent dans plus de 90 pays.
-          additional_info: Intégration en cours.
-        - website: https://spleatthebill.io
-          documentation: /apps/spleat-the-bill
-          logo: spleat-the-bill.png
-          title: Spleat the bill
-          description: Spleat the bill est une solution de paiement à table pour les bars et restaurants, qui permet aux clients de payer et de partager l'addition depuis leur téléphone.
-          additional_info: Intégration en cours.
+          description: SATO fournit des imprimantes autonomes personnalisables pour les commerces de proximité et les restaurants. Les imprimantes sont utilisées dans plus de 90 pays.
         - website: https://tickncook.com
           documentation: /apps/tickncook
           logo: tickncook.png

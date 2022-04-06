@@ -19,12 +19,6 @@ app_info:
   contact: contact@somm-it.com
 ---
 
----
-
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
-
----
-
 ## Description
 
 Avec SOMM'IT, votre carte des vins et autres boissons sera toujours à jour. Fini la gestion d'inventaire sur Excel ou sur papier, si propice aux erreurs. Vous n'aurez plus à vous justifier en cas de rupture de stock ou de changement de millésime.
@@ -47,7 +41,7 @@ SOMM'IT peut être connecté à HubRise depuis le back-office de SOMM'IT.
 
 ## Pourquoi se connecter ?
 
-En connectant SOMM'IT à HubRise, vous permettez à votre solution d'inventaire de communiquer avec les autres applications que vous utilisez de manière quotidienne. Recevez les commandes provenant de votre solution d'encaissement, de votre solution de commande en ligne, ou des plateformes de livraison de repas sur SOMM'IT. Importez votre menu dans SOMM'IT.
+En connectant SOMM'IT à HubRise, vous permettez à votre solution d'inventaire de communiquer avec les autres applications que vous utilisez de manière quotidienne. Recevez les commandes provenant de votre solution d'encaissement, de votre solution de commande en ligne ou des plateformes de livraison de repas sur SOMM'IT. Importez votre menu dans SOMM'IT.
 
 Grâce à HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes avec votre solution d'encaissement, de commande en ligne, les plateformes de livraison de repas (dont Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs ou de services de livraison, les solutions eMarketing (SMS / eMailing), business intelligence, systèmes de gestion de stock et de fidélisation client, et bien d'autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, consultez notre [page Apps](/apps).
 

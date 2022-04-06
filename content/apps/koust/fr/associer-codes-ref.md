@@ -11,7 +11,7 @@ Une fois Koust connecté à HubRise, les commandes provenant de HubRise sont imp
 
 ## Importer le catalogue
 
-A tout moment, vous pouvez importer manuellement le catalogue depuis HubRise :
+À tout moment, vous pouvez importer manuellement le catalogue depuis HubRise :
 
 1. Ouvrez votre tableau de bord Koust, et dans la barre de menu, cliquez sur le nom de votre entreprise.
 1. Dans le menu déroulant, sélectionnez **Paramètres**. La page **Paramètres de l'établissement** s'affiche.

@@ -38,6 +38,8 @@ Connecting Uber Eats Bridge allows Uber Eats to:
 
 ---
 
+Uber Eats Bridge can receive orders when Uber Eats tablets are switched off.
+
 Uber Eats Bridge can be connected to HubRise from the HubRise back office.
 
 ## Why Connect?

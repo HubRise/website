@@ -31,7 +31,7 @@ The following sections provide more details on how your eTakeaway Max catalog is
 
 ### Categories
 
-The categories in the eTakeaway Max catalog are mapped one-to-one to categories of products on HubRise. 
+The categories in the eTakeaway Max catalog are mapped one-to-one to categories of products on HubRise.
 
 eTakeaway Max sends to HubRise the category name, ref code, and description.
 
@@ -61,6 +61,7 @@ The following sections provide technical details on how your eTakeaway Max catal
 ### Categories
 
 For every category, the following fields are sent to HubRise:
+
 - `name`: The name of the category.
 - `ref`: The category ref code.
 - `description`: The category description.
@@ -69,12 +70,12 @@ For every category, the following fields are sent to HubRise:
 
 For every sku, eTakeaway Max sends the following information to HubRise:
 
-- `name`: The name of the sku.             
+- `name`: The name of the sku.
 - `description`: The description of the sku.
 - `image_ids`: The list of image IDs associated with the sku.
 - `skus`: A list containing a single sku.
-  - `skus[0].ref`: The ref code of the sku, which will be passed along in orders.  
-  - `skus[0].price`: The price of the sku.            
+  - `skus[0].ref`: The ref code of the sku, which will be passed along in orders.
+  - `skus[0].price`: The price of the sku.
   - `skus[0].option_list_refs`: The list of options attached to the sku.
 
 ### Options
