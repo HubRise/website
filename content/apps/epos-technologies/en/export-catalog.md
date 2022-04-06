@@ -1,5 +1,5 @@
 ---
-title: Pushing The Catalog
+title: Export The Catalog
 position: 4
 layout: documentation
 meta:
@@ -9,7 +9,7 @@ meta:
 
 This page describes how to export your EPOS Technologies catalog and what information is sent to HubRise.
 
-## Exporting The Catalog To HubRise
+## Export The Catalog To HubRise
 
 To export your EPOS Technologies catalog to HubRise, follow these steps.
 
@@ -29,7 +29,7 @@ To export your EPOS Technologies catalog to HubRise, follow these steps.
 
 Depending on how large your catalog is, it might take a few minutes for your HubRise catalog to be fully updated.
 
-## Technical Reference
+## Exported Data
 
 The following sections provide more details on how your EPOS Technologies catalog is mapped to HubRise.
 

@@ -13,9 +13,11 @@ meta:
 
 ---
 
+## Connect EPOS Technologies
+
 You can connect EPOS Technologies to HubRise autonomously from your EPOS Technologies back office.
 
-To activate the connection between EPOS Technologies and HubRise, follow these steps.
+To activate the connection between EPOS Technologies and HubRise, follow these steps:
 
 1. Log in to your EPOS Technologies back office.
 1. From the navigation menu, select **Company Settings** > **Locations**.
@@ -29,4 +31,13 @@ Once connected to HubRise, the location details will appear in your EPOS Technol
 
 ![The HubRise connection page in your EPOS Technologies back office](../images/002-en-epos-tech-hubrise-connection.png)
 
-If you want to connect multiple restaurants, each location should be connected to HubRise independently following the steps outlined above.
+To connect multiple restaurants, each location should be connected to HubRise independently following the steps outlined above.
+
+## Disconnect EPOS Technologies
+
+To disconnect EPOS Technologies from HubRise, follow these steps:
+
+1. Log in to your EPOS Technologies back office.
+1. From the navigation menu, select **Company Settings** > **Locations**.
+1. From the **Locations** page, click the <InlineImage width="20" height="20">![Edit icon](../images/edit-icon.png)</InlineImage> **Edit** icon next to the location you want to disconnect.
+1. From the **Edit** page, navigate to the bottom to find the **HubRise** card, then click **Disconnect**.

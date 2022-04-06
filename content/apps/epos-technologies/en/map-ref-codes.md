@@ -9,7 +9,7 @@ meta:
 
 When you create a product or option, you need to assign a ref code so that EPOS Technologies can correctly receive orders from your connected solutions.
 
-## Products
+## Products and SKUs
 
 You can check individual ref codes or review the ref codes for the entire catalog in bulk from the **System Programming** > **Products** page in your back office.
 
