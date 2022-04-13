@@ -3,8 +3,8 @@ title: Overview
 position: 1
 layout: documentation
 meta:
-  title: Overview | Toolkeat | HubRise
-  description: Toolkeat overview, reasons for connecting Toolkeat to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
+  title: Overview | SuperDigital.fr | HubRise
+  description: SuperDigital.fr overview, reasons for connecting SuperDigital.fr to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 gallery:
 path_override: /
 app_info:
@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: Full documentation of this integration will be available soon.
+**IMPORTANT NOTE**: Full documentation available <Link to="/fr/apps/superdigital" addLocalePrefix={false}>in French only</Link>.
 
 ---
 
