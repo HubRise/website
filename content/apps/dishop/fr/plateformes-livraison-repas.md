@@ -74,4 +74,8 @@ Dans la page de configuration de Uber Eats Bridge, utilisez les codes ref suivan
 
 Dishop peut afficher les commentaires produits indiqués par vos clients avant d'inclure un produit dans leur panier. Vous pouvez donc laisser cette fonctionnalité activée sur Uber Eats.
 
-Dishop ne peut pas afficher les commentaires sur les commandes faits par vos clients, au niveau du panier Uber Eats, lors du passage de leur commande. Il est donc nécessaire de désactiver cette fonctionnalité Uber Eats lorsque vous utilisez Dishop pour la réception et la gestion des commandes Uber Eats.
+---
+
+**REMARQUE IMPORTANTE :** Les commentaires sur les commandes que vos clients peuvent faire dans le panier lors du passage de leur commande ne sont pas supportées par Dishop. Vous devez donc désactiver cette fonctionnalité sur Uber Eats.
+
+---
