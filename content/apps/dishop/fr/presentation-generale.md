@@ -38,6 +38,7 @@ Grâce à un tableau de bord avancé et intuitif, la franchise ou la dark kitche
 Connecter Dishop à HubRise permet à votre solution de commande en ligne et gestion de livraison de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
+- Recevoir les commandes de HubRise, dont les statuts de commande.
 - Envoyer les informations clients à HubRise.
 - Recevoir un catalogue de HubRise.
 - Synchroniser l'inventaire avec HubRise.
