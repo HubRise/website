@@ -31,7 +31,7 @@ Dans la page de configuration de Deliveroo Bridge, utilisez les codes ref suivan
 | Paiements           | Code ref paiement en espèces                          | (laisser vide)                                                       |
 | Statuts de commande | Marquer les commandes comme Acceptées                 | `lorsque leur statut HubRise passe à "Reçue"`                        |
 
-## Just Eat JET Connect / Flyt
+## Just Eat JET Connect
 
 Sur le marché Français l'API de Just Eat Takeaway est généralement utilisée. L'API JET Connect permettant de pousser un catalog HubRise dans Just Eat est réservée à des chaînes de restauration. Certains indépendants peuvent également y avoir accès.
 
