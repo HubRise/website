@@ -171,11 +171,11 @@ Depending on your needs, you may have to create some products in Lightspeed. If 
 | Charges        | Tip ref code                                 | Create a product with variable positive price and use its **Code**.        |
 | Payments       | Payment ref code                             | `UEPM`                                                                     |
 | Order statuses | Mark orders as Accepted                      | `when their HubRise status changes to "Received"`                          |
-| Menu           | Enable preparation notes on individual items | Tick the checkbox                                                          |
+| Menu           | Enable preparation notes on individual items | Tick the checkbox to enable it.                                            |
 
 (\*) BYOC - Bring Your Own Courier
 (\*\*) Only applies if you offer disposable items, such as cutlery or napkins on the Uber Eats checkout. To know more, see [Special items](/apps/uber-eats/configuration#special-items).
 
 LEO2 can display the preparation notes customers might write for you after selecting a product. You can thus leave this feature enabled on Uber Eats.
 
-Lightspeed can also display feedback on orders customers might write for you in the Uber Eats basket or at checkout. You can thus leave this feature enabled on Uber Eats.
+Lightspeed can also display notes on orders customers might write for you in the Uber Eats basket or at checkout. You can thus leave this feature enabled on Uber Eats.
