@@ -100,7 +100,7 @@ Dans la page de configuration de Uber Eats Bridge, utilisez les codes ref suivan
 | Statuts de commande | Marquer les commandes comme Acceptées                 | `lorsque leur statut HubRise passe à "Reçue"`                        |
 | Menu                | Activer les notes de préparation sur les articles     | Cocher la case pour activer cette fonctionnalité.                    |
 
-(\*) Applicable uniquement si vous proposez des jetables, tels que des couverts, ou serviettes au moment de finaliser sa commande sur Uber Eats. Pour en savoir plus, voir [Articles spéciaux](/apps/uber-eats/configuration#articles-sp-ciaux). Sinon, laisser vide.
+(\*) Applicable uniquement si vous proposez des jetables, tels que des couverts, ou serviettes au moment de finaliser sa commande sur Uber Eats. Vous pouvez ignorer la création de produit et laisser le champ correspondant vide si vous n'utilisez pas cette fonctionnalité. Pour en savoir plus, voir [Articles spéciaux](/apps/uber-eats/configuration#articles-sp-ciaux). Sinon, laisser vide.
 
 LEO2 peut afficher les notes de préparation que Uber Eats propose à vos clients de faire pour vous après avoir sélectionné un produit. Vous pouvez donc laisser cette fonctionnalité activée sur Uber Eats.
 
