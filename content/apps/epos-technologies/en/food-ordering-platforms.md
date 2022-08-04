@@ -77,8 +77,6 @@ To correctly receive your Uber Eats orders in EPOS Technologies, specify the fol
 | Menu           | Enable preparation notes on individual items | Tick the checkbox to enable it.                                    |
 
 (\*) BYOC - Bring Your Own Courier
-(\*\*) Only applies if you offer disposable items, such as cutlery or napkins on the Uber Eats checkout. You can skip creating the products and leave the corresponding fields empty if you don't use this feature. To know more, see [Special items](/apps/uber-eats/configuration#special-items).
+(\*\*) Only applies if you offer disposable items, such as cutlery or napkins on the Uber Eats checkout. You can skip creating the product and leave the corresponding field empty if you don't use this feature. To know more, see [Special items](/apps/uber-eats/configuration#special-items).
 
 EPOS Technologies can display the preparation notes customers might write for you after selecting a product. You can thus leave this feature enabled on Uber Eats.
-
-EPOS Technologies can also display notes on orders customers might write for you in the Uber Eats basket or at checkout. You can thus leave this feature enabled on Uber Eats.
