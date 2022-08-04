@@ -7,7 +7,7 @@ meta:
   description: Integrating EPOS Technologies with food ordering platforms requires you to specify particular ref codes in the configuration page of the delivery platform bridge.
 ---
 
-With HubRise, you can receive orders from Deliveroo, Just Eat, Uber Eats and other food platforms in EPOS Technologies. You can also push your menu from EPOS Technologies to food platforms.
+With HubRise, you can receive orders from Deliveroo, Just Eat, Uber Eats and other food ordering and delivery platforms in EPOS Technologies. You can also push your menu from EPOS Technologies to food platforms.
 
 For more information, check the documentation of these platforms in our [Apps page](/apps/food-ordering-platforms).
 
@@ -32,7 +32,7 @@ In the Deliveroo Bridge configuration page, use the following values:
 | Payments       | Cash payment ref code                 | (leave empty)                                     |
 | Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Received"` |
 
-## Just Eat
+## Just Eat Flyt
 
 To receive Just Eat orders in EPOS Technologies, you first need to connect Just Eat Flyt Bridge, an app included in your HubRise subscription. For more information about Just Eat Flyt Bridge, see the [Just Eat Flyt Bridge documentation](/apps/just-eat-flyt).
 
@@ -74,7 +74,11 @@ In the Uber Eats Bridge configuration page, use the following values:
 | Charges        | Tip ref code                                 | (leave empty)                                                      |
 | Payments       | Payment ref code                             | `UE_PM_PLATFORM`                                                   |
 | Order statuses | Mark orders as Accepted                      | `when their HubRise status changes to "Received"`                  |
-| Menu           | Enable preparation notes on individual items | Tick the checkbox                                                  |
+| Menu           | Enable preparation notes on individual items | Tick the checkbox to enable it.                                    |
 
 (\*) BYOC - Bring Your Own Courier
-(\*\*) Only applies if you offer disposable items, such as cutlery, napkins, etc.
+(\*\*) Only applies if you offer disposable items, such as cutlery or napkins on the Uber Eats checkout. To know more, see [Special items](/apps/uber-eats/configuration#special-items).
+
+EPOS Technologies can display the preparation notes customers might write for you after selecting a product. You can thus leave this feature enabled on Uber Eats.
+
+EPOS Technologies can also display notes on orders customers might write for you in the Uber Eats basket or at checkout. You can thus leave this feature enabled on Uber Eats.
