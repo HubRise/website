@@ -7,7 +7,11 @@ meta:
   description: Integrating eTakeaway Max with food ordering platforms requires you to specify particular ref codes in the configuration page of the delivery platform bridge.
 ---
 
-To connect eTakeaway Max to Deliveroo, Uber Eats, or Just Eat, use the configuration parameters provided below.
+With HubRise, you can receive orders from Deliveroo, Just Eat, Uber Eats and other food ordering and delivery platforms in eTakeaway Max. You can also push your menu from eTakeaway Max to food platforms.
+
+For more information, check the documentation of these platforms in our [Apps page](/apps/food-ordering-platforms).
+
+Below are the parameters to use to connect food ordering platforms to eTakeaway Max.
 
 ## Deliveroo
 
