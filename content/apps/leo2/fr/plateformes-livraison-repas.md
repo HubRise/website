@@ -9,14 +9,13 @@ meta:
 
 HubRise permet de connecter le logiciel de caisse LEO2 à Deliveroo, Uber Eats, Just Eat ou d'autres plateformes de commande et livraison de repas. Pour plus d'informations, consultez les pages d'aide de ces plateformes, accessibles depuis notre [page Apps](/apps).
 
-Vous trouverez ci-dessous les paramètres à utiliser pour la configuration de ces plateformes avec Leo2.
+Vous trouverez ci-dessous les paramètres à utiliser pour la configuration de ces plateformes avec LEO2.
 
 ## Deliveroo
 
-Pour recevoir les commandes de Deliveroo dans Leo2, vous devez d'abord connecter Deliveroo Bridge, une application incluse dans votre abonnement HubRise. 
+Pour recevoir les commandes de Deliveroo dans LEO2, vous devez d'abord connecter Deliveroo Bridge, une application incluse dans votre abonnement HubRise. 
 
-Pour configurer Deliveroo Bridge, consultez l'aide sur la [configuration de Deliveroo Bridge](/apps/deliveroo/configuration).
-Dans la page de configuration de Deliveroo Bridge, utilisez les codes ref suivants pour Leo2.
+Pour configurer Deliveroo Bridge, consultez l'aide sur la [configuration de Deliveroo Bridge](/apps/deliveroo/configuration). Dans la page de configuration de Deliveroo Bridge, utilisez les codes ref suivants pour LEO2.
 
 | Section             | Nom                                                   | Code ref                                                             |
 | ------------------- | ----------------------------------------------------- | -------------------------------------------------------------------- |
@@ -35,10 +34,9 @@ Dans la page de configuration de Deliveroo Bridge, utilisez les codes ref suivan
 
 Sur le marché Français l'API de Just Eat Takeaway est généralement utilisée. L'API JET Connect permettant de pousser un catalog HubRise dans Just Eat est réservée à des chaînes de restauration. Certains indépendants peuvent également y avoir accès.
 
-Pour recevoir les commandes de Just Eat dans Leo2 via l'API JET Connect, vous devez d'abord connecter Just Eat Flyt Bridge, une application incluse dans votre abonnement HubRise.
+Pour recevoir les commandes de Just Eat dans LEO2 via l'API JET Connect, vous devez d'abord connecter Just Eat Flyt Bridge, une application incluse dans votre abonnement HubRise.
 
-Pour configurer Just Eat Flyt Bridge, consultez l'aide sur la <Link to="/apps/just-eat-flyt/configuration" addLocalePrefix={false}>configuration de Just Eat Flyt Bridge (en anglais)</Link>.
-Dans la page de configuration de Just Eat Flyt Bridge, utilisez les codes ref suivants pour Leo2.
+Pour configurer Just Eat Flyt Bridge, consultez l'aide sur la <Link to="/apps/just-eat-flyt/configuration" addLocalePrefix={false}>configuration de Just Eat Flyt Bridge (en anglais)</Link>. Dans la page de configuration de Just Eat Flyt Bridge, utilisez les codes ref suivants pour LEO2.
 
 | Section             | Nom                                                   | Code ref                                                                         |
 | --------------------| ----------------------------------------------------- | -------------------------------------------------------------------------------- |
@@ -60,10 +58,9 @@ Dans la page de configuration de Just Eat Flyt Bridge, utilisez les codes ref su
 
 ## Just Eat Takeaway
 
-Pour recevoir les commandes de Just Eat Takeaway dans Leo2, vous devez d'abord connecter Just Eat Takeaway Bridge, une application incluse dans votre abonnement HubRise. 
+Pour recevoir les commandes de Just Eat Takeaway dans LEO2, vous devez d'abord connecter Just Eat Takeaway Bridge, une application incluse dans votre abonnement HubRise. 
 
-Pour configurer Just Eat Takeaway Bridge, consultez l'aide sur <Link to="/apps/just-eat-takeaway/configuration" addLocalePrefix={false}>configuration de Just Eat Takeaway Bridge (en anglais)</Link>.
-Dans la page de configuration de Just Eat Takeaway Bridge, utilisez les codes ref suivant pour Leo2.
+Pour configurer Just Eat Takeaway Bridge, consultez l'aide sur <Link to="/apps/just-eat-takeaway/configuration" addLocalePrefix={false}>configuration de Just Eat Takeaway Bridge (en anglais)</Link>.  Dans la page de configuration de Just Eat Takeaway Bridge, utilisez les codes ref suivant pour LEO2.
 
 | Section             | Nom                                                   | Code ref                                                             |
 | ------------------- | ----------------------------------------------------- | -------------------------------------------------------------------- |
@@ -79,10 +76,9 @@ Dans la page de configuration de Just Eat Takeaway Bridge, utilisez les codes re
 
 ## Uber Eats
 
-Pour recevoir les commandes de Uber Eats dans Leo2, vous devez d'abord connecter Uber Eats Bridge, une application incluse dans votre abonnement HubRise. 
+Pour recevoir les commandes de Uber Eats dans LEO2, vous devez d'abord connecter Uber Eats Bridge, une application incluse dans votre abonnement HubRise. 
 
-Pour configurer Uber Eats Bridge, consultez l'aide sur la [configuration de Uber Eats Bridge](/apps/uber-eats/configuration).
-Dans la page de configuration de Uber Eats Bridge, utilisez les codes ref suivants pour Leo2.
+Pour configurer Uber Eats Bridge, consultez l'aide sur la [configuration de Uber Eats Bridge](/apps/uber-eats/configuration). Dans la page de configuration de Uber Eats Bridge, utilisez les codes ref suivants pour LEO2.
 
 | Section             | Nom                                                   | Code ref                                                             |
 | ------------------- | ----------------------------------------------------- | -------------------------------------------------------------------- |
