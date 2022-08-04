@@ -36,7 +36,7 @@ Pour configurer Deliveroo Bridge, consultez l'aide sur la [configuration de Deli
 
 Pour recevoir les commandes de Just Eat dans SOLUTION, vous devez d'abord connecter Just Eat Takeaway Bridge, une application incluse dans votre abonnement HubRise.
 
-Pour configurer Just Eat Takeaway Bridge, consultez l'aide sur la <Link to="/apps/just-eat-flyt/configuration" addLocalePrefix={false}>configuration de Just Eat Takeaway Bridge (en anglais)</Link>. Dans la page de configuration de Just Eat Takeaway Bridge, utilisez les codes ref suivants.
+Pour configurer Just Eat Takeaway Bridge, consultez l'aide sur la <Link to="/apps/just-eat-takeaway/configuration" addLocalePrefix={false}>configuration de Just Eat Takeaway Bridge (en anglais)</Link>. Dans la page de configuration de Just Eat Takeaway Bridge, utilisez les codes ref suivants.
 
 | Section             | Nom                                                   | Code ref                                      |
 | ------------------- | ----------------------------------------------------- | --------------------------------------------- |
