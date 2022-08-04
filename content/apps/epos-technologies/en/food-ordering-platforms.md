@@ -17,7 +17,7 @@ Below are the parameters to use to connect platforms to EPOS Technologies.
 
 To receive Deliveroo orders in EPOS Technologies, you first need to connect Deliveroo Bridge, an app included in your HubRise subscription. For more information about Deliveroo Bridge, see the [Deliveroo Bridge documentation](/apps/deliveroo).
 
-In the Deliveroo Bridge configuration page, use the following values:
+To correctly receive your Deliveroo orders in EPOS Technologies, specify the following values in the Deliveroo Bridge configuration page. To find out how to view and modify it, see the [Deliveroo Configuration page](/apps/deliveroo/configuration).
 
 | Section        | Name                                  | Ref code                                          |
 | -------------- | ------------------------------------- | ------------------------------------------------- |
@@ -36,7 +36,7 @@ In the Deliveroo Bridge configuration page, use the following values:
 
 To receive Just Eat orders in EPOS Technologies, you first need to connect Just Eat Flyt Bridge, an app included in your HubRise subscription. For more information about Just Eat Flyt Bridge, see the [Just Eat Flyt Bridge documentation](/apps/just-eat-flyt).
 
-In the Just Eat Flyt Bridge configuration page, use the following values:
+To correctly receive your Just Eat orders in EPOS Technologies, specify the following values in the Just Eat Flyt Bridge configuration page. To find out how to view and modify it, see the [Just Eat flyt Configuration page](/apps/just-eat-flyt/configuration).
 
 | Section        | Name                                     | Ref code                                          |
 | -------------- | ---------------------------------------- | ------------------------------------------------- |
@@ -58,7 +58,7 @@ In the Just Eat Flyt Bridge configuration page, use the following values:
 
 To receive Uber Eats orders in EPOS Technologies, you first need to connect Uber Eats Bridge, an app included in your HubRise subscription. For more information about Uber Eats Bridge, see the [Uber Eats Bridge documentation](/apps/uber-eats).
 
-In the Uber Eats Bridge configuration page, use the following values:
+To correctly receive your Uber Eats orders in EPOS Technologies, specify the following values in the Uber Eats Bridge configuration page. To find out how to view and modify it, see the [Uber Eats Configuration page](/apps/uber-eats/configuration).
 
 | Section        | Name                                         | Ref code or value                                                  |
 | -------------- | -------------------------------------------- | ------------------------------------------------------------------ |
@@ -77,7 +77,7 @@ In the Uber Eats Bridge configuration page, use the following values:
 | Menu           | Enable preparation notes on individual items | Tick the checkbox to enable it.                                    |
 
 (\*) BYOC - Bring Your Own Courier
-(\*\*) Only applies if you offer disposable items, such as cutlery or napkins on the Uber Eats checkout. To know more, see [Special items](/apps/uber-eats/configuration#special-items).
+(\*\*) Only applies if you offer disposable items, such as cutlery or napkins on the Uber Eats checkout. You can skip creating the products and leave the corresponding fields empty if you don't use this feature. To know more, see [Special items](/apps/uber-eats/configuration#special-items).
 
 EPOS Technologies can display the preparation notes customers might write for you after selecting a product. You can thus leave this feature enabled on Uber Eats.
 

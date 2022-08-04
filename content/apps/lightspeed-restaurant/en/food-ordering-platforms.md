@@ -41,7 +41,7 @@ If you prefer to let Lightspeed support configure these ref codes for you, make 
 
 To receive Deliveroo orders in Lightspeed, you first need to connect Deliveroo Bridge, an app included in your HubRise subscription. For more information about Deliveroo Bridge, see the [Deliveroo Bridge documentation](/apps/deliveroo).
 
-To correctly receive your Deliveroo orders in Lightspeed, specify the following values in the Deliveroo Bridge configuration page. To learn how to view and modify the configuration page for Deliveroo Bridge, see the [Deliveroo Configuration page](/apps/deliveroo/configuration).
+To correctly receive your Deliveroo orders in Lightspeed, specify the following values in the Deliveroo Bridge configuration page. To find out how to view and modify it, see the [Deliveroo Configuration page](/apps/deliveroo/configuration).
 
 | Section        | Name                                  | Ref code                                          |
 | -------------- | ------------------------------------- | ------------------------------------------------- |
@@ -60,7 +60,7 @@ To correctly receive your Deliveroo orders in Lightspeed, specify the following 
 
 To receive Eat.ch orders in Lightspeed, you first need to connect Just Eat Takeaway Bridge, an app included in your HubRise subscription. For more information about Just Eat Takeaway Bridge, see the [Just Eat Takeaway Bridge documentation](/apps/just-eat-takeaway).
 
-To correctly receive your Eat.ch orders in Lightspeed, specify the following values in the Just Eat Takeaway Bridge configuration page. To learn how to view and modify the configuration page for Just Eat Takeaway Bridge, see the [Just Eat Takeaway Configuration page](/apps/just-eat-takeaway/configuration).
+To correctly receive your Eat.ch orders in Lightspeed, specify the following values in the Just Eat Takeaway Bridge configuration page. To find out how to view and modify it, see the [Just Eat Takeaway Configuration page](/apps/just-eat-takeaway/configuration).
 
 | Section        | Name                                     | Ref code                                          |
 | -------------- | ---------------------------------------- | ------------------------------------------------- |
@@ -93,7 +93,7 @@ To receive your HOP Delivery orders in Lightspeed, use the following values to c
 
 To receive Just Eat orders in Lightspeed, you first need to connect Just Eat Flyt Bridge, an app included in your HubRise subscription. For more information about Just Eat Flyt Bridge, see the [Just Eat Flyt Bridge documentation](/apps/just-eat-flyt).
 
-To correctly receive your Just Eat orders, specify the following values in the Just Eat Flyt Bridge configuration page. To learn how to view and modify the configuration page for Just Eat Flyt Bridge, see the [Just Eat flyt Configuration page](/apps/just-eat-flyt/configuration).
+To correctly receive your Just Eat orders in Lightspeed, specify the following values in the Just Eat Flyt Bridge configuration page. To find out how to view and modify it, see the [Just Eat flyt Configuration page](/apps/just-eat-flyt/configuration).
 
 Depending on your needs, you may have to create some products in Lightspeed. If you don't use these features, you can skip creating the products and leave the corresponding fields empty.
 
@@ -113,11 +113,11 @@ Depending on your needs, you may have to create some products in Lightspeed. If 
 | Payments       | Cash payment ref code                    | (leave empty)                                                       |
 | Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Received"`                   |
 
-## Takeaway.com
+## Just Eat Takeaway
 
 To receive Takeaway.com orders in Lightspeed, you first need to connect Just Eat Takeaway Bridge, an app included in your HubRise subscription. For more information about Just Eat Takeaway Bridge, see the [Just Eat Takeaway Bridge documentation](/apps/just-eat-takeaway).
 
-To correctly receive your orders, specify the following values in the Just Eat Takeaway Bridge configuration page. To learn how to view and modify the configuration page for Just Eat Takeaway Bridge, see the [Just Eat Takeaway Configuration page](/apps/just-eat-takeaway/configuration).
+To correctly receive your Just Eat Takeaway orders in Lightspeed, specify the following values in the Just Eat Takeaway Bridge configuration page. To ind out how to view and modify it, see the [Just Eat Takeaway Configuration page](/apps/just-eat-takeaway/configuration).
 
 | Section        | Name                                     | Ref code                                          |
 | -------------- | ---------------------------------------- | ------------------------------------------------- |
@@ -135,7 +135,7 @@ To correctly receive your orders, specify the following values in the Just Eat T
 
 To receive Thuisbezorgd.nl orders in Lightspeed, you first need to connect Just Eat Takeaway Bridge, an app included in your HubRise subscription. For more information about Just Eat Takeaway Bridge, see the [Just Eat Takeaway Bridge documentation](/apps/just-eat-takeaway).
 
-To correctly receive your orders, specify the following values in the Just Eat Takeaway Bridge configuration page. To learn how to view and modify the configuration page for Just Eat Takeaway Bridge, see the [Just Eat Takeaway Configuration page](/apps/just-eat-takeaway/configuration).
+To correctly receive your Thuisbezorgd orders in Lightspeed, specify the following values in the Just Eat Takeaway Bridge configuration page. To find out how to view and modify it, see the [Just Eat Takeaway Configuration page](/apps/just-eat-takeaway/configuration).
 
 | Section        | Name                                     | Ref code                                          |
 | -------------- | ---------------------------------------- | ------------------------------------------------- |
@@ -153,7 +153,7 @@ To correctly receive your orders, specify the following values in the Just Eat T
 
 To receive Uber Eats orders in Lightspeed, you first need to connect Uber Eats Bridge, an app included in your HubRise subscription. For more information about Uber Eats Bridge, see the [Uber Eats Bridge documentation](/apps/uber-eats).
 
-To correctly receive your orders, specify the following values in the Uber Eats Bridge configuration page. To learn how to view and modify the configuration page for Uber Eats Bridge, see the [Uber Eats Configuration page](/apps/uber-eats/configuration).
+To correctly receive your Uber Eats orders in Lightspeed, specify the following values in the Uber Eats Bridge configuration page. To find out how to view and modify it, see the [Uber Eats Configuration page](/apps/uber-eats/configuration).
 
 Depending on your needs, you may have to create some products in Lightspeed. If you don't use these features, you can skip creating the products and leave the corresponding fields empty.
 

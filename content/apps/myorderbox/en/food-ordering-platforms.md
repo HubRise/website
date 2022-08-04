@@ -18,9 +18,7 @@ Below are the parameters to use to connect food ordering platforms to MyOrderBox
 To receive Deliveroo orders in MyOrderBox, you first need to connect Deliveroo Bridge, an app included in your HubRise
 subscription. For more information about Deliveroo Bridge, see the [Deliveroo Bridge documentation](/apps/deliveroo).
 
-To correctly receive your orders, specify the following values in the Deliveroo Bridge configuration page. To learn how
-to view and modify the configuration page for Deliveroo Bridge, see
-the [Deliveroo Configuration page](/apps/deliveroo/configuration).
+To correctly receive your Deliveroo orders in MyOrderBox, specify the following values in the Deliveroo Bridge configuration page. To find out how to view and modify it, see the [Deliveroo Configuration page](/apps/deliveroo/configuration).
 
 | Section        | Name                                  | Ref code                                                   |
 | -------------- | ------------------------------------- | ---------------------------------------------------------- |
@@ -37,10 +35,9 @@ the [Deliveroo Configuration page](/apps/deliveroo/configuration).
 
 ## Just Eat Flyt
 
-To receive Just Eat orders in MyOrderBox, you first need to connect Just Eat Flyt Bridge, an app included in your
-HubRise subscription.
+To receive Just Eat orders in MyOrderBox, you first need to connect Just Eat Flyt Bridge, an app included in your HubRise subscription.
 
-To correctly receive your orders, specify the following values in the Just Eat Flyt Bridge configuration page.
+To correctly receive your Just Eat orders in MyOrderBox, specify the following values in the Just Eat Flyt Bridge configuration page. To find out how to view and modify it, see the [Just Eat flyt Configuration page](/apps/just-eat-flyt/configuration).
 
 | Section        | Name                                     | Ref code                                                   |
 | -------------- | ---------------------------------------- | ---------------------------------------------------------- |
@@ -63,9 +60,8 @@ To correctly receive your orders, specify the following values in the Just Eat F
 To receive Uber Eats orders in MyOrderBox, you first need to connect Uber Eats Bridge, an app included in your HubRise
 subscription. For more information about Uber Eats Bridge, see the [Uber Eats Bridge documentation](/apps/uber-eats).
 
-To correctly receive your orders, specify the following values in the Uber Eats Bridge configuration page. To learn how
-to view and modify the configuration page for Uber Eats Bridge, see
-the [Uber Eats Configuration page](/apps/uber-eats/configuration).
+To correctly receive your Uber Eats orders in MyOrderBox, specify the following values in the Uber Eats Bridge configuration page. To find out how
+to view and modify it, see the [Uber Eats Configuration page](/apps/uber-eats/configuration).
 
 | Section        | Name                                         | Ref code or value                                           |
 | -------------- | -------------------------------------------- | ----------------------------------------------------------- |
@@ -84,7 +80,7 @@ the [Uber Eats Configuration page](/apps/uber-eats/configuration).
 | Menu           | Enable preparation notes on individual items | Tick the checkbox to enable it.                             |
 
 (\*) BYOC - Bring Your Own Courier
-(\*\*) Only applies if you offer disposable items, such as cutlery or napkins on the Uber Eats checkout. To know more, see [Special items](/apps/uber-eats/configuration#special-items).
+(\*\*) Only applies if you offer disposable items, such as cutlery or napkins on the Uber Eats checkout. You can skip creating the products and leave the corresponding fields empty if you don't use this feature. To know more, see [Special items](/apps/uber-eats/configuration#special-items).
 
 MyOrderBox can display the preparation notes customers might write for you after selecting a product. You can thus leave this feature enabled on Uber Eats.
 
