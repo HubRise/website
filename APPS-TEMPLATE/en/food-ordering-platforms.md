@@ -15,9 +15,9 @@ Below are the parameters to use to connect platforms to SOLUTION.
 
 ## Deliveroo
 
-To receive Deliveroo orders in SOLUTION, you first need to connect Deliveroo Bridge, an app included in your HubRise subscription. For more information about Deliveroo Bridge, see the [Deliveroo Bridge documentation](/apps/deliveroo).
+To receive Deliveroo orders in SOLUTION, you first need to connect Deliveroo Bridge, an app included in your HubRise subscription.
 
-In the Deliveroo Bridge configuration page, use the following values:
+For more information about Deliveroo Bridge, see the [Deliveroo Bridge documentation](/apps/deliveroo). In the Deliveroo Bridge configuration page, use the following values:
 
 | Section        | Name                                  | Ref code                                          |
 | -------------- | ------------------------------------- | ------------------------------------------------- |
@@ -34,9 +34,9 @@ In the Deliveroo Bridge configuration page, use the following values:
 
 ## Just Eat (JUST EAT FLYT)
 
-To receive Just Eat orders in SOLUTION, you first need to connect Just Eat Flyt Bridge, an app included in your HubRise subscription. For more information about Just Eat Flyt Bridge, see the [Just Eat Flyt Bridge documentation](/apps/just-eat-flyt).
+To receive Just Eat orders in SOLUTION, you first need to connect Just Eat Flyt Bridge, an app included in your HubRise subscription.
 
-In the Just Eat Flyt Bridge configuration page, use the following values:
+For more information about Just Eat Flyt Bridge, see the [Just Eat Flyt Bridge documentation](/apps/just-eat-flyt). In the Just Eat Flyt Bridge configuration page, use the following values:
 
 | Section        | Name                                     | Ref code                                          |
 | -------------- | ---------------------------------------- | ------------------------------------------------- |
@@ -56,9 +56,9 @@ In the Just Eat Flyt Bridge configuration page, use the following values:
 
 ## Eat.ch / Takeaway.com / Thuisbezorgd.nl (JUST EAT TAKEAWAY)
 
-To receive Just Eat orders in SOLUTION, you first need to connect Just Eat Takeaway Bridge, an app included in your HubRise subscription. For more information about Just Eat Takeaway Bridge, see the [Just Eat Takeaway Bridge documentation](/apps/just-eat-takeaway).
+To receive Just Eat orders in SOLUTION, you first need to connect Just Eat Takeaway Bridge, an app included in your HubRise subscription.
 
-In the Just Eat Takeaway Bridge configuration page, use the following values:
+For more information about Just Eat Takeaway Bridge, see the [Just Eat Takeaway Bridge documentation](/apps/just-eat-takeaway). In the Just Eat Takeaway Bridge configuration page, use the following values:
 
 | Section        | Name                                     | Ref code                                          |
 | -------------- | ---------------------------------------- | ------------------------------------------------- |
@@ -74,9 +74,9 @@ In the Just Eat Takeaway Bridge configuration page, use the following values:
 
 ## Uber Eats
 
-To receive Uber Eats orders in SOLUTION, you first need to connect Uber Eats Bridge, an app included in your HubRise subscription. For more information about Uber Eats Bridge, see the [Uber Eats Bridge documentation](/apps/uber-eats).
+To receive Uber Eats orders in SOLUTION, you first need to connect Uber Eats Bridge, an app included in your HubRise subscription.
 
-In the Uber Eats Bridge configuration page, use the following values:
+For more information about Uber Eats Bridge, see the [Uber Eats Bridge documentation](/apps/uber-eats). In the Uber Eats Bridge configuration page, use the following values:
 
 | Section        | Name                                         | Ref code or value                                         |
 | -------------- | -------------------------------------------- | --------------------------------------------------------- |

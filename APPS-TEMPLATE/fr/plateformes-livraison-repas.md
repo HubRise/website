@@ -15,9 +15,9 @@ Vous trouverez ci-dessous les paramètres à utiliser pour connecter les platefo
 
 ## Deliveroo
 
-Pour recevoir les commandes de Deliveroo dans SOLUTION, vous devez d'abord connecter Deliveroo Bridge, une application incluse dans votre abonnement HubRise. Pour configurer Deliveroo Bridge, consultez l'aide sur la [configuration de Deliveroo Bridge](/fr/apps/deliveroo/configuration).
+Pour recevoir les commandes de Deliveroo dans SOLUTION, vous devez d'abord connecter Deliveroo Bridge, une application incluse dans votre abonnement HubRise.
 
-Dans la page de configuration de Deliveroo Bridge, utilisez les codes ref suivants.
+Pour configurer Deliveroo Bridge, consultez l'aide sur la [configuration de Deliveroo Bridge](/fr/apps/deliveroo/configuration). Dans la page de configuration de Deliveroo Bridge, utilisez les codes ref suivants.
 
 | Section             | Nom                                               | Code ref                                      |
 | ------------------- | ------------------------------------------------- | --------------------------------------------- |
@@ -34,9 +34,9 @@ Dans la page de configuration de Deliveroo Bridge, utilisez les codes ref suivan
 
 ## Just Eat
 
-Pour recevoir les commandes de Just Eat dans SOLUTION, vous devez d'abord connecter Just Eat Flyt Bridge, une application incluse dans votre abonnement HubRise. Pour configurer Just Eat Flyt Bridge, consultez l'aide sur la <Link to="/apps/just-eat-flyt/configuration" addLocalePrefix={false}>configuration de Just Eat Flyt Bridge (en anglais)</Link>.
+Pour recevoir les commandes de Just Eat dans SOLUTION, vous devez d'abord connecter Just Eat Takeaway Bridge, une application incluse dans votre abonnement HubRise.
 
-Dans la page de configuration de Just Eat Flyt Bridge, utilisez les codes ref suivants.
+Pour configurer Just Eat Takeaway Bridge, consultez l'aide sur la <Link to="/apps/just-eat-flyt/configuration" addLocalePrefix={false}>configuration de Just Eat Takeaway Bridge (en anglais)</Link>. Dans la page de configuration de Just Eat Takeaway Bridge, utilisez les codes ref suivants.
 
 | Section             | Nom                                                   | Code ref                                      |
 | ------------------- | ----------------------------------------------------- | --------------------------------------------- |
@@ -52,7 +52,9 @@ Dans la page de configuration de Just Eat Flyt Bridge, utilisez les codes ref su
 
 ## Uber Eats
 
-Pour recevoir les commandes de Uber Eats dans SOLUTION, vous devez d'abord connecter Uber Eats Bridge, une application incluse dans votre abonnement HubRise. Pour configurer Uber Eats Bridge, consultez l'aide sur la [configuration de Uber Eats Bridge](/fr/apps/uber-eats/configuration).
+Pour recevoir les commandes de Uber Eats dans SOLUTION, vous devez d'abord connecter Uber Eats Bridge, une application incluse dans votre abonnement HubRise.
+
+Pour configurer Uber Eats Bridge, consultez l'aide sur la [configuration de Uber Eats Bridge](/fr/apps/uber-eats/configuration). Dans la page de configuration de Uber Eats Bridge, utilisez les codes ref suivants.
 
 | Section             | Nom                                               | Code ref                                                                 |
 | ------------------- | ------------------------------------------------- | ------------------------------------------------------------------------ |
