@@ -7,15 +7,15 @@ meta:
   description: Integrating Lightspeed Restaurant with food ordering platforms requires you to specify particular ref codes in the configuration page of the delivery platform bridge.
 ---
 
-To connect Lightspeed Restaurant to Deliveroo, Uber Eats, or Just Eat, use the configuration parameters provided below.
+To connect Lightspeed Restaurant to food ordering and delivery platforms, including Deliveroo, Uber Eats, or Just Eat, use the configuration parameters provided below.
 
-By convention, Lightspeed support team uses these predefined codes when they set up the integration. If you configure the Lightspeed back office autonomously, we recommend that you use the same codes, as this simplifies troubleshooting.
+By convention, Lightspeed support team uses predefined ref codes provided when asked to set up the integration for HubRise and one of the platforms channels. If you configure the Lightspeed back office autonomously, we recommend that you use the same ref codes, as this simplifies troubleshooting.
 
 For detailed instructions on how to create ref codes in the Lightspeed back office, see [Creating Ref Codes](/apps/lightspeed-restaurant/faqs/create-ref-codes).
 
 ---
 
-**IMPORTANT NOTE:** These codes must be present in your Lightspeed back office and must be included in the configuration page of the food platform bridge.
+**IMPORTANT NOTE:** These ref codes must be present in your Lightspeed back office and must be included in the configuration page of the HubRise food delivery and ordering platform bridge.
 
 ---
 
@@ -41,7 +41,7 @@ If you prefer to let Lightspeed support configure these ref codes for you, make 
 
 To receive Deliveroo orders in Lightspeed, you first need to connect Deliveroo Bridge, an app included in your HubRise subscription. For more information about Deliveroo Bridge, see the [Deliveroo Bridge documentation](/apps/deliveroo).
 
-To correctly receive your orders, specify the following values in the Deliveroo Bridge configuration page. To learn how to view and modify the configuration page for Deliveroo Bridge, see the [Deliveroo Configuration page](/apps/deliveroo/configuration).
+To correctly receive your Deliveroo orders in Lightspeed, specify the following values in the Deliveroo Bridge configuration page. To learn how to view and modify the configuration page for Deliveroo Bridge, see the [Deliveroo Configuration page](/apps/deliveroo/configuration).
 
 | Section        | Name                                  | Ref code                                          |
 | -------------- | ------------------------------------- | ------------------------------------------------- |
@@ -60,7 +60,7 @@ To correctly receive your orders, specify the following values in the Deliveroo 
 
 To receive Eat.ch orders in Lightspeed, you first need to connect Just Eat Takeaway Bridge, an app included in your HubRise subscription. For more information about Just Eat Takeaway Bridge, see the [Just Eat Takeaway Bridge documentation](/apps/just-eat-takeaway).
 
-To correctly receive your orders, specify the following values in the Just Eat Takeaway Bridge configuration page. To learn how to view and modify the configuration page for Just Eat Takeaway Bridge, see the [Just Eat Takeaway Configuration page](/apps/just-eat-takeaway/configuration).
+To correctly receive your Eat.ch orders in Lightspeed, specify the following values in the Just Eat Takeaway Bridge configuration page. To learn how to view and modify the configuration page for Just Eat Takeaway Bridge, see the [Just Eat Takeaway Configuration page](/apps/just-eat-takeaway/configuration).
 
 | Section        | Name                                     | Ref code                                          |
 | -------------- | ---------------------------------------- | ------------------------------------------------- |
@@ -74,11 +74,26 @@ To correctly receive your orders, specify the following values in the Just Eat T
 | Payments       | Cash payment ref code                    | (leave empty)                                     |
 | Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Received"` |
 
-## Just Eat
+## HOP Delivery
+
+To receive your HOP Delivery orders in Lightspeed, use the following values to configure HOP Delivery. For assistance, contact HOP Delivery support team.
+
+| Section       | Name                          | Ref code      |
+| ------------- | ----------------------------- | ------------- |
+| Service types | HOP fulfilled ref code        | `HOPDEL`      |
+| Service types | Restaurant fulfilled ref code | `HOPREST`     |
+| Service types | Takeaway ref code             | `HOPCOL`      |
+| Discounts     | Offer ref code                | `HOP99`       |
+| Charges       | Delivery charge ref code      | `HOP77`       |
+| Charges       | Service fee ref code          | `HOP88`       |
+| Payments      | HOP payment ref code          | `HOPPM`       |
+| Payments      | Cash payment ref code         | (leave empty) |
+
+## Just Eat Flyt
 
 To receive Just Eat orders in Lightspeed, you first need to connect Just Eat Flyt Bridge, an app included in your HubRise subscription. For more information about Just Eat Flyt Bridge, see the [Just Eat Flyt Bridge documentation](/apps/just-eat-flyt).
 
-To correctly receive your orders, specify the following values in the Just Eat Flyt Bridge configuration page. To learn how to view and modify the configuration page for Just Eat Flyt Bridge, see the [Just Eat flyt Configuration page](/apps/just-eat-flyt/configuration).
+To correctly receive your Just Eat orders, specify the following values in the Just Eat Flyt Bridge configuration page. To learn how to view and modify the configuration page for Just Eat Flyt Bridge, see the [Just Eat flyt Configuration page](/apps/just-eat-flyt/configuration).
 
 Depending on your needs, you may have to create some products in Lightspeed. If you don't use these features, you can skip creating the products and leave the corresponding fields empty.
 
@@ -97,21 +112,6 @@ Depending on your needs, you may have to create some products in Lightspeed. If 
 | Payments       | Online payment ref code                  | `JEPM`                                                              |
 | Payments       | Cash payment ref code                    | (leave empty)                                                       |
 | Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Received"`                   |
-
-## HOP Delivery
-
-To receive your HOP Delivery orders in Lightspeed, use the following values to configure HOP Delivery. For assistance, contact HOP Delivery support team.
-
-| Section       | Name                          | Ref code      |
-| ------------- | ----------------------------- | ------------- |
-| Service types | HOP fulfilled ref code        | `HOPDEL`      |
-| Service types | Restaurant fulfilled ref code | `HOPREST`     |
-| Service types | Takeaway ref code             | `HOPCOL`      |
-| Discounts     | Offer ref code                | `HOP99`       |
-| Charges       | Delivery charge ref code      | `HOP77`       |
-| Charges       | Service fee ref code          | `HOP88`       |
-| Payments      | HOP payment ref code          | `HOPPM`       |
-| Payments      | Cash payment ref code         | (leave empty) |
 
 ## Takeaway.com
 
@@ -174,4 +174,8 @@ Depending on your needs, you may have to create some products in Lightspeed. If 
 | Menu           | Enable preparation notes on individual items | Tick the checkbox                                                          |
 
 (\*) BYOC - Bring Your Own Courier
-(\*\*) Only applies if you offer disposable items, such as cutlery, napkins, etc.
+(\*\*) Only applies if you offer disposable items, such as cutlery or napkins on the Uber Eats checkout. To know more, see [Special items](/apps/uber-eats/configuration#special-items).
+
+LEO2 can display the preparation notes customers might write for you after selecting a product. You can thus leave this feature enabled on Uber Eats.
+
+Lightspeed can also display feedback on orders customers might write for you in the Uber Eats basket or at checkout. You can thus leave this feature enabled on Uber Eats.
