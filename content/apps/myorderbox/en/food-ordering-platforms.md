@@ -7,11 +7,11 @@ meta:
   description: Integrating MyOrderBox with food ordering platforms requires you to specify particular ref codes in the configuration page of the delivery platform bridge.
 ---
 
-With HubRise, you can receive orders from Deliveroo, Just Eat, Uber Eats and other food ordering platforms in MyOrderBox. You can also push your menu from MyOrderBox to food platforms.
+With HubRise, you can receive orders from Deliveroo, Just Eat, Uber Eats and other food ordering and delivery platforms in MyOrderBox. You can also push your menu from MyOrderBox to food platforms. 
 
 For more information, check the documentation of these platforms in our [Apps page](/apps/food-ordering-platforms).
 
-Below are the parameters to use to connect platforms to MyOrderBox.
+Below are the parameters to use to connect food ordering platforms to MyOrderBox.
 
 ## Deliveroo
 
@@ -35,35 +35,7 @@ the [Deliveroo Configuration page](/apps/deliveroo/configuration).
 | Payments       | Cash payment ref code                 | (leave empty)                                              |
 | Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Accepted"`          |
 
-## Uber Eats
-
-To receive Uber Eats orders in MyOrderBox, you first need to connect Uber Eats Bridge, an app included in your HubRise
-subscription. For more information about Uber Eats Bridge, see the [Uber Eats Bridge documentation](/apps/uber-eats).
-
-To correctly receive your orders, specify the following values in the Uber Eats Bridge configuration page. To learn how
-to view and modify the configuration page for Uber Eats Bridge, see
-the [Uber Eats Configuration page](/apps/uber-eats/configuration).
-
-| Section        | Name                                         | Ref code or value                                           |
-| -------------- | -------------------------------------------- | ----------------------------------------------------------- |
-| Service types  | Uber delivery ref code                       | `UBE` or `UBE_xxx` - see [Virtual Brands](#virtual-brands)  |
-| Service types  | Restaurant delivery ref code (\*)            | (same as above)                                             |
-| Service types  | Takeaway ref code                            | (same as above)                                             |
-| Service types  | Eat-in ref code                              | (same as above)                                             |
-| Service types  | Send orders delivered by Uber Eats as        | `collection orders`                                         |
-| Special items  | Disposable items ref code                    | Create a product in MyOrderBox and use its ref code. (\*\*) |
-| Discounts      | Discount ref code                            | (leave empty)                                               |
-| Charges        | Delivery charge ref code                     | (leave empty)                                               |
-| Charges        | Small order fee ref code                     | (leave empty)                                               |
-| Charges        | Tip ref code                                 | (leave empty)                                               |
-| Payments       | Payment ref code                             | (leave empty)                                               |
-| Order statuses | Mark orders as Accepted                      | `when their HubRise status changes to "Accepted"`           |
-| Menu           | Enable preparation notes on individual items | Tick the checkbox                                           |
-
-(\*) BYOC - Bring Your Own Courier
-(\*\*) Only applies if you offer disposable items, such as cutlery, napkins, etc.
-
-## Just Eat
+## Just Eat Flyt
 
 To receive Just Eat orders in MyOrderBox, you first need to connect Just Eat Flyt Bridge, an app included in your
 HubRise subscription.
@@ -85,6 +57,38 @@ To correctly receive your orders, specify the following values in the Just Eat F
 | Payments       | Online payment ref code                  | (leave empty)                                              |
 | Payments       | Cash payment ref code                    | (leave empty)                                              |
 | Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Accepted"`          |
+
+## Uber Eats
+
+To receive Uber Eats orders in MyOrderBox, you first need to connect Uber Eats Bridge, an app included in your HubRise
+subscription. For more information about Uber Eats Bridge, see the [Uber Eats Bridge documentation](/apps/uber-eats).
+
+To correctly receive your orders, specify the following values in the Uber Eats Bridge configuration page. To learn how
+to view and modify the configuration page for Uber Eats Bridge, see
+the [Uber Eats Configuration page](/apps/uber-eats/configuration).
+
+| Section        | Name                                         | Ref code or value                                           |
+| -------------- | -------------------------------------------- | ----------------------------------------------------------- |
+| Service types  | Uber delivery ref code                       | `UBE` or `UBE_xxx` - see [Virtual Brands](#virtual-brands). |
+| Service types  | Restaurant delivery ref code (\*)            | (same as above)                                             |
+| Service types  | Takeaway ref code                            | (same as above)                                             |
+| Service types  | Eat-in ref code                              | (same as above)                                             |
+| Service types  | Send orders delivered by Uber Eats as        | `collection orders`                                         |
+| Special items  | Disposable items ref code                    | Create a product in MyOrderBox and use its ref code. (\*\*) |
+| Discounts      | Discount ref code                            | (leave empty)                                               |
+| Charges        | Delivery charge ref code                     | (leave empty)                                               |
+| Charges        | Small order fee ref code                     | (leave empty)                                               |
+| Charges        | Tip ref code                                 | (leave empty)                                               |
+| Payments       | Payment ref code                             | (leave empty)                                               |
+| Order statuses | Mark orders as Accepted                      | `when their HubRise status changes to "Accepted"`           |
+| Menu           | Enable preparation notes on individual items | Tick the checkbox to enable it.                             |
+
+(\*) BYOC - Bring Your Own Courier
+(\*\*) Only applies if you offer disposable items, such as cutlery or napkins on the Uber Eats checkout. To know more, see [Special items](/apps/uber-eats/configuration#special-items).
+
+MyOrderBox can display the preparation notes customers might write for you after selecting a product. You can thus leave this feature enabled on Uber Eats.
+
+MyOrderBox can also display notes on orders customers might write for you in the Uber Eats basket or at checkout. You can thus leave this feature enabled on Uber Eats.
 
 ## Virtual Brands
 
