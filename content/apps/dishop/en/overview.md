@@ -6,6 +6,12 @@ meta:
   title: Overview | Dishop | HubRise
   description: Dishop overview, reasons for connecting Dishop to HubRise and summary of integrated features. Synchronise data between Dishop, your EPOS and your other apps.
 gallery:
+  - __gallery-006.png
+  - __gallery-005.png
+  - __gallery-001.png
+  - __gallery-002.png
+  - __gallery-003.png
+  - __gallery-004.png
 path_override: /
 app_info:
   category: Online Ordering
