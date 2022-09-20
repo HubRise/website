@@ -476,12 +476,12 @@ content:
           logo: foodreport.png
           title: Food Report
           description: Food Report offers decision support tools for all types of restaurants. With Food Report you can create real-time online reports using your HubRise customer, order, and product data.
-        - website: https://www.inpulse.ai/
+        - website: https://link.inpulse.ai/hubrise
           documentation: /apps/inpulse
           logo: inpulse.png
           title: Inpulse
-          description: Inpulse is an AI solution that forecasts sales in order to improve kitchen operations and procurement. Inpulse answers the needs of restaurants, dark kitchens and franchises.
-          additional_info: Integration in progress.
+          description: Inpulse is an AI solution that forecasts sales, in order to improve stock and procurement management, and to increase the margin on food costs. Inpulse meets the needs of restaurants, dark kitchens and franchises.
+          additional_info:
         - website: https://koust.net/
           documentation: /apps/koust
           logo: koust.png

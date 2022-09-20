@@ -12,7 +12,7 @@ The **Catalogs** section in the **SETTINGS** page allows you to create, edit, or
 The rules for Catalogs are as follows:
 
 - By default, Accounts define one Catalog named after the Account. Locations do not have a Catalog defined by default.
-- An Account **must** have at least one Catalog. If you attempt to delete the last Catalog of an Account, an error notification will be displayed.
+- An Account must have at least one Catalog. If you attempt to delete the last Catalog of an Account, an error notification will be displayed.
 - You can create as many Catalogs as you need. For example:
   - You can create a test Catalog to be used without impacting production.
   - You can create Catalogs for a Location that offers different products than other Locations.
@@ -51,7 +51,7 @@ Catalogs can be renamed to reflect special needs, such as labeling a Catalog for
 To change the name of a Catalog:
 
 1. Select **SETTINGS**.
-2. In the **Catalogs** section, click the edit icon <InlineImage width="15" height="15">![Edit Icon](../images/028-en-pen-icon.png)</InlineImage> for the catalog to edit.
+2. In the **Catalogs** section, click the edit icon <InlineImage width="15" height="15">![Edit Icon](../images/028-pen-icon.png)</InlineImage> for the catalog to edit.
 3. Enter the new name for the Catalog.
 4. Click **Update** to save the new settings.
 

@@ -11,7 +11,7 @@ gallery:
 path_override: /
 app_info:
   category: Food Ordering Platforms
-  availability: Canada, Ireland, United Kingdom
+  availability: Australia (Menulog), Canada (Skip The Dishes), Ireland, Italy, Spain, United Kingdom
   website: https://just-eat.co.uk
   contact:
 ---
@@ -45,16 +45,16 @@ Flyt is a more capable integration platform than the legacy Just Eat Takeaway in
 
 Connecting Just Eat Flyt Bridge allows you to:
 
-- Push orders into HubRise, including order status.
-  ![Diagram of the connection flow between Just Eat, Just Eat Flyt Bridge, and HubRise for receiving orders](../images/000-en-2x-just-eat-connection-diagram.png)
-- Push delivery information into HubRise, for orders delivered by your restaurant.
-  ![Diagram of the connection flow between Just Eat, Just Eat Flyt Bridge, and HubRise for handling delivery information](../images/009-en-2x-just-eat-delivery-fleet-diagram.png)
-- Pull the menu from a HubRise catalog directly into your Just Eat store.
-  ![Diagram of the connection flow between Just Eat, Just Eat Flyt Bridge, and HubRise for pulling the menu](../images/010-en-2x-just-eat-menu-push-diagram.png)
+- Pull orders from Just Eat, including order status.
+- Pull customer information from Just Eat, for orders delivered by the restaurant.
+- Push a catalog into Just Eat.
+- Synchronise inventory with HubRise.
+
+![Diagram of the connection flow between Just Eat, Just Eat Flyt Bridge, and HubRise for receiving orders](../images/000-en-2x-just-eat-connection-diagram.png)
 
 ---
 
-**IMPORTANT NOTE:** The Just Eat OrderPad will need to remain switched on to receive orders in HubRise.
+**IMPORTANT NOTE:** The Just Eat OrderPad will need to remain switched on to receive orders in HubRise. For some markets, auto-accept can be activated. For more information, see [Just Eat OrderPad](/apps/just-eat-flyt/receive-orders#just-eat-orderpad).
 
 ---
 

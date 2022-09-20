@@ -1,6 +1,6 @@
 ---
-title: Can I Turn Off Orderpad?
-position: 3
+title: Can I Turn Off the Orderpad?
+position: 1
 layout: documentation
 meta:
   title: Orderpad | Just Eat Flyt FAQs | HubRise

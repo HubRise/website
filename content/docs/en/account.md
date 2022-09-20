@@ -55,7 +55,7 @@ Finally, enter the correct **Currency** for the market that you operate in.
 
 ---
 
-**Related FAQ**: <Link to="/docs/faqs/how-can-i-clear-accounts/">Too Many Accounts for My Business on HubRise. How Can I Clear the System?</Link>
+**Related FAQ**: [Too Many Accounts for My Business on HubRise. How Can I Clear the System?](/docs/faqs/how-can-i-clear-accounts/)
 
 ---
 

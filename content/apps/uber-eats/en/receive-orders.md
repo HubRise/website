@@ -7,7 +7,11 @@ meta:
   description: Find out the technical details of how orders are received from Uber Eats into HubRise, which fields are passed and which are not.
 ---
 
-Connecting Uber Eats to HubRise allows you to receive Uber Eats orders directly in your EPOS. This page describes the information that is passed by Uber Eats Bridge for the orders you receive.
+Connecting Uber Eats to HubRise allows you to receive Uber Eats orders directly in your EPOS.
+
+Your Uber Eats tablet can be switched off if you have enabled tabletless integration. For more information, see [Can Orders Be Sent Directly To My EPOS Without Using Uber Eats Tablets?](/apps/uber-eats/faqs/send-orders-to-epos-without-tablet).
+
+This page describes the information Uber Eats sends to HubRise. It helps you understand how orders will be received on your EPOS.
 
 ## Items and Options
 

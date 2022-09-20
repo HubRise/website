@@ -7,7 +7,11 @@ meta:
   description: Find out the technical details of how orders are received from Deliveroo into HubRise, which fields are passed and which are not.
 ---
 
-Connecting Deliveroo to HubRise allows you to receive Deliveroo orders directly in your EPOS. This page describes the information that is passed by Deliveroo Bridge for the orders you receive.
+Connecting Deliveroo to HubRise allows you to receive Deliveroo orders directly in your EPOS.
+
+Your Deliveroo tablet needs to remain switched on to receive orders. Orders can either be manually accepted on the tablet, or auto-accepted. For more information, see [How Can I Auto-Accept Orders?](/apps/deliveroo/faqs/auto-accept/). Deliveroo is planning to support tabletless integration in the future.
+
+This page describes the information Deliveroo sends to HubRise. It helps you understand how orders will be received on your EPOS.
 
 ## Items and Options
 

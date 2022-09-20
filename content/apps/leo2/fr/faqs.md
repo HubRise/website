@@ -1,6 +1,6 @@
 ---
 title: F.A.Q.
-position: 7
+position: 9
 layout: documentation
 meta:
   title: F.A.Q. | LEO2 | HubRise
@@ -8,4 +8,3 @@ meta:
 ---
 
 - <Link to="/apps/leo2/faqs/commandes-non-recues">Les commandes HubRise n'arrivent pas dans LEO2. Que faire ?</Link>
-- <Link to="/apps/leo2/faqs/differences-prix">Comment LEO2 traite les différences de prix ?</Link>

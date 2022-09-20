@@ -13,13 +13,13 @@ app_info:
   category: Gestion et Inventaire
   availability: France
   price_range:
-  website: https://www.inpulse.ai
-  contact: +33 1 87 66 15 91 / support@inpulse.ai
+  website: https://link.inpulse.ai/hubrise
+  contact: sales@inpulse.ai
 ---
 
 ---
 
-**REMARQUE IMPORTANTE :** Intégration en cours. Une documentation complète sera publiée une fois ce travail terminé.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -29,7 +29,9 @@ Inpulse utilise l'IA pour anticiper les ventes et automatiser la gestion des ach
 
 La prévision de ventes est importante dans la gestion quotidienne d'un restaurant. Elle permet d'établir un plan de production réaliste, de fournir des recommandations d'achats, et de mesurer les écarts de stocks pour évaluer la perte et la consommation réelle. Inpulse permet au manager d'acheter au bon moment, et au cuisinier de produire à temps ce qu'il faut. Inpulse évite les pertes et améliore la marge.
 
-Dans le cas d'un réseau, les données sont centralisées. Le siège peut ainsi analyser les données de tous les points de vente et garder la marge sous contrôle, quel que soit le niveau d'expérience des managers. Le back office d'Inpulse permet d'éditer les fiches techniques, les fournisseurs, les mercuriales et les promotions, pour réagir instantanément sur les points de vente.
+Dans le cas d'un réseau, les données sont centralisées. Le siège peut ainsi analyser les données de tous les points de vente et garder la marge sous contrôle, quel que soit le niveau d'expérience des managers. Le back office d'Inpulse permet d'éditer les fiches techniques et fournisseurs, les mercuriales et les promotions, pour réagir instantanément sur les points de vente.
+
+Inpulse est une solution SaaS qui peut s'implémenter en 4 semaines.
 
 ## Fonctionnalités de l'intégration
 

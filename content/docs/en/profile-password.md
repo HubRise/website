@@ -41,8 +41,8 @@ To update your password:
 
 The Profile page includes information on your User Profile **Permissions**. This includes:
 
-- The **Account** and **Location** that you have access to.
-- The **Role** you have been assigned for the Account or Location. It could be a Manager or an Admin role.
+- The **ACCOUNT** and **LOCATION** that you have access to.
+- The **ROLE** you have been assigned for the Account or Location. It could be a Manager or an Admin role.
 
 To remove your access to an Account or a Location:
 

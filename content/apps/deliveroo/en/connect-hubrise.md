@@ -24,9 +24,7 @@ Contact us at [support@hubrise.com](mailto:support@hubrise.com) and include the 
 - The URL link to your restaurant page on the Deliveroo website. For example: [https://deliveroo.co.uk/menu/london/clapham/camile-thai-clapham](https://deliveroo.co.uk/menu/london/clapham/camile-thai-clapham).
 - The Deliveroo Restaurant ID of the store. For more details, see our FAQ: [How Do I Find My Deliveroo Restaurant ID](/apps/deliveroo/faqs/find-deliveroo-restaurant-id).
 - The email address you use to log in to the Deliveroo back office.
-- The email address of your Deliveroo account manager.
 - Whether your Deliveroo store is connected to another middleware or EPOS.
-- The service type(s) you support on Deliveroo: Delivery by Deliveroo, Restaurant delivery, Takeaway. For more information, see [Service Types](/apps/deliveroo/terminology#service-types).
 - Your HubRise location name and identifier. For example: `Fast Pizza Baker Street z6q31-0`.
 
 With this information in hand, the Deliveroo integration team will enable the HubRise connection for your store. New connections are approved on Tuesdays and Thursdays only.

@@ -81,7 +81,7 @@ For more information about skus in the HubRise catalog, see [Skus](/developers/a
 
 ---
 
-**IMPORTANT NOTE:** Products without a ref code are not pushed to Just Eat. For more information, see [Why Are Some Products Not Exported](/apps/just-eat-flyt/faqs/products-not-exported/).
+**IMPORTANT NOTE:** Products without a ref code are not pushed to Just Eat. For more information, see [Why Are Some Products Not Exported](/apps/just-eat-flyt/faqs/products-not-pushed/).
 
 ---
 

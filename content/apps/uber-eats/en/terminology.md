@@ -1,6 +1,6 @@
 ---
 title: Terminology
-position: 8
+position: 9
 layout: documentation
 meta:
   title: Terminology | Uber Eats | HubRise

@@ -4,7 +4,7 @@ position: 2
 layout: documentation
 meta:
   title: Get Started | HubRise
-  description: Instructions on starting with LivePepper and HubRise connection.
+  description: Instructions on how to get started with HubRise. Create a user profile and an account on HubRise. Set your preferences and get familiar with the platform.
 ---
 
 You can access HubRise from a web browser on any device: your desktop, tablet, or smartphone.
@@ -49,11 +49,11 @@ You can set the language for your HubRise session by clicking the down arrow <In
 
 The HubRise interface is organised into the following sections:
 
-- **Dashboard**: Get an overview of your organisation's sales, orders, and new customers.
-- **Connections**: Connect new applications to your HubRise Account, and manage your existing connections.
-- **Data**: View orders, catalogs, customers and corresponding logs across your locations.
-- **Settings**: Add new locations, manage employee access and roles, view platform usage, check payment history or payment methods.
-- **Developer**: Access for developers to integrate new applications with HubRise.
+- **DASHBOARD**: Get an overview of your organisation's sales, orders, and new customers.
+- **CONNECTIONS**: Connect new applications to your HubRise Account, and manage your existing connections.
+- **DATA**: View orders, catalogs, customers and corresponding logs across your locations.
+- **SETTINGS**: Add new locations, manage employee access and roles, view platform usage, check payment history or payment methods.
+- **DEVELOPER**: Access for developers to integrate new applications with HubRise.
 
 ![HubRise dashboard](../images/078-en-hubrise-dashboard.png)
 
@@ -70,7 +70,7 @@ To log in to HubRise, visit the [HubRise Login page](https://manager.hubrise.com
 
 ---
 
-**Related FAQ**: <Link to="/docs/faqs/check-if-i-already-have-a-user-profile-in-hubrise/">How Do I Check If I Already Have a User Profile in HubRise?</Link>
+**Related FAQ**: [How Do I Check If I Already Have a User Profile in HubRise?](/docs/faqs/check-if-i-already-have-a-user-profile-in-hubrise/)
 
 ---
 

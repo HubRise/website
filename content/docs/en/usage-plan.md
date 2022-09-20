@@ -1,5 +1,5 @@
 ---
-title: Usage
+title: Usage and Plans
 position: 9
 layout: documentation
 meta:

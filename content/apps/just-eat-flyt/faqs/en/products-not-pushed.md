@@ -1,6 +1,6 @@
 ---
 title: Why Are Some Products Not Exported To Just Eat?
-position: 1
+position: 4
 layout: documentation
 meta:
   title: Products Not Exported | Just Eat Flyt FAQs | HubRise

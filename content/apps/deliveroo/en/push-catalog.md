@@ -34,6 +34,8 @@ Once your catalog is populated on HubRise, you can push it to your Deliveroo sto
 
 ---
 
+You can automate the catalog push into Uber Eats every time it is updated in HubRise. For more information, see [Automatic Catalog Push](/apps/deliveroo/configuration#automatic-catalog-push).
+
 ## Information Sent to Deliveroo
 
 The following sections provide more details on how your HubRise catalog is mapped to Deliveroo.

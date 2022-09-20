@@ -25,7 +25,6 @@ Contact us at [support@hubrise.com](mailto:support@hubrise.com) and include the 
 - Whether Auto-Accept should be `Activated` or `Deactivated`. For more details, see our [FAQ](/apps/just-eat-flyt/faqs/auto-accept).
 - The email address of your Just Eat Account Manager.
 - Whether your Just Eat store is already connected to another middleware or EPOS.
-- The service type(s) you support on Just Eat: Platform delivery, Restaurant delivery, Takeaway. For more information, see [Service Types](/apps/just-eat-flyt/terminology#service-types).
 - Your HubRise location name and identifier. For example: `Fast Pizza Baker Street z6q31-0`.
 
 With this information in hand, HubRise will request the Flyt integration team to enable the HubRise Flyt API integration for your store. Once this is done, the Flyt team will provide the required credentials to connect.

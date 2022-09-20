@@ -30,12 +30,11 @@ This is useful if you have specific business requirements for financial reportin
 
 ### Special Items
 
-**Disposable items ref code** is the ref code that is used when customers include disposable items in their orders.
-Not all Uber Eats restaurants offer their customers the option to request disposable items, such as utensils, straws, and napkins, in an order. But if you do, you need to provide a ref code. Create a "Disposable items" product in your EPOS, and use that ref code here.
-
-The following screenshot shows the **Request utensils, straws, etc.** checkbox that customers can use to request disposable items.
+By default, Uber Eats activates a checkbox in the checkout flow for costumers to **Request utensils, straws, etc.**, as shown in the screenshot below.
 
 ![Disposable items checkbox in Uber Eats checkout](../images/009-en-disposable-items.png)
+
+You can request Uber Eats to disable this functionality. But if you prefer to keep it, create a "Disposable items" product in your EPOS, and use its ref code in the **Disposable items ref code** field.
 
 ### Discounts
 
@@ -65,7 +64,7 @@ Select from the dropdown menu the HubRise status which should make the order acc
 
 ### Automatic Catalog Push
 
-In this section, choose if you want to push your HubRise catalog to Uber Eats every time it is updated on HubRise. By default, this option it turned off.
+Tick **Publish the menu on Uber Eats when it is updated in HubRise** to push your HubRise catalog to Uber Eats every time it is updated on HubRise. By default, this option it turned off.
 
 ### Opening Hours
 
@@ -78,8 +77,7 @@ To quickly copy opening hours to all the following days on the list, click **Cop
 
 ### Customer Notes
 
-Select if you want to enable customer notes for individual products.
-If you enable this option, make sure that your connected EPOS supports product level customer notes.
+Select if you want to enable customer notes for individual products in Uber Eats. If you enable this option, make sure that your connected EPOS supports product level customer notes.
 
 ---
 
