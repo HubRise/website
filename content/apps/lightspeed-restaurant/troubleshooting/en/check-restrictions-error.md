@@ -7,7 +7,7 @@ meta:
   description: Instructions to troubleshoot errors related to products that contain sales restrictions.
 ---
 
-This page explains how to troubleshoot failed orders that are caused by products with sales restrictions.
+**THIS** PAGE explains how to troubleshoot failed orders that are caused by products with sales restrictions.
 
 ## "Check Restrictions" Error
 
