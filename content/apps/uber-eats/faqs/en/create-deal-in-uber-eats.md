@@ -75,7 +75,7 @@ To create the individual products that are part of every deal line follow these 
 After creating all the products, to group them together within a modifier group follow these steps:
 
 1. Select **Menu** > **Modifier groups**, then click **New group**.
-2. Fill in the details of your modifier group.
+1. Fill in the details of your modifier group.
    - Enter the name of the modifier group, for example `Choose your pizza`.
    - In the **Add item** field, select all the products that are part of the product, then click **Add**.
      ![Modifier group name and products](../../images/019-en-modifier-group-name-menu-maker.png)
@@ -85,8 +85,8 @@ After creating all the products, to group them together within a modifier group 
      - **Maximum number of options a customer can select**: `1`
      - **How many times can customers select any single option**: `1`
        ![Modifier group rules](../../images/015-en-modifier-group-rules-menu-maker.png)
-3. To confirm the modifiers group, click **Save**.
-4. Repeat the process for all the deal lines that are part of the deal. Click **Duplicate** to use the current modifier group as a starting point for the next ones.
+1. To confirm the modifiers group, click **Save**.
+1. Repeat the process for all the deal lines that are part of the deal. Click **Duplicate** to use the current modifier group as a starting point for the next ones.
 
 ### 3. Create the Deal
 
