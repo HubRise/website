@@ -14,14 +14,14 @@ This page describes the conventional structure you need to use to create deals.
 If your EPOS supports deals, and you want to receive them in your Uber Eats orders, you have the following two options:
 
 - If you [push your HubRise catalog](/apps/uber-eats/pulling-menu) into Uber Eats with Uber Eats Bridge, deals are automatically created with the correct format on Uber Eats.
-- If you manually create your menu with [Menu Maker](https://merchants.ubereats.com/us/en/technology/simplify-operations/menu-management/), the catalog management tool in Uber Eats back office, create your deals following the steps on this page. 
-
+- If you manually create your menu with [Menu Maker](https://merchants.ubereats.com/us/en/technology/simplify-operations/menu-management/), the catalog management tool in Uber Eats back office, create your deals following the steps on this page.
 
 ## Deal Structure
 
 In Menu Maker, there are two main building blocks: items and modifier groups.
 
 To create a deal, you need to create the following structure using items and modifier groups:
+
 - Deal (Item)
   - Deal line 1 (Modifier group)
     - Product 1 (Item)
@@ -33,6 +33,7 @@ To create a deal, you need to create the following structure using items and mod
     - Product 3 (Item)
 
 For example, if you have a deal with pizzas and drinks, use the following structure:
+
 - Pizza + Drink Deal (Item)
   - Choose your pizza (Modifier group)
     - Pizza Margherita (Item)
@@ -45,9 +46,8 @@ For example, if you have a deal with pizzas and drinks, use the following struct
 
 To ensure that Uber Eats Bridge sends the correct information to HubRise when customers order a deal, follow this convention:
 
-- The ref code of the item that represents the deal, in this case `Pizza + Drink Deal`, must start with `DEAL-`, followed by the ref code of the deal in your EPOS. 
+- The ref code of the item that represents the deal, in this case `Pizza + Drink Deal`, must start with `DEAL-`, followed by the ref code of the deal in your EPOS.
 - Items in the deal lines must have the same ref code they have in your EPOS.
-
 
 ## Step-By-Step Guide to Create a Deal
 
@@ -84,9 +84,9 @@ After creating all the products, to group them together within a modifier group 
      - **Minimum number of options a customer must select**: `1`
      - **Maximum number of options a customer can select**: `1`
      - **How many times can customers select any single option**: `1`
-     ![Modifier group rules](../../images/015-en-modifier-group-rules-menu-maker.png)
-1. To confirm the modifiers group, click **Save**.
-2. Repeat the process for all the deal lines that are part of the deal. Click **Duplicate** to use the current modifier group as a starting point for the next ones.
+       ![Modifier group rules](../../images/015-en-modifier-group-rules-menu-maker.png)
+3. To confirm the modifiers group, click **Save**.
+4. Repeat the process for all the deal lines that are part of the deal. Click **Duplicate** to use the current modifier group as a starting point for the next ones.
 
 ### 3. Create the Deal
 
@@ -104,4 +104,4 @@ Finally, to create the product that represents the deal and attach the modifier 
    - Expand **Extra details**, then under **External data**, enter `DEAL-`, followed by the ref code of the deal.
      ![Deal details](../../images/022-en-deal-details-menu-maker.png)
    - Optional: Fill in the other relevant fields in the page.
-2. To confirm the deal, click **Save**.
+1. To confirm the deal, click **Save**.

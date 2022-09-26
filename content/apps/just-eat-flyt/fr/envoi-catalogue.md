@@ -87,28 +87,28 @@ Pour plus d'informations sur les références contenues dans les catalogues HubR
 
 Le tableau ci-dessous énumère les balises qui peuvent être définies sur les produits.
 
-| Balise                                  | Description             |
-| ------------------------------------ | ----------------------- |
-| `alcoholic`                          | Produit contenant de l'alcool.       |
-| `spicy_1`                            | Légèrement épicé.            |
-| `spicy_2`                            | Moyennement épicé.                  |
-| `spicy_3`                            | Très épicé.             |
-| `vegan`                              | Plat végétalien.             |
-| `vegetarian`                         | Plat végétarien.        |
-| `allergen_celery`                    | Contient l'allergène indiqué. |
-| `allergen_crustaceans`               | Contient l'allergène indiqué. |
-| `allergen_eggs`                      | Contient l'allergène indiqué. |
-| `allergen_fish`                      | Contient l'allergène indiqué. |
-| `allergen_gluten`                    | Contient l'allergène indiqué. |
-| `allergen_lupin`                     | Contient l'allergène indiqué. |
-| `allergen_milk`                      | Contient l'allergène indiqué. |
-| `allergen_molluscs`                  | Contient l'allergène indiqué. |
-| `allergen_mustard`                   | Contient l'allergène indiqué. |
-| `allergen_nuts`                      | Contient l'allergène indiqué. |
-| `allergen_peanuts`                   | Contient l'allergène indiqué. |
-| `allergen_sesame_seeds`              | Contient l'allergène indiqué. |
-| `allergen_soybeans`                  | Contient l'allergène indiqué. |
-| `allergen_sulphur_dioxide_sulphites` | Contient l'allergène indiqué. |
+| Balise                               | Description                    |
+| ------------------------------------ | ------------------------------ |
+| `alcoholic`                          | Produit contenant de l'alcool. |
+| `spicy_1`                            | Légèrement épicé.              |
+| `spicy_2`                            | Moyennement épicé.             |
+| `spicy_3`                            | Très épicé.                    |
+| `vegan`                              | Plat végétalien.               |
+| `vegetarian`                         | Plat végétarien.               |
+| `allergen_celery`                    | Contient l'allergène indiqué.  |
+| `allergen_crustaceans`               | Contient l'allergène indiqué.  |
+| `allergen_eggs`                      | Contient l'allergène indiqué.  |
+| `allergen_fish`                      | Contient l'allergène indiqué.  |
+| `allergen_gluten`                    | Contient l'allergène indiqué.  |
+| `allergen_lupin`                     | Contient l'allergène indiqué.  |
+| `allergen_milk`                      | Contient l'allergène indiqué.  |
+| `allergen_molluscs`                  | Contient l'allergène indiqué.  |
+| `allergen_mustard`                   | Contient l'allergène indiqué.  |
+| `allergen_nuts`                      | Contient l'allergène indiqué.  |
+| `allergen_peanuts`                   | Contient l'allergène indiqué.  |
+| `allergen_sesame_seeds`              | Contient l'allergène indiqué.  |
+| `allergen_soybeans`                  | Contient l'allergène indiqué.  |
+| `allergen_sulphur_dioxide_sulphites` | Contient l'allergène indiqué.  |
 
 ### Options
 

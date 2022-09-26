@@ -24,7 +24,7 @@ You cannot connect OrderLord autonomously. OrderLord support will do this for yo
 1. In the **ROLE** column, set `Manager` as the new user's role.
 1. Click the plus icon <InlineImage width="13" height="13">![Plus icon](../images/add-icon.png)</InlineImage> to add the new user.
 
-Then, contact OrderLord support at [support@orderlord.com](mailto:support@orderlord.com), with [support@hubrise.com](mailto:support@hubrise.com) in copy, and provide them with your HubRise account name and ID. Specific locations also the location you want to connect. 
+Then, contact OrderLord support at [support@orderlord.com](mailto:support@orderlord.com), with [support@hubrise.com](mailto:support@hubrise.com) in copy, and provide them with your HubRise account name and ID. Specific locations also the location you want to connect.
 
 OrderLord support will be able to access your account and connect OrderLord for you.
 

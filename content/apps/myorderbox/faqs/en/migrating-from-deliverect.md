@@ -22,7 +22,7 @@ HubRise offers a [competitive pricing](/pricing), with no setup fees and no comm
 
 ## How HubRise Works in Conjunction with MyOrderBox EPOS
 
-When integrating online ordering solutions or food ordering and delivery platforms to MyOrderBox via HubRise, most actions can be done on MyOrderBox back office to ease restaurant owner day to day operations. 
+When integrating online ordering solutions or food ordering and delivery platforms to MyOrderBox via HubRise, most actions can be done on MyOrderBox back office to ease restaurant owner day to day operations.
 
 See actions done on MyOrderBox:
 

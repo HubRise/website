@@ -51,7 +51,7 @@ La connexion avec Just Eat Flyt Bridge vous permet de :
 
 ---
 
-**REMARQUE IMPORTANTE** : La tablette Just Eat doit rester allumée pour recevoir les commandes dans HubRise. Sur certains marchés, l'acceptation automatique peut être activée.  Pour plus d'informations, voir [Puis-je désactiver la tablette ?](/apps/just-eat-flyt/faqs/desactiver-tablette/).
+**REMARQUE IMPORTANTE** : La tablette Just Eat doit rester allumée pour recevoir les commandes dans HubRise. Sur certains marchés, l'acceptation automatique peut être activée. Pour plus d'informations, voir [Puis-je désactiver la tablette ?](/apps/just-eat-flyt/faqs/desactiver-tablette/).
 
 ---
 

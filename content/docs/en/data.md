@@ -53,7 +53,7 @@ To filter customers by name or email address:
 1. Select the search icon to filter the customer records.
 1. To clear the customer filer, remove all text from the **Search by name or email** field then select the search icon <InlineImage width="17" height="17">![Search icon](../images/061-search.png)</InlineImage>.
 
-To see full details of a customer, click the customer name. To see the full logs of all the requests that make changes to the customer list, click **View logs**. 
+To see full details of a customer, click the customer name. To see the full logs of all the requests that make changes to the customer list, click **View logs**.
 
 To create, edit or remove a customer lists, see [Customer Lists](/docs/customer-lists).
 

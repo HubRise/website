@@ -11,4 +11,4 @@ Il existe différentes méthodes pour gérer vos comptes sur HubRise.
 
 - Mettez à jour le nom des comptes afin de distinguer ceux-ci plus facilement. Si, par exemple, vous avez créé des comptes pour tester des connexions, vous pouvez ajouter le mot **Test** à leur nom. Pour plus d'informations sur le renommage des comptes, voir la rubrique [Modifier les détails du compte](/docs/comptes#modifier-les-d-tails-du-compte).
 - Le fait de supprimer votre profil d'un compte vous permettra de rendre celui-ci invisible. Pour ce faire, supprimez votre permission associée à ce compte. Pour plus d'informations, voir la rubrique [Supprimer un utilisateur](/docs/permissions#supprimer-un-utilisateur).
-- Pour supprimer le compte, ajoutez la chaîne **_TO DELETE** au nom du compte. HubRise procédera à la suppression au moment de la purge du système.
+- Pour supprimer le compte, ajoutez la chaîne **\_TO DELETE** au nom du compte. HubRise procédera à la suppression au moment de la purge du système.

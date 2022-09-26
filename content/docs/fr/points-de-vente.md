@@ -73,4 +73,3 @@ Pour mettre à jour le nom et l'adresse d'un point de vente, procédez comme sui
 1. Si ce point de vente dispose d'un numéro de TVA distinct de celui du compte, indiquez-le dans le champ **Numéro de TVA intracommunautaire** prévu à cet effet.
 1. Si l'adresse de facturation est différente de celle du point de vente, cochez la case **L'adresse de facturation est différente de celle du point de vente** et remplissez le formulaire.
 1. Cliquez sur **Mettre à jour** pour enregistrer la configuration.
-2. 

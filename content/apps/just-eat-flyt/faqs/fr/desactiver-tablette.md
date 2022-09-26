@@ -3,8 +3,8 @@ title: Puis-je désactiver la tablette ?
 position: 1
 layout: documentation
 meta:
- title: Tablette | FAQs Just Eat Flyt | HubRise
- description: Cette page explique pourquoi vous ne pouvez pas désactiver la tablette Just Eat lorsque vous connectez votre enseigne à HubRise avec Just Eat Flyt Bridge.
+  title: Tablette | FAQs Just Eat Flyt | HubRise
+  description: Cette page explique pourquoi vous ne pouvez pas désactiver la tablette Just Eat lorsque vous connectez votre enseigne à HubRise avec Just Eat Flyt Bridge.
 ---
 
 Vous devez laisser la tablette de Just Eat allumée pour pouvoir recevoir des commandes, même après avoir connecté votre enseigne à HubRise. Si vous éteignez la tablette, les commandes n'apparaîtront pas sur votre compte HubRise.

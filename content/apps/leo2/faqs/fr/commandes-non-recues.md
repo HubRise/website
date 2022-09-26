@@ -29,7 +29,7 @@ Les codes ref des articles doivent être numériques. Dans le cas contraire, le 
 
 Si LEO2 cesse de fonctionner lors de la récupération d'une telle commande, suivez les étapes suivantes :
 
-- Vérifiez que tous les codes ref des articles sont numériques dans la solution tierce. 
+- Vérifiez que tous les codes ref des articles sont numériques dans la solution tierce.
 - Contactez le support HubRise sur [support@hubrise.com](mailto:support@hubrise.com) pour purger les envois de commandes en erreur.
 - Relancez le serveur HubRise de LEO2.
 

@@ -11,9 +11,9 @@ meta:
 
 The following table explains the terms that are specific to Uber Eats.
 
-| Term        | Description                                                 |
-|-------------|-------------------------------------------------------------|
-| Menu Maker  | App used to manage the menu in Uber Eats.                   |
+| Term       | Description                               |
+| ---------- | ----------------------------------------- |
+| Menu Maker | App used to manage the menu in Uber Eats. |
 
 ## Correspondence Table
 

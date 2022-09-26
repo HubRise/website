@@ -23,8 +23,8 @@ La vue Carte de commande affiche toutes les informations nécessaires au traitem
 - La date et l'heure de création de la commande.
 - La date et l'heure souhaitées de livraison ou de récupération par le client.
 - La date et l'heure confirmées, qui correspondent à l'horaire souhaité sauf si vous l'avez modifié.
-- Le type de commande. Les types possibles sont **LIVRAISON**, **RÉCUPÉRATION** et **SUR PLACE**. 
-- Liste des produits à préparer, avec les commentaires clients éventuels.  
+- Le type de commande. Les types possibles sont **LIVRAISON**, **RÉCUPÉRATION** et **SUR PLACE**.
+- Liste des produits à préparer, avec les commentaires clients éventuels.
 - Le statut de la commande. Vous pouvez modifier le statut d'une commande ou imprimer le reçu en sélectionnant le bouton correspondant.
 
 ![Détails de la carte de commande OrderLine](../images/019-fr-carte-commande-details.png)

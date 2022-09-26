@@ -93,7 +93,7 @@ Les remises sont appliquées par LEO2 sans tenir compte des codes ref. Il n'est 
 
 ## Frais
 
-Les frais de livraison ou de service doivent être créés comme des produits dans LEO2. Pour trouver le code ref des frais, procédez comme pour les [produits](#produits). 
+Les frais de livraison ou de service doivent être créés comme des produits dans LEO2. Pour trouver le code ref des frais, procédez comme pour les [produits](#produits).
 
 ## Méthodes de paiement
 

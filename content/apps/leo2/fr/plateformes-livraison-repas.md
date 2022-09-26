@@ -35,7 +35,7 @@ Pour savoir comment accéder à cette page, consultez l'aide sur la [configurati
 Dans la page de configuration de Uber Eats Bridge, utilisez les codes ref suivants.
 
 | Section             | Nom                                               | Code ref                                                             |
-| ------------------- | ------------------------------------------------- |----------------------------------------------------------------------|
+| ------------------- | ------------------------------------------------- | -------------------------------------------------------------------- |
 | Types de service    | Code ref livraison Uber                           | Créer un vendeur dans LEO2 et utiliser son code ref.                 |
 | Types de service    | Code ref livraison par le restaurant              | Créer un vendeur dans LEO2 et utiliser son code ref (si applicable). |
 | Types de service    | Code ref à emporter                               | Créer un vendeur dans LEO2 et utiliser son code ref (si applicable). |

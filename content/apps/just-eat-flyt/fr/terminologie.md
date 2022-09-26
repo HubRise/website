@@ -11,19 +11,19 @@ meta:
 
 Le tableau suivant explique les termes spécifiques à Just Eat Flyt.
 
-| Terme     | Description                                        |
-|----------|----------------------------------------------------|
+| Terme             | Description                                                                     |
+| ----------------- | ------------------------------------------------------------------------------- |
 | tablette Just Eat | Application officielle de Just Eat qui permet de gérer les commandes entrantes. |
-| Scoober  | Service de livraison de Just Eat.                         |
+| Scoober           | Service de livraison de Just Eat.                                               |
 
 ## Tableau de correspondance
 
 HubRise et Just Eat Flyt utilisent chacun leur propre terminologie. Un même concept peut donc exister sous une désignation différente dans les deux solutions. Le tableau de correspondance ci-dessous indique ces différences.
 
-| Just Eat Flyt | HubRise  | Description            |
-| ------------- | -------- | ---------------------- |
+| Just Eat Flyt | HubRise        | Description                   |
+| ------------- | -------------- | ----------------------------- |
 | Restaurant    | Point de vente | Le restaurant proprement dit. |
-| Menu          | Catalogue  | Liste de produits.      |
+| Menu          | Catalogue      | Liste de produits.            |
 
 ## Types de service
 
