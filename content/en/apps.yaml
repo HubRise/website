@@ -414,6 +414,12 @@ content:
           title: Orkestro
           description: Orkestro is a delivery operations manager solution used to organise inhouse deliveries or outsource to delivery companies on-demand and on the same day.
           additional_info:
+        - website: https://postmates.com
+          documentation: /apps/postmates
+          logo: postmates.png
+          title: Postmates
+          description: Postmates offers local delivery of restaurant-prepared meals and other goods in the US.
+          additional_info: Integration in progress.
         - website: https://useseconds.com
           documentation: /apps/seconds
           logo: seconds.png

@@ -418,6 +418,12 @@ content:
           title: Orkestro
           description: Orkestro permet de gérer les livraisons en interne ou de les externaliser à des opérateurs offrant des services de livraison à la demande.
           additional_info:
+        - website: https://postmates.com
+          documentation: /apps/postmates
+          logo: postmates.png
+          title: Postmates
+          description: Postmates propose des services de livraison de plats préparés aux restaurateurs et à d'autres types d'enseignes aux États-Unis.
+          additional_info: Intégration en cours.
         - website: https://useseconds.com
           documentation: /apps/seconds
           logo: seconds.png
