@@ -19,6 +19,12 @@ En fonction de vos besoins, vous devrez créer des PRODUITS, PROMOTIONS, MÉTHOD
 
 Si vous n'utilisez pas ces fonctionnalités, vous pouvez sauter la création de ces éléments et laisser vides les champs correspondants.
 
+---
+
+**REMARQUE IMPORTANTE :** Dishop ne peux pas afficher les commentaires faits par les clients sur la globalité de la commande.
+
+---
+
 ### PRODUITS, PROMOTIONS, ...
 
 Décrire les éléments à créer avant de connecter les plateformes de livraison de repas.
