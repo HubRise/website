@@ -1,6 +1,6 @@
 ---
 title: Terminologie
-position: 5
+position: 7
 layout: documentation
 meta:
   title: Terminologie | Dishop | HubRise
