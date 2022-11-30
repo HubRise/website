@@ -49,11 +49,7 @@ Connecting Just Eat Takeaway Bridge allows HubRise to:
 
 ![Diagram of the connection flow between Just Eat Takeaway, Just Eat Takeaway Bridge, and HubRise](../images/000-en-2x-jet-connection-diagram.png)
 
----
-
-**IMPORTANT NOTE:** The Just Eat OrderPad will need to remain switched on to receive orders in HubRise.
-
----
+Just Eat Takeaway Bridge works as standalone: when you activate it, orders are no longer sent to T-Connect.
 
 Just Eat Takeaway Bridge can be connected to HubRise from the HubRise back office.
 

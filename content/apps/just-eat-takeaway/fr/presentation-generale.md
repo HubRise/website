@@ -49,11 +49,7 @@ La connexion de Just Eat Takeaway Bridge permet à HubRise de :
 
 ![Schéma du flux de connexion entre Just Eat Takeaway, Just Eat Takeaway Bridge et HubRise](../images/000-fr-2x-jet-connection-diagram.png)
 
----
-
-**REMARQUE IMPORTANTE** : la tablette Just Eat doit rester allumée pour recevoir les commandes dans HubRise.
-
----
+Just Eat Takeaway Bridge fonctionne de manière autonome : lorsque vous l'activez, les commandes ne sont plus transmises à T-Connect.
 
 Just Eat Takeaway Bridge peut être connecté à HubRise depuis le back-office de HubRise.
 
