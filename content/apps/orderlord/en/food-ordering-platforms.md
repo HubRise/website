@@ -50,7 +50,7 @@ In the Just Eat Takeaway Bridge configuration page, use the following settings:
 
 | Section        | Name                                     | Ref code                                          |
 | -------------- | ---------------------------------------- | ------------------------------------------------- |
-| Service types  | Eat.ch delivery ref code                 | (leave empty)                                     |
+| Service types  | Just Eat delivery ref code               | (leave empty)                                     |
 | Service types  | Restaurant delivery ref code             | (leave empty)                                     |
 | Service types  | Takeaway ref code                        | (leave empty)                                     |
 | Service types  | Send orders delivered by the platform as | `collection orders`                               |

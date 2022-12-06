@@ -197,12 +197,6 @@ content:
           title: Delivery Hero
           description: Delivery Hero is an online food ordering and delivery platform for local restaurants. Customers can order food online or via a mobile app. Available in over 50 countries across four continents.
           additional_info: Integration in progress.
-        - website: https://www.eat.ch/en/
-          documentation: /apps/just-eat-takeaway
-          logo: eat.png
-          title: EAT.ch
-          description: EAT.ch is an online food ordering and delivery platform for local restaurants. Customers can order food online or via a mobile app. They operate in Switzerland.
-          additional_info:
         - website: https://www.foodpanda.com/
           documentation: /apps/foodpanda
           logo: foodpanda.png

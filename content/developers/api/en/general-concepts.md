@@ -262,3 +262,15 @@ HubRise indexes private refs efficiently, which allows clients to use private re
   }
 ]
 ```
+
+## 9. CORS
+
+CORS (Cross-Origin Resource Sharing) is a mechanism that restricts the origins that can execute requests against a given API.
+
+HubRise API and HubRise oAuth 2.0 server use different CORS policies:
+
+- HubRise API allows requests to be sent from a browser, from any origin. This is done by setting the `Access-Control-Allow-Origin` header to `*`.
+
+- HubRise oAuth 2.0 server enforces the stricter default CORS policy. As a result, you will not be able to create or revoke tokens from a browser. The rationale is that doing so would expose your client secret.
+
+If you choose to send API requests from the user's browser rather from your server, this will give your users access to their personal access token. You may only do this if your page can only be accessed by trusted users. For security reasons, prefer to use a proxy server to hide the access token.

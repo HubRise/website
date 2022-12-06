@@ -193,12 +193,6 @@ content:
           title: Delivery Hero
           description: Delivery Hero est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Disponible dans plus de 50 pays répartis sur quatre continents.
           additional_info: Intégration en cours.
-        - website: https://www.eat.ch/fr/
-          documentation: /apps/just-eat-takeaway
-          logo: eat.png
-          title: EAT.ch
-          description: EAT.ch est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Disponible en Suisse.
-          additional_info:
         - website: https://www.foodpanda.com/
           documentation: /apps/foodpanda
           logo: foodpanda.png

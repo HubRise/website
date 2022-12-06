@@ -26,12 +26,12 @@ Just Eat Takeaway.com connects to your HubRise account through Just Eat Takeaway
 
 Just Eat Takeaway Bridge allows you to connect the following platforms to HubRise:
 
+- Just-Eat.ch
 - Just-Eat.fr
 - Takeaway.com (Belgium, Luxembourg, Portugual, Bulgaria, Romania)
 - Thuisbezorgd.nl
 - Lieferando (Germany, Austria)
 - Pyszne.pl
-- Eat.ch
 - Vietnammm.com
 
 ---

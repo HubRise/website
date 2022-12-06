@@ -22,7 +22,7 @@ If you prefer to let Lightspeed support configure these items for you, make sure
 | Platform        | Channel name           |
 | --------------- | ---------------------- |
 | Deliveroo       | `Deliveroo`            |
-| Eat.ch          | `Eat.ch (EAT)`         |
+| Just-Eat.ch     | `Eat.ch (EAT)`         |
 | Just Eat        | `Just Eat (JE)`        |
 | HOP Delivery    | `HOP Delivery`         |
 | Takeaway.com    | `Takeaway.com (TA)`    |
@@ -70,13 +70,13 @@ To receive Just Eat orders in Lightspeed Restaurant via Takeaway API, you first 
 
 To receive Just Eat orders in Lightspeed Restaurant via Flyt API, you first need to connect Just Eat Flyt Bridge, an app included in your HubRise subscription. For more information about Just Eat Flyt Bridge, see the [Just Eat Flyt Bridge documentation](/apps/just-eat-flyt).
 
-### Eat.ch
+### Just-Eat.ch
 
-Eat.ch uses the Just Eat via TakeawayAPI. In the Just Eat Takeaway Bridge configuration page, use the following settings:
+Just-Eat.ch uses the Just Eat via TakeawayAPI. In the Just Eat Takeaway Bridge configuration page, use the following settings:
 
 | Section        | Name                                     | Ref code                                          |
-| -------------- | ---------------------------------------- | ------------------------------------------------- |
-| Service types  | Eat.ch delivery ref code                 | `EATAP`                                           |
+| -------------- |------------------------------------------| ------------------------------------------------- |
+| Service types  | Just-Eat.ch delivery ref code            | `EATAP`                                           |
 | Service types  | Restaurant delivery ref code             | `EATDRAP`                                         |
 | Service types  | Takeaway ref code                        | `EATEATAP`                                        |
 | Service types  | Send orders delivered by the platform as | `delivery orders`                                 |
