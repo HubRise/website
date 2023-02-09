@@ -10,7 +10,7 @@ app_info:
   category: Logiciels de caisse
   availability: France
   price_range:
-  website: https://www.jdc.fr/caisse-enregistreuse
+  website: https://www.jalia.fr
   contact: jalia@jdc.fr
 ---
 
@@ -22,9 +22,32 @@ app_info:
 
 ## Description
 
-Jalia est une logiciel de caisse cloud sur tablette iOS ou Android pour les restaurants. L'installation est simple et l'interface est optimisée pour une prise de commande rapide.
+Jalia est une caisse enregistreuse pour iPad, éditée par JDC SA, qui dispose de plus de 300 fonctionnalités et accessoires connectés. Elle est facile à utiliser, efficace et adaptable.
 
-La solution Jalia est éditée par JDC, une société créée en 1989 possédant des agences réparties dans toute la France. JDC intervient dans cinq secteurs d'activité, dont celui des caisses enregistreuses et des terminaux points de vente.
+Une solution connectée et le développement d’un écosystème de services digitalisés :  
+
+- Offre click & collect et site de commande en ligne.
+- Cahier de réservation digital.
+- Programme de fidélité.
+- Gestion de son PMS hôtelier.
+- Tickets restaurants dématérialisés.
+- Gestion des livraisons.
+- Gestion de l’hygiène HACCP.
+- Paiement à table par QR code.
+- Gestion des plannings employés.
+- Optimisation de la rotation des tables avec la télécommande tout-en-un : prise de commande et de paiement.
+
+
+La proximité fait partie de l'engagement de JDC SA, entreprise spécialisée dans les solutions d'encaissement et de paiement depuis 1989. Ses conseillers commerciaux et techniciens viennent à votre rencontre, sur tout le territoire et vous accueillent également au sein de leurs agences.
+
+Optez pour la proximité, c’est bénéficier de :  
+
+- Conseils et accompagnement.
+- Devis sur-mesure.
+- Programmation des équipements.
+- Livraison et installation.
+- Formation sur place.
+- Maintenance et SAV.
 
 Jalia, conçu pour le marché français, est conforme à la loi française anti-fraude 2018.
 
