@@ -17,7 +17,7 @@ import Link from "@layouts/shared/components/Link"
 const MDXProvider: React.FC = ({ children }) => (
   <DefaultMDXProvider
     components={{
-      ...Headers.generate([`h2`, `h3`]),
+      ...Headers.generate([`h2`, `h3`, `h4`]),
       a: A,
       CallSummaryTable,
       ContactFormToggle,

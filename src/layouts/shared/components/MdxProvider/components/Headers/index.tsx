@@ -5,8 +5,7 @@ import { createHeaderAnchor } from "@utils/misc"
 type HTMLTags = keyof HTMLElementTagNameMap
 
 /**
- * Defines custom h2-h3 headers with attached anchors.
- * Intended for replacing default MDX components.
+ * Defines custom HTML headers with attached anchors, to replace the default MDX components.
  *
  * @returns Object containing specified headers as React elements.
  */

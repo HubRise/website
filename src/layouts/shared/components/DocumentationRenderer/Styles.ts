@@ -32,7 +32,8 @@ export const Container = styled.div`
   }
 
   h2,
-  h3 {
+  h3,
+  h4 {
     scroll-snap-align: start;
     scroll-margin-top: 1rem;
 
