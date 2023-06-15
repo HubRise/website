@@ -43,6 +43,9 @@ export interface MDXDocumentationNode {
     /** File path, eg: "apps/deliveroo/en/map-ref-codes.md" */
     relativePath: string
   }
+  internal: {
+    contentFilePath: string
+  }
 }
 
 interface FolderGQL {

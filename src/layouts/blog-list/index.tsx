@@ -34,9 +34,11 @@ type HeroImageNode = ImageNode & { absolutePath: string }
 
 export const graphqlQuery = graphql`
   query blogListData {
-    allMdx(filter: { fileAbsolutePath: { glob: "**/content/blog/**/__post.md" } }) {
+    allMdx(filter: { internal: { contentFilePath: { glob: "**/content/blog/**/__post.md" } } }) {
       nodes {
-        fileAbsolutePath
+        internal {
+          contentFilePath
+        }
         fields {
           localeCode
           path
@@ -102,7 +104,7 @@ const BlogList = ({ data, pageContext }: BlogListProps): JSX.Element => {
   }
 
   const bannerImage = (blogPost: BlogNode): ImageSharp | undefined => {
-    const folder = blogPost.fileAbsolutePath.replace(/\/__post\.md$/, "")
+    const folder = blogPost.internal.contentFilePath.replace(/\/__post\.md$/, "")
     return data.bannerImages.nodes.find((node) => node.absolutePath.startsWith(folder))?.childImageSharp
   }
 
