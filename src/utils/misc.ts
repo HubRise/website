@@ -1,4 +1,4 @@
-import remark from "remark"
+import { remark } from "remark"
 import remarkHtml from "remark-html"
 
 /**
@@ -24,7 +24,6 @@ export const kebabify = (input: string, keepCase = false): string => {
 export const generateKey = (prefix: string, suffix: string | number): string => `${prefix}--${suffix}`
 
 export const markdownToHtml = (markdown: string): string => {
-  // @ts-ignore
   return remark().use(remarkHtml).processSync(markdown.replace(/\n/g, "\n\n")).toString()
 }
 
