@@ -9,11 +9,11 @@ gallery:
 
 path_override: /
 app_info:
-    category: Logiciels de caisse
-    availability: Royaume-Uni,Thaïlande
-    price_range:
-    website: http://www.akksofttech.com
-    contact: akksofttechuk@hotmail.com / +66 62 698 1988
+  category: Logiciels de caisse
+  availability: Royaume-Uni,Thaïlande
+  price_range:
+  website: http://www.akksofttech.com
+  contact: akksofttechuk@hotmail.com / +66 62 698 1988
 ---
 
 ---

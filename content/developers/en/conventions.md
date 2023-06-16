@@ -221,7 +221,7 @@ The following custom fields can be attached to an order to provide details about
 
 Typical workflow:
 
-- An order is placed from an ordering solution. 
+- An order is placed from an ordering solution.
 - The delivery solution is notified about the order, via a webhook. The delivery solution sets the `delivery.xxx` custom fields.
 - The EPOS is informed about the order update via a webhook. It displays `delivery.driver_pickup_time` for the staff to prepare the order in time, and `delivery.driver.first_name` and `delivery.driver.phone` for the staff to reach out to the driver if needed.
 - The ordering solution is also informed about the order update, and it displays a link to `delivery.tracking_url`, so the customer can track their delivery.

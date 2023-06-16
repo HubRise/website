@@ -20,7 +20,7 @@ To receive Deliveroo orders in SwooPOS, you first need to connect Deliveroo Brid
 In the Deliveroo Bridge configuration page, use the following settings:
 
 | Section        | Name                                  | Ref code                                          |
-| -------------- | ------------------------------------- |---------------------------------------------------|
+| -------------- | ------------------------------------- | ------------------------------------------------- |
 | Service types  | Deliveroo fulfilled ref code          | (leave empty)                                     |
 | Service types  | Restaurant fulfilled ref code         | (leave empty)                                     |
 | Service types  | Takeaway ref code                     | (leave empty)                                     |
@@ -40,7 +40,7 @@ To receive Just Eat orders in SwooPOS via Flyt API, you first need to connect Ju
 In the Just Eat Flyt Bridge configuration page, use the following settings:
 
 | Section        | Name                                     | Ref code                                          |
-| -------------- | ---------------------------------------- |---------------------------------------------------|
+| -------------- | ---------------------------------------- | ------------------------------------------------- |
 | Service types  | Just Eat delivery ref code               | (leave empty)                                     |
 | Service types  | Restaurant delivery ref code             | (leave empty)                                     |
 | Service types  | Takeaway ref code                        | (leave empty)                                     |
@@ -62,7 +62,7 @@ To receive Uber Eats orders in SwooPOS, you first need to connect Uber Eats Brid
 In the Uber Eats Bridge configuration page, use the following settings:
 
 | Section        | Name                                         | Ref code or value                                      |
-| -------------- | -------------------------------------------- |--------------------------------------------------------|
+| -------------- | -------------------------------------------- | ------------------------------------------------------ |
 | Service types  | Uber delivery ref code                       | (leave empty)                                          |
 | Service types  | Restaurant delivery ref code                 | (leave empty)                                          |
 | Service types  | Takeaway ref code                            | (leave empty)                                          |

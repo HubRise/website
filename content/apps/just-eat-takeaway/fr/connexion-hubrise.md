@@ -23,16 +23,17 @@ Vous pouvez vous inspirer de ce modèle d'e-mail en remplaçant les sections en 
 
 > Bonjour,
 > Veuillez activer l'intégration d'API pour mon restaurant :
+>
 > - Adresse URL de mon restaurant : **incluez le lien de votre enseigne sur le site internet de Just Eat, tel que : `https://www.just-eat.fr/menu/asian-lover`**
 > - ExtID du restaurant : utiliser mon identifiant Just Eat Takeaway
 > - Flux d'API à activer : POSAPI
 > - Logiciel de caisse à activer : HubRise
 > - Type de connexion : primaire
 > - Point de vente HubRise  **incluez le nom et l'identifiant, par exemple : `Fast Sushi Rue Jean-Jaurès z6q31-0`**
-> 
+>
 > Nous avons également besoin d'un accès au back-office de Just Eat Takeaway pour saisir de manière autonome les codes ref des produits.
 > Veuillez fournir l'identifiant Just Eat Takeaway afin que nous puissions finaliser la connexion avec HubRise.
-> 
+>
 > Cordialement.
 
 Just Eat Takeaway activera l'intégration HubRise pour votre enseigne et vous fournira un identifiant Just Eat Takeaway tel que : `8736550`. Vous aurez besoin de cet identifiant pour connecter Just Eat Takeaway Bridge à HubRise.

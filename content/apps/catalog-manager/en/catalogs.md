@@ -21,15 +21,15 @@ In Catalog Manager, click on **New catalog** and enter a name. Once the new cata
 
 ## Catalog Actions
 
-You can **Rename**, **Duplicate** an existing catalog or **Delete** existing catalogs using the Catalog Manager **Actions** dropdown. 
+You can **Rename**, **Duplicate** an existing catalog or **Delete** existing catalogs using the Catalog Manager **Actions** dropdown.
 
 ![Catalog Manager Catalog list](../images/001-en-2x-catalog-list.png)
 
 ## Populate a Catalog from Another App
 
-There are two ways to populate your catalogs on HubRise. 
+There are two ways to populate your catalogs on HubRise.
 
-You can populate it using the Catalog Manager app. For more information, see [Manage Products](/apps/catalog-manager/manage-products). 
+You can populate it using the Catalog Manager app. For more information, see [Manage Products](/apps/catalog-manager/manage-products).
 
 You can also push a product catalog or menu into a HubRise catalog using an EPOS, an online ordering solution, a food ordering platform or any other app connected to your HubRise account. To find out if the app you want to use integrated the catalog push feature, refer to your app documentation on the HubRise website [Apps page](https://www.hubrise.com/apps). After a push, you might in some cases, need to rearrange or augment the details for your product items by adding photos or more detailed descriptions using Catalog Manager.
 
@@ -38,4 +38,3 @@ You can also push a product catalog or menu into a HubRise catalog using an EPOS
 **IMPORTANT NOTE:** A catalogs can be associated with apps connected to your HubRise account. Pushing a product catalog from your EPOS or other app into a HubRise catalog will populate an empty catalog or replace all the items in the existing catalog. Some apps will push updates automatically with every menu update.
 
 ---
-

@@ -64,9 +64,9 @@ From this page, you will be able to customise the behaviour of Uber Eats Bridge.
 
 ## Status
 
-The information available on the **Status** page is pulled from the Uber Eats API. It shows the configuration of the integration on Uber Eats' side. 
+The information available on the **Status** page is pulled from the Uber Eats API. It shows the configuration of the integration on Uber Eats' side.
 
-To view the current status, you need to refresh the page by clicking **Refresh**, in the top right corner. The **Last refresh** date will update when the information is retrieved. 
+To view the current status, you need to refresh the page by clicking **Refresh**, in the top right corner. The **Last refresh** date will update when the information is retrieved.
 
 The **Location** section identifies the Uber Eats store connected to the Uber Eats Bridge, with its URL link, postal address, contact email and the banner displayed on the Uber Eats website. It indicates whether the restaurant is open or closed at the time of the refresh.
 

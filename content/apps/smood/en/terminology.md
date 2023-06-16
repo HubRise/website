@@ -12,7 +12,7 @@ meta:
 HubRise and Smood each use their own terminology. The same concept can therefore have a different designation in each solution. The correspondence table below shows these differences.
 
 | Smood               | HubRise  | Description                                                                |
-| ------------------- | -------- |----------------------------------------------------------------------------|
+| ------------------- | -------- | -------------------------------------------------------------------------- |
 | Discount voucher    | Discount | Discount that applies on the order total, when the customer enters a code. |
 | Promotion           | Deal     | BOGOF or percentage off on items.                                          |
 | Restaurant or Store | Location | The actual restaurant.                                                     |

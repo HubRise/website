@@ -62,7 +62,7 @@ These are typically associated with specific ref codes in your EPOS, which you c
 
 ## Order Times
 
-Just Eat provides the time when the eater expects to receive or collect the order. Just Eat Flyt Bridge sends this time to HubRise as the `expected_time` field. This time cannot be changed by the EPOS. 
+Just Eat provides the time when the eater expects to receive or collect the order. Just Eat Flyt Bridge sends this time to HubRise as the `expected_time` field. This time cannot be changed by the EPOS.
 
 ## Customer Details
 
@@ -70,7 +70,7 @@ The customer's details provided by Just Eat depend on the service type for the o
 
 - For orders delivered by the restaurant, HubRise receives the customer name and address.
 - For pick-up orders, only the customer name is received.
-- For orders delivered by Just Eat, the customer name may be received, depending on the market. The address is never received. 
+- For orders delivered by Just Eat, the customer name may be received, depending on the market. The address is never received.
 
 ## Discounts
 

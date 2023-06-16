@@ -42,7 +42,7 @@ Zuplyit can be connected to HubRise from the Zuplyit back office.
 
 ## Why Connect?
 
-By connecting Zuplyit to HubRise, your online ordering solution can communicate with your other everyday applications. Send online orders to your EPOS, to an autonomous printer, a Kitchen Display Screen, or to your inventory management solution. 
+By connecting Zuplyit to HubRise, your online ordering solution can communicate with your other everyday applications. Send online orders to your EPOS, to an autonomous printer, a Kitchen Display Screen, or to your inventory management solution.
 
 Thanks to HubRise, you can synchronise your menu, your customer information and your orders with your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management solutions or delivery services, eMarketing (SMS/emailing), business intelligence, inventory management and customer loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our [Apps page](/apps).
 
