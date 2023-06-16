@@ -34,7 +34,7 @@ type HeroImageNode = ImageNode & { absolutePath: string }
 
 export const graphqlQuery = graphql`
   query blogListData {
-    allMdx(filter: { internal: { contentFilePath: { glob: "**/content/blog/**/__post.md" } } }) {
+    allMdx(filter: { internal: { contentFilePath: { glob: "**/blog/**/__post.md" } } }) {
       nodes {
         internal {
           contentFilePath
