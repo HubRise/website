@@ -193,10 +193,7 @@ The following fields can be updated: `cutoff_time`, `opening_hours`, and `custom
 
 Returns the locations of the account.
 
-<CallSummaryTable
-  endpoint="GET /locations/"
-  accessLevel="account"
-/>
+<CallSummaryTable endpoint="GET /locations/" accessLevel="account" />
 
 ##### Example request:
 
@@ -224,11 +221,7 @@ Returns the locations of the account.
 
 Get account details.
 
-<CallSummaryTable
-  endpoint="GET /accounts/:id"
-  shortEndpoint="GET /account"
-  accessLevel="account"
-/>
+<CallSummaryTable endpoint="GET /accounts/:id" shortEndpoint="GET /account" accessLevel="account" />
 
 ##### Example request:
 
@@ -248,10 +241,7 @@ Get account details.
 
 Get user information.
 
-<CallSummaryTable
-  endpoint="GET /user"
-  accessLevel="profile, profile_with_email"
-/>
+<CallSummaryTable endpoint="GET /user" accessLevel="profile, profile_with_email" />
 
 ##### Example request:
 

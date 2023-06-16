@@ -68,6 +68,17 @@ module.exports = {
     {
       files: ["*.md", "*.mdx"],
       extends: ["plugin:mdx/recommended"],
+      parserOptions: {
+        extensions: [".md", ".mdx"]
+      },
+      globals: {
+        // MDXRenderer components
+        CallSummaryTable: "readonly",
+        ContactFormToggle: "readonly",
+        InlineImage: "readonly",
+        Label: "readonly",
+        Link: "readonly",
+      },
       settings: {
         "mdx/code-blocks": true
       }

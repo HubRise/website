@@ -399,9 +399,9 @@ Orders of any location of the account:
 Updates an order.
 
 <CallSummaryTable
-endpoint="PATCH /locations/:location_id/orders/:order_id"
-shortEndpoint="PATCH /location/orders/:order_id (location only)"
-accessLevel="location, account"
+  endpoint="PATCH /locations/:location_id/orders/:order_id"
+  shortEndpoint="PATCH /location/orders/:order_id (location only)"
+  accessLevel="location, account"
 />
 
 The following fields can be updated by sending their new value:

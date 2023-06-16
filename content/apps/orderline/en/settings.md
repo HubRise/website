@@ -10,7 +10,7 @@ meta:
 Go to Settings to customise OrderLine to best fit your needs. Users are able to update how OrderLine displays and functions through the **Settings** menu. To access Settings, select the gear icon <InlineImage width="20" height="20">![OrderLine Settings Icon](../images/035-settings.jpg)</InlineImage> in the upper right hand corner.
 
 <video controls title="OrderLine Access Settings">
-  <source src="../images/031-en-access-settings.webm" type="video/webm"/>
+  <source src="../images/031-en-access-settings.webm" type="video/webm" />
 </video>
 
 The following options are available through the **Settings** menu:
@@ -63,7 +63,7 @@ Users can set the Order status flow through the following steps:
 In the following example, the status **Delivery Failed** is added as a possible status flow for the status **In Delivery**.
 
 <video controls title="OrderLine Set Status Flow Example">
-  <source src="../images/011-en-set-status-flow.webm" type="video/webm"/>
+  <source src="../images/011-en-set-status-flow.webm" type="video/webm" />
 </video>
 
 ## Additional Data Prompt
@@ -85,7 +85,7 @@ To prompt the user to update the **Delivery Time** based on the Status, follow t
 The following demonstrates adding a delivery time prompt when an Order is set to the status **In Delivery**.
 
 <video controls title="OrderLine in Delivery Prompt">
-  <source src="../images/012-en-add-prompt-in-delivery.webm" type="video/webm"/>
+  <source src="../images/012-en-add-prompt-in-delivery.webm" type="video/webm" />
 </video>
 
 Users can be prompted to add a comment when an Order is set to a specific Status, which will be related to the client. Use these steps to prompt users for a comment based on the new Order status:
@@ -96,7 +96,7 @@ Users can be prompted to add a comment when an Order is set to a specific Status
 The following example adds a prompt for a user to comment when Orders are set to **COMPLETED**.
 
 <video controls title="OrderLine Prompt Comment Example">
-  <source src="../images/013-en-add-prompt-user-comment.webm" type="video/webm"/>
+  <source src="../images/013-en-add-prompt-user-comment.webm" type="video/webm" />
 </video>
 
 ## Hide Orders
@@ -111,7 +111,7 @@ To hide Orders from the **Today's Order** list, follow these steps:
 The following example shows the setting to hide **Completed** Orders.
 
 <video controls title="OrderLine Status Hide Example">
-  <source src="../images/015-en-setting-hidden-completed.webm" type="video/webm"/>
+  <source src="../images/015-en-setting-hidden-completed.webm" type="video/webm" />
 </video>
 
 ## Notifications
@@ -133,7 +133,7 @@ Some ringtones have sharper sounds than others. Select the tone that best suits 
 See the following video as an example of how to set the Notifications settings.
 
 <video controls title="OrderLine Set Notifications Settings Examples">
-  <source src="../images/025-en-settings-notifications.webm" type="video/webm"/>
+  <source src="../images/025-en-settings-notifications.webm" type="video/webm" />
 </video>
 
 ## Printing
@@ -173,7 +173,7 @@ To add your printer to your Google Account, perform the following:
 1. To verify your printer registration, go to [https://www.google.com/cloudprint](https://www.google.com/cloudprint) and click **Printers**.
 
 <video controls title="OrderLine Add Google Cloud Printer">
-  <source src="../images/026-en-add-google-cloud-printer.webm" type="video/webm"/>
+  <source src="../images/026-en-add-google-cloud-printer.webm" type="video/webm" />
 </video>
 
 If you wish to configure Google Cloud Print settings, go to [https://www.google.com/cloudprint](https://www.google.com/cloudprint).
@@ -191,7 +191,7 @@ Once you register your printer in Google Cloud Print, you must connect OrderLine
 1. Google will request permission to grant HubRise access to your Google Cloud Print device. Click **Allow** to complete the process.
 
 <video controls title="OrderLine Grant HubRise Google Printer Access">
-  <source src="../images/027-en-register-google-cloud-printer.webm" type="video/webm"/>
+  <source src="../images/027-en-register-google-cloud-printer.webm" type="video/webm" />
 </video>
 
 Once you have granted HubRise permission to use your Google Cloud Print device, follow these steps to set up automatic printing:
@@ -200,5 +200,5 @@ Once you have granted HubRise permission to use your Google Cloud Print device, 
 1. Choose to print with your internet-connected printer in the dropdown.
 
 <video controls title="Orderline Set Automatic Printing">
-  <source src="../images/028-en-setting-automatic-printer.webm" type="video/webm"/>
+  <source src="../images/028-en-setting-automatic-printer.webm" type="video/webm" />
 </video>

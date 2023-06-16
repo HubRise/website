@@ -14,7 +14,7 @@ Vous pouvez personnaliser l'enchaînement des statuts afin d'adapter la gestion 
 Pour consulter les détails d'une commande, cliquez sur la carte correspondante. Cliquez sur l'icône Fermer <InlineImage width="23" height="23">![Icône de fermeture d'OrderLine](../images/032-close.png)</InlineImage> ou n'importe où en dehors de la carte de commande pour refermer celle-ci.
 
 <video controls title="OrderLine Open and Close Orders Example">
-  <source src="../images/018-en-order-card-open-close.webm" type="video/webm"/>
+  <source src="../images/018-en-order-card-open-close.webm" type="video/webm" />
 </video>
 
 La vue Carte de commande affiche toutes les informations nécessaires au traitement de la commande :
@@ -44,7 +44,7 @@ Vous pouvez ajouter un message personnalisé destiné au client et ajuster le d�
 Une fois la commande acceptée, son statut passe à **Acceptée**. Vous pouvez imprimer le reçu de la commande et modifier à nouveau le statut lorsque vous êtes prêt.
 
 <video controls title="OrderLine Accept Order Example">
-  <source src="../images/020-en-accept-order.webm" type="video/webm"/>
+  <source src="../images/020-en-accept-order.webm" type="video/webm" />
 </video>
 
 ## Rejeter une commande
@@ -54,7 +54,7 @@ Pour rejeter une commande, ouvrez la carte de la commande puis cliquez sur **REJ
 Lorsqu'une commande est rejetée, elle disparaît de l'onglet **Aujourd'hui** et devient masquée. Cliquez sur la carte masquée dans l'onglet **Aujourd'hui** pour visualiser les commandes masquées et les rouvrir si nécessaire.
 
 <video controls title="OrderLine Reject Order Example">
-  <source src="../images/021-en-reject-order.webm" type="video/webm"/>
+  <source src="../images/021-en-reject-order.webm" type="video/webm" />
 </video>
 
 ## Marquer une commande en livraison
@@ -62,7 +62,7 @@ Lorsqu'une commande est rejetée, elle disparaît de l'onglet **Aujourd'hui** et
 Lorsque la commande doit être livrée au client, sélectionnez **EN LIVRAISON** pour la commande ayant le statut **Acceptée**.
 
 <video controls title="OrderLine Order in Delivery Example">
-  <source src="../images/022-en-order-set-status-in-delivery.webm" type="video/webm"/>
+  <source src="../images/022-en-order-set-status-in-delivery.webm" type="video/webm" />
 </video>
 
 ## Terminer une commande
@@ -75,7 +75,7 @@ Les commandes ayant le statut **En livraison** peuvent être mises à jour comme
 Les commandes terminées sont, par défaut, masquées dans la liste **Aujourd'hui**. Cliquez sur la carte masquée dans l'onglet **Aujourd'hui** pour faire réapparaître la commande.
 
 <video controls title="OrderLine Complete Order Example">
-  <source src="../images/023-en-order-set-completed.webm" type="video/webm"/>
+  <source src="../images/023-en-order-set-completed.webm" type="video/webm" />
 </video>
 
 ## Imprimer une commande

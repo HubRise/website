@@ -20,10 +20,7 @@ Name unicity is ruled by the same constraints as catalogs:
 
 Returns a customer list.
 
-<CallSummaryTable
-  endpoint="GET /customer_lists/:customer_list_id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /customer_lists/:customer_list_id" accessLevel="location, account" />
 
 ##### Example request:
 
@@ -115,10 +112,7 @@ If a customer list with the same name already exists, it returns an error.
 
 Update a customer list.
 
-<CallSummaryTable
-  endpoint="PATCH /customer_lists/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="PATCH /customer_lists/:id" accessLevel="location, account" />
 
 ##### Example request:
 
@@ -138,10 +132,7 @@ Delete a customer list. Customers and loyalty cards belonging to the list are al
 
 No event is fired in the process.
 
-<CallSummaryTable
-  endpoint="DELETE /customer_lists/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="DELETE /customer_lists/:id" accessLevel="location, account" />
 
 ##### Example request:
 
@@ -206,10 +197,7 @@ Returns a customer's details.
 
 Returns customers belonging to a customer list. Filters can be specified.
 
-<CallSummaryTable
-  endpoint="GET /customer_lists/:customer_list_id/customers"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /customer_lists/:customer_list_id/customers" accessLevel="location, account" />
 
 ##### Request parameters:
 
@@ -244,10 +232,7 @@ Creates a new customer.
 
 There is no mandatory field so a customer can be created with no information then referred to by its unique id.
 
-<CallSummaryTable
-  endpoint="POST /customer_lists/:customer_list_id/customers"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="POST /customer_lists/:customer_list_id/customers" accessLevel="location, account" />
 
 ##### Request parameters:
 
@@ -389,10 +374,7 @@ Returns a loyalty card.
 
 Returns loyalty cards belonging to a customer list. Filters can be specified.
 
-<CallSummaryTable
-  endpoint="GET /customer_lists/:customer_list_id/loyalty_cards"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /customer_lists/:customer_list_id/loyalty_cards" accessLevel="location, account" />
 
 ##### Request parameters:
 
@@ -445,10 +427,7 @@ Returns loyalty cards belonging to a customer list. Filters can be specified.
 
 Creates a new loyalty card for a customer.
 
-<CallSummaryTable
-  endpoint="POST /customer_lists/:customer_list_id/loyalty_cards"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="POST /customer_lists/:customer_list_id/loyalty_cards" accessLevel="location, account" />
 
 ##### Request parameters:
 

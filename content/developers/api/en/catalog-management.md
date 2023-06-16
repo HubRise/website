@@ -17,10 +17,7 @@ Catalogs are identified by their name. Catalog names must be unique for any acco
 
 ### 1.1. Retrieve Catalog
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:id" accessLevel="location, account" />
 
 ##### Request parameters:
 
@@ -215,10 +212,7 @@ Update a catalog. The request parameters are the same as for the [create catalog
 
 If the `data` field is passed, the whole catalog content is cleared and recreated from the passed data.
 
-<CallSummaryTable
-  endpoint="PUT /catalogs/:id"
-  accessLevel="account"
-/>
+<CallSummaryTable endpoint="PUT /catalogs/:id" accessLevel="account" />
 
 <details>
 
@@ -256,10 +250,7 @@ If the `data` field is passed, the whole catalog content is cleared and recreate
 
 Delete a catalog and all its content (ie categories, products, ...).
 
-<CallSummaryTable
-  endpoint="DELETE /catalogs/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="DELETE /catalogs/:id" accessLevel="location, account" />
 
 <details>
 
@@ -331,10 +322,7 @@ The tree is sorted. Categories and products are retrieved in the same order as t
 
 ### 3.2. Retrieve Category
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/categories/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/categories/:id" accessLevel="location, account" />
 
 | Name          | Type             | Description                                                                                                     |
 | ------------- | ---------------- | --------------------------------------------------------------------------------------------------------------- |
@@ -364,10 +352,7 @@ The tree is sorted. Categories and products are retrieved in the same order as t
 
 Return the categories of the catalog. Categories are returned in a deep first traversal order (category 1, then category 1's children, then category 2, then category 2's children, etc.)
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/categories"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/categories" accessLevel="location, account" />
 
 ##### Example request:
 
@@ -427,10 +412,7 @@ A product belongs to a category. A product has one or several skus.
 
 ### 4.2. Retrieve Product
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/products/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/products/:id" accessLevel="location, account" />
 
 | Name          | Type             | Description                               |
 | ------------- | ---------------- | ----------------------------------------- |
@@ -474,10 +456,7 @@ A product belongs to a category. A product has one or several skus.
 
 Retrieve the list of products in the catalog.
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/products"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/products" accessLevel="location, account" />
 
 ##### Example request:
 
@@ -538,10 +517,7 @@ A product contains one or several skus. A sku is always attached to a product.
 
 ### 5.2. Retrieve Sku
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/products/:product_id/skus/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/products/:product_id/skus/:id" accessLevel="location, account" />
 
 | Name              | Type                                                       | Description                                                         |
 | ----------------- | ---------------------------------------------------------- | ------------------------------------------------------------------- |
@@ -577,10 +553,7 @@ A product contains one or several skus. A sku is always attached to a product.
 
 ### 5.3. List Skus
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/products/:product_id/skus"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/products/:product_id/skus" accessLevel="location, account" />
 
 ##### Example request:
 
@@ -651,10 +624,7 @@ The `type` field is deprecated and should be replaced with `min_selections` and 
 
 Retrieve an option list and the possible choices (options).
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/option_lists/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/option_lists/:id" accessLevel="location, account" />
 
 | Name                               | Type                 | Description                                                                                                                       |
 | ---------------------------------- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -693,10 +663,7 @@ Retrieve an option list and the possible choices (options).
 
 ### 6.3. List Option Lists
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/option_lists"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/option_lists" accessLevel="location, account" />
 
 ##### Example request:
 
@@ -858,10 +825,7 @@ Retrieve an option list and the possible choices (options).
 
 ### 8.2. Retrieve Deal
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/deals/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/deals/:id" accessLevel="location, account" />
 
 ##### Example request:
 
@@ -894,10 +858,7 @@ Retrieve an option list and the possible choices (options).
 
 ### 8.2. List Deals
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/deals"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/deals" accessLevel="location, account" />
 
 ##### Example request:
 
@@ -951,10 +912,7 @@ A discount is a reduction of the order total price.
 
 ### 9.2. Retrieve Discount
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/discounts/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/discounts/:id" accessLevel="location, account" />
 
 ##### Example request:
 
@@ -975,10 +933,7 @@ A discount is a reduction of the order total price.
 
 ### 9.3. List Discounts
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/discounts"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/discounts" accessLevel="location, account" />
 
 ##### Example request:
 
@@ -1025,10 +980,7 @@ A charge is an additional fee billed to the customer. Examples of charges includ
 
 ### 10.2. Retrieve Charge
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/charges/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/charges/:id" accessLevel="location, account" />
 
 ##### Parameters:
 
@@ -1058,10 +1010,7 @@ A charge is an additional fee billed to the customer. Examples of charges includ
 
 Retrieve the list of charges in the catalog.
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/charges"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/charges" accessLevel="location, account" />
 
 ##### Example request:
 
@@ -1191,10 +1140,7 @@ HubRise supports the following image formats: `JPEG`, `PNG`, `WEBP`, `GIF`, and 
 
 HubRise does not impose any restrictions on image dimensions. However, we recommend using images in `1200x800` format or larger to ensure a good quality across all channels.
 
-<CallSummaryTable
-  endpoint="POST /catalogs/:catalog_id/images"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="POST /catalogs/:catalog_id/images" accessLevel="location, account" />
 
 ##### Example request:
 
@@ -1219,10 +1165,7 @@ Response:
 
 ### 13.2. Retrieve Image
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/images/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/images/:id" accessLevel="location, account" />
 
 ##### Parameters:
 
@@ -1252,10 +1195,7 @@ Response:
 
 Return the image data. The reply's `Content-Type` header contains the MIME image type.
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/images/:id/data"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/images/:id/data" accessLevel="location, account" />
 
 ##### Example request:
 
@@ -1270,10 +1210,7 @@ Response body: image data
 
 Retrieve the list of images in the catalog.
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/images"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/images" accessLevel="location, account" />
 
 ##### Example request:
 

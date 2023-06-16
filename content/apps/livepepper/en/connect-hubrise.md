@@ -36,5 +36,5 @@ If you already have a HubRise account, follow these steps:
 1. Select the HubRise **Location** to connect, then click **Allow**.
 
 <video controls title="Connect to HubRise example">
-  <source src="../images/008-connect-hubrise.webm" type="video/webm"/>
+  <source src="../images/008-connect-hubrise.webm" type="video/webm" />
 </video>

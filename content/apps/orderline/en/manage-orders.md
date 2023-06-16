@@ -14,7 +14,7 @@ OrderLine users can change the statuses flow to manage orders in the way that be
 To view the order details, select the Order Card. Click the close icon <InlineImage width="23" height="23">![OrderLine Close icon](../images/032-close.png)</InlineImage> or anywhere outside the Order Card to close it.
 
 <video controls title="OrderLine Open and Close Orders Example">
-  <source src="../images/018-en-order-card-open-close.webm" type="video/webm"/>
+  <source src="../images/018-en-order-card-open-close.webm" type="video/webm" />
 </video>
 
 Order Cards display all the details needed to process the Order, including the following:
@@ -44,7 +44,7 @@ Users can add a personalised message to the customer, adjust the delivery time, 
 Once accepted, the Order status changes to **Accepted**. You may print the order receipt and change the status again when you are ready.
 
 <video controls title="OrderLine Accept Order Example">
-  <source src="../images/020-en-accept-order.webm" type="video/webm"/>
+  <source src="../images/020-en-accept-order.webm" type="video/webm" />
 </video>
 
 ## Reject Order
@@ -54,7 +54,7 @@ To reject an order, go to the order details and click **REJECTED**. You may add 
 Once rejected, the order disappears from **Today's Orders** list and becomes hidden. You can click on **Today's Orders** hidden card to see all orders and reopen them if needed.
 
 <video controls title="OrderLine Reject Order Example">
-  <source src="../images/021-en-reject-order.webm" type="video/webm"/>
+  <source src="../images/021-en-reject-order.webm" type="video/webm" />
 </video>
 
 ## Mark Order as In Delivery
@@ -62,7 +62,7 @@ Once rejected, the order disappears from **Today's Orders** list and becomes hid
 With the order in **Accepted** status, select **IN DELIVERY** when the Order is being delivered to the customer.
 
 <video controls title="OrderLine Order in Delivery Example">
-  <source src="../images/022-en-order-set-status-in-delivery.webm" type="video/webm"/>
+  <source src="../images/022-en-order-set-status-in-delivery.webm" type="video/webm" />
 </video>
 
 ## Complete Order
@@ -75,7 +75,7 @@ Orders set with the status **In Delivery** can be updated to the following:
 Completed Orders are hidden from **Today's Orders** by default. Click the **Today's Orders** hidden card to see it again.
 
 <video controls title="OrderLine Complete Order Example">
-  <source src="../images/023-en-order-set-completed.webm" type="video/webm"/>
+  <source src="../images/023-en-order-set-completed.webm" type="video/webm" />
 </video>
 
 ## Print Order

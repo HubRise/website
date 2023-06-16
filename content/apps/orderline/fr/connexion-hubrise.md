@@ -25,5 +25,5 @@ OrderLine doit être connecté à votre compte HubRise avant de pouvoir traiter 
 1. OrderLine est désormais ajouté à votre compte HubRise.
 
 <video controls title="OrderLine Connection Example">
-  <source src="../images/004-en-connect-orderline.webm" type="video/webm"/>
+  <source src="../images/004-en-connect-orderline.webm" type="video/webm" />
 </video>

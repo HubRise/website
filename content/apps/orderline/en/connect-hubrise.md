@@ -25,5 +25,5 @@ OrderLine must be connected to your HubRise account before it can fetch orders. 
 1. You have now added OrderLine to your HubRise Account.
 
 <video controls title="OrderLine Connection Example">
-  <source src="../images/004-en-connect-orderline.webm" type="video/webm"/>
+  <source src="../images/004-en-connect-orderline.webm" type="video/webm" />
 </video>
