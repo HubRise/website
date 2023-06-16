@@ -20,11 +20,11 @@ Voici deux descriptions, une courte, l'autre longue, en français et en anglais.
 
 ### Description en français
 
-Description courte (<50 mots) :
+Description courte (\<50 mots) :
 
 > HubRise connecte [Nom de l'App intégrée] aux solutions que vous utilisez tous les jours. Recevez vos commandes dans votre logiciel de caisse, transmettez les livraisons à votre transporteur, synchronisez vos clients avec vos listes e-marketing, connectez votre carte de fidélité digitale, et bien plus encore... Réalisez tous vos rêves d'intégration.
 
-Description longue (<200 mots) :
+Description longue (\<200 mots) :
 
 > HubRise est un middleware qui facilite les intégrations techniques entre solutions tierces. Les transactions sont enregistrées dans HubRise pour permettre aux applications de partager en temps réel votre catalogue de produits, votre fichier clients ou vos commandes.
 >
@@ -34,11 +34,11 @@ Description longue (<200 mots) :
 
 ### Description en anglais
 
-Description courte (<50 mots) :
+Description courte (\<50 mots) :
 
 > HubRise helps you connect [Integrated App's Name] to the apps you use to run your business. Receive orders in your EPOS, send deliveries to your courier service, synchronise customers with your e-marketing lists, connect your digital loyalty card, and a whole lot more... Make your integration dreams come true.
 
-Description longue (<200 mots) :
+Description longue (\<200 mots) :
 
 > HubRise is a middleware used to facilitate technical integrations between third party solutions.
 > Transactions are saved in HubRise to provide apps with real-time access to your product catalogue, your customer data or your orders.

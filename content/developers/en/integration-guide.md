@@ -58,7 +58,7 @@ When you start developing your integration, taking the right decisions at the be
 
 ### Create a User Account for your Support Team
 
-We recommend registering a HubRise user account with an email alias such as <support@your-solution.com>.
+We recommend registering a HubRise user account with an email alias such as support@your-solution.com.
 
 If your customers need your help with the integration in the future, they will just need to grant this user access to their HubRise account. Your support team will then be able to access their logs and debug the problem.
 
