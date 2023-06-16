@@ -141,6 +141,10 @@ export const Container = styled.div`
     margin: ${paragraphSpacing} 0;
   }
 
+  details {
+    ${mixin.clickable};
+  }
+
   code {
     display: inline;
     font-family: Consolas, Liberation Mono, Courier, monospace;
