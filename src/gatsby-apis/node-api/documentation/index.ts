@@ -3,6 +3,8 @@ import * as Gatsby from "gatsby"
 import { compileMDXWithCustomOptions } from "gatsby-plugin-mdx"
 import visit from "unist-util-visit"
 import toString from "mdast-util-to-string"
+import { ObjectTypeComposerAsObjectDefinition as ComposeObjectTypeConfig } from "graphql-compose/lib/ObjectTypeComposer"
+import type { Heading } from "mdast"
 
 import { getLayoutPath } from "../util/layout"
 import { generateLanguagePaths, parseRelativePath } from "../util/locale"
@@ -23,49 +25,41 @@ import {
 import { getFolderPages, getPagePath } from "./page"
 import { getBreadcrumbs } from "./breadcrumbs"
 
-export async function createSchemaCustomization({
-  getNode,
-  getNodesByType,
-  pathPrefix,
-  reporter,
-  cache,
-  actions,
-  schema,
-  store,
-}: Gatsby.CreateSchemaCustomizationArgs): Promise<void> {
+interface IHeading {
+  value: string
+  depth: number
+}
+
+export async function createSchemaCustomization(
+  createSchemaCustomizationArgs: Gatsby.CreateSchemaCustomizationArgs,
+): Promise<void> {
+  const { actions, getNode, schema } = createSchemaCustomizationArgs
   const { createTypes } = actions
 
-  const remarkHeadingsPlugin = function remarkHeadingsPlugin() {
-    return async function transformer(tree, file) {
-      const headings: Array<{ value: string; depth: number }> = []
+  const remarkHeadingsPlugin = () => {
+    return function transformer(node, file) {
+      const headings: Array<IHeading> = []
 
-      visit(tree, `heading`, (heading) => {
+      visit(node, `heading`, (heading: Heading) => {
         headings.push({
           value: toString(heading),
-          depth: (heading as any).depth as number,
+          depth: heading.depth,
         })
       })
 
-      const mdxFile = file
-      if (!mdxFile.data.meta) {
-        mdxFile.data.meta = {}
-      }
-
-      mdxFile.data.meta.headings = headings
+      file.data.meta ||= {}
+      file.data.meta.headings = headings
     }
   }
 
-  const headingsResolver = schema.buildObjectType({
+  const resolverConfig: ComposeObjectTypeConfig<MDXDocumentationNode, DocumentationContext> = {
     name: `Mdx`,
     fields: {
       headings: {
         type: `[MdxHeading]`,
         async resolve(mdxNode) {
-          const fileNode = getNode(mdxNode.parent)
-
-          if (!fileNode) {
-            return null
-          }
+          const fileNode = getNode(mdxNode.parent as any)
+          if (!fileNode) return null
 
           const result = await compileMDXWithCustomOptions(
             {
@@ -81,24 +75,15 @@ export async function createSchemaCustomization({
                   remarkPlugins: [remarkHeadingsPlugin],
                 },
               },
-              getNode,
-              getNodesByType,
-              pathPrefix,
-              reporter,
-              cache,
-              store,
+              ...createSchemaCustomizationArgs,
             },
           )
 
-          if (!result) {
-            return null
-          }
-
-          return result.metadata.headings
+          return result ? result.metadata.headings : null
         },
       },
     },
-  })
+  }
 
   createTypes([
     `
@@ -107,7 +92,7 @@ export async function createSchemaCustomization({
         depth: Int
       }
     `,
-    headingsResolver,
+    schema.buildObjectType(resolverConfig),
   ])
 }
 
@@ -163,8 +148,6 @@ function createDocumentationPage(
   const customization = folderFiles.customization
 
   const getLanguagePath = (localeCode) => getFolderPath(folder, localeCode)
-
-  console.log("path", path, "mdxNode.internal", mdxNode.internal)
 
   actions.createPage<DocumentationContext>({
     path,

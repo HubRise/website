@@ -14,5 +14,4 @@ export interface BlogNode {
     title: string
   }
   excerpt: string
-  body: string
 }

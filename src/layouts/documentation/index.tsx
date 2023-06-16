@@ -22,6 +22,7 @@ interface DocumentationProps {
   data: DocumentationData
   path: string
   pageContext: DocumentationContext
+  children: React.ReactNode
 }
 
 interface DocumentationData {
@@ -32,7 +33,6 @@ interface DocumentationData {
 }
 
 interface DocumentationNode {
-  body: string
   frontmatter: {
     app_info?: IAppInfo
     gallery?: Array<string>
@@ -59,7 +59,6 @@ interface DocumentationImage {
 export const graphqlQuery = graphql`
   query documentationData($mdxNodeId: String!, $imagesRelativeDirectory: String!) {
     mdxNode: mdx(id: { eq: $mdxNodeId }) {
-      body
       frontmatter {
         app_info {
           availability
@@ -76,8 +75,8 @@ export const graphqlQuery = graphql`
         title
       }
       headings {
-        depth
         value
+        depth
       }
       parent {
         ... on File {
@@ -104,7 +103,7 @@ export const graphqlQuery = graphql`
   }
 `
 
-const Documentation = ({ data, path, pageContext }: DocumentationProps): JSX.Element => {
+const Documentation = ({ data, path, pageContext, children: body }: DocumentationProps): JSX.Element => {
   const { t } = useTranslation()
   const localeCode = useLocaleCode()
 
@@ -112,7 +111,7 @@ const Documentation = ({ data, path, pageContext }: DocumentationProps): JSX.Ele
 
   const currentMdxNode = data.mdxNode
 
-  const { frontmatter, body, headings } = currentMdxNode
+  const { frontmatter, headings } = currentMdxNode
   const { meta, title, gallery, app_info: appInfo } = frontmatter
 
   const chapterMainPath = folderPages[0].path

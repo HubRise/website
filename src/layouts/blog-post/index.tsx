@@ -15,6 +15,7 @@ import Layout from "@layouts/shared/components/Blog/Layout"
 export interface BlogPostProps {
   data: BlogPostData
   pageContext: BlogPostContext
+  children: React.ReactNode
 }
 
 interface BlogPostData {
@@ -26,7 +27,6 @@ interface BlogPostData {
 
 interface BlogPostNode extends BlogNode {
   frontmatter: BlogNode["frontmatter"] & {
-    body: string
     meta: Meta
   }
 }
@@ -48,7 +48,6 @@ export const graphqlQuery = graphql`
         }
         title
       }
-      body
     }
     bannerImage: file(absolutePath: { glob: $bannerImagePathGlob }) {
       childImageSharp {
@@ -58,7 +57,7 @@ export const graphqlQuery = graphql`
   }
 `
 
-const BlogPost = ({ data, pageContext }: BlogPostProps): JSX.Element => {
+const BlogPost = ({ data, pageContext, children: body }: BlogPostProps): JSX.Element => {
   const { t } = useTranslation()
 
   const { mdxNode, bannerImage } = data
@@ -80,7 +79,9 @@ const BlogPost = ({ data, pageContext }: BlogPostProps): JSX.Element => {
       <Breadcrumbs breadcrumbs={breadcrumbs} />
 
       <Layout>
-        <Post mdxNode={mdxNode} bannerImage={bannerImage?.childImageSharp} />
+        <Post mdxNode={mdxNode} bannerImage={bannerImage?.childImageSharp}>
+          {body}
+        </Post>
       </Layout>
     </MDXProvider>
   )

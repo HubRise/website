@@ -8,6 +8,7 @@ import MDXCustomRenderer from "@layouts/shared/components/MdxCustomRenderer"
 
 interface DocumentationSimpleProps {
   data: DocumentationSimpleData
+  children: React.ReactNode
 }
 
 interface DocumentationSimpleData {
@@ -15,7 +16,6 @@ interface DocumentationSimpleData {
 }
 
 interface DocumentationSimpleNode {
-  body: string
   frontmatter: {
     meta?: Meta
     title: string
@@ -25,7 +25,6 @@ interface DocumentationSimpleNode {
 export const graphqlQuery = graphql`
   query simpleData($mdxNodeId: String!) {
     mdx(id: { eq: $mdxNodeId }) {
-      body
       frontmatter {
         title
         meta {
@@ -37,8 +36,8 @@ export const graphqlQuery = graphql`
   }
 `
 
-const DocumentationSimple = ({ data }: DocumentationSimpleProps): JSX.Element => {
-  const { frontmatter, body } = data.mdx
+const DocumentationSimple = ({ data, children: body }: DocumentationSimpleProps): JSX.Element => {
+  const { frontmatter } = data.mdx
   const { meta } = frontmatter
 
   return (

@@ -1,17 +1,16 @@
 import * as React from "react"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import { Container } from "./Styles"
 
 interface MdxCustomRendererProps {
   title?: string
-  body: string
+  body: React.ReactNode
 }
 
 const MdxCustomRenderer = ({ title, body }: MdxCustomRendererProps): JSX.Element => (
   <Container>
     {title && <h1>{title}</h1>}
-    <MDXRenderer>{body}</MDXRenderer>
+    {body}
   </Container>
 )
 

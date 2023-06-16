@@ -79,7 +79,7 @@ export async function createPages({ graphql, actions }: CreatePagesArgs): Promis
     nodes.forEach((node) => {
       actions.createPage<BlogPostContext>({
         path: node.fields.path,
-        component: getLayoutPath("blog-post"),
+        component: `${getLayoutPath("blog-post")}?__contentFilePath=${node.internal.contentFilePath}`,
         context: {
           languagePaths: generateLanguagePaths(localeCode, getMainBlogPath),
           localeCode,

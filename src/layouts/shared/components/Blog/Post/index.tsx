@@ -11,10 +11,11 @@ import { ImageSharp } from "@utils/image"
 interface PostProps {
   mdxNode: BlogNode
   bannerImage?: ImageSharp
+  children: React.ReactNode
 }
 
-const Post = ({ mdxNode, bannerImage }: PostProps): JSX.Element => {
-  const { frontmatter, body } = mdxNode
+const Post = ({ mdxNode, bannerImage, children: body }: PostProps): JSX.Element => {
+  const { frontmatter } = mdxNode
 
   return (
     <StyledPost>
