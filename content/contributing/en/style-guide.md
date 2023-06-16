@@ -264,7 +264,7 @@ If you foresee an issue that may form part of the Frequently Asked Questions, th
 
 ---
 
-**Related FAQ**: <Link to="/docs/faqs/create-a-user-profile-for-another-person/">How Do I Create a User Profile for Another Person?</Link>
+**Related FAQ**: [How Do I Create a User Profile for Another Person?](/docs/faqs/create-a-user-profile-for-another-person/)
 
 ---
 

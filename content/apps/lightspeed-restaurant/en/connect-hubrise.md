@@ -35,7 +35,7 @@ Lightspeed Restaurant Bridge connects to a HubRise location. You must repeat the
 
 ---
 
-**Related FAQ**: <Link to="/docs/faqs/troubleshooting-failed-orders/">Why Are Some Orders Not Received Correctly on Lightspeed Restaurant?</Link>
+**Related FAQ**: [Why Are Some Orders Not Received Correctly on Lightspeed Restaurant?](/docs/faqs/troubleshooting-failed-orders/)
 
 ---
 
