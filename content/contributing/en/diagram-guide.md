@@ -1,6 +1,6 @@
 ---
 title: Diagram Guide
-position: 5
+position: 6
 layout: documentation
 meta:
   title: Diagram Guide | HubRise

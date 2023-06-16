@@ -1,6 +1,6 @@
 ---
 title: Reference Your Solution on HubRise
-position: 6
+position: 3
 layout: documentation
 meta:
   title: Reference Your Solution | HubRise

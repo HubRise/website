@@ -1,6 +1,6 @@
 ---
 title: How to Contribute
-position: 0
+position: 1
 layout: documentation
 meta:
   title: Contribution Guidelines | HubRise
