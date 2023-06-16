@@ -1,12 +1,9 @@
 import * as React from "react"
+import { AnchorHTMLAttributes } from "react"
 
 import Link from "@layouts/shared/components/Link"
 
-interface AProps {
-  href: string
-  [key: string]: any
-}
-
-const A = ({ href, ...otherProps }: AProps): JSX.Element => <Link to={href} {...otherProps} />
+const A = ({ href, ...otherProps }: AnchorHTMLAttributes<HTMLAnchorElement>): JSX.Element | null =>
+  href ? <Link to={href} {...otherProps} /> : null
 
 export default A

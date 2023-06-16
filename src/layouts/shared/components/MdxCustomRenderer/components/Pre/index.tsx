@@ -5,16 +5,14 @@ import HighlightCode from "./HighlightCode"
 
 interface PreProps {
   className?: string
-  children: {
-    props: {
-      children: string
-    }
-  }
+  children?: React.ReactNode
 }
 
-const Pre = ({ className, children }: PreProps): JSX.Element => {
+const Pre = ({ className, children }: PreProps): JSX.Element | null => {
+  if (!children) return null
+
   const language = className ? (className.split(`-`)[1] as Language) : undefined
-  return <HighlightCode language={language} code={children.props.children} />
+  return <HighlightCode language={language} code={(children as any).props.children} />
 }
 
 export default Pre

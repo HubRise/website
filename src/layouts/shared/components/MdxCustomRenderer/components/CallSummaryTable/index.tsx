@@ -40,7 +40,7 @@ const CallSummaryTable = ({ endpoint, shortEndpoint, accessLevel }: CallSummaryT
 
 export default CallSummaryTable
 
-const TableCell: React.FC = ({ children }) => {
+const TableCell = ({ children }: { children: React.ReactNode }) => {
   return (
     <Cell>
       <CellOuter>

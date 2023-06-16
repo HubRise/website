@@ -1,4 +1,4 @@
-import { TFunction } from "react-i18next"
+import type { UseTranslationResponse } from "react-i18next"
 
 import { ArchiveInfo } from "../interface"
 
@@ -10,7 +10,7 @@ function getArchiveInfoFromArticleDate(articleDate: Date): ArchiveInfo {
   }
 }
 
-export function getArchiveTitle(archiveInfo: ArchiveInfo, t: TFunction<"translation">): string {
+export function getArchiveTitle(archiveInfo: ArchiveInfo, t: UseTranslationResponse<any, any>["0"]): string {
   const monthList = t("misc.month_list")
   const { year, month, isCurrentYear } = archiveInfo
   return isCurrentYear ? `${monthList[month]} ${year}` : String(year)

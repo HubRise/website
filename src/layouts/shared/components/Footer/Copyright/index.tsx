@@ -5,7 +5,7 @@ import { LinkedInSVG, TwitterSVG } from "./svg"
 
 import logo from "@assets/images/logo_footer.png"
 
-const Copyright: React.FC = () => {
+const Copyright = (): JSX.Element => {
   const year = new Date(Date.now()).getFullYear()
 
   return (
