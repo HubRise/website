@@ -1,6 +1,6 @@
 ---
 title: Style Guide
-position: 1
+position: 2
 layout: documentation
 meta:
   title: Documentation Style Guide | HubRise
@@ -287,11 +287,11 @@ UI reference should be in bold and have the same capitalisation as the UI, excep
 
 For example:
 
-- Click **COMPLETED** <- This refers to the button. Since it is in all caps in the UI, it is all caps in the documentation.
+- Click **COMPLETED** ← This refers to the button. Since it is in all caps in the UI, it is all caps in the documentation.
 
 ![Screenshot of Click Completed](../images/002-en-click-completed-screenshot.png)
 
-- **Confirmed Time** <- This refers to the text.
+- **Confirmed Time** ← This refers to the text.
 
 ![Screenshot of Time Completed](../images/003-en-completed-time-screenshot.png)
 
