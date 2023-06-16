@@ -33,6 +33,9 @@ const config: GatsbyConfig = {
       resolve: "gatsby-plugin-mdx",
       options: {
         extensions: [".mdx", ".md"],
+        mdxOptions: {
+          remarkPlugins: [require("remark-gfm")],
+        },
         gatsbyRemarkPlugins: [
           {
             resolve: "gatsby-remark-images",
