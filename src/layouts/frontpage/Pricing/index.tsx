@@ -2,7 +2,7 @@ import * as React from "react"
 
 import { ActionButton, ActionLink, Actions, Content, Text } from "../shared/Styles"
 
-import { markdownToHtml } from "@utils/misc"
+import { markdownToHtml } from "@layouts/shared/utils/markdown"
 import Block from "@layouts/shared/components/Block"
 
 interface PricingProps {

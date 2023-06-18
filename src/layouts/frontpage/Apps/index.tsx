@@ -6,7 +6,7 @@ import { Content, Text } from "../shared/Styles"
 import { Item, ImageOver, ImageDefault, ImageLink } from "./Styles"
 
 import { ImageNode } from "@utils/image"
-import { markdownToHtml } from "@utils/misc"
+import { markdownToHtml } from "@layouts/shared/utils/markdown"
 import Block from "@layouts/shared/components/Block"
 
 interface AppsProps {

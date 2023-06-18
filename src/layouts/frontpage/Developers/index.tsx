@@ -4,7 +4,7 @@ import { Content, Text } from "../shared/Styles"
 
 import { MemberName, MemberPicture, TeamMember, TeamList } from "./Styles"
 
-import { markdownToHtml } from "@utils/misc"
+import { markdownToHtml } from "@layouts/shared/utils/markdown"
 import { ImageNode } from "@utils/image"
 import Block from "@layouts/shared/components/Block"
 
