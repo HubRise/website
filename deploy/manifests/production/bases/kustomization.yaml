@@ -1,8 +1,5 @@
 bases:
   - ../../bases
 
-patchesStrategicMerge:
-  - website/deployment-patch.yaml
-
 resources:
   - website/ingress.yaml
