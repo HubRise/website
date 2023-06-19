@@ -4,6 +4,7 @@ const config: GatsbyConfig = {
   flags: {
     DEV_SSR: false,
     FAST_DEV: true,
+    PARALLEL_SOURCING: true,
   },
   siteMetadata: {
     title: "HubRise",
@@ -27,7 +28,16 @@ const config: GatsbyConfig = {
       },
     },
     "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        // Used for gatsbyImageData and StaticImage
+        defaults: {
+          formats: ["auto"], // Defaults to ["auto", "webp"] which creates extra webp files for png and jpg images
+          placeholder: "none",
+        },
+      },
+    },
     "gatsby-plugin-image",
     {
       resolve: "gatsby-plugin-mdx",
@@ -38,12 +48,12 @@ const config: GatsbyConfig = {
         },
         gatsbyRemarkPlugins: [
           {
+            // Only applies to images in Markdown files.
             resolve: "gatsby-remark-images",
             options: {
               maxWidth: 870,
-              quality: 100,
-              linkImagesToOriginal: false,
-              srcSetBreakpoints: [435, 870, 1740],
+              linkImagesToOriginal: true,
+              srcSetBreakpoints: [870, 1740],
             },
           },
           "gatsby-remark-copy-linked-files",

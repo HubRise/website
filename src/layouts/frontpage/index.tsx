@@ -38,22 +38,22 @@ export const graphqlQuery = graphql`
     }
     apps: file(absolutePath: { glob: "**/content/images/frontpage/apps.png" }) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED)
+        gatsbyImageData(layout: CONSTRAINED, outputPixelDensities: [1, 2])
       }
     }
     appsHover: file(absolutePath: { glob: "**/content/images/frontpage/apps-hover.png" }) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED)
+        gatsbyImageData(layout: CONSTRAINED, outputPixelDensities: [1, 2])
       }
     }
     apiImage: file(absolutePath: { glob: "**/content/images/frontpage/api.png" }) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED)
+        gatsbyImageData(layout: CONSTRAINED, outputPixelDensities: [1, 2])
       }
     }
     documentationImage: file(absolutePath: { glob: "**/content/images/frontpage/documentation.png" }) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED)
+        gatsbyImageData(layout: CONSTRAINED, outputPixelDensities: [1, 2])
       }
     }
     teamImages: allFile(
@@ -65,7 +65,7 @@ export const graphqlQuery = graphql`
       nodes {
         base
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
+          gatsbyImageData(layout: CONSTRAINED, outputPixelDensities: [1, 2])
         }
       }
     }

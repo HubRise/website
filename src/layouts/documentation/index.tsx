@@ -96,7 +96,7 @@ export const graphqlQuery = graphql`
         name
         relativeDirectory
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
+          gatsbyImageData(layout: CONSTRAINED, outputPixelDensities: [1])
         }
       }
     }

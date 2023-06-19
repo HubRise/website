@@ -51,7 +51,7 @@ export const graphqlQuery = graphql`
     }
     bannerImage: file(absolutePath: { glob: $bannerImagePathGlob }) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+        gatsbyImageData(layout: CONSTRAINED, outputPixelDensities: [1, 2])
       }
     }
   }

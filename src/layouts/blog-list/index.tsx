@@ -55,7 +55,7 @@ export const graphqlQuery = graphql`
       nodes {
         absolutePath
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+          gatsbyImageData(layout: CONSTRAINED, outputPixelDensities: [1, 2])
         }
       }
     }
