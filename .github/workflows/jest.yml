@@ -17,9 +17,6 @@ jobs:
           node-version: 18.16.0
           cache: 'yarn'
 
-      - name: Install JS dependencies
-        run: yarn install
-
       - name: Jest test suite
         env:
           NODE_ENV: test

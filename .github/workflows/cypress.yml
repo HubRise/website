@@ -28,9 +28,6 @@ jobs:
             public
           key: gatsby-build-${{ hashFiles('./yarn.lock') }}
 
-      - name: Install JS dependencies
-        run: yarn install
-
       - name: Build the website
         run: yarn build
 
