@@ -51,6 +51,11 @@ Pour modifier le code ref d'un code promotionnel, suivez ces étapes :
    ![Associer les codes ref - Codes promo](../images/006-fr-dishop-code-promo.png)
 1. Modifiez le code ref du code promotionnel et cliquez sur le bouton **Enregistrer** pour sauvegarder.
 
+## Inventaire
+
+Dishop gère les inventaires et peut les synchroniser avec HubRise. 
+Pour un bon fonctionnement, il faut un code ref pour chaque produit. S'il n'y a pas d'intégration avec une solution de caisse, vous pouvez créer des codes refs aléatoires. 
+
 ## Méthodes de paiement
 
 Les méthodes de paiement dans HubRise correspondent aux modes de paiement dans Dishop. Selon les apps connectées à Dishop, les modes de paiement peuvent nécessiter un code ref. Référez-vous à la documentation des apps connectées sur le site de HubRise pour vérifier.
