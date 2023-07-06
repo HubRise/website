@@ -15,3 +15,4 @@ Le tableau suivant explique les termes spécifiques à Just Eat Takeaway.
 | --------- | ---------------------------------------------------------------------------------------- |
 | T-Connect | Dispositif portable doté d'une imprimante intégrée permettant de recevoir les commandes. |
 | Orderpad  | Application officielle de Just Eat qui permet de gérer les commandes entrantes.          |
+| Live Orders | Application Web de Just Eat, utilisée en secours pour recevoir les commandes.            |
