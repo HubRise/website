@@ -1,8 +1,9 @@
 import * as React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faTimes } from "@fortawesome/free-solid-svg-icons"
 
 import { StyledClose } from "./Styles"
+
+import { iconSizes } from "@utils/styles"
+import Icon from "@layouts/shared/components/Icon"
 
 interface CloseProps {
   onClick: () => void
@@ -16,7 +17,7 @@ const Close = ({ onClick }: CloseProps): JSX.Element => {
 
   return (
     <StyledClose onClick={handleClick}>
-      <FontAwesomeIcon icon={faTimes} />
+      <Icon code="close" size={iconSizes._32} />
     </StyledClose>
   )
 }

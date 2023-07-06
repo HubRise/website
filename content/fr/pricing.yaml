@@ -5,7 +5,7 @@ meta:
 content:
   hero:
     title: Un tarif accessible, pas d'engagement
-  offer:
+  plan:
     pricing:
       chunk_1: 25€ HT / mois
       chunk_2: par point de vente
@@ -16,7 +16,7 @@ content:
     link:
       text: Démarrer maintenant
       to: https://manager.hubrise.com/signup
-  specials:
+  infos:
     - highlight: "Inscription gratuite :"
       text: Sans frais et sans carte bancaire.
       link:
@@ -28,6 +28,3 @@ content:
     - highlight: "Dark kitchen :"
       text: Des frais additionnels peuvent s'appliquer.
       button: Nous contacter
-  faq:
-    text: Voir notre F.A.Q. concernant l'abonnement
-    to: /faq#abonnement

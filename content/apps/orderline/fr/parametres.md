@@ -10,7 +10,7 @@ meta:
 La section Paramètres vous permet de personnaliser OrderLine selon vos besoins. Vous pouvez modifier l'affichage et le fonctionnement d'OrderLine depuis le menu **Paramètres**. Pour accéder à la section Paramètres, sélectionnez l'icône en forme de roue dentée <InlineImage width="20" height="20">![Icône des paramètres d'OrderLine](../images/035-settings.jpg)</InlineImage> dans le coin supérieur droit.
 
 <video controls title="OrderLine Access Settings">
-  <source src="../images/031-en-access-settings.webm" type="video/webm"/>
+  <source src="../images/031-en-access-settings.webm" type="video/webm" />
 </video>
 
 Le menu **Paramètres** comporte les options suivantes :
@@ -63,7 +63,7 @@ Pour définir l'enchaînement des statuts, procédez comme suit :
 Dans l'exemple qui suit, le statut **Échec livraison** est ajouté en tant que prochain statut possible pour le statut **En livraison**.
 
 <video controls title="OrderLine Set Status Flow Example">
-  <source src="../images/011-en-set-status-flow.webm" type="video/webm"/>
+  <source src="../images/011-en-set-status-flow.webm" type="video/webm" />
 </video>
 
 ## Saisies complémentaires
@@ -84,7 +84,7 @@ Pour que OrderLine propose de mettre à jour de l'**heure de livraison** lorsqu'
 Les indications qui suivent montrent comment ajouter une invite d'heure de livraison lorsqu'une commande passe en statut **En livraison**.
 
 <video controls title="OrderLine in Delivery Prompt">
-  <source src="../images/012-en-add-prompt-in-delivery.webm" type="video/webm"/>
+  <source src="../images/012-en-add-prompt-in-delivery.webm" type="video/webm" />
 </video>
 
 OrderLine peut vous demander la saisie optionnelle d'un commentaire lorsqu'une commande passe dans un statut prédéfini. Pour afficher une invite de saisie d'un commentaire, procédez comme suit :
@@ -95,7 +95,7 @@ OrderLine peut vous demander la saisie optionnelle d'un commentaire lorsqu'une c
 Dans l'exemple qui suit, l'utilisateur est invité à saisir un commentaire lorsque les commandes passent en statut **TERMINÉE**.
 
 <video controls title="OrderLine Prompt Comment Example">
-  <source src="../images/013-en-add-prompt-user-comment.webm" type="video/webm"/>
+  <source src="../images/013-en-add-prompt-user-comment.webm" type="video/webm" />
 </video>
 
 ## Masquer les commandes
@@ -110,7 +110,7 @@ Pour masquer des commandes dans la liste **Aujourd'hui**, procédez comme suit 
 L'exemple qui suit montre comment masquer les commandes ayant le statut **Terminée**.
 
 <video controls title="OrderLine Status Hide Example">
-  <source src="../images/015-en-setting-hidden-completed.webm" type="video/webm"/>
+  <source src="../images/015-en-setting-hidden-completed.webm" type="video/webm" />
 </video>
 
 ## Notifications
@@ -132,7 +132,7 @@ Certaines mélodies ont une sonorité plus aiguë que d'autres. Choisissez la to
 Pour voir un exemple de paramétrage des notifications, consultez la vidéo suivante.
 
 <video controls title="OrderLine Set Notifications Settings Examples">
-  <source src="../images/025-en-settings-notifications.webm" type="video/webm"/>
+  <source src="../images/025-en-settings-notifications.webm" type="video/webm" />
 </video>
 
 ## Impression
@@ -172,7 +172,7 @@ Pour ajouter votre imprimante à votre compte Google, procédez comme suit :
 1. Pour vérifier que votre imprimante est bien enregistrée, accédez à [https://www.google.com/cloudprint](https://www.google.com/cloudprint) et cliquez sur **Imprimantes**.
 
 <video controls title="OrderLine Add Google Cloud Printer">
-  <source src="../images/026-en-add-google-cloud-printer.webm" type="video/webm"/>
+  <source src="../images/026-en-add-google-cloud-printer.webm" type="video/webm" />
 </video>
 
 Si vous souhaitez configurer les paramètres de Google Cloud Print, rendez-vous dans [https://www.google.com/cloudprint](https://www.google.com/cloudprint).
@@ -189,7 +189,7 @@ Une fois la procédure d'inscription de votre imprimante à Google Cloud Print t
 1. Google vous demandera d'octroyer l'accès de HubRise à votre périphérique Google Cloud Print. Cliquez sur **Autoriser** pour accomplir la procédure.
 
 <video controls title="OrderLine Grant HubRise Google Printer Access">
-  <source src="../images/027-en-register-google-cloud-printer.webm" type="video/webm"/>
+  <source src="../images/027-en-register-google-cloud-printer.webm" type="video/webm" />
 </video>
 
 Une fois que vous avez accordé à HubRise l'autorisation d'utiliser votre périphérique Google Cloud Print, configurez l'impression automatique. Pour cela, procédez comme suit :
@@ -198,5 +198,5 @@ Une fois que vous avez accordé à HubRise l'autorisation d'utiliser votre péri
 1. Dans la liste déroulante, choisissez d'imprimer à partir de votre imprimante connectée à internet.
 
 <video controls title="Orderline Set Automatic Printing">
-  <source src="../images/028-en-setting-automatic-printer.webm" type="video/webm"/>
+  <source src="../images/028-en-setting-automatic-printer.webm" type="video/webm" />
 </video>

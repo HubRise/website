@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { breakpoints, colors, mixin, zIndexValues } from "@utils/styles"
+import { breakpoints, colors, fontSizes, mixin, sizes, zIndexValues } from "@utils/styles"
 
 export const Overlay = styled.div`
   position: fixed;
@@ -16,49 +16,36 @@ export const Overlay = styled.div`
 `
 
 export const StyledModal = styled.div`
-  width: 600px;
+  width: 100vw;
   padding: 2.5rem;
-  border-radius: 3px;
-  border: none;
+  border-radius: ${sizes.borderRadius};
   background: #f5f5f5;
   z-index: ${zIndexValues.modal};
   position: relative;
 
-  @media (max-width: ${breakpoints.medium}) {
-    max-width: 100vw;
+  @media (min-width: ${breakpoints.medium}) {
+    max-width: 50rem;
     margin: 0 auto;
-    height: auto;
-    min-height: auto;
   }
 `
 
 export const Title = styled.h5`
-  color: ${colors.darkGray};
-  font-weight: bold;
-  font-size: 1.125rem;
-  margin-bottom: 0;
+  color: ${colors.textDarkest};
+  font-weight: 700;
+  font-size: ${fontSizes._24};
+  margin-bottom: 1rem;
 `
 
 export const CloseButton = styled.button`
   position: absolute;
   right: 0;
   top: 0;
-  background: ${colors.primary};
-  border-radius: 0 2px 0 0;
-  width: 30px;
-  height: 30px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0 ${sizes.borderRadius} 0 ${sizes.borderRadius};
   color: ${colors.white};
-  text-align: center;
-  font-size: 2em;
-  line-height: 1;
-  cursor: pointer;
-
+  background-color: ${colors.primary};
   ${mixin.linkOver(colors.white)};
-`
-
-export const CloseButtonIcon = styled.i`
-  font-size: 1.3rem;
-  top: 4px;
-  position: absolute;
-  right: 6px;
+  cursor: pointer;
+  ${mixin.centerElement};
 `

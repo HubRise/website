@@ -64,7 +64,7 @@ const Gallery = ({ imageMap, title }: GalleryProps): JSX.Element => {
   }, [isSliderVisible])
 
   return (
-    <div className="section__content">
+    <>
       <ImageSlider isVisible={isSliderVisible} onClick={() => setIsSliderVisible(false)}>
         <Topbar onClick={(e) => e.stopPropagation()}>
           <Title>{title}</Title>
@@ -96,7 +96,7 @@ const Gallery = ({ imageMap, title }: GalleryProps): JSX.Element => {
           </ImageGridItem>
         ))}
       </ImageGrid>
-    </div>
+    </>
   )
 }
 

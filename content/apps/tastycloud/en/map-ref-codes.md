@@ -56,15 +56,15 @@ Follow the instructions in the previous section. In the **Mapping des produits**
 
 ## Discounts (Promotions)
 
-Promotions in TastyCloud are called discounts in HubRise. Discounts cannot be mapped on TastyCloud, which means that they are sent to HubRise without a ref code. This may create issues with some EPOS systems. Refer to your connected EPOS documentation on the HubRise website to verify if this works for you, or contact TastyCloud support.
+Promotions in TastyCloud are called discounts in HubRise. Discounts cannot be mapped on TastyCloud, which means that they are sent to HubRise without a ref code. This may create issues with some EPOS systems. Refer to your EPOS documentation on the HubRise website to verify if this works for you, or contact TastyCloud support.
 
 ## Payment Methods
 
-TastyCloud offers various payment methods, including cash and online payment. TastyCloud informs HubRise of the selected payment method, but it does not specify the corresponding ref code required by some EPOS. Refer to your connected EPOS documentation on the HubRise website to verify if this works for you, or contact TastyCloud support.
+TastyCloud offers various payment methods, including cash and online payment. TastyCloud informs HubRise of the selected payment method, but it does not specify the corresponding ref code required by some EPOS. Refer to your EPOS documentation on the HubRise website to verify if this works for you, or contact TastyCloud support.
 
 ## Service Types
 
-Service Types such as Delivery, Collection or Eat in are supported. TastyCloud does not associate ref codes to service types, but this might be required for certain EPOS systems. Refer to your connected EPOS documentation on the HubRise website to verify if this works for you, or contact TastyCloud support.
+Service Types such as Delivery, Collection or Eat in are supported. TastyCloud does not associate ref codes to service types, but this might be required for certain EPOS systems. Refer to your EPOS documentation on the HubRise website to verify if this works for you, or contact TastyCloud support.
 
 ## Charges
 

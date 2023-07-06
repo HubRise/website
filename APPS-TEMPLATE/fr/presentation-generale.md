@@ -37,6 +37,8 @@ app_info:
 
 SOLUTION est un logiciel de caisse sous Windows / iPad / tablette / etc.
 
+SOLUTION est conforme à la loi française anti-fraude 2018.
+
 ## Fonctionnalités de l'intégration
 
 Connecter SOLUTION à HubRise permet à votre [logiciel de caisse] de :
@@ -63,7 +65,7 @@ SOLUTION peut être connecté à HubRise depuis le back-office de HubRise ou cel
 
 ## Pourquoi se connecter ?
 
-En connectant SOLUTION à HubRise, vous permettez à votre [logiciel de caisse] de communiquer avec les autres applications que vous utilisez de manière quotidienne. Recevez les commandes provenant de votre solution de commande en ligne, ou des plateformes de livraison de repas sur votre logiciel de caisse. Envoyez les commandes en ligne vers votre votre [logiciel de caisse], vers une imprimante autonome, un écran cuisine, ou votre système de gestion de stock. Exportez votre menu vers d'autres applications.
+En connectant SOLUTION à HubRise, vous permettez à votre [logiciel de caisse] de communiquer avec les autres applications que vous utilisez de manière quotidienne. Recevez les commandes provenant de votre solution de commande en ligne ou des plateformes de livraison de repas sur votre logiciel de caisse. Envoyez les commandes en ligne vers votre [logiciel de caisse], vers une imprimante autonome, un écran cuisine ou votre système de gestion de stock. Envoyez votre [menu / catalogue produit] vers d'autres applications.
 
 Grâce à HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes avec votre logiciel de caisse, votre solution de commande en ligne, les plateformes de livraison de repas (dont Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs ou de services de livraison, les solutions eMarketing (SMS / eMailing), business intelligence, systèmes de gestion de stock et de fidélisation client, et bien d'autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, consultez notre [page Apps](/apps).
 

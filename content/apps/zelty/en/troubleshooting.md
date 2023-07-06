@@ -22,7 +22,7 @@ If the connection is not enabled, follow steps in [Connect to Locations](/apps/z
 
 Ensure also that your Zelty connection is visible in HubRise through the following steps:
 
-1. Log in to your HubRise Account.
+1. Log in to your [HubRise account](https://manager.hubrise.com).
 1. Navigate to **CONNECTIONS**.
 1. Verify that the connection to Zelty has been enabled for your location.
 1. Open the **Actions** dropdown and select **View logs** or **View activity** to see transactions between the Zelty and HubRise. For a detailed description on how to read and troubleshoot JSON requests in HubRise, see [Understanding Logs in HubRise](/docs/hubrise-logs).

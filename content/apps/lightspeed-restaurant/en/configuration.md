@@ -14,7 +14,7 @@ These are divided into different sections for an easier navigation.
 
 ## Language
 
-From this section, you can decide which language is used to localise your receipts.
+Choose the language to use for generic items such as `Delivery charge`. These names may appear in customer receipts.
 
 ## Catalog
 
@@ -30,7 +30,7 @@ By default, Lightspeed Restaurant Bridge does not pull Lightspeed sales into Hub
 
 ## Save the Configuration
 
-Once you are happy with the configuration of Lightspeed Restaurant Bridge, click **Save** at the top of the page to go back to the Operations page.
+Once you are happy with the configuration of Lightspeed Restaurant Bridge, click **Save** at the top of the page to go back to the **Latest operatins** page.
 
 ## Reset the Configuration
 

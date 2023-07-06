@@ -29,6 +29,7 @@ export function mergePaths(...paths: Array<string>): string {
     paths
       .map((path) => path.replace(/(^\/)|(\/$)/g, ""))
       .filter((path) => path.length > 0)
-      .join("/")
+      .join("/") +
+    "/"
   )
 }

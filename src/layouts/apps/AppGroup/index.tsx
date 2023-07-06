@@ -16,6 +16,7 @@ import {
 
 import { generateKey } from "@utils/misc"
 import { ImageNode } from "@utils/image"
+import Block from "@layouts/shared/components/Block"
 
 interface AppSectionProps {
   title: string
@@ -39,9 +40,7 @@ const App = ({
   const { t } = useTranslation()
 
   return (
-    <section className="section section__center">
-      {showTitle && <h3 className="section__title">{title}</h3>}
-
+    <Block backgroundColor="none" title={showTitle ? title : undefined}>
       <Group>
         {apps.map((app, idx) => {
           const logo = logoNodes.find(({ base }) => base === app.logo)
@@ -73,7 +72,7 @@ const App = ({
           </AppBoxStatic>
         )}
       </Group>
-    </section>
+    </Block>
   )
 }
 

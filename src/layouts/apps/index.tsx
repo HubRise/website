@@ -33,7 +33,7 @@ export const graphqlQuery = graphql`
       nodes {
         base
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
+          gatsbyImageData(layout: CONSTRAINED, outputPixelDensities: [1])
         }
       }
     }

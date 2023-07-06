@@ -15,7 +15,7 @@ export const getLocaleCodeFromAbsolutePath = (absolutePath: string): LocaleCode 
   return pathItems[pathItems.length - 2] as LocaleCode
 }
 
-export const getLocale = (localeCode: string): string => {
+export const getLocale = (localeCode: LocaleCode): string => {
   return LocaleMapping[localeCode]
 }
 

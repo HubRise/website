@@ -2,7 +2,7 @@ import * as React from "react"
 
 import { Container, Description, Image, Title, Text, TextContainer, TextWrapper, Button } from "./Styles"
 
-import { markdownToHtml } from "@utils/misc"
+import { markdownToHtml } from "@layouts/shared/utils/markdown"
 
 interface HeroProps {
   title: string

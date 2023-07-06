@@ -1,45 +1,88 @@
 import { css, FlattenSimpleInterpolation } from "styled-components"
 
-export const colors = {
-  primary: "#6db24f",
-
-  darkGray: "#333",
-  gray: "#555",
-  lightGray: "#777",
-  silverGray: "#ccc",
-  white: "#fff",
-}
-
 export const sizes = {
+  maxWidth: "75rem",
   headerHeight: "5rem",
 
-  rowPadding: "7.5rem",
-  blockPadding: "4.688rem",
+  blockVerticalPadding: "4.688rem",
+  blockHorizontalPadding: "7.5rem",
+
+  // Horizontal padding for mobile devices
+  mobilePadding: "0.625rem",
+  // Horizontal padding for desktop devices
+  desktopPadding: "0.9375rem",
+
+  borderRadius: "3px",
 }
 
-export const zIndexValues = {
-  header: 10,
-  mobileBarBackdrop: 20,
-  mobileBarMenu: 30,
-  slideshow: 100,
-  modalOverlay: 150,
-  modal: 200,
+export const fontSizes = {
+  _12: ".75rem",
+  _14: ".875rem",
+  _16: "1rem",
+  _18: "1.125rem",
+  _24: "1.5rem",
+  _32: "2rem",
+  _42: "2.625rem",
+}
+
+export const iconSizes = {
+  _14: 14,
+  _20: 20,
+  _25: 25,
+  _32: 32,
+  _50: 50,
+  _64: 64,
+}
+
+export const lineHeights = {
+  text: "1.6",
+  textCompact: "1.3",
+  title: "1.25",
 }
 
 export const breakpoints = {
   medium: "40rem",
   large: "64rem",
-  xLarge: "75rem",
-  xxLarge: "90rem",
+  documentationStickyMenu: "64rem",
+  blogStickyMenu: "40rem",
+  burgerMenu: "75rem",
+}
+
+export const colors = {
+  primary: "#6db24f",
+  danger: "#e13c3c",
+  warning: "#fcfaed",
+  white: "#fff",
+
+  textDarkest: "#333",
+  textDark: "#555",
+  textMedium: "#777",
+  textLight: "#999",
+  textLighter: "#ccc",
+
+  backgroundDark: "#555",
+  backgroundLight: "#efefef",
+  backgroundWhite: "#fff",
+
+  // borderMedium: "#ccc",
+  borderLight: "#e0e0e0",
+  // borderLightest: "#f8f8f8",
+  borderInputFocus: "#555",
+}
+
+export const boxShadows = {
+  small: `0 3px 3px rgba(0, 0, 0, 0.05)`,
+  medium: `0 5px 10px rgba(0, 0, 0, 0.1)`,
+  large: `5px 10px 15px rgba(0, 0, 0, 0.15)`,
 }
 
 export const mixin = {
   button: css`
-    padding: 0.4em 1.5em;
-    font-size: 0.9375rem;
+    padding: 0.4rem 1.5rem;
     text-transform: uppercase;
+    font-size: ${fontSizes._16};
     font-weight: 500;
-    border-radius: 3px;
+    border-radius: ${sizes.borderRadius};
   `,
   buttonOver: (color: string, backgroundColor: string): FlattenSimpleInterpolation => css`
     transition: color 0.2s ease, background-color 0.2s ease;
@@ -49,43 +92,72 @@ export const mixin = {
       background-color: ${backgroundColor};
     }
   `,
+  centerElement: css`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  `,
   clickable: css`
     cursor: pointer;
     user-select: none;
   `,
   container: css`
     max-width: 96%;
-    width: 1200px;
+    width: ${sizes.maxWidth};
     margin: 0 auto;
   `,
-  dotSeparatedList: (gap: string): FlattenSimpleInterpolation => css`
-    display: inline;
+  dotSeparatedList: (gap: string, color = colors.textLighter): FlattenSimpleInterpolation => css`
+    display: flex;
+    align-items: center;
   
     &:not(:last-child) {
-        margin-right: ${gap};
-    
+      margin-right: ${gap};
+      
       &:after {
           content: "●";
-          display: inline;
           margin-left: ${gap};
-          bottom: 0.15em;
-          font-size: 0.75rem;
-          color: ${colors.silverGray};
+          font-size: ${fontSizes._12};
+          color: ${color};
         }
       }
     }
   `,
-  headerStyle: css`
-    height: ${sizes.headerHeight};
-    z-index: ${zIndexValues.header};
-    background-color: ${colors.white};
-    border-bottom: 3px solid ${colors.primary};
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  expandBefore: ({ width, color }: { width: string; color: string }): FlattenSimpleInterpolation => css`
+    :before {
+      content: "";
+      background-color: ${color};
+      position: absolute;
+      right: 100%;
+      width: ${width};
+      height: 100%;
+      top: 0;
+    }
+  `,
+  expandAfter: ({ width, color }: { width: string; color: string }): FlattenSimpleInterpolation => css`
+    :after {
+      content: "";
+      background-color: ${color};
+      position: absolute;
+      left: 100%;
+      width: ${width};
+      height: 100%;
+      top: 0;
+    }
   `,
   linkOver: (color: string): FlattenSimpleInterpolation => css`
     transition: color 0.2s ease;
-    &:hover {
+    :hover {
       color: ${color};
     }
   `,
+}
+
+export const zIndexValues = {
+  header: 10,
+  mobileBarBackdrop: 20,
+  mobileBarMenu: 30,
+  slideshow: 100,
+  modalOverlay: 150,
+  modal: 200,
+  toast: 300,
 }

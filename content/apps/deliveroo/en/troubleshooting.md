@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-position: 8
+position: 9
 layout: documentation
 meta:
   title: Troubleshooting | Deliveroo Bridge | HubRise
@@ -30,9 +30,9 @@ This error is a bug in Deliveroo that they are working on. The temporary workaro
 To create a new menu, follow these steps:
 
 - In Deliveroo Bridge, open the **Configuration** tab.
-- In the **Menu** section, choose a new name for the **Menu ID**. This name must be different from the name of the menu that caused the error.
+- In the **Catalog** section, choose a new name for the **Menu ID**. This name must be different from the name of the menu that caused the error.
 - Click **Save**.
-- Open the **Actions** tab and publish the menu.
+- Open the **Actions** tab to publish the catalog.
 
 If you are still having issues after attempting the workaround, contact [support@hubrise.com](mailto:support@hubrise.com).
 
@@ -50,4 +50,4 @@ To solve the issue, make sure that all the products in your Deliveroo menu have 
 
 When auto-accept is not enabled, every order needs to be accepted manually on the Deliveroo tablet, otherwise it will be rejected by Deliveroo and not received on HubRise.
 
-To avoid this, we recommend to [enable auto-accept](/apps/deliveroo/faqs/auto-accept).
+To avoid this, we recommend enabling auto-accept. For more information, see [How Can I Abandon the Deliveroo Tablet?](/apps/deliveroo/faqs/abandon-deliveroo-tablet).

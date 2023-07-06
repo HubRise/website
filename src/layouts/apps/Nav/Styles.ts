@@ -6,9 +6,8 @@ import { colors, mixin, sizes, zIndexValues } from "@utils/styles"
 export const StyledNav = styled.div<{ $isSticky: boolean }>`
   position: sticky;
   top: ${sizes.headerHeight};
-  z-index: ${zIndexValues.mobileBarMenu};
+  z-index: ${zIndexValues.header};
   padding: 0.5rem 0;
-  transition: background-color, color 0.3s;
 
   ${(props) =>
     props.$isSticky &&
@@ -25,32 +24,17 @@ export const List = styled.ul`
   justify-content: center;
 `
 
-export const Item = styled.li`
-  ${mixin.dotSeparatedList("0.5rem")};
+export const Item = styled.li<{ $isSticky: boolean }>`
+  ${({ $isSticky }) => mixin.dotSeparatedList("0.5rem", $isSticky ? colors.white : undefined)};
   line-height: 2rem;
 `
 
-export const StyledLink = styled(Link)<{ $isSticky: boolean; $isActive: boolean }>`
-  ${(props) =>
-    props.$isActive &&
-    css`
-      text-decoration: underline;
-    `}
+export const StyledLink = styled(Link)<{ $isActive: boolean; $isSticky: boolean }>`
+  color: ${({ $isActive, $isSticky }) => ($isSticky ? colors.white : $isActive ? colors.primary : colors.textDark)};
+  text-decoration: ${({ $isActive }) => ($isActive ? "underline" : "none")};
 
-  ${({ $isSticky, $isActive }) =>
-    $isSticky
-      ? css`
-          color: ${$isActive ? colors.white : "#eee"};
-
-          :hover {
-            color: ${colors.white};
-          }
-        `
-      : css`
-          color: ${$isActive ? colors.primary : colors.gray};
-
-          :hover {
-            color: ${colors.primary};
-          }
-        `}
+  :hover {
+    color: ${({ $isSticky }) => ($isSticky ? colors.white : colors.primary)};
+    text-decoration: underline;
+  }
 `

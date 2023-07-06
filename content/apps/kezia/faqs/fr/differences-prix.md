@@ -3,7 +3,7 @@ title: Comment Kezia II traite les différences de prix ?
 position: 2
 layout: documentation
 meta:
-  title: Différences de prix | Kezia II F.A.Q. | HubRise
+  title: Différences de prix | FAQs Kezia II | HubRise
   description: Comment Kezia II traite les différences de prix dans les commandes venant de HubRise.
 ---
 

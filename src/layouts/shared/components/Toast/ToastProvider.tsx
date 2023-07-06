@@ -5,7 +5,7 @@ import Toast from "./Toast"
 import { IToast } from "./helpers"
 import { ToastGroup } from "./Styles"
 
-const ToastProvider: React.FC = ({ children }) => {
+const ToastProvider = ({ children }: { children: React.ReactNode }): JSX.Element => {
   const [toasts, setToasts] = React.useState<Array<IToast>>([])
 
   const addToast: ToastAdder = React.useCallback(

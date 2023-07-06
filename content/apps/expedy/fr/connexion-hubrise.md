@@ -33,7 +33,7 @@ Pour connecter votre imprimante Expedy à HubRise, suivez les étapes suivantes 
 Pour tester la connexion entre Expedy et HubRise, utilisez une application connectée au même point de vente HubRise pouvant envoyer des commandes vers HubRise. Il peut s'agir par exemple d'une solution de commande en ligne ou de votre logiciel de caisse.
 
 1. Passez une commande depuis l'application.
-1. Vérifiez que la commande a bien été envoyée vers HubRise. Dans votre espace HubRise, dans le menu latéral, sélectionnez **DONNÉES** > **COMMANDES**. La commande doit apparaître dans la liste des commandes.
+1. Vérifiez que la commande a bien été envoyée vers HubRise. Dans le back-office de HubRise, dans le menu latéral, sélectionnez **DONNÉES** > **COMMANDES**. La commande doit apparaître dans la liste des commandes.
 1. Depuis la page d'accueil de votre back-office Expedy, cliquez sur **Imprimantes**.
 1. Cliquez sur le nom de l'imprimante concernée.
 1. Défilez vers le bas jusqu'à la section **10 dernières requêtes API**.
@@ -43,12 +43,15 @@ En cas de besoin, l'équipe de support de Expedy peut vous venir en aide. Pour l
 
 ## Donner accès au support de Expedy
 
-Il est conseillé de donner à l'équipe de support de Expedy l'accès à votre compte HubRise. En cas de besoin, ils pourront ainsi vous venir en aide. Pour cela, suivez les étapes suivantes :
+Pour faciliter la prise en charge de vos demandes de support, nous vous recommandons de donner accès à votre compte HubRise à l'éditeur de la solution Expedy.
 
-1. Depuis votre espace HubRise, sélectionnez **CONFIGURATION** > **COMPTES** dans le menu de gauche. La liste de vos comptes s'affiche.
-1. Sélectionnez le compte auquel votre point de vente est rattaché.
-1. Dans la section **Points de vente**, sélectionnez votre point de vente.
-1. Dans la section **Permissions**, ajoutez *support@expedy.fr* en sélectionnant l'option **Manager** (et non **Admin**) dans la liste déroulante des rôles, puis cliquez sur l'icône _+_. L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre point de vente, le partage de mot de passe étant déconseillé pour des raisons de sécurité.
+Pour donner accès à Expedy, procédez comme suit :
+
+1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
+1. Dans la section **Permissions**, ajoutez support@expedy.fr en sélectionnant l'option **Manager** dans la liste déroulante des rôles.
+1. Cliquez sur l'icône **+** pour ajouter le nouvel utilisateur.
+
+L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre point de vente. Le partage de mot de passe est déconseillé pour des raisons de sécurité.
 
 ## Déconnecter Expedy
 

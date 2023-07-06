@@ -27,7 +27,7 @@ Synapsy is an operations management solution for food catering professionals and
 
 For more flexibility, data can be accessed from anywhere, on any device.
 
-Founded in 2005 as an EPOS software publisher, Synapsy is LNE certified, and therefore complies with the January 2018 French "anti-fraud" regulations.
+Founded in 2005 as an EPOS software publisher, Synapsy is LNE certified, and therefore complies with the 2018 French Anti-Fraud Act.
 
 ## Integration Features
 

@@ -1,5 +1,5 @@
 ---
-title: Usage
+title: Usage and Plans
 position: 9
 layout: documentation
 meta:
@@ -34,14 +34,14 @@ During the test phase prior to launch, you can request a free plan with an exten
 
 ## Plan Notifications
 
-When there is an issue with a plan, Users with Admin permission to the Account or the related Location receive an email. A notification will also display when they log in to HubRise.
+When there is an issue with a plan, Users with Admin permission to the Account or the related Location receive an email. A notification will also appear in the HubRise back office.
 
 Notifications in the HubRise back office can be displayed for any reason involving payments or plan issues, such as:
 
 - A Location has exceeded its free transactions limits and no payment method is saved in HubRise.
 - The credit card has expired and you need to update it.
 - The credit card could not be processed after a couple of automated payment attempts. For safety reasons, your bank might require you to enter the 3-digit security code again.
-- The credit card has been saved in HubRise for payments but outstanding quotes have not been paid. For more information, see [Process Pending Quotes](/docs/payment/#process-pending-quotes).
+- The credit card has been saved in HubRise for payments but outstanding Requests for Payment have not been paid. For more information, see [Process Requests for Payment](/docs/payment/#process-requests-for-payment).
 
 If a payment notification appears, click the link and follow the instructions to resolve the issue. For more information on available plans, see [Usage Plans](#usage-plans).
 
@@ -49,7 +49,7 @@ If a payment notification appears, click the link and follow the instructions to
 
 ---
 
-**IMPORTANT NOTE**: When there is a payment issue, Admin users receive an email notification, and a message is displayed in the HubRise back office. Failing a response within two weeks, the HubRise Account, or the related Location, are automatically suspended.
+**IMPORTANT NOTE**: When there is a payment issue, Admin users receive an email notification, and a notification is displayed in the HubRise back office. Failing a response within two weeks, the HubRise Account, or the related Location, are automatically suspended.
 
 ---
 

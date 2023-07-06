@@ -24,7 +24,7 @@ In this section, you can specify the metadata fields to map. You must ensure tha
 
 ### Charges
 
-If charges apply, a ref code might be required. Refer to your connected EPOS documentation on the HubRise website to verify.
+If charges apply, a ref code might be required. Refer to your EPOS documentation on the HubRise website to verify.
 
 In this section, you can specify the ref code for delivery charges applied to orders.
 
@@ -36,7 +36,7 @@ To update prices of existing products, tick the **Update prices of existing prod
 
 ## Save the Configuration
 
-Once you are happy with the configuration of WooCommerce Bridge, click **Save** at the top of the page to go back to the Operations page.
+Once you are happy with the configuration of WooCommerce Bridge, click **Save** at the top of the page to go back to the **Latest operatins** page.
 
 ## Reset the Configuration
 

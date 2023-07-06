@@ -1,10 +1,11 @@
 import * as React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-import { Container, Description, Title, Image } from "./Styles"
+import { Content, ImageWithMargin, Text } from "../shared/Styles"
 
 import { ImageNode } from "@utils/image"
-import { markdownToHtml } from "@utils/misc"
+import { markdownToHtml } from "@layouts/shared/utils/markdown"
+import Block from "@layouts/shared/components/Block"
 
 interface ApiProps {
   title: string
@@ -13,21 +14,29 @@ interface ApiProps {
 }
 
 const Api = ({ title, description, image }: ApiProps): JSX.Element => {
-  return (
-    <section className="frontpage__row frontpage__row_oneside">
-      <div className="frontpage__row_oneside__in frontpage__row_oneside__in_left">
-        <Container>
-          <div>
-            <Title>{title}</Title>
-            <Description dangerouslySetInnerHTML={{ __html: markdownToHtml(description) }} />
-          </div>
+  const side = (
+    <ImageWithMargin>
+      <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt="API" />
+    </ImageWithMargin>
+  )
 
-          <Image>
-            <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt="API" />
-          </Image>
-        </Container>
-      </div>
-    </section>
+  return (
+    <Block
+      backgroundColor="white"
+      verticalSpacing="small"
+      padding="small"
+      beforeExpansion={true}
+      afterExpansion={false}
+      title={title}
+      side={side}
+      sidePosition="right"
+      horizontalAlign="centerOnMobile"
+      desktopVerticalAlign="center"
+    >
+      <Content>
+        <Text $backgroundColor="white" dangerouslySetInnerHTML={{ __html: markdownToHtml(description) }} />
+      </Content>
+    </Block>
   )
 }
 

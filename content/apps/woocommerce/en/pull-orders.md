@@ -7,7 +7,9 @@ meta:
   description: Find out the technical details of how orders are pulled from WooCommerce into HubRise, which fields are passed and which are not.
 ---
 
-Connecting WooCommerce to HubRise allows you to receive orders directly in your EPOS. This page describes the information that HubRise receives from WooCommerce for your orders.
+Connecting WooCommerce to HubRise allows you to receive orders directly in your EPOS or any other solution connected to your HubRise account.
+
+This page describes the information that HubRise receives from WooCommerce for your orders.
 
 ## Items and Options
 
@@ -17,33 +19,41 @@ Customers' comments on single products are not supported on WooCommerce. If you 
 
 ## Order Statuses
 
-New WooCommerce orders are created on HubRise with status `new`.
+---
 
-Order status changes in WooCommerce trigger a status change in HubRise according to the following rules:
+**IMPORTANT NOTE:** In this section, we capitalise the first letter of WooCommerce statuses to make them easier to distinguish from HubRise status names. For example, `Processing` is a WooCommerce status, while `accepted` is a HubRise status.
 
-| WooCommerce status change | Corresponding HubRise status |
-| ------------------------- | ---------------------------- |
-| processing                | accepted                     |
-| completed                 | completed                    |
-| cancelled                 | cancelled                    |
-| refunded                  | cancelled                    |
-| failed                    | rejected                     |
-| trash                     | cancelled                    |
+---
 
-Conversely, order status changes in HubRise trigger a status change in WooCommerce according to the following rules:
+### When the Status Changes in HubRise
 
-| HubRise status change | Corresponding WooCommerce status |
-| --------------------- | -------------------------------- |
-| received              | pending                          |
-| accepted              | processing                       |
-| in_preparation        | processing                       |
-| awaiting_shipment     | processing                       |
-| awaiting_collection   | processing                       |
-| in_delivery           | processing                       |
-| completed             | completed                        |
-| rejected              | failed                           |
-| cancelled             | cancelled                        |
-| delivery_failed       | failed                           |
+When the order status changes in HubRise, the status in WooCommerce changes according to the following correspondence:
+
+| HubRise status        | WooCommerce status |
+| --------------------- | ------------------ |
+| `received`            | `Pending`          |
+| `accepted`            | `Processing`       |
+| `in_preparation`      | `Processing`       |
+| `awaiting_shipment`   | `Processing`       |
+| `awaiting_collection` | `Processing`       |
+| `in_delivery`         | `Processing`       |
+| `completed`           | `Completed`        |
+| `rejected`            | `Failed`           |
+| `cancelled`           | `Cancelled`        |
+| `delivery_failed`     | `Failed`           |
+
+WooCommerce's orders are created on HubRise with status `new`.
+
+### When the Status Changes in WooCommerce
+
+When the order status changes in WooCommerce, the status in HubRise changes according to the following correspondence:
+
+| WooCommerce status | HubRise status |
+| ------------------ | -------------- |
+| `Cancelled`        | `cancelled`    |
+| `Refunded`         | `cancelled`    |
+| `Failed`           | `rejected`     |
+| `Trash`            | `cancelled`    |
 
 ## Service Types
 
@@ -51,7 +61,7 @@ In the default WooCommerce installation, the service type is always `delivery`. 
 
 ---
 
-**Related FAQ**: <Link to="/apps/woocommerce/faqs/encode-custom-metadata/">How Can I Encode Custom Metadata In An Order?</Link>
+**Related FAQ**: [How Can I Encode Custom Metadata In An Order?](/apps/woocommerce/faqs/encode-custom-metadata/)
 
 ---
 
@@ -109,7 +119,7 @@ For every item in the order, WooCommerce Bridge provides the following informati
 
 If a product contains an option, WooCommerce Bridge provides the following information:
 
-- `option_list_name`: The placeholder for the option list name, with default value "Options"
+- `option_list_name`: The placeholder for the option list name, with default value `Options`
 - `name`: The option name
 
 A product can have at most one attached option.
@@ -160,7 +170,7 @@ Delivery charges are applied for orders delivered by the restaurant.
 
 The available fields in the payloads are the following:
 
-- `name`: The name of the delivery charge, which is "Delivery charge" by default.
+- `name`: The name of the delivery charge, which is `Delivery charge` by default.
 - `ref`: The ref code of the charge. Its default value can be set from the Configuration page of WooCommerce Bridge and should match the value in your EPOS.
 - `price`: The total amount of the delivery charge.
 

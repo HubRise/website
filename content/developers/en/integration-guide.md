@@ -58,7 +58,7 @@ When you start developing your integration, taking the right decisions at the be
 
 ### Create a User Account for your Support Team
 
-We recommend registering a HubRise user account with an email alias such as <support@your-solution.com>.
+We recommend registering a HubRise user account with an email alias such as support@your-solution.com.
 
 If your customers need your help with the integration in the future, they will just need to grant this user access to their HubRise account. Your support team will then be able to access their logs and debug the problem.
 
@@ -112,7 +112,7 @@ Your integration should prevent or at least warn users when they try to upload b
 
 An app using images should always perform image scaling, rather than relying on other apps to send images with reasonable size.
 
-HubRise supports various image formats: jpeg, png, gif and bmp. We recommend using jpeg for photos, and png for "low entropy" images (text, diagrams, simple drawings, etc).
+HubRise supports the following image formats: JPEG, PNG, WEBP, GIF, and BMP. We recommend using JPEG or WEBP for photos, and PNG or WEBP for low entropy images, such as drawings, logos, or text.
 
 ## Online Ordering Solutions
 

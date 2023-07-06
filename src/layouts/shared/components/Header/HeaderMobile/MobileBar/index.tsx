@@ -5,7 +5,6 @@ import {
   Backdrop,
   Container,
   HeaderTitle,
-  HeaderButton,
   StyledMobileBar,
   Header,
   Nav,
@@ -14,12 +13,14 @@ import {
   LanguageList,
   NavLinkLogin,
   LanguageLink,
+  HeaderIcon,
 } from "./Styles"
 
 import { generateKey } from "@utils/misc"
 import { LanguagePaths } from "@utils/context"
 import { IHeaderLink } from "@layouts/shared/components/Header/helpers"
 import LanguageLinks from "@layouts/shared/components/Header/LanguageLinks"
+import { iconSizes } from "@utils/styles"
 
 interface MobileBarProps {
   languagePaths: LanguagePaths
@@ -37,9 +38,7 @@ const MobileBar = ({ languagePaths, menuItems, isOpen, close }: MobileBarProps):
 
       <Container isOpen={isOpen}>
         <Header onClick={close}>
-          <HeaderButton>
-            <i className="fa fa-angle-left" />
-          </HeaderButton>
+          <HeaderIcon code="navigate_before" size={iconSizes._32} />
           <HeaderTitle>Menu</HeaderTitle>
         </Header>
 
@@ -58,7 +57,7 @@ const MobileBar = ({ languagePaths, menuItems, isOpen, close }: MobileBarProps):
             )
           })}
 
-          <NavLink className="signup" to="https://manager.hubrise.com/signup" newTab={false}>
+          <NavLink to="https://manager.hubrise.com/signup" newTab={false} $topMargin={true}>
             {t(`layout.header.buttons.signup`)}
           </NavLink>
 

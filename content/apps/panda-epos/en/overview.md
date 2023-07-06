@@ -11,7 +11,7 @@ app_info:
   category: Point of Sales
   availability: United Kingdom
   price_range:
-  website: https://pandaepos.com 
+  website: https://pandaepos.com
   contact: info@pandaepos.com / +44 1452 33 22 11
 ---
 
@@ -23,7 +23,7 @@ app_info:
 
 ## Description
 
-Panda EPOS offers a single platform to manage delivery and takeaway orders for restaurants with one or multiple locations. It handles complex product compositions with add-ons and variations. Its design is attractive and customisable. Business owners use Panda EPOS to centralise orders from all channels, analyse the data and manage orders, customers and content. 
+Panda EPOS offers a single platform to manage delivery and takeaway orders for restaurants with one or multiple locations. It handles complex product compositions with add-ons and variations. Its design is attractive and customisable. Business owners use Panda EPOS to centralise orders from all channels, analyse the data and manage orders, customers and content.
 
 Panda EPOS features includes:
 
@@ -37,7 +37,6 @@ Panda EPOS features includes:
 - Driver app
 
 Managers can customise different user profiles to suit business needs. Business owners, managers and staff operating in the kitchen, on delivery or on service are given different access rights.
-
 
 ## Integration Features
 

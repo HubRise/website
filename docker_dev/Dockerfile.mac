@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:experimental
-FROM node:16.15.0-bullseye
+FROM node:18.16.0-bookworm
 
 # -------------
 # Install packages

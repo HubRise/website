@@ -1,76 +1,72 @@
 import styled, { css } from "styled-components"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-import { breakpoints, colors } from "@utils/styles"
+import { boxShadows, breakpoints, colors, fontSizes, sizes } from "@utils/styles"
 import Link from "@layouts/shared/components/Link"
 
 export const Group = styled.div`
   display: grid;
-  grid-gap: 1.5em;
-  grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   margin-top: 1rem;
 
   @media (min-width: ${breakpoints.medium}) {
-    grid-gap: 2em;
+    grid-gap: 2rem;
   }
 `
 export const AppLogo = styled(GatsbyImage)`
   height: 100px;
   width: 100%;
-  padding: 1em;
+  padding: 1rem;
 
   @media (min-width: ${breakpoints.medium}) {
     height: 153px;
   }
 `
 
-const additionalInfoGap = "1rem"
-
 export const AppDocumentation = styled.div`
-  padding: 1em;
-  color: ${colors.gray};
+  padding: 1rem;
+  color: ${colors.textDark};
   background-color: #ffffff;
   transition: background-color 0.2s ease;
 `
 
 export const AppDescription = styled.div`
-  margin: 1em 1em ${additionalInfoGap} 1em;
+  padding: 1rem;
   flex: 1;
-  line-height: 1.3;
-  font-weight: 400;
-  color: ${colors.gray};
+  color: ${colors.textDark};
 `
 
 export const AppAdditionalInfo = styled.div`
-  margin: 0 1em 1em 1em;
-  font-size: 0.75rem;
-  color: ${colors.lightGray};
+  padding: 1rem;
+  font-size: ${fontSizes._12};
+  color: ${colors.textMedium};
   font-style: italic;
 
   &::before {
     display: block;
     content: "";
-    width: 1.5em;
-    margin: 0 auto ${additionalInfoGap} auto;
+    width: 1.5rem;
+    margin: 0 auto 1rem auto;
     height: 1px;
-    background-color: ${colors.silverGray};
+    background-color: ${colors.textLighter};
   }
 `
 
 export const EmailLink = styled(Link)`
-  margin-top: 1em;
+  margin-top: 1rem;
 `
 
 const appBox = css`
   display: flex;
   flex-direction: column;
   height: 100%;
-  min-height: 15em;
+  min-height: 15rem;
   background-color: #fafafa;
-  border-radius: 3px;
-  box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: ${sizes.borderRadius};
+  box-shadow: ${boxShadows.medium};
   text-align: center;
-  font-size: 0.9375rem;
+  font-size: ${fontSizes._14};
   transition: box-shadow 0.2s ease;
 
   &:hover {
@@ -91,8 +87,8 @@ export const AppBoxStatic = styled.div`
   ${appBox};
 
   justify-content: center;
-  padding: 1em;
-  color: ${colors.gray};
+  padding: 1rem;
+  color: ${colors.textDark};
   background-color: ${colors.white};
 
   &:hover,

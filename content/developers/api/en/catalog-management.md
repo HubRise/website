@@ -11,16 +11,19 @@ meta:
 
 Catalogs can be created at account or location level.
 
-Account-level catalogs are accessible by all the locations of the account. They are useful when several locations share a common catalog of products.
+Account-level catalogs are accessible by all locations of the account, while location-level catalogs are visible only to the location they belong to. Account-level catalogs are useful when several locations share a common catalog of products.
 
 Catalogs are identified by their name. Catalog names must be unique for any account or location. For instance, two locations can have two different location-level catalogs with the same name. But a location and its holding account cannot have two catalogs with the same name.
 
 ### 1.1. Retrieve Catalog
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:id" accessLevel="location, account" />
+
+##### Request parameters:
+
+| Name                                  | Type   | Description                                      |
+| ------------------------------------- | ------ | ------------------------------------------------ |
+| `hide_data` <Label type="optional" /> | `true` | If present, return the catalog without the data. |
 
 The response either contains a `location_id` (location level catalog) or an `account_id` (account level catalog) field.
 
@@ -30,7 +33,7 @@ The response either contains a `location_id` (location level catalog) or an `acc
 
 `GET /catalogs/87yu4`
 
-#### Response:
+##### Response:
 
 ```json
 {
@@ -39,6 +42,7 @@ The response either contains a `location_id` (location level catalog) or an `acc
   "name": "Web",
   "created_at": "2020-06-25T11:43:51+02:00",
   "data": {
+    "variants": [...],
     "categories": [...],
     "products": [...],
     "options_lists": [...],
@@ -83,7 +87,7 @@ The `data` field of the catalogs is not returned by this request. To retrieve th
 
 `GET /locations/3r4s3-1/catalogs`
 
-#### Response:
+##### Response:
 
 ```json
 [
@@ -122,11 +126,12 @@ To create an account-level catalog:
   accessLevel="account"
 />
 
-#### Request parameters:
+##### Request parameters:
 
 | Name                                          | Type                          | Description              |
 | --------------------------------------------- | ----------------------------- | ------------------------ |
 | `name`                                        | string                        | The name of the catalog. |
+| `data.variants` <Label type="optional" />     | [Variant](#variants)[]        | List of variants.        |
 | `data.categories` <Label type="optional" />   | [Category](#categories)[]     | List of categories.      |
 | `data.products` <Label type="optional" />     | [Product](#products)[]        | List of products.        |
 | `data.option_lists` <Label type="optional" /> | [OptionList](#option-lists)[] | List of option lists.    |
@@ -147,29 +152,29 @@ To create an account-level catalog:
     "categories": [
       {
         "name": "Cars",
-        "ref": "CARS"
+        "ref": "1"
       },
       {
         "name": "Electric cars",
-        "ref": "ECARS",
-        "parent_ref": "CARS"
+        "ref": "2",
+        "parent_ref": "1"
       }
     ],
     "products": [
       {
         "name": "Tesla model S",
         "ref": "TESLA_S",
-        "category_ref": "ECARS",
+        "category_ref": "2",
         "skus": [
           {
-            "ref": "TS_55",
-            "name": "55 Kwh",
+            "ref": "TS_DUAL",
+            "name": "Dual Motor",
             "price": "80000.00 USD",
             "option_list_refs": ["TES_COL"]
           },
           {
-            "ref": "TS_85",
-            "name": "85 Kwh",
+            "ref": "TS_PLAID",
+            "name": "Plaid",
             "price": "110000.00 USD",
             "option_list_refs": ["TES_COL"]
           }
@@ -185,11 +190,11 @@ To create an account-level catalog:
         "options": [
           {
             "name": "White",
-            "ref": "TES_COL_W"
+            "ref": "COLOR_WHITE"
           },
           {
             "name": "Vantablack",
-            "ref": "TES_COL_B",
+            "ref": "COLOR_VANTABLACK",
             "price": "4500.00 USD"
           }
         ]
@@ -203,14 +208,11 @@ To create an account-level catalog:
 
 ### 1.4. Update Catalog
 
-Update a catalog.
+Update a catalog. The request parameters are the same as for the [create catalog](#create-catalog) request.
 
 If the `data` field is passed, the whole catalog content is cleared and recreated from the passed data.
 
-<CallSummaryTable
-  endpoint="PUT /catalogs/:id"
-  accessLevel="account"
-/>
+<CallSummaryTable endpoint="PUT /catalogs/:id" accessLevel="account" />
 
 <details>
 
@@ -228,7 +230,7 @@ If the `data` field is passed, the whole catalog content is cleared and recreate
 }
 ```
 
-#### Response:
+##### Response:
 
 ```json
 {
@@ -248,10 +250,7 @@ If the `data` field is passed, the whole catalog content is cleared and recreate
 
 Delete a catalog and all its content (ie categories, products, ...).
 
-<CallSummaryTable
-  endpoint="DELETE /catalogs/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="DELETE /catalogs/:id" accessLevel="location, account" />
 
 <details>
 
@@ -261,15 +260,44 @@ Delete a catalog and all its content (ie categories, products, ...).
 
 </details>
 
-## 2. Categories
+## 2. Variants
+
+A catalog can optionally contain variants. Variants are used in conjunction with:
+
+- [PriceOverrides](#price-overrides), to define different prices for different channels or locations.
+- [Restrictions](#restrictions), to restrict items to certain channels or locations.
+
+Each variant has a `ref` and a `name`. Refs identify variants in a catalog, whereas names are displayed to the user. Refs should be unique, auto-generated, and stable, and names should be descriptive and customisable.
+
+For a more detailed explanation of variants, read this [blog post](/blog/catalog-variants).
+
+### Variant in Catalog Upload
+
+##### Parameters:
+
+| Name   | Type   | Description                                                               |
+| ------ | ------ | ------------------------------------------------------------------------- |
+| `ref`  | string | The ref of the variant. Must be unique among all variants of the catalog. |
+| `name` | string | The name of the variant.                                                  |
+
+##### Example:
+
+```json
+{
+  "ref": "1",
+  "name": "Uber Eats & Deliveroo"
+}
+```
+
+## 3. Categories
 
 The categories of a catalog form a tree: categories without a `parent_id` are the main categories. The other categories are their children, grandchildren, etc. Every product belongs to a category. Deals can also optionally belong to a category.
 
 The tree is sorted. Categories and products are retrieved in the same order as they were uploaded in the catalog creation/update.
 
-### 2.1. Category in Catalog Upload
+### 3.1. Category in Catalog Upload
 
-#### Parameters:
+##### Parameters:
 
 | Name                                    | Type     | Description                                                                                                     |
 | --------------------------------------- | -------- | --------------------------------------------------------------------------------------------------------------- |
@@ -280,7 +308,7 @@ The tree is sorted. Categories and products are retrieved in the same order as t
 | `tags` <Label type="optional" />        | string[] | List of tags. A tag is a free text used to describe some particular characteristics of a product or a category. |
 | `image_ids` <Label type="optional" />   | string[] | List of image ids attached to the category.                                                                     |
 
-#### Example:
+##### Example:
 
 ```json
 {
@@ -292,12 +320,9 @@ The tree is sorted. Categories and products are retrieved in the same order as t
 }
 ```
 
-### 2.2. Retrieve Category
+### 3.2. Retrieve Category
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/categories/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/categories/:id" accessLevel="location, account" />
 
 | Name          | Type             | Description                                                                                                     |
 | ------------- | ---------------- | --------------------------------------------------------------------------------------------------------------- |
@@ -308,7 +333,7 @@ The tree is sorted. Categories and products are retrieved in the same order as t
 | `description` | string or `null` | The description of the category.                                                                                |
 | `tags`        | string[]         | List of tags. A tag is a free text used to describe some particular characteristics of a product or a category. |
 
-#### Example request:
+##### Example request:
 
 `GET /catalogs/87yu4/categories/lsndh`
 
@@ -323,16 +348,13 @@ The tree is sorted. Categories and products are retrieved in the same order as t
 }
 ```
 
-### 2.3. List Categories
+### 3.3. List Categories
 
 Return the categories of the catalog. Categories are returned in a deep first traversal order (category 1, then category 1's children, then category 2, then category 2's children, etc.)
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/categories"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/categories" accessLevel="location, account" />
 
-#### Example request:
+##### Example request:
 
 `GET /catalogs/87yu4/categories`
 
@@ -350,13 +372,13 @@ Return the categories of the catalog. Categories are returned in a deep first tr
 ]
 ```
 
-## 3. Products
+## 4. Products
 
 A product belongs to a category. A product has one or several skus.
 
-### 3.1. Product in Catalog Upload
+### 4.1. Product in Catalog Upload
 
-#### Parameters:
+##### Parameters:
 
 | Name                                    | Type           | Description                                                                                                     |
 | --------------------------------------- | -------------- | --------------------------------------------------------------------------------------------------------------- |
@@ -368,7 +390,7 @@ A product belongs to a category. A product has one or several skus.
 | `image_ids` <Label type="optional" />   | string[]       | List of image ids attached to the product                                                                       |
 | `skus`                                  | [Sku](#skus)[] | List of skus of this product. A product must contain at least one sku.                                          |
 
-#### Example:
+##### Example:
 
 ```json
 {
@@ -388,12 +410,9 @@ A product belongs to a category. A product has one or several skus.
 }
 ```
 
-### 3.2. Retrieve Product
+### 4.2. Retrieve Product
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/products/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/products/:id" accessLevel="location, account" />
 
 | Name          | Type             | Description                               |
 | ------------- | ---------------- | ----------------------------------------- |
@@ -406,7 +425,7 @@ A product belongs to a category. A product has one or several skus.
 | `image_ids`   | string[]         | List of image ids attached to the product |
 | `skus`        | [Sku](#skus)[]   | List of skus of this product.             |
 
-#### Example request:
+##### Example request:
 
 `GET /catalogs/87yu4/products/abg5a`
 
@@ -433,16 +452,13 @@ A product belongs to a category. A product has one or several skus.
 }
 ```
 
-### 3.3. List Products
+### 4.3. List Products
 
 Retrieve the list of products in the catalog.
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/products"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/products" accessLevel="location, account" />
 
-#### Example request:
+##### Example request:
 
 `GET /catalogs/87yu4/products`
 
@@ -458,15 +474,15 @@ Retrieve the list of products in the catalog.
 ]
 ```
 
-## 4. Skus
+## 5. Skus
 
 Skus ("Stock Keeping Unit") is a distinct type of item for sale, such as a product or service, and all attributes associated with the item type that distinguish it from other item types, such as the size.
 
 A product contains one or several skus. A sku is always attached to a product.
 
-### 4.1. Sku in Catalog Upload
+### 5.1. Sku in Catalog Upload
 
-#### Parameters:
+##### Parameters:
 
 | Name                                         | Type                                                       | Description                                                                                                             |
 | -------------------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
@@ -478,7 +494,7 @@ A product contains one or several skus. A sku is always attached to a product.
 | `option_list_refs` <Label type="optional" /> | string[]                                                   | The refs of the option lists this sku is attached to.                                                                   |
 | `tags` <Label type="optional" />             | string[]                                                   | List of tags.                                                                                                           |
 
-#### Example:
+##### Example:
 
 ```json
 {
@@ -490,7 +506,7 @@ A product contains one or several skus. A sku is always attached to a product.
   "price": "9.80 EUR",
   "price_overrides": [
     {
-      "service_types": ["delivery"],
+      "variant_refs": ["1"],
       "price": "12.30 EUR"
     }
   ],
@@ -499,12 +515,9 @@ A product contains one or several skus. A sku is always attached to a product.
 }
 ```
 
-### 4.2. Retrieve Sku
+### 5.2. Retrieve Sku
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/products/:product_id/skus/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/products/:product_id/skus/:id" accessLevel="location, account" />
 
 | Name              | Type                                                       | Description                                                         |
 | ----------------- | ---------------------------------------------------------- | ------------------------------------------------------------------- |
@@ -518,7 +531,7 @@ A product contains one or several skus. A sku is always attached to a product.
 | `option_list_ids` | string[]                                                   | The ids of the option lists this sku is attached to.                |
 | `tags`            | string[]                                                   | List of tags.                                                       |
 
-#### Example request:
+##### Example request:
 
 `GET /catalogs/87yu4/products/abg5a/skus/sb65k`
 
@@ -538,14 +551,11 @@ A product contains one or several skus. A sku is always attached to a product.
 }
 ```
 
-### 4.3. List Skus
+### 5.3. List Skus
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/products/:product_id/skus"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/products/:product_id/skus" accessLevel="location, account" />
 
-#### Example request:
+##### Example request:
 
 `GET /catalogs/87yu4/products/abg5a/skus`
 
@@ -560,13 +570,13 @@ A product contains one or several skus. A sku is always attached to a product.
 ]
 ```
 
-## 5. Option Lists
+## 6. Option Lists
 
 An option list can be attached to one or several skus. It has one or several options.
 
-### 5.1. Option List in Catalog Upload
+### 6.1. Option List in Catalog Upload
 
-#### Parameters:
+##### Parameters:
 
 | Name                                                         | Type                 | Description                                                                                                                           |
 | ------------------------------------------------------------ | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
@@ -578,7 +588,7 @@ An option list can be attached to one or several skus. It has one or several opt
 | `tags` <Label type="optional" />                             | string[]             | List of tags.                                                                                                                         |
 | `options`                                                    | [Option](#options)[] | A list of options. An option list must contain at least one option.                                                                   |
 
-#### Example:
+##### Example:
 
 ```json
 {
@@ -610,14 +620,11 @@ The `type` field is deprecated and should be replaced with `min_selections` and 
 - If `type` = `single`, `min_selections` is set to `1` and `max_selections` is set to `1`.
 - If `type` = `multiple`, `min_selections` is set to `0` and `max_selections` is set to `null`.
 
-### 5.2. Retrieve Option List
+### 6.2. Retrieve Option List
 
 Retrieve an option list and the possible choices (options).
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/option_lists/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/option_lists/:id" accessLevel="location, account" />
 
 | Name                               | Type                 | Description                                                                                                                       |
 | ---------------------------------- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -630,7 +637,7 @@ Retrieve an option list and the possible choices (options).
 | `tags`                             | string[]             | List of tags.                                                                                                                     |
 | `options`                          | [Option](#options)[] | A list of options.                                                                                                                |
 
-#### Example request:
+##### Example request:
 
 `GET /catalogs/87yu4/option_lists/e2sfj`
 
@@ -654,14 +661,11 @@ Retrieve an option list and the possible choices (options).
 }
 ```
 
-### 5.3. List Option Lists
+### 6.3. List Option Lists
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/option_lists"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/option_lists" accessLevel="location, account" />
 
-#### Example request:
+##### Example request:
 
 `GET /catalogs/87yu4/option_lists`
 
@@ -677,11 +681,11 @@ Retrieve an option list and the possible choices (options).
 ]
 ```
 
-## 6. Options
+## 7. Options
 
-### 6.1. Option in Catalog Upload
+### 7.1. Option in Catalog Upload
 
-#### Parameters:
+##### Parameters:
 
 | Name                                | Type                                                       | Description                                                                                       |
 | ----------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
@@ -692,7 +696,7 @@ Retrieve an option list and the possible choices (options).
 | `default` <Label type="optional" /> | boolean                                                    | Whether this option is on by default. Default is `false`.                                         |
 | `tags` <Label type="optional" />    | string[]                                                   | List of tags.                                                                                     |
 
-#### Example:
+##### Example:
 
 ```json
 {
@@ -709,7 +713,7 @@ Retrieve an option list and the possible choices (options).
 }
 ```
 
-### 6.2. Retrieve Option
+### 7.2. Retrieve Option
 
 <CallSummaryTable
   endpoint="GET /catalogs/:catalog_id/option_lists/:option_list_id/options/:id"
@@ -727,7 +731,7 @@ Retrieve an option list and the possible choices (options).
 | `default`         | boolean                                                    | Whether this option is on by default.  |
 | `tags`            | string[]                                                   | List of tags.                          |
 
-#### Example request:
+##### Example request:
 
 `GET /catalogs/87yu4/option_lists/e2sfj/options/m9d6e`
 
@@ -741,14 +745,14 @@ Retrieve an option list and the possible choices (options).
 }
 ```
 
-### 6.3. List Options
+### 7.3. List Options
 
 <CallSummaryTable
   endpoint="GET /catalogs/:catalog_id/option_lists/:option_list_id/options"
   accessLevel="location, account"
 />
 
-#### Example request:
+##### Example request:
 
 `GET /catalogs/87yu4/option_lists/e2sfj/options`
 
@@ -765,11 +769,11 @@ Retrieve an option list and the possible choices (options).
 ]
 ```
 
-## 7. Deals
+## 8. Deals
 
-### 7.1. Deal in Catalog Upload
+### 8.1. Deal in Catalog Upload
 
-#### Parameters:
+##### Parameters:
 
 | Name                                                | Type                                                       | Description                                                                                                                                                                                                                                                                                                   |
 | --------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -789,7 +793,7 @@ Retrieve an option list and the possible choices (options).
 | `lines.pricing_value` <Label type="optional" />     | depends                                                    | The presence and value of this field depends on `pricing_effect`. It is a [Money](/developers/api/general-concepts/#monetary-values) for `fixed_price` and `price_off`, a [decimal](/developers/api/general-concepts/#decimal-values) between "0" and "100" for `percentage_off`, and `null` for `unchanged`. |
 | `lines.label` <Label type="optional" />             | string                                                     | A label describing the type of skus that can be selected in this line.                                                                                                                                                                                                                                        |
 
-#### Example:
+##### Example:
 
 ```json
 {
@@ -819,14 +823,11 @@ Retrieve an option list and the possible choices (options).
 }
 ```
 
-### 7.2. Retrieve Deal
+### 8.2. Retrieve Deal
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/deals/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/deals/:id" accessLevel="location, account" />
 
-#### Example request:
+##### Example request:
 
 `GET /catalogs/87yu4/deals/zee1f`
 
@@ -855,14 +856,11 @@ Retrieve an option list and the possible choices (options).
 }
 ```
 
-### 7.2. List Deals
+### 8.2. List Deals
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/deals"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/deals" accessLevel="location, account" />
 
-#### Example request:
+##### Example request:
 
 `GET /catalogs/87yu4/deals`
 
@@ -879,13 +877,13 @@ Retrieve an option list and the possible choices (options).
 ]
 ```
 
-## 8. Discounts
+## 9. Discounts
 
 A discount is a reduction of the order total price.
 
-### 8.1. Discount in Catalog Upload
+### 9.1. Discount in Catalog Upload
 
-#### Parameters:
+##### Parameters:
 
 | Name                                      | Type                          | Description                                                                                                                                                                                                                    |
 | ----------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -898,7 +896,7 @@ A discount is a reduction of the order total price.
 | `pricing_value` <Label type="optional" /> | depends                       | Depends on `pricing_effect`. It is a [Money](/developers/api/general-concepts/#monetary-values) for `price_off`, and a [decimal](/developers/api/general-concepts/#decimal-values) between "0" and "100" for `percentage_off`. |
 | `image_ids` <Label type="optional" />     | string[]                      | List of image ids attached to the discount.                                                                                                                                                                                    |
 
-#### Example:
+##### Example:
 
 ```json
 {
@@ -912,14 +910,11 @@ A discount is a reduction of the order total price.
 }
 ```
 
-### 8.2. Retrieve Discount
+### 9.2. Retrieve Discount
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/discounts/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/discounts/:id" accessLevel="location, account" />
 
-#### Example request:
+##### Example request:
 
 `GET /catalogs/87yu4/discounts/av1up`
 
@@ -936,14 +931,11 @@ A discount is a reduction of the order total price.
 }
 ```
 
-### 8.3. List Discounts
+### 9.3. List Discounts
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/discounts"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/discounts" accessLevel="location, account" />
 
-#### Example request:
+##### Example request:
 
 `GET /catalogs/87yu4/discounts`
 
@@ -960,13 +952,13 @@ A discount is a reduction of the order total price.
 ]
 ```
 
-## 9. Charges
+## 10. Charges
 
 A charge is an additional fee billed to the customer. Examples of charges include delivery charge and tip.
 
-### 9.1. Charge in Catalog Upload
+### 10.1. Charge in Catalog Upload
 
-#### Parameters:
+##### Parameters:
 
 | Name                              | Type                                                       | Description                                                    |
 | --------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------- |
@@ -975,7 +967,7 @@ A charge is an additional fee billed to the customer. Examples of charges includ
 | `type`                            | string                                                     | One of: `delivery`, `payment_fee`, `tip`, `tax` or `other`.    |
 | `price` <Label type="optional" /> | [Money](/developers/api/general-concepts/#monetary-values) | The charge price. Should be omitted if the charge is variable. |
 
-#### Example:
+##### Example:
 
 ```json
 {
@@ -986,14 +978,11 @@ A charge is an additional fee billed to the customer. Examples of charges includ
 }
 ```
 
-### 9.2. Retrieve Charge
+### 10.2. Retrieve Charge
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/charges/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/charges/:id" accessLevel="location, account" />
 
-#### Parameters:
+##### Parameters:
 
 | Name    | Type                                                                 | Description                                                 |
 | ------- | -------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -1003,7 +992,7 @@ A charge is an additional fee billed to the customer. Examples of charges includ
 | `type`  | string                                                               | One of: `delivery`, `payment_fee`, `tip`, `tax` or `other`. |
 | `price` | [Money](/developers/api/general-concepts/#monetary-values) or `null` | The charge amount, or `null` for variable amount.           |
 
-#### Example request:
+##### Example request:
 
 `GET /catalogs/87yu4/charges/fjes3`
 
@@ -1017,16 +1006,13 @@ A charge is an additional fee billed to the customer. Examples of charges includ
 }
 ```
 
-### 9.3. List Charges
+### 10.3. List Charges
 
 Retrieve the list of charges in the catalog.
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/charges"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/charges" accessLevel="location, account" />
 
-#### Example request:
+##### Example request:
 
 `GET /catalogs/87yu4/charges`
 
@@ -1043,79 +1029,85 @@ Retrieve the list of charges in the catalog.
 ]
 ```
 
-## 10. Restrictions
+## 11. Restrictions
 
-A `restrictions` map can be used in [Sku](#skus), [Discount](#discounts) and [Deal](#deals) resources.
+A `restrictions` object can be used in [Sku](#skus), [Option](#options), [Deal](#deals), [Discount](#discounts) and [Charge](#charges) resources. It defines a set of conditions for a particular item to be enabled.
 
-It defines a set of conditions for a particular item to be available.
+##### Parameters:
 
-#### Parameters:
+| Name                                                                      | Type                                                        | Description                                                                                                                                                                  |
+| ------------------------------------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `enabled` <Label type="optional" />                                       | boolean                                                     | Enabled or disabled. The default value is `true`, and the field is omitted if its value is `true`.                                                                           |
+| `variant_refs` <Label type="optional" />                                  | string[]                                                    | Enabled for the specified variants, identified by their ref. The variants must exist in the catalog.                                                                         |
+| `dow` <Label type="optional" />                                           | [DOW](/developers/api/general-concepts/#days-of-the-week)   | Enabled on certain days of the week.                                                                                                                                         |
+| `start_time` <Label type="optional" />                                    | string                                                      | Enabled from a certain time of the day. Format: `HH:MM`.                                                                                                                     |
+| `end_time` <Label type="optional" />                                      | string                                                      | Enabled until a certain time of the day. Format: `HH:MM`.                                                                                                                    |
+| `start_date` <Label type="optional" />                                    | [Date](/developers/api/general-concepts/#dates-and-times)   | Enabled from a certain date.                                                                                                                                                 |
+| `end_date` <Label type="optional" />                                      | [Date](/developers/api/general-concepts/#dates-and-times)   | Enabled until a certain date.                                                                                                                                                |
+| `service_types` <Label type="deprecated" /> <Label type="optional" />     | string[]                                                    | Enabled for the specified service types. One or several values among: `delivery`, `collection` or `eat_in`. This field is deprecated, `variant_refs` should be used instead. |
+| `service_type_refs` <Label type="deprecated" /> <Label type="optional" /> | string[]                                                    | Enabled for the specified service type refs. This field is deprecated, `variant_refs` should be used instead.                                                                |
+| `min_order_amount` <Label type="optional" />                              | [Money](/developers/api/general-concepts/#monetary-values)  | Enabled for order equal or greater than.                                                                                                                                     |
+| `max_per_order` <Label type="optional" />                                 | [decimal](/developers/api/general-concepts/#decimal-values) | Max number of items per order.                                                                                                                                               |
+| `max_per_customer` <Label type="optional" />                              | [decimal](/developers/api/general-concepts/#decimal-values) | Max number of items per customer.                                                                                                                                            |
 
-| Name                                          | Type                                                        | Description                                                                                                   |
-| --------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `dow` <Label type="optional" />               | [DOW](/developers/api/general-concepts/#days-of-the-week)   | Available on certain days of the week.                                                                        |
-| `start_time` <Label type="optional" />        | string                                                      | Available from a certain time of the day. Format: `HH:MM`.                                                    |
-| `end_time` <Label type="optional" />          | string                                                      | Available until a certain time of the day. Format: `HH:MM`.                                                   |
-| `start_date` <Label type="optional" />        | [Date](/developers/api/general-concepts/#dates-and-times)   | Available from a certain date.                                                                                |
-| `end_date` <Label type="optional" />          | [Date](/developers/api/general-concepts/#dates-and-times)   | Available until a certain date.                                                                               |
-| `service_types` <Label type="optional" />     | string[]                                                    | Available for the specified service types. One or several values among: `delivery`, `collection` or `eat_in`. |
-| `service_type_refs` <Label type="optional" /> | string[]                                                    | Available for the specified service type refs.                                                                |
-| `min_order_amount` <Label type="optional" />  | [Money](/developers/api/general-concepts/#monetary-values)  | Available for order equal or greater than.                                                                    |
-| `max_per_order` <Label type="optional" />     | [decimal](/developers/api/general-concepts/#decimal-values) | Max number of items per order.                                                                                |
-| `max_per_customer` <Label type="optional" />  | [decimal](/developers/api/general-concepts/#decimal-values) | Max number of items per customer.                                                                             |
+All the fields above are optional. Fields with a `null` value are ignored. Fields with a `string[]` type can be set to `[]`, in which case the item is disabled for all variants (or service types, or service type refs).
 
-All the fields above are optional. Fields with a `null` value are ignored. Fields with a `string[]` value must be either omitted or contain at least one value, and they cannot contain duplicate values.
+The `service_types` and `service_type_refs` fields have been deprecated in favor of `variant_refs`. Catalog variants are more flexible, as they can represent arbitrary conditions. The variant to use for a particular order type is configured in the application using the catalog.
 
-All conditions must be met simultaneously for an item to be available.
+All conditions must be met simultaneously for an item to be available. In particular, setting `enabled` to `false` disables the item regardless of the other conditions.
 
-#### Example:
+##### Example:
 
 ```json
 "restrictions": {
-  "dow": "123-5--",
+  "variant_refs": ["2", "3"],
+  "dow": "1---5--",
   "start_time": "07:00",
   "end_time": "13:30",
   "end_date": "2020-02-02",
-  "service_types": ["collection", "eat_in"],
-  "service_type_refs": ["WEBSITE", "UBEREATS"],
   "min_order_amount": "20.00 EUR",
   "max_per_order": "1"
 }
 ```
 
-## 11. Price Overrides
+The item is only enabled for variants with refs `2` and `3`, on Monday and Friday, from 7:00 to 13:30, until February 2nd 2020, for orders equal or greater than 20.00 EUR, and with a maximum of 1 item per order.
 
-A `price_overrides` is an array of rules that can be used in [Skus](#skus) and [Options](#options) to override the price in different contexts.
+## 12. Price Overrides
 
-The structure of a rule is described below.
+A `price_overrides` is an array of rules that can be used in [Skus](#skus) and [Options](#options), to override their price in different contexts.
 
-#### Parameters:
+Each rule defines a price and a set of conditions. The structure of a rule is described below.
 
-| Name                                          | Type                                                       | Description                                                                                                 |
-| --------------------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `dow` <Label type="optional" />               | [DOW](/developers/api/general-concepts/#days-of-the-week)  | Applies on certain days of the week.                                                                        |
-| `start_time` <Label type="optional" />        | string                                                     | Applies from a certain time of the day. Format: `HH:MM`.                                                    |
-| `end_time` <Label type="optional" />          | string                                                     | Applies until a certain time of the day. Format: `HH:MM`.                                                   |
-| `start_date` <Label type="optional" />        | [Date](/developers/api/general-concepts/#dates-and-times)  | Applies from a certain date.                                                                                |
-| `end_date` <Label type="optional" />          | [Date](/developers/api/general-concepts/#dates-and-times)  | Applies until a certain date.                                                                               |
-| `service_types` <Label type="optional" />     | string[]                                                   | Applies for the specified service types. One or several values among: `delivery`, `collection` or `eat_in`. |
-| `service_type_refs` <Label type="optional" /> | string[]                                                   | Applies for orders using one of the specified service type refs.                                            |
-| `price`                                       | [Money](/developers/api/general-concepts/#monetary-values) | The new price if the rule matches.                                                                          |
+##### Parameters:
+
+| Name                                                                      | Type                                                       | Description                                                                                                                                                                  |
+| ------------------------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `variant_refs` <Label type="optional" />                                  | string[]                                                   | Applies to the specified variants, identified by their ref. The variants must exist in the catalog.                                                                          |
+| `dow` <Label type="optional" />                                           | [DOW](/developers/api/general-concepts/#days-of-the-week)  | Applies on certain days of the week.                                                                                                                                         |
+| `start_time` <Label type="optional" />                                    | string                                                     | Applies from a certain time of the day. Format: `HH:MM`.                                                                                                                     |
+| `end_time` <Label type="optional" />                                      | string                                                     | Applies until a certain time of the day. Format: `HH:MM`.                                                                                                                    |
+| `start_date` <Label type="optional" />                                    | [Date](/developers/api/general-concepts/#dates-and-times)  | Applies from a certain date.                                                                                                                                                 |
+| `end_date` <Label type="optional" />                                      | [Date](/developers/api/general-concepts/#dates-and-times)  | Applies until a certain date.                                                                                                                                                |
+| `service_types` <Label type="deprecated" /> <Label type="optional" />     | string[]                                                   | Applies for the specified service types. One or several values among: `delivery`, `collection` or `eat_in`. This field is deprecated, `variant_refs` should be used instead. |
+| `service_type_refs` <Label type="deprecated" /> <Label type="optional" /> | string[]                                                   | Applies for orders using one of the specified service type refs. This field is deprecated, `variant_refs` should be used instead.                                            |
+| `price`                                                                   | [Money](/developers/api/general-concepts/#monetary-values) | The new price if the rule matches.                                                                                                                                           |
 
 All the fields above are optional, except `price`. Fields with a `null` value are ignored. Fields with a `string[]` value must be either omitted or contain at least one value, and they cannot contain duplicate values.
 
-All conditions must be met simultaneously for a rule to match. When several rules match, the price of the last matching rule applies.
+The `service_types` and `service_type_refs` fields have been deprecated. See [Restrictions](#restrictions) for more details.
 
-#### Example:
+All conditions must be met simultaneously for a rule to match. When one or several rules match, the price of the last matching rule applies. When no rule matches, or when the item has no price overrides, the default price applies.
+
+##### Example:
 
 ```json
 "price_overrides": [
   {
-    "service_types": ["collection"],
+    "variant_refs": ["2", "3"],
     "price": "20.00 EUR"
   },
   {
-    "end_time": "15:00",
+    "end_time": "14:00",
     "price": "15.00 EUR"
   },
 ]
@@ -1123,38 +1115,34 @@ All conditions must be met simultaneously for a rule to match. When several rule
 
 Assuming the default price is `25.00 EUR`:
 
-- If the item is ordered for delivery after 15:00, the price is `25.00 EUR`
-- If the item is ordered for collection after 15:00, the price is `20.00 EUR`
-- If the item is ordered for delivery or collection before 15:00, both rules match. The last matching rule applies, so the price is `15.00 EUR`.
+- If the item is ordered through any channel or location that use variants `1` or `3`, the price is `20.00 EUR`.
+- Additionally, if the item is ordered before `14:00`, the price is `15.00 EUR`, no matter the variant. Indeed, the second rule overrides the first one.
 
-## 12. Images
+## 13. Images
 
 Images can be attached to products and deals, via their `image_ids` fields.
 
-Images must be uploaded before catalog data, since the images' `id`s must be passed in the products and deals. Upload sequence is as follows:
+Images must be uploaded before catalog data, since the images' `id`s must be passed in the products and deals. The sequence is therefore:
 
-1. create an empty catalog: `POST /catalogs` or reuse an existing catalog
-1. upload images: `POST /catalogs/:catalog_id/images`
-1. upload catalog data: `PUT /catalogs/:catalog_id`
+1. If you are not reusing an existing catalog, create an empty one first: `POST /catalogs`.
+1. Upload all your images: `POST /catalogs/:catalog_id/images`.
+1. Finally, upload the catalog: `PUT /catalogs/:catalog_id`.
 
-There is no endpoint to delete an image: when an image is left unattached for 30 days in a row, it is automatically removed.
+There is no endpoint to delete an image. Images which are not used for 30 days are automatically removed.
 
-### 12.1. Create Image
+### 13.1. Create Image
 
-Upload an image.
+Upload an image to a catalog.
 
-The `Content-Type` header must contain the image MIME type (eg `image/png`).
+The `Content-Type` header must contain the image MIME type, for example: `image/png`. The image data must be sent in the request body.
 
-The image data is passed in the request body.
+HubRise supports the following image formats: `JPEG`, `PNG`, `WEBP`, `GIF`, and `BMP`. Image data must not exceed `1 Mb` per image.
 
-Image data must not exceed 1 Mb per image. There are no constraints on the image size or resolution, or on the number of images per catalog.
+HubRise does not impose any restrictions on image dimensions. However, we recommend using images in `1200x800` format or larger to ensure a good quality across all channels.
 
-<CallSummaryTable
-  endpoint="POST /catalogs/:catalog_id/images"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="POST /catalogs/:catalog_id/images" accessLevel="location, account" />
 
-#### Example request:
+##### Example request:
 
 `POST /catalogs/3ncct/images`
 
@@ -1175,14 +1163,11 @@ Response:
 }
 ```
 
-### 12.2. Retrieve Image
+### 13.2. Retrieve Image
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/images/:id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/images/:id" accessLevel="location, account" />
 
-#### Parameters:
+##### Parameters:
 
 | Name                     | Type    | Description                                                                                                                                      |
 | ------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -1192,7 +1177,7 @@ Response:
 | `md5`                    | string  | MD5-hash of the image data.                                                                                                                      |
 | `seconds_before_removal` | integer | Time left before this image is removed. For unattached images only. This field is null if the image is attached to at least one product or deal. |
 
-#### Example request:
+##### Example request:
 
 `GET /catalogs/ldof9/images/tsll2`
 
@@ -1206,16 +1191,13 @@ Response:
 }
 ```
 
-### 12.3. Retrieve Image Data
+### 13.3. Retrieve Image Data
 
 Return the image data. The reply's `Content-Type` header contains the MIME image type.
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/images/:id/data"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/images/:id/data" accessLevel="location, account" />
 
-#### Example request:
+##### Example request:
 
 `GET /catalogs/ldof9/images/tsll2/data`
 
@@ -1224,16 +1206,13 @@ Content-Type: image/jpeg
 Response body: image data
 ```
 
-### 12.4. List Images
+### 13.4. List Images
 
 Retrieve the list of images in the catalog.
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/images"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/images" accessLevel="location, account" />
 
-#### Example request:
+##### Example request:
 
 `GET /catalogs/87yu4/images`
 
@@ -1253,7 +1232,7 @@ Retrieve the list of images in the catalog.
 ]
 ```
 
-## 13. Inventories
+## 14. Inventories
 
 Inventories keep track of the stock of every sku or option in a catalog, for a particular location.
 
@@ -1263,7 +1242,7 @@ An inventory is specific to a particular location. If several locations share th
 
 Inventories cannot be created or deleted. An inventory is automatically associated to each pair of _catalog_ and _location_, where _location_ has access to _catalog_.
 
-### 13.1. Retrieve Inventory
+### 14.1. Retrieve Inventory
 
 Returns the list of inventory entries of the inventory.
 
@@ -1273,7 +1252,7 @@ Returns the list of inventory entries of the inventory.
   accessLevel="location, account"
 />
 
-#### Example request:
+##### Example request:
 
 `GET /catalogs/87yu4/locations/3r4s3-1/inventory`
 
@@ -1307,7 +1286,7 @@ The skus and options' `ref`s are also provided for convenience in the reply.
 
 An inventory is an empty set by default. Every sku or option not specified in the inventory set has **unlimited** supply.
 
-### 13.2. Update Inventory
+### 14.2. Update Inventory
 
 Overwrites the inventory. The request body has the same format as the [Retrieve inventory](#retrieve-inventory) response body.
 
@@ -1326,7 +1305,7 @@ A _select by id_ entry affects a single sku or option. A _select by ref_ entry c
   accessLevel="location, account"
 />
 
-#### Example request:
+##### Example request:
 
 `PUT /catalogs/87yu4/location/inventory`
 
@@ -1343,7 +1322,7 @@ A _select by id_ entry affects a single sku or option. A _select by ref_ entry c
 ]
 ```
 
-### 13.3. Patch inventory
+### 14.3. Patch inventory
 
 Updates a selected set of entries. Leave the other entries unchanged.
 
@@ -1357,7 +1336,7 @@ Unlike the `PUT` method which returns the full inventory, the `PATCH` method onl
   accessLevel="location, account"
 />
 
-#### Example request:
+##### Example request:
 
 If we have the following inventory:
 

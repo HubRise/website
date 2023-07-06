@@ -1,64 +1,59 @@
 import styled, { css } from "styled-components"
 import * as Formik from "formik"
 
-import { breakpoints, colors, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizes, mixin, sizes } from "@utils/styles"
 
 export type FieldStatus = "unsubmitted" | "valid" | "error"
 
+const gap = "0.75rem"
+
 export const StyledForm = styled(Formik.Form)`
   width: 100%;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: ${gap};
 `
 
 export const StyledRow = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: ${gap};
 `
 
 export const Block = styled.div<{ $isMedium?: boolean }>`
-  position: relative;
   width: 100%;
-  height: auto;
 
   ${(props) =>
     props.$isMedium &&
     css`
       @media (min-width: ${breakpoints.large}) {
-        width: 49%;
+        width: calc(50% - ${gap} / 2);
       }
     `}
 `
 
 export const Button = styled.button`
-  margin-top: 0.5rem;
   padding: 0.8rem 2.5rem;
   width: 100%;
   text-transform: uppercase;
-  font-size: 1rem;
   color: ${colors.white};
   background-color: ${colors.primary};
-  border-radius: 3px;
+  border-radius: ${sizes.borderRadius};
   font-weight: 500;
   text-align: center;
   cursor: pointer;
 
-  ${mixin.buttonOver(colors.white, colors.darkGray)};
-
-  @media (min-width: ${breakpoints.large}) {
-    font-size: 0.8125rem;
-  }
+  ${mixin.buttonOver(colors.white, colors.textDarkest)};
 `
+
+export const StyledField = styled.div``
 
 const field = (status: FieldStatus) => css`
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 0.3rem;
-  border: thin solid #f2f2f2;
-  box-shadow: none;
-  color: ${colors.darkGray};
+  color: ${colors.textDarkest};
   background: ${colors.white};
-  font-size: 0.8125rem;
 
   ${status === "error" &&
   css`
@@ -69,13 +64,22 @@ const field = (status: FieldStatus) => css`
   css`
     background: #e9f4e4;
   `}
+
+  border: 2px solid transparent;
+  border-radius: ${sizes.borderRadius};
+  outline: thin solid ${colors.borderLight};
+  box-shadow: none;
+
+  :active,
+  :focus {
+    border-color: ${colors.borderInputFocus};
+    outline: none;
+  }
 `
 
-export const StyledField = {
+export const StyledInput = {
   input: styled(Formik.Field).attrs({ component: "input" })<{ $status: FieldStatus }>`
     ${(props) => field(props.$status)};
-    line-height: 1.5;
-    outline: 0;
   `,
 
   textarea: styled(Formik.Field).attrs({ component: "textarea" })<{ $status: FieldStatus }>`
@@ -85,30 +89,8 @@ export const StyledField = {
   `,
 }
 
-export const FieldLabel = styled.label<{ $status: FieldStatus }>`
-  ${({ $status }) =>
-    $status !== "unsubmitted" &&
-    css`
-      position: absolute;
-      display: inline-block;
-      font-size: 0;
-      right: ${$status === "error" ? "10px" : "8px"};
-      top: 0;
-
-      &:after {
-        position: absolute;
-        top: 3px;
-        right: 0;
-        content: ${$status === "error" ? "\\f00d" : "\\f00c"};
-        font-family: FontAwesome !important;
-        font-size: 1rem;
-        color: ${$status === "error" ? "red" : colors.primary};
-      }
-    `}
-`
-
 export const Error = styled.div`
-  color: red;
-  font-size: 0.8125rem;
-  margin-bottom: 1rem;
+  color: ${colors.danger};
+  font-size: ${fontSizes._14};
+  margin-bottom: 0.5rem;
 `

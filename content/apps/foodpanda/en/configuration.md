@@ -22,17 +22,17 @@ This section allows also to specify the email address that will be used for all 
 
 ## Service Types
 
-This section allows you to specify the ref codes used for foodpanda delivery and takeaway. Refer to your connected EPOS documentation on the HubRise website to verify the correct values to enter.
+This section allows you to specify the ref codes used for foodpanda delivery and takeaway. Refer to your EPOS documentation on the HubRise website to verify the correct values to enter.
 
 ## Charges
 
-If delivery charges apply, a ref code might be required. Refer to your connected EPOS documentation on the HubRise website to verify which value you should enter in the **Delivery charge ref code** field.
+If delivery charges apply, a ref code might be required. Refer to your EPOS documentation on the HubRise website to verify which value you should enter in the **Delivery charge ref code** field.
 
 ## Payments
 
 foodpanda customers can pay their orders either online or by cash on delivery.
 
-This section of the Configuration page allows you to specify the ref codes for these two payment methods. Refer to your connected EPOS documentation on the HubRise website to verify the correct values to enter.
+This section of the Configuration page allows you to specify the ref codes for these two payment methods. Refer to your EPOS documentation on the HubRise website to verify the correct values to enter.
 
 ## Save the Configuration
 

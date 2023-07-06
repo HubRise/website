@@ -1,6 +1,3 @@
-import remark from "remark"
-import remarkHtml from "remark-html"
-
 /**
  * Applies kebab case to a regular string.
  * NOTE: strips away any punctuation, except for `_`
@@ -22,11 +19,6 @@ export const kebabify = (input: string, keepCase = false): string => {
  * Generatey key prop for repeating sibling React elements.
  */
 export const generateKey = (prefix: string, suffix: string | number): string => `${prefix}--${suffix}`
-
-export const markdownToHtml = (markdown: string): string => {
-  // @ts-ignore
-  return remark().use(remarkHtml).processSync(markdown.replace(/\n/g, "\n\n")).toString()
-}
 
 /**
  * Strips headers of chapters and subchapters, transforming

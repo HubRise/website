@@ -3,28 +3,23 @@ import styled, { css } from "styled-components"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-import { colors } from "@utils/styles"
+import { colors, mixin } from "@utils/styles"
 
 const slideControl = css`
-  display: grid;
-  width: 2em;
-  height: 2em;
-  place-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  ${mixin.centerElement};
+  border: thin solid ${colors.white};
   border-radius: 50%;
-  border: 1px solid ${colors.white};
-  font-size: 1.2em;
   color: ${colors.white};
   opacity: 0.5;
-
-  & svg {
-    margin: auto;
-  }
 
   &:hover,
   &:focus {
     outline: none;
     opacity: 1;
     cursor: pointer;
+    background-color: ${colors.backgroundDark};
   }
 }
 `

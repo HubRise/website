@@ -11,15 +11,15 @@ You can connect WooCommerce to HubRise with a few simple steps.
 
 ---
 
-**IMPORTANT NOTE:** If you don't already have a HubRise account, start by registering on the [HubRise Signup Page](https://manager.hubrise.com/signup). It only takes a minute!
+**IMPORTANT NOTE:** If you do not have a HubRise account yet, register on our [Signup Page](https://manager.hubrise.com/signup). It only takes a minute!
 
 ---
 
-## 1. Connect the Bridge
+## 1. Connect WooCommerce Bridge
 
 To connect WooCommerce Bridge to HubRise, follow these steps.
 
-1. Log in to your HubRise account.
+1. Log in to your [HubRise account](https://manager.hubrise.com).
 1. Select the location you want to connect from the dropdown menu.
 1. Select **CONNECTIONS**, then **View available apps**.
 1. Select **WooCommerce Bridge** from the list of apps.
@@ -38,7 +38,7 @@ To connect WooCommerce Bridge to HubRise, follow these steps.
 
 After connecting the Bridge, you need to configure a few parameters in the Configuration page to send orders correctly to your EPOS.
 
-For more information about the Configuration page and how to navigate to it, see [User Interface](/apps/woocommerce/user-interface/#configuration-page). For details on how to configure the parameters of WooCommerce Bridge, see [Configuration](/apps/woocommerce/configuration).
+For more information about the configuration page and how to navigate to it, see [Configuration Page](/apps/woocommerce/user-interface/#configuration-page). For details on how to configure the parameters of WooCommerce Bridge, see [Configuration](/apps/woocommerce/configuration).
 
 ## 3. Upload Your Menu
 

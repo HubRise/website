@@ -94,5 +94,5 @@ Every option list has a sequential `ref` that starts with `deal_`. For every opt
 Every production instruction group is mapped to HubRise as an option list. For every instruction, the following information is sent to HubRise:
 
 - `name`: The name of the instruction.
-- `ref`: The ref code of the instruction, preceeded by a `+` sign.
+- `ref`: The ref code of the instruction, preceded by a `+` sign.
 - `price`: Always 0.

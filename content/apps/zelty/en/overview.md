@@ -22,7 +22,7 @@ Zelty provides a complete EPOS solution designed for traditional restaurants wit
 
 It is an open solution that integrates with customers existing tools either directly or via HubRise.
 
-Zelty complies with French anti-fraud regulations which came into force on January 1, 2018.
+Zelty complies with the 2018 French Anti-Fraud Act.
 The back office is available in French.
 
 ## Integration Features

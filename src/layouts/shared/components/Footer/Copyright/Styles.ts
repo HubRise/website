@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
-import { breakpoints, colors, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 import Link from "@layouts/shared/components/Link"
 
 export const StyledCopyright = styled.div`
-  background-color: ${colors.darkGray};
+  background-color: ${colors.textDarkest};
 `
 
 export const Container = styled.div`
@@ -38,7 +38,7 @@ export const Logo = styled.img`
 export const Contact = styled.div`
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
 
   @media (min-width: ${breakpoints.large}) {
     justify-content: flex-end;
@@ -55,18 +55,23 @@ export const EmailLink = styled(Link)`
     content: "●";
     display: inline-block;
     margin-left: ${contactGap};
-    position: relative;
-    bottom: 0.15em;
-    font-size: 0.75rem;
-    color: ${colors.lightGray};
+    font-size: ${fontSizes._12};
+    color: ${colors.textMedium};
   }
 `
 
 export const SocialLink = styled(Link)`
-  font-size: 1.5rem;
   margin-left: ${contactGap};
-  position: relative;
-  top: 0.1em;
+  ${mixin.centerElement};
 
-  ${mixin.linkOver(colors.white)};
+  svg {
+    width: 1.3rem;
+    height: 1.3rem;
+    fill: ${colors.white};
+    transition: fill 0.2s ease;
+
+    :hover {
+      fill: ${colors.primary};
+    }
+  }
 `

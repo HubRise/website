@@ -1,9 +1,9 @@
 ---
-title: Connection to HubRise
+title: Connect to HubRise
 position: 2
 layout: documentation
 meta:
-  title: Connection to HubRise | App4 | HubRise
+  title: Connect to HubRise | App4 | HubRise
   description: App4 overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 ---
 
@@ -25,7 +25,7 @@ At this stage you will need to contact the App4 support team and request them to
 - If you have several locations, select the one to connect.
 - Click **Allow** to complete the connection with HubRise.
 
-### If don't have a HubRise location yet:
+### If you don't have a HubRise location yet:
 
 - When the HubRise login page is presented, click **No Account Yet?**.
 - You will be prompted to create a new Account and Location. The **Account Name** is your brand name. The **Location Name** identifies the physical store: it should be the city or street where the restaurant is. For more information, see [Create an Account on HubRise](/docs/account/#create-an-account) and [Create a Location on HubRise](/docs/locations/#create-a-location).

@@ -34,7 +34,7 @@ Connecting PixelPoint Bridge to HubRise allows your EPOS to:
 
 PixelPoint Bridge is a one-way connection from HubRise to the EPOS (push only integration). This means that information only flows from HubRise to the EPOS, not vice versa.
 
-Therefore, PixelPoint Bridge cannot transfer the menu from the EPOS to HubRise, which must then be inserted with a manual process in the online ordering system. For more information, see [Mapping Ref Codes](/apps/pixelpoint/map-ref-codes). Furthermore, it cannot transfer orders placed on the EPOS back to HubRise.
+Therefore, PixelPoint Bridge cannot transfer the menu from the EPOS to HubRise, which must then be inserted with a manual process in the online ordering system. For more information, see [Mapping Ref Codes](/apps/pixelpoint-bridge/map-ref-codes). Furthermore, it cannot transfer orders placed on the EPOS back to HubRise.
 
 ![Connection Diagram](../images/001-en-2x-connection-diagram.png)
 

@@ -25,7 +25,7 @@ For more details, see [Orders](/docs/data/#orders).
 Each app displays the most recent activity as a graph. To check the activity for a specific app:
 
 1. Click **CONNECTIONS**.
-1. For the specific App, click **Actions > View activity**.
+1. For the specific App, click **Actions** > **View activity**.
 
 For more information, see [View Connection Activity](/docs/connections/#view-connection-activity).
 
@@ -34,7 +34,7 @@ For more information, see [View Connection Activity](/docs/connections/#view-con
 Apps connected to HubRise provide logs that help display the most recent requests, and the details behind it. To view an App's log files:
 
 1. Click **CONNECTIONS**.
-1. For the specific App, click **Actions > View logs**.
+1. For the specific App, click **Actions** > **View logs**.
 
 For more information, view [View Connection Logs](/docs/connections/#view-connection-logs)
 

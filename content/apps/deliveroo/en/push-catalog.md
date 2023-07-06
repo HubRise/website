@@ -15,24 +15,39 @@ This page explains how to push your catalog, and what information is sent to Del
 
 ## Populate a HubRise Catalog
 
-To be able to update your menu in Deliveroo, you should populate a HubRise catalog first. Many apps connected with HubRise, including EPOS solutions, offer the ability to export the catalog to HubRise. Refer to your connected EPOS documentation on the HubRise website to verify.
+To update your menu in Deliveroo, you should have a HubRise catalog first. Many apps connected with HubRise, including EPOS solutions, offer the ability to push their menu into HubRise. Refer to your EPOS documentation on the HubRise website to verify.
 
-For more information on HubRise catalogs, see [Catalogs](/docs/catalog/).
+Alternatively, you can populate a HubRise catalog by pulling the menu from an existing Deliveroo or Uber Eats store. For more information, refer to these links:
 
-## Push the Catalog
+- [Pull a Catalog from Deliveroo](/apps/deliveroo/pull-catalog)
+- [Pull a Catalog from Uber Eats](/apps/uber-eats/pull-catalog)
 
-Once your catalog is populated on HubRise, you can push it to your Deliveroo store by following these steps:
+## Manual Catalog Push
 
-1. Log in to your HubRise account.
-1. Select the location connected with your Deliveroo store.
-1. Select **Deliveroo Bridge** from the list of connected apps.
-1. In Deliveroo Bridge, click the **Actions** tab, then select **Push catalog**.
+Once your catalog is populated on HubRise, and you have assigned ref codes to all products and options, you can push it manually to your Deliveroo store by following these steps:
+
+1. Log in to your [HubRise account](https://manager.hubrise.com).
+1. Select the HubRise account and location connected with your Deliveroo store.
+1. Open the **CONNECTIONS** page, then select **Deliveroo Bridge** from the list of connected apps.
+1. In Deliveroo Bridge, select the **Actions** tab, then click **Push catalog**.
+1. Check your Deliveroo online menu.
 
 ---
 
-**IMPORTANT NOTE:** Pushing your HubRise catalog into Deliveroo will erase the menu on your Deliveroo store. This action cannot be reverted.
+**IMPORTANT NOTE:** Pushing your HubRise catalog into Deliveroo will erase the current menu on your Deliveroo store, and replace your **Menu description** and **Menu banner** with the ones defined in the **Configuration** page. This action cannot be reverted. The catalog push will not work if ref codes are missing.
 
 ---
+
+## Automatic Catalog Push
+
+Deliveroo Bridge can automatically push your HubRise catalog into Deliveroo every time it is updated. By default, this option is turned off. You can enable it by following these steps:
+
+1. Log in to your [HubRise account](https://manager.hubrise.com).
+1. Select the HubRise account and location connected with your Deliveroo store.
+1. Open the **CONNECTIONS** page, then select **Deliveroo Bridge** from the list of connected apps.
+1. In Deliveroo Bridge, select the **Configuration** tab.
+1. In the **Catalog** section, tick the **Enable automatic catalog push** box.
+1. Click **Save**.
 
 ## Information Sent to Deliveroo
 
@@ -92,7 +107,7 @@ The order in which categories and products appear on HubRise is maintained on De
 
 ### Products and Skus
 
-For every [product](/developers/api/catalog-management/#products) with multiple skus, Deliveroo Bridge sends the following information to Deliveroo:
+Products have one or several skus. For every product with multiple skus, Deliveroo Bridge sends the following information to Deliveroo:
 
 - `ref`: The value `MULTISKU` is used for all products
 - `name`: The name of the product
@@ -156,5 +171,5 @@ For each deal in the catalog, Deliveroo Bridge creates a Deliveroo product with 
 
 - `name`: The name of the deal becomes the name of the product.
 - `category_ref`: If empty, Deliveroo Bridge creates a default category in Deliveroo called "Offers".
-- `ref`: The ref code of the deal becomes the ref of the product, preceeded by `DEAL-`. For example, for a deal with ref code `abc123`, Deliveroo Bridge creates a Deliveroo product with plu `DEAL-abc123`.
+- `ref`: The ref code of the deal becomes the ref of the product, preceded by `DEAL-`. For example, for a deal with ref code `abc123`, Deliveroo Bridge creates a Deliveroo product with PLU `DEAL-abc123`.
 - `lines`: For each object in the array, Deliveroo Bridge creates a list of modifiers, with `lines.name` as the name.

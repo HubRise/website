@@ -27,7 +27,7 @@ interface SidebarData {
 export function useSidebarData(): Array<SidebarArticle> {
   const data = useStaticQuery<SidebarData>(graphql`
     query getSidebarData {
-      allMdx(filter: { slug: { regex: "/^blog//" } }) {
+      allMdx(filter: { internal: { contentFilePath: { glob: "**/blog/**/__post.md" } } }) {
         nodes {
           fields {
             localeCode

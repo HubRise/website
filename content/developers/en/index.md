@@ -16,17 +16,17 @@ content:
     - title: Quick Start
       description: 10-minute guide to learn how to send your first API requests
       to: /developers/quick-start
-      icon: fa-fast-forward
+      icon: fast_forward
     - title: API Reference
       description: Full documentation of the API endpoints and concepts
       to: /developers/api/general-concepts
-      icon: fa-cogs
+      icon: code
     - title: Integration Guide
       description: Checklist and best practices to integrate to HubRise
       to: /developers/integration-guide
-      icon: fa-list-alt
+      icon: checklist
     - title: Conventions and edge cases
       description: Conventions used by other developers to cover edge cases
       to: /developers/conventions
-      icon: fa-sign-out
+      icon: menu_book
 ---

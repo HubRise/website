@@ -21,7 +21,6 @@ To export your catalog to HubRise, follow these steps:
    ![eTakeaway Max HubRise Menu page for store managers](../images/012-en-etm-hubrise-menu-log.png)
 1. Click on **Export** to push the menu to HubRise.
 
-
 ---
 
 **IMPORTANT NOTE**: This operation will replace your current HubRise catalog.

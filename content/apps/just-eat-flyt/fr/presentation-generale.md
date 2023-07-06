@@ -13,21 +13,17 @@ app_info:
   contact:
 ---
 
----
-
-**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link to="/apps/just-eat-flyt" addLocalePrefix={false}>en anglais uniquement</Link>.
-
----
-
 ## Description
 
-Just Eat est une plateforme de services de commande et de livraison de repas en ligne destinée aux restaurants et aux commerces de proximité. Les clients peuvent commander des plats sur Internet ou via une application mobile. Le siège de Just Eat est situé au Royaume-Uni, mais l'entreprise est présente dans 13 pays différents en Europe, en Asie, en Amérique et en Océanie.
+Just Eat est une plateforme de commande et de livraison de repas en ligne destinée aux restaurants et aux commerces de proximité. Les clients peuvent commander des plats sur internet ou via une application mobile. Le siège de Just Eat est situé au Royaume-Uni, mais l'entreprise est présente dans 13 pays différents situés en Europe, en Asie, en Amérique et en Océanie.
+
+Flyt est la plateforme d'intégration utilisée pour connecter les sites internet de commande et de livraison de repas exploités par Just Eat Takeaway.com sur certains marchés. Flyt a récemment changé de raison sociale pour devenir JET Connect.
 
 Au Royaume-Uni, en Irlande et au Canada, Just Eat se connecte à votre compte HubRise via l'application Just Eat Flyt Bridge développée par HubRise.
 
 ## Plateformes disponibles
 
-Just Eat Flyt Bridge vous permet de vous connecter à HubRise sur les plateformes suivantes :
+Flyt est disponible sur les plateformes Just Eat Takeaway.com suivantes :
 
 - Just-Eat.co.uk
 - Just-Eat.ie
@@ -36,21 +32,26 @@ Just Eat Flyt Bridge vous permet de vous connecter à HubRise sur les plateforme
 
 ---
 
-**REMARQUE IMPORTANTE :** Pour connecter un magasin hébergé sur une autre plateforme de Just Eat Takeaway.com, vous devez passer par l'application [Just Eat Takeaway Bridge](/apps/just-eat-takeaway/).
+**REMARQUE IMPORTANTE :** pour connecter votre enseigne à une autre plateforme Just Eat Takeaway.com, vous devez passer par l'application [Just Eat Takeaway Bridge](/apps/just-eat-takeaway/).
 
 ---
+
+Flyt est un middleware permettant une intégration plus performante, avec davantage de fonctionnalités que l'ancienne API mise à disposition par Just Eat Takeaway. Si vous exercez votre activité sur un marché non desservi par Flyt, il est tout de même possible de connecter votre enseigne par le biais de Flyt, à condition que l'équipe de Flyt approuve la connexion. En revanche, la disponibilité de toutes les fonctions d'intégration n'est pas garantie selon le marché concerné. Pour plus d'informations, veuillez contacter HubRise à l'adresse [support@hubrise.com](mailto:support@hubrise.com).
 
 ## Fonctionnalités de l'intégration
 
 La connexion avec Just Eat Flyt Bridge vous permet de :
 
-- Envoyer les commandes à HubRise, en incluant le statut des commandes. ![Schéma du flux de connexion entre Just Eat, Just Eat Flyt Bridge et HubRise pour la réception de commandes](../images/000-fr-2x-just-eat-connection-diagram.png)
-- Recevoir les informations de livraison dans HubRise, lorsque les commandes sont livrées par votre restaurant. ![Schéma du flux de connexion entre Just Eat, Just Eat Flyt Bridge et HubRise pour la gestion des informations de livraison](../images/009-fr-2x-just-eat-delivery-fleet-diagram.png)
-- Extraire la carte dans un catalogue HubRise et l'incorporer directement à votre magasin Just Eat. ![Schéma du flux de connexion entre Just Eat, Just Eat Flyt Bridge et HubRise pour l'extraction de la carte](../images/010-fr-2x-just-eat-menu-push-diagram.png)
+- Recevoir les commandes de Just Eat, y compris le statut de commande.
+- Recevoir les informations de livraison de Just Eat, pour les commandes livrées par le restaurant.
+- Envoyer un catalogue vers Just Eat.
+- Synchroniser l'inventaire avec HubRise.
+
+![Schéma du flux de connexion entre Just Eat, Just Eat Flyt Bridge et HubRise pour la réception de commandes](../images/000-fr-2x-just-eat-connection-diagram.png)
 
 ---
 
-**REMARQUE IMPORTANTE :** La tablette Just Eat doit rester allumée pour recevoir les commandes dans HubRise.
+**REMARQUE IMPORTANTE** : La tablette Just Eat doit rester allumée pour recevoir les commandes dans HubRise. Sur certains marchés, l'acceptation automatique peut être activée. Pour plus d'informations, voir [Puis-je désactiver la tablette ?](/apps/just-eat-flyt/faqs/desactiver-tablette/).
 
 ---
 
@@ -58,7 +59,7 @@ Just Eat Flyt Bridge peut être connecté à HubRise depuis le back-office de Hu
 
 ## Pourquoi se connecter ?
 
-Le fait de connecter votre restaurant en ligne ou votre magasin de proximité Just Eat à HubRise vous permet de recevoir vos commandes Just Eat directement dans votre logiciel de caisse, sur votre système d'écran de cuisine ou dans votre système de gestion de livraison également connecté à HubRise. Vous pouvez ainsi gérer les commandes Just Eat parallèlement à vos autres commandes, en utilisant vos outils habituels. Les commandes Just Eat transiteront par votre installation existante, comme vos autres commandes.
+Le fait de connecter votre restaurant ou votre commerce de proximité Just Eat à HubRise vous permet de recevoir vos commandes Just Eat directement dans votre logiciel de caisse, sur votre écran de cuisine ou dans votre système de gestion de livraison également connecté à HubRise. Vous pouvez ainsi gérer les commandes Just Eat parallèlement à vos autres commandes, en utilisant vos outils habituels. Les commandes Just Eat transiteront par votre installation existante, comme vos autres commandes.
 
 Grâce à HubRise, synchronisez votre menu, vos informations clients et vos commandes avec votre logiciel de caisse, les plateformes de livraison de repas (dont Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs ou de services de livraison, les solutions d'e-marketing (SMS/e-mailing) et de business intelligence, les systèmes de gestion de stock et de fidélisation client, et bien d'autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, consultez notre [page Apps](/apps).
 

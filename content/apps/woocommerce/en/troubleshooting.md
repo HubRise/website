@@ -7,9 +7,11 @@ meta:
   description: Troubleshooting WooCommerce connection with HubRise for your EPOS and other apps to work as a cohesive whole. Connect apps and synchronise your data.
 ---
 
-## Verify the Connection to HubRise
+## Orders Not Received in HubRise
 
-These steps require that you have already connected WooCommerce to HubRise. For more information on connecting WooCommerce to HubRise, see [Connect to HubRise](/apps/woocommerce/connect-hubrise/).
+The first step to receive orders in HubRise is to connect WooCommerce to HubRise. If you have not done so, follow the steps in [Connect to HubRise](/apps/woocommerce/connect-hubrise/) first.
+
+If you have connected WooCommerce to HubRise, but you are not receiving orders in HubRise, check the following items.
 
 ### Check WooCommerce Webhooks
 
@@ -46,3 +48,19 @@ To verify that your test order was transmitted to HubRise, follow these steps:
 1. Find your test order.
 
 If you can see the order, the connection between WooCommerce and HubRise is working correctly.
+
+## Orders Received in HubRise With a Delay
+
+By default, orders are transmitted from WooCommerce to HubRise by a process called a **cron**. This process runs every few minutes and transmits all orders that have not been transmitted yet. This can delay order creation and status updates.
+
+You can opt to transmit orders immediately, without waiting for the cron to run. This is called **synchronous webhooks**. To enable synchronous webhooks, follow these steps:
+
+1. Access your WordPress site files using an FTP client or your hosting control panel's file manager.
+1. Navigate to the `wp-content/themes/[your-theme]` directory, where `[your-theme]` is the folder of your active theme.
+1. Open the `functions.php` file and append the following code snippet at the end of the file:
+   ```
+   add_filter( 'woocommerce_webhook_deliver_async', '__return_false' );
+   ```
+1. Save the file and the changes will take effect immediately.
+
+If you are not sure how to do edit the `functions.php` file, contact the developer of your WooCommerce website.

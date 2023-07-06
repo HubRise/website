@@ -23,9 +23,9 @@ app_info:
 
 ## Description
 
-Dishop propose des services de commande en ligne et de livraison destinés principalement aux franchises de la restauration et aux dark kitchens. Ces services comprennent un package de solutions en SaaS axées sur la livraison : une application mobile et un site web de commande en ligne, ainsi qu'un outil de mise en relation et de gestion des livreurs indépendants. La solution fonctionne en marque blanche, sans intermédiaire et sans commission.
+Dishop propose des services de commande en ligne et de livraison destinés principalement aux franchises de la restauration et aux dark kitchens. Ces services comprennent un package de solutions en SaaS axées sur la livraison : une application mobile et un site internet de commande en ligne, ainsi qu'un outil de mise en relation et de gestion des livreurs indépendants. La solution fonctionne en marque blanche, sans intermédiaire et sans commission.
 
-Dishop donne au restaurant le contrôle sur son image : l'application mobile et le site web de commande en ligne sont personnalisés aux couleurs de l'enseigne. Ainsi, le consommateur ne commande pas chez Dishop, il commande chez son restaurant favori. Le restaurateur profite donc du bénéfice de notoriété et accroît la fidélité de sa clientèle.
+Dishop donne au restaurant le contrôle sur son image : l'application mobile et le site internet de commande en ligne sont personnalisés aux couleurs de l'enseigne. Ainsi, le consommateur ne commande pas chez Dishop, il commande chez son restaurant favori. Le restaurateur profite donc du bénéfice de notoriété et accroît la fidélité de sa clientèle.
 
 Dishop inclut des outils technologiques pour renforcer le lien entre les restaurateurs et leurs clients : envoi illimité de push notifications, codes promos, et programme de fidélité.
 

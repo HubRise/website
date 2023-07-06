@@ -3,7 +3,7 @@ title: Les commandes HubRise n'arrivent pas dans Nestor, que faire ?
 position: 3
 layout: documentation
 meta:
-  title: Commandes HubRise non reçues | Nestor F.A.Q. | HubRise
+  title: Commandes HubRise non reçues | FAQs Nestor | HubRise
   description: Que faire lorsque les commandes HubRise n'arrivent pas dans Nestor.
 ---
 
@@ -13,7 +13,7 @@ L'utilitaire WebNES est inclus dans l'installation de Nestor. Son rôle est de r
 
 Une fois le délai de 20 secondes écoulé, si la commande n'apparaît toujours pas, vérifiez que l'utilitaire WebNES est fonctionnel :
 
-1. Depuis votre espace HubRise, sélectionnez **CONNEXIONS**.
+1. Depuis le back-office de HubRise, sélectionnez **CONNEXIONS**.
 1. Dans la connexion **Nestor**, cliquez sur **Actions** > **Voir les logs**.
 1. Vérifiez les premières lignes. La présence de lignes `GET /v1/callback/events` toutes les 20 secondes environ, à des dates récentes, indique que l'utilitaire WebNES est lancé.
 
