@@ -1,12 +1,6 @@
-import { TFunction } from "react-i18next"
+import type { UseTranslationResponse } from "react-i18next"
 
 import { ArchiveInfo } from "../interface"
-
-import { SidebarArticle } from "./graphql"
-
-export function getRecentArticles(sidebarArticles: Array<SidebarArticle>): Array<SidebarArticle> {
-  return sidebarArticles.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 5)
-}
 
 function getArchiveInfoFromArticleDate(articleDate: Date): ArchiveInfo {
   return {
@@ -16,7 +10,7 @@ function getArchiveInfoFromArticleDate(articleDate: Date): ArchiveInfo {
   }
 }
 
-export function getArchiveTitle(archiveInfo: ArchiveInfo, t: TFunction<"translation">): string {
+export function getArchiveTitle(archiveInfo: ArchiveInfo, t: UseTranslationResponse<any, any>["0"]): string {
   const monthList = t("misc.month_list")
   const { year, month, isCurrentYear } = archiveInfo
   return isCurrentYear ? `${monthList[month]} ${year}` : String(year)

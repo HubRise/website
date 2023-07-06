@@ -9,25 +9,40 @@ meta:
 
 A **callback** notifies a client of changes that occurred on a set of resources. It can be used to monitor orders, customers, locations or catalogs.
 
-There are 2 types of callbacks:
-
-- An **active callback** is a URL set up on your server which HubRise calls every time an event occurs. If the URL is not immediately available, HubRise makes a couple more attempts a few minutes later.
-
-- A **passive callback** records events but does not send them. The client needs to poll HubRise regularly (every minute or so) to retrieve new events.
-
 ---
 
 **IMPORTANT NOTE**: A client does not receive notifications for the events it generated. If you are testing callbacks, you need to use a separate client to trigger events.
 
 ---
 
-Active callbacks receive a `POST` HTTP request each time an event occurs. The request body includes the JSON representation of the previous and new states of the affected resource:
+There are 2 types of callbacks:
+
+- An **active callback** is a URL set up on your server which HubRise calls every time an event occurs. If the URL is not immediately available, HubRise makes a couple more attempts a few minutes later.
+
+- A **passive callback** records events but does not send them. The client needs to poll HubRise regularly (every minute or so) to retrieve new events.
+
+### Active Callbacks
+
+Active callbacks receive a POST HTTP request each time an event occurs.
+
+The JSON body of the request includes the resource and event types, the id of the affected resource, the timestamp of the event, and in some cases, the previous and new values of the resource. The JSON is identical to the response of the `GET /callback/events/:id` request, and is described in greater detail in the [Retrieve Event](#retrieve-event) section.
+
+<details>
+
+<summary>Example of a customer update event</summary>
 
 ```json
+POST https://your-domain.com/hubrise_callback
+Content-Type: application/json
+X-HubRise-Hmac-SHA256: e6637f2720b9804f2a14913ce41e0fa53edb1136a4bd15c5ba31b8ad62bad0e5
+
 {
+  "id": "ks8f6",
   "resource_type": "customer",
-  "resource_id": "sdakm",
   "event_type": "update",
+  "created_at": "2020-06-25T11:43:51+02:00",
+  "customer_id": "ve343",
+  "customer_list_id": "sdakm",
   "previous_state": {
     "id": "jdj9v",
     "email": "tom@dummy-mail.org",
@@ -38,14 +53,24 @@ Active callbacks receive a `POST` HTTP request each time an event occurs. The re
     "email": "jim@dummy-mail.org",
     ...
   },
-  "account_id": "3r4s3",
-  "location_id": "3r4s3-1"
 }
 ```
 
-The callback must return a `200` HTTP code to acknowledge the reception of the event. This return code makes HubRise delete the event. If the callback fails to acknowledge the event, HubRise attempts to resend it later. In the meantime, unacknowledged events remain accessible through `GET /callback/events`.
+</details>
 
-If you use an active callback, we recommend that you check the authenticity of each event. The verification relies on computing the hexadecimal HMAC digest of the event request body. Here is a sample script in Ruby:
+To acknowledge the reception of an event, your callback must return an HTTP code in the `200-499` range, within 20 seconds. HubRise immediately deletes acknowledged events.
+
+#### Retries
+
+If the callback fails to return a valid response, for example if it returns a `5xx` HTTP code or if it times out, HubRise retries sending the event until it succeeds, or until the number of retries reaches 6. The time between retries doubles with each attempt, starting at 1 minute and reaching 32 minutes. In the meantime, unacknowledged events remain accessible through `GET /callback/events`.
+
+If the callback fails to acknowledge the event after 6 retries, HubRise deletes the event.
+
+#### Event Signatures
+
+To check the authenticity of an event received by your callback, in other words to make sure that it comes from HubRise, you can compute the signature of the event (see code below) and compare it with the `X-HubRise-Hmac-SHA256` header of the event. If they are different, simply return an error and ignore the event.
+
+To compute the event signature in Ruby:
 
 ```ruby
 require "openssl"
@@ -53,7 +78,7 @@ require "openssl"
 client_secret = "your_client_secret"
 payload = request.raw_body
 
-digest = OpenSSL::Digest.new('sha256')
+digest = OpenSSL::Digest.new("sha256")
 calculated_hmac = OpenSSL::HMAC.hexdigest(digest, client_secret, payload)
 ```
 
@@ -68,7 +93,18 @@ payload = req.rawBody
 const calculatedHmac = createHmac("sha256", client_secret).update(payload).digest("hex")
 ```
 
-Compare the calculated HMAC to the value in the `X-HubRise-Hmac-SHA256` header of the event notification. If they match, then you can be sure that the event was sent from HubRise. Otherwise, simply return an error and ignore the event.
+### Passive Callbacks
+
+Passive callbacks are a fallback mechanism for clients that cannot set up an active callback. They record events but do not send them. The client needs to poll HubRise regularly to retrieve new events.
+
+The client runs the following logic at regular intervals:
+
+- Call `GET /callback/events` to retrieve the list of events that occurred since the last call.
+- For each event in the list:
+  - Process the event.
+  - Delete it by calling `DELETE /callback/events/:id`.
+
+The interval between calls should be no less than 30 seconds, otherwise the connection may reach its daily [API rate limit](/developers/api/general-concepts#rate-limiting) before the end of the day.
 
 ## 1. Callbacks
 
@@ -78,12 +114,9 @@ A callback is specific to a connection. A connection can only have one callback.
 
 Returns the connection's callback details, including the URL and the types of events the callback listens to.
 
-<CallSummaryTable
-  endpoint="GET /callback"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /callback" accessLevel="location, account" />
 
-#### Example request:
+##### Example request:
 
 `GET /callback`
 
@@ -113,12 +146,9 @@ If no callback has been set, the response will be as follows:
 
 Creates a callback if none exists, replace the existing callback otherwise.
 
-<CallSummaryTable
-  endpoint="POST /callback"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="POST /callback" accessLevel="location, account" />
 
-#### Request parameters:
+##### Request parameters:
 
 | Name     | Type   | Description                                                                                  |
 | -------- | ------ | -------------------------------------------------------------------------------------------- |
@@ -140,7 +170,7 @@ The allowed combinations are:
 - `inventory.patch`
 - `inventory.update`
 
-#### Example request:
+##### Example request:
 
 `POST /callback`
 
@@ -160,42 +190,34 @@ Unregister the connection's callback.
 
 HubRise will no longer trigger events or call the callback URL.
 
-<CallSummaryTable
-  endpoint="DELETE /callback"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="DELETE /callback" accessLevel="location, account" />
 
 ## 2. Events
 
 ### 2.1. Retrieve Event
 
-Returns the event.
+Returns an event by its id.
 
-<CallSummaryTable
-  endpoint="GET /callback/events/:event_id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /callback/events/:event_id" accessLevel="location, account" />
 
-#### Example request:
+##### Example request:
 
 `GET /callback/events/ks8f6`
 
 ```json
 {
   "id": "ks8f6",
-  "created_at": "2020-06-25T11:43:51+02:00",
   "resource_type": "customer",
   "event_type": "update",
-  "customer_list_id": "sdakm",
+  "created_at": "2020-06-25T11:43:51+02:00",
   "customer_id": "ve343",
+  "customer_list_id": "sdakm",
   "previous_state": {
-    "id": "sdakm",
-    "first_name": "Thomas"
+    "first_name": "Thomas",
     ...
   },
   "new_state": {
-    "id": "sdakm",
-    "first_name": "Tomas"
+    "first_name": "Tom",
     ...
   }
 }
@@ -203,21 +225,29 @@ Returns the event.
 
 The returned event contains:
 
-- the time of the resource modification
-- the resource and event types
-- the ids of the affected resource and the parent resources
-- a copy of the state of the resource before and after the change (for update and create), or the difference between both states (for patch)
+- The id of the event.
+- The resource type, eg. `order`, `customer`, `catalog`, ...
+- The event type, which is one of: `create`, `update`, `patch`, and `delete`.
+- The time when the resource modification occurred.
+- The ids of the affected resource and its parent resources.
+- The state of the resource, before and/or the modification, when applicable.
+
+The state(s) of the resource included in the event depends on the resource and the event types, due to semantic and performance reasons:
+
+- The `new_state` field is only present for `create` and `update` event types.
+- The `previous_state` field is only present for `update` and `delete` event types.
+- Catalog events contain no state fields, for any event type.
+- Inventory events only contain a state field for `patch` event type. In this case, the field is named `state_change` and it contains the list of changes.
+
+When an event affects a catalog or an inventory, you will need to send a `GET` request to the HubRise API to retrieve the full state of the resource.
 
 ### 2.2. List Events
 
 Returns the events that have not been acknowledged (ie deleted).
 
-<CallSummaryTable
-  endpoint="GET /callback/events"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /callback/events" accessLevel="location, account" />
 
-#### Example request:
+##### Example request:
 
 `GET /callback/events`
 
@@ -243,11 +273,8 @@ Deletes (ie acknowledges) a callback event
 
 A passive callback should always delete events after retrieval or they will keep on being pulled by the [List events](#22-list-events) operation.
 
-<CallSummaryTable
-  endpoint="DELETE /callback/events/:event_id"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="DELETE /callback/events/:event_id" accessLevel="location, account" />
 
-#### Example request:
+##### Example request:
 
 `DELETE /callback/events/ks8f6`

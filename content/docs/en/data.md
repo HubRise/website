@@ -13,12 +13,12 @@ The Data section provides records for orders, customers, and catalogs. At any ti
 
 The **ORDERS** page displays your recent orders, with the most recent on top. For every order on the list, you can find the following attributes:
 
-- **Date, time and unique ID**: The date, time, and unique identifier for the order.
-- **Location**: If you select **All locations**, this column shows the Location that received the order.
-- **Customer**: The customer that made the order.
-- **Amount**: The total amount of the order.
-- **Status**: The current status of the order. For an overview of possible statuses, see the [Order status section](/developers/api/order-management/#order-status) of the HubRise API Order Management page.
-- **Origin**: What app the order was generated from.
+- **DATE (UTC+02:00)**: The date, time, and unique identifier for the order.
+- **LOCATION**: If you select **All locations**, this column shows the Location that received the order.
+- **CUSTOMER**: The customer that made the order.
+- **AMOUNT**: The total amount of the order.
+- **STATUS**: The current status of the order. For an overview of possible statuses, see the [Order status section](/developers/api/order-management/#order-status) of the HubRise API **Order Management** page.
+- **ORIGIN**: What app the order was generated from.
 
 To filter orders by start and end date:
 
@@ -31,7 +31,7 @@ To view the full details of the request, click the date and time in the **Logs**
 
 ---
 
-**Related FAQ**: <Link to="/docs/faqs/check-connection-between-my-system-and-hubrise/">How Do I Check If the Connection Between My System and HubRise Is Working?</Link>
+**Related FAQ**: [How Do I Check If the Connection Between My System and HubRise Is Working?](/docs/faqs/check-connection-between-my-system-and-hubrise)
 
 ---
 
@@ -41,10 +41,10 @@ The **CUSTOMERS** page displays the selected customer lists for the selected Acc
 
 The records on this page display the following attributes:
 
-- **Name**: The customer's name followed by their unique identifier.
-- **Orders**: How many orders the customer made since registration.
-- **Spending**: How much the customer has spent across all orders made on the Account.
-- **Since**: The date of the customer's first order.
+- **NAME**: The customer's name followed by their unique identifier.
+- **ORDERS**: How many orders the customer made since registration.
+- **SPENDING**: How much the customer has spent across all orders made on the Account.
+- **SINCE**: The date of the customer's first order.
 
 To filter customers by name or email address:
 
@@ -53,19 +53,15 @@ To filter customers by name or email address:
 1. Select the search icon to filter the customer records.
 1. To clear the customer filer, remove all text from the **Search by name or email** field then select the search icon <InlineImage width="17" height="17">![Search icon](../images/061-search.png)</InlineImage>.
 
-To see full details of a customer, click the customer name.
-To see full log file details of all requests effecting customers, click **View logs**. For more information, see [Logs](/docs/data/#logs).
+To see full details of a customer, click the customer name. To see the full logs of all the requests that make changes to the customer list, click **View logs**.
 
 To create, edit or remove a customer lists, see [Customer Lists](/docs/customer-lists).
 
 ## Catalogs
 
-The **CATALOGS** page displays the products included in the selected Catalog.
+From the **CATALOGS** page, you can view the catalogs pushed into HubRise and the logs of the requests that made changes to the catalog.
 
-Connected apps that have access to your HubRise catalog can pull its product list or push new products into it.
-For example, a connected EPOS can push its products catalog into HubRise for an e-commerce website to use it.
-
-From the Catalogs page, you can view the catalogs pushed into HubRise and the logs of the requests that made changes to the catalog.
+Connected apps that have access to your HubRise catalog can pull its product list or push new products into it. For example, a connected EPOS can push its catalog into HubRise for an e-commerce website to use it. If required, you can also edit the catalog using Catalog Manager, a free app available on HubRise.
 
 ### View Catalog
 
@@ -79,7 +75,7 @@ Catalogs are presented in three tabs:
 - **DISCOUNTS**: The discounts available in the catalog.
   Discount codes apply savings to the overall order rather than specific products. For example, **FREEDELIVERY** might remove the delivery fee for the entire order, or **FRIYAY** might provide a 10% discount to the entire order on Friday.
 
-![HubRise Catalog Tabs](../images/053-en-catalog-tabs.png)
+![HubRise Catalog Tabs](../images/053-en-2x-catalog-tabs.png)
 
 For SKUs, you can see the following attributes:
 
@@ -94,7 +90,7 @@ For Deals and Discounts, you can see the following attributes:
 - **NAME**: The Deal or Discount name.
 - **REF CODE**: The unique identifier of the Deal or Discount from the source product management system.
 
-To see the full logs of all the requests that make changes to the catalogs, click **View logs**. For more information, see [Logs](/docs/data/#logs).
+To see the full logs of all the requests that make changes to the catalog, click **View logs**. For more information, see [Logs](/docs/data/#logs).
 
 To create, edit or remove a catalogs, see [Catalogs](/docs/catalog).
 
@@ -104,9 +100,9 @@ Each page in the **DATA** section provides more information through its log page
 
 Logs record the requests from an app to HubRise. Each request is a transaction between an app and HubRise, such as an order, a new customer registered, or a catalog update.
 
-The log page displays a summary list of requests in reverse chronological order. When you open an order in the **ORDERS** page or select **View logs** on the **CUSTOMERS** or **CATALOGS** pages, the following information is displayed:
+The log page displays a summary list of requests in reverse chronological order. When you open an order in the **ORDERS** page, select a log on the **CUSTOMERS** page or click on **View logs** on the **CATALOGS** page, the following information is displayed:
 
-- **TIME (UTC)**: The date and time of the request, in UTC format.
+- **TIME (UTC+02:00)**: The date and time of the request, in UTC format.
 - **ORIGIN**: The app that created the request.
 - **ENDPOINT**: The endpoint of the request, including HTTP method and URL path.
 - **RESPONSE**: The HTTP response code.

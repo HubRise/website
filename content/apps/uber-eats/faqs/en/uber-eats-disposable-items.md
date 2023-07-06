@@ -1,6 +1,6 @@
 ---
 title: How Do I Configure HubRise for Uber Eats Disposable Items to Show In My EPOS?
-position: 2
+position: 3
 layout: documentation
 meta:
   title: Configure Uber Eats Disposable | Uber Eats FAQs | HubRise

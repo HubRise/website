@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
-import { breakpoints, colors, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizes, lineHeights, mixin } from "@utils/styles"
 import Link from "@layouts/shared/components/Link"
-import heroImage from "@assets/images/hero_image.jpg"
+import bannerImage from "@assets/images/hero_image.jpg"
 
-export const Container = styled.section`
+export const Container = styled.div`
   position: relative;
   display: flex;
   flex-flow: column-reverse;
@@ -15,10 +15,10 @@ export const Container = styled.section`
 `
 
 export const Image = styled.div`
-  background: black url(${heroImage}) no-repeat;
+  background: black url(${bannerImage}) no-repeat;
   background-size: cover;
   background-position-x: 100%;
-  height: 20em;
+  height: 20rem;
 
   @media (min-width: ${breakpoints.large}) {
     position: absolute;
@@ -34,7 +34,7 @@ export const Image = styled.div`
 export const TextContainer = styled.div`
   @media (min-width: ${breakpoints.large}) {
     ${mixin.container};
-    padding: 11em 0;
+    padding: 11rem 0;
   }
 `
 
@@ -70,28 +70,21 @@ export const Text = styled.div`
 `
 
 export const Title = styled.h1`
-  margin: 0;
-  font-family: "Poppins", sans-serif;
   font-weight: bold;
-  font-size: 2.625rem;
-  line-height: 1.25em;
+  font-size: ${fontSizes._42};
+  line-height: ${lineHeights.title};
 `
 
 export const Description = styled.div`
-  margin: 0.75rem 0 0.75rem 0;
-  font-size: 1.125rem;
-
-  @media (min-width: ${breakpoints.large}) {
-    font-size: 1.25rem;
-    line-height: 0.9em;
-  }
+  margin: 0.75rem 0;
+  font-size: ${fontSizes._18};
 `
 
 export const Button = styled(Link)`
   display: inline-block;
   color: ${colors.primary};
-  background-color: #ffffff;
+  background-color: ${colors.backgroundWhite};
 
   ${mixin.button};
-  ${mixin.buttonOver(colors.white, colors.darkGray)};
+  ${mixin.buttonOver(colors.white, colors.textDarkest)};
 `

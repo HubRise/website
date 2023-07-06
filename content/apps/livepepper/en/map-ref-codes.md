@@ -61,7 +61,7 @@ To update the ref code for toppings, options, and variants defined at the catego
 At the end of the process you can check if all product values and attributes have been mapped. For more information, see [Verify Product Mapping](/apps/livepepper/troubleshooting#verify-product-mapping).
 
 <video controls title="Update Ingredients EPOS Code">
-  <source src="../images/018-ingredients-pos-code-update.webm" type="video/webm"/>
+  <source src="../images/018-ingredients-pos-code-update.webm" type="video/webm" />
 </video>
 
 ## Deals and Discounts
@@ -78,7 +78,7 @@ To add ref code to a deal, follow these steps.
 At the end of the process you can check if all deals have been mapped. For more information, see [Verify Product Mapping](/apps/livepepper/troubleshooting#verify-product-mapping)
 
 <video controls title="Update Deals Ref Code">
-  <source src="../images/019-deals-pos-code-update.webm" type="video/webm"/>
+  <source src="../images/019-deals-pos-code-update.webm" type="video/webm" />
 </video>
 
 ---
@@ -89,7 +89,7 @@ At the end of the process you can check if all deals have been mapped. For more 
 
 ## Payment Methods
 
-Payment methods you set up on LivePepper may require a ref code. Refer to your connected EPOS documentation on the HubRise website to verify.
+Payment methods you set up on LivePepper may require a ref code. Refer to your EPOS documentation on the HubRise website to verify.
 
 To add a ref code to a payment method, follow these steps.
 
@@ -100,12 +100,12 @@ To add a ref code to a payment method, follow these steps.
 1. Click **Save** to confirm.
 
 <video controls title="Add Ref Code to Payment Method">
-  <source src="../images/024-payment-method-add-pos-code.webm" type="video/webm"/>
+  <source src="../images/024-payment-method-add-pos-code.webm" type="video/webm" />
 </video>
 
 ## Service Types
 
-Service types such as delivery, collection or eat in might require a ref code. Refer to your connected EPOS documentation on the HubRise website to verify.
+Service types such as delivery, collection or eat-in might require a ref code. Refer to your EPOS documentation on the HubRise website to verify.
 
 To add a ref code to a service type, follow these steps:
 
@@ -115,7 +115,7 @@ To add a ref code to a service type, follow these steps:
 
 ## Delivery Charges
 
-If delivery charges apply for the service offered, a ref code might be required. Refer to your connected EPOS documentation on the HubRise website to verify.
+If delivery charges apply for the service offered, a ref code might be required. Refer to your EPOS documentation on the HubRise website to verify.
 
 To add a ref code to a delivery charge, follow these steps:
 

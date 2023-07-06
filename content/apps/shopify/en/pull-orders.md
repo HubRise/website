@@ -7,7 +7,9 @@ meta:
   description: Find out the technical details of how orders are pulled from Shopify into HubRise, which fields are passed and which are not.
 ---
 
-Connecting Shopify to HubRise allows you to receive orders directly in your EPOS. This page describes the information that HubRise receives from Shopify for your orders.
+Connecting Shopify to HubRise allows you to receive orders directly in your EPOS or any other solution connected to your HubRise account.
+
+This page describes the information that HubRise receives from Shopify for your orders.
 
 ## Items, Options, and Deals
 
@@ -15,7 +17,7 @@ Shopify orders contain the complete information about items, including name, POS
 
 ## Order Statuses
 
-When an order status changes on HubRise, Shopify Bridge notifies Shopify, and the change can be seen by the customer.
+When an order status changes in HubRise, Shopify Bridge notifies Shopify, and the change can be seen by the customer.
 
 From the configuration page of Shopify Bridge, you can customise how to map the different HubRise order statuses to Shopify. For more information, see [Order Statuses](/apps/shopify/configuration#order-statuses).
 
@@ -100,7 +102,7 @@ Shopify Bridge encodes delivery charges in the `charges` array, if they are pres
 
 The available fields in the payloads are the following:
 
-- `name`: The name of the delivery charge, which is "Delivery charge" by default.
+- `name`: The name of the delivery charge, which is `Delivery charge` by default.
 - `type`: The type of charge. It has always the value `delivery`.
 - `price`: The total amount of the delivery charge.
 

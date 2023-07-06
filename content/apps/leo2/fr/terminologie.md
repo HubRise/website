@@ -1,6 +1,6 @@
 ---
 title: Terminologie
-position: 6
+position: 8
 layout: documentation
 meta:
   title: Terminologie | LEO2 | HubRise

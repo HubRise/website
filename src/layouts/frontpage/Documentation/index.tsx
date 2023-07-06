@@ -1,10 +1,11 @@
 import * as React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-import { Container, Text, Title, Description, Image } from "./Styles"
+import { Content, ImageWithMargin, Text } from "../shared/Styles"
 
 import { ImageNode } from "@utils/image"
-import { markdownToHtml } from "@utils/misc"
+import { markdownToHtml } from "@layouts/shared/utils/markdown"
+import Block from "@layouts/shared/components/Block"
 
 interface DocumentationProps {
   title: string
@@ -13,21 +14,29 @@ interface DocumentationProps {
 }
 
 const Documentation = ({ title, description, image }: DocumentationProps): JSX.Element => {
-  return (
-    <section className="frontpage__row frontpage__row_oneside">
-      <div className="frontpage__row_oneside__in frontpage__row_oneside__in_right">
-        <Container>
-          <Text>
-            <Title>{title}</Title>
-            <Description dangerouslySetInnerHTML={{ __html: markdownToHtml(description) }} />
-          </Text>
+  const side = (
+    <ImageWithMargin>
+      <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt="Documentation" />
+    </ImageWithMargin>
+  )
 
-          <Image>
-            <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt="Documentation" />
-          </Image>
-        </Container>
-      </div>
-    </section>
+  return (
+    <Block
+      backgroundColor="white"
+      verticalSpacing="small"
+      padding="small"
+      beforeExpansion={false}
+      afterExpansion={true}
+      title={title}
+      side={side}
+      sidePosition="left"
+      horizontalAlign="centerOnMobile"
+      desktopVerticalAlign="center"
+    >
+      <Content>
+        <Text $backgroundColor="white" dangerouslySetInnerHTML={{ __html: markdownToHtml(description) }} />
+      </Content>
+    </Block>
   )
 }
 

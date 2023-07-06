@@ -7,16 +7,17 @@ meta:
   description: Integrating eTakeaway Max with food ordering platforms requires you to specify particular ref codes in the configuration page of the delivery platform bridge.
 ---
 
-To connect eTakeaway Max to Deliveroo, Uber Eats, or Just Eat, use the configuration parameters provided below.
+With HubRise, you can receive orders from Deliveroo, Just Eat, Uber Eats and other food platforms in eTakeaway Max. You can also push your menu from eTakeaway Max to food platforms.
+
+This page describes the settings to use to connect food ordering platforms to eTakeaway Max.
+
+For more information, check the documentation of these platforms in our [Apps page](/apps/food-ordering-platforms).
 
 ## Deliveroo
 
-To receive Deliveroo orders in eTakeaway Max, you first need to connect Deliveroo Bridge, an app included in your HubRise
-subscription. For more information about Deliveroo Bridge, see the [Deliveroo Bridge documentation](/apps/deliveroo).
+To receive Deliveroo orders in eTakeaway Max, you first need to connect Deliveroo Bridge, an app included in your HubRise subscription. For more information about Deliveroo Bridge, see the [Deliveroo Bridge documentation](/apps/deliveroo).
 
-To correctly receive your orders, specify the following values in the Deliveroo Bridge configuration page. To learn how
-to view and modify the configuration page for Deliveroo Bridge, see
-the [Deliveroo Configuration page](/apps/deliveroo/configuration).
+In the Deliveroo Bridge configuration page, use the following settings:
 
 | Section        | Name                                  | Ref code                                          |
 | -------------- | ------------------------------------- | ------------------------------------------------- |
@@ -24,47 +25,46 @@ the [Deliveroo Configuration page](/apps/deliveroo/configuration).
 | Service types  | Restaurant fulfilled ref code         | `DLVRDEL`                                         |
 | Service types  | Takeaway ref code                     | `DLVRTKWY`                                        |
 | Service types  | Send orders delivered by Deliveroo as | `collection orders`                               |
-| Discounts      | Offer ref code                        | (leave empty)                                     |
+| Discounts      | Discount ref code                     | (leave empty)                                     |
 | Charges        | Delivery charge ref code              | (leave empty)                                     |
 | Charges        | Surcharge ref code                    | (leave empty)                                     |
-| Payments       | Deliveroo payment ref code            | (leave empty)                                     |
+| Charges        | Bag fee ref code                      | (leave empty)                                     |
+| Payments       | Online payment ref code               | (leave empty)                                     |
 | Payments       | Cash payment ref code                 | (leave empty)                                     |
 | Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Received"` |
 
-## Uber Eats
-
-To receive Uber Eats orders in eTakeaway Max, you first need to connect Uber Eats Bridge, an app included in your HubRise
-subscription. For more information about Uber Eats Bridge, see the [Uber Eats Bridge documentation](/apps/uber-eats).
-
-To correctly receive your orders, specify the following values in the Uber Eats Bridge configuration page. To learn how
-to view and modify the configuration page for Uber Eats Bridge, see
-the [Uber Eats Configuration page](/apps/uber-eats/configuration).
-
-| Section        | Name                                         | Ref code or value                                              |
-| -------------- | -------------------------------------------- | -------------------------------------------------------------- |
-| Service types  | Uber delivery ref code                       | `UBECLCT`                                                      |
-| Service types  | Restaurant delivery ref code (\*)            | `UBEDEL`                                                       |
-| Service types  | Takeaway ref code                            | `UBETKWY`                                                      |
-| Service types  | Eat-in ref code                              | `eatin_ref`                                                    |
-| Service types  | Send orders delivered by Uber Eats as        | `collection orders`                                            |
-| Special items  | Disposable items ref code                    | Create a product in eTakeaway Max and use its ref code. (\*\*) |
-| Discounts      | Discount ref code                            | (leave empty)                                                  |
-| Charges        | Delivery charge ref code                     | (leave empty)                                                  |
-| Charges        | Small order fee ref code                     | (leave empty)                                                  |
-| Charges        | Tip ref code                                 | (leave empty)                                                  |
-| Payments       | Payment ref code                             | (leave empty)                                                  |
-| Order statuses | Mark orders as Accepted                      | `when their HubRise status changes to "Received"`              |
-| Menu           | Enable preparation notes on individual items | Tick the checkbox                                              |
-
-(\*) BYOC - Bring Your Own Courier
-(\*\*) Only applies if you offer disposable items, such as cutlery, napkins, etc.
-
 ## Just Eat
 
-To receive Just Eat orders in eTakeaway Max, you first need to connect Just Eat Flyt Bridge, an app included in your
-HubRise subscription.
+Just Eat offers two APIs:
 
-To correctly receive your orders, specify the following values in the Just Eat Flyt Bridge configuration page.
+- The Flyt API is used on the Just-Eat.co.uk, Just-Eat.ie, Menulog and SkipTheDishes platforms, and for chains on other markets. This API allows you to synchronise the orders and the menu.
+- The Takeaway API, the older one, is used for independents on other markets. It allows you to receive orders, but not to send the menu.
+
+If you are not sure which API to use, contact [support@hubrise.com](mailto:support@hubrise.com).
+
+### Just Eat via Takeaway API
+
+To receive Just Eat orders in eTakeaway Max via Takeaway API, you first need to connect Just Eat Takeaway Bridge, an app included in your HubRise subscription. For more information about Just Eat Takeaway Bridge, see the [Just Eat Takeaway Bridge documentation](/apps/just-eat-takeaway).
+
+In the Just Eat Takeaway Bridge configuration page, use the following settings:
+
+| Section        | Name                                     | Ref code                                          |
+| -------------- | ---------------------------------------- | ------------------------------------------------- |
+| Service types  | Just Eat delivery ref code               | `COLLECT`                                         |
+| Service types  | Restaurant delivery ref code             | `DEL`                                             |
+| Service types  | Takeaway ref code                        | `COLLECT`                                         |
+| Service types  | Send orders delivered by the platform as | `collection orders`                               |
+| Discounts      | Discount ref code                        | (leave empty)                                     |
+| Charges        | Delivery charge ref code                 | (leave empty)                                     |
+| Payments       | Online payment ref code                  | (leave empty)                                     |
+| Payments       | Cash payment ref code                    | (leave empty)                                     |
+| Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Received"` |
+
+### Just Eat via Flyt API
+
+To receive Just Eat orders in eTakeaway Max via Flyt API, you first need to connect Just Eat Flyt Bridge, an app included in your HubRise subscription. For more information about Just Eat Flyt Bridge, see the [Just Eat Flyt Bridge documentation](/apps/just-eat-flyt).
+
+In the Just Eat Flyt Bridge configuration page, use the following settings:
 
 | Section        | Name                                     | Ref code                                          |
 | -------------- | ---------------------------------------- | ------------------------------------------------- |
@@ -81,3 +81,28 @@ To correctly receive your orders, specify the following values in the Just Eat F
 | Payments       | Online payment ref code                  | (leave empty)                                     |
 | Payments       | Cash payment ref code                    | (leave empty)                                     |
 | Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Received"` |
+
+## Uber Eats
+
+To receive Uber Eats orders in eTakeaway Max, you first need to connect Uber Eats Bridge, an app included in your HubRise subscription. For more information about Uber Eats Bridge, see the [Uber Eats Bridge documentation](/apps/uber-eats).
+
+In the Uber Eats Bridge configuration page, use the following settings:
+
+| Section        | Name                                         | Ref code or value                                            |
+| -------------- | -------------------------------------------- | ------------------------------------------------------------ |
+| Service types  | Uber delivery ref code                       | `UBECLCT`                                                    |
+| Service types  | Restaurant delivery ref code                 | `UBEDEL`                                                     |
+| Service types  | Takeaway ref code                            | `UBETKWY`                                                    |
+| Service types  | Eat-in ref code                              | `eatin_ref`                                                  |
+| Service types  | Send orders delivered by Uber Eats as        | `collection orders`                                          |
+| Special items  | Disposable items ref code                    | Create a product in eTakeaway Max and use its ref code. (\*) |
+| Discounts      | Discount ref code                            | (leave empty)                                                |
+| Charges        | Delivery charge ref code                     | (leave empty)                                                |
+| Charges        | Small order fee ref code                     | (leave empty)                                                |
+| Charges        | Tip ref code                                 | (leave empty)                                                |
+| Payments       | Online payment ref code                      | (leave empty)                                                |
+| Payments       | Cash payment ref code                        | (leave empty)                                                |
+| Order statuses | Mark orders as Accepted                      | `when their HubRise status changes to "Received"`            |
+| Menu           | Enable preparation notes on individual items | Tick if you wish to enable them                              |
+
+(\*) Only applies if you offer disposable items, such as cutlery, napkins, etc.

@@ -16,25 +16,25 @@ content:
     - title: How to Contribute
       description: Things to know before contributing.
       to: /contributing/how-to-contribute
-      icon: fa-fast-forward
+      icon: fast_forward
     - title: Style Guide
       description: Editorial guidelines for contributors.
       to: /contributing/style-guide
-      icon: fa-check
+      icon: check
     - title: Referral on HubRise
       description: Elements to provide to reference your solution on HubRise.
       to: /contributing/reference-your-solution-on-hubrise
-      icon: fa-pencil
+      icon: edit
     - title: Screenshots Guide
       description: Screenshot guidelines and file naming convention.
       to: /contributing/screenshots-guide
-      icon: fa-desktop
+      icon: computer
     - title: Video Guide
       description: Useful commands for generating short tutorial videos.
       to: /contributing/video-guide
-      icon: fa-film
+      icon: play_circle
     - title: Diagram Guide
       description: Instructions to create diagrams.
       to: /contributing/diagram-guide
-      icon: fa-sitemap
+      icon: schema
 ---

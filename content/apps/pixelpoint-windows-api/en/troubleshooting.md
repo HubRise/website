@@ -70,7 +70,7 @@ PixelPoint requests are in [XML format](/apps/pixelpoint-windows-api/understandi
 
 Besides, they also use different keys to refer to the same value. When investigating a problem with support teams, you might want to use their respective API key to avoid confusion.
 
-A table has been created to help map keys from HubRise to PixelPoint. For more information, see [HubRise vs PixelPoint Terms](/apps/pixelpoint/hubrise-pixelpoint-terms/).
+A table has been created to help map keys from HubRise to PixelPoint. For more information, see [HubRise vs PixelPoint Terms](/apps/pixelpoint-windows-api/terminology/).
 
 ## PAR PixelPoint Support
 

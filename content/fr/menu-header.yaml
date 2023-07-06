@@ -7,7 +7,9 @@
   to: /fr/tarifs
 - title: Développeurs
   to: /fr/developers
+- title: Blog
+  to: /fr/blog
 - title: Aide
   to: /fr/docs
-- title: F.A.Q.
-  to: /fr/faq
+- title: FAQs
+  to: /fr/faqs

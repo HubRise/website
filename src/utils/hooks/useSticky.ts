@@ -9,7 +9,7 @@ const useSticky = (ref: React.RefObject<HTMLElement>, topOffset: number): boolea
   const [isSticky, setIsSticky] = React.useState(false)
 
   const handleScroll = React.useCallback((): void => {
-    if (ref.current) setIsSticky(ref.current.getBoundingClientRect().top === topOffset)
+    if (ref.current) setIsSticky(ref.current.getBoundingClientRect().top <= topOffset + anchorTolerance)
   }, [setIsSticky, ref, topOffset])
 
   React.useLayoutEffect(() => {
@@ -23,3 +23,6 @@ const useSticky = (ref: React.RefObject<HTMLElement>, topOffset: number): boolea
 }
 
 export default useSticky
+
+// In px. The nav position may be slightly greater than topOffset after the user clicks on an anchor link.
+const anchorTolerance = 1

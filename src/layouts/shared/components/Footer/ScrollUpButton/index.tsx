@@ -2,9 +2,12 @@ import * as React from "react"
 
 import { StyledButton } from "./Styles"
 
-const ScrollUpButton: React.FC = () => (
+import Icon from "@layouts/shared/components/Icon"
+import { iconSizes } from "@utils/styles"
+
+const ScrollUpButton = (): JSX.Element => (
   <StyledButton onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-    <i className="fa fa-angle-up" />
+    <Icon code="expand_less" size={iconSizes._32} />
   </StyledButton>
 )
 

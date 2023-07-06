@@ -16,14 +16,26 @@ docker-compose -f docker-compose.yml up --build website_dev
 
 **macOS:**
 
-We don't recommended using Docker on macOS, because of file synchronization issues which slow down the development process.
-Instead you should install NodeJS and the required dependencies locally, following this guide: https://www.gatsbyjs.org/tutorial/part-zero/
+We don't recommend using Docker on macOS, because of file synchronization issues which slow down the development process.
+Instead, you should install NodeJS and the required dependencies locally, following this guide: https://www.gatsbyjs.org/tutorial/part-zero/
 (short version: install Xcode Command line tools, NodeJS, and run `npm install` in a shell at the root of your project)
 
 To run the website, open a console, and type:
 
 ```
 yarn gatsby develop
+```
+
+If you see the following error:
+
+```
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed
+```
+
+Try the command below, which allocates more memory:
+
+```
+NODE_OPTIONS="--max-old-space-size=4096" yarn gatsby develop
 ```
 
 **macOS with Docker (not recommended):**

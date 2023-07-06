@@ -24,6 +24,10 @@ export interface FolderFiles {
 }
 
 export interface MDXDocumentationNode {
+  id: string
+  internal: {
+    contentFilePath: string
+  }
   body: string
   fields: {
     localeCode: LocaleCode
@@ -34,8 +38,8 @@ export interface MDXDocumentationNode {
     position: number
     title: string
   }
-  id: string
   parent: {
+    id: string
     /** File name, eg: "map-ref-codes" */
     name: string
     /** Directory path, eg: "apps/deliveroo/en" */
@@ -64,6 +68,10 @@ export async function generateFolders(graphql: GraphQLFunction, customizationsMa
         filter: { frontmatter: { layout: { in: ["documentation", "documentation-index", "documentation-simple"] } } }
       ) {
         nodes {
+          id
+          internal {
+            contentFilePath
+          }
           fields {
             localeCode
           }
@@ -73,8 +81,8 @@ export async function generateFolders(graphql: GraphQLFunction, customizationsMa
             position
             title
           }
-          id
           parent {
+            id
             ... on File {
               name
               relativeDirectory

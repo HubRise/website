@@ -20,7 +20,7 @@ Zelty propose une logiciel de caisse complète conçue pour les restaurants trad
 
 Il s'agit d'une solution ouverte qui s'intègre aux outils existants des clients, directement ou via HubRise.
 
-Zelty est conforme à la réglementation anti-fraude entrée en vigueur en France le 1er janvier 2018. Le back-office est disponible en français.
+Zelty est conforme à la loi française anti-fraude 2018. Son back-office est disponible en français.
 
 ## Fonctionnalités de l'intégration
 

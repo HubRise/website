@@ -21,7 +21,7 @@ Dans un premier temps, l'intégration de HubRise doit être activée sur votre c
 
 Contactez-nous par e-mail à l'adresse [support@hubrise.com](mailto:support@hubrise.com) en précisant les informations suivantes :
 
-- L'adresse URL du magasin Uber Eats que vous souhaitez connecter. Exemple : [https://www.ubereats.com/dijon/food-delivery/911-pizza-%2526-burger-darcy/IeJDe6o4SASA6EMABBbPZw](https://www.ubereats.com/dijon/food-delivery/911-pizza-%2526-burger-darcy/IeJDe6o4SASA6EMABBbPZw).
+- L'adresse URL du magasin Uber Eats que vous souhaitez connecter. Exemple : [https://www.ubereats.com/fr/store/sushik-pizza/nzisHcL5S6C5ODzz0D3EnA](https://www.ubereats.com/fr/store/sushik-pizza/nzisHcL5S6C5ODzz0D3EnA).
 - Le nom et l'identifiant de votre point de vente HubRise. Exemple : `Fast Pizza Paris z6q31-0`.
 - Le mode d'acceptation des commandes que vous souhaitez utiliser : manual accept (acceptation manuelle) ou offered state (état proposé). Pour plus de détails, reportez-vous à notre [FAQ](/apps/uber-eats/faqs/recevoir-commandes-sans-tablette).
 - Si vous livrez les commandes par vos propres moyens, indiquez-le nous.
@@ -39,7 +39,7 @@ Avec ces informations, l'équipe d'intégration d'Uber Eats pourra activer la co
 
 Maintenant que vous disposez de votre UUID de magasin Uber Eats, vous pouvez connecter Uber Eats Bridge :
 
-1. Connectez-vous à votre compte HubRise.
+1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com).
 1. Sélectionnez le point de vente que vous souhaitez connecter dans le menu déroulant.
 1. Sélectionnez **CONNEXIONS**, puis **Voir les apps disponibles**.
 1. Dans la liste des apps, sélectionnez **Uber Eats**.

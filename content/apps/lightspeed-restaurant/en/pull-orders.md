@@ -13,19 +13,20 @@ This page explains how to enable this feature and what information is sent to Hu
 
 ## Enable Pull Orders
 
-To start pulling Lightspeed orders into HubRise, you need to activate this feature from the Configuration page of Lightspeed Restaurant Bridge, first. Follow these steps.
+To start pulling Lightspeed orders into HubRise, you need to enable the feature by following these steps:
 
-1. From the Lightspeed Restaurant Bridge main page, click the arrow <InlineImage width="20" height="20">![Arrow icon](../images/001-arrow.jpg)</InlineImage> at the top right corner of the page to expand the menu, then click **Configuration**.
-1. From the **Pull orders from Lightspeed** section, select the **Enabled for paid sales** option.
+1. Open Lightspeed Restaurant Bridge.
+1. Click the arrow <InlineImage width="20" height="20">![Arrow icon](../images/001-arrow.jpg)</InlineImage> in the top right corner of the page to expand the menu, then click **Configuration**.
+1. From the **Pull orders from Lightspeed** section, select the **Enabled for dine-in sales** or **Enabled for all paid sales** option, depending on your needs.
 1. Click **Save** to confirm.
 
 ![Enable the feature to pull local Lightspeed orders to HubRise from the configuration page of Lightspeed Restaurant Bridge](../images/014-en-configuration-page.png)
 
-Lightspeed Restaurant Bridge fetches new orders every 30 seconds.
+Lightspeed Restaurant Bridge fetches new orders every 30 seconds. There can be a delay of up to 30 seconds between the time an order is paid for and the time it appears in HubRise.
 
 ---
 
-**IMPORTANT NOTE:** Only closed orders, that is, orders that have been paid for in the EPOS, are currently pulled into HubRise. Support for open orders will be added soon, as well.
+**IMPORTANT NOTE:** Only paid sales are pulled into HubRise.
 
 ---
 
@@ -49,8 +50,8 @@ Lightspeed Restaurant Bridge receives the complete information about the payment
 
 ### Service Types
 
-All local orders are created in HubRise as eat in orders. Lightspeed Restaurant Bridge uses the service type ref code corresponding to eat in orders in Lightspeed, when available.
+Dine-in sales in Lightspeed are created in HubRise as `eat-in` orders, while take-away sales are created as `collection` orders. There is no way to differentiate between take-away and delivery orders.
 
 ### Additional Information
 
-Lightspeed Restaurant Bridge receives additional information about the local order, such as the table number and the time the order was paid for.
+Lightspeed Restaurant Bridge receives additional information about the order, such as the table number and the time the order was paid for.

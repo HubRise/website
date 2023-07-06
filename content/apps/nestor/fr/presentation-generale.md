@@ -25,7 +25,7 @@ Nestor enregistre les informations client et l'historique de commandes. Il perme
 
 Nestor est édité depuis 2004 par la société Svitex. Près d'un millier de restaurants l'utilisent, principalement des entreprises indépendantes possédant entre 1 et 12 points de vente, situées en France, en Suisse et en Belgique.
 
-Nestor a été conçu pour le marché français. Il est conforme à la loi française "anti-fraudes" du 1er janvier 2018. L'éditeur fournit une attestation de conformité.
+Nestor a été conçu pour le marché français. Il est conforme à la loi française anti-fraude 2018. L'éditeur fournit une attestation de conformité.
 
 ## Fonctionnalités de l'intégration
 

@@ -3,7 +3,7 @@ title: Je viens de créer un produit dans Kezia II. Pourquoi n'apparaît-il pas 
 position: 1
 layout: documentation
 meta:
-  title: Produit non exporté | Kezia II F.A.Q. | HubRise
+  title: Produit non exporté | FAQs Kezia II | HubRise
   description: Comment activer l'export d'un produit vers HubRise dans Kezia II.
 ---
 

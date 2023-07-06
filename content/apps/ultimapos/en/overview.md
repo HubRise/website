@@ -31,7 +31,7 @@ A back office allows you to set up UltimaPOS and generate statistics and reports
 
 UltimaPOS is available through a network of resellers in France, that work in proximity of their customer base.
 
-UltimaPOS is NF525 certified, and therefore complies with the January 2018 French "anti-fraud" regulations.
+UltimaPOS is NF525 certified, making it compliant with the 2018 French Anti-Fraud Act.
 
 ## Integration Features
 

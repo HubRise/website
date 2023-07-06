@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:experimental
-FROM node:16.15.0-bullseye
+FROM node:18.16.0-bookworm
 
 # -------------
 # Install packages
@@ -50,4 +50,4 @@ ENTRYPOINT ["docker_dev/bin/entrypoint.sh"]
 
 # Launch Gatsby server (local development)
 USER node
-CMD ["bash", "-c", "yarn run gatsby clean ; yarn run gatsby develop -H 0.0.0.0 -p 8000"]
+CMD ["bash", "-c", "yarn run gatsby develop -H 0.0.0.0 -p 8000"]

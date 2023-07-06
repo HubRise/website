@@ -1,4 +1,5 @@
 import * as React from "react"
+import { useTranslation } from "react-i18next"
 
 import { IAppInfo } from "./interface"
 import { StyledAppInfo, Value } from "./Styles"
@@ -11,19 +12,20 @@ interface AppInfoProps {
 }
 
 const AppInfo = ({ appInfo }: AppInfoProps): JSX.Element => {
+  const { t } = useTranslation()
+
   return (
-    <StyledAppInfo className="section__content">
+    <StyledAppInfo>
       <ul>
-        {Object.entries(appInfo).map(([label, value]) => {
+        {Object.entries(appInfo).map(([key, value]) => {
           if (!value) return
 
-          const labelWithSpaces = label.split(`_`).join(` `)
-          const capitalizedLabel = labelWithSpaces[0].toUpperCase() + labelWithSpaces.slice(1)
-
+          const label = t(`documentation.app_info.${key}`) + t("misc.colon")
           return (
-            <li key={generateKey(label, value)}>
-              {capitalizedLabel}:{` `}
-              <Value>{label === `website` ? <Link to={value}>{value}</Link> : value}</Value>
+            <li key={generateKey(key, value)}>
+              {label}
+              {` `}
+              <Value>{key === `website` ? <Link to={value}>{value}</Link> : value}</Value>
             </li>
           )
         })}

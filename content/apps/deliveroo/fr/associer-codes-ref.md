@@ -7,11 +7,11 @@ meta:
   description: Comment saisir les codes ref de votre logiciel de caisse dans votre menu Deliveroo, en utilisant le gestionnaire de menu de Deliveroo.
 ---
 
-Pour traiter correctement les commandes, la plupart des logiciel de caisse exigent un code ref pour chaque produit. Lorsque vous créez votre menu sur Deliveroo, vous devez donc vous assurer que chaque produit est associé à un code ref correct.
+Pour traiter correctement les commandes, la plupart des logiciels de caisse exigent un code ref pour chaque produit. Lorsque vous créez votre menu sur Deliveroo, vous devez donc vous assurer que chaque produit est associé à un code ref correct.
 
 ---
 
-**REMARQUE IMPORTANTE :** Si vous n'attribuez pas de code ref à tous vos produits, Deliveroo ne traitera pas correctement la commande. Pour plus d'informations, voir la rubrique [Pourquoi mes commandes ne sont-elles pas reçues par HubRise ?](/apps/deliveroo/faqs/commandes-non-recues-code-ref-manquants)
+**REMARQUE IMPORTANTE :** Si vous n'attribuez pas un code ref à chacun de vos produits, Deliveroo ne traitera pas correctement la commande. Pour plus d'informations, voir [Commandes non reçues](/apps/deliveroo/depannage#commandes-non-re-ues).
 
 ---
 

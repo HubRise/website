@@ -1,10 +1,11 @@
 import styled from "styled-components"
 
-import { breakpoints, colors, mixin, sizes, zIndexValues } from "@utils/styles"
+import { breakpoints, colors, fontSizes, mixin, sizes, zIndexValues } from "@utils/styles"
 import Link from "@layouts/shared/components/Link"
+import Icon from "@layouts/shared/components/Icon"
 
 export const StyledMobileBar = styled.div`
-  @media (min-width: ${breakpoints.large}) {
+  @media (min-width: ${breakpoints.burgerMenu}) {
     display: none;
   }
 `
@@ -38,40 +39,38 @@ export const Header = styled.header`
   align-items: center;
   height: ${sizes.headerHeight};
   border-bottom: 4px solid ${colors.primary};
-  font-size: 2rem;
-  font-weight: 600;
   color: ${colors.primary};
 `
 
-export const HeaderButton = styled.div`
-  padding-left: 0.5em;
+export const HeaderIcon = styled(Icon)`
+  margin-left: 1rem;
 `
 
 export const HeaderTitle = styled.div`
+  font-size: ${fontSizes._32};
+  font-weight: 600;
   text-align: center;
   text-transform: uppercase;
 `
 
 export const Nav = styled.div`
   flex: 1;
-  padding-top: 2em;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 `
 
-export const NavLink = styled(Link)`
-  display: block;
-  color: ${colors.gray};
-  margin-bottom: 1em;
-  padding: 0 1em;
+export const NavLink = styled(Link)<{ $topMargin?: boolean }>`
+  width: 100%;
+  color: ${colors.textDark};
+  padding: 0.5rem 1rem;
+  ${(props) => props.$topMargin && "margin-top: 2rem"};
 
   ${mixin.linkOver(colors.primary)};
 
   &.is-active {
     color: ${colors.primary};
-  }
-
-  &.signup {
-    margin-top: 2em;
   }
 `
 
@@ -83,7 +82,7 @@ export const NavLinkLogin = styled(Link)`
   background-color: ${colors.primary};
   border-radius: 3px;
 
-  ${mixin.buttonOver(colors.white, colors.darkGray)};
+  ${mixin.buttonOver(colors.white, colors.textDarkest)};
 `
 
 export const LanguageList = styled.ul`
@@ -101,6 +100,6 @@ export const LanguageItem = styled.li`
 `
 
 export const LanguageLink = styled(Link)`
-  color: ${colors.gray};
+  color: ${colors.textDark};
   ${mixin.linkOver(colors.primary)};
 `

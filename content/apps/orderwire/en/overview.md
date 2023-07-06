@@ -15,7 +15,7 @@ gallery:
 path_override: /
 app_info:
   category: Point of Sales
-  availability: Currently available in Ireland and Thailand
+  availability: Ireland, United Kingdom and Thailand
   price_range:
   website: https://orderwire.com
   contact: hubrise@orderwire.com

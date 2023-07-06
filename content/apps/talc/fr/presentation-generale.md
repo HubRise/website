@@ -26,7 +26,7 @@ T.A.L.C Informatique est une société de service en ingénierie informatique (S
 
 Delivery System de T.A.L.C permet de gérer un ou plusieurs points de vente avec dispatching des coursiers, prise de commande, suivi des modifications et des annulations, gestion du stock, des achats et des coûts, géolocalisation des clients et envoi automatisé de SMS.
 
-Delivery System est conforme à la loi française "anti-fraudes" du 1er janvier 2018. L'éditeur fournit une attestation de conformité.
+Delivery System est conforme à la loi française anti-fraude 2018. L'éditeur fournit une attestation de conformité.
 
 ## Fonctionnalités de l'intégration
 

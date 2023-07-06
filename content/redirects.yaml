@@ -1,100 +1,104 @@
+# Main pages
+- fromPath: /fr/faq/
+  toPath: /fr/faqs/
+
 # Developers
-- fromPath: /developers/api
-  toPath: /developers/api/general-concepts
-- fromPath: /fr/developers/api
-  toPath: /fr/developers/api/general-concepts
-- fromPath: /developers/authentication
-  toPath: /developers/api/authentication
-- fromPath: /fr/developers/authentication
-  toPath: /fr/developers/api/authentication
+- fromPath: /developers/api/
+  toPath: /developers/api/general-concepts/
+- fromPath: /fr/developers/api/
+  toPath: /fr/developers/api/general-concepts/
+- fromPath: /developers/authentication/
+  toPath: /developers/api/authentication/
+- fromPath: /fr/developers/authentication/
+  toPath: /fr/developers/api/authentication/
 
 # Apps
 ## aquila -> aquila-cms
-- fromPath: /apps/aquila
-  toPath: /apps/aquila-cms
-- fromPath: /fr/apps/aquila
-  toPath: /fr/apps/aquila-cms
+- fromPath: /apps/aquila/
+  toPath: /apps/aquila-cms/
+- fromPath: /fr/apps/aquila/
+  toPath: /fr/apps/aquila-cms/
 
 ## ikentoo -> lightspeed-restaurant
-- fromPath: /apps/ikentoo
-  toPath: /apps/lightspeed-restaurant
-- fromPath: /fr/apps/ikentoo
-  toPath: /fr/apps/lightspeed-restaurant
+- fromPath: /apps/ikentoo/
+  toPath: /apps/lightspeed-restaurant/
+- fromPath: /fr/apps/ikentoo/
+  toPath: /fr/apps/lightspeed-restaurant/
 
 ## /apps/ikentoo-lightspeed -> /apps/lightspeed-restaurant
-- fromPath: /apps/ikentoo-lightspeed
-  toPath: /apps/lightspeed-restaurant
-- fromPath: /apps/ikentoo-lightspeed/connect-hubrise
-  toPath: /apps/lightspeed-restaurant/connect-hubrise
-- fromPath: /apps/ikentoo-lightspeed/faqs
-  toPath: /apps/lightspeed-restaurant/faqs
-- fromPath: /apps/ikentoo-lightspeed/food-ordering-platforms
-  toPath: /apps/lightspeed-restaurant/food-ordering-platforms
-- fromPath: /apps/ikentoo-lightspeed/map-ref-codes
-  toPath: /apps/lightspeed-restaurant/map-ref-codes
-- fromPath: /apps/ikentoo-lightspeed/overview
-  toPath: /apps/lightspeed-restaurant/overview
-- fromPath: /apps/ikentoo-lightspeed/pushing-catalog
-  toPath: /apps/lightspeed-restaurant/pushing-catalog
-- fromPath: /apps/ikentoo-lightspeed/receiving-orders
-  toPath: /apps/lightspeed-restaurant/receiving-orders
-- fromPath: /apps/ikentoo-lightspeed/sending-orders
-  toPath: /apps/lightspeed-restaurant/sending-orders
-- fromPath: /apps/ikentoo-lightspeed/terminology
-  toPath: /apps/lightspeed-restaurant/terminology
-- fromPath: /apps/ikentoo-lightspeed/user-interface
-  toPath: /apps/lightspeed-restaurant/user-interface
-- fromPath: /apps/ikentoo-lightspeed/faqs/create-ref-codes
-  toPath: /apps/lightspeed-restaurant/faqs/create-ref-codes
-- fromPath: /apps/ikentoo-lightspeed/faqs/troubleshooting-failed-orders
-  toPath: /apps/lightspeed-restaurant/faqs/troubleshooting-failed-orders
+- fromPath: /apps/ikentoo-lightspeed/
+  toPath: /apps/lightspeed-restaurant/
+- fromPath: /apps/ikentoo-lightspeed/connect-hubrise/
+  toPath: /apps/lightspeed-restaurant/connect-hubrise/
+- fromPath: /apps/ikentoo-lightspeed/faqs/
+  toPath: /apps/lightspeed-restaurant/faqs/
+- fromPath: /apps/ikentoo-lightspeed/food-ordering-platforms/
+  toPath: /apps/lightspeed-restaurant/food-ordering-platforms/
+- fromPath: /apps/ikentoo-lightspeed/map-ref-codes/
+  toPath: /apps/lightspeed-restaurant/map-ref-codes/
+- fromPath: /apps/ikentoo-lightspeed/overview/
+  toPath: /apps/lightspeed-restaurant/overview/
+- fromPath: /apps/ikentoo-lightspeed/pushing-catalog/
+  toPath: /apps/lightspeed-restaurant/pushing-catalog/
+- fromPath: /apps/ikentoo-lightspeed/receiving-orders/
+  toPath: /apps/lightspeed-restaurant/receiving-orders/
+- fromPath: /apps/ikentoo-lightspeed/sending-orders/
+  toPath: /apps/lightspeed-restaurant/sending-orders/
+- fromPath: /apps/ikentoo-lightspeed/terminology/
+  toPath: /apps/lightspeed-restaurant/terminology/
+- fromPath: /apps/ikentoo-lightspeed/user-interface/
+  toPath: /apps/lightspeed-restaurant/user-interface/
+- fromPath: /apps/ikentoo-lightspeed/faqs/create-ref-codes/
+  toPath: /apps/lightspeed-restaurant/faqs/create-ref-codes/
+- fromPath: /apps/ikentoo-lightspeed/faqs/troubleshooting-failed-orders/
+  toPath: /apps/lightspeed-restaurant/faqs/troubleshooting-failed-orders/
 
 ## /fr/apps/ikentoo-lightspeed -> /fr/apps/lightspeed-restaurant
-- fromPath: /fr/apps/ikentoo-lightspeed
-  toPath: /fr/apps/lightspeed-restaurant
-- fromPath: /fr/apps/ikentoo-lightspeed/faqs
-  toPath: /fr/apps/lightspeed-restaurant/faqs
-- fromPath: /fr/apps/ikentoo-lightspeed/faqs/mettre-a-jour-ikentoo-bridge
-  toPath: /fr/apps/lightspeed-restaurant/faqs/mettre-a-jour-lightspeed-restaurant-bridge
+- fromPath: /fr/apps/ikentoo-lightspeed/
+  toPath: /fr/apps/lightspeed-restaurant/
+- fromPath: /fr/apps/ikentoo-lightspeed/faqs/
+  toPath: /fr/apps/lightspeed-restaurant/faqs/
+- fromPath: /fr/apps/ikentoo-lightspeed/faqs/mettre-a-jour-ikentoo-bridge/
+  toPath: /fr/apps/lightspeed-restaurant/faqs/mettre-a-jour-lightspeed-restaurant-bridge/
 
 ## /apps/uber-eats
-- fromPath: /apps/uber-eats/sending-orders
-  toPath: /apps/uber-eats/receive-orders
-- fromPath: /apps/uber-eats/pulling-menu
-  toPath: /apps/uber-eats/push-catalog
+- fromPath: /apps/uber-eats/sending-orders/
+  toPath: /apps/uber-eats/receive-orders/
+- fromPath: /apps/uber-eats/pulling-menu/
+  toPath: /apps/uber-eats/push-catalog/
 
 ## /apps/deliveroo
-- fromPath: /apps/deliveroo/sending-orders
-  toPath: /apps/deliveroo/receive-orders
-- fromPath: /apps/deliveroo/pulling-menu
-  toPath: /apps/deliveroo/push-catalog
+- fromPath: /apps/deliveroo/sending-orders/
+  toPath: /apps/deliveroo/receive-orders/
+- fromPath: /apps/deliveroo/pulling-menu/
+  toPath: /apps/deliveroo/push-catalog/
 
 ## /apps/lightspeed-restaurant
-- fromPath: /apps/lightspeed-restaurant/pushing-catalog
-  toPath: /apps/lightspeed-restaurant/pull-catalog
-- fromPath: /apps/lightspeed-restaurant/receiving-orders
-  toPath: /apps/lightspeed-restaurant/push-orders
-- fromPath: /apps/lightspeed-restaurant/sending-orders
-  toPath: /apps/lightspeed-restaurant/pull-orders
+- fromPath: /apps/lightspeed-restaurant/pushing-catalog/
+  toPath: /apps/lightspeed-restaurant/pull-catalog/
+- fromPath: /apps/lightspeed-restaurant/receiving-orders/
+  toPath: /apps/lightspeed-restaurant/push-orders/
+- fromPath: /apps/lightspeed-restaurant/sending-orders/
+  toPath: /apps/lightspeed-restaurant/pull-orders/
 
 ## /apps/shopify
-- fromPath: /apps/shopify/sending-orders
-  toPath: /apps/shopify/pull-orders
-- fromPath: /apps/shopify/pulling-catalog
-  toPath: /apps/shopify/push-catalog
+- fromPath: /apps/shopify/sending-orders/
+  toPath: /apps/shopify/pull-orders/
+- fromPath: /apps/shopify/pulling-catalog/
+  toPath: /apps/shopify/push-catalog/
 
 ## /apps/woocommerce
-- fromPath: /apps/woocommerce/sending-orders
-  toPath: /apps/woocommerce/pull-orders
-- fromPath: /apps/woocommerce/pulling-catalog
-  toPath: /apps/woocommerce/push-catalog
+- fromPath: /apps/woocommerce/sending-orders/
+  toPath: /apps/woocommerce/pull-orders/
+- fromPath: /apps/woocommerce/pulling-catalog/
+  toPath: /apps/woocommerce/push-catalog/
 
 ## /apps/just-eat-takeaway
-- fromPath: /apps/just-eat-takeaway/sending-orders
-  toPath: /apps/just-eat-takeaway/receive-orders
+- fromPath: /apps/just-eat-takeaway/sending-orders/
+  toPath: /apps/just-eat-takeaway/receive-orders/
 
 ## /apps/just-eat-flyt
-- fromPath: /apps/just-eat-flyt/pulling-menu
-  toPath: /apps/just-eat-flyt/push-catalog
-- fromPath: /apps/just-eat-flyt/sending-orders
-  toPath: /apps/just-eat-flyt/receive-orders
+- fromPath: /apps/just-eat-flyt/pulling-menu/
+  toPath: /apps/just-eat-flyt/push-catalog/
+- fromPath: /apps/just-eat-flyt/sending-orders/
+  toPath: /apps/just-eat-flyt/receive-orders/

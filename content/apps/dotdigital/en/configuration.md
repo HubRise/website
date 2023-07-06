@@ -13,7 +13,7 @@ After you connect the dotdigital Bridge to HubRise, you will be asked to configu
 
 ---
 
-**IMPORTANT NOTE:** In order to connect your dotdigital account to HubRise, you need to provide valid API credentials. See [Connection to HubRise](/apps/dotdigital/connect-hubrise) for instructions on how to create an API managed user.
+**IMPORTANT NOTE:** In order to connect your dotdigital account to HubRise, you need to provide valid API credentials. See [Connect to HubRise](/apps/dotdigital/connect-hubrise) for instructions on how to create an API managed user.
 
 ---
 

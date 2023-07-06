@@ -34,12 +34,15 @@ Suivez ensuite ces étapes :
 
 ## Donner accès au support Kezia II
 
-Il est conseillé de donner à l'éditeur du logiciel Kezia II l'accès à votre compte HubRise. En cas de besoin, ils pourront ainsi vous venir en aide. Pour cela, suivez les étapes suivantes :
+Pour faciliter la prise en charge de vos demandes de support, nous vous recommandons de donner accès à votre compte HubRise à l'éditeur de la solution Kezia II.
 
-1. Depuis votre espace HubRise, sélectionnez **CONFIGURATION** > **COMPTES**. La liste de vos comptes s'affiche.
-1. Sélectionnez le compte auquel votre point de vente est rattaché.
-1. Dans l'espace **Points de vente**, sélectionnez votre point de vente.
-1. Dans la section **Permissions**, ajoutez *licencekezia@jdc.fr* en sélectionnant l'option **Manager** (et non **Admin**) dans la liste déroulante des rôles, puis cliquez sur l'icône _+_. L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre point de vente, le partage de mot de passe étant déconseillé pour des raisons de sécurité.
+Pour donner accès à Kezia II, procédez comme suit :
+
+1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
+1. Dans la section **Permissions**, ajoutez licencekezia@jdc.fr en sélectionnant l'option **Manager** dans la liste déroulante des rôles.
+1. Cliquez sur l'icône **+** pour ajouter le nouvel utilisateur.
+
+L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre point de vente. Le partage de mot de passe est déconseillé pour des raisons de sécurité.
 
 ## Configurer les actions de caisse
 

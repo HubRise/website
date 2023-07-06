@@ -28,12 +28,15 @@ En cas de besoin, l'éditeur de la solution SuperDigital.fr peut vous venir en a
 
 ## Donner accès au support de SuperDigital.fr
 
-Il est conseillé de donner à l'éditeur de la solution SuperDigital.fr l'accès à votre compte HubRise. En cas de besoin, ils pourront ainsi vous venir en aide. Pour cela, suivez les étapes suivantes :
+Pour faciliter la prise en charge de vos demandes de support, nous vous recommandons de donner accès à votre compte HubRise à l'éditeur de la solution SuperDigital.fr.
 
-1. Depuis votre espace HubRise, sélectionnez **CONFIGURATION** > **COMPTES** dans le menu de gauche. La liste de vos comptes s'affiche.
-1. Sélectionnez le compte auquel votre point de vente est rattaché.
-1. Dans la section **Points de vente**, sélectionnez votre point de vente.
-1. Dans la section **Permissions**, ajoutez *contact@superdigital.fr* en sélectionnant l'option **Manager** (et non **Admin**) dans la liste déroulante des rôles, puis cliquez sur l'icône _+_. L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre point de vente, le partage de mot de passe étant déconseillé pour des raisons de sécurité.
+Pour donner accès à SuperDigital.fr, procédez comme suit :
+
+1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
+1. Dans la section **Permissions**, ajoutez contact@superdigital.fr en sélectionnant l'option **Manager** dans la liste déroulante des rôles.
+1. Cliquez sur l'icône **+** pour ajouter le nouvel utilisateur.
+
+L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre point de vente. Le partage de mot de passe est déconseillé pour des raisons de sécurité.
 
 ## Déconnecter SuperDigital.fr
 

@@ -1,10 +1,5 @@
-/**
- * Return the layout at the given path relative to the layouts/ directory.
- *
- * Ex:
- *
- * getLayoutPath('apps') // returns src/layouts/apps.js
- */
+import * as path from "path"
+
 export function getLayoutPath(layoutName: string): string {
-  return require.resolve(`${__dirname}/../../../layouts/${layoutName}`)
+  return path.resolve(`src/layouts/${layoutName}/index.tsx`)
 }

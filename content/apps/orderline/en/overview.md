@@ -13,7 +13,7 @@ app_info:
   availability: Worldwide
   price_range: Included in your HubRise subscription
   website: https://www.hubrise.com
-  contact: support@hubrise.com
+  contact: contact@hubrise.com
 ---
 
 [comment]: # "Include 003-en-2x-tablet-view.png & 002-en-2x-smartphone-view.png to the gallery once designed in the relevant hardware"

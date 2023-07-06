@@ -7,7 +7,7 @@ meta:
   description: Instructions on mapping GonnaOrder product ref codes with other apps after connecting your EPOS with HubRise. Connect apps and synchronise your data.
 ---
 
-Most EPOS solutions require a ref code for each product to correctly parse orders. Therefore, when you create your menu on GonnaOrder, you need to make sure that each product is assigned to the correct ref code. This applies also to service types, payments, and fees.
+Most EPOS solutions require a ref code for each product to properly interpret orders. Therefore, when you create your menu on GonnaOrder, you need to make sure that each product is assigned to the correct ref code. This applies also to service types, payments, and fees.
 
 This page explains how to map ref codes in your GonnaOrder back office.
 

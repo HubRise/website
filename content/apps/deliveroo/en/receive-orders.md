@@ -1,13 +1,17 @@
 ---
 title: Receive Orders
-position: 7
+position: 8
 layout: documentation
 meta:
   title: Receive Orders | Deliveroo | HubRise
   description: Find out the technical details of how orders are received from Deliveroo into HubRise, which fields are passed and which are not.
 ---
 
-Connecting Deliveroo to HubRise allows you to receive Deliveroo orders directly in your EPOS. This page describes the information that is passed by Deliveroo Bridge for the orders you receive.
+Connecting Deliveroo to HubRise allows you to receive Deliveroo orders directly in your EPOS or any other solution connected to your HubRise account.
+
+You have the option to either manually accept orders on the tablet or set up auto-accept. If you prefer not to use a tablet, you can leave it switched off or not have one at all. For more information, see [How Can I Abandon the Deliveroo Tablet?](/apps/deliveroo/faqs/abandon-deliveroo-tablet/)
+
+This page describes the information Deliveroo sends to HubRise. It helps you understand how orders will be received on your EPOS.
 
 ## Items and Options
 
@@ -45,10 +49,18 @@ Every option has single quantity. Multiple identical options are encoded in sepa
 
 ## Order Statuses
 
+---
+
+**IMPORTANT NOTE:** In this section, we capitalise the first letter of Deliveroo statuses to make them easier to distinguish from HubRise status names. For example, `Succeeded` is a Deliveroo status, while `accepted` is a HubRise status.
+
+---
+
+### Deliveroo Statuses
+
 A Deliveroo order goes through several statuses during its lifecycle:
 
 - `Succeeded`: The order has been accepted by the EPOS, and is confirmed on Deliveroo.
-- `Failed`: The order could not be sent to the EPOS. Deliveroo sends a message to the Deliveroo tablet prompting staff to check their POS for the order, and enter manually into the till if needed.
+- `Failed`: The order could not be sent to the EPOS. Deliveroo sends a message to the Deliveroo tablet prompting staff to check their POS for the order, and enter manually into the EPOS if needed.
 - `In Kitchen`: Cooking has started.
 - `Ready for Collection`: Food is cooked and packaged.
 - `Collected`: The order has been collected.
@@ -61,9 +73,9 @@ New orders must be marked as `Succeeded` or `Failed` within 3 minutes, otherwise
 
 ---
 
-### Change the status of an order in Deliveroo
+### When the Status Changes in HubRise
 
-When an order status changes on HubRise, Deliveroo Bridge notifies Deliveroo and the change is reflected in the Deliveroo tablet. The correspondence between HubRise and Deliveroo statuses is as follows:
+When an order status changes in HubRise, Deliveroo Bridge notifies Deliveroo and the change is reflected in the Deliveroo tablet. The correspondence between HubRise and Deliveroo statuses is as follows:
 
 | HubRise status                               | Deliveroo status                                                           |
 | -------------------------------------------- | -------------------------------------------------------------------------- |
@@ -77,7 +89,7 @@ Deliveroo Bridge lets you decide which HubRise status triggers the `Succeeded` s
 
 Other HubRise status values are not supported and are not sent on Deliveroo.
 
-### Change the status of an order in HubRise
+### When the Status Changes in Deliveroo
 
 When an order is cancelled from the Deliveroo tablet, it is marked as `cancelled` on HubRise.
 
@@ -89,17 +101,20 @@ Deliveroo supports three service types:
 - Delivery by the restaurant's fleet
 - Customer collection
 
-These are typically associated with specific ref codes in your EPOS. For more information, see your EPOS documentation in our [apps page](/apps).
+These are typically associated with specific ref codes in your EPOS. For more information, see your EPOS documentation in our [Apps page](/apps).
+
+## Order Times
+
+Deliveroo provides the time when the eater expects to receive or collect the order. Deliveroo Bridge sends this time to HubRise as the `expected_time` field. This time cannot be changed by the EPOS.
 
 ## Customer
 
-Deliveroo never provides the customer's full name and email address in their API. Therefore, Deliveroo Bridge never creates customers in HubRise, but includes the customer's details directly in the order.
+Deliveroo never provides the customer's full name, personal phone number or email address. It does not provide any customer identification number either. Therefore, Deliveroo Bridge does not create customers in HubRise, but includes the customer's details directly in the order.
 
-For restaurant delivery orders, Deliveroo Bridge retrieves the following information from Deliveroo:
+For restaurant delivery orders, Deliveroo Bridge provides the following details:
 
 - `first_name`: The customer's first name.
 - `last_name`: The initial of the customer's last name.
-- `email`: orders@deliveroo.com
 - `address_1`: The first line of the address.
 - `address_2`: The second line of the address.
 - `city`: The city of the address.
@@ -109,11 +124,10 @@ For restaurant delivery orders, Deliveroo Bridge retrieves the following informa
 - `phone`: Deliveroo support number. Note: This is not the customer's phone number.
 - `delivery_notes`: The access code to identify the order when calling Deliveroo support and the delivery notes left by the customer, in the format "Phone access code: `access_code`. `note`".
 
-For other types of orders, Deliveroo Bridge provides the following default customer details:
+For other types of orders, Deliveroo Bridge provides the following details:
 
-- `first_name`: Deliveroo
-- `last_name`: Order
-- `email`: orders@deliveroo.com
+- `first_name`: The customer's first name.
+- `phone`: Deliveroo support number. Note: This is not the customer's phone number.
 
 ## Discounts
 
@@ -121,36 +135,25 @@ The discount applied to the order is passed in a single object in the HubRise `d
 
 The available fields in the payload are the following:
 
-- `name`: The name of the discount, which is "Discount" by default.
+- `name`: The name of the discount, which is `Discount` by default.
 - `ref`: The ref code of the discount. Its default value can be set from the Configuration page of Deliveroo Bridge and should match the value in your EPOS.
 - `price_off`: The total amount of the discount.
 
 ## Charges
 
-Deliveroo Bridge encodes two types of charges: Delivery charges, and small order surcharges.
+Deliveroo Bridge can encode three types of charges:
 
-### Delivery Charges
-
-Delivery charges are applied for orders delivered by the restaurant.
-
-The available fields in the payloads are the following:
-
-- `name`: The name of the delivery charge, which is "Delivery charge" by default.
-- `type`: The type of charge. It has always the value `delivery`.
-- `ref`: The ref code of the charge. Its default value can be set from the Configuration page of Deliveroo Bridge and should match the value in your EPOS.
-- `price`: The total amount of the delivery charge.
-
-### Small Order Surcharges
-
-Small order surcharges, applied when the total price for an order is below the minimum order price.
+- Delivery charges are applied for orders delivered by the restaurant.
+- Small order surcharges apply to orders below the minimum order amount.
+- Bag fees are required by regulations in some countries.
 
 The available fields in the payloads are the following:
 
-- `name`: The name of the charge, which is "Surcharge" by default.
-- `type`: The type of charge. It has always the value `other`.
+- `name`: The name of the delivery charge, which is either `Delivery charge`, `Surcharge` or `Bag fee`.
+- `type`: The type of charge. It has the value `delivery` for delivery charges, and `other` for small order surcharges and bag fees.
 - `ref`: The ref code of the charge. Its default value can be set from the Configuration page of Deliveroo Bridge and should match the value in your EPOS.
-- `price`: The total amount of the small order surcharge.
+- `price`: The amount of the charge.
 
 ## Customer Notes
 
-Product-level customer notes are encoded in the `customer_notes` field.
+Order-level customer notes are encoded in the `customer_notes` field.

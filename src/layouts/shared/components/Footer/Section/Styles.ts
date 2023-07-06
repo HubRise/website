@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { breakpoints, colors, mixin } from "@utils/styles"
+import { breakpoints, colors, lineHeights, mixin } from "@utils/styles"
 import Link from "@layouts/shared/components/Link"
 
 const headerGap = "1em"
@@ -16,7 +16,7 @@ export const Header = styled.div`
     margin-left: auto;
     margin-right: auto;
     margin-top: ${headerGap};
-    background-color: ${colors.lightGray};
+    background-color: ${colors.textMedium};
     width: 4em;
     height: 2px;
 
@@ -29,10 +29,10 @@ export const Header = styled.div`
 
 export const Item = styled.li`
   margin-bottom: 0.6em;
-  line-height: 1.2;
+  line-height: ${lineHeights.textCompact};
 `
 
 export const ItemLink = styled(Link)`
-  color: ${colors.silverGray};
+  color: ${colors.textLighter};
   ${mixin.linkOver(colors.white)};
 `

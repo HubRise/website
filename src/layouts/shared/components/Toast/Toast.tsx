@@ -1,9 +1,10 @@
 import * as React from "react"
-import { faTimesCircle } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { animate, getIcon, IToast } from "./helpers"
-import { StyledToast, Content, Description, Title, CloseButton, Icon } from "./Styles"
+import { StyledToast, Content, Description, Title, CloseButton, Side } from "./Styles"
+
+import { iconSizes } from "@utils/styles"
+import Icon from "@layouts/shared/components/Icon"
 
 type ToastProps = {
   toast: IToast
@@ -31,9 +32,9 @@ const Toast = ({ toast, onClose }: ToastProps): JSX.Element => {
 
   return (
     <StyledToast ref={toastRef} $variant={toast.variant}>
-      <Icon>
-        <FontAwesomeIcon icon={getIcon(toast.variant)} color="white" />
-      </Icon>
+      <Side>
+        <Icon code={getIcon(toast.variant)} size={iconSizes._50} />
+      </Side>
 
       <Content>
         {toast.title && <Title>{toast.title}</Title>}
@@ -41,7 +42,7 @@ const Toast = ({ toast, onClose }: ToastProps): JSX.Element => {
       </Content>
 
       <CloseButton type="button" onClick={() => onClose(toast.id)}>
-        <FontAwesomeIcon icon={faTimesCircle} color="white" />
+        <Icon code="close" size={iconSizes._25} />
       </CloseButton>
     </StyledToast>
   )

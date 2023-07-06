@@ -15,12 +15,6 @@ This page attempts to be a comprehensive list of the most widespread conventions
 
 ## General conventions
 
-### Tags on categories
-
-| Tag      | Description                                                                                                          |
-| -------- | -------------------------------------------------------------------------------------------------------------------- |
-| `hidden` | The category is hidden, but its products are available. Typically used to hide products only available within deals. |
-
 ### Tags on SKUs
 
 The following tag can be set at the SKU level:
@@ -28,33 +22,6 @@ The following tag can be set at the SKU level:
 | Tag         | Description                                  |
 | ----------- | -------------------------------------------- |
 | `deal_only` | The SKU is only available as part of a deal. |
-
-### Customer custom fields
-
-The following custom field can be attached to a customer:
-
-| Custom field                | Encoding | Description                                                                                      |
-| --------------------------- | -------- | ------------------------------------------------------------------------------------------------ |
-| `contact.phone_access_code` | `string` | The access code to reach the customer. Used when the customer's `phone` is a call center number. |
-
-<details>
-
-<summary>Example of a customer with contact information</summary>
-
-```json
-{
-  "first_name": "Charles",
-  "last_name": "Moore",
-  "phone": "+44123456789",
-  "custom_fields": {
-    "contact": {
-      "phone_access_code": "821 645 884"
-    }
-  }
-}
-```
-
-</details>
 
 ## Conventions for restaurants
 
@@ -244,18 +211,20 @@ Typical uses:
 
 The following custom fields can be attached to an order to provide details about the delivery:
 
-| Custom field                  | Encoding | Description                                                                                                                       |
-| ----------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| `delivery.driver_pickup_time` | `string` | The time in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601) format when the driver is expected to pick up the delivery. |
-| `delivery.tracking_url`       | `string` | URL of the page showing the status of the delivery.                                                                               |
-| `delivery.driver.first_name`  | `string` | Driver's first name.                                                                                                              |
-| `delivery.driver.phone`       | `string` | Driver's phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).                                                     |
+| Custom field                    | Encoding                                                  | Description                                                                   |
+| ------------------------------- | --------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| `delivery.driver_assigned_time` | [Time](/developers/api/general-concepts/#dates-and-times) | The time the driver was assigned the delivery.                                |
+| `delivery.driver_pickup_time`   | [Time](/developers/api/general-concepts/#dates-and-times) | The time the driver is expected to pick up the delivery.                      |
+| `delivery.tracking_url`         | `string`                                                  | URL of the page showing the status of the delivery.                           |
+| `delivery.driver.first_name`    | `string`                                                  | Driver's first name.                                                          |
+| `delivery.driver.phone`         | `string`                                                  | Driver's phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164). |
 
-Typical uses:
+Typical workflow:
 
-- The delivery solution sets the `delivery.driver_pickup_time` custom field, and it is displayed in the EPOS for the staff to prepare the order in time.
-- The delivery solution sets the `delivery.driver.first_name` and `delivery.driver.phone` custom fields, and they are displayed in the EPOS to provide the staff with a convenient way to reach out to the driver.
-- The delivery solution sets the `delivery.tracking_url` custom fields, and it is displayed in the ordering application for customers to track their delivery.
+- An order is placed from an ordering solution.
+- The delivery solution is notified about the order, via a webhook. The delivery solution sets the `delivery.xxx` custom fields.
+- The EPOS is informed about the order update via a webhook. It displays `delivery.driver_pickup_time` for the staff to prepare the order in time, and `delivery.driver.first_name` and `delivery.driver.phone` for the staff to reach out to the driver if needed.
+- The ordering solution is also informed about the order update, and it displays a link to `delivery.tracking_url`, so the customer can track their delivery.
 
 <details>
 
@@ -270,6 +239,7 @@ Typical uses:
   ...,
   "custom_fields": {
     "delivery": {
+      "driver_assigned_time": "2021-03-02T12:31:20+02:00",
       "driver_pickup_time": "2021-03-02T12:55:00+02:00",
       "tracking_url": "https://delivery-service.com/track/664566410894-dbfqs",
       "driver": {
@@ -289,12 +259,12 @@ Typical uses:
 
 The following custom fields can be attached to an order:
 
-| Custom field           | Encoding         | Description                                                                                         |
-| ---------------------- | ---------------- | --------------------------------------------------------------------------------------------------- |
-| `epos.order_id`        | `string`         | Order identifier on the EPOS.                                                                       |
-| `epos.rejection`       | (see&nbsp;below) | Information about an order rejection. Can only be present if the order status is `rejected`.        |
-| `epos.rejection.cause` | `string`         | Short description of the problem. Ideally includes resolution steps. Use Markdown syntax for links. |
-| `epos.rejection.info`  | `object`         | Free-format JSON object containing information about the problem.                                   |
+| Custom field           | Encoding         | Description                                                                                                                    |
+| ---------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `epos.order_id`        | `string`         | Order identifier on the EPOS.                                                                                                  |
+| `epos.rejection`       | (see&nbsp;below) | Information about an order rejection. Can only be present if the order status is `rejected`.                                   |
+| `epos.rejection.cause` | `string`         | Short description of the problem. Ideally includes resolution steps. Use Markdown syntax for links, code blocks, and emphasis. |
+| `epos.rejection.info`  | `object`         | Free-format JSON object containing information about the problem.                                                              |
 
 Typical uses:
 

@@ -25,7 +25,7 @@ LEO2 permet la gestion du multi-sites, le suivi des stocks, la consultation de s
 
 LEO2 peut communiquer avec des périphériques spécialisés, tels que des doseurs électroniques, des balances, des monnayeurs, ou encore des écrans de production.
 
-LEO2 est certifié NF525, et donc conforme à la loi française "anti-fraudes" du 1er janvier 2018.
+LEO2 est certifié NF525, et donc conforme à la loi française anti-fraude 2018.
 
 ## Fonctionnalités de l'intégration
 

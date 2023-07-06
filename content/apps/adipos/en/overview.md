@@ -29,7 +29,7 @@ The EPOS has been designed for all types of catering businesses, restaurant with
 
 Adipos offers multiple functionalities in addition to the EPOS, including floor plans, management of an order quota by product category, customer loyalty with or without coupons, delivery and click & collect management, order display in the kitchen and in preparation areas, display on promotional screens, self ordering kiosks, online ordering, and an ordering app.
 
-Adipos is developed in France by Adixon, and has received NF525 certification, making it compliant with the French "anti-fraud" law of January 1, 2018.
+Adipos is developed in France by Adixon, and has received NF525 certification, making it compliant with the 2018 French Anti-Fraud Act.
 
 ## Integration Features
 

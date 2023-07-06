@@ -13,10 +13,9 @@ Le catalogue d'HubRise est automatiquement importé chaque nuit dans SOMM'IT.
 
 Pour importer votre catalogue manuellement, contactez le support de SOMM'IT.
 
-
 ## Traiter les nouvelles références en attente
 
-Lorsqu'un catalogue est importé, les prix des références existantes sont mis à jour. 
+Lorsqu'un catalogue est importé, les prix des références existantes sont mis à jour.
 
 Quant aux nouvelles références, vous devez les traiter manuellement, en les intégrant à vos références SOMM'IT ou en les ignorant.
 
@@ -39,4 +38,3 @@ Pour réactiver une référence ignorée, suivez ces étapes :
 2. Cliquez sur le curseur **Afficher les boissons ignorées**. La liste des références ignorées s'affiche.
    ![Mes boissons - ](../images/008-fr-somm-it-references-reactiver.png)
 3. Cliquez sur le symbole **Réactivez la boisson** en bout de ligne d'une référence pour la réactiver ou utilisez le système de coche en début de ligne pour en réactiver plusieurs simultanément.
-

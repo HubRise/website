@@ -1,6 +1,6 @@
 ---
 title: How to Create a Product With Variations in Uber Eats?
-position: 6
+position: 5
 layout: documentation
 meta:
   title: Creating a Product With Variations in Menu Maker | Uber Eats FAQs | HubRise
@@ -15,14 +15,14 @@ In HubRise, a variation of a product is called [sku](/docs/data#view-catalog), a
 If your EPOS supports products with skus, and you want to receive such products in your Uber Eats orders, you have the following two options:
 
 - If you [push your HubRise catalog](/apps/uber-eats/pulling-menu) into Uber Eats with Uber Eats Bridge, products with skus are automatically created with the correct format on Uber Eats.
-- If you manually create your menu with [Menu Maker](https://merchants.ubereats.com/us/en/technology/simplify-operations/menu-management/), the catalog management tool in Uber Eats back office, create your products following the steps on this page. 
-
+- If you manually create your menu with [Menu Maker](https://merchants.ubereats.com/us/en/technology/simplify-operations/menu-management/), the catalog management tool in Uber Eats back office, create your products following the steps on this page.
 
 ## Product Structure
 
 In Menu Maker, there are two main building blocks: items and modifier groups.
 
 To create a product with multiple skus, you need to create the following structure using items and modifier groups:
+
 - Parent product (Item)
   - Choice of skus (Modifier group)
     - Sku 1 (Item)
@@ -30,6 +30,7 @@ To create a product with multiple skus, you need to create the following structu
     - Sku 3 (Item)
 
 For example, if you want to create a pizza size variations, use the following structure:
+
 - Pizza Margherita (Item)
   - Choose your Margherita size (Modifier group)
     - Pizza Margherita 8" (Item)
@@ -40,7 +41,6 @@ To ensure that Uber Eats Bridge sends the correct information to HubRise when cu
 
 - The ref code of the parent product, in this case `Pizza Margherita`, must be `MULTISKU`.
 - Invidivual skus must have the same ref code they have in your EPOS.
-
 
 ## Step-By-Step Guide to Create a Product With Skus
 
@@ -77,7 +77,7 @@ After creating all the skus, to group them together within a modifier group foll
      - **Minimum number of options a customer must select**: `1`
      - **Maximum number of options a customer can select**: `1`
      - **How many times can customers select any single option**: `1`
-     ![Modifier group rules](../../images/015-en-modifier-group-rules-menu-maker.png)
+       ![Modifier group rules](../../images/015-en-modifier-group-rules-menu-maker.png)
 1. To confirm the modifiers group, click **Save**.
 
 ### 3. Create the Main Product

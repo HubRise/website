@@ -1,7 +1,7 @@
 import * as React from "react"
 import { ErrorMessage } from "formik"
 
-import { Error, FieldLabel, StyledField, FieldStatus } from "./Styles"
+import { Error, StyledInput, FieldStatus, StyledField } from "./Styles"
 
 interface FieldProps {
   fieldProps: IField
@@ -22,14 +22,13 @@ const Field = ({ fieldProps, formikProps }: FieldProps): JSX.Element => {
   const status: FieldStatus = isSubmitted ? (errors[name] ? "error" : "valid") : "unsubmitted"
 
   const props = { $status: status, name, placeholder }
-  const field = component === "input" ? <StyledField.input {...props} /> : <StyledField.textarea {...props} />
+  const field = component === "input" ? <StyledInput.input {...props} /> : <StyledInput.textarea {...props} />
 
   return (
-    <>
-      <FieldLabel htmlFor={name} $status={status} />
+    <StyledField>
       {field}
       {status === "error" && <ErrorMessage name={name} render={(msg) => <Error>{msg}</Error>} />}
-    </>
+    </StyledField>
   )
 }
 

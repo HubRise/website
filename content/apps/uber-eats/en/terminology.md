@@ -1,6 +1,6 @@
 ---
 title: Terminology
-position: 8
+position: 9
 layout: documentation
 meta:
   title: Terminology | Uber Eats | HubRise
@@ -11,23 +11,24 @@ meta:
 
 The following table explains the terms that are specific to Uber Eats.
 
-| Term        | Description                                                 |
-|-------------|-------------------------------------------------------------|
-| Menu Maker  | App used to manage the menu in Uber Eats.                   |
+| Term       | Description                               |
+| ---------- | ----------------------------------------- |
+| Menu Maker | App used to manage the menu in Uber Eats. |
 
 ## Correspondence Table
 
 HubRise and Uber Eats each use their own terminology. The same concept can therefore have a different designation in each solution. The correspondence table below shows these differences.
 
-| Uber Eats     | HubRise        | Description                                                                            |
-| ------------- | -------------- | -------------------------------------------------------------------------------------- |
-| Comments      | Customer notes | Preparation notes on individual products customers can leave when placing their order. |
-| Discount      | Discount       | Special offer on the overall order.                                                    |
-| External data | Ref code       | Product code.                                                                          |
-| Menu          | Catalog        | List of products.                                                                      |
-| Partner       | Account        | Business brand.                                                                        |
-| Store         | Location       | The actual restaurant.                                                                 |
-| Store UUID    | Location ID    | ID of the restaurant.                                                                  |
+| Uber Eats               | HubRise        | Description                                                                            |
+| ----------------------- | -------------- | -------------------------------------------------------------------------------------- |
+| Comments                | Customer notes | Preparation notes on individual products customers can leave when placing their order. |
+| Discount                | Discount       | Special offer on the overall order.                                                    |
+| External data           | Ref code       | Product code.                                                                          |
+| Menu                    | Catalog        | List of products.                                                                      |
+| Partner                 | Account        | Business brand.                                                                        |
+| Store                   | Location       | The actual restaurant.                                                                 |
+| Store UUID              | Location ID    | ID of the restaurant.                                                                  |
+| Utensils and condiments | Special items  | Function in the checkout to request single-use items.                                  |
 
 ## Service Types
 

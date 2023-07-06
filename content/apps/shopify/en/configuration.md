@@ -24,7 +24,7 @@ To ignore an order status change in HubRise, select **Do nothing**.
 
 ## Save the Configuration
 
-Once you are happy with the configuration of Shopify Bridge, click **Save** at the top of the page to go back to the Operations page.
+Once you are happy with the configuration of Shopify Bridge, click **Save** at the top of the page to go back to the **Latest operatins** page.
 
 ## Reset the Configuration
 

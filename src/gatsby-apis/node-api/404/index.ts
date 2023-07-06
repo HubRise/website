@@ -14,7 +14,7 @@ export async function createPages({ actions }: CreatePagesArgs): Promise<void> {
   localeCodes.forEach((localeCode) => {
     createPage<RootContext>({
       path: getPath(localeCode),
-      matchPath: pathWithLocale(localeCode, "/*"),
+      matchPath: pathWithLocale(localeCode) + "*",
       component: getLayoutPath("404"),
       context: {
         languagePaths: generateLanguagePaths(localeCode, getPath),

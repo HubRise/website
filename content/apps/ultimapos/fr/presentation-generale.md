@@ -25,7 +25,7 @@ Un back office permet de paramétrer le logiciel de caisse UltimaPOS, et d'édit
 
 UltimaPOS est disponible à travers un réseau de revendeurs en France, en proximité des utilisateurs.
 
-UltimaPOS est certifié NF525, et donc conforme à la loi française "anti-fraudes" du 1er janvier 2018.
+UltimaPOS est certifié NF525, et donc conforme à la loi française anti-fraude 2018.
 
 ## Fonctionnalités de l'intégration
 

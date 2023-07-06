@@ -1,6 +1,6 @@
 ---
 title: Comment contribuer
-position: 0
+position: 1
 layout: documentation
 meta:
   title: Contribuer à la documentation technique | HubRise

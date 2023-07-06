@@ -48,12 +48,12 @@ Special deals on products rather than the entire order are not supported in Aqui
 
 ## Payment Methods
 
-Payment methods define how customers can pay for their orders. EPOS ref codes may be required for each online payment payment method setup in Aquila. Refer to your connected EPOS documentation on the HubRise website to verify.
+Payment methods define how customers can pay for their orders. EPOS ref codes may be required for each online payment payment method setup in Aquila. Refer to your EPOS documentation on the HubRise website to verify.
 
 ## Service Types
 
-Service Types such as Delivery, Collection or Eat in might require an EPOS ref code entry. Refer to your connected EPOS documentation on the HubRise website to verify.
+Service Types such as Delivery, Collection or Eat in might require an EPOS ref code entry. Refer to your EPOS documentation on the HubRise website to verify.
 
 ## Charges
 
-If delivery charges apply for the service offered an EPOS ref code might be required. Refer to your connected EPOS documentation on the HubRise website to verify.
+If delivery charges apply for the service offered an EPOS ref code might be required. Refer to your EPOS documentation on the HubRise website to verify.

@@ -1,9 +1,9 @@
 ---
-title: Connection to HubRise
+title: Connect to HubRise
 position: 2
 layout: documentation
 meta:
-  title: Connection to HubRise | Mailchimp | HubRise
+  title: Connect to HubRise | Mailchimp | HubRise
   description: Instructions on connecting Mailchimp with HubRise for your EPOS to work with other apps as a cohesive whole. Connect apps and synchronise your data.
 ---
 
@@ -11,7 +11,7 @@ Connecting Mailchimp to HubRise can be done with a few simple steps.
 
 ---
 
-**IMPORTANT NOTE:** If you don't already have a HubRise account, start by registering on the [HubRise Signup Page](https://manager.hubrise.com/signup). It only takes a minute!
+**IMPORTANT NOTE:** If you do not have a HubRise account yet, register on our [Signup Page](https://manager.hubrise.com/signup). It only takes a minute!
 
 ---
 

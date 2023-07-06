@@ -27,7 +27,7 @@ Synapsy est une solution de gestion pour les métiers de bouche et de commerce d
 
 Pour plus de flexibilité, les données sont hébergées dans le cloud et accessibles de n'importe où et sur tout type d'appareil.
 
-Société éditrice de logiciel de caisse créée en 2005, Synapsy est certifiée LNE, et donc conforme à la loi française "anti-fraudes" du 1er janvier 2018.
+Société éditrice de logiciel de caisse créée en 2005, Synapsy est certifiée LNE, et donc conforme à la loi française anti-fraude 2018.
 
 ## Fonctionnalités de l'intégration
 

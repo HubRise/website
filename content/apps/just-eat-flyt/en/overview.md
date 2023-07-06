@@ -11,7 +11,7 @@ gallery:
 path_override: /
 app_info:
   category: Food Ordering Platforms
-  availability: Canada, Ireland, United Kingdom
+  availability: Australia (Menulog), Canada (Skip The Dishes), Ireland, Italy, Spain, United Kingdom
   website: https://just-eat.co.uk
   contact:
 ---
@@ -26,35 +26,39 @@ In the UK, Ireland and Canada, Just Eat connects to your HubRise account through
 
 ## Available Platforms
 
-Flyt is available on the following Just Eat Takeaway.com platforms:
+Flyt is available on the following Just Eat platforms:
 
 - Just-Eat.co.uk
+- Just-Eat.es
 - Just-Eat.ie
+- Just-Eat.it
 - Menulog.com.au
 - SkipTheDishes.com
 
 ---
 
-**IMPORTANT NOTE:** To connect a store on a different Just Eat Takeaway.com platform, you should use [Just Eat Takeaway Bridge](/apps/just-eat-takeaway/) instead.
+**IMPORTANT NOTE:** To connect a store in a different Just Eat market, you should use [Just Eat Takeaway Bridge](/apps/just-eat-takeaway/) instead.
 
 ---
 
-Flyt is a more capable integration platform than the legacy Just Eat Takeaway integration platform. If you operate on a market not served by Flyt, it may still be possible to connect your store through Flyt if the Flyt team approves it. Not all integration features might however be available, depending on your market. For more information, contact HubRise at [support@hubrise.com](mailto:support@hubrise.com).
+Flyt offers more integration features than the legacy Just Eat Takeaway integration platform. Using Flyt, you can push a menu into Just Eat, or set up auto-accept.
+
+If you operate on a market not served by Flyt, it may still be possible to connect your store through Flyt if the Flyt team approves it. It happens on a case per case basis depending on their internal capacity. Independent stores might be connected but chains and franchises are given priority. Not all integration features might however be available, depending on your market. For more information, contact HubRise at [support@hubrise.com](mailto:support@hubrise.com).
 
 ## Integration Features
 
 Connecting Just Eat Flyt Bridge allows you to:
 
-- Push orders into HubRise, including order status.
-  ![Diagram of the connection flow between Just Eat, Just Eat Flyt Bridge, and HubRise for receiving orders](../images/000-en-2x-just-eat-connection-diagram.png)
-- Push delivery information into HubRise, for orders delivered by your restaurant.
-  ![Diagram of the connection flow between Just Eat, Just Eat Flyt Bridge, and HubRise for handling delivery information](../images/009-en-2x-just-eat-delivery-fleet-diagram.png)
-- Pull the menu from a HubRise catalog directly into your Just Eat store.
-  ![Diagram of the connection flow between Just Eat, Just Eat Flyt Bridge, and HubRise for pulling the menu](../images/010-en-2x-just-eat-menu-push-diagram.png)
+- Pull orders from Just Eat, including order status.
+- Pull customer information from Just Eat, for orders delivered by the restaurant.
+- Push a catalog into Just Eat.
+- Synchronise inventory with HubRise.
+
+![Diagram of the connection flow between Just Eat, Just Eat Flyt Bridge, and HubRise for receiving orders](../images/000-en-2x-just-eat-connection-diagram.png)
 
 ---
 
-**IMPORTANT NOTE:** The Just Eat OrderPad will need to remain switched on to receive orders in HubRise.
+**IMPORTANT NOTE:** The Just Eat OrderPad will need to remain switched on to receive orders in HubRise. For some markets, auto-accept can be activated. For more information, see [Can I Turn Off the Orderpad?](/apps/just-eat-flyt/faqs/turn-off-orderpad/).
 
 ---
 
@@ -69,4 +73,4 @@ Via HubRise, synchronise your menu, your customer and order information with you
 
 ## Prerequisites
 
-To establish a connection between Just Eat and HubRise via Just Eat Flyt Bridge, your restaurant must be a Just Eat partner with a store in Ireland or in the United Kingdom.
+To establish a connection between Just Eat and HubRise via Just Eat Flyt Bridge, you must be a Just Eat partner within one of the aforementioned markets, or Just Eat must have approved your store to connect via Flyt.

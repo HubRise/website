@@ -25,7 +25,7 @@ JDC est une société créée en 1989 possédant des agences réparties dans tou
 
 Kezia II est un outil de gestion centralisé permettant la gestion des stocks et des achats, la synchronisation des données multipostes & multisites, l'édition de statistiques avancées et la gestion des ressources humaines. La société JDC propose en complément des solutions de cartes de fidélité, de vidéosurveillance, ou encore de monétique intégrée.
 
-Kezia II est certifié NF525, et donc conforme à la loi française "anti-fraudes" du 1er janvier 2018.
+Kezia II est certifié NF525, et donc conforme à la loi française anti-fraude 2018.
 
 ## Fonctionnalités de l'intégration
 

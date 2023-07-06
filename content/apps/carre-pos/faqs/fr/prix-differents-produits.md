@@ -3,7 +3,7 @@ title: Comment Carré POS traite les différences de prix entre les produits ?
 position: 1
 layout: documentation
 meta:
-  title: Différences de prix entre les produits | Carré POS F.A.Q. | HubRise
+  title: Différences de prix entre les produits | FAQs Carré POS | HubRise
   description: Comprendre comment est géré le cas des prix d'un produit différents entre Carré POS et une application web.
 ---
 

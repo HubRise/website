@@ -7,20 +7,20 @@ meta:
   description: Instructions on how to find your Deliveroo Restaurant ID to connect your restaurant and start receiving orders on HubRise.
 ---
 
-The Restaurant ID is the unique identifier for your Deliveroo store. It is also referred to as Branch ID, Admin ID, Tablet ID, or Location ID, depending on the context.
+The **Restaurant ID** is the unique identifier for your Deliveroo store. It is also referred to as **Branch ID**, **Admin ID**, **Tablet ID**, or **Location ID**, depending on the context. This ID consists solely of numeric characters and usually contains 6 digits, although sometimes it may have 5.
 
-To find your Deliveroo Restaurant ID, follow these steps.
+To find your Deliveroo Restaurant ID, choose one of the following methods.
 
-## Option 1
+## Option 1 - Via the Deliveroo Tablet
 
-From your Deliveroo tablet:
+To find your restaurant ID using your Deliveroo tablet:
 
 1. Tap the navigation button on the top right of the page.
 1. Your ID is the number between brackets, next to the restaurant name.
 
-## Option 2
+## Option 2 - Via the Deliveroo Back Office
 
-On your browser:
+To find your restaurant ID from your Deliveroo back office:
 
 1. Log in to your [Deliveroo back office](https://restaurant-hub.deliveroo.net/).
 1. Go to the **Home** tab, then select the correct location and account from the dropdown menus.
@@ -29,3 +29,13 @@ On your browser:
 ![Deliveroo Restaurant ID in the URL of the back office](../../images/011-en-deliveroo-branchid.png)
 
 If you cannot find your Restaurant ID, contact your Deliveroo Account Manager.
+
+## Option 3 - From the Store Page Source
+
+IT savvy users can find the Deliveroo Restaurant ID from the page source of a Deliveroo store:
+
+- Open the Deliveroo store in a browser.
+- Right-click on the page and select **View Page Source**.
+- In the page source, search for `"restaurant":{"id":`.
+
+> For example, the Camile Thai restaurant in Clapham indicates `77430` Restaurant ID in the website page source code [https://deliveroo.co.uk/menu/london/clapham/camile-thai-clapham](https://deliveroo.co.uk/menu/london/clapham/camile-thai-clapham).

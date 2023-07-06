@@ -3,7 +3,7 @@ title: J'ai plusieurs points de vente utilisant Nestor avec le même menu, dois-
 position: 2
 layout: documentation
 meta:
-  title: Synchronisation menu commun | Nestor F.A.Q. | HubRise
+  title: Synchronisation menu commun | FAQs Nestor | HubRise
   description: Comment synchroniser un menu utilisé dans plusieurs points de vente Nestor avec HubRise.
 ---
 

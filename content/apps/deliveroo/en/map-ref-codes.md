@@ -7,11 +7,11 @@ meta:
   description: Instructions on mapping Deliveroo product ref codes with other apps after connecting your EPOS with HubRise. Connect apps and synchronise your data.
 ---
 
-Most EPOS solutions require a ref code for each product to correctly parse orders. Therefore, when you create your menu on Deliveroo, you need to make sure that each product is assigned to the correct ref code.
+Most EPOS solutions require a ref code for each product and option to properly interpret orders. As such, when you create your menu on Deliveroo, you need to make sure that every product and option is assigned to the appropriate ref code.
 
 ---
 
-**IMPORTANT NOTE:** If you do not assign a ref code to all your products, Deliveroo will not process the order correctly. For more information, see [Troubleshooting Orders](/apps/deliveroo/troubleshooting#orders-not-received)
+**IMPORTANT NOTE:** Failing to assign ref codes can result in Deliveroo being unable to process the order correctly. For more information, see the [Orders Not Received](/apps/deliveroo/troubleshooting#orders-not-received) section of the Troubleshooting page.
 
 ---
 
