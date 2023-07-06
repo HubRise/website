@@ -34,7 +34,7 @@ When LivePepper is connected to HubRise, orders placed in LivePepper are transmi
 
 To verify that your test order was transmitted to HubRise, follow these steps:
 
-1. Log in to your HubRise account. This can be done from your LivePepper back office by selecting **Settings > Add-ons**, then click **Go to your HubRise account**.
+1. Log in to your [HubRise account](https://manager.hubrise.com).
 1. If prompted, log in to your HubRise user account.
 1. From HubRise, click **Data** > **Orders**.
 1. Find your test order. If you can see the order, the connection between LivePepper and HubRise is working correctly.

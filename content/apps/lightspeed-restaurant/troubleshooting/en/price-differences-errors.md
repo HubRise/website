@@ -13,11 +13,11 @@ This page describes possible scenarios when the total amount paid by the custome
 
 Lightspeed recalculates the amount due by summing the price of all items in the order. When the total payment amount in the order is greater than the amount due, Lightspeed rejects the order with an error message similar to the following:
 
-```
+```json
 {
   "status": "FAILURE",
   "reason": "the payment amount is greater than the amount due",
-  "thirdPartyReference": "zrk8p|wbv7z-0|2ve7gq"
+  "thirdPartyReference": "xxx|xxx-0|yyy"
 }
 ```
 

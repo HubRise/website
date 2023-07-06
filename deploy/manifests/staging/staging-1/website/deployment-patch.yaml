@@ -21,8 +21,3 @@ spec:
             limits:
               cpu: 200m
               memory: 200Mi
-          env:
-            - name: RECAPTCHA_SITE_KEY
-              value: 6LfjbNYUAAAAAPx_tCv_YyhueK2JIjf58b2HGU8d
-            - name: CONTACT_MESSAGE_URL
-              value: https://manager.staging-hubrise.com/api/contact_message

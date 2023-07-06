@@ -39,10 +39,9 @@ To get the next set of results, send a new request and include the previously re
 Index endpoints accept 2 optional parameters:
 
 - `count`: the maximum number of results to return per request. The default (and maximum) value is 100. Decrease this value if needed.
-
 - `cursor`: the next subset of results to return. Must be set to the value received in the previous `X-Cursor-Next` response header to iterate through the results. If this parameter is omitted, the first set of results is returned.
 
-### Example for a request returning 150 results:
+##### Example for a request returning 150 results:
 
 First request:
 
@@ -107,7 +106,7 @@ This parameter is **not** accepted in a GET request, since a GET request should 
 
 A number with 2 decimal digits, followed by a space and the [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency name. Can be preceded by a `-` sign for negative amounts.
 
-#### Examples:
+##### Examples:
 
 - `8.90 EUR`
 - `-0.05 GBP`
@@ -120,7 +119,7 @@ Most JSON implementations parse decimal numbers (eg `1.5`) as floating point num
 
 In order to enforce the use of a "precise" decimal type and to avoid the default floating point number conversion by JSON parsers, decimal values are encoded as strings in HubRise. These strings should be handled using either a decimal built-in type or a fixed point number library (such as `bigdecimal` in Ruby) and never converted to floating point numbers.
 
-#### Examples:
+##### Examples:
 
 - `"1"`
 - `"-2.5"`
@@ -131,7 +130,7 @@ Dates and times are encoded in [ISO 8601 format](https://en.wikipedia.org/wiki/I
 
 Locations have a default timezone, which can be configured from the back office. HubRise converts times to the location default timezone, for all resources attached to a location (eg orders).
 
-#### Examples:
+##### Examples:
 
 - Date: `2020-08-20`
 - Time: `2020-08-20T06:42:46+02:00`
@@ -142,10 +141,25 @@ A `DOW` (= "Days of the Week") value designates specific days of the week.
 
 It is a string of 7 characters, where each character represents a day of the week, from Monday (`1`) to Sunday (`7`). When the digit is replaced by `-`, the particular day is excluded from the list.
 
-#### Examples:
+##### Examples:
 
 - `1234567`: every day of the week
 - `12----7`: Monday, Tuesday and Sunday
+
+### Timezones
+
+Timezones are encoded in this format:
+
+```json
+{
+  "name": "Europe/Paris",
+  "offset": 3600
+}
+```
+
+The timezone `name` is encoded in [IANA Time Zone Database format](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). For example, the timezone name for Paris is `Europe/Paris`.
+
+The timezone `offset` is deprecated and will be removed in a future version of the API, as it does not provide information about daylight saving time.
 
 ## 6. HTTP Status Codes
 
@@ -221,7 +235,7 @@ When client A later retrieves the order, the `private_ref` is included in the re
 
 **CLIENT A**: `GET /location/orders/sd89mm`
 
-#### Response:
+##### Response:
 
 ```json
 {
@@ -235,7 +249,7 @@ However, when client B retrieves that same order, no `private_ref` is included i
 
 **CLIENT B**: `GET /location/orders/sd89mm`
 
-#### Response:
+##### Response:
 
 ```json
 {
@@ -251,7 +265,7 @@ HubRise indexes private refs efficiently, which allows clients to use private re
 
 **CLIENT A**: `GET /location/orders?private_ref=6986`
 
-#### Response:
+##### Response:
 
 ```json
 [
@@ -270,7 +284,6 @@ CORS (Cross-Origin Resource Sharing) is a mechanism that restricts the origins t
 HubRise API and HubRise oAuth 2.0 server use different CORS policies:
 
 - HubRise API allows requests to be sent from a browser, from any origin. This is done by setting the `Access-Control-Allow-Origin` header to `*`.
-
 - HubRise oAuth 2.0 server enforces the stricter default CORS policy. As a result, you will not be able to create or revoke tokens from a browser. The rationale is that doing so would expose your client secret.
 
 If you choose to send API requests from the user's browser rather from your server, this will give your users access to their personal access token. You may only do this if your page can only be accessed by trusted users. For security reasons, prefer to use a proxy server to hide the access token.

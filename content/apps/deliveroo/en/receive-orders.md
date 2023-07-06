@@ -1,6 +1,6 @@
 ---
 title: Receive Orders
-position: 7
+position: 8
 layout: documentation
 meta:
   title: Receive Orders | Deliveroo | HubRise
@@ -9,7 +9,7 @@ meta:
 
 Connecting Deliveroo to HubRise allows you to receive Deliveroo orders directly in your EPOS or any other solution connected to your HubRise account.
 
-Your Deliveroo tablet needs to remain switched on to receive orders. Orders can either be manually accepted on the tablet, or auto-accepted. For more information, see [How Can I Auto-Accept Orders?](/apps/deliveroo/faqs/auto-accept/). Deliveroo is planning to support tabletless integration in the future.
+You have the option to either manually accept orders on the tablet or set up auto-accept. If you prefer not to use a tablet, you can leave it switched off or not have one at all. For more information, see [How Can I Abandon the Deliveroo Tablet?](/apps/deliveroo/faqs/abandon-deliveroo-tablet/)
 
 This page describes the information Deliveroo sends to HubRise. It helps you understand how orders will be received on your EPOS.
 
@@ -49,14 +49,18 @@ Every option has single quantity. Multiple identical options are encoded in sepa
 
 ## Order Statuses
 
-In this section, we capitalise the first letter of Deliveroo statuses to make them easier to distinguish from HubRise status names. For example, `Succeeded` is a Deliveroo status, while `accepted` is a HubRise status.
+---
+
+**IMPORTANT NOTE:** In this section, we capitalise the first letter of Deliveroo statuses to make them easier to distinguish from HubRise status names. For example, `Succeeded` is a Deliveroo status, while `accepted` is a HubRise status.
+
+---
 
 ### Deliveroo Statuses
 
 A Deliveroo order goes through several statuses during its lifecycle:
 
 - `Succeeded`: The order has been accepted by the EPOS, and is confirmed on Deliveroo.
-- `Failed`: The order could not be sent to the EPOS. Deliveroo sends a message to the Deliveroo tablet prompting staff to check their POS for the order, and enter manually into the till if needed.
+- `Failed`: The order could not be sent to the EPOS. Deliveroo sends a message to the Deliveroo tablet prompting staff to check their POS for the order, and enter manually into the EPOS if needed.
 - `In Kitchen`: Cooking has started.
 - `Ready for Collection`: Food is cooked and packaged.
 - `Collected`: The order has been collected.
@@ -97,17 +101,20 @@ Deliveroo supports three service types:
 - Delivery by the restaurant's fleet
 - Customer collection
 
-These are typically associated with specific ref codes in your EPOS. For more information, see your EPOS documentation in our [apps page](/apps).
+These are typically associated with specific ref codes in your EPOS. For more information, see your EPOS documentation in our [Apps page](/apps).
+
+## Order Times
+
+Deliveroo provides the time when the eater expects to receive or collect the order. Deliveroo Bridge sends this time to HubRise as the `expected_time` field. This time cannot be changed by the EPOS.
 
 ## Customer
 
-Deliveroo never provides the customer's full name and email address in their API. Therefore, Deliveroo Bridge never creates customers in HubRise, but includes the customer's details directly in the order.
+Deliveroo never provides the customer's full name, personal phone number or email address. It does not provide any customer identification number either. Therefore, Deliveroo Bridge does not create customers in HubRise, but includes the customer's details directly in the order.
 
-For restaurant delivery orders, Deliveroo Bridge retrieves the following information from Deliveroo:
+For restaurant delivery orders, Deliveroo Bridge provides the following details:
 
 - `first_name`: The customer's first name.
 - `last_name`: The initial of the customer's last name.
-- `email`: orders@deliveroo.com
 - `address_1`: The first line of the address.
 - `address_2`: The second line of the address.
 - `city`: The city of the address.
@@ -117,11 +124,10 @@ For restaurant delivery orders, Deliveroo Bridge retrieves the following informa
 - `phone`: Deliveroo support number. Note: This is not the customer's phone number.
 - `delivery_notes`: The access code to identify the order when calling Deliveroo support and the delivery notes left by the customer, in the format "Phone access code: `access_code`. `note`".
 
-For other types of orders, Deliveroo Bridge provides the following default customer details:
+For other types of orders, Deliveroo Bridge provides the following details:
 
-- `first_name`: Deliveroo
-- `last_name`: Order
-- `email`: orders@deliveroo.com
+- `first_name`: The customer's first name.
+- `phone`: Deliveroo support number. Note: This is not the customer's phone number.
 
 ## Discounts
 
@@ -138,7 +144,7 @@ The available fields in the payload are the following:
 Deliveroo Bridge can encode three types of charges:
 
 - Delivery charges are applied for orders delivered by the restaurant.
-- Small order surcharges apply to orders below the minimum price.
+- Small order surcharges apply to orders below the minimum order amount.
 - Bag fees are required by regulations in some countries.
 
 The available fields in the payloads are the following:
@@ -150,4 +156,4 @@ The available fields in the payloads are the following:
 
 ## Customer Notes
 
-Product-level customer notes are encoded in the `customer_notes` field.
+Order-level customer notes are encoded in the `customer_notes` field.

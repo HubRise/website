@@ -37,7 +37,7 @@ Une fois connectée, la nouvelle l'application apparaît sur la page **CONNEXION
 
 ## Règles de nommage
 
-Pour identifier plus facilement les différentes connexions de la même application, vous pouvez choisir librement la valeur de l'identifiant de l’application lors de la configuration initiale. Dans `device_id=NomDeLaMarque&`, « NomDeLaMarque » peut inclure une combinaison quelconque des caractères suivants :
+Pour identifier plus facilement les différentes connexions de la même application, vous pouvez choisir librement la valeur de l'identifiant de l'application lors de la configuration initiale. Dans `device_id=NomDeLaMarque&`, « NomDeLaMarque » peut inclure une combinaison quelconque des caractères suivants :
 
 - Lettres majuscules et minuscules
 - Chiffres

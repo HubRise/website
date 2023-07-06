@@ -1,10 +1,13 @@
 import * as React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-import { Container, Title, Description, Item, List, ImageOver, ImageDefault, ImageLink, Text } from "./Styles"
+import { Content, Text } from "../shared/Styles"
+
+import { Item, ImageOver, ImageDefault, ImageLink, List } from "./Styles"
 
 import { ImageNode } from "@utils/image"
-import { markdownToHtml } from "@utils/misc"
+import { markdownToHtml } from "@layouts/shared/utils/markdown"
+import Block from "@layouts/shared/components/Block"
 
 interface AppsProps {
   title: string
@@ -15,31 +18,39 @@ interface AppsProps {
 }
 
 const Apps = ({ title, description, categories, apps, appsHover }: AppsProps): JSX.Element => {
-  return (
-    <section className="frontpage__row frontpage__row_oneside">
-      <div className="frontpage__row_oneside__in frontpage__row_oneside__in_right">
-        <Container>
-          <Text>
-            <Title>{title}</Title>
-            <Description dangerouslySetInnerHTML={{ __html: markdownToHtml(description) }} />
-            <List>
-              {categories.map((category, index) => (
-                <Item key={index}>{category}</Item>
-              ))}
-            </List>
-          </Text>
+  const side = (
+    <ImageLink to="/apps">
+      <ImageDefault>
+        <GatsbyImage image={apps.childImageSharp.gatsbyImageData} alt="Apps" />
+      </ImageDefault>
+      <ImageOver>
+        <GatsbyImage image={appsHover.childImageSharp.gatsbyImageData} alt="Apps" />
+      </ImageOver>
+    </ImageLink>
+  )
 
-          <ImageLink to="/apps">
-            <ImageDefault>
-              <GatsbyImage image={apps.childImageSharp.gatsbyImageData} alt="Apps" />
-            </ImageDefault>
-            <ImageOver>
-              <GatsbyImage image={appsHover.childImageSharp.gatsbyImageData} alt="Apps" />
-            </ImageOver>
-          </ImageLink>
-        </Container>
-      </div>
-    </section>
+  return (
+    <Block
+      backgroundColor="white"
+      verticalSpacing="small"
+      padding="small"
+      beforeExpansion={false}
+      afterExpansion={true}
+      title={title}
+      side={side}
+      sidePosition="left"
+      horizontalAlign="centerOnMobile"
+      desktopVerticalAlign="center"
+    >
+      <Content>
+        <Text $backgroundColor="white" dangerouslySetInnerHTML={{ __html: markdownToHtml(description) }} />
+        <List>
+          {categories.map((category, index) => (
+            <Item key={index}>{category}</Item>
+          ))}
+        </List>
+      </Content>
+    </Block>
   )
 }
 

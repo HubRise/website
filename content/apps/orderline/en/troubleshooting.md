@@ -7,12 +7,24 @@ meta:
   description: Troubleshooting OrderLine connection with HubRise for your EPOS and other apps to work as a cohesive whole. Connect apps and synchronise your data.
 ---
 
-## I cannot hear orders coming in
+## No New Order Notifications On Mobile Devices
 
-On mobile devices, make sure to disable Auto-Lock in your display settings. Plugging in your device might also help.
+Ensure Auto-Lock is disabled in your mobile device's display settings. Keeping your device plugged in might also improve notification reception. We recommend Google Chrome for mobile usage.
 
-We recommend using Google Chrome.
+## Sound Notifications Disabled Popup
 
-## My browser displays a blank page when I launch OrderLine
+Certain browsers restrict websites from playing sounds without user interaction to prevent unwanted noise. This feature, known as **Autoplay Policy** in Google Chrome, may impact OrderLine notifications.
 
-If you have the ad blocker uBlock Origin installed on your browser, make sure to disable it. OrderLine does not work with this extension.
+OrderLine routinely checks for blocked sound notifications and will display a popup if any are blocked. Click the popup to re-enable sound notifications.
+
+![Sound Notification Popup](../images/038-en-2x-sound-notifications-popup.png)
+
+---
+
+**IMPORTANT NOTE:** On most browsers, the policy can however be adjusted to allow OrderLine to play sound notifications without user interaction. For detailed browser specific instructions, refer to our [Keep Sound Notifications Enabled](/apps/orderline/faqs/keep-sound-notifications-enabled) FAQ.
+
+---
+
+## Blank Page on OrderLine Launch
+
+If you encounter a blank page when launching OrderLine, check if you're using an ad blocker on your browser. Ad blockers like **uBlock Origin** have been known to cause this issue. Try disabling it for OrderLine.

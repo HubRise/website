@@ -1,6 +1,6 @@
 ---
 title: How to Create a Product With Variations in Uber Eats?
-position: 6
+position: 5
 layout: documentation
 meta:
   title: Creating a Product With Variations in Menu Maker | Uber Eats FAQs | HubRise

@@ -1,6 +1,6 @@
 ---
 title: Diagram Guide
-position: 5
+position: 6
 layout: documentation
 meta:
   title: Diagram Guide | HubRise
@@ -52,26 +52,26 @@ The following fonts may be used when contributing to the HubRise website documen
 
 Should you want to use colours in your diagrams, these are the colours that should be used.
 
-|                      Colours                       |                                                      |
-| :------------------------------------------------: | :--------------------------------------------------: |
-| <span style="color:#6cb14f">**Main Green**</span>  | <span style="color:#262b24">**Darkest Green**</span> |
-|                    HEX: #6cb14f                    |                     HEX: #262b24                     |
-|                  RGB: 108 177 79                   |                    RGB: 38 43 36                     |
-|  <span style="color:#f8f8f8">**Dark Gray**</span>  | <span style="color:#cccccc">**Regular Gray**</span>  |
-|                    HEX: #f8f8f8                    |                     HEX: #cccccc                     |
-|                  RGB: 248 248 248                  |                   RGB: 204 204 204                   |
-| <span style="color:#888888">**Light Gray**</span>  |   <span style="color:#555555">**Font Gray**</span>   |
-|                    HEX: #888888                    |                     HEX: #555555                     |
-|                  RGB: 136 136 136                  |                    RGB: 85 85 85                     |
-|  <span style="color:#3ca4c6">**Sky Blue**</span>   | <span style="color:#4f79b1">**Regular Blue**</span>  |
-|                    HEX: #3ca4c6                    |                     HEX: #4f79b1                     |
-|                  RGB: 60 164 198                   |                   RGB: 79 121 177                    |
-|   <span style="color:#584fb1">**Violet**</span>    |    <span style="color:#944fb1">**Purple**</span>     |
-|                    HEX: #584fb1                    |                     HEX: #944fb1                     |
-|                   RGB: 88 79 177                   |                   RGB: 148 79 177                    |
-|   <span style="color:#d4b443">**Yellow**</span>    |    <span style="color:#eb7323">**Orange**</span>     |
-|                    HEX: #d4b443                    |                     HEX: #eb7323                     |
-|                  RGB: 212 180 67                   |                   RGB: 235 115 35                    |
-| <span style="color:#d95147">**Regular Red**</span> |  <span style="color:#b2564f">**Darker Red**</span>   |
-|                    HEX: #d95147                    |                     HEX: #b2564f                     |
-|                   RGB: 217 81 71                   |                    RGB: 178 86 79                    |
+|                        Colours                         |                                                          |
+| :----------------------------------------------------: | :------------------------------------------------------: |
+| <span style={{color:"#6cb14f"}}>**Main Green**</span>  | <span style={{color:"#262b24"}}>**Darkest Green**</span> |
+|                      HEX: #6cb14f                      |                       HEX: #262b24                       |
+|                    RGB: 108 177 79                     |                      RGB: 38 43 36                       |
+|  <span style={{color:"#f8f8f8"}}>**Dark Gray**</span>  | <span style={{color:"#cccccc"}}>**Regular Gray**</span>  |
+|                      HEX: #f8f8f8                      |                       HEX: #cccccc                       |
+|                    RGB: 248 248 248                    |                     RGB: 204 204 204                     |
+| <span style={{color:"#888888"}}>**Light Gray**</span>  |   <span style={{color:"#555555"}}>**Font Gray**</span>   |
+|                      HEX: #888888                      |                       HEX: #555555                       |
+|                    RGB: 136 136 136                    |                      RGB: 85 85 85                       |
+|  <span style={{color:"#3ca4c6"}}>**Sky Blue**</span>   | <span style={{color:"#4f79b1"}}>**Regular Blue**</span>  |
+|                      HEX: #3ca4c6                      |                       HEX: #4f79b1                       |
+|                    RGB: 60 164 198                     |                     RGB: 79 121 177                      |
+|   <span style={{color:"#584fb1"}}>**Violet**</span>    |    <span style={{color:"#944fb1"}}>**Purple**</span>     |
+|                      HEX: #584fb1                      |                       HEX: #944fb1                       |
+|                     RGB: 88 79 177                     |                     RGB: 148 79 177                      |
+|   <span style={{color:"#d4b443"}}>**Yellow**</span>    |    <span style={{color:"#eb7323"}}>**Orange**</span>     |
+|                      HEX: #d4b443                      |                       HEX: #eb7323                       |
+|                    RGB: 212 180 67                     |                     RGB: 235 115 35                      |
+| <span style={{color:"#d95147"}}>**Regular Red**</span> |  <span style={{color:"#b2564f"}}>**Darker Red**</span>   |
+|                      HEX: #d95147                      |                       HEX: #b2564f                       |
+|                     RGB: 217 81 71                     |                      RGB: 178 86 79                      |

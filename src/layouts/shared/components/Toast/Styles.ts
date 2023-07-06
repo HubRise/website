@@ -1,67 +1,58 @@
 import styled from "styled-components"
 
 import { ToastVariant } from "@layouts/shared/components/Toast/helpers"
-import { colors } from "@utils/styles"
+import { boxShadows, colors, fontSizes, mixin, sizes, zIndexValues } from "@utils/styles"
 
 export const ToastGroup = styled.div`
+  position: fixed;
   top: 1.25rem;
   right: 1.25rem;
-  z-index: 9999;
-  position: fixed;
-  padding: 0.25rem;
-  box-sizing: border-box;
-  color: #fff;
+  z-index: ${zIndexValues.toast};
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 `
 
 export const StyledToast = styled.div<{ $variant: ToastVariant }>`
   width: 25rem;
   padding: 1.25rem;
-  margin-bottom: 1rem;
   position: relative;
   display: flex;
-  font-size: 0.875rem;
-  border-radius: 3px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
+  gap: 1.25rem;
+  border-radius: ${sizes.borderRadius};
+  box-shadow: ${boxShadows.large};
   animation: fade-in 300ms;
   color: ${colors.white};
   background-color: ${(props) => (props.$variant === "success" ? colors.primary : "red")};
 `
 
-export const Icon = styled.div`
-  flex: 0 0 2.5rem;
-  display: flex;
-  justify-content: center;
-  margin-right: 1.25rem;
-  font-size: 2.5rem;
-  align-items: center;
+export const Side = styled.div`
+  width: 2.5rem;
+  ${mixin.centerElement};
 `
 
 export const Content = styled.div`
   flex: 1;
-`
-
-export const Title = styled.span`
-  display: block;
+  font-size: ${fontSizes._14};
   font-weight: 500;
-  line-height: 1.75rem;
-  margin-bottom: 0.3125rem;
-  font-size: 1.125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 `
 
-export const Description = styled.p`
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
-  line-height: 1.3125rem;
+export const Title = styled.div`
+  font-size: ${fontSizes._18};
+  font-weight: 500;
 `
+
+export const Description = styled.p``
 
 export const CloseButton = styled.button`
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  padding: 0.25rem;
-  text-align: center;
-  font-size: 1.125rem;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  ${mixin.centerElement};
   cursor: pointer;
+  color: ${colors.white};
 `

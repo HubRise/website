@@ -1,3 +1,0 @@
-en-EN source
-
-20210212 en-EN > fr-FR translation by Laurent Hiia

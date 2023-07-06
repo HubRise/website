@@ -20,34 +20,32 @@ app_info:
 
 Deliveroo est une plateforme de commande en ligne et de livraison destinée aux restaurants et aux commerces de proximité. Elle est basée au Royaume-Uni, mais opère dans 13 pays différents en Europe, en Asie et en Océanie.
 
-Les restaurants et les commerces de proximité peuvent profiter de la vaste clientèle de Deliveroo pour développer leur activité et trouver de nouveaux clients. Ils peuvent ainsi se concentrer sur ce qu'ils font le mieux (préparer des aliments, vendre des produits d'épicerie, etc.) tandis que Deliveroo s'occupe de la solution de commande en ligne et du marketing associé, ainsi que de la logistique.
+Deliveroo se connecte à votre compte HubRise via Deliveroo Bridge, une application développée par HubRise.
 
 ## Fonctionnalités de l'intégration
 
-Deliveroo se connecte à votre compte HubRise via Deliveroo Bridge, une application développée par HubRise.
+Connecter Deliveroo Bridge permet à HubRise de :
 
-Deliveroo Bridge permet de :
-
-- Recevoir les commandes Deliveroo dans HubRise.
-- Recevoir les informations de livraison dans HubRise, lorsque les commandes sont livrées par votre personnel.
+- Recevoir les commandes de Deliveroo, y compris le statut de commande.
+- Recevoir les informations de livraison de Deliveroo, pour les commandes livrées par le restaurant.
+- Envoyer un catalogue vers Deliveroo.
+- Synchroniser l'inventaire avec HubRise.
 
 ![Schéma du flux de connexion entre Deliveroo, Deliveroo Bridge et HubRise](../images/000-fr-2x-connection-diagram.png)
 
 ---
 
-**REMARQUE IMPORTANTE :** Le catalogue et la disponibilité des produits ne peuvent pas encore être synchronisés, mais HubRise prévoit de mettre en place cette fonctionnalité prochainement.
+**REMARQUE IMPORTANTE** : Les tablettes Deliveroo sont actuellement nécessaires pour recevoir des commandes dans HubRise. Vous pouvez ativer l'acceptation automatique. Pour plus d'informations, voir [Comment activer l'acceptation automatique des commandes ?](/apps/deliveroo/faqs/acceptation-automatique/) Deliveroo prévoit de permettre une connexion sans tablette à l'avenir.
 
 ---
 
----
-
-**REMARQUE IMPORTANTE :** Les tablettes Deliveroo doivent rester allumées pour recevoir les commandes dans HubRise. Deliveroo prévoit de supporter les intégrations sans tablette d'ici mi-2022.
-
----
+Deliveroo Bridge peut être connecté à HubRise depuis le back-office de HubRise.
 
 ## Pourquoi se connecter ?
 
 Le fait de connecter votre restaurant en ligne ou votre magasin de proximité Deliveroo à HubRise vous permet de recevoir vos commandes Deliveroo directement dans votre logiciel de caisse ou sur l'écran cuisine connecté à HubRise. Vous pouvez ainsi gérer les commandes Deliveroo dans votre logiciel habituel. Les commandes Deliveroo transiteront par votre installation existante, comme vos autres commandes.
+
+Avec HubRise, synchronisez votre menu, vos informations clients et vos commandes avec votre solution de commande en ligne, les plateformes de livraison de repas (dont Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs ou de services de livraison, les solutions d'e-marketing (SMS/e-mailing) et de business intelligence, les systèmes de gestion de stock et de fidélisation client, et bien d'autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, consultez notre [page Apps](/apps).
 
 ## Prérequis
 

@@ -1,35 +1,32 @@
 import styled from "styled-components"
 
 import Link from "@layouts/shared/components/Link"
-import { colors, mixin, sizes } from "@utils/styles"
+import { breakpoints, colors, fontSizes, mixin, sizes } from "@utils/styles"
 
-export const Wrapper = styled.section`
-  display: flex;
-  flex-flow: row wrap;
-  max-width: 75rem;
-  margin: calc(${sizes.blockPadding} - 1rem) auto calc(-${sizes.blockPadding} + 1rem) auto;
-`
+export const StyledBreadcrumbs = styled.ul`
+  max-width: ${sizes.maxWidth};
+  margin: calc(${sizes.blockVerticalPadding} - 1rem) auto calc(-${sizes.blockVerticalPadding} + 1rem) auto;
+  padding: 0 ${sizes.mobilePadding};
+  @media (min-width: ${breakpoints.large}) {
+    padding: 0 ${sizes.desktopPadding};
+  }
 
-export const List = styled.ul`
   display: flex;
-  flex-flow: row wrap;
-  margin-left: unset;
-  padding-left: 1rem;
+  overflow: auto hidden;
 `
 
 export const Item = styled.li`
-  position: relative;
-  margin-right: 0.5rem;
-  font-size: 0.8125rem;
-  color: ${colors.darkGray};
+  font-size: ${fontSizes._14};
+  color: ${colors.textDarkest};
+  white-space: nowrap;
 
   &::after {
     content: ">";
-    margin-left: 0.5rem;
+    margin: 0 0.5rem;
   }
 
   &:last-of-type {
-    color: ${colors.lightGray};
+    color: ${colors.textMedium};
 
     &::after {
       content: "";
@@ -38,7 +35,7 @@ export const Item = styled.li`
 `
 
 export const ItemLink = styled(Link)`
-  color: ${colors.darkGray};
+  color: ${colors.textDarkest};
 
   ${mixin.linkOver(colors.primary)};
 `

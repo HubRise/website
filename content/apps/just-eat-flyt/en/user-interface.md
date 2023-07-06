@@ -69,7 +69,7 @@ To access the actions page, click **Actions** at the top of the screen. If the l
 From the actions page, you can perform the following actions:
 
 - **Push Catalog**: Push the catalog to Just Eat. For more details, see [Push Catalog](/apps/just-eat-flyt/push-catalog).
-- **Push Inventory**: Sync the inventory from HubRise to Just Eat.
+- **Push Inventory**: Push your HubRise inventory to Just Eat.
 
 ## Language and Navigation
 

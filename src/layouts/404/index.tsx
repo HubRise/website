@@ -1,10 +1,12 @@
 import * as React from "react"
 import { useTranslation } from "react-i18next"
 
-import { Styled404, Image, Link, Title } from "./Styles"
+import { Image } from "./Styles"
 
 import Image404 from "@assets/images/404.png"
 import SEO, { Meta } from "@layouts/shared/components/Seo"
+import Block from "@layouts/shared/components/Block"
+import { BlockContent, BlockContentLink } from "@layouts/shared/components/BlockContent"
 
 const NotFound = (): JSX.Element => {
   const { t } = useTranslation()
@@ -14,11 +16,20 @@ const NotFound = (): JSX.Element => {
     <>
       <SEO meta={meta} />
 
-      <Styled404>
-        <Title>{t("layout.404.title")}</Title>
-        <Link to="/">{t("layout.404.text_link")}</Link>
-        <Image alt="404 not found" src={Image404} />
-      </Styled404>
+      <Block backgroundColor="white" title={t("layout.404.title")}>
+        <BlockContent>
+          <p>{t("layout.404.content.text_before_link")}</p>
+
+          <p>
+            <BlockContentLink to="/">{t("layout.404.content.text_link")}</BlockContentLink>
+            {t("layout.404.content.text_after_link")}
+          </p>
+
+          <p>{t("layout.404.content.signature")}</p>
+
+          <Image alt="404 not found" src={Image404} />
+        </BlockContent>
+      </Block>
     </>
   )
 }

@@ -3,6 +3,8 @@ import * as React from "react"
 import Header from "../Header"
 import Footer from "../Footer"
 
+import { Main } from "./Styles"
+
 import { RootContext } from "@utils/context"
 
 export interface LayoutProps {
@@ -16,7 +18,7 @@ const Layout = ({ children, pageContext }: LayoutProps): JSX.Element => {
   return (
     <>
       <Header languagePaths={languagePaths} />
-      <main className="content">{children}</main>
+      <Main>{children}</Main>
       <Footer />
     </>
   )

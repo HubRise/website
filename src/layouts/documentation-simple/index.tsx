@@ -1,14 +1,14 @@
 import * as React from "react"
 import { graphql } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
-
-import { StyledMDX } from "./Styles"
 
 import MDXProvider from "@layouts/shared/components/MdxProvider"
 import SEO, { Meta } from "@layouts/shared/components/Seo"
+import Block from "@layouts/shared/components/Block"
+import MDXCustomRenderer from "@layouts/shared/components/MdxCustomRenderer"
 
 interface DocumentationSimpleProps {
   data: DocumentationSimpleData
+  children: React.ReactNode
 }
 
 interface DocumentationSimpleData {
@@ -16,7 +16,6 @@ interface DocumentationSimpleData {
 }
 
 interface DocumentationSimpleNode {
-  body: string
   frontmatter: {
     meta?: Meta
     title: string
@@ -24,9 +23,8 @@ interface DocumentationSimpleNode {
 }
 
 export const graphqlQuery = graphql`
-  query simpleData($mdXNodeId: String!) {
-    mdx(id: { eq: $mdXNodeId }) {
-      body
+  query simpleData($mdxNodeId: String!) {
+    mdx(id: { eq: $mdxNodeId }) {
       frontmatter {
         title
         meta {
@@ -38,23 +36,17 @@ export const graphqlQuery = graphql`
   }
 `
 
-const DocumentationSimple = ({ data }: DocumentationSimpleProps): JSX.Element => {
-  const { frontmatter, body } = data.mdx
+const DocumentationSimple = ({ data, children: body }: DocumentationSimpleProps): JSX.Element => {
+  const { frontmatter } = data.mdx
   const { meta } = frontmatter
 
   return (
     <MDXProvider>
       <SEO meta={meta} />
 
-      <div className="section">
-        <div className="section__in section__in_padding section__in_reverse">
-          <h3 className="section__title section__title_align-left">{frontmatter.title}</h3>
-
-          <StyledMDX>
-            <MDXRenderer>{body}</MDXRenderer>
-          </StyledMDX>
-        </div>
-      </div>
+      <Block backgroundColor="white" horizontalAlign="left">
+        <MDXCustomRenderer title={frontmatter.title} body={body} />
+      </Block>
     </MDXProvider>
   )
 }

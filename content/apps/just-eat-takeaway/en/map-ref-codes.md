@@ -7,7 +7,7 @@ meta:
   description: Instructions on mapping Just Eat Takeaway product ref codes with other apps after connecting your EPOS with HubRise. Connect apps and synchronise your data.
 ---
 
-Most EPOS solutions require a ref code for each product to correctly parse orders. Therefore, when you create your menu on Just Eat Takeaway, you need to make sure that each product is assigned to the correct ref code.
+Most EPOS solutions require a ref code for each product to properly interpret orders. Therefore, when you create your menu on Just Eat Takeaway, you need to make sure that each product is assigned to the correct ref code.
 
 To assign ref codes to your products, contact your Just Eat Takeaway account manager and provide them with the list of products and ref codes from your EPOS.
 

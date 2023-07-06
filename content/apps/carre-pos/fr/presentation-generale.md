@@ -32,7 +32,7 @@ Carré POS est un logiciel de caisse qui fonctionne sous Windows.
 
 Carré POS enregistre les informations client et l'historique de commandes. Il peut se connecter à de nombreux périphériques métiers tels que des imprimantes de préparation, des monnayeurs automatiques, et des terminaux bancaires.
 
-Le back-office Carré POS Cloud est consultable depuis un navigateur web, et permet de visualiser et d'éditer votre menu, de consulter votre chiffre d'affaire et vos rapports de vente, ou encore de visualiser l'historique de vos commandes.
+Le back-office Carré POS Cloud est consultable depuis un navigateur internet, et permet de visualiser et d'éditer votre menu, de consulter votre chiffre d'affaire et vos rapports de vente, ou encore de visualiser l'historique de vos commandes.
 
 Carré POS a reçu la certification NF525, le rendant conforme à la loi française anti-fraude 2018.
 

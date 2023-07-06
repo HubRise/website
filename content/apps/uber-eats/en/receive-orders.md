@@ -39,7 +39,11 @@ Every option has single quantity. Multiple identical modifiers are encoded in se
 
 ## Order Statuses
 
-In this section, we capitalise the first letter of Uber Eats statuses to make them easier to distinguish from HubRise status names. For example, `Accepted` is a Uber Eats status, while `accepted` is a HubRise status.
+---
+
+**IMPORTANT NOTE:** In this section, we capitalise the first letter of Uber Eats statuses to make them easier to distinguish from HubRise status names. For example, `Accepted` is a Uber Eats status, while `accepted` is a HubRise status.
+
+---
 
 ### Uber Eats Statuses
 
@@ -84,6 +88,12 @@ Uber Eats supports four service types:
 - Eat-in
 
 These are typically associated with specific ref codes in your EPOS. For more information, see your EPOS documentation in our [apps page](/apps).
+
+## Order Times
+
+Uber Eats provides the time when the eater expects to receive or collect the order. Uber Eats Bridge sends this time to HubRise as the `expected_time` field.
+
+To specify a different time, you can update the `confirmed_time` field in HubRise. Uber Eats Bridge will send the updated time to Uber Eats when the order status changes to `Accepted`. Attempting to update this field after the order has been accepted will have no effect.
 
 ## Customer
 

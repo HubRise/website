@@ -19,7 +19,9 @@ export interface MDXBlogNode {
     date: string
   }
   id: string
-  slug: string
+  internal: {
+    contentFilePath: string
+  }
 }
 
 type NodesByLocale = Map<LocaleCode, Array<MDXBlogNode>>
@@ -27,7 +29,7 @@ type NodesByLocale = Map<LocaleCode, Array<MDXBlogNode>>
 export async function getNodesByLocale(graphql: CreatePagesArgs["graphql"]): Promise<NodesByLocale> {
   const { data, errors } = await graphql<BlogMDXNodesData>(`
     query getBlogPosts {
-      allMdx(filter: { slug: { regex: "/^blog//" } }) {
+      allMdx(filter: { internal: { contentFilePath: { glob: "**/blog/**/__post.md" } } }) {
         nodes {
           fields {
             localeCode
@@ -37,7 +39,9 @@ export async function getNodesByLocale(graphql: CreatePagesArgs["graphql"]): Pro
             date
           }
           id
-          slug
+          internal {
+            contentFilePath
+          }
         }
       }
     }

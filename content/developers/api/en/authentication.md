@@ -147,7 +147,7 @@ If the request succeeds, the server returns a `200` response containing the acce
 
 The response also contains the ids and names of the resources your application has access to. You should save these identifiers and make them easily accessible from your user interface. They are a convenient way for users to confirm that their connection is bound to the right resources.
 
-#### Example of response:
+##### Example of response:
 
 ```json
 {

@@ -27,15 +27,26 @@ const Index = ({ categories, currentPath, allAppsPath, allAppsLabel }: NavProps)
   )
 
   return (
-    <StyledNav ref={$navRef} $isSticky={isSticky} id="nav">
-      <List>
-        <Item key={-1}>{link(allAppsPath, allAppsPath === currentPath, allAppsLabel)}</Item>
+    <>
+      {/* Fragment ids must be statically positioned (ie not sticky) */}
+      <div id="nav" />
 
-        {categories.map((category, idx) => {
-          return <Item key={idx}>{link(category.path, category.path === currentPath, category.title)}</Item>
-        })}
-      </List>
-    </StyledNav>
+      <StyledNav ref={$navRef} $isSticky={isSticky}>
+        <List>
+          <Item key={-1} $isSticky={isSticky}>
+            {link(allAppsPath, allAppsPath === currentPath, allAppsLabel)}
+          </Item>
+
+          {categories.map((category, idx) => {
+            return (
+              <Item key={idx} $isSticky={isSticky}>
+                {link(category.path, category.path === currentPath, category.title)}
+              </Item>
+            )
+          })}
+        </List>
+      </StyledNav>
+    </>
   )
 }
 

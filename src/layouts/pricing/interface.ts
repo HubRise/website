@@ -3,8 +3,8 @@ export interface IPricing {
   meta: IMeta
   content: {
     hero: IHero
-    offer: IOffer
-    specials: Array<ISpecial>
+    plan: IPlan
+    infos: Array<IInfo>
   }
 }
 
@@ -17,7 +17,7 @@ export interface IHero {
   title: string
 }
 
-export interface IOffer {
+export interface IPlan {
   pricing: {
     chunk_1: string
     chunk_2: string
@@ -29,7 +29,7 @@ export interface IOffer {
   }
 }
 
-export interface ISpecial {
+export interface IInfo {
   highlight: string
   text: string
   link?: {

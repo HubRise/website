@@ -15,31 +15,31 @@ Le paiement d'un abonnement s'effectue toujours en euros, quelle que soit la dev
 
 ## Paiements au niveau du compte ou du point de vente
 
-Vous pouvez payer votre abonnement à HubRise au niveau du compte ou du point de vente.
+Votre abonnement HubRise peut être facturé au niveau du compte ou du point de vente.
 
-Les paiements au niveau du compte sont le choix par défaut et le plus courant. Si vous exploitez plusieurs points de vente, vous pouvez mettre en place une méthode de paiement unique et gérer une seule facture pour tous vos points de vente.
+La facturation au niveau du compte est le choix par défaut et le plus courant. Si vous exploitez plusieurs points de vente, vous pouvez mettre en place une méthode de paiement unique et gérer une seule facture pour tous vos points de vente.
 
-Si, au contraire, vous avez des exigences spécifiques en matière de facturation ou d'autres besoins commerciaux, vous pouvez configurer une méthode de paiement différente au niveau du point de vente.
+Cependant, si certains de vos points de vente ne font pas partie de la même entité juridique et doivent être facturés séparément, vous pouvez configurer la facturation au niveau du point de vente pour ces points de vente. Cela vous permettra de configurer une méthode de paiement distincte et de recevoir une facture séparée pour chaque point de vente.
 
-### Passage en paiement au niveau du point de vente
+### Passer en facturation au niveau du point de vente
 
-Pour configurer le paiement au niveau d'un point de vente spécifique, procédez comme suit :
-
-1. Si vous avez accès à plusieurs comptes, sélectionnez le **compte** associé au point de vente spécifique.
-1. Sélectionnez une entrée dans la liste déroulante **Point de vente**.
-1. Rendez-vous dans **CONFIGURATION**.
-1. Dans la section **Paiement**, cliquez sur **Le faire régler par le point de vente**. ![Sélection du paiement au niveau du point de vente](../images/071-fr-make-location-pay.png)
-
-### Passage en paiement au niveau du compte
-
-Pour configurer le paiement au niveau du compte pour un point de vente spécifique, procédez comme suit :
+Pour configurer la facturation au niveau du compte pour un point de vente spécifique, procédez comme suit :
 
 1. Si vous avez accès à plusieurs comptes, sélectionnez le **compte** associé au point de vente spécifique.
 1. Sélectionnez une entrée dans la liste déroulante **Point de vente**.
 1. Rendez-vous dans **CONFIGURATION**.
-1. Dans la section **Paiement**, cliquez sur **Faire régler l'abonnement par le compte**. ![Sélection du paiement au niveau du point de vente](../images/072-fr-make-account-pay.png)
+1. Dans la section **Paiement**, cliquez sur **Passer en facturation au niveau du point de vente**. ![Passer en facturation au niveau du point de vente](../images/071-fr-switch-to-location-invoicing.png)
 
-Le cycle de facturation du point de vente correspondra au cycle de facturation du compte. Si la date de facturation actuelle du point de vente diffère de celle du compte, les situations suivantes peuvent se produire :
+### Passer en facturation au niveau du compte
+
+Pour configurer la facturation au niveau du point de vente pour un point de vente spécifique, procédez comme suit :
+
+1. Si vous avez accès à plusieurs comptes, sélectionnez le **compte** associé au point de vente spécifique.
+1. Sélectionnez une entrée dans la liste déroulante **Point de vente**.
+1. Rendez-vous dans **CONFIGURATION**.
+1. Dans la section **Paiement**, cliquez sur **Passer en facturation au niveau du compte**. ![Passer en facturation au niveau du compte](../images/072-fr-switch-to-account-invoicing.png)
+
+Lorsque la facturation au niveau du compte est activée, le cycle de facturation du point de vente est aligné sur celui du compte. Si la date de facturation actuelle du point de vente diffère de celle du compte, les situations suivantes peuvent se produire :
 
 - Si la prochaine date de facturation du point de vente est antérieure à la prochaine date de facturation du compte, vous sera immédiatement facturé au prorata temporis afin d'aligner la prochaine date de facturation du point de vente sur celle du compte.
 - Si la prochaine date de facturation du point de vente est postérieure à la prochaine date de facturation du compte, rien ne changera jusqu'à la prochaine date de facturation du compte. Vous serez alors facturé au prorata temporis et la prochaine date de facturation de Location s'alignera sur celle du compte.
@@ -74,7 +74,7 @@ Pour ajouter ou mettre à jour une méthode de paiement au niveau du point de ve
 
 1. Rendez-vous dans **CONFIGURATION**.
 1. Si vous avez accès à plusieurs comptes, sélectionnez le **compte** associé au point de vente spécifique.
-1. Sélectionnez une entrée dans la liste déroulante **Point de vente**, puis faites défiler la page jusqu'à la section **Paiement**. ![Ajouter une méthode de paiement au niveau du point de vente](../images/072-fr-make-account-pay.png)
+1. Sélectionnez une entrée dans la liste déroulante **Point de vente**, puis faites défiler la page jusqu'à la section **Paiement**. ![Ajouter une méthode de paiement au niveau du point de vente](../images/071-fr-switch-to-location-invoicing.png)
 1. Si aucune méthode de paiement n'existe actuellement, cliquez sur **Ajouter une méthode de paiement**. Si une méthode de paiement est déjà définie, cliquez sur **Modifier votre méthode de paiement**.
 1. Saisissez les informations relatives à votre carte de crédit. Les cartes de crédit doivent être valides pour être acceptées.
 1. Une fois que vous avez terminé, cliquez sur **Enregistrer**.
@@ -83,7 +83,7 @@ Pour ajouter ou mettre à jour une méthode de paiement au niveau du point de ve
 
 Pour supprimer une méthode de paiement, procédez comme suit :
 
-1. Connectez-vous à votre compte HubRise.
+1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com?locale=fr-FR).
 1. Si vous avez accès à plusieurs comptes, sélectionnez le compte concerné.
 1. Rendez-vous dans **CONFIGURATION**.
 1. Pour vérifier le paiement défini au niveau du compte, assurez-vous que l'option **Tous les points de vente** est sélectionnée. Pour vérifier le paiement défini au niveau du pointe de vente, sélectionnez celui-ci dans la liste déroulante des points de vente.
@@ -95,15 +95,15 @@ Pour supprimer une méthode de paiement, procédez comme suit :
 
 ---
 
-## Traiter les devis en attente
+## Traiter les demandes de paiement
 
 Lorsque vous changez de formule tarifaire, le paiement doit être autorisé avant que la carte de crédit ne puisse être débitée. Les utilisateurs de niveau administrateur recevront des notifications leur rappelant d'achever le processus de paiement. Pour plus d'informations sur les notifications, voir la rubrique [Notifications sur les formules](/docs/utilisation-formule#notifications-sur-les-formules/).
 
-Pour traiter un paiement à partir de la notification, procédez comme suit :
+Pour traiter une demande de paiement à partir de la notification, procédez comme suit :
 
 1. Connectez-vous à votre back-office HubRise.
 1. Assurez-vous qu'une carte de crédit est enregistrée sur votre compte ou votre point de vente. Si tel n'est pas le cas, consultez les instructions indiquées à la rubrique [Ajouter une méthode de paiement](#ajouter-un-mode-de-paiement).
-1. Cliquez sur **Afficher le devis le plus ancien**, puis sur **Payer**. Pour consulter tous les devis non payés, cliquez sur **Vérifier votre compte** à partir de la notification.
+1. Cliquez sur **la payer en ligne ou télécharger le PDF**, puis sur **Payer**. Pour consulter toutes les demandes de paiement, allez dans **PARAMÈTRES**.
 
 ---
 

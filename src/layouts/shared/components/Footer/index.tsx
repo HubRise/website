@@ -8,7 +8,7 @@ import { useFooterData } from "./graphql"
 
 import { getLocaleCodeFromAbsolutePath, useLocaleCode } from "@utils/locales"
 
-const Footer: React.FC = (): JSX.Element => {
+const Footer = (): JSX.Element => {
   const localeCode = useLocaleCode()
 
   const footerData = useFooterData()

@@ -40,19 +40,19 @@ Finally, the `DebugMode` node only appears if debug mode is selected from the Co
 
 ### The EOIAuthenticationToken Node
 
-This node has a single value that represents the PixelPoint API token saved in PixelPoint Bridge. For more information, see [Connection to HubRise](/apps/pixelpoint-bridge/connect-hubrise/).
+This node has a single value that represents the PixelPoint API token saved in PixelPoint Bridge. For more information, see [Connect to HubRise](/apps/pixelpoint-bridge/connect-hubrise/).
 
 ### The Transaction Node
 
 The `Transaction` node and its subnodes are especially relevant to diagnose possible problems in the request. The main subnodes of interest are:
 
-- `SaleTypeNum`: The service type associated with the order. For more information, see [Setting Service Types](apps/pixelpoint/map-ref-codes#setting-service-types).
+- `SaleTypeNum`: The service type associated with the order. For more information, see [Setting Service Types](apps/pixelpoint-bridge/map-ref-codes/#service-types).
 
 - `ScheduleTime`: If present, it indicates the date and time the order should be delivered or expected to be ready for collection. It is not present if the customer does not specify the time for collection, or if delivery is scheduled within 30 minutes of the order or as soon as possible.
 
 - `Items`: Must contain at least one `Item` node. For each `Item` node, the following subnodes are generally present:
 
-  - `ProdNum`: The unique product code that is associated with the product in your EPOS catalog. For more information, see [Mapping Ref Codes](/apps/pixelpoint/map-ref-codes/).
+  - `ProdNum`: The unique product code that is associated with the product in your EPOS catalog. For more information, see [Mapping Ref Codes](/apps/pixelpoint-bridge/map-ref-codes/).
   - `CouponNum`: The unique product code associated with a discount in your EPOS catalog. `CouponNum` and `ProdNum` are mutually exclusive, therefore only one must be present inside the `Item` node.
   - `CostEach`: The cost of each `Item`.
   - `Quantity`: The product quantity ordered by the customer.

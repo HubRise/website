@@ -22,12 +22,12 @@ app_info:
 
 ## Description
 
-La Toque Magique est une solution de commande en ligne pour les restaurants. La Toque Magique fournit un site web e-commerce personnalisable, optimisé pour le SEO et pour le partage sur les réseaux sociaux. Les clients peuvent consulter le site en ligne, ou l'installer comme une application mobile.
+La Toque Magique est une solution de commande en ligne pour les restaurants. La Toque Magique fournit un site internet e-commerce personnalisable, optimisé pour le SEO et pour le partage sur les réseaux sociaux. Les clients peuvent consulter le site en ligne, ou l'installer comme une application mobile.
 
 La Toque Magique fournit aussi un système de gestion (back-office) permettant de :
 
 - Prendre des commandes par téléphone ou sur place.
-- Regrouper les commandes depuis tous les canaux (site web, plateforme de livraison, etc).
+- Regrouper les commandes depuis tous les canaux (site internet, plateforme de livraison, etc).
 - Gérer la carte.
 - Offrir aux livreurs une application mobile connectée contenant les informations de leur tournée.
 - Visualiser les statistiques de ventes.

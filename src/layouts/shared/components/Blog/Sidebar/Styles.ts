@@ -1,76 +1,29 @@
 import styled, { css } from "styled-components"
 
-import { breakpoints, colors, mixin } from "@utils/styles"
+import { boxShadows, breakpoints, colors, iconSizes, mixin, sizes, zIndexValues } from "@utils/styles"
 import Link from "@layouts/shared/components/Link"
-
-export const SearchForm = styled.form`
-  position: relative;
-`
-
-export const SearchInput = styled.input`
-  position: relative;
-  border-radius: 3px;
-  padding-right: 48px;
-`
-
-export const SearchIcon = styled.i`
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 100%;
-  padding-top: 10px;
-  text-align: center;
-  border-radius: 0 3px 3px 0;
-  color: ${colors.white};
-  background-color: ${colors.primary};
-  cursor: pointer;
-
-  ${mixin.buttonOver(colors.white, colors.darkGray)};
-`
+import Icon from "@layouts/shared/components/Icon"
 
 export const Menu = styled.div`
-  margin-bottom: 2rem;
-`
-
-export const MenuList = styled.ul<{ $isSelected: boolean }>`
-  display: block;
-  margin-top: 1rem;
-
-  ${(props) =>
-    props.$isSelected === false &&
-    css`
-      @media (max-width: ${breakpoints.medium}) {
-        display: none;
-      }
-    `}
-`
-
-export const MenuItem = styled.li`
-  display: block;
-  margin-bottom: 0.5rem;
-`
-
-export const ItemLink = styled(Link)`
-  color: ${colors.gray};
-  line-height: 1.2rem;
-  font-size: 0.9375rem;
-
-  ${mixin.linkOver(colors.primary)};
-
-  .active {
-    color: ${colors.primary};
-  }
+  position: relative;
 `
 
 export const MenuTitle = styled.h5`
   position: relative;
-  padding-bottom: 1rem;
-  color: #cccccc;
-  font-weight: bold;
+  padding: 1rem ${sizes.mobilePadding};
+  color: ${colors.textLight};
+  font-weight: 700;
   text-transform: uppercase;
-  font-size: 1rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: ${breakpoints.blogStickyMenu}) {
+    cursor: default;
+    padding-left: ${sizes.desktopPadding};
+    padding-right: ${sizes.desktopPadding};
+  }
 
   &:before {
     border-bottom: 4px solid #ececec;
@@ -78,22 +31,61 @@ export const MenuTitle = styled.h5`
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 65%;
+    width: 100%;
 
-    @media (max-width: ${breakpoints.medium}) {
-      width: 100%;
+    @media (min-width: ${breakpoints.blogStickyMenu}) {
+      width: 65%;
     }
   }
 `
 
-export const ArrowIcon = styled.i`
+export const ArrowIcon = styled(Icon).attrs({ size: iconSizes._32 })`
   color: ${colors.primary};
-  font-size: 1.3em;
-  float: right;
   cursor: pointer;
-  display: none;
 
-  @media (max-width: ${breakpoints.medium}) {
-    display: block;
+  @media (min-width: ${breakpoints.blogStickyMenu}) {
+    display: none;
+  }
+`
+
+export const MenuList = styled.div<{ $isSelected: boolean }>`
+  @media not (min-width: ${breakpoints.blogStickyMenu}) {
+    position: absolute;
+    top: 100%;
+    z-index: ${zIndexValues.mobileBarMenu};
+    width: 100%;
+    padding: 0.5rem 0;
+    background-color: ${colors.backgroundWhite};
+    border-bottom: thin solid ${colors.borderLight};
+    box-shadow: ${boxShadows.medium};
+  }
+
+  @media (min-width: ${breakpoints.blogStickyMenu}) {
+    margin-top: 1rem;
+  }
+
+  ${(props) =>
+    props.$isSelected === false &&
+    css`
+      @media not (min-width: ${breakpoints.blogStickyMenu}) {
+        display: none;
+      }
+    `}
+`
+
+export const MenuItem = styled.div``
+
+export const ItemLink = styled(Link)`
+  display: block;
+  padding: 0.5rem ${sizes.mobilePadding};
+  @media (min-width: ${breakpoints.blogStickyMenu}) {
+    padding: 0.5rem ${sizes.desktopPadding};
+  }
+
+  color: ${colors.textDark};
+  ${mixin.linkOver(colors.primary)};
+
+  .active {
+    color: ${colors.primary};
   }
 `

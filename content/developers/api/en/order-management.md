@@ -13,7 +13,7 @@ meta:
 
 This method creates an order.
 
-Almost all fields are optional. In fact the simplest order that can be created only has a `status`.
+Almost all the fields are optional. In fact the simplest order that can be created only has a `status`.
 
 <CallSummaryTable
   endpoint="POST /locations/:location_id/orders"
@@ -21,31 +21,30 @@ Almost all fields are optional. In fact the simplest order that can be created o
   accessLevel="location, account"
 />
 
-#### Parameters:
+##### Parameters:
 
-| Name                                                                  | Type                                                       | Description                                                                                                                                                                                                                                                                 |
-| --------------------------------------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `private_ref` <Label type="optional" />                               | string                                                     | An optional client internal reference for this order. Must be unique if defined. This field can typically be used to lookup an order. See [Private Refs](/developers/api/general-concepts#private-refs).                                                                    |
-| `status`                                                              | [OrderStatus](#order-status)                               | The order status.                                                                                                                                                                                                                                                           |
-| `service_type` <Label type="optional" />                              | string                                                     | How the order is delivered/served to the customer. One of: `delivery`, `collection` or `eat_in`.                                                                                                                                                                            |
-| `service_type_ref` <Label type="optional" />                          | string                                                     | A ref identifying the order type. Order type may depend on how the order was placed, and how it must be delivered or served to the customer.                                                                                                                                |
-| `expected_time` <Label type="optional" />                             | [Time](/developers/api/general-concepts/#dates-and-times)  | The time the customer is expecting to get his order.                                                                                                                                                                                                                        |
-| `confirmed_time` <Label type="optional" />                            | [Time](/developers/api/general-concepts/#dates-and-times)  | The time the customer will receive his order.                                                                                                                                                                                                                               |
-| `customer_id` <Label type="optional" />                               | string                                                     | The id of the customer who placed the order. Cannot be used together with `customer_list_id`, `customer_private_ref`, or `customer`. For more information, see [Order's Customer](#order-s-customer).                                                                       |
-| `customer_list_id` & `customer_private_ref` <Label type="optional" /> | string                                                     | The private ref and customer list of the customer who placed the order. Cannot be used together with `customer_id` or `customer`. For more information, see [Order's Customer](#order-s-customer).                                                                          |
-| `customer` <Label type="optional" />                                  | [Customer](#order-s-customer)                              | When none of `customer_id`, `customer_list_id`, or `customer_private_ref` are passed, the order is a guest order. In this case, the `customer` object can include customer details specific to this order. For more information, see [Order's Customer](#order-s-customer). |
-| `customer_notes` <Label type="optional" />                            | string                                                     | Information provided by the customer about the order.                                                                                                                                                                                                                       |
-| `seller_notes` <Label type="optional" />                              | string                                                     | Information or message by the merchant, for example a note to notify the customer that a product has been switched with another.                                                                                                                                            |
-| `coupon_codes` <Label type="optional" />                              | string[]                                                   | The coupon codes used in this order.                                                                                                                                                                                                                                        |
-| `collection_code` <Label type="optional" />                           | string                                                     | An order reference shared with the customer to ease the processing and collection or delivery of an order. It does not have to be unique.                                                                                                                                   |
-| `total` <Label type="optional" />                                     | [Money](/developers/api/general-concepts/#monetary-values) | The amount paid by the customer.                                                                                                                                                                                                                                            |
-| `custom_fields` <Label type="optional" />                             | [CustomFields](/developers/api/extensions/#custom-fields)  | Additional data attached to the order.                                                                                                                                                                                                                                      |
-| `items` <Label type="optional" />                                     | [OrderItem](#order-items)[]                                | The order items.                                                                                                                                                                                                                                                            |
-| `loyalty_operations` <Label type="optional" />                        | [OrderLoyaltyOperation](#order-loyalty-operations)[]       | Add or remove points to the customer loyalty card(s). Can only be used for orders linked to a customer.                                                                                                                                                                     |
-| `charges` <Label type="optional" />                                   | [OrderCharge](#order-charges)[]                            | The charges incurred on this order.                                                                                                                                                                                                                                         |
-| `payments` <Label type="optional" />                                  | [OrderPayment](#order-payments)[]                          | The payment method(s) used.                                                                                                                                                                                                                                                 |
-| `discounts` <Label type="optional" />                                 | [OrderDiscount](#order-discounts)[]                        | The discounts applied.                                                                                                                                                                                                                                                      |
-| `deals` <Label type="optional" />                                     | [OrderDeal](#order-deals)[]                                | The deals used in this order.                                                                                                                                                                                                                                               |
+| Name                                                                  | Type                                                      | Description                                                                                                                                                                                                                                                                 |
+| --------------------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `private_ref` <Label type="optional" />                               | string                                                    | An optional client internal reference for this order. Must be unique if defined. This field can typically be used to lookup an order. See [Private Refs](/developers/api/general-concepts#private-refs).                                                                    |
+| `status`                                                              | [OrderStatus](#order-status)                              | The order status.                                                                                                                                                                                                                                                           |
+| `service_type` <Label type="optional" />                              | string                                                    | How the order is delivered/served to the customer. One of: `delivery`, `collection` or `eat_in`.                                                                                                                                                                            |
+| `service_type_ref` <Label type="optional" />                          | string                                                    | A ref identifying the order type. Order type may depend on how the order was placed, and how it must be delivered or served to the customer.                                                                                                                                |
+| `expected_time` <Label type="optional" />                             | [Time](/developers/api/general-concepts/#dates-and-times) | The time the customer is expecting to get his order.                                                                                                                                                                                                                        |
+| `confirmed_time` <Label type="optional" />                            | [Time](/developers/api/general-concepts/#dates-and-times) | The time the customer will receive his order.                                                                                                                                                                                                                               |
+| `customer_notes` <Label type="optional" />                            | string                                                    | Information provided by the customer about the order.                                                                                                                                                                                                                       |
+| `seller_notes` <Label type="optional" />                              | string                                                    | Information or message by the merchant, for example a note to notify the customer that a product has been switched with another.                                                                                                                                            |
+| `collection_code` <Label type="optional" />                           | string                                                    | An order reference shared with the customer to ease the processing and collection or delivery of an order. It does not have to be unique.                                                                                                                                   |
+| `coupon_codes` <Label type="optional" />                              | string[]                                                  | The coupon codes used in this order.                                                                                                                                                                                                                                        |
+| `items` <Label type="optional" />                                     | [OrderItem](#order-items)[]                               | The order items.                                                                                                                                                                                                                                                            |
+| `deals` <Label type="optional" />                                     | [OrderDeal](#order-deals)[]                               | The deals used in this order.                                                                                                                                                                                                                                               |
+| `discounts` <Label type="optional" />                                 | [OrderDiscount](#order-discounts)[]                       | The discounts applied.                                                                                                                                                                                                                                                      |
+| `charges` <Label type="optional" />                                   | [OrderCharge](#order-charges)[]                           | The charges incurred on this order.                                                                                                                                                                                                                                         |
+| `payments` <Label type="optional" />                                  | [OrderPayment](#order-payments)[]                         | The payment method(s) used.                                                                                                                                                                                                                                                 |
+| `customer_id` <Label type="optional" />                               | string                                                    | The id of the customer who placed the order. Cannot be used together with `customer_list_id`, `customer_private_ref`, or `customer`. For more information, see [Order's Customer](#order-s-customer).                                                                       |
+| `customer_list_id` & `customer_private_ref` <Label type="optional" /> | string                                                    | The private ref and customer list of the customer who placed the order. Cannot be used together with `customer_id` or `customer`. For more information, see [Order's Customer](#order-s-customer).                                                                          |
+| `customer` <Label type="optional" />                                  | [Customer](#order-s-customer)                             | When none of `customer_id`, `customer_list_id`, or `customer_private_ref` are passed, the order is a guest order. In this case, the `customer` object can include customer details specific to this order. For more information, see [Order's Customer](#order-s-customer). |
+| `loyalty_operations` <Label type="optional" />                        | [OrderLoyaltyOperation](#order-loyalty-operations)[]      | Add or remove points to the customer loyalty card(s). Can only be used for orders linked to a customer.                                                                                                                                                                     |
+| `custom_fields` <Label type="optional" />                             | [CustomFields](/developers/api/extensions/#custom-fields) | Additional data attached to the order.                                                                                                                                                                                                                                      |
 
 <details>
 
@@ -60,12 +59,11 @@ Almost all fields are optional. In fact the simplest order that can be created o
   "service_type": "delivery",
   "service_type_ref": "WEBSITE-DEL",
   "expected_time": "2021-06-24T11:30:00+02:00",
-  "customer_id": "ve343",
   "items": [
     {
       "product_name": "Margarita",
-      "sku_ref": "MAR-SM",
       "sku_name": "Small",
+      "sku_ref": "MAR-SM",
       "price": "9.00 EUR",
       "quantity": "2",
       "options": [
@@ -106,11 +104,17 @@ Almost all fields are optional. In fact the simplest order that can be created o
       "points_used": "5.0"
     }
   ],
-  "loyalty_operations": [
+  "deals": {
+    "0": {
+      "name": "Buy a dessert, get a drink for 1€",
+      "ref": "FREEDRINK"
+    }
+  },
+  "discounts": [
     {
-      "ref": "LOY",
-      "delta": "-5",
-      "reason": "Points used on order"
+      "name": "5€ off your order",
+      "ref": "5OFF",
+      "price_off": "5.00 EUR"
     }
   ],
   "charges": [
@@ -130,19 +134,14 @@ Almost all fields are optional. In fact the simplest order that can be created o
       }
     }
   ],
-  "discounts": [
+  "customer_id": "ve343",
+  "loyalty_operations": [
     {
-      "name": "5€ off your order",
-      "ref": "5OFF",
-      "price_off": "5.00 EUR"
+      "ref": "LOY",
+      "delta": "-5",
+      "reason": "Points used on order"
     }
-  ],
-  "deals": {
-    "0": {
-      "name": "Buy a dessert, get a drink for 1€",
-      "ref": "FREEDRINK"
-    }
-  }
+  ]
 }
 ```
 
@@ -158,7 +157,7 @@ Returns an order resource.
   accessLevel="location, account"
 />
 
-All fields of an order creation request are returned, plus a few more:
+All the fields of an order creation request are returned, plus a few more:
 
 | Name          | Type                                                       | Description                                                                  |
 | ------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------- |
@@ -167,8 +166,8 @@ All fields of an order creation request are returned, plus a few more:
 | `location_id` | string                                                     | The id of the location where the order was created.                          |
 | `created_at`  | [Time](/developers/api/general-concepts/#dates-and-times)  | Order creation time.                                                         |
 | `created_by`  | string                                                     | Name of the API client that created the order.                               |
-| `customer`    | [Customer](#order-s-customer)                              | Customer details at the time of the order creation.                          |
 | `total`       | [Money](/developers/api/general-concepts/#monetary-values) | Order total amount. Calculated by HubRise from items, charges and discounts. |
+| `customer`    | [Customer](#order-s-customer)                              | Customer details at the time of the order creation.                          |
 
 **Note:** `total_discrepancy` and `payment_discrepancy` fields are also returned, but these fields are deprecated and their values should not be used.
 
@@ -180,7 +179,7 @@ In addition, each `item`, `charge`, `payment` and `discount` is returned with a 
 
 `GET /locations/3r4s3-1/orders/5dpm9`
 
-#### Response:
+##### Response:
 
 ```json
 {
@@ -194,44 +193,13 @@ In addition, each `item`, `charge`, `payment` and `discount` is returned with a 
   "created_by": "MyClient",
   "expected_time": "2021-06-24T19:07:52+02:00",
   "confirmed_time": null,
-  "customer": {
-    "id": "wbq93",
-    "customer_list_id": "1dmy1",
-    "anonymised": false,
-    "private_ref": "49751",
-    "email": "charles.moore@dummy-mail.org",
-    "first_name": "Charles",
-    "last_name": "Moore",
-    "gender": "male",
-    "birth_date": "1999-01-01",
-    "company_name": "HubRise",
-    "phone": "+33123456789",
-    "address_1": "1 avenue des Champs Elysées",
-    "address_2": null,
-    "postal_code": "75001",
-    "city": "Paris",
-    "state": null,
-    "country": "FR",
-    "latitude": "48.858951",
-    "longitude": "2.277021",
-    "delivery_notes": null,
-    "sms_marketing": false,
-    "email_marketing": false,
-    "nb_orders": 8,
-    "order_total": "151.20 EUR",
-    "first_order_date": "2021-06-22T11:04:27+02:00",
-    "last_order_date": "2021-06-24T17:07:53+02:00",
-    "loyalty_cards": [],
-    "custom_fields": {}
-  },
   "customer_notes": null,
   "seller_notes": null,
-  "coupon_codes": [],
   "collection_code": null,
+  "coupon_codes": [],
   "total": "18.90 EUR",
   "total_discrepancy": null,
   "payment_discrepancy": "0.00 EUR",
-  "custom_fields": {},
   "items": [
     {
       "id": "w6nd4",
@@ -281,7 +249,24 @@ In addition, each `item`, `charge`, `payment` and `discount` is returned with a 
       "deleted": false
     }
   ],
-  "loyalty_operations": [],
+  "deals": {
+    "0": {
+      "name": "30% off on pasta",
+      "ref": "10"
+    }
+  },
+  "discounts": [
+    {
+      "id": "wv281",
+      "private_ref": null,
+      "name": "2€ off",
+      "ref": "45",
+      "pricing_effect": "price_off",
+      "pricing_value": "2.00 EUR",
+      "price_off": "2.00 EUR",
+      "deleted": false
+    }
+  ],
   "charges": [
     {
       "id": "wk843",
@@ -309,24 +294,39 @@ In addition, each `item`, `charge`, `payment` and `discount` is returned with a 
       "deleted": false
     }
   ],
-  "discounts": [
-    {
-      "id": "wv281",
-      "private_ref": null,
-      "name": "2€ off",
-      "ref": "45",
-      "pricing_effect": "price_off",
-      "pricing_value": "2.00 EUR",
-      "price_off": "2.00 EUR",
-      "deleted": false
-    }
-  ],
-  "deals": {
-    "0": {
-      "name": "30% off on pasta",
-      "ref": "10"
-    }
-  }
+  "customer": {
+    "id": "wbq93",
+    "customer_list_id": "1dmy1",
+    "anonymised": false,
+    "private_ref": "49751",
+    "email": "charles.moore@dummy-mail.org",
+    "first_name": "Charles",
+    "last_name": "Moore",
+    "gender": "male",
+    "birth_date": "1999-01-01",
+    "company_name": "HubRise",
+    "phone": "+33123456789",
+    "phone_access_code": "8888",
+    "address_1": "1 avenue des Champs Elysées",
+    "address_2": null,
+    "postal_code": "75001",
+    "city": "Paris",
+    "state": null,
+    "country": "FR",
+    "latitude": "48.858951",
+    "longitude": "2.277021",
+    "delivery_notes": null,
+    "sms_marketing": false,
+    "email_marketing": false,
+    "nb_orders": 8,
+    "order_total": "151.20 EUR",
+    "first_order_date": "2021-06-22T11:04:27+02:00",
+    "last_order_date": "2021-06-24T17:07:53+02:00",
+    "loyalty_cards": [],
+    "custom_fields": {}
+  },
+  "loyalty_operations": [],
+  "custom_fields": {}
 }
 ```
 
@@ -352,7 +352,7 @@ Orders of any location of the account:
   accessLevel="account"
 />
 
-#### Parameters:
+##### Parameters:
 
 | Name            | Type                                                      | Description                                                                                                                                                                                         |
 | --------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -368,7 +368,7 @@ Orders of any location of the account:
 
 `GET /locations/3r4s3-1/orders?customer_id=wbq93`
 
-#### Response:
+##### Response:
 
 ```json
 [
@@ -383,10 +383,9 @@ Orders of any location of the account:
    "created_by": "MyClient",
    "expected_time": "2021-06-24T19:07:52+02:00",
    "confirmed_time": null,
-   "customer": {
-     "id": "wbq93",
+   "items": [
      ...
-   },
+   ],
    ...
  },
  ...
@@ -400,9 +399,9 @@ Orders of any location of the account:
 Updates an order.
 
 <CallSummaryTable
-endpoint="PATCH /locations/:location_id/orders/:order_id"
-shortEndpoint="PATCH /location/orders/:order_id (location only)"
-accessLevel="location, account"
+  endpoint="PATCH /locations/:location_id/orders/:order_id"
+  shortEndpoint="PATCH /location/orders/:order_id (location only)"
+  accessLevel="location, account"
 />
 
 The following fields can be updated by sending their new value:
@@ -417,9 +416,9 @@ The following fields can be updated by sending their new value:
 You can also delete or add elements to the following collections, and set their private ref:
 
 - `items`
+- `discounts`
 - `charges`
 - `payments`
-- `discounts`
 
 <details>
 
@@ -475,7 +474,7 @@ Deleted elements are still present in the order representation, but they are irr
 }
 ```
 
-#### Response:
+##### Response:
 
 ```json
 {
@@ -539,7 +538,7 @@ This request adds two payments to the order.
 }
 ```
 
-#### Response:
+##### Response:
 
 ```json
 {
@@ -601,7 +600,7 @@ This request sets a private ref on an item.
 }
 ```
 
-#### Response:
+##### Response:
 
 ```json
 {
@@ -660,9 +659,9 @@ There are two ways to create an order with an attached customer:
 }
 ```
 
-When you retrieve an order using a GET request, you will find the customer fields encoded in a `customer` object . The presence of an `id` field with a non null value in this object indicates that the order is attached to this customer. Conversely, a null value indicates a guest order.
+When you retrieve an order using a GET request, you will find the customer fields encoded in a `customer` object. The `customer` object contains the customer values _at the time of the order creation_.
 
-Note that the customer values _at the time of the order creation_ are returned in the `customer` object when you retrieve the order. The only exception is the `custom_fields` customer field, whose value _at the time of the order retrieval_ is returned.
+The presence of a `id` field with a non-null value in the `order.customer` object indicates that the order is attached to this customer. Conversely, a null value indicates a guest order.
 
 ### Order with no attached customer (guest order)
 
@@ -688,6 +687,7 @@ The following fields are available in the `customer` object:
 - `birth_date`
 - `company_name`
 - `phone`
+- `phone_access_code`
 - `address_1`
 - `address_2`
 - `postal_code`
@@ -760,7 +760,7 @@ Orders do not have to go through all steps. The sequence actually depends on the
 | `options` <Label type="optional" />        | [OrderOption](#order-options)[]                             | Item customization.                                                                                                                                                                         |
 | `deleted` <Label type="optional" />        | boolean                                                     | `false` by default. Setting this field to `true` marks the resource as irreversibly deleted.                                                                                                |
 
-#### Example:
+##### Example:
 
 ```json
 {
@@ -811,7 +811,7 @@ Order items which are part of a deal include a `deal_line` field. This field is 
 | `quantity` <Label type="optional" /> | integer                                                    | The number of selections for this option, relative to a single item unit. Default: `1`.       |
 | `removed` <Label type="optional" />  | boolean                                                    | When this flag is true, the option is removed (for instance, a removed ingredient in a dish). |
 
-#### Example:
+##### Example:
 
 ```json
 {
@@ -829,14 +829,14 @@ A removed option can define a `price`. In this case, it's the price charged to t
 
 An order deal associates an order item's `deal_key` to a particular deal.
 
-#### Attributes:
+##### Attributes:
 
 | Name                            | Type   | Description                       |
 | ------------------------------- | ------ | --------------------------------- |
 | `name`                          | string | The name of the deal.             |
 | `ref` <Label type="optional" /> | string | The ref that identifies the deal. |
 
-#### Example:
+##### Example:
 
 ```json
 {
@@ -851,7 +851,7 @@ An order deal associates an order item's `deal_key` to a particular deal.
 
 An order discount is a discount applied to the whole order, as opposed to deals which apply to a set of order items.
 
-#### Attributes:
+##### Attributes:
 
 | Name                                    | Type                                                       | Description                                                                                                        |
 | --------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
@@ -863,7 +863,7 @@ An order discount is a discount applied to the whole order, as opposed to deals 
 
 **Note:** the `pricing_effect` and `pricing_value` fields are deprecated. They are still present in the API output for backwards compatibility, but their values should be ignored.
 
-#### Example:
+##### Example:
 
 ```json
 [
@@ -884,7 +884,7 @@ An order discount is a discount applied to the whole order, as opposed to deals 
 
 Order charges increase the price paid by the customer.
 
-#### Attributes:
+##### Attributes:
 
 | Name                                    | Type                                                        | Description                                                                                                      |
 | --------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
@@ -899,7 +899,7 @@ Order charges increase the price paid by the customer.
 
 **Note:** the `type` field is deprecated and should be ignored in new integrations.
 
-#### Example:
+##### Example:
 
 ```json
 [
@@ -917,7 +917,7 @@ If one or several payments are defined, the sum of the payment amounts should eq
 
 If payments are omitted, the order should be considered as unpaid.
 
-#### Attributes:
+##### Attributes:
 
 | Name                                    | Type                                                       | Description                                                                                                           |
 | --------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
@@ -930,7 +930,7 @@ If payments are omitted, the order should be considered as unpaid.
 
 **Note:** the `type` field is deprecated and should be ignored in new integrations.
 
-#### Example:
+##### Example:
 
 ```json
 [
@@ -961,7 +961,7 @@ Each operation is linked to a loyalty card, uniquely identified by its name. If 
 
 Each loyalty operation triggers the automatic recalculation of the loyalty card balance.
 
-#### Attributes:
+##### Attributes:
 
 | Name                               | Type                                                        | Description                                                                              |
 | ---------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
@@ -969,7 +969,7 @@ Each loyalty operation triggers the automatic recalculation of the loyalty card 
 | `delta`                            | [decimal](/developers/api/general-concepts/#decimal-values) | The number of points to add to the card balance. Use a negative number to remove points. |
 | `reason` <Label type="optional" /> | string                                                      | Additional information on the operation.                                                 |
 
-#### Example:
+##### Example:
 
 ```json
 [
@@ -990,7 +990,7 @@ Each loyalty operation triggers the automatic recalculation of the loyalty card 
 
 A `tax_rate` can be specified for each order item and order charge.
 
-Tax rate are decimal numbers, representing a percentage of the price. For example, `tax_rate=15.5` means that the tax is 15.5% of the price of the item or charge.
+Tax rate are decimal numbers, representing a percentage of the price. For example, `tax_rate="15.5"` means that the tax is 15.5% of the price of the item or charge.
 
 Whether prices are tax-inclusive or exclusive is a decision taken at the account level. The chosen convention must then be enforced by all clients connected to the account. As a general rule, you can assume that prices in HubRise are **tax-inclusive** for accounts situated in markets where consumer prices are tax-inclusive, for example European countries. On the contrary, prices can generally be considered as **tax-exclusive** in the other markets, for example the U.S.
 

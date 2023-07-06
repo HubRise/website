@@ -17,15 +17,16 @@ This page explains how to push your catalog, and what information is sent to Del
 
 To update your menu in Deliveroo, you should have a HubRise catalog first. Many apps connected with HubRise, including EPOS solutions, offer the ability to push their menu into HubRise. Refer to your EPOS documentation on the HubRise website to verify.
 
-Alternatively, you can populate a HubRise catalog by pulling your menu from Uber Eats.
+Alternatively, you can populate a HubRise catalog by pulling the menu from an existing Deliveroo or Uber Eats store. For more information, refer to these links:
 
-For more information on HubRise catalogs, see [Catalogs](/docs/catalog/).
+- [Pull a Catalog from Deliveroo](/apps/deliveroo/pull-catalog)
+- [Pull a Catalog from Uber Eats](/apps/uber-eats/pull-catalog)
 
 ## Manual Catalog Push
 
-Once your catalog is populated on HubRise, you can push it manually to your Deliveroo store by following these steps:
+Once your catalog is populated on HubRise, and you have assigned ref codes to all products and options, you can push it manually to your Deliveroo store by following these steps:
 
-1. Log in to your HubRise account.
+1. Log in to your [HubRise account](https://manager.hubrise.com).
 1. Select the HubRise account and location connected with your Deliveroo store.
 1. Open the **CONNECTIONS** page, then select **Deliveroo Bridge** from the list of connected apps.
 1. In Deliveroo Bridge, select the **Actions** tab, then click **Push catalog**.
@@ -33,7 +34,7 @@ Once your catalog is populated on HubRise, you can push it manually to your Deli
 
 ---
 
-**IMPORTANT NOTE:** Pushing your HubRise catalog into Deliveroo will erase the current menu on your Deliveroo store. A catalog push will also update your Deliveroo **Menu description** and **Menu banner** as defined in the Deliveroo Bridge **Configuration** page. This action cannot be reverted.
+**IMPORTANT NOTE:** Pushing your HubRise catalog into Deliveroo will erase the current menu on your Deliveroo store, and replace your **Menu description** and **Menu banner** with the ones defined in the **Configuration** page. This action cannot be reverted. The catalog push will not work if ref codes are missing.
 
 ---
 
@@ -41,7 +42,7 @@ Once your catalog is populated on HubRise, you can push it manually to your Deli
 
 Deliveroo Bridge can automatically push your HubRise catalog into Deliveroo every time it is updated. By default, this option is turned off. You can enable it by following these steps:
 
-1. Log in to your HubRise account.
+1. Log in to your [HubRise account](https://manager.hubrise.com).
 1. Select the HubRise account and location connected with your Deliveroo store.
 1. Open the **CONNECTIONS** page, then select **Deliveroo Bridge** from the list of connected apps.
 1. In Deliveroo Bridge, select the **Configuration** tab.
@@ -106,7 +107,7 @@ The order in which categories and products appear on HubRise is maintained on De
 
 ### Products and Skus
 
-For every [product](/developers/api/catalog-management/#products) with multiple skus, Deliveroo Bridge sends the following information to Deliveroo:
+Products have one or several skus. For every product with multiple skus, Deliveroo Bridge sends the following information to Deliveroo:
 
 - `ref`: The value `MULTISKU` is used for all products
 - `name`: The name of the product
@@ -170,5 +171,5 @@ For each deal in the catalog, Deliveroo Bridge creates a Deliveroo product with 
 
 - `name`: The name of the deal becomes the name of the product.
 - `category_ref`: If empty, Deliveroo Bridge creates a default category in Deliveroo called "Offers".
-- `ref`: The ref code of the deal becomes the ref of the product, preceded by `DEAL-`. For example, for a deal with ref code `abc123`, Deliveroo Bridge creates a Deliveroo product with plu `DEAL-abc123`.
+- `ref`: The ref code of the deal becomes the ref of the product, preceded by `DEAL-`. For example, for a deal with ref code `abc123`, Deliveroo Bridge creates a Deliveroo product with PLU `DEAL-abc123`.
 - `lines`: For each object in the array, Deliveroo Bridge creates a list of modifiers, with `lines.name` as the name.

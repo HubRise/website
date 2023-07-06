@@ -1,9 +1,9 @@
 ---
-title: Recevoir des commandes
+title: Recevoir les commandes
 position: 6
 layout: documentation
 meta:
-  title: Recevoir des commandes | LEO2 | HubRise
+  title: Recevoir les commandes | LEO2 | HubRise
   description: Réceptionner et modifier le statut des commandes HubRise reçues dans LEO2. Connectez vos apps et synchronisez vos données.
 ---
 

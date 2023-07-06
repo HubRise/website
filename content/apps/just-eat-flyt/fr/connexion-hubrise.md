@@ -39,7 +39,7 @@ Avec ces informations, HubRise pourra demander à l'équipe d'intégration de Fl
 
 Pour connecter Just Eat Flyt Bridge à HubRise, procédez comme suit :
 
-1. Connectez-vous à votre compte HubRise.
+1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com).
 1. Dans le menu déroulant, sélectionnez le point de vente que vous souhaitez connecter.
 1. Sélectionnez **CONNEXIONS**, puis **Voir les apps disponibles**.
 1. Sélectionnez **Just Eat Flyt Bridge** dans la liste des applications.

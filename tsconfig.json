@@ -22,9 +22,7 @@
       "@utils/*": ["./utils/*"]
     },
 
-    // Temporary, until migration to TS is completed
-    "allowJs": true,
-    "checkJs": true,
+    // TODO: change to true
     "noImplicitAny": false
   },
   "include": ["./src/**/*", "./gatsby/**/*"]

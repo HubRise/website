@@ -1,54 +1,45 @@
 import styled from "styled-components"
 
 import OriginalLink from "@layouts/shared/components/Link"
-import { breakpoints, colors } from "@utils/styles"
+import { breakpoints, colors, fontSizes, sizes } from "@utils/styles"
+import Icon from "@layouts/shared/components/Icon"
+
+const gap = "4rem"
 
 export const StyledThumbList = styled.div`
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   flex-wrap: wrap;
-  list-style: none;
-  margin-top: 1rem;
+  gap: ${gap};
 `
 
 export const Thumb = styled.div`
-  flex: 0 0 50%;
-  max-width: 50%;
-  margin-bottom: 1rem;
-  padding: 0 0.9375rem;
+  flex: 0 0 100%;
+  padding: 0 ${sizes.mobilePadding};
   text-align: left;
 
-  @media (max-width: ${breakpoints.large}) {
-    flex: 0 0 100%;
-    max-width: 100%;
-    padding: 0 0.625rem;
+  @media (min-width: ${breakpoints.large}) {
+    flex: 0 0 calc((100% - ${gap}) / 2);
+    padding: 0;
   }
 `
 
 export const Link = styled(OriginalLink)`
-  display: block;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  gap: 2rem;
 `
 
-export const Icon = styled.i`
-  float: left;
-  font-size: 3.25rem;
+export const StyledIcon = styled(Icon)`
   color: ${colors.primary};
-  line-height: 4.2rem;
-  height: 160px;
-  margin-right: 2rem;
 `
 
-export const Title = styled.span`
-  font-size: 1.5rem;
-  color: ${colors.darkGray};
+export const Content = styled.div``
+
+export const Title = styled.div`
+  font-size: ${fontSizes._24};
+  color: ${colors.textDarkest};
   font-weight: bold;
 `
 
-export const Description = styled.p`
-  font-size: 1rem;
-  color: ${colors.lightGray};
-  font-weight: 400;
+export const Description = styled.div`
+  color: ${colors.textMedium};
 `

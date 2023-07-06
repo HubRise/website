@@ -21,7 +21,7 @@ app_info:
 
 ## Description
 
-Restaurant-internet propose aux restaurants un site internet avec commande en ligne pour la livraison et la vente à emporter. Pour les établissements possédant déjà un site web, Restaurant-internet permet l'intégration de son module de commande et de paiement en ligne. Les équipes Restaurant-internet peuvent adapter le design du site aux couleurs de l'établissement.
+Restaurant-internet propose aux restaurants un site internet avec commande en ligne pour la livraison et la vente à emporter. Pour les établissements possédant déjà un site internet, Restaurant-internet permet l'intégration de son module de commande et de paiement en ligne. Les équipes Restaurant-internet peuvent adapter le design du site aux couleurs de l'établissement.
 
 Les restaurateurs peuvent modifier leur carte, ajouter des photos aux produits, mettre à jour leurs informations et gérer leurs commandes de manière autonome.
 

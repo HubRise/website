@@ -37,7 +37,7 @@ To pull a HubRise catalog into LivePepper:
 In this example, we have removed a product size from LivePepper, and then restored it by pulling the menu from HubRise.
 
 <video controls title="Import HubRise Catalog">
-  <source src="../images/009-import-hubrise-catalog.webm" type="video/webm"/>
+  <source src="../images/009-import-hubrise-catalog.webm" type="video/webm" />
 </video>
 
 ## Pushing the Menu

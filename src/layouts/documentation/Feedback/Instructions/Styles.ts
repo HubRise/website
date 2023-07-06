@@ -42,11 +42,11 @@ export const ListItem = styled.li`
     height: 6px;
     width: 6px;
     border-radius: 50%;
-    background-color: ${colors.darkGray};
+    background-color: ${colors.textDarkest};
   }
 `
 
 export const ItemLink = styled(Link)`
   margin: auto 0.2rem;
-  ${mixin.linkOver(colors.darkGray)};
+  ${mixin.linkOver(colors.textDarkest)};
 `

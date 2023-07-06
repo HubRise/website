@@ -27,6 +27,7 @@ app_info:
 Popina is an iPad EPOS for restaurants, bars and bakeries. Simple and intuitive to use, Popina is complemented with an operations management system and a number of accessories that help enrich the user and the customer experience.
 
 Popipa can be supplemented with several complementary solutions:
+
 - PopDisplay: Self ordering kiosks for customers to order and pay autonomously.
 - PopFid: A customer loyalty program.
 - PopOrder: An online ordering solution.

@@ -13,11 +13,11 @@ This page describes how to troubleshoot errors due to missing ref codes.
 
 In some cases, orders can fail with an error message similar to the following:
 
-```
+```json
 {
   "status": "FAILURE",
   "reason": "Could not add item 6644662335523 (not found)",
-  "thirdPartyReference": "zvx25|w998x-0|qdvrjd"
+  "thirdPartyReference": "xxx|xxx-0|yyy"
 }
 ```
 
@@ -40,11 +40,11 @@ Unfortunately, the error message does not indicate which item is causing the err
 
 In some cases, orders can fail with an error message similar to the following:
 
-```
+```json
 {
   "status": "FAILURE",
   "reason": "No such item id: 6644662335523, sku: abc123, blId: 52000111222",
-  "thirdPartyReference": "zvx25|w998x-0|qdvrjd"
+  "thirdPartyReference": "xxx|xxx-0|yyy"
 }
 ```
 

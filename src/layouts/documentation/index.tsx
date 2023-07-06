@@ -7,18 +7,21 @@ import Feedback from "./Feedback"
 import Gallery from "./Gallery"
 import Navigator, { Heading } from "./Navigator"
 import { DocumentationContext } from "./interface"
+import { Content, Logo, Main, Warning, Page, Navigation, LogoImage } from "./Styles"
 
 import { ImageSharp } from "@utils/image"
 import SEO from "@layouts/shared/components/Seo"
 import MDXProvider from "@layouts/shared/components/MdxProvider"
 import Breadcrumbs from "@layouts/shared/components/Breadcrumbs"
-import DocumentationRenderer from "@layouts/shared/components/DocumentationRenderer"
+import MDXCustomRenderer from "@layouts/shared/components/MdxCustomRenderer"
 import { useLocaleCode } from "@utils/locales"
+import Link from "@layouts/shared/components/Link"
 
 interface DocumentationProps {
   data: DocumentationData
   path: string
   pageContext: DocumentationContext
+  children: React.ReactNode
 }
 
 interface DocumentationData {
@@ -29,7 +32,6 @@ interface DocumentationData {
 }
 
 interface DocumentationNode {
-  body: string
   frontmatter: {
     app_info?: IAppInfo
     gallery?: Array<string>
@@ -54,9 +56,8 @@ interface DocumentationImage {
 }
 
 export const graphqlQuery = graphql`
-  query documentationData($mdXNodeId: String!, $imagesRelativeDirectory: String!) {
-    mdxNode: mdx(id: { eq: $mdXNodeId }) {
-      body
+  query documentationData($mdxNodeId: String!, $imagesRelativeDirectory: String!) {
+    mdxNode: mdx(id: { eq: $mdxNodeId }) {
       frontmatter {
         app_info {
           availability
@@ -73,8 +74,8 @@ export const graphqlQuery = graphql`
         title
       }
       headings {
-        depth
         value
+        depth
       }
       parent {
         ... on File {
@@ -94,14 +95,14 @@ export const graphqlQuery = graphql`
         name
         relativeDirectory
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
+          gatsbyImageData(layout: CONSTRAINED, outputPixelDensities: [1])
         }
       }
     }
   }
 `
 
-const Documentation = ({ data, path, pageContext }: DocumentationProps): JSX.Element => {
+const Documentation = ({ data, path, pageContext, children: body }: DocumentationProps): JSX.Element => {
   const { t } = useTranslation()
   const localeCode = useLocaleCode()
 
@@ -109,10 +110,11 @@ const Documentation = ({ data, path, pageContext }: DocumentationProps): JSX.Ele
 
   const currentMdxNode = data.mdxNode
 
-  const { frontmatter, body, headings } = currentMdxNode
+  const { frontmatter, headings } = currentMdxNode
   const { meta, title, gallery, app_info: appInfo } = frontmatter
 
-  const logoImage = findImage(data.images, logoImageName)
+  const chapterMainPath = folderPages[0].path
+  const logo = findImage(data.images, logoImageName)
 
   const galleryImageMap = new Map<string, ImageSharp>()
   if (gallery) {
@@ -133,34 +135,39 @@ const Documentation = ({ data, path, pageContext }: DocumentationProps): JSX.Ele
 
       <Breadcrumbs breadcrumbs={breadcrumbs} />
 
-      <section className="section">
-        <div
-          className={`
-          section__in
-          section__in_padding
-          section__in_reverse
-          section__in_developers
-        `}
-        >
-          {languageWarning && <header className="section__language-warning">{languageWarning}</header>}
+      <Page>
+        {languageWarning && <Warning>{languageWarning}</Warning>}
 
-          <div className="section__content">
-            <DocumentationRenderer {...{ title, body }} />
-          </div>
+        {logo && (
+          <Logo>
+            <Link to={chapterMainPath} addLocalePrefix={false}>
+              <LogoImage alt={title} image={logo.gatsbyImageData} />
+            </Link>
+          </Logo>
+        )}
 
-          <Navigator
-            logo={logoImage}
-            currentPath={path}
-            title={folderTitle}
-            folderPages={folderPages}
-            headings={headings}
-          />
+        <Navigation>
+          <Navigator currentPath={path} title={folderTitle} folderPages={folderPages} headings={headings} />
+        </Navigation>
 
-          {galleryImageMap.size > 0 && <Gallery title={folderTitle} imageMap={galleryImageMap} />}
+        <Main>
+          <Content>
+            <MDXCustomRenderer {...{ title, body }} />
+          </Content>
 
-          {appInfo && <AppInfo appInfo={appInfo} />}
-        </div>
-      </section>
+          {galleryImageMap.size > 0 && (
+            <Content>
+              <Gallery title={folderTitle} imageMap={galleryImageMap} />
+            </Content>
+          )}
+
+          {appInfo && (
+            <Content>
+              <AppInfo appInfo={appInfo} />
+            </Content>
+          )}
+        </Main>
+      </Page>
 
       <Feedback relativePath={currentMdxNode.parent.relativePath} />
     </MDXProvider>

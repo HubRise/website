@@ -1,6 +1,6 @@
 ---
 title: Configuration
-position: 5
+position: 4
 layout: documentation
 meta:
   title: Configuration | PixelPoint Bridge | HubRise
@@ -10,16 +10,15 @@ meta:
 The configuration page allows you to customise the behaviour of PixelPoint Bridge based on your preferences.
 These are divided into different sections for an easier navigation.
 
-![PixelPoint Bridge configuration page](../images/003-en-pixelpoint-configuration-page.png)
+![PixelPoint Bridge configuration page](../images/003-en-configuration.png)
 
 ## Order Statuses
 
 From this section, you can configure how PixelPoint Bridge handles order statuses.
 
-The **Status for new orders** field lets you configure which default status is associated to new orders when they are sent to your PixelPoint EPOS.
+The **Status for new orders** field lets you configure which default status is associated to new orders when they are sent to your PixelPoint EPOS. At the moment, **Received** is the only supported value.
 
-The rest of this section allows you to configure how order status changes on your PixelPoint EPOS are sent back to HubRise, by leveraging the EOIEvents feature in PAR PixelPoint.
-This is useful, for example, to notify a delivery platform when an order is ready for collection. In this case, you can update an order as "Awaiting collection" on HubRise whenever you mark the same order as "Pick-up" on your EPOS.
+The rest of this section allows you to configure how order status changes on your PixelPoint EPOS are sent back to HubRise, by leveraging the EOIEvents feature in PAR PixelPoint. This is useful, for example, to notify a delivery platform when an order is ready for collection. In this case, you can update an order as "Awaiting collection" on HubRise whenever you mark the same order as "Pick-up" on your EPOS.
 
 ---
 
@@ -27,26 +26,29 @@ This is useful, for example, to notify a delivery platform when an order is read
 
 ---
 
+## Deals
+
+PixelPoint Bridge converts HubRise deals to combos. From this section, you can configure how this conversion is performed.
+
+The **Use ref codes as combo item ids** option is here for legacy reasons. We do not recommend using it.
+
+The **Aggregate combo prices** lets you decide how to handle the price of a combo. If you select this option, PixelPoint Bridge will aggregate the prices of all items in the combo at the combo level. By default, PixelPoint Bridge spreads the price of a combo across the items of the combo.
+
 ## Discounts
 
-From this section, you can configure how to handle discounts.
+PixelPoint Bridge sends each discount to your PixelPoint EPOS as a coupon with a ref code.
 
-Discounts that lack a ref code are not sent to your PixelPoint EPOS. PixelPoint Bridge provides two options to solve this issue:
+By default, discounts without a ref code are not sent to your PixelPoint EPOS. From this section, you can configure an alternative behaviour.
 
-1. If you specify a ref code in the **Default ref code** field, all orders containing a discount without ref code will use that value, instead.
-1. Additionally, if you select the checkbox, PixelPoint Bridge can fetch the list of discounts currently available in your EPOS, and match the incoming discount by name, instead of ref code.
-
----
-
-**IMPORTANT NOTE:** Fetching discount ref codes from your EPOS requires PAR PixelPoint version 19.12.x or higher. Contact PAR support to verify.
+- If you specify a ref code in the **Default ref code** field, all discounts without a ref code will use this value and be sent to your PixelPoint EPOS.
+- If you select the **Fetch missing ref codes from PixelPoint catalog** checkbox, PixelPoint Bridge will fetch the list of discounts currently available in your EPOS, and match the incoming discount by name, instead of ref code. If a match is found, the discount will be sent to your PixelPoint EPOS.
+- If you both specify a default ref code and select the checkbox, PixelPoint Bridge will first try to match the discount by name, and if no match is found, it will use the default ref code. In all cases, the discount will be sent to your PixelPoint EPOS.
 
 ---
 
-If you both specify a default ref code and select the checkbox, PixelPoint Bridge will perform the following actions.
+**IMPORTANT NOTE:** Fetching missing ref codes from PixelPoint requires PAR PixelPoint version 19.12.x or higher. Contact PAR support to verify.
 
-- When it receives an order containing a discount without a ref code, it will first try to match the discount name with the discounts available in your EPOS.
-- If a match is found, PixelPoint Bridge will send the discount with the correct ref code to your EPOS.
-- If a match is not found, PixelPoint Bridge will send the discount with the default ref code that you specified, instead.
+---
 
 ## Reset the Configuration
 

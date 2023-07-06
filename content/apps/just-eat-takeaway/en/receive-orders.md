@@ -17,7 +17,11 @@ Just Eat Takeaway orders contain the complete information about items and option
 
 ## Order Statuses
 
-In this section, we capitalise the first letter of Just Eat statuses to make them easier to distinguish from HubRise status names. For example, `Confirmed` is a Just Eat status, while `accepted` is a HubRise status.
+---
+
+**IMPORTANT NOTE:** In this section, we capitalise the first letter of Just Eat statuses to make them easier to distinguish from HubRise status names. For example, `Confirmed` is a Just Eat status, while `accepted` is a HubRise status.
+
+---
 
 ### Just Eat Statuses
 
@@ -60,6 +64,12 @@ Just Eat Takeaway supports three service types:
 - Customer collection
 
 These are typically associated with specific ref codes in your EPOS, which you can set in the Configuration page of the Bridge. For more information about ref codes, see your EPOS documentation in our [apps page](/apps).
+
+## Order Times
+
+Just Eat Takeaway provides the time when the eater expects to receive or collect the order. Just Eat Takeaway Bridge sends this time to HubRise as the `expected_time` field.
+
+To specify a different time, you can update the `confirmed_time` field in HubRise. Just Eat Takeaway Bridge will send the updated time to Just Eat Takeaway when the order status changes to `Confirmed`. Attempting to update this field after the order has been confirmed will have no effect.
 
 ## Customer Details
 

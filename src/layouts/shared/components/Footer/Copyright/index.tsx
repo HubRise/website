@@ -1,10 +1,11 @@
 import * as React from "react"
 
 import { Company, StyledCopyright, Logo, SocialLink, Contact, EmailLink, Container } from "./Styles"
+import { LinkedInSVG, TwitterSVG } from "./svg"
 
 import logo from "@assets/images/logo_footer.png"
 
-const Copyright: React.FC = () => {
+const Copyright = (): JSX.Element => {
   const year = new Date(Date.now()).getFullYear()
 
   return (
@@ -16,11 +17,13 @@ const Copyright: React.FC = () => {
 
         <Contact>
           <EmailLink to="mailto:contact@hubrise.com">contact@hubrise.com</EmailLink>
+
           <SocialLink to="https://www.linkedin.com/company/hubrise">
-            <i className="fa fa-linkedin-square" />
+            <LinkedInSVG />
           </SocialLink>
+
           <SocialLink to="https://twitter.com/HubRiseHQ">
-            <i className="fa fa-twitter-square" />
+            <TwitterSVG />
           </SocialLink>
         </Contact>
       </Container>

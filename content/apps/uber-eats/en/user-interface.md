@@ -24,7 +24,7 @@ Each row in the page shows the following information about an operation:
 
 The "System request" label indicates that the operation is not related to a specific order.
 
-![Operations page of Uber Eats Bridge developed by HubRise](../images/003-en-main-page.png)
+![Operations page of Uber Eats Bridge developed by HubRise](../images/003-en-2x-main-page.png)
 
 Clicking on a row will open a new page displaying the logs associated with the operation.
 
@@ -62,6 +62,18 @@ To access the Uber Eats Bridge configuration page, click **Configuration** at th
 
 From this page, you will be able to customise the behaviour of Uber Eats Bridge. For more details, see [Configuration](/apps/uber-eats/configuration).
 
+## Status
+
+The information available on the **Status** page is pulled from the Uber Eats API. It shows the configuration of the integration on Uber Eats' side.
+
+To view the current status, you need to refresh the page by clicking **Refresh**, in the top right corner. The **Last refresh** date will update when the information is retrieved.
+
+The **Location** section identifies the Uber Eats store connected to the Uber Eats Bridge, with its URL link, postal address, contact email and the banner displayed on the Uber Eats website. It indicates whether the restaurant is open or closed at the time of the refresh.
+
+The **Integration** section shows if the HubRise integration is enabled and if HubRise, considered by Uber Eats as an EPOS, is online. It also confirms whether an Uber Eats menu has been uploaded from HubRise. HubRise can only update one menu per restaurant: if you have more than one menu on Uber Eats, this section will show a warning.
+
+![System request page on Uber Eats Bridge](../images/026-en-2x-uber-eats-status-page.png)
+
 ## Actions
 
 To access the actions page, click **Actions** at the top of the screen. If the link is not visible, first complete the configuration of Uber Eats Bridge.
@@ -70,7 +82,7 @@ From the actions page, you can perform the following actions:
 
 - **Push Catalog**: Push the catalog to Uber Eats. For more details, see [Push Catalog](/apps/uber-eats/push-catalog).
 - **Pull Catalog**: Pull the catalog from Uber Eats. For more details, see [Pull Catalog](/apps/uber-eats/pull-catalog).
-- **Push Inventory**: Sync the inventory from HubRise to Uber Eats.
+- **Push Inventory**: Push your HubRise inventory to Uber Eats.
 
 ## Language and Navigation
 

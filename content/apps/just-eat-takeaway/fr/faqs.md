@@ -8,4 +8,3 @@ meta:
 ---
 
 - [Que sont les connexions primaires et secondaires&nbsp;?](/apps/just-eat-takeaway/faqs/connexion-primaire-secondaire/)
-

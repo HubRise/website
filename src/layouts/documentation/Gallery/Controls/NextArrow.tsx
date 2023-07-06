@@ -1,8 +1,9 @@
 import * as React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
 import { StyledNextArrow } from "./Styles"
+
+import Icon from "@layouts/shared/components/Icon"
+import { iconSizes } from "@utils/styles"
 
 interface NextArrowProps {
   currentImageNumber: number
@@ -18,7 +19,7 @@ const NextArrow = ({ currentImageNumber, totalNumberOfImages, onClick }: NextArr
 
   return (
     <StyledNextArrow isVisible={currentImageNumber < totalNumberOfImages} onClick={handleClick}>
-      <FontAwesomeIcon icon={faArrowRight} />
+      <Icon code="chevron_right" size={iconSizes._32} />
     </StyledNextArrow>
   )
 }

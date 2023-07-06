@@ -1,6 +1,6 @@
 ---
 title: Référencer votre solution sur HubRise
-position: 2
+position: 3
 layout: documentation
 meta:
   title: Référencer votre solution | HubRise
