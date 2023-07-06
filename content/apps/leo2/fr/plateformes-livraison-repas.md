@@ -34,7 +34,8 @@ Dans la page de configuration de Deliveroo Bridge, utilisez les paramètres suiv
 | Remises             | Code ref remise                                   | (laisser vide)                                                       |
 | Frais               | Code ref frais de livraison                       | Créer un produit dans LEO2 et utiliser son code ref.                 |
 | Frais               | Code ref surcharge                                | Créer un produit dans LEO2 et utiliser son code ref.                 |
-| Paiements           | Code ref paiement sur Deliveroo                   | Créer un mode de règlement dans LEO2 et utiliser son code ref.       |
+| Frais               | Code ref frais d'emballage                        | Créer un produit dans LEO2 et utiliser son code ref.                 |
+| Paiements           | Code ref paiement en ligne                        | Créer un mode de règlement dans LEO2 et utiliser son code ref.       |
 | Paiements           | Code ref paiement en espèces                      | (laisser vide)                                                       |
 | Statuts de commande | Marquer les commandes comme Acceptées             | `lorsque leur statut HubRise passe à "Reçue"`                        |
 
@@ -105,7 +106,8 @@ Dans la page de configuration de Uber Eats Bridge, utilisez les paramètres suiv
 | Frais               | Code ref frais de livraison                       | Créer un produit dans LEO2 et utiliser son code ref.                 |
 | Frais               | Code ref supplément petite commande               | Créer un produit dans LEO2 et utiliser son code ref.                 |
 | Frais               | Code ref pourboire                                | Créer un produit dans LEO2 et utiliser son code ref.                 |
-| Paiements           | Code ref paiement                                 | Créer un mode de règlement dans LEO2 et utiliser son code ref.       |
+| Paiements           | Code ref paiement en ligne                        | Créer un mode de règlement dans LEO2 et utiliser son code ref.       |
+| Paiements           | Code ref paiement en espèces                      | (laisser vide)                                                       |
 | Statuts de commande | Marquer les commandes comme Acceptées             | `lorsque leur statut HubRise passe à "Reçue"`                        |
 | Menu                | Activer les notes de préparation sur les articles | Cocher si vous souhaitez les activer                                 |
 

@@ -8,23 +8,23 @@ meta:
 
 If you are integrated with our ecosystem you can refer to HubRise in your corporate website, your back office and other marketing materials that you might have. To help, we prepared a few images for you to download as well as HubRise descriptions you can adapt and reuse.
 
-#### Logos and other graphical elements
+## Logos and other graphical elements
 
 Download high-quality versions of our logos and icons [here](https://drive.google.com/drive/folders/1Iwsrh1rgxRo75T_7wqXwfUBZSdhDGLJj?usp=sharing).
 
 The primary logo has a transparent background. The two logos with a coloured background can be used as a secondary option when the logo with a transparent background is not suitable.
 
-#### Present HubRise to your customers
+## Present HubRise to your customers
 
 Two descriptions are available, one short, the other long, in English and French. They can be adapted and reused when referring to your integration with HubRise. They summarise in a few words what we do and how we can help your customers.
 
-##### Description in English
+### Description in English
 
-Short description (<50 words):
+Short description (\<50 words):
 
 > HubRise helps you connect [Integrated App's Name] to the apps you use to run your business. Receive orders in your EPOS, send deliveries to your courier service, synchronise customers with your e-marketing lists, connect your digital loyalty card, and a whole lot more... Make your integration dreams come true.
 
-Long description (<200 words):
+Long description (\<200 words):
 
 > HubRise is a middleware used to facilitate technical integrations between third party solutions.
 > Transactions are saved in HubRise to provide apps with real-time access to your product catalogue, your customer data or your orders.
@@ -35,13 +35,13 @@ Long description (<200 words):
 >
 > The HubRise back office provides an overview of all the data flows exchanged and, in the event of any problem, lets you check the status of each transaction and troubleshoot accordingly.
 
-##### Description in French
+### Description in French
 
-Short description (<50 words):
+Short description (\<50 words):
 
 > HubRise connecte [Nom de l'App intégrée] aux solutions que vous utilisez tous les jours. Recevez vos commandes dans votre logiciel de caisse, transmettez les livraisons à votre transporteur, synchronisez vos clients avec vos listes e-marketing, connectez votre carte de fidélité digitale, et bien plus encore... Réalisez tous vos rêves d'intégration.
 
-Long description (<200 words):
+Long description (\<200 words):
 
 > HubRise est un middleware qui facilite les intégrations techniques entre solutions tierces. Les transactions sont enregistrées dans HubRise pour permettre aux applications de partager en temps réel votre catalogue de produits, votre fichier clients ou vos commandes.
 >

@@ -1,8 +1,9 @@
 import * as React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
 
 import { StyledPrevArrow } from "./Styles"
+
+import { iconSizes } from "@utils/styles"
+import Icon from "@layouts/shared/components/Icon"
 
 interface PrevArrowProps {
   currentImageNumber: number
@@ -17,7 +18,7 @@ const PrevArrow = ({ currentImageNumber, onClick }: PrevArrowProps): JSX.Element
 
   return (
     <StyledPrevArrow isVisible={currentImageNumber !== 1} onClick={handleClick}>
-      <FontAwesomeIcon icon={faArrowLeft} />
+      <Icon code="chevron_left" size={iconSizes._32} />{" "}
     </StyledPrevArrow>
   )
 }

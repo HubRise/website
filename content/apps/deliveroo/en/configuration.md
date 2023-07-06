@@ -36,7 +36,7 @@ Available discounts on Deliveroo appear in the **All offers** page in your Deliv
 
 If charges apply, a ref code might be required. Refer to your EPOS documentation on the HubRise website to verify.
 
-In this section, you can specify the ref code for delivery charges, and for surcharges applied to orders below the minimum price.
+In this section, you can specify the ref code for delivery charges, for surcharges applied to orders below the minimum price, and for bag fees.
 
 ### Payments
 
@@ -54,17 +54,15 @@ Refer to your EPOS documentation on the HubRise website to verify the correct va
 
 ![Deliveroo Bridge configuration page, Catalog section](../images/015-en-configuration-page-menu.png)
 
-In this section, select the brand ID and menu ID of the Deliveroo menu you want to push your HubRise catalog into. The default values generally work for most users.
+The **Brand ID** and **Menu ID** fields identify the menu you want to update on Deliveroo. The default values generally work for most users.
 
-Additionally, choose if you want to push your HubRise catalog to Deliveroo every time it is updated on HubRise. By default, this option is turned off.
+To synchronize your HubRise catalog with Deliveroo whenever it is updated, select the **Enable automatic catalog push** checkbox.
 
-Finally, include the menu description and URL for the banner image that you want to show on your Deliveroo store.
+The **Menu description** and **Menu banner** replace the current description and banner image on Deliveroo when you push your catalog. The requirements for the banner image are described below:
 
-To obtain a public URL for your banner image, send an email to [support@hubrise.com](mailto:support@hubrise.com) including an image with the following requirements:
-
-- at least 1920x1080 pixels, 16:9 ratio
+- At least 1920x1080 pixels, 16:9 ratio
 - JPG or PNG format
-- less than 2 Mb
+- Less than 2 Mb
 
 ---
 
@@ -74,9 +72,11 @@ To obtain a public URL for your banner image, send an email to [support@hubrise.
 
 ## Inventory
 
-You can push inventory data into Deliveroo from the **Actions** page. When you do so, products set as out of stock in HubRise are hidden on Deliveroo.
+Through inventory synchronization, products and options that have a stock quantity of zero can be hidden on your Deliveroo store.
 
-You might also set the Deliveroo Flyt Bridge to automatically push inventory to Deliveroo whenever your HubRise inventory is updated. This is done by ticking the **Enable automatic inventory push** checkbox.
+To synchronize your HubRise inventory with Deliveroo whenever it is updated, select the **Enable automatic inventory push** checkbox.
+
+Additionally, you can manually push your inventory to Deliveroo via the **Actions** page.
 
 ## Save the Configuration
 

@@ -1,4 +1,4 @@
-import { faCheck, faTimes, IconDefinition } from "@fortawesome/free-solid-svg-icons"
+import { IconCode } from "@layouts/shared/components/Icon"
 
 export type ToastVariant = "success" | "error"
 
@@ -40,11 +40,11 @@ export async function animate(
   })
 }
 
-export function getIcon(variant: IToast["variant"]): IconDefinition {
+export function getIcon(variant: IToast["variant"]): IconCode {
   switch (variant) {
     case "success":
-      return faCheck
+      return "done"
     case "error":
-      return faTimes
+      return "error"
   }
 }

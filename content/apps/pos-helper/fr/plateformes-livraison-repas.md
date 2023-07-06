@@ -41,7 +41,8 @@ Dans la page de configuration de Deliveroo Bridge, utilisez les paramètres suiv
 | Remises             | Code ref remise                                   | (laisser vide)                                            |
 | Frais               | Code ref frais de livraison                       | (laisser vide)                                            |
 | Frais               | Code ref surcharge                                | (laisser vide)                                            |
-| Paiements           | Code ref paiement sur Deliveroo                   | `ONLINE`                                                  |
+| Frais               | Code ref frais d'emballage                        | (laisser vide)                                            |
+| Paiements           | Code ref paiement en ligne                        | `ONLINE`                                                  |
 | Paiements           | Code ref paiement en espèces                      | (laisser vide)                                            |
 | Statuts de commande | Marquer les commandes comme Acceptées             | `lorsque leur statut HubRise passe à "Reçue"`             |
 
@@ -72,27 +73,27 @@ Dans la page de configuration de Just Eat Takeaway Bridge, utilisez les paramèt
 | Paiements           | Code ref paiement en espèces                          | (laisser vide)                                            |
 | Statuts de commande | Marquer les commandes comme Acceptées                 | `lorsque leur statut HubRise passe à "Reçue"`             |
 
-## Just Eat avec l'API Flyt
+### Just Eat avec l'API Flyt
 
 Pour recevoir les commandes de Just Eat Flyt dans POS HELPER avec l'API Flyt, vous devez d'abord connecter Just Eat Flyt Bridge, une application incluse dans votre abonnement HubRise. Pour plus d'informations sur Just Eat Flyt Bridge, consultez la [documentation de Just Eat Flyt Bridge](/apps/just-eat-flyt).
 
 Dans la page de configuration de Just Eat Flyt Bridge, utilisez les paramètres suivants.
 
-| Section             |     | Nom                                                   | Code ref                                                  |
-| ------------------- | --- | ----------------------------------------------------- | --------------------------------------------------------- |
-| Types de service    |     | Code ref livraison par la plateforme                  | `Plateforme` - Voir [Types de Service](#types-de-service) |
-| Types de service    |     | Code ref livraison par le restaurant                  | `Livraison`                                               |
-| Types de service    |     | Code ref à emporter                                   | `A emporter`                                              |
-| Types de service    |     | Envoyer les commandes livrées par la plateforme comme | `commandes à emporter`                                    |
-| Remises             |     | Code ref remise                                       | (laisser vide)                                            |
-| Frais               |     | Code ref frais de livraison                           | (laisser vide)                                            |
-| Frais               |     | Code ref surcharge                                    | (laisser vide)                                            |
-| Frais               |     | Code ref frais d'emballage                            | (laisser vide)                                            |
-| Frais               |     | Code ref pourboire livreur                            | (laisser vide)                                            |
-| Frais               |     | Code ref autres frais                                 | (laisser vide)                                            |
-| Paiements           |     | Code ref paiement en ligne                            | `ONLINE`                                                  |
-| Paiements           |     | Code ref paiement en espèces                          | (laisser vide)                                            |
-| Statuts de commande |     | Marquer les commandes comme Acceptées                 | `lorsque leur statut HubRise passe à "Reçue"`             |
+| Section             | Nom                                                   | Code ref                                                  |
+| ------------------- | ----------------------------------------------------- | --------------------------------------------------------- |
+| Types de service    | Code ref livraison par la plateforme                  | `Plateforme` - Voir [Types de Service](#types-de-service) |
+| Types de service    | Code ref livraison par le restaurant                  | `Livraison`                                               |
+| Types de service    | Code ref à emporter                                   | `A emporter`                                              |
+| Types de service    | Envoyer les commandes livrées par la plateforme comme | `commandes à emporter`                                    |
+| Remises             | Code ref remise                                       | (laisser vide)                                            |
+| Frais               | Code ref frais de livraison                           | (laisser vide)                                            |
+| Frais               | Code ref surcharge                                    | (laisser vide)                                            |
+| Frais               | Code ref frais d'emballage                            | (laisser vide)                                            |
+| Frais               | Code ref pourboire livreur                            | (laisser vide)                                            |
+| Frais               | Code ref autres frais                                 | (laisser vide)                                            |
+| Paiements           | Code ref paiement en ligne                            | `ONLINE`                                                  |
+| Paiements           | Code ref paiement en espèces                          | (laisser vide)                                            |
+| Statuts de commande | Marquer les commandes comme Acceptées                 | `lorsque leur statut HubRise passe à "Reçue"`             |
 
 ## Uber Eats
 
@@ -112,7 +113,8 @@ Dans la page de configuration de Uber Eats Bridge, utilisez les paramètres suiv
 | Frais               | Code ref frais de livraison                       | (laisser vide)                                                             |
 | Frais               | Code ref supplément petite commande               | (laisser vide)                                                             |
 | Frais               | Code ref pourboire                                | (laisser vide)                                                             |
-| Paiements           | Code ref paiement                                 | `ONLINE`                                                                   |
+| Paiements           | Code ref paiement en ligne                        | `ONLINE`                                                                   |
+| Paiements           | Code ref paiement en espèces                      | (laisser vide)                                                             |
 | Statuts de commande | Marquer les commandes comme Acceptées             | `lorsque leur statut HubRise passe à "Reçue"`                              |
 | Menu                | Activer les notes de préparation sur les articles | Laisser la case décochée                                                   |
 

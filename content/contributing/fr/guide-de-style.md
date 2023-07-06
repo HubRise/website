@@ -1,6 +1,6 @@
 ---
 title: Guide de style
-position: 1
+position: 2
 layout: documentation
 meta:
   title: Guide de style | HubRise

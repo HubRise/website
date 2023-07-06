@@ -45,30 +45,22 @@ To import a HubRise Catalog, contact App4 support and ask them to take the follo
    - **Update existing images**: replace existing menu items images with HubRise images.
 1. Click **Import** to update the restaurant's App4 menu.
 
-<!--
- - Does catalog import actually create products, categories, deals and options? Or it just updates names, prices, ... of already create items? In other words, if you import into a blank site, will it populate the whole menu from HubRise?
- - Does the user have access to a user interface similar to their admin dashboard, to synchronise their menu with HubRise?
- -->
+[//]: # "- Does catalog import actually create products, categories, deals and options? Or it just updates names, prices, ... of already create items? In other words, if you import into a blank site, will it populate the whole menu from HubRise?"
+[//]: # "- Does the user have access to a user interface similar to their admin dashboard, to synchronise their menu with HubRise?"
 
 ## Product Mapping
 
-<!--
- - Can users manually edit a product or an option, for example to change a ref code or a price? How?
--->
+[//]: # " - Can users manually edit a product or an option, for example to change a ref code or a price? How?"
 
 ## Deals & Discounts Mapping
 
-<!--
- - Can you provide a few examples of deals supported by App4?
- - Can they be configured manually? If they can, how can you set the deal ref code?
--->
+[//]: # "- Can you provide a few examples of deals supported by App4?"
+[//]: # "- Can they be configured manually? If they can, how can you set the deal ref code?"
 
 ## Payment Methods Mapping
 
-<!--
- - Our understanding is that you can now associate payment methods with unique ref codes, is that correct? Are you passing these codes in orders?
- - How can these codes be configured?
--->
+[//]: # " - Our understanding is that you can now associate payment methods with unique ref codes, is that correct? Are you passing these codes in orders?"
+[//]: # " - How can these codes be configured?"
 
 ## Service Types Mapping
 
@@ -76,18 +68,14 @@ Currently not supported by the integration.
 
 ## Charges Mapping
 
-<!--
- - Is it possible to define charges, such as a tip, or a delivery charge?
- - Can you configure a ref code for each type of charge? How?
- - Are charges encoded in orders, along with their ref code?
--->
+[//]: # "- Is it possible to define charges, such as a tip, or a delivery charge?"
+[//]: # "- Can you configure a ref code for each type of charge? How?"
+[//]: # "- Are charges encoded in orders, along with their ref code?"
 
 ## Discounts Mapping
 
-<!--
-Discounts are the opposite of charges: they reduce the total price of the order. Examples: "10% off your order".
-Our understanding is that discounts are supported by App4.
- - Can you give a few example of supported discounts?
- - Can you configure a ref code for each discount? How?
- - Are discounts encoded in orders, along with their ref code?
--->
+[//]: # 'Discounts are the opposite of charges: they reduce the total price of the order. Examples: "10% off your order".'
+[//]: # "Our understanding is that discounts are supported by App4."
+[//]: # " - Can you give a few example of supported discounts?"
+[//]: # " - Can you configure a ref code for each discount? How?"
+[//]: # " - Are discounts encoded in orders, along with their ref code?"

@@ -38,7 +38,8 @@ Dans la page de configuration de Deliveroo Bridge, utilisez les paramètres suiv
 | Remises             | Code ref remise                                   | (laisser vide)                                |
 | Frais               | Code ref frais de livraison                       | (laisser vide)                                |
 | Frais               | Code ref surcharge                                | (laisser vide)                                |
-| Paiements           | Code ref paiement sur Deliveroo                   | (laisser vide)                                |
+| Frais               | Code ref frais d'emballage                        | (laisser vide)                                |
+| Paiements           | Code ref paiement en ligne                        | (laisser vide)                                |
 | Paiements           | Code ref paiement en espèces                      | (laisser vide)                                |
 | Statuts de commande | Marquer les commandes comme Acceptées             | `lorsque leur statut HubRise passe à "Reçue"` |
 
@@ -69,7 +70,7 @@ Dans la page de configuration de Just Eat Takeaway Bridge, utilisez les paramèt
 | Paiements           | Code ref paiement en espèces                          | (laisser vide)                                |
 | Statuts de commande | Marquer les commandes comme Acceptées                 | `lorsque leur statut HubRise passe à "Reçue"` |
 
-## Just Eat avec l'API Flyt
+### Just Eat avec l'API Flyt
 
 Pour recevoir les commandes de Just Eat Flyt dans SOLUTION avec l'API Flyt, vous devez d'abord connecter Just Eat Flyt Bridge, une application incluse dans votre abonnement HubRise. Pour plus d'informations sur Just Eat Flyt Bridge, consultez la [documentation de Just Eat Flyt Bridge](/apps/just-eat-flyt).
 
@@ -109,7 +110,8 @@ Dans la page de configuration de Uber Eats Bridge, utilisez les paramètres suiv
 | Frais               | Code ref frais de livraison                       | (laisser vide)                                                           |
 | Frais               | Code ref supplément petite commande               | (laisser vide)                                                           |
 | Frais               | Code ref pourboire                                | (laisser vide)                                                           |
-| Paiements           | Code ref paiement                                 | (laisser vide)                                                           |
+| Paiements           | Code ref paiement en ligne                        | (laisser vide)                                                           |
+| Paiements           | Code ref paiement en espèces                      | (laisser vide)                                                           |
 | Statuts de commande | Marquer les commandes comme Acceptées             | `lorsque leur statut HubRise passe à "Reçue"`                            |
 | Menu                | Activer les notes de préparation sur les articles | Cocher si vous souhaitez les activer / Laisser la case décochée          |
 

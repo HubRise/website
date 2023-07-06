@@ -7,12 +7,26 @@ jobs:
     runs-on: ubuntu-latest
     name: Run cypress
 
-    # To upgrade to the latest version, see https://github.com/cypress-io/cypress-docker-images/tree/master/browsers
-    container: cypress/browsers:node14.17.0-chrome91-ff89
+    # To upgrade to the latest version, see https://hub.docker.com/r/cypress/browsers/tags
+    container: cypress/browsers:node-18.16.0-chrome-113.0.5672.92-1-ff-113.0-edge-113.0.1774.35-1
 
     steps:
       - name: Clone repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js and package cache
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.16.0
+          cache: 'yarn'
+
+      - name: Cache gatsby build files
+        uses: actions/cache@v3
+        with:
+          path: |
+            .cache
+            public
+          key: gatsby-build-${{ hashFiles('./yarn.lock') }}
 
       - name: Install JS dependencies
         run: yarn install
@@ -27,4 +41,4 @@ jobs:
           RECAPTCHA_SITE_KEY: 6LfjbNYUAAAAAPx_tCv_YyhueK2JIjf58b2HGU8d
           CONTACT_MESSAGE_URL: http://localhost/api/contact_message
           WAIT_ON_TIMEOUT: 1200000 # (in milliseconds) 20 minute timeout for start-server-and-test
-        run: yarn test:e2e
+        run: yarn cypress:run

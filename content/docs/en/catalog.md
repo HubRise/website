@@ -19,10 +19,14 @@ The rules for Catalogs are as follows:
 
 ![Catalog Rules example](../images/047-en-2x-catalog-rules.png)
 
-You can connect integrated apps to a specific Catalog to push data into it or pull data from it.
+---
+
+**IMPORTANT NOTE:** You can connect integrated apps to a specific Catalog to push data into it or pull data from it.
 You can edit and manage products in a HubRise Catalog only from third party apps, or with the HubRise **Catalog Manager** connected to your HubRise Account.
 
 Removing a catalog from HubRise does not affect the product list in third party apps.
+
+---
 
 ## Add a Catalog
 

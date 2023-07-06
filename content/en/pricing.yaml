@@ -5,7 +5,7 @@ meta:
 content:
   hero:
     title: Fair Pricing. No Commitment.
-  offer:
+  plan:
     pricing:
       chunk_1: 25€ / Month
       chunk_2: per location
@@ -16,7 +16,7 @@ content:
     link:
       text: Start now
       to: https://manager.hubrise.com/signup
-  specials:
+  infos:
     - highlight: "Free Signup:"
       text: No setup fee, no credit card required.
       link:

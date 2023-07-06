@@ -2,10 +2,11 @@ import * as React from "react"
 import { graphql } from "gatsby"
 
 import { IPricing } from "./interface"
-import Offer from "./Offer"
-import Specials from "./Specials"
+import Plan from "./Plan"
+import Infos from "./Infos"
 
 import SEO from "@layouts/shared/components/Seo"
+import Block from "@layouts/shared/components/Block"
 
 interface PricingProps {
   data: PricingData
@@ -36,13 +37,10 @@ const Pricing = ({ data }: PricingProps): JSX.Element => {
     <>
       <SEO meta={meta} />
 
-      <section className="section section_white pricing">
-        <div className="section__in section__in_padding">
-          <h3 className="section__title">{content.hero.title}</h3>
-          <Offer offer={content.offer} />
-          <Specials specials={content.specials} />
-        </div>
-      </section>
+      <Block backgroundColor="white" title={content.hero.title}>
+        <Plan plan={content.plan} />
+        <Infos infos={content.infos} />
+      </Block>
     </>
   )
 }

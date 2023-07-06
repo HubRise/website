@@ -34,14 +34,14 @@ Pendant la phase de test qui précède le lancement, vous pouvez demander à sou
 
 ## Notifications sur les formules
 
-En cas de problème rencontré avec une formule, les utilisateurs qui disposent d'une permission de niveau Administrateur pour le compte ou le point de vente concerné reçoivent un e-mail. Une notification s'affiche également lorsqu'ils se connectent à HubRise.
+En cas de problème rencontré avec une formule, les utilisateurs qui disposent d'une permission de niveau Administrateur pour le compte ou le point de vente concerné reçoivent un e-mail. Une notification apparaît également dans le back-office de HubRise.
 
 Des notifications peuvent être affichées dans le back-office de HubRise pour tout motif impliquant des paiements ou des problèmes liés aux formules. C'est par exemple le cas lorsque :
 
 - Un point de vente a dépassé ses limites de transactions gratuites alors qu'aucune méthode de paiement n'est enregistré dans HubRise.
 - La carte de crédit a expiré et vous devez la mettre à jour.
 - Le traitement de la carte de crédit a échoué après plusieurs tentatives de paiement automatisé. Pour des raisons de sécurité, il se peut que votre banque vous demande de saisir à nouveau le code de sécurité à 3 chiffres.
-- La carte de crédit a été enregistrée pour les paiements dans HubRise mais les devis en cours n'ont pas été réglés. Pour plus d'informations, voir la rubrique [Traiter les devis en attente](/docs/paiement#traiter-les-devis-en-attente).
+- La carte de crédit a été enregistrée pour les paiements dans HubRise mais les demandes de paiement en cours n'ont pas été réglées. Pour plus d'informations, voir la rubrique [Traiter les demandes de paiement](/docs/paiement/#traiter-les-demandes-de-paiement).
 
 Si une notification de paiement apparaît, cliquez sur le lien correspondant et suivez les instructions afin de résoudre le problème. Pour plus d'informations concernant les formules disponibles, voir la rubrique [Formule d'utilisation](#formule-d-utilisation).
 
@@ -49,7 +49,7 @@ Si une notification de paiement apparaît, cliquez sur le lien correspondant et 
 
 ---
 
-**REMARQUE IMPORTANTE** : lorsqu'un problème se produit au niveau d'un paiement, les utilisateurs de niveau Administrateur reçoivent une notification par e-mail et un message s'affiche dans le back-office de HubRise. En l'absence de réponse dans un délai de deux semaines, le compte HubRise ou le point de vente correspondant sera automatiquement suspendu.
+**REMARQUE IMPORTANTE** : lorsqu'un problème se produit au niveau d'un paiement, les utilisateurs de niveau Administrateur reçoivent une notification par e-mail et une notification s'affiche dans le back-office de HubRise. En l'absence de réponse dans un délai de deux semaines, le compte HubRise ou le point de vente correspondant sera automatiquement suspendu.
 
 ---
 

@@ -16,17 +16,17 @@ content:
     - title: Démarrage rapide
       description: Guide de 10 minutes pour envoyer vos premières requêtes (en anglais)
       to: /fr/developers/quick-start
-      icon: fa-fast-forward
+      icon: fast_forward
     - title: Référence de l'API
       description: Documentation complète des ressources et des concepts de l'API (en anglais)
       to: /fr/developers/api/general-concepts
-      icon: fa-cogs
+      icon: code
     - title: Guide d'intégration
       description: Checklist et bonnes pratiques d'intégration à HubRise (en anglais)
       to: /fr/developers/integration-guide
-      icon: fa-list-alt
+      icon: checklist
     - title: Conventions et cas spéciaux
       description: Conventions utilisées par les autres développeurs pour les cas spéciaux (en anglais)
       to: /fr/developers/conventions
-      icon: fa-sign-out
+      icon: menu_book
 ---

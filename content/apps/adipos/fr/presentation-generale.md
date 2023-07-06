@@ -23,11 +23,11 @@ app_info:
 
 ## Description
 
-La logiciel de caisse Adipos offre une solution complète de gestion pour tout type de restaurant. La solution s’articule autour d'applications modulaires, dont chacune permet de répondre à un besoin opérationnel du commerçant. Les différentes applications sont disponibles sous iOS et Android.
+La logiciel de caisse Adipos offre une solution complète de gestion pour tout type de restaurant. La solution s'articule autour d'applications modulaires, dont chacune permet de répondre à un besoin opérationnel du commerçant. Les différentes applications sont disponibles sous iOS et Android.
 
-La solution de caisse est conçue pour la restauration avec service à table, restauration rapide, livraison et Click & Collect, ainsi que pour les food trucks et les boulangeries. Elle est adaptée aux besoins des enseignes indépendantes comme des franchises multi établissements. Lorsqu'elle est connectée, la solution Adipos permet le suivi du service en temps réel, mais elle peut également fonctionner hors connexion. Un back-office d’administration et de pilotage est disponible.
+La solution de caisse est conçue pour la restauration avec service à table, restauration rapide, livraison et Click & Collect, ainsi que pour les food trucks et les boulangeries. Elle est adaptée aux besoins des enseignes indépendantes comme des franchises multi établissements. Lorsqu'elle est connectée, la solution Adipos permet le suivi du service en temps réel, mais elle peut également fonctionner hors connexion. Un back-office d'administration et de pilotage est disponible.
 
-Adipos propose de multiples fonctionnalités, dont les plans de salle, la gestion d’un quota de commande par catégories de produit, la fidélité client avec ou sans coupons, la gestion de la livraison et du click & collect, l’affichage en cuisine et en zone de préparation, la diffusion sur écrans promotionnels, les bornes de commande, la commande en ligne, une app de commande.
+Adipos propose de multiples fonctionnalités, dont les plans de salle, la gestion d'un quota de commande par catégories de produit, la fidélité client avec ou sans coupons, la gestion de la livraison et du click & collect, l'affichage en cuisine et en zone de préparation, la diffusion sur écrans promotionnels, les bornes de commande, la commande en ligne, une app de commande.
 
 Adipos est développé en France par Adixon, et a reçu la certification NF525, le rendant conforme à la loi française anti-fraude 2018.
 

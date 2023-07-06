@@ -1,6 +1,9 @@
 import React, { ReactNode } from "react"
 
-import { Overlay, Title, CloseButtonIcon, CloseButton, StyledModal } from "./Styles"
+import { Overlay, Title, CloseButton, StyledModal } from "./Styles"
+
+import Icon from "@layouts/shared/components/Icon"
+import { iconSizes } from "@utils/styles"
 
 interface ModalProps {
   title: string
@@ -16,7 +19,7 @@ const Modal = ({ title, onClose, children }: ModalProps): JSX.Element => (
       {children}
 
       <CloseButton onClick={onClose}>
-        <CloseButtonIcon className="fa fa-close" />
+        <Icon code="close" size={iconSizes._25} />
       </CloseButton>
     </StyledModal>
   </Overlay>

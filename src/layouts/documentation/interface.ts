@@ -11,7 +11,7 @@ export interface DocumentationContext extends RootContext {
   /** The logo filename, eg "deliveroo.png" */
   logoImageName?: string
   /** The id of the MDX node */
-  mdXNodeId: string
+  mdxNodeId: string
   /** The path of the images directory, relative to "content", with no leading slash (eg "contributing/images"). */
   imagesRelativeDirectory: string
 }

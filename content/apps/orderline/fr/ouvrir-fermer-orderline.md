@@ -14,5 +14,5 @@ Pour accéder à OrderLine, connectez-vous à [HubRise](https://manager.hubrise.
 Vous pouvez enregistrer le lien d'OrderLine comme favori dans votre navigateur afin d'y accéder plus facilement. Pour mettre fin à votre session OrderLine, fermez l'onglet du navigateur.
 
 <video controls title="OrderLine Log in to OrderLine">
-  <source src="../images/005-en-login-orderline.webm" type="video/webm"/>
+  <source src="../images/005-en-login-orderline.webm" type="video/webm" />
 </video>

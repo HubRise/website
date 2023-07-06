@@ -15,7 +15,7 @@ LEO2 récupère les commandes toutes les 30 secondes. Si vous ne voyez pas une c
 
 Une fois le délai de 30 secondes écoulé, si la commande n'apparaît toujours pas, vérifiez que le serveur HubRise de LEO2 est lancé :
 
-1. Depuis votre espace HubRise, sélectionnez **CONNEXIONS**.
+1. Depuis le back-office de HubRise, sélectionnez **CONNEXIONS**.
 1. Dans la connexion **LEO2**, cliquez sur **Actions** > **Voir les logs**.
 1. Vérifiez les premières lignes. La présence de lignes `GET /v1/callback/events` toutes les 30 secondes environ, à des dates récentes, indique que le serveur HubRise de LEO2 est lancé.
 

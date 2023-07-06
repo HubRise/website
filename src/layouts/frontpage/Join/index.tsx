@@ -1,6 +1,8 @@
 import * as React from "react"
 
-import Link from "@layouts/shared/components/Link"
+import { ActionButton, ActionLink, Actions, Content } from "../shared/Styles"
+
+import Block from "@layouts/shared/components/Block"
 
 interface JoinProps {
   title: string
@@ -12,27 +14,31 @@ interface JoinProps {
 
 const Join = ({ title, button_label, button_url, link_label, link_url }: JoinProps): JSX.Element => {
   return (
-    <section className="frontpage-full frontpage-full_white">
-      <div className="frontpage-full__inside">
-        <div className="frontpage-full__text">
-          <h3 className="frontpage-full__title">{title}</h3>
+    <Block
+      backgroundColor="white"
+      verticalSpacing="small"
+      padding="small"
+      beforeExpansion={true}
+      afterExpansion={true}
+      title={title}
+      horizontalAlign="center"
+    >
+      <Content>
+        <Actions>
+          {button_label && button_url && (
+            <ActionButton to={button_url} $backgroundColor="white">
+              {button_label}
+            </ActionButton>
+          )}
 
-          <div className="frontpage-full__actions">
-            {button_label && button_url && (
-              <Link to={button_url} className="frontpage-full__button">
-                {button_label}
-              </Link>
-            )}
-
-            {link_label && link_url && (
-              <Link to={link_url} className="frontpage-full__link">
-                {link_label}
-              </Link>
-            )}
-          </div>
-        </div>
-      </div>
-    </section>
+          {link_label && link_url && (
+            <ActionLink to={link_url} $backgroundColor="white">
+              {link_label}
+            </ActionLink>
+          )}
+        </Actions>
+      </Content>
+    </Block>
   )
 }
 

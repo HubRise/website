@@ -1,10 +1,11 @@
 import * as React from "react"
 import { useTranslation } from "react-i18next"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons"
 
 import { StyledFeedback, Section, TitleWrapper, IconButton, Title } from "./Styles"
 import Instructions from "./Instructions"
+
+import Icon from "@layouts/shared/components/Icon"
+import { iconSizes } from "@utils/styles"
 
 export interface FeedbackProps {
   /** The path of the source file, relative to "content", with no leading slash
@@ -21,7 +22,7 @@ const Feedback = ({ relativePath }: FeedbackProps): JSX.Element => {
       <Section>
         <TitleWrapper $isExpanded={isExpanded} onClick={() => setIsExpanded((v) => !v)}>
           <IconButton $isExpanded={isExpanded}>
-            <FontAwesomeIcon icon={faAngleDown} flip={isExpanded ? `vertical` : undefined} fixedWidth />
+            <Icon code={isExpanded ? "expand_less" : "expand_more"} size={iconSizes._20} />
           </IconButton>
 
           <Title>{t(`misc.feedback.documentation.title`)}</Title>

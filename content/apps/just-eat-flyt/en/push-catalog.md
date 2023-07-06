@@ -18,24 +18,37 @@ This page explains how to push your catalog, and what information is sent to the
 
 To update your menu in Just Eat, you should have a HubRise catalog first. Many apps connected with HubRise, including EPOS solutions, offer the ability to push their menu into HubRise. Refer to your EPOS documentation on the HubRise website to verify.
 
-Alternatively, you can populate a HubRise catalog by pulling your menu from Uber Eats or Deliveroo.
+Alternatively, you can populate a HubRise catalog by pulling the menu from an existing Deliveroo or Uber Eats store. For more information, refer to these links:
 
-For more information on HubRise catalogs, see [Catalogs](/docs/catalog/).
+- [Pull a Catalog from Deliveroo](/apps/deliveroo/pull-catalog)
+- [Pull a Catalog from Uber Eats](/apps/uber-eats/pull-catalog)
 
-## Push the Catalog
+## Manual Catalog Push
 
-Once your catalog is populated on HubRise, you can push it to your Just Eat store by following these steps.
+Once your catalog is populated on HubRise, you can push it manually to your Just Eat store by following these steps:
 
-1. Log in to your HubRise account.
-1. Select the location connected with your Just Eat store.
-1. Select **Just Eat Flyt Bridge** from the list of connected apps.
-1. In Just Eat Flyt Bridge, click the **Actions** tab, then select **Push catalog**.
+1. Log in to your [HubRise account](https://manager.hubrise.com).
+1. Select the HubRise account and location connected with your Just Eat store.
+1. Open the **CONNECTIONS** page, then select **Just Eat Flyt Bridge** from the list of connected apps.
+1. In Just Eat Flyt Bridge, select the **Actions** tab, then click **Push catalog**.
+1. Check your Just Eat online menu.
+
+---
+
+**IMPORTANT NOTE:** Pushing your HubRise catalog into Just Eat will erase the current menu on your Just Eat store. A catalog push will also update your Just Eat **Opening hours** settings as defined in the Just Eat Flyt Bridge **Configuration** page. This action cannot be reverted.
 
 ---
 
-**IMPORTANT NOTE:** Pushing your HubRise catalog into Just Eat will erase the current menu on your Just Eat store. This action cannot be reverted.
+## Automatic Catalog Push
 
----
+Just Eat Flyt Bridge can automatically push your HubRise catalog into Just Eat every time it is updated. By default, this option is turned off. You can enable it by following these steps:
+
+1. Log in to your [HubRise account](https://manager.hubrise.com).
+1. Select the HubRise account and location connected with your Just Eat store.
+1. Open the **CONNECTIONS** page, then select **Just Eat Flyt Bridge** from the list of connected apps.
+1. In Just Eat Flyt Bridge, select the **Configuration** tab.
+1. In the **Catalog** section, tick **Enable automatic catalog push**.
+1. Click **Save**.
 
 ## Technical Reference
 
@@ -68,6 +81,8 @@ For every category, the following HubRise fields are pushed into Just Eat:
 ### Products and Skus
 
 Products in the `products` array of a HubRise catalog can have several skus. This notion of products/skus is not supported on Just Eat. Every sku is mapped to an individual product on Just Eat. For more information about products in HubRise, see the [Products](/developers/api/catalog-management/#products) section of our API documentation.
+
+Emojis are not supported in Just Eat. If you use emojis in your HubRise catalog, they will be removed when pushed to Just Eat.
 
 For every `sku` object in a product, Just Eat Flyt Bridge pushes the following information into Just Eat:
 

@@ -22,9 +22,10 @@ If you prefer to let Lightspeed support configure these items for you, make sure
 | Platform        | Channel name           |
 | --------------- | ---------------------- |
 | Deliveroo       | `Deliveroo`            |
-| Eat.ch          | `Eat.ch (EAT)`         |
+| Just-Eat.ch     | `Eat.ch (EAT)`         |
 | Just Eat        | `Just Eat (JE)`        |
 | HOP Delivery    | `HOP Delivery`         |
+| Smood           | `Smood`                |
 | Takeaway.com    | `Takeaway.com (TA)`    |
 | Thuisbezorgd.nl | `Thuisbezorgd.nl (TH)` |
 | Uber Eats       | `Uber Eats`            |
@@ -48,7 +49,8 @@ In the Deliveroo Bridge configuration page, use the following settings:
 | Discounts      | Discount ref code                     | `DELD99`                                          |
 | Charges        | Delivery charge ref code              | `DELD77`                                          |
 | Charges        | Surcharge ref code                    | `DELD88`                                          |
-| Payments       | Deliveroo payment ref code            | `DVPM`                                            |
+| Charges        | Bag fee ref code                      | (ask support@hubrise.com if you need it)          |
+| Payments       | Online payment ref code               | `DVPM`                                            |
 | Payments       | Cash payment ref code                 | (leave empty)                                     |
 | Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Received"` |
 
@@ -69,19 +71,19 @@ To receive Just Eat orders in Lightspeed Restaurant via Takeaway API, you first 
 
 To receive Just Eat orders in Lightspeed Restaurant via Flyt API, you first need to connect Just Eat Flyt Bridge, an app included in your HubRise subscription. For more information about Just Eat Flyt Bridge, see the [Just Eat Flyt Bridge documentation](/apps/just-eat-flyt).
 
-### Eat.ch
+### Just-Eat.ch
 
-Eat.ch uses the Just Eat via TakeawayAPI. In the Just Eat Takeaway Bridge configuration page, use the following settings:
+Just-Eat.ch uses the Just Eat via TakeawayAPI. In the Just Eat Takeaway Bridge configuration page, use the following settings:
 
 | Section        | Name                                     | Ref code                                          |
 | -------------- | ---------------------------------------- | ------------------------------------------------- |
-| Service types  | Eat.ch delivery ref code                 | `EATAP`                                           |
+| Service types  | Just-Eat.ch delivery ref code            | `EATAP`                                           |
 | Service types  | Restaurant delivery ref code             | `EATDRAP`                                         |
 | Service types  | Takeaway ref code                        | `EATEATAP`                                        |
 | Service types  | Send orders delivered by the platform as | `delivery orders`                                 |
 | Discounts      | Discount ref code                        | `EAT99`                                           |
 | Charges        | Delivery charge ref code                 | `EAT77`                                           |
-| Payments       | Eat.ch payment ref code                  | `EATPM`                                           |
+| Payments       | Online payment ref code                  | `EATPM`                                           |
 | Payments       | Cash payment ref code                    | (leave empty)                                     |
 | Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Received"` |
 
@@ -152,6 +154,22 @@ To receive your HOP Delivery orders in Lightspeed, use the following values to c
 | Payments      | HOP payment ref code          | `HOPPM`       |
 | Payments      | Cash payment ref code         | (leave empty) |
 
+## Smood
+
+To receive your Smood orders in Lightspeed, use the following values to configure Smood. For assistance, contact Smood support team.
+For more details on how to configure the parameters in Smood, see the [Smood documentation](/apps/smood).
+
+| Section       | Name                              | Ref code    |
+| ------------- | --------------------------------- | ----------- |
+| Service types | Platform delivery ref code        | `SMOODDEL`  |
+| Service types | Restaurant delivery ref code      | `SMOODRDEL` |
+| Service types | Takeaway ref code                 | `SMOODCOL`  |
+| Service types | Send orders delivered by Smood as | `Delivery`  |
+| Discounts     | Discount ref code                 | `SMOOD99`   |
+| Discounts     | Promotion ref code                | `SMOOD99`   |
+| Charges       | Delivery charge ref code          | `SMOOD77`   |
+| Payments      | Online payment ref code           | `SMOODPM`   |
+
 ## Uber Eats
 
 To receive Uber Eats orders in Lightspeed Restaurant, you first need to connect Uber Eats Bridge, an app included in your HubRise subscription. For more information about Uber Eats Bridge, see the [Uber Eats Bridge documentation](/apps/uber-eats).
@@ -170,7 +188,8 @@ In the Uber Eats Bridge configuration page, use the following settings:
 | Charges        | Delivery charge ref code                     | `UE77`                                                                   |
 | Charges        | Small order fee ref code                     | Create a product with variable positive price and use its **Code**.      |
 | Charges        | Tip ref code                                 | Create a product with variable positive price and use its **Code**.      |
-| Payments       | Payment ref code                             | `UEPM`                                                                   |
+| Payments       | Online payment ref code                      | `UEPM`                                                                   |
+| Payments       | Cash payment ref code                        | (leave empty)                                                            |
 | Order statuses | Mark orders as Accepted                      | `when their HubRise status changes to "Received"`                        |
 | Menu           | Enable preparation notes on individual items | Tick if you wish to enable them                                          |
 

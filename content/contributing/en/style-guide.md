@@ -1,6 +1,6 @@
 ---
 title: Style Guide
-position: 1
+position: 2
 layout: documentation
 meta:
   title: Documentation Style Guide | HubRise
@@ -264,7 +264,7 @@ If you foresee an issue that may form part of the Frequently Asked Questions, th
 
 ---
 
-**Related FAQ**: <Link to="/docs/faqs/create-a-user-profile-for-another-person/">How Do I Create a User Profile for Another Person?</Link>
+**Related FAQ**: [How Do I Create a User Profile for Another Person?](/docs/faqs/create-a-user-profile-for-another-person/)
 
 ---
 
@@ -287,11 +287,11 @@ UI reference should be in bold and have the same capitalisation as the UI, excep
 
 For example:
 
-- Click **COMPLETED** <- This refers to the button. Since it is in all caps in the UI, it is all caps in the documentation.
+- Click **COMPLETED** ← This refers to the button. Since it is in all caps in the UI, it is all caps in the documentation.
 
 ![Screenshot of Click Completed](../images/002-en-click-completed-screenshot.png)
 
-- **Confirmed Time** <- This refers to the text.
+- **Confirmed Time** ← This refers to the text.
 
 ![Screenshot of Time Completed](../images/003-en-completed-time-screenshot.png)
 
@@ -361,7 +361,7 @@ The content should be relevant and unique from other pages. It should be easy to
 > Right: meta description structure to use for each of the documentation pages
 >
 > - **Overview**: Lightspeed K Series overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
-> - **Connection to HubRise**: Instructions on connecting Lightspeed K Series with HubRise for your EPOS to work with other apps as a cohesive whole. Connect apps and synchronise your data.
+> - **Connect to HubRise**: Instructions on connecting Lightspeed K Series with HubRise for your EPOS to work with other apps as a cohesive whole. Connect apps and synchronise your data.
 > - **Map Ref Codes**: Instructions on mapping Lightspeed K Series product ref codes with other apps after connecting your EPOS with HubRise. Connect apps and synchronise your data.
 > - **Troubleshooting**: Troubleshooting Lightspeed K Series connection with HubRise for your EPOS and other apps to work as a cohesive whole. Connect apps and synchronise your data.
 > - **Terminology**: Correspondence table showing terms used by Lightspeed K Series and those used on HubRise for the same concept. Connect apps and synchronise your data.

@@ -38,7 +38,8 @@ In the Deliveroo Bridge configuration page, use the following settings:
 | Discounts      | Offer ref code                        | (leave empty)                                     |
 | Charges        | Delivery charge ref code              | (leave empty)                                     |
 | Charges        | Surcharge ref code                    | (leave empty)                                     |
-| Payments       | Deliveroo payment ref code            | (leave empty)                                     |
+| Charges        | Bag fee ref code                      | (leave empty)                                     |
+| Payments       | Online payment ref code               | (leave empty)                                     |
 | Payments       | Cash payment ref code                 | (leave empty)                                     |
 | Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Received"` |
 
@@ -65,7 +66,7 @@ In the Just Eat Takeaway Bridge configuration page, use the following settings:
 | Service types  | Send orders delivered by the platform as | `collection orders`                               |
 | Discounts      | Discount ref code                        | (leave empty)                                     |
 | Charges        | Delivery charge ref code                 | (leave empty)                                     |
-| Payments       | Just Eat payment ref code                | (leave empty)                                     |
+| Payments       | Online payment ref code                  | (leave empty)                                     |
 | Payments       | Cash payment ref code                    | (leave empty)                                     |
 | Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Received"` |
 
@@ -109,7 +110,8 @@ In the Uber Eats Bridge configuration page, use the following settings:
 | Charges        | Delivery charge ref code                     | (leave empty)                                           |
 | Charges        | Small order fee ref code                     | (leave empty)                                           |
 | Charges        | Tip ref code                                 | (leave empty)                                           |
-| Payments       | Payment ref code                             | (leave empty)                                           |
+| Payments       | Online payment ref code                      | (leave empty)                                           |
+| Payments       | Cash payment ref code                        | (leave empty)                                           |
 | Order statuses | Mark orders as Accepted                      | `when their HubRise status changes to "Received"`       |
 | Menu           | Enable preparation notes on individual items | Tick if you wish to enable them / Leave unchecked       |
 

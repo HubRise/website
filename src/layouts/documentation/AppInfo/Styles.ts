@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { colors } from "@utils/styles"
 
 export const StyledAppInfo = styled.div`
-  color: ${colors.gray};
+  color: ${colors.textDark};
 `
 
 export const Value = styled.span`

@@ -11,9 +11,7 @@ The Configuration page can be accessed by clicking on the arrow <InlineImage wid
 
 The Configuration page allows you to customise the behaviour of Uber Eats Bridge based on your preferences.
 
-These are divided into different sections for an easier navigation.
-
-![Uber Eats Bridge configuration page](../images/010-en-configuration-page-cropped.png)
+![Uber Eats Bridge configuration page](../images/010-en-2x-configuration-page-cropped.png)
 
 ## Language
 
@@ -21,9 +19,13 @@ Choose the language to use for generic items such as `Delivery charge`. These na
 
 ## Orders
 
+### Order Statuses
+
+Select from the dropdown menu the HubRise status which should make the order accepted in Uber Eats. Refer to your EPOS documentation on the HubRise website to verify your EPOS requirements.
+
 ### Service Types
 
-Service types such as Uber Eats delivery, restaurant delivery, takeaway, or eat-in might require the corresponding ref code entry. Refer to your EPOS documentation on the HubRise website to verify.
+Service types such as Uber Eats delivery, restaurant delivery, takeaway, or eat-in might require the corresponding ref code entry. Refer to your EPOS documentation on the HubRise website to verify your EPOS requirements.
 
 Additionally, from this section you can choose to mark Uber Eats orders as delivery orders or collection orders.
 This is useful if you have specific business requirements for financial reporting.
@@ -34,7 +36,7 @@ By default, Uber Eats activates a checkbox in the checkout flow for costumers to
 
 ![Disposable items checkbox in Uber Eats checkout](../images/009-en-disposable-items.png)
 
-You can request Uber Eats to disable this functionality. But if you prefer to keep it, create a "Disposable items" product in your EPOS, and use its ref code in the **Disposable items ref code** field.
+You can request Uber Eats to disable this functionality. If you prefer to keep it, create a "Disposable items" product in your EPOS, and use its ref code in the **Disposable items ref code** field.
 
 ### Discounts
 
@@ -52,19 +54,23 @@ The ref codes in this section are only applied to orders delivered by your resta
 
 ### Payments
 
-**Payment ref code** is the ref code associated with Uber Eats payments in your EPOS. Without such reference, your EPOS will not know how to correctly identify and process Uber Eats payments. Refer to your EPOS documentation on the HubRise website to know how to handle Uber Eats payments in your EPOS.
+Uber Eats customers can pay for their order either online or by cash for restaurant delivery orders.
 
-### Order Statuses
-
-Select from the dropdown menu the HubRise status which should make the order accepted in Uber Eats. Refer to your EPOS documentation on the HubRise website for your EPOS requirements.
+This section of the configuration page allows you to specify the ref codes for these two payment methods. Refer to your EPOS documentation on the HubRise website to verify the correct codes to use.
 
 ## Catalog
 
-![Uber Eats Bridge configuration page, Catalog section](../images/011-en-configuration-page-menu.png)
+![Uber Eats Bridge configuration page, Catalog section](../images/011-en-2x-configuration-page-menu.png)
+
+### Catalog Variant to Push
+
+Catalog variants give you the flexibility to disable specific items or adjust prices for Uber Eats.
+
+If your catalog includes variants, you have the option to select which one to use. When **(none)** is selected, the default items along with their standard prices are used.
 
 ### Automatic Catalog Push
 
-Tick **Publish the menu on Uber Eats when it is updated in HubRise** to push your HubRise catalog to Uber Eats every time it is updated on HubRise. By default, this option is turned off.
+To synchronize your HubRise catalog with Uber Eats whenever it is updated, select the **Enable automatic catalog push** checkbox.
 
 ### Opening Hours
 
@@ -75,21 +81,27 @@ For each day of the week, set the opening and closing times of your store by spe
 If your restaurant is closed on a specific day, click **Close the day**.
 To quickly copy opening hours to all the following days on the list, click **Copy to bottom**.
 
+---
+
+**IMPORTANT NOTE:** To apply the updated opening hours, push your catalog to Uber Eats. For more details, see [Push the Catalog](/apps/uber-eats/push-catalog).
+
+---
+
 ### Customer Notes
 
-Select if you want to enable customer notes for individual products in Uber Eats. If you enable this option, make sure that your connected EPOS supports product level customer notes.
+Customer notes for individual products can be activated by contacting Uber Eats support. This integration feature is supported, but it cannot be activated by HubRise.
 
----
-
-**IMPORTANT NOTE:** To apply the updated opening hours and customer notes choice, push your catalog to Uber Eats. For more details, see [Push the Catalog](/apps/uber-eats/push-catalog).
-
----
+If you enable customer notes, make sure that your connected EPOS supports product level customer notes.
 
 ## Inventory
 
-You can push inventory data into Uber Eats from the **Actions** page. When you do so, products set as out of stock in HubRise are hidden on Uber Eats.
+![Uber Eats Bridge configuration page inventory section](../images/023-en-2x-configuration-page-inventory.png)
 
-You might also set the Uber Eats Bridge to automatically push inventory to Uber Eats whenever your HubRise inventory is updated. This is done by ticking the **Enable automatic inventory push** checkbox.
+Through inventory synchronization, products and options that have a stock quantity of zero can be hidden can be hidden on your Uber Eats store.
+
+To synchronize your HubRise inventory with Uber Eats whenever it is updated, select the **Enable automatic inventory push** checkbox.
+
+Additionally, you can manually push your inventory to Uber Eats via the **Actions** page.
 
 ## Save the Configuration
 

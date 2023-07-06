@@ -1,6 +1,6 @@
 ---
 title: Screenshots Guide (en anglais)
-position: 3
+position: 4
 layout: documentation
 meta:
   title: Screenshots Guide | HubRise

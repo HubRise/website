@@ -17,7 +17,7 @@ Compte tenu du risque que certaines commandes soient manquées, Just Eat ne reco
 
 ---
 
-L’auto-acceptation est disponible uniquement dans les pays suivants :
+L'auto-acceptation est disponible uniquement dans les pays suivants :
 
 - Irlande
 - Italie

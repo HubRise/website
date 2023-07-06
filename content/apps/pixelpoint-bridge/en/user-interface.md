@@ -1,6 +1,6 @@
 ---
 title: User Interface
-position: 4
+position: 3
 layout: documentation
 meta:
   title: User Interface | PixelPoint Bridge | HubRise
@@ -50,7 +50,7 @@ A detailed description of the logs can be found in [Understanding Logs](/apps/pi
 
 To access the PixelPoint Bridge Configuration page, click on the arrow <InlineImage width="20" height="20">![Arrow icon](../images/007-arrow.jpg)</InlineImage> in the top right corner of the page to expand the menu, then click **Configuration**.
 
-![PixelPoint Bridge configuration page](../images/003-en-pixelpoint-configuration-page.png)
+![PixelPoint Bridge configuration page](../images/003-en-configuration.png)
 
 From this page, you will be able to customise the behaviour of PixelPoint Bridge. For more details, see [Configuration](/apps/pixelpoint-bridge/configuration).
 

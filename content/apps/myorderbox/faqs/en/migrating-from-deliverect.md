@@ -36,4 +36,4 @@ You will connect to HubRise to change your Uber Eats and Just Eat opening hours.
 
 To migrate from Deliverect to HubRise, contact [MyOrderBox support](mailto:support@myorderboxhq.com) to request a migration.
 
-Alternatively, you can follow the steps described in [Connection to HubRise](/apps/myorderbox/connect-hubrise) to connect MyOrderBox to HubRise. You will then need to [contact us](mailto:support@hubrise.com) to connect your apps. Make sure to mention that you are currently with Deliverect to ease the migration.
+Alternatively, you can follow the steps described in [Connect to HubRise](/apps/myorderbox/connect-hubrise) to connect MyOrderBox to HubRise. You will then need to [contact us](mailto:support@hubrise.com) to connect your apps. Make sure to mention that you are currently with Deliverect to ease the migration.

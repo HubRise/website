@@ -42,7 +42,8 @@ Dans la page de configuration de Deliveroo Bridge, utilisez les paramètres suiv
 | Remises             | Code ref remise                                   | Créer une promotion `Deliveroo` dans UltimaPOS et utiliser son identifiant.       |
 | Frais               | Code ref frais de livraison                       | Créer un article `Frais de livraison` dans UltimaPOS et utiliser son identifiant. |
 | Frais               | Code ref surcharge                                | Créer un article `Surcharge` dans UltimaPOS et utiliser son identifiant.          |
-| Paiements           | Code ref paiement sur Deliveroo                   | Créer un règlement `Deliveroo` dans UltimaPOS et utiliser son identifiant.        |
+| Frais               | Code ref frais d'emballage                        | Créer un article `Frais d'emballage` dans UltimaPOS et utiliser son identifiant.  |
+| Paiements           | Code ref paiement en ligne                        | Créer un règlement `Deliveroo` dans UltimaPOS et utiliser son identifiant.        |
 | Paiements           | Code ref paiement en espèces                      | (laisser vide)                                                                    |
 | Statuts de commande | Marquer les commandes comme Acceptées             | `lorsque leur statut HubRise passe à "Reçue"`                                     |
 
@@ -89,7 +90,8 @@ Dans la page de configuration de Uber Eats Bridge, utilisez les codes ref suivan
 | Frais               | Code ref frais de livraison                       | Créer un article `Frais de livraison` et utiliser son identifiant. |
 | Frais               | Code ref supplément petite commande               | Créer un article `Petite commande` et utiliser son identifiant.    |
 | Frais               | Code ref pourboire                                | Créer un article `Pourboire` et utiliser son identifiant.          |
-| Paiements           | Code ref paiement                                 | Créer un règlement `Uber Eats` et utiliser son identifiant.        |
+| Paiements           | Code ref paiement en ligne                        | Créer un règlement `Uber Eats` et utiliser son identifiant.        |
+| Paiements           | Code ref paiement en espèces                      | (laisser vide)                                                     |
 | Statuts de commande | Marquer les commandes comme Acceptées             | `lorsque leur statut HubRise passe à "Reçue"`                      |
 | Menu                | Activer les notes de préparation sur les articles | Cocher si vous souhaitez les activer                               |
 

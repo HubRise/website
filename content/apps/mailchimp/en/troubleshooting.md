@@ -15,7 +15,7 @@ If contacts are not synced with Mailchimp, first check that Mailchimp is connect
 1. Select **CONNECTIONS**.
 1. The Mailchimp Bridge app should appear.
 
-If Mailchimp does not appear, connect your HubRise location to your Mailchimp account. For assistance, see [Connection to HubRise](/apps/mailchimp/connect-hubrise).
+If Mailchimp does not appear, connect your HubRise location to your Mailchimp account. For assistance, see [Connect to HubRise](/apps/mailchimp/connect-hubrise).
 
 ## Check that Contacts are Pushed to Mailchimp
 

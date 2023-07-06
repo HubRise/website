@@ -66,10 +66,11 @@ From this page, you will be able to customise the behaviour of Deliveroo Bridge.
 
 To access the actions page, click **Actions** at the top of the screen. If the link is not visible, first complete the configuration of Deliveroo Bridge.
 
-From the actions page, you can perform the following actions:
+From the **Actions** page, you can perform the following actions:
 
 - **Push Catalog**: Push the catalog to Deliveroo. For more details, see [Push Catalog](/apps/deliveroo/push-catalog).
-- **Push Inventory**: Sync the inventory from HubRise to Deliveroo.
+- **Pull Catalog**: Pull the menu from Deliveroo into a HubRise catalog. For more details, see [Pull Catalog](/apps/deliveroo/pull-catalog).
+- **Push Inventory**: Push your HubRise inventory to Deliveroo.
 
 ## Language and Navigation
 

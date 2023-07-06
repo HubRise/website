@@ -1,19 +1,21 @@
 import styled, { css } from "styled-components"
 
+import { headerStyle } from "../helpers"
+
 import { breakpoints, colors, mixin } from "@utils/styles"
 import Link from "@layouts/shared/components/Link"
 
 export const StyledHeader = styled.div`
   display: none;
 
-  @media (min-width: ${breakpoints.large}) {
+  @media (min-width: ${breakpoints.burgerMenu}) {
     display: flex;
     position: sticky;
     top: 0;
     justify-content: space-between;
     align-items: center;
     padding: 0 2%;
-    ${mixin.headerStyle};
+    ${headerStyle};
   }
 `
 
@@ -30,7 +32,7 @@ export const MenuItem = styled.li`
 `
 
 export const MenuLink = styled(Link)`
-  color: ${colors.darkGray};
+  color: ${colors.textDarkest};
   ${mixin.linkOver(colors.primary)};
 
   &.is-active {
@@ -40,13 +42,14 @@ export const MenuLink = styled(Link)`
 
 const callToAction = css`
   margin-left: 0.6em;
+  white-space: nowrap;
   ${mixin.button};
-  ${mixin.buttonOver(colors.white, colors.darkGray)};
+  ${mixin.buttonOver(colors.white, colors.textDarkest)};
 `
 
 export const Signup = styled(Link)`
   ${callToAction};
-  color: ${colors.gray};
+  color: ${colors.textDark};
   background-color: #eeeeee;
 `
 

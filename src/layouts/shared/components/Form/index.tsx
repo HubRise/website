@@ -12,11 +12,9 @@ interface FormProps {
 const Form = ({ buttonText, rows, formikProps }: FormProps): JSX.Element => {
   return (
     <StyledForm>
-      <section>
-        {rows.map(({ fields }, index) => (
-          <Row key={index} fields={fields} formikProps={formikProps} />
-        ))}
-      </section>
+      {rows.map(({ fields }, index) => (
+        <Row key={index} fields={fields} formikProps={formikProps} />
+      ))}
 
       <Button type="submit" name="submit">
         {buttonText}

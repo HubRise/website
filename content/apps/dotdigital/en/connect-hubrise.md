@@ -1,9 +1,9 @@
 ---
-title: Connection to HubRise
+title: Connect to HubRise
 position: 2
 layout: documentation
 meta:
-  title: Connection to HubRise | dotdigital | HubRise
+  title: Connect to HubRise | dotdigital | HubRise
   description: Instructions on connecting dotdigital with HubRise for your EPOS to work with other apps as a cohesive whole. Connect apps and synchronise your data.
 ---
 
@@ -29,13 +29,7 @@ Your API managed user will now appear in the list.
 
 ## Connect the dotdigital Bridge to HubRise
 
----
-
-**IMPORTANT NOTE:** dotdigital Bridge connects to HubRise at the location level.
-
----
-
-To connect dotdigital to HubRise, you first need to log in to your HubRise account.
+To connect dotdigital to HubRise, you first need to log in to your [HubRise account](https://manager.hubrise.com).
 If you don't have a HubRise account, go to the [HubRise Signup Page](https://manager.hubrise.com/signup) and follow the instructions.
 
 1. Select **CONNECTIONS** from the HubRise back office, then **View available apps**.

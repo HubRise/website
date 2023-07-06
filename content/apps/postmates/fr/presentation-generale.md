@@ -22,10 +22,9 @@ app_info:
 
 ## Description
 
-Postmates dont le siège social se trouve à Francisco, en Californie, propose des services de livraison de plats préparés aux restaurateurs et d'autres types d'enseignes aux États-Unis.
+Postmates est une entreprise basée à San Francisco, en Californie, qui propose des services de livraison de plats préparés aux restaurateurs et autres types d'enseignes aux États-Unis.
 
-Uber officialise l'acquisition de Postmates en 2020.
-Postmates est principalement en concurrence avec Grubhub et DoorDash.
+Uber officialise l'acquisition de Postmates en 2020. Postmates est principalement en concurrence avec Grubhub et DoorDash.
 
 ## Fonctionnalités de l'intégration
 

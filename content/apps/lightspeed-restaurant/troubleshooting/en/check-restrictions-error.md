@@ -13,11 +13,11 @@ This page explains how to troubleshoot failed orders that are caused by products
 
 In some cases, orders sent to Lightspeed Restaurant might fail with the following error in the [logs of Lightspeed Resturant Bridge](/apps/lightspeed-restaurant/user-interface/#operation-page):
 
-```
+```json
 {
   "status": "FAILURE",
   "reason": "Could not add item Topping 1 (check sales restrictions)",
-  "thirdPartyReference": "zvv25|w9988-0|qdvrjd"
+  "thirdPartyReference": "xxx|xxx-0|yyy"
 }
 ```
 

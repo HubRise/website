@@ -42,7 +42,7 @@ export const ImageSlider = styled.div<{ isVisible: boolean }>`
   }
 `
 
-export const Topbar = styled.section`
+export const Topbar = styled.div`
   padding: 1rem 0.5rem;
   display: grid;
   grid-template-columns: 1fr 8rem 1fr;
@@ -57,7 +57,7 @@ export const Title = styled.div`
 `
 
 export const Count = styled.div`
-  color: ${colors.lightGray};
+  color: ${colors.textMedium};
   margin-bottom: 0;
 `
 
@@ -74,7 +74,7 @@ export const Slide = styled(GatsbyImage)`
   border-radius: 0.6rem;
 `
 
-export const ImageGrid = styled.section`
+export const ImageGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;

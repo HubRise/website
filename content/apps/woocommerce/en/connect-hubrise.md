@@ -11,7 +11,7 @@ You can connect WooCommerce to HubRise with a few simple steps.
 
 ---
 
-**IMPORTANT NOTE:** If you don't already have a HubRise account, start by registering on the [HubRise Signup Page](https://manager.hubrise.com/signup). It only takes a minute!
+**IMPORTANT NOTE:** If you do not have a HubRise account yet, register on our [Signup Page](https://manager.hubrise.com/signup). It only takes a minute!
 
 ---
 
@@ -19,7 +19,7 @@ You can connect WooCommerce to HubRise with a few simple steps.
 
 To connect WooCommerce Bridge to HubRise, follow these steps.
 
-1. Log in to your HubRise account.
+1. Log in to your [HubRise account](https://manager.hubrise.com).
 1. Select the location you want to connect from the dropdown menu.
 1. Select **CONNECTIONS**, then **View available apps**.
 1. Select **WooCommerce Bridge** from the list of apps.

@@ -25,10 +25,10 @@ Les commandes doivent être acceptées soit manuellement sur l'OrderPad, soit au
 
 Pour les marchés fonctionnant sur la technologie Takeaway.com, les commandes doivent être envoyées à la cuisine pour être envoyées à HubRise. Cela s'applique sur les marchés suivants :
 
+- Just-Eat.ch
 - Just-Eat.fr
 - Takeaway.com (Belgique, Luxembourg, Portugual, Bulgarie, Roumanie)
 - Thuisbezorgd.nl
 - Lieferando (Allemagne, Autriche)
 - Pyszne.pl
-- Eat.ch
 - Vietnammm.com

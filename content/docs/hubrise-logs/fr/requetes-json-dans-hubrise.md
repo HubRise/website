@@ -41,7 +41,7 @@ Pour chaque requête, les informations suivantes s'affichent :
 Chaque ligne peut être développée de manière à faire apparaître les logs de la requête, de la réponse et des éventuels rappels associés.
 
 <video controls title="Example of Request and Callback in HubRise">
-  <source src="../images/006-request-callback-example.webm" type="video/webm"/>
+  <source src="../images/006-request-callback-example.webm" type="video/webm" />
 </video>
 
 ## Exemple de requête HubRise typique

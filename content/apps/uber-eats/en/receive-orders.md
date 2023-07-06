@@ -39,7 +39,11 @@ Every option has single quantity. Multiple identical modifiers are encoded in se
 
 ## Order Statuses
 
-In this section, we capitalise the first letter of Uber Eats statuses to make them easier to distinguish from HubRise status names. For example, `Accepted` is a Uber Eats status, while `accepted` is a HubRise status.
+---
+
+**IMPORTANT NOTE:** In this section, we capitalise the first letter of Uber Eats statuses to make them easier to distinguish from HubRise status names. For example, `Accepted` is a Uber Eats status, while `accepted` is a HubRise status.
+
+---
 
 ### Uber Eats Statuses
 
@@ -51,15 +55,22 @@ Uber Eats supports three order statuses:
 
 New orders must be switched to one of the above statuses within 10 minutes. Orders which are still pending after this period of time are automatically cancelled by Uber Eats.
 
-You can only update the status of an order once. Further changes are ignored by Uber Eats. Therefore you cannot cancel or deny an order which has already been accepted.
+You can only update the status of an order once. Further changes are ignored by Uber Eats. Therefore, you cannot cancel or deny an order which has already been accepted.
 
 ### When the Status Changes in HubRise
 
-When the status of an order changes to `rejected` or `cancelled` in HubRise, Uber Eats Bridge notifies Uber Eats that the order is respectively `Denied` or `Cancelled`.
-
 Uber Eats Bridge lets you decide which HubRise status triggers the `Accepted` status on Uber Eats. This is useful to handle different scenarios when your EPOS updates the order status. For example, if your EPOS marks an accepted order as `received` on HubRise, you can still notify Uber Eats that the order has been accepted.
 
-Other HubRise status values are not supported and are not sent to Uber Eats.
+When the status of an order changes to `rejected` or `cancelled` in HubRise, Uber Eats Bridge notifies Uber Eats that the order is respectively `Denied` or `Cancelled`.
+
+When the status of an order changes to `awaiting_shipment`, Uber Eats Bridge notifies Uber Eats that the order is ready for delivery. Marking orders ready only affects orders delivered by Uber. For such orders, the effects are identical to pressing the **Order Ready** button on the Uber Eats tablet:
+
+1. If Uber has not yet dispatched a driver because the preparation time did not run out, this will let Uber know that it can dispatch a driver immediately.
+2. It improves preparation time predictions for future orders.
+
+Marking orders ready is optional. By default, Uber Eats will mark orders ready automatically after the preparation time runs out.
+
+Other HubRise statuses are not supported and are not sent to Uber Eats.
 
 ### When the Status Changes in Uber Eats
 
@@ -77,6 +88,12 @@ Uber Eats supports four service types:
 - Eat-in
 
 These are typically associated with specific ref codes in your EPOS. For more information, see your EPOS documentation in our [apps page](/apps).
+
+## Order Times
+
+Uber Eats provides the time when the eater expects to receive or collect the order. Uber Eats Bridge sends this time to HubRise as the `expected_time` field.
+
+To specify a different time, you can update the `confirmed_time` field in HubRise. Uber Eats Bridge will send the updated time to Uber Eats when the order status changes to `Accepted`. Attempting to update this field after the order has been accepted will have no effect.
 
 ## Customer
 
