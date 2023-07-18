@@ -8,13 +8,13 @@ meta:
   description: Instructions to solve errors due to disconnected or not properly configured iPads.
 ---
 
-This page describes how to troubleshoot errors due to a disconnected or misconfigured iPad.
+This document provides you with troubleshooting steps when facing issues caused by a disconnected or improperly configured iPad.
 
 ## iPad EPOS Not Available
 
-In some cases, orders can fail with error messages similar to the following:
+Sometimes, orders may fail due to error messages resembling the ones shown below:
 
-- The specified business location doesn't accept online orders at the moment.
+- The specified business location is not accepting online orders currently.
 
   ```json
   {
@@ -24,7 +24,7 @@ In some cases, orders can fail with error messages similar to the following:
   }
   ```
 
-- No devices available to handle the task, the task has been rejected.
+- No devices are available to handle the order, hence it was rejected.
 
   ```json
   {
@@ -36,7 +36,7 @@ In some cases, orders can fail with error messages similar to the following:
   }
   ```
 
-- The iPad is offline or switched off.
+- No iPad was active during the validity period. HubRise sets this period to 12 hours following the placement of the order.
 
   ```json
   {
@@ -50,7 +50,7 @@ In some cases, orders can fail with error messages similar to the following:
 
 These errors can happen in the following cases:
 
-- There is no device available to receive orders.
-- The iPad is connected, but the app runs in the background, for example when the user is not on the Lightspeed app.
+- No devices are available to process the orders.
 - The iPad is switched off or not connected to the Internet.
+- Although The iPad is connected, the app is running in the background. For example, the user is not actively on the Lightspeed app.
 - Online ordering has not been enabled on the iPad. For more information, see [API Activation in the Tablet](/apps/lightspeed-restaurant/faqs/troubleshooting-failed-orders/#api-activation-in-the-tablet).
