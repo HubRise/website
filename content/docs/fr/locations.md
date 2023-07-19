@@ -1,6 +1,6 @@
 ---
-title: Points de vente
-path_override: points-de-vente
+title: Locations
+path_override: locations
 position: 8
 layout: documentation
 meta:
@@ -28,9 +28,9 @@ Les points de vente sont affichés avec :
 
 ---
 
-## Configuration du point de vente
+## Location Settings
 
-Pour afficher les détails du point de vente, procédez comme suit :
+To view Location details:
 
 1. Rendez-vous dans **CONFIGURATION**.
 1. Si vous avez accès à plusieurs comptes, sélectionnez le compte associé au point de vente.
