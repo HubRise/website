@@ -132,10 +132,10 @@ La première fois que vous effectuez un paiement, celui-ci est indiqué en tant 
 Le détail de chaque facture est consultable directement sur le back-office de HubRise en cliquant sur la date. Pour chaque paiement, les informations suivantes sont indiquées :
 
 - **Date** : la date du paiement.
-- **Montant hors TVA** : montant du paiement hors taxe sur la valeur ajoutée (TVA). HubRise ayant son siège en France, la TVA s'applique uniquement aux entreprises implantées en France et à Monaco.
+- **Amount excl. **Montant hors TVA** : montant du paiement hors taxe sur la valeur ajoutée (TVA). HubRise ayant son siège en France, la TVA s'applique uniquement aux entreprises implantées en France et à Monaco.</li>
 - **Description** : période et points de vente couverts par le paiement.
-- **Méthode de paiement** : mode de paiement utilisé.
+- **Méthode de paiement** : mode de paiement utilisé.</ul>
 
-Les factures peuvent également être sauvegardées au format de fichier PDF en sélectionnant l'icône de téléchargement <InlineImage width="15" height="14">![Icône de téléchargement](../images/058-download.png)</InlineImage>.
+Les factures peuvent également être sauvegardées au format de fichier PDF en sélectionnant l'icône de téléchargement <InlineImage width="15" height="14">!\[Icône de téléchargement\](../images/058-download.png)</InlineImage>.
 
 ![Exemple de facture](./images/043-2x-invoice-example.png)
