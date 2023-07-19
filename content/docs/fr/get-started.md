@@ -43,9 +43,9 @@ Un profil utilisateur peut avoir accès à plusieurs comptes. Par ailleurs, diff
 
 ## Choisir la langue
 
-Vous pouvez choisir la langue de votre session HubRise en cliquant sur la flèche vers le bas <InlineImage width="28" height="21">![Icône de flèche vers le bas](../images/063-arrow.jpg)</InlineImage> située en regard de votre nom dans le coin supérieur droit, puis en sélectionnant la langue de votre choix. HubRise est disponible en anglais et en français.
+Vous pouvez choisir la langue de votre session HubRise en cliquant sur la flèche vers le bas <InlineImage width="28" height="21">!\[Icône de flèche vers le bas\](../images/063-arrow.jpg)</InlineImage> située en regard de votre nom dans le coin supérieur droit, puis en sélectionnant la langue de votre choix. HubRise est disponible en anglais et en français.
 
-## Découvrir l'interface
+## Get Familiar With the Platform
 
 L'interface HubRise est organisée selon les sections suivantes :
 
@@ -59,8 +59,8 @@ L'interface HubRise est organisée selon les sections suivantes :
 
 Si vous souhaitez obtenir une vue d'ensemble des performances d'un compte, sélectionnez **Tous les points de vente**. Si vous souhaitez restreindre les résultats à un seul point de vente dans un compte, sélectionnez ce compte, puis le point de vente correspondant.
 
-- Pour les utilisateurs ayant accès à plusieurs comptes, cliquez sur la flèche vers le bas <InlineImage width="28" height="21">![Icône de flèche vers le bas](../images/063-arrow.jpg)</InlineImage> en regard de l'option **Compte**, puis sélectionnez le compte à afficher.
-- Pour afficher les données relatives à tous les points de vente ou à un point de vente spécifique, cliquez sur la flèche vers le bas <InlineImage width="28" height="21">![Icône de flèche vers le bas](../images/063-arrow.jpg)</InlineImage> en regard de l'option **Point de vente**, puis sélectionnez **Tous les points de vente** ou le point de vente spécifique.
+- Pour les utilisateurs ayant accès à plusieurs comptes, cliquez sur la flèche vers le bas <InlineImage width="28" height="21">!\[Icône de flèche vers le bas\](../images/063-arrow.jpg)</InlineImage> en regard de l'option **Compte**, puis sélectionnez le compte à afficher.
+- Pour afficher les données relatives à tous les points de vente ou à un point de vente spécifique, cliquez sur la flèche vers le bas <InlineImage width="28" height="21">!\[Icône de flèche vers le bas\](../images/063-arrow.jpg)</InlineImage> en regard de l'option **Point de vente**, puis sélectionnez **Tous les points de vente** ou le point de vente spécifique.
 
 ## Connexion
 
@@ -76,6 +76,6 @@ Pour vous connecter à HubRise, consultez la [page de connexion à HubRise](http
 
 ## Déconnexion
 
-Pour vous déconnecter de HubRise, cliquez sur la flèche vers le bas <InlineImage width="28" height="21">![Icône de flèche vers le bas](../images/063-arrow.jpg)</InlineImage> en regard de votre nom dans le coin supérieur droit, puis sélectionnez **Déconnexion**.
+Pour vous déconnecter de HubRise, cliquez sur la flèche vers le bas <InlineImage width="28" height="21">!\[Icône de flèche vers le bas\](../images/063-arrow.jpg)</InlineImage> en regard de votre nom dans le coin supérieur droit, puis sélectionnez **Déconnexion**.
 
 Par défaut, vous serez automatiquement déconnecté de votre session au bout de six mois d'inactivité.
