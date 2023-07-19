@@ -28,7 +28,7 @@ Pour accorder à un utilisateur des permissions sur un compte, procédez comme s
 1. Sélectionnez **CONFIGURATION**.
 1. À la section **Permissions**, saisissez l'adresse e-mail de l'utilisateur dans la colonne intitulée **E-MAIL**.
 1. Dans la colonne **RÔLE**, définissez le rôle du nouvel utilisateur en tant qu'Admin ou Manager.
-1. Cliquez sur l'icône Plus <InlineImage width="13" height="13">![Icône Plus](../images/059-add-icon.png)</InlineImage> pour ajouter le nouvel utilisateur.
+1. Cliquez sur l'icône Plus <InlineImage width="13" height="13">!\[Icône Plus\](../images/059-add-icon.png)</InlineImage> pour ajouter le nouvel utilisateur.
 
 Pour octroyer à un utilisateur des permissions sur un point de vente, procédez comme suit :
 
@@ -36,13 +36,13 @@ Pour octroyer à un utilisateur des permissions sur un point de vente, procédez
 1. Sélectionnez une entrée dans la liste déroulante **Point de vente**.
 1. À la section **Permissions**, saisissez l'adresse e-mail de l'utilisateur dans la colonne intitulée **E-MAIL**.
 1. Dans la colonne **RÔLE**, définissez le rôle du nouvel utilisateur en tant qu'Admin ou Manager.
-1. Cliquez sur l'icône Plus <InlineImage width="13" height="13">![Icône Plus](../images/059-add-icon.png)</InlineImage> pour ajouter le nouvel utilisateur.
+1. Cliquez sur l'icône Plus <InlineImage width="13" height="13">!\[Icône Plus\](../images/059-add-icon.png)</InlineImage> pour ajouter le nouvel utilisateur.
 
 ## Supprimer un utilisateur
 
 Pour supprimer un utilisateur, procédez comme suit :
 
-1. Dans la section **Permissions**d'un compte ou d'un point de vente, cliquez sur l'icône de suppression <InlineImage width="15" height="16">![Icône de corbeille](../images/057-2x-trash-icon.png)</InlineImage> pour l'utilisateur que vous souhaitez supprimer.
+1. Dans la section **Permissions**d'un compte ou d'un point de vente, cliquez sur l'icône de suppression <InlineImage width="15" height="16">!\[Icône de corbeille\](../images/057-2x-trash-icon.png)</InlineImage> pour l'utilisateur que vous souhaitez supprimer.
 1. Lorsque vous y êtes invité, cliquez sur **Supprimer** pour confirmer votre action.
 
 ---
