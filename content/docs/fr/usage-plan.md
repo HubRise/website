@@ -25,7 +25,7 @@ Pour afficher les détails relatifs à l'utilisation d'un compte ou d'un point d
 
 ---
 
-## Formule d'utilisation
+## Usage Plans
 
 HubRise propose des formules gratuites et payantes pour ses services. Pour obtenir des informations complètes sur les formules et la tarification, consultez la [page de tarifs de HubRise](/tarifs/).
 
@@ -54,11 +54,11 @@ Si une notification de paiement apparaît, cliquez sur le lien correspondant et 
 
 ---
 
-## Changer de formule
+## Change Plan
 
 Vous pouvez modifier la formule d'un point de vente lorsque son utilisation augmente ou diminue. Pour plus de détails, voir la rubrique [Formule d'utilisation](#formule-d-utilisation).
 
-Pour modifier la formule d'un point de vente, procédez comme suit :
+To change the plan of a Location, follow these steps:
 
 1. Sélectionnez **CONFIGURATION**.
 1. Pour les utilisateurs ayant accès à plusieurs comptes, sélectionnez le compte associé au point de vente spécifique.
