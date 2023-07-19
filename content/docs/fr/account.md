@@ -5,7 +5,7 @@ position: 7
 layout: documentation
 meta:
   title: Comptes | HubRise
-  description: Gestion des comptes sur HubRise. Créer son compte, le paramétrer et le modifier. Conventions de nommage d'un compte HubRise pour faciliter le travail de support.
+  description: Gestion des comptes sur HubRise.
 ---
 
 Un compte correspond à votre marque et comprend un ou plusieurs points de vente. Les utilisateurs de HubRise peuvent avoir accès à un ou plusieurs comptes. Pour passer d'un compte à un autre, utilisez la liste déroulante **Compte** située tout en haut du back-office de HubRise.
