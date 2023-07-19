@@ -5,7 +5,7 @@ position: 12
 layout: documentation
 meta:
   title: Catalogues | HubRise
-  description: Gestion des catalogues sur HubRise. Visualiser leur contenu. Ajouter ou supprimer des catalogues. Convention de nommage des catalogues pour mieux s'y retrouver.
+  description: Gestion des catalogues sur HubRise.
 ---
 
 La section **Catalogues** de la page **CONFIGURATION** vous permet de créer, modifier ou supprimer les catalogues utilisés par votre compte HubRise.
@@ -20,9 +20,13 @@ Les règles applicables aux catalogues sont les suivantes :
 
 ![Exemple de règles de catalogue](./images/047-2x-catalog-rules.png)
 
+---
+
 Vous pouvez connecter des applications intégrées à un catalogue spécifique afin d'y transférer ou d'en extraire des données. Vous pouvez modifier et gérer les produits d'un catalogue HubRise uniquement à partir d'applications tierces, ou avec le **Catalog Manager** HubRise connecté à votre compte HubRise.
 
 La suppression d'un catalogue de HubRise n'affecte pas la liste des produits contenus dans les applications tierces.
+
+---
 
 ## Ajouter un catalogue
 
@@ -51,7 +55,7 @@ Les catalogues peuvent être renommés afin de répondre à des besoins particul
 Pour modifier le nom d'un catalogue, procédez comme suit :
 
 1. Sélectionnez **CONFIGURATION**.
-2. Dans la section **Catalogues**, cliquez sur l'icône Modifier <InlineImage width="15" height="15">![Icône Modifier](../images/028-pen-icon.png)</InlineImage> pour le catalogue à éditer.
+2. Dans la section **Catalogues**, cliquez sur l'icône Modifier <InlineImage width="15" height="15">!\[Icône Modifier\](../images/028-pen-icon.png)</InlineImage> pour le catalogue à éditer.
 3. Saisissez le nouveau nom du catalogue.
 4. Cliquez sur **Mettre à jour** pour enregistrer les nouvelles configurations.
 
@@ -71,5 +75,5 @@ La suppression d'un catalogue dans HubRise n'affecte pas la liste des produits c
 Pour supprimer un catalogue, procédez comme suit :
 
 1. Sélectionnez **CONFIGURATION**.
-1. Dans la section **Catalogues**, cliquez sur l'icône Supprimer <InlineImage width="15" height="16">![Icône de corbeille](../images/057-2x-trash-icon.png)</InlineImage> pour le catalogue à supprimer.
+1. Dans la section **Catalogues**, cliquez sur l'icône Supprimer <InlineImage width="15" height="16">!\[Icône de corbeille\](../images/057-2x-trash-icon.png)</InlineImage> pour le catalogue à supprimer.
 1. Cliquez sur **Supprimer** pour confirmer la suppression du catalogue.
