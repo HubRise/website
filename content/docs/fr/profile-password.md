@@ -48,7 +48,7 @@ La page Profil contient des informations relatives aux **permissions** de votre 
 Pour supprimer votre accès à un compte ou à un point de vente, procédez comme suit :
 
 1. Cliquez sur votre nom dans le coin supérieur droit du back-office de HubRise, puis cliquez sur **Profil**.
-1. Recherchez la permission accordée dans la section **Permissions**, puis cliquez sur l'icône de corbeille <InlineImage width="15" height="16">![Icône de corbeille](../images/057-2x-trash-icon.png)</InlineImage>
+1. Recherchez la permission accordée dans la section **Permissions**, puis cliquez sur l'icône de corbeille <InlineImage width="15" height="16">!\[Icône de corbeille\](../images/057-2x-trash-icon.png)</InlineImage>
 
 ---
 
