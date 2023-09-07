@@ -30,7 +30,7 @@ For more information, check the [Block or Disconnect App](/docs/connections/#dis
 
 1. In the **Lightspeed Restaurant Bridge** app, click **Open**. The Lightspeed Restaurant Bridge app opens in a new browser tab.
 
-1. Open the **Configuration** page. ![Update Lightspeed Restaurant Bridge - Configuration page](../../en/images/014-configuration-page.png)
+1. Open the **Configuration** page. ![Update Lightspeed Restaurant Bridge - Configuration page](../../en/images/014-lightspeed-bridge-configuration-page.png)
 
 1. Click on **Reset the configuration**, located at the bottom of the page. In the confirmation modal, click on **Reset**.
 
