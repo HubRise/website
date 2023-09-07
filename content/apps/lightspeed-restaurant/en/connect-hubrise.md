@@ -14,11 +14,7 @@ meta:
 
 ---
 
-## Enable the HubRise Integration
-
-Before you connect to HubRise, contact Lightspeed support on k-series.support@lightspeedhq.com and ask them to enable the integration with HubRise. Data will not flow from HubRise to Lightspeed Restaurant until they activate the API.
-
-## Connect Lightspeed Restaurant Bridge
+## 1. Connect Lightspeed Restaurant Bridge
 
 Lightspeed Restaurant Bridge connects to a HubRise location. You must repeat the process below for each location you want to connect.
 
@@ -40,7 +36,13 @@ Lightspeed Restaurant Bridge connects to a HubRise location. You must repeat the
 
 ---
 
-## Give Access to Lightspeed Support
+## 2. Enable the HubRise Integration
+
+Email HubRise at support@hubrise.com to request activation of the connection. No data will flow from HubRise to Lightspeed Restaurant until Lightspeed activates the API for your account. HubRise will facilitate this activation by writing to k-series.support@lightspeedhq.com. 
+
+When you make your request to HubRise, specify whether you require the standard VAT to be applied or if your business is subject to unique VAT rates. To verify the standard VAT rates configured by Lightspeed upon connecting with HubRise, refer to this article: [VAT rates for restaurants in France, Switzerland, and Belgium](https://www.lightspeedhq.ch/blog/comparaison-taux-tva/) (In French).
+
+## 3. Give Access to Lightspeed Support
 
 We recommend providing Lightspeed support with access to your HubRise location connected with Lightspeed Restaurant. If needed, they will be able to troubleshoot issues by inspecting the logs of Lightspeed Restaurant Bridge.
 
