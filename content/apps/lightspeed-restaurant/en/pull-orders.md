@@ -17,7 +17,7 @@ This page explains how to enable this feature and what information is sent to Hu
 To start pulling Lightspeed orders into HubRise, you need to enable the feature by following these steps:
 
 1. Open Lightspeed Restaurant Bridge.
-1. Click the arrow <InlineImage width="20" height="20">![Arrow icon](../images/001-arrow.jpg)</InlineImage> in the top right corner of the page to expand the menu, then click **Configuration**.
+1. Click the arrow in the top right corner of the page to expand the menu, then click **Configuration**.
 1. From the **Pull orders from Lightspeed** section, select the **Enabled for dine-in sales** or **Enabled for all paid sales** option, depending on your needs.
 1. Click **Save** to confirm.
 
