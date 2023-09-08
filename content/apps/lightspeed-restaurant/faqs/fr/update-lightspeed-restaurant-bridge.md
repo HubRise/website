@@ -31,7 +31,7 @@ Pour plus d'informations, consultez les pages [Bloquer ou déconnecter une app](
 1. Dans l'application **Lightspeed Restaurant Bridge**, cliquez sur **Ouvrir**. Lightspeed Restaurant Bridge s'ouvre dans un nouvel onglet de votre navigateur.
 
 1. Ouvrir la page **Configuration**.
-   ![Mettre à jour Lightspeed Restaurant Bridge - Page de configuration](../../fr/images/014-lightspeed-bridge-configuration-page.png)
+   ![Mettre à jour Lightspeed Restaurant Bridge - Page de configuration](../../fr/images/014-configuration-page.png)
 
 1. Cliquez sur **Réinitialiser la configuration**, situé en bas de page. Dans la modale de confirmation, cliquez sur **Réinitialiser**.
 

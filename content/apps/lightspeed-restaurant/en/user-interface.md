@@ -28,7 +28,7 @@ In the top right corner of the Lightspeed Restaurant Bridge main page, the conne
 
 ---
 
-![Main page](./images/003-lightspeed-bridge-main-page-truncated.png)
+![Main page](./images/003-main-page-truncated.png)
 
 ## Operation Page
 
@@ -42,7 +42,7 @@ Requests are ordered with the latest on top, and each of them displays the follo
 
 Clicking on a request will expand it to reveal the detailed logs of the request and its response.
 
-![Order page](./images/005-lightspeed-bridge-operations-page.png)
+![Order page](./images/005-operations-page.png)
 
 Logs are a powerful debugging tool in case of issues. To understand in detail how to read logs, see [Understanding HubRise Logs](/docs/hubrise-logs/).
 

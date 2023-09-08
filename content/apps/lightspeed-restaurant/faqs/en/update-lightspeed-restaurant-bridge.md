@@ -5,12 +5,12 @@ position: 1
 layout: documentation
 meta:
   title: Integration update | Lightspeed Restaurant | HubRise
-  description: Instructions on how to update Lightspeed Restaurant Bridge, in order to take advantage of the features offered by the new integration with Lightspeed Restaurant
+  description: Instructions on how to update Lightspeed Restaurant Bridge, in order to take advantage of the features offered by the new integration with Lightspeed Restaurant.
 ---
 
 To take advantage of the features offered by the new integration with Lightspeed Restaurant, such as catalog synchronisation or order pull from your EPOS into HubRise, you need to update Lightspeed Restaurant Bridge. To do this, follow the steps below.
 
-## Reconnecting the Lightspeed Restaurant Bridge app.
+## Reconnecting the Lightspeed Restaurant Bridge app
 
 1. From the HubRise back office, select **CONNECTIONS**.
 
@@ -30,7 +30,7 @@ For more information, check the [Block or Disconnect App](/docs/connections/#dis
 
 1. In the **Lightspeed Restaurant Bridge** app, click **Open**. The Lightspeed Restaurant Bridge app opens in a new browser tab.
 
-1. Open the **Configuration** page. ![Update Lightspeed Restaurant Bridge - Configuration page](../../en/images/014-lightspeed-bridge-configuration-page.png)
+1. Open the **Configuration** page. ![Update Lightspeed Restaurant Bridge - Configuration page](../../en/images/014-configuration-page.png)
 
 1. Click on **Reset the configuration**, located at the bottom of the page. In the confirmation modal, click on **Reset**.
 
@@ -40,7 +40,7 @@ For more information, check the [Block or Disconnect App](/docs/connections/#dis
 
 1. Optional: If you wish to synchronise your Lightspeed menu, select a menu in the **Catalog** section.
 
-1. Optional: If you wish to send Lightspeed orders into HubRise, select **Pull orders from Lightspeed** > **Pull orders** > **Enabled for dine-in sales** or ** Enabled for all sales**.
+1. Optional: If you wish to send Lightspeed orders into HubRise, select **Pull orders from Lightspeed** > **Pull orders** > **Enabled for dine-in sales** or **Enabled for all sales**.
 
 1. Click **Save**.
 
