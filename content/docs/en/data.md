@@ -72,9 +72,9 @@ Catalogs are presented in three tabs:
 
 - **SKUS**: The items that you sell to the customers.
 - **DEALS**: The deals available in the catalog.
-  A deal provides a price reduction on combinations of Products bought together. For instance, **Buy One Get One Free** is a deal that applies to two Products. It applies to two Products and provides a price reduction equal to the price of the cheapest Product.
+  A deal offers a price reduction on combinations of Products bought together. For instance, a three-course meal (including a starter, main course, and dessert) and **Buy One Get One FREE** are deals that apply to products. The latter deal applies when two products are bought, providing a price reduction equivalent to the cost of the less expensive product.
 - **DISCOUNTS**: The discounts available in the catalog.
-  Discount codes apply savings to the overall order rather than specific products. For example, **FREEDELIVERY** might remove the delivery fee for the entire order, or **FRIYAY** might provide a 10% discount to the entire order on Friday.
+  Discount codes apply savings to the overall order rather than specific products. For example, **FREEDELIVERY** might remove the delivery fee for the entire order, or **FRIDAY** might provide a 10% discount to the entire order on Friday.
 
 ![HubRise Catalog Tabs](./images/053-2x-catalog-tabs.png)
 

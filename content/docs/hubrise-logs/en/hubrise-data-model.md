@@ -18,7 +18,7 @@ All the orders received by HubRise are logged in the back office. For informatio
 The following keys can appear in a HubRise order request.
 
 | Key                  | Description                                                                                                                                                                                               |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| -------------------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `private_ref`        | The internal ID for the order. It can be used to find an order.                                                                                                                                           |
 | `service_type`       | The type of service requested by the customer. Typical values are “delivery”, “collection”, “eat_in”.                                                                                                     |
 | `service_type_ref`   | The code associated with service_type in the EPOS system.                                                                                                                                                 |
@@ -30,8 +30,8 @@ The following keys can appear in a HubRise order request.
 | `customer_id`        | The unique customer ID. It can be used to fetch the customer's details from the database.                                                                                                                 |
 | `items`              | The list of items in the order. For more information on each item, see [The Item Object](/docs/hubrise-logs/hubrise-data-model#the-item-object).                                                          |
 | `payments`           | The list of payment methods used by the customer. For more information on each payment method, see [The Payment Object](/docs/hubrise-logs/hubrise-data-model#the-payment-object).                        |
-| `deals`              | The list of deals present in the order. A deal is a combination of products that have a discounted price when bought together.                                                                            |
-| `discounts`          | The list of discount codes applied to the entire order. A discount is either a percentage or a fixed value that is discounted from the total price of the order.                                          |
+| `deals`              | The list of deals present in the order. A deal is a combination of products that have a discounted price when bought together. For instance, **Buy One Get One FREE**.                                    |
+| `discounts`          | The list of discount codes applied to the entire order. A discount is either a percentage or a fixed value that is discounted from the total price of the order. For instance, 10% off on the whole order. |
 | `loyalty_operations` | The list of operations applied to the customer's loyalty card. Each object in the list specifies the number of points added or removed and the reason.                                                    |
 | `charges`            | The list of additional charges applied to the order. Typical cases could be delivery charges, payment fees, taxes, etc.                                                                                   |
 
