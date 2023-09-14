@@ -29,8 +29,8 @@ jobs:
       - name: Install JS dependencies
         run: yarn install
 
-      - name: Use the development environment
-        run: cp .env.cypress-ci .env
+      - name: Use the development environment - note that NextJS will load .env.production as NODE_ENV=production
+        run: cp .env.cypress-ci .env.production
 
       - name: Build the website
         run: yarn build
