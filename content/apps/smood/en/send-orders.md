@@ -70,7 +70,7 @@ Both types of deals are sent as `deals` in HubRise, with the following fields:
 
 ## Charges
 
-For restaurant delivery orders, Smood sends delivery charges as a `charges` to HubRise:
+For restaurant delivery orders, Smood sends delivery charges as `charges` to HubRise:
 
 - `name`: Smood sends `Delivery fee` in this field.
 - `ref`: The **Delivery charge ref code** defined in the [Configuration page](/apps/smood/configuration#charges).

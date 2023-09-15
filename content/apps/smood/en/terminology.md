@@ -18,7 +18,7 @@ HubRise and Smood each use their own terminology. The same concept can therefore
 | Promotion           | Deal     | BOGOF or percentage off on items.                                          |
 | Restaurant or Store | Location | The actual restaurant.                                                     |
 
-## Service Types
+## Smood Service Types
 
 Smood offers three types of services to its customers:
 

@@ -140,7 +140,7 @@ content:
           logo: popina.png
           title: Popina
           description: Popina is an iPad EPOS for restaurants that is simple and intuitive to use. Popina is complemented with an operations management system and a number of accessories to enrich the user and customer experience.
-          additional_info: Integration in progress.
+          additional_info:
         - website: https://poshelper.fr/
           documentation: /apps/pos-helper
           logo: pos-helper.png
@@ -447,12 +447,6 @@ content:
           title: Postmates
           description: Postmates offers local delivery of restaurant-prepared meals and other goods in the US.
           additional_info: Integration in progress.
-        - website: https://useseconds.com
-          documentation: /apps/seconds
-          logo: seconds.png
-          title: Seconds
-          description: Seconds powers businesses to offer same day delivery by managing deliveries with their own drivers, or connecting them to third-party delivery providers. Seconds dispatches orders automatically to third-parties and internal drivers via a dedicated app.
-          additional_info:
         - website: https://www.smood.ch/en
           documentation: /apps/smood-dismatch
           logo: smood.png
@@ -497,11 +491,6 @@ content:
           logo: smg.png
           title: Service Management Group
           description: SMG combines technology and services to collect, analyse, and share feedback on data for brands to make decisions with insights across their enterprise.
-        - website: https://upxp.io
-          documentation: /apps/upxp
-          logo: upxp.png
-          title: UPXP
-          description: UPXP is the first cryptocurrency dedicated to restaurateurs. UPXP rewards customers with cryptocurrency they can use in other businesses. Engage clients and avoid paying commissions to banks and third-parties.
     - title: Operations and Inventory
       apps:
         - website: https://get.apicbase.com
@@ -543,7 +532,7 @@ content:
           logo: rapidbar.png
           title: RapidBar
           description: RapidBar simplifies inventory management of your restaurant, hotel or bar. RapidBar helps you to control your supply chain, by centralizing menus, inventories and supplier orders in a single, cloud-based application.
-          additional_info: Integration in progress.
+          additional_info:
         - website: https://www.somm-it.com/
           documentation: /apps/somm-it
           logo: somm-it.png

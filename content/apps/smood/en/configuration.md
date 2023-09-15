@@ -8,11 +8,11 @@ meta:
   description: Instructions on configuring Smood to work seamlessly with your EPOS or other apps connected to HubRise. Configuration is simple.
 ---
 
+The Smood **Configuration** page allows you to configure how orders are sent to your EPOS, or any other solution connected to HubRise. It also includes other settings related to the integration.
+
+This page explains how to open the configuration page and configure your connection.
+
 ## Open the Configuration Page
-
-The Configuration page allows you to configure how orders are sent to your EPOS, as well as a few other settings.
-
-![Smood configuration page](./images/003-configuration.png)
 
 To open the configuration page, follow these steps:
 
@@ -24,18 +24,20 @@ You will also be redirected to the configuration page when you connect Smood to 
 
 ## Configure Your Parameters
 
+![Smood configuration page](./images/003-configuration.png)
+
 ### Service Types
 
-Service types such as Smood delivery, Restaurant delivery, or Takeaway, might require the corresponding ref code entry. Refer to your EPOS documentation on the HubRise website to verify. For more information on the service types supported by Smood, see [Service Types](/apps/smood/terminology#service-types).
+Service types such as Smood **Platform delivery**, **Restaurant delivery**, or **Takeaway**, might require the corresponding ref code entry. To verify, refer to your EPOS documentation on the HubRise website [Apps page](/apps/). For more information, see the **Terminology** paragraph, section [Smood Service Types](/apps/smood/terminology#smood-service-types).
 
-Additionally, from this section you can choose to mark Smood delivery orders as delivery orders or collection orders. Restaurant delivery orders are always marked as delivery orders.
+Additionally, from this section you can choose to mark Smood delivery orders as delivery orders or collection orders for other connected apps to process them as needed. Restaurant delivery orders are always marked as delivery orders.
 
 ### Discounts
 
 In this section, you can configure the ref codes to use for discounts and deals sent to HubRise:
 
 - **Discount**: for discounts applied to the whole order, for example a 10% discount.
-- **Promotion**: for discounts applied to a set of items, such as a menu.
+- **Promotion**: for discounts applied to a set of items within the menu, such as a three-course meal (starter, main course, and dessert).
 
 ### Charges
 
@@ -51,8 +53,8 @@ The checkboxes in this section control the synchronisation workflow between Smoo
 
 - **Enable automatic sync of the catalog**: When checked, the Smood menu is automatically updated when the HubRise catalog changes.
 - **Enable automatic sync of the inventory**: When checked, items are automatically removed from the Smood menu when they are out of stock in the HubRise inventory.
-- **Enable automatic sync of status from Smood to HubRise**: When checked, Smood updates the status of orders in HubRise.
+- **Enable automatic sync of status from Smood to HubRise**: When an order is cancelled on Smood, the status update is always sent to HubRise. When this option is checked, other Smood statuses are also sent.
 
 ### Save Your Changes
 
-When you are done configuring your parameters, click <InlineImage width="24" height="24">![Save icon](../images/save-icon.png)</InlineImage>&nbsp;**Save**.
+When you are done configuring your parameters, click **Save**.
