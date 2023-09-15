@@ -20,7 +20,7 @@ Connecting Smood to HubRise can be done with a few steps.
 
 As a first step, the HubRise integration must be enabled on your Smood account.
 
-Contact your Smood account manager, and request the activation of the HubRise integration. If you request the activation by email, include support@hubrise.com in copy of your email.
+Contact your Smood account manager, and request the activation of the HubRise integration. We recommend making your activation request by email. Include support@hubrise.com in copy of your email for follow-up by the HubRise support team.
 
 ## 2. Connect Smood
 
@@ -36,7 +36,7 @@ Once the HubRise integration is enabled, follow these steps:
 
 ---
 
-**IMPORTANT NOTE:** Smood does not support multiple restaurants connected to the same HubRise location. If you connect a location which has already been connected to another restaurant, the connection will be lost for the other restaurant.
+**IMPORTANT NOTE:** Smood does not support multiple restaurants connected to the same HubRise location. If you attempt to connect a second restaurant to a location, the existing connection will be lost.
 
 ---
 
@@ -44,4 +44,7 @@ Once the HubRise integration is enabled, follow these steps:
 
 Each product or option in Smood needs to have a corresponding ref code. This ensures that your EPOS can identify every item correctly.
 
-You can [manually edit the ref codes](/apps/smood/map-ref-codes) of your products in Smood, or [import your HubRise catalog](/apps/smood/pull-catalog) in Smood.
+This task can be accomplished in two different ways. You can:
+
+- [Manually map the ref codes](/apps/smood/map-ref-codes) of your products in Smood.
+- Or [pull your HubRise catalog](/apps/smood/pull-catalog) into Smood.

@@ -136,7 +136,7 @@ content:
           logo: popina.png
           title: Popina
           description: Popina est une caisse iPad pour les restaurants, simple et intuitive à utiliser. Popina est accompagnée d'un système de gestion et de nombreux accessoires pour enrichir l'expérience utilisateur et client.
-          additional_info: Intégration en cours.
+          additional_info:
         - website: https://poshelper.fr/
           documentation: /fr/apps/pos-helper
           logo: pos-helper.png
@@ -451,12 +451,6 @@ content:
           title: Postmates
           description: Postmates propose des services de livraison de plats préparés aux restaurateurs et à d'autres types d'enseignes aux États-Unis.
           additional_info: Intégration en cours.
-        - website: https://useseconds.com
-          documentation: /fr/apps/seconds
-          logo: seconds.png
-          title: Seconds
-          description: Seconds permet aux commerçants de gérer leurs livraisons avec leur propre flotte ou d'utiliser  des services de livraison tiers. Seconds transmet automatiquement les commandes aux services de livraison ou aux livreurs du magasin via une app dédiée.
-          additional_info:
         - website: https://www.smood.ch/fr
           documentation: /fr/apps/smood-dismatch
           logo: smood.png
@@ -506,11 +500,6 @@ content:
           title: Service Management Group
           description: SMG associe la technologie et le service pour collecter et analyser vos données, afin de comprendre les comportements de vos clients et d'agir en conséquence.
           additional_info:
-        - website: https://upxp.io
-          documentation: /fr/apps/upxp
-          logo: upxp.png
-          title: UPXP
-          description: UPXP est la première crypto-monnaie dédiée aux restaurateurs. La solution de fidélité UPXP récompense les clients avec une crypto-monnaie qu'ils peuvent utiliser dans d'autres commerces. Fidélisez les clients sans verser de commissions aux banques et aux solutions tierces.
     - title: Gestion et inventaire
       apps:
         - website: https://get.apicbase.com/fr/
@@ -551,7 +540,7 @@ content:
           logo: rapidbar.png
           title: RapidBar
           description: RapidBar simplifie la gestion des inventaires de votre restaurant, hôtel ou bar. RapidBar vous aide à contrôler votre chaîne d'approvisionnement, en centralisant les menus, les inventaires et les commandes fournisseurs dans une seule application cloud.
-          additional_info: Intégration en cours.
+          additional_info:
         - website: https://www.somm-it.com/
           documentation: /fr/apps/somm-it
           logo: somm-it.png
