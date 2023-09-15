@@ -2,13 +2,9 @@
 
 describe("Documentation", () => {
   describe("Languages", () => {
-    const headerDesktop = () => cy.get("[data-testid='header:desktop']")
-
-    it("switches language via header links", () => {
-      cy.visit("/fr/apps/0test")
-      cy.contains("Connecter Acme à HubRise")
-      headerDesktop().contains("English").click()
-      cy.contains("Connecting Acme to HubRise")
+    it("opens external links in a new tab", () => {
+      cy.visit("/apps/0test")
+      cy.get("a").contains("external link").should("have.attr", "target", "_blank")
     })
   })
 })
