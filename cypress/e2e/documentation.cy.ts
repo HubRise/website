@@ -1,10 +1,6 @@
 /// <reference types="cypress" />
 
 describe("Documentation", () => {
-  beforeEach(() => {
-    cy.intercept("https://optimizationguide-pa.googleapis.com/*", { forceNetworkError: true })
-  })
-
   describe("Languages", () => {
     const headerDesktop = () => cy.get("[data-testid='header:desktop']")
 
