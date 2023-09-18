@@ -462,6 +462,12 @@ content:
           title: Stuart
           description: Stuart propose aux commerces de toutes tailles et de tous secteurs, des services de livraison rapide sur demande avec une méthode de transport personnalisée. Disponible dans 4 pays et 100 villes.
           additional_info:
+        - website: https://merchants.ubereats.com/fr/fr/services/uber-direct/
+          documentation: /fr/apps/uber-direct
+          logo: uber-direct.png
+          title: Uber Direct
+          description: Uber Direct est un service de livraison en marque blanche proposé par Uber. Il permet aux entreprises d'envoyer des colis, produits ou marchandises à leurs clients grâce au vaste réseau de chauffeurs d'Uber Eats.
+          additional_info:
     - title: Fidélité et marketing
       apps:
         - website: https://fr.como.com

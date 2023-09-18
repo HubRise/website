@@ -458,6 +458,12 @@ content:
           title: Stuart
           description: Stuart offers businesses of all sizes, all sectors, on demand fast delivery services with a customised way of transporting goods.
           additional_info:
+        - website: https://merchants.ubereats.com/fr/en/services/uber-direct
+          documentation: /apps/uber-direct
+          logo: uber-direct.png
+          title: Uber
+          description: Uber Direct is a white-label delivery service offered by Uber. It allows businesses to send packages, products, or goods to their customers thanks to Uber Eats' extensive driver network.
+          additional_info:
     - title: Loyalty and Marketing
       apps:
         - website: https://www.como.com
