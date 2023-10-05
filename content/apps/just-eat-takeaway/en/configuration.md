@@ -21,8 +21,7 @@ Choose the language to use for generic items such as `Delivery charge`. These na
 
 Service types such as delivery by the platform, restaurant delivery or takeaway might require the corresponding ref code entry. Refer to your EPOS documentation on the HubRise website to verify.
 
-Additionally, from this section you can choose to mark Just Eat orders as delivery orders or collection orders.
-This is useful if you have specific business requirements for financial reporting.
+Additionally, from this section you can choose to mark delivery orders as delivery orders or collection orders for other connected apps to process them as needed. Restaurant delivery orders are always marked as delivery orders. This is useful if you have specific business workflow requirements or if you need to differentiate these orders for financial reporting.
 
 ## Discounts
 
