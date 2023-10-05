@@ -148,6 +148,13 @@ export const mixin = {
       top: 0;
     }
   `,
+  linkColor: (color: string) => css`
+    color: ${color};
+    &:hover,
+    &:focus {
+      color: ${color};
+    }
+  `,
   linkOver: (color: string): RuleSet => css`
     transition: color 0.2s ease;
     &:hover {
