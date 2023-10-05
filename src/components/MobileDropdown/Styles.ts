@@ -3,10 +3,11 @@ import styled, { css } from "styled-components"
 import Icon from "@components/Icon"
 import { boxShadows, colors, iconSizes, zIndexValues } from "@utils/styles"
 
-export const StyledNavigator = styled.div`
+export const Dropdown = styled.div`
   border-top: thin solid ${colors.textLighter};
   border-bottom: thin solid ${colors.textLighter};
   box-shadow: ${boxShadows.small};
+  background-color: ${colors.backgroundWhite};
 `
 
 export const Title = styled.h5<{ $isExpanded?: boolean }>`

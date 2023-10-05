@@ -13,7 +13,6 @@ import { HeaderLink } from "@utils/mdx/remarkHeadingsPlugin"
 import AppInfo from "./AppInfo"
 import Feedback from "./Feedback"
 import Gallery from "./Gallery"
-import Navigator from "./Navigator"
 import { Content, LogoImage, LogoLink, Main, Navigation, Page, Warning } from "./Styles"
 
 interface DocumentationProps {
@@ -50,9 +49,7 @@ const Documentation = ({
           </LogoLink>
         )}
 
-        <Navigation>
-          <Navigator mdFile={mdFile} folder={folder} headerLinks={headerLinks} />
-        </Navigation>
+        <Navigation mdFile={mdFile} folder={folder} headerLinks={headerLinks} />
 
         <Main>
           <Content>

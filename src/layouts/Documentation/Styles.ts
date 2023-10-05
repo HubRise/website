@@ -2,7 +2,9 @@ import Image from "next/image"
 import Link from "next/link"
 import styled from "styled-components"
 
-import { breakpoints, colors, mixin, sizes, zIndexValues } from "@utils/styles"
+import { breakpoints, colors, mixin, sizes } from "@utils/styles"
+
+import Navigator from "./Navigator"
 
 const gap = "1rem"
 
@@ -71,15 +73,6 @@ export const LogoImage = styled(Image)`
   }
 `
 
-export const Navigation = styled.div`
+export const Navigation = styled(Navigator)`
   grid-area: navigation;
-  background-color: ${colors.backgroundWhite};
-
-  position: sticky;
-  top: calc(${sizes.headerHeight} + ${gap});
-
-  @media (max-width: ${breakpoints.large}) {
-    top: ${sizes.headerHeight};
-    z-index: ${zIndexValues.header};
-  }
 `

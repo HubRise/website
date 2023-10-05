@@ -1,40 +1,30 @@
-import Link from "next/link"
 import styled, { css } from "styled-components"
 
-import { colors, mixin, sizes, zIndexValues } from "@utils/styles"
+import { breakpoints, sizes, zIndexValues } from "@utils/styles"
 
-export const StyledNav = styled.div<{ $isSticky: boolean }>`
+import DesktopNav from "./DesktopNav"
+import MobileNav from "./MobileNav"
+
+const mobileBreakpoint = breakpoints.large
+
+const sticky = css`
   position: sticky;
   top: ${sizes.headerHeight};
   z-index: ${zIndexValues.header};
-  padding: 0.5rem 0;
-
-  ${(props) =>
-    props.$isSticky &&
-    css`
-      background-color: ${colors.primary};
-      color: ${colors.white};
-    `}
 `
 
-export const List = styled.ul`
-  ${mixin.container};
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-`
-
-export const Item = styled.li<{ $isSticky: boolean }>`
-  ${({ $isSticky }) => mixin.dotSeparatedList("0.5rem", $isSticky ? colors.white : undefined)};
-  line-height: 2rem;
-`
-
-export const StyledLink = styled(Link)<{ $isActive: boolean; $isSticky: boolean }>`
-  color: ${({ $isActive, $isSticky }) => ($isSticky ? colors.white : $isActive ? colors.primary : colors.textDark)};
-  text-decoration: ${({ $isActive }) => ($isActive ? "underline" : "none")};
-
-  &:hover {
-    color: ${({ $isSticky }) => ($isSticky ? colors.white : colors.primary)};
-    text-decoration: underline;
+export const StyledDesktopNav = styled(DesktopNav)`
+  @media not (min-width: ${mobileBreakpoint}) {
+    display: none;
   }
+
+  ${sticky};
+`
+
+export const StyledMobileNav = styled(MobileNav)`
+  @media (min-width: ${mobileBreakpoint}) {
+    display: none;
+  }
+
+  ${sticky};
 `

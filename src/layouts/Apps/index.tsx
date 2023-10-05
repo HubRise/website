@@ -40,6 +40,7 @@ const Apps = ({ language, yaml, logoImages, categoryTitle }: AppsProps): JSX.Ele
           )
         }
       })}
+
       <Developer developers={content.developers} />
     </>
   )

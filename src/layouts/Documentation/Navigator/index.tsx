@@ -1,21 +1,19 @@
 import * as React from "react"
 
-import DesktopNavigator from "./DesktopNavigator"
-import MobileNavigator from "./MobileNavigator"
-import type { NavigatorProps } from "./shared/types"
-import { DesktopMediaQuery, MobileMediaQuery } from "./styles"
+import { StyledDesktopNavigator, StyledMobileNavigator, StyledNavigator } from "./Styles"
+import type { NavigatorProps } from "./types"
+import useCurrentTitle from "./useCurrentTitle"
 
 const Navigator = (props: NavigatorProps): JSX.Element => {
-  return (
-    <>
-      <DesktopMediaQuery>
-        <DesktopNavigator {...props} />
-      </DesktopMediaQuery>
+  const { folder, className } = props
+  const currentTitle = useCurrentTitle(folder.name)
 
-      <MobileMediaQuery>
-        <MobileNavigator {...props} />
-      </MobileMediaQuery>
-    </>
+  return (
+    <StyledNavigator className={className}>
+      <StyledDesktopNavigator currentTitle={currentTitle} {...props} />
+
+      <StyledMobileNavigator currentTitle={currentTitle} {...props} />
+    </StyledNavigator>
   )
 }
 

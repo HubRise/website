@@ -7,10 +7,9 @@ import { Item, ItemLink, SubItemLink, SubList, StyledMenu } from "./Styles"
 interface MenuProps extends NavigatorProps {
   currentTitle: string
   isMobile: boolean
-  onNavigate: () => void
 }
 
-const Menu = ({ mdFile, folder, headerLinks, currentTitle, isMobile, onNavigate }: MenuProps): JSX.Element => {
+const Menu = ({ mdFile, folder, headerLinks, currentTitle, isMobile }: MenuProps): JSX.Element => {
   return (
     <StyledMenu>
       {folder.folderLinks.map(({ label, uri }, idx) => {
@@ -18,7 +17,7 @@ const Menu = ({ mdFile, folder, headerLinks, currentTitle, isMobile, onNavigate 
 
         return (
           <Item key={idx} $isActive={isCurrentPage}>
-            <ItemLink href={uri} onClick={onNavigate} $isActive={isCurrentPage} $isMobile={isMobile}>
+            <ItemLink href={uri} $isActive={isCurrentPage} $isMobile={isMobile}>
               {label}
             </ItemLink>
 
@@ -28,7 +27,7 @@ const Menu = ({ mdFile, folder, headerLinks, currentTitle, isMobile, onNavigate 
                   .filter(({ depth }) => depth === 2)
                   .map(({ title, generatedId }, idx) => (
                     <li key={idx}>
-                      <SubItemLink href={`#${generatedId}`} onClick={onNavigate} $isActive={currentTitle === title}>
+                      <SubItemLink href={`#${generatedId}`} $isActive={currentTitle === title}>
                         <span>{title}</span>
                       </SubItemLink>
                     </li>

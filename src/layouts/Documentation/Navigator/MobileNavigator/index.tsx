@@ -1,28 +1,21 @@
 import * as React from "react"
 
-import Menu from "../shared/Menu"
-import type { NavigatorProps } from "../shared/types"
-import useCurrentTitle from "../shared/useCurrentTitle"
+import MobileDropdown from "@components/MobileDropdown"
 
-import { List, Title, ArrowIcon, StyledNavigator } from "./Styles"
+import Menu from "../Menu"
+import type { NavigatorProps } from "../types"
 
-const MobileNavigator = (props: NavigatorProps): JSX.Element => {
-  const { folder } = props
-  const currentTitle = useCurrentTitle(folder.name)
+interface MobileNavigatorProps extends NavigatorProps {
+  currentTitle: string
+}
 
-  const [isExpanded, setIsExpanded] = React.useState(false)
+const MobileNavigator = (props: MobileNavigatorProps): JSX.Element => {
+  const { currentTitle } = props
 
   return (
-    <StyledNavigator>
-      <Title onClick={() => setIsExpanded((v) => !v)} $isExpanded={isExpanded}>
-        {currentTitle}
-        <ArrowIcon code={isExpanded ? "expand_less" : "expand_more"} />
-      </Title>
-
-      <List $isExpanded={isExpanded}>
-        <Menu currentTitle={currentTitle} isMobile={true} onNavigate={() => setIsExpanded(false)} {...props} />
-      </List>
-    </StyledNavigator>
+    <MobileDropdown title={currentTitle}>
+      <Menu {...props} isMobile={true} />
+    </MobileDropdown>
   )
 }
 

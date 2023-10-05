@@ -1,26 +1,27 @@
 import * as React from "react"
-import { noop } from "react-use/lib/misc/util"
 
-import Menu from "../shared/Menu"
-import type { NavigatorProps } from "../shared/types"
-import useCurrentTitle from "../shared/useCurrentTitle"
+import Menu from "../Menu"
+import type { NavigatorProps } from "../types"
 
-import { List, TitleLink, Title, StyledNavigator } from "./Styles"
+import { List, TitleLink, Title, Navigator } from "./Styles"
 
-const DesktopNavigator = (props: NavigatorProps): JSX.Element => {
-  const { folder } = props
-  const currentTitle = useCurrentTitle(folder.name)
+interface DesktopNavigatorProps extends NavigatorProps {
+  currentTitle: string
+}
+
+const DesktopNavigator = (props: DesktopNavigatorProps): JSX.Element => {
+  const { folder, className } = props
 
   return (
-    <StyledNavigator>
+    <Navigator className={className}>
       <Title>
         <TitleLink href={folder.folderLinks[0].uri}>{folder.name}</TitleLink>
       </Title>
 
       <List>
-        <Menu currentTitle={currentTitle} isMobile={false} onNavigate={noop} {...props} />
+        <Menu isMobile={false} {...props} />
       </List>
-    </StyledNavigator>
+    </Navigator>
   )
 }
 

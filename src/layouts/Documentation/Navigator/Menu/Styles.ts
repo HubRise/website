@@ -7,7 +7,7 @@ const stickyVerticalPadding = "0.5rem"
 
 export const StyledMenu = styled.div``
 
-export const Item = styled.li<{ $isActive: boolean }>`
+export const Item = styled.div<{ $isActive: boolean }>`
   color: ${colors.textDarkest};
   font-size: ${fontSizes._14};
   width: 100%;

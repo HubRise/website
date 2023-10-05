@@ -3,7 +3,9 @@ import styled from "styled-components"
 
 import { colors, mixin } from "@utils/styles"
 
-export const StyledNavigator = styled.div``
+export const Navigator = styled.div`
+  background-color: ${colors.backgroundWhite};
+`
 
 export const Title = styled.h5`
   position: relative;
@@ -18,6 +20,6 @@ export const TitleLink = styled(Link)`
   ${mixin.linkColor(colors.textDarkest)};
 `
 
-export const List = styled.ul`
+export const List = styled.div`
   padding: 1rem 0;
 `

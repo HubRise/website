@@ -5,4 +5,5 @@ export interface NavigatorProps {
   mdFile: DocMdFile
   folder: DocFolder
   headerLinks: Array<HeaderLink>
+  className?: string
 }
