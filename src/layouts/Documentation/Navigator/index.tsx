@@ -2,7 +2,7 @@ import * as React from "react"
 
 import DesktopNavigator from "./DesktopNavigator"
 import MobileNavigator from "./MobileNavigator"
-import { NavigatorProps } from "./shared/utils"
+import type { NavigatorProps } from "./shared/types"
 import { DesktopMediaQuery, MobileMediaQuery } from "./styles"
 
 const Navigator = (props: NavigatorProps): JSX.Element => {

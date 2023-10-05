@@ -1,8 +1,8 @@
 import * as React from "react"
 
 import Menu from "../shared/Menu"
+import type { NavigatorProps } from "../shared/types"
 import useCurrentTitle from "../shared/useCurrentTitle"
-import { NavigatorProps } from "../shared/utils"
 
 import { List, Title, ArrowIcon, StyledNavigator } from "./Styles"
 

@@ -2,8 +2,8 @@ import * as React from "react"
 import { noop } from "react-use/lib/misc/util"
 
 import Menu from "../shared/Menu"
+import type { NavigatorProps } from "../shared/types"
 import useCurrentTitle from "../shared/useCurrentTitle"
-import { NavigatorProps } from "../shared/utils"
 
 import { List, TitleLink, Title, StyledNavigator } from "./Styles"
 

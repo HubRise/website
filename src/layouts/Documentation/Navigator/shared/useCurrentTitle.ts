@@ -1,7 +1,5 @@
 import * as React from "react"
 
-import { getCurrentTitle } from "./utils"
-
 const useCurrentTitle = (defaultTitle: string): string => {
   const [currentTitle, setCurrentTitle] = React.useState(defaultTitle)
 
@@ -16,6 +14,18 @@ const useCurrentTitle = (defaultTitle: string): string => {
   }, [currentTitle, defaultTitle])
 
   return currentTitle
+}
+
+function getCurrentTitle(): string | null {
+  const titleNodeList = Array.from(document.querySelectorAll("h2")).reverse()
+
+  const currentTitleNode = titleNodeList.find((titleNode) => {
+    const rect = titleNode.getBoundingClientRect()
+    const nodeTop = rect.top + window.scrollY
+    return nodeTop <= document.documentElement.scrollTop + 100
+  })
+
+  return currentTitleNode ? currentTitleNode.textContent : null
 }
 
 export default useCurrentTitle
