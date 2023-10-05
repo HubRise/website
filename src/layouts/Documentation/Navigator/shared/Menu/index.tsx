@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import { NavigatorProps } from "../utils"
+import type { NavigatorProps } from "../types"
 
 import { Item, ItemLink, SubItemLink, SubList, StyledMenu } from "./Styles"
 
