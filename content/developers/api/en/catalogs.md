@@ -1077,7 +1077,7 @@ The item is only enabled for variants with refs `2` and `3`, on Monday and Frida
 
 A `price_overrides` is an array of rules that can be used in [Skus](#skus) and [Options](#options), to override their price in different contexts.
 
-Each rule defines a price and a set of conditions. The structure of a rule is described below.
+Each rule defines a price, and the conditions under which this price applies. The structure of a rule is described below.
 
 ##### Parameters:
 
@@ -1093,7 +1093,9 @@ Each rule defines a price and a set of conditions. The structure of a rule is de
 | `service_type_refs` <Label type="deprecated" /> <Label type="optional" /> | string[]                                                  | Applies for orders using one of the specified service type refs. This field is deprecated, `variant_refs` should be used instead.                                            |
 | `price`                                                                   | [Money](/developers/api/general-concepts#monetary-values) | The new price if the rule matches.                                                                                                                                           |
 
-All the fields above are optional, except `price`. Fields with a `null` value are ignored. Fields with a `string[]` value must be either omitted or contain at least one value, and they cannot contain duplicate values.
+The `price` field is mandatory. All the other fields are optional, but at least one of them must be set.
+
+Fields with a `null` value are ignored. Fields with a `string[]` value must be either omitted or contain at least one value, and they cannot contain duplicate values.
 
 The `service_types` and `service_type_refs` fields have been deprecated. See [Restrictions](#restrictions) for more details.
 
