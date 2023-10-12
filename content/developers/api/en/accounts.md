@@ -1,14 +1,14 @@
 ---
-title: Account Management
-path_override: account-management
+title: Locations, Accounts and Users
+path_override: accounts
 position: 3
 layout: documentation
 meta:
-  title: Account Management | API | HubRise
+  title: Locations, Accounts and Users | API | HubRise
   description:
 ---
 
-## 1. Location
+## 1. Locations
 
 ### 1.1 Retrieve Location
 
@@ -218,7 +218,7 @@ Returns the locations of the account.
 ]
 ```
 
-## 2. Account {#account}
+## 2. Accounts {#account}
 
 ### 2.1 Retrieve Account
 
@@ -238,7 +238,7 @@ Get account details.
 }
 ```
 
-## 3. User
+## 3. Users
 
 ### 3.1 Retrieve User
 

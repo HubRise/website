@@ -144,7 +144,7 @@ For every sku in a product, Glovo Bridge sends the following information to Glov
 - `image`: The URL of the image of the parent product
 - `sku.option_list_refs`: The list of options attached to the sku
 
-For more information about skus in the HubRise catalog, see [Skus](/developers/api/catalog-management#skus).
+For more information about skus in the HubRise catalog, see [Skus](/developers/api/catalogs#skus).
 
 ### Options
 

@@ -1,7 +1,7 @@
 ---
 title: API Extensions
 path_override: extensions
-position: 7
+position: 9
 layout: documentation
 meta:
   title: API Extensions | API | HubRise

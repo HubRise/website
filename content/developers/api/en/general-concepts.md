@@ -12,37 +12,37 @@ This chapter takes a close look at the API. If you're looking for a brief introd
 
 ## 1. Endpoints
 
-HubRise API is based on REST. It uses POST, GET, PATCH, PUT and DELETE HTTP methods to create, retrieve, list, update and delete resources. Data is transmitted in the JSON format.
+HubRise API is based on REST. It uses **POST**, **GET**, **PATCH**, **PUT** and **DELETE** HTTP methods to create, retrieve, list, update and delete resources. Data is exchanged in JSON format.
 
-An **endpoint** is an API operation. It comprises a URL and HTTP method. Endpoints URLs are rooted at https://api.hubrise.com/v1.
+An **endpoint** defines an API function, consisting of a URL and HTTP method. Endpoints URLs are rooted at `https://api.hubrise.com/v1`.
 
-Versions are included in the endpoints URLs for compatibility purposes. No breaking change will be made without changing the version, and old versions will be supported for a while.
+API versions are embedded in the endpoints URLs for compatibility purposes. Breaking changes will only occur with version updates, and older versions will remain supported for a while.
 
-Every API request must include an access token, which uniquely identifies the connection. The token is passed in the `X-Access-Token` header:
+Each API call must include an access token, which uniquely identifies the connection. The token is passed in the `X-Access-Token` header:
 
 ```http
 GET https://api.hubrise.com/v1/location/orders
 X-Access-Token: [your_access_token]
 ```
 
-Access tokens are created via OAuth 2.0. See [Authentication](/developers/api/authentication).
+Access tokens are generated via OAuth 2.0. For more details, see [Authentication](/developers/api/authentication).
 
-**Note**: further in this documentation, the root part of the request URLs will be omitted. For example, we will use `GET /location/orders` in lieu of `GET https://api.hubrise.com/v1/location/orders`.
+In this documentation, URLs are abbreviated for clarity. For instance, `GET /location/orders` will be used instead of the full `GET https://api.hubrise.com/v1/location/orders`.
 
 ## 2. Pagination
 
-**Index endpoints** return a collection of results. For example, `GET /location/orders` is an index endpoint.
+Some endpoints like `GET /location/orders` return a collection of results. They are called **index endpoints**.
 
-Index endpoints paginate results. A maximum of 100 results are returned in a response. If more results exist, the request returns the first set of results along with a `X-Cursor-Next` response header.
+These endpoints paginate their results. Each response can contain up to 100 results. If there are more results available, the response will include the initial batch and an `X-Cursor-Next` header.
 
-To get the next set of results, send a new request and include the previously returned cursor value in the `cursor` URL query parameter. Repeat until the request returns no cursor value, which indicates the last set has been returned.
+To retrieve the next batch of results, send a new request and include the previously returned cursor value in the `cursor` URL query parameter. Repeat until there is no cursor value in the response, which indicates that you have received the final batch.
 
-Index endpoints accept 2 optional parameters:
+All index endpoints accept two parameters:
 
-- `count`: the maximum number of results to return per request. The default (and maximum) value is 100. Decrease this value if needed.
-- `cursor`: the next subset of results to return. Must be set to the value received in the previous `X-Cursor-Next` response header to iterate through the results. If this parameter is omitted, the first set of results is returned.
+- `count`: The maximum number of results to return per request. The default and maximum value is 100. Decrease this value if needed.
+- `cursor`: The next batch of results to return. Must be set to the value received in the previous `X-Cursor-Next` response header to iterate through the results. If left unset, the first batch is returned.
 
-##### Example for a request returning 150 results:
+##### Example of request with 150 results:
 
 First request:
 

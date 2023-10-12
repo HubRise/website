@@ -89,4 +89,4 @@ For each product line, the following information is sent to HubRise.
 - `pricing_value`
 - `skus`
 
-For more information about deals in HubRise, see the [API page for deals](/developers/api/catalog-management#deal-in-catalog-upload).
+For more information about deals in HubRise, see the [API page for deals](/developers/api/catalogs#deal-in-catalog-upload).

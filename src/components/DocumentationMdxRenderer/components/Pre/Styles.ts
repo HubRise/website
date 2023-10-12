@@ -8,33 +8,17 @@ const themeCss = css`
     overflow: auto;
     padding: 1.25rem 1.25rem;
     margin: 1.5rem auto;
-    background-color: #fbfbfb;
     border-top: thin solid ${colors.textMedium};
     border-bottom: thin solid ${colors.textMedium};
-    font-family: Consolas, "Liberation Mono", Courier, monospace;
-    font-weight: normal;
 
     .prism-code_wrapper {
       position: relative;
-      white-space: inherit;
       font-size: ${fontSizes._14};
       padding-left: 0.75rem;
     }
 
     .token-line {
       display: block;
-      border: none;
-      padding: 0;
-      font-family: Consolas, "Liberation Mono", Courier, monospace !important;
-      color: ${colors.textDarkest};
-
-      span:last-child {
-        margin-right: 1.25rem;
-      }
-
-      .token.string {
-        color: #b2564f;
-      }
     }
   }
 `

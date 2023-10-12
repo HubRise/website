@@ -81,7 +81,7 @@ For every category, the following HubRise fields are pushed into Just Eat:
 
 ### Products and Skus
 
-Products in the `products` array of a HubRise catalog can have several skus. This notion of products/skus is not supported on Just Eat. Every sku is mapped to an individual product on Just Eat. For more information about products in HubRise, see the [Products](/developers/api/catalog-management#products) section of our API documentation.
+Products in the `products` array of a HubRise catalog can have several skus. This notion of products/skus is not supported on Just Eat. Every sku is mapped to an individual product on Just Eat. For more information about products in HubRise, see the [Products](/developers/api/catalogs#products) section of our API documentation.
 
 Emojis are not supported in Just Eat. If you use emojis in your HubRise catalog, they will be removed when pushed to Just Eat.
 
@@ -95,7 +95,7 @@ For every `sku` object in a product, Just Eat Flyt Bridge pushes the following i
 - `tags`: Tags describing the characteristics and restrictions of the product, such as allergens or spiciness. See [Product Tags](#product-tags).
 - `image`: The URL of the image of the parent product
 
-For more information about skus in the HubRise catalog, see the [Skus](/developers/api/catalog-management#skus) section of our API documentation.
+For more information about skus in the HubRise catalog, see the [Skus](/developers/api/catalogs#skus) section of our API documentation.
 
 ---
 

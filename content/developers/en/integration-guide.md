@@ -97,7 +97,7 @@ If storing the HubRise IDs is not an option, you can use the HubRise `private_re
 
 ### Encoding Orders {#encoding-orders}
 
-When you push orders to HubRise, encode names and ref codes for all the fields included in the payload. For a complete list, see our [API reference](/developers/api/order-management), and the **Orders** tab in the [Integration Sheet](https://docs.google.com/spreadsheets/d/1df-QRlD9h8M58bpFoFaCEzU5pbmYSeHXOLqIVip9-5s/edit#gid=615578553).
+When you push orders to HubRise, encode names and ref codes for all the fields included in the payload. For a complete list, see our [API reference](/developers/api/orders), and the **Orders** tab in the [Integration Sheet](https://docs.google.com/spreadsheets/d/1df-QRlD9h8M58bpFoFaCEzU5pbmYSeHXOLqIVip9-5s/edit#gid=615578553).
 
 Pay attention to a few common traps:
 
@@ -145,7 +145,7 @@ You should also register an active callback to listen to order update events. Th
 If users can create an account on your solution, you should push their details to HubRise as soon as they register.
 More generally, every time users update their details, you should update them on HubRise, as well.
 
-You should also anonymise customers immediately if they request so, or if they have been inactive for a certain period of time (for example, 3 years). This is a legal requirement in many markets, including for example the EU countries under GDPR regulations. For more details, see [Anonymise customer](/developers/api/customer-management#anonymise-customer).
+You should also anonymise customers immediately if they request so, or if they have been inactive for a certain period of time (for example, 3 years). This is a legal requirement in many markets, including for example the EU countries under GDPR regulations. For more details, see [Anonymise customer](/developers/api/customers#anonymise-customer).
 
 **Main suggestions**
 
@@ -157,7 +157,7 @@ You should also anonymise customers immediately if they request so, or if they h
 
 You should push new orders to HubRise as soon as they are created by the user. However, wait for payment confirmation first, if the order is paid online.
 
-If you have registered users, you should include their `customer_id` in the payload and update their details just before pushing the order. If you do not have registered users (for example, for self ordering kiosks or orders via a tablet at the table), you can include the customer's details directly in the order payload with a so-called "guest order". For more information, see [Order's Customer](/developers/api/order-management#customer).
+If you have registered users, you should include their `customer_id` in the payload and update their details just before pushing the order. If you do not have registered users (for example, for self ordering kiosks or orders via a tablet at the table), you can include the customer's details directly in the order payload with a so-called "guest order". For more information, see [Order's Customer](/developers/api/orders#customer).
 
 When you need to test that orders are pushed to HubRise correctly, you can connect OrderLine to your HubRise account. This free app allows you to receive and manage in real time your HubRise orders. For more details on this app, see the [OrderLine documentation](/apps/orderline/overview).
 
@@ -241,7 +241,7 @@ If you need to inject new orders in HubRise to test your solution, you can use t
 ### Updating Orders {#epos-updating-orders}
 
 You should acknowledge new orders by updating their status to `received`. This will let the online ordering solution know that the order is on its way and prevent it from raising alerts.
-HubRise supports a detailed range of order statuses: use them whenever possible to update the order. For more details, see [Order Status](/developers/api/order-management#status).
+HubRise supports a detailed range of order statuses: use them whenever possible to update the order. For more details, see [Order Status](/developers/api/orders#status).
 
 If possible, you should update the confirmed delivery time of the order on HubRise, so that the customer can be notified. You would typically do this in a request that also updates the order status to `accepted`.
 
@@ -254,7 +254,7 @@ If possible, you should update the confirmed delivery time of the order on HubRi
 
 ### Pushing the Catalog {#epos-pushing-the-catalog}
 
-HubRise offers advanced catalog functionalities. Pushing the catalog from your EPOS solution to HubRise simplifies the onboarding of new users and reduces menu synchronisation issues. For more details about catalogs on HubRise, see our [API Reference](/developers/api/catalog-management).
+HubRise offers advanced catalog functionalities. Pushing the catalog from your EPOS solution to HubRise simplifies the onboarding of new users and reduces menu synchronisation issues. For more details about catalogs on HubRise, see our [API Reference](/developers/api/catalogs).
 
 We recommend to only allow manual catalog uploads. Automatic uploads triggered by a wrong catalog update could cause issues on connected online ordering platforms, without the user being aware.
 

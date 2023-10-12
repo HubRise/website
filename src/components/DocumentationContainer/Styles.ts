@@ -139,8 +139,11 @@ export const StyledContainer = styled.div`
   }
 
   details {
-    ${mixin.clickable};
     margin: 1rem 0;
+  }
+
+  summary {
+    ${mixin.clickable};
   }
 
   code {
@@ -161,7 +164,7 @@ export const StyledContainer = styled.div`
   blockquote {
     margin: 0 0 2rem;
     padding: 0.25rem 0 0.25rem 1.25rem;
-    border-left: 3px solid #ececec;
+    border-left: 3px solid ${colors.borderLight};
 
     display: flex;
     flex-direction: column;
@@ -170,24 +173,6 @@ export const StyledContainer = styled.div`
     p {
       margin: 0;
       font-style: italic;
-    }
-  }
-
-  figure {
-    width: 100%;
-    background: #fbfbfb;
-    display: inline-block;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-top: thin solid #cacaca;
-    border-bottom: thin solid #cacaca;
-
-    tbody {
-      background: none;
-    }
-
-    tr {
-      border: none;
     }
   }
 `

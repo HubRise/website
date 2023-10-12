@@ -56,7 +56,6 @@ Les liens locaux peuvent aussi contenir des ancres : [lien local avec ancre](/ap
 
 Un lien local peut simplement être une ancre : [ancre seule](#description)
 
-
 ## Pourquoi se connecter ?
 
 En connectant Acme à HubRise, vous pouvez ...

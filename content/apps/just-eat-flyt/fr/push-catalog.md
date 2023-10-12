@@ -64,7 +64,7 @@ Pour chaque catégorie, les champs HubRise envoyés à Just Eat sont les suivant
 
 ### Produits et skus
 
-Les produits contenus dans le tableau `products` d'un catalogue HubRise peuvent être associés à plusieurs skus. Cette notion de produits et de skus n'est pas prise en charge dans Just Eat, où chaque sku est associée à un produit individuel. Pour plus d'informations sur les produits contenus dans les catalogues HubRise, voir la rubrique [Produits](/developers/api/catalog-management#products) (en anglais).
+Les produits contenus dans le tableau `products` d'un catalogue HubRise peuvent être associés à plusieurs skus. Cette notion de produits et de skus n'est pas prise en charge dans Just Eat, où chaque sku est associée à un produit individuel. Pour plus d'informations sur les produits contenus dans les catalogues HubRise, voir la rubrique [Produits](/developers/api/catalogs#products) (en anglais).
 
 Pour chaque objet `sku` contenu dans un produit, Just Eat Flyt Bridge envoie les informations suivantes dans Just Eat :
 
@@ -76,7 +76,7 @@ Pour chaque objet `sku` contenu dans un produit, Just Eat Flyt Bridge envoie les
 - `tags` : balises décrivant les caractéristiques et les restrictions du produit, telles que les allergènes ou la saveur épicée. Voir la rubrique [Balises de produits](#product-tags).
 - `image` : adresse URL de l'image du produit parent.
 
-Pour plus d'informations sur les références contenues dans les catalogues HubRise, voir la rubrique [Références SKU](/developers/api/catalog-management#skus) (en anglais).
+Pour plus d'informations sur les références contenues dans les catalogues HubRise, voir la rubrique [Références SKU](/developers/api/catalogs#skus) (en anglais).
 
 ---
 

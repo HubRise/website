@@ -22,6 +22,7 @@ In the Deliveroo Bridge configuration page, use the following settings:
 
 | Section        | Name                                  | Ref code                                          |
 | -------------- | ------------------------------------- | ------------------------------------------------- |
+| Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Received"` |
 | Service types  | Deliveroo fulfilled ref code          | `DV_ST_PLATFORM`                                  |
 | Service types  | Restaurant fulfilled ref code         | `DV_ST_RESTAURANT`                                |
 | Service types  | Takeaway ref code                     | `DV_ST_TAKEAWAY`                                  |
@@ -32,7 +33,7 @@ In the Deliveroo Bridge configuration page, use the following settings:
 | Charges        | Bag fee ref code                      | (ask support@hubrise.com if you need it)          |
 | Payments       | Online payment ref code               | `DV_PM_PLATFORM`                                  |
 | Payments       | Cash payment ref code                 | (leave empty)                                     |
-| Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Received"` |
+| Customers      | Duplicate phone access code in [...]  | Tick this box                                     |
 
 ## Just Eat
 
@@ -51,6 +52,7 @@ In the Just Eat Takeaway Bridge configuration page, use the following settings:
 
 | Section        | Name                                     | Ref code                                          |
 | -------------- | ---------------------------------------- | ------------------------------------------------- |
+| Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Received"` |
 | Service types  | Just Eat delivery ref code               | `JE_ST_PLATFORM`                                  |
 | Service types  | Restaurant delivery ref code             | `JE_ST_RESTAURANT`                                |
 | Service types  | Takeaway ref code                        | `JE_ST_TAKEAWAY`                                  |
@@ -60,7 +62,6 @@ In the Just Eat Takeaway Bridge configuration page, use the following settings:
 | Charges        | Service fee ref code                     | `JE_CH_SERVICE`                                   |
 | Payments       | Online payment ref code                  | `JE_PM_PLATFORM`                                  |
 | Payments       | Cash payment ref code                    | (leave empty)                                     |
-| Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Received"` |
 
 ### Just Eat via Flyt API
 
@@ -70,6 +71,7 @@ In the Just Eat Flyt Bridge configuration page, use the following settings:
 
 | Section        | Name                                     | Ref code                                          |
 | -------------- | ---------------------------------------- | ------------------------------------------------- |
+| Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Received"` |
 | Service types  | Just Eat delivery ref code               | `JE_ST_PLATFORM`                                  |
 | Service types  | Restaurant delivery ref code             | `JE_ST_RESTAURANT`                                |
 | Service types  | Takeaway ref code                        | `JE_ST_TAKEAWAY`                                  |
@@ -82,7 +84,7 @@ In the Just Eat Flyt Bridge configuration page, use the following settings:
 | Charges        | Other charge ref code                    | (leave empty)                                     |
 | Payments       | Online payment ref code                  | `JE_PM_PLATFORM`                                  |
 | Payments       | Cash payment ref code                    | (leave empty)                                     |
-| Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Received"` |
+| Customers      | Duplicate phone access code in [...]     | Tick this box                                     |
 
 ## Uber Eats
 
@@ -90,21 +92,22 @@ To receive Uber Eats orders in EPOS Technologies, you first need to connect Uber
 
 In the Uber Eats Bridge configuration page, use the following settings:
 
-| Section        | Name                                         | Ref code or value                                                |
-| -------------- | -------------------------------------------- | ---------------------------------------------------------------- |
-| Service types  | Uber delivery ref code                       | `UE_ST_PLATFORM`                                                 |
-| Service types  | Restaurant delivery ref code                 | `UE_ST_RESTAURANT`                                               |
-| Service types  | Takeaway ref code                            | `UE_ST_TAKEAWAY`                                                 |
-| Service types  | Eat-in ref code                              | `UE_ST_EATIN`                                                    |
-| Service types  | Send orders delivered by Uber Eats as        | `collection orders`                                              |
-| Special items  | Disposable items ref code                    | Create a product in EPOS Technologies and use its ref code. (\*) |
-| Discounts      | Discount ref code                            | `UE_DC`                                                          |
-| Charges        | Delivery charge ref code                     | `UE_CH_DELIVERY`                                                 |
-| Charges        | Small order fee ref code                     | `UE_CH_SURCHARGE`                                                |
-| Charges        | Tip ref code                                 | (leave empty)                                                    |
-| Payments       | Online payment ref code                      | `UE_PM_PLATFORM`                                                 |
-| Payments       | Cash payment ref code                        | (leave empty)                                                    |
-| Order statuses | Mark orders as Accepted                      | `when their HubRise status changes to "Received"`                |
-| Menu           | Enable preparation notes on individual items | Tick if you wish to enable them                                  |
+| Section        | Name                                  | Ref code or value                                                |
+| -------------- | ------------------------------------- | ---------------------------------------------------------------- |
+| Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Received"`                |
+| Service types  | Uber delivery ref code                | `UE_ST_PLATFORM`                                                 |
+| Service types  | Restaurant delivery ref code          | `UE_ST_RESTAURANT`                                               |
+| Service types  | Takeaway ref code                     | `UE_ST_TAKEAWAY`                                                 |
+| Service types  | Eat-in ref code                       | `UE_ST_EATIN`                                                    |
+| Service types  | Send orders delivered by Uber Eats as | `collection orders`                                              |
+| Special items  | Disposable items ref code             | Create a product in EPOS Technologies and use its ref code. (\*) |
+| Discounts      | Discount ref code                     | `UE_DC`                                                          |
+| Charges        | Delivery charge ref code              | `UE_CH_DELIVERY`                                                 |
+| Charges        | Small order fee ref code              | `UE_CH_SURCHARGE`                                                |
+| Charges        | Tip ref code                          | (leave empty)                                                    |
+| Payments       | Online payment ref code               | `UE_PM_PLATFORM`                                                 |
+| Payments       | Cash payment ref code                 | (leave empty)                                                    |
+| Customers      | Duplicate phone access code in [...]  | Tick this box                                                    |
+| Catalog        | Enable customer notes on products     | Tick if you wish to enable them                                  |
 
 (\*) Only applies if you offer disposable items, such as cutlery, napkins, etc.

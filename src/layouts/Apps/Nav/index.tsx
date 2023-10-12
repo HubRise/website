@@ -32,7 +32,7 @@ const Index = ({ language, categories, allAppsLabel }: NavProps): JSX.Element =>
 
   return (
     <>
-      {/* Fragment ids must be statically positioned (ie not sticky) */}
+      {/* Static div for anchor linking; required because anchors don't work on sticky elements. */}
       <div id="nav" />
 
       <StyledNav ref={$navRef} $isSticky={isSticky}>
