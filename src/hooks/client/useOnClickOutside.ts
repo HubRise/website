@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react"
 
-export function useOnClickOutside(onClickOutside: (evt: Event) => void) {
+function useOnClickOutside(onClickOutside: (evt: Event) => void) {
   const ref = useRef<any>(null)
 
   useEffect(() => {
@@ -22,3 +22,5 @@ export function useOnClickOutside(onClickOutside: (evt: Event) => void) {
 
   return ref
 }
+
+export default useOnClickOutside

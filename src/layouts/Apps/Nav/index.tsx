@@ -1,14 +1,14 @@
 import { usePathname } from "next/navigation"
 import * as React from "react"
 
+import useOnClickOutside from "@hooks/client/useOnClickOutside"
 import useSticky from "@hooks/client/useSticky"
+import useTranslation from "@hooks/client/useTranslation"
 import { AppsYaml } from "@layouts/Apps/types"
 import { remIntoPixels } from "@utils/dom"
 import { Language } from "@utils/locales"
 import { appsCategoryPath, appsPath } from "@utils/paths"
 import { sizes } from "@utils/styles"
-import { useOnClickOutside } from "@hooks/client/useOnClickOutside"
-import useTranslation from "@hooks/client/useTranslation"
 
 import {
   StyledNav,
@@ -45,7 +45,7 @@ const Index = ({ language, categories, allAppsLabel, onSearchInputChange }: NavP
     }
 
     return (lastSlashString.charAt(0).toUpperCase() + lastSlashString.slice(1)).replaceAll("-", " ")
-  }, [])
+  }, [allAppsLabel, currentPath])
 
   const $navRef = React.useRef<HTMLDivElement>(null)
   const $categoryListRef = useOnClickOutside(() => {
