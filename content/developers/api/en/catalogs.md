@@ -1116,10 +1116,8 @@ All conditions must be met simultaneously for a rule to match. When one or sever
 ]
 ```
 
-Assuming the default price is `25.00 EUR`:
-
-- If the item is ordered through any channel or location that use variants `1` or `3`, the price is `20.00 EUR`.
-- Additionally, if the item is ordered before `14:00`, the price is `15.00 EUR`, no matter the variant. Indeed, the second rule overrides the first one.
+- If the item is ordered through any channel or location that use variants `2` or `3`, the price is `20.00 EUR`.
+- Additionally, if the item is ordered before `14:00`, the price is `15.00 EUR`, no matter the variant; the second rule overrides the first one.
 
 ## 13. Images {#images}
 
