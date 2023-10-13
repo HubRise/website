@@ -1,7 +1,8 @@
 import Link from "next/link"
 import styled, { css } from "styled-components"
 
-import { colors, mixin, sizes, zIndexValues } from "@utils/styles"
+import Icon from "@components/Icon"
+import { colors, mixin, sizes, zIndexValues, iconSizes, boxShadows, breakpoints } from "@utils/styles"
 
 export const StyledNav = styled.div<{ $isSticky: boolean }>`
   position: sticky;
@@ -13,8 +14,118 @@ export const StyledNav = styled.div<{ $isSticky: boolean }>`
     props.$isSticky &&
     css`
       background-color: ${colors.primary};
-      color: ${colors.white};
     `}
+`
+
+export const Container = styled.div`
+  max-width: ${sizes.maxWidth};
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: ${colors.white};
+  border-radius: ${sizes.borderRadius};
+  position: relative;
+
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  @media (min-width: ${breakpoints.large}) {
+    padding-left: 1.56rem;
+    padding-right: 1.56rem;
+  }
+`
+
+export const SearchWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-right: 2px solid ${colors.backgroundLight};
+  flex-grow: 0;
+  flex-shrink: 1;
+`
+
+export const Input = styled.input`
+  width: 100%;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+`
+
+export const CategoryFitlerWrapper = styled.div`
+  margin-left: 0.5rem;
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  @media (min-width: ${breakpoints.large}) {
+    margin-left: 1.56rem;
+  }
+`
+
+export const CategoryFitler = styled.span`
+  display: flex;
+  align-items: center;
+  color: ${colors.primary};
+`
+
+export const CategoryList = styled.ul<{ $isExpanded: boolean }>`
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  left: 0;
+  width: 100%;
+  background-color: ${colors.white};
+  border-radius: ${sizes.borderRadius};
+  box-shadow: ${boxShadows.large};
+
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  ${(props) =>
+    props.$isExpanded &&
+    css`
+      visibility: visible;
+      opacity: 1;
+      pointer-events: all;
+    `}
+
+  @media (min-width: ${breakpoints.large}) {
+    right: 0;
+    left: unset;
+    width: auto;
+  }
+`
+
+export const CategoryItem = styled.li`
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease-in;
+
+  &:hover {
+    background-color: ${colors.backgroundLight};
+  }
+`
+
+export const ArrowIcon = styled(Icon).attrs({ size: iconSizes._25 })`
+  color: ${colors.primary};
+  margin-left: 0.25;
+
+  @media (min-width: ${breakpoints.large}) {
+    margin-left: 0.5rem;
+  }
+`
+
+export const SearchIcon = styled(Icon).attrs({ size: iconSizes._25 })`
+  margin-right: 0.25;
+
+  @media (min-width: ${breakpoints.large}) {
+    margin-right: 0.5rem;
+  }
 `
 
 export const List = styled.ul`
@@ -30,11 +141,5 @@ export const Item = styled.li<{ $isSticky: boolean }>`
 `
 
 export const StyledLink = styled(Link)<{ $isActive: boolean; $isSticky: boolean }>`
-  color: ${({ $isActive, $isSticky }) => ($isSticky ? colors.white : $isActive ? colors.primary : colors.textDark)};
-  text-decoration: ${({ $isActive }) => ($isActive ? "underline" : "none")};
-
-  &:hover {
-    color: ${({ $isSticky }) => ($isSticky ? colors.white : colors.primary)};
-    text-decoration: underline;
-  }
+  color: ${({ $isActive }) => ($isActive ? colors.primary : colors.textDark)};
 `
