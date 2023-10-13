@@ -7,6 +7,8 @@ import { remIntoPixels } from "@utils/dom"
 import { Language } from "@utils/locales"
 import { appsCategoryPath, appsPath } from "@utils/paths"
 import { sizes } from "@utils/styles"
+import { useOnClickOutside } from "@hooks/client/useOnClickOutside"
+import useTranslation from "@hooks/client/useTranslation"
 
 import {
   StyledNav,
@@ -21,7 +23,6 @@ import {
   Input,
   SearchIcon,
 } from "./Styles"
-import { useOnClickOutside } from "@hooks/client/useOnClickOutside"
 
 interface NavProps {
   language: Language
@@ -53,6 +54,8 @@ const Index = ({ language, categories, allAppsLabel, onSearchInputChange }: NavP
   const headerHeightInPixels = React.useMemo(() => remIntoPixels(sizes.headerHeight), [])
   const isSticky = useSticky($navRef, headerHeightInPixels)
 
+  const { t } = useTranslation()
+
   const link = (path: string, isActive: boolean, label: string) => (
     <StyledLink href={path + "#nav"} $isActive={isActive} $isSticky={isSticky}>
       {label}
@@ -69,7 +72,7 @@ const Index = ({ language, categories, allAppsLabel, onSearchInputChange }: NavP
           <SearchWrapper>
             <SearchIcon code="search" />
             <Input
-              placeholder="Search app by name"
+              placeholder={t("apps.search_input_placeholder")}
               onChange={(e) => {
                 onSearchInputChange(e.target.value)
               }}

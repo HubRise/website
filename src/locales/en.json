@@ -1,7 +1,8 @@
 {
   "apps": {
     "view_documentation": "View documentation",
-    "visit_website": "Open editor website"
+    "visit_website": "Open editor website",
+    "search_input_placeholder": "Search by app name"
   },
   "blog": {
     "hero": {

@@ -1,7 +1,8 @@
 {
   "apps": {
     "view_documentation": "Consulter la documentation",
-    "visit_website": "Accéder au site de l'éditeur"
+    "visit_website": "Accéder au site de l'éditeur",
+    "search_input_placeholder": "Chercher une app par nom"
   },
   "blog": {
     "hero": {
