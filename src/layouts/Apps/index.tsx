@@ -1,4 +1,5 @@
 "use client"
+import * as React from "react"
 
 import { AppsYaml } from "@layouts/Apps/types"
 import { ContentImage } from "@utils/contentImage"
@@ -19,11 +20,22 @@ interface AppsProps {
 const Apps = ({ language, yaml, logoImages, categoryTitle }: AppsProps): JSX.Element => {
   const { content } = yaml
 
+  const [filterSearch, setFilterSearch] = React.useState("")
+
+  const onSearchInputChange = (value: string) => {
+    setFilterSearch(value)
+  }
+
   return (
     <>
       <Hero hero={content.hero} />
 
-      <Nav language={language} categories={content.categories} allAppsLabel={content.all_apps} />
+      <Nav
+        language={language}
+        categories={content.categories}
+        allAppsLabel={content.all_apps}
+        onSearchInputChange={onSearchInputChange}
+      />
 
       {content.categories.map(({ title, apps, has_suggest_app }, idx) => {
         if (!categoryTitle || categoryTitle === title) {
@@ -36,6 +48,7 @@ const Apps = ({ language, yaml, logoImages, categoryTitle }: AppsProps): JSX.Ele
               logoImages={logoImages}
               additionalSections={content.additional_sections}
               hasSuggestApp={has_suggest_app}
+              filterSearch={filterSearch}
             />
           )
         }

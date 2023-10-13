@@ -9,8 +9,6 @@ import { appsCategoryPath, appsPath } from "@utils/paths"
 import { sizes } from "@utils/styles"
 
 import {
-  Item,
-  List,
   StyledNav,
   StyledLink,
   Container,
@@ -29,9 +27,10 @@ interface NavProps {
   language: Language
   categories: AppsYaml["content"]["categories"]
   allAppsLabel: string
+  onSearchInputChange: (value: string) => void
 }
 
-const Index = ({ language, categories, allAppsLabel }: NavProps): JSX.Element => {
+const Index = ({ language, categories, allAppsLabel, onSearchInputChange }: NavProps): JSX.Element => {
   const currentPath = usePathname()
   const allAppsPath = appsPath(language)
   const [isExpanded, setIsExpanded] = React.useState(false)
@@ -69,7 +68,12 @@ const Index = ({ language, categories, allAppsLabel }: NavProps): JSX.Element =>
         <Container>
           <SearchWrapper>
             <SearchIcon code="search" />
-            <Input placeholder="Search app by name"></Input>
+            <Input
+              placeholder="Search app by name"
+              onChange={(e) => {
+                onSearchInputChange(e.target.value)
+              }}
+            ></Input>
           </SearchWrapper>
           <CategoryFitlerWrapper ref={$categoryListRef}>
             <CategoryFitler onClick={() => setIsExpanded((v) => !v)}>
@@ -86,18 +90,6 @@ const Index = ({ language, categories, allAppsLabel }: NavProps): JSX.Element =>
             </CategoryList>
           </CategoryFitlerWrapper>
         </Container>
-        {/* <List>
-          <Item $isSticky={isSticky}>{link(allAppsPath, allAppsPath === currentPath, allAppsLabel)}</Item>
-
-          {categories.map((category, idx) => {
-            const path = appsCategoryPath(language, category.title)
-            return (
-              <Item key={idx} $isSticky={isSticky}>
-                {link(path, path === currentPath, category.title)}
-              </Item>
-            )
-          })}
-        </List> */}
       </StyledNav>
     </>
   )

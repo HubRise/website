@@ -1,3 +1,5 @@
+import { useMemo } from "react"
+
 import Block from "@components/Block"
 import useTranslation from "@hooks/client/useTranslation"
 import { AppsYaml } from "@layouts/Apps/types"
@@ -22,6 +24,7 @@ interface AppSectionProps {
   logoImages: { [logo: string]: ContentImage }
   additionalSections: AppsYaml["content"]["additional_sections"]
   hasSuggestApp: boolean
+  filterSearch: string
 }
 
 const App = ({
@@ -31,13 +34,19 @@ const App = ({
   logoImages,
   additionalSections,
   hasSuggestApp,
+  filterSearch,
 }: AppSectionProps): JSX.Element => {
   const { t } = useTranslation()
 
+  const filteredApps = useMemo(() => {
+    const filteredArray = apps.filter((app) => app.title.toLowerCase().includes(filterSearch.toLowerCase()))
+    return filterSearch ? filteredArray : apps
+  }, [filterSearch, apps])
+
   return (
-    <Block backgroundColor="none" title={showTitle ? title : undefined}>
+    <Block backgroundColor="none" title={showTitle && filteredApps.length > 0 ? title : undefined}>
       <Group>
-        {apps.map((app, idx) => (
+        {filteredApps.map((app, idx) => (
           <AppBoxLink key={idx} href={app.documentation || app.website}>
             {logoImages[app.logo] && (
               <AppLogo>
