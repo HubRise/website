@@ -25,7 +25,7 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
 
   const hasFiltersApplied = React.useMemo(() => {
     return selectedCategory === content.all_apps && filterSearch === "" ? false : true
-  }, [filterSearch, selectedCategory])
+  }, [filterSearch, selectedCategory, content.all_apps])
 
   const isThereAppResults = React.useMemo(() => {
     let results: boolean = false
@@ -52,7 +52,7 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
     })
 
     return results
-  }, [filterSearch, content.categories, hasFiltersApplied, selectedCategory])
+  }, [filterSearch, content.categories, hasFiltersApplied, selectedCategory, content.all_apps])
 
   const onSearchInputChange = (value: string) => {
     setFilterSearch(value)

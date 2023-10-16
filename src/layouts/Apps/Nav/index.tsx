@@ -10,7 +10,6 @@ import { sizes } from "@utils/styles"
 
 import {
   StyledNav,
-  StyledLink,
   Container,
   CategoryFitlerWrapper,
   CategoryFitler,
