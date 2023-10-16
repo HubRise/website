@@ -24,13 +24,10 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   background-color: ${colors.white};
-  border-radius: ${sizes.borderRadius};
   position: relative;
 
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-
   @media (min-width: ${breakpoints.large}) {
+    border-radius: ${sizes.borderRadius};
     padding-left: 1.56rem;
     padding-right: 1.56rem;
   }
@@ -48,6 +45,9 @@ export const SearchWrapper = styled.div`
 
 export const Input = styled.input`
   width: 100%;
+  height: 1.5625rem;
+  font-size: 1rem;
+  line-height: 1;
   border: none;
   &:focus {
     outline: none;
@@ -61,6 +61,8 @@ export const CategoryFitlerWrapper = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
 
   @media (min-width: ${breakpoints.large}) {
     margin-left: 1.56rem;

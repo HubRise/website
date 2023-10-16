@@ -1,9 +1,9 @@
 import styled from "styled-components"
 
-import { fontSizes, colors, sizes } from "@utils/styles"
+import { fontSizes, colors, sizes, breakpoints } from "@utils/styles"
 
 export const StyledNoResults = styled.div`
-  min-height: 30rem;
+  min-height: 20rem;
   max-width: ${sizes.maxWidth};
   width: 100%;
   margin: 0 auto;
@@ -13,4 +13,8 @@ export const StyledNoResults = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: ${breakpoints.large}) {
+    min-height: 30rem;
+  }
 `
