@@ -55,9 +55,6 @@ const Index = ({
 
   return (
     <>
-      {/* Static div for anchor linking; required because anchors don't work on sticky elements. */}
-      <div id="nav" />
-
       <StyledNav ref={$navRef} $isSticky={isSticky}>
         <Container>
           <SearchWrapper>
