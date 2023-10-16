@@ -19,7 +19,6 @@ import {
 
 interface AppSectionProps {
   title: string
-  showTitle: boolean
   apps: AppsYaml["content"]["categories"][0]["apps"]
   logoImages: { [logo: string]: ContentImage }
   additionalSections: AppsYaml["content"]["additional_sections"]
@@ -29,7 +28,6 @@ interface AppSectionProps {
 
 const App = ({
   title,
-  showTitle,
   apps,
   logoImages,
   additionalSections,
@@ -43,8 +41,12 @@ const App = ({
     return filterSearch ? filteredArray : apps
   }, [filterSearch, apps])
 
+  if (filteredApps.length <= 0) {
+    return <></>
+  }
+
   return (
-    <Block backgroundColor="none" title={showTitle && filteredApps.length > 0 ? title : undefined}>
+    <Block backgroundColor="none" title={filteredApps.length > 0 ? title : undefined}>
       <Group>
         {filteredApps.map((app, idx) => (
           <AppBoxLink key={idx} href={app.documentation || app.website}>

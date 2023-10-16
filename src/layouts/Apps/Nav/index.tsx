@@ -1,4 +1,3 @@
-import { usePathname } from "next/navigation"
 import * as React from "react"
 
 import useOnClickOutside from "@hooks/client/useOnClickOutside"
@@ -7,7 +6,6 @@ import useTranslation from "@hooks/client/useTranslation"
 import { AppsYaml } from "@layouts/Apps/types"
 import { remIntoPixels } from "@utils/dom"
 import { Language } from "@utils/locales"
-import { appsCategoryPath, appsPath } from "@utils/paths"
 import { sizes } from "@utils/styles"
 
 import {
@@ -29,23 +27,18 @@ interface NavProps {
   categories: AppsYaml["content"]["categories"]
   allAppsLabel: string
   onSearchInputChange: (value: string) => void
+  selectedCategoryLabel: string
+  onCategoryChange: (category: string) => void
 }
 
-const Index = ({ language, categories, allAppsLabel, onSearchInputChange }: NavProps): JSX.Element => {
-  const currentPath = usePathname()
-  const allAppsPath = appsPath(language)
+const Index = ({
+  categories,
+  allAppsLabel,
+  onSearchInputChange,
+  selectedCategoryLabel,
+  onCategoryChange,
+}: NavProps): JSX.Element => {
   const [isExpanded, setIsExpanded] = React.useState(false)
-
-  const currentCategory = React.useMemo(() => {
-    const lastSlashIndex = currentPath.lastIndexOf("/")
-    const lastSlashString = currentPath.substring(lastSlashIndex + 1)
-
-    if (lastSlashString === "apps") {
-      return allAppsLabel
-    }
-
-    return (lastSlashString.charAt(0).toUpperCase() + lastSlashString.slice(1)).replaceAll("-", " ")
-  }, [allAppsLabel, currentPath])
 
   const $navRef = React.useRef<HTMLDivElement>(null)
   const $categoryListRef = useOnClickOutside(() => {
@@ -56,11 +49,10 @@ const Index = ({ language, categories, allAppsLabel, onSearchInputChange }: NavP
 
   const { t } = useTranslation()
 
-  const link = (path: string, isActive: boolean, label: string) => (
-    <StyledLink href={path + "#nav"} $isActive={isActive} $isSticky={isSticky}>
-      {label}
-    </StyledLink>
-  )
+  const handleCategoryItemClick = (category: string) => {
+    onCategoryChange(category)
+    setIsExpanded(false)
+  }
 
   return (
     <>
@@ -80,15 +72,31 @@ const Index = ({ language, categories, allAppsLabel, onSearchInputChange }: NavP
           </SearchWrapper>
           <CategoryFitlerWrapper ref={$categoryListRef}>
             <CategoryFitler onClick={() => setIsExpanded((v) => !v)}>
-              {currentCategory}
+              {selectedCategoryLabel}
               <ArrowIcon code={isExpanded ? "expand_less" : "expand_more"} />
             </CategoryFitler>
 
             <CategoryList $isExpanded={isExpanded}>
-              <CategoryItem>{link(allAppsPath, allAppsPath === currentPath, allAppsLabel)}</CategoryItem>
+              <CategoryItem
+                $isActive={selectedCategoryLabel === allAppsLabel}
+                onClick={() => {
+                  handleCategoryItemClick(allAppsLabel)
+                }}
+              >
+                {allAppsLabel}
+              </CategoryItem>
               {categories.map((category, idx) => {
-                const path = appsCategoryPath(language, category.title)
-                return <CategoryItem key={idx}>{link(path, path === currentPath, category.title)}</CategoryItem>
+                return (
+                  <CategoryItem
+                    key={idx}
+                    $isActive={selectedCategoryLabel === category.title}
+                    onClick={() => {
+                      handleCategoryItemClick(category.title)
+                    }}
+                  >
+                    {category.title}
+                  </CategoryItem>
+                )
               })}
             </CategoryList>
           </CategoryFitlerWrapper>

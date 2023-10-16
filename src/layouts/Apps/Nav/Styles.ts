@@ -101,7 +101,7 @@ export const CategoryList = styled.ul<{ $isExpanded: boolean }>`
   }
 `
 
-export const CategoryItem = styled.li`
+export const CategoryItem = styled.li<{ $isActive: boolean }>`
   cursor: pointer;
   padding: 0.5rem 1rem;
   transition: background-color 0.3s ease-in;
@@ -109,6 +109,8 @@ export const CategoryItem = styled.li`
   &:hover {
     background-color: ${colors.backgroundLight};
   }
+
+  color: ${({ $isActive }) => ($isActive ? colors.primary : colors.textDark)};
 `
 
 export const ArrowIcon = styled(Icon).attrs({ size: iconSizes._25 })`

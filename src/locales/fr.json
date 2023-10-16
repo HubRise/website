@@ -2,7 +2,8 @@
   "apps": {
     "view_documentation": "Consulter la documentation",
     "visit_website": "Accéder au site de l'éditeur",
-    "search_input_placeholder": "Chercher une app par nom"
+    "search_input_placeholder": "Chercher une app par nom",
+    "no_results_message": "Aucune application trouvée"
   },
   "blog": {
     "hero": {
