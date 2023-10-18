@@ -35,7 +35,7 @@ export class LocalLinkRewriter {
     if (anchor) anchor = await this.rewriteAnchor(route, anchor)
 
     // Concatenate route href and anchor. Each may be empty, but not both.
-    return [route?.href, anchor].filter(Boolean).join("")
+    return route ? `${route.href}${anchor ? "#" + anchor : ""}` : `#${anchor}`
   }
 
   /**
@@ -110,7 +110,7 @@ export class LocalLinkRewriter {
           `Available anchors: ${anchors.join(", ")}`,
       )
     }
-    return "#" + headerLink.generatedId
+    return headerLink.generatedId
   }
 
   private isDocumentationRoute(

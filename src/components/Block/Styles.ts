@@ -17,6 +17,7 @@ export const Container = styled.div<{
   $verticalSpacing: VerticalSpacing
 }>`
   margin: ${({ $verticalSpacing }) => ($verticalSpacing === "small" ? "2.5rem" : sizes.blockVerticalPadding)} 0;
+  scroll-margin-top: ${sizes.headerHeight};
 `
 
 const paddingVertical = (padding: string) => css`
