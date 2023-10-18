@@ -7,7 +7,7 @@
   toPath: /apps#point-of-sales
 - fromPath: /fr/apps/logiciels-de-caisse
   toPath: /fr/apps#point-of-sales
-- fromPath: /apps/food-ordering-platforms#nav
+- fromPath: /apps/food-ordering-platforms
   toPath: /apps#food-ordering-platforms
 - fromPath: /fr/apps/plateformes-de-livraison-de-repas
   toPath: /fr/apps#food-ordering-platforms
