@@ -80,7 +80,7 @@ export const CategoryFitlerWrapper = styled.div`
   }
 `
 
-export const CategoryFitler = styled.span`
+export const CategoryFitler = styled.button`
   display: flex;
   align-items: center;
   color: ${colors.primary};

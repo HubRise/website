@@ -67,9 +67,9 @@ const Index = ({
               onChange={(e) => {
                 onSearchInputChange(e.target.value)
               }}
-            ></Input>
+            />
           </SearchWrapper>
-          <CategoryFitlerWrapper ref={$categoryListRef}>
+          <CategoryFitlerWrapper ref={$categoryListRef} data-testid="apps:categoryfilter">
             <CategoryFitler onClick={() => setIsExpanded((v) => !v)}>
               {selectedCategoryLabel}
               <ArrowIcon code={isExpanded ? "expand_less" : "expand_more"} />

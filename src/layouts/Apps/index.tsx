@@ -67,26 +67,28 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
         onSearchInputChange={onSearchInputChange}
       />
 
-      {filteredAppsByCategory.length > 0 ? (
-        <>
-          {filteredAppsByCategory.map(({ title, apps, has_suggest_app }, idx) => {
-            if (selectedCategory === content.all_apps || selectedCategory === title) {
-              return (
-                <AppGroup
-                  key={idx}
-                  title={title}
-                  apps={apps}
-                  logoImages={logoImages}
-                  additionalSections={content.additional_sections}
-                  hasSuggestApp={has_suggest_app && !hasFiltersApplied}
-                />
-              )
-            }
-          })}
-        </>
-      ) : (
-        <NoResults />
-      )}
+      <div data-testid="apps:results">
+        {filteredAppsByCategory.length > 0 ? (
+          <>
+            {filteredAppsByCategory.map(({ title, apps, has_suggest_app }, idx) => {
+              if (selectedCategory === content.all_apps || selectedCategory === title) {
+                return (
+                  <AppGroup
+                    key={idx}
+                    title={title}
+                    apps={apps}
+                    logoImages={logoImages}
+                    additionalSections={content.additional_sections}
+                    hasSuggestApp={has_suggest_app && !hasFiltersApplied}
+                  />
+                )
+              }
+            })}
+          </>
+        ) : (
+          <NoResults />
+        )}
+      </div>
 
       <Developer developers={content.developers} />
     </>
