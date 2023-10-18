@@ -27,39 +27,30 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
     return selectedCategory === content.all_apps && filterSearch === "" ? false : true
   }, [filterSearch, selectedCategory, content.all_apps])
 
-  const isThereAppResults = React.useMemo(() => {
-    let results: boolean = false
-
-    if (!hasFiltersApplied) {
-      return true
+  const filteredAppsByCategory = React.useMemo(() => {
+    if (filterSearch === "") {
+      return content.categories
     }
 
-    if (selectedCategory !== content.all_apps) {
-      const selectedCategoryApps = content.categories.filter(({ title }) => title === selectedCategory)
-      const filteredApps = selectedCategoryApps.filter((app) =>
-        app.title.toLowerCase().includes(filterSearch.toLowerCase()),
-      )
-      if (filteredApps.length < 0) {
-        return false
-      }
-    }
-
-    content.categories.map(({ apps }) => {
-      const filteredApps = apps.filter((app) => app.title.toLowerCase().includes(filterSearch.toLowerCase()))
-      if (filteredApps.length > 0) {
-        results = true
+    const filterResults = content.categories.map(({ title, apps, has_suggest_app }) => {
+      return {
+        title,
+        apps: apps.filter((app) => app.title.toLowerCase().includes(filterSearch.toLowerCase())),
+        has_suggest_app,
       }
     })
 
-    return results
-  }, [filterSearch, content.categories, hasFiltersApplied, selectedCategory, content.all_apps])
+    return filterResults.filter(({ apps }) => apps.length > 0)
+  }, [filterSearch, content.categories])
 
   const onSearchInputChange = (value: string) => {
     setFilterSearch(value)
+    setSelectedCategory(content.all_apps)
   }
 
   const onCategoryChange = (category: string) => {
     setSelectedCategory(category)
+    setFilterSearch("")
   }
 
   return (
@@ -72,14 +63,13 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
         allAppsLabel={content.all_apps}
         selectedCategoryLabel={selectedCategory}
         onCategoryChange={onCategoryChange}
+        searchInputValue={filterSearch}
         onSearchInputChange={onSearchInputChange}
       />
 
-      {!isThereAppResults ? (
-        <NoResults />
-      ) : (
+      {filteredAppsByCategory.length > 0 ? (
         <>
-          {content.categories.map(({ title, apps, has_suggest_app }, idx) => {
+          {filteredAppsByCategory.map(({ title, apps, has_suggest_app }, idx) => {
             if (selectedCategory === content.all_apps || selectedCategory === title) {
               return (
                 <AppGroup
@@ -89,12 +79,13 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
                   logoImages={logoImages}
                   additionalSections={content.additional_sections}
                   hasSuggestApp={has_suggest_app && !hasFiltersApplied}
-                  filterSearch={filterSearch}
                 />
               )
             }
           })}
         </>
+      ) : (
+        <NoResults />
       )}
 
       <Developer developers={content.developers} />

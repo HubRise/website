@@ -25,6 +25,7 @@ interface NavProps {
   language: Language
   categories: AppsYaml["content"]["categories"]
   allAppsLabel: string
+  searchInputValue: string
   onSearchInputChange: (value: string) => void
   selectedCategoryLabel: string
   onCategoryChange: (category: string) => void
@@ -33,6 +34,7 @@ interface NavProps {
 const Index = ({
   categories,
   allAppsLabel,
+  searchInputValue,
   onSearchInputChange,
   selectedCategoryLabel,
   onCategoryChange,
@@ -56,10 +58,11 @@ const Index = ({
   return (
     <>
       <StyledNav ref={$navRef} $isSticky={isSticky}>
-        <Container>
+        <Container $isSticky={isSticky}>
           <SearchWrapper>
             <SearchIcon code="search" />
             <Input
+              value={searchInputValue}
               placeholder={t("apps.search_input_placeholder")}
               onChange={(e) => {
                 onSearchInputChange(e.target.value)

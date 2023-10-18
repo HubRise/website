@@ -13,11 +13,13 @@ export const StyledNav = styled.div<{ $isSticky: boolean }>`
   ${(props) =>
     props.$isSticky &&
     css`
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
       background-color: ${colors.primary};
     `}
 `
 
-export const Container = styled.div`
+export const Container = styled.div<{ $isSticky: boolean }>`
   max-width: ${sizes.maxWidth};
   width: 100%;
   margin: 0 auto;
@@ -25,6 +27,15 @@ export const Container = styled.div`
   align-items: center;
   background-color: ${colors.white};
   position: relative;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+
+  ${(props) =>
+    props.$isSticky &&
+    css`
+      padding-left: 0;
+      padding-right: 0;
+    `}
 
   @media (min-width: ${breakpoints.large}) {
     border-radius: ${sizes.borderRadius};
@@ -73,6 +84,7 @@ export const CategoryFitler = styled.span`
   display: flex;
   align-items: center;
   color: ${colors.primary};
+  ${mixin.clickable}
 `
 
 export const CategoryList = styled.ul<{ $isExpanded: boolean }>`
