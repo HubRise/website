@@ -16,4 +16,4 @@ Cliquez sur les onglets **VENTES**, **COMMANDES** ou **NOUVEAUX CLIENTS** pour a
 
 ![Tableau de bord de HubRise](./images/078-hubrise-dashboard.png)
 
-Pour une analyse plus détaillée de vos données, connectez une solution plus spécialisée intégrée à HubRise ou intégrez votre propre solution. Des partenaires techniques proposant des rapports détaillés sont accessibles via la page Apps du site HubRise, dans la section [Opérations et inventaire](/apps/gestion-et-inventaire#nav).
+Pour une analyse plus détaillée de vos données, connectez une solution plus spécialisée intégrée à HubRise ou intégrez votre propre solution. Des partenaires techniques proposant des rapports détaillés sont accessibles via la page Apps du site HubRise, dans la section [Opérations et inventaire](/apps#gestion-et-inventaire).
