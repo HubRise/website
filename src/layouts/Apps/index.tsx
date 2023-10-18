@@ -24,7 +24,7 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
   const [selectedCategory, setSelectedCategory] = React.useState(content.all_apps)
 
   const hasFiltersApplied = React.useMemo(() => {
-    return selectedCategory === content.all_apps && filterSearch === "" ? false : true
+    return !(selectedCategory === content.all_apps && filterSearch === "")
   }, [filterSearch, selectedCategory, content.all_apps])
 
   const filteredAppsByCategory = React.useMemo(() => {
@@ -32,9 +32,10 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
       return content.categories
     }
 
-    const filterResults = content.categories.map(({ title, apps, has_suggest_app }) => {
+    const filterResults = content.categories.map(({ title, slug, apps, has_suggest_app }) => {
       return {
         title,
+        slug,
         apps: apps.filter((app) => app.title.toLowerCase().includes(filterSearch.toLowerCase())),
         has_suggest_app,
       }
@@ -70,12 +71,13 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
       <div data-testid="apps:results">
         {filteredAppsByCategory.length > 0 ? (
           <>
-            {filteredAppsByCategory.map(({ title, apps, has_suggest_app }, idx) => {
+            {filteredAppsByCategory.map(({ title, slug, apps, has_suggest_app }, idx) => {
               if (selectedCategory === content.all_apps || selectedCategory === title) {
                 return (
                   <AppGroup
                     key={idx}
                     title={title}
+                    slug={slug}
                     apps={apps}
                     logoImages={logoImages}
                     additionalSections={content.additional_sections}
