@@ -178,6 +178,12 @@ content:
           title: T.A.L.C Informatique
           description: T.A.L.C Informatique est une caisse adaptée aux besoins de la restauration, qui permet de gérer un ou plusieurs points de vente avec dispatching des coursiers, gestion du stock, des achats, géolocalisation des clients et envoi de SMS.
           additional_info:
+        - website: https://tasksoftware.com
+          documentation: /fr/apps/task
+          logo: task.png
+          title: TASK SOFTWARE
+          description: TASK est un fournisseur de caisse adapté aux grands acteurs mondiaux de l'hôtellerie et de la restauration. L'offre TASK inclus des rapports en temps réel avec Business Intelligence intégrée, la gestion des stocks, des solutions commandes via des kiosques, en ligne et sur smartphone. Particulièrement adapté pour la gestion des relations clients, la fidélisation et la gestion des promotions.
+          additional_info:
         - website: https://www.ultimapos.fr/
           documentation: /fr/apps/ultimapos
           logo: ultimapos.png

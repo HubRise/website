@@ -174,13 +174,19 @@ content:
           documentation: /apps/swoopos
           logo: swoopos.png
           title: SwooPOS
-          description: SwooPOS is a cost efficient, multifunctional and easy to use mobile Point of Sales system designed for the hospitality and retail sectors. It comes with payment, table booking, and QR code table ordering solutions.
+          description: SwooPOS is a cost efficient, multifunctional and easy to use mobile Point of Sales system designed for the hospitality and retail sectors. It comes with payment, table booking, and QR code table ordering solutions.
           additional_info:
         - website: http://www.talc.fr/
           documentation: /apps/talc
           logo: talc.png
           title: T.A.L.C Informatique
           description: T.A.L.C Informatique is an EPOS adapted to the needs of restaurants. Its features include multi-store management, courier dispatching, inventory and procurement management, client geolocalisation and sending of SMS.
+          additional_info:
+        - website: https://tasksoftware.com
+          documentation: /apps/task-software
+          logo: task.png
+          title: TASK SOFTWARE
+          description: TASK is an EPOS provider tailored for global hospitality and restaurant industry players. They offer features such as real-time reporting with integrated BI, inventory control, as well as ordering solutions through kiosks, online, and on smartphones. The platform emphasises customer relationship management, loyalty, and promotional management.
           additional_info:
         - website: https://www.ultimapos.fr/
           documentation: /apps/ultimapos
@@ -192,7 +198,7 @@ content:
           documentation: /apps/zelty
           logo: zelty.png
           title: Zelty
-          description: Zelty is a complete suite of solutions designed for multi-site. Zelty is suitable for any type of restaurant from fast food to traditional catering.
+          description: Zelty is a complete suite of solutions designed for multi-site. Zelty is suitable for any type of restaurant from fast food to traditional catering.
           additional_info:
     - title: Food Ordering Platforms
       apps:
