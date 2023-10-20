@@ -28,7 +28,7 @@ const AppGroup = ({ title, slug, apps, logoImages, additionalSections, hasSugges
   const { t } = useTranslation()
 
   return (
-    <Block backgroundColor="none" title={title} slug={slug}>
+    <Block backgroundColor="none" title={title} titleAnchor={slug}>
       <Group>
         {apps.map((app, idx) => (
           <AppBoxLink key={idx} href={app.documentation || app.website} data-test="apps:result">
