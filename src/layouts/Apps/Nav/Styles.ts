@@ -65,7 +65,7 @@ export const Input = styled.input`
   }
 `
 
-export const CategoryFitlerWrapper = styled.div`
+export const CategoryFilterWrapper = styled.div`
   margin-left: 0.5rem;
   flex-grow: 1;
   flex-shrink: 0;
@@ -80,7 +80,7 @@ export const CategoryFitlerWrapper = styled.div`
   }
 `
 
-export const CategoryFitler = styled.button`
+export const CategoryFilter = styled.button`
   display: flex;
   align-items: center;
   color: ${colors.primary};
@@ -119,6 +119,7 @@ export const CategoryItem = styled.li<{ $isActive: boolean }>`
   cursor: pointer;
   padding: 0.5rem 1rem;
   transition: background-color 0.3s ease-in;
+  ${mixin.clickable}
 
   &:hover {
     background-color: ${colors.backgroundLight};

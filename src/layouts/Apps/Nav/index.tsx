@@ -11,8 +11,8 @@ import { sizes } from "@utils/styles"
 import {
   StyledNav,
   Container,
-  CategoryFitlerWrapper,
-  CategoryFitler,
+  CategoryFilterWrapper,
+  CategoryFilter,
   CategoryList,
   CategoryItem,
   ArrowIcon,
@@ -69,11 +69,12 @@ const Index = ({
               }}
             />
           </SearchWrapper>
-          <CategoryFitlerWrapper ref={$categoryListRef} data-testid="apps:categoryfilter">
-            <CategoryFitler onClick={() => setIsExpanded((v) => !v)}>
+
+          <CategoryFilterWrapper ref={$categoryListRef} data-testid="apps:categoryfilter">
+            <CategoryFilter onClick={() => setIsExpanded((v) => !v)}>
               {selectedCategoryLabel}
               <ArrowIcon code={isExpanded ? "expand_less" : "expand_more"} />
-            </CategoryFitler>
+            </CategoryFilter>
 
             <CategoryList $isExpanded={isExpanded}>
               <CategoryItem
@@ -98,7 +99,7 @@ const Index = ({
                 )
               })}
             </CategoryList>
-          </CategoryFitlerWrapper>
+          </CategoryFilterWrapper>
         </Container>
       </StyledNav>
     </>

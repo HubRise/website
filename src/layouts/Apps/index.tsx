@@ -44,14 +44,21 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
     return filterResults.filter(({ apps }) => apps.length > 0)
   }, [filterSearch, content.categories])
 
+  const scrollIntoView = () => {
+    const appsResults = document.getElementById("apps-results")
+    appsResults!.scrollIntoView({ behavior: "auto" })
+  }
+
   const onSearchInputChange = (value: string) => {
     setFilterSearch(value)
     setSelectedCategory(content.all_apps)
+    scrollIntoView()
   }
 
   const onCategoryChange = (category: string) => {
     setSelectedCategory(category)
     setFilterSearch("")
+    scrollIntoView()
   }
 
   return (
@@ -67,6 +74,8 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
         searchInputValue={filterSearch}
         onSearchInputChange={onSearchInputChange}
       />
+
+      <div id="apps-results" />
 
       {filteredAppsByCategory.length > 0 ? (
         <>
