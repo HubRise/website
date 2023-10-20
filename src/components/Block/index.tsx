@@ -12,7 +12,7 @@ interface BlockProps {
   horizontalAlign?: HorizontalAlign
   desktopVerticalAlign?: VerticalAlign
   title?: string
-  slug?: string
+  titleAnchor?: string
   side?: React.ReactNode
   sidePosition?: SidePosition
 }
@@ -27,12 +27,12 @@ const Block = ({
   horizontalAlign = "center",
   desktopVerticalAlign = "top",
   title,
-  slug,
+  titleAnchor,
   side,
   sidePosition = "left",
 }: BlockProps): JSX.Element => {
   return (
-    <Container $verticalSpacing={verticalSpacing} id={slug}>
+    <Container $verticalSpacing={verticalSpacing}>
       <Content
         $padding={padding}
         $verticalPadding={backgroundColor !== "none"}
@@ -45,7 +45,7 @@ const Block = ({
       >
         <Main $horizontalAlign={horizontalAlign} $desktopVerticalAlign={desktopVerticalAlign}>
           {title && (
-            <Title backgroundColor={backgroundColor} horizontalAlign={horizontalAlign}>
+            <Title backgroundColor={backgroundColor} horizontalAlign={horizontalAlign} anchor={titleAnchor}>
               {title}
             </Title>
           )}
