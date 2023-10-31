@@ -2,7 +2,7 @@ import axios from "axios"
 import { NextResponse } from "next/server"
 import nodemailer from "nodemailer"
 
-export const verifyRecaptcha = async (recaptchaResponse: string) => {
+const verifyRecaptcha = async (recaptchaResponse: string) => {
   const secret = process.env.RECAPTCHA_SECRET_KEY
   const response = await axios.post("https://www.google.com/recaptcha/api/siteverify", null, {
     params: {
@@ -14,7 +14,7 @@ export const verifyRecaptcha = async (recaptchaResponse: string) => {
   return response?.data?.success
 }
 
-export const sendEmail = async (name: string, email: string, message: string) => {
+const sendEmail = async (name: string, email: string, message: string) => {
   const transporter = nodemailer.createTransport({
     service: "SendGrid",
     auth: {
