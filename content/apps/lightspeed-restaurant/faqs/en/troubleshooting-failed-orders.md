@@ -29,4 +29,4 @@ If you plan to connect Lightspeed Restaurant to food delivery platforms like Del
 
 If after this configuration you are still not able to receive orders in your tablet, you should check if the API connection is enabled on your tablet. On the main screen of the Lightspeed app, if you see a green pencil icon at the top of the right hand-side block, then your API connection is activated. If that icon is not green, you simply tap on it and then tap the **Enable** button to activate the API.
 
-![Main screen of the Lightspeed app with the green icon indicating that API connection is enabled.](../../images/010-lightspeed-main-screen.png)
+![Main screen of the Lightspeed app with the green icon indicating that API connection is enabled.](../../images/010-2x-lightspeed-main-screen.png)
