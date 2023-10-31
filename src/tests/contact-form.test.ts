@@ -1,6 +1,7 @@
-import { POST, sendEmail } from "../app/api/contact_us/route"
 import { createMocks } from "node-mocks-http"
 import nodemailer from "nodemailer"
+
+import { POST, sendEmail } from "../app/api/contact_us/route"
 
 jest.mock("nodemailer")
 
