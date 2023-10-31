@@ -7,8 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Run cypress
 
+    env:
+      # Default is 4_000 ms.
+      # Some tests take >= 1 minute on CI, while they take a few seconds locally. Need to investigate.
+      CYPRESS_DEFAULT_COMMAND_TIMEOUT: 120000
+
     # To upgrade to the latest version, see https://hub.docker.com/r/cypress/browsers/tags
-    container: cypress/browsers:node-18.16.0-chrome-113.0.5672.92-1-ff-113.0-edge-113.0.1774.35-1
+    container: cypress/browsers:node-18.16.1-chrome-114.0.5735.133-1-ff-114.0.2-edge-114.0.1823.51-1
 
     steps:
       - name: Clone repository
@@ -20,25 +25,23 @@ jobs:
           node-version: 18.16.0
           cache: 'yarn'
 
-      - name: Cache gatsby build files
-        uses: actions/cache@v3
-        with:
-          path: |
-            .cache
-            public
-          key: gatsby-build-${{ hashFiles('./yarn.lock') }}
-
       - name: Install JS dependencies
         run: yarn install
+
+      - name: Use the development environment - note that NextJS will load .env.production as NODE_ENV=production
+        run: cp .env.cypress-ci .env.production
 
       - name: Build the website
         run: yarn build
 
       - name: Run Cypress test suite
-        env:
-          NODE_ENV: test
-          SENTRY_DSN: https://96b4d1defd7648308c6e30f8a3470cfd@sentry.io/1776244
-          RECAPTCHA_SITE_KEY: 6LfjbNYUAAAAAPx_tCv_YyhueK2JIjf58b2HGU8d
-          CONTACT_MESSAGE_URL: http://localhost/api/contact_message
-          WAIT_ON_TIMEOUT: 1200000 # (in milliseconds) 20 minute timeout for start-server-and-test
         run: yarn cypress:run
+
+      - name: On failure, upload Cypress screenshots and videos
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress-failures
+          path: |
+            cypress/screenshots/
+            cypress/videos/

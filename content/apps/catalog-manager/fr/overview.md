@@ -18,6 +18,6 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link to="/apps/catalog-manager" addLocalePrefix={false}>en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/catalog-manager">en anglais uniquement</Link>.
 
 ---

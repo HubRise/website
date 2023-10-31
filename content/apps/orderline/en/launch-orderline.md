@@ -20,7 +20,7 @@ To launch OrderLine, follow these steps:
 
 ---
 
-**IMPORTANT NOTE:** In case you encounter any issues, such as a blank screen, refer to our [Troubleshooting](/apps/orderline/troubleshooting/) section.
+**IMPORTANT NOTE:** In case you encounter any issues, such as a blank screen, refer to our [Troubleshooting](/apps/orderline/troubleshooting) section.
 
 ---
 

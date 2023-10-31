@@ -1,4 +1,4 @@
-import { css, FlattenSimpleInterpolation } from "styled-components"
+import { css, RuleSet } from "styled-components"
 
 export const sizes = {
   maxWidth: "75rem",
@@ -35,9 +35,8 @@ export const iconSizes = {
 }
 
 export const lineHeights = {
-  text: "1.6",
-  textCompact: "1.3",
-  title: "1.25",
+  comfortable: "1.6",
+  compact: "1.3",
 }
 
 export const breakpoints = {
@@ -60,18 +59,22 @@ export const colors = {
   textLight: "#999",
   textLighter: "#ccc",
 
+  backgroundDarker: "#333",
   backgroundDark: "#555",
   backgroundLight: "#efefef",
+  backgroundLightest: "#f8f8f8",
   backgroundWhite: "#fff",
 
   // borderMedium: "#ccc",
   borderLight: "#e0e0e0",
-  // borderLightest: "#f8f8f8",
+  borderLighter: "#f0f0f0",
+  borderLightest: "#f8f8f8",
   borderInputFocus: "#555",
 }
 
 export const boxShadows = {
   small: `0 3px 3px rgba(0, 0, 0, 0.05)`,
+  image: `0 0 5px rgba(0, 0, 0, 0.05)`,
   medium: `0 5px 10px rgba(0, 0, 0, 0.1)`,
   large: `5px 10px 15px rgba(0, 0, 0, 0.15)`,
 }
@@ -84,8 +87,10 @@ export const mixin = {
     font-weight: 500;
     border-radius: ${sizes.borderRadius};
   `,
-  buttonOver: (color: string, backgroundColor: string): FlattenSimpleInterpolation => css`
-    transition: color 0.2s ease, background-color 0.2s ease;
+  buttonOver: (color: string, backgroundColor: string): RuleSet => css`
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease;
 
     &:hover {
       color: ${color};
@@ -106,24 +111,23 @@ export const mixin = {
     width: ${sizes.maxWidth};
     margin: 0 auto;
   `,
-  dotSeparatedList: (gap: string, color = colors.textLighter): FlattenSimpleInterpolation => css`
+  dotSeparatedList: (gap: string, color = colors.textLighter): RuleSet => css`
     display: flex;
     align-items: center;
-  
+
     &:not(:last-child) {
       margin-right: ${gap};
-      
-      &:after {
-          content: "●";
-          margin-left: ${gap};
-          font-size: ${fontSizes._12};
-          color: ${color};
-        }
+
+      &::after {
+        content: "●";
+        margin-left: ${gap};
+        font-size: ${fontSizes._12};
+        color: ${color};
       }
     }
   `,
-  expandBefore: ({ width, color }: { width: string; color: string }): FlattenSimpleInterpolation => css`
-    :before {
+  expandBefore: ({ width, color }: { width: string; color: string }): RuleSet => css`
+    &::before {
       content: "";
       background-color: ${color};
       position: absolute;
@@ -133,8 +137,8 @@ export const mixin = {
       top: 0;
     }
   `,
-  expandAfter: ({ width, color }: { width: string; color: string }): FlattenSimpleInterpolation => css`
-    :after {
+  expandAfter: ({ width, color }: { width: string; color: string }): RuleSet => css`
+    &::after {
       content: "";
       background-color: ${color};
       position: absolute;
@@ -144,9 +148,9 @@ export const mixin = {
       top: 0;
     }
   `,
-  linkOver: (color: string): FlattenSimpleInterpolation => css`
+  linkOver: (color: string): RuleSet => css`
     transition: color 0.2s ease;
-    :hover {
+    &:hover {
       color: ${color};
     }
   `,

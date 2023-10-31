@@ -32,7 +32,7 @@ Flyt est disponible sur les plateformes Just Eat Takeaway.com suivantes :
 
 ---
 
-**REMARQUE IMPORTANTE :** pour connecter votre enseigne à une autre plateforme Just Eat Takeaway.com, vous devez passer par l'application [Just Eat Takeaway Bridge](/apps/just-eat-takeaway/).
+**REMARQUE IMPORTANTE :** pour connecter votre enseigne à une autre plateforme Just Eat Takeaway.com, vous devez passer par l'application [Just Eat Takeaway Bridge](/apps/just-eat-takeaway/overview).
 
 ---
 
@@ -51,7 +51,7 @@ La connexion avec Just Eat Flyt Bridge vous permet de :
 
 ---
 
-**REMARQUE IMPORTANTE** : La tablette Just Eat doit rester allumée pour recevoir les commandes dans HubRise. Sur certains marchés, l'acceptation automatique peut être activée. Pour plus d'informations, voir [Puis-je désactiver la tablette ?](/apps/just-eat-flyt/faqs/desactiver-tablette/).
+**REMARQUE IMPORTANTE** : La tablette Just Eat doit rester allumée pour recevoir les commandes dans HubRise. Sur certains marchés, l'acceptation automatique peut être activée. Pour plus d'informations, voir [Puis-je désactiver la tablette ?](/apps/just-eat-flyt/faqs/turn-off-orderpad).
 
 ---
 

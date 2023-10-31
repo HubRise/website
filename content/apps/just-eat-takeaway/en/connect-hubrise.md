@@ -52,4 +52,4 @@ To connect Just Eat Takeaway Bridge to HubRise, follow these steps.
 
 After connecting the bridge, you need to configure a few parameters on the **Configuration** page to send orders correctly to your EPOS.
 
-For more information about the configuration page and how to navigate to it, see [Configuration Page](/apps/just-eat-takeaway/user-interface/#configuration-page) in the User Interface section. For details on how to configure the parameters of Just Eat Takeaway Bridge, see [Configuration](/apps/just-eat-takeaway/configuration).
+For more information about the configuration page and how to navigate to it, see [Configuration Page](/apps/just-eat-takeaway/user-interface#configuration) in the User Interface section. For details on how to configure the parameters of Just Eat Takeaway Bridge, see [Configuration](/apps/just-eat-takeaway/configuration).

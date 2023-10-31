@@ -19,7 +19,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link to="/apps/shopify" addLocalePrefix={false}>en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/shopify">en anglais uniquement</Link>.
 
 ---
 

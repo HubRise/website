@@ -29,7 +29,7 @@ If charges apply, a ref code might be required. Refer to your EPOS documentation
 
 In this section, you can specify the ref code for delivery charges applied to orders.
 
-## Catalog
+## Catalog {#catalog}
 
 When you push a catalog into WooCommerce, the bridge creates new products in WooCommerce and optionally updates prices of existing products. For more information, see [Push the Catalog](/apps/woocommerce/push-catalog).
 

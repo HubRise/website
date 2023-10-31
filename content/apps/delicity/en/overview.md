@@ -17,6 +17,12 @@ app_info:
   contact: "+33 4 83 58 06 48"
 ---
 
+---
+
+**IMPORTANT NOTE**: Full documentation available <Link href="/fr/apps/delicity" addLocalePrefix={false}>in French only</Link>.
+
+---
+
 ## Description
 
 Delicity is a food ordering and delivery service platform available on the Internet, App Store and Play Store. Unlike traditional platforms, Delicity does not charge a commission on orders but instead bills a fixed cost per order, along with a delivery cost that is 20% lower than that of independent couriers.

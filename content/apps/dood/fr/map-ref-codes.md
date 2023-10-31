@@ -8,7 +8,7 @@ meta:
   description: Comment saisir les codes ref de votre logiciel de caisse dans votre menu DOOD, en utilisant le gestionnaire de menu de DOOD.
 ---
 
-## Produits
+## Produits {#products}
 
 Chaque produit dispose d'un code ref.
 
@@ -28,19 +28,19 @@ Pour modifier le code ref d'un produit, suivez ces étapes :
 Les SKUs sont des produits cachés. Pour utiliser des SKUs, on crée une catégorie cachée et on lui associe des produits cachés. Puis, on crée un produit déclinable qu'on affecte à cette catégorie cachée.
 Sur le front office, lors de l'ajout au panier de ce produit déclinable par le consommateur, celui-ci devra sélectionner l'une des SKUs ainsi créées.
 
-Pour modifier le code ref d'une SKU, suivez les étapes de la section produit [Produits](#produits).
+Pour modifier le code ref d'une SKU, suivez les étapes de la section produit [Produits](#products).
 
 ## Options
 
 Les options sont également des produits cachés.
 
-Pour modifier le code ref d'une option, suivez les étapes de la section produit [Produits](#produits).
+Pour modifier le code ref d'une option, suivez les étapes de la section produit [Produits](#products).
 
 ## Promotions
 
 Les promotions dans HubRise sont les offres spéciales qui s'appliquent à certains produits. DOOD ne supporte pas les promotions sur les produits. Dans certains cas, vous pouvez néanmoins utiliser des produits avec options pour les promotions.
 
-Pour modifier le code ref, suivez alors les étapes de la section produit [Produits](#produits).
+Pour modifier le code ref, suivez alors les étapes de la section produit [Produits](#products).
 
 ## Remises
 

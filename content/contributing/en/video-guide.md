@@ -44,4 +44,4 @@ ffmpeg -i source.mov -r 15 -f gif - | gifsicle  > target.gif
 
 ## Naming Convention
 
-File naming convention for videos follow the exact same logic as images. For more information, see [Image Naming Convention](/contributing/screenshots-guide/#naming-convention).
+File naming convention for videos follow the exact same logic as images. For more information, see [Image Naming Convention](/contributing/screenshots-guide#naming-convention).

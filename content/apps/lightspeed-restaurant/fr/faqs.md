@@ -8,4 +8,4 @@ meta:
   description: Questions fréquentes posées sur la connexion de Lightspeed Restaurant à HubRise. Connectez vos applications à HubRise avec facilité et synchronisez vos données.
 ---
 
-- [Comment profiter des fonctionnalités de la nouvelle intégration Lightspeed Restaurant ?](/apps/lightspeed-restaurant/faqs/mettre-a-jour-lightspeed-restaurant-bridge)
+- [Comment profiter des fonctionnalités de la nouvelle intégration Lightspeed Restaurant ?](/apps/lightspeed-restaurant/faqs/update-lightspeed-restaurant-bridge)

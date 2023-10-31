@@ -16,6 +16,6 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE:** This documentation is available <Link to="/fr/apps/dood" addLocalePrefix={false}>in French only</Link>.
+**IMPORTANT NOTE:** This documentation is available <Link href="/fr/apps/dood">in French only</Link>.
 
 ---

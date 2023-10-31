@@ -21,7 +21,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link to="/apps/livepepper" addLocalePrefix={false}>en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/livepepper">en anglais uniquement</Link>.
 
 ---
 

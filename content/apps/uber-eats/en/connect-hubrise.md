@@ -55,7 +55,7 @@ With your Uber Eats Store UUID in hand, you can now connect the Uber Eats Bridge
 
 After connecting the bridge, you need to configure a few parameters on the **Configuration** page to send orders correctly to your EPOS.
 
-For more information about the configuration page and how to navigate to it, see [Configuration page](/apps/uber-eats/user-interface/#configuration-page). For details on how to configure the parameters of the Uber Eats Bridge, see [Configuration](/apps/uber-eats/configuration).
+For more information about the configuration page and how to navigate to it, see [Configuration page](/apps/uber-eats/user-interface#configuration). For details on how to configure the parameters of the Uber Eats Bridge, see [Configuration](/apps/uber-eats/configuration).
 
 ## 4. Map Products Ref Codes
 

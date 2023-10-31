@@ -11,8 +11,8 @@ app_info:
   category: Fidélité et marketing
   availability: Royaume-Uni, France
   price_range:
-  website: https://upxp.pro
-  contact: contact@upxp.pro
+  website: https://upxp.io/programme-de-fidelite/
+  contact: contact@upxp.io / +44 20 4577 0522
 ---
 
 ---

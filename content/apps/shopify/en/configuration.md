@@ -19,7 +19,7 @@ Select the **Enable automatic catalog push** checkbox to synchronise your HubRis
 
 Only new products added to the HubRise catalog will be sent to Shopify. Any existing products within Shopify will remain unchanged.
 
-## Order Statuses
+## Order Statuses {#order-statuses}
 
 In this section, you can customise how to map order status changes in HubRise back to Shopify. To ignore an order status change in HubRise, select **Do nothing**.
 

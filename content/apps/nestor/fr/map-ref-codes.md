@@ -19,7 +19,7 @@ Ces deux méthodes sont parfois complémentaires. Seules certaines applications 
 
 Cette page explique comment exporter un catalogue et trouver les codes ref depuis Nestor. Pour plus d'informations sur l'import d'un catalogue et la saisie des codes ref dans une application connectée, référez-vous à la documentation de l'application sur le site de HubRise.
 
-## Exporter le catalogue
+## Exporter le catalogue {#export-catalog}
 
 Nestor exporte le catalogue vers HubRise dans les deux cas suivants :
 
@@ -43,7 +43,7 @@ Une SKU (_Stock Keeping Unit_) dans HubRise est un article Nestor dans une décl
 
 Pour retrouver le code ref d'un SKU, deux cas peuvent se présenter selon que l'article a des déclinaisons ou non.
 
-### Articles sans déclinaison
+### Articles sans déclinaison {#no-modifiers}
 
 1. Dans la barre de menu de Nestor, sélectionnez **Gestion** > **Articles** > **Fiche articles**.
 1. Sélectionnez l'article désiré. Dans l'onglet **Article**, le code ref de la SKU s'affiche dans le champ **Code**.
@@ -81,7 +81,7 @@ Pour retrouver le code ref d'une remise, suivez les étapes suivantes :
 
 ## Promotions
 
-Les promotions dans HubRise correspondent aux menus dans Nestor. Pour retrouver le code ref d'un menu, suivez les mêmes étapes que pour un [article sans déclinaison](/apps/nestor/associer-codes-ref#articles-sans-d-clinaison). Dans Nestor, un menu est considéré comme un article dont l'option **Est un menu**, dans l'onglet **Déclinaison**, est cochée.
+Les promotions dans HubRise correspondent aux menus dans Nestor. Pour retrouver le code ref d'un menu, suivez les mêmes étapes que pour un [article sans déclinaison](/apps/nestor/map-ref-codes#no-modifiers). Dans Nestor, un menu est considéré comme un article dont l'option **Est un menu**, dans l'onglet **Déclinaison**, est cochée.
 ![Codes ref - Promotions](./images/010-nestor-is-a-menu.png)
 
 ## Méthodes de paiement

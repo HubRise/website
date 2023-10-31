@@ -38,7 +38,7 @@ Dismatch peut être connecté à HubRise depuis le back-office de HubRise.
 
 ---
 
-**REMARQUE IMPORTANTE :** Pour les fonctionnalités d'intégration à la plateforme de commandes de repas, voir la documentation [Smood](/apps/smood).
+**REMARQUE IMPORTANTE :** Pour les fonctionnalités d'intégration à la plateforme de commandes de repas, voir la documentation [Smood](/apps/smood/overview).
 
 ---
 

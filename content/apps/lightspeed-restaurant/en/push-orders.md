@@ -12,11 +12,11 @@ HubRise can push orders from different connected solutions directly into your Li
 
 This page explains what information HubRise sends to your EPOS.
 
-## Items and Options
+## Items and Options {#items-and-options}
 
 Lightspeed Restaurant Bridge sends your EPOS the complete information about items and options, including name, EPOS ref code, quantity, and price.
 
-Lightspeed Restaurant Bridge converts options with a ref code that starts with `+` to production instructions. Note that production instructions have no associated price. Adding a price in a connected app can cause [price differences errors](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors/).
+Lightspeed Restaurant Bridge converts options with a ref code that starts with `+` to production instructions. Note that production instructions have no associated price. Adding a price in a connected app can cause [price differences errors](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors).
 
 Every item on Lightspeed must have a ref code. Orders containing items with incorrect or missing ref codes are rejected by the EPOS. For this reason, when sending an order to the EPOS, Lightspeed Restaurant Bridge skips all items without a ref code.
 
@@ -43,7 +43,7 @@ When the total payment amount does not match the total price for the order as ca
 
 ---
 
-**Related FAQ**: [How Do I Troubleshoot Price Difference Errors?](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors/)
+**Related FAQ**: [How Do I Troubleshoot Price Difference Errors?](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors)
 
 ---
 

@@ -16,6 +16,6 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Cette documentation est disponible <Link to="/apps/lightspeed-restaurant" addLocalePrefix={false}>en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** Cette documentation est disponible <Link href="/apps/lightspeed-restaurant">en anglais uniquement</Link>.
 
 ---

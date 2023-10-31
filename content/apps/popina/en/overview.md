@@ -7,7 +7,7 @@ meta:
   title: Overview | Popina | HubRise
   description: Popina overview, reasons for connecting Popina to HubRise and summary of integrated features. Synchronise data between your EPOS and your other apps.
 gallery:
-  - __gallery-001.png
+  - __gallery-001.jpeg
 app_info:
   category: Point of Sales
   availability: France, Switzerland, Spain

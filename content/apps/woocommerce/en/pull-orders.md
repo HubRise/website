@@ -62,7 +62,7 @@ In the default WooCommerce installation, the service type is always `delivery`. 
 
 ---
 
-**Related FAQ**: [How Can I Encode Custom Metadata In An Order?](/apps/woocommerce/faqs/encode-custom-metadata/)
+**Related FAQ**: [How Can I Encode Custom Metadata In An Order?](/apps/woocommerce/faqs/encode-custom-metadata)
 
 ---
 

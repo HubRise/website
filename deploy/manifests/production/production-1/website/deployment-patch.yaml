@@ -11,10 +11,18 @@ spec:
     spec:
       containers:
         - name: website
+
+          env:
+            - name: SENTRY_DSN
+              value: https://96b4d1defd7648308c6e30f8a3470cfd@o310444.ingest.sentry.io/1776244
+            - name: NEXT_PUBLIC_SENTRY_DSN
+              value: https://96b4d1defd7648308c6e30f8a3470cfd@o310444.ingest.sentry.io/1776244
+
           resources:
             requests:
-              cpu: 30m
-              memory: 80Mi
+              cpu: 300m
+              memory: 1000Mi
             limits:
-              cpu: 200m
-              memory: 200Mi
+              # We need some CPU for short periods of time after startup, when optimised images are not yet cached.
+              cpu: 1000m
+              memory: 1500Mi

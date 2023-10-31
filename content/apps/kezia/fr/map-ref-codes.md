@@ -19,7 +19,7 @@ Il y a deux façons de procéder :
 
 Seules certaines applications permettent l'import d'un catalogue depuis HubRise. Pour les autres, il faudra saisir manuellement les codes ref.
 
-## Exporter le catalogue
+## Exporter le catalogue {#export-catalog}
 
 Pour exporter manuellement un catalogue vers HubRise, suivez les étapes suivantes :
 
@@ -44,9 +44,9 @@ Les produits que vous créez ou modifiez dans votre catalogue ne sont pas tous e
    ![Associer les codes ref - Article publication web](./images/004-kezia-web-publication.png)
 1. Cliquez sur **Appliq.**.
 
-Vous pouvez ensuite exporter de nouveau votre catalogue en suivant les étapes décrites au début de [cette partie](/apps/kezia/associer-codes-ref#exporter-le-catalogue).
+Vous pouvez ensuite exporter de nouveau votre catalogue en suivant les étapes décrites au début de [cette partie](/apps/kezia/map-ref-codes#export-catalog).
 
-## Produits
+## Produits {#products}
 
 Un produit dans HubRise correspond à un article dans Kezia II. Pour retrouver le code ref d'un article, suivez les étapes suivantes :
 
@@ -62,7 +62,7 @@ Une SKU (_Stock Keeping Unit_) dans HubRise correspond au multi-tarif dans Kezia
 - Margherita Medium
 - Margherita Petite
 
-Pour trouver le code ref d'un article, suivez la procédure décrite dans la partie [Produits](/apps/kezia/associer-codes-ref#produits).
+Pour trouver le code ref d'un article, suivez la procédure décrite dans la partie [Produits](/apps/kezia/map-ref-codes#products).
 
 ## Options
 
@@ -74,7 +74,7 @@ Une option dans HubRise correspond à un article option dans Kezia II. Pour vér
 1. Cliquez sur **Préparation**. La case **Article Option** doit être cochée.
    ![Associer les codes ref - Article option](./images/006-kezia-option.png)
 
-Pour trouver le code ref de cet article, suivez la procédure décrite dans la partie [Produits](/apps/kezia/associer-codes-ref#produits).
+Pour trouver le code ref de cet article, suivez la procédure décrite dans la partie [Produits](/apps/kezia/map-ref-codes#products).
 
 ## Remises
 

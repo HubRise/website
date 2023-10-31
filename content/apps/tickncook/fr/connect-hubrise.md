@@ -37,9 +37,9 @@ Pour établir la connexion depuis TicknCook, suivez les étapes suivantes :
 4. Si vous avez plusieurs points de vente, choisissez le point de vente à connecter. Si le point de vente sélectionné possède plusieurs listes de clients ou catalogues, cliquez sur **Suivant** pour afficher les listes déroulantes correspondantes, puis sélectionnez les options voulues.
 5. Cliquez sur **Autoriser**.
 
-En cas de besoin, le support de TicknCook peut vous venir en aide. Pour leur donner accès à votre compte HubRise, [ajoutez les permissions nécessaires](/apps/tickncook/connexion-hubrise#donner-acc-s-au-support-de-tickncook).
+En cas de besoin, le support de TicknCook peut vous venir en aide. Pour leur donner accès à votre compte HubRise, [ajoutez les permissions nécessaires](/apps/tickncook/connect-hubrise#give-access).
 
-## Donner accès au support de TicknCook
+## Donner accès au support de TicknCook {#give-access}
 
 Pour faciliter la prise en charge de vos demandes de support, nous vous recommandons de donner accès à votre compte HubRise à l'éditeur de la solution TicknCook.
 

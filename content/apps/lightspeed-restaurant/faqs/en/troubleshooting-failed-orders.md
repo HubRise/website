@@ -22,7 +22,7 @@ To troubleshoot an incorrect ref code in an order, you can look at the logs for 
 - Click the corresponding row and identify the transaction coming from Lightspeed, that is the one whose direction is "Lightspeed -> Bridge".
 - In the request boby, if you see `FAILURE` as the status value and `Could not add item <id> (not found)` as the reason for the error, then the order rejection is probably due to an incorrect ref code in your integrated app. The `<id>` value in the error message will indicate the problematic item.
 
-## API Activation in the Tablet
+## API Activation in the Tablet {#api-activation}
 
 To connect with Lightspeed Restaurant, the Lightspeed API needs to be activated. You can simply contact Lightspeed support and request the activation.
 If you plan to connect Lightspeed Restaurant to food delivery platforms like Deliveroo, Uber Eats, and Just Eat, it is best to specify the platforms you will be connecting with. Lightspeed support will prepare the settings to receive this type of orders, too.

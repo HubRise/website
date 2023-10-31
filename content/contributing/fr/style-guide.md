@@ -50,7 +50,7 @@ Ne pas mettre de majuscule aux titres. Accentuer les majuscules.
 
 > Correct: Éléments à fournir pour Lightspeed K Series.
 
-## Listes
+## Listes {#lists}
 
 Écrivez une courte liste sous forme de phrase. Si la liste a plus de trois éléments ou qu'elle contient des instructions longues, écrivez-la sous forme de liste à puces.
 
@@ -78,14 +78,6 @@ _Depuis votre tableau de bord, vous pouvez :_
 - _Accéder à la liste de vos clients._
 
 ## Références
-
-### Renvois
-
-Utilisez Les renvois pour guider les lecteurs vers une information ciblée dans la même ou une autre page. N'attachez pas le lien directement à un mot car il risque de passer inaperçu. Écrivez une nouvelle phrase pour introduire le renvoi avec le nom exact du titre.
-
-> Incorrect : Vous pouvez représenter ces derniers sous forme de [listes](#listes).
-
-> Correct : Vous pouvez représenter ces derniers sous forme de listes. Pour plus d'informations sur l'utilisation des listes, consultez [Listes](#listes).
 
 ### Liens
 

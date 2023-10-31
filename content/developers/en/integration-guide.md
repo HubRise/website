@@ -17,7 +17,7 @@ It is composed of the following sections:
 - [Online Ordering Solutions](#online-ordering-solutions): an integration checklist for online ordering websites, mobile ordering apps, self ordering kiosks and other similar solutions.
 - [EPOS Solutions](#epos-solutions): an integration checklist for EPOS solutions, whether cloud-based or downloadable applications.
 
-## Overview
+## Overview {#overview}
 
 ### Let Us Help You!
 
@@ -33,7 +33,7 @@ But we won't just wait and see while you do the work: We will actively help you 
 - We schedule a call with one of our integration engineers to finalise the assessment together. The call usually takes an hour and a half.
 - We send you a report with our recommendations. We keep this report updated as you make changes in your integration.
 
-### Assessing the Integration
+### Assessing the Integration {#assess}
 
 When your integration is ready, we assess it with you. After checking the logs of your test transactions, we ask you a few questions to create a report that we call the Integration Sheet. To see what to expect, check our [Integration Sheet template](https://docs.google.com/spreadsheets/d/1df-QRlD9h8M58bpFoFaCEzU5pbmYSeHXOLqIVip9-5s/edit?usp=sharing).
 
@@ -53,7 +53,7 @@ We document integrations to:
 
 Our documentation is public and open source. Everyone can help improve it and keep it up to date.
 
-## General Best Practices
+## General Best Practices {#general-best-practices}
 
 When you start developing your integration, taking the right decisions at the beginning can save you time and effort along the way. Here are a few suggestions.
 
@@ -71,7 +71,7 @@ In more advanced scenarios where you read or modify the catalog of products, you
 
 For more information about scopes, see [OAuth scopes](/developers/api/authentication#oauth-scopes).
 
-### Connection Workflow
+### Connection Workflow {#connection-workflow}
 
 You should provide your users with an easy way to connect your solution to HubRise. The recommended approach is a button in the back office that allows connection with a single click via the OAuth protocol.
 
@@ -95,9 +95,9 @@ Ideally, you should store in your database the HubRise IDs associated with order
 
 If storing the HubRise IDs is not an option, you can use the HubRise `private_ref` field to store your order and customer ID, instead. In this way, you essentially let HubRise do the mapping.
 
-### Encoding Orders
+### Encoding Orders {#encoding-orders}
 
-When you push orders to HubRise, encode names and ref codes for all the fields included in the payload. For a complete list, see our [API reference](/developers/api/order-management/), and the **Orders** tab in the [Integration Sheet](https://docs.google.com/spreadsheets/d/1df-QRlD9h8M58bpFoFaCEzU5pbmYSeHXOLqIVip9-5s/edit#gid=615578553).
+When you push orders to HubRise, encode names and ref codes for all the fields included in the payload. For a complete list, see our [API reference](/developers/api/orders), and the **Orders** tab in the [Integration Sheet](https://docs.google.com/spreadsheets/d/1df-QRlD9h8M58bpFoFaCEzU5pbmYSeHXOLqIVip9-5s/edit#gid=615578553).
 
 Pay attention to a few common traps:
 
@@ -106,7 +106,7 @@ Pay attention to a few common traps:
 - Times should be encoded in the timezone of the store.
 - Expected delivery times should always be in the future or `null`.
 
-### Handling Images
+### Handling Images {#handling-images}
 
 When uploading product images to HubRise (for example, if you export your catalog), remember that the size limit is 1 Mb.
 Your integration should prevent or at least warn users when they try to upload big images (more than 1000px high or wide). Large images only slow down catalog import/export, without any real benefit, since third party websites and tools generally scale down images anyway.
@@ -115,23 +115,23 @@ An app using images should always perform image scaling, rather than relying on 
 
 HubRise supports the following image formats: JPEG, PNG, WEBP, GIF, and BMP. We recommend using JPEG or WEBP for photos, and PNG or WEBP for low entropy images, such as drawings, logos, or text.
 
-## Online Ordering Solutions
+## Online Ordering Solutions {#online-ordering-solutions}
 
 Connecting your online ordering solution to HubRise will allow your clients to receive orders and customers directly in their EPOS systems.
 
 It generally involves the following steps, which are described in further details in this section:
 
-1. [Establishing and managing the connection](#establishing-and-managing-the-connection)
-1. [Pushing customers](#pushing-customers)
-1. [Pushing orders](#pushing-orders)
-1. [Receiving status updates](#receiving-status-updates)
-1. [Pulling the catalog](#pulling-the-catalog)
+1. [Establishing and managing the connection](#olo-manage-connection)
+1. [Pushing customers](#olo-pushing-customers)
+1. [Pushing orders](#olo-pushing-orders)
+1. [Receiving status updates](#olo-receiving-status-updates)
+1. [Pulling the catalog](#olo-pulling-the-catalog)
 
-### Establishing and Managing the Connection
+### Establishing and Managing the Connection {#olo-manage-connection}
 
 We recommend that you follow our general best practices and connect to HubRise at the location level.
 
-You should also register an active callback to listen to order update events. This will allow your application to inform a user whenever the status of an order is changed on HubRise, for example when it is accepted or cancelled by the EPOS. For more details about callbacks, see our [Developers documentation](/developers/api/callbacks/#callbacks).
+You should also register an active callback to listen to order update events. This will allow your application to inform a user whenever the status of an order is changed on HubRise, for example when it is accepted or cancelled by the EPOS. For more details about callbacks, see our [Developers documentation](/developers/api/callbacks#callbacks).
 
 **Main suggestions**
 
@@ -140,12 +140,12 @@ You should also register an active callback to listen to order update events. Th
 - Register an active callback with the `"order": ["update"]` event.
 - See [Connection Workflow](#connection-workflow) for other best practices on managing your solution's connection.
 
-### Pushing Customers
+### Pushing Customers {#olo-pushing-customers}
 
 If users can create an account on your solution, you should push their details to HubRise as soon as they register.
 More generally, every time users update their details, you should update them on HubRise, as well.
 
-You should also anonymise customers immediately if they request so, or if they have been inactive for a certain period of time (for example, 3 years). This is a legal requirement in many markets, including for example the EU countries under GDPR regulations. For more details, see [Anonymise customer](/developers/api/customer-management/#anonymise-customer).
+You should also anonymise customers immediately if they request so, or if they have been inactive for a certain period of time (for example, 3 years). This is a legal requirement in many markets, including for example the EU countries under GDPR regulations. For more details, see [Anonymise customer](/developers/api/customers#anonymise-customer).
 
 **Main suggestions**
 
@@ -153,13 +153,13 @@ You should also anonymise customers immediately if they request so, or if they h
 - Send a `PATCH /customer_lists/:customer_list_id/customers/:id` request when customers update their online profile.
 - Anonymise customers with a `POST /customer_lists/:customer_list_id/customers/:customer_id/anonymise` request when needed.
 
-### Pushing Orders
+### Pushing Orders {#olo-pushing-orders}
 
 You should push new orders to HubRise as soon as they are created by the user. However, wait for payment confirmation first, if the order is paid online.
 
-If you have registered users, you should include their `customer_id` in the payload and update their details just before pushing the order. If you do not have registered users (for example, for self ordering kiosks or orders via a tablet at the table), you can include the customer's details directly in the order payload with a so-called "guest order". For more information, see [Order's Customer](/developers/api/order-management/#order-s-customer).
+If you have registered users, you should include their `customer_id` in the payload and update their details just before pushing the order. If you do not have registered users (for example, for self ordering kiosks or orders via a tablet at the table), you can include the customer's details directly in the order payload with a so-called "guest order". For more information, see [Order's Customer](/developers/api/orders#customer).
 
-When you need to test that orders are pushed to HubRise correctly, you can connect OrderLine to your HubRise account. This free app allows you to receive and manage in real time your HubRise orders. For more details on this app, see the [OrderLine documentation](/apps/orderline/).
+When you need to test that orders are pushed to HubRise correctly, you can connect OrderLine to your HubRise account. This free app allows you to receive and manage in real time your HubRise orders. For more details on this app, see the [OrderLine documentation](/apps/orderline/overview).
 
 **Main suggestions**
 
@@ -168,7 +168,7 @@ When you need to test that orders are pushed to HubRise correctly, you can conne
 - Include the `customer_id` in the payload, if your users can register; otherwise, create guest orders.
 - Connect OrderLine to receive test orders.
 
-### Receiving Status Updates
+### Receiving Status Updates {#olo-receiving-status-updates}
 
 If your solution supports order statuses, you should update it whenever you receive an order update callback.
 
@@ -179,7 +179,7 @@ Your solution should monitor orders and raise an alert (for example, by sending 
 - Update the order status after an `order.update` callback.
 - Raise an alert if an order status remains `new` for too long.
 
-### Pulling the Catalog
+### Pulling the Catalog {#olo-pulling-the-catalog}
 
 HubRise offers advanced catalog functionalities. We recommend that you implement a feature to pull catalogs from HubRise to your solution. This will simplify the onboarding of new users and reduce issues with the menu.
 
@@ -193,23 +193,23 @@ When you import a catalog from HubRise, make sure you save the ref codes for all
 - Support both automatic and manual import, then let the user decide the preferred behaviour.
 - Save the ref codes for all the items and pass them in the order's payload.
 
-## EPOS Solutions
+## EPOS Solutions {#epos-solutions}
 
 Connecting your EPOS solution to HubRise will allow you to receive orders from multiple integrated partners, including many popular food delivery platforms. You can also take your customers management to a higher level with the various marketing and loyalty solutions integrated with HubRise.
 
 It generally involves the following steps, which are described in further details in this section:
 
-1. [Establishing and managing connections](#establishing-and-managing-connections)
-1. [Receiving orders](#receiving-orders)
-1. [Updating orders](#updating-orders)
-1. [Pushing the catalog](#pushing-the-catalog)
-1. [Pushing local orders and customers](#pushing-local-orders-and-customers)
+1. [Establishing and managing connections](#epos-manage-connection)
+1. [Receiving orders](#epos-receiving-orders)
+1. [Updating orders](#epos-updating-orders)
+1. [Pushing the catalog](#epos-pushing-the-catalog)
+1. [Pushing local orders and customers](#epos-pushing-orders)
 
-### Establishing and Managing Connections
+### Establishing and Managing Connections {#epos-manage-connection}
 
 We recommend that you follow our general best practices and connect to HubRise at the location level.
 
-You should also register an active callback to listen to order events. This will allow your application to receive new orders from HubRise and status updates. For more details about callbacks, see our [Developers documentation](/developers/api/callbacks/#callbacks).
+You should also register an active callback to listen to order events. This will allow your application to receive new orders from HubRise and status updates. For more details about callbacks, see our [Developers documentation](/developers/api/callbacks#callbacks).
 
 See [Connection Workflow](#connection-workflow) for other best practices on managing your solution's connection.
 
@@ -219,7 +219,7 @@ See [Connection Workflow](#connection-workflow) for other best practices on mana
 - Add the `catalog.read` or `catalog.write` permission to the scope if your solution handles catalogs.
 - Register an active callback with the `"order": ["create","update"]` event.
 
-### Receiving Orders
+### Receiving Orders {#epos-receiving-orders}
 
 Registering an active callback is the recommended way to receive new orders. As an alternative, for example if you cannot listen on a public URL, use a passive callback to fetch new events at regular intervals.
 
@@ -238,10 +238,10 @@ If you need to inject new orders in HubRise to test your solution, you can use t
 - Do not use a `GET /location/orders` request to fetch new orders, as this approach is not scalable in production.
 - Use curl or Postman to inject test orders.
 
-### Updating Orders
+### Updating Orders {#epos-updating-orders}
 
 You should acknowledge new orders by updating their status to `received`. This will let the online ordering solution know that the order is on its way and prevent it from raising alerts.
-HubRise supports a detailed range of order statuses: use them whenever possible to update the order. For more details, see [Order Status](/developers/api/order-management/#order-status).
+HubRise supports a detailed range of order statuses: use them whenever possible to update the order. For more details, see [Order Status](/developers/api/orders#status).
 
 If possible, you should update the confirmed delivery time of the order on HubRise, so that the customer can be notified. You would typically do this in a request that also updates the order status to `accepted`.
 
@@ -252,9 +252,9 @@ If possible, you should update the confirmed delivery time of the order on HubRi
 - Use other statuses like `accepted`, `rejected`, etc., when this makes sense.
 - Update the confirmed delivery time, when this is available, at the same time the order status is changed to `accepted`.
 
-### Pushing the Catalog
+### Pushing the Catalog {#epos-pushing-the-catalog}
 
-HubRise offers advanced catalog functionalities. Pushing the catalog from your EPOS solution to HubRise simplifies the onboarding of new users and reduces menu synchronisation issues. For more details about catalogs on HubRise, see our [API Reference](/developers/api/catalog-management/).
+HubRise offers advanced catalog functionalities. Pushing the catalog from your EPOS solution to HubRise simplifies the onboarding of new users and reduces menu synchronisation issues. For more details about catalogs on HubRise, see our [API Reference](/developers/api/catalogs).
 
 We recommend to only allow manual catalog uploads. Automatic uploads triggered by a wrong catalog update could cause issues on connected online ordering platforms, without the user being aware.
 
@@ -266,7 +266,7 @@ For more information on encoding requirements on HubRise, see the **Catalog** ta
 - Follow the encoding requirements described in the [Integration Sheet](https://docs.google.com/spreadsheets/d/1df-QRlD9h8M58bpFoFaCEzU5pbmYSeHXOLqIVip9-5s/edit#gid=1531685884).
 - See [Handling Images](#handling-images) for specific suggestions about images.
 
-### Pushing local orders and customers
+### Pushing local orders and customers {#epos-pushing-orders}
 
 When you take orders directly on your EPOS system at your restaurant, we recommend that you also push them to HubRise.
 In this way, you will benefit from all the integrated apps already available on your HubRise account, such as delivery management solutions, marketing solutions, digital receipts and digital payments on the customer smartphone, kitchen displays, etc.

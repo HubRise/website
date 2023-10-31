@@ -1,37 +1,30 @@
 /**
- * Applies kebab case to a regular string.
- * NOTE: strips away any punctuation, except for `_`
+ * Creates a slug from a name.
  *
- * @param   input
- * @param   keepCase - Keep original letter casing, or transform into lowercase.
- * @returns
+ * @param name - Name.
+ * @example
+ *   Fidélité et marketing => fidelite-et-marketing
  */
-export const kebabify = (input: string, keepCase = false): string => {
-  const result = input
+
+export function slugify(name: string): string {
+  return name
+    .normalize("NFD") // Normalize accented characters
+    .replace(/[\u0300-\u036f]/g, "") // Remove diacritics
+    .toLowerCase()
     .split(/[^\w]+/g)
     .filter(Boolean)
     .join(`-`)
-
-  return keepCase ? result : result.toLowerCase()
 }
 
 /**
- * Generatey key prop for repeating sibling React elements.
- */
-export const generateKey = (prefix: string, suffix: string | number): string => `${prefix}--${suffix}`
-
-/**
- * Strips headers of chapters and subchapters, transforming
- * the remaining text into a kebabified anchor.
+ * Creates a header anchor from a header text.
  *
  * @param   header - Header text.
- * @returns Header text without a leading chapter, kebabified.
  * @example
  *   1.2. Retrieve order => retrieve-order
  */
 export function createHeaderAnchor(header: string): string {
-  // Detects leading chapter numbers.
-  const regex = /^[\d.]+\s/
-
-  return header.match(regex) ? kebabify(header.replace(regex, ``)) : kebabify(header)
+  return slugify(
+    header.replace(/^[\d.]+\s/, ``), // Remove leading chapter numbers
+  )
 }

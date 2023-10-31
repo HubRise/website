@@ -45,7 +45,7 @@ Clicking on a request will expand it to reveal the detailed logs of the request 
 
 ![Order logs page on WooCommerce Bridge](./images/003-woocommerce-order-page.png)
 
-Logs are a powerful debugging tool in case of issues. To understand in detail how to read logs, see [Understanding HubRise Logs](/docs/hubrise-logs/).
+Logs are a powerful debugging tool in case of issues. To understand in detail how to read logs, see [Understanding HubRise Logs](/docs/hubrise-logs/overview).
 
 ### System Request Operation
 
@@ -63,7 +63,7 @@ To access the actions page, click **Actions** at the top of the screen. If the l
 
 From the actions page, you can push the catalog to WooCommerce. For more details, see [Push Catalog](/apps/woocommerce/push-catalog).
 
-## Configuration
+## Configuration {#configuration}
 
 To access the WooCommerce Bridge configuration page, click **Configuration** at the top of the screen.
 

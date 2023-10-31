@@ -24,7 +24,7 @@ In **Settings** > **General**, you can select the display language. OrderLine ca
 
 ![General Settings](./images/009-2x-settings-general.png)
 
-## Order Status Flow
+## Order Status Flow {#order-status-flow}
 
 In **Settings** > **Order status**, you can configure the order status flow, which determines the statuses that an order can change to from the current status. Customise status flows to best match your operational workflow.
 
@@ -57,7 +57,7 @@ To change the status flow, follow these steps:
 
 For example, if you want to add **Delivery Failed** as a possible status from **In Delivery**, you need to select **Delivery Failed** from the list of possible statuses for **In Delivery**.
 
-## Additional Data Prompt
+## Additional Data Prompt {#additional-data-prompt}
 
 When an order is set to a specified status, OrderLine can prompt the user for an updated **Delivery Time**, or a **Comment**.
 
@@ -80,7 +80,7 @@ Users can be prompted to add a comment when an order is set to a specific status
 1. Select the status list under **Prompt for user's comment when updating the order status to**.
 1. Select the <InlineImage width="40" height="42">![OrderLine Plus Icon](../images/034-orderline-status-add-specific.jpg)</InlineImage> symbol to set a status a user can select from. To remove all options, select **Uncheck all**. The <InlineImage width="40" height="40">![OrderLine Status Added Checkmark Icon](../images/037-orderline-status-added.jpg)</InlineImage> indicates that status was already selected.
 
-## Hide Orders
+## Hide Orders {#hide-orders}
 
 Orders that match a specific status can be hidden from the **Today's Orders** list. Hidden Orders can be displayed from **Today's Orders** by selecting the **hidden orders** card.
 
@@ -91,7 +91,7 @@ To hide Orders from the **Today's Orders** list, follow these steps:
 
 ![Status flow example](./images/015-2x-setting-hidden-completed.png)
 
-## Notifications
+## Notifications {#notifications}
 
 Users can be prompted with a sound when new Orders are fetched by OrderLine based on the Notification settings. This applies to both **Today's Orders** and **Future Orders**.
 

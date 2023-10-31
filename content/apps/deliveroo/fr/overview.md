@@ -35,7 +35,7 @@ Connecter Deliveroo Bridge permet à HubRise de :
 
 ---
 
-**REMARQUE IMPORTANTE** : HubRise s'est associé avec Deliveroo pour offrir une nouvelle expérience d'intégration sans tablette. Cela vous permet de recevoir les commandes Deliveroo directement dans HubRise sans avoir besoin d'une tablette Deliveroo. Pour plus d'informations, voir [Puis-je arrêter d'utiliser la tablette Deliveroo ?](/apps/deliveroo/faqs/deliveroo-sans-tablette/).
+**REMARQUE IMPORTANTE** : HubRise s'est associé avec Deliveroo pour offrir une nouvelle expérience d'intégration sans tablette. Cela vous permet de recevoir les commandes Deliveroo directement dans HubRise sans avoir besoin d'une tablette Deliveroo. Pour plus d'informations, voir [Puis-je arrêter d'utiliser la tablette Deliveroo ?](/apps/deliveroo/faqs/deliveroo-tabletless).
 
 ---
 

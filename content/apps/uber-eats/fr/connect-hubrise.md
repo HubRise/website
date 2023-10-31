@@ -24,9 +24,9 @@ Contactez-nous par e-mail à l'adresse support@hubrise.com en précisant les inf
 
 - L'adresse URL du magasin Uber Eats que vous souhaitez connecter. Exemple : https://www.ubereats.com/fr/store/sushik-pizza/nzisHcL5S6C5ODzz0D3EnA.
 - Le nom et l'identifiant de votre point de vente HubRise. Exemple : `Fast Pizza Paris z6q31-0`.
-- Le mode d'acceptation des commandes que vous souhaitez utiliser : manual accept (acceptation manuelle) ou offered state (état proposé). Pour plus de détails, reportez-vous à notre [FAQ](/apps/uber-eats/faqs/recevoir-commandes-sans-tablette).
+- Le mode d'acceptation des commandes que vous souhaitez utiliser : manual accept (acceptation manuelle) ou offered state (état proposé). Pour plus de détails, reportez-vous à notre [FAQ](/apps/uber-eats/faqs/send-orders-to-epos-without-tablet).
 - Si vous livrez les commandes par vos propres moyens, indiquez-le nous.
-- Si vous utilisez des commentaires de produits dans votre boutique Uber Eats, informez-nous de votre souhait de continuer à les utiliser. Sinon, ils seront automatiquement désactivés. Pour plus d'informations sur la gestion des commentaires de produits dans HubRise, voir la rubrique [Commentaires sur les produits](/apps/uber-eats/associer-codes-ref#commentaires-au-niveau-du-produit).
+- Si vous utilisez des commentaires de produits dans votre boutique Uber Eats, informez-nous de votre souhait de continuer à les utiliser. Sinon, ils seront automatiquement désactivés. Pour plus d'informations sur la gestion des commentaires de produits dans HubRise, voir la rubrique [Commentaires sur les produits](/apps/uber-eats/map-ref-codes#product-notes).
 
 Avec ces informations, l'équipe d'intégration d'Uber Eats pourra activer la connexion HubRise de votre magasin. HubRise vous fournira l'UUID de de magasin Uber Eats nécessaire à la connexion et vous indiquera l'étape suivante.
 
@@ -34,7 +34,7 @@ Avec ces informations, l'équipe d'intégration d'Uber Eats pourra activer la co
 
 ---
 
-**REMARQUE IMPORTANTE :** Uber Eats Bridge se connecte à HubRise au niveau du point de vente. Pour plus d'informations, voir la page [Points de vente (en anglais)](/docs/locations/).
+**REMARQUE IMPORTANTE :** Uber Eats Bridge se connecte à HubRise au niveau du point de vente. Pour plus d'informations, voir la page [Points de vente (en anglais)](/docs/locations).
 
 ---
 
@@ -54,13 +54,13 @@ Maintenant que vous disposez de votre UUID de magasin Uber Eats, vous pouvez con
 
 Une fois la connexion effectuée, vous devez renseigner quelques paramètres sur la page Configuration afin que les commandes soient transmises correctement à votre logiciel de caisse.
 
-Pour plus d'informations sur la page Configuration et la manière d'y accéder, voir la rubrique [Page de configuration](/apps/uber-eats/interface-utilisateur/#page-de-configuration). Pour plus de détails sur la configuration des paramètres d'Uber Eats Bridge, voir la rubrique [Configuration](/apps/uber-eats/configuration).
+Pour plus d'informations sur la page Configuration et la manière d'y accéder, voir la rubrique [Page de configuration](/apps/uber-eats/user-interface#configuration). Pour plus de détails sur la configuration des paramètres d'Uber Eats Bridge, voir la rubrique [Configuration](/apps/uber-eats/configuration).
 
 ## 4. Renseigner les codes ref des produits
 
 Si vous utilisez Uber Eats avec une logiciel de caisse, vous devez renseigner les codes ref de tous les produits de votre menu Uber Eats. Vous permettrez ainsi à votre logiciel de caisse d'identifier correctement chaque article.
 
-Pour savoir associer les codes ref sur Uber Eats, voir la rubrique [Association des codes ref](/apps/uber-eats/associer-codes-ref).
+Pour savoir associer les codes ref sur Uber Eats, voir la rubrique [Association des codes ref](/apps/uber-eats/map-ref-codes).
 
 ## 5. Testez la réception des commandes
 
@@ -68,6 +68,6 @@ Nous vous recommandons de tester l'intégration avant de commencer à recevoir d
 
 Passez quelques commandes de test pour vous assurer de leur bonne réception dans votre logiciel de caisse, puis annulez-les pour en obtenir le remboursement. Vous aurez ainsi l'assurance que votre intégration est bien configurée.
 
-Si vous le souhaitez, vous pouvez également vous passer de votre tablette Uber Eats en passant à une intégration directe. Pour plus de détails, voir la rubrique [Les commandes peuvent-elles être envoyées directement sur ma logiciel de caisse sans passer par les tablettes Uber Eats ?](/apps/uber-eats/faqs/recevoir-commandes-sans-tablette).
+Si vous le souhaitez, vous pouvez également vous passer de votre tablette Uber Eats en passant à une intégration directe. Pour plus de détails, voir la rubrique [Les commandes peuvent-elles être envoyées directement sur ma logiciel de caisse sans passer par les tablettes Uber Eats ?](/apps/uber-eats/faqs/send-orders-to-epos-without-tablet).
 
 Si vous rencontrez des difficultés durant ces tests, contactez-nous à l'adresse : support@hubrise.com.

@@ -16,11 +16,11 @@ If you have not pushed your menu to Just Eat, you will not receive any orders. F
 
 ### OrderPad not Switched on
 
-The Just Eat OrderPad needs to remain switched on to receive orders in HubRise. For more information, see [Can I Turn Off the Orderpad?](/apps/just-eat-flyt/faqs/auto-accept/).
+The Just Eat OrderPad needs to remain switched on to receive orders in HubRise. For more information, see [Can I Turn Off the Orderpad?](/apps/just-eat-flyt/faqs/auto-accept).
 
 ### Orders not Accepted
 
-Orders must either be accepted manually in the OrderPad, or auto-accepted for them to be sent to HubRise. For more information, see [Do I Want Auto-Accept Activated?](/apps/just-eat-flyt/faqs/auto-accept/).
+Orders must either be accepted manually in the OrderPad, or auto-accepted for them to be sent to HubRise. For more information, see [Do I Want Auto-Accept Activated?](/apps/just-eat-flyt/faqs/auto-accept).
 
 ### Orders not Sent to Kitchen
 

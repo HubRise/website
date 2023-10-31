@@ -22,7 +22,7 @@ To take advantage of the features offered by the new integration with Lightspeed
 
 1. Search for the **Lightspeed Restaurant Bridge** app, click on it then on **Connect**, and follow the instructions.
 
-For more information, check the [Block or Disconnect App](/docs/connections/#disconnect-app) and [Connect a New App](/docs/connections/#connect-a-new-app) pages.
+For more information, check the [Block or Disconnect App](/docs/connections#block-or-disconnect) and [Connect a New App](/docs/connections#connect) pages.
 
 ## Reconnecting your Lightspeed account
 

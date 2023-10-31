@@ -10,7 +10,7 @@ meta:
 
 Web browsers may block websites from playing sound notifications. This is a security feature to prevent unwanted noise.
 
-When sound notifications are blocked by your browser, OrderLine will display a red popup. You can click on this popup to enable sound notifications for the current session. This behaviour is documented in the Troubleshooting page, section [Sound Notifications Disabled Popup](/apps/orderline/troubleshooting/#sound-notifications-disabled-popup).
+When sound notifications are blocked by your browser, OrderLine will display a red popup. You can click on this popup to enable sound notifications for the current session. This behaviour is documented in the Troubleshooting page, section [Sound Notifications Disabled Popup](/apps/orderline/troubleshooting#disabled-popup).
 
 To avoid doing this every time you launch OrderLine, you can configure your browser to keep sound notifications permanently enabled for OrderLine.
 

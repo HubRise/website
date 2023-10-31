@@ -19,15 +19,17 @@ app_info:
 
 ## Description
 
-Smood is a food delivery platform operational in more than 25 cities in Switzerland. Smood offers a wide range of restaurants, and delivers orders exclusively by car.
+Smood provides home delivery services across 25 cities in Switzerland. While initially focused on meal delivery, Smood has expanded its offerings to include thousands of products across various categories such as groceries, florists, wine shops, parapharmacies, beauty products, and more. This expansion has been made possible through partnerships with prominent local and national brands, including Migros.
 
-By partnering with Smood, restaurants can expand their customer base and increase their revenue. Smood manages all marketing and delivery operations, enabling restaurants to focus on food preparation.
+Committed to an ongoing process of social responsibility, Smood ensures that all delivery staff are company employees, and for optimal handling, orders are exclusively delivered by car.
 
-Smood also offers a white-label delivery service called Dismatch, which is [integrated with HubRise](/apps/smood-dismatch). This service allows restaurants to externalise their deliveries.
+By partnering with Smood, stores can tap into a broader customer base and enjoy increased revenue. Smood takes care of all marketing and delivery operations, allowing partners to concentrate on their core business functions.
+
+In addition to its standard services, Smood offers a white-label delivery service called Dismatch, also integrated with HubRise. This service enables partners to outsource deliveries without inclusion into the Smood ordering platform, providing them with further flexibility and efficiency. For more information see [Dismatch](/apps/smood-dismatch/overview).
 
 ## Integration Features
 
-Connecting Smood allows your food ordering and delivery platform to:
+Connecting Smood allows your ordering and delivery platform to:
 
 - Push orders to HubRise, including order status.
 - Push customer information to HubRise.
@@ -38,9 +40,9 @@ Smood can be connected to HubRise from the Smood back office.
 
 ## Why Connect?
 
-Connecting Smood to HubRise allows your food ordering and delivery platform to communicate with the other applications that you use every day. For example, you can receive your Smood orders directly in your EPOS or Kitchen Display System also connected with HubRise, print your orders with a connected printer, manage your inventory, and send your HubRise menu to Smood.
+Connecting Smood to HubRise allows your ordering and delivery platform to communicate with the other applications that you use every day. For example, you can receive your Smood orders directly in your EPOS or Kitchen Display System also connected with HubRise, print your orders with a connected printer, manage your inventory, and send your HubRise menu to Smood.
 
-Via HubRise, synchronise your menu, your customer and order information with online ordering, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management, delivery services, eMarketing (SMS/emailing), business intelligence, stock management, loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our [Apps page](/apps).
+Thanks to HubRise, you can synchronise your menu, your customer information and your orders with your EPOS, your online ordering solution, food delivery platforms, delivery management solutions or delivery services, eMarketing (SMS/emailing), business intelligence, inventory management and customer loyalty systems, and more. The number of compatible applications increases every month. To find out which apps you can connect, see our [Apps page](/apps).
 
 ## Prerequisites
 

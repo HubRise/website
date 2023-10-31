@@ -40,7 +40,7 @@ Les informations suivantes apparaissent dans la section **CONFIGURATION** > **Ca
 
 - **Nom** : appellation du catalogue, suivie de son identifiant unique. Cet identifiant unique ne change pas même si le nom du catalogue est modifié. Exemple : le catalogue `Avenue d'Italie` apparaîtra comme `Avenue d'Italie - abc123`. Si le catalogue `Avenue d'Italie` est renommé `Rue Denfert-Rochereau`, il apparaîtra comme `Rue Denfert-Rochereau - abc123`.
 - **Créé** : date à laquelle le catalogue a été créé dans HubRise.
-- **Produits** : nombre de produits inclus dans ce catalogue. Pour afficher les détails du catalogue, voir [Catalogues](/docs/donnees#catalogues).
+- **Produits** : nombre de produits inclus dans ce catalogue. Pour afficher les détails du catalogue, voir [Catalogues](/docs/data#catalogs).
 
 Pour afficher le contenu d'un catalogue, cliquez sur le nom de celui-ci. Vous serez alors redirigé vers l'écran **DONNÉES** > **Catalogue** du catalogue concerné.
 

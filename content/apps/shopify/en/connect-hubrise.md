@@ -63,5 +63,5 @@ To connect Shopify Bridge from the HubRise back office, follow these steps.
 
 If you have a catalog of products on HubRise, you can upload it to your Shopify store with a single click.
 
-For more information on HubRise catalogs, see [Catalogs](/docs/catalog/).
-To learn how to pull your HubRise catalog into Shopify, see [Pulling the Catalog](/apps/shopify/configuration#pulling-the-menu).
+For more information on HubRise catalogs, see [Catalogs](/docs/catalog).
+To learn how to push your HubRise catalog into Shopify, see [Push the Catalog](/apps/shopify/push-catalog).

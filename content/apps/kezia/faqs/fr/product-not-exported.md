@@ -10,4 +10,4 @@ meta:
 
 Seuls les produits marqués comme exportables sont envoyés vers HubRise.
 
-Pour rendre un produit exportable, suivez les étapes décrites dans [Exporter le catalogue](/apps/kezia/associer-codes-ref#exporter-le-catalogue).
+Pour rendre un produit exportable, suivez les étapes décrites dans [Exporter le catalogue](/apps/kezia/map-ref-codes#export-catalog).

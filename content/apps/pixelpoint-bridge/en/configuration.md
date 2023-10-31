@@ -27,7 +27,7 @@ The rest of this section allows you to configure how order status changes on you
 
 ---
 
-## Deals
+## Deals {#deals}
 
 PixelPoint Bridge converts HubRise deals to combos. From this section, you can configure how this conversion is performed.
 
@@ -35,7 +35,7 @@ The **Use ref codes as combo item ids** option is here for legacy reasons. We do
 
 The **Aggregate combo prices** lets you decide how to handle the price of a combo. If you select this option, PixelPoint Bridge will aggregate the prices of all items in the combo at the combo level. By default, PixelPoint Bridge spreads the price of a combo across the items of the combo.
 
-## Discounts
+## Discounts {#discounts}
 
 PixelPoint Bridge sends each discount to your PixelPoint EPOS as a coupon with a ref code.
 
@@ -51,7 +51,7 @@ By default, discounts without a ref code are not sent to your PixelPoint EPOS. F
 
 ---
 
-## Reset the Configuration
+## Reset the Configuration {#reset-configuration}
 
 If you need to reset the configuration, click **Reset the configuration** at the bottom of the page.
 

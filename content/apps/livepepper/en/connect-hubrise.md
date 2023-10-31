@@ -12,7 +12,7 @@ Connecting LivePepper to HubRise can be done with a few simple steps. If you do 
 
 ---
 
-**IMPORTANT NOTE:** To connect a LivePepper website with multiple locations, refer to this [FAQ](/apps/livepepper/faqs/connect-branches-hubrise-accounts/).
+**IMPORTANT NOTE:** To connect a LivePepper website with multiple locations, refer to this [FAQ](/apps/livepepper/faqs/connect-branches-hubrise-accounts).
 
 ---
 

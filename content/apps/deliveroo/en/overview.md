@@ -35,7 +35,7 @@ Connecting Deliveroo Bridge allows HubRise to:
 
 ---
 
-**IMPORTANT NOTE:** HubRise has partnered with Deliveroo to offer a new tabletless integration experience. This allows you to receive Deliveroo orders directly in HubRise without the need for a Deliveroo tablet. For more information, see [Can I Stop Using the Deliveroo Tablet?](/apps/deliveroo/faqs/deliveroo-tabletless/).
+**IMPORTANT NOTE:** HubRise has partnered with Deliveroo to offer a new tabletless integration experience. This allows you to receive Deliveroo orders directly in HubRise without the need for a Deliveroo tablet. For more information, see [Can I Stop Using the Deliveroo Tablet?](/apps/deliveroo/faqs/deliveroo-tabletless).
 
 ---
 

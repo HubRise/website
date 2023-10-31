@@ -32,10 +32,10 @@ Seule l'équipe de support de SOLUTION peut connecter SOLUTION à HubRise.
 Pour connecter SOLUTION à HubRise, procédez comme suit :
 
 1. Créez un compte HubRise. Pour plus d'information, consultez notre [Guide de démarrage](/docs/comment-demarrer).
-1. Donnez accès à votre compte à l'équipe support de SOLUTION. Pour plus d'information, voir [Donner accès au support de SOLUTION](#donner-acc-s-au-support-de-solution).
-1. Contactez l'équipe de support de SOLUTION qui se chargera d'établir la connexion à HubRise. Pour plus d'information, voir [Contacter le support de SOLUTION](#contacter-le-support-de-solution).
+1. Donnez accès à votre compte à l'équipe support de SOLUTION. Pour plus d'information, voir [Donner accès au support de SOLUTION](#give-acces).
+1. Contactez l'équipe de support de SOLUTION qui se chargera d'établir la connexion à HubRise. Pour plus d'information, voir [Contacter le support de SOLUTION](#contact).
 
-## Donner accès au support de SOLUTION
+## Donner accès au support de SOLUTION {#give-access}
 
 Pour faciliter la prise en charge de vos demandes de support, nous vous recommandons de donner accès à votre compte HubRise à l'éditeur de la solution SOLUTION.
 -- OU --
@@ -49,11 +49,11 @@ Pour donner accès à SOLUTION, procédez comme suit :
 
 L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre point de vente. Le partage de mot de passe est déconseillé pour des raisons de sécurité.
 
-## Contacter le support de SOLUTION
+## Contacter le support de SOLUTION {#contact}
 
 Pour demander la connexion de SOLUTION à HubRise, contactez l'équipe de support de SOLUTION par email sur contact@solution.com. Vous pouvez inclure support@hubrise.com en copie pour un suivi coordonné entre nos deux équipes.
 
-Indiquez dans votre demande le nom de votre compte HubRise, son identifiant HubRise et le point de vente à connecter. Pour plus d'informations voir [Nom et identifiant du point de vente](/docs/points-de-vente#nom-et-identifiant-du-point-de-vente).
+Indiquez dans votre demande le nom de votre compte HubRise, son identifiant HubRise et le point de vente à connecter. Pour plus d'informations voir [Nom et identifiant du point de vente](/docs/points-de-vente#location-name-and-id).
 
 ## Déconnecter SOLUTION
 

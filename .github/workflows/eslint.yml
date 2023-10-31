@@ -20,5 +20,8 @@ jobs:
       - name: Install JS dependencies
         run: yarn install
 
+      - name: Use the development environment
+        run: cp .env.development .env
+
       - name: Run linter
         run: yarn eslint

@@ -16,7 +16,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link to="/apps/aquila-cms" addLocalePrefix={false}>en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/aquila-cms">en anglais uniquement</Link>.
 
 ---
 
@@ -47,7 +47,7 @@ Aquila CMS peut être connecté à HubRise depuis le back-office d'Aquila CMS.
 
 La connexion de votre site Aquila à HubRise procure un avantage omnicanal à votre activité commerciale. Les informations client peuvent être transférées vers des applications de marketing et de fidélisation, tandis que les commandes sont validées par la logiciel de caisse de votre choix.
 
-La connexion entre Aquila et HubRise permet de synchroniser les informations client entre les deux systèmes. Les informations sur les produits peuvent être extraites depuis HubRise et utilisées pour définir de nouveaux produits dans Aquila, ou pour mettre à jour le prix et la dénomination des produits existants. Les commandes passées dans Aquila sont transmises à HubRise. Pour plus d'informations, voir la [présentation générale de HubRise](/docs).
+La connexion entre Aquila et HubRise permet de synchroniser les informations client entre les deux systèmes. Les informations sur les produits peuvent être extraites depuis HubRise et utilisées pour définir de nouveaux produits dans Aquila, ou pour mettre à jour le prix et la dénomination des produits existants. Les commandes passées dans Aquila sont transmises à HubRise. Pour plus d'informations, voir la [présentation générale de HubRise](/docs/overview).
 
 ## Prérequis
 

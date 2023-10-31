@@ -31,14 +31,14 @@ If the contrast between the colours are too high, a lighter shade or lower opaci
 
 ## Naming Convention
 
-File naming convention for diagrams follow the exact same logic as images. For more information, see [Image Naming Convention](/contributing/screenshots-guide/#naming-convention).
+File naming convention for diagrams follow the exact same logic as images. For more information, see [Image Naming Convention](/contributing/screenshots-guide#naming-convention).
 
 ## Icons
 
 Icons can be used to clarify or to highlight specific points in the documentation. It is, however, important to use icons of the same color. Depending on the use case it can be green, gray if it should be subtle, and orange or red for alerts.
 
 - For icon fonts, see [Font Awesome](https://fontawesome.com/download).
-- For icon library, see [Noun Project](https://thenounproject.com/).
+- For icon library, see [Noun Project](https://thenounproject.com).
 - Large professional icon-packs can also be bought to ensure consistency and style.
 
 ## Fonts
@@ -49,7 +49,7 @@ The following fonts may be used when contributing to the HubRise website documen
 - Ubuntu Mono – Can be used for code.
 - Exo 2 – This one is a custom font, good option to emphasise identity. Could be used for titles.
 
-## Colours
+## Colours {#colours}
 
 Should you want to use colours in your diagrams, these are the colours that should be used.
 

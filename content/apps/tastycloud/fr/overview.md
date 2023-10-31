@@ -14,7 +14,7 @@ app_info:
   contact: contact@tastycloud.fr / +33 1 88 32 06 70
 ---
 
-**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link to="/apps/tastycloud" addLocalePrefix={false}>en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/tastycloud">en anglais uniquement</Link>.
 
 ## Description
 

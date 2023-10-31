@@ -30,10 +30,10 @@ Only the SOLUTION support team can connect your [EPOS] to HubRise.
 
 To connect SOLUTION to HubRise, proceed as follows:
 
-1. Grant SOLUTION access to your HubRise account. For more information, see [Grant Access to SOLUTION Support](#grant-access-to-SOLUTION-support).
-1. Contact the SOLUTION support team who will establish the connection to HubRise. For more information, see [Contact SOLUTION Support](#contact-SOLUTION-support).
+1. Grant SOLUTION access to your HubRise account. For more information, see [Grant Access to SOLUTION Support](#give-access).
+1. Contact the SOLUTION support team who will establish the connection to HubRise. For more information, see [Contact SOLUTION Support](#contact).
 
-## Grant Access to SOLUTION Support
+## Grant Access to SOLUTION Support {#give-access}
 
 To facilitate the support of your requests, we recommend that you grant SOLUTION support access to your HubRise account.
 -- OR --
@@ -47,7 +47,7 @@ To grant access to SOLUTION, proceed as follows:
 
 Adding a user is the recommended way to grant access to a third party to your HubRise account or location. Sharing passwords is not recommended for security reasons. For more information on permissions, see the [Permissions](/docs/permissions) help page.
 
-## Contact SOLUTION Support
+## Contact SOLUTION Support {#contact}
 
 To request the connection of your [EPOS], contact SOLUTION support by email at contact@SOLUTION.com. You can include support@hubrise.com in copy for a coordinated follow-up between our two teams.
 
@@ -59,4 +59,4 @@ You can disconnect SOLUTION from HubRise on the SOLUTION back office.
 -- OR --
 To disconnect SOLUTION from HubRise, contact SOLUTION support.
 
-If you need to temporarily stop [receiving orders from HubRise], you can block the connection between SOLUTION and HubRise instead. For more information, see [Block or Disconnect App](/docs/connections#block-or-disconnect-app).
+If you need to temporarily stop [receiving orders from HubRise], you can block the connection between SOLUTION and HubRise instead. For more information, see [Block or Disconnect App](/docs/connections#block-or-disconnect).

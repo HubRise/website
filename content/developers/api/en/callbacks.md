@@ -107,7 +107,7 @@ The client runs the following logic at regular intervals:
 
 The interval between calls should be no less than 30 seconds, otherwise the connection may reach its daily [API rate limit](/developers/api/general-concepts#rate-limiting) before the end of the day.
 
-## 1. Callbacks
+## 1. Callbacks {#callbacks}
 
 A callback is specific to a connection. A connection can only have one callback.
 
@@ -156,20 +156,22 @@ Creates a callback if none exists, replace the existing callback otherwise.
 | `url`    | string | The URL called when an event occurs. Leave it null for a passive callback.                   |
 | `events` | map    | A map with the keys being _resource type_ and the values being the *event type*s to monitor. |
 
-- _resource type_ is one of: `order`, `customer`, `location`, `catalog` and `inventory`.
-- _event type_ is one of: `create`, `update` and `patch`.
+- _resource type_ is one of: `catalog`, `customer`, `delivery`, `inventory`, `location` and `order`.
+- _event type_ is one of: `create`, `patch` and `update`.
 
-The allowed combinations are:
+The allowed combinations of resource and event types are:
 
-- `order.create`
-- `order.update`
-- `customer.create`
-- `customer.update`
-- `location.update`
 - `catalog.create`
 - `catalog.update`
+- `customer.create`
+- `customer.update`
+- `delivery.create`
+- `delivery.update`
 - `inventory.patch`
 - `inventory.update`
+- `location.update`
+- `order.create`
+- `order.update`
 
 ##### Example request:
 
@@ -193,9 +195,9 @@ HubRise will no longer trigger events or call the callback URL.
 
 <CallSummaryTable endpoint="DELETE /callback" accessLevel="location, account" />
 
-## 2. Events
+## 2. Events {#events}
 
-### 2.1. Retrieve Event
+### 2.1. Retrieve Event {#retrieve-event}
 
 Returns an event by its id.
 
@@ -227,8 +229,8 @@ Returns an event by its id.
 The returned event contains:
 
 - The id of the event.
-- The resource type, eg. `order`, `customer`, `catalog`, ...
-- The event type, which is one of: `create`, `update`, `patch`, and `delete`.
+- The resource type, for example: `order` or `customer`.
+- The event type, for example: `create`.
 - The time when the resource modification occurred.
 - The ids of the affected resource and its parent resources.
 - The state of the resource, before and/or the modification, when applicable.
@@ -242,7 +244,7 @@ The state(s) of the resource included in the event depends on the resource and t
 
 When an event affects a catalog or an inventory, you will need to send a `GET` request to the HubRise API to retrieve the full state of the resource.
 
-### 2.2. List Events
+### 2.2. List Events {#list-events}
 
 Returns the events that have not been acknowledged (ie deleted).
 
@@ -272,7 +274,7 @@ The previous and new states are not included to save bandwidth. Individual retri
 
 Deletes (ie acknowledges) a callback event
 
-A passive callback should always delete events after retrieval or they will keep on being pulled by the [List events](#22-list-events) operation.
+A passive callback should always delete events after retrieval or they will keep on being pulled by the [List events](#list-events) operation.
 
 <CallSummaryTable endpoint="DELETE /callback/events/:event_id" accessLevel="location, account" />
 

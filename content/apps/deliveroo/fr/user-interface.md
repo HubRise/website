@@ -45,7 +45,7 @@ Cliquez sur une requête pour la développer et révéler le détail des échang
 
 ![Page des logs de commandes sur Deliveroo Bridge](./images/004-order-logs.png)
 
-Les requêtes d'API sont un bon outil de débogage en cas d'incident. Pour comprendre comment lire ces requêtes, voir [Comprendre les logs HubRise](/docs/hubrise-logs/).
+Les requêtes d'API sont un bon outil de débogage en cas d'incident. Pour comprendre comment lire ces requêtes, voir [Comprendre les logs HubRise](/docs/hubrise-logs/overview).
 
 ### Opération de requête système
 
@@ -57,7 +57,7 @@ Les requêtes système sont généralement envoyées par Deliveroo Bridge afin d
 
 Les pages de requête système fournissent des informations de débogage utiles aux équipes d'assistance, mais elles sont généralement peu utiles pour les autres utilisateurs.
 
-## Configuration
+## Configuration {#configuration}
 
 Pour accéder à la page de configuration, cliquez sur **Configuration** en haut de l'écran.
 
@@ -69,8 +69,8 @@ Pour accéder à la page d'actions, cliquez sur **Actions** en haut de l'écran.
 
 Depuis la page **Actions**, vous pouvez effectuer les actions suivantes :
 
-- **Envoyer le catalogue** : envoie le catalogue vers Deliveroo. Pour plus d'informations, voir [Envoyer le catalogue](/apps/deliveroo/envoi-catalogue).
-- **Récupérer le catalogue**: importe le menu depuis Deliveroo vers un catalogue HubRise. Pour plus d'informations, voir [Récupérer le catalogue](/apps/deliveroo/recuperer-catalogue).
+- **Envoyer le catalogue** : envoie le catalogue vers Deliveroo. Pour plus d'informations, voir [Envoyer le catalogue](/apps/deliveroo/push-catalog).
+- **Récupérer le catalogue**: importe le menu depuis Deliveroo vers un catalogue HubRise. Pour plus d'informations, voir [Récupérer le catalogue](/apps/deliveroo/pull-catalog).
 - **Envoyer l'inventaire**: pousse votre inventaire HubRise vers Deliveroo.
 
 ## Langue et navigation

@@ -16,7 +16,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link to="/apps/etakeaway-max" addLocalePrefix={false}>en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/etakeaway-max">en anglais uniquement</Link>.
 
 ---
 

@@ -8,7 +8,7 @@ meta:
   description: Instructions pour associer les codes ref des produits Dishop avec d'autres applications connectées à HubRise pour la synchronisation des données.
 ---
 
-## Produits
+## Produits {#products}
 
 Pour modifier le code ref d'un produit, suivez ces étapes :
 
@@ -26,7 +26,7 @@ Pour les menus édités manuellement, Dishop recommande d'utiliser des options p
 
 Pour modifier le code ref d'une SKU, suivez les étapes de la section [Options](#options).
 
-## Options
+## Options {#options}
 
 Pour modifier le code ref d'une option, suivez ces étapes :
 
@@ -39,7 +39,7 @@ Pour modifier le code ref d'une option, suivez ces étapes :
 
 Les promotions dans HubRise sont les offres spéciales qui s'appliquent à certains articles. Dishop ne supporte pas les promotions sur les articles.
 
-Dans certains cas, vous pouvez néanmoins utiliser des produits avec options pour les promotions, par exemple dans le cas de menus à prix fixe. Pour modifier le code ref, suivez alors les étapes de la section produit [Produits](#produits).
+Dans certains cas, vous pouvez néanmoins utiliser des produits avec options pour les promotions, par exemple dans le cas de menus à prix fixe. Pour modifier le code ref, suivez alors les étapes de la section produit [Produits](#products).
 
 ## Remises
 

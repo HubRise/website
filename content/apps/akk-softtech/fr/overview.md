@@ -17,6 +17,6 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Cette documentation est disponible <Link to="/apps/akk-softtech" addLocalePrefix={false}>en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** Cette documentation est disponible <Link href="/apps/akk-softtech">en anglais uniquement</Link>.
 
 ---

@@ -31,7 +31,7 @@ To connect WooCommerce Bridge to HubRise, follow these steps:
 1. If you have previously encountered connection issues, you may adjust the **Advanced options**. If not, leave them unchanged. For more information, refer to our [Troubleshooting](/apps/woocommerce/troubleshooting) guide.
 1. Click **Save** to confirm.
 1. Click **Connect WooCommerce**. You will be redirected to the WooCommerce authorisation page.
-    - If you are not logged in to WooCommerce, enter your username and password, then click **Login**.
+   - If you are not logged in to WooCommerce, enter your username and password, then click **Login**.
      ![WooCommerce login page](./images/006-woocommerce-login.png)
    - Click **Approve** to authorise the connection with HubRise.
      ![WooCommerce authorisation page](./images/007-woocommerce-authorisation.png)
@@ -41,11 +41,11 @@ To connect WooCommerce Bridge to HubRise, follow these steps:
 
 After connecting the Bridge, you need to configure a few parameters in the Configuration page to send orders correctly to your EPOS.
 
-For more information about the configuration page and how to navigate to it, see [Configuration Page](/apps/woocommerce/user-interface/#configuration-page). For details on how to configure the parameters of WooCommerce Bridge, see [Configuration](/apps/woocommerce/configuration).
+For more information about the configuration page and how to navigate to it, see [Configuration Page](/apps/woocommerce/user-interface#configuration). For details on how to configure the parameters of WooCommerce Bridge, see [Configuration](/apps/woocommerce/configuration).
 
 ## 3. Upload Your Menu
 
 If you have a catalog of products on HubRise, you can upload it to your WooCommerce store with a single click.
 
-For more information on HubRise catalogs, see [Catalogs](/docs/catalog/).
-To learn how to pull your HubRise catalog into WooCommerce, see [Pulling the Menu](/apps/woocommerce/configuration#pulling-the-menu).
+For more information on HubRise catalogs, see [Catalogs](/docs/catalog).
+To learn how to push your HubRise catalog into WooCommerce, see [Push the Catalog](/apps/woocommerce/push-catalog).

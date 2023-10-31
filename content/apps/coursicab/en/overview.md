@@ -10,7 +10,7 @@ meta:
 
 ---
 
-**IMPORTANT NOTE**: Full documentation available <Link to="/fr/apps/coursicab" addLocalePrefix={false}>in French</Link>.
+**IMPORTANT NOTE**: Full documentation available <Link href="/fr/apps/coursicab">in French</Link>.
 
 ---
 

@@ -20,7 +20,7 @@ Pour afficher la liste des commandes :
 1. Cliquez sur **Statistiques**.
 1. Sélectionnez l'onglet **Tickets**.
 
-Si vous avez connecté Zelty à HubRise et associé tous les codes ref sur les autres applications, mais que les commandes n'apparaissent pas dans Zelty, consultez la section [Dépannage](/apps/zelty/depannage). Vous pouvez également vérifier les transactions dans les logs de HubRise. Pour plus d'informations, consultez la section [Logs](/docs/data/#logs) du guide de l'utilisateur de HubRise.
+Si vous avez connecté Zelty à HubRise et associé tous les codes ref sur les autres applications, mais que les commandes n'apparaissent pas dans Zelty, consultez la section [Dépannage](/apps/zelty/troubleshooting). Vous pouvez également vérifier les transactions dans les logs de HubRise. Pour plus d'informations, consultez la section [Logs](/docs/data#logs) du guide de l'utilisateur de HubRise.
 
 ## Données des commandes
 

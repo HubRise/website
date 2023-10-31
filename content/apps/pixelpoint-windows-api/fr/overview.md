@@ -16,7 +16,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link to="/apps/pixelpoint-windows-api" addLocalePrefix={false}>en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/pixelpoint-windows-api">en anglais uniquement</Link>.
 
 ---
 

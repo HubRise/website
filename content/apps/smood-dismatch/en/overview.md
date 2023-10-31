@@ -37,7 +37,7 @@ Dismatch can be connected to HubRise from the HubRise back office.
 
 ---
 
-**IMPORTANT NOTE:** For integration features with the food ordering and delivery platform, see the [Smood](/apps/smood).
+**IMPORTANT NOTE:** For integration features with the food ordering and delivery platform, see the [Smood](/apps/smood/overview).
 
 ---
 

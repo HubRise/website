@@ -1,25 +1,21 @@
-import { kebabify, generateKey, createHeaderAnchor } from "./misc"
+import { createHeaderAnchor, slugify } from "./misc"
 
-describe("kebabify", () => {
+describe("createSlug", () => {
   it("should transform regular string", () => {
-    expect(kebabify("Quick Start Guide")).toBe("quick-start-guide")
+    expect(slugify("Quick Start Guide")).toBe("quick-start-guide")
   })
 
-  it("should transform regular string while keeping original letter casing", () => {
-    expect(kebabify("QuicK StarT GuidE", true)).toBe("QuicK-StarT-GuidE")
+  it("should strip non alpha characters", () => {
+    expect(slugify("Order items (deal line)")).toBe("order-items-deal-line")
   })
-})
 
-describe("generateKey", () => {
-  it("should generate a key prop", () => {
-    expect(generateKey("absolutely", "83")).toBe("absolutely--83")
+  it("should convert accented characters", () => {
+    expect(slugify("Chapître: L'Éléphant, le Ça et l'Être")).toBe("chapitre-l-elephant-le-ca-et-l-etre")
   })
 })
 
 describe("createHeaderAnchor", () => {
-  it("should convert numbered header into a target for anchor", () => {
+  it("should remove numbering", () => {
     expect(createHeaderAnchor("4. Overriding HTTP method")).toBe("overriding-http-method")
-
-    expect(createHeaderAnchor("5. Order items (deal line)")).toBe("order-items-deal-line")
   })
 })

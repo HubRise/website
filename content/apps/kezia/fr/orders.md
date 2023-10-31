@@ -10,7 +10,7 @@ meta:
 
 Lorsque Kezia II est connecté à HubRise, les commandes envoyées à HubRise arrivent automatiquement dans votre logiciel de caisse.
 
-## Recevoir des commandes
+## Recevoir des commandes {#receive-orders}
 
 Kezia II vérifie l'arrivée de nouvelles commandes toutes les 30 secondes. Une fenêtre d'avertissement vous signale l'arrivée d'une nouvelle commande.
 
@@ -25,7 +25,7 @@ Pour voir la liste des commandes web en cours, suivez les étapes suivantes :
 
 Pour consulter le détail d'une commande :
 
-1. Accédez à la liste des commandes web en suivant les étapes décrites dans la partie [Recevoir des commandes](/apps/kezia/commandes#recevoir-des-commandes).
+1. Accédez à la liste des commandes web en suivant les étapes décrites dans la partie [Recevoir des commandes](/apps/kezia/orders#receive-orders).
 1. Sélectionnez la commande désirée.
 1. Cliquez sur **Détails commande**.
    ![Commandes - Détails de la commande](./images/010-kezia-order-details.png)

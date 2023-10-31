@@ -52,4 +52,4 @@ To establish a successful connection with your PAR PixelPoint EPOS, PixelPoint B
 
 - PixelHQ and PixelPoint version 12.3 or above.
 - PixelPoint's EOI (External Order Interface).
-- The HubRise account setup with locations to connect. For more information about accounts and locations, see the [HubRise User Guide](/docs).
+- The HubRise account setup with locations to connect. For more information about accounts and locations, see the [HubRise User Guide](/docs/overview).

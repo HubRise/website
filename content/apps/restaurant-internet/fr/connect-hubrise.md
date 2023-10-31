@@ -24,9 +24,9 @@ Pour connecter la solution de commande en ligne Restaurant-internet avec HubRise
 4. Choisissez le point de vente que vous désirez connecter et cliquez **Autoriser** pour donner à Restaurant-internet l'accès à vos informations. Si plusieurs listes de clients ou catalogues sont disponibles, cliquez **Suivant** afin d'afficher les listes déroulantes correspondantes avant de cliquer sur **Autoriser**. Vous êtes redirigés vers votre tableau de bord Restaurant-internet, affichant les informations de votre point de vente.
    ![Connexion à HubRise - Connecté à HubRise](./images/001-restaurant-internet-connected.png)
 
-En cas de besoin, le support de Restaurant-internet peut vous venir en aide. Pour leur donner accès à votre compte HubRise, [ajoutez les permissions nécessaires](/apps/restaurant-internet/connexion-hubrise#donner-acc-s-au-support-de-restaurant-internet).
+En cas de besoin, le support de Restaurant-internet peut vous venir en aide. Pour leur donner accès à votre compte HubRise, [ajoutez les permissions nécessaires](/apps/restaurant-internet/connect-hubrise#give-access).
 
-## Donner accès au support de Restaurant-internet
+## Donner accès au support de Restaurant-internet {#give-access}
 
 Pour faciliter la prise en charge de vos demandes de support, nous vous recommandons de donner accès à votre compte HubRise à l'éditeur de la solution Restaurant-internet.
 

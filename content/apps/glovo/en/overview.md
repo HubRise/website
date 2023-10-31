@@ -17,12 +17,6 @@ app_info:
   contact:
 ---
 
----
-
-**IMPORTANT NOTE**: Full documentation of this integration will be available soon.
-
----
-
 ## Description
 
 Glovo is an online food ordering and delivery service platform for restaurants and convenience stores. Customers can order food online or via a mobile app. Glovo also offers on demand courier services for pharmacy, or other goods. They aim to give anyone access to anything in their city.

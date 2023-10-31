@@ -17,6 +17,6 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE:** This documentation is available <Link to="/fr/apps/captain" addLocalePrefix={false}>in French only</Link>.
+**IMPORTANT NOTE:** This documentation is available <Link href="/fr/apps/captain">in French only</Link>.
 
 ---

@@ -11,8 +11,8 @@ app_info:
   category: Loyalty and Marketing
   availability: United Kingdom, France
   price_range:
-  website: https://upxp.pro
-  contact: contact@upxp.pro
+  website: https://upxp.io/
+  contact: contact@upxp.io / +44 20 4577 0522
 ---
 
 ---

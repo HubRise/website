@@ -20,7 +20,7 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: Full documentation available <Link to="/fr/apps/my-lemonade" addLocalePrefix={false}>in French only</Link>.
+**IMPORTANT NOTE**: Full documentation available <Link href="/fr/apps/my-lemonade">in French only</Link>.
 
 ---
 

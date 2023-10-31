@@ -43,13 +43,13 @@ Just Eat Takeaway activera l'intégration HubRise pour votre enseigne et vous fo
 
 La plupart des applications ont besoin des codes ref des produits pour que les commandes soient correctement traitées. Vous pouvez soit saisir les codes ref des produits manuellement dans le back-office de Just Eat Takeaway, soit confier cette tâche à leur équipe d'assistance.
 
-Pour plus d'informations, voir la rubrique [Associer les codes ref](/apps/just-eat-takeaway/associer-codes-ref).
+Pour plus d'informations, voir la rubrique [Associer les codes ref](/apps/just-eat-takeaway/map-ref-codes).
 
 ## 3. Connectez le bridge
 
 ---
 
-**REMARQUE IMPORTANTE :** Just Eat Takeaway Bridge se connecte à HubRise au niveau du point de vente. Pour plus d'informations, voir la page [Points de vente](/docs/points-de-vente).
+**REMARQUE IMPORTANTE :** Just Eat Takeaway Bridge se connecte à HubRise au niveau du point de vente. Pour plus d'informations, voir la page [Points de vente](/docs/locations).
 
 ---
 
@@ -69,4 +69,4 @@ Pour connecter Just Eat Takeaway Bridge à HubRise, procédez comme suit :
 
 Une fois la connexion effectuée, vous devez renseigner quelques paramètres sur la page Configuration afin que les commandes soient transmises correctement à votre logiciel de caisse.
 
-Pour plus d'informations sur la page Configuration et la manière d'y accéder, voir la rubrique [Interface utilisateur](/apps/just-eat-takeaway/interface-utilisateur#page-de-configuration). Pour plus de détails sur la configuration des paramètres de Just Eat Takeaway Bridge, voir la rubrique [Configuration](/apps/just-eat-takeaway/configuration).
+Pour plus d'informations sur la page Configuration et la manière d'y accéder, voir la rubrique [Interface utilisateur](/apps/just-eat-takeaway/user-interface#configuration). Pour plus de détails sur la configuration des paramètres de Just Eat Takeaway Bridge, voir la rubrique [Configuration](/apps/just-eat-takeaway/configuration).

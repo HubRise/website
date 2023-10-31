@@ -50,7 +50,7 @@ Deliveroo Bridge can automatically push your HubRise catalog into Deliveroo ever
 1. In the **Catalog** section, tick the **Enable automatic catalog push** box.
 1. Click **Save**.
 
-## Information Sent to Deliveroo
+## Information Sent to Deliveroo {#information-sent}
 
 The following sections provide more details on how your HubRise catalog is mapped to Deliveroo.
 
@@ -126,9 +126,9 @@ For every `sku` object in a product, Deliveroo Bridge sends the following inform
 - `price`: The price difference with the main product, if present
 - `option_list_refs`: The list of options attached to the sku
 
-For more information about skus in the HubRise catalog, see [Skus](/developers/api/catalog-management/#skus).
+For more information about skus in the HubRise catalog, see [Skus](/developers/api/catalogs#skus).
 
-### Product Tags
+### Product Tags {#product-tags}
 
 The table below lists the tags that can be set on products.
 

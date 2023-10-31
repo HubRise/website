@@ -29,7 +29,7 @@ Les principales différences de paramétrage entre les comptes et les points de 
 - Les configurations de devise sont définies au niveau du compte et ne sont plus modifiables une fois celui-ci créé. Si vous avez fait une erreur dans la sélection de la devise, vous devrez créer un nouveau compte en sélectionnant cette fois-ci la devise correcte.
 - Si vous opérez sur plusieurs marchés associés à des devises différentes, vous devrez créer un compte pour chaque marché. La pratique recommandée consiste à créer un compte différent pour chaque pays dans lequel vous exploitez un marché, même si plusieurs pays partagent la même devise.
 
-## Créer un compte
+## Créer un compte {#create-account}
 
 Lors de la création d'un nouveau compte, le premier point de vente doit être défini dans le même temps en procédant comme suit :
 
@@ -53,11 +53,11 @@ Enfin, saisissez la **devise** correcte du marché sur lequel vous opérez.
 
 ---
 
-**FAQ associée** : [J'ai trop de comptes pour mon entreprise sur HubRise. Comment faire un nettoyage ?](/docs/faqs/comment-effacer-des-comptes/)
+**FAQ associée** : [J'ai trop de comptes pour mon entreprise sur HubRise. Comment faire un nettoyage ?](/docs/faqs/how-can-i-clear-accounts)
 
 ---
 
-## Modifier les détails du compte
+## Modifier les détails du compte {#modify-account-details}
 
 Pour modifier un compte existant, procédez comme suit :
 

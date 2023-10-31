@@ -48,7 +48,7 @@ Cette section de la page de configuration permet de spécifier les codes ref pou
 
 Deliveroo exige un accusé de réception pour chaque commande envoyée. Dans cette section, vous pouvez sélectionner le statut HubRise qui envoie l'accusé de réception à Deliveroo. Reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise pour trouver la valeur à utiliser.
 
-## Catalogue
+## Catalogue {#catalog}
 
 ![Page de configuration de Deliveroo Bridge, section Catalogue](./images/015-configuration-page-menu.png)
 

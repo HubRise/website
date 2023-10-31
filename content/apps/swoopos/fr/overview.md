@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Cette documentation est disponible <Link to="/apps/swoopos" addLocalePrefix={false}>en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** Cette documentation est disponible <Link href="/apps/swoopos">en anglais uniquement</Link>.
 
 ---
 

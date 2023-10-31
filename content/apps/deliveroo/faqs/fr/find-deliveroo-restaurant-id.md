@@ -23,7 +23,7 @@ Pour trouver votre identifiant de restaurant à l'aide de votre tablette Deliver
 
 Pour trouver votre identifiant de restaurant à partir de votre back-office Deliveroo :
 
-1. Connectez-vous à votre [back-office Deliveroo](https://restaurant-hub.deliveroo.net/).
+1. Connectez-vous à votre [back-office Deliveroo](https://restaurant-hub.deliveroo.net).
 1. Accédez à l'onglet **Accueil**, puis sélectionnez le point de vente et le compte appropriés dans les menus déroulants.
 1. Consultez l'adresse URL de la page et recherchez le paramètre intitulé `branchId`. Votre identifiant de restaurant Deliveroo est le numéro qui suit immédiatement le signe `=`. Si, par exemple, l'adresse URL est `https://restaurant-hub.deliveroo.net/analytics?branchId=278233&dateRangePreset=last_7_days&orgId=190921`, l'identifiant de restaurant Deliveroo est `278233`.
 

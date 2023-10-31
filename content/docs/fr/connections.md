@@ -16,7 +16,7 @@ HubRise vous permet de connecter un écosystème de solutions en constante évol
 
 Vous pouvez connecter toutes les applications disponibles sur la page [Apps](/apps) de HubRise. Si une application que vous souhaitez connecter n'apparaît pas sur cette page, vous pouvez contacter contact@hubrise.com pour savoir si une intégration est prévue.
 
-## Connecter une application
+## Connecter une application {#connect}
 
 Les applications sont connectées soit à un compte HubRise, soit à un point de vente. Le niveau de connexion dépend des données que vous devez partager avec l'application : par exemple, les logiciels de caisse ou de commande en ligne se connectent généralement aux points de vente, tandis que les solutions de marketing se connectent indifféremment aux comptes ou aux points de vente.
 
@@ -35,7 +35,7 @@ Certaines applications doivent être connectées au niveau de **tous les points 
 
 ---
 
-**REMARQUE IMPORTANTE** : si vous devez connecter plusieurs fois de la même application à un point de vente HubRise unique, consultez la section [Comment connecter plusieurs fois la même application ?](/docs/faqs/connecter-plusieurs-fois-la-meme-application/)
+**REMARQUE IMPORTANTE** : si vous devez connecter plusieurs fois de la même application à un point de vente HubRise unique, consultez la section [Comment connecter plusieurs fois la même application ?](/docs/faqs/connect-multiple-instances-same-app)
 
 ---
 
@@ -45,7 +45,7 @@ Certaines applications sont accessibles depuis HubRise. Si tel est le cas, vous 
 
 ![Connexion à HubRise - Ouvrir une application](./images/011-2x-connections-open-app.png)
 
-## Afficher l'activité de connexion
+## Afficher l'activité de connexion {#connection-activity}
 
 Pour afficher un graphique montrant le nombre de transactions enregistrées au cours des 30 derniers jours, sélectionnez **CONNEXIONS** > **Actions** > **Afficher l'activité**. C'est un moyen pratique de vérifier si des transactions transitent via la connexion.
 
@@ -53,11 +53,11 @@ Pour afficher un graphique montrant le nombre de transactions enregistrées au c
 
 ---
 
-**FAQ associée** : [Comment vérifier que la connexion entre mon système et HubRise fonctionne correctement ?](/docs/faqs/verifier-connexion-entre-mon-systeme-et-hubrise/)
+**FAQ associée** : [Comment vérifier que la connexion entre mon système et HubRise fonctionne correctement ?](/docs/faqs/check-connection-between-my-system-and-hubrise)
 
 ---
 
-## Afficher les logs de connexion
+## Afficher les logs de connexion {#connection-logs}
 
 Chaque application connectée génère des logs, qui sont enregistrés. Vous pouvez utiliser ces logs pour analyser les communications entre les systèmes et déterminer la cause des incidents éventuels.
 
@@ -100,15 +100,15 @@ Chaque entrée comprend les informations suivantes :
 
 Vous pouvez afficher des détails supplémentaires en cliquant sur un log, notamment le contenu de la requête et de la réponse correspondante. Pour télécharger le contenu de la requête ou de la réponse, sélectionnez l'icône de téléchargement. <InlineImage width="15" height="14">![Icône de téléchargement](../images/058-download.png)</InlineImage>. La requête ou la réponse sélectionnée sera délivrée sous forme de fichier JSON.
 
-Pour plus d'informations, voir la rubrique [Comprendre les logs HubRise](/docs/hubrise-logs). Pour une référence complète sur l'API HubRise, voir la [page de référence de l'API HubRise](/developers/api/general-concepts) (en anglais).
+Pour plus d'informations, voir la rubrique [Comprendre les logs HubRise](/docs/hubrise-logs/overview). Pour une référence complète sur l'API HubRise, voir la [page de référence de l'API HubRise](/developers/api/general-concepts) (en anglais).
 
 ---
 
-**FAQ associée** : [Comment vérifier que la connexion entre mon système et HubRise fonctionne correctement ?](/docs/faqs/verifier-connexion-entre-mon-systeme-et-hubrise/)
+**FAQ associée** : [Comment vérifier que la connexion entre mon système et HubRise fonctionne correctement ?](/docs/faqs/check-connection-between-my-system-and-hubrise)
 
 ---
 
-## Bloquer ou déconnecter une application
+## Bloquer ou déconnecter une application {#block-or-disconnect}
 
 HubRise permet de bloquer ou déconnecter les applications :
 

@@ -72,7 +72,7 @@ To configure this information, follow these steps:
 1. Fill in the information required under **Billing details**.
 1. Click **Update**.
 
-For more information, see section [Edit Billing Information](#edit-billing-information).
+For more information, see section [Update Billing Information](/docs/payment#update-billing-information) of the Payment page.
 
 ## Add a Payment Method
 
@@ -86,4 +86,4 @@ To add a payment method to your billing account, follow these steps:
 1. Click **Add payment method** and enter your credit card information. Credit cards must be valid to be accepted.
 1. When finished, click **Save**.
 
-For more information, see section [Add a Payment Method](#add-a-payment-method).
+For more information, see section [Add a Payment Method](/docs/payment#add-payment-method) of the Payment page.

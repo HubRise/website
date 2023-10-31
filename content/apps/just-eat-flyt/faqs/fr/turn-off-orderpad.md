@@ -16,7 +16,7 @@ Après avoir connecté votre enseigne à HubRise, vous pouvez continuer à gére
 
 Une fois qu'une commande a été acceptée dans la tablette, vous la voyez apparaître dans votre logiciel de caisse connecté et vous pouvez la gérer à partir de là.
 
-Si vous souhaitez gérer les commandes directement à partir de votre logiciel de caisse connecté sans interagir avec la tablette, vous pouvez demander à l'équipe de Just Eat d'activer l'auto-acceptation pour votre magasin. Pour plus d'informations sur l'auto-acceptation et sa disponibilité sur les différents marchés de Just Eat, voir la rubrique [Activer l'auto-acceptation](/apps/just-eat-flyt/faqs/auto-acceptation/).
+Si vous souhaitez gérer les commandes directement à partir de votre logiciel de caisse connecté sans interagir avec la tablette, vous pouvez demander à l'équipe de Just Eat d'activer l'auto-acceptation pour votre magasin. Pour plus d'informations sur l'auto-acceptation et sa disponibilité sur les différents marchés de Just Eat, voir la rubrique [Activer l'auto-acceptation](/apps/just-eat-flyt/faqs/auto-accept).
 
 ---
 

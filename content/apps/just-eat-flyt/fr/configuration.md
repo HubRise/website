@@ -46,7 +46,7 @@ Les clients de Just Eat peuvent régler leur commande en espèces lorsque le res
 
 Cette section de la page de configuration permet de spécifier les codes ref pour les paiements en ligne et en espèces. Pour connaître les codes à utiliser, consultez la documentation de votre logiciel de caisse sur le site internet de HubRise.
 
-## Catalogue
+## Catalogue {#catalog}
 
 ![Page de configuration de Just Eat Flyt Bridge, section Catalogue](./images/012-just-eat-configuration-page-menu.png)
 

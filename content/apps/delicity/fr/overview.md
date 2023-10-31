@@ -17,12 +17,6 @@ app_info:
   contact: 04 83 58 06 48
 ---
 
----
-
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
-
----
-
 ## Description
 
 Delicity est une plateforme de commande et de livraison de repas disponible sur Internet, App Store et Play Store. Contrairement aux plateformes traditionnelles, Delicity n'applique pas de commission sur les commandes, mais facture un coût fixe par commande ainsi qu'un coût de livraison 20% moins élevé qu'avec des coursiers indépendants.

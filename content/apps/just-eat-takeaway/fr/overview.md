@@ -36,7 +36,7 @@ Just Eat Takeaway Bridge vous permet de connecter les plateformes suivantes à H
 
 ---
 
-**REMARQUE IMPORTANTE :** pour connecter une enseigne à une autre plateforme Just Eat Takeaway.com, vous devez passer par l'application [Just Eat Flyt Bridge](/apps/just-eat-flyt/).
+**REMARQUE IMPORTANTE :** pour connecter une enseigne à une autre plateforme Just Eat Takeaway.com, vous devez passer par l'application [Just Eat Flyt Bridge](/apps/just-eat-flyt/overview).
 
 ---
 

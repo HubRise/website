@@ -36,7 +36,7 @@ Just Eat Takeaway Bridge allows you to connect the following platforms to HubRis
 
 ---
 
-**IMPORTANT NOTE:** To connect a store on a different Just Eat Takeaway.com platform, you should use [Just Eat Flyt Bridge](/apps/just-eat-flyt/) instead.
+**IMPORTANT NOTE:** To connect a store on a different Just Eat Takeaway.com platform, you should use [Just Eat Flyt Bridge](/apps/just-eat-flyt/overview) instead.
 
 ---
 

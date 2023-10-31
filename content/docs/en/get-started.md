@@ -16,11 +16,11 @@ To start using HubRise, create a User Profile. Registration is free, and only ta
 
 ---
 
-**Related FAQ**: How Do I Create a User Profile for [Another Person](/docs/faqs/create-a-user-profile-for-another-person/) or for [Another Business?](/docs/faqs/create-an-account-for-another-business/)
+**Related FAQ**: How Do I Create a User Profile for [Another Person](/docs/faqs/create-a-user-profile-for-another-person) or for [Another Business?](/docs/faqs/create-an-account-for-another-business-share-access)
 
 ---
 
-## Create an Account
+## Create an Account {#create-account}
 
 When you log in to HubRise for the first time, you will be asked to create an Account and a Location.
 A HubRise Account identifies your brand, while a Location refers to the point of sales within this brand, typically the physical outlet.
@@ -36,11 +36,11 @@ A HubRise Account identifies your brand, while a Location refers to the point of
 
 ![Create an account on HubRise](./images/064-2x-create-account.png)
 
-A small business will have one Account with one Location, while a larger business will have one Account with multiple Locations. For more information, see [Accounts](/docs/account/) and [Locations](/docs/locations/).
+A small business will have one Account with one Location, while a larger business will have one Account with multiple Locations. For more information, see [Accounts](/docs/account) and [Locations](/docs/locations).
 
 ![Accounts and Locations example](./images/046-2x-accounts-locations.png)
 
-A User Profile can have access to multiple Accounts. On the other hand, different User Profiles can have access to the same Account with different permission levels. For more information, see [Permissions](/docs/permissions/).
+A User Profile can have access to multiple Accounts. On the other hand, different User Profiles can have access to the same Account with different permission levels. For more information, see [Permissions](/docs/permissions).
 
 ## Set Language Preference
 
@@ -71,7 +71,7 @@ To log in to HubRise, visit the [HubRise Login page](https://manager.hubrise.com
 
 ---
 
-**Related FAQ**: [How Do I Check If I Already Have a User Profile in HubRise?](/docs/faqs/check-if-i-already-have-a-user-profile-in-hubrise/)
+**Related FAQ**: [How Do I Check If I Already Have a User Profile in HubRise?](/docs/faqs/check-if-i-already-have-a-user-profile-in-hubrise)
 
 ---
 

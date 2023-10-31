@@ -19,12 +19,12 @@ These names may appear in customer receipts.
 
 ## Orders
 
-### Order Statuses
+### Order Statuses {#order-statuses}
 
 In this section, you can customise how to map order status changes in HubRise back to PrestaShop.
 To ignore an order status change in HubRise, select **Do nothing**.
 
-### Service Types
+### Service Types {#service-types}
 
 The carriers you define in PrestaShop might require the corresponding ref code entry. Refer to your EPOS documentation on the HubRise website to verify.
 

@@ -5,7 +5,7 @@ position: 1
 layout: documentation
 meta:
   title: Présentation générale | Smood | HubRise
-  description: Présentation générale de Smood, les raisons de connecter votre plateforme de livraison de repas à HubRise et fonctionnalités de l'intégration avec HubRise.
+  description: Présentation de Smood, avantages de la connexion à HubRise, fonctionnalités de l'intégration. Synchronisez les données entre logiciel de caisse et applications.
 gallery:
   - __gallery-001.png
   - __gallery-002.png
@@ -17,37 +17,33 @@ app_info:
   contact:
 ---
 
----
-
-**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link to="/apps/smood" addLocalePrefix={false}>en anglais uniquement</Link>.
-
----
-
 ## Description
 
-Smood est une plateforme de livraison de repas présente dans plus de 25 villes en Suisse. Smood livre uniquement en voiture.
+Smood offre des services de livraison à domicile dans 25 villes en Suisse. Bien que Smood se soit initialement concentré sur la livraison de repas, il a élargi son offre pour inclure des milliers de produits dans différentes catégories telles que les épiceries, les fleuristes, les caves à vin, les parapharmacies, les produits de beauté, et bien plus encore. Cette expansion a été rendue possible grâce à des partenariats avec des marques locales et nationales de premier plan, notamment Migros.
 
-En devenant partenaires avec Smood, les restaurateurs élargissent leur clientèle et augmentent leur volume de commandes. Smood assure le marketing, la prise de commandes et la livraison. Les restaurateurs peuvent ainsi se concentrer sur la préparation des plats.
+Engagé dans un processus continu de responsabilité sociale, Smood veille à ce que tout le personnel de livraison soit employé par l'entreprise, et pour une manipulation optimale, les commandes sont exclusivement livrées en voiture.
 
-Smood propose également un service de livraison en marque blanche, appelé Dismatch, qui est [également intégré à HubRise](/apps/smood-dismatch). Ce service permet aux restaurateurs d'externaliser leurs livraisons.
+En s’associant à Smood, les enseignes peuvent toucher une clientèle plus large et profiter d’une augmentation de leurs revenus. Smood s'occupe de toutes les opérations de marketing et de livraison, permettant aux partenaires de se concentrer sur leurs activités principales.
+
+En plus de ses services standards, Smood propose aussi un service de livraison en marque blanche nommé Dismatch, qui est également intégré à HubRise. Ce service permet aux partenaires d'externaliser les livraisons sans être incluses dans la plateforme de commande Smood, leur offrant ainsi une plus grande flexibilité et efficacité. Pour plus d'informations, voir la documentation [Dismatch](/apps/smood-dismatch/overview).
 
 ## Fonctionnalités de l'intégration
 
-Connecter Smood à HubRise permet à votre plateforme de commande et de livraison de repas de :
+Connecter Smood permet à votre plateforme de commande et de livraison de :
 
-- Envoyer les commandes à HubRise, dont les statuts de commande.
+- Envoyer les commandes à HubRise, y compris le statut de la commande.
 - Envoyer les informations clients à HubRise.
 - Recevoir un catalogue de HubRise.
 - Synchroniser l'inventaire avec HubRise.
 
-Smood peut être connecté à HubRise depuis le back-office de Smood, après en avoir fait la demande au support de Smood.
+Vous pouvez connecter Smood à HubRise depuis le back-office Smood.
 
 ## Pourquoi se connecter ?
 
-En connectant Smood à HubRise, vous permettez à votre plateforme commande et de livraison de repas de communiquer avec les autres applications que vous utilisez de manière quotidienne. Recevez les commandes provenant de Smood sur votre logiciel de caisse. Envoyez ces mêmes commandes vers une imprimante autonome, un écran cuisine ou votre système de gestion de stock. Envoyez votre menu dans Smood.
+La connexion de Smood à HubRise permet à votre plateforme de commande et de livraison de repas de communiquer avec les autres applications que vous utilisez tous les jours. Par exemple, vous pouvez recevoir vos commandes Smood directement dans votre logiciel de caisse ou votre écran cuisine, également connectés à HubRise, imprimer vos commandes avec une imprimante connectée, gérer votre inventaire et envoyer votre menu HubRise à Smood.
 
 Grâce à HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes avec votre logiciel de caisse, votre solution de commande en ligne, les plateformes de livraison de repas, les solutions de gestion de livreurs ou de services de livraison, les solutions eMarketing (SMS / eMailing), business intelligence, systèmes de gestion de stock et de fidélisation client, et bien d'autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, consultez notre [page Apps](/apps).
 
 ## Prérequis
 
-Pour établir la connexion entre Smood et HubRise, vous devez être un partenaire de Smood.
+Pour pouvoir connecter Smood à HubRise, votre restaurant doit être partenaire de Smood.

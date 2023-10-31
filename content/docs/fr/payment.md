@@ -8,13 +8,13 @@ meta:
   description: Comment gérer les paiements et les factures sur HubRise.
 ---
 
-Les comptes et les points de vente configurés avec une formule payante font l'objet d'un paiement mensuel à HubRise lorsqu'ils dépassent la limite d'[utilisation](/docs/utilisation-formule#plans-d-utilisation) gratuite. Pour obtenir des informations complètes sur les prix, consultez la [page de tarifs de HubRise](/tarifs/).
+Les comptes et les points de vente configurés avec une formule payante font l'objet d'un paiement mensuel à HubRise lorsqu'ils dépassent la limite d'[utilisation](/docs/usage-plan#plan) gratuite. Pour obtenir des informations complètes sur les prix, consultez la [page de tarifs de HubRise](/tarifs).
 
 Vous pouvez configurer votre méthode de paiement dans la section **CONFIGURATION** > **Paiement**. Pour automatiser les paiements, vous devez disposer d'une carte de crédit. Les prélèvements SEPA ne sont pas possibles. Le virement bancaire est accepté en cas d'engagement sur 12 mois minimum.
 
 Le paiement d'un abonnement s'effectue toujours en euros, quelle que soit la devise du compte.
 
-## Paiements au niveau du compte ou du point de vente
+## Paiements au niveau du compte ou du point de vente {#account-or-location-payments}
 
 Votre abonnement HubRise peut être facturé au niveau du compte ou du point de vente.
 
@@ -45,7 +45,7 @@ Lorsque la facturation au niveau du compte est activée, le cycle de facturation
 - Si la prochaine date de facturation du point de vente est antérieure à la prochaine date de facturation du compte, vous sera immédiatement facturé au prorata temporis afin d'aligner la prochaine date de facturation du point de vente sur celle du compte.
 - Si la prochaine date de facturation du point de vente est postérieure à la prochaine date de facturation du compte, rien ne changera jusqu'à la prochaine date de facturation du compte. Vous serez alors facturé au prorata temporis et la prochaine date de facturation de Location s'alignera sur celle du compte.
 
-## Cycles de facturation
+## Cycles de facturation {#billing-cycles}
 
 Les cycles de facturation ont une durée d'un mois et débutent le jour même de la création du compte. La date de début du cycle de facturation ne peut pas être modifiée.
 
@@ -61,7 +61,7 @@ Les informations de facturation incluses dans les factures peuvent être configu
 1. Renseignez les informations requises à la section **Détails de facturation**.
 1. Cliquez sur **Mettre à jour**.
 
-## Ajouter une méthode de paiement
+## Ajouter une méthode de paiement {#add-payment-method}
 
 Pour ajouter ou mettre à jour une méthode de paiement au niveau du compte, procédez comme suit :
 
@@ -92,23 +92,23 @@ Pour supprimer une méthode de paiement, procédez comme suit :
 
 ---
 
-**FAQ associée** : [Comment cesser le paiement de mon abonnement ?](/docs/faqs/arreter-de-payer-abonnement/)
+**FAQ associée** : [Comment cesser le paiement de mon abonnement ?](/docs/faqs/stop-paying-subscription)
 
 ---
 
-## Traiter les demandes de paiement
+## Traiter les demandes de paiement {#process-requests-for-payment}
 
-Lorsque vous changez de formule tarifaire, le paiement doit être autorisé avant que la carte de crédit ne puisse être débitée. Les utilisateurs de niveau administrateur recevront des notifications leur rappelant d'achever le processus de paiement. Pour plus d'informations sur les notifications, voir la rubrique [Notifications sur les formules](/docs/utilisation-formule#notifications-sur-les-formules/).
+Lorsque vous changez de formule tarifaire, le paiement doit être autorisé avant que la carte de crédit ne puisse être débitée. Les utilisateurs de niveau administrateur recevront des notifications leur rappelant d'achever le processus de paiement. Pour plus d'informations sur les notifications, voir la rubrique [Notifications sur les formules](/docs/usage-plan#plan-notifications).
 
 Pour traiter une demande de paiement à partir de la notification, procédez comme suit :
 
 1. Connectez-vous à votre back-office HubRise.
-1. Assurez-vous qu'une carte de crédit est enregistrée sur votre compte ou votre point de vente. Si tel n'est pas le cas, consultez les instructions indiquées à la rubrique [Ajouter une méthode de paiement](#ajouter-un-mode-de-paiement).
+1. Assurez-vous qu'une carte de crédit est enregistrée sur votre compte ou votre point de vente. Si tel n'est pas le cas, consultez les instructions indiquées à la rubrique [Ajouter une méthode de paiement](#add-payment-method).
 1. Cliquez sur **la payer en ligne ou télécharger le PDF**, puis sur **Payer**. Pour consulter toutes les demandes de paiement, allez dans **PARAMÈTRES**.
 
 ---
 
-**FAQ associée** : [Que se passe-t-il en cas de dépassement de quota de ma formule gratuite ?](/docs/faqs/formule-gratuite-quota-depasse-ce-qui-se-passe/), [Comment payer ma première facture ?](/docs/faqs/payer-la-premiere-facture/), [Ma formule peut-elle être interrompue durant les phases de configuration et de test ?](/docs/faqs/formule-interrompue-pendant-les-phases-de-configuration-et-de-test/)
+**FAQ associée** : [Que se passe-t-il en cas de dépassement de quota de ma formule gratuite ?](/docs/faqs/free-plan-quota-exceeded-what-happens), [Comment payer ma première facture ?](/docs/faqs/pay-first-invoice), [Ma formule peut-elle être interrompue durant les phases de configuration et de test ?](/docs/faqs/pause-plan-during-setup-and-test-phases)
 
 ---
 

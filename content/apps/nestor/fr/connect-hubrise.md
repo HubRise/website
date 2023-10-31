@@ -32,15 +32,15 @@ Pour établir la connexion entre un point de vente Nestor et HubRise :
    ![Connexion à HubRise - Affichage du code](./images/003-nestor-connection-code.png)
 1. Cliquez sur **Valider**. L'interface WebNES affiche **Connecté à HubRise**, ainsi que les informations de votre point de vente.
    ![Connexion à HubRise - Informations du point de vente](./images/004-nestor-connected.png)
-1. En cas de besoin, l'éditeur du logiciel Nestor peut vous venir en aide. Pour leur donner accès à votre compte HubRise, [ajoutez les permissions nécessaires](/apps/nestor/connexion-hubrise#donner-acc-s-au-support-de-nestor).
+1. En cas de besoin, l'éditeur du logiciel Nestor peut vous venir en aide. Pour leur donner accès à votre compte HubRise, [ajoutez les permissions nécessaires](/apps/nestor/connect-hubrise#give-access).
 
 ---
 
-**REMARQUE IMPORTANTE :** Vous devrez vous connecter à un compte HubRise existant, ou créer un nouveau compte pour terminer d'établir la connexion. Pour plus d'informations sur la manière de créer un profil utilisateur ou vous connecter à HubRise, consultez notre [Guide de prise en main](/docs/getting-started/).
+**REMARQUE IMPORTANTE :** Vous devrez vous connecter à un compte HubRise existant, ou créer un nouveau compte pour terminer d'établir la connexion. Pour plus d'informations sur la manière de créer un profil utilisateur ou vous connecter à HubRise, consultez notre [Guide de prise en main](/docs/get-started).
 
 ---
 
-## Donner accès au support de Nestor
+## Donner accès au support de Nestor {#give-access}
 
 Pour faciliter la prise en charge de vos demandes de support, nous vous recommandons de donner accès à votre compte HubRise à l'éditeur de la solution Nestor.
 

@@ -8,6 +8,6 @@ meta:
   description: Questions et réponses fréquemment posées sur l'intégration de Uber Eats avec HubRise.
 ---
 
-- [Puis-je recevoir les commandes dans ma logiciel de caisse sans passer par la tablette Uber Eats&nbsp;?](/apps/uber-eats/faqs/recevoir-commandes-sans-tablette/)
-- [Puis-je connecter plusieurs magasins Uber Eats au même point de vente HubRise&nbsp;?](/apps/uber-eats/faqs/connecter-plusieurs-restaurants-uber-eats/)
-- [Pourquoi mes commandes ne sont-elles pas reçues par HubRise&nbsp;?](/apps/uber-eats/faqs/commandes-non-recues/)
+- [Puis-je recevoir les commandes dans ma logiciel de caisse sans passer par la tablette Uber Eats&nbsp;?](/apps/uber-eats/faqs/send-orders-to-epos-without-tablet)
+- [Puis-je connecter plusieurs magasins Uber Eats au même point de vente HubRise&nbsp;?](/apps/uber-eats/faqs/connecting-multiple-instances-uber-eats)
+- [Pourquoi mes commandes ne sont-elles pas reçues par HubRise&nbsp;?](/apps/uber-eats/faqs/orders-not-received-errors)

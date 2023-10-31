@@ -17,6 +17,6 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: This documentation is available <Link to="/fr/apps/la-toque-magique" addLocalePrefix={false}>in French only</Link>.
+**IMPORTANT NOTE**: This documentation is available <Link href="/fr/apps/la-toque-magique">in French only</Link>.
 
 ---

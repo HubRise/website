@@ -12,37 +12,37 @@ This chapter takes a close look at the API. If you're looking for a brief introd
 
 ## 1. Endpoints
 
-HubRise API is based on REST. It uses POST, GET, PATCH, PUT and DELETE HTTP methods to create, retrieve, list, update and delete resources. Data is transmitted in the JSON format.
+HubRise API is based on REST. It uses **POST**, **GET**, **PATCH**, **PUT** and **DELETE** HTTP methods to create, retrieve, list, update and delete resources. Data is exchanged in JSON format.
 
-An **endpoint** is an API operation. It comprises a URL and HTTP method. Endpoints URLs are rooted at https://api.hubrise.com/v1.
+An **endpoint** defines an API function, consisting of a URL and HTTP method. Endpoints URLs are rooted at `https://api.hubrise.com/v1`.
 
-Versions are included in the endpoints URLs for compatibility purposes. No breaking change will be made without changing the version, and old versions will be supported for a while.
+API versions are embedded in the endpoints URLs for compatibility purposes. Breaking changes will only occur with version updates, and older versions will remain supported for a while.
 
-Every API request must include an access token, which uniquely identifies the connection. The token is passed in the `X-Access-Token` header:
+Each API call must include an access token, which uniquely identifies the connection. The token is passed in the `X-Access-Token` header:
 
 ```http
 GET https://api.hubrise.com/v1/location/orders
 X-Access-Token: [your_access_token]
 ```
 
-Access tokens are created via OAuth 2.0. See [Authentication](/developers/api/authentication).
+Access tokens are generated via OAuth 2.0. For more details, see [Authentication](/developers/api/authentication).
 
-**Note**: further in this documentation, the root part of the request URLs will be omitted. For example, we will use `GET /location/orders` in lieu of `GET https://api.hubrise.com/v1/location/orders`.
+In this documentation, URLs are abbreviated for clarity. For instance, `GET /location/orders` will be used instead of the full `GET https://api.hubrise.com/v1/location/orders`.
 
 ## 2. Pagination
 
-**Index endpoints** return a collection of results. For example, `GET /location/orders` is an index endpoint.
+Some endpoints like `GET /location/orders` return a collection of results. They are called **index endpoints**.
 
-Index endpoints paginate results. A maximum of 100 results are returned in a response. If more results exist, the request returns the first set of results along with a `X-Cursor-Next` response header.
+These endpoints paginate their results. Each response can contain up to 100 results. If there are more results available, the response will include the initial batch and an `X-Cursor-Next` header.
 
-To get the next set of results, send a new request and include the previously returned cursor value in the `cursor` URL query parameter. Repeat until the request returns no cursor value, which indicates the last set has been returned.
+To retrieve the next batch of results, send a new request and include the previously returned cursor value in the `cursor` URL query parameter. Repeat until there is no cursor value in the response, which indicates that you have received the final batch.
 
-Index endpoints accept 2 optional parameters:
+All index endpoints accept two parameters:
 
-- `count`: the maximum number of results to return per request. The default (and maximum) value is 100. Decrease this value if needed.
-- `cursor`: the next subset of results to return. Must be set to the value received in the previous `X-Cursor-Next` response header to iterate through the results. If this parameter is omitted, the first set of results is returned.
+- `count`: The maximum number of results to return per request. The default and maximum value is 100. Decrease this value if needed.
+- `cursor`: The next batch of results to return. Must be set to the value received in the previous `X-Cursor-Next` response header to iterate through the results. If left unset, the first batch is returned.
 
-##### Example for a request returning 150 results:
+##### Example of request with 150 results:
 
 First request:
 
@@ -72,7 +72,7 @@ Body:
   ]
 ```
 
-## 3. Rate Limiting
+## 3. Rate Limiting {#rate-limiting}
 
 If a connection makes too many requests over a defined time window, HubRise will return a `429` (Too Many Requests) HTTP status code. This keeps HubRise performance consistent for all users.
 
@@ -103,7 +103,7 @@ This parameter is **not** accepted in a GET request, since a GET request should 
 
 ## 5. Common Data Types
 
-### Monetary Values
+### Monetary Values {#monetary-values}
 
 A number with 2 decimal digits, followed by a space and the [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency name. Can be preceded by a `-` sign for negative amounts.
 
@@ -112,7 +112,7 @@ A number with 2 decimal digits, followed by a space and the [ISO 4217](https://e
 - `8.90 EUR`
 - `-0.05 GBP`
 
-### Decimal Values
+### Decimal Values {#decimal-values}
 
 HubRise represent decimal values as **strings** to eliminate any ambiguity and loss of precision during the parsing.
 
@@ -125,7 +125,7 @@ In order to enforce the use of a "precise" decimal type and to avoid the default
 - `"1"`
 - `"-2.5"`
 
-### Dates and Times
+### Dates and Times {#dates-and-times}
 
 Dates and times are encoded in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601).
 
@@ -136,7 +136,7 @@ Locations have a default timezone, which can be configured from the back office.
 - Date: `2020-08-20`
 - Time: `2020-08-20T06:42:46+02:00`
 
-### Days of the Week
+### Days of the Week {#days-of-the-week}
 
 A `DOW` (= "Days of the Week") value designates specific days of the week.
 
@@ -147,7 +147,7 @@ It is a string of 7 characters, where each character represents a day of the wee
 - `1234567`: every day of the week
 - `12----7`: Monday, Tuesday and Sunday
 
-### Timezones
+### Timezones {#timezones}
 
 Timezones are encoded in this format:
 
@@ -218,7 +218,7 @@ The response may also include a field breakdown, like this:
 }
 ```
 
-## 8. Private Refs
+## 8. Private Refs {#private-refs}
 
 HubRise allows API clients to attach their own internal references to various objects, such as orders, order items, customers, and a few others. This can be convenient when clients need to link HubRise objects to their internal objects, but they cannot store HubRise ids.
 
@@ -278,7 +278,7 @@ HubRise indexes private refs efficiently, which allows clients to use private re
 ]
 ```
 
-## 9. CORS
+## 9. CORS {#cors}
 
 CORS (Cross-Origin Resource Sharing) is a mechanism that restricts the origins that can execute requests against a given API.
 

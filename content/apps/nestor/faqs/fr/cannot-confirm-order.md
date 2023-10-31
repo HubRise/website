@@ -10,4 +10,4 @@ meta:
 
 Il peut arriver que Nestor ne vous laisse pas valider une commande HubRise.
 
-Une raison courante est la présence de produits non reconnus dans la commande. Pour remédier à ce problème, suivez les instructions indiquées dans la section [Recevoir des commandes](/apps/nestor/commandes#recevoir-des-commandes).
+Une raison courante est la présence de produits non reconnus dans la commande. Pour remédier à ce problème, suivez les instructions indiquées dans la section [Recevoir des commandes](/apps/nestor/orders#receive-orders).

@@ -19,6 +19,10 @@ Choose the language to use for generic items such as `Delivery charge`. These na
 
 ## Orders
 
+### Order Statuses
+
+Deliveroo requires you to acknowledge every order you receive. In this section, you can select which HubRise status sends an order confirmation back to Deliveroo. Refer to your EPOS documentation on the HubRise website to verify the correct value.
+
 ### Service Types
 
 Service types such as delivery by Deliveroo, restaurant delivery or takeaway might require the corresponding ref code entry. Refer to your EPOS documentation on the HubRise website to verify.
@@ -45,11 +49,15 @@ Deliveroo customers can pay for their order either online or by cash for restaur
 
 This section of the configuration page allows you to specify the ref codes for these two payment methods. Refer to your EPOS documentation on the HubRise website to verify the correct codes to use.
 
-### Order Statuses
+## Customers
 
-Deliveroo requires you to acknowledge every order you receive. In this section, you can select which HubRise status sends an order confirmation back to Deliveroo. Refer to your EPOS documentation on the HubRise website to verify the correct value.
+![Deliveroo Bridge configuration page, Customers section](./images/016-configuration-page-customers.png)
 
-## Catalog
+Enable the **Duplicate phone access code in delivery notes** option if your EPOS lacks native support for fetching phone access codes.
+
+All EPOS systems integrated with HubRise can read delivery notes. If your EPOS has native support and this option is enabled, the code will appear duplicated. Refer to your EPOS documentation on the HubRise website to verify the correct value.
+
+## Catalog {#catalog}
 
 ![Deliveroo Bridge configuration page, Catalog section](./images/015-configuration-page-menu.png)
 

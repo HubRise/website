@@ -52,7 +52,7 @@ Uber Eats Bridge can automatically push your catalog to Uber Eats every time it 
 1. In the **Catalog** section, tick **Enable automatic catalog push**.
 1. Click **Save**.
 
-## Information Sent to Uber Eats
+## Information Sent to Uber Eats {#information-sent-to-uber-eats}
 
 The following sections provide more details on how your HubRise catalog is mapped to Uber Eats.
 
@@ -105,7 +105,7 @@ The order in which categories and products appear on HubRise is maintained on Ub
 
 ### Products and Skus
 
-For every [product](/developers/api/catalog-management/#products) with multiple skus, Uber Eats Bridge sends the following information to Uber Eats:
+For every [product](/developers/api/catalogs#products) with multiple skus, Uber Eats Bridge sends the following information to Uber Eats:
 
 - `ref`: The value `MULTISKU` is used for all products.
 - `name`: The name of the product.
@@ -123,9 +123,9 @@ For every `sku` object in a product, Uber Eats Bridge sends the following inform
 - `price`: The price difference with the main product, if present
 - `option_list_refs`: The list of options attached to the sku
 
-For more information about skus in the HubRise catalog, see [Skus](/developers/api/catalog-management/#skus).
+For more information about skus in the HubRise catalog, see [Skus](/developers/api/catalogs#skus).
 
-### Product Tags
+### Product Tags {#product-tags}
 
 The table below lists the tags that can be set on products.
 
@@ -163,4 +163,4 @@ By default, when customers order a deal, they must choose one product for every 
 
 ### Availability
 
-Every time you push your HubRise catalog to Uber Eats, you also update the availability of your menu, based on the values you set from the [Configuration page](/apps/uber-eats/configuration/#menu) of Uber Eats Bridge.
+Every time you push your HubRise catalog to Uber Eats, you also update the availability of your menu, based on the values you set from the [Configuration page](/apps/uber-eats/configuration#opening-hours) of Uber Eats Bridge.

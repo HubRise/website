@@ -23,6 +23,6 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Cette documentation est disponible <Link to="/apps/orderwire" addLocalePrefix={false}>en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** Cette documentation est disponible <Link href="/apps/orderwire">en anglais uniquement</Link>.
 
 ---

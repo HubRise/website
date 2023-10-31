@@ -10,7 +10,7 @@ meta:
 
 Avec Deliveroo Bridge, vous pouvez envoyer votre catalogue HubRise vers votre restaurant Deliveroo en un seul clic.
 
-Vous pouvez également configurer le bridge de manière à envoyer votre catalogue vers Deliveroo à chaque fois qu'il est modifié sur HubRise. Pour plus d'informations, voir [Catalogue](/apps/deliveroo/configuration#catalogue).
+Vous pouvez également configurer le bridge de manière à envoyer votre catalogue vers Deliveroo à chaque fois qu'il est modifié sur HubRise. Pour plus d'informations, voir [Catalogue](/apps/deliveroo/configuration#catalog).
 
 Cette page explique comment envoyer votre catalogue et quelles informations sont envoyées à Deliveroo.
 
@@ -20,8 +20,8 @@ Pour mettre à jour votre menu Deliveroo, vous devez préalablement avoir un cat
 
 Vous pouvez aussi alimenter un catalogue HubRise en récupérant un menu existant depuis Deliveroo ou Uber Eats. Pour plus d'informations, consultez ces liens :
 
-- [Récupérer un catalogue depuis Deliveroo](/apps/deliveroo/recuperer-catalogue)
-- [Récupérer un catalogue depuis Uber Eats](/apps/uber-eats/recuperer-catalogue)
+- [Récupérer un catalogue depuis Deliveroo](/apps/deliveroo/pull-catalog)
+  **- <Link href="/apps/uber-eats/pull-catalog">Récupérer un catalogue depuis Uber Eats (en anglais)</Link>**
 
 ## Envoi manuel du catalogue
 
@@ -50,7 +50,7 @@ Deliveroo Bridge peut envoyer automatiquement votre catalogue HubRise dans Deliv
 1. Dans la rubrique **Catalogue**, cochez la case **Activer l'envoi automatique du catalogue**.
 1. Cliquez sur **Enregistrer**.
 
-## Informations envoyées à Deliveroo
+## Informations envoyées à Deliveroo {#information-sent}
 
 Les rubriques suivantes expliquent en détail comment votre catalogue HubRise est transmis à Deliveroo.
 
@@ -113,7 +113,7 @@ Les produits ont une ou plusieurs skus. Pour chaque produit avec plusieurs skus,
 - `name` : le nom du produit.
 - `description` : la description du produit.
 - `price` : le prix minimum de tous les SKUs.
-- `tags` : balises décrivant les caractéristiques et les restrictions du produit, telles que les allergènes ou la saveur épicée. Voir [Tags produit](#tags-produits).
+- `tags` : balises décrivant les caractéristiques et les restrictions du produit, telles que les allergènes ou la saveur épicée. Voir [Tags produit](#product-tags).
 - `image` : adresse URL de la photo du produit.
 
 La liste des skus est jointe au produit sous la forme d'une table de modification.
@@ -125,9 +125,9 @@ Pour chaque `sku` d'un produit, Deliveroo Bridge envoie les informations suivant
 - `price` : la différence éventuelle de prix avec le produit principal.
 - `option_list_refs` : liste des options rattachées à la SKU.
 
-Pour plus d'informations sur les skus dans les catalogues HubRise, voir [Skus](/developers/api/catalog-management/#skus) (en anglais).
+Pour plus d'informations sur les skus dans les catalogues HubRise, voir [Skus](/developers/api/catalogs#skus) (en anglais).
 
-### Tags produit
+### Tags produit {#product-tags}
 
 Le tableau ci-dessous énumère les balises qui peuvent être définies sur les produits.
 

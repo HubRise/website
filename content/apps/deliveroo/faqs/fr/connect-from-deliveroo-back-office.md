@@ -12,16 +12,16 @@ Pour connecter votre magasin Deliveroo à HubRise par vous-même, activez d'abor
 
 Pour activer HubRise sur le back-office Deliveroo, suivez ces étapes :
 
-1. Connectez-vous à votre [back-office Deliveroo](https://restaurant-hub.deliveroo.net/).
+1. Connectez-vous à votre [back-office Deliveroo](https://restaurant-hub.deliveroo.net).
 1. Cliquez sur **Intégrations**.
 1. Dans le champ **Quel système POS utilisez-vous ?**, indiquez `HubRise`.
 1. Sélectionnez tous les établissements que vous souhaitez connecter dans la liste, et pour chaque établissement, saisissez **l'ID du restaurant** correspondant.
 1. Décidez si vous souhaitez gérer votre menu Deliveroo depuis votre logiciel de caisse :
-   - Pour mettre à jour votre menu manuellement depuis le back-office Deliveroo, sélectionnez **Non**. Pour plus d'informations, voir [Envoyer le catalogue](/apps/deliveroo/envoi-catalogue).
-   - Pour mettre à jour votre menu en envoyant votre [catalogue HubRise](/apps/deliveroo/envoi-catalogue) vers Deliveroo, sélectionnez **Oui**.
+   - Pour mettre à jour votre menu manuellement depuis le back-office Deliveroo, sélectionnez **Non**. Pour plus d'informations, voir [Envoyer le catalogue](/apps/deliveroo/push-catalog).
+   - Pour mettre à jour votre menu en envoyant votre [catalogue HubRise](/apps/deliveroo/push-catalog) vers Deliveroo, sélectionnez **Oui**.
 1. Vérifiez que tous les éléments de votre menu sont affectés à un code PLU.
 1. Cliquer sur **Connecter mon système POS** pour confirmer.
 
-Pour connecter Deliveroo Bridge au point de vente HubRise associé à votre restaurant Deliveroo, voir [Connecter Deliveroo Bridge](/apps/deliveroo/connexion-hubrise#connecter-deliveroo-bridge).
+Pour connecter Deliveroo Bridge au point de vente HubRise associé à votre restaurant Deliveroo, voir [Connecter Deliveroo Bridge](/apps/deliveroo/connect-hubrise#connect).
 
 Si vous avez besoin d'aide pour cette opération, vous pouvez contacter notre support sur support@hubrise.com.

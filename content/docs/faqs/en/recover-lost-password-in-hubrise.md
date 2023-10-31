@@ -15,5 +15,3 @@ If you are a registered user but you have lost or forgotten your password, go to
 **IMPORTANT NOTE**: If you do not see the password reset instructions in your email's Inbox folder within a few minutes, refresh your Inbox and check your Spam or Trash folders.
 
 ---
-
-![Reset password page](../../images/002-en-reset-password.png)

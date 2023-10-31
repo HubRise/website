@@ -24,7 +24,7 @@ If you already have a menu in your MynOber Cloud location, you can manually ente
 
 To manually assign ref codes to your MynOber products from the MynOber Cloud back office, follow these steps:
 
-1. Log in to your [MynOber Cloud account](https://cloud.mynober.nl/).
+1. Log in to your [MynOber Cloud account](https://cloud.mynober.nl).
 1. Select the location where you want to edit the menu.
 1. Click **Articles** > **Articles**.
 1. Click **Expand All** to reveal all the products available.
@@ -36,7 +36,7 @@ Service types, charges, and payments might require special ref codes. Refer to y
 
 To assign ref codes to service types, charges, and payments, follow these steps:
 
-1. Log in to your [MynOber Cloud account](https://cloud.mynober.nl/).
+1. Log in to your [MynOber Cloud account](https://cloud.mynober.nl).
 1. Select the location from the list.
 1. Click **External tools** > **HubRise**.
 1. Under the **Ref Codes** section of the page, insert the ref code for every service type, payment method, payment fee, or other charge you support. The value is automatically saved when you click outside of the entry field.
@@ -47,7 +47,7 @@ If you exported your EPOS menu to HubRise, you can automatically import all the 
 
 To import your HubRise catalog to MynOber Cloud, follow these steps:
 
-1. Log in to your [MynOber Cloud account](https://cloud.mynober.nl/).
+1. Log in to your [MynOber Cloud account](https://cloud.mynober.nl).
 1. Select the location from the list.
 1. Click **External tools** > **HubRise**.
 1. Click **Sync Catalog From HubRise**. If you do not see this button, make sure the **Online Ordering** toggle is active.

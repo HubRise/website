@@ -15,6 +15,6 @@ Uber Eats propose deux modes de réception de commandes : **manual accept** (ac
 
 Le support Uber Eats peut modifier le mode utilisé pour votre magasin.
 
-HubRise prend en charge les deux modes de fonctionnement. Indiquez-nous le mode qui vous convient lors de la configuration initiale. Pour plus d'informations, voir la rubrique [Connexion à HubRise](/apps/uber-eats/connexion-hubrise).
+HubRise prend en charge les deux modes de fonctionnement. Indiquez-nous le mode qui vous convient lors de la configuration initiale. Pour plus d'informations, voir la rubrique [Connexion à HubRise](/apps/uber-eats/connect-hubrise).
 
 Si vous ne précisez pas votre mode préférentiel, votre magasin utilisera par défaut le mode offered state (état proposé). Nous vous recommandons toutefois de commencer en mode manual accept (acceptation manuelle) pendant quelques semaines, afin de vous assurer que votre installation fonctionne normalement, puis de passer ensuite au mode offered state (état proposé). Vous pouvez à tout moment passer à un autre mode en contactant votre gestionnaire de compte Uber Eats.
