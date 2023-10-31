@@ -20,7 +20,7 @@ The main page of Lightspeed Restaurant Bridge displays the latest operations. Ea
 
 Clicking on a row will open a new page displaying all the information about it.
 
-On the top right corner of the Lightspeed Restaurant Bridge main page, the HubRise user and location connected are displayed, together with the Lightspeed business location currently used. Clicking the down arrow <InlineImage width="28" height="21">![Down arrow icon](../images/001-arrow.jpg)</InlineImage> expands a menu where it is possible to change the language of the interface and to access the **Configuration page**.
+In the top right corner of the Lightspeed Restaurant Bridge main page, the connected HubRise user and location are displayed, alongside with the Lightspeed business location currently used. Clicking the down arrow expands a menu where it is possible to change the language of the interface and to access the **Configuration page**.
 
 ---
 
