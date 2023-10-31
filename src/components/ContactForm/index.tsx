@@ -8,6 +8,7 @@ import { useToast } from "@components/Toast"
 import useTranslation from "@hooks/client/useTranslation"
 
 import { yupSchema, encodeFormData, rows } from "./helpers"
+import axios from "axios"
 
 const ContactForm = (): JSX.Element => {
   const { forms } = useLayoutContext()
@@ -21,20 +22,16 @@ const ContactForm = (): JSX.Element => {
     ;(window as any).grecaptcha.execute(recaptchaSiteKey, { action: "send_email" }).then((token: string) => {
       // Use application/x-www-form-urlencoded content type (instead of application/json)
       // to skip CORS preflight check, which has not been implemented on the server side.
-      return fetch(contactMessageUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
-        },
-        body: encodeFormData({
+
+      return axios
+        .post("/api/contact_us", {
           name: values.name,
           email: values.email,
           message: values.message,
           recaptchaResponse: token,
-        }),
-      })
+        })
         .then((response) => {
-          if (response.ok) {
+          if (response.status === 200) {
             addToast({
               variant: "success",
               title: t("misc.success"),
