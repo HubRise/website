@@ -12,7 +12,6 @@ gallery:
 app_info:
   category: Point of Sales
   availability: Worldwide
-  price_range: Lightspeed Restaurant Bridge is included in your HubRise subscription. Contact Lightspeed to enquire about Lightspeed Restaurant pricing.
   website: https://www.lightspeedhq.co.uk
   contact: info@lightspeedhq.com
 ---

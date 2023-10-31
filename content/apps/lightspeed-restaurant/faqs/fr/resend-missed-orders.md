@@ -1,0 +1,18 @@
+---
+title: J'ai manqué une commande. Comment la renvoyer à Lightspeed Restaurant ?
+path_override: renvoyer-des-commandes-manquantes
+position: 7
+layout: documentation
+meta:
+  title: Renvoyer des commandes à Lightspeed Restaurant | Lightspeed Restaurant | HubRise
+  description: Instructions pour renvoyer des commandes manquantes de HubRise à Lightspeed Restaurant.
+---
+
+Si vous avez manqué des commandes HubRise et ne les avez pas reçues dans votre logiciel de caisse Lightspeed Restaurant parce qu'il était éteint par exemple, vous pouvez les renvoyer depuis Lightspeed Restaurant Bridge.
+
+Pour renvoyer une commande à Lightspeed Restaurant, suivez ces étapes :
+
+1. Depuis la [**page Opération**](/apps/lightspeed-restaurant/user-interface#operation-page) de Lightspeed Restaurant Bridge, cliquez sur la commande que vous souhaitez renvoyer.
+1. Identifiez la requête envoyée depuis le Bridge vers Lightspeed Restaurant : vérifiez que la **Direction** est **Bridge → Lightspeed Restaurant**. ![Renvoyer la requête de commande à Lightspeed Restaurant](./images/024-lightspeed-resend-request.png)
+1. Cliquez sur **Modifier cette requête et la renvoyer**.
+1. Ne modifiez pas la requête dans l'éditeur de texte et cliquez sur **Renvoyer**.

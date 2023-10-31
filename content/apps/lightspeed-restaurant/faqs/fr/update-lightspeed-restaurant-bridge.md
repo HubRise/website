@@ -8,41 +8,40 @@ meta:
   description: Instructions permettant de mettre à jour Lightspeed Restaurant Bridge, afin de profiter des fonctionnalités offertes par la nouvelle intégration avec Lightspeed Restaurant.
 ---
 
-Pour profiter des fonctionnalités offertes par la nouvelle intégration avec Lightspeed Restaurant, telles que la synchronisation de catalogue ou la remontée des commandes depuis votre caisse, vous devez mettre à jour Lightspeed Restaurant Bridge. Pour cela, suivez les étapes suivantes.
+Pour profiter des fonctionnalités offertes par la nouvelle intégration avec Lightspeed Restaurant, telles que la synchronisation de catalogue ou la remontée des commandes depuis votre caisse, vous devez mettre à jour Lightspeed Restaurant Bridge. Pour cela, suivez les étapes ci-dessous.
 
-## Reconnexion de l'app Lightspeed Restaurant Bridge
+## Reconnexion de l'application Lightspeed Restaurant Bridge
 
-1. Depuis le back-office de HubRise, sélectionnez **CONNEXIONS**.
+1. Depuis le back-office HubRise, sélectionnez **CONNEXIONS**.
 
 1. Dans l'application **Lightspeed Restaurant Bridge**, cliquez sur **Actions** > **Déconnecter**.
 
 1. Cliquez sur **Voir les apps disponibles**.
 
-1. Sélectionnez le point de vente à connecter grâce au menu déroulant **Point de vente** en haut de page.
+1. Sélectionnez le point de vente à connecter grâce au menu déroulant **Point de vente** en haut de la page.
 
-1. Recherchez l'app **Lightspeed Restaurant Bridge**, cliquez sur celle-ci puis sur **Connecter** et suivez les étapes indiquées.
+1. Recherchez l'application **Lightspeed Restaurant Bridge**. Cliquez dessus, puis sur **Connecter**, et suivez les instructions.
 
-Pour plus d'informations, consultez les pages [Bloquer ou déconnecter une app](/docs/connections#block-or-disconnect) (en anglais) et [Connecter une nouvelle app](/docs/connections#connect) (en anglais).
+Pour plus d'informations, consultez les pages [Bloquer ou déconnecter une application](/docs/connections/#disconnect-app) et [Connecter une application](/docs/connections/#connect-a-new-app).
 
 ## Reconnexion de votre compte Lightspeed
 
-1. Depuis le back-office de HubRise, sélectionnez **CONNEXIONS**.
+1. Depuis le back-office HubRise, sélectionnez **CONNEXIONS**.
 
 1. Dans l'application **Lightspeed Restaurant Bridge**, cliquez sur **Ouvrir**. Lightspeed Restaurant Bridge s'ouvre dans un nouvel onglet de votre navigateur.
 
-1. Ouvrir la page **Configuration**.
-   ![Mettre à jour Lightspeed Restaurant Bridge - Page de configuration](../../fr/images/014-configuration-page.png)
+1. Ouvrez la page **Configuration**. ![Mettre à jour Lightspeed Restaurant Bridge - Page de configuration](../../en/images/014-configuration-page.png)
 
-1. Cliquez sur **Réinitialiser la configuration**, situé en bas de page. Dans la modale de confirmation, cliquez sur **Réinitialiser**.
+1. Cliquez sur **Réinitialiser la configuration** en bas de la page. Dans la fenêtre de confirmation, cliquez sur **Réinitialiser**.
 
 1. Cliquez ensuite sur **Connexion à Lightspeed**. Si vous êtes redirigé vers votre espace Lightspeed, munissez-vous de vos identifiants et connectez-vous à votre compte Lightspeed.
 
-1. Sélectionnez votre établissement et cliquez sur **Enregistrer**.
+1. Sélectionnez votre restaurant et cliquez sur **Enregistrer**.
 
 1. Optionnel : Si vous souhaitez synchroniser votre menu Lightspeed, sélectionnez un menu dans la section **Catalogue**.
 
-1. Optionnel : Si vous souhaitez remonter les commandes Lightspeed vers HubRise, sélectionnez **Récupérer les commandes de Lightspeed** > **Récupération des commandes** > **Activée pour les ventes en consommation sur place** ou **Activée pour toutes les ventes**.
+1. Optionnel : Si vous souhaitez remonter les commandes Lightspeed vers HubRise, sélectionnez **Récupérer les commandes de Lightspeed** > > **Récupération des commandes** > **Activée pour les ventes en consommation sur place** ou **Activée pour toutes les ventes**.
 
 1. Cliquez sur **Enregistrer**.
 
-Si vous possédez plusieurs points de vente, répétez les étapes précédentes pour chacun d'entre eux.
+Si vous possédez plusieurs points de vente, répétez les étapes précédentes pour chacun d'eux.
