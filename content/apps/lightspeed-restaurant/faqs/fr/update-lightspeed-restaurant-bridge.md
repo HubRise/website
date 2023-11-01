@@ -22,7 +22,7 @@ Pour profiter des fonctionnalités offertes par la nouvelle intégration avec Li
 
 1. Recherchez l'application **Lightspeed Restaurant Bridge**. Cliquez dessus, puis sur **Connecter**, et suivez les instructions.
 
-Pour plus d'informations, consultez les pages [Bloquer ou déconnecter une application](/docs/connections/#disconnect-app) et [Connecter une application](/docs/connections/#connect-a-new-app).
+Pour plus d'informations, consultez les pages [Bloquer ou déconnecter une application](/docs/connections#block-or-disconnect) et [Connecter une application](/docs/connections#connect).
 
 ## Reconnexion de votre compte Lightspeed
 

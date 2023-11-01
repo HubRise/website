@@ -22,7 +22,7 @@ Dans certaines circonstances, les commandes peuvent échouer, ce qui génère le
 }
 ```
 
-Ce problème est dû au fait que la commande en ligne n'a pas été activée sur l'iPad concerné. Pour le résoudre, activez la commande en ligne sur l'iPad. Pour plus d'informations, consultez [Activation de l'API sur la tablette](/apps/lightspeed-restaurant/faqs/troubleshooting-failed-orders/#api-activation-in-the-tablet).
+Ce problème est dû au fait que la commande en ligne n'a pas été activée sur l'iPad concerné. Pour le résoudre, activez la commande en ligne sur l'iPad. Pour plus d'informations, consultez [Activation de l'API sur la tablette](/apps/lightspeed-restaurant/faqs/troubleshooting-failed-orders#api-activation).
 
 ## Aucun appareil disponible
 

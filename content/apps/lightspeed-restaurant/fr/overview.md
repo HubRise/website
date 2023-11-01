@@ -12,7 +12,6 @@ gallery:
 app_info:
   category: Logiciel de caisse
   availability: Monde
-  price_range: Lightspeed Restaurant Bridge est inclus dans votre abonnement HubRise. Contactez Lightspeed pour obtenir des informations sur les tarifs de Lightspeed Restaurant.
   website: https://www.lightspeedhq.co.uk/fr
   contact: info@lightspeedhq.com
 ---
@@ -30,7 +29,7 @@ Lightspeed Restaurant Bridge est une application développée par HubRise qui pe
 La connexion de Lightspeed Restaurant Bridge à HubRise permet à votre logiciel de caisse de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
-- Envoyer les commandes réglées à HubRise, avec leur statut.
+- Envoyer les commandes payées à HubRise, avec leur statut.
 - Recevoir les informations clients de HubRise.
 - Envoyer les informations clients à HubRise.
 - Envoyer le menu dans un catalogue HubRise.

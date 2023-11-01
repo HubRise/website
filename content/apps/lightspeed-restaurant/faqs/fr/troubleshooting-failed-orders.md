@@ -22,10 +22,10 @@ Pour résoudre un problème de code ref incorrect dans une commande, consultez l
 - Cliquez sur la ligne correspondante et identifiez la transaction provenant de Lightspeed. Il s'agit de celle avec la direction "Lightspeed -> Bridge".
 - Dans le corps de la requête, si `FAILURE` est la valeur de l'état et `Could not add item <id> (not found)` la cause de l'erreur, le rejet de la commande est probablement dû à un code ref incorrect dans votre application intégrée. La valeur `<id>` dans le message d'erreur indiquera l'article qui pose problème.
 
-## Activation de l'API sur la tablette
+## Activation de l'API sur la tablette {#api-activation}
 
 La connexion à Lightspeed Restaurant exige que l'API Lightspeed soit activée. Il vous suffit de contacter le support Lightspeed et de demander l'activation. Si vous envisagez de connecter Lightspeed Restaurant à des plateformes de livraison de repas comme Deliveroo, Uber Eats et Just Eat, il est préférable de les spécifier. Le support Lightspeed préparera la configuration pour recevoir ce type de commandes également.
 
 Si après cette configuration vous ne parvenez toujours pas à recevoir des commandes sur votre tablette, vérifiez que la connexion API y est bien activée. Sur l'écran principal de l'application Lightspeed, une icône verte en forme de crayon en haut du bloc de droite indique que c'est le cas. Si l'icône n'est pas verte, cliquez dessus puis cliquez sur le bouton **Activer** pour activer l'API.
 
-![Écran principal de l'application Lightspeed avec l'icône verte indiquant que la connexion API est activée.](../../images/010-lightspeed-main-screen.png)
+![Écran principal de l'application Lightspeed avec l'icône verte indiquant que la connexion API est activée.](../../images/010-2x-lightspeed-main-screen.png)

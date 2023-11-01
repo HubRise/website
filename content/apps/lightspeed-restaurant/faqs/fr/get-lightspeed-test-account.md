@@ -12,4 +12,4 @@ Si vous êtes éditeur de logiciels et que vous souhaitez un compte de test Ligh
 
 Il est utile d'avoir un compte de test Lightspeed, mais ce n'est pas essentiel pour réussir l'intégration. En réalité, vous n'avez pas besoin de connaître en détail comment fonctionne Lightspeed Restaurant. Vous pouvez laisser HubRise faire le plus dur.
 
-Suivez nos [meilleures pratiques](/developers/integration-guide#general-best-practices) pour la conception de votre intégration et demandez à HubRise de confirmer que cela fonctionne avec Lightspeed Restaurant lors d'un [appel de validation](/developers/integration-guide#assessing-the-integration). Enfin, vérifiez que tout fonctionne comme prévu avec votre premier utilisateur pilote Lightspeed.
+Suivez nos [meilleures pratiques](/developers/integration-guide#general-best-practices) pour la conception de votre intégration et demandez à HubRise de confirmer que cela fonctionne avec Lightspeed Restaurant lors d'un [appel de validation](/developers/integration-guide#assess). Enfin, vérifiez que tout fonctionne comme prévu avec votre premier utilisateur pilote Lightspeed.

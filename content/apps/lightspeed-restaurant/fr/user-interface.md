@@ -27,9 +27,9 @@ En haut à droite de la page d'accueil de Lightspeed Restaurant Bridge figurent 
 
 ---
 
-![Page d’accueil](./images/003-main-page-truncated.png)
+![Page d’accueil](./images/003-2x-main-page-truncated.png)
 
-## Page des opérations
+## Page des opérations {#operation}
 
 Sélectionnez une opération dans la liste pour afficher tous les logs des requêtes d'API échangées entre HubRise et le logiciel de caisse Lightspeed Restaurant via Lightspeed Restaurant Bridge.
 
@@ -41,9 +41,9 @@ Les requêtes sont classées par ordre chronologique inverse, et chacune d'elles
 
 Cliquez sur une requête pour la développer et afficher le détail des échanges.
 
-![Page des commandes](./images/005-operations-page.png)
+![Page des commandes](./images/005-2x-operations-page.png)
 
-Les logs sont un bon outil de débogage en cas de problème. Pour comprendre comment les lire, consultez [Comprendre les logs HubRise](/docs/hubrise-logs/).
+Les logs sont un bon outil de débogage en cas de problème. Pour comprendre comment les lire, consultez [Comprendre les logs HubRise](/docs/hubrise-logs/overview).
 
 ## Page de configuration
 

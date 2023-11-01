@@ -12,7 +12,7 @@ Avec HubRise, vous pouvez recevoir des commandes de Deliveroo, Just Eat, Uber Ea
 
 Cette page décrit la configuration à utiliser pour connecter les plateformes de commande de repas à Lightspeed Restaurant.
 
-Pour plus d'informations, consultez la documentation de ces plateformes accessible depuis notre [page Apps](/apps/food-ordering-platforms).
+Pour plus d'informations, consultez la documentation de ces plateformes accessible depuis notre [page Apps](/apps#food-ordering-platforms).
 
 ## Configuration dans Lightspeed Restaurant
 
@@ -37,12 +37,13 @@ Pour des instructions détaillées sur la création de codes ref dans le back-of
 
 ## Deliveroo
 
-Pour recevoir des commandes Deliveroo dans Lightspeed Restaurant, vous devez d'abord connecter Deliveroo Bridge, une application incluse dans votre abonnement HubRise. Pour plus d'informations sur celle-ci, consultez la [documentation Deliveroo Bridge](/apps/deliveroo).
+Pour recevoir des commandes Deliveroo dans Lightspeed Restaurant, vous devez d'abord connecter Deliveroo Bridge, une application incluse dans votre abonnement HubRise. Pour plus d'informations sur celle-ci, consultez la [documentation Deliveroo Bridge](/apps/deliveroo/overview).
 
 Sur la page de configuration de Deliveroo Bridge, utilisez les paramètres suivants :
 
 | Section             | Nom                                                     | Code ref                                      |
 | ------------------- | ------------------------------------------------------- | --------------------------------------------- |
+| Statuts de commande | Marquer les commandes comme Acceptées                   | `lorsque leur statut HubRise passe à "Reçue"` |
 | Types de service    | Code ref livraison par Deliveroo                        | `DVAP`                                        |
 | Types de service    | Code ref livraison par le restaurant                    | `DVMD`                                        |
 | Types de service    | Code ref à emporter                                     | `DVMTA`                                       |
@@ -53,7 +54,7 @@ Sur la page de configuration de Deliveroo Bridge, utilisez les paramètres suiva
 | Frais               | Code ref frais d'emballage                              | (contacter support@hubrise.com si besoin)     |
 | Paiements           | Code ref paiement sur Deliveroo                         | `DVPM`                                        |
 | Paiements           | Code ref paiement en espèces                            | (laisser vide)                                |
-| Statuts de commande | Marquer les commandes comme Acceptées                   | `lorsque leur statut HubRise passe à "Reçue"` |
+| Clients             | Code d'accès au téléphone en double dans [...]          | Cochez cette case                             |
 
 ## Just Eat
 
@@ -66,11 +67,11 @@ Si vous ne savez pas quelle API utiliser, contactez support@hubrise.com.
 
 ### Just Eat via l'API Takeaway
 
-Pour recevoir des commandes Just Eat dans Lightspeed Restaurant via l'API Takeaway, vous devez d'abord connecter Just Eat Takeaway Bridge, une application incluse dans votre abonnement HubRise. Pour plus d'informations sur Just Eat Takeaway Bridge, consultez la [documentation Just Eat Takeaway Bridge](/apps/just-eat-takeaway).
+Pour recevoir des commandes Just Eat dans Lightspeed Restaurant via l'API Takeaway, vous devez d'abord connecter Just Eat Takeaway Bridge, une application incluse dans votre abonnement HubRise. Pour plus d'informations sur Just Eat Takeaway Bridge, consultez la [documentation Just Eat Takeaway Bridge](/apps/just-eat-takeaway/overview).
 
 ### Just Eat via l'API Flyt
 
-Pour recevoir des commandes Just Eat dans Lightspeed Restaurant via l'API Flyt, vous devez d'abord connecter Just Eat Flyt Bridge, une application incluse dans votre abonnement HubRise. Pour plus d'informations sur Just Eat Flyt Bridge, consultez la [documentation Just Eat Flyt Bridge](/apps/just-eat-flyt).
+Pour recevoir des commandes Just Eat dans Lightspeed Restaurant via l'API Flyt, vous devez d'abord connecter Just Eat Flyt Bridge, une application incluse dans votre abonnement HubRise. Pour plus d'informations sur Just Eat Flyt Bridge, consultez la [documentation Just Eat Flyt Bridge](/apps/just-eat-flyt/overview).
 
 ### Just-Eat.ch
 
@@ -78,6 +79,7 @@ Just-Eat.ch utilise l'API Just Eat via Takeaway. Sur la page de configuration de
 
 | Section             | Nom                                                         | Code ref                                      |
 | ------------------- | ----------------------------------------------------------- | --------------------------------------------- |
+| Statuts de commande | Marquer les commandes comme Acceptées                       | `lorsque leur statut HubRise passe à "Reçue"` |
 | Types de service    | Code ref livraison par la plateforme                        | `EATAP`                                       |
 | Types de service    | Code ref livraison par le restaurant                        | `EATDRAP`                                     |
 | Types de service    | Code ref à emporter                                         | `EATEATAP`                                    |
@@ -87,7 +89,6 @@ Just-Eat.ch utilise l'API Just Eat via Takeaway. Sur la page de configuration de
 | Frais               | Code ref frais de service                                   | `EAT66`                                       |
 | Paiements           | Code ref paiement en ligne                                  | `EATPM`                                       |
 | Paiements           | Code ref paiement en espèces                                | (laisser vide)                                |
-| Statuts de commande | Marquer les commandes comme Acceptées                       | `lorsque leur statut HubRise passe à "Reçue"` |
 
 ### Just Eat.co.uk et Just Eat.ie
 
@@ -95,6 +96,7 @@ Ces plateformes utilisent l'API Just Eat via Flyt. Sur la page de configuration 
 
 | Section             | Nom                                                         | Code ref                                                                 |
 | ------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------ |
+| Statuts de commande | Marquer les commandes comme Acceptées                       | `lorsque leur statut HubRise passe à "Reçue"`                            |
 | Types de service    | Code ref livraison par la plateforme                        | `JEAP`                                                                   |
 | Types de service    | Code ref livraison par le restaurant                        | `JEDRAP`                                                                 |
 | Types de service    | Code ref à emporter                                         | `JETAAP`                                                                 |
@@ -107,7 +109,7 @@ Ces plateformes utilisent l'API Just Eat via Flyt. Sur la page de configuration 
 | Frais               | Code ref autres frais                                       | Créez un produit avec un prix positif variable et utilisez son **Code**. |
 | Paiements           | Code ref paiement en ligne                                  | `JEPM`                                                                   |
 | Paiements           | Code ref paiement en espèces                                | (laisser vide)                                                           |
-| Statuts de commande | Marquer les commandes comme Acceptées                       | `lorsque leur statut HubRise passe à "Reçue"`                            |
+| Clients             | Code d'accès au téléphone en double dans [...]              | Cochez cette case                                                        |
 
 ### Takeaway.com
 
@@ -115,6 +117,7 @@ Takeaway.com utilise l'API Just Eat via Takeaway. Sur la page de configuration d
 
 | Section             | Nom                                                         | Code ref                                      |
 | ------------------- | ----------------------------------------------------------- | --------------------------------------------- |
+| Statuts de commande | Marquer les commandes comme Acceptées                       | `lorsque leur statut HubRise passe à "Reçue"` |
 | Types de service    | Code ref livraison par la plateforme                        | `TAAP`                                        |
 | Types de service    | Code ref livraison par le restaurant                        | `TADRAP`                                      |
 | Types de service    | Code ref à emporter                                         | `TATAAP`                                      |
@@ -123,7 +126,6 @@ Takeaway.com utilise l'API Just Eat via Takeaway. Sur la page de configuration d
 | Frais               | Code ref frais de livraison                                 | `TA77`                                        |
 | Paiements           | Code ref paiement en ligne                                  | `TAPM`                                        |
 | Paiements           | Code ref paiement en espèces                                | (laisser vide)                                |
-| Statuts de commande | Marquer les commandes comme Acceptées                       | `lorsque leur statut HubRise passe à "Reçue"` |
 
 ### Thuisbezorgd.nl
 
@@ -131,6 +133,7 @@ Thuisbezorgd.nl utilise l'API Just Eat via Takeaway. Sur la page de configuratio
 
 | Section             | Nom                                                         | Code ref                                      |
 | ------------------- | ----------------------------------------------------------- | --------------------------------------------- |
+| Statuts de commande | Marquer les commandes comme Acceptées                       | `lorsque leur statut HubRise passe à "Reçue"` |
 | Types de service    | Code ref livraison par la plateforme                        | `THAP`                                        |
 | Types de service    | Code ref livraison par le restaurant                        | `THDRAP`                                      |
 | Types de service    | Code ref à emporter                                         | `THTHAP`                                      |
@@ -139,7 +142,6 @@ Thuisbezorgd.nl utilise l'API Just Eat via Takeaway. Sur la page de configuratio
 | Frais               | Code ref frais de livraison                                 | `TH77`                                        |
 | Paiements           | Code ref paiement en ligne                                  | `THPM`                                        |
 | Paiements           | Code ref paiement en espèces                                | (laisser vide)                                |
-| Statuts de commande | Marquer les commandes comme Acceptées                       | `lorsque leur statut HubRise passe à "Reçue"` |
 
 ## HOP Delivery
 
@@ -156,9 +158,9 @@ Pour recevoir des commandes HOP Delivery dans Lightspeed, utilisez les valeurs s
 | Paiements        | Code ref paiement en ligne           | `HOPPM`        |
 | Paiements        | Code ref paiement en espèces         | (laisser vide) |
 
-## Smood
+## Smood {#smood}
 
-Pour recevoir des commandes Smood dans Lightspeed, utilisez les valeurs suivantes pour configurer Smood. Pour obtenir de l'aide, contactez l'équipe de support Smood. Pour plus d'informations sur la configuration des paramètres dans Smood, consultez la [documentation Smood](/apps/smood).
+Pour recevoir des commandes Smood dans Lightspeed, utilisez les valeurs suivantes pour configurer Smood. Pour obtenir de l'aide, contactez l'équipe de support Smood. Pour plus d'informations sur la configuration des paramètres dans Smood, consultez la [documentation Smood](/apps/smood/overview).
 
 | Section          | Nom                                     | Code ref    |
 | ---------------- | --------------------------------------- | ----------- |
@@ -173,25 +175,26 @@ Pour recevoir des commandes Smood dans Lightspeed, utilisez les valeurs suivante
 
 ## Uber Eats
 
-Pour recevoir des commandes Uber Eats dans Lightspeed Restaurant, vous devez d'abord connecter Uber Eats Bridge, une application incluse dans votre abonnement HubRise. Pour plus d'informations sur Uber Eats Bridge, consultez la [documentation Uber Eats Bridge](/apps/uber-eats).
+Pour recevoir des commandes Uber Eats dans Lightspeed Restaurant, vous devez d'abord connecter Uber Eats Bridge, une application incluse dans votre abonnement HubRise. Pour plus d'informations sur Uber Eats Bridge, consultez la [documentation Uber Eats Bridge](/apps/uber-eats/overview).
 
 Sur la page de configuration d'Uber Eats Bridge, utilisez les paramètres suivants :
 
-| Section             | Nom                                                | Code ref                                                                           |
-| ------------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| Types de service    | Code ref livraison Uber                            | `UEAP`                                                                             |
-| Types de service    | Code ref livraison par le restaurant               | `UENDAP`                                                                           |
-| Types de service    | Code ref à emporter                                | `UEPUAP`                                                                           |
-| Types de service    | Code ref sur place                                 | `UEDIAP`                                                                           |
-| Types de service    | Envoyer les commandes livrées par Uber en tant que | `commandes en livraison`                                                           |
-| Articles spéciaux   | Code ref jetables                                  | Créez un produit avec un prix = 0 dans Lightspeed et utilisez son **Code**. (\*) |
-| Remises             | Code ref remise                                    | `UE99`                                                                             |
-| Frais               | Code ref frais de livraison                        | `UE77`                                                                             |
-| Frais               | Code ref supplément petite commande                | Créez un produit avec un prix positif variable et utilisez son **Code**.           |
-| Frais               | Code ref pourboire                                 | Créez un produit avec un prix positif variable et utilisez son **Code**.           |
-| Paiements           | Code ref paiement en ligne                         | `UEPM`                                                                             |
-| Paiements           | Code ref paiement en espèces                       | (laisser vide)                                                                     |
-| Statuts de commande | Marquer les commandes comme Acceptées              | `lorsque leur statut HubRise passe à "Reçue"`                                      |
-| Menu                | Activer les notes de préparation sur les articles  | Cochez la case pour les activer.                                                   |
+| Section             | Nom                                                         | Code ref                                                                           |
+| ------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Statuts de commande | Marquer les commandes comme Acceptées                       | `lorsque leur statut HubRise passe à "Reçue"`                                      |
+| Types de service    | Code ref livraison Uber                                     | `UEAP`                                                                             |
+| Types de service    | Code ref livraison par le restaurant                        | `UENDAP`                                                                           |
+| Types de service    | Code ref à emporter                                         | `UEPUAP`                                                                           |
+| Types de service    | Code ref sur place                                          | `UEDIAP`                                                                           |
+| Types de service    | Envoyer les commandes livrées par Uber en tant que          | `commandes en livraison`                                                           |
+| Articles spéciaux   | Code ref jetables                                           | Créez un produit avec un prix = 0 dans Lightspeed et utilisez son **Code**. (\*) |
+| Remises             | Code ref remise                                             | `UE99`                                                                             |
+| Frais               | Code ref frais de livraison                                 | `UE77`                                                                             |
+| Frais               | Code ref supplément petite commande                         | Créez un produit avec un prix positif variable et utilisez son **Code**.           |
+| Frais               | Code ref pourboire                                          | Créez un produit avec un prix positif variable et utilisez son **Code**.           |
+| Paiements           | Code ref paiement en ligne                                  | `UEPM`                                                                             |
+| Paiements           | Code ref paiement en espèces                                | (laisser vide)                                                                     |
+| Clients             | Code d'accès au téléphone en double dans [...]              | Cochez cette case                                                                  |
+| Catalogue           | Activer les notes de préparation du client sur les produits | Cochez la case pour les activer.                                                   |
 
 (\*) Ne s'applique que si vous proposez des articles jetables tels que des couverts, des serviettes, etc.

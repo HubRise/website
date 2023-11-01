@@ -55,7 +55,7 @@ Le type d'option HubRise est sélectionné de la manière suivante :
 - Un groupe avec la règle de sélection **Sélectionner un article exactement** est converti en une liste d'options à choix unique.
 - Un groupe avec une règle de sélection différente est converti en une liste d'options à choix multiple.
 
-![Règle de sélection dans le back-office Lightspeed](./images/021-lightspeed-selection-policy.png)
+![Règle de sélection dans le back-office Lightspeed](./images/021-2x-lightspeed-selection-policy.png)
 
 ### Instructions de production Lightspeed
 
@@ -95,5 +95,5 @@ Chaque liste d'options a une `ref` séquentielle qui commence par `deal_`. Pour 
 Chaque groupe d'instructions de production est associé à HubRise sous forme de liste d'options. Pour chaque instruction, les informations suivantes sont envoyées à HubRise :
 
 - `name` : nom de l'instruction
-- `ref`: The ref code of the instruction, preceded by a `+` sign.
+- `ref` : Le code ref de l'instruction, précédé d'un signe `+`.
 - `price` : toujours 0

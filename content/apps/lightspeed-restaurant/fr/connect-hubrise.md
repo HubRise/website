@@ -32,7 +32,7 @@ Lightspeed Restaurant Bridge se connecte à un point de vente HubRise. Vous deve
 
 ---
 
-**FAQ associée** : [Pourquoi certaines commandes ne sont-elles pas correctement transmises à Lightspeed Restaurant ?](/docs/faqs/troubleshooting-failed-orders/)
+**FAQ associée** : [Pourquoi certaines commandes ne sont-elles pas correctement transmises à Lightspeed Restaurant ?](/apps/lightspeed-restaurant/faqs/troubleshooting-failed-orders)
 
 ---
 

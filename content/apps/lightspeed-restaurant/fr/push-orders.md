@@ -12,11 +12,11 @@ HubRise peut envoyer des commandes directement dans votre logiciel de caisse Lig
 
 Cette page détaille les informations envoyées par HubRise à votre logiciel de caisse.
 
-## Articles et options
+## Articles et options {#items-and-options}
 
 Lightspeed Restaurant Bridge envoie à votre logiciel de caisse des informations complètes sur les articles et les options, y compris le nom, le code ref du produit, la quantité et le prix.
 
-Lightspeed Restaurant Bridge convertit les options avec un code ref qui commence par `+` en instructions de production. Notez qu'aucun prix n'est associé aux instructions de production. L'ajout d'un prix dans une application connectée peut générer des [erreurs liées à une différence de prix](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors/).
+Lightspeed Restaurant Bridge convertit les options avec un code ref qui commence par `+` en instructions de production. Notez qu'aucun prix n'est associé aux instructions de production. L'ajout d'un prix dans une application connectée peut générer des [erreurs liées à une différence de prix](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors).
 
 Chaque article sur Lightspeed doit avoir un code ref. Les commandes contenant des articles avec des codes ref incorrects ou manquants sont rejetées par le logiciel de caisse. Ainsi, lorsqu'il envoie une commande au logiciel de caisse, Lightspeed Restaurant Bridge ignore tous les articles sans code ref.
 
@@ -43,7 +43,7 @@ Lorsque le montant total du paiement ne correspond pas au prix total de la comma
 
 ---
 
-**FAQ associée** : [Comment résoudre les erreurs liées à une différence de prix ?](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors/)
+**FAQ associée** : [Comment résoudre les erreurs liées à une différence de prix ?](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors)
 
 ---
 
