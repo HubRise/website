@@ -18,7 +18,7 @@ app_info:
 
 ## Description
 
-Lightspeed Restaurant (K Series) is an iPad and cloud Point of Sales system for restaurants and hoteliers. Its sleek design and intuitive interface allows on-site, remote or on-the-go management of single and multi-store businesses.
+Lightspeed Restaurant K Series is an iPad and cloud Point of Sales system for restaurants and hoteliers. Its sleek design and intuitive interface allows on-site, remote or on-the-go management of single and multi-store businesses.
 
 Lightspeed Restaurant is available in more than 100 countries.
 
@@ -38,7 +38,7 @@ Lightspeed Restaurant Bridge can be connected from the HubRise back office.
 
 ## Why Connect?
 
-Connecting Lightspeed Restaurant to HubRise allows your EPOS to communicate with other applications you use every day. Receive orders from your online ordering solution, food delivery platforms, table ordering, or pay at the table solution directly into your EPOS and Kitchen Display Screen. Export your menu into other apps.
+Connecting Lightspeed Restaurant to HubRise allows your EPOS to communicate with other applications you use every day. Receive orders from your online ordering solution, food delivery platforms, table ordering, or pay at the table solution directly into your EPOS and Kitchen Display Screen. Export your Lightspeed menu into other applications connected to HubRise.
 
 Thanks to HubRise, synchronise your menu, your customer and order information with your EPOS, online ordering, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management, delivery services, eMarketing (SMS/emailing), business intelligence, stock management, loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our [Apps page](/apps).
 
