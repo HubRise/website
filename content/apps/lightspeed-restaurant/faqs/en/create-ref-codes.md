@@ -42,11 +42,9 @@ To create a discount that is compatible with the HubRise data model, follow thes
 1. Click on the **Create** dropdown, and select **Single item**.
 1. In the **New item** page, enter the following values:
    - In the **Item name** field, enter the name of the discount.
-   - Leave the **Price** field empty, and next to it, click **Change price type** then select **Manually-entered negative price**.
-   - Click **Add custom SKU**. A field appears where you can include the ref code for your discount.
-   - Leave the **Cost price** field empty.
-   - Optionally, fill in the other sections in the page.
-1. To finish, click **Save**.
+   - Click **Change price type** then select **Manually-entered negative price**.
+   - To use a specific ref code, click **Add custom SKU** and enter a ref code. Alternatively, a ref code will be automatically generated.
+1. Fill in the other sections in the page as needed, then click **Save**.
 1. Repeat the process for all the discounts you support on every platform.
 
 ## Deals
@@ -54,17 +52,11 @@ To create a discount that is compatible with the HubRise data model, follow thes
 To create a deal that is compatible with the HubRise data model, follow these steps:
 
 1. From your Lightspeed back office, select **Menu management**, then select **Items**.
-1. Click **Add item sequence**.
-1. In the **Create new item sequence** page, enter the following values:
-   - In the **Sequence receipt name** field, enter the name of the deal.
-   - Next to **Sku**, select **Click here to add your custom SKU manually**. A field appears where you can include the ref code for your deal.
-   - From the **Price structure** list, select **Interactive negative price**.
-   - Leave the **Cost price** field empty.
-   - Optionally, fill in the other sections in the page.
-1. Click **Save**. A page opens where you can further configure the deal.
-1. In the **Edit item sequence** page, under **Items that are part of this sequence**, click **Edit the item list**.
-1. In the **Item list** section, enter the name of the products that are part of the deal, and click the **+ Add** icon to add them.
-1. To finish, click **Save**.
+1. Click on the **Create** dropdown, and select **Single item**.
+1. In the **New item** page, enter the following values:
+   - In the **Item name** field, enter the name of the deal.
+   - Click **Change price type** then select **No price**.
+1. Fill in the other sections in the page as needed, then click **Save**.
 1. Repeat the process for all the deals you support on every platform.
 
 ## Charges
@@ -75,11 +67,9 @@ To create a charge, you need to create an item by following these steps:
 1. Click on the **Create** dropdown, and select **Single item**.
 1. In the **New item** page, enter the following values:
    - In the **Item name** field, enter the name of the discount.
-   - in the **Price** field enter the price of the charge, and next to it, click **Change price type** then select
-   - From the **Price structure** list, select **Single price (default)**.
-   - Click **Add custom SKU**. A field appears where you can include the ref code for your charge.
-   - Optionally, fill in the other sections in the page.
-1. To finish, click **Save**.
+   - Click **Change price type** then select **Manually-entered price**.
+   - To use a specific ref code, click **Add custom SKU** and enter a ref code. Alternatively, a ref code will be automatically generated.
+1. Fill in the other sections in the page as needed, then click **Save**.
 1. Repeat the process for all the charges you support on every platform.
 
 ## Payment Methods
@@ -88,6 +78,6 @@ To create a payment method, follow these steps:
 
 1. From your Lightspeed back office, select **Configuration**, then select **Settings** > **Payment methods**.
 1. Click **Add a payment method**.
-1. In the **Add new payment method** page, specify the code for your payment method in the **Code** field.
+1. In the **Add new payment method** page, specify the ref code for your payment method in the **Code** field.
 1. Fill in the other sections in the page as needed, then click **Save**.
 1. Repeat the process for all the payment methods you support on every platform.
