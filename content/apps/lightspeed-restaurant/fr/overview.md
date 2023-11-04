@@ -18,7 +18,7 @@ app_info:
 
 ## Description
 
-Lightspeed Restaurant (K Series) est un logiciel de caisse pour iPad et cloud qui s'adresse aux restaurateurs et aux hôteliers. Son design soigné et son interface intuitive permettent une gestion sur site, à distance ou en déplacement pour des entreprises mono et multisites.
+Lightspeed Restaurant K Series est un logiciel de caisse pour iPad et cloud qui s'adresse aux restaurateurs et aux hôteliers. Son design soigné et son interface intuitive permettent une gestion sur site, à distance ou en déplacement pour des entreprises mono et multisites.
 
 Lightspeed Restaurant est disponible dans plus de 100 pays.
 
@@ -38,7 +38,7 @@ Vous pouvez connecter Lightspeed Restaurant Bridge depuis le back-office HubRise
 
 ## Pourquoi se connecter ?
 
-La connexion de Lightspeed Restaurant à HubRise permet à votre logiciel de caisse de communiquer avec les autres applications que vous utilisez tous les jours. Vous pouvez ainsi recevoir des commandes depuis votre solution de commande en ligne, les plateformes de livraison de repas, les applications de commande à table ou les solutions de paiement à table directement dans votre logiciel de caisse et votre écran d'affichage cuisine. Vous pouvez également exporter votre menu vers d'autres applications.
+La connexion de Lightspeed Restaurant à HubRise permet à votre logiciel de caisse de communiquer avec les autres applications que vous utilisez tous les jours. Vous pouvez ainsi recevoir des commandes depuis votre solution de commande en ligne, les plateformes de livraison de repas, les applications de commande à table ou les solutions de paiement à table directement dans votre logiciel de caisse et votre écran d'affichage cuisine. Exportez votre menu Lightspeed vers d'autres applications connectées à HubRise.
 
 Grâce à HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes avec votre logiciel de caisse et de commande en ligne, les plateformes de livraison de repas (dont Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs, les services de livraison, les solutions d'eMarketing (SMS/e-mail), les systèmes de business intelligence, de gestion de stock et de fidélisation client, et bien d'autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, consultez notre [page Apps](/apps).
 

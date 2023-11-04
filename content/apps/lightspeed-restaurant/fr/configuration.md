@@ -26,7 +26,7 @@ Dans cette section, vous pouvez personnaliser la façon dont Lightspeed Restaura
 
 Pour retarder les commandes jusqu'à peu avant l'heure de livraison, vous pouvez renseigner le champ **Délai d'affichage**. Si vous le laissez vide, les commandes seront affichées immédiatement dans Lightspeed.
 
-Par défaut, Lightspeed Restaurant Bridge ne récupère pas les ventes de Lightspeed dans HubRise. Pour activer cette fonctionnalité, sélectionnez **Enabled for paid sales** dans le champ **Récupération des commandes**.
+Par défaut, Lightspeed Restaurant Bridge ne récupère pas les ventes de Lightspeed dans HubRise. Pour activer cette fonctionnalité, sélectionnez **Enabled for dine-in sales** dans le champ **Récupération des commandes**.
 
 ## Enregistrer la configuration
 

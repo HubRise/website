@@ -22,13 +22,19 @@ Lightspeed Restaurant Bridge se connecte à un point de vente HubRise. Vous deve
 1. Sélectionnez **CONNEXIONS** > **Voir les apps disponibles**.
 1. Sélectionnez Lightspeed Restaurant Bridge dans la liste des applications.
 1. Cliquez sur **Connecter**.
-1. Autorisez Lightspeed Restaurant Bridge à accéder à votre point de vente référencé dans HubRise. Si votre compte présente plusieurs points de vente, développez **Tous les points de vente**, choisissez le point de vente à connecter, puis **cliquez** sur **Autoriser**. Si vous disposez de plusieurs listes de clients, vous serez invité à préciser également celle que vous souhaitez utiliser.
+1. Autorisez Lightspeed Restaurant Bridge à accéder à votre point de vente référencé dans HubRise. Si votre compte présente plusieurs points de vente, développez **Tous les points de vente**, choisissez le point de vente à connecter, puis **cliquez** sur **Autoriser**. Si vous disposez de plusieurs listes de clients ou de catalogues sur HubRise, vous serez également invité à préciser ceux que vous souhaitez utiliser.
 1. Vous êtes redirigé vers l'interface utilisateur de Lightspeed Restaurant Bridge. Cliquez sur **Connexion à Lightspeed**.
 1. À la première connexion, vous êtes redirigé vers la page de connexion Lightspeed. Indiquez votre **e-mail** et votre **mot de passe** Lightspeed, puis cliquez sur **SE CONNECTER**.
 1. Lorsque vous êtes connecté à Lightspeed, la page **Configuration** s'affiche.
    - Dans le menu déroulant **Etablissement**, sélectionnez l'établissement Lightspeed à connecter.
    - Cliquez sur **Enregistrer**.
-1. Votre logiciel de caisse est désormais connecté à votre point de vente HubRise. Les commandes envoyées à HubRise sont maintenant transmises à Lightspeed Restaurant.
+1. Votre logiciel de caisse est désormais connecté à votre point de vente HubRise. Les commandes envoyées à HubRise apparaîtront dans le restaurant Lightspeed une fois que l'intégration [HubRise sera activée](#enable-integration).
+
+## 2. Activer l'intégration à HubRise {#enable-integration}
+
+Envoyez un e-mail à support@hubrise.com pour demander l'activation de la connexion. Aucune donnée ne sera transmise de HubRise à Lightspeed Restaurant tant que Lightspeed n'aura pas activé l'API pour HubRise dans votre compte. HubRise facilitera cette activation en écrivant à k-series.support@lightspeedhq.com.
+
+Lorsque vous faites votre demande à HubRise, précisez quelles applications vous souhaitez connecter. Indiquez-nous également si vous souhaitez que le taux de TVA standard soit appliqué ou si votre entreprise est soumise à des taux de TVA spécifiques. Pour vérifier les taux de TVA standard configurés par Lightspeed lors de l'activation de l'API pour HubRise, consultez cet article : [Les taux TVA pour la restauration en France, Suisse et Belgique](https://www.lightspeedhq.ch/blog/comparaison-taux-tva/).
 
 ---
 
@@ -36,15 +42,9 @@ Lightspeed Restaurant Bridge se connecte à un point de vente HubRise. Vous deve
 
 ---
 
-## 2. Activer l'intégration à HubRise
-
-Envoyez un e-mail à support@hubrise.com pour demander l'activation de la connexion. Aucune donnée ne sera transmise de HubRise à Lightspeed Restaurant tant que Lightspeed n'aura pas activé l'API pour votre compte. HubRise facilitera cette activation en écrivant à k-series.support@lightspeedhq.com.
-
-Lorsque vous faites votre demande à HubRise, précisez quelles applications vous souhaitez connecter. Indiquez-nous également si vous souhaitez que le taux de TVA standard soit appliqué ou si votre entreprise est soumise à des taux de TVA spécifiques. Pour vérifier les taux de TVA standard configurés par Lightspeed lors de l'activation de l'API pour HubRise, consultez cet article : [Les taux TVA pour la restauration en France, Suisse et Belgique](https://www.lightspeedhq.ch/blog/comparaison-taux-tva/).
-
 ## 3. Donner accès au support Lightspeed
 
-Nous recommandons de fournir au service de support Lightspeed l'accès à votre point de vente HubRise connecté à Lightspeed Restaurant. Il pourra résoudre les éventuels problèmes en examinant les logs de Lightspeed Restaurant Bridge.
+Nous recommandons de fournir, au service de support Lightspeed, l'accès à votre point de vente HubRise connecté à Lightspeed Restaurant. Ils pourront ainsi résoudre les éventuels problèmes en examinant les logs de Lightspeed Restaurant Bridge.
 
 Pour donner au support Lightspeed l'accès à votre point de vente, suivez ces étapes.
 

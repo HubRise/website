@@ -17,9 +17,9 @@ La page d'accueil de Lightspeed Restaurant Bridge affiche les dernières opérat
 - **HEURE** : date et heure de l'opération.
 - **STATUT** : statut de l'opération. La valeur OK indique que l'opération a réussi. Dans le cas contraire, un message précise le type d'erreur survenue.
 
-Cliquez sur une ligne pour afficher une nouvelle page contenant plus d'informations sur l'opération.
+Cliquez sur une ligne pour afficher une nouvelle page contenant plus d'informations sur [l'opération](#operation).
 
-En haut à droite de la page d'accueil de Lightspeed Restaurant Bridge figurent l'utilisateur et le point de vente connectés, ainsi que l'établissement Lightspeed actuellement utilisé. Cliquez sur la flèche vers le bas pour développer un menu où vous pourrez modifier la langue de l'interface et accéder à la **page Configuration**.
+En haut à droite de la page d'accueil de Lightspeed Restaurant Bridge figurent l'utilisateur et le point de vente connectés, ainsi que l'ID de l'établissement Lightspeed actuellement utilisé. Cliquez sur la flèche vers le bas pour développer un menu où vous pourrez modifier la langue de l'interface et accéder à la **page Configuration**.
 
 ---
 
