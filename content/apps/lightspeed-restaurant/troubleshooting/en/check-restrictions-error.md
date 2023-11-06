@@ -32,7 +32,7 @@ In the `reason` field, notice how the error message informs you about the item t
 To remove sales restrictions from a product, follow these steps:
 
 1. Log in to your [Lightspeed back office](https://console.ikentoo.com).
-1. From the menu bar, select **Items** > **Items**.
+1. Select **Menu management**, then select **Items**.
 1. From the list of products, find the product mentioned in the error message, then click the **Edit** icon in the **Actions** column.
 1. In the **Item details** section, disable the checkbox next to **Enable a counter on this item to restrict the available quantity**.
 1. Click **Save**.
