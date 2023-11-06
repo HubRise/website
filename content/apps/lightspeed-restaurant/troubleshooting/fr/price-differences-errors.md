@@ -29,7 +29,7 @@ Cette erreur est généralement due à :
 
 ### Codes ref manquants
 
-Les articles sans code ref sont [ignorés par Lightspeed Restaurant Bridge](/apps/lightspeed-restaurant/push-orders#items-and-options) et ne sont pas envoyés au logiciel de caisse, ce qui provoque une erreur. Pour résoudre le problème, assurez-vous que tous les articles disponibles sur la plateforme de commande en ligne ou de livraison de repas ont un code ref.
+Les articles sans code ref sont [ignorés par Lightspeed Restaurant Bridge](/apps/lightspeed-restaurant/push-orders#items-and-options) et ne sont pas envoyés au logiciel de caisse, ce qui provoque une erreur. Pour résoudre le problème, assurez-vous que tous les éléments disponibles dans les applications tierces connectées à votre compte ont un code ref.
 
 ### Erreurs d'arrondi des prix
 

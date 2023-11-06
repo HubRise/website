@@ -8,7 +8,7 @@ meta:
   description: Découvrez les détails techniques sur l'envoi des commandes de HubRise à Lightspeed, et les champs transmis ou non.
 ---
 
-HubRise peut envoyer des commandes directement dans votre logiciel de caisse Lightspeed Restaurant depuis différentes solutions connectées. Pour cela, il vous suffit de connecter Lightspeed Restaurant Bridge à HubRise. Aucune configuration supplémentaire n'est requise.
+HubRise peut envoyer les commandes de différentes solutions connectées directement dans votre logiciel de caisse Lightspeed Restaurant. Pour cela, il vous suffit de connecter Lightspeed Restaurant Bridge à HubRise. Aucune configuration supplémentaire n'est requise.
 
 Cette page détaille les informations envoyées par HubRise à votre logiciel de caisse.
 
@@ -32,7 +32,7 @@ Lightspeed ne prend pas en charge les paiements fractionnés. Par conséquent, l
 
 Le code ref du paiement est utilisé pour associer la commande HubRise au mode de paiement correct dans Lightspeed. Lightspeed Restaurant Bridge ignore les paiements sans code ref.
 
-Pour apprendre comment vérifier les codes ref des modes de paiement disponibles dans votre back-office Lightspeed, consultez [Associer les codes ref](/apps/lightspeed-restaurant/map-ref-codes#payment-methods).
+Pour savoir comment vérifier les codes ref des types de service disponibles dans votre back-office Lightspeed, consultez [Associer les codes ref](/apps/lightspeed-restaurant/map-ref-codes#payment-methods).
 
 ### Gérer les différences de prix
 
@@ -53,7 +53,7 @@ Lightspeed Restaurant exige que chaque type de service (livraison, à emporter, 
 
 Le code ref du type de service est utilisé pour associer la commande HubRise au profil de compte correct dans Lightspeed.
 
-Pour apprendre comment vérifier les codes ref des types de service disponibles dans votre back-office Lightspeed, consultez [Associer les codes ref](/apps/lightspeed-restaurant/map-ref-codes#service-types).
+Pour savoir comment vérifier les codes ref des types de service disponibles dans votre back-office Lightspeed, consultez [Associer les codes ref](/apps/lightspeed-restaurant/map-ref-codes#service-types).
 
 ## Informations client
 

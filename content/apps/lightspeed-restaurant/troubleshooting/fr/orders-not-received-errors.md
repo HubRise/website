@@ -12,7 +12,7 @@ Cette page décrit comment résoudre les problèmes de commandes non reçues dan
 
 ## HubRise non activé
 
-Il peut arriver que vous ne receviez pas les commandes HubRise, même sans erreur apparente dans les logs.
+Il peut arriver que vous ne receviez pas les commandes HubRise, sans erreurs apparente dans les logs.
 
 Dans les [logs des commandes](/apps/lightspeed-restaurant/user-interface#operation), les commandes concernées affichent le message suivant :
 
@@ -22,4 +22,4 @@ Dans les [logs des commandes](/apps/lightspeed-restaurant/user-interface#operati
 }
 ```
 
-Dans ce cas, il est probable qu'HubRise n'était pas activé dans Lightspeed. Pour résoudre le problème, contactez le support Lightspeed et demandez à activer la connexion HubRise pour votre logiciel de caisse.
+Dans ce cas, il est probable qu'HubRise n'était pas activé dans Lightspeed. Pour résoudre le problème, contactez le support Lightspeed et demandez à activer la connexion HubRise pour votre logiciel de caisse. Pour plus d'informations, consultez [Activer l'intégration à HubRise](/apps/lightspeed-restaurant/connect-hubrise#enable-integration).

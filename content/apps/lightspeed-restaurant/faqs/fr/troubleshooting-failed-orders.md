@@ -12,20 +12,21 @@ L'échec de l'envoi d'une commande au logiciel de caisse Lightspeed Restaurant p
 
 ## Codes ref incorrects
 
-Si vous recevez des commandes d'une app connectée, par exemple une plateforme de livraison de repas, vous devez vous assurer que les codes ref y sont correctement configurés. Un code ref incorrect dans le menu de votre plateforme de livraison de repas peut entraîner le rejet d'une commande entière par le logiciel de caisse Lightspeed Restaurant.
+Si vous recevez des commandes d'une app connectée, par exemple une plateforme de livraison de repas ou une solution de commande en ligne, vous devez vous assurer que les codes ref y sont correctement configurés. Un code ref incorrect dans le menu peut entraîner le rejet d'une commande entière par le logiciel de caisse Lightspeed Restaurant.
 
 Pour résoudre un problème de code ref incorrect dans une commande, consultez les logs pour Lightspeed Restaurant Bridge :
 
-- Ouvrez la page **CONNEXIONS** : https://manager.hubrise.com/connections.
-- Cliquez sur **OUVRIR** à côté de la connexion Lightspeed Restaurant Bridge. Une nouvelle fenêtre s'affiche avec toutes vos commandes récentes.
+- Connectez-vous à votre [compte HubRise](https://manager.hubrise.com/connections).
+- Ouvrez la page **CONNEXIONS**.
+- Cliquez sur **Ouvrir** à côté de la connexion Lightspeed Restaurant Bridge. Une nouvelle fenêtre s'affiche avec toutes vos commandes récentes.
 - Dans la liste, trouvez la commande avec laquelle vous avez eu un problème.
-- Cliquez sur la ligne correspondante et identifiez la transaction provenant de Lightspeed. Il s'agit de celle avec la direction "Lightspeed -> Bridge".
-- Dans le corps de la requête, si `FAILURE` est la valeur de l'état et `Could not add item <id> (not found)` la cause de l'erreur, le rejet de la commande est probablement dû à un code ref incorrect dans votre application intégrée. La valeur `<id>` dans le message d'erreur indiquera l'article qui pose problème.
+- Cliquez sur la ligne correspondante et identifiez la transaction provenant de Lightspeed. Il s'agit de celle avec la direction **Lightspeed -> Bridge**.
+- Dans le corps de la requête, si `FAILURE` est la valeur de l'état et `Could not add item <id> (not found)` la cause de l'erreur, le rejet de la commande est probablement dû à un code ref incorrect dans votre application connectée. La valeur `<id>` dans le message d'erreur indiquera l'article qui pose problème.
 
 ## Activation de l'API sur la tablette {#api-activation}
 
-La connexion à Lightspeed Restaurant exige que l'API Lightspeed soit activée. Il vous suffit de contacter le support Lightspeed et de demander l'activation. Si vous envisagez de connecter Lightspeed Restaurant à des plateformes de livraison de repas comme Deliveroo, Uber Eats et Just Eat, il est préférable de les spécifier. Le support Lightspeed préparera la configuration pour recevoir ce type de commandes également.
+Pour connecter Lightspeed Restaurant, l'API Lightspeed doit être activée par l'équipe du support Lightspeed. Pour plus d'informations, consultez [Connexion lightspeed à HubRise](/apps/lightspeed-restaurant/connect-hubrise).
 
-Si après cette configuration vous ne parvenez toujours pas à recevoir des commandes sur votre tablette, vérifiez que la connexion API y est bien activée. Sur l'écran principal de l'application Lightspeed, une icône verte en forme de crayon en haut du bloc de droite indique que c'est le cas. Si l'icône n'est pas verte, cliquez dessus puis cliquez sur le bouton **Activer** pour activer l'API.
+Une fois que l'API Lightspeed a été correctement configurée, si vous n'arrivez toujours pas à recevoir des commandes sur votre tablette, vérifiez que la connexion API est bien activée. Sur l'écran principal de l'application Lightspeed, si vous voyez une icône verte en forme de crayon en haut du bloc de droite, cela signifie que votre connexion API est activée. Si l'icône n'est pas verte, cliquez dessus puis cliquez sur le bouton **Activer** pour activer l'API.
 
 ![Écran principal de l'application Lightspeed avec l'icône verte indiquant que la connexion API est activée.](../../images/010-2x-lightspeed-main-screen.png)

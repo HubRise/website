@@ -5,7 +5,7 @@ position: 4
 layout: documentation
 meta:
   title: Configuration | Lightspeed Restaurant | HubRise
-  description: Instructions simples pour configurer Lightspeed Restaurant Bridge afin qu'il fonctionne parfaitement avec Lightspeed et d'autres applications connectées à HubRise.
+  description: Instructions simples pour configurer Lightspeed Restaurant Bridge afin qu'il fonctionne parfaitement avec Lightspeed et d'autres applications connectées à HubRise. La configuration est simple.
 ---
 
 La page de configuration vous permet de personnaliser le comportement de Lightspeed Restaurant Bridge selon vos préférences. Elle est divisée en plusieurs sections pour faciliter la navigation.
@@ -26,7 +26,7 @@ Dans cette section, vous pouvez personnaliser la façon dont Lightspeed Restaura
 
 Pour retarder les commandes jusqu'à peu avant l'heure de livraison, vous pouvez renseigner le champ **Délai d'affichage**. Si vous le laissez vide, les commandes seront affichées immédiatement dans Lightspeed.
 
-Par défaut, Lightspeed Restaurant Bridge ne récupère pas les ventes de Lightspeed dans HubRise. Pour activer cette fonctionnalité, sélectionnez **Enabled for dine-in sales** dans le champ **Récupération des commandes**.
+Par défaut, Lightspeed Restaurant Bridge ne récupère pas les ventes de Lightspeed dans HubRise. Pour activer cette fonctionnalité, sélectionnez **Activée pour les ventes en consommation sur place** ou **Activée pour toutes les ventes** dans le champ **Récupération des commandes**.
 
 ## Enregistrer la configuration
 

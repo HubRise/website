@@ -16,7 +16,7 @@ Vous pouvez également exporter votre catalogue Lightspeed directement dans HubR
 
 ## Télécharger le catalogue complet
 
-Vous pouvez télécharger votre catalogue Lightspeed pour gérer les articles et les codes ref avec un logiciel distinct.
+Vous pouvez télécharger votre catalogue Lightspeed pour gérer les articles et les codes ref avec sur un autre logiciel.
 
 Pour télécharger le catalogue Lightspeed, suivez ces étapes :
 
@@ -27,7 +27,7 @@ Pour télécharger le catalogue Lightspeed, suivez ces étapes :
 
 Pour vérifier les codes ref des articles, vous pouvez ouvrir le fichier CSV téléchargé dans Excel ou dans un éditeur de texte. Les codes ref figurent dans la colonne **SKU**.
 
-## Trouver les codes ref d'articles spécifiques
+## Trouver les codes ref des articles
 
 Vous pouvez trouver les codes ref de SKU, options, promotions, remises, frais, types de service et paiements dans votre back-office Lightspeed.
 
@@ -40,7 +40,7 @@ Pour trouver les codes ref de SKU, options, remises et frais, suivez ces étapes
 
 Copiez les codes dans l'application associée. Pour des instructions détaillées, suivez la documentation de l'application connectée sur le site internet de HubRise.
 
-Notez que les frais et les remises doivent être créés en tant qu'articles pour être compatibles avec le modèle de données de HubRise. Pour plus d'informations, consultez [Create Ref Codes](/apps/lightspeed-restaurant/faqs/create-ref-codes).
+Notez que les frais et les remises doivent être créés en tant qu'articles pour être compatibles avec le modèle de données de HubRise. Pour plus d'informations, consultez la rubrique [comment créer des codes ref](/apps/lightspeed-restaurant/faqs/create-ref-codes).
 
 ### Instructions de production
 

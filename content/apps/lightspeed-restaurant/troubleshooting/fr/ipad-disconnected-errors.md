@@ -10,7 +10,7 @@ meta:
 
 Cette page décrit comment résoudre les erreurs causées par un iPad déconnecté ou mal configuré.
 
-## Point de vente n'acceptant pas les commandes en ligne
+## Etablissement n'acceptant pas les commandes en ligne
 
 Dans certaines circonstances, les commandes peuvent échouer, ce qui génère le message d'erreur suivant :
 

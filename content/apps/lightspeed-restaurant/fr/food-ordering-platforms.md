@@ -33,7 +33,7 @@ Si vous préférez laisser le support Lightspeed configurer ces éléments, assu
 
 Par convention, l'équipe de support Lightspeed utilise les codes ref prédéfinis documentés dans cette page lorsqu'elle configure l'intégration. Si vous configurez vous-même le back-office Lightspeed, nous vous recommandons d'utiliser les mêmes codes, car cela simplifie le dépannage.
 
-Pour des instructions détaillées sur la création de codes ref dans le back-office Lightspeed, consultez [Créer des codes ref](/apps/lightspeed-restaurant/faqs/create-ref-codes).
+Pour des instructions détaillées sur la création de codes ref dans le back-office Lightspeed, consultez la rubrique [comment créer des codes ref](/apps/lightspeed-restaurant/faqs/create-ref-codes).
 
 ## Deliveroo
 

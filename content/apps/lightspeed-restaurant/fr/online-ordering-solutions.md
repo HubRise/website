@@ -1,10 +1,10 @@
 ---
-title: Solution de commande en ligne
+title: Solutions de commande en ligne
 path_override: solutions-de-commande-en-ligne
 position: 7
 layout: documentation
 meta:
-  title: Solution de commande en ligne | Lightspeed Restaurant | HubRise
+  title: Solutions de commande en ligne | Lightspeed Restaurant | HubRise
   description: Pour intégrer Lightspeed Restaurant à des solutions de commande en ligne, vous devez spécifier des codes ref dans Lightspeed et dans la page de configuration de la solution de commande.
 ---
 
@@ -61,4 +61,4 @@ Pour des raisons historiques, LivePepper utilise ses propres codes ref. Pour env
 | Frais            | Frais de livraison                  | Voir ci-dessous |
 | Remises          | Remise générique                    | Voir ci-dessous |
 
-Pour envoyer des frais à Lightspeed, créez des produits avec un prix variable _positif_ dans Lightspeed et utilisez leurs codes dans LivePepper. Pour envoyer des remises, créez des produits avec un prix variable `_negatif_`.
+Pour envoyer des frais à Lightspeed, créez des produits avec un prix variable `positif` dans Lightspeed et utilisez leurs codes dans LivePepper. Pour envoyer des remises, créez des produits avec un prix variable `_negatif_`.
