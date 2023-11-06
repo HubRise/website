@@ -48,7 +48,7 @@ Sur la page de configuration de Deliveroo Bridge, utilisez les paramètres suiva
 | Types de service    | Code ref livraison par le restaurant                    | `DVMD`                                        |
 | Types de service    | Code ref à emporter                                     | `DVMTA`                                       |
 | Types de service    | Envoyer les commandes livrées par Deliveroo en tant que | `commandes en livraison`                      |
-| Remises             | Code ref promotion                                      | `DELD99`                                      |
+| Remises             | Code ref remise                                         | `DELD99`                                      |
 | Frais               | Code ref frais de livraison                             | `DELD77`                                      |
 | Frais               | Code ref surcharge                                      | `DELD88`                                      |
 | Frais               | Code ref frais d'emballage                              | (contacter support@hubrise.com si besoin)     |
@@ -84,7 +84,7 @@ Just-Eat.ch utilise l'API Just Eat via Takeaway. Sur la page de configuration de
 | Types de service    | Code ref livraison par le restaurant                        | `EATDRAP`                                     |
 | Types de service    | Code ref à emporter                                         | `EATEATAP`                                    |
 | Types de service    | Envoyer les commandes livrées par la plateforme en tant que | `commandes en livraison`                      |
-| Remises             | Code ref promotion                                          | `EAT99`                                       |
+| Remises             | Code ref remise                                             | `EAT99`                                       |
 | Frais               | Code ref frais de livraison                                 | `EAT77`                                       |
 | Frais               | Code ref frais de service                                   | `EAT66`                                       |
 | Paiements           | Code ref paiement en ligne                                  | `EATPM`                                       |
@@ -122,7 +122,7 @@ Takeaway.com utilise l'API Just Eat via Takeaway. Sur la page de configuration d
 | Types de service    | Code ref livraison par le restaurant                        | `TADRAP`                                      |
 | Types de service    | Code ref à emporter                                         | `TATAAP`                                      |
 | Types de service    | Envoyer les commandes livrées par la plateforme en tant que | `commandes en livraison`                      |
-| Remises             | Code ref promotion                                          | `TA99`                                        |
+| Remises             | Code ref remise                                             | `TA99`                                        |
 | Frais               | Code ref frais de livraison                                 | `TA77`                                        |
 | Paiements           | Code ref paiement en ligne                                  | `TAPM`                                        |
 | Paiements           | Code ref paiement en espèces                                | (laisser vide)                                |
@@ -138,7 +138,7 @@ Thuisbezorgd.nl utilise l'API Just Eat via Takeaway. Sur la page de configuratio
 | Types de service    | Code ref livraison par le restaurant                        | `THDRAP`                                      |
 | Types de service    | Code ref à emporter                                         | `THTHAP`                                      |
 | Types de service    | Envoyer les commandes livrées par la plateforme en tant que | `commandes en livraison`                      |
-| Remises             | Code ref promotion                                          | `TH99`                                        |
+| Remises             | Code ref remise                                             | `TH99`                                        |
 | Frais               | Code ref frais de livraison                                 | `TH77`                                        |
 | Paiements           | Code ref paiement en ligne                                  | `THPM`                                        |
 | Paiements           | Code ref paiement en espèces                                | (laisser vide)                                |
@@ -152,7 +152,7 @@ Pour recevoir des commandes HOP Delivery dans Lightspeed, utilisez les valeurs s
 | Types de service | Code ref livraison par la plateforme | `HOPDEL`       |
 | Types de service | Code ref livraison par le restaurant | `HOPREST`      |
 | Types de service | Code ref à emporter                  | `HOPCOL`       |
-| Remises          | Code ref promotion                   | `HOP99`        |
+| Remises          | Code ref remise                      | `HOP99`        |
 | Frais            | Code ref frais de livraison          | `HOP77`        |
 | Frais            | Code ref frais de service            | `HOP88`        |
 | Paiements        | Code ref paiement en ligne           | `HOPPM`        |
@@ -168,7 +168,7 @@ Pour recevoir des commandes Smood dans Lightspeed, utilisez les valeurs suivante
 | Types de service | Code ref de livraison par le restaurant | `SMOODRDEL` |
 | Types de service | À l'emporter code ref                   | `SMOODCOL`  |
 | Types de service | Send orders delivered by Smood as       | `Delivery`  |
-| Remises          | Code ref de remise                      | `SMOOD99`   |
+| Remises          | Code ref remise                         | `SMOOD99`   |
 | Remises          | Promotion ref code                      | `SMOOD99`   |
 | Frais            | Frais de livraison code ref             | `SMOOD77`   |
 | Payments         | Online payment ref code                 | `SMOODPM`   |

@@ -29,8 +29,7 @@ Pour plus d'informations, consultez les pages [Bloquer ou déconnecter une appli
 1. Cliquez ensuite sur **Connexion à Lightspeed**. Si vous êtes redirigé vers votre espace Lightspeed, munissez-vous de vos identifiants et connectez-vous à votre compte Lightspeed.
 1. Sélectionnez votre restaurant et cliquez sur **Enregistrer**.
 1. Optionnel : Si vous souhaitez synchroniser votre menu Lightspeed, sélectionnez un menu dans la section **Catalogue**.
-1. Optionnel : Si vous souhaitez remonter les commandes Lightspeed vers HubRise, sélectionnez **Récupérer les commandes de Lightspeed** > **Récupération des commandes** > **Activée pour les ventes en consommation sur place** ou <strong xw
--id="1">Activée pour toutes les ventes</strong>.
+1. Optionnel : Si vous souhaitez remonter les commandes Lightspeed vers HubRise, sélectionnez **Récupérer les commandes de Lightspeed** > **Récupération des commandes** > **Activée pour les ventes en consommation sur place** ou **Activée pour toutes les ventes**.
 1. Cliquez sur **Save** (Enregistrer).
 
 Si vous possédez plusieurs points de vente, répétez les étapes précédentes pour chacun d'eux.
