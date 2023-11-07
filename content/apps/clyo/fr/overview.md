@@ -9,7 +9,7 @@ meta:
 gallery:
 app_info:
   category: Logiciels de caisse
-  availability: France
+  availability: France, Suisse
   website: https://www.clyosystems.com
   contact: contact@support@clyosystems / +33 1 84 25 27 77
 ---
