@@ -62,6 +62,7 @@ const Index = ({
           <SearchWrapper>
             <SearchIcon code="search" />
             <Input
+              autoFocus
               value={searchInputValue}
               placeholder={t("apps.search_input_placeholder")}
               onChange={(e) => {
