@@ -32,6 +32,12 @@ content:
           logo: carrepos.png
           title: Carré POS
           description: Carré POS est un logiciel de caisse qui permet une prise de commande rapide et s'adapte à tous les types de commerces, dont les restaurants, les boulangeries, les boutiques, les coiffeurs ou encore les fleuristes.
+        - website: https://www.clyosystems.com
+          documentation: /apps/clyo
+          logo: clyo.png
+          title: Clyo Systems
+          description: Clyo Systems offre une solution caisse tout-en-un pour les restaurants, incluant la gestion des stocks, fidélité, écran cuisine, pointeuse et commande en ligne. C'est un logiciel de caisse modulaire auquel il est possible d'ajouter des modules personnalisables.
+          additional_info: Intégration en cours.
         - website: https://www.epostechnologies.co.uk/
           documentation: /fr/apps/epos-technologies
           logo: epostechnologies.png
