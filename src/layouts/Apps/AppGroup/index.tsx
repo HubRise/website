@@ -16,6 +16,7 @@ import {
   EmailLink,
   AppLogoImage,
 } from "./Styles"
+import { doesSearchTextMatch } from "@utils/search"
 
 interface AppSectionProps {
   title: string
@@ -37,7 +38,7 @@ const App = ({
   const { t } = useTranslation()
 
   const filteredApps = useMemo(() => {
-    const filteredArray = apps.filter((app) => app.title.toLowerCase().includes(filterSearch.toLowerCase()))
+    const filteredArray = apps.filter((app) => doesSearchTextMatch(app.title, filterSearch) === true)
     return filterSearch ? filteredArray : apps
   }, [filterSearch, apps])
 

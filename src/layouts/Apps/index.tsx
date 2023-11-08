@@ -10,6 +10,7 @@ import Developer from "./Developer"
 import Hero from "./Hero"
 import Nav from "./Nav"
 import NoResults from "./NoResults"
+import { doesSearchTextMatch } from "@utils/search"
 
 interface AppsProps {
   language: Language
@@ -36,23 +37,21 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
 
     if (selectedCategory !== content.all_apps) {
       const selectedCategoryApps = content.categories.filter(({ title }) => title === selectedCategory)
-      const filteredApps = selectedCategoryApps.filter((app) =>
-        app.title.toLowerCase().includes(filterSearch.toLowerCase()),
-      )
+      const filteredApps = selectedCategoryApps.filter((app) => doesSearchTextMatch(app.title, filterSearch) === true)
       if (filteredApps.length < 0) {
         return false
       }
     }
 
     content.categories.map(({ apps }) => {
-      const filteredApps = apps.filter((app) => app.title.toLowerCase().includes(filterSearch.toLowerCase()))
+      const filteredApps = apps.filter((app) => doesSearchTextMatch(app.title, filterSearch) === true)
       if (filteredApps.length > 0) {
         results = true
       }
     })
 
     return results
-  }, [filterSearch, content.categories, hasFiltersApplied, selectedCategory, content.all_apps])
+  }, [filterSearch, content.categories, hasFiltersApplied, selectedCategory, content.all_apps, doesSearchTextMatch])
 
   const onSearchInputChange = (value: string) => {
     setFilterSearch(value)
