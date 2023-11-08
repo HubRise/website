@@ -14,7 +14,6 @@ import {
   EmailLink,
   AppLogoImage,
 } from "./Styles"
-import { doesSearchTextMatch } from "@utils/search"
 
 interface AppGroupProps {
   title: string

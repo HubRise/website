@@ -4,13 +4,13 @@ import * as React from "react"
 import { AppsYaml } from "@layouts/Apps/types"
 import { ContentImage } from "@utils/contentImage"
 import { Language } from "@utils/locales"
+import { doesSearchTextMatch } from "@utils/search"
 
 import AppGroup from "./AppGroup"
 import Developer from "./Developer"
 import Hero from "./Hero"
 import Nav from "./Nav"
 import NoResults from "./NoResults"
-import { doesSearchTextMatch } from "@utils/search"
 
 interface AppsProps {
   language: Language
