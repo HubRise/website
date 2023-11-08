@@ -5,7 +5,7 @@ const { withSentryConfig } = require("@sentry/nextjs")
 const yaml = require("yaml")
 
 // Check the presence of required env variables.
-const requiredEnvVars = ["NEXT_PUBLIC_CONTACT_MESSAGE_URL"]
+const requiredEnvVars = []
 const missingVars = requiredEnvVars.filter((key) => !(key in process.env))
 if (missingVars.length > 0) {
   throw new Error(`Missing required environment variables: ${missingVars.join(", ")}`)
