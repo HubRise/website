@@ -11,7 +11,12 @@ const verifyRecaptcha = async (recaptchaResponse: string) => {
     },
   })
 
-  return response?.data?.success
+  if (response?.data?.success) {
+    return true
+  } else {
+    console.error("Recaptcha validation failed", response?.data)
+    return false
+  }
 }
 
 const sendEmail = async (name: string, email: string, message: string) => {
@@ -23,16 +28,22 @@ const sendEmail = async (name: string, email: string, message: string) => {
     },
   })
 
-  await transporter.sendMail({
+  const response = await transporter.sendMail({
     from: email,
     to: process.env.CONTACT_EMAIL,
     subject: "Message from hubrise.com",
     text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
   })
+
+  if (response.rejected.length > 0) {
+    console.error("Email sending failed", response)
+  }
 }
 
 export async function POST(req: Request) {
-  const { recaptchaResponse, name, email, message } = req.body as any
+  const body = req.json != null ? await req.json() : req.body
+  const { recaptchaResponse, name, email, message } = body
+  console.log("Sending email", { name, email, message })
 
   const isRecaptchaValid = await verifyRecaptcha(recaptchaResponse)
   if (!isRecaptchaValid) {
