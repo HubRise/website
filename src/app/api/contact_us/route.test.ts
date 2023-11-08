@@ -40,7 +40,9 @@ describe("/api/contact_us", () => {
     const response = await sendRequest()
 
     expect(response.status).toEqual(400)
-    expect(await response.json()).toEqual({ error: "Captcha validation failed" })
+    expect(await response.json()).toEqual({
+      error: 'Captcha validation failed: {"success":false}. RECAPTCHA_SECRET_KEY: undefined',
+    })
   })
 
   it("should return 400 on valid recaptcha but failed SendGrid", async () => {
@@ -50,7 +52,7 @@ describe("/api/contact_us", () => {
     const response = await sendRequest()
 
     expect(response.status).toEqual(400)
-    expect(await response.json()).toEqual({ error: "Email sending failed" })
+    expect(await response.json()).toEqual({ error: 'SendGrid error: {"rejected":["john@example.com"]}' })
   })
 
   it("should return 200 on valid Recaptcha and SendGrid responses", async () => {
