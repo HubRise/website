@@ -26,6 +26,10 @@ spec:
         - name: website
           image: hubrise/website
 
+          envFrom:
+            - configMapRef:
+                name: website-env
+
           readinessProbe:
             httpGet:
               path: /api/live
