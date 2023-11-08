@@ -27,7 +27,7 @@ spec:
           image: hubrise/website
 
           envFrom:
-            - configMapRef:
+            - secretRef:
                 name: website-env
 
           readinessProbe:
