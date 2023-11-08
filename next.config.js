@@ -4,19 +4,6 @@ const { join } = require("path")
 const { withSentryConfig } = require("@sentry/nextjs")
 const yaml = require("yaml")
 
-// Check the presence of required env variables.
-const requiredEnvVars = [
-  "SENDGRID_USERNAME",
-  "SENDGRID_PASSWORD",
-  "CONTACT_EMAIL",
-  "RECAPTCHA_SECRET_KEY",
-  "NEXT_PUBLIC_RECAPTCHA_SITE_KEY",
-]
-const missingVars = requiredEnvVars.filter((key) => !(key in process.env))
-if (missingVars.length > 0) {
-  throw new Error(`Missing required environment variables: ${missingVars.join(", ")}`)
-}
-
 /** @type {import('next').NextConfig} */
 let finalConfig = {}
 
