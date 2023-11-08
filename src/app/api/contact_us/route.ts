@@ -32,9 +32,7 @@ const sendEmail = async (name: string, email: string, message: string) => {
 }
 
 export async function POST(req: Request) {
-  const body = req.json != null ? await req.json() : req.body
-
-  const { recaptchaResponse, name, email, message } = body
+  const { recaptchaResponse, name, email, message } = req.body as any
 
   const isRecaptchaValid = await verifyRecaptcha(recaptchaResponse)
   if (!isRecaptchaValid) {

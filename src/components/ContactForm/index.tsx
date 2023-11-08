@@ -19,9 +19,6 @@ const ContactForm = (): JSX.Element => {
 
   function onSubmit(values: FormikValues, { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void }) {
     ;(window as any).grecaptcha.execute(recaptchaSiteKey, { action: "send_email" }).then((token: string) => {
-      // Use application/x-www-form-urlencoded content type (instead of application/json)
-      // to skip CORS preflight check, which has not been implemented on the server side.
-
       return axios
         .post("/api/contact_us", {
           name: values.name,
