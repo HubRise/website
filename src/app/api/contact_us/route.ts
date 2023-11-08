@@ -11,11 +11,8 @@ const verifyRecaptcha = async (recaptchaResponse: string) => {
     },
   })
 
-  if (response?.data?.success) {
-    return true
-  } else {
-    console.error("Recaptcha validation failed", response?.data)
-    return false
+  if (!response?.data?.success) {
+    throw new Error("Captcha validation failed")
   }
 }
 
@@ -36,7 +33,7 @@ const sendEmail = async (name: string, email: string, message: string) => {
   })
 
   if (response.rejected.length > 0) {
-    console.error("Email sending failed", response)
+    throw new Error("Email sending failed")
   }
 }
 
@@ -45,12 +42,12 @@ export async function POST(req: Request) {
   const { recaptchaResponse, name, email, message } = body
   console.log("Sending email", { name, email, message })
 
-  const isRecaptchaValid = await verifyRecaptcha(recaptchaResponse)
-  if (!isRecaptchaValid) {
-    return NextResponse.json({ error: "Captcha validation failed" }, { status: 400 })
+  try {
+    await verifyRecaptcha(recaptchaResponse)
+    await sendEmail(name, email, message)
+  } catch (error: any) {
+    return NextResponse.json({ error: error.message }, { status: 400 })
   }
-
-  await sendEmail(name, email, message)
 
   return NextResponse.json({ message: "email sent" }, { status: 200 })
 }
