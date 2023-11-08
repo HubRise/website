@@ -25,40 +25,41 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
   const [selectedCategory, setSelectedCategory] = React.useState(content.all_apps)
 
   const hasFiltersApplied = React.useMemo(() => {
-    return selectedCategory === content.all_apps && filterSearch === "" ? false : true
+    return !(selectedCategory === content.all_apps && filterSearch === "")
   }, [filterSearch, selectedCategory, content.all_apps])
 
-  const isThereAppResults = React.useMemo(() => {
-    let results: boolean = false
-
-    if (!hasFiltersApplied) {
-      return true
+  const filteredAppsByCategory = React.useMemo(() => {
+    if (filterSearch === "") {
+      return content.categories
     }
 
-    if (selectedCategory !== content.all_apps) {
-      const selectedCategoryApps = content.categories.filter(({ title }) => title === selectedCategory)
-      const filteredApps = selectedCategoryApps.filter((app) => doesSearchTextMatch(app.title, filterSearch) === true)
-      if (filteredApps.length < 0) {
-        return false
-      }
-    }
-
-    content.categories.map(({ apps }) => {
-      const filteredApps = apps.filter((app) => doesSearchTextMatch(app.title, filterSearch) === true)
-      if (filteredApps.length > 0) {
-        results = true
+    const filterResults = content.categories.map(({ title, slug, apps, has_suggest_app }) => {
+      return {
+        title,
+        slug,
+        apps: apps.filter((app) => doesSearchTextMatch(app.title, filterSearch)),
+        has_suggest_app,
       }
     })
 
-    return results
-  }, [filterSearch, content.categories, hasFiltersApplied, selectedCategory, content.all_apps, doesSearchTextMatch])
+    return filterResults.filter(({ apps }) => apps.length > 0)
+  }, [filterSearch, content.categories])
+
+  const scrollIntoView = () => {
+    const appsResults = document.getElementById("apps-results")
+    appsResults!.scrollIntoView({ behavior: "auto" })
+  }
 
   const onSearchInputChange = (value: string) => {
     setFilterSearch(value)
+    setSelectedCategory(content.all_apps)
+    scrollIntoView()
   }
 
   const onCategoryChange = (category: string) => {
     setSelectedCategory(category)
+    setFilterSearch("")
+    scrollIntoView()
   }
 
   return (
@@ -71,29 +72,32 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
         allAppsLabel={content.all_apps}
         selectedCategoryLabel={selectedCategory}
         onCategoryChange={onCategoryChange}
+        searchInputValue={filterSearch}
         onSearchInputChange={onSearchInputChange}
       />
 
-      {!isThereAppResults ? (
-        <NoResults />
-      ) : (
+      <div id="apps-results" />
+
+      {filteredAppsByCategory.length > 0 ? (
         <>
-          {content.categories.map(({ title, apps, has_suggest_app }, idx) => {
+          {filteredAppsByCategory.map(({ title, slug, apps, has_suggest_app }, idx) => {
             if (selectedCategory === content.all_apps || selectedCategory === title) {
               return (
                 <AppGroup
                   key={idx}
                   title={title}
+                  slug={slug}
                   apps={apps}
                   logoImages={logoImages}
                   additionalSections={content.additional_sections}
                   hasSuggestApp={has_suggest_app && !hasFiltersApplied}
-                  filterSearch={filterSearch}
                 />
               )
             }
           })}
         </>
+      ) : (
+        <NoResults />
       )}
 
       <Developer developers={content.developers} />

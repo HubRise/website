@@ -11,8 +11,8 @@ import { sizes } from "@utils/styles"
 import {
   StyledNav,
   Container,
-  CategoryFitlerWrapper,
-  CategoryFitler,
+  CategoryFilterWrapper,
+  CategoryFilter,
   CategoryList,
   CategoryItem,
   ArrowIcon,
@@ -25,6 +25,7 @@ interface NavProps {
   language: Language
   categories: AppsYaml["content"]["categories"]
   allAppsLabel: string
+  searchInputValue: string
   onSearchInputChange: (value: string) => void
   selectedCategoryLabel: string
   onCategoryChange: (category: string) => void
@@ -33,6 +34,7 @@ interface NavProps {
 const Index = ({
   categories,
   allAppsLabel,
+  searchInputValue,
   onSearchInputChange,
   selectedCategoryLabel,
   onCategoryChange,
@@ -55,25 +57,25 @@ const Index = ({
 
   return (
     <>
-      {/* Static div for anchor linking; required because anchors don't work on sticky elements. */}
-      <div id="nav" />
-
       <StyledNav ref={$navRef} $isSticky={isSticky}>
-        <Container>
+        <Container $isSticky={isSticky}>
           <SearchWrapper>
             <SearchIcon code="search" />
             <Input
+              autoFocus
+              value={searchInputValue}
               placeholder={t("apps.search_input_placeholder")}
               onChange={(e) => {
                 onSearchInputChange(e.target.value)
               }}
-            ></Input>
+            />
           </SearchWrapper>
-          <CategoryFitlerWrapper ref={$categoryListRef}>
-            <CategoryFitler onClick={() => setIsExpanded((v) => !v)}>
+
+          <CategoryFilterWrapper ref={$categoryListRef} data-testid="apps:categoryfilter">
+            <CategoryFilter onClick={() => setIsExpanded((v) => !v)}>
               {selectedCategoryLabel}
               <ArrowIcon code={isExpanded ? "expand_less" : "expand_more"} />
-            </CategoryFitler>
+            </CategoryFilter>
 
             <CategoryList $isExpanded={isExpanded}>
               <CategoryItem
@@ -98,7 +100,7 @@ const Index = ({
                 )
               })}
             </CategoryList>
-          </CategoryFitlerWrapper>
+          </CategoryFilterWrapper>
         </Container>
       </StyledNav>
     </>

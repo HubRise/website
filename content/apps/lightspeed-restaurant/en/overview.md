@@ -33,7 +33,7 @@ Connecting Lightspeed Restaurant Bridge to HubRise allows your EPOS to:
 - Push paid orders into HubRise, including order status.
 - Pull customer information from HubRise.
 - Push customer information into HubRise.
-- Push a menu into a HubRise catalog.
+- Push the menu into a HubRise catalog.
 
 Lightspeed Restaurant Bridge can be connected from the HubRise back office.
 
