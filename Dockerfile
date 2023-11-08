@@ -16,8 +16,11 @@ RUN yarn install --frozen-lockfile
 # Add project files
 COPY . .
 
-# Build
-RUN yarn build
+# Validate that .env.production exists
+RUN test -f .env.production || (echo '.env.production file missing!' && exit 1)
+
+# Source environment variables and build
+RUN export $(egrep -v '^#' .env.production | xargs) && yarn build
 
 # Start the application
 EXPOSE 80
