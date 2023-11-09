@@ -33,6 +33,12 @@ content:
           title: Carré POS
           description: Carré POS is a Point of Sales designed for fast ordering. It adapts to all types of businesses, including restaurants, bakeries, local stores, boutiques, hairdressers, and florists.
           additional_info:
+        - website: https://www.clyosystems.com
+          documentation: /apps/clyo
+          logo: clyo.png
+          title: Clyo Systems
+          description: Clyo Systems is an all-in-one EPOS solution for restaurants, including inventory management, loyalty management, Kitchen Display Systems, time-tracking, and online ordering. Its modular design allows for the integration of customisable add-ons.
+          additional_info: Integration in progress.
         - website: https://www.epostechnologies.co.uk/
           documentation: /apps/epos-technologies
           logo: epostechnologies.png
@@ -175,13 +181,19 @@ content:
           documentation: /apps/swoopos
           logo: swoopos.png
           title: SwooPOS
-          description: SwooPOS is a cost efficient, multifunctional and easy to use mobile Point of Sales system designed for the hospitality and retail sectors. It comes with payment, table booking, and QR code table ordering solutions.
+          description: SwooPOS is a cost efficient, multifunctional and easy to use mobile Point of Sales system designed for the hospitality and retail sectors. It comes with payment, table booking, and QR code table ordering solutions.
           additional_info:
         - website: http://www.talc.fr/
           documentation: /apps/talc
           logo: talc.png
           title: T.A.L.C Informatique
           description: T.A.L.C Informatique is an EPOS adapted to the needs of restaurants. Its features include multi-store management, courier dispatching, inventory and procurement management, client geolocalisation and sending of SMS.
+          additional_info:
+        - website: https://tasksoftware.com
+          documentation: /apps/task-software
+          logo: task.png
+          title: TASK
+          description: TASK is an EPOS solution engineered for the global hospitality and dining sectors. It offers features such as real-time reporting enhanced with Business Intelligence capabilities, inventory management, and ordering solutions through kiosks, web platforms, and mobile apps. TASK excels in the management of customer relationship, loyalty, and promotions.
           additional_info:
         - website: https://www.ultimapos.fr/
           documentation: /apps/ultimapos
@@ -193,7 +205,7 @@ content:
           documentation: /apps/zelty
           logo: zelty.png
           title: Zelty
-          description: Zelty is a complete suite of solutions designed for multi-site. Zelty is suitable for any type of restaurant from fast food to traditional catering.
+          description: Zelty is a complete suite of solutions designed for multi-site. Zelty is suitable for any type of restaurant from fast food to traditional catering.
           additional_info:
     - title: Food Ordering Platforms
       slug: food-ordering-platforms
