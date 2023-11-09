@@ -27,6 +27,6 @@ To troubleshoot an incorrect ref code in an order, you can look at the logs for 
 To connect with Lightspeed Restaurant, the Lightspeed API needs to be activated. You can simply contact Lightspeed support and request the activation.
 If you plan to connect Lightspeed Restaurant to food delivery platforms like Deliveroo, Uber Eats, and Just Eat, it is best to specify the platforms you will be connecting with. Lightspeed support will prepare the settings to receive this type of orders, too.
 
-If after this configuration you are still not able to receive orders in your tablet, you should check if the API connection is enabled on your tablet. On the main screen of the Lightspeed app, if you see a green pencil icon <InlineImage width="28" height="28">![Green pencil icon](../../images/011-lightspeed-restaurant-api-icon.png)</InlineImage> at the top, then your API connection is activated. If that icon is not green, you can simply tap on it and tap the **Enable** button to activate the API.
+If after this configuration you are still not able to receive orders in your tablet, you should check if the API connection is enabled on your tablet. On the main screen of the Lightspeed app, if you see a green pencil icon at the top of the right hand-side block, then your API connection is activated. If that icon is not green, you simply tap on it and then tap the **Enable** button to activate the API.
 
-![Main screen of the Lightspeed app with the green icon indicating that API connection is enabled.](../../images/010-2x-lightspeed-restaurant-main-screen.png)
+![Main screen of the Lightspeed app with the green icon indicating that API connection is enabled.](../../images/010-2x-lightspeed-main-screen.png)

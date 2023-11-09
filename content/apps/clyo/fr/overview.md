@@ -9,17 +9,17 @@ meta:
 gallery:
 app_info:
   category: Logiciels de caisse
-  availability: France
-  website: https://www.clyosystems.com/
+  availability: France, Suisse
+  website: https://www.clyosystems.com
   contact: contact@support@clyosystems / +33 1 84 25 27 77
 ---
 ## Description
 
-**TOOD**
+Clyo Systems est une plateforme logicielle permettant une gestion centralisée. Conçue pour les restaurants et commerces, elle facilite divers aspects opérationnels à travers une seule interface. Ce logiciel de caisse permet de consolider les fonctionnalités de gestion des ventes, de contrôle des stocks, de programmes de fidélité, et d'affichage des commandes en cuisine. Il inclut également les fonctions de pointage pour le personnel, ainsi qu'une solution de commandes en ligne et de service Click & Collect.
 
-Clyo est un logiciel de caisse sous Windows / iPad / tablette / etc.
+Clyo Systems s'adapte aux besoins changeants des entreprises par l'activation de nouveaux modules natifs, par des intégrations directes ou via HubRise. Cette approche modulaire vise à offrir une gestion efficace et la flexibilité nécessaire pour les commerçants cherchant à optimiser leur gestion opérationnelle et à améliorer l'expérience client.
 
-Clyo est conforme à la loi française anti-fraude 2018.
+Clyo Systems est conforme à la loi française anti-fraude 2018.
 
 ## Fonctionnalités de l'intégration
 

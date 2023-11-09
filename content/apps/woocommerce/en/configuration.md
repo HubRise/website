@@ -45,7 +45,7 @@ If you need to reset the configuration, click **Reset the configuration** at the
 
 ---
 
-**IMPORTANT NOTE:** Resetting the configuration will instantly disconnect the bridge from PrestaShop.
+**IMPORTANT NOTE:** Resetting the configuration will instantly disconnect the bridge from WooCommerce.
 
 ---
 

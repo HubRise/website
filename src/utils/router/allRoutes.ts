@@ -16,7 +16,6 @@ import type { FallbackRoutes, RouteNameDynamic, Routes } from "./types"
 import { createRoute } from "./types"
 
 export const fallbackRoutes: FallbackRoutes = {
-  apps_category: "apps",
   apps_page: "apps",
   blog_archive: "blog",
   blog_post: "blog",
@@ -43,27 +42,6 @@ const staticRoutes = async (): Promise<Routes> => {
     createRoute({ href: "/fr/branding", language: "fr", name: "branding", layout: "documentation-simple", context: await readMdFile<DocumentationSimpleFrontMatter>("/fr", "branding") }),
     createRoute({ href: "/fr/contributing", language: "fr", name: "contributing", layout: "documentation-index", context: { yaml: await readYamlFile<DocumentationIndexYaml>("/fr", "contributing") } }),
   ]
-}
-
-const appRoutes = async (): Promise<Routes> => {
-  const routes: Routes = []
-  for (const language of allLanguages) {
-    const yaml = await readYamlFile<AppsYaml>(`/${language}`, "apps")
-    yaml.content.categories.forEach((category) => {
-      const slug = category.title.replace(/ +/g, "-").toLowerCase()
-      routes.push(
-        createRoute({
-          href: language === defaultLanguage ? `/apps/${slug}` : `/${language}/apps/${slug}`,
-          language,
-          name: "apps_category",
-          params: { categoryTitle: category.title },
-          layout: "apps",
-          context: { yaml },
-        }),
-      )
-    })
-  }
-  return routes
 }
 
 const blogRoutes = async (contentDirName: ContentDirName): Promise<Routes> => {
@@ -150,7 +128,6 @@ const buildRoutes = async (): Promise<Routes> => {
   console.log("Building routes...")
   return [
     ...(await staticRoutes()),
-    ...(await appRoutes()),
     ...(await blogRoutes("/blog")),
     ...(await docRoutes("/apps", "apps_page")),
     ...(await docRoutes("/contributing", "contributing_page")),

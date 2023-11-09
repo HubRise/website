@@ -61,4 +61,4 @@ For historic reasons, LivePepper uses their own ref codes. To send orders from L
 | Charges       | Delivery charge               | See below  |
 | Discounts     | Generic discount              | See below  |
 
-To send charges to LightSpeed, create products with variable _positive_ price in LightSpeed, and use their codes in LivePepper. To send discounts, create products with variable _negative_ price.
+To send charges to LightSpeed, create products with variable _positive_ price in LightSpeed, and use their codes in LivePepper. To send discounts, create products with variable `_negative_` price.

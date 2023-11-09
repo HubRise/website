@@ -12,7 +12,7 @@ With HubRise, you can receive orders from Deliveroo, Just Eat, Uber Eats and oth
 
 This page describes the settings to use to connect food ordering platforms to OrderLord.
 
-For more information, check the documentation of these platforms in our [Apps page](/apps/food-ordering-platforms).
+For more information, check the documentation of these platforms in our [Apps page](/apps#food-ordering-platforms).
 
 ## Deliveroo
 
