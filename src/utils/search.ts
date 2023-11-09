@@ -1,4 +1,4 @@
-export function normalizeText(string: string) {
+function normalizeText(string: string) {
   return string
     .normalize("NFD") // remove accents
     .replace(/[\u0300-\u036f\s\W]/g, "") // remove spaces and special characters
