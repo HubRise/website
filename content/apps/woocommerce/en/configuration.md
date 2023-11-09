@@ -24,16 +24,17 @@ The **Orders** section lets you customise how WooCommerce orders are sent to Hub
 ### Order Statuses
 
 Depending on the payment type, new WooCommerce orders are created with different statuses:
+
 - For credit card payments, the initial order status is `processing`.
 - For wire transfer payments, the initial order status is `on-hold`, and the order requires a manual status change to `processing` when the payment is confirmed.
 
-Orders in `processing` status are always pushed to HubRise. From the **HubRise status for new orders** drop-down menu, select the HubRise status that you want to assign to new orders.
+Orders in `processing` status are always pushed to HubRise. To also push `on-hold` orders, tick the **Send orders with status "On hold" to HubRise** checkbox.
 
-To also push `on-hold` orders, tick the **Send orders with status "On hold" to HubRise** checkbox. The status for new orders also applies to `on-hold` orders.
+From the **HubRise status for new orders** drop-down menu, select the HubRise status that you want to assign to new orders coming from WooCommerce. This status applies to `processing` orders and, when enabled, `on-hold` orders.
 
 Then, configure how you want order status updates on HubRise to be reflected on WooCommerce.
 For each HubRise status in the section, select the corresponding status that you want to apply in WooCommerce.
-For example, you can choose to mark orders as `completed` in WooCommerce when they reach the status `completed` in HubRise.
+For example, you can choose to mark orders as `Completed` in WooCommerce when they reach the status `completed` in HubRise.
 
 ### Service Types
 
@@ -52,10 +53,12 @@ From the **Metadata keys** drop-down menu, select if you want to use metadata to
 Depending on the plugin you use, WooCommerce can encode the the expected time in one or two metadata fields.
 
 If your plugin uses one metadata, the supported formats are the following:
+
 - ISO 8601. For example: `2021-07-22T12:00:30+02:00`.
 - Unix timestamp. For example: `1642422302`.
 
 If your plugin uses two metadata, the supported formats are the following:
+
 - The date must be in the `dd/mm/yyyy` format.
 - The time must be in the `hh:mm` format.
 
@@ -65,14 +68,15 @@ In this section, you can specify the metadata key that WooCommerce uses for the 
 
 ### Order Item Metadata
 
-Depending on the plugin you use, WooCommerce can include information about items in the metadata.
+WooCommerce encodes item information as metadata, which can be further extended by various plugins.
+
 By default, HubRise converts each key-value pair as an option. In this section, you can modify the default behaviour by entering specific metadata:
 
-- In the **Metadata key(s) for SKU name** field, enter the metadata that you want to use as the SKU name, for example "Large" or "Medium".
-- In the **Metadata key(s) for customer notes** field, enter the metadata that you want to use as the customer notes at the item level, for example "Well cooked".
-- In the **Discarded metadata keys** field, enter the metadata that HubRise must ignore when parsing the item.
+- In the **Metadata key(s) for SKU name** field, enter the metadata key that you want to use as the SKU name, for example "Size" with values like "Large" or "Medium".
+- In the **Metadata key(s) for customer notes** field, enter the metadata key that you want to use as the customer notes at the item level, for example "Cooking Preference" with values like "Well Done".
+- In the **Discarded metadata keys** field, enter the metadata key(s) that HubRise should ignore.
 
-In every field, you can indicate multiple keys separated by a comma.
+In each field, you can indicate multiple keys separated by a comma.
 
 ### Discounts
 
@@ -92,6 +96,7 @@ To correctly parse the payment method in your orders, the **Payments** section l
 Refer to your EPOS documentation on the HubRise website to verify the ref codes required by your EPOS.
 
 The following are typical WooCommerce payment method IDs:
+
 - Cash on delivery: `cod`
 - Check payments: `cheque`
 - Direct bank transfer: `bacs`
@@ -105,13 +110,13 @@ To find the WooCommerce ID for other payment methods, follow these steps:
 
 ### Multi-site
 
-The **Multi-site** section is useful if you support multiple stores from the same WooCommerce website.
+If you support multiple stores from the same WooCommerce website, you need to configure the **Multi-site** section.
 
-If your customers can place orders in multiple locations through the same website, WooCommerce typically includes a metadata to identify the store in the order.
-Each store should have a different value for this key, and should connect to a different instance of WooCommerce Bridge. Only orders with the values that you specify here are sent to a specific HubRise location.
+Each store must be connected to its own unique WooCommerce Bridge and identified by a unique metadata value included in the order payload sent to HubRise. Orders are only forwarded to the location associated with the bridge when there's a metadata value match; otherwise, the order is disregarded.
 
-In the **Metadata key for multisite** field, specify the order metadata key associated with the stores.
-In the **Value(s) for this location** field, specify one or more comma-separated values of this metadata that are linked with the stores that you want to receive orders from.
+In the **Metadata key for multisite** field, specify the metadata key used to identify the stores.
+
+In the **Value(s) for this location** field, specify the value associated with the store connected to this WooCommerce Bridge. You can specify multiple values separated by a comma.
 
 ![WooCommerce Bridge configuration page](./images/018-woocommerce-configuration-3.png)
 
@@ -142,7 +147,7 @@ To use a different label for your attributes, for example `"Colour"`, enter the 
 ## Inventory
 
 The **Inventory** section lets you configure automatic updates of the WooCommerce inventory counters when the HubRise inventory changes.
-To enable this feature, tick the **Enable automatic inventory push** checkbox. 
+To enable this feature, tick the **Enable automatic inventory push** checkbox.
 
 ## Save the Configuration
 
