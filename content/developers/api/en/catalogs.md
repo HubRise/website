@@ -688,21 +688,25 @@ Retrieve an option list and the possible choices (options).
 
 ##### Parameters:
 
-| Name                                | Type                                                      | Description                                                                                       |
-| ----------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `ref` <Label type="optional" />     | string                                                    | The ref of the option.                                                                            |
-| `name`                              | string                                                    | The name of the option.                                                                           |
-| `price`                             | [Money](/developers/api/general-concepts#monetary-values) | The price of the option. Should be set to `0.00 EUR` (adjust the currency) if the option is free. |
-| `price_overrides`                   | [PriceOverrides](#price-overrides)                        | Price overrides in different contexts, such as a specific service type.                           |
-| `default` <Label type="optional" /> | boolean                                                   | Whether this option is on by default. Default is `false`.                                         |
-| `tags` <Label type="optional" />    | string[]                                                  | List of tags.                                                                                     |
+| Name                                     | Type                                                      | Description                                                                                       |
+| ---------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `ref` <Label type="optional" />          | string                                                    | The ref of the option.                                                                            |
+| `name`                                   | string                                                    | The name of the option.                                                                           |
+| `restrictions` <Label type="optional" /> | [Restrictions](#restrictions)                             | An optional set of conditions that must be matched for the option to be available.                |
+| `price`                                  | [Money](/developers/api/general-concepts#monetary-values) | The price of the option. Should be set to `0.00 EUR` (adjust the currency) if the option is free. |
+| `price_overrides`                        | [PriceOverrides](#price-overrides)                        | Price overrides in different contexts, such as a specific service type.                           |
+| `default` <Label type="optional" />      | boolean                                                   | Whether this option is on by default. Default is `false`.                                         |
+| `tags` <Label type="optional" />         | string[]                                                  | List of tags.                                                                                     |
 
 ##### Example:
 
 ```json
 {
-  "name": "Blue",
   "ref": "BLU",
+  "name": "Blue",
+  "restrictions": {
+    "variant_refs": ["1"]
+  },
   "price": "250.00 EUR",
   "price_overrides": [
     {
