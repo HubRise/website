@@ -18,7 +18,7 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: Full documentation available <Link href="/fr/apps/SOLUTION" addLocalePrefix={false}>in French only</Link>.
+**IMPORTANT NOTE**: Full documentation available <Link href="/fr/apps/popina" addLocalePrefix={false}>in French only</Link>.
 
 ---
 
