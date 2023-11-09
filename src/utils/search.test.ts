@@ -21,7 +21,7 @@ describe("filterSearch", () => {
     expect(doesSearchTextMatch("k-series/", "kseries")).toBe(true)
   })
 
-  it("not always return true", () => {
+  it("should not always return true", () => {
     expect(doesSearchTextMatch("3S POS", "qwerty")).toBe(false)
   })
 })
