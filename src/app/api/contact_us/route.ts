@@ -11,8 +11,8 @@ const verifyRecaptcha = async (recaptchaResponse: string) => {
     },
   })
 
-  if (!response?.data?.success) {
-    throw new Error(`Captcha validation failed: ${JSON.stringify(response.data)}. RECAPTCHA_SECRET_KEY: ${secret}`)
+  if (!response.data.success) {
+    throw new Error(`Captcha validation failed: ${JSON.stringify(response.data)}`)
   }
 }
 

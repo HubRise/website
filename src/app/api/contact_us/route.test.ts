@@ -41,7 +41,7 @@ describe("/api/contact_us", () => {
 
     expect(response.status).toEqual(400)
     expect(await response.json()).toEqual({
-      error: 'Captcha validation failed: {"success":false}. RECAPTCHA_SECRET_KEY: undefined',
+      error: 'Captcha validation failed: {"success":false}',
     })
   })
 
