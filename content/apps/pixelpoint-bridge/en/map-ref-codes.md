@@ -59,4 +59,4 @@ Each service type (delivery, collection, eat-in) must be associated with the cor
 
 PixelPoint has a different code for each payment method. Each payment method allowed in the system to connect must be defined in the PixelPoint EPOS and must be specified with the corresponding code. Contact your PAR representative to get the correct values.
 
-TODO: When the customer chooses to pay upon delivery or collection, no payment information is sent to the EPOS, as doing so would close the transaction.
+When the customer chooses to pay upon delivery or collection, no payment information should be sent to the EPOS, as doing so would close the transaction.

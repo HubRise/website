@@ -59,6 +59,14 @@ Uber Eats customers can pay for their order either online or by cash for restaur
 
 This section of the configuration page allows you to specify the ref codes for these two payment methods. Refer to your EPOS documentation on the HubRise website to verify the correct codes to use.
 
+## Customers
+
+![Uber Eats Bridge configuration page, Customers section](./images/024-configuration-page-customers.png)
+
+Enable the **Duplicate phone access code in delivery notes** option if your EPOS lacks native support for fetching phone access codes.
+
+All EPOS systems integrated with HubRise can read delivery notes. If your EPOS has native support and this option is enabled, the code will appear duplicated. Refer to your EPOS documentation on the HubRise website to verify the correct value.
+
 ## Catalog {#catalog}
 
 ![Uber Eats Bridge configuration page, Catalog section](./images/011-2x-configuration-page-menu.png)

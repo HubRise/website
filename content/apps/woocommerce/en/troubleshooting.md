@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting
 path_override: troubleshooting
-position: 6
+position: 8
 layout: documentation
 meta:
   title: Troubleshooting | WooCommerce | HubRise

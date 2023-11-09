@@ -18,7 +18,7 @@ describe("Documentation", () => {
     })
 
     it("shows a warning on non translated pages (copy_files_from: en)", () => {
-      cy.visit("/fr/developers/api/account-management")
+      cy.visit("/fr/developers/api/accounts")
       cy.contains("Cette documentation est disponible en anglais uniquement.")
     })
   })

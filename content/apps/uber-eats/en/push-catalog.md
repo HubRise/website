@@ -105,7 +105,7 @@ The order in which categories and products appear on HubRise is maintained on Ub
 
 ### Products and Skus
 
-For every [product](/developers/api/catalog-management#products) with multiple skus, Uber Eats Bridge sends the following information to Uber Eats:
+For every [product](/developers/api/catalogs#products) with multiple skus, Uber Eats Bridge sends the following information to Uber Eats:
 
 - `ref`: The value `MULTISKU` is used for all products.
 - `name`: The name of the product.
@@ -123,7 +123,7 @@ For every `sku` object in a product, Uber Eats Bridge sends the following inform
 - `price`: The price difference with the main product, if present
 - `option_list_refs`: The list of options attached to the sku
 
-For more information about skus in the HubRise catalog, see [Skus](/developers/api/catalog-management#skus).
+For more information about skus in the HubRise catalog, see [Skus](/developers/api/catalogs#skus).
 
 ### Product Tags {#product-tags}
 

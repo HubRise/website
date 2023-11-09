@@ -34,7 +34,7 @@ Le code d'erreur 500 est émis lorsque le serveur qui était censé recevoir la
 
 ## Statut de commande
 
-Les commandes transitent par une série de statuts différents au cours de leur cycle de vie. Parmi les valeurs normales, le statut **nouveau** est utilisé à la création d'une commande, et le statut **reçu** est utilisé pour signaler sa réception par le logiciel de caisse. Pour connaître la liste complète des valeurs possibles, reportez-vous à la [Documentation du développeur](/developers/api/order-management#status).
+Les commandes transitent par une série de statuts différents au cours de leur cycle de vie. Parmi les valeurs normales, le statut **nouveau** est utilisé à la création d'une commande, et le statut **reçu** est utilisé pour signaler sa réception par le logiciel de caisse. Pour connaître la liste complète des valeurs possibles, reportez-vous à la [Documentation du développeur](/developers/api/orders#status).
 
 Dans certains cas, le statut peut indiquer un problème affectant la commande. Le tableau suivant présente les valeurs d'erreur possibles.
 

@@ -23,4 +23,4 @@ Looking at the [order logs](/apps/lightspeed-restaurant/user-interface#operation
 ```
 
 In this case, the probable cause of the missing orders is that HubRise was not enabled on Lightspeed.
-To solve the issue, contact Lightspeed support, and request to enable the HubRise connection for your EPOS.
+To solve the issue, contact Lightspeed support, and request to enable the HubRise connection for your EPOS. For more information, see [Enable the HubRise Integration](/apps/lightspeed-restaurant/connect-hubrise#enable-integration).

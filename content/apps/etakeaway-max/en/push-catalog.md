@@ -101,4 +101,4 @@ For every option, the following information is sent to HubRise:
 - `lines`: The product lines included in the deal.
 
 Each product line contains the `label`, `pricing_effect`, and `skus` fields.
-For more information about HubRise deals, see [Deals](/developers/api/catalog-management#deal-in-catalog-upload).
+For more information about HubRise deals, see [Deals](/developers/api/catalogs#deal-in-catalog-upload).

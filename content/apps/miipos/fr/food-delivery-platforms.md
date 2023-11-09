@@ -12,7 +12,7 @@ Avec HubRise, vous pouvez recevoir les commandes de Deliveroo, Just Eat, Uber Ea
 
 Cette page décrit les paramètres à utiliser pour connecter les plateformes de livraison de repas à MiiPos.
 
-Pour plus d'informations, consultez les pages d'aide de ces plateformes sur notre [page Apps](/apps/plateformes-de-livraison-de-repas).
+Pour plus d'informations, consultez les pages d'aide de ces plateformes sur notre [page Apps](/apps#food-ordering-platforms).
 
 ## Codes ref produits, options et promotions
 
@@ -40,6 +40,7 @@ Dans la page de configuration de Deliveroo Bridge, utilisez les paramètres suiv
 
 | Section             | Nom                                               | Code ref                                       |
 | ------------------- | ------------------------------------------------- | ---------------------------------------------- |
+| Statuts de commande | Marquer les commandes comme Acceptées             | `lorsque leur statut HubRise passe à "Reçue"`  |
 | Types de service    | Code ref livraison par Deliveroo                  | `DV` - Voir [Types de Service](#service-types) |
 | Types de service    | Code ref livraison par le restaurant              | `DV`                                           |
 | Types de service    | Code ref à emporter                               | `DV`                                           |
@@ -50,7 +51,7 @@ Dans la page de configuration de Deliveroo Bridge, utilisez les paramètres suiv
 | Frais               | Code ref frais d'emballage                        | (laisser vide)                                 |
 | Paiements           | Code ref paiement en ligne                        | (laisser vide)                                 |
 | Paiements           | Code ref paiement en espèces                      | (laisser vide)                                 |
-| Statuts de commande | Marquer les commandes comme Acceptées             | `lorsque leur statut HubRise passe à "Reçue"`  |
+| Clients             | Dupliquer le code d'accès téléphone [...]         | Cocher cette case                              |
 
 ## Just Eat
 
@@ -69,6 +70,7 @@ Dans la page de configuration de Just Eat Takeaway Bridge, utilisez les paramèt
 
 | Section             | Nom                                                   | Code ref                                       |
 | ------------------- | ----------------------------------------------------- | ---------------------------------------------- |
+| Statuts de commande | Marquer les commandes comme Acceptées                 | `lorsque leur statut HubRise passe à "Reçue"`  |
 | Types de service    | Code ref livraison par la plateforme                  | `JE` - Voir [Types de Service](#service-types) |
 | Types de service    | Code ref livraison par le restaurant                  | `JE`                                           |
 | Types de service    | Code ref à emporter                                   | `JE`                                           |
@@ -78,7 +80,6 @@ Dans la page de configuration de Just Eat Takeaway Bridge, utilisez les paramèt
 | Frais               | Code ref frais de service                             | (laisser vide)                                 |
 | Paiements           | Code ref paiement en ligne                            | (laisser vide)                                 |
 | Paiements           | Code ref paiement en espèces                          | (laisser vide)                                 |
-| Statuts de commande | Marquer les commandes comme Acceptées                 | `lorsque leur statut HubRise passe à "Reçue"`  |
 
 ### Just Eat avec l'API Flyt
 
@@ -86,21 +87,22 @@ Pour recevoir les commandes de Just Eat Flyt dans MiiPos avec l'API Flyt, vous d
 
 Dans la page de configuration de Just Eat Flyt Bridge, utilisez les paramètres suivants.
 
-| Section             |     | Nom                                                   | Code ref                                       |
-| ------------------- | --- | ----------------------------------------------------- | ---------------------------------------------- |
-| Types de service    |     | Code ref livraison par la plateforme                  | `JE` - Voir [Types de Service](#service-types) |
-| Types de service    |     | Code ref livraison par le restaurant                  | `JE`                                           |
-| Types de service    |     | Code ref à emporter                                   | `JE`                                           |
-| Types de service    |     | Envoyer les commandes livrées par la plateforme comme | `commandes en livraison`                       |
-| Remises             |     | Code ref remise                                       | (laisser vide)                                 |
-| Frais               |     | Code ref frais de livraison                           | (laisser vide)                                 |
-| Frais               |     | Code ref surcharge                                    | (laisser vide)                                 |
-| Frais               |     | Code ref frais d'emballage                            | (laisser vide)                                 |
-| Frais               |     | Code ref pourboire livreur                            | (laisser vide)                                 |
-| Frais               |     | Code ref autres frais                                 | (laisser vide)                                 |
-| Paiements           |     | Code ref paiement en ligne                            | (laisser vide)                                 |
-| Paiements           |     | Code ref paiement en espèces                          | (laisser vide)                                 |
-| Statuts de commande |     | Marquer les commandes comme Acceptées                 | `lorsque leur statut HubRise passe à "Reçue"`  |
+| Section             | Nom                                                   | Code ref                                       |
+| ------------------- | ----------------------------------------------------- | ---------------------------------------------- |
+| Statuts de commande | Marquer les commandes comme Acceptées                 | `lorsque leur statut HubRise passe à "Reçue"`  |
+| Types de service    | Code ref livraison par la plateforme                  | `JE` - Voir [Types de Service](#service-types) |
+| Types de service    | Code ref livraison par le restaurant                  | `JE`                                           |
+| Types de service    | Code ref à emporter                                   | `JE`                                           |
+| Types de service    | Envoyer les commandes livrées par la plateforme [...] | `commandes en livraison`                       |
+| Remises             | Code ref remise                                       | (laisser vide)                                 |
+| Frais               | Code ref frais de livraison                           | (laisser vide)                                 |
+| Frais               | Code ref surcharge                                    | (laisser vide)                                 |
+| Frais               | Code ref frais d'emballage                            | (laisser vide)                                 |
+| Frais               | Code ref pourboire livreur                            | (laisser vide)                                 |
+| Frais               | Code ref autres frais                                 | (laisser vide)                                 |
+| Paiements           | Code ref paiement en ligne                            | (laisser vide)                                 |
+| Paiements           | Code ref paiement en espèces                          | (laisser vide)                                 |
+| Clients             | Dupliquer le code d'accès téléphone [...]             | Cocher cette case                              |
 
 ## Uber Eats
 
@@ -108,21 +110,22 @@ Pour recevoir les commandes de Uber Eats dans MiiPos, vous devez d'abord connect
 
 Dans la page de configuration de Uber Eats Bridge, utilisez les paramètres suivants.
 
-| Section             | Nom                                               | Code ref                                                        |
-| ------------------- | ------------------------------------------------- | --------------------------------------------------------------- |
-| Types de service    | Code ref livraison Uber                           | `UE` - Voir [Types de Service](#service-types)                  |
-| Types de service    | Code ref livraison par le restaurant              | `UE`                                                            |
-| Types de service    | Code ref à emporter                               | `UE`                                                            |
-| Types de service    | Code ref sur place                                | `UE`                                                            |
-| Types de service    | Envoyer les commandes livrées par Uber [...]      | `commandes en livraison`                                        |
-| Articles spéciaux   | Code ref jetables                                 | (laisser vide)                                                  |
-| Remises             | Code ref remise                                   | (laisser vide)                                                  |
-| Frais               | Code ref frais de livraison                       | (laisser vide)                                                  |
-| Frais               | Code ref supplément petite commande               | (laisser vide)                                                  |
-| Frais               | Code ref pourboire                                | (laisser vide)                                                  |
-| Paiements           | Code ref paiement en ligne                        | (laisser vide)                                                  |
-| Paiements           | Code ref paiement en espèces                      | (laisser vide)                                                  |
-| Statuts de commande | Marquer les commandes comme Acceptées             | `lorsque leur statut HubRise passe à "Reçue"`                   |
-| Menu                | Activer les notes de préparation sur les articles | Cocher si vous souhaitez les activer / Laisser la case décochée |
+| Section             | Nom                                          | Code ref                                       |
+| ------------------- | -------------------------------------------- | ---------------------------------------------- |
+| Statuts de commande | Marquer les commandes comme Acceptées        | `lorsque leur statut HubRise passe à "Reçue"`  |
+| Types de service    | Code ref livraison Uber                      | `UE` - Voir [Types de Service](#service-types) |
+| Types de service    | Code ref livraison par le restaurant         | `UE`                                           |
+| Types de service    | Code ref à emporter                          | `UE`                                           |
+| Types de service    | Code ref sur place                           | `UE`                                           |
+| Types de service    | Envoyer les commandes livrées par Uber [...] | `commandes en livraison`                       |
+| Articles spéciaux   | Code ref jetables                            | (laisser vide)                                 |
+| Remises             | Code ref remise                              | (laisser vide)                                 |
+| Frais               | Code ref frais de livraison                  | (laisser vide)                                 |
+| Frais               | Code ref supplément petite commande          | (laisser vide)                                 |
+| Frais               | Code ref pourboire                           | (laisser vide)                                 |
+| Paiements           | Code ref paiement en ligne                   | (laisser vide)                                 |
+| Paiements           | Code ref paiement en espèces                 | (laisser vide)                                 |
+| Clients             | Dupliquer le code d'accès téléphone [...]    | Cocher cette case                              |
+| Menu                | Activer les notes de préparation [...]       | Cocher si vous souhaitez les activer           |
 
 (\*) Applicable uniquement si vous proposez des jetables, tels que des couverts, serviettes, etc.

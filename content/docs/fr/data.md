@@ -18,7 +18,7 @@ La page **COMMANDES** affiche les commandes dans l'ordre inverse de leur date de
 - **POINT DE VENTE** : si vous sélectionnez l'option **Tous les points de vente**, cette colonne indique le point de vente qui a réceptionné la commande.
 - **CLIENT** : client qui a passé la commande.
 - **MONTANT** : montant total de la commande.
-- **STATUT** : statut actuel de la commande. Pour une liste des statuts possibles, voir la section [Statut de la commande](/developers/api/order-management#status) (en anglais) de la page **Order Management** (Gestion des commandes) de l'API HubRise.
+- **STATUT** : statut actuel de la commande. Pour une liste des statuts possibles, voir la section [Statut de la commande](/developers/api/orders#status) (en anglais) de la page **Order Management** (Gestion des commandes) de l'API HubRise.
 - **ORIGINE** : application à partir de laquelle la commande a été générée.
 
 Pour filtrer les commandes par dates de début et de fin, procédez comme suit :

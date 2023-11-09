@@ -102,7 +102,7 @@ In this example:
 - The "Regina ham" pizza has a default price of €6.80, but the price is overridden to €8.00 when ordered through food platforms.
 - "Expresso" is only available when ordered through the kiosk.
 
-The API changes have been reflected in our [API documentation](/developers/api/catalog-management) and [Postman collection](https://drive.google.com/drive/folders/1fn5u-4sY0-bnrxJY9RFPvpCu0bANGNBd?usp=sharing).
+The API changes have been reflected in our [API documentation](/developers/api/catalogs) and [Postman collection](https://drive.google.com/drive/folders/1fn5u-4sY0-bnrxJY9RFPvpCu0bANGNBd?usp=sharing).
 
 ---
 

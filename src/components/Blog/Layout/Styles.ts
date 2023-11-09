@@ -6,7 +6,7 @@ export const Container = styled.div`
   margin: ${sizes.blockVerticalPadding} 0;
 `
 
-const sidebarBackgroundColor = "#fbfbfb"
+const sidebarBackgroundColor = colors.backgroundLightest
 
 export const Inner = styled.div`
   position: relative;
