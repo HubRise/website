@@ -16,6 +16,12 @@ app_info:
   contact: "+33 1 76 36 13 64 / contact@popina.com"
 ---
 
+---
+
+**IMPORTANT NOTE**: Full documentation available <Link href="/fr/apps/SOLUTION" addLocalePrefix={false}>in French only</Link>.
+
+---
+
 ## Description
 
 Popina is an EPOS for iPad created in 2014. Popina meets the needs of restaurants, bakeries, bars, snack bars, shops, and hotels. It offers a range of features, connected services, and peripherals that are constantly evolving.
