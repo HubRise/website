@@ -18,9 +18,9 @@ The main page of Lightspeed Restaurant Bridge displays the latest operations. Ea
 - **TIME**: The date and time of the operation.
 - **STATUS**: The status of the operation. The value OK indicates that the operation has been successfull, otherwise a message will explain the type of error occurred.
 
-Clicking on a row will open a new page displaying all the information about it.
+Clicking on a row will open a new page displaying all the information about [the operation](#operation).
 
-In the top right corner of the Lightspeed Restaurant Bridge main page, the connected HubRise user and location are displayed, alongside with the Lightspeed business location currently used. Clicking the down arrow expands a menu where it is possible to change the language of the interface and to access the **Configuration page**.
+In the top right corner of the Lightspeed Restaurant Bridge main page, the connected HubRise user and location are displayed, alongside with the Lightspeed Business Location ID currently used. Clicking the down arrow expands a menu where it is possible to change the language of the interface and to access the **Configuration page**.
 
 ---
 

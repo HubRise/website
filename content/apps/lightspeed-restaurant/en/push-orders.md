@@ -32,7 +32,7 @@ Lightspeed does not support split payments. Therefore, when an order contains mu
 
 The ref code of the payment is used to map the HubRise order to the correct payment method in Lightspeed. Lightspeed Restaurant Bridge ignores payments without a ref code.
 
-To learn how to check the ref codes of the payment methods available in your Lightspeed back office, see [Map Ref Codes](/apps/lightspeed-restaurant/map-ref-codes#payment-methods).
+To find out how to check the payment methods ref codes available in your Lightspeed back office, see [Map Ref Codes](/apps/lightspeed-restaurant/map-ref-codes#payment-methods).
 
 ### Handling Price Differences
 
@@ -53,7 +53,7 @@ Lightspeed Restaurant requires each service type (delivery, collection, eat-in) 
 
 The ref code of the service type is used to map the HubRise order to the correct account profile on Lightspeed.
 
-To learn how to check the ref codes of the service types available in your Lightspeed back office, see [Map Ref Codes](/apps/lightspeed-restaurant/map-ref-codes#service-types).
+To find out how to check the service types ref codes available in your Lightspeed back office, see [Map Ref Codes](/apps/lightspeed-restaurant/map-ref-codes#service-types).
 
 ## Customer Information
 
