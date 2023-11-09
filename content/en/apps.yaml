@@ -37,7 +37,7 @@ content:
           documentation: /apps/clyo
           logo: clyo.png
           title: Clyo Systems
-          description: Clyo Systems offers an all-in-one EPOS solution for restaurants including inventory, loyalty, Kitchen Display System, time-tracking, and online ordering. It's a modular EPOS to which you can include customisable add-ons.
+          description: Clyo Systems is an all-in-one EPOS solution for restaurants, including inventory management, loyalty management, Kitchen Display Systems, time-tracking, and online ordering. Its modular design allows for the integration of customisable add-ons.
           additional_info: Integration in progress.
         - website: https://www.epostechnologies.co.uk/
           documentation: /apps/epos-technologies

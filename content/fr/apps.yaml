@@ -36,7 +36,7 @@ content:
           documentation: /apps/clyo
           logo: clyo.png
           title: Clyo Systems
-          description: Clyo Systems offre une solution caisse tout-en-un pour les restaurants, incluant la gestion des stocks, fidélité, écran cuisine, pointeuse et commande en ligne. C'est un logiciel de caisse modulaire auquel il est possible d'ajouter des modules personnalisables.
+          description: Clyo Systems est une solution de caisse tout-en-un pour les restaurants, incluant la gestion des stocks, la fidélité, les écrans cuisine, la gestion du temps du personnel et la commande en ligne. Sa conception modulaire permet l'ajout de modules adaptés aux besoins spécifiques de chaque établissement.
           additional_info: Intégration en cours.
         - website: https://www.epostechnologies.co.uk/
           documentation: /fr/apps/epos-technologies
