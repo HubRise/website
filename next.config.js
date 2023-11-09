@@ -4,6 +4,17 @@ const { join } = require("path")
 const { withSentryConfig } = require("@sentry/nextjs")
 const yaml = require("yaml")
 
+// Make sure that public env variables are present at build time, as they are included in the client bundle.
+const requiredEnvVars = [
+  "NEXT_PUBLIC_SENTRY_DSN",
+  "NEXT_PUBLIC_INTERACTIVE_DEV_MODE",
+  "NEXT_PUBLIC_RECAPTCHA_SITE_KEY",
+]
+const missingVars = requiredEnvVars.filter((key) => !(key in process.env))
+if (missingVars.length > 0) {
+  throw new Error(`The following environment variables should be defined at build time: ${missingVars.join(", ")}`)
+}
+
 /** @type {import('next').NextConfig} */
 let finalConfig = {}
 

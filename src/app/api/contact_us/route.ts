@@ -11,8 +11,8 @@ const verifyRecaptcha = async (recaptchaResponse: string) => {
     },
   })
 
-  if (!response?.data?.success) {
-    throw new Error("Captcha validation failed")
+  if (!response.data.success) {
+    throw new Error(`Captcha validation failed: ${JSON.stringify(response.data)}`)
   }
 }
 
@@ -33,19 +33,20 @@ const sendEmail = async (name: string, email: string, message: string) => {
   })
 
   if (response.rejected.length > 0) {
-    throw new Error("Email sending failed")
+    throw new Error(`SendGrid error: ${JSON.stringify(response)}`)
   }
 }
 
 export async function POST(req: Request) {
   const body = req.json != null ? await req.json() : req.body
   const { recaptchaResponse, name, email, message } = body
-  console.log("Sending email", { name, email, message })
+  console.log("Sending email", { recaptchaResponse, name, email, message })
 
   try {
     await verifyRecaptcha(recaptchaResponse)
     await sendEmail(name, email, message)
   } catch (error: any) {
+    console.error(error)
     return NextResponse.json({ error: error.message }, { status: 400 })
   }
 
