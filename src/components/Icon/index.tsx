@@ -15,6 +15,7 @@ export type IconCode =
   | "expand_more"
   | "expand_less"
   | "navigate_before"
+  | "search"
 
 export type IconProps = StyledIconProps & {
   code: IconCode

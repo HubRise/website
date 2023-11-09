@@ -688,21 +688,25 @@ Retrieve an option list and the possible choices (options).
 
 ##### Parameters:
 
-| Name                                | Type                                                      | Description                                                                                       |
-| ----------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `ref` <Label type="optional" />     | string                                                    | The ref of the option.                                                                            |
-| `name`                              | string                                                    | The name of the option.                                                                           |
-| `price`                             | [Money](/developers/api/general-concepts#monetary-values) | The price of the option. Should be set to `0.00 EUR` (adjust the currency) if the option is free. |
-| `price_overrides`                   | [PriceOverrides](#price-overrides)                        | Price overrides in different contexts, such as a specific service type.                           |
-| `default` <Label type="optional" /> | boolean                                                   | Whether this option is on by default. Default is `false`.                                         |
-| `tags` <Label type="optional" />    | string[]                                                  | List of tags.                                                                                     |
+| Name                                     | Type                                                      | Description                                                                                       |
+| ---------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `ref` <Label type="optional" />          | string                                                    | The ref of the option.                                                                            |
+| `name`                                   | string                                                    | The name of the option.                                                                           |
+| `restrictions` <Label type="optional" /> | [Restrictions](#restrictions)                             | An optional set of conditions that must be matched for the option to be available.                |
+| `price`                                  | [Money](/developers/api/general-concepts#monetary-values) | The price of the option. Should be set to `0.00 EUR` (adjust the currency) if the option is free. |
+| `price_overrides`                        | [PriceOverrides](#price-overrides)                        | Price overrides in different contexts, such as a specific service type.                           |
+| `default` <Label type="optional" />      | boolean                                                   | Whether this option is on by default. Default is `false`.                                         |
+| `tags` <Label type="optional" />         | string[]                                                  | List of tags.                                                                                     |
 
 ##### Example:
 
 ```json
 {
-  "name": "Blue",
   "ref": "BLU",
+  "name": "Blue",
+  "restrictions": {
+    "variant_refs": ["1"]
+  },
   "price": "250.00 EUR",
   "price_overrides": [
     {
@@ -1235,13 +1239,13 @@ Retrieve the list of images in the catalog.
 
 ## 14. Inventories {#inventories}
 
-Inventories keep track of the stock of every sku or option in a catalog, for a particular location.
+Inventories keep track of the stock of every sku or option in a catalog at a particular location.
 
-An **inventory** is a set of inventory entries. An **inventory entry** is the stock of a particular sku or option.
+An **inventory** consists of multiple inventory entries. An **inventory entry** represents the stock of a specific sku or option.
 
-An inventory is specific to a particular location. If several locations share the same catalog, each location will have its own inventory.
+An inventory is specific to a certain location. If multiple locations share the same catalog, each location will have its own separate inventory.
 
-Inventories cannot be created or deleted. An inventory is automatically associated to each pair of _catalog_ and _location_, where _location_ has access to _catalog_.
+Inventories cannot be created or deleted. An inventory is automatically associated with each pair of _catalog_ and _location_, where the _location_ has access to the _catalog_.
 
 ### 14.1. Retrieve Inventory {#retrieve-inventory}
 
@@ -1260,17 +1264,14 @@ Returns the list of inventory entries of the inventory.
 ```json
 [
   {
-    "sku_id": "ab19d",
     "sku_ref": "COKE",
     "stock": "3"
   },
   {
-    "sku_id": "sb65k",
     "sku_ref": "PEPSI",
     "stock": "0"
   },
   {
-    "option_id": "a8da5",
     "option_ref": "EGG",
     "stock": "1"
   }
@@ -1279,26 +1280,22 @@ Returns the list of inventory entries of the inventory.
 
 In the above example:
 
-- the sku `ab19d` has 3 items available
-- the sku `sb65k` is out of stock
-- the option `a8da5` has 1 item available
+- The sku with the ref `COKE` has 3 items available
+- The sku with the ref `PEPSI` is out of stock
+- The option with the ref `EGG` has 1 item available
 
-The skus and options' `ref`s are also provided for convenience in the reply.
-
-An inventory is an empty set by default. Every sku or option not specified in the inventory set has **unlimited** supply.
+By default, an inventory is an empty set. Any sku or option not specified in the inventory is considered to have an **unlimited** supply.
 
 ### 14.2. Update Inventory {#update-inventory}
 
-Overwrites the inventory. The request body has the same format as the [Retrieve inventory](#retrieve-inventory) response body.
+Overwrites the current inventory. The request body has the same format as the [Retrieve inventory](#retrieve-inventory) response.
 
 Each entry consists of:
 
-- either a `sku_id` or `option_id` key (_select by id_), or a `sku_ref` or `option_ref` key (_select by ref_)
-- and a `stock` key
+- Either a `sku_ref` or an `option_ref` key.
+- And a `stock` key.
 
-`stock` must be a positive [decimal](/developers/api/general-concepts#decimal-values) (with up to 3 decimal places). `0` means **out of stock**. An entry with a `null` stock is ignored.
-
-A _select by id_ entry affects a single sku or option. A _select by ref_ entry can affect several skus/options at the same time. The latter form provides a convenient way to update an inventory without storing ids.
+The `stock` value must be a positive [decimal](/developers/api/general-concepts#decimal-values) (with up to 3 decimal places). A value of `0` means **out of stock**. An entry with a `stock` value of `null` stock is ignored.
 
 <CallSummaryTable
   endpoint="PUT /catalogs/:id/locations/:id/inventory"
@@ -1313,7 +1310,7 @@ A _select by id_ entry affects a single sku or option. A _select by ref_ entry c
 ```json
 [
   {
-    "sku_id": "ab19d",
+    "sku_ref": "COKE",
     "stock": "5"
   },
   {
@@ -1325,11 +1322,11 @@ A _select by id_ entry affects a single sku or option. A _select by ref_ entry c
 
 ### 14.3. Patch inventory
 
-Updates a selected set of entries. Leave the other entries unchanged.
+Updates a selected set of entries while leaving the other entries unchanged.
 
-The request body has the same format as [Update inventory](#update-inventory). A `null` stock indicates that the entry must be removed from the inventory, ie the stock is unlimited.
+The request body has the same format as [Update inventory](#update-inventory). A `stock` value of `null` means that the entry should be removed from the inventory, signifying that the stock is unlimited.
 
-Unlike the `PUT` method which returns the full inventory, the `PATCH` method only returns the modified entries, to keep the response small and useful.
+Unlike the `PUT` method which returns the full inventory, the `PATCH` method only returns the modified entries, to keep the response concise and useful.
 
 <CallSummaryTable
   endpoint="PATCH /catalogs/:id/locations/:id/inventory"
@@ -1339,24 +1336,22 @@ Unlike the `PUT` method which returns the full inventory, the `PATCH` method onl
 
 ##### Example request:
 
-If we have the following inventory:
+Given the existing inventory:
 
 ```json
 [
   {
-    "sku_id": "ab19d",
     "sku_ref": "COKE",
     "stock": "3"
   },
   {
-    "option_id": "a8da5",
     "option_ref": "EGG",
     "stock": "1"
   }
 ]
 ```
 
-And apply this operation:
+When applying this operation:
 
 `PATCH /catalogs/87yu4/location/inventory`
 
@@ -1367,27 +1362,23 @@ And apply this operation:
     "stock": null
   },
   {
-    "sku_id": "a5f4e",
+    "sku_ref": "PEPSI",
     "stock": "2"
   }
 ]
 ```
 
-The resulting inventory is:
+The updated inventory becomes:
 
 ```json
 [
   {
-    "option_id": "a8da5",
-    "option_ref": "EGG",
-    "stock": "1"
+    "sku_ref": "PEPSI",
+    "stock": "2"
   },
   {
-    "sku_id": "a5f4e",
-    "sku_ref": null,
-    "stock": "2"
+    "option_ref": "EGG",
+    "stock": "1"
   }
 ]
 ```
-
-Note that just like in the PUT operation, you can use _select by id_ or _select by ref_ entries in the PATCH operation.
