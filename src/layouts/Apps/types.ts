@@ -17,6 +17,7 @@ export interface AppsYaml {
     all_apps: string
     categories: Array<{
       title: string
+      slug: string
       has_suggest_app: boolean
       apps: Array<{
         website: string

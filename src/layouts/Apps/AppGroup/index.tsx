@@ -15,30 +15,23 @@ import {
   AppLogoImage,
 } from "./Styles"
 
-interface AppSectionProps {
+interface AppGroupProps {
   title: string
-  showTitle: boolean
+  slug: string
   apps: AppsYaml["content"]["categories"][0]["apps"]
   logoImages: { [logo: string]: ContentImage }
   additionalSections: AppsYaml["content"]["additional_sections"]
   hasSuggestApp: boolean
 }
 
-const App = ({
-  title,
-  showTitle,
-  apps,
-  logoImages,
-  additionalSections,
-  hasSuggestApp,
-}: AppSectionProps): JSX.Element => {
+const AppGroup = ({ title, slug, apps, logoImages, additionalSections, hasSuggestApp }: AppGroupProps): JSX.Element => {
   const { t } = useTranslation()
 
   return (
-    <Block backgroundColor="none" title={showTitle ? title : undefined}>
+    <Block backgroundColor="none" title={title} titleAnchor={slug}>
       <Group>
         {apps.map((app, idx) => (
-          <AppBoxLink key={idx} href={app.documentation || app.website}>
+          <AppBoxLink key={idx} href={app.documentation || app.website} data-test="apps:result">
             {logoImages[app.logo] && (
               <AppLogo>
                 <AppLogoImage {...logoImages[app.logo]} alt={app.title} />
@@ -66,4 +59,4 @@ const App = ({
   )
 }
 
-export default App
+export default AppGroup

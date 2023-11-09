@@ -12,7 +12,7 @@ Avec HubRise, vous pouvez recevoir les commandes de Deliveroo, Just Eat, Uber Ea
 
 Cette page décrit les paramètres à utiliser pour connecter les plateformes de livraison de repas à UltimaPOS.
 
-Pour plus d'informations, consultez les pages d'aide de ces plateformes sur notre [page Apps](/apps/plateformes-de-livraison-de-repas).
+Pour plus d'informations, consultez les pages d'aide de ces plateformes sur notre [page Apps](/apps#food-ordering-platforms).
 
 ## Configuration UltimaPOS
 
