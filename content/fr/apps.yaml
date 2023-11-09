@@ -188,8 +188,8 @@ content:
         - website: https://tasksoftware.com
           documentation: /fr/apps/task
           logo: task.png
-          title: TASK SOFTWARE
-          description: TASK est un fournisseur de caisse adapté aux grands acteurs mondiaux de l'hôtellerie et de la restauration. L'offre TASK inclus des rapports en temps réel avec Business Intelligence intégrée, la gestion des stocks, des solutions commandes via des kiosques, en ligne et sur smartphone. Particulièrement adapté pour la gestion des relations clients, la fidélisation et la gestion des promotions.
+          title: TASK
+          description: TASK est un logiciel de caisse conçu pour les acteurs internationaux de l'hôtellerie et de la restauration. Il propose des rapports en temps réel avec fonctionnalités de Business Intelligence, la gestion des stocks, ainsi que des solutions de commande via kiosques, plateformes en ligne et applications mobiles. TASK est particulièrement adapté pour la gestion de la relation client, de la fidélisation et des promotions.
           additional_info:
         - website: https://www.ultimapos.fr/
           documentation: /fr/apps/ultimapos

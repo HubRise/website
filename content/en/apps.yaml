@@ -192,8 +192,8 @@ content:
         - website: https://tasksoftware.com
           documentation: /apps/task-software
           logo: task.png
-          title: TASK SOFTWARE
-          description: TASK is an EPOS provider tailored for global hospitality and restaurant industry players. They offer features such as real-time reporting with integrated BI, inventory control, as well as ordering solutions through kiosks, online, and on smartphones. The platform emphasises customer relationship management, loyalty, and promotional management.
+          title: TASK
+          description: TASK is an EPOS solution engineered for the global hospitality and dining sectors. It offers features such as real-time reporting enhanced with Business Intelligence capabilities, inventory management, and ordering solutions through kiosks, web platforms, and mobile apps. TASK excels in the management of customer relationship, loyalty, and promotions.
           additional_info:
         - website: https://www.ultimapos.fr/
           documentation: /apps/ultimapos
