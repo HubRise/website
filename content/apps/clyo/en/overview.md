@@ -10,7 +10,7 @@ app_info:
   category: Point of Sales
   availability: France, Switzeland
   website: https://www.clyosystems.com
-  contact: contact@support@clyosystems / +33 1 84 25 27 77
+  contact: contact@clyosystems.com / +33 1 84 25 27 77
 ---
 
 ---
@@ -25,7 +25,7 @@ Clyo Systems is a software platform that enables centralised management. Designe
 
 Clyo Systems adapts to the changing needs of businesses by enabling native modules, and connecting third-party applications via direct integrations or via HubRise. This modular approach aims to provide efficient management and offer the flexibility merchants need to optimise their operational management and enhance the customer experience.
 
-Clyo Systems complies with the French anti-fraud law of 2018
+Clyo Systems complies with the French anti-fraud law of 2018.
 
 
 ## Integration Features
