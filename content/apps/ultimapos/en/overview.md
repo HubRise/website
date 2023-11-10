@@ -40,7 +40,7 @@ Connecting UltimaPOS to HubRise allows your EPOS to:
 - Push orders into HubRise, including order status.
 - Pull orders from HubRise, including order status.
 - Pull customer information from HubRise.
-- Push the menu into a HubRise catalog.
+- Push a catalog into HubRise.
 - Synchronise inventory with HubRise.
 
 UltimaPOS can be connected to HubRise from the UltimaPOS user interface.

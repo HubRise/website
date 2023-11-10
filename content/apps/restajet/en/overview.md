@@ -41,7 +41,7 @@ Once connected to HubRise, you can use RestaJet to:
 
 - Push orders into HubRise, including order status.
 - Push customer information into HubRise.
-- Pull the menu from a HubRise catalog.
+- Pull a catalog from HubRise.
 
 RestaJet can be connected to HubRise via the RestaJet support line.
 
