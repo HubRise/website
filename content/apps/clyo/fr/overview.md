@@ -7,6 +7,8 @@ meta:
   title: Présentation générale | Clyo | HubRise
   description: Présentation générale de Clyo, les raisons de connecter Clyo à HubRise et les fonctionnalités de l'intégration avec HubRise.
 gallery:
+  - __gallery-001.png
+  - __gallery-002.jpg
 app_info:
   category: Logiciels de caisse
   availability: France, Suisse

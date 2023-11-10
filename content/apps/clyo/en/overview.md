@@ -6,6 +6,9 @@ layout: documentation
 meta:
   title: Overview | Clyo | HubRise
   description: Clyo overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
+gallery:
+  - __gallery-001.png
+  - __gallery-002.jpg
 app_info:
   category: Point of Sales
   availability: France, Switzeland
