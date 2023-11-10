@@ -32,7 +32,7 @@ Connecting 3S POS to HubRise allows your EPOS to:
 
 - Pull orders from HubRise, including order status.
 - Pull customer information from HubRise.
-- Push the menu into a HubRise catalog.
+- Push a catalog into HubRise.
 
 3S POS can be connected to HubRise via the 3S POS support line.
 

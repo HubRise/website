@@ -35,8 +35,8 @@ Connecting LivePepper to HubRise allows LivePepper to:
 - Pull orders from HubRise, including order status.
 - Push customer information into HubRise, including loyalty.
 - Pull customer information from HubRise, including loyalty.
-- Push the menu into a HubRise catalog.
-- Pull the menu from a HubRise catalog.
+- Push a catalog into HubRise.
+- Pull a catalog from HubRise.
 - Synchronise final delivery time with HubRise.
 
 LivePepper can be connected to HubRise from the LivePepper back office.

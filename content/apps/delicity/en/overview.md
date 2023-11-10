@@ -36,7 +36,7 @@ Delicity is present in several major cities in France.
 Connecting Delicity to HubRise allows your food ordering and delivery service platform to:
 
 - Push orders into HubRise, including order statuses.
-- Pull the menu from a HubRise catalog.
+- Pull a catalog from HubRise.
 
 Delicity can be connected to HubRise from the Delicity back office.
 
