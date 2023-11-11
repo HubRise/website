@@ -67,7 +67,7 @@ In addition to its HubRise integration, Melba has an API that makes all the data
 Connecting Melba to HubRise allows your operations management solution to:
 
 - Pull orders from HubRise, including order status.
-- Pull the menu from a HubRise catalog.
+- Pull a catalog from HubRise.
 
 ---
 

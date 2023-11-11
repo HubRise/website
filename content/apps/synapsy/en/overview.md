@@ -35,7 +35,7 @@ Connecting Synapsy to HubRise allows your EPOS to:
 
 - Pull orders from HubRise, including order status.
 - Pull customer information from HubRise.
-- Push the menu into a HubRise catalog.
+- Push a catalog into HubRise.
 - Synchronise inventory with HubRise.
 
 ---

@@ -54,7 +54,7 @@ TASK's enterprise solution serves; casinos, stadiums, multi-site Quick Service R
 Connecting TASK to HubRise allows your EPOS to:
 
 - Push orders into HubRise, including order status.
-- Push the menu into a HubRise catalog.
+- Push a catalog into HubRise.
 
 TASK can be connected to HubRise via the TASK support line.
 

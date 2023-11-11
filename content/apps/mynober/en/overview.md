@@ -38,8 +38,8 @@ Connecting MynOber to HubRise allows your online ordering solution to:
 - Pull orders from HubRise, including order status.
 - Push customer information into HubRise.
 - Pull customer information from HubRise.
-- Push the menu into a HubRise catalog.
-- Pull the menu from a HubRise catalog.
+- Push a catalog into HubRise.
+- Pull a catalog from HubRise.
 
 MynOber can be connected to HubRise from the MynOber back office.
 

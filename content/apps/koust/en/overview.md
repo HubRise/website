@@ -30,7 +30,7 @@ Koust was created in September 2016. Its main goals are to increase restaurateur
 
 When connected with HubRise, Koust can be used to:
 
-- Pull the menu from a HubRise catalog.
+- Pull a catalog from HubRise.
 - Pull orders from HubRise.
 
 ## Why connect?
