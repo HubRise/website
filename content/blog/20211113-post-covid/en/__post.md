@@ -55,7 +55,7 @@ HubRise is particularly interesting for:
 - **Software editors**, who gain access to many integrations without significant development effort.
 - And **retail and restaurants**, who can connect applications they use and thus improve productivity, a privilege once reserved for major industry players with internal IT departments.
 
-HubRise is a French company, based in Sophia Antipolis, a technology parc based in the French Riviera, and supported by Telecom Paris Eurecom Entrepreneurs.
+HubRise is a French company located in Sophia Antipolis, a technology park on the French Riviera, and supported by Telecom Paris Eurecom Entrepreneurs.
 
 **Press Contact**
 
