@@ -1,66 +1,66 @@
 ---
-title: "HubRise accélère la transition numérique des commerçants et restaurateurs post-COVID"
-path_override: transition-numerique-post-covid
+title: "HubRise Speeds Up Digital Transition for Retailers and Restaurateurs Post-COVID"
+path_override: digital-transition-post-covid
 date: 2021-11-13
 author: Janaina Wittner
 meta:
-  title: "Communiqué de presse : HubRise accélère la transition numérique des commerçants et restaurateurs post-COVID | Blog | HubRise"
-  description: Découvrez comment HubRise accélère la transition numérique pour les commerçants et les restaurateurs en ère post-COVID, en simplifiant l'intégration avec plus de 70 applications tierces
-excerpt: "Communiqué de presse : HubRise accélère la transition numérique pour les commerçants et les restaurateurs en ère post-COVID, en simplifiant l'intégration avec plus de 70 applications tierces."
+  title: "Press Release: HubRise Speeds Up Digital Transition for Retailers and Restaurateurs Post-COVID | Blog | HubRise"
+  description: Discover how HubRise speeds up the digital transition for retailers and restaurateurs in the post-COVID era by simplifying integration with over 70 third-party applications
+excerpt: "Press Release: HubRise Speeds Up Digital Transition for Retailers and Restaurateurs Post-COVID by Simplifying Integration with Over 70 Third-Party Applications."
 ---
 
-**Contraints d'accélérer leur transformation digitale pendant la crise, les commerçants et les restaurateurs utilisent aujourd'hui de plus en plus d'applications. A l'heure de la réouverture, il faut optimiser les opérations, pour éviter les écrans multiples, les saisies manuelles, les imports/exports et les copier/coller. Un défi auquel permet de répondre HubRise, une innovation née à Sophia-Antipolis et qui permet de connecter facilement plus de 70 applications tierces entre elles, offrant ainsi aux commerçants un environnement digital et des outils jusque-là réservés aux grands groupes.**
+**Forced to accelerate their digital transformation during the crisis, merchants and restaurateurs are now using an increasing number of applications. With reopening, it's essential to optimize operations to avoid multiple screens, manual entries, imports/exports, and copy/pasting. HubRise, an innovation born in Sophia-Antipolis, meets this challenge by easily connecting more than 70 third-party applications, offering merchants a digital environment and tools previously reserved for large groups.**
 
-## Les commerces et les restaurants doivent s'adapter à un monde “post-COVID” plus digitalisé et plus connecté
+## Retail and Restaurant Businesses Must Adapt to a More Digitalized, Connected "Post-COVID" World
 
-Face aux restrictions imposées par la crise, les commerces et les restaurants se sont massivement tournés vers le numérique ces 12 derniers mois (solutions de vente en ligne, de click & collect, de drive, de livraison à domicile…). Conséquence : le e-commerce représente aujourd'hui 13,4% du commerce de détail contre 9,8% en 2019 (source Fevad).
+Faced with the crisis-imposed restrictions, commerce and restaurant sectors have massively turned to digital solutions in the last 12 months (online sales, click & collect, drive-through, home delivery, etc.). As a result, e-commerce now accounts for 13.4% of retail trade, up from 9.8% in 2019 (source Fevad).
 
-Si cette digitalisation aura permis aux commerçants de continuer à générer du chiffre d'affaires pendant la crise, elle leur impose aussi de trouver des solutions pour fluidifier et optimiser leurs opérations. Comment éviter les multiples saisies manuelles sur de multiples écrans, les copier/coller ou les imports/exports d'une solution et d'un fichier à l'autre ? C'est le défi auquel s'attaque la solution HubRise, une innovation Sophipolitaine qui facilite les intégrations entre solutions tierces.
+This digitalization has allowed merchants to continue generating revenue during the crisis, but it also requires them to find solutions to streamline and optimize their operations. How to avoid manual entries across multiple screens, copy/pasting, or importing/exporting from one solution or file to another? HubRise, a Sophian innovation, tackles this by facilitating third-party solution integrations.
 
-## La vision de HubRise est celle d'un monde dans lequel tous les logiciels sont connectables entre eux
+## HubRise's Vision is a World Where All Software Can Be Connected
 
-HubRise est un middleware qui facilite les intégrations techniques entre solutions tierces en déplaçant les données vers le cloud et en uniformisant leur format.
+HubRise is a middleware that simplifies technical integrations between third-party solutions by moving data to the cloud and standardizing its format.
 
-Antoine Monnier, fondateur et dirigeant de HubRise, explique :
+Antoine Monnier, founder and director of HubRise, explains:
 
-> Pour connecter deux applications entre elles - un logiciel de caisse avec une solution de commande en ligne par exemple - il fallait auparavant envisager des intégrations en « one to one », qui coûtaient aux développeurs plusieurs semaines de travail et aux entreprises plusieurs milliers d'euros. Aujourd'hui, il suffit aux éditeurs de s'intégrer une seule fois à HubRise pour rejoindre tout un écosystème d'applications déjà connectées.
+> To connect two applications - such as a cash register software with an online ordering solution - used to require "one to one" integrations, which cost developers several weeks of work and companies thousands of euros. Now, publishers only need to integrate once with HubRise to join a whole ecosystem of already connected applications.
 
-En permettant aux commerçants de connecter des applications tierces entre elles, HubRise transforme des environnements informatiques et technologiques complexes et disparates en environnements simples et homogènes, un privilège réservé autrefois aux grands groupes munis d'une direction informatique.
-HubRise permet aujourd'hui de connecter plus de 70 applications, et espère passer à 150 d'ici à 18 mois.
+By enabling merchants to connect third-party applications, HubRise turns complex and disparate IT and technological environments into simple and uniform ones, a privilege once reserved for large groups with IT departments.
+HubRise currently connects over 70 applications and hopes to increase this to 150 within 18 months.
 
-## Un écosystème à un prix juste et accessible, ouvert à tous les développeurs
+## An Ecosystem at a Fair and Accessible Price, Open to All Developers
 
-Des fleuristes, des tabacs, des boulangeries ou encore des restaurants font aujourd'hui appel à la solution HubRise. Pour un prix très accessible de 25€ HT par mois et par point de vente, ces commerces profitent d'intégrations facilitées avec toutes les solutions déjà intégrées au hub, parmi lesquelles des solutions de commande en ligne, de fidélité et de marketing, de gestion et d'inventaire, de gestion de livreurs ou de livraison à domicile.
+Florists, tobacconists, bakeries, and restaurants are now turning to the HubRise solution. For a very accessible price of 25€ excl. VAT per month and per point of sale, these businesses benefit from facilitated integrations with all the solutions already integrated into the hub, including online ordering, loyalty and marketing, management and inventory, delivery management, and home delivery solutions.
 
-Une particularité de HubRise est d'être une solution ouverte. Avec une documentation technique détaillée accessible en ligne, les éditeurs et les développeurs d'applications qui le souhaitent peuvent se connecter gratuitement à son écosystème. A la manière des logiciels libres, ce modèle permet à HubRise de séduire éditeurs et développeurs sans déployer de force commerciale importante, assurant ainsi la croissance rapide de son écosystème pour le bénéfice de ses utilisateurs.
+HubRise's distinction is being an open solution. With detailed technical documentation available online, application publishers and developers can connect to its ecosystem for free. Like open-source software, this model allows HubRise to attract publishers and developers without deploying significant sales force, thus ensuring the rapid growth of its ecosystem for the benefit of its users.
 
-## L'intégration logicielle apporte des bénéfices concrets aux commerçants
+## Software Integration Brings Concrete Benefits to Merchants
 
-Si HubRise agit dans l'ombre, elle permet aux commerçants de profiter de bénéfices et d'avantages concrets au quotidien :
+While HubRise works behind the scenes, it enables merchants to enjoy concrete benefits and advantages daily:
 
-- **Simplification des opérations** : toutes les commandes sont centralisées sur un même écran, pour un gain de temps et de productivité.
-- **Liberté de choisir ses solutions** : les commerçants peuvent adopter facilement de nouvelles applications (paiement à table, commande à table par QR code, etc.) et suivre les tendances du marché.
-- **Gain de temps pour le gérant** : finis les imports / exports et les consolidations « à la main ».
+- **Operation Simplification**: all orders are centralized on a single screen, saving time and improving productivity.
+- **Freedom to Choose Solutions**: merchants can easily adopt new applications (table payment, QR code table ordering, etc.) and keep up with market trends.
+- **Time Savings for Managers**: end of manual imports/exports and "hand" consolidations.
 
-Autant de bénéfices qui se traduisent, in fine, par une rentabilité améliorée. HubRise compte notamment parmi ses clients des enseignes de la restauration comme 911 Pizza, Cosmo Sushi, Kajirō Sushi ou encore Pizza Hut et Papa John's pour nommer les plus grands groupes.
+These benefits ultimately translate into improved profitability. HubRise's clients include restaurant brands like 911 Pizza, Cosmo Sushi, Kajirō Sushi, as well as Pizza Hut and Papa John's to name the larger groups.
 
-## A propos de HubRise
+## About HubRise
 
-HubRise facilite les intégrations techniques entre les solutions logicielles des restaurateurs et des commerçants, telles que : site de commande en ligne, logiciel de caisse, gestion de livraison, carte de fidélité digitale ou paiement sur smartphone.
+HubRise simplifies technical integrations between the software solutions of restaurateurs and retailers, such as online ordering sites, cash register software, delivery management, digital loyalty cards, or smartphone payments.
 
-L'innovation apportée par HubRise est de centraliser les données et de les rendre accessibles à des applications tierces par une API sécurisée. A l'image d'un hub aéroportuaire, HubRise transfère les données entre les solutions qui ne sont pas directement reliées entre elles, multipliant ainsi les combinaisons possibles. Les applications connectées à HubRise partagent en temps réel produits, fiches clients, commandes et autres données.
+The innovation brought by HubRise is to centralize data and make it accessible to third-party applications through a secure API. Like an airport hub, HubRise transfers data between solutions not directly connected, thus multiplying possible combinations. Applications connected to HubRise share real-time products, customer files, orders, and other data.
 
-HubRise intéresse tout particulièrement :
+HubRise is particularly interesting for:
 
-- Les **éditeurs de logiciel**, qui ont accès à de nombreuses intégrations sans effort de développement conséquent
-- Et **les entreprises de commerce et de restauration**, qui peuvent connecter leurs solutions et ainsi améliorer leur productivité, privilège autrefois réservé aux grands groupes munis d'une direction informatique.
+- **Software publishers**, who gain access to many integrations without significant development effort
+- And **commerce and restaurant businesses**, who can connect their solutions and thus improve productivity, a privilege once reserved for large groups with IT departments.
 
-HubRise est une entreprise française, basée à Sophia Antipolis (06), et accompagnée par Telecom Paris Eurecom Entrepreneurs.
+HubRise is a French company, based in Sophia Antipolis (06), and supported by Telecom Paris Eurecom Entrepreneurs.
 
-**Contact Presse**
+**Press Contact**
 
-Janaina Wittner :
+Janaina Wittner:
 
 - LinkedIn: https://www.linkedin.com/in/janainawittner
-- Email : jwittner@hubrise.com
-- Téléphone : +33 6 86 54 99 24
+- Email: jwittner@hubrise.com
+- Phone: +33 6 86 54 99 24
