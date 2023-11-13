@@ -1,7 +1,7 @@
 ---
 title: Variantes de catalogue
 path_override: variantes-de-catalogue
-date: 2023-10-05
+date: 2023-05-10
 author: Antoine Monnier
 meta:
   title: Variantes de catalogue | Blog | HubRise
