@@ -31,7 +31,7 @@ Connecting Talabat to HubRise allows your online food ordering and delivery plat
 
 - Push orders into HubRise, including order status.
 - Push customer information into HubRise.
-- Pull the menu from a HubRise catalog.
+- Pull a catalog from HubRise.
 - Synchronise inventory with HubRise.
 
 Talabat can be connected to HubRise from the HubRise back office.

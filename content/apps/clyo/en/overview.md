@@ -37,7 +37,7 @@ Connecting Clyo Systems to HubRise allows your EPOS to:
 
 - Pull orders from HubRise, including order status.
 - Pull customer information from HubRise.
-- Push the menu into a HubRise catalog.
+- Push a catalog into HubRise.
 
 Clyo Systems can be connected to HubRise from Clyo's back office.
 

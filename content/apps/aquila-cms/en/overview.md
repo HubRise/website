@@ -36,7 +36,7 @@ Connecting Aquila CMS to HubRise allows the online ordering solution to:
 
 - Push orders into HubRise.
 - Push customer information into HubRise.
-- Pull the menu from a HubRise catalog.
+- Pull a catalog from HubRise.
 
 Aquila CMS can be connected to HubRise from Aquila CMS back office.
 

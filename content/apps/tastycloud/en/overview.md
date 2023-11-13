@@ -32,7 +32,7 @@ Once connected to HubRise, TastyCloud can be used to:
 
 - Push orders into HubRise, including order status.
 - Push customer information into HubRise.
-- Pull the menu from a HubRise catalog.
+- Pull a catalog from HubRise.
 
 TastyCloud can be connected to HubRise via the TastyCloud support line.
 

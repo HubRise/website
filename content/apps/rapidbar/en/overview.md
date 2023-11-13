@@ -46,7 +46,7 @@ RapidBar key features include:
 Connecting RapidBar to HubRise allows your inventory management solution to:
 
 - Pull orders from HubRise, including order status.
-- Pull the menu from a HubRise catalog.
+- Pull a catalog from HubRise.
 
 ---
 

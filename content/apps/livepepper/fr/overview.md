@@ -1,11 +1,11 @@
 ---
 title: Présentation générale
-path_override: "/"
+path_override: /
 position: 1
 layout: documentation
 meta:
   title: Présentation générale | LivePepper | HubRise
-  description: Présentation générale de LivePepper, les raisons de connecter votre site LivePepper à HubRise et fonctionnalités de l'intégration avec HubRise.
+  description: Présentation générale de LivePepper, les raisons de connecter votre site LivePepper à HubRise et fonctionnalités de l'intégration avec HubRise. Synchronisez les données entre logiciel de caisse et applications.
 gallery:
   - __gallery-001.png
   - __gallery-002.png
@@ -13,16 +13,10 @@ gallery:
   - __gallery-004.png
 app_info:
   category: Commande en ligne
-  availability: Monde
+  availability: Monde entier
   price_range: De 69 à 109 € / mois
   website: https://www.livepepper.fr
   contact: contact@livepepper.com / +33 4 92 38 09 82
----
-
----
-
-**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/livepepper">en anglais uniquement</Link>.
-
 ---
 
 ## Description
@@ -33,9 +27,9 @@ Les clients de LivePepper sont principalement situés en France et au Royaume-Un
 
 Conçu aussi bien pour les restaurants indépendants que franchisés, LivePepper est doté d'une riche palette de fonctionnalités afin de répondre aux besoins des restaurants et franchises internationales les plus exigeants. La société propose également une assistance marketing.
 
-LivePepper permet de créer un site Web complet comprenant des pages de marketing statiques et un système de commande en ligne. Les restaurants peuvent également intégrer le module de commande en ligne de LivePepper à un site Web de marketing existant. Les sites Web de LivePepper peuvent être personnalisés à partir d'un modèle, ou conçus de toutes pièces et adaptés à la charte graphique et aux particularités du restaurant.
+LivePepper permet de créer un site web complet comprenant des pages de marketing statiques et un système de commande en ligne. Les restaurants peuvent également intégrer le module de commande en ligne de LivePepper à un site web de marketing existant. Les sites web de LivePepper peuvent être personnalisés à partir d'un modèle, ou conçus de toutes pièces et adaptés à la charte graphique et aux particularités du restaurant.
 
-Les responsables des établissements de restauration ont toute latitude pour administrer leur site Web LivePepper. Ils peuvent, à partir du back-office :
+Les responsables des établissements de restauration ont toute latitude pour administrer leur site web LivePepper. Ils peuvent, à partir du back-office :
 
 - Apporter des modifications au texte et aux ressources de leur site de marketing.
 - Créer et actualiser leur menu en ligne, avec une personnalisation des produits et une restriction des garnitures.
@@ -53,7 +47,7 @@ Enfin, les clients peuvent faire appel à LivePepper pour saisir manuellement le
 La connexion de LivePepper à HubRise permet à LivePepper de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
-- Recevoir les commandes de HubRise, y compris le statut de commande.
+- Recevoir les commandes de HubRise, dont les statuts de commande.
 - Envoyer les informations clients à HubRise, dont les données du programme de fidélité.
 - Recevoir les informations clients de HubRise, dont la fidélité.
 - Envoyer un catalogue à HubRise.
@@ -62,7 +56,7 @@ La connexion de LivePepper à HubRise permet à LivePepper de :
 
 LivePepper peut être connecté à HubRise depuis le back-office de LivePepper.
 
-## Pourquoi se connecter ?
+## Pourquoi se connecter ?
 
 En connectant LivePepper à HubRise, vous permettez à votre solution de commande en ligne de communiquer avec les autres applications que vous utilisez de manière quotidienne. Envoyez les commandes en ligne vers votre logiciel de caisse, une imprimante autonome, un écran de cuisine ou votre système de gestion de stock. Synchronisez les points de fidélité et les listes d'envoi par e-mail. Transférez les commandes des plateformes de livraison de repas dans LivePepper afin de gérer toutes vos commandes en ligne sous la même interface utilisateur.
 
@@ -70,4 +64,4 @@ Grâce à HubRise, synchronisez votre menu, vos informations clients et vos comm
 
 ## Prérequis
 
-Pour établir une connexion entre LivePepper et HubRise, vous devez disposer d'un site de commande en ligne LivePepper. Un site de test peut être créé à partir du [site Web de LivePepper](https://www.livepepper.fr).
+Pour établir une connexion entre LivePepper et HubRise, vous devez disposer d'un site de commande en ligne LivePepper. Un site de test peut être créé à partir du [site web de LivePepper](https://www.livepepper.fr).
