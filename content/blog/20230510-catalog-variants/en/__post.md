@@ -9,7 +9,7 @@ meta:
 excerpt: We've introduced catalog variants. This new feature allows you to use a single catalog across multiple sales channels and locations, while maintaining the flexibility to customise prices and availability for each channel and location.
 ---
 
-[//]: # "Photo credits: https://pixabay.com/vectors/watercolor-yellow-orange-red-green-4111953/"
+[//]: # "Photo credits: Dall-E"
 
 We've introduced catalog variants. This new feature allows you to use a single catalog across multiple sales channels and locations, while maintaining the flexibility to customise prices and availability for each channel and location. This feature will not only save you time, but also ensure consistency across your sales channels.
 

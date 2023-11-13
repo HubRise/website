@@ -9,7 +9,7 @@ meta:
 excerpt: "Nouveauté : les variantes de catalogue. Grâce à cette nouvelle fonctionnalité, vous pouvez utiliser un seul catalogue avec plusieurs canaux et points de vente, tout en conservant la possibilité de personnaliser les prix et la disponibilité pour chaque canal et point de vente."
 ---
 
-[//]: # "Photo credits: https://pixabay.com/vectors/watercolor-yellow-orange-red-green-4111953/"
+[//]: # "Photo credits: Dall-E"
 
 Nous avons lancé les variantes de catalogue, qui permettent d'utiliser un seul catalogue sur plusieurs canaux et points de vente, tout en conservant la possibilité de personnaliser les prix et la disponibilité pour chaque canal et point de vente. Cette fonctionnalité vous fera non seulement gagner du temps, mais elle garantira aussi la cohérence sur l'ensemble de vos canaux de vente.
 
