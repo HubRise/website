@@ -34,7 +34,7 @@ Acme complies with the 2018 French Anti-Fraud Act.
 Connecting Acme to HubRise allows your EPOS to:
 
 - Pull orders from HubRise, including order status.
-- Push the menu into a HubRise catalog.
+- Push a catalog into HubRise.
 
 ---
 

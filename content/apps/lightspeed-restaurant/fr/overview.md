@@ -32,7 +32,7 @@ La connexion de Lightspeed Restaurant Bridge à HubRise permet à votre logiciel
 - Envoyer les commandes payées à HubRise, avec leur statut.
 - Recevoir les informations clients de HubRise.
 - Envoyer les informations clients à HubRise.
-- Envoyer le menu dans un catalogue HubRise.
+- Envoyer un catalogue à HubRise.
 
 Vous pouvez connecter Lightspeed Restaurant Bridge depuis le back-office HubRise.
 

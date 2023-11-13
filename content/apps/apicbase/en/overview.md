@@ -54,7 +54,7 @@ Connecting Apicbase to HubRise allows your Food and Beverage management platform
 
 - Pull orders from HubRise, including order status.
 - Pull customer information from HubRise.
-- Pull the menu from a HubRise catalog.
+- Pull a catalog from HubRise.
 - Synchronise inventory with HubRise.
 
 Apicbase can be connected to HubRise from the Apicbase back office.

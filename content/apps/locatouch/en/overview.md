@@ -34,8 +34,8 @@ Connecting Loca'Touch to HubRise allows your self ordering kiosk to:
 
 - Push orders into HubRise, including order status.
 - Push customer information into HubRise.
-- Push the menu into a HubRise catalog.
-- Pull the menu from a HubRise catalog.
+- Push a catalog into HubRise.
+- Pull a catalog from HubRise.
 - Synchronise inventory with HubRise.
 
 ---

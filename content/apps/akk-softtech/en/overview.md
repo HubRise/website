@@ -24,7 +24,7 @@ Connecting AKK to HubRise allows your EPOS to:
 
 - Pull orders from HubRise, including order status.
 - Pull customer information from HubRise.
-- Push the menu into a HubRise catalog.
+- Push a catalog into HubRise.
 
 AKK Softtech can be connected to HubRise from the AKK back office.
 
