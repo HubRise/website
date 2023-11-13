@@ -62,10 +62,12 @@ export const colors = {
   backgroundDarker: "#333",
   backgroundDark: "#555",
   backgroundLight: "#efefef",
+  backgroundLightest: "#f8f8f8",
   backgroundWhite: "#fff",
 
   // borderMedium: "#ccc",
   borderLight: "#e0e0e0",
+  borderLighter: "#f0f0f0",
   borderLightest: "#f8f8f8",
   borderInputFocus: "#555",
 }

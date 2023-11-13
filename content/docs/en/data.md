@@ -18,7 +18,7 @@ The **ORDERS** page displays your recent orders, with the most recent on top. Fo
 - **LOCATION**: If you select **All locations**, this column shows the Location that received the order.
 - **CUSTOMER**: The customer that made the order.
 - **AMOUNT**: The total amount of the order.
-- **STATUS**: The current status of the order. For an overview of possible statuses, see the [Order status section](/developers/api/order-management#status) of the HubRise API **Order Management** page.
+- **STATUS**: The current status of the order. For an overview of possible statuses, see the [Order status section](/developers/api/orders#status) of the HubRise API **Order Management** page.
 - **ORIGIN**: What app the order was generated from.
 
 To filter orders by start and end date:

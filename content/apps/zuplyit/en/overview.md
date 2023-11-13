@@ -36,7 +36,7 @@ Connecting Zuplyit to HubRise allows your online ordering solution to:
 
 - Push orders into HubRise, including order status.
 - Push customer information into HubRise.
-- Pull the menu from a HubRise catalog.
+- Pull a catalog from HubRise.
 
 Zuplyit can be connected to HubRise from the Zuplyit back office.
 

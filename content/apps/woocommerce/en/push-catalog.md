@@ -95,4 +95,4 @@ For every `sku` object in a product, WooCommerce Bridge creates a variation with
 
 Lists of options attached to HubRise products are ignored.
 
-For more information about products and skus in HubRise catalogs, see [Products](/developers/api/catalog-management#products) and [Skus](/developers/api/catalog-management#skus).
+For more information about products and skus in HubRise catalogs, see [Products](/developers/api/catalogs#products) and [Skus](/developers/api/catalogs#skus).

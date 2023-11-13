@@ -7,18 +7,18 @@ meta:
   title: Overview | SOLUTION | HubRise
   description: SOLUTION overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your [EPOS] and your other apps.
 gallery:
-- __gallery-001.png ?
-- __gallery-002.png ?
+  - __gallery-001.png ?
+  - __gallery-002.png ?
 app_info:
   category:
-  - Point of Sales - Food Ordering Platforms - Online Ordering - Delivery Management - Loyalty and Marketing - Operations and Inventory - Other Apps
+    - Point of Sales - Food Ordering Platforms - Online Ordering - Delivery Management - Loyalty and Marketing - Operations and Inventory - Other Apps
   availability:
-  - United Kingdom
-  - France
-  - Worldwide
-  price_range: 
-  website: 
-  contact: 
+    - United Kingdom
+    - France
+    - Worldwide
+  price_range:
+  website:
+  contact:
 ---
 
 ---
@@ -53,8 +53,8 @@ Connecting SOLUTION to HubRise allows your [EPOS] to:
 - Push orders into HubRise, including order status.
 - Push order modifications into HubRise: payments and item changes.
 - Push customer information into HubRise. -OR- Push customer information into HubRise, including loyalty.
-- Pull the menu from a HubRise catalog.
-- Push the menu into a HubRise catalog.
+- Pull a catalog from HubRise.
+- Push a catalog into HubRise.
 - Synchronise inventory with HubRise.
 - Synchronise final delivery time with HubRise.
 

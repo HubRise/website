@@ -13,6 +13,7 @@ content:
   all_apps: All Apps
   categories:
     - title: Point of Sales
+      slug: point-of-sales
       has_suggest_app: true
       apps:
         - website: https://3s-pos.com
@@ -32,6 +33,12 @@ content:
           title: Carré POS
           description: Carré POS is a Point of Sales designed for fast ordering. It adapts to all types of businesses, including restaurants, bakeries, local stores, boutiques, hairdressers, and florists.
           additional_info:
+        - website: https://www.clyosystems.com
+          documentation: /apps/clyo
+          logo: clyo.png
+          title: Clyo Systems
+          description: Clyo Systems is an all-in-one EPOS solution for restaurants, including inventory management, loyalty management, Kitchen Display Systems, time-tracking, and online ordering. Its modular design allows for the integration of customisable add-ons.
+          additional_info: Integration in progress.
         - website: https://www.epostechnologies.co.uk/
           documentation: /apps/epos-technologies
           logo: epostechnologies.png
@@ -174,13 +181,19 @@ content:
           documentation: /apps/swoopos
           logo: swoopos.png
           title: SwooPOS
-          description: SwooPOS is a cost efficient, multifunctional and easy to use mobile Point of Sales system designed for the hospitality and retail sectors. It comes with payment, table booking, and QR code table ordering solutions.
+          description: SwooPOS is a cost efficient, multifunctional and easy to use mobile Point of Sales system designed for the hospitality and retail sectors. It comes with payment, table booking, and QR code table ordering solutions.
           additional_info:
         - website: http://www.talc.fr/
           documentation: /apps/talc
           logo: talc.png
           title: T.A.L.C Informatique
           description: T.A.L.C Informatique is an EPOS adapted to the needs of restaurants. Its features include multi-store management, courier dispatching, inventory and procurement management, client geolocalisation and sending of SMS.
+          additional_info:
+        - website: https://tasksoftware.com
+          documentation: /apps/task-software
+          logo: task.png
+          title: TASK
+          description: TASK is an EPOS solution engineered for the global hospitality and dining sectors. It offers features such as real-time reporting enhanced with Business Intelligence capabilities, inventory management, and ordering solutions through kiosks, web platforms, and mobile apps. TASK excels in the management of customer relationship, loyalty, and promotions.
           additional_info:
         - website: https://www.ultimapos.fr/
           documentation: /apps/ultimapos
@@ -192,9 +205,10 @@ content:
           documentation: /apps/zelty
           logo: zelty.png
           title: Zelty
-          description: Zelty is a complete suite of solutions designed for multi-site. Zelty is suitable for any type of restaurant from fast food to traditional catering.
+          description: Zelty is a complete suite of solutions designed for multi-site. Zelty is suitable for any type of restaurant from fast food to traditional catering.
           additional_info:
     - title: Food Ordering Platforms
+      slug: food-ordering-platforms
       apps:
         - website: https://delicity.com
           documentation: /apps/delicity
@@ -288,6 +302,7 @@ content:
           title: Uber Eats
           description: Uber Eats is an online food ordering and delivery platform for local restaurants. Customers can order food online or via a mobile app. Available in 45 markets and 6,000 cities.
     - title: Online Ordering
+      slug: online-ordering
       apps:
         - website: https://www.app4.co.uk/
           documentation: /apps/app4
@@ -417,6 +432,7 @@ content:
           description: Zuplyit by AirTouchMedia is a white label online ordering solution for the food industry, combined with a Delivery Management Solution, as well as a suite of customer loyalty and promotion tools.
           additional_info:
     - title: Delivery Management
+      slug: delivery-management
       apps:
         - website: http://www.captain.ai
           documentation: /apps/captain
@@ -459,6 +475,7 @@ content:
           description: Stuart offers businesses of all sizes, all sectors, on demand fast delivery services with a customised way of transporting goods.
           additional_info:
     - title: Loyalty and Marketing
+      slug: loyalty-and-marketing
       apps:
         - website: https://www.como.com
           documentation: /apps/como
@@ -497,6 +514,7 @@ content:
           title: UPXP
           description: UPXP is the first cryptocurrency dedicated to restaurateurs. UPXP rewards customers with cryptocurrency they can use in other businesses. Engage clients and avoid paying commissions to banks and third-parties.
     - title: Operations and Inventory
+      slug: operations-and-inventory
       apps:
         - website: https://get.apicbase.com
           documentation: /apps/apicbase
@@ -544,6 +562,7 @@ content:
           title: SOMM'IT
           description: SOMM'IT helps you manage your wine list. Sync your inventory with your EPOS to keep your wine list up to date. SOMM'IT includes a large wine library, and a dematerialised procurement system.
     - title: Other Apps
+      slug: other-apps
       apps:
         - website:
           documentation: /apps/catalog-manager

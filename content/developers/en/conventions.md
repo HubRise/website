@@ -210,15 +210,21 @@ Typical uses:
 
 ### Orders custom fields
 
+---
+
+**IMPORTANT NOTE:** Orders delivery custom fields have been deprecated in favor of the [Delivery resource](/developers/api/deliveries).
+
+---
+
 The following custom fields can be attached to an order to provide details about the delivery:
 
-| Custom field                    | Encoding                                                 | Description                                                                   |
-| ------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| `delivery.driver_assigned_time` | [Time](/developers/api/general-concepts#dates-and-times) | The time the driver was assigned the delivery.                                |
-| `delivery.driver_pickup_time`   | [Time](/developers/api/general-concepts#dates-and-times) | The time the driver is expected to pick up the delivery.                      |
-| `delivery.tracking_url`         | `string`                                                 | URL of the page showing the status of the delivery.                           |
-| `delivery.driver.first_name`    | `string`                                                 | Driver's first name.                                                          |
-| `delivery.driver.phone`         | `string`                                                 | Driver's phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164). |
+| Custom field                                                | Encoding                                                 | Description                                                                   |
+| ----------------------------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| `delivery.driver_assigned_time` <Label type="deprecated" /> | [Time](/developers/api/general-concepts#dates-and-times) | The time the driver was assigned the delivery.                                |
+| `delivery.driver_pickup_time` <Label type="deprecated" />   | [Time](/developers/api/general-concepts#dates-and-times) | The time the driver is expected to pick up the delivery.                      |
+| `delivery.tracking_url` <Label type="deprecated" />         | `string`                                                 | URL of the page showing the status of the delivery.                           |
+| `delivery.driver.first_name` <Label type="deprecated" />    | `string`                                                 | Driver's first name.                                                          |
+| `delivery.driver.phone` <Label type="deprecated" />         | `string`                                                 | Driver's phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164). |
 
 Typical workflow:
 

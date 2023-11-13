@@ -12,7 +12,7 @@ With HubRise, you can receive orders from Deliveroo, Just Eat, Uber Eats and oth
 
 This page describes the settings to use to connect food ordering platforms to AKK Softtech.
 
-For more information, check the documentation of these platforms in our [Apps page](/apps/food-ordering-platforms).
+For more information, check the documentation of these platforms in our [Apps page](/apps#food-ordering-platforms).
 
 ## Deliveroo
 
@@ -22,6 +22,7 @@ In the Deliveroo Bridge configuration page, use the following settings:
 
 | Section        | Name                                  | Ref code                                                     |
 | -------------- | ------------------------------------- | ------------------------------------------------------------ |
+| Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Received"`            |
 | Service types  | Deliveroo fulfilled ref code          | `Deliveroo` or any other value you want printed on receipts. |
 | Service types  | Restaurant fulfilled ref code         | Same as above                                                |
 | Service types  | Takeaway ref code                     | Same as above                                                |
@@ -32,7 +33,7 @@ In the Deliveroo Bridge configuration page, use the following settings:
 | Charges        | Bag fee ref code                      | (leave empty)                                                |
 | Payments       | Online payment ref code               | (leave empty)                                                |
 | Payments       | Cash payment ref code                 | (leave empty)                                                |
-| Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Received"`            |
+| Customers      | Duplicate phone access code in [...]  | Tick this box                                                |
 
 ## Just Eat
 
@@ -42,6 +43,7 @@ In the Just Eat Flyt Bridge configuration page, use the following settings:
 
 | Section        | Name                                     | Ref code                                                    |
 | -------------- | ---------------------------------------- | ----------------------------------------------------------- |
+| Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Received"`           |
 | Service types  | Just Eat delivery ref code               | `Just Eat` or any other value you want printed on receipts. |
 | Service types  | Restaurant delivery ref code             | Same as above                                               |
 | Service types  | Takeaway ref code                        | Same as above                                               |
@@ -54,7 +56,7 @@ In the Just Eat Flyt Bridge configuration page, use the following settings:
 | Charges        | Other charge ref code                    | (leave empty)                                               |
 | Payments       | Online payment ref code                  | (leave empty)                                               |
 | Payments       | Cash payment ref code                    | (leave empty)                                               |
-| Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Received"`           |
+| Customers      | Duplicate phone access code in [...]     | Tick this box                                               |
 
 ## Uber Eats
 
@@ -62,21 +64,22 @@ To receive Uber Eats orders in AKK Softtech, you first need to connect Uber Eats
 
 In the Uber Eats Bridge configuration page, use the following settings:
 
-| Section        | Name                                         | Ref code or value                                            |
-| -------------- | -------------------------------------------- | ------------------------------------------------------------ |
-| Service types  | Uber delivery ref code                       | `Uber Eats` or any other value you want printed on receipts. |
-| Service types  | Restaurant delivery ref code                 | Same as above                                                |
-| Service types  | Takeaway ref code                            | Same as above                                                |
-| Service types  | Eat-in ref code                              | Same as above                                                |
-| Service types  | Send orders delivered by Uber Eats as        | `collection orders`                                          |
-| Special items  | Disposable items ref code                    | Create a product in AKK Softtech and use its ref code. (\*)  |
-| Discounts      | Discount ref code                            | (leave empty)                                                |
-| Charges        | Delivery charge ref code                     | (leave empty)                                                |
-| Charges        | Small order fee ref code                     | (leave empty)                                                |
-| Charges        | Tip ref code                                 | (leave empty)                                                |
-| Payments       | Online payment ref code                      | (leave empty)                                                |
-| Payments       | Cash payment ref code                        | (leave empty)                                                |
-| Order statuses | Mark orders as Accepted                      | `when their HubRise status changes to "Received"`            |
-| Menu           | Enable preparation notes on individual items | Tick if you wish to enable them / Leave unchecked            |
+| Section        | Name                                  | Ref code or value                                            |
+| -------------- | ------------------------------------- | ------------------------------------------------------------ |
+| Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Received"`            |
+| Service types  | Uber delivery ref code                | `Uber Eats` or any other value you want printed on receipts. |
+| Service types  | Restaurant delivery ref code          | Same as above                                                |
+| Service types  | Takeaway ref code                     | Same as above                                                |
+| Service types  | Eat-in ref code                       | Same as above                                                |
+| Service types  | Send orders delivered by Uber Eats as | `collection orders`                                          |
+| Special items  | Disposable items ref code             | Create a product in AKK Softtech and use its ref code. (\*)  |
+| Discounts      | Discount ref code                     | (leave empty)                                                |
+| Charges        | Delivery charge ref code              | (leave empty)                                                |
+| Charges        | Small order fee ref code              | (leave empty)                                                |
+| Charges        | Tip ref code                          | (leave empty)                                                |
+| Payments       | Online payment ref code               | (leave empty)                                                |
+| Payments       | Cash payment ref code                 | (leave empty)                                                |
+| Customers      | Duplicate phone access code in [...]  | Tick this box                                                |
+| Catalog        | Enable customer notes on products     | Tick if you wish to enable them                              |
 
 (\*) Only applies if you offer disposable items, such as cutlery, napkins, etc.

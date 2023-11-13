@@ -13,6 +13,7 @@ content:
   all_apps: Toutes les apps
   categories:
     - title: Logiciels de caisse
+      slug: point-of-sales
       has_suggest_app: true
       apps:
         - website: https://3s-pos.com
@@ -31,6 +32,12 @@ content:
           logo: carrepos.png
           title: Carré POS
           description: Carré POS est un logiciel de caisse qui permet une prise de commande rapide et s'adapte à tous les types de commerces, dont les restaurants, les boulangeries, les boutiques, les coiffeurs ou encore les fleuristes.
+        - website: https://www.clyosystems.com
+          documentation: /apps/clyo
+          logo: clyo.png
+          title: Clyo Systems
+          description: Clyo Systems est une solution de caisse tout-en-un pour les restaurants, incluant la gestion des stocks, la fidélité, les écrans cuisine, la gestion du temps du personnel et la commande en ligne. Sa conception modulaire permet l'ajout de modules adaptés aux besoins spécifiques de chaque établissement.
+          additional_info: Intégration en cours.
         - website: https://www.epostechnologies.co.uk/
           documentation: /fr/apps/epos-technologies
           logo: epostechnologies.png
@@ -178,6 +185,12 @@ content:
           title: T.A.L.C Informatique
           description: T.A.L.C Informatique est une caisse adaptée aux besoins de la restauration, qui permet de gérer un ou plusieurs points de vente avec dispatching des coursiers, gestion du stock, des achats, géolocalisation des clients et envoi de SMS.
           additional_info:
+        - website: https://tasksoftware.com
+          documentation: /fr/apps/task-software
+          logo: task.png
+          title: TASK
+          description: TASK est un logiciel de caisse conçu pour les acteurs internationaux de l'hôtellerie et de la restauration. Il propose des rapports en temps réel avec fonctionnalités de Business Intelligence, la gestion des stocks, ainsi que des solutions de commande via kiosques, plateformes en ligne et applications mobiles. TASK est particulièrement adapté pour la gestion de la relation client, de la fidélisation et des promotions.
+          additional_info:
         - website: https://www.ultimapos.fr/
           documentation: /fr/apps/ultimapos
           logo: ultimapos.png
@@ -190,6 +203,7 @@ content:
           title: Zelty
           description: Zelty est une caisse enregistreuse sur iPad, offrant une solution complète et pensée pour les chaînes. La solution s'adapte cependant à tout type de restaurant.
     - title: Plateformes de livraison de repas
+      slug: food-ordering-platforms
       apps:
         - website: https://delicity.com
           documentation: /fr/apps/delicity
@@ -285,6 +299,7 @@ content:
           description: Uber Eats est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Disponible dans 45 pays and 6.000 villes.
           additional_info:
     - title: Commande en ligne
+      slug: online-ordering
       apps:
         - website: https://www.app4.co.uk/
           documentation: /fr/apps/app4
@@ -420,6 +435,7 @@ content:
           description: Zuplyit de AirTouchMedia est une solution de commande en ligne en marque blanche pour les métiers de bouche, combinée avec une solution de gestion de livreurs, et une suite d'outils de fidélisation et de promotion.
           additional_info:
     - title: Gestion de livreurs
+      slug: delivery-management
       apps:
         - website: http://www.captain.ai
           documentation: /fr/apps/captain
@@ -463,6 +479,7 @@ content:
           description: Stuart propose aux commerces de toutes tailles et de tous secteurs, des services de livraison rapide sur demande avec une méthode de transport personnalisée. Disponible dans 4 pays et 100 villes.
           additional_info:
     - title: Fidélité et marketing
+      slug: loyalty-and-marketing
       apps:
         - website: https://fr.como.com
           documentation: /fr/apps/como
@@ -506,6 +523,7 @@ content:
           title: UPXP
           description: UPXP est la première crypto-monnaie dédiée aux restaurateurs. La solution de fidélité UPXP récompense les clients avec une crypto-monnaie qu'ils peuvent utiliser dans d'autres commerces. Fidélisez les clients sans verser de commissions aux banques et aux solutions tierces.
     - title: Gestion et inventaire
+      slug: operations-and-inventory
       apps:
         - website: https://get.apicbase.com/fr/
           documentation: /fr/apps/apicbase
@@ -552,6 +570,7 @@ content:
           title: SOMM'IT
           description: SOMM'IT vous accompagne dans la gestion de votre carte des vins. Synchronisez votre inventaire avec votre EPOS, et éditez une carte des vins à jour. SOMM'IT inclut une large bibliothèque de vins, et un module de gestion des commandes fournisseurs.
     - title: Autres applications
+      slug: other-apps
       apps:
         - website:
           documentation: /fr/apps/catalog-manager

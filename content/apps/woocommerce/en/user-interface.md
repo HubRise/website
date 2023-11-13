@@ -67,7 +67,7 @@ From the actions page, you can push the catalog to WooCommerce. For more details
 
 To access the WooCommerce Bridge configuration page, click **Configuration** at the top of the screen.
 
-![WooCommerce Bridge configuration page](./images/005-woocommerce-configuration-page.png)
+![WooCommerce Bridge configuration page](./images/016-woocommerce-configuration-1.png)
 
 From this page, you will be able to customise the behaviour of WooCommerce Bridge. For more details, see [Configuration](/apps/woocommerce/configuration).
 

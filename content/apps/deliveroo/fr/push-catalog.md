@@ -125,7 +125,7 @@ Pour chaque `sku` d'un produit, Deliveroo Bridge envoie les informations suivant
 - `price` : la différence éventuelle de prix avec le produit principal.
 - `option_list_refs` : liste des options rattachées à la SKU.
 
-Pour plus d'informations sur les skus dans les catalogues HubRise, voir [Skus](/developers/api/catalog-management#skus) (en anglais).
+Pour plus d'informations sur les skus dans les catalogues HubRise, voir [Skus](/developers/api/catalogs#skus) (en anglais).
 
 ### Tags produit {#product-tags}
 

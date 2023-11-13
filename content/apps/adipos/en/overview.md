@@ -37,7 +37,7 @@ Connecting Adipos to HubRise allows your EPOS to:
 
 - Pull orders from HubRise, including order status.
 - Pull customer information from HubRise.
-- Push the menu into a HubRise catalog.
+- Push a catalog into HubRise.
 - Synchronise inventory with HubRise.
 
 Adipos can be connected to HubRise from the Adipos back office.

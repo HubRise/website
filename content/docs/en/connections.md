@@ -31,7 +31,7 @@ To connect a new app to your HubRise Account from the HubRise back office:
 1. Select **View available apps**.
 1. Select the **Location** to connect, or **All locations** if the app connects at the account level.
 1. Select the app you want to install. If the app is not on this list, check the app documentation in the HubRise [Apps](/apps) page.
-1. Check instructions for the specific app and click **Connect**. The app will open in a new browser window. If not, check your browser for ad-blockers, which might prevent the opening of a new window.
+1. Check instructions for the specific app and click **Connect**. The app will open in a new browser tab. If not, check your browser for ad-blockers, which might prevent the opening of a new window.
 1. Grant the app access to your HubRise data by clicking **Allow**.
 
 ---
@@ -42,7 +42,7 @@ To connect a new app to your HubRise Account from the HubRise back office:
 
 ## Open An App {#open-app}
 
-Some apps can be accessed from HubRise. If so, you can open the app by clicking on **CONNECTIONS** and selecting **Open** for the specific app. The app will open in a new browser window.
+Some apps can be accessed from HubRise. If so, you can open the app by clicking on **CONNECTIONS** and selecting **Open** for the specific app. The app will open in a new browser tab.
 
 ![HubRise Connection - Open an app](./images/011-2x-connections-open-app.png)
 
@@ -140,3 +140,15 @@ To unblock an app, follow these steps:
 
 1. Go to **CONNECTIONS**.
 2. Find the app you want, then click **Actions** > **Unblock**.
+
+## Reconnect an App
+
+To switch the catalog or customer list linked to an app, you can use the reconnect feature. This will allow you to select a new catalog or customer list.
+
+This feature is only available for apps with linked catalogs or customer lists.
+
+To reconnect an app, follow these steps:
+
+1. Go to **CONNECTIONS**.
+2. Find the app you want, then click **Actions** > **Reconnect**. This will open the authorisation page in a new browser tab.
+3. Select the new catalog or customer list, then click **Allow**.

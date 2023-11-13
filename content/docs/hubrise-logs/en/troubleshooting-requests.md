@@ -34,7 +34,7 @@ The error code 500 appears when the server that was supposed to receive the requ
 
 ## Order Status
 
-Orders go through a series of different statuses during their lifecycle. Normal values for the status include **new** when an order is first created, and **received** when it is received by the POS. For the complete list of possible values, see the [Developers Documentation](/developers/api/order-management#status).
+Orders go through a series of different statuses during their lifecycle. Normal values for the status include **new** when an order is first created, and **received** when it is received by the POS. For the complete list of possible values, see the [Developers Documentation](/developers/api/orders#status).
 
 In some cases, the status might indicate a problem with the order. The following table presents the possible error values.
 

@@ -30,7 +30,7 @@ Barratio runs on desktop PCs, tablets and smartphones.
 
 Once connected to HubRise, you can use Barratio to:
 
-- Pull the menu from a HubRise catalog.
+- Pull a catalog from HubRise.
 - Pull orders from HubRise.
 
 Barratio can be connected to HubRise via the Barratio back office.

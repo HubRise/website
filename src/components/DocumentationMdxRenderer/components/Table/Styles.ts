@@ -10,12 +10,12 @@ export const StyledTable = styled.table`
 
   thead,
   tbody {
-    border: 1px solid #f1f1f1;
+    border: 1px solid ${colors.borderLighter};
   }
 
   thead {
     color: ${colors.textDarkest};
-    background-color: #f8f8f8;
+    background-color: ${colors.backgroundLightest};
   }
 
   th {
@@ -33,7 +33,7 @@ export const StyledTable = styled.table`
     border: none;
 
     &:nth-child(2n) {
-      background-color: #f1f1f1;
+      background-color: ${colors.backgroundLight};
       border-bottom: 0;
     }
   }

@@ -6,7 +6,7 @@ import { DocMdFile } from "@utils/DocIndexer/types"
 import { iconSizes } from "@utils/styles"
 
 import Instructions from "./Instructions"
-import { StyledFeedback, Section, TitleWrapper, IconButton, Title } from "./Styles"
+import { Footer, TitleWrapper, IconButton, Title, FooterWrapper } from "./Styles"
 
 export interface FeedbackProps {
   mdFile: DocMdFile
@@ -17,19 +17,19 @@ const Feedback = ({ mdFile }: FeedbackProps): JSX.Element => {
   const { t } = useTranslation()
 
   return (
-    <StyledFeedback>
-      <Section>
+    <Footer>
+      <FooterWrapper>
         <TitleWrapper $isExpanded={isExpanded} onClick={() => setIsExpanded((v) => !v)}>
-          <IconButton $isExpanded={isExpanded}>
-            <Icon code={isExpanded ? "expand_less" : "expand_more"} size={iconSizes._20} />
+          <IconButton>
+            <Icon code={isExpanded ? "expand_less" : "expand_more"} size={iconSizes._20} />{" "}
           </IconButton>
 
           <Title>{t(`misc.feedback.documentation.title`)}</Title>
         </TitleWrapper>
-      </Section>
 
-      {isExpanded && <Instructions mdFile={mdFile} />}
-    </StyledFeedback>
+        {isExpanded && <Instructions mdFile={mdFile} />}
+      </FooterWrapper>
+    </Footer>
   )
 }
 

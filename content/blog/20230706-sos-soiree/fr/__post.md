@@ -9,7 +9,7 @@ meta:
 excerpt: Pour regrouper ses commandes, dont celles de Uber Eats et Deliveroo, Théo Vandemeulebroucke, de SOS Soirée, a intégré son logiciel de caisse maison à HubRise en quasi autonomie complète. Retour sur son expérience.
 ---
 
-**Qui est mieux placé que nos utilisateurs pour vous parler d'intégration ? Nous donnons la parole à Théo Vandemeulebroucke - CEO et co-fondateur de SOS Soirée - qui vient de finaliser son intégration avec HubRise, en (presque) totale autonomie.**
+**Qui est mieux placé que nos partenaires techniques pour vous parler d'intégration ? Nous donnons la parole à Théo Vandemeulebroucke - CEO et co-fondateur de SOS Soirée - qui vient de finaliser son intégration avec HubRise, en (presque) totale autonomie.**
 
 **Aidé de notre API ouverte et publique, de ses compétences en informatique et de notre documentation technique, il a troqué sa casquette de CEO pour celle de développeur. Retour sur son expérience.**
 
@@ -29,7 +29,7 @@ Nous nous sommes rapprochés d'Uber Eats et de Deliveroo, mais ni l'un ni l'autr
 
 ## Avez-vous comparé HubRise avec d'autres solutions et pourquoi avez-vous finalement opté pour HubRise ?
 
-Au cours de mes recherches, j'ai identifié deux entreprises : Deliverect et HubRise ; après avoir échangé avec chacune d'elles, j'ai assez rapidement fait mon choix, et pas seulement pour une question de prix. J'ai trouvé l'approche de HubRise particulièrement intéressante : c'est une boite française créée par des informaticiens, une entreprise à taille humaine avec l'écoute et la flexibilité que ça implique. Dès les premiers échanges, j'ai senti qu'on allait vite et bien se comprendre.
+Au cours de mes recherches, j'ai identifié deux entreprises : Deliverect et HubRise ; après avoir échangé avec chacune d'elles, j'ai assez rapidement fait mon choix, et pas seulement pour une question de prix. J'ai trouvé l'approche de HubRise particulièrement intéressante : c'est une boite française créée par un informaticien, avec une entreprise à taille humaine avec l'écoute et la flexibilité que ça implique. Dès les premiers échanges, j'ai senti qu'on allait vite et bien se comprendre.
 
 ## Comment s'est déroulé le processus d'intégration avec HubRise, que vous avez réalisé en quasi toute autonomie ?
 

@@ -1,10 +1,10 @@
 ---
-title: Order Management
-path_override: order-management
+title: Orders
+path_override: orders
 position: 4
 layout: documentation
 meta:
-  title: Order Management | API | HubRise
+  title: Orders | API | HubRise
   description:
 ---
 
@@ -170,6 +170,7 @@ All the fields of an order creation request are returned, plus a few more:
 | `created_by`  | string                                                    | Name of the API client that created the order.                               |
 | `total`       | [Money](/developers/api/general-concepts#monetary-values) | Order total amount. Calculated by HubRise from items, charges and discounts. |
 | `customer`    | [Customer](#customer)                                     | Customer details at the time of the order creation.                          |
+| `delivery`    | [Delivery](#delivery)                                     | An optional delivery attached to the order.                                  |
 
 **Note:** `total_discrepancy` and `payment_discrepancy` fields are also returned, but these fields are deprecated and their values should not be used.
 
@@ -189,8 +190,8 @@ In addition, each `item`, `charge`, `payment` and `discount` is returned with a 
   "location_id": "3r4s3-1",
   "ref": "17654321",
   "private_ref": null,
-  "status": "new",
-  "service_type": "collection",
+  "status": "in_delivery",
+  "service_type": "delivery",
   "service_type_ref": null,
   "created_at": "2021-06-24T17:07:53+02:00",
   "created_by": "MyClient",
@@ -327,6 +328,21 @@ In addition, each `item`, `charge`, `payment` and `discount` is returned with a 
     "last_order_date": "2021-06-24T17:07:53+02:00",
     "loyalty_cards": [],
     "custom_fields": {}
+  },
+  "delivery": {
+    "carrier": "Uber Direct",
+    "carrier_ref": "uber",
+    "ref": "1Z12345E0291980793",
+    "status": "pickup_approaching",
+    "fee": "4.00 EUR",
+    "estimated_pickup_at": "2021-06-24T19:01:00+02:00",
+    "estimated_dropoff_at": "2021-06-24T19:07:00+02:00",
+    "tracking_url": "https://uber.com/track/1Z12345E0291980793",
+    "driver_name": "John",
+    "driver_phone": "+33612345678",
+    "driver_phone_access_code": "1234",
+    "driver_latitude": "48.856614",
+    "driver_longitude": "2.3522219"
   },
   "loyalty_operations": [],
   "custom_fields": {}
@@ -956,7 +972,17 @@ If payments are omitted, the order should be considered as unpaid.
 ]
 ```
 
-## 11. Order Loyalty Operations {#loyalty-operations}
+## 11. Order Delivery {#delivery}
+
+A delivery can be attached to an order whose service type is `delivery`. This is used for tracking delivery status, pickup and drop-off times, driver details and other details. For more information about attaching and updating deliveries, see [Deliveries](/developers/api/deliveries).
+
+An order with an attached delivery includes a `delivery` field. This field contains the same fields as the [Delivery resource](/developers/api/deliveries#delivery-resource), except for the `driver_latitude` and `driver_longitude` fields.
+
+Attaching or updating a delivery triggers an `order.update` webhook, which includes the `delivery` field in its payload.
+
+The `driver_latitude` and `driver_longitude` fields are typically updated at a high frequency, but intentionally do not trigger `order.update` webhooks to minimise the number of events for subscribers. To monitor these fields, opt for `delivery.update` webhooks.
+
+## 12. Order Loyalty Operations {#loyalty-operations}
 
 Add or remove points to a customer's loyalty card(s).
 
@@ -989,7 +1015,7 @@ Each loyalty operation triggers the automatic recalculation of the loyalty card 
 ]
 ```
 
-## 12. Tax Rates {#tax-rates}
+## 13. Tax Rates {#tax-rates}
 
 A `tax_rate` can be specified for each order item and order charge.
 

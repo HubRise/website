@@ -27,12 +27,10 @@ export type RouteNameDocumentation =
   | "developers_page"
   | "docs_page"
   | "legal_page"
-export type RouteNameDynamic = "apps_category" | "blog_archive" | RouteNameDocumentation
+export type RouteNameDynamic = "blog_archive" | RouteNameDocumentation
 export type RouteName = RouteNameStatic | RouteNameDynamic
 
-export type RouteParamsDynamic<R extends RouteNameDynamic> = R extends "apps_category"
-  ? { categoryTitle: string }
-  : R extends "blog_archive"
+export type RouteParamsDynamic<R extends RouteNameDynamic> = R extends "blog_archive"
   ? { year: number }
   : R extends RouteNameDocumentation
   ? { contentDirName: ContentDirName; basename: string }

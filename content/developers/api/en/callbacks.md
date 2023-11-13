@@ -156,20 +156,22 @@ Creates a callback if none exists, replace the existing callback otherwise.
 | `url`    | string | The URL called when an event occurs. Leave it null for a passive callback.                   |
 | `events` | map    | A map with the keys being _resource type_ and the values being the *event type*s to monitor. |
 
-- _resource type_ is one of: `order`, `customer`, `location`, `catalog` and `inventory`.
-- _event type_ is one of: `create`, `update` and `patch`.
+- _resource type_ is one of: `catalog`, `customer`, `delivery`, `inventory`, `location` and `order`.
+- _event type_ is one of: `create`, `patch` and `update`.
 
-The allowed combinations are:
+The allowed combinations of resource and event types are:
 
-- `order.create`
-- `order.update`
-- `customer.create`
-- `customer.update`
-- `location.update`
 - `catalog.create`
 - `catalog.update`
+- `customer.create`
+- `customer.update`
+- `delivery.create`
+- `delivery.update`
 - `inventory.patch`
 - `inventory.update`
+- `location.update`
+- `order.create`
+- `order.update`
 
 ##### Example request:
 
@@ -227,8 +229,8 @@ Returns an event by its id.
 The returned event contains:
 
 - The id of the event.
-- The resource type, eg. `order`, `customer`, `catalog`, ...
-- The event type, which is one of: `create`, `update`, `patch`, and `delete`.
+- The resource type, for example: `order` or `customer`.
+- The event type, for example: `create`.
 - The time when the resource modification occurred.
 - The ids of the affected resource and its parent resources.
 - The state of the resource, before and/or the modification, when applicable.
