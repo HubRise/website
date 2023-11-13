@@ -27,7 +27,7 @@ Deliveroo requires you to acknowledge every order you receive. In this section, 
 
 Service types such as delivery by Deliveroo, restaurant delivery or takeaway might require the corresponding ref code entry. Refer to your EPOS documentation on the HubRise website to verify.
 
-Additionally, from this section you can choose to mark Deliveroo orders as delivery orders or collection orders. This is useful if you have specific business requirements for financial reporting.
+Additionally, from this section, you can choose to categorise orders fulfilled by Deliveroo as either delivery or collection orders. Orders fulfilled by the restaurant fleet are always marked as delivery orders. This feature is useful to address specific business requirements or to differentiate these orders in financial reports.
 
 ### Discounts
 
