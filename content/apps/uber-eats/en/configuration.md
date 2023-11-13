@@ -28,7 +28,7 @@ Select from the dropdown menu the HubRise status which should make the order acc
 
 Service types such as Uber Eats delivery, restaurant delivery, takeaway, or eat-in might require the corresponding ref code entry. Refer to your EPOS documentation on the HubRise website to verify your EPOS requirements.
 
-Additionally, from this section you can choose to mark delivery orders as delivery orders or collection orders for other connected apps to process them as needed. Restaurant delivery orders are always marked as delivery orders. This is useful if you have specific business workflow requirements or if you need to differentiate these orders for financial reporting.
+Additionally, from this section, you can choose to categorise orders fulfilled by Uber Eats as either delivery or collection orders. Orders fulfilled by the restaurant fleet are always marked as delivery orders. This feature is useful to address specific business requirements or to differentiate these orders in financial reports.
 
 ### Special Items
 
