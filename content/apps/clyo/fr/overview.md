@@ -7,12 +7,21 @@ meta:
   title: Présentation générale | Clyo | HubRise
   description: Présentation générale de Clyo, les raisons de connecter Clyo à HubRise et les fonctionnalités de l'intégration avec HubRise.
 gallery:
+  - __gallery-001.png
+  - __gallery-002.jpg
 app_info:
   category: Logiciels de caisse
   availability: France, Suisse
   website: https://www.clyosystems.com
-  contact: contact@support@clyosystems / +33 1 84 25 27 77
+  contact: contact@clyosystems.com / +33 1 84 25 27 77
 ---
+
+---
+
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration est en cours de rédaction.
+
+---
+
 ## Description
 
 Clyo Systems est une plateforme logicielle permettant une gestion centralisée. Conçue pour les restaurants et commerces, elle facilite divers aspects opérationnels à travers une seule interface. Ce logiciel de caisse permet de consolider les fonctionnalités de gestion des ventes, de contrôle des stocks, de programmes de fidélité, et d'affichage des commandes en cuisine. Il inclut également les fonctions de pointage pour le personnel, ainsi qu'une solution de commandes en ligne et de service Click & Collect.
