@@ -5,15 +5,15 @@ date: 2023-10-05
 author: Antoine Monnier
 meta:
   title: Variantes de catalogue | Blog | HubRise
-  description: HubRise prend désormais en charge les variantes de catalogue. Grâce à cette nouvelle fonctionnalité, les entreprises peuvent gérer un seul catalogue sur plusieurs canaux et points de vente, tout en conservant la possibilité de personnaliser les prix et la disponibilité des SKU, options et promotions pour chaque canal et point de vente.
-excerpt: "Nouveauté : les variantes de catalogue. Grâce à cette nouvelle fonctionnalité, vous pouvez gérer un seul catalogue sur plusieurs canaux et points de vente, tout en conservant la possibilité de personnaliser les prix et la disponibilité pour chaque canal et point de vente."
+  description: HubRise prend désormais en charge les variantes de catalogue. Grâce à cette nouvelle fonctionnalité, vous pouvez utiliser un seul catalogue sur plusieurs canaux et points de vente, tout en conservant la possibilité de personnaliser les prix et la disponibilité des SKU, options et promotions pour chaque canal et point de vente.
+excerpt: "Nouveauté : les variantes de catalogue. Grâce à cette nouvelle fonctionnalité, vous pouvez utiliser un seul catalogue avec plusieurs canaux et points de vente, tout en conservant la possibilité de personnaliser les prix et la disponibilité pour chaque canal et point de vente."
 ---
 
 [//]: # "Photo credits: https://pixabay.com/vectors/watercolor-yellow-orange-red-green-4111953/"
 
-Nous avons lancé les variantes de catalogue, qui permettent de gérer un seul catalogue sur plusieurs canaux et points de vente, tout en conservant la possibilité de personnaliser les prix et la disponibilité pour chaque canal et point de vente. Cette fonctionnalité vous fera non seulement gagner du temps, mais elle garantira également la cohérence et la précision sur l'ensemble de vos canaux de vente.
+Nous avons lancé les variantes de catalogue, qui permettent d'utiliser un seul catalogue sur plusieurs canaux et points de vente, tout en conservant la possibilité de personnaliser les prix et la disponibilité pour chaque canal et point de vente. Cette fonctionnalité vous fera non seulement gagner du temps, mais elle garantira aussi la cohérence sur l'ensemble de vos canaux de vente.
 
-Dans cet article de blog, nous évoquons ce que sont les variantes de catalogue, les modifications de l'API pour les développeurs et comment les intégrations existantes ont été mises à jour.
+Dans cet article de blog, nous évoquons ce que sont les variantes de catalogue, les modifications de l'API pour les développeurs et comment nos intégrations existantes ont été mises à jour.
 
 ## En quoi consistent les variantes de catalogue ?
 
@@ -26,7 +26,7 @@ Vous pouvez définir autant de variantes que vous le souhaitez dans un catalogue
 
 Par exemple, si vous souhaitez proposer un prix de pizza différent sur les plateformes de livraison de repas par rapport à votre site internet, vous pouvez créer une variante `Plateformes de livraison` et définir des dépassements de prix pour les SKU et les options qui doivent avoir un tarif différent. De même, vous pouvez désactiver des promotions ou options pour certaines variantes en utilisant des restrictions.
 
-Chaque variante a un nom descriptif et une référence unique. Dans les applications qui utilisent le catalogue, les variantes seront généralement référencées par leur nom, et non par leur référence. Les références utilisées n'ont donc pas une grande importance. Il peut s'agir d'`1`, `2`, `3`, etc., ou de `Plateformes de livraison`, `Mon site`, etc.
+Chaque variante a un nom descriptif et un code ref unique. Dans les applications qui utilisent le catalogue, les variantes seront généralement référencées par leur nom, et non par leur code ref. Les code refs utilisés n'ont donc pas une grande importance. Il peut s'agir d'`1`, `2`, `3`, etc., ou de `Plateformes de livraison`, `Mon site`, etc.
 
 L'association entre un canal/point de vente spécifique et une variante est réalisée en dehors du catalogue, dans les applications utilisant le catalogue. Chaque variante peut donc être utilisée dans plusieurs contextes, ce qui évite d'avoir à créer une variante pour chaque combinaison canal/point de vente.
 
@@ -72,11 +72,11 @@ Les variantes définies peuvent être utilisées dans les tableaux `price_overri
         "category_ref": "pizza",
         "skus": [
           {
-            "price": "6,80 EUR",
+            "price": "6.80 EUR",
             "price_overrides": [
               {
                 "variant_refs": ["1"],
-                "price": "8,00 EUR"
+                "price": "8.00 EUR"
               }
             ]
           }
@@ -86,7 +86,7 @@ Les variantes définies peuvent être utilisées dans les tableaux `price_overri
         "name": "Expresso",
         "category_ref": "boissons",
         "skus": {
-          "price": "1,50 EUR",
+          "price": "1.50 EUR",
           "restrictions": {
             "variant_refs": ["2"]
           }
@@ -102,13 +102,15 @@ Dans cet exemple :
 - Le prix de la pizza "Reine jambon" est de 6,80 € par défaut, mais il passe à 8,00 € lorsqu'il est commandé via les plateformes de livraison de repas.
 - L'article "Expresso" est uniquement disponible lorsqu'il est commandé via le kiosque.
 
-Les modifications apportées à l'API sont visibles dans notre [documentation sur l'API ](/developers/api/catalogs) et dans [Postman collection](https://drive.google.com/drive/folders/1fn5u-4sY0-bnrxJY9RFPvpCu0bANGNBd?usp=sharing).
+Si vous implémentez la prise en charge de `restrictions.variant_refs`, vous devez aussi tenir compte du champ `restrictions.enabled`. Lorsque ce champ est présent et défini sur `false`, cela signifie que l'article doit être exclu, quelles que soient les autres restrictions.
 
-***
+Les modifications apportées à l'API sont visibles dans notre [documentation sur l'API ](/developers/api/catalogs) et dans notre [collection Postman](https://drive.google.com/drive/folders/1fn5u-4sY0-bnrxJY9RFPvpCu0bANGNBd?usp=sharing).
 
-**REMARQUE IMPORTANTE :** Les champs `service_types` et `service_type_refs` dans `restrictions` et `price_overrides` sont obsolètes. Ils continueront à fonctionner encore un peu, mais nous vous recommandons de passer à `variant_refs` dès que possible.
+---
 
-***
+**REMARQUE IMPORTANTE :** Les champs `service_types` et `service_type_refs` dans `restrictions` et `price_overrides` sont obsolètes. Ils continueront à fonctionner encore un peu, mais nous vous recommandons de passer à `variant_refs` et `enabled` dès que possible.
+
+---
 
 ## Mise à jour de Catalog Manager
 

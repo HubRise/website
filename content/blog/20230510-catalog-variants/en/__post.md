@@ -5,13 +5,13 @@ date: 2023-05-10
 author: Antoine Monnier
 meta:
   title: Catalog variants | Blog | HubRise
-  description: HubRise now supports catalog variants. This new feature allows businesses to manage a single catalog across multiple channels and locations while maintaining the flexibility to customize prices and availability of SKUs, options, and deals for each channel and location.
-excerpt: We've introduced catalog variants. This new feature allows you to manage a single catalog across multiple sales channels and locations, while maintaining the flexibility to customise prices and availability for each channel and location.
+  description: HubRise now supports catalog variants. This new feature allows businesses to use a single catalog across multiple channels and locations while maintaining the flexibility to customize prices and availability of SKUs, options, and deals for each channel and location.
+excerpt: We've introduced catalog variants. This new feature allows you to use a single catalog across multiple sales channels and locations, while maintaining the flexibility to customise prices and availability for each channel and location.
 ---
 
 [//]: # "Photo credits: https://pixabay.com/vectors/watercolor-yellow-orange-red-green-4111953/"
 
-We've introduced catalog variants. This new feature allows you to manage a single catalog across multiple sales channels and locations, while maintaining the flexibility to customise prices and availability for each channel and location. This feature will not only save you time, but also ensure consistency and accuracy across your sales channels.
+We've introduced catalog variants. This new feature allows you to use a single catalog across multiple sales channels and locations, while maintaining the flexibility to customise prices and availability for each channel and location. This feature will not only save you time, but also ensure consistency across your sales channels.
 
 In this blog post, we'll explore what catalog variants are, API changes for developers, and how existing integrations have been updated.
 
@@ -26,7 +26,7 @@ You can define any number of variants in a catalog. For each variant, you can sp
 
 For example, if you want to offer a different price for a pizza on food platforms compared to your website, you can create a `Food platforms` variant and set price overrides for the SKUs and options which should have a different price. Similarly, you can disable some deals or options for some variants by using restrictions.
 
-Each variant has a descriptive name, and a unique reference. In the apps using the catalog, variants will typically be referenced by their name, and not by their reference. Therefore, the actual references do not matter, so you can use `1`, `2`, `3`, etc., or `food_platforms`, `website`, etc.
+Each variant has a descriptive name, and a unique ref code. In the apps using the catalog, variants will typically be referenced by their name, and not by their ref code. Therefore, the actual ref codes do not matter, so you can use `1`, `2`, `3`, etc., or `food_platforms`, `website`, etc.
 
 The mapping between a specific channel/location and a variant is done outside the catalog, in the apps using the catalog. Each variant can therefore be used in multiple contexts, which avoids having to create one variant for each channel/location combination.
 
@@ -102,11 +102,13 @@ In this example:
 - The "Regina ham" pizza has a default price of €6.80, but the price is overridden to €8.00 when ordered through food platforms.
 - "Expresso" is only available when ordered through the kiosk.
 
+If you're implementing support for `restrictions.variant_refs`, you should also consider the `restrictions.enabled` field. If this field is present and set to `false`, it means that the item should be excluded, regardless of the other restrictions.
+
 The API changes have been reflected in our [API documentation](/developers/api/catalogs) and [Postman collection](https://drive.google.com/drive/folders/1fn5u-4sY0-bnrxJY9RFPvpCu0bANGNBd?usp=sharing).
 
 ---
 
-**IMPORTANT NOTE:** The `service_types` and `service_type_refs` fields in `restrictions` and `price_overrides` have been deprecated. They will continue to work for a little while, but we recommend migrating to `variant_refs` as soon as possible.
+**IMPORTANT NOTE:** The `service_types` and `service_type_refs` fields in `restrictions` and `price_overrides` have been deprecated. They will continue to work for a little while, but we recommend migrating to `variant_refs` and `enabled` as soon as possible.
 
 ---
 
