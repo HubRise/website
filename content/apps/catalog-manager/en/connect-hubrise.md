@@ -5,7 +5,7 @@ position: 2
 layout: documentation
 meta:
   title: Connect to HubRise | Catalog Manager | HubRise
-  description: Instructions on connecting Catalog Manager with HubRise to synchronise catalogs from your ePOS and other systems.
+  description: Instructions on connecting Catalog Manager with HubRise to synchronise catalogs from your EPOS and other systems.
 ---
 
 ---
