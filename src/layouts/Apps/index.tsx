@@ -4,6 +4,7 @@ import * as React from "react"
 import { AppsYaml } from "@layouts/Apps/types"
 import { ContentImage } from "@utils/contentImage"
 import { Language } from "@utils/locales"
+import { doesSearchTextMatch } from "@utils/search"
 
 import AppGroup from "./AppGroup"
 import Developer from "./Developer"
@@ -36,7 +37,7 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
       return {
         title,
         slug,
-        apps: apps.filter((app) => app.title.toLowerCase().includes(filterSearch.toLowerCase())),
+        apps: apps.filter((app) => doesSearchTextMatch(app.title, filterSearch)),
         has_suggest_app,
       }
     })

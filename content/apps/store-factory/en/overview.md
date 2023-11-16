@@ -35,7 +35,7 @@ Once connected to HubRise, Store Factory can be used to:
 
 - Push orders into HubRise, including order status.
 - Push customer information into HubRise.
-- Pull the menu from a HubRise catalog.
+- Pull a catalog from HubRise.
 
 Store Factory can be connected to HubRise via the Store Factory support line.
 

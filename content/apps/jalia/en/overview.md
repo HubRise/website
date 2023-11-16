@@ -52,7 +52,7 @@ Connecting Jalia to HubRise allows your EPOS to:
 
 - Pull orders from HubRise, including order status.
 - Pull customer information from HubRise.
-- Push the menu into a HubRise catalog.
+- Push a catalog into HubRise.
 
 Jalia can be connected to HubRise from the Jalia back office.
 

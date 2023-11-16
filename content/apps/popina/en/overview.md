@@ -18,7 +18,7 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: Full documentation of this integration is in progress.
+**IMPORTANT NOTE**: Full documentation available <Link href="/fr/apps/popina" addLocalePrefix={false}>in French only</Link>.
 
 ---
 
@@ -48,7 +48,7 @@ Connecting Popina to HubRise allows your EPOS to:
 
 - Pull orders from HubRise, including order status.
 - Pull customer information from HubRise.
-- Push the menu into a HubRise catalog.
+- Push a catalog into HubRise.
 
 Popina can be connected to HubRise from the Popina back office.
 

@@ -30,7 +30,7 @@ You will also be redirected to the configuration page when you connect Smood to 
 
 Service types such as Smood **Platform delivery**, **Restaurant delivery**, or **Takeaway**, might require the corresponding ref code entry. To verify, refer to your EPOS documentation on the HubRise website [Apps page](/apps). For more information, see the **Terminology** paragraph, section [Smood Service Types](/apps/smood/terminology#smood-service-types).
 
-Additionally, from this section you can choose to mark Smood delivery orders as delivery orders or collection orders for other connected apps to process them as needed. Restaurant delivery orders are always marked as delivery orders.
+Additionally, from this section, you can choose to categorise orders fulfilled by Smood as either delivery or collection orders. Orders fulfilled by the restaurant fleet are always marked as delivery orders. This feature is useful to address specific business requirements or to differentiate these orders in financial reports.
 
 ### Discounts {#discounts}
 
