@@ -12,7 +12,7 @@ To receive LivePepper orders correctly on your EPOS, you need to configure ref c
 
 This page explains how to configure ref codes in LivePepper. Some EPOS solutions offer the ability to export the menu to HubRise, allowing you to populate your LivePepper menu automatically with the correct ref codes. For more details, see [Pull the Catalog](/apps/livepepper/pull-catalog).
 
-## Products and Skus
+## Products and SKUs
 
 Each product has one or more skus. Each sku has a ref code that must be mapped to the corresponding item in your EPOS.
 
