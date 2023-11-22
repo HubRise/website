@@ -34,4 +34,4 @@ Pour créer des commandes de test avec LivePepper :
 12. Dans HubRise, cliquez sur **COMMANDES**. Votre nouvelle commande doit être présente.
 13. Cliquez sur la nouvelle commande pour vérifier que les informations sont exactes.
 
-Pour plus d'informations sur la configuration de LivePepper avec HubRise, voir [Connexion à HubRise](/apps/livepepper/connect-hubrise). Pour obtenir de l'aide pour le dépannage de la connexion LivePepper-HubRise, voir [Dépannage](/apps/livepepper/troubleshooting).
+Pour plus d'informations sur la connection de LivePepper avec HubRise, voir [Connexion à HubRise](/apps/livepepper/connect-hubrise). Pour obtenir de l'aide pour le dépannage de la connexion LivePepper-HubRise, voir [Dépannage](/apps/livepepper/troubleshooting).

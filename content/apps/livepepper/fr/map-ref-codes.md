@@ -8,19 +8,19 @@ meta:
   description: Instructions pour associer les codes ref des produits LivePepper à d'autres apps après avoir connecté le logiciel de caisse à HubRise. Connectez les apps et synchronisez vos données.
 ---
 
-Pour recevoir correctement les commandes LivePepper dans votre logiciel de caisse, vous devez configurer des codes ref pour chaque article du catalogue, y compris les garnitures, les options, les ingrédients, les SKU et les promotions. Dans certains cas, le logiciel de caisse nécessite également des codes ref pour les moyens de paiement, les types de service et les frais de livraison. Pour plus de détails, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
+Pour recevoir correctement les commandes LivePepper dans votre logiciel de caisse, vous devez configurer des codes ref pour chaque article du catalogue, y compris les suppléments, les options, les ingrédients composants vos recettes, les variantes et les promotions. Dans certains cas, le logiciel de caisse nécessite également des codes ref pour les moyens de paiement, les types de service et les frais de livraison. Pour plus de détails, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
 
 Cette page explique comment configurer manuellement les codes ref dans LivePepper. Certains logiciels de caisse offrent la possibilité d'exporter leur menu vers HubRise, ce qui permet de renseigner automatiquement les bons codes ref des produits LivePepper. Pour plus de détails, voir [Récupérer le catalogue](/apps/livepepper/pull-catalog).
 
-## Produits et SKU
+## Produits et SKUs
 
-Chaque produit a un ou plusieurs SKU. Chaque SKU dispose d'un code ref qui doit être associé à l'article correspondant dans votre logiciel de caisse.
+Chaque produit a un ou plusieurs SKU. Chaque variante dispose d'un code ref qui doit être associé à l'article correspondant dans votre logiciel de caisse.
 
-Pour mettre à jour le code ref pour chaque SKU, suivez ces étapes :
+Pour mettre à jour le code ref pour chaque variante, suivez ces étapes :
 
 1. Dans votre back-office LivePepper, sélectionnez **Mon menu** > **Produits**.
 2. Sélectionnez le produit à mettre à jour.
-3. Pour chaque SKU dans la section **Prix & Disponibilité**, mettez à jour le code ref sous la colonne **Code logiciel**.
+3. Pour chaque variante dans la section **Prix & Disponibilité**, mettez à jour le code ref sous la colonne **Code logiciel**.
 4. Cliquez sur **Enregistrer** pour confirmer.
 
 ![Association de codes ref pour SKU](./images/001-livepepper-sku-ref-codes.png)
@@ -36,7 +36,7 @@ Le tableau suivant fournit un aperçu de toutes ces fonctionnalités.
 | Nom        | Description                                                                           | Niveau de définition | Exemple                                                    |
 | ---------- | ------------------------------------------------------------------------------------- | -------------------- | ---------------------------------------------------------- |
 | Variante   | Choix différent pour un produit                                                       | Catégorie et Produit | Choisir une pizza avec une croûte fine ou pétrie à la main |
-| Garniture  | Suppléments non disponibles par défaut que les clients peuvent ajouter à leur produit | Catégorie            | Ajouter des champignons sur une pizza                      |
+| Supplément | Suppléments non disponibles par défaut que les clients peuvent ajouter à leur produit | Catégorie            | Ajouter des champignons sur une pizza                      |
 | Ingrédient | Ingrédient présent par défaut qui peut être retiré du produit                         | Produit              | Retirer des cornichons d'un cheeseburger                   |
 | Option     | Service ou article optionnel ajouté au produit                                        | Catégorie            | Demander de couper la pizza                                |
 
@@ -44,7 +44,7 @@ Pour mettre à jour le code ref des suppléments ou des variantes définis au ni
 
 1. Sélectionnez le produit.
 2. Dans la section **Personnalisation**, sélectionnez l'élément que vous souhaitez mettre à jour.
-   ![Association de codes ref - Ingrédients](./images/015-product-ingredients.png)
+   ![Association de codes ref - Composition](./images/015-product-ingredients.png)
 3. Si l'ingrédient ou la variante sont utilisés dans d'autres produits et qu'ils partagent le même code ref, vous pouvez mettre à jour le code ref partout, en suivant ces étapes supplémentaires.
    - Dans la section **Recopie rapide**, indiquez si la modification s'applique au **Menu entier** ou à tous les produits d'une catégorie.
    - Sélectionnez **Utiliser les codes logiciel ci-dessus**.
