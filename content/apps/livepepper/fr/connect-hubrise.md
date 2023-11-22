@@ -34,7 +34,7 @@ Si vous n'avez pas de compte HubRise, suivez ces étapes :
 Si vous avez déjà un compte HubRise, suivez ces étapes :
 
 1. Connectez-vous à votre back-office LivePepper.
-2. Sélectionnez **Paramètres avancés > Modules**.
+2. Sélectionnez **Paramètres avancés** > **Modules**.
 3. Sous HubRise, cochez la case **Partager vos données avec d'autres applications**.
 4. Cliquez sur **Aller à votre compte HubRise**.
 5. Si vous y êtes invité, connectez-vous à votre profil utilisateur HubRise existant.

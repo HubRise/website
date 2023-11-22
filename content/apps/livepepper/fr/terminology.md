@@ -10,13 +10,13 @@ meta:
 
 HubRise et LivePepper utilisent chacun leur propre terminologie. Un même concept peut donc exister sous une désignation différente dans chaque solution. Le tableau de correspondance ci-dessous présente ces différences.
 
-| LivePepper                             | HubRise        | Description                                                      |
-| -------------------------------------- | -------------- | ---------------------------------------------------------------- |
-| Compte                                 | ID utilisateur | Identifiant unique des responsables de restaurant.               |
-| Point de vente                         | Point de vente | Le restaurant proprement dit.                                    |
-| Variante                               | SKU            | Variante d'un produit, par exemple la taille ou le type de pâte. |
-| Promotion sur des articles spécifiques | Promotion      | Offre spéciale sur des articles spécifiques.                     |
-| Promotion sur la commande              | Remise         | Offre spéciale appliquée à la commande.                          |
-| Menu                                   | Catalogue      | Liste de produits.                                               |
-| Code logiciel                          | Code ref       | Code produit.                                                    |
-| Site                                   | Compte         | Appellation commerciale.                                         |
+| LivePepper                             | HubRise            | Description                                                      |
+| -------------------------------------- | ------------------ | ---------------------------------------------------------------- |
+| Compte                                 | Profil utilisateur | Identifiant unique des responsables de restaurant.               |
+| Point de vente                         | Point de vente     | Le restaurant proprement dit.                                    |
+| Variante                               | SKU                | Variante d'un produit, par exemple la taille ou le type de pâte. |
+| Promotion sur des articles spécifiques | Promotion          | Offre spéciale sur des articles spécifiques.                     |
+| Promotion sur la commande              | Remise             | Offre spéciale appliquée à la commande.                          |
+| Menu                                   | Catalogue          | Liste de produits.                                               |
+| Code logiciel                          | Code ref           | Code produit.                                                    |
+| Site                                   | Compte             | Appellation commerciale.                                         |

@@ -8,7 +8,7 @@ meta:
   description: Découvrez comment récupérer votre catalogue HubRise dans LivePepper.
 ---
 
-Pour que les commandes LivePepper soient traitées par votre logiciel de caisse, il est essentiel d'attribuer des codes ref à chaque article du menu, y compris les SKU, les garnitures, les options, les ingrédients et les promotions.
+Pour que les commandes LivePepper soient traitées par votre logiciel de caisse, il est essentiel d'attribuer des codes ref à chaque article du menu, y compris les variantes, les suppléments, les options, les compositions et les promotions.
 
 Certains logiciels de caisse permettent d'exporter des menus vers HubRise. Votre menu LivePepper est ainsi alimenté automatiquement avec les bons codes ref. Cependant, si votre logiciel de caisse ne prend pas en charge l'envoi de menu vers HubRise, vous devez associer manuellement les codes ref, comme indiqué dans la section [Associer les codes ref](/apps/livepepper/map-ref-codes). Pour le vérifier, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
 

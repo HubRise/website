@@ -1,6 +1,6 @@
 ---
-title: Comment connecter plusieurs sections LivePepper à des points de vente HubRise ?
-path_override: connecter-sections-comptes-hubrise
+title: Comment connecter plusieurs points de ventes LivePepper à des points de vente HubRise ?
+path_override: connect-shops-hubrise-accounts
 position: 2
 layout: documentation
 meta:
