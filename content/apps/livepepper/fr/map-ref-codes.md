@@ -27,28 +27,28 @@ Pour mettre à jour le code ref pour chaque variante, suivez ces étapes :
 
 À la fin du processus, vous pouvez vérifier que tous les produits ont été associés en utilisant l'action personnalisée **Codes manquants pour ces produits** dans LivePepper. Pour plus d'informations, voir [Vérifier l'association de produits](/apps/livepepper/troubleshooting#verify-mapping).
 
-## Suppléments, composition et options
+## Garnitures, ingrédients et options
 
 LivePepper prend en charge différents types de modifications optionnelles des produits, appelées variantes, suppléments, composition et options. Ces éléments peuvent être définis au niveau de la catégorie ou du produit.
 
 Le tableau suivant fournit un aperçu de toutes ces fonctionnalités.
 
-| Nom        | Description                                                                           | Niveau de définition | Exemple                                                    |
-| ---------- | ------------------------------------------------------------------------------------- | -------------------- | ---------------------------------------------------------- |
-| Variante   | Choix différent pour un produit                                                       | Catégorie et Produit | Choisir une pizza avec une croûte fine ou pétrie à la main |
-| Supplément | Suppléments non disponibles par défaut que les clients peuvent ajouter à leur produit | Catégorie            | Ajouter des champignons sur une pizza                      |
-| Ingrédient | Ingrédient présent par défaut qui peut être retiré du produit                         | Produit              | Retirer des cornichons d'un cheeseburger                   |
-| Option     | Service ou article optionnel ajouté au produit                                        | Catégorie            | Demander de couper la pizza                                |
+| Nom         | Description                                                                                | Niveau de définition | Exemple                                                    |
+| ----------- | ------------------------------------------------------------------------------------------ | -------------------- | ---------------------------------------------------------- |
+| Variante    | Choix différent pour un produit                                                            | Catégorie et Produit | Choisir une pizza avec une croûte fine ou pétrie à la main |
+| Supplément  | Suppléments non disponibles par défaut que les clients peuvent ajouter à leur produit      | Catégorie            | Ajouter des champignons sur une pizza                      |
+| Composition | Un ingrédient compostant votre recette, présent par défaut qui peut être retiré du produit | Produit              | Retirer des cornichons d'un cheeseburger                   |
+| Option      | Service ou article optionnel ajouté au produit                                             | Catégorie            | Demander de couper la pizza                                |
 
 Pour mettre à jour le code ref des suppléments ou des variantes définis au niveau du produit, suivez ces étapes :
 
 1. Sélectionnez le produit.
 2. Dans la section **Personnalisation**, sélectionnez l'élément que vous souhaitez mettre à jour.
    ![Association de codes ref - Composition](./images/015-product-ingredients.png)
-3. Si l'ingrédient ou la variante sont utilisés dans d'autres produits et qu'ils partagent le même code ref, vous pouvez mettre à jour le code ref partout, en suivant ces étapes supplémentaires.
+3. Si un ingrédient compostant votre recette ou la variante sont utilisés dans d'autres produits et qu'ils partagent le même code ref, vous pouvez mettre à jour le code ref partout, en suivant ces étapes supplémentaires.
    - Dans la section **Recopie rapide**, indiquez si la modification s'applique au **Menu entier** ou à tous les produits d'une catégorie.
    - Sélectionnez **Utiliser les codes logiciel ci-dessus**.
-     ![Association de codes ref - Code ref ingrédient](./images/016-ingredient-ref-code.png)
+     ![Association de codes ref - Code ref d'un ingrédient compostant votre recette](./images/016-ingredient-ref-code.png)
 4. Cliquez sur **Enregistrer** pour confirmer.
 
 Pour mettre à jour le code ref des suppléments, options ou variantes définis au niveau de la catégorie, suivez ces étapes :
