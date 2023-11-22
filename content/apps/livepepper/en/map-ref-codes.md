@@ -40,7 +40,7 @@ The following table provides an overview all these features.
 | Ingredient | An ingredient present by default that can be removed from the product        | Product              | Removing the pickles from a cheeseburger              |
 | Option     | An optional service or item added to the product                             | Category             | Asking to slice the pizza                             |
 
-To update the ref code for ingredients or variants defined at the product-level, follow these steps.
+To update the ref code for ingredients or variants defined at the product-level, follow these steps:
 
 1. Select the product.
 2. From the **Customization** section, select the item you want to update.
@@ -51,7 +51,7 @@ To update the ref code for ingredients or variants defined at the product-level,
      ![Mapping ref codes - Ingredient ref code](./images/016-ingredient-ref-code.png)
 4. Click **Save** to confirm.
 
-To update the ref code for toppings, options, and variants defined at the category-level, follow these steps.
+To update the ref code for toppings, options, and variants defined at the category-level, follow these steps:
 
 1. From your LivePepper back office, select **My Menu** > **Products**.
 2. Select the category.

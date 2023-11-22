@@ -12,7 +12,7 @@ Connecting LivePepper to HubRise can be done with a few simple steps. If you do 
 
 ---
 
-**IMPORTANT NOTE:** To connect a LivePepper website with multiple locations, refer to this [FAQ](/apps/livepepper/faqs/connect-branches-hubrise-accounts).
+**IMPORTANT NOTE:** To connect a LivePepper website with multiple locations, refer to this [FAQ](/apps/livepepper/faqs/connect-shops-hubrise-accounts).
 
 ---
 
@@ -34,7 +34,7 @@ Follow these steps if you don't have a HubRise account:
 If you already have a HubRise account, follow these steps:
 
 1. Log in to your LivePepper back office.
-2. Select **Advanced settings > Add-ons**.
+2. Select **Advanced settings** > **Add-ons**.
 3. Under HubRise, click the checkbox **Share data with other applications**.
 4. Click **Connect to HubRise**.
 5. If prompted, log in to your existing HubRise user profile.
