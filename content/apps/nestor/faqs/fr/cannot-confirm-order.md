@@ -4,7 +4,7 @@ path_override: validation-commande-impossible
 position: 4
 layout: documentation
 meta:
-  title: Valider une commande | FAQs Nestor | HubRise
+  title: Valider une commande | FAQ Nestor | HubRise
   description: Comprendre pourquoi il est impossible de valider une commande web dans Nestor.
 ---
 

@@ -4,7 +4,7 @@ path_override: recevoir-commandes-sans-tablette
 position: 2
 layout: documentation
 meta:
-  title: Recevoir les commandes sans utiliser la tablette | FAQs Uber Eats | HubRise
+  title: Recevoir les commandes sans utiliser la tablette | FAQ Uber Eats | HubRise
   description: Uber Eats propose deux modes de réception de commande. Un de ces modes vous permet de recevoir les commandes Uber Eats dans votre caisse, sans utiliser la tablette Uber Eats.
 ---
 

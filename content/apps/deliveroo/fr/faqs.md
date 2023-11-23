@@ -1,10 +1,10 @@
 ---
-title: FAQs
-path_override: faqs
+title: FAQ
+path_override: faq
 position: 11
 layout: documentation
 meta:
-  title: FAQs | Deliveroo | HubRise
+  title: FAQ | Deliveroo | HubRise
   description: FAQ sur la connexion de Deliveroo avec HubRise pour permettre à votre EPOS de fonctionner avec d'autres applications comme un tout cohérent. Connectez vos applications et synchronisez vos données.
 ---
 

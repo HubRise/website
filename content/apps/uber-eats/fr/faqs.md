@@ -1,10 +1,10 @@
 ---
-title: FAQs
-path_override: faqs
+title: FAQ
+path_override: faq
 position: 7
 layout: documentation
 meta:
-  title: FAQs | Uber Eats | HubRise
+  title: FAQ | Uber Eats | HubRise
   description: Questions et réponses fréquemment posées sur l'intégration de Uber Eats avec HubRise.
 ---
 
