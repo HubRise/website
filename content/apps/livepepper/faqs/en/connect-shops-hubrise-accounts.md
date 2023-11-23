@@ -17,8 +17,6 @@ To link several shops of your LivePepper site to the appropriate HubRise account
 1. Click **Connect to HubRise**.
 1. If you are an existing HubRise user with set up Accounts and Locations, when prompted, log into HubRise, then:
 
-- Select the HubRise **Account** and **Location** you want to link your LivePepper shops to, then click **Allow**. If you have multiple customer lists or catalogs on HubRise, you will be promoted to click **Next** then select from the **Customer List** or the **Catalog** to connect your branch to.
-
-- If the corresponding HubRise **Account** and **Location** is not available, select **Create a new location** to connect your LivePepper shops to a new HubRise Location. If you select this method, fill in the required fields to create the new location, then **Allow** LivePepper to connect.
-
-Repeat these steps for each LivePepper shops you want to connect.
+   - Select the HubRise **Account** and **Location** you want to link your LivePepper shops to, then click **Allow**. If you have multiple customer lists or catalogs on HubRise, you will be promoted to click **Next** then select from the **Customer List** or the **Catalog** to connect your branch to. 
+   - If the corresponding HubRise **Account** and **Location** is not available, select **Create a new location** to connect your LivePepper shops to a new HubRise Location. If you select this method, fill in the required fields to create the new location, then **Allow** LivePepper to connect.
+   - Repeat these steps for each LivePepper shops you want to connect.

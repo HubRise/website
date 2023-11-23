@@ -21,10 +21,10 @@ Some EPOS systems enable menu export to HubRise, facilitating the automatic popu
 To pull a HubRise catalog into LivePepper:
 
 1. Log in to your LivePepper back office.
-2. Click **My menu** > **Import / Export**.
-3. In the **HubRise** section, click **Import**.
+1. Click **My menu** > **Import / Export**.
+1. In the **HubRise** section, click **Import**.
    ![Import and Export the Menu](./images/010-hubrise-menu-import.png)
-4. Enter your LivePepper password and click **Import from HubRise**.
+1. Enter your LivePepper password and click **Import from HubRise**.
 
 ---
 
