@@ -1245,7 +1245,7 @@ An **inventory** consists of multiple inventory entries. An **inventory entry** 
 
 Inventories are specific to locations. If multiple locations share the same catalog, each location will have its own separate inventory.
 
-Inventories cannot be manually created or deleted. They are inherently associated with each location and are automatically created when a new location is set up.
+Inventories cannot be created or deleted. They are inherently associated with each location.
 
 ### 14.1. Retrieve Inventory {#retrieve-inventory}
 
