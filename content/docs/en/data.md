@@ -8,7 +8,7 @@ meta:
   description: How connections to HubRise can be managed.
 ---
 
-The Data section provides records for orders, customers, and catalogs. At any time, you can select which Account and Locations to display.
+The Data section provides records for orders, customers, catalogs, and inventory. At any time, you can select which Account and Locations to display.
 
 ## Orders {#orders}
 
@@ -94,6 +94,20 @@ For Deals and Discounts, you can see the following attributes:
 To see the full logs of all the requests that make changes to the catalog, click **View logs**. For more information, see [Logs](/docs/data#logs).
 
 To create, edit or remove a catalogs, see [Catalogs](/docs/catalog).
+
+## Inventory
+
+The **INVENTORY** page displays the inventory entries for the selected Location. You must select a Location to view its inventory. If no Location is selected, a message prompts you to select one.
+
+Inventory entries are presented with SKU entries first, sorted by their ref code, followed by Option entries, also sorted by their ref code. In the absence of an inventory entry for a SKU or Option, the quantity is considered unlimited.
+
+The following attributes are displayed for each inventory entry:
+
+- **SKU / OPTION**: The type of inventory entry, either **SKU** or **Option**.
+- **REF**: The ref code of the SKU or Option.
+- **STOCK**: The current stock level. If the stock level is `0`, the item is out of stock.
+
+To see the full logs of all the requests that make changes to the inventory, click **View logs**. For more information, see [Logs](/docs/data#logs).
 
 ## Logs {#logs}
 
