@@ -34,8 +34,8 @@ Lorsque LivePepper est connecté à HubRise, les commandes passées dans LivePep
 Pour vérifier que votre commande de test a bien été transmise à HubRise, suivez ces étapes :
 
 1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com).
-2. Si vous y êtes invité, connectez-vous à votre compte utilisateur HubRise.
-3. Dans HubRise, cliquez sur **Données** > **Commandes**.
+2. Si vous y êtes invité, connectez-vous avec votre profil d'utilisateur HubRise, qui correspond à l'adresse e-mail utilisée pour de la création de votre compte.
+3. Dans HubRise, cliquez sur **DONNÉES** > **COMMANDES**.
 4. Recherchez votre commande de test. Si vous voyez la commande, la connexion entre LivePepper et HubRise fonctionne correctement.
 
 ## Support LivePepper
