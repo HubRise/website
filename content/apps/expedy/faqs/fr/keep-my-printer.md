@@ -4,7 +4,7 @@ path_override: conserver-mon-imprimante
 position: 1
 layout: documentation
 meta:
-  title: Connecter son imprimante à HubRise | FAQs Solution | HubRise
+  title: Connecter son imprimante à HubRise | FAQ Solution | HubRise
   description: Présentation du module Expedy Print Box permettant de connecter les imprimantes ESC/POS (Epson, Star, Brother, Toshiba, Zebra...) à HubRise.
 ---
 

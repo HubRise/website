@@ -4,7 +4,7 @@ path_override: commandes-non-recues
 position: 1
 layout: documentation
 meta:
-  title: Commandes HubRise non reçues | FAQs LEO2 | HubRise
+  title: Commandes HubRise non reçues | FAQ LEO2 | HubRise
   description: Que faire lorsque les commandes HubRise n'arrivent pas dans LEO2 ?
 ---
 

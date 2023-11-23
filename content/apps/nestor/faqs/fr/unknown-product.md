@@ -4,7 +4,7 @@ path_override: produit-introuvable-hubrise
 position: 3
 layout: documentation
 meta:
-  title: Exporter un produit | FAQs Nestor | HubRise
+  title: Exporter un produit | FAQ Nestor | HubRise
   description: Comment exporter un produit créé dans Nestor vers mon catalogue HubRise.
 ---
 
