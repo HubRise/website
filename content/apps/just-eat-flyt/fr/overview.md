@@ -44,7 +44,7 @@ La connexion avec Just Eat Flyt Bridge vous permet de :
 
 - Recevoir les commandes de Just Eat, y compris le statut de commande.
 - Recevoir les informations de livraison de Just Eat, pour les commandes livrées par le restaurant.
-- Envoyer un catalogue vers Just Eat.
+- Envoyer un catalogue vers Just Eat, avec support des variantes.
 - Synchroniser l'inventaire avec HubRise.
 
 ![Schéma du flux de connexion entre Just Eat, Just Eat Flyt Bridge et HubRise pour la réception de commandes](./images/000-2x-just-eat-connection-diagram.png)
