@@ -28,7 +28,7 @@ Connecter Deliveroo Bridge permet à HubRise de :
 
 - Recevoir les commandes de Deliveroo, y compris le statut de commande.
 - Recevoir les informations de livraison de Deliveroo, pour les commandes livrées par le restaurant.
-- Envoyer un catalogue vers Deliveroo.
+- Envoyer un catalogue vers Deliveroo, avec support des variantes.
 - Synchroniser l'inventaire avec HubRise.
 
 ![Diagramme du flux de connexion entre Deliveroo, Deliveroo Bridge et HubRise](./images/000-2x-connection-diagram.png)

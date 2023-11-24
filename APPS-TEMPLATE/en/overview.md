@@ -53,8 +53,8 @@ Connecting SOLUTION to HubRise allows your [EPOS] to:
 - Push orders into HubRise, including order status.
 - Push order modifications into HubRise: payments and item changes.
 - Push customer information into HubRise. -OR- Push customer information into HubRise, including loyalty.
-- Pull a catalog from HubRise.
-- Push a catalog into HubRise.
+- Pull a catalog from HubRise. -OR- Pull a catalog from HubRise, with variants support.
+- Push a catalog into HubRise. -OR- Push a catalog into HubRise, with variants support.
 - Synchronise inventory with HubRise.
 - Synchronise final delivery time with HubRise.
 
