@@ -163,4 +163,4 @@ By default, when customers order a deal, they must choose one product for every 
 
 ### Availability
 
-Every time you push your HubRise catalog to Uber Eats, you also update the availability of your menu, based on the values you set from the [Configuration page](/apps/uber-eats/configuration#opening-hours) of Uber Eats Bridge.
+Every time you push your catalog to Uber Eats, you also update the opening hours, based on the values you set from the [Configuration page](/apps/uber-eats/configuration#location).
