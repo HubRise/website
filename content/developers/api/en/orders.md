@@ -38,7 +38,7 @@ Almost all the fields are optional. In fact the simplest order that can be creat
 | `collection_code` <Label type="optional" />                           | string                                                   | A short, customer-shared, order identifier for simplified collection or delivery. Does not have to be unique.                                                  |
 | `coupon_codes` <Label type="optional" />                              | string[]                                                 | Coupon codes applied to the order.                                                                                                                             |
 | `items` <Label type="optional" />                                     | [OrderItem](#items)[]                                    | Items included in the order.                                                                                                                                   |
-| `deals` <Label type="optional" />                                     | [OrderDeal](#deals)[]                                    | Deals used in the order.                                                                                                                                       |
+| `deals` <Label type="optional" />                                     | [OrderDealMap](#deals)                                   | Deals used in the order.                                                                                                                                       |
 | `discounts` <Label type="optional" />                                 | [OrderDiscount](#discounts)[]                            | Discounts applied to the order.                                                                                                                                |
 | `charges` <Label type="optional" />                                   | [OrderCharge](#charges)[]                                | Additional charges incurred on the order.                                                                                                                      |
 | `payments` <Label type="optional" />                                  | [OrderPayment](#payments)[]                              | Payment methods used for the order.                                                                                                                            |
@@ -819,6 +819,29 @@ Order items which are part of a deal include a `deal_line` field. This field is 
 
 `pricing_effect` and `pricing_value` can be useful in some applications but can generally be omitted. HubRise does not make any computation with these fields.
 
+All the other fields of an order item are the same as in [Order Items](#items). For example, an order item in a deal can have options, as in the example below.
+
+##### Example:
+
+```json
+{
+  "product_name": "Margarita",
+  "price": "9.00 EUR",
+  "quantity": "1",
+  "options": [
+    {
+      "option_list_name": "Sauce",
+      "name": "Barbecue",
+      "price": "1.00 EUR"
+    }
+  ],
+  "deal_line": {
+    "deal_key": "0",
+    "label": "Pizza"
+  }
+}
+```
+
 ## 6. Order Options {#options}
 
 | Name                                 | Type                                                      | Description                                                                                   |
@@ -844,9 +867,9 @@ Order items which are part of a deal include a `deal_line` field. This field is 
 
 A removed option can define a `price`. In this case, it's the price charged to the customer to remove the option.
 
-## 7. Order Deals {#deals}
+## 7. Order Deal Map {#deals}
 
-An order deal associates an order item's `deal_key` to a particular deal.
+An order deal map associates order items' `deal_keys` with their corresponding deals names and refs.
 
 ##### Attributes:
 
