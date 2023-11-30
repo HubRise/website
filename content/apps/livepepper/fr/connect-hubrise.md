@@ -16,7 +16,7 @@ La connexion de LivePepper à HubRise s'effectue en quelques étapes simples. Si
 
 ***
 
-## Se connecter à LivePepper
+## Connecter LivePepper
 
 Si vous n'avez pas de compte HubRise, suivez ces étapes :
 
@@ -40,7 +40,7 @@ Si vous avez déjà un compte HubRise, suivez ces étapes :
 5. Si vous y êtes invité, connectez-vous à votre profil utilisateur HubRise existant.
 6. Sélectionnez le **point de vente** HubRise à connecter, puis cliquez sur **Autoriser**.
 
-## Se déconnecter de LivePepper
+## Déconnecter LivePepper
 
 Pour désactiver la connexion entre LivePepper et HubRise, suivez ces étapes :
 

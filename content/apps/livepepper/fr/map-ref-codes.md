@@ -27,7 +27,7 @@ Pour mettre à jour le code ref de chaque variante, suivez ces étapes :
 
 À la fin du processus, vous pouvez vérifier que tous les produits ont été associés en utilisant l'action personnalisée **Codes manquants pour ces produits** dans LivePepper. Pour plus d'informations, voir [Vérifier l'association de produits](/apps/livepepper/troubleshooting#verify-mapping).
 
-## Garnitures, ingrédients et options
+## Suppléments, ingrédients et options
 
 LivePepper prend en charge différents types de modifications optionnelles des produits, appelées variantes, suppléments, composition et options. Ces éléments peuvent être définis au niveau de la catégorie ou du produit.
 
@@ -45,7 +45,7 @@ Pour mettre à jour le code ref des suppléments ou des variantes définis au ni
 1. Sélectionnez le produit.
 2. Dans la section **Personnalisation**, sélectionnez l'élément que vous souhaitez mettre à jour.
    ![Association de codes ref - Composition](./images/015-product-ingredients.png)
-3. Si un ingrédient compostant votre recette ou la variante sont utilisés dans d'autres produits et qu'ils partagent le même code ref, vous pouvez mettre à jour le code ref partout, en suivant ces étapes supplémentaires.
+3. Si un ingrédient ou une variante est utilisé dans d'autres produits et qu'ils partagent le même code ref, vous pouvez mettre à jour le code ref partout, en suivant ces étapes supplémentaires.
    - Dans la section **Recopie rapide**, indiquez si la modification s'applique au **Menu entier** ou à tous les produits d'une catégorie.
    - Sélectionnez **Utiliser les codes logiciel ci-dessus**.
      ![Association de codes ref - Code ref d'un ingrédient compostant votre recette](./images/016-ingredient-ref-code.png)
