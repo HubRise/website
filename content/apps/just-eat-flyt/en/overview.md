@@ -51,7 +51,7 @@ Connecting Just Eat Flyt Bridge allows you to:
 
 - Pull orders from Just Eat, including order status.
 - Pull customer information from Just Eat, for orders delivered by the restaurant.
-- Push a catalog into Just Eat.
+- Push a catalog into Just Eat, with variants support.
 - Synchronise inventory with HubRise.
 
 ![Diagram of the connection flow between Just Eat, Just Eat Flyt Bridge, and HubRise for receiving orders](./images/000-2x-just-eat-connection-diagram.png)

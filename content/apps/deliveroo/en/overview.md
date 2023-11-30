@@ -28,7 +28,7 @@ Connecting Deliveroo Bridge allows HubRise to:
 
 - Pull orders from Deliveroo, including order status.
 - Pull customer information from Deliveroo, for orders delivered by the restaurant.
-- Push a catalog into Deliveroo.
+- Push a catalog into Deliveroo, with variants support.
 - Synchronise inventory with HubRise.
 
 ![Diagram of the connection flow between Deliveroo, Deliveroo Bridge, and HubRise](./images/000-2x-connection-diagram.png)
