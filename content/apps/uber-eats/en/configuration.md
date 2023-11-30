@@ -8,17 +8,17 @@ meta:
   description: Instructions on configuring Uber Eats Bridge to work seamlessly with Uber Eats and your EPOS or other apps connected to HubRise. Configuration is simple.
 ---
 
-The Configuration page can be accessed by clicking on the arrow <InlineImage width="20" height="20">![Arrow icon](../images/arrow-icon.jpg)</InlineImage> in the top right corner of the screen. For more details, see [User Interface](/apps/uber-eats/user-interface).
-
 The Configuration page allows you to customise the behaviour of Uber Eats Bridge based on your preferences.
 
-![Uber Eats Bridge configuration page](./images/010-2x-configuration-page-cropped.png)
-
 ## Language
+
+![Uber Eats Bridge configuration page, Language section](./images/012-uber-eats-configuration-page-language.png)
 
 Choose the language to use for generic items such as `Delivery charge`. These names may appear in your EPOS and in customer receipts.
 
 ## Orders
+
+![Uber Eats Bridge configuration page, Orders section](./images/013-uber-eats-configuration-page-orders.png)
 
 ### Order Statuses
 
@@ -60,7 +60,7 @@ This section of the configuration page allows you to specify the ref codes for t
 
 ## Customers
 
-![Uber Eats Bridge configuration page, Customers section](./images/024-configuration-page-customers.png)
+![Uber Eats Bridge configuration page, Customers section](./images/017-uber-eats-configuration-page-customers.png)
 
 Enable the **Duplicate phone access code in delivery notes** option if your EPOS lacks native support for fetching phone access codes.
 
@@ -68,7 +68,7 @@ All EPOS systems integrated with HubRise can read delivery notes. If your EPOS h
 
 ## Catalog {#catalog}
 
-![Uber Eats Bridge configuration page, Catalog section](./images/011-2x-configuration-page-menu.png)
+![Uber Eats Bridge configuration page, Catalog section](./images/014-uber-eats-configuration-page-catalog.png)
 
 ### Catalog Variant to Push
 
@@ -80,30 +80,23 @@ If your catalog includes variants, you have the option to select which one to us
 
 Select the **Enable automatic catalog push** checkbox to synchronise your HubRise catalog with Uber Eats whenever it gets updated.
 
-### Opening Hours {#opening-hours}
-
-In the **Opening hours** section, set the opening times for your Uber Eats store.
-
-For each day of the week, set the opening and closing times of your store by specifying one or two time shifts. Customers will not be able to order from your Uber Eats store outside of these time windows.
-
-If your restaurant is closed on a specific day, click **Close the day**.
-To quickly copy opening hours to all the following days on the list, click **Copy to bottom**.
-
----
-
-**IMPORTANT NOTE:** To apply the updated opening hours, push your catalog to Uber Eats. For more details, see [Push the Catalog](/apps/uber-eats/push-catalog).
-
----
-
 ### Customer Notes
 
 Customer notes for individual products can be activated by contacting Uber Eats support. This integration feature is supported, but it cannot be activated by HubRise.
 
 If you enable customer notes, make sure that your connected EPOS supports product level customer notes.
 
+## Location {#location}
+
+![Uber Eats Bridge configuration page, Location section](./images/015-uber-eats-configuration-page-location.png)
+
+Select **Enable automatic opening hours push** to synchronise your HubRise opening hours with Uber Eats. To enable this option, you must first set your opening hours in HubRise, and enable automatic catalog push.
+
+If you use specific opening hours for Uber Eats, you can set them for Uber Eats only by selecting **Use specific opening hours for Uber Eats**, then entering your opening hours. This option will override the opening hours set in HubRise.
+
 ## Inventory
 
-![Uber Eats Bridge configuration page inventory section](./images/023-2x-configuration-page-inventory.png)
+![Uber Eats Bridge configuration page inventory section](./images/016-uber-eats-configuration-page-inventory.png)
 
 Through inventory synchronisation, products and options that have a stock quantity of zero can be hidden can be hidden on your Uber Eats store.
 

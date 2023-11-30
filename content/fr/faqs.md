@@ -1,9 +1,9 @@
 ---
-title: FAQs
+title: FAQ
 path_override: faqs
 layout: documentation-simple
 meta:
-  title: FAQs | HubRise
+  title: FAQ | HubRise
   description:
 ---
 

@@ -4,7 +4,7 @@ path_override: connecter-depuis-le-back-office-deliveroo
 position: 5
 layout: documentation
 meta:
-  title: Connecter HubRise depuis le back-office Deliveroo | Deliveroo FAQs | HubRise
+  title: Connecter HubRise depuis le back-office Deliveroo | Deliveroo FAQ | HubRise
   description: Instructions pour connecter votre magasin Deliveroo existant à HubRise directement depuis le back-office de Deliveroo.
 ---
 

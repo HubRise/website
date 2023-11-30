@@ -29,7 +29,7 @@ Connecting Glovo Bridge allows HubRise to:
 
 - Pull orders from Glovo, including order status.
 - Pull customer information from Glovo, for orders delivered by the restaurant.
-- Push a catalog into Glovo.
+- Push a catalog into Glovo, with variants support.
 - Synchronise inventory with HubRise.
 
 ![Diagram of the connection flow between Glovo, Glovo Bridge, and HubRise](./images/000-2x-glovo-connection-diagram.png)
