@@ -34,7 +34,7 @@ Connecting Shopify Bridge allows HubRise to:
 - Pull orders from Shopify, including order status.
 - Pull customer information from Shopify.
 - Push a catalog into Shopify.
-- Push inventory into Shopify.
+- Synchronise inventory with Shopify.
 
 ## Why Connect?
 

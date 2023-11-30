@@ -30,7 +30,7 @@ Connecting PrestaShop Bridge allows HubRise to:
 
 - Pull orders from PrestaShop, including order status.
 - Pull customer information from PrestaShop.
-- Push a catalog into a HubRise catalog.
+- Push a catalog into PrestaShop.
 - Synchronise inventory with PrestaShop.
 
 PrestaShop can be connected to HubRise from the HubRise back office.
