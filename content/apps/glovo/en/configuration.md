@@ -27,7 +27,7 @@ Refer to your EPOS documentation on the HubRise website to verify your EPOS requ
 
 Service types such as delivery by Glovo, restaurant delivery or takeaway might require the corresponding ref code entry. Refer to your EPOS documentation on the HubRise website to verify.
 
-Additionally, from this section you can choose to mark Glovo orders as delivery orders or collection orders. This is useful if you have specific business requirements for financial reporting.
+Additionally, from this section, you can choose to categorise orders fulfilled by Glovo as either delivery or collection orders. Orders fulfilled by the restaurant fleet are always marked as delivery orders. This feature is useful to address specific business requirements or to differentiate these orders in financial reports.
 
 ### Special Items
 

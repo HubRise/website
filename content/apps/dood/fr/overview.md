@@ -31,9 +31,10 @@ DOOD intègre également une suite d'outils marketing permettant d'attirer de no
 
 Connecter DOOD à HubRise permet à votre solution de commande en ligne de :
 
-- Recevoir un catalogue de HubRise.
 - Envoyer les commandes à HubRise, dont les statuts de commande.
-- Envoyer les informations clients à HubRise.
+- Envoyer les informations clients à HubRise. 
+- Recevoir un catalogue de HubRise.
+- Synchroniser l'inventaire avec HubRise.
 
 DOOD peut être connecté à HubRise depuis le back-office de DOOD.
 

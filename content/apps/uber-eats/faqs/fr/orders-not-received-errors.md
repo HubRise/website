@@ -4,7 +4,7 @@ path_override: commandes-non-recues
 position: 2
 layout: documentation
 meta:
-  title: Commandes non reçues dans HubRise | FAQs Uber Eats | HubRise
+  title: Commandes non reçues dans HubRise | FAQ Uber Eats | HubRise
   description: Si la configuration de votre Uber Eats Bridge est faite mais vous ne recevez pas de commandes Uber Eats, il se peut qu'il y ait des codes ref manquants.
 ---
 

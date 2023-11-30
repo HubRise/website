@@ -35,7 +35,7 @@ Connecter Glovo Bridge permet à HubRise de :
 
 - Recevoir les commandes de Glovo, y compris le statut de commande.
 - Recevoir les informations de livraison de Glovo, pour les commandes livrées par le restaurant.
-- Envoyer un catalogue vers Glovo.
+- Envoyer un catalogue vers Glovo, avec support des variantes.
 - Synchroniser l'inventaire avec HubRise.
 
 ![Schéma du flux de connexion entre Glovo, Glovo Bridge et HubRise](./images/000-2x-glovo-connection-diagram.png)

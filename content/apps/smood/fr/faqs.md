@@ -1,6 +1,6 @@
 ---
 title: FAQ
-path_override: faqs
+path_override: faq
 position: 8
 layout: documentation
 meta:
