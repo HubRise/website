@@ -122,11 +122,11 @@ In the **Value(s) for this location** field, specify the value associated with t
 
 ## Customers
 
-The **Customers** section lets you customise the way that WooCommerce sends the customer information to HubRise.
-By default, WooCommerce sends the customer information in the `billing` and `shipping` objects of the order payload, and no change is required in the WooCommerce Bridge configuration.
-However, if you use specialised plugins to store and manage the customer information of your WooCommerce store, you might need to specify the order metadata where this information is encoded.
+The **Customers** section lets you customise the way that WooCommerce sends the customer information to HubRise. By default, customer data is sourced from the shipping address, or the billing address if the shipping address is missing.
 
-To verify if you need to configure metadata keys in this section, place some test orders from your WooCommerce store and check the order logs in your HubRise back-office.
+Enable **Always use the billing address** to use the billing address, even if the shipping address is present.
+
+If you use plugins that store customer information in metadata, use the **Key for (...)** fields to associate metadata keys with customer fields in HubRise. To help you identify the correct metadata keys, place some test orders from your WooCommerce store and check the order logs in the **Latest operations** tab.
 
 ![WooCommerce Bridge configuration page](./images/019-woocommerce-configuration-4.png)
 
