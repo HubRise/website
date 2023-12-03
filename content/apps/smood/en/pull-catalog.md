@@ -18,10 +18,9 @@ As a preliminary step, you need to populate your HubRise catalog. Then you can s
 
 Some EPOS solutions offer the ability to export the catalog to HubRise. Refer to your EPOS documentation on the HubRise website [Apps page](/apps) to verify. If your EPOS does not offer this feature, you can populate your HubRise catalog manually, using the HubRise [Catalog Manager](/apps/catalog-manager/overview).
 
-If you handle the same catalog across multiple platforms, consider creating catalog variants, which let you customise the price and availability of your products for each specific platform.
+If you use the same catalog across multiple platforms, consider creating catalog variants to customise the price and availability of your products for each platform.
 
-For more information on HubRise catalogs, see [Catalogs](/docs/catalog).
-To learn how to create and manage catalog variants with the Catalog Manager, see [Variants](/apps/catalog-manager/variants).
+For more information on HubRise catalogs, see [Catalogs](/docs/catalog). To learn how to create and manage catalog variants with the Catalog Manager, see [Variants](/apps/catalog-manager/variants).
 
 ### Select the Catalog Variant to Pull
 
@@ -30,7 +29,7 @@ If you create a catalog variant for Smood on HubRise, you need to select it from
 1. Log in to your [Smood back office](https://manager.smood.ch).
 1. Select the restaurant.
 1. Click the **Settings** tab, then in the **Integrations** section, click **Settings**.
-1. In the **POS Order References Settings** dialog that appears, from the **Catalog variant to retrieve** list, select the catalog variant that you want to pull.
+1. In the **POS Order References Settings** dialog that appears, from the **Catalog variant to retrieve** list, select the catalog variant.
 1. To confirm, click **Save**.
 
 The catalog variant that you choose is used for both manual and automatic pull.

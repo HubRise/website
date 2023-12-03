@@ -29,7 +29,7 @@ Once the HubRise integration is enabled, follow these steps:
 1. Log in to your [Smood back office](https://manager.smood.ch).
 1. Select the restaurant that you want to connect from the dropdown menu in the left sidebar.
 1. Click the **Settings** tab, then in the **Integrations** section, click **Connect to HubRise**.
-1. In the dialog that appears, [configure the connection parameters](/apps/smood/configuration#parameters). If you are not sure about the parameters to use, leave the default values and go to the next step. You can always come back to this page later.
+1. In the dialog that appears, [configure the connection settings](/apps/smood/configuration#settings). If you are not sure about the parameters to use, leave the default values and go to the next step. You can always come back to this page later.
 1. To confirm, click **Save**. You are then redirected to the HubRise back office.
 1. Select the HubRise location and the catalog you want to connect, then click **Next**.
 1. You are redirected to the Smood back office. The connection is now established.
