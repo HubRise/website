@@ -24,7 +24,7 @@ Vous êtes également redirigé vers la page de configuration lorsque vous conne
 
 ## Configurer vos paramètres {#parameters}
 
-![Page de configuration Smood](./images/003-configuration.png)
+![Page de configuration Smood](./images/003-smood-configuration.png)
 
 ### Types de service {#service-types}
 

@@ -8,7 +8,7 @@ meta:
   description: Instructions on configuring Smood to work seamlessly with your EPOS or other apps connected to HubRise. Configuration is simple.
 ---
 
-The Smood **Configuration** page allows you to configure how orders are sent to your EPOS, or any other solution connected to HubRise. It also includes other settings related to the integration.
+The Smood **Configuration** page lets you configure how orders are sent to your EPOS, or any other solution connected to HubRise. It also includes other settings related to the integration.
 
 This page explains how to open the configuration page and configure your connection.
 
@@ -18,13 +18,14 @@ To open the configuration page, follow these steps:
 
 - Log in to your [Smood back office](https://manager.smood.ch).
 - Select the restaurant from the dropdown menu in the left sidebar.
-- Click the **Settings** tab, then in the **Integrations** section, click **Edit POS references**.
+- Click the **Settings** tab.
+- In the **Integrations** section, click **Settings**.
 
 You will also be redirected to the configuration page when you connect Smood to HubRise. For more information, see [Connect to HubRise](/apps/smood/connect-hubrise).
 
 ## Configure Your Parameters {#parameters}
 
-![Smood configuration page](./images/003-configuration.png)
+![Smood configuration page](./images/003-smood-configuration.png)
 
 ### Service Types {#service-types}
 
@@ -36,8 +37,11 @@ Additionally, from this section, you can choose to categorise orders fulfilled b
 
 In this section, you can configure the ref codes to use for discounts and deals sent to HubRise:
 
-- **Discount**: for discounts applied to the whole order, for example a 10% discount.
-- **Promotion**: for discounts applied to a set of items within the menu, such as a three-course meal (starter, main course, and dessert).
+- **Voucher ref code**: The ref code used for discounts applied to the whole order, for example a 10% discount.
+- **Promotion ref code**: The ref code for deals with a single deal line. These are promotions applied to a single product, for example a 10% discount on a specific pizza.
+- **BOGOF ref code**: The ref code for *buy one get one free* (BOGOF) deals.
+
+The ref codes that you specify in this section do not apply to the deals that you create in your HubRise catalog and that you synchronise with Smood. 
 
 ### Charges {#charges}
 
@@ -46,6 +50,11 @@ Delivery charges are sent to the EPOS for orders delivered by the restaurant. In
 ### Payments {#payments}
 
 All Smood orders are paid online. Smood includes a payment in the order sent to the EPOS. In this section, you can configure the ref code to use.
+
+### Catalog Variant to Retrieve {#variant-to-retrieve}
+
+In this section, you can choose the HubRise catalog variant that you want to push to Smood every time you synchronise the catalog.
+With a catalog variant, you can customise the price and availability of the products in your Smood catalog. For more information, see [Catalog Variants](https://hubrise.com/blog/catalog-variants).
 
 ### Synchronisation Settings {#synchronisation-settings}
 
