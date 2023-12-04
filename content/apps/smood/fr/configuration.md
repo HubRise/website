@@ -57,13 +57,19 @@ Toutes les commandes Smood sont payables en ligne. Les commandes envoyées au lo
 
 Dans cette section, vous pouvez choisir la variante de catalogue HubRise que Smood récupérera à chaque synchronisation du catalogue. Les variantes de catalogue sont utiles pour gérer les différences de prix et de disponibilité selon les canaux de vente. Pour plus d'informations, voir [Variantes de catalogue](https://hubrise.com/blog/catalog-variants).
 
+---
+
+**REMARQUE IMPORTANTE :** Après avoir sélectionné une variante de catalogue, vous devez récupérer à nouveau le catalogue pour mettre à jour le menu dans Smood. Pour plus d'informations, voir [Récupérer le catalogue manuellement](/apps/smood/pull-catalog#manual-pull).
+
+---
+
 ### Paramètres de synchronisation {#synchronisation-settings}
 
 Les cases à cocher de cette section permettent de configurer le flux de synchronisation entre Smood et HubRise :
 
-- **Enable automatic sync of the catalog** (Activer la synchronisation automatique du catalogue) : cochez la case pour que le menu Smood soit automatiquement mis à jour à chaque modification du catalogue HubRise.
-- **Enable automatic sync of the inventory** (Activer la synchronisation automatique de l'inventaire) : cochez la case pour que les articles en rupture de stock dans l'inventaire HubRise soient automatiquement supprimés du menu Smood.
-- **Activer la synchronisation automatique du statut de Smood à HubRise**: Lorsqu'une commande est annulée dans Smood, la mise à jour de ce statut est toujours envoyée à HubRise. Quand cette option est cochée, d'autres statuts Smood sont également envoyés.
+- **Activer la synchronisation automatique du catalogue** : cochez la case pour que le menu Smood soit automatiquement mis à jour à chaque modification du catalogue HubRise.
+- **Activer la synchronisation automatique de l'inventaire** : cochez la case pour que les articles en rupture de stock dans l'inventaire HubRise soient automatiquement supprimés du menu Smood.
+- **Activer la synchronisation automatique du statut de Smood à HubRise** : Lorsqu'une commande est annulée dans Smood, la mise à jour de ce statut est toujours envoyée à HubRise. Quand cette option est cochée, d'autres statuts Smood sont également envoyés.
 
 ### Enregistrer vos modifications
 

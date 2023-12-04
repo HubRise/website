@@ -34,7 +34,7 @@ If you create a catalog variant for Smood on HubRise, you need to select it from
 
 The catalog variant that you choose is used for both manual and automatic pull.
 
-### Manual Catalog Pull
+### Manual Catalog Pull {#manual-pull}
 
 Once your catalog is populated on HubRise, you can manually pull it into your Smood restaurant by following these steps:
 
