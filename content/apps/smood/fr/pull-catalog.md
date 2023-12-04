@@ -34,7 +34,7 @@ Si vous créez une variante de catalogue pour Smood sur HubRise, vous devez la s
 
 La variante de catalogue sélectionnée est utilisée à la fois pour la récupération manuelle et automatique du catalogue.
 
-### Récupérer le catalogue manuellement
+### Récupérer le catalogue manuellement {#manual-pull}
 
 Une fois que votre catalogue a été alimenté dans HubRise, vous pouvez l'envoyer dans votre restaurant Smood en suivant ces étapes :
 

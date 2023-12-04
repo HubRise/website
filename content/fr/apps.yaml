@@ -470,7 +470,7 @@ content:
         - website: https://www.smood.ch/fr
           documentation: /fr/apps/smood-dismatch
           logo: smood.png
-          title: Smood
+          title: Dismatch
           description: Dismatch est un service de livraison à domicile indépendant proposé par Smood, qui couvre l'ensemble du marché suisse. Dismatch permet à des enseignes qui ne sont pas partenaires de Smood de bénéficier de leur service de livraison.
         - website: https://stuart.com/fr
           documentation: /fr/apps/stuart
