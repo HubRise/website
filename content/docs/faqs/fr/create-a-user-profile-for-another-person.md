@@ -16,10 +16,10 @@ Il existe de nombreuses raisons de créer des profils utilisateur pour d'autres 
 Comment créer un profil utilisateur pour quelqu'un d'autre ?
 
 1. Si vous êtes déjà connecté à HubRise, déconnectez-vous ou ouvrez un navigateur en mode incognito.
-1. Accédez à la [page d'inscription à HubRise](https://manager.hubrise.com/signup?locale=fr-FR).
+1. Accédez à la [page d'inscription à HubRise](https://manager.hubrise.com/signup).
 1. Entrez les **détails de l'utilisateur** et cliquez sur **Créer un compte**.
 1. Cliquez sur **Créer un compte**.
-1. Pour inviter l'utilisateur à saisir son propre mot de passe sécurisé, rendez-vous sur la [page de réinitialisation du mot de passe](https://manager.hubrise.com/reset_password/new?locale=fr-FR).
+1. Pour inviter l'utilisateur à saisir son propre mot de passe sécurisé, rendez-vous sur la [page de réinitialisation du mot de passe](https://manager.hubrise.com/reset_password/new).
 1. Saisissez l'adresse e-mail du nouvel utilisateur et cliquez sur **Réinitialiser le mot de passe**. L'utilisateur recevra un e-mail contenant des instructions pour saisir son propre mot de passe.
 1. Déconnectez-vous en tant qu'utilisateur nouvellement créé, puis reconnectez-vous avec votre propre profil utilisateur.
 

@@ -31,7 +31,7 @@ Pour connecter Popina à HubRise, suivez ces étapes :
 5. Redémarrez l'application Popina sur votre iPad pour appliquer les changements.
 6. Popina est maintenant connecté à HubRise.
 
-Pour plus d'informations sur la manière de connecter, bloquer et déconnecter une application sur HubRise, reportez-vous à la page d'aide de HubRise [Applications et Connexions](https://www.hubrise.com/docs/connections).
+Pour plus d'informations sur la manière de connecter, bloquer et déconnecter une application sur HubRise, reportez-vous à la page d'aide de HubRise [Applications et Connexions](/docs/connections).
 
 ## Donner accès au support de Popina {#give-access}
 

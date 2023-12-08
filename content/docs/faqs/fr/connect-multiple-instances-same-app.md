@@ -14,7 +14,7 @@ Pour connecter la première application, voir la rubrique [Connecter une nouvell
 
 Pour connecter une deuxième fois la même application, procédez comme suit :
 
-1. Connectez-vous à HubRise à partir de la [page de connexion à HubRise](https://manager.hubrise.com/login?locale=fr-FR).
+1. Connectez-vous à HubRise à partir de la [page de connexion à HubRise](https://manager.hubrise.com/login).
 1. Cliquez sur **CONNEXIONS** dans la barre de navigation de gauche.
 1. Sélectionnez **Voir les apps disponibles**.
 1. Sélectionnez la même application que celle que vous avez installée précédemment, puis cliquez sur **Connecter**.
