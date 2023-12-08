@@ -57,6 +57,12 @@ All Smood orders are paid online. Smood includes a payment in the order sent to 
 
 In this section, you can choose which HubRise catalog variant Smood will pull every time you synchronise the catalog. Catalog variants are useful to manage different prices and availability for different channels. For more information, see [Catalog Variants](https://hubrise.com/blog/catalog-variants).
 
+---
+
+**IMPORTANT NOTE:** After selecting a catalog variant, you must pull the catalog again to update the menu in Smood. For more information, see [Manual Catalog Pull](/apps/smood/pull-catalog#manual-pull).
+
+---
+
 ### Synchronisation Settings {#synchronisation-settings}
 
 The checkboxes in this section control the synchronisation workflow between Smood and HubRise:
