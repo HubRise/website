@@ -10,7 +10,7 @@ meta:
 
 TicknCook must be connected to your HubRise account before it can fetch orders. To connect TicknCook to your HubRise account:
 
-1. Log in to your [HubRise account](https://manager.hubrise.com). If you don't have an account, visit the [HubRise Registration Page](https://manager.hubrise.com/signup?locale=en-GB) and follow instructions. For more information on HubRise, see [HubRise Getting Started](/docs/get-started).
+1. Log in to your [HubRise account](https://manager.hubrise.com). If you don't have an account, visit the [HubRise Registration Page](https://manager.hubrise.com/signup) and follow instructions. For more information on HubRise, see [HubRise Getting Started](/docs/get-started).
 
 1. Select **CONNECTIONS** in HubRise's menu then **View available apps**.
 
