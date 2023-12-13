@@ -15,10 +15,10 @@ Pour modifier un catalogue existant, cliquez sur **Ouvrir** à côté du nom du 
 
 Sur la page **Catalogues**, vous pouvez également effectuer les actions suivantes :
 
-- Créer un nouveau catalogue
-- Renommer un catalogue
-- Dupliquer un catalogue
-- Supprimer un catalogue
+- Créer un nouveau catalogue.
+- Renommer un catalogue.
+- Dupliquer un catalogue.
+- Supprimer un catalogue.
 
 Pour plus d'informations, voir [Catalogues](/apps/catalog-manager/catalogs).
 
@@ -46,7 +46,7 @@ Dans cette vue, vous pouvez créer et gérer des produits, des options, des prom
 
 ## Vue Grille
 
-Après avoir créé vos produits, options et promotions, vous pouvez les réviser dans la vue **Grille**, où ils sont présentés sous forme de tableau pour une comparaison plus facile.
+Après avoir créé vos produits, options et promotions, vous pouvez les réviser dans la vue **Grille**, où ils sont présentés sous forme de tableau pour une comparaison plus aisée.
 Dans cette vue, vous pouvez également créer et gérer des variantes de votre catalogue, afin de contrôler la disponibilité et les prix pour les différents canaux de vente. Pour plus d'informations, voir [Variantes de catalogues](/apps/catalog-manager/variants).
 
 ![Vue Grille Catalog Manager](./images/020-grid-view.png)

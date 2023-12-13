@@ -16,7 +16,7 @@ In one location, you may, for example, create a catalog to import products from 
 
 ## Open the Catalogs Page
 
-The **Catalogs** page is the default page of Catalog Manager. It opens when you launch Catalog Manager. At any time, you can return to this page by clicking the logo in the top-left corner of the screen.
+The **Catalogs** page is the default page of Catalog Manager. It opens when you [launch Catalog Manager](/apps/catalog-manager/launch-catalog-manager). At any time, you can return to this page by clicking the logo in the top-left corner of the screen.
 
 ## Create a Catalog
 
@@ -24,11 +24,12 @@ To create a catalog in Catalog Manager, open the **Catalogs** page, click **New 
 
 ![Catalog Manager New Catalog](./images/015-2x-new-catalog.png)
 
-Alternatively, you can create a catalog from the **SETTINGS** page in your HubRise back office. For more information, refer to the HubRise Help page [Add a Catalog](/docs/catalog#add).
+
+It's important to note that creating a catalog in Catalog Manager automatically establishes it at the account level, not at the location level. To create a catalog specifically at the location level, you should do this from the **SETTINGS** page in your HubRise back office. For more information, refer to the HubRise Help page [Add a Catalog](/docs/catalog#add).
 
 ## Catalog Actions
 
-You can **Rename**, **Duplicate** an existing catalog, or **Delete** existing catalogs using the Catalog Manager **Actions** dropdown.
+You can **Rename**, **Duplicate**, or **Delete** existing catalogs using the Catalog Manager **Actions** dropdown available in your Catalog Manager, **Catalogs** page.
 
 ![Catalog Manager Catalog list](./images/001-2x-catalog-list.png)
 

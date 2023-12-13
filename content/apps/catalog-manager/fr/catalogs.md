@@ -16,7 +16,8 @@ Par exemple, dans un point de vente, vous pouvez créer un catalogue pour import
 
 ## Ouvrir la page Catalogues
 
-La page **Catalogues** est la page par défaut de Catalog Manager. Elle s'ouvre lorsque vous lancez Catalog Manager. Vous pouvez à tout moment revenir à cette page en cliquant sur le logo en haut à gauche de l'écran.
+La page **Catalogues** est la page par défaut de Catalog Manager. Elle s'ouvre lorsque vous
+[lancez Catalog Manager](/apps/catalog-manager/launch-catalog-manager). Vous pouvez à tout moment revenir à cette page en cliquant sur le logo en haut à gauche de l'écran.
 
 ## Créer un catalogue
 
@@ -24,11 +25,11 @@ Pour créer un catalogue dans Catalog Manager, ouvrez la page **Catalogues**, cl
 
 ![Nouveau catalogue Catalog Manager](./images/015-2x-new-catalog.png)
 
-Vous pouvez également créer un catalogue à partir de la page **CONFIGURATION** de votre back-office HubRise. Pour plus d'informations, consultez la page d'aide HubRise [Ajouter un catalogue](/docs/catalog#add).
+Il est important de noter que la création d'un catalogue dans Catalog Manager l'établit automatiquement au niveau du compte, et non au niveau du point de vente. Pour créer un catalogue spécifiquement au niveau du point de vente, vous devez le faire à partir de la page **CONFIGURATION** de votre back-office HubRise. Pour plus d'informations, consultez la page d'aide HubRise [Ajouter un catalogue](/docs/catalog#add).
 
 ## Actions sur les catalogues
 
-Vous pouvez **Renommer**, **Dupliquer** ou **Supprimer** des catalogues existants à l'aide du menu déroulant **Actions** de Catalog Manager.
+Vous pouvez **Renommer**, **Dupliquer** ou **Supprimer** les catalogues existants à l'aide du menu déroulant **Actions** du Catalog Manager disponible sur la page **Catalogues** du Catalog Manager.
 
 ![Liste de catalogues Catalog Manager](./images/001-2x-catalog-list.png)
 

@@ -25,7 +25,7 @@ Il inclut les fonctionnalités suivantes :
 - Créer, modifier et gérer vos catalogues HubRise.
 - Personnaliser vos produits, options, promotions et remises.
 - Ajouter des images et des descriptions détaillées.
-- Ajuster les prix individuellement pour chaque canal.
-- Désactiver des éléments spécifiques sur certains canaux.
+- Ajuster les prix individuellement pour chaque canal de vente.
+- Désactiver des produits spécifiques sur certains canaux de vente.
 
-Catalog Manager est une solution basée sur le cloud, disponible partout. Vous pouvez l'utiliser depuis n'importe quel appareil. Mais pour une expérience optimale, nous vous recommandons d'utiliser un ordinateur de bureau ou un ordinateur portable.
+Catalog Manager est une solution basée sur le cloud, disponible partout. Vous pouvez l'utiliser depuis n'importe quel appareil, mais pour une expérience optimale, nous vous recommandons d'utiliser un ordinateur de bureau ou un ordinateur portable.

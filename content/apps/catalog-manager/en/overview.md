@@ -25,7 +25,7 @@ The features of Catalog Manager include the following:
 - Create, modify and manage your HubRise catalogs.
 - Customise your products, options, deals, and discounts.
 - Add pictures and detailed descriptions.
-- Adjust prices individually for each channel.
-- Disable specific items on designated channels.
+- Adjust prices individually for each sales channel.
+- Disable specific items on designated sales channels.
 
 Catalog Manager is a cloud based solution, available anywhere. While you can use it from any device, we recommend using a desktop or laptop computer for the best experience.
