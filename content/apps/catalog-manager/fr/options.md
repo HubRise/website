@@ -18,7 +18,7 @@ Sur la page des listes d'options, vous pouvez voir le nombre de SKU ou de produi
 
 ## Créer des listes d'options
 
-Des listes d'options peuvent être ajoutées au produit de base s'il n'y a pas de variante, ou à chaque variante le cas échéant.
+Des listes d'options peuvent être ajoutées au produit de base s'il n'y a pas de variante de produit, ou à chaque variante de produit le cas échéant.
 
 Les listes d'options doivent être créées avant de pouvoir être associées aux produits. Pour créer une liste d'options, cliquez sur **Listes d'options** dans le menu de gauche, puis sélectionnez **Nouvelle liste d'options**. Les informations suivantes sont requises :
 

@@ -18,7 +18,7 @@ When viewing option lists, you can see the number of SKUs or products that the o
 
 ## Create Option Lists
 
-Option lists can be added to the base product, if there are no variations, or to each variation when these are present.
+Option lists can be added to the base product, if there are no product variations, or to each product variation when these are present.
 
 Option lists need to be created before they can be related to product items. To create an option list, click **Option lists** on the left hand side menu panel, then select **New option list**. The following information is required:
 
@@ -27,14 +27,14 @@ Option lists need to be created before they can be related to product items. To 
 - Maximum number of options a customer can select. Defaults to empty, which means that there is no limit.
 - For each option, enter a **Name**, **Price**, **Ref code**, and tick the **Default** checkbox if the option should be selected by default.
 
-Keep in mind that option lists are related to specific products, or product variations, so it is useful to name your option list appropriately. For example, for a medium pizza variation you may have three cheese options which you would include in an option list called `Cheese - Medium Pizza`.
+Keep in mind that option lists are attached to specific products, or product variations. If the options differ from one product variation to another, it is advisable to name your option lists in a way that allows you to easily identify them. For example, for pizza items you may have three cheese options. If the options and related prices are identical regardless of the pizza or pizza size they're attached to, the list can be called `Cheese - Pizza`. If they are different, you might call one list `Cheese - Medium Pizza` and the other`Cheese - Large Pizza` to know which list to attach to which product variation.
 
 ![Catalog Manager Option List details](./images/004-2x-option-list-details.png)
 
-After you have created one or more option lists, you can add them to your products:
+After you have created one or more option lists, you can attach them to your products:
 
-1. Select the tab for the variation that you want to add options to, for example `10inch Classic`, then click **Attach option list**. You can now select from any previously added option lists.
-1. For each of the product variations, click **Attach option list** and select the appropriate option list.
+1. Select the tab for the product variation that you want to attach option lists to, for example `10inch Classic`, then click **Attach option list**. You can now select any of the option lists previously created.
+1. Follow the exact same steps for each of the product variations, for example `13inch Gluten Free Classic`, `13inch Classic`and `18inch Classic`.
 
 ![Catalog Manager Add Option List](./images/011-2x-product-option-list-tabs.png)
 
