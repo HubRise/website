@@ -10,9 +10,9 @@ meta:
 
 Un **Catalogue** est un conteneur pour vos produits et les informations qui leur sont associées. Les catalogues sont stockés dans HubRise et gérés à l'aide de Catalog Manager.
 
-Les catalogues peuvent être créés globalement pour tous les points de vente, ou pour un point de vente spécifique. Pour plus d'informations, consultez les pages d'aide HubRise [Comptes](/docs/comptes) et [Points de vente](/docs/points de vente).
+Les catalogues peuvent être créés globalement pour tous les points de vente, ou pour un point de vente spécifique. Pour plus d'informations, consultez les pages d'aide HubRise [Comptes](/docs/account) et [Points de vente](/docs/locations).
 
-Par exemple, dans un point de vente vous pouvez créer un catalogue pour importer des produits depuis votre logiciel de caisse et les synchroniser avec votre solution de commande en ligne. Dans un autre, vous pouvez créer un catalogue qui est géré manuellement et utilisé uniquement pour alimenter votre menu en ligne. Vous pouvez également avoir plusieurs catalogues dans le même point de vente.
+Par exemple, dans un point de vente, vous pouvez créer un catalogue pour importer des produits depuis votre logiciel de caisse et les synchroniser avec votre solution de commande en ligne. Dans un autre, vous pouvez créer un catalogue qui est géré manuellement et utilisé uniquement pour alimenter votre menu en ligne. Vous pouvez également avoir plusieurs catalogues dans le même point de vente.
 
 ## Ouvrir la page Catalogues
 
@@ -24,7 +24,7 @@ Pour créer un catalogue dans Catalog Manager, ouvrez la page **Catalogues**, cl
 
 ![Nouveau catalogue Catalog Manager](./images/015-2x-new-catalog.png)
 
-Vous pouvez également créer un catalogue à partir de la page **CONFIGURATION** de votre back-office HubRise. Pour plus d'informations, consultez la page d'aide HubRise [Ajouter un catalogue](/docs/catalogues#ajouter-un-catalogue).
+Vous pouvez également créer un catalogue à partir de la page **CONFIGURATION** de votre back-office HubRise. Pour plus d'informations, consultez la page d'aide HubRise [Ajouter un catalogue](/docs/catalog#add).
 
 ## Actions sur les catalogues
 

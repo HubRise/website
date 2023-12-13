@@ -11,12 +11,13 @@ meta:
 ***
 
 **REMARQUE IMPORTANTE :** Si vous ne possédez pas encore de compte HubRise, rendez-vous sur la [page d'inscription à HubRise](https://manager.hubrise.com/signup). L'inscription ne prend qu'une minute !
+Pour plus d'informations sur HubRise, voir notre aide en ligne rubrique [Comment démarrer](/docs/get-started).
 
 ***
 
 Avant de pouvoir utiliser Catalog Manager, vous devez le connecter à votre compte HubRise. Pour cela, suivez ces étapes :
 
-1. Connectez-vous à votre compte HubRise. Pour créer un compte HubRise, consultez la [page d'inscription à HubRise](https://manager.hubrise.com/signup?locale=en-GB) et suivez les instructions. Pour plus d'informations sur HubRise, voir la rubrique [Comment démarrer](https://www.hubrise.com/docs/get-started).
+1. Connectez-vous à votre [back-office HubRise](https://manager.hubrise.com).
 2. Sélectionnez **CONNEXIONS**, puis **Voir les apps disponibles**.
 3. Dans la liste des applications, sélectionnez **Catalog Manager**.
 4. Sélectionnez **Connecter**.
@@ -25,4 +26,4 @@ Avant de pouvoir utiliser Catalog Manager, vous devez le connecter à votre comp
 
 ![Bloc Catalog Manager](./images/008-2x-connections.png)
 
-Pour plus d'informations sur la connexion, le blocage et la déconnexion d'une application à HubRise, voir la page d'aide HubRise [Apps et connexions](https://www.hubrise.com/docs/connections).
+Pour obtenir plus d'informations sur la manière de connecter, bloquer et déconnecter une application sur HubRise, veuillez consulter la page d'aide HubRise en ligne [Apps et connexions](/docs/connections).

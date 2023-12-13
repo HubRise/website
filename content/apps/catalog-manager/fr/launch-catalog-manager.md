@@ -10,7 +10,7 @@ meta:
 
 Pour ouvrir Catalog Manager, suivez ces étapes :
 
-1. Connectez-vous à [HubRise](https://manager.hubrise.com).
+1. Connectez-vous à votre [back-office HubRise](https://manager.hubrise.com).
 2. Sélectionnez **CONNEXIONS**.
 3. Cliquez sur **Ouvrir** à côté de l'application Catalog Manager. Catalog Manager s'ouvre dans un nouvel onglet du navigateur.
 

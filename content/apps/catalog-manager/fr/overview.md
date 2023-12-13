@@ -8,6 +8,7 @@ meta:
   description: Présentation de Catalog Manager, avantages de la connexion à HubRise, fonctionnalités de l'intégration. Créer et gérer des catalogues et des infos sur les produits.
 gallery:
   - __gallery-001.png
+  - __gallery-002.png
 app_info:
   category: Autres applications
   availability: Monde entier

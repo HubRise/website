@@ -16,7 +16,8 @@ Pour modifier un catalogue existant, cliquez sur **Ouvrir** à côté du nom du 
 Sur la page **Catalogues**, vous pouvez également effectuer les actions suivantes :
 
 - Créer un nouveau catalogue
-- Dupliquer un catalogue existant
+- Renommer un catalogue
+- Dupliquer un catalogue
 - Supprimer un catalogue
 
 Pour plus d'informations, voir [Catalogues](/apps/catalog-manager/catalogs).
@@ -26,13 +27,13 @@ Pour plus d'informations, voir [Catalogues](/apps/catalog-manager/catalogs).
 ## Étapes de modification du catalogue
 
 La modification d'un catalogue est une tâche complexe qui se fait souvent en plusieurs fois.
-Catalog Manager est conçu pour simplifier le processus grâce à son interface modulaire.
+Catalog Manager est conçu pour simplifier le processus grâce à son interface utilisateur modulaire.
 
 Lorsque vous modifiez un catalogue, vous effectuez généralement les étapes suivantes :
 
-1. Vous modifiez les informations de base sur vos produits, par exemple les codes ref, les prix et les images.
-2. Si besoin, vous créez plusieurs variantes du catalogue, par exemple pour prendre en charge différents prix et disponibilités sur différentes plateformes de livraison.
-3. Vous prévisualisez le catalogue dans son ensemble pour vérifier que tout est conforme aux attentes.
+1. Vous modifiez les informations de base sur vos produits, comme les options, les prix, les images et les codes ref.
+2. Vous devrez peut-être créer plusieurs variantes de votre catalogue pour prendre en charge les différences de prix ou la disponibilité des produits par canal de vente.
+3. Vous prévisualisez l'apparence en ligne de votre catalogue pour vérifier que votre offre produit est conforme à vos attentes.
 
 Les vues **Édition**, **Grille** et **Aperçu** de Catalog Manager permettent d'effectuer ces actions de manière itérative.
 
@@ -46,7 +47,7 @@ Dans cette vue, vous pouvez créer et gérer des produits, des options, des prom
 ## Vue Grille
 
 Après avoir créé vos produits, options et promotions, vous pouvez les réviser dans la vue **Grille**, où ils sont présentés sous forme de tableau pour une comparaison plus facile.
-Dans cette vue, vous pouvez aussi créer et gérer des variantes de votre catalogue, afin de contrôler la disponibilité et les prix pour différentes plateformes.
+Dans cette vue, vous pouvez également créer et gérer des variantes de votre catalogue, afin de contrôler la disponibilité et les prix pour les différents canaux de vente. Pour plus d'informations, voir [Variantes de catalogues](/apps/catalog-manager/variants).
 
 ![Vue Grille Catalog Manager](./images/020-grid-view.png)
 
