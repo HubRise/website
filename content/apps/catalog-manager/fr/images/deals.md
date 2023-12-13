@@ -25,14 +25,14 @@ Pour créer une promotion, cliquez sur **Promotions** > **Nouvelle promotion** e
 
 ## Exemples de promotions
 
-### Une pizza achetée, 2ème pizza offerte
+### Un acheté, un OFFERT
 
-Pour configurer une promotion `Une pizza achetée, 2ème pizza offerte`, créez une ligne pour représenter la partie `1ère pizza achetée` de la promotion. Sélectionnez **Inchangé** pour la définir à son prix normal. Ajoutez ensuite une deuxième ligne pour représenter la partie `2ème pizza offerte` de la promotion. Saisissez un effet prix **Remise en pourcentage** de `100%` pour cette ligne. Pour chaque ligne, choisissez les produits autorisés en sélectionnant **Attacher des SKUs** dans la section **Lignes de la promotion**.
+Pour configurer une promotion `Un acheté, un OFFERT`, créez une ligne pour représenter la partie `Un acheté` de la promotion. Sélectionnez **Inchangé** pour la définir à son prix normal. Ajoutez ensuite une deuxième ligne pour représenter la partie `un OFFERT` de la promotion. Saisissez un effet prix **Remise en pourcentage** de `100%` pour cette ligne. Pour chaque ligne, choisissez les produits autorisés en sélectionnant **Attacher des SKUs** dans la section **Lignes de la promotion**.
 
 ![Détails d'une promotion Catalog Manager](./images/012-2x-deal-details.png)
 
 ### Prix fixe
 
-Pour configurer `Formule trois plats pour 20 €`, vous avez besoin de trois lignes, par exemple, une pour l'`Entrée`, une pour le `Plat` et une pour le `Dessert`.
+Pour configurer un `Trois plats pour 20 €`, vous avez besoin de trois lignes, par exemple une pour l'`Eentrée`, une pour le `Plat` et une pour le `Dessert`.
 
 La première est définie à un **Prix fixe** de `20 €`. Les deux autres sont configurées à `0 €`. Les articles disponibles pour chacune des lignes peuvent être sélectionnés dans la section **Lignes de la promotion** grâce à la fonction **Attacher des SKUs**.

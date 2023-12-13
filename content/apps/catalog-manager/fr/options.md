@@ -1,5 +1,5 @@
 ---
-title: Listes d'options et options
+title: Liste d'options et options
 path_override: options
 position: 6
 layout: documentation
@@ -27,14 +27,14 @@ Les listes d'options doivent être créées avant de pouvoir être associées au
 - Nombre maximum d'options qu'un client peut sélectionner. Par défaut, cette valeur est vide, ce qui indique qu'il n'y a pas de limite.
 - Pour chaque option, saisissez un **Nom**, un **Prix**, un **Code ref**, et cochez la case **Défaut** si l'option doit être sélectionnée par défaut.
 
-N'oubliez pas que les listes d'options sont associées à des produits spécifiques ou à des variantes de produits. Il est donc important de les nommer de manière appropriée. Par exemple, si pour une variante de pizza de taille moyenne vous avez trois options fromage, vous pouvez les inclure dans une liste d'options appelée `Fromage - Pizza Moyenne`.
+N'oubliez pas que les listes d'options sont associées à des produits spécifiques ou à des variations de produits. Si les options diffèrent d'une variation de produit à l'autre, il est conseillé de nommer vos listes d'options de manière à vous permettre de les identifier facilement. Par exemple, pour les articles pizza, vous pouvez avoir trois options de fromage. Si les options et les prix connexes sont identiques, quelle que soit la pizza ou la taille de la pizza à laquelle ils sont associés, la liste peut être appelée `Fromage - Pizza `. S'ils sont différents, vous pouvez appeler une liste `Fromage - Pizza Moyenne` et l'autre `Fromage - Pizza Grande` pour retrouver plus facilement la liste que vous souhaitez associer.
 
 ![Détails de la liste d'options Catalog Manager](./images/004-2x-option-list-details.png)
 
-Après avoir créé une ou plusieurs listes d'options, vous pouvez les ajouter à vos produits :
+Après avoir créé une ou plusieurs listes d'options, vous pouvez les associer à vos produits :
 
-1. Sélectionnez l'onglet de la variante à laquelle vous souhaitez ajouter des options, par exemple `10inch Classic`, puis cliquez sur **Associer une liste d'options**. Choisissez parmi les listes d'options que vous avez ajoutées précédemment.
-2. Pour chacune des variantes de produit, cliquez sur **Associer une liste d'options** et sélectionnez la liste appropriée.
+1. Sélectionnez l'onglet de la variation de produit à laquelle vous souhaitez ajouter des options, par exemple `Petite classique`, puis cliquez sur **Associer une liste d'options**. Vous pouvez désormais sélectionner l'une des listes d'options précédemment créées.
+2. Suivez exactement les mêmes étapes pour chacune des variations de produit, par exemple `Petite sans gluten`, `Moyenne classique` et `Grande classique`.
 
 ![Ajouter une liste d'options Catalog Manager](./images/011-2x-product-option-list-tabs.png)
 
