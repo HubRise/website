@@ -12,7 +12,7 @@ Vous pouvez accéder à HubRise depuis un navigateur web sur n'importe quel appa
 
 ## Créer un profil utilisateur
 
-Pour commencer à utiliser HubRise, vous devez créer un profil utilisateur. L'inscription est gratuite et ne prend qu'une minute. Vous avez seulement besoin de fournir un nom, une adresse e-mail et un mot de passe. Pour créer un profil utilisateur, allez sur la [page d'inscription à HubRise](https://manager.hubrise.com/signup?locale=fr-FR).
+Pour commencer à utiliser HubRise, vous devez créer un profil utilisateur. L'inscription est gratuite et ne prend qu'une minute. Vous avez seulement besoin de fournir un nom, une adresse e-mail et un mot de passe. Pour créer un profil utilisateur, allez sur la [page d'inscription à HubRise](https://manager.hubrise.com/signup).
 
 ---
 
@@ -64,7 +64,7 @@ Si vous souhaitez obtenir une vue d'ensemble des performances d'un compte, séle
 
 ## Connexion
 
-Pour vous connecter à HubRise, consultez la [page de connexion à HubRise](https://manager.hubrise.com/login?locale=fr-FR) ou la [page d'accueil de HubRise](https://www.hubrise.com/fr). Saisissez votre adresse e-mail et votre mot de passe, puis cliquez sur **Connexion**.
+Pour vous connecter à HubRise, consultez la [page de connexion à HubRise](https://manager.hubrise.com/login) ou la [page d'accueil de HubRise](https://www.hubrise.com/fr). Saisissez votre adresse e-mail et votre mot de passe, puis cliquez sur **Connexion**.
 
 ![Écran de connexion de HubRise](./images/001-hubrise-login.png)
 

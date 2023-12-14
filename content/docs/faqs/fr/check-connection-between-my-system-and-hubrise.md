@@ -8,7 +8,7 @@ meta:
   description: Vérifier si la connexion entre mes applications fonctionne. Pour ce faire, vérifier les commandes et l'activité de l'application sur le back-office HubRise.
 ---
 
-Il existe différents moyens de vérifier que la connexion entre votre système ou votre application et HubRise est correctement établie. La première étape de toutes ces recommandations consiste ouvrir une session dans HubRise via la [page de connexion à HubRise](https://manager.hubrise.com/login?locale=fr-FR).
+Il existe différents moyens de vérifier que la connexion entre votre système ou votre application et HubRise est correctement établie. La première étape de toutes ces recommandations consiste ouvrir une session dans HubRise via la [page de connexion à HubRise](https://manager.hubrise.com/login).
 
 ## Vérifier les commandes entrantes
 

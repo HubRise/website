@@ -24,7 +24,7 @@ Certaines applications sont connectables directement depuis le back-office de Hu
 
 Pour connecter une nouvelle application à votre compte HubRise à partir du back-office de HubRise, procédez comme suit :
 
-1. Connectez-vous à HubRise à partir de la [page de connexion à HubRise](https://manager.hubrise.com/login?locale=fr-FR).
+1. Connectez-vous à HubRise à partir de la [page de connexion à HubRise](https://manager.hubrise.com/login).
 1. Cliquez sur **CONNEXIONS** dans la barre de navigation de gauche.
 1. Sélectionnez **Voir les apps disponibles**.
 1. Sélectionnez **Tous les points de vente**, ou sélectionnez le **point de vente** à connecter.

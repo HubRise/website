@@ -16,7 +16,7 @@ Pour réactiver un compte ayant été suspendu, vous devez d'abord payer l'abonn
 
 Pour vérifier votre moyen de paiement enregistré ou en ajouter un nouveau à votre compte HubRise, procédez comme suit :
 
-1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com/login?locale=fr-FR).
+1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com/login).
 1. Cliquez sur **CONFIGURATION**.
 1. Pour effectuer le paiement global au niveau du compte, vérifiez que l'option **Tous les points de vente** est sélectionnée. Pour régler les factures en fonction du point de vente, sélectionnez une entrée dans la liste déroulante **Point de vente**.
 1. Dans la section **Paiement**, vérifiez les détails de votre mode de paiement. Si aucun mode de paiement n'existe actuellement, cliquez sur **Ajouter un mode de paiement**.

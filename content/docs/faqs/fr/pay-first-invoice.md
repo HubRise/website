@@ -16,7 +16,7 @@ Pour régler votre premier abonnement, vous devez enregistrer un mode de paiemen
 
 Pour vérifier votre moyen de paiement enregistré ou en ajouter un nouveau à votre compte HubRise, procédez comme suit :
 
-1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com/login?locale=fr-FR).
+1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com/login).
 1. Cliquez sur **CONFIGURATION**.
 1. Pour effectuer le paiement au niveau du compte, vérifiez que l'option **Tous les points de vente** est sélectionnée. Pour régler les factures en fonction du point de vente, sélectionnez une entrée dans la liste déroulante **Point de vente**. Pour plus d'informations, voir la rubrique [Paiements du niveau du compte ou du point de vente](/docs/payment#account-or-location-payments).
 1. Dans la section **Paiement**, vérifiez les détails de votre mode de paiement. Si aucun mode de paiement n'existe actuellement, cliquez sur **Ajouter un mode de paiement**.
@@ -27,7 +27,7 @@ Pour vérifier votre moyen de paiement enregistré ou en ajouter un nouveau à v
 
 Pour vérifier vos informations de facturation au niveau du compte, procédez comme suit :
 
-1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com/login?locale=fr-FR).
+1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com/login).
 1. Cliquez sur **CONFIGURATION**.
 1. Dans la section **Compte**, cliquez sur **Modifier le compte**.
 1. Renseignez les informations requises à la section **Détails de facturation**.
