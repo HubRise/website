@@ -10,7 +10,7 @@ meta:
 
 Il existe deux façons d'alimenter vos catalogues dans HubRise.
 
-Vous pouvez utiliser pour cela l'application Catalog Manager. Pour plus d'informations, voir [Créer un produit](/apps/catalog-manager/produits#creer).
+Vous pouvez utiliser pour cela l'application Catalog Manager. Pour plus d'informations, voir [Créer un produit](/apps/catalog-manager/products#create).
 
 Vous pouvez également envoyer un catalogue de produits ou un menu dans un catalogue HubRise à l'aide d'un logiciel de caisse, d'une solution de commande en ligne, d'une plateforme de commande de repas ou de toute autre application connectée à votre compte HubRise. Pour savoir si l'application que vous souhaitez utiliser intègre la fonctionnalité d'envoi du catalogue, consultez la documentation de votre application sur la [page Apps](https://www.hubrise.com/apps) du site internet de HubRise. Après l'envoi, dans certains cas vous devrez peut-être réorganiser ou compléter les détails de vos articles en ajoutant des photos ou des descriptions plus détaillées à l'aide de Catalog Manager.
 

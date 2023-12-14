@@ -15,7 +15,7 @@ Some common setups include:
 - Variants per delivery channels: `Deliveroo`, `Uber Eats`, `Shopify`, etc.
 - Variants per locations: `London`, `Paris`, etc.
 - Variants per groups of locations: `Downtown`, `Northern areas`, etc.
-- Variants per channels type: `Online`, `In-store`, etc.
+- Variants per sales channels: `Online`, `In-store`, etc.
 - Variants per service type: `Delivery`, `In-store`, etc.
 
 You can also use a combination of the above examples: `Deliveroo`, `Uber Eats Paris`, `Uber Eats northern areas`, etc.
@@ -38,7 +38,9 @@ Repeat the process for any additional variant that you want to create.
 ## Manage Variants Availability and Prices
 
 For each of the variants you created, you can edit prices for each product, option, and deal in your catalog. You can also edit availability by enabling or disabling them.
+
 When you create a new product, option, or deal in your catalog, it duplicates for all variants. You can then adjust its price, or disable it.
+
 Disabling an item in the **Default** column will automatically disable it for all variants.
 
 When you finish editing your variants, to update the catalog in HubRise remember to click **Save**.
@@ -51,6 +53,6 @@ For instance, to use the `Uber Eats Paris` variant, open Deliveroo Bridge, and s
 
 ---
 
-**IMPORTANT NOTE:** All HubRise Bridges support catalog variants, but not all the other integrated applications do. Check your app documentation on HubRise to find out if this feature is supported.
+**IMPORTANT NOTE:** All HubRise Bridges support catalog variants, but for now, not all third-party integrated applications do. Check your app documentation on HubRise to find out if this feature is supported.
 
 ---

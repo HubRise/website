@@ -16,7 +16,7 @@ In one location, you may, for example, create a catalog to import products from 
 
 ## Open the Catalogs Page
 
-The **Catalogs** page is the default page of Catalog Manager. It opens when you [launch Catalog Manager](/apps/catalog-manager/launch-catalog-manager). At any time, you can return to this page by clicking the logo in the top-left corner of the screen.
+The **Catalogs** page is the default page of Catalog Manager. It opens when you [launch Catalog Manager](/apps/catalog-manager/launch-catalog-manager). At any time, you can return to this page by clicking the logo in the top left corner of the screen.
 
 ## Create a Catalog
 
