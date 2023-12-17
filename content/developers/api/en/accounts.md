@@ -53,7 +53,8 @@ Get location details.
         "from": "18:00",
         "to": "01:00"
       }
-    ]
+    ],
+    // ... other days of the week
   },
   "custom_fields": {
     "delivery": {
@@ -99,7 +100,8 @@ The `opening_hours` field represents the opening hours for a location on each da
         "from": "18:00",
         "to": "01:00" // Next day because 01:00 is before the cutoff time (= 06:00)
       }
-    ]
+    ],
+    // ... other days of the week
   }
 }
 ```
