@@ -21,20 +21,22 @@ The interface provides a weekly schedule with options to specify time slots for 
 
 For each day of the week, you can specify multiple time slots when your establishment is open:
 
-- To add a time slot, click the **Add hours** button.
+- To add a time slot, click the **Add time slot** button.
 - To replicate the time slots to all remaining days of the week, use the **Copy to bottom** feature.
 - To remove a time slot, click the trash bin icon next to it. The business is considered closed if no hours are specified for a given day.
 
 ## Edit Time Slots
 
-Each time slot has two editable fields to enter the start and end time of your operating hours. These fields can be formatted in 12-hour or 24-hour time formats, depending on your browser settings. Click on any time field to edit the hours.
+Each time slot has two editable fields to enter the start and end time. These fields can be formatted in 12-hour or 24-hour time formats, depending on your browser settings. Click on any time field to edit the hours.
 
-Time slots must not overlap, and their start and end times must be in chronological order. The cutoff time is 6am by default, meaning that any hour between midnight and 6am is considered to be the next day. The cutoff time can be changed by contacting HubRise support, if your establishment is open through 6am.
+Time slots must not overlap, and their start and end times must be in chronological order. The cutoff time is 6am by default, meaning that any hour between midnight and 6am is considered to be the next day. The cutoff time can be changed by contacting HubRise support, if your establishment remains open through 6am.
 
 ## Save Changes
 
-After making the necessary adjustments, click the **Save** button at the bottom of the page to apply your changes. To cancel any changes, click
-**Cancel** to revert to the previous settings, or leave the page without saving.
+When you make any changes to the opening hours, the **Save** and **Cancel** buttons will appear at the bottom of the page. These buttons will disappear after you have either saved or reverted the changes.
+
+- To apply your changes, click the **Save** button.
+- To discard any changes, click the **Cancel** button or leave the page without saving.
 
 ## Platform Support {#platform-support}
 
