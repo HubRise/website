@@ -62,7 +62,7 @@ Dans l'installation WooCommerce par défaut, le type de service est toujours `de
 
 ***
 
-**FAQ associée** : [Comment encoder des métadonnées personnalisées dans une commande ?](/apps/woocommerce/faq/encoder-metadonnees-personnalisees)
+**FAQ associée** : [Comment encoder des métadonnées personnalisées dans une commande ?](/apps/woocommerce/faqs/encode-custom-metadata)
 
 ***
 
@@ -81,7 +81,7 @@ WooCommerce prend en charge quatre types de paiements dans une commande :
 
 ***
 
-**REMARQUE IMPORTANTE** : Les codes ref de paiement seront bientôt personnalisables depuis la page de configuration. Pour plus d'informations, [contactez le support HubRise](mailto:support@hubrise.com).
+**REMARQUE IMPORTANTE** : Les codes ref de paiement seront bientôt personnalisables depuis la page de configuration. Pour plus d'informations, veuillez contacter HubRise à l'adresse [support@hubrise.com](mailto:support@hubrise.com).
 
 ***
 
@@ -104,17 +104,17 @@ Cette section explique comment les commandes sont encodées dans les requêtes J
 Les produits WooCommerce d'une commande sont associés à HubRise de la façon suivante :
 
 - Les produits simples sont envoyés à HubRise en tant que produits sans SKU.
-- Les produits variables avec une liste d'attributs nommée "sku" sont envoyés à HubRise en tant que produits avec des SKU.
-- Les produits variables avec un nom de liste d'attributs autre que "sku" sont envoyés à HubRise en tant que produits avec des options.
+- Les variables de produits avec une liste d'attributs nommée **Size** sont envoyés à HubRise en tant que produits avec des SKU.
+- Les variables de produits avec un nom de liste d'attributs autre que **Size** sont envoyés à HubRise en tant que produits avec des options.
 
 Pour chaque article de la commande, WooCommerce Bridge fournit les informations suivantes :
 
 - `product_name` : nom du produit
-- `sku_name` : nom du SKU, pour les produits variables WooCommerce avec le nom d'attribut "sku". Sinon, la valeur par défaut est `null`.
+- `sku_name` : nom du SKU, pour les variables de produits WooCommerce avec le nom d'attribut **Size**. Sinon, la valeur par défaut est `null`.
 - `sku_ref` : code ref de l'article
 - `price` : prix unitaire de l'article
 - `quantity` : quantité d'articles dans la commande
-- `options` : tableau des options rattachées à l'article, pour les produits variables WooCommerce avec un nom d'attribut autre que "sku". Sinon, la valeur par défaut est un tableau vide.
+- `options` : tableau des options rattachées à l'article, pour les variables de produits WooCommerce avec un nom d'attribut autre que **Size**. Sinon, la valeur par défaut est un tableau vide.
 
 ### Options
 

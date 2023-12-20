@@ -23,18 +23,24 @@ La section **Commandes** permet de personnaliser la façon dont les commandes Wo
 
 ### Statuts de commande
 
+***
+
+**REMARQUE IMPORTANTE :** Dans cette section, nous mettons en majuscule la première lettre des statuts WooCommerce pour les distinguer plus facilement des noms de statuts HubRise. Par exemple, `Processing` (En cours de traitement) est un statut WooCommerce, tandis que `acceptée` est un statut HubRise.
+
+***
+
 Selon le type de paiement, les nouvelles commandes WooCommerce sont créées avec des statuts différents :
 
-- Pour les paiements par carte, le statut initial de la commande est `processing` (en cours de traitement).
-- Pour les paiements par virement bancaire, le statut initial de la commande est `on-hold` (en attente). Le statut doit être passé manuellement à `processing` une fois le paiement confirmé.
+- Pour les paiements par carte, le statut initial de la commande est `Processing` (en cours de traitement).
+- Pour les paiements par virement bancaire, le statut initial de la commande est `On-hold` (En attente). Le statut doit être passé manuellement à `Processing` une fois le paiement confirmé.
 
-Les commandes avec le statut `processing` sont systématiquement envoyées à HubRise. Pour envoyer également les commandes `on-hold`, cochez la case **Envoyer les commandes en attente de paiement à HubRise**.
+Les commandes avec le statut `Processing` sont systématiquement envoyées à HubRise. Pour envoyer également les commandes `On-hold`, cochez la case **Envoyer les commandes en attente de paiement à HubRise**.
 
-Dans le menu déroulant **Statut HubRise des nouvelles commandes**, sélectionnez le statut HubRise que vous souhaitez attribuer aux nouvelles commandes provenant de WooCommerce. Ce statut s'applique aux commandes `processing` et, lorsqu'il est activé, aux commandes `on-hold`.
+Dans le menu déroulant **Statut HubRise des nouvelles commandes**, sélectionnez le statut HubRise que vous souhaitez attribuer aux nouvelles commandes provenant de WooCommerce. Ce statut s'applique aux commandes `Processing` et, lorsqu'il est activé, aux commandes `On-hold`.
 
 Configurez ensuite comment les mises à jour des statuts de commande dans HubRise sont reflétées dans WooCommerce.
 Pour chaque statut HubRise de la section, sélectionnez le statut correspondant à appliquer dans WooCommerce.
-Par exemple, vous pouvez choisir d'indiquer que les commandes sont `completed` (terminée) dans WooCommerce lorsqu'elles passent au statut `Terminée` dans HubRise.
+Par exemple, vous pouvez choisir d'indiquer que les commandes sont `Completed` (Terminée) dans WooCommerce lorsqu'elles passent au statut `completed` dans HubRise.
 
 ### Types de service
 
@@ -42,7 +48,7 @@ Choisissez si vous souhaitez recevoir les informations sur le type de service de
 Votre installation WooCommerce doit pouvoir envoyer à HubRise une clé de métadonnée et jusqu'à trois valeurs correspondant à la livraison, la vente à emporter et la consommation sur place, dans cet ordre.
 
 Dans le champ **Code ref du type de service**, saisissez le code ref du service attendu par votre logiciel de caisse.
-Pour connaître ses exigences, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
+Pour connaître ses exigences, reportez-vous à la documentation de votre logiciel de caisse sur la [page Apps](/apps) du site internet de HubRise.
 
 ![Page de configuration de WooCommerce Bridge](./images/017-woocommerce-configuration-2.png)
 
@@ -81,19 +87,19 @@ Dans chaque champ, vous pouvez indiquer plusieurs clés séparées par une virgu
 ### Remises
 
 Le **Code ref remise** est le code ref associé aux remises WooCommerce dans votre logiciel de caisse.
-Pour savoir comment gérer les remises dans celui-ci, reportez-vous à sa documentation sur le site internet de HubRise.
+Pour savoir comment gérer les remises dans celui-ci, reportez-vous à sa documentation sur la [page Apps](/apps) du site internet de HubRise.
 
 ### Frais
 
 Le **Code ref frais de livraison** est le code ref associé aux frais de livraison WooCommerce dans votre logiciel de caisse.
-Pour vérifier, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
+Pour vérifier, référez-vous à la documentation de votre logiciel de caisse sur la [page Apps](/apps) du site internet de HubRise.
 
 ### Paiements
 
 Chaque méthode de paiement que vous prenez en charge sur WooCommerce est identifiée par un ID standard et non configurable.
 
 Dans la section **Paiements**, spécifiez l'ID WooCommerce et le code ref des méthodes de paiement (jusqu'à 15), ce qui permet leur analyse correcte dans vos commandes.
-Pour connaître les codes ref requis par votre logiciel de caisse, consultez sa documentation sur le site internet de HubRise.
+Pour connaître les codes ref requis par votre logiciel de caisse, consultez sa documentation sur la [page Apps](/apps) du site internet de HubRise.
 
 Voici des exemples d'ID de méthodes de paiement WooCommerce :
 
@@ -108,17 +114,15 @@ Pour trouver l'ID WooCommerce d'autres méthodes de paiement, suivez ces étapes
 2. Cliquez sur le nom de la méthode de paiement pour afficher ses informations détaillées.
 3. Sur la page qui s'affiche, notez dans l'URL la valeur située après la clé `section=`. Par exemple, si l'URL de la page est `https://mywoocommercestore.com/wp-admin/admin.php?page=wc-settings&tab=checkout&section=cod`, l'ID de la méthode de paiement est `cod`.
 
-### Multi-sites
+### Multisite
 
-Si vous prenez en charge plusieurs boutiques du même site internet WooCommerce, vous devez configurer la section **Multi-sites**.
+Si vous prenez en charge plusieurs boutiques du même site internet WooCommerce, vous devez configurer la section **Multisites**.
 
-Chaque boutique doit être connectée à son propre WooCommerce Bridge et identifiée par une valeur de métadonnée unique incluse dans la requête de commande envoyée à HubRise. Les commandes ne sont transmises au point de vente associé au bridge que lorsqu'il y a une correspondance de valeur de métadonnées. Si ce n'est pas le cas, la commande est ignorée.
+Chaque point de vente doit être connecté à son propre WooCommerce Bridge et identifiée par une valeur de métadonnée unique incluse dans la requête de commande envoyée à HubRise. Les commandes ne sont transmises au point de vente que lorsqu'il y a une correspondance de valeur de métadonnées.
 
-Dans le champ **Clé de métadonnée multi-site**, spécifiez la clé de métadonnée utilisée pour identifier les boutiques.
+Dans le champ **Clé de métadonnée multisite**, spécifiez la clé de métadonnée utilisée pour identifier les points de vente.
 
-Dans le champ **Valeur(s) pour ce point de vente**, indiquez la valeur associée à la boutique connectée à ce WooCommerce Bridge. Si vous spécifiez plusieurs valeurs, séparez-les par des virgules.
-
-![Page de configuration de WooCommerce Bridge](./images/018-woocommerce-configuration-3.png)
+Dans le champ **Valeur(s) pour ce point de vente**, indiquez la valeur associée au point de vente. Si vous spécifiez plusieurs valeurs, séparez-les par des virgules.
 
 ## Clients
 
@@ -128,7 +132,7 @@ Cochez la case **Toujours utiliser l'adresse de facturation** pour que l'adresse
 
 Si vous utilisez des plugins qui stockent les informations clients dans les métadonnées, utilisez les champs **Clé de (...)** pour associer vos clés de métadonnées aux champs clients dans HubRise. Pour vous aider à identifier les bonnes clés de métadonnées, passez quelques commandes de test depuis votre boutique WooCommerce et consultez les logs des commandes dans l'onglet **Dernières opérations**.
 
-![Page de configuration de WooCommerce Bridge](./images/019-woocommerce-configuration-4.png)
+![Page de configuration de WooCommerce Bridge](./images/018-woocommerce-configuration-3.png)
 
 ## Catalogue {#catalog}
 
@@ -144,6 +148,8 @@ Pour mettre à jour le prix des produits existants, cochez la case **Mettre à j
 Par défaut, WooCommerce Bridge convertit les SKU HubRise en attributs de produits dans WooCommerce avec le nom `Taille`.
 Pour utiliser un nom différent pour vos attributs, par exemple `Couleur`, saisissez la valeur souhaitée dans le champ **Nom de l'attribut pour les SKUs**.
 
+![Page de configuration de WooCommerce Bridge](./images/019-woocommerce-configuration-4.png)
+
 ## Inventaire
 
 Dans la section **Inventaire**, vous pouvez configurer les mises à jour automatiques des compteurs d'inventaire WooCommerce lorsque l'inventaire HubRise change.
@@ -153,7 +159,7 @@ Pour activer cette fonctionnalité, cochez la case **Activer l'envoi automatique
 
 Pour enregistrer la configuration, cliquez sur **Enregistrer** en haut de la page.
 
-## Réinitialiser la configuration
+## Réinitialiser la configuration {#reset}
 
 Si vous avez besoin de réinitialiser la configuration, cliquez sur **Réinitialiser la configuration** en bas de la page.
 

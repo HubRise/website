@@ -30,9 +30,10 @@ Depuis son lancement en 2011, WooCommerce est devenue la solution d'e-commerce l
 
 La connexion de WooCommerce permet à HubRise de :
 
-- Recevoir les commandes de WooCommerce, y compris le statut de commande.
+- Recevoir les commandes de WooCommerce, dont le statut de commande.
 - Recevoir les informations clients de WooCommerce.
 - Envoyer un catalogue vers WooCommerce.
+- Synchroniser l'inventaire avec WooCommerce.
 
 ## Pourquoi se connecter ?
 
@@ -42,4 +43,4 @@ Grâce à HubRise, vous pouvez synchroniser votre menu, vos informations clients
 
 ## Prérequis
 
-Pour établir une connexion entre WooCommerce et HubRise, vous devez disposer d'un site de commande en ligne WooCommerce existant, que vous pouvez créer à partir du [site Internet de WooCommerce] (https\://woocommerce.com).
+Pour établir une connexion entre WooCommerce et HubRise, vous devez disposer d'un site de commande en ligne WooCommerce existant, que vous pouvez créer à partir du [site Internet de WooCommerce](https://woocommerce.com).

@@ -8,17 +8,17 @@ meta:
   description: Find out how to push your HubRise catalog to WooCommerce, how items and options are encoded, and which features are supported.
 ---
 
-With WooCommerce Bridge, you can push your HubRise catalog directly into your WooCommerce store with a single click.
-
-You can also configure the bridge to push your catalog to WooCommerce every time it is updated on HubRise. For more information, see [Catalog](/apps/woocommerce/configuration#catalog).
-
 This page explains how you can push your catalog and what information is sent to WooCommerce.
+
+With WooCommerce Bridge, you can push your HubRise catalog directly into your WooCommerce store with a single click, or automate the push every time your catalog is updated on HubRise.
+
+For more information on HubRise catalogs, see our online help, section [Catalogs](/docs/catalog).
 
 ## Populate a HubRise Catalog
 
-To be able to push your catalog into WooCommerce, you must populate a HubRise catalog first. Many apps connected with HubRise, including EPOS solutions, offer the ability to export the catalog to HubRise. Refer to your EPOS documentation on the HubRise website to verify.
+To be able to push your catalog into WooCommerce, you must populate a HubRise catalog first. Many apps connected with HubRise, including EPOS solutions, offer the ability to export the catalog to HubRise. Refer to your EPOS documentation on the HubRise website [Apps page](/apps) to verify.
 
-For more information on HubRise catalogs, see [Catalogs](/docs/catalog).
+You can also create, or edit your catalog using the HubRise Catalog Manager to include ref codes, for example. Catalog Manager is edited by HubRise and you can use it free of charge. For more information, see [Catalog Manager](/apps/catalog-manager/overview).
 
 ## Manual Catalog Push
 
@@ -26,10 +26,10 @@ Once your catalog is populated on HubRise, you can push it manually to your WooC
 
 1. Log in to your [HubRise account](https://manager.hubrise.com).
 1. Select the HubRise account and location connected with your WooCommerce store.
-1. Open the **CONNECTIONS** page, then select **WooCommerce Bridge** from the list of connected apps.
+1. Open the **CONNECTIONS** page, then find **WooCommerce Bridge** from the list of connected apps and click **Open**.
 1. In WooCommerce Bridge, select the **Actions** tab, then click **Push catalog**.
 
-When you push your catalog, WooCommerce Bridge creates the products that do not yet exist in WooCommerce. It also updates the price of your WooCommerce products, if the **Update prices of existing products** checkbox is selected in the Configuration page. WooCommerce Bridge does not delete products.
+When you push your catalog, WooCommerce Bridge creates the products that do not yet exist in WooCommerce. It matches them using ref codes. It also updates the price of your WooCommerce products, if the **Update prices of existing products** checkbox is selected in the bridge **Configuration** page. WooCommerce Bridge does not delete products.
 
 ## Automatic Catalog Push
 
@@ -37,18 +37,23 @@ WooCommerce Bridge can automatically push your HubRise catalog into WooCommerce 
 
 1. Log in to your [HubRise account](https://manager.hubrise.com).
 1. Select the HubRise account and location connected with your WooCommerce store.
-1. Open the **CONNECTIONS** page, then select **WooCommerce Bridge** from the list of connected apps.
+1. Open the **CONNECTIONS** page, then find **WooCommerce Bridge** from the list of connected apps and click **Open**.
 1. In WooCommerce Bridge, select the **Configuration** tab.
-1. In the **Catalog** section, tick **Push the catalog to WooCommerce when it is updated in HubRise**.
+1. In the **Catalog** section, tick **Enable automatic catalog push** to push the catalog into WooCommerce when it is updated in HubRise with new products.
+1. Tick **Update prices of existing products** to update prices of products already on your WooCommerce store.
 1. Click **Save**.
+
+When you push your catalog, WooCommerce Bridge creates the products that do not yet exist in WooCommerce.  It matches them using ref codes. WooCommerce Bridge does not delete products.
+
+For more information, on how to configure the bridge to push your HubRise catalog into WooCommerce every time it is updated on HubRise, see section [catalog Configuration](/apps/woocommerce/configuration#catalog).
 
 ## Technical Reference
 
-The following sections describe in detail how HubRise catalogs are mapped to WooCommerce menus.
+The following sections describe in detail how HubRise catalogs are mapped to WooCommerce **Products**.
 
 ---
 
-**IMPORTANT NOTE:** WooCommerce only supports categories, products, and skus. All the other items in HubRise catalogs, including options, deals, and discounts, are not sent to WooCommerce.
+**IMPORTANT NOTE:** WooCommerce only supports categories, products, and skus. Other items in HubRise catalogs, including options, deals, and discounts, are not sent to WooCommerce.
 
 ---
 
@@ -67,7 +72,7 @@ For every category, the following HubRise fields are sent to WooCommerce:
 Products in a HubRise catalog are mapped to WooCommerce in two different ways.
 
 - A HubRise product without skus is mapped to a **Simple product** in WooCommerce.
-- A HubRise product with skus is mapped to a **Variable product** in WooCommerce.
+- A HubRise product with skus is mapped to product **Variations** in WooCommerce.
 
 For every product in the HubRise catalog, the following information is sent to WooCommerce.
 
@@ -77,7 +82,7 @@ For every product in the HubRise catalog, the following information is sent to W
 - `price`: The price of the product
 - `images`: The images associated with the product
 
-If skus are present, WooCommerce Bridge creates a list of attributes named "sku" attached to the product, where the values are the names of the skus.
+If skus are present, WooCommerce Bridge creates a list of attributes named **Size** attached to the product, where the values are the names of the skus.
 
 The bridge uses HubRise ref codes to detect existing products in WooCommerce and avoid duplicating them.
 
@@ -95,4 +100,4 @@ For every `sku` object in a product, WooCommerce Bridge creates a variation with
 
 Lists of options attached to HubRise products are ignored.
 
-For more information about products and skus in HubRise catalogs, see [Products](/developers/api/catalogs#products) and [Skus](/developers/api/catalogs#skus).
+For more information about products and skus in HubRise catalogs, see our API documentation section [Products](/developers/api/catalogs#products) and section [Skus](/developers/api/catalogs#skus).

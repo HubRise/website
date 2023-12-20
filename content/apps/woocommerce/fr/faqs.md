@@ -8,4 +8,4 @@ meta:
   description: FAQ sur la connexion de WooCommerce à HubRise afin que votre logiciel de caisse fonctionne harmonieusement avec d'autres apps. Connectez les apps et synchronisez vos données.
 ---
 
-- [Comment encoder des métadonnées personnalisées dans une commande ?](/apps/woocommerce/faq/encoder-metadonnees-personnalisees)
+- [Comment encoder des métadonnées personnalisées dans une commande ?](/apps/woocommerce/faqs/encode-custom-metadata)

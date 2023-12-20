@@ -18,18 +18,18 @@ If you have connected WooCommerce to HubRise, but you are not receiving orders i
 
 When you connect WooCommerce Bridge, it creates two webhooks on your WooCommerce website. These webhooks are essential to transmit orders from WooCommerce to HubRise.
 
-Not only should you verify the presence of these webhooks, but you also need to ensure that their status is **active**. If the status is **inactive**, the webhooks will not work. You will need to reactivate them by clicking on their names.
+Not only should you verify the presence of these webhooks, but you also need to ensure that their status is **Active**. If the status is **Inactive**, the webhooks will not work. You will need to reactivate them by clicking on their names.
 
 To check that the webhooks have been created:
 
 1. Open your WooCommerce back office.
-1. From the left navigation panel, click **WooCommerce > Settings > Advanced**.
+1. From the left navigation panel, click **WooCommerce** > **Settings** > **Advanced**.
 1. Then click on **Webhooks**.
    ![Entering the ref code in the SKU field for a WooCommerce variation](./images/010-woocommerce-webhooks.png)
 1. Find two entries with the following names:
    - `HubRise {{your_location_id}}: Order updated`
    - `HubRise {{your_location_id}}: Order created`
-1. Check the status of each entry. If any of them are set to **inactive**, click on their names to change the status to **active**.
+1. Check the status of each entry. If any of them are set to **Inactive**, click on their names to change the status to **Active**.
 
 If these entries are present and active, it is a good sign that the connection to HubRise was successfully established. You can proceed to the next verification step.
 
@@ -40,16 +40,17 @@ If you cannot find the two entries, you need to reconnect the bridge and check W
 To verify the connection between WooCommerce and HubRise, place a test order in WooCommerce and check that it is transmitted to HubRise.
 
 1. Open your WooCommerce back office.
-1. From the top menu, click **View Store**. This will open your WooCommerce website.
+1. From the top menu, click **Visit Store**. This will open your WooCommerce website.
 1. Place an order on your WooCommerce website.
-1. Return to your WooCommerce back office, and from the left navigation panel click **WooCommerce > Orders**. The new order will be present.
+1. Return to your WooCommerce back office, and from the left navigation panel click **WooCommerce** > **Orders**. The new order will be present.
 
 When WooCommerce is connected to HubRise, orders placed in WooCommerce should be transmitted to HubRise immediately.
 
 To verify that your test order was transmitted to HubRise, follow these steps:
 
-1. From the HubRise back office, click **Data** > **Orders**.
-1. Find your test order.
+1. Open your HubRise back office.
+1. Navigate to the **DATA** > **ORDERS** page.
+1. Find your test order within.
 
 If you can see the order, the connection between WooCommerce and HubRise is working correctly.
 
@@ -85,11 +86,9 @@ If the API key for HubRise has been removed in WooCommerce, it will lead to 401 
 1. Navigate to **WooCommerce** > **Settings** > **Advanced** > **REST API**.
 1. Verify if there is an API key named `HubRise - API`.
 
-Refer to the screenshot for clarity:
-
 ![API key check in WooCommerce](./images/014-woocommerce-rest-api.png)
 
-If the `HubRise - API` key is not present, it means it has been removed, and you need to reconnect the bridge. For more information on reconnecting the bridge, see [Connect to HubRise](/apps/woocommerce/connect-hubrise).
+If the `HubRise - API` key is not present, it means it has been removed, and you need to reconnect the bridge. For more information on connecting the bridge, see [Connect to HubRise](/apps/woocommerce/connect-hubrise).
 
 ### HTTP Basic Authentication Fail
 
@@ -101,9 +100,9 @@ To do this:
 1. Configure the bridge again from scratch, but when you reach the first step of the configuration, unfold **Advanced Options**.
 1. Select the **Use OAuth1** option.
    ![OAuth1 option in WooCommerce Bridge](./images/013-woocommerce-step-1-advanced.png)
-1. Proceed with the configuration as described in [Connect to HubRise](/apps/woocommerce/connect-hubrise).
+1. Proceed with the configuration as described section [Connect to HubRise](/apps/woocommerce/connect-hubrise).
 
-After making this change, verify if the 401 errors are resolved. If not, check the other troubleshooting steps or contact HubRise support.
+After making this change, verify if the 401 errors are resolved. If not, check the other troubleshooting steps or contact HubRise on [support@hubrise.com](mailto:support@hubrise.com).
 
 ### Incorrect URL During Setup
 
@@ -129,6 +128,6 @@ In this case, the error message indicates that the signature provided does not m
 
 Here is how to correct this:
 
-1. Reset the configuration of WooCommerce Bridge.
+1. Reset the WooCommerce Bridge configuration. To find out how, see [Reset the Configuration](/apps/woocommerce/configuration#reset).
 1. Configure the bridge again from scratch. When you reach the first step of the configuration, enter the correct URL of your WooCommerce store, ensuring the URL matches exactly with your website (pay attention to whether your website uses `www` or not).
 1. Proceed with the configuration as described in [Connect to HubRise](/apps/woocommerce/connect-hubrise).

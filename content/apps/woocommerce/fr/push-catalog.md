@@ -8,17 +8,17 @@ meta:
   description: Découvrez comment envoyer le catalogue HubRise vers WooCommerce, comment les articles et options sont encodés, et quelles fonctionnalités sont prises en charge.
 ---
 
-Avec WooCommerce Bridge, vous pouvez envoyer votre catalogue HubRise directement vers votre boutique WooCommerce, en un seul clic.
-
-Vous pouvez également configurer le bridge de manière à envoyer votre catalogue vers WooCommerce à chaque fois qu'il est modifié dans HubRise. Pour plus d'informations, voir la section [Catalogue](/apps/woocommerce/configuration#catalog).
-
 Cette page explique comment envoyer votre catalogue et quelles informations sont transmises à WooCommerce.
+
+Avec WooCommerce Bridge, vous pouvez envoyer votre catalogue HubRise directement vers votre boutique WooCommerce en un seul clic, ou automatiser l'envoi à chaque mise à jour de votre catalogue sur HubRise.
+
+Pour plus d'informations sur les catalogues HubRise, voir notre aide en ligne, rubrique [Catalogues](/docs/catalog).
 
 ## Alimenter un catalogue HubRise
 
-Pour pouvoir envoyer votre catalogue vers WooCommerce, vous devez préalablement alimenter un catalogue HubRise. De nombreuses applications connectées à HubRise, y compris des logiciels de caisse, offrent la possibilité d'exporter leur catalogue vers HubRise. Pour vérifier, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
+Pour pouvoir envoyer votre catalogue vers WooCommerce, vous devez préalablement alimenter un catalogue HubRise. De nombreuses applications connectées à HubRise, y compris des logiciels de caisse, offrent la possibilité d'exporter leur catalogue vers HubRise. Pour vérifier, référez-vous à la documentation de votre logiciel de caisse sur la [page Apps](/apps) du site internet de HubRise.
 
-Pour plus d'informations sur les catalogues HubRise, voir la rubrique [Catalogues] (/docs/catalogues).
+Vous pouvez également créer, ou éditer votre catalogue en utilisant le Catalog Manager de HubRise pour inclure des codes ref, par exemple. Catalog Manager est édité par HubRise, vous pouvez l'utiliser gratuitement. Pour plus d'informations, voir [Catalog Manager](/apps/catalog-manager/overview).
 
 ## Envoi manuel du catalogue
 
@@ -26,10 +26,10 @@ Une fois que votre catalogue a été alimenté dans HubRise, vous pouvez l'envoy
 
 1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com).
 2. Sélectionnez le compte HubRise et le point de vente connecté à votre boutique WooCommerce.
-3. Ouvrez la page **CONNEXIONS**, puis sélectionnez **WooCommerce Bridge** dans la liste des applications connectées.
+3. Ouvrez la page **CONNEXIONS**, puis sélectionnez **WooCommerce Bridge** dans la liste des applications connectées, puis cliquez sur **Ouvrir**.
 4. Dans WooCommerce Bridge, sélectionnez l'onglet **Actions**, puis cliquez sur **Envoyer le catalogue**.
 
-Lorsque vous envoyez votre catalogue, WooCommerce Bridge crée les produits qui n'existent pas encore dans WooCommerce. Il met également à jour le prix de vos produits WooCommerce, si la case **Mettre à jour le prix des produits existants** est cochée dans la page Configuration. WooCommerce Bridge ne supprime pas de produits.
+Lorsque vous envoyez votre catalogue, WooCommerce Bridge crée les produits qui n'existent pas encore dans WooCommerce. Il les associe en utilisant les codes ref. Il met également à jour le prix de vos produits WooCommerce, si la case **Mettre à jour le prix des produits existants** est cochée dans la page de **Configuration** du bridge. WooCommerce Bridge ne supprime pas de produits.
 
 ## Envoi automatique du catalogue
 
@@ -37,18 +37,23 @@ WooCommerce Bridge peut envoyer automatiquement votre catalogue HubRise vers Woo
 
 1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com).
 2. Sélectionnez le compte HubRise et le point de vente connecté à votre boutique WooCommerce.
-3. Ouvrez la page **CONNEXIONS**, puis sélectionnez **WooCommerce Bridge** dans la liste des applications connectées.
+3. Ouvrez la page **CONNEXIONS**, puis sélectionnez **WooCommerce Bridge** dans la liste des applications connectées, puis cliquez sur **Ouvrir**.
 4. Dans WooCommerce Bridge, sélectionnez l'onglet **Configuration**.
-5. Dans la section **Catalogue**, cochez **Activer l'envoi automatique du catalogue**.
-6. Cliquez sur **Enregistrer**.
+5. Dans la section **Catalogue**, cochez **Activer l'envoi automatique du catalogue** vers WooCommerce lorsqu'il est mis à jour dans HubRise avec de nouveaux produits.
+6. Cochez **Mettre à jour le prix des produits existants** pour mettre à jour les prix des produits déjà présents sur votre enseigne WooCommerce.
+7. Cliquez sur **Enregistrer**.
+
+Lorsque vous envoyez votre catalogue, WooCommerce Bridge crée les produits qui n'existent pas encore dans WooCommerce.  Il les associe en utilisant les codes ref. WooCommerce Bridge ne supprime pas de produits.
+
+Pour plus d'informations, sur la façon de configurer le bridge pour envoyer votre catalogue HubRise dans WooCommerce chaque fois qu'il est mis à jour sur HubRise, consultez la rubrique [Configuration du catalogue](/apps/woocommerce/configuration#catalog).
 
 ## Références techniques
 
-Les sections suivantes décrivent la manière dont les catalogues HubRise sont associés aux menus WooCommerce.
+Les sections suivantes décrivent la manière dont les catalogues HubRise sont associés aux **Produits** WooCommerce.
 
 ***
 
-**REMARQUE IMPORTANTE :** WooCommerce ne prend en charge que les catégories, les produits et les SKU. Tous les autres articles des catalogues HubRise, par exemple les options, les promotions et les remises, ne sont pas envoyés à WooCommerce.
+**REMARQUE IMPORTANTE :** WooCommerce ne prend en charge que les catégories, les produits et les SKU. Les autres articles des catalogues HubRise, par exemple les options, les promotions et les remises, ne sont pas envoyés à WooCommerce.
 
 ***
 
@@ -67,7 +72,7 @@ Pour chaque catégorie, les champs HubRise suivants sont envoyés à WooCommerce
 Les produits d'un catalogue HubRise sont associés à WooCommerce de la façon suivante :
 
 - Un produit HubRise sans SKU est associé à un **Produit simple** dans WooCommerce.
-- Un produit HubRise avec des SKU est associé à un **Produit variable** dans WooCommerce.
+- Un produit HubRise avec des SKU est associé à une **Variation** de produit dans WooCommerce.
 
 Pour chaque produit d'un catalogue HubRise, les informations suivantes sont envoyées à WooCommerce.
 
@@ -77,7 +82,7 @@ Pour chaque produit d'un catalogue HubRise, les informations suivantes sont envo
 - `price` : prix du produit
 - `images` : images associées au produit
 
-S'il y a des SKU, WooCommerce Bridge crée une liste d'attributs nommés "sku" rattachés au produit, dont les valeurs sont les noms des SKU.
+S'il y a des SKU, WooCommerce Bridge crée une liste d'attributs nommés **Size** rattachée au produit, dont les valeurs sont les noms des SKU.
 
 Le bridge utilise les codes ref HubRise pour détecter les produits existants dans WooCommerce et éviter de les dupliquer.
 
@@ -95,4 +100,4 @@ Pour chaque objet `sku` dans un produit, WooCommerce Bridge crée une variante a
 
 Les listes d'options rattachées aux produits HubRise sont ignorées.
 
-Pour plus d'informations sur les produits et les SKU dans les catalogues HubRise, voir [Products](/developers/api/catalogs#products) et [Skus](/developers/api/catalogs#skus).
+Pour plus d'informations sur les produits et les SKU dans les catalogues HubRise, voir notre documentation API rubrique [Products](/developers/api/catalogs#products) et rubrique [Skus](/developers/api/catalogs#skus) (en anglais).

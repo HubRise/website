@@ -19,15 +19,15 @@ Les opérations peuvent soit être liées à une commande spécifique, soit êtr
 Chaque ligne de la page affiche les informations suivantes sur une opération :
 
 - **HEURE** : date et heure de la commande.
-- **COMMANDE** : identifiant de la commande HubRise, pour les opérations de commande.
-- **DESCRIPTION** : description facultative pour les opérations qui ne sont pas liées à une commande spécifique. Cette colonne peut être vide, ou afficher `System request` (Requête système) ou `Catalog push` (Envoi catalogue).
-- **STATUT** : statut de la commande. La valeur `OK` indique que la commande a bien été envoyée. Dans le cas contraire, un code d'erreur s'affiche en rouge.
+- **COMMANDE** : identifiant HubRise de la commande, pour les opérations liées à la commande.
+- **DESCRIPTION** : description facultative pour les opérations qui ne sont pas liées à une commande spécifique. Cette colonne peut être vide, ou afficher `Requête système` ou `Envoi catalogue`.
+- **STATUT** : statut de la commande. La valeur `OK` indique que la commande a bien été transmise. Si un problème survient, un code d'erreur s'affichera en rouge, tel que `400`.
 
 Le libellé **Requête système** indique que l'opération n'est pas liée à une commande spécifique.
 
-![Page des opérations de WooCommerce Bridge, développé par HubRise](./images/002-woocommerce-main-page.png)
-
 Cliquez sur une ligne pour afficher une page avec les logs associés à l'opération.
+
+![Page des opérations de WooCommerce Bridge, développé par HubRise](./images/002-woocommerce-main-page.png)
 
 ### Opération de commande
 
@@ -45,34 +45,31 @@ Cliquez sur une requête pour la développer et afficher le détail de ses logs 
 
 ![Page des journaux de commande sur WooCommerce Bridge](./images/003-woocommerce-order-page.png)
 
-Les logs constituent un puissant outil de débogage en cas d'incident. Pour comprendre comment lire ces logs, voir [Comprendre les logs HubRise](/docs/hubrise-logs).
+Les logs constituent un puissant outil de débogage en cas d'incident. Pour comprendre comment lire ces logs, voir [Comprendre les logs HubRise](/docs/hubrise-logs/overview).
 
 ### Opération de requête système
 
-Une page de requête système est présentée de la même manière qu'une page de commande.
+Les pages de requête système fournissent des informations de débogage utiles aux équipes d'assistance. Cependant, elles ont généralement peu d'intérêt pour les autres utilisateurs.
+La mise en page est identique à celle d'une page de commande.
 
-Les requêtes système sont généralement envoyées par WooCommerce Bridge pour informer HubRise d'une modification de la configuration ou pour récupérer les informations les plus récentes. À titre d'exemple, l'image suivante illustre une requête de mise à jour du rappel de WooCommerce Bridge après un changement de configuration.
+Les requêtes système sont généralement envoyées par WooCommerce Bridge pour informer HubRise d'une modification de la configuration ou pour récupérer les informations les plus récentes. Par exemple, nous pourrions observer une requête de mise à jour du callback de WooCommerce Bridge après un changement de configuration.
 
 ![Page de requête système sur WooCommerce Bridge](./images/004-woocommerce-system-request-page.png)
-
-Les pages de requête système fournissent des informations de débogage utiles aux équipes d'assistance. Cependant, elles ont généralement peu d'intérêt pour les autres utilisateurs.
 
 ## Actions
 
 Pour accéder à la page des actions, cliquez sur **Actions** en haut de l'écran. Si le lien n'apparaît pas, terminez d'abord la configuration de WooCommerce Bridge.
 
-Depuis la page des actions, vous pouvez envoyer le catalogue vers WooCommerce. Pour plus de détails, voir [Envoyer le catalogue](/apps/woocommerce/envoyer-catalogue).
+Depuis la page des actions, vous pouvez envoyer le catalogue vers WooCommerce. Pour plus de détails, voir [Envoyer le catalogue](/apps/woocommerce/push-catalog).
 
 ## Configuration {#configuration}
 
-Pour accéder à la page de configuration de WooCommerce Bridge, cliquez sur **Configuration** en haut de l'écran.
+Pour accéder à la page de configuration de WooCommerce Bridge, cliquez sur **Configuration** en haut de l'écran. Cette page vous permet de personnaliser le comportement de WooCommerce Bridge. Pour plus de détails, voir [Configuration](/apps/woocommerce/configuration).
 
-![Page de configuration de WooCommerce Bridge](./images/016-woocommerce-configuration-1.png)
-
-Cette page vous permet de personnaliser le comportement de WooCommerce Bridge. Pour plus de détails, voir [Configuration](/applications/woocommerce/configuration).
+![Page de configuration WooCommerce Bridge](./images/016-woocommerce-configuration-1.png)
 
 ## Langue et navigation
 
-En haut à droite de l'écran, vous pouvez cliquer sur la flèche <InlineImage width="20" height="20">![Icône de flèche](../images/arrow-icon.jpg)</InlineImage> pour développer le menu, et passer la page en anglais ou en français.
+Dans le coin supérieur droit de la page, vous pouvez cliquer sur la flèche pour développer le menu. De là, vous pouvez alterner l'affichage de la page en anglais ou en français.
 
 Un clic sur le logo de WooCommerce ou de HubRise en haut de n'importe quelle page de WooCommerce Bridge vous ramène à la page **Dernières opérations**.
