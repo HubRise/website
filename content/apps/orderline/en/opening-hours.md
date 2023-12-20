@@ -23,7 +23,8 @@ For each day of the week, you can specify multiple time slots when your establis
 
 - To add a time slot, click the **Add time slot** button.
 - To replicate the time slots to all remaining days of the week, use the **Copy to bottom** feature.
-- To remove a time slot, click the trash bin icon next to it. The business is considered closed if no hours are specified for a given day.
+- To remove a time slot, click the trash bin icon next to it. The business is considered closed for any day where no time slot is defined.
+- Ensure at least one time slot is defined for the week.
 
 ## Edit Time Slots
 
@@ -48,15 +49,6 @@ Opening hours synchronisation is currently supported with:
 
 Ensure that the feature is enabled on the respective platform as described below.
 
-### Just Eat Specifics
-
-For Just Eat integrations, a quick eligibility check can be performed:
-
-- Open the **Connections** page in the HubRise back office.
-- Verify that the bridge listed is **Just Eat Flyt Bridge** rather than **Just Eat Takeaway Bridge**.
-
-Only the Flyt Bridge supports opening hours synchronisation.
-
 ### Enable Synchronisation
 
 To enable the synchronisation of opening hours to these platforms:
@@ -64,6 +56,15 @@ To enable the synchronisation of opening hours to these platforms:
 1. Open the platform's bridge, and navigate to the **Settings** page.
 2. In the **Location** section, tick the checkbox labelled **Enable automatic opening hours push**.
 3. Save the changes.
+
+### Just Eat
+
+For Just Eat integrations, a quick eligibility check can be performed:
+
+- Open the **Connections** page in the HubRise back office.
+- Verify that the bridge listed is **Just Eat Flyt Bridge** rather than **Just Eat Takeaway Bridge**.
+
+Only the Flyt Bridge supports opening hours synchronisation.
 
 ### Support for Other Apps
 
