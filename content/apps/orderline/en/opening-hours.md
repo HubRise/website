@@ -8,23 +8,29 @@ meta:
   description: Manage and customise your establishment's opening hours on all connected ordering and delivery platforms through OrderLine.
 ---
 
-The **Opening Hours** page allows you to specify the times when your establishment is open for business on any connected ordering and delivery platforms
-supporting this feature. See [Platform Support](#platform-support) for more information.
+You can use OrderLine to manage opening hours of your online stores. It will work with online ordering solutions and food ordering and delivery platforms connected to your HubRise account that support this feature. Refer to your app documentation on the HubRise website [Apps page](/apps) to verify.
 
 To navigate to the Opening Hours page, select the **Opening Hours** tab located at the top of the screen. On mobile devices, select it in the burger menu.
 
-The interface provides a weekly schedule with options to specify time slots for each day.
+The user interface provides a weekly schedule with options to specify time slots for each day.
 
 ![Opening Hours Interface](./images/020-opening-hours.png)
 
 ## Manage Opening Hours
 
-For each day of the week, you can specify multiple time slots when your establishment is open:
+For each day of the week, you can specify multiple opening hour time slots for your store. 
+A restaurant can, for instance, have three time slots within a day. It can be open early morning for breakfast from 6:00 to 10:00. Then again for lunch from 11:30 from 14:30. And later for diner from 19:00 to 23:30. 
 
-- To add a time slot, click the **Add time slot** button.
-- To replicate the time slots to all remaining days of the week, use the **Copy to bottom** feature.
-- To remove a time slot, click the trash bin icon next to it. The business is considered closed for any day where no time slot is defined.
-- Ensure at least one time slot is defined for the week.
+Follow these steps to configure your time slots:
+
+- Click the **Add time slot** button.
+- Edit the time slot where prompted.  
+- Click the **Add time slot** button again to add a new time slot to the same day if needed. Make sure you have no time slot overlap.
+- Start the process again for each day of the week or click  **Copy to bottom** to replicate time slots to all remaining days of the week.
+- To remove an erroneous time slot, click the trash bin icon next to it.
+- Remember to **Save**.
+
+The store is considered closed for days without any defined time slot. Ensure at least one time slot is defined for the week.
 
 ## Edit Time Slots
 
