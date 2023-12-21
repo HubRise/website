@@ -18,60 +18,77 @@ The user interface provides a weekly schedule with options to specify time slots
 
 ## Manage Opening Hours
 
-For each day of the week, you can specify multiple opening hour time slots for your store. 
-A restaurant can, for instance, have three time slots within a day. It can be open early morning for breakfast from 6:00 to 10:00. Then again for lunch from 11:30 from 14:30. And later for diner from 19:00 to 23:30. 
+Opening hours will be set in 12-hour or 24-hour time formats depending on your browser settings.
+
+Each time slot has two editable fields, one to enter the start and another to enter the end of the time slot.
+
+For each day of the week, you can specify multiple time slots for your store. A restaurant can, for instance, have three time slots within a day. It can be open early morning for breakfast from  6:00 to 10:00, then again for lunch from  11:30 from 14:30, and later for dinner from 19:00 to 23:30. 
+
+Time slots must not overlap. Their start and end times must be configured in chronological order.
+
+The cutoff time is 06:00 by default, meaning that between 24:00 and 06:00 is considered to be the next day. If your store remains open through the night, the cutoff time can be changed by contacting HubRise on [support@hubrise.com](mailto:support@hubrise.com).
+
+The store is considered closed for days without any defined time slot. Ensure at least one time slot is defined for the week, failing this, opening hours will not synch.
+
+## Edit Time Slots
 
 Follow these steps to configure your time slots:
 
 - Click the **Add time slot** button.
-- Edit the time slot where prompted.  
-- Click the **Add time slot** button again to add a new time slot to the same day if needed. Make sure you have no time slot overlap.
-- Start the process again for each day of the week or click  **Copy to bottom** to replicate time slots to all remaining days of the week.
+- Edit the start and end times or use the available dropdown when prompted.
+- To add a new time slot, click on **Add time slot** again but make sure you have no time overlap. Time slots must be configured in chronological order.
+- Start the process again for each day of the week or click **Copy to bottom** to replicate time slots to all remaining days.
 - To remove an erroneous time slot, click the trash bin icon next to it.
 - Remember to **Save**.
 
-The store is considered closed for days without any defined time slot. Ensure at least one time slot is defined for the week.
-
-## Edit Time Slots
-
-Each time slot has two editable fields to enter the start and end time. These fields can be formatted in 12-hour or 24-hour time formats, depending on your browser settings. Click on any time field to edit the hours.
-
-Time slots must not overlap, and their start and end times must be in chronological order. The cutoff time is 6am by default, meaning that any hour between midnight and 6am is considered to be the next day. The cutoff time can be changed by contacting HubRise support, if your establishment remains open through 6am.
-
 ## Save Changes
 
-When you make any changes to the opening hours, the **Save** and **Cancel** buttons will appear at the bottom of the page. These buttons will disappear after you have either saved or reverted the changes.
+When you make any change to opening hours, the **Save** and **Cancel** buttons will appear at the bottom of the page. These buttons will disappear once you have either saved or reverted the changes.
 
 - To apply your changes, click the **Save** button.
 - To discard any changes, click the **Cancel** button or leave the page without saving.
 
-## Platform Support {#platform-support}
+## Online Ordering Support {#online-ordering-support}
 
-Opening hours synchronisation is currently supported with:
+Opening hours set on OderLine can be sent to online ordering solutions and food ordering and delivery platforms connected to your HubRise account that support this feature.
+
+The following food ordering and delivery platforms support **Opening Hours** synchronisation:
 
 - Deliveroo
 - Uber Eats
-- Just Eat, in markets using Flyt.
+- Just Eat, in markets using the [Flyt integration platform](/apps/just-eat-flyt/overview) now called JET Connect.
 
-Ensure that the feature is enabled on the respective platform as described below.
+---
 
-### Enable Synchronisation
+**IMPORTANT NOTE:** In marlets using the [Just Eat Takeaway integration platform](/apps/just-eat-takeaway/overview) opening hours cannot be synched.
 
-To enable the synchronisation of opening hours to these platforms:
+---
 
-1. Open the platform's bridge, and navigate to the **Settings** page.
-2. In the **Location** section, tick the checkbox labelled **Enable automatic opening hours push**.
-3. Save the changes.
+To find out which online ordering solutions support opening hours synchronisation, refer to your app documentation on the HubRise website [Apps page](/apps).
 
-### Just Eat
+You must enable opening hours synchronisation for each application to which you want opening hours sent. To find out how, see [Enable Synchronisation](#enable_synchronisation)
 
-For Just Eat integrations, a quick eligibility check can be performed:
 
-- Open the **Connections** page in the HubRise back office.
-- Verify that the bridge listed is **Just Eat Flyt Bridge** rather than **Just Eat Takeaway Bridge**.
+## Enable Synchronisation {#enable_synchronisation}
 
-Only the Flyt Bridge supports opening hours synchronisation.
+You must enable opening hours synchronisation for each application to which you want opening hours sent. 
 
-### Support for Other Apps
+### Enable synchronisation with online ordering solutions
 
-Other apps may support opening hours synchronisation. Refer to the documentation of the other app on the HubRise website, or contact HubRise support to verify.
+To enable the synchronisation of opening hours configured on OrderLine with your online ordering solution, refer to the corresponding documentation on the HubRise website [Apps page](/apps) or contact your online ordering support team for help.
+
+### Enable synchronisation with online ordering solutions
+
+To enable the synchronisation of opening hours with online ordering platforms that support this feature, follow these steps:
+
+1. Log in to your [HubRise account](https://manager.hubrise.com).
+1. Select **CONNECTIONS**, find the platform's bridge and click **Open**
+1. Navigate to the **Configuration** page.
+1. In the **Location** section, tick the checkbox labelled **Enable automatic opening hours push**.
+1. Remember to **Save** the changes.
+
+---
+
+**IMPORTANT NOTE:** For Just Eat, opening hours synchronisation works with **Just Eat Flyt Bridge** and not with **Just Eat Takeaway Bridge**. The Just Eat Takeaway integration API does not support this feature. 
+
+---
