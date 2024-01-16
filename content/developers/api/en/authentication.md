@@ -25,7 +25,7 @@ Although it seems complicated at first, OAuth actually makes things simpler for 
 - Your application can only access the data that it needs. For example, your application can request access to orders but not catalogs. Or it can request read-only access.
 - Users can easily revoke access to a potentially insecure or compromised application, without resetting their password.
 
-## 2. OAuth scopes {#oauth-scopes}
+## 2. OAuth Scopes {#oauth-scopes}
 
 A _scope_ controls the set of resources an application has access to. Users can see the scope before granting access to an application. The good practice is to limit your application's scope to the minimum it needs: not only does this reduce the impact of a potential security breach, it also makes your users more comfortable authorising your application.
 
