@@ -202,21 +202,31 @@ The possible `error_type`s are:
 - `internal_error`
 - `routing_error`
 
-The response may also include a field breakdown, like this:
+Depending on the error, the response may include:
 
-```json
-{
-  "message": "Validation failed",
-  "errors": [
+- A field breakdown for `422` errors:
+
+  ```json
     {
-      "field": "price",
-      "message": "'abc' is not a valid monetary amount"
-    },
-    ...
-  ],
-  "error_type": "unprocessable_entity"
-}
-```
+      "message": "Validation failed",
+      "errors": [
+        {
+          "field": "price",
+          "message": "'abc' is not a valid monetary amount"
+        },
+        ...
+      ],
+      "error_type": "unprocessable_entity"
+    }
+  ```
+
+- An error message for `401` errors:
+  ```json
+  {
+    "message": "The connection has been blocked",
+    "error_type": "unauthorized"
+  }
+  ```
 
 ## 8. Private Refs {#private-refs}
 
