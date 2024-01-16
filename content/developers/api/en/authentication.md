@@ -242,16 +242,27 @@ the access token previously associated with this `device_id` is returned.
 
 ## 6. Token Invalidity
 
-At times, access tokens may become invalid, leading to request failures with a `429` status code. Token invalidity can arise from:
+At times, access tokens may become invalid, leading to request failures with a `401` status code with an error message in the response body:
 
-- Non-payment of subscription.
-- Manual disconnection from the HubRise back office.
-- Temporary blocking from the HubRise back office.
+```json
+{
+  "message": "The connection has been blocked",
+  "error_type": "unauthorized"
+}
+```
+
+Token invalidity can arise from:
+
+| Cause                                    | Error message                                                                 |
+| ---------------------------------------- | ----------------------------------------------------------------------------- |
+| Non-payment of subscription              | `The account/location has been suspended for non payment of the subscription` |
+| Token revocation or manual disconnection | `The access token is invalid or the connection has been revoked`              |
+| Temporary blocking                       | `The connection has been blocked`                                             |
 
 Here are the recommended steps to handle such situations:
 
-- **Minimise side effects**: Ensure that a `429` error does not create widespread disruptions. For example, it should not prevent customers from placing orders, but alert the user (the business employee) instead.
-- **Flag the connection**: Implement a `last_failed_at` timestamp for each connection. Set it to the current timestamp when a `429` error occurs, and reset to `null` on successful request completion.
+- **Minimise side effects**: Ensure that a `401` error does not create widespread disruptions. For example, it should not prevent customers from placing orders, but alert the user (the business employee) instead.
+- **Flag the connection**: Implement a `last_failed_at` timestamp for each connection. Set it to the current timestamp when a `401` error occurs, and reset to `null` on successful request completion. Optionally, you can also implement a `last_failed_reason` field to store the error message.
 - **Alert the user**: Show a message to the user when `last_failed_at` is set, e.g., "All requests failed since [timestamp]. Reconnect HubRise to resolve.".
 
 When the user reconnects, the following will happen:
