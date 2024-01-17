@@ -99,19 +99,32 @@ https://manager.hubrise.com/oauth2/v1/authorize?
   scope=location[orders.write,customer_list.write,catalog.read]&
   country=FR&
   account_name=Aux+Délices&
-  location_name=Paris
+  location_name=Paris&
+  state=<<OPTIONAL-STATE>>
 ```
+
+##### Parameters:
+
+| Parameter     | Required | Description                                                                   |
+| ------------- | -------- | ----------------------------------------------------------------------------- |
+| redirect_uri  | Yes      | The URL to which the user is redirected after authorisation.                  |
+| client_id     | Yes      | The client ID of your application.                                            |
+| scope         | Yes      | The permissions your application requires. See [OAuth Scopes](#oauth-scopes). |
+| country       | No       | 2 letter ISO country code. Used to pre-select the country in the signup form. |
+| account_name  | No       | Pre-fills the account name in the signup form.                                |
+| location_name | No       | Pre-fills the location name in the signup form.                               |
+| state         | No       | This value is passed back to your application in the redirect URI.            |
 
 When the page loads, HubRise:
 
-- Authenticates the user. Users can log in if they already have a HubRise account. If they don't, they can create an account in a few simple steps: `country`, `account_name` and `location_name` parameters are then used to prefill the signup form.
+- Authenticates the user. Users can log in if they already have a HubRise account. If they don't, they can create an account in a few simple steps.
 - Prompts the user to select the location, catalog and/or customer list to connect.
 - Requests user approval to access the data.
 
-If the user approves the request, HubRise calls the `redirect_uri` URL you specified, and includes the authorisation code in the `code` query parameter:
+If the user approves the request, HubRise calls the `redirect_uri` URL you specified, and includes the authorisation code in the `code` query parameter and the `state` parameter if you provided one:
 
 ```http
-https://<<YOUR-DOMAIN-HERE>>/oauth_callback?code=ffae0047c4d6b9e02f95e76a3f6e906d
+https://<<YOUR-DOMAIN-HERE>>/oauth_callback?code=ffae0047c4d6b9e02f95e76a3f6e906d&state=<<OPTIONAL-STATE>>
 ```
 
 ---
