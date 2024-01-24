@@ -166,6 +166,7 @@ The response also contains the ids and names of the resources your application h
 ```json
 {
   "access_token": "b9922a78d3ffab6b95e9d72e88",
+  "token_type": "Bearer",
   "account_id": "3r4s3",
   "location_id": "3r4s3-1",
   "catalog_id": "psmlf",
