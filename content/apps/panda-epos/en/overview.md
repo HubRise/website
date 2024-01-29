@@ -46,6 +46,8 @@ Connecting Panda EPOS to HubRise allows your EPOS to:
 - Pull orders from HubRise, including order status.
 - Push customer information into HubRise.
 - Pull customer information from HubRise.
+- Pull a catalog from HubRise.
+- Push a catalog into HubRise.
 
 Panda EPOS can be connected to HubRise from the Panda EPOS back office.
 
