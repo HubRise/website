@@ -55,7 +55,7 @@ After you have created the new product, you can add details to it and relate it 
 Product tags are a flexible way to categorise products. They can be used for a variety of purposes, including:
 
 - Identifying specific attributes, for example, **Vegetarian** or **Gluten Free**.
-- Modifying ordering options, such as **Half & Half** to denote that a pizza can be ordered as part of a half-and-half deal, or **Deal only** to indicate that a product is exclusively available as part of a deal.
+- Modifying ordering options, such as **Half & Half** to apply half-and-half pricing to a product, or **Deal only** to indicate that a product is only available as part of a deal.
 - Customising product display, for example, to show an icon or label on specific products in a menu.
 
 HubRise provides a default set of tags, generally recognised and supported by connected applications, including food ordering platforms. However, you can add your own tags by typing them in the **Tags** field. For information on which tags are recognised, consult the documentation or contact the support team of the connected application.
