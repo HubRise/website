@@ -119,12 +119,20 @@ The log page displays a summary list of requests in reverse chronological order.
 
 - **TIME (UTC+02:00)**: The date and time of the request, in UTC format.
 - **ORIGIN**: The app that created the request.
-- **ENDPOINT**: The endpoint of the request, including HTTP method and URL path.
+- **RESOURCE**: The target of the request.
+- **METHOD**: The HTTP method used in communicating the request.
+- **URL**: The URL path for the request.
 - **RESPONSE**: The HTTP response code.
 
 Further log details are available for advanced users and developers to view app communications and troubleshoot issues. To view details for a log entry:
 
 1. Click the row to display. A full list of the query and response will be displayed.
 1. To download either the query or response, select the download icon <InlineImage width="15" height="14">![Download icon](../images/058-download.png)</InlineImage>. The selected query or response will be provided as a JSON file.
+
+The logs can be filtered based on specific criteria, including resource, method, and time range. To filter logs: 
+
+1. Click the **Filter** section located at the top of the page. Upon clicking, you will see the filter options.
+1. Apply one or more filters. The log entries will refresh automatically.
+1. To revert to viewing all logs, click **Reset**.
 
 For more information, see [Understanding Logs in HubRise](/docs/hubrise-logs/overview). For a complete reference on the HubRise API, see the [HubRise API Reference page](/developers/api/general-concepts).
