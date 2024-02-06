@@ -24,15 +24,15 @@ Pour plus d'informations, voir [Catalogues](/apps/catalog-manager/catalogs).
 
 ![Liste de catalogues Catalog Manager](./images/001-2x-catalog-list.png)
 
-## Étapes de modification du catalogue
+## Processus de modification du catalogue
 
 La modification d'un catalogue est une tâche complexe qui se fait souvent en plusieurs fois.
 Catalog Manager est conçu pour simplifier le processus grâce à son interface utilisateur modulaire.
 
-Lorsque vous modifiez un catalogue, vous effectuez généralement les étapes suivantes :
+Lorsque vous modifiez un catalogue, vous suivez généralement les étapes suivantes :
 
 1. Vous modifiez les informations de base sur vos produits, comme les options, les prix, les images et les codes ref.
-2. Vous devrez peut-être créer plusieurs variantes de votre catalogue pour prendre en charge les différences de prix ou la disponibilité des produits par canal de vente.
+2. Vous créez des variantes de votre catalogue pour prendre en charge les différences de prix ou de disponibilité par canal de vente, si nécessaire.
 3. Vous prévisualisez l'apparence en ligne de votre catalogue pour vérifier que votre offre produit est conforme à vos attentes.
 
 Les vues **Édition**, **Grille** et **Aperçu** de Catalog Manager permettent d'effectuer ces actions de manière itérative.

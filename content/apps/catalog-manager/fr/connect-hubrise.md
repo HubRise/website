@@ -8,14 +8,13 @@ meta:
   description: Instructions pour connecter Catalog Manager à HubRise afin de synchroniser les catalogues depuis votre logiciel de caisse et d'autres systèmes.
 ---
 
-***
+---
 
 **REMARQUE IMPORTANTE :** Si vous ne possédez pas encore de compte HubRise, rendez-vous sur la [page d'inscription à HubRise](https://manager.hubrise.com/signup). L'inscription ne prend qu'une minute !
-Pour plus d'informations sur HubRise, voir notre aide en ligne rubrique [Comment démarrer](/docs/get-started).
 
-***
+---
 
-Avant de pouvoir utiliser Catalog Manager, vous devez le connecter à votre compte HubRise. Pour cela, suivez ces étapes :
+Pour utiliser Catalog Manager, vous devez d'abord le connecter à votre compte HubRise. Pour connecter Catalog Manager, suivez ces étapes :
 
 1. Connectez-vous à votre [back-office HubRise](https://manager.hubrise.com).
 2. Sélectionnez **CONNEXIONS**, puis **Voir les apps disponibles**.

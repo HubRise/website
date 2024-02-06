@@ -8,7 +8,7 @@ meta:
   description: Instructions pour créer et modifier des remises dans Catalog Manager. Synchronisez les catalogues entre votre logiciel de caisse et vos applications.
 ---
 
-Les remises sont des montants ou des pourcentages de réduction qui peuvent être appliqués à un achat global, par opposition à un article spécifique.
+Les remises sont des montants ou des pourcentages de réduction qui s'appliquent à la totalité de la commande, par opposition à un article spécifique.
 
 ![Liste de remises Catalog Manager](./images/006-2x-discounts-list.png)
 

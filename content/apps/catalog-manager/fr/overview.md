@@ -9,6 +9,7 @@ meta:
 gallery:
   - __gallery-001.png
   - __gallery-002.png
+  - __gallery-003.png
 app_info:
   category: Autres applications
   availability: Monde entier
@@ -17,8 +18,7 @@ app_info:
   contact: contact@hubrise.com
 ---
 
-Catalog Manager permet de gérer et modifier vos catalogues HubRise pour différents points de vente ou canaux.
-Édité par HubRise, il est utilisable gratuitement.
+Catalog Manager permet de gérer et modifier vos catalogues HubRise pour différents points de vente ou canaux. Édité par HubRise, il est utilisable gratuitement dans le cadre de votre abonnement à HubRise.
 
 Il inclut les fonctionnalités suivantes :
 
@@ -27,5 +27,6 @@ Il inclut les fonctionnalités suivantes :
 - Ajouter des images et des descriptions détaillées.
 - Ajuster les prix individuellement pour chaque canal de vente.
 - Désactiver des produits spécifiques sur certains canaux de vente.
+- Prévisualisez votre catalogue avant de le publier sur vos canaux de vente.
 
-Catalog Manager est une solution basée sur le cloud, disponible partout. Vous pouvez l'utiliser depuis n'importe quel appareil, mais pour une expérience optimale, nous vous recommandons d'utiliser un ordinateur de bureau ou un ordinateur portable.
+Catalog Manager est une solution basée sur le cloud, disponible partout. Nous vous recommandons d'utiliser un ordinateur de bureau ou un ordinateur portable pour une expérience optimale.

@@ -10,7 +10,7 @@ meta:
 
 Les options sont des éléments supplémentaires que les clients peuvent ajouter à un produit lors de la commande.
 
-Lorsque vous créez un produit, vous pouvez choisir de créer une association entre le produit et une liste d'options. La liste doit être créée avant de pouvoir l'associer à un produit. Les listes d'options peuvent varier d'une variante de produit à une autre. Par exemple, les garnitures supplémentaires sur une pizza de taille moyenne peuvent être moins chères que celles proposées sur une grande pizza.
+Lorsque vous créez un produit, vous pouvez l'associer à une ou plusieurs listes d'options. Les listes d'options doivent être créées avant de pouvoir être associées aux produits. Les listes d'options peuvent varier d'une variante de produit à une autre. Par exemple, les garnitures supplémentaires sur une pizza de taille moyenne peuvent être moins chères que celles proposées sur une grande pizza.
 
 Sur la page des listes d'options, vous pouvez voir le nombre de SKU ou de produits dans lesquels une liste est utilisée. Vous pouvez ainsi savoir quelles options sont utilisées dans quels produits.
 

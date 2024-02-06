@@ -10,7 +10,7 @@ meta:
 
 Options are additional items which customers can add to a product when ordering.
 
-When you create a product, you can choose to create a relationship between the product and an option list. The option list needs to be created before you can relate it to a product item. Option lists might differ from one product variation to another; for example, additional toppings on a medium pizza could be cheaper than those offered on a large pizza.
+When you create a product, you can associate it with one or several option lists. Option lists need to be created before you can relate them to a product. Option lists might differ from one product variation to another; for example, additional toppings on a medium pizza could be cheaper than those offered on a large pizza.
 
 When viewing option lists, you can see the number of SKUs or products that the option list is used in. This helps you track of which options are used in which products.
 

@@ -32,7 +32,7 @@ Catalog Manager is designed to simplify this process with its modular user inter
 When you edit a catalog, you typically perform the following steps:
 
 1. You edit the basic information about your products, including options, prices, images and ref codes.
-1. You might need to create multiple variants of your catalog to support price differences or product availability per sales channel.
+1. You create variants of your catalog to support price differences or product availability per sales channel, if needed.
 1. You preview your catalog online appearance to verify that your product offerings are presented as expected.
 
 The **Edit**, **Grid**, and **Preview** views in Catalog Manager let you perform these actions in an iterative way.
