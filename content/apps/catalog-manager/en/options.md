@@ -27,14 +27,15 @@ Option lists need to be created before they can be related to product items. To 
 - Maximum number of options a customer can select. Defaults to empty, which means that there is no limit.
 - For each option, enter a **Name**, **Price**, **Ref code**, and tick the **Default** checkbox if the option should be selected by default.
 
-Keep in mind that option lists are attached to specific products, or product variations. If the options differ from one product variation to another, it is advisable to name your option lists in a way that allows you to easily identify them. For example, for pizza items you may have three cheese options. If the options and related prices are identical regardless of the pizza or pizza size they're attached to, the list can be called `Cheese - Pizza`. If they are different, you might call one list `Cheese - Medium Pizza` and the other`Cheese - Large Pizza` to easily find the list you want to attach.
+Keep in mind that option lists are attached to specific products, or product variations. If the options differ from one product variation to another, it is advisable to name your option lists in a way that allows you to easily identify them. For example, for pizza items you may have three cheese options. If the options and related prices are identical regardless of the pizza or pizza size they're attached to, the list can be called `Cheese - Pizza`. If they are different, you might call one list `Cheese - Medium Pizza` and the other `Cheese - Large Pizza` to easily find the list you want to attach.
 
 ![Catalog Manager Option List details](./images/004-2x-option-list-details.png)
 
 After you have created one or more option lists, you can attach them to your products:
 
-1. Select the tab for the product variation that you want to attach option lists to, for example `10inch Classic`, then click **Attach option list**. You can now select any of the option lists previously created.
-1. Follow the exact same steps for each of the product variations, for example `13inch Gluten Free Classic`, `13inch Classic`and `18inch Classic`.
+1. Select the tab for the product variation that you want to attach option lists to, for example `10inch Classic`
+1. Click **Attach option list**, then select the option list to attach from the dropdown list.
+1. Repeat for each other product variation.
 
 ![Catalog Manager Add Option List](./images/011-2x-product-option-list-tabs.png)
 
