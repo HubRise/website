@@ -8,7 +8,7 @@ meta:
   description: Instructions pour créer et modifier des variantes dans Catalog Manager. Synchronisez les catalogues entre votre logiciel de caisse et vos applications.
 ---
 
-Les variantes de catalogue permettent de gérer différents prix et disponibilités sur plusieurs solutions avec un seul catalogue. Par exemple, vous pouvez créer et gérer un catalogue sur HubRise pour les plateformes de commande et de livraison de repas (Deliveroo et Uber Eats), pour votre propre solution de commande en ligne en marque blanche et votre kiosque de commande sur place, même si les prix diffèrent sur chacun de ces canaux.
+Les variantes de catalogue permettent de gérer différents prix et disponibilités avec un seul catalogue. Par exemple, vous pouvez créer et gérer un catalogue sur HubRise pour Deliveroo, Uber Eats, votre solution de commande en ligne en marque blanche et votre kiosque de commande sur place, même si les prix diffèrent sur chacun de ces canaux.
 
 Voici quelques configurations courantes :
 
@@ -16,7 +16,7 @@ Voici quelques configurations courantes :
 - Variantes par point de vente : `Londres`, `Paris`, etc.
 - Variantes par groupes de points de vente : `Centre-ville`, `Quartiers Nord`, etc.
 - Variantes par canal de vente : `En ligne`, `En boutique`, etc.
-- Variantes par type de service : `En livraison`, `Sur-place`, etc.
+- Variantes par type de service : `En livraison`, `Sur-place`, `A emporter`.
 
 Vous pouvez également utiliser une combinaison des exemples ci-dessus : `Deliveroo`, `Uber Eats Paris`, `Uber Eats quartiers nord`, etc.
 
@@ -30,7 +30,7 @@ Pour créer une variante, suivez ces étapes :
 
 1. Dans Catalog Manager, sélectionnez **Grille**.
 2. Dans la vue **Grille**, cliquez sur le lien **Gérer les variantes** dans le coin supérieur gauche de la page.
-3. Dans la boîte de dialogue qui s'affiche, sélectionnez **Nouvelle variante**, puis saisissez le nom que vous souhaitez donner à votre variante.
+3. Dans la boîte de dialogue qui s'affiche, cliquez sur **Nouvelle variante**, puis saisissez un nom pour votre variante.
 4. Pour terminer, cliquez sur **Enregistrer**.
 
 Répétez le processus pour chaque variante supplémentaire que vous voulez créer.
@@ -49,10 +49,12 @@ Lorsque vous avez fini de modifier vos variantes, pour mettre à jour le catalog
 
 Pour utiliser les prix et la disponibilité d'une variante dans une application connectée au catalogue, vous devez sélectionner la variante dans les paramètres de l'application.
 
-Par exemple, pour utiliser la variante `Uber Eats Paris`, ouvrez Deliveroo Bridge et sélectionnez l'onglet **configuration**. Dans la section **Variante de catalogue à envoyer**, sélectionnez **Uber Eats Paris** parmi les menus de livraison et de vente à emporter disponibles. Pour les autres applications, reportez-vous à la documentation de l'application sur HubRise pour obtenir des instructions spécifiques.
+Par exemple, pour utiliser la variante `Deliveroo Paris`, ouvrez le Deliveroo Bridge du point de vente de Paris, et sélectionnez l'onglet **Configuration**. Dans la section **Variante de catalogue à envoyer**, sélectionnez **Deliveroo Paris** et cliquez sur **Enregistrer**.
+
+Pour les autres applications, reportez-vous à la documentation de l'application sur HubRise pour obtenir des instructions spécifiques.
 
 ***
 
-**REMARQUE IMPORTANTE :** Tous les bridges HubRise prennent en charge les variantes de catalogue, mais pour le moment, ce n'est pas le cas de toutes les applications intégrées. Consultez la documentation de votre application sur HubRise pour vous assurer que cette fonctionnalité est prise en charge.
+**REMARQUE IMPORTANTE :** Tous les bridges HubRise prennent en charge les variantes de catalogue, mais toutes les autres applications intégrées ne le font pas. Consultez la documentation de votre application sur HubRise pour vous assurer que cette fonctionnalité est prise en charge.
 
 ***

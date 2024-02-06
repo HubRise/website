@@ -33,7 +33,7 @@ Keep in mind that option lists are attached to specific products, or product var
 
 After you have created one or more option lists, you can attach them to your products:
 
-1. Select the tab for the product variation that you want to attach option lists to, for example `10inch Classic`
+1. Select the tab for the product variation that you want to attach option lists to, for example `10inch Classic`.
 1. Click **Attach option list**, then select the option list to attach from the dropdown list.
 1. Repeat for each other product variation.
 
