@@ -100,9 +100,9 @@ To do this:
 1. Configure the bridge again from scratch, but when you reach the first step of the configuration, unfold **Advanced Options**.
 1. Select the **Use OAuth1** option.
    ![OAuth1 option in WooCommerce Bridge](./images/013-woocommerce-step-1-advanced.png)
-1. Proceed with the configuration as described section [Connect to HubRise](/apps/woocommerce/connect-hubrise).
+1. Proceed with the configuration as described in [Connect to HubRise](/apps/woocommerce/connect-hubrise).
 
-After making this change, verify if the 401 errors are resolved. If not, check the other troubleshooting steps or contact HubRise on [support@hubrise.com](mailto:support@hubrise.com).
+After making this change, verify if the 401 errors are resolved. If not, check the other troubleshooting steps or contact HubRise on support@hubrise.com.
 
 ### Incorrect URL During Setup
 

@@ -20,15 +20,15 @@ De même, les avis formulés par les clients sur des produits individuels ne son
 
 ## Statuts de commande
 
-***
+---
 
-**REMARQUE IMPORTANTE :** Dans cette section, nous mettons en majuscule la première lettre des statuts WooCommerce pour les distinguer plus facilement des noms de statuts HubRise. Par exemple, `Processing` (En cours de traitement) est un statut WooCommerce, tandis que `acceptée` est un statut HubRise.
+**REMARQUE IMPORTANTE :** Dans cette section, nous mettons en majuscule la première lettre des statuts WooCommerce pour les distinguer plus facilement des noms de statuts HubRise. Par exemple, `Processing` (En cours de traitement) est un statut WooCommerce, tandis que `accepté` est un statut HubRise.
 
-***
+---
 
 ### Lorsque le statut change dans HubRise
 
-Lorsque le statut de commande change dans HubRise, le statut dans WooCommerce change en respectant les associations suivantes :
+Lorsque le statut de commande change dans HubRise, le statut dans WooCommerce est modifié selon la correspondance suivante :
 
 | Statut HubRise         | Statut WooCommerce |
 | ---------------------- | ------------------ |
@@ -60,15 +60,15 @@ Lorsque le statut de commande change dans WooCommerce, le statut dans HubRise ch
 
 Dans l'installation WooCommerce par défaut, le type de service est toujours `delivery`. Pour que des types de service supplémentaires soient pris en charge, vous devez personnaliser votre installation WooCommerce pour inclure cette valeur dans les métadonnées de commande.
 
-***
+---
 
 **FAQ associée** : [Comment encoder des métadonnées personnalisées dans une commande ?](/apps/woocommerce/faqs/encode-custom-metadata)
 
-***
+---
 
 ## Données clients
 
-WooCommerce Bridge fournit des données clients complètes pour les commandes, par exemple le nom, l'adresse de livraison et le numéro de téléphone, et les enregistre dans HubRise.
+WooCommerce Bridge transmet des données clients complètes pour les commandes, notamment le nom, l'adresse de livraison et le numéro de téléphone, et les enregistre dans HubRise.
 
 ## Paiements
 
@@ -79,11 +79,11 @@ WooCommerce prend en charge quatre types de paiements dans une commande :
 - Virement bancaire
 - Standard Paypal
 
-***
+---
 
-**REMARQUE IMPORTANTE** : Les codes ref de paiement seront bientôt personnalisables depuis la page de configuration. Pour plus d'informations, veuillez contacter HubRise à l'adresse [support@hubrise.com](mailto:support@hubrise.com).
+**REMARQUE IMPORTANTE** : Les codes ref de paiement seront bientôt personnalisables depuis la page de configuration. Pour plus d'informations, contactez HubRise sur support\@hubrise.com.
 
-***
+---
 
 ## Remises
 
@@ -93,7 +93,7 @@ Les remises WooCommerce sont envoyées à HubRise, si elles sont présentes dans
 
 WooCommerce ne prend en charge que les frais de livraison, qui sont envoyés à HubRise s'ils figurent dans une commande.
 
-***
+---
 
 ## Références techniques
 
@@ -101,20 +101,23 @@ Cette section explique comment les commandes sont encodées dans les requêtes J
 
 ### Articles
 
-Les produits WooCommerce d'une commande sont associés à HubRise de la façon suivante :
+La correspondance entre les articles de WooCommerce et HubRise dépend de la configuration de WooCommerce Bridge, en particulier de la section **Métadonnées des articles de la commande**. Pour les détails de configuration, consultez [Métadonnées des articles de la commande](/apps/woocommerce/configuration#order-item-metadata).
+
+Les produits WooCommerce dans une commande sont mappés à des produits avec ou sans SKU, selon les règles suivantes :
 
 - Les produits simples sont envoyés à HubRise en tant que produits sans SKU.
-- Les variables de produits avec une liste d'attributs nommée **Size** sont envoyés à HubRise en tant que produits avec des SKU.
-- Les variables de produits avec un nom de liste d'attributs autre que **Size** sont envoyés à HubRise en tant que produits avec des options.
+- Les produits variables avec un attribut dont le nom correspond au champ **Clé(s) de métadonnées nom de la SKU** sont envoyés en tant que produits avec un SKU, où le nom de la SKU est la valeur de l'attribut.
+- Les produits variables dont aucun attribut ne correspond au critère sont envoyés en tant que produits sans SKU.
 
-Pour chaque article de la commande, WooCommerce Bridge fournit les informations suivantes :
+Pour chaque article de la commande, WooCommerce Bridge envoie les informations suivantes à HubRise :
 
-- `product_name` : nom du produit
-- `sku_name` : nom du SKU, pour les variables de produits WooCommerce avec le nom d'attribut **Size**. Sinon, la valeur par défaut est `null`.
-- `sku_ref` : code ref de l'article
-- `price` : prix unitaire de l'article
-- `quantity` : quantité d'articles dans la commande
-- `options` : tableau des options rattachées à l'article, pour les variables de produits WooCommerce avec un nom d'attribut autre que **Size**. Sinon, la valeur par défaut est un tableau vide.
+- `product_name` : nom du produit.
+- `sku_name`: le nom de la SKU pour les produits ayant un SKU, ou `null` pour les produits sans. Voir la note ci-dessus pour plus de détails.
+- `sku_ref` : code ref de l'article.
+- `price` : prix unitaire de l'article.
+- `quantity` : quantité d'articles dans la commande.
+- `customer_notes`: notes de préparation du client pour l'article, dérivées de l'attribut ayant une clé correspondant au champ **Clé(s) de métadonnées commentaire client**, si disponible.
+- `options`: un tableau d'options associé à l'article, provenant des attributs qui ne sont ni utilisés comme nom de SKU ni comme notes de préparation du client, et ne correspondent pas au champ **Clés de métadonnées ignorées**.
 
 ### Options
 
@@ -135,7 +138,7 @@ Voici un exemple de requête contenant un article unique avec une option.
     "product_name": "Végétarienne végane - Classique 30 cm",
     "sku_name": null,
     "sku_ref": "végétarienne_végane_classique_30cm",
-    "price": "19,95 EUR",
+    "price": "19.95 EUR",
     "quantity": "1",
     "tax_rate": null,
     "options": [
@@ -184,7 +187,7 @@ Voici un exemple de requête pour les frais.
   {
     "name": "Delivery charge",
     "ref": "1111",
-    "price": "3,50 EUR"
+    "price": "3.50 EUR"
   }
 ]
 ```

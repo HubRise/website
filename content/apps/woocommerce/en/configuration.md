@@ -47,8 +47,7 @@ For example, you can choose to mark orders as `Completed` in WooCommerce when th
 Choose if you want to receive the service type information from the WooCommerce metadata.
 Your WooCommerce installation must be able to send to HubRise a metadata key and up to three values, corresponding to delivery, collection, and eat-in, in this order.
 
-In the **Service type ref code** field, enter the ref code for the service that your EPOS expects.
-Refer to your EPOS documentation on the HubRise website [Apps page](/apps) to verify your EPOS requirements.
+In the **Service type ref code** field, enter the ref code for the service that your EPOS expects. Refer to your EPOS documentation on the HubRise website [Apps page](/apps) to check requirements.
 
 ![WooCommerce Bridge configuration page](./images/017-woocommerce-configuration-2.png)
 
@@ -72,7 +71,7 @@ If your plugin uses two metadata, the supported formats are the following:
 
 In this section, you can specify the metadata key that WooCommerce uses for the customer notes at the order level.
 
-### Order Item Metadata
+### Order Item Metadata {#order-item-metadata}
 
 WooCommerce encodes item information as metadata, which can be further extended by various plugins.
 
@@ -160,7 +159,7 @@ To enable this feature, tick the **Enable automatic inventory push** checkbox.
 To save the configuration, click **Save** at the top of the page.
 
 ## Reset the Configuration {#reset}
- 
+
 If you need to reset the configuration, click **Reset the configuration** at the bottom of the page.
 
 ---
