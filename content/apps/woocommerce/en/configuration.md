@@ -112,11 +112,11 @@ To find the WooCommerce ID for other payment methods, follow these steps:
 
 If you support multiple stores from the same WooCommerce website, you need to configure the **Multi-site** section.
 
-Each store must be connected to its own unique WooCommerce Bridge and identified by a unique metadata value included in the order payload sent to HubRise. Orders are only forwarded to the location associated with the bridge when there's a metadata value match; otherwise, the order is disregarded.
+Each location must be connected to WooCommerce Bridge and identified by a unique metadata value included in the order payload sent to HubRise. Orders are only forwarded to the location that matches the configured value.
 
-In the **Metadata key for multisite** field, specify the metadata key used to identify the stores.
+In the **Metadata key for multisite** field, specify the metadata key used to identify the location.
 
-In the **Value(s) for this location** field, specify the value associated with the store connected to this WooCommerce Bridge. You can specify multiple values separated by a comma.
+In the **Value(s) for this location** field, specify the value associated with the location. You can specify multiple values separated by a comma.
 
 ![WooCommerce Bridge configuration page](./images/018-woocommerce-configuration-3.png)
 

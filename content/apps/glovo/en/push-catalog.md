@@ -86,15 +86,9 @@ Glovo Bridge maps single sku products one-to-one to products on Glovo, sending t
 - Images
 - Price
 - Options
-- Tags: `alcoholic` (see note)
+- Tags
 
 For products with multiple skus, Glovo Bridge creates a product for each sku.
-
----
-
-**IMPORTANT NOTE:** To enable alcoholic restrictions on your products, [contact Glovo support](mailto:q-commerce-integrations@glovoapp.com).
-
----
 
 ### Option Lists and Options
 
@@ -140,11 +134,26 @@ For every sku in a product, Glovo Bridge sends the following information to Glov
 - `sku.ref`: The ref of the sku, which will be passed along in orders
 - `description`: The description of the product
 - `sku.price`: The price of the sku
-- `tags`: Tags describing the characteristics and restrictions of the product, such as allergens or spiciness.
+- `tags`: Tags describing the characteristics and restrictions of the product. See [Product Tags](#product-tags).
 - `image`: The URL of the image of the parent product
 - `sku.option_list_refs`: The list of options attached to the sku
 
 For more information about skus in the HubRise catalog, see [Skus](/developers/api/catalogs#skus).
+
+### Product Tags {#product-tags}
+
+The table below lists the tags that can be set on products.
+
+| Tag         | Description                            |
+| ----------- | -------------------------------------- |
+| `alcoholic` | Contains alcohol.                      |
+| `deal_only` | Can only be ordered as part of a deal. |
+
+---
+
+**IMPORTANT NOTE:** Before using the `alcoholic` tag, you must enable alcohol sales on your Glovo store by [contacting Glovo support](mailto:q-commerce-integrations@glovoapp.com) to .
+
+---
 
 ### Options
 

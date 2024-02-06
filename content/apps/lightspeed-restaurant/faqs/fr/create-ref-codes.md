@@ -70,7 +70,6 @@ Pour créer des frais, vous devez créer un article en suivant ces étapes :
    - Pour utiliser un code ref spécifique, cliquez sur **Ajouter un code SKU personnalisé** et entrez un code ref. Sinon, un code ref sera généré automatiquement.
 1. Renseignez les autres sections de la page si besoin, puis cliquez sur **Enregistrer**.
 1. Répétez le processus pour tous les frais que vous prenez en charge sur chaque solution.
-2.
 
 ## Modes de paiement
 
