@@ -15,9 +15,9 @@ This page explains how to configure ref codes manually in Shopify. Some EPOS sol
 To assign ref codes to your Shopify products, follow these steps:
 
 1. Log in to your Shopify back office.
-2. From the menu, select **Products** > **All products**.
+2. From the menu, select **Products** and **All** to see all products.
 3. From the list of products, select the product for which you want to add the ref code.
-4. In the **Options** section, check whether the product has options:
+4. In the **Variants** section, check whether the product has options:
 
    - If the product has options, in the **Variants** section, enter the ref code for each variant in the **SKU** field.
      ![Entering ref codes for a Shopify product with options](./images/006-shopify-map-ref-codes-multi-sku.png)
