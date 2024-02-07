@@ -16,15 +16,17 @@ meta:
 
 The configuration page allows you to customise the behaviour of Shopify Bridge based on your preferences. These are divided into different sections for an easier navigation.
 
-![Shopify Bridge configuration page](./images/004-shopify-configuration-page.png)
-
 ## Orders
 
 ### Order Statuses {#order-statuses}
 
+![Shopify Bridge configuration page, Order status section](./images/010-shopify-configuration-order-status.png)
+
 In this section, you can customise how to map order status changes in HubRise back to Shopify. To ignore an order status change in HubRise, select **Do nothing**.
 
 ### Multi-site
+
+![Shopify Bridge configuration page, Multi-site section](./images/011-shopify-configuration-multisite.png)
 
 If you support multiple stores from the same Shopify website, you need to configure the **Multi-site** section.
 
@@ -35,6 +37,8 @@ In the **Name of the note attribute for multisite** field, specify the name of t
 In the **Value(s) for this location** field, specify the value associated with the location. You can specify multiple values separated by a comma.
 
 ## Catalog
+
+![Shopify Bridge configuration page, Catalog section](./images/015-shopify-configuration-catalog.png)
 
 Select the **Enable automatic catalog push** checkbox to synchronise your HubRise catalog with Shopify whenever it gets updated.
 
