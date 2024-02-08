@@ -16,13 +16,15 @@ This page attempts to be a comprehensive list of the most widespread conventions
 
 ## General conventions
 
-### Tags on SKUs
+### Tags on products
 
-The following tag can be set at the SKU level:
+The following tag can be set at the product level.
 
-| Tag         | Description                                  |
-| ----------- | -------------------------------------------- |
-| `deal_only` | The SKU is only available as part of a deal. |
+| Tag              | Description                                      |
+| ---------------- | ------------------------------------------------ |
+| `deal_only` (\*) | The product is only available as part of a deal. |
+
+(\*) This tag used to be defined at the SKU level, but should now be defined at the product level.
 
 ## Conventions for restaurants
 
