@@ -18,7 +18,7 @@ Si votre entreprise n'utilise pas de logiciel de caisse, vous pouvez importer vo
 
 ---
 
-Pour importer un fichier CSV dans Koust, suivez les étapes suivantes :
+Pour importer un fichier CSV dans Koust, suivez ces étapes :
 
 1. Dans le menu latéral, sélectionnez **Ventes - Conso.**.
    ![Utilisation sans logiciel de caisse - Aucun article](./images/012-koust-no-item.png)

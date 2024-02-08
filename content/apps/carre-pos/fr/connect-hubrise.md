@@ -4,7 +4,7 @@ path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | Carré POS | HubRise
+  title: Connexion à HubRise | Carré POS | HubRise
   description: Étapes pour établir une connexion entre Carré POS et HubRise. Connectez votre caisse et synchronisez vos données avec d'autres applications.
 ---
 

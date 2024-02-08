@@ -40,7 +40,7 @@ Obypay can be connected to HubRise from the Obypay back office.
 
 By connecting Obypay to HubRise, your ObyPay orders are sent to your other everyday applications, such as your POS software, your inventory solution or your connected printer.
 
-Thanks to HubRise, you can synchronise your menu and your customer and order information with your EPOS solution, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management solutions or delivery services, eMarketing (SMS/emailing) solutions, business intelligence, stock management and customer loyalty systems, and more. The number of compatible applications is constantly increasing. To see which apps you can connect, see our [Apps page](/apps).
+With HubRise, you can synchronise your menu, customer information, and orders between your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats, and Just Eat), delivery management solutions or delivery services, eMarketing solutions (SMS/emailing), business intelligence, inventory, and customer loyalty systems, and much more. The number of compatible applications increases every month. To discover the apps you can connect, visit our [Apps page](/apps).
 
 ## Prerequisites
 

@@ -4,7 +4,7 @@ path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | POS HELPER | HubRise
+  title: Connexion à HubRise | POS HELPER | HubRise
   description: "Connecter POS HELPER à HubRise : étapes à suivre pour recevoir vos commandes dans votre logiciel de caisse POS HELPER."
 ---
 
@@ -18,7 +18,7 @@ Vous pouvez connecter POS HELPER à HubRise en quelques clics.
 
 ## Connecter POS HELPER
 
-Pour connecter POS HELPER à HubRise, suivez les étapes suivantes :
+Pour connecter POS HELPER à HubRise, suivez ces étapes :
 
 1. Ouvrez le back-office de POS HELPER.
 2. Dans la barre de menu, cliquez sur **Ventes**, puis sélectionnez l'onglet **HUBRISE INTEGRATION**.

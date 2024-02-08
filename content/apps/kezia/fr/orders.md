@@ -14,7 +14,7 @@ Lorsque Kezia II est connecté à HubRise, les commandes envoyées à HubRise ar
 
 Kezia II vérifie l'arrivée de nouvelles commandes toutes les 30 secondes. Une fenêtre d'avertissement vous signale l'arrivée d'une nouvelle commande.
 
-Pour voir la liste des commandes web en cours, suivez les étapes suivantes :
+Pour voir la liste des commandes web en cours, suivez ces étapes :
 
 1. Depuis l'écran d'accueil, sélectionnez **CAISSE**.
 1. Sélectionnez un vendeur.
@@ -49,7 +49,7 @@ Par défaut, Kezia II n'envoie pas les commandes vers HubRise. Pour envoyer les 
 1. Pour l'option **Envoi des commandes Kezia**, sélectionnez **Client web**.
    ![Commandes - Envoi des commandes](./images/011-kezia-send-orders.png)
 
-Pour envoyer une commande vers HubRise sans passer par la caisse, suivez les étapes suivantes :
+Pour envoyer une commande vers HubRise sans passer par la caisse, suivez ces étapes :
 
 1. Depuis l'écran d'accueil, sélectionnez **COMMANDES**.
    ![Commandes - Nouvelle commande](./images/012-kezia-new-order.png)

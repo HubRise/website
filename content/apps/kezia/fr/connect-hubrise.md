@@ -4,7 +4,7 @@ path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | Kezia II | HubRise
+  title: Connexion à HubRise | Kezia II | HubRise
   description: Étapes pour établir une connexion entre Kezia II et HubRise. Connectez votre caisse et synchronisez vos données avec d'autres applications.
 ---
 
@@ -47,7 +47,7 @@ L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers �
 
 ## Configurer les actions de caisse
 
-Pour recevoir les commandes HubRise, vous devez configurer les actions de caisse dans Kezia II. Pour cela, suivez les étapes suivantes :
+Pour recevoir les commandes HubRise, vous devez configurer les actions de caisse dans Kezia II. Pour cela, suivez ces étapes :
 
 1. Dans la barre de menu de Kezia II, sélectionnez **Fichier** > **Paramètres** > **Commandes Web**.
 1. Dans la section **Paramètres**, dans la partie **Liste des commandes**, sélectionnez _MCU 1_ dans la **Liste des champs** et entrez le nom _Commandes Web_ pour **Libellé du champ**.
