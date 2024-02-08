@@ -62,7 +62,7 @@ In the default WooCommerce installation, the service type is always `delivery`. 
 
 ---
 
-**Related FAQ**: [How Can I Encode Custom Metadata In An Order?](/apps/woocommerce/faqs/encode-custom-metadata/)
+**Related FAQ**: [How Can I Encode Custom Metadata In An Order?](/apps/woocommerce/faqs/encode-custom-metadata)
 
 ---
 
@@ -81,7 +81,7 @@ WooCommerce supports four types of payments in an order:
 
 ---
 
-**IMPORTANT NOTE**: Payment ref codes will soon be customisable from the configuration page. For more information, [contact HubRise support](mailto:support@hubrise.com).
+**IMPORTANT NOTE**: Payment ref codes will soon be customisable from the configuration page. For more information, contact HubRise on support@hubrise.com.
 
 ---
 
@@ -101,20 +101,23 @@ This section describes how orders are encoded in the JSON payloads you receive f
 
 ### Items
 
-WooCommerce products in an order are mapped to HubRise in three different ways.
+The mapping of items from WooCommerce to HubRise depends on the configuration of WooCommerce Bridge, especially the **Order Item Metadata** section. For configuration details, refer to [Order Item Metadata](/apps/woocommerce/configuration#order-item-metadata).
 
-- Simple products are sent to HubRise as products without sku.
-- Variable products with an attributes list named "sku" are sent to HubRise as products with a sku.
-- Variable products with an attributes list name different from "sku" are sent to HubRise as products with options.
+WooCommerce products in an order are mapped to products with or without a SKU, according to the following rules:
 
-For every item in the order, WooCommerce Bridge provides the following information:
+- Simple products are sent as products without a SKU.
+- Variable products with an attribute whose name matches the **Metadata key(s) for SKU name** field are sent as products with a SKU, where the SKU name is the attribute's value.
+- Variable products with attributes that do not match the criteria are sent as products without a SKU.
 
-- `product_name`: The name of the product
-- `sku_name`: The name of the sku, for WooCommerce variable products with attribute name "sku". Otherwise, the defaul value is `null`.
-- `sku_ref`: The ref code of the item
-- `price`: The price for a single item
-- `quantity`: The quantity of items included in the order
-- `options`: The array of options attached to the item, for WooCommerce variable products with attribute name other than "sku". Otherwise, the default value is an empty array.
+For every item in the order, WooCommerce Bridge sends the following information to HubRise:
+
+- `product_name`: The name of the product.
+- `sku_name`: The SKU name for products with a SKU, or `null` for products without. See the note above for details.
+- `sku_ref`: The ref code of the item.
+- `price`: The price for a single item.
+- `quantity`: The number of items included in the order.
+- `customer_notes`: Customer notes for the item, derived from the attribute with a key that matches the **Metadata key(s) for customer notes** field, if available.
+- `options`: An array of options attached to the item, sourced from attributes that are neither used as SKU name nor customer notes, and do not match the **Discarded metadata keys** field.
 
 ### Options
 

@@ -8,7 +8,7 @@ meta:
   description: Configuration d'Uber Eats Bridge pour recevoir vos commandes Uber Eats dans votre logiciel de caisse ou d'autres applications connectées à HubRise.
 ---
 
-La page Configuration est accessible en cliquant sur la flèche <InlineImage width="20" height="20">![icône fléchée](../images/arrow-icon.jpg)</InlineImage> dans le coin supérieur droit de la page principale. Pour plus de détails, voir la rubrique [Interface utilisateur](/apps/uber-eats/interface-utilisateur).
+La page Configuration est accessible en cliquant sur la flèche <InlineImage width="20" height="20">![icône fléchée](../images/arrow-icon.jpg)</InlineImage> dans le coin supérieur droit de la page principale. Pour plus de détails, voir la rubrique [Interface utilisateur](/apps/uber-eats/user-interface).
 
 La page Configuration permet de personnaliser le comportement d'Uber Eats Bridge.
 

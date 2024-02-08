@@ -37,7 +37,7 @@ Pour créer un nouveau menu, procédez comme suit :
 
 Si vous rencontrez toujours des problèmes après avoir essayé cette solution, contactez support@hubrise.com.
 
-## Commandes non reçues
+## Commandes non reçues {#orders-not-received}
 
 Si Deliveroo Bridge est configuré correctement et que vous ne recevez pas de commandes Deliveroo dans HubRise, vous pouvez être dans l'une des situations suivantes.
 
@@ -45,10 +45,10 @@ Si Deliveroo Bridge est configuré correctement et que vous ne recevez pas de co
 
 Si un article sans code ref est ajouté à une commande, Deliveroo échouera à envoyer la commande, et rien ne sera reçu sur HubRise.
 
-Pour résoudre ce problème, assurez-vous que tous les produits de votre menu Deliveroo possèdent un code ref. Pour savoir comment ajouter des codes ref à vos produits Deliveroo, voir la rubrique [Associer les codes ref](/apps/deliveroo/associer-codes-ref).
+Pour résoudre ce problème, assurez-vous que tous les produits de votre menu Deliveroo possèdent un code ref. Pour savoir comment ajouter des codes ref à vos produits Deliveroo, voir la rubrique [Associer les codes ref](/apps/deliveroo/map-ref-codes).
 
 ### Commandes rejetées par Deliveroo
 
 Lorsque l'acceptation automatique n'est pas activée, chaque commande doit être acceptée manuellement sur la tablette Deliveroo, sinon elle sera rejetée par Deliveroo et rien ne sera reçu sur HubRise.
 
-Pour éviter cela, nous recommandons d'activer l'acceptation automatique. Pour plus d'informations, voir [Puis-je arrêter d'utiliser la tablette Deliveroo ?](/apps/deliveroo/faqs/deliveroo-sans-tablette/).
+Pour éviter cela, nous recommandons d'activer l'acceptation automatique. Pour plus d'informations, voir [Puis-je arrêter d'utiliser la tablette Deliveroo ?](/apps/deliveroo/faqs/deliveroo-tabletless).

@@ -4,7 +4,7 @@ path_override: desactiver-tablette
 position: 1
 layout: documentation
 meta:
-  title: Tablette | FAQs Just Eat Flyt | HubRise
+  title: Tablette | FAQ Just Eat Flyt | HubRise
   description: Cette page explique pourquoi vous ne pouvez pas désactiver la tablette Just Eat lorsque vous connectez votre enseigne à HubRise avec Just Eat Flyt Bridge.
 ---
 
@@ -16,7 +16,7 @@ Après avoir connecté votre enseigne à HubRise, vous pouvez continuer à gére
 
 Une fois qu'une commande a été acceptée dans la tablette, vous la voyez apparaître dans votre logiciel de caisse connecté et vous pouvez la gérer à partir de là.
 
-Si vous souhaitez gérer les commandes directement à partir de votre logiciel de caisse connecté sans interagir avec la tablette, vous pouvez demander à l'équipe de Just Eat d'activer l'auto-acceptation pour votre magasin. Pour plus d'informations sur l'auto-acceptation et sa disponibilité sur les différents marchés de Just Eat, voir la rubrique [Activer l'auto-acceptation](/apps/just-eat-flyt/faqs/auto-acceptation/).
+Si vous souhaitez gérer les commandes directement à partir de votre logiciel de caisse connecté sans interagir avec la tablette, vous pouvez demander à l'équipe de Just Eat d'activer l'auto-acceptation pour votre magasin. Pour plus d'informations sur l'auto-acceptation et sa disponibilité sur les différents marchés de Just Eat, voir la rubrique [Activer l'auto-acceptation](/apps/just-eat-flyt/faqs/auto-accept).
 
 ---
 

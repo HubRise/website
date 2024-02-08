@@ -50,7 +50,7 @@ Ne pas mettre de majuscule aux titres. Accentuer les majuscules.
 
 > Correct: Éléments à fournir pour Lightspeed K Series.
 
-## Listes
+## Listes {#lists}
 
 Écrivez une courte liste sous forme de phrase. Si la liste a plus de trois éléments ou qu'elle contient des instructions longues, écrivez-la sous forme de liste à puces.
 
@@ -78,14 +78,6 @@ _Depuis votre tableau de bord, vous pouvez :_
 - _Accéder à la liste de vos clients._
 
 ## Références
-
-### Renvois
-
-Utilisez Les renvois pour guider les lecteurs vers une information ciblée dans la même ou une autre page. N'attachez pas le lien directement à un mot car il risque de passer inaperçu. Écrivez une nouvelle phrase pour introduire le renvoi avec le nom exact du titre.
-
-> Incorrect : Vous pouvez représenter ces derniers sous forme de [listes](#listes).
-
-> Correct : Vous pouvez représenter ces derniers sous forme de listes. Pour plus d'informations sur l'utilisation des listes, consultez [Listes](#listes).
 
 ### Liens
 
@@ -209,7 +201,7 @@ Le contenu doit être pertinent et unique par rapport aux autres pages. Il doit 
 > - **Associer les codes ref** : Instructions pour associer les codes ref des produits Lightspeed K Series avec d'autres applications connectées à HubRise pour la synchronisation des données.
 > - **Dépannage** : Dépannage de la connexion entre Lightspeed K Series et HubRise. Connectez votre caisse et synchronisez les données entre vos applications avec facilité.
 > - **Terminologie** : Table de correspondance entre les termes utilisés par Lightspeed K Series et HubRise pour le même concept. Connectez vos apps et synchronisez vos données.
-> - **FAQs** : Questions fréquentes posées sur la connexion de Lightspeed K Series à HubRise. Connectez vos applications à HubRise avec facilité et synchronisez vos données.
+> - **FAQ** : Questions fréquentes posées sur la connexion de Lightspeed K Series à HubRise. Connectez vos applications à HubRise avec facilité et synchronisez vos données.
 
 Pour compléter une méta-description en maximisant le nombre de caractères, vous pouvez ajouter une courte phrase à la fin :
 

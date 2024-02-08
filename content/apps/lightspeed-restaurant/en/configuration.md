@@ -27,7 +27,7 @@ From this section, you can customise how Lightspeed Restaurant Bridge handles or
 
 If you want to delay orders until shortly before the delivery time, you can set the **Display time** field. If you leave it empty, orders will be displayed immediately on Lightspeed.
 
-By default, Lightspeed Restaurant Bridge does not pull Lightspeed sales into HubRise. If you want to enable this feature, select**Enabled for paid sales** from **Pull orders**.
+By default, Lightspeed Restaurant Bridge does not pull Lightspeed sales into HubRise. If you want to enable this feature, select **Enabled for dine-in sales** or **Enabled for all sales** from **Pull orders**.
 
 ## Save the Configuration
 

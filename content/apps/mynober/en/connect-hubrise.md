@@ -26,7 +26,7 @@ Contact MynOber Support at support@mynober.nl and ask them to activate the HubRi
 
 To connect MynOber Cloud to HubRise, follow these steps.
 
-1. Log in to your [MynOber Cloud account](https://cloud.mynober.nl/).
+1. Log in to your [MynOber Cloud account](https://cloud.mynober.nl).
 1. Select the location you want to connect from the list.
 1. Click **External tools** > **HubRise**.
 1. Click **Connect to HubRise**.

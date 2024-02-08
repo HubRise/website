@@ -20,7 +20,7 @@ Pour lancer OrderLine, suivez ces étapes :
 
 ---
 
-**REMARQUE IMPORTANTE :** Si vous rencontrez des problèmes, comme un écran vide, reportez-vous à notre rubrique [Dépannage](/apps/orderline/depannage/).
+**REMARQUE IMPORTANTE :** Si vous rencontrez des problèmes, comme un écran vide, reportez-vous à notre rubrique [Dépannage](/apps/orderline/troubleshooting).
 
 ---
 

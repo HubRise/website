@@ -4,7 +4,7 @@ path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | Expedy | HubRise
+  title: Connexion à HubRise | Expedy | HubRise
   description: Étapes pour établir une connexion entre Expedy et HubRise. Connectez votre caisse et synchronisez vos données avec d'autres applications.
 ---
 
@@ -16,7 +16,7 @@ meta:
 
 ## Connecter Expedy
 
-Pour connecter votre imprimante Expedy à HubRise, suivez les étapes suivantes :
+Pour connecter votre imprimante Expedy à HubRise, suivez ces étapes :
 
 1. Depuis la page d'accueil du back-office Expedy, cliquez sur **Imprimantes**.
 1. Cliquez sur le nom de l'imprimante à connecter.
@@ -27,7 +27,7 @@ Pour connecter votre imprimante Expedy à HubRise, suivez les étapes suivantes 
 1. Cliquez sur **Autoriser**.
 1. La mention **Votre imprimante est connectée à votre compte HubRise** indique le succès de l'opération.
    ![Connexion à HubRise - HubRise connecté](./images/002-expedy-hubrise-connected.png)
-1. En cas de besoin, l'équipe de support de Expedy peut vous venir en aide. Pour leur donner accès à votre compte HubRise, [ajoutez les permissions nécessaires](/apps/expedy/connexion-hubrise#donner-acc-s-au-support-de-expedy).
+1. En cas de besoin, l'équipe de support de Expedy peut vous venir en aide. Pour leur donner accès à votre compte HubRise, [ajoutez les permissions nécessaires](/apps/expedy/connect-hubrise#give-access).
 
 ## Tester la connexion
 
@@ -40,9 +40,9 @@ Pour tester la connexion entre Expedy et HubRise, utilisez une application conne
 1. Défilez vers le bas jusqu'à la section **10 dernières requêtes API**.
 1. La commande doit apparaître dans cette section.
 
-En cas de besoin, l'équipe de support de Expedy peut vous venir en aide. Pour leur donner accès à votre compte HubRise, [ajoutez les permissions nécessaires](/apps/expedy/connexion-hubrise#donner-acc-s-au-support-de-expedy).
+En cas de besoin, l'équipe de support de Expedy peut vous venir en aide. Pour leur donner accès à votre compte HubRise, [ajoutez les permissions nécessaires](/apps/expedy/connect-hubrise#give-access).
 
-## Donner accès au support de Expedy
+## Donner accès au support de Expedy {#give-access}
 
 Pour faciliter la prise en charge de vos demandes de support, nous vous recommandons de donner accès à votre compte HubRise à l'éditeur de la solution Expedy.
 

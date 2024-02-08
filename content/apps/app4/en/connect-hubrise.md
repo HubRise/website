@@ -5,29 +5,31 @@ position: 2
 layout: documentation
 meta:
   title: Connect to HubRise | App4 | HubRise
-  description: App4 overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
+  description: Connect App4 to HubRise, steps to follow to receive your App4 orders in your EPOS.
 ---
 
-At this stage you will need to contact the App4 support team and request them to complete the steps below. It is not yet possible for users to complete the connection autonomously.
+---
 
-- Login to the App4 back office.
-- Click **HubRise Settings**.
-- Select the restaurant to connect and click **Enable**.
-- Click **Link to HubRise Account**.
-- The next steps depend on whether you already have a HubRise location for the restaurant to connect. Refer to the corresponding section below.
+**IMPORTANT NOTE:** If you do not have a HubRise account yet, register on our [Signup Page](https://manager.hubrise.com/signup). It only takes a minute!
 
-### If you already have a HubRise location:
+---
 
-- If you are not logged in, HubRise will prompt for your email and password.
-- App4 will then request permission to access your HubRise Location:
+## Connect App4
 
-![Connect App4 to HubRise](./images/008-connect-to-hubrise.png)
+To connect App4 to HubRise, contact the App4 support team and request them to complete the steps below:
 
-- If you have several locations, select the one to connect.
-- Click **Allow** to complete the connection with HubRise.
+1. Login to the App4 back office.
+1. Click **HubRise Settings**.
+1. Select the restaurant to connect and click **Enable**.
+1. Click **Link to HubRise Account**.
+1. The next steps depend on whether you already have a HubRise location for the restaurant to connect. Refer to the corresponding section below.
+1. App4 then requests permission to access your HubRise location.
+   ![Connect App4 to HubRise](./images/008-connect-to-hubrise.png)
+1. If you have several locations, select the one to connect.
+1. Click **Allow** to complete the connection with HubRise.
 
-### If you don't have a HubRise location yet:
+## Disconnect App4
 
-- When the HubRise login page is presented, click **No Account Yet?**.
-- You will be prompted to create a new Account and Location. The **Account Name** is your brand name. The **Location Name** identifies the physical store: it should be the city or street where the restaurant is. For more information, see [Create an Account](/docs/account/#create-an-account) and [Add a Location](/docs/locations/#add-a-location) on the HubRise documentation.
-- App4 will require permission to access your new HubRise Location. When prompted, click **Allow** to complete the connection.
+To disconnect App4 from HubRise, contact App4 support.
+
+If you need to temporarily stop sending orders from HubRise, you can block the connection between App4 and HubRise instead. For more information, see [Block or Disconnect App](/docs/connections#block-or-disconnect).

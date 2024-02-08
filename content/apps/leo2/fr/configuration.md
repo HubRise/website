@@ -12,11 +12,11 @@ La page de paramétrage de l'interface HubRise permet de connecter LEO2 à HubRi
 
 ---
 
-**REMARQUE IMPORTANTE :** Toute modification de la configuration nécessite le redémarrage du serveur HubRise pour être prise en compte. Pour redémarrer le serveur, double-cliquez sur le raccourci vers le serveur, créé en suivant les étapes décrites dans la section [Créer un raccourci sur le bureau](/apps/leo2/connexion-hubrise/#cr-er-un-raccourci-sur-le-bureau).
+**REMARQUE IMPORTANTE :** Toute modification de la configuration nécessite le redémarrage du serveur HubRise pour être prise en compte. Pour redémarrer le serveur, double-cliquez sur le raccourci vers le serveur, créé en suivant les étapes décrites dans la section [Créer un raccourci sur le bureau](/apps/leo2/connect-hubrise#shortcut).
 
 ---
 
-Pour accéder à la page de paramétrage de l'interface HubRise, suivez les étapes suivantes :
+Pour accéder à la page de paramétrage de l'interface HubRise, suivez ces étapes :
 
 1. Depuis l'écran d'accueil de LEO2, cliquez sur **Gestion**.
 1. Entrez le mot de passe que vous avez choisi lors de l'installation de LEO2. Par défaut, ce mot de passe est **1234**.
@@ -32,7 +32,7 @@ Cette page est divisée en plusieurs sections.
 Cette section permet d'établir la connexion entre LEO2 et HubRise.
 
 - Si la connexion est déjà établie, le contenu de la section apparaît en grisé.
-- Si la connexion n'est pas établie, reportez-vous à la section [Connexion à HubRise](/apps/leo2/connexion-hubrise) pour plus d'informations sur la procédure de connexion.
+- Si la connexion n'est pas établie, reportez-vous à la section [Connexion à HubRise](/apps/leo2/connect-hubrise) pour plus d'informations sur la procédure de connexion.
 
 ## Informations de connexion
 
@@ -41,8 +41,8 @@ Cette section indique les identifiants du point de vente, du catalogue et de la 
 La section vous permet également d'accéder aux actions suivantes :
 
 - **Accès à HubRise** : ouvre le back-office HubRise dans une page de votre navigateur.
-- **Envoi catalogue** : envoie votre menu depuis LEO2 vers HubRise. Pour plus d'informations, voir la section [Exporter le catalogue](/apps/leo2/associer-codes-ref#exporter-le-catalogue).
-- **Déconnecter** : déconnecte le point de vente de HubRise. Pour plus d'informations, voir la section [Déconnecter ubRise](/apps/leo2/connexion-hubrise#d-connecter-leo2).
+- **Envoi catalogue** : envoie votre menu depuis LEO2 vers HubRise. Pour plus d'informations, voir la section [Exporter le catalogue](/apps/leo2/map-ref-codes#export-catalog).
+- **Déconnecter** : déconnecte le point de vente de HubRise. Pour plus d'informations, voir la section [Déconnecter ubRise](/apps/leo2/connect-hubrise#connect).
 
 ## Paramètres
 
@@ -60,7 +60,7 @@ Les cases à cocher suivantes permettent de configurer l'automatisation des tâc
 - **Création automatique des clients inexistants dans HubRise** : lors de l'envoi d'une commande, si la référence du client n'existe pas dans HubRise, crée automatiquement ce dernier dans HubRise.
 - **Envoi des stocks vers HubRise** : envoie les stocks LEO2 en temps réel vers HubRise.
 
-### Comportement en cas de code ref absent ou invalide
+### Comportement en cas de code ref absent ou invalide {#missing-ref}
 
 Les champs suivants permettent de définir le comportement de LEO2 en cas d'incohérence entre les codes ref de LEO2 et HubRise :
 

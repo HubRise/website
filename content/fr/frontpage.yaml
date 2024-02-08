@@ -8,13 +8,14 @@ hero:
   description: |
     Conçu pour les développeurs, HubRise connecte votre app à une multitude de solutions en une seule intégration.
   button_label: Commencer l'intégration
-  button_url: /developers
+  button_url: /fr/developers
 
 content:
   apps:
     title: Nouvelles intégrations pour votre app
     description: |
       HubRise connecte votre app à celles que vos clients utilisent. Concentrez-vous sur le développement de votre app, nous nous occupons des intégrations. [Plus de 100 intégrations disponibles](/fr/apps).
+    link_url: /fr/apps
     categories:
       - Logiciels de caisse
       - Commande en ligne
@@ -22,9 +23,6 @@ content:
       - Solutions marketing
       - Cartes de fidélité
       - Et plus encore
-    image:
-      normal: frontpage/app-lists.png
-      hover: frontpage/app-lists-hover.png
 
   api:
     title: Une API publique et facile à utiliser
@@ -48,7 +46,7 @@ content:
     button_label: Démarrer l'essai gratuit
     button_url: https://manager.hubrise.com/signup
     link_label: Page Tarifs
-    link_url: /tarifs
+    link_url: /fr/tarifs
 
   developers:
     title: Nous aidons les développeurs
@@ -85,6 +83,6 @@ content:
   join:
     title: Prêt à rejoindre l'écosystème ?
     button_label: Connecter votre app
-    button_url: /developers
+    button_url: /fr/developers
     link_label: Créer un compte gratuit
     link_url: https://manager.hubrise.com/signup

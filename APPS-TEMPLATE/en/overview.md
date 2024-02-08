@@ -7,18 +7,18 @@ meta:
   title: Overview | SOLUTION | HubRise
   description: SOLUTION overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your [EPOS] and your other apps.
 gallery:
-- __gallery-001.png ?
-- __gallery-002.png ?
+  - __gallery-001.png ?
+  - __gallery-002.png ?
 app_info:
   category:
-  - Point of Sales - Food Ordering Platforms - Online Ordering - Delivery Management - Loyalty and Marketing - Operations and Inventory - Other Apps
+    - Point of Sales - Food Ordering Platforms - Online Ordering - Delivery Management - Loyalty and Marketing - Operations and Inventory - Other Apps
   availability:
-  - United Kingdom
-  - France
-  - Worldwide
-  price_range: 
-  website: 
-  contact: 
+    - United Kingdom
+    - France
+    - Worldwide
+  price_range:
+  website:
+  contact:
 ---
 
 ---
@@ -32,8 +32,8 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: This documentation is available <Link to="/fr/apps/SOLUTION" addLocalePrefix={false}>in French only</Link>.
-**IMPORTANT NOTE**: Full documentation available <Link to="/fr/apps/SOLUTION" addLocalePrefix={false}>in French only</Link>.
+**IMPORTANT NOTE**: This documentation is available <Link href="/fr/apps/SOLUTION" addLocalePrefix={false}>in French only</Link>.
+**IMPORTANT NOTE**: Full documentation available <Link href="/fr/apps/SOLUTION" addLocalePrefix={false}>in French only</Link>.
 
 ---
 
@@ -53,8 +53,8 @@ Connecting SOLUTION to HubRise allows your [EPOS] to:
 - Push orders into HubRise, including order status.
 - Push order modifications into HubRise: payments and item changes.
 - Push customer information into HubRise. -OR- Push customer information into HubRise, including loyalty.
-- Pull the menu from a HubRise catalog.
-- Push the menu into a HubRise catalog.
+- Pull a catalog from HubRise. -OR- Pull a catalog from HubRise, with variants support.
+- Push a catalog into HubRise. -OR- Push a catalog into HubRise, with variants support.
 - Synchronise inventory with HubRise.
 - Synchronise final delivery time with HubRise.
 
@@ -73,7 +73,7 @@ SOLUTION can be connected to HubRise from the HubRise or from the SOLUTION back 
 
 By connecting SOLUTION to HubRise, your [EPOS] can communicate with your other everyday applications. Receive orders from your online ordering solution, or food delivery platforms in your [EPOS]. Send online orders to your EPOS, to an autonomous printer, a Kitchen Display Screen, or to your inventory management solution. Push your [menu / product catalog] into other apps.
 
-Thanks to HubRise, you can synchronise your menu, your customer information and your orders with your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management solutions or delivery services, eMarketing (SMS/emailing), business intelligence, inventory management and customer loyalty systems, and more. The number of compatible applications increases every month. To find out which apps you can connect, see our [Apps page](/apps).
+With HubRise, you can synchronise your menu, customer information, and orders between your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats, and Just Eat), delivery management solutions or delivery services, eMarketing solutions (SMS/emailing), business intelligence, inventory, and customer loyalty systems, and much more. The number of compatible applications increases every month. To discover the apps you can connect, visit our [Apps page](/apps).
 
 ## Prerequisites
 

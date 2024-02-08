@@ -4,7 +4,7 @@ path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | SuperDigital.fr | HubRise
+  title: Connexion à HubRise | SuperDigital.fr | HubRise
   description: Étapes pour établir une connexion entre SuperDigital.fr et HubRise. Connectez votre caisse et synchronisez vos données avec d'autres applications.
 ---
 
@@ -16,7 +16,7 @@ meta:
 
 ## Connecter SuperDigital.fr
 
-Pour connecter votre solution de commande en ligne SuperDigital.fr à HubRise, suivez les étapes suivantes :
+Pour connecter votre solution de commande en ligne SuperDigital.fr à HubRise, suivez ces étapes :
 
 1. Dans le menu latéral de votre espace SuperDigital.fr, sélectionnez **RestroPress** > **Settings**.
 2. Sélectionnez l'onglet **HubRise**.
@@ -25,9 +25,9 @@ Pour connecter votre solution de commande en ligne SuperDigital.fr à HubRise, s
 5. Cliquez sur **Autoriser**.
    ![Connexion - Page de connexion](./images/001-connection-page.png)
 
-En cas de besoin, l'éditeur de la solution SuperDigital.fr peut vous venir en aide. Pour leur donner accès à votre compte HubRise, [ajoutez les permissions nécessaires](/apps/superdigital/connexion-hubrise#donner-acc-s-au-support-de-superdigital-fr).
+En cas de besoin, l'éditeur de la solution SuperDigital.fr peut vous venir en aide. Pour leur donner accès à votre compte HubRise, [ajoutez les permissions nécessaires](/apps/superdigital/connect-hubrise#give-access).
 
-## Donner accès au support de SuperDigital.fr
+## Donner accès au support de SuperDigital.fr {#give-access}
 
 Pour faciliter la prise en charge de vos demandes de support, nous vous recommandons de donner accès à votre compte HubRise à l'éditeur de la solution SuperDigital.fr.
 

@@ -8,9 +8,9 @@ meta:
   description: How connections to HubRise can be managed.
 ---
 
-The Data section provides records for orders, customers, and catalogs. At any time, you can select which Account and Locations to display.
+The Data section provides records for orders, customers, catalogs, and inventory. At any time, you can select which Account and Locations to display.
 
-## Orders
+## Orders {#orders}
 
 The **ORDERS** page displays your recent orders, with the most recent on top. For every order on the list, you can find the following attributes:
 
@@ -18,7 +18,7 @@ The **ORDERS** page displays your recent orders, with the most recent on top. Fo
 - **LOCATION**: If you select **All locations**, this column shows the Location that received the order.
 - **CUSTOMER**: The customer that made the order.
 - **AMOUNT**: The total amount of the order.
-- **STATUS**: The current status of the order. For an overview of possible statuses, see the [Order status section](/developers/api/order-management/#order-status) of the HubRise API **Order Management** page.
+- **STATUS**: The current status of the order. For an overview of possible statuses, see the [Order status section](/developers/api/orders#status) of the HubRise API **Order Management** page.
 - **ORIGIN**: What app the order was generated from.
 
 To filter orders by start and end date:
@@ -28,7 +28,7 @@ To filter orders by start and end date:
 1. To clear the date filters, remove the dates from the **From** and **To** fields, then select the search icon <InlineImage width="17" height="17">![Search icon](../images/061-search.png)</InlineImage>.
 
 Click on the date of the order to view full details.
-To view the full details of the request, click the date and time in the **Logs** section. For more information, see [Logs](/docs/data/#logs).
+To view the full details of the request, click the date and time in the **Logs** section. For more information, see [Logs](/docs/data#logs).
 
 ---
 
@@ -36,7 +36,7 @@ To view the full details of the request, click the date and time in the **Logs**
 
 ---
 
-## Customers
+## Customers {#customers}
 
 The **CUSTOMERS** page displays the selected customer lists for the selected Account. Customers are ordered by reverse creation date.
 
@@ -58,13 +58,13 @@ To see full details of a customer, click the customer name. To see the full logs
 
 To create, edit or remove a customer lists, see [Customer Lists](/docs/customer-lists).
 
-## Catalogs
+## Catalogs {#catalogs}
 
 From the **CATALOGS** page, you can view the catalogs pushed into HubRise and the logs of the requests that made changes to the catalog.
 
-Connected apps that have access to your HubRise catalog can pull its product list or push new products into it. For example, a connected EPOS can push its catalog into HubRise for an e-commerce website to use it. If required, you can also edit the catalog using **Catalog Manager**, a free app available on HubRise. For more information, see [Catalog Manager](/apps/catalog-manager).
+Connected apps that have access to your HubRise catalog can pull its product list or push new products into it. For example, a connected EPOS can push its catalog into HubRise for an e-commerce website to use it. If required, you can also edit the catalog using **Catalog Manager**, a free app available on HubRise. For more information, see [Catalog Manager](/apps/catalog-manager/overview).
 
-### View Catalog
+### View Catalog {#view-catalog}
 
 Accounts and Locations can contain multiple Catalogs. To view a specific Catalog, select it from the dropdown list next to the title **Catalogs**.
 
@@ -91,11 +91,25 @@ For Deals and Discounts, you can see the following attributes:
 - **NAME**: The Deal or Discount name.
 - **REF CODE**: The unique identifier of the Deal or Discount from the source product management system.
 
-To see the full logs of all the requests that make changes to the catalog, click **View logs**. For more information, see [Logs](/docs/data/#logs).
+To see the full logs of all the requests that make changes to the catalog, click **View logs**. For more information, see [Logs](/docs/data#logs).
 
 To create, edit or remove a catalogs, see [Catalogs](/docs/catalog).
 
-## Logs
+## Inventory
+
+The **INVENTORY** page displays the inventory entries for the selected Location. You must select a Location to view its inventory. If no Location is selected, a message prompts you to select one.
+
+Inventory entries are presented with SKU entries first, sorted by their ref code, followed by Option entries, also sorted by their ref code. In the absence of an inventory entry for a SKU or Option, the quantity is considered unlimited.
+
+The following attributes are displayed for each inventory entry:
+
+- **SKU / OPTION**: The type of inventory entry, either **SKU** or **Option**.
+- **REF**: The ref code of the SKU or Option.
+- **STOCK**: The current stock level. If the stock level is `0`, the item is out of stock.
+
+To see the full logs of all the requests that make changes to the inventory, click **View logs**. For more information, see [Logs](/docs/data#logs).
+
+## Logs {#logs}
 
 Each page in the **DATA** section provides more information through its log page.
 
@@ -105,7 +119,9 @@ The log page displays a summary list of requests in reverse chronological order.
 
 - **TIME (UTC+02:00)**: The date and time of the request, in UTC format.
 - **ORIGIN**: The app that created the request.
-- **ENDPOINT**: The endpoint of the request, including HTTP method and URL path.
+- **RESOURCE**: The target of the request.
+- **METHOD**: The HTTP method used in communicating the request.
+- **URL**: The URL path for the request.
 - **RESPONSE**: The HTTP response code.
 
 Further log details are available for advanced users and developers to view app communications and troubleshoot issues. To view details for a log entry:
@@ -113,4 +129,10 @@ Further log details are available for advanced users and developers to view app 
 1. Click the row to display. A full list of the query and response will be displayed.
 1. To download either the query or response, select the download icon <InlineImage width="15" height="14">![Download icon](../images/058-download.png)</InlineImage>. The selected query or response will be provided as a JSON file.
 
-For more information, see [Understanding Logs in HubRise](/docs/hubrise-logs). For a complete reference on the HubRise API, see the [HubRise API Reference page](/developers/api/general-concepts).
+The logs can be filtered based on specific criteria, including resource, method, and time range. To filter logs: 
+
+1. Click the **Filter** section located at the top of the page. Upon clicking, you will see the filter options.
+1. Apply one or more filters. The log entries will refresh automatically.
+1. To revert to viewing all logs, click **Reset**.
+
+For more information, see [Understanding Logs in HubRise](/docs/hubrise-logs/overview). For a complete reference on the HubRise API, see the [HubRise API Reference page](/developers/api/general-concepts).

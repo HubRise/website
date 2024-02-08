@@ -10,11 +10,11 @@ meta:
 
 The main page on Mailchimp Bridge shows **Latest operations**. Each operation consists of requests sent from HubRise to Mailchimp Bridge, and from Mailchimp Bridge to Mailchimp.
 
-Logs are in JSON format. For more information, check our [documentation on JSON logs](/docs/hubrise-logs).
+Logs are in JSON format. For more information, check our [documentation on JSON logs](/docs/hubrise-logs/overview).
 
 ## Operations table
 
-The **Latest operations** table might contain an **ORDER** and/or a **CUSTOMER** column depending on the configuration options chosen. For more information, see [Configurations Options](/apps/mailchimp/configuration/#configuration-options).
+The **Latest operations** table might contain an **ORDER** and/or a **CUSTOMER** column depending on the configuration options chosen. For more information, see [Configurations Options](/apps/mailchimp/configuration#options).
 
 Operations with a **Customer** or **Order** entry indicate that a single customer was transferred to Mailchimp.
 

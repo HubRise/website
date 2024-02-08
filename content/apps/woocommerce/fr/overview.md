@@ -1,11 +1,11 @@
 ---
 title: Présentation générale
-path_override: "/"
+path_override: /
 position: 1
 layout: documentation
 meta:
   title: Présentation générale | WooCommerce | HubRise
-  description: Présentation générale de WooCommerce, les raisons de connecter votre site WooCommerce à HubRise et fonctionnalités de l'intégration avec HubRise.
+  description: Présentation de WooCommerce, avantages de la connexion à HubRise, fonctionnalités de l'intégration. Synchronisez les données entre logiciel de caisse et applications.
 gallery:
   - __gallery-001.jpg
   - __gallery-002.png
@@ -13,39 +13,33 @@ gallery:
   - __gallery-004.png
 app_info:
   category: Commande en ligne
-  availability: Monde
-  price_range:
+  availability: Monde entier
+  price_range: null
   website: https://woocommerce.com
----
-
----
-
-**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link to="/apps/woocommerce" addLocalePrefix={false}>en anglais uniquement</Link>.
-
 ---
 
 ## Description
 
-WooCommerce est une solution e-commerce open source, construite sur WordPress, et conçue pour les commerçants en ligne de toute envergure. Cette plateforme permet aux entreprises de vendre à la fois des produits numériques et physiques, de gérer les stocks et les expéditions, de traiter les paiements sécurisés et de gérer automatiquement les taxes.
+WooCommerce est une plateforme d'e-commerce en open source, hébergée sur WordPress et conçue spécifiquement pour les commerces en ligne de toutes tailles. Elle permet aux entreprises de vendre à la fois des produits physiques et dématérialisés, de gérer les stocks et les livraisons, d'effectuer des paiements sécurisés et de gérer automatiquement les taxes.
 
-WooCommerce fonctionne comme un plugin qui nécessite une installation sur un site WordPress. Bien qu'il offre une large gamme de fonctionnalités nativement, vous avez la possibilité d'améliorer la fonctionnalité de WooCommerce. Cela peut être réalisé grâce à des thèmes, des plugins supplémentaires, des extensions, ou même en modifiant directement le code du plugin.
+WooCommerce fonctionne comme un module d'extension (plug-in) qui doit être installé sur un site Internet WordPress. Sa gamme de fonctionnalités est assez large, mais vous avez la possibilité de la compléter via des thèmes, des plugins supplémentaires, des extensions, ou même en modifiant directement le code du plugin.
 
-Depuis son lancement en 2011, WooCommerce est devenu la solution de commerce électronique la plus répandue. En 2020, 4 sites de commande en ligne sur 10 utilisent WooCommerce, consolidant sa position de leader sur le marché du commerce en ligne.
+Depuis son lancement en 2011, WooCommerce est devenue la solution d'e-commerce la plus répandue. Dès 2020, elle alimentait 4 sites de commande en ligne sur 10, consolidant ainsi sa position de leader sur le marché de commerce en ligne.
 
 ## Fonctionnalités de l'intégration
 
-La connexion de WooCommerce à HubRise permet à WooCommerce de :
+La connexion de WooCommerce permet à HubRise de :
 
-- Recevoir les commandes dans HubRise.
-- Recevoir le statut des commandes dans WooCommerce depuis HubRise.
-- Envoyer les informations clients à HubRise.
-- Recevoir un catalogue de produits de HubRise.
+- Recevoir les commandes de WooCommerce, dont le statut de commande.
+- Recevoir les informations clients de WooCommerce.
+- Envoyer un catalogue vers WooCommerce.
+- Synchroniser l'inventaire avec WooCommerce.
 
-## Pourquoi se connecter ?
+## Pourquoi se connecter ?
 
-WooCommerce peut être connecté à HubRise afin que votre site Internet et les autres applications que vous utilisez au quotidien fonctionnent comme un tout cohérent. Il peut s'agir de votre logiciel de caisse ou de marketing préférée. La connexion à HubRise vous permet de synchroniser votre catalogue de produits, vos clients et les informations relatives à vos commandes.
+WooCommerce peut être connecté à HubRise afin que votre site internet et les autres applications que vous utilisez au quotidien fonctionnent comme un tout cohérent, par exemple votre logiciel de caisse ou votre solution marketing préférée. La connexion à HubRise vous permet de synchroniser votre catalogue de produits, vos clients et les informations relatives à vos commandes.
 
-Grâce à HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes avec votre logiciel de caisse, de commande en ligne, les plateformes de livraison de repas (dont Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs ou de services de livraison, les solutions eMarketing (SMS / eMailing), business intelligence, systèmes de gestion de stock et de fidélisation client, et bien d'autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, consultez notre [page Apps](/apps).
+Avec HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes entre votre logiciel de caisse, votre solution de commande en ligne, les services de livraison de repas (y compris Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs, les services de livraison, les solutions d'e-marketing (SMS/emailing), les systèmes de business intelligence, de gestion des stocks et de fidélisation client, et bien plus encore. Le nombre d'applications compatibles augmente chaque mois. Pour découvrir les applications que vous pouvez connecter, visitez notre [page Apps](/apps).
 
 ## Prérequis
 

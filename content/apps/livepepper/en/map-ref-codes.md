@@ -10,22 +10,22 @@ meta:
 
 To receive LivePepper orders correctly on your EPOS, you need to configure ref codes for each item in the catalog, including toppings and options, ingredients, skus and deals. In some cases, the EPOS also requires ref codes for payment methods, service types and delivery charges. Refer to your EPOS documentation on the HubRise website for details.
 
-This page explains how to configure ref codes in LivePepper. Some EPOS solutions offer the ability to export the menu to HubRise, allowing you to populate your LivePepper menu automatically with the correct ref codes. For more details, see [Pulling and Pushing the Menu](/apps/livepepper/menu).
+This page explains how to configure ref codes in LivePepper. Some EPOS solutions offer the ability to export the menu to HubRise, allowing you to populate your LivePepper menu automatically with the correct ref codes. For more details, see [Pull the Catalog](/apps/livepepper/pull-catalog).
 
-## Products and Skus
+## Products and SKUs
 
 Each product has one or more skus. Each sku has a ref code that must be mapped to the corresponding item in your EPOS.
 
 To update the ref code for each sku, follow these steps:
 
 1. From your LivePepper back office, select **My Menu** > **Products**.
-2. Select the product to update.
-3. For each sku in the **Price & Availability** section, update the ref code under the **POS code** column.
-4. Click **Save** to confirm.
+1. Select the product to update.
+1. For each sku in the **Price & Availability** section, update the ref code under the **POS code** column.
+1. Click **Save** to confirm.
 
 ![Mapping ref codes for skus](./images/001-livepepper-sku-ref-codes.png)
 
-At the end of the process, you can verify that all products have been mapped using the **Missing POS codes** custom action in LivePepper. For more information, see [Verify Product Mapping](/apps/livepepper/troubleshooting#verify-product-mapping)
+At the end of the process, you can verify that all products have been mapped using the **Missing POS codes** custom action in LivePepper. For more information, see [Verify Product Mapping](/apps/livepepper/troubleshooting#verify-mapping)
 
 ## Toppings, Ingredients, and Options
 
@@ -40,28 +40,28 @@ The following table provides an overview all these features.
 | Ingredient | An ingredient present by default that can be removed from the product        | Product              | Removing the pickles from a cheeseburger              |
 | Option     | An optional service or item added to the product                             | Category             | Asking to slice the pizza                             |
 
-To update the ref code for ingredients or variants defined at the product-level, follow these steps.
+To update the ref code for ingredients or variants defined at the product-level, follow these steps:
 
 1. Select the product.
-2. From the **Customization** section, select the item you want to update.
+1. From the **Customization** section, select the item you want to update.
    ![Mapping ref codes - Ingredients](./images/015-product-ingredients.png)
-3. If the ingredient or variant is used in other products and they share the same ref code, you can update the ref code everywhere with these additional steps.
+1. If the ingredient or variant is used in other products and they share the same ref code, you can update the ref code everywhere with these additional steps.
    - From the **Quick Copy** section, select whether the change applies to **All menu** items or to all products in a category.
    - Select **Use POS codes above**.
      ![Mapping ref codes - Ingredient ref code](./images/016-ingredient-ref-code.png)
-4. Click **Save** to confirm.
+1. Click **Save** to confirm.
 
-To update the ref code for toppings, options, and variants defined at the category-level, follow these steps.
+To update the ref code for toppings, options, and variants defined at the category-level, follow these steps:
 
 1. From your LivePepper back office, select **My Menu** > **Products**.
-2. Select the category.
-3. From the **Customization** section, select the item you want to update.
-4. If the item is used in other products and they share the same ref code, you can update the ref code everywhere with these additional steps
+1. Select the category.
+1. From the **Customization** section, select the item you want to update.
+1. If the item is used in other products and they share the same ref code, you can update the ref code everywhere with these additional steps
    - From the **Quick Copy** section, select whether the change applies to **All menu** items or to all products in a category.
    - Select **Use POS codes above**.
-5. Click **Save** to confirm.
+1. Click **Save** to confirm.
 
-At the end of the process you can check if all product values and attributes have been mapped. For more information, see [Verify Product Mapping](/apps/livepepper/troubleshooting#verify-product-mapping).
+At the end of the process you can check if all product values and attributes have been mapped. For more information, see [Verify Product Mapping](/apps/livepepper/troubleshooting#verify-mapping).
 
 ## Deals and Discounts
 
@@ -74,7 +74,7 @@ To add ref code to a deal, follow these steps.
 1. Under **Advanced Settings**, enter the ref code in the **POS code** field.
 1. Click **Save** to confirm.
 
-At the end of the process you can check if all deals have been mapped. For more information, see [Verify Product Mapping](/apps/livepepper/troubleshooting#verify-product-mapping)
+At the end of the process you can check if all deals have been mapped. For more information, see [Verify Product Mapping](/apps/livepepper/troubleshooting#verify-mapping)
 
 ---
 

@@ -1,121 +1,36 @@
-![](https://github.com/hubrise/website/workflows/spec/badge.svg)
+# HubRise Website
 
-# Development cycle
+## Initial Setup
 
-The server runs on: http://localhost:8000
+To install dependencies, execute `yarn install`. Make sure Node.js and Yarn are already installed on your system.
 
-**Windows or Linux:**
+### Running the Server
 
-First install Docker: https://docs.docker.com/get-docker/
+For development mode, run `yarn dev`. The server will start at `http://localhost:3000`.
 
-Then open a console, `cd` to the project root, and type:
+## Run the Test Suites
 
-```
-docker-compose -f docker-compose.yml up --build website_dev
-```
+- **End-to-End Tests**:  
+  Run `yarn cypress:run`. This will execute end-to-end tests to simulate user behavior on the website.
 
-**macOS:**
+- **Unit Tests**:  
+  Run `yarn test`. This focuses on individual components.
 
-We don't recommend using Docker on macOS, because of file synchronization issues which slow down the development process.
-Instead, you should install NodeJS and the required dependencies locally, following this guide: https://www.gatsbyjs.org/tutorial/part-zero/
-(short version: install Xcode Command line tools, NodeJS, and run `npm install` in a shell at the root of your project)
+---
 
-To run the website, open a console, and type:
+### Notes for Technical Writers
 
-```
-yarn gatsby develop
-```
+To run the server and tests, you need to have Node.js and Yarn installed on your system. If you don't have them installed, follow the instructions below.
 
-If you see the following error:
+- [Node.js](https://nodejs.org/)
+- [Yarn](https://yarnpkg.com/)
 
-```
-FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed
-```
+This server uses two types of test suites. The `yarn cypress:run` command runs end-to-end tests, useful for verifying the entire workflow of the application. On the other hand, `yarn test` runs unit and integration tests that focus on specific parts or interactions in the application.
 
-Try the command below, which allocates more memory:
+---
 
-```
-NODE_OPTIONS="--max-old-space-size=4096" yarn gatsby develop
-```
+## Build and Run the Docker Image
 
-**macOS with Docker (not recommended):**
+To build the website docker image, run `docker build -t hubrise/website:latest .`.
 
-First install Docker: https://docs.docker.com/get-docker/. Then install Docker Sync with this command:
-
-```
-brew install rbenv ruby-build
-gem install docker-sync
-```
-
-To run the website, open a console, `cd` to the project root, and type:
-
-```
-docker-sync start
-docker-compose -f docker-compose.mac.yml up --build website_dev
-docker exec website_dev rm -rf public .cache
-```
-
-# Run the test suite
-
-In interactive mode - could not make it work inside a Docker container.
-Safe bet is to install the yarn dependencies and cypress on the host and run:
-
-```
-cypress run
-```
-
-The non-interactive, continuous integration version can run in a Docker container however:
-
-**Windows or Linux:**
-
-```shell
-docker-compose -f docker-compose.yml up --build website_test
-```
-
-**macOS (only works with Docker):**
-
-```shell
-docker-compose -f docker-compose.mac.yml up --build website_test
-```
-
-# Run the production image locally
-
-Runs on: http://localhost:8001
-
-This runs the server with Server Side Rendering (SSR) enabled. Pages are not reloaded on code change.
-
-**Windows or Linux:**
-
-```shell
-docker-compose -f docker-compose.yml up --build website_prod
-```
-
-**macOS (only works with Docker):**
-
-```shell
-docker-compose -f docker-compose.mac.yml up --build website_prod
-```
-
-# Production deployment
-
-For HubRise system administrators.
-
-Use the same process as the other apps (see cluster/doc/build_deploy_app.md)
-
-# Test email-sending forms locally
-
-1. Create file `.env.development` in the root directory with env variable `RECAPTCHA_SITE_KEY=`
-2. Go to `/server` directory, create file `.env` and specify the same variables as in `/server/.env.example`
-3. Install dependencies in `/server` directory via `yarn`
-4. Run server via `cd server; node index.js`
-5. From a separate terminal, run gatsby via `yarn start:dev`
-
-# When building fails...
-
-Open a terminal at the project's root and type:
-
-```
-yarn gatsby clean
-```
-
-This will delete all build by-products and put your server in a clean state.
+To run the image locally, run `docker run -p 3000:80 hubrise/website:latest`.

@@ -4,7 +4,7 @@ path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | Restaurant-internet | HubRise
+  title: Connexion à HubRise | Restaurant-internet | HubRise
   description: Étapes pour établir une connexion entre Restaurant-internet et HubRise. Connectez votre caisse et synchronisez vos données avec d'autres applications.
 ---
 
@@ -24,9 +24,9 @@ Pour connecter la solution de commande en ligne Restaurant-internet avec HubRise
 4. Choisissez le point de vente que vous désirez connecter et cliquez **Autoriser** pour donner à Restaurant-internet l'accès à vos informations. Si plusieurs listes de clients ou catalogues sont disponibles, cliquez **Suivant** afin d'afficher les listes déroulantes correspondantes avant de cliquer sur **Autoriser**. Vous êtes redirigés vers votre tableau de bord Restaurant-internet, affichant les informations de votre point de vente.
    ![Connexion à HubRise - Connecté à HubRise](./images/001-restaurant-internet-connected.png)
 
-En cas de besoin, le support de Restaurant-internet peut vous venir en aide. Pour leur donner accès à votre compte HubRise, [ajoutez les permissions nécessaires](/apps/restaurant-internet/connexion-hubrise#donner-acc-s-au-support-de-restaurant-internet).
+En cas de besoin, le support de Restaurant-internet peut vous venir en aide. Pour leur donner accès à votre compte HubRise, [ajoutez les permissions nécessaires](/apps/restaurant-internet/connect-hubrise#give-access).
 
-## Donner accès au support de Restaurant-internet
+## Donner accès au support de Restaurant-internet {#give-access}
 
 Pour faciliter la prise en charge de vos demandes de support, nous vous recommandons de donner accès à votre compte HubRise à l'éditeur de la solution Restaurant-internet.
 
@@ -40,7 +40,7 @@ L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers �
 
 ## Déconnecter Restaurant-internet
 
-Pour déconnecter Restaurant-internet de HubRise, suivez les étapes suivantes :
+Pour déconnecter Restaurant-internet de HubRise, suivez ces étapes :
 
 1. Depuis votre tableau de bord Restaurant-internet, dans la partie **Modules**, sélectionnez **Marketplace Autres modules**.
 1. Sélectionnez **Hubrise - Connection Caisse Gratuit**.

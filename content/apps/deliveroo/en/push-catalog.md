@@ -50,7 +50,7 @@ Deliveroo Bridge can automatically push your HubRise catalog into Deliveroo ever
 1. In the **Catalog** section, tick the **Enable automatic catalog push** box.
 1. Click **Save**.
 
-## Information Sent to Deliveroo
+## Information Sent to Deliveroo {#information-sent}
 
 The following sections provide more details on how your HubRise catalog is mapped to Deliveroo.
 
@@ -126,29 +126,30 @@ For every `sku` object in a product, Deliveroo Bridge sends the following inform
 - `price`: The price difference with the main product, if present
 - `option_list_refs`: The list of options attached to the sku
 
-For more information about skus in the HubRise catalog, see [Skus](/developers/api/catalog-management/#skus).
+For more information about skus in the HubRise catalog, see [Skus](/developers/api/catalogs#skus).
 
-### Product Tags
+### Product Tags {#product-tags}
 
 The table below lists the tags that can be set on products.
 
-| Tag                                  | Description             |
-| ------------------------------------ | ----------------------- |
-| `alcoholic`                          | Contains alcohol.       |
-| `allergen_celery`                    | Contains this allergen. |
-| `allergen_crustaceans`               | Contains this allergen. |
-| `allergen_eggs`                      | Contains this allergen. |
-| `allergen_fish`                      | Contains this allergen. |
-| `allergen_gluten`                    | Contains this allergen. |
-| `allergen_lupin`                     | Contains this allergen. |
-| `allergen_milk`                      | Contains this allergen. |
-| `allergen_molluscs`                  | Contains this allergen. |
-| `allergen_mustard`                   | Contains this allergen. |
-| `allergen_nuts`                      | Contains this allergen. |
-| `allergen_peanuts`                   | Contains this allergen. |
-| `allergen_sesame_seeds`              | Contains this allergen. |
-| `allergen_soybeans`                  | Contains this allergen. |
-| `allergen_sulphur_dioxide_sulphites` | Contains this allergen. |
+| Tag                                  | Description                            |
+| ------------------------------------ | -------------------------------------- |
+| `alcoholic`                          | Contains alcohol.                      |
+| `deal_only`                          | Can only be ordered as part of a deal. |
+| `allergen_celery`                    | Contains this allergen.                |
+| `allergen_crustaceans`               | Contains this allergen.                |
+| `allergen_eggs`                      | Contains this allergen.                |
+| `allergen_fish`                      | Contains this allergen.                |
+| `allergen_gluten`                    | Contains this allergen.                |
+| `allergen_lupin`                     | Contains this allergen.                |
+| `allergen_milk`                      | Contains this allergen.                |
+| `allergen_molluscs`                  | Contains this allergen.                |
+| `allergen_mustard`                   | Contains this allergen.                |
+| `allergen_nuts`                      | Contains this allergen.                |
+| `allergen_peanuts`                   | Contains this allergen.                |
+| `allergen_sesame_seeds`              | Contains this allergen.                |
+| `allergen_soybeans`                  | Contains this allergen.                |
+| `allergen_sulphur_dioxide_sulphites` | Contains this allergen.                |
 
 If a product does not contain any allergens, Deliveroo Bridge automatically adds the `no_allergens` tag.
 

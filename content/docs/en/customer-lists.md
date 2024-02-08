@@ -37,7 +37,7 @@ To add a customer list, follow these steps:
 The **Customer lists** section displays the following information:
 
 - **Name**: The name of the customer list, followed by its unique identifier. This unique identifier does not change even if the name of the customer list is changed. For example: The customer list `Baker Street` would be displayed as `Baker Street - abc123`. If the catalog `Baker Street` is renamed to `Dunning Street`, it will be displayed as `Dunning Street - abc123`.
-- **Customer Count**: The number of customers imported into HubRise. To view customer list details, see [Customers](/docs/data/#customers).
+- **Customer Count**: The number of customers imported into HubRise. To view customer list details, see [Customers](/docs/data#customers).
 
 To view the details of a customer list, click the name of the list. It will automatically link you to the **DATA** > **Customers** page for the specific list.
 

@@ -20,7 +20,7 @@ HubRise and Deliveroo each use their own terminology. The same concept can there
 | Brand      | Account  | Business brand.                     |
 | Menu       | Catalog  | List of products.                   |
 
-## Service Types
+## Service Types {#service-types}
 
 Deliveroo offers three types of services to its customers:
 

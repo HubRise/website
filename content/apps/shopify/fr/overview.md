@@ -19,7 +19,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link to="/apps/shopify" addLocalePrefix={false}>en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/shopify">en anglais uniquement</Link>.
 
 ---
 
@@ -45,7 +45,7 @@ La connexion de Shopify à HubRise permet à Shopify de :
 
 Shopify peut être connecté à HubRise afin que votre site Internet et les autres applications que vous utilisez au quotidien fonctionnent comme un tout cohérent. Il peut s'agir de votre logiciel de caisse ou de marketing préférée. La connexion à HubRise vous permet de synchroniser votre catalogue de produits, vos stocks, vos clients et les informations relatives à vos commandes.
 
-Grâce à HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes avec votre logiciel de caisse, de commande en ligne, les plateformes de livraison de repas (dont Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs ou de services de livraison, les solutions eMarketing (SMS / eMailing), business intelligence, systèmes de gestion de stock et de fidélisation client, et bien d'autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, consultez notre [page Apps](/apps).
+Avec HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes entre votre logiciel de caisse, votre solution de commande en ligne, les services de livraison de repas (y compris Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs, les services de livraison, les solutions d'e-marketing (SMS/emailing), les systèmes de business intelligence, de gestion des stocks et de fidélisation client, et bien plus encore. Le nombre d'applications compatibles augmente chaque mois. Pour découvrir les applications que vous pouvez connecter, visitez notre [page Apps](/apps).
 
 ## Prérequis
 

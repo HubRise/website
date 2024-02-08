@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: This documentation is available <Link to="/fr/apps/adipos" addLocalePrefix={false}>in French only</Link>.
+**IMPORTANT NOTE**: This documentation is available <Link href="/fr/apps/adipos">in French only</Link>.
 
 ---
 
@@ -37,7 +37,7 @@ Connecting Adipos to HubRise allows your EPOS to:
 
 - Pull orders from HubRise, including order status.
 - Pull customer information from HubRise.
-- Push the menu into a HubRise catalog.
+- Push a catalog into HubRise.
 - Synchronise inventory with HubRise.
 
 Adipos can be connected to HubRise from the Adipos back office.
@@ -52,7 +52,7 @@ Adipos can be connected to HubRise from the Adipos back office.
 
 By connecting Adipos to HubRise, your Point of Sales solution can communicate with your other everyday applications. Receive orders from your online ordering solution, or food delivery platforms in your EPOS. Send the menu on your EPOS into other apps.
 
-Thanks to HubRise, you can synchronise your menu, your customer information and your orders with your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management solutions or delivery services, eMarketing (SMS/emailing) solutions, business intelligence, inventory management and customer loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our [Apps page](/apps).
+With HubRise, you can synchronise your menu, customer information, and orders between your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats, and Just Eat), delivery management solutions or delivery services, eMarketing solutions (SMS/emailing), business intelligence, inventory, and customer loyalty systems, and much more. The number of compatible applications increases every month. To discover the apps you can connect, visit our [Apps page](/apps).
 
 ## Prerequisites
 

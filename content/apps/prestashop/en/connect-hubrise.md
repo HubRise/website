@@ -51,4 +51,4 @@ To can connect PrestaShop to HubRise, follow these steps.
 
 If you have a catalog of products on HubRise, you can upload it to your PrestaShop store with a single click.
 
-For more information on HubRise catalogs, see [Catalogs](/docs/catalog/). To learn how to push your HubRise catalog into PrestaShop, see [Push the Catalog](/apps/prestashop/push-catalog).
+For more information on HubRise catalogs, see [Catalogs](/docs/catalog). To learn how to push your HubRise catalog into PrestaShop, see [Push the Catalog](/apps/prestashop/push-catalog).

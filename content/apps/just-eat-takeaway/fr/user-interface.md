@@ -44,7 +44,7 @@ Cliquez sur une requête pour la développer et révéler le détail des échang
 
 ![Page des journaux de commande sur Just Eat Takeaway Bridge](./images/004-jet-order-logs.png)
 
-Les fichiers journaux constituent un puissant outil de débogage en cas d'incident. Pour comprendre comment lire ces requêtes, voir [Comprendre les logs HubRise](/docs/hubrise-logs/).
+Les fichiers journaux constituent un puissant outil de débogage en cas d'incident. Pour comprendre comment lire ces requêtes, voir [Comprendre les logs HubRise](/docs/hubrise-logs/overview).
 
 ## Page de requête système
 
@@ -62,7 +62,7 @@ Dans le coin supérieur droit de la page principale, vous pouvez cliquer sur la 
 
 Pour revenir à la page principale, cliquez sur les logos de Just Eat et de HubRise en haut de n'importe quelle page de Just Eat Takeaway Bridge.
 
-## Page de configuration
+## Page de configuration {#configuration}
 
 Pour accéder à la page de configuration de Just Eat Takeaway Bridge, cliquez sur la flèche <InlineImage width="20" height="20">![icône fléchée](../images/arrow-icon.jpg)</InlineImage> dans le coin supérieur droit de la page pour développer le menu, puis cliquez sur **Configuration**.
 

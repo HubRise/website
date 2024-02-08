@@ -15,6 +15,7 @@ content:
     title: New integrations for your app
     description: |
       HubRise connects your app to the ones your customers use. Focus on the development of your app, while we look after integrations. [More than 100 available integrations](/apps).
+    link_url: /apps
     categories:
       - EPOS
       - Online Ordering
@@ -22,9 +23,6 @@ content:
       - Marketing Solutions
       - Loyalty cards
       - And More
-    image:
-      normal: frontpage/app-lists.png
-      hover: frontpage/app-lists-hover.png
 
   api:
     title: Public and easy to use API

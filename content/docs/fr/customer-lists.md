@@ -37,7 +37,7 @@ Pour ajouter une liste de clients, procédez comme suit :
 La section **Liste des clients** affiche les informations suivantes :
 
 - **Nom** : appellation de la liste de clients, suivie de son identifiant unique. Cet identifiant unique ne change pas même si le nom de la liste de clients est modifié. Exemple : la liste de clients `Avenue d'Italie` apparaîtra comme `Avenue d'Italie - abc123`. Si la liste de clients `Avenue d'Italie` est renommée `Rue Denfert-Rochereau`, elle apparaîtra comme `Rue Denfert-Rochereau - abc123`.
-- **Nombre de clients** : nombre de clients importés dans HubRise. Pour afficher les détails de la liste des clients, voir [Clients](/docs/donnees#clients).
+- **Nombre de clients** : nombre de clients importés dans HubRise. Pour afficher les détails de la liste des clients, voir [Clients](/docs/data#customers).
 
 Pour afficher les détails d'une liste de clients, cliquez sur le nom de la liste en question. Vous serez alors automatiquement redirigé sur la page **DONNÉES** > **Clients** de la liste spécifique.
 

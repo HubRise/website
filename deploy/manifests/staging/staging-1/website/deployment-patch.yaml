@@ -5,7 +5,7 @@ metadata:
   name: website
 
 spec:
-  replicas: 2
+  replicas: 1
 
   template:
     spec:
@@ -16,8 +16,9 @@ spec:
 
           resources:
             requests:
-              cpu: 30m
-              memory: 80Mi
+              cpu: 300m
+              memory: 500Mi
             limits:
-              cpu: 200m
-              memory: 200Mi
+              # We need some CPU for short periods of time after startup, when optimised images are not yet cached.
+              cpu: 1000m
+              memory: 750Mi

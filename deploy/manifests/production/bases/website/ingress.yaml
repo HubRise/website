@@ -9,36 +9,6 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-production
     nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
-    nginx.ingress.kubernetes.io/configuration-snippet: |
-      # 05/2020
-      rewrite ^/fr/developpeurs https://www.hubrise.com/fr/developers permanent;
-      rewrite ^/fr/developpeurs/authentication https://www.hubrise.com/fr/developers/authentication permanent;
-      rewrite ^/fr/developpeurs/integration https://www.hubrise.com/fr/developers/integration permanent;
-      rewrite ^/fr/developpeurs/overview https://www.hubrise.com/fr/developers/overview permanent;
-      rewrite ^/fr/developpeurs/quick-start https://www.hubrise.com/fr/developers/quick-start permanent;
-      rewrite ^/fr/developpeurs/api/account-management https://www.hubrise.com/fr/developers/api/account-management permanent;
-      rewrite ^/fr/developpeurs/api/callbacks https://www.hubrise.com/fr/developers/api/callbacks permanent;
-      rewrite ^/fr/developpeurs/api/catalog-management https://www.hubrise.com/fr/developers/api/catalog-management permanent;
-      rewrite ^/fr/developpeurs/api/customer-management https://www.hubrise.com/fr/developers/api/customer-management permanent;
-      rewrite ^/fr/developpeurs/api/extensions https://www.hubrise.com/fr/developers/api/extensions permanent;
-      rewrite ^/fr/developpeurs/api/general-concepts https://www.hubrise.com/fr/developers/api/general-concepts permanent;
-      rewrite ^/fr/developpeurs/api/order-management https://www.hubrise.com/fr/developers/api/order-management permanent;
-
-      # 04/2020
-      rewrite ^/fr/api/account-management https://www.hubrise.com/fr/developers/api/account-management permanent;
-      rewrite ^/fr/api/callbacks https://www.hubrise.com/fr/developers/api/callbacks permanent;
-      rewrite ^/fr/api/catalog-management https://www.hubrise.com/fr/developers/api/catalog-management permanent;
-      rewrite ^/fr/api/customer-management https://www.hubrise.com/fr/developers/api/customer-management permanent;
-      rewrite ^/fr/api/extensions https://www.hubrise.com/fr/developers/api/extensions permanent;
-      rewrite ^/fr/api/general-concepts https://www.hubrise.com/fr/developers/api/general-concepts permanent;
-      rewrite ^/fr/api/order-management https://www.hubrise.com/fr/developers/api/order-management permanent;
-      rewrite ^/api/account-management https://www.hubrise.com/developers/api/account-management permanent;
-      rewrite ^/api/callbacks https://www.hubrise.com/developers/api/callbacks permanent;
-      rewrite ^/api/catalog-management https://www.hubrise.com/developers/api/catalog-management permanent;
-      rewrite ^/api/customer-management https://www.hubrise.com/developers/api/customer-management permanent;
-      rewrite ^/api/extensions https://www.hubrise.com/developers/api/extensions permanent;
-      rewrite ^/api/general-concepts https://www.hubrise.com/developers/api/general-concepts permanent;
-      rewrite ^/api/order-management https://www.hubrise.com/developers/api/order-management permanent;
 
 spec:
   tls:

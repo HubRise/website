@@ -12,11 +12,11 @@ HubRise can push orders from different connected solutions directly into your Li
 
 This page explains what information HubRise sends to your EPOS.
 
-## Items and Options
+## Items and Options {#items-and-options}
 
 Lightspeed Restaurant Bridge sends your EPOS the complete information about items and options, including name, EPOS ref code, quantity, and price.
 
-Lightspeed Restaurant Bridge converts options with a ref code that starts with `+` to production instructions. Note that production instructions have no associated price. Adding a price in a connected app can cause [price differences errors](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors/).
+Lightspeed Restaurant Bridge converts options with a ref code that starts with `+` to production instructions. Note that production instructions have no associated price. Adding a price in a connected app can cause [price differences errors](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors).
 
 Every item on Lightspeed must have a ref code. Orders containing items with incorrect or missing ref codes are rejected by the EPOS. For this reason, when sending an order to the EPOS, Lightspeed Restaurant Bridge skips all items without a ref code.
 
@@ -32,7 +32,7 @@ Lightspeed does not support split payments. Therefore, when an order contains mu
 
 The ref code of the payment is used to map the HubRise order to the correct payment method in Lightspeed. Lightspeed Restaurant Bridge ignores payments without a ref code.
 
-To learn how to check the ref codes of the payment methods available in your Lightspeed back office, see [Map Ref Codes](/apps/lightspeed-restaurant/map-ref-codes#payment-methods).
+To find out how to check the payment methods ref codes available in your Lightspeed back office, see [Map Ref Codes](/apps/lightspeed-restaurant/map-ref-codes#payment-methods).
 
 ### Handling Price Differences
 
@@ -43,7 +43,7 @@ When the total payment amount does not match the total price for the order as ca
 
 ---
 
-**Related FAQ**: [How Do I Troubleshoot Price Difference Errors?](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors/)
+**Related FAQ**: [How Do I Troubleshoot Price Difference Errors?](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors)
 
 ---
 
@@ -53,7 +53,7 @@ Lightspeed Restaurant requires each service type (delivery, collection, eat-in) 
 
 The ref code of the service type is used to map the HubRise order to the correct account profile on Lightspeed.
 
-To learn how to check the ref codes of the service types available in your Lightspeed back office, see [Map Ref Codes](/apps/lightspeed-restaurant/map-ref-codes#service-types).
+To find out how to check the service types ref codes available in your Lightspeed back office, see [Map Ref Codes](/apps/lightspeed-restaurant/map-ref-codes#service-types).
 
 ## Customer Information
 

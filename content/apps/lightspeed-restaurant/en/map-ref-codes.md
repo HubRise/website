@@ -24,9 +24,9 @@ To download the Lightspeed catalog, follow these steps:
 
 1. From your Lightspeed back office, select **Configuration**, then select **Items** > **Items**.
 1. Click the **Export** button.
-1. ![Export button in the items page of the Lightspeed back office](./images/006-lightspeed-export-items.png)
+   ![Export button in the items page of the Lightspeed back office](./images/006-2x-lightspeed-export-items.png)
 1. In the popup window, choose your operating system type: Mac or Windows (or Manual configuration), then click **Export**.
-   ![Choosing the operating system when exporting the catalog in Lightspeed](./images/007-lightspeed-system-choice.png)
+   ![Choosing the operating system when exporting the catalog in Lightspeed](./images/007-2x-lightspeed-system-choice.png)
 1. After the export is complete, select **Click here to download the exported file** to download the CSV file with your menu.
    ![Download items CSV](./images/008-2x-lightspeed-download-csv.png)
 
@@ -42,11 +42,11 @@ To find the ref codes for specific skus, options, discounts, and charges, follow
 
 1. From the top menu in your Lightspeed back office, select **Configuration**, then **Items** > **Items**.
 1. The ref codes appear under the **Code** column.
-   ![](./images/009-lightspeed-skus-options-codes.png)
+   ![](./images/009-2x-lightspeed-skus-options-codes.png)
 
 You can then copy the codes in the connected app. For detailed instructions, follow the documentation for the connected app in the HubRise website.
 
-Note that charges and discounts must be created as items to be compatible with the HubRise data model. For more information see [Create Ref Codes](/apps/lightspeed-restaurant/create-ref-codes).
+Note that charges and discounts must be created as items to be compatible with the HubRise data model. For more information see [Create Ref Codes](/apps/lightspeed-restaurant/faqs/create-ref-codes).
 
 ### Production Instructions
 
@@ -60,18 +60,18 @@ When you map production instructions to connected apps, add `+` before the ref c
 
 ---
 
-**IMPORTANT NOTE:** Production instructions have no associated price. Adding a price in a connected app can cause [price differences errors](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors/).
+**IMPORTANT NOTE:** Production instructions have no associated price. Adding a price in a connected app can cause [price differences errors](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors).
 
 ---
 
-### Service Types
+### Service Types {#service-types}
 
 Service types are called _account profiles_ on Lightspeed. To find the ref code for a specific service type, follow these steps:
 
 1. From your Lightspeed back office, select **Configuration**, then select **Settings** > **Account profiles**.
 1. For each service type available under the **Name** column, you can find the corresponding ref code under the **Code** column.
 
-### Payment Methods
+### Payment Methods {#payment-methods}
 
 To find the ref code for a payment method, follow these steps:
 

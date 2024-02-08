@@ -58,19 +58,22 @@ Orders also contain the complete information about options, including: `name`, `
 
 ## Deals
 
-Smood sends two types of deals to HubRise:
+Smood sends three types of deals to HubRise:
 
-- Promotions created in the Smood back office, from the **Marketing** > **Promotions** section. They can be BOGOF or percentage discounts.
+- Promotions created in the Smood back office, from the **Marketing** > **Promotions** section. They can be *buy one get one free* (BOGOF) or percentage discounts on a product's price.
 - Deals imported from a HubRise catalog.
 
-Both types of deals are sent as `deals` in HubRise, with the following fields:
+All deals are sent as `deals` to HubRise, with the following fields:
 
 - `name`: The name of the promotion or deal.
-- `ref`: The **Promotion ref code** defined in the [Configuration page](/apps/smood/configuration#promotions), for promotions, or the deals' ref codes, for deals imported from HubRise.
+- `ref`: The ref code of the deal, which can be one of the following:
+  - For BOGOF promotions, the **BOGOF ref code** defined in the [Configuration page](/apps/smood/configuration#discounts).
+  - For percentage discounts, the **Promotion ref code** defined in the [Configuration page](/apps/smood/configuration#discounts).
+  - For HubRise deals, the ref code of the deal from the HubRise catalog.
 
 ## Charges
 
-For restaurant delivery orders, Smood sends delivery charges as a `charges` to HubRise:
+For restaurant delivery orders, Smood sends delivery charges as `charges` to HubRise:
 
 - `name`: Smood sends `Delivery fee` in this field.
 - `ref`: The **Delivery charge ref code** defined in the [Configuration page](/apps/smood/configuration#charges).
@@ -82,8 +85,8 @@ Discounts are set up in the Smood back office, in the **Marketing** > **Discount
 
 They are sent to HubRise as `discounts`:
 
-- `name`: The Voucher description set in the Smood back office.
-- `ref`: The **Discount ref code** defined in the [Configuration page](/apps/smood/configuration#discounts).
+- `name`: The description of the voucher that you set in the Smood back office.
+- `ref`: The **Voucher ref code** defined in the [Configuration page](/apps/smood/configuration#discounts).
 - `amount`: The discount amount.
 
 ## Payments

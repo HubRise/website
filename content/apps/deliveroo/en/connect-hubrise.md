@@ -30,7 +30,7 @@ With this information in hand, we will ask the Deliveroo integration team to ena
 
 Alternatively, you can connect your store autonomously. For more information, see [Connect to HubRise From the Deliveroo Back Office](/apps/deliveroo/faqs/connect-from-deliveroo-back-office).
 
-## 2. Connect Deliveroo Bridge
+## 2. Connect Deliveroo Bridge {#connect}
 
 To connect Deliveroo Bridge to HubRise, follow these steps.
 
@@ -48,7 +48,7 @@ To connect Deliveroo Bridge to HubRise, follow these steps.
 
 After connecting the bridge, you need to configure a few parameters on the **Configuration** page to send orders correctly to your EPOS.
 
-For more information about the configuration page and how to navigate to it, see the User Interface [Configuration](/apps/deliveroo/user-interface/#configuration) page. For details on how to configure the parameters of Deliveroo Bridge, see [Configuration](/apps/deliveroo/configuration).
+For more information about the configuration page and how to navigate to it, see the User Interface [Configuration](/apps/deliveroo/user-interface#configuration) page. For details on how to configure the parameters of Deliveroo Bridge, see [Configuration](/apps/deliveroo/configuration).
 
 ## 4. Map Products Ref Codes
 

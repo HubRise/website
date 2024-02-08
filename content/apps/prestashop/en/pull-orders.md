@@ -1,7 +1,7 @@
 ---
 title: Pull Orders
 path_override: pull-orders
-position: 8
+position: 7
 layout: documentation
 meta:
   title: Pull Orders | PrestaShop | HubRise
@@ -67,7 +67,7 @@ Below is a sample payload containing a single item.
 
 ### Customer
 
-PrestaShop Bridge always includes all the personal details provided by the customer in the `customer` object. This information is stored in a HubRise customer and can be retrieved using the HubRise customer ID. For more information, see [how to retrieve customer's details](/developers/api/customer-management#retrieve-customer).
+PrestaShop Bridge always includes all the personal details provided by the customer in the `customer` object. This information is stored in a HubRise customer and can be retrieved using the HubRise customer ID. For more information, see [how to retrieve customer's details](/developers/api/customers#retrieve-customer).
 
 ### Discounts
 

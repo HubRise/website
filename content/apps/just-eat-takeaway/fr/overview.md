@@ -36,7 +36,7 @@ Just Eat Takeaway Bridge vous permet de connecter les plateformes suivantes à H
 
 ---
 
-**REMARQUE IMPORTANTE :** pour connecter une enseigne à une autre plateforme Just Eat Takeaway.com, vous devez passer par l'application [Just Eat Flyt Bridge](/apps/just-eat-flyt/).
+**REMARQUE IMPORTANTE :** pour connecter une enseigne à une autre plateforme Just Eat Takeaway.com, vous devez passer par l'application [Just Eat Flyt Bridge](/apps/just-eat-flyt/overview).
 
 ---
 
@@ -61,7 +61,7 @@ Just Eat Takeaway Bridge peut être connecté à HubRise depuis le back-office d
 
 Le fait de connecter votre restaurant en ligne ou votre commerce de proximité Just Eat Takeaway à HubRise vous permet de recevoir vos commandes Just Eat Takeaway directement dans votre logiciel de caisse, sur votre système d'écran de cuisine ou dans votre système de gestion de livraison également connecté à HubRise. Vous pouvez ainsi gérer les commandes Just Eat Takeaway parallèlement à vos autres commandes, en utilisant vos outils habituels. Les commandes Just Eat Takeaway transiteront par votre installation existante, comme vos autres commandes.
 
-Grâce à HubRise, synchronisez votre menu, vos informations clients et vos commandes avec votre logiciel de caisse, les plateformes de livraison de repas (dont Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs ou de services de livraison, les solutions d'e-marketing (SMS/e-mailing) et de business intelligence, les systèmes de gestion de stock et de fidélisation client, et bien d'autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, consultez notre [page Apps](/apps).
+Avec HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes entre votre logiciel de caisse, votre solution de commande en ligne, les services de livraison de repas (y compris Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs, les services de livraison, les solutions d'e-marketing (SMS/emailing), les systèmes de business intelligence, de gestion des stocks et de fidélisation client, et bien plus encore. Le nombre d'applications compatibles augmente chaque mois. Pour découvrir les applications que vous pouvez connecter, visitez notre [page Apps](/apps).
 
 ## Prérequis
 

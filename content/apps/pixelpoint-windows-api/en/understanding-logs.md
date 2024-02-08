@@ -12,11 +12,11 @@ PixelPoint Windows API saves every order from HubRise in a temporary folder on t
 
 By comparing the two files, it is possible to troubleshoot failed orders and to understand the possible causes.
 
-For a detailed description on how to read and troubleshoot JSON requests in HubRise, see [Understanding Logs in HubRise](/docs/hubrise-logs).
+For a detailed description on how to read and troubleshoot JSON requests in HubRise, see [Understanding Logs in HubRise](/docs/hubrise-logs/overview).
 
 To understand the PixelPoint logs in XML format, you need to know how to read XML files first.
 
-## An XML Primer
+## An XML Primer {#xml-primer}
 
 XML is a format to store and transfer information organised in nodes of key-value pairs with a hierarchical structure. Each piece of information is divided into:
 
@@ -49,7 +49,7 @@ The `Transaction` node and its subnodes are especially relevant to diagnose poss
 
 - `Items`: Must contain at least one `Item` node. For each `Item` node, the following subnodes are generally present:
 
-  - `ProdNum`: The unique product code that is associated with the product in your EPOS catalog. For more information, see [Mapping Ref Codes](/apps/pixelpoint-windows-api/map-ref-codes/).
+  - `ProdNum`: The unique product code that is associated with the product in your EPOS catalog. For more information, see [Mapping Ref Codes](/apps/pixelpoint-windows-api/map-ref-codes).
   - `CouponNum`: The unique product code associated with a discount in your EPOS catalog. `CouponNum` and `ProdNum` are mutually exclusive, therefore only one must be present inside the `Item` node.
   - `CostEach`: The cost of each `Item`.
   - `Quantity`: The product quantity ordered by the customer.

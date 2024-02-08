@@ -17,4 +17,4 @@ Click the **SALES**, **ORDERS**, or **NEW CUSTOMERS** tabs to display the relate
 ![HubRise dashboard](./images/078-hubrise-dashboard.png)
 
 For more detailed analysis of your data, connect a more specialised solution integrated with HubRise or integrate your own proprietary solution.
-Technical partners offering detailed reporting are available in the HubRise website Apps page, under the [Operations and Inventory](/apps/operations-and-inventory#nav) section.
+Technical partners offering detailed reporting are available in the HubRise website Apps page, under the [Operations and Inventory](/apps#operations-and-inventory) section.

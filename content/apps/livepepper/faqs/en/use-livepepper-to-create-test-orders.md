@@ -5,7 +5,7 @@ position: 3
 layout: documentation
 meta:
   title: Create Test Orders | LivePepper FAQs | HubRise
-  description: LivePepper can be used push transactional data into HubRise.
+  description: LivePepper can be used to push transactional data into HubRise.
 ---
 
 ---
@@ -20,7 +20,7 @@ The following steps are predicated on your app's connection to HubRise.
 
 To create test orders with LivePepper:
 
-1. Sign up for a **Free trial** at the [LivePepper home page](https://www.livepepper.com/).
+1. Sign up for a **Free trial** at the [LivePepper home page](https://www.livepepper.com).
 1. Log in to your new LivePepper back office account.
 1. Select **Settings** > **Add-ons**.
 1. Under HubRise, click the checkbox **Share data with other applications**.
@@ -34,4 +34,4 @@ To create test orders with LivePepper:
 1. From HubRise, click **ORDERS**. The new order will be displayed.
 1. Click the new order to verify the information is accurate.
 
-For further details on configuring LivePepper with HubRise, refer to [Connect to HubRise](/apps/livepepper/connect-hubrise/). For assistance with troubleshooting the LivePepper-HubRise connection, see [Troubleshooting](/apps/livepepper/troubleshooting/).
+For further details on connecting LivePepper with HubRise, refer to [Connect to HubRise](/apps/livepepper/connect-hubrise). For assistance with troubleshooting the LivePepper-HubRise connection, see [Troubleshooting](/apps/livepepper/troubleshooting).

@@ -45,7 +45,7 @@ Clicking on a request will expand it to reveal the detailed logs of the request 
 
 ![Order logs page on foodpanda Bridge](./images/004-order-logs.png)
 
-Logs are a powerful debugging tool in case of issues. To understand in detail how to read logs, see [Understanding HubRise Logs](/docs/hubrise-logs/).
+Logs are a powerful debugging tool in case of issues. To understand in detail how to read logs, see [Understanding HubRise Logs](/docs/hubrise-logs/overview).
 
 ### System Request Operation
 
@@ -57,7 +57,7 @@ System requests are generally sent by foodpanda Bridge to notify HubRise about a
 
 System request pages can provide useful debugging insights to support teams, but are rarely of interest to other users.
 
-## Configuration
+## Configuration {#configuration}
 
 To access the foodpanda Bridge configuration page, click **Configuration** at the top of the screen.
 

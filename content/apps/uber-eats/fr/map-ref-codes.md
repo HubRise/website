@@ -12,7 +12,7 @@ Pour traiter correctement les commandes, la plupart des logiciel de caisse exige
 
 Pour attribuer des codes ref à vos produits Uber Eats, procédez comme suit :
 
-1. Connectez-vous à votre [back-office Uber Eats](https://restaurant.uber.com/).
+1. Connectez-vous à votre [back-office Uber Eats](https://restaurant.uber.com).
 1. Si vous n'exploitez qu'un seul magasin Uber Eats, sélectionnez **Menu** dans le menu de gauche. Si vous possédez plusieurs magasins Uber Eats, choisissez le bon dans le menu déroulant, puis sélectionnez **Menu**.
 1. Dans le menu supérieur, sélectionnez **Plats**. ![Back-office Uber Eats](./images/007-uber-eats-back-office.png)
 1. Cliquez sur le produit ou l'option que vous souhaitez modifier dans la liste des plats, puis faites défiler la page vers le bas.
@@ -24,7 +24,7 @@ Répétez cette procédure pour chacun de vos produits.
 
 Notez que les articles se trouvant sous l'onglet **Groupes de modificateurs** comportent également un champ **Données externes**, mais il n'est pas nécessaire d'entrer de valeur puisque celle-ci n'est pas envoyée à votre logiciel de caisse.
 
-## Commentaires sur les produits
+## Commentaires sur les produits {#product-notes}
 
 ---
 

@@ -20,7 +20,7 @@ PrestaShop Bridge lets you push your HubRise catalog to PrestaShop. You can let 
 
 To be able to push your catalog into PrestaShop, you must populate a HubRise catalog first. Many apps connected with HubRise, including EPOS solutions, offer the ability to export the catalog to HubRise. Refer to your EPOS documentation on the HubRise website to verify.
 
-For more information on HubRise catalogs, see [Catalogs](/docs/catalog/).
+For more information on HubRise catalogs, see [Catalogs](/docs/catalog).
 
 ### Manual Catalog Push
 
@@ -56,7 +56,7 @@ PrestaShop Bridge maps HubRise categories one-to-one to categories of products o
 ### Products and Skus
 
 HubRise products and skus are mapped one-to-one to PrestaShop products and combinations.
-For more information about products in HubRise catalogs, see [Products](/developers/api/catalog-management/#products).
+For more information about products in HubRise catalogs, see [Products](/developers/api/catalogs#products).
 
 For every HubRise `product` object, PrestaShop Bridge sends the following information to PrestaShop:
 
@@ -71,7 +71,7 @@ For every sku in the `skus` array, PrestaShop Bridge sends the following informa
 - `name`: The name of the sku
 - `price`: The price of the sku
 
-For more information about skus in the HubRise catalog, see [Skus](/developers/api/catalog-management/#skus).
+For more information about skus in the HubRise catalog, see [Skus](/developers/api/catalogs#skus).
 
 ### Options
 

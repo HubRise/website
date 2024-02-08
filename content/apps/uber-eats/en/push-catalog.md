@@ -52,7 +52,7 @@ Uber Eats Bridge can automatically push your catalog to Uber Eats every time it 
 1. In the **Catalog** section, tick **Enable automatic catalog push**.
 1. Click **Save**.
 
-## Information Sent to Uber Eats
+## Information Sent to Uber Eats {#information-sent-to-uber-eats}
 
 The following sections provide more details on how your HubRise catalog is mapped to Uber Eats.
 
@@ -72,7 +72,7 @@ Uber Eats Bridge maps single sku products one-to-one to products on Uber Eats, s
 - Images
 - Price
 - Options
-- Tags
+- Tags including allergens
 
 For products with multiple skus, Uber Eats Bridge creates a product, a modifier list, and one modifier for each sku.
 Options are attached to each sku as an extra layer of modifiers.
@@ -105,7 +105,7 @@ The order in which categories and products appear on HubRise is maintained on Ub
 
 ### Products and Skus
 
-For every [product](/developers/api/catalog-management/#products) with multiple skus, Uber Eats Bridge sends the following information to Uber Eats:
+For every [product](/developers/api/catalogs#products) with multiple skus, Uber Eats Bridge sends the following information to Uber Eats:
 
 - `ref`: The value `MULTISKU` is used for all products.
 - `name`: The name of the product.
@@ -123,18 +123,33 @@ For every `sku` object in a product, Uber Eats Bridge sends the following inform
 - `price`: The price difference with the main product, if present
 - `option_list_refs`: The list of options attached to the sku
 
-For more information about skus in the HubRise catalog, see [Skus](/developers/api/catalog-management/#skus).
+For more information about skus in the HubRise catalog, see [Skus](/developers/api/catalogs#skus).
 
-### Product Tags
+### Product Tags {#product-tags}
 
 The table below lists the tags that can be set on products.
 
-| Tag           | Description                 |
-| ------------- | --------------------------- |
-| `alcoholic`   | Contains alcohol.           |
-| `gluten_free` | Contains no gluten.         |
-| `vegan`       | Contains no animal product. |
-| `vegetarian`  | Contains no meat.           |
+| Tag                                  | Description                            |
+| ------------------------------------ | -------------------------------------- |
+| `alcoholic`                          | Contains alcohol.                      |
+| `deal_only`                          | Can only be ordered as part of a deal. |
+| `gluten_free`                        | Contains no gluten.                    |
+| `vegan`                              | Contains no animal product.            |
+| `vegetarian`                         | Contains no meat.                      |
+| `allergen_celery`                    | Contains this allergen.                |
+| `allergen_crustaceans`               | Contains this allergen.                |
+| `allergen_eggs`                      | Contains this allergen.                |
+| `allergen_fish`                      | Contains this allergen.                |
+| `allergen_gluten`                    | Contains this allergen.                |
+| `allergen_lupin`                     | Contains this allergen.                |
+| `allergen_milk`                      | Contains this allergen.                |
+| `allergen_molluscs`                  | Contains this allergen.                |
+| `allergen_mustard`                   | Contains this allergen.                |
+| `allergen_nuts`                      | Contains this allergen.                |
+| `allergen_peanuts`                   | Contains this allergen.                |
+| `allergen_sesame_seeds`              | Contains this allergen.                |
+| `allergen_soybeans`                  | Contains this allergen.                |
+| `allergen_sulphur_dioxide_sulphites` | Contains this allergen.                |
 
 ### Options
 
@@ -163,4 +178,4 @@ By default, when customers order a deal, they must choose one product for every 
 
 ### Availability
 
-Every time you push your HubRise catalog to Uber Eats, you also update the availability of your menu, based on the values you set from the [Configuration page](/apps/uber-eats/configuration/#menu) of Uber Eats Bridge.
+Every time you push your catalog to Uber Eats, you also update the opening hours, based on the values you set from the [Configuration page](/apps/uber-eats/configuration#location).

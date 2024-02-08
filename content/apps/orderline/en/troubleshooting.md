@@ -14,7 +14,7 @@ To resolve the issue of not receiving new order notifications on your mobile dev
 
 Keeping your device connected to a power source can also enhance the reliability of notification delivery. For an optimal mobile experience, we recommend using Google Chrome.
 
-## Disabled Sound Notifications Popup
+## Disabled Sound Notifications Popup {#disabled-popup}
 
 Some browsers, in an effort to prevent unexpected and unwanted noise, may limit websites from playing sounds without user interaction. This feature, known as **Autoplay Policy** in Google Chrome, could affect impact OrderLine notifications.
 

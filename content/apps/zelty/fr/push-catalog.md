@@ -21,7 +21,7 @@ Pour exporter tous vos produits de Zelty vers HubRise, procédez comme suit :
 1. Dans le back-office Zelty, cliquez dans le menu de gauche sur **MarketPlace**.
 1. Cliquez sur **HubRise**.
 1. Sélectionnez **Gérer**, puis **Exporter ma carte vers HubRise** dans le menu déroulant qui s'affiche.
-1. Vérifiez l'importation du catalogue dans HubRise. Pour plus d'informations sur la manière de gérer les catalogues dans HubRise, consultez notre [Aide sur les catalogues](/docs/catalog/).
+1. Vérifiez l'importation du catalogue dans HubRise. Pour plus d'informations sur la manière de gérer les catalogues dans HubRise, consultez notre [Aide sur les catalogues](/docs/catalog).
 
 ### Exporter une partie de vos produits
 
@@ -42,7 +42,7 @@ Pour exporter un catalogue Zelty vers HubRise :
 1. En regard du nom du catalogue, cliquez sur la flèche vers le bas et sélectionnez **Envoyer vers**.
 1. Cochez la case **HubRise**.
 1. Le message suivant s'affiche : **Le catalogue est en cours de transfert vers HubRise**.
-1. Vérifiez l'importation du catalogue dans HubRise. Pour plus d'informations sur la manière de gérer les catalogues dans HubRise, consultez notre [Aide sur les catalogues](/docs/catalog/).
+1. Vérifiez l'importation du catalogue dans HubRise. Pour plus d'informations sur la manière de gérer les catalogues dans HubRise, consultez notre [Aide sur les catalogues](/docs/catalog).
 
 ## Données exportées par Zelty
 

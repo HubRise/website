@@ -58,4 +58,4 @@ To distinguish between each Point of Sale, a unique identifier for the location 
 1. Log in to your Aquila back office.
 1. Select **Point de vente** from the left navigation panel.
 1. Click on the point of sale you want to connect?
-1. Fill in the HubRise unique identifier for the Location the **ID HubRise** input field. For example **wg8tl-1** indicates the HubRise Account **wg8tl**, and **-1** the Location on the account. For more information, see HubRise [Locations](/docs/locations/).
+1. Fill in the HubRise unique identifier for the Location the **ID HubRise** input field. For example **wg8tl-1** indicates the HubRise Account **wg8tl**, and **-1** the Location on the account. For more information, see HubRise [Locations](/docs/locations).

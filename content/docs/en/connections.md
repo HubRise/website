@@ -16,7 +16,7 @@ HubRise is used to connect an ever-growing ecosystem of solutions: EPOS, online 
 
 You can connect all apps available in the HubRise [Apps](/apps) page. If you cannot see an app you need to connect on this page, contact contact@hubrise.com to find out if an integration is planned.
 
-## Connect a New App
+## Connect a New App {#connect}
 
 Apps are connected to either a HubRise Account or Location. Connection level depends on the data you need to share with the app. For example, EPOS or online ordering systems typically connect to Locations, while marketing solutions connect to Accounts or Locations.
 
@@ -31,22 +31,22 @@ To connect a new app to your HubRise Account from the HubRise back office:
 1. Select **View available apps**.
 1. Select the **Location** to connect, or **All locations** if the app connects at the account level.
 1. Select the app you want to install. If the app is not on this list, check the app documentation in the HubRise [Apps](/apps) page.
-1. Check instructions for the specific app and click **Connect**. The app will open in a new browser window. If not, check your browser for ad-blockers, which might prevent the opening of a new window.
+1. Check instructions for the specific app and click **Connect**. The app will open in a new browser tab. If not, check your browser for ad-blockers, which might prevent the opening of a new window.
 1. Grant the app access to your HubRise data by clicking **Allow**.
 
 ---
 
-**IMPORTANT NOTE**: If you need to connect multiple instances of the same app to a single HubRise location, see [Connecting Multiple Instances of the Same App](/docs/faqs/connect-multiple-instances-same-app/).
+**IMPORTANT NOTE**: If you need to connect multiple instances of the same app to a single HubRise location, see [Connecting Multiple Instances of the Same App](/docs/faqs/connect-multiple-instances-same-app).
 
 ---
 
-## Open An App
+## Open An App {#open-app}
 
-Some apps can be accessed from HubRise. If so, you can open the app by clicking on **CONNECTIONS** and selecting **Open** for the specific app. The app will open in a new browser window.
+Some apps can be accessed from HubRise. If so, you can open the app by clicking on **CONNECTIONS** and selecting **Open** for the specific app. The app will open in a new browser tab.
 
 ![HubRise Connection - Open an app](./images/011-2x-connections-open-app.png)
 
-## View Connection Activity
+## View Connection Activity {#connection-activity}
 
 To display a line chart with the number of transactions made in the last 30 days, select **CONNECTIONS** > **Actions** > **View Activity**. This is a handy way to see if transactions are going through the connection.
 
@@ -54,11 +54,11 @@ To display a line chart with the number of transactions made in the last 30 days
 
 ---
 
-**Related FAQ**: [How Do I Check If the Connection Between My System and HubRise Is Working?](/docs/faqs/check-connection-between-my-system-and-hubrise/)
+**Related FAQ**: [How Do I Check If the Connection Between My System and HubRise Is Working?](/docs/faqs/check-connection-between-my-system-and-hubrise)
 
 ---
 
-## View Connection Logs
+## View Connection Logs {#connection-logs}
 
 Logs are stored for each app that has been connected. You can use logs to understand the communications between systems and detect issues.
 
@@ -102,15 +102,15 @@ Each log record includes:
 You can see additional details by clicking on a log, including the request and the corresponding response.
 To download either the request or response, select the download icon <InlineImage width="15" height="14">![Download icon](../images/058-download.png)</InlineImage>. The selected request or response will be provided as a JSON file.
 
-For more information, see [Understanding Logs in HubRise](/docs/hubrise-logs). For a complete reference on the HubRise API, see the [HubRise API Reference page](/developers/api/general-concepts).
+For more information, see [Understanding Logs in HubRise](/docs/hubrise-logs/overview). For a complete reference on the HubRise API, see the [HubRise API Reference page](/developers/api/general-concepts).
 
 ---
 
-**Related FAQ**: [How Do I Check If the Connection Between My System and HubRise Is Working?](/docs/faqs/check-connection-between-my-system-and-hubrise/)
+**Related FAQ**: [How Do I Check If the Connection Between My System and HubRise Is Working?](/docs/faqs/check-connection-between-my-system-and-hubrise)
 
 ---
 
-## Block or Disconnect an App
+## Block or Disconnect an App {#block-or-disconnect}
 
 HubRise allows you to block or disconnect apps:
 
@@ -140,3 +140,15 @@ To unblock an app, follow these steps:
 
 1. Go to **CONNECTIONS**.
 2. Find the app you want, then click **Actions** > **Unblock**.
+
+## Reconnect an App
+
+To switch the catalog or customer list linked to an app, you can use the reconnect feature. This will allow you to select a new catalog or customer list.
+
+This feature is only available for apps with linked catalogs or customer lists.
+
+To reconnect an app, follow these steps:
+
+1. Go to **CONNECTIONS**.
+2. Find the app you want, then click **Actions** > **Reconnect**. This will open the authorisation page in a new browser tab.
+3. Select the new catalog or customer list, then click **Allow**.

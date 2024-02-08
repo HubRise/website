@@ -12,7 +12,7 @@ Locations are the different points of sales for an Account. Each Location identi
 
 The **SETTINGS** page displays information about your Location and allows you to make configuration changes. You can also make changes to the Account by selecting **All locations** from the **Location** dropdown.
 
-## Location Name and ID
+## Location Name and ID {#location-name-and-id}
 
 Locations are displayed with:
 
@@ -24,7 +24,7 @@ For example, `Baker Street z6q31-0` indicates the Location name of `Baker Street
 
 ---
 
-**IMPORTANT NOTE**: To check our recommended naming convention for Locations, see [Add a Location](/docs/locations#add-a-location).
+**IMPORTANT NOTE**: To check our recommended naming convention for Locations, see [Add a Location](/docs/locations#add-location).
 
 ---
 
@@ -38,7 +38,7 @@ To view Location details:
 
 Locations are managed in the same way as Accounts, but the information is specific to the selected Location.
 
-Different settings for specific locations allow you to have different [payment methods per location](/docs/payment#account-or-location-payments), different users [permissions](/docs/permissions), and so on. For more information, see [Accounts](/docs/account/).
+Different settings for specific locations allow you to have different [payment methods per location](/docs/payment#account-or-location-payments), different users [permissions](/docs/permissions), and so on. For more information, see [Accounts](/docs/account).
 
 If you operate in a country where including the Intra-Community VAT number is a legal requirement, HubRise will display a notification to update the VAT number if this information is missing from your Account.
 
@@ -48,9 +48,9 @@ If you operate in a country where including the Intra-Community VAT number is a 
 
 ---
 
-## Add a Location
+## Add a Location {#add-location}
 
-The first Location must be created with the Account. For more information, see [Create an Account](/docs/account/#create-an-account).
+The first Location must be created with the Account. For more information, see [Create an Account](/docs/account#create-account).
 
 To add a new Location to an existing Account:
 

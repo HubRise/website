@@ -14,7 +14,7 @@ The **Today's Orders** tab displays all orders with a delivery date equal to tod
 
 Orders are sorted by their expected delivery or collection time, with the earliest orders at the beginning of the list.
 
-Orders may be hidden depending on the **Hide Order** setting customisation. These orders can be seen from **Today's Orders** tab by selecting **VIEW** on the hidden order card. For more information, see [Order Status Flow](/apps/orderline/settings/#order-status-flow).
+Orders may be hidden depending on the **Hide Order** setting customisation. These orders can be seen from **Today's Orders** tab by selecting **VIEW** on the hidden order card. For more information, see [Order Status Flow](/apps/orderline/settings#order-status-flow).
 
 ![OrderLine Today's Order Tab](./images/006-todays-orders.png)
 
@@ -26,7 +26,7 @@ The **Future Orders** tab displays all orders with a delivery date greater than 
 
 ## Orders History
 
-OrderLine provides a comprehensive view of all orders: past, present, and future. To view this list, click **ORDERS HISTORY**.
+OrderLine provides a comprehensive view of all orders: past, present, and future. To view this list, click **Order history**.
 
 The orders are displayed starting with the most recent.
 
@@ -36,3 +36,11 @@ For a targeted search within your order history, you can use the available filte
 - Delivery date range.
 
 ![OrderLine Orders History Tab](./images/008-orders-history.png)
+
+## Opening Hours
+
+The **Opening Hours** tab lets you configure the operating times of your establishment. Opening hours can be synchronised with your ordering and delivery platforms.
+
+![OrderLine Opening Hours Tab](./images/005-ui-opening-hours.png)
+
+For more information on managing your opening hours, see [Opening Hours](/apps/orderline/opening-hours).

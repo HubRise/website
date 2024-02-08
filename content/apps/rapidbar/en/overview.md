@@ -46,7 +46,7 @@ RapidBar key features include:
 Connecting RapidBar to HubRise allows your inventory management solution to:
 
 - Pull orders from HubRise, including order status.
-- Pull the menu from a HubRise catalog.
+- Pull a catalog from HubRise.
 
 ---
 
@@ -60,7 +60,7 @@ RapidBar can be connected to HubRise from the RapidBar back office.
 
 By connecting RapidBar to HubRise, your Inventory Management solution can communicate with your other everyday applications. Receive orders from your EPOS, your online ordering solution, or food delivery platforms in RapidBar. Pull your menu from HubRise into RapidBar. Compare your sales data with your actual stock movement and follow cost margins for every ingredient.
 
-Thanks to HubRise, you can synchronise your menu, your customer information and your orders with your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management solutions or delivery services, eMarketing (SMS/emailing), business intelligence, inventory management and customer loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our [Apps page](/apps).
+With HubRise, you can synchronise your menu, customer information, and orders between your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats, and Just Eat), delivery management solutions or delivery services, eMarketing solutions (SMS/emailing), business intelligence, inventory, and customer loyalty systems, and much more. The number of compatible applications increases every month. To discover the apps you can connect, visit our [Apps page](/apps).
 
 ## Prerequisites
 

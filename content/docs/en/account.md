@@ -32,7 +32,7 @@ The main differences between the settings for Accounts and Locations are the fol
 - Currency settings are set at the Account level, and can not be changed once created. If you have made a mistake in the currency selection, you will have to create a new Account with the correct currency value.
 - If you have markets with different currencies, you will have to create an Account for each market. The recommended practice is to create a different Account for each country you have a market in, even if they share the same currency.
 
-## Create an Account
+## Create an Account {#create-account}
 
 When creating a new Account, the first Location must be created at the same time through the following steps:
 
@@ -56,11 +56,11 @@ Finally, enter the correct **Currency** for the market that you operate in.
 
 ---
 
-**Related FAQ**: [Too Many Accounts for My Business on HubRise. How Can I Clear the System?](/docs/faqs/how-can-i-clear-accounts/)
+**Related FAQ**: [Too Many Accounts for My Business on HubRise. How Can I Clear the System?](/docs/faqs/how-can-i-clear-accounts)
 
 ---
 
-## Modify Account Details
+## Modify Account Details {#modify-account-details}
 
 To modify an existing Account, follow these steps:
 

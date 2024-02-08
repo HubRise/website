@@ -40,7 +40,7 @@ To pay the outstanding payment request after you set up the payment method, foll
 
 ---
 
-For more information about HubRise usage plans, see [Usage](/docs/usage-plan/).
+For more information about HubRise usage plans, see [Usage](/docs/usage-plan).
 
 ## Reestablish the service
 

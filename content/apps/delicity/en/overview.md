@@ -17,6 +17,12 @@ app_info:
   contact: "+33 4 83 58 06 48"
 ---
 
+---
+
+**IMPORTANT NOTE**: Full documentation available <Link href="/fr/apps/delicity" addLocalePrefix={false}>in French only</Link>.
+
+---
+
 ## Description
 
 Delicity is a food ordering and delivery service platform available on the Internet, App Store and Play Store. Unlike traditional platforms, Delicity does not charge a commission on orders but instead bills a fixed cost per order, along with a delivery cost that is 20% lower than that of independent couriers.
@@ -30,7 +36,7 @@ Delicity is present in several major cities in France.
 Connecting Delicity to HubRise allows your food ordering and delivery service platform to:
 
 - Push orders into HubRise, including order statuses.
-- Pull the menu from a HubRise catalog.
+- Pull a catalog from HubRise.
 
 Delicity can be connected to HubRise from the Delicity back office.
 
@@ -38,7 +44,7 @@ Delicity can be connected to HubRise from the Delicity back office.
 
 By connecting Delicity to HubRise, your food ordering and service delivery platform can communicate with your other everyday applications. Send online orders to your EPOS, your connected printer, your kitchen display screen or your inventory management solution. Export your menu into other apps.
 
-Thanks to HubRise, you can synchronise your menu, your customer information and your orders with your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management solutions or delivery services, eMarketing (SMS/emailing), business intelligence, stock management and customer loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our [Apps page](/apps).
+With HubRise, you can synchronise your menu, customer information, and orders between your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats, and Just Eat), delivery management solutions or delivery services, eMarketing solutions (SMS/emailing), business intelligence, inventory, and customer loyalty systems, and much more. The number of compatible applications increases every month. To discover the apps you can connect, visit our [Apps page](/apps).
 
 ## Prerequisites
 

@@ -8,34 +8,41 @@ meta:
   description: Instructions on how to create Catalogs in Catalog Manager. Synchronise catalogs between your EPOS and your apps.
 ---
 
-A **Catalog** is simply a container for your products and their associated details. Catalogs are stored in HubRise and managed using Catalog Manager.
+A **Catalog** is a container for your products and their associated details. Catalogs are stored in HubRise and managed using Catalog Manager.
+
+Catalogs can be created globally across all locations, or at a specific location level. For more information, refer to the HubRise Help pages [Accounts](/docs/account) and [Locations](/docs/locations).
+
+In one location, you may, for example, create a catalog to import products from your EPOS and synchronise them with your online ordering solution. In another location, you may create a catalog which is manually maintained and is used only to populate your online menu. You can also have multiple catalogs in the same location.
+
+## Open the Catalogs Page
+
+The **Catalogs** page is the default page of Catalog Manager. It opens when you [launch Catalog Manager](/apps/catalog-manager/launch-catalog-manager). At any time, you can return to this page by clicking the logo in the top left corner of the screen.
 
 ## Create a Catalog
 
-You can create a catalog from the **SETTINGS** page in your HubRise back office. For more information, refer to the HubRise Help page [Add Catalog](https://www.hubrise.com/docs/catalog#add-a-catalog).
+To create a catalog in Catalog Manager, open the **Catalogs** page, click **New catalog** and enter a name. After you create the new catalog, you can add categories, products, options, deals, discounts and charges directly in Catalog Manager.
 
-To create a catalog using Catalog Manager instead, go to **CONNECTIONS**, find the Catalog Manager app and click on **Open**.
+![Catalog Manager New Catalog](./images/015-2x-new-catalog.png)
 
-![Catalog Manager Connections](./images/008-2x-connections.png)
 
-In Catalog Manager, click on **New catalog** and enter a name. Once the new catalog has been created you can add categories, products, options, deals, discounts and charges. For more information, see [Manage Products](/apps/catalog-manager/manage-products).
+It's important to note that creating a catalog in Catalog Manager automatically establishes it at the account level, not at the location level. To create a catalog specifically at the location level, you should do this from the **SETTINGS** page in your HubRise back office. For more information, refer to the HubRise Help page [Add a Catalog](/docs/catalog#add).
 
 ## Catalog Actions
 
-You can **Rename**, **Duplicate** an existing catalog or **Delete** existing catalogs using the Catalog Manager **Actions** dropdown.
+You can **Rename**, **Duplicate**, or **Delete** existing catalogs using the Catalog Manager **Actions** dropdown available in your Catalog Manager, **Catalogs** page.
 
 ![Catalog Manager Catalog list](./images/001-2x-catalog-list.png)
 
-## Populate a Catalog from Another App
+## Duplicate a Catalog {#duplicate}
 
-There are two ways to populate your catalogs on HubRise.
+Duplicating a catalog can be useful if you want to create a new catalog based on an existing one, or to make a backup of your catalog.
 
-You can populate it using the Catalog Manager app. For more information, see [Manage Products](/apps/catalog-manager/manage-products).
+To duplicate a catalog, follow these steps:
 
-You can also push a product catalog or menu into a HubRise catalog using an EPOS, an online ordering solution, a food ordering platform or any other app connected to your HubRise account. To find out if the app you want to use integrated the catalog push feature, refer to your app documentation on the HubRise website [Apps page](https://www.hubrise.com/apps). After a push, you might in some cases, need to rearrange or augment the details for your product items by adding photos or more detailed descriptions using Catalog Manager.
+1. In Catalog Manager, go to the **Catalogs** page.
+1. Find the catalog you want to duplicate, expand the **Actions** list, then select **Duplicate**.
+1. Provide a name for the new catalog, then click **Duplicate**.
 
----
+![Duplicate a catalog](./images/018-2x-duplicate-catalog.png)
 
-**IMPORTANT NOTE:** A catalogs can be associated with apps connected to your HubRise account. Pushing a product catalog from your EPOS or other app into a HubRise catalog will populate an empty catalog or replace all the items in the existing catalog. Some apps will push updates automatically with every menu update.
-
----
+Use clearly identifiable names for your catalogs. For example, if you create a catalog for Uber Eats, you could name it **Uber Eats**. If you create a backup catalog, include **Backup** or **Do not edit!** in the name, to make it clear that it should not be edited.

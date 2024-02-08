@@ -7,8 +7,6 @@ meta:
   title: Présentation générale | Panda EPOS | HubRise
   description: Présentation générale de Panda EPOS, les raisons de connecter Panda EPOS à HubRise et les fonctionnalités de l'intégration avec HubRise.
 gallery:
-  - __gallery-001.png ?
-  - __gallery-002.png ?
 app_info:
   category:
   availability: Logiciels de caisse
@@ -19,6 +17,6 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Cette documentation est disponible <Link to="/apps/panda-epos" addLocalePrefix={false}>en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** Cette documentation est disponible <Link href="/apps/panda-epos">en anglais uniquement</Link>.
 
 ---

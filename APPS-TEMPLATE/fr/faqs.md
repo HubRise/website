@@ -8,4 +8,4 @@ meta:
   description: Questions et réponses fréquemment posées sur l'intégration de SOLUTION avec HubRise.
 ---
 
-- <Link to="/apps/SOLUTION/faqs/connecter-plusieurs-restaurants/">Comment connecter plusieurs restaurants&nbsp;?</Link>
+- <Link href="/apps/SOLUTION/faqs/connecter-plusieurs-restaurants/">Comment connecter plusieurs restaurants&nbsp;?</Link>

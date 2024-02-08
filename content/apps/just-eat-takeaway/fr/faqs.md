@@ -1,11 +1,11 @@
 ---
-title: FAQs
-path_override: faqs
+title: FAQ
+path_override: faq
 position: 8
 layout: documentation
 meta:
-  title: FAQs | Just Eat Takeaway | HubRise
+  title: FAQ | Just Eat Takeaway | HubRise
   description: Questions fréquentes sur la connexion de Just Eat Takeaway à HubRise afin que votre logiciel de caisse fonctionne avec d'autres applications comme un tout cohérent.
 ---
 
-- [Que sont les connexions primaires et secondaires&nbsp;?](/apps/just-eat-takeaway/faqs/connexion-primaire-secondaire/)
+- [Que sont les connexions primaires et secondaires&nbsp;?](/apps/just-eat-takeaway/faqs/primary-secondary-connections)

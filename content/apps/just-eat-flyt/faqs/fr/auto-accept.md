@@ -4,7 +4,7 @@ path_override: auto-acceptation
 position: 2
 layout: documentation
 meta:
-  title: Auto-accept | FAQs Just Eat Flyt | HubRise
+  title: Auto-accept | FAQ Just Eat Flyt | HubRise
   description: Cette page explique la fonction d'auto-acceptation de Just Eat lors de la connexion de HubRise à Just Eat Flyt Bridge.
 ---
 

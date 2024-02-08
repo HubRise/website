@@ -27,7 +27,7 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: Full documentation available <Link to="/fr/apps/melba" addLocalePrefix={false}>in French only</Link>.
+**IMPORTANT NOTE**: Full documentation available <Link href="/fr/apps/melba">in French only</Link>.
 
 ---
 
@@ -67,7 +67,7 @@ In addition to its HubRise integration, Melba has an API that makes all the data
 Connecting Melba to HubRise allows your operations management solution to:
 
 - Pull orders from HubRise, including order status.
-- Pull the menu from a HubRise catalog.
+- Pull a catalog from HubRise.
 
 ---
 
@@ -87,7 +87,7 @@ By connecting Melba to HubRise, you can:
 - Obtain advanced analyses by cross-referencing revenue with actual costs informed in Melba (product mix, margin in % and value, etc.).
 - Launch the production of ordered items.
 
-Thanks to HubRise, you can synchronise your menu, your customer information and your orders with your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management solutions or delivery services, eMarketing (SMS/emailing), business intelligence, inventory management and customer loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our [Apps page](/apps).
+With HubRise, you can synchronise your menu, customer information, and orders between your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats, and Just Eat), delivery management solutions or delivery services, eMarketing solutions (SMS/emailing), business intelligence, inventory, and customer loyalty systems, and much more. The number of compatible applications increases every month. To discover the apps you can connect, visit our [Apps page](/apps).
 
 ## Prerequisites
 

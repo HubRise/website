@@ -23,4 +23,4 @@ To create a user profile for another person:
 1. Enter the email address for the new user and click **Reset Password**. The user will receive an email with instructions on entering their own password.
 1. Logout as the newly created user, then login as your actual user profile.
 
-Once the new user profile is created, you can give this new user permission to an Account or Location. For more information on granting permissions, see [Add a User](/docs/permissions#add-a-user).
+Once the new user profile is created, you can give this new user permission to an Account or Location. For more information on granting permissions, see [Add a User](/docs/permissions#add-user).

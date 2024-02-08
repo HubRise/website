@@ -32,7 +32,7 @@ Flyt est disponible sur les plateformes Just Eat Takeaway.com suivantes :
 
 ---
 
-**REMARQUE IMPORTANTE :** pour connecter votre enseigne à une autre plateforme Just Eat Takeaway.com, vous devez passer par l'application [Just Eat Takeaway Bridge](/apps/just-eat-takeaway/).
+**REMARQUE IMPORTANTE :** pour connecter votre enseigne à une autre plateforme Just Eat Takeaway.com, vous devez passer par l'application [Just Eat Takeaway Bridge](/apps/just-eat-takeaway/overview).
 
 ---
 
@@ -44,14 +44,14 @@ La connexion avec Just Eat Flyt Bridge vous permet de :
 
 - Recevoir les commandes de Just Eat, y compris le statut de commande.
 - Recevoir les informations de livraison de Just Eat, pour les commandes livrées par le restaurant.
-- Envoyer un catalogue vers Just Eat.
+- Envoyer un catalogue vers Just Eat, avec support des variantes.
 - Synchroniser l'inventaire avec HubRise.
 
 ![Schéma du flux de connexion entre Just Eat, Just Eat Flyt Bridge et HubRise pour la réception de commandes](./images/000-2x-just-eat-connection-diagram.png)
 
 ---
 
-**REMARQUE IMPORTANTE** : La tablette Just Eat doit rester allumée pour recevoir les commandes dans HubRise. Sur certains marchés, l'acceptation automatique peut être activée. Pour plus d'informations, voir [Puis-je désactiver la tablette ?](/apps/just-eat-flyt/faqs/desactiver-tablette/).
+**REMARQUE IMPORTANTE** : La tablette Just Eat doit rester allumée pour recevoir les commandes dans HubRise. Sur certains marchés, l'acceptation automatique peut être activée. Pour plus d'informations, voir [Puis-je désactiver la tablette ?](/apps/just-eat-flyt/faqs/turn-off-orderpad).
 
 ---
 
@@ -61,7 +61,7 @@ Just Eat Flyt Bridge peut être connecté à HubRise depuis le back-office de Hu
 
 Le fait de connecter votre restaurant ou votre commerce de proximité Just Eat à HubRise vous permet de recevoir vos commandes Just Eat directement dans votre logiciel de caisse, sur votre écran de cuisine ou dans votre système de gestion de livraison également connecté à HubRise. Vous pouvez ainsi gérer les commandes Just Eat parallèlement à vos autres commandes, en utilisant vos outils habituels. Les commandes Just Eat transiteront par votre installation existante, comme vos autres commandes.
 
-Grâce à HubRise, synchronisez votre menu, vos informations clients et vos commandes avec votre logiciel de caisse, les plateformes de livraison de repas (dont Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs ou de services de livraison, les solutions d'e-marketing (SMS/e-mailing) et de business intelligence, les systèmes de gestion de stock et de fidélisation client, et bien d'autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, consultez notre [page Apps](/apps).
+Avec HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes entre votre logiciel de caisse, votre solution de commande en ligne, les services de livraison de repas (y compris Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs, les services de livraison, les solutions d'e-marketing (SMS/emailing), les systèmes de business intelligence, de gestion des stocks et de fidélisation client, et bien plus encore. Le nombre d'applications compatibles augmente chaque mois. Pour découvrir les applications que vous pouvez connecter, visitez notre [page Apps](/apps).
 
 ## Prérequis
 

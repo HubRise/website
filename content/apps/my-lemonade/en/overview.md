@@ -20,7 +20,7 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: Full documentation available <Link to="/fr/apps/my-lemonade" addLocalePrefix={false}>in French only</Link>.
+**IMPORTANT NOTE**: Full documentation available <Link href="/fr/apps/my-lemonade">in French only</Link>.
 
 ---
 
@@ -38,8 +38,8 @@ Connecting My Lemonade to HubRise allows your table ordering solution to:
 
 - Push orders into HubRise, including order status.
 - Push customer information into HubRise.
-- Push the menu into a HubRise catalog.
-- Pull the menu from a HubRise catalog.
+- Push a catalog into HubRise.
+- Pull a catalog from HubRise.
 
 ---
 
@@ -53,7 +53,7 @@ My Lemonade can be connected to HubRise from My Lemonade's back office.
 
 Connecting My Lemonade to HubRise allows your table ordering solution to communicate with other applications you use every day. Send online orders to your EPOS, to an autonomous printer, a Kitchen Display Screen, or to your inventory management solution. Import your EPOS product catalog into My Lemonade.
 
-Thanks to HubRise, synchronise your menu, your customer and order information with your EPOS, online ordering, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management, delivery services, eMarketing (SMS/emailing), business intelligence, stock management, loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our [Apps page](/apps).
+With HubRise, you can synchronise your menu, customer information, and orders between your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats, and Just Eat), delivery management solutions or delivery services, eMarketing solutions (SMS/emailing), business intelligence, inventory, and customer loyalty systems, and much more. The number of compatible applications increases every month. To discover the apps you can connect, visit our [Apps page](/apps).
 
 ## Prerequisites
 

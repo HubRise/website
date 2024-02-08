@@ -37,7 +37,7 @@ To create a new menu, follow these steps:
 
 If you are still having issues after attempting the workaround, contact support@hubrise.com.
 
-## Orders Not Received
+## Orders Not Received {#orders-not-received}
 
 When Deliveroo Bridge is configured correctly, and you do not receive Deliveroo orders on HubRise, you may be experiencing one of the following issues.
 

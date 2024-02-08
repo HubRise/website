@@ -10,7 +10,7 @@ meta:
 
 The first step in verifying the connection between Aquila and HubRise is by creating test orders.
 
-These steps require that you have already connected Aquila to HubRise. For more information on connecting Aquila to HubRise, see [Connect to HubRise](/apps/aquila-cms/connect-hubrise/).
+These steps require that you have already connected Aquila to HubRise. For more information on connecting Aquila to HubRise, see [Connect to HubRise](/apps/aquila-cms/connect-hubrise).
 
 Once the connection is complete, test orders generated from Aquila will be transmitted to HubRise. Follow this process to create a test order and verify it has been transmitted to HubRise.
 
@@ -24,4 +24,4 @@ With the test order created in Aquila, the next step is to verify that the order
 1. Log in to your [HubRise account](https://manager.hubrise.com).
 1. From HubRise, click **Data** > **Orders**. The new Order will be displayed.
 1. Click the new Order to verify the customer and order information is accurate.
-1. The **Logs** section will contain the detailed JSON records of the communication between Aquila and HubRise. For more information on how to read these logs, see [Understanding Logs in HubRise](/docs/hubrise-logs).
+1. The **Logs** section will contain the detailed JSON records of the communication between Aquila and HubRise. For more information on how to read these logs, see [Understanding Logs in HubRise](/docs/hubrise-logs/overview).

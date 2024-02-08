@@ -36,7 +36,7 @@ Connecting Aquila CMS to HubRise allows the online ordering solution to:
 
 - Push orders into HubRise.
 - Push customer information into HubRise.
-- Pull the menu from a HubRise catalog.
+- Pull a catalog from HubRise.
 
 Aquila CMS can be connected to HubRise from Aquila CMS back office.
 
@@ -44,7 +44,7 @@ Aquila CMS can be connected to HubRise from Aquila CMS back office.
 
 Connecting your Aquila site to HubRise provides an omnichannel advantage to your business. Customer information can be transferred to marketing and loyalty apps, orders submitted to the EPOS of your choice.
 
-The connection between Aquila and HubRise synchronises customer information between the two systems. Product information can be pulled from HubRise and used to create new products in Aquila, or update product prices and names. Orders made in Aquila are pushed to HubRise. For more information, see the [HubRise Overview](/docs).
+The connection between Aquila and HubRise synchronises customer information between the two systems. Product information can be pulled from HubRise and used to create new products in Aquila, or update product prices and names. Orders made in Aquila are pushed to HubRise. For more information, see the [HubRise Overview](/docs/overview).
 
 ## Prerequisites
 

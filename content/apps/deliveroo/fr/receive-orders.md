@@ -10,13 +10,13 @@ meta:
 
 Connecter Deliveroo à HubRise vous permet de recevoir les commandes Deliveroo directement dans votre logiciel de caisse ou toute autre solution connectée à votre compte HubRise.
 
-Vous avez la possibilité d'accepter manuellement les commandes sur la tablette ou de configurer l'acceptation automatique. Si vous préférez ne pas utiliser de tablette, vous pouvez la laisser éteinte ou ne pas en avoir du tout. Pour plus d'informations, voir [Puis-je arrêter d'utiliser la tablette Deliveroo ?](/apps/deliveroo/faqs/deliveroo-sans-tablette/).
+Vous avez la possibilité d'accepter manuellement les commandes sur la tablette ou de configurer l'acceptation automatique. Si vous préférez ne pas utiliser de tablette, vous pouvez la laisser éteinte ou ne pas en avoir du tout. Pour plus d'informations, voir [Puis-je arrêter d'utiliser la tablette Deliveroo ?](/apps/deliveroo/faqs/deliveroo-tabletless).
 
 Cette page décrit les informations que Deliveroo envoie à HubRise. Elle peut vous aider à comprendre comment les commandes seront reçues dans votre logiciel de caisse.
 
 ## Articles et options
 
-Si votre logiciel de caisse utilise les codes ref pour retrouver les articles et les options, assurez-vous que les articles et les options de votre menu Deliveroo sont associés aux codes ref correspondant sur votre caisse. Pour plus de détails, voir [Associer les codes ref](/apps/deliveroo/associer-codes-ref).
+Si votre logiciel de caisse utilise les codes ref pour retrouver les articles et les options, assurez-vous que les articles et les options de votre menu Deliveroo sont associés aux codes ref correspondant sur votre caisse. Pour plus de détails, voir [Associer les codes ref](/apps/deliveroo/map-ref-codes).
 
 Sinon, si votre logiciel de caisse ne prend pas en charge les code refs, laissez ce champ vide dans votre back-office Deliveroo.
 

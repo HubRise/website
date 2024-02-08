@@ -10,7 +10,7 @@ meta:
 
 In some circumstances, you might need to connect multiple instances of the same app to a single HubRise location. For example, you might have multiple stores of a food delivery platform that you want to connect to the same EPOS.
 
-To connect the first instance of the app, see [Connecting a New App](/docs/connections#connecting-a-new-app). If you already connected the app, you do not need to repeat this step again.
+To connect the first instance of the app, see [Connecting a New App](/docs/connections#connect). If you already connected the app, you do not need to repeat this step again.
 
 To connect the second instance of the app, follow these steps.
 
@@ -38,7 +38,7 @@ You will be able to distinguish the various instances by the device ID value you
 
 ![Multiple instances of the same app can be distinguished by the device ID value.](./images/067-multiple-apps-device-id.png)
 
-## Naming Rules
+## Naming Rules {#naming-rules}
 
 To help you identify your app instances, you can freely choose the device ID value during the initial setup.
 In `device_id=BrandName&`, BrandName can include any combination of the following characters:

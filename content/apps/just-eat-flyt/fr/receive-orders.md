@@ -10,7 +10,7 @@ meta:
 
 La connexion de Just Eat à HubRise vous permet de recevoir les commandes Just Eat directement dans votre logiciel de caisse.
 
-L'OrderPad Just Eat doit rester allumé pour recevoir les commandes dans HubRise. Pour plus d'informations, voir [Puis-je désactiver la tablette ?](/apps/just-eat-flyt/faqs/desactiver-tablette/). Les commandes doivent être acceptées, soit manuellement depuis l'OrderPad, soit automatiquement sur certains marchés. Pour plus d'informations, voir [Dois-je activer l'auto-acceptation sur Just Eat ?](/apps/just-eat-flyt/faqs/auto-acceptation/)
+L'OrderPad Just Eat doit rester allumé pour recevoir les commandes dans HubRise. Pour plus d'informations, voir [Puis-je désactiver la tablette ?](/apps/just-eat-flyt/faqs/turn-off-orderpad). Les commandes doivent être acceptées, soit manuellement depuis l'OrderPad, soit automatiquement sur certains marchés. Pour plus d'informations, voir [Dois-je activer l'auto-acceptation sur Just Eat ?](/apps/just-eat-flyt/faqs/auto-accept)
 
 Cette page décrit les informations que Just Eat envoie à HubRise. Elle peut vous aider à comprendre comment les commandes seront reçues dans votre logiciel de caisse.
 
