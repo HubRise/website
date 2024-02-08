@@ -28,6 +28,8 @@ Furthermore, Trapar integrates with clients' existing operational tools, either 
 Connecting Trapar to HubRise allows your delivery management and service solution to:
 
 - Pull orders from HubRise, including order status.
+- Pull customer information from HubRise.
+- Push order status modifications into HubRise.
 
 Trapar can be connected to HubRise via the Trapar's support line.
 
