@@ -478,6 +478,12 @@ content:
           title: Stuart
           description: Stuart propose aux commerces de toutes tailles et de tous secteurs, des services de livraison rapide sur demande avec une méthode de transport personnalisée. Disponible dans 4 pays et 100 villes.
           additional_info:
+        - website: https://trapar.co.uk
+          documentation: /fr/apps/trapar
+          logo: trapar.png
+          title: Trapar
+          description: Trapar facilite la livraison du dernier kilomètre avec suivi en temps réel et l'option d'utiliser ses propres livreurs ou faire appel à ceux de Trapar.
+          additional_info:
     - title: Fidélité et marketing
       slug: loyalty-and-marketing
       apps:
