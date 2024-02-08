@@ -4,7 +4,7 @@ path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | Popina | HubRise
+  title: Connexion à HubRise | Popina | HubRise
   description: Connecter Popina à HubRise, étapes à suivre pour recevoir vos commandes Popina dans votre logiciel de caisse.
 ---
 

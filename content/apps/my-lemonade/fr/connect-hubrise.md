@@ -4,7 +4,7 @@ path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | My Lemonade | HubRise
+  title: Connexion à HubRise | My Lemonade | HubRise
   description: Étapes pour établir une connexion entre My Lemonade et HubRise. Connectez votre caisse et synchronisez vos données avec d'autres applications.
 ---
 
@@ -16,7 +16,7 @@ meta:
 
 ## Connecter My Lemonade
 
-Pour connecter votre solution de commande en ligne My Lemonade à HubRise, suivez les étapes suivantes :
+Pour connecter votre solution de commande en ligne My Lemonade à HubRise, suivez ces étapes :
 
 1. Dans votre espace My Lemonade, cliquez sur **+ ETABLISSEMENT**. Si vous avez plusieurs établissements, cliquez sur le nom de votre établissement, puis sur **+ ETABLISSEMENT**.
 1. Sélectionnez l'option **IMPORTER LA CARTE DEPUIS MA CAISSE**.

@@ -12,7 +12,7 @@ Carré POS peut envoyer l'inventaire et l'indisponibilité des produits vers Hu
 
 ## Activer l'envoi de l'inventaire vers HubRise
 
-Pour activer l'envoi automatique de l'inventaire et de l'indisponibilité des produits vers HubRise, suivez les étapes suivantes :
+Pour activer l'envoi automatique de l'inventaire et de l'indisponibilité des produits vers HubRise, suivez ces étapes :
 
 1. Ouvrez Carré POS.
 1. Cliquez sur **ACCUEIL**.

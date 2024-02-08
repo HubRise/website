@@ -4,7 +4,7 @@ path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | Dishop | HubRise
+  title: Connexion à HubRise | Dishop | HubRise
   description: "Processus de connexion de votre restaurant Dishop à HubRise : liste des éléments à fournir et étapes à suivre pour recevoir vos commandes Dishop dans votre logiciel de caisse."
 ---
 

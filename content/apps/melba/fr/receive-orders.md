@@ -10,7 +10,7 @@ meta:
 
 ## Importer les commandes dans Melba
 
-Pour importer les commandes HubRise dans Melba, suivez les étapes suivantes :
+Pour importer les commandes HubRise dans Melba, suivez ces étapes :
 
 1. Depuis le back-office de Melba, cliquez sur l'icône **EXTENSIONS** dans le menu à gauche.
 

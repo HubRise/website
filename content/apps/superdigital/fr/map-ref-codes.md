@@ -14,7 +14,7 @@ Une fois SuperDigital.fr connecté à HubRise, vous devez configurer SuperDigita
 
 Un produit dans HubRise correspond à un food item dans SuperDigital.fr, et une SKU correspond à une option.
 
-Pour modifier le code ref d'une option, suivez les étapes suivantes :
+Pour modifier le code ref d'une option, suivez ces étapes :
 
 1. Dans le menu latéral de SuperDigital.fr, sélectionnez **Food Items**.
 2. Cliquez sur le nom du food item souhaité.
@@ -31,7 +31,7 @@ Pour modifier le code ref d'une option, suivez les étapes suivantes :
 
 Une option dans HubRise correspond à un addon dans SuperDigital.fr.
 
-Pour modifier le code ref d'un addon, suivez les étapes suivantes :
+Pour modifier le code ref d'un addon, suivez ces étapes :
 
 1. Dans le menu latéral, sélectionnez **Food Items** > **Addons**.
 2. Cliquez sur le nom de l'addon souhaité. Le code ref s'affiche dans le champ **Ref**.
@@ -39,7 +39,7 @@ Pour modifier le code ref d'un addon, suivez les étapes suivantes :
 
 ## Remises
 
-Une remise dans HubRise correspond à un discount code dans SuperDigital.fr. Pour modifier le code ref d'un discount code, suivez les étapes suivantes :
+Une remise dans HubRise correspond à un discount code dans SuperDigital.fr. Pour modifier le code ref d'un discount code, suivez ces étapes :
 
 1. Dans le menu latéral, sélectionnez **RestroPress** > **Discount Codes**.
 1. Cliquez sur **Edit**, en-dessous du nom du discount code souhaité. Le code ref s'affiche dans le champ **Ref**.
@@ -47,7 +47,7 @@ Une remise dans HubRise correspond à un discount code dans SuperDigital.fr. Pou
 
 ## Méthodes de paiement
 
-Une méthode de paiement dans HubRise correspond à un payment gateway dans SuperDigital.fr. Pour modifier le code ref d'un payment gateway, suivez les étapes suivantes :
+Une méthode de paiement dans HubRise correspond à un payment gateway dans SuperDigital.fr. Pour modifier le code ref d'un payment gateway, suivez ces étapes :
 
 1. Dans le menu latéral, sélectionnez **RestroPress** > **Settings**.
 1. Sélectionnez l'onglet **Payment Gateways**. Le code ref s'affiche dans le champ éditable.
@@ -55,7 +55,7 @@ Une méthode de paiement dans HubRise correspond à un payment gateway dans Supe
 
 ## Types de service
 
-Pour modifier le code ref d'un type de service, suivez les étapes suivantes :
+Pour modifier le code ref d'un type de service, suivez ces étapes :
 
 1. Dans le menu latéral, sélectionnez **RestroPress** > **Settings**.
 1. Dans l'onglet **Général**, cliquez sur **Service Options**. Le code ref s'affiche dans le champ éditable.
