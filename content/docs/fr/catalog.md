@@ -24,7 +24,7 @@ Vous pouvez connecter des applications intégrées à un catalogue spécifique a
 
 La suppression d'un catalogue de HubRise n'affecte pas la liste des produits contenus dans les applications tierces.
 
-## Ajouter un catalogue
+## Ajouter un catalogue {#add}
 
 Pour ajouter un catalogue, procédez comme suit :
 

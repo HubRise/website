@@ -3,7 +3,7 @@ title: Connexion à HubRise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | Adipos | HubRise
+  title: Connexion à HubRise | Adipos | HubRise
   description: Connecter Adipos à HubRise, étapes à suivre pour recevoir vos commandes dans votre logiciel de caisse Adipos. Réalisez tous vos rêves d'intégration.
 ---
 

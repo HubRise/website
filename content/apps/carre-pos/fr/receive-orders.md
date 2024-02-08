@@ -24,7 +24,7 @@ Pour voir le détail d'une commande, cliquez sur **Details** :
 
 ### Depuis le logiciel de caisse
 
-Pour voir la liste des nouvelles commandes dans le logiciel de caisse, suivez les étapes suivantes :
+Pour voir la liste des nouvelles commandes dans le logiciel de caisse, suivez ces étapes :
 
 1. Depuis l'écran de démarrage de Carré POS, cliquez sur **ACCUEIL**.
 1. Sélectionnez un utilisateur.

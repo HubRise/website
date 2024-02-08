@@ -1,7 +1,7 @@
 ---
 title: Pull Orders
 path_override: pull-orders
-position: 8
+position: 7
 layout: documentation
 meta:
   title: Pull Orders | PrestaShop | HubRise

@@ -4,7 +4,7 @@ path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | SOMM'IT | HubRise
+  title: Connexion à HubRise | SOMM'IT | HubRise
   description: Étapes pour établir une connexion entre SOMM'IT et HubRise. Connectez votre caisse et synchronisez vos données avec d'autres applications.
 ---
 

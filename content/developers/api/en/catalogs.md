@@ -1265,24 +1265,27 @@ Returns the inventory of SKUs and options in the specified catalog.
 [
   {
     "sku_ref": "COKE",
-    "stock": "3"
+    "stock": "3",
+    "expires_at": null
   },
   {
     "sku_ref": "PEPSI",
-    "stock": "0"
+    "stock": "0",
+    "expires_at": "2020-08-05T08:00:00+02:00"
   },
   {
     "option_ref": "EGG",
-    "stock": "1"
+    "stock": "1",
+    "expires_at": null
   }
 ]
 ```
 
 In the above example:
 
-- The sku with the ref `COKE` has 3 items available
-- The sku with the ref `PEPSI` is out of stock
-- The option with the ref `EGG` has 1 item available
+- The sku with the ref `COKE` has 3 items available.
+- The sku with the ref `PEPSI` is out of stock and will be available again at the specified date.
+- The option with the ref `EGG` has 1 item available.
 
 Inventories are empty by default. SKUs or options not specified in the inventory are considered to have an unlimited supply.
 
@@ -1295,9 +1298,8 @@ This operation will reset inventory entries for any SKUs or options in the catal
 The request body has the same format as the [Retrieve Inventory](#retrieve-inventory) response. Each entry in the request should include:
 
 - A `sku_ref` or an `option_ref` key.
-- A `stock` key indicating quantity.
-
-The `stock` value should be a positive [decimal](/developers/api/general-concepts#decimal-values), with up to 3 decimal places. A value of `0` means **out of stock**. An entry with a `stock` value of `null` stock is ignored.
+- A `stock` key indicating quantity. The value should be a positive [decimal](/developers/api/general-concepts#decimal-values), with up to 3 decimal places. A value of `0` means **out of stock**. Entries with a value of `null` are ignored.
+- An optional `expires_at` key, only available if `stock` is `0`, indicating the date at which the item will be available again.
 
 <CallSummaryTable
   endpoint="PUT /catalogs/:id/locations/:id/inventory"
@@ -1317,10 +1319,13 @@ The `stock` value should be a positive [decimal](/developers/api/general-concept
   },
   {
     "option_ref": "EGG",
-    "stock": "0"
+    "stock": "0",
+    "expires_at": "2020-08-05T08:00:00+02:00"
   }
 ]
 ```
+
+Clients listening to the `inventory.patch` callback will receive a notification each time an entry expires. If multiple entries expire at the same time, a single notification will be sent with all the expired entries.
 
 ### 14.3. Patch Inventory
 
@@ -1346,11 +1351,13 @@ Given the existing inventory:
 [
   {
     "sku_ref": "COKE",
-    "stock": "3"
+    "stock": "3",
+    "expires_at": null
   },
   {
     "option_ref": "EGG",
-    "stock": "1"
+    "stock": "1",
+    "expires_at": null
   }
 ]
 ```
@@ -1378,11 +1385,13 @@ The updated inventory becomes:
 [
   {
     "sku_ref": "PEPSI",
-    "stock": "2"
+    "stock": "2",
+    "expires_at": null
   },
   {
     "option_ref": "EGG",
-    "stock": "1"
+    "stock": "1",
+    "expires_at": null
   }
 ]
 ```

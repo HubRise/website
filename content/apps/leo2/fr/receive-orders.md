@@ -16,7 +16,7 @@ LEO2 vérifie l'arrivée de nouvelles commandes toutes les 30 secondes. Si vous 
 
 ### Voir la liste des commandes {#order-list}
 
-Pour voir la liste des commandes, suivez les étapes suivantes :
+Pour voir la liste des commandes, suivez ces étapes :
 
 1. Depuis l'écran d'accueil, cliquez sur **Caisse**.
 1. Sélectionnez un vendeur.
@@ -28,7 +28,7 @@ Si vos commandes HubRise n'arrivent pas dans LEO2, consultez notre FAQ: [Les com
 
 ### Voir les détails d'une commande
 
-Pour voir les détails d'une commande, suivez les étapes suivantes :
+Pour voir les détails d'une commande, suivez ces étapes :
 
 1. Depuis l'écran d'accueil, cliquez sur **Caisse**.
 1. Sélectionnez un vendeur.
@@ -37,7 +37,7 @@ Pour voir les détails d'une commande, suivez les étapes suivantes :
 
 ### Modifier le statut d'une commande
 
-Pour modifier le statut d'une commande, suivez les étapes suivantes :
+Pour modifier le statut d'une commande, suivez ces étapes :
 
 1. Accédez à la liste des commandes en suivant les étapes décrites dans [Voir la liste des commandes](/apps/leo2/receive-orders#order-list).
 1. Cliquez sur la colonne **Etat**.

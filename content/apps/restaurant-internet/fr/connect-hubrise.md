@@ -4,7 +4,7 @@ path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | Restaurant-internet | HubRise
+  title: Connexion à HubRise | Restaurant-internet | HubRise
   description: Étapes pour établir une connexion entre Restaurant-internet et HubRise. Connectez votre caisse et synchronisez vos données avec d'autres applications.
 ---
 
@@ -40,7 +40,7 @@ L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers �
 
 ## Déconnecter Restaurant-internet
 
-Pour déconnecter Restaurant-internet de HubRise, suivez les étapes suivantes :
+Pour déconnecter Restaurant-internet de HubRise, suivez ces étapes :
 
 1. Depuis votre tableau de bord Restaurant-internet, dans la partie **Modules**, sélectionnez **Marketplace Autres modules**.
 1. Sélectionnez **Hubrise - Connection Caisse Gratuit**.

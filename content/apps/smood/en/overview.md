@@ -42,7 +42,7 @@ Smood can be connected to HubRise from the Smood back office.
 
 Connecting Smood to HubRise allows your ordering and delivery platform to communicate with the other applications that you use every day. For example, you can receive your Smood orders directly in your EPOS or Kitchen Display System also connected with HubRise, print your orders with a connected printer, manage your inventory, and send your HubRise menu to Smood.
 
-Thanks to HubRise, you can synchronise your menu, your customer information and your orders with your EPOS, your online ordering solution, food delivery platforms, delivery management solutions or delivery services, eMarketing (SMS/emailing), business intelligence, inventory management and customer loyalty systems, and more. The number of compatible applications increases every month. To find out which apps you can connect, see our [Apps page](/apps).
+With HubRise, you can synchronise your menu, customer information, and orders between your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats, and Just Eat), delivery management solutions or delivery services, eMarketing solutions (SMS/emailing), business intelligence, inventory, and customer loyalty systems, and much more. The number of compatible applications increases every month. To discover the apps you can connect, visit our [Apps page](/apps).
 
 ## Prerequisites
 
