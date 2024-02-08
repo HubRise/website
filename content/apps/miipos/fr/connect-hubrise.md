@@ -4,7 +4,7 @@ path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | MiiPos | HubRise
+  title: Connexion à HubRise | MiiPos | HubRise
   description: Connecter MiiPos à HubRise, étapes à suivre pour recevoir vos commandes dans votre logiciel de caisse MiiPos.
 ---
 

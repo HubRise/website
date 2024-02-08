@@ -21,7 +21,7 @@ Vous pouvez également consulter et modifier vos propres permissions à partir d
 
 ## Ajouter un utilisateur {#add-user}
 
-Les administrateurs peuvent octroyer l'accès à d'autres utilisateurs à condition qu'ils aient un profil existant sur HubRise. Les nouveaux utilisateurs de HubRise peuvent créer un profil sur la [page d'inscription à HubRise](https://manager.hubrise.com/signup?locale=fr-FR). Si vous créez un nouveau profil au nom de quelqu'un d'autre, utilisez la [page de réinitialisation du mot de passe de HubRise](https://manager.hubrise.com/reset_password/new?locale=fr-FR) afin que l'utilisateur puisse saisir son propre mot de passe sécurisé.
+Les administrateurs peuvent octroyer l'accès à d'autres utilisateurs à condition qu'ils aient un profil existant sur HubRise. Les nouveaux utilisateurs de HubRise peuvent créer un profil sur la [page d'inscription à HubRise](https://manager.hubrise.com/signup). Si vous créez un nouveau profil au nom de quelqu'un d'autre, utilisez la [page de réinitialisation du mot de passe de HubRise](https://manager.hubrise.com/reset_password/new) afin que l'utilisateur puisse saisir son propre mot de passe sécurisé.
 
 Pour accorder à un utilisateur des permissions sur un compte, procédez comme suit :
 

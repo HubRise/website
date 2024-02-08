@@ -4,7 +4,7 @@ path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | Expedy | HubRise
+  title: Connexion à HubRise | Expedy | HubRise
   description: Étapes pour établir une connexion entre Expedy et HubRise. Connectez votre caisse et synchronisez vos données avec d'autres applications.
 ---
 
@@ -16,7 +16,7 @@ meta:
 
 ## Connecter Expedy
 
-Pour connecter votre imprimante Expedy à HubRise, suivez les étapes suivantes :
+Pour connecter votre imprimante Expedy à HubRise, suivez ces étapes :
 
 1. Depuis la page d'accueil du back-office Expedy, cliquez sur **Imprimantes**.
 1. Cliquez sur le nom de l'imprimante à connecter.

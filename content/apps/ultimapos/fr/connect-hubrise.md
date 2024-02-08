@@ -4,7 +4,7 @@ path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | UltimaPOS | HubRise
+  title: Connexion à HubRise | UltimaPOS | HubRise
   description: Étapes pour établir une connexion entre UltimaPOS et HubRise. Connectez votre caisse et synchronisez vos données avec d'autres applications.
 ---
 

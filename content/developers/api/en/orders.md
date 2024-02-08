@@ -1001,9 +1001,9 @@ A delivery can be attached to an order whose service type is `delivery`. This is
 
 An order with an attached delivery includes a `delivery` field. This field contains the same fields as the [Delivery resource](/developers/api/deliveries#delivery-resource), except for the `driver_latitude` and `driver_longitude` fields.
 
-Attaching or updating a delivery triggers an `order.update` webhook, which includes the `delivery` field in its payload.
+Attaching or updating a delivery triggers an `order.update` callback event, which includes the `delivery` field in its payload.
 
-The `driver_latitude` and `driver_longitude` fields are typically updated at a high frequency, but intentionally do not trigger `order.update` webhooks to minimise the number of events for subscribers. To monitor these fields, opt for `delivery.update` webhooks.
+The `driver_latitude` and `driver_longitude` fields are typically updated at a high frequency, but intentionally do not trigger `order.update` callback events to minimise the number of events for subscribers. To monitor these fields, opt for `delivery.update` webhooks.
 
 ## 12. Order Loyalty Operations {#loyalty-operations}
 

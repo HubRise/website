@@ -4,7 +4,7 @@ path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | LEO2 | HubRise
+  title: Connexion à HubRise | LEO2 | HubRise
   description: Étapes pour établir une connexion entre LEO2 et HubRise. Connectez votre caisse et synchronisez vos données avec d'autres applications.
 ---
 
@@ -16,7 +16,7 @@ meta:
 
 ## Connecter LEO2
 
-Pour connecter votre logiciel de caisse LEO2 à HubRise, suivez les étapes suivantes :
+Pour connecter votre logiciel de caisse LEO2 à HubRise, suivez ces étapes :
 
 1. Vérifiez que le module **Vente Externe** est activé. Pour plus d'informations, contactez votre revendeur.
 1. Depuis l'écran d'accueil de LEO2, cliquez sur **Gestion**.

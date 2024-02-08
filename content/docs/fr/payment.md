@@ -84,7 +84,7 @@ Pour ajouter ou mettre à jour une méthode de paiement au niveau du point de ve
 
 Pour supprimer une méthode de paiement, procédez comme suit :
 
-1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com?locale=fr-FR).
+1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com).
 1. Si vous avez accès à plusieurs comptes, sélectionnez le compte concerné.
 1. Rendez-vous dans **CONFIGURATION**.
 1. Pour vérifier le paiement défini au niveau du compte, assurez-vous que l'option **Tous les points de vente** est sélectionnée. Pour vérifier le paiement défini au niveau du pointe de vente, sélectionnez celui-ci dans la liste déroulante des points de vente.

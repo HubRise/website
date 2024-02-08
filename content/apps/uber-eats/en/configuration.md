@@ -74,7 +74,7 @@ All EPOS systems integrated with HubRise can read delivery notes. If your EPOS h
 
 Catalog variants give you the flexibility to disable specific items or adjust prices for Uber Eats.
 
-If your catalog includes variants, you have the option to select which one to use. When **(none)** is selected, the default items along with their standard prices are used.
+If your catalog includes variants, you have the option to select which ones to use. You can select different variants for the delivery and collection menus, or use the same variant for both. When **(none)** is selected, all items along with their standard prices are sent to Uber Eats.
 
 ### Automatic Catalog Push
 

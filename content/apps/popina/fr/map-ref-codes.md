@@ -27,7 +27,7 @@ Seules certaines applications permettent l'import d'un catalogue depuis HubRise.
 
 ---
 
-Pour exporter manuellement un catalogue vers HubRise, suivez les étapes suivantes :
+Pour exporter manuellement un catalogue vers HubRise, suivez ces étapes :
 
 1. Ouvrez [Delivera](https://delivera-popina.web.app). Pour plus d'informations, voir la section [Delivera](/apps/popina/connect-hubrise#delivera) de cette documentation.
 2. Dans le menu, sélectionnez **HubRise**.
