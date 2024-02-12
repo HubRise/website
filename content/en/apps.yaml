@@ -86,6 +86,11 @@ content:
           logo: lightspeed-restaurant.png
           title: Lightspeed Restaurant (K-Series)
           description: Lightspeed Restaurant is a cloud based solution for restaurants, available in over 100 countries. Its sleek design and intuitive interface allows on-site, remote or on-the-go management of single and multi-store businesses.
+        - website: https://mealenium.io
+          documentation: /apps/mealenium
+          logo: mealenium.png
+          title: Mealenium
+          description: Mealenium is a restaurant-specific multi-platform EPOS (Windows, iOS, and Android). Its ergonomics and features facilitate daily management of your restaurant, from order taking to detailed operations management.
         - website: https://www.miipos.fr
           documentation: /apps/miipos
           logo: miipos.png
