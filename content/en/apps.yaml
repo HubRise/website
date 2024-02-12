@@ -90,7 +90,7 @@ content:
           documentation: /apps/mealenium
           logo: mealenium.png
           title: Mealenium
-          description: Mealenium is a restaurant-specific multi-platform EPOS (Windows, iOS, and Android). Its ergonomics and expert features facilitate daily management of your restaurant, from order taking to detailed operations management. Mealenium is the ideal companion for handling all types of unforeseen events.
+          description: Mealenium is a restaurant-specific multi-platform EPOS (Windows, iOS, and Android). Its ergonomics and features facilitate daily management of your restaurant, from order taking to detailed operations management.
         - website: https://www.miipos.fr
           documentation: /apps/miipos
           logo: miipos.png

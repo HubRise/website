@@ -88,7 +88,7 @@ content:
           documentation: /fr/apps/mealenium
           logo: mealenium.png
           title: Mealenium
-          description: Mealenium est logiciel de caisse multi-plateforme (Windows, iOS et Android), destinée au secteur de la restauration. Son ergonomie et ses fonctionnalités expertes facilitent le pilotage quotidien d’un établissement, de la prise de commande à la gestion détaillée de l’activité. Mealenium est le compagnon idéal pour gérer tous les imprévus.
+          description: Mealenium est un logiciel de caisse multi-plateforme (Windows, iOS et Android), destiné au secteur de la restauration. Son ergonomie et ses fonctionnalités facilitent le pilotage quotidien d'un établissement, de la prise de commande à la gestion détaillée de l'activité.
         - website: https://www.miipos.fr
           documentation: /fr/apps/miipos
           logo: miipos.png

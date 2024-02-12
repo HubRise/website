@@ -21,11 +21,10 @@ app_info:
 
 ## Description
 
-Mealenium a été conçu avec des restaurateurs et pour eux, afin de faciliter la gestion quotidienne d’un établissement et ainsi leur permettre de consacrer davantage de temps à l’expérience qu’ils font vivre à leurs clients.
+Mealenium est une solution de caisse conçue pour les restaurateurs. Les fonctionnalités et l'ergonomie de Mealenium permettent une prise en main rapide et une efficacité au quotidien.
 
-**Les grands piliers de Mealenium :**
+Les fonctionnalités de Mealenium incluent :
 
-Ergonomie et richesse fonctionnelle garantissent à la fois une prise en main rapide et une efficacité au quotidien grâce à des fonctionnalités expertes :
 - Prise de commande
 - Encaissement et pourboire
 - Détection automatique des formules
@@ -35,20 +34,18 @@ Ergonomie et richesse fonctionnelle garantissent à la fois une prise en main ra
 - Compte clients avec cagnotte et facturation
 - Écrans cuisine
 - Cartes cadeaux
-- Et, bien plus encore, notamment une gestion avancée des imprimantes cuisine et un haut niveau de paramétrage. 
+- Gestion avancée des imprimantes cuisine
+- Personnalisation avancée.
 
-Multiplateforme, une ergonomie similaire quel que soit le device, de la caisse tactile Windows aux tablettes ou aux smartphones (iOS ou Android) :
-- Mealenium s’adapte à toutes les configurations de prise de commande et d’encaissement (centralisé, par zones, directement à table, ou autre).
-- Et avec les applications disponibles directement sur les stores Apple et Google, l’ajout d’un nouveau PAD de prise de commande, par exemple lors de l’arrivée d’un nouveau serveur, se fait en quelques clics.
+Mealenium est une solution multiplateforme, avec une ergonomie identique sur tous les périphériques, de la caisse tactile Windows aux tablettes et aux smartphones.
 
-Architecture moderne prête à accueillir des intégrations partenaires :
-- Intégrations d’ores et déjà disponible en direct ou par le biais de HubRise avec les plateformes du marché, tel qu'Uber Eats, Deliveroo, mais aussi Sevenrooms, Zenchef, Multi, Noticia.
+Mealenium s'adapte à toutes les configurations de prise de commande et d'encaissement : centralisé, par zones, directement à table, ou autre. Les applications mobiles disponibles sur les Apple Store et Google Play permettent l'ajout rapide d'une nouvelle tablette de prise de commande, par exemple lors de l'arrivée d'un nouveau serveur.
 
-Pilotage centralisé en temps réel pour optimiser les performances de son établissement :
-- Toutes les données de l’établissement consultables depuis la caisse, ou à distance depuis un ordinateur ou un smartphone. 
-- Analyse des chiffres d’affaires, par serveur, par type de vente, par heure, par produit et le tout, en comparaison dans le temps.
+Mealenium propose l'analyse des chiffres d'affaires par serveur, par type de vente, par heure, par produit et le tout, en comparaison dans le temps. Les rapports sont consultables en temps réel depuis la caisse, ou à distance depuis un ordinateur ou un smartphone.
 
-Mealenium est développé en France et est bien entendu conforme à la loi française anti-fraude TVA 2018, en proposant des mécaniques avancées de sécurisation des données tout en offrant la possibilité de sauvegardes dans le cloud pour faire fasse à tout aléa.
+Les données sont stockées de manière sécurisée, et peuvent être sauvegardés sur un serveur distant.
+
+Mealenium est développé en France et est conforme à la loi française anti-fraude 2018.
 
 ## Fonctionnalités de l'intégration
 
