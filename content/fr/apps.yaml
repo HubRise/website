@@ -84,11 +84,16 @@ content:
           logo: lightspeed-restaurant.png
           title: Lightspeed Restaurant (K-Series)
           description: Lightspeed Restaurant est une solution de gestion cloud pour les restaurants, disponible dans plus de 100 pays. Son design soigné et son interface intuitive permettent la gestion sur site, à distance ou en déplacement pour des entreprises mono et multisites.
+        - website: https://mealenium.io
+          documentation: /fr/apps/mealenium
+          logo: mealenium.png
+          title: Mealenium
+          description: Mealenium est un logiciel de caisse multi-plateforme (Windows, iOS et Android), destiné au secteur de la restauration. Son ergonomie et ses fonctionnalités facilitent le pilotage quotidien d'un établissement, de la prise de commande à la gestion détaillée de l'activité.
         - website: https://www.miipos.fr
           documentation: /fr/apps/miipos
           logo: miipos.png
           title: MiiPos
-          description: MiiPos édité par Arcsolu, est une caisse enregistreuse multi-plateformes (Windows, Android, iOS, Linux), avec un boost de technologie cloud, disponible en chinois, et conçue pour répondre aux besoins de nombreux types de commerces. Elle inclut les fonctionnalités nécessaires pour gérer les commerces et aider à la prise de décisions.
+          description: MiiPos édité par Arcsolu, est une caisse enregistreuse multi-plateformes (Windows, Android, iOS, Linux), avec un boost de technologie cloud, disponible en chinois, et conçue pour répondre aux besoins de nombreux types de commerces. Elle inclut les fonctionnalités nécessaires pour gérer les commerces et aider à la prise de décisions.
         - website: http://www.myorderboxhq.com
           documentation: /fr/apps/myorderbox
           logo: myorderbox.png
