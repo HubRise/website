@@ -14,12 +14,6 @@ Cette page décrit les paramètres à utiliser pour connecter les plateformes de
 
 Pour plus d'informations, consultez les pages d'aide de ces plateformes sur notre [page Apps](/apps#food-ordering-platforms).
 
----
-
-**REMARQUE IMPORTANTE** : Pour les codes liés à la configuration de votre site de commande en ligne en marque blanche, consultez [Solutions de commande en ligne](/apps/SOLUTION/online-ordering-solutions).
-
----
-
 ## Configuration de SOLUTION
 
 En fonction de vos besoins, vous devrez créer des PRODUITS, PROMOTIONS, MÉTHODES DE PAIEMENT... spécifiques aux plateformes dans SOLUTION.

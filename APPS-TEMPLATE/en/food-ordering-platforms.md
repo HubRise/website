@@ -14,12 +14,6 @@ This page describes the settings to use to connect food ordering platforms to SO
 
 For more information, check the documentation of these platforms in our [Apps page](/apps#food-ordering-platforms).
 
----
-
-**IMPORTANT NOTE:** For codes related to the configuration of your white branded online ordering website, see [Online Ordering Solutions](/apps/SOLUTION/online-ordering-solutions).
-
----
-
 ## Configuration on SOLUTION
 
 Depending on your needs, you will need to create PRODUCTS, PROMOTIONS, PAYMENT METHODS... specific to the platforms in SOLUTION.

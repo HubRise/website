@@ -76,4 +76,4 @@ Indiquez dans votre demande le nom de votre compte HubRise, son identifiant HubR
 
 Pour déconnecter SOLUTION de HubRise, contactez le support de SOLUTION.
 
-Vous pouvez bloquer les échanges de données entre SOLUTION et HubRise, ou déconnecter lSOLUTION, depuis le back office de HubRise. Pour plus d'information, voir [Bloquer ou déconnecter une application](/docs/connections#block-or-disconnect).
+Si vous avez besoin d'arrêter temporairement [la réception de commandes depuis HubRise], vous pouvez simplement bloquer la connexion entre SOLUTION et HubRise. Pour plus d'informations, voir [Bloquer ou déconnecter une application](/docs/connections#block-or-disconnect).
