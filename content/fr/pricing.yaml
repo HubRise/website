@@ -4,27 +4,30 @@ meta:
   description:
 content:
   hero:
-    title: Un tarif accessible, pas d'engagement
+    title: Un tarif accessible, sans engagement
   plan:
     pricing:
-      chunk_1: 25€ HT / mois
+      chunk_1: 35€ HT / mois
       chunk_2: par point de vente
     features:
       - Nombre de commandes illimité
       - Nombre de connexions illimité
       - Pas de frais d'installation
+      - Aucun engagement
     link:
       text: Démarrer maintenant
       to: https://manager.hubrise.com/signup
   infos:
-    - highlight: "Inscription gratuite :"
-      text: Sans frais et sans carte bancaire.
+    - title: Chaînes
+      text: Tarifs dégressifs à partir du 6ème point de vente.
       link:
-        text: Démarrer maintenant
-        to: https://manager.hubrise.com/signup
-    - highlight: "Pour les chaînes :"
-      text: Tarifs dégressifs à partir de 50 points de vente.
-      button: Nous contacter
-    - highlight: "Dark kitchen :"
-      text: Des frais additionnels peuvent s'appliquer.
+        text: Voir les tarifs
+        to: /fr/faqs#chaines
+    - title: Dark Kitchen
+      text: Vous pouvez regrouper vos comptes de plateformes de livraison sur un seul point de vente.
+      link:
+        text: Voir les tarifs
+        to: /fr/faqs#dark-kitchen
+    - title: Revendeurs
+      text: Nous proposons un programme de partenariat, avec ou sans marque blanche.
       button: Nous contacter

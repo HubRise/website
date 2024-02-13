@@ -23,7 +23,31 @@ Par prélèvement mensuel sur votre carte bancaire. Si vous n'avez pas de carte 
 
 #### J'ai plusieurs magasins, dois-je payer un abonnement par magasin ?
 
-Oui. Notez que des remises sont possibles pour les chaînes de 50 points de vente ou plus. <ContactFormToggle text="Contactez-nous" /> pour en savoir plus.
+Oui. Notez que des remises sont possibles pour les chaînes de 6 points de vente ou plus. <ContactFormToggle text="Contactez-nous" /> pour en savoir plus.
+
+## Tarifs spécifiques
+
+#### Chaînes
+
+Pour les chaînes de 6 points de vente ou plus, le tarif de l'abonnement est dégressif, suivant le barème suivant :
+
+- Points de vente 1 à 5 : 35€ HT
+- Points de vente 6 à 50 : 29€ HT
+- Points de vente 51 et plus : 25€ HT
+
+Par exemple, pour une chaîne de 12 points de vente, l'abonnement sera au tarif normal pour les 5 premiers points de vente, puis au tarif dégressif pour les 7 suivants.
+
+#### Dark Kitchen
+
+Les Dark Kitchens sont les points de vente qui utilisent plusieurs comptes Uber Eats, Deliveroo, etc. Les tarifs sont les suivants :
+
+- **Frais d'installation** : 25€ HT par compte Uber Eats, Deliveroo, etc.
+
+- **Abonnement mensuel** variable en fonction du nombre de commandes :
+  - 0 à 1,500 commandes par mois : 35€ HT (tarif normal)
+  - 1,501 à 3,000 commandes par mois : 55€ HT
+  - 3,001 à 4,500 commandes par mois : 75€ HT
+  - Et ainsi de suite, avec un supplément de 20€ HT par tranche de 1,500 commandes supplémentaires.
 
 ## Données
 

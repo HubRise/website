@@ -7,24 +7,27 @@ content:
     title: Fair Pricing. No Commitment.
   plan:
     pricing:
-      chunk_1: 25€ / Month
+      chunk_1: 35€ / Month
       chunk_2: per location
     features:
       - Unlimited orders
       - Unlimited connections
       - No setup fee
+      - No commitment
     link:
       text: Start now
       to: https://manager.hubrise.com/signup
   infos:
-    - highlight: "Free Signup:"
-      text: No setup fee, no credit card required.
+    - title: Chains
+      text: Discounts are available starting from the 6th location.
       link:
-        text: Start Now
-        to: https://manager.hubrise.com/signup
-    - highlight: "Large Accounts:"
-      text: Volume discount available for 50 locations or more.
-      button: Contact Us
-    - highlight: "Dark Kitchen:"
-      text: Additional fees may apply.
-      button: Contact Us
+        text: See pricing
+        to: /faqs#chains
+    - title: Dark Kitchen
+      text: Set up multiple food ordering & delivery platform accounts per location.
+      link:
+        text: See pricing
+        to: /faqs#dark-kitchen
+    - title: Resellers
+      text: We offer a partnership program, with or without white labeling.
+      button: Contact us
