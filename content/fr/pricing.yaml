@@ -18,13 +18,13 @@ content:
       text: Démarrer maintenant
       to: https://manager.hubrise.com/signup
   infos:
-    - title: Chaînes
-      text: Tarifs dégressifs à partir du 6ème point de vente.
+    - title: Franchises / Chaînes
+      text: Bénéficiez d'une remise grâce à un tarifs dégressifs dès le 6ème point de vente.
       link:
         text: Voir les tarifs
         to: /fr/faqs#chaines
     - title: Dark Kitchen
-      text: Vous pouvez regrouper vos comptes de plateformes de livraison sur un seul point de vente.
+      text: Centralisez les commandes de toutes vos marques sur un seul point de vente.
       link:
         text: Voir les tarifs
         to: /fr/faqs#dark-kitchen

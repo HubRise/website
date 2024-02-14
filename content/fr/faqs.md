@@ -31,22 +31,24 @@ Oui. Notez que des remises sont possibles pour les chaînes de 6 points de vente
 
 Pour les chaînes de 6 points de vente ou plus, le tarif de l'abonnement est dégressif, suivant le barème suivant :
 
-- Points de vente 1 à 5 : 35€ HT
-- Points de vente 6 à 50 : 29€ HT
-- Points de vente 51 et plus : 25€ HT
+- Points de vente 1 à 5 : 35€ HT
+- Points de vente 6 à 30 : 30€ HT
+- Points de vente 31 et plus : 27€ HT
 
 Par exemple, pour une chaîne de 12 points de vente, l'abonnement sera au tarif normal pour les 5 premiers points de vente, puis au tarif dégressif pour les 7 suivants.
 
 #### Dark Kitchen
 
-Les Dark Kitchens sont les points de vente qui utilisent plusieurs comptes Uber Eats, Deliveroo, etc. Les tarifs sont les suivants :
+Les Dark Kitchens sont des restaurants avec plusieurs marques virtuelles à connecter sur un même point de vente HubRise. Ils ont plusieurs comptes sur des plateformes de livraison de repas (Deliveroo, Uber Eats, Just Eat, etc.) et parfois sur des sites de commande en ligne en marque blanche. 
 
-- **Frais d'installation** : 25€ HT par compte Uber Eats, Deliveroo, etc.
+Les tarifs appliqués aux Dark Kitchens sont les suivants :
 
-- **Abonnement mensuel** variable en fonction du nombre de commandes :
-  - 0 à 1,500 commandes par mois : 35€ HT (tarif normal)
-  - 1,501 à 3,000 commandes par mois : 55€ HT
-  - 3,001 à 4,500 commandes par mois : 75€ HT
+- **Frais d'installation** : 25€ HT par plateforme et par site en marque virtuelle à connecter. Une remise sur le volume est possible à condition de tout connecter en un seul batch.
+
+- **Abonnement mensuel** variable en fonction du nombre de commandes :
+  - 0 à 1,500 commandes par mois : 35€ HT (tarif normal)
+  - 1,501 à 3,000 commandes par mois : 55€ HT
+  - 3,001 à 4,500 commandes par mois : 75€ HT
   - Et ainsi de suite, avec un supplément de 20€ HT par tranche de 1,500 commandes supplémentaires.
 
 ## Données
@@ -73,7 +75,7 @@ La création et la consultation de vos données sur HubRise se fait par API. Les
 
 #### Qui a accès à mes données ?
 
-Seules les applications que vous autorisez, de manière explicite et révocable, ont accès à vos données.
+Seules les applications et les utilisateurs que vous autorisez, de manière explicite et révocable, ont accès à vos données.
 
 #### Puis-je donner accès à mon compte à d'autres utilisateurs ?
 
@@ -87,21 +89,21 @@ HubRise vous donne immédiatement accès à l'écosystème des commerçants et r
 
 #### Pouvez-vous m'aider à promouvoir mon application ?
 
-Nous mettrons prochainement en avant les meilleures applications sur notre blog et nos réseaux sociaux.
+Depuis peu nous mettons en avant les partenaires techniques qui le souhaitent sur notre blog et nos réseaux sociaux. 
 Si votre application répond à certaines spécifications, elle pourra être publiée sur notre App Store, accessible à nos utilisateurs. <ContactFormToggle text="Contactez-nous" /> pour nous présenter votre projet.
 
 #### HubRise peut-il me rétribuer pour mes applications ?
 
 Non, en revanche vous êtes libre de vendre vos applications à nos utilisateurs, sans condition de notre part.
 
-#### HubRise peut-il proposer des solution concurrentes à la mienne à ses utilisateurs ?
+#### HubRise peut-il proposer des solutions concurrentes à la mienne à ses utilisateurs ?
 
 HubRise ne démarche jamais directement ses utilisateurs.
-Par ailleurs, HubRise ne recommande jamais officiellement de solution, et respecte une égalité de traitement entre solutions concurrentes.
+Par ailleurs, HubRise ne recommande jamais officiellement de solution et respecte une égalité de traitement entre solutions concurrentes.
 
 #### Avez-vous un processus de certification ?
 
-Pas encore, mais nous prévoyons de mettre rapidement en place un processus d'auto-certification, qui sera totalement optionnel et gratuit.
+Nous avons un processus de certification par audit totalement optionnel et gratuit. Les applications citées dans notre [page Apps](/apps) ont toutes été soumises à cet audit. La mention *Intégration en cours* n'est supprimée qu'après la connexion du premier utilisateur.
 
 ## Technologie et modèle de données
 
@@ -125,4 +127,4 @@ Les applications peuvent, au choix :<br />
 
 #### J'ai plusieurs points de vente dont certains partagent le même catalogue de produits. Comment faire ?
 
-HubRise permet de créer plusieurs catalogues, et de les affecter individuellement à chaque point de vente ou de les partager entre plusieurs points de vente. Même chose pour vos listes de clients.
+HubRise permet de créer plusieurs catalogues, et de les affecter individuellement à chaque point de vente ou de les partager entre plusieurs points de vente. Même chose pour vos listes de clients. Par le bias de variantes, un même catalogue peut aussi être utilisé sur plusieurs canaux de vente, avec des prix et des disponibilités différentes. 
