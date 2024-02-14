@@ -32,14 +32,16 @@ Yes. Note that discounts are possible for chains of 6 locations or more. <Contac
 For chains of 6 locations or more, the monthly subscription fee is decreasing according to the following scale:
 
 - Locations 1 to 5: €35
-- Locations 6 to 50: €29
-- Locations 51 and more: €25
+- Locations 6 to 30: €30
+- Locations 31 and more: €27
 
-For example, for a chain of 12 locations, the subscription will be at the normal fee for the first 5 locations, then at the decreasing fee for the next 7.
+For example, for a chain of 12 locations, the subscription will be €35 for the first 5 locations, then €30 for the next 7.
 
 #### Dark Kitchen
 
-Dark Kitchens are locations that use multiple Uber Eats, Deliveroo, etc., accounts. The fees are as follows:
+Dark Kitchens are restaurants with multiple virtual brands. On HubRise, a Dark Kitchen is a location connected to several Uber Eats, Deliveroo, etc., accounts.
+
+The following rates apply to Dark Kitchens:
 
 - **Setup fee**: €25 per Uber Eats, Deliveroo, etc., account.
 
@@ -48,4 +50,3 @@ Dark Kitchens are locations that use multiple Uber Eats, Deliveroo, etc., accoun
   - 1,501 to 3,000 orders per month: €55
   - 3,001 to 4,500 orders per month: €75
   - And so on, with an additional €20 for every additional 1,500 orders.
-  
