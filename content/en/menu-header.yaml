@@ -11,3 +11,5 @@
   to: /blog
 - title: Help
   to: /docs
+- title: FAQs
+  to: /faqs
