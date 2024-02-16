@@ -63,7 +63,7 @@ These are typically associated with specific ref codes in your EPOS, which you c
 
 ## Order Times
 
-Just Eat provides the time when the eater expects to receive or collect the order. Just Eat Flyt Bridge sends this time to HubRise as the `expected_time` field. This time cannot be changed by the EPOS.
+For restaurant delivery orders, Just Eat provides the time the customer expects the order to be delivered. For other types of orders, it provides the time the order should be ready for pickup, either by the customer or a delivery rider. In both scenarios, this time is transmitted to HubRise as the `expected_time` field. This time cannot be changed by the EPOS.
 
 ## Customer Details
 
