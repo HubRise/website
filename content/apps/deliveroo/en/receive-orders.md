@@ -101,7 +101,7 @@ These are typically associated with specific ref codes in your EPOS. For more in
 
 ## Order Times
 
-Deliveroo provides the time when the eater expects to receive or collect the order. Deliveroo Bridge sends this time to HubRise as the `expected_time` field. This time cannot be changed by the EPOS.
+For restaurant delivery orders, Deliveroo provides the time the customer expects the order to be delivered. For other types of orders, it provides the time the order should be ready for pickup, either by the customer or a Deliveroo rider. In both scenarios, this time is transmitted to HubRise as the `expected_time` field. This time cannot be changed by the EPOS.
 
 ## Customer
 
