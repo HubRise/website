@@ -49,9 +49,9 @@ In the Deliveroo Bridge configuration page, use the following settings:
 | Service types  | Takeaway ref code                     | Same as above                                              |
 | Service types  | Send orders delivered by Deliveroo as | `collection orders`                                        |
 | Discounts      | Discount ref code                     | (leave empty)                                              |
-| Charges        | Delivery charge ref code              | (leave empty)                                              |
-| Charges        | Surcharge ref code                    | (leave empty)                                              |
-| Charges        | Bag fee ref code                      | (leave empty)                                              |
+| Charges        | Delivery charge ref code              | `delivery`                                                 |
+| Charges        | Surcharge ref code                    | `service`                                                  |
+| Charges        | Bag fee ref code                      | `service`                                                  |
 | Payments       | Online payment ref code               | (leave empty)                                              |
 | Payments       | Cash payment ref code                 | (leave empty)                                              |
 | Customers      | Duplicate phone access code in [...]  | Tick this box                                              |
@@ -79,8 +79,8 @@ In the Just Eat Takeaway Bridge configuration page, use the following settings:
 | Service types  | Takeaway ref code                        | Same as above                                              |
 | Service types  | Send orders delivered by the platform as | `collection orders`                                        |
 | Discounts      | Discount ref code                        | (leave empty)                                              |
-| Charges        | Delivery charge ref code                 | (leave empty)                                              |
-| Charges        | Service fee ref code                     | (leave empty)                                              |
+| Charges        | Delivery charge ref code                 | `delivery`                                                 |
+| Charges        | Service fee ref code                     | `service`                                                  |
 | Payments       | Online payment ref code                  | (leave empty)                                              |
 | Payments       | Cash payment ref code                    | (leave empty)                                              |
 
@@ -98,11 +98,11 @@ In the Just Eat Flyt Bridge configuration page, use the following settings:
 | Service types  | Takeaway ref code                        | Same as above                                              |
 | Service types  | Send orders delivered by the platform as | `collection orders`                                        |
 | Discounts      | Discount ref code                        | (leave empty)                                              |
-| Charges        | Delivery charge ref code                 | (leave empty)                                              |
-| Charges        | Service charge ref code                  | (leave empty)                                              |
-| Charges        | Bag fee ref code                         | (leave empty)                                              |
-| Charges        | Driver tip ref code                      | (leave empty)                                              |
-| Charges        | Other charge ref code                    | (leave empty)                                              |
+| Charges        | Delivery charge ref code                 | `delivery`                                                 |
+| Charges        | Service charge ref code                  | `service`                                                  |
+| Charges        | Bag fee ref code                         | `service`                                                  |
+| Charges        | Driver tip ref code                      | `service`                                                  |
+| Charges        | Other charge ref code                    | `service`                                                  |
 | Payments       | Online payment ref code                  | (leave empty)                                              |
 | Payments       | Cash payment ref code                    | (leave empty)                                              |
 | Customers      | Duplicate phone access code in [...]     | Tick this box                                              |
@@ -123,9 +123,9 @@ In the Uber Eats Bridge configuration page, use the following settings:
 | Service types  | Send orders delivered by Uber Eats as | `collection orders`                                        |
 | Special items  | Disposable items ref code             | Create a product in MyOrderBox and use its ref code. (\*)  |
 | Discounts      | Discount ref code                     | (leave empty)                                              |
-| Charges        | Delivery charge ref code              | (leave empty)                                              |
-| Charges        | Small order fee ref code              | (leave empty)                                              |
-| Charges        | Tip ref code                          | (leave empty)                                              |
+| Charges        | Delivery charge ref code              | `delivery`                                                 |
+| Charges        | Small order fee ref code              | `service`                                                  |
+| Charges        | Tip ref code                          | `service`                                                  |
 | Payments       | Online payment ref code               | (leave empty)                                              |
 | Payments       | Cash payment ref code                 | (leave empty)                                              |
 | Customers      | Duplicate phone access code in [...]  | Tick this box                                              |
