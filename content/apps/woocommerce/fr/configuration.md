@@ -9,11 +9,16 @@ meta:
 ---
 
 La page de configuration permet de personnaliser le comportement de WooCommerce Bridge.
-Elle est divisée en plusieurs sections pour faciliter la navigation.
 
-![Page de configuration de WooCommerce Bridge](./images/016-woocommerce-configuration-1.png)
+***
+
+**REMARQUE IMPORTANTE :** En raison de sa nature très personnalisable, la configuration de WooCommerce Bridge nécessite un certain niveau de connaissances techniques. Si vous n'êtes pas à l'aise avec cette configuration, passez quelques commandes de test, avec différents modes de paiement, et contactez-nous à support\@hubrise.com, en mentionnant le logiciel de caisse que vous utilisez. Nous serons ravis de vous aider !
+
+***
 
 ## Langue
+
+![Page de configuration WooCommerce Bridge, langue](./images/016-woocommerce-configuration-language.png)
 
 Choisissez la langue à utiliser pour les éléments génériques tels que `Delivery charge` (Frais de livraison). Ces noms peuvent apparaître dans votre logiciel de caisse et sur les reçus des clients.
 
@@ -23,11 +28,13 @@ La section **Commandes** permet de personnaliser la façon dont les commandes Wo
 
 ### Statuts de commande
 
----
+![WooCommerce Bridge configuration page, order statuses](./images/016-woocommerce-configuration-order-statuses.png)
+
+***
 
 **REMARQUE IMPORTANTE :** Dans cette section, nous mettons en majuscule la première lettre des statuts WooCommerce pour les distinguer plus facilement des noms de statuts HubRise. Par exemple, `Processing` (En cours de traitement) est un statut WooCommerce, tandis que `accepted` est un statut HubRise.
 
----
+***
 
 Selon le type de paiement, les nouvelles commandes WooCommerce sont créées avec des statuts différents :
 
@@ -44,34 +51,46 @@ Par exemple, vous pouvez choisir d'indiquer que les commandes sont `Completed` (
 
 ### Types de service
 
+![WooCommerce Bridge configuration page, service types](./images/016-woocommerce-configuration-service-types.png)
+
 Choisissez si vous souhaitez recevoir les informations sur le type de service depuis les métadonnées WooCommerce.
 Votre installation WooCommerce doit pouvoir envoyer à HubRise une clé de métadonnée et jusqu'à trois valeurs correspondant à la livraison, la vente à emporter et la consommation sur place, dans cet ordre.
 
-Dans le champ **Code ref du type de service**, saisissez le code ref du service attendu par votre logiciel de caisse. Pour connaître ses exigences, reportez-vous à la documentation de votre logiciel de caisse sur la [page Apps](/apps) du site internet de HubRise.
+Dans le champ **Code ref du type de service**, saisissez le code ref du service attendu par votre logiciel de caisse. Pour connaître ses exigences, reportez-vous à la documentation de votre logiciel de caisse sur notre [page Apps](/apps).
 
-![Page de configuration de WooCommerce Bridge](./images/017-woocommerce-configuration-2.png)
+### Heure souhaitée
 
-### Heure de livraison
+![Page de configuration de WooCommerce Bridge, heure souhaitée](./images/016-woocommerce-configuration-expected-time.png)
 
-Dans le menu déroulant **Clés de métadonnées**, choisissez si vous voulez utiliser les métadonnées pour envoyer l'heure de livraison à HubRise.
+La prise en charge des heures souhaitées dans WooCommerce nécessite un plugin, car WooCommerce ne supporte pas nativement cette fonctionnalité.
 
-Selon le plugin que vous utilisez, WooCommerce peut encoder l'heure de livraison dans un ou deux champs de métadonnées.
+Si vous n'utilisez pas les heures souhaitées, laissez le menu déroulant **Clés de métadonnées** défini sur **Aucun**.
 
-Si votre plugin utilise une métadonnée, les formats pris en charge sont les suivants :
+Sinon, vous devrez choisir entre deux options pour la façon dont l'heure de la commande est encodée par votre plugin : **Une valeur contenant la date et l'heure**, ou **Deux valeurs : une pour la date, une pour l'heure**.
+
+Pour déterminer comment votre plugin encode l'heure souhaitée, passez une commande de test et examinez les logs sur la [page des commandes](/docs/data#orders). Recherchez le champ `meta_data` au niveau le plus élevé du JSON de la commande. Veillez à ne pas confondre avec les champs `meta_data` qui pourraient être imbriqués sous les éléments JSON `line_items`. Identifiez le ou les attributs dans ce champ qui contiennent la date et l'heure souhaitées. Si vous ne trouvez pas l'heure souhaitée dans le champ `meta_data`, contactez le développeur du plugin pour obtenir de l'aide.
+
+En fonction de l'option sélectionnée dans le menu déroulant **Clés de métadonnées**, un ou deux champs apparaîtront, où vous pourrez spécifier le(s) nom(s) de clé de métadonnées contenant la date et l'heure souhaitées.
+
+Si votre plugin utilise une clé de métadonnées, les formats pris en charge sont les suivants :
 
 - ISO 8601. Par exemple : `2021-07-22T12:00:30+02:00`.
 - Horodatage Unix. Par exemple : `1642422302`.
 
-Si votre plugin utilise deux métadonnées, les formats pris en charge sont les suivants :
+Si votre plugin utilise deux clés de métadonnées, les formats pris en charge sont les suivants :
 
 - La date doit être au format `dd/mm/yyyy`.
 - L'heure doit être au format `hh:mm`.
 
 ### Autres métadonnées de commande
 
+![WooCommerce Bridge configuration page, misc order metadata](./images/016-woocommerce-configuration-misc-order-metadata.png)
+
 Dans cette section, vous pouvez spécifier la clé de métadonnée que WooCommerce utilise pour les notes de préparation du client au niveau de la commande.
 
 ### Métadonnées des articles de la commande {#order-item-metadata}
+
+![WooCommerce Bridge configuration page, item metadata](./images/016-woocommerce-configuration-item-metadata.png)
 
 WooCommerce encode les informations sur les articles sous forme de métadonnées, qui peuvent être prolongées par divers plugins.
 
@@ -85,20 +104,23 @@ Dans chaque champ, vous pouvez indiquer plusieurs clés séparées par une virgu
 
 ### Remises
 
+![WooCommerce Bridge configuration page, discounts](./images/016-woocommerce-configuration-discounts.png)
+
 Le **Code ref remise** est le code ref associé aux remises WooCommerce dans votre logiciel de caisse.
 Pour savoir comment gérer les remises dans celui-ci, reportez-vous à sa documentation sur la [page Apps](/apps) du site internet de HubRise.
 
 ### Frais
+
+![WooCommerce Bridge configuration page, charges](./images/016-woocommerce-configuration-charges.png)
 
 Le **Code ref frais de livraison** est le code ref associé aux frais de livraison WooCommerce dans votre logiciel de caisse.
 Pour vérifier, référez-vous à la documentation de votre logiciel de caisse sur la [page Apps](/apps) du site internet de HubRise.
 
 ### Paiements
 
-Chaque méthode de paiement que vous prenez en charge sur WooCommerce est identifiée par un ID standard et non configurable.
+![Page de configuration de WooCommerce Bridge, paiements](./images/016-woocommerce-configuration-payments.png)
 
-Dans la section **Paiements**, spécifiez l'ID WooCommerce et le code ref des méthodes de paiement (jusqu'à 15), ce qui permet leur analyse correcte dans vos commandes.
-Pour connaître les codes ref requis par votre logiciel de caisse, consultez sa documentation sur la [page Apps](/apps) du site internet de HubRise.
+La section **Paiements** vous permet de spécifier l'ID WooCommerce et le code ref correspondant pour jusqu'à 15 modes de paiement.
 
 Voici des exemples d'ID de méthodes de paiement WooCommerce :
 
@@ -113,9 +135,13 @@ Pour trouver l'ID WooCommerce d'autres méthodes de paiement, suivez ces étapes
 2. Cliquez sur le nom de la méthode de paiement pour afficher ses informations détaillées.
 3. Sur la page qui s'affiche, notez dans l'URL la valeur située après la clé `section=`. Par exemple, si l'URL de la page est `https://mywoocommercestore.com/wp-admin/admin.php?page=wc-settings&tab=checkout&section=cod`, l'ID de la méthode de paiement est `cod`.
 
+Pour trouver les codes ref à utiliser, reportez-vous à la documentation de votre logiciel de caisse sur notre [page Apps](/apps).
+
 ### Multisite
 
-Si vous prenez en charge plusieurs boutiques du même site internet WooCommerce, vous devez configurer la section **Multisites**.
+![Page de configuration de WooCommerce Bridge, multisite](./images/016-woocommerce-configuration-multi-site.png)
+
+Configurez cette section si vous prenez en charge plusieurs points de vente sur le même site internet WooCommerce.
 
 Chaque point de vente doit être connecté à son propre WooCommerce Bridge et identifié par une valeur de métadonnée unique incluse dans la requête de commande envoyée à HubRise. Les commandes ne sont transmises qu'au point de vente dont la valeur configurée correspond.
 
@@ -125,19 +151,21 @@ Dans le champ **Valeur(s) pour ce point de vente**, indiquez la valeur associée
 
 ## Clients
 
+![WooCommerce Bridge configuration page, customers](./images/016-woocommerce-configuration-customers.png)
+
 Dans la section **Clients**, vous pouvez personnaliser la façon dont WooCommerce envoie les données clients à HubRise. Par défaut, les données client utilisent l'adresse de livraison, ou de l'adresse de facturation si l'adresse de livraison n'est pas renseignée.
 
 Cochez la case **Toujours utiliser l'adresse de facturation** pour que l'adresse de facturation soit utilisée même si l'adresse de livraison est renseignée.
 
 Si vous utilisez des plugins qui stockent les informations clients dans les métadonnées, utilisez les champs **Clé de (...)** pour associer vos clés de métadonnées aux champs clients dans HubRise. Pour vous aider à identifier les bonnes clés de métadonnées, passez quelques commandes de test depuis votre boutique WooCommerce et consultez les logs des commandes dans l'onglet **Dernières opérations**.
 
-![Page de configuration de WooCommerce Bridge](./images/018-woocommerce-configuration-3.png)
-
 ## Catalogue {#catalog}
+
+![WooCommerce Bridge configuration page, catalog](./images/016-woocommerce-configuration-catalog.png)
 
 Dans la section **Catalogue**, vous pouvez personnaliser la façon dont vous envoyez le catalogue HubRise à WooCommerce.
 
-Si votre catalogue utilise des variantes, sélectionnez la variante de catalogue que vous souhaitez envoyer à WooCommerce dans le menu déroulant **Variante**.
+Si votre catalogue utilise des variantes, sélectionnez la variante de catalogue que vous souhaitez envoyer à WooCommerce dans le menu déroulant **Variante**. Le menu sera masqué si vous n'avez pas de variantes.
 
 Pour mettre à jour automatiquement vos produits WooCommerce à chaque mise à jour de votre catalogue HubRise, cochez la case **Activer l'envoi automatique du catalogue**.
 
@@ -147,9 +175,9 @@ Pour mettre à jour le prix des produits existants, cochez la case **Mettre à j
 Par défaut, WooCommerce Bridge convertit les SKUs HubRise en attributs de produits dans WooCommerce avec le nom `Taille`.
 Pour utiliser un nom différent pour vos attributs, par exemple `Couleur`, saisissez la valeur souhaitée dans le champ **Nom de l'attribut pour les SKUs**.
 
-![Page de configuration de WooCommerce Bridge](./images/019-woocommerce-configuration-4.png)
-
 ## Inventaire
+
+![WooCommerce Bridge configuration page, inventory](./images/016-woocommerce-configuration-inventory.png)
 
 Dans la section **Inventaire**, vous pouvez activer la mise à jour automatique des compteurs d'inventaire WooCommerce lorsque l'inventaire HubRise est modifié.
 Pour activer cette fonctionnalité, cochez la case **Activer l'envoi automatique de l'inventaire**.
@@ -162,10 +190,10 @@ Pour enregistrer la configuration, cliquez sur **Enregistrer** en haut de la pag
 
 Si vous avez besoin de réinitialiser la configuration, cliquez sur **Réinitialiser la configuration** en bas de la page.
 
----
+***
 
 **REMARQUE IMPORTANTE** : La réinitialisation de la configuration déconnectera instantanément le bridge de WooCommerce.
 
----
+***
 
 La réinitialisation de la configuration ne supprime pas les logs des opérations affichés sur la page principale.
