@@ -10,9 +10,9 @@ meta:
 
 The configuration page allows you to customise the behaviour of PrestaShop Bridge based on your preferences. The settings are divided into different sections for an easier navigation.
 
-![PrestaShop Bridge configuration page](./images/005-prestashop-configuration-page.png)
-
 ## Language
+
+![PrestaShop Bridge configuration page, language](./images/008-prestashop-configuration-language.png)
 
 Choose the language to use for generic items such as `Delivery charge`.
 These names may appear in customer receipts.
@@ -21,37 +21,57 @@ These names may appear in customer receipts.
 
 ### Order Statuses {#order-statuses}
 
+![PrestaShop Bridge configuration page, order statuses](./images/009-prestashop-configuration-order-statuses.png)
+
 In this section, you can customise how to map order status changes in HubRise back to PrestaShop.
 To ignore an order status change in HubRise, select **Do nothing**.
 
 ### Service Types {#service-types}
 
+![PrestaShop Bridge configuration page, service types](./images/010-prestashop-configuration-service-types.png)
+
 The carriers you define in PrestaShop might require the corresponding ref code entry. Refer to your EPOS documentation on the HubRise website to verify.
 
 ### Special Items
 
+![PrestaShop Bridge configuration page, special items](./images/011-prestashop-configuration-special-items.png)
+
 This section lets you specify the ref code applied to gift items.
 
 ### Discounts
+
+![PrestaShop Bridge configuration page, discounts](./images/012-prestashop-configuration-discounts.png)
 
 This section lets you specify the discount ref code applied to your products, in case you have active discount rules in your PrestaShop back-office.
 Refer to your EPOS documentation on the HubRise website to see how to obtain the corresponding ref code.
 
 ### Charges
 
+![PrestaShop Bridge configuration page, charges](./images/013-prestashop-configuration-charges.png)
+
 If charges apply, a ref code might be required. Refer to your EPOS documentation on the HubRise website to verify.
 
 In this section, you can specify the ref code for delivery charges, and for wrapping fees.
 
+### Expected Time
+
+![PrestaShop Bridge configuration page, expected time](./images/014-prestashop-configuration-expected-time.png)
+
 ### Payments
+
+![PrestaShop Bridge configuration page, payments](./images/015-prestashop-configuration-payments.png)
 
 PrestaShop customers can pay for their order either online or by cash on delivery, depending on the modules you install in your PrestaShop back-office. Online payments include payments by check, bank wire, or other online payment platforms like PayPal.
 
 This section of the configuration page allows you to specify the ref codes for online and cash payments. Refer to your EPOS documentation on the HubRise website to verify the correct codes to use.
 
+### Multi-Site
+
+![PrestaShop Bridge configuration page, multi-site](./images/016-prestashop-configuration-multi-site.png)
+
 ## Catalog
 
-![PrestaShop Bridge configuration page, Catalog section](./images/006-2x-configuration-catalog.png)
+![PrestaShop Bridge configuration page, catalog](./images/017-prestashop-configuration-catalog.png)
 
 ### Catalog Variant to Push
 
@@ -66,6 +86,8 @@ Select the **Enable automatic catalog push** checkbox to synchronise your HubRis
 Only new products added to the HubRise catalog will be sent to PrestaShop. Any existing products within PrestaShop will remain unchanged.
 
 ## Inventory
+
+![PrestaShop Bridge configuration page, inventory](./images/018-prestashop-configuration-inventory.png)
 
 Through inventory synchronisation, products that have a stock quantity of zero can be hidden on your PrestaShop website.
 
