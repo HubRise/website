@@ -10,7 +10,7 @@ meta:
 
 ---
 
-**REMARQUE IMPORTANTE** : Cette page concerne les sites de commande en ligne en marque blanche. Pour les plateformes de commande et de livraison de repas, telles que Deliveroo, Uber Eats et Just Eat, consultez [Plateformes de commande de repas](/apps/mealenium/food-ordering-platforms).
+**REMARQUE IMPORTANTE :** Cette page concerne les sites de commande en ligne en marque blanche. Pour les plateformes de commande et de livraison de repas, telles que Deliveroo, Uber Eats et Just Eat, consultez [Plateformes de commande de repas](/apps/mealenium/food-ordering-platforms).
 
 ---
 
