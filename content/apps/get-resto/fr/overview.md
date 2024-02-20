@@ -4,8 +4,8 @@ path_override: "/"
 position: 1
 layout: documentation
 meta:
-  title: Présentation générale | My Lemonade | HubRise
-  description: Présentation générale de My Lemonade, les raisons de connecter votre solution de commande à table à HubRise et fonctionnalités de l'intégration avec HubRise.
+  title: Présentation générale | Get Resto | HubRise
+  description: Présentation générale de Get Resto, les raisons de connecter votre solution de commande à table ou en ligne à HubRise et fonctionnalités de l'intégration avec HubRise.
 gallery:
   - __gallery-002.png
   - __gallery-003.png
@@ -13,9 +13,9 @@ gallery:
 app_info:
   category: Commande en ligne
   availability: France
-  price_range: À partir de 9 € / mois
-  website: https://www.mylemonade.fr
-  contact: contact@mylemonade.app
+  price_range: 
+  website: https://www.get-resto.com
+  contact:
 ---
 
 ## Description
