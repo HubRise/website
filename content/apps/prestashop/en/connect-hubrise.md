@@ -30,6 +30,8 @@ To install the HubRise module, follow these steps:
 4. On the upload page, to install the module, drag the ZIP file of the module that you just downloaded. Then, click **Configure**.
 5. In the **HubRise** module page, take note of the **PrestaShop API key** value that you will need to activate PrestaShop Bridge in the following step.
 
+For more information about the configuration of the HubRise module, see [HubRise Module Configuration](/apps/prestashop/configuration#hubrise-module-configuration).
+
 ## 2. Connect PrestaShop Bridge
 
 To can connect PrestaShop to HubRise, follow these steps.

@@ -66,7 +66,7 @@ Support for expected times in WooCommerce requires a plugin, as WooCommerce does
 
 If you do not use expected times, leave the **Metadata keys** drop-down menu set to **None**.
 
-Otherwise, you will have to decide between two options for how the order time is encoded by your plugin: **One value containing both date and time**, or **Two values: one for date, one for time**.
+Otherwise, you will have to decide between two options for how expected times are encoded by your plugin: **One value containing both date and time**, or **Two values: one for date, one for time**.
 
 To determine how your plugin encodes the expected time, place a test order and review the logs on the [Orders page](/docs/data#orders). Look for the `meta_data` field at the topmost JSON level of the order. This is not to be confused with `meta_data` fields that might be nested under `line_items` JSON elements. Identify the attribute(s) within this field that contains the expected date and time. If you cannot find the expected time in the `meta_data` field, contact the plugin developer for support.
 
