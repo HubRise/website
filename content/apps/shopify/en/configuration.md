@@ -40,7 +40,7 @@ Support for expected times in Shopify requires a plugin, as Shopify does not nat
 
 If you do not use expected times, leave the **Values to use** drop-down menu set to **None**.
 
-Otherwise, you will have to decide between two options for how the order time is encoded by your plugin: **One value containing both date and time**, or **Two values: one for date, one for time**.
+Otherwise, you will have to decide between two options for how expected times are encoded by your plugin: **One value containing both date and time**, or **Two values: one for date, one for time**.
 
 To determine how your plugin encodes the expected time, place a test order and review the logs in the [Orders page](/docs/data#orders). Look for the `note_attributes` field in the order JSON, and identify the attribute(s) that contains the expected date and time. If you cannot find the expected time in the `note_attributes` field, contact the plugin developer for support.
 
@@ -84,11 +84,17 @@ In the **Value(s) for this location** field, specify the value associated with t
 
 ![Shopify Bridge configuration page, Catalog section](./images/015-shopify-configuration-catalog.png)
 
-The **Catalog** section lets you customise how you send the HubRise catalog to Shopify.
+### Catalog Variant to Push
 
-If you have variants in your catalog, select which catalog variant you want to push to Shopify from the **Variant** drop-down menu. The menu will be hidden if you have no variants.
+Catalog variants give you the flexibility to disable specific items or adjust prices for your Shopify website.
+
+If your catalog includes variants, you have the option to select which one to use. When **(none)** is selected, the default items along with their standard prices are used. If your catalog has no variants, the menu will be hidden and a message will be displayed.
+
+### Automatic Catalog Push
 
 If you want to automatically update your Shopify products every time your HubRise catalog is updated, tick the **Enable automatic catalog push** checkbox.
+
+### Synced Data with Shopify
 
 By default, when you push a catalog into Shopify, Shopify Bridge creates new products in Shopify but does not update existing products. To update prices of existing products, tick the **Update prices of existing products** checkbox.
 
