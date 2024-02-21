@@ -34,7 +34,7 @@ In the **Service type ref code** field, enter the ref code for the service type 
 
 ### Expected Time
 
-![Shopify Bridge configuration page, order time](./images/014-shopify-configuration-order-time.png)
+![Shopify Bridge configuration page, expected time](./images/014-shopify-configuration-expected-time.png)
 
 Support for expected times in Shopify requires a plugin, as Shopify does not natively support this feature.
 
