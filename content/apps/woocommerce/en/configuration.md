@@ -163,14 +163,22 @@ If you use plugins that store customer information in metadata, use the **Key fo
 
 ![WooCommerce Bridge configuration page, catalog](./images/016-woocommerce-configuration-catalog.png)
 
-The **Catalog** section lets you customise how you send the HubRise catalog to WooCommerce.
+### Catalog Variant to Push
 
-If you have variants in your catalog, select which catalog variant you want to push to WooCommerce from the **Variant** drop-down menu. The menu will be hidden if you have no variants.
+Catalog variants give you the flexibility to disable specific items or adjust prices for your WooCommerce website.
+
+If your catalog includes variants, you have the option to select which one to use. When **(none)** is selected, the default items along with their standard prices are used. If your catalog has no variants, the menu will be hidden and a message will be displayed.
+
+### Automatic Catalog Push
 
 If you want to automatically update your WooCommerce products every time your HubRise catalog is updated, tick the **Enable automatic catalog push** checkbox.
 
+### Synced Data with WooCommerce
+
 By default, when you push a catalog into WooCommerce, WooCommerce Bridge creates new products in WooCommerce but does not update existing products.
 To update prices of existing products, tick the **Update prices of existing products** checkbox.
+
+### SKUs
 
 By default, WooCommerce Bridge converts HubRise SKUs to product attributes in WooCommerce with the label `"Size"`.
 To use a different label for your attributes, for example `"Colour"`, enter the value in the **Attribute name for SKUs** field.
