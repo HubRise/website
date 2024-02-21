@@ -40,4 +40,4 @@ Les articles faisant partie d'une promotion sont importés avec le prix incluant
 
 Les options des articles, comme les suppléments, ne sont pas reçues dans Melba. Une mise à jour est néanmoins prévue pour permettre l'importation des options.
 
-Le mode de paiement et le type de service ne sont pas importés dans Melba.
+La méthode de paiement et le type de service ne sont pas importés dans Melba.

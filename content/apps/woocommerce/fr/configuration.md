@@ -10,11 +10,11 @@ meta:
 
 La page de configuration permet de personnaliser le comportement de WooCommerce Bridge.
 
-***
+---
 
-**REMARQUE IMPORTANTE :** En raison de sa nature très personnalisable, la configuration de WooCommerce Bridge nécessite un certain niveau de connaissances techniques. Si vous n'êtes pas à l'aise avec cette configuration, passez quelques commandes de test, avec différents modes de paiement, et contactez-nous à support\@hubrise.com, en mentionnant le logiciel de caisse que vous utilisez. Nous serons ravis de vous aider !
+**REMARQUE IMPORTANTE :** En raison de sa nature très personnalisable, la configuration de WooCommerce Bridge nécessite un certain niveau de connaissances techniques. Si vous n'êtes pas à l'aise avec cette configuration, passez quelques commandes de test, avec différentes méthodes de paiement, et contactez-nous à support\@hubrise.com, en mentionnant le logiciel de caisse que vous utilisez. Nous serons ravis de vous aider !
 
-***
+---
 
 ## Langue
 
@@ -28,13 +28,13 @@ La section **Commandes** permet de personnaliser la façon dont les commandes Wo
 
 ### Statuts de commande
 
-![WooCommerce Bridge configuration page, order statuses](./images/016-woocommerce-configuration-order-statuses.png)
+![Page de configuration de WooCommerce Bridge, statuts de commande](./images/016-woocommerce-configuration-order-statuses.png)
 
-***
+---
 
 **REMARQUE IMPORTANTE :** Dans cette section, nous mettons en majuscule la première lettre des statuts WooCommerce pour les distinguer plus facilement des noms de statuts HubRise. Par exemple, `Processing` (En cours de traitement) est un statut WooCommerce, tandis que `accepted` est un statut HubRise.
 
-***
+---
 
 Selon le type de paiement, les nouvelles commandes WooCommerce sont créées avec des statuts différents :
 
@@ -51,7 +51,7 @@ Par exemple, vous pouvez choisir d'indiquer que les commandes sont `Completed` (
 
 ### Types de service
 
-![WooCommerce Bridge configuration page, service types](./images/016-woocommerce-configuration-service-types.png)
+![Page de configuration de WooCommerce Bridge, types de service](./images/016-woocommerce-configuration-service-types.png)
 
 Choisissez si vous souhaitez recevoir les informations sur le type de service depuis les métadonnées WooCommerce.
 Votre installation WooCommerce doit pouvoir envoyer à HubRise une clé de métadonnée et jusqu'à trois valeurs correspondant à la livraison, la vente à emporter et la consommation sur place, dans cet ordre.
@@ -84,13 +84,13 @@ Si votre plugin utilise deux clés de métadonnées, les formats pris en charge 
 
 ### Autres métadonnées de commande
 
-![WooCommerce Bridge configuration page, misc order metadata](./images/016-woocommerce-configuration-misc-order-metadata.png)
+![Page de configuration de WooCommerce Bridge, métadonnées diverses de commande](./images/016-woocommerce-configuration-misc-order-metadata.png)
 
 Dans cette section, vous pouvez spécifier la clé de métadonnée que WooCommerce utilise pour les notes de préparation du client au niveau de la commande.
 
 ### Métadonnées des articles de la commande {#order-item-metadata}
 
-![WooCommerce Bridge configuration page, item metadata](./images/016-woocommerce-configuration-item-metadata.png)
+![Page de configuration de WooCommerce Bridge, métadonnées d'articles](./images/016-woocommerce-configuration-item-metadata.png)
 
 WooCommerce encode les informations sur les articles sous forme de métadonnées, qui peuvent être prolongées par divers plugins.
 
@@ -104,14 +104,14 @@ Dans chaque champ, vous pouvez indiquer plusieurs clés séparées par une virgu
 
 ### Remises
 
-![WooCommerce Bridge configuration page, discounts](./images/016-woocommerce-configuration-discounts.png)
+![Page de configuration de WooCommerce Bridge, remises](./images/016-woocommerce-configuration-discounts.png)
 
 Le **Code ref remise** est le code ref associé aux remises WooCommerce dans votre logiciel de caisse.
 Pour savoir comment gérer les remises dans celui-ci, reportez-vous à sa documentation sur la [page Apps](/apps) du site internet de HubRise.
 
 ### Frais
 
-![WooCommerce Bridge configuration page, charges](./images/016-woocommerce-configuration-charges.png)
+![Page de configuration de WooCommerce Bridge, frais](./images/016-woocommerce-configuration-charges.png)
 
 Le **Code ref frais de livraison** est le code ref associé aux frais de livraison WooCommerce dans votre logiciel de caisse.
 Pour vérifier, référez-vous à la documentation de votre logiciel de caisse sur la [page Apps](/apps) du site internet de HubRise.
@@ -120,7 +120,7 @@ Pour vérifier, référez-vous à la documentation de votre logiciel de caisse s
 
 ![Page de configuration de WooCommerce Bridge, paiements](./images/016-woocommerce-configuration-payments.png)
 
-La section **Paiements** vous permet de spécifier l'ID WooCommerce et le code ref correspondant pour jusqu'à 15 modes de paiement.
+La section **Paiements** vous permet de spécifier l'ID WooCommerce et le code ref correspondant pour jusqu'à 15 méthodes de paiement.
 
 Voici des exemples d'ID de méthodes de paiement WooCommerce :
 
@@ -151,7 +151,7 @@ Dans le champ **Valeur(s) pour ce point de vente**, indiquez la valeur associée
 
 ## Clients
 
-![WooCommerce Bridge configuration page, customers](./images/016-woocommerce-configuration-customers.png)
+![Page de configuration de WooCommerce Bridge, clients](./images/016-woocommerce-configuration-customers.png)
 
 Dans la section **Clients**, vous pouvez personnaliser la façon dont WooCommerce envoie les données clients à HubRise. Par défaut, les données client utilisent l'adresse de livraison, ou de l'adresse de facturation si l'adresse de livraison n'est pas renseignée.
 
@@ -161,16 +161,24 @@ Si vous utilisez des plugins qui stockent les informations clients dans les mét
 
 ## Catalogue {#catalog}
 
-![WooCommerce Bridge configuration page, catalog](./images/016-woocommerce-configuration-catalog.png)
+![Page de configuration de WooCommerce Bridge, catalogue](./images/016-woocommerce-configuration-catalog.png)
 
-Dans la section **Catalogue**, vous pouvez personnaliser la façon dont vous envoyez le catalogue HubRise à WooCommerce.
+### Variante de catalogue à envoyer
 
-Si votre catalogue utilise des variantes, sélectionnez la variante de catalogue que vous souhaitez envoyer à WooCommerce dans le menu déroulant **Variante**. Le menu sera masqué si vous n'avez pas de variantes.
+Les variantes de catalogue vous donnent la flexibilité de désactiver des articles et d'ajuster les prix spécifiquement pour votre site internet WooCommerce.
+
+Si votre catalogue comprend des variantes, vous pouvez sélectionner celle que vous souhaitez utiliser. Lorsque **(aucun)** est sélectionné, les articles par défaut ainsi que leurs prix standards sont utilisés. Si votre catalogue n'a pas de variantes, le menu sera masqué et un message s'affichera.
+
+### Envoi automatique du catalogue
 
 Pour mettre à jour automatiquement vos produits WooCommerce à chaque mise à jour de votre catalogue HubRise, cochez la case **Activer l'envoi automatique du catalogue**.
 
+### Données synchronisées avec WooCommerce
+
 Par défaut, lorsque vous envoyez un catalogue dans WooCommerce, WooCommerce Bridge crée de nouveaux produits dans WooCommerce, mais ne met pas à jour les produits existants.
 Pour mettre à jour le prix des produits existants, cochez la case **Mettre à jour le prix des produits existants**.
+
+### SKUs
 
 Par défaut, WooCommerce Bridge convertit les SKUs HubRise en attributs de produits dans WooCommerce avec le nom `Taille`.
 Pour utiliser un nom différent pour vos attributs, par exemple `Couleur`, saisissez la valeur souhaitée dans le champ **Nom de l'attribut pour les SKUs**.
@@ -190,10 +198,10 @@ Pour enregistrer la configuration, cliquez sur **Enregistrer** en haut de la pag
 
 Si vous avez besoin de réinitialiser la configuration, cliquez sur **Réinitialiser la configuration** en bas de la page.
 
-***
+---
 
 **REMARQUE IMPORTANTE** : La réinitialisation de la configuration déconnectera instantanément le bridge de WooCommerce.
 
-***
+---
 
 La réinitialisation de la configuration ne supprime pas les logs des opérations affichés sur la page principale.

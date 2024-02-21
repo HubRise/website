@@ -18,12 +18,12 @@ Mealenium n'utilise pas de codes ref spécifiques pour identifier les commandes 
 
 Dans la page de configuration de votre solution de commande en ligne, utilisez les paramètres suivants.
 
-| Section          | Nom                                 | Code ref       |
-| ---------------- | ----------------------------------- | -------------- |
-| Types de service | Livraison                           | (laisser vide) |
-| Types de service | A emporter                          | (laisser vide) |
-| Types de service | Sur place                           | (laisser vide) |
-| Paiements        | Mode de paiement en ligne générique | (laisser vide) |
-| Frais            | Frais de service                    | (laisser vide) |
-| Frais            | Frais de livraison                  | (laisser vide) |
-| Remises          | Remise générique                    | (laisser vide) |
+| Section          | Nom                                    | Code ref       |
+| ---------------- | -------------------------------------- | -------------- |
+| Types de service | Livraison                              | (laisser vide) |
+| Types de service | A emporter                             | (laisser vide) |
+| Types de service | Sur place                              | (laisser vide) |
+| Paiements        | Méthode de paiement en ligne générique | (laisser vide) |
+| Frais            | Frais de service                       | (laisser vide) |
+| Frais            | Frais de livraison                     | (laisser vide) |
+| Remises          | Remise générique                       | (laisser vide) |
