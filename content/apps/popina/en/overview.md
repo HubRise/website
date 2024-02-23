@@ -11,7 +11,7 @@ gallery:
 app_info:
   category: Point of Sales
   availability: France, Switzerland, Spain
-  price_range: From 39€ / month
+  price_range: From €39 / month
   website: https://www.popina.com/fr
   contact: "+33 1 76 36 13 64 / contact@popina.com"
 ---

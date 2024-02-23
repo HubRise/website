@@ -66,7 +66,7 @@ Depuis la page des actions, vous pouvez envoyer le catalogue vers WooCommerce. P
 
 Pour accéder à la page de configuration de WooCommerce Bridge, cliquez sur **Configuration** en haut de l'écran. Cette page vous permet de personnaliser le comportement de WooCommerce Bridge. Pour plus de détails, voir [Configuration](/apps/woocommerce/configuration).
 
-![Page de configuration WooCommerce Bridge](./images/016-woocommerce-configuration-1.png)
+![Page de configuration WooCommerce Bridge](./images/016-woocommerce-configuration.png)
 
 ## Langue et navigation
 
