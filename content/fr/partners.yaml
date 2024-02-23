@@ -1,0 +1,49 @@
+meta:
+  title: Partners | HubRise
+  description: Find out what other businesses and individuals are saying about their HubRise experience.
+content:
+  title: Rejoignez notre écosystème
+  description: Trouver un expert. Si vous souhaitez créer une intégration personnalisée avec HubRise, nous avons des développeurs, des agences et des consultants qui l'ont déjà fait et qui peuvent vous aider.
+  partners:
+    - id: 1
+      name: TYREX
+      site_url: http://ty-rex.fr
+      image_name: tyrex.png
+      descriptions:
+        - "Développer web full-stack front/back end, graphiste et intégrateur web. Vincent utilise du HTML5, CSS3, BOOTSTRAP, LESS, et développe en PHP5 (objet) / MySQL. Il créé des sites clé en main sur-mesure ou via WordPress, avec interface d'administration"
+        - "Création d'une passerelle PHP couplée avec une intégration HTML / SASS permettant de faire communiquer un site internet (eg: Yoji Su) avec un système de caisse (eg: Nestor) via votre compte Hubrise : catalogue de produits, listing des clients et gestion des"
+    - id: 2
+      name: Crystal Mind
+      site_url: https://www.crystal-mind.com
+      image_name: crystal-mind.png
+      descriptions:
+        - "Développer web full-stack front/back end, graphiste et intégrateur web. Vincent utilise du HTML5, CSS3, BOOTSTRAP, LESS, et développe en PHP5 (objet) / MySQL. Il créé des sites clé en main sur-mesure ou via WordPress, avec interface d'administration"
+        - "Création d'une passerelle PHP couplée avec une intégration HTML / SASS permettant de faire communiquer un site internet (eg: Yoji Su) avec un système de caisse (eg: Nestor) via votre compte Hubrise : catalogue de produits, listing des clients et gestion des"
+    - id: 3
+      name: Slowey Systems
+      site_url: https://www.sloweysys.com
+      image_name: slowey-systems.png
+      descriptions:
+        - "Développer web full-stack front/back end, graphiste et intégrateur web. Vincent utilise du HTML5, CSS3, BOOTSTRAP, LESS, et développe en PHP5 (objet) / MySQL. Il créé des sites clé en main sur-mesure ou via WordPress, avec interface d'administration"
+        - "Création d'une passerelle PHP couplée avec une intégration HTML / SASS permettant de faire communiquer un site internet (eg: Yoji Su) avec un système de caisse (eg: Nestor) via votre compte Hubrise : catalogue de produits, listing des clients et gestion des"
+    - id: 4
+      name: "NextSourcia"
+      site_url: "https://www.nextsourcia.com"
+      image_name: nextsourcia.png
+      descriptions:
+        - "Développer web full-stack front/back end, graphiste et intégrateur web. Vincent utilise du HTML5, CSS3, BOOTSTRAP, LESS, et développe en PHP5 (objet) / MySQL. Il créé des sites clé en main sur-mesure ou via WordPress, avec interface d'administration"
+        - "Création d'une passerelle PHP couplée avec une intégration HTML / SASS permettant de faire communiquer un site internet (eg: Yoji Su) avec un système de caisse (eg: Nestor) via votre compte Hubrise : catalogue de produits, listing des clients et gestion des"
+    - id: 5
+      name: "MyTec"
+      site_url: "https://www.mytec.it"
+      image_name: mytec.png
+      descriptions:
+        - "Développer web full-stack front/back end, graphiste et intégrateur web. Vincent utilise du HTML5, CSS3, BOOTSTRAP, LESS, et développe en PHP5 (objet) / MySQL. Il créé des sites clé en main sur-mesure ou via WordPress, avec interface d'administration"
+        - "Création d'une passerelle PHP couplée avec une intégration HTML / SASS permettant de faire communiquer un site internet (eg: Yoji Su) avec un système de caisse (eg: Nestor) via votre compte Hubrise : catalogue de produits, listing des clients et gestion des"
+    - id: 6
+      name: "ZeProgFactory"
+      site_url: "https://www.zpf.fr"
+      image_name: ze-prog-factory.png
+      descriptions:
+        - "Développer web full-stack front/back end, graphiste et intégrateur web. Vincent utilise du HTML5, CSS3, BOOTSTRAP, LESS, et développe en PHP5 (objet) / MySQL. Il créé des sites clé en main sur-mesure ou via WordPress, avec interface d'administration"
+        - "Création d'une passerelle PHP couplée avec une intégration HTML / SASS permettant de faire communiquer un site internet (eg: Yoji Su) avec un système de caisse (eg: Nestor) via votre compte Hubrise : catalogue de produits, listing des clients et gestion des"

@@ -2,7 +2,9 @@ import { AppsYaml } from "@layouts/Apps/types"
 import { DocumentationIndexYaml } from "@layouts/DocumentationIndex/types"
 import { DocumentationSimpleFrontMatter } from "@layouts/DocumentationSimple/types"
 import { FrontpageYaml } from "@layouts/Frontpage/types"
+import { PartnersYaml } from "@layouts/Partners/types"
 import { PricingYaml } from "@layouts/Pricing/types"
+import { TestimonialsYaml } from "@layouts/Testimonials/types"
 import { BlogArchives } from "@utils/BlogIndexer/types"
 import DocIndexer, { Folder } from "@utils/DocIndexer"
 import { ContentDirName, readMdFile, readYamlFile } from "@utils/files"
@@ -35,6 +37,8 @@ const staticRoutes = async (): Promise<Routes> => {
     createRoute({ href: "/faqs", language: "en", name: "faqs", layout: "documentation-simple", context: await readMdFile<DocumentationSimpleFrontMatter>("/en", "faqs") }),
     createRoute({ href: "/branding", language: "en", name: "branding", layout: "documentation-simple", context: await readMdFile<DocumentationSimpleFrontMatter>("/en", "branding") }),
     createRoute({ href: "/contributing", language: "en", name: "contributing", layout: "documentation-index", context: { yaml: await readYamlFile<DocumentationIndexYaml>("/en", "contributing") } }),
+    createRoute({ href: "/testimonials", language: "en", name: "testimonials", layout: "testimonials", context: { yaml: await readYamlFile<TestimonialsYaml>("/en", "testimonials") } }),
+    createRoute({ href: "/partners", language: "en", name: "partners", layout: "partners", context: { yaml: await readYamlFile<PartnersYaml>("/en", "partners") } }),
     createRoute({ href: "/fr", language: "fr", name: "frontpage", layout: "frontpage", context: { yaml: await readYamlFile<FrontpageYaml>("/fr", "frontpage") } }),
     createRoute({ href: "/fr/apps", language: "fr", name: "apps", layout: "apps", context: { yaml: await readYamlFile<AppsYaml>("/fr", "apps") } }),
     createRoute({ href: "/fr/tarifs", language: "fr", name: "pricing", layout: "pricing", context: { yaml: await readYamlFile<PricingYaml>("/fr", "pricing") } }),
@@ -42,6 +46,8 @@ const staticRoutes = async (): Promise<Routes> => {
     createRoute({ href: "/fr/faqs", language: "fr", name: "faqs", layout: "documentation-simple", context: await readMdFile<DocumentationSimpleFrontMatter>("/fr", "faqs") }),
     createRoute({ href: "/fr/branding", language: "fr", name: "branding", layout: "documentation-simple", context: await readMdFile<DocumentationSimpleFrontMatter>("/fr", "branding") }),
     createRoute({ href: "/fr/contributing", language: "fr", name: "contributing", layout: "documentation-index", context: { yaml: await readYamlFile<DocumentationIndexYaml>("/fr", "contributing") } }),
+    createRoute({ href: "/fr/testimonials", language: "fr", name: "testimonials", layout: "testimonials", context: { yaml: await readYamlFile<TestimonialsYaml>("/fr", "testimonials") } }),
+    createRoute({ href: "/fr/partners", language: "fr", name: "partners", layout: "partners", context: { yaml: await readYamlFile<PartnersYaml>("/fr", "partners") } }),
   ]
 }
 
