@@ -11,8 +11,7 @@ export interface TestimonialsYaml {
 }
 
 export interface Testimonial {
-  id: number
-  description: string
+  quote: string
   person_details: Array<string>
   filename: string
 }

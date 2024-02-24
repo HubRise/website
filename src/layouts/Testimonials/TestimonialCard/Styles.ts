@@ -1,23 +1,13 @@
-import Image from "next/image"
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizes, sizes } from "@utils/styles"
+import { breakpoints, colors, fontSizes, lineHeights, sizes } from "@utils/styles"
 
-export const Wrapper = styled.div`
-  background-color: ${colors.white};
-
+export const Card = styled.div`
   position: relative;
   max-width: ${sizes.maxWidth};
-  width: 100%;
-
-  margin: 0 auto;
-  margin-top: 8.75rem;
-  margin-bottom: 8.75rem;
-
-  padding-top: 135px;
-  padding-bottom: 55px;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  margin: 8.75rem auto;
+  padding: 135px 1.25rem 55px;
+  background-color: ${colors.white};
 
   @media (min-width: ${breakpoints.large}) {
     padding-left: 7.85rem;
@@ -27,33 +17,25 @@ export const Wrapper = styled.div`
   }
 `
 
-export const ImageWrapper = styled.picture`
-  width: 100%;
-  max-width: 12.06rem;
-  aspect-ratio: 1/1;
-
-  border-radius: 100%;
-
+export const Picture = styled.div`
   position: absolute;
   left: 50%;
   top: 0;
   transform: translate(-50%, -50%);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 100%;
 `
 
-export const ImagenPerson = styled(Image)`
-  width: 100%;
-  height: 100%;
-`
-
-export const Description = styled.p`
+export const Quote = styled.div`
   font-style: italic;
   font-size: ${fontSizes._16};
   text-align: center;
   color: ${colors.textLight};
+
+  &:before,
+  &:after {
+    content: "“";
+    font-weight: 700;
+  }
 `
 
 export const Separator = styled.div`
@@ -63,40 +45,23 @@ export const Separator = styled.div`
   background-color: ${colors.borderMedium};
 `
 
-export const InfoWrapper = styled.ul`
-  width: 100%;
+export const Details = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  overflow: hidden;
+  gap: 0.625rem;
 `
 
-export const InfoItem = styled.li`
-  display: flex;
-  align-items: center;
-`
-
-export const Info = styled.span`
-  position: relative;
-
-  text-align: center;
-  flex-shrink: 1;
-  flex-grow: 0;
-
+export const Detail = styled.span`
   font-size: ${fontSizes._16};
   font-weight: 600;
-  line-height: 21px;
+  line-height: ${lineHeights.compact};
   letter-spacing: 0.04em;
   white-space: nowrap;
-  overflow: hidden;
 `
 
-export const Decorator = styled.div`
-  flex-grow: 1;
-  flex-shrink: 0;
-  margin-right: 0.625rem;
-  margin-left: 0.625rem;
+export const Bullet = styled.div`
   width: 5px;
   height: 5px;
   background-color: ${colors.borderMedium};

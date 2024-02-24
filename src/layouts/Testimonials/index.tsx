@@ -3,7 +3,6 @@
 import Block from "@components/Block"
 import TestimonialCard from "@layouts/Testimonials/TestimonialCard"
 
-import { List } from "./Styles"
 import type { TestimonialsYaml } from "./types"
 
 const Testimonials = ({ yaml }: { yaml: TestimonialsYaml }) => {
@@ -18,13 +17,12 @@ const Testimonials = ({ yaml }: { yaml: TestimonialsYaml }) => {
         title={content.title}
         horizontalAlign="center"
       >
-        <span>{content.description}</span>
+        {content.description}
       </Block>
-      <List>
-        {content.testimonials.map((testimonial) => {
-          return <TestimonialCard key={testimonial.id} testimonial={testimonial} />
-        })}
-      </List>
+
+      {content.testimonials.map((testimonial, index) => (
+        <TestimonialCard key={index} testimonial={testimonial} />
+      ))}
     </>
   )
 }

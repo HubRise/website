@@ -1,45 +1,39 @@
+import Image from "next/image"
+import * as React from "react"
+
 import { Testimonial } from "@layouts/Testimonials/types"
 
-import {
-  Decorator,
-  ImageWrapper,
-  ImagenPerson,
-  Info,
-  InfoItem,
-  InfoWrapper,
-  Separator,
-  Description,
-  Wrapper,
-} from "./Styles"
+import { Picture, Details, Separator, Quote, Card, Detail, Bullet } from "./Styles"
 
 interface TestimonialCardProps {
   testimonial: Testimonial
 }
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
-  const { description, person_details, filename } = testimonial
+  const { quote, person_details, filename } = testimonial
 
   return (
-    <Wrapper>
-      <ImageWrapper>
-        <ImagenPerson
+    <Card>
+      <Picture>
+        <Image
           src={`/images/testimonials/${filename}`}
-          alt={`${person_details[0]} from ${person_details[2]}`}
+          alt={`${person_details[0]}, ${person_details[2]}`}
           width={226}
           height={226}
         />
-      </ImageWrapper>
-      <Description>{description}</Description>
+      </Picture>
+
+      <Quote>{quote}</Quote>
       <Separator />
-      <InfoWrapper>
-        {person_details.map((item, index) => (
-          <InfoItem key={item}>
-            <Info>{item}</Info>
-            {person_details[index + 1] != null ? <Decorator /> : null}
-          </InfoItem>
+      <Details>
+        {person_details.map((detail, index) => (
+          <React.Fragment key={index}>
+            <Detail>{detail}</Detail>
+            {index < person_details.length - 1 && <Bullet />}
+          </React.Fragment>
         ))}
-      </InfoWrapper>
-    </Wrapper>
+      </Details>
+    </Card>
   )
 }
 export default TestimonialCard
