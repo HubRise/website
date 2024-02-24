@@ -1,7 +1,7 @@
 import Image from "next/image"
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizes, sizes } from "@utils/styles"
+import { breakpoints, colors, fontSizes, mixin, sizes } from "@utils/styles"
 
 export const Card = styled.div`
   max-width: ${sizes.maxWidth};
@@ -10,27 +10,22 @@ export const Card = styled.div`
     margin-bottom: 5rem;
   }
   background-color: ${colors.white};
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
 
   @media (min-width: ${breakpoints.medium}) {
-    flex-direction: row;
+    grid-template-columns: 40% 60%;
   }
 `
 
 export const Logo = styled.div`
-  flex: 1 0 40%;
-  aspect-ratio: 16/9;
+  ${mixin.centerElement};
   background-color: #f7f7f7;
-  position: relative;
 `
 
 export const PartnerImage = styled(Image)`
-  object-fit: contain;
   max-width: 60%;
-  top: 50%;
-  left: 50% !important;
-  transform: translateX(-50%);
+  margin: 3rem auto;
 `
 
 export const Information = styled.div`

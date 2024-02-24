@@ -1,19 +1,19 @@
 import { Partners } from "@layouts/Partners/types"
+import { ContentImage } from "@utils/contentImage"
 
 import { Description, Logo, Title, Information, Name, PartnerImage, Website, Card } from "./Styles"
 
 interface PartnerProps {
   partner: Partners
+  image?: ContentImage
 }
 
-const Partner = ({ partner }: PartnerProps): JSX.Element => {
-  const { descriptions, name, filename, site_url } = partner
+const Partner = ({ partner, image }: PartnerProps): JSX.Element => {
+  const { descriptions, name, site_url } = partner
 
   return (
     <Card>
-      <Logo>
-        <PartnerImage src={`/images/partners/${filename}`} alt={`${name} logo`} fill={true} />
-      </Logo>
+      <Logo>{image && <PartnerImage {...image} alt={`${name} logo`} />}</Logo>
 
       <Information>
         <Title>

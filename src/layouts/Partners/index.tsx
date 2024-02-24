@@ -1,11 +1,17 @@
 "use client"
 
 import Block from "@components/Block"
+import { ContentImageMap } from "@utils/contentImage"
 
 import Partner from "./Partner"
 import type { PartnersYaml } from "./types"
 
-const Partners = ({ yaml }: { yaml: PartnersYaml }) => {
+interface PartnersProps {
+  yaml: PartnersYaml
+  imageMap: ContentImageMap
+}
+
+const Partners = ({ yaml, imageMap }: PartnersProps) => {
   const { content } = yaml
 
   return (
@@ -21,7 +27,7 @@ const Partners = ({ yaml }: { yaml: PartnersYaml }) => {
       </Block>
 
       {content.partners.map((partner, index) => (
-        <Partner key={index} partner={partner} />
+        <Partner key={index} partner={partner} image={imageMap[partner.filename]} />
       ))}
     </>
   )

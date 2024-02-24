@@ -2,10 +2,16 @@
 
 import Block from "@components/Block"
 import Testimonial from "@layouts/Testimonials/Testimonial"
+import { ContentImageMap } from "@utils/contentImage"
 
 import type { TestimonialsYaml } from "./types"
 
-const Testimonials = ({ yaml }: { yaml: TestimonialsYaml }) => {
+interface TestimonialsProps {
+  yaml: TestimonialsYaml
+  imageMap: ContentImageMap
+}
+
+const Testimonials = ({ yaml, imageMap }: TestimonialsProps) => {
   const { content } = yaml
 
   return (
@@ -21,7 +27,7 @@ const Testimonials = ({ yaml }: { yaml: TestimonialsYaml }) => {
       </Block>
 
       {content.testimonials.map((testimonial, index) => (
-        <Testimonial key={index} testimonial={testimonial} />
+        <Testimonial key={index} testimonial={testimonial} image={imageMap[testimonial.filename]} />
       ))}
     </>
   )
