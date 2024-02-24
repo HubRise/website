@@ -1,7 +1,7 @@
 "use client"
 
 import Block from "@components/Block"
-import TestimonialCard from "@layouts/Testimonials/TestimonialCard"
+import Testimonial from "@layouts/Testimonials/Testimonial"
 
 import type { TestimonialsYaml } from "./types"
 
@@ -21,7 +21,7 @@ const Testimonials = ({ yaml }: { yaml: TestimonialsYaml }) => {
       </Block>
 
       {content.testimonials.map((testimonial, index) => (
-        <TestimonialCard key={index} testimonial={testimonial} />
+        <Testimonial key={index} testimonial={testimonial} />
       ))}
     </>
   )

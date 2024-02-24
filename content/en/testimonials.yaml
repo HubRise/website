@@ -2,39 +2,39 @@ meta:
   title: Testimonials | HubRise
   description: Find out what other businesses and individuals are saying about their HubRise experience.
 content:
-  title: Why you would love working with HubRise
+  title: Why you will love working with HubRise
   description: Don't take it from us, here's what developers and customers saying
   testimonials:
     - id: 1
-      description: "“Without the integration to our EPOS, we could simply not have coped with the increase in online orders during the COVID lockdown. it went up 70% for some of our restaurants from one day to the other.”"
+      quote: Without the integration to our EPOS, we could simply not have coped with the increase in online orders during the COVID lockdown. it went up 70% for some of our restaurants from one day to the other.
       person_details:
         - Alan Cadden
-        - Managin Director
+        - Managing Director
         - Saba to Go
       filename: alan.png
     - id: 2
-      description: "“The full integration was done in a few days, we were live when a site integrated to iKentoo in the same week. Support was brilliant”"
+      quote: The full integration was done in a few days, we were live when a site integrated to iKentoo in the same week. Support was brilliant
       person_details:
         - Arthur Broutin
         - Managin Director
         - Obypay
       filename: arthur.png
     - id: 3
-      description: "“The marker is too fragmented. No mater how much we would like to, it's simply impossible to integrate with all solutions our clients have. We refer HubRise instead. The cost is fair, so we prefer to let them worry about integrations while we focus on development of our platform and services we provide.“"
+      quote: The marker is too fragmented. No mater how much we would like to, it's simply impossible to integrate with all solutions our clients have. We refer HubRise instead. The cost is fair, so we prefer to let them worry about integrations while we focus on development of our platform and services we provide.
       person_details:
         - Laurent Vigourux
         - Managin Director
         - LivePepper
       filename: laurent.png
     - id: 4
-      description: "“New editors have one integration to do to connect to our approved vendors. Remove barriers to inovation. Agile, rapid deployment.“"
+      quote: New editors have one integration to do to connect to our approved vendors. Remove barriers to inovation. Agile, rapid deployment.
       person_details:
         - Tim Newton
         - Vice President, International Technologies
         - Papa John's International
       filename: tim.png
     - id: 5
-      description: "“Each brand is unique, with their own specific enviroment and HR gives the flexibility...“"
+      quote: Each brand is unique, with their own specific enviroment and HR gives the flexibility...
       person_details:
         - Muhamad Mehmood
         - Founder

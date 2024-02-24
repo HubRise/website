@@ -5,11 +5,11 @@ import { Testimonial } from "@layouts/Testimonials/types"
 
 import { Picture, Details, Separator, Quote, Card, Detail, Bullet } from "./Styles"
 
-interface TestimonialCardProps {
+interface TestimonialProps {
   testimonial: Testimonial
 }
 
-const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
+const Testimonial = ({ testimonial }: TestimonialProps): JSX.Element => {
   const { quote, person_details, filename } = testimonial
 
   return (
@@ -22,7 +22,6 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
           height={226}
         />
       </Picture>
-
       <Quote>{quote}</Quote>
       <Separator />
       <Details>
@@ -36,4 +35,4 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
     </Card>
   )
 }
-export default TestimonialCard
+export default Testimonial

@@ -29,7 +29,7 @@ export const Quote = styled.div`
   font-style: italic;
   font-size: ${fontSizes._16};
   text-align: center;
-  color: ${colors.textLight};
+  color: ${colors.textMedium};
 
   &:before,
   &:after {

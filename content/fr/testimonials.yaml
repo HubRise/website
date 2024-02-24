@@ -2,34 +2,34 @@ meta:
   title: Témoignages | HubRise
   description: Découvrez ce que d'autres entreprises et particuliers disent de leur expérience HubRise.
 content:
-  title: Pourquoi vous aimeriez travailler avec HubRise
-  description: Ne vous fiez pas à nous, voici ce qu'en disent les développeurs et les clients
+  title: Pourquoi vous aimerez travailler avec HubRise
+  description: Ne vous fiez pas à nous, voici ce que disent les développeurs et les clients
   testimonials:
-    - description: "“Sans l'intégration à notre système EPOS, nous n'aurions tout simplement pas pu faire face à l'augmentation des commandes en ligne pendant le blocage de COVID. Elles ont augmenté de 70 % pour certains de nos restaurants d'un jour à l'autre.”"
+    - quote: Sans l'intégration à notre système EPOS, nous n'aurions tout simplement pas pu faire face à l'augmentation des commandes en ligne pendant le blocage de COVID. Elles ont augmenté de 70 % pour certains de nos restaurants d'un jour à l'autre.
       person_details:
         - Alan Cadden
         - Directeur de la gestion
         - Saba to Go
       filename: alan.png
-    - description: "“L'intégration complète a été réalisée en quelques jours, nous étions en ligne lorsqu'un site a été intégré à iKentoo dans la même semaine. L'assistance a été brillante”"
+    - quote: L'intégration complète a été réalisée en quelques jours, nous étions en ligne lorsqu'un site a été intégré à iKentoo dans la même semaine. L'assistance a été brillante
       person_details:
         - Arthur Broutin
         - Directeur de la gestion
         - Obypay
       filename: arthur.png
-    - description: "“Le marqueur est trop fragmenté. Même si nous le souhaitons, il est tout simplement impossible de l'intégrer à toutes les solutions dont disposent nos clients. Nous recommandons plutôt HubRise. Le coût est raisonnable et nous préférons les laisser s'occuper des intégrations pendant que nous nous concentrons sur le développement de notre plateforme et des services que nous fournissons.“"
+    - quote: Le marqueur est trop fragmenté. Même si nous le souhaitons, il est tout simplement impossible de l'intégrer à toutes les solutions dont disposent nos clients. Nous recommandons plutôt HubRise. Le coût est raisonnable et nous préférons les laisser s'occuper des intégrations pendant que nous nous concentrons sur le développement de notre plateforme et des services que nous fournissons.
       person_details:
         - Laurent Vigourux
         - Directeur de la gestion
         - LivePepper
       filename: laurent.png
-    - description: "“Les nouveaux éditeurs n'ont qu'une seule intégration à faire pour se connecter à nos fournisseurs agréés. Supprimer les obstacles à l'innovation. Déploiement agile et rapide.“"
+    - quote: Les nouveaux éditeurs n'ont qu'une seule intégration à faire pour se connecter à nos fournisseurs agréés. Supprimer les obstacles à l'innovation. Déploiement agile et rapide.
       person_details:
         - Tim Newton
         - Vice-président, Technologies internationales
         - Papa John's International
       filename: tim.png
-    - description: "“Chaque marque est unique, avec son environnement spécifique, et les RH offrent la flexibilité...“"
+    - quote: Chaque marque est unique, avec son environnement spécifique, et les RH offrent la flexibilité...
       person_details:
         - Muhamad Mehmood
         - Fondateur
