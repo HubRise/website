@@ -1,18 +1,15 @@
 import Image from "next/image"
 import styled from "styled-components"
 
-import { breakpoints, colors, sizes } from "@utils/styles"
+import { breakpoints, colors, fontSizes, sizes } from "@utils/styles"
 
-export const Wrapper = styled.div`
-  background-color: ${colors.white};
+export const Card = styled.div`
   max-width: ${sizes.maxWidth};
-  width: 100%;
-  margin: 0 auto;
-
-  &:not(:last-child) {
-    margin-bottom: 1.5rem;
+  margin: 0 auto 1.5rem auto;
+  &:last-child {
+    margin-bottom: 5rem;
   }
-
+  background-color: ${colors.white};
   display: flex;
   flex-direction: column;
 
@@ -21,11 +18,9 @@ export const Wrapper = styled.div`
   }
 `
 
-export const ImageWrapper = styled.div`
-  flex-basis: 40%;
-  flex-shrink: 0;
+export const Logo = styled.div`
+  flex: 1 0 40%;
   aspect-ratio: 16/9;
-  flex-grow: 1;
   background-color: #f7f7f7;
   position: relative;
 `
@@ -38,27 +33,29 @@ export const PartnerImage = styled(Image)`
   transform: translateX(-50%);
 `
 
-export const InfoWrapper = styled.div`
-  padding: 2.5rem 2.3rem;
+export const Information = styled.div`
+  padding: 2.5rem;
 `
 
-export const InfoHeader = styled.div`
+export const Title = styled.div`
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 1rem;
+
   @media (min-width: ${breakpoints.medium}) {
     flex-direction: row;
-    margin-bottom: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0 0.75rem;
   }
 `
 
 export const Name = styled.h4`
-  font-size: 22px;
-  font-weight: bold;
-  color: ${colors.textDark};
   display: flex;
   align-items: center;
+  font-size: ${fontSizes._24};
+  font-weight: bold;
+  color: ${colors.textDark};
 
   @media (min-width: ${breakpoints.medium}) {
     &::after {
@@ -74,17 +71,16 @@ export const Name = styled.h4`
 `
 
 export const Website = styled.a`
-  margin-left: 0.75rem;
   color: ${colors.primary};
 `
 
-export const Descriptions = styled.div``
-
-export const Description = styled.p`
+export const Description = styled.div`
   color: ${colors.textMedium};
+
   &:not(:last-child) {
     &::after {
       display: block;
+      color: ${colors.textLight};
       content: "-";
     }
   }

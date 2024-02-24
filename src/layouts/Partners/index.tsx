@@ -2,8 +2,7 @@
 
 import Block from "@components/Block"
 
-import PartnersCard from "./PartnersCard"
-import { List } from "./Styles"
+import Partner from "./Partner"
 import type { PartnersYaml } from "./types"
 
 const Partners = ({ yaml }: { yaml: PartnersYaml }) => {
@@ -12,19 +11,18 @@ const Partners = ({ yaml }: { yaml: PartnersYaml }) => {
   return (
     <>
       <Block
+        padding="small"
         backgroundColor="white"
         verticalSpacing="small"
-        padding="small"
-        title={content.title}
         horizontalAlign="center"
+        title={content.title}
       >
-        <span>{content.description}</span>
+        {content.description}
       </Block>
-      <List>
-        {content.partners.map((partner) => (
-          <PartnersCard key={partner.id} partner={partner} />
-        ))}
-      </List>
+
+      {content.partners.map((partner, index) => (
+        <Partner key={index} partner={partner} />
+      ))}
     </>
   )
 }

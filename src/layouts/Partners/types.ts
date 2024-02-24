@@ -11,9 +11,8 @@ export interface PartnersYaml {
 }
 
 export interface Partners {
-  id: number
   name: string
   site_url: string
-  image_name: string
+  filename: string
   descriptions: Array<string>
 }
