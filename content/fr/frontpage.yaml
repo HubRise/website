@@ -56,14 +56,14 @@ content:
     team_members:
       - name: Alberto
         filename: alberto.jpg
-      - name: Alex
-        filename: alex.jpg
       - name: Antoine
         filename: antoine.jpg
       - name: Dan
         filename: dan.jpg
       - name: Dimitri
         filename: dimitri.jpg
+      - name: Janaina
+        filename: janaina.jpg
       - name: Nick
         filename: nick.jpg
       - name: Vova
