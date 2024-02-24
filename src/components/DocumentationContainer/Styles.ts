@@ -132,6 +132,10 @@ export const StyledContainer = styled.div`
     }
   }
 
+  li img {
+    margin: 0.5rem 0;
+  }
+
   hr {
     border: none;
     border-bottom: 1px solid #cacaca;
