@@ -2,6 +2,7 @@ import { MDXRemote } from "next-mdx-remote"
 import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 
 import Block from "@components/Block"
+import { ContentImage } from "@utils/contentImage"
 
 import { Content, Text } from "../shared/Styles"
 
@@ -14,9 +15,10 @@ interface DevelopersProps {
     name: string
     filename: string
   }>
+  teamImages: { [name: string]: ContentImage }
 }
 
-const Developers = ({ title, descriptionMdx, team_members }: DevelopersProps): JSX.Element => {
+const Developers = ({ title, descriptionMdx, team_members, teamImages }: DevelopersProps): JSX.Element => {
   return (
     <Block
       backgroundColor="white"
@@ -33,10 +35,10 @@ const Developers = ({ title, descriptionMdx, team_members }: DevelopersProps): J
         </Text>
 
         <TeamList>
-          {team_members.map(({ name, filename }, index) => {
+          {team_members.map(({ name }, index) => {
             return (
               <TeamMember key={index}>
-                <MemberImage src={`/images/frontpage/team/${filename}`} alt={name} width={124} height={124} />
+                {teamImages[name] && <MemberImage {...teamImages[name]} alt={name} />}
                 <MemberName>{name}</MemberName>
               </TeamMember>
             )
