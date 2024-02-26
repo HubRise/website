@@ -116,7 +116,7 @@ Every option has single quantity. Multiple identical options are encoded in sepa
 
 <details>
 
-Below is a sample payload containing a single item with multiple options.
+<summary>Sample JSON containing a single item with multiple options</summary>
 
 ```json
 "items": [
@@ -170,7 +170,7 @@ Just Eat Takeaway Bridge receives the following information from Just Eat about 
 
 <details>
 
-Below is a sample payload with customer details.
+<summary>Sample JSON with customer details</summary>
 
 ```json
 "customer": {
@@ -198,7 +198,7 @@ The available fields in the payload are the following:
 
 <details>
 
-Below is a sample payload for discounts.
+<summary>Sample JSON for discounts</summary>
 
 ```json
 "discounts": [
@@ -225,7 +225,7 @@ Here are the fields used to describe delivery charges:
 
 <details>
 
-Sample payload for delivery charges.
+<summary>Sample JSON for delivery charges</summary>
 
 ```json
 "charges": [

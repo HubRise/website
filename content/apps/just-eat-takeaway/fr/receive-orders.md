@@ -96,7 +96,7 @@ Chaque option se caractérise par une quantité unique. Les options multiples id
 
 <details>
 
-Vous trouverez ci-dessous un exemple de requêtes contenant un article unique avec une option.
+<summary>Exemple de JSON contenant un article unique avec une option</summary>
 
 ```json
 "items": [
@@ -149,7 +149,7 @@ Just Eat Takeaway Bridge reçoit de Just Eat les informations suivantes concerna
 
 <details>
 
-Vous trouverez ci-dessous un exemple de requête contenant les coordonnées du client.
+<summary>Exemple de JSON contenant les coordonnées du client</summary>
 
 ```json
 "customer": {
@@ -177,7 +177,7 @@ Les champs disponibles dans la requête sont les suivants :
 
 <details>
 
-Voici un exemple de requête pour les remises.
+<summary>Exemple de JSON pour les remises</summary>
 
 ```json
 "discounts": [
@@ -204,7 +204,7 @@ Les champs disponibles dans les requêtes sont les suivants :
 
 <details>
 
-Voici un exemple de requête pour les frais.
+<summary>Exemple de JSON pour les frais</summary>
 
 ```json
 "charges": [

@@ -50,7 +50,7 @@ For every item in the order, PrestaShop Bridge provides the following informatio
 
 <details>
 
-Below is a sample payload containing a single item.
+<summary>Sample JSON containing a single item</summary>
 
 ```json
 "items": [
@@ -82,7 +82,7 @@ PrestaShop does not provide any ref code for discounts.
 
 <details>
 
-Below is a sample payload for discounts.
+<summary>Sample JSON for discounts</summary>
 
 ```json
 "discounts": [
@@ -119,7 +119,7 @@ The available fields in the payloads are the following:
 
 <details>
 
-Below is a sample payload for charges.
+<summary>Sample JSON for charges</summary>
 
 ```json
 "charges": [

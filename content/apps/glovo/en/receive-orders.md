@@ -121,7 +121,7 @@ For every option in the order, Glovo Bridge provides the following information:
 
 <details>
 
-Below is a sample payload containing a single item with multiple options.
+<summary>Sample JSON containing a single item with multiple options</summary>
 
 ```json
 "items": [
@@ -169,7 +169,7 @@ Glovo Bridge receives the following information from Glovo about the customer's 
 
 <details>
 
-Below is a sample payload with customer details.
+<summary>Sample JSON with customer details</summary>
 
 ```json
 "customer": {
@@ -196,7 +196,7 @@ The available fields in the payload are the following:
 
 <details>
 
-Below is a sample payload for discounts.
+<summary>Sample JSON for discounts.</summary>
 
 ```json
 "discounts": [
@@ -233,7 +233,7 @@ The available fields in the payloads are the following:
 
 <details>
 
-Below is a sample payload for charges.
+<summary>Sample JSON for charges</summary>
 
 ```json
 {
