@@ -1,5 +1,6 @@
-import { breakpoints, colors } from "@utils/styles"
 import styled from "styled-components"
+
+import { breakpoints, colors } from "@utils/styles"
 export const CarouselWrapper = styled.div`
   position: relative;
   display: flex;

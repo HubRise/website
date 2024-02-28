@@ -1,4 +1,5 @@
 import * as React from "react"
+
 import { Button, CarouselContainer, CarouselInner, CarouselWrapper, Slide } from "./Styles"
 
 interface CarouselProps {
