@@ -1,87 +1,50 @@
-import styled, { css } from "styled-components"
-
-import { CarouselOrientation } from "../Carousel"
-
-export const Wrapper = styled.div`
+import { breakpoints, colors } from "@utils/styles"
+import styled from "styled-components"
+export const CarouselWrapper = styled.div`
   position: relative;
-`
-
-export const ContentWrapper = styled.div`
-  overflow: hidden;
-`
-
-export const Content = styled.div<{ $orientation?: CarouselOrientation }>`
   display: flex;
-  ${({ $orientation }) =>
-    $orientation === "horizontal"
-      ? css`
-          margin-left: -1rem;
-        `
-      : css`
-          margin-top: -1rem;
-          flex-direction: column;
-        `}
+  justify-content: center;
 `
 
-export const Item = styled.div<{ $orientation?: CarouselOrientation; $flexBasis?: string }>`
-  min-width: 0;
-  flex-shrink: 0;
-  flex-grow: 0;
-  flex-basis: ${({ $flexBasis }) => ($flexBasis != null ? $flexBasis : "100%")};
-  ${({ $orientation }) =>
-    $orientation === "horizontal"
-      ? css`
-          padding-left: 1rem;
-        `
-      : css`
-          padding-top: 1rem;
-        `}
-`
+export const CarouselContainer = styled.div`
+  overflow: hidden;
 
-export const Button = styled.button<{ $orientation?: CarouselOrientation }>`
-  position: absolute;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 100%;
-
-  span {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
+  @media (min-width: ${breakpoints.medium}) {
+    margin-left: -0.5rem;
+    width: calc(100% - 1rem - 5px);
   }
 `
-export const PreviousButton = styled(Button)`
-  ${({ $orientation }) =>
-    $orientation === "horizontal"
-      ? css`
-          top: 50%;
-          left: -3rem;
-          transform: translateY(-50%);
-        `
-      : css`
-          top: -3rem;
-          left: 50%;
-          transform: translateX(-50%) rotate(90deg);
-        `}
+
+export const CarouselInner = styled.div`
+  display: flex;
+  transition: transform 0.5s ease;
 `
 
-export const NextButton = styled(Button)`
-  ${({ $orientation }) =>
-    $orientation === "horizontal"
-      ? css`
-          top: 50%;
-          right: -3rem;
-          transform: translateY(-50%);
-        `
-      : css`
-          bottom: -3rem;
-          left: 50%;
-          transform: translateX(-50%) rotate(90deg);
-        `}
+export const Slide = styled.div`
+  flex: 0 0 50%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+`
+
+export const Button = styled.button<{ direction: "prev" | "next" }>`
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1;
+  color: ${colors.textDark};
+  ${(props: { direction: "prev" | "next" }) =>
+    props.direction === "prev" ? "left: calc(1rem + 2px);" : "right: calc(1rem + 2px);"}
+
+  @media (min-width: ${breakpoints.medium}) {
+    display: block;
+  }
+
+  @media (min-width: ${breakpoints.medium}) {
+    ${(props: { direction: "prev" | "next" }) => (props.direction === "prev" ? "left: 0;" : "right: 0;")}
+  }
 `

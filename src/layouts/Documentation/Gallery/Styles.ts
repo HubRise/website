@@ -22,17 +22,3 @@ export const ThumbnailItem = styled.div`
   width: 100%;
   cursor: pointer;
 `
-
-export const CarouselWrapper = styled.div`
-  width: 100%;
-  @media (min-width: ${breakpoints.large}) {
-    width: calc(100% - 2rem - 20px);
-  }
-`
-
-export const CarouselControls = styled.div`
-  display: none;
-  @media (min-width: ${breakpoints.large}) {
-    display: block;
-  }
-`
