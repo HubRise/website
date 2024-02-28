@@ -1,11 +1,12 @@
 import * as React from "react"
 
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@components/Carousel"
 import Slideshow from "@components/Slideshow"
 import { DocFolder } from "@utils/DocIndexer/types"
 import { ContentImageWithAlt } from "@utils/contentImage"
 import imageSizes from "@utils/imageSizes"
 
-import { ThumbnailItem, ThumbnailGrid, Thumbnail } from "./Styles"
+import { ThumbnailItem, Thumbnail, CarouselWrapper, CarouselControls } from "./Styles"
 
 interface GalleryProps {
   folder: DocFolder
@@ -37,19 +38,30 @@ const Gallery = ({ folder, images }: GalleryProps): JSX.Element => {
           }}
         />
       )}
+      <CarouselWrapper>
+        <Carousel>
+          <CarouselContent>
+            {images.map((image, index) => (
+              <CarouselItem flexBasis="50%" key={index}>
+                <ThumbnailItem
+                  onClick={() => {
+                    setCurrentImageSrc(image.src)
+                  }}
+                >
+                  <Thumbnail {...image} alt={title} sizes={`${imageSizes.halfDocumentation}px`} placeholder="blur" />
+                </ThumbnailItem>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
 
-      <ThumbnailGrid>
-        {images.map((image, index) => (
-          <ThumbnailItem
-            key={index}
-            onClick={() => {
-              setCurrentImageSrc(image.src)
-            }}
-          >
-            <Thumbnail {...image} alt={title} sizes={`${imageSizes.halfDocumentation}px`} placeholder="blur" />
-          </ThumbnailItem>
-        ))}
-      </ThumbnailGrid>
+          {images.length > 2 && (
+            <CarouselControls>
+              <CarouselNext />
+              <CarouselPrevious />
+            </CarouselControls>
+          )}
+        </Carousel>
+      </CarouselWrapper>
     </>
   )
 }
