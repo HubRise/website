@@ -5,6 +5,8 @@ import { breakpoints } from "@utils/styles"
 
 export const Thumbnail = styled(Image)`
   border-radius: 0.6rem;
+  pointer-events: none;
+  user-select: none;
 `
 
 export const ThumbnailGrid = styled.div`

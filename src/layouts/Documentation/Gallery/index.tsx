@@ -6,7 +6,7 @@ import { DocFolder } from "@utils/DocIndexer/types"
 import { ContentImageWithAlt } from "@utils/contentImage"
 import imageSizes from "@utils/imageSizes"
 
-import { ThumbnailItem, Thumbnail } from "./Styles"
+import { ThumbnailItem, Thumbnail, ThumbnailGrid } from "./Styles"
 
 interface GalleryProps {
   folder: DocFolder
@@ -38,18 +38,34 @@ const Gallery = ({ folder, images }: GalleryProps): JSX.Element => {
           }}
         />
       )}
-      <Carousel>
-        {images.map((image, index) => (
-          <ThumbnailItem
-            key={index}
-            onClick={() => {
-              setCurrentImageSrc(image.src)
-            }}
-          >
-            <Thumbnail {...image} alt={title} sizes={`${imageSizes.halfDocumentation}px`} placeholder="blur" />
-          </ThumbnailItem>
-        ))}
-      </Carousel>
+
+      {images.length > 2 ? (
+        <Carousel>
+          {images.map((image, index) => (
+            <ThumbnailItem
+              key={index}
+              onClick={() => {
+                setCurrentImageSrc(image.src)
+              }}
+            >
+              <Thumbnail {...image} alt={title} sizes={`${imageSizes.halfDocumentation}px`} placeholder="blur" />
+            </ThumbnailItem>
+          ))}
+        </Carousel>
+      ) : (
+        <ThumbnailGrid>
+          {images.map((image, index) => (
+            <ThumbnailItem
+              key={index}
+              onClick={() => {
+                setCurrentImageSrc(image.src)
+              }}
+            >
+              <Thumbnail {...image} alt={title} sizes={`${imageSizes.halfDocumentation}px`} placeholder="blur" />
+            </ThumbnailItem>
+          ))}
+        </ThumbnailGrid>
+      )}
     </>
   )
 }

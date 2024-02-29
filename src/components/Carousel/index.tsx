@@ -1,70 +1,120 @@
 import * as React from "react"
 
-import { Button, CarouselContainer, CarouselInner, CarouselWrapper, Slide } from "./Styles"
+import { Wrapper, Container, Inner, Slide, PrevButton, NextButton } from "./Styles"
 
 interface CarouselProps {
   children: React.ReactNode
 }
 
 const Carousel: React.FC<CarouselProps> = ({ children }) => {
+  const [startX, setStartX] = React.useState<number | null>(null)
+  const [scrollLeft, setScrollLeft] = React.useState(0)
+  const [isSliding, setIsSliding] = React.useState(false)
+  const [isCarouselClicked, setIsCarouselClicked] = React.useState(false)
   const carouselRef = React.useRef<HTMLDivElement>(null)
-  const [currentIndex, setCurrentIndex] = React.useState(0)
-  const [touchStartX, setTouchStartX] = React.useState(0)
 
-  const totalSlides = React.Children.count(children)
-  const slidesToShow = 2
-
-  const goToNextSlide = () => {
-    if (currentIndex < totalSlides - slidesToShow) {
-      setCurrentIndex(currentIndex + 1)
-    }
+  const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
+    setIsCarouselClicked(true)
+    setStartX(e.pageX - carouselRef.current!.offsetLeft)
+    setScrollLeft(carouselRef.current!.scrollLeft)
   }
 
-  const goToPrevSlide = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1)
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!isCarouselClicked) {
+      return
     }
+
+    setIsSliding(true)
+    if (!startX) return
+    const x = e.pageX - carouselRef.current!.offsetLeft
+    const walk = (x - startX) * 2
+    carouselRef.current!.scrollLeft = scrollLeft - walk
   }
 
-  const handleTouchStart = (event: React.TouchEvent<HTMLDivElement>) => {
-    setTouchStartX(event.touches[0].clientX)
+  const handleMouseUp = () => {
+    setStartX(null)
+    scrollToClosestSlide()
+    setIsSliding(false)
+    setIsCarouselClicked(false)
   }
 
-  const handleTouchMove = (event: React.TouchEvent<HTMLDivElement>) => {
-    if (touchStartX && carouselRef.current) {
-      const touchMoveX = event.touches[0].clientX
-      const touchDistance = touchMoveX - touchStartX
-      const slideWidth = carouselRef.current.offsetWidth / slidesToShow
-      const slidesMoved = Math.round(touchDistance / slideWidth)
-      setCurrentIndex(Math.max(0, Math.min(currentIndex - slidesMoved, totalSlides - slidesToShow)))
-    }
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    setStartX(e.touches[0].pageX - carouselRef.current!.offsetLeft)
+    setScrollLeft(carouselRef.current!.scrollLeft)
+  }
+
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (!startX) return
+    const x = e.touches[0].pageX - carouselRef.current!.offsetLeft
+    const walk = (x - startX) * 2
+    carouselRef.current!.scrollLeft = scrollLeft - walk
   }
 
   const handleTouchEnd = () => {
-    setTouchStartX(0)
+    setStartX(null)
+    scrollToClosestSlide()
+    setIsSliding(false)
+  }
+
+  const smoothScrollTo = (scrollTo: number) => {
+    if (!carouselRef.current) return
+    const scrollOptions: ScrollToOptions = {
+      left: scrollTo,
+      behavior: "smooth",
+    }
+    carouselRef.current.scrollTo(scrollOptions)
+  }
+
+  const scrollToClosestSlide = () => {
+    if (!carouselRef.current) return
+    const slideWidth = carouselRef.current.offsetWidth / 2 + 8 // Divide by 2 for two slides
+    const slideIndex = Math.round(carouselRef.current.scrollLeft / slideWidth)
+    const scrollTo = slideIndex * slideWidth
+    smoothScrollTo(scrollTo)
+  }
+
+  const handlePrevClick = () => {
+    if (carouselRef.current && !isSliding) {
+      const newPosition = carouselRef.current.scrollLeft - carouselRef.current.offsetWidth
+      setIsSliding(true)
+      smoothScrollTo(newPosition)
+      setTimeout(() => {
+        setIsSliding(false)
+      }, 300)
+    }
+  }
+
+  const handleNextClick = () => {
+    if (carouselRef.current && !isSliding) {
+      const newPosition = carouselRef.current.scrollLeft + carouselRef.current.offsetWidth
+      setIsSliding(true)
+      smoothScrollTo(newPosition)
+      setTimeout(() => {
+        setIsSliding(false)
+      }, 300)
+    }
   }
 
   return (
-    <CarouselWrapper
-      ref={carouselRef}
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
-    >
-      <CarouselContainer>
-        <CarouselInner style={{ transform: `translateX(-${currentIndex * (100 / slidesToShow)}%)` }}>
+    <Wrapper>
+      <Container
+        ref={carouselRef}
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
+        <Inner $isSliding={isSliding}>
           {React.Children.map(children, (child, index) => (
-            <Slide key={index}>{React.cloneElement(child as React.ReactElement)}</Slide>
+            <Slide key={index}>{child}</Slide>
           ))}
-        </CarouselInner>
-      </CarouselContainer>
-      <Button direction="prev" onClick={goToPrevSlide} disabled={currentIndex === 0}>
-        &#10094;
-      </Button>
-      <Button direction="next" onClick={goToNextSlide} disabled={currentIndex === totalSlides - slidesToShow}>
-        &#10095;
-      </Button>
-    </CarouselWrapper>
+        </Inner>
+      </Container>
+      <PrevButton onClick={handlePrevClick}>{"<"}</PrevButton>
+      <NextButton onClick={handleNextClick}>{">"}</NextButton>
+    </Wrapper>
   )
 }
 
