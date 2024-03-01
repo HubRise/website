@@ -79,8 +79,8 @@ Si votre plugin utilise une clé de métadonnées, les formats pris en charge so
 
 Si votre plugin utilise deux clés de métadonnées, les formats pris en charge sont les suivants :
 
-- La date doit être au format `dd/mm/yyyy`.
-- L'heure doit être au format `hh:mm`.
+- La date doit être une date ou une heure analysable, par exemple : `dd/mm/yyyy`, `yyyy-mm-dd`, ou une chaîne ISO 8601 dont la partie heure est ignorée.
+- L'heure doit être une heure analysable, par exemple : `hh:mm:ss`, `hh:mm`, ou une chaîne ISO 8601 dont la partie date est ignorée.
 
 ### Autres métadonnées de commande
 

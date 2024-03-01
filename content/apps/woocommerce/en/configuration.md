@@ -79,8 +79,8 @@ If your plugin uses one metadata key, the supported formats are the following:
 
 If your plugin uses two metadata keys, the supported formats are the following:
 
-- The date must be in the `dd/mm/yyyy` format.
-- The time must be in the `hh:mm` format.
+- The date must be a parsable date or time, for example: `dd/mm/yyyy`, `yyyy-mm-dd`, or an ISO 8601 string where the time part is ignored.
+- The time must be a parsable time, for example: `hh:mm:ss`, `hh:mm`, or an ISO 8601 string where the date part is ignored.
 
 ### Misc Order Metadata
 
