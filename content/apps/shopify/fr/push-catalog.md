@@ -8,13 +8,13 @@ meta:
   description: Découvrez comment envoyer le catalogue HubRise vers Shopify, comment les articles et options sont encodés, et quelles fonctionnalités sont prises en charge.
 ---
 
-Vous pouvez utiliser Shopify Bridge pour envoyer votre catalogue HubRise directement dans votre boutique Shopify. De plus, vous pouvez mettre à jour l'inventaire de vos articles dans Shopify, chaque fois qu'il est modifié dans HubRise.
+Vous pouvez utiliser Shopify Bridge pour envoyer votre catalogue HubRise directement dans votre boutique Shopify.
 
-Cette page explique comment envoyer votre catalogue, quelles informations sont envoyées à Shopify et comment synchroniser votre inventaire.
+Cette page explique comment envoyer votre catalogue et précise quelles informations sont transmises à Shopify.
 
 ## Alimenter un catalogue HubRise
 
-Pour pouvoir envoyer votre catalogue vers Shopify, vous devez préalablement alimenter un catalogue HubRise. De nombreuses applications connectées à HubRise, y compris des logiciels de caisse, offrent la possibilité d'exporter leur catalogue vers HubRise. Pour vérifier, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
+Pour pouvoir envoyer votre catalogue vers Shopify, vous devez préalablement alimenter un catalogue HubRise. De nombreuses applications connectées à HubRise, y compris des logiciels de caisse, offrent la possibilité d'exporter leur catalogue vers HubRise. Pour vérifier, référez-vous à la documentation de votre logiciel de caisse sur la [page Apps](/apps) du site internet de HubRise.
 
 Pour plus d'informations sur les catalogues HubRise, voir [Catalogues](/docs/catalog).
 
@@ -76,7 +76,3 @@ Les options ne sont pas prises en charge dans Shopify. Les options présentes da
 ### Promotions et remises
 
 Les promotions et les remises ne sont pas prises en charge dans Shopify. Les promotions et les remises présentes dans votre catalogue HubRise sont ignorées et ne sont pas envoyées à Shopify.
-
-## Synchroniser l'inventaire
-
-Chaque fois que votre inventaire HubRise est mis à jour, Shopify Bridge met automatiquement à jour les compteurs d'inventaire des produits dans Shopify.
