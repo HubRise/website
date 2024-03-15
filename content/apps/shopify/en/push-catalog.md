@@ -8,13 +8,13 @@ meta:
   description: Find out how to push your HubRise catalog to Shopify, how items and options are encoded, and which features are supported.
 ---
 
-You can use Shopify Bridge to push your HubRise catalog directly into your Shopify store. Also, you can update the inventory of your items on Shopify, every time this changes on HubRise.
+You can use Shopify Bridge to push your HubRise catalog directly into your Shopify store. 
 
-This page explains how you can push your catalog, what information is sent to Shopify, and how you can synchronise your inventory.
+This page explains how you can push your catalog, and clarifies what information is sent to Shopify.
 
 ## Populate a HubRise Catalog
 
-To be able to push your catalog into Shopify, you must populate a HubRise catalog first. Many apps connected with HubRise, including EPOS solutions, offer the ability to export the catalog to HubRise. Refer to your EPOS documentation on the HubRise website to verify.
+To be able to push your catalog into Shopify, you must populate a HubRise catalog first. Many apps connected with HubRise, including EPOS solutions, offer the ability to export the catalog to HubRise. Refer to your EPOS documentation on our [Apps page](/apps) to verify.
 
 For more information on HubRise catalogs, see [Catalogs](/docs/catalog).
 
@@ -76,7 +76,3 @@ Options are not supported on Shopify. The options present in your HubRise catalo
 ### Deals and Discounts
 
 Deals and discounts are not supported on Shopify. Deals and discounts present in your HubRise catalog are ignored and are not sent to Shopify.
-
-## Synchronise Inventory
-
-Every time your HubRise inventory is updated, Shopify Bridge automatically updates the products' inventory counters in Shopify.
