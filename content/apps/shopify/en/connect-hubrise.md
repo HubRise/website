@@ -16,14 +16,14 @@ Connecting Shopify to HubRise can be done with a few steps.
 
 ---
 
-## 1. Connect Shopify Bridge
-
 To can connect Shopify to HubRise, you can choose one of the following equivalent procedures:
 
 - Connect from the HubRise back office.
 - Connect from Shopify App Store.
 
-### Connect From the HubRise Back Office
+Once Shopify Bridge is connected, you can upload your product catalog or manually map ref codes.
+
+## Connect Shopify Bridge From HubRise
 
 To connect Shopify Bridge from the HubRise back office, follow these steps.
 
@@ -44,7 +44,7 @@ To connect Shopify Bridge from the HubRise back office, follow these steps.
 1. In the Shopify back office, review the permissions and click **Install app**. You will be redirected to Shopify Bridge.
 1. Configure the behaviour of Shopify Bridge, then click **Save** to complete the connection. For more information about configuring your Shopify Bridge, see [Configuration](/apps/shopify/configuration).
 
-### Connect From Shopify Apps Page
+## Connect Shopify Bridge From Shopify
 
 To connect Shopify from Shopify App Store, follow these steps.
 
@@ -59,7 +59,7 @@ To connect Shopify from Shopify App Store, follow these steps.
 1. From the HubRise authorisation page, select your HubRise location you wish to connect, then click **Allow**.
 1. Configure the behaviour of Shopify Bridge, then click **Save** to complete the connection. For more information about configuring your Shopify Bridge, see [Configuration](/apps/shopify/configuration).
 
-## 2. Upload Your Menu
+## Upload Your Product Catalog
 
 If you have a catalog of products on HubRise, you can upload it to your Shopify store with a single click.
 
