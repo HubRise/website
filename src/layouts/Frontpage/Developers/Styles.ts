@@ -23,6 +23,7 @@ export const TeamMember = styled.li`
 export const MemberImage = styled(Image)`
   border-radius: 50%;
   box-shadow: ${boxShadows.large};
+  width: 8rem;
 `
 
 export const MemberName = styled.div``

@@ -19,5 +19,7 @@ sections:
         to: /docs
   - title: Company
     links:
+      - title: Testimonials
+        to: /testimonials
       - title: Branding Guidelines
         to: /branding

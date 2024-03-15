@@ -58,10 +58,10 @@ content:
         filename: alberto.jpg
       - name: Antoine
         filename: antoine.jpg
-      - name: Dan
-        filename: dan.jpg
       - name: Dimitri
         filename: dimitri.jpg
+      - name: Félix L.
+        filename: felix_l.jpg
       - name: Janaina
         filename: janaina.jpg
       - name: Nick

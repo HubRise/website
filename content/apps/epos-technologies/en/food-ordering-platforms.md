@@ -30,7 +30,7 @@ In the Deliveroo Bridge configuration page, use the following settings:
 | Discounts      | Discount ref code                     | `DV_DC`                                           |
 | Charges        | Delivery charge ref code              | `DV_CH_DELIVERY`                                  |
 | Charges        | Surcharge ref code                    | `DV_CH_SURCHARGE`                                 |
-| Charges        | Bag fee ref code                      | (ask support@hubrise.com if you need it)          |
+| Charges        | Bag fee ref code                      | `BAG_FEE`                                         |
 | Payments       | Online payment ref code               | `DV_PM_PLATFORM`                                  |
 | Payments       | Cash payment ref code                 | (leave empty)                                     |
 | Customers      | Duplicate phone access code in [...]  | Tick this box                                     |
@@ -79,9 +79,9 @@ In the Just Eat Flyt Bridge configuration page, use the following settings:
 | Discounts      | Discount ref code                        | `JE_DC`                                           |
 | Charges        | Delivery charge ref code                 | `JE_CH_DELIVERY`                                  |
 | Charges        | Service charge ref code                  | `JE_CH_SERVICE`                                   |
-| Charges        | Bag fee ref code                         | (leave empty)                                     |
-| Charges        | Driver tip ref code                      | (leave empty)                                     |
-| Charges        | Other charge ref code                    | (leave empty)                                     |
+| Charges        | Bag fee ref code                         | `BAG_FEE`                                         |
+| Charges        | Driver tip ref code                      | `DRIVER_TIP`                                      |
+| Charges        | Other charge ref code                    | `OTHER_CHARGE`                                     |
 | Payments       | Online payment ref code                  | `JE_PM_PLATFORM`                                  |
 | Payments       | Cash payment ref code                    | (leave empty)                                     |
 | Customers      | Duplicate phone access code in [...]     | Tick this box                                     |
@@ -104,7 +104,7 @@ In the Uber Eats Bridge configuration page, use the following settings:
 | Discounts      | Discount ref code                     | `UE_DC`                                                          |
 | Charges        | Delivery charge ref code              | `UE_CH_DELIVERY`                                                 |
 | Charges        | Small order fee ref code              | `UE_CH_SURCHARGE`                                                |
-| Charges        | Tip ref code                          | (leave empty)                                                    |
+| Charges        | Tip ref code                          | `DRIVER_TIP`                                                     |
 | Payments       | Online payment ref code               | `UE_PM_PLATFORM`                                                 |
 | Payments       | Cash payment ref code                 | (leave empty)                                                    |
 | Customers      | Duplicate phone access code in [...]  | Tick this box                                                    |
