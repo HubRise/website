@@ -47,7 +47,7 @@ Les logs constituent un puissant outil de débogage en cas d'incident. Pour comp
 
 Une page de requête système est présentée de la même manière qu'une page de commande.
 
-System requests are generally sent by Shopify Bridge to notify HubRise about a change in the configuration or to fetch the most up-to-date information.
+Les requêtes système sont généralement envoyées par Shopify Bridge pour informer HubRise d'une modification de la configuration ou pour récupérer les informations les plus récentes.
 
 Les pages de requête système fournissent des informations de débogage utiles aux équipes d'assistance. Mais elles ont généralement peu d'intérêt pour les autres utilisateurs.
 

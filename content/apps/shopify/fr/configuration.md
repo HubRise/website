@@ -5,7 +5,7 @@ position: 4
 layout: documentation
 meta:
   title: Configuration | Shopify | HubRise
-  description: Instructions pour configurer Shopify pour un bon fonctionnement avec HubRise, votre caisse ou autres applications connectées à HubRise. La configuration est simple.
+  description: Instructions simples pour configurer Shopify afin qu'il fonctionne parfaitement avec HubRise et votre logiciel de caisse ou autres apps connectées à HubRise. La configuration est simple.
 ---
 
 La page de configuration permet de personnaliser le comportement de Shopify Bridge.
@@ -32,7 +32,7 @@ Pour chaque statut de commande HubRise, spécifiez le statut de commande Shopify
 
 Dans le champ **Code ref du type de service**, saisissez le code ref du type de service que votre logiciel de caisse attend pour les commandes Shopify. Pour connaître ses exigences, reportez-vous à la documentation de votre logiciel de caisse sur notre [page Apps](/apps).
 
-### Heure de livraison
+### Heure souhaitée
 
 ![Page de configuration Shopify Bridge, Heure de livraison](./images/014-shopify-configuration-expected-time.png)
 
