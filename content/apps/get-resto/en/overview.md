@@ -13,9 +13,9 @@ gallery:
 app_info:
   category: Online Ordering
   availability: France
-  price_range: From €9 per month
-  website: https://www.mylemonade.fr
-  contact: contact@mylemonade.app
+  price_range: 
+  website: https://www.get-resto.com
+  contact: 
 ---
 
 ---
