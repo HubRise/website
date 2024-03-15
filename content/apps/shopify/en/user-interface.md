@@ -47,7 +47,7 @@ Logs are a powerful debugging tool in case of issues. To understand in detail ho
 
 The layout of a system request page is identical to that of an order page.
 
-System requests are generally sent by Shopify Bridge to notify HubRise about a change in the configuration or to fetch the most up-to-date information. As an example, the following image displays a request to update the Shopify Bridge callback after a configuration change.
+System requests are generally sent by Shopify Bridge to notify HubRise about a change in the configuration or to fetch the most up-to-date information. 
 
 System request pages can provide useful debugging insights to support teams, but are rarely of interest to other users.
 

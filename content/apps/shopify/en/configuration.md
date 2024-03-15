@@ -24,7 +24,7 @@ The configuration page allows you to customise the behaviour of Shopify Bridge.
 
 In this section, you can customise how status changes in HubRise are reflected in Shopify.
 
-For each HubRise order status, specify the corresponding Shopify order status. To ignore a status change, select **Do nothing**.
+For each HubRise order status, specify the corresponding Shopify order status. To ignore a status change, select **Do not map**.
 
 ### Service Types
 
