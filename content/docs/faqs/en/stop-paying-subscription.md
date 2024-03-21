@@ -1,7 +1,7 @@
 ---
 title: How Do I Stop Paying For My Subscription?
 path_override: stop-paying-subscription
-position: 16
+position: 17
 layout: documentation
 meta:
   title: Stop Paying a Subscription | HubRise
