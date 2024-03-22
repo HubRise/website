@@ -12,7 +12,7 @@ gallery:
 app_info:
   category: Middleware
   availability: Worldwide
-  price_range: "€25 / month"
+  price_range: "€35 / month"
   contact: contact@hubrise.com / support@hubrise.com
 ---
 

@@ -4,22 +4,22 @@ path_override: "/"
 position: 1
 layout: documentation
 meta:
-  title: Présentation générale du guide utilisateur | HubRise
-  description: Les commandes, les listes de clients et les catalogues sont enregistrés dans HubRise pour fournir aux applications connectées un accès en temps réel à vos données.
+  title: Présentation générale de la documentation technique | HubRise
+  description: Les commandes, les listes de clients et les catalogues sont enregistrés dans HubRise pour fournir aux applications connectées un accès en temps réel à vos données. Intégrer des solutions tierces.
 gallery:
   - __gallery-001.png
   - __gallery-002.png
 app_info:
   category: Middleware (plateforme logicielle intermédiaire)
   availability: Monde
-  price_range: "€25 / par mois"
+  price_range: "€35 / par mois"
   contact: contact@hubrise.com / support@hubrise.com
 ---
 
 HubRise est un middleware (plateforme logicielle intermédiaire) qui permet de connecter des solutions tierces. L'interface unifiée d'HubRise permet l'interconnexion d'un écosystème d'applications de plus en plus nombreuses. Les applications typiquement connectées sont les suivantes :
 
 - Logiciels de caisse
-- Commandes en ligne
+- Commande en ligne
 - Gestion de livraison
 - Services de livraison
 - Marketing numérique (SMS/e-mail)

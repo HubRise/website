@@ -1,7 +1,7 @@
 ---
 title: Permissions
 path_override: permissions
-position: 11
+position: 12
 layout: documentation
 meta:
   title: Permissions | HubRise
@@ -28,7 +28,7 @@ Pour accorder à un utilisateur des permissions sur un compte, procédez comme s
 1. Sélectionnez **CONFIGURATION**.
 1. À la section **Permissions**, saisissez l'adresse e-mail de l'utilisateur dans la colonne intitulée **E-MAIL**.
 1. Dans la colonne **RÔLE**, définissez le rôle du nouvel utilisateur en tant qu'Admin ou Manager.
-1. Cliquez sur l'icône Plus <InlineImage width="13" height="13">![Icône Plus](../images/059-add-icon.png)</InlineImage> pour ajouter le nouvel utilisateur.
+1. Cliquez sur l'icône Plus <InlineImage width="13" height="13">!\[Icône Plus\](../images/059-add-icon.png)</InlineImage> pour ajouter le nouvel utilisateur.
 
 Pour octroyer à un utilisateur des permissions sur un point de vente, procédez comme suit :
 

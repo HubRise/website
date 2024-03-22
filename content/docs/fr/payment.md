@@ -8,7 +8,7 @@ meta:
   description: Comment gérer les paiements et les factures sur HubRise.
 ---
 
-Les comptes et les points de vente configurés avec une formule payante font l'objet d'un paiement mensuel à HubRise lorsqu'ils dépassent la limite d'[utilisation](/docs/usage-plan#plan) gratuite. Pour obtenir des informations complètes sur les prix, consultez la [page de tarifs de HubRise](/tarifs).
+Les comptes et les points de vente configurés avec une formule payante font l'objet d'un paiement mensuel à HubRise lorsqu'ils dépassent la limite d'[utilisation](/docs/usage-plan#plan) gratuite. Pour obtenir des informations complètes sur les prix, consultez la [page de tarifs de HubRise](/pricing).
 
 Vous pouvez configurer votre méthode de paiement dans la section **CONFIGURATION** > **Paiement**. Pour automatiser les paiements, vous devez disposer d'une carte de crédit. Les prélèvements SEPA ne sont pas possibles. Le virement bancaire est accepté en cas d'engagement sur 12 mois minimum.
 
@@ -51,7 +51,7 @@ Les cycles de facturation ont une durée d'un mois et débutent le jour même de
 
 Ainsi, si vous ouvrez votre compte HubRise le 17 mars, vous serez facturé le 17 de chaque mois. Le cycle de facturation de chaque point de vente sera configuré en conséquence.
 
-## Modifier les informations de facturation
+## Mettre à jour les informations de facturation {#update-billing-information}
 
 Les informations de facturation incluses dans les factures peuvent être configurées au niveau du compte et du point de vente.
 
@@ -92,7 +92,7 @@ Pour supprimer une méthode de paiement, procédez comme suit :
 
 ---
 
-**FAQ associée** : [Comment cesser le paiement de mon abonnement ?](/docs/faqs/stop-paying-subscription)
+**FAQ associée**: [Comment cesser le paiement de mon abonnement ?](/docs/faqs/stop-paying-subscription)
 
 ---
 
@@ -103,14 +103,23 @@ Lorsque vous changez de formule tarifaire, le paiement doit être autorisé avan
 Pour traiter une demande de paiement à partir de la notification, procédez comme suit :
 
 1. Connectez-vous à votre back-office HubRise.
-1. Assurez-vous qu'une carte de crédit est enregistrée sur votre compte ou votre point de vente. Si tel n'est pas le cas, consultez les instructions indiquées à la rubrique [Ajouter une méthode de paiement](#add-payment-method).
-1. Cliquez sur **la payer en ligne ou télécharger le PDF**, puis sur **Payer**. Pour consulter toutes les demandes de paiement, allez dans **PARAMÈTRES**.
+1. Sur la page de **CONFIGURATION**, vérifiez qu'une carte de paiement est enregistrée au niveau du compte ou du point de vente. Si tel n'est pas le cas, consultez les instructions indiquées à la rubrique [Ajouter une méthode de paiement](#add-payment-method).
+1. Cliquez sur **la payer en ligne ou télécharger le PDF**, puis sur **Payer**.
+1. Pour consulter toutes les demandes de paiement, allez dans **PARAMÈTRES**.
 
 ---
 
-**FAQ associée** : [Que se passe-t-il en cas de dépassement de quota de ma formule gratuite ?](/docs/faqs/free-plan-quota-exceeded-what-happens), [Comment payer ma première facture ?](/docs/faqs/pay-first-invoice), [Ma formule peut-elle être interrompue durant les phases de configuration et de test ?](/docs/faqs/pause-plan-during-setup-and-test-phases)
+**FAQ associée**: [Que se passe-t-il en cas de dépassement de quota de ma formule gratuite ?](/docs/faqs/free-plan-quota-exceeded-what-happens), [Comment payer ma première facture ?](/docs/faqs/pay-first-invoice), [Ma formule peut-elle être interrompue pendant les phases de configuration et de test ?](/docs/faqs/pause-plan-during-setup-and-test-phases)
 
 ---
+
+## 3D Secure
+
+Pour se conformer aux protocoles bancaires 3D Secure, qui améliorent la sécurité des paiements en ligne, la **Demande de Paiement** initiale nécessite un paiement manuel sur HubRise. Cela signifie que vous devez vous connecter à votre compte HubRise pour payer.
+
+Une fois ce paiement initial effectué, les paiements à HubRise seront automatisés jusqu'à ce que vous changiez de formule d'utilisation ou que votre méthode de paiement arrive à expiration. Pour plus d'informations sur les formules d'utilisation de HubRise, voir la rubrique [Utilisation et formule](/docs/usage-plan).
+
+Occasionnellement, votre banque peut à nouveau demander une authentification 3D Secure. Quand cela se produit, un e-mail automatisé sera envoyé à tous les utilisateurs **Admin** pour leur demander de traiter le paiement manuellement. Si vous êtes fréquemment invité à effectuer des paiements manuels, essayez de contacter votre banque lui demander d'accepter les prélèvements de HubRise sur votre carte.
 
 ## Historique de paiement
 
