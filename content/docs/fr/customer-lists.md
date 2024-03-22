@@ -1,11 +1,11 @@
 ---
 title: Listes de clients
 path_override: listes-clients
-position: 13
+position: 14
 layout: documentation
 meta:
   title: Listes de clients | HubRise
-  description: Gestion des listes de clients sur HubRise. Visualiser leur contenu. Ajouter ou supprimer des listes de clients. Convention de nommage pour mieux s'y retrouver.
+  description: Gestion des listes de clients sur HubRise.
 ---
 
 La section **Liste de clients** de la page **CONFIGURATION** vous permet d'ajouter, modifier et supprimer des listes de clients.
