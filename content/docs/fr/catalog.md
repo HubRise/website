@@ -1,14 +1,16 @@
 ---
 title: Catalogues
-path_override: catalogues
-position: 12
+path_override: catalogue
+position: 13
 layout: documentation
 meta:
-  title: Catalogues | HubRise
-  description: Gestion des catalogues sur HubRise. Visualiser leur contenu. Ajouter ou supprimer des catalogues. Convention de nommage des catalogues pour mieux s'y retrouver.
+  title: Présentation générale | Catalog Manager | HubRise
+  description: Gestion des catalogues sur HubRise.
 ---
 
-La section **Catalogues** de la page **CONFIGURATION** vous permet de créer, modifier ou supprimer les catalogues utilisés par votre compte HubRise.
+La section **Catalogues** de la page **CONFIGURATION** vous permet de créer, renommer, modifier ou supprimer les catalogues utilisés par votre compte HubRise.
+
+Pour apporter des modifications aux produits d'un catalogue, vous devrez lier votre compte HubRise à des applications tierces. Vous pouvez également utiliser notre application **Catalog Manager**, une application gratuite incluse dans votre abonnement HubRise. Pour plus d'informations, voir [Catalog Manager](/apps/catalog-manager/overview).
 
 Les règles applicables aux catalogues sont les suivantes :
 
@@ -19,10 +21,6 @@ Les règles applicables aux catalogues sont les suivantes :
   - Vous pouvez créer des catalogues pour un point de vente particulier qui propose des produits différents de ceux d'autres points de vente.
 
 ![Exemple de règles de catalogue](./images/047-2x-catalog-rules.png)
-
-Vous pouvez connecter des applications intégrées à un catalogue spécifique afin d'y transférer ou d'en extraire des données. Vous pouvez modifier et gérer les produits d'un catalogue HubRise uniquement à partir d'applications tierces, ou avec le **Catalog Manager** HubRise connecté à votre compte HubRise.
-
-La suppression d'un catalogue de HubRise n'affecte pas la liste des produits contenus dans les applications tierces.
 
 ## Ajouter un catalogue {#add}
 
@@ -44,7 +42,7 @@ Les informations suivantes apparaissent dans la section **CONFIGURATION** > **Ca
 
 Pour afficher le contenu d'un catalogue, cliquez sur le nom de celui-ci. Vous serez alors redirigé vers l'écran **DONNÉES** > **Catalogue** du catalogue concerné.
 
-## Modifier le nom d'un catalogue
+## Renommer un catalogue
 
 Les catalogues peuvent être renommés afin de répondre à des besoins particuliers, tels que l'étiquetage d'un catalogue à des fins de test, ou pour les produits proposés par un point de venue ou dans une solution spécifique. La modification du nom d'un catalogue n'affecte pas les applications qui utilisent celui-ci.
 
@@ -66,7 +64,7 @@ Les catalogues peuvent être supprimés de HubRise lorsque les critères suivant
 - Aucune connexion au catalogue depuis une application n'est active.
 - Le dernier catalogue disponible au niveau du compte ne peut pas être supprimé.
 
-La suppression d'un catalogue dans HubRise n'affecte pas la liste des produits contenus dans les applications tierces.
+La suppression d'un catalogue HubRise n'affecte pas la liste des produits contenus dans les applications tierces.
 
 Pour supprimer un catalogue, procédez comme suit :
 

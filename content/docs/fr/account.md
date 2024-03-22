@@ -5,7 +5,7 @@ position: 7
 layout: documentation
 meta:
   title: Comptes | HubRise
-  description: Gestion des comptes sur HubRise. Créer son compte, le paramétrer et le modifier. Conventions de nommage d'un compte HubRise pour faciliter le travail de support.
+  description: Comment gérer les comptes HubRise. Créez votre compte, configurez-le et modifiez-le. Suivez les conventions de nommage standard pour faciliter le travail de support.
 ---
 
 Un compte correspond à votre marque et comprend un ou plusieurs points de vente. Les utilisateurs de HubRise peuvent avoir accès à un ou plusieurs comptes. Pour passer d'un compte à un autre, utilisez la liste déroulante **Compte** située tout en haut du back-office de HubRise.
@@ -53,7 +53,7 @@ Enfin, saisissez la **devise** correcte du marché sur lequel vous opérez.
 
 ---
 
-**FAQ associée** : [J'ai trop de comptes pour mon entreprise sur HubRise. Comment faire un nettoyage ?](/docs/faqs/how-can-i-clear-accounts)
+**FAQ associée**: [J'ai trop de comptes pour mon entreprise sur HubRise. Comment faire un nettoyage ?](/docs/faqs/how-can-i-clear-accounts)
 
 ---
 
