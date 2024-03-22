@@ -27,7 +27,7 @@ Pour afficher les détails relatifs à l'utilisation d'un compte ou d'un point d
 
 ## Formule d'utilisation {#plan}
 
-HubRise propose des formules gratuites et payantes pour ses services. Pour obtenir des informations complètes sur les formules et la tarification, consultez la [page de tarifs de HubRise](/tarifs).
+HubRise propose des formules gratuites et payantes pour ses services. Pour obtenir des informations complètes sur les formules et la tarification, consultez la [page de tarifs de HubRise](/pricing/).
 
 Des formules gratuites sont disponibles pour les points de vente effectuant un nombre limité de transactions par mois. Une fois cette limite atteinte, les utilisateurs du compte et du point de vente de niveau Administrateur sont informés par e-mail et doivent passer au niveau payant s'ils souhaitent continuer à bénéficier du service.
 
