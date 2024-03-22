@@ -24,7 +24,7 @@ Les points de vente sont affichés avec :
 
 ---
 
-**REMARQUE IMPORTANTE** : pour connaître la convention de dénomination recommandée pour les points de vente, voir la rubrique [Créer un point de vente](/docs/locations#add-location).
+**REMARQUE IMPORTANTE** : pour connaître la convention de nomination recommandée pour les points de vente, voir la rubrique [Créer un point de vente](/docs/locations#add-location).
 
 ---
 
@@ -38,7 +38,7 @@ Pour afficher les détails du point de vente, procédez comme suit :
 
 Les points de vente sont gérés de la même manière que les comptes, mais les informations sont spécifiques au point de vente sélectionné.
 
-Des configurations différentes pour des points de vente spécifiques vous permettent de paramétrer des [modes de paiement distincts suivant le point de vente](/docs/payment#account-or-location-payments), des [permissions](/docs/permissions) différentes pour chaque utilisateur, et ainsi de suite. Pour plus d'informations, voir la rubrique [Comptes](/docs/account).
+Des configurations différentes pour des points de vente spécifiques vous permettent de paramétrer des [modes de paiement distincts suivant le point de vente](/docs/paiement#paiements-au-niveau-du-compte-ou-du-point-de-vente), des [permissions](/docs/permissions/) différentes pour chaque utilisateur, et ainsi de suite. Pour plus d'informations, voir la rubrique [Comptes](/docs/account/).
 
 Dans le cas où vous exercez votre activité dans un pays où l'inclusion du numéro de TVA intracommunautaire constitution une obligation légale, HubRise affichera une notification pour vous inviter à mettre à jour le numéro de TVA si cette information n'apparaît pas dans votre compte.
 
@@ -48,7 +48,7 @@ Dans le cas où vous exercez votre activité dans un pays où l'inclusion du num
 
 ---
 
-## Créer un point de vente {#add-location}
+## Ajouter un point de vente {#add-location}
 
 Le premier point de vente est créé en même temps que le compte. Pour plus d'informations, voir la rubrique [Créer un compte](/docs/account#create-account).
 
