@@ -32,11 +32,30 @@ Pour mettre à jour votre profil utilisateur, procédez comme suit :
 Pour mettre à jour votre mot de passe, procédez comme suit :
 
 1. Cliquez sur votre nom dans le coin supérieur droit du back-office de HubRise, puis cliquez sur **Profil**.
-1. Saisissez le mot de passe en cours dans le champ **Mot de passe actuel**.
-1. Saisissez votre nouveau mot de passe dans les champs **Nouveau mot de passe** et **Confirmer le nouveau mot de passe**. Les deux champs doivent correspondre.
-1. Cliquez sur **Mettre à jour**.
+2. Cliquez sur **Changer le mot de passe**.
+3. Saisissez le mot de passe en cours dans le champ **Mot de passe actuel**.
+4. Saisissez votre nouveau mot de passe dans les champs **Nouveau mot de passe** et **Confirmer le nouveau mot de passe**. Les deux champs doivent correspondre.
+5. Cliquez sur **Mettre à jour**.
+
+---
+
+**REMARQUE IMPORTANTE**: Si vous soupçonnez que votre mot de passe a été compromis, il est fortement recommandé de vous déconnecter de tous les appareils après avoir mis à jour votre mot de passe. Référez-vous à la rubrique [Déconnexion de tous les appareils](#logout-from-all-devices) ci-dessous pour plus d'informations.
+
+---
 
 ![Modifier le mot de passe de HubRise](./images/055-2x-change-password.png)
+
+## Déconnexion de tous les appareils {#logout-from-all-devices}
+
+Si votre compte HubRise est connecté sur plusieurs appareils, vous pouvez vous déconnecter de tous les appareils en même temps. Ceci est utile si vous avez perdu un appareil, ou si vous voulez empêcher quelqu'un d'autre d'accéder à votre compte.
+
+Déconnexion de tous les appareils :
+
+1. Cliquez sur votre nom dans le coin supérieur droit du back-office de HubRise, puis cliquez sur **Profil**.
+2. Cliquez sur **Déconnexion de tous les appareils**.
+3. Cliquez sur **Confirmer**.
+
+Cela vous déconnectera instantanément de tous les appareils sur lesquels votre compte HubRise est actif. Vous aurez besoin de votre mot de passe pour vous connecter à nouveau.
 
 ## Permissions des utilisateurs
 

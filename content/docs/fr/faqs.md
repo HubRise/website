@@ -17,6 +17,7 @@ meta:
 - [Comment vérifier si j'ai déjà un profil d'utilisateur dans HubRise ?](/docs/faqs/check-if-i-already-have-a-user-profile-in-hubrise)
 - [J'ai perdu mon mot de passe. Comment le réinitialiser ?](/docs/faqs/recover-lost-password-in-hubrise)
 - [Comment vérifier que la connexion entre mon système et HubRise fonctionne correctement ?](/docs/faqs/check-connection-between-my-system-and-hubrise)
+- [Comment créer un compte pour une autre entreprise sans partager l'accès ?](/docs/faqs/create-an-account-for-another-business-no-access-sharing)
+- [Comment créer un compte pour une autre entreprise et partager l'accès ?](/docs/faqs/create-an-account-for-another-business-share-access)
 - [Comment créer un profil utilisateur pour quelqu'un d'autre ?](/docs/faqs/create-a-user-profile-for-another-person)
-- [Comment créer un compte pour une autre entreprise ?](/docs/faqs/create-an-account-for-another-business)
 - [Comment connecter plusieurs fois la même application ?](/docs/faqs/connect-multiple-instances-same-app)

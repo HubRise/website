@@ -15,9 +15,9 @@ Il existe différents moyens de vérifier que la connexion entre votre système 
 Si des commandes sont passées dans une application connectée, elles peuvent être visualisées dans HubRise en procédant comme suit :
 
 1. Cliquez sur **COMMANDES**.
-1. Si vous avez accès à plusieurs comptes, sélectionnez celui que vous avez besoin de vérifier.
-1. Pour voir toutes les commandes qui transitent par le compte, vérifiez que **Tous les points de vente** est sélectionné. Vous pouvez aussi sélectionner le lieu à visualiser dans la liste des **points de vente** pour affiner votre recherche.
-1. Si des transactions sont effectuées, vous les verrez apparaître ici. Les commandes sont indiquées par ordre chronologique inverse.
+2. Si vous avez accès à plusieurs comptes, sélectionnez celui que vous avez besoin de vérifier.
+3. Pour voir toutes les commandes qui transitent par le compte, vérifiez que **Tous les points de vente** est sélectionné. Vous pouvez aussi sélectionner le lieu à visualiser dans la liste des **points de vente** pour affiner votre recherche.
+4. Si des transactions sont effectuées, vous les verrez apparaître ici. Les commandes sont indiquées par ordre chronologique inverse.
 
 Pour plus de détails, voir la rubrique [Commandes](/docs/data#orders).
 
@@ -26,7 +26,7 @@ Pour plus de détails, voir la rubrique [Commandes](/docs/data#orders).
 Chaque application affiche l'activité la plus récente sous forme de graphique. Pour contrôler l'activité d'une application spécifique, procédez comme suit :
 
 1. Cliquez sur **CONNEXIONS**.
-1. Pour l'application concernée, cliquez sur **Actions** > **Voir l'activité**.
+2. Pour l'application concernée, cliquez sur **Actions** > **Voir l'activité**.
 
 Pour plus d'informations, voir la rubrique [Afficher l'activité de connexion](/docs/connections#connection-activity).
 
@@ -35,7 +35,7 @@ Pour plus d'informations, voir la rubrique [Afficher l'activité de connexion](/
 Les applications connectées à HubRise génèrent des fichiers journaux qui permettent d'afficher les demandes les plus récentes, ainsi que les détails correspondants. Pour afficher les logs d'une application, procédez comme suit :
 
 1. Cliquez sur **CONNEXIONS**.
-1. Pour l'application concernée, cliquez sur **Actions** > **Voir les logs**.
+2. Pour l'application concernée, cliquez sur **Actions** > **Voir les logs**.
 
 Pour plus d'informations, voir la rubrique [Afficher les logs de connexion](/docs/connections#connection-logs).
 

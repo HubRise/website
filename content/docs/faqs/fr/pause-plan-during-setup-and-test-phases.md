@@ -4,8 +4,8 @@ path_override: formule-interrompue-pendant-les-phases-de-configuration-et-de-tes
 position: 50
 layout: documentation
 meta:
-  title: Formule interrompue pendant la phase de test | HubRise
-  description: HubRise offre une première formule avec quelques commandes gratuites. Votre formule peut cependant interrompue pendant les phases de configuration et de test.
+  title: Suspendre la mise à jour de la formule pour les tests| HubRise
+  description: HubRise fournit une formule gratuite avec un quota suffisant pour les tests. Dans le cas contraire, vous pouvez demander à HubRise de mettre votre formule en pause pendant la phase de test.
 ---
 
 HubRise fournit une formule gratuite qui comprend un quota limité de commandes et de clients chaque mois. Dans la plupart des cas, ce nombre est suffisant pour établir ou tester une connexion. HubRise peut suspendre le changement à une formule payante lorsque les conditions suivantes se présentent :

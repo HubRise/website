@@ -1,11 +1,11 @@
 ---
 title: Que se passe-t-il en cas de dépassement de quota de ma formule gratuite ?
-path_override: formule-gratuite-quota-depasse-ce-qui-se-passe
+path_override: formule-gratuite-quota-depasse-que-faire
 position: 10
 layout: documentation
 meta:
   title: Passage de formule gratuite à une formule payante | HubRise
-  description: HubRise offre une formule gratuite avec un quota. Voir comment passer à une formule payante lorsque la formule gratuite a atteint son quota d'utilisation mensuel.
+  description: HubRise offre une formule gratuite comprenant un quota d'utilisation mensuel. Voir comment passer à une formule payante lorsque la formule gratuite a atteint son quota d'utilisation mensuel.
 ---
 
 HubRise offre une formule gratuite comprenant un quota d'utilisation mensuel. Lorsqu'une formule gratuite a atteint ce quota d'utilisation, le compte passe de la formule gratuite vers la formule payante. Pour plus d'informations sur la tarification de HubRise, consultez la [page de tarifs de HubRise](/tarifs).
