@@ -44,7 +44,7 @@ Seule l'équipe de support de SOLUTION peut connecter SOLUTION à HubRise.
 
 Pour connecter SOLUTION à HubRise, procédez comme suit :
 
-1. Donnez accès à votre compte à l'équipe support de SOLUTION. Pour plus d'information, voir [Donner accès au support de SOLUTION](#give-acces).
+1. Donnez accès à votre compte HubRise à l'équipe de support SOLUTION. Pour plus d'information, voir [Donner accès au support de SOLUTION](#give-access).
 1. Contactez l'équipe de support de SOLUTION qui se chargera d'établir la connexion à HubRise. Pour plus d'information, voir [Contacter le support de SOLUTION](#contact).
 
 ## Donner accès au support de SOLUTION {#give-access}
@@ -65,7 +65,7 @@ L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers �
 
 Pour demander la connexion de SOLUTION à HubRise, contactez l'équipe de support de SOLUTION par email sur contact@solution.com. Vous pouvez inclure support@hubrise.com en copie pour un suivi coordonné entre nos deux équipes.
 
-Indiquez dans votre demande le nom de votre compte HubRise, son identifiant HubRise et le point de vente à connecter. Pour plus d'informations voir [Nom et identifiant du point de vente](/docs/points-de-vente#location-name-and-id).
+Indiquez dans votre demande le nom de votre compte HubRise, son identifiant HubRise et le point de vente à connecter. Pour plus d'informations voir [Nom et identifiant du point de vente](/docs/locations#location-name-and-id).
 
 ## Déconnecter SOLUTION
 
@@ -74,4 +74,6 @@ Indiquez dans votre demande le nom de votre compte HubRise, son identifiant HubR
 
 -- OU --
 
-Vous pouvez bloquer les échanges de données entre SOLUTION et HubRise, ou déconnecter lSOLUTION, depuis le back office de HubRise. Pour plus d'information, voir [Bloquer ou déconnecter une application](/docs/connexions#bloquer-ou-d-connecter-une-application).
+Pour déconnecter SOLUTION de HubRise, contactez le support de SOLUTION.
+
+Si vous avez besoin d'arrêter temporairement [la réception de commandes depuis HubRise], vous pouvez simplement bloquer la connexion entre SOLUTION et HubRise. Pour plus d'informations, voir [Bloquer ou déconnecter une application](/docs/connections#block-or-disconnect).
