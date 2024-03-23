@@ -28,8 +28,8 @@ Pour attacher une entité à votre compte de facturation, suivez ces étapes :
 2. Sélectionnez votre compte de facturation HubRise. Ce compte aura le nom de votre entreprise suivi de **Billing**.
 3. Naviguez vers la page **CONFIGURATION**.
 4. Cliquez sur **Attacher une entité**.
-5. Choisissez d'**Attacher un compte** ou **Attacher un point de vente**, en fonction de vos besoins.
-6. Trouve l'entité à attacher grâce au menu déroulant **Sélectionner**. Cette liste affichera uniquement les comptes et les points de vente auxquels vous avez accès, et qui ne sont pas déjà attachés.
+5. Choisissez **Attacher un compte** ou **Attacher un point de vente** en fonction de vos besoins.
+6. Trouvez l'entité à attacher grâce au menu déroulant **Sélectionner**. Cette liste affichera uniquement les comptes et les points de vente auxquels vous avez accès, et qui ne sont pas déjà attachés.
 7. Cliquez sur **Attacher**.
 8. Répétez cette tâche autant de fois que nécessaire.
 9. Retournez à votre page de **CONFIGURATION** et vérifiez que toutes les entités que vous avez attachées sont visibles dans la section **Entités rattachées à ce compte de facturation**.

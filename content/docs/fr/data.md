@@ -1,6 +1,6 @@
 ---
 title: Données
-path_override: data
+path_override: donnees
 position: 5
 layout: documentation
 meta:
@@ -24,14 +24,14 @@ La page **COMMANDES** affiche les commandes dans l'ordre inverse de leur date de
 Pour filtrer les commandes par dates de début et de fin, procédez comme suit :
 
 1. Sélectionnez les champs **Du** et **Au** et définissez les plages de dates à filtrer.
-1. Sélectionnez l'icône de recherche <InlineImage width="17" height="17">!\[Icône Rechercher\](../images/061-search.png)</InlineImage> pour filtrer les enregistrements d'après ces dates.
-1. Pour effacer les filtres de date, supprimez les dates contenues dans les champs **Du** et **Au**, puis sélectionnez l'icône de recherche <InlineImage width="17" height="17">!\[Icône Rechercher\](../images/061-search.png)</InlineImage>.
+1. Sélectionnez l'icône de recherche <InlineImage width="17" height="17">![Icône Rechercher](../images/061-search.png)</InlineImage> pour filtrer les enregistrements d'après ces dates.
+1. Pour effacer les filtres de date, supprimez les dates contenues dans les champs **Du** et **Au**, puis sélectionnez l'icône de recherche <InlineImage width="17" height="17">![Icône Rechercher](../images/061-search.png)</InlineImage>.
 
 Cliquez sur la date de la commande pour afficher les détails complets. Pour afficher les détails complets de la requête, cliquez sur la date et l'heure dans la section **Logs**. Pour plus d'informations, voir [Logs](/docs/data#logs).
 
 ---
 
-**FAQ associée** : [Comment vérifier que la connexion entre mon système et HubRise fonctionne correctement ?](/docs/faqs/verifier-connexion-entre-mon-systeme-et-hubrise/)
+**FAQ associée** : [Comment vérifier que la connexion entre mon système et HubRise fonctionne correctement ?](/docs/faqs/check-connection-between-my-system-and-hubrise)
 
 ---
 
@@ -51,11 +51,11 @@ Pour filtrer les clients par nom ou adresse e-mail, procédez comme suit :
 1. S'il existe plusieurs listes de clients associées au compte ou au point de vente, sélectionnez la liste déroulante en regard de l'intitulé **Clients**, puis sélectionnez la liste de clients à afficher.
 1. Cliquez sur le champ **Rechercher par nom ou email** et saisissez le texte à rechercher.
 1. Sélectionnez l'icône de recherche pour filtrer les enregistrements de client.
-1. Pour revenir à la liste clients complète et non filtrée, supprimez tout le texte contenu dans le champ **Rechercher par nom ou email**, puis sélectionnez l'icône de recherche <InlineImage width="17" height="17">!\[Icône Rechercher\](../images/061-search.png)</InlineImage>.
+1. Pour revenir à la liste clients complète et non filtrée, supprimez tout le texte contenu dans le champ **Rechercher par nom ou email**, puis sélectionnez l'icône de recherche <InlineImage width="17" height="17">![Icône Rechercher](../images/061-search.png)</InlineImage>.
 
 Pour afficher les détails complets d'un client, cliquez sur le nom de celui-ci. Pour voir les logs complets de toutes les requêtes liées à la liste de clients, cliquez sur **Voir les logs**.
 
-Pour créer, modifier ou supprimer une liste de clients, voir [Listes de clients](/docs/listes-clients/).
+Pour créer, modifier ou supprimer une liste de clients, voir [Listes de clients](/docs/customer-lists).
 
 ## Catalogues {#catalogs}
 
@@ -70,8 +70,8 @@ Les comptes et les points de vente peuvent contenir plusieurs catalogues. Pour a
 Les catalogues sont présentés dans trois onglets :
 
 - **SKUS** : articles que vous vendez aux clients.
-- **PROMOTIONS** : offres spéciales disponibles dans le catalogue. Les codes de remise s'appliquent non pas à des produits spécifiques, mais à l'ensemble de la commande. Cela pourrait être une formule avec trois services (entrée, plat principal et dessert) et des offres telles que **Un acheté - Un offert**.
-- **REMISES** : rabais disponibles dans le catalogue. Les remise s'appliquent non pas à des produits spécifiques, mais à l'ensemble de la commande. Le code **FREEDELIVERY**, par exemple, peut supprimer les frais de livraison pour l'ensemble de la commande, tandis que le code **FRIDAY** peut offrir une remise de 10 % sur l'ensemble de la commande le vendredi.
+- **PROMOTIONS** : offres spéciales disponibles dans le catalogue. Les promotions s'appliquent non pas à des produits spécifiques, mais à l'ensemble de la commande. Cela pourrait être une formule avec trois services (entrée, plat principal et dessert) et des offres telles que **Un acheté - Un offert**.
+- **REMISES** : rabais disponibles dans le catalogue. Les remise s'appliquent non pas à des produits spécifiques, mais à l'ensemble de la commande. Le code **LIVRAISON-OFFERTE**, par exemple, peut supprimer les frais de livraison pour l'ensemble de la commande, tandis que le code **C'EST-VENDREDI** peut offrir une remise de 10 % sur l'ensemble de la commande le vendredi.
 
 ![Onglets du catalogue HubRise](./images/053-2x-catalog-tabs.png)
 
@@ -90,7 +90,7 @@ Pour les promotions et les remises, les attributs suivants s'affichent :
 
 Pour voir les logs complets de toutes les requêtes liées au catalogue, cliquez sur **Voir les logs**. Pour plus d'informations, voir [Logs](/docs/data#logs).
 
-Pour créer, modifier ou supprimer un catalogue, voir [Catalogues](/docs/catalogues/).
+Pour créer, modifier ou supprimer un catalogue, voir [Catalogues](/docs/catalog).
 
 ## Inventaire
 
@@ -124,7 +124,7 @@ La page de logs affiche une liste récapitulative des requêtes par ordre chrono
 D'autres détails sur les logs sont disponibles à l'intention des utilisateurs avancés et des développeurs pour leur permettre de visualiser les communications entre les applications et de résoudre les problèmes. Pour afficher les détails d'une entrée parmi les logs, procédez comme suit :
 
 1. Cliquez sur la ligne à afficher. La liste complète des détails relatifs à la requête et à la réponse s'affiche.
-1. Pour télécharger la requête ou la réponse, sélectionnez l'icône de téléchargement <InlineImage width="15" height="14">!\[Icône de téléchargement\](../images/058-download.png)</InlineImage>. La requête ou la réponse sélectionnée sera délivrée sous forme de fichier JSON.
+1. Pour télécharger la requête ou la réponse, sélectionnez l'icône de téléchargement <InlineImage width="15" height="14">![Icône de téléchargement](../images/058-download.png)</InlineImage>. La requête ou la réponse sélectionnée sera délivrée sous forme de fichier JSON.
 
 Les logs peuvent être filtrés en fonction de critères spécifiques, y compris la ressource, la méthode et la plage horaire. Pour filtrer les logs :
 
