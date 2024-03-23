@@ -12,7 +12,7 @@ gallery:
 app_info:
   category: Middleware (plateforme logicielle intermédiaire)
   availability: Monde
-  price_range: "€35 / par mois"
+  price_range: "35€ / par mois"
   contact: contact@hubrise.com / support@hubrise.com
 ---
 

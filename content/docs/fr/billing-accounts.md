@@ -1,6 +1,6 @@
 ---
-title: Compte de facturation
-path_override: compte-facturation
+title: Comptes de facturation
+path_override: comptes-facturation
 position: 11
 layout: documentation
 meta:

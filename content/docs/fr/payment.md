@@ -8,7 +8,7 @@ meta:
   description: Comment gérer les paiements et les factures sur HubRise.
 ---
 
-Les comptes et les points de vente configurés avec une formule payante font l'objet d'un paiement mensuel à HubRise lorsqu'ils dépassent la limite d'[utilisation](/docs/usage-plan#plan) gratuite. Pour obtenir des informations complètes sur les prix, consultez la [page de tarifs de HubRise](/pricing).
+Les comptes et les points de vente configurés avec une formule payante font l'objet d'un paiement mensuel à HubRise lorsqu'ils dépassent la limite d'[utilisation](/docs/usage-plan#plan) gratuite. Pour obtenir des informations complètes sur les prix, consultez la [page de tarifs de HubRise](/tarifs).
 
 Vous pouvez configurer votre méthode de paiement dans la section **CONFIGURATION** > **Paiement**. Pour automatiser les paiements, vous devez disposer d'une carte de crédit. Les prélèvements SEPA ne sont pas possibles. Le virement bancaire est accepté en cas d'engagement sur 12 mois minimum.
 
@@ -136,7 +136,7 @@ L'historique de paiement relatif aux comptes regroupe les paiements au niveau du
 
 ![Exemple d'historique de paiement](./images/044-2x-payment-history.png)
 
-La première fois que vous effectuez un paiement, celui-ci est indiqué en tant que **Changement de formule**. Par la suite, les paiements seront répertoriés selon la date de la [période de facturation](docs/payment#billing-cycles). Une fois que vous avez enregistré une méthode de paiement valide, les paiements sont automatisés.
+La première fois que vous effectuez un paiement, celui-ci est indiqué en tant que **Changement de formule**. Par la suite, les paiements seront répertoriés selon la date de la [période de facturation](/docs/payment#billing-cycles). Une fois que vous avez enregistré une méthode de paiement valide, les paiements sont automatisés.
 
 Le détail de chaque facture est consultable directement sur le back-office de HubRise en cliquant sur la date. Pour chaque paiement, les informations suivantes sont indiquées :
 

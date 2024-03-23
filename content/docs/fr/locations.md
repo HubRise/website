@@ -38,7 +38,7 @@ Pour afficher les détails du point de vente, procédez comme suit :
 
 Les points de vente sont gérés de la même manière que les comptes, mais les informations sont spécifiques au point de vente sélectionné.
 
-Des configurations différentes pour des points de vente spécifiques vous permettent de paramétrer des [modes de paiement distincts suivant le point de vente](/docs/paiement#paiements-au-niveau-du-compte-ou-du-point-de-vente), des [permissions](/docs/permissions/) différentes pour chaque utilisateur, et ainsi de suite. Pour plus d'informations, voir la rubrique [Comptes](/docs/account/).
+Des configurations différentes pour des points de vente spécifiques vous permettent de paramétrer des [modes de paiement distincts suivant le point de vente](/docs/payment#account-or-location-payments), des [permissions](/docs/permissions) différentes pour chaque utilisateur, et ainsi de suite. Pour plus d'informations, voir la rubrique [Comptes](/docs/account/).
 
 Dans le cas où vous exercez votre activité dans un pays où l'inclusion du numéro de TVA intracommunautaire constitution une obligation légale, HubRise affichera une notification pour vous inviter à mettre à jour le numéro de TVA si cette information n'apparaît pas dans votre compte.
 

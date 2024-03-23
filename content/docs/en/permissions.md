@@ -47,6 +47,6 @@ To remove a user:
 
 ---
 
-**IMPORTANT NOTE**: An account cannot be left without Admin. Before you remove your user profile from an Account make sure there is an Admin user with permissions. If not, you can change permissions of an existing user or give Admin permissions to **test@hubrise.com**.
+**IMPORTANT NOTE**: An account cannot be left without Admin. Before you remove your user profile from an Account make sure there is an Admin user with permissions. If not, you can change permissions of an existing user or give Admin permissions to test@hubrise.com.
 
 ---
