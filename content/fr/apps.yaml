@@ -381,6 +381,12 @@ content:
           title: RestaJet
           description: RestaJet propose une application mobile pour les réservations et un site de commande en ligne pour les restaurants. Des outils de gestion de contenu et de marketing sont disponibles sur la console RestaJet.
           additional_info:
+        - website: https://www.restaur-app.fr/
+          documentation: /fr/apps/restaur-app
+          logo: restaur-app.png
+          title: Restaur'App
+          description: Restaur'App propose une solution dédiée à la restauration rapide et à la vente à emporter. Elle permet aux restaurateurs de disposer de leur propre site web et application mobile pour présenter leur établissement et gérer les commandes en ligne, ainsi que les livraisons, sans commission sur les ventes.
+          additional_info: Intégration en cours.
         - website: https://restaurant-internet.com
           documentation: /fr/apps/restaurant-internet
           logo: restaurant-internet.png
