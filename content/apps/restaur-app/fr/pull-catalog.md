@@ -23,6 +23,8 @@ Pour récupérer un catalogue HubRise dans Restaur'App :
 1. Section **IMPORT CATALOGUE** > **Variante du catalogue à importer**, sélectionnez la variante que vous souhaitez importer dans la liste déroulante. Pour plus d'informations voir [Variantes](/apps/catalog-manager/variants).
 1. À la question **Êtes-vous sûr de vouloir importer le catalogue ?**, sélectionnez **Oui**.
 
+![Import du catalogue HubRise dans Restaur'App](./images/005-2x-restaur-app-catalog-pull.png)
+
 ***
 
 **REMARQUE IMPORTANTE :** La récupération d'un catalogue HubRise écrase tous les produits existants dans Restaur'App. Cette action est irréversible.

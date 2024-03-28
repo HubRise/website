@@ -28,7 +28,7 @@ Pour connecter Restaur'App à HubRise, suivez ces étapes :
 1. Cliquez sur **Autoriser**.
 1. Vous êtes redirigé vers l'interface de Restaur'App, et la connexion à HubRise est établie.
 
-![Connecter Restaur'App à HubRise](./images/001-2x-restaur-app-services-tiers.png)
+![Connecter Restaur'App à HubRise](./images/001-2x-restaur-app-services-type.png)
 
 
 Vous pouvez également confier cette tâche à Restaur'App. 

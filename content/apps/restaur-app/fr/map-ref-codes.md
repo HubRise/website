@@ -61,7 +61,7 @@ Pour ajouter un code ref à une promotion, suivez ces étapes :
 
 ***
 
-![Associer les codes ref caisse dans Restaur'App](./images/002-2x-restaur-app-services-tiers-code-caisse.png)
+![Associer les codes ref caisse dans Restaur'App](./images/002-2x-restaur-app-services-type-ref-code.png)
 
 ## Moyens de paiement
 
