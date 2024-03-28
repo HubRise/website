@@ -1009,7 +1009,7 @@ The `driver_latitude` and `driver_longitude` fields are typically updated at a h
 
 Add or remove points to a customer's loyalty card(s).
 
-Each operation is linked to a loyalty card, uniquely identified by its name. If a card does not exist with this name, it is created automatically with an initial balance equal to 0.0
+Each operation is linked to a loyalty card, uniquely identified by its ref. If a card does not exist with this ref, it is created automatically with an initial balance equal to 0.0
 
 Each loyalty operation triggers the automatic recalculation of the loyalty card balance.
 
