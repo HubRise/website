@@ -37,8 +37,8 @@ jobs:
       - name: Run Cypress test suite
         run: yarn cypress:run
 
-      - name: On failure, upload Cypress screenshots and videos
-        if: failure()
+      - name: Upload Cypress screenshots and videos for failed tests
+        if: always()
         uses: actions/upload-artifact@v3
         with:
           name: cypress-failures
