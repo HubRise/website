@@ -130,7 +130,7 @@ Un produit peut avoir au maximum une option rattachée.
 
 <details>
 
-Voici un exemple de requête contenant un article unique avec une option.
+<summary>Exemple de JSON contenant un article unique avec une option</summary>
 
 ```json
 "items": [
@@ -180,7 +180,7 @@ Les champs disponibles dans les requêtes sont les suivants :
 
 <details>
 
-Voici un exemple de requête pour les frais.
+<summary>Exemple de JSON pour les frais</summary>
 
 ```json
 "charges": [
