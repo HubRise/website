@@ -13,18 +13,17 @@ app_info:
   category: Delivery Management
   availability: Worldwide (English UI and support)
   price_range:
-  website: http://www.captain.ai
+  website: https://www.captain.ai
   contact:
 ---
 
 ## Description
 
-Captain’s delivery management software is designed specifically for restaurants and restaurant chains.
-It provides tools for team members at each stage of the delivery process. Captain's technology enables restaurants to offer a seamless delivery service and enhance customer experience.
+Captain's delivery management software is designed specifically for restaurants and restaurant chains. It provides tools for team members at each stage of the delivery process. Captain's technology enables restaurants to offer a seamless delivery service and enhance customer experience.
 
 Captain offers a suite of apps that facilitate execution throughout all stages of the order lifecycle:
 
-- **Kitchen App**: Captain's Kitchen Display System communicates with Dispatch, their delivery management software. It helps prioritise cooking sequence based on which orders will be delivered together, in the same route. This enables chefs to prepare food at the right time and in the right sequence to maximise delivered food quality.
+- **Kitchen App**: Captain's Kitchen Display System communicates with Dispatch, our delivery management software. It helps prioritise cooking sequence based on which orders will be delivered together, in the same route. This enables chefs to prepare food at the right time and in the right sequence to maximise delivered food quality.
 - **Dispatch App**: Assign orders to drivers using the Dispatch App in manual, co-pilot, or autopilot modes. It helps decrease driver wait times, improve delivery times, and plan routes for better fuel usage.
 - **FleetShare**: This add-on feature allows you to outsource orders to white-label delivery providers for a flat fee.
 - **Driver App**: Designed for ease of use, the Driver App helps drivers find orders assigned to them and pre-defined delivery routes. It aims to increase driver's efficiency while reducing delivery times and fuel consumption.
