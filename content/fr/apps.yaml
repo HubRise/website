@@ -393,6 +393,12 @@ content:
           title: Restaurant-internet
           description: Restaurant-internet propose un site vitrine avec réservation de table et solution de commande en ligne. La solution couvre en particulier les besoins de la livraison à domicile et la vente à emporter.
           additional_info:
+        - website: https://servier.bar
+          documentation: /fr/apps/servier-bar
+          logo: servier-bar.png
+          title: servier.bar
+          description: Servier.bar propose des solutions de commande conçues pour les restaurants et les hôtels. Ces solutions permettent aux clients de commander et de payer directement depuis leurs smartphones via une application web, pour améliorer le service sans embaucher de personnel supplémentaire.
+          additional_info:
         - website: https://www.shopify.com/
           documentation: /fr/apps/shopify
           logo: shopify.png
