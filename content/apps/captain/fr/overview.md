@@ -8,7 +8,7 @@ meta:
   description: Présentation générale de Captain, les raisons de le connecter à HubRise et fonctionnalités de l'intégration avec HubRise. Synchronisez les données entre logiciel de caisse et applications.
 gallery:
   - __gallery-001.jpg
-  - __gallery-002.jpeg
+  - __gallery-002.jpg
 app_info:
   category: Gestion de livreurs
   availability: Dans le monde entier (interface utilisateur et support en anglais)

@@ -8,7 +8,7 @@ meta:
   description: Captain overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 gallery:
   - __gallery-001.jpg
-  - __gallery-002.jpeg
+  - __gallery-002.jpg
 app_info:
   category: Delivery Management
   availability: Worldwide (English UI and support)
