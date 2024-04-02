@@ -337,6 +337,12 @@ content:
           title: GonnaOrder
           description: GonnaOrder offers a cost-effective online ordering and payment system available in 14 countries. Via a branded website and native iOS and Android apps, GonnaOrder supports takeaway, delivery and table service orders for restaurants, bars, pubs, and cafes.
           additional_info:
+        - website: https://kurvekiosks.com
+          documentation: /apps/kurvekiosks
+          logo: kurvekiosks.png
+          title: Kurve Kiosks
+          description: Kurve Kiosks designs and develops self ordering kiosks tailored for hospitality operators. The platform is customisable, rich in features, and reliable, easing the transition to self-service technology.
+          additional_info:
         - website: https://latoquemagique.com/
           documentation: /apps/la-toque-magique
           logo: la-toque-magique.png
