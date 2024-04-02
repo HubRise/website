@@ -16,9 +16,15 @@ Cette page explique comment configurer manuellement les codes ref dans Restaur'A
 
 ## Produits et SKUs
 
-Chaque produit a un ou plusieurs SKU. Chaque SKU, correspondant à des articles sur Restaur'App et dispose d'un code ref qui doit être associé à l'article correspondant dans votre logiciel de caisse.
+Les produits sur HubRise correspondent aux articles sur Restaur'App. Les SKUs sur HubRise permettent de distinguer les différentes variantes d'un même produit, comme les tailles ou les couleurs.
 
-Pour mettre à jour le code ref de chaque article, suivez ces étapes :
+Deux cas de figure se présentent :
+
+- **Produit avec un seul SKU :** Un produit avec un seul SKU est représenté par un article unique sur Restaur'App. Le code ref de l'article est le même que celui du SKU.
+
+- **Produit avec plusieurs SKUs :** Un produit avec plusieurs SKUs est représenté par un article principal, avec des sous-articles pour chaque SKU, liés à l'article principal par une composition. Le code ref de chaque sous-article est le même que celui du SKU. Le code ref de l'article principal est indifférent et peut être laissé vide.
+
+Pour mettre à jour le code ref d'un article, suivez ces étapes :
 
 1. Depuis le back-office de Restaur'App, cliquez sur **Catalogue** > **Articles** dans la barre de navigation en en-tête de la page.
 1. Sélectionnez le produit à mettre à jour.
@@ -27,11 +33,11 @@ Pour mettre à jour le code ref de chaque article, suivez ces étapes :
 
 ![Associer le code ref des articles dans Restaur'App](./images/003-2x-restaur-app-article-sku.png)
 
-## Suppléments, ingrédients et options
+## Options
 
-Restaur'App prend en charge différents types de modifications optionnelles des produits par le biais de **Composition modèles**. Chacune de ces compositions peut inclure un **Choix unitaire** ou un **Choix multiple**.
+Les listes d'options sur HubRise correspondent aux compositions sur Restaur'App, et les options correspondent aux choix de ces compositions. Le code ref d'un choix de composition est le même que celui de l'option correspondante.
 
-Pour mettre à jour le code ref des choix inclus dans chacune de ces compositions, suivez ces étapes :
+Pour mettre à jour le code ref d'un choix de composition, suivez ces étapes :
 
 1. Depuis le back-office de Restaur'App, cliquez sur **Catalogue** > **Articles** dans la barre de navigation en en-tête de la page.
 1. Sélectionnez la composition à mettre à jour.
@@ -44,22 +50,25 @@ Pour mettre à jour le code ref des choix inclus dans chacune de ces composition
 
 ## Promotions et remises
 
-Restaur'App permet de fidéliser les clients grâce à un programme de cagnotte. Afin que les commandes avec ces promotions soient correctement transmises à votre logiciel de caisse et aux autres applications connectées à HubRise, il est essentiel que les codes ref soient corrects.
+Les promotions HubRise s'appliquent à des articles spécifiques. Elles n'ont pas d'équivalent dans Restaur'App.
 
-Pour ajouter un code ref à une promotion, suivez ces étapes :
+Les remises HubRise s'appliquent à la totalité de la commande. Elles correspondent aux codes promos et au programme de cagnotte dans Restaur'App.
+
+Pour mettre à jour le code ref d'un code promo, suivez ces étapes :
+
+1. Depuis le back-office de Restaur'App, cliquez sur **Marketing** > **Codes promos** dans la barre de navigation.
+1. Cliquer sur l'icône en forme de crayon sur le code promo à mettre à jour.
+1. Saissisez le code ref dans le champ **Référence**.
+1. Cliquez sur **Enregistrer** pour confirmer.
+
+Si vous utilisez le programme de cagnotte, et que votre logiciel de caisse nécessite un code ref pour les remises, procédez comme suit :
 
 1. Depuis le back-office de Restaur'App, cliquez sur **Magasin** > **Etablissements** dans la barre de navigation.
-1. Cliquez sur l'icône en forme de crayon sur l'établissement que vous souhaitez connecter.
+1. Cliquez sur l'icône en forme de crayon sur l'établissement à configurer.
 1. Ouvrez l'onglet **Services Tiers**.
 1. Cliquez sur le bouton **Éditer les informations HubRise**.
 1. Section **CODES CAISSE / POS**, saisissez le code ref dans le champ **Cagnotte**.
 1. Cliquez sur **Enregistrer** pour confirmer.
-
----
-
-**REMARQUE IMPORTANTE :** En fonction de votre logiciel de caisse, les promotions peuvent être transmises sans code ref. Vérifiez que ces promotions sont configurées de façon à répondre aux exigences de votre logiciel de caisse sur notre [page Apps](/apps).
-
----
 
 ![Associer les codes ref caisse dans Restaur'App](./images/002-2x-restaur-app-services-type-ref-code.png)
 
@@ -70,7 +79,7 @@ Les moyens de paiement que vous configurez dans Restaur'App peuvent nécessiter 
 Pour ajouter un code ref à un moyen de paiement, suivez ces étapes :
 
 1. Depuis le back-office de Restaur'App, cliquez sur **Magasin** > **Etablissements** dans la barre de navigation.
-1. Cliquez sur l'icône en forme de crayon sur l'établissement que vous souhaitez connecter.
+1. Cliquez sur l'icône en forme de crayon sur l'établissement à configurer.
 1. Ouvrez l'onglet **Services Tiers**.
 1. Cliquez sur le bouton **Éditer les informations HubRise**.
 1. Section **CODES CAISSE / POS**, saisissez le code ref dans le champ **Paiement en ligne via Stripe**.
@@ -83,7 +92,7 @@ Les types de service tels que la livraison, le retrait ou la consommation sur pl
 Pour ajouter un code ref à un type de service, suivez ces étapes :
 
 1. Depuis le back-office de Restaur'App, cliquez sur **Magasin** > **Etablissements** dans la barre de navigation.
-1. Cliquez sur l'icône en forme de crayon sur l'établissement que vous souhaitez connecter.
+1. Cliquez sur l'icône en forme de crayon sur l'établissement à configurer.
 1. Ouvrez l'onglet **Services Tiers**.
 1. Cliquez sur le bouton **Éditer les informations HubRise**.
 1. Section **CODES CAISSE / POS**, saisissez le code ref dans chacun des champs **Service : click & collect** et **Service : livraison à domicile**.
@@ -91,12 +100,12 @@ Pour ajouter un code ref à un type de service, suivez ces étapes :
 
 ## Frais de livraison
 
-Si des frais de livraison s'appliquent pour le service proposé, un code ref peut être requis. Pour le vérifier, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
+Si vos commandes incluents des frais de livraison, un code ref peut être requis par le logiciel de caisse. Pour le vérifier, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
 
-Pour ajouter un code ref à des frais de livraison, suivez ces étapes :
+Pour spécifier le code ref des frais de livraison, suivez ces étapes :
 
 1. Depuis le back-office de Restaur'App, cliquez sur **Magasin** > **Etablissements** dans la barre de navigation.
-1. Cliquez sur l'icône en forme de crayon sur l'établissement que vous souhaitez connecter.
+1. Cliquez sur l'icône en forme de crayon sur l'établissement à configurer.
 1. Ouvrez l'onglet **Services Tiers**.
 1. Cliquer sur le bouton **Éditer les informations HubRise**.
 1. Section **CODES CAISSE / POS**, saisissez le code ref dans chacun des champs **Frais de livraison**.
