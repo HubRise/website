@@ -4,7 +4,7 @@ path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | Zelty | HubRise
+  title: Connexion à HubRise | Zelty | HubRise
   description: Étapes pour établir une connexion entre Zelty et HubRise. Connectez votre caisse et synchronisez vos données avec d'autres applications.
 ---
 

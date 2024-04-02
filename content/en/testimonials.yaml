@@ -1,0 +1,61 @@
+meta:
+  title: Testimonials | HubRise
+  description: Find out what other businesses and individuals are saying about their HubRise experience.
+content:
+  title: Why You Will Love Working with HubRise
+  description: Don't just take our word for it, here's what our partners and clients are saying about us.
+  testimonials:
+    - quote: As a Sage ERP Consultant with more than 13 years of experience implementing and customising Sage X3 and Sage Intacct solutions, I am passionate about software integration and development. HubRise bridges a significant gap in hospitality solutions, by offering an intuitive API that empowers developers to construct robust integrations. This enables the integration of various systems like ERP, CRM, and E-Commerce with EPOS software. HubRise's integration support team and partner team have been extremely helpful with my enquiries and I could not thank them enough for this experience.
+      person_details:
+        - Amir Shahi
+        - Sage Consultant
+        - GigaVee, Australia
+      filename: amir_shahi.jpg
+    - quote: We provide flexible, innovative, and forward-thinking EPOS solutions. HubRise helps us to go a step further and offer a full ecosystem without the pain of doing integrations ourselves. We integrated PAR PixelPoint with HubRise, our clients are now enjoying the benefits. Integrations have been flawless so far.
+      person_details:
+        - Keith Slowey
+        - General Manager
+        - Slowey Systems, Ireland
+      filename: keith_slowey.jpg
+    - quote: TicknCook is a production screen for fast food fully integrated with HubRise. TicknCook uses HubRise's API to easily integrate with all the EPOS solutions in their ecosystem. We also use its sign-up and login system. The integration was quick, their API is super easy to use. Communication with HubRise is also very smooth. Despite comprehensive online documentation, the HubRise team is surprisingly quick and efficient when it comes to answering our questions or solving specific needs.
+      person_details:
+        - Thomas Rondepierre
+        - Co-founder & CTO
+        - TicknCook, France
+      filename: thomas_rondepierre.jpg
+    - quote: As part of our strategy for rapid development and market share acquisition, we decided to go through HubRise to integrate with many EPOS solutions and other ancillary applications. Beyond the completeness of their ecosystem, we greatly appreciated their professionalism both in responsiveness in case of new needs and the quality of their support.
+      person_details:
+        - Isabelle Saffar
+        - Co-founder
+        - Smilein, France
+      filename: isabelle_saffar.jpg
+    - quote: The complete integration was done in a few days, our client was connected to his EPOS the same week. The support was top-notch and thanks to this integration we can connect ObyPay to a multitude of other EPOSes.
+      person_details:
+        - Arthur Broutin
+        - Co-founder
+        - Obypay, France
+      filename: arthur_broutin.jpg
+    - quote: The market is too fragmented. Even if we wanted direct integrations, it would simply be impossible to integrate with all the solutions of our clients. We prefer to reference HubRise. The cost is fair, we let them worry about the integrations while we focus on developing our online ordering solution and the services we offer.
+      person_details:
+        - Laurent Vigouroux
+        - Manager
+        - LivePepper, France
+      filename: laurent_vigouroux.jpg
+    - quote: In my vast experience with various restaurant businesses from any range and being a former operator myself, I can only recommend working with a solution like HubRise. HubRise is an intelligent solution, flexible enough to remove the hassle of direct integrations. With their middleware, you can link your preferred restaurant software, online ordering website and/or another solution. It's easy and smooth as well as affordable. In addition to the above, I have only had positive interaction on any level with the people behind HubRise.
+      person_details:
+        - Muhammad Mehmood
+        - Founder
+        - Zeera Hub, England
+      filename: muhammad_mehmood.jpg
+    - quote: Without the integration to our EPOS, we could simply not have coped with the increase in online orders during the COVID lockdown. it went up 70% for some of our restaurants from one day to the other.
+      person_details:
+        - Alan Cadden
+        - General Manager
+        - Saba to Go, Ireland
+      filename: alan_cadden.jpg
+    - quote: I was a pilot in 2020 for the first connection to Uber Eats via HubRise. I was afraid of being a guinea pig, but not at all. My configuration requests at the start were resolved very quickly. The HubRise technical team was responsive and attentive. Since then, my Uber Eats orders arrive directly in my EPOS, the operational team is delighted, and so am I!
+      person_details:
+        - Camille Candela
+        - Manager
+        - Bënnie Organic, France
+      filename: camille_candela.jpg

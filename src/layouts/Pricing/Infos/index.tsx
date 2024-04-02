@@ -2,7 +2,7 @@ import { BlockContentButton, BlockContentLink } from "@components/BlockContent"
 import { useLayoutContext } from "@components/LayoutContext"
 import { PricingYaml } from "@layouts/Pricing/types"
 
-import { Text, Title, Info, StyledInfos } from "./Styles"
+import { Action, Info, StyledInfos, Text, Title } from "./Styles"
 
 interface InfosProps {
   infos: PricingYaml["content"]["infos"]
@@ -13,19 +13,17 @@ const Infos = ({ infos }: InfosProps): JSX.Element => {
 
   return (
     <StyledInfos>
-      {infos.map((special, idx) => (
+      {infos.map((info, idx) => (
         <Info key={idx}>
-          <Title>{special.highlight}</Title>
-
-          <Text>
-            {special.text}
-
-            {special.link && special.link.to ? (
-              <BlockContentLink href={special.link.to}>{special.link.text}</BlockContentLink>
+          <Title>{info.title}</Title>
+          <Text>{info.text}</Text>
+          <Action>
+            {info.link && info.link.to ? (
+              <BlockContentLink href={info.link.to}>{info.link.text}</BlockContentLink>
             ) : (
-              <BlockContentButton onClick={forms.contact.toggle}>{special.button}</BlockContentButton>
+              <BlockContentButton onClick={forms.contact.toggle}>{info.button}</BlockContentButton>
             )}
-          </Text>
+          </Action>
         </Info>
       ))}
     </StyledInfos>

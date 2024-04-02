@@ -65,7 +65,7 @@ export const colors = {
   backgroundLightest: "#f8f8f8",
   backgroundWhite: "#fff",
 
-  // borderMedium: "#ccc",
+  borderMedium: "#ccc",
   borderLight: "#e0e0e0",
   borderLighter: "#f0f0f0",
   borderLightest: "#f8f8f8",

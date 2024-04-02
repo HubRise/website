@@ -10,7 +10,7 @@ meta:
 
 ## Importer un catalogue
 
-Pour importer votre catalogue HubRise dans Restaurant-internet, suivez les étapes suivantes :
+Pour importer votre catalogue HubRise dans Restaurant-internet, suivez ces étapes :
 
 1. Depuis votre tableau de bord Restaurant-internet, dans la partie **Modules**, sélectionnez **Marketplace Autres modules**.
 1. Sélectionnez **Hubrise - Connection Caisse Gratuit**.

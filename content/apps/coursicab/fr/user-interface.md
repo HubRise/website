@@ -17,7 +17,7 @@ Dans CoursiCab, les livraisons sont appelées des courses. Pour en consulter la 
 
 Pour chaque course, vous pouvez accepter ou refuser la livraison.
 
-Pour accepter, suivez les étapes suivantes :
+Pour accepter, suivez ces étapes :
 
 1. Dans la colonne **ACTION**, cliquez sur le bouton d'acceptation en forme de coche.
 1. Sélectionnez un véhicule et un mode de paiement dans la modale qui s'affiche :

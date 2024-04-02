@@ -86,6 +86,11 @@ content:
           logo: lightspeed-restaurant.png
           title: Lightspeed Restaurant (K-Series)
           description: Lightspeed Restaurant is a cloud based solution for restaurants, available in over 100 countries. Its sleek design and intuitive interface allows on-site, remote or on-the-go management of single and multi-store businesses.
+        - website: https://mealenium.io
+          documentation: /apps/mealenium
+          logo: mealenium.png
+          title: Mealenium
+          description: Mealenium is a restaurant-specific multi-platform EPOS (Windows, iOS, and Android). Its ergonomics and features facilitate daily management of your restaurant, from order taking to detailed operations management.
         - website: https://www.miipos.fr
           documentation: /apps/miipos
           logo: miipos.png
@@ -332,6 +337,12 @@ content:
           title: GonnaOrder
           description: GonnaOrder offers a cost-effective online ordering and payment system available in 14 countries. Via a branded website and native iOS and Android apps, GonnaOrder supports takeaway, delivery and table service orders for restaurants, bars, pubs, and cafes.
           additional_info:
+        - website: https://kurvekiosks.com
+          documentation: /apps/kurvekiosks
+          logo: kurvekiosks.png
+          title: Kurve Kiosks
+          description: Kurve Kiosks designs and develops self ordering kiosks tailored for hospitality operators. The platform is customisable, rich in features, and reliable, easing the transition to self-service technology.
+          additional_info:
         - website: https://latoquemagique.com/
           documentation: /apps/la-toque-magique
           logo: la-toque-magique.png
@@ -381,6 +392,12 @@ content:
           logo: restaurant-internet.png
           title: Restaurant-internet
           description: Restaurant-internet offers websites with table reservation and online ordering modules. It addresses the particular needs of delivery and takeaway businesses.
+        - website: https://servier.bar
+          documentation: /apps/servier-bar
+          logo: servier-bar.png
+          title: servier.bar
+          description: servier.bar offers ordering solutions designed for restaurants and hotels. These solutions allow customers to order and pay directly from their smartphones via a web app, to improve service without hiring additional staff.
+          additional_info:
         - website: https://www.shopify.com/
           documentation: /apps/shopify
           logo: shopify.png
@@ -438,8 +455,8 @@ content:
           documentation: /apps/captain
           logo: captain.png
           title: Captain
-          description: Captain delivery management suite of solutions has been designed to support restaurant delivery through order management and live customer order tracking.
-          additional_info: Integration in progress.
+          description: Captain supports restaurant delivery through order management and live customer order tracking. A Kitchen Display Screen helps prioritise the cooking sequence. An add-on feature enables the use of third-party delivery services.
+          additional_info:
         - website: https://coursicab.com/en
           documentation: /apps/coursicab
           logo: coursicab.png

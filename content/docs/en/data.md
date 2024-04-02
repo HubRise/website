@@ -72,9 +72,9 @@ Catalogs are presented in three tabs:
 
 - **SKUS**: The items that you sell to the customers.
 - **DEALS**: The deals available in the catalog.
-  A deal provides a price reduction on combinations of Products bought together. For instance, **Buy One Get One Free** is a deal that applies to two Products. It applies to two Products and provides a price reduction equal to the price of the cheapest Product.
+  A deal offers a price reduction on products purchased together. Examples include a three-course meal (starter, main course, and dessert) and **Buy One Get One Free** offers.
 - **DISCOUNTS**: The discounts available in the catalog.
-  Discount codes apply savings to the overall order rather than specific products. For example, **FREEDELIVERY** might remove the delivery fee for the entire order, or **FRIYAY** might provide a 10% discount to the entire order on Friday.
+  Discounts apply savings to the overall order rather than specific products. For example, **FREEDELIVERY** might remove the delivery fee for the entire order, or **FRIDAY** might provide a 10% discount to the entire order on Friday.
 
 ![HubRise Catalog Tabs](./images/053-2x-catalog-tabs.png)
 
@@ -129,7 +129,7 @@ Further log details are available for advanced users and developers to view app 
 1. Click the row to display. A full list of the query and response will be displayed.
 1. To download either the query or response, select the download icon <InlineImage width="15" height="14">![Download icon](../images/058-download.png)</InlineImage>. The selected query or response will be provided as a JSON file.
 
-The logs can be filtered based on specific criteria, including resource, method, and time range. To filter logs: 
+The logs can be filtered based on specific criteria, including resource, method, and time range. To filter logs:
 
 1. Click the **Filter** section located at the top of the page. Upon clicking, you will see the filter options.
 1. Apply one or more filters. The log entries will refresh automatically.
