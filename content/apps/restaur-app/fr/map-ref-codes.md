@@ -22,8 +22,8 @@ Pour mettre à jour le code ref de chaque article, suivez ces étapes :
 
 1. Depuis le back-office de Restaur'App, cliquez sur **Catalogue** > **Articles** dans la barre de navigation en en-tête de la page.
 1. Sélectionnez le produit à mettre à jour.
-3. Dans la section **INFORMATIONS**, mettez à jour le code ref dans le champ **Référence**.
-4. Cliquez sur **Enregistrer** pour confirmer.
+1. Dans la section **INFORMATIONS**, mettez à jour le code ref dans le champ **Référence**.
+1. Cliquez sur **Enregistrer** pour confirmer.
 
 ![Associer le code ref des articles dans Restaur'App](./images/003-2x-restaur-app-article-sku.png)
 
@@ -35,10 +35,10 @@ Pour mettre à jour le code ref des choix inclus dans chacune de ces composition
 
 1. Depuis le back-office de Restaur'App, cliquez sur **Catalogue** > **Articles** dans la barre de navigation en en-tête de la page.
 1. Sélectionnez la composition à mettre à jour.
-1. Dans la section **CHOIX POSSIBLES**, Sélectionnez l'élément que vous souhaitez mettre à jour. 
+1. Dans la section **CHOIX POSSIBLES**, Sélectionnez l'élément que vous souhaitez mettre à jour.
 1. Une fenêtre de confirmation s'affiche. Mettez à jour le code ref dans le champ **Référence**.
 1. Cliquez sur **Enregistrer** pour confirmer.
-1. Suivez cette même procédure pour chacun des éléments de la composition. 
+1. Suivez cette même procédure pour chacun des éléments de la composition.
 
 ![Associer le code ref des compositions dans Restaur'App](./images/004-2x-restaur-app-composition-sku.png)
 
@@ -48,18 +48,18 @@ Restaur'App permet de fidéliser les clients grâce à un programme de cagnotte.
 
 Pour ajouter un code ref à une promotion, suivez ces étapes :
 
-1. Depuis le back-office de Restaur'App, cliquez sur **Magasin** > **Etablissements** dans la barre de navigation en en-tête de la page.
-1. Sélectionner l'établissement que vous souhaitez éditer.
-1. Accédez à l'onglet **Services Tiers**.
+1. Depuis le back-office de Restaur'App, cliquez sur **Magasin** > **Etablissements** dans la barre de navigation.
+1. Cliquez sur l'icône en forme de crayon sur l'établissement que vous souhaitez connecter.
+1. Ouvrez l'onglet **Services Tiers**.
 1. Cliquez sur le bouton **Éditer les informations HubRise**.
 1. Section **CODES CAISSE / POS**, saisissez le code ref dans le champ **Cagnotte**.
 1. Cliquez sur **Enregistrer** pour confirmer.
 
-***
+---
 
 **REMARQUE IMPORTANTE :** En fonction de votre logiciel de caisse, les promotions peuvent être transmises sans code ref. Vérifiez que ces promotions sont configurées de façon à répondre aux exigences de votre logiciel de caisse sur notre [page Apps](/apps).
 
-***
+---
 
 ![Associer les codes ref caisse dans Restaur'App](./images/002-2x-restaur-app-services-type-ref-code.png)
 
@@ -69,9 +69,9 @@ Les moyens de paiement que vous configurez dans Restaur'App peuvent nécessiter 
 
 Pour ajouter un code ref à un moyen de paiement, suivez ces étapes :
 
-1. Depuis le back-office de Restaur'App, cliquez sur **Magasin** > **Etablissements** dans la barre de navigation en en-tête de la page.
-1. Sélectionner l'établissement que vous souhaitez éditer.
-1. Accédez à l'onglet **Services Tiers**.
+1. Depuis le back-office de Restaur'App, cliquez sur **Magasin** > **Etablissements** dans la barre de navigation.
+1. Cliquez sur l'icône en forme de crayon sur l'établissement que vous souhaitez connecter.
+1. Ouvrez l'onglet **Services Tiers**.
 1. Cliquez sur le bouton **Éditer les informations HubRise**.
 1. Section **CODES CAISSE / POS**, saisissez le code ref dans le champ **Paiement en ligne via Stripe**.
 1. Cliquez sur **Enregistrer** pour confirmer.
@@ -82,9 +82,9 @@ Les types de service tels que la livraison, le retrait ou la consommation sur pl
 
 Pour ajouter un code ref à un type de service, suivez ces étapes :
 
-1. Depuis le back-office de Restaur'App, cliquez sur **Magasin** > **Etablissements** dans la barre de navigation en en-tête de la page.
-1. Sélectionner l'établissement que vous souhaitez éditer.
-1. Accédez à l'onglet **Services Tiers**.
+1. Depuis le back-office de Restaur'App, cliquez sur **Magasin** > **Etablissements** dans la barre de navigation.
+1. Cliquez sur l'icône en forme de crayon sur l'établissement que vous souhaitez connecter.
+1. Ouvrez l'onglet **Services Tiers**.
 1. Cliquez sur le bouton **Éditer les informations HubRise**.
 1. Section **CODES CAISSE / POS**, saisissez le code ref dans chacun des champs **Service : click & collect** et **Service : livraison à domicile**.
 1. Cliquez sur **Enregistrer** pour confirmer.
@@ -95,9 +95,9 @@ Si des frais de livraison s'appliquent pour le service proposé, un code ref peu
 
 Pour ajouter un code ref à des frais de livraison, suivez ces étapes :
 
-1. Depuis le back-office de Restaur'App, cliquez sur **Magasin** > **Etablissements** dans la barre de navigation en en-tête de la page.
-1. Sélectionner l'établissement que vous souhaitez éditer.
-1. Choisir l'onglet **Services Tiers**.
+1. Depuis le back-office de Restaur'App, cliquez sur **Magasin** > **Etablissements** dans la barre de navigation.
+1. Cliquez sur l'icône en forme de crayon sur l'établissement que vous souhaitez connecter.
+1. Ouvrez l'onglet **Services Tiers**.
 1. Cliquer sur le bouton **Éditer les informations HubRise**.
 1. Section **CODES CAISSE / POS**, saisissez le code ref dans chacun des champs **Frais de livraison**.
 1. Cliquez sur **Enregistrer** pour confirmer.
