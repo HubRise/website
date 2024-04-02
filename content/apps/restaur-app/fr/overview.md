@@ -19,10 +19,9 @@ app_info:
 
 ## Description
 
-Restaur'App, développée par l'agence Anthemis, est une solution tout-en-un destinée à la restauration rapide en livraison et aux restaurants proposant de la vente à emporter. Elle propose à ces établissements la possibilité de lancer leur propre site web et application mobile via un abonnement mensuel sans engagement, sans commission sur les ventes (hors frais bancaires).
+Restaur'App, développée par l'agence Anthemis, est une solution tout-en-un destinée aux enseignes de restauration rapide en livraison et en vente à emporter. Elle propose à ces établissements de lancer leur site Web et leur application mobile de commande en ligne. Restaur'App est disponible via un abonnement mensuel, sans engagement et sans commission sur les ventes (hors frais bancaires).
 
-Restaur'App offre une multitude de fonctionnalités, couvrant aussi bien la vente en ligne, que la gestion de produits, le choix entre plusieurs méthodes de retrait (click and collect, livraison) et la réservation de tables.
-Elle inclut aussi le paiement sécurisé, la gestion de commandes, le suivi pour les équipes et les livreurs, ainsi que des options pour fidéliser les clients, y compris un programme de cagnotte, des promotions et des notifications sur les offres spéciales.
+Restaur'App offre une multitude de fonctionnalités et d'options de personnalisation pour la vente en ligne, la gestion des produits, la gestion des livraisons, et la réservation de tables. Elle inclut le paiement sécurisé, la gestion des commandes, le suivi des livreurs, un programme de cagnotte, les promotions, et les notifications clients sur mobile.
 
 ## Fonctionnalités de l'intégration
 

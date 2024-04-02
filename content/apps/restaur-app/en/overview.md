@@ -19,10 +19,9 @@ app_info:
 
 ## Description
 
-Restaur'App, by Anthemis, is an all-in-one solution for fast food delivery and other restaurants offering click and collect. It offers restaurants the opportunity to launch their own website and mobile app with a monthly subscription but no time commitment, no commission on sales (excluding bank fees).
+Restaur'App, developed by the Anthemis agency, is an all-in-one solution designed for fast food outlets for delivery and takeaway. It offers these businesses the opportunity to launch their website and mobile application for online ordering. Restaur'App is available through a monthly subscription, with no commitment and no commission on sales (excluding bank fees).
 
-Restaur'App includes a multitude of features, such as online sales, product management, the choice between several pickup methods (click and collect, delivery), and table reservations.
-It includes features such as secure payment, order management, tracking for operational teams and delivery staff, as well as customers loyalty options such as a loyalty programme, deals, and notifications on special offers.
+Restaur'App provides a multitude of features and customization options for online sales, product management, delivery management, and table reservations. It includes secure payment, order management, delivery tracking, a loyalty program, promotions, and mobile customer notifications.
 
 ## Integration Features
 

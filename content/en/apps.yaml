@@ -391,8 +391,8 @@ content:
           documentation: /apps/restaur-app
           logo: restaur-app.png
           title: Restaur'App
-          description: Restaur'App is tailored for fast food and takeaway. It offers restaurateurs their own branded website and mobile app to showcase their establishment and manage online orders, as well as deliveries, without any commission on sales.
-          additional_info: Integration in progress.
+          description: Restaur'App offers restaurateurs their own branded website and mobile app to showcase their establishment and manage online orders, as well as deliveries, without any commission on sales. Restaur'App is tailored for fast food and takeaway restaurants.
+          additional_info:
         - website: https://restaurant-internet.com
           documentation: /apps/restaurant-internet
           logo: restaurant-internet.png
