@@ -10,7 +10,7 @@ meta:
 
 ***
 
-**REMARQUE IMPORTANTE :** Depuis juillet 2023, LivePepper ne propose plus d’inscription en libre-service. Pour demander un site de test, veuillez contacter directement LivePepper.
+**REMARQUE IMPORTANTE :** Depuis juillet 2023, LivePepper ne propose plus d'inscription en libre-service. Pour demander un site de test, veuillez contacter directement LivePepper.
 
 ***
 

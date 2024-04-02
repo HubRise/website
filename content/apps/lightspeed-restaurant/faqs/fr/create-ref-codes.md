@@ -40,7 +40,7 @@ Pour créer une remise compatible avec le modèle de données HubRise, suivez ce
 1. Depuis votre back-office Lightspeed, sélectionnez **Gestion des menus**, puis sélectionnez **Articles**.
 1. Cliquez sur le menu déroulant **Créer**, puis sélectionnez **Article unique**.
 1. Sur la page **Nouvel article**, saisissez les valeurs suivantes :
-   - Dans le champ **Nom de l’article**, saisissez le nom de la remise.
+   - Dans le champ **Nom de l'article**, saisissez le nom de la remise.
    - Cliquez sur **Modifier le type de prix** puis sélectionnez **Prix négatif saisi manuellement**.
    - Pour utiliser un code ref spécifique, cliquez sur **Ajouter un code SKU personnalisé** et entrez un code ref. Sinon, un code ref sera généré automatiquement.
 1. Renseignez les autres sections de la page si besoin, puis cliquez sur **Enregistrer**.
@@ -53,7 +53,7 @@ Pour créer une promotion compatible avec le modèle de données HubRise, suivez
 1. Depuis votre back-office Lightspeed, sélectionnez **Gestion des menus**, puis sélectionnez **Articles**.
 1. Cliquez sur le menu déroulant **Créer**, puis sélectionnez **Article unique**.
 1. Sur la page **Nouvel article**, saisissez les valeurs suivantes :
-   - Dans le champ **Nom de l’article**, saisissez le nom de la promotion.
+   - Dans le champ **Nom de l'article**, saisissez le nom de la promotion.
    - Cliquez sur **Modifier le type de prix** puis sélectionnez **Aucun prix**.
 1. Renseignez les autres sections de la page si besoin, puis cliquez sur **Enregistrer**.
 1. Répétez le processus pour toutes les promotions que vous prenez en charge sur chaque solution.
@@ -65,7 +65,7 @@ Pour créer des frais, vous devez créer un article en suivant ces étapes :
 1. Depuis votre back-office Lightspeed, sélectionnez **Gestion des menus**, puis sélectionnez **Articles**.
 1. Cliquez sur le menu déroulant **Créer** et sélectionnez **Article unique**.
 1. Sur la page **Nouvel article**, saisissez les valeurs suivantes :
-   - Dans le champ **Nom de l’article**, saisissez le nom des frais.
+   - Dans le champ **Nom de l'article**, saisissez le nom des frais.
    - Cliquez sur **Modifier le type de prix** puis sélectionnez **Prix saisi manuellement**.
    - Pour utiliser un code ref spécifique, cliquez sur **Ajouter un code SKU personnalisé** et entrez un code ref. Sinon, un code ref sera généré automatiquement.
 1. Renseignez les autres sections de la page si besoin, puis cliquez sur **Enregistrer**.
