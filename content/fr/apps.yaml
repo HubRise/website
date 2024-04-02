@@ -335,6 +335,12 @@ content:
           title: GonnaOrder
           description: GonnaOrder propose un système de commande en ligne économique, disponible dans 14 pays. Via un site personnalisé et des applications iOS et Android natives, GonnaOrder permet de commander à emporter, en livraison ou à table dans des restaurants, bars, pubs et cafés.
           additional_info:
+        - website: https://kurvekiosks.com
+          documentation: /fr/apps/kurvekiosks
+          logo: kurvekiosks.png
+          title: Kurve Kiosks
+          description: Kurve Kiosks conçoit et développe des kiosques de commande pour les restaurants et les hôtels. La plateforme est personnalisable, riche en fonctionnalités et fiable, facilitant ainsi la transition vers la technologie de libre-service.
+          additional_info:
         - website: https://latoquemagique.com/
           documentation: /fr/apps/la-toque-magique
           logo: la-toque-magique.png
@@ -452,8 +458,8 @@ content:
           documentation: /fr/apps/captain
           logo: captain.png
           title: Captain
-          description: Captain est une solution de traitement des commandes et de tracking des livreurs.
-          additional_info: Intégration en cours.
+          description: Captain permet aux restaurateurs de gérer la livraison des commandes et aux clients de les suivre en temps réel. Un écran d'affichage en cuisine prioritise la séquence de cuisson. Un module complémentaires permet l'utilisation de services de livraison tiers.
+          additional_info:
         - website: https://coursicab.com
           documentation: /fr/apps/coursicab
           logo: coursicab.png
