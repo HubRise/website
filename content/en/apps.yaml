@@ -491,6 +491,12 @@ content:
           title: Stuart
           description: Stuart offers businesses of all sizes, all sectors, on demand fast delivery services with a customised way of transporting goods.
           additional_info:
+        - website: https://trapar.co.uk
+          documentation: /apps/trapar
+          logo: trapar.png
+          title: Trapar
+          description: Trapar is a last-mile delivery solution for businesses, handling orders from various channels with a real-time tracking app. Trapar offers the option to use one's own delivery staff or Trapar's on-demand drivers/riders.
+          additional_info:
     - title: Loyalty and Marketing
       slug: loyalty-and-marketing
       apps:
