@@ -16,12 +16,14 @@ meta:
 
 ## Connect Trapar
 
-Only the Trapar support team can connect your last-mile delivery management solution to HubRise.
+The connection between Trapar and HubRise can only be established by the Trapar support team.
 
 To connect Trapar to HubRise, proceed as follows:
 
 1. Grant Trapar access to your HubRise account. For more information, see [Grant Access to Trapar Support](#give-access).
-1. Contact the Trapar support team who will establish the connection to HubRise. For more information, see [Contact Trapar Support](#contact).
+2. Contact Trapar support at support@trapar.co.uk, and specify the location name and ID to connect. You can include support@hubrise.com in copy for a coordinated follow-up between our two teams.
+
+If you are not sure how to find your HubRise identifiers, see [Location Name and ID](/docs/locations#location-name-and-id).
 
 ## Grant Access to Trapar Support {#give-access}
 
@@ -34,12 +36,6 @@ To grant access to Trapar, proceed as follows:
 1. Click the **+** icon to grant Trapar support access to your account.
 
 Adding a user is the recommended way to grant access to a third party to your HubRise account or location. Sharing passwords is not recommended for security reasons. For more information on permissions, see the [Permissions](/docs/permissions) help page.
-
-## Contact Trapar Support {#contact}
-
-To request the connection of your last-mile delivery management solution, contact Trapar support by email at support@trapar.co.uk. You can include support@hubrise.com in copy for a coordinated follow-up between our two teams.
-
-Include in your request the name of your HubRise account, its HubRise identifier and the location to connect. For more information, see [Location Name and ID](/docs/locations#location-name-and-id).
 
 ## Disconnect Trapar
 
