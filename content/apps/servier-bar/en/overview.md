@@ -28,14 +28,14 @@ app_info:
 servier.bar is an ordering solution for restaurants and hotels. It empowers establishments lacking trained service staff with a "digital waiter" to increase service levels and boost guest turnover without hiring additional waiters.
 
 How does it work ?
+
 - **Table ordering**: Guests scan a QR quode and order via a web browser. No download, no account creation needed.
-- **Online ordering**: Guests can pre-orders order, and select pickup or delivery.
-- **Multiple languages**: Translate your menu into 5 languages to ease ordering experience for all guests.
+- **Online ordering**: Guests can pre-order, or order for immediate takeaway or delivery.
+- **Multiple languages**: The menu is available in 5 languages to make ordering easier for all guests.
 - **Tips**: Encourage tipping and define your own tipping levels, for example 5 %, 10 % and 15 %.
 - **Payment**: Guests can pay with their smartphone, on all major payment providers, including PayPal, Google Pay, and Apple Pay.
 
-servier.bar is a German editor, they have clients in Germany and other European countries.
-
+servier.bar is a German editor, with clients in Germany and other European countries.
 
 ## Integration Features
 

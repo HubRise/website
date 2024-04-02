@@ -17,11 +17,11 @@ app_info:
   contact: info@servier.bar / +49 731 85075960
 ---
 
-***
+---
 
 **REMARQUE IMPORTANTE** : Une documentation complète de cette intégration est en cours de rédaction.
 
-***
+---
 
 ## Description
 
@@ -30,12 +30,12 @@ servier.bar est une solution de commande pour les restaurants et les hôtels. Il
 Comment ça marche ?
 
 - **Commande de table** : les clients scannent un QR code et commandent via un navigateur web. Aucun téléchargement et aucune création de compte nécessaire.
-- **Commande en ligne**: les clients peuvent commander à l'avance et opter pour la vente à emporter ou se faire livrer.
-- **Multilingue** : traduisez votre menu en 5 langues pour faciliter l'expérience de commande de tous les clients.
+- **Commande en ligne**: les clients peuvent commander à l'avance, ou passer commande pour une consommation ou livraison immédiate.
+- **Multilingue** : Le menu est disponible en 5 langues pour faciliter la commande pour tous les clients.
 - **Pourboire** : encouragez le pourboire et définissez des taux prédéfinis, par exemple 5 %, 10 % et 15 %.
 - **Paiement** : les clients peuvent payer avec leur smartphone, avec les fournisseurs de paiement habituels, y compris PayPal, Google Pay et Apple Pay.
 
-servier.bar est un éditeur allemand, ils ont des clients en Allemagne et dans d'autres pays européens.
+servier.bar est un éditeur allemand, avec des clients en Allemagne et dans d'autres pays européens.
 
 ## Fonctionnalités de l'intégration
 
