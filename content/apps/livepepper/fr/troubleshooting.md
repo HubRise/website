@@ -40,4 +40,4 @@ Pour vérifier que votre commande de test a bien été transmise à HubRise, sui
 
 ## Support LivePepper
 
-Vous pouvez contacter l’équipe de support LivePepper à l'adresse support\@livepepper.com pour tout problème de configuration du système de commande en ligne.
+Vous pouvez contacter l'équipe de support LivePepper à l'adresse support\@livepepper.com pour tout problème de configuration du système de commande en ligne.

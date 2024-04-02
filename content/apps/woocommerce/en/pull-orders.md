@@ -130,7 +130,7 @@ A product can have at most one attached option.
 
 <details>
 
-Below is a sample payload containing a single item with an option.
+<summary>Sample JSON containing a single item with an option</summary>
 
 ```json
 "items": [
@@ -180,7 +180,7 @@ The available fields in the payloads are the following:
 
 <details>
 
-Below is a sample payload for charges.
+<summary>Sample JSON for charges</summary>
 
 ```json
 "charges": [
