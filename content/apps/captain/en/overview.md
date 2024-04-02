@@ -24,9 +24,9 @@ Captain's Delivery Management Software (DMS) is specifically designed for indepe
 Captain integrates with HubRise and offers a suite of apps that help streamline delivery execution across every stage of an order lifecycle:
 
 - **Smart Kitchen Display Screen (KDS)**: Captain's KDS communicates with Dispatch to prioritise cooking sequence based on which orders will be delivered in the same route. This enables chefs to prepare food at the right time and in the right sequence, to maximise delivered food quality.
-- **Dispatch App**: Assign orders to drivers with the Dispatch App using manual, co-pilot or autopilot modes to reduce driver wait times, to improve delivery times and optimise routes to improve fuel usage.
+- **Dispatch App**: Assign orders to drivers using manual, co-pilot or autopilot modes to reduce driver wait times, to improve delivery times and optimise routes to improve fuel usage.
 - **FleetShare**: This add-on feature enables restaurants to outsource approved orders to white-label delivery service providers for a flat fee. Captain will confirm Delivery service providers availability as it varies by region.
-- **Driver App**: Our user-friendly Driver App allows drivers to easily access their assigned orders and optimal delivery routes, maximising efficiency while minimising delivery times and fuel usage.
+- **Driver App**: Allows drivers to easily access their assigned orders and optimal delivery routes, maximising efficiency while minimising delivery times and fuel usage.
 - **Live Tracking**: Your brand stays front and centre with a branded tracking page sent via SMS giving customers the visibility they expect into their order status.
 - **Manager Portal**: Access delivery data in real-time, including delivery times, customer feedback, and driver performance, allowing restaurants to streamline delivery performance with data-driven insights.
 
