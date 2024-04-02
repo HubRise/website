@@ -12,9 +12,9 @@ gallery:
 app_info:
   category: Gestion de livreurs
   availability: Monde entier
-  price_range: null
+  price_range:
   website: http://www.captain.ai
-  contact: null
+  contact:
 ---
 
 ## Description

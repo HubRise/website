@@ -12,22 +12,22 @@ gallery:
 app_info:
   category: Commande en ligne
   availability: Royaume Uni, Irlande
-  price_range: null
+  price_range:
   website: https://kurvekiosks.com
   contact: info@kurvekiosks.com / +44 333 344 1890
 ---
 
-***
+---
 
 **REMARQUE IMPORTANTE** : Une documentation complète de cette intégration est en cours de rédaction.
 
-***
+---
 
 ## Description
 
-Kurve Kiosks conçoit et développe une technologie de bornes de commande dynamiques pour les restaurants et les hôtels intéressés par l'adoption de solutions en libre-service. Leur technologie facilite cette transition en fournissant une plateforme personnalisable, riche en fonctionnalités et fiable.
+Kurve Kiosks conçoit et développe des bornes de commande pour les restaurants et les hôtels intéressés par l'adoption de solutions en libre-service. Leur technologie facilite cette transition en fournissant une plateforme personnalisable, riche en fonctionnalités et fiable.
 
-Kurve Kiosks observent et essaient de comprendre pleinement les comportements des clients pour développer des solutions de commande sur mesure qui améliorent la valeur de la marque. Leur borne de commande aide à accélérer le service, à améliorer l'expérience client et à accroître la fidélité, en particulier parmi les jeunes générations qui préfèrent la commande via une borne aux interactions traditionnelles en face-à-face. De plus, il offre des possibilités d'augmentation des revenus grâce à des offres supplémentaires et peut réduire les coûts opérationnels en permettant aux clients de devenir plus autonomes.
+Kurve Kiosks observe et essaie de comprendre pleinement les comportements des clients pour développer des solutions de commande sur mesure qui améliorent la valeur de la marque. Leurs bornes de commande permettent d'accélérer le service, d'améliorer l'expérience client et d'accroître la fidélité, en particulier parmi les jeunes générations qui préfèrent la commande via une borne aux interactions traditionnelles en face-à-face. De plus, il offre des possibilités d'augmentation des revenus grâce à des offres supplémentaires et peut réduire les coûts opérationnels en permettant aux clients de devenir plus autonomes.
 
 ## Fonctionnalités de l'intégration
 

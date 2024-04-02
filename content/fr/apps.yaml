@@ -339,7 +339,7 @@ content:
           documentation: /fr/apps/kurvekiosks
           logo: kurvekiosks.png
           title: Kurve Kiosks
-          description: Kurve Kiosks conçoit et développe une technologie de bornes de commande dynamiques pour les restaurants et les hôtels intéressés par l'adoption de solutions en libre-service. Leur technologie facilite cette transition en fournissant une plateforme personnalisable, riche en fonctionnalités et fiable.
+          description: Kurve Kiosks conçoit et développe des kiosques de commande pour les restaurants et les hôtels. La plateforme est personnalisable, riche en fonctionnalités et fiable, facilitant ainsi la transition vers la technologie de libre-service.
           additional_info:
         - website: https://latoquemagique.com/
           documentation: /fr/apps/la-toque-magique
