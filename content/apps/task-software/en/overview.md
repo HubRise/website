@@ -18,9 +18,9 @@ app_info:
 
 TASK Group provides technology solutions enabling its global hospitality clients to manage customer relationships in an increasingly digital world.
 
-TASK’s cloud-based enterprise transaction management platform helps clients to improve customer experiences across every transactional touchpoint, including digital customer-facing services, back-of-house and enterprise operations. The Group’s ecosystem combines transaction services, personalisation, offer management and BI technology. It aims to generate operational efficiencies, provide data insights about their consumer base, activate new promotions and build brand loyalty.
+TASK's cloud-based enterprise transaction management platform helps clients to improve customer experiences across every transactional touchpoint, including digital customer-facing services, back-of-house and enterprise operations. The Group's ecosystem combines transaction services, personalisation, offer management and BI technology. It aims to generate operational efficiencies, provide data insights about their consumer base, activate new promotions and build brand loyalty.
 
-The TASK’s transaction management platform is built from the ground up and includes but is not limited to the following fully integrated modules to choose from:
+The TASK's transaction management platform is built from the ground up and includes but is not limited to the following fully integrated modules to choose from:
 
 - Functional in store and location transaction management across a multitude of devices.
 - Web delivered true/real time enterprise management.
@@ -35,17 +35,17 @@ The TASK’s transaction management platform is built from the ground up and inc
 
 The TASK product set continues to evolve with persistent enhancements added to the stack from both the onboarding of new customers, features requests from the exponentially growing customer family and strategic initiatives from our product experts. All customers generally update their TASK version once a year with all enhancements being made available as part of the software maintenance protocol.
 
-**How TASK’s platform works**
+**How TASK's platform works**
 
-TASK’s platform supports some of the largest names in hospitality, including Starbucks, McDonald’s, Guzman y Gomez or Food Retail Group (RFG). TASK help these brands innovate and create better ways to build loyalty and digital customer experiences and take their brands further into global markets.
+TASK's platform supports some of the largest names in hospitality, including Starbucks, McDonald's, Guzman y Gomez or Food Retail Group (RFG). TASK help these brands innovate and create better ways to build loyalty and digital customer experiences and take their brands further into global markets.
 
-**TASK’s platform offers a range of features:**
+**TASK's platform offers a range of features:**
 
 - **Visual Storytelling:** TASK uses visual storytelling with displays and interactive tools, both in-store and out.
 - **Online Ordering:** TASK provides a point-of-sale, inventory, data analytics, and transaction management platform.
-- **Point-of-Sale:** TASK’s enterprise loyalty functionality includes mobile, web, in-store, covering member segmentation, local venue promotional activation, surprise and delight options, all in a cloud environment.
+- **Point-of-Sale:** TASK's enterprise loyalty functionality includes mobile, web, in-store, covering member segmentation, local venue promotional activation, surprise and delight options, all in a cloud environment.
 - **Enterprise Management:** TASK allows privilege-based configuration changes on the fly on phones, desktops, and tablets, including selling in and out of products across all modules, adding clerks, running reports, and monitoring designated locations.
-- **Integration:** TASK’s platform is integrated with the world’s best services through their API, including HubRise.
+- **Integration:** TASK's platform is integrated with the world's best services through their API, including HubRise.
 
 TASK's enterprise solution serves; casinos, stadiums, multi-site Quick Service Restaurant (QSR) or fast-casual restaurants, and large-scale food services operations.
 

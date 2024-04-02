@@ -106,7 +106,7 @@ Chaque option se caractérise par une quantité unique. Les options multiples id
 
 <details>
 
-Vous trouverez ci-dessous un exemple de requête contenant un article unique avec une option.
+<summary>Exemple de JSON contenant un article unique avec une option</summary>
 
 ```json
 "items": [
@@ -150,7 +150,7 @@ Pour les commandes avec livraison par le restaurant uniquement, Just Eat Flyt Br
 
 <details>
 
-Vous trouverez ci-dessous un exemple de requête contenant les coordonnées du client.
+<summary>Exemple de JSON contenant les coordonnées du client</summary>
 
 ```json
 "customer": {
@@ -194,7 +194,7 @@ Les champs disponibles dans les requêtes sont les suivants :
 
 <details>
 
-Voici un exemple de requête pour les frais.
+<summary>Exemple de JSON pour les frais</summary>
 
 ```json
 {

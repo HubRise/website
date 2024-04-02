@@ -449,8 +449,8 @@ content:
           documentation: /apps/captain
           logo: captain.png
           title: Captain
-          description: Captain delivery management suite of solutions has been designed to support restaurant delivery through order management and live customer order tracking.
-          additional_info: Integration in progress.
+          description: Captain supports restaurant delivery through order management and live customer order tracking. A Kitchen Display Screen helps prioritise the cooking sequence. An add-on feature enables the use of third-party delivery services.
+          additional_info:
         - website: https://coursicab.com/en
           documentation: /apps/coursicab
           logo: coursicab.png
