@@ -50,4 +50,4 @@ Avec HubRise, vous pouvez synchroniser votre menu, vos informations clients et v
 
 ## Prérequis
 
-Pour établir la connexion entre LEO2 et HubRise, vous devez disposer d'une licence LEO2 et du module Vente Externe.
+Pour établir la connexion entre LEO2 et HubRise, vous devez disposer d'une licence LEO2 et du module Vente Externe. La connexion se fait directement avec votre logiciel de caisse et non avec LEOGES.

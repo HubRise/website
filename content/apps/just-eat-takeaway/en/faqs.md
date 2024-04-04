@@ -9,3 +9,4 @@ meta:
 ---
 
 - [What Are Primary and Secondary Connections?](/apps/just-eat-takeaway/faqs/primary-secondary-connections)
+- [How Do I Find My Just Eat Takeaway Restaurant ID?](/apps/just-eat-takeaway/faqs/find-just-eat-takeaway-restaurant-id)

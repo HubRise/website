@@ -40,6 +40,12 @@ Once your catalog is populated on HubRise, you can push it manually to your Just
 
 ---
 
+---
+
+**IMPORTANT NOTE:** Once HubRise is connected to your Just Eat store, you should under no circumstances ask Just Eat support to update it on your behalf. Doing so will break the connexion. If you stop receiving orders and suspect that this is what happened, immediately proceed with a Manual Catalog Push.
+
+---
+
 ## Automatic Catalog Push
 
 Just Eat Flyt Bridge can automatically push your HubRise catalog into Just Eat every time it is updated. By default, this option is turned off. You can enable it by following these steps:

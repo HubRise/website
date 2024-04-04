@@ -12,7 +12,10 @@ If Just Eat Flyt Bridge is configured and you are not receiving orders, here are
 
 ### Menu not Pushed
 
-If you have not pushed your menu to Just Eat, you will not receive any orders. For more information on how to push your menu, see [Push the Catalog](/apps/just-eat-flyt/push-catalog).
+If you have not pushed your menu to Just Eat, you will not receive any orders. 
+If you have pushed the menu but asked Just Eat support to update it on your behalf, the connexion with HubRise could be broken. In both these cases, you need to push the menu again.
+
+For more information on how to push your menu, see [Push the Catalog](/apps/just-eat-flyt/push-catalog).
 
 ### OrderPad not Switched on
 
