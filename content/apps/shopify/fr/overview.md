@@ -38,7 +38,7 @@ La connexion de Shopify à HubRise permet à Shopify de :
 - Recevoir les commandes dans HubRise.
 - Recevoir le statut des commandes dans Shopify depuis HubRise.
 - Envoyer les informations clients à HubRise.
-- Recevoir un catalogue de produits de HubRise.
+- Recevoir un catalogue à HubRise, avec support des variantes.
 - Synchroniser l'inventaire avec HubRise.
 
 ## Pourquoi se connecter ?

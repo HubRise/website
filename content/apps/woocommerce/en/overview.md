@@ -32,7 +32,7 @@ Connecting WooCommerce Bridge allows HubRise to:
 
 - Pull orders from WooCommerce, including order status.
 - Pull customer information from WooCommerce.
-- Push a catalog into WooCommerce.
+- Push a catalog into HubRise, with variants support.
 - Synchronise inventory with WooCommerce.
 
 ## Why Connect?
