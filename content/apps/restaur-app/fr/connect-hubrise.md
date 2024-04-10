@@ -31,7 +31,7 @@ Vous pouvez connecter Restaur'App à votre compte HubRise de manière autonome e
 Vous pouvez également confier cette tâche à Restaur'App. Procédez alors de la manière suivante :
 
 1. Donnez accès à votre compte à l'équipe support de Restaur'App. Pour plus d'information, voir [Donner accès au support de Restaur'App](#give-access).
-1. Contactez l'équipe de support de Restaur'App sur support@anthemis.fr, en indiquant le nom et l'identifiant du point de vente à connecter. Vous pouvez inclure support@hubrise.com en copie pour un suivi coordonné entre nos deux équipes.
+1. Contactez l'équipe de support de Restaur'App sur support@restaur-app.fr, en indiquant le nom et l'identifiant du point de vente à connecter. Vous pouvez inclure support@hubrise.com en copie pour un suivi coordonné entre nos deux équipes.
 
 Si vous ne savez pas comment trouver le nom et l'identifiant de votre point de vente, consultez la section [Nom et identifiant du point de vente](/docs/locations#location-name-and-id).
 
@@ -42,7 +42,7 @@ Pour faciliter la prise en charge de vos demandes de support, nous vous recomman
 Pour donner accès à Restaur'App, procédez comme suit :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
-1. Dans la section **Permissions**, ajoutez support@anthemis.fr en sélectionnant l'option **Manager** dans la liste déroulante des rôles.
+1. Dans la section **Permissions**, ajoutez support@restaur-app.fr en sélectionnant l'option **Manager** dans la liste déroulante des rôles.
 1. Cliquez sur l'icône **+** pour ajouter le nouvel utilisateur.
 
 L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre point de vente. Le partage de mot de passe est déconseillé pour des raisons de sécurité.
