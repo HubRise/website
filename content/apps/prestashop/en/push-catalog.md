@@ -16,6 +16,8 @@ This page explains how you can push your catalog, what information is sent to Pr
 
 PrestaShop Bridge lets you push your HubRise catalog to PrestaShop. You can let PrestaShop Bridge push your catalog automatically every time it is updated on HubRise, or push it manually when needed.
 
+If you encounter errors when pushing your catalog, see [Troubleshooting](/apps/prestashop/troubleshooting#push-catalog-errors).
+
 ### Populate a HubRise Catalog
 
 To be able to push your catalog into PrestaShop, you must populate a HubRise catalog first. Many apps connected with HubRise, including EPOS solutions, offer the ability to export the catalog to HubRise. Refer to your EPOS documentation on the HubRise website to verify.

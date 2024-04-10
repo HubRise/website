@@ -8,7 +8,9 @@ meta:
   description: Find out the technical details of how orders are pulled from PrestaShop into HubRise, which fields are passed and which are not.
 ---
 
-Connecting PrestaShop to HubRise allows you to receive orders directly in your EPOS or any other solution connected to your HubRise account.
+When you connect PrestaShop Bridge to HubRise, orders placed on your PrestaShop store are automatically pulled into HubRise. This allows you to process these orders directly in your EPOS or any other solution connected to your HubRise account.
+
+If orders are not syncing as expected, see [Troubleshooting](/apps/prestashop/troubleshooting#orders-not-syncing) for help.
 
 This page describes the information that HubRise receives from PrestaShop for your orders.
 
