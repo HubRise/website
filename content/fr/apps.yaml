@@ -581,7 +581,7 @@ content:
           documentation: /fr/apps/koust
           logo: koust.png
           title: Koust
-          description: Koust permet à tout type de restaurant de gérer ses stocks, analyser ses ventes et sa marge brute, optimiser ses achats et construire son menu.
+          description: Koust est un logiciel de gestion conçu pour les restaurateurs et hôteliers qui souhaitent gérer ses stocks, analyser ses ventes et sa marge brute, optimiser ses achats et construire son menu de manière à améliorer l'offre tout en conservant un contrôle précis sur la marge.
         - website: https://malba.io/
           documentation: /fr/apps/melba
           logo: melba.png
