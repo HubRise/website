@@ -57,6 +57,7 @@ Connecter SOLUTION à HubRise permet à votre [logiciel de caisse] de :
 - Envoyer un catalogue à HubRise. -OU- Envoyer un catalogue à HubRise, avec support des variantes.
 - Synchroniser l'inventaire avec HubRise.
 - Synchroniser le délai de livraison avec HubRise.
+- Synchroniser les horaires d'ouverture avec HubRise.
 
 ---
 
