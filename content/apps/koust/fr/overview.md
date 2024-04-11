@@ -27,6 +27,21 @@ L'application dispose de nombreuses fonctionnalités séparées en plusieurs pô
 
 Koust a été créé en septembre 2016. Ses principaux objectifs sont d'augmenter la marge brute des restaurateurs, augmenter leur productivité, et diminuer les coûts matières.
 
+
+
+Koust est un logiciel de gestion conçu spécialement pour les restaurateurs et hôteliers qui souhaitent gérer leurs coûts et leurs stocks. Il les aide à maîtriser leurs approvisionnements en matières premières, à surveiller la rentabilité et à améliorer l'offre tout en conservant un contrôle précis sur la marge. Cette expertise lui permet d’accompagner des clients renommés tels que La Cigale, Le 4ème Mur, ainsi que les hôtels Ibis et Radisson, et d’aider des centaines de restaurateurs à obtenir une augmentation de leur marge. 
+
+Koust répond aux besoins des chaînes, avec des fonctionnalités dédiées, permettant aux managers et dirigeants de piloter leurs établissements de manière efficace. Ces fonctionnalités incluent :
+
+- **Suivi des achats et analyse de la marge :** Visualisation des dépenses en temps réel et comparaison des prix fournisseurs. Calcul de la marge brute des restaurants et analyse de leur rentabilité.
+- **Contrôle des stocks et optimisation des produits :** Identifiez les écarts de stock et analysez leurs causes. Calculez la marge brute de chaque plat et identifiez les plus rentables.
+- **Pilotage de la performance et personalisation :** Accédez à des indicateurs clés de performance pour une analyse approfondie.
+Créez des rapports personnalisés pour répondre à vos besoins spécifiques.
+- **Gestion multi-sites et comparaison des performances :** Gérez et centralisez les données de tous vos restaurants. Comparez les performances de vos différents établissements.
+- **Production et sécurité alimentaire :** Créez et centralisez vos fiches techniques pour garantir la qualité. Optimisez votre production en fonction de vos stocks et prévisions. Assurez la traçabilité des produits et respectez les normes HACCP. Mettez en place un plan de maîtrise sanitaire pour garantir la sécurité alimentaire.
+
+Fondée en 2017 par Jean-Luc Le Goff, ancien restaurateur et développeur informatique, Koust est un logiciel métier conçu par un restaurateur pour les restaurateurs.
+
 ## Fonctionnalités d'intégration
 
 L'intégration de Koust avec HubRise permet de :
