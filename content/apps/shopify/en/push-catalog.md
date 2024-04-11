@@ -16,7 +16,11 @@ This page explains how you can push your catalog, what information is sent to Sh
 
 To be able to push your catalog into Shopify, you must populate a HubRise catalog first. Many apps connected with HubRise, including EPOS solutions, offer the ability to export the catalog to HubRise. Refer to your EPOS documentation on the HubRise website to verify.
 
+You can also use the HubRise Catalog Manager to create or update your catalog, including the addition of ref codes. Catalog Manager is edited by HubRise and you can use it free of charge. For more information, see [Catalog Manager](/apps/catalog-manager/overview).
+
 For more information on HubRise catalogs, see [Catalogs](/docs/catalog).
+
+When you push your catalog, Shopify Bridge creates the products that do not yet exist in Shopify. It also updates the price of your Shopify products, if the **Update prices of existing products** checkbox is selected in the Configuration page. Shopify Bridge does not delete products.
 
 ## Manual Catalog Push
 
@@ -26,8 +30,6 @@ Once your catalog is populated on HubRise, you can push it manually to your Shop
 1. Select the HubRise account and location connected with your Shopify store.
 1. Open the **CONNECTIONS** page, then select **Shopify Bridge** from the list of connected apps.
 1. In Shopify Bridge, select the **Actions** tab, then click **Push catalog**.
-
-When you push your catalog, Shopify Bridge creates the products that do not yet exist in Shopify. It also updates the price of your Shopify products, if the **Update prices of existing products** checkbox is selected in the Configuration page. Shopify Bridge does not delete products.
 
 ## Automatic Catalog Push
 
