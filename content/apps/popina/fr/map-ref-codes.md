@@ -1,7 +1,7 @@
 ---
 title: Associer les codes ref
 path_override: associer-codes-ref
-position: 5
+position: 4
 layout: documentation
 meta:
   title: Associer les codes ref | Popina | HubRise
