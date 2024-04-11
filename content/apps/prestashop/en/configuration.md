@@ -108,7 +108,7 @@ In the **Value(s) for this location** field, specify the value associated with t
 
 ### Catalog Variant to Push
 
-Catalog variants give you the flexibility to disable specific items or adjust prices for your PrestaShop website.
+Catalog variants give you the flexibility to disable specific items or adjust prices for your PrestaShop website. For more information, see [Catalog Variants](/apps/catalog-manager/variants) in our Catalog Manager online documentation.
 
 If your catalog includes variants, you have the option to select which one to use. When **(none)** is selected, the default items along with their standard prices are used. If your catalog has no variants, the menu will be hidden.
 

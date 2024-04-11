@@ -38,7 +38,7 @@ Pour chaque statut de commande HubRise, spécifiez le statut de commande PrestaS
 
 Cette section affiche la liste des transporteurs que vous avez définis dans votre back-office PrestaShop. Vous pouvez spécifier le code ref pour chaque transporteur, qui sera envoyé en tant que `service_type_ref` dans les objets JSON de la commande. Ce code ref est utilisé pour identifier le transporteur dans votre logiciel de caisse.
 
-Pour connaître les codes à utiliser, consultez la documentation de votre logiciel de caisse sur le site internet de HubRise.
+Pour connaître les codes à utiliser, consultez la documentation de votre logiciel de caisse sur la [page Apps](/apps) du site internet de HubRise.
 
 ### Articles spéciaux
 
@@ -51,13 +51,13 @@ Dans cette section, vous pouvez spécifier le code ref utilisé pour les article
 ![Page de configuration PrestaShop Bridge, Remises](./images/012-prestashop-configuration-discounts.png)
 
 Dans cette section, vous pouvez spécifier le code ref de la remise appliquée à vos produits, dans le cas où vous avez des règles de remise actives dans votre back-office PrestaShop.
-Pour obtenir le code ref correspondant, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
+Pour obtenir le code ref correspondant, reportez-vous à la documentation de votre logiciel de caisse sur la [page Apps](/apps) du site internet de HubRise.
 
 ### Frais
 
 ![Page de configuration PrestaShop Bridge, Frais](./images/013-prestashop-configuration-charges.png)
 
-Si des frais s'appliquent, un code ref peut être nécessaire. Pour vérifier, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
+Si des frais s'appliquent, un code ref peut être nécessaire. Pour vérifier, référez-vous à la documentation de votre logiciel de caisse sur la [page Apps](/apps) du site internet de HubRise.
 
 Dans cette section, vous pouvez spécifier le code ref des frais de livraison et des frais d'emballage.
 
@@ -88,7 +88,7 @@ Si votre module utilise deux clés de métadonnées, les formats pris en charge 
 
 Les clients PrestaShop peuvent payer leur commande en ligne ou en espèces à la livraison, en fonction des modules que vous installez dans votre back-office PrestaShop. Les paiements en ligne incluent les paiements par chèque, virement bancaire ou des plateformes de paiement en ligne comme PayPal.
 
-Dans cette section, vous pouvez spécifier les codes ref des deux types de paiement. Pour connaître les codes à utiliser, consultez la documentation de votre logiciel de caisse sur le site internet de HubRise.
+Dans cette section, vous pouvez spécifier les codes ref des deux types de paiement. Pour connaître les codes à utiliser, consultez la documentation de votre logiciel de caisse sur la [page Apps](/apps) du site internet de HubRise.
 
 ### Multisite
 
@@ -108,7 +108,7 @@ Dans le champ **Valeur(s) pour ce point de vente**, indiquez la valeur associée
 
 ### Variante de catalogue à envoyer
 
-Les variantes de catalogue vous donnent la flexibilité de désactiver des articles ou d'ajuster les prix spécifiquement pour votre site internet PrestaShop.
+Les variantes de catalogue vous donnent la flexibilité de désactiver des articles ou d'ajuster les prix spécifiquement pour votre site internet PrestaShop. Pour plus d'informations, voir [Variantes de catalogues](/apps/catalog-manager/variants) dans notre documentation en ligne du Catalog Manager.
 
 Si votre catalogue comprend des variantes, vous pouvez sélectionner celle que vous souhaitez utiliser. Lorsque **(aucun)** est sélectionné, les articles par défaut ainsi que leurs prix standards sont utilisés. Si votre catalogue n'a pas de variante, le menu déroulant est masqué.
 

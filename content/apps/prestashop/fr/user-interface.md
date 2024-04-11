@@ -20,7 +20,7 @@ Chaque ligne correspond à une opération et affiche les informations suivantes 
 
 - **HEURE** : date et heure de la commande
 - **COMMANDE** : identifiant HubRise de la commande, pour les opérations de commande.
-- **DESCRIPTION** : description facultative pour les opérations qui ne sont pas liées à une commande spécifique. Cette colonne peut être vide, ou afficher `Requête système` ou `Envoi catalogue`.
+- **DESCRIPTION** : description facultative pour les opérations qui ne sont pas liées à une commande spécifique. Cette colonne peut être vide, ou afficher une action spécifique telle que `Requête système` ou `Envoi catalogue`.
 - **STATUT** : statut de la commande. La valeur `OK` indique que la commande a bien été envoyée. Dans le cas contraire, un code d'erreur s'affiche en rouge.
 
 Le libellé **Requête système** indique que l'opération n'est pas liée à une commande spécifique.
@@ -47,7 +47,7 @@ Les logs constituent un puissant outil de débogage en cas d'incident. Pour comp
 
 Une page de requête système est présentée de la même manière qu'une page de commande.
 
-Les requêtes système sont généralement envoyées par PrestaShop Bridge pour informer HubRise d'une modification de la configuration ou pour récupérer les informations les plus récentes. 
+Les requêtes système sont généralement envoyées par PrestaShop Bridge pour informer HubRise d'une modification de la configuration ou pour récupérer les informations les plus récentes.
 
 Les pages de requête système fournissent des informations de débogage utiles aux équipes d'assistance. Mais elles ont généralement peu d'intérêt pour les autres utilisateurs.
 

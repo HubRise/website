@@ -20,7 +20,12 @@ Avec PrestaShop Bridge, vous pouvez envoyer votre catalogue HubRise à PrestaSho
 
 Pour pouvoir envoyer votre catalogue vers PrestaShop, vous devez préalablement alimenter un catalogue HubRise. De nombreuses applications connectées à HubRise, y compris des logiciels de caisse, offrent la possibilité d'exporter leur catalogue vers HubRise. Pour vérifier, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
 
+Vous pouvez également utiliser le Catalog Manager HubRise pour créer ou mettre à jour votre catalogue, y compris pour ajouter des codes ref. Catalog Manager est édité par HubRise, vous pouvez l'utiliser gratuitement. Pour plus d'informations, voir [Catalog Manager](/apps/catalog-manager/overview).
+
 Pour plus d'informations sur les catalogues HubRise, voir [Catalogues](/docs/catalog).
+
+Lorsque vous envoyez votre catalogue, PrestaShop Bridge crée les produits qui n'existent pas encore dans PrestaShop.
+PrestaShop Bridge ne supprime pas de produit.
 
 ### Envoi manuel du catalogue
 
@@ -30,9 +35,6 @@ Une fois que votre catalogue a été alimenté dans HubRise, vous pouvez l'envoy
 2. Sélectionnez le compte HubRise et le point de vente connecté à votre boutique PrestaShop.
 3. Ouvrez la page **CONNEXIONS**, puis sélectionnez **PrestaShop Bridge** dans la liste des applications connectées.
 4. Dans PrestaShop Bridge, sélectionnez l'onglet **Actions**, puis cliquez sur **Envoyer le catalogue**.
-
-Lorsque vous envoyez votre catalogue, PrestaShop Bridge crée les produits qui n'existent pas encore dans PrestaShop.
-PrestaShop Bridge ne supprime pas de produit.
 
 ### Envoi automatique du catalogue
 
