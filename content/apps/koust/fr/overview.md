@@ -9,36 +9,24 @@ meta:
 gallery:
 app_info:
   category: Gestion et Inventaire
-  availability: France
-  price_range: de 29 à 109 € / mois
+  availability: France, Suisse et Belgique
   website: https://koust.net
-  contact: https://koust.net/contact / contact@koust.fr / +33 2 44 84 43 88
+  contact: contact@koust.fr / +33 2 44 84 43 88
 ---
 
 ## Description
 
-Koust est une application qui permet aux restaurateurs de gérer leurs coûts et leurs stocks. Koust accompagne tous types de restaurateurs : des restaurants individuels aux chaînes de restaurants, en passant par la restauration collective.
+Koust est un logiciel de gestion conçu spécifiquement pour les restaurateurs et hôteliers qui souhaitent gérer leurs coûts et leurs stocks. Il les aide à maîtriser leurs approvisionnements en matières premières, à surveiller la rentabilité et à améliorer l'offre tout en conservant un contrôle précis sur la marge. 
 
-L'application dispose de nombreuses fonctionnalités séparées en plusieurs pôles :
-
-- Le pôle de gestion offre des tableaux de bord qui permettent de suivre en temps réel l'évolution du chiffre d'affaires et de la marge brute de votre établissement.
-- Le pôle de stock permet de passer vos commandes fournisseurs, de réaliser vos inventaires et d'analyser vos achats.
-- Le pôle de production offre un planning de production ainsi que la production de produits semi-finis.
-
-Koust a été créé en septembre 2016. Ses principaux objectifs sont d'augmenter la marge brute des restaurateurs, augmenter leur productivité, et diminuer les coûts matières.
-
-
-
-Koust est un logiciel de gestion conçu spécialement pour les restaurateurs et hôteliers qui souhaitent gérer leurs coûts et leurs stocks. Il les aide à maîtriser leurs approvisionnements en matières premières, à surveiller la rentabilité et à améliorer l'offre tout en conservant un contrôle précis sur la marge. Cette expertise lui permet d’accompagner des clients renommés tels que La Cigale, Le 4ème Mur, ainsi que les hôtels Ibis et Radisson, et d’aider des centaines de restaurateurs à obtenir une augmentation de leur marge. 
+Cette expertise lui permet d’accompagner des clients renommés tels que La Cigale, Le 4ème Mur, ainsi que les hôtels Ibis et Radisson, et d’aider des centaines de restaurateurs à obtenir une augmentation de leur marge. 
 
 Koust répond aux besoins des chaînes, avec des fonctionnalités dédiées, permettant aux managers et dirigeants de piloter leurs établissements de manière efficace. Ces fonctionnalités incluent :
 
 - **Suivi des achats et analyse de la marge :** Visualisation des dépenses en temps réel et comparaison des prix fournisseurs. Calcul de la marge brute des restaurants et analyse de leur rentabilité.
-- **Contrôle des stocks et optimisation des produits :** Identifiez les écarts de stock et analysez leurs causes. Calculez la marge brute de chaque plat et identifiez les plus rentables.
-- **Pilotage de la performance et personalisation :** Accédez à des indicateurs clés de performance pour une analyse approfondie.
-Créez des rapports personnalisés pour répondre à vos besoins spécifiques.
-- **Gestion multi-sites et comparaison des performances :** Gérez et centralisez les données de tous vos restaurants. Comparez les performances de vos différents établissements.
-- **Production et sécurité alimentaire :** Créez et centralisez vos fiches techniques pour garantir la qualité. Optimisez votre production en fonction de vos stocks et prévisions. Assurez la traçabilité des produits et respectez les normes HACCP. Mettez en place un plan de maîtrise sanitaire pour garantir la sécurité alimentaire.
+- **Contrôle des stocks et optimisation des produits :** Identification des écarts de stock et analyse de leurs causes. Calcul de la marge brute de chaque plat et identification des plus rentables.
+- **Pilotage de la performance et personnalisation :** Accès à des indicateurs clés de performance pour une analyse approfondie. Création de rapports personnalisés pour répondre à des besoins spécifiques.
+- **Gestion multi-sites et comparaison des performances :** Gestion et centralisation des données de tous points de vente. Comparaison des performances des différents établissements.
+- **Production et sécurité alimentaire :** Création et centralisation des fiches techniques pour garantir la qualité. Optimisation de la production en fonction des stocks et prévisions. Assurance de la traçabilité des produits et respect des normes HACCP. Mise en place d'un plan de maîtrise sanitaire pour garantir la sécurité alimentaire.
 
 Fondée en 2017 par Jean-Luc Le Goff, ancien restaurateur et développeur informatique, Koust est un logiciel métier conçu par un restaurateur pour les restaurateurs.
 
