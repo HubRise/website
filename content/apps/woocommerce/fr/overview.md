@@ -14,7 +14,7 @@ gallery:
 app_info:
   category: Commande en ligne
   availability: Monde entier
-  price_range: null
+  price_range:
   website: https://woocommerce.com
 ---
 

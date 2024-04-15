@@ -160,6 +160,7 @@ The page displays the following information:
 
 - **PrestaShop API Key**: This is the API key you need to enter in the PrestaShop Bridge configuration page. This key is automatically generated when you install the HubRise module, and it cannot be changed.
 - **Webhook Base URL**: This is the base URL of the webhook that your PrestaShop store uses to send order updates to HubRise. The default value `https://prestashop.hubrise-apps.com` should not be changed.
+- **Account ID**: This is the ID of your HubRise account.
 - **Order Metadata**: This lets you specify which database fields should be sent to HubRise as metadata when an order is created. For more information, see [Order Metadata](#order-metadata).
 
 To change the configuration, update the fields as needed, and then click **Save**.
