@@ -14,7 +14,7 @@ Cette page explique comment configurer manuellement les codes ref dans LivePeppe
 
 ## Produits et SKUs
 
-Chaque produit a un ou plusieurs SKU. Chaque SKU, correspondant à des variantes sur LivePepper, dispose d'un code ref qui doit être associé à l'article correspondant dans votre logiciel de caisse.
+Chaque produit a un ou plusieurs SKUs. Chaque SKU, correspondant à des variantes sur LivePepper, dispose d'un code ref qui doit être associé à l'article correspondant dans votre logiciel de caisse.
 
 Pour mettre à jour le code ref de chaque variante, suivez ces étapes :
 

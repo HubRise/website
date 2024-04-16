@@ -61,3 +61,7 @@ Avec HubRise, vous pouvez synchroniser votre menu, vos informations clients et v
 ## Prérequis
 
 Pour établir la connexion entre Popina et HubRise, vous devez disposer d'une licence Popina.
+
+## Documentation sur le site de Popina
+
+Une [documentation HubRise](https://wiki.popina.com/hubrise) est disponible sur le site de Popina. Nous vous invitons à vous y référer pour obtenir des informations complémentaires sur l'intégration de Popina avec HubRise.
