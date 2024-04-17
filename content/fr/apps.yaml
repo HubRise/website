@@ -593,6 +593,11 @@ content:
           title: RapidBar
           description: RapidBar simplifie la gestion des inventaires de votre restaurant, hôtel ou bar. RapidBar vous aide à contrôler votre chaîne d'approvisionnement, en centralisant les menus, les inventaires et les commandes fournisseurs dans une seule application cloud.
           additional_info:
+        - website: https://www.sage.com/fr-fr/sage-business-cloud/sage-x3
+          documentation: /fr/apps/sage-x3
+          logo: sage.png
+          title: Sage X3 Gigavee Technology
+          description: Sage X3 est un ERP conçu pour les entreprises de taille moyenne à grande. Il offre des capacités robustes en gestion financière, contrôle des stocks, planification de la production et approvisionnement. Cet outil complet aide à rationaliser les opérations et à améliorer les processus de prise de décision.
         - website: https://www.somm-it.com/
           documentation: /fr/apps/somm-it
           logo: somm-it.png
