@@ -8,47 +8,32 @@ meta:
   description: Interface utilisateur permettant de configurer et visualiser les impressions. Connectez vos apps et synchronisez vos données.
 ---
 
-Le back-office de Expedy permet de visualiser et de configurer les paramètres d'impression.
+Le back-office de Expedy permet de visualiser vos impressions et de configurer les paramètres d'impression.
+
+Pour accèder au back-office Expedy, suivre ces étapes :
+1. Depuis la page d'accueil du back-office Expedy, cliquez sur **Imprimantes**.
+1. Cliquez sur l'icône de configuration de l'imprimante connectée <InlineImage width="20" height="20">![icône Crayon](../images/__configuration-icon.png)</InlineImage>.
 
 ## Statut des dernières impressions
 
-Lorsque votre imprimante est sous tension, les commandes HubRise sont imprimées dès réception, ou selon votre configuration, dès qu'elles passent dans un statut qui déclenche l'impression.
+Lorsque votre imprimante est sous tension, les commandes HubRise sont imprimées dès réception, ou selon votre configuration, dès qu'elles passent dans un statut qui déclenche l'impression. Pour plus d'informations sur les status, voir la rubrique [Configuration](/apps/expedy/configuration).
 
 Si votre imprimante est hors tension, les commandes sont mises en attente jusqu'à la prochaine mise sous tension.
 
-Expedy permet de visualiser le volume d'impression en 30 jours, ainsi que les détails des 10 dernières commandes reçues. Pour y accéder, suivez ces étapes :
+Expedy permet de visualiser le volume d'impression en 30 jours.
+![Interface utilisateur - Graphique des impressions](./images/003-expedy-print-graph.png)
 
-1. Depuis la page d'accueil de votre back-office Expedy, cliquez sur **Imprimantes**.
-1. Cliquez sur le nom de l'imprimante concernée.
-   ![Interface utilisateur - Graphique des impressions](./images/003-expedy-print-graph.png)
+## Dernières impressions
 
-## Paramètres HubRise
+Expedy permet de visualiser les détails des 10 dernières commandes reçues. Pour les consulter, défilez vers le bas jusqu'à la section intitulée **10 dernières requêtes API**.
+![Interface utilisateur - 10 dernières requêtes API](./images/010-2x-expedy-last-prints.png)
 
-Expedy permet de sélectionner le statut de commande qui déclenche l'impression. Vous pouvez ainsi choisir d'imprimer les commandes lorsqu'elles passent dans l'un des 3 statuts suivants :
+## Imprimante sous tension
+Vous pouvez vérifier que l'imprimante est bien sous tension dans l'encart situé en dessous de celui qui représente les dernières requêtes API.
+![Interface utilisateur - 10 dernières requêtes API](./images/011-2x-expedy-print-activated.png)
 
-- _Nouvelle_
-- _Reçue_
-- _Acceptée_
+## Paramètres d'impressions
 
-Expedy permet aussi d'effectuer une action supplémentaire lors de la réception d'une commande. Vous pouvez ainsi choisir de passer la commande en :
+Pour configurer vos paramètres d'impressions, voir la rubrique [Configuration](/apps/expedy/configuration).
 
-- _Reçue_
-- _Acceptée_
 
-Pour paramétrer ces actions, suivez ces étapes :
-
-1. Depuis la page d'accueil de votre back-office Expedy, cliquez sur **Imprimantes**.
-1. Cliquez sur le nom de l'imprimante concernée.
-1. Faites défiler vers le bas jusqu'à la section **HubRise**.
-   ![Interface utilisateur - Paramètres HubRise](./images/002-expedy-hubrise-connected.png)
-
-## Paramètres d'impression
-
-Vous pouvez configurer le nom et le logo de votre société en tête des tickets. Vous pouvez également afficher l'adresse complète de votre établissement en pied de page.
-
-Pour configurer la mise en page des tickets, suivez ces étapes :
-
-1. Depuis la page d'accueil de votre back-office Expedy, cliquez sur **Imprimantes**.
-1. Cliquez sur le nom de l'imprimante concernée.
-1. Faites défiler vers le bas jusqu'à la section **PARAMETRES D'IMPRESSION POUR HUBRISE / SHOPIFY / WIX**.
-   ![Interface utilisateur - Paramètres d'impression](./images/004-expedy-print-settings.png)

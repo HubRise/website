@@ -1,7 +1,7 @@
 ---
 title: Informations techniques
 path_override: details-techniques
-position: 5
+position: 4
 layout: documentation
 meta:
   title: Informations techniques | Expedy | HubRise
