@@ -374,7 +374,7 @@ content:
           documentation: /apps/obypay
           logo: obypay.png
           title: Obypay
-          description: Obypay is an online and a table ordering solution for restaurants with a digital conciergerie app for hotels.
+          description: Obypay offers an online and table ordering solution for restaurants, as well as a digital concierge service app for hotels. They also provide self ordering kiosks.
         - website: https://www.prestashop.com/en
           documentation: /apps/prestashop
           logo: prestashop.png
