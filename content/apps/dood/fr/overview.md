@@ -23,13 +23,13 @@ app_info:
 
 DOOD est une solution de commande en ligne destinée aux restaurateurs et aux commerces alimentaires, qu'ils soient indépendants, chaînes, franchises ou grands comptes. Elle permet de vendre en Click & Collect et en livraison, et de digitaliser son service en salle ou en boutique avec la commande et le paiement à table.
 
-DOOD offre un back-office de gestion du site e-commerce, comprenant : le suivi des commandes, l'édition du menu (photos, suppléments, allergènes, prix, TVA, etc.) et un dashboard de suivi des performances avec reporting détaillé pour piloter son activité en ligne.
+DOOD offre un back-office de gestion du site e-commerce, comprenant : le suivi des commandes, l'édition du menu (photos, suppléments, allergènes, prix, TVA, etc.) et un dashboard de suivi des performances avec reporting détaillé pour piloter son activité en ligne.
 
 DOOD intègre également une suite d'outils marketing permettant d'attirer de nouveaux clients en optimisant son référencement internet, ainsi que d'analyser le comportement de ses clients, de créer un programme de fidélisation sur mesure et des campagnes de marketing automatisées (mailing, SMS, push).
 
 ## Fonctionnalités de l'intégration
 
-Connecter DOOD à HubRise permet à votre solution de commande en ligne de :
+Connecter DOOD à HubRise permet à votre solution de commande en ligne de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Envoyer les informations clients à HubRise. 

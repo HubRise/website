@@ -19,7 +19,7 @@ app_info:
 
 OrderLine est un outil développé par HubRise, qui vous permet de gérer et d'imprimer facilement les commandes reçues à partir de différents systèmes intégrés à votre compte HubRise. OrderLine peut être utilisé gratuitement sur n'importe quel appareil, y compris les tablettes et les smartphones.
 
-Les commandes peuvent provenir de diverses solutions telles que :
+Les commandes peuvent provenir de diverses solutions telles que :
 
 - Solutions de commande en ligne pour les commerces et les restaurants.
 - Plateformes de livraison de repas à domicile.
@@ -28,7 +28,7 @@ Les commandes peuvent provenir de diverses solutions telles que :
 
 OrderLine aide les commerçants, restaurants et franchisés à gérer leurs commandes lorsque leur logiciel de caisse n'est pas intégré avec HubRise. OrderLine prend en charge les commandes en livraison, sur place et en emporté. Il se connecte à des points de vente HubRise individuels.
 
-Les fonctionnalités d'OrderLine comprennent :
+Les fonctionnalités d'OrderLine comprennent :
 
 - Réception des commandes en temps réel, avec notifications sonores personnalisables.
 - Impression des reçus de commande.

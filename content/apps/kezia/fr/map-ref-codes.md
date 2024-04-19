@@ -12,7 +12,7 @@ Une fois votre logiciel de caisse Kezia II connecté à HubRise, vous devez conf
 
 Kezia II identifie chaque élément d'une commande par un code ref. Vous devez indiquer les codes ref fournis par Kezia II dans vos autres applications, afin que les commandes puissent être réceptionnées.
 
-Il y a deux façons de procéder :
+Il y a deux façons de procéder :
 
 - Vous pouvez exporter le catalogue Kezia II vers HubRise, puis importer ce catalogue dans vos autres applications.
 - Ou vous pouvez saisir manuellement les codes ref dans vos autres applications.
@@ -21,7 +21,7 @@ Seules certaines applications permettent l'import d'un catalogue depuis HubRise.
 
 ## Exporter le catalogue {#export-catalog}
 
-Pour exporter manuellement un catalogue vers HubRise, suivez ces étapes :
+Pour exporter manuellement un catalogue vers HubRise, suivez ces étapes :
 
 1. Depuis l'écran d'accueil, sélectionnez **CAISSE**.
 1. Sélectionnez un vendeur.
@@ -34,7 +34,7 @@ Les informations client et les commandes sont envoyées automatiquement. En cas 
 
 Vous devez maintenant importer le catalogue HubRise dans vos autres applications connectées à HubRise. Pour effectuer cette opération, référez-vous à la documentation de ces applications sur le site de HubRise.
 
-Les produits que vous créez ou modifiez dans votre catalogue ne sont pas tous exportés vers HubRise. Pour rendre un produit exportable, suivez ces étapes :
+Les produits que vous créez ou modifiez dans votre catalogue ne sont pas tous exportés vers HubRise. Pour rendre un produit exportable, suivez ces étapes :
 
 1. Depuis l'écran d'accueil, sélectionnez **ARTICLES**.
 1. Double-cliquez sur le produit à synchroniser.
@@ -48,7 +48,7 @@ Vous pouvez ensuite exporter de nouveau votre catalogue en suivant les étapes d
 
 ## Produits {#products}
 
-Un produit dans HubRise correspond à un article dans Kezia II. Pour retrouver le code ref d'un article, suivez ces étapes :
+Un produit dans HubRise correspond à un article dans Kezia II. Pour retrouver le code ref d'un article, suivez ces étapes :
 
 1. Depuis l'écran d'accueil, sélectionnez **ARTICLES**.
 1. Double-cliquez sur le produit désiré. Le code ref s'affiche en-dessous du titre de la fenêtre **Fiche Article**.
@@ -56,7 +56,7 @@ Un produit dans HubRise correspond à un article dans Kezia II. Pour retrouver l
 
 ## SKUs
 
-Une SKU (_Stock Keeping Unit_) dans HubRise correspond au multi-tarif dans Kezia II, mais il est conseillé plutôt de créer un article différent pour chaque SKU. Par exemple, une pizza margherita en trois tailles différentes correspond dans Kezia II à trois articles distincts :
+Une SKU (_Stock Keeping Unit_) dans HubRise correspond au multi-tarif dans Kezia II, mais il est conseillé plutôt de créer un article différent pour chaque SKU. Par exemple, une pizza margherita en trois tailles différentes correspond dans Kezia II à trois articles distincts :
 
 - Margherita Grande
 - Margherita Medium
@@ -66,7 +66,7 @@ Pour trouver le code ref d'un article, suivez la procédure décrite dans la par
 
 ## Options
 
-Une option dans HubRise correspond à un article option dans Kezia II. Pour vérifier qu'un article est considéré comme une option, vérifiez que la case nécessaire est cochée :
+Une option dans HubRise correspond à un article option dans Kezia II. Pour vérifier qu'un article est considéré comme une option, vérifiez que la case nécessaire est cochée :
 
 1. Depuis l'écran d'accueil, sélectionnez **ARTICLES**.
 1. Double-cliquez sur le produit désiré.
@@ -85,7 +85,7 @@ Une remise dans Kezia II peut uniquement être créée lorsque le vendeur enregi
 Une promotion dans HubRise correspond à un menu dans Kezia II. Pour retrouver le code ref d'un menu, dans la barre de menu, sélectionnez **Article** > **Menus** > **Liste**. Le code ref du menu s'affiche dans la colonne **Idart** et correspond au code ref de l'article attribué au menu lors de sa création.
 ![Associer les codes ref - Menus](./images/007-kezia-menus.png)
 
-Si les menus ne sont pas accessibles, suivez ces étapes :
+Si les menus ne sont pas accessibles, suivez ces étapes :
 
 1. Dans la barre de menu, sélectionnez **Fichier** > **Paramètres** > **Configuration**.
 1. Cliquez sur **Article**.

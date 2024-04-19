@@ -12,14 +12,14 @@ Cette page décrit comment récupérer un catalogue depuis Lightspeed dans HubRi
 
 ## Récupérer le catalogue dans HubRise
 
-Pour récupérer un catalogue depuis Lightspeed, suivez ces étapes :
+Pour récupérer un catalogue depuis Lightspeed, suivez ces étapes :
 
 1. Depuis la page principale de Lightspeed Restaurant Bridge, sélectionnez l'onglet **Actions**, puis cliquez sur **Récupérer le catalogue**.
 2. Cliquez sur **Confirmer** lorsque vous y êtes invité.
 
 ---
 
-**REMARQUE IMPORTANTE** : Cette opération remplacera votre catalogue HubRise actuel.
+**REMARQUE IMPORTANTE** : Cette opération remplacera votre catalogue HubRise actuel.
 
 ---
 
@@ -37,7 +37,7 @@ Le nom de la catégorie est envoyé à HubRise, mais son code ref et ses descrip
 
 ### Produits et SKU
 
-Lightspeed prend en charge les SKU, mais pas les produits. Pour chaque article du catalogue Lightspeed, Lightspeed Restaurant Bridge crée une SKU correspondante dans HubRise avec les informations suivantes (si elles sont disponibles) :
+Lightspeed prend en charge les SKU, mais pas les produits. Pour chaque article du catalogue Lightspeed, Lightspeed Restaurant Bridge crée une SKU correspondante dans HubRise avec les informations suivantes (si elles sont disponibles) :
 
 - Nom de la SKU
 - Code ref de la SKU
@@ -50,7 +50,7 @@ Lightspeed prend en charge les SKU, mais pas les produits. Pour chaque article d
 
 Lightspeed prend en charge des groupes d'articles, qui sont envoyés à HubRise sous forme d'options et de listes d'options.
 
-Le type d'option HubRise est sélectionné de la manière suivante :
+Le type d'option HubRise est sélectionné de la manière suivante :
 
 - Un groupe avec la règle de sélection **Sélectionner un article exactement** est converti en une liste d'options à choix unique.
 - Un groupe avec une règle de sélection différente est converti en une liste d'options à choix multiple.
@@ -67,33 +67,33 @@ Les sections suivantes fournissent des informations techniques sur l'encodage de
 
 ### Catégories
 
-Pour chaque catégorie, les champs suivants sont envoyés à HubRise :
+Pour chaque catégorie, les champs suivants sont envoyés à HubRise :
 
 - `name` : nom de la catégorie.
-- `ref` : Un numéro séquentiel est automatiquement généré pour chaque catégorie.
+- `ref` : Un numéro séquentiel est automatiquement généré pour chaque catégorie.
 
 ### SKU
 
-Pour chaque SKU, Lightspeed envoie les informations suivantes à HubRise :
+Pour chaque SKU, Lightspeed envoie les informations suivantes à HubRise :
 
 - `name` : nom de la SKU
 - `description` : description de la SKU
-- `image_ids` : liste des ID d'images associées à la SKU
-- `skus` : liste contenant une seule SKU
-  - `skus[0].ref` : code ref de la SKU, transmis dans les commandes
-  - `skus[0].price` : prix de la SKU
-  - `skus[0].option_list_refs` : liste d'options rattachées à la SKU
+- `image_ids` : liste des ID d'images associées à la SKU
+- `skus` : liste contenant une seule SKU
+  - `skus[0].ref` : code ref de la SKU, transmis dans les commandes
+  - `skus[0].price` : prix de la SKU
+  - `skus[0].option_list_refs` : liste d'options rattachées à la SKU
 
 ### Options
 
-Chaque liste d'options a une `ref` séquentielle qui commence par `deal_`. Pour chaque option, les informations suivantes sont envoyées à HubRise :
+Chaque liste d'options a une `ref` séquentielle qui commence par `deal_`. Pour chaque option, les informations suivantes sont envoyées à HubRise :
 
 - `name` : nom de l'option
 - `ref` : code ref de l'option
 - `price` : prix de l'option
 
-Chaque groupe d'instructions de production est associé à HubRise sous forme de liste d'options. Pour chaque instruction, les informations suivantes sont envoyées à HubRise :
+Chaque groupe d'instructions de production est associé à HubRise sous forme de liste d'options. Pour chaque instruction, les informations suivantes sont envoyées à HubRise :
 
 - `name` : nom de l'instruction
-- `ref` : Le code ref de l'instruction, précédé d'un signe `+`.
-- `price` : toujours 0
+- `ref` : Le code ref de l'instruction, précédé d'un signe `+`.
+- `price` : toujours 0

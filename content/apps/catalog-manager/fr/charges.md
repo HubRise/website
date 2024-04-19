@@ -18,7 +18,7 @@ La plupart des applications ne prennent pas en charge les frais, car elles les g
 
 ***
 
-**REMARQUE IMPORTANTE :** Les frais ne sont pas exportés vers les plateformes de livraison de repas. Ils sont gérés directement dans le back-office de la plateforme.
+**REMARQUE IMPORTANTE :** Les frais ne sont pas exportés vers les plateformes de livraison de repas. Ils sont gérés directement dans le back-office de la plateforme.
 
 ***
 

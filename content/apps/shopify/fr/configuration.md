@@ -12,7 +12,7 @@ La page de configuration permet de personnaliser le comportement de Shopify Brid
 
 ***
 
-**REMARQUE IMPORTANTE :** En raison de sa nature très personnalisable, la configuration de Shopify Bridge nécessite un certain niveau de connaissances techniques. Si vous n'êtes pas à l'aise avec cette configuration, passez quelques commandes de test, avec différentes méthodes de paiement, et contactez-nous à support\@hubrise.com en mentionnant le logiciel de caisse que vous utilisez. Nous serons ravis de vous aider !
+**REMARQUE IMPORTANTE :** En raison de sa nature très personnalisable, la configuration de Shopify Bridge nécessite un certain niveau de connaissances techniques. Si vous n'êtes pas à l'aise avec cette configuration, passez quelques commandes de test, avec différentes méthodes de paiement, et contactez-nous à support\@hubrise.com en mentionnant le logiciel de caisse que vous utilisez. Nous serons ravis de vous aider !
 
 ***
 
@@ -40,18 +40,18 @@ La prise en charge des heures de livraison dans Shopify nécessite un plugin, ca
 
 Si vous n'utilisez pas les heures de livraison, laissez le menu déroulant **Valeurs à utiliser** défini sur **Aucune**.
 
-Sinon, vous devrez choisir entre deux options d'encodage de l'heure de livraison par votre plugin : **Une valeur contenant la date et l'heure** ou **Deux valeurs : une pour la date, une pour l'heure**.
+Sinon, vous devrez choisir entre deux options d'encodage de l'heure de livraison par votre plugin : **Une valeur contenant la date et l'heure** ou **Deux valeurs : une pour la date, une pour l'heure**.
 
 Pour déterminer comment votre plugin encode l'heure de livraison, passez une commande de test et examinez les logs sur la [page Commandes](/docs/data#orders). Recherchez le champ `note_attributes` dans le JSON de la commande, et identifiez les attributs contenant la date et l'heure souhaitées. Si vous ne trouvez pas l'heure de livraison dans le champ `note_attributes`, contactez le développeur du plugin pour obtenir de l'aide.
 
 En fonction de l'option sélectionnée dans le menu déroulant **Valeurs à utiliser**, un ou deux champs apparaîtront, où vous pourrez spécifier les noms d'attribut de commande contenant la date et l'heure souhaitées.
 
-Si votre plugin utilise un attribut de commande, les formats pris en charge sont les suivants :
+Si votre plugin utilise un attribut de commande, les formats pris en charge sont les suivants :
 
-- ISO 8601. Par exemple : `2021-07-22T12:00:30+02:00`.
-- Horodatage Unix. Par exemple : `1642422302`.
+- ISO 8601. Par exemple : `2021-07-22T12:00:30+02:00`.
+- Horodatage Unix. Par exemple : `1642422302`.
 
-Si votre plugin utilise deux attributs de commande, les formats pris en charge sont les suivants :
+Si votre plugin utilise deux attributs de commande, les formats pris en charge sont les suivants :
 
 - La date doit être au format `dd/mm/yyyy`.
 - L'heure doit être au format `hh:mm`.
@@ -64,7 +64,7 @@ La section **Paiements** permet d'attribuer un code ref à pas moins de 15 méth
 
 Pour chaque méthode de paiement prise en charge, saisissez son nom exact tel qu'il apparaît dans les commandes Shopify, ainsi que le code ref attendu par votre logiciel de caisse.
 
-Pour déterminer le nom d'une méthode de paiement, envoyez une commande de test à HubRise et examinez les logs sur la [page Commandes](/docs/data#orders). Recherchez l'attribut `payment_gateway_names` dans le JSON de la commande, qui affiche une valeur telle que `Stripe` ou `PayPal` : c'est le nom que vous devez entrer dans le champ **Nom dans Shopify**.
+Pour déterminer le nom d'une méthode de paiement, envoyez une commande de test à HubRise et examinez les logs sur la [page Commandes](/docs/data#orders). Recherchez l'attribut `payment_gateway_names` dans le JSON de la commande, qui affiche une valeur telle que `Stripe` ou `PayPal` : c'est le nom que vous devez entrer dans le champ **Nom dans Shopify**.
 
 Pour trouver les codes ref à utiliser, reportez-vous à la documentation de votre logiciel de caisse sur notre [page Apps](/apps).
 
@@ -121,7 +121,7 @@ Si vous avez besoin de réinitialiser la configuration, cliquez sur **Réinitial
 
 ***
 
-**REMARQUE IMPORTANTE** : La réinitialisation de la configuration déconnectera instantanément le bridge de Shopify.
+**REMARQUE IMPORTANTE** : La réinitialisation de la configuration déconnectera instantanément le bridge de Shopify.
 
 ***
 

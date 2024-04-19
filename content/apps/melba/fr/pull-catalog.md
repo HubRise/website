@@ -10,13 +10,13 @@ meta:
 
 ## Importer les produits dans Melba
 
-Pour importer un catalogue HubRise dans Melba, suivez ces étapes :
+Pour importer un catalogue HubRise dans Melba, suivez ces étapes :
 
 1. Depuis le back-office de Melba, cliquez sur l'icône **EXTENSIONS** dans le menu à gauche.
 
 1. Trouvez HubRise dans la liste des extensions. Si HubRise est connecté, vous voyez le label **Installée**. A droite de ce label, cliquez sur l'icône avec les 3 points verticaux, puis sur **Importer des produits**.
 
-1. Une nouvelle page s'ouvre. Vérifiez que la première option sélectionnée est **HubRise**, et que la deuxième est **Importer les produits**, comme dans la capture d'écran ci-dessous :
+1. Une nouvelle page s'ouvre. Vérifiez que la première option sélectionnée est **HubRise**, et que la deuxième est **Importer les produits**, comme dans la capture d'écran ci-dessous :
    ![Paramètres import](./images/002-import-catalog-settings.png)
 
 1. Cliquez sur le bouton **Importer les produits** situé en bas à droite de la page.
@@ -50,7 +50,7 @@ Les catégories HubRise sont créées dans Melba. Les sous-catégories sont impo
 
 Les produits HubRise sont créés dans Melba en tant que recettes ou articles, selon le type d'import sélectionné pour chaque produit. Les SKUs HubRise sont importées comme des prix de vente du produit.
 
-Les informations suivantes sont importées dans Melba : nom, code ref, prix, catégorie.
+Les informations suivantes sont importées dans Melba : nom, code ref, prix, catégorie.
 
 Les codes ref sont importés dans le champ **Code vente**, visible dans la section **Informations de vente** de la fiche article ou recette.
 

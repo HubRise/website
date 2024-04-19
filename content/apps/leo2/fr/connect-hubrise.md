@@ -16,7 +16,7 @@ meta:
 
 ## Connecter LEO2
 
-Pour connecter votre logiciel de caisse LEO2 à HubRise, suivez ces étapes :
+Pour connecter votre logiciel de caisse LEO2 à HubRise, suivez ces étapes :
 
 1. Vérifiez que le module **Vente Externe** est activé. Pour plus d'informations, contactez votre revendeur.
 1. Depuis l'écran d'accueil de LEO2, cliquez sur **Gestion**.
@@ -54,7 +54,7 @@ L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers �
 
 Le fonctionnement d'HubRise nécessite que le serveur HubRise soit démarré sur le même ordinateur que LEO2.
 
-Pour faciliter le démarrage du serveur HubRise, vous pouvez créer un raccourci sur le bureau de votre ordinateur en suivant les étapes suivantes :
+Pour faciliter le démarrage du serveur HubRise, vous pouvez créer un raccourci sur le bureau de votre ordinateur en suivant les étapes suivantes :
 
 1. Ouvrez le dossier d'installation de LEO2.
 1. Cliquez avec le bouton droit sur l'exécutable **LEO250.exe**.

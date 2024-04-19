@@ -28,7 +28,7 @@ De même, les avis formulés par les clients sur des produits individuels ne son
 
 ### Lorsque le statut change dans HubRise
 
-Lorsque le statut de commande change dans HubRise, le statut dans WooCommerce est modifié selon la correspondance suivante :
+Lorsque le statut de commande change dans HubRise, le statut dans WooCommerce est modifié selon la correspondance suivante :
 
 | Statut HubRise         | Statut WooCommerce |
 | ---------------------- | ------------------ |
@@ -47,7 +47,7 @@ Les commandes WooCommerce sont créées dans HubRise avec le statut `nouvelle`.
 
 ### Lorsque le statut change dans WooCommerce
 
-Lorsque le statut de commande change dans WooCommerce, le statut dans HubRise change en respectant les associations suivantes :
+Lorsque le statut de commande change dans WooCommerce, le statut dans HubRise change en respectant les associations suivantes :
 
 | Statut WooCommerce | Statut HubRise |
 | ------------------ | -------------- |
@@ -62,7 +62,7 @@ Dans l'installation WooCommerce par défaut, le type de service est toujours `de
 
 ---
 
-**FAQ associée** : [Comment encoder des métadonnées personnalisées dans une commande ?](/apps/woocommerce/faqs/encode-custom-metadata)
+**FAQ associée** : [Comment encoder des métadonnées personnalisées dans une commande ?](/apps/woocommerce/faqs/encode-custom-metadata)
 
 ---
 
@@ -72,7 +72,7 @@ WooCommerce Bridge transmet des données clients complètes pour les commandes, 
 
 ## Paiements
 
-WooCommerce prend en charge quatre types de paiements dans une commande :
+WooCommerce prend en charge quatre types de paiements dans une commande :
 
 - Paiement à la livraison
 - Chèque
@@ -81,7 +81,7 @@ WooCommerce prend en charge quatre types de paiements dans une commande :
 
 ---
 
-**REMARQUE IMPORTANTE** : Les codes ref de paiement seront bientôt personnalisables depuis la page de configuration. Pour plus d'informations, contactez HubRise sur support\@hubrise.com.
+**REMARQUE IMPORTANTE** : Les codes ref de paiement seront bientôt personnalisables depuis la page de configuration. Pour plus d'informations, contactez HubRise sur support\@hubrise.com.
 
 ---
 
@@ -103,28 +103,28 @@ Cette section explique comment les commandes sont encodées dans les requêtes J
 
 La correspondance entre les articles de WooCommerce et HubRise dépend de la configuration de WooCommerce Bridge, en particulier de la section **Métadonnées des articles de la commande**. Pour les détails de configuration, consultez [Métadonnées des articles de la commande](/apps/woocommerce/configuration#order-item-metadata).
 
-Les produits WooCommerce dans une commande sont mappés à des produits avec ou sans SKU, selon les règles suivantes :
+Les produits WooCommerce dans une commande sont mappés à des produits avec ou sans SKU, selon les règles suivantes :
 
 - Les produits simples sont envoyés à HubRise en tant que produits sans SKU.
 - Les produits variables avec un attribut dont le nom correspond au champ **Clé(s) de métadonnées nom de la SKU** sont envoyés en tant que produits avec un SKU, où le nom de la SKU est la valeur de l'attribut.
 - Les produits variables dont aucun attribut ne correspond au critère sont envoyés en tant que produits sans SKU.
 
-Pour chaque article de la commande, WooCommerce Bridge envoie les informations suivantes à HubRise :
+Pour chaque article de la commande, WooCommerce Bridge envoie les informations suivantes à HubRise :
 
-- `product_name` : nom du produit.
+- `product_name` : nom du produit.
 - `sku_name`: le nom de la SKU pour les produits ayant un SKU, ou `null` pour les produits sans. Voir la note ci-dessus pour plus de détails.
-- `sku_ref` : code ref de l'article.
-- `price` : prix unitaire de l'article.
-- `quantity` : quantité d'articles dans la commande.
+- `sku_ref` : code ref de l'article.
+- `price` : prix unitaire de l'article.
+- `quantity` : quantité d'articles dans la commande.
 - `customer_notes`: notes de préparation du client pour l'article, dérivées de l'attribut ayant une clé correspondant au champ **Clé(s) de métadonnées commentaire client**, si disponible.
 - `options`: un tableau d'options associé à l'article, provenant des attributs qui ne sont ni utilisés comme nom de SKU ni comme notes de préparation du client, et ne correspondent pas au champ **Clés de métadonnées ignorées**.
 
 ### Options
 
-Si un produit contient une option, WooCommerce Bridge fournit les informations suivantes :
+Si un produit contient une option, WooCommerce Bridge fournit les informations suivantes :
 
-- `option_list_name` : emplacement réservé pour le nom de la liste d'options, avec la valeur par défaut "Options"
-- `name` : nom de l'option
+- `option_list_name` : emplacement réservé pour le nom de la liste d'options, avec la valeur par défaut "Options"
+- `name` : nom de l'option
 
 Un produit peut avoir au maximum une option rattachée.
 
@@ -157,15 +157,15 @@ Un produit peut avoir au maximum une option rattachée.
 
 Pour les nouveaux clients, WooCommerce Bridge crée un enregistrement `customer` dans HubRise. Pour les clients existants, WooCommerce Bridge ajoute simplement le `customer_id` de HubRise à la commande.
 
-WooCommerce Bridge encode toutes les données clients à partir de WooCommerce, tels que :
+WooCommerce Bridge encode toutes les données clients à partir de WooCommerce, tels que :
 
 - `address_1` : première ligne de l'adresse
 - `address_2` : deuxième ligne de l'adresse
 - `city` : ville
 - `postal_code` : code postal
-- `state` : État
-- `e-mail` : adresse e-mail du client
-- `phone` : numéro de téléphone du client
+- `state` : État
+- `e-mail` : adresse e-mail du client
+- `phone` : numéro de téléphone du client
 - `delivery_notes` : notes de livraison que le client laisse au moment du paiement
 
 ### Frais de livraison
@@ -176,7 +176,7 @@ Les champs disponibles dans les requêtes sont les suivants :
 
 - `name` : intitulé des frais de livraison, par défaut `Delivery charge` (Frais de livraison)
 - `ref` : code ref des frais. La valeur par défaut peut être définie dans la page de configuration de WooCommerce Bridge. Elle doit correspondre à la valeur définie dans votre logiciel de caisse.
-- `price` : montant total des frais de livraison
+- `price` : montant total des frais de livraison
 
 <details>
 
@@ -201,7 +201,7 @@ La remise appliquée à la commande est transmise dans un objet unique dans le t
 Les champs disponibles dans la requête sont les suivants :
 
 - `name` : nom de la remise
-- `price_off` : montant total de la remise
+- `price_off` : montant total de la remise
 
 ## Champs personnalisés
 

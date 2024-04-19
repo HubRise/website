@@ -10,7 +10,7 @@ meta:
 
 Pour connecter votre magasin Deliveroo à HubRise par vous-même, activez d'abord HubRise sur le back-office de Deliveroo, puis connectez Deliveroo Bridge à votre point de vente HubRise.
 
-Pour activer HubRise sur le back-office Deliveroo, suivez ces étapes :
+Pour activer HubRise sur le back-office Deliveroo, suivez ces étapes :
 
 1. Connectez-vous à votre [back-office Deliveroo](https://restaurant-hub.deliveroo.net).
 1. Cliquez sur **Intégrations**.

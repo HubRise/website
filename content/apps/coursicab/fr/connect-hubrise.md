@@ -12,10 +12,10 @@ Vous pouvez connecter CoursiCab à HubRise de manière autonome, en seulement qu
 
 ## Connecter CoursiCab
 
-Pour établir la connexion entre CoursiCab et HubRise :
+Pour établir la connexion entre CoursiCab et HubRise :
 
 1. Dans votre espace CoursiCab, cliquez sur l'icône de compte, en haut à droite. Un menu déroulant apparaît.
-1. Cliquez sur **Mon compte**, puis sur **Applications**. Vous devriez voir la page suivante :
+1. Cliquez sur **Mon compte**, puis sur **Applications**. Vous devriez voir la page suivante :
    ![Connexion à HubRise - HubRise déconnecté](./images/003-coursicab-disconnected.png)
 1. Cliquez sur **Se connecter à HubRise**. L'interface HubRise s'ouvre dans un nouvel onglet.
 1. Sélectionnez le point de vente à connecter et cliquez sur **Autoriser** pour donner à CoursiCab l'accès à vos données.
@@ -23,7 +23,7 @@ Pour établir la connexion entre CoursiCab et HubRise :
 
 ---
 
-**REMARQUE IMPORTANTE :** Vous devrez vous connecter à un compte HubRise existant, ou créer un nouveau compte pour finaliser la connexion. Pour plus d'informations sur la manière de créer un profil utilisateur ou vous connecter à HubRise, consultez notre [Guide de prise en main](/docs/get-started).
+**REMARQUE IMPORTANTE :** Vous devrez vous connecter à un compte HubRise existant, ou créer un nouveau compte pour finaliser la connexion. Pour plus d'informations sur la manière de créer un profil utilisateur ou vous connecter à HubRise, consultez notre [Guide de prise en main](/docs/get-started).
 
 ---
 
@@ -50,6 +50,6 @@ L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers �
 ## Déconnecter CoursiCab
 
 1. Dans votre espace CoursiCab, puis cliquez sur l'icône de compte, en haut à droite. Un menu déroulant s'affiche.
-1. Cliquez sur **Mon compte**, puis sur **Applications**. Vous devriez voir la page suivante :
+1. Cliquez sur **Mon compte**, puis sur **Applications**. Vous devriez voir la page suivante :
    ![Connexion à HubRise - HubRise connecté](./images/004-coursicab-connected.png)
 1. Cliquez sur **Disconnect**.

@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** L'audit de l'intégration est en cours. Une documentation complète sera publiée une fois l'audit terminé.
+**REMARQUE IMPORTANTE :** L'audit de l'intégration est en cours. Une documentation complète sera publiée une fois l'audit terminé.
 
 ---
 
@@ -35,7 +35,7 @@ iiko est présent dans plusieurs pays partout dans le monde, mais n'est pas pré
 
 ## Fonctionnalités de l'intégration
 
-Connecter iiko à HubRise permet à votre logiciel de caisse de :
+Connecter iiko à HubRise permet à votre logiciel de caisse de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.

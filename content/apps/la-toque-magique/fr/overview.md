@@ -24,7 +24,7 @@ app_info:
 
 La Toque Magique est une solution de commande en ligne pour les restaurants. La Toque Magique fournit un site internet e-commerce personnalisable, optimisé pour le SEO et pour le partage sur les réseaux sociaux. Les clients peuvent consulter le site en ligne, ou l'installer comme une application mobile.
 
-La Toque Magique fournit aussi un système de gestion (back-office) permettant de :
+La Toque Magique fournit aussi un système de gestion (back-office) permettant de :
 
 - Prendre des commandes par téléphone ou sur place.
 - Regrouper les commandes depuis tous les canaux (site internet, plateforme de livraison, etc).
@@ -34,7 +34,7 @@ La Toque Magique fournit aussi un système de gestion (back-office) permettant d
 
 ## Fonctionnalités de l'intégration
 
-Connecter La Toque Magique à HubRise permet à La Toque Magique de :
+Connecter La Toque Magique à HubRise permet à La Toque Magique de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Recevoir les commandes de HubRise, dont les statuts de commande.

@@ -14,14 +14,14 @@ Pour trouver votre identifiant de restaurant Deliveroo, procédez comme suit :
 
 ## Option 1 - Via la tablette Deliveroo
 
-Pour trouver votre identifiant de restaurant à l'aide de votre tablette Deliveroo :
+Pour trouver votre identifiant de restaurant à l'aide de votre tablette Deliveroo :
 
 1. Sélectionnez le bouton de navigation en haut à droite de la page.
 1. Votre identifiant est le numéro entre parenthèses indiqué en regard du nom du restaurant.
 
 ## Option 2 - Via le back-office de Deliveroo
 
-Pour trouver votre identifiant de restaurant à partir de votre back-office Deliveroo :
+Pour trouver votre identifiant de restaurant à partir de votre back-office Deliveroo :
 
 1. Connectez-vous à votre [back-office Deliveroo](https://restaurant-hub.deliveroo.net).
 1. Accédez à l'onglet **Accueil**, puis sélectionnez le point de vente et le compte appropriés dans les menus déroulants.
@@ -33,7 +33,7 @@ Si vous ne trouvez pas votre identifiant de restaurant, contactez votre gestionn
 
 ## Option 3 - Depuis le code source du site Deliveroo
 
-Les utilisateurs un peu plus techniques peuvent trouver l'identifiant du restaurant Deliveroo dans le code source de la page magasin sur Deliveroo :
+Les utilisateurs un peu plus techniques peuvent trouver l'identifiant du restaurant Deliveroo dans le code source de la page magasin sur Deliveroo :
 
 - Ouvrez la page du restaurant Deliveroo dans un navigateur.
 - Faites un clic droit sur la page et sélectionnez **Afficher le source de la page**.

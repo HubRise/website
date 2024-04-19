@@ -10,13 +10,13 @@ meta:
 
 Après avoir connecté Popina à HubRise, vous pouvez configurer la manière de gérer les commandes reçues de HubRise et l'envoi du catalogue.
 
-Pour configurer vos paramètres HubRise sur Popina, suivez ces étapes :
+Pour configurer vos paramètres HubRise sur Popina, suivez ces étapes :
 
 1. Accédez à l'application Popina sur votre iPad.
 2. Sélectionnez **Paramètres** > **Paramètres avancés**, puis **Services tiers**.
 3. Sélectionnez **HubRise**, puis choisissez l'une des actions disponibles dans la liste des paramètres.
 
-Dans la liste des paramètres, vous pouvez :
+Dans la liste des paramètres, vous pouvez :
 
 - Accepter les commandes automatiquement ou manuellement.
 - Envoyer les préparations automatiquement ou manuellement.

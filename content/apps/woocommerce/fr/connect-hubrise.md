@@ -26,7 +26,7 @@ Pour connecter WooCommerce Bridge à HubRise, suivez ces étapes :
 4. Sélectionnez **WooCommerce Bridge** dans la liste des applications.
 5. Cliquez sur **Connecter**.
 6. Cliquez sur **Autoriser** pour autoriser WooCommerce Bridge à accéder à votre point de vente enregistré sur HubRise. Si votre compte possède plusieurs points de vente, développez **Choisissez le point de vente**, sélectionnez le point de vente à connecter, puis cliquez sur **Autoriser**.
-7. Saisissez l'URL de votre boutique WooCommerce :
+7. Saisissez l'URL de votre boutique WooCommerce :
    ![URL de la page d'accueil de WooCommerce Bridge](./images/012-woocommerce-step-1.png)
 8. Si vous avez déjà rencontré des problèmes de connexion, vous pouvez configurer les **Options avancées**. Sinon, ne les modifiez pas. Pour plus d'informations, consultez notre guide de [Dépannage](/apps/woocommerce/troubleshooting).
 9. Cliquez sur **Enregistrer** pour confirmer.

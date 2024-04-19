@@ -10,11 +10,11 @@ meta:
 
 ## Réception des commandes
 
-Les champs d'une commande HubRise sont utilisés de la façon suivante dans Kezia II :
+Les champs d'une commande HubRise sont utilisés de la façon suivante dans Kezia II :
 
 | Nom du champ HubRise | Utilisation dans Kezia II                                                                                                                  |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| `service_type`       | Type de commande : livraison, sur place, ou à emporter.                                                                                    |
+| `service_type`       | Type de commande : livraison, sur place, ou à emporter.                                                                                    |
 | `service_type_ref`   | Non utilisé.                                                                                                                               |
 | `expected_time`      | Heure souhaitée de récupération ou de livraison de la commande.                                                                            |
 | `collection_code`    | Référence unique de la commande.                                                                                                           |

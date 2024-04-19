@@ -20,7 +20,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -36,7 +36,7 @@ MynOber est présent dans plusieurs pays européens. Il n'est pas commercialisé
 
 ## Fonctionnalités de l'intégration
 
-Connecter MynOber à HubRise permet à votre solution de commande en ligne de :
+Connecter MynOber à HubRise permet à votre solution de commande en ligne de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Recevoir les commandes de HubRise, dont les statuts de commande.

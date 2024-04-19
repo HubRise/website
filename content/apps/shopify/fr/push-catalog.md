@@ -20,7 +20,7 @@ Pour plus d'informations sur les catalogues HubRise, voir [Catalogues](/docs/cat
 
 ## Envoi manuel du catalogue
 
-Une fois que votre catalogue a été alimenté dans HubRise, vous pouvez l'envoyer manuellement vers votre boutique Shopify en suivant ces étapes :
+Une fois que votre catalogue a été alimenté dans HubRise, vous pouvez l'envoyer manuellement vers votre boutique Shopify en suivant ces étapes :
 
 1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com).
 2. Sélectionnez le compte HubRise et le point de vente connecté à votre boutique Shopify.
@@ -53,17 +53,17 @@ Shopify ne prend pas en charge les catégories. Lorsque vous envoyez des produit
 Les produits HubRise et les SKU sont associés un à un aux produits et variantes Shopify.
 Pour plus d'informations sur les produits contenus dans les catalogues HubRise, voir [Products](/developers/api/catalogs#products) (en anglais).
 
-Pour chaque objet `product` HubRise, Shopify Bridge envoie les informations suivantes à Shopify :
+Pour chaque objet `product` HubRise, Shopify Bridge envoie les informations suivantes à Shopify :
 
-- `name` : nom du produit
-- `description` : description du produit
-- `tags` : tags associés au produit
-- `image_ids` : ID des images associées au produit
-- `skus` : liste des SKU associées au produit
+- `name` : nom du produit
+- `description` : description du produit
+- `tags` : tags associés au produit
+- `image_ids` : ID des images associées au produit
+- `skus` : liste des SKU associées au produit
 
-Pour chaque SKU dans le tableau `skus`, Shopify Bridge envoie les informations suivantes à Shopify :
+Pour chaque SKU dans le tableau `skus`, Shopify Bridge envoie les informations suivantes à Shopify :
 
-- `ref` : code ref de la SKU, qui sera transmis dans les commandes
+- `ref` : code ref de la SKU, qui sera transmis dans les commandes
 - `name` : nom de la SKU
 - `price` : prix de la SKU
 

@@ -10,13 +10,13 @@ meta:
 
 ---
 
-**REMARQUE IMPORTANTE :** Si vous ne possédez pas encore de compte HubRise, commencez par en ouvrir un sur la [page d'inscription à HubRise](https://manager.hubrise.com/signup). L'inscription ne prend que quelques minutes !
+**REMARQUE IMPORTANTE :** Si vous ne possédez pas encore de compte HubRise, commencez par en ouvrir un sur la [page d'inscription à HubRise](https://manager.hubrise.com/signup). L'inscription ne prend que quelques minutes !
 
 ---
 
 ## Connecter SuperDigital.fr
 
-Pour connecter votre solution de commande en ligne SuperDigital.fr à HubRise, suivez ces étapes :
+Pour connecter votre solution de commande en ligne SuperDigital.fr à HubRise, suivez ces étapes :
 
 1. Dans le menu latéral de votre espace SuperDigital.fr, sélectionnez **RestroPress** > **Settings**.
 2. Sélectionnez l'onglet **HubRise**.

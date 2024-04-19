@@ -10,7 +10,7 @@ meta:
 
 Une fois votre logiciel de caisse Carré POS connecté à HubRise, une dernière étape de configuration est nécessaire. Les différents éléments présents dans Carré POS sont identifiés par des codes ref. Vous devez indiquer ces codes ref dans les applications connectées à HubRise, afin que les commandes puissent être réceptionnées dans Carré POS.
 
-Il y a deux façons de procéder :
+Il y a deux façons de procéder :
 
 - Exporter le catalogue Carré POS vers HubRise, puis importer ce catalogue dans les applications connectées qui le permettent.
 - Saisir manuellement les codes ref.
@@ -21,7 +21,7 @@ Cette page explique comment exporter un catalogue et trouver les codes ref depui
 
 ## Exporter le catalogue
 
-Pour exporter manuellement le catalogue vers HubRise, suivez ces étapes :
+Pour exporter manuellement le catalogue vers HubRise, suivez ces étapes :
 
 1. Depuis le menu principal du back-office de Carré POS, sélectionnez **Général** > **Catalog manager**.
    ![Associer les codes ref - Menu manager](./images/007-carre-pos-menu-manager.png)
@@ -31,7 +31,7 @@ Pour exporter manuellement le catalogue vers HubRise, suivez ces étapes :
 
 ## Produits {#products}
 
-Pour retrouver le code ref d'un produit, suivez ces étapes :
+Pour retrouver le code ref d'un produit, suivez ces étapes :
 
 1. Depuis le menu principal du back-office de Carré POS, sélectionnez **Général** > **Catalog manager**.
 1. Déroulez la partie **Menus** et sélectionnez l'onglet correspondant au menu contenant le produit désiré. Si vous n'avez qu'un seul menu, il est sélectionné par défaut.
@@ -49,7 +49,7 @@ Une option dans HubRise correspond aussi à un produit dans Carré POS. Pour re
 
 ## Méthodes de paiement
 
-Les codes ref des méthodes de paiement sont les suivants :
+Les codes ref des méthodes de paiement sont les suivants :
 
 - `CB`: paiement sur le terminal CB (TPE) du commerçant
 - `ESP`: paiement en espèces

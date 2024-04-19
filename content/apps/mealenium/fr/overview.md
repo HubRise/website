@@ -23,7 +23,7 @@ app_info:
 
 Mealenium est une solution de caisse conçue pour les restaurateurs. Les fonctionnalités et l'ergonomie de Mealenium permettent une prise en main rapide et une efficacité au quotidien.
 
-Les fonctionnalités de Mealenium incluent :
+Les fonctionnalités de Mealenium incluent :
 
 - Prise de commande
 - Encaissement et pourboire
@@ -39,7 +39,7 @@ Les fonctionnalités de Mealenium incluent :
 
 Mealenium est une solution multiplateforme, avec une ergonomie identique sur tous les périphériques, de la caisse tactile Windows aux tablettes et aux smartphones.
 
-Mealenium s'adapte à toutes les configurations de prise de commande et d'encaissement : centralisé, par zones, directement à table, ou autre. Les applications mobiles disponibles sur les Apple Store et Google Play permettent l'ajout rapide d'une nouvelle tablette de prise de commande, par exemple lors de l'arrivée d'un nouveau serveur.
+Mealenium s'adapte à toutes les configurations de prise de commande et d'encaissement : centralisé, par zones, directement à table, ou autre. Les applications mobiles disponibles sur les Apple Store et Google Play permettent l'ajout rapide d'une nouvelle tablette de prise de commande, par exemple lors de l'arrivée d'un nouveau serveur.
 
 Mealenium propose l'analyse des chiffres d'affaires par serveur, par type de vente, par heure, par produit et le tout, en comparaison dans le temps. Les rapports sont consultables en temps réel depuis la caisse, ou à distance depuis un ordinateur ou un smartphone.
 
@@ -49,7 +49,7 @@ Mealenium est développé en France et est conforme à la loi française anti-fr
 
 ## Fonctionnalités de l'intégration
 
-Connecter Mealenium à HubRise permet à votre logiciel de caisse de :
+Connecter Mealenium à HubRise permet à votre logiciel de caisse de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.

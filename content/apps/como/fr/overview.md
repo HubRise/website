@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 

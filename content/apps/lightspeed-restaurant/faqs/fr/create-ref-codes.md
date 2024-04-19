@@ -5,19 +5,19 @@ position: 3
 layout: documentation
 meta:
   title: Créer des codes ref | Lightspeed Restaurant | HubRise
-  description: 'Instructions pour créer des codes ref Lightspeed Restaurant requis pour que le logiciel de caisse fonctionne avec d''autres apps connectées (ex : plateforme de commande en ligne).'
+  description: 'Instructions pour créer des codes ref Lightspeed Restaurant requis pour que le logiciel de caisse fonctionne avec d''autres apps connectées (ex : plateforme de commande en ligne).'
 ---
 
 Si vous connectez Lightspeed Restaurant à des plateformes de livraison comme Deliveroo, Uber Eats et Just Eat, ou à toute autre solution de commande en ligne, vous devez créer des types de service, des paiements, des frais et des remises spécifiques à chaque solution que vous prenez en charge. Pour simplifier le dépannage, nous vous recommandons d'utiliser les codes spécifiques fournis pour les [Plateformes de commande de repas](/apps/lightspeed-restaurant/food-ordering-platforms) et les [Solutions de commande en ligne](/apps/lightspeed-restaurant/online-ordering-solutions).
 
-Pour créer des codes ref dans votre compte Lightspeed, vous avez deux options :
+Pour créer des codes ref dans votre compte Lightspeed, vous avez deux options :
 
 1. Vous pouvez contacter le support Lightspeed et leur demander d'inclure les codes dans votre back-office.
 1. Vous pouvez inclure vous-même les codes ref dans votre back-office. Dans ce cas, suivez les procédures ci-dessous.
 
 ## Types de service
 
-Les types de service sont appelés **Profils de compte** dans Lightspeed. Pour créer un type de service, suivez ces étapes :
+Les types de service sont appelés **Profils de compte** dans Lightspeed. Pour créer un type de service, suivez ces étapes :
 
 1. Dans votre back-office Lightspeed, sélectionnez **Configuration**, puis **Paramètres** > **Profils de compte**.
 1. Cliquez sur **Ajouter un profil de compte**, puis cliquez sur **OK**.
@@ -25,7 +25,7 @@ Les types de service sont appelés **Profils de compte** dans Lightspeed. Pour c
 1. Renseignez les autres sections de la page si besoin, puis cliquez sur **Enregistrer**.
 1. Répétez le processus pour tous les types de service que vous prenez en charge sur les solutions que vous souhaitez connecter.
 
-Les codes des profils de compte suivants sont généralement utilisés, mais cela peut varier en fonction de la configuration Lightspeed spécifique :
+Les codes des profils de compte suivants sont généralement utilisés, mais cela peut varier en fonction de la configuration Lightspeed spécifique :
 
 - `PICKUP`, pour les commandes à emporter.
 - `DELIVERY`, pour les commandes en livraison.
@@ -39,7 +39,7 @@ Pour créer une remise compatible avec le modèle de données HubRise, suivez ce
 
 1. Depuis votre back-office Lightspeed, sélectionnez **Gestion des menus**, puis sélectionnez **Articles**.
 1. Cliquez sur le menu déroulant **Créer**, puis sélectionnez **Article unique**.
-1. Sur la page **Nouvel article**, saisissez les valeurs suivantes :
+1. Sur la page **Nouvel article**, saisissez les valeurs suivantes :
    - Dans le champ **Nom de l'article**, saisissez le nom de la remise.
    - Cliquez sur **Modifier le type de prix** puis sélectionnez **Prix négatif saisi manuellement**.
    - Pour utiliser un code ref spécifique, cliquez sur **Ajouter un code SKU personnalisé** et entrez un code ref. Sinon, un code ref sera généré automatiquement.
@@ -52,7 +52,7 @@ Pour créer une promotion compatible avec le modèle de données HubRise, suivez
 
 1. Depuis votre back-office Lightspeed, sélectionnez **Gestion des menus**, puis sélectionnez **Articles**.
 1. Cliquez sur le menu déroulant **Créer**, puis sélectionnez **Article unique**.
-1. Sur la page **Nouvel article**, saisissez les valeurs suivantes :
+1. Sur la page **Nouvel article**, saisissez les valeurs suivantes :
    - Dans le champ **Nom de l'article**, saisissez le nom de la promotion.
    - Cliquez sur **Modifier le type de prix** puis sélectionnez **Aucun prix**.
 1. Renseignez les autres sections de la page si besoin, puis cliquez sur **Enregistrer**.
@@ -60,11 +60,11 @@ Pour créer une promotion compatible avec le modèle de données HubRise, suivez
 
 ## Frais
 
-Pour créer des frais, vous devez créer un article en suivant ces étapes :
+Pour créer des frais, vous devez créer un article en suivant ces étapes :
 
 1. Depuis votre back-office Lightspeed, sélectionnez **Gestion des menus**, puis sélectionnez **Articles**.
 1. Cliquez sur le menu déroulant **Créer** et sélectionnez **Article unique**.
-1. Sur la page **Nouvel article**, saisissez les valeurs suivantes :
+1. Sur la page **Nouvel article**, saisissez les valeurs suivantes :
    - Dans le champ **Nom de l'article**, saisissez le nom des frais.
    - Cliquez sur **Modifier le type de prix** puis sélectionnez **Prix saisi manuellement**.
    - Pour utiliser un code ref spécifique, cliquez sur **Ajouter un code SKU personnalisé** et entrez un code ref. Sinon, un code ref sera généré automatiquement.

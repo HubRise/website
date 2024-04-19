@@ -18,7 +18,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -36,7 +36,7 @@ Barratio est disponible sur ordinateur de bureau, tablette, et smartphone.
 
 ## Fonctionnalités de l'intégration
 
-Connecter Barratio à HubRise permet à Barratio de :
+Connecter Barratio à HubRise permet à Barratio de :
 
 - Recevoir un catalogue de HubRise.
 - Recevoir les commandes de HubRise.

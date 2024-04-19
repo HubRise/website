@@ -14,7 +14,7 @@ app_info:
   contact: contact@tastycloud.fr / +33 1 88 32 06 70
 ---
 
-**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/tastycloud">en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/tastycloud">en anglais uniquement</Link>.
 
 ## Description
 
@@ -28,7 +28,7 @@ Le restaurateur peut mettre en place un système de livraison et de click & coll
 
 ## Fonctionnalités de l'intégration
 
-Connecter TastyCloud à HubRise permet à votre solution de commande en ligne de :
+Connecter TastyCloud à HubRise permet à votre solution de commande en ligne de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Envoyer les informations clients à HubRise.

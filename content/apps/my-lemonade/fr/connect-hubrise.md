@@ -16,7 +16,7 @@ meta:
 
 ## Connecter My Lemonade
 
-Pour connecter votre solution de commande en ligne My Lemonade à HubRise, suivez ces étapes :
+Pour connecter votre solution de commande en ligne My Lemonade à HubRise, suivez ces étapes :
 
 1. Dans votre espace My Lemonade, cliquez sur **+ ETABLISSEMENT**. Si vous avez plusieurs établissements, cliquez sur le nom de votre établissement, puis sur **+ ETABLISSEMENT**.
 1. Sélectionnez l'option **IMPORTER LA CARTE DEPUIS MA CAISSE**.

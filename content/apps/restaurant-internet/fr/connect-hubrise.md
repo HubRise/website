@@ -40,7 +40,7 @@ L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers �
 
 ## Déconnecter Restaurant-internet
 
-Pour déconnecter Restaurant-internet de HubRise, suivez ces étapes :
+Pour déconnecter Restaurant-internet de HubRise, suivez ces étapes :
 
 1. Depuis votre tableau de bord Restaurant-internet, dans la partie **Modules**, sélectionnez **Marketplace Autres modules**.
 1. Sélectionnez **Hubrise - Connection Caisse Gratuit**.

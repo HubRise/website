@@ -71,7 +71,7 @@ Connecting Melba to HubRise allows your operations management solution to:
 
 ---
 
-**IMPORTANT NOTE** : Inventory is not sent to HubRise, but this feature is planned in a future release. Contact Melba for more information.
+**IMPORTANT NOTE**: Inventory is not sent to HubRise, but this feature is planned in a future release. Contact Melba for more information.
 
 ---
 

@@ -16,7 +16,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration est en cours de rédaction.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration est en cours de rédaction.
 
 ---
 

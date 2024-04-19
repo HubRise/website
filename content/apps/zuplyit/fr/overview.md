@@ -20,7 +20,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -32,7 +32,7 @@ Zuplyit a une intégration directe avec les plateformes de commande et de livrai
 
 ## Fonctionnalités de l'intégration
 
-Connecter Zuplyit à HubRise permet à votre solution de commande en ligne de :
+Connecter Zuplyit à HubRise permet à votre solution de commande en ligne de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Envoyer les informations clients à HubRise.

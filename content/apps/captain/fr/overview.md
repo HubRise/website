@@ -23,16 +23,16 @@ Captain, logiciel de gestion de livraison (DMS), est spécifiquement conçu pour
 
 Captain s'intègre à HubRise et propose une suite d'applications qui facilite la livraison à chaque étape du cycle de vie d'une commande :
 
-- **Écran d'affichage en cuisine (KDS) Smart Kitchen** : L'écran cuisine de Capitain communique avec Dispatch pour prioriser la séquence de cuisson en fonction des commandes qui seront livrées dans la même route. Cela permet aux chefs de préparer les plats au bon moment et dans le bon ordre pour maximiser la qualité de la nourriture livrée.
-- **Application Dispatch** : Assignez des commandes aux chauffeurs en mode manuel, copilote ou autopilote pour réduire les temps d'attente des chauffeurs, améliorer les délais de livraison et planifier des itinéraires permettant une économie de carburant.
-- **FleetShare** : Ce module complémentaire permet d'externaliser les commandes auprès de services de livraison en marque blanche, moyennant des frais fixes. Capitain confirmera la disponibilité des services de livraison, qui varie selon la région.
+- **Écran d'affichage en cuisine (KDS) Smart Kitchen** : L'écran cuisine de Capitain communique avec Dispatch pour prioriser la séquence de cuisson en fonction des commandes qui seront livrées dans la même route. Cela permet aux chefs de préparer les plats au bon moment et dans le bon ordre pour maximiser la qualité de la nourriture livrée.
+- **Application Dispatch** : Assignez des commandes aux chauffeurs en mode manuel, copilote ou autopilote pour réduire les temps d'attente des chauffeurs, améliorer les délais de livraison et planifier des itinéraires permettant une économie de carburant.
+- **FleetShare** : Ce module complémentaire permet d'externaliser les commandes auprès de services de livraison en marque blanche, moyennant des frais fixes. Capitain confirmera la disponibilité des services de livraison, qui varie selon la région.
 - **Application Driver**: Facilite l'accès des livreurs aux commandes qui leur sont assignées, et propose des itinéraires de livraison optimisés, améliorant l'efficacité, réduisant les délais de livraison et la consommation de carburant.
-- **Live Tracking** : Maintenez la présence de votre marque avec une page de suivi personnalisée envoyée par SMS, offrant aux clients la visibilité qu'ils attendent sur le statut de leur commande.
-- **Manager Portal** : Accédez aux données de livraison en temps réel, y compris les horaires de livraison, les commentaires des clients et les performances des livreurs, pour améliorer les opérations de livraison grâce à des informations basées sur les données.
+- **Live Tracking** : Maintenez la présence de votre marque avec une page de suivi personnalisée envoyée par SMS, offrant aux clients la visibilité qu'ils attendent sur le statut de leur commande.
+- **Manager Portal** : Accédez aux données de livraison en temps réel, y compris les horaires de livraison, les commentaires des clients et les performances des livreurs, pour améliorer les opérations de livraison grâce à des informations basées sur les données.
 
 ## Fonctionnalités de l'intégration
 
-Connecter Captain à HubRise permet à votre solution de gestion de livreurs de :
+Connecter Captain à HubRise permet à votre solution de gestion de livreurs de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.

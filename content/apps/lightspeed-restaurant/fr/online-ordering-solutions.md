@@ -16,11 +16,11 @@ Pour des instructions détaillées sur la création de codes ref dans le back-of
 
 ---
 
-**REMARQUE IMPORTANTE** : Ces codes doivent être présents dans votre back-office Lightspeed et doivent figurer sur la page de configuration de la solution de commande en ligne.
+**REMARQUE IMPORTANTE** : Ces codes doivent être présents dans votre back-office Lightspeed et doivent figurer sur la page de configuration de la solution de commande en ligne.
 
 ---
 
-Si vous préférez laisser le support Lightspeed configurer ces codes ref, assurez-vous d'utiliser les noms de canaux suivants dans les demandes d'assistance Lightspeed afin d'éviter toute confusion :
+Si vous préférez laisser le support Lightspeed configurer ces codes ref, assurez-vous d'utiliser les noms de canaux suivants dans les demandes d'assistance Lightspeed afin d'éviter toute confusion :
 
 | Plateforme                                                    | Nom du canal |
 | ------------------------------------------------------------- | ------------ |
@@ -29,7 +29,7 @@ Si vous préférez laisser le support Lightspeed configurer ces codes ref, assur
 
 ---
 
-**REMARQUE IMPORTANTE** : Pour les codes relatifs aux plateformes de commande et de livraison repas telles que Deliveroo, Uber Eats et Just Eat, consultez [Plateformes de commande de repas](/apps/lightspeed-restaurant/food-ordering-platforms).
+**REMARQUE IMPORTANTE** : Pour les codes relatifs aux plateformes de commande et de livraison repas telles que Deliveroo, Uber Eats et Just Eat, consultez [Plateformes de commande de repas](/apps/lightspeed-restaurant/food-ordering-platforms).
 
 ---
 

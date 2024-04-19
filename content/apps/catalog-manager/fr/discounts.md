@@ -18,7 +18,7 @@ Contrairement aux promotions, les remises sont généralement spécifiques à ch
 
 ***
 
-**REMARQUE IMPORTANTE :** Les remises ne sont pas exportées vers les plateformes de livraison de repas. Elles sont gérées directement dans le back-office de la plateforme.
+**REMARQUE IMPORTANTE :** Les remises ne sont pas exportées vers les plateformes de livraison de repas. Elles sont gérées directement dans le back-office de la plateforme.
 
 ***
 

@@ -20,20 +20,20 @@ Lorsqu'un catalogue est importé, les prix des références existantes sont mis 
 
 Quant aux nouvelles références, vous devez les traiter manuellement, en les intégrant à vos références SOMM'IT ou en les ignorant.
 
-Pour intégrer ou ignorer une nouvelle référence en attente, suivez ces étapes :
+Pour intégrer ou ignorer une nouvelle référence en attente, suivez ces étapes :
 
 1. Depuis votre back office SOMM'IT, dans le menu de gauche, cliquez sur **Mes boissons**.
    ![Mes boissons - Mes boissons](./images/006-somm-it-references.png)
 2. En haut de la page, à côté du titre **Mes boissons**, cliquez sur le lien indiquant le nombre de références en attente d'être synchronisées. Par exemple, cliquez sur **194 à synchroniser**.
    ![Mes boissons - Références à synchroniser](./images/007-somm-it-references-to-synchronise.png)
-3. Vous pouvez alors :
+3. Vous pouvez alors :
    - intégrer une référence. Pour cela, en fin de ligne d'une référence, cliquez sur le signe **+**.
    - ignorer une référence pour ne plus la voir dans vos références SOMM'IT à chaque remontée de caisse. Pour cela, en fin de ligne d'une référence, cliquez sur le symbole d'interdiction.
    - intégrer ou ignorer plusieurs références simultanément. Pour cela, en début de ligne des références, cochez les cases des références sur lesquelles vous souhaitez agir et cliquez sur le signe **+** ou le symbole d'interdiction en haut du tableau.
 
 ## Réactiver une référence ignorée
 
-Pour réactiver une référence ignorée, suivez ces étapes :
+Pour réactiver une référence ignorée, suivez ces étapes :
 
 1. Répétez les étapes 1 et 2 ci-dessus permettant d'accéder aux références en attente d'être synchronisées.
 2. Cliquez sur le curseur **Afficher les boissons ignorées**. La liste des références ignorées s'affiche.

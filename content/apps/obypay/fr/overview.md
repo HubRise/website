@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -35,7 +35,7 @@ Obypay offre un back-office complet, qui permet de personnaliser l'apparence de 
 
 ## Fonctionnalités de l'intégration
 
-Connecter Obypay à HubRise permet à Obypay de :
+Connecter Obypay à HubRise permet à Obypay de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Recevoir les statuts de commande de HubRise.

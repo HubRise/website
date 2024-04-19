@@ -21,14 +21,14 @@ Hop Delivery est un service de commande en ligne et de livraison pour les resta
 
 ## Fonctionnalités de l'intégration
 
-Connecter Hop Delivery à HubRise permet à votre plateforme de commande et de livraison de :
+Connecter Hop Delivery à HubRise permet à votre plateforme de commande et de livraison de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Envoyer les informations clients à HubRise.
 
 ---
 
-**REMARQUE IMPORTANTE :** L'import du catalogue produit de HubRise dans Hop Delivery sera bientôt possible. Contactez Hop Delivery pour plus d'information à ce sujet.
+**REMARQUE IMPORTANTE :** L'import du catalogue produit de HubRise dans Hop Delivery sera bientôt possible. Contactez Hop Delivery pour plus d'information à ce sujet.
 
 ---
 

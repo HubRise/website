@@ -29,7 +29,7 @@ Nestor a été conçu pour le marché français. Il est conforme à la loi fran�
 
 ## Fonctionnalités de l'intégration
 
-Connecter Nestor à HubRise permet à votre logiciel de caisse de :
+Connecter Nestor à HubRise permet à votre logiciel de caisse de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.
@@ -38,7 +38,7 @@ Connecter Nestor à HubRise permet à votre logiciel de caisse de :
 
 ---
 
-**REMARQUE IMPORTANTE :** Nestor pourra bientôt envoyer les commandes vers HubRise. Pour plus d'informations, contactez l'éditeur Svitex.
+**REMARQUE IMPORTANTE :** Nestor pourra bientôt envoyer les commandes vers HubRise. Pour plus d'informations, contactez l'éditeur Svitex.
 
 ---
 

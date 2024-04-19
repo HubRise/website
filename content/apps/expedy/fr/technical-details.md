@@ -10,7 +10,7 @@ meta:
 
 ## Réception des commandes
 
-Les champs d'une commande HubRise sont utilisés de la façon suivante par Expedy :
+Les champs d'une commande HubRise sont utilisés de la façon suivante par Expedy :
 
 | Nom du champ HubRise | Utilisation dans Expedy                                                             |
 | -------------------- | ----------------------------------------------------------------------------------- |

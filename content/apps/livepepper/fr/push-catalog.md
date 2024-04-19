@@ -10,7 +10,7 @@ meta:
 
 L'envoi de votre menu LivePepper dans HubRise vous permet de le partager avec d'autres applications connectées, par exemple Uber Eats ou Deliveroo.
 
-Pour envoyer votre menu dans HubRise :
+Pour envoyer votre menu dans HubRise :
 
 1. Connectez-vous à votre back-office LivePepper.
 2. Accédez à **Mon menu** > **Import/Export**.

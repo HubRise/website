@@ -33,7 +33,7 @@ Orkestro est présent dans plusieurs villes au Royaume-Uni, dont Londres.
 
 ## Fonctionnalités de l'intégration
 
-Connecter Orkestro à HubRise permet à votre solution de gestion de livreurs de :
+Connecter Orkestro à HubRise permet à votre solution de gestion de livreurs de :
 
 - Recevoir les commandes de HubRise.
 - Recevoir les informations clients de HubRise.

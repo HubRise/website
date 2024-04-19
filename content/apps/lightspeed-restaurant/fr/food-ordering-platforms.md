@@ -18,7 +18,7 @@ Pour plus d'informations, consultez la documentation de ces plateformes accessib
 
 Selon vos besoins, vous allez devoir créer des articles, des modes de paiement et des profils de compte dans Lightspeed Restaurant.
 
-Si vous préférez laisser le support Lightspeed configurer ces éléments, assurez-vous d'utiliser les noms de canaux suivants dans les demandes d'assistance afin d'éviter toute confusion :
+Si vous préférez laisser le support Lightspeed configurer ces éléments, assurez-vous d'utiliser les noms de canaux suivants dans les demandes d'assistance afin d'éviter toute confusion :
 
 | Plateforme      | Nom du canal           |
 | --------------- | ---------------------- |
@@ -39,7 +39,7 @@ Pour des instructions détaillées sur la création de codes ref dans le back-of
 
 Pour recevoir des commandes Deliveroo dans Lightspeed Restaurant, vous devez d'abord connecter Deliveroo Bridge, une application incluse dans votre abonnement HubRise. Pour plus d'informations sur celle-ci, consultez la [documentation Deliveroo Bridge](/apps/deliveroo/overview).
 
-Sur la page de configuration de Deliveroo Bridge, utilisez les paramètres suivants :
+Sur la page de configuration de Deliveroo Bridge, utilisez les paramètres suivants :
 
 | Section             | Nom                                                     | Code ref                                      |
 | ------------------- | ------------------------------------------------------- | --------------------------------------------- |
@@ -58,7 +58,7 @@ Sur la page de configuration de Deliveroo Bridge, utilisez les paramètres suiva
 
 ## Just Eat
 
-Just Eat propose deux API :
+Just Eat propose deux API :
 
 - L'API Flyt est utilisée sur les plateformes Just-Eat.co.uk, Just-Eat.ie, Menulog et SkipTheDishes, ainsi que par les chaînes sur les autres marchés. Elle permet de synchroniser les commandes et le menu.
 - L'API Takeaway, la plus ancienne, est utilisée par les indépendants sur les autres marchés. Elle permet de recevoir des commandes, mais pas d'envoyer le menu.
@@ -75,7 +75,7 @@ Pour recevoir des commandes Just Eat dans Lightspeed Restaurant via l'API Flyt, 
 
 ### Just-Eat.ch
 
-Just-Eat.ch utilise l'API Just Eat via Takeaway. Sur la page de configuration de Just Eat Takeaway Bridge, utilisez les paramètres suivants :
+Just-Eat.ch utilise l'API Just Eat via Takeaway. Sur la page de configuration de Just Eat Takeaway Bridge, utilisez les paramètres suivants :
 
 | Section             | Nom                                                         | Code ref                                      |
 | ------------------- | ----------------------------------------------------------- | --------------------------------------------- |
@@ -92,7 +92,7 @@ Just-Eat.ch utilise l'API Just Eat via Takeaway. Sur la page de configuration de
 
 ### Just Eat.co.uk et Just Eat.ie
 
-Ces plateformes utilisent l'API Just Eat via Flyt. Sur la page de configuration de Just Eat Flyt Bridge, utilisez les paramètres suivants :
+Ces plateformes utilisent l'API Just Eat via Flyt. Sur la page de configuration de Just Eat Flyt Bridge, utilisez les paramètres suivants :
 
 | Section             | Nom                                                         | Code ref                                                                 |
 | ------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------ |
@@ -113,7 +113,7 @@ Ces plateformes utilisent l'API Just Eat via Flyt. Sur la page de configuration 
 
 ### Takeaway.com
 
-Takeaway.com utilise l'API Just Eat via Takeaway. Sur la page de configuration de Just Eat Takeaway Bridge, utilisez les paramètres suivants :
+Takeaway.com utilise l'API Just Eat via Takeaway. Sur la page de configuration de Just Eat Takeaway Bridge, utilisez les paramètres suivants :
 
 | Section             | Nom                                                         | Code ref                                      |
 | ------------------- | ----------------------------------------------------------- | --------------------------------------------- |
@@ -129,7 +129,7 @@ Takeaway.com utilise l'API Just Eat via Takeaway. Sur la page de configuration d
 
 ### Thuisbezorgd.nl
 
-Thuisbezorgd.nl utilise l'API Just Eat via Takeaway. Sur la page de configuration de Just Eat Takeaway Bridge, utilisez les paramètres suivants :
+Thuisbezorgd.nl utilise l'API Just Eat via Takeaway. Sur la page de configuration de Just Eat Takeaway Bridge, utilisez les paramètres suivants :
 
 | Section             | Nom                                                         | Code ref                                      |
 | ------------------- | ----------------------------------------------------------- | --------------------------------------------- |
@@ -177,7 +177,7 @@ Pour recevoir des commandes Smood dans Lightspeed, utilisez les valeurs suivante
 
 Pour recevoir des commandes Uber Eats dans Lightspeed Restaurant, vous devez d'abord connecter Uber Eats Bridge, une application incluse dans votre abonnement HubRise. Pour plus d'informations sur Uber Eats Bridge, consultez la [documentation Uber Eats Bridge](/apps/uber-eats/overview).
 
-Sur la page de configuration d'Uber Eats Bridge, utilisez les paramètres suivants :
+Sur la page de configuration d'Uber Eats Bridge, utilisez les paramètres suivants :
 
 | Section             | Nom                                                         | Code ref                                                                           |
 | ------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------- |

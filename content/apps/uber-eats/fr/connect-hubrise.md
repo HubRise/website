@@ -5,7 +5,7 @@ position: 2
 layout: documentation
 meta:
   title: Connexion à HubRise | Uber Eats | HubRise
-  description: "Connexion de votre restaurant Uber Eats à HubRise : liste des éléments à nous fournir et étapes à suivre pour recevoir vos commandes Uber Eats dans votre logiciel de caisse."
+  description: "Connexion de votre restaurant Uber Eats à HubRise : liste des éléments à nous fournir et étapes à suivre pour recevoir vos commandes Uber Eats dans votre logiciel de caisse."
 ---
 
 La connexion d'Uber Eats à HubRise s'effectue en quelques étapes simples.

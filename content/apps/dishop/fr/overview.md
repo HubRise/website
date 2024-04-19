@@ -23,11 +23,11 @@ app_info:
 
 ## Description
 
-Dishop propose des services de commande en ligne et de livraison destinés principalement aux franchises de la restauration et aux dark kitchens. Ces services comprennent un package de solutions en SaaS axées sur la livraison : une application mobile et un site internet de commande en ligne, ainsi qu'un outil de mise en relation et de gestion des livreurs indépendants. La solution fonctionne en marque blanche, sans intermédiaire et sans commission.
+Dishop propose des services de commande en ligne et de livraison destinés principalement aux franchises de la restauration et aux dark kitchens. Ces services comprennent un package de solutions en SaaS axées sur la livraison : une application mobile et un site internet de commande en ligne, ainsi qu'un outil de mise en relation et de gestion des livreurs indépendants. La solution fonctionne en marque blanche, sans intermédiaire et sans commission.
 
-Dishop donne au restaurant le contrôle sur son image : l'application mobile et le site internet de commande en ligne sont personnalisés aux couleurs de l'enseigne. Ainsi, le consommateur ne commande pas chez Dishop, il commande chez son restaurant favori. Le restaurateur profite donc du bénéfice de notoriété et accroît la fidélité de sa clientèle.
+Dishop donne au restaurant le contrôle sur son image : l'application mobile et le site internet de commande en ligne sont personnalisés aux couleurs de l'enseigne. Ainsi, le consommateur ne commande pas chez Dishop, il commande chez son restaurant favori. Le restaurateur profite donc du bénéfice de notoriété et accroît la fidélité de sa clientèle.
 
-Dishop inclut des outils technologiques pour renforcer le lien entre les restaurateurs et leurs clients : envoi illimité de push notifications, codes promos, et programme de fidélité.
+Dishop inclut des outils technologiques pour renforcer le lien entre les restaurateurs et leurs clients : envoi illimité de push notifications, codes promos, et programme de fidélité.
 
 L'établissement définit la tarification des livraisons, et Dishop ne perçoit pas de commission sur ces coûts. Pas d'intermédiaire, pour une rémunération juste du livreur et une maîtrise des coûts du restaurateur. Dishop permet à la franchise ou à la dark kitchen de modérer les livreurs indépendants, et d'assurer ainsi une livraison impeccable et à son image.
 
@@ -35,7 +35,7 @@ Grâce à un tableau de bord avancé et intuitif, la franchise ou la dark kitche
 
 ## Fonctionnalités de l'intégration
 
-Connecter Dishop à HubRise permet à votre solution de commande en ligne et gestion de livraison de :
+Connecter Dishop à HubRise permet à votre solution de commande en ligne et gestion de livraison de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Envoyer les informations clients à HubRise.
@@ -44,7 +44,7 @@ Connecter Dishop à HubRise permet à votre solution de commande en ligne et ges
 
 ---
 
-**REMARQUE IMPORTANTE :** Dishop permettra bientôt de récupérer des commandes tierces et des informations clients depuis HubRise. Contactez Dishop pour plus d'information à ce sujet.
+**REMARQUE IMPORTANTE :** Dishop permettra bientôt de récupérer des commandes tierces et des informations clients depuis HubRise. Contactez Dishop pour plus d'information à ce sujet.
 
 ---
 

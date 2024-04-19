@@ -12,7 +12,7 @@ Carré POS permet d'envoyer l'ensemble de vos produits vers un catalogue HubRis
 
 ## Envoi manuel du catalogue
 
-L'envoi du catalogue est déclenché manuellement depuis le back-office de Carré POS. Pour envoyer le catalogue, procédez comme suit :
+L'envoi du catalogue est déclenché manuellement depuis le back-office de Carré POS. Pour envoyer le catalogue, procédez comme suit :
 
 1. Ouvrez le back-office Carré POS.
 2. Sélectionnez **HubRise** > **Configuration**.
@@ -24,7 +24,7 @@ En fonction du nombre de produits, l'envoi du catalogue peut prendre quelques se
 
 Carré POS envoie à HubRise les produits et la hiérarchie des catégories.
 
-Pour chaque produit, les informations suivantes sont envoyées :
+Pour chaque produit, les informations suivantes sont envoyées :
 
 - Nom
 - Catégorie

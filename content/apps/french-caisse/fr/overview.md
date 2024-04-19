@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -35,14 +35,14 @@ French Caisse est conforme à la loi française "anti-fraudes" du 1er janvier 20
 
 ## Fonctionnalités de l'intégration
 
-Connecter French Caisse à HubRise permet à votre logiciel de caisse de :
+Connecter French Caisse à HubRise permet à votre logiciel de caisse de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.
 
 ---
 
-**REMARQUE IMPORTANTE :** Les commandes reçues de HubRise ne sont pas décomptées des stocks ou incluses dans les analyses de données commerciales.
+**REMARQUE IMPORTANTE :** Les commandes reçues de HubRise ne sont pas décomptées des stocks ou incluses dans les analyses de données commerciales.
 
 ---
 

@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** L'audit de l'intégration est en cours. Une documentation complète sera publiée une fois l'audit terminé.
+**REMARQUE IMPORTANTE :** L'audit de l'intégration est en cours. Une documentation complète sera publiée une fois l'audit terminé.
 
 ---
 
@@ -33,7 +33,7 @@ Le chatbot 1Bot reste actif 24h/24 et 7j/7, même en dehors des horaires d'ouver
 
 ## Fonctionnalités de l'intégration
 
-Connecter 1Bot à HubRise permet à votre solution de :
+Connecter 1Bot à HubRise permet à votre solution de :
 
 - Envoyer les commandes à HubRise.
 - Envoyer les informations clients à HubRise.

@@ -32,7 +32,7 @@ Connecter Zelty à HubRise permet à votre logiciel de caisse de :
 
 ---
 
-**REMARQUE IMPORTANTE :** L'envoi des commandes et des informations clients à HubRise sera bientôt possible. Contactez Zelty pour plus d'information à ce sujet.
+**REMARQUE IMPORTANTE :** L'envoi des commandes et des informations clients à HubRise sera bientôt possible. Contactez Zelty pour plus d'information à ce sujet.
 
 ---
 

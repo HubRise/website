@@ -27,7 +27,7 @@ L'interface utilisateur Emma est en anglais, tout comme les échanges avec leur 
 
 ## Fonctionnalités de l'intégration
 
-Connecter Emma à HubRise permet à votre solution de marketing de :
+Connecter Emma à HubRise permet à votre solution de marketing de :
 
 - Recevoir les informations clients de HubRise.
 - Recevoir les commandes de HubRise.

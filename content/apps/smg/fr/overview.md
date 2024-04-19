@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -29,7 +29,7 @@ SMG offre un back-office et une application mobile aux commerçants qui permette
 
 ## Fonctionnalités de l'intégration
 
-Connecter SMG à HubRise permet à votre solution de marketing de :
+Connecter SMG à HubRise permet à votre solution de marketing de :
 
 - Recevoir les commandes de HubRise.
 - Recevoir les informations clients de HubRise.

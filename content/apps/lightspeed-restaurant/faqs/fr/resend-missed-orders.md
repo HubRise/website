@@ -10,7 +10,7 @@ meta:
 
 Si des commandes visibles sur HubRise ne sont pas parvenues à votre caisse Restaurant Lightspeed, parce que votre caisse était éteinte par exemple, vous pouvez les renvoyer depuis Lightspeed Restaurant Bridge.
 
-Pour renvoyer une commande à Lightspeed Restaurant, suivez ces étapes :
+Pour renvoyer une commande à Lightspeed Restaurant, suivez ces étapes :
 
 1. Ouvrez **Lightspeed Restaurant Bridge** depuis la page **CONNECTIONS** de votre back-office HubRise.
 1. Depuis la [**page Opération**](/apps/lightspeed-restaurant/user-interface#operation) de Lightspeed Restaurant Bridge, cliquez sur la commande que vous souhaitez renvoyer.

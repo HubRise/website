@@ -40,7 +40,7 @@ Connecting Synapsy to HubRise allows your EPOS to:
 
 ---
 
-**IMPORTANT NOTE** : Pushing order and customer information into HubRise will be supported in the future. Contact Synapsy for more information.
+**IMPORTANT NOTE**: Pushing order and customer information into HubRise will be supported in the future. Contact Synapsy for more information.
 
 ---
 

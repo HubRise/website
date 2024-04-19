@@ -18,7 +18,7 @@ Pour plus d'informations, consultez les pages d'aide de ces plateformes sur notr
 
 ### Types de service {#service-types}
 
-Les types de service sont utilisés de la manière suivante par POS HELPER :
+Les types de service sont utilisés de la manière suivante par POS HELPER :
 
 - Ils sont affichés sur l'écran de production POS HELPER.
 - Ils sont imprimés en haut des tickets, sous le nom de la plateforme.
@@ -127,6 +127,6 @@ Dans la page de configuration de Uber Eats Bridge, utilisez les paramètres suiv
 
 ---
 
-**REMARQUE IMPORTANTE :** Les notes de préparation sur les articles ne sont pas supportées par POS HELPER. Si vous utilisez ces notes pour des instructions de cuisson ou de service (par exemple, "Cuisson à point", ou "Coupez en tranches"), vous devez les remplacer par des options dans votre menu Uber Eats.
+**REMARQUE IMPORTANTE :** Les notes de préparation sur les articles ne sont pas supportées par POS HELPER. Si vous utilisez ces notes pour des instructions de cuisson ou de service (par exemple, "Cuisson à point", ou "Coupez en tranches"), vous devez les remplacer par des options dans votre menu Uber Eats.
 
 ---

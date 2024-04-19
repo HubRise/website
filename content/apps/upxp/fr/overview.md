@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -29,7 +29,7 @@ UPXP est la première cryptomonnaie dédiée aux restaurateurs et aux hôteliers
 
 ## Fonctionnalités de l'intégration
 
-Connecter UPXP à HubRise permet à votre solution de fidélité de :
+Connecter UPXP à HubRise permet à votre solution de fidélité de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.

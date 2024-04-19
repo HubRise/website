@@ -36,14 +36,14 @@ Pour savoir comment vérifier les codes ref des types de service disponibles dan
 
 ### Gérer les différences de prix
 
-Lorsque le montant total du paiement ne correspond pas au prix total de la commande calculé par Lightspeed Restaurant, deux scénarios peuvent se produire :
+Lorsque le montant total du paiement ne correspond pas au prix total de la commande calculé par Lightspeed Restaurant, deux scénarios peuvent se produire :
 
 - Si le montant total du paiement est supérieur au montant prévu, Lightspeed rejette la commande.
 - Si le montant total du paiement est inférieur au montant prévu, Lightspeed accepte la commande. Celle-ci reste cependant ouverte pour le paiement dans le logiciel de caisse.
 
 ---
 
-**FAQ associée** : [Comment résoudre les erreurs liées à une différence de prix ?](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors)
+**FAQ associée** : [Comment résoudre les erreurs liées à une différence de prix ?](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors)
 
 ---
 

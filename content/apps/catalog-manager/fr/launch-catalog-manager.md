@@ -8,7 +8,7 @@ meta:
   description: Instructions pour ouvrir Catalog Manager et s'en déconnecter. Synchronisez les catalogues entre votre logiciel de caisse et vos autres applications.
 ---
 
-Pour ouvrir Catalog Manager, suivez ces étapes :
+Pour ouvrir Catalog Manager, suivez ces étapes :
 
 1. Connectez-vous à votre [back-office HubRise](https://manager.hubrise.com).
 2. Sélectionnez **CONNEXIONS**.

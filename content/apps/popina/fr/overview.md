@@ -18,7 +18,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration est en cours de rédaction.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration est en cours de rédaction.
 
 ---
 
@@ -28,12 +28,12 @@ Popina est une caisse enregistreuse pour iPad créée en 2014. La solution Popin
 
 Les services proposés incluent l'encaissement, la prise de commandes sur place et à distance, l'analyse de données, la fidélisation, la gestion et l'organisation, et les paiements.
 
-Parmi les fonctionnalités disponibles :
+Parmi les fonctionnalités disponibles :
 
 - Programme fidélité.
 - Solution click & collect.
 - Cahier de réservations.
-- Optimisation de la rotation des tables avec la télécommande tout-en-un : prise de commande et paiement.
+- Optimisation de la rotation des tables avec la télécommande tout-en-un : prise de commande et paiement.
 - Gestion des plannings des employés.
 - Paiement à table par QR code.
 - Gestion des pourboires dématérialisés.
@@ -44,7 +44,7 @@ Popina est conforme à la loi française anti-fraude 2018.
 
 ## Fonctionnalités de l'intégration
 
-Connecter Popina à HubRise permet à votre logiciel de caisse de :
+Connecter Popina à HubRise permet à votre logiciel de caisse de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.

@@ -16,7 +16,7 @@ Il s'agit de la page qui s'affiche lorsque vous ouvrez Shopify Bridge. Elle affi
 
 Les opérations peuvent soit être liées à une commande spécifique, soit être des requêtes système génériques exécutées par Shopify Bridge.
 
-Chaque ligne correspond à une opération et affiche les informations suivantes :
+Chaque ligne correspond à une opération et affiche les informations suivantes :
 
 - **HEURE** : date et heure de la commande.
 - **COMMANDE** : identifiant HubRise de la commande, pour les opérations de commande.
@@ -64,7 +64,7 @@ Pour accéder à la page des actions, cliquez sur **Actions** en haut de l'écra
 Depuis la page Actions, vous pouvez effectuer les actions suivantes :
 
 - **Envoyer le catalogue** : envoie le catalogue vers Shopify. Pour plus de détails, voir [Envoyer le catalogue](/apps/shopify/push-catalog).
-- **Envoyer l'inventaire** : envoie l'inventaire de produits à Shopify.
+- **Envoyer l'inventaire** : envoie l'inventaire de produits à Shopify.
 
 ## Langue et navigation
 

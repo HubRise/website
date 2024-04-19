@@ -10,15 +10,15 @@ meta:
 
 Les variantes de catalogue permettent de gérer différents prix et disponibilités avec un seul catalogue. Par exemple, vous pouvez créer et gérer un catalogue sur HubRise pour Deliveroo, Uber Eats, votre solution de commande en ligne en marque blanche et votre kiosque de commande sur place, même si les prix diffèrent sur chacun de ces canaux.
 
-Voici quelques configurations courantes :
+Voici quelques configurations courantes :
 
-- Variantes par canaux de livraison : `Deliveroo`, `Uber Eats`, `Shopify`, etc.
-- Variantes par point de vente : `Londres`, `Paris`, etc.
-- Variantes par groupes de points de vente : `Centre-ville`, `Quartiers Nord`, etc.
-- Variantes par canal de vente : `En ligne`, `En boutique`, etc.
-- Variantes par type de service : `En livraison`, `Sur-place`, `A emporter`.
+- Variantes par canaux de livraison : `Deliveroo`, `Uber Eats`, `Shopify`, etc.
+- Variantes par point de vente : `Londres`, `Paris`, etc.
+- Variantes par groupes de points de vente : `Centre-ville`, `Quartiers Nord`, etc.
+- Variantes par canal de vente : `En ligne`, `En boutique`, etc.
+- Variantes par type de service : `En livraison`, `Sur-place`, `A emporter`.
 
-Vous pouvez également utiliser une combinaison des exemples ci-dessus : `Deliveroo`, `Uber Eats Paris`, `Uber Eats quartiers nord`, etc.
+Vous pouvez également utiliser une combinaison des exemples ci-dessus : `Deliveroo`, `Uber Eats Paris`, `Uber Eats quartiers nord`, etc.
 
 ![Vue Grille Catalog Manager](./images/020-grid-view.png)
 
@@ -26,7 +26,7 @@ Pour plus d'informations sur les variantes, voir l'<Link href="/blog/catalog-var
 
 ## Créer des variantes
 
-Pour créer une variante, suivez ces étapes :
+Pour créer une variante, suivez ces étapes :
 
 1. Dans Catalog Manager, sélectionnez **Grille**.
 2. Dans la vue **Grille**, cliquez sur le lien **Gérer les variantes** dans le coin supérieur gauche de la page.
@@ -55,6 +55,6 @@ Pour les autres applications, reportez-vous à la documentation de l'application
 
 ***
 
-**REMARQUE IMPORTANTE :** Tous les bridges HubRise prennent en charge les variantes de catalogue, mais toutes les autres applications intégrées ne le font pas. Consultez la documentation de votre application sur HubRise pour vous assurer que cette fonctionnalité est prise en charge.
+**REMARQUE IMPORTANTE :** Tous les bridges HubRise prennent en charge les variantes de catalogue, mais toutes les autres applications intégrées ne le font pas. Consultez la documentation de votre application sur HubRise pour vous assurer que cette fonctionnalité est prise en charge.
 
 ***

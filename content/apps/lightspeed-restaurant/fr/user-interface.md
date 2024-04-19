@@ -12,7 +12,7 @@ Dans l'interface utilisateur de Lightspeed Restaurant Bridge, vous trouverez des
 
 ## Page d'accueil
 
-La page d'accueil de Lightspeed Restaurant Bridge affiche les dernières opérations. Chaque ligne fournit les données suivantes :
+La page d'accueil de Lightspeed Restaurant Bridge affiche les dernières opérations. Chaque ligne fournit les données suivantes :
 
 - **HEURE** : date et heure de l'opération.
 - **STATUT** : statut de l'opération. La valeur OK indique que l'opération a réussi. Dans le cas contraire, un message précise le type d'erreur survenue.
@@ -23,7 +23,7 @@ En haut à droite de la page d'accueil de Lightspeed Restaurant Bridge figurent 
 
 ---
 
-**REMARQUE IMPORTANTE :** La première fois que vous accédez aux logs depuis Lightspeed Restaurant Bridge, il vous est demandé d'**autoriser** le Bridge à accéder aux informations de votre compte HubRise.
+**REMARQUE IMPORTANTE :** La première fois que vous accédez aux logs depuis Lightspeed Restaurant Bridge, il vous est demandé d'**autoriser** le Bridge à accéder aux informations de votre compte HubRise.
 
 ---
 
@@ -33,7 +33,7 @@ En haut à droite de la page d'accueil de Lightspeed Restaurant Bridge figurent 
 
 Sélectionnez une opération dans la liste pour afficher tous les logs des requêtes d'API échangées entre HubRise et le logiciel de caisse Lightspeed Restaurant via Lightspeed Restaurant Bridge.
 
-Les requêtes sont classées par ordre chronologique inverse, et chacune d'elles affiche les informations suivantes :
+Les requêtes sont classées par ordre chronologique inverse, et chacune d'elles affiche les informations suivantes :
 
 - **Heure** : date et heure d'envoi de la commande.
 - **Direction** : applications qui envoient et reçoivent la requête, selon le format Origine → Destination.

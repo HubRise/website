@@ -16,7 +16,7 @@ meta:
 
 ## Connecter Expedy
 
-Pour connecter votre imprimante Expedy à HubRise, suivez ces étapes :
+Pour connecter votre imprimante Expedy à HubRise, suivez ces étapes :
 
 1. Depuis la page d'accueil du back-office Expedy, cliquez sur **Imprimantes**.
 1. Cliquez sur le nom de l'imprimante à connecter.

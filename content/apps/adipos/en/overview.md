@@ -44,7 +44,7 @@ Adipos can be connected to HubRise from the Adipos back office.
 
 ---
 
-**IMPORTANT NOTE** : Adipos does not currently support pushing orders into HubRise, but this feature can be developed on demand. Contact Adipos for more information.
+**IMPORTANT NOTE**: Adipos does not currently support pushing orders into HubRise, but this feature can be developed on demand. Contact Adipos for more information.
 
 ---
 

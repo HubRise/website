@@ -27,7 +27,7 @@ app_info:
 
 ## Description
 
-Depuis plus de 10 ans, Melba by Foodmeup aide les professionnels des métiers de la bouche dans la gestion quotidienne de leurs opérations. Melba permet d'effectuer les opérations suivantes à l'aide d'une interface utilisateur ergonomique :
+Depuis plus de 10 ans, Melba by Foodmeup aide les professionnels des métiers de la bouche dans la gestion quotidienne de leurs opérations. Melba permet d'effectuer les opérations suivantes à l'aide d'une interface utilisateur ergonomique :
 
 **Gestion des stocks et des commandes**
 
@@ -58,16 +58,16 @@ En complément de son intégration HubRise, Melba dispose d'une API qui rend tou
 
 ## Fonctionnalités de l'intégration
 
-Connecter Melba à HubRise permet à votre Melba de :
+Connecter Melba à HubRise permet à votre Melba de :
 
-Fonctionnalités :
+Fonctionnalités :
 
 - Recevoir les commandes de HubRise.
 - Recevoir un catalogue de HubRise.
 
 ---
 
-**REMARQUE IMPORTANTE :** L'inventaire n'est pas envoyé à HubRise, mais le développement de cette fonctionnalité est prévu dans une prochaine mise à jour. Contactez Melba pour plus d'information.
+**REMARQUE IMPORTANTE :** L'inventaire n'est pas envoyé à HubRise, mais le développement de cette fonctionnalité est prévu dans une prochaine mise à jour. Contactez Melba pour plus d'information.
 
 ---
 
@@ -75,7 +75,7 @@ Melba peut être connecté à HubRise depuis le back-office de Melba.
 
 ## Pourquoi se connecter ?
 
-En connectant Melba à HubRise, vous pouvez :
+En connectant Melba à HubRise, vous pouvez :
 
 - Alimenter le catalogue Melba avec les produits vendus pour mettre les données à jour.
 - Faire remonter les ventes des systèmes de caisse et solutions de commande en ligne dans Melba.

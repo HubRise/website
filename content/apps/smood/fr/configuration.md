@@ -14,7 +14,7 @@ Cette page explique comment ouvrir la page de configuration et configurer votre 
 
 ## Ouvrir la page de configuration
 
-Pour ouvrir la page de configuration, suivez ces étapes :
+Pour ouvrir la page de configuration, suivez ces étapes :
 
 - Connectez-vous à votre [back-office Smood](https://manager.smood.ch).
 - Sélectionnez le restaurant dans le menu déroulant de la barre latérale gauche.
@@ -25,7 +25,7 @@ Vous êtes également redirigé vers la page de configuration lorsque vous conne
 
 ## Configurer vos paramètres {#settings}
 
-La page de configuration comprend les sections suivantes :
+La page de configuration comprend les sections suivantes :
 
 ![Page de configuration Smood](./images/003-smood-configuration.png)
 
@@ -37,9 +37,9 @@ De plus, dans cette section, vous pouvez choisir de marquer les commandes livré
 
 ### Remises {#discounts}
 
-Dans cette section, vous pouvez configurer les codes ref à utiliser pour les remises et promotions envoyées à HubRise :
+Dans cette section, vous pouvez configurer les codes ref à utiliser pour les remises et promotions envoyées à HubRise :
 
-- **Code de référence du bon de réduction** : Le code ref utilisé pour les remises qui s'appliquent à l'intégralité de la commande, par exemple une remise de 10 %.
+- **Code de référence du bon de réduction** : Le code ref utilisé pour les remises qui s'appliquent à l'intégralité de la commande, par exemple une remise de 10 %.
 - **Code de référence de la promotion**: Le code ref pour les promotions avec une seule ligne. Il s'agit des promotions appliquées à un seul produit, par exemple une réduction de 10 % sur une pizza spécifique.
 - **Code de référence BOGOF**: Le code ref pour les offres _"1 produit acheté, 1 offert"_ (BOGOF).
 
@@ -59,17 +59,17 @@ Dans cette section, vous pouvez choisir la variante de catalogue HubRise que Smo
 
 ---
 
-**REMARQUE IMPORTANTE :** Après avoir sélectionné une variante de catalogue, vous devez récupérer à nouveau le catalogue pour mettre à jour le menu dans Smood. Pour plus d'informations, voir [Récupérer le catalogue manuellement](/apps/smood/pull-catalog#manual-pull).
+**REMARQUE IMPORTANTE :** Après avoir sélectionné une variante de catalogue, vous devez récupérer à nouveau le catalogue pour mettre à jour le menu dans Smood. Pour plus d'informations, voir [Récupérer le catalogue manuellement](/apps/smood/pull-catalog#manual-pull).
 
 ---
 
 ### Paramètres de synchronisation {#synchronisation-settings}
 
-Les cases à cocher de cette section permettent de configurer le flux de synchronisation entre Smood et HubRise :
+Les cases à cocher de cette section permettent de configurer le flux de synchronisation entre Smood et HubRise :
 
-- **Activer la synchronisation automatique du catalogue** : cochez la case pour que le menu Smood soit automatiquement mis à jour à chaque modification du catalogue HubRise.
-- **Activer la synchronisation automatique de l'inventaire** : cochez la case pour que les articles en rupture de stock dans l'inventaire HubRise soient automatiquement supprimés du menu Smood.
-- **Activer la synchronisation automatique du statut de Smood à HubRise** : Lorsqu'une commande est annulée dans Smood, la mise à jour de ce statut est toujours envoyée à HubRise. Quand cette option est cochée, d'autres statuts Smood sont également envoyés.
+- **Activer la synchronisation automatique du catalogue** : cochez la case pour que le menu Smood soit automatiquement mis à jour à chaque modification du catalogue HubRise.
+- **Activer la synchronisation automatique de l'inventaire** : cochez la case pour que les articles en rupture de stock dans l'inventaire HubRise soient automatiquement supprimés du menu Smood.
+- **Activer la synchronisation automatique du statut de Smood à HubRise** : Lorsqu'une commande est annulée dans Smood, la mise à jour de ce statut est toujours envoyée à HubRise. Quand cette option est cochée, d'autres statuts Smood sont également envoyés.
 
 ### Enregistrer vos modifications
 

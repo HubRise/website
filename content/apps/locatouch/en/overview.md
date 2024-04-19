@@ -40,7 +40,7 @@ Connecting Loca'Touch to HubRise allows your self ordering kiosk to:
 
 ---
 
-**IMPORTANT NOTE** : Pulling order and customer information from HubRise will be supported in the future. Once this new integration feature is available you will be able to use Loca'Touch to centralise, manage and print orders that originate from other systems connected to your HubRise Account, including food ordering and delivery platforms. Contact Loca'Touch for more information.
+**IMPORTANT NOTE**: Pulling order and customer information from HubRise will be supported in the future. Once this new integration feature is available you will be able to use Loca'Touch to centralise, manage and print orders that originate from other systems connected to your HubRise Account, including food ordering and delivery platforms. Contact Loca'Touch for more information.
 
 ---
 

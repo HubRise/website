@@ -10,7 +10,7 @@ meta:
 
 Google Chrome est notre navigateur recommandé pour une expérience optimale.
 
-Pour lancer OrderLine, suivez ces étapes :
+Pour lancer OrderLine, suivez ces étapes :
 
 1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com).
 2. Ouvrez la page **CONNEXIONS**.

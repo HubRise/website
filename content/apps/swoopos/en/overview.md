@@ -46,7 +46,7 @@ Connecting SwooPOS to HubRise allows your EPOS to:
 
 ---
 
-**IMPORTANT NOTE** : Pushing inventory information into HubRise will be supported in the future. Contact SwooPOS for more information.
+**IMPORTANT NOTE**: Pushing inventory information into HubRise will be supported in the future. Contact SwooPOS for more information.
 
 ---
 

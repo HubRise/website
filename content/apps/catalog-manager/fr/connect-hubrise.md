@@ -14,7 +14,7 @@ meta:
 
 ---
 
-Pour utiliser Catalog Manager, vous devez d'abord le connecter à votre compte HubRise. Pour connecter Catalog Manager, suivez ces étapes :
+Pour utiliser Catalog Manager, vous devez d'abord le connecter à votre compte HubRise. Pour connecter Catalog Manager, suivez ces étapes :
 
 1. Connectez-vous à votre [back-office HubRise](https://manager.hubrise.com).
 2. Sélectionnez **CONNEXIONS**, puis **Voir les apps disponibles**.

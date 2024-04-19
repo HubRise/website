@@ -10,7 +10,7 @@ meta:
 
 ---
 
-**REMARQUE IMPORTANTE :** Ceci est une page de test.
+**REMARQUE IMPORTANTE :** Ceci est une page de test.
 
 ---
 

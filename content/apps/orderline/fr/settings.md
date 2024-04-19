@@ -63,7 +63,7 @@ Lorsqu'une commande est dans certains statuts spécifiques, OrderLine peut perme
 
 ---
 
-**REMARQUE IMPORTANTE :** OrderLine n'envoie pas directement d'e-mails aux clients. Les e-mails et autres notifications sont envoyées par votre solution de commande en ligne, sous deux conditions : votre solution de commande en ligne doit supporter l'envoi de notifications aux clients ; l'envoi de notifications doit être intégré à HubRise. Avant de mettre en place cette fonctionnalité, vérifiez que ces deux conditions sont remplies. Nous recommandons de tester sur une commande fictive pour vous assurer que le client reçoit bien la nouvelle heure de livraison et le commentaire.
+**REMARQUE IMPORTANTE :** OrderLine n'envoie pas directement d'e-mails aux clients. Les e-mails et autres notifications sont envoyées par votre solution de commande en ligne, sous deux conditions : votre solution de commande en ligne doit supporter l'envoi de notifications aux clients ; l'envoi de notifications doit être intégré à HubRise. Avant de mettre en place cette fonctionnalité, vérifiez que ces deux conditions sont remplies. Nous recommandons de tester sur une commande fictive pour vous assurer que le client reçoit bien la nouvelle heure de livraison et le commentaire.
 
 ---
 

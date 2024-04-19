@@ -11,7 +11,7 @@ meta:
 Lorsque vous ouvrez un catalogue, la page **Produits** s'affiche dans la vue **Édition**.
 Elle liste tous vos produits regroupés par catégories. Pour ajouter une catégorie, cliquez sur **Nouvelle catégorie** et saisissez un nom.
 
-Dans le volet de détails de chaque produit, vous pouvez afficher et modifier les informations suivantes :
+Dans le volet de détails de chaque produit, vous pouvez afficher et modifier les informations suivantes :
 
 - Nom du produit
 - Description
@@ -23,7 +23,7 @@ Les variations de produits sont généralement utilisées pour proposer différe
 
 ***
 
-**REMARQUE IMPORTANTE :** Chaque variations de produits dispose d'un code ref et d'un prix, qui doivent être saisis si vous connectez un logiciel de caisse. Si un produit n'a pas de variante, le code ref du produit de base doit être saisi.
+**REMARQUE IMPORTANTE :** Chaque variations de produits dispose d'un code ref et d'un prix, qui doivent être saisis si vous connectez un logiciel de caisse. Si un produit n'a pas de variante, le code ref du produit de base doit être saisi.
 
 ***
 

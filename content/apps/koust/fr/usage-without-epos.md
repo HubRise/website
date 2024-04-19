@@ -14,11 +14,11 @@ Si votre entreprise n'utilise pas de logiciel de caisse, vous pouvez importer vo
 
 ---
 
-**REMARQUE IMPORTANTE :** Pour éviter tout problème d'encodage ou d'accent, assurez-vous d'enregistrer votre fichier CSV en encodage UTF-8.
+**REMARQUE IMPORTANTE :** Pour éviter tout problème d'encodage ou d'accent, assurez-vous d'enregistrer votre fichier CSV en encodage UTF-8.
 
 ---
 
-Pour importer un fichier CSV dans Koust, suivez ces étapes :
+Pour importer un fichier CSV dans Koust, suivez ces étapes :
 
 1. Dans le menu latéral, sélectionnez **Ventes - Conso.**.
    ![Utilisation sans logiciel de caisse - Aucun article](./images/012-koust-no-item.png)

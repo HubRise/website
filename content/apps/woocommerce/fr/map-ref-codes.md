@@ -25,7 +25,7 @@ Pour attribuer des codes ref à vos produits WooCommerce, suivez ces étapes :
 
 ### Produits simples
 
-Pour les produits sans variations :
+Pour les produits sans variations :
 
 - Ouvrez l'onglet **Inventaire**.
 - Saisissez le code ref SKU HubRise dans le champ **SKU**.
@@ -33,7 +33,7 @@ Pour les produits sans variations :
 
 ### Produits variables
 
-Pour les produits avec variations :
+Pour les produits avec variations :
 
 - Ouvrez l'onglet **Variations**.
 - Cliquez sur la variante souhaitée afin de développer le formulaire.

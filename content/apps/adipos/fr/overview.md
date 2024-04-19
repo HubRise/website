@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration est en cours de rédaction.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration est en cours de rédaction.
 
 ---
 
@@ -33,7 +33,7 @@ Adipos est développé en France par Adixon, et a reçu la certification NF525, 
 
 ## Fonctionnalités de l'intégration
 
-Connecter Adipos à HubRise permet à votre logiciel de caisse de :
+Connecter Adipos à HubRise permet à votre logiciel de caisse de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.
@@ -44,7 +44,7 @@ Adipos peut être connecté à HubRise depuis le back-office de Adipos.
 
 ---
 
-**REMARQUE IMPORTANTE :** L'envoi des commandes et des informations clients à HubRise peut-être effectué sur demande. Pour plus d'informations, contactez Adipos.
+**REMARQUE IMPORTANTE :** L'envoi des commandes et des informations clients à HubRise peut-être effectué sur demande. Pour plus d'informations, contactez Adipos.
 
 ---
 

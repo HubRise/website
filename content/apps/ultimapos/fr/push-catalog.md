@@ -10,7 +10,7 @@ meta:
 
 La programmation sur UltimaPOS correspond au catalogue sur HubRise.
 
-Pour envoyer votre programmation UltimaPOS vers HubRise, suivez ces étapes :
+Pour envoyer votre programmation UltimaPOS vers HubRise, suivez ces étapes :
 
 1. Depuis l'écran d'accueil d'UltimaPOS, allez dans **Paramètres**, **Paramètres Cloud**, **Click & Collect**, puis dans l'onglet **HubRise**.
    ![Exporter le catalogue - Envoi catalogue](./images/003-ultimapos-connected.png)
@@ -20,6 +20,6 @@ L'opération peut prendre jusqu'à quelques minutes, en fonction de la taille de
 
 ---
 
-**REMARQUE IMPORTANTE** : Cette opération remplace le catalogue existant sur HubRise.
+**REMARQUE IMPORTANTE** : Cette opération remplace le catalogue existant sur HubRise.
 
 ---

@@ -21,7 +21,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -37,7 +37,7 @@ Les clients de RestaJet sont situés au Royaume-Uni, en France, aux Etats-Unis, 
 
 ## Fonctionnalités de l'intégration
 
-Connecter RestaJet à HubRise permet à votre solution de commande en ligne de :
+Connecter RestaJet à HubRise permet à votre solution de commande en ligne de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Envoyer les informations clients à HubRise.

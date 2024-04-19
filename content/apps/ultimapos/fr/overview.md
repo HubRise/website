@@ -29,7 +29,7 @@ UltimaPOS est certifié NF525, et donc conforme à la loi française anti-fraude
 
 ## Fonctionnalités de l'intégration
 
-Connecter UltimaPOS à HubRise permet à votre logiciel de caisse de :
+Connecter UltimaPOS à HubRise permet à votre logiciel de caisse de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Recevoir les commandes de HubRise, dont les statuts de commande.

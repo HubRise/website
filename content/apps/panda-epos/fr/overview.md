@@ -17,6 +17,6 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Cette documentation est disponible <Link href="/apps/panda-epos">en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** Cette documentation est disponible <Link href="/apps/panda-epos">en anglais uniquement</Link>.
 
 ---

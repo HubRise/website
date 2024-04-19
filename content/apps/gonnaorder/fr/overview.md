@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/gonnaorder">en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/gonnaorder">en anglais uniquement</Link>.
 
 ---
 
@@ -31,7 +31,7 @@ En commande sur place, le client scanne un QR code disposé sur la table pour ac
 
 ## Fonctionnalités de l'intégration
 
-Connecter GonnaOrder à HubRise permet à votre solution de commande en ligne de :
+Connecter GonnaOrder à HubRise permet à votre solution de commande en ligne de :
 
 - Envoyer les commandes à HubRise.
 - Envoyer les informations clients à HubRise.

@@ -20,7 +20,7 @@ app_info:
 
 Catalog Manager permet de gérer et modifier vos catalogues HubRise pour différents points de vente ou canaux. Édité par HubRise, il est utilisable gratuitement dans le cadre de votre abonnement à HubRise.
 
-Il inclut les fonctionnalités suivantes :
+Il inclut les fonctionnalités suivantes :
 
 - Créer, modifier et gérer vos catalogues HubRise.
 - Personnaliser vos produits, options, promotions et remises.

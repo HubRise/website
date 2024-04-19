@@ -18,7 +18,7 @@ meta:
 
 Pour établir la connexion entre Kezia II et HubRise, vous devez d'abord contacter le support de JDC pour installer le module HubRise sur Kezia II.
 
-Suivez ensuite ces étapes :
+Suivez ensuite ces étapes :
 
 1. Dans la barre de menu de Kezia II, sélectionnez **Fichier** > **Paramètres** > **Commandes Web**.
 1. Cochez la case **Actif** en-dessous de **HubRise**.
@@ -47,7 +47,7 @@ L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers �
 
 ## Configurer les actions de caisse
 
-Pour recevoir les commandes HubRise, vous devez configurer les actions de caisse dans Kezia II. Pour cela, suivez ces étapes :
+Pour recevoir les commandes HubRise, vous devez configurer les actions de caisse dans Kezia II. Pour cela, suivez ces étapes :
 
 1. Dans la barre de menu de Kezia II, sélectionnez **Fichier** > **Paramètres** > **Commandes Web**.
 1. Dans la section **Paramètres**, dans la partie **Liste des commandes**, sélectionnez _MCU 1_ dans la **Liste des champs** et entrez le nom _Commandes Web_ pour **Libellé du champ**.

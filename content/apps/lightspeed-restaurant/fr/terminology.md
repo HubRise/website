@@ -14,7 +14,7 @@ HubRise et Lightspeed utilisent chacun leur propre terminologie. Un même concep
 | ---------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | Etablissement    | Point de vente  | Le restaurant proprement dit.                                                                                                 |
 | Menu             | Catalogue       | Produits et variantes vendus par le magasin.                                                                                  |
-| Profil de compte | Type de service | Type de service associé à une commande. Exemples : livraison par le restaurant, plateforme de livraison de repas ou collecte. |
+| Profil de compte | Type de service | Type de service associé à une commande. Exemples : livraison par le restaurant, plateforme de livraison de repas ou collecte. |
 | Article          | SKU             | Une variante d'un produit.                                                                                                    |
 | Sku              | Code ref        | Code unique qui désigne un produit ou une option.                                                                             |
 | Séquence         | Options         | Options pour un produit.                                                                                                      |

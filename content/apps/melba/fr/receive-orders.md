@@ -10,7 +10,7 @@ meta:
 
 ## Importer les commandes dans Melba
 
-Pour importer les commandes HubRise dans Melba, suivez ces étapes :
+Pour importer les commandes HubRise dans Melba, suivez ces étapes :
 
 1. Depuis le back-office de Melba, cliquez sur l'icône **EXTENSIONS** dans le menu à gauche.
 
@@ -19,7 +19,7 @@ Pour importer les commandes HubRise dans Melba, suivez ces étapes :
 
 ## Déroulement de l'importation
 
-L'importation des commandes HubRise dans Melba se produit à deux moments différents :
+L'importation des commandes HubRise dans Melba se produit à deux moments différents :
 
 - Lors de la connexion de Melba à HubRise, les commandes des 2 derniers mois sont importées dans Melba.
 - Les commandes peuvent être importées à tout moment, sur action explicite de l'utilisateur, comme décrit ci-dessus. Melba importe alors toutes les commandes depuis la dernière importation.
@@ -28,7 +28,7 @@ Les commandes HubRise ne sont pas importées de manière automatique dans Melba,
 
 ## Informations reçues dans Melba
 
-Lors de l'importation des commandes, Melba reçoit les informations suivantes :
+Lors de l'importation des commandes, Melba reçoit les informations suivantes :
 
 - Prénom et nom du client
 - Heure de livraison

@@ -12,7 +12,7 @@ Lorsque Popina est connecté à HubRise, les commandes envoyées à HubRise arri
 
 ## Interface utilisateur
 
-Une fois HubRise connecté, vous pouvez retrouver les commandes HubRise dans l'onglet **Internet** de Popina :
+Une fois HubRise connecté, vous pouvez retrouver les commandes HubRise dans l'onglet **Internet** de Popina :
 
 ![Ecran de réception des commandes](./images/001-popina-order-list.png)
 
@@ -20,7 +20,7 @@ Pour plus d'informations sur le traitement des commandes HubRise dans Popina, co
 
 ## Articles et options
 
-Les articles et les options des commandes HubRise sont envoyés à Popina avec les informations suivantes : nom, prix, quantité, et code ref. Le code ref permet à Popina d'associer chaque article ou option à l'élément correspondant dans le catalogue Popina.
+Les articles et les options des commandes HubRise sont envoyés à Popina avec les informations suivantes : nom, prix, quantité, et code ref. Le code ref permet à Popina d'associer chaque article ou option à l'élément correspondant dans le catalogue Popina.
 
 Si un article ou une option a un code ref non reconnu, Popina utilise le nom et le prix définis sur HubRise, et applique un taux de TVA par défaut. L'article ou l'option n'est pas décompté du stock, et il n'apparaît pas dans les rapports de vente.
 
@@ -28,7 +28,7 @@ En cas de différence de prix entre les articles d'une commande HubRise et les p
 
 ## Types de service {#service-types}
 
-Le code ref du type de service permet d'identifier le Fournisseur et la Marque virtuelle associés à la commande. Les fournisseurs suivants sont pris en charge : `UBEREATS`, `DELIVEROO`, `JUSTEAT`.
+Le code ref du type de service permet d'identifier le Fournisseur et la Marque virtuelle associés à la commande. Les fournisseurs suivants sont pris en charge : `UBEREATS`, `DELIVEROO`, `JUSTEAT`.
 
 Le format du code ref est soit le nom du fournisseur, soit le nom du fournisseur suivi d'un tiret et du nom de la marque virtuelle. Par exemple, `UBEREATS` et `UBEREATS-Pizza30` sont tous deux valides.
 

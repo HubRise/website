@@ -18,7 +18,7 @@ meta:
 
 Seule l'équipe de support de Arcsoft, éditeur de MiiPos, peut connecter votre caisse MiiPos à HubRise.
 
-Pour connecter MiiPos à HubRise, procédez comme suit :
+Pour connecter MiiPos à HubRise, procédez comme suit :
 
 1. Créez un compte HubRise. Pour plus d'informations, consultez notre [Guide de démarrage](/docs/get-started).
 1. Donnez accès à votre compte à l'équipe support de MiiPos. Pour plus d'informations, voir [Donner accès au support de MiiPos](#give-access).

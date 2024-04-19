@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -37,7 +37,7 @@ SATO est présent dans plus de 90 pays.
 
 ## Fonctionnalités de l'intégration
 
-Connecter SATO à HubRise permet à votre imprimante autonome de :
+Connecter SATO à HubRise permet à votre imprimante autonome de :
 
 - Recevoir les commandes de HubRise.
 - Mettre à jour les statuts de commande HubRise.

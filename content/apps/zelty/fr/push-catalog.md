@@ -27,7 +27,7 @@ Pour exporter tous vos produits de Zelty vers HubRise, procédez comme suit :
 
 Vous pouvez également exporter une partie de vos produits vers HubRise. Cela vous permet d'enlever des articles qui ne doivent pas être utilisés par des applications connectées à HubRise.
 
-Pour exporter une partie de vos produits, vous devez créer un **catalogue**. Pour créer un catalogue :
+Pour exporter une partie de vos produits, vous devez créer un **catalogue**. Pour créer un catalogue :
 
 1. Dans le back-office Zelty, cliquez dans le menu de gauche sur **La carte** puis **Les catalogues**.
 2. Cliquez sur le bouton **Créer un nouveau catalogue**.
@@ -36,7 +36,7 @@ Pour exporter une partie de vos produits, vous devez créer un **catalogue**. Po
 5. Cliquez sur le nouveau catalogue pour l'ouvrir.
 6. Ajoutez une catégorie, puis des produits à partir de la carte principale. Référez-vous à la documentation de Zelty pour plus d'informations sur la manière de créer des catalogues.
 
-Pour exporter un catalogue Zelty vers HubRise :
+Pour exporter un catalogue Zelty vers HubRise :
 
 1. Dans le back-office Zelty, cliquez dans le menu de gauche sur **Les catalogues**.
 1. En regard du nom du catalogue, cliquez sur la flèche vers le bas et sélectionnez **Envoyer vers**.

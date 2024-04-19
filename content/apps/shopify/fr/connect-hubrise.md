@@ -16,7 +16,7 @@ La connexion de Shopify à HubRise s'effectue en quelques étapes seulement.
 
 ***
 
-Pour connecter Shopify à HubRise, choisissez l'une de ces deux procédures :
+Pour connecter Shopify à HubRise, choisissez l'une de ces deux procédures :
 
 - Connexion depuis le back-office de HubRise.
 - Connexion depuis Shopify App Store.

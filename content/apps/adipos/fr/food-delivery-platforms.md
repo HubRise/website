@@ -130,6 +130,6 @@ Dans la page de configuration de Uber Eats Bridge, utilisez les paramètres suiv
 
 ---
 
-**REMARQUE IMPORTANTE :** Les notes de préparation sur les articles ne sont pas supportées par Adipos. Si vous utilisez ces notes pour des instructions de cuisson ou de service (par exemple, "Cuisson à point", ou "Coupez en tranches"), vous devez les remplacer par des options dans votre menu Uber Eats.
+**REMARQUE IMPORTANTE :** Les notes de préparation sur les articles ne sont pas supportées par Adipos. Si vous utilisez ces notes pour des instructions de cuisson ou de service (par exemple, "Cuisson à point", ou "Coupez en tranches"), vous devez les remplacer par des options dans votre menu Uber Eats.
 
 ---

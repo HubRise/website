@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration est en cours de rédaction.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration est en cours de rédaction.
 
 ---
 
@@ -35,7 +35,7 @@ SmartResto.Net propose un essai gratuit en ligne, qui permet de mettre en place 
 
 ## Fonctionnalités de l'intégration
 
-Connecter SmartResto.Net à HubRise permet à votre solution de commande en ligne de :
+Connecter SmartResto.Net à HubRise permet à votre solution de commande en ligne de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Envoyer les informations clients à HubRise.

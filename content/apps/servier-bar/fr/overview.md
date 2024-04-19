@@ -19,7 +19,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE** : Une documentation complète de cette intégration est en cours de rédaction.
+**REMARQUE IMPORTANTE** : Une documentation complète de cette intégration est en cours de rédaction.
 
 ---
 
@@ -29,17 +29,17 @@ servier.bar est une solution de commande pour les restaurants et les hôtels. Il
 
 Comment ça marche ?
 
-- **Commande de table** : les clients scannent un QR code et commandent via un navigateur web. Aucun téléchargement et aucune création de compte nécessaire.
+- **Commande de table** : les clients scannent un QR code et commandent via un navigateur web. Aucun téléchargement et aucune création de compte nécessaire.
 - **Commande en ligne**: les clients peuvent commander à l'avance, ou passer commande pour une consommation ou livraison immédiate.
-- **Multilingue** : Le menu est disponible en 5 langues pour faciliter la commande pour tous les clients.
-- **Pourboire** : encouragez le pourboire et définissez des taux prédéfinis, par exemple 5 %, 10 % et 15 %.
-- **Paiement** : les clients peuvent payer avec leur smartphone, avec les fournisseurs de paiement habituels, y compris PayPal, Google Pay et Apple Pay.
+- **Multilingue** : Le menu est disponible en 5 langues pour faciliter la commande pour tous les clients.
+- **Pourboire** : encouragez le pourboire et définissez des taux prédéfinis, par exemple 5 %, 10 % et 15 %.
+- **Paiement** : les clients peuvent payer avec leur smartphone, avec les fournisseurs de paiement habituels, y compris PayPal, Google Pay et Apple Pay.
 
 servier.bar est un éditeur allemand, avec des clients en Allemagne et dans d'autres pays européens.
 
 ## Fonctionnalités de l'intégration
 
-Connecter servier.bar à HubRise permet à votre solution de commande de :
+Connecter servier.bar à HubRise permet à votre solution de commande de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Recevoir un catalogue de HubRise.

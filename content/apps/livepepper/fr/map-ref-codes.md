@@ -16,7 +16,7 @@ Cette page explique comment configurer manuellement les codes ref dans LivePeppe
 
 Chaque produit a un ou plusieurs SKUs. Chaque SKU, correspondant à des variantes sur LivePepper, dispose d'un code ref qui doit être associé à l'article correspondant dans votre logiciel de caisse.
 
-Pour mettre à jour le code ref de chaque variante, suivez ces étapes :
+Pour mettre à jour le code ref de chaque variante, suivez ces étapes :
 
 1. Dans votre back-office LivePepper, sélectionnez **Mon menu** > **Produits**.
 2. Sélectionnez le produit à mettre à jour.
@@ -40,7 +40,7 @@ Le tableau suivant fournit un aperçu de toutes ces fonctionnalités.
 | Composition | Un ingrédient compostant votre recette, présent par défaut qui peut être retiré du produit | Produit              | Retirer des cornichons d'un cheeseburger                   |
 | Option      | Service ou article optionnel ajouté au produit                                             | Catégorie            | Demander de couper la pizza                                |
 
-Pour mettre à jour le code ref des suppléments ou des variantes définis au niveau du produit, suivez ces étapes :
+Pour mettre à jour le code ref des suppléments ou des variantes définis au niveau du produit, suivez ces étapes :
 
 1. Sélectionnez le produit.
 2. Dans la section **Personnalisation**, sélectionnez l'élément que vous souhaitez mettre à jour.
@@ -51,7 +51,7 @@ Pour mettre à jour le code ref des suppléments ou des variantes définis au ni
      ![Association de codes ref - Code ref d'un ingrédient compostant votre recette](./images/016-ingredient-ref-code.png)
 4. Cliquez sur **Enregistrer** pour confirmer.
 
-Pour mettre à jour le code ref des suppléments, options ou variantes définis au niveau de la catégorie, suivez ces étapes :
+Pour mettre à jour le code ref des suppléments, options ou variantes définis au niveau de la catégorie, suivez ces étapes :
 
 1. Dans votre back-office LivePepper, sélectionnez **Mon menu** > **Produits**.
 2. Sélectionnez une catégorie.
@@ -67,7 +67,7 @@ Pour mettre à jour le code ref des suppléments, options ou variantes définis 
 
 Les promotions LivePepper fournissent des réductions sur les produits ou sur l'ensemble de la commande. Afin que les commandes avec promotions soient correctement transmises à votre logiciel de caisse et aux autres applications connectées à HubRise, il est essentiel que les codes ref soient corrects.
 
-Pour ajouter un code ref à une promotion, suivez ces étapes :
+Pour ajouter un code ref à une promotion, suivez ces étapes :
 
 1. Dans votre back-office LivePepper, sélectionnez **Mon menu** > **Promotions**.
 2. Trouvez la promotion à mettre à jour, puis sélectionnez **Modifier**.
@@ -78,7 +78,7 @@ Pour ajouter un code ref à une promotion, suivez ces étapes :
 
 ***
 
-**REMARQUE IMPORTANTE :** En fonction de votre logiciel de caisse, les promotions peuvent lui être transmises même sans code ref. Vérifiez que vos promotions sont configurées de façon à répondre aux exigences de votre logiciel de caisse.
+**REMARQUE IMPORTANTE :** En fonction de votre logiciel de caisse, les promotions peuvent lui être transmises même sans code ref. Vérifiez que vos promotions sont configurées de façon à répondre aux exigences de votre logiciel de caisse.
 
 ***
 
@@ -86,7 +86,7 @@ Pour ajouter un code ref à une promotion, suivez ces étapes :
 
 Les moyens de paiement que vous configurez dans LivePepper peuvent nécessiter un code ref. Pour le vérifier, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
 
-Pour ajouter un code ref à un moyen de paiement, suivez ces étapes :
+Pour ajouter un code ref à un moyen de paiement, suivez ces étapes :
 
 1. Dans votre back-office LivePepper, sélectionnez **Configuration** > **Moyens de paiement**.
 2. Cliquez sur le moyen de paiement à mettre à jour.
@@ -98,7 +98,7 @@ Pour ajouter un code ref à un moyen de paiement, suivez ces étapes :
 
 Les types de service tels que la livraison, le retrait ou la consommation sur place peuvent nécessiter un code ref. Pour le vérifier, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
 
-Pour ajouter un code ref à un type de service, suivez ces étapes :
+Pour ajouter un code ref à un type de service, suivez ces étapes :
 
 1. Dans votre back-office LivePepper, sélectionnez **Configuration** > **Paramètres livraison**.
 2. Sous **Méthodes de livraison**, trouvez le type de service à mettre à jour et ajoutez le code ref dans le champ **Code logiciel**.
@@ -108,7 +108,7 @@ Pour ajouter un code ref à un type de service, suivez ces étapes :
 
 Si des frais de livraison s'appliquent pour le service proposé, un code ref peut être requis. Pour le vérifier, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
 
-Pour ajouter un code ref à des frais de livraison, suivez ces étapes :
+Pour ajouter un code ref à des frais de livraison, suivez ces étapes :
 
 1. Dans votre back-office LivePepper, sélectionnez **Configuration** > **Paramètres livraison**.
 2. Sous **Frais de livraison**, saisissez le code ref dans le champ **Code logiciel des frais de livraison**.

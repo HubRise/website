@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -25,7 +25,7 @@ app_info:
 
 Store Factory est une solution de commande en ligne destinée aux restaurateurs et aux commerçants.
 
-Store Factory permet de créer un site e-commerce professionnel adapté au click & collect et à la livraison, et équipé des fonctionnalités suivantes :
+Store Factory permet de créer un site e-commerce professionnel adapté au click & collect et à la livraison, et équipé des fonctionnalités suivantes :
 
 - Une page d'accueil et un panier d'achat personnalisables.
 - Des fiches produits avec options, plusieurs vues produits, produits associés, recommandation à un ami, prix dynamique en fonction des options.
@@ -38,7 +38,7 @@ Store Factory est une solution dédiée au marché français.
 
 ## Fonctionnalités de l'intégration
 
-Connecter Store Factory à HubRise permet à votre solution de commande en ligne de :
+Connecter Store Factory à HubRise permet à votre solution de commande en ligne de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Envoyer les informations clients à HubRise.

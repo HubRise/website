@@ -10,7 +10,7 @@ meta:
 
 ***
 
-**REMARQUE IMPORTANTE :** Depuis juillet 2023, LivePepper ne propose plus d'inscription en libre-service. Pour demander un site de test, veuillez contacter directement LivePepper.
+**REMARQUE IMPORTANTE :** Depuis juillet 2023, LivePepper ne propose plus d'inscription en libre-service. Pour demander un site de test, veuillez contacter directement LivePepper.
 
 ***
 
@@ -18,7 +18,7 @@ LivePepper est un outil efficace pour tester l'envoi de commandes si votre appli
 
 Les étapes suivantes sont basées sur la connexion de votre application à HubRise.
 
-Pour créer des commandes de test avec LivePepper :
+Pour créer des commandes de test avec LivePepper :
 
 1. Inscrivez-vous pour un **essai gratuit** sur la [page d'accueil de LivePepper](https://www.livepepper.com).
 2. Connectez-vous à votre nouveau compte de back-office LivePepper.

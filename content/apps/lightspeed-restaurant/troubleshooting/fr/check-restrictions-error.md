@@ -12,7 +12,7 @@ Cette page explique comment résoudre les erreurs d'échec de commandes causées
 
 ## Erreur "Check Restrictions" (Vérifier les restrictions)
 
-Il peut arriver que des commandes envoyées à Lightspeed Restaurant échouent en affichant l'erreur suivante dans les [logs de Lightspeed Restaurant Bridge](/apps/lightspeed-restaurant/user-interface#operation) :
+Il peut arriver que des commandes envoyées à Lightspeed Restaurant échouent en affichant l'erreur suivante dans les [logs de Lightspeed Restaurant Bridge](/apps/lightspeed-restaurant/user-interface#operation) :
 
 ```json
 {
@@ -28,7 +28,7 @@ Le message d'erreur du champ `reason` précise l'article ayant généré l'erreu
 
 ## Supprimer les restrictions de vente
 
-Pour supprimer les restrictions de vente d'un produit, suivez ces étapes :
+Pour supprimer les restrictions de vente d'un produit, suivez ces étapes :
 
 1. Connectez-vous à votre [back-office Lightspeed](https://console.ikentoo.com).
 1. Sélectionnez **Gestion des menus**, puis sélectionnez **Articles**.

@@ -5,7 +5,7 @@ position: 2
 layout: documentation
 meta:
   title: Connexion à HubRise | Hop Delivery | HubRise
-  description: "Processus de connexion de Hop Delivery à HubRise : étapes à suivre pour recevoir vos commandes Hop Delivery dans votre logiciel de caisse."
+  description: "Processus de connexion de Hop Delivery à HubRise : étapes à suivre pour recevoir vos commandes Hop Delivery dans votre logiciel de caisse."
 ---
 
 ---
@@ -18,7 +18,7 @@ Seuls les utilisateurs administrateurs de Hop Delivery peuvent connecter et déc
 
 ## Connecter Hop Delivery
 
-Pour établir la connexion entre Hop Delivery et HubRise :
+Pour établir la connexion entre Hop Delivery et HubRise :
 
 1. Depuis le back office Hop Delivery, dans le menu de gauche, cliquez sur **Paramètres**, puis sur **HubRise**.
 
@@ -30,7 +30,7 @@ Pour établir la connexion entre Hop Delivery et HubRise :
 
 ## Déconnecter Hop Delivery
 
-Pour déconnecter Hop Delivery de HubRise, suivez ces étapes :
+Pour déconnecter Hop Delivery de HubRise, suivez ces étapes :
 
 1. Depuis le back office Hop Delivery, dans le menu de gauche, cliquez sur **Paramètres**, puis sur **HubRise**.
 

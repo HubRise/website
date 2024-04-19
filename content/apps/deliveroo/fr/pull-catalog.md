@@ -10,7 +10,7 @@ meta:
 
 Avec Deliveroo Bridge, vous pouvez importer votre menu Deliveroo dans un catalogue HubRise.
 
-Cette fonctionnalité peut être utile si vous souhaitez :
+Cette fonctionnalité peut être utile si vous souhaitez :
 
 - Créer une copie de votre menu Deliveroo.
 - Modifier votre menu en utilisant le Catalog Manager de HubRise pour inclure des codes ref, par exemple. Pour plus d'informations, voir [Catalog Manager](/apps/catalog-manager/overview).
@@ -18,7 +18,7 @@ Cette fonctionnalité peut être utile si vous souhaitez :
 
 ## Importer un menu depuis Deliveroo
 
-Pour importer votre menu Deliveroo dans un catalogue HubRise, suivez ces étapes :
+Pour importer votre menu Deliveroo dans un catalogue HubRise, suivez ces étapes :
 
 1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com).
 1. Sélectionnez le compte HubRise et le point de vente connecté à votre restaurant Deliveroo.
@@ -29,7 +29,7 @@ Pour importer votre menu Deliveroo dans un catalogue HubRise, suivez ces étapes
 
 ---
 
-**REMARQUE IMPORTANTE :** Cette opération va écraser le catalogue HubRise connecté à Deliveroo Bridge.
+**REMARQUE IMPORTANTE :** Cette opération va écraser le catalogue HubRise connecté à Deliveroo Bridge.
 
 ---
 

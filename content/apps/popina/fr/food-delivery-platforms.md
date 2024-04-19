@@ -18,7 +18,7 @@ Pour plus d'informations, consultez les pages d'aide de ces plateformes sur notr
 
 Popina utilise le code ref de type de service pour identifier la plateforme à l'origine d'une commande.
 
-Popina reconnaît les codes suivants : `UBEREATS`, `DELIVEROO` et `JUSTEAT`. Vous pouvez ajouter un texte libre après le code ref, pour identifier une marque virtuelle. Par exemple, `UBEREATS-Pizza30`. Pour plus d'informations sur les types de service, consultez [Types de service](/apps/popina/receive-orders#service-types).
+Popina reconnaît les codes suivants : `UBEREATS`, `DELIVEROO` et `JUSTEAT`. Vous pouvez ajouter un texte libre après le code ref, pour identifier une marque virtuelle. Par exemple, `UBEREATS-Pizza30`. Pour plus d'informations sur les types de service, consultez [Types de service](/apps/popina/receive-orders#service-types).
 
 ## Deliveroo
 

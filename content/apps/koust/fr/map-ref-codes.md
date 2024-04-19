@@ -12,7 +12,7 @@ Une fois Koust connecté à HubRise, les commandes provenant de HubRise sont imp
 
 ## Importer le catalogue
 
-À tout moment, vous pouvez importer manuellement le catalogue depuis HubRise :
+À tout moment, vous pouvez importer manuellement le catalogue depuis HubRise :
 
 1. Ouvrez votre tableau de bord Koust, et dans la barre de menu, cliquez sur le nom de votre entreprise.
 1. Dans le menu déroulant, sélectionnez **Paramètres**. La page **Paramètres de l'établissement** s'affiche.
@@ -25,13 +25,13 @@ Une fois Koust connecté à HubRise, les commandes provenant de HubRise sont imp
 
 ---
 
-**REMARQUE IMPORTANTE :** Le catalogue est importé automatiquement dans Koust au moment de la connexion avec HubRise.
+**REMARQUE IMPORTANTE :** Le catalogue est importé automatiquement dans Koust au moment de la connexion avec HubRise.
 
 ---
 
 ## Produits {#products}
 
-Un produit dans HubRise correspond à un article dans Koust. Pour retrouver le code ref d'un article, suivez ces étapes :
+Un produit dans HubRise correspond à un article dans Koust. Pour retrouver le code ref d'un article, suivez ces étapes :
 
 1. Dans le menu latéral, sélectionnez **Ventes - Conso.** > **Historique ventes**.
    ![Associer les codes ref - Liste des articles](./images/010-koust-item-list.png)

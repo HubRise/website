@@ -67,7 +67,7 @@ Cette page vous permet de personnaliser le comportement de Deliveroo Bridge. Pou
 
 Pour accéder à la page d'actions, cliquez sur **Actions** en haut de l'écran. Si le lien n'est pas visible, terminez d'abord la configuration de Deliveroo Bridge.
 
-Depuis la page **Actions**, vous pouvez effectuer les actions suivantes :
+Depuis la page **Actions**, vous pouvez effectuer les actions suivantes :
 
 - **Envoyer le catalogue** : envoie le catalogue vers Deliveroo. Pour plus d'informations, voir [Envoyer le catalogue](/apps/deliveroo/push-catalog).
 - **Récupérer le catalogue**: importe le menu depuis Deliveroo vers un catalogue HubRise. Pour plus d'informations, voir [Récupérer le catalogue](/apps/deliveroo/pull-catalog).

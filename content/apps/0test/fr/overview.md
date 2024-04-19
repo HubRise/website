@@ -19,13 +19,13 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Ceci est une page de test.
+**REMARQUE IMPORTANTE :** Ceci est une page de test.
 
 ---
 
 ---
 
-**REMARQUE IMPORTANTE :** Cette documentation est disponible <Link href="/apps/0test" addLocalePrefix={false}>en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** Cette documentation est disponible <Link href="/apps/0test" addLocalePrefix={false}>en anglais uniquement</Link>.
 
 ---
 
@@ -37,24 +37,24 @@ Acme est conforme à la loi française anti-fraude 2018.
 
 ## Fonctionnalités de l'intégration {#integration-features}
 
-Connecter Acme à HubRise permet à votre logiciel de caisse de :
+Connecter Acme à HubRise permet à votre logiciel de caisse de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Envoyer un catalogue à HubRise.
 
 ---
 
-**REMARQUE IMPORTANTE :** L'envoi des commandes et des informations clients à HubRise sera bientôt possible. Contactez Acme pour plus d'information à ce sujet.
+**REMARQUE IMPORTANTE :** L'envoi des commandes et des informations clients à HubRise sera bientôt possible. Contactez Acme pour plus d'information à ce sujet.
 
 ---
 
 Acme peut être connecté à HubRise depuis le back-office de Acme.
 
-Pour créer des liens locaux, utiliser le chemin de fichier : [lien local par chemin de fichier](/apps/0test/connect-hubrise).
+Pour créer des liens locaux, utiliser le chemin de fichier : [lien local par chemin de fichier](/apps/0test/connect-hubrise).
 
-Les liens locaux peuvent aussi contenir des ancres : [lien local avec ancre](/apps/0test/connect-hubrise#connect)
+Les liens locaux peuvent aussi contenir des ancres : [lien local avec ancre](/apps/0test/connect-hubrise#connect)
 
-Un lien local peut simplement être une ancre : [ancre seule](#description)
+Un lien local peut simplement être une ancre : [ancre seule](#description)
 
 ## Pourquoi se connecter ?
 

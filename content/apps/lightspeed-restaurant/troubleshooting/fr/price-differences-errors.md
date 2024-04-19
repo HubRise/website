@@ -12,7 +12,7 @@ Cette page décrit les scénarios possibles lorsque le montant total payé par l
 
 ## Montant du paiement supérieur au montant dû
 
-Lightspeed recalcule le montant dû en ajoutant le prix de tous les articles de la commande. Lorsque le montant total du paiement dans la commande est supérieur au montant dû, Lightspeed rejette la commande avec un message d'erreur similaire à celui-ci :
+Lightspeed recalcule le montant dû en ajoutant le prix de tous les articles de la commande. Lorsque le montant total du paiement dans la commande est supérieur au montant dû, Lightspeed rejette la commande avec un message d'erreur similaire à celui-ci :
 
 ```json
 {

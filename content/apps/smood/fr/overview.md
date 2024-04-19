@@ -29,7 +29,7 @@ En plus de ses services standards, Smood propose aussi un service de livraison e
 
 ## Fonctionnalités de l'intégration
 
-Connecter Smood permet à votre plateforme de commande et de livraison de :
+Connecter Smood permet à votre plateforme de commande et de livraison de :
 
 - Envoyer les commandes à HubRise, y compris le statut de la commande.
 - Envoyer les informations clients à HubRise.

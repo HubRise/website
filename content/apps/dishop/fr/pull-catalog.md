@@ -8,7 +8,7 @@ meta:
   description: Comment importer votre catalogue HubRise dans Dishop.
 ---
 
-Pour importer votre catalogue HubRise dans Dishop, suivez ces étapes :
+Pour importer votre catalogue HubRise dans Dishop, suivez ces étapes :
 
 1. Depuis le back office Dishop, dans le menu de gauche, sélectionnez **Produits**.
 1. En haut à droite, selon votre interface, cliquez sur **Synchronisation** > **Synchroniser avec HubRise** ou directement sur **Synchroniser avec HubRise**.
@@ -19,6 +19,6 @@ Si vous ne voyez que le lien **Synchroniser les magasins**, contactez le support
 
 ---
 
-**REMARQUE IMPORTANTE** : Cette opération va remplacer votre catalogue Dishop actuel.
+**REMARQUE IMPORTANTE** : Cette opération va remplacer votre catalogue Dishop actuel.
 
 ---

@@ -12,7 +12,7 @@ Une fois votre logiciel de caisse LEO2 connecté à HubRise, vous devez configur
 
 LEO2 identifie chaque élément d'une commande par un code ref. Vous devez indiquer les codes ref fournis par LEO2 dans vos autres applications, afin que les commandes puissent être réceptionnées.
 
-Il y a deux façons de procéder :
+Il y a deux façons de procéder :
 
 - Vous pouvez exporter le catalogue LEO2 vers HubRise, puis importer ce catalogue dans vos autres applications.
 - Ou vous pouvez saisir manuellement les codes ref dans vos autres applications.
@@ -21,7 +21,7 @@ Seules certaines applications permettent l'import d'un catalogue depuis HubRise.
 
 ## Exporter le catalogue {#export-catalog}
 
-Pour exporter manuellement un catalogue vers HubRise, suivez ces étapes :
+Pour exporter manuellement un catalogue vers HubRise, suivez ces étapes :
 
 1. Depuis l'écran d'accueil, cliquez sur **Gestion**.
 1. Entrez le mot de passe que vous avez choisi lors de l'installation de LEO2. Par défaut, ce mot de passe est **1234**.
@@ -35,7 +35,7 @@ Vous devez maintenant importer le catalogue HubRise dans vos autres applications
 
 ## Produits {#products}
 
-Pour retrouver le code ref d'un produit, suivez ces étapes :
+Pour retrouver le code ref d'un produit, suivez ces étapes :
 
 1. Depuis l'écran d'accueil, cliquez sur **Gestion**.
 1. Entrez le mot de passe que vous avez choisi lors de l'installation de LEO2. Par défaut, ce mot de passe est **1234**.
@@ -53,12 +53,12 @@ LEO2 ne permet pas de créer de SKU. Pour remplacer cette fonctionnalité, vous 
 
 Les options dans HubRise correspondent aux messages cuisine dans LEO2.
 
-LEO2 supporte deux types de messages cuisine :
+LEO2 supporte deux types de messages cuisine :
 
 - Les messages simples, réservés aux options gratuites.
 - Les messages produits, qui peuvent être utilisés pour les options gratuites ou payantes.
 
-Pour retrouver le code ref d'une option, suivez ces étapes :
+Pour retrouver le code ref d'une option, suivez ces étapes :
 
 1. Depuis l'écran d'accueil, cliquez sur **Gestion**.
 1. Entrez le mot de passe que vous avez choisi lors de l'installation de LEO2. Par défaut, ce mot de passe est **1234**.
@@ -79,7 +79,7 @@ Les messages produits sont créés avec les boutons **Insère Produit Prix**, **
 
 ## Promotions
 
-Les promotions dans HubRise correspondent aux menus dans LEO2. Les lignes de promotion correspondent aux choix de menu. Pour retrouver le code ref et les choix de menu dans LEO2 :
+Les promotions dans HubRise correspondent aux menus dans LEO2. Les lignes de promotion correspondent aux choix de menu. Pour retrouver le code ref et les choix de menu dans LEO2 :
 
 1. Ouvrez le produit correspondant au menu, en suivant les mêmes étapes que pour un [produit](/apps/leo2/map-ref-codes#products).
 1. Le code ref du menu s'affiche en haut à droite de la fenêtre **FICHE PRODUIT**, dans le champ **Clé unique**.
@@ -98,7 +98,7 @@ Les frais de livraison ou de service doivent être créés comme des produits da
 
 ## Méthodes de paiement
 
-Les méthodes de paiement dans HubRise correspondent aux modes de règlement dans LEO2. Pour retrouver leur code ref, suivez ces étapes :
+Les méthodes de paiement dans HubRise correspondent aux modes de règlement dans LEO2. Pour retrouver leur code ref, suivez ces étapes :
 
 1. Depuis l'écran d'accueil, cliquez sur **Gestion**.
 1. Entrez le mot de passe que vous avez choisi lors de l'installation de LEO2. Par défaut, ce mot de passe est **1234**.
@@ -110,7 +110,7 @@ Les méthodes de paiement dans HubRise correspondent aux modes de règlement dan
 
 Les types de service dans HubRise sont **Sur place**, **Emporter** et **Livraison**. Chaque type de service doit être associé à un tarif dans LEO2.
 
-Pour associer un type de service à un tarif, suivez ces étapes :
+Pour associer un type de service à un tarif, suivez ces étapes :
 
 1. Depuis l'écran d'accueil de LEO2, cliquez sur **Gestion**.
 1. Entrez le mot de passe que vous avez choisi lors de l'installation de LEO2. Par défaut, ce mot de passe est **1234**.
@@ -123,7 +123,7 @@ Pour associer un type de service à un tarif, suivez ces étapes :
 
 Les codes refs des types de service dans HubRise correspondent aux vendeurs dans LEO2. Les vendeurs permettent de connaître la provenance des commandes. Selon vos besoins, vous pouvez par exemple créer un vendeur "Uber Eats" et un vendeur "WooCommerce".
 
-Une fois le vendeur créé, vous pouvez trouver son code ref en suivant les étapes suivantes :
+Une fois le vendeur créé, vous pouvez trouver son code ref en suivant les étapes suivantes :
 
 1. Depuis l'écran d'accueil, cliquez sur **Gestion**.
 1. Entrez le mot de passe que vous avez choisi lors de l'installation de LEO2. Par défaut, ce mot de passe est **1234**.

@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -31,14 +31,14 @@ Food Report est accessible sur ordinateur, tablette ou smartphone.
 
 ## Fonctionnalités de l'intégration
 
-Connecter Food Report à HubRise permet à votre solution d'analyse de données de :
+Connecter Food Report à HubRise permet à votre solution d'analyse de données de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.
 
 ---
 
-**REMARQUE IMPORTANTE :** La réception d'un catalogue produit de HubRise sera bientôt possible. Contactez Food Report pour plus d'information à ce sujet.
+**REMARQUE IMPORTANTE :** La réception d'un catalogue produit de HubRise sera bientôt possible. Contactez Food Report pour plus d'information à ce sujet.
 
 ---
 

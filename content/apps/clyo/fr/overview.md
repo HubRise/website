@@ -18,7 +18,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration est en cours de rédaction.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration est en cours de rédaction.
 
 ---
 
@@ -32,7 +32,7 @@ Clyo Systems est conforme à la loi française anti-fraude 2018.
 
 ## Fonctionnalités de l'intégration
 
-Connecter Clyo à HubRise permet à votre logiciel de caisse de :
+Connecter Clyo à HubRise permet à votre logiciel de caisse de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.

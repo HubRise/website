@@ -12,12 +12,12 @@ meta:
 
 ### Informations personnelles collectées par l'Application
 
-Lorsque vous installez l'Applications, nous sommes automatiquement en mesure d'accéder à certains types d'informations de votre compte Shopify :
+Lorsque vous installez l'Applications, nous sommes automatiquement en mesure d'accéder à certains types d'informations de votre compte Shopify :
 
 - Vos commandes
 - Votre catalogue de produits
 
-De plus, une fois que vous avez installé l'Application, nous collectons les types de données clients suivants :
+De plus, une fois que vous avez installé l'Application, nous collectons les types de données clients suivants :
 
 - Nom
 - Adresse de livraison
@@ -51,6 +51,6 @@ Lorsque vos clients passent une commande via le Site, nous conservons leurs info
 Cette politique de confidentialité pourra être mise à jour de temps en temps afin de refléter par exemple des changements dans nos pratiques ou pour d'autres raisons opérationnelles, juridiques ou réglementaires.
 
 Nous contacter
-Pour plus d'informations sur nos pratiques en matière de confidentialité, pour toute question, ou si vous souhaitez déposer une plainte, veuillez nous contacter par e-mail à contact\@hubrise.com ou par courrier en utilisant les coordonnées ci-dessous :
+Pour plus d'informations sur nos pratiques en matière de confidentialité, pour toute question, ou si vous souhaitez déposer une plainte, veuillez nous contacter par e-mail à contact\@hubrise.com ou par courrier en utilisant les coordonnées ci-dessous :
 
 HubRise - Business Pôle entrée A - 1047 route des Dolines - Allée Pierre Ziller - 06560 Valbonne

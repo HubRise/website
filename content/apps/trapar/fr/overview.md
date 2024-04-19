@@ -16,6 +16,6 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Cette documentation est disponible <Link href="/apps/trapar" addLocalePrefix={false}>en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** Cette documentation est disponible <Link href="/apps/trapar" addLocalePrefix={false}>en anglais uniquement</Link>.
 
 ---

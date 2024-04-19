@@ -15,7 +15,7 @@ meta:
 
 ## Connecter Adipos
 
-Pour connecter Adipos à HubRise, procédez comme suit :
+Pour connecter Adipos à HubRise, procédez comme suit :
 
 1. Créez un compte HubRise. Pour plus d'information, consultez notre [Guide de démarrage](/docs/get-started).
 1. Donnez accès à votre compte à l'équipe support de Adipos. Pour plus d'information, voir [Donner accès au support de Adipos](#give-access).

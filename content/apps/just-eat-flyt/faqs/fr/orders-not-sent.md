@@ -24,7 +24,7 @@ Les commandes doivent être acceptées soit manuellement sur l'OrderPad, soit au
 
 ### Commandes non envoyées à la cuisine
 
-Pour les marchés fonctionnant sur la technologie Takeaway.com, les commandes doivent être envoyées à la cuisine pour être envoyées à HubRise. Cela s'applique sur les marchés suivants :
+Pour les marchés fonctionnant sur la technologie Takeaway.com, les commandes doivent être envoyées à la cuisine pour être envoyées à HubRise. Cela s'applique sur les marchés suivants :
 
 - Just-Eat.ch
 - Just-Eat.fr

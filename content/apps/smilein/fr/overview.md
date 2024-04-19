@@ -21,7 +21,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -33,21 +33,21 @@ Les utilisateurs peuvent modifier leur carte, personnaliser leur site et gérer 
 
 smilein est aussi une plateforme de gestion de contenu, offrant du contenu (vidéos, presse, jeux) et des services pour permettre aux enseignes de mieux connaître leurs clients, de les intégrer dans des programmes de fidélité et d'alimenter leurs bases de données clients.
 
-La suite smilein est composée de deux logiciels :
+La suite smilein est composée de deux logiciels :
 
 - smilein WAITER, dédié à la production, permet aux restaurateurs de gérer leurs commandes et d'administrer le service.
 - smilein STUDIO, outil de design intégré, permet aux restaurateurs de mettre à jour le site internet.
 
 ## Fonctionnalités de l'intégration
 
-L'intégration de smilein avec HubRise permet de :
+L'intégration de smilein avec HubRise permet de :
 
 - Envoyer les commandes vers HubRise.
 - Envoyer les données clients vers HubRise.
 
 ---
 
-**REMARQUE IMPORTANTE :** smilein pourra bientôt importer les catalogues HubRise. Pour plus d'informations, contactez l'éditeur.
+**REMARQUE IMPORTANTE :** smilein pourra bientôt importer les catalogues HubRise. Pour plus d'informations, contactez l'éditeur.
 
 ---
 

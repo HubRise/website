@@ -27,7 +27,7 @@ Delicity est présent dans plusieurs grandes villes en France.
 
 ## Fonctionnalités de l'intégration
 
-Connecter Delicity à HubRise permet à votre plateforme de commande en ligne :
+Connecter Delicity à HubRise permet à votre plateforme de commande en ligne :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Recevoir un catalogue de HubRise.

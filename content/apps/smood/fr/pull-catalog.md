@@ -24,7 +24,7 @@ Pour plus d'informations sur les catalogues HubRise, voir la rubrique [Catalogue
 
 ### Sélectionnez la variante de catalogue à récupérer
 
-Si vous créez une variante de catalogue pour Smood sur HubRise, vous devez la sélectionner depuis le back-office Smood avant de récupérer votre catalogue. Suivez ces étapes :
+Si vous créez une variante de catalogue pour Smood sur HubRise, vous devez la sélectionner depuis le back-office Smood avant de récupérer votre catalogue. Suivez ces étapes :
 
 1. Connectez-vous à votre [back-office Smood](https://manager.smood.ch).
 1. Sélectionnez le restaurant.
@@ -36,7 +36,7 @@ La variante de catalogue sélectionnée est utilisée à la fois pour la récup�
 
 ### Récupérer le catalogue manuellement {#manual-pull}
 
-Une fois que votre catalogue a été alimenté dans HubRise, vous pouvez l'envoyer dans votre restaurant Smood en suivant ces étapes :
+Une fois que votre catalogue a été alimenté dans HubRise, vous pouvez l'envoyer dans votre restaurant Smood en suivant ces étapes :
 
 1. Connectez-vous à votre [back-office Smood](https://manager.smood.ch).
 1. Sélectionnez le restaurant.
@@ -62,7 +62,7 @@ Les produits avec un stock de `0` dans HubRise sont marqués comme indisponibles
 
 ### Mise à jour automatique de l'inventaire
 
-Smood peut mettre à jour automatiquement la disponibilité de vos produits lorsque votre inventaire est mis à jour dans HubRise. Par défaut, cette option est désactivée. Pour l'activer, suivez ces étapes :
+Smood peut mettre à jour automatiquement la disponibilité de vos produits lorsque votre inventaire est mis à jour dans HubRise. Par défaut, cette option est désactivée. Pour l'activer, suivez ces étapes :
 
 1. Connectez-vous à votre [back-office Smood](https://manager.smood.ch).
 1. Sélectionnez le restaurant pour lequel vous souhaitez modifier les produits.
@@ -71,7 +71,7 @@ Smood peut mettre à jour automatiquement la disponibilité de vos produits lors
 
 ### Mise à jour manuelle de l'inventaire
 
-Pour mettre à jour manuellement votre inventaire Smood, suivez ces étapes :
+Pour mettre à jour manuellement votre inventaire Smood, suivez ces étapes :
 
 1. Connectez-vous à votre [back-office Smood](https://manager.smood.ch).
 1. Sélectionnez le restaurant pour lequel vous souhaitez modifier les produits.
@@ -90,11 +90,11 @@ Smood ne prend en charge qu'un niveau de catégories. Si vous utilisez des sous-
 
 ### Produits et SKU
 
-Pour chaque SKU HubRise, Smood crée un produit avec les informations suivantes :
+Pour chaque SKU HubRise, Smood crée un produit avec les informations suivantes :
 
-- `product.name` et `skus.name` : nom du produit. Par exemple, si le nom du produit HubRise est `Pizza margherita` et le nom du SKU est `33 cm`, Smood crée un produit nommé `Pizza margherita 33 cm`.
+- `product.name` et `skus.name` : nom du produit. Par exemple, si le nom du produit HubRise est `Pizza margherita` et le nom du SKU est `33 cm`, Smood crée un produit nommé `Pizza margherita 33 cm`.
 - `product.description` : description du produit.
-- `product.image_ids` : ID des images associées au produit.
+- `product.image_ids` : ID des images associées au produit.
 - `skus.ref` : code ref du SKU, qui sera transmis dans les commandes.
 - `skus.price` : prix correspondant au SKU.
 
@@ -105,7 +105,7 @@ Notez que Smood ne prend pas en charge de façon native les produits avec des SK
 Pour chaque liste d'options du catalogue, Smood utilise les informations suivantes :
 
 - `name` : nom de la liste d'options.
-- `min_selections` et `max_selections` : nombre minimum et maximum d'options qui peuvent être sélectionnées.
+- `min_selections` et `max_selections` : nombre minimum et maximum d'options qui peuvent être sélectionnées.
 
 Pour chaque option d'une liste, Smood utilise les informations suivantes :
 
@@ -117,19 +117,19 @@ Pour chaque option d'une liste, Smood utilise les informations suivantes :
 
 Dans HubRise, les promotions s'appliquent à un ensemble spécifique de produits. Par exemple, une promotion **Déjeuner** peut inclure une pizza et un dessert.
 
-Les promotions dans HubRise sont associées à des produits avec options dans Smood. Smood utilisera les informations HubRise suivantes :
+Les promotions dans HubRise sont associées à des produits avec options dans Smood. Smood utilisera les informations HubRise suivantes :
 
 - `ref` : code ref du produit.
 - `name` : nom du produit.
 - `description` : description du produit.
-- `lines[].label` : le cas échéant, nom du groupe d'options.
-- `lines[].skus[]` : options du groupe.
+- `lines[].label` : le cas échéant, nom du groupe d'options.
+- `lines[].skus[]` : options du groupe.
 
 Les options des produits de la promotion sont ignorées. Par exemple, si une promotion inclut une pizza, les clients ne peuvent pas choisir la garniture.
 
 ---
 
-**REMARQUE IMPORTANTE** : Smood ignore les options des produits dans les promotions. De plus, si une option est requise pour un produit, la promotion ne sera pas importée.
+**REMARQUE IMPORTANTE** : Smood ignore les options des produits dans les promotions. De plus, si une option est requise pour un produit, la promotion ne sera pas importée.
 
 ---
 

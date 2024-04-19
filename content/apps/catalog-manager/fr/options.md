@@ -20,7 +20,7 @@ Sur la page des listes d'options, vous pouvez voir le nombre de SKU ou de produi
 
 Des listes d'options peuvent être ajoutées au produit de base s'il n'y a pas de variante de produit, ou à chaque variante de produit le cas échéant.
 
-Les listes d'options doivent être créées avant de pouvoir être associées aux produits. Pour créer une liste d'options, cliquez sur **Listes d'options** dans le menu de gauche, puis sélectionnez **Nouvelle liste d'options**. Les informations suivantes sont requises :
+Les listes d'options doivent être créées avant de pouvoir être associées aux produits. Pour créer une liste d'options, cliquez sur **Listes d'options** dans le menu de gauche, puis sélectionnez **Nouvelle liste d'options**. Les informations suivantes sont requises :
 
 - Nom
 - Nombre minimum d'options qu'un client peut sélectionner. La valeur par défaut est `0`.
@@ -31,7 +31,7 @@ N'oubliez pas que les listes d'options sont associées à des produits spécifiq
 
 ![Détails de la liste d'options Catalog Manager](./images/004-2x-option-list-details.png)
 
-Après avoir créé une ou plusieurs listes d'options, vous pouvez les associer à vos produits :
+Après avoir créé une ou plusieurs listes d'options, vous pouvez les associer à vos produits :
 
 1. Sélectionnez l'onglet de la variation de produit à laquelle vous souhaitez ajouter des options, par exemple `Petite classique`.
 2. Cliquez sur **Associer une liste d'options**, puis sélectionnez la liste d'options à attacher dans la liste déroulante.

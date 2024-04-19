@@ -30,7 +30,7 @@ Autres fonctionnalités offertes par SuperDigital.fr :
 
 ## Fonctionnalités de l'intégration
 
-Connecter SuperDigital.fr à HubRise permet à votre solution de commande en ligne de :
+Connecter SuperDigital.fr à HubRise permet à votre solution de commande en ligne de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Envoyer les informations clients à HubRise.

@@ -16,7 +16,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -30,7 +30,7 @@ Loca'Touch met régulièrement à jour son logiciel système pour garantir un me
 
 ## Fonctionnalités de l'intégration
 
-Connecter Loca'Touch à HubRise permet à votre borne de commande en libre-service de :
+Connecter Loca'Touch à HubRise permet à votre borne de commande en libre-service de :
 
 - Envoyer les commandes de HubRise, dont les statuts de commande.
 - Envoyer les informations clients de HubRise.
@@ -40,7 +40,7 @@ Connecter Loca'Touch à HubRise permet à votre borne de commande en libre-servi
 
 ---
 
-**REMARQUE IMPORTANTE :** La réception des commandes et des informations clients reçues dans HubRise sera bientôt possible. Une fois cette nouvelle fonctionnalité d'intégration disponible, vous pourrez utiliser Loca'Touch pour centraliser, gérer et imprimer des commandes provenant d'autres systèmes connectés à votre compte HubRise, y compris les plateformes de commande et de livraison de repas. Contactez Loca'Touch pour plus d'information à ce sujet.
+**REMARQUE IMPORTANTE :** La réception des commandes et des informations clients reçues dans HubRise sera bientôt possible. Une fois cette nouvelle fonctionnalité d'intégration disponible, vous pourrez utiliser Loca'Touch pour centraliser, gérer et imprimer des commandes provenant d'autres systèmes connectés à votre compte HubRise, y compris les plateformes de commande et de livraison de repas. Contactez Loca'Touch pour plus d'information à ce sujet.
 
 ---
 

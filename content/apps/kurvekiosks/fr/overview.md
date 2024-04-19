@@ -19,7 +19,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE** : Une documentation complète de cette intégration est en cours de rédaction.
+**REMARQUE IMPORTANTE** : Une documentation complète de cette intégration est en cours de rédaction.
 
 ---
 
@@ -31,7 +31,7 @@ Kurve Kiosks observe et essaie de comprendre pleinement les comportements des cl
 
 ## Fonctionnalités de l'intégration
 
-La connexion de Kurve Kiosks à HubRise permet à votre borne de commande de :
+La connexion de Kurve Kiosks à HubRise permet à votre borne de commande de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Recevoir un catalogue de HubRise, avec support des variantes.

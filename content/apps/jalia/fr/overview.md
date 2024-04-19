@@ -18,13 +18,13 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
 ## Description
 
-Jalia est une caisse enregistreuse pour iPad, éditée par JDC SA, qui dispose de plus de 300 fonctionnalités et accessoires connectés. Facile à utiliser, moderne, et connectée, Jalia comprend notamment :
+Jalia est une caisse enregistreuse pour iPad, éditée par JDC SA, qui dispose de plus de 300 fonctionnalités et accessoires connectés. Facile à utiliser, moderne, et connectée, Jalia comprend notamment :
 
 - Site de click & collect et commande en ligne.
 - Cahier de réservation digital.
@@ -35,9 +35,9 @@ Jalia est une caisse enregistreuse pour iPad, éditée par JDC SA, qui dispose d
 - Gestion de l'hygiène HACCP.
 - Paiement à table par QR code.
 - Gestion des plannings des employés.
-- Optimisation de la rotation des tables avec la télécommande tout-en-un : prise de commande et paiement.
+- Optimisation de la rotation des tables avec la télécommande tout-en-un : prise de commande et paiement.
 
-Jalia est distribué par JDC SA, entreprise française spécialisée dans les solutions de caisse et de paiement depuis 1989. Ses conseillers commerciaux et techniciens, présents sur tout le territoire, viennent à la rencontre des clients ou les reçoivent dans leurs agences. La proximité permet de bénéficier de :
+Jalia est distribué par JDC SA, entreprise française spécialisée dans les solutions de caisse et de paiement depuis 1989. Ses conseillers commerciaux et techniciens, présents sur tout le territoire, viennent à la rencontre des clients ou les reçoivent dans leurs agences. La proximité permet de bénéficier de :
 
 - Conseils et accompagnement.
 - Devis sur-mesure.
@@ -50,7 +50,7 @@ Jalia, conçu pour le marché français, est conforme à la loi française anti-
 
 ## Fonctionnalités de l'intégration
 
-Connecter Jalia à HubRise permet à votre logiciel de caisse de :
+Connecter Jalia à HubRise permet à votre logiciel de caisse de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.

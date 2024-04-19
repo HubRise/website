@@ -21,13 +21,13 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
 ## Description
 
-Utilisé principalement au Royaume-Uni, en Australie et en Nouvelle-Zélande, Next Order propose une suite logicielle conçue pour la restauration assise, la restauration livrée et le service de restauration à table. Basé sur le cloud, facile à utiliser et à naviguer, Next Order peut être installé sur n'importe quel type d'appareil. Riche en fonctionnalités, la logiciel de caisse Next Order permet de rationaliser les opérations grâce aux fonctionnalités suivantes :
+Utilisé principalement au Royaume-Uni, en Australie et en Nouvelle-Zélande, Next Order propose une suite logicielle conçue pour la restauration assise, la restauration livrée et le service de restauration à table. Basé sur le cloud, facile à utiliser et à naviguer, Next Order peut être installé sur n'importe quel type d'appareil. Riche en fonctionnalités, la logiciel de caisse Next Order permet de rationaliser les opérations grâce aux fonctionnalités suivantes :
 
 - Une solution de commande en ligne en marque marque blanche.
 - Un programme de fidélité et des outils e-marketing intégrés.
@@ -39,7 +39,7 @@ Avec des bureaux à Melbourne, Manille et Bangalore, Next Order offre une assist
 
 ## Fonctionnalités de l'intégration
 
-Connecter Next Order à HubRise permet à votre logiciel de caisse de :
+Connecter Next Order à HubRise permet à votre logiciel de caisse de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.

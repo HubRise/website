@@ -12,7 +12,7 @@ Une fois votre logiciel de caisse UltimaPOS connecté à HubRise, vous devez con
 
 UltimaPOS identifie chaque élément d'une commande par un code ref. Vous devez indiquer les codes ref fournis par UltimaPOS dans vos autres applications, afin que les commandes puissent être réceptionnées.
 
-Il y a deux façons de procéder :
+Il y a deux façons de procéder :
 
 - Vous pouvez exporter le catalogue UltimaPOS vers HubRise, puis importer ce catalogue dans vos autres applications. Voir [Exporter le catalogue vers HubRise](menu)
 - Ou vous pouvez saisir manuellement les codes ref dans vos autres applications.
@@ -21,7 +21,7 @@ Seules certaines applications permettent l'import d'un catalogue depuis HubRise.
 
 ## Produits {#products}
 
-Pour retrouver le code ref d'un produit, suivez ces étapes :
+Pour retrouver le code ref d'un produit, suivez ces étapes :
 
 1. Depuis l'écran d'accueil d'UltimaPOS, allez dans **Programmation**, puis **Articles**.
 2. Dans la section **Paramètres Articles**, cliquez sur **Articles**.
@@ -48,12 +48,12 @@ Pour retrouver le code ref d'un type de frais, suivez les étapes de la section 
 
 Les promotions dans HubRise sont les offres spéciales qui s'appliquent à certains articles.
 
-Il s'agit des formules et des promotions dans UltimaPOS :
+Il s'agit des formules et des promotions dans UltimaPOS :
 
 - Les formules sur UltimaPOS sont des articles dont le prix est fixe, liés à d'autres produits.
 - Les promotions sur UltimaPOS proposent davantage de possibilités, dont la restriction sur le jour et l'heure, la possibilité d'offrir le produit le moins cher ou de changer le prix d'un produit, mais elles n'ont pas de codes ref et ne peuvent pas être associées dans HubRise.
 
-Pour retrouver le code ref d'une formule dans UltimaPOS, suivez ces étapes :
+Pour retrouver le code ref d'une formule dans UltimaPOS, suivez ces étapes :
 
 1. Depuis l'écran d'accueil d'UltimaPOS, allez dans **Programmation**, puis **Articles**.
 2. Dans la section **Paramètres Articles**, cliquez sur **Formules**.
@@ -66,7 +66,7 @@ Les remises dans HubRise sont les offres spéciales qui s'appliquent à l'ensemb
 
 Leur équivalent dans UltimaPOS est également appelée remise.
 
-Pour retrouver le code ref d'une remise dans UltimaPOS, suivez ces étapes :
+Pour retrouver le code ref d'une remise dans UltimaPOS, suivez ces étapes :
 
 1. Depuis l'écran d'accueil d'UltimaPOS, allez dans **Programmation**, puis **Financier**.
 2. Dans la section **Paramètres Financiers**, cliquez sur **Remises**.
@@ -75,7 +75,7 @@ Pour retrouver le code ref d'une remise dans UltimaPOS, suivez ces étapes :
 
 ## Méthodes de paiement
 
-Les méthodes de paiement dans HubRise correspondent aux règlements dans UltimaPOS. Pour retrouver leur code ref, suivez ces étapes :
+Les méthodes de paiement dans HubRise correspondent aux règlements dans UltimaPOS. Pour retrouver leur code ref, suivez ces étapes :
 
 1. Depuis l'écran d'accueil d'UltimaPOS, allez dans **Programmation**, puis **Financier**.
 2. Dans la section **Paramètres Financiers**, cliquez sur **Règlements**.
@@ -85,7 +85,7 @@ Les méthodes de paiement dans HubRise correspondent aux règlements dans Ultima
 
 Les types de service dans HubRise correspondent aux centres de profit dans UltimaPOS. Pour plus d'informations sur les centres de profit, voir [Centres de profit](plateformes-livraison-repas#centres-de-profit).
 
-Pour trouver le code ref des types de service, suivez ces étapes :
+Pour trouver le code ref des types de service, suivez ces étapes :
 
 1. Depuis l'écran d'accueil d'UltimaPOS, allez dans **Programmation**, puis **Financier**.
 2. Dans la section **Paramètres Financiers**, cliquez sur **Centres de profits**.

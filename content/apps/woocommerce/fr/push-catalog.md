@@ -22,7 +22,7 @@ Vous pouvez également utiliser le Catalog Manager HubRise pour créer ou mettre
 
 ## Envoi manuel du catalogue {#manual-catalog-push}
 
-Une fois que votre catalogue a été alimenté dans HubRise, vous pouvez l'envoyer manuellement vers votre boutique WooCommerce en suivant ces étapes :
+Une fois que votre catalogue a été alimenté dans HubRise, vous pouvez l'envoyer manuellement vers votre boutique WooCommerce en suivant ces étapes :
 
 1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com).
 2. Sélectionnez le compte HubRise et le point de vente connecté à votre boutique WooCommerce.
@@ -51,7 +51,7 @@ Les sections suivantes décrivent la manière dont les catalogues HubRise sont a
 
 ---
 
-**REMARQUE IMPORTANTE :** WooCommerce ne prend en charge que les catégories, les produits et les SKU. Les autres articles des catalogues HubRise, par exemple les options, les promotions et les remises, ne sont pas envoyés à WooCommerce.
+**REMARQUE IMPORTANTE :** WooCommerce ne prend en charge que les catégories, les produits et les SKU. Les autres articles des catalogues HubRise, par exemple les options, les promotions et les remises, ne sont pas envoyés à WooCommerce.
 
 ---
 
@@ -60,25 +60,25 @@ Les sections suivantes décrivent la manière dont les catalogues HubRise sont a
 Les catégories d'un catalogue HubRise sont associées une à une à celles des produits dans WooCommerce.
 L'ordre d'affichage des catégories et des produits dans HubRise est conservé dans WooCommerce.
 
-Pour chaque catégorie, les champs HubRise suivants sont envoyés à WooCommerce :
+Pour chaque catégorie, les champs HubRise suivants sont envoyés à WooCommerce :
 
 - `name` : nom de la catégorie
-- `description` : description de la catégorie
+- `description` : description de la catégorie
 
 ### Produits et SKU
 
-Les produits d'un catalogue HubRise sont associés à WooCommerce de la façon suivante :
+Les produits d'un catalogue HubRise sont associés à WooCommerce de la façon suivante :
 
 - Un produit HubRise sans SKU est associé à un **Produit simple** dans WooCommerce.
 - Un produit HubRise avec des SKUs est associé à un **Produit variable** dans WooCommerce.
 
 Pour chaque produit d'un catalogue HubRise, les informations suivantes sont envoyées à WooCommerce.
 
-- `ref` : code ref du produit, transmis dans les commandes
-- `name` : nom du produit
-- `description` : description du produit
-- `price` : prix du produit
-- `images` : images associées au produit
+- `ref` : code ref du produit, transmis dans les commandes
+- `name` : nom du produit
+- `description` : description du produit
+- `price` : prix du produit
+- `images` : images associées au produit
 
 Si des SKUs sont présents, WooCommerce Bridge crée une liste d'attributs et des variations, et les attache au produit. Le nom de la liste est la valeur configurée dans **Clé(s) de métadonnées nom de la SKU** sur la page de configuration du bridge. Les variations sont les noms des SKUs.
 
@@ -86,13 +86,13 @@ Le bridge utilise les codes ref HubRise pour détecter les produits existants da
 
 ---
 
-**REMARQUE IMPORTANTE :** Les SKU sans code ref dans le catalogue HubRise ne sont pas envoyés à WooCommerce.
+**REMARQUE IMPORTANTE :** Les SKU sans code ref dans le catalogue HubRise ne sont pas envoyés à WooCommerce.
 
 ---
 
-Pour chaque objet `sku` dans un produit, WooCommerce Bridge crée une variante avec ces informations :
+Pour chaque objet `sku` dans un produit, WooCommerce Bridge crée une variante avec ces informations :
 
-- `ref` : code ref de la SKU, transmis dans les commandes
+- `ref` : code ref de la SKU, transmis dans les commandes
 - `name` : nom de la SKU
 - `price` : prix de la SKU
 

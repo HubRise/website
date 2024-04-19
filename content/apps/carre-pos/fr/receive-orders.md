@@ -18,13 +18,13 @@ Pour voir la liste des commandes dans le back-office de Carré POS, sélectionn
 
 ![Commandes - Résumé des commandes](./images/011-carre-pos-order-summary.png)
 
-Pour voir le détail d'une commande, cliquez sur **Details** :
+Pour voir le détail d'une commande, cliquez sur **Details** :
 
 ![Commandes - Détails d'une commande](./images/012-carre-pos-order-details.png)
 
 ### Depuis le logiciel de caisse
 
-Pour voir la liste des nouvelles commandes dans le logiciel de caisse, suivez ces étapes :
+Pour voir la liste des nouvelles commandes dans le logiciel de caisse, suivez ces étapes :
 
 1. Depuis l'écran de démarrage de Carré POS, cliquez sur **ACCUEIL**.
 1. Sélectionnez un utilisateur.
@@ -37,11 +37,11 @@ Pour voir la liste des nouvelles commandes dans le logiciel de caisse, suivez ce
 
 Lorsqu'une commande est reçue, Carré POS modifie automatiquement son statut à `received` sur HubRise.
 
-Si vous mettez à jour le statut d'une commande via l'écran cuisine Carré POS, le changement de statut se reflétera sur HubRise de la manière suivante :
+Si vous mettez à jour le statut d'une commande via l'écran cuisine Carré POS, le changement de statut se reflétera sur HubRise de la manière suivante :
 
-- **En Préparation** : Le statut passe à `in_preparation`.
-- **Servie** : Le statut passe à `awaiting_collection`.
-- **Terminée** : Le statut passe à `completed`.
+- **En Préparation** : Le statut passe à `in_preparation`.
+- **Servie** : Le statut passe à `awaiting_collection`.
+- **Terminée** : Le statut passe à `completed`.
 
 ## Cas particuliers
 

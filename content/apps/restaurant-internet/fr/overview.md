@@ -29,7 +29,7 @@ Restaurant-internet offre de nombreuses fonctionnalités répondant aux spécifi
 
 ## Fonctionnalités de l'intégration
 
-Connecter Restaurant-internet à HubRise permet à votre solution de commande en ligne de :
+Connecter Restaurant-internet à HubRise permet à votre solution de commande en ligne de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Envoyer les informations clients à HubRise.

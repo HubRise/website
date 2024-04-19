@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -33,7 +33,7 @@ Stuart est disponible en France, au Royaume-Uni, en Espagne, et en Pologne.
 
 ## Fonctionnalités de l'intégration
 
-Connecter Stuart à HubRise permet à votre service de livraison de :
+Connecter Stuart à HubRise permet à votre service de livraison de :
 
 - Recevoir les commandes de HubRise.
 - Recevoir les informations clients de HubRise.

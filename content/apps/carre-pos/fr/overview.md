@@ -32,7 +32,7 @@ Carré POS a reçu la certification NF525, le rendant conforme à la loi franç
 
 ## Fonctionnalités de l'intégration
 
-Connecter Carré POS à HubRise permet à votre logiciel de caisse de :
+Connecter Carré POS à HubRise permet à votre logiciel de caisse de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.

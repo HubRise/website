@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -29,7 +29,7 @@ Dismatch permet aux restaurateurs et autres enseignes partenaires d'externaliser
 
 ## Fonctionnalités de l'intégration
 
-Connecter Dismatch à HubRise permet à votre service de livraison de :
+Connecter Dismatch à HubRise permet à votre service de livraison de :
 
 - Recevoir les commandes de HubRise.
 - Recevoir les informations clients de HubRise.
@@ -38,7 +38,7 @@ Dismatch peut être connecté à HubRise depuis le back-office de HubRise.
 
 ---
 
-**REMARQUE IMPORTANTE :** Pour les fonctionnalités d'intégration à la plateforme de commandes de repas, voir la documentation [Smood](/apps/smood/overview).
+**REMARQUE IMPORTANTE :** Pour les fonctionnalités d'intégration à la plateforme de commandes de repas, voir la documentation [Smood](/apps/smood/overview).
 
 ---
 

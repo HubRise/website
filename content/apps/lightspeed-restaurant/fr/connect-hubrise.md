@@ -34,11 +34,11 @@ Lightspeed Restaurant Bridge se connecte à un point de vente HubRise. Vous deve
 
 Envoyez un e-mail à support@hubrise.com pour demander l'activation de la connexion. Aucune donnée ne sera transmise de HubRise à Lightspeed Restaurant tant que Lightspeed n'aura pas activé l'API pour HubRise dans votre compte. HubRise facilitera cette activation en écrivant à k-series.support@lightspeedhq.com.
 
-Lorsque vous faites votre demande à HubRise, précisez quelles applications vous souhaitez connecter. Indiquez-nous également si vous souhaitez que le taux de TVA standard soit appliqué ou si votre entreprise est soumise à des taux de TVA spécifiques. Pour vérifier les taux de TVA standard configurés par Lightspeed lors de l'activation de l'API pour HubRise, consultez cet article : [Les taux TVA pour la restauration en France, Suisse et Belgique](https://www.lightspeedhq.ch/blog/comparaison-taux-tva/).
+Lorsque vous faites votre demande à HubRise, précisez quelles applications vous souhaitez connecter. Indiquez-nous également si vous souhaitez que le taux de TVA standard soit appliqué ou si votre entreprise est soumise à des taux de TVA spécifiques. Pour vérifier les taux de TVA standard configurés par Lightspeed lors de l'activation de l'API pour HubRise, consultez cet article : [Les taux TVA pour la restauration en France, Suisse et Belgique](https://www.lightspeedhq.ch/blog/comparaison-taux-tva/).
 
 ---
 
-**FAQ associée** : [Pourquoi certaines commandes ne sont-elles pas correctement transmises à Lightspeed Restaurant ?](/apps/lightspeed-restaurant/faqs/troubleshooting-failed-orders)
+**FAQ associée** : [Pourquoi certaines commandes ne sont-elles pas correctement transmises à Lightspeed Restaurant ?](/apps/lightspeed-restaurant/faqs/troubleshooting-failed-orders)
 
 ---
 
@@ -56,6 +56,6 @@ Pour donner au support Lightspeed l'accès à votre point de vente, suivez ces �
 
 ---
 
-**REMARQUE IMPORTANTE :** Pour des raisons de sécurité, il est fortement déconseillé de partager le nom d'utilisateur et le mot de passe de votre profil utilisateur HubRise.
+**REMARQUE IMPORTANTE :** Pour des raisons de sécurité, il est fortement déconseillé de partager le nom d'utilisateur et le mot de passe de votre profil utilisateur HubRise.
 
 ---

@@ -8,7 +8,7 @@ meta:
   description: Comment importer le catalogue depuis HubRise dans votre menu My Lemonade.
 ---
 
-My Lemonade peut importer un catalogue depuis HubRise. L'importation a lieu dans l'un des trois cas suivants :
+My Lemonade peut importer un catalogue depuis HubRise. L'importation a lieu dans l'un des trois cas suivants :
 
 - Importation initiale au moment de la connexion avec HubRise.
 - Importation manuelle déclenchée par l'utilisateur.
@@ -20,7 +20,7 @@ Le catalogue est importé automatiquement dans My Lemonade au moment de la conne
 
 ### Importation manuelle
 
-À tout moment, vous pouvez ré-importer manuellement le catalogue depuis HubRise :
+À tout moment, vous pouvez ré-importer manuellement le catalogue depuis HubRise :
 
 1.  Dans le menu latéral du back office, sélectionnez **Paramètres**.
 1.  Sélectionnez l'onglet **Caisse**.
@@ -28,13 +28,13 @@ Le catalogue est importé automatiquement dans My Lemonade au moment de la conne
 
 ---
 
-**REMARQUE IMPORTANTE** : Cette opération remplace votre menu My Lemonade actuel.
+**REMARQUE IMPORTANTE** : Cette opération remplace votre menu My Lemonade actuel.
 
 ---
 
 ### Auto-importation
 
-Les mises à jour de catalogue dans HubRise peuvent être automatiquement importées dans My Lemonade. Pour cela, vous devez activer l'auto-importation en suivant ces étapes :
+Les mises à jour de catalogue dans HubRise peuvent être automatiquement importées dans My Lemonade. Pour cela, vous devez activer l'auto-importation en suivant ces étapes :
 
 1.  Dans le menu latéral du back office, sélectionnez **Paramètres**.
 1.  Sélectionnez l'onglet **Caisse**.

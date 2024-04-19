@@ -12,7 +12,7 @@ meta:
 
 Chaque produit dispose d'un code ref.
 
-Pour modifier le code ref d'un produit, suivez ces étapes :
+Pour modifier le code ref d'un produit, suivez ces étapes :
 
 1. Depuis le back office DOOD, dans le menu de gauche, cliquez sur **Produits** > **Liste des produits**.
 2. Cliquez sur un produit.

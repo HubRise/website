@@ -20,7 +20,7 @@ Pour voir la liste des commandes en attente, cliquez sur l'alerte. Pour voir le 
 
 ### Commande avec des articles inconnus
 
-Lorsqu'une commande contient des articles dont le code ref n'est pas reconnu, ces derniers sont remplacés par des articles nommés **Article inconnu**. Il est alors impossible de valider la commande. Pour remédier à ce problème, suivez ces étapes :
+Lorsqu'une commande contient des articles dont le code ref n'est pas reconnu, ces derniers sont remplacés par des articles nommés **Article inconnu**. Il est alors impossible de valider la commande. Pour remédier à ce problème, suivez ces étapes :
 
 1. Sélectionnez votre commande pour en voir le détail. Certaines lignes intituées **Article inconnu** sont présentes.
 1. Sélectionnez la dernière ligne vide. Votre menu apparaît.
@@ -42,7 +42,7 @@ Par exemple, si une _Margarita Grande_ est à 11.00 € dans la commande, mais q
 
 ### Enregistrement d'un client
 
-Si le client qui a passé la commande n'est pas connu de Nestor, une étape d'association du client apparaît avant celle de validation de la commande. Deux choix sont alors proposés :
+Si le client qui a passé la commande n'est pas connu de Nestor, une étape d'association du client apparaît avant celle de validation de la commande. Deux choix sont alors proposés :
 
 - Créer un nouveau client.
 - Le rattacher à un client connu de Nestor. Dans ce cas, les informations du client seront écrasées par celles provenant d'HubRise.
@@ -52,11 +52,11 @@ Lors de cette étape, les même choix sont proposés pour l'adresse.
 
 ### Statut de la commande
 
-Le statut de la commande dans HubRise évolue de la façon suivante :
+Le statut de la commande dans HubRise évolue de la façon suivante :
 
-1. _New_ : la commande vient d'être créée.
-1. _Received_ : la commande a été reçue dans Nestor.
-1. _Accepted_ : la commande a été validée dans Nestor.
+1. _New_ : la commande vient d'être créée.
+1. _Received_ : la commande a été reçue dans Nestor.
+1. _Accepted_ : la commande a été validée dans Nestor.
 
 La mise à jour du statut dans HubRise peut prendre jusqu'à 20 secondes.
 
@@ -66,10 +66,10 @@ Vous pouvez retrouver toutes vos commandes en suivant les étapes suivantes.
 
 1. Dans la barre de menu Nestor, sélectionnez **Actions**.
 1. Sélectionnez l'option **Carnet de commandes**. La fenêtre des commandes s'ouvre.
-1. Sélectionnez l'onglet correspondant au type de commande que vous souhaitez visualiser : _En cours_, _Web_, _Annulées_, _Différées_, _Tickets / Factures_.
+1. Sélectionnez l'onglet correspondant au type de commande que vous souhaitez visualiser : _En cours_, _Web_, _Annulées_, _Différées_, _Tickets / Factures_.
 1. Double-cliquez sur la ligne correspondant à la commande désirée. La fenêtre détaillant ses informations s'ouvre.
 
-**Fonctionnalité prévue :** Il n'est pour l'instant pas possible de connaître l'origine d'une commande. Cette fonctionnalité est en cours de développement. Si elle est nécessaire à votre utilisation de Nestor, contactez l'éditeur de Nestor.
+**Fonctionnalité prévue :** Il n'est pour l'instant pas possible de connaître l'origine d'une commande. Cette fonctionnalité est en cours de développement. Si elle est nécessaire à votre utilisation de Nestor, contactez l'éditeur de Nestor.
 
 ## Envoyer les commandes
 

@@ -14,7 +14,7 @@ Cette page décrit comment résoudre les problèmes de commandes non reçues dan
 
 Il peut arriver que vous ne receviez pas les commandes HubRise, sans erreurs apparente dans les logs.
 
-Dans les [logs des commandes](/apps/lightspeed-restaurant/user-interface#operation), les commandes concernées affichent le message suivant :
+Dans les [logs des commandes](/apps/lightspeed-restaurant/user-interface#operation), les commandes concernées affichent le message suivant :
 
 ```json
 {

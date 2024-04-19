@@ -16,7 +16,7 @@ meta:
 
 ## Connecter SOMM'IT
 
-Pour connecter SOMM'IT et HubRise, suivez ces étapes :
+Pour connecter SOMM'IT et HubRise, suivez ces étapes :
 
 1. Depuis le back office SOMM'IT, dans le menu de gauche, cliquez sur **Paramètres**.
 2. Dans le sous-menu qui s'affiche, dans la section **DONNÉES**, cliquez sur **Caisse enregistreuse**. La liste des caisses s'affiche.
@@ -30,12 +30,12 @@ Lors de l'étape 3, si le bouton **Connecter** est grisé ou si lorsque vous cli
 
 ## Déconnecter SOMM'IT
 
-Pour déconnecter SOMM'IT de HubRise, suivez ces étapes :
+Pour déconnecter SOMM'IT de HubRise, suivez ces étapes :
 
 1. Depuis le back office SOMM'IT, dans le menu de gauche, cliquez sur **Paramètres**.
 2. Dans le sous-menu qui s'affiche, dans la section **DONNÉES**, cliquez sur **Caisse enregistreuse**.
    ![Connexion HubRise - Connecté](./images/003-somm-it-connected.png)
-3. Sous le logo de la caisse connectée :
+3. Sous le logo de la caisse connectée :
    - Si vous voyez le bouton **Détails**, cliquez dessus, puis sur **Déconnexion**. Dans la fenêtre de confirmation **Supprimer la connexion**, cliquez sur **Oui**.
      ![Connexion HubRise - Détails connexion](./images/004-somm-it-connection-details.png)
      ![Connexion HubRise - Deconnexion](./images/005-somm-it-disconnect.png)

@@ -28,7 +28,7 @@ Si vous souhaitez conserver votre imprimante existante, Expedy propose le module
 
 ## Fonctionnalités de l'intégration
 
-Connecter Expedy à HubRise permet à votre imprimante autonome de :
+Connecter Expedy à HubRise permet à votre imprimante autonome de :
 
 - Recevoir les commandes de HubRise.
 - Recevoir les informations clients de HubRise.

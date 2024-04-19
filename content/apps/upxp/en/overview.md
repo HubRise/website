@@ -29,7 +29,7 @@ UPXP is the first cryptocurrency dedicated to restaurateurs and hoteliers. It is
 
 ## Integration Features
 
-Connecting UPXP to HubRise allows your loyalty management solution to :
+Connecting UPXP to HubRise allows your loyalty management solution to:
 
 - Pull orders from HubRise, including order status.
 - Pull customer information from HubRise

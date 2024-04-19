@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Cette documentation est disponible <Link href="/apps/swoopos">en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** Cette documentation est disponible <Link href="/apps/swoopos">en anglais uniquement</Link>.
 
 ---
 
@@ -25,7 +25,7 @@ app_info:
 
 SwooPOS est une logiciel de caisse mobile, multi-fonctions, facile à utiliser et économique conçue pour la restauration et le commerce de proximité. La migration à SwooPOS, ainsi que l'installation et les mises à jour sont gratuites.
 
-SwooPOS combine la technologie traditionnelle des EPOS avec une approche Cloud, afin que la solution continue à fonctionner avec une connexion réseau WiFi dégradée ou coupée. Les fonctionnalités incluent :
+SwooPOS combine la technologie traditionnelle des EPOS avec une approche Cloud, afin que la solution continue à fonctionner avec une connexion réseau WiFi dégradée ou coupée. Les fonctionnalités incluent :
 
 - Solution de paiement intégrée.
 - Paiement fractionné des tickets.
@@ -38,7 +38,7 @@ SwooPOS est entièrement développé en interne. Leur équipe de support assure 
 
 ## Fonctionnalités de l'intégration
 
-Connecter SwooPOS à HubRise permet à votre logiciel de caisse SwooPOS de :
+Connecter SwooPOS à HubRise permet à votre logiciel de caisse SwooPOS de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Envoyer les informations clients à HubRise.
@@ -46,7 +46,7 @@ Connecter SwooPOS à HubRise permet à votre logiciel de caisse SwooPOS de :
 
 ---
 
-**REMARQUE IMPORTANTE :** L'envoi de l'inventaire disponible sur la caisse à HubRise sera bientôt possible. Contactez SwooPOS pour plus d'information à ce sujet.
+**REMARQUE IMPORTANTE :** L'envoi de l'inventaire disponible sur la caisse à HubRise sera bientôt possible. Contactez SwooPOS pour plus d'information à ce sujet.
 
 ---
 

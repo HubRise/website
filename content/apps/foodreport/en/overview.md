@@ -38,7 +38,7 @@ Connecting Food Report to HubRise allows your data analysis solution to:
 
 ---
 
-**IMPORTANT NOTE** : Pulling the product catalog from HubRise is possible will be supported in the future. Contact Food Report for more information.
+**IMPORTANT NOTE**: Pulling the product catalog from HubRise is possible will be supported in the future. Contact Food Report for more information.
 
 ---
 

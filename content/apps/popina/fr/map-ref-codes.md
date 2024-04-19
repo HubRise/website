@@ -12,7 +12,7 @@ Une fois votre logiciel de caisse Popina connecté à HubRise, vous devez config
 
 Popina identifie chaque élément d'une commande par un code ref. Vous devez indiquer les codes ref fournis par Popina dans vos autres applications, afin que les commandes puissent être réceptionnées.
 
-Il y a deux façons de procéder :
+Il y a deux façons de procéder :
 
 - Vous pouvez exporter le catalogue Popina vers HubRise, puis importer ce catalogue dans vos autres applications.
 - Ou vous pouvez saisir manuellement les codes ref dans vos autres applications.
@@ -27,7 +27,7 @@ Seules certaines applications permettent l'import d'un catalogue depuis HubRise.
 
 ---
 
-Pour exporter manuellement un catalogue vers HubRise, suivez ces étapes :
+Pour exporter manuellement un catalogue vers HubRise, suivez ces étapes :
 
 1. Ouvrez [Delivera](https://delivera-popina.web.app). Pour plus d'informations, voir la section [Delivera](/apps/popina/connect-hubrise#delivera) de cette documentation.
 2. Dans le menu, sélectionnez **HubRise**.
@@ -37,7 +37,7 @@ Vous devez maintenant importer le catalogue HubRise dans vos autres applications
 
 ## Produits {#products}
 
-Pour retrouver le code ref d'un produit, suivez ces étapes :
+Pour retrouver le code ref d'un produit, suivez ces étapes :
 
 1. Ouvrez [Delivera](https://delivera-popina.web.app). Pour plus d'informations, voir la section [Delivera](/apps/popina/connect-hubrise#delivera) de cette documentation.
 2. Dans le menu, sélectionnez **Carte**, puis **Produits**.
@@ -52,7 +52,7 @@ Popina ne permet pas de créer de SKU. Pour remplacer cette fonctionnalité, vou
 
 ## Options
 
-Pour retrouver le code ref d'une option, suivez ces étapes :
+Pour retrouver le code ref d'une option, suivez ces étapes :
 
 1. Ouvrez [Delivera](https://delivera-popina.web.app). Pour plus d'informations, voir la section [Delivera](/apps/popina/connect-hubrise#delivera) de cette documentation.
 2. Dans le menu, sélectionnez **Carte**, puis **Produits**.
@@ -61,14 +61,14 @@ Pour retrouver le code ref d'une option, suivez ces étapes :
 
 ## Promotions
 
-Les promotions dans HubRise correspondent aux **menus** et aux **promotions** dans Popina :
+Les promotions dans HubRise correspondent aux **menus** et aux **promotions** dans Popina :
 
 - Un **menu** est un groupe de produits vendu à un prix fixe. Il est possible d'ajouter un supplément sur certains produits.
 - Une **promotion** est une réduction en pourcentage ou en valeur fixe sur un ensemble de produits.
 
-Seuls les menus ont un code ref dans Popina. Les promotions n'ont en pas besoin : elles sont identifiées par leur nom dans les commandes.
+Seuls les menus ont un code ref dans Popina. Les promotions n'ont en pas besoin : elles sont identifiées par leur nom dans les commandes.
 
-Pour retrouver le code ref d'un menu, suivez ces étapes :
+Pour retrouver le code ref d'un menu, suivez ces étapes :
 
 1. Ouvrez [Delivera](https://delivera-popina.web.app). Pour plus d'informations, voir la section [Delivera](/apps/popina/connect-hubrise#delivera) de cette documentation.
 2. Dans le menu, sélectionnez **Carte**, puis **Menus**.
@@ -84,7 +84,7 @@ Les frais n'ont pas de code ref dans Popina. Ils sont identifiés par leur nom d
 
 ## Méthodes de paiement {#payment-methods}
 
-Les méthodes de paiement dans HubRise correspondent aux **modes de paiement** dans Popina. Pour retrouver le code ref d'un mode de paiement, suivez ces étapes :
+Les méthodes de paiement dans HubRise correspondent aux **modes de paiement** dans Popina. Pour retrouver le code ref d'un mode de paiement, suivez ces étapes :
 
 1. Ouvrez [Delivera](https://delivera-popina.web.app). Pour plus d'informations, voir la section [Delivera](/apps/popina/connect-hubrise#delivera) de cette documentation.
 2. Dans le menu, sélectionnez **Carte**, puis **Modes de paiement**.

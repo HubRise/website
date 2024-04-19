@@ -25,7 +25,7 @@ SailPlay permet également de déterminer la rentabilité de vos actions marketi
 
 ## Fonctionnalités de l'intégration
 
-Connecter SailPlay à HubRise permet à votre solution de marketing de :
+Connecter SailPlay à HubRise permet à votre solution de marketing de :
 
 - Recevoir les informations clients de HubRise.
 - Recevoir les commandes de HubRise.

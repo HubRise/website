@@ -16,7 +16,7 @@ meta:
 
 ## Connecter UltimaPOS
 
-Pour connecter votre logiciel de caisse UltimaPOS à HubRise, suivez ces étapes :
+Pour connecter votre logiciel de caisse UltimaPOS à HubRise, suivez ces étapes :
 
 1. Depuis l'écran d'accueil d'UltimaPOS, allez dans **Paramètres**, **Paramètres Cloud**, **Click & Collect**, puis dans l'onglet **HubRise**.
    ![Connexion à HubRise - Accueil UltimaPOS](./images/001-ultimapos-home.png)

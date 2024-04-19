@@ -25,7 +25,7 @@ Restaur'App offre une multitude de fonctionnalités et d'options de personnalisa
 
 ## Fonctionnalités de l'intégration
 
-Connecter Restaur'App à HubRise permet à votre solution de commande de :
+Connecter Restaur'App à HubRise permet à votre solution de commande de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Recevoir les modifications de commandes de HubRise concernant les paiements.

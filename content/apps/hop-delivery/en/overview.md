@@ -34,7 +34,7 @@ Connecting Hop Delivery to HubRise allows your ordering and delivery platform t
 
 ---
 
-**IMPORTANT NOTE** : Pulling the product catalog from HubRise will be supported in the future. Contact Hop Delivery for more information.
+**IMPORTANT NOTE**: Pulling the product catalog from HubRise will be supported in the future. Contact Hop Delivery for more information.
 
 ---
 

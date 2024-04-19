@@ -16,7 +16,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/dotdigital">en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/dotdigital">en anglais uniquement</Link>.
 
 ---
 
@@ -32,7 +32,7 @@ dotdigital permet aux entreprises de :
 
 ## Fonctionnalités de l'intégration
 
-Connecter dotdigital à HubRise permet à votre solution d'e-marketing de :
+Connecter dotdigital à HubRise permet à votre solution d'e-marketing de :
 
 - Recevoir les commandes de HubRise.
 - Recevoir les informations clients de HubRise.

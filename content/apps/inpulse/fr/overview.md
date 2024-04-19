@@ -19,7 +19,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -35,7 +35,7 @@ Inpulse est une solution SaaS qui peut s'implémenter en 4 semaines.
 
 ## Fonctionnalités de l'intégration
 
-Connecter Inpulse à HubRise permet à votre solution de prévision de vente de :
+Connecter Inpulse à HubRise permet à votre solution de prévision de vente de :
 
 - Recevoir les commandes de HubRise.
 - Recevoir un catalogue de HubRise.

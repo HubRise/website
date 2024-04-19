@@ -17,14 +17,14 @@ Dans CoursiCab, les livraisons sont appelées des courses. Pour en consulter la 
 
 Pour chaque course, vous pouvez accepter ou refuser la livraison.
 
-Pour accepter, suivez ces étapes :
+Pour accepter, suivez ces étapes :
 
 1. Dans la colonne **ACTION**, cliquez sur le bouton d'acceptation en forme de coche.
-1. Sélectionnez un véhicule et un mode de paiement dans la modale qui s'affiche :
+1. Sélectionnez un véhicule et un mode de paiement dans la modale qui s'affiche :
    ![Interface utilisateur - Accepter une course](./images/008-accept-ride.png)
 1. Cliquez sur **Confirmer**.
 
-Pour refuser :
+Pour refuser :
 
 1. Dans la colonne **ACTION**, cliquez sur le bouton de rejet en forme de croix. Une modale de confirmation s'ouvre.
 1. Cliquez sur **Oui** pour confirmer l'annulation de la course.

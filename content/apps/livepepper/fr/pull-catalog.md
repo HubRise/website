@@ -14,11 +14,11 @@ Certains logiciels de caisse permettent d'exporter des menus vers HubRise. Votre
 
 ***
 
-**REMARQUE IMPORTANTE :** Assurez-vous d'associer les codes ref à chaque produit et option de votre catalogue. LivePepper ne peut pas récupérer de catalogue HubRise s'il y manque des codes ref.
+**REMARQUE IMPORTANTE :** Assurez-vous d'associer les codes ref à chaque produit et option de votre catalogue. LivePepper ne peut pas récupérer de catalogue HubRise s'il y manque des codes ref.
 
 ***
 
-Pour récupérer un catalogue HubRise dans LivePepper :
+Pour récupérer un catalogue HubRise dans LivePepper :
 
 1. Connectez-vous à votre back-office LivePepper.
 2. Cliquez sur **Mon menu** > **Import/Export**.
@@ -28,6 +28,6 @@ Pour récupérer un catalogue HubRise dans LivePepper :
 
 ***
 
-**REMARQUE IMPORTANTE :** La récupération d'un catalogue HubRise écrase tous les produits existants dans LivePepper. Cette action est irréversible.
+**REMARQUE IMPORTANTE :** La récupération d'un catalogue HubRise écrase tous les produits existants dans LivePepper. Cette action est irréversible.
 
 ***

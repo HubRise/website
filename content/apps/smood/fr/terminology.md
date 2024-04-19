@@ -20,8 +20,8 @@ HubRise et Smood utilisent chacun leur propre terminologie. Un même concept peu
 
 ## Types de service Smood {#smood-service-types}
 
-Smood propose trois types de service à ses clients :
+Smood propose trois types de service à ses clients :
 
-- **Livraison via la plateforme** : la commande est récupérée et livrée par un livreur Smood.
-- **Livraison par le restaurant** : la commande est livrée par les livreurs du restaurant.
+- **Livraison via la plateforme** : la commande est récupérée et livrée par un livreur Smood.
+- **Livraison par le restaurant** : la commande est livrée par les livreurs du restaurant.
 - **À emporter** : le client récupère la commande au restaurant.

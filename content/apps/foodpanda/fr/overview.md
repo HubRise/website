@@ -18,7 +18,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/foodpanda">en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/foodpanda">en anglais uniquement</Link>.
 
 ---
 

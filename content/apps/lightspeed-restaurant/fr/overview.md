@@ -26,7 +26,7 @@ Lightspeed Restaurant Bridge est une application développée par HubRise qui pe
 
 ## Fonctionnalités de l'intégration
 
-La connexion de Lightspeed Restaurant Bridge à HubRise permet à votre logiciel de caisse de :
+La connexion de Lightspeed Restaurant Bridge à HubRise permet à votre logiciel de caisse de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Envoyer les commandes payées à HubRise, avec leur statut.

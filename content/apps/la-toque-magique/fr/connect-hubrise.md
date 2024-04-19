@@ -5,7 +5,7 @@ position: 2
 layout: documentation
 meta:
   title: Connexion à HubRise | La Toque Magique | HubRise
-  description: "Processus de connexion de votre restaurant La Toque Magique à HubRise : liste des éléments à fournir et étapes à suivre pour recevoir vos commandes La Toque Magique dans votre logiciel de caisse."
+  description: "Processus de connexion de votre restaurant La Toque Magique à HubRise : liste des éléments à fournir et étapes à suivre pour recevoir vos commandes La Toque Magique dans votre logiciel de caisse."
 ---
 
 ---
@@ -16,7 +16,7 @@ meta:
 
 ## Connecter La Toque Magique
 
-Pour établir la connexion entre La Toque Magique et HubRise :
+Pour établir la connexion entre La Toque Magique et HubRise :
 
 1. Dans votre back-office La Toque Magique, en haut à droite, cliquez sur l'icône en forme d'épingle, puis sélectionnez l'établissement.
    ![Connexion à HubRise - Passer en mode gestion d'établissement](./images/001-manage-location.png)

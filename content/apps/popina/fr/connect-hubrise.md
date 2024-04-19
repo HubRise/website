@@ -16,13 +16,13 @@ meta:
 
 ## Delivera {#delivera}
 
-**Delivera** sert d'application intermédiaire pour établir la connexion entre Popina et HubRise. Pour procéder à la configuration, accédez à Delivera via le site web : https://delivera-popina.web.app.
+**Delivera** sert d'application intermédiaire pour établir la connexion entre Popina et HubRise. Pour procéder à la configuration, accédez à Delivera via le site web : https://delivera-popina.web.app.
 
 Vos identifiants Delivera sont les mêmes que ceux de Popina.
 
 ## Connecter Popina
 
-Pour connecter Popina à HubRise, suivez ces étapes :
+Pour connecter Popina à HubRise, suivez ces étapes :
 
 1. Ouvrez [Delivera](https://delivera-popina.web.app). Pour plus d'informations, voir la section [Delivera](#delivera) de cette documentation.
 2. Dans le menu, sélectionnez **HubRise**, puis cliquez sur **CONNEXION**. Vous êtes redirigé vers l'interface HubRise.

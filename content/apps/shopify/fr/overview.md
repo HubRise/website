@@ -29,7 +29,7 @@ En 2020, la plateforme comptait plus d'un million de sites opérant dans quelque
 
 ## Fonctionnalités de l'intégration
 
-La connexion à Shopify Bridge permet à HubRise de :
+La connexion à Shopify Bridge permet à HubRise de :
 
 - Recevoir les commandes de Shopify, dont les statuts de commande.
 - Récupérer les informations clients de Shopify.

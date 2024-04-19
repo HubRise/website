@@ -18,7 +18,7 @@ OrderLine peut également émettre une notification sonore pour vous informer de
 
 ---
 
-**NOTE IMPORTANTE :** Les navigateurs peuvent bloquer les notifications sonores. Pour les maintenir activées en permanence, suivez les instructions dans la FAQ [Comment puis-je garder les notifications sonores activées ?](/apps/orderline/faqs/keep-sound-notifications-enabled).
+**NOTE IMPORTANTE :** Les navigateurs peuvent bloquer les notifications sonores. Pour les maintenir activées en permanence, suivez les instructions dans la FAQ [Comment puis-je garder les notifications sonores activées ?](/apps/orderline/faqs/keep-sound-notifications-enabled).
 
 ---
 

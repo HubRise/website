@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -33,7 +33,7 @@ Zenorder offre un back-office permettant de personnaliser l'offre produits, d'ac
 
 ## Fonctionnalités de l'intégration
 
-Connecter Zenorder à HubRise permet à Zenorder de :
+Connecter Zenorder à HubRise permet à Zenorder de :
 
 - Envoyer les commandes à HubRise.
 - Recevoir les informations clients de HubRise.

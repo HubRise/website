@@ -49,7 +49,7 @@ Connecting MiiPos to HubRise allows your EPOS to:
 
 ---
 
-**IMPORTANT NOTE** : Sending the MiiPos menu into a HubRise catalog will soon be possible. Contact MiiPos for more information on this matter.
+**IMPORTANT NOTE**: Sending the MiiPos menu into a HubRise catalog will soon be possible. Contact MiiPos for more information on this matter.
 
 ---
 

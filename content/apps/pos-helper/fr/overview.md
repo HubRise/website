@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -31,7 +31,7 @@ Fonctionnant en mode cloud, POS HELPER permet d'accéder à vos données où que
 
 ## Fonctionnalités de l'intégration
 
-Connecter POS HELPER à HubRise permet à votre logiciel de caisse de :
+Connecter POS HELPER à HubRise permet à votre logiciel de caisse de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.

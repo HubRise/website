@@ -14,7 +14,7 @@ Cette page explique comment activer cette fonctionnalité et détaille les infor
 
 ## Activer la récupération des commandes
 
-Pour commencer à récupérer les commandes Lightspeed dans HubRise, vous devez activer la fonctionnalité en suivant ces étapes :
+Pour commencer à récupérer les commandes Lightspeed dans HubRise, vous devez activer la fonctionnalité en suivant ces étapes :
 
 1. Ouvrez Lightspeed Restaurant Bridge.
 1. Ouvrez la page **Configuration**.
@@ -27,7 +27,7 @@ Lightspeed Restaurant Bridge récupère de nouvelles commandes toutes les 30 sec
 
 ---
 
-**REMARQUE IMPORTANTE** : Seules les ventes payées sont récupérées dans HubRise.
+**REMARQUE IMPORTANTE** : Seules les ventes payées sont récupérées dans HubRise.
 
 ---
 

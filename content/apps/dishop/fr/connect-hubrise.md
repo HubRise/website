@@ -5,7 +5,7 @@ position: 2
 layout: documentation
 meta:
   title: Connexion à HubRise | Dishop | HubRise
-  description: "Processus de connexion de votre restaurant Dishop à HubRise : liste des éléments à fournir et étapes à suivre pour recevoir vos commandes Dishop dans votre logiciel de caisse."
+  description: "Processus de connexion de votre restaurant Dishop à HubRise : liste des éléments à fournir et étapes à suivre pour recevoir vos commandes Dishop dans votre logiciel de caisse."
 ---
 
 ---
@@ -16,7 +16,7 @@ meta:
 
 ## Connecter Dishop
 
-Pour établir la connexion entre Dishop et HubRise :
+Pour établir la connexion entre Dishop et HubRise :
 
 1. Ouvrez le back office Dishop.
 2. Dans le menu à gauche, cliquez sur **Réglages**.
@@ -27,7 +27,7 @@ Pour établir la connexion entre Dishop et HubRise :
 
 ## Déconnecter Dishop
 
-Pour déconnecter Dishop de HubRise, suivez ces étapes :
+Pour déconnecter Dishop de HubRise, suivez ces étapes :
 
 1. Ouvrez le back office Dishop.
 2. Dans le menu à gauche, cliquez sur **Réglages**.

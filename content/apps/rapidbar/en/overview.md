@@ -50,7 +50,7 @@ Connecting RapidBar to HubRise allows your inventory management solution to:
 
 ---
 
-**IMPORTANT NOTE** : RapidBar will soon synchronise inventory with HubRise to adjust product availability on your online ordering website or food ordering and delivery platforms. Contact RapidBar for more information.
+**IMPORTANT NOTE**: RapidBar will soon synchronise inventory with HubRise to adjust product availability on your online ordering website or food ordering and delivery platforms. Contact RapidBar for more information.
 
 ---
 

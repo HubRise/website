@@ -26,7 +26,7 @@ Disponible en anglais et en français, TicknCook propose une période d'essai gr
 
 ## Fonctionnalités de l'intégration
 
-Connecter TicknCook à HubRise permet de :
+Connecter TicknCook à HubRise permet de :
 
 - Créer un compte TicknCook avec une période d'essai gratuite.
 - Recevoir les commandes sur TicknCook.
@@ -34,7 +34,7 @@ Connecter TicknCook à HubRise permet de :
 
 ## Pourquoi se connecter ?
 
-Connecter TicknCook à HubRise vous permet d'aspirer les commandes et de les envoyer sur votre écran de production. TicknCook fonctionne quelle que soit l'origine des commandes : sur place, directement enregistrées dans votre caisse, depuis votre solution de commande en ligne, ou encore depuis les plateformes de livraison de repas à domicile comme Deliveroo et Uber Eats.
+Connecter TicknCook à HubRise vous permet d'aspirer les commandes et de les envoyer sur votre écran de production. TicknCook fonctionne quelle que soit l'origine des commandes : sur place, directement enregistrées dans votre caisse, depuis votre solution de commande en ligne, ou encore depuis les plateformes de livraison de repas à domicile comme Deliveroo et Uber Eats.
 
 Il est également possible, grâce à une montre connectée ou à un bipper posé sur la table, d'avertir vos clients ou votre personnel lorsqu'un plat ou une commande sont prêts.
 

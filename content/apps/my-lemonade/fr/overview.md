@@ -28,7 +28,7 @@ Le back office de My Lemonade permet de mettre à jour le menu du restaurant, d�
 
 ## Fonctionnalités de l'intégration
 
-Connecter My Lemonade à HubRise permet à votre solution de commande en ligne de :
+Connecter My Lemonade à HubRise permet à votre solution de commande en ligne de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Envoyer les informations clients à HubRise.
@@ -37,7 +37,7 @@ Connecter My Lemonade à HubRise permet à votre solution de commande en ligne d
 
 ---
 
-**REMARQUE IMPORTANTE :** My Lemonade pourra bientôt récupérer les commandes depuis les plateformes de livraison de repas, et synchroniser l'inventaire avec HubRise. Pour plus d'informations, contactez My Lemonade.
+**REMARQUE IMPORTANTE :** My Lemonade pourra bientôt récupérer les commandes depuis les plateformes de livraison de repas, et synchroniser l'inventaire avec HubRise. Pour plus d'informations, contactez My Lemonade.
 
 ---
 

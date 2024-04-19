@@ -31,7 +31,7 @@ SOMM'IT permet aussi de minimiser l'impact de la rotation du personnel, grâce �
 
 ## Fonctionnalités de l'intégration
 
-Connecter SOMM'IT à HubRise permet à votre solution de gestion de carte des vins de :
+Connecter SOMM'IT à HubRise permet à votre solution de gestion de carte des vins de :
 
 - Recevoir les commandes de HubRise.
 - Recevoir un catalogue de HubRise.

@@ -12,7 +12,7 @@ Cette page décrit comment résoudre les erreurs causées par un iPad déconnect
 
 ## Etablissement n'acceptant pas les commandes en ligne
 
-Dans certaines circonstances, les commandes peuvent échouer, ce qui génère le message d'erreur suivant :
+Dans certaines circonstances, les commandes peuvent échouer, ce qui génère le message d'erreur suivant :
 
 ```json
 {
@@ -26,7 +26,7 @@ Ce problème est dû au fait que la commande en ligne n'a pas été activée sur
 
 ## Aucun appareil disponible
 
-Il peut arriver que le traitement des commandes échoue parce qu'aucun appareil n'est disponible. Ce problème peut générer deux messages d'erreur équivalents :
+Il peut arriver que le traitement des commandes échoue parce qu'aucun appareil n'est disponible. Ce problème peut générer deux messages d'erreur équivalents :
 
 ```json
 {
@@ -50,7 +50,7 @@ et
 }
 ```
 
-Ces erreurs apparaissent généralement dans les circonstances suivantes :
+Ces erreurs apparaissent généralement dans les circonstances suivantes :
 
 - Aucun iPad n'est disponible pour recevoir des commandes.
 - L'iPad est éteint ou n'est pas connecté à internet.

@@ -20,7 +20,7 @@ Pour attribuer des codes ref à vos produits Shopify, suivez ces étapes :
 
 3. Dans la liste des produits, sélectionnez celui pour lequel vous voulez ajouter le code ref.
 
-4. Dans la section **Variantes**, vérifiez si le produit a des options :
+4. Dans la section **Variantes**, vérifiez si le produit a des options :
 
    - Si c'est le cas, dans la section **Variantes** saisissez le code ref pour chaque variante dans le champ **SKU**.
      ![Saisie de codes ref pour un produit Shopify avec options](./images/006-shopify-map-ref-codes-multi-sku.png)

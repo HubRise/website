@@ -14,7 +14,7 @@ L'échec de l'envoi d'une commande au logiciel de caisse Lightspeed Restaurant p
 
 Si vous recevez des commandes d'une app connectée, par exemple une plateforme de livraison de repas ou une solution de commande en ligne, vous devez vous assurer que les codes ref y sont correctement configurés. Un code ref incorrect dans le menu peut entraîner le rejet d'une commande entière par le logiciel de caisse Lightspeed Restaurant.
 
-Pour résoudre un problème de code ref incorrect dans une commande, consultez les logs pour Lightspeed Restaurant Bridge :
+Pour résoudre un problème de code ref incorrect dans une commande, consultez les logs pour Lightspeed Restaurant Bridge :
 
 - Connectez-vous à votre [compte HubRise](https://manager.hubrise.com/connections).
 - Ouvrez la page **CONNEXIONS**.

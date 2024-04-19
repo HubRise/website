@@ -16,7 +16,7 @@ Lorsque votre imprimante est sous tension, les commandes HubRise sont imprimées
 
 Si votre imprimante est hors tension, les commandes sont mises en attente jusqu'à la prochaine mise sous tension.
 
-Expedy permet de visualiser le volume d'impression en 30 jours, ainsi que les détails des 10 dernières commandes reçues. Pour y accéder, suivez ces étapes :
+Expedy permet de visualiser le volume d'impression en 30 jours, ainsi que les détails des 10 dernières commandes reçues. Pour y accéder, suivez ces étapes :
 
 1. Depuis la page d'accueil de votre back-office Expedy, cliquez sur **Imprimantes**.
 1. Cliquez sur le nom de l'imprimante concernée.
@@ -24,18 +24,18 @@ Expedy permet de visualiser le volume d'impression en 30 jours, ainsi que les d�
 
 ## Paramètres HubRise
 
-Expedy permet de sélectionner le statut de commande qui déclenche l'impression. Vous pouvez ainsi choisir d'imprimer les commandes lorsqu'elles passent dans l'un des 3 statuts suivants :
+Expedy permet de sélectionner le statut de commande qui déclenche l'impression. Vous pouvez ainsi choisir d'imprimer les commandes lorsqu'elles passent dans l'un des 3 statuts suivants :
 
 - _Nouvelle_
 - _Reçue_
 - _Acceptée_
 
-Expedy permet aussi d'effectuer une action supplémentaire lors de la réception d'une commande. Vous pouvez ainsi choisir de passer la commande en :
+Expedy permet aussi d'effectuer une action supplémentaire lors de la réception d'une commande. Vous pouvez ainsi choisir de passer la commande en :
 
 - _Reçue_
 - _Acceptée_
 
-Pour paramétrer ces actions, suivez ces étapes :
+Pour paramétrer ces actions, suivez ces étapes :
 
 1. Depuis la page d'accueil de votre back-office Expedy, cliquez sur **Imprimantes**.
 1. Cliquez sur le nom de l'imprimante concernée.
@@ -46,7 +46,7 @@ Pour paramétrer ces actions, suivez ces étapes :
 
 Vous pouvez configurer le nom et le logo de votre société en tête des tickets. Vous pouvez également afficher l'adresse complète de votre établissement en pied de page.
 
-Pour configurer la mise en page des tickets, suivez ces étapes :
+Pour configurer la mise en page des tickets, suivez ces étapes :
 
 1. Depuis la page d'accueil de votre back-office Expedy, cliquez sur **Imprimantes**.
 1. Cliquez sur le nom de l'imprimante concernée.

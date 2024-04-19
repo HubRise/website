@@ -58,6 +58,6 @@ Pour savoir comment associer les codes ref sur Deliveroo, consultez la rubrique 
 
 ---
 
-**REMARQUE IMPORTANTE :** Deliveroo n'activera pas la connexion HubRise tant que tous les codes ref n'auront pas été saisis.
+**REMARQUE IMPORTANTE :** Deliveroo n'activera pas la connexion HubRise tant que tous les codes ref n'auront pas été saisis.
 
 ---

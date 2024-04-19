@@ -20,7 +20,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/prestashop">en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/prestashop">en anglais uniquement</Link>.
 
 ---
 
@@ -36,7 +36,7 @@ PrestaShop peut être hébergé ou fonctionner sur votre propre serveur.
 
 ## Fonctionnalités de l'intégration
 
-Connecter PrestaShop Bridge permet à HubRise de :
+Connecter PrestaShop Bridge permet à HubRise de :
 
 - Recevoir les commandes de PrestaShop, dont les statuts de commande.
 - Recevoir les informations clients de PrestaShop.

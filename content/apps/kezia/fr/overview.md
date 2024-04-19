@@ -29,7 +29,7 @@ Kezia II est certifié NF525, et donc conforme à la loi française anti-fraude 
 
 ## Fonctionnalités de l'intégration
 
-Connecter Kezia II à HubRise permet à votre logiciel de caisse de :
+Connecter Kezia II à HubRise permet à votre logiciel de caisse de :
 
 - Recevoir les commandes de HubRise.
 - Recevoir les informations clients de HubRise.

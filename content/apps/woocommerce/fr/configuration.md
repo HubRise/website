@@ -12,7 +12,7 @@ La page de configuration permet de personnaliser le comportement de WooCommerce 
 
 ---
 
-**REMARQUE IMPORTANTE :** En raison de sa nature très personnalisable, la configuration de WooCommerce Bridge nécessite un certain niveau de connaissances techniques. Si vous n'êtes pas à l'aise avec cette configuration, passez quelques commandes de test, avec différentes méthodes de paiement, et contactez-nous à support\@hubrise.com, en mentionnant le logiciel de caisse que vous utilisez. Nous serons ravis de vous aider !
+**REMARQUE IMPORTANTE :** En raison de sa nature très personnalisable, la configuration de WooCommerce Bridge nécessite un certain niveau de connaissances techniques. Si vous n'êtes pas à l'aise avec cette configuration, passez quelques commandes de test, avec différentes méthodes de paiement, et contactez-nous à support\@hubrise.com, en mentionnant le logiciel de caisse que vous utilisez. Nous serons ravis de vous aider !
 
 ---
 
@@ -36,7 +36,7 @@ La section **Commandes** permet de personnaliser la façon dont les commandes Wo
 
 ---
 
-Selon le type de paiement, les nouvelles commandes WooCommerce sont créées avec des statuts différents :
+Selon le type de paiement, les nouvelles commandes WooCommerce sont créées avec des statuts différents :
 
 - Pour les paiements par carte, le statut initial de la commande est `Processing` (en cours de traitement).
 - Pour les paiements par virement bancaire, le statut initial de la commande est `On-hold` (En attente). Le statut doit être passé manuellement à `Processing` une fois le paiement confirmé.
@@ -66,18 +66,18 @@ La prise en charge des heures souhaitées dans WooCommerce nécessite un plugin,
 
 Si vous n'utilisez pas les heures souhaitées, laissez le menu déroulant **Clés de métadonnées** défini sur **Aucun**.
 
-Sinon, vous devrez choisir entre deux options pour la façon dont l'heure de la commande est encodée par votre plugin : **Une valeur contenant la date et l'heure**, ou **Deux valeurs : une pour la date, une pour l'heure**.
+Sinon, vous devrez choisir entre deux options pour la façon dont l'heure de la commande est encodée par votre plugin : **Une valeur contenant la date et l'heure**, ou **Deux valeurs : une pour la date, une pour l'heure**.
 
 Pour déterminer comment votre plugin encode l'heure souhaitée, passez une commande de test et examinez les logs sur la [page des commandes](/docs/data#orders). Recherchez le champ `meta_data` au niveau le plus élevé du JSON de la commande. Veillez à ne pas confondre avec les champs `meta_data` qui pourraient être imbriqués sous les éléments JSON `line_items`. Identifiez le ou les attributs dans ce champ qui contiennent la date et l'heure souhaitées. Si vous ne trouvez pas l'heure souhaitée dans le champ `meta_data`, contactez le développeur du plugin pour obtenir de l'aide.
 
 En fonction de l'option sélectionnée dans le menu déroulant **Clés de métadonnées**, un ou deux champs apparaîtront, où vous pourrez spécifier le(s) nom(s) de clé de métadonnées contenant la date et l'heure souhaitées.
 
-Si votre plugin utilise une clé de métadonnées, les formats pris en charge sont les suivants :
+Si votre plugin utilise une clé de métadonnées, les formats pris en charge sont les suivants :
 
-- ISO 8601. Par exemple : `2021-07-22T12:00:30+02:00`.
-- Horodatage Unix. Par exemple : `1642422302`.
+- ISO 8601. Par exemple : `2021-07-22T12:00:30+02:00`.
+- Horodatage Unix. Par exemple : `1642422302`.
 
-Si votre plugin utilise deux clés de métadonnées, les formats pris en charge sont les suivants :
+Si votre plugin utilise deux clés de métadonnées, les formats pris en charge sont les suivants :
 
 - La date doit être au format `dd/mm/yyyy`.
 - L'heure doit être au format `hh:mm`.
@@ -94,7 +94,7 @@ Dans cette section, vous pouvez spécifier la clé de métadonnée que WooCommer
 
 WooCommerce encode les informations sur les articles sous forme de métadonnées, qui peuvent être prolongées par divers plugins.
 
-Par défaut, HubRise convertit chaque paire clé-valeur en option. Dans cette section, vous pouvez modifier le comportement par défaut en saisissant les métadonnées spécifiques :
+Par défaut, HubRise convertit chaque paire clé-valeur en option. Dans cette section, vous pouvez modifier le comportement par défaut en saisissant les métadonnées spécifiques :
 
 - Dans le champ **Clé(s) de métadonnées nom de la SKU**, saisissez la clé de métadonnée que vous voulez utiliser comme nom de SKU, par exemple "Taille" avec des valeurs telles que "Grande" ou "Moyenne".
 - Dans le champ **Clé(s) de métadonnées commentaire client**, saisissez la clé de métadonnée que vous voulez utiliser comme notes de préparation du client au niveau de l'article. par exemple "Préférences de cuisson" avec des valeurs comme "Bien cuit".
@@ -122,14 +122,14 @@ Pour vérifier, référez-vous à la documentation de votre logiciel de caisse s
 
 La section **Paiements** vous permet de spécifier l'ID WooCommerce et le code ref correspondant pour jusqu'à 15 méthodes de paiement.
 
-Voici des exemples d'ID de méthodes de paiement WooCommerce :
+Voici des exemples d'ID de méthodes de paiement WooCommerce :
 
-- Paiement à la livraison : `cod`
-- Paiement par chèque : `cheque`
-- Virement bancaire : `bacs`
-- Paiement Stripe : `stripe`
+- Paiement à la livraison : `cod`
+- Paiement par chèque : `cheque`
+- Virement bancaire : `bacs`
+- Paiement Stripe : `stripe`
 
-Pour trouver l'ID WooCommerce d'autres méthodes de paiement, suivez ces étapes :
+Pour trouver l'ID WooCommerce d'autres méthodes de paiement, suivez ces étapes :
 
 1. Dans votre back-office WooCommerce, cliquez sur **Réglages** > **Paiements**.
 2. Cliquez sur le nom de la méthode de paiement pour afficher ses informations détaillées.
@@ -200,7 +200,7 @@ Si vous avez besoin de réinitialiser la configuration, cliquez sur **Réinitial
 
 ---
 
-**REMARQUE IMPORTANTE** : La réinitialisation de la configuration déconnectera instantanément le bridge de WooCommerce.
+**REMARQUE IMPORTANTE** : La réinitialisation de la configuration déconnectera instantanément le bridge de WooCommerce.
 
 ---
 

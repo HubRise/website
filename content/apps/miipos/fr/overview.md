@@ -18,7 +18,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -30,7 +30,7 @@ MiiPos est disponible en français et en chinois, et convient aussi bien aux ent
 
 MiiPos offre de nombreuses fonctionnalités pour gérer un commerce et accompagner dans la prise de décisions. Elle inclut notamment une solution de gestion des stocks et un programme de fidélisation. Elle permet une analyse statistique des ventes, le calcul des marges et des taux de TVA, ainsi que l'export complet des données nécessaires au comptable.
 
-MiiPos se distingue notamment par :
+MiiPos se distingue notamment par :
 
 - Une structure de gestion cohérente et logique.
 - Sa bibliothèque de modules complémentaires.
@@ -42,14 +42,14 @@ Certifié NF525, MiiPos est conforme à la loi française anti-fraude 2018.
 
 ## Fonctionnalités de l'intégration
 
-Connecter MiiPos à HubRise permet à votre logiciel de caisse de :
+Connecter MiiPos à HubRise permet à votre logiciel de caisse de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.
 
 ---
 
-**REMARQUE IMPORTANTE :** L'envoi du menu MiiPos à un catalogue HubRise sera bientôt possible. Contactez MiiPos pour plus d'information à ce sujet.
+**REMARQUE IMPORTANTE :** L'envoi du menu MiiPos à un catalogue HubRise sera bientôt possible. Contactez MiiPos pour plus d'information à ce sujet.
 
 ---
 

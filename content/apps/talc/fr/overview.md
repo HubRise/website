@@ -16,7 +16,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** L'audit de l'intégration est en cours. Une documentation complète sera publiée une fois l'audit terminé.
+**REMARQUE IMPORTANTE :** L'audit de l'intégration est en cours. Une documentation complète sera publiée une fois l'audit terminé.
 
 ---
 
@@ -30,7 +30,7 @@ Delivery System est conforme à la loi française anti-fraude 2018. L'éditeur f
 
 ## Fonctionnalités de l'intégration
 
-Connecter Delivery System à HubRise permet à votre logiciel de caisse de :
+Connecter Delivery System à HubRise permet à votre logiciel de caisse de :
 
 - Envoyer les commandes à HubRise.
 - Recevoir les commandes de HubRise.
@@ -40,7 +40,7 @@ Connecter Delivery System à HubRise permet à votre logiciel de caisse de :
 
 ---
 
-**REMARQUE IMPORTANTE :** La fidélité client sera bientôt synchronisée avec HubRise. Contactez T.A.L.C Informatique pour plus d'information.
+**REMARQUE IMPORTANTE :** La fidélité client sera bientôt synchronisée avec HubRise. Contactez T.A.L.C Informatique pour plus d'information.
 
 ---
 

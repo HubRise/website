@@ -14,24 +14,24 @@ Pour voir la liste des commandes passées depuis SuperDigital.fr, sélectionnez 
 
 ## Détail d'une commande
 
-Pour voir les détails d'une commande :
+Pour voir les détails d'une commande :
 
 1. Dans le menu latéral, sélectionnez **RestroPress** > **Orders**.
 1. Identifiez la commande souhaitée, puis cliquez sur l'icône **Preview**.
 
 ## Statuts de commande
 
-SuperDigital.fr supporte les statuts de commande suivants :
+SuperDigital.fr supporte les statuts de commande suivants :
 
-- _Pending_ : la commande est en attente d'acceptation.
-- _Accepted_ : la commande a été acceptée.
-- _Processing_ : la commande est en cours de préparation.
-- _Ready_ : la commande est prête.
-- _In Transit_ : la commande est en cours de livraison.
-- _Cancelled_ : la commande a été annulée.
-- _Completed_ : la commande est terminée.
+- _Pending_ : la commande est en attente d'acceptation.
+- _Accepted_ : la commande a été acceptée.
+- _Processing_ : la commande est en cours de préparation.
+- _Ready_ : la commande est prête.
+- _In Transit_ : la commande est en cours de livraison.
+- _Cancelled_ : la commande a été annulée.
+- _Completed_ : la commande est terminée.
 
-Pour modifier le statut d'une commande :
+Pour modifier le statut d'une commande :
 
 1. Dans le menu latéral, sélectionnez **RestroPress** > **Orders**.
 1. Dans la colonne **Order Status**, sélectionnez le nouveau statut.

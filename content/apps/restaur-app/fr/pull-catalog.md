@@ -12,7 +12,7 @@ Pour que les commandes Restaur'App soient traitées par votre logiciel de caisse
 
 Certains logiciels de caisse permettent d'exporter des menus vers HubRise. Votre menu Restaur'App sera alors alimenté automatiquement avec les bons codes ref. Cependant, si votre logiciel de caisse ne prend pas en charge l'envoi de menu vers HubRise, vous devez associer manuellement les codes ref, comme indiqué dans la section [Associer les codes ref](/apps/restaur-app/map-ref-codes). Pour le vérifier, reportez-vous à la documentation de votre logiciel de caisse sur notre [page Apps](/apps).
 
-Pour récupérer un catalogue HubRise dans Restaur'App :
+Pour récupérer un catalogue HubRise dans Restaur'App :
 
 1. Depuis le back-office de Restaur'App, cliquez sur **Magasin** > **Etablissements** dans la barre de navigation.
 1. Cliquez sur l'icône en forme de crayon sur l'établissement dont vous souhaitez importer le catalogue.
@@ -24,6 +24,6 @@ Pour récupérer un catalogue HubRise dans Restaur'App :
 
 ---
 
-**REMARQUE IMPORTANTE :** La récupération d'un catalogue HubRise écrase tous les produits existants dans Restaur'App. Cette action est irréversible.
+**REMARQUE IMPORTANTE :** La récupération d'un catalogue HubRise écrase tous les produits existants dans Restaur'App. Cette action est irréversible.
 
 ---

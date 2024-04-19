@@ -12,7 +12,7 @@ Cette page décrit comment résoudre les erreurs causées par des codes ref manq
 
 ## Erreur "Could Not Add Item (Not Found)" (Impossible d'ajouter l'article [introuvable])
 
-Il peut arriver que les commandes échouent en affichant un message d'erreur similaire à celui-ci :
+Il peut arriver que les commandes échouent en affichant un message d'erreur similaire à celui-ci :
 
 ```json
 {
@@ -39,7 +39,7 @@ Malheureusement, le message d'erreur ne précise pas l'article qui provoque l'er
 
 ## Erreur "No such item" (L'article n'existe pas)
 
-Il peut arriver que les commandes échouent en affichant un message d'erreur similaire à celui-ci :
+Il peut arriver que les commandes échouent en affichant un message d'erreur similaire à celui-ci :
 
 ```json
 {
@@ -49,7 +49,7 @@ Il peut arriver que les commandes échouent en affichant un message d'erreur sim
 }
 ```
 
-Cette erreur est généralement provoquée par :
+Cette erreur est généralement provoquée par :
 
 - Des codes ref incorrects.
 - Un iPad non mis à jour.

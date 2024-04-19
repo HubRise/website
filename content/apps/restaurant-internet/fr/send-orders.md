@@ -17,7 +17,7 @@ Pour accéder à la liste des commandes passées sur votre site Restaurant-inter
 
 ## Synchronisation des statuts de commande
 
-Depuis la liste des commandes dans Restaurant-internet, vous pouvez :
+Depuis la liste des commandes dans Restaurant-internet, vous pouvez :
 
 - Accepter ou rejeter une commande nouvelle.
 - Annuler ou clôturer une commande acceptée.

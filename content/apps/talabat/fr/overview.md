@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Intégration en cours. Une documentation complète sera publiée une fois ce travail terminé.
+**REMARQUE IMPORTANTE :** Intégration en cours. Une documentation complète sera publiée une fois ce travail terminé.
 
 ---
 
@@ -27,7 +27,7 @@ Talabat est une plateforme de commande et de livraison de repas fondée au Kowe�
 
 ## Fonctionnalités de l'intégration
 
-Connecter Talabat à HubRise permet à votre plateforme commande et de livraison de repas de :
+Connecter Talabat à HubRise permet à votre plateforme commande et de livraison de repas de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Envoyer les informations clients à HubRise.

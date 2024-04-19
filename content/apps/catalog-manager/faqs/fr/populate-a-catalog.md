@@ -8,7 +8,7 @@ meta:
   description: Instructions pour remplir un catalogue sur HubRise. Catalog Manager est une application permettant de créer, éditer et prévisualiser vos catalogues HubRise.
 ---
 
-Il y a deux façons d'alimenter un catalogue sur HubRise :
+Il y a deux façons d'alimenter un catalogue sur HubRise :
 
 - Vous pouvez alimenter un catalogue manuellement à l'aide du Catalog Manager. Pour plus d'informations, voir [Catalog Manager](/apps/catalog-manager/overview).
 

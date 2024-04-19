@@ -26,11 +26,11 @@ L'onglet **Jours suivants** affiche toutes les commandes avec une date de livra
 
 ## Historique des commandes
 
-OrderLine offre une vue d'ensemble avec toutes les commandes : passées, présentes et futures. Pour consulter celle-ci, cliquez sur **HISTORIQUE**.
+OrderLine offre une vue d'ensemble avec toutes les commandes : passées, présentes et futures. Pour consulter celle-ci, cliquez sur **HISTORIQUE**.
 
 Les commandes sont affichées en commençant par les plus récentes.
 
-Pour une recherche ciblée dans votre historique de commandes, vous pouvez utiliser les filtres disponibles, qui incluent :
+Pour une recherche ciblée dans votre historique de commandes, vous pouvez utiliser les filtres disponibles, qui incluent :
 
 - Le nom du client ou la référence de la commande.
 - La plage de dates de livraison.

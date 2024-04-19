@@ -24,7 +24,7 @@ Vous n'avez donc pas besoin de les renseigner dans les plateformes de commande e
 
 MiiPos utilise les codes ref de type de service pour déterminer l'origine et le type de commande. L'origine est la plateforme de livraison de repas, et le type de commande est un champ libre optionnel qui permet de distinguer les commandes de différentes marques.
 
-Le code ref de type de service peut avoir l'un des deux formats suivants : `[plateforme]` ou `[plateforme]_[type de commande]`. Pour la plateforme, utilisez l'un des codes suivants :
+Le code ref de type de service peut avoir l'un des deux formats suivants : `[plateforme]` ou `[plateforme]_[type de commande]`. Pour la plateforme, utilisez l'un des codes suivants :
 
 - `DV` pour Deliveroo
 - `JE` pour Just Eat

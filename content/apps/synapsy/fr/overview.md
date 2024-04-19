@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Intégration en cours. Une documentation complète sera publiée une fois ce travail terminé.
+**REMARQUE IMPORTANTE :** Intégration en cours. Une documentation complète sera publiée une fois ce travail terminé.
 
 ---
 
@@ -31,7 +31,7 @@ Société éditrice de logiciel de caisse créée en 2005, Synapsy est certifié
 
 ## Fonctionnalités de l'intégration
 
-Connecter Synapsy à HubRise permet à votre logiciel de caisse de :
+Connecter Synapsy à HubRise permet à votre logiciel de caisse de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.
@@ -40,7 +40,7 @@ Connecter Synapsy à HubRise permet à votre logiciel de caisse de :
 
 ---
 
-**REMARQUE IMPORTANTE :** L'envoi des commandes et des informations clients à HubRise sera bientôt possible. Contactez Synapsy pour plus d'information à ce sujet.
+**REMARQUE IMPORTANTE :** L'envoi des commandes et des informations clients à HubRise sera bientôt possible. Contactez Synapsy pour plus d'information à ce sujet.
 
 ---
 

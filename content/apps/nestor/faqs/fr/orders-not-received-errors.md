@@ -12,7 +12,7 @@ meta:
 
 L'utilitaire WebNES est inclus dans l'installation de Nestor. Son rôle est de récupérer les commandes toutes les 20 secondes. Si vous ne voyez pas une commande apparaître, commencez par attendre quelques instants.
 
-Une fois le délai de 20 secondes écoulé, si la commande n'apparaît toujours pas, vérifiez que l'utilitaire WebNES est fonctionnel :
+Une fois le délai de 20 secondes écoulé, si la commande n'apparaît toujours pas, vérifiez que l'utilitaire WebNES est fonctionnel :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONNEXIONS**.
 1. Dans la connexion **Nestor**, cliquez sur **Actions** > **Voir les logs**.

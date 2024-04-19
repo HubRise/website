@@ -12,7 +12,7 @@ Pour traiter correctement les commandes, la plupart des logiciels de caisse exig
 
 ---
 
-**REMARQUE IMPORTANTE :** Omettre des codes ref peut empêcher Deliveroo de traiter correctement la commande. Pour plus d'informations, consultez la section [Commandes non reçues](/apps/deliveroo/troubleshooting#orders-not-received) de la page de dépannage.
+**REMARQUE IMPORTANTE :** Omettre des codes ref peut empêcher Deliveroo de traiter correctement la commande. Pour plus d'informations, consultez la section [Commandes non reçues](/apps/deliveroo/troubleshooting#orders-not-received) de la page de dépannage.
 
 ---
 

@@ -19,7 +19,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/app4">en anglais uniquement</Link>.
+**REMARQUE IMPORTANTE :** La documentation complète est disponible <Link href="/apps/app4">en anglais uniquement</Link>.
 
 ---
 
@@ -27,11 +27,11 @@ app_info:
 
 App4 est un système de commande en ligne qui permet aux clients du restaurant de passer des commandes à partir de leur navigateur, d'une application mobile sur iOS ou Android, ou depuis leur table. App4 offre de nombreuses fonctionnalités pour les restaurants telles qu'un programme de fidélité et la réservation de tables.
 
-Depuis le back-office, les restaurants peuvent contrôler leur activité : mise à jour du menu et des options de livraison, lancement d'opérations marketing et analyse de leur efficacité grâce aux rapports.
+Depuis le back-office, les restaurants peuvent contrôler leur activité : mise à jour du menu et des options de livraison, lancement d'opérations marketing et analyse de leur efficacité grâce aux rapports.
 
 ## Fonctionnalités de l'intégration
 
-Connecter App4 à HubRise permet à la solution de commande en ligne de :
+Connecter App4 à HubRise permet à la solution de commande en ligne de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Envoyer les informations clients à HubRise.

@@ -15,7 +15,7 @@ meta:
 
 ## Connecter Delicity
 
-Pour connecter Delicity à HubRise, suivez ces étapes :
+Pour connecter Delicity à HubRise, suivez ces étapes :
 
 1. Créez un compte HubRise. Pour plus d'information, consultez notre [Guide de démarrage](/docs/get-started).
 1. Depuis le back-office de Delicity, cliquez sur **Intégrations**

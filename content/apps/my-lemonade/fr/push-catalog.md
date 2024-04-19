@@ -14,7 +14,7 @@ Pour exporter votre menu, vous devez activer l'auto-exportation. Il n'y a pas d'
 
 Lorsque vous activez l'auto-exportation, chaque modification de la carte My Lemonade entraîne une mise à jour de l'ensemble du catalogue HubRise. Si vous souhaitez exporter le catalogue une seule fois, activez l'auto-exportation, effectuez une mise à jour de la carte My Lemonade, puis désactivez l'auto-exportation.
 
-Pour activer l'auto-exportation :
+Pour activer l'auto-exportation :
 
 1. Dans le menu latéral du back office, sélectionnez **Paramètres**.
 1. Sélectionnez l'onglet **CAISSE**.

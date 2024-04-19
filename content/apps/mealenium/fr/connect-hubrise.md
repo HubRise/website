@@ -19,7 +19,7 @@ meta:
 Seule l'équipe de support Mealenium, BOS Monétique ou autre revendeur peuvent connecter Mealenium à HubRise.
 Pour cela, le paramètres **Gérer les commandes de partenaires** doit être activé.
 
-Pour connecter Mealenium à HubRise, procédez comme suit :
+Pour connecter Mealenium à HubRise, procédez comme suit :
 
 1. Donnez accès à votre compte HubRise à l'équipe de support Mealenium. Voir, [Donner accès au support de Mealenium](#give-access).
 1. Contactez l'équipe de support de votre logiciel de caisse qui se chargera d'établir la connexion à HubRise. Pour plus d'information, voir [Contacter le support de Mealenium](#contact).

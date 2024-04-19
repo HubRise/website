@@ -18,11 +18,11 @@ Vous pouvez également exporter votre catalogue Lightspeed directement dans HubR
 
 Vous pouvez télécharger votre catalogue Lightspeed pour gérer les articles et les codes ref avec sur un autre logiciel.
 
-Pour télécharger le catalogue Lightspeed, suivez ces étapes :
+Pour télécharger le catalogue Lightspeed, suivez ces étapes :
 
 1. Dans votre back-office Lightspeed, sélectionnez **Configuration**, puis **Articles** > **Articles**.
 1. Cliquez sur le bouton **Exporter**. ![Bouton Exporter sur la page Articles du back-office Lightspeed](./images/006-2x-lightspeed-export-items.png)
-1. Dans la popup, choisissez votre type de système d'exploitation : Mac ou Windows (ou configuration manuelle), puis cliquez sur **Exporter**. ![Choisir le système d'exploitation lors de l'exportation du catalogue dans Lightspeed](./images/007-2x-lightspeed-system-choice.png)
+1. Dans la popup, choisissez votre type de système d'exploitation : Mac ou Windows (ou configuration manuelle), puis cliquez sur **Exporter**. ![Choisir le système d'exploitation lors de l'exportation du catalogue dans Lightspeed](./images/007-2x-lightspeed-system-choice.png)
 1. Une fois l'exportation terminée, sélectionnez **Cliquez ici pour télécharger le fichier exporté** pour télécharger le fichier CSV avec votre menu. ![Télécharger le fichier CSV avec les articles](./images/008-2x-lightspeed-download-csv.png)
 
 Pour vérifier les codes ref des articles, vous pouvez ouvrir le fichier CSV téléchargé dans Excel ou dans un éditeur de texte. Les codes ref figurent dans la colonne **SKU**.
@@ -33,7 +33,7 @@ Vous pouvez trouver les codes ref des SKUs, options, promotions, remises, frais,
 
 ### SKU, options, remises et frais
 
-Pour trouver les codes ref des SKUs, options, remises et frais, suivez ces étapes :
+Pour trouver les codes ref des SKUs, options, remises et frais, suivez ces étapes :
 
 1. Dans votre back-office Lightspeed, sélectionnez **Configuration**, puis **Articles** > **Articles**.
 1. Les codes ref figurent dans la colonne **SKU**. ![](./images/009-2x-lightspeed-skus-options-codes.png)
@@ -44,7 +44,7 @@ Notez que les frais et les remises doivent être créés en tant qu'articles pou
 
 ### Instructions de production
 
-Les instructions de production dans Lightspeed peuvent être associées aux options HubRise. Pour trouver les codes ref des instructions de production, suivez ces étapes :
+Les instructions de production dans Lightspeed peuvent être associées aux options HubRise. Pour trouver les codes ref des instructions de production, suivez ces étapes :
 
 1. Dans votre back-office Lightspeed, sélectionnez **Configuration**, puis **Paramètres** > **Instructions de production**.
 1. Pour télécharger la liste complète des instructions de production, cliquez sur **Exporter au format CSV**.
@@ -54,20 +54,20 @@ Lorsque vous associez les instructions de production aux applications connectée
 
 ---
 
-**REMARQUE IMPORTANTE** : Aucun prix n'est associé aux instructions de production. L'ajout d'un prix dans une application connectée peut générer des [erreurs liées à une différence de prix](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors).
+**REMARQUE IMPORTANTE** : Aucun prix n'est associé aux instructions de production. L'ajout d'un prix dans une application connectée peut générer des [erreurs liées à une différence de prix](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors).
 
 ---
 
 ### Types de service {#service-types}
 
-Dans Lightspeed, les types de services sont appelés _profils de compte_. Pour trouver le code ref d'un type de service spécifique, suivez ces étapes :
+Dans Lightspeed, les types de services sont appelés _profils de compte_. Pour trouver le code ref d'un type de service spécifique, suivez ces étapes :
 
 1. Dans votre back-office Lightspeed, sélectionnez **Configuration**, puis **Paramètres** > **Profils de compte**.
 1. Pour chaque type de service disponible dans la colonne **Nom**, vous trouverez un code ref dans la colonne **Code**.
 
 ### Modes de paiement {#payment-methods}
 
-Pour trouver le code ref d'un mode de paiement, suivez ces étapes :
+Pour trouver le code ref d'un mode de paiement, suivez ces étapes :
 
 1. Dans votre back-office Lightspeed, sélectionnez **Configuration**, puis **Paramètres** > **Modes de paiement**.
 1. Pour chaque mode de paiement disponible dans la colonne **Nom**, vous trouverez un code ref dans la colonne **Code**.

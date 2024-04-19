@@ -107,7 +107,7 @@ Deliveroo indique l'heure à laquelle le client s'attend à recevoir ou à retir
 
 Deliveroo ne fournit jamais le nom complet du client, ni son numéro de téléphone personnel, ni son adresse e-mail. Il ne fournit pas non plus d'identifiant unique du client. Par conséquent, Deliveroo Bridge ne crée pas de clients dans HubRise, mais inclut les coordonnées du client directement dans la commande.
 
-Pour les commandes livrées par le restaurant, Deliveroo Bridge fournit les informations suivantes :
+Pour les commandes livrées par le restaurant, Deliveroo Bridge fournit les informations suivantes :
 
 - `first_name` : le prénom du client.
 - `last_name` : l'initiale du nom de famille du client.

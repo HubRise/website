@@ -16,7 +16,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Intégration en cours. Une documentation complète sera publiée une fois ce travail terminé.
+**REMARQUE IMPORTANTE :** Intégration en cours. Une documentation complète sera publiée une fois ce travail terminé.
 
 ---
 
@@ -28,7 +28,7 @@ Uber officialise l'acquisition de Postmates en 2020. Postmates est principalemen
 
 ## Fonctionnalités de l'intégration
 
-Connecter Postmates à HubRise permet à votre service de livraison à domicile de :
+Connecter Postmates à HubRise permet à votre service de livraison à domicile de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.

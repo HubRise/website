@@ -12,7 +12,7 @@ Carré POS peut envoyer l'inventaire et l'indisponibilité des produits vers Hu
 
 ## Activer l'envoi de l'inventaire vers HubRise
 
-Pour activer l'envoi automatique de l'inventaire et de l'indisponibilité des produits vers HubRise, suivez ces étapes :
+Pour activer l'envoi automatique de l'inventaire et de l'indisponibilité des produits vers HubRise, suivez ces étapes :
 
 1. Ouvrez Carré POS.
 1. Cliquez sur **ACCUEIL**.
@@ -29,7 +29,7 @@ Après le redémarrage de Carré POS, l'inventaire et l'indisponibilité des pr
 
 ## Envoi manuel de l'inventaire
 
-Bien que l'inventaire soit synchronisé automatiquement, vous pouvez également l'envoyer manuellement depuis le back-office de Carré POS :
+Bien que l'inventaire soit synchronisé automatiquement, vous pouvez également l'envoyer manuellement depuis le back-office de Carré POS :
 
 1. Ouvrez le back-office Carré POS.
 1. Sélectionnez **HubRise** > **Configuration**.
@@ -39,7 +39,7 @@ Cette fonction peut s'avérer utile notamment en cas de nouvelle connexion à Hu
 
 ## Stock et indisponibilité des produits
 
-Pour une consultation rapide, vous pouvez voir l'inventaire et l'indisponibilité des produits directement dans l'écran de caisse :
+Pour une consultation rapide, vous pouvez voir l'inventaire et l'indisponibilité des produits directement dans l'écran de caisse :
 
 - Les nombres apparaissant en vert indiquent la quantité disponible en stock.
 - Les nombres apparaissant en rouge indiquent un stock épuisé.
@@ -51,7 +51,7 @@ D'autres interfaces sont disponibles pour la gestion du stock et de la disponibi
 
 ## Synchronisation avec HubRise
 
-Carré POS envoie automatiquement l'inventaire et l'indisponibilité des produits vers HubRise à chaque modification :
+Carré POS envoie automatiquement l'inventaire et l'indisponibilité des produits vers HubRise à chaque modification :
 
 - Si le produit est indisponible, le stock est mis à `0` sur HubRise.
 - Sinon, si la gestion de stock est activée pour le produit, le stock est mis à la quantité disponible.

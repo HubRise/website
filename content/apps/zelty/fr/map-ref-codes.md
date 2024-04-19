@@ -12,7 +12,7 @@ Pour recevoir des commandes depuis HubRise, Zelty a besoin de codes ref spécifi
 
 Pour obtenir les codes ref, vous devez exporter votre carte. L'export inclut les codes ref des produits, menus et options.
 
-Pour exporter l'ensemble de votre carte au format CSV ou via un fichier Excel :
+Pour exporter l'ensemble de votre carte au format CSV ou via un fichier Excel :
 
 1. Dans le back office Zelty, cliquez sur **La carte** puis **Les produits**.
 2. Dans la barre d'outils en haut à droite, cliquez sur l'icône **Exporter la carte**.

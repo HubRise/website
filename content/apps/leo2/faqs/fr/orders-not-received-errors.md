@@ -14,7 +14,7 @@ Si vous ne recevez pas vos commandes HubRise dans LEO2, cette page indique les c
 
 LEO2 récupère les commandes toutes les 30 secondes. Si vous ne voyez pas une commande apparaître, commencez par attendre quelques instants.
 
-Une fois le délai de 30 secondes écoulé, si la commande n'apparaît toujours pas, vérifiez que le serveur HubRise de LEO2 est lancé :
+Une fois le délai de 30 secondes écoulé, si la commande n'apparaît toujours pas, vérifiez que le serveur HubRise de LEO2 est lancé :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONNEXIONS**.
 1. Dans la connexion **LEO2**, cliquez sur **Actions** > **Voir les logs**.
@@ -28,7 +28,7 @@ Le serveur HubRise de LEO2 peut également être configuré pour démarrer en m�
 
 Les codes ref des articles doivent être numériques. Dans le cas contraire, le serveur HubRise de LEO2 peut s'arrêter lors de la récupération de la commande.
 
-Si LEO2 cesse de fonctionner lors de la récupération d'une telle commande, suivez ces étapes :
+Si LEO2 cesse de fonctionner lors de la récupération d'une telle commande, suivez ces étapes :
 
 - Vérifiez que tous les codes ref des articles sont numériques dans la solution tierce.
 - Contactez le support HubRise sur support@hubrise.com pour purger les envois de commandes en erreur.

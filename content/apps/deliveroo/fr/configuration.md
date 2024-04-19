@@ -56,7 +56,7 @@ Sélectionnez la case **Activer la synchronisation automatique du catalogue** po
 
 Les champs **Identifiant de la marque** et **Identifiant du menu** identifient le menu que vous souhaitez mettre à jour sur Deliveroo. Les valeurs par défaut fonctionnent généralement pour la plupart des utilisateurs.
 
-La **description du menu** et la **bannière du menu** remplacent la description et la bannière courantes sur Deliveroo lorsque vous envoyez votre catalogue. Les spécifications de l'image de la bannière sont les suivantes :
+La **description du menu** et la **bannière du menu** remplacent la description et la bannière courantes sur Deliveroo lorsque vous envoyez votre catalogue. Les spécifications de l'image de la bannière sont les suivantes :
 
 - Résolution minimale de 1920x1080 pixels, format 16:9
 - Doit être au format JPG ou PNG
@@ -84,7 +84,7 @@ Si vous avez besoin de réinitialiser la configuration, cliquez sur **Réinitial
 
 ---
 
-**REMARQUE IMPORTANTE :** La réinitialisation de la configuration déconnectera instantanément le bridge de Deliveroo. Vous aurez besoin de votre identifiant de restaurant Deliveroo pour rétablir la connexion.
+**REMARQUE IMPORTANTE :** La réinitialisation de la configuration déconnectera instantanément le bridge de Deliveroo. Vous aurez besoin de votre identifiant de restaurant Deliveroo pour rétablir la connexion.
 
 ---
 

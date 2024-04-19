@@ -37,7 +37,7 @@ Vous pouvez **Renommer**, **Dupliquer** ou **Supprimer** les catalogues existant
 
 Dupliquer un catalogue peut être utile si vous souhaitez créer un catalogue basé sur un catalogue existant ou faire une sauvegarde de votre catalogue.
 
-Pour dupliquer un catalogue, suivez ces étapes :
+Pour dupliquer un catalogue, suivez ces étapes :
 
 1. Dans Catalog Manager, accédez à la page **Catalogues**.
 2. Trouvez le catalogue que vous souhaitez dupliquer, développez la liste **Actions**, puis sélectionnez **Dupliquer**.

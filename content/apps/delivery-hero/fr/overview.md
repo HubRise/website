@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
@@ -33,7 +33,7 @@ L'activité de Delivery Hero est neutre en dioxyde de carbone en Europe et en Am
 
 ## Fonctionnalités de l'intégration
 
-Connecter Delivery Hero à HubRise permet à votre plateforme de livraison de repas de :
+Connecter Delivery Hero à HubRise permet à votre plateforme de livraison de repas de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Envoyer les informations de livraison, pour les commandes livrées par votre équipe.

@@ -18,14 +18,14 @@ Cette page explique comment envoyer votre catalogue et quelles informations sont
 
 Pour mettre à jour votre menu Deliveroo, vous devez préalablement avoir un catalogue dans HubRise. De nombreuses applications connectées à HubRise, notamment les logiciels de caisse, peuvent envoyer leur catalogue vers HubRise. Reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise pour vérifier.
 
-Vous pouvez aussi alimenter un catalogue HubRise en récupérant un menu existant depuis Deliveroo ou Uber Eats. Pour plus d'informations, consultez ces liens :
+Vous pouvez aussi alimenter un catalogue HubRise en récupérant un menu existant depuis Deliveroo ou Uber Eats. Pour plus d'informations, consultez ces liens :
 
 - [Récupérer un catalogue depuis Deliveroo](/apps/deliveroo/pull-catalog)
   **- <Link href="/apps/uber-eats/pull-catalog">Récupérer un catalogue depuis Uber Eats (en anglais)</Link>**
 
 ## Envoi manuel du catalogue
 
-Une fois que vous avez alimenté votre catalogue sur HubRise et assigné des codes ref à tous les produits et options, vous pouvez l'envoyer manuellement vers Deliveroo en suivant ces étapes :
+Une fois que vous avez alimenté votre catalogue sur HubRise et assigné des codes ref à tous les produits et options, vous pouvez l'envoyer manuellement vers Deliveroo en suivant ces étapes :
 
 1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com).
 1. Sélectionnez le compte HubRise et le point de vente connecté à votre restaurant Deliveroo.
@@ -35,7 +35,7 @@ Une fois que vous avez alimenté votre catalogue sur HubRise et assigné des cod
 
 ---
 
-**REMARQUE IMPORTANTE :** L'envoi de votre catalogue HubRise vers Deliveroo effacera le menu actuel sur Deliveroo et remplacera la **Description du menu** et la **Bannière du menu** par ceux définis dans la page de **Configuration**. Cette action est irréversible. L'envoie du catalogue ne fonctionnera pas si des codes ref sont manquants.
+**REMARQUE IMPORTANTE :** L'envoi de votre catalogue HubRise vers Deliveroo effacera le menu actuel sur Deliveroo et remplacera la **Description du menu** et la **Bannière du menu** par ceux définis dans la page de **Configuration**. Cette action est irréversible. L'envoie du catalogue ne fonctionnera pas si des codes ref sont manquants.
 
 ---
 
@@ -107,7 +107,7 @@ L'ordre des catégories et les produits sur HubRise est conservé sur Deliveroo.
 
 ### Produits et skus
 
-Les produits ont une ou plusieurs skus. Pour chaque produit avec plusieurs skus, Deliveroo Bridge envoie les informations suivantes à Deliveroo :
+Les produits ont une ou plusieurs skus. Pour chaque produit avec plusieurs skus, Deliveroo Bridge envoie les informations suivantes à Deliveroo :
 
 - `ref` : la valeur `MULTISKU` est utilisée pour tous les produits.
 - `name` : le nom du produit.

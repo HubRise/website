@@ -43,10 +43,10 @@ Cette section explique comment les commandes sont encodées dans les requêtes J
 
 Pour chaque article de la commande, Shopify Bridge fournit les informations suivantes :
 
-- `product_name` : nom du produit
-- `sku_ref` : code ref de l'article
-- `price` : prix unitaire de l'article
-- `quantity` : quantité d'articles dans la commande.
+- `product_name` : nom du produit
+- `sku_ref` : code ref de l'article
+- `price` : prix unitaire de l'article
+- `quantity` : quantité d'articles dans la commande.
 
 <details>
 
@@ -78,7 +78,7 @@ La remise appliquée à la commande est transmise en tant qu'objet unique dans l
 Les champs disponibles dans la requête sont les suivants :
 
 - `name` : nom de la remise, par défaut "Total discount" (Remise totale)
-- `price_off` : montant total de la remise
+- `price_off` : montant total de la remise
 
 Shopify ne fournit pas de code ref pour les remises.
 
@@ -105,8 +105,8 @@ Shopify Bridge encode les frais de livraison dans le tableau `charges`, s'ils so
 Les champs disponibles dans les requêtes sont les suivants :
 
 - `name` : intitulé des frais de livraison, par défaut `Delivery charge` (Frais de livraison)
-- `type` : type de frais. La valeur est toujours `delivery` (livraison).
-- `price` : montant total des frais de livraison
+- `type` : type de frais. La valeur est toujours `delivery` (livraison).
+- `price` : montant total des frais de livraison
 
 Shopify ne fournit pas de code ref pour les frais de livraison.
 
@@ -132,9 +132,9 @@ Les informations sur le paiement sont incluses dans le tableau `payments`. Un pa
 
 Les champs disponibles dans les requêtes sont les suivants :
 
-- `name` : nom de la méthode de paiement
-- `type` : type de paiement. La valeur est toujours `online` (en ligne).
-- `amount` : montant total du paiement
+- `name` : nom de la méthode de paiement
+- `type` : type de paiement. La valeur est toujours `online` (en ligne).
+- `amount` : montant total du paiement
 
 ### Prix total
 
