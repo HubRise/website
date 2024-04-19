@@ -8,7 +8,7 @@ meta:
   description: Find out how to push your HubRise catalog to PrestaShop, how items and options are encoded, and which features are supported.
 ---
 
-You can use PrestaShop Bridge to push your HubRise catalog directly into your PrestaShop store. Also, you can update the availability of your items on PrestaShop every time this changes on HubRise.
+With PrestaShop Bridge, you can push your HubRise catalog into your PrestaShop store with a single click, or automate the push every time your catalog is updated on HubRise. Additionally, you can synchronise the availability of your items in PrestaShop with your HubRise inventory.
 
 This page explains how you can push your catalog, what information is sent to PrestaShop, and how you can synchronise your inventory.
 

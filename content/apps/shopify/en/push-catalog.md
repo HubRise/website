@@ -8,15 +8,17 @@ meta:
   description: Find out how to push your HubRise catalog to Shopify, how items and options are encoded, and which features are supported.
 ---
 
-You can use Shopify Bridge to push your HubRise catalog directly into your Shopify store. 
+With Shopify Bridge, you can push your HubRise catalog into your Shopify store with a single click, or automate the push every time your catalog is updated on HubRise.
 
-This page explains how you can push your catalog, and clarifies what information is sent to Shopify.
+This page explains how you can push your catalog and what information is sent to Shopify.
+
+For more information on HubRise catalogs, see our online help, section [Catalogs](/docs/catalog).
 
 ## Populate a HubRise Catalog
 
 To be able to push your catalog into Shopify, you must populate a HubRise catalog first. Many apps connected with HubRise, including EPOS solutions, offer the ability to export the catalog to HubRise. Refer to your EPOS documentation on our [Apps page](/apps) to verify.
 
-For more information on HubRise catalogs, see [Catalogs](/docs/catalog).
+You can also use the HubRise Catalog Manager to create or update your catalog, including the addition of ref codes. Catalog Manager is edited by HubRise and you can use it free of charge. For more information, see [Catalog Manager](/apps/catalog-manager/overview).
 
 ## Manual Catalog Push
 
