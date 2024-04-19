@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting
 path_override: troubleshooting
-position: 8
+position: 9
 layout: documentation
 meta:
   title: Troubleshooting | PrestaShop | HubRise

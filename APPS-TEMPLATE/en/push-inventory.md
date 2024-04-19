@@ -8,7 +8,7 @@ meta:
   description: Find out how to synchronise your HubRise inventory with SOLUTION and automatically hide out-of-stock products from your website.
 ---
 
-SOLUTION Bridge can synchronise your HubRise inventory with SOLUTION and hide out-of-stock items from your website.
+SOLUTION Bridge can synchronise your HubRise inventory with SOLUTION.
 
 ---
 

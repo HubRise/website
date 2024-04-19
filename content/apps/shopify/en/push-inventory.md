@@ -8,13 +8,7 @@ meta:
   description: Find out how to synchronise your HubRise inventory with Shopify and automatically hide out-of-stock products from your website.
 ---
 
-Shopify Bridge can synchronise your HubRise inventory with Shopify and hide out-of-stock items from your website.
-
----
-
-**IMPORTANT NOTE:** Inventory synchronisation require all your products to have ref codes. For more information, see [Map Ref Codes](/apps/shopify/map-ref-codes).
-
----
+Shopify Bridge can synchronise your HubRise inventory with Shopify.
 
 ## Inventory Synchronisation
 
