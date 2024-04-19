@@ -18,7 +18,7 @@ Expedy permet de sélectionner le statut de commande qui déclenche l'impression
 - _Reçue_
 - _Acceptée_
 
-Expedy permet aussi d'effectuer une action supplémentaire lors de la réception d'une commande. Vous pouvez ainsi choisir de configurer l'imprimante qu'elle change elle-même le statut d'une commande en :
+Expedy permet aussi d'effectuer une action supplémentaire lors de la réception d'une commande. Vous pouvez ainsi choisir de configurer l'imprimante pour qu'elle change elle-même le statut d'une commande en :
 
 - _Reçue_
 - _Acceptée_
