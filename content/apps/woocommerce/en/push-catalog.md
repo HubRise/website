@@ -8,9 +8,9 @@ meta:
   description: Find out how to push your HubRise catalog to WooCommerce, how items and options are encoded, and which features are supported.
 ---
 
-This page explains how you can push your catalog and what information is sent to WooCommerce.
+With WooCommerce Bridge, you can push your HubRise catalog into your WooCommerce store with a single click, or automate the push every time your catalog is updated on HubRise.
 
-With WooCommerce Bridge, you can push your HubRise catalog directly into your WooCommerce store with a single click, or automate the push every time your catalog is updated on HubRise.
+This page explains how you can push your catalog and what information is sent to WooCommerce.
 
 For more information on HubRise catalogs, see our online help, section [Catalogs](/docs/catalog).
 
