@@ -8,24 +8,23 @@ meta:
   description: Découvrez comment envoyer le catalogue HubRise vers PrestaShop, comment les articles et options sont encodés, et quelles fonctionnalités sont prises en charge.
 ---
 
-Vous pouvez utiliser PrestaShop Bridge pour envoyer votre catalogue HubRise directement dans votre boutique PrestaShop. De plus, vous pouvez mettre à jour la disponibilité de vos articles dans PrestaShop, chaque fois qu'elle est modifiée dans HubRise.
+Avec PrestaShop Bridge, vous pouvez envoyer votre catalogue HubRise vers votre boutique PrestaShop en un clic, ou automatiser l'envoi à chaque mise à jour de votre catalogue sur HubRise. De plus, vous pouvez synchroniser la disponibilité de vos articles dans PrestaShop avec votre inventaire HubRise.
 
 Cette page explique comment envoyer votre catalogue, quelles informations sont transmises à PrestaShop et comment synchroniser votre inventaire.
+
+Pour plus d'informations sur les catalogues HubRise, voir [Catalogues](/docs/catalog).
 
 ## Envoyer le catalogue
 
 Avec PrestaShop Bridge, vous pouvez envoyer votre catalogue HubRise à PrestaShop. Vous pouvez laisser PrestaShop Bridge envoyer automatiquement votre catalogue chaque fois qu'il est mis à jour dans HubRise, ou l'envoyer manuellement lorsque vous en avez besoin.
+
+Si vous rencontrez des erreurs lors de l'envoi de votre catalogue, voir [Dépannage](/apps/prestashop/troubleshooting#push-catalog-errors).
 
 ### Alimenter un catalogue HubRise
 
 Pour pouvoir envoyer votre catalogue vers PrestaShop, vous devez préalablement alimenter un catalogue HubRise. De nombreuses applications connectées à HubRise, y compris des logiciels de caisse, offrent la possibilité d'exporter leur catalogue vers HubRise. Pour vérifier, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
 
 Vous pouvez également utiliser le Catalog Manager HubRise pour créer ou mettre à jour votre catalogue, y compris pour ajouter des codes ref. Catalog Manager est édité par HubRise, vous pouvez l'utiliser gratuitement. Pour plus d'informations, voir [Catalog Manager](/apps/catalog-manager/overview).
-
-Pour plus d'informations sur les catalogues HubRise, voir [Catalogues](/docs/catalog).
-
-Lorsque vous envoyez votre catalogue, PrestaShop Bridge crée les produits qui n'existent pas encore dans PrestaShop.
-PrestaShop Bridge ne supprime pas de produit.
 
 ### Envoi manuel du catalogue
 
@@ -53,12 +52,15 @@ Les sections suivantes décrivent la manière dont les catalogues HubRise sont a
 
 ### Catégories
 
-PrestaShop Bridge établit une correspondance entre les catégories HubRise et les catégories de produits sur PrestaShop. Le nom de la catégorie et sa description sont envoyés à PrestaShop.
+PrestaShop Bridge crée les catégories qui n'existent pas déjà dans PrestaShop, en les identifiant par leur nom.
+
+Le nom de la catégorie et sa description sont envoyés à PrestaShop.
 
 ### Produits et SKU
 
+PrestaShop Bridge crée les produits qui n'existent pas déjà dans PrestaShop, en les identifiant par leurs codes ref. Les nouveaux produits sont inactifs par défaut, vous permettant de les réviser avant de les rendre disponibles sur votre site Web. PrestaShop Bridge ne supprime ni ne met à jour les produits existants.
+
 Les produits HubRise et les SKU sont associés un à un aux produits et variantes PrestaShop.
-Pour plus d'informations sur les produits contenus dans les catalogues HubRise, voir [Products](/developers/api/catalogs#products) (en anglais).
 
 Pour chaque objet `product` HubRise, PrestaShop Bridge envoie les informations suivantes à PrestaShop :
 
@@ -73,7 +75,7 @@ Pour chaque SKU dans le tableau `skus`, PrestaShop Bridge envoie les information
 - `name` : nom de la SKU
 - `price` : prix de la SKU
 
-Pour plus d'informations sur les SKU dans le catalogue HubRise, voir [Skus](/developers/api/catalogs#skus) (en anglais).
+Pour plus d'informations sur les produits contenus dans les catalogues HubRise, voir [Products](/developers/api/catalogs#products) (en anglais).
 
 ### Options
 

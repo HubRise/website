@@ -58,9 +58,7 @@ Both the category name and description are sent to PrestaShop.
 
 ### Products and Skus
 
-PrestaShop Bridge creates the products that do not already exist in PrestaShop, identifying them by their ref codes. New products are inactive by default, letting you review them before making them available on your website.
-
-PrestaShop Bridge does not delete or update existing products.
+PrestaShop Bridge creates the products that do not already exist in PrestaShop, identifying them by their ref codes. New products are inactive by default, letting you review them before making them available on your website. PrestaShop Bridge does not delete or update existing products.
 
 HubRise products and skus are mapped one-to-one to PrestaShop products and combinations.
 
