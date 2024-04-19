@@ -12,6 +12,8 @@ You can use PrestaShop Bridge to push your HubRise catalog directly into your Pr
 
 This page explains how you can push your catalog, what information is sent to PrestaShop, and how you can synchronise your inventory.
 
+For more information on HubRise catalogs, see [Catalogs](/docs/catalog).
+
 ## Push Your Catalog
 
 PrestaShop Bridge lets you push your HubRise catalog to PrestaShop. You can let PrestaShop Bridge push your catalog automatically every time it is updated on HubRise, or push it manually when needed.
@@ -23,11 +25,6 @@ If you encounter errors when pushing your catalog, see [Troubleshooting](/apps/p
 To be able to push your catalog into PrestaShop, you must populate a HubRise catalog first. Many apps connected with HubRise, including EPOS solutions, offer the ability to export the catalog to HubRise. Refer to your EPOS documentation on the HubRise website to verify.
 
 You can also use the HubRise Catalog Manager to create or update your catalog, including the addition of ref codes. Catalog Manager is edited by HubRise and you can use it free of charge. For more information, see [Catalog Manager](/apps/catalog-manager/overview).
-
-For more information on HubRise catalogs, see [Catalogs](/docs/catalog).
-
-When you push your catalog, PrestaShop Bridge creates the products that do not yet exist in PrestaShop.
-PrestaShop Bridge does not delete products.
 
 ### Manual Catalog Push
 
@@ -55,12 +52,17 @@ The following sections describe in detail how HubRise catalogs are mapped to Pre
 
 ### Categories
 
-PrestaShop Bridge maps HubRise categories one-to-one to categories of products on PrestaShop. The category name and description are sent to PrestaShop.
+PrestaShop Bridge creates the categories that do not already exist in PrestaShop, identifying them by their name.
+
+Both the category name and description are sent to PrestaShop.
 
 ### Products and Skus
 
+PrestaShop Bridge creates the products that do not already exist in PrestaShop, identifying them by their ref codes. New products are inactive by default, letting you review them before making them available on your website.
+
+PrestaShop Bridge does not delete or update existing products.
+
 HubRise products and skus are mapped one-to-one to PrestaShop products and combinations.
-For more information about products in HubRise catalogs, see [Products](/developers/api/catalogs#products).
 
 For every HubRise `product` object, PrestaShop Bridge sends the following information to PrestaShop:
 
@@ -75,7 +77,7 @@ For every sku in the `skus` array, PrestaShop Bridge sends the following informa
 - `name`: The name of the sku
 - `price`: The price of the sku
 
-For more information about skus in the HubRise catalog, see [Skus](/developers/api/catalogs#skus).
+For more information about products in HubRise catalogs, see [Products](/developers/api/catalogs#products).
 
 ### Options
 
