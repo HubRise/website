@@ -37,8 +37,7 @@ Once your catalog is populated on HubRise, you can push it manually to your Shop
 
 ## Automatic Catalog Push
 
-Shopify Bridge can automatically push your HubRise catalog into Shopify every time it is updated. By default, this option is turned off. You can enable it by following these steps:The following sections describe how a catalog push affects your Shopify store.
-
+Shopify Bridge can automatically push your HubRise catalog into Shopify every time it is updated. By default, this option is turned off. You can enable it by following these steps:
 
 1. Log in to your [HubRise account](https://manager.hubrise.com).
 1. Select the HubRise account and location connected with your Shopify store.
@@ -49,6 +48,7 @@ Shopify Bridge can automatically push your HubRise catalog into Shopify every ti
 
 ## Technical Reference
 
+The following sections describe how a catalog push affects your Shopify store.
 
 ### Categories
 

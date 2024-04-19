@@ -1,7 +1,7 @@
 ---
 title: Récupérer des commandes
 path_override: recuperer-commandes
-position: 7
+position: 8
 layout: documentation
 meta:
   title: Récupérer des commandes | PrestaShop | HubRise

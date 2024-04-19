@@ -84,14 +84,6 @@ For every product in the HubRise catalog, the following information is sent to W
 
 If skus are present, WooCommerce Bridge creates a list of attributes and variations, and attaches them to the product. The name of the list is the configured **Metadata key(s) for SKU name** in the bridge **Configuration** page. The variations are the names of the skus.
 
-The bridge uses HubRise ref codes to detect existing products in WooCommerce and avoid duplicating them.
-
----
-
-**IMPORTANT NOTE:** Skus with no ref codes in the HubRise catalog are not sent to WooCommerce.
-
----
-
 For every `sku` object in a product, WooCommerce Bridge creates a variation with this information:
 
 - `ref`: The ref code of the sku, which will be passed along in orders

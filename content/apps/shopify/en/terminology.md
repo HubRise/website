@@ -10,7 +10,7 @@ meta:
 
 ## Correspondence Table
 
-HubRise and Shopify use their own terminology. The same concept can therefore have a different designation. The correspondence table below shows these differences.
+HubRise and Shopify use their own terminology. The same concept can therefore have a different designation in each solution. The correspondence table below shows these differences.
 
 | Shopify | HubRise | Description                                                                      |
 | ------- | ------- | -------------------------------------------------------------------------------- |

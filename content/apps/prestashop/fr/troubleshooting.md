@@ -1,7 +1,7 @@
 ---
 title: Dépannage
 path_override: depannage
-position: 8
+position: 9
 layout: documentation
 meta:
   title: Dépannage | PrestaShop | HubRise
@@ -56,7 +56,6 @@ Si vous avez un serveur web Apache, généralement utilisé avec PrestaShop, il 
 2. Accédez au répertoire `webservice`.
 
 3. Créez un fichier `.htaccess` dans le répertoire `webservice` avec le code suivant :
-
    ```apache
    <IfModule mod_rewrite.c>
      RewriteEngine on
