@@ -31,9 +31,9 @@ Oui. Notez que des remises sont possibles pour les chaînes de 6 points de vente
 
 Pour les chaînes de 6 points de vente ou plus, le tarif de l'abonnement est dégressif, suivant le barème suivant :
 
-- Points de vente 1 à 5 : 35€ HT
-- Points de vente 6 à 30 : 30€ HT
-- Points de vente 31 et plus : 27€ HT
+- Points de vente 1 à 5 : 35€ HT
+- Points de vente 6 à 30 : 30€ HT
+- Points de vente 31 et plus : 27€ HT
 
 Par exemple, pour une chaîne de 12 points de vente, l'abonnement sera de 35€ HT pour les 5 premiers points de vente, puis de 30€ HT pour les 7 suivants.
 
@@ -43,12 +43,12 @@ Les Dark Kitchens sont des restaurants ayant plusieurs marques virtuelles. Sur H
 
 Les tarifs suivants s'appliquent aux Dark Kitchens :
 
-- **Frais d'installation** : 25€ HT par plateforme et par marque virtuelle. Une remise est possible en regroupant les demandes de connexion, à partir de 5 connexions simultanées.
+- **Frais d'installation** : 25€ HT par plateforme et par marque virtuelle. Une remise est possible en regroupant les demandes de connexion, à partir de 5 connexions simultanées.
 
 - **Abonnement mensuel** variable en fonction du nombre de commandes :
-  - 0 à 1,500 commandes par mois : 35€ HT (tarif normal)
-  - 1,501 à 3,000 commandes par mois : 55€ HT
-  - 3,001 à 4,500 commandes par mois : 75€ HT
+  - 0 à 1,500 commandes par mois : 35€ HT (tarif normal)
+  - 1,501 à 3,000 commandes par mois : 55€ HT
+  - 3,001 à 4,500 commandes par mois : 75€ HT
   - Et ainsi de suite, avec un supplément de 20€ HT par tranche de 1,500 commandes supplémentaires.
 
 ## Données
@@ -85,7 +85,7 @@ Oui, vous pouvez ajouter des utilisateurs au niveau de votre compte, ou au nivea
 
 #### Je souhaite développer une application pour les commerçants, pourquoi utiliser HubRise ?
 
-HubRise vous donne immédiatement accès à l'écosystème des commerçants et restaurateurs : logiciels de caisse, solutions de commande en ligne, services de livraison... Vous pouvez ainsi vous concentrer sur les fonctionnalités innovantes de votre produit.
+HubRise vous donne immédiatement accès à l'écosystème des commerçants et restaurateurs : logiciels de caisse, solutions de commande en ligne, services de livraison... Vous pouvez ainsi vous concentrer sur les fonctionnalités innovantes de votre produit.
 
 #### Pouvez-vous m'aider à promouvoir mon application ?
 
@@ -117,7 +117,7 @@ HubRise stocke les commandes, le fichier clients, les produits, les promotions e
 
 #### Je souhaite stocker un champ dont je ne trouve pas d'équivalent dans l'API. Comment faire ?
 
-Les _custom fields_ ("champs personnalisés") permettent de stocker des données arbitraires non prévues dans l'API. Exemples : le nom du vendeur sur les commandes, un identifiant interne sur les clients, etc.
+Les _custom fields_ ("champs personnalisés") permettent de stocker des données arbitraires non prévues dans l'API. Exemples : le nom du vendeur sur les commandes, un identifiant interne sur les clients, etc.
 
 #### Comment une application est-elle informée de l'arrivée d'une nouvelle commmande ou de la mise à jour d'une donnée ?
 
