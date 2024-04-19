@@ -12,9 +12,7 @@ meta:
 
 HubRise and Shopify use their own terminology. The same concept can therefore have a different designation. The correspondence table below shows these differences.
 
-| Shopify | HubRise  | Description                                                                                             |
-|---------|----------|---------------------------------------------------------------------------------------------------------|
-| Variant | SKU name | Product ref code.                                                                                       |
-| SKU     | Ref code | Product ref code.                                                                                       |
-| n/a     | Variant  | HubRise Catalog Variants helps to create a single catalog across multiple sales channels and locations. |
-
+| Shopify | HubRise | Description                                                                      |
+| ------- | ------- | -------------------------------------------------------------------------------- |
+| Variant | SKU     | A product variant, such as a size or color.                                      |
+| n/a     | Variant | A catalog variant, used to unify multiple sales channels under a single catalog. |
