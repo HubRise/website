@@ -18,7 +18,7 @@ Shopify Bridge can synchronise your HubRise inventory with Shopify and hide out-
 
 ## Inventory Synchronisation
 
-Some EPOS and inventory management solutions can update the inventory data in HubRise. When your HubRise inventory is updated, Shopify Bridge automatically adjusts the products' inventory counters in Shopify. To check whether a specific app supports inventory synchronisation, refer to its documentation on our [Apps page](/apps). Alternatively, you can manage your inventory using [OrderLine](/apps/orderline/overview).
+Some EPOS and inventory management solutions can update the inventory data in HubRise. When the HubRise inventory is updated, Shopify Bridge can automatically adjust your inventory counters in Shopify. To check whether a specific app supports inventory synchronisation, refer to its documentation on our [Apps page](/apps). Alternatively, you can manage your inventory using [OrderLine](/apps/orderline/overview).
 
 ## Manual Inventory Push
 
