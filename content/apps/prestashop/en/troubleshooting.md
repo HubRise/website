@@ -117,18 +117,29 @@ If PrestaShop Bridge is connected to HubRise, but orders are not syncing, check 
 
 Check the installation of the HubRise module:
 
-- Navigate to **Modules > Modules Manager**.
+- Navigate to **Modules** > **Modules Manager**.
 - Confirm that the HubRise module is listed, installed, and enabled. If the module is listed but not enabled, you will see an **Enable** option in the contextual menu. Click it to activate the module.
-- Navigate to **Modules > Modules Manager**.
+- Navigate to **Modules** > **Modules Manager**.
 - Click **Configure** on the HubRise module.
 - Ensure all mandatory fields are correctly filled out. If any fields are missing, complete them and click **Save**.
 
 Check Webservice settings:
 
-- Go to **Advanced Parameters > Webservice**.
+- Go to **Advanced Parameters** > **Webservice**.
 - Look for a key named **HubRise integration key**. If the key does not exist, reinstall the HubRise module and check again.
 - Select the key to view its configuration.
 - Verify that **Enable webservice key** is set to **Yes**.
-- Check that most permissions for `GET`, `PUT`, `POST`, and `DELETE` are enabled. In the opposite case, reinstall the HubRise module and check again.
+- Check that all or nearly all permissions for `GET`, `PUT`, `POST`, and `DELETE` are enabled. If this is not the case, it may indicate a configuration issue, and you should reinstall the HubRise module.
+
+Check module hooks:
+
+- Navigate to **Modules** > **Modules Manager**.
+- Click **Configure** on the HubRise module.
+- Select **Manage Hooks**.
+- Enable the **Display non-positionable hooks** checkbox to view all hooks.
+- Confirm that the HubRise module is hooked to the following events:
+  - `actionValidateOrder`
+  - `actionOrderStatusPostUpdate`
+- If another module is hooked to the same events and might be blocking the HubRise module, try moving the HubRise module to the top of the list to ensure it executes first. If this resolves the issue, reorder the modules as necessary, ensuring any module the HubRise module depends on for metadata creation is executed first.
 
 If the problem persists after these checks, contact us at support@hubrise.com.
