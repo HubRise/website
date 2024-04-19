@@ -1,7 +1,7 @@
 ---
 title: FAQs
 path_override: faqs
-position: 9
+position: 10
 layout: documentation
 meta:
   title: FAQs | WooCommerce | HubRise

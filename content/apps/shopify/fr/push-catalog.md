@@ -8,15 +8,23 @@ meta:
   description: Découvrez comment envoyer le catalogue HubRise vers Shopify, comment les articles et options sont encodés, et quelles fonctionnalités sont prises en charge.
 ---
 
-Vous pouvez utiliser Shopify Bridge pour envoyer votre catalogue HubRise directement dans votre boutique Shopify.
+Avec Shopify Bridge, vous pouvez envoyer votre catalogue HubRise vers votre boutique Shopify en un clic, ou automatiser l'envoi à chaque mise à jour de votre catalogue sur HubRise.
 
-Cette page explique comment envoyer votre catalogue et précise quelles informations sont transmises à Shopify.
+Cette page explique comment envoyer votre catalogue et quelles informations sont transmises à Shopify.
+
+Pour plus d'informations sur les catalogues HubRise, voir [Catalogues](/docs/catalog).
 
 ## Alimenter un catalogue HubRise
 
 Pour pouvoir envoyer votre catalogue vers Shopify, vous devez préalablement alimenter un catalogue HubRise. De nombreuses applications connectées à HubRise, y compris des logiciels de caisse, offrent la possibilité d'exporter leur catalogue vers HubRise. Pour vérifier, référez-vous à la documentation de votre logiciel de caisse sur la [page Apps](/apps) du site internet de HubRise.
 
-Pour plus d'informations sur les catalogues HubRise, voir [Catalogues](/docs/catalog).
+Vous pouvez également utiliser le Catalog Manager HubRise pour créer ou mettre à jour votre catalogue, y compris pour ajouter des codes ref. Catalog Manager est édité par HubRise, vous pouvez l'utiliser gratuitement. Pour plus d'informations, voir [Catalog Manager](/apps/catalog-manager/overview).
+
+---
+
+**REMARQUE IMPORTANTE :** Assurez-vous que tous les produits de votre catalogue ont un code ref. Les produits sans code ref ne seront pas envoyés à Shopify.
+
+---
 
 ## Envoi manuel du catalogue
 
@@ -26,8 +34,6 @@ Une fois que votre catalogue a été alimenté dans HubRise, vous pouvez l'envoy
 2. Sélectionnez le compte HubRise et le point de vente connecté à votre boutique Shopify.
 3. Ouvrez la page **CONNEXIONS**, puis sélectionnez **Shopify Bridge** dans la liste des applications connectées.
 4. Dans Shopify Bridge, sélectionnez l'onglet **Actions**, puis cliquez sur **Envoyer le catalogue**.
-
-Lorsque vous envoyez votre catalogue, Shopify Bridge crée les produits qui n'existent pas encore dans Shopify. Il met également à jour le prix de vos produits Shopify, si la case **Mettre à jour le prix des produits existants** est cochée dans la page Configuration. Shopify Bridge ne supprime pas de produits.
 
 ## Envoi automatique du catalogue
 
@@ -42,7 +48,7 @@ Shopify Bridge peut envoyer automatiquement votre catalogue HubRise vers Shopify
 
 ## Références techniques
 
-Les sections suivantes décrivent la manière dont les catalogues HubRise sont associés à Shopify.
+Les sections suivantes décrivent comment un envoi du catalogue affecte votre boutique Shopify.
 
 ### Catégories
 
@@ -50,8 +56,11 @@ Shopify ne prend pas en charge les catégories. Lorsque vous envoyez des produit
 
 ### Produits et SKU
 
+Shopify Bridge crée les produits qui n'existent pas encore dans Shopify. Ces produits sont identifiés par leurs codes ref, et seuls les produits avec un code ref sont envoyés à Shopify. Les produits nouvellement créés sont placés en mode brouillon par défaut, permettant une révision manuelle avant publication sur votre site internet.
+
+Si la case à cocher **Mettre à jour les prix des produits existants** est sélectionnée dans la page Configuration, Shopify Bridge mettra également à jour le prix de vos produits Shopify existants. Shopify Bridge ne supprime pas les produits existants.
+
 Les produits HubRise et les SKU sont associés un à un aux produits et variantes Shopify.
-Pour plus d'informations sur les produits contenus dans les catalogues HubRise, voir [Products](/developers/api/catalogs#products) (en anglais).
 
 Pour chaque objet `product` HubRise, Shopify Bridge envoie les informations suivantes à Shopify :
 
@@ -67,7 +76,7 @@ Pour chaque SKU dans le tableau `skus`, Shopify Bridge envoie les informations s
 - `name` : nom de la SKU
 - `price` : prix de la SKU
 
-Pour plus d'informations sur les SKU dans le catalogue HubRise, voir [Skus](/developers/api/catalogs#skus) (en anglais).
+Pour plus d'informations sur les produits et les SKU dans les catalogues HubRise, voir notre documentation API, rubriques [Products](/developers/api/catalogs#products) et [Skus](/developers/api/catalogs#skus) (en anglais).
 
 ### Options
 
