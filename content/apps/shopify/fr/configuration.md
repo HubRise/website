@@ -10,11 +10,11 @@ meta:
 
 La page de configuration permet de personnaliser le comportement de Shopify Bridge.
 
-***
+---
 
-**REMARQUE IMPORTANTE :** En raison de sa nature très personnalisable, la configuration de Shopify Bridge nécessite un certain niveau de connaissances techniques. Si vous n'êtes pas à l'aise avec cette configuration, passez quelques commandes de test, avec différentes méthodes de paiement, et contactez-nous à support\@hubrise.com en mentionnant le logiciel de caisse que vous utilisez. Nous serons ravis de vous aider !
+**REMARQUE IMPORTANTE :** En raison de sa nature très personnalisable, la configuration de Shopify Bridge nécessite un certain niveau de connaissances techniques. Si vous n'êtes pas à l'aise avec cette configuration, passez quelques commandes de test, avec différentes méthodes de paiement, et contactez-nous à support@hubrise.com en mentionnant le logiciel de caisse que vous utilisez. Nous serons ravis de vous aider !
 
-***
+---
 
 ## Commandes
 
@@ -53,8 +53,8 @@ Si votre plugin utilise un attribut de commande, les formats pris en charge sont
 
 Si votre plugin utilise deux attributs de commande, les formats pris en charge sont les suivants :
 
-- La date doit être au format `dd/mm/yyyy`.
-- L'heure doit être au format `hh:mm`.
+- La date doit être une date ou une heure analysable, par exemple : `dd/mm/yyyy`, `yyyy-mm-dd`, ou une chaîne ISO 8601 dont la partie heure est ignorée.
+- L'heure doit être une heure analysable, par exemple : `hh:mm:ss`, `hh:mm`, ou une chaîne ISO 8601 dont la partie date est ignorée.
 
 ### Paiements
 
@@ -119,10 +119,10 @@ Pour enregistrer la configuration, cliquez sur **Enregistrer** en haut de la pag
 
 Si vous avez besoin de réinitialiser la configuration, cliquez sur **Réinitialiser la configuration** en bas de la page.
 
-***
+---
 
 **REMARQUE IMPORTANTE** : La réinitialisation de la configuration déconnectera instantanément le bridge de Shopify.
 
-***
+---
 
 La réinitialisation de la configuration ne supprime pas les logs des opérations affichés sur la page principale.

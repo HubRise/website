@@ -12,7 +12,7 @@ La page de configuration permet de personnaliser le comportement de WooCommerce 
 
 ---
 
-**REMARQUE IMPORTANTE :** En raison de sa nature très personnalisable, la configuration de WooCommerce Bridge nécessite un certain niveau de connaissances techniques. Si vous n'êtes pas à l'aise avec cette configuration, passez quelques commandes de test, avec différentes méthodes de paiement, et contactez-nous à support\@hubrise.com, en mentionnant le logiciel de caisse que vous utilisez. Nous serons ravis de vous aider !
+**REMARQUE IMPORTANTE :** En raison de sa nature très personnalisable, la configuration de WooCommerce Bridge nécessite un certain niveau de connaissances techniques. Si vous n'êtes pas à l'aise avec cette configuration, passez quelques commandes de test, avec différentes méthodes de paiement, et contactez-nous à support@hubrise.com, en mentionnant le logiciel de caisse que vous utilisez. Nous serons ravis de vous aider !
 
 ---
 
@@ -66,7 +66,7 @@ La prise en charge des heures souhaitées dans WooCommerce nécessite un plugin,
 
 Si vous n'utilisez pas les heures souhaitées, laissez le menu déroulant **Clés de métadonnées** défini sur **Aucun**.
 
-Sinon, vous devrez choisir entre deux options pour la façon dont l'heure de la commande est encodée par votre plugin : **Une valeur contenant la date et l'heure**, ou **Deux valeurs : une pour la date, une pour l'heure**.
+Sinon, vous devrez choisir entre deux options d'encodage de l'heure de livraison par votre plugin : **Une valeur contenant la date et l'heure** ou **Deux valeurs : une pour la date, une pour l'heure**.
 
 Pour déterminer comment votre plugin encode l'heure souhaitée, passez une commande de test et examinez les logs sur la [page des commandes](/docs/data#orders). Recherchez le champ `meta_data` au niveau le plus élevé du JSON de la commande. Veillez à ne pas confondre avec les champs `meta_data` qui pourraient être imbriqués sous les éléments JSON `line_items`. Identifiez le ou les attributs dans ce champ qui contiennent la date et l'heure souhaitées. Si vous ne trouvez pas l'heure souhaitée dans le champ `meta_data`, contactez le développeur du plugin pour obtenir de l'aide.
 
@@ -185,7 +185,7 @@ Pour utiliser un nom différent pour vos attributs, par exemple `Couleur`, saisi
 
 ## Inventaire
 
-![WooCommerce Bridge configuration page, inventory](./images/016-woocommerce-configuration-inventory.png)
+![Page de configuration de WooCommerce Bridge, inventaire](./images/016-woocommerce-configuration-inventory.png)
 
 Dans la section **Inventaire**, vous pouvez activer la mise à jour automatique des compteurs d'inventaire WooCommerce lorsque l'inventaire HubRise est modifié.
 Pour activer cette fonctionnalité, cochez la case **Activer l'envoi automatique de l'inventaire**.
