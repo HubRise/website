@@ -30,20 +30,23 @@ To receive Deliveroo orders in SOLUTION, you first need to connect Deliveroo Bri
 
 In the Deliveroo Bridge configuration page, use the following settings:
 
-| Section        | Name                                  | Ref code                                          |
-| -------------- | ------------------------------------- | ------------------------------------------------- |
-| Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Received"` |
-| Service types  | Deliveroo fulfilled ref code          | (leave empty)                                     |
-| Service types  | Restaurant fulfilled ref code         | (leave empty)                                     |
-| Service types  | Takeaway ref code                     | (leave empty)                                     |
-| Service types  | Send orders delivered by Deliveroo as | `collection orders`                               |
-| Discounts      | Offer ref code                        | (leave empty)                                     |
-| Charges        | Delivery charge ref code              | (leave empty)                                     |
-| Charges        | Surcharge ref code                    | (leave empty)                                     |
-| Charges        | Bag fee ref code                      | (leave empty)                                     |
-| Payments       | Online payment ref code               | (leave empty)                                     |
-| Payments       | Cash payment ref code                 | (leave empty)                                     |
-| Customers      | Duplicate phone access code in [...]  | Leave unchecked                                   |
+| Section        | Name                                  | Ref code                                                |
+| -------------- | ------------------------------------- | ------------------------------------------------------- |
+| Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Received"`       |
+| Service types  | Deliveroo fulfilled ref code          | (leave empty)                                           |
+| Service types  | Restaurant fulfilled ref code         | (leave empty)                                           |
+| Service types  | Takeaway ref code                     | (leave empty)                                           |
+| Service types  | Send orders delivered by Deliveroo as | `collection orders`                                     |
+| Special items  | Deposit option ref code               | Create an option in SOLUTION and use its ref code. (\*) |
+| Discounts      | Offer ref code                        | (leave empty)                                           |
+| Charges        | Delivery charge ref code              | (leave empty)                                           |
+| Charges        | Surcharge ref code                    | (leave empty)                                           |
+| Charges        | Bag fee ref code                      | (leave empty)                                           |
+| Payments       | Online payment ref code               | (leave empty)                                           |
+| Payments       | Cash payment ref code                 | (leave empty)                                           |
+| Customers      | Duplicate phone access code in [...]  | Leave unchecked                                         |
+
+(\*) Only applies if some of your products require a deposit.
 
 ## Just Eat
 
@@ -79,22 +82,25 @@ To receive Just Eat orders in SOLUTION via Flyt API, you first need to connect J
 
 In the Just Eat Flyt Bridge configuration page, use the following settings:
 
-| Section        | Name                                     | Ref code                                          |
-| -------------- | ---------------------------------------- | ------------------------------------------------- |
-| Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Received"` |
-| Service types  | Just Eat delivery ref code               | (leave empty)                                     |
-| Service types  | Restaurant delivery ref code             | (leave empty)                                     |
-| Service types  | Takeaway ref code                        | (leave empty)                                     |
-| Service types  | Send orders delivered by the platform as | `collection orders`                               |
-| Discounts      | Discount ref code                        | (leave empty)                                     |
-| Charges        | Delivery charge ref code                 | (leave empty)                                     |
-| Charges        | Service charge ref code                  | (leave empty)                                     |
-| Charges        | Bag fee ref code                         | (leave empty)                                     |
-| Charges        | Driver tip ref code                      | (leave empty)                                     |
-| Charges        | Other charge ref code                    | (leave empty)                                     |
-| Payments       | Online payment ref code                  | (leave empty)                                     |
-| Payments       | Cash payment ref code                    | (leave empty)                                     |
-| Customers      | Duplicate phone access code in [...]     | Leave unchecked                                   |
+| Section        | Name                                     | Ref code                                                |
+| -------------- | ---------------------------------------- | ------------------------------------------------------- |
+| Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Received"`       |
+| Service types  | Just Eat delivery ref code               | (leave empty)                                           |
+| Service types  | Restaurant delivery ref code             | (leave empty)                                           |
+| Service types  | Takeaway ref code                        | (leave empty)                                           |
+| Service types  | Send orders delivered by the platform as | `collection orders`                                     |
+| Special items  | Deposit option ref code                  | Create an option in SOLUTION and use its ref code. (\*) |
+| Discounts      | Discount ref code                        | (leave empty)                                           |
+| Charges        | Delivery charge ref code                 | (leave empty)                                           |
+| Charges        | Service charge ref code                  | (leave empty)                                           |
+| Charges        | Bag fee ref code                         | (leave empty)                                           |
+| Charges        | Driver tip ref code                      | (leave empty)                                           |
+| Charges        | Other charge ref code                    | (leave empty)                                           |
+| Payments       | Online payment ref code                  | (leave empty)                                           |
+| Payments       | Cash payment ref code                    | (leave empty)                                           |
+| Customers      | Duplicate phone access code in [...]     | Leave unchecked                                         |
+
+(\*) Only applies if some of your products require a deposit.
 
 ## Uber Eats
 
