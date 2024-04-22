@@ -56,7 +56,7 @@ S'il a conscience d'avoir face à lui "une montagne à gravir", il sait aussi qu
 
 ## Les solutions
 
-### De LivePepper à HubRise : les étapes vers la mise en place d’un système informatique et technologique intégré
+### De LivePepper à HubRise : les étapes vers la mise en place d'un système informatique et technologique intégré
 
 La première étape de cette mutation a été de trouver une solution de vente en ligne adaptée aux besoins de l'enseigne. Après de nombreuses recherches et quelques tests infructueux, Abderrahim découvre [LivePepper](https://www.livepepper.fr).
 

@@ -1007,19 +1007,21 @@ The `driver_latitude` and `driver_longitude` fields are typically updated at a h
 
 ## 12. Order Loyalty Operations {#loyalty-operations}
 
-Add or remove points to a customer's loyalty card(s).
+Loyalty operations are used to add or remove points from a customer's loyalty card(s).
 
-Each operation is linked to a loyalty card, uniquely identified by its name. If a card does not exist with this name, it is created automatically with an initial balance equal to 0.0
+Each operation targets a specific loyalty card, identifiable by its `ref`. By default, this ref is `null`.
 
-Each loyalty operation triggers the automatic recalculation of the loyalty card balance.
+When performing an operation, if a card with the provided `ref` already exists, its balance is updated based on the operation. If a `name` is also supplied and differs from the existing card's name, the card's name is updated to match.
+
+If there is no existing card with the given `ref`, a new one is created automatically with an initial balance set according to the operation.
 
 ##### Attributes:
 
-| Name                               | Type                                                       | Description                                                                              |
-| ---------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| `ref` <Label type="optional" />    | string                                                     | The loyalty card unique ref. Defaults to `null` if omitted.                              |
-| `delta`                            | [decimal](/developers/api/general-concepts#decimal-values) | The number of points to add to the card balance. Use a negative number to remove points. |
-| `reason` <Label type="optional" /> | string                                                     | Additional information on the operation.                                                 |
+| Name                               | Type                                                       | Description                                                                        |
+| ---------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| `ref` <Label type="optional" />    | string                                                     | The unique reference for the loyalty card. Defaults to `null` if not specified.    |
+| `delta`                            | [decimal](/developers/api/general-concepts#decimal-values) | The points to be added to the card balance. Use a negative value to deduct points. |
+| `reason` <Label type="optional" /> | string                                                     | Provides additional information regarding the operation.                           |
 
 ##### Example:
 
@@ -1027,12 +1029,8 @@ Each loyalty operation triggers the automatic recalculation of the loyalty card 
 [
   {
     "ref": "LOY",
-    "delta": "-5",
-    "reason": "Points used on order"
-  },
-  {
-    "ref": "LOY",
-    "delta": "1.5",
+    "name": "Come back!",
+    "delta": "3.5",
     "reason": "Points earned on order"
   }
 ]

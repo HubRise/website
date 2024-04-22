@@ -18,7 +18,7 @@ This may be caused by two possible reasons:
 
 2. No default menu has been set on the connected location.
    To set the default menu:
-   - From the OrderLord back office, navigate to **Settings > Locations**.
+   - From the OrderLord back office, navigate to **Settings** > **Locations**.
    - Click the gear icon to edit the location.
    - Select the default menu from the dropdown menu.
      ![Set default menu](./images/001-set-default-menu.png)

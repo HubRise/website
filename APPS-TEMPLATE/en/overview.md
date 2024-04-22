@@ -57,6 +57,7 @@ Connecting SOLUTION to HubRise allows your [EPOS] to:
 - Push a catalog into HubRise. -OR- Push a catalog into HubRise, with variants support.
 - Synchronise inventory with HubRise.
 - Synchronise final delivery time with HubRise.
+- Synchronise opening hours with HubRise.
 
 ---
 

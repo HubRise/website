@@ -10,7 +10,7 @@ meta:
 
 Dans l'interface utilisateur de Lightspeed Restaurant Bridge, vous trouverez des informations de diagnostic de base sur votre connexion avec Lightspeed Restaurant. Un lien vers les logs des dernières requêtes HubRise envoyées au logiciel de caisse y figure également.
 
-## Page d’accueil
+## Page d'accueil
 
 La page d'accueil de Lightspeed Restaurant Bridge affiche les dernières opérations. Chaque ligne fournit les données suivantes :
 
@@ -27,7 +27,7 @@ En haut à droite de la page d'accueil de Lightspeed Restaurant Bridge figurent 
 
 ---
 
-![Page d’accueil](./images/003-2x-main-page-truncated.png)
+![Page d'accueil](./images/003-2x-main-page-truncated.png)
 
 ## Page des opérations {#operation}
 
