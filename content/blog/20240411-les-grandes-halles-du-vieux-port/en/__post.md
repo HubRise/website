@@ -13,7 +13,7 @@ In less than two years, the establishment located in the heart of Marseille has 
 
 **The absolute priority here is the client experience: regardless of the crowd size, it must be seamless, enjoyable, and unhindered. Bearing this in mind, the three co-founders and friends have decided to introduce digital solutions. Les Grandes Halles is indeed a hybrid concept where clients can choose to order directly at the counter or online through a dedicated marketplace developed by DOOD and connected via HubRise to Kezia II and Jalia, the EPOS solutions used by the stalls.**
 
-![Les Grandes Halles du Vieux Port](./001-les-grandes-halles-du-veux-port.jpg)
+![Les Grandes Halles du Vieux Port](../images/001-les-grandes-halles-du-veux-port.jpg)
 
 We spoke with Louis Cuntz - Development Manager at Les Grandes Halles - to find out more about the implementation of this tripartite technological partnership between DOOD, JDC, and HubRise.
 
@@ -30,7 +30,7 @@ However, our clients continue to order at the counter, and currently, the adopti
 
 They simply scan the QR code provided on each table to access the marketplace where you can browse the menus of all 11 stalls to create their own desired basket, place the order, and make a single payment, even if multiple stalls are involved. The interface is intuitive and the process is extremely straightforward; it's also quite engaging, as in addition to the menus, clients can access various tabs, including one dedicated to younger guests featuring PacMan, which is perfect for keeping children entertained. Once the order is ready, the client receives a notification and goes to collect their order from the counter.
 
-![DOOD's app for Les Grandes Halles du Vieux Port](./002-les-grandes-halles-du-veux-port-dood-app.png)
+![DOOD's app for Les Grandes Halles du Vieux Port](../images/002-les-grandes-halles-du-veux-port-dood-app.png)
 
 ## And from the perspective of the stall managers?
 
