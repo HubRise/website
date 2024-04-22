@@ -38,7 +38,7 @@ For each HubRise order status, specify the corresponding PrestaShop order status
 
 This section displays the list of carriers you have defined in your PrestaShop back-office. You can specify the ref code for each carrier, which will be sent as `service_type_ref` in order JSONs. This ref code is used to identify the carrier in your EPOS.
 
-Refer to your EPOS documentation on the HubRise website to verify the correct codes to use.
+Refer to your EPOS documentation on our [Apps page](/apps) to verify the correct codes to use.
 
 ### Special Items
 
@@ -51,13 +51,13 @@ This section lets you specify the ref code used for PrestaShop gift items. It us
 ![PrestaShop Bridge configuration page, discounts](./images/012-prestashop-configuration-discounts.png)
 
 This section lets you specify the discount ref code applied to your products, in case you have active discount rules in your PrestaShop back-office.
-Refer to your EPOS documentation on the HubRise website to see how to obtain the corresponding ref code.
+Refer to your EPOS documentation on our [Apps page](/apps) to see how to obtain the corresponding ref code.
 
 ### Charges
 
 ![PrestaShop Bridge configuration page, charges](./images/013-prestashop-configuration-charges.png)
 
-If charges apply, a ref code might be required. Refer to your EPOS documentation on the HubRise website to verify.
+If charges apply, a ref code might be required. Refer to your EPOS documentation on our [Apps page](/apps) to verify.
 
 In this section, you can specify the ref code for delivery charges, and for wrapping fees.
 
@@ -88,7 +88,7 @@ If your module uses two metadata keys, the supported formats are the following:
 
 PrestaShop customers can pay for their order either online or by cash on delivery, depending on the modules you install in your PrestaShop back-office. Online payments include payments by check, bank wire, or other online payment platforms like PayPal.
 
-This section of the configuration page allows you to specify the ref codes for online and cash payments. Refer to your EPOS documentation on the HubRise website to verify the correct codes to use.
+This section of the configuration page allows you to specify the ref codes for online and cash payments. Refer to your EPOS documentation on our [Apps page](/apps) to verify the correct codes to use.
 
 ### Multi-Site
 
@@ -108,7 +108,7 @@ In the **Value(s) for this location** field, specify the value associated with t
 
 ### Catalog Variant to Push
 
-Catalog variants give you the flexibility to disable specific items or adjust prices for your PrestaShop website.
+Catalog variants give you the flexibility to disable specific items or adjust prices for your PrestaShop website. For more information, see [Catalog Variants](/apps/catalog-manager/variants) in our Catalog Manager online documentation.
 
 If your catalog includes variants, you have the option to select which one to use. When **(none)** is selected, the default items along with their standard prices are used. If your catalog has no variants, the menu will be hidden.
 
