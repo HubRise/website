@@ -23,5 +23,7 @@ sections:
         to: /fr/legal/mentions-legales
   - title: Société
     links:
+      - title: Témoignages
+        to: /fr/testimonials
       - title: Guide de la marque
         to: /fr/branding

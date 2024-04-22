@@ -13,7 +13,6 @@ export const Inner = styled.div`
   max-width: ${sizes.maxWidth};
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
 
   @media (min-width: ${breakpoints.blogStickyMenu}) {
     &:before {

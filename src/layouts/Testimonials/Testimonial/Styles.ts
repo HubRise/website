@@ -22,7 +22,12 @@ export const Picture = styled.div`
   left: 50%;
   top: 0;
   transform: translate(-50%, -50%);
-  border-radius: 100%;
+
+  img {
+    border-radius: 100%;
+    border: 0.75rem solid ${colors.backgroundLight};
+    width: 14rem;
+  }
 `
 
 export const Quote = styled.div`

@@ -1,7 +1,7 @@
 ---
 title: Dépannage
 path_override: depannage
-position: 8
+position: 9
 layout: documentation
 meta:
   title: Dépannage | WooCommerce | HubRise
@@ -102,7 +102,7 @@ Suivez ces étapes :
    ![Option OAuth1 dans WooCommerce Bridge](./images/013-woocommerce-step-1-advanced.png)
 4. Poursuivez la configuration telle qu'elle est décrite dans [Connexion à HubRise](/apps/woocommerce/connect-hubrise).
 
-Vérifiez si cette modification a permis de résoudre les erreurs 401. Si ce n'est pas le cas, consultez les autres étapes de dépannage ou contactez HubRise sur support\@hubrise.com.
+Vérifiez si cette modification a permis de résoudre les erreurs 401. Si ce n'est pas le cas, consultez les autres étapes de dépannage ou contactez HubRise sur support@hubrise.com.
 
 ### URL incorrecte lors de la configuration
 
