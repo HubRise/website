@@ -5,9 +5,9 @@ content:
   hero:
     title: Applications intégrées
     description:
-      paragraph_1_text: Vous êtes commerçant et votre application ne figure pas dans cette liste ?
+      paragraph_1_text: Vous êtes commerçant et votre application ne figure pas dans cette liste ?
       paragraph_1_link_text: Contactez-nous
-      paragraph_2_text: Vous êtes développeur et souhaitez intégrer votre application à HubRise ?
+      paragraph_2_text: Vous êtes développeur et souhaitez intégrer votre application à HubRise ?
       paragraph_2_link_text: Voir la documentation technique
       paragraph_2_link_to: /fr/developers
   all_apps: Toutes les apps
@@ -634,9 +634,9 @@ content:
           description: 1Bot est un assistant personnel. Ce chatbot répond aux questions des clients et transmet un résumé de la conversation au magasin par SMS. Il est possible de prendre un rendez-vous, demander un rappel ou poser une question.
   additional_sections:
     suggest_app:
-      description: Votre application ne se trouve pas dans cette liste ? Envoyez-nous quelques informations. HubRise se chargera de contacter l'éditeur de votre part pour leur proposer une intégration.
+      description: Votre application ne se trouve pas dans cette liste ? Envoyez-nous quelques informations. HubRise se chargera de contacter l'éditeur de votre part pour leur proposer une intégration.
   developers:
-    title: Vous êtes développeur ?
+    title: Vous êtes développeur ?
     description:
       paragraph_1: Utilisez notre API pour construire une application utile aux commerçants. Proposez-la aux utilisateurs d'HubRise en la publiant sur notre site.
       paragraph_2:

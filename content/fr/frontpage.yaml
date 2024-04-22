@@ -81,7 +81,7 @@ content:
         Votre équipe de support et vos utilisateurs peuvent se connecter en un clic. Les requêtes à l'API sont visibles depuis le back-office. Pas besoin d'être développeur pour investiguer les problèmes.
 
   join:
-    title: Prêt à rejoindre l'écosystème ?
+    title: Prêt à rejoindre l'écosystème ?
     button_label: Connecter votre app
     button_url: /fr/developers
     link_label: Créer un compte gratuit
