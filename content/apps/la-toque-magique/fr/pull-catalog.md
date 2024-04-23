@@ -17,6 +17,6 @@ Pour importer un catalogue HubRise dans La Toque Magique, suivez ces étapes :
 
 ---
 
-**REMARQUE IMPORTANTE** : Cette opération va remplacer votre menu La Toque Magique actuel.
+**REMARQUE IMPORTANTE :** Cette opération va remplacer votre menu La Toque Magique actuel.
 
 ---

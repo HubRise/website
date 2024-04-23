@@ -81,7 +81,7 @@ WooCommerce supports four types of payments in an order:
 
 ---
 
-**IMPORTANT NOTE**: Payment ref codes will soon be customisable from the configuration page. For more information, contact HubRise on support@hubrise.com.
+**IMPORTANT NOTE:** Payment ref codes will soon be customisable from the configuration page. For more information, contact HubRise on support@hubrise.com.
 
 ---
 

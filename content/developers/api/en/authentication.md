@@ -142,7 +142,7 @@ https://<<YOUR-DOMAIN-HERE>>/oauth_callback?code=ffae0047c4d6b9e02f95e76a3f6e906
 
 ---
 
-**IMPORTANT NOTE**: Authorisation codes are one-use throw-away codes that expire after 10 minutes. They are used to generate API tokens, which do not expire. The next section explains how to get an API token from an authorisation code.
+**IMPORTANT NOTE:** Authorisation codes are one-use throw-away codes that expire after 10 minutes. They are used to generate API tokens, which do not expire. The next section explains how to get an API token from an authorisation code.
 
 ---
 
@@ -252,7 +252,7 @@ The `access_token` returned by `GET /oauth2/v1/token` is specific to a given cli
 
 ---
 
-**IMPORTANT NOTE**: if a different catalog (or customer list) is selected when re-authorising the location, the token will no
+**IMPORTANT NOTE:** if a different catalog (or customer list) is selected when re-authorising the location, the token will no
 longer allow access to the former catalog (or customer list) when the new authorisation completes.
 
 ---
