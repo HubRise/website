@@ -136,7 +136,7 @@ Si vous avez besoin de réinitialiser la configuration, cliquez sur **Réinitial
 
 ---
 
-**REMARQUE IMPORTANTE** : La réinitialisation de la configuration déconnectera instantanément le bridge de PrestaShop.
+**REMARQUE IMPORTANTE :** La réinitialisation de la configuration déconnectera instantanément le bridge de PrestaShop.
 
 ---
 

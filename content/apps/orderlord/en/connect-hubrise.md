@@ -31,7 +31,7 @@ OrderLord support will be able to access your account and connect OrderLord for 
 
 ---
 
-**IMPORTANT NOTE**: If you plan to support collection and in-store orders, you should ask OrderLord to activate this functionality in your initial request.
+**IMPORTANT NOTE:** If you plan to support collection and in-store orders, you should ask OrderLord to activate this functionality in your initial request.
 
 ---
 

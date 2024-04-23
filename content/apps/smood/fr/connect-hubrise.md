@@ -36,7 +36,7 @@ Une fois l'intégration de HubRise activée, suivez ces étapes :
 
 ---
 
-**REMARQUE IMPORTANTE** : Smood ne prend pas en charge plusieurs restaurants connectés au même point de vente HubRise. Si vous essayez de connecter un deuxième restaurant à un même point de vente, la connexion existante sera perdue.
+**REMARQUE IMPORTANTE :** Smood ne prend pas en charge plusieurs restaurants connectés au même point de vente HubRise. Si vous essayez de connecter un deuxième restaurant à un même point de vente, la connexion existante sera perdue.
 
 ---
 

@@ -38,7 +38,7 @@ To attach an entity to your billing account, follow these steps:
 
 ---
 
-**IMPORTANT NOTE**: When you attach an entity, any pending requests for payment for this entity will be transferred to your billing account.
+**IMPORTANT NOTE:** When you attach an entity, any pending requests for payment for this entity will be transferred to your billing account.
 
 ---
 
@@ -55,7 +55,7 @@ To detach an entity from your billing account, follow these steps:
 
 ---
 
-**IMPORTANT NOTE**: When you detach an entity, any requests for payment already issued for this entity will remain attached to your billing account.
+**IMPORTANT NOTE:** When you detach an entity, any requests for payment already issued for this entity will remain attached to your billing account.
 
 ---
 
