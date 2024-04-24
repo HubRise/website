@@ -20,7 +20,7 @@ To export your MyOrderBox catalog to HubRise, follow these steps.
 
 ---
 
-**IMPORTANT NOTE**: This operation will replace your current HubRise catalog.
+**IMPORTANT NOTE:** This operation will replace your current HubRise catalog.
 
 ---
 

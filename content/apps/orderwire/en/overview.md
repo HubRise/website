@@ -23,7 +23,7 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: Full documentation of this integration will be available soon.
+**IMPORTANT NOTE:** Full documentation of this integration will be available soon.
 
 ---
 

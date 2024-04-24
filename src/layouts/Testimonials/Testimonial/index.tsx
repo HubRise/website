@@ -3,6 +3,7 @@ import * as React from "react"
 
 import { Testimonial } from "@layouts/Testimonials/types"
 import { ContentImage } from "@utils/contentImage"
+import { text } from "@utils/misc"
 
 import { Picture, Details, Separator, Quote, Card, Detail, Bullet } from "./Styles"
 
@@ -17,12 +18,12 @@ const Testimonial = ({ testimonial, image }: TestimonialProps): JSX.Element => {
   return (
     <Card>
       <Picture>{image && <Image {...image} alt={`${person_details[0]}, ${person_details[2]}`} />}</Picture>
-      <Quote>{quote}</Quote>
+      <Quote>{text(quote)}</Quote>
       <Separator />
       <Details>
         {person_details.map((detail, index) => (
           <React.Fragment key={index}>
-            <Detail>{detail}</Detail>
+            <Detail>{text(detail)}</Detail>
             {index < person_details.length - 1 && <Bullet />}
           </React.Fragment>
         ))}

@@ -13,6 +13,7 @@ export const Inner = styled.div`
   max-width: ${sizes.maxWidth};
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
 
   @media (min-width: ${breakpoints.blogStickyMenu}) {
     &:before {
@@ -29,21 +30,21 @@ export const Inner = styled.div`
 
 export const StyledSidebar = styled.div`
   background-color: ${sidebarBackgroundColor};
-  flex: 0 0 100%;
+  width: 100%;
 
   @media (min-width: ${breakpoints.blogStickyMenu}) {
-    flex: 0 0 25%;
+    width: 25%;
     padding: ${sizes.blockVerticalPadding} 0;
   }
 `
 
 export const StyledContent = styled.div`
   background-color: ${colors.backgroundWhite};
-  flex: 0 0 100%;
+  width: 100%;
   padding: ${sizes.blockVerticalPadding} ${sizes.mobilePadding};
 
   @media (min-width: ${breakpoints.blogStickyMenu}) {
-    flex: 0 0 75%;
+    width: 75%;
     padding: ${sizes.blockVerticalPadding} ${sizes.desktopPadding};
   }
 `

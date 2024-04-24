@@ -12,7 +12,7 @@ A **callback** notifies a client of changes that occurred on a set of resources.
 
 ---
 
-**IMPORTANT NOTE**: A client does not receive notifications for the events it generated. If you are testing callbacks, you need to use a separate client to trigger events.
+**IMPORTANT NOTE:** A client does not receive notifications for the events it generated. If you are testing callbacks, you need to use a separate client to trigger events.
 
 ---
 
