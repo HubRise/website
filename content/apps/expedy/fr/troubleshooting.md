@@ -5,7 +5,7 @@ position: 6
 layout: documentation
 meta:
   title: Dépannage | Expedy | HubRise
-  description: Résolution des problèmes de connexion entre LivePepper et HubRise pour que votre logiciel de caisse et les autres apps fonctionnent de manière cohérente. Connectez les apps et synchronisez vos données.
+  description: Résolution des problèmes de connexion entre Expedy et HubRise pour une bonne synchronisation des données entre votre imprimante connectée et les autres apps que vous utilisez avec HubRise.
 ---
 
 ## Tester la connexion {#test-connection}
@@ -15,11 +15,12 @@ Pour tester la connexion entre Expedy et HubRise, utilisez une application conne
 1. Passez une commande depuis l'application.
 1. Vérifiez que la commande a bien été envoyée vers HubRise. Dans le back-office de HubRise, dans le menu latéral, sélectionnez **DONNÉES** > **COMMANDES**. La commande doit apparaître dans la liste des commandes.
 1. Depuis la page d'accueil de votre back-office Expedy, cliquez sur **Imprimantes**.
-1. Cliquez sur l'icône de configuration de l'imprimante connectée <InlineImage width="20" height="20">![icône Crayon](../images/__configuration-icon.png)</InlineImage>.
+1. Cliquez sur le nom de l'imprimante concernée.
 1. Défilez vers le bas jusqu'à la section **10 dernières requêtes API**.
 1. La commande doit apparaître dans cette section.
 
 ## Support Expedy
 
-Vous pouvez contacter l'équipe de support Expedy à l'adresse support@expedy.fr pour tout problème de configuration de l'imprimante.
-Assurez-vous de leur avoir donné permission d'accéder à votre compte HubRise. Si ce n'est pas le cas, voir la rubrique [Donner accès au support de Expedy](/apps/expedy/connect-hubrise#give-access).
+Vous pouvez contacter l'équipe de support Expedy sur support@expedy.fr.
+
+Avant de contacter le support Expedy, assurez-vous de leur avoir donné accès à votre compte HubRise en consultant la section [Donner accès au support de Expedy](/apps/expedy/connect-hubrise#give-access).

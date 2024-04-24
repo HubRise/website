@@ -8,7 +8,7 @@ meta:
   description: Configurer Expedy pour recevoir vos commandes Expedy dans votre logiciel de caisse ou d'autres applications connectées à HubRise.
 ---
 
-Le back-office de Expedy permet de configurer le contenu de vos impressions ainsi que la gestion de vos impressions envoyées par HubRise. Vous pouvez sélectionner le statut de commande qui déclenchera l'impression ou configurer l'imprimante pour qu'elle modifie automatiquement le statut d'une commande après impression.
+Le back-office de Expedy permet de configurer la mise en page de vos impressions ainsi que la gestion de vos impressions envoyées par HubRise. Vous pouvez sélectionner le statut de commande qui déclenchera l'impression ou configurer l'imprimante pour qu'elle modifie automatiquement le statut d'une commande après impression.
 
 ## Paramètres HubRise
 
@@ -18,12 +18,12 @@ Expedy permet de sélectionner le statut de commande qui déclenche l'impression
 - _Reçue_
 - _Acceptée_
 
-Expedy permet aussi d'effectuer une action supplémentaire lors de la réception d'une commande. Vous pouvez ainsi choisir de configurer l'imprimante pour qu'elle change elle-même le statut d'une commande en :
+Expedy permet aussi d'effectuer une action supplémentaire lors de la réception d'une commande. Vous pouvez ainsi configurer l'imprimante pour qu'elle change le statut d'une commande en :
 
 - _Reçue_
 - _Acceptée_
 
-Pour paramétrer ces actions, suivez ces étapes :
+Pour configurer ces paramètres, suivez ces étapes :
 
 1. Depuis la page d'accueil du back-office Expedy, cliquez sur **Imprimantes**.
 1. Cliquez sur l'icône de configuration de l'imprimante connectée <InlineImage width="20" height="20">![icône Crayon](../images/__configuration-icon.png)</InlineImage>.
@@ -32,7 +32,7 @@ Pour paramétrer ces actions, suivez ces étapes :
    ![Interface utilisateur - Paramètres HubRise](./images/008-2x-expedy-hubrise-actions.png)
 1. Cliquez sur **SAUVEGARDER** pour enregistrer les modifications.
 
-## Personnaliser vos impressions
+## Personnaliser vos impressions {#customise-print}
 
 Vous pouvez configurer le nom et le logo de votre société en tête des tickets. Vous pouvez également afficher l'adresse complète de votre établissement en pied de page.
 
@@ -42,15 +42,10 @@ Pour configurer la mise en page des tickets, suivez ces étapes :
 1. Cliquez sur l'icône de configuration de l'imprimante connectée <InlineImage width="20" height="20">![icône Crayon](../images/__configuration-icon.png)</InlineImage>.
 1. Faites défiler vers le bas jusqu'à la section **PARAMETRES D'IMPRESSION POUR HUBRISE / GOODBARBER / SHOPIFY / WIX**.
    ![Configuration - Personnaliser vos impressions](./images/004-2x-expedy-print-settings.png)
+1. Ajustez les paramètres d'impression selon vos besoins.
 1. Cliquez sur **SAUVEGARDER** pour enregistrer les modifications.
 
----
-
-**REMARQUE IMPORTANTE :** Expedy inclut toujours le nom de votre enseigne dans l'impression, lorsque celle-ci est spécifiée comme **Type de service** sur un Bridge HubRise ou une autre application connectée à HubRise. Cette fonctionnalité est particulièrement utile pour les Dark Kitchens avec plusieurs marques connectées au même point de vente HubRise.
-
-___
-
-
+Pour connaître les informations imprimées par défaut sur les tickets, consultez la section [Recevoir les commandes](/apps/expedy/receive-orders).
 
 ## Paramétrer vos impressions
 
@@ -63,4 +58,3 @@ Pour paramétrer ces options, suivez ces étapes :
 1. Faites défiler vers le bas jusqu'à la section **PARAMETRES D'IMPRESSION POUR HUBRISE / GOODBARBER / SHOPIFY / WIX**.
 1. Section **Options Avancées** choisir le nombre de copies d'impressions et un affichage complet ou non des options.
    ![Configuration - Paramètres d'impression](./images/009-2x-expedy-hubrise-advanced-options.png)
-
