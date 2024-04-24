@@ -4,7 +4,7 @@ sections:
       - title: Apps
         to: /fr/apps
       - title: Contribuer à la documentation
-        to: /fr/contributing
+        to: /fr/contribuer
   - title: Développeurs
     links:
       - title: Démarrage Rapide
@@ -24,6 +24,6 @@ sections:
   - title: Société
     links:
       - title: Témoignages
-        to: /fr/testimonials
+        to: /fr/temoignages
       - title: Guide de la marque
-        to: /fr/branding
+        to: /fr/marque

@@ -3,6 +3,7 @@ import { serialize } from "next-mdx-remote/serialize"
 
 import Frontpage from "@layouts/Frontpage"
 import { contentImageMap } from "@utils/contentImage"
+import remarkTextPlugin from "@utils/mdx/remarkTextPlugin"
 import { Route, RouteName } from "@utils/router/types"
 
 const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Element> => {
@@ -44,5 +45,9 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
 export default frontpage
 
 const serializeFrontpage = async (markdown: string): Promise<MDXRemoteSerializeResult> => {
-  return serialize(markdown.replace(/\n/g, "\n\n"))
+  return serialize(markdown.replace(/\n/g, "\n\n"), {
+    mdxOptions: {
+      remarkPlugins: [remarkTextPlugin],
+    },
+  })
 }

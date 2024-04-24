@@ -6,7 +6,7 @@ author: Géraldine Malet
 meta:
   title: Théo Vandemeulebroucke de SOS Soirée | Blog | HubRise
   description: Comment Théo Vandemeulebroucke, de SOS Soirée, a intégré son logiciel de caisse maison à HubRise en quasi autonomie complète.
-excerpt: Pour regrouper ses commandes, dont celles de Uber Eats et Deliveroo, Théo Vandemeulebroucke, de SOS Soirée, a intégré son logiciel de caisse maison à HubRise en quasi autonomie complète. Retour sur son expérience.
+excerpt: Pour regrouper ses commandes, dont celles de Uber Eats et Deliveroo, Théo Vandemeulebroucke, de SOS Soirée, a intégré son logiciel de caisse maison à HubRise en quasi autonomie complète. Retour sur son expérience.
 ---
 
 **Qui est mieux placé que nos partenaires techniques pour vous parler d'intégration ? Nous donnons la parole à Théo Vandemeulebroucke - CEO et co-fondateur de SOS Soirée - qui vient de finaliser son intégration avec HubRise, en (presque) totale autonomie.**
