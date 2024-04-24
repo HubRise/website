@@ -16,12 +16,12 @@ meta:
 
 ## Connect Sage X3
 
-Only the Gigavee Technology support team can connect your Sage X3 ERP to HubRise.
+Whether you are already using Sage X3 or would like more information about it, [contact the Gigavee Technology support team](#contact) for assistance.
 
-To connect Sage X3 to HubRise, proceed as follows:
+Once you are ready to connect Sage X3 to HubRise, proceed as follows:
 
 1. Grant Gigavee Technology access to your HubRise account. For more information, see [Grant Access to Gigavee Technology Support](#give-access).
-1. Contact the Gigavee Technology support team who will establish the connection to HubRise. For more information, see [Contact Gigavee Technology Support](#contact).
+1. Ask the Gigavee Technology support to establish the connection to HubRise.
 
 ## Grant Access to Gigavee Technology Support {#give-access}
 

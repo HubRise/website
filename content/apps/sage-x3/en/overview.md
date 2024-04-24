@@ -4,7 +4,7 @@ path_override: "/"
 position: 1
 layout: documentation
 meta:
-  title: Overview | Sage X3 | HubRise
+  title: Overview | Sage X3 by GigaVee Technology | HubRise
   description: Sage X3 overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your ERP, your EPOS and your other apps.
 gallery:
   - __gallery-001.png
@@ -21,22 +21,24 @@ app_info:
 
 ## Description
 
-Sage X3 is a comprehensive Enterprise Resource Planning (ERP) solution designed for medium to large businesses. Its versatility supports streamlined operations, enhances organisational efficiency, and facilitates informed decision-making.
+Sage X3 is an Enterprise Resource Planning (ERP) solution for medium to large businesses. It supports operations, increases organizational efficiency, and aids in decision-making.
 
-Sage X3 offers robust capabilities, including:
-1. **Financial Management:** Sage X3 offers detailed financial reporting and analytics, enabling companies to monitor and manage expenses, revenue, and overall financial performance in real time. It supports multiple currencies, languages, and legislations, making it ideal for international businesses.
-1. **Inventory Control:** The system provides advanced tools for tracking stock levels, managing warehouse operations, and forecasting demand. This helps businesses optimise their inventory, reduce holding costs, and improve order accuracy.
-1. **Production Planning:** Sage X3 includes features for scheduling production, managing resources, and ensuring that manufacturing processes are efficient. Its capabilities help streamline operations, reduce downtime, and increase productivity.
-1. **Procurement:** It automates procurement processes, from vendor quotes to purchase orders and invoicing, ensuring that businesses get the best prices and terms. The system also includes supplier management features that help maintain strong supplier relationships.
-1. **Sales Management:** Sage X3 facilitates comprehensive sales management by tracking sales activity, managing customer data, and automating sales processes from quotation to fulfilment.
-1. **Project Management:** The ERP includes tools to plan, monitor, and manage projects from start to finish, integrating project costs into financial reports.
-1. **Compliance and Risk Management:** It ensures compliance with various national and international regulations and standards, helping companies manage risk more effectively.
+Sage X3 capabilities include:
 
-Gigavee Technology's integration seamlessly connects Sage X3 with HubRise to synchronise sales data and product catalogues. This integration accommodates multiple order types and payment methods to help optimise revenue streams and enhance customer experience for businesses.
+1. **Financial Management:** Provides detailed financial reporting and analytics for real-time monitoring and management of finances. It supports multiple currencies, languages, and legislations, suitable for international operations.
+2. **Inventory Control:** Offers tools for tracking stock levels, managing warehouse operations, and forecasting demand to optimize inventory and reduce costs.
+3. **Production Planning:** Includes scheduling, resource management, and process efficiency features to streamline operations and enhance productivity.
+4. **Procurement:** Automates procurement from vendor quotes to purchase orders and invoicing, includes supplier management features to maintain relationships.
+5. **Sales Management:** Tracks sales activity, manages customer data, and automates sales processes from quotation to fulfillment.
+6. **Project Management:** Provides tools to manage projects from inception to completion, integrating project costs into financial reports.
+7. **Compliance and Risk Management:** Ensures compliance with national and international regulations and standards, aiding risk management.
+
+Gigavee Technology's integration connects Sage X3 with HubRise, enabling synchronization of sales data and product catalog. Gigavee Technology provides integration services for various domains including sales, accounting, and CRM.
 
 ## Integration Features
 
 Connecting Sage X3 to HubRise allows your ERP to:
+
 - Pull orders from HubRise.
 - Pull a catalog from HubRise.
 
@@ -50,4 +52,4 @@ With HubRise, you can synchronise your menu, customer information, and orders be
 
 ## Prerequisites
 
-To establish a connection between Sage 3X and HubRise, you must have an existing Sage 3X account and a commercial agreement with Gigavee Technology.
+To establish a connection between Sage 3X and HubRise, you must have an existing Sage 3X account and a commercial agreement with Gigavee Technology. To set up an agreement, [contact Gigavee Technology](/apps/sage-x3/connect-hubrise#contact)

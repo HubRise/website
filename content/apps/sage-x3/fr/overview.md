@@ -27,19 +27,19 @@ app_info:
 
 ## Description
 
-Sage X3 est un progiciel de gestion intégré (ERP) conçu pour les moyennes et grandes entreprises. Sa polyvalence soutient l'optimisation des opérations, améliore l'efficacité organisationnelle et facilite la prise de décision éclairée.
+Sage X3 est une solution de planification des ressources d'entreprise (ERP) pour les entreprises de taille moyenne à grande. Elle soutient les opérations, augmente l'efficacité organisationnelle et aide à la prise de décision.
 
-Sage X3 offre des fonctionnalités robustes, notamment :
+Les capacités de Sage X3 incluent :
 
-1. **Gestion financière :** Sage X3 propose des rapports financiers détaillés et des analyses, permettant aux entreprises de surveiller et de gérer les dépenses, les revenus et la performance financière globale en temps réel. Il prend en charge plusieurs devises, langues et législations, ce qui le rend idéal pour les entreprises internationales.
-2. **Contrôle des stocks :** Le système offre des outils avancés pour le suivi des niveaux de stock, la gestion des opérations d'entrepôt et la prévision de la demande. Cela aide les entreprises à optimiser leur inventaire, à réduire les coûts de stockage et à améliorer la précision des commandes.
-3. **Planification de la production :** Sage X3 inclus des fonctionnalités pour la planification de la production, la gestion des ressources et la garantie que les processus de fabrication sont efficaces. Ses capacités aident à rationaliser les opérations, réduire les temps d'arrêt et augmenter la productivité.
-4. **Approvisionnement :** Il automatise les processus d'approvisionnement, des devis fournisseurs aux bons de commande et à la facturation, garantissant pour les entreprises d'obtenir les meilleurs prix et conditions. Le système comprend également des fonctionnalités de gestion des fournisseurs qui aident à maintenir de solides relations avec les fournisseurs.
-5. **Gestion des ventes :** Sage X3 facilite la gestion complète des ventes en suivant l'activité commerciale, en gérant les données clients et en automatisant les processus de vente.
-6. **Gestion de projet :** L'ERP comprend des outils pour planifier, surveiller et gérer des projets du début à la fin, intégrant les coûts du projet dans les rapports financiers.
-7. **Gestion de la conformité et des risques :** Il garantit la conformité aux différentes réglementations et normes nationales et internationales, aidant les entreprises à gérer les risques de manière plus efficace.
+1. **Gestion financière :** Fournit des rapports financiers détaillés et des analyses pour la surveillance et la gestion en temps réel des finances. Elle prend en charge plusieurs devises, langues et législations, adaptée aux opérations internationales.
+2. **Contrôle des stocks :** Offre des outils pour le suivi des niveaux de stock, la gestion des opérations d'entrepôt et la prévision de la demande afin d'optimiser les stocks et de réduire les coûts.
+3. **Planification de la production :** Comprend la planification, la gestion des ressources et des fonctionnalités d'efficacité des processus pour rationaliser les opérations et améliorer la productivité.
+4. **Approvisionnement :** Automatise l'approvisionnement des devis fournisseurs aux bons de commande et à la facturation, inclut des fonctionnalités de gestion des fournisseurs pour maintenir les relations.
+5. **Gestion des ventes :** Suit l'activité de vente, gère les données clients et automatise les processus de vente de la citation à la réalisation.
+6. **Gestion de projet :** Fournit des outils pour gérer les projets du début à la fin, intégrant les coûts des projets dans les rapports financiers.
+7. **Conformité et gestion des risques :** Assure la conformité aux réglementations et normes nationales et internationales, aidant à la gestion des risques.
 
-L'intégration réalisée par Gigavee Technology permet de connecter Sage X3 à HubRise pour synchroniser les données de vente et les catalogues produits. Cette intégration prend en charge plusieurs types de commandes et méthodes de paiement, optimisant les flux de revenus et améliorant l'expérience client.
+L'intégration réalisée par Gigavee Technology connecte Sage X3 à HubRise, permettant la synchronisation des données de vente et du catalogue produit. Gigavee Technology offre des services d'intégration dans divers domaines, incluant les ventes, la comptabilité et la gestion de la relation client (CRM).
 
 ## Fonctionnalités de l'intégration
 
