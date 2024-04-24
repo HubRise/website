@@ -4,7 +4,7 @@ path_override: /
 position: 1
 layout: documentation
 meta:
-  title: Présentation générale | Sage X3 | HubRise
+  title: Présentation générale | Sage X3 by GigaVee Technology | HubRise
   description: Présentation générale de Sage X3, les raisons de le connecter à HubRise et fonctionnalités de l'intégration avec HubRise. Synchronisez vos données entre votre ERP et vos autres applications.
 gallery:
   - __gallery-001.png

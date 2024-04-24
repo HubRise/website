@@ -4,7 +4,7 @@ path_override: connect-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connect to HubRise | Sage X3 | HubRise
+  title: Connect to HubRise | Sage X3 by GigaVee Technology | HubRise
   description: Connect Sage X3 integrated by Gigavee into HubRise. Steps to follow to receive your EPOS and online orders into your Sage X3 ERP.
 ---
 
