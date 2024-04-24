@@ -1,7 +1,7 @@
 ---
 title: Terminologie
 path_override: terminologie
-position: 4
+position: 7
 layout: documentation
 meta:
   title: Terminologie | Expedy | HubRise
