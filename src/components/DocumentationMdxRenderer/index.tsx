@@ -10,6 +10,7 @@ import rehypeImagePlugin from "@utils/mdx/rehypeImagePlugin"
 import rehypeLinkRewritePlugin from "@utils/mdx/rehypeLinkRewritePlugin"
 import remarkHeadingsPlugin from "@utils/mdx/remarkHeadingsPlugin"
 import type { HeaderLink } from "@utils/mdx/remarkHeadingsPlugin"
+import remarkTextPlugin from "@utils/mdx/remarkTextPlugin"
 import { Router } from "@utils/router"
 
 import A from "./components/A"
@@ -52,7 +53,7 @@ export const renderDocumentationMdx = async (
     options: {
       parseFrontmatter: false,
       mdxOptions: {
-        remarkPlugins: [remarkGfm, [remarkHeadingsPlugin, headerLinks]],
+        remarkPlugins: [remarkGfm, remarkTextPlugin, [remarkHeadingsPlugin, headerLinks]],
         rehypePlugins: [
           rehypeImagePlugin(imageDirName, contentImages),
           rehypeLinkRewritePlugin(router, language, pageHref, headerLinks),

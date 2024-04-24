@@ -50,6 +50,9 @@ export const Actions = styled.div`
 `
 
 export const ActionLink = styled(Link)<{ $backgroundColor: BackgroundColor }>`
+  height: 100%;
+  width: 100%;
+  ${mixin.centerElement};
   font-size: ${fontSizes._16};
   font-weight: 500;
   text-transform: uppercase;

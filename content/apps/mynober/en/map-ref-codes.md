@@ -12,7 +12,7 @@ Most EPOS solutions require a ref code for each product to properly interpret or
 
 ---
 
-**IMPORTANT NOTE**: You can skip this page if you only use MynOber Cloud as an EPOS.
+**IMPORTANT NOTE:** You can skip this page if you only use MynOber Cloud as an EPOS.
 
 ---
 

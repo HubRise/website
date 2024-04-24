@@ -6,7 +6,7 @@ author: Antoine Monnier
 meta:
   title: Variantes de catalogue | Blog | HubRise
   description: HubRise prend désormais en charge les variantes de catalogue. Grâce à cette nouvelle fonctionnalité, vous pouvez utiliser un seul catalogue sur plusieurs canaux et points de vente, tout en conservant la possibilité de personnaliser les prix et la disponibilité des SKU, options et promotions pour chaque canal et point de vente.
-excerpt: "Nouveauté : les variantes de catalogue. Grâce à cette nouvelle fonctionnalité, vous pouvez utiliser un seul catalogue avec plusieurs canaux et points de vente, tout en conservant la possibilité de personnaliser les prix et la disponibilité pour chaque canal et point de vente."
+excerpt: "Nouveauté : les variantes de catalogue. Grâce à cette nouvelle fonctionnalité, vous pouvez utiliser un seul catalogue avec plusieurs canaux et points de vente, tout en conservant la possibilité de personnaliser les prix et la disponibilité pour chaque canal et point de vente."
 ---
 
 [//]: # "Photo credits: Dall-E"
