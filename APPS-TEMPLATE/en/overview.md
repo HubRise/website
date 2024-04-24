@@ -23,17 +23,17 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: The integration is in progress. Full documentation will be published once the integration is complete.
-**IMPORTANT NOTE**: The integration is currently being reviewed. Full documentation will be published once the review is complete.
-**IMPORTANT NOTE**: Full documentation of this integration will be available soon.
-**IMPORTANT NOTE**: Full documentation of this integration is in progress.
+**IMPORTANT NOTE:** The integration is in progress. Full documentation will be published once the integration is complete.
+**IMPORTANT NOTE:** The integration is currently being reviewed. Full documentation will be published once the review is complete.
+**IMPORTANT NOTE:** Full documentation of this integration will be available soon.
+**IMPORTANT NOTE:** Full documentation of this integration is in progress.
 
 ---
 
 ---
 
-**IMPORTANT NOTE**: This documentation is available <Link href="/fr/apps/SOLUTION" addLocalePrefix={false}>in French only</Link>.
-**IMPORTANT NOTE**: Full documentation available <Link href="/fr/apps/SOLUTION" addLocalePrefix={false}>in French only</Link>.
+**IMPORTANT NOTE:** This documentation is available <Link href="/fr/apps/SOLUTION" addLocalePrefix={false}>in French only</Link>.
+**IMPORTANT NOTE:** Full documentation available <Link href="/fr/apps/SOLUTION" addLocalePrefix={false}>in French only</Link>.
 
 ---
 
@@ -57,6 +57,7 @@ Connecting SOLUTION to HubRise allows your [EPOS] to:
 - Push a catalog into HubRise. -OR- Push a catalog into HubRise, with variants support.
 - Synchronise inventory with HubRise.
 - Synchronise final delivery time with HubRise.
+- Synchronise opening hours with HubRise.
 
 ---
 

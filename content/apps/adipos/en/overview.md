@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: This documentation is available <Link href="/fr/apps/adipos">in French only</Link>.
+**IMPORTANT NOTE:** This documentation is available <Link href="/fr/apps/adipos">in French only</Link>.
 
 ---
 

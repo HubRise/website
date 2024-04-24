@@ -35,7 +35,7 @@ A scope combines an **access-level set of permissions** and **general permission
 
 An **access-level set of permissions** is made of an access-level keyword, which can be `location` or `account`, followed by a comma separated list of permissions between square brackets.
 
-Each permission consists of a resource, which can be `orders`, `customer_list`, `catalog`, `all_customer_lists`, or `all_catalogs`, and an access right keyword, which can be `read` or `write`, separated with a dot.
+Each permission consists of a resource, which can be `orders`, `customer_list`, `catalog`, `inventory`, `all_customer_lists`, or `all_catalogs`, and an access right keyword, which can be `read` or `write`, separated with a dot.
 
 **General permissions** can be `profile`, or `profile_with_email`.
 
@@ -58,8 +58,10 @@ Each permission consists of a resource, which can be `orders`, `customer_list`, 
   - Your application can access the profile of the user, including their email.
 
 - `location[orders.read]` and `location[orders.write]`:
+
   - The user selects a location.
   - Your application can read the location's orders. With the `write` scope, it can also create orders in the location, and update any location's order.
+
 - `account[orders.read]` and `account[orders.write]`:
 
   - The user selects an account.
@@ -69,11 +71,22 @@ Each permission consists of a resource, which can be `orders`, `customer_list`, 
 
   - The user selects a location, and a catalog belonging to the selected location or to the location's account.
   - Your application can read the catalog. With the `write` scope, it can also update the catalog, even if it belongs to the account.
+  - For historical reasons, the `catalog.read` and `catalog.write` scopes allow read and write access to the inventory of a location. This behaviour is however deprecated, and you should use the `inventory.read` and `inventory.write` scopes instead.
 
 - `account[catalog.read]` and `account[catalog.write]`:
 
   - The user selects an account, and a catalog belonging to the account or to any location of the account.
   - Your application can read the catalog. With the `write` scope, it can also update the catalog.
+
+- `location[inventory.read]` and `location[inventory.write]`:
+
+  - The user selects a location.
+  - Your application can read the inventory of the location. With the `write` scope, it can also update the inventory.
+
+- `account[inventory.read]` and `account[inventory.write]`:
+
+  - The user selects an account.
+  - Your application can read the inventory of any location in the account. With the `write` scope, it can also update the inventory.
 
 - `location[all_catalogs.read]` and `location[all_catalogs.write]`:
 
@@ -129,7 +142,7 @@ https://<<YOUR-DOMAIN-HERE>>/oauth_callback?code=ffae0047c4d6b9e02f95e76a3f6e906
 
 ---
 
-**IMPORTANT NOTE**: Authorisation codes are one-use throw-away codes that expire after 10 minutes. They are used to generate API tokens, which do not expire. The next section explains how to get an API token from an authorisation code.
+**IMPORTANT NOTE:** Authorisation codes are one-use throw-away codes that expire after 10 minutes. They are used to generate API tokens, which do not expire. The next section explains how to get an API token from an authorisation code.
 
 ---
 
@@ -239,7 +252,7 @@ The `access_token` returned by `GET /oauth2/v1/token` is specific to a given cli
 
 ---
 
-**IMPORTANT NOTE**: if a different catalog (or customer list) is selected when re-authorising the location, the token will no
+**IMPORTANT NOTE:** if a different catalog (or customer list) is selected when re-authorising the location, the token will no
 longer allow access to the former catalog (or customer list) when the new authorisation completes.
 
 ---

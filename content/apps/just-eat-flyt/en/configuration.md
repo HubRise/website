@@ -31,6 +31,10 @@ Service types such as platform delivery, restaurant delivery or takeaway might r
 
 Additionally, from this section, you can choose to categorise orders fulfilled by Just Eat as either delivery or collection orders. Orders fulfilled by the restaurant fleet are always marked as delivery orders. This feature is useful to address specific business requirements or to differentiate these orders in financial reports.
 
+### Special Items
+
+Some markets such as Ireland require deposits on certain items. If your business requires this, you can specify the ref code for the deposit item in this section. The deposit item must first be created as an option in your EPOS. Once configured, it will be automatically added to any items that require a deposit.
+
 ### Discounts
 
 In this section, include the ref code associated with Just Eat discounts on your EPOS.
