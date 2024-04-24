@@ -6,7 +6,7 @@ layout: documentation
 meta:
   title: Overview | Obypay | HubRise
   description: Obypay overview, reasons for connecting Obypay to HubRise and summary of integrated features.
-gallery: null
+gallery:
 app_info:
   category: Online Ordering
   availability: France

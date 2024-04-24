@@ -374,7 +374,7 @@ content:
           documentation: /fr/apps/obypay
           logo: obypay.png
           title: Obypay
-          description: Obypay propose une solution de commande en ligne et à table pour les restaurants, ainsi qu'une conciergerie digitale pour les hôtels. Ils offrent également des bornes de commande.
+          description: Obypay propose une solution de commande en ligne et à table pour les restaurants, une conciergerie digitale pour les hôtels, et des bornes de commande pour la restauration.
         - website: https://www.prestashop.com/fr
           documentation: /fr/apps/prestashop
           logo: prestashop.png
