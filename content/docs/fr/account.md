@@ -10,7 +10,8 @@ meta:
 
 Un compte correspond à votre marque et comprend un ou plusieurs points de vente. Les utilisateurs de HubRise peuvent avoir accès à un ou plusieurs comptes. Pour passer d'un compte à un autre, utilisez la liste déroulante **Compte** située tout en haut du back-office de HubRise.
 
-La page **CONFIGURATION** affiche des informations sur votre compte et vous permet d'en changer la configuration. Vous pouvez également modifier la configuration de n'importe quel point de vente individuel qui fait partie de ce compte.
+La page **CONFIGURATION** affiche des informations sur votre compte et vous permet d'en changer la configuration.
+Vous pouvez également modifier la configuration de n'importe quel point de vente individuel qui fait partie de ce compte.
 
 ## Configuration du compte
 
@@ -18,8 +19,10 @@ Les comptes et les points de vente présentent des sous-sections et des paramèt
 
 Vous pouvez définir des configurations différentes pour les comptes et les points de vente lorsque les cas suivants se présentent :
 
-- Vous pouvez configurer une méthode de paiement unique au niveau de **tous les points de vente**, ou configurer des méthodes de paiement différentes sur certains points de vente. Cette option est utile si vous devez faire en sorte qu'un point de vente utilise une méthode de paiement différente pour des raisons de comptabilité.
-- Vous pouvez accorder aux utilisateurs des permissions valables pour l'ensemble du compte ou pour des points de vente spécifiques. Vous pouvez par exemple accorder à un utilisateur l'accès complet à un compte en tant qu'administrateur, mais autoriser un autre utilisateur à uniquement visualiser et gérer un point de vente spécifique.
+- Vous pouvez configurer une méthode de paiement unique au niveau de **tous les points de vente**, ou configurer des méthodes de paiement différentes sur certains points de vente.
+  Cette option est utile si vous devez faire en sorte qu'un point de vente utilise une méthode de paiement différente pour des raisons de comptabilité.
+- Vous pouvez accorder aux utilisateurs des permissions valables pour l'ensemble du compte ou pour des points de vente spécifiques.
+  Vous pouvez par exemple accorder à un utilisateur l'accès complet à un compte en tant qu'administrateur, mais autoriser un autre utilisateur à uniquement visualiser et gérer un point de vente spécifique.
 - Vous pouvez également visualiser les données sur l'ensemble du compte ou filtrer les informations en fonction d'un point de vente spécifique.
 - Vous pouvez modifier votre compte et vos points de vente de la manière la mieux adaptée aux besoins de votre entreprise.
 
@@ -47,13 +50,13 @@ Enfin, saisissez la **devise** correcte du marché sur lequel vous opérez.
 
 ---
 
-**REMARQUE IMPORTANTE** : la valeur de la devise ne peut être définie que lors de la création du compte et n'est plus modifiable par la suite. Si la devise du compte HubRise ne correspond pas à celle qui est définie dans les applications connectées, des erreurs risquent de se produire. Créez plutôt un nouveau compte avec la bonne devise et utilisez celui-ci pour connecter vos applications.
+**REMARQUE IMPORTANTE :** La devise ne peut être définie que lors de la création du compte et n'est plus modifiable par la suite. Si la devise du compte HubRise ne correspond pas à celle qui est définie dans les applications connectées, des erreurs risquent de se produire. Créez plutôt un nouveau compte avec la bonne devise et utilisez celui-ci pour connecter vos applications.
 
 ---
 
 ---
 
-**FAQ associée**: [J'ai trop de comptes pour mon entreprise sur HubRise. Comment faire un nettoyage ?](/docs/faqs/how-can-i-clear-accounts)
+**FAQ associée** : [J'ai trop de comptes pour mon entreprise sur HubRise. Comment faire un nettoyage ?](/docs/faqs/how-can-i-clear-accounts)
 
 ---
 

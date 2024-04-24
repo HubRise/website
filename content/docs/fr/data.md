@@ -24,10 +24,11 @@ La page **COMMANDES** affiche les commandes dans l'ordre inverse de leur date de
 Pour filtrer les commandes par dates de début et de fin, procédez comme suit :
 
 1. Sélectionnez les champs **Du** et **Au** et définissez les plages de dates à filtrer.
-1. Sélectionnez l'icône de recherche <InlineImage width="17" height="17">![Icône Rechercher](../images/061-search.png)</InlineImage> pour filtrer les enregistrements d'après ces dates.
-1. Pour effacer les filtres de date, supprimez les dates contenues dans les champs **Du** et **Au**, puis sélectionnez l'icône de recherche <InlineImage width="17" height="17">![Icône Rechercher](../images/061-search.png)</InlineImage>.
+2. Sélectionnez l'icône de recherche <InlineImage width="17" height="17">!\[Icône Rechercher\](../images/061-search.png)</InlineImage> pour filtrer les enregistrements d'après ces dates.
+3. Pour effacer les filtres de date, supprimez les dates contenues dans les champs **Du** et **Au**, puis sélectionnez l'icône de recherche <InlineImage width="17" height="17">!\[Icône Rechercher\](../images/061-search.png)</InlineImage>.
 
-Cliquez sur la date de la commande pour afficher les détails complets. Pour afficher les détails complets de la requête, cliquez sur la date et l'heure dans la section **Logs**. Pour plus d'informations, voir [Logs](/docs/data#logs).
+Cliquez sur la date de la commande pour afficher les détails complets.
+Pour afficher les détails complets de la requête, cliquez sur la date et l'heure dans la section **Logs**. Pour plus d'informations, voir [Logs](/docs/data#logs).
 
 ---
 
@@ -49,9 +50,9 @@ Les enregistrements contenus sur cette page affichent les attributs suivants :
 Pour filtrer les clients par nom ou adresse e-mail, procédez comme suit :
 
 1. S'il existe plusieurs listes de clients associées au compte ou au point de vente, sélectionnez la liste déroulante en regard de l'intitulé **Clients**, puis sélectionnez la liste de clients à afficher.
-1. Cliquez sur le champ **Rechercher par nom ou email** et saisissez le texte à rechercher.
-1. Sélectionnez l'icône de recherche pour filtrer les enregistrements de client.
-1. Pour revenir à la liste clients complète et non filtrée, supprimez tout le texte contenu dans le champ **Rechercher par nom ou email**, puis sélectionnez l'icône de recherche <InlineImage width="17" height="17">![Icône Rechercher](../images/061-search.png)</InlineImage>.
+2. Cliquez sur le champ **Rechercher par nom ou email** et saisissez le texte à rechercher.
+3. Sélectionnez l'icône de recherche pour filtrer les enregistrements de client.
+4. Pour revenir à la liste clients complète et non filtrée, supprimez tout le texte contenu dans le champ **Rechercher par nom ou email**, puis sélectionnez l'icône de recherche <InlineImage width="17" height="17">!\[Icône Rechercher\](../images/061-search.png)</InlineImage>.
 
 Pour afficher les détails complets d'un client, cliquez sur le nom de celui-ci. Pour voir les logs complets de toutes les requêtes liées à la liste de clients, cliquez sur **Voir les logs**.
 
@@ -70,8 +71,10 @@ Les comptes et les points de vente peuvent contenir plusieurs catalogues. Pour a
 Les catalogues sont présentés dans trois onglets :
 
 - **SKUS** : articles que vous vendez aux clients.
-- **PROMOTIONS** : offres spéciales disponibles dans le catalogue. Les promotions s'appliquent non pas à des produits spécifiques, mais à l'ensemble de la commande. Cela pourrait être une formule avec trois services (entrée, plat principal et dessert) et des offres telles que **Un acheté - Un offert**.
-- **REMISES** : rabais disponibles dans le catalogue. Les remise s'appliquent non pas à des produits spécifiques, mais à l'ensemble de la commande. Le code **LIVRAISON-OFFERTE**, par exemple, peut supprimer les frais de livraison pour l'ensemble de la commande, tandis que le code **C'EST-VENDREDI** peut offrir une remise de 10 % sur l'ensemble de la commande le vendredi.
+- **PROMOTIONS** : offres spéciales disponibles dans le catalogue.
+  Les promotions s'appliquent non pas à des produits spécifiques, mais à l'ensemble de la commande. A titre d'exemple, une formule avec trois choix (entrée, plat et dessert), ou une offre **Un acheté - Un offert**.
+- **REMISES** : rabais disponibles dans le catalogue.
+  Les remises s'appliquent non pas à des produits spécifiques, mais à l'ensemble de la commande. Le code **LIVRAISON-OFFERTE**, par exemple, peut supprimer les frais de livraison pour l'ensemble de la commande, tandis que le code **C'EST-VENDREDI** peut offrir une remise de 10 % sur l'ensemble de la commande le vendredi.
 
 ![Onglets du catalogue HubRise](./images/053-2x-catalog-tabs.png)
 
@@ -94,17 +97,17 @@ Pour créer, modifier ou supprimer un catalogue, voir [Catalogues](/docs/catalog
 
 ## Inventaire
 
-La page **INVENTAIRE** affiche les entrées d'inventaire pour le point de vente sélectionné. Vous devez sélectionner un point de vente pour voir son inventaire. Si aucun point de vente n'est sélectionné, un message vous invite à en sélectionner un.
+La page **INVENTAIRE** affiche les entrées d'inventaire pour le point de vente sélectionné. Vous devez sélectionner un point de vente pour consulter son inventaire. Si aucun point de vente n'est sélectionné, un message vous invite à en sélectionner un.
 
-Les entrées inventaire sont présentées avec les entrées SKU en premier, triées par leur code ref, suivies des entrées d'option, également triées par leur code ref. En l'absence d'une entrée inventaire pour un SKU ou une option, la quantité est considérée comme illimitée.
+Les entrées d'inventaire sont organisées avec les SKUs en premier, triés par code ref, suivis des options, également triées par code ref. Les SKUs et options n'ayant pas d'entrée d'inventaire sont considérés comme disponibles en quantité illimitée.
 
 Les attributs suivants sont affichés pour chaque entrée d'inventaire :
 
-- **REF / OPTION**: Le type d'entrée d'inventaire, soit **REF** ou **Option**.
+- **REF / OPTION**: Le type d'entrée d'inventaire, **SKU** ou **Option**.
 - **REF**: Le code ref du SKU ou de l'option.
-- **STOCK**: Niveau actuel des stocks. Si le niveau de stock est `0`, l'article est en rupture de stock.
+- **STOCK** : Niveau de stock actuel. Si le niveau de stock est `0`, l'article est en rupture de stock.
 
-Pour voir les logs complets de toutes les requêtes liées aux modifications faites sur les inventaires, cliquez sur **Voir les logs**. Pour plus d'informations, voir [Logs](/docs/data#logs).
+Pour voir les logs complets de toutes les requêtes liées à l'inventaire, cliquez sur **Voir les logs**. Pour plus d'informations, voir [Logs](/docs/data#logs).
 
 ## Les logs {#logs}
 
@@ -116,20 +119,20 @@ La page de logs affiche une liste récapitulative des requêtes par ordre chrono
 
 - **HEURE (UTC+02:00)** : date et heure de la requête au format UTC.
 - **ORIGINE** : application à partir de laquelle la requête a été créée.
-- **RESSOURCE** : cible de la requête.
+- **RESSOURCE** : objet affecté par la requête.
 - **POINT DE TERMINAISON** : point de terminaison de la requête, dont la méthode HTTP et l'URL.
-- **URL** : adresse URL d'accès à la requête.
+- **URL** : adresse URL de la requête.
 - **RÉPONSE** : code de réponse HTTP.
 
 D'autres détails sur les logs sont disponibles à l'intention des utilisateurs avancés et des développeurs pour leur permettre de visualiser les communications entre les applications et de résoudre les problèmes. Pour afficher les détails d'une entrée parmi les logs, procédez comme suit :
 
 1. Cliquez sur la ligne à afficher. La liste complète des détails relatifs à la requête et à la réponse s'affiche.
-1. Pour télécharger la requête ou la réponse, sélectionnez l'icône de téléchargement <InlineImage width="15" height="14">![Icône de téléchargement](../images/058-download.png)</InlineImage>. La requête ou la réponse sélectionnée sera délivrée sous forme de fichier JSON.
+2. Pour télécharger la requête ou la réponse, sélectionnez l'icône de téléchargement <InlineImage width="15" height="14">!\[Icône de téléchargement\](../images/058-download.png)</InlineImage>. La requête ou la réponse sélectionnée sera délivrée sous forme de fichier JSON.
 
-Les logs peuvent être filtrés en fonction de critères spécifiques, y compris la ressource, la méthode et la plage horaire. Pour filtrer les logs :
+Les logs peuvent être filtrés en fonction de critères spécifiques, y compris la ressource, la méthode et la période de temps. Pour filtrer les logs :
 
-1. Cliquez sur la section **Filtrer** située en haut de la page. En cliquant, vous verrez les options de filtrage.
-1. Appliquer un ou plusieurs filtres. Les entrées de journal seront automatiquement actualisées.
-1. Pour revenir à la visualisation de tous les logs, cliquez sur **Réinitialiser**.
+1. Cliquez sur la section **Filtrer** située en haut de la page. En cliquant, vous verrez les options de filtrage apparaître.
+2. Appliquer un ou plusieurs filtres. Les entrées de logs s'actualisent automatiquement.
+3. Pour revenir à l'affichage de toutes les entrées de logs, cliquez sur **Réinitialiser**.
 
 Pour plus d'informations, voir la rubrique [Comprendre les logs HubRise](/docs/hubrise-logs/overview). Pour une référence complète sur l'API HubRise, voir la [page de référence de l'API HubRise](/developers/api/general-concepts) (en anglais).
