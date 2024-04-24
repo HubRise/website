@@ -27,4 +27,4 @@ Les champs suivants des commandes HubRise sont imprimés sur les tickets Expedy.
 | `customer`           | Informations sur le client.                                                                                |
 | `payments`           | Le nom de la méthode de paiement utilisée est imprimé, ou à défaut la mention "A PAYER".                   |
 
-Pour personnaliser l'impression, consultez la section [Personnaliser vos impressions](/apps/expedy/configuration#customise-print).
+Pour personnaliser l'impression, consultez la section [Personnalisation des tickets](/apps/expedy/configuration#customise-receipts).

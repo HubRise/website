@@ -8,7 +8,7 @@ meta:
   description: Configurer Expedy pour recevoir vos commandes Expedy dans votre logiciel de caisse ou d'autres applications connectées à HubRise.
 ---
 
-Le back-office de Expedy permet de configurer la mise en page de vos impressions ainsi que la gestion de vos impressions envoyées par HubRise. Vous pouvez sélectionner le statut de commande qui déclenchera l'impression ou configurer l'imprimante pour qu'elle modifie automatiquement le statut d'une commande après impression.
+Le back-office de Expedy permet de configurer le comportement de l'imprimante et la mise en page de vos impressions.
 
 ## Paramètres HubRise
 
@@ -32,7 +32,7 @@ Pour configurer ces paramètres, suivez ces étapes :
    ![Interface utilisateur - Paramètres HubRise](./images/008-2x-expedy-hubrise-actions.png)
 1. Cliquez sur **SAUVEGARDER** pour enregistrer les modifications.
 
-## Personnaliser vos impressions {#customise-print}
+## Personnalisation des tickets {#customise-receipts}
 
 Vous pouvez configurer le nom et le logo de votre société en tête des tickets. Vous pouvez également afficher l'adresse complète de votre établissement en pied de page.
 
@@ -47,9 +47,9 @@ Pour configurer la mise en page des tickets, suivez ces étapes :
 
 Pour connaître les informations imprimées par défaut sur les tickets, consultez la section [Recevoir les commandes](/apps/expedy/receive-orders).
 
-## Paramétrer vos impressions
+## Paramètres avancés
 
-Expedy permet de paramétrer le nombre de copies d'un même reçu sur une même imprimante, ou d'utiliser une imprimante supplémentaire pour une impression située ailleurs. Il est également possible de recevoir une notification SMS à chaque impression, moyennant un forfait supplémentaire. Se renseigner auprès d'Expedy.
+Vous pouvez paramétrer le nombre de copies et l'utilisation optionnelle d'une imprimante supplémentaire. Vous pouvez également configurer l'envoi d'une notification SMS à chaque impression, moyennant un forfait supplémentaire. Se renseigner auprès d'Expedy.
 
 Pour paramétrer ces options, suivez ces étapes :
 
