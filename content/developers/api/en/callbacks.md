@@ -12,7 +12,7 @@ A **callback** notifies a client of changes that occurred on a set of resources.
 
 ---
 
-**IMPORTANT NOTE**: A client does not receive notifications for the events it generated. If you are testing callbacks, you need to use a separate client to trigger events.
+**IMPORTANT NOTE:** A client does not receive notifications for the events it generated. If you are testing callbacks, you need to use a separate client to trigger events.
 
 ---
 
@@ -157,11 +157,12 @@ Creates a callback if none exists, replace the existing callback otherwise.
 | `events` | map    | A map with the keys being _resource type_ and the values being the *event type*s to monitor. |
 
 - _resource type_ is one of: `catalog`, `customer`, `delivery`, `inventory`, `location` and `order`.
-- _event type_ is one of: `create`, `patch` and `update`.
+- _event type_ is one of: `create`, `delete`, `patch` and `update`.
 
 The allowed combinations of resource and event types are:
 
 - `catalog.create`
+- `catalog.delete`
 - `catalog.update`
 - `customer.create`
 - `customer.update`

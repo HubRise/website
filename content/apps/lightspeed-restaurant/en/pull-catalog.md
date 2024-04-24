@@ -19,7 +19,7 @@ To pull a catalog from Lightspeed, follow these steps:
 
 ---
 
-**IMPORTANT NOTE**: This operation will replace your current HubRise catalog.
+**IMPORTANT NOTE:** This operation will replace your current HubRise catalog.
 
 ---
 

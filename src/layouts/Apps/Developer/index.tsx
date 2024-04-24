@@ -1,5 +1,6 @@
 import Block from "@components/Block"
 import { AppsYaml } from "@layouts/Apps/types"
+import { text } from "@utils/misc"
 
 import { Description } from "./Styles"
 
@@ -13,11 +14,11 @@ const Developer = ({ developers }: DevelopersProps): JSX.Element => {
   return (
     <Block backgroundColor="green" beforeExpansion={true} afterExpansion={true} title={title}>
       <Description>
-        <p>{description.paragraph_1}</p>
+        <p>{text(description.paragraph_1)}</p>
         <p>
-          {description.paragraph_2.chunk_1}
+          {text(description.paragraph_2.chunk_1)}
           <br />
-          {description.paragraph_2.chunk_2}
+          {text(description.paragraph_2.chunk_2)}
         </p>
       </Description>
     </Block>

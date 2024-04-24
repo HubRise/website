@@ -10,7 +10,7 @@ meta:
 
 ---
 
-**IMPORTANT NOTE**: A full documentation of this integration will be available soon.
+**IMPORTANT NOTE:** A full documentation of this integration will be available soon.
 
 ---
 

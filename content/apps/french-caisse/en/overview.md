@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: Full documentation of this integration will be available soon.
+**IMPORTANT NOTE:** Full documentation of this integration will be available soon.
 
 ---
 
@@ -38,7 +38,7 @@ Connecting French Caisse to HubRise allows your EPOS to:
 
 ---
 
-**IMPORTANT NOTE**: Orders received from HubRise are not taken into account in stock management or included in your business data analysis.
+**IMPORTANT NOTE:** Orders received from HubRise are not taken into account in stock management or included in your business data analysis.
 
 ---
 
