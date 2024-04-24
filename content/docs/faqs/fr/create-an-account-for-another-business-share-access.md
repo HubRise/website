@@ -24,7 +24,7 @@ Pour créer un compte pour une autre entreprise :
 
 Il est recommandé d'envoyer un e-mail de suivi à l'entreprise afin de l'informer de la création du compte. Cet e-mail peut être formulé comme suit :
 
-***
+---
 
 Bonjour, [Nom du contact commercial],
 
@@ -36,10 +36,10 @@ Je viens de créer votre compte HubRise. Pour vous connecter :
 
 Cordialement, [Votre nom]
 
-***
+---
 
-***
+---
 
 **FAQ associée** : [Comment créer un compte pour une autre entreprise sans partage l'accès ?](/docs/faqs/create-an-account-for-another-business-no-access-sharing)
 
-***
+---

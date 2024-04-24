@@ -20,18 +20,18 @@ Pour connecter une deuxième fois la même application, procédez comme suit :
 4. Sélectionnez la même application que celle que vous avez installée précédemment, puis cliquez sur **Connecter**.
 5. Sur la page d'autorisation, sélectionnez le point de vente HubRise correct dans le menu déroulant.
 6. Cliquez sur l'adresse URL dans la barre de navigation et incluez l'instruction `device_id=NomDeLaMarque&` après la portion initiale de l'URL : `https://manager.hubrise.com/oauth2/v1/authorize?`, et avant `account_id=`. Le paramètre « NomDeLaMarque » dans l'instruction `device_id=NomDeLaMarque&` doit être remplacé par le nom de la marque. Pour plus d'informations, voir la rubrique [Règles de nommage](#naming-rules).
-   ![Page d'autorisation avec adresse URL comprenant la chaîne device\_id=2&.](./images/066-autorisation-page-device-id.png)
+   ![Page d'autorisation avec adresse URL comprenant la chaîne device_id=2&.](./images/066-autorisation-page-device-id.png)
 7. Puis, appuyez sur la touche Retour de votre clavier.
 8. Cliquez sur **Autoriser** pour connecter l'application.
 9. Suivez les instructions à l'écran pour configurer la nouvelle instance de l'application. Pour plus de détails, cliquez sur le lien **Afficher la documentation** de l'application correspondante sur la [page des applications HubRise](/apps).
 
 Si votre application n'est pas présente sur la page des applications HubRise mais qu'elle se connecte correctement à HubRise à partir de son propre back-office, vous pouvez également la connecter plusieurs fois. Il vous suffit de procéder selon les étapes 5 et suivantes lorsque vous êtes redirigé vers la page d'autorisation.
 
-***
+---
 
 **REMARQUE IMPORTANTE** : ce processus peut être répété indéfiniment en remplaçant à chaque fois la chaîne `device_id=n&` par une valeur `n` différente. L'attribution d'une valeur pertinente au paramètre `device_id` peut vous aider à différencier vos différentes instances sur la page **CONNEXIONS**. Lorsque vous choisissez cette valeur, suivez les règles de nommage décrites ci-dessous.
 
-***
+---
 
 Une fois connectée, la nouvelle l'application apparaît sur la page **CONNEXIONS**.
 Les différentes connexions de la même application se distinguent selon la valeur de l'identifiant de l'application que vous avez choisi au moment de la configuration.

@@ -45,10 +45,10 @@ Une fois votre mode de paiement configuré, la première demande de paiement dev
    ![Réglez votre première facture HubRise en instance de paiement](./images/069-outstanding-payment.png)
 4. Suivez les instructions pour procéder au paiement.
 
-***
+---
 
 **REMARQUE IMPORTANTE** : pendant le processus d'autorisation de paiement, il se peut que votre banque vérifie le règlement via 3D Secure ou d'autres processus nécessaires afin de valider le prélèvement automatique sur votre carte. Veuillez vérifier la procédure d'autorisation standard adoptée par votre établissement bancaire.
 
-***
+---
 
 Les paiements ultérieurs au profit de HubRise seront automatisés jusqu'à ce que vous changiez de formule d'utilisation ou que votre moyen de paiement arrive à expiration. Pour plus d'informations sur les formules d'utilisation de HubRise, voir la rubrique [Utilisation et formule](/docs/usage-plan).

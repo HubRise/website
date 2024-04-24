@@ -39,8 +39,8 @@ Le statut passe à **Formule demandée** et votre point de vente passera automat
 
 Répétez cette procédure pour tous les points de vente dont vous souhaitez rétrograder le niveau.
 
-***
+---
 
 **REMARQUE IMPORTANTE** : vous bénéficierez des avantages de votre formule payée jusqu'à la prochaine date de facturation.
 
-***
+---

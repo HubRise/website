@@ -21,8 +21,8 @@ Le compte sera créé sans aucun utilisateur supplémentaire.
 
 ![Permissions dans HubRise](./images/056-2x-my-permissions.png)
 
-***
+---
 
 **FAQ associée** : [Comment créer un compte pour une autre entreprise ?](/docs/faqs/create-an-account-for-another-business-share-access)
 
-***
+---

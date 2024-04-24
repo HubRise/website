@@ -36,11 +36,11 @@ Pour attacher une entité à votre compte de facturation, suivez ces étapes :
 
 ![Exemple de compte de facturation](./images/081-2x-billing-account.png)
 
-***
+---
 
 **REMARQUE IMPORTANTE** : Lorsque vous attachez une entité, toutes les demandes de paiement en attente pour cette entité seront transférées sur votre compte de facturation.
 
-***
+---
 
 ## Détacher des entités
 
@@ -53,11 +53,11 @@ Pour détacher une entité de votre compte de facturation, suivez ces étapes :
 3. Rendez-vous sur la page **CONFIGURATION**.
 4. Section **Entités attachées à ce compte de facturation**, cliquez sur l'icône de la corbeille située sur le côté droit pour détacher les entités.
 
-***
+---
 
 **REMARQUE IMPORTANTE** : Lorsque vous détachez une entité, toutes les demandes de paiement déjà émises pour cette entité resteront sur votre compte de facturation.
 
-***
+---
 
 ## Mettre à jour les informations de facturation
 
