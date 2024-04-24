@@ -104,6 +104,12 @@ content:
           logo: nestor.png
           title: Nestor
           description: Nestor est un logiciel de caisse conçu pour la livraison à domicile et la vente à emporter.
+        - website: https://www.netfood.cloud
+          documentation: /apps/netfood
+          logo: netfood.png
+          title: NetFood
+          description: NetFood, développé par .Net Informatica, est un logiciel de caisse italien conçu pour la restauration et les débits de boissons. NetFood peut être complété par une solution de commande en ligne native et une application, ainsi qu'un kiosque.
+          additional_info:
         - website: https://nextorder.com/fr-fr
           documentation: /fr/apps/next-order
           logo: next-order.png
