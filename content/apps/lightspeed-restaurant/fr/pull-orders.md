@@ -27,7 +27,7 @@ Lightspeed Restaurant Bridge récupère de nouvelles commandes toutes les 30 sec
 
 ---
 
-**REMARQUE IMPORTANTE :** Seules les ventes payées et enregistrées dans Lightspeed, et non dans tout autre système tiers connecté au logiciel de caisse, sont récupérées dans HubRise.
+**REMARQUE IMPORTANTE :** Seules les ventes enregistrées dans Lightspeed et payées sont récupérées dans HubRise. Les commandes passées depuis des applications tierces directement connectées au logiciel de caisse, et non via HubRise, ne sont pas récupérées.
 
 ---
 
