@@ -44,4 +44,4 @@ With HubRise, you can synchronise your menu, customer information, and orders be
 
 ## Prerequisites
 
-You need a Lightspeed Restaurant license to complete the connection.
+You need a Lightspeed Restaurant licence to complete the connection.

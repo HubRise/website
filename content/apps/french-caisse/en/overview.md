@@ -52,4 +52,4 @@ With HubRise, you can synchronise your menu, customer information, and orders be
 
 ## Prerequisites
 
-To establish a connection between French Caisse and HubRise, you must have an existing French Caisse license.
+To establish a connection between French Caisse and HubRise, you must have an existing French Caisse licence.

@@ -7,7 +7,7 @@ meta:
   title: Overview | Restaurant Manager | HubRise
   description: Restaurant Manager overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 app_info:
-  category: Point of Sale
+  category: Point of Sales
   availability: Worldwide, sold and serviced by local authorized resellers.
   price_range:
   website: https://www.rmpos.com
@@ -42,4 +42,4 @@ With HubRise, you can synchronise your menu, customer information, and orders be
 
 ## Prerequisites
 
-To establish a connection between Restaurant Manager and HubRise, you must have a Restaurant Manager license, and a commercial agreement with Crystal Mind.
+To establish a connection between Restaurant Manager and HubRise, you must have a Restaurant Manager licence, and a commercial agreement with Crystal Mind.

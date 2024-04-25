@@ -31,6 +31,7 @@ Connecting Hop Delivery to HubRise allows your ordering and delivery platform t
 
 - Push orders into HubRise, including order status.
 - Push customer information into HubRise.
+- Pull a catalog from HubRise.
 
 ---
 
