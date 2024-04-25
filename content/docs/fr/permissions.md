@@ -1,7 +1,7 @@
 ---
 title: Permissions
 path_override: permissions
-position: 11
+position: 12
 layout: documentation
 meta:
   title: Permissions | HubRise
@@ -47,6 +47,6 @@ Pour supprimer un utilisateur, procédez comme suit :
 
 ---
 
-**REMARQUE IMPORTANTE** : un compte ne peut pas être laissé sans administrateur. Avant de supprimer votre profil utilisateur d'un compte, assurez-vous qu'un utilisateur de niveau Administrateur existe avec des permissions adéquates. Dans le cas contraire, vous pouvez modifier les permissions d'un utilisateur existant ou octroyer les permissions d'administrateur à **test@hubrise.com**.
+**REMARQUE IMPORTANTE** : un compte ne peut pas être laissé sans administrateur. Avant de supprimer votre profil utilisateur d'un compte, assurez-vous qu'un utilisateur de niveau Administrateur existe avec des permissions adéquates. Dans le cas contraire, vous pouvez modifier les permissions d'un utilisateur existant ou octroyer les permissions d'administrateur à test@hubrise.com.
 
 ---

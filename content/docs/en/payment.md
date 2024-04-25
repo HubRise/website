@@ -140,7 +140,7 @@ Payment history for Accounts will group Location payments for the date.
 
 ![Payment history example](./images/044-2x-payment-history.png)
 
-The first time you make a payment, the payment is identified as **Plan upgrade**. Subsequent payments will be listed with the date of the [billing period](docs/payment#billing-cycles). Once you have a valid payment method saved, payments are automated.
+The first time you make a payment, the payment is identified as **Plan upgrade**. Subsequent payments will be listed with the date of the [billing period](/docs/payment#billing-cycles). Once you have a valid payment method saved, payments are automated.
 
 Details within each invoice can be viewed directly on the HubRise back office by clicking on the date. Each payment will display:
 

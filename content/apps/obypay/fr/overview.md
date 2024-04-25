@@ -10,22 +10,15 @@ gallery:
 app_info:
   category: Commande en ligne
   availability: France
-  price_range: De 24,90 à 89 € / mois
   website: https://obypay.fr
-  contact: contact@obypay.com / +33 7 56 80 75 84
----
-
----
-
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
-
+  contact: contact@obypay.com / +33 1 76 38 08 07
 ---
 
 ## Description
 
 Obypay est une solution de commande mobile, en click & collect, sur place ou livraison.
 
-En commande sur place, le client scanne un QR code disposé sur la table, et accède au menu depuis le navigateur de son smartphone, sans installer d'application. Il suffit de quelques secondes pour passer une commande et la régler.
+En commande sur place, le client peut utiliser une borne de commande ou scanner un QR code disposé sur la table, ce qui lui permet d'accéder au menu depuis le navigateur de son smartphone sans avoir à installer d'application. Il suffit de quelques secondes pour passer une commande et la régler.
 
 Obypay peut aussi être utilisé à l'extérieur du restaurant, pour les commandes en click & collect ou en livraison.
 
@@ -41,7 +34,7 @@ Connecter Obypay à HubRise permet à Obypay de :
 - Recevoir les statuts de commande de HubRise.
 - Recevoir les informations clients de HubRise.
 
-Obypay peut être connecté à HubRise depuis le back-office de Obypay.
+Obypay peut être connecté à HubRise via le support de Obypay.
 
 ## Pourquoi se connecter ?
 

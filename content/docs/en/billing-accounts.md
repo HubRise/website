@@ -29,7 +29,7 @@ To attach an entity to your billing account, follow these steps:
 1. Navigate to the **SETTINGS** page.
 1. Click **Attach an entity**.
 1. Choose to either **Attach an account** or **Attach a location**, depending on your needs.
-1. Find the entity to attach from the **Select an account** or **Select a location** dropdown. This list will only display accounts and locations to which you have access to, and that are not already attached.
+1. Find the entity to attach from the **Select** dropdown. This list will only display accounts and locations to which you have access to, and that are not already attached.
 1. Click **Attach**.
 1. Repeat the process as many times as needed.
 1. Return to your **SETTINGS** page and check that all entities you attached are visible in the **Entities attached to this billing account** section.
