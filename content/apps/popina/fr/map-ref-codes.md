@@ -1,7 +1,7 @@
 ---
 title: Associer les codes ref
 path_override: associer-codes-ref
-position: 5
+position: 4
 layout: documentation
 meta:
   title: Associer les codes ref | Popina | HubRise
@@ -82,7 +82,7 @@ Les remises n'ont pas de code ref dans Popina. Elles sont identifiés par leur n
 
 Les frais n'ont pas de code ref dans Popina. Ils sont identifiés par leur nom dans les commandes.
 
-## Méthodes de paiement
+## Méthodes de paiement {#payment-methods}
 
 Les méthodes de paiement dans HubRise correspondent aux **modes de paiement** dans Popina. Pour retrouver le code ref d'un mode de paiement, suivez ces étapes :
 

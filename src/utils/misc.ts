@@ -28,3 +28,11 @@ export function createHeaderAnchor(header: string): string {
     header.replace(/^[\d.]+\s/, ``), // Remove leading chapter numbers
   )
 }
+
+/**
+ * Replace spaces with non-breaking spaces before punctuation
+ */
+export const text = (str: string): string => {
+  // return str
+  return str.replace(/ (\:|\?|!|;)/g, "\u00A0$1")
+}

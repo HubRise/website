@@ -25,10 +25,15 @@ It also provides you with the API key you need to use to connect to PrestaShop B
 To install the HubRise module, follow these steps:
 
 1. Download the [HubRise module](https://drive.google.com/file/d/1sQxhDnqt3Rywv-n-18nqA8O06fSJsKwG/view?usp=sharing).
-2. Log in to your PrestaShop back office.
-3. From the menu, select **Modules** > **Modules manager**, then click **Upload a module**.
-4. On the upload page, to install the module, drag the ZIP file of the module that you just downloaded. Then, click **Configure**.
-5. In the **HubRise** module page, take note of the **PrestaShop API key** value that you will need to activate PrestaShop Bridge in the following step.
+1. Log in to your PrestaShop back office.
+1. From the menu, select **Modules** > **Modules manager**, then click **Upload a module**.
+1. On the upload page, to install the module, drag the ZIP file of the module that you just downloaded.
+1. Click **Configure** to open the module configuration page.
+   ![HubRise module configuration](../images/000-prestashop-hubrise-module.png)
+1. Record the **PrestaShop API key**; it is necessary to activate PrestaShop Bridge in the following section.
+1. Keep the **Webhook Base URL** field at its default value: `https://prestashop.hubrise-apps.com`.
+1. In the **HubRise account ID** field, enter the ID of your HubRise account.
+1. Click the **Save** button.
 
 For more information about the configuration of the HubRise module, see [HubRise Module Configuration](/apps/prestashop/configuration#hubrise-module-configuration).
 
@@ -47,6 +52,7 @@ To can connect PrestaShop to HubRise, follow these steps.
    - Under **PrestaShop API key**, enter the value you copied from the HubRise module in PrestaShop.
    - Click **Save** to confirm.
      ![PrestaShop URL and API key](./images/001-prestashop-initial-config.png)
+1. If you encounter an **Invalid API key** error, see [Troubleshooting](/apps/prestashop/troubleshooting#invalid-api-key) for help.
 1. Configure the behaviour of PrestaShop Bridge, then click **Save** to complete the connection. For more information about configuring your PrestaShop Bridge, see [Configuration](/apps/prestashop/configuration).
 
 ## 3. Upload Your Catalog

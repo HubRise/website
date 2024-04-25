@@ -32,7 +32,7 @@ Additionally, from this section, you can choose to categorise orders fulfilled b
 
 ### Special Items
 
-By default, Uber Eats activates a checkbox in the checkout flow for costumers to **Request utensils, straws, etc.**, as shown in the screenshot below.
+By default, Uber Eats activates a checkbox in the checkout flow for customers to **Request utensils, straws, etc.**, as shown in the screenshot below.
 
 ![Disposable items checkbox in Uber Eats checkout](./images/009-disposable-items.png)
 

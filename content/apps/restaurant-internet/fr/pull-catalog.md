@@ -18,7 +18,7 @@ Pour importer votre catalogue HubRise dans Restaurant-internet, suivez ces étap
 
 ---
 
-**REMARQUE IMPORTANTE** : Cette opération va remplacer votre menu Restaurant-internet actuel.
+**REMARQUE IMPORTANTE :** Cette opération va remplacer votre menu Restaurant-internet actuel.
 
 ---
 

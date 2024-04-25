@@ -1,7 +1,7 @@
 ---
 title: FAQ
 path_override: faq
-position: 6
+position: 8
 layout: documentation
 meta:
   title: FAQ | Solution | HubRise
