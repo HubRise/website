@@ -6,7 +6,7 @@ layout: documentation
 meta:
   title: Overview | Koust | HubRise
   description: Koust overview, reasons for connecting it to HubRise and summary of integrated features.
-gallery: null
+gallery:
 app_info:
   category: Operations and Inventory
   availability: France, Switzerland and Belgium
@@ -16,19 +16,19 @@ app_info:
 
 ## Description
 
-Koust is an operations management software designed specifically for restaurateurs and hoteliers who want to manage costs and inventory. It helps them manage raw material supplies, monitor profitability, and improve the offer while maintaining precise control over the margin.
+Koust is an operations management software designed for restaurateurs and hoteliers who want to track their costs and manage their inventory. It helps them manage raw material supplies, monitor profitability, and improve the offer while maintaining precise control over the margin.
 
 This expertise enables Koust to work with renowned clients such as La Cigale, Le 4ème Mur, as well as the Ibis and Radisson hotels, and to assist hundreds of other establishments in increasing their margins.
 
-Koust meets the needs of chains, with dedicated features, allowing managers and executives to effectively manage their establishments. These features include:
+Koust meets the needs of chains, with features allowing managers and executives to manage their establishments. These features include:
 
 - **Purchase tracking and margin analysis:** Real time overview of expenses and comparison of supplier prices. Calculation of restaurants' gross margin and analysis of their profitability.
 - **Stock control and product optimisation:** Identification of stock discrepancies and cause analysis. Gross margin calculation for each dish and identification of the most profitable ones.
-- **Performance management and customisation:** Access to key performance indicators for in-depth analysis. Creation of custom reports to meet specific needs.
+- **Performance control and customisation:** Access to performance indicators and custom reporting for specific needs.
 - **Multisite management and performance comparison:** Centralisation of data from all locations. Comparison of the performance of different establishments.
 - **Production and food security:** Creation and centralisation of technical data sheets to guarantee quality. Production optimisation based on stock and forecasts. Product traceability and HACCP compliance. Implementation of a sanitary control plan to ensure food safety.
 
-Founded in 2017 by Jean-Luc Le Goff, former restaurateur and software developer, Koust is a business software designed by a restaurateur for restaurateurs.
+The company Koust was founded in 2017 by Jean-Luc Le Goff, former restaurateur and software developer.
 
 ## Integration features
 
