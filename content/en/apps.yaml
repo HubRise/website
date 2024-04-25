@@ -572,7 +572,7 @@ content:
           documentation: /apps/koust
           logo: koust.png
           title: Koust
-          description: Koust is an operations management solution designed for restaurants and hotels, helping manage inventory, analyse sales and gross margin, optimise purchasing strategies, and craft menus to enhance offerings while ensuring precise margin control.
+          description: Koust is an operations management solution designed for restaurants and hotels, enabling them to manage inventory, analyse sales and gross margin, optimise purchases, and adjust menus to enhance offerings while ensuring margin control.
           additional_info:
         - website: https://malba.io/
           documentation: /apps/melba
