@@ -14,12 +14,12 @@ app_info:
   availability: France
   price_range:
   website: https://www.restaur-app.fr
-  contact: +33 4 37 43 18 02
+  contact: +33 4 37 43 18 02 / info@restaur-app.fr
 ---
 
 ## Description
 
-Restaur'App, développée par l'agence Anthemis, est une solution tout-en-un destinée aux enseignes de restauration rapide en livraison et en vente à emporter. Elle propose à ces établissements de lancer leur site Web et leur application mobile de commande en ligne. Restaur'App est disponible via un abonnement mensuel, sans engagement et sans commission sur les ventes (hors frais bancaires).
+Restaur'App est une solution tout-en-un destinée aux enseignes de restauration rapide en livraison et en vente à emporter. Elle propose à ces établissements de lancer leur site Web et leur application mobile de commande en ligne. Restaur'App est disponible via un abonnement mensuel, sans engagement et sans commission sur les ventes (hors frais bancaires).
 
 Restaur'App offre une multitude de fonctionnalités et d'options de personnalisation pour la vente en ligne, la gestion des produits, la gestion des livraisons, et la réservation de tables. Elle inclut le paiement sécurisé, la gestion des commandes, le suivi des livreurs, un programme de cagnotte, les promotions, et les notifications clients sur mobile.
 

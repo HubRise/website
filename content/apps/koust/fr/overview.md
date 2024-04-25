@@ -9,23 +9,26 @@ meta:
 gallery:
 app_info:
   category: Gestion et Inventaire
-  availability: France
-  price_range: de 29 à 109 € / mois
+  availability: France, Suisse et Belgique
   website: https://koust.net
-  contact: https://koust.net/contact / contact@koust.fr / +33 2 44 84 43 88
+  contact: contact@koust.fr / +33 2 44 84 43 88
 ---
 
 ## Description
 
-Koust est une application qui permet aux restaurateurs de gérer leurs coûts et leurs stocks. Koust accompagne tous types de restaurateurs : des restaurants individuels aux chaînes de restaurants, en passant par la restauration collective.
+Koust est un logiciel de gestion conçu pour les restaurateurs et hôteliers qui souhaitent suivre leurs coûts et gérer leurs stocks. Il les aide à maîtriser leurs approvisionnements en matières premières, à surveiller la rentabilité et à améliorer l'offre tout en conservant un contrôle précis sur la marge.
 
-L'application dispose de nombreuses fonctionnalités séparées en plusieurs pôles :
+Cette expertise lui permet d'accompagner des clients renommés tels que La Cigale, Le 4ème Mur, ainsi que les hôtels Ibis et Radisson, et d'aider des centaines de restaurateurs à améliorer leurs marges.
 
-- Le pôle de gestion offre des tableaux de bord qui permettent de suivre en temps réel l'évolution du chiffre d'affaires et de la marge brute de votre établissement.
-- Le pôle de stock permet de passer vos commandes fournisseurs, de réaliser vos inventaires et d'analyser vos achats.
-- Le pôle de production offre un planning de production ainsi que la production de produits semi-finis.
+Koust répond aux besoins des chaînes, avec des fonctionnalités permettant aux managers et dirigeants de piloter leurs établissements. Ces fonctionnalités incluent :
 
-Koust a été créé en septembre 2016. Ses principaux objectifs sont d'augmenter la marge brute des restaurateurs, augmenter leur productivité, et diminuer les coûts matières.
+- **Suivi des achats et analyse de la marge :** Visualisation des dépenses en temps réel et comparaison des prix fournisseurs. Calcul de la marge brute des restaurants et analyse de leur rentabilité.
+- **Contrôle des stocks et optimisation des produits :** Identification des écarts de stock et analyse de leurs causes. Calcul de la marge brute de chaque plat et identification des plus rentables.
+- **Pilotage de la performance et personnalisation :** Accès à des indicateurs de performance et création de rapports personnalisés pour les besoins spécifiques.
+- **Gestion multi-sites et comparaison des performances :** Gestion et centralisation des données de tous points de vente. Comparaison des performances des différents établissements.
+- **Production et sécurité alimentaire :** Création et centralisation des fiches techniques pour garantir la qualité. Optimisation de la production en fonction des stocks et prévisions. Assurance de la traçabilité des produits et respect des normes HACCP. Mise en place d'un plan de maîtrise sanitaire pour garantir la sécurité alimentaire.
+
+La société Koust a été fondée en 2017 par Jean-Luc Le Goff, ancien restaurateur et développeur informatique.
 
 ## Fonctionnalités d'intégration
 
