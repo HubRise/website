@@ -33,7 +33,7 @@ La connexion à Shopify Bridge permet à HubRise de :
 
 - Recevoir les commandes de Shopify, dont les statuts de commande.
 - Récupérer les informations clients de Shopify.
-- Envoyer un catalogue dans Shopify.
+- Envoyer un catalogue vers Shopify, avec support des variantes.
 - Synchroniser l'inventaire avec Shopify.
 
 ## Pourquoi se connecter ?

@@ -25,6 +25,7 @@ Connecter Hop Delivery à HubRise permet à votre plateforme de commande et de 
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Envoyer les informations clients à HubRise.
+- Recevoir un catalogue de HubRise.
 
 ---
 

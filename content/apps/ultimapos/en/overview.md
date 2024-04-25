@@ -53,4 +53,4 @@ With HubRise, you can synchronise your menu, customer information, and orders be
 
 ## Prerequisites
 
-To establish a connection between UltimaPOS and HubRise, you must have a Premium UltimaPOS license.
+To establish a connection between UltimaPOS and HubRise, you must have a Premium UltimaPOS licence.
