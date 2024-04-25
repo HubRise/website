@@ -32,7 +32,7 @@ La connexion de WooCommerce permet à HubRise de :
 
 - Recevoir les commandes de WooCommerce, dont le statut de commande.
 - Recevoir les informations clients de WooCommerce.
-- Envoyer un catalogue à HubRise, avec support des variantes.
+- Envoyer un catalogue vers WooCommerce, avec support des variantes.
 - Synchroniser l'inventaire avec WooCommerce.
 
 ## Pourquoi se connecter ?

@@ -7,7 +7,7 @@ meta:
   title: Overview | 3S POS  | HubRise
   description: 3S POS  overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 app_info:
-  category: Point of Sale
+  category: Point of Sales
   availability: United Kingdom
   price_range:
   website: https://3s-pos.com

@@ -7,7 +7,7 @@ meta:
   title: Overview | Sicom | HubRise
   description: Sicom overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 app_info:
-  category: Point of Sale
+  category: Point of Sales
   availability: Worldwide, sold and serviced by local authorised resellers.
   price_range:
   website: https://www.sicom.com
