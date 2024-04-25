@@ -111,7 +111,7 @@ content:
           documentation: /apps/netfood
           logo: netfood.png
           title: NetFood
-          description: NetFood is an Italian by .Net Informatica, is an EPOS solution designed for the food & beverage sector. NetFood EPOS can be complemented with a native online ordering solution and app as well as a self-ordering kiosk.
+          description: NetFood, developed by .Net Informatica, is an Italian EPOS solution for the food & beverage sector. NetFood EPOS can be complemented with an online ordering solution and mobile app as well as a self-ordering kiosk.
           additional_info:
         - website: https://nextorder.com/en-gb
           documentation: /apps/next-order

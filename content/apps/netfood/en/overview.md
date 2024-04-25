@@ -24,7 +24,7 @@ NetFood, developed by .Net Informatica, is an EPOS solution designed for the foo
 - Order centralisation: Pulls orders from various sales channels, including self-ordering kiosks, online ordering, and apps, as well as major food ordering platforms such as Glovo, Just Eat, Uber Eats, and Deliveroo.
 - Kitchen Display System: Streamlines kitchen operations by displaying orders digitally, thus eliminating the need for paper orders.
 
-The NetFood EPOS can be complemented with a native online ordering solution and app as well as a self-ordering kiosk.
+The NetFood EPOS can be complemented with an online ordering solution, a mobile app, and a self-ordering kiosk.
 
 ## Integration Features
 
