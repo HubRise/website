@@ -16,6 +16,8 @@ meta:
 
 ## Connecter LEO2
 
+La connexion avec HubRise se fait depuis votre logiciel de caisse, et non depuis LEOGES, l'interface de gestion de LEO2.
+
 Pour connecter votre logiciel de caisse LEO2 à HubRise, suivez ces étapes :
 
 1. Vérifiez que le module **Vente Externe** est activé. Pour plus d'informations, contactez votre revendeur.
