@@ -4,7 +4,7 @@ path_override: produits-non-envoyes
 position: 4
 layout: documentation
 meta:
-  title: Produits non envoyés | FAQs Just Eat Flyt | HubRise
+  title: Produits non envoyés | FAQ Just Eat Flyt | HubRise
   description: Cette page explique pourquoi certains produits ne sont pas envoyés à Just Eat lorsque vous envoyez le catalogue sur la plateforme.
 ---
 

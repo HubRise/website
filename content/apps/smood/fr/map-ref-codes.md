@@ -18,7 +18,7 @@ Cette page explique comment configurer manuellement les codes ref dans Smood. Ce
 
 ---
 
-## Produits et SKU
+## Produits et SKUs
 
 Pour attribuer des codes ref à vos produits Smood, suivez ces étapes :
 

@@ -20,7 +20,7 @@ export interface PricingYaml {
       }
     }
     infos: Array<{
-      highlight: string
+      title: string
       text: string
       link?: {
         text: string

@@ -8,7 +8,7 @@ meta:
   description: How connections to HubRise can be managed.
 ---
 
-The Data section provides records for orders, customers, and catalogs. At any time, you can select which Account and Locations to display.
+The Data section provides records for orders, customers, catalogs, and inventory. At any time, you can select which Account and Locations to display.
 
 ## Orders {#orders}
 
@@ -72,9 +72,9 @@ Catalogs are presented in three tabs:
 
 - **SKUS**: The items that you sell to the customers.
 - **DEALS**: The deals available in the catalog.
-  A deal provides a price reduction on combinations of Products bought together. For instance, **Buy One Get One Free** is a deal that applies to two Products. It applies to two Products and provides a price reduction equal to the price of the cheapest Product.
+  A deal offers a price reduction on products purchased together. Examples include a three-course meal (starter, main course, and dessert) and **Buy One Get One Free** offers.
 - **DISCOUNTS**: The discounts available in the catalog.
-  Discount codes apply savings to the overall order rather than specific products. For example, **FREEDELIVERY** might remove the delivery fee for the entire order, or **FRIYAY** might provide a 10% discount to the entire order on Friday.
+  Discounts apply savings to the overall order rather than specific products. For example, **FREEDELIVERY** might remove the delivery fee for the entire order, or **FRIDAY** might provide a 10% discount to the entire order on Friday.
 
 ![HubRise Catalog Tabs](./images/053-2x-catalog-tabs.png)
 
@@ -95,6 +95,20 @@ To see the full logs of all the requests that make changes to the catalog, click
 
 To create, edit or remove a catalogs, see [Catalogs](/docs/catalog).
 
+## Inventory
+
+The **INVENTORY** page displays the inventory entries for the selected Location. You must select a Location to view its inventory. If no Location is selected, a message prompts you to select one.
+
+Inventory entries are presented with SKU entries first, sorted by their ref code, followed by Option entries, also sorted by their ref code. In the absence of an inventory entry for a SKU or Option, the quantity is considered unlimited.
+
+The following attributes are displayed for each inventory entry:
+
+- **SKU / OPTION**: The type of inventory entry, either **SKU** or **Option**.
+- **REF**: The ref code of the SKU or Option.
+- **STOCK**: The current stock level. If the stock level is `0`, the item is out of stock.
+
+To see the full logs of all the requests that make changes to the inventory, click **View logs**. For more information, see [Logs](/docs/data#logs).
+
 ## Logs {#logs}
 
 Each page in the **DATA** section provides more information through its log page.
@@ -105,12 +119,20 @@ The log page displays a summary list of requests in reverse chronological order.
 
 - **TIME (UTC+02:00)**: The date and time of the request, in UTC format.
 - **ORIGIN**: The app that created the request.
-- **ENDPOINT**: The endpoint of the request, including HTTP method and URL path.
+- **RESOURCE**: The target of the request.
+- **METHOD**: The HTTP method used in communicating the request.
+- **URL**: The URL path for the request.
 - **RESPONSE**: The HTTP response code.
 
 Further log details are available for advanced users and developers to view app communications and troubleshoot issues. To view details for a log entry:
 
 1. Click the row to display. A full list of the query and response will be displayed.
 1. To download either the query or response, select the download icon <InlineImage width="15" height="14">![Download icon](../images/058-download.png)</InlineImage>. The selected query or response will be provided as a JSON file.
+
+The logs can be filtered based on specific criteria, including resource, method, and time range. To filter logs:
+
+1. Click the **Filter** section located at the top of the page. Upon clicking, you will see the filter options.
+1. Apply one or more filters. The log entries will refresh automatically.
+1. To revert to viewing all logs, click **Reset**.
 
 For more information, see [Understanding Logs in HubRise](/docs/hubrise-logs/overview). For a complete reference on the HubRise API, see the [HubRise API Reference page](/developers/api/general-concepts).

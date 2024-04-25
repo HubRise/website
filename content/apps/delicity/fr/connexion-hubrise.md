@@ -3,7 +3,7 @@ title: Connexion à HubRise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | Delicity | HubRise
+  title: Connexion à HubRise | Delicity | HubRise
   description: Connecter Delicity à HubRise, étapes à suivre pour recevoir vos commandes Delicity dans votre logiciel de caisse. Centralisez vos commandes.
 ---
 
@@ -15,7 +15,7 @@ meta:
 
 ## Connecter Delicity
 
-Pour connecter Delicity à HubRise, suivez les étapes suivantes :
+Pour connecter Delicity à HubRise, suivez ces étapes :
 
 1. Créez un compte HubRise. Pour plus d'information, consultez notre [Guide de démarrage](/docs/get-started).
 1. Depuis le back-office de Delicity, cliquez sur **Intégrations**

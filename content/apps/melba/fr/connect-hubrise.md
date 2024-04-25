@@ -4,7 +4,7 @@ path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | Melba by Foodmeup | HubRise
+  title: Connexion à HubRise | Melba by Foodmeup | HubRise
   description: Connecter Melba à HubRise, étapes à suivre pour recevoir les commandes de votre logiciel de caisse et de vos canaux de vente en ligne dans votre logiciel d'inventaire Melba.
 ---
 
@@ -16,7 +16,7 @@ meta:
 
 ## Connecter Melba
 
-Pour connecter Melba à HubRise, suivez les étapes suivantes :
+Pour connecter Melba à HubRise, suivez ces étapes :
 
 1. Créez un compte HubRise. Pour plus d'information, consultez notre [Guide de démarrage](/docs/get-started).
 1. Depuis le back-office de Melba, cliquez sur l'icône **EXTENSIONS** dans le menu à gauche.

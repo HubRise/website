@@ -16,13 +16,24 @@ This page attempts to be a comprehensive list of the most widespread conventions
 
 ## General conventions
 
+### Tags on products
+
+The following tag can be set at the product level.
+
+| Tag          | Description                                                                                                                     |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| `deal_only`  | The product is only available as part of a deal.                                                                                |
+| `deposit_cc` | The product requires a deposit. `cc` is an amount in cents, e.g. `deposit_25`. The deposit is charged on top of the item price. |
+
+For more information on the `deposit_cc` tag, read our <Link href="/blog/bottle-deposits">blog post on deposits</Link>.
+
 ### Tags on SKUs
 
-The following tag can be set at the SKU level:
+The following tags can be set at the SKU level.
 
-| Tag         | Description                                  |
-| ----------- | -------------------------------------------- |
-| `deal_only` | The SKU is only available as part of a deal. |
+| Tag          | Description                                                                                                                 |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| `deposit_cc` | Same as the product tag, but applies to a specific SKU. `cc` is an amount in cents. When set, it overrides the product tag. |
 
 ## Conventions for restaurants
 

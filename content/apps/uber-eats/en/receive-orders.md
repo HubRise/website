@@ -92,9 +92,9 @@ These are typically associated with specific ref codes in your EPOS. For more in
 
 ## Order Times
 
-Uber Eats provides the time when the eater expects to receive or collect the order. Uber Eats Bridge sends this time to HubRise as the `expected_time` field.
+Uber Eats provides the time when the order should be ready for pickup, either by the customer or a delivery rider. For restaurant delivery orders, this is the time the restaurant driver should pick up the order, not the time the customer expects the order to be delivered. Uber Eats Bridge sends this time to HubRise as the `expected_time` field.
 
-To specify a different time, you can update the `confirmed_time` field in HubRise. Uber Eats Bridge will send the updated time to Uber Eats when the order status changes to `Accepted`. Attempting to update this field after the order has been accepted will have no effect.
+To set a different time, update the `confirmed_time` field in HubRise. Uber Eats Bridge will send the updated time to Uber Eats when the order status changes to `Accepted`. Updating this field after the order has been accepted will have no effect.
 
 ## Customer
 

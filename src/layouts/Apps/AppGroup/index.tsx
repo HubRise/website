@@ -2,6 +2,7 @@ import Block from "@components/Block"
 import useTranslation from "@hooks/client/useTranslation"
 import { AppsYaml } from "@layouts/Apps/types"
 import { ContentImage } from "@utils/contentImage"
+import { text } from "@utils/misc"
 
 import {
   Group,
@@ -42,9 +43,9 @@ const AppGroup = ({ title, slug, apps, logoImages, additionalSections, hasSugges
               {app.documentation ? t("apps.view_documentation") : t("apps.visit_website")}
             </AppDocumentation>
 
-            <AppDescription>{app.description}</AppDescription>
+            <AppDescription>{text(app.description)}</AppDescription>
 
-            {app.additional_info && <AppAdditionalInfo>{app.additional_info}</AppAdditionalInfo>}
+            {app.additional_info && <AppAdditionalInfo>{text(app.additional_info)}</AppAdditionalInfo>}
           </AppBoxLink>
         ))}
 

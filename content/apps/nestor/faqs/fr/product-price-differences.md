@@ -4,7 +4,7 @@ path_override: prix-differents-articles
 position: 1
 layout: documentation
 meta:
-  title: Différences de prix dans les articles | FAQs Nestor | HubRise
+  title: Différences de prix dans les articles | FAQ Nestor | HubRise
   description: Comprendre comment Nestor traite les différences de prix dans les commandes HubRise.
 ---
 

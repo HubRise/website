@@ -36,7 +36,7 @@ To connect a new app to your HubRise Account from the HubRise back office:
 
 ---
 
-**IMPORTANT NOTE**: If you need to connect multiple instances of the same app to a single HubRise location, see [Connecting Multiple Instances of the Same App](/docs/faqs/connect-multiple-instances-same-app).
+**IMPORTANT NOTE:** If you need to connect multiple instances of the same app to a single HubRise location, see [Connecting Multiple Instances of the Same App](/docs/faqs/connect-multiple-instances-same-app).
 
 ---
 
@@ -120,7 +120,7 @@ HubRise allows you to block or disconnect apps:
 
 ---
 
-**IMPORTANT NOTE**: If you might use the app again, you should block it rather than disconnect it.
+**IMPORTANT NOTE:** If you might use the app again, you should block it rather than disconnect it.
 
 ---
 

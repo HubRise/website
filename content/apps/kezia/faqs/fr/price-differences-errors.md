@@ -4,7 +4,7 @@ path_override: differences-prix
 position: 2
 layout: documentation
 meta:
-  title: Différences de prix | FAQs Kezia II | HubRise
+  title: Différences de prix | FAQ Kezia II | HubRise
   description: Comment Kezia II traite les différences de prix dans les commandes venant de HubRise.
 ---
 

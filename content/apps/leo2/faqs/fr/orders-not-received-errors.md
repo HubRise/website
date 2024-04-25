@@ -4,7 +4,7 @@ path_override: commandes-non-recues
 position: 1
 layout: documentation
 meta:
-  title: Commandes HubRise non reçues | FAQs LEO2 | HubRise
+  title: Commandes HubRise non reçues | FAQ LEO2 | HubRise
   description: Que faire lorsque les commandes HubRise n'arrivent pas dans LEO2 ?
 ---
 
@@ -28,7 +28,7 @@ Le serveur HubRise de LEO2 peut également être configuré pour démarrer en m�
 
 Les codes ref des articles doivent être numériques. Dans le cas contraire, le serveur HubRise de LEO2 peut s'arrêter lors de la récupération de la commande.
 
-Si LEO2 cesse de fonctionner lors de la récupération d'une telle commande, suivez les étapes suivantes :
+Si LEO2 cesse de fonctionner lors de la récupération d'une telle commande, suivez ces étapes :
 
 - Vérifiez que tous les codes ref des articles sont numériques dans la solution tierce.
 - Contactez le support HubRise sur support@hubrise.com pour purger les envois de commandes en erreur.

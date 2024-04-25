@@ -4,8 +4,8 @@ path_override: transition-numerique-post-covid
 date: 2021-11-13
 author: Janaina Wittner
 meta:
-  title: "Communiqué de presse : HubRise accélère la transition numérique des commerçants et restaurateurs post-COVID | Blog | HubRise"
-  description: Découvrez comment HubRise accélère la transition numérique pour les commerçants et les restaurateurs en ère post-COVID, en simplifiant l'intégration avec plus de 70 applications tierces
+  title: Accélération numérique post-COVID | Blog | HubRise
+  description: Découvrez comment HubRise accélère la transition numérique pour les commerçants et les restaurateurs en ère post-COVID, en simplifiant l'intégration avec plus de 70 applications tierces.
 excerpt: "Communiqué de presse : HubRise accélère la transition numérique pour les commerçants et les restaurateurs en ère post-COVID, en simplifiant l'intégration avec plus de 70 applications tierces."
 ---
 
@@ -52,7 +52,7 @@ L'innovation apportée par HubRise est de centraliser les données et de les ren
 
 HubRise intéresse tout particulièrement :
 
-- Les **éditeurs de logiciel**, qui ont accès à de nombreuses intégrations sans effort de développement conséquent
+- Les **éditeurs de logiciel**, qui ont accès à de nombreuses intégrations sans effort de développement conséquent.
 - Et **les entreprises de commerce et de restauration**, qui peuvent connecter leurs solutions et ainsi améliorer leur productivité, privilège autrefois réservé aux grands groupes munis d'une direction informatique.
 
 HubRise est une entreprise française, basée à Sophia Antipolis (06), et accompagnée par Telecom Paris Eurecom Entrepreneurs.

@@ -31,7 +31,7 @@ Une fois Koust connecté à HubRise, les commandes provenant de HubRise sont imp
 
 ## Produits {#products}
 
-Un produit dans HubRise correspond à un article dans Koust. Pour retrouver le code ref d'un article, suivez les étapes suivantes :
+Un produit dans HubRise correspond à un article dans Koust. Pour retrouver le code ref d'un article, suivez ces étapes :
 
 1. Dans le menu latéral, sélectionnez **Ventes - Conso.** > **Historique ventes**.
    ![Associer les codes ref - Liste des articles](./images/010-koust-item-list.png)

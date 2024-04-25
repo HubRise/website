@@ -56,8 +56,12 @@ Popina peut être connecté à HubRise depuis le back-office de Popina.
 
 En connectant Popina à HubRise, vous permettez à votre logiciel de caisse de communiquer avec les autres applications que vous utilisez de manière quotidienne. Recevez les commandes provenant de votre solution de commande en ligne, ou des plateformes de livraison de repas sur Popina. Envoyez votre menu vers d'autres applications.
 
-Grâce à HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes avec votre logiciel de caisse, votre solution de commande en ligne, les plateformes de livraison de repas (dont Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs ou de services de livraison, les solutions eMarketing (SMS / eMailing), business intelligence, systèmes de gestion de stock et de fidélisation client, et bien d'autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, consultez notre [page Apps](/apps).
+Avec HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes entre votre logiciel de caisse, votre solution de commande en ligne, les services de livraison de repas (y compris Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs, les services de livraison, les solutions d'e-marketing (SMS/emailing), les systèmes de business intelligence, de gestion des stocks et de fidélisation client, et bien plus encore. Le nombre d'applications compatibles augmente chaque mois. Pour découvrir les applications que vous pouvez connecter, visitez notre [page Apps](/apps).
 
 ## Prérequis
 
 Pour établir la connexion entre Popina et HubRise, vous devez disposer d'une licence Popina.
+
+## Documentation sur le site de Popina
+
+Une [documentation HubRise](https://wiki.popina.com/hubrise) est disponible sur le site de Popina. Nous vous invitons à vous y référer pour obtenir des informations complémentaires sur l'intégration de Popina avec HubRise.

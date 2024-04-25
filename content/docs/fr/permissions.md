@@ -1,7 +1,7 @@
 ---
 title: Permissions
 path_override: permissions
-position: 11
+position: 12
 layout: documentation
 meta:
   title: Permissions | HubRise
@@ -21,7 +21,7 @@ Vous pouvez également consulter et modifier vos propres permissions à partir d
 
 ## Ajouter un utilisateur {#add-user}
 
-Les administrateurs peuvent octroyer l'accès à d'autres utilisateurs à condition qu'ils aient un profil existant sur HubRise. Les nouveaux utilisateurs de HubRise peuvent créer un profil sur la [page d'inscription à HubRise](https://manager.hubrise.com/signup?locale=fr-FR). Si vous créez un nouveau profil au nom de quelqu'un d'autre, utilisez la [page de réinitialisation du mot de passe de HubRise](https://manager.hubrise.com/reset_password/new?locale=fr-FR) afin que l'utilisateur puisse saisir son propre mot de passe sécurisé.
+Les administrateurs peuvent octroyer l'accès à d'autres utilisateurs à condition qu'ils aient un profil existant sur HubRise. Les nouveaux utilisateurs de HubRise peuvent créer un profil sur la [page d'inscription à HubRise](https://manager.hubrise.com/signup). Si vous créez un nouveau profil au nom de quelqu'un d'autre, utilisez la [page de réinitialisation du mot de passe de HubRise](https://manager.hubrise.com/reset_password/new) afin que l'utilisateur puisse saisir son propre mot de passe sécurisé.
 
 Pour accorder à un utilisateur des permissions sur un compte, procédez comme suit :
 
@@ -47,6 +47,6 @@ Pour supprimer un utilisateur, procédez comme suit :
 
 ---
 
-**REMARQUE IMPORTANTE** : un compte ne peut pas être laissé sans administrateur. Avant de supprimer votre profil utilisateur d'un compte, assurez-vous qu'un utilisateur de niveau Administrateur existe avec des permissions adéquates. Dans le cas contraire, vous pouvez modifier les permissions d'un utilisateur existant ou octroyer les permissions d'administrateur à **test@hubrise.com**.
+**REMARQUE IMPORTANTE** : un compte ne peut pas être laissé sans administrateur. Avant de supprimer votre profil utilisateur d'un compte, assurez-vous qu'un utilisateur de niveau Administrateur existe avec des permissions adéquates. Dans le cas contraire, vous pouvez modifier les permissions d'un utilisateur existant ou octroyer les permissions d'administrateur à test@hubrise.com.
 
 ---

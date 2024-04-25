@@ -4,7 +4,7 @@ path_override: trouver-mon-identifiant-de-restaurant-deliveroo
 position: 1
 layout: documentation
 meta:
-  title: Trouver votre identifiant de restaurant | FAQs Deliveroo | HubRise
+  title: Trouver votre identifiant de restaurant | FAQ Deliveroo | HubRise
   description: Guide pratique pour trouver votre identifiant de restaurant Deliveroo. Cet ID est nécessaire pour connecter votre magasin Deliveroo à HubRise et à votre EPOS.
 ---
 

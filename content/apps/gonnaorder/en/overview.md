@@ -36,7 +36,7 @@ GonnaOrder can be connected to HubRise via the GonnaOrder support line.
 
 By connecting GonnaOrder to HubRise, your online ordering solution can communicate with your other everyday applications. You can push online orders to your EPOS, your connected printer, your kitchen display screen or your inventory management solution.
 
-Thanks to HubRise, you can synchronise your menu, your customer information and your orders with your EPOS solution, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management or delivery services solutions, eMarketing (SMS/emailing) solutions, business intelligence, stock management and customer loyalty systems, and more. The number of compatible applications is constantly increasing. To see which apps you can connect, see our [Apps page](/apps).
+With HubRise, you can synchronise your menu, customer information, and orders between your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats, and Just Eat), delivery management solutions or delivery services, eMarketing solutions (SMS/emailing), business intelligence, inventory, and customer loyalty systems, and much more. The number of compatible applications increases every month. To discover the apps you can connect, visit our [Apps page](/apps).
 
 ## Prerequisites
 

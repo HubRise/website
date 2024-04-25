@@ -4,7 +4,7 @@ path_override: commandes-non-envoyees
 position: 3
 layout: documentation
 meta:
-  title: Commandes non envoyés | FAQs Just Eat Flyt | HubRise
+  title: Commandes non envoyés | FAQ Just Eat Flyt | HubRise
   description: Si vos commandes Just Eat n'arrivent pas dans HubRise, cette page explique les raisons possibles et les solutions.
 ---
 

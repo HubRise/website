@@ -20,7 +20,7 @@ Pour voir la liste des commandes en attente, cliquez sur l'alerte. Pour voir le 
 
 ### Commande avec des articles inconnus
 
-Lorsqu'une commande contient des articles dont le code ref n'est pas reconnu, ces derniers sont remplacés par des articles nommés **Article inconnu**. Il est alors impossible de valider la commande. Pour remédier à ce problème, suivez les étapes suivantes :
+Lorsqu'une commande contient des articles dont le code ref n'est pas reconnu, ces derniers sont remplacés par des articles nommés **Article inconnu**. Il est alors impossible de valider la commande. Pour remédier à ce problème, suivez ces étapes :
 
 1. Sélectionnez votre commande pour en voir le détail. Certaines lignes intituées **Article inconnu** sont présentes.
 1. Sélectionnez la dernière ligne vide. Votre menu apparaît.

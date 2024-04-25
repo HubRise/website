@@ -72,7 +72,7 @@ Uber Eats Bridge maps single sku products one-to-one to products on Uber Eats, s
 - Images
 - Price
 - Options
-- Tags
+- Tags including allergens
 
 For products with multiple skus, Uber Eats Bridge creates a product, a modifier list, and one modifier for each sku.
 Options are attached to each sku as an extra layer of modifiers.
@@ -129,12 +129,28 @@ For more information about skus in the HubRise catalog, see [Skus](/developers/a
 
 The table below lists the tags that can be set on products.
 
-| Tag           | Description                 |
-| ------------- | --------------------------- |
-| `alcoholic`   | Contains alcohol.           |
-| `gluten_free` | Contains no gluten.         |
-| `vegan`       | Contains no animal product. |
-| `vegetarian`  | Contains no meat.           |
+| Tag                                  | Description                                     |
+| ------------------------------------ | ----------------------------------------------- |
+| `alcoholic`                          | Contains alcohol.                               |
+| `deal_only`                          | Can only be ordered as part of a deal.          |
+| `gluten_free`                        | Contains no gluten.                             |
+| `vegan`                              | Contains no animal product.                     |
+| `vegetarian`                         | Contains no meat.                               |
+| `allergen_celery`                    | Contains this allergen.                         |
+| `allergen_crustaceans`               | Contains this allergen.                         |
+| `allergen_eggs`                      | Contains this allergen.                         |
+| `allergen_fish`                      | Contains this allergen.                         |
+| `allergen_gluten`                    | Contains this allergen.                         |
+| `allergen_lupin`                     | Contains this allergen.                         |
+| `allergen_milk`                      | Contains this allergen.                         |
+| `allergen_molluscs`                  | Contains this allergen.                         |
+| `allergen_mustard`                   | Contains this allergen.                         |
+| `allergen_nuts`                      | Contains this allergen.                         |
+| `allergen_peanuts`                   | Contains this allergen.                         |
+| `allergen_sesame_seeds`              | Contains this allergen.                         |
+| `allergen_soybeans`                  | Contains this allergen.                         |
+| `allergen_sulphur_dioxide_sulphites` | Contains this allergen.                         |
+| `deposit_cc`                         | Requires a deposit. `cc` is an amount in cents. |
 
 ### Options
 
@@ -163,4 +179,4 @@ By default, when customers order a deal, they must choose one product for every 
 
 ### Availability
 
-Every time you push your HubRise catalog to Uber Eats, you also update the availability of your menu, based on the values you set from the [Configuration page](/apps/uber-eats/configuration#opening-hours) of Uber Eats Bridge.
+Every time you push your catalog to Uber Eats, you also update the opening hours, based on the values you set from the [Configuration page](/apps/uber-eats/configuration#location).

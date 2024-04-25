@@ -10,7 +10,7 @@ meta:
 
 ## Importer les produits dans Melba
 
-Pour importer un catalogue HubRise dans Melba, suivez les étapes suivantes :
+Pour importer un catalogue HubRise dans Melba, suivez ces étapes :
 
 1. Depuis le back-office de Melba, cliquez sur l'icône **EXTENSIONS** dans le menu à gauche.
 

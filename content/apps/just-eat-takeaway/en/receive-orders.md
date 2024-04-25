@@ -68,9 +68,9 @@ These are typically associated with specific ref codes in your EPOS, which you c
 
 ## Order Times
 
-Just Eat Takeaway provides the time when the eater expects to receive or collect the order. Just Eat Takeaway Bridge sends this time to HubRise as the `expected_time` field.
+For restaurant delivery orders, Just Eat provides the time the customer expects the order to be delivered. For other types of orders, it provides the time the order should be ready for pickup, either by the customer or a delivery rider. In both scenarios, this time is transmitted to HubRise as the `expected_time` field.
 
-To specify a different time, you can update the `confirmed_time` field in HubRise. Just Eat Takeaway Bridge will send the updated time to Just Eat Takeaway when the order status changes to `Confirmed`. Attempting to update this field after the order has been confirmed will have no effect.
+To set a different time, update the `confirmed_time` field in HubRise. Just Eat Takeaway Bridge will send the updated time to Just Eat Takeaway when the order status changes to `Confirmed`. Updating this field after the order has been confirmed will have no effect.
 
 ## Customer Details
 
@@ -116,7 +116,7 @@ Every option has single quantity. Multiple identical options are encoded in sepa
 
 <details>
 
-Below is a sample payload containing a single item with multiple options.
+<summary>Sample JSON containing a single item with multiple options</summary>
 
 ```json
 "items": [
@@ -170,7 +170,7 @@ Just Eat Takeaway Bridge receives the following information from Just Eat about 
 
 <details>
 
-Below is a sample payload with customer details.
+<summary>Sample JSON with customer details</summary>
 
 ```json
 "customer": {
@@ -198,7 +198,7 @@ The available fields in the payload are the following:
 
 <details>
 
-Below is a sample payload for discounts.
+<summary>Sample JSON for discounts</summary>
 
 ```json
 "discounts": [
@@ -225,7 +225,7 @@ Here are the fields used to describe delivery charges:
 
 <details>
 
-Sample payload for delivery charges.
+<summary>Sample JSON for delivery charges</summary>
 
 ```json
 "charges": [

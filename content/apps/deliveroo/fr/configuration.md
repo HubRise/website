@@ -10,7 +10,7 @@ meta:
 
 La page de configuration permet de personnaliser le comportement de Deliveroo Bridge. Elle est divisée en plusieurs sections pour faciliter la navigation.
 
-![Page de configuration de Deliveroo Bridge](./images/014-configuration-page-cropped.png)
+![Page de configuration de Deliveroo Bridge](./images/014-configuration-page-orders.png)
 
 ## Langue
 
@@ -50,7 +50,7 @@ Deliveroo exige un accusé de réception pour chaque commande envoyée. Dans cet
 
 ## Catalogue {#catalog}
 
-![Page de configuration de Deliveroo Bridge, section Catalogue](./images/015-configuration-page-menu.png)
+![Page de configuration de Deliveroo Bridge, section Catalogue](./images/015-configuration-page-catalog.png)
 
 Sélectionnez la case **Activer la synchronisation automatique du catalogue** pour synchroniser votre catalogue HubRise avec Deliveroo chaque fois qu'il est mis à jour.
 

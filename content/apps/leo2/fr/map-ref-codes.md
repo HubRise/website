@@ -21,7 +21,7 @@ Seules certaines applications permettent l'import d'un catalogue depuis HubRise.
 
 ## Exporter le catalogue {#export-catalog}
 
-Pour exporter manuellement un catalogue vers HubRise, suivez les étapes suivantes :
+Pour exporter manuellement un catalogue vers HubRise, suivez ces étapes :
 
 1. Depuis l'écran d'accueil, cliquez sur **Gestion**.
 1. Entrez le mot de passe que vous avez choisi lors de l'installation de LEO2. Par défaut, ce mot de passe est **1234**.
@@ -35,7 +35,7 @@ Vous devez maintenant importer le catalogue HubRise dans vos autres applications
 
 ## Produits {#products}
 
-Pour retrouver le code ref d'un produit, suivez les étapes suivantes :
+Pour retrouver le code ref d'un produit, suivez ces étapes :
 
 1. Depuis l'écran d'accueil, cliquez sur **Gestion**.
 1. Entrez le mot de passe que vous avez choisi lors de l'installation de LEO2. Par défaut, ce mot de passe est **1234**.
@@ -58,7 +58,7 @@ LEO2 supporte deux types de messages cuisine :
 - Les messages simples, réservés aux options gratuites.
 - Les messages produits, qui peuvent être utilisés pour les options gratuites ou payantes.
 
-Pour retrouver le code ref d'une option, suivez les étapes suivantes :
+Pour retrouver le code ref d'une option, suivez ces étapes :
 
 1. Depuis l'écran d'accueil, cliquez sur **Gestion**.
 1. Entrez le mot de passe que vous avez choisi lors de l'installation de LEO2. Par défaut, ce mot de passe est **1234**.
@@ -98,7 +98,7 @@ Les frais de livraison ou de service doivent être créés comme des produits da
 
 ## Méthodes de paiement
 
-Les méthodes de paiement dans HubRise correspondent aux modes de règlement dans LEO2. Pour retrouver leur code ref, suivez les étapes suivantes :
+Les méthodes de paiement dans HubRise correspondent aux modes de règlement dans LEO2. Pour retrouver leur code ref, suivez ces étapes :
 
 1. Depuis l'écran d'accueil, cliquez sur **Gestion**.
 1. Entrez le mot de passe que vous avez choisi lors de l'installation de LEO2. Par défaut, ce mot de passe est **1234**.
@@ -110,7 +110,7 @@ Les méthodes de paiement dans HubRise correspondent aux modes de règlement dan
 
 Les types de service dans HubRise sont **Sur place**, **Emporter** et **Livraison**. Chaque type de service doit être associé à un tarif dans LEO2.
 
-Pour associer un type de service à un tarif, suivez les étapes suivantes :
+Pour associer un type de service à un tarif, suivez ces étapes :
 
 1. Depuis l'écran d'accueil de LEO2, cliquez sur **Gestion**.
 1. Entrez le mot de passe que vous avez choisi lors de l'installation de LEO2. Par défaut, ce mot de passe est **1234**.

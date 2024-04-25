@@ -15,9 +15,9 @@ La page Profil de HubRise affiche les informations relatives à votre profil uti
 Pour mettre à jour votre profil utilisateur, procédez comme suit :
 
 1. Cliquez sur votre nom dans le coin supérieur droit du back-office de HubRise, puis cliquez sur **Profil**.
-1. Cliquez sur **Modifier**.
-1. Mettre à jour votre nom, votre adresse e-mail ou la langue de correspondance. La **Langue de correspondance** définit la langue qui sera employée dans toutes les communications échangées entre HubRise et vous.
-1. Sélectionnez **Mettre à jour**.
+2. Cliquez sur **Modifier**.
+3. Mettre à jour votre nom, votre adresse e-mail ou la langue de correspondance. La **Langue de correspondance** définit la langue qui sera employée dans toutes les communications échangées entre HubRise et vous.
+4. Sélectionnez **Mettre à jour**.
 
 ---
 
@@ -32,11 +32,30 @@ Pour mettre à jour votre profil utilisateur, procédez comme suit :
 Pour mettre à jour votre mot de passe, procédez comme suit :
 
 1. Cliquez sur votre nom dans le coin supérieur droit du back-office de HubRise, puis cliquez sur **Profil**.
-1. Saisissez le mot de passe en cours dans le champ **Mot de passe actuel**.
-1. Saisissez votre nouveau mot de passe dans les champs **Nouveau mot de passe** et **Confirmer le nouveau mot de passe**. Les deux champs doivent correspondre.
-1. Cliquez sur **Mettre à jour**.
+2. Cliquez sur **Changer le mot de passe**.
+3. Saisissez le mot de passe en cours dans le champ **Mot de passe actuel**.
+4. Saisissez votre nouveau mot de passe dans les champs **Nouveau mot de passe** et **Confirmer le nouveau mot de passe**. Les deux champs doivent correspondre.
+5. Cliquez sur **Mettre à jour**.
+
+---
+
+**REMARQUE IMPORTANTE :** Si vous pensez que votre mot de passe a été compromis, il est fortement recommandé de vous déconnecter de tous les appareils après avoir mis à jour votre mot de passe. Reportez-vous à la rubrique [Déconnexion de tous les appareils](#logout-from-all-devices) ci-dessous pour plus d'informations.
+
+---
 
 ![Modifier le mot de passe de HubRise](./images/055-2x-change-password.png)
+
+## Déconnexion de tous les appareils {#logout-from-all-devices}
+
+Si votre compte HubRise est connecté sur plusieurs appareils, vous pouvez vous déconnecter de tous les appareils en même temps. Ceci est utile si vous avez perdu un appareil, ou si vous voulez empêcher quelqu'un d'autre d'accéder à votre compte.
+
+Pour vous déconnecter de tous les appareils :
+
+1. Cliquez sur votre nom dans le coin supérieur droit du back-office de HubRise, puis cliquez sur **Profil**.
+2. Cliquez sur **Déconnexion de tous les appareils**.
+3. Cliquez sur **Confirmer**.
+
+Ceci vous déconnectera instantanément de tous les appareils sur lesquels vous êtes connecté. Vous aurez besoin de votre mot de passe pour vous connecter à nouveau.
 
 ## Permissions des utilisateurs
 
@@ -48,7 +67,7 @@ La page Profil contient des informations relatives aux **permissions** de votre 
 Pour supprimer votre accès à un compte ou à un point de vente, procédez comme suit :
 
 1. Cliquez sur votre nom dans le coin supérieur droit du back-office de HubRise, puis cliquez sur **Profil**.
-1. Recherchez la permission accordée dans la section **Permissions**, puis cliquez sur l'icône de corbeille <InlineImage width="15" height="16">![Icône de corbeille](../images/057-2x-trash-icon.png)</InlineImage>
+2. Recherchez la permission accordée dans la section **Permissions**, puis cliquez sur l'icône de corbeille <InlineImage width="15" height="16">!\[Icône de corbeille\](../images/057-2x-trash-icon.png)</InlineImage>
 
 ---
 
@@ -63,13 +82,13 @@ Pour plus d'informations, voir la rubrique [Permissions](/docs/permissions).
 Pour créer un nouveau compte, procédez comme suit :
 
 1. Cliquez sur votre nom dans le coin supérieur droit du back-office de HubRise, puis cliquez sur **Profil**.
-1. Dans la section **Permissions**, cliquez sur **Créer un compte**. Pour plus d'informations, voir la rubrique [Créer un compte](/docs/account#create-account).
+2. Dans la section **Permissions**, cliquez sur **Créer un compte**. Pour plus d'informations, voir la rubrique [Créer un compte](/docs/account#create-account).
 
 ![Mes permissions dans HubRise](./images/056-2x-my-permissions.png)
 
 ## Réinitialiser le mot de passe
 
-Si vous êtes un utilisateur enregistré mais que vous avez perdu ou oublié votre mot de passe, rendez-vous sur la [page de réinitialisation du mot de passe de HubRise](https://manager.hubrise.com/reset_password/new?locale=fr-FR). Saisissez l'adresse e-mail associée à votre profil HubRise, puis cliquez sur **Réinitialiser le mot de passe**. Vous recevrez un e-mail contenant des instructions de réinitialisation de votre mot de passe. Une fois cette opération terminée, vous pourrez vous reconnecter.
+Si vous êtes un utilisateur enregistré mais que vous avez perdu ou oublié votre mot de passe, rendez-vous sur la [page de réinitialisation du mot de passe de HubRise](https://manager.hubrise.com/reset_password/new). Saisissez l'adresse e-mail associée à votre profil HubRise, puis cliquez sur **Réinitialiser le mot de passe**. Vous recevrez un e-mail contenant des instructions de réinitialisation de votre mot de passe. Une fois cette opération terminée, vous pourrez vous reconnecter.
 
 ---
 

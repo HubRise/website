@@ -16,6 +16,8 @@ meta:
 
 ## Connect SOLUTION
 
+-- CONNECT - option 1 --
+
 To connect SOLUTION to HubRise, follow these steps:
 
 1. From the SOLUTION back office, click on ...
@@ -24,7 +26,19 @@ To connect SOLUTION to HubRise, follow these steps:
 1. Click **Authorise**.
 1. You are redirected to the SOLUTION interface, and the connection to HubRise is established.
 
--- OR --
+-- CONNECT - option 2 --
+
+To connect SOLUTION Bridge to HubRise, follow these steps.
+
+1. Log in to your [HubRise account](https://manager.hubrise.com).
+1. Select the location you want to connect from the dropdown menu.
+1. Select **CONNECTIONS**, then **View available apps**.
+1. Select **SOLUTION Bridge** from the list of apps.
+1. Click **Connect**.
+1. Click **Allow** to grant SOLUTION Bridge access to your registered location on HubRise. If your account has multiple locations, expand the **Choose location** section to select the desired location, and then click **Allow**.
+1. A new page asks you to provide your SOLUTION ID. Enter the ID, then click **Save** to complete the connection process.
+
+-- CONNECT - option 3 --
 
 Only the SOLUTION support team can connect your [EPOS] to HubRise.
 

@@ -54,7 +54,7 @@ Lorsque vous associez les instructions de production aux applications connectée
 
 ---
 
-**REMARQUE IMPORTANTE** : Aucun prix n'est associé aux instructions de production. L'ajout d'un prix dans une application connectée peut générer des [erreurs liées à une différence de prix](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors).
+**REMARQUE IMPORTANTE :** Aucun prix n'est associé aux instructions de production. L'ajout d'un prix dans une application connectée peut générer des [erreurs liées à une différence de prix](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors).
 
 ---
 

@@ -1239,17 +1239,17 @@ Retrieve the list of images in the catalog.
 
 ## 14. Inventories {#inventories}
 
-Inventories keep track of the stock of every sku or option in a catalog at a particular location.
+Inventories keep track of the stock of SKUs and options at a specific location.
 
-An **inventory** consists of multiple inventory entries. An **inventory entry** represents the stock of a specific sku or option.
+An **inventory** consists of multiple inventory entries. An **inventory entry** represents the stock of a specific SKU or option.
 
-An inventory is specific to a certain location. If multiple locations share the same catalog, each location will have its own separate inventory.
+Inventories are specific to locations. If multiple locations share the same catalog, each location will have its own separate inventory.
 
-Inventories cannot be created or deleted. An inventory is automatically associated with each pair of _catalog_ and _location_, where the _location_ has access to the _catalog_.
+Inventories cannot be created or deleted. They are inherently associated with each location.
 
 ### 14.1. Retrieve Inventory {#retrieve-inventory}
 
-Returns the list of inventory entries of the inventory.
+Returns the inventory of SKUs and options in the specified catalog.
 
 <CallSummaryTable
   endpoint="GET /catalogs/:id/locations/:id/inventory"
@@ -1265,37 +1265,41 @@ Returns the list of inventory entries of the inventory.
 [
   {
     "sku_ref": "COKE",
-    "stock": "3"
+    "stock": "3",
+    "expires_at": null
   },
   {
     "sku_ref": "PEPSI",
-    "stock": "0"
+    "stock": "0",
+    "expires_at": "2020-08-05T08:00:00+02:00"
   },
   {
     "option_ref": "EGG",
-    "stock": "1"
+    "stock": "1",
+    "expires_at": null
   }
 ]
 ```
 
 In the above example:
 
-- The sku with the ref `COKE` has 3 items available
-- The sku with the ref `PEPSI` is out of stock
-- The option with the ref `EGG` has 1 item available
+- The sku with the ref `COKE` has 3 items available.
+- The sku with the ref `PEPSI` is out of stock and will be available again at the specified date.
+- The option with the ref `EGG` has 1 item available.
 
-By default, an inventory is an empty set. Any sku or option not specified in the inventory is considered to have an **unlimited** supply.
+Inventories are empty by default. SKUs or options not specified in the inventory are considered to have an unlimited supply.
 
 ### 14.2. Update Inventory {#update-inventory}
 
-Overwrites the current inventory. The request body has the same format as the [Retrieve inventory](#retrieve-inventory) response.
+Overwrites the inventory, for SKUs and options in the specified catalog.
 
-Each entry consists of:
+This operation will reset inventory entries for any SKUs or options in the catalog not included in the request. Items with ref codes outside the catalog will not be affected.
 
-- Either a `sku_ref` or an `option_ref` key.
-- And a `stock` key.
+The request body has the same format as the [Retrieve Inventory](#retrieve-inventory) response. Each entry in the request should include:
 
-The `stock` value must be a positive [decimal](/developers/api/general-concepts#decimal-values) (with up to 3 decimal places). A value of `0` means **out of stock**. An entry with a `stock` value of `null` stock is ignored.
+- A `sku_ref` or an `option_ref` key.
+- A `stock` key indicating quantity. The value should be a positive [decimal](/developers/api/general-concepts#decimal-values), with up to 3 decimal places. A value of `0` means **out of stock**. Entries with a value of `null` are ignored.
+- An optional `expires_at` key, only available if `stock` is `0`, indicating the date at which the item will be available again.
 
 <CallSummaryTable
   endpoint="PUT /catalogs/:id/locations/:id/inventory"
@@ -1315,18 +1319,23 @@ The `stock` value must be a positive [decimal](/developers/api/general-concepts#
   },
   {
     "option_ref": "EGG",
-    "stock": "0"
+    "stock": "0",
+    "expires_at": "2020-08-05T08:00:00+02:00"
   }
 ]
 ```
 
-### 14.3. Patch inventory
+Clients listening to the `inventory.patch` callback will receive a notification each time an entry expires. If multiple entries expire at the same time, a single notification will be sent with all the expired entries.
 
-Updates a selected set of entries while leaving the other entries unchanged.
+### 14.3. Patch Inventory
 
-The request body has the same format as [Update inventory](#update-inventory). A `stock` value of `null` means that the entry should be removed from the inventory, signifying that the stock is unlimited.
+Updates a selected set of entries, while leaving the other entries unchanged.
 
-Unlike the `PUT` method which returns the full inventory, the `PATCH` method only returns the modified entries, to keep the response concise and useful.
+Similar to the `PUT` method, this request can only alter the stock of SKUs and options whose ref codes exist in the catalog referenced in the endpoint.
+
+The request body has the same format as [Update Inventory](#update-inventory). A `stock` value of `null` means that the entry should be removed from the inventory, signifying that the stock is unlimited.
+
+The response returns only the modified entries for brevity and utility.
 
 <CallSummaryTable
   endpoint="PATCH /catalogs/:id/locations/:id/inventory"
@@ -1342,11 +1351,13 @@ Given the existing inventory:
 [
   {
     "sku_ref": "COKE",
-    "stock": "3"
+    "stock": "3",
+    "expires_at": null
   },
   {
     "option_ref": "EGG",
-    "stock": "1"
+    "stock": "1",
+    "expires_at": null
   }
 ]
 ```
@@ -1374,11 +1385,13 @@ The updated inventory becomes:
 [
   {
     "sku_ref": "PEPSI",
-    "stock": "2"
+    "stock": "2",
+    "expires_at": null
   },
   {
     "option_ref": "EGG",
-    "stock": "1"
+    "stock": "1",
+    "expires_at": null
   }
 ]
 ```

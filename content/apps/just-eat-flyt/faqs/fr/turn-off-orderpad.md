@@ -4,7 +4,7 @@ path_override: desactiver-tablette
 position: 1
 layout: documentation
 meta:
-  title: Tablette | FAQs Just Eat Flyt | HubRise
+  title: Tablette | FAQ Just Eat Flyt | HubRise
   description: Cette page explique pourquoi vous ne pouvez pas désactiver la tablette Just Eat lorsque vous connectez votre enseigne à HubRise avec Just Eat Flyt Bridge.
 ---
 

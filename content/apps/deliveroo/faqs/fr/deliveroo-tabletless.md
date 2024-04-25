@@ -4,7 +4,7 @@ path_override: deliveroo-sans-tablette
 position: 3
 layout: documentation
 meta:
-  title: Acceptation automatique et sans tablette | FAQs Deliveroo | HubRise
+  title: Acceptation automatique et sans tablette | FAQ Deliveroo | HubRise
   description: Apprenez comment activer l'acceptation automatique et l'intégration sans tablette sur Deliveroo pour que les commandes soient automatiquement envoyées à HubRise. Plus besoin d'interaction manuelle par le personnel.
 ---
 

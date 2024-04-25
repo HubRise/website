@@ -1,6 +1,6 @@
 ---
 title: FAQ
-path_override: faqs
+path_override: faq
 position: 9
 layout: documentation
 meta:
@@ -9,3 +9,4 @@ meta:
 ---
 
 - [Les commandes HubRise n'arrivent pas dans LEO2. Que faire ?](/apps/leo2/faqs/orders-not-received-errors)
+- [Des informations n'apparaissent pas sur les tickets de caisse](/apps/leo2/faqs/missing-information-on-receipts)

@@ -21,7 +21,7 @@ Cette page explique comment exporter un catalogue et trouver les codes ref depui
 
 ## Exporter le catalogue
 
-Pour exporter manuellement le catalogue vers HubRise, suivez les étapes suivantes :
+Pour exporter manuellement le catalogue vers HubRise, suivez ces étapes :
 
 1. Depuis le menu principal du back-office de Carré POS, sélectionnez **Général** > **Catalog manager**.
    ![Associer les codes ref - Menu manager](./images/007-carre-pos-menu-manager.png)
@@ -31,7 +31,7 @@ Pour exporter manuellement le catalogue vers HubRise, suivez les étapes suivant
 
 ## Produits {#products}
 
-Pour retrouver le code ref d'un produit, suivez les étapes suivantes :
+Pour retrouver le code ref d'un produit, suivez ces étapes :
 
 1. Depuis le menu principal du back-office de Carré POS, sélectionnez **Général** > **Catalog manager**.
 1. Déroulez la partie **Menus** et sélectionnez l'onglet correspondant au menu contenant le produit désiré. Si vous n'avez qu'un seul menu, il est sélectionné par défaut.

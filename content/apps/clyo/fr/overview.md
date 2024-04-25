@@ -4,14 +4,14 @@ path_override: "/"
 position: 1
 layout: documentation
 meta:
-  title: Présentation générale | Clyo | HubRise
-  description: Présentation générale de Clyo, les raisons de connecter Clyo à HubRise et les fonctionnalités de l'intégration avec HubRise.
+  title: Présentation générale | Clyo Systems | HubRise
+  description: Présentation générale de Clyo Systems, les raisons de connecter Clyo à HubRise et les fonctionnalités de l'intégration avec HubRise.
 gallery:
   - __gallery-001.png
   - __gallery-002.jpg
 app_info:
   category: Logiciels de caisse
-  availability: France, Suisse
+  availability: France, Suisse, Luxembourg, Belgique, Afrique francophone
   website: https://www.clyosystems.com
   contact: contact@clyosystems.com / +33 1 84 25 27 77
 ---
@@ -28,24 +28,26 @@ Clyo Systems est une plateforme logicielle permettant une gestion centralisée. 
 
 Clyo Systems s'adapte aux besoins changeants des entreprises par l'activation de nouveaux modules natifs, par des intégrations directes ou via HubRise. Cette approche modulaire vise à offrir une gestion efficace et la flexibilité nécessaire pour les commerçants cherchant à optimiser leur gestion opérationnelle et à améliorer l'expérience client.
 
+Clyo Systems est disponible en France, en Suisse, au Luxembourg, en Belgique, et dans plusieurs pays d'Afrique francophone dont le Maroc et l'Algérie.
+
 Clyo Systems est conforme à la loi française anti-fraude 2018.
 
 ## Fonctionnalités de l'intégration
 
-Connecter Clyo à HubRise permet à votre logiciel de caisse de :
+Connecter Clyo Systems à HubRise permet à votre logiciel de caisse de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.
 - Envoyer un catalogue à HubRise.
 
-Clyo peut être connecté à HubRise depuis le back-office de Clyo.
+Clyo Systems peut être connecté à HubRise depuis le back-office de Clyo Systems.
 
 ## Pourquoi se connecter ?
 
-En connectant Clyo à HubRise, vous permettez à votre logiciel de caisse de communiquer avec les autres applications que vous utilisez de manière quotidienne. Recevez les commandes provenant de votre Clyo de commande en ligne ou des plateformes de livraison de repas sur votre logiciel de caisse. Envoyez les commandes en ligne vers votre logiciel de caisse, vers une imprimante autonome, un écran cuisine ou votre système de gestion de stock. Envoyez votre menu vers d'autres applications.
+En connectant Clyo Systems à HubRise, vous permettez à votre logiciel de caisse de communiquer avec les autres applications que vous utilisez de manière quotidienne. Recevez les commandes provenant de votre site de commande en ligne ou des plateformes de livraison de repas sur votre logiciel de caisse. Envoyez votre menu Clyo Systems vers d'autres applications.
 
-Grâce à HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes avec votre logiciel de caisse, votre Clyo de commande en ligne, les plateformes de livraison de repas (dont Deliveroo, Uber Eats et Just Eat), les Clyos de gestion de livreurs ou de services de livraison, les Clyos eMarketing (SMS / eMailing), business intelligence, systèmes de gestion de stock et de fidélisation client, et bien d'autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, consultez notre [page Apps](/apps).
+Avec HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes entre votre logiciel de caisse, votre solution de commande en ligne, les services de livraison de repas (y compris Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs, les services de livraison, les solutions d'e-marketing (SMS/emailing), les systèmes de business intelligence, de gestion des stocks et de fidélisation client, et bien plus encore. Le nombre d'applications compatibles augmente chaque mois. Pour découvrir les applications que vous pouvez connecter, visitez notre [page Apps](/apps).
 
 ## Prérequis
 
-Pour établir la connexion entre Clyo et HubRise, vous devez disposer d'une licence Clyo.
+Pour établir la connexion entre Clyo Systems et HubRise, vous devez disposer d'une licence Clyo Systems.

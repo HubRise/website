@@ -12,7 +12,7 @@ Carré POS peut envoyer les commandes vers HubRise. Cette fonctionnalité doit 
 
 ## Activer l'envoi des commandes vers HubRise
 
-Pour activer l'envoi des commandes vers HubRise, suivez les étapes suivantes :
+Pour activer l'envoi des commandes vers HubRise, suivez ces étapes :
 
 1. Ouvrez Carré POS.
 1. Cliquez sur **ACCUEIL**.

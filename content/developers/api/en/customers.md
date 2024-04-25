@@ -211,7 +211,9 @@ Returns customers belonging to a customer list. Filters can be specified.
 
 ##### Example request:
 
-`GET /customer_lists/ag8u4/customers?phone=+44*`
+`GET /customer_lists/ag8u4/customers?phone=%2B44*`
+
+Note that the `+` character must be URL-encoded as `%2B`.
 
 ```json
 [

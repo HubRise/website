@@ -4,7 +4,7 @@ path_override: produit-non-exporte
 position: 1
 layout: documentation
 meta:
-  title: Produit non exporté | FAQs Kezia II | HubRise
+  title: Produit non exporté | FAQ Kezia II | HubRise
   description: Comment activer l'export d'un produit vers HubRise dans Kezia II.
 ---
 

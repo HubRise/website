@@ -4,7 +4,7 @@ path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | Acme | HubRise
+  title: Connexion à HubRise | Acme | HubRise
   description: Connecter Acme à HubRise, étapes à suivre pour recevoir vos commandes Acme dans votre logiciel de caisse.
 ---
 

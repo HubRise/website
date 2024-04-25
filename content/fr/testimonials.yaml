@@ -1,0 +1,61 @@
+meta:
+  title: Témoignages | HubRise
+  description: Découvrez ce que nos partenaires et nos clients disent de leur expérience HubRise.
+content:
+  title: Pourquoi vous aimerez travailler avec HubRise
+  description: Ne nous croyez pas sur parole, voici ce que nos partenaires et nos clients disent de nous.
+  testimonials:
+    - quote: En tant que consultant Sage ERP avec plus de 13 ans d'expérience dans l'implémentation de solutions Sage X3 et Sage Intacct, je suis passionné par l'intégration et le développement logiciel. HubRise comble un vide important dans les solutions d'hospitalité, en offrant une API intuitive qui permet aux développeurs de construire des intégrations robustes. Cela permet l'intégration de divers systèmes comme des ERP, des CRM et des sites de commande en ligne avec des logiciels de caisse. L'équipe de support à l'intégration et l'équipe partenaire de HubRise ont été extrêmement efficaces et je ne saurais les remercier assez.
+      person_details:
+        - Amir Shahi
+        - Consultant Sage
+        - GigaVee, Australie
+      filename: amir_shahi.jpg
+    - quote: Nous fournissons des solutions de logiciels de caisse flexibles, innovantes et tournées vers l'avenir. HubRise nous aide à aller plus loin et à offrir un écosystème complet sans devoir faire les intégrations nous-mêmes. Nous avons intégré PAR PixelPoint avec HubRise, nos clients profitent maintenant des avantages. Les intégrations ont fonctionné de manière impeccable jusqu'à présent.
+      person_details:
+        - Keith Slowey
+        - Directeur Général
+        - Slowey Systems, Irlande
+      filename: keith_slowey.jpg
+    - quote: TicknCook est un écran de production pour la restauration rapide entièrement intégré à Hubrise. TicknCook utilise l'API de HubRise pour s'intégrer facilement à toutes les solutions d'encaissement de leur écosystème. Nous utilisons également son système d'inscription et de connexion. L'intégration a été rapide, leur API est super facile à utiliser. La communication avec HubRise est également très fluide. Malgré une documentation en ligne  complète, l'équipe HubRise est étonnamment rapide et efficace lorsqu'il s'agit de répondre à nos questions ou résoudre des besoins spécifiques.
+      person_details:
+        - Thomas Rondepierre
+        - Co-fondateur & CTO
+        - TicknCook, France
+      filename: thomas_rondepierre.jpg
+    - quote: Dans le cadre de notre stratégie de développement et d'acquisition rapide de parts de marché, nous avons décidé de passer par HubRise pour nous intégrer avec de nombreuses solutions d'encaissement et autres applications annexes. Au-delà de la complétude de leur écosystème, nous avons fortement apprécié leur professionnalisme tant dans la réactivité en cas de nouveaux besoins que la qualité de leur support.
+      person_details:
+        - Isabelle Saffar
+        - Co-fondatrice
+        - Smilein, France
+      filename: isabelle_saffar.jpg
+    - quote: L'intégration complète a été faite en quelques jours, notre client était connecté à sa caisse la même semaine. Le support était au top et grâce à cette intégration nous pouvons connecter ObyPay à une multitude d'autres caisses.
+      person_details:
+        - Arthur Broutin
+        - Co-fondateur
+        - Obypay, France
+      filename: arthur_broutin.jpg
+    - quote: Le marché est trop fragmenté. Même si nous voulions des intégrations directes, il serait tout simplement impossible de s'intégrer à toutes les solutions de nos clients. Nous préférons référencer HubRise. Le coût est juste, nous les laissons se soucier des intégrations pendant que nous nous concentrons sur le développement de notre solution de commande en ligne et des services que nous proposons.
+      person_details:
+        - Laurent Vigouroux
+        - Gérant
+        - LivePepper, France
+      filename: laurent_vigouroux.jpg
+    - quote: Dans ma longue expérience avec des entreprises de restauration de toute taille, et étant moi-même un ancien exploitant, je ne peux que recommander de travailler avec une solution comme HubRise. HubRise est une solution intelligente, suffisamment flexible pour éliminer les tracas des intégrations directes. Avec leur middleware, vous pouvez lier votre logiciel de restaurant préféré, votre site de commande en ligne et/ou une autre solution. C'est aussi facile et fluide qu'abordable. En plus de cela, je n'ai eu que des interactions positives à tous les niveaux avec les membres de l'équipe HubRise.
+      person_details:
+        - Muhammad Mehmood
+        - Fondateur
+        - Zeera Hub, Angleterre
+      filename: muhammad_mehmood.jpg
+    - quote: Sans l'intégration à notre EPOS, nous n'aurions tout simplement pas pu faire face à l'augmentation des commandes en ligne pendant le confinement dû au COVID. Elles ont augmenté de 70% pour certains de nos restaurants du jour au lendemain.
+      person_details:
+        - Alan Cadden
+        - Directeur général
+        - Saba to Go, Irlande
+      filename: alan_cadden.jpg
+    - quote: J'ai été pilote en 2020 pour la première connexion à Uber Eats via HubRise. Je craignais de servir de cobaye mais pas du tout. Mes demandes de configuration au démarrage ont été très vite résolues. L'équipe technique de HubRise était réactive et à l'écoute. Depuis, mes commandes Uber Eats arrivent directement dans ma caisse, l'équipe opérationnelle est ravie et moi aussi !
+      person_details:
+        - Camille Candela
+        - Gérant
+        - Bënnie Organic, France
+      filename: camille_candela.jpg

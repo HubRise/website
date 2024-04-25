@@ -38,7 +38,7 @@ Almost all the fields are optional. In fact the simplest order that can be creat
 | `collection_code` <Label type="optional" />                           | string                                                   | A short, customer-shared, order identifier for simplified collection or delivery. Does not have to be unique.                                                  |
 | `coupon_codes` <Label type="optional" />                              | string[]                                                 | Coupon codes applied to the order.                                                                                                                             |
 | `items` <Label type="optional" />                                     | [OrderItem](#items)[]                                    | Items included in the order.                                                                                                                                   |
-| `deals` <Label type="optional" />                                     | [OrderDeal](#deals)[]                                    | Deals used in the order.                                                                                                                                       |
+| `deals` <Label type="optional" />                                     | [OrderDealMap](#deals)                                   | Deals used in the order.                                                                                                                                       |
 | `discounts` <Label type="optional" />                                 | [OrderDiscount](#discounts)[]                            | Discounts applied to the order.                                                                                                                                |
 | `charges` <Label type="optional" />                                   | [OrderCharge](#charges)[]                                | Additional charges incurred on the order.                                                                                                                      |
 | `payments` <Label type="optional" />                                  | [OrderPayment](#payments)[]                              | Payment methods used for the order.                                                                                                                            |
@@ -819,6 +819,29 @@ Order items which are part of a deal include a `deal_line` field. This field is 
 
 `pricing_effect` and `pricing_value` can be useful in some applications but can generally be omitted. HubRise does not make any computation with these fields.
 
+All the other fields of an order item are the same as in [Order Items](#items). For example, an order item in a deal can have options, as in the example below.
+
+##### Example:
+
+```json
+{
+  "product_name": "Margarita",
+  "price": "9.00 EUR",
+  "quantity": "1",
+  "options": [
+    {
+      "option_list_name": "Sauce",
+      "name": "Barbecue",
+      "price": "1.00 EUR"
+    }
+  ],
+  "deal_line": {
+    "deal_key": "0",
+    "label": "Pizza"
+  }
+}
+```
+
 ## 6. Order Options {#options}
 
 | Name                                 | Type                                                      | Description                                                                                   |
@@ -844,9 +867,9 @@ Order items which are part of a deal include a `deal_line` field. This field is 
 
 A removed option can define a `price`. In this case, it's the price charged to the customer to remove the option.
 
-## 7. Order Deals {#deals}
+## 7. Order Deal Map {#deals}
 
-An order deal associates an order item's `deal_key` to a particular deal.
+An order deal map associates order items' `deal_keys` with their corresponding deals names and refs.
 
 ##### Attributes:
 
@@ -978,25 +1001,27 @@ A delivery can be attached to an order whose service type is `delivery`. This is
 
 An order with an attached delivery includes a `delivery` field. This field contains the same fields as the [Delivery resource](/developers/api/deliveries#delivery-resource), except for the `driver_latitude` and `driver_longitude` fields.
 
-Attaching or updating a delivery triggers an `order.update` webhook, which includes the `delivery` field in its payload.
+Attaching or updating a delivery triggers an `order.update` callback event, which includes the `delivery` field in its payload.
 
-The `driver_latitude` and `driver_longitude` fields are typically updated at a high frequency, but intentionally do not trigger `order.update` webhooks to minimise the number of events for subscribers. To monitor these fields, opt for `delivery.update` webhooks.
+The `driver_latitude` and `driver_longitude` fields are typically updated at a high frequency, but intentionally do not trigger `order.update` callback events to minimise the number of events for subscribers. To monitor these fields, opt for `delivery.update` webhooks.
 
 ## 12. Order Loyalty Operations {#loyalty-operations}
 
-Add or remove points to a customer's loyalty card(s).
+Loyalty operations are used to add or remove points from a customer's loyalty card(s).
 
-Each operation is linked to a loyalty card, uniquely identified by its name. If a card does not exist with this name, it is created automatically with an initial balance equal to 0.0
+Each operation targets a specific loyalty card, identifiable by its `ref`. By default, this ref is `null`.
 
-Each loyalty operation triggers the automatic recalculation of the loyalty card balance.
+When performing an operation, if a card with the provided `ref` already exists, its balance is updated based on the operation. If a `name` is also supplied and differs from the existing card's name, the card's name is updated to match.
+
+If there is no existing card with the given `ref`, a new one is created automatically with an initial balance set according to the operation.
 
 ##### Attributes:
 
-| Name                               | Type                                                       | Description                                                                              |
-| ---------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| `ref` <Label type="optional" />    | string                                                     | The loyalty card unique ref. Defaults to `null` if omitted.                              |
-| `delta`                            | [decimal](/developers/api/general-concepts#decimal-values) | The number of points to add to the card balance. Use a negative number to remove points. |
-| `reason` <Label type="optional" /> | string                                                     | Additional information on the operation.                                                 |
+| Name                               | Type                                                       | Description                                                                        |
+| ---------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| `ref` <Label type="optional" />    | string                                                     | The unique reference for the loyalty card. Defaults to `null` if not specified.    |
+| `delta`                            | [decimal](/developers/api/general-concepts#decimal-values) | The points to be added to the card balance. Use a negative value to deduct points. |
+| `reason` <Label type="optional" /> | string                                                     | Provides additional information regarding the operation.                           |
 
 ##### Example:
 
@@ -1004,12 +1029,8 @@ Each loyalty operation triggers the automatic recalculation of the loyalty card 
 [
   {
     "ref": "LOY",
-    "delta": "-5",
-    "reason": "Points used on order"
-  },
-  {
-    "ref": "LOY",
-    "delta": "1.5",
+    "name": "Come back!",
+    "delta": "3.5",
     "reason": "Points earned on order"
   }
 ]

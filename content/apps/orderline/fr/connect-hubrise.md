@@ -14,7 +14,7 @@ Pour permettre à OrderLine de traiter des commandes, vous devez d'abord connect
 
 Pour connecter OrderLine à votre compte HubRise, procédez comme suit :
 
-1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com?locale=fr-FR). Pour créer un compte HubRise, consultez la [page d'inscription à HubRise](https://manager.hubrise.com/signup?locale=fr-FR) et suivez les instructions. Pour plus d'informations sur HubRise, voir la rubrique [Comment démarrer](/docs/get-started).
+1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com). Pour créer un compte HubRise, consultez la [page d'inscription à HubRise](https://manager.hubrise.com/signup) et suivez les instructions. Pour plus d'informations sur HubRise, voir la rubrique [Comment démarrer](/docs/get-started).
 
 1. Sélectionnez **CONNEXIONS** dans la barre de menu HubRise, puis **Voir les apps disponibles**.
 

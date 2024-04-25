@@ -20,7 +20,7 @@ app_info:
 
 Expedy propose des imprimantes autonomes aux restaurateurs et aux commerces de proximité. Les imprimantes Expedy permettent d'imprimer les tickets de commandes reçues depuis un site marchand ou depuis les plateformes de livraison de repas. Les tickets s'impriment sur une seule et même imprimante et le format d'impression peut-être personnalisé.
 
-Expedy Print est une solution d'impression autonome. Elle peut ainsi confirmer aux solutions connectées l'impression du ticket et changer le statut de la commande. La commande peut être imprimée en plusieurs exemplaires pour faciliter la préparation des commandes.
+Expedy Print est une solution d'impression autonome capable de confirmer l'impression du ticket aux solutions connectées et de changer le statut de la commande. La commande peut être imprimée en plusieurs exemplaires pour faciliter la préparation. Il est également possible de configurer l'envoi d'un SMS à chaque impression de ticket.
 
 Les imprimantes Expedy se connectent sur le réseau internet de l'établissement via le réseau WiFi ou Ethernet, ou au réseau téléphonique mobile avec une clé 4G. La configuration et la connexion aux applications externes se paramètrent depuis un back-office. Une fois configurées, les imprimantes Expedy fonctionnent sans intervention humaine.
 
@@ -39,7 +39,7 @@ Expedy peut être connecté à HubRise depuis le back-office de Expedy.
 
 En connectant Expedy à HubRise, vous permettez à votre imprimante de communiquer avec les autres applications que vous utilisez de manière quotidienne. Recevez les commandes provenant de votre solution de commande en ligne, ou des plateformes de livraison de repas sur votre imprimante autonome.
 
-Grâce à HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes avec votre logiciel de caisse, de commande en ligne, les plateformes de livraison de repas (dont Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs ou de services de livraison, les solutions eMarketing (SMS / eMailing), business intelligence, systèmes de gestion de stock et de fidélisation client, et bien d'autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, consultez notre [page Apps](/apps).
+Avec HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes entre votre logiciel de caisse, votre solution de commande en ligne, les services de livraison de repas (y compris Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs, les services de livraison, les solutions d'e-marketing (SMS/emailing), les systèmes de business intelligence, de gestion des stocks et de fidélisation client, et bien plus encore. Le nombre d'applications compatibles augmente chaque mois. Pour découvrir les applications que vous pouvez connecter, visitez notre [page Apps](/apps).
 
 ## Prérequis
 

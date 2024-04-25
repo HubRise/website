@@ -16,7 +16,7 @@ La page de paramétrage de l'interface HubRise permet de connecter LEO2 à HubRi
 
 ---
 
-Pour accéder à la page de paramétrage de l'interface HubRise, suivez les étapes suivantes :
+Pour accéder à la page de paramétrage de l'interface HubRise, suivez ces étapes :
 
 1. Depuis l'écran d'accueil de LEO2, cliquez sur **Gestion**.
 1. Entrez le mot de passe que vous avez choisi lors de l'installation de LEO2. Par défaut, ce mot de passe est **1234**.

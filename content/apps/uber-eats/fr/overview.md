@@ -30,6 +30,9 @@ Uber Eats Bridge permet de :
 
 - Recevoir les commandes Uber Eats dans HubRise.
 - Recevoir les informations de livraison dans HubRise, lorsque les commandes sont livrées par votre personnel.
+- Envoyer un catalogue vers Uber Eats, avec support des variantes.
+- Recevoir un catalogue de Uber Eats.
+- Synchroniser l'inventaire avec HubRise.
 
 ![Schéma du flux de connexion entre Uber Eats, Uber Eats Bridge et HubRise](./images/000-2x-connection-diagram.png)
 

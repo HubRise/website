@@ -12,7 +12,7 @@ La connexion de Smood à HubRise s'effectue en quelques étapes seulement.
 
 ---
 
-**REMARQUE IMPORTANTE :** Si vous ne possédez pas encore de compte HubRise, rendez-vous sur la [page d'inscription à HubRise](https://manager.hubrise.com/signup?locale=fr-FR). L'inscription ne prend qu'une minute !
+**REMARQUE IMPORTANTE :** Si vous ne possédez pas encore de compte HubRise, rendez-vous sur la [page d'inscription à HubRise](https://manager.hubrise.com/signup). L'inscription ne prend qu'une minute !
 
 ---
 
@@ -29,14 +29,14 @@ Une fois l'intégration de HubRise activée, suivez ces étapes :
 1. Connectez-vous à votre [back-office Smood](https://manager.smood.ch).
 1. Sélectionnez le restaurant à connecter dans le menu déroulant de la barre latérale gauche.
 1. Cliquez sur l'onglet **Paramètres**, puis dans la section **Intégrations**, cliquez sur **Connecter à HubRise**.
-1. Dans la boîte de dialogue qui s'affiche, [configurez vos paramètres de connexion](/apps/smood/configuration#parameters). Si vous hésitez sur la configuration, laissez les valeurs par défaut et passez à l'étape suivante. Vous pourrez toujours revenir à cette page ultérieurement.
+1. Dans la boîte de dialogue qui s'affiche, [configurez vos paramètres de connexion](/apps/smood/configuration#settings). Si vous hésitez sur la configuration, laissez les valeurs par défaut et passez à l'étape suivante. Vous pourrez toujours revenir à cette page ultérieurement.
 1. Pour confirmer, cliquez sur **Sauvegarder**. Vous êtes alors redirigé vers le back-office HubRise.
 1. Sélectionnez le point de vente HubRise et le catalogue à connecter, puis cliquez sur **Suivant**.
 1. Vous êtes redirigé vers le back-office Smood. La connexion est établie.
 
 ---
 
-**REMARQUE IMPORTANTE** : Smood ne prend pas en charge plusieurs restaurants connectés au même point de vente HubRise. Si vous essayez de connecter un deuxième restaurant à un même point de vente, la connexion existante sera perdue.
+**REMARQUE IMPORTANTE :** Smood ne prend pas en charge plusieurs restaurants connectés au même point de vente HubRise. Si vous essayez de connecter un deuxième restaurant à un même point de vente, la connexion existante sera perdue.
 
 ---
 

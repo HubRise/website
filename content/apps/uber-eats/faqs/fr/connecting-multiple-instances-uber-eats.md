@@ -4,7 +4,7 @@ path_override: connecter-plusieurs-restaurants-uber-eats
 position: 2
 layout: documentation
 meta:
-  title: Connecter plusieurs restaurants | FAQs Uber Eats | HubRise
+  title: Connecter plusieurs restaurants | FAQ Uber Eats | HubRise
   description: Comment connecter plusieurs restaurants Uber Eats à un même point de vente HubRise, et recevoir toutes les commandes dans la même caisse.
 ---
 

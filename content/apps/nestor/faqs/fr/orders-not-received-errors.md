@@ -4,7 +4,7 @@ path_override: commandes-non-recues
 position: 3
 layout: documentation
 meta:
-  title: Commandes HubRise non reçues | FAQs Nestor | HubRise
+  title: Commandes HubRise non reçues | FAQ Nestor | HubRise
   description: Que faire lorsque les commandes HubRise n'arrivent pas dans Nestor.
 ---
 
