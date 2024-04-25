@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: Full documentation available <Link href="/fr/apps/expedy">in French</Link>.
+**IMPORTANT NOTE:** Full documentation available <Link href="/fr/apps/expedy">in French</Link>.
 
 ---
 

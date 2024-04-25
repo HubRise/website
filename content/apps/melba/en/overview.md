@@ -27,7 +27,7 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: Full documentation available <Link href="/fr/apps/melba">in French only</Link>.
+**IMPORTANT NOTE:** Full documentation available <Link href="/fr/apps/melba">in French only</Link>.
 
 ---
 

@@ -18,7 +18,7 @@ All the orders received by HubRise are logged in the back office. For informatio
 The following keys can appear in a HubRise order request.
 
 | Key                  | Description                                                                                                                                                                                            |
-| -------------------- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `private_ref`        | The internal ID for the order. It can be used to find an order.                                                                                                                                        |
 | `service_type`       | The type of service requested by the customer. Typical values are “delivery”, “collection”, “eat_in”.                                                                                                  |
 | `service_type_ref`   | The code associated with service_type in the EPOS system.                                                                                                                                              |

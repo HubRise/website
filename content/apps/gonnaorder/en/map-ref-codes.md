@@ -40,7 +40,7 @@ You can assign a different service type to each delivery mode in GonnaOrder.
 To assign ref codes to your delivery modes from the GonnaOrder dashboard, follow these steps:
 
 1. Log in to your [GonnaOrder back office](https://admin.gonnaorder.com).
-1. From the dashboard, go to **Settings > Ordering**.
+1. From the dashboard, go to **Settings** > **Ordering**.
 1. Under the **Delivery Modes** section, specify the ref codes for your service types in the **External id** fields. Changes are automatically saved.
    ![Configuring service type ref codes from the GonnaOrder back office](./images/006-gonnaorder-service-type-payments.png)
 
@@ -51,7 +51,7 @@ GonnaOrder lets you set up delivery fees. Delivery fees are a charge in HubRise,
 To assign a ref codes to your delivery fees from the GonnaOrder dashboard, follow these steps:
 
 1. Log in to your [GonnaOrder back office](https://admin.gonnaorder.com).
-2. From the dashboard, go to **Settings > Delivery**.
+2. From the dashboard, go to **Settings** > **Delivery**.
 3. Specify the ref code for your delivery fees in the **Delivery fee external id** field. Changes are automatically saved.
    ![Configuring delivery fees ref codes from the GonnaOrder back office](./images/007-gonnaorder-delivery-fees.png)
 
@@ -62,7 +62,7 @@ For more details about configuring your GonnaOrder integration with HubRise, see
 To assign ref codes to your payment methods from the GonnaOrder dashboard, follow these steps:
 
 1. Log in to your [GonnaOrder back office](https://admin.gonnaorder.com).
-1. From the dashboard, go to **Settings > Ordering**.
+1. From the dashboard, go to **Settings** > **Ordering**.
 1. Specify the ref codes for payment methods:
    - For online payments, enter the ref code in the **External online payment id** field.
    - For cash payments, enter the ref code in the **External non online payment id** field.

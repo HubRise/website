@@ -21,6 +21,6 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: Full documentation available <Link href="/fr/apps/mealenium" addLocalePrefix={false}>in French only</Link>.
+**IMPORTANT NOTE:** Full documentation available <Link href="/fr/apps/mealenium" addLocalePrefix={false}>in French only</Link>.
 
 ---

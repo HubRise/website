@@ -129,7 +129,7 @@ Les options des produits de la promotion sont ignorées. Par exemple, si une pro
 
 ---
 
-**REMARQUE IMPORTANTE** : Smood ignore les options des produits dans les promotions. De plus, si une option est requise pour un produit, la promotion ne sera pas importée.
+**REMARQUE IMPORTANTE :** Smood ignore les options des produits dans les promotions. De plus, si une option est requise pour un produit, la promotion ne sera pas importée.
 
 ---
 

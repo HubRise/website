@@ -5,6 +5,7 @@ import useTranslation from "@hooks/client/useTranslation"
 import { BlogMdFile } from "@utils/BlogIndexer/types"
 import { ContentImage } from "@utils/contentImage"
 import imageSizes from "@utils/imageSizes"
+import { text } from "@utils/misc"
 
 import DateAndAuthor from "../shared/components/DateAndAuthor"
 
@@ -35,7 +36,7 @@ const PostSummary = ({ mdFile, bannerImage }: PostSummaryProps): JSX.Element => 
 
       <Text>
         <DateAndAuthor frontMatter={frontMatter} />
-        {mdFile.frontMatter.excerpt && <Excerpt>{mdFile.frontMatter.excerpt}</Excerpt>}
+        {mdFile.frontMatter.excerpt && <Excerpt>{text(mdFile.frontMatter.excerpt)}</Excerpt>}
         <ReadMore href={mdFile.uri}>{t("misc.read_more")}</ReadMore>
       </Text>
     </StyledPostSummary>

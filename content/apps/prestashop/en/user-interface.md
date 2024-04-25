@@ -20,7 +20,7 @@ Each row in the page shows the following information about an operation:
 
 - **TIME**: The date and time of the order.
 - **ORDER**: The HubRise order ID, for order operations.
-- **DESCRIPTION**: An optional description for operations that are not related to a specific order. It could be empty, or inform of a `System request` or a `Catalog push`.
+- **DESCRIPTION**: An optional description for operations that are not related to a specific order. It could be empty, or inform of a specific action such as `System request` or `Catalog push`.
 - **STATUS**: The status of the order. The value `OK` indicates that the order has been successfully sent, otherwise an error code will be displayed in red.
 
 The **System request** label indicates that the operation is not related to a specific order.
@@ -47,7 +47,7 @@ Logs are a powerful debugging tool in case of issues. To understand in detail ho
 
 The layout of a system request page is identical to that of an order page.
 
-System requests are generally sent by PrestaShop Bridge to notify HubRise about a change in the configuration or to fetch the most up-to-date information. As an example, the following image displays a request to update the PrestaShop Bridge callback after a configuration change.
+System requests are generally sent by PrestaShop Bridge to notify HubRise about a change in the configuration or to fetch the most up-to-date information. 
 
 System request pages can provide useful debugging insights to support teams, but are rarely of interest to other users.
 
