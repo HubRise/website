@@ -335,6 +335,12 @@ content:
           title: GonnaOrder
           description: GonnaOrder propose un système de commande en ligne économique, disponible dans 14 pays. Via un site personnalisé et des applications iOS et Android natives, GonnaOrder permet de commander à emporter, en livraison ou à table dans des restaurants, bars, pubs et cafés.
           additional_info:
+        - website: https://kurvekiosks.com
+          documentation: /fr/apps/kurvekiosks
+          logo: kurvekiosks.png
+          title: Kurve Kiosks
+          description: Kurve Kiosks conçoit et développe des kiosques de commande pour les restaurants et les hôtels. La plateforme est personnalisable, riche en fonctionnalités et fiable, facilitant ainsi la transition vers la technologie de libre-service.
+          additional_info:
         - website: https://latoquemagique.com/
           documentation: /fr/apps/la-toque-magique
           logo: la-toque-magique.png
@@ -368,7 +374,7 @@ content:
           documentation: /fr/apps/obypay
           logo: obypay.png
           title: Obypay
-          description: Obypay est une solution de commande en ligne et de commande à table pour les restaurants avec une conciergierie digitale pour les hotels.
+          description: Obypay propose une solution de commande en ligne et à table pour les restaurants, une conciergerie digitale pour les hôtels, et des bornes de commande pour la restauration.
         - website: https://www.prestashop.com/fr
           documentation: /fr/apps/prestashop
           logo: prestashop.png
@@ -381,11 +387,23 @@ content:
           title: RestaJet
           description: RestaJet propose une application mobile pour les réservations et un site de commande en ligne pour les restaurants. Des outils de gestion de contenu et de marketing sont disponibles sur la console RestaJet.
           additional_info:
+        - website: https://www.restaur-app.fr/
+          documentation: /fr/apps/restaur-app
+          logo: restaur-app.png
+          title: Restaur'App
+          description: Restaur'App permet aux restaurateurs de disposer de leur propre site web et application mobile pour présenter leur établissement et gérer les commandes en ligne, ainsi que les livraisons, sans commission sur les ventes. Restaur'App est une solution dédiée à la restauration rapide et à la vente à emporter.
+          additional_info:
         - website: https://restaurant-internet.com
           documentation: /fr/apps/restaurant-internet
           logo: restaurant-internet.png
           title: Restaurant-internet
           description: Restaurant-internet propose un site vitrine avec réservation de table et solution de commande en ligne. La solution couvre en particulier les besoins de la livraison à domicile et la vente à emporter.
+          additional_info:
+        - website: https://servier.bar
+          documentation: /fr/apps/servier-bar
+          logo: servier-bar.png
+          title: servier.bar
+          description: Servier.bar propose des solutions de commande conçues pour les restaurants et les hôtels. Ces solutions permettent aux clients de commander et de payer directement depuis leurs smartphones via une application web, pour améliorer le service sans embaucher de personnel supplémentaire.
           additional_info:
         - website: https://www.shopify.com/
           documentation: /fr/apps/shopify
@@ -446,8 +464,8 @@ content:
           documentation: /fr/apps/captain
           logo: captain.png
           title: Captain
-          description: Captain est une solution de traitement des commandes et de tracking des livreurs.
-          additional_info: Intégration en cours.
+          description: Captain permet aux restaurateurs de gérer la livraison des commandes et aux clients de les suivre en temps réel. Un écran d'affichage en cuisine prioritise la séquence de cuisson. Un module complémentaires permet l'utilisation de services de livraison tiers.
+          additional_info:
         - website: https://coursicab.com
           documentation: /fr/apps/coursicab
           logo: coursicab.png
@@ -482,6 +500,12 @@ content:
           logo: stuart.png
           title: Stuart
           description: Stuart propose aux commerces de toutes tailles et de tous secteurs, des services de livraison rapide sur demande avec une méthode de transport personnalisée. Disponible dans 4 pays et 100 villes.
+          additional_info:
+        - website: https://trapar.co.uk
+          documentation: /fr/apps/trapar
+          logo: trapar.png
+          title: Trapar
+          description: Trapar facilite la livraison du dernier kilomètre avec suivi en temps réel et l'option d'utiliser ses propres livreurs ou de faire appel à ceux de Trapar.
           additional_info:
     - title: Fidélité et marketing
       slug: loyalty-and-marketing
@@ -557,7 +581,7 @@ content:
           documentation: /fr/apps/koust
           logo: koust.png
           title: Koust
-          description: Koust permet à tout type de restaurant de gérer ses stocks, analyser ses ventes et sa marge brute, optimiser ses achats et construire son menu.
+          description: Koust est un logiciel de gestion destiné aux restaurateurs et hôteliers, permettant de gérer les stocks, analyser les ventes et les marges brutes, optimiser les achats, et ajuster les menus pour améliorer l'offre tout en contrôlant les marges.
         - website: https://malba.io/
           documentation: /fr/apps/melba
           logo: melba.png
@@ -569,6 +593,12 @@ content:
           title: RapidBar
           description: RapidBar simplifie la gestion des inventaires de votre restaurant, hôtel ou bar. RapidBar vous aide à contrôler votre chaîne d'approvisionnement, en centralisant les menus, les inventaires et les commandes fournisseurs dans une seule application cloud.
           additional_info:
+        - website: https://www.sage.com/fr-fr/sage-business-cloud/sage-x3
+          documentation: /fr/apps/sage-x3
+          logo: sage.png
+          title: Sage X3
+          description: Sage X3 est un ERP conçu pour les entreprises de taille moyenne à grande. Il offre des fonctionnalités de gestion financière, contrôle des stocks, planification de la production et approvisionnement, permettant de rationaliser les opérations et d'améliorer la prise de décision.
+          additional_info: Intégration réalisée par Gigavee Technology.
         - website: https://www.somm-it.com/
           documentation: /fr/apps/somm-it
           logo: somm-it.png

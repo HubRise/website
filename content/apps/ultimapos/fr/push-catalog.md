@@ -20,6 +20,6 @@ L'opération peut prendre jusqu'à quelques minutes, en fonction de la taille de
 
 ---
 
-**REMARQUE IMPORTANTE** : Cette opération remplace le catalogue existant sur HubRise.
+**REMARQUE IMPORTANTE :** Cette opération remplace le catalogue existant sur HubRise.
 
 ---

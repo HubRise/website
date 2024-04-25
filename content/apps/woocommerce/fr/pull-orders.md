@@ -81,7 +81,7 @@ WooCommerce prend en charge quatre types de paiements dans une commande :
 
 ---
 
-**REMARQUE IMPORTANTE** : Les codes ref de paiement seront bientôt personnalisables depuis la page de configuration. Pour plus d'informations, contactez HubRise sur support\@hubrise.com.
+**REMARQUE IMPORTANTE :** Les codes ref de paiement seront bientôt personnalisables depuis la page de configuration. Pour plus d'informations, contactez HubRise sur support\@hubrise.com.
 
 ---
 
@@ -130,7 +130,7 @@ Un produit peut avoir au maximum une option rattachée.
 
 <details>
 
-Voici un exemple de requête contenant un article unique avec une option.
+<summary>Exemple de JSON contenant un article unique avec une option</summary>
 
 ```json
 "items": [
@@ -180,7 +180,7 @@ Les champs disponibles dans les requêtes sont les suivants :
 
 <details>
 
-Voici un exemple de requête pour les frais.
+<summary>Exemple de JSON pour les frais</summary>
 
 ```json
 "charges": [

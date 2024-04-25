@@ -31,6 +31,10 @@ Service types such as delivery by Deliveroo, restaurant delivery or takeaway mig
 
 Additionally, from this section, you can choose to categorise orders fulfilled by Deliveroo as either delivery or collection orders. Orders fulfilled by the restaurant fleet are always marked as delivery orders. This feature is useful to address specific business requirements or to differentiate these orders in financial reports.
 
+### Special Items
+
+Some markets such as Ireland require deposits on certain items. If your business requires this, you can specify the ref code for the deposit item in this section. The deposit item must first be created as an option in your EPOS. Once configured, it will be automatically added to any items that require a deposit.  
+
 ### Discounts
 
 This section allows you to specify the discount ref code applied to your products, in case you have one active on your Deliveroo page. Refer to your EPOS documentation on the HubRise website to see how to obtain the corresponding ref code.

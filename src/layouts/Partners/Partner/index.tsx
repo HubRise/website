@@ -1,5 +1,6 @@
 import { Partners } from "@layouts/Partners/types"
 import { ContentImage } from "@utils/contentImage"
+import { text } from "@utils/misc"
 
 import { Description, Logo, Title, Information, Name, PartnerImage, Website, Card } from "./Styles"
 
@@ -17,14 +18,14 @@ const Partner = ({ partner, image }: PartnerProps): JSX.Element => {
 
       <Information>
         <Title>
-          <Name>{name}</Name>
+          <Name>{text(name)}</Name>
           <Website href={site_url} target="_blank">
             {site_url}
           </Website>
         </Title>
 
         {descriptions.map((description, index) => (
-          <Description key={index}>{description}</Description>
+          <Description key={index}>{text(description)}</Description>
         ))}
       </Information>
     </Card>

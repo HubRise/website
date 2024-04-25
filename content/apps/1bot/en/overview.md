@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: The integration is currently being reviewed. Full documentation will be published once the review is complete.
+**IMPORTANT NOTE:** The integration is currently being reviewed. Full documentation will be published once the review is complete.
 
 ---
 

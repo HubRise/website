@@ -19,7 +19,7 @@ Pour récupérer un catalogue depuis Lightspeed, suivez ces étapes :
 
 ---
 
-**REMARQUE IMPORTANTE** : Cette opération remplacera votre catalogue HubRise actuel.
+**REMARQUE IMPORTANTE :** Cette opération remplacera votre catalogue HubRise actuel.
 
 ---
 

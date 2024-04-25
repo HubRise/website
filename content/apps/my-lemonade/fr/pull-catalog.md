@@ -28,7 +28,7 @@ Le catalogue est importé automatiquement dans My Lemonade au moment de la conne
 
 ---
 
-**REMARQUE IMPORTANTE** : Cette opération remplace votre menu My Lemonade actuel.
+**REMARQUE IMPORTANTE :** Cette opération remplace votre menu My Lemonade actuel.
 
 ---
 
