@@ -42,4 +42,4 @@ With HubRise, you can synchronise your menu, customer information, and orders be
 
 ## Prerequisites
 
-To establish a connection between Restaurant Manager and HubRise, you must have a Restaurant Manager license, and a commercial agreement with Crystal Mind.
+To establish a connection between Restaurant Manager and HubRise, you must have a Restaurant Manager licence, and a commercial agreement with Crystal Mind.

@@ -50,4 +50,4 @@ With HubRise, you can synchronise your menu, customer information, and orders be
 
 ## Prerequisites
 
-To establish a connection between Clyo Systems and HubRise, you must have an existing Clyo Systems account.
+To establish a connection between Clyo Systems and HubRise, you must have an existing Clyo Systems licence.

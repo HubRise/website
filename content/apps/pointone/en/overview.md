@@ -42,4 +42,4 @@ With HubRise, you can synchronise your menu, customer information, and orders be
 
 ## Prerequisites
 
-To establish a connection between pointOne and HubRise, you must have a pointOne license.
+To establish a connection between pointOne and HubRise, you must have a pointOne licence.
