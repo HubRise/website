@@ -107,6 +107,12 @@ content:
           title: Nestor
           description: Nestor is a French Point of Sales solution designed for home delivery and takeaway restaurants.
           additional_info:
+        - website: https://www.netfood.cloud
+          documentation: /apps/netfood
+          logo: netfood.png
+          title: NetFood
+          description: NetFood, developed by .Net Informatica, is an Italian EPOS solution for the food & beverage sector. NetFood EPOS can be complemented with an online ordering solution and mobile app as well as a self-ordering kiosk.
+          additional_info:
         - website: https://nextorder.com/en-gb
           documentation: /apps/next-order
           logo: next-order.png
