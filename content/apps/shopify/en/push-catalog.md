@@ -20,15 +20,11 @@ To be able to push your catalog into Shopify, you must populate a HubRise catalo
 
 You can also use the HubRise Catalog Manager to create or update your catalog, including the addition of ref codes. Catalog Manager is edited by HubRise and you can use it free of charge. For more information, see [Catalog Manager](/apps/catalog-manager/overview).
 
-For more information on HubRise catalogs, see [Catalogs](/docs/catalog).
-
 ---
 
 **IMPORTANT NOTE:** Ensure that all products in your catalog have a ref code. Products without a ref code will not be pushed to Shopify.
 
 ---
-
-When you push your catalog, Shopify Bridge creates the products that do not yet exist in Shopify. It also updates the price of your Shopify products, if the **Update prices of existing products** checkbox is selected in the Configuration page. Shopify Bridge does not delete products.
 
 ## Manual Catalog Push
 

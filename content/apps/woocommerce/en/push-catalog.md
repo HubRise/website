@@ -20,10 +20,6 @@ To be able to push your catalog into WooCommerce, you must populate a HubRise ca
 
 You can also use the HubRise Catalog Manager to create or update your catalog, including the addition of ref codes. Catalog Manager is edited by HubRise and you can use it free of charge. For more information, see [Catalog Manager](/apps/catalog-manager/overview).
 
-When you push your catalog, WooCommerce Bridge creates the products that do not yet exist in WooCommerce. It matches them using ref codes. It also updates the price of your WooCommerce products, if the **Update prices of existing products** checkbox is selected in the bridge **Configuration** page. WooCommerce Bridge does not delete products.
-
-For more information on HubRise catalogs, see [Catalogs](/docs/catalog).
-
 ---
 
 **IMPORTANT NOTE:** Ensure that all products in your catalog have a ref code. Products without a ref code will not be pushed to WooCommerce.
@@ -55,7 +51,7 @@ The same update rules apply as for the [Manual Catalog Push](#manual-catalog-pus
 
 ## Technical Reference
 
-The following sections describe in detail how HubRise catalogs are mapped to WooCommerce **Products**.
+The following sections describe how a catalog push affects your WooCommerce store.
 
 ### Categories
 
