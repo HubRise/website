@@ -18,7 +18,7 @@ For more information on HubRise catalogs, see [Catalogs](/docs/catalog).
 
 ## Populate a HubRise Catalog
 
-To be able to push your catalog into PrestaShop, you must populate a HubRise catalog first. Many apps connected with HubRise, including EPOS solutions, offer the ability to export the catalog to HubRise. Refer to your EPOS documentation on the HubRise website to verify.
+To be able to push your catalog into PrestaShop, you must populate a HubRise catalog first. Many apps connected with HubRise, including EPOS solutions, offer the ability to export the catalog to HubRise. Refer to your EPOS documentation on our [Apps page](/apps) to verify.
 
 You can also use the HubRise Catalog Manager to create or update your catalog, including the addition of ref codes. Catalog Manager is edited by HubRise and you can use it free of charge. For more information, see [Catalog Manager](/apps/catalog-manager/overview).
 
