@@ -27,7 +27,7 @@ Lightspeed Restaurant Bridge fetches new orders every 30 seconds. There can be a
 
 ---
 
-**IMPORTANT NOTE:** Only paid sales are pulled into HubRise.
+**IMPORTANT NOTE:** Only sales that are registered in Lightspeed and paid are pulled into HubRise. Orders placed from third-party apps that are directly connected to the EPOS, and not via HubRise, are not pulled.
 
 ---
 

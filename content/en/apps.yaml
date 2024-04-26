@@ -107,6 +107,12 @@ content:
           title: Nestor
           description: Nestor is a French Point of Sales solution designed for home delivery and takeaway restaurants.
           additional_info:
+        - website: https://www.netfood.cloud
+          documentation: /apps/netfood
+          logo: netfood.png
+          title: NetFood
+          description: NetFood, developed by .Net Informatica, is an Italian EPOS solution for the food & beverage sector. NetFood EPOS can be complemented with an online ordering solution and mobile app as well as a self-ordering kiosk.
+          additional_info:
         - website: https://nextorder.com/en-gb
           documentation: /apps/next-order
           logo: next-order.png
@@ -374,7 +380,7 @@ content:
           documentation: /apps/obypay
           logo: obypay.png
           title: Obypay
-          description: Obypay is an online and a table ordering solution for restaurants with a digital conciergerie app for hotels.
+          description: Obypay offers an online and table ordering solution for restaurants, a digital concierge service app for hotels, and self ordering kiosks for restaurants.
         - website: https://www.prestashop.com/en
           documentation: /apps/prestashop
           logo: prestashop.png
@@ -572,7 +578,7 @@ content:
           documentation: /apps/koust
           logo: koust.png
           title: Koust
-          description: Koust helps all types of restaurants to manage their inventory, analyse their sales and gross margin, optimise purchasing, and build their menu.
+          description: Koust is an operations management solution designed for restaurants and hotels, enabling them to manage inventory, analyse sales and gross margin, optimise purchases, and adjust menus to enhance offerings while ensuring margin control.
           additional_info:
         - website: https://malba.io/
           documentation: /apps/melba
@@ -585,6 +591,12 @@ content:
           title: RapidBar
           description: RapidBar simplifies inventory management of your restaurant, hotel or bar. RapidBar helps you to control your supply chain, by centralizing menus, inventories and supplier orders in a single, cloud-based application.
           additional_info:
+        - website: https://www.sage.com/en-us/sage-business-cloud/sage-x3
+          documentation: /apps/sage-x3
+          logo: sage.png
+          title: Sage X3
+          description: Sage X3 is an ERP software designed for medium to large businesses. It offers features of financial management, inventory control, production planning, and procurement, helping to streamline operations and improve decision-making.
+          additional_info: Integration made by Gigavee Technology.
         - website: https://www.somm-it.com/
           documentation: /apps/somm-it
           logo: somm-it.png

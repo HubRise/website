@@ -1,7 +1,7 @@
 ---
 title: Configuration
 path_override: configuration
-position: 4
+position: 3
 layout: documentation
 meta:
   title: Configuration | Popina | HubRise

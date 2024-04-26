@@ -40,7 +40,7 @@ Once your HubRise location is connected to Mailchimp, customer information is pu
 
 ---
 
-**IMPORTANT NOTE**: For every location in HubRise, you will need to perform a new connection to Mailchimp. Once all connections are set, you need to configure Mailchimp Bridge for contacts to be synced. For more information, see [Configuration](/apps/mailchimp/configuration).
+**IMPORTANT NOTE:** For every location in HubRise, you will need to perform a new connection to Mailchimp. Once all connections are set, you need to configure Mailchimp Bridge for contacts to be synced. For more information, see [Configuration](/apps/mailchimp/configuration).
 
 ---
 

@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: The integration is in progress. Full documentation will be published once the integration is complete.
+**IMPORTANT NOTE:** The integration is in progress. Full documentation will be published once the integration is complete.
 
 ---
 

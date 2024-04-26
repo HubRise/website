@@ -81,7 +81,7 @@ WooCommerce prend en charge quatre types de paiements dans une commande :
 
 ---
 
-**REMARQUE IMPORTANTE** : Les codes ref de paiement seront bientôt personnalisables depuis la page de configuration. Pour plus d'informations, contactez HubRise sur support\@hubrise.com.
+**REMARQUE IMPORTANTE :** Les codes ref de paiement seront bientôt personnalisables depuis la page de configuration. Pour plus d'informations, contactez HubRise sur support\@hubrise.com.
 
 ---
 

@@ -29,7 +29,7 @@ Connecting App4 to HubRise allows the online ordering solution to:
 
 - Push orders into HubRise, including order status.
 - Push customer information into HubRise.
-- Pull a catalog from HubRise.
+- Pull a catalog from HubRise, with variants support.
 
 App4 can be connected to HubRise via the App4 support line.
 

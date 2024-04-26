@@ -21,7 +21,7 @@ To view Usage details for an Account or Location:
 
 ---
 
-**IMPORTANT NOTE**: When **All locations** is selected, you will not necessarily see all Locations in the **Usage** section. If a location is missing from this list, select the location from the **Location** dropdown. It means that subscription payment is set at Location level.
+**IMPORTANT NOTE:** When **All locations** is selected, you will not necessarily see all Locations in the **Usage** section. If a location is missing from this list, select the location from the **Location** dropdown. It means that subscription payment is set at Location level.
 
 ---
 
@@ -50,7 +50,7 @@ If a payment notification appears, click the link and follow the instructions to
 
 ---
 
-**IMPORTANT NOTE**: When there is a payment issue, Admin users receive an email notification, and a notification is displayed in the HubRise back office. Failing a response within two weeks, the HubRise Account, or the related Location, are automatically suspended.
+**IMPORTANT NOTE:** When there is a payment issue, Admin users receive an email notification, and a notification is displayed in the HubRise back office. Failing a response within two weeks, the HubRise Account, or the related Location, are automatically suspended.
 
 ---
 
@@ -68,6 +68,6 @@ To change the plan of a Location, follow these steps:
 
 ---
 
-**IMPORTANT NOTE**: To upgrade, you must have a payment method set up. For information, see [Add a Payment Method](/docs/payment#add-payment-method). Your Account will not be charged until you exceed the free monthly limitation.
+**IMPORTANT NOTE:** To upgrade, you must have a payment method set up. For information, see [Add a Payment Method](/docs/payment#add-payment-method). Your Account will not be charged until you exceed the free monthly limitation.
 
 ---

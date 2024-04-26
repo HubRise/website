@@ -104,6 +104,12 @@ content:
           logo: nestor.png
           title: Nestor
           description: Nestor est un logiciel de caisse conçu pour la livraison à domicile et la vente à emporter.
+        - website: https://www.netfood.cloud
+          documentation: /apps/netfood
+          logo: netfood.png
+          title: NetFood
+          description: NetFood, développé par .Net Informatica, est un logiciel de caisse italien pour la restauration et les débits de boissons. NetFood est proposé avec une solution de commande en ligne et une application mobile, ainsi qu'un kiosque de commande.
+          additional_info:
         - website: https://nextorder.com/fr-fr
           documentation: /fr/apps/next-order
           logo: next-order.png
@@ -374,7 +380,7 @@ content:
           documentation: /fr/apps/obypay
           logo: obypay.png
           title: Obypay
-          description: Obypay est une solution de commande en ligne et de commande à table pour les restaurants avec une conciergierie digitale pour les hotels.
+          description: Obypay propose une solution de commande en ligne et à table pour les restaurants, une conciergerie digitale pour les hôtels, et des bornes de commande pour la restauration.
         - website: https://www.prestashop.com/fr
           documentation: /fr/apps/prestashop
           logo: prestashop.png
@@ -581,7 +587,7 @@ content:
           documentation: /fr/apps/koust
           logo: koust.png
           title: Koust
-          description: Koust permet à tout type de restaurant de gérer ses stocks, analyser ses ventes et sa marge brute, optimiser ses achats et construire son menu.
+          description: Koust est un logiciel de gestion destiné aux restaurateurs et hôteliers, permettant de gérer les stocks, analyser les ventes et les marges brutes, optimiser les achats, et ajuster les menus pour améliorer l'offre tout en contrôlant les marges.
         - website: https://malba.io/
           documentation: /fr/apps/melba
           logo: melba.png
@@ -593,6 +599,12 @@ content:
           title: RapidBar
           description: RapidBar simplifie la gestion des inventaires de votre restaurant, hôtel ou bar. RapidBar vous aide à contrôler votre chaîne d'approvisionnement, en centralisant les menus, les inventaires et les commandes fournisseurs dans une seule application cloud.
           additional_info:
+        - website: https://www.sage.com/fr-fr/sage-business-cloud/sage-x3
+          documentation: /fr/apps/sage-x3
+          logo: sage.png
+          title: Sage X3
+          description: Sage X3 est un ERP conçu pour les entreprises de taille moyenne à grande. Il offre des fonctionnalités de gestion financière, contrôle des stocks, planification de la production et approvisionnement, permettant de rationaliser les opérations et d'améliorer la prise de décision.
+          additional_info: Intégration réalisée par Gigavee Technology.
         - website: https://www.somm-it.com/
           documentation: /fr/apps/somm-it
           logo: somm-it.png
