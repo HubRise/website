@@ -1,0 +1,44 @@
+path: /
+meta:
+  title: HubRise - Intégration pour les restaurants et les commerçants
+  description: HubRise, la plateforme d'intégration pour les restaurants et les commerçants, qui simplifie vos opérations et améliore votre expérience client.
+
+hero:
+  title: Améliorez votre expérience client avec HubRise
+  description: |
+    Simplifiez vos opérations et améliorez votre efficacité avec notre plateforme d'intégration unique.
+  button_label: Découvrez comment
+  button_url: /fr/features
+
+sections:
+  - title: Simplifiez vos opérations
+    description: |
+      Intégrez vos systèmes de gestion de restaurant, de commande en ligne, de livraison de repas et de marketing, en un seul endroit.
+    image: integrations.png
+
+  - title: Améliorez votre expérience client
+    description: |
+      Offrez une expérience client exceptionnelle avec notre plateforme d'intégration, qui vous permet de gérer vos commandes, vos stocks et vos données client en un seul endroit.
+    image: customer-experience.png
+
+  - title: Pour les restaurateurs et commerçants
+    description: |
+      Simplifiez vos opérations et améliorez votre expérience client avec notre plateforme d'intégration.
+    button_label: En savoir plus
+    button_url: /fr/for-merchants
+
+  - title: Pour les éditeurs de logiciels
+    description: |
+      Revendez notre solution en marque blanche et améliorez votre offre de valeur pour vos clients.
+    button_label: En savoir plus
+    button_url: /fr/for-publishers
+
+  - title: Sécurité et conformité
+    description: |
+      Nous nous assurons que vos données sont sécurisées et conformes aux normes de l'industrie.
+    image: security.png
+
+  - title: Support technique
+    description: |
+      Notre équipe d'experts est à votre disposition pour répondre à toutes vos questions et vous aider à résoudre vos problèmes.
+    image: support.png

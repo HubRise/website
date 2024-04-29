@@ -1,0 +1,54 @@
+path: /fr/features
+meta:
+  title: Fonctionnalités - HubRise
+  description: Découvrez les fonctionnalités de HubRise, la plateforme d'intégration pour les restaurants et les commerçants.
+
+hero:
+  title: Les fonctionnalités de HubRise
+  description: |
+    Découvrez comment HubRise peut vous aider à améliorer votre efficacité et votre expérience client.
+  button_label: Démarrer l'essai gratuit
+  button_url: https://manager.hubrise.com/signup
+
+features:
+  - title: Intégrations multiples
+    description: |
+      Intégrez vos systèmes de gestion de restaurant, de commande en ligne, de livraison de repas et de marketing, en un seul endroit.
+    image: integrations.png
+
+  - title: API sécurisée
+    description: |
+      Notre API sécurisée et documentée vous permet de synchroniser vos données en temps réel.
+    image: api.png
+
+  - title: Gestion des commandes
+    description: |
+      Gérez vos commandes en ligne et en magasin, depuis un seul endroit.
+    image: orders.png
+
+  - title: Gestion des stocks
+    description: |
+      Gérez vos stocks en temps réel, pour éviter les erreurs et les pertes.
+    image: inventory.png
+
+  - title: Analytiques et rapports
+    description: |
+      Obtenez des insights précieux sur vos ventes, vos clients et vos opérations.
+    image: analytics.png
+
+  - title: Support technique
+    description: |
+      Notre équipe d'experts est à votre disposition pour répondre à toutes vos questions et vous aider à résoudre vos problèmes.
+    image: support.png
+
+  - title: Sécurité et conformité
+    description: |
+      Nous nous assurons que vos données sont sécurisées et conformes aux normes de l'industrie.
+    image: security.png
+
+call_to_action:
+  title: Prêt à améliorer votre expérience client ?
+  button_label: Démarrer l'essai gratuit
+  button_url: https://manager.hubrise.com/signup
+  link_label: Créer un compte gratuit
+  link_url: https://manager.hubrise.com/signup
