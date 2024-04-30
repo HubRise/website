@@ -134,13 +134,13 @@ content:
         - website: https://www.partech.com/pixel-point-software/
           documentation: /fr/apps/pixelpoint-bridge
           logo: par-pixelpoint-web-api.png
-          title: PixelPoint (web API)
+          title: PAR PixelPoint (web API)
           description: PixelPoint, édité par PAR, intégré via son API web, répond aux besoins de la restauration et du divertissement, avec un focus sur la gestion des coûts, la prévention des pertes et la fidélisation.
           additional_info: Intégration par API web.
         - website: https://www.partech.com/pixel-point-software/
           documentation: /fr/apps/pixelpoint-windows-api
           logo: par-pixelpoint.png
-          title: PixelPoint (Windows API)
+          title: PAR PixelPoint (Windows API)
           description: PixelPoint, édité par PAR, intégré via son API Windows, répond aux besoins de la restauration et du divertissement, avec un focus sur la gestion des coûts, la prévention des pertes et la fidélisation.
           additional_info: Intégration par API Windows, réalisée par Slowey Systems.
         - website: https://www.pointone-epos.co.uk/
@@ -288,7 +288,7 @@ content:
         - website: https://www.justeattakeaway.com/
           documentation: /fr/apps/just-eat-takeaway
           logo: takeaway.png
-          title: Takeaway.com
+          title: Just Eat Takeaway
           description: Takeaway.com est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Disponible en Belgique, au Luxembourg, au Portugal, en Roumanie, et en Bulgarie.
           additional_info:
         - website: https://www.talabat.com
