@@ -1,5 +1,5 @@
 import axios from "axios"
-import { createMocks } from "node-mocks-http"
+import { createRequest } from "node-mocks-http"
 import nodemailer from "nodemailer"
 
 import { POST } from "./route"
@@ -12,7 +12,7 @@ describe("/api/contact_us", () => {
   const mockedCreateTransport = nodemailer.createTransport as jest.MockedFunction<typeof nodemailer.createTransport>
 
   const sendRequest = async () => {
-    const { req } = createMocks({
+    const req = createRequest({
       method: "POST",
       body: {
         recaptchaResponse: "someRecaptchaResponse",
