@@ -36,7 +36,8 @@ Zenorder offre un back-office permettant de personnaliser l'offre produits, d'ac
 Connecter Zenorder à HubRise permet à Zenorder de :
 
 - Envoyer les commandes à HubRise.
-- Recevoir les informations clients de HubRise.
+- Recevoir les commandes de HubRise.
+- Recevoir un catalogue de HubRise, avec support des variantes.
 
 Zenorder peut être connecté à HubRise depuis le back-office de Zenorder.
 
