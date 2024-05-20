@@ -96,7 +96,7 @@ WooCommerce supports two types of charges:
 - Shipping charges.
 - Additional fees.
 
-Both types can be sent to HubRise, when present in an order.
+Both types are sent to HubRise, when present in an order.
 
 ## Technical Reference
 
@@ -173,9 +173,9 @@ WooCommerce Bridge encodes all the available customer's details from WooCommerce
 
 ### Charges
 
-Charges encompass shipping and additional fees. The fields sent in the payloads are as follows:
+Charges encompass shipping and additional fees. The fields sent are the following:
 
-- `name`: The name of the charge, which is `Delivery charge` for shipping charges.
+- `name`: The name of the charge. For shipping charges, this is `Delivery charge`.
 - `ref`: For shipping charges, the ref code set from the WooCommerce Bridge configuration. For additional fees, this field is `null`.
 - `price`: The amount of the charge.
 
@@ -199,7 +199,7 @@ Charges encompass shipping and additional fees. The fields sent in the payloads 
 
 The discount applied to the order is passed in a single object in the HubRise `discounts` array.
 
-The available fields in the payload are the following:
+The fields sent are the following:
 
 - `name`: The name of the discount.
 - `price_off`: The total amount of the discount.
