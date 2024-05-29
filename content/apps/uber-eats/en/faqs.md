@@ -13,7 +13,6 @@ meta:
 - [How Do I Configure HubRise for Uber Eats Disposable Items to Show In My EPOS?](/apps/uber-eats/faqs/uber-eats-disposable-items)
 - [Can I Back Up My Uber Eats Menu Before a Catalog Push?](/apps/uber-eats/faqs/uber-eats-menu-backup)
 - [How to Create a Product With Variations in Uber Eats?](/apps/uber-eats/faqs/create-product-with-skus)
-- [Why Are My Orders Not Received on HubRise?](/apps/uber-eats/faqs/orders-not-received-missing-ref-codes)
 - [How to Create a Deal in Uber Eats?](/apps/uber-eats/faqs/create-deal-in-uber-eats)
 - [How Do I Find My Uber Eats UUID?](/apps/uber-eats/faqs/find-uber-eats-uuid)
 - [Can I Connect My Uber Eats Webstore to HubRise?](/apps/uber-eats/faqs/connect-webstore)
