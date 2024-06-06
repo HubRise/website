@@ -1,7 +1,7 @@
 ---
 title: Terminology
 path_override: terminology
-position: 9
+position: 10
 layout: documentation
 meta:
   title: Terminology | Uber Eats | HubRise

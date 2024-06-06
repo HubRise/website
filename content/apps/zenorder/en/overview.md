@@ -34,8 +34,9 @@ Zenorder incorporates a back office where you can customise the product offer, a
 
 Once connected to HubRise, Zenorder can be used to:
 
+- Pull orders from HubRise.
 - Push orders into HubRise.
-- Pull customer information from HubRise.
+- Pull a catalog from HubRise, with variants support.
 
 Zenorder can be connected to HubRise from the Zenorder back office.
 

@@ -90,7 +90,7 @@ Deliveroo Bridge maps HubRise deals to products with modifiers on Deliveroo.
 
 ### Images
 
-Deliveroo requires images to be 1200x800 pixels.
+Deliveroo requires images to be 1920x1080 pixels.
 
 ## Technical Reference
 

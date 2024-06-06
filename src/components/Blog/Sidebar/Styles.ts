@@ -81,6 +81,7 @@ export const ItemLink = styled(Link)<{ $isActive: boolean }>`
   @media (min-width: ${breakpoints.blogStickyMenu}) {
     padding: 0.5rem ${sizes.desktopPadding};
   }
+  ${mixin.clickable};
 
   color: ${({ $isActive }) => ($isActive ? colors.primary : colors.textDark)};
   ${mixin.linkOver(colors.primary)};

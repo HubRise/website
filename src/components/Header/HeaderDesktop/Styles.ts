@@ -24,6 +24,7 @@ export const Menu = styled.ul`
 `
 
 export const MenuItem = styled.li<{ $isActive: boolean }>`
+  ${mixin.clickable};
   ${mixin.dotSeparatedList("0.5rem")};
 
   ${({ $isActive }) =>

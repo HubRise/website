@@ -60,6 +60,7 @@ export const ReadMore = styled(Link)`
   color: ${colors.white};
   background: ${colors.textDark};
   border-radius: ${sizes.borderRadius};
+  ${mixin.clickable};
 
   ${mixin.buttonOver(colors.white, colors.primary)};
 

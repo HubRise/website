@@ -30,6 +30,7 @@ Connecting PAR PixelPoint to HubRise allows your EPOS to:
 
 - Pull orders from HubRise.
 - Pull customer information from HubRise.
+- Push a catalog into HubRise.
 
 PixelPoint Windows API can be connected to HubRise via the Slowey Systems support line.
 
