@@ -22,15 +22,18 @@ You can download your Lightspeed catalog to manage the items and the ref codes w
 
 To download the Lightspeed catalog, follow these steps:
 
-1. From your Lightspeed back office, select **Configuration**, then select **Items** > **Items**.
+1. From your Lightspeed back office, select **Menu management**, then select **Items**.
 1. Click the **Export** button.
    ![Export button in the items page of the Lightspeed back office](./images/006-2x-lightspeed-export-items.png)
-1. In the popup window, choose your operating system type: Mac or Windows (or Manual configuration), then click **Export**.
-   ![Choosing the operating system when exporting the catalog in Lightspeed](./images/007-2x-lightspeed-system-choice.png)
-1. After the export is complete, select **Click here to download the exported file** to download the CSV file with your menu.
-   ![Download items CSV](./images/008-2x-lightspeed-download-csv.png)
+1. On the popup window that appears, do the following:
+   1. Leave the default option selected: **Export Lightspeed formatted file**.
+   1. From the **File format** list, select the format for your output file. 
+   1. To confirm, click **Export**.
+   ![Choosing the operating system when exporting the catalog in Lightspeed](./images/007-2x-lightspeed-export-choice.png)
+1. When prompted, choose the location where you want to save the file.
 
-To check the ref codes for the items, you can open the downloaded CSV file in Excel or a text editor. The ref codes appear under the **SKU** column.
+To check the ref codes for the items, you can open the downloaded file in Excel or in a text editor.
+The ref codes appear under the **SKU** column.
 
 ## Find Ref Codes for Individual Items
 
@@ -40,8 +43,8 @@ You can find the ref codes for skus, options, deals, discounts, charges, service
 
 To find the ref codes for specific skus, options, discounts, and charges, follow these steps:
 
-1. From the top menu in your Lightspeed back office, select **Configuration**, then **Items** > **Items**.
-1. The ref codes appear under the **Code** column.
+1. From the menu in your Lightspeed back office, select **Menu management** > **Items**.
+1. On the **Items** page, the ref codes appear under the **SKU** column.
    ![](./images/009-2x-lightspeed-skus-options-codes.png)
 
 You can then copy the codes in the connected app. For detailed instructions, follow the documentation for the connected app in the HubRise website.
@@ -52,9 +55,9 @@ Note that charges and discounts must be created as items to be compatible with t
 
 Production instructions in Lightspeed can be mapped to HubRise options. To find the ref codes for production instructions, follow these steps:
 
-1. From your Lightspeed back office, select **Configuration**, then select **Settings** > **Production instructions**.
-1. To download the complete list of production instructions, click **Export to csv**.
-1. In the CSV file, ref codes appear under the **identifier** column.
+1. From the menu in your Lightspeed back office, select **Configuration** > **Production instructions**.
+2. To download the complete list of production instructions, click **Export to CSV**.
+3. In the CSV file, ref codes appear under the **identifier** column.
 
 When you map production instructions to connected apps, add `+` before the ref code. For example, if your instruction has ref code `52355651338378`, use `+52355651338378` to map it to connected apps.
 
@@ -68,12 +71,12 @@ When you map production instructions to connected apps, add `+` before the ref c
 
 Service types are called _account profiles_ on Lightspeed. To find the ref code for a specific service type, follow these steps:
 
-1. From your Lightspeed back office, select **Configuration**, then select **Settings** > **Account profiles**.
+1. From the menu in your Lightspeed back office, select **Configuration**, then select **Settings** > **Account profiles**.
 1. For each service type available under the **Name** column, you can find the corresponding ref code under the **Code** column.
 
 ### Payment Methods {#payment-methods}
 
 To find the ref code for a payment method, follow these steps:
 
-1. From your Lightspeed back office, select **Configuration**, then select **Settings** > **Payment methods**.
+1. From the menu in your Lightspeed back office, select **Configuration**, then select **Settings** > **Payment methods**.
 1. For each payment method available under the **Name** column, you can find the corresponding ref code under the **Code** column.

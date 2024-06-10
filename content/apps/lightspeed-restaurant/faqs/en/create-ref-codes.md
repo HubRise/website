@@ -22,7 +22,7 @@ Service types are called **Account profiles** on Lightspeed. To create a service
 
 1. From your Lightspeed back office, select **Configuration**, then select **Settings** > **Account profiles**.
 1. Click **Add an account profile**, then click **OK**.
-1. In the **Base options** section, specify the ref code for your service type in the **Code** field.
+1. In the **Base details** section, specify the ref code for your service type in the **Code** field.
 1. Fill in the other sections in the page as needed, then click **Save**.
 1. Repeat the process for all the service types you support on solutions you intend to connect.
 
@@ -42,7 +42,7 @@ To create a discount that is compatible with the HubRise data model, follow thes
 1. Click on the **Create** dropdown, and select **Single item**.
 1. In the **New item** page, enter the following values:
    - In the **Item name** field, enter the name of the discount.
-   - Click **Change price type** then select **Manually-entered negative price**.
+   - Click **Change price type**, then select **Manually-entered negative price** and click **Confirm**.
    - To use a specific ref code, click **Add custom SKU** and enter a ref code. Alternatively, a ref code will be automatically generated.
 1. Fill in the other sections in the page as needed, then click **Save**.
 1. Repeat the process for all the discounts you support on every solution.
@@ -55,7 +55,7 @@ To create a deal that is compatible with the HubRise data model, follow these st
 1. Click on the **Create** dropdown, and select **Single item**.
 1. In the **New item** page, enter the following values:
    - In the **Item name** field, enter the name of the deal.
-   - Click **Change price type** then select **No price**.
+   - Click **Change price type**, then select **No price** and click **Confirm**.
 1. Fill in the other sections in the page as needed, then click **Save**.
 1. Repeat the process for all the deals you support on every solution.
 
@@ -67,11 +67,10 @@ To create a charge, you need to create an item by following these steps:
 1. Click on the **Create** dropdown, and select **Single item**.
 1. In the **New item** page, enter the following values:
    - In the **Item name** field, enter the name of the charge.
-   - Click **Change price type** then select **Manually-entered price**.
+   - Click **Change price type**, then select **Manually-entered price** and click **Confirm**.
    - To use a specific ref code, click **Add custom SKU** and enter a ref code. Alternatively, a ref code will be automatically generated.
 1. Fill in the other sections in the page as needed, then click **Save**.
-1. Repeat the process for all the charges you support on every solution.
-2. 
+1. Repeat the process for all the charges you support on every solution. 
 
 ## Payment Methods
 
