@@ -56,8 +56,8 @@ Note that charges and discounts must be created as items to be compatible with t
 Production instructions in Lightspeed can be mapped to HubRise options. To find the ref codes for production instructions, follow these steps:
 
 1. From the menu in your Lightspeed back office, select **Configuration** > **Production instructions**.
-2. To download the complete list of production instructions, click **Export to CSV**.
-3. In the CSV file, ref codes appear under the **identifier** column.
+1. To download the complete list of production instructions, click **Export to CSV**.
+1. In the CSV file, ref codes appear under the **identifier** column.
 
 When you map production instructions to connected apps, add `+` before the ref code. For example, if your instruction has ref code `52355651338378`, use `+52355651338378` to map it to connected apps.
 
