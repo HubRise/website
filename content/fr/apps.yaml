@@ -202,6 +202,11 @@ content:
           title: TASK
           description: TASK est un logiciel de caisse conçu pour les acteurs internationaux de l'hôtellerie et de la restauration. Il propose des rapports en temps réel avec fonctionnalités de Business Intelligence, la gestion des stocks, ainsi que des solutions de commande via kiosques, plateformes en ligne et applications mobiles. TASK est particulièrement adapté pour la gestion de la relation client, de la fidélisation et des promotions.
           additional_info:
+        - website: https://tickeat.io
+          documentation: /fr/apps/tickeat
+          logo: tickeat.png
+          title: Tick'Eat
+          description: Tick'Eat est une caisse enregistreuse multiplateforme conçue par et pour des restaurateurs. Elle facilite la gestion des commandes sur place et en ligne, intègre des plateformes de livraison repas et permet une mise à jour facile des menus. Elle inclut également une fonction de dispatching pour les livreurs.
         - website: https://www.ultimapos.fr/
           documentation: /fr/apps/ultimapos
           logo: ultimapos.png

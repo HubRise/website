@@ -206,6 +206,11 @@ content:
           title: TASK
           description: TASK is an EPOS solution engineered for the global hospitality and dining sectors. It offers features such as real-time reporting enhanced with Business Intelligence capabilities, inventory management, and ordering solutions through kiosks, web platforms, and mobile apps. TASK excels in the management of customer relationship, loyalty, and promotions.
           additional_info:
+        - website: https://tickeat.io
+          documentation: /apps/tickeat
+          logo: tickeat.png
+          title: Tick'Eat
+          description: Tick'Eat is a multi-platform EPOS specifically designed by and for restaurateurs. It facilitates the management of on-site and online orders, integrates delivery platforms, offers easy menu updates, and includes a dispatch function for delivery drivers.
         - website: https://www.ultimapos.fr/
           documentation: /apps/ultimapos
           logo: ultimapos.png
