@@ -51,4 +51,4 @@ To solve the issue, make sure that all the products in your Deliveroo menu have 
 
 When auto-accept is not enabled, every order needs to be accepted manually on the Deliveroo tablet, otherwise it will be rejected by Deliveroo and not received on HubRise.
 
-To avoid this, we recommend enabling auto-accept. For more information, see [Can I Stop Using the Deliveroo Tablet?](/apps/deliveroo/faqs/deliveroo-tabletless).
+To avoid this, we recommend enabling auto-accept. For more information, see [Can I Stop Using the Deliveroo Tablet?](/apps/deliveroo/faqs/deliveroo-tabletless)

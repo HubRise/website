@@ -5,7 +5,7 @@ position: 9
 layout: documentation
 meta:
   title: Dépannage | Deliveroo Bridge | HubRise
-  description: Résolution des problèmes de connexion Deliveroo Bridge avec HubRise pour que votre point de vente et les autres applications fonctionnent de manière cohérente. Connectez vos applications et synchronisez vos données.
+  description: Résolution des problèmes de connexion entre Deliveroo Bridge et HubRise pour que votre logiciel de caisse et les autres apps fonctionnent de manière cohérente. Connectez les apps et synchronisez vos données.
 ---
 
 ## Problèmes de menus
@@ -26,7 +26,7 @@ Lorsque vous envoyez un menu, l'erreur suivante peut apparaître dans la répons
 }
 ```
 
-Cette erreur est dûe à un bug de Deliveroo, qui sera bientôt corrigé. La solution temporaire consiste à créer un nouveau menu dans Deliveroo.
+Cette erreur est due à un bug de Deliveroo, qui sera bientôt corrigé. La solution temporaire consiste à créer un nouveau menu dans Deliveroo.
 
 Pour créer un nouveau menu, procédez comme suit :
 
@@ -51,4 +51,5 @@ Pour résoudre ce problème, assurez-vous que tous les produits de votre menu De
 
 Lorsque l'acceptation automatique n'est pas activée, chaque commande doit être acceptée manuellement sur la tablette Deliveroo, sinon elle sera rejetée par Deliveroo et rien ne sera reçu sur HubRise.
 
-Pour éviter cela, nous recommandons d'activer l'acceptation automatique. Pour plus d'informations, voir [Puis-je arrêter d'utiliser la tablette Deliveroo ?](/apps/deliveroo/faqs/deliveroo-tabletless).
+Pour éviter cela, nous recommandons d'activer l'acceptation automatique. Pour plus d'informations, voir [Puis-je arrêter d'utiliser la tablette Deliveroo ?](/apps/deliveroo/faqs/deliveroo-tabletless)
+

@@ -5,7 +5,7 @@ position: 1
 layout: documentation
 meta:
   title: Trouver votre identifiant de restaurant | FAQ Deliveroo | HubRise
-  description: Guide pratique pour trouver votre identifiant de restaurant Deliveroo. Cet ID est nécessaire pour connecter votre magasin Deliveroo à HubRise et à votre EPOS.
+  description: Guide pratique pour trouver votre identifiant de restaurant Deliveroo. Cet ID est nécessaire pour connecter votre restaurant Deliveroo à HubRise et à votre logiciel de caisse.
 ---
 
 L'**identifiant de restaurant** est l'identificateur unique de votre restaurant sur Deliveroo. Il peut également être appelé **Identifiant de branche**, **Identifiant administrateur**, **Identifiant tablette**, ou **Identifiant point de vente**, selon le contexte. Cet identifiant est composé uniquement de caractères numériques et contient généralement 6 chiffres, bien qu'il puisse parfois en avoir 5.
@@ -25,7 +25,7 @@ Pour trouver votre identifiant de restaurant à partir de votre back-office Deli
 
 1. Connectez-vous à votre [back-office Deliveroo](https://restaurant-hub.deliveroo.net).
 1. Accédez à l'onglet **Accueil**, puis sélectionnez le point de vente et le compte appropriés dans les menus déroulants.
-1. Consultez l'adresse URL de la page et recherchez le paramètre intitulé `branchId`. Votre identifiant de restaurant Deliveroo est le numéro qui suit immédiatement le signe `=`. Si, par exemple, l'adresse URL est `https://restaurant-hub.deliveroo.net/analytics?branchId=278233&dateRangePreset=last_7_days&orgId=190921`, l'identifiant de restaurant Deliveroo est `278233`.
+1. Dans l'adresse URL de la page, recherchez le paramètre intitulé `branchId`. Votre identifiant de restaurant Deliveroo est le numéro qui suit immédiatement le signe `=`. Si, par exemple, l'adresse URL est `https://restaurant-hub.deliveroo.net/analytics?branchId=278233&dateRangePreset=last_7_days&orgId=190921`, l'identifiant de restaurant Deliveroo est `278233`.
 
 ![Identifiant du restaurant Deliveroo contenu dans l'adresse URL du back-office](./images/011-deliveroo-branchid.png)
 
@@ -33,7 +33,7 @@ Si vous ne trouvez pas votre identifiant de restaurant, contactez votre gestionn
 
 ## Option 3 - Depuis le code source du site Deliveroo
 
-Les utilisateurs un peu plus techniques peuvent trouver l'identifiant du restaurant Deliveroo dans le code source de la page magasin sur Deliveroo :
+Les utilisateurs un peu plus techniques peuvent trouver l'identifiant du restaurant Deliveroo dans le code source de la page du restaurant sur Deliveroo :
 
 - Ouvrez la page du restaurant Deliveroo dans un navigateur.
 - Faites un clic droit sur la page et sélectionnez **Afficher le source de la page**.
