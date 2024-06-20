@@ -20,6 +20,7 @@ import Details from "./components/Details"
 import { headerGenerate } from "./components/Headers"
 import Img from "./components/Img"
 import InlineImage from "./components/InlineImage"
+import Inset from "./components/Inset"
 import Label from "./components/Label"
 import Pre from "./components/Pre"
 import Table from "./components/Table"
@@ -45,6 +46,7 @@ export const renderDocumentationMdx = async (
       ...headerGenerate([`h2`, `h3`, `h4`]),
       img: Img,
       InlineImage,
+      Inset: ({ children }) => <Inset>{children}</Inset>,
       Label,
       Link: ({ href, children }) => <NextLink href={href}>{children}</NextLink>,
       pre: Pre,
