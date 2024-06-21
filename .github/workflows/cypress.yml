@@ -4,6 +4,7 @@ on: push
 jobs:
   cypress:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     env:
       # Default is 4_000 ms.
