@@ -10,8 +10,12 @@ meta:
 
 HubRise et Tick'Eat utilisent chacun leur propre terminologie. Un même concept peut donc exister sous une désignation différente dans chacune des solutions. Le tableau de correspondance ci-dessous indique ces différences.
 
-| Tick'Eat   | HubRise        | Description                                                                 |
-|------------|----------------|-----------------------------------------------------------------------------|
-| Restaurant | Point de vente | Plusieurs sites géographiques d'un même restaurant                          |
-| Étape      | Ligne          | Promotions avec différents choix, comme une formule entrée, plat et dessert |
-| Ref        | sku            | Code ref d'un produit ou d'une fonctionnalité                               |
+| Tick'Eat                 | HubRise             | Description                                                                   |
+| ------------------------ | ------------------- | ----------------------------------------------------------------------------- |
+| Ref                      | Code ref            | Code produit.                                                                 |
+| Variation ou Déclinaison | SKU                 | Une variante de produit, telle que la taille ou la couleur.                   |
+| Option                   | Liste d'options     | Groupe d'options, comme la liste des sauces disponibles.                      |
+| Moyen de paiement        | Méthode de paiement | Méthode utilisée pour payer la commande.                                      |
+| Menu                     | Promotion           | Offre spéciale sur des produits.                                              |
+| Étape de menu            | Ligne de promotion  | Chacun des choix d'une promotion, comme le choix d'une pizza ou d'un dessert. |
+| Restaurant               | Point de vente      | Le restaurant proprement dit.                                                 |

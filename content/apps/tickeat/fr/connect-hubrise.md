@@ -20,8 +20,8 @@ Pour connecter Tick'Eat à HubRise, suivez ces étapes :
 
 1. Depuis le back-office de Tick'Eat, cliquez sur l'icône de configuration représentée par une roue dentée.
 1. Rendez-vous sur l'onglet **Restaurant**.
-1. Choisir le restaurant que vous souhaitez connecter. 
-1. Cliquez sur le bouton **Se connecter à HubRise**, puis sur **Connecter** pour confirmer. 
+1. Choisir le restaurant que vous souhaitez connecter.
+1. Cliquez sur le bouton **Se connecter à HubRise**, puis sur **Connecter** pour confirmer.
 1. Vous êtes redirigé vers l'interface HubRise. Si c'est votre première connexion, créez un compte HubRise. Pour plus d'information, consultez notre [Guide de démarrage](/docs/get-started).
 1. Si vous gérez plusieurs points de vente, choisissez celui que vous souhaitez connecter. Pour les points de vente avec plusieurs listes de clients ou catalogues, cliquez sur **Suivant** pour accéder aux listes déroulantes correspondantes, puis faites votre sélection.
 1. Cliquez sur **Autoriser**.
@@ -45,6 +45,6 @@ L'ajout d'un utilisateur est le moyen le plus sûr de donner accès à un tiers.
 1. Rendez-vous sur l'onglet **Restaurant**.
 1. Choisir le restaurant que vous souhaitez connecter.
 1. Cliquez sur le bouton **Déconnecter** et de nouveau sur **Déconnecter** pour confirmer.
-2. Tick'Eat est maintenant déconnecté de HubRise.
+1. Tick'Eat est maintenant déconnecté de HubRise.
 
 Vous pouvez aussi bloquer les échanges de données entre Tick'Eat et HubRise, ou déconnecter Tick'Eat, depuis le back office de HubRise. Pour plus d'information, voir [Bloquer ou déconnecter une application](/docs/connections#block-or-disconnect).

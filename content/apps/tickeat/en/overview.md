@@ -27,13 +27,13 @@ app_info:
 
 ## Description
 
-Tick'Eat is a multi-platform EPOS solution designed by and for restaurateurs. Compatible with Android, iOS, tablets, smartphones and PC, it offers remarkable flexibility. Tick’Eat includes all the features and services needed for an optimised restaurant management, without the need to subscribe to additional options or third-party solutions.
+Tick'Eat is a multi-platform EPOS solution designed by and for restaurateurs, compatible with Android, iOS, tablets, phones, and PCs.
 
-Tick’Eat helps manage on-site orders, with ordering at the counter, at the table by the waiter, or autonomously via a self-ordering kiosk or the client's own smartphone using QR codes or NFC.
+Tick’Eat includes the features and services necessary for managing your establishment without the need to subscribe to additional options or third-party solutions.
 
-Tick'Eat also facilitates the management of online orders via food ordering and delivery platforms such as Uber Eats, Deliveroo and Just Eat, as well as those coming from your own online ordering solution. The intuitive Tick'Eat user interface helps to ease your menus updates.
+Tick’Eat can handle on-site and online orders via Uber Eats, Deliveroo, Just Eat, or a white-label online ordering solution. You can also connect self ordering kiosks or a mobile app operating with QR codes or NFC. Tick'Eat's user interface allows for intuitive menu updates and their synchronisation with online ordering platforms.
 
-A dispatching solution helps you organise order deliveries with your own delivery staff. From the EPOS, a delivery driver is assigned and the client is notified when the order is on its way.
+A dispatching solution helps organise order deliveries with the restaurant’s fleet of delivery drivers: the EPOS assigns a driver, and the customer is notified when their order is dispatched.
 
 ## Integration Features
 

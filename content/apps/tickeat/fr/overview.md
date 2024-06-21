@@ -25,19 +25,17 @@ app_info:
 
 ---
 
-
 ## Description
 
-Tick'Eat est une caisse enregistreuse multiplateforme conçue par et pour des restaurateurs. Compatible avec Android, iOS, tablettes, téléphones et PC, elle offre une flexibilité notable. Tick’Eat inclut toutes les fonctionnalités et services nécessaires pour une gestion optimisée, sans nécessité de souscrire à des options supplémentaires, ou à des solutions tierces. 
+Tick'Eat est une caisse enregistreuse multiplateforme conçue par et pour des restaurateurs, compatible avec Android, iOS, tablettes, téléphones et PC.
 
-Tick’Eat permet de gérer les commandes sur place, avec prise de commande au comptoir, à table par votre serveur, ou en toute autonomie par le biais d'une borne de commande ou du smartphone du client via des QR codes ou NFC.
+Tick’Eat inclut les fonctionnalités et services nécessaires pour la gestion de votre enseigne, sans nécessité de souscrire à des options supplémentaires, ou à des solutions tierces.
 
-Tick'Eat facilite également la gestion des commandes en ligne provenant des plateformes de commande et de livraison de repas telles que UberEats, Deliveroo et Just Eat, ainsi que celles émanant de votre propre solution de commande en ligne. 
+Tick’Eat peut gérer les commandes sur place et en ligne via Uber Eats, Deliveroo, Just Eat ou une solution de commande en ligne en marque blanche. On peut également connecter des bornes de commande pour les clients, ou une application mobile fonctionnant par QR code ou NFC. L'interface utilisateur de Tick'Eat permet une mise à jour intuitive des menus, et leur remontée vers les plateformes de commande en ligne.
 
-L'interface utilisateur intuitive de Tick'Eat permet une mise à jour facile de vos menus. 
+Une solution de dispatching permet d'organiser la livraison des commandes avec la flotte de livreurs du restaurant : la caisse affecte un livreur et le client est notifié du départ de sa commande.
 
-Une solution de dispatching vous aide à organiser la livraison des commandes avec votre propre flotte de livreurs. Depuis la caisse, un livreur est affecté et le client est notifié du départ de sa commande.
-
+Tick'Eat est une caisse enregistreuse multiplateforme conçue par et pour des restaurateurs, compatible avec Android, iOS, tablettes, téléphones et PC.
 
 ## Fonctionnalités de l'intégration
 
