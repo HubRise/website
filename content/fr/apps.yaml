@@ -206,7 +206,7 @@ content:
           documentation: /fr/apps/tickeat
           logo: tickeat.png
           title: Tick'Eat
-          description: Tick'Eat est une caisse enregistreuse multiplateforme conçue par et pour des restaurateurs. Elle facilite la gestion des commandes sur place et en ligne, intègre des plateformes de livraison repas et permet une mise à jour facile des menus. Elle inclut également une fonction de dispatching pour les livreurs.
+          description: Tick'Eat est une caisse enregistreuse multiplateforme conçue par et pour des restaurateurs. Elle permet la gestion des commandes sur place et en ligne, y compris les commandes des plateformes de livraison de repas, et permet une mise à jour facile des menus. Elle inclut également une fonction de dispatching pour les livreurs.
         - website: https://www.ultimapos.fr/
           documentation: /fr/apps/ultimapos
           logo: ultimapos.png

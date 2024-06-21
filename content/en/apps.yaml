@@ -210,7 +210,7 @@ content:
           documentation: /apps/tickeat
           logo: tickeat.png
           title: Tick'Eat
-          description: Tick'Eat is a multi-platform EPOS specifically designed by and for restaurateurs. It facilitates the management of on-site and online orders, integrates delivery platforms, offers easy menu updates, and includes a dispatch function for delivery drivers.
+          description: Tick'Eat is a multi-platform EPOS specifically designed by and for restaurateurs. It handles on-site and online orders, including orders from delivery platforms, offers easy menu updates, and includes a dispatch function for delivery drivers.
         - website: https://www.ultimapos.fr/
           documentation: /apps/ultimapos
           logo: ultimapos.png
