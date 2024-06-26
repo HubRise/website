@@ -98,6 +98,5 @@ Dans la page de configuration de Uber Eats Bridge, utilisez les codes ref suivan
 | Paiements           | Code ref paiement en ligne                   | Créer un règlement `Uber Eats` et utiliser son identifiant.        |
 | Paiements           | Code ref paiement en espèces                 | (laisser vide)                                                     |
 | Clients             | Dupliquer le code d'accès téléphone [...]    | Cocher cette case                                                  |
-| Menu                | Activer les notes de préparation [...]       | Cocher si vous souhaitez les activer                               |
 
 (\*) Applicable uniquement si vous proposez des jetables, tels que des couverts, serviettes, etc.
