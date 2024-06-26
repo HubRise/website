@@ -113,7 +113,6 @@ Dans la page de configuration de Uber Eats Bridge, utilisez les paramètres suiv
 | Paiements           | Code ref paiement en ligne                        | Créer un type de règlement dans Clyo Systems et utiliser son code ref.            |
 | Paiements           | Code ref paiement en espèces                      | (laisser vide)                                                                    |
 | Statuts de commande | Marquer les commandes comme Acceptées             | `lorsque leur statut HubRise passe à "Reçue"`                                     |
-| Menu                | Activer les notes de préparation sur les articles | Cocher si vous souhaitez les activer / Laisser la case décochée                   |
 
 (\*) Applicable uniquement si vous proposez des jetables, tels que des couverts, serviettes, etc.
 

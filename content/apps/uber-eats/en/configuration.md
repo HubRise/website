@@ -80,12 +80,6 @@ If your catalog includes variants, you have the option to select which ones to u
 
 Select the **Enable automatic catalog push** checkbox to synchronise your HubRise catalog with Uber Eats whenever it gets updated.
 
-### Customer Notes
-
-Customer notes for individual products can be activated by contacting Uber Eats support. This integration feature is supported, but it cannot be activated by HubRise.
-
-If you enable customer notes, make sure that your connected EPOS supports product level customer notes.
-
 ## Location {#location}
 
 ![Uber Eats Bridge configuration page, Location section](./images/015-uber-eats-configuration-page-location.png)
