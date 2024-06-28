@@ -47,9 +47,9 @@ Pour retrouver le code ref d'un produit, suivez ces étapes :
 
 Les SKUs dans HubRise correspondent aux ... dans SOLUTION. Pour retrouver le code ref d'une SKU, suivez ces étapes :
 
----
+**OU**
 
-SOLUTION ne permet pas de créer de SKU. Pour remplacer cette fonctionnalité, vous devez associer chaque SKU d'un produit HubRise avec un produit distinct dans SOLUTION.
+SOLUTION ne permet pas de créer de SKUs. Pour remplacer cette fonctionnalité, vous devez associer chaque SKU d'un produit HubRise avec un produit distinct dans SOLUTION.
 
 ## Options
 
@@ -61,16 +61,28 @@ SOLUTION ne permet pas de créer de SKU. Pour remplacer cette fonctionnalité, v
 
 ## Promotions
 
-...
+Les promotions dans HubRise correspondent aux ... dans SOLUTION. Pour retrouver le code ref d'une promotion, suivez ces étapes : ...
+
+**OU**
+
+Les promotions dans HubRise sont les offres spéciales qui s'appliquent à certains articles. Les promotions n'ont pas de code ref dans SOLUTION : elles sont identifiées par leur nom.
 
 ## Remises
 
-...
+Les remises dans HubRise correspondent aux ... dans SOLUTION. Pour retrouver le code ref d'une remise, suivez ces étapes : ...
+
+**OU**
+
+Les remises dans HubRise sont les offres spéciales qui s'appliquent à l'ensemble de la commande. Les remises n'ont pas besoin de code ref dans SOLUTION : elles sont identifiées par leur nom.
 
 ## Méthodes de paiement
 
-...
+Les méthodes de paiement dans HubRise correspondent aux ... dans SOLUTION. Pour retrouver leur code ref, suivez ces étapes : ...
 
 ## Types de service
 
-...
+Les types de service correspondent aux ... dans SOLUTION. Pour retrouver le code ref d'un type de service, suivez ces étapes : ...
+
+**OU**
+
+Les types de service dans HubRise indiquent l'origine d'une commande, ou la manière dont une commande doit être produite ou livrée. SOLUTION reconnaît les codes ref des types de service suivants : ...

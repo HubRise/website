@@ -32,11 +32,11 @@ Additionally, from this section, you can choose to categorise orders fulfilled b
 
 ### Special Items
 
-By default, Uber Eats activates a checkbox in the checkout flow for customers to **Request utensils, straws, etc.**, as shown in the screenshot below.
+Uber Eats offers an option to include a checkbox in the checkout flow for customers to **Request utensils, napkins, etc.**, as shown in the image below.
 
 ![Disposable items checkbox in Uber Eats checkout](./images/009-disposable-items.png)
 
-You can request Uber Eats to disable this functionality. If you prefer to keep it, create a "Disposable items" product in your EPOS, and use its ref code in the **Disposable items ref code** field.
+To enable this feature, create a "Disposable items" product in your EPOS, use its ref code in the **Disposable items ref code** field, and request Uber Eats to turn on this option.
 
 ### Discounts
 
@@ -79,12 +79,6 @@ If your catalog includes variants, you have the option to select which ones to u
 ### Automatic Catalog Push
 
 Select the **Enable automatic catalog push** checkbox to synchronise your HubRise catalog with Uber Eats whenever it gets updated.
-
-### Customer Notes
-
-Customer notes for individual products can be activated by contacting Uber Eats support. This integration feature is supported, but it cannot be activated by HubRise.
-
-If you enable customer notes, make sure that your connected EPOS supports product level customer notes.
 
 ## Location {#location}
 
