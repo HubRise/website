@@ -18,10 +18,6 @@ Pour plus d'informations, consultez les pages d'aide de ces plateformes sur notr
 
 En fonction de vos besoins, vous devrez créer des méthodes de paiement spécifiques aux plateformes dans Clyo Systems.
 
-### PRODUITS, PROMOTIONS, ...
-
-Décrire les éléments à créer avant de connecter les plateformes de livraison de repas.
-
 ## Deliveroo
 
 Pour recevoir les commandes de Deliveroo dans Clyo, vous devez d'abord connecter Deliveroo Bridge, une application incluse dans votre abonnement HubRise. Pour plus d'informations sur Deliveroo Bridge, consultez la [documentation de Deliveroo Bridge](/apps/deliveroo/overview).
