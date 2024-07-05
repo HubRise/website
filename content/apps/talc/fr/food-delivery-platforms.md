@@ -18,19 +18,19 @@ Pour plus d'informations, consultez les pages d'aide de ces plateformes sur notr
 
 ### Codes ref de types de service {#service-type-refs}
 
-Si vous utilisez plusieurs comptes sur les plateformes, vous pouvez différencier les commandes provenant de chaque compte en utilisant des codes ref de types de service. Ce sont des champs libres, configurables au niveau de chaque type de service et de chaque compte de plateforme. Ils sont affichés sur les reçus de Delivery System.
+Si vous utilisez plusieurs comptes sur les plateformes, vous pouvez différencier les commandes provenant de chaque compte en utilisant des codes ref de types de service. Ce sont des champs libres, configurables au niveau de chaque type de service et de chaque compte de plateforme. Ils apparaissent sur les reçus de Delivery System.
 
 Si vous n'avez qu'un seul compte sur chaque plateforme, vous pouvez laisser ces champs vides.
 
 ### Frais de livraison et autres frais {#frais}
 
-Les frais sont des articles dans Delivery System. Vous devez donc les créer préalablement dans Delivery System et utiliser leur code ref dans la configuration du bridge.
+Les frais sont des articles dans Delivery System. Vous devez les créer en tant que produits dans Delivery System et utiliser leurs codes ref dans la configuration du bridge.
 
 ### Moyens de paiement {#payment-methods}
 
-Les moyens de paiement sont des articles dans Delivery System. Vous devez donc les créer préalablement dans Delivery System et utiliser leur code ref dans la configuration du bridge.
+Les moyens de paiement sont des articles dans Delivery System. Vous devez les créer en tant que produits dans Delivery System et utiliser leurs codes ref dans la configuration du bridge.
 
-Pour le paiement en ligne, créez un article avec le code ref **CBL**, afin que ces commandes soient traitées comme des commandes payées en ligne.
+Pour le paiement en ligne, créez un produit avec le code ref **CBL**. Il s'agit d'un code spécial qui indique à Delivery System de marquer la commande comme payée en ligne.
 
 ## Deliveroo
 
