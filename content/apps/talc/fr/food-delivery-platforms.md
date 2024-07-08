@@ -22,7 +22,7 @@ Si vous utilisez plusieurs comptes sur les plateformes, vous pouvez différencie
 
 Si vous n'avez qu'un seul compte sur chaque plateforme, vous pouvez laisser ces champs vides.
 
-### Frais de livraison et autres frais {#frais}
+### Frais de livraison et autres frais {#charges}
 
 Les frais sont des articles dans Delivery System. Vous devez les créer en tant que produits dans Delivery System et utiliser leurs codes ref dans la configuration du bridge.
 
@@ -47,9 +47,9 @@ Dans la page de configuration de Deliveroo Bridge, utilisez les paramètres suiv
 | Types de service    | Envoyer les commandes livrées par Deliveroo [...] | `commandes en livraison`                                             |
 | Articles spéciaux   | Code ref option consigne                          | Créer une option dans Delivery System et utiliser son code ref. (\*) |
 | Remises             | Code ref remise                                   | (laisser vide)                                                       |
-| Frais               | Code ref frais de livraison                       | Voir [Frais de livraison et autres frais](#frais)                    |
-| Frais               | Code ref surcharge                                | Voir [Frais de livraison et autres frais](#frais)                    |
-| Frais               | Code ref frais d'emballage                        | Voir [Frais de livraison et autres frais](#frais)                    |
+| Frais               | Code ref frais de livraison                       | Voir [Frais de livraison et autres frais](#charges)                  |
+| Frais               | Code ref surcharge                                | Voir [Frais de livraison et autres frais](#charges)                  |
+| Frais               | Code ref frais d'emballage                        | Voir [Frais de livraison et autres frais](#charges)                  |
 | Paiements           | Code ref paiement en ligne                        | Voir [Moyens de paiement](#payment-methods)                          |
 | Paiements           | Code ref paiement en espèces                      | Voir [Moyens de paiement](#payment-methods)                          |
 | Clients             | Dupliquer le code d'accès téléphone [...]         | Laisser la case décochée                                             |
@@ -79,8 +79,8 @@ Dans la page de configuration de Just Eat Takeaway Bridge, utilisez les paramèt
 | Types de service    | Code ref à emporter                                   | Voir [Codes ref de types de service](#service-type-refs) |
 | Types de service    | Envoyer les commandes livrées par la plateforme [...] | `commandes en livraison`                                 |
 | Remises             | Code ref remise                                       | (laisser vide)                                           |
-| Frais               | Code ref frais de livraison                           | Voir [Frais de livraison et autres frais](#frais)        |
-| Frais               | Code ref frais de service                             | Voir [Frais de livraison et autres frais](#frais)        |
+| Frais               | Code ref frais de livraison                           | Voir [Frais de livraison et autres frais](#charges)      |
+| Frais               | Code ref frais de service                             | Voir [Frais de livraison et autres frais](#charges)      |
 | Paiements           | Code ref paiement en ligne                            | Voir [Moyens de paiement](#payment-methods)              |
 | Paiements           | Code ref paiement en espèces                          | Voir [Moyens de paiement](#payment-methods)              |
 
@@ -99,11 +99,11 @@ Dans la page de configuration de Just Eat Flyt Bridge, utilisez les paramètres 
 | Types de service    | Envoyer les commandes livrées par la plateforme [...] | `commandes en livraison`                                             |
 | Articles spéciaux   | Code ref option consigne                              | Créer une option dans Delivery System et utiliser son code ref. (\*) |
 | Remises             | Code ref remise                                       | (laisser vide)                                                       |
-| Frais               | Code ref frais de livraison                           | Voir [Frais de livraison et autres frais](#frais)                    |
-| Frais               | Code ref surcharge                                    | Voir [Frais de livraison et autres frais](#frais)                    |
-| Frais               | Code ref frais d'emballage                            | Voir [Frais de livraison et autres frais](#frais)                    |
-| Frais               | Code ref pourboire livreur                            | Voir [Frais de livraison et autres frais](#frais)                    |
-| Frais               | Code ref autres frais                                 | Voir [Frais de livraison et autres frais](#frais)                    |
+| Frais               | Code ref frais de livraison                           | Voir [Frais de livraison et autres frais](#charges)                  |
+| Frais               | Code ref surcharge                                    | Voir [Frais de livraison et autres frais](#charges)                  |
+| Frais               | Code ref frais d'emballage                            | Voir [Frais de livraison et autres frais](#charges)                  |
+| Frais               | Code ref pourboire livreur                            | Voir [Frais de livraison et autres frais](#charges)                  |
+| Frais               | Code ref autres frais                                 | Voir [Frais de livraison et autres frais](#charges)                  |
 | Paiements           | Code ref paiement en ligne                            | Voir [Moyens de paiement](#payment-methods)                          |
 | Paiements           | Code ref paiement en espèces                          | Voir [Moyens de paiement](#payment-methods)                          |
 | Clients             | Dupliquer le code d'accès téléphone [...]             | Laisser la case décochée                                             |
@@ -126,9 +126,9 @@ Dans la page de configuration de Uber Eats Bridge, utilisez les paramètres suiv
 | Types de service    | Envoyer les commandes livrées par Uber [...] | `commandes en livraison`                                                        |
 | Articles spéciaux   | Code ref jetables                            | Créer un article `Jetables` dans Delivery System et utiliser son code ref. (\*) |
 | Remises             | Code ref remise                              | (laisser vide)                                                                  |
-| Frais               | Code ref frais de livraison                  | Voir [Frais de livraison et autres frais](#frais)                               |
-| Frais               | Code ref supplément petite commande          | Voir [Frais de livraison et autres frais](#frais)                               |
-| Frais               | Code ref pourboire                           | Voir [Frais de livraison et autres frais](#frais)                               |
+| Frais               | Code ref frais de livraison                  | Voir [Frais de livraison et autres frais](#charges)                             |
+| Frais               | Code ref supplément petite commande          | Voir [Frais de livraison et autres frais](#charges)                             |
+| Frais               | Code ref pourboire                           | Voir [Frais de livraison et autres frais](#charges)                             |
 | Paiements           | Code ref paiement en ligne                   | Voir [Moyens de paiement](#payment-methods)                                     |
 | Paiements           | Code ref paiement en espèces                 | Voir [Moyens de paiement](#payment-methods)                                     |
 | Clients             | Dupliquer le code d'accès téléphone [...]    | Laisser la case décochée                                                        |
