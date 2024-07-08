@@ -79,9 +79,13 @@ Une option dans HubRise correspond à un article option dans Kezia II. Pour vér
 
 Pour trouver le code ref de cet article, suivez la procédure décrite dans la partie [Produits](/apps/kezia/map-ref-codes#products).
 
+## Frais
+
+Les frais dans HubRise sont des articles dans Kezia II. Pour retrouver le code ref d'un article, suivez la procédure décrite dans la partie [Produits](/apps/kezia/map-ref-codes#products).
+
 ## Remises
 
-Une remise dans Kezia II peut uniquement être créée lorsque le vendeur enregistre une commande. Les remises ne peuvent donc pas être synchronisées avec HubRise.
+Les remises dans Kezia II sont appliquées à des commandes spécifiques et ne sont pas créées à l'avance. Elles n'ont pas de code ref dans HubRise.
 
 ## Promotions
 
