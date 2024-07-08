@@ -22,7 +22,7 @@ En fonction de vos besoins, vous devez créer des articles dans Kezia II pour re
 
 ### Moyens de paiement {#payment-methods}
 
-Vous devez indiquer un code ref de moyen de paiement pour les paiements en ligne. Pour obtenir ce code ref, contactez le [support Kezia II](licencekezia@jdc.fr).
+Vous devez indiquer un code ref de moyen de paiement pour les paiements en ligne. Pour obtenir ce code ref, contactez le [support Kezia II](hotline.keziacloud@jdc.fr).
 
 ## Deliveroo
 

@@ -40,7 +40,7 @@ Pour faciliter la prise en charge de vos demandes de support, nous vous recomman
 Pour donner accès à Kezia II, procédez comme suit :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
-1. Dans la section **Permissions**, ajoutez licencekezia@jdc.fr en sélectionnant l'option **Manager** dans la liste déroulante des rôles.
+1. Dans la section **Permissions**, ajoutez hotline.keziacloud@jdc.fr en sélectionnant l'option **Manager** dans la liste déroulante des rôles.
 1. Cliquez sur l'icône **+** pour ajouter le nouvel utilisateur.
 
 L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre point de vente. Le partage de mot de passe est déconseillé pour des raisons de sécurité.
