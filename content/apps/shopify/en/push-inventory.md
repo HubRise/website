@@ -12,7 +12,19 @@ Shopify Bridge can synchronise your HubRise inventory with Shopify.
 
 ## Inventory Synchronisation
 
-Some EPOS and inventory management solutions can update the inventory data in HubRise. When the HubRise inventory is updated, Shopify Bridge can automatically adjust your inventory counters in Shopify. To check whether a specific app supports inventory synchronisation, refer to its documentation on our [Apps page](/apps). Alternatively, you can manage your inventory using [OrderLine](/apps/orderline/overview).
+When HubRise inventory is updated, Shopify Bridge can automatically adjust the inventory counters in Shopify.
+
+Only items with the **Track Quantity** checkbox enabled in Shopify are updated. To check if this option is enabled for a specific product, follow these steps:
+
+1. Log in to your Shopify account.
+2. Open the **Products** page.
+3. Select a product.
+4. If the product has variants, select a variant; otherwise, proceed to the next step.
+5. In the **Inventory** section, ensure that the **Track Quantity** checkbox is activated.
+
+![Track Quantity](./images/018-shopify-track-quantity.png)
+
+Some EPOS and inventory management solutions can update the inventory data in HubRise. To check whether a specific app supports inventory synchronisation, refer to its documentation on our [Apps page](/apps). Alternatively, you can manage your inventory using [OrderLine](/apps/orderline/overview).
 
 ## Manual Inventory Push
 
