@@ -40,7 +40,7 @@ Before we begin, make sure you have:
 2. Set up a new OAuth 2.0 connection with the following parameters:
    - Authorisation URL: `https://manager.hubrise.com/oauth2/v1/authorize`
    - Token URL: `https://manager.hubrise.com/oauth2/v1/token`
-   - Scope: `account[account.read]`
+   - Scope: `account[orders.read]`
 3. Authorise the connection.
 
 ## Step 3: Retrieve the Access Token
@@ -64,7 +64,7 @@ Due to a current limitation in Make.com, we need to manually retrieve the access
 1. In Make.com, create a new **HTTP** module in a separate scenario.
 2. Configure it as follows:
    - URL: `https://api.hubrise.com/v1/callbacks`
-   - Method: POST
+   - Method: `POST`
    - Body:
      ```json
      {
@@ -78,11 +78,33 @@ Due to a current limitation in Make.com, we need to manually retrieve the access
 3. Run this scenario once to register the webhook.
 4. Verify in the HubRise back office that the callback has been registered under the Make.com connection.
 
+[Previous content remains the same]
+
 ## Step 6: Create the Order Processing Scenario
 
 1. In Make.com, create a new scenario named "Get orders from webhook".
-2. Add a webhook module and connect it to a Google Sheets module.
-3. Configure the Google Sheets module to add a new row for each order, including relevant information such as order date, total, and status.
+
+2. Add a **Webhooks** module:
+
+   - Add a module **Webhooks** > **Custom webhook**.
+   - Select the webhook you created on previous step.
+
+3. Add a **Google Sheets** module and connect it to the webhook:
+
+   - Select the **Add a Row** action
+   - Connect your Google account if you haven't already
+   - Select the spreadsheet and worksheet where you want to log the orders
+   - In the "Values" section, map the incoming data from the webhook to your spreadsheet columns. Here's an example mapping:
+     - A: `{{1.new_state.created_at}}` (Order creation date)
+     - B: `{{1.new_state.id}}` (HubRise order ID)
+     - C: `{{1.new_state.customer.first_name}}` (Customer's first name)
+     - D: `{{1.new_state.customer.last_name}}` (Customer's last name)
+     - E: `{{1.new_state.total}}` (Order total)
+     - F: `{{1.new_state.status}}` (Order status)
+
+4. Save your scenario and turn it on.
+
+Note: The exact data fields available may vary depending on your HubRise configuration. Adjust the mappings as necessary to fit your needs and available data.
 
 ## Step 7: Test the Setup
 
