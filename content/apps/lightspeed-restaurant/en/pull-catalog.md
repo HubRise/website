@@ -10,12 +10,20 @@ meta:
 
 This page describes how to pull a catalog from Lightspeed into HubRise and what information is received in HubRise.
 
-## Pull the Catalog into HubRise
+## Pulling the Catalog into HubRise
 
-To pull a catalog from Lightspeed, follow these steps:
+There are two methods to pull a catalog from Lightspeed into HubRise:
 
-1. From the Lightspeed Restaurant Bridge main page, select the **Actions** tab, then click **Pull catalog**.
-2. Click **Confirm** when prompted.
+- Using Lightspeed Restaurant Bridge
+- Using a third-party solution
+
+### Pulling from Lightspeed Restaurant Bridge
+
+To pull a catalog using the Lightspeed Restaurant Bridge, follow these steps:
+
+1. From the Lightspeed Restaurant Bridge main page, select the **Actions** tab.
+2. Click **Pull catalog**.
+3. Click **Confirm** when prompted.
 
 ---
 
@@ -23,7 +31,17 @@ To pull a catalog from Lightspeed, follow these steps:
 
 ---
 
-Depending on how large your catalog is, it might take a few minutes for your HubRise catalog to be fully updated.
+Depending on the size of your catalog, it might take a few minutes for your HubRise catalog to be fully updated.
+
+### Pulling from a Third-Party Solution
+
+Some integrated solutions, such as digital ordering systems, offer a catalog pull feature. If your solution supports this feature, you will typically find a button labeled "Update Catalog" or something similar in their back office.
+
+To use this feature:
+
+1. Check with your solution provider to see if they support catalog pulls from Lightspeed.
+2. If supported, look for the catalog update option in your solution's back office.
+3. Use this option whenever you want. The catalog pull may take a few minutes to complete, depending on the size of your catalog.
 
 ## Information Sent to HubRise
 
