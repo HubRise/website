@@ -273,6 +273,37 @@ Typical workflow:
 
 ## Conventions for EPOS
 
+### Location custom fields
+
+The following custom field can be attached to a location:
+
+| Custom field        | Encoding | Description                                                                                     |
+| ------------------- | -------- | ----------------------------------------------------------------------------------------------- |
+| `epos.push_catalog` | `number` | When this value changes, the EPOS pushes its catalog to HubRise. Only works for supported EPOS. |
+
+Typical uses:
+
+- The `epos.push_catalog` custom field triggers the EPOS to push its catalog to HubRise when its value changes, applicable for supported EPOS systems. It is recommended to increment this value or set it to 0 the first time.
+
+<details>
+
+<summary>Example of a location with EPOS information</summary>
+
+```json
+{
+  "id": "3r4s3-1",
+  "name": "Paris",
+  ...,
+  "custom_fields": {
+    "epos": {
+      "push_catalog": 11
+    }
+  }
+}
+```
+
+</details>
+
 ### Order custom fields
 
 The following custom fields can be attached to an order:
