@@ -11,19 +11,24 @@ excerpt: Discover how to automate your order management by setting up a webhook 
 
 [//]: # "Photo credits: Pixabay - https://pixabay.com/illustrations/statistics-graph-chart-data-3411473/"
 
-Integrating HubRise with Make.com enables you to build custom data workflows. You can create dashboards, maintain customer lists, trigger marketing campaigns based on order history, or feed data into business intelligence tools.
+Integrating HubRise with Make.com enables you to build custom data workflows. You can create dashboards, maintain
+customer lists, trigger marketing campaigns based on order history, or feed data into business intelligence tools.
 
-In this post, we will set up a basic integration from scratch: centralising order data in Google Sheets. We will guide you through creating a Make.com scenario to receive HubRise orders and log them in a spreadsheet.
+In this post, we will set up a basic integration to centralise all your orders in Google Sheets. We will use Make.com to
+receive order data from HubRise and push them into a Google Sheet. This guide is suited for semi-technical users.
 
-While we are focusing here on a simple example, the principles apply to more complex integrations. Our goal is to show you the basics and encourage you to explore further.
+While we are focusing here on a simple example, the principles apply to more complex integrations. Our goal is to show
+you the basics and encourage you to explore further.
 
 ## Prerequisites
 
 Before we begin, make sure you have:
 
-1. A HubRise account with administrator access
-2. A Make.com account (a free account is sufficient for testing)
+1. A HubRise account ([sign up](https://manager.hubrise.com/signup))
+2. A Make.com account ([sign up](https://www.make.com/en/register))
 3. A Google account to access Google Sheets
+
+Note: Free plans for HubRise and Make.com are sufficient for this guide.
 
 ## Step 1: Create a HubRise OAuth 2.0 Client
 
@@ -36,81 +41,117 @@ Before we begin, make sure you have:
 
 ## Step 2: Set Up OAuth 2.0 Connection in Make.com
 
-1. Log in to Make.com (or create a free account).
-2. Set up a new OAuth 2.0 connection with the following parameters:
-   - Authorisation URL: `https://manager.hubrise.com/oauth2/v1/authorize`
-   - Token URL: `https://manager.hubrise.com/oauth2/v1/token`
-   - Scope: `account[orders.read]`
-3. Authorise the connection.
+1. Log in to Make.com.
+2. Create a new scenario and name it "Register webhook".
+3. Add a new module and search for "Make an OAuth 2.0 request". Click to add it to your scenario.
+4. Click **Create a connection**.
+5. Set up the OAuth 2.0 connection with the following parameters:
+   - Connection name: Choose a name (e.g., "HubRise")
+   - Flow Type: Authorization Code
+   - Authorization URI: `https://manager.hubrise.com/oauth2/v1/authorize`
+   - Token URI: `https://manager.hubrise.com/oauth2/v1/token`
+   - Scope > Item 1: `account[orders.read]`
+   - Client ID: [Your HubRise client ID from Step 1]
+   - Client Secret: [Your HubRise client secret from Step 1]
+6. Click **Save** to create the connection.
+7. Authorise the connection when prompted.
 
 ## Step 3: Retrieve the Access Token
 
 Due to a current limitation in Make.com, we need to manually retrieve the access token:
 
 1. In the HubRise back office, open **Connections**.
-2. Select your account from the **Location** dropdown at the top.
-3. Find the Make.com connection and click **Actions** > **View logs**.
-4. In the new page, expand **Connection details**.
-5. Click **show** next to "access token" and copy the token.
+2. Find the connection you created in Step 2 and click **Actions** > **View logs**.
+3. In the new page, expand **Connection details**.
+4. Click **show** next to "Access token" and copy the token to a safe place - we will need it in Step 5.
 
 ## Step 4: Create a Webhook in Make.com
 
-1. In Make.com, create a new scenario.
-2. Add a **HubRise new order** webhook module.
-3. Copy the webhook URL provided by Make.com.
+1. In Make.com, create a new scenario named "Receive orders".
+2. Add a **Webhooks** > **Custom webhook** module.
+3. Click **Create a webhook** and configure it as follows:
+   - Webhook name: Choose a name (e.g., "HubRise")
+   - IP restriction: Leave empty
+4. Copy the webhook URL to a safe place - we will need in the next step.
 
 ## Step 5: Register the Webhook with HubRise
 
-1. In Make.com, create a new **HTTP** module in a separate scenario.
-2. Configure it as follows:
-   - URL: `https://api.hubrise.com/v1/callbacks`
-   - Method: `POST`
-   - Body:
+1. Open the scenario "Register webhook" from Step 2.
+2. Delete the "Make an OAuth 2.0 request" module - we no longer need it.
+3. Add a new **HTTP** > **Make a request** module.
+4. Configure it as follows:
+   - URL: `https://api.hubrise.com/v1/callback`
+   - Method: POST
+   - Headers: Add `X-Access-Token` with the value of the token from Step 3
+   - Body type: Raw
+   - Content type: JSON
+   - Request content:
      ```json
      {
-       "url": "[Your Make.com webhook URL]",
+       "url": "[The Make.com webhook URL from Step 4]",
        "events": {
          "order": ["create"]
        }
      }
      ```
-   - Headers: Add `X-Access-Token` with the value of the token from Step 3.
-3. Run this scenario once to register the webhook.
-4. Verify in the HubRise back office that the callback has been registered under the Make.com connection.
+5. Save the scenario and click **Run once**.
 
-[Previous content remains the same]
+## Step 6: Verify the Configuration
 
-## Step 6: Create the Order Processing Scenario
+1. Open your HubRise back office.
+2. Verify the creation of the webhook:
+   - Open **Connections**.
+   - Find the Make.com connection and click **Actions** > **View logs**.
+   - Expand the **Connection details** section.
+   - Check that the webhook URL appears here, and that the correct events are registered.
 
-1. In Make.com, create a new scenario named "Get orders from webhook".
+## Step 7: Inject One Test Order
 
-2. Add a **Webhooks** module:
+Now, we need to inject a test order for Make.com to capture the data mapping:
 
-   - Add a module **Webhooks** > **Custom webhook**.
-   - Select the webhook you created on previous step.
+1. Open your HubRise back office.
+2. Click **Connections**.
+3. Click **View available apps**.
+4. Connect the **Developer tools** app.
+5. Open the app and inject a test order.
 
-3. Add a **Google Sheets** module and connect it to the webhook:
+Verify that the order was received by the webhook in Make.com:
 
-   - Select the **Add a Row** action
-   - Connect your Google account if you haven't already
-   - Select the spreadsheet and worksheet where you want to log the orders
+1. Open Make.com.
+2. Click **Webhooks**.
+3. Check that the webhook you created has received an event. Look for a label indicating the number of events received next to a truck icon.
+
+## Step 8: Complete the Order Processing Scenario
+
+We can now map the incoming order data to the Google Sheet.
+
+1. In Make.com, open the scenario "Receive orders" from Step 4.
+
+2. Click the webhook module, then click **Redetermine data structure**.
+
+3. Inject a new test order as in Step 7. This will allow Make.com to capture the incoming data structure.
+
+4. Click **Run once** to activate the webhook.
+
+5. Add a **Google Sheets** module to the right of the webhook module. Configure it as follows:
+
+   - Select the **Add a Row** action.
+   - Connect your Google account if you haven't already.
+   - Select the "Spreadsheet ID" and the "Sheet Name" where you want to log the orders.
    - In the "Values" section, map the incoming data from the webhook to your spreadsheet columns. Here's an example mapping:
-     - A: `{{1.new_state.created_at}}` (Order creation date)
-     - B: `{{1.new_state.id}}` (HubRise order ID)
-     - C: `{{1.new_state.customer.first_name}}` (Customer's first name)
-     - D: `{{1.new_state.customer.last_name}}` (Customer's last name)
-     - E: `{{1.new_state.total}}` (Order total)
-     - F: `{{1.new_state.status}}` (Order status)
+     - A: `{{new_state.created_at}}` (Order creation date)
+     - C: `{{new_state.customer.first_name}}` (Customer's first name)
+     - D: `{{new_state.customer.last_name}}` (Customer's last name)
+     - E: `{{new_state.total}}` (Order total)
+     - F: `{{new_state.status}}` (Order status)
 
-4. Save your scenario and turn it on.
+6. Save your scenario and click **Run once**.
 
-Note: The exact data fields available may vary depending on your HubRise configuration. Adjust the mappings as necessary to fit your needs and available data.
+## Step 8: Test the Integration
 
-## Step 7: Test the Setup
+You can now open **Developer tools** again and inject test orders.
 
-1. In the HubRise back office, install the **Developer tools** application.
-2. Use it to inject test orders.
-3. Verify that new rows are added to your Google Sheet as orders are injected.
+If your integration is successful, the orders will be injected in your Google Sheet almost instantly.
 
 ## Expanding Your Automation
 
