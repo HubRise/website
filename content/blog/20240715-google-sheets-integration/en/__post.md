@@ -13,7 +13,7 @@ excerpt: Discover how to automate your order management by setting up a webhook 
 
 HubRise's open API enables you to build custom data workflows. You can create dashboards, maintain customer lists, trigger marketing campaigns based on order history, or feed data into business intelligence tools.
 
-In this post, we will set up a basic integration to centralise all your orders in Google Sheets. We will use Make.com to receive order data from HubRise and push them into a Google Sheet. This guide is suited for semi-technical users.
+In this post, we will set up a basic integration to centralise all your orders in Google Sheets, and set up a custom dashboard to track your Uber Eats, Deliveroo, and other orders in one place. This guide is suited for semi-technical users.
 
 While we are focusing here on a simple example, the principles apply to more complex integrations. Our goal is to show you the basics and encourage you to explore further.
 
@@ -25,7 +25,7 @@ Before we begin, make sure you have:
 2. A Make.com account ([sign up](https://www.make.com/en/register))
 3. A Google account to access Google Sheets
 
-Free plans for HubRise and Make.com are sufficient for this guide.
+Free plans for HubRise and Make.com are sufficient for testing.
 
 ## Step 1: Create a HubRise OAuth 2.0 Client
 
@@ -40,7 +40,7 @@ We'll start by setting up a client in HubRise. This client will allow Make.com t
 
 ## Step 2: Set Up OAuth 2.0 Connection in Make.com
 
-Now that we have our HubRise client, let's set up a connection for Make.com to access HubRise data.
+Now that we have our HubRise client, let's set up a connection with your HubRise account.
 
 1. Log in to Make.com.
 2. Create a new scenario and name it "Register webhook".
@@ -54,6 +54,7 @@ Now that we have our HubRise client, let's set up a connection for Make.com to a
    - Scope > Item 1: `account[orders.read]`
    - Client ID: [Your HubRise client ID from Step 1]
    - Client Secret: [Your HubRise client secret from Step 1]
+     ![Connection setup](../images/005-2x-create-connection.png)
 6. Click **Save** to create the connection.
 7. Authorise the connection when prompted.
 
@@ -79,7 +80,7 @@ Next, we'll set up a webhook in Make.com to receive order data from HubRise.
 
 ## Step 5: Register the Webhook with HubRise
 
-With our Make.com webhook ready, we now need to tell HubRise where to send the order data. We'll do this by registering our webhook via the HubRise API.
+We need to provide HubRise with the URL it should send the order data to. We'll do this by registering our webhook via the HubRise API.
 
 1. Open the scenario "Register webhook" from Step 2.
 2. Delete the "Make an OAuth 2.0 request" module - we no longer need it.
@@ -90,20 +91,21 @@ With our Make.com webhook ready, we now need to tell HubRise where to send the o
    - Headers: Add `X-Access-Token` with the value of the token from Step 3
    - Body type: Raw
    - Content type: JSON
-   - Request content:
+   - Request content (replace `[Make.com webhook URL]` with the actual URL from Step 4):
      ```json
      {
-       "url": "[The Make.com webhook URL from Step 4]",
+       "url": "[Make.com webhook URL]",
        "events": {
          "order": ["create"]
        }
      }
      ```
+     ![Register webhook](../images/006-2x-register-webhook.png)
 5. Save the scenario and click **Run once**.
 
 ## Step 6: Verify the Configuration
 
-Let's quickly verify that our webhook has been correctly registered.
+Let's first quickly verify that our webhook has been correctly registered.
 
 1. Open your HubRise back office.
 2. Verify the creation of the webhook:
@@ -112,9 +114,7 @@ Let's quickly verify that our webhook has been correctly registered.
    - Expand the **Connection details** section.
    - Check that the webhook URL appears here, and that the correct events are registered.
 
-## Step 7: Inject One Test Order
-
-We are now going to inject a test order for Make.com to capture the structure of the HubRise order data.
+We are now going to inject a test order and check that it is received in Make.com.
 
 1. Open your HubRise back office.
 2. Click **Connections**.
@@ -128,7 +128,7 @@ Verify that the order was received by the webhook:
 2. Click **Webhooks**.
 3. Check that the webhook you created has received an event. Look for a label indicating the number of events received next to a truck icon.
 
-## Step 8: Complete the Order Processing Scenario
+## Step 7: Complete the Order Processing Scenario
 
 With all the pieces in place, we can now complete our Make.com scenario to process incoming orders and log them in Google Sheets.
 
@@ -145,30 +145,47 @@ With all the pieces in place, we can now complete our Make.com scenario to proce
    - Select the **Add a Row** action.
    - Connect your Google account if you haven't already.
    - Select the "Spreadsheet ID" and the "Sheet Name" where you want to log the orders.
-   - In the "Values" section, map the incoming data from the webhook to your spreadsheet columns. Here's an example mapping:
-     - A: `{{new_state.created_at}}` (Order creation date)
-     - C: `{{new_state.customer.first_name}}` (Customer's first name)
-     - D: `{{new_state.customer.last_name}}` (Customer's last name)
-     - E: `{{new_state.total}}` (Order total)
-     - F: `{{new_state.status}}` (Order status)
+   - In the "Values" section, map the incoming data from the webhook to your spreadsheet columns. If the data capture was successful, you should see the available fields over a red background when you click on any value:
+     ![Map HubRise fields with Google Sheets columns](../images/001-2x-map-fields.png)
+     If you don't see similar fields, try re-determining the data structure again.
+   - Here's an example mapping:
+     ![Example mapping](../images/003-example-mapping.png)
+     - A: `{{formatDate(1.new_state.created_at; "YYYY-MM-DD HH:mm")}}`: order creation
+     - B: `{{1.new_state.created_by}}`: order source
+     - C: `{{1.new_state.collection_code}}`: order short ID
+     - D: `{{replace(1.new_state.total; "EUR" ; "€")}}`: order total as a monetary value
+     - E: `{{1.new_state.customer.first_name}}`: customer's first name
 
-6. Save your scenario and click **Run once**.
+6. Save your scenario and toggle the "Scheduling" switch to activate it.
+   ![Schedule the scenario](../images/002-schedule-on.png)
 
-## Step 9: Test the Integration
+Note: After making any changes, save the scenario and schedule it off and on again to apply the changes.
 
-Finally, let's put our integration to the test.
+## Step 8: Test the Integration
 
-Open **Developer tools** and inject test orders. If your integration is successful, the orders will appear in your Google Sheet almost instantly. Congratulations, you have successfully set up your first HubRise processing automation!
+Let's put our integration to the test. Open **Developer tools** and inject test orders. If your integration is successful, the orders will appear in your Google Sheet almost instantly.
+
+## Step 9: Build Your Dashboard
+
+You can now build your customised dashboard within Google Sheets, by adding pivot tables, pie charts, or any other component you find useful.
+
+Here is a simple example - you can create much more complex analyses since all the order data is now available in Google Sheets:
+
+![Dashboard](../images/004-dashboard.png)
+
+And of course, your dashboard will be updated automatically as new orders come in!
 
 ## Expanding Your Automation
 
-This setup is just the beginning of what you can achieve with HubRise. Here are some ideas to expand on this foundation:
+Congratulations, you have successfully set up your first HubRise processing automation!
 
-- Collect detailed order items for in-depth analysis
-- Create graphs and statistics based on your order data
-- Integrate with other apps available in Make.com
+This is just the beginning of what you can achieve with HubRise. Here are some ideas to expand on this foundation:
+
+- Collect order items for product sales analysis
+- Segment analyses by location (if you have multiple locations)
 - Set up notifications for high-value orders or specific conditions
+- Integrate with other apps available in Make.com
 
-While we have used Make.com in this guide, you can apply similar principles with other automation platforms like Zapier or n8n.
+While we have used Make.com in this guide, you can apply similar principles with other automation platforms like Zapier, n8n, or even build your own solution using a programming language if you want to give it a try.
 
 Happy automating!
