@@ -1,19 +1,19 @@
 ---
-title: Receive HubRise Orders in Google Sheets via Make.com
-path_override: google-sheets-integration
+title: Build Your Custom Dashboard in Google Sheets
+path_override: google-sheets-dashboard
 date: 2024-07-15
 author: Antoine Monnier
 meta:
-  title: Receive HubRise Orders in Google Sheets via Make.com | Blog | HubRise
-  description: Learn how to set up a webhook to automatically receive HubRise orders in Google Sheets using Make.com. This step-by-step guide is perfect for semi-technical users looking to automate their order management process.
-excerpt: Discover how to automate your order management by setting up a webhook to receive HubRise orders directly in Google Sheets using Make.com. This guide walks you through the process, from creating a HubRise client to configuring Make.com and Google Sheets.
+  title: Build Your Custom Dashboard in Google Sheets | Blog | HubRise
+  description: Learn how to create a custom, real-time order dashboard in Google Sheets using HubRise data. This step-by-step guide shows you how to centralise and visualise your order data from multiple sources.
+excerpt: Discover how to build a real-time order dashboard in Google Sheets using HubRise data. This guide walks you through the process of centralising your order data and creating insightful visualisations, helping you gain valuable insights into your business performance across multiple ordering platforms.
 ---
 
-[//]: # "Photo credits: Pixabay - https://pixabay.com/illustrations/statistics-graph-chart-data-3411473/"
+[//]: # "Photo credits: Dall-E"
 
-HubRise's open API enables you to build custom data workflows. You can create dashboards, maintain customer lists, trigger marketing campaigns based on order history, or feed data into business intelligence tools.
+HubRise's open API enables you to feed your order, customer or product data into any third-party tool with an API.
 
-In this post, we will set up a basic integration to centralise all your orders in Google Sheets, and set up a custom dashboard to track your Uber Eats, Deliveroo, and other orders in one place. This guide is suited for semi-technical users.
+In this post, we will set up a dashboard in Google Sheets using HubRise order data, allowing you to track your Uber Eats, Deliveroo, and other orders in one place. This guide is suited for semi-technical users.
 
 While we are focusing here on a simple example, the principles apply to more complex integrations. Our goal is to show you the basics and encourage you to explore further.
 
@@ -22,7 +22,7 @@ While we are focusing here on a simple example, the principles apply to more com
 Before we begin, make sure you have:
 
 1. A HubRise account ([sign up](https://manager.hubrise.com/signup))
-2. A Make.com account ([sign up](https://www.make.com/en/register))
+2. A Make.com account ([sign up](https://www.make.com/en/register)) - This will be used to set up a webhook connected to Google Sheets. It can be replaced with any other similar automation tool.
 3. A Google account to access Google Sheets
 
 Free plans for HubRise and Make.com are sufficient for testing.
@@ -175,9 +175,9 @@ Here is a simple example - you can create much more complex analyses since all t
 
 And of course, your dashboard will be updated automatically as new orders come in!
 
-## Expanding Your Automation
+## Exploring New Ideas
 
-Congratulations, you have successfully set up your first HubRise processing automation!
+Congratulations, you have successfully set up your first custom HubRise integration!
 
 This is just the beginning of what you can achieve with HubRise. Here are some ideas to expand on this foundation:
 
@@ -186,6 +186,6 @@ This is just the beginning of what you can achieve with HubRise. Here are some i
 - Set up notifications for high-value orders or specific conditions
 - Integrate with other apps available in Make.com
 
-While we have used Make.com in this guide, you can apply similar principles with other automation platforms like Zapier, n8n, or even build your own solution using a programming language if you want to give it a try.
+While we have used Make.com in this guide, you can apply similar principles with other automation platforms like Zapier or n8n. You can even build your own solution using a programming language if you want to give it a try.
 
 Happy automating!
