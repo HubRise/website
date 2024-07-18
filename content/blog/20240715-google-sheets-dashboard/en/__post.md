@@ -6,7 +6,7 @@ author: Antoine Monnier
 meta:
   title: Build Your Custom Dashboard in Google Sheets | Blog | HubRise
   description: Learn how to create a custom, real-time order dashboard in Google Sheets using HubRise data. This step-by-step guide shows you how to centralise and visualise your order data from multiple sources.
-excerpt: Discover how to build a real-time order dashboard in Google Sheets using HubRise data. This guide walks you through the process of centralising your order data and creating insightful visualisations, helping you gain valuable insights into your business performance across multiple ordering platforms.
+excerpt: Discover how to build a real-time order dashboard in Google Sheets. This guide shows you how to feed a Google Sheet with your HubRise data, helping you gain insights into your business performance across multiple ordering platforms.
 ---
 
 [//]: # "Photo credits: Dall-E"
