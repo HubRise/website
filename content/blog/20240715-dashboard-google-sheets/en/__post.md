@@ -1,6 +1,6 @@
 ---
 title: Build Your Custom Dashboard in Google Sheets
-path_override: google-sheets-dashboard
+path_override: dashboard-google-sheets
 date: 2024-07-15
 author: Antoine Monnier
 meta:
