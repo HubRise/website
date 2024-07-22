@@ -611,7 +611,7 @@ content:
           documentation: /apps/stocktake-online
           logo: stocktake-online.png
           title: Stocktake Online
-          description: StockTake Online is an inventory management system designed for restaurants, bars, nightclubs, and more. It helps organise operations by simplifying order processing, minimising waste, and enhancing profitability.
+          description: StockTake Online is an inventory management system designed for restaurants, bars, nightclubs, and more. It helps organise operations by simplifying purchasing, minimising waste, and enhancing profitability.
     - title: Other Apps
       slug: other-apps
       apps:
