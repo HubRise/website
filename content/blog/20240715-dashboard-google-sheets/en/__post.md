@@ -136,7 +136,7 @@ With all the pieces in place, we can now complete our Make.com scenario to proce
 
 2. Click the webhook module, then click **Redetermine data structure**.
 
-3. Inject a new test order as in Step 7. This will allow Make.com to capture the incoming data structure.
+3. Inject a new test order. This will allow Make.com to capture the incoming data structure.
 
 4. Click **Run once** to activate the webhook.
 
