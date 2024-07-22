@@ -607,6 +607,11 @@ content:
           logo: somm-it.png
           title: SOMM'IT
           description: SOMM'IT helps you manage your wine list. Sync your inventory with your EPOS to keep your wine list up to date. SOMM'IT includes a large wine library, and a dematerialised procurement system.
+        - website: https://www.stocktake-online.com
+          documentation: /apps/stocktake-online
+          logo: stocktake-online.png
+          title: Stocktake Online
+          description: StockTake Online is an inventory management system designed for restaurants, bars, nightclubs, and more. It helps organise operations by simplifying order processing, minimising waste, and enhancing profitability.
     - title: Other Apps
       slug: other-apps
       apps:
