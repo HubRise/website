@@ -12,7 +12,7 @@ meta:
 
 Like catalogs, customer lists exist at either location or account level.
 
-Name unicity is ruled by the same constraints as catalogs:
+Name uniqueness is ruled by the same constraints as catalogs:
 
 - At the location level, customer lists are uniquely identified by their name.
 - An account level customer list cannot have the same name as another account or location level customer list.

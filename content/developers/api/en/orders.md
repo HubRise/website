@@ -26,16 +26,17 @@ Almost all the fields are optional. In fact the simplest order that can be creat
 
 | Name                                                                  | Type                                                     | Description                                                                                                                                                    |
 | --------------------------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `ref` <Label type="optional" />                                       | string                                                   | Reference of the order on the app creating the order. Unicity is recommended but not enforced.                                                                 |
-| `private_ref` <Label type="optional" />                               | string                                                   | A private unique reference for the order. Used for order lookups if defined. See [Private Refs](/developers/api/general-concepts#private-refs).                |
-| `status`                                                              | [OrderStatus](#status)                                   | Current status of the order.                                                                                                                                   |
-| `service_type` <Label type="optional" />                              | string                                                   | Method of delivery/serving to the customer. Can be: `delivery`, `collection`, or `eat_in`.                                                                     |
-| `service_type_ref` <Label type="optional" />                          | string                                                   | Identifier for the order type. Can be used to identify the channel, brand, and delivery method.                                                                |
+| `channel` <Label type="optional" />                                   | string                                                   | Identifies the order source. Used in dashboards and order reception tools. Defaults to the API client's name if not provided.                                  |
+| `ref` <Label type="optional" />                                       | string                                                   | Order reference on the app creating the order. Uniqueness is recommended but not enforced.                                                                     |
+| `private_ref` <Label type="optional" />                               | string                                                   | Unique private order reference used for lookups. See [Private Refs](/developers/api/general-concepts#private-refs).                                            |
+| `status`                                                              | [OrderStatus](#status)                                   | Current order status.                                                                                                                                          |
+| `service_type` <Label type="optional" />                              | string                                                   | Delivery/serving method. Can be: `delivery`, `collection`, or `eat_in`.                                                                                        |
+| `service_type_ref` <Label type="optional" />                          | string                                                   | Order type identifier. Can indicate channel, brand, and delivery method.                                                                                   |
 | `expected_time` <Label type="optional" />                             | [Time](/developers/api/general-concepts#dates-and-times) | Time the customer expects to receive the order.                                                                                                                |
 | `confirmed_time` <Label type="optional" />                            | [Time](/developers/api/general-concepts#dates-and-times) | Confirmed time for the customer to receive the order.                                                                                                          |
 | `customer_notes` <Label type="optional" />                            | string                                                   | Customer-provided instructions, such as allergies or special requests.                                                                                         |
 | `seller_notes` <Label type="optional" />                              | string                                                   | Merchant-provided information, such as product substitution notices.                                                                                           |
-| `collection_code` <Label type="optional" />                           | string                                                   | A short, customer-shared, order identifier for simplified collection or delivery. Does not have to be unique.                                                  |
+| `collection_code` <Label type="optional" />                           | string                                                   | Short order identifier shared with the customer, and used for simplified collection or delivery. Not necessarily unique.                                       |
 | `coupon_codes` <Label type="optional" />                              | string[]                                                 | Coupon codes applied to the order.                                                                                                                             |
 | `items` <Label type="optional" />                                     | [OrderItem](#items)[]                                    | Items included in the order.                                                                                                                                   |
 | `deals` <Label type="optional" />                                     | [OrderDealMap](#deals)                                   | Deals used in the order.                                                                                                                                       |
@@ -161,16 +162,17 @@ Returns an order resource.
 
 All the fields of an order creation request are returned, plus a few more:
 
-| Name          | Type                                                      | Description                                                                  |
-| ------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| ...           |                                                           | See the [order creation fields](#create-order).                              |
-| `id`          | string                                                    | Unique id of the order, generated by HubRise.                                |
-| `location_id` | string                                                    | The id of the location where the order was created.                          |
-| `created_at`  | [Time](/developers/api/general-concepts#dates-and-times)  | Order creation time.                                                         |
-| `created_by`  | string                                                    | Name of the API client that created the order.                               |
-| `total`       | [Money](/developers/api/general-concepts#monetary-values) | Order total amount. Calculated by HubRise from items, charges and discounts. |
-| `customer`    | [Customer](#customer)                                     | Customer details at the time of the order creation.                          |
-| `delivery`    | [Delivery](#delivery)                                     | An optional delivery attached to the order.                                  |
+| Name              | Type                                                      | Description                                                                                                                                                                        |
+| ----------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ...               |                                                           | See the [order creation fields](#create-order).                                                                                                                                    |
+| `id`              | string                                                    | Unique id of the order, generated by HubRise.                                                                                                                                      |
+| `location_id`     | string                                                    | The id of the location where the order was placed.                                                                                                                                 |
+| `created_at`      | [Time](/developers/api/general-concepts#dates-and-times)  | Order creation time.                                                                                                                                                               |
+| `created_by`      | string                                                    | Name of the API client that created the order.                                                                                                                                     |
+| `connection_name` | string                                                    | Optional field specifying the name of the connection that created the order. Used to differentiate between multiple connections of the same API client (e.g., for virtual brands). |
+| `total`           | [Money](/developers/api/general-concepts#monetary-values) | Total order amount, calculated by HubRise based on items, charges, and discounts.                                                                                                  |
+| `customer`        | [Customer](#customer)                                     | Customer information as recorded at the time of order creation.                                                                                                                    |
+| `delivery`        | [Delivery](#delivery)                                     | Optional delivery information associated with the order.                                                                                                                           |
 
 **Note:** `total_discrepancy` and `payment_discrepancy` fields are also returned, but these fields are deprecated and their values should not be used.
 
@@ -195,6 +197,8 @@ In addition, each `item`, `charge`, `payment` and `discount` is returned with a 
   "service_type_ref": null,
   "created_at": "2021-06-24T17:07:53+02:00",
   "created_by": "MyClient",
+  "channel": "Website",
+  "connection_name": null,
   "expected_time": "2021-06-24T19:07:52+02:00",
   "confirmed_time": null,
   "customer_notes": null,
