@@ -340,6 +340,11 @@ content:
           logo: dood.png
           title: DOOD
           description: DOOD est une solution e-commerce et e-marketing destinés au food retail. Adaptée aux indépendants comme aux chaînes, la solution de commande en ligne en marque blanche de DOOD permet le click & collect, la livraison, et le service à table. DOOD inclut une suite d'outils marketing pour développer la fidélisation client.
+        - website: https://eddress.co
+          documentation: /fr/apps/eddress
+          logo: eddress.png
+          title: eddress
+          description: eddress est une solution de commandes en ligne avec une fonctionnalité intégrée pour la gestion des livraisons. Elle convient aux restaurants et aux épiceries de toute taille, qu'il s'agisse d'indépendants ou de franchises. Disponible en 20 langues et déployée dans plus de 17 pays.
         - website: https://www.gonnaorder.com/?lang=fr
           documentation: /fr/apps/gonnaorder
           logo: gonnaorder.png
