@@ -169,7 +169,7 @@ content:
           documentation: /apps/quantum
           logo: quantum.png
           title: Quantum by Cunninghams EPOS Group
-          description: Quantum by Cunninghams EPOS Group offers an EPOS system for various sectors, including sales management, stock control, customer loyalty, various eCommerce functionnalities, and real-time reporting.
+          description: Quantum by Cunninghams EPOS Group offers an EPOS system for various sectors, featuring sales management, stock control, customer loyalty, various eCommerce functionnalities, and real-time reporting.
           additional_info:
         - website: https://www.rmpos.com/
           documentation: /apps/restaurant-manager

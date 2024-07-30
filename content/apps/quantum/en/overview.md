@@ -25,13 +25,11 @@ app_info:
 
 ---
 
-
 ## Description
 
 Quantum by Cunninghams EPOS Group delivers an EPOS system designed for retail, hospitality, and other sectors. Our all-in-one solution integrates sales management, stock control, and customer loyalty into a unified platform. Key features include mobile EPOS capabilities, eCommerce functionalities, and real-time reporting.
 
-Quantum also supports integrated payment solutions, paperless receipts, integrated scales, customer management, and secure AWS backups. This modular and adaptable approach ensures businesses can streamline operations, enhance customer satisfaction, and drive growth effectively.
-
+Quantum also offers integrated payment solutions, paperless receipts, integrated weighing scales, customer management, and secure AWS backups. This modular and adaptable approach ensures businesses can streamline operations, enhance customer satisfaction, and drive growth effectively.
 
 ## Integration Features
 
