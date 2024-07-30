@@ -344,7 +344,7 @@ content:
           documentation: /fr/apps/eddress
           logo: eddress.png
           title: eddress
-          description: eddress est une solution de commandes en ligne avec une fonctionnalité intégrée pour la gestion des livraisons. Elle convient aux restaurants et aux épiceries de toute taille, qu'il s'agisse d'indépendants ou de franchises. Disponible en 20 langues et déployée dans plus de 17 pays.
+          description: eddress est une solution de commande en ligne pour les restaurants et les épiceries, avec gestion de livreurs intégrée. Elle convient aux enseignes de toute taille, indépendantes ou franchisées. Disponible en 20 langues et déployée dans plus de 17 pays.
         - website: https://www.gonnaorder.com/?lang=fr
           documentation: /fr/apps/gonnaorder
           logo: gonnaorder.png

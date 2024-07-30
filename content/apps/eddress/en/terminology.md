@@ -10,9 +10,8 @@ meta:
 
 HubRise and eddress each use their own terminology. As a result, the same concept may have different designations in each solution. The correspondence table below highlights these differences to ease understanding.
 
-| eddress  | HubRise     | Description                                                                      |
-|----------|-------------|----------------------------------------------------------------------------------|
-| Sku      | Ref code    | Unique identifier assigned to each product or item.                              |
-| Merchand | Account     | Business brand.                                                                  |
-| Store    | Location    | The actual restaurant.                                                           |
-| Products | Catalog     | List of products.                                                                |
+| eddress  | HubRise  | Description            |
+| -------- | -------- | ---------------------- |
+| Sku      | Ref code | Product code.          |
+| Merchant | Account  | Business brand.        |
+| Store    | Location | The actual restaurant. |

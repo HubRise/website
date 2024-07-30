@@ -25,13 +25,13 @@ app_info:
 
 ## Description
 
-eddress is an online ordering and delivery management platform for grocery and food businesses, designed to connect with customers and optimise back-end operations. With a suite of features, eddress improves order processing, delivery management, and customer engagement. It is tailored for both independent businesses and large franchises, ensuring scalability and efficiency. Its user-friendly interface facilitates menu updates, promotional setups, and delivery configurations.
+eddress is an online ordering and delivery management platform for grocery and food businesses, designed to connect businesses with customers and optimise back-end operations. With its suite of features, eddress improves order processing, delivery management, and customer engagement. It is tailored for both independent businesses and large franchises, ensuring scalability and efficiency. Its user-friendly interface facilitates menu updates, promotion setup, and delivery management.
 
-Serving clients in over 17 countries, eddress is available in 20 languages as an online ordering solution and an app, on both iOS and Android platforms.
+Serving clients in over 17 countries, eddress is available in 20 languages as both a web-based ordering solution and a mobile app for iOS and Android platforms.
 
 ## Integration Features
 
-Connecting eddress to HubRise allows your Online Ordering solution to:
+Connecting eddress to HubRise allows your online ordering solution to:
 
 - Push orders into HubRise, including order status.
 - Push customer information into HubRise.
