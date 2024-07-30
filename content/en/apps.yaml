@@ -165,6 +165,12 @@ content:
           title: POS HELPER
           description: POS HELPER is a Point of Sales for restaurants. It includes production, cost control and payment functionalities. They also offer Kitchen Display Systems, self-service kiosks, and online ordering.
           additional_info:
+        - website: https://www.cunninghams.co.uk/
+          documentation: /apps/quantum
+          logo: quantum.png
+          title: Quantum by Cunninghams EPOS Group
+          description: Quantum by Cunninghams EPOS Group offers an EPOS system for various sectors, featuring sales management, stock control, customer loyalty, various eCommerce functionnalities, and real-time reporting.
+          additional_info:
         - website: https://www.rmpos.com/
           documentation: /apps/restaurant-manager
           logo: restaurant-manager.png

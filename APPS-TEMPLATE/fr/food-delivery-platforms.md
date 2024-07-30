@@ -36,7 +36,7 @@ Dans la page de configuration de Deliveroo Bridge, utilisez les paramètres suiv
 | Types de service    | Code ref livraison par Deliveroo                  | (laisser vide)                                                |
 | Types de service    | Code ref livraison par le restaurant              | (laisser vide)                                                |
 | Types de service    | Code ref à emporter                               | (laisser vide)                                                |
-| Types de service    | Envoyer les commandes livrées par Deliveroo [...] | `commandes à emporter`                                        |
+| Types de service    | Envoyer les commandes livrées par Deliveroo [...] | `commandes en livraison`                                      |
 | Articles spéciaux   | Code ref option consigne                          | Créer une option dans SOLUTION et utiliser son code ref. (\*) |
 | Remises             | Code ref remise                                   | (laisser vide)                                                |
 | Frais               | Code ref frais de livraison                       | (laisser vide)                                                |
@@ -69,7 +69,7 @@ Dans la page de configuration de Just Eat Takeaway Bridge, utilisez les paramèt
 | Types de service    | Code ref livraison par la plateforme                  | (laisser vide)                                |
 | Types de service    | Code ref livraison par le restaurant                  | (laisser vide)                                |
 | Types de service    | Code ref à emporter                                   | (laisser vide)                                |
-| Types de service    | Envoyer les commandes livrées par la plateforme [...] | `commandes à emporter`                        |
+| Types de service    | Envoyer les commandes livrées par la plateforme [...] | `commandes en livraison`                      |
 | Remises             | Code ref remise                                       | (laisser vide)                                |
 | Frais               | Code ref frais de livraison                           | (laisser vide)                                |
 | Frais               | Code ref frais de service                             | (laisser vide)                                |
@@ -88,7 +88,7 @@ Dans la page de configuration de Just Eat Flyt Bridge, utilisez les paramètres 
 | Types de service    | Code ref livraison par la plateforme                  | (laisser vide)                                                |
 | Types de service    | Code ref livraison par le restaurant                  | (laisser vide)                                                |
 | Types de service    | Code ref à emporter                                   | (laisser vide)                                                |
-| Types de service    | Envoyer les commandes livrées par la plateforme [...] | `commandes à emporter`                                        |
+| Types de service    | Envoyer les commandes livrées par la plateforme [...] | `commandes en livraison`                                      |
 | Articles spéciaux   | Code ref option consigne                              | Créer une option dans SOLUTION et utiliser son code ref. (\*) |
 | Remises             | Code ref remise                                       | (laisser vide)                                                |
 | Frais               | Code ref frais de livraison                           | (laisser vide)                                                |
@@ -115,7 +115,7 @@ Dans la page de configuration de Uber Eats Bridge, utilisez les paramètres suiv
 | Types de service    | Code ref livraison par le restaurant         | (laisser vide)                                                           |
 | Types de service    | Code ref à emporter                          | (laisser vide)                                                           |
 | Types de service    | Code ref sur place                           | (laisser vide)                                                           |
-| Types de service    | Envoyer les commandes livrées par Uber [...] | `commandes à emporter`                                                   |
+| Types de service    | Envoyer les commandes livrées par Uber [...] | `commandes en livraison`                                                 |
 | Articles spéciaux   | Code ref jetables                            | Créer un article `Jetables` dans SOLUTION et utiliser son code ref. (\*) |
 | Remises             | Code ref remise                              | (laisser vide)                                                           |
 | Frais               | Code ref frais de livraison                  | (laisser vide)                                                           |

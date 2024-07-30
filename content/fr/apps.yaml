@@ -161,6 +161,12 @@ content:
           title: POS HELPER
           description: POS HELPER est un logiciel de caisse pour les restaurants, qui inclut des fonctionnalités de production, de gestion, de pilotage et de facturation. POS HELPER propose aussi un écran cuisine, une borne de commande et un système de commande en ligne.
           additional_info:
+        - website: https://www.cunninghams.co.uk
+          documentation: /fr/apps/quantum
+          logo: quantum.png
+          title: Quantum by Cunninghams EPOS Group
+          description: Quantum, développé par Cunninghams EPOS Group, propose un logiciel de caisse pour divers secteurs, offrant la gestion des ventes, le contrôle des stocks, la fidélisation, une solution de eCommerce et des rapports en temps réel.
+          additional_info:
         - website: https://www.rmpos.com/
           documentation: /fr/apps/restaurant-manager
           logo: restaurant-manager.png
