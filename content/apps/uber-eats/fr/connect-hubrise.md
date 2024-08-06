@@ -35,7 +35,7 @@ Contactez-nous à support@hubrise.com en fournissant les informations suivantes�
 - Le nom et l'identifiant de votre point de vente HubRise. Exemple : `Fast Pizza Paris z6q31-0`.
 - Le mode d'acceptation des commandes que vous souhaitez utiliser pour votre restaurant : `Manual accept` (acceptation manuelle) ou `Offered state` (état proposé). Pour plus de détails, voir notre [FAQ](/apps/uber-eats/faqs/send-orders-to-epos-without-tablet).
 
-Avec ces informations en main, nous demanderons à l'assistance Uber Eats d'activer la connexion HubRise pour votre restaurant et de fournir l'UUID du magasin Uber Eats, par exemple : `dc638853-bff1-411c-adba-8aa4d7abddd2`.
+Avec ces informations en main, nous demanderons à l'assistance Uber Eats d'activer la connexion HubRise pour votre restaurant et de fournir l'UUID de restaurant Uber Eats, par exemple : `dc638853-bff1-411c-adba-8aa4d7abddd2`.
 
 ## 2. Connectez Uber Eats Bridge
 

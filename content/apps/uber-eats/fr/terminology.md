@@ -20,16 +20,16 @@ Le tableau suivant explique les termes spécifiques à Uber Eats.
 
 HubRise et Uber Eats utilisent chacun leur propre terminologie. Un même concept peut donc exister sous une désignation différente dans chaque solution. Le tableau de correspondance ci-dessous présente ces différences.
 
-| Uber Eats               | HubRise              | Description                                                                                             |
-| ----------------------- | -------------------- | ------------------------------------------------------------------------------------------------------- |
-| Commentaires            | Notes de préparation | Notes de préparation sur des produits spécifiques que les clients peuvent laisser lors de leur commande |
-| Remise                  | Remise               | Offre spéciale appliquée à la commande                                                                  |
-| Données externes        | Code ref             | Code produit.                                                                           |
-| Menu                    | Catalogue            | Liste de produits                                                                                       |
-| Partenaire              | Compte               | Appellation commerciale                                                                                 |
-| Établissement           | Point de vente       | Le restaurant proprement dit                                                                            |
-| UUID de l'établissement | ID de point de vente | Identifiant du restaurant                                                                               |
-| Couverts, pailles       | Articles spéciaux    | Lors du processus de paiement, option pour demander des articles à usage unique                         |
+| Uber Eats          | HubRise              | Description                                                                                             |
+| ------------------ | -------------------- | ------------------------------------------------------------------------------------------------------- |
+| Commentaires       | Notes de préparation | Notes de préparation sur des produits spécifiques que les clients peuvent laisser lors de leur commande |
+| Remise             | Remise               | Offre spéciale appliquée à la commande                                                                  |
+| Données externes   | Code ref             | Code produit.                                                                                           |
+| Menu               | Catalogue            | Liste de produits                                                                                       |
+| Partenaire         | Compte               | Appellation commerciale                                                                                 |
+| Établissement      | Point de vente       | Le restaurant proprement dit                                                                            |
+| UUID de restaurant | ID de point de vente | Identifiant du restaurant                                                                               |
+| Couverts, pailles  | Articles spéciaux    | Lors du processus de paiement, option pour demander des articles à usage unique                         |
 
 ## Types de service
 
