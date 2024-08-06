@@ -51,7 +51,7 @@ The same update rules apply as for the [Manual Catalog Push](#manual-catalog-pus
 
 ## Technical Reference
 
-The following sections describe in detail how HubRise catalogs are mapped to WooCommerce **Products**.
+The following sections describe how a catalog push affects your WooCommerce store.
 
 ### Categories
 

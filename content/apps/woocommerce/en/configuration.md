@@ -86,7 +86,7 @@ If your plugin uses two metadata keys, the supported formats are the following:
 
 ![WooCommerce Bridge configuration page, misc order metadata](./images/016-woocommerce-configuration-misc-order-metadata.png)
 
-In this section, you can specify the metadata key that WooCommerce uses for the customer notes at the order level.
+In this section, you can specify the metadata keys that WooCommerce uses for the customer notes at the order level. You can enter multiple keys separated by commas.
 
 ### Order Item Metadata {#order-item-metadata}
 
@@ -165,7 +165,7 @@ If you use plugins that store customer information in metadata, use the **Key fo
 
 ### Catalog Variant to Push
 
-Catalog variants give you the flexibility to disable specific items or adjust prices for your WooCommerce website.
+Catalog variants give you the flexibility to disable specific items or adjust prices for your WooCommerce website. For more information, see [Catalog Variants](/apps/catalog-manager/variants) in our Catalog Manager online documentation.
 
 If your catalog includes variants, you have the option to select which one to use. When **(none)** is selected, the default items along with their standard prices are used. If your catalog has no variants, the menu will be hidden and a message will be displayed.
 

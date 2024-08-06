@@ -55,6 +55,7 @@ Connecter Mealenium à HubRise permet à votre logiciel de caisse de :
 - Recevoir les informations clients de HubRise.
 - Envoyer un catalogue à HubRise, avec support des variantes.
 - Synchroniser l'inventaire avec HubRise.
+- Synchroniser les horaires d'ouverture avec HubRise.
 
 Mealenium peut être connecté à HubRise via le support de Mealenium.
 

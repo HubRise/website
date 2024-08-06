@@ -51,8 +51,11 @@ Vous pouvez ensuite exporter de nouveau votre catalogue en suivant les étapes d
 Un produit dans HubRise correspond à un article dans Kezia II. Pour retrouver le code ref d'un article, suivez ces étapes :
 
 1. Depuis l'écran d'accueil, sélectionnez **ARTICLES**.
-1. Double-cliquez sur le produit désiré. Le code ref s'affiche en-dessous du titre de la fenêtre **Fiche Article**.
-   ![Associer les codes ref - Fiche article](./images/005-kezia-product-details.png)
+1. Double-cliquez sur le produit désiré.
+1. Le code ref d'un produit est son **code interne** s'il est renseigné, ou son **IDART** sinon.
+   - Le **code interne** est affiché après le label **Code interne :**. La valeur **NC** indique qu'il n'est pas renseigné.
+   - L'**IDART** est affiché en haut à gauche et se présente sous forme de numéro, par exemple **2** dans l'image ci-dessous.
+     ![Associer les codes ref - Fiche article](./images/005-kezia-product-details.png)
 
 ## SKUs
 
@@ -76,9 +79,13 @@ Une option dans HubRise correspond à un article option dans Kezia II. Pour vér
 
 Pour trouver le code ref de cet article, suivez la procédure décrite dans la partie [Produits](/apps/kezia/map-ref-codes#products).
 
+## Frais
+
+Les frais dans HubRise sont des articles dans Kezia II. Pour retrouver le code ref d'un article, suivez la procédure décrite dans la partie [Produits](/apps/kezia/map-ref-codes#products).
+
 ## Remises
 
-Une remise dans Kezia II peut uniquement être créée lorsque le vendeur enregistre une commande. Les remises ne peuvent donc pas être synchronisées avec HubRise.
+Les remises dans Kezia II sont appliquées à des commandes spécifiques et ne sont pas créées à l'avance. Elles n'ont pas de code ref dans HubRise.
 
 ## Promotions
 

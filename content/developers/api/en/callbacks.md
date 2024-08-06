@@ -69,30 +69,50 @@ If the callback fails to acknowledge the event after 6 retries, HubRise deletes 
 
 #### Event Signatures
 
-To check the authenticity of an event received by your callback, in other words to make sure that it comes from HubRise, you can compute the signature of the event (see code below) and compare it with the `X-HubRise-Hmac-SHA256` header of the event. If they are different, simply return an error and ignore the event.
+To check the authenticity of an event received by your callback, in other words to make sure that it comes from HubRise, you can compute the signature of the event and compare it with the `X-HubRise-Hmac-SHA256` header of the event. If they are different, simply return an error and ignore the event.
 
-To compute the event signature in Ruby:
+To compute the event signature, use one of the following code snippets:
+
+<details>
+<summary>Ruby</summary>
 
 ```ruby
 require "openssl"
 
 client_secret = "your_client_secret"
 payload = request.raw_body
-
 digest = OpenSSL::Digest.new("sha256")
 calculated_hmac = OpenSSL::HMAC.hexdigest(digest, client_secret, payload)
 ```
 
-The same script in Javascript, using Node's `crypto` lib:
+</details>
+
+<details>
+<summary>JavaScript (Node.js)</summary>
 
 ```javascript
 import { createHmac } from "crypto"
 
-client_secret = "your_client_secret"
-payload = req.rawBody
-
+const client_secret = "your_client_secret"
+const payload = req.rawBody
 const calculatedHmac = createHmac("sha256", client_secret).update(payload).digest("hex")
 ```
+
+</details>
+
+<details>
+<summary>Python</summary>
+
+```python
+import hmac
+import hashlib
+
+client_secret = b"your_client_secret"
+payload = request.get_data()
+calculated_hmac = hmac.new(client_secret, payload, hashlib.sha256).hexdigest()
+```
+
+</details>
 
 ### Passive Callbacks
 

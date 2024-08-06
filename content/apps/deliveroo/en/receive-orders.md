@@ -101,7 +101,9 @@ These are typically associated with specific ref codes in your EPOS. For more in
 
 ## Order Times
 
-For restaurant delivery orders, Deliveroo provides the time the customer expects the order to be delivered. For other types of orders, it provides the time the order should be ready for pickup, either by the customer or a Deliveroo rider. In both scenarios, this time is transmitted to HubRise as the `expected_time` field. This time cannot be changed by the EPOS.
+For restaurant delivery orders, Deliveroo provides the time the customer expects the order to be delivered. For other types of orders, it provides the time the order should be ready for pickup, either by the customer or a Deliveroo rider. In both scenarios, this time is transmitted to HubRise as the `expected_time` field.
+
+To delay an order, update the `confirmed_time` field in HubRise. Deliveroo Bridge will calculate the delay between `expected_time` and `confirmed_time`, and send it to Deliveroo when the order status changes to `in_preparation`. The delay is rounded to the nearest even number of minutes between 0 and 10. Updating this field after the order has been marked as in preparation will have no effect.
 
 ## Customer
 

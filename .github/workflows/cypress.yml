@@ -4,6 +4,7 @@ on: push
 jobs:
   cypress:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     env:
       # Default is 4_000 ms.
@@ -17,7 +18,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18.16.0
+          node-version: 18.17.1
           cache: 'yarn'
 
       - name: Install JS dependencies

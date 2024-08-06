@@ -1127,13 +1127,22 @@ All conditions must be met simultaneously for a rule to match. When one or sever
 
 Images can be attached to products and deals, via their `image_ids` fields.
 
-Images must be uploaded before catalog data, since the images' `id`s must be passed in the products and deals. The sequence is therefore:
+### Image Management {#image-management}
 
-1. If you are not reusing an existing catalog, create an empty one first: `POST /catalogs`.
-1. Upload all your images: `POST /catalogs/:catalog_id/images`.
-1. Finally, upload the catalog: `PUT /catalogs/:catalog_id`.
+Images must be uploaded before catalog data. The sequence is:
 
-There is no endpoint to delete an image. Images which are not used for 30 days are automatically removed.
+1. If you are not reusing a catalog, create an empty one first: `POST /catalogs`.
+1. Upload all images: `POST /catalogs/:catalog_id/images` and retain their `id`s for the following step.
+1. Upload the catalog: `PUT /catalogs/:catalog_id`, using the image `id`s.
+
+If you are updating an existing catalog, you should only upload new images to reduce the amount of data to be sent. Follow this sequence:
+
+1. Fetch the existing images: `GET /catalogs/:catalog_id/images`. This request returns the `id`s and `md5` hashes of the existing images.
+1. Determine which images are new, either by `id` or by calculating the `md5` hash of each image to upload.
+1. Upload the new images: `POST /catalogs/:catalog_id/images` and retain their `id`s.
+1. Update the catalog: `PUT /catalogs/:catalog_id`, using the existing and new image `id`s.
+
+There is no endpoint to delete an image. Images that are not used for 30 days are automatically removed.
 
 ### 13.1. Create Image
 

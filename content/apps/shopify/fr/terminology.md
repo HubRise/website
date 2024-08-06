@@ -12,7 +12,7 @@ meta:
 
 HubRise et Shopify utilisent chacun leur propre terminologie. Un même concept peut donc exister sous une désignation différente dans chaque solution. Le tableau de correspondance ci-dessous présente ces différences.
 
-| Shopify  | HubRise  | Description                                                                                                        |
-| -------- | -------- | ------------------------------------------------------------------------------------------------------------------ |
+| Shopify  | HubRise  | Description                                                                                        |
+| -------- | -------- | -------------------------------------------------------------------------------------------------- |
 | Variante | SKU      | Une variante de produit, telle que la taille ou la couleur.                                        |
 | n/d      | Variante | Une variante de catalogue, utilisée pour unifier plusieurs canaux de vente dans un seul catalogue. |

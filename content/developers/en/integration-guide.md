@@ -111,6 +111,8 @@ Pay attention to a few common traps:
 When uploading product images to HubRise (for example, if you export your catalog), remember that the size limit is 1 Mb.
 Your integration should prevent or at least warn users when they try to upload big images (more than 1000px high or wide). Large images only slow down catalog import/export, without any real benefit, since third party websites and tools generally scale down images anyway.
 
+Limit the number of API calls by reusing existing images when possible. For a robust and fast workflow, refer to [Image Management](/developers/api/catalogs#image-management).
+
 An app using images should always perform image scaling, rather than relying on other apps to send images with reasonable size.
 
 HubRise supports the following image formats: JPEG, PNG, WEBP, GIF, and BMP. We recommend using JPEG or WEBP for photos, and PNG or WEBP for low entropy images, such as drawings, logos, or text.

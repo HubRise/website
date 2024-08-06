@@ -8,8 +8,13 @@ meta:
   description: Find out how to push a catalog from HubRise to the Just Eat platform, how items and options are encoded, and which features are supported.
 ---
 
-Just Eat does not provide a back office to populate and customise the items in your menu.
-You can use Just Eat Flyt Bridge to push your HubRise catalog into your Just Eat store with a single click.
+---
+
+**IMPORTANT NOTE:** Once HubRise is connected, you should always update your menu through HubRise. If you ask Just Eat support to update it, the connection will be broken, and you will stop receiving orders. If this happens, simply proceed with a Manual Catalog Push to restore the connection.
+
+---
+
+Just Eat does not provide a back office to populate and customise the items in your menu. You can use Just Eat Flyt Bridge to push your HubRise catalog into your Just Eat store with a single click.
 
 You can also configure the bridge to push your catalog into the platform every time it is updated on HubRise. For more information, see [Catalog](/apps/just-eat-flyt/configuration#catalog).
 

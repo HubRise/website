@@ -36,7 +36,7 @@ For each HubRise order status, specify the corresponding PrestaShop order status
 
 ![PrestaShop Bridge configuration page, service types](./images/010-prestashop-configuration-service-types.png)
 
-This section displays the list of carriers you have defined in your PrestaShop back-office. You can specify the ref code for each carrier, which will be sent as `service_type_ref` in order JSONs. This ref code is used to identify the carrier in your EPOS.
+This section displays the list of carriers you have defined in your PrestaShop back office. You can specify the ref code for each carrier, which will be sent as `service_type_ref` in order JSONs. This ref code is used to identify the carrier in your EPOS.
 
 Refer to your EPOS documentation on our [Apps page](/apps) to verify the correct codes to use.
 
@@ -50,7 +50,7 @@ This section lets you specify the ref code used for PrestaShop gift items. It us
 
 ![PrestaShop Bridge configuration page, discounts](./images/012-prestashop-configuration-discounts.png)
 
-This section lets you specify the discount ref code applied to your products, in case you have active discount rules in your PrestaShop back-office.
+This section lets you specify the discount ref code applied to your products, in case you have active discount rules in your PrestaShop back office.
 Refer to your EPOS documentation on our [Apps page](/apps) to see how to obtain the corresponding ref code.
 
 ### Charges
@@ -86,7 +86,7 @@ If your module uses two metadata keys, the supported formats are the following:
 
 ![PrestaShop Bridge configuration page, payments](./images/015-prestashop-configuration-payments.png)
 
-PrestaShop customers can pay for their order either online or by cash on delivery, depending on the modules you install in your PrestaShop back-office. Online payments include payments by check, bank wire, or other online payment platforms like PayPal.
+PrestaShop customers can pay for their order either online or by cash on delivery, depending on the modules you install in your PrestaShop back office. Online payments include payments by check, bank wire, or other online payment platforms like PayPal.
 
 This section of the configuration page allows you to specify the ref codes for online and cash payments. Refer to your EPOS documentation on our [Apps page](/apps) to verify the correct codes to use.
 
@@ -96,7 +96,7 @@ This section of the configuration page allows you to specify the ref codes for o
 
 Configure this section if you support multiple stores from the same PrestaShop website.
 
-Each location must be connected to PrestaShop Bridge and identified by a unique metadata value included in the order payload sent to HubRise. Orders are only forwarded to the location that matches the configured value. To include metadata in the order payload, you need to configure the HubRise module in your PrestaShop back-office. For more information, see [Order Metadata](#order-metadata).
+Each location must be connected to PrestaShop Bridge and identified by a unique metadata value included in the order payload sent to HubRise. Orders are only forwarded to the location that matches the configured value. To include metadata in the order payload, you need to configure the HubRise module in your PrestaShop back office. For more information, see [Order Metadata](#order-metadata).
 
 In the **Metadata key for multi-site** field, specify the metadata key used to identify the location.
 

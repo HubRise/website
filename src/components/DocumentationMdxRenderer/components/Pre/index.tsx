@@ -13,6 +13,8 @@ interface PreProps {
 ;(typeof global !== "undefined" ? global : window).Prism = Prism
 require("prismjs/components/prism-json")
 require("prismjs/components/prism-ruby")
+require("prismjs/components/prism-javascript")
+require("prismjs/components/prism-python")
 
 const Pre = ({ children }: PreProps): JSX.Element | null => {
   if (!children) return null

@@ -22,6 +22,11 @@ finalConfig = {
   compiler: {
     styledComponents: {}, // The presence of this empty object makes SC use human-readable class names in dev mode.
   },
+  transpilePackages: [
+    // Workaround for Error [ERR_REQUIRE_ESM]: require() of ES Module - see
+    // https://github.com/hashicorp/next-mdx-remote/issues/381#issuecomment-2057520430
+    "next-mdx-remote"
+  ],
   redirects: async () => {
     const yamlFile = join(process.cwd(), "content", "redirects.yaml")
     const data = await fs.readFile(yamlFile, "utf8")

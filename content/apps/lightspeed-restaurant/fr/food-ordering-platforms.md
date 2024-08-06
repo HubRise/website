@@ -195,6 +195,5 @@ Sur la page de configuration d'Uber Eats Bridge, utilisez les paramètres suivan
 | Paiements           | Code ref paiement en ligne                                  | `UEPM`                                                                             |
 | Paiements           | Code ref paiement en espèces                                | (laisser vide)                                                                     |
 | Clients             | Code d'accès au téléphone en double dans [...]              | Cochez cette case                                                                  |
-| Catalogue           | Activer les notes de préparation du client sur les produits | Cochez la case pour les activer.                                                   |
 
 (\*) Ne s'applique que si vous proposez des articles jetables tels que des couverts, des serviettes, etc.

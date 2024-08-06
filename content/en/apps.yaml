@@ -107,6 +107,12 @@ content:
           title: Nestor
           description: Nestor is a French Point of Sales solution designed for home delivery and takeaway restaurants.
           additional_info:
+        - website: https://www.netfood.cloud
+          documentation: /apps/netfood
+          logo: netfood.png
+          title: NetFood
+          description: NetFood, developed by .Net Informatica, is an Italian EPOS solution for the food & beverage sector. NetFood EPOS can be complemented with an online ordering solution and mobile app as well as a self-ordering kiosk.
+          additional_info:
         - website: https://nextorder.com/en-gb
           documentation: /apps/next-order
           logo: next-order.png
@@ -132,13 +138,13 @@ content:
         - website: https://www.partech.com/pixel-point-software/
           documentation: /apps/pixelpoint-bridge
           logo: par-pixelpoint-web-api.png
-          title: PixelPoint (web API)
+          title: PAR PixelPoint (web API)
           description: PixelPoint by PAR, integrated via its Web API, is a Point of Sales solution for restaurants and entertainment industry sectors. PixelPoint is used for cost management, loss prevention and loyalty programs.
           additional_info: Web API integration.
         - website: https://www.partech.com/pixel-point-software/
           documentation: /apps/pixelpoint-windows-api
           logo: par-pixelpoint.png
-          title: PixelPoint (Windows API)
+          title: PAR PixelPoint (Windows API)
           description: PixelPoint by PAR, integrated via its Windows API, is a Point of Sale solution for restaurants and entertainment industry sectors. PixelPoint is used for cost management, loss prevention and loyalty programs.
           additional_info: Windows API integration by Slowey Systems.
         - website: https://www.pointone-epos.co.uk/
@@ -158,6 +164,12 @@ content:
           logo: pos-helper.png
           title: POS HELPER
           description: POS HELPER is a Point of Sales for restaurants. It includes production, cost control and payment functionalities. They also offer Kitchen Display Systems, self-service kiosks, and online ordering.
+          additional_info:
+        - website: https://www.cunninghams.co.uk/
+          documentation: /apps/quantum
+          logo: quantum.png
+          title: Quantum by Cunninghams EPOS Group
+          description: Quantum by Cunninghams EPOS Group offers an EPOS system for various sectors, featuring sales management, stock control, customer loyalty, various eCommerce functionnalities, and real-time reporting.
           additional_info:
         - website: https://www.rmpos.com/
           documentation: /apps/restaurant-manager
@@ -200,6 +212,11 @@ content:
           title: TASK
           description: TASK is an EPOS solution engineered for the global hospitality and dining sectors. It offers features such as real-time reporting enhanced with Business Intelligence capabilities, inventory management, and ordering solutions through kiosks, web platforms, and mobile apps. TASK excels in the management of customer relationship, loyalty, and promotions.
           additional_info:
+        - website: https://tickeat.io
+          documentation: /apps/tickeat
+          logo: tickeat.png
+          title: Tick'Eat
+          description: Tick'Eat is a multi-platform EPOS specifically designed by and for restaurateurs. It handles on-site and online orders, including orders from delivery platforms, offers easy menu updates, and includes a dispatch function for delivery drivers.
         - website: https://www.ultimapos.fr/
           documentation: /apps/ultimapos
           logo: ultimapos.png
@@ -286,7 +303,7 @@ content:
         - website: https://www.justeattakeaway.com/
           documentation: /apps/just-eat-takeaway
           logo: takeaway.png
-          title: Takeaway.com
+          title: Just Eat Takeaway
           description: Takeaway.com is an online food ordering and delivery platform for local restaurants. Customers can order food online or via a mobile app. Available in Belgium, Luxembourg, Portugal, Romania, and in Bulgaria.
           additional_info:
         - website: https://www.talabat.com
@@ -331,6 +348,11 @@ content:
           logo: dood.png
           title: DOOD
           description: DOOD is an e-commerce and e-marketing solution for the food retail industry. DOOD online ordering supports Click & Collect, delivery, and table ordering. DOOD's suite of marketing tools is designed to increase customer loyalty.
+        - website: https://eddress.co
+          documentation: /apps/eddress
+          logo: eddress.png
+          title: eddress
+          description: eddress is an online ordering solution for restaurants and grocery stores, with integrated delivery management. It is suitable for businesses of all sizes, whether independent or franchised. Available in 20 languages and deployed in more than 17 countries.
         - website: https://www.gonnaorder.com
           documentation: /apps/gonnaorder
           logo: gonnaorder.png
@@ -572,7 +594,7 @@ content:
           documentation: /apps/koust
           logo: koust.png
           title: Koust
-          description: Koust helps all types of restaurants to manage their inventory, analyse their sales and gross margin, optimise purchasing, and build their menu.
+          description: Koust is an operations management solution designed for restaurants and hotels, enabling them to manage inventory, analyse sales and gross margin, optimise purchases, and adjust menus to enhance offerings while ensuring margin control.
           additional_info:
         - website: https://malba.io/
           documentation: /apps/melba
@@ -596,6 +618,11 @@ content:
           logo: somm-it.png
           title: SOMM'IT
           description: SOMM'IT helps you manage your wine list. Sync your inventory with your EPOS to keep your wine list up to date. SOMM'IT includes a large wine library, and a dematerialised procurement system.
+        - website: https://www.stocktake-online.com
+          documentation: /apps/stocktake-online
+          logo: stocktake-online.png
+          title: Stocktake Online
+          description: StockTake Online is an inventory management system designed for restaurants, bars, nightclubs, and more. It helps organise operations by simplifying purchasing, minimising waste, and enhancing profitability.
     - title: Other Apps
       slug: other-apps
       apps:
