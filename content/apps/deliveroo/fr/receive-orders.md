@@ -101,7 +101,9 @@ Ceux-ci sont généralement associés à des codes ref spécifiques dans votre l
 
 ## Horaires des commandes
 
-Pour les commandes livrées par le restaurant, Deliveroo fournit l'heure à laquelle le client attend la livraison de sa commande. Pour les autres types de commandes, il fournit l'heure à laquelle la commande doit être prête à emporter, que ce soit par le client ou un livreur Deliveroo. Dans les deux scénarios, cet horaire est transmis à HubRise dans le champ `expected_time`. Cet horaire ne peut pas être modifié par le logiciel de caisse.
+Pour les commandes livrées par le restaurant, Deliveroo fournit l'heure à laquelle le client attend la livraison de sa commande. Pour les autres types de commandes, il fournit l'heure à laquelle la commande doit être prête à emporter, que ce soit par le client ou un livreur Deliveroo. Dans les deux scénarios, cet horaire est transmis à HubRise dans le champ `expected_time`, et il ne peut pas être modifié par le logiciel de caisse.
+
+Pour retarder une commande, modifiez le champ `confirmed_time` dans HubRise. Deliveroo Bridge va calculer le délai entre `expected_time` et `confirmed_time`, et l'envoyer à Deliveroo lorsque le statut de la commande passe à `in_preparation`. Le délai est arrondi au nombre pair de minutes le plus proche entre 0 et 10. La mise à jour de ce champ après que la commande a été marquée comme en préparation n'aura aucun effet.
 
 ## Client
 
@@ -145,8 +147,7 @@ Deliveroo Bridge peut encoder trois types de frais :
 
 Les champs disponibles dans les requêtes sont les suivants :
 
-- `name` : intitulé des frais, qui peut être soit `Delivery charge`, `Surcharge` ou `Bag fee`.
-- `type` : type de frais. La valeur est `delivery` pour les frais de livraison, et `other` pour les suppléments liés aux commandes inférieures au montant minimum de commande requis et aux frais d'emballage.
+- `name` : intitulé des frais, qui peut être soit `Frais de livraison`, `Surcharge` ou `Frais d'emballage`.
 - `ref` : code ref des frais. La valeur par défaut peut être définie dans de la page de configuration de Deliveroo Bridge. Elle doit correspondre à la valeur définie dans votre logiciel de caisse.
 - `price` : montant des frais.
 

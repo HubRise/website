@@ -21,7 +21,7 @@ Pour mettre à jour votre menu Deliveroo, vous devez préalablement avoir un cat
 Vous pouvez aussi alimenter un catalogue HubRise en récupérant un menu existant depuis Deliveroo ou Uber Eats. Pour plus d'informations, consultez ces liens :
 
 - [Récupérer un catalogue depuis Deliveroo](/apps/deliveroo/pull-catalog)
-- <Link href="/apps/uber-eats/pull-catalog">Récupérer un catalogue depuis Uber Eats (en anglais)</Link>
+- [Récupérer un catalogue depuis Uber Eats](/apps/uber-eats/pull-catalog)
 
 ## Envoi manuel du catalogue
 
@@ -89,7 +89,7 @@ Deliveroo Bridge envoie les promotions HubRise sous forme de produits avec des m
 
 ### Images
 
-Deliveroo exige que les images soient au format 1920x1080 pixels.
+Deliveroo exige que les images soient au format 1200x800 pixels.
 
 ## Référence technique
 
@@ -113,7 +113,7 @@ Les produits ont une ou plusieurs SKU. Pour chaque produit avec plusieurs SKU, D
 - `name` : nom du produit.
 - `description` : description du produit.
 - `price` : prix minimum de tous les SKU.
-- `tags` : balises décrivant les caractéristiques et les restrictions du produit, telles que les allergènes ou la saveur épicée. Voir [Balises produit](#product-tags).
+- `tags` : balises décrivant les caractéristiques et les restrictions du produit, telles que les allergènes ou la saveur épicée. Voir [Tags produit](#product-tags).
 - `image` : adresse URL de la photo du produit.
 
 La liste de SKU est jointe au produit sous forme d'une table de modificateurs.
@@ -127,11 +127,11 @@ Pour chaque `sku` d'un produit, Deliveroo Bridge envoie les informations suivant
 
 Pour plus d'informations sur les SKU dans les catalogues HubRise, voir [Skus](/developers/api/catalogs#skus) (en anglais).
 
-### Balises produit {#product-tags}
+### Tags produit {#product-tags}
 
-Le tableau ci-dessous énumère les balises qui peuvent être définies sur les produits.
+Le tableau ci-dessous énumère les tags qui peuvent être définis sur les produits.
 
-| Balise                               | Description                                              |
+| Tag                                  | Description                                              |
 | ------------------------------------ | -------------------------------------------------------- |
 | `alcoholic`                          | Produit contenant de l'alcool.                           |
 | `deal_only`                          | Ne peut être commandé que dans le cadre d'une promotion. |
@@ -151,7 +151,7 @@ Le tableau ci-dessous énumère les balises qui peuvent être définies sur les 
 | `allergen_sulphur_dioxide_sulphites` | Contient l'allergène indiqué.                            |
 | `deposit_cc`                         | Nécessite un acompte. `cc` est un montant en centimes.   |
 
-Si un produit ne contient aucun allergène, Deliveroo Bridge ajoute automatiquement la balise `no_allergens`.
+Si un produit ne contient aucun allergène, Deliveroo Bridge ajoute automatiquement le tag `no_allergens`.
 
 ### Options
 
