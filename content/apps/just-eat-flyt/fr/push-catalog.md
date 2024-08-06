@@ -26,6 +26,8 @@ Pour mettre à jour votre menu dans Just Eat, vous devez préalablement avoir un
 
 Vous pouvez aussi alimenter un catalogue HubRise en récupérant un menu existant depuis Deliveroo ou Uber Eats. Pour plus d'informations, consultez ces liens :
 
+- [Récupérer le catalogue depuis Deliveroo](/apps/deliveroo/pull-catalog)
+- [Récupérer le catalogue depuis Uber Eats](/apps/uber-eats/pull-catalog)
 
 ## Envoi manuel du catalogue
 
