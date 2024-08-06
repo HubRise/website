@@ -120,14 +120,14 @@ Chaque option a une quantité égale à 1. Les options multiples identiques sont
   {
     "product_name": "Poulet au curry",
     "sku_ref": "2473",
-    "price": "12,95 EUR",
+    "price": "12.95 EUR",
     "quantity": "1",
     "options": [
       {
         "option_list_name": "Options",
         "name": "Riz thaï",
         "ref": "2043",
-        "price": "0,35 EUR"
+        "price": "0.35 EUR"
       }
     ]
   }
@@ -210,13 +210,13 @@ Les champs disponibles dans les requêtes sont les suivants :
       "type": "delivery",
       "name": "Delivery charge",
       "ref": "1111",
-      "price": "3,50 EUR"
+      "price": "3.50 EUR"
     },
     {
       "type": "other",
       "name": "Service charge",
       "ref": 2222,
-      "price": "0,50 EUR"
+      "price": "0.50 EUR"
     }
   ]
 }
