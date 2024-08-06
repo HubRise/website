@@ -124,7 +124,6 @@ Dans la page de configuration de Uber Eats Bridge, utilisez les paramètres suiv
 | Paiements           | Code ref paiement en ligne                   | `UBEREATS`                                                             |
 | Paiements           | Code ref paiement en espèces                 | (laisser vide)                                                         |
 | Clients             | Dupliquer le code d'accès téléphone [...]    | Cocher cette case                                                      |
-| Menu                | Activer les notes de préparation [...]       | Laisser la case décochée                                               |
 
 (\*) Applicable uniquement si vous proposez des jetables, tels que des couverts, serviettes, etc.
 

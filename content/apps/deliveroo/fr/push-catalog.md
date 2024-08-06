@@ -89,7 +89,7 @@ Deliveroo Bridge envoie les promotions HubRise sous forme de produits avec des m
 
 ### Images
 
-Deliveroo exige que les images soient au format 1200x800 pixels.
+Deliveroo exige que les images soient au format 1920x1080 pixels.
 
 ## Référence technique
 

@@ -42,7 +42,8 @@ Connecter SwooPOS à HubRise permet à votre logiciel de caisse SwooPOS de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Envoyer les informations clients à HubRise.
-- Envoyer un catalogue à HubRise.
+- Envoyer un catalogue à HubRise, avec support des variantes.
+- Synchroniser les horaires d'ouverture avec HubRise.
 
 ---
 

@@ -76,6 +76,23 @@ Catalog variants give you the flexibility to disable specific items or adjust pr
 
 If your catalog includes variants, you have the option to select which ones to use. You can select different variants for the delivery and collection menus, or use the same variant for both. When **(none)** is selected, all items along with their standard prices are sent to Just Eat.
 
+### Special Menus
+
+Special menus allow you to schedule different catalog variants for specific days and times. This feature is useful for offering separate breakfast or lunch menus, for example.
+
+To configure special menus:
+
+1. Ensure your catalog contains the necessary variants.
+2. Select the number of special menus you want to set up (up to 5) from the dropdown menu.
+3. For each special menu:
+    - Select the days of the week when this menu should be active.
+    - Set the start time (**From**) and end time (**to**) for the menu.
+    - Choose the delivery and collection catalog variants to use during this time period.
+
+When special menus are configured, Just Eat will automatically switch to the appropriate catalog variant based on the order expected time and whether it's for delivery or collection.
+
+If there is no special menu active at a particular time, Just Eat will use the default catalog variants specified in the **Catalog variant to push** settings for delivery and collection.
+
 ### Service Types
 
 In this section, you can specify the service types that your restaurant offers, such as delivery, collection, or both. Your preferences will be sent to Just Eat on the next catalog push.

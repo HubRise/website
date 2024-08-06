@@ -33,7 +33,7 @@ Additionally, from this section, you can choose to categorise orders fulfilled b
 
 ### Special Items
 
-Some markets such as Ireland require deposits on certain items. If your business requires this, you can specify the ref code for the deposit item in this section. The deposit item must first be created as an option in your EPOS. Once configured, it will be automatically added to any items that require a deposit.  
+Some markets such as Ireland require deposits on certain items. If your business requires this, you can specify the ref code for the deposit item in this section. The deposit item must first be created as an option in your EPOS. Once configured, it will be automatically added to any items that require a deposit.
 
 ### Discounts
 
@@ -73,6 +73,23 @@ Catalog variants give you the flexibility to disable specific items or adjust pr
 
 If your catalog includes variants, you have the option to select which one to use. When **(none)** is selected, the default items along with their standard prices are used.
 
+### Special Menus
+
+Special menus allow you to schedule different catalog variants for specific days and times. This feature is useful for offering separate breakfast or lunch menus, for example.
+
+To configure special menus:
+
+1. Ensure your catalog contains the necessary variants.
+1. Select the number of special menus you want to set up (up to 5) from the dropdown menu.
+1. For each special menu:
+   - Select the days of the week when this menu should be active.
+   - Set the start time (**From**) and end time (**to**) for the menu.
+   - Choose the catalog variant to use during this time period.
+
+When special menus are configured, Deliveroo will automatically switch to the appropriate catalog variant based on the order expected time.
+
+If there is no special menu active at a particular time, Deliveroo will use the default catalog variant specified in the **Catalog Variant to Push** setting.
+
 ### Deliveroo menu
 
 The **Brand ID** and **Menu ID** fields identify the menu you wish to update on Deliveroo. The default values generally work for most users.
@@ -99,7 +116,7 @@ The **Menu description** and **Menu banner** replace the current description and
 
 ![Deliveroo Bridge configuration page, Location section](./images/017-configuration-page-location.png)
 
-Select the **Enable automatic opening hours push** checkbox to update your opening hours in Deliveroo whenever they get updated in HubRise. 
+Select the **Enable automatic opening hours push** checkbox to update your opening hours in Deliveroo whenever they get updated in HubRise.
 
 ## Inventory
 

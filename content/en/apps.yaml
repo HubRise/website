@@ -165,6 +165,12 @@ content:
           title: POS HELPER
           description: POS HELPER is a Point of Sales for restaurants. It includes production, cost control and payment functionalities. They also offer Kitchen Display Systems, self-service kiosks, and online ordering.
           additional_info:
+        - website: https://www.cunninghams.co.uk/
+          documentation: /apps/quantum
+          logo: quantum.png
+          title: Quantum by Cunninghams EPOS Group
+          description: Quantum by Cunninghams EPOS Group offers an EPOS system for various sectors, featuring sales management, stock control, customer loyalty, various eCommerce functionnalities, and real-time reporting.
+          additional_info:
         - website: https://www.rmpos.com/
           documentation: /apps/restaurant-manager
           logo: restaurant-manager.png
@@ -206,6 +212,11 @@ content:
           title: TASK
           description: TASK is an EPOS solution engineered for the global hospitality and dining sectors. It offers features such as real-time reporting enhanced with Business Intelligence capabilities, inventory management, and ordering solutions through kiosks, web platforms, and mobile apps. TASK excels in the management of customer relationship, loyalty, and promotions.
           additional_info:
+        - website: https://tickeat.io
+          documentation: /apps/tickeat
+          logo: tickeat.png
+          title: Tick'Eat
+          description: Tick'Eat is a multi-platform EPOS specifically designed by and for restaurateurs. It handles on-site and online orders, including orders from delivery platforms, offers easy menu updates, and includes a dispatch function for delivery drivers.
         - website: https://www.ultimapos.fr/
           documentation: /apps/ultimapos
           logo: ultimapos.png
@@ -337,6 +348,11 @@ content:
           logo: dood.png
           title: DOOD
           description: DOOD is an e-commerce and e-marketing solution for the food retail industry. DOOD online ordering supports Click & Collect, delivery, and table ordering. DOOD's suite of marketing tools is designed to increase customer loyalty.
+        - website: https://eddress.co
+          documentation: /apps/eddress
+          logo: eddress.png
+          title: eddress
+          description: eddress is an online ordering solution for restaurants and grocery stores, with integrated delivery management. It is suitable for businesses of all sizes, whether independent or franchised. Available in 20 languages and deployed in more than 17 countries.
         - website: https://www.gonnaorder.com
           documentation: /apps/gonnaorder
           logo: gonnaorder.png
@@ -602,6 +618,11 @@ content:
           logo: somm-it.png
           title: SOMM'IT
           description: SOMM'IT helps you manage your wine list. Sync your inventory with your EPOS to keep your wine list up to date. SOMM'IT includes a large wine library, and a dematerialised procurement system.
+        - website: https://www.stocktake-online.com
+          documentation: /apps/stocktake-online
+          logo: stocktake-online.png
+          title: Stocktake Online
+          description: StockTake Online is an inventory management system designed for restaurants, bars, nightclubs, and more. It helps organise operations by simplifying purchasing, minimising waste, and enhancing profitability.
     - title: Other Apps
       slug: other-apps
       apps:

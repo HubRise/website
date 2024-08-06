@@ -161,6 +161,12 @@ content:
           title: POS HELPER
           description: POS HELPER est un logiciel de caisse pour les restaurants, qui inclut des fonctionnalités de production, de gestion, de pilotage et de facturation. POS HELPER propose aussi un écran cuisine, une borne de commande et un système de commande en ligne.
           additional_info:
+        - website: https://www.cunninghams.co.uk
+          documentation: /fr/apps/quantum
+          logo: quantum.png
+          title: Quantum by Cunninghams EPOS Group
+          description: Quantum, développé par Cunninghams EPOS Group, propose un logiciel de caisse pour divers secteurs, offrant la gestion des ventes, le contrôle des stocks, la fidélisation, une solution de eCommerce et des rapports en temps réel.
+          additional_info:
         - website: https://www.rmpos.com/
           documentation: /fr/apps/restaurant-manager
           logo: restaurant-manager.png
@@ -202,6 +208,11 @@ content:
           title: TASK
           description: TASK est un logiciel de caisse conçu pour les acteurs internationaux de l'hôtellerie et de la restauration. Il propose des rapports en temps réel avec fonctionnalités de Business Intelligence, la gestion des stocks, ainsi que des solutions de commande via kiosques, plateformes en ligne et applications mobiles. TASK est particulièrement adapté pour la gestion de la relation client, de la fidélisation et des promotions.
           additional_info:
+        - website: https://tickeat.io
+          documentation: /fr/apps/tickeat
+          logo: tickeat.png
+          title: Tick'Eat
+          description: Tick'Eat est une caisse enregistreuse multiplateforme conçue par et pour des restaurateurs. Elle permet la gestion des commandes sur place et en ligne, y compris les commandes des plateformes de livraison de repas, et permet une mise à jour facile des menus. Elle inclut également une fonction de dispatching pour les livreurs.
         - website: https://www.ultimapos.fr/
           documentation: /fr/apps/ultimapos
           logo: ultimapos.png
@@ -335,6 +346,11 @@ content:
           logo: dood.png
           title: DOOD
           description: DOOD est une solution e-commerce et e-marketing destinés au food retail. Adaptée aux indépendants comme aux chaînes, la solution de commande en ligne en marque blanche de DOOD permet le click & collect, la livraison, et le service à table. DOOD inclut une suite d'outils marketing pour développer la fidélisation client.
+        - website: https://eddress.co
+          documentation: /fr/apps/eddress
+          logo: eddress.png
+          title: eddress
+          description: eddress est une solution de commande en ligne pour les restaurants et les épiceries, avec gestion de livreurs intégrée. Elle convient aux enseignes de toute taille, indépendantes ou franchisées. Disponible en 20 langues et déployée dans plus de 17 pays.
         - website: https://www.gonnaorder.com/?lang=fr
           documentation: /fr/apps/gonnaorder
           logo: gonnaorder.png
@@ -610,6 +626,11 @@ content:
           logo: somm-it.png
           title: SOMM'IT
           description: SOMM'IT vous accompagne dans la gestion de votre carte des vins. Synchronisez votre inventaire avec votre EPOS, et éditez une carte des vins à jour. SOMM'IT inclut une large bibliothèque de vins, et un module de gestion des commandes fournisseurs.
+        - website: https://www.stocktake-online.com
+          documentation: /fr/apps/stocktake-online
+          logo: stocktake-online.png
+          title: StockTake Online
+          description: StockTake Online est un système de gestion d'inventaire conçu pour les restaurants, les bars, les discothèques, et plus encore. Il aide à organiser les opérations en simplifiant les achats, en minimisant les déchets et en améliorant la rentabilité.
     - title: Autres applications
       slug: other-apps
       apps:
