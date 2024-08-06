@@ -11,11 +11,11 @@ excerpt: Découvrez comment créer un tableau de bord des commandes en temps ré
 
 [//]: # "Photo credits: Dall-E"
 
-L'API ouverte de HubRise permet d'envoyer vos données clients, produits et de commande vers n'importe quel service muni d'une API.
+L'API ouverte de HubRise permet d'envoyer vos données clients, produits et de commande vers n'importe quel service muni d'une API. Vous pouvez créer des tableaux de bord, des listes de clients, déclencher des campagnes de marketing basées sur l'historique des commandes ou transmettre des données vers des outils de business intelligence.
 
 Dans cet article, nous allons découvrir comment créer un tableau de bord dans Google Sheets avec les données de commande HubRise, et regrouper en un seul endroit les commandes Uber Eats, Deliveroo, etc. Ce guide est adapté aux utilisateurs ayant quelques connaissances techniques.
 
-Il ne s'agit que d'un exemple simple. Les principes décrits ici s'appliquent à des intégrations plus complexes. L'objectif est de vous présenter les bases et vous encourager à explorer plus avant.
+Il ne s'agit que d'un exemple simple, mais les principes décrits ici s'appliquent à des intégrations plus complexes. L'objectif est de vous présenter les bases et vous encourager à explorer plus avant.
 
 ## Prérequis
 
@@ -169,13 +169,13 @@ Testez à présent l'intégration. Ouvrez pour cela **Developer tools** et injec
 
 Vous pouvez maintenant créer votre tableau de bord personnalisé dans Google Sheets en ajoutant des tableaux croisés dynamiques, des graphiques en secteurs ou tout autre composant que vous trouvez utile.
 
-Voici un exemple simple. Vous pouvez créer des analyses beaucoup plus complexes puisque toutes les données de commande sont maintenant disponibles dans Google Sheets :
+Ci-dessous un exemple simple - vous pouvez créer des analyses beaucoup plus complexes puisque toutes les données de commande sont maintenant disponibles dans Google Sheets :
 
 ![Tableau de bord](../images/004-dashboard.png)
 
 Votre tableau de bord sera bien sûr automatiquement mis à jour à mesure que de nouvelles commandes arrivent.
 
-## Explorer de nouvelles idées
+## Pour aller plus loin
 
 Félicitations, vous avez configuré votre première intégration personnalisée HubRise !
 
@@ -186,6 +186,6 @@ Ce n'est qu'un aperçu de ce que vous pouvez réaliser avec HubRise. Voici quelq
 - Configurer des notifications pour les commandes d'un montant élevé ou autres conditions spécifiques
 - Effectuer une intégration avec d'autres applications disponibles dans Make.com
 
-Nous avons utilisé Make.com dans ce guide, mais vous pouvez appliquer les mêmes principes à d'autres plateformes d'automatisation comme Zapier ou n8n. Vous pouvez même créer votre propre solution en utilisant un langage de programmation.
+Nous avons utilisé Make.com dans ce guide, mais vous pouvez appliquer les mêmes principes à d'autres plateformes d'automatisation comme Zapier ou n8n ; vous pouvez même créer votre propre solution en utilisant un langage de programmation.
 
 Bonne automatisation !
