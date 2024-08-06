@@ -8,7 +8,7 @@ meta:
   description: Cette page explique la fonction Just Eat d'acceptation automatique à la connexion de Just Eat Flyt Bridge à HubRise.
 ---
 
-Si vous ne souhaitez pas utiliser la tablette Just Eat, demandez l'activation de l'acceptation automatique. Lorsque la fonction est activée, les commandes sont envoyées via HubRise directement à votre logiciel de caisse connecté, ce qui vous dispense d'accepter chaque commande manuellement sur votre tablette.
+Si vous ne souhaitez pas utiliser la tablette Just Eat, demandez l'activation de l'acceptation automatique. Lorsque la fonction est activée, les commandes sont envoyées, via HubRise, directement à votre logiciel de caisse connecté, ce qui vous dispense d'accepter chaque commande manuellement sur votre tablette.
 
 Just Eat ne recommande pas d'activer l'acceptation automatique, à cause du risque de commandes manquées.
 
@@ -24,7 +24,7 @@ L’acceptation automatique est disponible uniquement dans les pays suivants :
 - Italie
 - Espagne
 - Royaume-Uni
-- Canada (avec Skip The Dishes)
+- Canada (avec SkipTheDishes)
 - Australie (avec Menulog)
 
 L'équipe de Just Eat Flyt peut activer l'acceptation automatique lors de la configuration de l'intégration. L'équipe d'assistance Just Eat peut également le faire une fois la connexion à HubRise établie.
