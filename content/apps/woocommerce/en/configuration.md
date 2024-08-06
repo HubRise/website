@@ -86,7 +86,7 @@ If your plugin uses two metadata keys, the supported formats are the following:
 
 ![WooCommerce Bridge configuration page, misc order metadata](./images/016-woocommerce-configuration-misc-order-metadata.png)
 
-In this section, you can specify the metadata key that WooCommerce uses for the customer notes at the order level.
+In this section, you can specify the metadata keys that WooCommerce uses for the customer notes at the order level. You can enter multiple keys separated by commas.
 
 ### Order Item Metadata {#order-item-metadata}
 

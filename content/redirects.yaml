@@ -117,3 +117,7 @@
   toPath: /apps/woocommerce/pull-orders
 - fromPath: /apps/woocommerce/pulling-catalog
   toPath: /apps/woocommerce/push-catalog
+
+# Blog
+- fromPath: /blog/google-sheets-dashboard
+  toPath: /blog/dashboard-google-sheets

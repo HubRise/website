@@ -1,14 +1,12 @@
 import styled from "styled-components"
 
-import { colors, fontSizes, lineHeights } from "@utils/styles"
+import { colors, lineHeights } from "@utils/styles"
 
-export const StyledTitle = styled.div`
+export const StyledTitle = styled.h1`
   color: ${colors.textDarkest};
   font-weight: 700;
   position: relative;
-  font-size: ${fontSizes._32};
   line-height: ${lineHeights.comfortable};
-  margin-bottom: 1.5rem;
 
   &:after {
     content: "";
