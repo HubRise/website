@@ -41,7 +41,7 @@ Cette section de la page de configuration permet de spécifier les codes ref pou
 
 ## Statuts de commande
 
-Just Eat Takeaway vous demande de marquer chaque commande réussie comme `Acceptée`. Cette section vous permet de sélectionner le changement de statut HubRise utilisé pour envoyer la confirmation à Just Eat Takeaway.
+Just Eat Takeaway vous demande de marquer chaque commande réussie comme `confirmée`. Cette section vous permet de sélectionner le changement de statut HubRise utilisé pour envoyer la confirmation à Just Eat Takeaway.
 
 ## Enregistrer la configuration
 
