@@ -22,10 +22,10 @@ Pour commencer, l'équipe d'intégration Just Eat doit activer l'intégration de
 
 Contactez-nous par e-mail à l'adresse support@hubrise.com en précisant les informations suivantes :
 
-- Le lien URL renvoyant à la page de votre restaurant sur le site internet de Just Eat. Par exemple : https://www.just-eat.ie/restaurants-saba-to-go-rathmines/.
+- Le lien URL renvoyant à la page de votre restaurant sur le site internet de Just Eat. Par exemple : https://www.just-eat.ie/restaurants-saba-to-go-rathmines.
 - Indiquez si l'acceptation automatique doit être activée (`Activated`) ou désactivée (`Deactivated`). Pour plus d'informations, voir [Pourquoi activer l'acceptation automatique sur Just Eat ?](/apps/just-eat-flyt/faqs/auto-accept)
 - Indiquez si votre restaurant Just Eat est déjà connecté à un autre middleware ou logiciel de caisse.
-- Le nom et l'identifiant de votre point de vente HubRise. Par exemple : `Fast Pizza Baker Street z6q31-0`.
+- Le nom et l'identifiant de votre point de vente HubRise. Par exemple : `Sushi My! Paris Étoile z6q31-0`.
 
 Avec ces informations, nous demanderons à l'équipe d'intégration Just Eat d'activer la connexion HubRise pour votre restaurant.
 
