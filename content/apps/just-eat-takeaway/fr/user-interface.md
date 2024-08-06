@@ -12,7 +12,7 @@ Dans Just Eat Takeaway Bridge, vous pouvez consulter les logs de toutes les opé
 
 ## Dernières opérations
 
-Il s'agit de la page qui s'affiche lorsque vous ouvrez Just Eat Takeaway Bridge. Elle contient les dernières opérations d'API échangées entre HubRise, PrestaShop et Just Eat Takeaway Bridge.
+Il s'agit de la page qui s'affiche lorsque vous ouvrez Just Eat Takeaway Bridge. Elle contient les dernières opérations d'API échangées entre HubRise, Just Eat et Just Eat Takeaway Bridge.
 
 Ces opérations peuvent soit être liées à une commande spécifique, soit être des requêtes système génériques exécutées par Just Eat Takeaway Bridge.
 
@@ -21,7 +21,7 @@ Chaque ligne de la page affiche les informations relatives à une opération :
 - **HEURE** : date et heure de la commande
 - **COMMANDE** : identifiant HubRise de la commande, pour les opérations de commande
 - **DESCRIPTION** : description facultative pour les opérations qui ne sont pas liées à une commande spécifique. Cette colonne peut être vide, ou afficher `Requête système` ou `Envoi catalogue`.
-- **STATUT** : statut de la commande La valeur `OK` indique que la commande a bien été envoyée. Dans le cas contraire, un code d'erreur s'affiche en rouge.
+- **STATUT** : statut de la commande. La valeur `OK` indique que la commande a bien été envoyée. Dans le cas contraire, un code d'erreur s'affiche en rouge.
 
 Le libellé **Requête système** indique que l'opération n'est pas liée à une commande spécifique.
 
