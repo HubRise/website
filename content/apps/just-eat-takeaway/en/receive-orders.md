@@ -107,7 +107,7 @@ For every item in the order, Just Eat Takeaway Bridge provides the following inf
 
 For every option in the order, Just Eat Bridge provides the following information:
 
-- `option_list_name`: The placeholder for the option list name, with default value **Options**
+- `option_list_name`: The placeholder for the option list name, with default value `Options`
 - `ref`: The ref code of the option
 - `name`: The option name
 - `price`: The price for a single item
@@ -248,7 +248,7 @@ The fields for service fees are:
 
 - `name`: Always set to `Service fee`.
 - `type`: Always set to `other`.
-- `ref`: The ref code of the charge. You can set its value on the Just Eat Bridge **Configuration** page. Ensure that it matches the value in your EPOS.
+- `ref`: The ref code of the charge. You can set its value from the Configuration page of Just Eat Bridge. Ensure that it matches the value in your EPOS.
 - `price`: The amount of the service fee.
 
 ## Customer Notes
