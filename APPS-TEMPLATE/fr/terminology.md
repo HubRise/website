@@ -23,6 +23,7 @@ HubRise et SOLUTION utilisent chacun leur propre terminologie. Un même concept 
 | SOLUTION | HubRise            | Description                                                                                          |
 | -------- | ------------------ | ---------------------------------------------------------------------------------------------------- |
 | ...      | Code ref           | Code produit.                                                                                        |
+| ...      | Catégorie          | Un groupe de produits.                                                                               |
 | ...      | Produit            | Un produit est constitué de une ou plusieurs SKUs.                                                   |
 | ...      | SKU                | Une variante de produit, telle que la taille ou la couleur.                                          |
 | ...      | Option             | Service ou article pouvant être ajouté au produit, comme une sauce ou un supplément.                 |

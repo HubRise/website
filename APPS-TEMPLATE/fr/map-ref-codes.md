@@ -55,10 +55,6 @@ SOLUTION ne permet pas de créer de SKUs. Pour remplacer cette fonctionnalité, 
 
 ...
 
-## Frais
-
-...
-
 ## Promotions
 
 Les promotions dans HubRise correspondent aux ... dans SOLUTION. Pour retrouver le code ref d'une promotion, suivez ces étapes : ...
@@ -73,7 +69,11 @@ Les remises dans HubRise correspondent aux ... dans SOLUTION. Pour retrouver le 
 
 **OU**
 
-Les remises dans HubRise sont les offres spéciales qui s'appliquent à l'ensemble de la commande. Les remises n'ont pas besoin de code ref dans SOLUTION : elles sont identifiées par leur nom.
+Les remises dans HubRise sont les offres spéciales qui s'appliquent à l'ensemble de la commande. Les remises n'ont pas de code ref dans SOLUTION : elles sont identifiées par leur nom.
+
+## Frais
+
+...
 
 ## Méthodes de paiement
 
