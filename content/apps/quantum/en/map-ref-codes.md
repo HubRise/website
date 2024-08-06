@@ -5,7 +5,7 @@ position: 5
 layout: documentation
 meta:
   title: Map Ref Codes | Quantum by Cunninghams | HubRise
-  description: How to find ref codes in Quantum by Cunninghams to allow data synchronisation with other apps connected to HubRise.
+  description: How to find ref codes in Quantum to allow data synchronisation with other apps connected to HubRise.
 ---
 
 Once your Quantum EPOS system is connected to HubRise, you must configure your other connected applications so that the various elements in the orders are properly identified by Quantum.
@@ -15,7 +15,7 @@ Quantum identifies each element of an order by a ref code. You must enter the re
 There are two ways to proceed:
 
 - You can export the Quantum catalog to HubRise, then import this catalog into your other applications.
-- Or you can manually enter the ref codes in your other applications.
+- Alternatively, you can manually enter the ref codes in your other applications.
 
 Only certain applications allow the import of a catalog from HubRise. For others, you will need to enter the ref codes manually.
 
