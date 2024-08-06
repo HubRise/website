@@ -219,6 +219,7 @@ In addition, each `item`, `charge`, `payment` and `discount` is returned with a 
       "quantity": "1.0",
       "subtotal": "11.90 EUR",
       "tax_rate": null,
+      "subset": null,
       "customer_notes": null,
       "points_earned": null,
       "points_used": null,
@@ -242,6 +243,7 @@ In addition, each `item`, `charge`, `payment` and `discount` is returned with a 
       "quantity": "2.0",
       "subtotal": "7.00 EUR",
       "tax_rate": null,
+      "subset": null,
       "customer_notes": null,
       "points_earned": null,
       "points_used": null,
@@ -517,6 +519,7 @@ Deleted elements are still present in the order representation, but they are irr
       "quantity": "1.0",
       "subtotal": "11.90 EUR",
       "tax_rate": null,
+      "subset": null,
       "customer_notes": null,
       "points_earned": null,
       "points_used": null,
@@ -767,21 +770,22 @@ Orders do not have to go through all steps. The sequence actually depends on the
 
 ## 4. Order Items {#items}
 
-| Name                                       | Type                                                       | Description                                                                                                                                                                                 |
-| ------------------------------------------ | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `private_ref` <Label type="optional" />    | string                                                     | An optional private reference for the item. See [Private Refs](/developers/api/general-concepts#private-refs).                                                                              |
-| `product_name`                             | string                                                     | The product name.                                                                                                                                                                           |
-| `sku_name` <Label type="optional" />       | string                                                     | The sku name. Typically the product size or color.                                                                                                                                          |
-| `sku_ref` <Label type="optional" />        | string                                                     | The ref of the sku.                                                                                                                                                                         |
-| `price`                                    | [Money](/developers/api/general-concepts#monetary-values)  | The unit price of the sku, without the cost of options.                                                                                                                                     |
-| `quantity`                                 | [decimal](/developers/api/general-concepts#decimal-values) | The quantity of items ordered.                                                                                                                                                              |
-| `subtotal` <Label type="optional" />       | [Money](/developers/api/general-concepts#monetary-values)  | Calculated by HubRise. It is the sum of the price of the item and its options, multiplied by the quantity.                                                                                  |
-| `tax_rate` <Label type="optional" />       | [decimal](/developers/api/general-concepts#decimal-values) | The tax rate applied to the item. See [Tax Rates](#tax-rates).                                                                                                                              |
-| `customer_notes` <Label type="optional" /> | string                                                     | Information provided by the customer about the preparation of the item.                                                                                                                     |
-| `points_earned` <Label type="optional" />  | [decimal](/developers/api/general-concepts#decimal-values) | Loyalty points earned by the customer. This field is not linked to a particular loyalty card: a loyalty operation must be included in the order to effectively add/remove points to a card. |
-| `points_used` <Label type="optional" />    | [decimal](/developers/api/general-concepts#decimal-values) | Loyalty points used by the customer. Same remark as above.                                                                                                                                  |
-| `options` <Label type="optional" />        | [OrderOption](#options)[]                                  | Item customization.                                                                                                                                                                         |
-| `deleted` <Label type="optional" />        | boolean                                                    | `false` by default. Setting this field to `true` marks the resource as irreversibly deleted.                                                                                                |
+| Name                                       | Type                                                       | Description                                                                                                                                                                                                                                            |
+| ------------------------------------------ | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `private_ref` <Label type="optional" />    | string                                                     | An optional private reference for the item. See [Private Refs](/developers/api/general-concepts#private-refs).                                                                                                                                         |
+| `product_name`                             | string                                                     | The product name.                                                                                                                                                                                                                                      |
+| `sku_name` <Label type="optional" />       | string                                                     | The sku name. Typically the product size or color.                                                                                                                                                                                                     |
+| `sku_ref` <Label type="optional" />        | string                                                     | The ref of the sku.                                                                                                                                                                                                                                    |
+| `price`                                    | [Money](/developers/api/general-concepts#monetary-values)  | The unit price of the sku, without the cost of options.                                                                                                                                                                                                |
+| `quantity`                                 | [decimal](/developers/api/general-concepts#decimal-values) | The quantity of items ordered.                                                                                                                                                                                                                         |
+| `subtotal` <Label type="optional" />       | [Money](/developers/api/general-concepts#monetary-values)  | Calculated by HubRise. It is the sum of the price of the item and its options, multiplied by the quantity.                                                                                                                                             |
+| `tax_rate` <Label type="optional" />       | [decimal](/developers/api/general-concepts#decimal-values) | The tax rate applied to the item. See [Tax Rates](#tax-rates).                                                                                                                                                                                         |
+| `subset` <Label type="optional" />         | string                                                     | Used for grouping items within an order. Examples of uses include courses in a restaurant or shipment batches in retail (with values typically being `"1"`, `"2"`, etc.), or individual portions in a group order (with values typically being names). |
+| `customer_notes` <Label type="optional" /> | string                                                     | Information provided by the customer about the preparation of the item.                                                                                                                                                                                |
+| `points_earned` <Label type="optional" />  | [decimal](/developers/api/general-concepts#decimal-values) | Loyalty points earned by the customer. This field is not linked to a particular loyalty card: a loyalty operation must be included in the order to effectively add/remove points to a card.                                                            |
+| `points_used` <Label type="optional" />    | [decimal](/developers/api/general-concepts#decimal-values) | Loyalty points used by the customer. Same remark as above.                                                                                                                                                                                             |
+| `options` <Label type="optional" />        | [OrderOption](#options)[]                                  | Item customization.                                                                                                                                                                                                                                    |
+| `deleted` <Label type="optional" />        | boolean                                                    | `false` by default. Setting this field to `true` marks the resource as irreversibly deleted.                                                                                                                                                           |
 
 ##### Example:
 
@@ -793,6 +797,7 @@ Orders do not have to go through all steps. The sequence actually depends on the
   "price": "9.00 EUR",
   "quantity": "2",
   "tax_rate": "20.0",
+  "subset": "Alice",
   "customer_notes": "Well cooked",
   "points_earned": "1.5",
   "points_used": null,

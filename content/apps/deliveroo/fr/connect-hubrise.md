@@ -28,7 +28,7 @@ Contactez-nous par e-mail à l'adresse support@hubrise.com en précisant les inf
 
 Avec ces informations, nous demanderons à l'équipe d'intégration de Deliveroo d'activer la connexion HubRise pour votre enseigne.
 
-Vous pouvez aussi connecter votre restaurant de manière autonome. Pour plus d'informations, voir [Comment connecter HubRise depuis le back-office de Deliveroo ?](/apps/deliveroo/faqs/connect-from-deliveroo-back-office).
+Vous pouvez aussi connecter votre restaurant de manière autonome. Pour plus d'informations, voir [Puis-je connecter HubRise depuis le back-office de Deliveroo ?](/apps/deliveroo/faqs/connect-from-deliveroo-back-office)
 
 ## 2. Connectez Deliveroo Bridge {#connect}
 
@@ -39,7 +39,7 @@ Pour connecter Deliveroo Bridge à HubRise, procédez comme suit :
 1. Sélectionnez **CONNEXIONS**, puis **Voir les apps disponibles**.
 1. Dans la liste des apps, sélectionnez **Deliveroo Bridge**.
 1. Cliquez sur **Connecter**.
-1. Cliquez sur **Autoriser** pour donner à Deliveroo Bridge accès aux données HubRise de votre restaurant. Si votre compte possède plusieurs points de vente, développez **Tous les points de vente**, choisissez le point de vente à connecter, puis cliquez sur **Autoriser**.
+1. Cliquez sur **Autoriser** pour accorder à Deliveroo Bridge l'accès à votre point de vente enregistré sur HubRise. Si votre compte possède plusieurs points de vente, développez **Tous les points de vente**, choisissez le point de vente à connecter, puis cliquez sur **Autoriser**.
 1. Une nouvelle page vous demande d'indiquer votre identifiant de restaurant Deliveroo. Entrez l'identifiant, puis cliquez sur **Enregistrer** pour terminer le processus de connexion.
 
 ![Identifiant de restaurant Deliveroo](./images/001-deliveroo-restaurant-id.png)
@@ -48,7 +48,7 @@ Pour connecter Deliveroo Bridge à HubRise, procédez comme suit :
 
 Une fois la connexion du bridge effectuée, vous devez renseigner quelques paramètres sur la page **Configuration** afin que les commandes soient transmises correctement à votre logiciel de caisse.
 
-Pour plus d'informations sur la page de configuration et la manière d'y accéder, voir la rubrique [Configuration](/apps/deliveroo/user-interface#configuration) de la page Interface Utilisateur. Pour plus de détails sur la configuration des paramètres Deliveroo Bridge, voir la rubrique [Configuration](/apps/deliveroo/configuration).
+Pour plus d'informations sur la page de configuration et la manière d'y accéder, voir le paragraphe [Configuration](/apps/deliveroo/user-interface#configuration) de la rubrique Interface utilisateur. Pour plus de détails sur la configuration des paramètres Deliveroo Bridge, voir la rubrique [Configuration](/apps/deliveroo/configuration).
 
 ## 4. Renseignez les codes ref des produits
 
