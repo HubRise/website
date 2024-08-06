@@ -6,30 +6,30 @@ author: Antoine Monnier
 meta:
   title: Créez votre tableau de bord personnalisé dans Google Sheets | Blog | HubRise
   description: Découvrez comment créer un tableau de bord personnalisé en temps réel dans Google Sheets en utilisant les données de commande HubRise. Grâce à ce guide détaillé, centralisez et visualisez vos données de commande à partir de plusieurs sources.
-excerpt: Découvrez comment créer un tableau de bord des commandes en temps réel dans Google Sheets. Dans ce guide, vous apprendrez à alimenter une feuille de calcul avec vos données HubRise, afin de connaître les performances de votre entreprise sur plusieurs plateformes de commande.
+excerpt: Découvrez comment créer un tableau de bord des commandes en temps réel dans Google Sheets. Dans ce guide, vous apprendrez à alimenter une feuille de calcul avec vos données HubRise, et pouvoir mesurer ainsi vos performances sur les diverses plateformes de commande.
 ---
 
 [//]: # "Photo credits: Dall-E"
 
-L'API ouverte de HubRise permet d'alimenter vos données clients, produits et de commande dans n'importe quel outil tiers.
+L'API ouverte de HubRise permet d'envoyer vos données clients, produits et de commande vers n'importe quel service muni d'une API.
 
-Dans cet article, découvrez comment configurer un tableau de bord dans Google Sheets avec les données de commande HubRise, et pouvoir suivre en un seul endroit vos commandes Uber Eats, Deliveroo, etc. Ce guide est adapté aux utilisateurs ayant quelques connaissances techniques.
+Dans cet article, nous allons découvrir comment créer un tableau de bord dans Google Sheets avec les données de commande HubRise, et regrouper en un seul endroit les commandes Uber Eats, Deliveroo, etc. Ce guide est adapté aux utilisateurs ayant quelques connaissances techniques.
 
-Il ne s'agit ici que d'un exemple. Les principes décrits peuvent s'appliquer à des intégrations plus complexes. Notre objectif est de vous présenter les bases et vous encourager à explorer plus avant.
+Il ne s'agit que d'un exemple simple. Les principes décrits ici s'appliquent à des intégrations plus complexes. L'objectif est de vous présenter les bases et vous encourager à explorer plus avant.
 
 ## Prérequis
 
 Avant de commencer, vous devez disposer des éléments suivants :
 
 1. Un compte HubRise ([créer un compte](https://manager.hubrise.com/signup))
-2. Un compte Make.com ([créer un compte](https://www.make.com/en/register)), utilisé pour configurer un crochet Web connecté à Google Sheets. Il peut être remplacé par n'importe quel autre outil d'automatisation similaire.
+2. Un compte Make.com ([créer un compte](https://www.make.com/en/register)), utilisé pour configurer un crochet Web connecté à Google Sheets. Il peut être remplacé par n'importe quel outil d'automatisation similaire.
 3. Un compte Google pour accéder à Google Sheets
 
-Les formules gratuites HubRise et Make.com suffisent pour des tests.
+Les formules gratuites HubRise et Make.com suffisent pour cet exemple.
 
 ## Étape 1 : Créer un client OAuth 2.0 HubRise
 
-Vous allez tout d'abord créer un client dans HubRise. Il permettra à Make.com d'accéder à vos données HubRise.
+Vous allez tout d'abord créer un client dans HubRise. Celui-ci permettra à Make.com d'accéder à vos données HubRise.
 
 1. Connectez-vous à votre back-office HubRise.
 2. Cliquez sur **Développeur** dans le menu principal.
@@ -38,15 +38,15 @@ Vous allez tout d'abord créer un client dans HubRise. Il permettra à Make.com 
 5. Une fois le client créé, cliquez sur **Télécharger** à côté du secret du client.
 6. Notez l'ID et le secret du client indiqués dans le fichier JSON téléchargé.
 
-## Étape 2 : Configurer une connexion OAuth 2.0 sur Make.com
+## Étape 2 : Créer une connexion OAuth 2.0 sur Make.com
 
-À présent que vous disposez d'un client HubRise, configurez une connexion à votre compte HubRise.
+À présent que vous disposez d'un client HubRise, créez une connexion à votre compte HubRise.
 
 1. Connectez-vous à Make.com.
 2. Créez un scénario et nommez-le "Enregistrer crochet Web".
 3. Ajoutez un nouveau module et recherchez "Make an OAuth 2.0 request" (Lancer une requête OAuth 2.0). Cliquez pour l'ajouter à votre scénario.
 4. Cliquez sur **Create a connection** (Créer une connexion).
-5. Configurez la connexion OAuth 2.0 avec les paramètres suivants :
+5. Créez la connexion OAuth 2.0 avec les paramètres suivants :
    - Connection name : choisissez un nom pour la connexion (par exemple, "HubRise").
    - Flow Type : code d'autorisation
    - Authorization URI : `https://manager.hubrise.com/oauth2/v1/authorize`
@@ -65,7 +65,7 @@ En raison d'une limitation actuelle dans Make.com, le jeton d'accès doit être 
 1. Dans le back office de HubRise, ouvrez **Connexions**.
 2. Trouvez la connexion créée à l'étape 2 et cliquez sur **Actions** > **Voir les logs**.
 3. Sur la page qui s'affiche, développez **Infos sur la connexion**.
-4. Cliquez sur **afficher** à côté de "Jeton d'accès" et copiez le jeton dans un endroit sûr - il sera requis à l'étape 5.
+4. Cliquez sur **afficher** à côté de "Jeton d'accès" et copiez le jeton dans un endroit sûr - il sera demandé à l'étape 5.
 
 ## Étape 4 : Créer un crochet Web dans Make.com
 
@@ -76,7 +76,7 @@ Configurez à présent un crochet Web dans Make.com afin de recevoir les donnée
 3. Cliquez sur **Create a webhook** (Créer un crochet Web) et configurez-le comme suit :
    - Webhook name : choisissez un nom pour le crochet Web (par exemple, "HubRise").
    - IP restriction : laissez le paramètre vide.
-4. Copiez l'URL du crochet Web dans un endroit sûr - il sera requis à l'étape suivante.
+4. Copiez l'URL du crochet Web dans un endroit sûr - il sera demandé à l'étape suivante.
 
 ## Étape 5 : Enregistrer le crochet Web avec HubRise
 
@@ -91,10 +91,10 @@ Vous devez fournir à HubRise l'URL à laquelle il doit envoyer les données de 
    - Headers : ajoutez `X-Access-Token` avec la valeur du jeton de l'étape 3.
    - Body type : Raw
    - Content type : JSON
-   - Request content (remplacez `[Make.com webhook URL]` par l'URL de l'étape 4) :
+   - Request content (remplacez `[URL du crochet Make.com]` par l'URL de l'étape 4) :
      ```json
      {
-       "url": "[Make.com webhook URL]",
+       "url": "[URL du crochet Make.com]",
        "events": {
          "order": ["create"]
        }
@@ -105,7 +105,7 @@ Vous devez fournir à HubRise l'URL à laquelle il doit envoyer les données de 
 
 ## Étape 6 : Vérifier la configuration
 
-Vérifiez d'abord rapidement que le crochet Web a été correctement enregistré.
+Vérifiez d'abord rapidement que le crochet Web a été correctement mis en place.
 
 1. Ouvrez votre back-office HubRise.
 2. Vérifiez que le crochet Web a bien été créé :
@@ -128,9 +128,9 @@ Vérifiez que la commande a été reçue par le crochet Web :
 2. Cliquez sur **Webhooks** (Crochets Web).
 3. Vérifiez que le crochet Web que vous avez créé a reçu un événement. Cherchez une étiquette indiquant le nombre d'événements reçus à côté d'une icône de camion.
 
-## Étape 7 : Terminer le scénario de traitement de la commande
+## Étape 7 : Finaliser le scénario de traitement de la commande
 
-Tous les éléments étant en place, vous pouvez maintenant terminer le scénario Make.com afin de traiter les commandes entrantes et les enregistrer dans Google Sheets.
+Tous les éléments étant en place, vous pouvez maintenant finaliser le scénario Make.com afin de traiter les commandes entrantes et les enregistrer dans Google Sheets.
 
 1. Dans Make.com, ouvrez le scénario "Recevoir des commandes" créé à l'étape 4.
 
@@ -183,7 +183,7 @@ Ce n'est qu'un aperçu de ce que vous pouvez réaliser avec HubRise. Voici quelq
 
 - Récupérer les articles d'une commande pour analyser les ventes des produits
 - Segmenter les analyses par point de vente (si vous en avez plusieurs)
-- Configurer des notifications pour les commandes à haute valeur ajoutée ou pour des conditions spécifiques
+- Configurer des notifications pour les commandes d'un montant élevé ou autres conditions spécifiques
 - Effectuer une intégration avec d'autres applications disponibles dans Make.com
 
 Nous avons utilisé Make.com dans ce guide, mais vous pouvez appliquer les mêmes principes à d'autres plateformes d'automatisation comme Zapier ou n8n. Vous pouvez même créer votre propre solution en utilisant un langage de programmation.
