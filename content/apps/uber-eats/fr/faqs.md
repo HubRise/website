@@ -16,4 +16,4 @@ meta:
 - [Pourquoi mes commandes ne sont-elles pas reçues par HubRise ?](/apps/uber-eats/faqs/orders-not-received-missing-ref-codes)
 - [Comment créer une promotion dans Uber Eats ?](/apps/uber-eats/faqs/create-deal-in-uber-eats)
 - [Comment trouver mon UUID Uber Eats ?](/apps/uber-eats/faqs/find-uber-eats-uuid)
-- [Puis-je connecter ma boutique en ligne Uber Eats à HubRise ?](/apps/uber-eats/faqs/connect-webstore)
+- [Puis-je connecter ma boutique en ligne Uber Eats Webstore à HubRise ?](/apps/uber-eats/faqs/connect-webstore)

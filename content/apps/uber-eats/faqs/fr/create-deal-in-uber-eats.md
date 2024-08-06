@@ -15,7 +15,7 @@ Cette page décrit la structure que vous devez utiliser pour créer des promotio
 Si votre logiciel de caisse prend en charge les promotions et que vous voulez les recevoir dans vos commandes Uber Eats, il y a deux cas de figure :
 
 - Si vous [envoyez votre catalogue HubRise](/apps/uber-eats/push-catalog) dans Uber Eats avec Uber Eats Bridge, les promotions sont automatiquement créées au bon format dans Uber Eats.
-- Si vous créez manuellement votre menu avec [Menu Maker](https://merchants.ubereats. om/us/fr/technology/simplify-operations/menu-management), l'outil de gestion des catalogues dans le back-office Uber Eats, créez vos promotions en suivant les étapes sur cette page.
+- Si vous créez manuellement votre menu avec [Menu Maker](https://merchants.ubereats.com/us/fr/technology/simplify-operations/menu-management), l'outil de gestion des catalogues dans le back-office Uber Eats, créez vos promotions en suivant les étapes sur cette page.
 
 ## Structure de la promotion
 

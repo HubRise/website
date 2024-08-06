@@ -16,7 +16,7 @@ Dans HubRise, une variante de produit est appelée [SKU](/docs/data#view-catalog
 Si votre logiciel de caisse prend en charge les produits avec des SKU et que vous voulez les recevoir dans vos commandes Uber Eats, il y a deux cas de figure :
 
 - Si vous [envoyez votre catalogue HubRise](/apps/uber-eats/push-catalog) dans Uber Eats avec Uber Eats Bridge, les produits avec SKU sont automatiquement créés au bon format dans Uber Eats.
-- Si vous créez manuellement votre menu avec [Menu Maker](https://merchants.ubereats. om/us/fr/technology/simplify-operations/menu-management), l'outil de gestion des catalogues dans le back-office Uber Eats, créez vos produits en suivant les étapes sur cette page.
+- Si vous créez manuellement votre menu avec [Menu Maker](https://merchants.ubereats.com/us/fr/technology/simplify-operations/menu-management), l'outil de gestion des catalogues dans le back-office Uber Eats, créez vos produits en suivant les étapes sur cette page.
 
 ## Structure du produit
 
