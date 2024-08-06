@@ -40,13 +40,13 @@ Just Eat Takeaway attend au minimum que chaque commande réussie soit marquée c
 
 Lorsque le statut d'une commande change dans HubRise, Just Eat Takeaway Bridge en informe Just Eat Takeaway. La correspondance entre les statuts HubRise et Just Eat Takeaway est la suivante :
 
-| Statut HubRise                               | Statut Just Eat Takeaway                                                                        |
-| -------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Statut HubRise                               | Statut Just Eat Takeaway                                                        |
+| -------------------------------------------- | ------------------------------------------------------------------------------- |
 | `new`, `received` ou `accepted`              | Vous pouvez déterminer quel statut fait passer la commande en mode `Confirmed`. |
-| `rejected`, `cancelled` ou `delivery_failed` | `Error`                                                                                         |
-| `in_preparation`                             | `Kitchen`                                                                                       |
-| `in_delivery`                                | `In Delivery`                                                                                   |
-| `completed`                                  | `Delivered`                                                                                     |
+| `rejected`, `cancelled` ou `delivery_failed` | `Error`                                                                         |
+| `in_preparation`                             | `Kitchen`                                                                       |
+| `in_delivery`                                | `In Delivery`                                                                   |
+| `completed`                                  | `Delivered`                                                                     |
 
 Just Eat Takeaway Bridge vous permet de décider quel statut HubRise déclenche le statut `Confirmed`. Cette option est utile pour gérer différents scénarios lorsque votre logiciel de caisse actualise le statut de la commande. Par exemple, si votre logiciel de caisse marque une commande acceptée comme `received` dans HubRise, vous pouvez toujours signaler à Just Eat Takeaway que la commande a été confirmée.
 
@@ -193,7 +193,7 @@ La remise appliquée à la commande est transmise en tant qu'objet unique dans l
 Les champs disponibles dans la requête sont les suivants :
 
 - `name` : nom de la remise, par défaut `Discount`
-- `ref` : code ref de la remise La valeur par défaut peut être définie à partir de la page de configuration de Just Eat Takeaway Bridge. Elle doit correspondre à la valeur définie dans votre logiciel de caisse.
+- `ref` : code ref de la remise. La valeur par défaut peut être définie à partir de la page de configuration de Just Eat Takeaway Bridge. Elle doit correspondre à la valeur définie dans votre logiciel de caisse.
 - `price_off` : montant total de la remise
 
 <details>
@@ -219,8 +219,8 @@ Des frais de livraison s'appliquent aux commandes livrées par le restaurant. Ju
 Voici les champs utilisés pour spécifier les frais de livraison :
 
 - `name` : toujours défini sur `Delivery charge`
-- `type` : type de frais Toujours défini sur `delivery`
-- `ref` : code ref des frais Vous pouvez définir sa valeur depuis la page de configuration de Just Eat Bridge. Assurez-vous qu'elle correspond à la valeur dans votre logiciel de caisse.
+- `type` : type de frais. Toujours défini sur `delivery`
+- `ref` : code ref des frais. Vous pouvez définir sa valeur depuis la page de configuration de Just Eat Bridge. Assurez-vous qu'elle correspond à la valeur dans votre logiciel de caisse.
 - `price` : montant des frais de livraison
 
 <details>
