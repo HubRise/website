@@ -318,7 +318,7 @@ content:
           documentation: /fr/apps/uber-eats
           logo: ubereats.png
           title: Uber Eats
-          description: Uber Eats est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Disponible dans 45 pays and 6.000 villes.
+          description: Uber Eats est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une application mobile. Disponible dans 45 pays et 6.000 villes.
           additional_info:
     - title: Commande en ligne
       slug: online-ordering
