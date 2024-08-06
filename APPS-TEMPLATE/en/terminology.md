@@ -21,8 +21,9 @@ The following table explains the terms that are specific to SOLUTION.
 HubRise and SOLUTION each use their own terminology. The same concept can therefore have a different designation in each SOLUTION. The correspondence table below shows these differences.
 
 | SOLUTION | HubRise     | Description                                                                      |
-| -------- | ----------- | -------------------------------------------------------------------------------- |
+| -------- |-------------| -------------------------------------------------------------------------------- |
 | ...      | Ref code    | Product code.                                                                    |
+| ...      | Category    | A group of products.                                                             |
 | ...      | Product     | A product consists of one or more SKUs.                                          |
 | ...      | SKU         | A product variant, such as a size or color.                                      |
 | ...      | Option      | A service or item that can be added to a product, such as a sauce or an extra.   |
