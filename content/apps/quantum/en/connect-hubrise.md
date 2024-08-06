@@ -5,7 +5,7 @@ position: 2
 layout: documentation
 meta:
   title: Connect to HubRise | Quantum by Cunninghams EPOS Group | HubRise
-  description: Connect Quantum by Cunninghams EPOS Group to HubRise, steps to follow to receive your online ordering orders in your EPOS.
+  description: Connect Quantum EPOS to HubRise, steps to follow to receive your online ordering orders in your EPOS.
 ---
 
 ---

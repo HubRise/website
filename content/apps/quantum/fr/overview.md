@@ -5,7 +5,7 @@ position: 1
 layout: documentation
 meta:
   title: Présentation générale | Quantum by Cunninghams EPOS Group | HubRise
-  description: Présentation générale de Quantum by Cunninghams EPOS Group, les raisons de connecter Quantum à HubRise et les fonctionnalités de l'intégration avec HubRise.
+  description: Présentation générale du logiciel de caisse Quantum, les raisons de connecter Quantum à HubRise et les fonctionnalités de l'intégration avec HubRise.
 gallery:
   - __gallery-001.png
   - __gallery-002.png

@@ -8,7 +8,7 @@ meta:
   description: Integrating Quantum with food ordering platforms requires you to specify particular ref codes in the configuration page of the delivery platform bridge.
 ---
 
-With HubRise, you can receive orders from Deliveroo, Just Eat, Uber Eats and other food platforms in Quantum by Cunninghams EPOS Group. You can also push your menu from Quantum to food platforms.
+With HubRise, you can receive orders from Deliveroo, Just Eat, Uber Eats and other food platforms in Quantum EPOS. You can also push your menu from Quantum to food platforms.
 
 This page describes the settings to use to connect food ordering platforms to Quantum.
 
