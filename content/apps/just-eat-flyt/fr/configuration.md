@@ -5,79 +5,119 @@ position: 4
 layout: documentation
 meta:
   title: Configuration | Just Eat Flyt | HubRise
-  description: Voir comment configurer le Just Eat Flyt Bridge pour un fonctionnement optimal avec Just Eat et votre logiciel de caisse ou les autres applications connectées.
+  description: Instructions pour configurer Just Eat Flyt Bridge pour qu'il fonctionne parfaitement avec Just Eat et votre logiciel de caisse ou autres apps connectées à HubRise. La configuration est simple.
 ---
 
-Cette page de configuration vous permet de personnaliser le comportement de Just Eat Flyt Bridge selon vos préférences. Elle est divisée en plusieurs sections pour faciliter la navigation.
-
-![Page de configuration de Just Eat Flyt Bridge](./images/011-just-eat-configuration-page-orders.png)
+Cette page de configuration vous permet de personnaliser le comportement de Just Eat Flyt Bridge selon vos préférences.
+Elle est divisée en plusieurs sections pour faciliter la navigation.
 
 ## Langue
 
-Dans cette section, vous pouvez choisir la langue d'édition de vos reçus.
+![Page de configuration Just Eat Flyt Bridge, section Langue](./images/019-just-eat-configuration-page-language.png)
+
+Choisissez la langue à utiliser pour les éléments génériques tels que `Delivery charge` (Frais de livraison). Ces noms peuvent apparaître dans votre logiciel de caisse et sur les reçus des clients.
 
 ## Commandes
 
+![Page de configuration Just Eat Flyt Bridge, section Commandes](./images/011-just-eat-configuration-page-orders.png)
+
+### Statuts de commande
+
+Just Eat exige un accusé de réception pour chaque commande envoyée. Dans cette section, vous pouvez sélectionner le statut HubRise qui envoie l'accusé de réception à Just Eat. Reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise pour trouver la valeur à utiliser.
+
 ### Types de service
 
-Les types de service tels que la livraison via la plateforme, la livraison par le restaurant ou la vente à emporter peuvent nécessiter la saisie du code ref correspondant. Reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
+Les types de service tels que la livraison via la plateforme, la livraison par le restaurant ou la vente à emporter peuvent nécessiter la saisie du code ref correspondant. Pour vérifier, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
 
-Cette section vous permet également de marquer les commandes Just Eat comme étant à livrer ou à emporter. Cette option est utile si vous votre entreprise est soumise à des exigences spécifiques en matière de rapports financiers.
+Dans cette section, vous pouvez également choisir de marquer les commandes livrées par Just Eat comme étant en livraison ou à emporter. Les commandes livrées par le restaurant sont toujours marquées comme des commandes en livraison. Cette fonctionnalité permet de répondre à des besoins spécifiques de votre entreprise ou à différencier ces commandes dans les rapports d'activité.
+
+### Articles spéciaux
+
+Certains marchés comme l'Irlande exigent des consignes sur certains articles. Si votre activité l'exige, vous pouvez spécifier le code ref de la consigne dans cette section. La consigne doit d'abord être créée en tant qu'option dans votre logiciel de caisse. Une fois configurée, elle est automatiquement ajoutée à tous les articles la nécessitant.
 
 ### Remises
 
-Dans cette section, incluez le code ref associé aux remises Just Eat dans votre logiciel de caisse. Pour savoir comment gérer les remises dans votre logiciel de caisse, reportez-vous à la documentation de celle-ci sur le site internet de HubRise.
+Dans cette section, incluez le code ref associé aux remises Just Eat dans votre logiciel de caisse.
+Pour savoir comment gérer les remises dans celui-ci, reportez-vous à sa documentation sur le site internet de HubRise.
 
 ### Frais
 
-Si des frais s'appliquent, un code ref peut être nécessaire. Reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
+Si des frais s'appliquent, un code ref peut être nécessaire. Pour vérifier, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
 
 Dans cette section, vous pouvez spécifier les codes ref relatifs aux frais suivants :
 
 - Frais de livraison
 - Frais de service
 - Frais d'emballage
-- Pourboire pour le livreur
+- Pourboire livreur
 - Autres frais
 
 ### Paiements
 
-Les clients de Just Eat peuvent régler leur commande en espèces lorsque le restaurant prend en charge la livraison.
+Les clients Just Eat peuvent régler leur commande en ligne, ou en espèces en cas de livraison par le restaurant.
 
-Cette section de la page de configuration permet de spécifier les codes ref pour les paiements en ligne et en espèces. Pour connaître les codes à utiliser, consultez la documentation de votre logiciel de caisse sur le site internet de HubRise.
+Cette section de la page de configuration permet de spécifier les codes ref pour les deux méthodes de paiement. Pour connaître les codes à utiliser, consultez la documentation de votre logiciel de caisse sur le site internet de HubRise.
+
+## Clients
+
+![Page de configuration Just Eat Flyt Bridge, section Clients](./images/013-just-eat-configuration-page-customers.png)
+
+Activez l'option **Dupliquer le code d'accès téléphone dans les notes de livraison** si votre logiciel de caisse ne supporte pas nativement la récupération des codes d'accès au téléphone.
+
+Tous les systèmes de caisse intégrés à HubRise peuvent lire les notes de livraison. Si votre logiciel de caisse présente un support natif et que cette option est activée, le code apparaîtra en double. Reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise pour trouver la valeur à utiliser.
 
 ## Catalogue {#catalog}
 
-![Page de configuration de Just Eat Flyt Bridge, section Catalogue](./images/012-just-eat-configuration-page-catalog.png)
+![Page de configuration Just Eat Flyt Bridge, section Catalogue](./images/012-just-eat-configuration-page-catalog.png)
 
-Cette section vous permet de pousser votre catalogue HubRise dans Just Eat chaque fois que vous actualisez le catalogue HubRise. Par défaut, cette option est désactivée.
+### Variante de catalogue à envoyer
 
-### Heures d'ouverture
+Les variantes de catalogue vous donnent la flexibilité de désactiver des articles ou d'ajuster les prix spécifiquement pour Just Eat.
 
-Dans la section **Heures d'ouverture**, vous pouvez choisir de rendre vos produits disponibles pour la livraison, la vente à emporter ou pour ces deux options.
+Si votre catalogue comprend des variantes, vous pouvez sélectionner celles que vous souhaitez utiliser. Vous pouvez choisir des variantes différentes pour les menus livraison et vente à emporter, ou utiliser la même pour les deux menus. Lorsque la valeur **(aucune)** est sélectionnée, tous les articles ainsi que leurs prix standards sont envoyés à Just Eat.
 
-Pour chaque jour de la semaine, définissez les horaires d'ouverture et de fermeture de votre enseigne en spécifiant une ou deux tranches horaires. En dehors de celles-ci, les clients ne pourront pas passer de commandes dans votre enseigne Just Eat.
+### Types de service
 
-Si votre restaurant est fermé un jour précis, cliquez sur **Fermer le jour**. Pour copier rapidement les horaires d'ouverture sur tous les jours suivants de la liste, cliquez sur **Copier vers le bas**.
+Dans cette section, vous pouvez spécifier les types de service que votre restaurant propose, tels que la livraison, la vente à emporter, ou les deux. Vos préférences seront envoyées à Just Eat lors du prochain envoi du catalogue.
+
+### Envoi automatique du catalogue
+
+Sélectionnez la case **Activer l'envoi automatique du catalogue** pour synchroniser votre catalogue HubRise avec Just Eat chaque fois qu'il est mis à jour.
+
+## Point de vente
+
+![Page de configuration Just Eat Flyt Bridge, section Point de vente](./images/015-just-eat-configuration-page-location.png)
+
+Sélectionnez **Activer l'envoi automatique des horaires d'ouverture** pour synchroniser vos horaires d'ouverture HubRise avec Just Eat. Pour activer cette option, vous devez d'abord définir vos horaires d'ouverture dans HubRise, puis activer l'envoi automatique du catalogue.
+
+Si vous utilisez des horaires d'ouverture spécifiques pour Just Eat, vous pouvez les définir comme tels en sélectionnant **Utiliser des horaires d'ouverture spécifiques pour Just Eat**, puis en saisissant vos horaires d'ouverture pour la livraison et la vente à emporter, en fonction des types de service que vous proposez. Cette option remplacera les horaires définis dans HubRise.
 
 ---
 
-**REMARQUE IMPORTANTE** : par défaut, les heures de fermeture pour les livraisons sont fixées une demi-heure plus tôt dans Just Eat par rapport à la valeur que vous avez spécifiée dans Just Eat Flyt Bridge. Les heures de fermeture pour la vente à emporter, en revanche, restent inchangées.
+**REMARQUE IMPORTANTE :** Par défaut, les heures de fermeture pour la livraison sont définies une demi-heure plus tôt sur le restaurant Just Eat par rapport à la valeur que vous avez spécifiée dans Just Eat Flyt Bridge ou HubRise. Les heures de fermeture pour la vente à emporter, en revanche, restent inchangées.
 
 ---
+
+## Inventaire
+
+![Page de configuration Just Eat Flyt Bridge, section Inventaire](./images/014-just-eat-configuration-page-inventory.png)
+
+Grâce à la synchronisation de l'inventaire, les produits et options dont la quantité en stock est nulle peuvent être masqués sur votre restaurant Just Eat.
+
+Sélectionnez la case **Activer l'envoi automatique de l'inventaire** pour synchroniser votre inventaire HubRise avec Just Eat chaque fois qu'il est mis à jour.
 
 ## Enregistrer la configuration
 
-Lorsque vous êtes satisfait de la configuration de Just Eat Bridge, cliquez sur **Enregistrer** en haut de la page pour revenir à la page Dernières opérations.
+Pour enregistrer la configuration, cliquez sur **Enregistrer** en haut de la page.
 
 ## Réinitialiser la configuration
 
-Si vous souhaitez réinitialiser la configuration et effacer ses valeurs, cliquez sur **Réinitialiser la configuration** en bas de la page.
+Si vous avez besoin de réinitialiser la configuration, cliquez sur **Réinitialiser la configuration** en bas de la page.
 
 ---
 
-**REMARQUE IMPORTANTE :** la réinitialisation de la configuration effacera également vos paramètres d'intégration. Pour continuer à recevoir les commandes Just Eat, vous devrez les saisir à nouveau.
+**REMARQUE IMPORTANTE :** La réinitialisation de la configuration déconnecte instantanément le bridge de Just Eat. Vous aurez besoin de vos clés d'API Just Eat et de votre identifiant de restaurant pour rétablir la connexion.
 
 ---
 
-La réinitialisation de la configuration ne supprime pas les fichiers journaux des opérations affichés sur la page principale.
+La réinitialisation de la configuration ne supprime pas les logs des opérations affichés sur la page principale.
