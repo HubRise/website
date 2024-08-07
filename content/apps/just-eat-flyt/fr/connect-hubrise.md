@@ -8,7 +8,7 @@ meta:
   description: Découvrez comment connecter votre restaurant en ligne Just Eat à HubRise. La connexion s'effectue simplement. Envoyez le lien de votre page Just Eat à HubRise et suivez les quelques étapes pour vous connecter.
 ---
 
-La connexion d'Uber Eats à HubRise s'effectue en quelques étapes.
+La connexion de Just Eat à HubRise s'effectue en quelques étapes.
 
 ---
 

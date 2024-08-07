@@ -192,7 +192,7 @@ La remise appliquée à la commande est transmise en tant qu'objet unique dans l
 
 Les champs disponibles dans la requête sont les suivants :
 
-- `name` : nom de la remise, par défaut `Discount`
+- `name` : nom de la remise, par défaut `Remise`.
 - `ref` : code ref de la remise. La valeur par défaut peut être définie à partir de la page de configuration de Just Eat Takeaway Bridge. Elle doit correspondre à la valeur définie dans votre logiciel de caisse.
 - `price_off` : montant total de la remise
 
@@ -218,10 +218,10 @@ Des frais de livraison s'appliquent aux commandes livrées par le restaurant. Ju
 
 Voici les champs utilisés pour spécifier les frais de livraison :
 
-- `name` : toujours défini sur `Delivery charge`
-- `type` : type de frais. Toujours défini sur `delivery`
+- `name` : la valeur est toujours `Frais de livraison`.
+- `type` : type de frais. La valeur est toujours `delivery` (livraison).
 - `ref` : code ref des frais. Vous pouvez définir sa valeur depuis la page de configuration de Just Eat Bridge. Assurez-vous qu'elle correspond à la valeur dans votre logiciel de caisse.
-- `price` : montant des frais de livraison
+- `price` : montant des frais de livraison.
 
 <details>
 
@@ -246,10 +246,10 @@ Les frais de service, lorsqu'ils sont appliqués, sont également représentés 
 
 Voici les champs utilisés pour les frais de service :
 
-- `name` : toujours défini sur `Service fee`
-- `type` : Toujours défini sur `other`
+- `name` : la valeur est toujours `Frais de service`.
+- `type` : la valeur est toujours `other` (autre).
 - `ref` : code ref des frais. Vous pouvez définir sa valeur depuis la page de configuration de Just Eat Bridge. Assurez-vous qu'elle correspond à la valeur dans votre logiciel de caisse.
-- `price` : montant des frais de service
+- `price` : montant des frais de service.
 
 ## Notes de préparation du client
 

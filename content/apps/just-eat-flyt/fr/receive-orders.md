@@ -183,18 +183,18 @@ Des frais de livraison s'appliquent aux commandes livrées par le restaurant.
 
 Les champs disponibles dans les requêtes sont les suivants :
 
-- `name` : intitulé des frais de livraison, par défaut `Delivery charge`
+- `name` : intitulé des frais, par défaut `Frais de livraison`.
 - `type` : type de frais. La valeur est toujours `delivery` (livraison).
 - `ref` : code ref des frais. La valeur par défaut peut être définie à partir de la page de configuration de Just Eat Bridge. Elle doit correspondre à la valeur définie dans votre logiciel de caisse.
 - `price` : montant total des frais de livraison
 
-### Supplément Just Eat
+### Frais de service Just Eat
 
 Just Eat applique un supplément forfaitaire à toutes les commandes.
 
 Les champs disponibles dans les requêtes sont les suivants :
 
-- `name` : intitulé des frais, par défaut `Service charge` (Frais de service)
+- `name` : intitulé des frais, par défaut `Frais de service`.
 - `type` : type de frais. La valeur est toujours `other` (autre).
 - `ref` : code ref des frais. La valeur par défaut peut être définie à partir de la page de configuration de Just Eat Bridge. Elle doit correspondre à la valeur définie dans votre logiciel de caisse.
 - `price` : montant total du petit supplément à la commande
