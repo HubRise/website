@@ -49,7 +49,7 @@ To know which data is printed by default on receipts, see [Receive Orders](/apps
 
 ## Advanced Settings
 
-You can set the number of copies and the optional use of an additional printer. You can also configure an SMS notification to be set for each print, for an additional fee. Please inquire with Expedy.
+You can set the number of copies and the optional use of an additional printer. You can also configure an SMS notification to be sent with each print, subject to an additional fee. Please inquire with Expedy.
 
 To configure the options, follow these steps:
 
