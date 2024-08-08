@@ -10,11 +10,11 @@ meta:
 
 ## Test The Connection {#test-connection}
 
-To test the connection between Expedy and HubRise, use an app connected to the same HubRise location which can push orders to HubRise. This can include an online ordering solution or your EPOS.
+To test the connection between Expedy and HubRise, use an application, connected to the same HubRise location that can push orders into HubRise. This could be, for example, an online ordering solution or your EPOS.
 
-1. Place an order from the app.
-2. Check that the order has been successfully pushed to HubRise. In the left-side menu of HubRise back office, select **DATA** > **ORDERS**. The order should appear in the list.
-3. From Expedy back office homepage, click **Printers**.
+1. Place an order using the application.
+2. Check that the order has been successfully pushed into HubRise. In the HubRise back office left-hand side menu, select **DATA** > **ORDERS**. The order should appear in the list.
+3. In the Expedy back office homepage, click **Printers**.
 4. Click the name of the relevant printer.
 5. Scroll down to the **Last 10 API requests** section.
 6. The order should appear in this section.
