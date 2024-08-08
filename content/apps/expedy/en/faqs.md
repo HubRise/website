@@ -4,7 +4,7 @@ path_override: faqs
 position: 8
 layout: documentation
 meta:
-  title: FAQ | Expedy | HubRise
+  title: FAQs | Expedy | HubRise
   description: Frequently asked questions about Expedy Print and its integration with HubRise.
 ---
 

@@ -4,7 +4,7 @@ path_override: keep-my-printer
 position: 1
 layout: documentation
 meta:
-  title: Connect your printer to HubRise | FAQ Expedy | HubRise
+  title: Connect your printer to HubRise | Expedy FAQs | HubRise
   description: Overview of the Expedy Print Box module used to connect ESC/POS printers (Epson, Star, Brother, Toshiba, Zebra, etc.) to HubRise.
 ---
 
