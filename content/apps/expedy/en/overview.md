@@ -22,9 +22,9 @@ Expedy provides standalone printers for restaurants and convenience stores. With
 
 Expedy Print is a standalone printing solution able to confirm the printing of receipts to connected solutions and to change order status. You can print the order in multiple copies to facilitate preparation. You can also choose to send an SMS notification each time a receipt is printed.
 
-Expedy printers connect to the site’s network via Wi-Fi or Ethernet, or to the mobile network using a 4G dongle. Setup and connection to external applications can be configured through a back office. Once configured, Expedy printers operate autonomously.
+Expedy printers connect to the establishment's Internet network via Wi-Fi or Ethernet, or to the mobile network with a 4G key. The setup and connection to external applications can be configured from a back office. Once configured, Expedy printers operate autonomously, without any human intervention.
 
-If you prefer to keep your existing printer, you can use the Expedy PrintBox module, which is compatible with ESC/POS printers (Epson, Star, Brother, Toshiba, Zebra, etc.). With this module, your standalone printer gains similar functionality to Expedy printers.
+If you prefer to keep your existing printer, you can use the Expedy PrintBox module, which is compatible with ESC/POS printers (Epson, Star, Brother, Toshiba, Zebra, etc.). With this module, your standalone printer benefits from features similar to those of Expedy printers.
 
 ## Integration Features
 
