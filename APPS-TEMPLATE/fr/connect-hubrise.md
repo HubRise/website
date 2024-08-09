@@ -24,7 +24,7 @@ Pour connecter SOLUTION à HubRise, suivez ces étapes :
 2. Cliquez sur le bouton **CONNECTER**. Vous êtes redirigé vers l'interface HubRise.
 3. Si vous avez plusieurs points de vente, choisissez le point de vente à connecter. Si le point de vente sélectionné possède plusieurs listes de clients ou catalogues, cliquez sur **Suivant** pour afficher les listes déroulantes correspondantes, puis sélectionnez les options souhaitées.
 4. Cliquez sur **Autoriser**.
-5. Vous êtes redirigé vers l'interface SOLUTION, et la connexion à HubRise est établie.
+5. Vous êtes redirigé vers l'interface SOLUTION et la connexion à HubRise est établie.
 
 \-- CONNECTER - option 2 --
 
