@@ -8,7 +8,7 @@ meta:
   description: Correspondence table showing terms used by SOLUTION and those used on HubRise for the same concept. Connect apps and synchronise your data.
 ---
 
-## SOLUTION Terms
+## Terms used by SOLUTION
 
 The following table explains the terms that are specific to SOLUTION.
 
@@ -21,17 +21,17 @@ The following table explains the terms that are specific to SOLUTION.
 HubRise and SOLUTION each use their own terminology. The same concept can therefore have a different name in each of the two systems. The correspondence table below shows these differences.
 
 | SOLUTION | HubRise     | Description                                                                      |
-| -------- |-------------| -------------------------------------------------------------------------------- |
+| -------- |-------------|----------------------------------------------------------------------------------|
 | ...      | Ref code    | Product code.                                                                    |
 | ...      | Category    | A group of products.                                                             |
 | ...      | Product     | A product consists of one or more SKUs.                                          |
 | ...      | SKU         | A product variant, such as a size or color.                                      |
 | ...      | Option      | A service or item that can be added to a product, such as a sauce or an extra.   |
 | ...      | Option list | A group of options, such as the list of available sauces.                        |
-| ...      | Deal        | Special offer on specific items.                                                 |
-| ...      | Deal Line   | Each choice in a deal, such as a pizza or a dessert.                             |
+| ...      | Deal        | Special offer on products.                                                       |
+| ...      | Deal Line   | Each choice in a deal, such as a main course or a dessert.                       |
 | ...      | Discount    | Special offer on the overall order.                                              |
 | ...      | Location    | The actual restaurant.                                                           |
 | ...      | Account     | Business brand.                                                                  |
 | ...      | Catalog     | List of products.                                                                |
-| ...      | Variant     | A catalog variant, used to unify multiple sales channels under a single catalog. |
+| ...      | Variant     | A catalog variant, used to group multiple sales channels under a single catalog. |
