@@ -18,7 +18,7 @@ The following table explains the terms that are specific to SOLUTION.
 
 ## Correspondence Table - DELETE THIS TITLE IF THE ABOVE SECTION IS DELETED
 
-HubRise and SOLUTION each use their own terminology. The same concept can therefore have a different designation in each SOLUTION. The correspondence table below shows these differences.
+HubRise and SOLUTION each use their own terminology. The same concept can therefore have a different name in each of the two systems. The correspondence table below shows these differences.
 
 | SOLUTION | HubRise     | Description                                                                      |
 | -------- |-------------| -------------------------------------------------------------------------------- |
