@@ -80,8 +80,8 @@ SOLUTION utilise uniquement le nom de la remise et son montant. Le code ref est 
 Les frais dans les commandes HubRise apparaissent comme des [produits] sur SOLUTION.
 
 SOLUTION utilise le code ref des frais pour identifier le [produit] correspondant. Si le code ref n'est pas trouvé, [les frais sont ignorés].
-**OR**
-SOLUTION only uses the charge name and amount. Le code ref est ignoré.
+**OU**
+SOLUTION utilise uniquement le nom des frais et son montant. Le code ref est ignoré.
 
 ### Paiements
 
