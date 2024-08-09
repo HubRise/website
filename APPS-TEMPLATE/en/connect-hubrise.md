@@ -22,7 +22,7 @@ To connect SOLUTION to HubRise, follow these steps:
 
 1. From the SOLUTION back office, click on ...
 1. Click on the **CONNECT** button. You are redirected to the HubRise interface. If this is your first time logging in, create a HubRise account. For more information, check out our [Getting Started Guide](/docs/get-started).
-1. If you have multiple locations,expand the **Choose location** section to select the desired location, and click **Allow**. For locations with multiple customer lists or catalogs, click **Next** to display the corresponding dropdown lists, and select the desired options.
+1.  If your account has multiple locations, expand the **Choose location** section to select the desired location, and click **Allow**. For locations with multiple customer lists or catalogs, click **Next** to display the corresponding dropdown lists, and select the desired options.
 1. Click **Authorise**.
 1. You are redirected to the SOLUTION interface, and the connection to HubRise is established.
 
@@ -44,6 +44,8 @@ Only the SOLUTION support team can connect your SOLUTION to HubRise.
 
 To connect SOLUTION to HubRise, proceed as follows:
 
+1. Log in to your [HubRise account](https://manager.hubrise.com).
+1. Select the location you want to connect from the dropdown menu.
 1. Grant SOLUTION support access to your HubRise account. For more information, see [Grant Access to SOLUTION Support](#give-access).
 1. Contact the SOLUTION support team who will establish the connection to HubRise. For more information, see [Contact SOLUTION Support](#contact).
 
