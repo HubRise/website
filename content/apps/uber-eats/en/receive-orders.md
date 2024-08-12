@@ -48,19 +48,19 @@ Every option has single quantity. Multiple identical modifiers are encoded in se
 
 ### Uber Eats Statuses
 
-Uber Eats supports three order statuses:
+Uber Eats orders can be updated with the following statuses:
 
 - `Accepted`: The order has been accepted by the EPOS.
 - `Denied`: The order could not be sent to the EPOS.
 - `Cancelled`: The order has been cancelled.
-
-New orders must be switched to one of the above statuses within 10 minutes. Orders which are still pending after this period of time are automatically cancelled by Uber Eats.
+- `Ready`: The order is ready for delivery.
 
 Status update rules:
 
-1. You can only deny an order before it has been accepted.
-2. An order can be cancelled at any time by different parties (customer through Uber support, store through integration or tablet), even after it has been accepted.
-3. Once an order reaches a terminal state (completed, cancelled, or failed), no further status updates are possible.
+1. New orders must be switched to `Accepted`, `Denied`, or `Cancelled` within 10 minutes. Orders which are still pending after this period of time are automatically cancelled by Uber Eats.
+2. You can only deny an order before it has been accepted.
+3. An order can be cancelled at any time by different parties (customer through Uber support, store through integration or tablet), even after it has been accepted.
+4. Once an order reaches a terminal state (completed, cancelled, or failed), no further status updates are possible.
 
 ### When the Status Changes in HubRise
 
@@ -70,7 +70,7 @@ When the status of an order changes to `rejected` in HubRise, Uber Eats Bridge n
 
 When the status of an order changes to `cancelled` in HubRise, Uber Eats Bridge notifies Uber Eats that the order is `Cancelled`. This can be done at any time, even after the order has been accepted.
 
-When the status of an order changes to `awaiting_shipment`, Uber Eats Bridge notifies Uber Eats that the order is ready for delivery. Marking orders ready only affects orders delivered by Uber. For such orders, the effects are identical to pressing the **Order Ready** button on the Uber Eats tablet:
+When the status of an order changes to `awaiting_shipment`, Uber Eats Bridge notifies Uber Eats that the order is `Ready`. Marking orders ready only affects orders delivered by Uber. For such orders, the effects are identical to pressing the **Order Ready** button on the Uber Eats tablet:
 
 1. If Uber has not yet dispatched a driver because the preparation time did not run out, this will let Uber know that it can dispatch a driver immediately.
 2. It improves preparation time predictions for future orders.

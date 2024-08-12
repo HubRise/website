@@ -48,30 +48,36 @@ Chaque option a une quantité égale à 1. Les modificateurs identiques sont enc
 
 ### Statuts Uber Eats
 
-Uber Eats prend en charge trois statuts de commande :
+Les commandes Uber Eats peuvent être mises à jour avec les statuts suivants :
 
 - `Accepted` : la commande a été acceptée par le logiciel de caisse.
 - `Denied` : l'envoi de la commande au logiciel de caisse a échoué.
-- `Cancelled` : la commande a été annulée par le logiciel de caisse.
+- `Cancelled` : la commande a été annulée.
+- `Ready` : la commande est prête pour la livraison.
 
-Les nouvelles commandes doivent passer à l'un des statuts ci-dessus dans les 10 minutes. Les commandes qui sont encore en attente à l'issue de ce délai sont automatiquement annulées par Uber Eats.
+Règles de mise à jour du statut :
 
-Vous ne pouvez actualiser le statut d'une commande qu'une seule fois. Les modifications ultérieures sont ignorées par Uber Eats. Vous ne pouvez donc pas annuler ni refuser une commande qui a déjà été acceptée.
+1. Les nouvelles commandes doivent être basculées en `Accepted`, `Denied` ou `Cancelled` dans les 10 minutes. Les commandes qui sont encore en attente à l'issue de ce délai sont automatiquement annulées par Uber Eats.
+2. Vous pouvez seulement marquer comme `Denied` (refusée) une commande qui n'a pas été acceptée.
+3. Une commande peut être annulée à tout moment par tous les acteurs (le client via l'assistance Uber, ou le restaurant par son intégration ou sa tablette), même après avoir été acceptée.
+4. Une fois qu'une commande atteint son état terminal (terminée, annulée ou échouée), aucune nouvelle mise à jour de l'état n'est possible.
 
 ### Lorsque le statut change dans HubRise
 
 Uber Eats Bridge vous permet de décider quel statut HubRise déclenche le statut `Accepted` dans Uber Eats. Cette option est utile pour gérer différents scénarios lorsque votre logiciel de caisse actualise le statut de la commande. Par exemple, si votre logiciel de caisse marque une commande acceptée comme `received` (reçue) dans HubRise, vous pouvez toujours signaler à Uber Eats que la commande a été acceptée.
 
-Lorsque le statut d'une commande passe à `rejected` (rejetée) ou `cancelled` (annulée) dans HubRise, Uber Eats Bridge notifie Uber Eats du changement de statut de commande à `Denied` (Refusée) ou `Cancelled`.
+Lorsque le statut d'une commande passe à `rejected` (rejetée) dans HubRise, Uber Eats Bridge notifie Uber Eats du changement de statut de commande à `Denied` (Refusée), mais seulement si la commande n'a pas encore été acceptée.
 
-Lorsque le statut d'une commande passe à `awaiting_shipment` (en attente de livraison), Uber Eats Bridge avertit Uber Eats que la commande est prête pour la livraison. Marquer les commandes comme étant prêtes ne concerne que les commandes livrées par Uber. L'effet est alors identique à l'activation du bouton **Order Ready** (Commande prête) sur la tablette Uber Eats :
+Lorsque le statut d'une commande passe à `cancelled` (annulée) dans HubRise, Uber Eats Bridge notifie Uber Eats du changement de statut de commande à `Cancelled` (Annulée). Cela peut être fait à tout moment, même après l'acceptation de la commande.
+
+Lorsque le statut d'une commande passe à `awaiting_shipment` (en attente de livraison), Uber Eats Bridge avertit Uber Eats que la commande est `Ready` (Prête) pour la livraison. Marquer les commandes comme prêtes ne concerne que les commandes livrées par Uber. L'effet est alors identique à l'activation du bouton **Order Ready** (Commande prête) sur la tablette Uber Eats :
 
 1. Si Uber n'a pas encore envoyé de livreur parce que le temps de préparation n'a pas expiré, cela permet à Uber de savoir qu'il peut en envoyer un immédiatement.
 2. Les prévisions du temps de préparation seront plus précises lors des prochaines commandes.
 
-Il n'est pas obligatoire de marquer les commandes comme étant prêtes. Par défaut, Uber Eats le fait automatiquement après l'expiration du temps de préparation.
+Il n'est pas obligatoire de marquer les commandes comme prêtes. Par défaut, Uber Eats le fait automatiquement après l'expiration du temps de préparation.
 
-Les autres statuts HubRise ne sont pas pris en charge ni envoyés à Uber Eats.
+Les autres statuts HubRise ne sont ni pris en charge, ni envoyés à Uber Eats.
 
 ### Lorsque le statut change dans Uber Eats
 
