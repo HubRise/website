@@ -10,9 +10,9 @@ meta:
 
 HubRise can push orders from different connected solutions directly into your Lightspeed Restaurant EPOS. You just need to connect Lightspeed Restaurant Bridge to HubRise for orders to be sent to your EPOS, with no additional configuration.
 
-This page explains what information HubRise sends to your EPOS.
+## Information Sent to Lightspeed
 
-## Items and Options {#items-and-options}
+### Items and Options {#items-and-options}
 
 Lightspeed Restaurant Bridge sends your EPOS the complete information about items and options, including name, EPOS ref code, quantity, and price.
 
@@ -20,21 +20,19 @@ Lightspeed Restaurant Bridge converts options with a ref code that starts with `
 
 Every item on Lightspeed must have a ref code. Orders containing items with incorrect or missing ref codes are rejected by the EPOS. For this reason, when sending an order to the EPOS, Lightspeed Restaurant Bridge skips all items without a ref code.
 
-## Order Status
+### Order Status
 
 Lightspeed notifies HubRise when an order is received or rejected by sending the statuses `SUCCESS` and `FAILURE`, respectively.
 
 Additionally, Lightspeed notifies HubRise when an order is ready for pick-up.
 
-## Payments
+### Payments
 
-Lightspeed does not support split payments. Therefore, when an order contains multiple payments, Lightspeed Restaurant Bridge sends only the first payment of the list, while the others are discarded.
+Zero, one, or multiple payments can be associated with an order.
 
-The ref code of the payment is used to map the HubRise order to the correct payment method in Lightspeed. Lightspeed Restaurant Bridge ignores payments without a ref code.
+Ref codes are used to map each payment in HubRise to the correct payment method in Lightspeed. Payments without a ref code are not sent to Lightspeed.
 
 To find out how to check the payment methods ref codes available in your Lightspeed back office, see [Map Ref Codes](/apps/lightspeed-restaurant/map-ref-codes#payment-methods).
-
-### Handling Price Differences
 
 When the total payment amount does not match the total price for the order as calculated by Lightspeed Restaurant, two scenarios might happen:
 
@@ -47,7 +45,7 @@ When the total payment amount does not match the total price for the order as ca
 
 ---
 
-## Service Types
+### Service Types
 
 Lightspeed Restaurant requires each service type (delivery, collection, eat-in) to be defined as an account profile.
 
@@ -55,8 +53,27 @@ The ref code of the service type is used to map the HubRise order to the correct
 
 To find out how to check the service types ref codes available in your Lightspeed back office, see [Map Ref Codes](/apps/lightspeed-restaurant/map-ref-codes#service-types).
 
-## Customer Information
+### Customer Information
 
 Lightspeed Restaurant Bridge sends to Lightspeed the complete customer information, when available, including name, email address, and delivery address.
 
 When customer information is not available, Lightspeed Restaurant Bridge creates an anonymous customer with `Anonymous` as the first name.
+
+## Order Modifications
+
+When an order created in HubRise is modified in Lightspeed, Lightspeed Restaurant Bridge sends the item and payment changes to HubRise. When it is modified in HubRise, Lightspeed Restaurant Bridge only sends the payment changes to Lightspeed.
+
+Orders created in Lightspeed can be pulled into HubRise only when they are closed. Modifications to these orders are not sent to HubRise. For more information, see [Pull Orders](/apps/lightspeed-restaurant/pull-orders).
+
+## Local Orders {#local-orders}
+
+Local orders in Lightspeed are orders with a service type of `eat-in` in HubRise. When a table name is associated with a local order, it is handled slightly differently. Here are the specifics:
+
+- When the local order is created, the bridge checks if the table name is already associated with an open check in Lightspeed. If it is, the bridge will add the items and payments to the HubRise order.
+- If the table name is associated with an open check, but another HubRise order is already associated with the table name, the bridge will mark the HubRise order as `rejected`.
+
+The following scenarios illustrate how local orders can be used:
+
+- **Booking solution.** When the customer checks-in, the booking solution creates an empty eat-in order in HubRise, with the table name. When the customer orders and pays, the booking solution is informed of the order and payment details.
+- **Table ordering app.** When the customer orders through the app, it creates an eat-in order in HubRise. The order can be paid on the app, or at the counter. The app can then track the order status and payment details. Currently, the bridges does not support adding more items for the same table until the order is paid, but this feature may be supported in the future.
+- **Pay-at-the-table solution.** When the customer is ready to pay, the app creates an empty eat-in order in HubRise, with the table name. The bridge then fetches the open check for the table, and adds the items in HubRise. This triggers an order update notification, which the app can use to display the items and payment amount to the customer. When the customer pays the bill, the app sends the payment to HubRise which closes the check in Lightspeed.
