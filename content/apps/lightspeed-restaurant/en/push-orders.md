@@ -59,21 +59,23 @@ Lightspeed Restaurant Bridge sends to Lightspeed the complete customer informati
 
 When customer information is not available, Lightspeed Restaurant Bridge creates an anonymous customer with `Anonymous` as the first name.
 
-## Order Modifications
+## Order Modifications {#order-modifications}
 
-When an order created in HubRise is modified in Lightspeed, Lightspeed Restaurant Bridge sends the item and payment changes to HubRise. When it is modified in HubRise, Lightspeed Restaurant Bridge only sends the payment changes to Lightspeed.
+When an order created in HubRise is modified in Lightspeed, Lightspeed Restaurant Bridge sends both item and payment changes to HubRise.
+
+However, when an order is modified in HubRise, Lightspeed Restaurant Bridge only sends payment changes to Lightspeed. Support for pushing item changes to Lightspeed may be added in the future. If you need this feature, please contact us.
 
 Orders created in Lightspeed can be pulled into HubRise only when they are closed. Modifications to these orders are not sent to HubRise. For more information, see [Pull Orders](/apps/lightspeed-restaurant/pull-orders).
 
-## Local Orders {#local-orders}
+## Local Orders
 
-Local orders in Lightspeed are orders with a service type of `eat-in` in HubRise. When a table name is associated with a local order, it is handled slightly differently. Here are the specifics:
+Local orders in Lightspeed correspond to orders with a service type of `eat-in` in HubRise. When a table name is associated with a local order, it is handled slightly differently. Here are the specifics:
 
-- When the local order is created, the bridge checks if the table name is already associated with an open check in Lightspeed. If it is, the bridge will add the items and payments to the HubRise order.
-- If the table name is associated with an open check, but another HubRise order is already associated with the table name, the bridge will mark the HubRise order as `rejected`.
+- When a local order is created, the bridge checks if the table name is already associated with an open check in Lightspeed. If it is, the bridge will add the items and payments from the open check to the HubRise order.
+- If the table name is associated with an open check, but another HubRise order is already associated with that table name, the bridge will mark the new HubRise order as `rejected`.
 
 The following scenarios illustrate how local orders can be used:
 
-- **Booking solution.** When the customer checks-in, the booking solution creates an empty eat-in order in HubRise, with the table name. When the customer orders and pays, the booking solution is informed of the order and payment details.
-- **Table ordering app.** When the customer orders through the app, it creates an eat-in order in HubRise. The order can be paid on the app, or at the counter. The app can then track the order status and payment details. Currently, the bridges does not support adding more items for the same table until the order is paid, but this feature may be supported in the future.
-- **Pay-at-the-table solution.** When the customer is ready to pay, the app creates an empty eat-in order in HubRise, with the table name. The bridge then fetches the open check for the table, and adds the items in HubRise. This triggers an order update notification, which the app can use to display the items and payment amount to the customer. When the customer pays the bill, the app sends the payment to HubRise which closes the check in Lightspeed.
+- **Booking solution:** When the customer checks in, the booking solution creates an empty eat-in order in HubRise with the table name. When the customer orders and pays, the booking solution is informed of the order and payment details.
+- **Table ordering app:** When the customer places an order, the app creates an eat-in order in HubRise. The order can be either paid immediately via the app, or later via the app or at the counter. As mentioned in [Order Modifications](#order-modifications), the bridge does not currently support adding more items for the same table: the app must pay the order and create a new one.
+- **Pay-at-the-table solution:** When the customer is ready to pay, the app creates an empty eat-in order in HubRise with the table name. The bridge then fetches the open check for that table and adds the items in HubRise. The app is notified of the update, and it displays the items and payment amount to the customer. When the customer pays, the app sends the payment to HubRise, which closes the check in Lightspeed.
