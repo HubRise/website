@@ -22,9 +22,12 @@ Every item on Lightspeed must have a ref code. Orders containing items with inco
 
 ### Order Status
 
-Lightspeed notifies HubRise when an order is received or rejected by sending the statuses `SUCCESS` and `FAILURE`, respectively.
+Lightspeed Restaurant Bridge creates a check in Lightspeed for each order from HubRise. The order status in HubRise is updated as follows:
 
-Additionally, Lightspeed notifies HubRise when an order is ready for pick-up.
+- `received`: When the check is created in Lightspeed.
+- `rejected`: If the check creation fails. The detailed error is available in the order custom fields, under the key `epos.rejection_reason.cause`.
+- `awaiting_collection`: When the check is marked ready in Lightspeed Kitchen.
+- `completed`: When the check is closed in Lightspeed.
 
 ### Payments
 

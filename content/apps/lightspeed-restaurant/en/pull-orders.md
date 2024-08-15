@@ -43,7 +43,7 @@ Information about the course number is not received in HubRise.
 
 ### Order Statuses
 
-Orders are created in HubRise with the default status `accepted`.
+Orders are created in HubRise with the default status `completed`.
 
 ### Payments
 
