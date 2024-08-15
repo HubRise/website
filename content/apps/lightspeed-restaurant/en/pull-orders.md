@@ -43,7 +43,7 @@ Information about the course number is not received in HubRise.
 
 ### Order Statuses
 
-Orders are created in HubRise with the default status `completed`.
+If the bridge is configured to mark orders as completed, Lightspeed orders are created in HubRise with the default status `completed`. Otherwise, they are created with the status `received`. For more information, refer to the [Order Statuses](/apps/lightspeed-restaurant/configuration#order-statuses) section of the Configuration page.
 
 ### Payments
 

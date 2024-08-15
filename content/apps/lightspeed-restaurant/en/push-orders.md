@@ -27,7 +27,7 @@ Lightspeed Restaurant Bridge creates a check in Lightspeed for each order from H
 - `received`: When the check is created in Lightspeed.
 - `rejected`: If the check creation fails. The detailed error is available in the order custom fields, under the key `epos.rejection_reason.cause`.
 - `awaiting_collection`: When the check is marked ready in Lightspeed Kitchen.
-- `completed`: When the check is closed in Lightspeed.
+- `completed`: When the check is closed in Lightspeed, and if the bridge is configured to mark orders as completed. For more information, refer to the [Order Statuses](/apps/lightspeed-restaurant/configuration#order-statuses) section of the Configuration page.
 
 ### Payments
 
