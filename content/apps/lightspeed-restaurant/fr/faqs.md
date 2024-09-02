@@ -9,6 +9,7 @@ meta:
 ---
 
 - [Comment obtenir un compte de test Lightspeed ?](/apps/lightspeed-restaurant/faqs/get-lightspeed-test-account)
+- [Je viens de migrer de Deliverect. Que dois-je faire pour recevoir les commandes ?](/apps/lightspeed-restaurant/faqs/migrate-from-deliverect)
 - [Comment créer des codes ref dans Lightspeed ?](/apps/lightspeed-restaurant/faqs/create-ref-codes)
 - [Pourquoi certaines commandes ne sont pas correctement transmises à Lightspeed ?](/apps/lightspeed-restaurant/faqs/troubleshooting-failed-orders)
 - [J'ai manqué une commande. Comment la renvoyer à Lightspeed Restaurant ?](/apps/lightspeed-restaurant/faqs/resend-missed-orders)
