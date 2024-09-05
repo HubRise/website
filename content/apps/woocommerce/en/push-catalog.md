@@ -65,7 +65,7 @@ For every category, the following HubRise fields are sent to WooCommerce:
 
 ### Products and Skus
 
-WooCommerce Bridge creates the products that do not already exist in WooCommerce. These products are identified by their ref codes, and only products with a ref code are pushed to WooCommerce.
+WooCommerce Bridge creates the products that do not already exist in WooCommerce. These products are identified by their ref codes, and only products with a ref code are pushed to WooCommerce. Newly created products are placed in `Pending Review` mode by default, allowing for a manual review before they are made available on your website.
 
 If the **Update prices of existing products** checkbox is selected in the Configuration page, WooCommerce Bridge will also update the price of your existing WooCommerce products. WooCommerce Bridge does not delete existing products.
 
