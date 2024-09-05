@@ -95,6 +95,8 @@ For every HubRise SKU, Smood creates a product with the following information:
 - `product.name` and `skus.name`: The name of the product. For example, if the HubRise product name is `Pizza margherita` and the SKU name is `8"`, Smood creates a product named `Pizza margherita 8"`
 - `product.description`: The description of the product.
 - `product.image_ids`: The IDs of the images associated with the product.
+- `product.tags`: We support the following tag:
+    - `deal_only`: When this tag is set, the product is not available as a standalone item on the menu, but can be ordered as part of a deal.
 - `skus.ref`: The ref code of the SKU, which will be passed along in orders.
 - `skus.price`: The price of the SKU.
 
