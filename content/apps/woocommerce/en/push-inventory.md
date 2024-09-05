@@ -12,7 +12,18 @@ WooCommerce Bridge can synchronise your HubRise inventory with WooCommerce.
 
 ## Inventory Synchronisation
 
-Some EPOS and inventory management solutions can update the inventory data in HubRise. When the HubRise inventory is updated, WooCommerce Bridge can automatically adjust your inventory counters in WooCommerce. To check whether a specific app supports inventory synchronisation, refer to its documentation on our [Apps page](/apps). Alternatively, you can manage your inventory using [OrderLine](/apps/orderline/overview).
+When HubRise inventory is updated, WooCommerce Bridge can automatically adjust inventory counters in WooCommerce.
+
+Only items with the **Track stock quantity** checkbox enabled are updated. To check if this option is enabled for a specific product, follow these steps:
+
+1. In your WooCommerce account, open the **Products** page.
+2. Find the product you want to check and click **Edit**.
+3. In the **Product data** section, select **Inventory**.
+5. Ensure that the **Track stock quantity for this product** checkbox is ticked.
+
+![Track Inventory](./images/017-woocommerce-track-inventory.png)
+
+Some EPOS and inventory management solutions can update the inventory data in HubRise. To check whether a specific app supports inventory synchronisation, refer to its documentation on our [Apps page](/apps). Alternatively, you can manage your inventory using [OrderLine](/apps/orderline/overview).
 
 ## Manual Inventory Push
 
