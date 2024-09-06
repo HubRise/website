@@ -494,6 +494,15 @@ A product contains one or several skus. A sku is always attached to a product.
 | `price_overrides`                            | [PriceOverrides](#price-overrides)                        | Price overrides in different contexts, such as a specific service type.                                                 |
 | `option_list_refs` <Label type="optional" /> | string[]                                                  | The refs of the option lists this sku is attached to.                                                                   |
 | `tags` <Label type="optional" />             | string[]                                                  | List of tags.                                                                                                           |
+| `barcodes` <Label type="optional" />         | string[]                                                  | List of barcodes. See [Barcodes](#barcodes) for more information.                                                       |
+
+#### Barcodes {#barcodes}
+
+Each SKU may be associated with multiple barcodes. This is useful for products sourced from different suppliers, each assigning a unique barcode, or for products that carry multiple types of identifiers.
+
+Applications that support only one barcode will typically use the first listed.
+
+Each barcode must be a numeric string comprising exactly 8, 12, or 13 digits. Example formats that meet these requirements include EAN-8, GTIN-12, EAN-13, ISBN-13, ISSN-13.
 
 ##### Example:
 
@@ -512,7 +521,8 @@ A product contains one or several skus. A sku is always attached to a product.
     }
   ],
   "option_list_refs": ["SAUCE", "PIZZA_TOPPINGS"],
-  "tags": ["hidden"]
+  "tags": ["hidden"],
+  "barcodes": ["1234567890123", "1234567890124"]
 }
 ```
 
