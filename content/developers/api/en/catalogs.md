@@ -209,9 +209,9 @@ To create an account-level catalog:
 
 ### 1.4. Update Catalog
 
-Update a catalog. The request parameters are the same as for the [create catalog](#create-catalog) request.
+Update a catalog. The request parameters are the same as for the [create catalog](#create-catalog) request. If the `data` field is passed, the whole catalog content is cleared and recreated from the passed data.
 
-If the `data` field is passed, the whole catalog content is cleared and recreated from the passed data.
+There is no individual endpoint to update a particular item of the catalog (eg. a SKU or an option). To update a single item, you must use this endpoint and pass the whole catalog content.
 
 <CallSummaryTable endpoint="PUT /catalogs/:id" accessLevel="account" />
 
