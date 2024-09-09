@@ -113,6 +113,7 @@ For every [product](/developers/api/catalogs#products) with multiple skus, Uber 
 - `price`: The minimum price of all skus.
 - `image`: The URL of the image of the parent product.
 - `tags`: Tags describing the characteristics and restrictions of the product, such as allergens or spiciness. For the list of available tags on Uber Eats, see [Product Tags](#product-tags).
+- `barcodes`: Only the first barcode is sent, if present.
 
 The list of skus is attached to the product as an array of modifiers.
 
