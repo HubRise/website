@@ -22,12 +22,14 @@ Every item on Lightspeed must have a ref code. Orders containing items with inco
 
 ### Order Status
 
-Lightspeed Restaurant Bridge creates a check in Lightspeed for each order from HubRise. The order status in HubRise is updated as follows:
+Lightspeed Restaurant Bridge creates an order in Lightspeed for each order from HubRise. The order status in HubRise is updated as follows:
 
-- `received`: When the check is created in Lightspeed.
-- `rejected`: If the check creation fails. The detailed error is available in the order custom fields, under the key `epos.rejection_reason.cause`.
-- `awaiting_collection`: When the check is marked ready in Lightspeed Kitchen.
-- `completed`: When the check is closed in Lightspeed, and if the bridge is configured to mark orders as completed. For more information, refer to the [Order Statuses](/apps/lightspeed-restaurant/configuration#order-statuses) section of the Configuration page.
+- `received`: When the order is created in Lightspeed.
+- `rejected`: If the order creation fails. The detailed error is available in the order custom fields, under the key `epos.rejection_reason.cause`.
+- `awaiting_collection`: When the order is marked ready in Lightspeed Kitchen.
+- `completed`: When the order is closed in Lightspeed, and if the bridge is configured to mark orders as completed. For more information, refer to the [Order Statuses](/apps/lightspeed-restaurant/configuration#order-statuses) section of the Configuration page.
+
+When an order is marked as `cancelled` in HubRise, Lightspeed Restaurant prints a message on the connected printer to indicate the cancellation. Depending on your settings, this message may also appear on the EPOS screen. The order remains in Lightspeed and is not deleted.
 
 ### Payments
 
