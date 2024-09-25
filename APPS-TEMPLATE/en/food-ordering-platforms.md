@@ -31,10 +31,10 @@ To receive Deliveroo orders in SOLUTION, you first need to connect Deliveroo Bri
 In the Deliveroo Bridge configuration page, use the following settings:
 
 | Section        | Name                                  | Ref code                                                |
-| -------------- | ------------------------------------- |---------------------------------------------------------|
+| -------------- | ------------------------------------- | ------------------------------------------------------- |
 | Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Received"`       |
-| Service types  | Deliveroo fulfilled ref code          | (leave empty)                                           |
-| Service types  | Restaurant fulfilled ref code         | (leave empty)                                           |
+| Service types  | Deliveroo delivery ref code           | (leave empty)                                           |
+| Service types  | Restaurant delivery ref code          | (leave empty)                                           |
 | Service types  | Takeaway ref code                     | (leave empty)                                           |
 | Service types  | Send orders delivered by Deliveroo as | `delivery orders`                                       |
 | Special items  | Deposit option ref code               | Create an option in SOLUTION and use its ref code. (\*) |
@@ -64,7 +64,7 @@ To receive Just Eat orders in SOLUTION via Takeaway API, you first need to conne
 In the Just Eat Takeaway Bridge configuration page, use the following settings:
 
 | Section        | Name                                     | Ref code                                          |
-| -------------- | ---------------------------------------- |---------------------------------------------------|
+| -------------- | ---------------------------------------- | ------------------------------------------------- |
 | Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Received"` |
 | Service types  | Just Eat delivery ref code               | (leave empty)                                     |
 | Service types  | Restaurant delivery ref code             | (leave empty)                                     |
@@ -83,7 +83,7 @@ To receive Just Eat orders in SOLUTION via Flyt API, you first need to connect J
 In the Just Eat Flyt Bridge configuration page, use the following settings:
 
 | Section        | Name                                     | Ref code                                                |
-| -------------- | ---------------------------------------- |---------------------------------------------------------|
+| -------------- | ---------------------------------------- | ------------------------------------------------------- |
 | Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Received"`       |
 | Service types  | Just Eat delivery ref code               | (leave empty)                                           |
 | Service types  | Restaurant delivery ref code             | (leave empty)                                           |
@@ -109,9 +109,9 @@ To receive Uber Eats orders in SOLUTION, you first need to connect Uber Eats Bri
 In the Uber Eats Bridge configuration page, use the following settings:
 
 | Section        | Name                                  | Ref code or value                                       |
-| -------------- | ------------------------------------- |---------------------------------------------------------|
+| -------------- | ------------------------------------- | ------------------------------------------------------- |
 | Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Received"`       |
-| Service types  | Uber delivery ref code                | (leave empty)                                           |
+| Service types  | Uber Eats delivery ref code           | (leave empty)                                           |
 | Service types  | Restaurant delivery ref code          | (leave empty)                                           |
 | Service types  | Takeaway ref code                     | (leave empty)                                           |
 | Service types  | Eat-in ref code                       | (leave empty)                                           |
