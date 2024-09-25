@@ -17,17 +17,31 @@ These are divided into different sections for an easier navigation.
 
 Choose the language to use for generic items such as `Delivery charge`. These names may appear in customer receipts.
 
-## Catalog
-
-This section allows you to choose which Lightspeed menu to use when you want to pull your catalog to HubRise. Select a value from the drop-down list.
-
 ## Orders
 
 From this section, you can customise how Lightspeed Restaurant Bridge handles orders.
 
+### Order Statuses {#order-statuses}
+
+Lightspeed closes orders as soon as they are paid. By default, Lightspeed Restaurant Bridge marks orders as `completed` in HubRise when they are closed in Lightspeed.
+
+If you use a different app to update order statuses in HubRise, for example a Kitchen Display System, you can unselect **Mark closed orders as completed in HubRise**.
+
+### Push Orders to Lightspeed
+
+Orders are pushed to Lightspeed as soon as they are created in HubRise.
+
 If you want to delay orders until shortly before the delivery time, you can set the **Display time** field. If you leave it empty, orders will be displayed immediately on Lightspeed.
 
-By default, Lightspeed Restaurant Bridge does not pull Lightspeed sales into HubRise. If you want to enable this feature, select **Enabled for dine-in sales** or **Enabled for all sales** from **Pull orders**.
+### Pull orders from Lightspeed
+
+By default, Lightspeed Restaurant Bridge does not pull Lightspeed sales into HubRise.
+
+To enable this feature, select **Enabled for dine-in sales** or **Enabled for all sales** from **Pull orders**.
+
+## Catalog
+
+This section allows you to choose which Lightspeed menu to use when you want to pull your catalog to HubRise. Select a value from the drop-down list.
 
 ## Save the Configuration
 
