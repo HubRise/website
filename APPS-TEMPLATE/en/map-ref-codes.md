@@ -77,7 +77,7 @@ Discounts in HubRise are special offers that apply to the entire order. Discount
 
 ## Payment Methods
 
-Payment methods in HubRise correspond to ... in SOLUTION.  To find the ref code of a payment methods, follow these steps: ...
+Payment methods in HubRise correspond to ... in SOLUTION. To find the ref code of a payment method, follow these steps: ...
 
 ## Service Types
 

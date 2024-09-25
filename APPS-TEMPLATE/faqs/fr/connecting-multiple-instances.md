@@ -1,9 +1,9 @@
 ---
-title: Puis-je connecter plusieurs SOLUTIONS au même point de vente HubRise ?
-path_override: connecter-plusieurs-solutions
+title: Puis-je connecter plusieurs restaurants SOLUTION au même point de vente HubRise ?
+path_override: connecter-plusieurs-instances
 position: 2
 layout: documentation
 meta:
   title: Connecter plusieurs restaurants | FAQ SOLUTIONS | HubRise
-  description: Instructions de connexion de plusieurs SOLUTIONS sur le même point de vente HubRise. Recevoir toutes les commandes sur le même logiciel de caisse.
+  description: Instructions pour connecter plusieurs restaurants SOLUTION sur le même point de vente HubRise et recevoir toutes les commandes dans le même logiciel de caisse.
 ---

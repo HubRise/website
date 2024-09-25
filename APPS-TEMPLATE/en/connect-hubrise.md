@@ -22,7 +22,7 @@ To connect SOLUTION to HubRise, follow these steps:
 
 1. From the SOLUTION back office, click on ...
 1. Click on the **CONNECT** button. You are redirected to the HubRise interface. If this is your first time logging in, create a HubRise account. For more information, check out our [Getting Started Guide](/docs/get-started).
-1.  If your account has multiple locations, expand the **Choose location** section to select the desired location, and click **Allow**. For locations with multiple customer lists or catalogs, click **Next** to display the corresponding dropdown lists, and select the desired options.
+1. If your account has multiple locations, expand the **Choose location** section to select the desired location, and click **Allow**. For locations with multiple customer lists or catalogs, click **Next** to display the corresponding dropdown lists, and select the desired options.
 1. Click **Authorise**.
 1. You are redirected to the SOLUTION interface, and the connection to HubRise is established.
 
@@ -40,32 +40,30 @@ To connect SOLUTION Bridge to HubRise, follow these steps:
 
 -- CONNECT - option 3 --
 
-Only the SOLUTION support team can connect your SOLUTION to HubRise.
+Only the SOLUTION support team can connect your [EPOS] to HubRise.
 
 To connect SOLUTION to HubRise, proceed as follows:
 
-1. Log in to your [HubRise account](https://manager.hubrise.com).
-1. Select the location you want to connect from the dropdown menu.
-1. Grant SOLUTION support access to your HubRise account. For more information, see [Grant Access to SOLUTION Support](#give-access).
+1. Grant SOLUTION access to your HubRise account. For more information, see [Grant Access to SOLUTION Support](#give-access).
 1. Contact the SOLUTION support team who will establish the connection to HubRise. For more information, see [Contact SOLUTION Support](#contact).
 
 ## Grant Access to SOLUTION Support {#give-access}
 
 To facilitate the handling of your support requests, you need to grant your SOLUTION provider access to your HubRise account.
 -- OR --
-To connect SOLUTION and facilitate the handling of your support requests, you need to grant your SOLUTION provider access to your HubRise account. 
+To connect SOLUTION and facilitate the handling of your support requests, you need to grant your SOLUTION provider access to your HubRise account.
 
 To grant access to SOLUTION, proceed as follows:
 
 1. From the HubRise back office, select **SETTINGS** in the left-hand menu.
 1. In the **Permissions** section, enter `contact@SOLUTION.com` and select **Manager** in the dropdown list of roles.
-1. Click the **+** icon to grant SOLUTION support access to your account or a selected location.
+1. Click the **+** icon to grant SOLUTION support access to your account or location.
 
 Adding a user is the recommended way to grant access to a third party to your HubRise account or location. Sharing passwords is not recommended for security reasons. For more information on permissions, see the [Permissions](/docs/permissions) help page.
 
 ## Contact SOLUTION Support {#contact}
 
-To request the connection of your SOLUTION, contact SOLUTION support by email at contact@SOLUTION.com. You can include support@hubrise.com in copy for a coordinated follow-up between our two teams.
+To request the connection of your [EPOS], contact SOLUTION support by email at contact@SOLUTION.com. You can include support@hubrise.com in copy for a coordinated follow-up between our two teams.
 
 Include in your request the name of your HubRise account, its HubRise identifier and the location to connect. For more information, see [Location Name and ID](/docs/locations#location-name-and-id).
 

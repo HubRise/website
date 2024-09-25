@@ -9,6 +9,8 @@ meta:
 gallery:
   - __gallery-001.png ?
   - __gallery-002.png ?
+  - __gallery-003.png ?
+  - __gallery-004.png ?
 app_info:
   category:
     - Logiciels de caisse - Plateformes de livraison de repas - Commande en ligne - Gestion de livreurs - Fidélité et marketing - Gestion et inventaire - Autres applications
@@ -24,16 +26,13 @@ app_info:
 ---
 
 **REMARQUE IMPORTANTE :** Intégration en cours. Une documentation complète sera publiée une fois ce travail terminé.
-**REMARQUE IMPORTANTE :** L'audit de l'intégration est en cours. Une documentation complète sera publiée une fois l'audit terminé.
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration est en cours de rédaction.
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration est en cours de rédaction.
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
 
 ---
 
 ---
 
 **REMARQUE IMPORTANTE :** Cette documentation est disponible <Link href="/apps/SOLUTION" addLocalePrefix={false}>en anglais uniquement</Link>.
-**REMARQUE IMPORTANTE :** Documentation complète disponible <Link href="/apps/SOLUTION" addLocalePrefix={false}>en anglais uniquement</Link>.
 
 ---
 

@@ -29,7 +29,7 @@ HubRise et SOLUTION utilisent chacun leur propre terminologie. Un même concept 
 | ... | Option             | Service ou article pouvant être ajouté au produit, comme une sauce ou un supplément.                 |
 | ... | Liste d'options    | Groupe d'options, comme la liste des sauces disponibles.                                             |
 | ... | Promotion          | Offre spéciale sur des articles spécifiques.                                                         |
-| ... | Ligne de promotion | Chacun des choix d'une promotion, comme une pizza ou un dessert.                                     |
+| ... | Ligne de promotion | Chacun des choix d'une promotion, comme un plat principal ou un dessert.                             |
 | ... | Remise             | Offre spéciale appliquée à la commande globale.                                                      |
 | ... | Point de vente     | Le restaurant proprement dit                                                                                         |
 | ... | Compte             | Appellation commerciale                                                                                              |

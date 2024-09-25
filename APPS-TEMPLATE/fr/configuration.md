@@ -5,5 +5,5 @@ position: 4
 layout: documentation
 meta:
   title: Configuration | SOLUTION | HubRise
-  description: Instructions simples pour configurer SOLUTION afin qu'il fonctionne parfaitement avec HubRise et votre logiciel de caisse ou autres apps connectées à HubRise. La configuration est simple.
+  description: Instructions pour configurer SOLUTION afin qu'[il/elle] fonctionne parfaitement avec votre logiciel de caisse et les autres apps connectées à HubRise. La configuration est simple.
 ---

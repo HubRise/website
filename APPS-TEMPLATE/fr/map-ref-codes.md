@@ -21,7 +21,7 @@ Il y a deux façons de procéder :
 - Vous pouvez exporter le catalogue SOLUTION vers HubRise, puis importer ce catalogue dans vos autres applications.
 - Vous pouvez également faire une saisie manuelle des codes ref dans vos autres applications.
 
-Seules certaines applications permettent l'import d'un catalogue depuis HubRise. Pour les autres, il faudra saisir manuellement les codes ref.
+Seules certaines applications permettent l'import d'un catalogue depuis HubRise. Pour les autres, il faudra saisir manuellement les codes ref. Reportez-vous à la documentation correspondante sur notre [page Apps](/apps) pour vérifier.
 
 ## Exporter le catalogue {#export-catalog}
 
@@ -77,7 +77,7 @@ Les remises dans HubRise sont les offres spéciales qui s'appliquent à l'ensemb
 
 ## Méthodes de paiement
 
-Les méthodes de paiement dans HubRise correspondent aux ... dans SOLUTION. Pour retrouver leur code ref, suivez ces étapes : ...
+Les méthodes de paiement dans HubRise correspondent aux ... dans SOLUTION. Pour trouver le code ref d'une méthode de paiement, suivez ces étapes : ...
 
 ## Types de service
 

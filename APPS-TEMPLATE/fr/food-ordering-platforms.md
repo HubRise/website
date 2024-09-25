@@ -30,21 +30,21 @@ Pour recevoir les commandes Deliveroo dans SOLUTION, vous devez d'abord connecte
 
 Sur la page de configuration de Deliveroo Bridge, utilisez les paramètres suivants :
 
-| Section             | Nom                                                                                                                                                   | Code ref                                                                                         |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| Statuts de commande | Marquer les commandes comme Acceptées                                                                                                                 | `lorsque leur statut HubRise passe à "Reçue"`                                                    |
-| Types de service    | Code ref livraison par Deliveroo                                                                                                                      | (laisser vide)                                                                |
-| Types de service    | Code ref livraison par le restaurant                                                                                                                  | (laisser vide)                                                                |
-| Types de service    | Code ref à emporter                                                                                                                                   | (laisser vide)                                                                |
-| Types de service    | Envoyer les commandes livrées par Deliveroo [...] | `commandes en livraison`                                                                         |
-| Articles spéciaux   | Code ref option consigne                                                                                                                              | Créer une option dans SOLUTION et utiliser son code ref. (\*) |
-| Remises             | Code ref remise                                                                                                                                       | (laisser vide)                                                                |
-| Frais               | Code ref frais de livraison                                                                                                                           | (laisser vide)                                                                |
-| Frais               | Code ref surcharge                                                                                                                                    | (laisser vide)                                                                |
-| Frais               | Code ref frais d'emballage                                                                                                                            | (laisser vide)                                                                |
-| Paiements           | Code ref paiement en ligne                                                                                                                            | (laisser vide)                                                                |
-| Paiements           | Code ref paiement en espèces                                                                                                                          | (laisser vide)                                                                |
-| Clients             | Dupliquer le code d'accès téléphone [...]         | Laisser décochée                                                                                 |
+| Section             | Nom                                               | Code ref                                                      |
+| ------------------- | ------------------------------------------------- | ------------------------------------------------------------- |
+| Statuts de commande | Marquer les commandes comme Acceptées             | `lorsque leur statut HubRise passe à "Reçue"`                 |
+| Types de service    | Code ref livraison par Deliveroo                  | (laisser vide)                                                |
+| Types de service    | Code ref livraison par le restaurant              | (laisser vide)                                                |
+| Types de service    | Code ref à emporter                               | (laisser vide)                                                |
+| Types de service    | Envoyer les commandes livrées par Deliveroo [...] | `commandes en livraison`                                      |
+| Articles spéciaux   | Code ref option consigne                          | Créer une option dans SOLUTION et utiliser son code ref. (\*) |
+| Remises             | Code ref remise                                   | (laisser vide)                                                |
+| Frais               | Code ref frais de livraison                       | (laisser vide)                                                |
+| Frais               | Code ref surcharge                                | (laisser vide)                                                |
+| Frais               | Code ref frais d'emballage                        | (laisser vide)                                                |
+| Paiements           | Code ref paiement en ligne                        | (laisser vide)                                                |
+| Paiements           | Code ref paiement en espèces                      | (laisser vide)                                                |
+| Clients             | Dupliquer le code d'accès téléphone [...]         | Laisser décochée                                              |
 
 (\*) Applicable uniquement si certains de vos produits nécessitent une consigne.
 
@@ -63,18 +63,18 @@ Pour recevoir les commandes Just Eat dans SOLUTION via l'API Takeaway, vous deve
 
 Sur la page de configuration de Just Eat Takeaway Bridge, utilisez les paramètres suivants :
 
-| Section             | Nom                                                                                                                                                       | Code ref                                      |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| Statuts de commande | Marquer les commandes comme Acceptées                                                                                                                     | `lorsque leur statut HubRise passe à "Reçue"` |
-| Types de service    | Code ref livraison par Just Eat                                                                                                                           | (laisser vide)             |
-| Types de service    | Code ref livraison par le restaurant                                                                                                                      | (laisser vide)             |
-| Types de service    | Code ref à emporter                                                                                                                                       | (laisser vide)             |
+| Section             | Nom                                                   | Code ref                                      |
+| ------------------- | ----------------------------------------------------- | --------------------------------------------- |
+| Statuts de commande | Marquer les commandes comme Acceptées                 | `lorsque leur statut HubRise passe à "Reçue"` |
+| Types de service    | Code ref livraison par Just Eat                       | (laisser vide)                                |
+| Types de service    | Code ref livraison par le restaurant                  | (laisser vide)                                |
+| Types de service    | Code ref à emporter                                   | (laisser vide)                                |
 | Types de service    | Envoyer les commandes livrées par la plateforme [...] | `commandes en livraison`                      |
-| Remises             | Code ref remise                                                                                                                                           | (laisser vide)             |
-| Frais               | Code ref frais de livraison                                                                                                                               | (laisser vide)             |
-| Frais               | Code ref frais de service                                                                                                                                 | (laisser vide)             |
-| Paiements           | Code ref paiement en ligne                                                                                                                                | (laisser vide)             |
-| Paiements           | Code ref paiement en espèces                                                                                                                              | (laisser vide)             |
+| Remises             | Code ref remise                                       | (laisser vide)                                |
+| Frais               | Code ref frais de livraison                           | (laisser vide)                                |
+| Frais               | Code ref frais de service                             | (laisser vide)                                |
+| Paiements           | Code ref paiement en ligne                            | (laisser vide)                                |
+| Paiements           | Code ref paiement en espèces                          | (laisser vide)                                |
 
 ### Just Eat via l'API Flyt
 
@@ -82,23 +82,23 @@ Pour recevoir les commandes Just Eat dans SOLUTION via l'API Flyt, vous devez d'
 
 Sur la page de configuration de Just Eat Flyt Bridge, utilisez les paramètres suivants :
 
-| Section             | Nom                                                                                                                                                    | Code ref                                                                                         |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| Statuts de commande | Marquer les commandes comme Acceptées                                                                                                                  | `lorsque leur statut HubRise passe à "Reçue"`                                                    |
-| Types de service    | Code ref livraison par Just Eat                                                                                                                        | (laisser vide)                                                                |
-| Types de service    | Code ref livraison par le restaurant                                                                                                                   | (laisser vide)                                                                |
-| Types de service    | Code ref à emporter                                                                                                                                    | (laisser vide)                                                                |
-| Types de service    | Envoyer les commandes livrées par la plateforme [...] | `commandes en livraison`                                                                         |
-| Articles spéciaux   | Code ref option consigne                                                                                                                               | Créer une option dans SOLUTION et utiliser son code ref. (\*) |
-| Remises             | Code ref remise                                                                                                                                        | (laisser vide)                                                                |
-| Frais               | Code ref frais de livraison                                                                                                                            | (laisser vide)                                                                |
-| Frais               | Code ref frais de service                                                                                                                              | (laisser vide)                                                                |
-| Frais               | Code ref frais d'emballage                                                                                                                             | (laisser vide)                                                                |
-| Frais               | Code ref pourboire livreur                                                                                                                             | (laisser vide)                                                                |
-| Frais               | Code ref autres frais                                                                                                                                  | (laisser vide)                                                                |
-| Paiements           | Code ref paiement en ligne                                                                                                                             | (laisser vide)                                                                |
-| Paiements           | Code ref paiement en espèces                                                                                                                           | (laisser vide)                                                                |
-| Clients             | Dupliquer le code d'accès téléphone [...]             | Laisser décochée                                                                                 |
+| Section             | Nom                                                   | Code ref                                                      |
+| ------------------- | ----------------------------------------------------- | ------------------------------------------------------------- |
+| Statuts de commande | Marquer les commandes comme Acceptées                 | `lorsque leur statut HubRise passe à "Reçue"`                 |
+| Types de service    | Code ref livraison par Just Eat                       | (laisser vide)                                                |
+| Types de service    | Code ref livraison par le restaurant                  | (laisser vide)                                                |
+| Types de service    | Code ref à emporter                                   | (laisser vide)                                                |
+| Types de service    | Envoyer les commandes livrées par la plateforme [...] | `commandes en livraison`                                      |
+| Articles spéciaux   | Code ref option consigne                              | Créer une option dans SOLUTION et utiliser son code ref. (\*) |
+| Remises             | Code ref remise                                       | (laisser vide)                                                |
+| Frais               | Code ref frais de livraison                           | (laisser vide)                                                |
+| Frais               | Code ref frais de service                             | (laisser vide)                                                |
+| Frais               | Code ref frais d'emballage                            | (laisser vide)                                                |
+| Frais               | Code ref pourboire livreur                            | (laisser vide)                                                |
+| Frais               | Code ref autres frais                                 | (laisser vide)                                                |
+| Paiements           | Code ref paiement en ligne                            | (laisser vide)                                                |
+| Paiements           | Code ref paiement en espèces                          | (laisser vide)                                                |
+| Clients             | Dupliquer le code d'accès téléphone [...]             | Laisser décochée                                              |
 
 (\*) Applicable uniquement si certains de vos produits nécessitent une consigne.
 
@@ -108,22 +108,22 @@ Pour recevoir les commandes Uber Eats dans SOLUTION, vous devez d'abord connecte
 
 Sur la page de configuration d'Uber Eats Bridge, utilisez les paramètres suivants :
 
-| Section             | Nom                                                                                                                                           | Code ref                                                                                         |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| Statuts de commande | Marquer les commandes comme Acceptées                                                                                                         | `lorsque leur statut HubRise passe à "Reçue"`                                                    |
-| Types de service    | Code ref livraison par Uber Eats                                                                                                              | (laisser vide)                                                                |
-| Types de service    | Code ref livraison par le restaurant                                                                                                          | (laisser vide)                                                                |
-| Types de service    | Code ref à emporter                                                                                                                           | (laisser vide)                                                                |
-| Types de service    | Code ref sur place                                                                                                                            | (laisser vide)                                                                |
-| Types de service    | Envoyer les commandes livrées par Uber [...] | `commandes en livraison`                                                                         |
-| Articles spéciaux   | Code ref jetables                                                                                                                             | Créer un produit dans SOLUTION et utiliser son code ref. (\*) |
-| Remises             | Code ref remise                                                                                                                               | (laisser vide)                                                                |
-| Frais               | Code ref frais de livraison                                                                                                                   | (laisser vide)                                                                |
-| Frais               | Code ref supplément petite commande                                                                                                           | (laisser vide)                                                                |
-| Frais               | Code ref pourboire                                                                                                                            | (laisser vide)                                                                |
-| Paiements           | Code ref paiement en ligne                                                                                                                    | (laisser vide)                                                                |
-| Paiements           | Code ref paiement en espèces                                                                                                                  | (laisser vide)                                                                |
-| Clients             | Dupliquer le code d'accès téléphone [...]    | Laisser décochée                                                                                 |
+| Section             | Nom                                          | Code ref                                                      |
+| ------------------- | -------------------------------------------- | ------------------------------------------------------------- |
+| Statuts de commande | Marquer les commandes comme Acceptées        | `lorsque leur statut HubRise passe à "Reçue"`                 |
+| Types de service    | Code ref livraison par Uber Eats             | (laisser vide)                                                |
+| Types de service    | Code ref livraison par le restaurant         | (laisser vide)                                                |
+| Types de service    | Code ref à emporter                          | (laisser vide)                                                |
+| Types de service    | Code ref sur place                           | (laisser vide)                                                |
+| Types de service    | Envoyer les commandes livrées par Uber [...] | `commandes en livraison`                                      |
+| Articles spéciaux   | Code ref jetables                            | Créer un produit dans SOLUTION et utiliser son code ref. (\*) |
+| Remises             | Code ref remise                              | (laisser vide)                                                |
+| Frais               | Code ref frais de livraison                  | (laisser vide)                                                |
+| Frais               | Code ref supplément petite commande          | (laisser vide)                                                |
+| Frais               | Code ref pourboire                           | (laisser vide)                                                |
+| Paiements           | Code ref paiement en ligne                   | (laisser vide)                                                |
+| Paiements           | Code ref paiement en espèces                 | (laisser vide)                                                |
+| Clients             | Dupliquer le code d'accès téléphone [...]    | Laisser décochée                                              |
 
 (\*) Ne s'applique que si vous proposez des articles jetables tels que des couverts, des serviettes, etc.
 
