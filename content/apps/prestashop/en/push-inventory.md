@@ -10,8 +10,6 @@ meta:
 
 PrestaShop Bridge can synchronise your HubRise inventory with PrestaShop.
 
-## Inventory Synchronisation
-
 Some EPOS and inventory management solutions can update the inventory data in HubRise. When the HubRise inventory is updated, PrestaShop Bridge can automatically adjust your inventory counters in PrestaShop. To check whether a specific app supports inventory synchronisation, refer to its documentation on our [Apps page](/apps). Alternatively, you can manage your inventory using [OrderLine](/apps/orderline/overview).
 
 ## Manual Inventory Push
