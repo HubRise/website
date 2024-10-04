@@ -6,17 +6,14 @@ const GoogleAnalytics = ({ id }: { id: string }): JSX.Element => {
     <>
       <Script id="google-analytics" src={`https://www.googletagmanager.com/gtag/js?id=${id}`} />
 
-      <Script
-        id="google-analytics-init"
-        dangerouslySetInnerHTML={{
-          __html: `
+      <Script id="google-analytics-init">
+        {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', '${id}');
-        `,
-        }}
-      />
+        `}
+      </Script>
     </>
   )
 }
