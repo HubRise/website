@@ -10,6 +10,8 @@ meta:
 
 Avec SOLUTION Bridge, vous pouvez synchroniser votre inventaire HubRise avec SOLUTION.
 
+Certains logiciels de caisse et de gestion des stocks peuvent mettre à jour les données d'inventaire dans HubRise. Lorsque l'inventaire HubRise est mis à jour, SOLUTION Bridge peut automatiquement ajuster les compteurs d'inventaire dans Shopify. Pour vérifier si une application spécifique prend en charge la synchronisation de l'inventaire, reportez-vous à sa documentation sur notre [page Apps](/apps). Vous pouvez également gérer votre inventaire en utilisant [OrderLine](/apps/orderline/overview).
+
 ---
 
 **REMARQUE IMPORTANTE :** La synchronisation des inventaires nécessite que tous vos produits aient des codes ref. Pour plus d'informations, voir [Associer les codes ref](/apps/shopify/map-ref-codes).
@@ -18,7 +20,9 @@ Avec SOLUTION Bridge, vous pouvez synchroniser votre inventaire HubRise avec SOL
 
 ## Synchronisation de l'inventaire
 
-Certains logiciels de caisse et de gestion des stocks peuvent mettre à jour les données d'inventaire dans HubRise. Lorsque l'inventaire HubRise est mis à jour, SOLUTION Bridge peut automatiquement ajuster les compteurs d'inventaire dans Shopify. Pour vérifier si une application spécifique prend en charge la synchronisation de l'inventaire, reportez-vous à sa documentation sur notre [page Apps](/apps). Vous pouvez également gérer votre inventaire en utilisant [OrderLine](/apps/orderline/overview).
+Lorsque l'inventaire HubRise est mis à jour, les compteurs d'inventaire de [SOLUTION] peuvent être ajustés automatiquement.
+
+Seuls les articles dont la case à cocher **Suivre la quantité** est activée dans [SOLUTION] sont mis à jour. Pour vérifier si cette option est activée...
 
 ## Envoi manuel de l'inventaire
 
