@@ -35,7 +35,7 @@ Three charts let you analyse your revenue by sales channel, by connection name (
 
 One of the most requested features makes its appearance: peak hours visualisation. This chart reveals your activity peaks based on weekday and time. No more approximations: you can now optimise your staff schedules, promotions and procurement based on precise data.
 
-## Best-Selling Products Ranking
+## Most-Sold Products Ranking
 
 ![Top sales](./004_dashboard_top_products.png)
 
