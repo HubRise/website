@@ -24,12 +24,12 @@ app_info:
 Qwenta est une solution de paiement à table par QR code conçue pour les restaurants suisses.
 
 Qwenta permet aux clients de régler leur addition rapidement, réduisant l'attente et simplifiant l’expérience de paiement en un processus fluide.
-Les clients profitent ainsi d’un moment agréable jusqu’à la fin de leur repas, tandis que les restaurateurs optimisent leur service et améliorent leur efficacité.
+Les clients profitent ainsi d’un moment agréable jusqu’à la fin de leur repas sans devoir attendre avant de partir, tandis que les restaurateurs optimisent leur service et améliorent leur efficacité.
 
-**Comment ça marche ?**
+### Comment ça marche ?
 Lorsqu'une commande est enregistrée dans votre logiciel de caisse, elle est automatiquement transmise à Qwenta. En scannant un code QR sur leur table, les clients peuvent régler leur addition de manière autonome. Ils ont la possibilité de diviser l'addition, ajouter un pourboire, donner un avis et finaliser leur paiement en quelques clics.
 
-Votre logiciel de caisse est instantanément informé du paiement et la table est alors automatiquement fermée.
+Votre logiciel de caisse est instantanément informé du paiement et la table est automatiquement fermée sur le logiciel de caisse.
 
 
 ## Fonctionnalités de l'intégration
@@ -38,7 +38,7 @@ Connecter Qwenta à HubRise permet à votre solution de paiement de :
 
 - Recevoir les commandes de HubRise.
 - Recevoir les modifications de commandes de HubRise : paiements et changements d'article.
-- Envoyer les modifications de commandes à HubRise : paiements et changements d'article.
+- Envoyer les modifications de commandes à HubRise : paiements.
 
 Qwenta peut être connecté à HubRise depuis le back-office de Qwenta.
 

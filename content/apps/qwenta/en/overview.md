@@ -19,17 +19,24 @@ app_info:
   contact: hello@qwenta.ch / +41 22 518 38 38
 ---
 
+---
+
+**IMPORTANT NOTE:** This documentation is available <Link href="/apps/qwenta" addLocalePrefix={false}>in French only</Link>.
+
+---
+
 ## Description
 
 Qwenta is a QR code-based table payment solution designed for Swiss restaurants.
 
 With Qwenta guests can rapidly settle their bills, reducing waiting times and streamlining the payment experience into a smooth, straightforward process.
-This way, guests enjoy their meal right up to the end, while restaurateurs optimise service and improve efficiency.
+Guests enjoy their meal right up to the end, without having to wait before leaving, while restaurateurs optimise service and improve efficiency.
 
-**How did it work?**
+### How does it work?
+
 When an order is registered in your EPOS, it is automatically sent to Qwenta. By scanning a QR code on their table, customers can pay their bill autonomously. They have the option to split the bill, add a tip, leave feedback, and complete payment with just a few clicks.
 
-Your EPOS is instantly updated with the payment status, and the table is automatically closed.
+Your EPOS is instantly updated with the payment status, and the table is automatically closed in the EPOS.
 
 ## Integration Features
 
@@ -37,7 +44,7 @@ Connecting Qwenta to HubRise allows your payment solution to:
 
 - Pull orders from HubRise.
 - Pull order modifications from HubRise: payments and item changes.
-- Push order modifications into HubRise: payments and item changes.
+- Push order modifications into HubRise: payments.
 
 Qwenta can be connected to HubRise from the Qwenta back office.
 

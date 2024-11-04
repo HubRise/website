@@ -16,9 +16,7 @@ meta:
 
 ## Connecter SOLUTION
 
-\-- CONNECTER - option 1 --
-
-Pour connecter SOLUTION à HubRise, suivez ces étapes :
+Pour connecter Qwenta à HubRise, suivez ces étapes :
 
 1. Depuis le back-office de Qwenta, cliquez sur **Etablissements**.
 2. Choisissez votre établissement et cliquez sur **Modifier**.
@@ -29,7 +27,7 @@ Pour connecter SOLUTION à HubRise, suivez ces étapes :
 
 ## Donner accès au support de Qwenta {#give-access}
 
-Pour faciliter le traitement de vos demandes de support, vous devez accorder à votre Qwenta l'accès à votre compte HubRise.
+Pour faciliter le traitement de vos demandes de support, vous devez accorder à l'éditeur de votre solution de paiement Qwenta l'accès à votre compte HubRise.
 
 Pour donner accès à Qwenta, procédez comme suit :
 
@@ -52,6 +50,5 @@ Vous pouvez déconnecter Qwenta de HubRise depuis le back-office de Qwenta en su
 1. Depuis le back-office de Qwenta, cliquez sur **Etablissements**.
 2. Choisissez votre établissement et cliquez sur **Modifier**.
 3. Section **Logiciel de caisse** cliquez sur **Configuration**, puis **Déconnecter HubRise**.
-4. 
 
 Si vous avez besoin d'arrêter temporairement la réception des commandes envoyées par HubRise, vous pouvez bloquer la connexion entre Qwenta et HubRise. Pour plus d'informations, voir [Bloquer ou déconnecter une application](/docs/connections#block-or-disconnect).
