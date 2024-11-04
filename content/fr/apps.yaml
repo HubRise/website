@@ -482,6 +482,12 @@ content:
     - title: Gestion de livreurs
       slug: delivery-management
       apps:
+        - website: https://biteberry.com
+          documentation: /fr/apps/biteberry
+          logo: biteberry.png
+          title: BiteBerry
+          description: Le système de gestion des livraisons de BiteBerry rationalise l'ensemble du processus de livraison pour les restaurants et ses livreurs. Des fonctionnalités telles que le suivi en temps réel, l'optimisation des trajets et la gestion des commandes, garantissent des opérations efficaces et des livraisons à temps.
+          additional_info:
         - website: http://www.captain.ai
           documentation: /fr/apps/captain
           logo: captain.png
