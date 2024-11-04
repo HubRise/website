@@ -1,6 +1,6 @@
 ---
 title: Tableau de bord
-path_override: dashboard
+path_override: tableau-de-bord
 position: 3
 layout: documentation
 meta:
@@ -56,4 +56,5 @@ Le classement affiche vos 30 articles les plus vendus. Cliquez sur **Voir tout**
 
 ## Rapports avancés
 
-Pour une analyse plus détaillée de vos données, connectez une solution spécialisée intégrée à HubRise ou intégrez votre propre solution. Des partenaires techniques proposant des rapports détaillés sont accessibles via la page Apps du site HubRise, dans la section [Opérations et inventaire](/apps#operations-and-inventory).
+Pour une analyse plus détaillée de vos données, connectez une solution spécialisée intégrée à HubRise ou intégrez votre propre solution.
+Des partenaires techniques proposant des rapports détaillés sont accessibles via la page Apps du site HubRise, dans la section [Opérations et inventaire](/apps#operations-and-inventory).
