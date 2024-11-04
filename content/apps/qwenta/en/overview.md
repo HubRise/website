@@ -7,10 +7,10 @@ meta:
   title: Overview | Qwenta | HubRise
   description: Qwenta overview, reasons for connecting it to HubRise and summary of integrated features. Send orders from your EPOS into Qwenta.
 gallery:
-  - __gallery-001.jpg
-  - __gallery-002.jpg
-  - __gallery-003.jpg
-  - __gallery-004.jpg
+  - __gallery-001.png
+  - __gallery-002.png
+  - __gallery-003.png
+  - __gallery-004.png
 app_info:
   category: Other Apps
   availability: Switzerland

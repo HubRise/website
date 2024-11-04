@@ -7,10 +7,10 @@ meta:
   title: Présentation générale | Qwenta | HubRise
   description: Présentation générale de Qwenta, les raisons de connecter Qwenta à HubRise et fonctionnalités de l'intégration. Envoyez les commandes de logiciel de votre caisse à Qwenta.
 gallery:
-  - __gallery-001.jpg
-  - __gallery-002.jpg
-  - __gallery-003.jpg
-  - __gallery-004.jpg
+  - __gallery-001.png
+  - __gallery-002.png
+  - __gallery-003.png
+  - __gallery-004.png
 app_info:
   category: Autres applications
   availability: Suisse
