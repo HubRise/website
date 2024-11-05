@@ -12,8 +12,7 @@ Most EPOS solutions require a ref code for each product to properly interpret or
 
 To assign ref codes to your products, contact your Just Eat Takeaway account manager and provide them with the list of products and ref codes from your EPOS.
 
-Alternatively, you can map ref codes autonomously from the Just Eat Takeaway back office. Navigate to the **Menu** tab and fill in the ref codes in the empty fields. The following screenshot illustrates how to enter ref codes in the back office. The exact design may vary depending on your local Just Eat Takeaway platform.
+Alternatively, you can map ref codes autonomously from the Just Eat Takeaway back office. Navigate to the **Menu** tab, open a product and fill in the ref codes in the field **Article External ID**. The following screenshot illustrates how to enter ref codes in the back office. The exact design may vary depending on your local Just Eat Takeaway platform.
 
-![Entering ref codes in the Just Eat Takeaway portal](../images/006-jet-entering-ref-codes.png)
+![Entering ref codes in the Just Eat Takeaway portal](../images/010-jet-entering-ref-codes-new-design.png)
 
-Mid-2022, Just Eat launched a full menu editor, available for some clients. To activate this feature, contact your Just Eat Takeaway account manager.
