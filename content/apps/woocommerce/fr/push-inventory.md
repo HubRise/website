@@ -10,20 +10,22 @@ meta:
 
 Avec WooCommerce Bridge, vous pouvez synchroniser votre inventaire HubRise avec WooCommerce.
 
+Certains logiciels de caisse et de gestion des stocks peuvent mettre à jour les données d'inventaire dans HubRise. Pour vérifier si une application spécifique prend en charge la synchronisation de l'inventaire, reportez-vous à sa documentation sur notre [page Apps](/apps). Vous pouvez également gérer votre inventaire en utilisant [OrderLine](/apps/orderline/overview).
+
 ## Synchronisation de l'inventaire
 
 Lorsque l'inventaire HubRise est mis à jour, WooCommerce Bridge peut ajuster automatiquement les compteurs d'inventaire dans WooCommerce.
 
-Seuls les articles dont la case à cocher **Suivre la quantité en stock** est activée dans WooCommerce sont mis à jour. Pour vérifier si cette option est activée pour un produit spécifique, suivez ces étapes :
+Pour vérifier si le suivi des stocks est activé pour un produit, suivez ces étapes :
 
 1. Dans votre compte WooCommerce, ouvrez la page **Produits**.
 2. Trouvez le produit à vérifier et cliquez sur **Modifier**.
-3. Dans la section **Données Produits**, sélectionnez **Inventaire**.
-4. Assurez-vous que la case à cocher **Suivre la quantité en stock pour ce produit** est cochée.
+3. Dans la section **Données produit** :
 
-![Suivez la quantité](./images/017-woocommerce-track-inventory.png)
+   - Pour les produits simples, sélectionnez **Inventaire** et assurez-vous que la case **Suivre la quantité en stock pour ce produit** est cochée.
+     ![Suivre l'inventaire](./images/017-woocommerce-track-inventory.png)
 
-Certains logiciels de caisse et de gestion des stocks peuvent mettre à jour les données d'inventaire dans HubRise. Pour vérifier si une application spécifique prend en charge la synchronisation de l'inventaire, reportez-vous à sa documentation sur notre [page Apps](/apps). Vous pouvez également gérer votre inventaire en utilisant [OrderLine](/apps/orderline/overview).
+   - Pour les produits variables, la case dans la section **Inventaire** doit rester décochée. Allez plutôt dans **Variations**, dépliez les variations correspondantes, et cochez la case **Gérer le stock ?** pour chaque variation.
 
 ## Envoi manuel de l'inventaire
 

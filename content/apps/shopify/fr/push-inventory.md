@@ -10,6 +10,8 @@ meta:
 
 Avec Shopify Bridge, vous pouvez synchroniser votre inventaire HubRise avec Shopify.
 
+Certains logiciels de caisse et de gestion des stocks peuvent mettre à jour les données d'inventaire dans HubRise. Pour vérifier si une application spécifique prend en charge la synchronisation de l'inventaire, reportez-vous à sa documentation sur notre [page Apps](/apps). Vous pouvez également gérer votre inventaire en utilisant [OrderLine](/apps/orderline/overview).
+
 ## Synchronisation de l'inventaire
 
 Lorsque l'inventaire HubRise est mis à jour, Shopify Bridge peut ajuster automatiquement les compteurs d'inventaire dans Shopify.
@@ -23,8 +25,6 @@ Seuls les articles dont la case à cocher **Suivre la quantité** est activée d
 5. Dans la section **Stock**, assurez-vous que la case à cocher **Suivre la quantité** est activée.
 
 ![Suivre la quantité](./images/018-shopify-track-quantity.png)
-
-Certains logiciels de caisse et de gestion des stocks peuvent mettre à jour les données d'inventaire dans HubRise. Pour vérifier si une application spécifique prend en charge la synchronisation de l'inventaire, reportez-vous à sa documentation sur notre [page Apps](/apps). Vous pouvez également gérer votre inventaire en utilisant [OrderLine](/apps/orderline/overview).
 
 ## Envoi manuel de l'inventaire
 

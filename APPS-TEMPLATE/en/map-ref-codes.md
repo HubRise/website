@@ -21,7 +21,7 @@ There are two ways to proceed:
 - You can export the SOLUTION catalog to HubRise, then import this catalog into your other applications.
 - Alternatively, you can manually enter the ref codes in your other applications.
 
-Only certain applications allow the import of a catalog from HubRise. For others, you will need to enter the ref codes manually.
+Only certain applications allow the import of a catalog from HubRise. For others, you will need to enter the ref codes manually. Refer to the corresponding documentation on our [Apps page](/apps) to verify.
 
 ## Export the Catalog {#export-catalog}
 
@@ -77,7 +77,7 @@ Discounts in HubRise are special offers that apply to the entire order. Discount
 
 ## Payment Methods
 
-Payment methods in HubRise correspond to ... in SOLUTION. To find their ref code, follow these steps: ...
+Payment methods in HubRise correspond to ... in SOLUTION. To find the ref code of a payment method, follow these steps: ...
 
 ## Service Types
 

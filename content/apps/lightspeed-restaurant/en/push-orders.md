@@ -39,6 +39,8 @@ Ref codes are used to map each payment in HubRise to the correct payment method 
 
 To find out how to check the payment methods ref codes available in your Lightspeed back office, see [Map Ref Codes](/apps/lightspeed-restaurant/map-ref-codes#payment-methods).
 
+#### Handling Price Differences
+
 When the total payment amount does not match the total price for the order as calculated by Lightspeed Restaurant, two scenarios might happen:
 
 - If the total payment amount is greater than the expected amount, Lightspeed rejects the order.
@@ -49,6 +51,12 @@ When the total payment amount does not match the total price for the order as ca
 **Related FAQ**: [How Do I Troubleshoot Price Difference Errors?](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors)
 
 ---
+
+#### Swiss Market Rounding Rules
+
+In the Swiss market, Lightspeed automatically rounds the order total to the nearest 5 cents, as required by Swiss law due to the absence of 1 and 2 cent coins.
+
+To avoid discrepancies between the order total and payment amount, HubRise rounds payments using the same rules. For example, an order total of CHF 12.03 is rounded to CHF 12.05.
 
 ### Service Types
 
