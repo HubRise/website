@@ -1,45 +1,45 @@
 path: /
 meta:
-  title: HubRise - Intégration pour le commerce et la restauration
-  description: HubRise permet de connecter votre app à un écosystème de solutions commerce et restauration, avec une seule intégration.
+  title: HubRise - Intégration pour les restaurants et les commerçants
+  description: HubRise vous permet de connecter vos systèmes à un écosystème de solutions de commerce et de restauration, avec une seule intégration.
 
 hero:
-  title: Intégration pour le commerce et la restauration
+  title: Améliorez votre expérience client avec HubRise
   description: |
-    Conçu pour les développeurs, HubRise connecte votre app à une multitude de solutions en une seule intégration.
-  button_label: Commencer l'intégration
-  button_url: /fr/developers
+    Simplifiez vos opérations et améliorez votre efficacité avec notre plateforme d'intégration unique.
+  button_label: Découvrez comment
+  button_url: /fr/features
 
 content:
   apps:
-    title: Nouvelles intégrations pour votre app
+    title: Intégrez vos systèmes préférés
     description: |
-      HubRise connecte votre app à celles que vos clients utilisent. Concentrez-vous sur le développement de votre app, nous nous occupons des intégrations. [Plus de 100 intégrations disponibles](/fr/apps).
+      HubRise vous permet de connecter vos systèmes de gestion de restaurant, de commande en ligne, de livraison de repas et de marketing, en un seul endroit.
     link_url: /fr/apps
     categories:
-      - Logiciels de caisse
-      - Commande en ligne
-      - Plateformes de livraison de repas
-      - Solutions marketing
-      - Cartes de fidélité
+      - Systèmes de gestion de restaurant
+      - Plateformes de commande en ligne
+      - Services de livraison de repas
+      - Outils de marketing
+      - Programmes de fidélité
       - Et plus encore
 
   api:
-    title: Une API publique et facile à utiliser
+    title: Une intégration fluide et sécurisée
     description: |
-      Synchronisez les commandes, les clients et les produits. Une documentation soignée, une collection Postman, et un SDK Ruby permettent une intégration fluide.
-      Pour le plaisir, nous avons écrit une app complète et intégrée en quelques lignes de code, que vous pouvez [consulter sur GitHub](https://github.com/HubRise/tiny-tablet).
+      Nous nous occupons de l'intégration, vous vous concentrez sur votre activité.
+      Notre API sécurisée et documentée vous permet de synchroniser vos données en temps réel.
     image: api.png
 
   documentation:
-    title: Documentation détaillée
+    title: Documentation claire et accessible
     description: |
-      Nous documentons les fonctionnalités, les flux de données et les "pièges" de chaque intégration, pour vous faire gagner du temps.
-      La documentation est publiquement accessible depuis [la page Apps](/fr/apps).
+      Nous vous fournissons une documentation détaillée pour chaque intégration, pour vous aider à démarrer rapidement.
+      Consultez notre documentation publique pour en savoir plus.
     image: documentation.png
 
   pricing:
-    title: Tarification juste pour le commerçant
+    title: Tarification adaptée à vos besoins
     description: |
       Pas de frais d'installation. Pas d'engagement. Pas de contrat.
       Nombre de connexions illimité. 35€ HT par mois.
@@ -49,10 +49,9 @@ content:
     link_url: /fr/tarifs
 
   developers:
-    title: Nous aidons les développeurs
+    title: Nous sommes là pour vous aider
     description: |
-      Nous sommes développeurs aussi. Comptez sur nous pour répondre rapidement à toutes vos questions d'intégration.
-      Une fois intégré, nous auditons et documentons le travail réalisé, et nous communiquons sur votre intégration.
+      Notre équipe d'experts est à votre disposition pour répondre à toutes vos questions et vous aider à résoudre vos problèmes.
     team_members:
       - name: Alberto
         filename: alberto.jpg
@@ -73,7 +72,7 @@ content:
     mission:
       title: Notre vision
       description: |
-        We want integrations to not be a challenge anymore. We make this possible by moving, unifying and securing data to its rightful place, in the cloud, to be accessed real-time when authorised.
+        Nous voulons que les intégrations ne soient plus un défi. Nous rendons cela possible en déplaçant, en unifiant et en sécurisant les données dans le cloud, pour les rendre accessibles en temps réel.
 
     scalability:
       title: Maintenance réduite et scalabilité
@@ -82,7 +81,7 @@ content:
 
   join:
     title: Prêt à rejoindre l'écosystème ?
-    button_label: Connecter votre app
-    button_url: /fr/developers
+    button_label: Démarrer l'essai gratuit
+    button_url: https://manager.hubrise.com/signup
     link_label: Créer un compte gratuit
     link_url: https://manager.hubrise.com/signup
