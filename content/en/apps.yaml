@@ -641,6 +641,11 @@ content:
           logo: orderline.png
           title: OrderLine
           description: OrderLine centralises orders received from an e-commerce website and food ordering and delivery platforms. Orders can be managed and printed from OderLine. OrderLine is free app edited by HubRise.
+        - website: https://www.qwenta.ch
+          documentation: /apps/qwenta
+          logo: qwenta.png
+          title: Qwenta
+          description: Qwenta is a QR code-based table payment solution tailored for Swiss restaurants. Guests can split the bill, add a tip, and leave feedback before completing their payment.
         - website: https://www.satoeurope.com
           documentation: /apps/sato
           logo: sato.png
