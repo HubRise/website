@@ -21,9 +21,9 @@ Pour connecter Qwenta à HubRise, suivez ces étapes :
 1. Depuis le back-office de Qwenta, cliquez sur **Etablissements**.
 2. Choisissez votre établissement et cliquez sur **Modifier**.
 3. Section **Logiciel de caisse** cliquez sur **Configuration**, puis **Connecter à HubRise**. Vous êtes redirigé vers l'interface HubRise. S'il s'agit de votre première connexion, créez un compte HubRise. Pour plus d'informations, consultez notre [Guide de démarrage](/docs/get-started).
-3. Si votre compte possède plusieurs points de vente, développez **Choisissez le point de vente**, sélectionnez le point de vente à connecter, puis cliquez sur **Autoriser**. Si le point de vente sélectionné possède plusieurs listes de clients ou catalogues, cliquez sur **Suivant** pour afficher les listes déroulantes correspondantes, puis sélectionnez les options souhaitées.
-4. Cliquez sur **Autoriser**.
-5. Vous êtes redirigé vers l'interface Qwenta et la connexion à HubRise est établie.
+4. Si votre compte possède plusieurs points de vente, développez **Choisissez le point de vente**, sélectionnez le point de vente à connecter, puis cliquez sur **Autoriser**. Si le point de vente sélectionné possède plusieurs listes de clients ou catalogues, cliquez sur **Suivant** pour afficher les listes déroulantes correspondantes, puis sélectionnez les options souhaitées.
+5. Cliquez sur **Autoriser**.
+6. Vous êtes redirigé vers l'interface Qwenta et la connexion à HubRise est établie.
 
 ## Donner accès au support de Qwenta {#give-access}
 
@@ -45,7 +45,7 @@ Indiquez dans votre demande le nom de votre compte HubRise, son identifiant HubR
 
 ## Déconnecter Qwenta
 
-Vous pouvez déconnecter Qwenta de HubRise depuis le back-office de Qwenta en suivant ces étapes : 
+Vous pouvez déconnecter Qwenta de HubRise depuis le back-office de Qwenta en suivant ces étapes :
 
 1. Depuis le back-office de Qwenta, cliquez sur **Etablissements**.
 2. Choisissez votre établissement et cliquez sur **Modifier**.

@@ -50,7 +50,7 @@ Qwenta can be connected to HubRise from the Qwenta back office.
 
 ## Why Connect?
 
-By connecting Qwenta to HubRise, you allow your payment solution to receive orders from your EPOS.
+By connecting Qwenta to HubRise, you allow your payment solution to receive orders from your EPOS and automatically close them once payment is made.
 
 With HubRise, you can synchronise your menu, customer information, and orders between your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats, and Just Eat), delivery management solutions or delivery services, eMarketing solutions (SMS/emailing), business intelligence, inventory, and customer loyalty systems, and much more. The number of compatible applications increases every month. To discover the apps you can connect, visit our [Apps page](/apps).
 

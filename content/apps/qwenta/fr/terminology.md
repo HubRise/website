@@ -10,8 +10,7 @@ meta:
 
 HubRise et Qwenta utilisent chacun leur propre terminologie. Un même concept peut donc avoir une désignation différente dans chaque solution. Le tableau de correspondance ci-dessous présente ces différences.
 
-| SOLUTION         | HubRise            | Description                                                                                |
-|------------------|--------------------|--------------------------------------------------------------------------------------------|
-| Compte           | Société            | Représente une entreprise ou une marque et peut regrouper un ou plusieurs points de vente. |
-| Point de vente   | Etablissement      | Il s'agit d'un lieu physique dans lequel le restaurant propose ses produits ou services.   |
-
+| SOLUTION       | HubRise       | Description                                                                                |
+| -------------- | ------------- | ------------------------------------------------------------------------------------------ |
+| Compte         | Société       | Représente une entreprise ou une marque et peut regrouper un ou plusieurs points de vente. |
+| Point de vente | Etablissement | Il s'agit d'un lieu physique dans lequel le restaurant propose ses produits ou services.   |
