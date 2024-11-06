@@ -10,9 +10,7 @@ meta:
 
 ## Menu Issues
 
-### Error 400
-
-If a catalog push results in a `400` error, it could be due to a cache issue on Uber Eats. To resolve this, try the following steps:
+If you encounter a `400`, `500`, or `Timeout` error when pushing a menu, it could be due to a cache issue on Uber Eats. To resolve this, try the following steps:
 
 1. Attempt to push the menu again. This step is important because you need a recent failing request; otherwise, you will receive a `401` error in the next step.
 2. Open the bridge's **Operations** tab.
@@ -58,6 +56,8 @@ If this works, you can try to push the menu again.
 ```
 
 </details>
+
+Additionally, contact Uber Eats support to delete any unused menus from your Uber Eats store, and attempt to push the menu once more. This step is often helpful in case an invalid menu is causing the issue.
 
 ## Orders Not Received {#orders-not-received}
 

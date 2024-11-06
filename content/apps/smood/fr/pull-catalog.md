@@ -20,7 +20,7 @@ Certains logiciels de caisse permettent d'exporter le catalogue vers HubRise. Po
 
 Si vous utilisez le même catalogue sur plusieurs plateformes, envisagez de créer des variantes de catalogue pour personnaliser le prix et la disponibilité de vos produits pour chaque plateforme.
 
-Pour plus d'informations sur les catalogues HubRise, voir la rubrique [Catalogues](/docs/catalog).
+Pour plus d'informations sur les catalogues HubRise, voir la rubrique [Catalogues](/docs/catalog). Pour savoir comment créer et gérer des variantes de catalogue avec le Catalog Manager, voir [Variantes](/apps/catalog-manager/variants).
 
 ### Sélectionnez la variante de catalogue à récupérer
 
@@ -95,6 +95,8 @@ Pour chaque SKU HubRise, Smood crée un produit avec les informations suivantes 
 - `product.name` et `skus.name` : nom du produit. Par exemple, si le nom du produit HubRise est `Pizza margherita` et le nom du SKU est `33 cm`, Smood crée un produit nommé `Pizza margherita 33 cm`.
 - `product.description` : description du produit.
 - `product.image_ids` : ID des images associées au produit.
+- `product.tags` : Nous supportons le tag suivant :
+    - `deal_only` : Lorsque ce tag est défini, le produit n'est pas disponible en tant qu'article individuel sur le menu, mais peut être commandé dans le cadre d'une promotion.
 - `skus.ref` : code ref du SKU, qui sera transmis dans les commandes.
 - `skus.price` : prix correspondant au SKU.
 

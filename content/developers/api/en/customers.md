@@ -165,6 +165,7 @@ Returns a customer's details.
   "last_name": "Watson",
   "gender": "male",
   "birth_date": null,
+  "created_at": "2020-01-18T17:12:02+02:00",
   "company_name": null,
   "phone": "+44123456789",
   "phone_access_code": "8888",

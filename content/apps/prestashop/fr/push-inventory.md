@@ -10,8 +10,6 @@ meta:
 
 Avec PrestaShop Bridge, vous pouvez synchroniser votre inventaire HubRise avec PrestaShop.
 
-## Synchronisation de l'inventaire
-
 Certains logiciels de caisse et de gestion des stocks peuvent mettre à jour les données d'inventaire dans HubRise. Lorsque l'inventaire HubRise est mis à jour, PrestaShop Bridge peut automatiquement ajuster les compteurs d'inventaire dans PrestaShop. Pour vérifier si une application spécifique prend en charge la synchronisation de l'inventaire, reportez-vous à sa documentation sur notre [page Apps](/apps). Vous pouvez également gérer votre inventaire en utilisant [OrderLine](/apps/orderline/overview).
 
 ## Envoi manuel de l'inventaire

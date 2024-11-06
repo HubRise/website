@@ -116,6 +116,7 @@ Products have one or several skus. For every product with multiple skus, Deliver
 - `price`: The minimum price of all skus
 - `tags`: Tags describing the characteristics and restrictions of the product, such as allergens or spiciness. See [Product Tags](#product-tags).
 - `image`: The URL of the image of the parent product
+- `barcodes`: The barcodes of the sku. There can be multiple barcodes for a single sku.
 
 The list of skus is attached to the product as an array of modifiers.
 

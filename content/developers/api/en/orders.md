@@ -1029,6 +1029,7 @@ If there is no existing card with the given `ref`, a new one is created automati
 | Name                               | Type                                                       | Description                                                                        |
 | ---------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | `ref` <Label type="optional" />    | string                                                     | The unique reference for the loyalty card. Defaults to `null` if not specified.    |
+| `name` <Label type="optional" />   | string                                                     | The name of the loyalty card.                                                      |
 | `delta`                            | [decimal](/developers/api/general-concepts#decimal-values) | The points to be added to the card balance. Use a negative value to deduct points. |
 | `reason` <Label type="optional" /> | string                                                     | Provides additional information regarding the operation.                           |
 

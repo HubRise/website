@@ -10,6 +10,8 @@ meta:
 
 SOLUTION Bridge can synchronise your HubRise inventory with SOLUTION.
 
+Some EPOS and inventory management solutions can update the inventory data in HubRise. When the HubRise inventory is updated, SOLUTION Bridge can automatically adjust your inventory counters in SOLUTION. To check whether a specific app supports inventory synchronisation, refer to its documentation on our [Apps page](/apps). Alternatively, you can manage your inventory using [OrderLine](/apps/orderline/overview).
+
 ---
 
 **IMPORTANT NOTE:** Inventory synchronisation require all your products to have ref codes. For more information, see [Map Ref Codes](/apps/shopify/map-ref-codes).
@@ -18,7 +20,9 @@ SOLUTION Bridge can synchronise your HubRise inventory with SOLUTION.
 
 ## Inventory Synchronisation
 
-Some EPOS and inventory management solutions can update the inventory data in HubRise. When the HubRise inventory is updated, SOLUTION Bridge can automatically adjust your inventory counters in SOLUTION. To check whether a specific app supports inventory synchronisation, refer to its documentation on our [Apps page](/apps). Alternatively, you can manage your inventory using [OrderLine](/apps/orderline/overview).
+When HubRise inventory is updated, the inventory counters in SOLUTION can be automatically adjusted.
+
+Only items with the **Track stock quantity** checkbox enabled in SOLUTION are updated. To check if this option is enabled...
 
 ## Manual Inventory Push
 

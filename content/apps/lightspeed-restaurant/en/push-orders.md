@@ -22,12 +22,14 @@ Every item on Lightspeed must have a ref code. Orders containing items with inco
 
 ### Order Status
 
-Lightspeed Restaurant Bridge creates a check in Lightspeed for each order from HubRise. The order status in HubRise is updated as follows:
+Lightspeed Restaurant Bridge creates an order in Lightspeed for each order from HubRise. The order status in HubRise is updated as follows:
 
-- `received`: When the check is created in Lightspeed.
-- `rejected`: If the check creation fails. The detailed error is available in the order custom fields, under the key `epos.rejection_reason.cause`.
-- `awaiting_collection`: When the check is marked ready in Lightspeed Kitchen.
-- `completed`: When the check is closed in Lightspeed, and if the bridge is configured to mark orders as completed. For more information, refer to the [Order Statuses](/apps/lightspeed-restaurant/configuration#order-statuses) section of the Configuration page.
+- `received`: When the order is created in Lightspeed.
+- `rejected`: If the order creation fails. The detailed error is available in the order custom fields, under the key `epos.rejection_reason.cause`.
+- `awaiting_collection`: When the order is marked ready in Lightspeed Kitchen.
+- `completed`: When the order is closed in Lightspeed, and if the bridge is configured to mark orders as completed. For more information, refer to the [Order Statuses](/apps/lightspeed-restaurant/configuration#order-statuses) section of the Configuration page.
+
+When an order is marked as `cancelled` in HubRise, Lightspeed Restaurant prints a message on the connected printer to indicate the cancellation. Depending on your settings, this message may also appear on the EPOS screen. The order remains in Lightspeed and is not deleted.
 
 ### Payments
 
@@ -36,6 +38,8 @@ Zero, one, or multiple payments can be associated with an order.
 Ref codes are used to map each payment in HubRise to the correct payment method in Lightspeed. Payments without a ref code are not sent to Lightspeed.
 
 To find out how to check the payment methods ref codes available in your Lightspeed back office, see [Map Ref Codes](/apps/lightspeed-restaurant/map-ref-codes#payment-methods).
+
+#### Handling Price Differences
 
 When the total payment amount does not match the total price for the order as calculated by Lightspeed Restaurant, two scenarios might happen:
 
@@ -47,6 +51,12 @@ When the total payment amount does not match the total price for the order as ca
 **Related FAQ**: [How Do I Troubleshoot Price Difference Errors?](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors)
 
 ---
+
+#### Swiss Market Rounding Rules
+
+In the Swiss market, Lightspeed automatically rounds the order total to the nearest 5 cents, as required by Swiss law due to the absence of 1 and 2 cent coins.
+
+To avoid discrepancies between the order total and payment amount, HubRise rounds payments using the same rules. For example, an order total of CHF 12.03 is rounded to CHF 12.05.
 
 ### Service Types
 
