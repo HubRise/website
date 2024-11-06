@@ -21,7 +21,7 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE:** This documentation is available <Link href="/apps/qwenta" addLocalePrefix={false}>in French only</Link>.
+**IMPORTANT NOTE:** This documentation is available <Link href="/fr/apps/qwenta" addLocalePrefix={false}>in French only</Link>.
 
 ---
 
