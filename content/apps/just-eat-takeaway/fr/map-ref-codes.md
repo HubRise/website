@@ -12,8 +12,6 @@ Pour traiter correctement les commandes, la plupart des logiciels de caisse exig
 
 Pour attribuer des codes ref à vos produits, veuillez contacter votre gestionnaire de compte Just Eat Takeaway en lui adressant la liste des produits et des codes ref que vous trouverez dans votre logiciel de caisse.
 
-Vous pouvez également associer les codes ref de façon autonome à partir du back-office Just Eat Takeaway. Accédez à l'onglet **Menu** et indiquez les codes ref dans les champs vides. La capture d'écran suivante montre comment saisir les codes ref dans le back-office. L'interface peut varier légèrement en fonction de votre plateforme locale Just Eat Takeaway.
+Vous pouvez également associer les codes ref de façon autonome à partir du back-office Just Eat Takeaway. Accédez à l'onglet **Menu**, puis ouvrez un article et indiquez les codes ref dans le champ **ID de l'article externe**. La capture d'écran suivante montre comment saisir les codes ref dans le back-office. L'interface peut varier légèrement en fonction de votre plateforme locale Just Eat Takeaway.
 
-![Saisie des codes ref sur le portail Just Eat Takeaway](../images/006-jet-entering-ref-codes.png)
-
-À l'été 2022, Just Eat a lancé un éditeur de menu complet, disponible pour certains clients. Pour activer cette fonctionnalité, contactez votre gestionnaire de compte Just Eat Takeaway.
+![Saisie des codes ref sur le portail Just Eat Takeaway](../images/010-jet-entering-ref-codes-new-design.png)
