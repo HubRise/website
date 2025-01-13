@@ -23,9 +23,9 @@ app_info:
 
 Le système de gestion des livraisons (DMS) de BiteBerry rationalise l'ensemble du processus de livraison pour les restaurants et leurs livreurs. Avec des fonctionnalités telles que le suivi en temps réel, l'optimisation des trajets et la gestion des commandes, BiteBerry garantit des opérations efficaces et des livraisons à temps.
 
-De l'attribution des commandes aux livreurs au suivi de leur progression sur une carte, le DMS optimise tous les aspects du flux de livraison. Que vous soyez propriétaire d'un restaurant ou livreur, le DMS de BiteBerry vous permet de fournir des services de livraison de qualité et d'améliorer la satisfaction client. Passez des défis de livraison à des opérations fluides et efficaces avec le système de gestion des livraisons de BiteBerry.
+De l'attribution des commandes aux livreurs au suivi de leur progression sur une carte, le DMS optimise tous les aspects du flux de livraison. Que vous soyez propriétaire d'un restaurant ou livreur, le DMS de BiteBerry vous permet de fournir des services de livraison de qualité et d'améliorer la satisfaction client.
 
-Économisez de l'argent avec BiteBerry ! De nombreux restaurants délaissent les services coûteux offerts par des tiers et créent leurs propres équipes de livraison.  Mais pour ce faire, vous avez besoin d'un système fiable pour gérer les livreurs. Le DMS de BiteBerry permet de suivre les livraisons, d'organiser les commandes et de gérer l'ensemble du processus facilement. Réduire le besoin de livraisons par des tiers peut vous aider à économiser jusqu'à 20 % des coûts.
+Économisez de l'argent avec BiteBerry ! De nombreux restaurants délaissent les services des plateformes et créent leurs propres équipes de livraison. Mais pour ce faire, vous avez besoin d'un système fiable pour gérer les livreurs. Le DMS de BiteBerry permet de suivre les livraisons, d'organiser les commandes et de gérer l'ensemble du processus facilement. Réduire les livraisons effectuées par des services tiers peut vous aider à économiser jusqu'à 20 % sur vos coûts.
 
 ## Fonctionnalités de l'intégration
 
