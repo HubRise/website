@@ -33,10 +33,10 @@ In the Deliveroo Bridge configuration page, use the following settings:
 | Section        | Name                                  | Ref code                                                |
 | -------------- | ------------------------------------- | ------------------------------------------------------- |
 | Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Received"`       |
-| Service types  | Deliveroo fulfilled ref code          | (leave empty)                                           |
-| Service types  | Restaurant fulfilled ref code         | (leave empty)                                           |
+| Service types  | Deliveroo delivery ref code           | (leave empty)                                           |
+| Service types  | Restaurant delivery ref code          | (leave empty)                                           |
 | Service types  | Takeaway ref code                     | (leave empty)                                           |
-| Service types  | Send orders delivered by Deliveroo as | `collection orders`                                     |
+| Service types  | Send orders delivered by Deliveroo as | `delivery orders`                                       |
 | Special items  | Deposit option ref code               | Create an option in SOLUTION and use its ref code. (\*) |
 | Discounts      | Offer ref code                        | (leave empty)                                           |
 | Charges        | Delivery charge ref code              | (leave empty)                                           |
@@ -69,7 +69,7 @@ In the Just Eat Takeaway Bridge configuration page, use the following settings:
 | Service types  | Just Eat delivery ref code               | (leave empty)                                     |
 | Service types  | Restaurant delivery ref code             | (leave empty)                                     |
 | Service types  | Takeaway ref code                        | (leave empty)                                     |
-| Service types  | Send orders delivered by the platform as | `collection orders`                               |
+| Service types  | Send orders delivered by the platform as | `delivery orders`                                 |
 | Discounts      | Discount ref code                        | (leave empty)                                     |
 | Charges        | Delivery charge ref code                 | (leave empty)                                     |
 | Charges        | Service fee ref code                     | (leave empty)                                     |
@@ -88,7 +88,7 @@ In the Just Eat Flyt Bridge configuration page, use the following settings:
 | Service types  | Just Eat delivery ref code               | (leave empty)                                           |
 | Service types  | Restaurant delivery ref code             | (leave empty)                                           |
 | Service types  | Takeaway ref code                        | (leave empty)                                           |
-| Service types  | Send orders delivered by the platform as | `collection orders`                                     |
+| Service types  | Send orders delivered by the platform as | `delivery orders`                                       |
 | Special items  | Deposit option ref code                  | Create an option in SOLUTION and use its ref code. (\*) |
 | Discounts      | Discount ref code                        | (leave empty)                                           |
 | Charges        | Delivery charge ref code                 | (leave empty)                                           |
@@ -111,11 +111,11 @@ In the Uber Eats Bridge configuration page, use the following settings:
 | Section        | Name                                  | Ref code or value                                       |
 | -------------- | ------------------------------------- | ------------------------------------------------------- |
 | Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Received"`       |
-| Service types  | Uber delivery ref code                | (leave empty)                                           |
+| Service types  | Uber Eats delivery ref code           | (leave empty)                                           |
 | Service types  | Restaurant delivery ref code          | (leave empty)                                           |
 | Service types  | Takeaway ref code                     | (leave empty)                                           |
 | Service types  | Eat-in ref code                       | (leave empty)                                           |
-| Service types  | Send orders delivered by Uber Eats as | `collection orders`                                     |
+| Service types  | Send orders delivered by Uber Eats as | `delivery orders`                                       |
 | Special items  | Disposable items ref code             | Create a product in SOLUTION and use its ref code. (\*) |
 | Discounts      | Discount ref code                     | (leave empty)                                           |
 | Charges        | Delivery charge ref code              | (leave empty)                                           |

@@ -5,12 +5,12 @@ position: 10
 layout: documentation
 meta:
   title: Terminologie | Deliveroo | HubRise
-  description: Tableau de correspondance montrant les termes utilisés par Deliveroo et ceux utilisés sur HubRise pour le même concept. Connectez vos applications et synchronisez vos données.
+  description: Tableau de correspondance montrant les termes utilisés par Deliveroo et ceux utilisés sur HubRise pour le même concept. Connectez les apps et synchronisez vos données.
 ---
 
 ## Tableau de correspondance
 
-HubRise et Deliveroo utilisent chacun leur propre terminologie. Un même concept peut donc exister sous une désignation différente dans chaque solution. Le tableau de correspondance ci-dessous indique ces différences.
+HubRise et Deliveroo utilisent chacun leur propre terminologie. Un même concept peut donc exister sous une désignation différente dans chaque solution. Le tableau de correspondance ci-dessous présente ces différences.
 
 | Deliveroo  | HubRise        | Description                             |
 | ---------- | -------------- | --------------------------------------- |
@@ -26,4 +26,4 @@ Deliveroo propose trois types de service à ses clients.
 
 - **Livraison par Deliveroo** : Deliveroo dépêche un chauffeur pour récupérer la commande au restaurant.
 - **Livraison par le restaurant** : c'est l'établissement qui est responsable de la livraison de la commande au client. Ce service est également connu sous la désignation Deliveroo M+.
-- **Récupération sur place** : le client récupère la commande dans le restaurant.
+- **À emporter** : le client récupère la commande au restaurant.

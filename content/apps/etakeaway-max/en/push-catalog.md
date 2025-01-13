@@ -34,6 +34,12 @@ Depending on how large your catalog is, it might take a few minutes for your Hub
 
 The following sections provide more details on how your eTakeaway Max catalog is mapped to HubRise.
 
+### Variants
+
+Variants allow you to customise prices and availability across different ordering channels.
+
+Variants must be set up by eTakeaway Max support. If your menu includes variants, they will be sent to HubRise.
+
 ### Categories
 
 The categories in the eTakeaway Max catalog are mapped one-to-one to categories of products on HubRise.
@@ -50,6 +56,7 @@ eTakeaway Max does not support products with skus. For every item in the catalog
 - Images
 - Price
 - Options
+- Price and availability overrides (if you have variants)
 
 ### Options
 

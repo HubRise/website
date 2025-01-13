@@ -18,17 +18,19 @@ The following table explains the terms that are specific to SOLUTION.
 
 ## Correspondence Table - DELETE THIS TITLE IF THE ABOVE SECTION IS DELETED
 
-HubRise and SOLUTION each use their own terminology. The same concept can therefore have a different designation in each SOLUTION. The correspondence table below shows these differences.
+HubRise and SOLUTION each use their own terminology. The same concept can therefore have a different designation in each
+solution. The correspondence table below shows these differences.
 
 | SOLUTION | HubRise     | Description                                                                      |
 | -------- | ----------- | -------------------------------------------------------------------------------- |
 | ...      | Ref code    | Product code.                                                                    |
+| ...      | Category    | A group of products.                                                             |
 | ...      | Product     | A product consists of one or more SKUs.                                          |
 | ...      | SKU         | A product variant, such as a size or color.                                      |
 | ...      | Option      | A service or item that can be added to a product, such as a sauce or an extra.   |
 | ...      | Option list | A group of options, such as the list of available sauces.                        |
 | ...      | Deal        | Special offer on specific items.                                                 |
-| ...      | Deal Line   | Each choice in a deal, such as a pizza or a dessert.                             |
+| ...      | Deal Line   | Each choice in a deal, such as a main course or a dessert.                       |
 | ...      | Discount    | Special offer on the overall order.                                              |
 | ...      | Location    | The actual restaurant.                                                           |
 | ...      | Account     | Business brand.                                                                  |

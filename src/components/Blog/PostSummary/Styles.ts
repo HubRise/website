@@ -31,6 +31,7 @@ export const TitleLink = styled(Link)`
 
 export const StyledTitle = styled(Title)`
   font-size: ${fontSizes._24};
+  margin-bottom: 1.5rem;
 `
 
 export const BannerLink = styled(Link)`

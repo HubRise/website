@@ -165,6 +165,12 @@ content:
           title: POS HELPER
           description: POS HELPER is a Point of Sales for restaurants. It includes production, cost control and payment functionalities. They also offer Kitchen Display Systems, self-service kiosks, and online ordering.
           additional_info:
+        - website: https://www.cunninghams.co.uk/
+          documentation: /apps/quantum
+          logo: quantum.png
+          title: Quantum by Cunninghams EPOS Group
+          description: Quantum by Cunninghams EPOS Group offers an EPOS system for various sectors, featuring sales management, stock control, customer loyalty, various eCommerce functionnalities, and real-time reporting.
+          additional_info:
         - website: https://www.rmpos.com/
           documentation: /apps/restaurant-manager
           logo: restaurant-manager.png
@@ -342,6 +348,11 @@ content:
           logo: dood.png
           title: DOOD
           description: DOOD is an e-commerce and e-marketing solution for the food retail industry. DOOD online ordering supports Click & Collect, delivery, and table ordering. DOOD's suite of marketing tools is designed to increase customer loyalty.
+        - website: https://eddress.co
+          documentation: /apps/eddress
+          logo: eddress.png
+          title: eddress
+          description: eddress is an online ordering solution for restaurants and grocery stores, with integrated delivery management. It is suitable for businesses of all sizes, whether independent or franchised. Available in 20 languages and deployed in more than 17 countries.
         - website: https://www.gonnaorder.com
           documentation: /apps/gonnaorder
           logo: gonnaorder.png
@@ -468,6 +479,12 @@ content:
     - title: Delivery Management
       slug: delivery-management
       apps:
+        - website: https://biteberry.com
+          documentation: /apps/biteberry
+          logo: biteberry.png
+          title: BiteBerry
+          description: BiteBerry's Delivery Management System streamlines the entire delivery process for restaurants and their delivery fleets alike. Features like real-time tracking, ride optimisation, and order management ensure efficient operations and timely deliveries.
+          additional_info:
         - website: http://www.captain.ai
           documentation: /apps/captain
           logo: captain.png
@@ -607,6 +624,11 @@ content:
           logo: somm-it.png
           title: SOMM'IT
           description: SOMM'IT helps you manage your wine list. Sync your inventory with your EPOS to keep your wine list up to date. SOMM'IT includes a large wine library, and a dematerialised procurement system.
+        - website: https://www.stocktake-online.com
+          documentation: /apps/stocktake-online
+          logo: stocktake-online.png
+          title: Stocktake Online
+          description: StockTake Online is an inventory management system designed for restaurants, bars, nightclubs, and more. It helps organise operations by simplifying purchasing, minimising waste, and enhancing profitability.
     - title: Other Apps
       slug: other-apps
       apps:
@@ -625,6 +647,11 @@ content:
           logo: orderline.png
           title: OrderLine
           description: OrderLine centralises orders received from an e-commerce website and food ordering and delivery platforms. Orders can be managed and printed from OderLine. OrderLine is free app edited by HubRise.
+        - website: https://www.qwenta.ch
+          documentation: /apps/qwenta
+          logo: qwenta.png
+          title: Qwenta
+          description: Qwenta is a QR code-based table payment solution tailored for Swiss restaurants. Guests can split the bill, add a tip, and leave feedback before completing their payment.
         - website: https://www.satoeurope.com
           documentation: /apps/sato
           logo: sato.png

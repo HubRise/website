@@ -5,7 +5,7 @@ position: 11
 layout: documentation
 meta:
   title: FAQ | Deliveroo | HubRise
-  description: FAQ sur la connexion de Deliveroo avec HubRise pour permettre à votre EPOS de fonctionner avec d'autres applications comme un tout cohérent. Connectez vos applications et synchronisez vos données.
+  description: FAQ sur la connexion de Deliveroo à HubRise afin que votre logiciel de caisse fonctionne harmonieusement avec d'autres apps. Connectez les apps et synchronisez vos données.
 ---
 
 - [Puis-je connecter plusieurs restaurants Deliveroo au même point de vente HubRise ?](/apps/deliveroo/faqs/connecting-multiple-instances-deliveroo)

@@ -26,16 +26,17 @@ Almost all the fields are optional. In fact the simplest order that can be creat
 
 | Name                                                                  | Type                                                     | Description                                                                                                                                                    |
 | --------------------------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `ref` <Label type="optional" />                                       | string                                                   | Reference of the order on the app creating the order. Unicity is recommended but not enforced.                                                                 |
-| `private_ref` <Label type="optional" />                               | string                                                   | A private unique reference for the order. Used for order lookups if defined. See [Private Refs](/developers/api/general-concepts#private-refs).                |
-| `status`                                                              | [OrderStatus](#status)                                   | Current status of the order.                                                                                                                                   |
-| `service_type` <Label type="optional" />                              | string                                                   | Method of delivery/serving to the customer. Can be: `delivery`, `collection`, or `eat_in`.                                                                     |
-| `service_type_ref` <Label type="optional" />                          | string                                                   | Identifier for the order type. Can be used to identify the channel, brand, and delivery method.                                                                |
+| `channel` <Label type="optional" />                                   | string                                                   | Identifies the order source. Used in dashboards and order reception tools. Defaults to the API client's name if not provided.                                  |
+| `ref` <Label type="optional" />                                       | string                                                   | Order reference on the app creating the order. Uniqueness is recommended but not enforced.                                                                     |
+| `private_ref` <Label type="optional" />                               | string                                                   | Unique private order reference used for lookups. See [Private Refs](/developers/api/general-concepts#private-refs).                                            |
+| `status`                                                              | [OrderStatus](#status)                                   | Current order status.                                                                                                                                          |
+| `service_type` <Label type="optional" />                              | string                                                   | Delivery/serving method. Can be: `delivery`, `collection`, or `eat_in`.                                                                                        |
+| `service_type_ref` <Label type="optional" />                          | string                                                   | Order type identifier. Can indicate channel, brand, and delivery method.                                                                                   |
 | `expected_time` <Label type="optional" />                             | [Time](/developers/api/general-concepts#dates-and-times) | Time the customer expects to receive the order.                                                                                                                |
 | `confirmed_time` <Label type="optional" />                            | [Time](/developers/api/general-concepts#dates-and-times) | Confirmed time for the customer to receive the order.                                                                                                          |
 | `customer_notes` <Label type="optional" />                            | string                                                   | Customer-provided instructions, such as allergies or special requests.                                                                                         |
 | `seller_notes` <Label type="optional" />                              | string                                                   | Merchant-provided information, such as product substitution notices.                                                                                           |
-| `collection_code` <Label type="optional" />                           | string                                                   | A short, customer-shared, order identifier for simplified collection or delivery. Does not have to be unique.                                                  |
+| `collection_code` <Label type="optional" />                           | string                                                   | Short order identifier shared with the customer, and used for simplified collection or delivery. Not necessarily unique.                                       |
 | `coupon_codes` <Label type="optional" />                              | string[]                                                 | Coupon codes applied to the order.                                                                                                                             |
 | `items` <Label type="optional" />                                     | [OrderItem](#items)[]                                    | Items included in the order.                                                                                                                                   |
 | `deals` <Label type="optional" />                                     | [OrderDealMap](#deals)                                   | Deals used in the order.                                                                                                                                       |
@@ -161,16 +162,17 @@ Returns an order resource.
 
 All the fields of an order creation request are returned, plus a few more:
 
-| Name          | Type                                                      | Description                                                                  |
-| ------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| ...           |                                                           | See the [order creation fields](#create-order).                              |
-| `id`          | string                                                    | Unique id of the order, generated by HubRise.                                |
-| `location_id` | string                                                    | The id of the location where the order was created.                          |
-| `created_at`  | [Time](/developers/api/general-concepts#dates-and-times)  | Order creation time.                                                         |
-| `created_by`  | string                                                    | Name of the API client that created the order.                               |
-| `total`       | [Money](/developers/api/general-concepts#monetary-values) | Order total amount. Calculated by HubRise from items, charges and discounts. |
-| `customer`    | [Customer](#customer)                                     | Customer details at the time of the order creation.                          |
-| `delivery`    | [Delivery](#delivery)                                     | An optional delivery attached to the order.                                  |
+| Name              | Type                                                      | Description                                                                                                                                                                        |
+| ----------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ...               |                                                           | See the [order creation fields](#create-order).                                                                                                                                    |
+| `id`              | string                                                    | Unique id of the order, generated by HubRise.                                                                                                                                      |
+| `location_id`     | string                                                    | The id of the location where the order was placed.                                                                                                                                 |
+| `created_at`      | [Time](/developers/api/general-concepts#dates-and-times)  | Order creation time.                                                                                                                                                               |
+| `created_by`      | string                                                    | Name of the API client that created the order.                                                                                                                                     |
+| `connection_name` | string                                                    | Optional field specifying the name of the connection that created the order. Used to differentiate between multiple connections of the same API client (e.g., for virtual brands). |
+| `total`           | [Money](/developers/api/general-concepts#monetary-values) | Total order amount, calculated by HubRise based on items, charges, and discounts.                                                                                                  |
+| `customer`        | [Customer](#customer)                                     | Customer information as recorded at the time of order creation.                                                                                                                    |
+| `delivery`        | [Delivery](#delivery)                                     | Optional delivery information associated with the order.                                                                                                                           |
 
 **Note:** `total_discrepancy` and `payment_discrepancy` fields are also returned, but these fields are deprecated and their values should not be used.
 
@@ -195,6 +197,8 @@ In addition, each `item`, `charge`, `payment` and `discount` is returned with a 
   "service_type_ref": null,
   "created_at": "2021-06-24T17:07:53+02:00",
   "created_by": "MyClient",
+  "channel": "Website",
+  "connection_name": null,
   "expected_time": "2021-06-24T19:07:52+02:00",
   "confirmed_time": null,
   "customer_notes": null,
@@ -215,6 +219,7 @@ In addition, each `item`, `charge`, `payment` and `discount` is returned with a 
       "quantity": "1.0",
       "subtotal": "11.90 EUR",
       "tax_rate": null,
+      "subset": null,
       "customer_notes": null,
       "points_earned": null,
       "points_used": null,
@@ -238,6 +243,7 @@ In addition, each `item`, `charge`, `payment` and `discount` is returned with a 
       "quantity": "2.0",
       "subtotal": "7.00 EUR",
       "tax_rate": null,
+      "subset": null,
       "customer_notes": null,
       "points_earned": null,
       "points_used": null,
@@ -513,6 +519,7 @@ Deleted elements are still present in the order representation, but they are irr
       "quantity": "1.0",
       "subtotal": "11.90 EUR",
       "tax_rate": null,
+      "subset": null,
       "customer_notes": null,
       "points_earned": null,
       "points_used": null,
@@ -763,21 +770,22 @@ Orders do not have to go through all steps. The sequence actually depends on the
 
 ## 4. Order Items {#items}
 
-| Name                                       | Type                                                       | Description                                                                                                                                                                                 |
-| ------------------------------------------ | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `private_ref` <Label type="optional" />    | string                                                     | An optional private reference for the item. See [Private Refs](/developers/api/general-concepts#private-refs).                                                                              |
-| `product_name`                             | string                                                     | The product name.                                                                                                                                                                           |
-| `sku_name` <Label type="optional" />       | string                                                     | The sku name. Typically the product size or color.                                                                                                                                          |
-| `sku_ref` <Label type="optional" />        | string                                                     | The ref of the sku.                                                                                                                                                                         |
-| `price`                                    | [Money](/developers/api/general-concepts#monetary-values)  | The unit price of the sku, without the cost of options.                                                                                                                                     |
-| `quantity`                                 | [decimal](/developers/api/general-concepts#decimal-values) | The quantity of items ordered.                                                                                                                                                              |
-| `subtotal` <Label type="optional" />       | [Money](/developers/api/general-concepts#monetary-values)  | Calculated by HubRise. It is the sum of the price of the item and its options, multiplied by the quantity.                                                                                  |
-| `tax_rate` <Label type="optional" />       | [decimal](/developers/api/general-concepts#decimal-values) | The tax rate applied to the item. See [Tax Rates](#tax-rates).                                                                                                                              |
-| `customer_notes` <Label type="optional" /> | string                                                     | Information provided by the customer about the preparation of the item.                                                                                                                     |
-| `points_earned` <Label type="optional" />  | [decimal](/developers/api/general-concepts#decimal-values) | Loyalty points earned by the customer. This field is not linked to a particular loyalty card: a loyalty operation must be included in the order to effectively add/remove points to a card. |
-| `points_used` <Label type="optional" />    | [decimal](/developers/api/general-concepts#decimal-values) | Loyalty points used by the customer. Same remark as above.                                                                                                                                  |
-| `options` <Label type="optional" />        | [OrderOption](#options)[]                                  | Item customization.                                                                                                                                                                         |
-| `deleted` <Label type="optional" />        | boolean                                                    | `false` by default. Setting this field to `true` marks the resource as irreversibly deleted.                                                                                                |
+| Name                                       | Type                                                       | Description                                                                                                                                                                                                                                            |
+| ------------------------------------------ | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `private_ref` <Label type="optional" />    | string                                                     | An optional private reference for the item. See [Private Refs](/developers/api/general-concepts#private-refs).                                                                                                                                         |
+| `product_name`                             | string                                                     | The product name.                                                                                                                                                                                                                                      |
+| `sku_name` <Label type="optional" />       | string                                                     | The sku name. Typically the product size or color.                                                                                                                                                                                                     |
+| `sku_ref` <Label type="optional" />        | string                                                     | The ref of the sku.                                                                                                                                                                                                                                    |
+| `price`                                    | [Money](/developers/api/general-concepts#monetary-values)  | The unit price of the sku, without the cost of options.                                                                                                                                                                                                |
+| `quantity`                                 | [decimal](/developers/api/general-concepts#decimal-values) | The quantity of items ordered.                                                                                                                                                                                                                         |
+| `subtotal` <Label type="optional" />       | [Money](/developers/api/general-concepts#monetary-values)  | Calculated by HubRise. It is the sum of the price of the item and its options, multiplied by the quantity.                                                                                                                                             |
+| `tax_rate` <Label type="optional" />       | [decimal](/developers/api/general-concepts#decimal-values) | The tax rate applied to the item. See [Tax Rates](#tax-rates).                                                                                                                                                                                         |
+| `subset` <Label type="optional" />         | string                                                     | Used for grouping items within an order. Examples of uses include courses in a restaurant or shipment batches in retail (with values typically being `"1"`, `"2"`, etc.), or individual portions in a group order (with values typically being names). |
+| `customer_notes` <Label type="optional" /> | string                                                     | Information provided by the customer about the preparation of the item.                                                                                                                                                                                |
+| `points_earned` <Label type="optional" />  | [decimal](/developers/api/general-concepts#decimal-values) | Loyalty points earned by the customer. This field is not linked to a particular loyalty card: a loyalty operation must be included in the order to effectively add/remove points to a card.                                                            |
+| `points_used` <Label type="optional" />    | [decimal](/developers/api/general-concepts#decimal-values) | Loyalty points used by the customer. Same remark as above.                                                                                                                                                                                             |
+| `options` <Label type="optional" />        | [OrderOption](#options)[]                                  | Item customization.                                                                                                                                                                                                                                    |
+| `deleted` <Label type="optional" />        | boolean                                                    | `false` by default. Setting this field to `true` marks the resource as irreversibly deleted.                                                                                                                                                           |
 
 ##### Example:
 
@@ -789,6 +797,7 @@ Orders do not have to go through all steps. The sequence actually depends on the
   "price": "9.00 EUR",
   "quantity": "2",
   "tax_rate": "20.0",
+  "subset": "Alice",
   "customer_notes": "Well cooked",
   "points_earned": "1.5",
   "points_used": null,
@@ -1020,6 +1029,7 @@ If there is no existing card with the given `ref`, a new one is created automati
 | Name                               | Type                                                       | Description                                                                        |
 | ---------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | `ref` <Label type="optional" />    | string                                                     | The unique reference for the loyalty card. Defaults to `null` if not specified.    |
+| `name` <Label type="optional" />   | string                                                     | The name of the loyalty card.                                                      |
 | `delta`                            | [decimal](/developers/api/general-concepts#decimal-values) | The points to be added to the card balance. Use a negative value to deduct points. |
 | `reason` <Label type="optional" /> | string                                                     | Provides additional information regarding the operation.                           |
 

@@ -51,7 +51,7 @@ Les mêmes règles de mise à jour s'appliquent que pour l'[envoi manuel du cata
 
 ## Références techniques
 
-Les sections suivantes décrivent la manière dont les catalogues HubRise sont associés aux **Produits** WooCommerce.
+Les sections suivantes décrivent comment un envoi du catalogue affecte votre boutique WooCommerce.
 
 ### Catégories
 
@@ -65,7 +65,7 @@ Pour chaque catégorie, les champs HubRise suivants sont envoyés à WooCommerce
 
 ### Produits et SKU
 
-WooCommerce Bridge crée les produits qui n'existent pas encore dans WooCommerce. Ces produits sont identifiés par leurs codes ref, et seuls les produits avec un code ref sont envoyés à WooCommerce.
+WooCommerce Bridge crée les produits qui n'existent pas encore dans WooCommerce. Ces produits sont identifiés par leurs codes ref, et seuls les produits avec un code ref sont envoyés à WooCommerce. Les produits nouvellement créés sont placés en mode `En attente de relecture` par défaut, permettant une révision manuelle avant publication sur votre site internet.
 
 Si la case à cocher **Mettre à jour les prix des produits existants** est sélectionnée dans la page Configuration, WooCommerce Bridge mettra également à jour le prix de vos produits WooCommerce existants. WooCommerce Bridge ne supprime pas les produits existants.
 

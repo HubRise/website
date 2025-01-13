@@ -12,7 +12,7 @@ meta:
 
 Like catalogs, customer lists exist at either location or account level.
 
-Name unicity is ruled by the same constraints as catalogs:
+Name uniqueness is ruled by the same constraints as catalogs:
 
 - At the location level, customer lists are uniquely identified by their name.
 - An account level customer list cannot have the same name as another account or location level customer list.
@@ -165,6 +165,7 @@ Returns a customer's details.
   "last_name": "Watson",
   "gender": "male",
   "birth_date": null,
+  "created_at": "2020-01-18T17:12:02+02:00",
   "company_name": null,
   "phone": "+44123456789",
   "phone_access_code": "8888",

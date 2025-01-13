@@ -5,5 +5,5 @@ position: 3
 layout: documentation
 meta:
   title: Interface utilisateur | SOLUTION | HubRise
-  description: Comment naviguer sur la page principale de SOLUTION pour accéder aux informations sur les commandes et personnaliser son comportement.
+  description: Naviguez sur la page principale de SOLUTION pour accéder aux informations sur les commandes et personnaliser le comportement du bridge. Synchronisez vos données.
 ---

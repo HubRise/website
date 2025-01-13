@@ -8,7 +8,7 @@ export const Menu = styled.div`
   position: relative;
 `
 
-export const MenuTitle = styled.h5`
+export const MenuTitle = styled.div`
   position: relative;
   padding: 1rem ${sizes.mobilePadding};
   color: ${colors.textLight};

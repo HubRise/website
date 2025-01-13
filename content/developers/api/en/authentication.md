@@ -252,20 +252,17 @@ The `access_token` returned by `GET /oauth2/v1/token` is specific to a given cli
 
 ---
 
-**IMPORTANT NOTE:** if a different catalog (or customer list) is selected when re-authorising the location, the token will no
-longer allow access to the former catalog (or customer list) when the new authorisation completes.
+**IMPORTANT NOTE:** if a different catalog (or customer list) is selected when re-authorising the location, the token will no longer allow access to the former catalog (or customer list) when the new authorisation completes.
 
 ---
 
-You can bypass this behaviour and force a new token to be issued by passing a `device_id` parameter when redirecting the
-user to the authorisation page, eg:
+You can bypass this behaviour and force a new token to be issued by passing a `name` parameter when redirecting the user to the authorisation page, eg:
 
 ```http
-GET https://manager.hubrise.com/oauth2/v1/authorize?device_id=100&redirect_uri=https://YOUR-DOMAIN-HERE.com/oauth_callback&client_id=459691768564.clients.hubrise.com&scope=location[orders.write,customer_list.write,catalog.read] HTTP/1.1
+GET https://manager.hubrise.com/oauth2/v1/authorize?name=100&redirect_uri=https://YOUR-DOMAIN-HERE.com/oauth_callback&client_id=459691768564.clients.hubrise.com&scope=location[orders.write,customer_list.write,catalog.read] HTTP/1.1
 ```
 
-If the provided `device_id` has never been authorised for the location, a new access token is returned. Otherwise,
-the access token previously associated with this `device_id` is returned.
+If the provided `name` has never been authorised for the location, a new access token is returned. Otherwise, the access token previously associated with this `name` is returned.
 
 ## 6. Token Invalidity
 

@@ -69,6 +69,7 @@ For every HubRise `product` object, Shopify Bridge sends the following informati
 - `tags`: The tags associated with the product
 - `image_ids`: The IDs of the images associated with the product
 - `skus`: The list of skus attached to the product
+- `barcodes`: Only the first barcode is sent, if present.
 
 For every sku in the `skus` array, Shopify Bridge sends the following information to Shopify:
 
