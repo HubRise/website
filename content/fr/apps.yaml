@@ -482,6 +482,12 @@ content:
     - title: Gestion de livreurs
       slug: delivery-management
       apps:
+        - website: https://biteberry.com
+          documentation: /fr/apps/biteberry
+          logo: biteberry.png
+          title: BiteBerry
+          description: Le système de gestion des livraisons de BiteBerry rationalise l'ensemble du processus de livraison pour les restaurants et leurs livreurs. Des fonctionnalités telles que le suivi en temps réel, l'optimisation des trajets et la gestion des commandes, garantissent des opérations efficaces et des livraisons à temps.
+          additional_info:
         - website: http://www.captain.ai
           documentation: /fr/apps/captain
           logo: captain.png
@@ -648,8 +654,13 @@ content:
           documentation: /fr/apps/orderline
           logo: orderline.png
           title: OrderLine
-          description: OrderLine centralise les commandes passées depuis un site marchand ou autre plateforme de commande en ligne. Les commandes sont ainsi gérées et imprimés. OrderLine est un logiciel gratuit édité par HubRise.
+          description: OrderLine centralise les commandes passées depuis un site marchand ou autre plateforme de commande en ligne. Les commandes sont ainsi gérées et imprimés. OrderLine est un logiciel gratuit édité par HubRise.
           additional_info:
+        - website: https://www.qwenta.ch
+          documentation: /fr/apps/qwenta
+          logo: qwenta.png
+          title: Qwenta
+          description: Qwenta est une solution de paiement à table par QR code conçue pour les restaurants suisses. Les clients peuvent diviser l'addition, ajouter un pourboire et donner un avis avant de finaliser le paiement.
         - website: https://www.satoeurope.com/fr
           documentation: /fr/apps/sato
           logo: sato.png
@@ -659,7 +670,7 @@ content:
           documentation: /fr/apps/tickncook
           logo: tickncook.png
           title: TicknCook
-          description: TicknCook est un écran cuisine (KDS), qui peut recevoir les commandes depuis tous vos canaux de vente. La solution est personnalisable avec possibilité de mettre en place des écrans spécialisés pour le bar, la cuisine, ou autres ateliers.
+          description: TicknCook est un écran cuisine (KDS), qui peut recevoir les commandes depuis tous vos canaux de vente. La solution est personnalisable avec possibilité de mettre en place des écrans spécialisés pour le bar, la cuisine, ou autres ateliers.
         - website: https://1bot.io
           documentation: /fr/apps/1bot
           logo: 1bot.png

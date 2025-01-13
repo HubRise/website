@@ -479,6 +479,12 @@ content:
     - title: Delivery Management
       slug: delivery-management
       apps:
+        - website: https://biteberry.com
+          documentation: /apps/biteberry
+          logo: biteberry.png
+          title: BiteBerry
+          description: BiteBerry's Delivery Management System streamlines the entire delivery process for restaurants and their delivery fleets alike. Features like real-time tracking, ride optimisation, and order management ensure efficient operations and timely deliveries.
+          additional_info:
         - website: http://www.captain.ai
           documentation: /apps/captain
           logo: captain.png
@@ -641,6 +647,11 @@ content:
           logo: orderline.png
           title: OrderLine
           description: OrderLine centralises orders received from an e-commerce website and food ordering and delivery platforms. Orders can be managed and printed from OderLine. OrderLine is free app edited by HubRise.
+        - website: https://www.qwenta.ch
+          documentation: /apps/qwenta
+          logo: qwenta.png
+          title: Qwenta
+          description: Qwenta is a QR code-based table payment solution tailored for Swiss restaurants. Guests can split the bill, add a tip, and leave feedback before completing their payment.
         - website: https://www.satoeurope.com
           documentation: /apps/sato
           logo: sato.png
