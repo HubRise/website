@@ -479,6 +479,12 @@ content:
     - title: Delivery Management
       slug: delivery-management
       apps:
+        - website: https://biteberry.com
+          documentation: /apps/biteberry
+          logo: biteberry.png
+          title: BiteBerry
+          description: BiteBerry's Delivery Management System streamlines the entire delivery process for restaurants and their delivery fleets alike. Features like real-time tracking, ride optimisation, and order management ensure efficient operations and timely deliveries.
+          additional_info:
         - website: http://www.captain.ai
           documentation: /apps/captain
           logo: captain.png
