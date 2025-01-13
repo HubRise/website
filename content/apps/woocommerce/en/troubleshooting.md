@@ -102,7 +102,7 @@ To do this:
    ![OAuth1 option in WooCommerce Bridge](./images/013-woocommerce-step-1-advanced.png)
 1. Proceed with the configuration as described in [Connect to HubRise](/apps/woocommerce/connect-hubrise).
 
-After making this change, verify if the 401 errors are resolved. If not, check the other troubleshooting steps or contact HubRise on support@hubrise.com.
+After making this change, verify if the 401 errors are resolved.
 
 ### Incorrect URL During Setup
 
@@ -131,3 +131,73 @@ Here is how to correct this:
 1. Reset the WooCommerce Bridge configuration. To find out how, see [Reset the Configuration](/apps/woocommerce/configuration#reset).
 1. Configure the bridge again from scratch. When you reach the first step of the configuration, enter the correct URL of your WooCommerce store, ensuring the URL matches exactly with your website (pay attention to whether your website uses `www` or not).
 1. Proceed with the configuration as described in [Connect to HubRise](/apps/woocommerce/connect-hubrise).
+
+## 422 Errors
+
+When WooCommerce orders fail to sync with HubRise, you may encounter a 422 error with the following response body:
+
+```json
+{
+  "message": "Validation failed",
+  "errors": [
+    {
+      "field": "/private_ref",
+      "message": "is already used ('21824' given)"
+    }
+  ],
+  "error_type": "unprocessable_entity"
+}
+```
+
+This error indicates that the order ID (`private_ref`) being sent is already in use. This typically happens after a database restore in WooCommerce, which resets the auto-increment value for the `wp_posts` table, causing new orders to have duplicate IDs.
+
+Follow these steps to resolve the issue.
+
+### Step 1: Access Your Database
+
+You need access to your WooCommerce MySQL database. If you don't have **phpMyAdmin** or another database tool, you can use a simple WordPress plugin:
+
+- Install the [Run SQL Query](https://wordpress.com/plugins/run-sql-query) plugin.
+
+### Step 2: Open the "Run SQL Query" Tool
+
+1. In your WordPress Admin Panel, go to **Tools** > **Run SQL Query**.
+2. This tool allows you to execute SQL commands directly from your WordPress dashboard.
+
+The interface should look like this:
+
+![Run SQL Query UI](../images/run_sql_query.png)
+
+### Step 3: Identify the `wp_posts` Table
+
+Your posts table may have a custom prefix. Look for a table ending with `_posts`. For example, in the screenshot above, the table is named `mod488_posts`.
+
+### Step 4: Find the Highest ID in the Table
+
+Run the following SQL query to find the highest `id` currently used in the `wp_posts` table. Replace `mod488_posts` with your actual table name:
+
+```sql
+SELECT id FROM mod488_posts ORDER BY id DESC LIMIT 1;
+```
+
+This will return the highest ID currently in use.
+
+### Step 5: Update the Auto-Increment Value
+
+Add 1 to the highest `id` and set the `AUTO_INCREMENT` value accordingly. For example, if the highest `id` is **22060**, set the auto-increment value to **22061**.
+
+Run the following SQL command, replacing `mod488_posts` and `22061` with your actual table name and new auto-increment value:
+
+```sql
+ALTER TABLE `mod488_posts` AUTO_INCREMENT = 22061;
+```
+
+### Step 6: Place a Test Order
+
+Create a new test order in WooCommerce and ensure it syncs successfully with HubRise.
+
+If the 422 error no longer appears, the issue is resolved!
+
+## Need More Help?
+
+If you're still encountering issues after following these steps, feel free to contact support@hubrise.com for further assistance.
