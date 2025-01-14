@@ -49,7 +49,7 @@ export const breakpoints = {
 
 export const colors = {
   primary: "#6db24f",
-  danger: "#e13c3c",
+  danger: "#b2564f",
   warning: "#fcfaed",
   white: "#fff",
 
