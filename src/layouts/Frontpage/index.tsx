@@ -11,6 +11,7 @@ import Developers from "./Developers"
 import Documentation from "./Documentation"
 import Hero from "./Hero"
 import Join from "./Join"
+import Numbers from "./Numbers"
 import Pricing from "./Pricing"
 
 interface FrontpageProps {
@@ -39,6 +40,7 @@ const Frontpage = ({
   return (
     <>
       <Hero {...hero} descriptionMdx={heroDescriptionMdx} />
+      <Numbers numbers={content.numbers} />
       <Apps {...content.apps} descriptionMdx={appsDescriptionMdx} />
       <Api {...content.api} descriptionMdx={apiDescriptionMdx} />
       <Documentation {...content.documentation} descriptionMdx={documentationDescriptionMdx} />
