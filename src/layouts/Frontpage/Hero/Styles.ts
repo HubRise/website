@@ -1,89 +1,185 @@
-import Link from "next/link"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
-import { breakpoints, colors, fontSizes, lineHeights, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizes, fontWeights } from "@utils/styles"
+
+import { HeroAppColor, linkHeroAppBorderColor } from "./utils"
+
+const mixin = {
+  appWrapper: css`
+    width: 15.25rem;
+    height: 7.625rem;
+    padding: 1rem;
+    position: relative;
+    border-width: 0.625rem;
+    border-style: solid;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+    }
+  `,
+
+  appInner: css`
+    border-width: 1.625rem;
+    border-style: solid;
+    width: 11.875rem;
+    height: 11.875rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5625rem;
+
+    span {
+      font-size: ${fontSizes._16};
+      font-weight: ${fontWeights.bold};
+      color: ${colors.textDefault};
+    }
+  `,
+}
 
 export const Container = styled.div`
   position: relative;
-  display: flex;
-  flex-flow: column-reverse;
+  background-color: ${colors.backgroundLightest};
+  padding: 5.875rem 0;
+  text-align: center;
+`
 
-  @media (min-width: ${breakpoints.large}) {
-    display: block;
+export const Title = styled.h1`
+  font-weight: ${fontWeights.semiBold};
+  color: ${colors.textDarkest};
+  font-size: ${fontSizes._72};
+  line-height: 5.125rem;
+  max-width: 66rem;
+  margin: 0 auto;
+
+  @media (max-width: ${breakpoints.bigScreen}) {
+    font-size: ${fontSizes._66};
+    line-height: 4.75rem;
   }
 `
 
-export const Banner = styled.div`
-  background: black url(/images/hero_image.jpg) no-repeat;
-  background-size: cover;
-  background-position-x: 100%;
-  height: 20rem;
-
-  @media (min-width: ${breakpoints.large}) {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: auto;
-    background-position-x: 50%;
-  }
+export const TitleHighlight = styled.span`
+  color: ${colors.green};
 `
 
-export const TextContainer = styled.div`
-  @media (min-width: ${breakpoints.large}) {
-    ${mixin.container};
-    padding: 11rem 0;
-  }
-`
+export const Description = styled.div`
+  max-width: 43rem;
+  margin: 1.5rem auto 0;
 
-export const TextWrapper = styled.div`
-  @media (min-width: ${breakpoints.large}) {
-    max-width: 45rem;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    position: relative;
+  p {
+    color: ${colors.textDefault};
+    font-size: ${fontSizes._24};
+    line-height: 2rem;
 
-    &::before {
-      content: "";
-      background-color: ${colors.primary};
-      width: 9999px;
-      height: 100%;
-      position: absolute;
-      right: 100%;
+    @media (max-width: ${breakpoints.bigScreen}) {
+      font-size: ${fontSizes._20};
+      line-height: 1.875rem;
     }
   }
 `
 
-export const Text = styled.div`
-  padding: 4em 1rem;
-  background-color: ${colors.primary};
+export const Button = styled.a`
+  display: inline-block;
+  width: auto;
+  height: 3.375rem;
+  line-height: 3.375rem;
+  background-color: ${colors.green};
   color: ${colors.white};
-  text-align: center;
+  font-size: ${fontSizes._20};
+  border-radius: 0.5rem;
+  padding: 0 1.125rem;
+  margin-top: 2.875rem;
+  transition: background-color 0.5s ease;
 
-  @media (min-width: ${breakpoints.large}) {
-    text-align: left;
-    padding-left: 0;
-    padding-right: 2em;
+  @media (max-width: ${breakpoints.bigScreen}) {
+    height: 3rem;
+    line-height: 3rem;
+    font-size: ${fontSizes._16};
+  }
+
+  &:hover {
+    background-color: ${colors.textDarkest};
   }
 `
 
-export const Title = styled.h1`
-  font-weight: bold;
-  font-size: ${fontSizes._42};
-  line-height: ${lineHeights.compact};
+export const Apps = styled.div`
+  max-width: 88.375rem;
+  margin: 3.875rem auto 8rem;
+  display: flex;
 `
 
-export const Description = styled.div`
-  margin: 0.75rem 0;
-  font-size: ${fontSizes._18};
+export const App = styled.div<{ $type?: string; $index: number; $appsAmmount: number }>`
+  position: relative;
+  left: ${(props) => -props.$index * 10}px;
+  top: ${(props) => (props.$type === "bottom" ? "1.625rem" : "auto")};
+  z-index: ${(props) => props.$appsAmmount - props.$index};
 `
 
-export const Button = styled(Link)`
-  display: inline-block;
-  color: ${colors.primary};
-  background-color: ${colors.backgroundWhite};
+export const AppWrapperTop = styled.div<{ $color: HeroAppColor }>`
+  ${mixin.appWrapper};
+  border-color: ${({ $color }) => linkHeroAppBorderColor($color)};
+  border-top-left-radius: 8.25rem;
+  border-top-right-radius: 8.25rem;
+  border-bottom: 0;
 
-  ${mixin.button};
-  ${mixin.buttonOver(colors.white, colors.textDarkest)};
+  &::before {
+    border-left: 0.375rem solid transparent;
+    border-right: 0.375rem solid transparent;
+    border-bottom: 0.375rem solid ${colors.white};
+    top: 6.6875rem;
+    left: -0.625rem;
+  }
+
+  &::after {
+    border-left: 0.3125rem solid transparent;
+    border-right: 0.3125rem solid transparent;
+    border-top-width: 0.3125rem;
+    border-top-style: solid;
+    border-top-color: ${({ $color }) => linkHeroAppBorderColor($color)};
+    top: 7rem;
+    right: -0.625rem;
+  }
+`
+
+export const AppInnerTop = styled.div<{ $color: HeroAppColor }>`
+  ${mixin.appInner};
+  border-color: ${({ $color }) => linkHeroAppBorderColor($color)};
+`
+
+export const AppWrapperBottom = styled.div<{ $color: HeroAppColor }>`
+  ${mixin.appWrapper};
+  border-color: ${({ $color }) => linkHeroAppBorderColor($color)};
+  border-bottom-left-radius: 8.25rem;
+  border-bottom-right-radius: 8.25rem;
+  border-top: 0;
+  top: 6.25rem;
+
+  &::before {
+    border-left: 0.375rem solid transparent;
+    border-right: 0.375rem solid transparent;
+    border-top: 0.375rem solid ${colors.white};
+    top: 0;
+    left: -0.6875rem;
+  }
+
+  &::after {
+    border-left: 0.3125rem solid transparent;
+    border-right: 0.3125rem solid transparent;
+    border-bottom-width: 0.3125rem;
+    border-bottom-style: solid;
+    border-bottom-color: ${({ $color }) => linkHeroAppBorderColor($color)};
+    top: -0.28125rem;
+    right: -0.625rem;
+  }
+`
+
+export const AppInnerBottom = styled.div<{ $color: HeroAppColor }>`
+  ${mixin.appInner}
+  border-color: ${({ $color }) => linkHeroAppBorderColor($color)};
+  position: relative;
+  top: -6.875rem;
 `

@@ -20,9 +20,19 @@ export const fontSizes = {
   _14: ".875rem",
   _16: "1rem",
   _18: "1.125rem",
+  _20: "1.25rem",
   _24: "1.5rem",
   _32: "2rem",
   _42: "2.625rem",
+  _54: "3.375rem",
+  _60: "3.75rem",
+  _66: "4.125rem",
+  _72: "4.5rem",
+}
+
+export const fontWeights = {
+  semiBold: "600",
+  bold: "700",
 }
 
 export const iconSizes = {
@@ -42,6 +52,8 @@ export const lineHeights = {
 export const breakpoints = {
   medium: "40rem",
   large: "64rem",
+  extraLargeScreen: "90rem",
+  bigScreen: "120rem",
   documentationStickyMenu: "64rem",
   blogStickyMenu: "40rem",
   burgerMenu: "75rem",
@@ -52,18 +64,24 @@ export const colors = {
   danger: "#b2564f",
   warning: "#fcfaed",
   white: "#fff",
+  green: "#4ca30d",
+  greenLight: "#87c76c",
+  greenMediumLight: "#6db24f",
 
   textDarkest: "#333",
   textDark: "#555",
   textMedium: "#777",
   textLight: "#999",
   textLighter: "#ccc",
+  textDefault: "#475467",
 
   backgroundDarker: "#333",
   backgroundDark: "#555",
   backgroundLight: "#efefef",
   backgroundLightest: "#f8f8f8",
   backgroundWhite: "#fff",
+
+  bgLight: "#fdfdfd",
 
   borderMedium: "#ccc",
   borderLight: "#e0e0e0",
