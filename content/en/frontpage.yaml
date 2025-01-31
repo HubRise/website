@@ -4,13 +4,44 @@ meta:
   description: HubRise is a developer friendly solution to connect to a growing ecosystem of retail and hospitality solutions with a single integration.
 
 hero:
-  title: Integration for retail and hospitality solutions
+  title:
+    start: Seamless Integration for
+    highlight1: Restaurants
+    and: and
+    highlight2: Retail
   description: |
-    HubRise is a developer friendly solution to connect to a multitude of apps with a single integration.
-  button_label: Start integrating
-  button_url: /developers
+    Connect your EPOS, online ordering, and inventory tools into one powerful platform.
+  button_label: Create your account today
+  apps:
+    - title: Points of sale
+      type: top
+      color: green
+    - title: Delivery Platforms
+      type: bottom
+      color: greenLight
+    - title: Loyalty and Marketing
+      type: top
+      color: greenMediumLight
+    - title: Operations and Inventory
+      type: bottom
+      color: greenLight
+    - title: Delivery Management
+      type: top
+      color: green
+    - title: Online Ordering
+      type: bottom
+      color: greenLight
 
 content:
+  numbers:
+    - number: 40+
+      title: EPOS integrated
+    - number: 100+
+      title: Integrations
+    - number: 20+
+      title: Countries
+    - number: 2000
+      title: Customers
   apps:
     title: New integrations for your app
     description: |

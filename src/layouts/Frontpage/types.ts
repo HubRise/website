@@ -1,3 +1,5 @@
+import { HeroAppColor } from "./Hero/utils"
+
 export interface FrontpageYaml {
   path: string
   meta: {
@@ -5,12 +7,25 @@ export interface FrontpageYaml {
     description: string
   }
   hero: {
-    title: string
+    title: {
+      start: string
+      highlight1: string
+      highlight2: string
+      and: string
+    }
     description: string
     button_label: string
-    button_url: string
+    apps: Array<{
+      title: string
+      type: string
+      color: HeroAppColor
+    }>
   }
   content: {
+    numbers: Array<{
+      number: string
+      title: string
+    }>
     apps: {
       title: string
       description: string
