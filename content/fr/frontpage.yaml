@@ -4,13 +4,44 @@ meta:
   description: HubRise permet de connecter votre app à un écosystème de solutions commerce et restauration, avec une seule intégration.
 
 hero:
-  title: Intégration pour le commerce et la restauration
+  title:
+    start: Seamless Integration for
+    highlight1: Restaurants
+    and: and
+    highlight2: Retail
   description: |
-    Conçu pour les développeurs, HubRise connecte votre app à une multitude de solutions en une seule intégration.
-  button_label: Commencer l'intégration
-  button_url: /fr/developers
+    Connect your EPOS, online ordering, and inventory tools into one powerful platform.
+  button_label: Create your account today
+  apps:
+    - title: Points of sale
+      type: top
+      color: green
+    - title: Delivery Platforms
+      type: bottom
+      color: greenLight
+    - title: Loyalty and Marketing
+      type: top
+      color: greenMediumLight
+    - title: Operations and Inventory
+      type: bottom
+      color: greenLight
+    - title: Delivery Management
+      type: top
+      color: green
+    - title: Online Ordering
+      type: bottom
+      color: greenLight
 
 content:
+  numbers:
+    - number: 40+
+      title: EPOS integrated
+    - number: 100+
+      title: Integrations
+    - number: 20+
+      title: Countries
+    - number: 2000
+      title: Customers
   apps:
     title: Nouvelles intégrations pour votre app
     description: |
