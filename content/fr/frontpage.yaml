@@ -14,26 +14,20 @@ hero:
   button_label: Create your account today
   apps:
     - title: Points of sale
-      type: top
       color: green
     - title: Delivery Platforms
-      type: bottom
       color: greenLight
     - title: Loyalty and Marketing
-      type: top
       color: greenMediumLight
     - title: Operations and Inventory
-      type: bottom
       color: greenLight
     - title: Delivery Management
-      type: top
       color: green
     - title: Online Ordering
-      type: bottom
       color: greenLight
 
 content:
-  numbers:
+  metrics:
     - number: 40+
       title: EPOS integrated
     - number: 100+
@@ -42,18 +36,6 @@ content:
       title: Countries
     - number: 2000
       title: Customers
-  apps:
-    title: Nouvelles intégrations pour votre app
-    description: |
-      HubRise connecte votre app à celles que vos clients utilisent. Concentrez-vous sur le développement de votre app, nous nous occupons des intégrations. [Plus de 100 intégrations disponibles](/fr/apps).
-    link_url: /fr/apps
-    categories:
-      - Logiciels de caisse
-      - Commande en ligne
-      - Plateformes de livraison de repas
-      - Solutions marketing
-      - Cartes de fidélité
-      - Et plus encore
 
   api:
     title: Une API publique et facile à utiliser
