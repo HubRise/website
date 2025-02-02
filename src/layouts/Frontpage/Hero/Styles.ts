@@ -1,45 +1,8 @@
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 
-import { breakpoints, colors, fontSizes, fontWeights } from "@utils/styles"
+import { breakpoints, colors, fontSizes } from "@utils/styles"
 
 import { HeroAppColor, linkHeroAppBorderColor } from "./utils"
-
-const mixin = {
-  appWrapper: css`
-    width: 15.25rem;
-    height: 7.625rem;
-    padding: 1rem;
-    position: relative;
-    border-width: 0.625rem;
-    border-style: solid;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 0;
-    }
-  `,
-
-  appInner: css`
-    border-width: 1.625rem;
-    border-style: solid;
-    width: 11.875rem;
-    height: 11.875rem;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5625rem;
-
-    span {
-      font-size: ${fontSizes._16};
-      font-weight: ${fontWeights.bold};
-      color: ${colors.textDefault};
-    }
-  `,
-}
 
 export const Container = styled.div`
   position: relative;
@@ -49,15 +12,15 @@ export const Container = styled.div`
 `
 
 export const Title = styled.h1`
-  font-weight: ${fontWeights.semiBold};
+  font-weight: 600;
   color: ${colors.textDarkest};
-  font-size: ${fontSizes._72};
+  font-size: 4.5rem;
   line-height: 5.125rem;
   max-width: 66rem;
   margin: 0 auto;
 
-  @media (max-width: ${breakpoints.bigScreen}) {
-    font-size: ${fontSizes._66};
+  @media (max-width: ${breakpoints.biggest}) {
+    font-size: 4.125rem;
     line-height: 4.75rem;
   }
 `
@@ -75,7 +38,7 @@ export const Description = styled.div`
     font-size: ${fontSizes._24};
     line-height: 2rem;
 
-    @media (max-width: ${breakpoints.bigScreen}) {
+    @media (max-width: ${breakpoints.biggest}) {
       font-size: ${fontSizes._20};
       line-height: 1.875rem;
     }
@@ -95,7 +58,7 @@ export const Button = styled.a`
   margin-top: 2.875rem;
   transition: background-color 0.5s ease;
 
-  @media (max-width: ${breakpoints.bigScreen}) {
+  @media (max-width: ${breakpoints.biggest}) {
     height: 3rem;
     line-height: 3rem;
     font-size: ${fontSizes._16};
@@ -112,74 +75,107 @@ export const Apps = styled.div`
   display: flex;
 `
 
-export const App = styled.div<{ $type?: string; $index: number; $appsAmmount: number }>`
+export const AppWrapper = styled.div<{ $color: HeroAppColor }>`
+  width: 15.25rem;
+  height: 7.625rem;
+  padding: 1rem;
+  position: relative;
+  border-width: 0.625rem;
+  border-style: solid;
+  border-color: ${({ $color }) => linkHeroAppBorderColor($color)};
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+
+  &::before {
+    border-left: 0.375rem solid transparent;
+    border-right: 0.375rem solid transparent;
+  }
+
+  &::after {
+    border-left: 0.3125rem solid transparent;
+    border-right: 0.3125rem solid transparent;
+  }
+`
+
+export const AppInner = styled.div<{ $color: HeroAppColor }>`
+  border-width: 1.625rem;
+  border-style: solid;
+  border-color: ${({ $color }) => linkHeroAppBorderColor($color)};
+  width: 11.875rem;
+  height: 11.875rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5625rem;
+
+  span {
+    font-size: ${fontSizes._16};
+    font-weight: 700;
+    color: ${colors.textDefault};
+  }
+`
+
+export const App = styled.div<{ $index: number; $nbApps: number; $color: HeroAppColor }>`
   position: relative;
   left: ${(props) => -props.$index * 10}px;
-  top: ${(props) => (props.$type === "bottom" ? "1.625rem" : "auto")};
-  z-index: ${(props) => props.$appsAmmount - props.$index};
-`
+  z-index: ${(props) => props.$nbApps - props.$index};
 
-export const AppWrapperTop = styled.div<{ $color: HeroAppColor }>`
-  ${mixin.appWrapper};
-  border-color: ${({ $color }) => linkHeroAppBorderColor($color)};
-  border-top-left-radius: 8.25rem;
-  border-top-right-radius: 8.25rem;
-  border-bottom: 0;
+  &:nth-child(odd) {
+    ${AppWrapper} {
+      border-top-left-radius: 8.25rem;
+      border-top-right-radius: 8.25rem;
+      border-bottom: 0;
 
-  &::before {
-    border-left: 0.375rem solid transparent;
-    border-right: 0.375rem solid transparent;
-    border-bottom: 0.375rem solid ${colors.white};
-    top: 6.6875rem;
-    left: -0.625rem;
+      &::before {
+        border-bottom: 0.375rem solid ${colors.white};
+        top: 6.6875rem;
+        left: -0.625rem;
+      }
+
+      &::after {
+        border-top-width: 0.3125rem;
+        border-top-style: solid;
+        border-top-color: ${({ $color }) => linkHeroAppBorderColor($color)};
+        top: 7rem;
+        right: -0.625rem;
+      }
+    }
   }
 
-  &::after {
-    border-left: 0.3125rem solid transparent;
-    border-right: 0.3125rem solid transparent;
-    border-top-width: 0.3125rem;
-    border-top-style: solid;
-    border-top-color: ${({ $color }) => linkHeroAppBorderColor($color)};
-    top: 7rem;
-    right: -0.625rem;
+  &:nth-child(even) {
+    top: 1.625rem;
+
+    ${AppWrapper} {
+      border-bottom-left-radius: 8.25rem;
+      border-bottom-right-radius: 8.25rem;
+      border-top: 0;
+      top: 6.25rem;
+
+      &::before {
+        border-top: 0.375rem solid ${colors.white};
+        top: 0;
+        left: -0.6875rem;
+      }
+
+      &::after {
+        border-bottom-width: 0.3125rem;
+        border-bottom-style: solid;
+        border-bottom-color: ${({ $color }) => linkHeroAppBorderColor($color)};
+        top: -0.28125rem;
+        right: -0.625rem;
+      }
+    }
+
+    ${AppInner} {
+      position: relative;
+      top: -6.875rem;
+    }
   }
-`
-
-export const AppInnerTop = styled.div<{ $color: HeroAppColor }>`
-  ${mixin.appInner};
-  border-color: ${({ $color }) => linkHeroAppBorderColor($color)};
-`
-
-export const AppWrapperBottom = styled.div<{ $color: HeroAppColor }>`
-  ${mixin.appWrapper};
-  border-color: ${({ $color }) => linkHeroAppBorderColor($color)};
-  border-bottom-left-radius: 8.25rem;
-  border-bottom-right-radius: 8.25rem;
-  border-top: 0;
-  top: 6.25rem;
-
-  &::before {
-    border-left: 0.375rem solid transparent;
-    border-right: 0.375rem solid transparent;
-    border-top: 0.375rem solid ${colors.white};
-    top: 0;
-    left: -0.6875rem;
-  }
-
-  &::after {
-    border-left: 0.3125rem solid transparent;
-    border-right: 0.3125rem solid transparent;
-    border-bottom-width: 0.3125rem;
-    border-bottom-style: solid;
-    border-bottom-color: ${({ $color }) => linkHeroAppBorderColor($color)};
-    top: -0.28125rem;
-    right: -0.625rem;
-  }
-`
-
-export const AppInnerBottom = styled.div<{ $color: HeroAppColor }>`
-  ${mixin.appInner}
-  border-color: ${({ $color }) => linkHeroAppBorderColor($color)};
-  position: relative;
-  top: -6.875rem;
 `

@@ -24,15 +24,6 @@ export const fontSizes = {
   _24: "1.5rem",
   _32: "2rem",
   _42: "2.625rem",
-  _54: "3.375rem",
-  _60: "3.75rem",
-  _66: "4.125rem",
-  _72: "4.5rem",
-}
-
-export const fontWeights = {
-  semiBold: "600",
-  bold: "700",
 }
 
 export const iconSizes = {
@@ -52,8 +43,8 @@ export const lineHeights = {
 export const breakpoints = {
   medium: "40rem",
   large: "64rem",
-  extraLargeScreen: "90rem",
-  bigScreen: "120rem",
+  extraLarge: "90rem",
+  biggest: "120rem",
   documentationStickyMenu: "64rem",
   blogStickyMenu: "40rem",
   burgerMenu: "75rem",
@@ -64,6 +55,8 @@ export const colors = {
   danger: "#b2564f",
   warning: "#fcfaed",
   white: "#fff",
+
+  // TODO: Change to (green -> primary, greenLight -> secondary in end of redesign of whole site)
   green: "#4ca30d",
   greenLight: "#87c76c",
   greenMediumLight: "#6db24f",
@@ -80,8 +73,6 @@ export const colors = {
   backgroundLight: "#efefef",
   backgroundLightest: "#f8f8f8",
   backgroundWhite: "#fff",
-
-  bgLight: "#fdfdfd",
 
   borderMedium: "#ccc",
   borderLight: "#e0e0e0",

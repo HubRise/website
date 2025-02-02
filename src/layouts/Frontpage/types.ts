@@ -1,5 +1,16 @@
 import { HeroAppColor } from "./Hero/utils"
 
+export type TMetric = {
+  number: string
+  title: string
+}
+
+export type TApp = {
+  title: string
+  type: string
+  color: HeroAppColor
+}
+
 export interface FrontpageYaml {
   path: string
   meta: {
@@ -15,17 +26,10 @@ export interface FrontpageYaml {
     }
     description: string
     button_label: string
-    apps: Array<{
-      title: string
-      type: string
-      color: HeroAppColor
-    }>
+    apps: Array<TApp>
   }
   content: {
-    numbers: Array<{
-      number: string
-      title: string
-    }>
+    metrics: Array<TMetric>
     apps: {
       title: string
       description: string
