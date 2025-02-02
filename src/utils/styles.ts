@@ -44,7 +44,7 @@ export const breakpoints = {
   medium: "40rem",
   large: "64rem",
   extraLarge: "90rem",
-  biggest: "120rem",
+  biggest: "119rem",
   documentationStickyMenu: "64rem",
   blogStickyMenu: "40rem",
   burgerMenu: "75rem",
