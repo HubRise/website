@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { MDXRemote } from "next-mdx-remote"
 import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 
@@ -5,7 +6,8 @@ import useClientRoutes from "@hooks/client/useClientRoutes"
 
 import { TApp } from "../types"
 
-import { Container, Title, TitleHighlight, Description, Button, Apps, App, AppWrapper, AppInner } from "./Styles"
+import { Container, Title, TitleHighlight, Description, Button, Apps, AppWrapper, AppInner } from "./Styles"
+import { getHeroAppsImageSource } from "./utils"
 
 interface HeroProps {
   title: {
@@ -37,13 +39,12 @@ const Hero = ({ title, button_label, apps, descriptionMdx }: HeroProps): JSX.Ele
       <Apps>
         {apps.map(({ title, color }, index) => {
           return (
-            <App $index={index} $nbApps={apps.length} $color={color} key={index}>
-              <AppWrapper $color={color}>
-                <AppInner $color={color}>
-                  <span>{title}</span>
-                </AppInner>
-              </AppWrapper>
-            </App>
+            <AppWrapper $index={index} key={index}>
+              <Image src={getHeroAppsImageSource(color)} alt="Hero Apps" fill={true} />
+              <AppInner $color={color}>
+                <span>{title}</span>
+              </AppInner>
+            </AppWrapper>
           )
         })}
       </Apps>
