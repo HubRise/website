@@ -6,7 +6,7 @@ import useClientRoutes from "@hooks/client/useClientRoutes"
 
 import { TApp } from "../types"
 
-import { Container, Title, TitleHighlight, Description, Button, Apps, AppWrapper, AppInner } from "./Styles"
+import { Container, Title, TitleHighlight, Description, Button, Apps, AppWrapper, AppInner, App } from "./Styles"
 import { getHeroAppsImageSource } from "./utils"
 
 interface HeroProps {
@@ -39,12 +39,14 @@ const Hero = ({ title, button_label, apps, descriptionMdx }: HeroProps): JSX.Ele
       <Apps>
         {apps.map(({ title, color }, index) => {
           return (
-            <AppWrapper $index={index} key={index}>
-              <Image src={getHeroAppsImageSource(color)} alt="Hero Apps" fill={true} />
-              <AppInner $color={color}>
-                <span>{title}</span>
-              </AppInner>
-            </AppWrapper>
+            <App $index={index} key={index}>
+              <AppWrapper>
+                <Image src={getHeroAppsImageSource(color)} alt="Hero Apps" fill={true} />
+                <AppInner $color={color}>
+                  <span>{title}</span>
+                </AppInner>
+              </AppWrapper>
+            </App>
           )
         })}
       </Apps>
