@@ -71,8 +71,13 @@ export const Button = styled.a`
 
 export const Apps = styled.div`
   max-width: 88.375rem;
-  margin: 3.875rem auto 8rem;
+  margin: 3.875rem auto 3.625rem;
   display: flex;
+
+  @media (max-width: ${breakpoints.biggest}) {
+    max-width: 72rem;
+    margin-bottom: 2.875rem;
+  }
 `
 
 export const AppInner = styled.div<{ $color: HeroAppColor }>`
@@ -83,7 +88,7 @@ export const AppInner = styled.div<{ $color: HeroAppColor }>`
   width: 11.875rem;
   height: 11.875rem;
   border-radius: 100%;
-  padding: 1.5625rem;
+  padding: 1.5rem;
   position: relative;
 
   span {
@@ -91,19 +96,22 @@ export const AppInner = styled.div<{ $color: HeroAppColor }>`
     font-weight: 700;
     color: ${colors.textDefault};
   }
+
+  @media (max-width: ${breakpoints.biggest}) {
+    border-width: 1.25rem;
+    width: 9.75rem;
+    height: 9.75rem;
+    padding: 1.25rem;
+
+    span {
+      font-size: ${fontSizes._14};
+    }
+  }
 `
 
-export const AppWrapper = styled.div<{ $index: number }>`
+export const App = styled.div<{ $index: number }>`
   position: relative;
-  width: 15.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  left: ${(props) => -props.$index * 10}px;
-
-  img {
-    height: 8rem !important;
-  }
+  left: ${(props) => -props.$index * 11}px;
 
   &:nth-child(odd) {
     ${AppInner} {
@@ -112,7 +120,7 @@ export const AppWrapper = styled.div<{ $index: number }>`
   }
 
   &:nth-child(even) {
-    top: 3.5rem;
+    top: 3.625rem;
 
     ${AppInner} {
       top: -1.625rem;
@@ -120,6 +128,42 @@ export const AppWrapper = styled.div<{ $index: number }>`
 
     img {
       inset: auto 0 0 0 !important;
+    }
+  }
+
+  @media (max-width: ${breakpoints.biggest}) {
+    left: ${(props) => -props.$index * 12}px;
+
+    &:nth-child(odd) {
+      ${AppInner} {
+        top: 1.375rem;
+      }
+    }
+
+    &:nth-child(even) {
+      top: 2.875rem;
+
+      ${AppInner} {
+        top: -1.375rem;
+      }
+    }
+  }
+`
+
+export const AppWrapper = styled.div`
+  width: 15.25rem;
+  display: flex;
+  justify-content: center;
+
+  img {
+    height: 8rem !important;
+  }
+
+  @media (max-width: ${breakpoints.biggest}) {
+    width: 12.625rem;
+
+    img {
+      height: 6.5rem !important;
     }
   }
 `
