@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizes } from "@utils/styles"
+import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
 import { HeroAppColor, linkHeroAppBorderColor } from "./utils"
 
@@ -75,45 +75,16 @@ export const Apps = styled.div`
   display: flex;
 `
 
-export const AppWrapper = styled.div<{ $color: HeroAppColor }>`
-  width: 15.25rem;
-  height: 7.625rem;
-  padding: 1rem;
-  position: relative;
-  border-width: 0.625rem;
-  border-style: solid;
-  border-color: ${({ $color }) => linkHeroAppBorderColor($color)};
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-  }
-
-  &::before {
-    border-left: 0.375rem solid transparent;
-    border-right: 0.375rem solid transparent;
-  }
-
-  &::after {
-    border-left: 0.3125rem solid transparent;
-    border-right: 0.3125rem solid transparent;
-  }
-`
-
 export const AppInner = styled.div<{ $color: HeroAppColor }>`
+  ${mixin.centerElement};
   border-width: 1.625rem;
   border-style: solid;
   border-color: ${({ $color }) => linkHeroAppBorderColor($color)};
   width: 11.875rem;
   height: 11.875rem;
   border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 1.5625rem;
+  position: relative;
 
   span {
     font-size: ${fontSizes._16};
@@ -122,60 +93,33 @@ export const AppInner = styled.div<{ $color: HeroAppColor }>`
   }
 `
 
-export const App = styled.div<{ $index: number; $nbApps: number; $color: HeroAppColor }>`
+export const AppWrapper = styled.div<{ $index: number }>`
   position: relative;
+  width: 15.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: ${(props) => -props.$index * 10}px;
-  z-index: ${(props) => props.$nbApps - props.$index};
+
+  img {
+    height: 8rem !important;
+  }
 
   &:nth-child(odd) {
-    ${AppWrapper} {
-      border-top-left-radius: 8.25rem;
-      border-top-right-radius: 8.25rem;
-      border-bottom: 0;
-
-      &::before {
-        border-bottom: 0.375rem solid ${colors.white};
-        top: 6.6875rem;
-        left: -0.625rem;
-      }
-
-      &::after {
-        border-top-width: 0.3125rem;
-        border-top-style: solid;
-        border-top-color: ${({ $color }) => linkHeroAppBorderColor($color)};
-        top: 7rem;
-        right: -0.625rem;
-      }
+    ${AppInner} {
+      top: 1.625rem;
     }
   }
 
   &:nth-child(even) {
-    top: 1.625rem;
-
-    ${AppWrapper} {
-      border-bottom-left-radius: 8.25rem;
-      border-bottom-right-radius: 8.25rem;
-      border-top: 0;
-      top: 6.25rem;
-
-      &::before {
-        border-top: 0.375rem solid ${colors.white};
-        top: 0;
-        left: -0.6875rem;
-      }
-
-      &::after {
-        border-bottom-width: 0.3125rem;
-        border-bottom-style: solid;
-        border-bottom-color: ${({ $color }) => linkHeroAppBorderColor($color)};
-        top: -0.28125rem;
-        right: -0.625rem;
-      }
-    }
+    top: 3.5rem;
 
     ${AppInner} {
-      position: relative;
-      top: -6.875rem;
+      top: -1.625rem;
+    }
+
+    img {
+      inset: auto 0 0 0 !important;
     }
   }
 `
