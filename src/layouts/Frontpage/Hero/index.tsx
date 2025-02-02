@@ -3,36 +3,19 @@ import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 
 import useClientRoutes from "@hooks/client/useClientRoutes"
 
-import {
-  Container,
-  Title,
-  TitleHighlight,
-  Description,
-  Button,
-  Apps,
-  App,
-  AppWrapperTop,
-  AppInnerTop,
-  AppWrapperBottom,
-  AppInnerBottom,
-} from "./Styles"
-import { HeroAppColor } from "./utils"
+import { TApp } from "../types"
 
-type App = {
-  title: string
-  type: string
-  color: HeroAppColor
-}
+import { Container, Title, TitleHighlight, Description, Button, Apps, App, AppWrapper, AppInner } from "./Styles"
 
 interface HeroProps {
   title: {
     start: string
     highlight1: string
-    highlight2: string
     and: string
+    highlight2: string
   }
   button_label: string
-  apps: Array<App>
+  apps: Array<TApp>
   descriptionMdx: MDXRemoteSerializeResult
 }
 
@@ -52,28 +35,16 @@ const Hero = ({ title, button_label, apps, descriptionMdx }: HeroProps): JSX.Ele
       </Description>
       <Button href={signup}>{button_label}</Button>
       <Apps>
-        {apps.map(({ title, type, color }, index) => {
-          if (type === "top") {
-            return (
-              <App $type="top" $index={index} $appsAmmount={apps.length} key={index}>
-                <AppWrapperTop $color={color}>
-                  <AppInnerTop $color={color}>
-                    <span>{title}</span>
-                  </AppInnerTop>
-                </AppWrapperTop>
-              </App>
-            )
-          } else {
-            return (
-              <App $type="bottom" $index={index} $appsAmmount={apps.length} key={index}>
-                <AppWrapperBottom $color={color}>
-                  <AppInnerBottom $color={color}>
-                    <span>{title}</span>
-                  </AppInnerBottom>
-                </AppWrapperBottom>
-              </App>
-            )
-          }
+        {apps.map(({ title, color }, index) => {
+          return (
+            <App $index={index} $nbApps={apps.length} $color={color} key={index}>
+              <AppWrapper $color={color}>
+                <AppInner $color={color}>
+                  <span>{title}</span>
+                </AppInner>
+              </AppWrapper>
+            </App>
+          )
         })}
       </Apps>
     </Container>
