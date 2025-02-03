@@ -3,11 +3,6 @@ import styled from "styled-components"
 import { Content } from "@components/Block/Styles"
 import { colors, fontSizes, breakpoints } from "@utils/styles"
 
-export const Container = styled.div`
-  background-color: ${colors.backgroundLight};
-  padding: 5.75rem 0;
-`
-
 export const Title = styled.h2`
   font-size: ${fontSizes._42};
   line-height: 3.75rem;
