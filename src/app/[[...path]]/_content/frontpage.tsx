@@ -12,6 +12,7 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
 
   const [
     heroDescriptionMdx,
+    useDescriptionMdx,
     apiDescriptionMdx,
     documentationDescriptionMdx,
     pricingDescriptionMdx,
@@ -19,6 +20,7 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
     teamImageMap,
   ] = await Promise.all([
     serializeFrontpage(yaml.hero.description),
+    serializeFrontpage(yaml.content.use.description),
     serializeFrontpage(yaml.content.api.description),
     serializeFrontpage(yaml.content.documentation.description),
     serializeFrontpage(yaml.content.pricing.description),
@@ -30,6 +32,7 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
     <Frontpage
       yaml={yaml}
       heroDescriptionMdx={heroDescriptionMdx}
+      useDescriptionMdx={useDescriptionMdx}
       apiDescriptionMdx={apiDescriptionMdx}
       documentationDescriptionMdx={documentationDescriptionMdx}
       pricingDescriptionMdx={pricingDescriptionMdx}
