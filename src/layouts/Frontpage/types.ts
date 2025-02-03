@@ -11,6 +11,14 @@ export type TApp = {
   color: HeroAppColor
 }
 
+export type TUseBlock = {
+  title: string
+  description: string
+  image: string
+  width: number
+  desktop_width: number
+}
+
 export interface FrontpageYaml {
   path: string
   meta: {
@@ -30,11 +38,10 @@ export interface FrontpageYaml {
   }
   content: {
     metrics: Array<TMetric>
-    apps: {
+    use: {
       title: string
       description: string
-      link_url: string
-      categories: Array<string>
+      use_blocks: Array<TUseBlock>
     }
     api: {
       title: string
