@@ -79,6 +79,16 @@ content:
         width: 356
         desktop_width: 275
 
+  pricing:
+    title:
+      start: Fair pricing at
+      price: €35
+      end: per store
+    description: |
+      No setup fee. No commitment. No contract.
+      Unlimited number of connections. No hidden costs.
+    button_label: Start today
+
   api:
     title: Public and easy to use API
     description: |
@@ -92,16 +102,6 @@ content:
       No guesswork. We document functionalities, data flow, and common pitfalls for each integrated app.
       Documentation is publicly available on our [Apps page](/apps/).
     image: documentation.png
-
-  pricing:
-    title: Fair pricing for stores
-    description: |
-      No setup fee. No commitment. No contract.
-      Unlimited number of connections. €35 per month.
-    button_label: Start free trial
-    button_url: https://manager.hubrise.com/signup
-    link_label: Pricing page
-    link_url: /pricing
 
   developers:
     title: We help developers

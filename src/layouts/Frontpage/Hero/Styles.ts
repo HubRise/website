@@ -52,6 +52,7 @@ export const Button = styled.a`
   background-color: ${colors.green};
   color: ${colors.white};
   font-size: ${fontSizes._20};
+  font-weight: 600;
   border-radius: 0.5rem;
   padding: 0 1.125rem;
   margin-top: 2.875rem;

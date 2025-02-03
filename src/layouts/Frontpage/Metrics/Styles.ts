@@ -2,9 +2,7 @@ import styled from "styled-components"
 
 import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
-export const Container = styled.div`
-  height: 11.25rem;
-  background-color: ${colors.green};
+export const Wrapper = styled.div`
   ${mixin.centerElement};
   column-gap: 3.875rem;
 
