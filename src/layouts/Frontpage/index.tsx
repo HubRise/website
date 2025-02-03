@@ -13,10 +13,12 @@ import Hero from "./Hero"
 import Join from "./Join"
 import Metrics from "./Metrics"
 import Pricing from "./Pricing"
+import Use from "./Use"
 
 interface FrontpageProps {
   yaml: FrontpageYaml
   heroDescriptionMdx: MDXRemoteSerializeResult
+  useDescriptionMdx: MDXRemoteSerializeResult
   apiDescriptionMdx: MDXRemoteSerializeResult
   documentationDescriptionMdx: MDXRemoteSerializeResult
   pricingDescriptionMdx: MDXRemoteSerializeResult
@@ -27,6 +29,7 @@ interface FrontpageProps {
 const Frontpage = ({
   yaml,
   heroDescriptionMdx,
+  useDescriptionMdx,
   apiDescriptionMdx,
   documentationDescriptionMdx,
   pricingDescriptionMdx,
@@ -40,6 +43,7 @@ const Frontpage = ({
       <Hero {...hero} descriptionMdx={heroDescriptionMdx} />
       <Metrics metrics={content.metrics} />
       <Apps />
+      <Use {...content.use} descriptionMdx={useDescriptionMdx} />
       <Api {...content.api} descriptionMdx={apiDescriptionMdx} />
       <Documentation {...content.documentation} descriptionMdx={documentationDescriptionMdx} />
       <Pricing {...content.pricing} descriptionMdx={pricingDescriptionMdx} />
