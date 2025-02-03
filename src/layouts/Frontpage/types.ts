@@ -43,6 +43,15 @@ export interface FrontpageYaml {
       description: string
       use_blocks: Array<TUseBlock>
     }
+    pricing: {
+      title: {
+        start: string
+        price: string
+        end: string
+      }
+      description: string
+      button_label: string
+    }
     api: {
       title: string
       description: string
@@ -52,14 +61,6 @@ export interface FrontpageYaml {
       title: string
       description: string
       image: string
-    }
-    pricing: {
-      title: string
-      description: string
-      button_label: string
-      button_url: string
-      link_label: string
-      link_url: string
     }
     developers: {
       title: string
