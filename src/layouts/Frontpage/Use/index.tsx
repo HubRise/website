@@ -3,11 +3,12 @@ import { MDXRemote, type MDXRemoteSerializeResult } from "next-mdx-remote"
 import { useEffect, useState } from "react"
 
 import Block from "@components/Block"
+import GreyContainer from "@components/GreyContainer"
 import { getWindowDimensions, TWindowSize } from "@utils/misc"
 
 import { TUseBlock } from "../types"
 
-import { Container, Title, Description, Blocks, BlockTitle, BlockText } from "./Styles"
+import { Title, Description, Blocks, BlockTitle, BlockText } from "./Styles"
 
 interface UseProps {
   title: string
@@ -28,7 +29,7 @@ const Use = ({ title, use_blocks, descriptionMdx }: UseProps): JSX.Element => {
   }, [])
 
   return (
-    <Container>
+    <GreyContainer>
       <Title>{title}</Title>
       <Description>
         <MDXRemote {...descriptionMdx} />
@@ -51,7 +52,7 @@ const Use = ({ title, use_blocks, descriptionMdx }: UseProps): JSX.Element => {
           )
         })}
       </Blocks>
-    </Container>
+    </GreyContainer>
   )
 }
 

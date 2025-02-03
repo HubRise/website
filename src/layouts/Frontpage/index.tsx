@@ -30,9 +30,9 @@ const Frontpage = ({
   yaml,
   heroDescriptionMdx,
   useDescriptionMdx,
+  pricingDescriptionMdx,
   apiDescriptionMdx,
   documentationDescriptionMdx,
-  pricingDescriptionMdx,
   developersDescriptionMdx,
   teamImageMap,
 }: FrontpageProps): JSX.Element => {
@@ -44,9 +44,9 @@ const Frontpage = ({
       <Metrics metrics={content.metrics} />
       <Apps />
       <Use {...content.use} descriptionMdx={useDescriptionMdx} />
+      <Pricing {...content.pricing} descriptionMdx={pricingDescriptionMdx} />
       <Api {...content.api} descriptionMdx={apiDescriptionMdx} />
       <Documentation {...content.documentation} descriptionMdx={documentationDescriptionMdx} />
-      <Pricing {...content.pricing} descriptionMdx={pricingDescriptionMdx} />
       <Developers {...content.developers} descriptionMdx={developersDescriptionMdx} teamImageMap={teamImageMap} />
       <Join {...content.join} />
     </>
