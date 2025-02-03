@@ -7,7 +7,7 @@ import { HeroAppColor, linkHeroAppBorderColor } from "./utils"
 export const Container = styled.div`
   position: relative;
   background-color: ${colors.backgroundLightest};
-  padding: 5.875rem 0;
+  padding: 5.75rem 0;
   text-align: center;
 `
 
@@ -34,7 +34,6 @@ export const Description = styled.div`
   margin: 1.5rem auto 0;
 
   p {
-    color: ${colors.textDefault};
     font-size: ${fontSizes._24};
     line-height: 2rem;
 
@@ -94,7 +93,6 @@ export const AppInner = styled.div<{ $color: HeroAppColor }>`
   span {
     font-size: ${fontSizes._16};
     font-weight: 700;
-    color: ${colors.textDefault};
   }
 
   @media (max-width: ${breakpoints.biggest}) {
