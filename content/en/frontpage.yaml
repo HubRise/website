@@ -47,37 +47,37 @@ content:
           Use HubRise to connect your EPOS as well as other solutions you use on your day to day operations : solutions, Delivery platforms, online ordering, kiosks, Inventory Management solutions and more.
         image: use-connect-apps.png
         width: 436
-        desktop_width: 336
+        height: 304
       - title: Manage Products
         description: |
           Centralise the management of your product catalogs in one app, for all sales channels and all locations. Products and prices might be different, even complex catalogs are supported.
         image: use-manage-products.png
-        width: 326
-        desktop_width: 252
+        width: 328
+        height: 291
       - title: Synchronise Inventory
         description: |
           Automatically update inventory or remove unavailable items across all sales channels via integration. If you don't keep track of inventory, snooze products for a short or an undetermined period.
         image: use-synchronise-inventory.png
         width: 358
-        desktop_width: 275
+        height: 291
       - title: Build a Customer Database
         description: |
           Collect, aggregate, and centralise customer information from all connected sales channels into a unified list. Effortlessly share this data with targeted marketing campaign apps to enhance customer engagement and increase loyalty.
         image: use-customer-database.png
-        width: 490
-        desktop_width: 302
+        width: 392
+        height: 291
       - title: Centralise Orders
         description: |
           Use HubRise to see and manage orders arriving from all your different sales channels into one app, change order statuses, see drivers approaching and print receipts.
         image: use-centralise-orders.png
-        width: 339
-        desktop_width: 261
+        width: 340
+        height: 291
       - title: Make informed decisions
         description: |
           Check aggregated sales data for all locations or per location, per sales channels, for the week, the month or any other custom period of time. Find out which products you sale most, and which peak production time to expect
         image: use-informed-decisions.png
-        width: 356
-        desktop_width: 275
+        width: 357
+        height: 291
 
   pricing:
     title:
