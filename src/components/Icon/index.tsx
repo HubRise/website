@@ -16,6 +16,8 @@ export type IconCode =
   | "expand_less"
   | "navigate_before"
   | "search"
+  | "check"
+  | "arrow_forward"
 
 export type IconProps = StyledIconProps & {
   code: IconCode

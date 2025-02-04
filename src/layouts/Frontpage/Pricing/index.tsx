@@ -5,7 +5,7 @@ import Button from "@components/Button"
 import Container from "@components/Container"
 import useClientRoutes from "@hooks/client/useClientRoutes"
 
-import { Description, Title } from "./Styles"
+import { ButtonWrapper, Description, Title } from "./Styles"
 
 interface PricingProps {
   title: {
@@ -30,7 +30,9 @@ const Pricing = ({ title, button_label, descriptionMdx }: PricingProps) => {
       <Description>
         <MDXRemote {...descriptionMdx} />
       </Description>
-      <Button label={button_label} link={signup} />
+      <ButtonWrapper>
+        <Button label={button_label} link={signup} type="tertiary" />
+      </ButtonWrapper>
     </Container>
   )
 }
