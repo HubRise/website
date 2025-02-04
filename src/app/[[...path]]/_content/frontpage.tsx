@@ -2,22 +2,17 @@ import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 import { serialize } from "next-mdx-remote/serialize"
 
 import Frontpage from "@layouts/Frontpage"
-import { contentImageMap } from "@utils/contentImage"
 import remarkTextPlugin from "@utils/mdx/remarkTextPlugin"
 import { Route, RouteName } from "@utils/router/types"
 
 const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Element> => {
   const yaml = route.context.yaml
-  const teamFilenames = yaml.content.developers.team_members.map((member) => member.filename)
 
-  const [heroDescriptionMdx, useDescriptionMdx, pricingDescriptionMdx, developersDescriptionMdx, teamImageMap] =
-    await Promise.all([
-      serializeFrontpage(yaml.hero.description),
-      serializeFrontpage(yaml.content.use.description),
-      serializeFrontpage(yaml.content.pricing.description),
-      serializeFrontpage(yaml.content.developers.description),
-      contentImageMap("/images/team", teamFilenames),
-    ])
+  const [heroDescriptionMdx, useDescriptionMdx, pricingDescriptionMdx] = await Promise.all([
+    serializeFrontpage(yaml.hero.description),
+    serializeFrontpage(yaml.content.use.description),
+    serializeFrontpage(yaml.content.pricing.description),
+  ])
 
   return (
     <Frontpage
@@ -25,8 +20,6 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
       heroDescriptionMdx={heroDescriptionMdx}
       useDescriptionMdx={useDescriptionMdx}
       pricingDescriptionMdx={pricingDescriptionMdx}
-      developersDescriptionMdx={developersDescriptionMdx}
-      teamImageMap={teamImageMap}
     />
   )
 }
