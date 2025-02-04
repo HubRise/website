@@ -15,7 +15,7 @@ export const StyledTitle = styled.h3<{
 
   color: ${({ $backgroundColor }) => titleColorMap[$backgroundColor]};
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: ${fontSizes._42};
   line-height: ${lineHeights.compact};
   text-align: ${({ $horizontalAlign }) => ($horizontalAlign === "left" ? "left" : "center")};
@@ -27,9 +27,10 @@ export const StyledTitle = styled.h3<{
     right: ${({ $horizontalAlign }) => ($horizontalAlign === "left" ? "auto" : "0")};
     top: 100%;
     margin: 10px auto;
-    width: 15%;
+    width: 7.5rem;
     height: 3px;
     background-color: ${({ $backgroundColor }) => linkColorMap[$backgroundColor]};
+    border-radius: 6.25rem;
   }
 
   ${({ $horizontalAlign }) => css`

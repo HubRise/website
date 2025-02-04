@@ -1,3 +1,5 @@
+import { SidePosition } from "@components/Block/utils"
+
 import { HeroAppColor } from "./Hero/utils"
 
 export type TMetric = {
@@ -17,6 +19,18 @@ export type TUseBlock = {
   image: string
   width: number
   desktop_width: number
+}
+
+export type TIntegrationApp = {
+  title: string
+  afterExpansion: boolean
+  image: string
+  sidePosition: SidePosition
+  advantages: Array<{
+    text: string
+  }>
+  button_label: string
+  button_link: string
 }
 
 export interface FrontpageYaml {
@@ -54,16 +68,7 @@ export interface FrontpageYaml {
     }
     integrations: {
       title: string
-    }
-    api: {
-      title: string
-      description: string
-      image: string
-    }
-    documentation: {
-      title: string
-      description: string
-      image: string
+      integration_apps: Array<TIntegrationApp>
     }
     developers: {
       title: string
