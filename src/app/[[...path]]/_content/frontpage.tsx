@@ -10,23 +10,14 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
   const yaml = route.context.yaml
   const teamFilenames = yaml.content.developers.team_members.map((member) => member.filename)
 
-  const [
-    heroDescriptionMdx,
-    useDescriptionMdx,
-    pricingDescriptionMdx,
-    apiDescriptionMdx,
-    documentationDescriptionMdx,
-    developersDescriptionMdx,
-    teamImageMap,
-  ] = await Promise.all([
-    serializeFrontpage(yaml.hero.description),
-    serializeFrontpage(yaml.content.use.description),
-    serializeFrontpage(yaml.content.pricing.description),
-    serializeFrontpage(yaml.content.api.description),
-    serializeFrontpage(yaml.content.documentation.description),
-    serializeFrontpage(yaml.content.developers.description),
-    contentImageMap("/images/team", teamFilenames),
-  ])
+  const [heroDescriptionMdx, useDescriptionMdx, pricingDescriptionMdx, developersDescriptionMdx, teamImageMap] =
+    await Promise.all([
+      serializeFrontpage(yaml.hero.description),
+      serializeFrontpage(yaml.content.use.description),
+      serializeFrontpage(yaml.content.pricing.description),
+      serializeFrontpage(yaml.content.developers.description),
+      contentImageMap("/images/team", teamFilenames),
+    ])
 
   return (
     <Frontpage
@@ -34,8 +25,6 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
       heroDescriptionMdx={heroDescriptionMdx}
       useDescriptionMdx={useDescriptionMdx}
       pricingDescriptionMdx={pricingDescriptionMdx}
-      apiDescriptionMdx={apiDescriptionMdx}
-      documentationDescriptionMdx={documentationDescriptionMdx}
       developersDescriptionMdx={developersDescriptionMdx}
       teamImageMap={teamImageMap}
     />

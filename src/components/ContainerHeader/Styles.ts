@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
     width: 7.5rem;
     height: 0.1875rem;
     border-radius: 6.25rem;
-    background-color: ${colors.green};
+    background-color: ${colors.primary};
   }
 
   @media (max-width: ${breakpoints.biggest}) {

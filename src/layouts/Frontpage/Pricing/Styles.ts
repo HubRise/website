@@ -32,3 +32,10 @@ export const Description = styled.div`
     margin-top: 1rem;
   }
 `
+
+export const ButtonWrapper = styled.div`
+  & > a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+`

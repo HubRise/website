@@ -89,19 +89,50 @@ content:
       Unlimited number of connections. No hidden costs.
     button_label: Start today
 
-  api:
-    title: Une API publique et facile à utiliser
-    description: |
-      Synchronisez les commandes, les clients et les produits. Une documentation soignée, une collection Postman, et un SDK Ruby permettent une intégration fluide.
-      Pour le plaisir, nous avons écrit une app complète et intégrée en quelques lignes de code, que vous pouvez [consulter sur GitHub](https://github.com/HubRise/tiny-tablet).
-    image: api.png
-
-  documentation:
-    title: Documentation détaillée
-    description: |
-      Nous documentons les fonctionnalités, les flux de données et les "pièges" de chaque intégration, pour vous faire gagner du temps.
-      La documentation est publiquement accessible depuis [la page Apps](/fr/apps).
-    image: documentation.png
+  integrations:
+    title: Free HubRise apps to complete your integrations when needed
+    integration_apps:
+      - title: Centralise orders with OrderLine
+        afterExpansion: true
+        image: orderline.png
+        sidePosition: right
+        advantages:
+          - text: Centralise orders from all platforms.
+          - text: Adjust product availability.
+          - text: Update opening hours.
+          - text: Print receipts directly from the app.
+          - text: Reduce errors with synchronized data.
+          - text: Get a unified view of customer preferences for better decision-making.
+          - text: Streamline kitchen workflows by grouping orders efficiently.
+        button_label: Learn more about OrderLine
+        button_link: a
+      - title: Centralise product management with Catalog Manager
+        afterExpansion: false
+        image: catalog-manager.png
+        sidePosition: left
+        advantages:
+          - text: Manage product catalogs for all locations.
+          - text: Adjust prices and menus by location.
+          - text: Sync updates across platforms instantly.
+          - text: Support complex or seasonal menus.
+          - text: Handle complex, seasonal, or custom menus.
+          - text: Ensure consistency across sales channels.
+          - text: Scale product updates without extra effort.
+        button_label: Explore Catalog Manager
+        button_link: a
+      - title: Access automated reports on the HubRise Dashboard
+        afterExpansion: true
+        image: dashboard.png
+        sidePosition: right
+        advantages:
+          - text: View aggregated sales data by channel and location.
+          - text: Track top-performing products and peak times.
+          - text: Analyze trends across custom timeframes.
+          - text: Create tailored reports for business insights.
+          - text: Share automated reports with your team.
+          - text: Visualize KPIs in a clean, customizable dashboard.
+        button_label: Discover the HubRise Dashboard
+        button_link: a
 
   developers:
     title: Nous aidons les développeurs
