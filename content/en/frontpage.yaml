@@ -91,20 +91,48 @@ content:
 
   integrations:
     title: Free HubRise apps to complete your integrations when needed
-
-  api:
-    title: Public and easy to use API
-    description: |
-      Synchronise orders, customers and products. A well-written documentation, a Postman collection, and a Ruby SDK make integration seamless.
-      Just for fun, we created a fully functional and integrated app in a few lines of code, which you can [view on GitHub](https://github.com/HubRise/tiny-tablet).
-    image: api.png
-
-  documentation:
-    title: Documentation at the core
-    description: |
-      No guesswork. We document functionalities, data flow, and common pitfalls for each integrated app.
-      Documentation is publicly available on our [Apps page](/apps/).
-    image: documentation.png
+    integration_apps:
+      - title: Centralise orders with OrderLine
+        afterExpansion: true
+        image: orderline.png
+        sidePosition: right
+        advantages:
+          - text: Centralise orders from all platforms.
+          - text: Adjust product availability.
+          - text: Update opening hours.
+          - text: Print receipts directly from the app.
+          - text: Reduce errors with synchronized data.
+          - text: Get a unified view of customer preferences for better decision-making.
+          - text: Streamline kitchen workflows by grouping orders efficiently.
+        button_label: Learn more about OrderLine
+        button_link: a
+      - title: Centralise product management with Catalog Manager
+        afterExpansion: false
+        image: catalog-manager.png
+        sidePosition: left
+        advantages:
+          - text: Manage product catalogs for all locations.
+          - text: Adjust prices and menus by location.
+          - text: Sync updates across platforms instantly.
+          - text: Support complex or seasonal menus.
+          - text: Handle complex, seasonal, or custom menus.
+          - text: Ensure consistency across sales channels.
+          - text: Scale product updates without extra effort.
+        button_label: Explore Catalog Manager
+        button_link: a
+      - title: Access automated reports on the HubRise Dashboard
+        afterExpansion: true
+        image: dashboard.png
+        sidePosition: right
+        advantages:
+          - text: View aggregated sales data by channel and location.
+          - text: Track top-performing products and peak times.
+          - text: Analyze trends across custom timeframes.
+          - text: Create tailored reports for business insights.
+          - text: Share automated reports with your team.
+          - text: Visualize KPIs in a clean, customizable dashboard.
+        button_label: Discover the HubRise Dashboard
+        button_link: a
 
   developers:
     title: We help developers

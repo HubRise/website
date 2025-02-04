@@ -5,7 +5,7 @@ export type HeroAppColor = "green" | "greenLight" | "greenMediumLight"
 type HeroAppColorMap = Record<HeroAppColor, string>
 
 const linkHeroAppColorMap: HeroAppColorMap = {
-  green: colors.green,
+  green: colors.primary,
   greenLight: colors.greenLight,
   greenMediumLight: colors.greenMediumLight,
 }
