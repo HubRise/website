@@ -58,9 +58,11 @@ Les sections suivantes expliquent en détail comment votre catalogue HubRise est
 
 ### Catégories
 
-Uber Eats Bridge associe les catégories HubRise et les catégories de produits sur Uber Eats.
+Uber Eats Bridge associe les catégories HubRise aux catégories Uber Eats. Le nom de la catégorie, son code ref et sa description sont envoyés à Uber Eats. Par défaut, les catégories sont aplaties.
 
-Le nom de la catégorie, son code ref et sa description sont envoyés à Uber Eats.
+Pour les commerces de détail, le mode deux niveaux peut être activé. Dans ce mode, les catégories principales sont envoyées sous forme de menus, et leurs sous-catégories respectives sont incluses dans chaque menu. Dans Uber Eats, les menus apparaissent comme des catégories principales, de la même manière que des rayons de supermarchés (par exemple, Boissons → Sodas, Bières).
+
+Le mode deux niveaux n'est disponible que pour les commerces de détail. Il doit être activé par le support Uber Eats et activé dans la [Page de configuration](/apps/uber-eats/configuration#category-structure).
 
 ### Produits et SKU
 
@@ -113,6 +115,7 @@ Pour chaque [produit](/developers/api/catalogs#products) avec plusieurs SKU, Ube
 - `price` : prix minimum de tous les SKU
 - `image` : adresse URL de l'image du produit parent
 - `tags` : tags décrivant les caractéristiques et les restrictions du produit, telles que les allergènes ou la saveur épicée. Pour consulter la liste des tags disponibles sur Uber Eats, voir [Tags produit](#product-tags).
+- `barcodes` : seul le premier code-barres est envoyé, s'il est présent.
 
 La liste des SKU est associée au produit sous forme de tableau de modificateurs.
 

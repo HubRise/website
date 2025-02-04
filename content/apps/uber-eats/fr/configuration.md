@@ -32,11 +32,11 @@ Dans cette section, vous pouvez également choisir de marquer les commandes livr
 
 ### Articles spéciaux
 
-Par défaut, Uber Eats active une case à cocher dans le processus de paiement pour permettre aux clients de **Demander des couverts, pailles, etc.**, comme indiqué dans la capture d'écran ci-dessous.
+Uber Eats propose en option d'inclure une case à cocher dans le processus de commande pour permettre aux clients de **Demander des couverts, pailles, etc.**, comme montré dans l'image ci-dessous.
 
 ![Case à cocher des articles jetables lors du paiement sur Uber Eats](./images/009-disposable-items.png)
 
-Vous pouvez demander à Uber Eats de désactiver cette fonctionnalité. Si vous préférez la garder, créez un produit "Articles jetables" dans votre logiciel de caisse et utilisez son code ref dans le champ **Code ref jetables**.
+Pour activer cette fonctionnalité, créez un produit "Objets jetables" dans votre logiciel de caisse, saisissez son code ref dans le champ **Code de référence des objets jetables**, et demandez à Uber Eats d'activer cette option.
 
 ### Remises
 
@@ -76,15 +76,35 @@ Les variantes de catalogue vous donnent la flexibilité de désactiver des artic
 
 Si votre catalogue comprend des variantes, vous pouvez sélectionner celles que vous souhaitez utiliser. Vous pouvez choisir des variantes différentes pour les menus livraison et à emporter, ou utiliser la même pour les deux menus. Lorsque la valeur **(aucune)** est sélectionnée, tous les articles ainsi que leurs prix standards sont envoyés à Uber Eats.
 
+### Structure des catégories {#category-structure}
+
+Uber Eats permet deux types de structures de catégories :
+
+- **Niveau unique** : toutes les catégories sont au même niveau.
+- **Deux niveaux** : les catégories sont imbriquées (par exemple, Épicerie Salée → Biscuits & Crackers).
+
+Les restaurants utilisent toujours un niveau unique, tandis que les commerces de détail peuvent choisir une hiérarchie à deux niveaux si elle est activée par le support Uber Eats. Si vous n'êtes pas sûr, gardez **Niveau unique** sélectionné.
+
+### Menus spéciaux
+
+Les menus spéciaux vous permettent de planifier des variantes de catalogue à des jours et des heures spécifiques. Cette fonctionnalité est utile pour proposer des menus distincts pour le petit déjeuner et le déjeuner, par exemple.
+
+Pour configurer des menus spéciaux :
+
+1. Assurez-vous que votre catalogue contient les variantes nécessaires.
+2. Sélectionnez le nombre de menus spéciaux que vous souhaitez configurer (jusqu'à 5) dans le menu déroulant.
+3. Pour chaque menu spécial :
+   - Sélectionnez les jours de la semaine où le menu doit être actif.
+   - Sélectionner l'heure de début (**De**) et l'heure de fin (**A**) du menu.
+   - Choisissez les variantes de catalogue à utiliser pour la livraison et le retrait durant cette période.
+
+Lorsque des menus spéciaux sont configurés, Uber Eats basculera automatiquement vers la variante appropriée du catalogue en fonction du délai de commande prévu, que ce soit pour la livraison ou le retrait.
+
+S'il n'y a pas de menu spécial actif à un moment donné, Uber Eats utilisera les variantes de catalogue par défaut configurées dans les paramètres **Variante de catalogue à envoyer** pour la livraison et la vente à emporter.
+
 ### Envoi automatique du catalogue
 
 Sélectionnez la case **Activer l'envoi automatique du catalogue** pour synchroniser votre catalogue HubRise avec Uber Eats chaque fois qu'il est mis à jour.
-
-### Notes de préparation
-
-Vous pouvez activer les Notes de préparation pour des produits individuels en contactant l'équipe d'assistance Uber Eats. Cette fonctionnalité d'intégration est prise en charge, mais elle ne peut pas être activée par HubRise.
-
-Si vous activez les notes de préparation, assurez-vous que le logiciel de caisse qui est connecté les prend en charge au niveau du produit.
 
 ## Point de vente {#location}
 

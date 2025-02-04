@@ -58,9 +58,11 @@ The following sections provide more details on how your HubRise catalog is mappe
 
 ### Categories
 
-Uber Eats Bridge maps HubRise categories one-to-one to categories of products on Uber Eats.
+Uber Eats Bridge maps HubRise categories to Uber Eats categories. The category name, ref code, and description are sent to Uber Eats. By default, categories are flattened.
 
-The category name, ref code, and description are sent to Uber Eats.
+For retail stores, two-level mode can be enabled. In this mode, top-level categories are sent as menus, with their subcategories listed within each menu. In Uber Eats, menus appear as main categories, similar to supermarket aisles (e.g., Drinks → Sodas, Beers).
+
+Two-level mode is only available for retail stores. It must be enabled by Uber Eats support and activated in the [Configuration Page](/apps/uber-eats/configuration#category-structure).
 
 ### Products and Skus
 

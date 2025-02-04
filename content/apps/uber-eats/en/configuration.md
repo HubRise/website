@@ -76,6 +76,15 @@ Catalog variants give you the flexibility to disable specific items or adjust pr
 
 If your catalog includes variants, you have the option to select which ones to use. You can select different variants for the delivery and collection menus, or use the same variant for both. When **(none)** is selected, all items along with their standard prices are sent to Uber Eats.
 
+### Category Structure {#category-structure}
+
+Uber Eats allows two types of category structures:
+
+- **Single level**: all categories are at the same level. 
+- **Two-level**: categories are nested (e.g., Snacks → Biscuits & Crackers).
+
+Restaurants always use a single level, while retail stores can opt for a two-level hierarchy if enabled by Uber Eats support. If unsure, keep **Single level** selected.
+
 ### Special Menus
 
 Special menus allow you to schedule different catalog variants for specific days and times. This feature is useful for offering separate breakfast or lunch menus, for example.
