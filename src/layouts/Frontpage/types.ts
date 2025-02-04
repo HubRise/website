@@ -18,7 +18,7 @@ export type TUseBlock = {
   description: string
   image: string
   width: number
-  desktop_width: number
+  height: number
 }
 
 export type TIntegrationApp = {
