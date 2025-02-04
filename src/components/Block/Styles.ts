@@ -41,7 +41,7 @@ export const Content = styled.div<{
 }>`
   position: relative;
   display: grid;
-  gap: 2rem;
+  gap: 4.25rem;
 
   ${({ $hasSide, $sidePosition }) =>
     $hasSide
@@ -58,7 +58,7 @@ export const Content = styled.div<{
           grid-template-columns: 1fr;
         `}
 
-  max-width: ${sizes.maxWidth};
+  max-width: 90%;
   margin: 0 auto;
   ${({ $padding, $verticalPadding }) =>
     paddingVertical($verticalPadding ? ($padding === "large" ? sizes.blockVerticalPadding : "2.5rem") : "0")};

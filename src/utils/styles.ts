@@ -4,7 +4,7 @@ export const sizes = {
   maxWidth: "75rem",
   headerHeight: "5rem",
 
-  blockVerticalPadding: "4.688rem",
+  blockVerticalPadding: "3.685rem",
   blockHorizontalPadding: "7.5rem",
 
   // Horizontal padding for mobile devices
@@ -51,13 +51,11 @@ export const breakpoints = {
 }
 
 export const colors = {
-  primary: "#6db24f",
+  primary: "#4ca30d",
   danger: "#b2564f",
   warning: "#fcfaed",
   white: "#fff",
 
-  // TODO: Change to (green -> primary, greenLight -> secondary in end of redesign of whole site)
-  green: "#4ca30d",
   greenLight: "#87c76c",
   greenMediumLight: "#6db24f",
 

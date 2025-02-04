@@ -40,6 +40,6 @@ export const linkOverColorMap: ColorMap = {
 
 export const colorMap: ColorMap = {
   none: colors.textMedium,
-  white: colors.textMedium,
+  white: colors.textDark,
   green: colors.white,
 }

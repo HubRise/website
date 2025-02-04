@@ -7,7 +7,7 @@ type ContainerBgColorMap = Record<ContainerBgColor, string>
 type ContainerVerticalPaddingMap = Record<ContainerVerticalPadding, string>
 
 const linkContainerBgColorMap: ContainerBgColorMap = {
-  green: colors.green,
+  green: colors.primary,
   backgroundLight: colors.backgroundLight,
 }
 

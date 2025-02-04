@@ -9,6 +9,11 @@ export const Container = styled.div`
   background-color: ${colors.backgroundLightest};
   padding: 5.75rem 0;
   text-align: center;
+
+  & > a {
+    margin-left: auto;
+    margin-right: auto;
+  }
 `
 
 export const Title = styled.h1`
@@ -26,7 +31,7 @@ export const Title = styled.h1`
 `
 
 export const TitleHighlight = styled.span`
-  color: ${colors.green};
+  color: ${colors.primary};
 `
 
 export const Description = styled.div`
@@ -41,31 +46,6 @@ export const Description = styled.div`
       font-size: ${fontSizes._20};
       line-height: 1.875rem;
     }
-  }
-`
-
-export const Button = styled.a`
-  display: inline-block;
-  width: auto;
-  height: 3.375rem;
-  line-height: 3.375rem;
-  background-color: ${colors.green};
-  color: ${colors.white};
-  font-size: ${fontSizes._20};
-  font-weight: 600;
-  border-radius: 0.5rem;
-  padding: 0 1.125rem;
-  margin-top: 2.875rem;
-  transition: background-color 0.5s ease;
-
-  @media (max-width: ${breakpoints.biggest}) {
-    height: 3rem;
-    line-height: 3rem;
-    font-size: ${fontSizes._16};
-  }
-
-  &:hover {
-    background-color: ${colors.textDarkest};
   }
 `
 
