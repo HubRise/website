@@ -70,24 +70,6 @@ export interface FrontpageYaml {
       title: string
       integration_apps: Array<TIntegrationApp>
     }
-    developers: {
-      title: string
-      description: string
-      team_members: Array<{
-        name: string
-        filename: string
-      }>
-    }
-    mission_and_scalability: {
-      mission: {
-        title: string
-        description: string
-      }
-      scalability: {
-        title: string
-        description: string
-      }
-    }
     join: {
       title: string
       button_label: string
