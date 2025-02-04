@@ -134,38 +134,6 @@ content:
         button_label: Discover the HubRise Dashboard
         button_link: a
 
-  developers:
-    title: We help developers
-    description: |
-      We are developers too. You can count on us to promptly answer your questions during the integration.
-      Once you are integrated, we assess and document the work done, and share the news with our community.
-    team_members:
-      - name: Alberto
-        filename: alberto.jpg
-      - name: Antoine
-        filename: antoine.jpg
-      - name: Dimitri
-        filename: dimitri.jpg
-      - name: Félix L.
-        filename: felix_l.jpg
-      - name: Janaina
-        filename: janaina.jpg
-      - name: Nick
-        filename: nick.jpg
-      - name: Vova
-        filename: vova.jpg
-
-  mission_and_scalability:
-    mission:
-      title: Our vision
-      description: |
-        We want integrations to not be a challenge anymore. We make this possible by moving, unifying and securing data to its rightful place, in the cloud, to be accessed real-time when authorised.
-
-    scalability:
-      title: Scalable and low maintenance
-      description: |
-        Your support team and your users can connect in one click. Connection logs are available in the back office. Troubleshooting does not require development skills.
-
   join:
     title: Ready to join the ecosystem?
     button_label: Connect your app
