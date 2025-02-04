@@ -1,14 +1,12 @@
 import Image from "next/image"
 import { MDXRemote, type MDXRemoteSerializeResult } from "next-mdx-remote"
-import { useEffect, useState } from "react"
 
-import Block from "@components/Block"
-import GreyContainer from "@components/GreyContainer"
-import { getWindowDimensions, TWindowSize } from "@utils/misc"
+import Container from "@components/Container"
+import useWindowDimensions from "@utils/hooks"
 
 import { TUseBlock } from "../types"
 
-import { Title, Description, Blocks, BlockTitle, BlockText } from "./Styles"
+import { Title, Description, Cards, Card, CardTitle, CardText } from "./Styles"
 
 interface UseProps {
   title: string
@@ -17,42 +15,33 @@ interface UseProps {
 }
 
 const Use = ({ title, use_blocks, descriptionMdx }: UseProps): JSX.Element => {
-  const [windowSize, setWindowSize] = useState<TWindowSize>(getWindowDimensions())
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowSize(getWindowDimensions())
-    }
-
-    window.addEventListener("resize", handleResize)
-    return () => window.removeEventListener("resize", handleResize)
-  }, [])
+  const [windowWidth] = useWindowDimensions()
 
   return (
-    <GreyContainer>
+    <Container bgColor="backgroundLight" verticalPadding="big">
       <Title>{title}</Title>
       <Description>
         <MDXRemote {...descriptionMdx} />
       </Description>
-      <Blocks>
+      <Cards>
         {use_blocks.map(({ title, description, image, width, desktop_width }, index) => {
           return (
-            <Block backgroundColor="white" padding="small" key={index}>
+            <Card key={index}>
               <Image
                 src={`/images/frontpage/${image}`}
                 alt={title}
-                width={windowSize.width >= 1440 ? width : desktop_width}
+                width={windowWidth >= 1440 ? width : desktop_width}
                 height={290}
               />
               <div>
-                <BlockTitle>{title}</BlockTitle>
-                <BlockText>{description}</BlockText>
+                <CardTitle>{title}</CardTitle>
+                <CardText>{description}</CardText>
               </div>
-            </Block>
+            </Card>
           )
         })}
-      </Blocks>
-    </GreyContainer>
+      </Cards>
+    </Container>
   )
 }
 
