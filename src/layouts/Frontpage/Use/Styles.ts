@@ -2,58 +2,6 @@ import styled from "styled-components"
 
 import { colors, fontSizes, breakpoints } from "@utils/styles"
 
-export const Title = styled.h2`
-  font-size: ${fontSizes._42};
-  line-height: 3.75rem;
-  font-weight: 600;
-  color: ${colors.textDarkest};
-  text-align: center;
-
-  @media (max-width: ${breakpoints.biggest}) {
-    font-size: ${fontSizes._32};
-    line-height: 2.5rem;
-  }
-`
-
-export const Description = styled.div`
-  max-width: 82rem;
-  margin: 1.375rem auto 0;
-  position: relative;
-  padding-bottom: 1.25rem;
-
-  p {
-    font-size: ${fontSizes._24};
-    line-height: 2rem;
-    text-align: center;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -0.1875rem;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 7.5rem;
-    height: 0.1875rem;
-    border-radius: 6.25rem;
-    background-color: ${colors.green};
-  }
-
-  @media (max-width: ${breakpoints.biggest}) {
-    max-width: 67rem;
-
-    p {
-      font-size: ${fontSizes._20};
-      line-height: 1.875rem;
-    }
-
-    &::after {
-      width: 5rem;
-    }
-  }
-`
-
 export const Cards = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
