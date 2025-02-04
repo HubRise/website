@@ -10,6 +10,7 @@ import Apps from "./Apps"
 import Developers from "./Developers"
 import Documentation from "./Documentation"
 import Hero from "./Hero"
+import Integrations from "./Integrations"
 import Join from "./Join"
 import Metrics from "./Metrics"
 import Pricing from "./Pricing"
@@ -45,6 +46,7 @@ const Frontpage = ({
       <Apps />
       <Use {...content.use} descriptionMdx={useDescriptionMdx} />
       <Pricing {...content.pricing} descriptionMdx={pricingDescriptionMdx} />
+      <Integrations {...content.integrations} />
       <Api {...content.api} descriptionMdx={apiDescriptionMdx} />
       <Documentation {...content.documentation} descriptionMdx={documentationDescriptionMdx} />
       <Developers {...content.developers} descriptionMdx={developersDescriptionMdx} teamImageMap={teamImageMap} />

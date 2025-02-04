@@ -52,6 +52,9 @@ export interface FrontpageYaml {
       description: string
       button_label: string
     }
+    integrations: {
+      title: string
+    }
     api: {
       title: string
       description: string
