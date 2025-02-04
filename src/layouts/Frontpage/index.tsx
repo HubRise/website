@@ -3,10 +3,8 @@
 import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 
 import { FrontpageYaml } from "@layouts/Frontpage/types"
-import { ContentImageMap } from "@utils/contentImage"
 
 import Apps from "./Apps"
-import Developers from "./Developers"
 import Hero from "./Hero"
 import Integrations from "./Integrations"
 import Join from "./Join"
@@ -19,8 +17,6 @@ interface FrontpageProps {
   heroDescriptionMdx: MDXRemoteSerializeResult
   useDescriptionMdx: MDXRemoteSerializeResult
   pricingDescriptionMdx: MDXRemoteSerializeResult
-  developersDescriptionMdx: MDXRemoteSerializeResult
-  teamImageMap: ContentImageMap
 }
 
 const Frontpage = ({
@@ -28,8 +24,6 @@ const Frontpage = ({
   heroDescriptionMdx,
   useDescriptionMdx,
   pricingDescriptionMdx,
-  developersDescriptionMdx,
-  teamImageMap,
 }: FrontpageProps): JSX.Element => {
   const { hero, content } = yaml
 
@@ -41,7 +35,6 @@ const Frontpage = ({
       <Use {...content.use} descriptionMdx={useDescriptionMdx} />
       <Pricing {...content.pricing} descriptionMdx={pricingDescriptionMdx} />
       <Integrations {...content.integrations} />
-      <Developers {...content.developers} descriptionMdx={developersDescriptionMdx} teamImageMap={teamImageMap} />
       <Join {...content.join} />
     </>
   )
