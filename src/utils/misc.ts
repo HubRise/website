@@ -36,19 +36,3 @@ export const text = (str: string): string => {
   // return str
   return str.replace(/ (\:|\?|!|;)/g, "\u00A0$1")
 }
-
-/**
- * Get window Dimensions
- */
-export type TWindowSize = {
-  width: number
-  height: number
-}
-
-export const getWindowDimensions = (): TWindowSize => {
-  const { innerWidth: width, innerHeight: height } = window
-  return {
-    width,
-    height,
-  }
-}

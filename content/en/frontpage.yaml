@@ -89,6 +89,9 @@ content:
       Unlimited number of connections. No hidden costs.
     button_label: Start today
 
+  integrations:
+    title: Free HubRise apps to complete your integrations when needed
+
   api:
     title: Public and easy to use API
     description: |

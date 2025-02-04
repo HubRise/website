@@ -153,6 +153,7 @@ export const AppWrapper = styled.div`
   width: 15.25rem;
   display: flex;
   justify-content: center;
+  position: relative;
 
   img {
     height: 8rem !important;
