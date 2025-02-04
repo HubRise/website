@@ -21,7 +21,7 @@ export const Title = styled.div`
   }
 `
 
-export const Description = styled.p`
+export const Description = styled.div`
   font-size: ${fontSizes._24};
   line-height: 2rem;
   margin-top: 1.375rem;
