@@ -4,9 +4,10 @@ import { type MDXRemoteSerializeResult } from "next-mdx-remote"
 import Container from "@components/Container"
 import ContainerHeader from "@components/ContainerHeader"
 
+import { Card } from "../shared/Styles"
 import { TUseBlock } from "../types"
 
-import { Cards, Card, CardTitle, CardText } from "./Styles"
+import { Cards, CardTitle, CardText } from "./Styles"
 
 interface UseProps {
   title: string
@@ -21,7 +22,7 @@ const Use = ({ title, use_blocks, descriptionMdx }: UseProps): JSX.Element => {
       <Cards>
         {use_blocks.map(({ title, description, image, width, height }, index) => {
           return (
-            <Card key={index}>
+            <Card $padding="big" key={index}>
               <Image src={`/images/frontpage/${image}`} alt={title} width={width} height={height} />
               <div>
                 <CardTitle>{title}</CardTitle>

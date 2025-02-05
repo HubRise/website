@@ -4,6 +4,8 @@ import styled, { css } from "styled-components"
 import { BackgroundColor, bgColorMap, linkColorMap, linkOverColorMap } from "@components/Block/utils"
 import { breakpoints, colors, fontSizes, mixin, sizes } from "@utils/styles"
 
+type CardPadding = "small" | "big"
+
 const linkColors = (backgroundColor: BackgroundColor) => css`
   color: ${linkColorMap[backgroundColor]};
   ${mixin.linkOver(linkOverColorMap[backgroundColor])};
@@ -55,6 +57,19 @@ export const Description = styled.div`
     line-height: 1.875rem;
     margin-top: 1rem;
   }
+`
+
+export const Card = styled.div<{ $padding: CardPadding }>`
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.875rem;
+  background-color: ${colors.white};
+  padding: ${({ $padding }) => ($padding === "small" ? "1.5rem" : "2.5rem")};
+  box-shadow:
+    -5.1394px 48.8243px 19.2727px rgba(181, 181, 181, 0.01),
+    -2.5697px 26.9818px 16.703px rgba(181, 181, 181, 0.05),
+    -1.28485px 11.5636px 11.5636px rgba(181, 181, 181, 0.09),
+    0px 2.5697px 6.42424px rgba(181, 181, 181, 0.1);
 `
 
 export const ImageWithMargin = styled.div`
