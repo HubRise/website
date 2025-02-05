@@ -5,7 +5,9 @@ import Button from "@components/Button"
 import Container from "@components/Container"
 import useClientRoutes from "@hooks/client/useClientRoutes"
 
-import { ButtonWrapper, Description, Title } from "./Styles"
+import { Title, Description } from "../shared/Styles"
+
+import { ButtonWrapper } from "./Styles"
 
 interface PricingProps {
   title: {
