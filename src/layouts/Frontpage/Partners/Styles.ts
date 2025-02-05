@@ -12,6 +12,15 @@ export const Wrapper = styled.div`
   }
 `
 
+export const ImageWrapper = styled.div`
+  max-width: 44rem;
+  width: 100%;
+
+  img {
+    height: 100%;
+  }
+`
+
 export const ContentWrapper = styled.div`
   max-width: 61rem;
 
