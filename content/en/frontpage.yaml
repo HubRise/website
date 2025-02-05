@@ -143,9 +143,46 @@ content:
     button_link: link
     image: partners.png
 
-  join:
-    title: Ready to join the ecosystem?
-    button_label: Connect your app
-    button_url: /developers
-    link_label: Create free account
-    link_url: https://manager.hubrise.com/signup
+  testimonials:
+    title: Testimonials
+    testimonials:
+      - name: Jane Doe
+        job_title: Manager
+        logo: glovo.png
+        text: |
+          With HubRise, we were able to offer a fully branded integration experience without increasing our development workload. Our clients love having access to seamless integrations across multiple platforms, and we've saved countless hours in support.
+      - name: Renee Wells
+        job_title: General Manager
+        logo: talabat.png
+        text: |
+          HubRise's white-label integration solution has been a game changer for us. We added more integrations than we thought possible in a few months, and our clients feel like it's a native part of our product. It's truly made our platform more competitive!
+      - name: Renee Wells
+        job_title: General Manager
+        logo: talabat.png
+        text: |
+          HubRise's white-label integration solution has been a game changer for us. We added more integrations than we thought possible in a few months, and our clients feel like it's a native part of our product. It's truly made our platform more competitive!
+      - name: Renee Wells
+        job_title: General Manager
+        logo: sage.png
+        text: |
+          Our customers needed integration flexibility, but building each new connector was daunting. HubRise handled it all with ease. Their robust API and white-labeling options were exactly what we needed to stay ahead in the industry.
+      - name: Renee Wells
+        job_title: General Manager
+        logo: sage.png
+        text: |
+          Our customers needed integration flexibility, but building each new connector was daunting. HubRise handled it all with ease. Their robust API and white-labeling options were exactly what we needed to stay ahead in the industry.
+      - name: Jane Doe
+        job_title: Manager
+        logo: glovo.png
+        text: |
+          With HubRise, we were able to offer a fully branded integration experience without increasing our development workload. Our clients love having access to seamless integrations across multiple platforms, and we've saved countless hours in support.
+      - name: Jane Doe
+        job_title: Manager
+        logo: glovo.png
+        text: |
+          With HubRise, we were able to offer a fully branded integration experience without increasing our development workload. Our clients love having access to seamless integrations across multiple platforms, and we've saved countless hours in support.
+      - name: Renee Wells
+        job_title: General Manager
+        logo: talabat.png
+        text: |
+          HubRise's white-label integration solution has been a game changer for us. We added more integrations than we thought possible in a few months, and our clients feel like it's a native part of our product. It's truly made our platform more competitive!
