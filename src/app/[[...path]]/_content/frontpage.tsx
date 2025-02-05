@@ -8,10 +8,11 @@ import { Route, RouteName } from "@utils/router/types"
 const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Element> => {
   const yaml = route.context.yaml
 
-  const [heroDescriptionMdx, useDescriptionMdx, pricingDescriptionMdx] = await Promise.all([
+  const [heroDescriptionMdx, useDescriptionMdx, pricingDescriptionMdx, partnersDescriptionMdx] = await Promise.all([
     serializeFrontpage(yaml.hero.description),
     serializeFrontpage(yaml.content.use.description),
     serializeFrontpage(yaml.content.pricing.description),
+    serializeFrontpage(yaml.content.partners.description),
   ])
 
   return (
@@ -20,6 +21,7 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
       heroDescriptionMdx={heroDescriptionMdx}
       useDescriptionMdx={useDescriptionMdx}
       pricingDescriptionMdx={pricingDescriptionMdx}
+      partnersDescriptionMdx={partnersDescriptionMdx}
     />
   )
 }
