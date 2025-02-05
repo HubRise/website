@@ -33,6 +33,13 @@ export type TIntegrationApp = {
   button_link: string
 }
 
+export type TTestimonial = {
+  name: string
+  job_title: string
+  text: string
+  logo: string
+}
+
 export interface FrontpageYaml {
   path: string
   meta: {
@@ -77,12 +84,9 @@ export interface FrontpageYaml {
       button_link: string
       image: string
     }
-    join: {
+    testimonials: {
       title: string
-      button_label: string
-      button_url: string
-      link_label: string
-      link_url: string
+      testimonials: Array<TTestimonial>
     }
   }
 }
