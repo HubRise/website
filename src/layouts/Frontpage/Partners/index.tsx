@@ -9,7 +9,7 @@ import { iconSizes } from "@utils/styles"
 
 import { Description, Title } from "../shared/Styles"
 
-import { Wrapper, ContentWrapper } from "./Styles"
+import { Wrapper, ImageWrapper, ContentWrapper } from "./Styles"
 
 interface PartnersProps {
   title: string
@@ -23,7 +23,9 @@ const Partners = ({ title, descriptionMdx, button_label, button_link, image }: P
   return (
     <Container bgColor="green" verticalPadding="small">
       <Wrapper>
-        <Image src={`/images/frontpage/${image}`} alt={title} width={708} height={521} />
+        <ImageWrapper>
+          <Image src={`/images/frontpage/${image}`} alt={title} width={708} height={521} />
+        </ImageWrapper>
         <ContentWrapper>
           <Title>{title}</Title>
           <Description>
