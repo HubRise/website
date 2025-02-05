@@ -9,6 +9,7 @@ import Hero from "./Hero"
 import Integrations from "./Integrations"
 import Join from "./Join"
 import Metrics from "./Metrics"
+import Partners from "./Partners"
 import Pricing from "./Pricing"
 import Use from "./Use"
 
@@ -17,6 +18,7 @@ interface FrontpageProps {
   heroDescriptionMdx: MDXRemoteSerializeResult
   useDescriptionMdx: MDXRemoteSerializeResult
   pricingDescriptionMdx: MDXRemoteSerializeResult
+  partnersDescriptionMdx: MDXRemoteSerializeResult
 }
 
 const Frontpage = ({
@@ -24,6 +26,7 @@ const Frontpage = ({
   heroDescriptionMdx,
   useDescriptionMdx,
   pricingDescriptionMdx,
+  partnersDescriptionMdx,
 }: FrontpageProps): JSX.Element => {
   const { hero, content } = yaml
 
@@ -35,6 +38,7 @@ const Frontpage = ({
       <Use {...content.use} descriptionMdx={useDescriptionMdx} />
       <Pricing {...content.pricing} descriptionMdx={pricingDescriptionMdx} />
       <Integrations {...content.integrations} />
+      <Partners {...content.partners} descriptionMdx={partnersDescriptionMdx} />
       <Join {...content.join} />
     </>
   )

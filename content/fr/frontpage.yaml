@@ -134,6 +134,15 @@ content:
         button_label: Discover the HubRise Dashboard
         button_link: a
 
+  partners:
+    title: White Label for Resellers
+    description: |
+      Empower your clients with HubRise web apps tailored to your branding. Host them on your custom URL, with your logo, and colours. Provide your clients with tools to manage products or centralise orders, all branded with your identity. 
+      To find out more, check our Reller's page.
+    button_label: Check out Partner's page
+    button_link: link
+    image: partners.png
+
   join:
     title: Prêt à rejoindre l'écosystème ?
     button_label: Connecter votre app

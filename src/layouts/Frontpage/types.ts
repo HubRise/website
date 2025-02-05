@@ -70,6 +70,13 @@ export interface FrontpageYaml {
       title: string
       integration_apps: Array<TIntegrationApp>
     }
+    partners: {
+      title: string
+      description: string
+      button_label: string
+      button_link: string
+      image: string
+    }
     join: {
       title: string
       button_label: string
