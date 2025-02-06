@@ -89,7 +89,7 @@ Uber Eats Bridge maps HubRise deals to products with modifiers on Uber Eats.
 
 ### Images
 
-Uber Eats requires images to be 320x320 pixels.
+Menu item images on Uber Eats must have dimensions between 320x320 pixels and 6000x6000 pixels.
 
 ## Technical Reference
 

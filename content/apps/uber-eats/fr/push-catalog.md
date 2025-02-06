@@ -89,7 +89,7 @@ Uber Eats Bridge associe les promotions HubRise et les produits avec modificateu
 
 ### Images
 
-Uber Eats exige que les images soient au format 320x320 pixels.
+Les images de produits sur Uber Eats doivent avoir des dimensions entre 320x320 pixels et 6000x6000 pixels.
 
 ## Référence technique
 
