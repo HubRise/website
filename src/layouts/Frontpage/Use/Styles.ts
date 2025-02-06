@@ -16,6 +16,10 @@ export const Cards = styled.div`
   ${Card} {
     justify-content: space-between;
     text-align: center;
+
+    img {
+      margin: 0 auto;
+    }
   }
 
   @media (max-width: ${breakpoints.biggest}) {
