@@ -11,13 +11,14 @@ import Integrations from "./Integrations"
 import Metrics from "./Metrics"
 import Partners from "./Partners"
 import Pricing from "./Pricing"
+import Proposals from "./Proposals"
 import Testimonials from "./Testimonials"
-import Use from "./Use"
 
 interface FrontpageProps {
   yaml: FrontpageYaml
   heroDescriptionMdx: MDXRemoteSerializeResult
-  useDescriptionMdx: MDXRemoteSerializeResult
+  proposalsDescriptionMdx: MDXRemoteSerializeResult
+  proposalsImagesMap: ContentImageMap
   pricingDescriptionMdx: MDXRemoteSerializeResult
   partnersDescriptionMdx: MDXRemoteSerializeResult
   testimonialLogoMap: ContentImageMap
@@ -26,7 +27,8 @@ interface FrontpageProps {
 const Frontpage = ({
   yaml,
   heroDescriptionMdx,
-  useDescriptionMdx,
+  proposalsDescriptionMdx,
+  proposalsImagesMap,
   pricingDescriptionMdx,
   partnersDescriptionMdx,
   testimonialLogoMap,
@@ -38,7 +40,11 @@ const Frontpage = ({
       <Hero {...hero} descriptionMdx={heroDescriptionMdx} />
       <Metrics metrics={content.metrics} />
       <Apps />
-      <Use {...content.use} descriptionMdx={useDescriptionMdx} />
+      <Proposals
+        {...content.proposals}
+        descriptionMdx={proposalsDescriptionMdx}
+        proposalsImagesMap={proposalsImagesMap}
+      />
       <Pricing {...content.pricing} descriptionMdx={pricingDescriptionMdx} />
       <Integrations {...content.integrations} />
       <Partners {...content.partners} descriptionMdx={partnersDescriptionMdx} />

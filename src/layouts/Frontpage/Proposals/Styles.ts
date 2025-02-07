@@ -1,3 +1,4 @@
+import Image from "next/image"
 import styled from "styled-components"
 
 import { colors, fontSizes, breakpoints } from "@utils/styles"
@@ -52,4 +53,9 @@ export const CardText = styled.p`
     font-size: ${fontSizes._16};
     line-height: 1.5rem;
   }
+`
+
+export const CardImage = styled(Image)`
+  position: relative;
+  width: fit-content;
 `

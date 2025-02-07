@@ -1,29 +1,30 @@
-import Image from "next/image"
 import { type MDXRemoteSerializeResult } from "next-mdx-remote"
 
 import Container from "@components/Container"
 import ContainerHeader from "@components/ContainerHeader"
+import { ContentImageMap } from "@utils/contentImage"
 
 import { Card } from "../shared/Styles"
-import { TUseBlock } from "../types"
+import { TProposalCard } from "../types"
 
-import { Cards, CardTitle, CardText } from "./Styles"
+import { Cards, CardTitle, CardText, CardImage } from "./Styles"
 
-interface UseProps {
+interface ProposalsProps {
   title: string
-  use_blocks: Array<TUseBlock>
+  proposals_cards: Array<TProposalCard>
   descriptionMdx: MDXRemoteSerializeResult
+  proposalsImagesMap: ContentImageMap
 }
 
-const Use = ({ title, use_blocks, descriptionMdx }: UseProps): JSX.Element => {
+const Proposals = ({ title, proposals_cards, descriptionMdx, proposalsImagesMap }: ProposalsProps): JSX.Element => {
   return (
     <Container bgColor="backgroundLight" verticalPadding="big">
       <ContainerHeader title={title} descriptionMdx={descriptionMdx} />
       <Cards>
-        {use_blocks.map(({ title, description, image, width, height }, index) => {
+        {proposals_cards.map(({ title, description, image }, index) => {
           return (
             <Card $padding="big" key={index}>
-              <Image src={`/images/frontpage/${image}`} alt={title} width={width} height={height} />
+              <CardImage {...proposalsImagesMap[image]} alt={title} />
               <div>
                 <CardTitle>{title}</CardTitle>
                 <CardText>{description}</CardText>
@@ -36,4 +37,4 @@ const Use = ({ title, use_blocks, descriptionMdx }: UseProps): JSX.Element => {
   )
 }
 
-export default Use
+export default Proposals
