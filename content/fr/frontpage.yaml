@@ -37,47 +37,35 @@ content:
     - number: 2000
       title: Customers
 
-  use:
+  proposals:
     title: Use HubRise to Streamline Your Store Operations
     description: |
       Seamlessly connect with your preferred digital partners and sales channels while eliminating the hassle of managing product catalogs across multiple platforms. Centralise orders, customers, data, and analytics for streamlined operations in a tailored working environment.
-    use_blocks:
+    proposals_cards:
       - title: Connect Apps
         description: |
           Use HubRise to connect your EPOS as well as other solutions you use on your day to day operations : solutions, Delivery platforms, online ordering, kiosks, Inventory Management solutions and more.
         image: use-connect-apps.png
-        width: 436
-        height: 304
       - title: Manage Products
         description: |
           Centralise the management of your product catalogs in one app, for all sales channels and all locations. Products and prices might be different, even complex catalogs are supported.
         image: use-manage-products.png
-        width: 328
-        height: 291
       - title: Synchronise Inventory
         description: |
           Automatically update inventory or remove unavailable items across all sales channels via integration. If you don't keep track of inventory, snooze products for a short or an undetermined period.
         image: use-synchronise-inventory.png
-        width: 358
-        height: 291
       - title: Build a Customer Database
         description: |
           Collect, aggregate, and centralise customer information from all connected sales channels into a unified list. Effortlessly share this data with targeted marketing campaign apps to enhance customer engagement and increase loyalty.
         image: use-customer-database.png
-        width: 392
-        height: 291
       - title: Centralise Orders
         description: |
           Use HubRise to see and manage orders arriving from all your different sales channels into one app, change order statuses, see drivers approaching and print receipts.
         image: use-centralise-orders.png
-        width: 340
-        height: 291
       - title: Make informed decisions
         description: |
           Check aggregated sales data for all locations or per location, per sales channels, for the week, the month or any other custom period of time. Find out which products you sale most, and which peak production time to expect
         image: use-informed-decisions.png
-        width: 357
-        height: 291
 
   pricing:
     title:
