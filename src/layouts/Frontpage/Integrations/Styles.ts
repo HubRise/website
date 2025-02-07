@@ -1,6 +1,18 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
+import { SidePosition } from "@components/SideBlock/types"
 import { colors, fontSizes, mixin } from "@utils/styles"
+
+export const ContentWrapper = styled.div<{ $padding?: SidePosition }>`
+  ${({ $padding }) =>
+    $padding === "left"
+      ? css`
+          padding-left: 3.875rem;
+        `
+      : css`
+          padding-right: 3.875rem;
+        `}
+`
 
 export const Advantages = styled.div`
   display: flex;
