@@ -13,12 +13,10 @@ export type TApp = {
   color: HeroAppColor
 }
 
-export type TUseBlock = {
+export type TProposalCard = {
   title: string
   description: string
   image: string
-  width: number
-  height: number
 }
 
 export type TIntegrationApp = {
@@ -59,10 +57,10 @@ export interface FrontpageYaml {
   }
   content: {
     metrics: Array<TMetric>
-    use: {
+    proposals: {
       title: string
       description: string
-      use_blocks: Array<TUseBlock>
+      proposals_cards: Array<TProposalCard>
     }
     pricing: {
       title: {
