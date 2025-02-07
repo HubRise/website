@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18.17.1
-          cache: 'yarn'
+          cache: "yarn"
 
       - name: Install JS dependencies
         run: yarn install
@@ -35,7 +35,7 @@ jobs:
 
       - name: Upload Cypress artifacts
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: cypress-failures
           path: |
