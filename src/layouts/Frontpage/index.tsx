@@ -17,6 +17,7 @@ import Testimonials from "./Testimonials"
 interface FrontpageProps {
   yaml: FrontpageYaml
   heroDescriptionMdx: MDXRemoteSerializeResult
+  appLogosMap: ContentImageMap
   proposalsDescriptionMdx: MDXRemoteSerializeResult
   proposalsImagesMap: ContentImageMap
   pricingDescriptionMdx: MDXRemoteSerializeResult
@@ -27,6 +28,7 @@ interface FrontpageProps {
 const Frontpage = ({
   yaml,
   heroDescriptionMdx,
+  appLogosMap,
   proposalsDescriptionMdx,
   proposalsImagesMap,
   pricingDescriptionMdx,
@@ -39,7 +41,7 @@ const Frontpage = ({
     <>
       <Hero {...hero} descriptionMdx={heroDescriptionMdx} />
       <Metrics metrics={content.metrics} />
-      <Apps />
+      <Apps apps={content.apps} appLogosMap={appLogosMap} />
       <Proposals
         {...content.proposals}
         descriptionMdx={proposalsDescriptionMdx}

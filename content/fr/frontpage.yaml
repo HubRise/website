@@ -37,6 +37,163 @@ content:
     - number: 2000
       title: Customers
 
+  apps:
+    - column:
+        - logo: 1bot.png
+        - logo: 3spos.png
+        - logo: adipos.png
+    - column:
+        - logo: akk-softtech.png
+        - logo: apicbase.png
+        - logo: app4.png
+    - column:
+        - logo: aquila-cms.png
+        - logo: barratio.png
+        - logo: biteberry.png
+    - column:
+        - logo: captain.png
+        - logo: carrepos.png
+        - logo: catalog-manager.png
+    - column:
+        - logo: clyo.png
+        - logo: como.png
+        - logo: coursicab.png
+    - column:
+        - logo: delicity.png
+        - logo: deliveroo-test.png
+        - logo: deliveroo.png
+    - column:
+        - logo: delivery-hero.png
+        - logo: dishop.png
+        - logo: dood.png
+    - column:
+        - logo: dotdigital.png
+        - logo: eat.png
+        - logo: eddress.png
+    - column:
+        - logo: emma.png
+        - logo: epostechnologies.png
+        - logo: etakeawaymax.png
+    - column:
+        - logo: expedy-print.png
+        - logo: foodpanda.png
+        - logo: foodreport.png
+    - column:
+        - logo: french-caisse.png
+        - logo: glovo.png
+        - logo: gonnaorder.png
+    - column:
+        - logo: hop-delivery.png
+        - logo: iiko.png
+        - logo: inpulse.png
+    - column:
+        - logo: jalia.png
+        - logo: just-eat.png
+        - logo: kezia.png
+    - column:
+        - logo: koust.png
+        - logo: kurvekiosks.png
+        - logo: la-toque-magique.png
+    - column:
+        - logo: leo2.png
+        - logo: lieferando.png
+        - logo: lightspeed-restaurant.png
+    - column:
+        - logo: livepepper.png
+        - logo: locatouch.png
+        - logo: mailchimp.png
+    - column:
+        - logo: mealenium.png
+        - logo: melba.png
+        - logo: menulog.png
+    - column:
+        - logo: miipos.png
+        - logo: my-lemonade.png
+        - logo: mynober.png
+    - column:
+        - logo: myorderbox.png
+        - logo: nestor.png
+        - logo: netfood.png
+    - column:
+        - logo: next-order.png
+        - logo: nextsourcia.png
+        - logo: notavailable.png
+    - column:
+        - logo: obypay.png
+        - logo: orderline.png
+        - logo: orderlord.png
+    - column:
+        - logo: orderwire.png
+        - logo: orkestro.png
+        - logo: panda-epos.png
+    - column:
+        - logo: par-pixelpoint-web-api.png
+        - logo: par-pixelpoint.png
+        - logo: pointone.png
+    - column:
+        - logo: popina.png
+        - logo: pos-helper.png
+        - logo: postmates.png
+    - column:
+        - logo: prestashop.png
+        - logo: pyszne.png
+        - logo: quantum.png
+    - column:
+        - logo: qwenta.png
+        - logo: rapidbar.png
+        - logo: restajet.png
+    - column:
+        - logo: restaur-app.png
+        - logo: restaurant-internet.png
+        - logo: restaurant-manager.png
+    - column:
+        - logo: sage.png
+        - logo: sailplay.png
+        - logo: sato.png
+    - column:
+        - logo: seconds.png
+        - logo: servier-bar.png
+        - logo: shopify.png
+    - column:
+        - logo: sicom.png
+        - logo: skipthedishes.png
+        - logo: smartresto.png
+    - column:
+        - logo: smg.png
+        - logo: smilein.png
+        - logo: smood.png
+    - column:
+        - logo: somm-it.png
+        - logo: stocktake-online.png
+        - logo: storefactory.png
+    - column:
+        - logo: stuart.png
+        - logo: superdigital.png
+        - logo: swoopos.png
+    - column:
+        - logo: synapsy.png
+        - logo: takeaway.png
+        - logo: talabat.png
+    - column:
+        - logo: talc.png
+        - logo: task.png
+        - logo: tastycloud.png
+    - column:
+        - logo: thuisbezorgd.png
+        - logo: tickeat.png
+        - logo: tickncook.png
+    - column:
+        - logo: trapar.png
+        - logo: ubereats.png
+        - logo: ultimapos.png
+    - column:
+        - logo: upxp.png
+        - logo: woocommerce.png
+        - logo: zelty.png
+    - column:
+        - logo: zenorder.png
+        - logo: zuplyit.png
+
   proposals:
     title: Use HubRise to Streamline Your Store Operations
     description: |
@@ -131,9 +288,46 @@ content:
     button_link: link
     image: partners.png
 
-  join:
-    title: Prêt à rejoindre l'écosystème ?
-    button_label: Connecter votre app
-    button_url: /fr/developers
-    link_label: Créer un compte gratuit
-    link_url: https://manager.hubrise.com/signup
+  testimonials:
+    title: Testimonials
+    testimonials:
+      - name: Jane Doe
+        job_title: Manager
+        logo: glovo.png
+        text: |
+          With HubRise, we were able to offer a fully branded integration experience without increasing our development workload. Our clients love having access to seamless integrations across multiple platforms, and we've saved countless hours in support.
+      - name: Renee Wells
+        job_title: General Manager
+        logo: talabat.png
+        text: |
+          HubRise's white-label integration solution has been a game changer for us. We added more integrations than we thought possible in a few months, and our clients feel like it's a native part of our product. It's truly made our platform more competitive!
+      - name: Renee Wells
+        job_title: General Manager
+        logo: talabat.png
+        text: |
+          HubRise's white-label integration solution has been a game changer for us. We added more integrations than we thought possible in a few months, and our clients feel like it's a native part of our product. It's truly made our platform more competitive!
+      - name: Renee Wells
+        job_title: General Manager
+        logo: sage.png
+        text: |
+          Our customers needed integration flexibility, but building each new connector was daunting. HubRise handled it all with ease. Their robust API and white-labeling options were exactly what we needed to stay ahead in the industry.
+      - name: Renee Wells
+        job_title: General Manager
+        logo: sage.png
+        text: |
+          Our customers needed integration flexibility, but building each new connector was daunting. HubRise handled it all with ease. Their robust API and white-labeling options were exactly what we needed to stay ahead in the industry.
+      - name: Jane Doe
+        job_title: Manager
+        logo: glovo.png
+        text: |
+          With HubRise, we were able to offer a fully branded integration experience without increasing our development workload. Our clients love having access to seamless integrations across multiple platforms, and we've saved countless hours in support.
+      - name: Jane Doe
+        job_title: Manager
+        logo: glovo.png
+        text: |
+          With HubRise, we were able to offer a fully branded integration experience without increasing our development workload. Our clients love having access to seamless integrations across multiple platforms, and we've saved countless hours in support.
+      - name: Renee Wells
+        job_title: General Manager
+        logo: talabat.png
+        text: |
+          HubRise's white-label integration solution has been a game changer for us. We added more integrations than we thought possible in a few months, and our clients feel like it's a native part of our product. It's truly made our platform more competitive!
