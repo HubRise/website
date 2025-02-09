@@ -19,7 +19,7 @@ export const Container = styled.div<{ $side: SidePosition }>`
     $side === "left"
       ? css`
           margin-right: auto;
-          border-radius: 0px 14px 14px 0px;
+          border-radius: 0px 0.875rem 0.875rem 0px;
 
           ${Content} {
             margin-left: auto;
@@ -27,7 +27,7 @@ export const Container = styled.div<{ $side: SidePosition }>`
         `
       : css`
           margin-left: auto;
-          border-radius: 14px 0px 0px 14px;
+          border-radius: 0.875rem 0px 0px 0.875rem;
         `}
 `
 
