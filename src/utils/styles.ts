@@ -164,6 +164,7 @@ export const mixin = {
 }
 
 export const zIndexValues = {
+  appsLogosGradient: 9,
   header: 10,
   mobileBarBackdrop: 20,
   mobileBarMenu: 30,

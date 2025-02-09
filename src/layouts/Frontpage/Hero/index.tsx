@@ -5,7 +5,7 @@ import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 import Button from "@components/Button"
 import useClientRoutes from "@hooks/client/useClientRoutes"
 
-import { TApp } from "../types"
+import { THeroApp } from "../types"
 
 import { Container, Title, TitleHighlight, Description, Apps, AppWrapper, AppInner, App } from "./Styles"
 import { getHeroAppsImageSource } from "./utils"
@@ -18,7 +18,7 @@ interface HeroProps {
     highlight2: string
   }
   button_label: string
-  apps: Array<TApp>
+  apps: Array<THeroApp>
   descriptionMdx: MDXRemoteSerializeResult
 }
 

@@ -10,9 +10,12 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
   const yaml = route.context.yaml
   const testimonialLogos: string[] = yaml.content.testimonials.testimonials.map((testimonial) => testimonial.logo)
   const proposalsImages: string[] = yaml.content.proposals.proposals_cards.map((proposal) => proposal.image)
+  const appLogos: Array<string> = []
+  yaml.content.apps.forEach(({ column }) => column.map((logo) => appLogos.push(logo.logo)))
 
   const [
     heroDescriptionMdx,
+    appLogosMap,
     proposalsDescriptionMdx,
     proposalsImagesMap,
     pricingDescriptionMdx,
@@ -20,6 +23,7 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
     testimonialLogoMap,
   ] = await Promise.all([
     serializeFrontpage(yaml.hero.description),
+    contentImageMap("/images/app-logos", appLogos),
     serializeFrontpage(yaml.content.proposals.description),
     contentImageMap("/images/proposals", proposalsImages),
     serializeFrontpage(yaml.content.pricing.description),
@@ -31,6 +35,7 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
     <Frontpage
       yaml={yaml}
       heroDescriptionMdx={heroDescriptionMdx}
+      appLogosMap={appLogosMap}
       proposalsDescriptionMdx={proposalsDescriptionMdx}
       proposalsImagesMap={proposalsImagesMap}
       pricingDescriptionMdx={pricingDescriptionMdx}
