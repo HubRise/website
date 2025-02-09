@@ -7,7 +7,7 @@ export type TMetric = {
   title: string
 }
 
-export type TApp = {
+export type THeroApp = {
   title: string
   type: string
   color: HeroAppColor
@@ -38,6 +38,12 @@ export type TTestimonial = {
   logo: string
 }
 
+export type TApp = {
+  column: Array<{
+    logo: string
+  }>
+}
+
 export interface FrontpageYaml {
   path: string
   meta: {
@@ -53,10 +59,11 @@ export interface FrontpageYaml {
     }
     description: string
     button_label: string
-    apps: Array<TApp>
+    apps: Array<THeroApp>
   }
   content: {
     metrics: Array<TMetric>
+    apps: Array<TApp>
     proposals: {
       title: string
       description: string
