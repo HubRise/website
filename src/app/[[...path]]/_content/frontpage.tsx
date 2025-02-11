@@ -9,23 +9,22 @@ import { Route, RouteName } from "@utils/router/types"
 const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Element> => {
   const yaml = route.context.yaml
   const testimonialLogos: string[] = yaml.content.testimonials.testimonials.map((testimonial) => testimonial.logo)
-  const proposalsImages: string[] = yaml.content.proposals.proposals_cards.map((proposal) => proposal.image)
-  const appLogos: Array<string> = []
-  yaml.content.apps.forEach(({ column }) => column.map((logo) => appLogos.push(logo.logo)))
+  const featuresImages: string[] = yaml.content.features.features_cards.map((feature) => feature.image)
+  const appLogos: Array<string> = yaml.content.apps.map(({ logo }) => logo)
 
   const [
     heroDescriptionMdx,
     appLogosMap,
-    proposalsDescriptionMdx,
-    proposalsImagesMap,
+    featuresDescriptionMdx,
+    featuresImagesMap,
     pricingDescriptionMdx,
     partnersDescriptionMdx,
     testimonialLogoMap,
   ] = await Promise.all([
     serializeFrontpage(yaml.hero.description),
     contentImageMap("/images/app-logos", appLogos),
-    serializeFrontpage(yaml.content.proposals.description),
-    contentImageMap("/images/proposals", proposalsImages),
+    serializeFrontpage(yaml.content.features.description),
+    contentImageMap("/images/proposals", featuresImages),
     serializeFrontpage(yaml.content.pricing.description),
     serializeFrontpage(yaml.content.partners.description),
     contentImageMap("/images/app-logos", testimonialLogos),
@@ -36,8 +35,8 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
       yaml={yaml}
       heroDescriptionMdx={heroDescriptionMdx}
       appLogosMap={appLogosMap}
-      proposalsDescriptionMdx={proposalsDescriptionMdx}
-      proposalsImagesMap={proposalsImagesMap}
+      featuresDescriptionMdx={featuresDescriptionMdx}
+      featuresImagesMap={featuresImagesMap}
       pricingDescriptionMdx={pricingDescriptionMdx}
       partnersDescriptionMdx={partnersDescriptionMdx}
       testimonialLogoMap={testimonialLogoMap}

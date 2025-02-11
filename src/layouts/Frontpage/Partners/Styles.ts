@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   gap: 2rem;
 
   @media (min-width: ${breakpoints.large}) {
-    margin-bottom: -3.875rem;
+    margin-bottom: -3.5rem;
     flex-direction: row;
     align-items: normal;
     gap: 0;
@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
 `
 
 export const ImageWrapper = styled.div`
-  max-width: 44rem;
+  max-width: 45rem;
   width: 100%;
   position: relative;
 
@@ -27,7 +27,7 @@ export const ImageWrapper = styled.div`
   }
 
   @media (min-width: ${breakpoints.large}) {
-    left: -3.875rem;
+    left: -3.5rem;
     bottom: -3rem;
     margin-top: -3rem;
   }
@@ -38,11 +38,11 @@ export const ImageWrapper = styled.div`
 `
 
 export const ContentWrapper = styled.div`
-  max-width: 46rem;
+  max-width: 45rem;
   text-align: center;
 
   p:last-child {
-    margin-top: 1.375rem;
+    margin-top: 1.25rem;
   }
 
   ${ButtonStyles} {
@@ -58,7 +58,7 @@ export const ContentWrapper = styled.div`
   }
 
   @media (min-width: ${breakpoints.large}) {
-    padding-bottom: 3.875rem;
+    padding-bottom: 3.5rem;
     text-align: left;
 
     ${ButtonStyles} {
@@ -68,6 +68,6 @@ export const ContentWrapper = styled.div`
   }
 
   @media (min-width: ${breakpoints.biggest}) {
-    max-width: 61rem;
+    max-width: 60rem;
   }
 `

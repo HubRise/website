@@ -2,7 +2,7 @@ import Link from "next/link"
 import styled, { css } from "styled-components"
 
 import { BackgroundColor, bgColorMap, linkColorMap, linkOverColorMap } from "@components/Block/utils"
-import { breakpoints, colors, fontSizes, mixin, sizes } from "@utils/styles"
+import { boxShadows, breakpoints, colors, fontSizes, mixin, sizes } from "@utils/styles"
 
 type CardPadding = "small" | "big"
 
@@ -33,10 +33,6 @@ export const Title = styled.h2`
   line-height: 2.75rem;
   font-weight: 600;
 
-  span {
-    font-size: ${fontSizes._42};
-  }
-
   @media (min-width: ${breakpoints.large}) {
     font-size: 2.25rem;
   }
@@ -44,7 +40,13 @@ export const Title = styled.h2`
   @media (min-width: ${breakpoints.biggest}) {
     font-size: ${fontSizes._42};
     line-height: 3.75rem;
+  }
+`
 
+export const TitleHighlight = styled.span`
+  font-size: ${fontSizes._42};
+
+  @media (min-width: ${breakpoints.biggest}) {
     span {
       font-size: 3.75rem;
     }
@@ -55,7 +57,7 @@ export const Description = styled.div`
   margin-top: 1rem;
 
   @media (min-width: ${breakpoints.biggest}) {
-    margin-top: 1.375rem;
+    margin-top: 1.25rem;
   }
 
   p {
@@ -80,11 +82,7 @@ export const Card = styled.div<{ $padding: CardPadding }>`
   border-radius: 0.875rem;
   background-color: ${colors.white};
   padding: ${({ $padding }) => ($padding === "small" ? "1.5rem" : "1.875rem 0.875rem")};
-  box-shadow:
-    -5.1394px 48.8243px 19.2727px rgba(181, 181, 181, 0.01),
-    -2.5697px 26.9818px 16.703px rgba(181, 181, 181, 0.05),
-    -1.28485px 11.5636px 11.5636px rgba(181, 181, 181, 0.09),
-    0px 2.5697px 6.42424px rgba(181, 181, 181, 0.1);
+  box-shadow: ${boxShadows.card};
 
   @media (min-width: ${breakpoints.large}) {
     padding: ${({ $padding }) => ($padding === "small" ? "1.5rem" : "2.5rem")};

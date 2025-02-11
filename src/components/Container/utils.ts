@@ -12,8 +12,8 @@ const linkContainerBgColorMap: ContainerBgColorMap = {
 }
 
 const linkContainerVerticalPaddingMap: ContainerVerticalPaddingMap = {
-  small: "3.875rem 0",
-  big: "5.75rem 0",
+  small: "3.5rem 0",
+  big: "5.5rem 0",
 }
 
 export const linkContainerBgColor = (bgColor: ContainerBgColor) => linkContainerBgColorMap[bgColor]

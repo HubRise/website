@@ -3,14 +3,14 @@ import styled from "styled-components"
 import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
 export const Wrapper = styled.div`
-  max-width: 67rem;
+  max-width: 65rem;
   margin: 0 auto;
   position: relative;
   padding-bottom: 1.25rem;
   ${mixin.headerBottomLine("center")}
 
   @media (min-width: ${breakpoints.biggest}) {
-    max-width: 82rem;
+    max-width: 80rem;
   }
 `
 
@@ -33,7 +33,7 @@ export const Title = styled.h2`
 `
 
 export const Description = styled.div`
-  margin: 1.375rem auto 0;
+  margin: 1.25rem auto 0;
 
   p {
     font-size: ${fontSizes._16};

@@ -38,17 +38,19 @@ export const Cards = styled.div`
   }
 `
 
+export const CardContent = styled.div``
+
 export const CardTitle = styled.h4`
   font-size: ${fontSizes._20};
   font-weight: 600;
   line-height: 1.875rem;
   color: ${colors.textDarkest};
-  margin-top: 1.375rem;
+  margin-top: 1.25rem;
 
   @media (min-width: ${breakpoints.biggest}) {
     font-size: ${fontSizes._24};
     line-height: 2rem;
-    margin-top: 1.875rem;
+    margin-top: 1.5rem;
   }
 `
 
