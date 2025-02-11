@@ -7,7 +7,7 @@ import { Card } from "../shared/Styles"
 
 export const TestimonialsWrapper = styled.div`
   max-width: ${breakpoints.biggest};
-  margin: 3.875rem auto 0;
+  margin: 3.5rem auto 0;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;

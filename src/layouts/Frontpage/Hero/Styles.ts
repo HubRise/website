@@ -8,7 +8,7 @@ import { HeroAppColor, linkHeroAppBorderColor } from "./utils"
 export const Container = styled.div`
   position: relative;
   background-color: ${colors.backgroundLightest};
-  padding: 3.875rem 1rem;
+  padding: 3.5rem 1rem;
   text-align: center;
 
   & > a {
@@ -27,7 +27,7 @@ export const Container = styled.div`
   }
 
   @media (min-width: ${breakpoints.large}) {
-    padding: 5.75rem 1rem;
+    padding: 5.5rem 1rem;
   }
 `
 
@@ -36,7 +36,7 @@ export const Title = styled.h1`
   color: ${colors.textDarkest};
   font-size: ${fontSizes._32};
   line-height: 2.5rem;
-  max-width: 66rem;
+  max-width: 65rem;
   margin: 0 auto;
 
   @media (min-width: ${breakpoints.large}) {
@@ -55,7 +55,7 @@ export const TitleHighlight = styled.span`
 `
 
 export const Description = styled.div`
-  max-width: 43rem;
+  max-width: 45rem;
   margin: 0.75rem auto 0;
 
   @media (min-width: ${breakpoints.large}) {
@@ -80,7 +80,7 @@ export const Description = styled.div`
 
 export const Apps = styled.div`
   max-width: 23.5rem;
-  margin: 3.875rem auto 1.875rem;
+  margin: 3.5rem auto 1.875rem;
   display: flex;
   flex-wrap: wrap;
   row-gap: 2.875rem;

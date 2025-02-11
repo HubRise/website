@@ -10,7 +10,7 @@ export const ContainerStyles = styled.div<{
   $textCentered: boolean
 }>`
   background-color: ${({ $bgColor }) => linkContainerBgColor($bgColor)};
-  padding: 3.875rem 1rem;
+  padding: 3.5rem 1rem;
   color: ${({ $bgColor }) => ($bgColor === "green" ? `${colors.white}` : "inherit")};
   text-align: ${({ $textCentered }) => ($textCentered ? "center" : "initial")};
   overflow: hidden;
