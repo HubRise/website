@@ -5,7 +5,7 @@ import { ContentImageMap } from "@utils/contentImage"
 
 import { TApp } from "../types"
 
-import { Container, InnerContainer, LogoContainer, AppCardsColumn, AppCard } from "./Styles"
+import { Container, InnerContainer, LogoContainer, AppCard } from "./Styles"
 
 interface AppsProps {
   apps: Array<TApp>
@@ -26,22 +26,16 @@ const Apps = ({ apps, appLogosMap }: AppsProps): JSX.Element => {
   return (
     <Container>
       <InnerContainer ref={innerContainerWidth}>
-        <LogoContainer ref={logoContainerWidth} $moveShift={moveShiftWidth}>
-          {apps.map(({ column }, index) => {
+        <LogoContainer ref={logoContainerWidth} $moveShift={moveShiftWidth} $nbCards={apps.length}>
+          {apps.map(({ logo }, index) => {
             return (
-              <AppCardsColumn key={index}>
-                {column.map(({ logo }, index) => {
-                  return (
-                    <AppCard key={index}>
-                      <Image
-                        style={{ maxHeight: "100%" }}
-                        {...appLogosMap[logo]}
-                        alt={logo.substring(0, logo.length - 4)}
-                      ></Image>
-                    </AppCard>
-                  )
-                })}
-              </AppCardsColumn>
+              <AppCard key={index}>
+                <Image
+                  style={{ maxHeight: "100%" }}
+                  {...appLogosMap[logo]}
+                  alt={logo.substring(0, logo.length - 4)}
+                ></Image>
+              </AppCard>
             )
           })}
         </LogoContainer>

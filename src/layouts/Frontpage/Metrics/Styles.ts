@@ -12,11 +12,11 @@ export const Wrapper = styled.div`
   }
 
   @media (min-width: ${breakpoints.large}) {
-    column-gap: 2.875rem;
+    column-gap: 3rem;
   }
 
   @media (min-width: ${breakpoints.biggest}) {
-    column-gap: 3.875rem;
+    column-gap: 3.5rem;
   }
 `
 
@@ -31,7 +31,7 @@ export const Number = styled.span`
   font-size: ${fontSizes._24};
   line-height: 2rem;
   font-weight: 600;
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.5rem;
 
   @media (min-width: ${breakpoints.large}) {
     font-size: 3.375rem;

@@ -6,20 +6,20 @@ import { FrontpageYaml } from "@layouts/Frontpage/types"
 import { ContentImageMap } from "@utils/contentImage"
 
 import Apps from "./Apps"
+import Features from "./Features"
 import Hero from "./Hero"
 import Integrations from "./Integrations"
 import Metrics from "./Metrics"
 import Partners from "./Partners"
 import Pricing from "./Pricing"
-import Proposals from "./Proposals"
 import Testimonials from "./Testimonials"
 
 interface FrontpageProps {
   yaml: FrontpageYaml
   heroDescriptionMdx: MDXRemoteSerializeResult
   appLogosMap: ContentImageMap
-  proposalsDescriptionMdx: MDXRemoteSerializeResult
-  proposalsImagesMap: ContentImageMap
+  featuresDescriptionMdx: MDXRemoteSerializeResult
+  featuresImagesMap: ContentImageMap
   pricingDescriptionMdx: MDXRemoteSerializeResult
   partnersDescriptionMdx: MDXRemoteSerializeResult
   testimonialLogoMap: ContentImageMap
@@ -29,8 +29,8 @@ const Frontpage = ({
   yaml,
   heroDescriptionMdx,
   appLogosMap,
-  proposalsDescriptionMdx,
-  proposalsImagesMap,
+  featuresDescriptionMdx,
+  featuresImagesMap,
   pricingDescriptionMdx,
   partnersDescriptionMdx,
   testimonialLogoMap,
@@ -42,11 +42,7 @@ const Frontpage = ({
       <Hero {...hero} descriptionMdx={heroDescriptionMdx} />
       <Metrics metrics={content.metrics} />
       <Apps apps={content.apps} appLogosMap={appLogosMap} />
-      <Proposals
-        {...content.proposals}
-        descriptionMdx={proposalsDescriptionMdx}
-        proposalsImagesMap={proposalsImagesMap}
-      />
+      <Features {...content.features} descriptionMdx={featuresDescriptionMdx} featuresImagesMap={featuresImagesMap} />
       <Pricing {...content.pricing} descriptionMdx={pricingDescriptionMdx} />
       <Integrations {...content.integrations} />
       <Partners {...content.partners} descriptionMdx={partnersDescriptionMdx} />
