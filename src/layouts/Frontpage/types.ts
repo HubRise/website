@@ -13,7 +13,7 @@ export type THeroApp = {
   color: HeroAppColor
 }
 
-export type TProposalCard = {
+export type TFeatureCard = {
   title: string
   description: string
   image: string
@@ -39,9 +39,7 @@ export type TTestimonial = {
 }
 
 export type TApp = {
-  column: Array<{
-    logo: string
-  }>
+  logo: string
 }
 
 export interface FrontpageYaml {
@@ -64,10 +62,10 @@ export interface FrontpageYaml {
   content: {
     metrics: Array<TMetric>
     apps: Array<TApp>
-    proposals: {
+    features: {
       title: string
       description: string
-      proposals_cards: Array<TProposalCard>
+      features_cards: Array<TFeatureCard>
     }
     pricing: {
       title: {

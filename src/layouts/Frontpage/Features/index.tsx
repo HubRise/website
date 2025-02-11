@@ -5,30 +5,30 @@ import ContainerHeader from "@components/ContainerHeader"
 import { ContentImageMap } from "@utils/contentImage"
 
 import { Card } from "../shared/Styles"
-import { TProposalCard } from "../types"
+import { TFeatureCard } from "../types"
 
-import { Cards, CardTitle, CardText, CardImage } from "./Styles"
+import { Cards, CardContent, CardTitle, CardText, CardImage } from "./Styles"
 
-interface ProposalsProps {
+interface FeaturesProps {
   title: string
-  proposals_cards: Array<TProposalCard>
+  features_cards: Array<TFeatureCard>
   descriptionMdx: MDXRemoteSerializeResult
-  proposalsImagesMap: ContentImageMap
+  featuresImagesMap: ContentImageMap
 }
 
-const Proposals = ({ title, proposals_cards, descriptionMdx, proposalsImagesMap }: ProposalsProps): JSX.Element => {
+const Features = ({ title, features_cards, descriptionMdx, featuresImagesMap }: FeaturesProps): JSX.Element => {
   return (
     <Container bgColor="backgroundLight" verticalPadding="big">
       <ContainerHeader title={title} descriptionMdx={descriptionMdx} />
       <Cards>
-        {proposals_cards.map(({ title, description, image }, index) => {
+        {features_cards.map(({ title, description, image }, index) => {
           return (
             <Card $padding="big" key={index}>
-              <CardImage {...proposalsImagesMap[image]} alt={title} />
-              <div>
+              <CardImage {...featuresImagesMap[image]} alt={title} />
+              <CardContent>
                 <CardTitle>{title}</CardTitle>
                 <CardText>{description}</CardText>
-              </div>
+              </CardContent>
             </Card>
           )
         })}
@@ -37,4 +37,4 @@ const Proposals = ({ title, proposals_cards, descriptionMdx, proposalsImagesMap 
   )
 }
 
-export default Proposals
+export default Features

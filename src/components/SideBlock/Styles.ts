@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components"
 
-import { breakpoints, colors } from "@utils/styles"
+import { boxShadows, breakpoints, colors } from "@utils/styles"
 
 import { SidePosition } from "./types"
 
@@ -8,18 +8,14 @@ export const Container = styled.div<{ $side: SidePosition }>`
   background-color: ${colors.white};
   padding: 1rem;
   border-radius: 0.875rem;
-  box-shadow:
-    -4.61656px 43.8573px 17.3121px rgba(181, 181, 181, 0.01),
-    -2.30828px 24.2369px 15.0038px rgba(181, 181, 181, 0.05),
-    -1.15414px 10.3873px 10.3873px rgba(181, 181, 181, 0.09),
-    0px 2.30828px 5.7707px rgba(181, 181, 181, 0.1);
+  box-shadow: ${boxShadows.card};
 
   @media (min-width: ${breakpoints.medium}) {
     padding: 1.5rem;
   }
 
   @media (min-width: ${breakpoints.large}) {
-    padding: 3.875rem 0;
+    padding: 3.5rem 0;
     max-width: 90%;
     width: -moz-available;
     width: -webkit-fill-available;
@@ -66,7 +62,7 @@ export const Content = styled.div<{ $secondaryPosition: SidePosition }>`
   @media (min-width: ${breakpoints.large}) {
     display: grid;
     gap: 4.5rem;
-    max-width: 102rem;
+    max-width: 100rem;
     align-items: center;
     padding: 0 3rem;
 

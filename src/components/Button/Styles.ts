@@ -3,15 +3,15 @@ import styled from "styled-components"
 
 import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
-import { ButtonType, linklinkButtonBgColor, linklinkButtonColor } from "./utils"
+import { ButtonType, linkButtonBgColor, linkButtonColor } from "./utils"
 
 export const ButtonStyles = styled(Link)<{ $type: ButtonType }>`
   ${mixin.centerElement}
   width: fit-content;
   height: 3rem;
   line-height: 3rem;
-  background-color: ${({ $type }) => linklinkButtonBgColor($type)};
-  color: ${({ $type }) => linklinkButtonColor($type)};
+  background-color: ${({ $type }) => linkButtonBgColor($type)};
+  color: ${({ $type }) => linkButtonColor($type)};
   font-size: ${fontSizes._16};
   font-weight: 600;
   border-radius: 0.5rem;
