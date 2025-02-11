@@ -84,6 +84,12 @@ export const boxShadows = {
   image: `0 0 5px rgba(0, 0, 0, 0.05)`,
   medium: `0 5px 10px rgba(0, 0, 0, 0.1)`,
   large: `5px 10px 15px rgba(0, 0, 0, 0.15)`,
+  card: `
+    -5px 49px 19px #b5b5b503,
+    -2.5px 27px 17px #b5b5b50d,
+    -1px 12px 12px #b5b5b517,
+    0px 2.5px 6.5px #b5b5b51a;
+  `,
 }
 
 export const mixin = {

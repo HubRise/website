@@ -11,7 +11,7 @@ interface ButtonProps {
 const Button = ({ label, link, type = "primary", icon }: ButtonProps) => (
   <ButtonStyles href={link} $type={type}>
     {label}
-    {icon && icon}
+    {icon}
   </ButtonStyles>
 )
 

@@ -5,7 +5,7 @@ import Button from "@components/Button"
 import Container from "@components/Container"
 import useClientRoutes from "@hooks/client/useClientRoutes"
 
-import { Title, Description } from "../shared/Styles"
+import { Title, TitleHighlight, Description } from "../shared/Styles"
 
 import { ButtonWrapper } from "./Styles"
 
@@ -26,7 +26,7 @@ const Pricing = ({ title, button_label, descriptionMdx }: PricingProps) => {
     <Container bgColor="green" verticalPadding="small" isTextCentered={true}>
       <Title>
         {title.start}
-        <span> {title.price} </span>
+        <TitleHighlight> {title.price} </TitleHighlight>
         {title.end}
       </Title>
       <Description>
