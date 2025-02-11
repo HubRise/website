@@ -2,7 +2,7 @@
 
 describe("Pages", () => {
   ;[
-    ["/", "Integration for retail"],
+    ["/", "Seamless Integration for Restaurants and Retail"],
     ["/apps", "Integrated Apps", "LivePepper"],
     ["/pricing", "Fair Pricing"],
     ["/blog", "The HubRise Blog"],
@@ -11,7 +11,7 @@ describe("Pages", () => {
     ["/apps/livepepper/connect-hubrise", "Connect to HubRise"],
     ["/developers", "Quick Start"],
     ["/developers/api/accounts", "Locations, Accounts and Users"],
-    ["/fr", "Intégration pour le commerce"],
+    ["/fr", "Seamless Integration for Restaurants and Retail"], // TODO: Need to translate
     ["/fr/apps", "Applications intégrées"],
   ].forEach(([page, ...keywords]) => {
     it(`renders ${page}`, () => {

@@ -16,7 +16,11 @@ const move = (moveShift: number) => keyframes`
 
 export const Container = styled.div`
   background-color: #fdfdfd;
-  padding: 5.625rem 0;
+  padding: 2rem 0;
+
+  @media (min-width: ${breakpoints.large}) {
+    padding: 5.625rem 0;
+  }
 `
 
 export const InnerContainer = styled.div`
@@ -81,7 +85,12 @@ export const AppCard = styled.div`
     0px 2.70423px 6.76056px rgba(181, 181, 181, 0.1);
   background-color: ${colors.white};
   border-radius: 0.875rem;
-  width: 8.5rem;
-  height: 8.5rem;
+  width: 6.25rem;
+  height: 6.25rem;
   padding: 1.5rem 0.75rem;
+
+  @media (min-width: ${breakpoints.biggest}) {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
 `
