@@ -16,5 +16,5 @@ const linkButtonColorMap: ButtonTypeMap = {
   tertiary: colors.textDark,
 }
 
-export const linklinkButtonBgColor = (type: ButtonType) => linkButtonBgColorMap[type]
-export const linklinkButtonColor = (type: ButtonType) => linkButtonColorMap[type]
+export const linkButtonBgColor = (type: ButtonType) => linkButtonBgColorMap[type]
+export const linkButtonColor = (type: ButtonType) => linkButtonColorMap[type]

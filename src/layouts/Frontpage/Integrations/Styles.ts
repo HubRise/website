@@ -19,22 +19,22 @@ export const ContentWrapper = styled.div<{ $padding?: SidePosition }>`
     ${({ $padding }) =>
       $padding === "left"
         ? css`
-            padding-left: 3.875rem;
+            padding-left: 3.5rem;
           `
         : css`
-            padding-right: 3.875rem;
+            padding-right: 3.5rem;
           `}
   }
 `
 
 export const SideBlockWrapper = styled.div`
-  padding: 3.875rem 0 0;
+  padding: 3.5rem 0 0;
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
 
   @media (min-width: ${breakpoints.large}) {
-    row-gap: 3.875rem;
+    row-gap: 3.5rem;
   }
 `
 
@@ -62,7 +62,7 @@ export const Advantages = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 1.25rem;
-  margin-top: 1.375rem;
+  margin-top: 1.25rem;
 `
 
 export const Advantage = styled.div`
