@@ -4,7 +4,7 @@ export const sizes = {
   maxWidth: "75rem",
   headerHeight: "5rem",
 
-  blockVerticalPadding: "3.685rem",
+  blockVerticalPadding: "4.688rem",
   blockHorizontalPadding: "7.5rem",
 
   // Horizontal padding for mobile devices
@@ -44,7 +44,7 @@ export const breakpoints = {
   medium: "40rem",
   large: "64rem",
   extraLarge: "90rem",
-  biggest: "119rem",
+  biggest: "120rem",
   documentationStickyMenu: "64rem",
   blogStickyMenu: "40rem",
   burgerMenu: "75rem",
@@ -130,6 +130,26 @@ export const mixin = {
         margin-left: ${gap};
         font-size: ${fontSizes._12};
         color: ${color};
+      }
+    }
+  `,
+  headerBottomLine: (position: string = "left"): RuleSet => css`
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -0.1875rem;
+      left: 0;
+      right: 0;
+      margin: ${position === "center" ? "0 auto" : "0"};
+      width: 5rem;
+      height: 0.1875rem;
+      border-radius: 6.25rem;
+      background-color: ${colors.primary};
+    }
+
+    @media (min-width: ${breakpoints.biggest}) {
+      &::after {
+        width: 7.5rem;
       }
     }
   `,
