@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+import { ButtonStyles } from "@components/Button/Styles"
 import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
 import { HeroAppColor, linkHeroAppBorderColor } from "./utils"
@@ -7,26 +8,45 @@ import { HeroAppColor, linkHeroAppBorderColor } from "./utils"
 export const Container = styled.div`
   position: relative;
   background-color: ${colors.backgroundLightest};
-  padding: 5.75rem 0;
+  padding: 3.875rem 1rem;
   text-align: center;
 
   & > a {
     margin-left: auto;
     margin-right: auto;
   }
+
+  ${ButtonStyles} {
+    width: 100%;
+  }
+
+  @media (min-width: ${breakpoints.medium}) {
+    ${ButtonStyles} {
+      width: fit-content;
+    }
+  }
+
+  @media (min-width: ${breakpoints.large}) {
+    padding: 5.75rem 1rem;
+  }
 `
 
 export const Title = styled.h1`
   font-weight: 600;
   color: ${colors.textDarkest};
-  font-size: 4.5rem;
-  line-height: 5.125rem;
+  font-size: ${fontSizes._32};
+  line-height: 2.5rem;
   max-width: 66rem;
   margin: 0 auto;
 
-  @media (max-width: ${breakpoints.biggest}) {
+  @media (min-width: ${breakpoints.large}) {
     font-size: 4.125rem;
     line-height: 4.75rem;
+  }
+
+  @media (min-width: ${breakpoints.biggest}) {
+    font-size: 4.5rem;
+    line-height: 5.125rem;
   }
 `
 
@@ -36,47 +56,69 @@ export const TitleHighlight = styled.span`
 
 export const Description = styled.div`
   max-width: 43rem;
-  margin: 1.5rem auto 0;
+  margin: 0.75rem auto 0;
+
+  @media (min-width: ${breakpoints.large}) {
+    margin: 1.5rem auto 0;
+  }
 
   p {
-    font-size: ${fontSizes._24};
-    line-height: 2rem;
+    font-size: ${fontSizes._18};
+    line-height: 1.5rem;
 
-    @media (max-width: ${breakpoints.biggest}) {
+    @media (min-width: ${breakpoints.large}) {
       font-size: ${fontSizes._20};
       line-height: 1.875rem;
+    }
+
+    @media (min-width: ${breakpoints.biggest}) {
+      font-size: ${fontSizes._24};
+      line-height: 2rem;
     }
   }
 `
 
 export const Apps = styled.div`
-  max-width: 88.375rem;
-  margin: 3.875rem auto 3.625rem;
+  max-width: 23.5rem;
+  margin: 3.875rem auto 1.875rem;
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 2.875rem;
 
-  @media (max-width: ${breakpoints.biggest}) {
+  @media (min-width: ${breakpoints.medium}) {
+    max-width: 46.5rem;
+    flex-wrap: nowrap;
+  }
+
+  @media (min-width: ${breakpoints.large}) {
     max-width: 72rem;
     margin-bottom: 2.875rem;
+  }
+
+  @media (min-width: ${breakpoints.biggest}) {
+    max-width: 88.375rem;
+    margin-bottom: 3.625rem;
   }
 `
 
 export const AppInner = styled.div<{ $color: HeroAppColor }>`
   ${mixin.centerElement};
-  border-width: 1.625rem;
   border-style: solid;
   border-color: ${({ $color }) => linkHeroAppBorderColor($color)};
-  width: 11.875rem;
-  height: 11.875rem;
+  border-width: 0.625rem;
+  width: 6rem;
+  height: 6rem;
+  padding: 0.75rem;
   border-radius: 100%;
-  padding: 1.5rem;
   position: relative;
 
   span {
-    font-size: ${fontSizes._16};
+    font-size: 0.625rem;
+    line-height: 0.75rem;
     font-weight: 700;
   }
 
-  @media (max-width: ${breakpoints.biggest}) {
+  @media (min-width: ${breakpoints.large}) {
     border-width: 1.25rem;
     width: 9.75rem;
     height: 9.75rem;
@@ -84,25 +126,45 @@ export const AppInner = styled.div<{ $color: HeroAppColor }>`
 
     span {
       font-size: ${fontSizes._14};
+      line-height: normal;
+    }
+  }
+
+  @media (min-width: ${breakpoints.biggest}) {
+    border-width: 1.625rem;
+    width: 11.875rem;
+    height: 11.875rem;
+    padding: 1.5rem;
+
+    span {
+      font-size: ${fontSizes._16};
     }
   }
 `
 
 export const App = styled.div<{ $index: number }>`
   position: relative;
-  left: ${(props) => -props.$index * 11}px;
+
+  &:nth-child(-n + 3) {
+    left: ${(props) => -props.$index * 7}px;
+  }
+
+  &:nth-child(5),
+  &:nth-child(6) {
+    left: ${(props) => -(props.$index - 3) * 7}px;
+  }
 
   &:nth-child(odd) {
     ${AppInner} {
-      top: 1.625rem;
+      top: 0.875rem;
     }
   }
 
   &:nth-child(even) {
-    top: 3.625rem;
+    top: 1.875rem;
 
     ${AppInner} {
-      top: -1.625rem;
+      top: -0.875rem;
     }
 
     img {
@@ -110,8 +172,18 @@ export const App = styled.div<{ $index: number }>`
     }
   }
 
-  @media (max-width: ${breakpoints.biggest}) {
-    left: ${(props) => -props.$index * 12}px;
+  @media (min-width: ${breakpoints.medium}) {
+    &:nth-child(-n + 3),
+    &:nth-child(5),
+    &:nth-child(6) {
+      left: ${(props) => -props.$index * 7}px;
+    }
+
+    left: ${(props) => -props.$index * 7}px;
+  }
+
+  @media (min-width: ${breakpoints.large}) {
+    left: ${(props) => -props.$index * 12}px !important;
 
     &:nth-child(odd) {
       ${AppInner} {
@@ -127,23 +199,49 @@ export const App = styled.div<{ $index: number }>`
       }
     }
   }
+
+  @media (min-width: ${breakpoints.biggest}) {
+    left: ${(props) => -props.$index * 11}px !important;
+
+    &:nth-child(odd) {
+      ${AppInner} {
+        top: 1.625rem;
+      }
+    }
+
+    &:nth-child(even) {
+      top: 3.625rem;
+
+      ${AppInner} {
+        top: -1.625rem;
+      }
+    }
+  }
 `
 
 export const AppWrapper = styled.div`
-  width: 15.25rem;
+  width: 7.75rem;
   display: flex;
   justify-content: center;
   position: relative;
 
   img {
-    height: 8rem !important;
+    height: 4rem !important;
   }
 
-  @media (max-width: ${breakpoints.biggest}) {
+  @media (min-width: ${breakpoints.large}) {
     width: 12.625rem;
 
     img {
       height: 6.5rem !important;
+    }
+  }
+
+  @media (min-width: ${breakpoints.biggest}) {
+    width: 15.25rem;
+
+    img {
+      height: 8rem !important;
     }
   }
 `
