@@ -7,12 +7,9 @@ import { Card } from "../shared/Styles"
 
 export const Cards = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 2.5rem;
-  row-gap: 1.875rem;
-  max-width: 120rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
   margin: 4rem auto 0;
-  padding: 0 7rem;
 
   ${Card} {
     justify-content: space-between;
@@ -23,35 +20,47 @@ export const Cards = styled.div`
     }
   }
 
-  @media (max-width: ${breakpoints.biggest}) {
+  @media (min-width: ${breakpoints.medium}) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: ${breakpoints.large}) {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2.5rem;
+    row-gap: 1.875rem;
     max-width: 90rem;
     padding: 0 3.75rem;
+  }
+
+  @media (min-width: ${breakpoints.biggest}) {
+    max-width: 120rem;
+    padding: 0 7rem;
   }
 `
 
 export const CardTitle = styled.h4`
-  font-size: ${fontSizes._24};
+  font-size: ${fontSizes._20};
   font-weight: 600;
-  line-height: 2rem;
+  line-height: 1.875rem;
   color: ${colors.textDarkest};
-  margin-top: 1.875rem;
+  margin-top: 1.375rem;
 
-  @media (max-width: ${breakpoints.biggest}) {
-    font-size: ${fontSizes._20};
-    line-height: 1.875rem;
-    margin-top: 1.375rem;
+  @media (min-width: ${breakpoints.biggest}) {
+    font-size: ${fontSizes._24};
+    line-height: 2rem;
+    margin-top: 1.875rem;
   }
 `
 
 export const CardText = styled.p`
-  font-size: ${fontSizes._20};
-  line-height: 1.875rem;
+  font-size: ${fontSizes._16};
+  line-height: 1.5rem;
   margin-top: 0.625rem;
   color: ${colors.textDark};
 
-  @media (max-width: ${breakpoints.biggest}) {
-    font-size: ${fontSizes._16};
-    line-height: 1.5rem;
+  @media (min-width: ${breakpoints.biggest}) {
+    font-size: ${fontSizes._20};
+    line-height: 1.875rem;
   }
 `
 

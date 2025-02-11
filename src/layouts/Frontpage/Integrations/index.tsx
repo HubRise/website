@@ -9,7 +9,7 @@ import { iconSizes } from "@utils/styles"
 
 import { TIntegrationApp } from "../types"
 
-import { ContentWrapper, Advantage, Advantages, IconWrapper } from "./Styles"
+import { SideBlockWrapper, ContentWrapper, Title, Advantage, Advantages, IconWrapper } from "./Styles"
 
 interface IntegrationsProps {
   title: string
@@ -20,39 +20,42 @@ const Integrations = ({ title, integration_apps }: IntegrationsProps) => {
   return (
     <Container bgColor="backgroundLight" verticalPadding="big">
       <ContainerHeader title={title} />
-      {integration_apps.map((integrationApp, index) => {
-        return (
-          <SideBlock
-            key={index}
-            side={index % 2 ? "left" : "right"}
-            secondaryContent={
-              <Image src={`/images/frontpage/${integrationApp.image}`} alt="Documentation" width={915} height={750} />
-            }
-            secondaryPosition={index % 2 ? "left" : "right"}
-          >
-            <ContentWrapper $padding={index % 2 ? "right" : "left"}>
-              <Advantages>
-                {integrationApp.advantages.map(({ text }, key) => {
-                  return (
-                    <Advantage key={key}>
-                      <IconWrapper>
-                        <Icon code="check" size={iconSizes._25} color="white" />
-                      </IconWrapper>
-                      <span>{text}</span>
-                    </Advantage>
-                  )
-                })}
-              </Advantages>
-              <Button
-                label={integrationApp.button_label}
-                link={integrationApp.button_link}
-                type="secondary"
-                icon={<Icon code="arrow_forward" size={iconSizes._25} />}
-              />
-            </ContentWrapper>
-          </SideBlock>
-        )
-      })}
+      <SideBlockWrapper>
+        {integration_apps.map((integrationApp, index) => {
+          return (
+            <SideBlock
+              key={index}
+              side={index % 2 ? "left" : "right"}
+              secondaryContent={
+                <Image src={`/images/frontpage/${integrationApp.image}`} alt="Documentation" width={915} height={750} />
+              }
+              secondaryPosition={index % 2 ? "left" : "right"}
+            >
+              <ContentWrapper $padding={index % 2 ? "right" : "left"}>
+                <Title>{integrationApp.title}</Title>
+                <Advantages>
+                  {integrationApp.advantages.map(({ text }, key) => {
+                    return (
+                      <Advantage key={key}>
+                        <IconWrapper>
+                          <Icon code="check" size={iconSizes._20} color="white" />
+                        </IconWrapper>
+                        <span>{text}</span>
+                      </Advantage>
+                    )
+                  })}
+                </Advantages>
+                <Button
+                  label={integrationApp.button_label}
+                  link={integrationApp.button_link}
+                  type="secondary"
+                  icon={<Icon code="arrow_forward" size={iconSizes._25} />}
+                />
+              </ContentWrapper>
+            </SideBlock>
+          )
+        })}
+      </SideBlockWrapper>
     </Container>
   )
 }
