@@ -15,7 +15,7 @@ describe("/api/contact_us", () => {
     const req = createRequest({
       method: "POST",
       body: {
-        recaptchaResponse: "someRecaptchaResponse",
+        token: "someTokenX",
         name: "John Doe",
         email: "john@example.com",
         message: "Hello, world!",

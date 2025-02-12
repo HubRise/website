@@ -2,14 +2,22 @@ import axios from "axios"
 import { NextResponse } from "next/server"
 import nodemailer from "nodemailer"
 
-const verifyRecaptcha = async (recaptchaResponse: string) => {
-  const secret = process.env.RECAPTCHA_SECRET_KEY
-  const response = await axios.post("https://www.google.com/recaptcha/api/siteverify", null, {
-    params: {
-      secret,
-      response: recaptchaResponse,
+const verifyRecaptcha = async (token: string) => {
+  const apiKey = process.env.RECAPTCHA_API_KEY
+  const projectID = process.env.RECAPTCHA_PROJECT_ID
+  const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY
+  const response = await axios.post(
+    `https://recaptchaenterprise.googleapis.com/v1/projects/${projectID}/assessments?key=${apiKey}`,
+    null,
+    {
+      params: {
+        events: {
+          token,
+          siteKey,
+        },
+      },
     },
-  })
+  )
 
   if (!response.data.success) {
     throw new Error(`Captcha validation failed: ${JSON.stringify(response.data)}`)
@@ -39,11 +47,11 @@ const sendEmail = async (name: string, email: string, message: string) => {
 
 export async function POST(req: Request) {
   const body = req.json != null ? await req.json() : req.body
-  const { recaptchaResponse, name, email, message } = body
-  console.log("Sending email", { recaptchaResponse, name, email, message })
+  const { token, name, email, message } = body
+  console.log("Sending email", { token, name, email, message })
 
   try {
-    await verifyRecaptcha(recaptchaResponse)
+    await verifyRecaptcha(token)
     await sendEmail(name, email, message)
   } catch (error: any) {
     console.error(error)

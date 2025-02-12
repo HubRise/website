@@ -18,13 +18,13 @@ const ContactForm = (): JSX.Element => {
   const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY
 
   function onSubmit(values: FormikValues, { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void }) {
-    ;(window as any).grecaptcha.execute(recaptchaSiteKey, { action: "send_email" }).then((token: string) => {
+    ;(window as any).grecaptcha.enterprise.execute(recaptchaSiteKey, { action: "send_email" }).then((token: string) => {
       return axios
         .post("/api/contact_us", {
           name: values.name,
           email: values.email,
           message: values.message,
-          recaptchaResponse: token,
+          token,
         })
         .then((response) => {
           if (response.status === 200) {
