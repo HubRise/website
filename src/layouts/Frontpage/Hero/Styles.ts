@@ -11,13 +11,10 @@ export const Container = styled.div`
   padding: 3.5rem 1rem;
   text-align: center;
 
-  & > a {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   ${ButtonStyles} {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: ${breakpoints.medium}) {

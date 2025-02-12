@@ -1,9 +1,10 @@
 import styled from "styled-components"
 
+import { ButtonStyles } from "@components/Button/Styles"
 import { breakpoints } from "@utils/styles"
 
 export const ButtonWrapper = styled.div`
-  & > a {
+  ${ButtonStyles} {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
