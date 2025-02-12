@@ -15,18 +15,22 @@ describe("/api/contact_us", () => {
     const req = createRequest({
       method: "POST",
       body: {
-        recaptchaResponse: "someRecaptchaResponse",
+        token: "someTokenX",
         name: "John Doe",
         email: "john@example.com",
         message: "Hello, world!",
       },
     })
-    const response = await POST(req)
-    return response
+    return POST(req)
   }
 
-  const mockRecaptcha = (success: boolean) => {
-    mockedAxiosPost.mockResolvedValueOnce({ data: { success } })
+  const mockRecaptcha = (valid: boolean, score = 0.9) => {
+    mockedAxiosPost.mockResolvedValueOnce({
+      data: {
+        tokenProperties: { valid },
+        riskAnalysis: { score },
+      },
+    })
   }
 
   const mockSendGrid = (success: boolean) => {
@@ -34,34 +38,47 @@ describe("/api/contact_us", () => {
     mockedCreateTransport.mockReturnValueOnce({ sendMail: sendMailMock } as any)
   }
 
-  it("should return 400 on failed recaptcha", async () => {
+  it("should return 400 on invalid token", async () => {
     mockRecaptcha(false)
 
     const response = await sendRequest()
 
-    expect(response.status).toEqual(400)
-    expect(await response.json()).toEqual({
-      error: 'Captcha validation failed: {"success":false}',
+    expect(response.status).toBe(400)
+    expect(await response.json()).toMatchObject({
+      error: expect.stringContaining("Captcha validation failed"),
     })
   })
 
-  it("should return 400 on valid recaptcha but failed SendGrid", async () => {
-    mockRecaptcha(true)
+  it("should return 400 on valid token but low score", async () => {
+    mockRecaptcha(true, 0.1)
+
+    const response = await sendRequest()
+
+    expect(response.status).toBe(400)
+    expect(await response.json()).toMatchObject({
+      error: expect.stringContaining("Captcha validation failed"),
+    })
+  })
+
+  it("should return 400 when recaptcha is valid but SendGrid fails", async () => {
+    mockRecaptcha(true, 0.9)
     mockSendGrid(false)
 
     const response = await sendRequest()
 
-    expect(response.status).toEqual(400)
-    expect(await response.json()).toEqual({ error: 'SendGrid error: {"rejected":["john@example.com"]}' })
+    expect(response.status).toBe(400)
+    expect(await response.json()).toMatchObject({
+      error: expect.stringContaining("SendGrid error"),
+    })
   })
 
   it("should return 200 on valid Recaptcha and SendGrid responses", async () => {
-    mockRecaptcha(true)
+    mockRecaptcha(true, 0.9)
     mockSendGrid(true)
 
     const response = await sendRequest()
 
-    expect(response.status).toEqual(200)
+    expect(response.status).toBe(200)
     expect(await response.json()).toEqual({ message: "email sent" })
   })
 })

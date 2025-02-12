@@ -9,7 +9,8 @@ declare namespace NodeJS {
     SENDGRID_PASSWORD: string
     CONTACT_EMAIL: string
     NEXT_PUBLIC_GOOGLE_ANALYTICS_ID: string
-    RECAPTCHA_SECRET_KEY: string
+    RECAPTCHA_API_KEY: string
+    RECAPTCHA_PROJECT_ID: string
     NEXT_PUBLIC_RECAPTCHA_SITE_KEY: string
   }
 }
