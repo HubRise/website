@@ -2,6 +2,8 @@ import axios from "axios"
 import { NextResponse } from "next/server"
 import nodemailer from "nodemailer"
 
+const SCORE_THRESHOLD = 0.3
+
 const verifyRecaptcha = async (token: string) => {
   const apiKey = process.env.RECAPTCHA_API_KEY
   const projectID = process.env.RECAPTCHA_PROJECT_ID
@@ -11,12 +13,16 @@ const verifyRecaptcha = async (token: string) => {
     {
       event: {
         token,
+        expectedAction: "send_email",
         siteKey,
       },
     },
   )
 
-  if (!response.data.success) {
+  const isTokenValid = response.data.tokenProperties?.valid
+  const riskScore = response.data.riskAnalysis?.score ?? 0
+
+  if (!isTokenValid || riskScore < SCORE_THRESHOLD) {
     throw new Error(`Captcha validation failed: ${JSON.stringify(response.data)}`)
   }
 }
