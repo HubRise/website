@@ -1,6 +1,7 @@
 import Link from "next/link"
 import styled from "styled-components"
 
+import { StyledIcon } from "@components/Icon/Styles"
 import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
 import { ButtonType, linkButtonBgColor, linkButtonColor } from "./utils"
@@ -20,7 +21,7 @@ export const ButtonStyles = styled(Link)<{ $type: ButtonType }>`
   transition: all 0.5s ease;
   white-space: nowrap;
 
-  & > span {
+  ${StyledIcon} {
     margin-left: 0.375rem;
   }
 
@@ -32,7 +33,7 @@ export const ButtonStyles = styled(Link)<{ $type: ButtonType }>`
   @media (min-width: ${breakpoints.large}) {
     padding: 0 1.125rem;
 
-    & > span {
+    ${StyledIcon} {
       margin-left: 0.625rem;
     }
   }
