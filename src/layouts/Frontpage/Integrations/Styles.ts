@@ -68,17 +68,17 @@ export const Advantages = styled.div`
 export const Advantage = styled.div`
   display: flex;
   align-items: center;
+`
 
-  & > span {
-    display: inline-block;
-    margin-left: 0.875rem;
-    font-size: ${fontSizes._16};
-    line-height: 1.5rem;
+export const AdvantageText = styled.span`
+  display: inline-block;
+  margin-left: 0.875rem;
+  font-size: ${fontSizes._16};
+  line-height: 1.5rem;
 
-    @media (min-width: ${breakpoints.biggest}) {
-      font-size: ${fontSizes._20};
-      line-height: 2rem;
-    }
+  @media (min-width: ${breakpoints.biggest}) {
+    font-size: ${fontSizes._20};
+    line-height: 2rem;
   }
 `
 
