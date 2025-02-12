@@ -2,7 +2,6 @@ import Image from "next/image"
 
 import Button from "@components/Button"
 import Container from "@components/Container"
-import ContainerHeader from "@components/ContainerHeader"
 import Icon from "@components/Icon"
 import { SideBlock } from "@components/SideBlock"
 import { iconSizes } from "@utils/styles"
@@ -18,8 +17,7 @@ interface IntegrationsProps {
 
 const Integrations = ({ title, integration_apps }: IntegrationsProps) => {
   return (
-    <Container bgColor="backgroundLight" verticalPadding="big">
-      <ContainerHeader title={title} />
+    <Container bgColor="backgroundLight" verticalPadding="big" withHeader title={title}>
       <SideBlockWrapper>
         {integration_apps.map((integrationApp, index) => {
           return (
