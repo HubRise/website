@@ -1,7 +1,6 @@
 import Image from "next/image"
 
 import Container from "@components/Container"
-import ContainerHeader from "@components/ContainerHeader"
 import { ContentImageMap } from "@utils/contentImage"
 
 import { Card } from "../shared/Styles"
@@ -17,8 +16,7 @@ interface TestimonialsProps {
 
 const Testimonials = ({ title, testimonials, testimonialLogoMap }: TestimonialsProps) => {
   return (
-    <Container bgColor="backgroundLight" verticalPadding="big">
-      <ContainerHeader title={title} />
+    <Container bgColor="backgroundLight" verticalPadding="big" withHeader title={title}>
       <TestimonialsWrapper>
         {testimonials.map((testimonial, index) => {
           return (
