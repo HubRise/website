@@ -8,13 +8,10 @@ const verifyRecaptcha = async (token: string) => {
   const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY
   const response = await axios.post(
     `https://recaptchaenterprise.googleapis.com/v1/projects/${projectID}/assessments?key=${apiKey}`,
-    null,
     {
-      params: {
-        events: {
-          token,
-          siteKey,
-        },
+      events: {
+        token,
+        siteKey,
       },
     },
   )
