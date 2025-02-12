@@ -2,19 +2,28 @@ import { colors } from "@utils/styles"
 
 export type HeroAppColor = "green" | "greenLight" | "greenMediumLight"
 
-type HeroAppColorMap = Record<HeroAppColor, string>
-
-const linkHeroAppColorMap: HeroAppColorMap = {
-  green: colors.primary,
-  greenLight: colors.greenLight,
-  greenMediumLight: colors.greenMediumLight,
+export const linkHeroAppBorderColor = (color: HeroAppColor) => {
+  switch (color) {
+    case "green":
+      return colors.primary
+    case "greenLight":
+      return colors.greenLight
+    case "greenMediumLight":
+      return colors.greenMediumLight
+    default:
+      return colors.primary
+  }
 }
 
-const heroAppsImageSourceMap: HeroAppColorMap = {
-  green: "/images/frontpage/hero-apps-top.svg",
-  greenLight: "/images/frontpage/hero-apps-bottom-light.svg",
-  greenMediumLight: "/images/frontpage/hero-apps-top-midlight.svg",
+export const getHeroAppsImageSource = (color: HeroAppColor) => {
+  switch (color) {
+    case "green":
+      return "/images/frontpage/hero-apps-top.svg"
+    case "greenLight":
+      return "/images/frontpage/hero-apps-bottom-light.svg"
+    case "greenMediumLight":
+      return "/images/frontpage/hero-apps-top-midlight.svg"
+    default:
+      return "/images/frontpage/hero-apps-top.svg"
+  }
 }
-
-export const linkHeroAppBorderColor = (color: HeroAppColor) => linkHeroAppColorMap[color]
-export const getHeroAppsImageSource = (color: HeroAppColor) => heroAppsImageSourceMap[color]

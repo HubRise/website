@@ -8,7 +8,7 @@ import { iconSizes } from "@utils/styles"
 
 import { TIntegrationApp } from "../types"
 
-import { SideBlockWrapper, ContentWrapper, Title, Advantage, Advantages, IconWrapper } from "./Styles"
+import { SideBlockWrapper, ContentWrapper, Title, Advantage, Advantages, IconWrapper, AdvantageText } from "./Styles"
 
 interface IntegrationsProps {
   title: string
@@ -38,7 +38,7 @@ const Integrations = ({ title, integration_apps }: IntegrationsProps) => {
                         <IconWrapper>
                           <Icon code="check" size={iconSizes._20} color="white" />
                         </IconWrapper>
-                        <span>{text}</span>
+                        <AdvantageText>{text}</AdvantageText>
                       </Advantage>
                     )
                   })}
