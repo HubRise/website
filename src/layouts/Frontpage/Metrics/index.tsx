@@ -1,4 +1,4 @@
-import Container from "@components/Container"
+import ScreenContainer from "@components/ScreenContainer"
 
 import { TMetric } from "../types"
 
@@ -9,7 +9,7 @@ interface MetricsProps {
 }
 
 const Metrics = ({ metrics }: MetricsProps): JSX.Element => (
-  <Container bgColor="green" verticalPadding="small">
+  <ScreenContainer bgColor="green" verticalPadding="small">
     <Wrapper>
       {metrics.map(({ number, title }, index) => {
         return (
@@ -20,7 +20,7 @@ const Metrics = ({ metrics }: MetricsProps): JSX.Element => (
         )
       })}
     </Wrapper>
-  </Container>
+  </ScreenContainer>
 )
 
 export default Metrics

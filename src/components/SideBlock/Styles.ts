@@ -87,5 +87,14 @@ export const Content = styled.div<{ $secondaryPosition: SidePosition }>`
 
   @media (min-width: ${breakpoints.biggest}) {
     padding: 0 5rem;
+
+    ${({ $secondaryPosition }) =>
+      $secondaryPosition && $secondaryPosition === "left"
+        ? css`
+            grid-template-columns: 1.5fr 1fr;
+          `
+        : css`
+            grid-template-columns: 1fr 1.5fr;
+          `}
   }
 `

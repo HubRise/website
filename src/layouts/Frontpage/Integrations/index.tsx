@@ -1,9 +1,10 @@
 import Image from "next/image"
 
 import Button from "@components/Button"
-import Container from "@components/Container"
 import Icon from "@components/Icon"
+import ScreenContainer from "@components/ScreenContainer"
 import { SideBlock } from "@components/SideBlock"
+import Underline from "@components/Underline"
 import { iconSizes } from "@utils/styles"
 
 import { TIntegrationApp } from "../types"
@@ -17,7 +18,7 @@ interface IntegrationsProps {
 
 const Integrations = ({ title, integration_apps }: IntegrationsProps) => {
   return (
-    <Container bgColor="backgroundLight" verticalPadding="big" withHeader title={title}>
+    <ScreenContainer bgColor="backgroundLight" verticalPadding="big" withHeader title={title}>
       <SideBlockWrapper>
         {integration_apps.map((integrationApp, index) => {
           return (
@@ -31,6 +32,7 @@ const Integrations = ({ title, integration_apps }: IntegrationsProps) => {
             >
               <ContentWrapper $padding={index % 2 ? "right" : "left"}>
                 <Title>{integrationApp.title}</Title>
+                <Underline />
                 <Advantages>
                   {integrationApp.advantages.map(({ text }, key) => {
                     return (
@@ -54,7 +56,7 @@ const Integrations = ({ title, integration_apps }: IntegrationsProps) => {
           )
         })}
       </SideBlockWrapper>
-    </Container>
+    </ScreenContainer>
   )
 }
 
