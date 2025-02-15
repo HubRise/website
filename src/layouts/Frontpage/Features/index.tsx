@@ -1,9 +1,9 @@
 import { type MDXRemoteSerializeResult } from "next-mdx-remote"
 
-import Container from "@components/Container"
+import Card from "@components/Card"
+import Container from "@components/ScreenContainer"
 import { ContentImageMap } from "@utils/contentImage"
 
-import { Card } from "../shared/Styles"
 import { TFeatureCard } from "../types"
 
 import { Cards, CardContent, CardTitle, CardText, CardImage } from "./Styles"
@@ -21,7 +21,7 @@ const Features = ({ title, features_cards, descriptionMdx, featuresImagesMap }: 
       <Cards>
         {features_cards.map(({ title, description, image }, index) => {
           return (
-            <Card $padding="big" key={index}>
+            <Card padding="big" key={index}>
               <CardImage {...featuresImagesMap[image]} alt={title} />
               <CardContent>
                 <CardTitle>{title}</CardTitle>

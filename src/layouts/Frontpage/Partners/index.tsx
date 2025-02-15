@@ -3,8 +3,8 @@ import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 import { MDXRemote } from "next-mdx-remote"
 
 import Button from "@components/Button"
-import Container from "@components/Container"
 import Icon from "@components/Icon"
+import ScreenContainer from "@components/ScreenContainer"
 import { iconSizes } from "@utils/styles"
 
 import { Description, Title } from "../shared/Styles"
@@ -21,7 +21,7 @@ interface PartnersProps {
 
 const Partners = ({ title, descriptionMdx, button_label, button_link, image }: PartnersProps) => {
   return (
-    <Container bgColor="green" verticalPadding="small">
+    <ScreenContainer bgColor="green" verticalPadding="small">
       <Wrapper>
         <ImageWrapper>
           <Image src={`/images/frontpage/${image}`} alt={title} width={708} height={521} />
@@ -39,7 +39,7 @@ const Partners = ({ title, descriptionMdx, button_label, button_link, image }: P
           />
         </ContentWrapper>
       </Wrapper>
-    </Container>
+    </ScreenContainer>
   )
 }
 

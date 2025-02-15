@@ -6,7 +6,7 @@ import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
 import { ButtonType, linkButtonBgColor, linkButtonColor } from "./utils"
 
-export const ButtonStyles = styled(Link)<{ $type: ButtonType }>`
+export const StyledButton = styled(Link)<{ $type: ButtonType }>`
   ${mixin.centerElement}
   width: fit-content;
   height: 3rem;

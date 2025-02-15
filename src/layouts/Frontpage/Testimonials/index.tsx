@@ -1,9 +1,9 @@
 import Image from "next/image"
 
-import Container from "@components/Container"
+import Card from "@components/Card"
+import ScreenContainer from "@components/ScreenContainer"
 import { ContentImageMap } from "@utils/contentImage"
 
-import { Card } from "../shared/Styles"
 import { TTestimonial } from "../types"
 
 import { TestimonialsWrapper, Name, JobTitle, Text, LogoImage } from "./Styles"
@@ -16,11 +16,11 @@ interface TestimonialsProps {
 
 const Testimonials = ({ title, testimonials, testimonialLogoMap }: TestimonialsProps) => {
   return (
-    <Container bgColor="backgroundLight" verticalPadding="big" withHeader title={title}>
+    <ScreenContainer bgColor="backgroundLight" verticalPadding="big" withHeader title={title}>
       <TestimonialsWrapper>
         {testimonials.map((testimonial, index) => {
           return (
-            <Card $padding="small" key={index}>
+            <Card key={index}>
               <Image src="/images/frontpage/quote.svg" alt="Quote" width={62} height={44}></Image>
               <Name>{`- ${testimonial.name}`}</Name>
               <JobTitle>{testimonial.job_title}</JobTitle>
@@ -35,7 +35,7 @@ const Testimonials = ({ title, testimonials, testimonialLogoMap }: TestimonialsP
           )
         })}
       </TestimonialsWrapper>
-    </Container>
+    </ScreenContainer>
   )
 }
 
