@@ -1,9 +1,8 @@
 import Image from "next/image"
 import styled from "styled-components"
 
+import { StyledCard } from "@components/Card/Styles"
 import { colors, fontSizes, breakpoints } from "@utils/styles"
-
-import { Card } from "../shared/Styles"
 
 export const Cards = styled.div`
   display: grid;
@@ -11,7 +10,7 @@ export const Cards = styled.div`
   gap: 1.5rem;
   margin: 4rem auto 0;
 
-  ${Card} {
+  ${StyledCard} {
     justify-content: space-between;
     text-align: center;
 

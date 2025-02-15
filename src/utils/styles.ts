@@ -139,26 +139,6 @@ export const mixin = {
       }
     }
   `,
-  headerBottomLine: (position: string = "left"): RuleSet => css`
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -0.1875rem;
-      left: 0;
-      right: 0;
-      margin: ${position === "center" ? "0 auto" : "0"};
-      width: 5rem;
-      height: 0.1875rem;
-      border-radius: 6.25rem;
-      background-color: ${colors.primary};
-    }
-
-    @media (min-width: ${breakpoints.biggest}) {
-      &::after {
-        width: 7.5rem;
-      }
-    }
-  `,
   expandBefore: ({ width, color }: { width: string; color: string }): RuleSet => css`
     &::before {
       content: "";
