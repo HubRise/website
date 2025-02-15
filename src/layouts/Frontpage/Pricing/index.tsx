@@ -2,7 +2,7 @@ import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 import { MDXRemote } from "next-mdx-remote"
 
 import Button from "@components/Button"
-import Container from "@components/Container"
+import ScreenContainer from "@components/ScreenContainer"
 import useClientRoutes from "@hooks/client/useClientRoutes"
 
 import { Title, TitleHighlight, Description } from "../shared/Styles"
@@ -23,7 +23,7 @@ const Pricing = ({ title, button_label, descriptionMdx }: PricingProps) => {
   const { signup } = useClientRoutes()
 
   return (
-    <Container bgColor="green" verticalPadding="small" isTextCentered={true}>
+    <ScreenContainer bgColor="green" verticalPadding="small" isTextCentered={true}>
       <Title>
         {title.start}
         <TitleHighlight> {title.price} </TitleHighlight>
@@ -35,7 +35,7 @@ const Pricing = ({ title, button_label, descriptionMdx }: PricingProps) => {
       <ButtonWrapper>
         <Button label={button_label} link={signup} type="tertiary" />
       </ButtonWrapper>
-    </Container>
+    </ScreenContainer>
   )
 }
 

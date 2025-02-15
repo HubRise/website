@@ -1,4 +1,4 @@
-import { ButtonStyles } from "./Styles"
+import { StyledButton } from "./Styles"
 import { ButtonType } from "./utils"
 
 interface ButtonProps {
@@ -9,10 +9,10 @@ interface ButtonProps {
 }
 
 const Button = ({ label, link, type = "primary", icon }: ButtonProps) => (
-  <ButtonStyles href={link} $type={type}>
+  <StyledButton href={link} $type={type}>
     {label}
     {icon}
-  </ButtonStyles>
+  </StyledButton>
 )
 
 export default Button

@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { ButtonStyles } from "@components/Button/Styles"
+import { StyledButton } from "@components/Button/Styles"
 import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
 import { HeroAppColor, linkHeroAppBorderColor } from "./utils"
@@ -11,14 +11,14 @@ export const Container = styled.div`
   padding: 3.5rem 1rem;
   text-align: center;
 
-  ${ButtonStyles} {
+  ${StyledButton} {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
 
   @media (min-width: ${breakpoints.medium}) {
-    ${ButtonStyles} {
+    ${StyledButton} {
       width: fit-content;
     }
   }
@@ -29,10 +29,10 @@ export const Container = styled.div`
 `
 
 export const Title = styled.h1`
-  font-weight: 600;
-  color: ${colors.textDarkest};
   font-size: ${fontSizes._32};
   line-height: 2.5rem;
+  font-weight: 600;
+  color: ${colors.textDarkest};
   max-width: 65rem;
   margin: 0 auto;
 

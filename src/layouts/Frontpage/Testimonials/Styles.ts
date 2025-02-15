@@ -1,9 +1,8 @@
 import Image from "next/image"
 import styled from "styled-components"
 
+import { StyledCard } from "@components/Card/Styles"
 import { breakpoints, colors, fontSizes } from "@utils/styles"
-
-import { Card } from "../shared/Styles"
 
 export const TestimonialsWrapper = styled.div`
   max-width: ${breakpoints.biggest};
@@ -12,7 +11,7 @@ export const TestimonialsWrapper = styled.div`
   grid-template-columns: 1fr;
   gap: 1.5rem;
 
-  ${Card} {
+  ${StyledCard} {
     &:not(:nth-child(-n + 2)) {
       display: none;
     }
@@ -22,7 +21,7 @@ export const TestimonialsWrapper = styled.div`
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 
-    ${Card} {
+    ${StyledCard} {
       &:not(:nth-child(-n + 2)) {
         display: flex;
       }
@@ -33,7 +32,7 @@ export const TestimonialsWrapper = styled.div`
     padding: 0 5rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
-    ${Card} {
+    ${StyledCard} {
       &:nth-child(even) {
         position: relative;
         top: 1.75rem;

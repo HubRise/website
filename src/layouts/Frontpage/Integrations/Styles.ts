@@ -1,16 +1,16 @@
 import styled, { css } from "styled-components"
 
-import { ButtonStyles } from "@components/Button/Styles"
+import { StyledButton } from "@components/Button/Styles"
 import { SidePosition } from "@components/SideBlock/types"
 import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
 export const ContentWrapper = styled.div<{ $padding?: SidePosition }>`
-  ${ButtonStyles} {
+  ${StyledButton} {
     width: 100%;
   }
 
   @media (min-width: ${breakpoints.medium}) {
-    ${ButtonStyles} {
+    ${StyledButton} {
       width: fit-content;
     }
   }
@@ -43,9 +43,7 @@ export const Title = styled.h3`
   line-height: 2.125rem;
   font-weight: 600;
   color: ${colors.textDarkest};
-  padding-bottom: 0.875rem;
   position: relative;
-  ${mixin.headerBottomLine()}
 
   @media (min-width: ${breakpoints.large}) {
     font-size: 1.875rem;

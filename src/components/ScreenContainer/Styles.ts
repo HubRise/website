@@ -1,12 +1,17 @@
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizes } from "@utils/styles"
 
-import { ContainerBgColor, linkContainerBgColor, ContainerVerticalPadding, linkContainerVerticalPadding } from "./utils"
+import {
+  ScreenContainerBgColor,
+  linkContainerBgColor,
+  ScreenContainerVerticalPadding,
+  linkContainerVerticalPadding,
+} from "./utils"
 
-export const ContainerStyles = styled.div<{
-  $bgColor: ContainerBgColor
-  $vPadding: ContainerVerticalPadding
+export const Container = styled.div<{
+  $bgColor: ScreenContainerBgColor
+  $vPadding: ScreenContainerVerticalPadding
   $textCentered: boolean
 }>`
   background-color: ${({ $bgColor }) => linkContainerBgColor($bgColor)};
@@ -24,8 +29,6 @@ export const HeaderWrapper = styled.div`
   max-width: 65rem;
   margin: 0 auto;
   position: relative;
-  padding-bottom: 1.25rem;
-  ${mixin.headerBottomLine("center")}
 
   @media (min-width: ${breakpoints.biggest}) {
     max-width: 80rem;

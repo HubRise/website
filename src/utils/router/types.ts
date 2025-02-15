@@ -1,6 +1,8 @@
+import { GetInTouchYaml } from "@components/GetInTouch/types"
 import { AppsYaml } from "@layouts/Apps/types"
 import { DocumentationIndexYaml } from "@layouts/DocumentationIndex/types"
 import { DocumentationSimpleFrontMatter } from "@layouts/DocumentationSimple/types"
+import { FAQsYaml } from "@layouts/FAQs/types"
 import { FrontpageYaml } from "@layouts/Frontpage/types"
 import { PartnersYaml } from "@layouts/Partners/types"
 import { PricingYaml } from "@layouts/Pricing/types"
@@ -50,6 +52,7 @@ export type LayoutName =
   | "documentation"
   | "documentation-index"
   | "documentation-simple"
+  | "faqs"
   | "frontpage"
   | "partners"
   | "pricing"
@@ -66,6 +69,8 @@ export type Context<L extends LayoutName> = L extends "apps"
   ? { context: { yaml: DocumentationIndexYaml } }
   : L extends "documentation-simple"
   ? { context: { content: string; frontMatter: DocumentationSimpleFrontMatter } }
+  : L extends "faqs"
+  ? { context: { yaml: FAQsYaml }; getInTouch: { yaml: GetInTouchYaml } }
   : L extends "frontpage"
   ? { context: { yaml: FrontpageYaml } }
   : L extends "partners"

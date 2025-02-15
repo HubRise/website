@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { ButtonStyles } from "@components/Button/Styles"
+import { StyledButton } from "@components/Button/Styles"
 import { breakpoints } from "@utils/styles"
 
 export const Wrapper = styled.div`
@@ -45,12 +45,12 @@ export const ContentWrapper = styled.div`
     margin-top: 1.25rem;
   }
 
-  ${ButtonStyles} {
+  ${StyledButton} {
     width: 100%;
   }
 
   @media (min-width: ${breakpoints.medium}) {
-    ${ButtonStyles} {
+    ${StyledButton} {
       width: fit-content;
       margin-left: auto;
       margin-right: auto;
@@ -61,7 +61,7 @@ export const ContentWrapper = styled.div`
     padding-bottom: 3.5rem;
     text-align: left;
 
-    ${ButtonStyles} {
+    ${StyledButton} {
       margin-left: 0;
       margin-right: 0;
     }

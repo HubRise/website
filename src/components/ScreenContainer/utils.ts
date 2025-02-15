@@ -1,9 +1,9 @@
 import { colors } from "@utils/styles"
 
-export type ContainerBgColor = "green" | "backgroundLight"
-export type ContainerVerticalPadding = "small" | "big"
+export type ScreenContainerBgColor = "green" | "backgroundLight"
+export type ScreenContainerVerticalPadding = "small" | "big"
 
-export const linkContainerBgColor = (bgColor: ContainerBgColor) => {
+export const linkContainerBgColor = (bgColor: ScreenContainerBgColor) => {
   switch (bgColor) {
     case "green":
       return colors.primary
@@ -14,7 +14,7 @@ export const linkContainerBgColor = (bgColor: ContainerBgColor) => {
   }
 }
 
-export const linkContainerVerticalPadding = (vPadding: ContainerVerticalPadding) => {
+export const linkContainerVerticalPadding = (vPadding: ScreenContainerVerticalPadding) => {
   switch (vPadding) {
     case "small":
       return "3.5rem 0"
