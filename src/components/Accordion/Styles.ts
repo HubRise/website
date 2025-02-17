@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 import { StyledIcon } from "@components/Icon/Styles"
-import { colors, fontSizes } from "@utils/styles"
+import { colors, fontSizeMixins } from "@utils/styles"
 
 export const Container = styled.div`
   padding-bottom: 1rem;
@@ -28,8 +28,7 @@ export const TitleWrapper = styled.div<{ $isCollapsed: boolean | undefined }>`
 `
 
 export const Title = styled.h4`
-  font-size: ${fontSizes._18};
-  line-height: 1.625rem;
+  ${fontSizeMixins.fontSizeTextLg}
   font-weight: 600;
 `
 
@@ -40,7 +39,6 @@ export const ContentWrapper = styled.div<{ $maxHeight: number | undefined }>`
 `
 
 export const Content = styled.div`
-  font-size: ${fontSizes._16};
-  line-height: 1.5rem;
+  ${fontSizeMixins.fontSizeTextMd}
   margin-top: 0.25rem;
 `
