@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 import { StyledButton } from "@components/Button/Styles"
-import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, fontSizes, mixin } from "@utils/styles"
 
 import { HeroAppColor, linkHeroAppBorderColor } from "./utils"
 
@@ -29,7 +29,7 @@ export const Container = styled.div`
 `
 
 export const Title = styled.h1`
-  font-size: ${fontSizes._32};
+  ${fontSizeMixins.fontSizeDisplaySm}
   line-height: 2.5rem;
   font-weight: 600;
   color: ${colors.textDarkest};
@@ -37,13 +37,11 @@ export const Title = styled.h1`
   margin: 0 auto;
 
   @media (min-width: ${breakpoints.large}) {
-    font-size: 4.125rem;
-    line-height: 4.75rem;
+    ${fontSizeMixins.fontSizeDisplayXl}
   }
 
   @media (min-width: ${breakpoints.biggest}) {
-    font-size: 4.5rem;
-    line-height: 5.125rem;
+    ${fontSizeMixins.fontSizeDisplay2Xl}
   }
 `
 
@@ -60,17 +58,14 @@ export const Description = styled.div`
   }
 
   p {
-    font-size: ${fontSizes._18};
-    line-height: 1.5rem;
+    ${fontSizeMixins.fontSizeTextMd}
 
     @media (min-width: ${breakpoints.large}) {
-      font-size: ${fontSizes._20};
-      line-height: 1.875rem;
+      ${fontSizeMixins.fontSizeTextXl}
     }
 
     @media (min-width: ${breakpoints.biggest}) {
-      font-size: ${fontSizes._24};
-      line-height: 2rem;
+      ${fontSizeMixins.fontSizeText2Xl}
     }
   }
 `
