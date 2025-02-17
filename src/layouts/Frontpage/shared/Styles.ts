@@ -1,14 +1,13 @@
 import styled from "styled-components"
 
-import { breakpoints, fontSizes } from "@utils/styles"
+import { breakpoints, fontSizeMixins, fontSizes } from "@utils/styles"
 
 export const Title = styled.h2`
-  font-size: 1.875rem;
-  line-height: 2.75rem;
+  ${fontSizeMixins.fontSizeDisplaySm}
   font-weight: 600;
 
   @media (min-width: ${breakpoints.large}) {
-    font-size: 2.25rem;
+    ${fontSizeMixins.fontSizeDisplayMd}
   }
 
   @media (min-width: ${breakpoints.biggest}) {
@@ -22,7 +21,7 @@ export const TitleHighlight = styled.span`
 
   @media (min-width: ${breakpoints.biggest}) {
     span {
-      font-size: 3.75rem;
+      ${fontSizeMixins.fontSizeDisplayLg}
     }
   }
 `
@@ -35,17 +34,14 @@ export const Description = styled.div`
   }
 
   p {
-    font-size: ${fontSizes._18};
-    line-height: 1.625rem;
+    ${fontSizeMixins.fontSizeTextLg}
 
     @media (min-width: ${breakpoints.large}) {
-      font-size: ${fontSizes._20};
-      line-height: 1.875rem;
+      ${fontSizeMixins.fontSizeTextXl}
     }
 
     @media (min-width: ${breakpoints.biggest}) {
-      font-size: ${fontSizes._24};
-      line-height: 2rem;
+      ${fontSizeMixins.fontSizeText2Xl}
     }
   }
 `

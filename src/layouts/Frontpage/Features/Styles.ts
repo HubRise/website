@@ -2,7 +2,7 @@ import Image from "next/image"
 import styled from "styled-components"
 
 import { StyledCard } from "@components/Card/Styles"
-import { colors, fontSizes, breakpoints } from "@utils/styles"
+import { colors, breakpoints, fontSizeMixins } from "@utils/styles"
 
 export const Cards = styled.div`
   display: grid;
@@ -40,28 +40,24 @@ export const Cards = styled.div`
 export const CardContent = styled.div``
 
 export const CardTitle = styled.h4`
-  font-size: ${fontSizes._20};
+  ${fontSizeMixins.fontSizeTextXl}
   font-weight: 600;
-  line-height: 1.875rem;
   color: ${colors.textDarkest};
   margin-top: 1.25rem;
 
   @media (min-width: ${breakpoints.biggest}) {
-    font-size: ${fontSizes._24};
-    line-height: 2rem;
+    ${fontSizeMixins.fontSizeText2Xl}
     margin-top: 1.5rem;
   }
 `
 
 export const CardText = styled.p`
-  font-size: ${fontSizes._16};
-  line-height: 1.5rem;
+  ${fontSizeMixins.fontSizeTextMd}
   margin-top: 0.625rem;
   color: ${colors.textDark};
 
   @media (min-width: ${breakpoints.biggest}) {
-    font-size: ${fontSizes._20};
-    line-height: 1.875rem;
+    ${fontSizeMixins.fontSizeTextXl}
   }
 `
 

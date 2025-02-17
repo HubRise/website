@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const Wrapper = styled.div`
   ${mixin.centerElement};
@@ -28,8 +28,7 @@ export const MetricBlock = styled.div`
 `
 
 export const Number = styled.span`
-  font-size: ${fontSizes._24};
-  line-height: 2rem;
+  ${fontSizeMixins.fontSizeText2Xl}
   font-weight: 600;
   margin-bottom: 0.5rem;
 
@@ -45,17 +44,14 @@ export const Number = styled.span`
 `
 
 export const Text = styled.span`
-  font-size: ${fontSizes._14};
-  line-height: 1.25rem;
+  ${fontSizeMixins.fontSizeTextSm}
   text-align: center;
 
   @media (min-width: ${breakpoints.large}) {
-    font-size: ${fontSizes._18};
-    line-height: 1.625rem;
+    ${fontSizeMixins.fontSizeTextLg}
   }
 
   @media (min-width: ${breakpoints.biggest}) {
-    font-size: ${fontSizes._24};
-    line-height: 2rem;
+    ${fontSizeMixins.fontSizeText2Xl}
   }
 `

@@ -2,7 +2,7 @@ import Image from "next/image"
 import styled from "styled-components"
 
 import { StyledCard } from "@components/Card/Styles"
-import { breakpoints, colors, fontSizes } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
 
 export const TestimonialsWrapper = styled.div`
   max-width: ${breakpoints.biggest};
@@ -46,40 +46,34 @@ export const TestimonialsWrapper = styled.div`
 `
 
 export const Name = styled.h4`
-  font-size: ${fontSizes._18};
-  line-height: 1.75rem;
+  ${fontSizeMixins.fontSizeTextLg}
   font-weight: 700;
   color: ${colors.textDarkest};
   margin-top: 1.5rem;
 
   @media (min-width: ${breakpoints.biggest}) {
-    font-size: ${fontSizes._24};
-    line-height: 2rem;
+    ${fontSizeMixins.fontSizeText2Xl}
   }
 `
 
 export const JobTitle = styled.h5`
-  font-size: ${fontSizes._16};
-  line-height: 1.5rem;
+  ${fontSizeMixins.fontSizeTextMd}
   margin-top: 0.25rem;
 
   @media (min-width: ${breakpoints.biggest}) {
-    font-size: ${fontSizes._20};
-    line-height: 1.875rem;
+    ${fontSizeMixins.fontSizeTextXl}
   }
 `
 
 export const Text = styled.p`
   font-family: "Inter", sans-serif;
-  font-size: ${fontSizes._16};
-  line-height: 1.5rem;
+  ${fontSizeMixins.fontSizeTextMd}
   font-weight: 600;
   margin-top: 1.5rem;
   margin-bottom: 0.25rem;
 
   @media (min-width: ${breakpoints.biggest}) {
-    font-size: ${fontSizes._20};
-    line-height: 1.875rem;
+    ${fontSizeMixins.fontSizeTextXl}
   }
 `
 

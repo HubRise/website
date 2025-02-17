@@ -2,7 +2,7 @@ import styled, { css } from "styled-components"
 
 import { StyledButton } from "@components/Button/Styles"
 import { SidePosition } from "@components/SideBlock/types"
-import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const ContentWrapper = styled.div<{ $padding?: SidePosition }>`
   ${StyledButton} {
@@ -39,20 +39,17 @@ export const SideBlockWrapper = styled.div`
 `
 
 export const Title = styled.h3`
-  font-size: ${fontSizes._24};
-  line-height: 2.125rem;
+  ${fontSizeMixins.fontSizeText2Xl}
   font-weight: 600;
   color: ${colors.textDarkest};
   position: relative;
 
   @media (min-width: ${breakpoints.large}) {
-    font-size: 1.875rem;
-    line-height: 2.375rem;
+    ${fontSizeMixins.fontSizeDisplaySm}
   }
 
   @media (min-width: ${breakpoints.biggest}) {
-    font-size: 2.25rem;
-    line-height: 2.875rem;
+    ${fontSizeMixins.fontSizeDisplayMd}
   }
 `
 
@@ -71,12 +68,10 @@ export const Advantage = styled.div`
 export const AdvantageText = styled.span`
   display: inline-block;
   margin-left: 0.875rem;
-  font-size: ${fontSizes._16};
-  line-height: 1.5rem;
+  ${fontSizeMixins.fontSizeTextMd}
 
   @media (min-width: ${breakpoints.biggest}) {
-    font-size: ${fontSizes._20};
-    line-height: 2rem;
+    ${fontSizeMixins.fontSizeTextXl}
   }
 `
 

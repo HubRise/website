@@ -92,6 +92,50 @@ export const boxShadows = {
   `,
 }
 
+export const fontSizeMixins = {
+  fontSizeTextSm: css`
+    font-size: ${fontSizes._14};
+    line-height: 1.25rem;
+  `,
+  fontSizeTextMd: css`
+    font-size: ${fontSizes._16};
+    line-height: 1.5rem;
+  `,
+  fontSizeTextLg: css`
+    font-size: ${fontSizes._18};
+    line-height: 1.625rem;
+  `,
+  fontSizeTextXl: css`
+    font-size: ${fontSizes._20};
+    line-height: 1.875rem;
+  `,
+  fontSizeText2Xl: css`
+    font-size: ${fontSizes._24};
+    line-height: 2rem;
+  `,
+
+  fontSizeDisplaySm: css`
+    font-size: ${fontSizes._32};
+    line-height: 2.5rem;
+  `,
+  fontSizeDisplayMd: css`
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  `,
+  fontSizeDisplayLg: css`
+    font-size: 3rem;
+    line-height: 3.75rem;
+  `,
+  fontSizeDisplayXl: css`
+    font-size: 4.125rem;
+    line-height: 4.75rem;
+  `,
+  fontSizeDisplay2Xl: css`
+    font-size: 4.5rem;
+    line-height: 5.125rem;
+  `,
+}
+
 export const mixin = {
   button: css`
     padding: 0.4rem 1.5rem;
