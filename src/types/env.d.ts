@@ -12,5 +12,6 @@ declare namespace NodeJS {
     RECAPTCHA_API_KEY: string
     RECAPTCHA_PROJECT_ID: string
     NEXT_PUBLIC_RECAPTCHA_KEY_ID: string
+    NEXT_PUBLIC_MAPS_SITE_KEY: string
   }
 }
