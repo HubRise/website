@@ -1,4 +1,5 @@
 import { GetInTouchYaml } from "@components/GetInTouch/types"
+import { GetStartedYaml } from "@components/GetStarted/types"
 import { AppsYaml } from "@layouts/Apps/types"
 import { DocumentationIndexYaml } from "@layouts/DocumentationIndex/types"
 import { DocumentationSimpleFrontMatter } from "@layouts/DocumentationSimple/types"
@@ -34,7 +35,7 @@ const staticRoutes = async (): Promise<Routes> => {
   return [
     createRoute({ href: "/", language: "en", name: "frontpage", layout: "frontpage", context: { yaml: await readYamlFile<FrontpageYaml>("/en", "frontpage") } }),
     createRoute({ href: "/apps", language: "en", name: "apps", layout: "apps", context: { yaml: await readYamlFile<AppsYaml>("/en", "apps") } }),
-    createRoute({ href: "/pricing", language: "en", name: "pricing", layout: "pricing", context: { yaml: await readYamlFile<PricingYaml>("/en", "pricing") } }),
+    createRoute({ href: "/pricing", language: "en", name: "pricing", layout: "pricing", context: { yaml: await readYamlFile<PricingYaml>("/en", "pricing") }, getStarted: {yaml: await readYamlFile<GetStartedYaml>("/en", "get-started")} }),
     createRoute({ href: "/developers", language: "en", name: "developers", layout: "documentation-index", context: { yaml: await readYamlFile<DocumentationIndexYaml>("/en", "developers") } }),
     createRoute({ href: "/faqs", language: "en", name: "faqs", layout: "faqs", context: { yaml: await readYamlFile<FAQsYaml>("/en", "faqs") }, getInTouch: { yaml: await readYamlFile<GetInTouchYaml>("/en", "get-in-touch") } }),
     createRoute({ href: "/branding", language: "en", name: "branding", layout: "documentation-simple", context: await readMdFile<DocumentationSimpleFrontMatter>("/en", "branding") }),
@@ -43,7 +44,7 @@ const staticRoutes = async (): Promise<Routes> => {
     createRoute({ href: "/partners", language: "en", name: "partners", layout: "partners", context: { yaml: await readYamlFile<PartnersYaml>("/en", "partners") } }),
     createRoute({ href: "/fr", language: "fr", name: "frontpage", layout: "frontpage", context: { yaml: await readYamlFile<FrontpageYaml>("/fr", "frontpage") } }),
     createRoute({ href: "/fr/apps", language: "fr", name: "apps", layout: "apps", context: { yaml: await readYamlFile<AppsYaml>("/fr", "apps") } }),
-    createRoute({ href: "/fr/tarifs", language: "fr", name: "pricing", layout: "pricing", context: { yaml: await readYamlFile<PricingYaml>("/fr", "pricing") } }),
+    createRoute({ href: "/fr/tarifs", language: "fr", name: "pricing", layout: "pricing", context: { yaml: await readYamlFile<PricingYaml>("/fr", "pricing") }, getStarted: {yaml: await readYamlFile<GetStartedYaml>("/fr", "get-started")} }),
     createRoute({ href: "/fr/developers", language: "fr", name: "developers", layout: "documentation-index", context: { yaml: await readYamlFile<DocumentationIndexYaml>("/fr", "developers") } }),
     createRoute({ href: "/fr/faqs", language: "fr", name: "faqs", layout: "faqs", context: { yaml: await readYamlFile<FAQsYaml>("/fr", "faqs") }, getInTouch: { yaml: await readYamlFile<GetInTouchYaml>("/fr", "get-in-touch") } }),
     createRoute({ href: "/fr/marque", language: "fr", name: "branding", layout: "documentation-simple", context: await readMdFile<DocumentationSimpleFrontMatter>("/fr", "branding") }),

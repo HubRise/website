@@ -1,13 +1,17 @@
-import { Container, Wrapper } from "./Styles"
+import { Container, Title, Wrapper } from "./Styles"
 
 interface PageHeroProps {
-  children: React.ReactNode
+  children?: React.ReactNode
   isTextCentered?: boolean
+  title?: React.ReactNode
 }
 
-const PageHero = ({ children, isTextCentered = true }: PageHeroProps): JSX.Element => (
+const PageHero = ({ children, isTextCentered = true, title }: PageHeroProps): JSX.Element => (
   <Container $isTextCentered={isTextCentered}>
-    <Wrapper>{children}</Wrapper>
+    <Wrapper>
+      {title && <Title>{title}</Title>}
+      {children}
+    </Wrapper>
   </Container>
 )
 
