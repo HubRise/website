@@ -54,7 +54,6 @@ export const CardTitle = styled.h4`
 export const CardText = styled.p`
   ${fontSizeMixins.fontSizeTextMd}
   margin-top: 0.625rem;
-  color: ${colors.textDark};
 
   @media (min-width: ${breakpoints.biggest}) {
     ${fontSizeMixins.fontSizeTextXl}

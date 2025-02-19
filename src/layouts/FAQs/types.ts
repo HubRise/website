@@ -13,8 +13,12 @@ export interface FAQsYaml {
     description: string
   }
   content: {
-    title_part_1: string
-    title_part_2: string
+    hero: {
+      title: {
+        part_1: string
+        part_2: string
+      }
+    }
     faq_sections: Array<TFAQSection>
   }
 }

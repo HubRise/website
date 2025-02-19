@@ -1,20 +1,31 @@
 "use client"
 
-import Block from "@components/Block"
+import GetStarted from "@components/GetStarted"
+import { GetStartedYaml } from "@components/GetStarted/types"
+import { ContentImageMap } from "@utils/contentImage"
 
-import Infos from "./Infos"
-import Plan from "./Plan"
+import Founder from "./Founder"
+import Hero from "./Hero"
+import SpecialPricing from "./SpecialPricing"
+import WhyChoose from "./WhyChoose"
 import type { PricingYaml } from "./types"
 
-const Pricing = ({ yaml }: { yaml: PricingYaml }): JSX.Element => {
+interface PricingProps {
+  yaml: PricingYaml
+  getStarted: GetStartedYaml
+  founderImageMap: ContentImageMap
+}
+
+const Pricing = ({ yaml, getStarted, founderImageMap }: PricingProps): JSX.Element => {
   const { content } = yaml
 
   return (
     <>
-      <Block backgroundColor="white" title={content.hero.title}>
-        <Plan plan={content.plan} />
-        <Infos infos={content.infos} />
-      </Block>
+      <Hero hero={content.hero} />
+      <Founder {...content.founder} founderImageMap={founderImageMap} />
+      <WhyChoose why_choose={content.why_choose} />
+      <SpecialPricing special_pricing={content.special_pricing} />
+      <GetStarted getStarted={getStarted.content} />
     </>
   )
 }
