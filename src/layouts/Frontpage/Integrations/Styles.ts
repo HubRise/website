@@ -42,7 +42,6 @@ export const Title = styled.h3`
   ${fontSizeMixins.fontSizeText2Xl}
   font-weight: 600;
   color: ${colors.textDarkest};
-  position: relative;
 
   @media (min-width: ${breakpoints.large}) {
     ${fontSizeMixins.fontSizeDisplaySm}

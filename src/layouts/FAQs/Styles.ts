@@ -4,24 +4,6 @@ import { StyledCard } from "@components/Card/Styles"
 import { StyledUnderline } from "@components/Underline/Styles"
 import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
 
-export const Title = styled.h1`
-  ${fontSizeMixins.fontSizeDisplaySm}
-  font-weight: 600;
-  color: ${colors.textDarkest};
-
-  @media (min-width: ${breakpoints.large}) {
-    ${fontSizeMixins.fontSizeDisplayXl}
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeDisplay2Xl}
-  }
-`
-
-export const HighlightTitle = styled.span`
-  color: ${colors.primary};
-`
-
 export const Content = styled.div`
   max-width: 90rem;
   margin: 0 auto;

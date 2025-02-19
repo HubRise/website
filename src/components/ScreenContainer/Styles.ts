@@ -35,10 +35,10 @@ export const HeaderWrapper = styled.div`
   }
 `
 
-export const Title = styled.h2`
+export const Title = styled.h2<{ $bgColor: ScreenContainerBgColor }>`
   ${fontSizeMixins.fontSizeDisplaySm}
   font-weight: 600;
-  color: ${colors.textDarkest};
+  color: ${({ $bgColor }) => ($bgColor === "green" ? `${colors.white}` : `${colors.textDarkest}`)};
   text-align: center;
 
   @media (min-width: ${breakpoints.large}) {
