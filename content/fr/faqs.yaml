@@ -2,8 +2,10 @@ meta:
   title: FAQs | HubRise
   description:
 content:
-  title_part_1: Questions?
-  title_part_2: Look here
+  hero:
+    title:
+      part_1: Questions?
+      part_2: Look here
   faq_sections:
     - title: Subscription
       questions:

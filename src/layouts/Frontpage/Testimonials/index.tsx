@@ -21,7 +21,7 @@ const Testimonials = ({ title, testimonials, testimonialLogoMap }: TestimonialsP
         {testimonials.map((testimonial, index) => {
           return (
             <Card key={index}>
-              <Image src="/images/frontpage/quote.svg" alt="Quote" width={62} height={44}></Image>
+              <Image src="/images/quote-green.svg" alt="Quote" width={62} height={44} />
               <Name>{`- ${testimonial.name}`}</Name>
               <JobTitle>{testimonial.job_title}</JobTitle>
               <Text>{testimonial.text}</Text>
