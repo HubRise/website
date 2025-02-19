@@ -1,6 +1,6 @@
 import { colors } from "@utils/styles"
 
-export type ScreenContainerBgColor = "green" | "backgroundLight"
+export type ScreenContainerBgColor = "green" | "backgroundLight" | "white"
 export type ScreenContainerVerticalPadding = "small" | "big"
 
 export const linkContainerBgColor = (bgColor: ScreenContainerBgColor) => {
@@ -9,6 +9,8 @@ export const linkContainerBgColor = (bgColor: ScreenContainerBgColor) => {
       return colors.primary
     case "backgroundLight":
       return colors.backgroundLight
+    case "white":
+      return colors.white
     default:
       return colors.primary
   }

@@ -28,7 +28,7 @@ const ScreenContainer = ({
     {withHeader && (
       <>
         <HeaderWrapper>
-          {title && <Title>{title}</Title>}
+          {title && <Title $bgColor={bgColor}>{title}</Title>}
 
           {descriptionMdx && (
             <Description>
