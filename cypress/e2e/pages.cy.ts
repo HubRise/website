@@ -4,7 +4,7 @@ describe("Pages", () => {
   ;[
     ["/", "Seamless Integration for Restaurants and Retail"],
     ["/apps", "Integrated Apps", "LivePepper"],
-    ["/pricing", "Fair Pricing"],
+    ["/pricing", "Simple, Fair and Transparent Pricing"],
     ["/blog", "The HubRise Blog"],
     ["/blog/catalog-variants", "Catalog Variants"],
     ["/apps/livepepper", "Overview"],
