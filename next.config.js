@@ -10,6 +10,7 @@ const requiredEnvVars = [
   "NEXT_PUBLIC_INTERACTIVE_DEV_MODE",
   "NEXT_PUBLIC_GOOGLE_ANALYTICS_ID",
   "NEXT_PUBLIC_RECAPTCHA_SITE_KEY",
+  "NEXT_PUBLIC_MAPS_SITE_KEY",
 ]
 const missingVars = requiredEnvVars.filter((key) => !(key in process.env))
 if (missingVars.length > 0) {
