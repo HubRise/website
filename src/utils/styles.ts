@@ -137,6 +137,10 @@ export const fontSizeMixins = {
 }
 
 export const mixin = {
+  link: css`
+    color: ${colors.primary};
+    text-decoration: underline;
+  `,
   button: css`
     padding: 0.4rem 1.5rem;
     text-transform: uppercase;

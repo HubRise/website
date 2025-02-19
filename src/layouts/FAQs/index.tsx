@@ -8,7 +8,7 @@ import PageHero from "@components/PageHero"
 import ScreenContainer from "@components/ScreenContainer"
 import Underline from "@components/Underline"
 
-import { CardTitle, Content, HighlightTitle, Title } from "./Styles"
+import { CardTitle, Content } from "./Styles"
 import { FAQsYaml } from "./types"
 
 interface FAQProps {
@@ -22,12 +22,13 @@ const FAQs = ({ yaml, getInTouch }: FAQProps): JSX.Element => {
 
   return (
     <>
-      <PageHero>
-        <Title>
-          <HighlightTitle>{content.title_part_1} </HighlightTitle>
-          {content.title_part_2}
-        </Title>
-      </PageHero>
+      <PageHero
+        title={
+          <>
+            <span>{content.hero.title.part_1}</span> {content.hero.title.part_2}
+          </>
+        }
+      />
       <ScreenContainer bgColor="backgroundLight" verticalPadding="big">
         <Content>
           {content.faq_sections.map(({ title, questions }, index) => {
