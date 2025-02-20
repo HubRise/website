@@ -23,3 +23,5 @@ sections:
         to: /testimonials
       - title: Branding Guidelines
         to: /branding
+      - title: Contact Us
+        to: /contact-us
