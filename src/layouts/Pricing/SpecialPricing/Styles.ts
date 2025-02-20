@@ -20,6 +20,10 @@ export const PricingListCards = styled.div`
   gap: 2rem;
   flex-direction: column;
 
+  ${StyledCard} {
+    justify-content: space-between;
+  }
+
   @media (min-width: ${breakpoints.large}) {
     flex-direction: row;
 
@@ -28,6 +32,8 @@ export const PricingListCards = styled.div`
     }
   }
 `
+
+export const CardTopPart = styled.div``
 
 export const PricingList = styled.div`
   padding: 3.5rem 0;
