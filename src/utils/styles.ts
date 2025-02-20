@@ -138,6 +138,8 @@ export const fontSizeMixins = {
 
 export const mixin = {
   link: css`
+    ${fontSizeMixins.fontSizeTextMd};
+    font-weight: 600;
     color: ${colors.primary};
     text-decoration: underline;
   `,

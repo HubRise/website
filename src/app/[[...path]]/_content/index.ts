@@ -4,6 +4,7 @@ import { LayoutName, Route, RouteName } from "@utils/router/types"
 import apps from "./apps"
 import blogIndex from "./blogIndex"
 import blogPost from "./blogPost"
+import contactUs from "./contactUs"
 import documentation from "./documentation"
 import documentationIndex from "./documentationIndex"
 import documentationSimple from "./documentationSimple"
@@ -27,6 +28,8 @@ export const renderContent = async (route: Route<RouteName, LayoutName>, router:
       return await documentationIndex(route as Route<RouteName, "documentation-index">)
     case "documentation-simple":
       return await documentationSimple(route as Route<RouteName, "documentation-simple">, router)
+    case "contact-us":
+      return await contactUs(route as Route<RouteName, "contact-us">)
     case "faqs":
       return await faqs(route as Route<RouteName, "faqs">)
     case "frontpage":
