@@ -27,3 +27,6 @@ sections:
         to: /fr/temoignages
       - title: Guide de la marque
         to: /fr/marque
+      # TODO: Need to translate
+      - title: Contact Us
+        to: /fr/contact-us
