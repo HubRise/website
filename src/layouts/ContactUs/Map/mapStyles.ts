@@ -1,4 +1,4 @@
-export const mapStyles: google.maps.MapTypeStyle[] = [
+export const mapStyles = [
   {
     featureType: "administrative",
     elementType: "all",
