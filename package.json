@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@sentry/nextjs": "^7.77.0",
+    "@vis.gl/react-google-maps": "^1.5.1",
     "formik": "^2.2.8",
     "i18next": "^23.4.3",
     "next": "^14.2.25",
