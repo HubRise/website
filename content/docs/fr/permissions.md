@@ -8,45 +8,63 @@ meta:
   description: Comment gérer les permissions sur HubRise.
 ---
 
-Les permissions sont un moyen de contrôler les actions que les utilisateurs peuvent accomplir au niveau de votre compte et de vos points de vente. Vous pouvez modifier le niveau de permission d'un utilisateur en lui attribuant différents rôles à la section **Permissions** de la page **CONFIGURATION**.
+Les permissions permettent de contrôler les actions qu'un utilisateur peut effectuer sur un compte ou un point de vente dans HubRise. Vous pouvez gérer les permissions des utilisateurs dans la section **Permissions** de la page **CONFIGURATION**.
 
-## Rôles HubRise
+## Rôles et Permissions
 
-Deux types de rôles sont pris en charge dans HubRise : les administrateurs et les managers.
+HubRise propose une gestion flexible des permissions. Plutôt que de s’appuyer uniquement sur des rôles prédéfinis, il est désormais possible d’attribuer des permissions spécifiques aux utilisateurs.
 
-- Les **Admins** ont accès à tous les domaines de HubRise, y compris les factures. Ils sont responsables du maintien à jour des informations relatives aux paiements. Ils reçoivent des factures par e-mail lorsqu'un paiement est effectué, ou des notifications concernant les paiements en attente dans HubRise. Ils peuvent également octroyer l'accès à d'autres utilisateurs et déconnecter des applications de HubRise.
-- Les **Managers** ont accès à tous les domaines, à l'exception des factures de HubRise. Ils ne reçoivent pas d'e-mails de notification concernant les paiements en attente dans HubRise. Ils peuvent connecter des applications à HubRise, mais ne peuvent pas les déconnecter.
+### Rôles prédéfinis
 
-Vous pouvez également consulter et modifier vos propres permissions à partir de votre profil utilisateur. Pour plus d'informations, voir [Profil et mot de passe](/docs/profile-password).
+HubRise propose des rôles prédéfinis pour simplifier l’attribution des permissions :
+
+- **Administrateur complet** : Accès total à toutes les fonctionnalités, y compris la gestion des utilisateurs, la configuration des connexions et la facturation.
+- **Rôle personnalisé** : Permet d’attribuer manuellement des permissions spécifiques à un utilisateur.
+
+### Permissions disponibles
+
+Les permissions sont regroupées en plusieurs catégories :
+
+#### Accès Back-Office
+
+- **Voir le back-office** : Accéder au tableau de bord, aux connexions et aux données.
+- **Gérer les connexions et ressources** : Créer et gérer les connexions, les catalogues et les listes clients.
+- **Gérer l'entité** : Gérer les utilisateurs, les permissions et les points de vente.
+- **Gérer la facturation** : Accéder aux factures et moyens de paiement.
+
+#### Applications HubRise
+
+L’accès à certaines applications HubRise peut être accordé individuellement :
+
+- **Utiliser OrderLine** : Gérer les commandes et modifier les horaires d’ouverture.
+- **Utiliser Catalog Manager** : Gérer les catalogues, produits et prix.
 
 ## Ajouter un utilisateur {#add-user}
 
-Les administrateurs peuvent octroyer l'accès à d'autres utilisateurs à condition qu'ils aient un profil existant sur HubRise. Les nouveaux utilisateurs de HubRise peuvent créer un profil sur la [page d'inscription à HubRise](https://manager.hubrise.com/signup). Si vous créez un nouveau profil au nom de quelqu'un d'autre, utilisez la [page de réinitialisation du mot de passe de HubRise](https://manager.hubrise.com/reset_password/new) afin que l'utilisateur puisse saisir son propre mot de passe sécurisé.
+Les administrateurs peuvent ajouter des utilisateurs et leur attribuer des permissions spécifiques. Si l'utilisateur possède déjà un compte HubRise, il sera immédiatement ajouté. Sinon, il recevra une invitation par e-mail.
 
-Pour accorder à un utilisateur des permissions sur un compte, procédez comme suit :
+### Procédure
 
-1. Sélectionnez **CONFIGURATION**.
-1. À la section **Permissions**, saisissez l'adresse e-mail de l'utilisateur dans la colonne intitulée **E-MAIL**.
-1. Dans la colonne **RÔLE**, définissez le rôle du nouvel utilisateur en tant qu'Admin ou Manager.
-1. Cliquez sur l'icône Plus <InlineImage width="13" height="13">![Icône Plus](../images/059-add-icon.png)</InlineImage> pour ajouter le nouvel utilisateur.
+1. Accédez à **CONFIGURATION** > **Permissions**.
+2. Saisissez l’adresse e-mail de l’utilisateur.
+   - Si l’utilisateur existe déjà, son nom s’affichera.
+   - Si l’utilisateur n’existe pas encore, il sera invité après sélection des permissions.
+3. Sélectionnez les permissions à attribuer.
+4. Cliquez sur **Ajouter l'utilisateur**.
 
-Pour octroyer à un utilisateur des permissions sur un point de vente, procédez comme suit :
+## Modifier les permissions d’un utilisateur
 
-1. Sélectionnez **CONFIGURATION**.
-1. Sélectionnez une entrée dans la liste déroulante **Point de vente**.
-1. À la section **Permissions**, saisissez l'adresse e-mail de l'utilisateur dans la colonne intitulée **E-MAIL**.
-1. Dans la colonne **RÔLE**, définissez le rôle du nouvel utilisateur en tant qu'Admin ou Manager.
-1. Cliquez sur l'icône Plus <InlineImage width="13" height="13">![Icône Plus](../images/059-add-icon.png)</InlineImage> pour ajouter le nouvel utilisateur.
+1. Dans **CONFIGURATION** > **Permissions**, cliquez sur l’icône de modification 🖉 à côté de l’utilisateur concerné.
+2. Sélectionnez un **rôle prédéfini** ou configurez un **rôle personnalisé** en cochant/décochant les permissions disponibles.
+3. Cliquez sur **Définir les permissions**.
 
 ## Supprimer un utilisateur {#remove-user}
 
-Pour supprimer un utilisateur, procédez comme suit :
-
-1. Dans la section **Permissions**d'un compte ou d'un point de vente, cliquez sur l'icône de suppression <InlineImage width="15" height="16">![Icône de corbeille](../images/057-2x-trash-icon.png)</InlineImage> pour l'utilisateur que vous souhaitez supprimer.
-1. Lorsque vous y êtes invité, cliquez sur **Supprimer** pour confirmer votre action.
+1. Dans **CONFIGURATION** > **Permissions**, cliquez sur l’icône de suppression 🗑️ à côté de l’utilisateur.
+2. Confirmez la suppression.
 
 ---
 
-**REMARQUE IMPORTANTE** : un compte ne peut pas être laissé sans administrateur. Avant de supprimer votre profil utilisateur d'un compte, assurez-vous qu'un utilisateur de niveau Administrateur existe avec des permissions adéquates. Dans le cas contraire, vous pouvez modifier les permissions d'un utilisateur existant ou octroyer les permissions d'administrateur à test@hubrise.com.
+**REMARQUE IMPORTANTE** : Un compte ne peut pas être laissé sans administrateur. Avant de supprimer un administrateur, assurez-vous qu’un autre utilisateur dispose des permissions nécessaires.
 
 ---
