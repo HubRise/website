@@ -149,6 +149,6 @@ Le détail de chaque facture est consultable directement sur le back-office de H
 - **Description** : période et points de vente couverts par le paiement.
 - **Méthode de paiement** : mode de paiement utilisé.
 
-Les factures peuvent également être sauvegardées au format de fichier PDF en sélectionnant l'icône de téléchargement <InlineImage width="15" height="14">!\[Icône de téléchargement\](../images/058-download.png)</InlineImage>.
+Les factures peuvent également être sauvegardées au format de fichier PDF en sélectionnant l'icône de téléchargement <InlineImage width="15" height="14">![Icône de téléchargement](../images/058-download.png)</InlineImage>.
 
 ![Exemple de facture](./images/043-2x-invoice-example.png)
