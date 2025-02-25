@@ -12,32 +12,47 @@ Les permissions permettent de contrôler les actions qu'un utilisateur peut effe
 
 ## Rôles et Permissions
 
-HubRise propose une gestion flexible des permissions. Plutôt que de s’appuyer uniquement sur des rôles prédéfinis, il est désormais possible d’attribuer des permissions spécifiques aux utilisateurs.
+HubRise propose une gestion flexible des permissions. Vous pouvez soit attribuer des rôles prédéfinis, soit attribuer manuellement des permissions spécifiques à un utilisateur.
+
+![Permissions](./images/019-permissions.png)
+
+![Rôles d'un utilisateur](./images/020-2x-roles.png)
 
 ### Rôles prédéfinis
 
 HubRise propose des rôles prédéfinis pour simplifier l’attribution des permissions :
 
-- **Administrateur complet** : Accès total à toutes les fonctionnalités, y compris la gestion des utilisateurs, la configuration des connexions et la facturation.
+- **Administrateur complet** : Accès à toutes les fonctionnalités, y compris la gestion des utilisateurs, la configuration des connexions et la facturation.
+- **Partenaire technique** : Accès à toutes les fonctionnalités, sauf la facturation.
+- **Observateur back-office** : Accès en lecture au back-office, et accès à toutes les applications.
+- **Responsable comptabilité** : Accès limité au back-office, consultation des factures et gestion des moyens de paiement.
+- **Opérateur OrderLine** : Accès restreint à l’application OrderLine.
+- **Gestionnaire catalogue** : Accès restreint à l’application Catalog Manager.
 - **Rôle personnalisé** : Permet d’attribuer manuellement des permissions spécifiques à un utilisateur.
 
 ### Permissions disponibles
 
-Les permissions sont regroupées en plusieurs catégories :
+Les permissions sont regroupées en deux catégories :
 
-#### Accès Back-Office
+#### Accès Back-Office (accès privilégié)
 
 - **Voir le back-office** : Accéder au tableau de bord, aux connexions et aux données.
 - **Gérer les connexions et ressources** : Créer et gérer les connexions, les catalogues et les listes clients.
 - **Gérer l'entité** : Gérer les utilisateurs, les permissions et les points de vente.
 - **Gérer la facturation** : Accéder aux factures et moyens de paiement.
 
-#### Applications HubRise
+#### Applications HubRise (accès restreint)
 
 L’accès à certaines applications HubRise peut être accordé individuellement :
 
-- **Utiliser OrderLine** : Gérer les commandes et modifier les horaires d’ouverture.
-- **Utiliser Catalog Manager** : Gérer les catalogues, produits et prix.
+- **Utiliser OrderLine** : Application permettant de recevoir et mettre à jour les commandes, modifier les horaires d’ouverture, modifier les disponibilités de produits.
+- **Utiliser Catalog Manager** : Application permettant de voir et modifier les catalogues de produits.
+
+Chaque utilisateur ayant un rôle personnalisé peut se voir attribuer une combinaison de permissions respectant les contraintes suivantes :
+
+- **Utiliser Catalog Manager** est uniquement disponible au niveau compte.
+- Toute permission back-office donne accès à **Utiliser OrderLine**, et à **Utiliser Catalog Manager** si la permission est attribuée sur un compte.
+- **Voir le back-office** est requis pour toute autre permission back-office.
 
 ## Ajouter un utilisateur {#add-user}
 
