@@ -63,12 +63,12 @@ Les utilisateurs disposant de la permission **Gérer l'entité** peuvent ajouter
 
 1. Accédez à **CONFIGURATION** > **Permissions**.
 2. Saisissez l’adresse e-mail de l’utilisateur.
-   - Si l’utilisateur existe déjà, son nom s’affiche.
-   - Sinon, il recevra une invitation après sélection des permissions.
+   - Si l’utilisateur existe déjà, son nom s’affiche et il est immédiatement ajouté.
+   - Sinon, il recevra une invitation par e-mail après sélection des permissions.
 3. Sélectionnez les permissions à attribuer.
 4. Cliquez sur **Ajouter l'utilisateur**.
 
-Si l'utilisateur possède déjà un compte HubRise, il sera immédiatement ajouté. Sinon, il recevra un e-mail l'invitant à créer un profil HubRise. Dès son inscription, il pourra accéder à HubRise selon ses permissions.
+Une fois inscrit, l'utilisateur pourra accéder à HubRise avec les permissions définies.
 
 ## Modifier les permissions d’un utilisateur
 
