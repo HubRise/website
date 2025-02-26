@@ -62,6 +62,29 @@ Dans cet exemple, si votre domaine est _pizza-flamme.com_, OrderLine sera access
 
 Une fois les sous-domaines ajoutés, informez votre responsable partenariat. Il se chargera alors de créer des certificats SSL pour chacune de vos applications sous un délai de deux jours ouvrés. Cette opération ne requiert aucune action de votre part.
 
-## Accès aux applications
+## Ajout d'un utilisateur
 
-Une fois HubRise Marque Blanche activé, vous pouvez donner accès aux applications OrderLine et Catalog Manager à vos clients, salariés ou franchisés.
+Pour inviter un utilisateur à rejoindre votre environnement Marque Blanche, suivez les étapes indiquées dans la section [Ajouter un utilisateur](/docs/permissions#add-user).
+
+- Si l'utilisateur n'a pas encore de compte HubRise, il recevra un e-mail d'invitation personnalisé avec un lien. Il lui suffira de cliquer sur ce lien pour accepter l'invitation, choisir un mot de passe, et accéder à votre environnement Marque Blanche.
+
+![Email d'invitation](./images/25-white-label-email.png)
+
+- Sinon, il ne recevra pas d'e-mail, mais pourra utiliser immédiatement ses nouvelles permissions.
+
+## Accès au Portail Marque Blanche
+
+Une fois connecté, l’utilisateur arrive sur le Portail Marque Blanche, une interface sous votre marque qui centralise l’accès aux applications disponibles.
+
+![Portail Marque Blanche](./images/26-white-label-portal.png)
+
+Depuis ce portail, l’utilisateur voit uniquement les applications auxquelles il a accès, et peut les ouvrir en un clic. Ainsi, un utilisateur peut voir :
+
+- Catalog Manager, si la permission **Utiliser Catalog Manager** lui a été attribuée et qu'il a sélectionné un compte.
+- OrderLine, si la permission **Utiliser OrderLine** lui a été attribuée.
+
+Les applications apparaissent sous le nom que vous avez choisi, avec votre logo et vos couleurs.
+
+### Tester le Portail Marque Blanche
+
+Pour ouvrir le Portail Marque Blanche et vous rendre compte de l'expérience utilisateur, connectez-vous à votre compte HubRise, ouvrez la page **CONNEXIONS** et cliquez sur **Portail Marque Blanche** en haut à droite.
