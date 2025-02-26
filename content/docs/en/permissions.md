@@ -8,45 +8,83 @@ meta:
   description: How to manage HubRise permissions.
 ---
 
-Permissions are a way to control the actions that Users can take on your Account and Locations. You can change the permissions level for a User by assigning different roles from the **Permissions** section in the **SETTINGS** page.
+Permissions control the actions that a User can perform on an Account or Location in HubRise. You can manage user permissions from the **Permissions** section in the **SETTINGS** page.
 
-## HubRise Roles
+## Roles and Permissions
 
-HubRise supports two roles: Admins and Managers.
+HubRise offers flexible permission management. You can assign predefined roles or manually grant specific permissions to a User.
 
-- **Admins** have access to all areas of HubRise, including invoices. They are responsible for keeping the payment information up to date. They will receive invoices by email when a payment is made or notifications regarding HubRise pending payments. They can also grant access to other users and disconnect apps from HubRise.
-- **Managers** have access to all areas except HubRise invoices. They will not receive notifications emails on outstanding payments to HubRise. They can connect apps to HubRise but not disconnect them.
+![Permissions](./images/019-permissions.png)
 
-You can also view and edit your own permissions from your User profile. For more information, see [Profile and Password](/docs/profile-password).
+![User Roles](./images/020-2x-roles.png)
+
+### Predefined Roles
+
+HubRise provides predefined roles to simplify permission assignment:
+
+- **Full Administrator**: Access to all features, including user management, connection settings, and invoicing.
+- **Technical Partner**: Access to all features except invoicing.
+- **Back Office Viewer**: Read-only access to the back office and all applications.
+- **Billing Manager**: Limited back office access, including invoice viewing and payment method management.
+- **OrderLine Operator**: Restricted access to the OrderLine application.
+- **Catalog Manager**: Restricted access to the Catalog Manager application.
+- **Custom Role**: Allows manual assignment of specific permissions to a User.
+
+### Available Permissions
+
+Permissions are divided into two categories:
+
+#### Back Office Access (Privileged Access)
+
+- **View Back Office**: Access the dashboard, connections, and data.
+- **Manage Connections and Resources**: Create and manage connections, catalogs, and customer lists.
+- **Manage Entity**: Manage users, permissions, and locations.
+- **Manage Billing**: Access invoices and payment methods.
+
+#### HubRise Applications (Restricted Access)
+
+Access to specific HubRise applications can be granted individually:
+
+- **Use OrderLine**: Allows order reception and updates, modification of opening hours, and product availability.
+- **Use Catalog Manager**: Allows viewing and editing of product catalogs.
+
+### Permission Assignment Rules
+
+When assigning permissions to an Account or Location, the following rules apply:
+
+- At least one User must have the **Manage Entity** permission on an Account.
+- **Use Catalog Manager** is only available at the Account level.
+- Any back office permission grants access to **Use OrderLine** and, if assigned at the Account level, **Use Catalog Manager**.
+- **View Back Office** is required for any other back office permission.
 
 ## Add a User {#add-user}
 
-Admins can grant access to other users provided they have an existing profile on HubRise. New HubRise users can create a profile in the [HubRise signup page](https://manager.hubrise.com/signup). If you create a new profile on someone else's behalf, use the [HubRise Reset password page](https://manager.hubrise.com/reset_password/new) to have the user enter their own secure password.
+Users with the **Manage Entity** permission can add new Users and assign specific permissions. To add a User:
 
-To grant a User permissions on an Account, follow these steps:
+1. Go to **SETTINGS** > **Permissions**.
+2. Enter the User’s email address.
+   - If the User already exists, their name will appear, and they will be added immediately.
+   - Otherwise, they will receive an invitation by email after permissions are selected.
+3. Select the permissions to assign.
+4. Click **Add User**.
 
-1. Select **SETTINGS**.
-1. In the **Permissions** section, enter the User's email address in the column marked **EMAIL**.
-1. In the **ROLE** column, set the new user's role as Admin or Manager.
-1. Click the plus icon <InlineImage width="13" height="13">![Plus icon](../images/059-add-icon.png)</InlineImage> to add the new user.
+Once registered, the User will have access to HubRise with the assigned permissions.
 
-To grant a User permissions on a Location, follow these steps:
+## Modify a User’s Permissions
 
-1. Select **SETTINGS**.
-1. Select the Location from the **Location** dropdown.
-1. In the **Permissions** section, enter the User's email address in the column marked **EMAIL**.
-1. In the **ROLE** column, set the new User's role as Admin or Manager.
-1. Click the plus icon <InlineImage width="13" height="13">![Plus icon](../images/059-add-icon.png)</InlineImage> to add the new user.
+1. In **SETTINGS** > **Permissions**, click the pencil icon next to the User, or click directly on their permissions.
+2. Select a predefined role or configure a custom role by ticking/unticking the available permissions.
+3. Click **Set Permissions**.
+
+---
+
+**IMPORTANT NOTE:** If you remove your own **Manage Entity** permission, you will need another User with this permission to reassign it to you.
+
+---
 
 ## Remove a User {#remove-user}
 
-To remove a user:
+1. In **SETTINGS** > **Permissions**, click the bin icon next to the User.
+2. Confirm the removal.
 
-1. In the **Permissions** section for either an Account or a Location, click the remove icon <InlineImage width="15" height="16">![Trash icon](../images/057-2x-trash-icon.png)</InlineImage> for the user you want to remove.
-1. When prompted, click **Delete** to confirm.
-
----
-
-**IMPORTANT NOTE:** An account cannot be left without Admin. Before you remove your user profile from an Account make sure there is an Admin user with permissions. If not, you can change permissions of an existing user or give Admin permissions to test@hubrise.com.
-
----
+An Account cannot be left without a User with the **Manage Entity** permission. If you need to remove the last User with this permission, first assign it to test@hubrise.com before proceeding.
