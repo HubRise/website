@@ -27,7 +27,7 @@ Pour chaque application, les éléments suivants sont personnalisables :
 - Les couleurs, le nom, le logo et le favicon pour refléter l'identité visuelle du partenaire.
 - Le nom de domaine afin de rassurer les utilisateurs finaux.
 
-En revanche, le back office HubRise n'est pas personnalisable. Il reste accessible aux équipes internes du partenaire, qui peuvent donner accès aux utilisateurs finaux aux applications en marque blanche.
+En revanche, le back-office HubRise n'est pas personnalisable. Il reste accessible aux équipes internes du partenaire, qui peuvent donner accès aux utilisateurs finaux aux applications en marque blanche.
 
 ## Mise en place de HubRise Marque Blanche
 
@@ -72,7 +72,7 @@ Pour inviter un utilisateur à rejoindre votre environnement Marque Blanche, sui
 
 - Si l'utilisateur n'a pas encore de compte HubRise, il recevra un e-mail d'invitation personnalisé avec un lien. Il lui suffira de cliquer sur ce lien pour accepter l'invitation, choisir un mot de passe, et accéder à votre environnement Marque Blanche.
 
-![E-mail d'invitation](./images/025-white-label-email.png)
+  ![E-mail d'invitation](./images/025-white-label-email.png)
 
 - Sinon, il ne recevra pas d'e-mail, mais pourra utiliser immédiatement ses nouvelles permissions.
 
