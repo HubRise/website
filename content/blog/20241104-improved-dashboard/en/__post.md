@@ -1,5 +1,5 @@
 ---
-title: Your new integrated dashboard, faster and more comprehensive
+title: Your New Integrated Dashboard, Faster and More Comprehensive
 path_override: new-dashboard
 date: 2024-11-04
 author: Antoine Monnier
