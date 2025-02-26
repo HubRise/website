@@ -9,6 +9,8 @@ meta:
 excerpt: With HubRise White Label, software vendors can offer HubRise suite of well-tested tools under their own brand. Whether as a stopgap or a long-term solution, it helps them expand their offering while we stay in the background.
 ---
 
+[//]: # "Photo credits: HubRise"
+
 Some of our partners need ready-to-use tools they can offer under their own brand. Others want to expand their product offering without diverting resources into building niche features. HubRise White Label allows selected partners to provide our solutions as their own, with their logo, domain, and branding.
 
 ## Who is HubRise White Label for?
