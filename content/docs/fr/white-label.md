@@ -31,7 +31,7 @@ Pour activer HubRise Marque Blanche, contactez votre responsable partenariat ou 
 
 Pour chaque application, les informations suivantes seront demandées :
 
-- Nom de l'application : Le nom affiché sur l'interface, par exemple `Pizza Flamme Commandes`.
+- Nom de l'application : Le nom affiché sur l'interface, par exemple _Pizza Flamme Commandes_.
 - Nom de domaine : Un sous-domaine personnalisé pour l'application, par exemple `commandes.pizza-flamme.com`. Vous devez posséder le domaine principal.
 - Couleur principale : La couleur dominante, principalement utilisée pour les boutons et les éléments de navigation. Elle doit offrir un contraste suffisant sur un fond blanc.
 - Logo : Une image avec un ratio entre 2:1 et 6:1, au format PNG, JPEG ou WEBP.

@@ -48,38 +48,43 @@ L’accès à certaines applications HubRise peut être accordé individuellemen
 - **Utiliser OrderLine** : Application permettant de recevoir et mettre à jour les commandes, modifier les horaires d’ouverture, modifier les disponibilités de produits.
 - **Utiliser Catalog Manager** : Application permettant de voir et modifier les catalogues de produits.
 
-Chaque utilisateur ayant un rôle personnalisé peut se voir attribuer une combinaison de permissions respectant les contraintes suivantes :
+### Règles d’attribution des permissions
 
-- **Utiliser Catalog Manager** est uniquement disponible au niveau compte.
-- Toute permission back-office donne accès à **Utiliser OrderLine**, et à **Utiliser Catalog Manager** si la permission est attribuée sur un compte.
+Sur un compte ou un point de vente, les permissions doivent respecter les règles suivantes :
+
+- Au moins un utilisateur doit avoir la permission **Gérer l'entité** sur un compte.
+- **Utiliser Catalog Manager** est uniquement disponible sur un compte.
+- Toute permission back-office donne accès à **Utiliser OrderLine** et, si attribuée sur un compte, **Utiliser Catalog Manager**.
 - **Voir le back-office** est requis pour toute autre permission back-office.
 
 ## Ajouter un utilisateur {#add-user}
 
-Les administrateurs peuvent ajouter des utilisateurs et leur attribuer des permissions spécifiques. Si l'utilisateur possède déjà un compte HubRise, il sera immédiatement ajouté. Sinon, il recevra une invitation par e-mail.
-
-### Procédure
+Les utilisateurs disposant de la permission **Gérer l'entité** peuvent ajouter des utilisateurs et leur attribuer des permissions spécifiques. Pour ajouter un utilisateur :
 
 1. Accédez à **CONFIGURATION** > **Permissions**.
 2. Saisissez l’adresse e-mail de l’utilisateur.
-   - Si l’utilisateur existe déjà, son nom s’affichera.
-   - Si l’utilisateur n’existe pas encore, il sera invité après sélection des permissions.
+   - Si l’utilisateur existe déjà, son nom s’affiche.
+   - Sinon, il recevra une invitation après sélection des permissions.
 3. Sélectionnez les permissions à attribuer.
 4. Cliquez sur **Ajouter l'utilisateur**.
 
+Si l'utilisateur possède déjà un compte HubRise, il sera immédiatement ajouté. Sinon, il recevra un e-mail l'invitant à créer un profil HubRise. Dès son inscription, il pourra accéder à HubRise selon ses permissions.
+
 ## Modifier les permissions d’un utilisateur
 
-1. Dans **CONFIGURATION** > **Permissions**, cliquez sur l’icône de modification 🖉 à côté de l’utilisateur concerné.
-2. Sélectionnez un **rôle prédéfini** ou configurez un **rôle personnalisé** en cochant/décochant les permissions disponibles.
+1. Dans **CONFIGURATION** > **Permissions**, cliquez sur l’icône en forme de crayon à côté de l’utilisateur concerné, ou cliquez directement sur les permissions.
+2. Sélectionnez un rôle prédéfini ou configurez un rôle personnalisé en cochant/décochant les permissions disponibles.
 3. Cliquez sur **Définir les permissions**.
+
+---
+
+**REMARQUE IMPORTANTE** : Si vous supprimez votre propre permission **Gérer l'entité**, vous devrez demander à un autre utilisateur disposant de cette permission de vous la réattribuer.
+
+---
 
 ## Supprimer un utilisateur {#remove-user}
 
-1. Dans **CONFIGURATION** > **Permissions**, cliquez sur l’icône de suppression 🗑️ à côté de l’utilisateur.
+1. Dans **CONFIGURATION** > **Permissions**, cliquez sur l’icône en forme de corbeille à côté de l’utilisateur.
 2. Confirmez la suppression.
 
----
-
-**REMARQUE IMPORTANTE** : Un compte ne peut pas être laissé sans administrateur. Avant de supprimer un administrateur, assurez-vous qu’un autre utilisateur dispose des permissions nécessaires.
-
----
+Un compte ne peut pas être laissé sans utilisateur disposant de la permission **Gérer l'entité**. Si vous souhaitez supprimer le dernier utilisateur disposant de cette permission, attribuez d'abord cette permission à l'utilisateur test@hubrise.com avant de supprimer l’utilisateur concerné.
