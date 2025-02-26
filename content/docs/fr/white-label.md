@@ -32,14 +32,14 @@ Pour activer HubRise Marque Blanche, contactez votre responsable partenariat ou 
 Pour chaque application, les informations suivantes seront demandées :
 
 - Nom de l'application : Le nom affiché sur l'interface, par exemple _Pizza Flamme Commandes_.
-- Nom de domaine : Un sous-domaine personnalisé pour l'application, par exemple `commandes.pizza-flamme.com`. Vous devez posséder le domaine principal.
+- Nom de domaine : Un sous-domaine personnalisé pour l'application, par exemple _commandes.pizza-flamme.com_. Vous devez posséder le domaine principal.
 - Couleur principale : La couleur dominante, principalement utilisée pour les boutons et les éléments de navigation. Elle doit offrir un contraste suffisant sur un fond blanc.
 - Logo : Une image avec un ratio entre 2:1 et 6:1, au format PNG, JPEG ou WEBP.
 - Favicon : Une image de 64x64 px au format PNG.
 
 Votre responsable partenariat pourra vous conseiller pour la personnalisation de vos applications.
 
-## Configuration des sous-domaines
+### Configuration des sous-domaines
 
 Pour que vos applications soient accessibles sur votre nom de domaine, vous devez configurer un sous-domaine pour chaque application. Cette opération se fait dans l'interface de gestion de votre fournisseur de domaine (ex : OVH, GoDaddy, Gandi, etc.).
 
@@ -58,7 +58,7 @@ Chaque ligne représente une entrée DNS :
 - `IN CNAME` indique qu'il s'agit d'un alias pointant vers un autre domaine.
 - Le dernier champ est l'adresse cible, qui est fixe et doit être utilisée telle quelle.
 
-Dans cet exemple, si votre domaine est `pizza-flamme.com`, OrderLine sera accessible à l'adresse `commandes.pizza-flamme.com`, et votre Portail Marque Blanche à l'adresse `portail.pizza-flamme.com`.
+Dans cet exemple, si votre domaine est _pizza-flamme.com_, OrderLine sera accessible à l'adresse _commandes.pizza-flamme.com_, et votre Portail Marque Blanche à l'adresse _portail.pizza-flamme.com_.
 
 Une fois les sous-domaines ajoutés, informez votre responsable partenariat. Il se chargera alors de créer des certificats SSL pour chacune de vos applications sous un délai de deux jours ouvrés. Cette opération ne requiert aucune action de votre part.
 
