@@ -19,22 +19,21 @@ Instead of a fixed set of roles, you can now choose from predefined roles or ass
 
 ![Permissions](./001-2x-permissions.png)
 
-Predefined roles cover common use cases:
+Predefined roles simplify access management, but if none fit your needs, you can customise permissions as needed.
 
-- **Full Administrator** – Full access to the back office and all applications.
-- **Technical Partner** – Same as Full Administrator but without billing access.
-- **Back Office Viewer** – Read-only access to the back office and applications.
-- **Billing Manager** – Limited to invoices and payment settings.
+For example, an accountant who only needs access to invoices can be assigned the **Billing Manager** role. A technical partner may need to manage integrations but not receive invoices or handle user management. In this case, a predefined role like **Technical Partner** may be appropriate, or you can create a custom role by disabling the **Manage Entity** permission.
 
-For example, if a restaurant's accountant only needs access to invoices, they can be assigned the **Billing Manager** role. If a user needs to access the back office but not manage users, you can opt for a custom role and untick the **Manage Entity** permission.
+For a detailed breakdown of roles and settings, see our [Permissions documentation](/docs/permissions).
 
 ## App-Only Users
 
-Another improvement is app-only users, who can access OrderLine and Catalog Manager but not the main HubRise back office. When they log in, they see the newly introduced **Portal page**, which allows them to access the apps assigned to them without entering the back office.
+Some staff members only need to manage orders without accessing other business data. To support this, we’ve introduced **app-only users**, who can access OrderLine without back office permissions.
+
+This feature can also be used to restrict a user to Catalog Manager.
+
+When an app-only user logs in, they are redirected to the **Portal page**, where they can open their assigned apps and nothing else.
 
 ![App-Only Users](./002-permissions-portal.png)
-
-This can be particularly useful for staff who only need to manage orders or products without accessing other business data.
 
 ## App Link Integration in Third-Party Software
 
@@ -50,5 +49,3 @@ These links will work as long as the user has the necessary app permissions. If 
 ## Get Started
 
 The new permissions system is already in place. You can review and update user roles from the **SETTINGS > Permissions** section in your HubRise back office.
-
-For a detailed breakdown of roles and settings, see our [Permissions documentation](/docs/permissions).
