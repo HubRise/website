@@ -59,6 +59,14 @@ When assigning permissions to an Account or Location, the following rules apply:
 - Any back office permission grants access to `Use OrderLine` and, if assigned at the Account level, `Use Catalog Manager`.
 - `View Back Office` is required for any other back office permission.
 
+## Portal Page
+
+Users with the `Use OrderLine` or `Use Catalog Manager` permissions, without any back office permissions, are redirected to the **Portal page** upon login. From this page, they can only access their assigned applications.
+
+![Portal Page](./images/018-portal-page.png)
+
+This setup allows your employees to manage only orders or product catalogs without accessing your sensitive information.
+
 ## Add or Invite a User {#add-user}
 
 Users with the `Manage Entity` permission can add or invite users, and assign specific permissions.

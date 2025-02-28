@@ -1,5 +1,5 @@
 ---
-title: Introducing HubRise White Label – Your Brand, Our Technology
+title: HubRise White Label – Your Brand, Our Applications
 path_override: white-label
 date: 2025-02-26
 author: Janaina Wittner
@@ -26,13 +26,15 @@ The HubRise White Label programme is designed for software vendors, resellers, a
 
 With HubRise White Label, you can customise:
 
-- [OrderLine](/apps/orderline/overview) – Order management for locations
+- [OrderLine](/apps/orderline/overview) – Order centralisation for locations
 - [Catalog Manager](/apps/catalog-manager/overview) – Product catalog management
-- White Label Portal – A centralised login page under your domain
+- White Label Portal – A centralised login page under your domain name
 
-Your customers log in via your domain, see your logo, and interact with a product that feels fully integrated into your system.
+Your customers log in via your domain name, see your logo, and interact with a product that feels fully integrated into your system.
 
 ![White Label Portal](./001_white-label_portal.png)
+
+For more details, check our [HubRise White Label documentation](/docs/white-label).
 
 ## How It Works
 
@@ -43,8 +45,6 @@ Setting up your White Label solution is simple:
 3. We handle SSL certificates and setup.
 
 Your branded apps will be available in two business days, ready for your customers.
-
-For more details, check our [HubRise White Label documentation](/docs/white-label).
 
 ## Available Now
 

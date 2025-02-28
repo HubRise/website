@@ -59,6 +59,14 @@ Lorsque vous attribuez des permissions à un compte ou un point de vente, les r�
 - Toute permission back-office donne accès à `Utiliser OrderLine` et, si attribuée au niveau du compte, `Utiliser Catalog Manager`.
 - `Voir le back-office` est requis pour toute autre permission back-office.
 
+## Page Portail
+
+Les utilisateurs disposant uniquement des permissions `Utiliser OrderLine` ou `Utiliser Catalog Manager`, sans aucune permission de back-office, sont redirigés vers la **page Portail** lors de leur connexion. Depuis cette page, ils peuvent uniquement accéder aux applications qui leur sont attribuées.
+
+![Page Portail](./images/018-portal-page.png)
+
+Ce paramétrage permet à vos employés de gérer les commandes ou les catalogues de produits uniquement, sans accéder à vos données sensibles.
+
 ## Ajouter ou inviter un utilisateur {#add-user}
 
 Les utilisateurs disposant de la permission `Gérer l'entité` peuvent ajouter ou inviter des utilisateurs et leur attribuer des permissions spécifiques.

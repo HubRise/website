@@ -25,15 +25,13 @@ For example, an accountant who only needs access to invoices can be assigned the
 
 For a detailed breakdown of roles and settings, see our [Permissions documentation](/docs/permissions).
 
-## App-Only Users
+## Restricted Access Users
 
-Some staff members only need to manage orders without accessing other business data. To support this, we’ve introduced **app-only users**, who can access OrderLine without back office permissions.
+Some employees only need to manage orders without accessing your HubRise back office. To address this, we have introduced **restricted access users**. This feature can also be used to limit a user's access to Catalog Manager.
 
-This feature can also be used to restrict a user to Catalog Manager.
+When a restricted access user logs in, they are redirected to the **Portal page**, where they can only open the applications assigned to them.
 
-When an app-only user logs in, they are redirected to the **Portal page**, where they can open their assigned apps and nothing else.
-
-![App-Only Users](./002-permissions-portal.png)
+![Restricted Access Users](./002-permissions-portal.png)
 
 ## App Link Integration in Third-Party Software
 
