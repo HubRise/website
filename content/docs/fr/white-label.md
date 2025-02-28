@@ -14,24 +14,53 @@ Le programme **HubRise Marque Blanche** permet à certains partenaires de propos
 
 Avec HubRise Marque Blanche, les partenaires peuvent personnaliser l'apparence de certaines applications HubRise pour les adapter à leur identité visuelle. Les applications concernées sont :
 
-- [OrderLine](/apps/orderline/overview) : une application de prise de commandes pour les points de vente.
-  ![OrderLine](./images/024-branded-orderline.png)
+- [OrderLine](/apps/orderline/overview) : une application de centralisation des commandes.
+  ![OrderLine](./images/024-white-label-orderline.png)
 
 - [Catalog Manager](/apps/catalog-manager/overview) : une application de gestion des catalogues produits.
-  ![Catalog Manager](./images/023-branded-catalog-manager.png)
+  ![Catalog Manager](./images/023-white-label-catalog-manager.png)
 
 - Portail Marque Blanche : une interface de connexion pour les utilisateurs finaux.
 
 Pour chaque application, les éléments suivants sont personnalisables :
 
 - Les couleurs, le nom, le logo et le favicon pour refléter l'identité visuelle du partenaire.
-- Le nom de domaine afin de rassurer les utilisateurs finaux.
+- Le nom de domaine (tel que _commandes.pizza-flamme.com_) pour rassurer les utilisateurs finaux.
 
 En revanche, le back-office HubRise n'est pas personnalisable. Il reste accessible aux équipes internes du partenaire, qui peuvent donner accès aux utilisateurs finaux aux applications en marque blanche.
 
-## Mise en place de HubRise Marque Blanche
+## Gestion des utilisateurs et accès
 
-Pour activer HubRise Marque Blanche, contactez votre responsable partenariat ou écrivez à contact@hubrise.com.
+### Ajout d'un utilisateur
+
+Pour inviter un utilisateur à rejoindre votre environnement Marque Blanche, suivez les étapes indiquées dans la section [Ajouter un utilisateur](/docs/permissions#add-user).
+
+- Si l'utilisateur n'existe pas encore dans HubRise, il recevra une invitation par e-mail personnalisée avec un lien :
+  ![Email d'invitation](./images/025-white-label-email.png)
+
+  Il peut cliquer sur le lien pour accepter l'invitation, choisir un mot de passe et accéder à votre environnement Marque Blanche :
+  ![Définir le mot de passe](./images/030-white-label-password-setup.png)
+
+- Si l'utilisateur est déjà inscrit sur HubRise, il ne recevra pas d'e-mail mais pourra utiliser immédiatement ses nouvelles permissions.
+
+### Accès au Portail Marque Blanche
+
+Une fois connecté, l’utilisateur arrive sur le Portail Marque Blanche, une interface sous votre marque qui centralise l’accès aux applications disponibles.
+
+![Portail Marque Blanche](./images/026-white-label-portal.png)
+
+Sur ce portail, l’utilisateur voit les applications, sous le nom que vous avez choisi, avec votre favicon et vos couleurs. Il peut cliquer sur une application pour l'ouvrir dans un nouvel onglet. Les applications disponibles dépendent des permissions :
+
+- Catalog Manager, si la permission **Utiliser Catalog Manager** a été attribuée et qu'un compte est sélectionné.
+- OrderLine, si la permission **Utiliser OrderLine** a été attribuée.
+
+### Tester le Portail Marque Blanche
+
+Pour ouvrir le Portail Marque Blanche et tester l'expérience utilisateur, connectez-vous à votre compte HubRise, ouvrez la page **CONNEXIONS** et cliquez sur **Portail Marque Blanche** en haut à droite.
+
+## Mise en place et configuration
+
+Pour activer HubRise Marque Blanche, contactez votre Responsable Partenariat ou écrivez à contact@hubrise.com.
 
 Pour chaque application, les informations suivantes seront demandées :
 
@@ -64,29 +93,4 @@ Chaque ligne représente une entrée DNS :
 
 Dans cet exemple, si votre domaine est _pizza-flamme.com_, OrderLine sera accessible à l'adresse _commandes.pizza-flamme.com_, et votre Portail Marque Blanche à l'adresse _portail.pizza-flamme.com_.
 
-Une fois les sous-domaines ajoutés, informez votre responsable partenariat. Il se chargera alors de créer des certificats SSL pour chacune de vos applications sous un délai de deux jours ouvrés, sans action supplémentaire de votre part.
-
-## Ajout d'un utilisateur
-
-Pour inviter un utilisateur à rejoindre votre environnement Marque Blanche, suivez les étapes indiquées dans la section [Ajouter un utilisateur](/docs/permissions#add-user).
-
-- Si l'utilisateur n'a pas encore de compte HubRise, il recevra un e-mail d'invitation personnalisé avec un lien. Il lui suffira de cliquer sur ce lien pour accepter l'invitation, choisir un mot de passe, et accéder à votre environnement Marque Blanche.
-
-  ![E-mail d'invitation](./images/025-white-label-email.png)
-
-- Sinon, il ne recevra pas d'e-mail, mais pourra utiliser immédiatement ses nouvelles permissions.
-
-## Accès au Portail Marque Blanche
-
-Une fois connecté, l’utilisateur arrive sur le Portail Marque Blanche, une interface sous votre marque qui centralise l’accès aux applications disponibles.
-
-![Portail Marque Blanche](./images/026-white-label-portal.png)
-
-Sur ce portail, l’utilisateur voit les applications, sous le nom que vous avez choisi, avec votre favicon et vos couleurs. Il peut cliquer sur une application pour l'ouvrir dans un nouvel onglet. Les applications disponibles dépendent des permissions :
-
-- Catalog Manager, si la permission **Utiliser Catalog Manager** a été attribuée et qu'un compte est sélectionné.
-- OrderLine, si la permission **Utiliser OrderLine** a été attribuée.
-
-### Tester le Portail Marque Blanche
-
-Pour ouvrir le Portail Marque Blanche et tester l'expérience utilisateur, connectez-vous à votre compte HubRise, ouvrez la page **CONNEXIONS** et cliquez sur **Portail Marque Blanche** en haut à droite.
+Une fois les sous-domaines ajoutés, informez votre Responsable Partenariat. Il se chargera alors de créer des certificats SSL pour chacune de vos applications sous un délai de deux jours ouvrés, sans action supplémentaire de votre part.
