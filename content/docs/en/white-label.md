@@ -14,11 +14,11 @@ The **HubRise White Label** programme allows selected partners to offer HubRise 
 
 With HubRise White Label, partners can customise the appearance of certain HubRise applications to align with their visual identity. The following applications can be customised:
 
-- [OrderLine](/apps/orderline/overview): An order centralisation application for locations.
-  ![OrderLine](./images/024-branded-orderline.png)
+- [OrderLine](/apps/orderline/overview): an order centralisation application.
+  ![OrderLine](./images/024-white-label-orderline.png)
 
-- [Catalog Manager](/apps/catalog-manager/overview): A product catalog management application.
-  ![Catalog Manager](./images/023-branded-catalog-manager.png)
+- [Catalog Manager](/apps/catalog-manager/overview): a product catalog management application.
+  ![Catalog Manager](./images/023-white-label-catalog-manager.png)
 
 - White Label Portal: A login interface for end users.
 
@@ -35,9 +35,11 @@ However, the HubRise back office cannot be customised. It remains accessible to 
 
 To invite a user to your White Label environment, follow the steps outlined in the [Add a User](/docs/permissions#add-user) section.
 
-- If the user does not yet exist in HubRise, they will receive a personalised email invitation with a link. They can click the link to accept the invitation, choose a password, and access your White Label environment.
-
+- If the user does not yet exist in HubRise, they will receive a personalised email invitation with a link:
   ![Invitation Email](./images/025-white-label-email.png)
+
+  They can click the link to accept the invitation, choose a password, and access your White Label environment:
+  ![Set Password](./images/030-white-label-password-setup.png)
 
 - If they are already registered in HubRise, they will not receive an email but can immediately use their new permissions.
 
