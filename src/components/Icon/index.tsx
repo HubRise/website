@@ -7,6 +7,8 @@ import type { StyledIconProps } from "./Styles"
 
 // See available codes on https://fonts.google.com/icons
 export type IconCode =
+  | "arrow_forward"
+  | "check"
   | "chevron_left"
   | "chevron_right"
   | "close"

@@ -1,6 +1,10 @@
+import { GetInTouchYaml } from "@components/GetInTouch/types"
+import { GetStartedYaml } from "@components/GetStarted/types"
 import { AppsYaml } from "@layouts/Apps/types"
+import { ContactUsYaml } from "@layouts/ContactUs/types"
 import { DocumentationIndexYaml } from "@layouts/DocumentationIndex/types"
 import { DocumentationSimpleFrontMatter } from "@layouts/DocumentationSimple/types"
+import { FAQsYaml } from "@layouts/FAQs/types"
 import { FrontpageYaml } from "@layouts/Frontpage/types"
 import { PartnersYaml } from "@layouts/Partners/types"
 import { PricingYaml } from "@layouts/Pricing/types"
@@ -16,6 +20,7 @@ export type RouteNameStatic =
   | "apps"
   | "blog"
   | "branding"
+  | "contact-us"
   | "contributing"
   | "developers"
   | "docs"
@@ -47,9 +52,11 @@ export type LayoutName =
   | "apps"
   | "blog-index"
   | "blog-post"
+  | "contact-us"
   | "documentation"
   | "documentation-index"
   | "documentation-simple"
+  | "faqs"
   | "frontpage"
   | "partners"
   | "pricing"
@@ -60,18 +67,22 @@ export type Context<L extends LayoutName> = L extends "apps"
   ? { context: { mdFiles: Array<BlogMdFile>; archives: BlogArchives } }
   : L extends "blog-post"
   ? { context: { mdFile: BlogMdFile; archives: BlogArchives } }
+  : L extends "contact-us"
+  ? { context: { yaml: ContactUsYaml } }
   : L extends "documentation"
   ? { context: { mdFile: DocMdFile; folder: DocFolder } }
   : L extends "documentation-index"
   ? { context: { yaml: DocumentationIndexYaml } }
   : L extends "documentation-simple"
   ? { context: { content: string; frontMatter: DocumentationSimpleFrontMatter } }
+  : L extends "faqs"
+  ? { context: { yaml: FAQsYaml }; getInTouch: { yaml: GetInTouchYaml } }
   : L extends "frontpage"
   ? { context: { yaml: FrontpageYaml } }
   : L extends "partners"
   ? { context: { yaml: PartnersYaml } }
   : L extends "pricing"
-  ? { context: { yaml: PricingYaml } }
+  ? { context: { yaml: PricingYaml }; getStarted: { yaml: GetStartedYaml } }
   : L extends "testimonials"
   ? { context: { yaml: TestimonialsYaml } }
   : never
