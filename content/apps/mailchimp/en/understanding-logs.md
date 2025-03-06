@@ -14,7 +14,7 @@ Logs are in JSON format. For more information, check our [documentation on JSON 
 
 ## Operations table
 
-The **Latest operations** table might contain an **ORDER** and/or a **CUSTOMER** column depending on the configuration options chosen. For more information, see [Configurations Options](/apps/mailchimp/configuration#options).
+The **Latest operations** table might contain an **ORDER** and/or a **CUSTOMER** column depending on the configuration options chosen. For more information, see [Configurations Options](/apps/mailchimp/configuration).
 
 Operations with a **Customer** or **Order** entry indicate that a single customer was transferred to Mailchimp.
 
