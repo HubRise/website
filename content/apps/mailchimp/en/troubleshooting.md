@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting
 path_override: troubleshooting
-position: 5
+position: 6
 layout: documentation
 meta:
   title: Troubleshooting | Mailchimp | HubRise
