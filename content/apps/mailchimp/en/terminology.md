@@ -1,7 +1,7 @@
 ---
 title: Terminology
 path_override: terminology
-position: 6
+position: 7
 layout: documentation
 meta:
   title: Terminology | Mailchimp | HubRise
