@@ -1,7 +1,7 @@
 ---
 title: Understanding Logs
 path_override: understanding-logs
-position: 4
+position: 5
 layout: documentation
 meta:
   title: Understanding Logs | Mailchimp | HubRise
