@@ -10,6 +10,7 @@ import documentationIndex from "./documentationIndex"
 import documentationSimple from "./documentationSimple"
 import faqs from "./faqs"
 import frontpage from "./frontpage"
+import orderline from "./orderline"
 import partners from "./partners"
 import pricing from "./pricing"
 import testimonials from "./testimonials"
@@ -34,6 +35,8 @@ export const renderContent = async (route: Route<RouteName, LayoutName>, router:
       return await faqs(route as Route<RouteName, "faqs">)
     case "frontpage":
       return await frontpage(route as Route<RouteName, "frontpage">)
+    case "orderline":
+      return await orderline(route as Route<RouteName, "orderline">)
     case "partners":
       return await partners(route as Route<RouteName, "partners">)
     case "pricing":

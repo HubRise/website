@@ -199,9 +199,7 @@ content:
     title: Free HubRise apps to complete your integrations when needed
     integration_apps:
       - title: Centralise orders with OrderLine
-        afterExpansion: true
         image: orderline.png
-        sidePosition: right
         advantages:
           - text: Centralise orders from all platforms.
           - text: Adjust product availability.
@@ -213,9 +211,7 @@ content:
         button_label: Learn more about OrderLine
         button_link: a
       - title: Centralise product management with Catalog Manager
-        afterExpansion: false
         image: catalog-manager.png
-        sidePosition: left
         advantages:
           - text: Manage product catalogs for all locations.
           - text: Adjust prices and menus by location.
@@ -227,9 +223,7 @@ content:
         button_label: Explore Catalog Manager
         button_link: a
       - title: Access automated reports on the HubRise Dashboard
-        afterExpansion: true
         image: dashboard.png
-        sidePosition: right
         advantages:
           - text: View aggregated sales data by channel and location.
           - text: Track top-performing products and peak times.

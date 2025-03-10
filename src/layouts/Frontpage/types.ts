@@ -1,5 +1,3 @@
-import { SidePosition } from "@components/Block/utils"
-
 import { HeroAppColor } from "./Hero/utils"
 
 export type TMetric = {
@@ -21,9 +19,7 @@ export type TFeatureCard = {
 
 export type TIntegrationApp = {
   title: string
-  afterExpansion: boolean
   image: string
-  sidePosition: SidePosition
   advantages: Array<{
     text: string
   }>

@@ -6,6 +6,7 @@ import { DocumentationIndexYaml } from "@layouts/DocumentationIndex/types"
 import { DocumentationSimpleFrontMatter } from "@layouts/DocumentationSimple/types"
 import { FAQsYaml } from "@layouts/FAQs/types"
 import { FrontpageYaml } from "@layouts/Frontpage/types"
+import { OrderlineYaml } from "@layouts/Orderline/types"
 import { PartnersYaml } from "@layouts/Partners/types"
 import { PricingYaml } from "@layouts/Pricing/types"
 import { TestimonialsYaml } from "@layouts/Testimonials/types"
@@ -44,6 +45,7 @@ const staticRoutes = async (): Promise<Routes> => {
     createRoute({ href: "/testimonials", language: "en", name: "testimonials", layout: "testimonials", context: { yaml: await readYamlFile<TestimonialsYaml>("/en", "testimonials") } }),
     createRoute({ href: "/partners", language: "en", name: "partners", layout: "partners", context: { yaml: await readYamlFile<PartnersYaml>("/en", "partners") } }),
     createRoute({ href: "/contact-us", language: "en", name: "contact-us", layout: "contact-us", context: { yaml: await readYamlFile<ContactUsYaml>("/en", "contact-us") } }),
+    createRoute({ href: "/orderline", language: "en", name: "orderline", layout: "orderline", context: { yaml: await readYamlFile<OrderlineYaml>("/en", "orderline") }, getInTouch: { yaml: await readYamlFile<GetInTouchYaml>("/en", "get-in-touch") } }),
     createRoute({ href: "/fr", language: "fr", name: "frontpage", layout: "frontpage", context: { yaml: await readYamlFile<FrontpageYaml>("/fr", "frontpage") } }),
     createRoute({ href: "/fr/apps", language: "fr", name: "apps", layout: "apps", context: { yaml: await readYamlFile<AppsYaml>("/fr", "apps") } }),
     createRoute({ href: "/fr/tarifs", language: "fr", name: "pricing", layout: "pricing", context: { yaml: await readYamlFile<PricingYaml>("/fr", "pricing") }, getStarted: {yaml: await readYamlFile<GetStartedYaml>("/fr", "get-started")} }),
@@ -54,6 +56,7 @@ const staticRoutes = async (): Promise<Routes> => {
     createRoute({ href: "/fr/temoignages", language: "fr", name: "testimonials", layout: "testimonials", context: { yaml: await readYamlFile<TestimonialsYaml>("/fr", "testimonials") } }),
     createRoute({ href: "/fr/partenaires", language: "fr", name: "partners", layout: "partners", context: { yaml: await readYamlFile<PartnersYaml>("/fr", "partners") } }),
     createRoute({ href: "/fr/contact-us", language: "fr", name: "contact-us", layout: "contact-us", context: { yaml: await readYamlFile<ContactUsYaml>("/fr", "contact-us") } }),
+    createRoute({ href: "/fr/orderline", language: "fr", name: "orderline", layout: "orderline", context: { yaml: await readYamlFile<OrderlineYaml>("/fr", "orderline") }, getInTouch: { yaml: await readYamlFile<GetInTouchYaml>("/en", "get-in-touch") } }),
   ]
 }
 
