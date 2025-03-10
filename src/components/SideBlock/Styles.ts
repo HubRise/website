@@ -46,18 +46,31 @@ export const SecondaryContent = styled.div`
   grid-area: secondary;
 `
 
-export const Content = styled.div<{ $secondaryPosition: SidePosition }>`
+export const Content = styled.div<{ $secondaryPosition: SidePosition; $contentFirst: boolean }>`
   display: flex;
   flex-direction: column;
   gap: 1rem;
 
-  ${MainContant} {
-    order: 2;
-  }
+  ${({ $contentFirst }) =>
+    $contentFirst
+      ? css`
+          ${MainContant} {
+            order: 1;
+          }
 
-  ${SecondaryContent} {
-    order: 1;
-  }
+          ${SecondaryContent} {
+            order: 2;
+          }
+        `
+      : css`
+          ${MainContant} {
+            order: 2;
+          }
+
+          ${SecondaryContent} {
+            order: 1;
+          }
+        `}
 
   @media (min-width: ${breakpoints.large}) {
     display: grid;

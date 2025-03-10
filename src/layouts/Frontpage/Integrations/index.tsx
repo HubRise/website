@@ -9,7 +9,7 @@ import { iconSizes } from "@utils/styles"
 
 import { TIntegrationApp } from "../types"
 
-import { SideBlockWrapper, ContentWrapper, Title, Advantage, Advantages, IconWrapper, AdvantageText } from "./Styles"
+import { SideBlocks, ContentWrapper, Title, Advantage, Advantages, IconWrapper, AdvantageText } from "./Styles"
 
 interface IntegrationsProps {
   title: string
@@ -19,7 +19,7 @@ interface IntegrationsProps {
 const Integrations = ({ title, integration_apps }: IntegrationsProps) => {
   return (
     <ScreenContainer bgColor="backgroundLight" verticalPadding="big" withHeader title={title}>
-      <SideBlockWrapper>
+      <SideBlocks>
         {integration_apps.map((integrationApp, index) => {
           return (
             <SideBlock
@@ -55,7 +55,7 @@ const Integrations = ({ title, integration_apps }: IntegrationsProps) => {
             </SideBlock>
           )
         })}
-      </SideBlockWrapper>
+      </SideBlocks>
     </ScreenContainer>
   )
 }
