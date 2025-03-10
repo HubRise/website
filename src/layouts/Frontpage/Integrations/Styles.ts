@@ -27,7 +27,7 @@ export const ContentWrapper = styled.div<{ $padding?: SidePosition }>`
   }
 `
 
-export const SideBlockWrapper = styled.div`
+export const SideBlocks = styled.div`
   padding: 3.5rem 0 0;
   display: flex;
   flex-direction: column;

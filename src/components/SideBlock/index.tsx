@@ -6,6 +6,7 @@ interface SideBlockProps {
   side?: SidePosition
   secondaryContent?: React.ReactNode
   secondaryPosition?: SidePosition
+  contentFirst?: boolean
 }
 
 export const SideBlock = ({
@@ -13,10 +14,11 @@ export const SideBlock = ({
   side = "right",
   secondaryContent,
   secondaryPosition = "right",
+  contentFirst = false,
 }: SideBlockProps) => {
   return (
     <Container $side={side}>
-      <Content $secondaryPosition={secondaryPosition}>
+      <Content $secondaryPosition={secondaryPosition} $contentFirst={contentFirst}>
         <MainContant>{children}</MainContant>
         {secondaryContent && <SecondaryContent>{secondaryContent}</SecondaryContent>}
       </Content>
