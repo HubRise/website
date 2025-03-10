@@ -69,6 +69,7 @@ Les cases à cocher de cette section permettent de configurer le flux de synchro
 
 - **Activer la synchronisation automatique du catalogue** : cochez la case pour que le menu Smood soit automatiquement mis à jour à chaque modification du catalogue HubRise.
 - **Activer la synchronisation automatique de l'inventaire** : cochez la case pour que les articles en rupture de stock dans l'inventaire HubRise soient automatiquement supprimés du menu Smood.
+- **Activer la synchronisation automatique des heures d'ouverture** : cochez la case pour que les heures d'ouverture soient automatiquement mises à jour sur Smood à chaque modification sur HubRise.
 - **Activer la synchronisation automatique du statut de Smood à HubRise** : Lorsqu'une commande est annulée dans Smood, la mise à jour de ce statut est toujours envoyée à HubRise. Quand cette option est cochée, d'autres statuts Smood sont également envoyés.
 
 ### Enregistrer vos modifications

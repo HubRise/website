@@ -35,6 +35,7 @@ Connecting Smood allows your ordering and delivery platform to:
 - Push customer information to HubRise.
 - Pull a catalog from HubRise, with variants support.
 - Synchronise inventory with HubRise.
+- Synchronise opening hours with HubRise.
 
 Smood can be connected to HubRise from the Smood back office.
 
