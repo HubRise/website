@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+import { StyledButton } from "@components/Button/Styles"
 import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
 
 import {
@@ -29,6 +30,11 @@ export const HeaderWrapper = styled.div`
   max-width: 65rem;
   margin: 0 auto;
   position: relative;
+
+  ${StyledButton} {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   @media (min-width: ${breakpoints.biggest}) {
     max-width: 80rem;

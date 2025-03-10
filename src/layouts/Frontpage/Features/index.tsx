@@ -1,7 +1,7 @@
 import { type MDXRemoteSerializeResult } from "next-mdx-remote"
 
 import Card from "@components/Card"
-import Container from "@components/ScreenContainer"
+import ScreenContainer from "@components/ScreenContainer"
 import { ContentImageMap } from "@utils/contentImage"
 
 import { TFeatureCard } from "../types"
@@ -17,7 +17,13 @@ interface FeaturesProps {
 
 const Features = ({ title, features_cards, descriptionMdx, featuresImagesMap }: FeaturesProps): JSX.Element => {
   return (
-    <Container bgColor="backgroundLight" verticalPadding="big" withHeader title={title} descriptionMdx={descriptionMdx}>
+    <ScreenContainer
+      bgColor="backgroundLight"
+      verticalPadding="big"
+      withHeader
+      title={title}
+      descriptionMdx={descriptionMdx}
+    >
       <Cards>
         {features_cards.map(({ title, description, image }, index) => {
           return (
@@ -31,7 +37,7 @@ const Features = ({ title, features_cards, descriptionMdx, featuresImagesMap }: 
           )
         })}
       </Cards>
-    </Container>
+    </ScreenContainer>
   )
 }
 
