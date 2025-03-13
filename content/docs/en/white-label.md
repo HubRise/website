@@ -79,15 +79,15 @@ To make your applications accessible on your domain, you must configure a subdom
 Add a `CNAME` record for each application as shown below:
 
 ```
-menus  300 IN CNAME catalog-manager.hubrise-apps.com.
-orders 300 IN CNAME orderline.hubrise-apps.com.
-portal 300 IN CNAME manager.hubrise.com.
+menus  1800 IN CNAME catalog-manager.hubrise-apps.com.
+orders 1800 IN CNAME orderline.hubrise-apps.com.
+portal 1800 IN CNAME manager.hubrise.com.
 ```
 
 Each line represents a DNS entry:
 
 - The first field is the chosen subdomain (e.g. `menus`).
-- The second field (`300`) is the cache duration (TTL) in seconds.
+- The second field (`1800`) is the cache duration (TTL) in seconds.
 - `IN CNAME` indicates an alias pointing to another domain.
 - The last field is the target address, which must be used as is.
 

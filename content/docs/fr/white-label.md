@@ -79,15 +79,15 @@ Pour que vos applications soient accessibles sur votre nom de domaine, vous deve
 Ajoutez une entrée de type `CNAME` pour chaque application, en suivant cet exemple :
 
 ```
-menus     300 IN CNAME catalog-manager.hubrise-apps.com.
-commandes 300 IN CNAME orderline.hubrise-apps.com.
-portail   300 IN CNAME manager.hubrise.com.
+menus     1800 IN CNAME catalog-manager.hubrise-apps.com.
+commandes 1800 IN CNAME orderline.hubrise-apps.com.
+portail   1800 IN CNAME manager.hubrise.com.
 ```
 
 Chaque ligne représente une entrée DNS :
 
 - Le premier champ est le sous-domaine choisi (ex : `menus`).
-- Le second champ (`300`) correspond au temps de mise en cache (TTL) en secondes.
+- Le second champ (`1800`) correspond au temps de mise en cache (TTL) en secondes.
 - `IN CNAME` indique qu'il s'agit d'un alias pointant vers un autre domaine.
 - Le dernier champ est l'adresse cible, qui est fixe et doit être utilisée telle quelle.
 
