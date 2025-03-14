@@ -1,4 +1,3 @@
-import Link from "next/link"
 import styled, { css } from "styled-components"
 
 import Icon from "@components/Icon"
@@ -8,14 +7,17 @@ export const StyledNav = styled.div<{ $isSticky: boolean }>`
   position: sticky;
   top: ${sizes.headerHeight};
   z-index: ${zIndexValues.header};
-  padding: 0.5rem 0;
+  background-color: ${colors.white};
+  padding: 0.5rem 0.625rem 3.5rem;
+
+  @media (min-width: ${breakpoints.large}) {
+    padding: 0.5rem 0.625rem 5rem;
+  }
 
   ${(props) =>
     props.$isSticky &&
     css`
-      padding-left: 0.625rem;
-      padding-right: 0.625rem;
-      background-color: ${colors.primary};
+      padding-bottom: 0.5rem !important;
     `}
 `
 
@@ -25,31 +27,19 @@ export const Container = styled.div<{ $isSticky: boolean }>`
   margin: 0 auto;
   display: flex;
   align-items: center;
-  background-color: ${colors.white};
+  background-color: ${colors.backgroundLight};
   position: relative;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
-
-  ${(props) =>
-    props.$isSticky &&
-    css`
-      padding-left: 0;
-      padding-right: 0;
-    `}
-
-  @media (min-width: ${breakpoints.large}) {
-    border-radius: ${sizes.borderRadius};
-    padding-left: 1.56rem;
-    padding-right: 1.56rem;
-  }
+  border-radius: 0.5rem;
 `
 
 export const SearchWrapper = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 0.5rem 0;
-  border-right: 2px solid ${colors.backgroundLight};
+  padding: 0.75rem 0;
+  border-right: 1px solid ${colors.borderLight};
   flex-grow: 0;
   flex-shrink: 1;
 `
@@ -60,13 +50,20 @@ export const Input = styled.input`
   font-size: 1rem;
   line-height: 1;
   border: none;
+  background-color: ${colors.backgroundLight};
+  color: ${colors.textDark};
+
   &:focus {
     outline: none;
+  }
+
+  &::placeholder {
+    color: ${colors.textDark};
   }
 `
 
 export const CategoryFilterWrapper = styled.div`
-  margin-left: 0.5rem;
+  margin-left: 0.625rem;
   flex-grow: 1;
   flex-shrink: 0;
   display: flex;
@@ -74,16 +71,12 @@ export const CategoryFilterWrapper = styled.div`
   cursor: pointer;
   font-size: 1rem;
   line-height: 1;
-
-  @media (min-width: ${breakpoints.large}) {
-    margin-left: 1.56rem;
-  }
 `
 
 export const CategoryFilter = styled.button`
   display: flex;
   align-items: center;
-  color: ${colors.primary};
+  color: ${colors.textDarkest};
   ${mixin.clickable}
 `
 
@@ -93,12 +86,14 @@ export const CategoryList = styled.ul<{ $isExpanded: boolean }>`
   left: 0;
   width: 100%;
   background-color: ${colors.white};
-  border-radius: ${sizes.borderRadius};
+  border-radius: 0.5rem;
   box-shadow: ${boxShadows.large};
+  text-align: left;
 
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  overflow: hidden;
 
   ${(props) =>
     props.$isExpanded &&
@@ -116,20 +111,28 @@ export const CategoryList = styled.ul<{ $isExpanded: boolean }>`
 `
 
 export const CategoryItem = styled.li<{ $isActive: boolean }>`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   cursor: pointer;
   padding: 0.5rem 1rem;
   transition: background-color 0.3s ease-in;
   ${mixin.clickable}
 
+  background-color: ${({ $isActive }) => ($isActive ? colors.backgroundLight : colors.white)};
+  color: ${({ $isActive }) => ($isActive ? colors.primary : colors.textDark)};
+
   &:hover {
     background-color: ${colors.backgroundLight};
   }
+`
 
-  color: ${({ $isActive }) => ($isActive ? colors.primary : colors.textDark)};
+export const CheckIcon = styled(Icon).attrs({ size: iconSizes._20 })`
+  color: ${colors.primary};
 `
 
 export const ArrowIcon = styled(Icon).attrs({ size: iconSizes._25 })`
-  color: ${colors.primary};
+  color: ${colors.textDarkest};
   margin-left: 0.25;
 
   @media (min-width: ${breakpoints.large}) {
@@ -138,25 +141,10 @@ export const ArrowIcon = styled(Icon).attrs({ size: iconSizes._25 })`
 `
 
 export const SearchIcon = styled(Icon).attrs({ size: iconSizes._25 })`
+  color: ${colors.textDark};
   margin-right: 0.25;
 
   @media (min-width: ${breakpoints.large}) {
     margin-right: 0.5rem;
   }
-`
-
-export const List = styled.ul`
-  ${mixin.container};
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-`
-
-export const Item = styled.li<{ $isSticky: boolean }>`
-  ${({ $isSticky }) => mixin.dotSeparatedList("0.5rem", $isSticky ? colors.white : undefined)};
-  line-height: 2rem;
-`
-
-export const StyledLink = styled(Link)<{ $isActive: boolean; $isSticky: boolean }>`
-  color: ${({ $isActive }) => ($isActive ? colors.primary : colors.textDark)};
 `

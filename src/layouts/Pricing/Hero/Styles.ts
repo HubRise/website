@@ -44,6 +44,7 @@ export const ProposalTitle = styled.h4`
   color: ${colors.textDarkest};
   font-weight: 600;
 `
+
 export const ProposalText = styled.p`
   ${fontSizeMixins.fontSizeTextMd}
 `

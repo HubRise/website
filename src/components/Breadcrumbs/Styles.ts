@@ -17,24 +17,30 @@ export const StyledBreadcrumbs = styled.ul`
 
 export const Item = styled.li`
   font-size: ${fontSizes._14};
-  color: ${colors.textDarkest};
+  font-weight: 500;
+  color: ${colors.textDark};
   white-space: nowrap;
+  text-transform: capitalize;
 
   &::after {
     content: ">";
     margin: 0 0.5rem;
+    color: #d0d5dd;
+    font-size: ${fontSizes._18};
+    vertical-align: middle;
   }
 
   &:last-of-type {
-    color: ${colors.textMedium};
+    color: #344054;
+    font-weight: 600;
 
     &::after {
       content: "";
+      margin: 0;
     }
   }
 `
 
 export const ItemLink = styled(Link)`
-  color: ${colors.textDarkest};
   ${mixin.linkOver(colors.primary)};
 `

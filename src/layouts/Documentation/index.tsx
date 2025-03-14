@@ -2,7 +2,6 @@
 
 import * as React from "react"
 
-import Breadcrumbs from "@components/Breadcrumbs"
 import DocumentationContainer from "@components/DocumentationContainer"
 import DocumentationWrapper from "@components/DocumentationWrapper"
 import useTranslation from "@hooks/client/useTranslation"
@@ -13,6 +12,7 @@ import { HeaderLink } from "@utils/mdx/remarkHeadingsPlugin"
 import AppInfo from "./AppInfo"
 import Feedback from "./Feedback"
 import Gallery from "./Gallery"
+import Hero from "./Hero"
 import Navigator from "./Navigator"
 import { Content, LogoImage, LogoLink, Main, Navigation, Page, Warning } from "./Styles"
 
@@ -39,7 +39,7 @@ const Documentation = ({
 
   return (
     <DocumentationWrapper contentImages={contentImages} title={[folder.name, mdFile.frontMatter.title].join(" - ")}>
-      <Breadcrumbs breadcrumbs={mdFile.breadcrumbs} />
+      <Hero breadcrumbs={mdFile.breadcrumbs} title={folder.name} />
 
       <Page>
         {mdFile.copyFromLanguage && <Warning>{t("documentation.language_warning." + mdFile.copyFromLanguage)}</Warning>}
