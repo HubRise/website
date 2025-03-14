@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components"
 
-import { colors, fontSizes, lineHeights, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizes, lineHeights, mixin } from "@utils/styles"
 
 const commonTitleStyles = css`
   color: ${colors.textDarkest};
@@ -11,6 +11,23 @@ const commonTitleStyles = css`
 `
 
 const paragraphSpacing = "1rem"
+
+const underlineMixin = css`
+  content: "";
+  position: absolute;
+  left: 0;
+  right: inherit;
+  top: 100%;
+  margin: 10px auto;
+  width: 5rem;
+  height: 0.1875rem;
+  background: ${colors.primary};
+  border-radius: 6.25rem;
+
+  @media (min-width: ${breakpoints.biggest}) {
+    width: 7.5rem;
+  }
+`
 
 export const StyledContainer = styled.div`
   font-family: "Poppins", sans-serif;
@@ -27,15 +44,7 @@ export const StyledContainer = styled.div`
     }
 
     &:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: inherit;
-      top: 100%;
-      margin: 10px auto;
-      width: 15%;
-      height: 3px;
-      background: ${colors.primary};
+      ${underlineMixin}
     }
   }
 
@@ -47,15 +56,7 @@ export const StyledContainer = styled.div`
     margin: 2.5rem 0 2.5rem 0;
 
     &:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: inherit;
-      top: 100%;
-      margin: 10px auto;
-      width: 10%;
-      height: 3px;
-      background: #ececec;
+      ${underlineMixin}
     }
   }
 

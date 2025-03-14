@@ -40,10 +40,13 @@ export const Main = styled.div`
 `
 
 export const Content = styled.div`
-  padding: ${sizes.blockVerticalPadding} 0.9375rem;
+  padding: 2rem 1rem;
   background-color: ${colors.backgroundWhite};
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 
   @media (min-width: ${breakpoints.large}) {
+    padding: 2rem 4rem 2rem 1rem;
     position: relative;
     ${mixin.expandBefore({ width: "100vw", color: colors.backgroundWhite })};
   }
@@ -56,6 +59,7 @@ export const LogoLink = styled(Link)`
   background-color: ${colors.backgroundWhite};
   line-height: 0;
   ${mixin.centerElement};
+  border-radius: 0.5rem;
 
   @media (min-width: ${breakpoints.large}) {
     padding: ${sizes.desktopPadding};
@@ -74,12 +78,13 @@ export const LogoImage = styled(Image)`
 export const Navigation = styled.div`
   grid-area: navigation;
   background-color: ${colors.backgroundWhite};
-
   position: sticky;
   top: calc(${sizes.headerHeight} + ${gap});
+  border-radius: 0.5rem;
 
   @media (max-width: ${breakpoints.large}) {
     top: ${sizes.headerHeight};
     z-index: ${zIndexValues.header};
+    border-radius: 0;
   }
 `

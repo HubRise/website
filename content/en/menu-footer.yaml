@@ -1,7 +1,7 @@
 sections:
   - title: Integrations
     links:
-      - title: Apps
+      - title: Integrations
         to: /apps
       - title: Contribute to the Documentation
         to: /contributing
