@@ -1,6 +1,7 @@
 - title: Accueil
   to: /fr
   mobile_only: true
+  # TODO: Need to translate
 - title: Apps
   to: /fr/apps
 - title: Tarifs

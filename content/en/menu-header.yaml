@@ -1,7 +1,7 @@
 - title: Home
   to: /
   mobile_only: true
-- title: Apps
+- title: Integrations
   to: /apps
 - title: Pricing
   to: /pricing

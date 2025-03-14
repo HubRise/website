@@ -1,6 +1,7 @@
 sections:
   - title: Intégrations
     links:
+      # TODO: Need to translate
       - title: Apps
         to: /fr/apps
       - title: Contribuer à la documentation

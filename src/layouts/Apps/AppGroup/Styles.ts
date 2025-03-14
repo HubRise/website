@@ -2,17 +2,13 @@ import Image from "next/image"
 import Link from "next/link"
 import styled, { css } from "styled-components"
 
-import { boxShadows, breakpoints, colors, fontSizes, mixin, sizes } from "@utils/styles"
+import { boxShadows, breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
 export const Group = styled.div`
   display: grid;
-  grid-gap: 1.5rem;
+  grid-gap: 1.25rem;
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   margin-top: 1rem;
-
-  @media (min-width: ${breakpoints.medium}) {
-    grid-gap: 2rem;
-  }
 `
 export const AppLogo = styled.div`
   height: 100px;
@@ -69,7 +65,7 @@ const appBox = css`
   height: 100%;
   min-height: 15rem;
   background-color: ${colors.backgroundLightest};
-  border-radius: ${sizes.borderRadius};
+  border-radius: 0.375rem;
   box-shadow: ${boxShadows.medium};
   text-align: center;
   font-size: ${fontSizes._14};
