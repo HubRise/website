@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 import { StyledButton } from "@components/Button/Styles"
-import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 import {
   ScreenContainerBgColor,
@@ -57,18 +57,7 @@ export const Title = styled.h2<{ $bgColor: ScreenContainerBgColor }>`
 `
 
 export const Description = styled.div`
+  ${mixin.description}
+  text-align: center;
   margin: 1.25rem auto 0;
-
-  p {
-    ${fontSizeMixins.fontSizeTextMd}
-    text-align: center;
-
-    @media (min-width: ${breakpoints.large}) {
-      ${fontSizeMixins.fontSizeTextXl}
-    }
-
-    @media (min-width: ${breakpoints.biggest}) {
-      ${fontSizeMixins.fontSizeText2Xl}
-    }
-  }
 `

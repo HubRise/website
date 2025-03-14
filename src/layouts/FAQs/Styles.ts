@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 import { StyledCard } from "@components/Card/Styles"
 import { StyledUnderline } from "@components/Underline/Styles"
-import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
+import { breakpoints, mixin } from "@utils/styles"
 
 export const Content = styled.div`
   max-width: 90rem;
@@ -42,15 +42,5 @@ export const Content = styled.div`
 `
 
 export const CardTitle = styled.h4`
-  ${fontSizeMixins.fontSizeText2Xl}
-  font-weight: 600;
-  color: ${colors.textDarkest};
-
-  @media (min-width: ${breakpoints.large}) {
-    ${fontSizeMixins.fontSizeDisplaySm}
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeDisplayMd}
-  }
+  ${mixin.cardTitle}
 `

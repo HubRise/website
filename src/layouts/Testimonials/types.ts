@@ -6,11 +6,11 @@ export interface TestimonialsYaml {
   content: {
     title: string
     description: string
-    testimonials: Array<Testimonial>
+    testimonials: Array<TTestimonial>
   }
 }
 
-export interface Testimonial {
+export interface TTestimonial {
   quote: string
   person_details: Array<string>
   filename: string

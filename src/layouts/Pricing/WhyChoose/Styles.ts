@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const Wrapper = styled.div`
   @media (min-width: ${breakpoints.large}) {
@@ -44,10 +44,5 @@ export const CardTitle = styled.h4`
 `
 
 export const CardText = styled.p`
-  ${fontSizeMixins.fontSizeTextMd}
-  margin-top: 0.625rem;
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextXl}
-  }
+  ${mixin.cardText}
 `
