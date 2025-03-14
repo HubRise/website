@@ -19,6 +19,7 @@ import {
   SearchWrapper,
   Input,
   SearchIcon,
+  CheckIcon,
 } from "./Styles"
 
 interface NavProps {
@@ -85,6 +86,7 @@ const Index = ({
                 }}
               >
                 {allAppsLabel}
+                {selectedCategoryLabel === allAppsLabel && <CheckIcon code="check" />}
               </CategoryItem>
               {categories.map((category, idx) => {
                 return (
@@ -96,6 +98,7 @@ const Index = ({
                     }}
                   >
                     {category.title}
+                    {selectedCategoryLabel === category.title && <CheckIcon code="check" />}
                   </CategoryItem>
                 )
               })}

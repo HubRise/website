@@ -1,4 +1,4 @@
-import Block from "@components/Block"
+import ScreenContainer from "@components/ScreenContainer"
 import { AppsYaml } from "@layouts/Apps/types"
 import { text } from "@utils/misc"
 
@@ -12,7 +12,7 @@ const Developer = ({ developers }: DevelopersProps): JSX.Element => {
   const { title, description } = developers
 
   return (
-    <Block backgroundColor="green" beforeExpansion={true} afterExpansion={true} title={title}>
+    <ScreenContainer bgColor="green" verticalPadding="small" withHeader title={title} isTextCentered>
       <Description>
         <p>{text(description.paragraph_1)}</p>
         <p>
@@ -21,7 +21,7 @@ const Developer = ({ developers }: DevelopersProps): JSX.Element => {
           {text(description.paragraph_2.chunk_2)}
         </p>
       </Description>
-    </Block>
+    </ScreenContainer>
   )
 }
 

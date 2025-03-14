@@ -7,7 +7,7 @@ describe("Apps page", () => {
 
     it("searches apps by category", () => {
       cy.visit("/apps")
-      categoryFilter().find("button").click()
+      categoryFilter().find("button").click({ force: true })
       categoryFilter().find("li").contains("Point of Sales").click()
       cy.get("input").should("have.value", "")
       appsResults().should("have.length.gte", 2)
