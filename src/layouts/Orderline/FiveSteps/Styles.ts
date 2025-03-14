@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 import { StyledCard } from "@components/Card/Styles"
-import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const Cards = styled.div`
   max-width: 90rem;
@@ -52,10 +52,5 @@ export const CardTitle = styled.h4`
 `
 
 export const CardText = styled.p`
-  ${fontSizeMixins.fontSizeTextMd}
-  margin-top: 0.625rem;
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextXl}
-  }
+  ${mixin.cardText}
 `

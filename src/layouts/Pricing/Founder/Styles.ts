@@ -1,7 +1,7 @@
 import Image from "next/image"
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const Wrapper = styled.div`
   @media (min-width: ${breakpoints.large}) {
@@ -43,21 +43,13 @@ export const Name = styled.h4`
 `
 
 export const JobTitle = styled.h5`
-  ${fontSizeMixins.fontSizeTextMd}
+  ${mixin.cardText}
   margin-top: 0.25rem;
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextXl}
-  }
 `
 
 export const Text = styled.p`
+  ${mixin.cardText}
   font-family: "Inter", sans-serif;
-  ${fontSizeMixins.fontSizeTextMd}
   font-weight: 600;
   margin-top: 2rem;
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextXl}
-  }
 `

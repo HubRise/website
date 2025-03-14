@@ -2,7 +2,7 @@ import styled, { css } from "styled-components"
 
 import { Container } from "@components/ScreenContainer/Styles"
 import { StyledUnderline } from "@components/Underline/Styles"
-import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
+import { breakpoints, mixin } from "@utils/styles"
 
 export const FeaturesContainer = styled.div`
   ${Container} {
@@ -40,30 +40,11 @@ export const ContentWrapper = styled.div`
 `
 
 export const Title = styled.h3`
-  ${fontSizeMixins.fontSizeText2Xl}
-  font-weight: 600;
-  color: ${colors.textDarkest};
-
-  @media (min-width: ${breakpoints.large}) {
-    ${fontSizeMixins.fontSizeDisplaySm}
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeDisplayMd}
-  }
+  ${mixin.cardTitle}
 `
 
 export const Description = styled.p`
-  ${fontSizeMixins.fontSizeTextMd}
-  margin-top: 1rem;
-
-  @media (min-width: ${breakpoints.large}) {
-    ${fontSizeMixins.fontSizeTextLg}
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeText2Xl}
-  }
+  ${mixin.description}
 `
 
 export const HandDrawnArrow = styled.div<{ $isFlipped: boolean }>`

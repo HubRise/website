@@ -50,23 +50,12 @@ export const TitleHighlight = styled.span`
 `
 
 export const Description = styled.div`
+  ${mixin.description}
   max-width: 45rem;
   margin: 0.75rem auto 0;
 
   @media (min-width: ${breakpoints.large}) {
     margin: 1.5rem auto 0;
-  }
-
-  p {
-    ${fontSizeMixins.fontSizeTextMd}
-
-    @media (min-width: ${breakpoints.large}) {
-      ${fontSizeMixins.fontSizeTextXl}
-    }
-
-    @media (min-width: ${breakpoints.biggest}) {
-      ${fontSizeMixins.fontSizeText2Xl}
-    }
   }
 `
 
