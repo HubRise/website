@@ -142,6 +142,11 @@ export const mixin = {
     font-weight: 600;
     color: ${colors.primary};
     text-decoration: underline;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: ${colors.textDarkest};
+    }
   `,
   button: css`
     padding: 0.4rem 1.5rem;
