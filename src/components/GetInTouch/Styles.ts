@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 import { StyledButton } from "@components/Button/Styles"
-import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const Wrapper = styled.div`
   display: flex;
@@ -52,14 +52,5 @@ export const Title = styled.h3`
 `
 
 export const Description = styled.p`
-  ${fontSizeMixins.fontSizeTextMd}
-  margin-top: 1rem;
-
-  @media (min-width: ${breakpoints.large}) {
-    ${fontSizeMixins.fontSizeTextXl}
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeText2Xl}
-  }
+  ${mixin.description}
 `

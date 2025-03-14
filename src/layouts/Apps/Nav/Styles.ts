@@ -63,7 +63,7 @@ export const Input = styled.input`
 `
 
 export const CategoryFilterWrapper = styled.div`
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
   flex-grow: 1;
   flex-shrink: 0;
   display: flex;
@@ -71,6 +71,10 @@ export const CategoryFilterWrapper = styled.div`
   cursor: pointer;
   font-size: 1rem;
   line-height: 1;
+
+  @media (min-width: ${breakpoints.large}) {
+    margin-left: 1rem;
+  }
 `
 
 export const CategoryFilter = styled.button`
