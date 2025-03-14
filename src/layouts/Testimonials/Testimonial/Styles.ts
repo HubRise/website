@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizes, lineHeights, sizes } from "@utils/styles"
+import { boxShadows, breakpoints, colors, fontSizes, lineHeights, sizes } from "@utils/styles"
 
 export const Card = styled.div`
   position: relative;
@@ -8,12 +8,18 @@ export const Card = styled.div`
   margin: 8.75rem auto;
   padding: 135px 1.25rem 55px;
   background-color: ${colors.white};
+  box-shadow: ${boxShadows.card};
 
   @media (min-width: ${breakpoints.large}) {
     padding-left: 7.85rem;
     padding-right: 7.85rem;
     margin-top: 9.75rem;
     margin-bottom: 9.75rem;
+    border-radius: 0.5rem;
+  }
+
+  &:last-child {
+    margin-bottom: 5rem;
   }
 `
 
@@ -34,7 +40,7 @@ export const Quote = styled.div`
   font-style: italic;
   font-size: ${fontSizes._16};
   text-align: center;
-  color: ${colors.textMedium};
+  color: ${colors.textDark};
 
   &:before,
   &:after {
@@ -43,19 +49,13 @@ export const Quote = styled.div`
   }
 `
 
-export const Separator = styled.div`
-  margin: 1.25rem auto;
-  height: 3px;
-  width: 8.875rem;
-  background-color: ${colors.borderMedium};
-`
-
 export const Details = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.625rem;
+  margin-top: 1rem;
 `
 
 export const Detail = styled.span`

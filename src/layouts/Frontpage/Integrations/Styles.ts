@@ -2,7 +2,7 @@ import styled, { css } from "styled-components"
 
 import { StyledButton } from "@components/Button/Styles"
 import { SidePosition } from "@components/SideBlock/types"
-import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
+import { breakpoints, colors, mixin } from "@utils/styles"
 
 export const ContentWrapper = styled.div<{ $padding?: SidePosition }>`
   ${StyledButton} {
@@ -39,17 +39,7 @@ export const SideBlocks = styled.div`
 `
 
 export const Title = styled.h3`
-  ${fontSizeMixins.fontSizeText2Xl}
-  font-weight: 600;
-  color: ${colors.textDarkest};
-
-  @media (min-width: ${breakpoints.large}) {
-    ${fontSizeMixins.fontSizeDisplaySm}
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeDisplayMd}
-  }
+  ${mixin.cardTitle}
 `
 
 export const Advantages = styled.div`
@@ -65,13 +55,10 @@ export const Advantage = styled.div`
 `
 
 export const AdvantageText = styled.span`
+  ${mixin.cardText}
   display: inline-block;
   margin-left: 0.875rem;
-  ${fontSizeMixins.fontSizeTextMd}
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextXl}
-  }
+  margin-top: 0;
 `
 
 export const IconWrapper = styled.div`

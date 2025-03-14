@@ -2,7 +2,7 @@ import Image from "next/image"
 import styled from "styled-components"
 
 import { StyledCard } from "@components/Card/Styles"
-import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const TestimonialsWrapper = styled.div`
   max-width: ${breakpoints.biggest};
@@ -57,24 +57,16 @@ export const Name = styled.h4`
 `
 
 export const JobTitle = styled.h5`
-  ${fontSizeMixins.fontSizeTextMd}
+  ${mixin.cardText}
   margin-top: 0.25rem;
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextXl}
-  }
 `
 
 export const Text = styled.p`
+  ${mixin.cardText}
   font-family: "Inter", sans-serif;
-  ${fontSizeMixins.fontSizeTextMd}
   font-weight: 600;
   margin-top: 1.5rem;
   margin-bottom: 0.25rem;
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextXl}
-  }
 `
 
 export const LogoImage = styled(Image)`
