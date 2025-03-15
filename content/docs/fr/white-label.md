@@ -1,10 +1,10 @@
 ---
-title: HubRise Marque Blanche
+title: Marque Blanche
 path_override: marque-blanche
 position: 16
 layout: documentation
 meta:
-  title: HubRise Marque Blanche
+  title: Marque blanche | HubRise
   description: Le programme HubRise Marque Blanche permet aux partenaires de proposer les solutions HubRise sous leur propre marque.
 ---
 
@@ -70,9 +70,11 @@ Pour chaque application, les informations suivantes seront demandées :
 - Logo : Une image avec un ratio largeur/hauteur entre 2:1 et 6:1, au format PNG, JPEG ou WEBP.
 - Favicon : Une image de 64x64 px au format PNG.
 
-Votre responsable partenariat pourra vous conseiller pour la personnalisation de vos applications.
+Votre Responsable Partenariat pourra vous conseiller pour la personnalisation de vos applications.
 
 ### Configuration des sous-domaines
+
+#### Étape 1 : Ajouter des enregistrements CNAME
 
 Pour que vos applications soient accessibles sur votre nom de domaine, vous devez configurer un sous-domaine pour chaque application. Cette opération se fait dans l'interface de gestion de votre fournisseur de domaine (ex : OVH, GoDaddy, Gandi, etc.).
 
@@ -93,4 +95,22 @@ Chaque ligne représente une entrée DNS :
 
 Dans cet exemple, si votre domaine est _pizza-flamme.com_, OrderLine sera accessible à l'adresse _commandes.pizza-flamme.com_, et votre Portail Marque Blanche à l'adresse _portail.pizza-flamme.com_.
 
-Une fois les sous-domaines ajoutés, informez votre Responsable Partenariat. Il se chargera alors de créer des certificats SSL pour chacune de vos applications sous un délai de deux jours ouvrés, sans action supplémentaire de votre part.
+#### Étape 2 : Vérifier vos sous-domaines
+
+Vérifiez que vos sous-domaines sont correctement configurés, en utilisant l'outil nslookup.io :
+
+1. Ouvrez https://www.nslookup.io/
+2. Saisissez votre sous-domaine complet, par exemple _orders.flame-pizza.com_
+3. Cliquez sur **Find DNS records**
+
+Si le sous-domaine est correctement configuré, les résultats afficheront une entrée CNAME dans la section **A records**. Si le sous-domaine n'est pas configuré, vous verrez **No A records found**. Répétez ce processus pour chaque sous-domaine.
+
+Voici un exemple de sous-domaine correctement configuré :
+
+![Exemple d'une requête DNS réussie](./images/031-2x-dns-success.png)
+
+Si vous ne voyez pas le résultat attendu, vérifiez la configuration auprès de votre fournisseur de domaine ou contactez votre Responsable Partenaire pour obtenir de l'aide.
+
+#### Étape 3 : Informer votre Responsable Partenaire
+
+Une fois vos sous-domaines ajoutés et vérifiés, informez votre Responsable Partenaire. Il se chargera alors de créer des certificats SSL pour chacune de vos applications sous un délai de deux jours ouvrés, sans action supplémentaire de votre part. Vos applications Marque Blanche seront alors prêtes à être utilisées.

@@ -1,10 +1,10 @@
 ---
-title: HubRise White Label
+title: White Label
 path_override: white-label
 position: 16
 layout: documentation
 meta:
-  title: HubRise White Label
+  title: White Label | HubRise
   description: The HubRise White Label programme allows partners to offer HubRise solutions under their own brand.
 ---
 
@@ -74,6 +74,8 @@ Your Partner Manager will be able to advise you on the customisation of your app
 
 ### Configuring Subdomains
 
+#### Step 1: Add CNAME Records
+
 To make your applications accessible on your domain, you must configure a subdomain for each application. This is done through your domain provider’s management interface (e.g. GoDaddy, Namecheap, OVH, etc.).
 
 Add a `CNAME` record for each application as shown below:
@@ -93,4 +95,22 @@ Each line represents a DNS entry:
 
 For example, if your domain is _flame-pizza.com_, OrderLine will be accessible at _orders.flame-pizza.com_, and your White Label Portal at _portal.flame-pizza.com_.
 
-Once the subdomains are added, inform your Partner Manager. They will generate SSL certificates for your applications within two business days, with no further action required on your part.
+#### Step 2: Verify your Subdomains
+
+Verify that your subdomains are correctly configured, using the nslookup.io tool:
+
+1. Open https://www.nslookup.io/
+2. Enter your full subdomain, for example _orders.flame-pizza.com_
+3. Click **Find DNS records**
+
+If the subdomain is correctly configured, the results will show a CNAME entry under the **A records** section. If the subdomain is not configured, you will see **No A records found**. Repeat this process for each subdomain.
+
+Below is an example of a correctly configured subdomain:
+
+![Example of a successful DNS lookup](./images/031-2x-dns-success.png)
+
+If you do not see the expected result, check your domain provider’s configuration or contact your Partner Manager for assistance.
+
+#### Step 3: Inform your Partner Manager
+
+Once you have added and verified your subdomains, inform your Partner Manager. They will generate SSL certificates for your applications within two business days, with no further action required on your part. Your White Label applications will then be ready to use.
