@@ -20,6 +20,7 @@ export const fontSizes = {
   _14: ".875rem",
   _16: "1rem",
   _18: "1.125rem",
+  _20: "1.25rem",
   _24: "1.5rem",
   _32: "2rem",
   _42: "2.625rem",
@@ -42,22 +43,28 @@ export const lineHeights = {
 export const breakpoints = {
   medium: "40rem",
   large: "64rem",
+  extraLarge: "90rem",
+  biggest: "120rem",
   documentationStickyMenu: "64rem",
   blogStickyMenu: "40rem",
   burgerMenu: "75rem",
 }
 
 export const colors = {
-  primary: "#6db24f",
+  primary: "#4ca30d",
   danger: "#b2564f",
   warning: "#fcfaed",
   white: "#fff",
 
+  greenLight: "#87c76c",
+  greenMediumLight: "#6db24f",
+
   textDarkest: "#333",
-  textDark: "#555",
+  textDark: "#475467",
   textMedium: "#777",
   textLight: "#999",
-  textLighter: "#ccc",
+  textLighter: "#d0d5dd",
+  textDefault: "#475467",
 
   backgroundDarker: "#333",
   backgroundDark: "#555",
@@ -77,9 +84,70 @@ export const boxShadows = {
   image: `0 0 5px rgba(0, 0, 0, 0.05)`,
   medium: `0 5px 10px rgba(0, 0, 0, 0.1)`,
   large: `5px 10px 15px rgba(0, 0, 0, 0.15)`,
+  card: `
+    -5px 49px 19px #b5b5b503,
+    -2.5px 27px 17px #b5b5b50d,
+    -1px 12px 12px #b5b5b517,
+    0px 2.5px 6.5px #b5b5b51a;
+  `,
+}
+
+export const fontSizeMixins = {
+  fontSizeTextSm: css`
+    font-size: ${fontSizes._14};
+    line-height: 1.25rem;
+  `,
+  fontSizeTextMd: css`
+    font-size: ${fontSizes._16};
+    line-height: 1.5rem;
+  `,
+  fontSizeTextLg: css`
+    font-size: ${fontSizes._18};
+    line-height: 1.625rem;
+  `,
+  fontSizeTextXl: css`
+    font-size: ${fontSizes._20};
+    line-height: 1.875rem;
+  `,
+  fontSizeText2Xl: css`
+    font-size: ${fontSizes._24};
+    line-height: 2rem;
+  `,
+
+  fontSizeDisplaySm: css`
+    font-size: ${fontSizes._32};
+    line-height: 2.5rem;
+  `,
+  fontSizeDisplayMd: css`
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  `,
+  fontSizeDisplayLg: css`
+    font-size: 3rem;
+    line-height: 3.75rem;
+  `,
+  fontSizeDisplayXl: css`
+    font-size: 4.125rem;
+    line-height: 4.75rem;
+  `,
+  fontSizeDisplay2Xl: css`
+    font-size: 4.5rem;
+    line-height: 5.125rem;
+  `,
 }
 
 export const mixin = {
+  link: css`
+    ${fontSizeMixins.fontSizeTextMd};
+    font-weight: 600;
+    color: ${colors.primary};
+    text-decoration: underline;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: ${colors.textDarkest};
+    }
+  `,
   button: css`
     padding: 0.4rem 1.5rem;
     text-transform: uppercase;
@@ -154,9 +222,43 @@ export const mixin = {
       color: ${color};
     }
   `,
+  description: css`
+    ${fontSizeMixins.fontSizeTextMd}
+    margin-top: 1rem;
+
+    @media (min-width: ${breakpoints.large}) {
+      ${fontSizeMixins.fontSizeTextXl}
+    }
+
+    @media (min-width: ${breakpoints.biggest}) {
+      ${fontSizeMixins.fontSizeText2Xl}
+    }
+  `,
+  cardText: css`
+    ${fontSizeMixins.fontSizeTextMd}
+    margin-top: 0.625rem;
+
+    @media (min-width: ${breakpoints.biggest}) {
+      ${fontSizeMixins.fontSizeTextXl}
+    }
+  `,
+  cardTitle: css`
+    ${fontSizeMixins.fontSizeText2Xl}
+    font-weight: 600;
+    color: ${colors.textDarkest};
+
+    @media (min-width: ${breakpoints.large}) {
+      ${fontSizeMixins.fontSizeDisplaySm}
+    }
+
+    @media (min-width: ${breakpoints.biggest}) {
+      ${fontSizeMixins.fontSizeDisplayMd}
+    }
+  `,
 }
 
 export const zIndexValues = {
+  appsLogosGradient: 9,
   header: 10,
   mobileBarBackdrop: 20,
   mobileBarMenu: 30,

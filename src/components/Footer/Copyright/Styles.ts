@@ -1,76 +1,33 @@
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const StyledCopyright = styled.div`
   background-color: ${colors.textDarkest};
+  padding: 0 1rem;
+
+  @media (min-width: ${breakpoints.medium}) {
+    padding: 0;
+  }
 `
 
 export const Container = styled.div`
-  padding: 0.8em 0 0.5em 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1em;
-  justify-items: center;
-  align-items: center;
-
-  ${mixin.container};
-
-  @media (min-width: ${breakpoints.large}) {
-    grid-template-columns: 3fr 1fr 3fr;
-  }
-`
-
-export const Company = styled.div`
-  text-align: center;
-
-  @media (min-width: ${breakpoints.large}) {
-    text-align: left;
-  }
-`
-
-export const Logo = styled.img`
-  position: relative;
-  bottom: 0.15em;
-`
-
-export const Contact = styled.div`
+  padding: 1.5rem 0 2.5rem 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ffffff33;
 
-  @media (min-width: ${breakpoints.large}) {
-    justify-content: flex-end;
+  @media (min-width: ${breakpoints.medium}) {
+    ${mixin.container};
   }
 `
 
-const contactGap = "0.75rem"
+export const Text = styled.span`
+  color: ${colors.textLighter};
+  ${fontSizeMixins.fontSizeTextSm}
 
-export const EmailLink = styled.a`
-  color: ${colors.white};
-  ${mixin.linkOver(colors.primary)};
-
-  &:after {
-    content: "●";
-    display: inline-block;
-    margin-left: ${contactGap};
-    font-size: ${fontSizes._12};
-    color: ${colors.textMedium};
-  }
-`
-
-export const SocialLink = styled.a`
-  margin-left: ${contactGap};
-  ${mixin.centerElement};
-
-  svg {
-    width: 1.3rem;
-    height: 1.3rem;
-    fill: ${colors.white};
-    transition: fill 0.2s ease;
-
-    &:hover {
-      fill: ${colors.primary};
-    }
+  @media (min-width: ${breakpoints.biggest}) {
+    ${fontSizeMixins.fontSizeTextLg}
   }
 `

@@ -1,9 +1,11 @@
 import * as React from "react"
 
+import Icon from "@components/Icon"
 import useTranslation from "@hooks/client/useTranslation"
 import { DocFrontMatter } from "@utils/DocIndexer/types"
 
-import { Item, Label, LinkValue, StyledAppInfo, Value } from "./Styles"
+import { IconWrapper, Item, Label, LinkValue, StyledAppInfo, Value } from "./Styles"
+import { linkAppInfoIcon } from "./utils"
 
 const AppInfo = ({ appInfo }: { appInfo: Exclude<DocFrontMatter["app_info"], undefined> }): JSX.Element => {
   const { t } = useTranslation()
@@ -16,6 +18,9 @@ const AppInfo = ({ appInfo }: { appInfo: Exclude<DocFrontMatter["app_info"], und
         const label = t(`documentation.app_info.${key}`) + t("misc.colon")
         return (
           <Item key={index}>
+            <IconWrapper>
+              <Icon code={linkAppInfoIcon(key)} size={16} />
+            </IconWrapper>
             <Label>{label}</Label>
             <Value>
               {value.startsWith("http") ? (
