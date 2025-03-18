@@ -25,7 +25,7 @@ export const Item = styled.li`
   &::after {
     content: ">";
     margin: 0 0.5rem;
-    color: #d0d5dd;
+    color: ${colors.textLighter};
     font-size: ${fontSizes._18};
     vertical-align: middle;
   }
