@@ -63,7 +63,7 @@ export const colors = {
   textDark: "#475467",
   textMedium: "#777",
   textLight: "#999",
-  textLighter: "#ccc",
+  textLighter: "#d0d5dd",
   textDefault: "#475467",
 
   backgroundDarker: "#333",

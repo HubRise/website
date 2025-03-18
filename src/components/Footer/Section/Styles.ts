@@ -1,38 +1,47 @@
 import Link from "next/link"
 import styled from "styled-components"
 
-import { breakpoints, colors, lineHeights, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
-const headerGap = "1em"
+export const Header = styled.h4`
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: left;
+  ${fontSizeMixins.fontSizeTextMd}
 
-export const Header = styled.div`
-  color: ${colors.white};
-  font-weight: bold;
-  margin-bottom: ${headerGap};
+  @media (min-width: ${breakpoints.large}) {
+    ${fontSizeMixins.fontSizeTextLg}
+  }
 
-  &:after {
-    display: block;
-    content: "";
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: ${headerGap};
-    background-color: ${colors.textMedium};
-    width: 4em;
-    height: 2px;
-
-    @media (min-width: ${breakpoints.medium}) {
-      margin-left: 0;
-      margin-right: 0;
-    }
+  @media (min-width: ${breakpoints.biggest}) {
+    ${fontSizeMixins.fontSizeTextXl}
   }
 `
 
+export const List = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+`
+
 export const Item = styled.li`
-  margin-bottom: 0.6em;
-  line-height: ${lineHeights.compact};
+  ${fontSizeMixins.fontSizeTextSm}
+
+  @media (min-width: ${breakpoints.biggest}) {
+    ${fontSizeMixins.fontSizeTextLg}
+  }
 `
 
 export const ItemLink = styled(Link)`
+  display: flex;
+  align-items: center;
   color: ${colors.textLighter};
   ${mixin.linkOver(colors.white)};
+
+  svg {
+    width: 1.1rem;
+    height: 1.1rem;
+    fill: ${colors.white};
+    margin-right: 0.5rem;
+  }
 `
