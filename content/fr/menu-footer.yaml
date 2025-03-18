@@ -1,12 +1,12 @@
+# TODO: Need to check what need to translate
 sections:
-  - title: Intégrations
+  - title: Integrations & Apps
     links:
-      # TODO: Need to translate
-      - title: Apps
+      - title: All Integrations
         to: /fr/apps
-      - title: Contribuer à la documentation
-        to: /fr/contribuer
-  - title: Développeurs
+      - title: OrderLine
+        to: /orderline
+  - title: Ressources
     links:
       - title: Démarrage Rapide
         to: /fr/developers/quick-start
@@ -14,20 +14,34 @@ sections:
         to: /fr/developers/integration-guide
       - title: Référence de l'API
         to: /fr/developers/api/general-concepts
-  - title: Ressources
+      - title: Blog
+        to: /fr/blog
+  - title: Help Center
     links:
-      - title: Guide utilisateur
+      - title: Help
         to: /fr/docs
-      - title: Conditions Générales
-        to: /fr/legal/conditions-generales
-      - title: Mentions Légales
-        to: /fr/legal/mentions-legales
-  - title: Société
+      - title: FAQ
+        to: /faqs
+      - title: Contribuer à la documentation
+        to: /fr/contribuer
+  - title: Partners
+    links:
+      - title: Become an Integrated Partner
+        to: /
+      - title: Become a Reseller
+        to: /
+  - title: Company
     links:
       - title: Témoignages
         to: /fr/temoignages
       - title: Guide de la marque
         to: /fr/marque
-      # TODO: Need to translate
       - title: Contact Us
         to: /fr/contact-us
+      - title: LinkedIn
+        icon: linkedin
+        to: https://www.linkedin.com/company/hubrise
+copyright:
+  terms_link:
+    title: Terms of service
+    link: /link
