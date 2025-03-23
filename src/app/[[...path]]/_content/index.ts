@@ -1,7 +1,6 @@
 import { Router } from "@utils/router"
 import { LayoutName, Route, RouteName } from "@utils/router/types"
 
-import apps from "./apps"
 import blogIndex from "./blogIndex"
 import blogPost from "./blogPost"
 import contactUs from "./contactUs"
@@ -10,6 +9,7 @@ import documentationIndex from "./documentationIndex"
 import documentationSimple from "./documentationSimple"
 import faqs from "./faqs"
 import frontpage from "./frontpage"
+import integrations from "./integrations"
 import orderline from "./orderline"
 import partners from "./partners"
 import pricing from "./pricing"
@@ -18,7 +18,7 @@ import testimonials from "./testimonials"
 export const renderContent = async (route: Route<RouteName, LayoutName>, router: Router): Promise<JSX.Element> => {
   switch (route.layout) {
     case "apps":
-      return await apps(route as Route<RouteName, "apps">)
+      return await integrations(route as Route<RouteName, "apps">)
     case "blog-index":
       return await blogIndex(route as Route<RouteName, "blog-index">)
     case "blog-post":

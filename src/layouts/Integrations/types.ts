@@ -1,4 +1,4 @@
-export interface AppsYaml {
+export interface IntegrationsYaml {
   meta: {
     title: string
     description: string

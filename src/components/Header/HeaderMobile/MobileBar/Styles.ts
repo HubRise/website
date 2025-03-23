@@ -1,80 +1,75 @@
 import Link from "next/link"
 import styled, { css } from "styled-components"
 
+import { StyledAccordion } from "@components/Accordion/Styles"
+import { StyledButton } from "@components/Button/Styles"
+import { ProductsList } from "@components/Header/Products/Styles"
 import Icon from "@components/Icon"
-import { breakpoints, colors, fontSizes, mixin, sizes, zIndexValues } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, fontSizes, mixin, sizes, zIndexValues } from "@utils/styles"
 
 export const StyledMobileBar = styled.div`
   @media (min-width: ${breakpoints.burgerMenu}) {
     display: none;
   }
 `
-export const Backdrop = styled.div<{ $isOpen: boolean }>`
+
+export const Container = styled.div<{ $isOpen: boolean }>`
   display: ${(props) => (props.$isOpen ? "block" : "none")};
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: ${zIndexValues.mobileBarBackdrop};
-`
-
-export const Container = styled.div<{ $isOpen: boolean }>`
-  display: ${(props) => (props.$isOpen ? "flex" : "none")};
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 70%;
-  max-width: 25em;
+  width: 100%;
   background-color: ${colors.white};
   z-index: ${zIndexValues.mobileBarMenu};
-  flex-direction: column;
+  overflow: auto;
 `
 
 export const Header = styled.header`
   position: relative;
   height: ${sizes.headerHeight};
-  border-bottom: 4px solid ${colors.primary};
-  color: ${colors.primary};
+  border-bottom: 3px solid #4ca30d80;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.625rem;
 `
 
 export const HeaderIcon = styled(Icon)`
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 4rem;
-  padding-left: 1rem;
+  padding: 0 0.5rem;
   display: flex;
-  align-items: center;
-  ${mixin.clickable};
-`
-
-export const HeaderTitle = styled.div`
-  height: 100%;
-  ${mixin.centerElement};
-  font-size: ${fontSizes._32};
-  font-weight: 600;
-  text-align: center;
-  text-transform: uppercase;
+  ${mixin.clickable}
 `
 
 export const Nav = styled.div`
-  flex: 1;
-  margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  padding: 1.5rem 1rem;
+
+  ${StyledAccordion} {
+    margin-bottom: 0;
+    padding: 0.75rem 0;
+    border: none;
+
+    h4 {
+      ${fontSizeMixins.fontSizeTextMd}
+      color: ${colors.textDark};
+    }
+  }
+
+  ${ProductsList} {
+    padding-left: 0;
+    padding-right: 0;
+  }
 `
 
-export const NavLink = styled(Link)<{ $topMargin?: boolean; $isActive: boolean }>`
+export const NavLink = styled(Link)<{ $isActive: boolean }>`
+  display: block;
   width: 100%;
-  padding: 0.5rem 1rem;
-  ${(props) => props.$topMargin && "margin-top: 2rem"};
-
+  ${fontSizeMixins.fontSizeTextMd}
+  font-weight: 600;
   color: ${colors.textDark};
+  padding: 0.75rem 0;
   ${mixin.linkOver(colors.primary)};
 
   ${({ $isActive }) =>
@@ -84,26 +79,47 @@ export const NavLink = styled(Link)<{ $topMargin?: boolean; $isActive: boolean }
     `};
 `
 
-export const NavLinkLogin = styled(Link)`
-  display: block;
-  padding: 0.3em 0;
-  margin: 0 1em;
-  color: ${colors.white};
-  background-color: ${colors.primary};
-  border-radius: 3px;
+export const Buttons = styled.div`
+  ${StyledButton} {
+    margin-top: 0.625rem;
+    width: 100%;
 
-  ${mixin.buttonOver(colors.white, colors.textDarkest)};
+    &:first-child {
+      margin-top: 1.25rem;
+    }
+  }
 `
 
 export const LanguageList = styled.ul`
-  flex: 0 0 2em;
   display: flex;
-  justify-content: center;
+  gap: 1.5rem;
+  ${fontSizeMixins.fontSizeTextMd}
+  padding: 0.75rem 0;
+
+  li {
+    position: relative;
+
+    &::after {
+      content: "•";
+      font-size: ${fontSizes._24};
+      color: ${colors.primary};
+      position: absolute;
+      right: -1.1rem;
+      top: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
 `
 
 export const LanguageItem = styled.li<{ $isActive: boolean }>`
-  margin: 0.5em 0.8em;
-
   ${({ $isActive }) =>
     $isActive &&
     css`

@@ -54,7 +54,6 @@ content:
     - logo: como.png
     - logo: coursicab.png
     - logo: delicity.png
-    - logo: deliveroo-test.png
     - logo: deliveroo.png
     - logo: delivery-hero.png
     - logo: dishop.png
@@ -97,7 +96,6 @@ content:
     - logo: netfood.png
     - logo: next-order.png
     - logo: nextsourcia.png
-    - logo: notavailable.png
     - logo: obypay.png
     - logo: orderline.png
     - logo: orderlord.png
@@ -209,7 +207,7 @@ content:
           - text: Get a unified view of customer preferences for better decision-making.
           - text: Streamline kitchen workflows by grouping orders efficiently.
         button_label: Learn more about OrderLine
-        button_link: a
+        button_link: /orderline
       - title: Centralise product management with Catalog Manager
         image: catalog-manager.png
         advantages:

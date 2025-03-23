@@ -38,7 +38,7 @@ const FAQs = ({ yaml, getInTouch }: FAQProps): JSX.Element => {
                 <Underline />
                 {questions.map((question, index) => {
                   return (
-                    <Accordion key={index} title={question.question} isOpenedByDefault={question.isOpenedByDefault}>
+                    <Accordion key={index} title={question.question}>
                       <div dangerouslySetInnerHTML={{ __html: question.answer }} />
                     </Accordion>
                   )

@@ -3,13 +3,43 @@
   mobile_only: true
 - title: Integrations
   to: /apps
+- title: Products
+  to: /
+  content:
+    products:
+      - title: Catalog Manager
+        description: Centralise your menus
+        link_label: Find out more
+        link: /
+        image: catalog-manager.png
+      - title: OrderLine
+        description: Centralise your orders
+        link_label: Find out more
+        link: /orderline
+        image: orderline.png
+      - title: Dashboard
+        description: Some text here...
+        link_label: Find out more
+        link: /
+        image: dashboard.png
 - title: Pricing
   to: /pricing
-- title: Developers
-  to: /developers
-- title: Blog
-  to: /blog
-- title: Help
-  to: /docs
-- title: FAQs
-  to: /faqs
+- title: Partners
+  to: /partners
+- title: Resources
+  to: /
+  content:
+    resources:
+      title: Resources
+      description: Get started and learn more about our products.
+      links:
+        - link_label: Help
+          link: /docs
+        - link_label: FAQs
+          link: /faqs
+        - link_label: Developers
+          link: /developers
+        - link_label: Testimonials
+          link: /testimonials
+        - link_label: Blog
+          link: /blog

@@ -4,15 +4,19 @@ import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
+import Button from "@components/Button"
+import Dropdown from "@components/Dropdown"
 import useClientRoutes from "@hooks/client/useClientRoutes"
 import useTranslation from "@hooks/client/useTranslation"
 import type { LanguagePaths } from "@utils/locales"
 
-import LanguageLinks from "../LanguageLinks"
+import Products from "../Products"
+import Resources from "../Resources"
 import { IHeaderLink } from "../shared/types"
 import { isHeaderLinkActive } from "../shared/utils"
 
-import { StyledHeader, Menu, MenuItem, MenuLink, Signup, Login } from "./Styles"
+import LanguageLinks from "./LanguageLinks"
+import { StyledHeader, Menu, MenuItem, MenuLink, RightSide } from "./Styles"
 
 interface HeaderDesktopProps {
   languagePaths: LanguagePaths
@@ -33,27 +37,39 @@ const HeaderDesktop = ({ languagePaths, menuItems }: HeaderDesktopProps): JSX.El
       </div>
 
       <Menu>
-        {menuItems.map(({ title, to, mobile_only }, idx) => {
+        {menuItems.map(({ title, to, content, mobile_only }, idx) => {
           if (mobile_only) return
           const isActive = isHeaderLinkActive(currentPathname, to)
           return (
-            <MenuItem key={idx} $isActive={isActive}>
-              <MenuLink href={to} $isActive={isActive}>
-                {title}
-              </MenuLink>
-            </MenuItem>
+            <div key={idx}>
+              {content ? (
+                <Dropdown
+                  value={title}
+                  menuContent={
+                    <>
+                      {content.products?.length && <Products products={content?.products} />}
+                      {content.resources && <Resources resources={content?.resources} />}
+                    </>
+                  }
+                  position={content.resources ? "center" : "left"}
+                />
+              ) : (
+                <MenuItem $isActive={isActive}>
+                  <MenuLink href={to} $isActive={isActive}>
+                    {title}
+                  </MenuLink>
+                </MenuItem>
+              )}
+            </div>
           )
         })}
       </Menu>
 
-      <Menu>
-        <LanguageLinks languagePaths={languagePaths} MenuItem={MenuItem} MenuLink={MenuLink} />
-      </Menu>
-
-      <div>
-        <Signup href={signup}>{t(`layout.header.buttons.signup`)}</Signup>
-        <Login href={login}>{t(`layout.header.buttons.login`)}</Login>
-      </div>
+      <RightSide>
+        <LanguageLinks languagePaths={languagePaths} />
+        <Button link={login} label={t(`layout.header.buttons.login`)} type="secondary" />
+        <Button link={signup} label={t(`layout.header.buttons.signup`)} />
+      </RightSide>
     </StyledHeader>
   )
 }

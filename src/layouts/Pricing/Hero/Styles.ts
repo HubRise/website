@@ -66,7 +66,6 @@ export const FeatureBlock = styled.div<{ $isActive: boolean }>`
   border-radius: 0.875rem;
   padding: 2.5rem 3.5rem;
   transition: all 0.5s ease-in-out;
-  cursor: pointer;
 
   @media (min-width: ${breakpoints.large}) {
     flex-basis: 50%;

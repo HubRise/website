@@ -16,7 +16,7 @@ export const StyledButton = styled(Link)<{ $type: ButtonType }>`
   font-size: ${fontSizes._16};
   font-weight: 600;
   border-radius: 0.5rem;
-  padding: ${({ $type }) => ($type === "link" ? "0" : "0 0.5rem")};
+  padding: ${({ $type }) => ($type === "link" ? "0" : "0 1.125rem")};
   margin-top: 2rem;
   transition: all 0.5s ease;
   white-space: nowrap;
@@ -35,8 +35,6 @@ export const StyledButton = styled(Link)<{ $type: ButtonType }>`
     `}
 
   @media (min-width: ${breakpoints.large}) {
-    padding: ${({ $type }) => ($type === "link" ? "0" : "0 1.125rem")};
-
     ${StyledIcon} {
       margin-left: 0.625rem;
     }

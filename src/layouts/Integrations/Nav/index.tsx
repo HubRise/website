@@ -3,7 +3,7 @@ import * as React from "react"
 import useOnClickOutside from "@hooks/client/useOnClickOutside"
 import useSticky from "@hooks/client/useSticky"
 import useTranslation from "@hooks/client/useTranslation"
-import { AppsYaml } from "@layouts/Apps/types"
+import { IntegrationsYaml } from "@layouts/Integrations/types"
 import { remIntoPixels } from "@utils/dom"
 import { Language } from "@utils/locales"
 import { sizes } from "@utils/styles"
@@ -20,11 +20,12 @@ import {
   Input,
   SearchIcon,
   CheckIcon,
+  WhiteBlock,
 } from "./Styles"
 
 interface NavProps {
   language: Language
-  categories: AppsYaml["content"]["categories"]
+  categories: IntegrationsYaml["content"]["categories"]
   allAppsLabel: string
   searchInputValue: string
   onSearchInputChange: (value: string) => void
@@ -106,6 +107,7 @@ const Index = ({
           </CategoryFilterWrapper>
         </Container>
       </StyledNav>
+      <WhiteBlock />
     </>
   )
 }

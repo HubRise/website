@@ -2,13 +2,13 @@ import { BlockContentButton, BlockContentLink } from "@components/BlockContent"
 import { useLayoutContext } from "@components/LayoutContext"
 import PageHero from "@components/PageHero"
 import Underline from "@components/Underline"
-import { AppsYaml } from "@layouts/Apps/types"
+import { IntegrationsYaml } from "@layouts/Integrations/types"
 import { text } from "@utils/misc"
 
 import { Content } from "./Styles"
 
 interface HeroProps {
-  hero: AppsYaml["content"]["hero"]
+  hero: IntegrationsYaml["content"]["hero"]
 }
 
 const Hero = ({ hero }: HeroProps): JSX.Element => {

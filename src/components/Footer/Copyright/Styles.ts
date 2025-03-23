@@ -27,6 +27,10 @@ export const Text = styled.span`
   color: ${colors.textLighter};
   ${fontSizeMixins.fontSizeTextSm}
 
+  a {
+    ${mixin.linkOver(colors.white)}
+  }
+
   @media (min-width: ${breakpoints.biggest}) {
     ${fontSizeMixins.fontSizeTextLg}
   }
