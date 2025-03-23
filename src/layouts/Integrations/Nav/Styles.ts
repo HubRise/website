@@ -8,16 +8,18 @@ export const StyledNav = styled.div<{ $isSticky: boolean }>`
   top: ${sizes.headerHeight};
   z-index: ${zIndexValues.header};
   background-color: ${colors.white};
-  padding: 0.5rem 0.625rem 3.5rem;
+  padding: 0.5rem 0.625rem;
+  transition: background-color 0.1s ease-in-out;
 
   @media (min-width: ${breakpoints.large}) {
-    padding: 0.5rem 0.625rem 5rem;
+    padding: 0.5rem 0.625rem;
   }
 
   ${(props) =>
     props.$isSticky &&
     css`
       padding-bottom: 0.5rem !important;
+      background-color: ${colors.primary};
     `}
 `
 
@@ -150,5 +152,16 @@ export const SearchIcon = styled(Icon).attrs({ size: iconSizes._25 })`
 
   @media (min-width: ${breakpoints.large}) {
     margin-right: 0.5rem;
+  }
+`
+
+export const WhiteBlock = styled.div`
+  width: 100%;
+  height: 3.5rem;
+  background-color: ${colors.white};
+  margin-top: -1px;
+
+  @media (min-width: ${breakpoints.large}) {
+    height: 5rem;
   }
 `

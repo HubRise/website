@@ -55,7 +55,7 @@ export const InnerContainer = styled.div`
 
 export const LogoContainer = styled.div<{ $moveShift: number; $nbCards: number }>`
   display: grid;
-  grid-template-columns: repeat(${({ $nbCards }) => Math.ceil($nbCards / 3) + 1}, 1fr);
+  grid-template-columns: repeat(${({ $nbCards }) => Math.ceil($nbCards / 3)}, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 0.75rem;
   position: relative;

@@ -73,7 +73,7 @@ export const colors = {
   backgroundWhite: "#fff",
 
   borderMedium: "#ccc",
-  borderLight: "#e0e0e0",
+  borderLight: "#eaecf0",
   borderLighter: "#f0f0f0",
   borderLightest: "#f8f8f8",
   borderInputFocus: "#555",
@@ -178,21 +178,6 @@ export const mixin = {
     max-width: 96%;
     width: ${sizes.maxWidth};
     margin: 0 auto;
-  `,
-  dotSeparatedList: (gap: string, color = colors.textLighter): RuleSet => css`
-    display: flex;
-    align-items: center;
-
-    &:not(:last-child) {
-      margin-right: ${gap};
-
-      &::after {
-        content: "●";
-        margin-left: ${gap};
-        font-size: ${fontSizes._12};
-        color: ${color};
-      }
-    }
   `,
   expandBefore: ({ width, color }: { width: string; color: string }): RuleSet => css`
     &::before {

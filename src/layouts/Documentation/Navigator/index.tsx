@@ -50,7 +50,7 @@ const Navigator = ({ mdFile, folder, headerLinks }: NavigatorProps): JSX.Element
           return (
             <Item key={idx} $isActive={isCurrentPage}>
               <ItemLink
-                href={uri}
+                href={`${uri}#${label.replace(/\s+/g, "-").toLocaleLowerCase()}`}
                 onClick={isMobile ? () => setIsExpanded(false) : undefined}
                 $isActive={isCurrentPage}
               >

@@ -1,16 +1,46 @@
+# TODO: Need to check what require in translation
 - title: Accueil
   to: /fr
   mobile_only: true
-  # TODO: Need to translate
-- title: Apps
+- title: Integrations
   to: /fr/apps
+- title: Products
+  to: /
+  content:
+    products:
+      - title: Catalog Manager
+        description: Centralise your menus
+        link_label: Find out more
+        link: /
+        image: catalog-manager.png
+      - title: OrderLine
+        description: Centralise your orders
+        link_label: Find out more
+        link: /fr/orderline
+        image: orderline.png
+      - title: Dashboard
+        description: Some text here...
+        link_label: Find out more
+        link: /
+        image: dashboard.png
 - title: Tarifs
   to: /fr/tarifs
-- title: Développeurs
-  to: /fr/developers
-- title: Blog
-  to: /fr/blog
-- title: Aide
-  to: /fr/docs
-- title: FAQ
-  to: /fr/faqs
+- title: Partners
+  to: /partners
+- title: Resources
+  to: /
+  content:
+    resources:
+      title: Resources
+      description: Get started and learn more about our products.
+      links:
+        - link_label: Aide
+          link: /fr/docs
+        - link_label: FAQ
+          link: /fr/faqs
+        - link_label: Développeurs
+          link: /fr/developers
+        - link_label: Testimonials
+          link: /testimonials
+        - link_label: Blog
+          link: /fr/blog

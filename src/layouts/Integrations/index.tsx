@@ -1,7 +1,7 @@
 "use client"
 import * as React from "react"
 
-import { AppsYaml } from "@layouts/Apps/types"
+import { IntegrationsYaml } from "@layouts/Integrations/types"
 import { ContentImage } from "@utils/contentImage"
 import { Language } from "@utils/locales"
 import { doesSearchTextMatch } from "@utils/search"
@@ -12,13 +12,13 @@ import Hero from "./Hero"
 import Nav from "./Nav"
 import NoResults from "./NoResults"
 
-interface AppsProps {
+interface IntegrationsProps {
   language: Language
-  yaml: AppsYaml
+  yaml: IntegrationsYaml
   logoImages: { [logo: string]: ContentImage }
 }
 
-const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
+const Integrations = ({ language, yaml, logoImages }: IntegrationsProps): JSX.Element => {
   const { content } = yaml
 
   const [filterSearch, setFilterSearch] = React.useState("")
@@ -105,4 +105,4 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
   )
 }
 
-export default Apps
+export default Integrations

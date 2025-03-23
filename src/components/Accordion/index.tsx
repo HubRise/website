@@ -3,7 +3,7 @@ import { useCallback, useRef, useState } from "react"
 import Icon from "@components/Icon"
 import { iconSizes } from "@utils/styles"
 
-import { Container, Title, ContentWrapper, Content, TitleWrapper } from "./Styles"
+import { StyledAccordion, Title, ContentWrapper, Content, TitleWrapper } from "./Styles"
 
 interface AccordionProps {
   title: string
@@ -22,7 +22,7 @@ const Accordion = ({ title, isOpenedByDefault = false, children }: AccordionProp
   }, [isCollapsed])
 
   return (
-    <Container>
+    <StyledAccordion>
       <TitleWrapper $isCollapsed={isCollapsed} onClick={handleCollapseToggle}>
         <Title>{title}</Title>
         <Icon code="expand_more" size={iconSizes._25} color="#263238" />
@@ -30,7 +30,7 @@ const Accordion = ({ title, isOpenedByDefault = false, children }: AccordionProp
       <ContentWrapper $maxHeight={contentHeight}>
         <Content ref={contentRef}>{children}</Content>
       </ContentWrapper>
-    </Container>
+    </StyledAccordion>
   )
 }
 

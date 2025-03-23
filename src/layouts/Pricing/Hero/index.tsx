@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 import Button from "@components/Button"
 import Icon from "@components/Icon"
 import PageHero from "@components/PageHero"
@@ -31,13 +29,6 @@ interface HeroProps {
 
 const Hero = ({ hero }: HeroProps): JSX.Element => {
   const { title, plan, proposals, included_features, additional_features } = hero
-  const [includedFeaturesActive, setIncludedFeaturesActive] = useState<boolean>(true)
-  const [additionalFeaturesActive, setAdditionalFeaturesActive] = useState<boolean>(false)
-
-  const handleActiveFeatures = () => {
-    setIncludedFeaturesActive(!includedFeaturesActive)
-    setAdditionalFeaturesActive(!additionalFeaturesActive)
-  }
 
   return (
     <PageHero
@@ -71,7 +62,7 @@ const Hero = ({ hero }: HeroProps): JSX.Element => {
         </Proposals>
       </PriceingBlock>
       <FeatureBlocks>
-        <FeatureBlock $isActive={includedFeaturesActive} onClick={handleActiveFeatures}>
+        <FeatureBlock $isActive={true}>
           <Title>{included_features.title}</Title>
           <Description>{included_features.description}</Description>
           <Underline />
@@ -91,7 +82,7 @@ const Hero = ({ hero }: HeroProps): JSX.Element => {
           </FeaturesList>
           <Button label={included_features.button_label} link={included_features.button_link} />
         </FeatureBlock>
-        <FeatureBlock $isActive={additionalFeaturesActive} onClick={handleActiveFeatures}>
+        <FeatureBlock $isActive={false}>
           <Title>{additional_features.title}</Title>
           <Description>{additional_features.description}</Description>
           <Underline />

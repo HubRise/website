@@ -3,7 +3,6 @@ type TFAQSection = {
   questions: Array<{
     question: string
     answer: string
-    isOpenedByDefault: boolean
   }>
 }
 

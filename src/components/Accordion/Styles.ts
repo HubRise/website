@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { StyledIcon } from "@components/Icon/Styles"
 import { colors, fontSizeMixins } from "@utils/styles"
 
-export const Container = styled.div`
+export const StyledAccordion = styled.div`
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   color: ${colors.textDarkest};
@@ -34,7 +34,7 @@ export const Title = styled.h4`
 
 export const ContentWrapper = styled.div<{ $maxHeight: number | undefined }>`
   max-height: ${({ $maxHeight }) => `${$maxHeight}px`};
-  transition: max-height 0.25s ease-in-out;
+  transition: max-height 0.1s ease-in-out;
   overflow: hidden;
 `
 

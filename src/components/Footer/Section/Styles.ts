@@ -36,7 +36,7 @@ export const ItemLink = styled(Link)`
   display: flex;
   align-items: center;
   color: ${colors.textLighter};
-  ${mixin.linkOver(colors.white)};
+  ${mixin.linkOver(colors.white)}
 
   svg {
     width: 1.1rem;

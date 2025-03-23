@@ -12,19 +12,15 @@ content:
         - question: Do I have to enter my bank details to take a free test?
           answer: |
             <p>No, you simply need to enter your name and e-mail address. Invoicing will only take place once the first orders have been placed.</p>
-          isOpenedByDefault: true
         - question: What is the commitment period?
           answer: |
             <p>None. You can stop your subscription at any time.</p>
-          isOpenedByDefault: false
         - question: How can I pay for my subscription?
           answer: |
             <p>By monthly direct debit on your credit card. If you do not have a credit card, you can pay by transfer with a minimum commitment of 12 months.</p>
-          isOpenedByDefault: false
         - question: I have several stores. Do I have to pay one subscription per store?
           answer: |
             <p>Yes. Note that discounts are possible for chains of 6 locations or more. Contact us to learn more.</p>
-          isOpenedByDefault: false
     - title: Special rates
       questions:
         - question: Channels
@@ -36,7 +32,6 @@ content:
               <li>Locations 31 and more: €27</li>
             </ul>
             <p>For example, for a chain of 12 locations, the subscription will be €35 for the first 5 locations, then €30 for the next 7.</p>
-          isOpenedByDefault: true
         - question: Dark Kitchen
           answer: |
             <p>Dark Kitchens are restaurants with multiple virtual brands. On HubRise, a Dark Kitchen is a location connected to several Uber Eats, Deliveroo, etc., accounts.</p>
@@ -52,78 +47,60 @@ content:
                 </ul>
               </li>
             </ul>
-          isOpenedByDefault: false
     - title: Data
       questions:
         - question: Where is the data stored?
           answer: |
             <p>Data is securely stored on servers located in the European Union.</p>
-          isOpenedByDefault: true
         - question: Is HubRise RGPD certified?
           answer: |
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          isOpenedByDefault: false
         - question: Is there a data volume limit per account?
           answer: |
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          isOpenedByDefault: false
         - question: What happens to my data if I decide to cancel my HubRise account?
           answer: |
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          isOpenedByDefault: false
         - question: How does HubRise guarantee access to all my data?
           answer: |
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          isOpenedByDefault: false
         - question: Who has access to my data?
           answer: |
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          isOpenedByDefault: false
         - question: Can I give other users access to my account?
           answer: |
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          isOpenedByDefault: false
     - title: Developers
       questions:
         - question: I want to develop an application for retailers. Why use HubRise?
           answer: |
             <p>HubRise gives you immediate access to the retail and restaurant ecosystem: cash register software, online ordering solutions, delivery services... So you can concentrate on the innovative features of your product.</p>
-          isOpenedByDefault: true
         - question: Can you help me promote my application?
           answer: |
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          isOpenedByDefault: false
         - question: Can HubRise pay me for my applications?
           answer: |
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          isOpenedByDefault: false
         - question: Can HubRise offer competing solutions to its users?
           answer: |
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          isOpenedByDefault: false
         - question: Do you have a certification process?
           answer: |
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          isOpenedByDefault: false
     - title: Technology and Data Model
       questions:
         - question: What technologies does the API use?
           answer: |
             <p>The API follows REST principles, and data is in JSON format. All exchanges are made using HTTPS. Application authentication uses the OAuth 2.0 protocol.</p>
-          isOpenedByDefault: true
         - question: What data is stored on HubRise?
           answer: |
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          isOpenedByDefault: false
         - question: I want to store a field for which I can't find an equivalent in the API. How can I do this?
           answer: |
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          isOpenedByDefault: false
         - question: How is an application informed of the arrival of a new order or data update?
           answer: |
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          isOpenedByDefault: false
         - question: I have several sales outlets, some of which share the same product catalog. How can I do this?
           answer: |
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          isOpenedByDefault: false

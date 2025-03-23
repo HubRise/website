@@ -21,6 +21,7 @@ export type IconCode =
   | "language"
   | "location_on"
   | "mail"
+  | "menu"
   | "navigate_before"
   | "search"
 

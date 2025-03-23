@@ -1,11 +1,11 @@
 import ScreenContainer from "@components/ScreenContainer"
-import { AppsYaml } from "@layouts/Apps/types"
+import { IntegrationsYaml } from "@layouts/Integrations/types"
 import { text } from "@utils/misc"
 
 import { Description } from "./Styles"
 
 interface DevelopersProps {
-  developers: AppsYaml["content"]["developers"]
+  developers: IntegrationsYaml["content"]["developers"]
 }
 
 const Developer = ({ developers }: DevelopersProps): JSX.Element => {
