@@ -4,6 +4,8 @@ import { AppsYaml } from "@layouts/Apps/types"
 import { ContentImage } from "@utils/contentImage"
 import { text } from "@utils/misc"
 
+import NoResults from "../NoResults"
+
 import {
   Group,
   AppBoxLink,
@@ -30,6 +32,7 @@ const AppGroup = ({ title, slug, apps, logoImages, additionalSections, hasSugges
 
   return (
     <Block backgroundColor="none" title={title} titleAnchor={slug}>
+      {apps.length === 0 && <NoResults />}
       <Group>
         {apps.map((app, idx) => (
           <AppBoxLink key={idx} href={app.documentation || app.website} data-test="apps:result">

@@ -19,213 +19,250 @@ content:
         - website: https://3s-pos.com
           documentation: /apps/3s-pos
           logo: 3spos.png
+          country: CA
           title: 3S POS
           description: 3S POS offers a complete EPOS suite for all types of hospitality businesses. Suitable for single and multi-store businesses and feature-rich, 3S POS can be customised to fit specific business and operational requirements.
         - website: https://adipos.fr/en
           documentation: /apps/adipos
           logo: adipos.png
+          country: FR,CA
           title: Adipos
           description: Adipos is a Point of Sales for iOS and Android dedicated to catering. It covers the needs of dine-in, delivery and Click & Collect, for single or multi-store setups. Adipos comes with a number of interconnected applications, including self ordering kiosks, online ordering and a Kitchen Display System.
           additional_info:
         - website: https://www.carrepos-online.fr/
           documentation: /apps/carre-pos
           logo: carrepos.png
+          country:
           title: Carré POS
           description: Carré POS is a Point of Sales designed for fast ordering. It adapts to all types of businesses, including restaurants, bakeries, local stores, boutiques, hairdressers, and florists.
           additional_info:
         - website: https://www.clyosystems.com
           documentation: /apps/clyo
           logo: clyo.png
+          country:
           title: Clyo Systems
           description: Clyo Systems is an all-in-one EPOS solution for restaurants, including inventory management, loyalty management, Kitchen Display Systems, time-tracking, and online ordering. Its modular design allows for the integration of customisable add-ons.
           additional_info: Integration in progress.
         - website: https://www.epostechnologies.co.uk/
           documentation: /apps/epos-technologies
           logo: epostechnologies.png
+          country:
           title: EPOS Technologies
           description: Epos Technologies, suitable for retail and hospitality businesses, offers many features including delivery management, self-service kiosk, Kitchen Display System, as well as online ordering and table ordering. Available in several countries.
           additional_info:
         - website: https://www.frenchcaisse.fr/
           documentation: /apps/french-caisse
           logo: french-caisse.png
+          country:
           title: French Caisse
           description: French Caisse is a touchscreen EPOS that can be used in many types of businesses. It comes with a self ordering kiosk, an e-commerce site and a loyalty card.
           additional_info:
         - website: https://www.etakeawaymax.co.uk/
           documentation: /apps/etakeaway-max
           logo: etakeawaymax.png
+          country:
           title: eTakeaway Max
           description: eTakeaway Max is an EPOS combined with an online ordering solution and app for restaurants, takeaways and cafes.
           additional_info:
         - website: https://iikosoftware.com
           documentation: /apps/iiko
           logo: iiko.png
+          country:
           title: iiko
           description: iiko is 100% cloud, easy to deploy and scale for single and multi-store businesses. Over 30,000 businesses use iiko to automate every aspect of their operations.
           additional_info: Integration in progress.
         - website: https://www.jdc.fr/caisse-enregistreuse
           documentation: /apps/jalia
           logo: jalia.png
+          country:
           title: Jalia by JDC
           description: Jalia by JDC is a cloud Point of Sale that works on both iOS and Android tablets. Installation is easy and the EPOS is optimised for fast order taking.
           additional_info:
         - website: https://www.jdc.fr/caisse-enregistreuse
           documentation: /apps/kezia
           logo: kezia.png
+          country:
           title: Kezia II by JDC
           description: Kezia II by JDC offers the qualities sought by a traditional EPOS. It adapts to all types of businesses and offers multi-site, logistics, inventory, purchasing, loyalty, statistics and team management functions.
           additional_info:
         - website: http://www.leo2.co.uk/
           documentation: /apps/leo2
           logo: leo2.png
+          country:
           title: LEO2 / Atoo
           description: LEO2 is a Point of Sales solution developed by Atoo. LEO2 adapts to all types of businesses, including restaurants, bakeries, neighbourhood grocery stores, butchers, and florists.
           additional_info:
         - website: https://www.lightspeedhq.com
           documentation: /apps/lightspeed-restaurant
           logo: lightspeed-restaurant.png
+          country:
           title: Lightspeed Restaurant (K-Series)
           description: Lightspeed Restaurant is a cloud based solution for restaurants, available in over 100 countries. Its sleek design and intuitive interface allows on-site, remote or on-the-go management of single and multi-store businesses.
         - website: https://mealenium.io
           documentation: /apps/mealenium
           logo: mealenium.png
+          country:
           title: Mealenium
           description: Mealenium is a restaurant-specific multi-platform EPOS (Windows, iOS, and Android). Its ergonomics and features facilitate daily management of your restaurant, from order taking to detailed operations management.
         - website: https://www.miipos.fr
           documentation: /apps/miipos
           logo: miipos.png
+          country:
           title: MiiPos
           description: MiiPos by Arcsolu is a multi-platform (Windows, Android, iOS, Linux) EPOS, with a cloud technology boost, available in Chinese, and designed to meet the needs of many types of businesses. It includes all necessary features to manage businesses and assist decision making.
         - website: http://www.myorderboxhq.com
           documentation: /apps/myorderbox
           logo: myorderbox.png
+          country:
           title: MyOrderBox
           description: MyOrderBox is an affordable cloud based Point of Sales for takeaway and restaurants. MyOrderBox is easy to install and get hands on.
         - website: http://www.logiciel-de-livraison.com
           documentation: /apps/nestor
           logo: nestor.png
+          country:
           title: Nestor
           description: Nestor is a French Point of Sales solution designed for home delivery and takeaway restaurants.
           additional_info:
         - website: https://www.netfood.cloud
           documentation: /apps/netfood
           logo: netfood.png
+          country:
           title: NetFood
           description: NetFood, developed by .Net Informatica, is an Italian EPOS solution for the food & beverage sector. NetFood EPOS can be complemented with an online ordering solution and mobile app as well as a self-ordering kiosk.
           additional_info:
         - website: https://nextorder.com/en-gb
           documentation: /apps/next-order
           logo: next-order.png
+          country:
           title: Next Order
           description: Next Order offers a software suite for takeaway, delivery and full-service restaurants. Cloud based, Next Order can be used in any device. Feature-rich, the Next Order Point of Sales helps streamline operations.
           additional_info:
         - website: https://www.orderlord.com
           documentation: /apps/orderlord
           logo: orderlord.png
+          country:
           title: OrderLord POS
           description: OrderLord is a cloud based EPOS solution. It provides a Point of Sale combined with a Delivery Management Solution with auto-dispatch, Kitchen Display Screens and advanced reporting.
         - website: https://orderwire.com/
           documentation: /apps/orderwire
           logo: orderwire.png
+          country:
           title: OrderWire
           description: OrderWire is a cloud based EPOS designed for delivery. OrderWire supports many types of deployment configurations from the simple coffee-shops to multi-location chains, from traditional restaurants to Ghost Kitchens.
         - website: hhttps://pandaepos.com/
           documentation: /apps/panda-epos
           logo: panda-epos.png
+          country:
           title: Panda EPOS
           description: Panda EPOS centralises orders from all channels, and manages customers and content. It offers a single platform for restaurants with one or multiple locations to manage delivery and takeaway orders.
           additional_info: Integration in progress.
         - website: https://www.partech.com/pixel-point-software/
           documentation: /apps/pixelpoint-bridge
           logo: par-pixelpoint-web-api.png
+          country:
           title: PAR PixelPoint (web API)
           description: PixelPoint by PAR, integrated via its Web API, is a Point of Sales solution for restaurants and entertainment industry sectors. PixelPoint is used for cost management, loss prevention and loyalty programs.
           additional_info: Web API integration.
         - website: https://www.partech.com/pixel-point-software/
           documentation: /apps/pixelpoint-windows-api
           logo: par-pixelpoint.png
+          country:
           title: PAR PixelPoint (Windows API)
           description: PixelPoint by PAR, integrated via its Windows API, is a Point of Sale solution for restaurants and entertainment industry sectors. PixelPoint is used for cost management, loss prevention and loyalty programs.
           additional_info: Windows API integration by Slowey Systems.
         - website: https://www.pointone-epos.co.uk/
           documentation: /apps/pointone
           logo: pointone.png
+          country:
           title: pointOne
           description: pointOne is an easy to use touch-screen Point of Sales. It includes online ordering, kitchen screens, smart phone applications, reporting as well as stock control.
           additional_info: Integration in progress.
         - website: https://www.popina.com/fr/
           documentation: /apps/popina
           logo: popina.png
+          country:
           title: Popina
           description: Popina is an iPad EPOS for restaurants that is simple and intuitive to use. Popina is complemented with an operations management system and a number of accessories to enrich the user and customer experience.
           additional_info:
         - website: https://poshelper.fr/
           documentation: /apps/pos-helper
           logo: pos-helper.png
+          country:
           title: POS HELPER
           description: POS HELPER is a Point of Sales for restaurants. It includes production, cost control and payment functionalities. They also offer Kitchen Display Systems, self-service kiosks, and online ordering.
           additional_info:
         - website: https://www.cunninghams.co.uk/
           documentation: /apps/quantum
           logo: quantum.png
+          country:
           title: Quantum by Cunninghams EPOS Group
           description: Quantum by Cunninghams EPOS Group offers an EPOS system for various sectors, featuring sales management, stock control, customer loyalty, various eCommerce functionnalities, and real-time reporting.
           additional_info:
         - website: https://www.rmpos.com/
           documentation: /apps/restaurant-manager
           logo: restaurant-manager.png
+          country:
           title: Restaurant Manager
           description: Restaurant Manager, sold worldwide by local authorised resellers, is tailored for use in any food service establishment and bars.
           additional_info: Integration by Crystal Mind.
         - website: https://www.synapsy.fr/
           documentation: /apps/synapsy
           logo: synapsy.png
+          country:
           title: Synapsy
           description: Synapsy is an operations management solution for food catering professionals and retail stores, that includes EPOS, self-service kiosks, and Click & Collect. Synapsy offers decision-making and marketing tools, and meets the needs of businesses of all sizes.
           additional_info:
         - website: https://www.sicom.com/
           documentation: /apps/sicom
           logo: sicom.png
+          country:
           title: SICOM
           description: SICOM delivers an end-to-end suite for quick service and fast casual brands. Franchisees and restaurant managers use it to manage, control and standardise processes while capturing data insights.
           additional_info: Integration by MyTec in progress.
         - website: http://www.akksofttech.com
           documentation: /apps/akk-softtech
           logo: akk-softtech.png
+          country:
           title: AKK Softtech
           description: The AKK EPOS solution, edited by Softtech, caters to the needs of Asian restaurants, specifically Thai restaurants. The AKK EPOS user interface is available in both English and Thai.
         - website: https://swoopos.com
           documentation: /apps/swoopos
           logo: swoopos.png
+          country:
           title: SwooPOS
           description: SwooPOS is a cost efficient, multifunctional and easy to use mobile Point of Sales system designed for the hospitality and retail sectors. It comes with payment, table booking, and QR code table ordering solutions.
           additional_info:
         - website: http://www.talc.fr/
           documentation: /apps/talc
           logo: talc.png
+          country:
           title: T.A.L.C Informatique
           description: T.A.L.C Informatique is an EPOS adapted to the needs of restaurants. Its features include multi-store management, courier dispatching, inventory and procurement management, client geolocalisation and sending of SMS.
           additional_info:
         - website: https://tasksoftware.com
           documentation: /apps/task-software
           logo: task.png
+          country:
           title: TASK
           description: TASK is an EPOS solution engineered for the global hospitality and dining sectors. It offers features such as real-time reporting enhanced with Business Intelligence capabilities, inventory management, and ordering solutions through kiosks, web platforms, and mobile apps. TASK excels in the management of customer relationship, loyalty, and promotions.
           additional_info:
         - website: https://tickeat.io
           documentation: /apps/tickeat
           logo: tickeat.png
+          country:
           title: Tick'Eat
           description: Tick'Eat is a multi-platform EPOS specifically designed by and for restaurateurs. It handles on-site and online orders, including orders from delivery platforms, offers easy menu updates, and includes a dispatch function for delivery drivers.
         - website: https://www.ultimapos.fr/
           documentation: /apps/ultimapos
           logo: ultimapos.png
+          country:
           title: UltimaPOS
           description: UltimaPOS by UltimaSOFT offers an EPOS and operations management software adapted to the needs of restaurants, bakeries, butchers, and other food outlets as well as grocery stores, beauty institutes, dry cleaners and laundries. A back office can be used to edit settings and view results.
           additional_info:
         - website: https://zelty.fr
           documentation: /apps/zelty
           logo: zelty.png
+          country:
           title: Zelty
           description: Zelty is a complete suite of solutions designed for multi-site. Zelty is suitable for any type of restaurant from fast food to traditional catering.
           additional_info:
@@ -235,92 +272,108 @@ content:
         - website: https://delicity.com
           documentation: /apps/delicity
           logo: delicity.png
+          country: GB
           title: Delicity
           description: Delicity is a food ordering and delivery service platform available. Instead of charging restaurants a commission on orders, Delicity bills a fixed cost per order, along with a delivery cost. Delicity is present in several major cities in France.
         - website: https://www.deliveroo.com
           documentation: /apps/deliveroo
           logo: deliveroo.png
+          country:
           title: Deliveroo
           description: Deliveroo is an online delivery platform for restaurants and convenience stores. Customers can order food online or via a mobile app. Available in 12 markets and 500 cities.
         - website: https://www.deliveryhero.com
           documentation: /apps/delivery-hero
           logo: delivery-hero.png
+          country:
           title: Delivery Hero
           description: Delivery Hero is an online food ordering and delivery platform for local restaurants. Customers can order food online or via a mobile app. Available in over 50 countries across four continents.
           additional_info: Integration in progress.
         - website: https://www.foodpanda.com/
           documentation: /apps/foodpanda
           logo: foodpanda.png
+          country:
           title: Foodpanda
           description: Foodpanda is an online food ordering and delivery platform for local restaurants. Customers can order food online or via a mobile app. Available in 14 markets.
           additional_info:
         - website: https://glovoapp.com
           documentation: /apps/glovo
           logo: glovo.png
+          country:
           title: Glovo
           description: Glovo is an online food ordering and delivery platform for local restaurants. Customers can order food online or via a mobile app. Glovo also offers on demand delivery services. Available in 25 countries in Europe, Western Asia and Africa.
           additional_info:
         - website:
           documentation: /apps/hop-delivery
           logo: hop-delivery.png
+          country:
           title: Hop Delivery
           description: Hop Delivery is an online ordering and delivery platform for restaurants and retail stores. Customers can order online from the Hop Delivery platform or from the white branded website. Hop Delivery operates in Geneva, Switzerland.
           additional_info:
         - website: https://www.just-eat.co.uk/
           documentation: /apps/just-eat-flyt
           logo: just-eat.png
+          country:
           title: Just Eat
           description: Just Eat is an online food ordering and delivery service platform for local restaurants. Customers can order food online or via a mobile app. Available in 13 countries in Europe, Asia, Oceania, and the Americas.
         - website: https://www.lieferando.de/fr/
           documentation: /apps/just-eat-takeaway
           logo: lieferando.png
+          country:
           title: lieferando.de and lieferando.at
           description: Lieferando is an online food ordering and delivery platform for local restaurants. Customers can order food online or via a mobile app. Available in Germany and Austria.
           additional_info:
         - website: https://www.menulog.com.au/
           documentation: /apps/just-eat-flyt
           logo: menulog.png
+          country:
           title: Menulog
           description: Menulog is an online food and beverage ordering and delivery platform. Customers can order food online or via a mobile app. Available in Australia and New Zealand.
           additional_info:
         - website: https://www.pyszne.pl/en/
           documentation: /apps/just-eat-takeaway
           logo: pyszne.png
+          country:
           title: Pyszne
           description: Pyszne is an online food ordering and delivery platform for local restaurants. Customers can order food online or via a mobile app. They operate in Poland.
           additional_info:
         - website: https://www.skipthedishes.com/
           documentation: /apps/just-eat-flyt
           logo: skipthedishes.png
+          country:
           title: Skip The Dishes
           description: Skip The Dishes is an online food ordering and delivery platform for local restaurants. Customers can order food or alcohol online or via a mobile app. Available in Canada.
           additional_info:
         - website: https://www.smood.ch/en
           documentation: /apps/smood
           logo: smood.png
+          country:
           title: Smood
           description: Smood is an online food ordering and delivery platform that operates throughout the Swiss market. Customers can order food online or via a mobile app from their favorite restaurants or from their local Migros.
         - website: https://www.justeattakeaway.com/
           documentation: /apps/just-eat-takeaway
           logo: takeaway.png
+          country:
           title: Just Eat Takeaway
           description: Takeaway.com is an online food ordering and delivery platform for local restaurants. Customers can order food online or via a mobile app. Available in Belgium, Luxembourg, Portugal, Romania, and in Bulgaria.
           additional_info:
         - website: https://www.talabat.com
           documentation: /apps/talabat
           logo: talabat.png
+          country:
           title: Talabat
           description: Talabat is a food ordering and delivery platform. Customers can order food online or via a mobile app. Available in Kuwait, Saudi Arabia, Bahrain, the United Arab Emirates, Oman, Qatar, Jordan, Egypt, and Iraq.
           additional_info: Integration in progress.
         - website: https://www.thuisbezorgd.nl/en/
           documentation: /apps/just-eat-takeaway
           logo: thuisbezorgd.png
+          country:
           title: Thuisbezorgd
           description: Thuisbezorgd is an online food ordering and delivery platform for local restaurants. Customers can order food online or via a mobile app. Available in the Netherlands.
           additional_info:
         - website: https://www.ubereats.com
           documentation: /apps/uber-eats
           logo: ubereats.png
+          country:
           title: Uber Eats
           description: Uber Eats is an online food ordering and delivery platform for local restaurants. Customers can order food online or via a mobile app. Available in 45 markets and 6,000 cities.
     - title: Online Ordering
@@ -329,12 +382,14 @@ content:
         - website: https://www.app4.co.uk/
           documentation: /apps/app4
           logo: app4.png
+          country:
           title: App4
           description: App4 offers a branded online ordering system, mobile app and associated applications for takeaways, restaurants, pubs, cafes and food outlets.
           additional_info:
         - website: https://www.aquila-cms.com/
           documentation: /apps/aquila-cms
           logo: aquila-cms.png
+          country:
           title: AquilaCMS
           description: Aquila CMS is an open source solution used to create and edit e-commerce websites. Aquila CMS can be downloaded, or used as a hosted solution with development services provided by the editor.
         - website: https://chataigne.ai/fr
@@ -346,117 +401,138 @@ content:
         - website: https://dishop.co/
           documentation: /apps/dishop
           logo: dishop.png
+          country:
           title: Dishop
           description: Dishop is an online ordering and delivery management solution, mostly intended for chains of restaurants and dark kitchens. Their offer include mobile and web applications, as well as connections with independent delivery workers.
           additional_info:
         - website: https://www.dood.com/
           documentation: /apps/dood
           logo: dood.png
+          country:
           title: DOOD
           description: DOOD is an e-commerce and e-marketing solution for the food retail industry. DOOD online ordering supports Click & Collect, delivery, and table ordering. DOOD's suite of marketing tools is designed to increase customer loyalty.
         - website: https://eddress.co
           documentation: /apps/eddress
           logo: eddress.png
+          country:
           title: eddress
           description: eddress is an online ordering solution for restaurants and grocery stores, with integrated delivery management. It is suitable for businesses of all sizes, whether independent or franchised. Available in 20 languages and deployed in more than 17 countries.
         - website: https://www.gonnaorder.com
           documentation: /apps/gonnaorder
           logo: gonnaorder.png
+          country:
           title: GonnaOrder
           description: GonnaOrder offers a cost-effective online ordering and payment system available in 14 countries. Via a branded website and native iOS and Android apps, GonnaOrder supports takeaway, delivery and table service orders for restaurants, bars, pubs, and cafes.
           additional_info:
         - website: https://kurvekiosks.com
           documentation: /apps/kurvekiosks
           logo: kurvekiosks.png
+          country:
           title: Kurve Kiosks
           description: Kurve Kiosks designs and develops self ordering kiosks tailored for hospitality operators. The platform is customisable, rich in features, and reliable, easing the transition to self-service technology.
           additional_info:
         - website: https://latoquemagique.com/
           documentation: /apps/la-toque-magique
           logo: la-toque-magique.png
+          country:
           title: La Toque Magique
           description: La Toque Magique is an online ordering solution, optimised for SEO and social media. It lets you manage orders and deliveries from all channels including food ordering platforms in a single interface.
         - website: https://www.livepepper.com
           documentation: /apps/livepepper
           logo: livepepper.png
+          country:
           title: LivePepper
           description: LivePepper is an online ordering solution for home delivery and takeaway restaurants. LivePepper is used by independent restaurants and large franchises based in France, in the UK and internationally.
         - website: https://locatouch.com/
           documentation: /apps/locatouch
           logo: locatouch.png
+          country:
           title: Loca'Touch
           description: Loca'Touch offers self ordering kiosks for leasing or sale. Customers can order and pay autonomously, and receive complementary products suggestions during purchase. Regular system software updates.
           additional_info:
         - website: https://www.mylemonade.fr
           documentation: /apps/my-lemonade
           logo: my-lemonade.png
+          country:
           title: My Lemonade
           description: My Lemonade is a table ordering solution. Customers flash the QR code or use the NFC tag placed on their table, access the menu on their smartphone in their language, and order from it. No app installation required.
         - website: https://mynober.nl/en/home-2
           documentation: /apps/mynober
           logo: mynober.png
+          country:
           title: MynOber
           description: MynOber offers an online ordering solution, self ordering kiosks and a lightweight EPOS for hospitality businesses. MynOber can be used standalone or combined with a third party EPOS.
           additional_info:
         - website: https://obypay.fr
           documentation: /apps/obypay
           logo: obypay.png
+          country:
           title: Obypay
           description: Obypay offers an online and table ordering solution for restaurants, a digital concierge service app for hotels, and self ordering kiosks for restaurants.
         - website: https://www.prestashop.com/en
           documentation: /apps/prestashop
           logo: prestashop.png
+          country:
           title: PrestaShop
           description: PrestaShop is an open source e-commerce solution. Multilingual, multi-currency, and omnichannel, PrestaShop can be hosted or deployed on your own server. It can be tailored to meet the needs of most businesses.
           additional_info:
         - website: https://www.restajet.com/
           documentation: /apps/restajet
           logo: restajet.png
+          country:
           title: RestaJet
           description: RestaJet offers a mobile app for reservations and an online ordering website for restaurants. Content management, reporting and marketing tools are available on the RestaJet console.
           additional_info:
         - website: https://www.restaur-app.fr
           documentation: /apps/restaur-app
           logo: restaur-app.png
+          country:
           title: Restaur'App
           description: Restaur'App offers restaurateurs their own branded website and mobile app to showcase their establishment and manage online orders, as well as deliveries, without any commission on sales. Restaur'App is tailored for fast food and takeaway restaurants.
           additional_info:
         - website: https://restaurant-internet.com
           documentation: /apps/restaurant-internet
           logo: restaurant-internet.png
+          country:
           title: Restaurant-internet
           description: Restaurant-internet offers websites with table reservation and online ordering modules. It addresses the particular needs of delivery and takeaway businesses.
         - website: https://servier.bar
           documentation: /apps/servier-bar
           logo: servier-bar.png
+          country:
           title: servier.bar
           description: servier.bar offers ordering solutions designed for restaurants and hotels. These solutions allow customers to order and pay directly from their smartphones via a web app, to improve service without hiring additional staff.
           additional_info:
         - website: https://www.shopify.com/
           documentation: /apps/shopify
           logo: shopify.png
+          country:
           title: Shopify
           description: Shopify is an e-commerce platform for any type of business. It offers an omnichannel user experience on the web, smartphones, social networks, marketplaces, and in-store.
         - website: https://smartresto.net/
           documentation: /apps/smartresto
           logo: smartresto.png
+          country:
           title: SmartResto.Net
           description: SmartResto.Net offers interactive digital menus accessible via QR code and Click & Collect online ordering websites. The solution is designed for cafes, restaurants, caterers, street food, hotels and any other catering profession.
           additional_info:
         - website: https://www.smilein.io/en/home
           documentation: /apps/smilein
           logo: smilein.png
+          country:
           title: smilein
           description: smilein is an ordering solution for hotels and restaurants that cares for all customer journeys. Their multi-site, multi-stand and multi-guest basket offer makes it the recognised benchmark for chains and food courts.
           additional_info:
         - website: https://storefactory.y-proximite.fr
           documentation: /apps/store-factory
           logo: storefactory.png
+          country:
           title: Store Factory
           description: Store Factory is used by SMEs and smaller retail stores with limited technical knowledge to create e-commerce websites. Technical support, maintenance and SEO services are provided by the publisher.
         - website: http://superdigital.fr/
           documentation: /apps/superdigital
           logo: superdigital.png
+          country:
           title: SuperDigital.fr
           description: SuperDigital.fr is a complete solution for restaurants to create a white label online ordering website. Restaurant owners can personalise their site autonomously from the back office.
         - website: https://tablati.ma
@@ -468,23 +544,27 @@ content:
         - website: https://www.tastycloud.fr
           documentation: /apps/tastycloud
           logo: tastycloud.png
+          country:
           title: TastyCloud
           description: TastyCloud is a digital menu solution for restaurants and hotels. They offer digital menus, outdoor menu display cases, dynamic screens, Click & Collect online ordering, and smartphone ordering via QR code scanning.
         - website: https://woocommerce.com/
           documentation: /apps/woocommerce
           logo: woocommerce.png
+          country:
           title: WooCommerce
           description: WooCommerce is an open-source e-commerce plugin for WordPress. Customisable and developer friendly, it is used by small to large businesses.
           additional_info:
         - website: https://www.zenorder.fr
           documentation: /apps/zenorder
           logo: zenorder.png
+          country:
           title: Zenorder
           description: Zenorder is a white label online ordering solution for the food industry, coupled with a suite of marketing and customer loyalty tools.
           additional_info:
         - website: https://www.zuplyit.com
           documentation: /apps/zuplyit
           logo: zuplyit.png
+          country:
           title: Zuplyit
           description: Zuplyit by AirTouchMedia is a white label online ordering solution for the food industry, combined with a Delivery Management Solution, as well as a suite of customer loyalty and promotion tools.
           additional_info:
@@ -494,52 +574,61 @@ content:
         - website: https://biteberry.com
           documentation: /apps/biteberry
           logo: biteberry.png
+          country:
           title: BiteBerry
           description: BiteBerry's Delivery Management System streamlines the entire delivery process for restaurants and their delivery fleets alike. Features like real-time tracking, ride optimisation, and order management ensure efficient operations and timely deliveries.
           additional_info:
         - website: http://www.captain.ai
           documentation: /apps/captain
           logo: captain.png
+          country:
           title: Captain
           description: Captain supports restaurant delivery through order management and live customer order tracking. A Kitchen Display Screen helps prioritise the cooking sequence. An add-on feature enables the use of third-party delivery services.
           additional_info:
         - website: https://coursicab.com/en
           documentation: /apps/coursicab
           logo: coursicab.png
+          country:
           title: Coursicab
           description: Coursicab is a delivery platform used for express and scheduled deliveries, by taxi or bike. Thanks to geolocation, your customers can track their packages real-time. Present in 6 European countries, available 24/7.
           additional_info:
         - website: https://www.orderlord.com
           documentation: /apps/orderlord
           logo: orderlord.png
+          country:
           title: OrderLord
           description: OrderLord delivery management solution can be used by restaurants, retails or delivery services agencies. Orderlord includes a dashboard for managers, an app for couriers and a tracking system for customers.
         - website: https://orkestro.com
           documentation: /apps/orkestro
           logo: orkestro.png
+          country:
           title: Orkestro
           description: Orkestro is a delivery operations manager solution used to organise inhouse deliveries or outsource to delivery companies on-demand and on the same day.
           additional_info:
         - website: https://postmates.com
           documentation: /apps/postmates
           logo: postmates.png
+          country:
           title: Postmates
           description: Postmates offers local delivery of restaurant-prepared meals and other goods in the US.
           additional_info: Integration in progress.
         - website: https://www.smood.ch/en
           documentation: /apps/smood-dismatch
           logo: smood.png
+          country:
           title: Dismatch
           description: Dismatch is an independent home delivery service offered by Smood, which covers the entire Swiss market. With Dismatch, non-Smood partners can benefit from their delivery service.
         - website: https://stuart.com
           documentation: /apps/stuart
           logo: stuart.png
+          country:
           title: Stuart
           description: Stuart offers businesses of all sizes, all sectors, on demand fast delivery services with a customised way of transporting goods.
           additional_info:
         - website: https://trapar.co.uk
           documentation: /apps/trapar
           logo: trapar.png
+          country:
           title: Trapar
           description: Trapar is a last-mile delivery solution for businesses, handling orders from various channels with a real-time tracking app. Trapar offers the option to use one's own delivery staff or Trapar's on-demand drivers/riders.
           additional_info:
@@ -549,37 +638,44 @@ content:
         - website: https://www.como.com
           documentation: /apps/como
           logo: como.png
+          country:
           title: Como
           description: Como is a loyalty program solution for retail and hospitality companies. Como gathers data about purchases and preferences to approach customers with personalised offers.
           additional_info:
         - website: https://dotdigital.com/
           documentation: /apps/dotdigital
           logo: dotdigital.png
+          country:
           title: dotdigital
           description: dotdigital is an omnichannel marketing automation system used to engage customers. Marketing campaigns messages are sent across email, SMS, push notifications, live chat, and social ads.
         - website: https://myemma.com
           documentation: /apps/emma
           logo: emma.png
+          country:
           title: Emma
           description: Emma is an email campaign platform with support available in email marketing strategy, as well as content and design to help maximise results.
         - website: https://mailchimp.com
           documentation: /apps/mailchimp
           logo: mailchimp.png
+          country:
           title: MailChimp
           description: MailChimp all‑in‑one marketing platform from which customised emails, newsletters and SMS can be sent.
         - website: https://sailplay.com
           documentation: /apps/sailplay
           logo: sailplay.png
+          country:
           title: SailPlay
           description: SailPlay is a marketing automation platform that helps retailers to build loyalty programs and set mass and triggered email campaigns.
         - website: https://www.smg.com
           documentation: /apps/smg
           logo: smg.png
+          country:
           title: Service Management Group
           description: SMG combines technology and services to collect, analyse, and share feedback on data for brands to make decisions with insights across their enterprise.
         - website: https://upxp.io
           documentation: /apps/upxp
           logo: upxp.png
+          country:
           title: UPXP
           description: UPXP is the first cryptocurrency dedicated to restaurateurs. UPXP rewards customers with cryptocurrency they can use in other businesses. Engage clients and avoid paying commissions to banks and third-parties.
     - title: Operations and Inventory
@@ -588,57 +684,67 @@ content:
         - website: https://get.apicbase.com
           documentation: /apps/apicbase
           logo: apicbase.png
+          country:
           title: Apicbase
           description: Apicbase is a Food and Beverage management software for multi-store food businesses and hotels. Apicbase helps you control food costs, inventory, and purchasing. Access your data at any time, wherever you are, on any device.
           additional_info:
         - website: https://barratio.fr/en
           documentation: /apps/barratio
           logo: barratio.png
+          country:
           title: Barratio
           description: Barratio digitalises invoices and delivery slips. It tracks invoices discrepancies. The full Barratio suite offers a theoretical inventory and a global overview of your business by analysing purchases, costs per recipe and sales data.
           additional_info: Integration in progress.
         - website: https://www.foodreport.fr
           documentation: /apps/foodreport
           logo: foodreport.png
+          country:
           title: Food Report
           description: Food Report offers decision support tools for all types of restaurants. With Food Report you can create real-time online reports using your HubRise customer, order, and product data.
         - website: https://link.inpulse.ai/hubrise
           documentation: /apps/inpulse
           logo: inpulse.png
+          country:
           title: Inpulse
           description: Inpulse is an AI solution that forecasts sales, in order to improve stock and procurement management, and to increase the margin on food costs. Inpulse meets the needs of restaurants, dark kitchens and franchises.
           additional_info:
         - website: https://koust.net/
           documentation: /apps/koust
           logo: koust.png
+          country:
           title: Koust
           description: Koust is an operations management solution designed for restaurants and hotels, enabling them to manage inventory, analyse sales and gross margin, optimise purchases, and adjust menus to enhance offerings while ensuring margin control.
           additional_info:
         - website: https://malba.io/
           documentation: /apps/melba
           logo: melba.png
+          country:
           title: Melba
           description: Melba by Foodmeup is a comprehensive operations management tool for food industry professionals with inventory management, supplier orders, technical sheets, production, sales & quotes, supplier labels, oil and temperature reports, and hygiene tasks.
         - website: https://rapidbarapp.com/en
           documentation: /apps/rapidbar
           logo: rapidbar.png
+          country:
           title: RapidBar
           description: RapidBar simplifies inventory management of your restaurant, hotel or bar. RapidBar helps you to control your supply chain, by centralizing menus, inventories and supplier orders in a single, cloud-based application.
           additional_info:
         - website: https://www.sage.com/en-us/sage-business-cloud/sage-x3
           documentation: /apps/sage-x3
           logo: sage.png
+          country:
           title: Sage X3
           description: Sage X3 is an ERP software designed for medium to large businesses. It offers features of financial management, inventory control, production planning, and procurement, helping to streamline operations and improve decision-making.
           additional_info: Integration made by Gigavee Technology.
         - website: https://www.somm-it.com/
           documentation: /apps/somm-it
           logo: somm-it.png
+          country:
           title: SOMM'IT
           description: SOMM'IT helps you manage your wine list. Sync your inventory with your EPOS to keep your wine list up to date. SOMM'IT includes a large wine library, and a dematerialised procurement system.
         - website: https://www.stocktake-online.com
           documentation: /apps/stocktake-online
           logo: stocktake-online.png
+          country:
           title: Stocktake Online
           description: StockTake Online is an inventory management system designed for restaurants, bars, nightclubs, and more. It helps organise operations by simplifying purchasing, minimising waste, and enhancing profitability.
     - title: Other Apps
@@ -647,38 +753,64 @@ content:
         - website:
           documentation: /apps/catalog-manager
           logo: catalog-manager.png
+          country: GB
           title: Catalog Manager
           description: Catalog Manager allows you to create, edit and manage your HubRise catalogs. Catalogs can be pulled from or pushed into integrated solutions, such as EPOS, online ordering solutions or food ordering and delivery platforms. Catalog Manager is a free app edited by HubRise.
         - website: https://www.expedy.fr
           documentation: /apps/expedy
           logo: expedy-print.png
+          country: FR
           title: Expedy Print
           description: Expedy Print is used to automate printing of orders received from e-commerce websites or any other web application to one or more printers simultaneously. Connection can be done by ETHERNET, 3G/4G or Wifi.
         - website:
           documentation: /apps/orderline
           logo: orderline.png
+          country: AU
           title: OrderLine
           description: OrderLine centralises orders received from an e-commerce website and food ordering and delivery platforms. Orders can be managed and printed from OderLine. OrderLine is free app edited by HubRise.
         - website: https://www.qwenta.ch
           documentation: /apps/qwenta
           logo: qwenta.png
+          country: JP
           title: Qwenta
           description: Qwenta is a QR code-based table payment solution tailored for Swiss restaurants. Guests can split the bill, add a tip, and leave feedback before completing their payment.
         - website: https://www.satoeurope.com
           documentation: /apps/sato
           logo: sato.png
+          country: DE,JP
           title: SATO
           description: SATO provides autonomous customisable printers for retail stores and restaurants. SATO printers are used in over 90 countries.
         - website: https://tickncook.com
           documentation: /apps/tickncook
           logo: tickncook.png
+          country: ES
           title: TicknCook
           description: TicknCook is a Kitchen Display System that handles orders coming from all sales channels. TicknCook can be customised with specialised screens for bar, pastry or kitchen.
         - website: https://1bot.io
           documentation: /apps/1bot
           logo: 1bot.png
+          country: IT
           title: 1Bot
           description: 1Bot is a personal assistant. This chatbot can answer customers' questions and send a summary of the conversation by SMS to the store.
+  countries:
+    - title: All countries
+      code: all
+    - title: United Kingdom
+      code: GB
+    - title: France
+      code: FR
+    - title: Canada
+      code: CA
+    - title: Germany
+      code: DE
+    - title: Spain
+      code: ES
+    - title: Italy
+      code: IT
+    - title: Japan
+      code: JP
+    - title: Australia
+      code: AU
   additional_sections:
     suggest_app:
       description: Your application is not in this list? Send us some details about your application. HubRise will contact the editor on your behalf to suggest an integration.

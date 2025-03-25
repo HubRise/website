@@ -1,7 +1,7 @@
 "use client"
 import * as React from "react"
 
-import { AppsYaml } from "@layouts/Apps/types"
+import { AppsYaml, TCountry } from "@layouts/Apps/types"
 import { ContentImage } from "@utils/contentImage"
 import { Language } from "@utils/locales"
 import { doesSearchTextMatch } from "@utils/search"
@@ -23,17 +23,33 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
 
   const [filterSearch, setFilterSearch] = React.useState("")
   const [selectedCategory, setSelectedCategory] = React.useState(content.all_apps)
+  const [selectedCountry, setSelectedCountry] = React.useState(content.countries[0])
 
   const hasFiltersApplied = React.useMemo(() => {
     return !(selectedCategory === content.all_apps && filterSearch === "")
   }, [filterSearch, selectedCategory, content.all_apps])
 
   const filteredAppsByCategory = React.useMemo(() => {
+    let filterResults
+
     if (filterSearch === "") {
-      return content.categories
+      if (selectedCountry.code === "all") {
+        return content.categories
+      }
+
+      filterResults = content.categories.map(({ title, slug, apps, has_suggest_app }) => {
+        return {
+          title,
+          slug,
+          apps: apps.filter((app) => app.country === null || app.country?.includes(selectedCountry.code)),
+          has_suggest_app,
+        }
+      })
+
+      return filterResults
     }
 
-    const filterResults = content.categories.map(({ title, slug, apps, has_suggest_app }) => {
+    filterResults = content.categories.map(({ title, slug, apps, has_suggest_app }) => {
       return {
         title,
         slug,
@@ -43,7 +59,7 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
     })
 
     return filterResults.filter(({ apps }) => apps.length > 0)
-  }, [filterSearch, content.categories])
+  }, [filterSearch, content.categories, selectedCountry])
 
   const scrollIntoView = () => {
     const appsResults = document.getElementById("apps-results")
@@ -53,11 +69,18 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
   const onSearchInputChange = (value: string) => {
     setFilterSearch(value)
     setSelectedCategory(content.all_apps)
+    setSelectedCountry(content.countries[0])
     scrollIntoView()
   }
 
   const onCategoryChange = (category: string) => {
     setSelectedCategory(category)
+    setFilterSearch("")
+    scrollIntoView()
+  }
+
+  const onCountryChange = (country: TCountry) => {
+    setSelectedCountry(country)
     setFilterSearch("")
     scrollIntoView()
   }
@@ -69,9 +92,12 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
       <Nav
         language={language}
         categories={content.categories}
+        countries={content.countries}
         allAppsLabel={content.all_apps}
         selectedCategoryLabel={selectedCategory}
         onCategoryChange={onCategoryChange}
+        selectedCountryLabel={selectedCountry.title}
+        onCountryChange={onCountryChange}
         searchInputValue={filterSearch}
         onSearchInputChange={onSearchInputChange}
       />

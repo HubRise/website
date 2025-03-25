@@ -1,3 +1,8 @@
+export type TCountry = {
+  title: string
+  code: string
+}
+
 export interface AppsYaml {
   meta: {
     title: string
@@ -23,11 +28,13 @@ export interface AppsYaml {
         website: string
         documentation: string
         logo: string
+        country: string | null
         title: string
         description: string
         additional_info: string
       }>
     }>
+    countries: Array<TCountry>
     additional_sections: {
       suggest_app: {
         description: string
