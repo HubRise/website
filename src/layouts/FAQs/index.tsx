@@ -1,24 +1,69 @@
 "use client"
 
+import { useEffect, useRef, useState } from "react"
+
 import Accordion from "@components/Accordion"
 import Card from "@components/Card"
 import GetInTouch from "@components/GetInTouch"
 import { GetInTouchYaml } from "@components/GetInTouch/types"
+import Icon from "@components/Icon"
 import PageHero from "@components/PageHero"
 import ScreenContainer from "@components/ScreenContainer"
 import Underline from "@components/Underline"
+import { iconSizes } from "@utils/styles"
 
 import { CardTitle, Content } from "./Styles"
-import { FAQsYaml } from "./types"
+import { FAQsYaml, TQuestion } from "./types"
 
 interface FAQProps {
   yaml: FAQsYaml
   getInTouch: GetInTouchYaml
 }
 
+type TSectionExpanding = {
+  isExpanded: boolean
+}
+
 const FAQs = ({ yaml, getInTouch }: FAQProps): JSX.Element => {
+  const [sectionsExpanding, setSectionsExpanding] = useState<TSectionExpanding[]>([])
+  const accordionRef = useRef<HTMLDivElement[]>([])
   const content = yaml.content
   const { title, description, button_label, button_link } = getInTouch.content
+
+  useEffect(() => {
+    setSectionsExpanding(
+      content.faq_sections.map(() => {
+        return {
+          isExpanded: false,
+        }
+      }),
+    )
+  }, [content])
+
+  const handleAddRefToArray = (el: HTMLDivElement | null) => {
+    let nbElements = 0
+    content.faq_sections.forEach((section) => {
+      nbElements += section.questions.length
+    })
+
+    if (el !== null && accordionRef.current.length < nbElements) {
+      accordionRef.current.push(el)
+    }
+  }
+
+  const handleClickExpandIcon = (questions: TQuestion[], id: number) => {
+    questions.forEach((question: TQuestion) => {
+      if (
+        accordionRef.current[question.id].getAttribute("data-is-expanded") === String(sectionsExpanding[id].isExpanded)
+      ) {
+        accordionRef.current[question.id].click()
+      }
+    })
+
+    setSectionsExpanding(
+      sectionsExpanding.map((section, sIdx) => (id === sIdx ? { isExpanded: !section.isExpanded } : section)),
+    )
+  }
 
   return (
     <>
@@ -31,14 +76,22 @@ const FAQs = ({ yaml, getInTouch }: FAQProps): JSX.Element => {
       />
       <ScreenContainer bgColor="backgroundLight" verticalPadding="big">
         <Content>
-          {content.faq_sections.map(({ title, questions }, index) => {
+          {content.faq_sections.map(({ title, questions }, sIdx) => {
             return (
-              <Card key={index} padding="big">
-                <CardTitle>{title}</CardTitle>
+              <Card key={sIdx} padding="big">
+                <CardTitle $isExpanded={sectionsExpanding[sIdx]?.isExpanded}>
+                  {title}
+                  <Icon
+                    onClick={() => handleClickExpandIcon(questions, sIdx)}
+                    code="expand_more"
+                    size={iconSizes._32}
+                    color="#263238"
+                  />
+                </CardTitle>
                 <Underline />
-                {questions.map((question, index) => {
+                {questions.map((question, qIdx) => {
                   return (
-                    <Accordion key={index} title={question.question}>
+                    <Accordion key={qIdx} title={question.question} ref={(el) => handleAddRefToArray(el)}>
                       <div dangerouslySetInnerHTML={{ __html: question.answer }} />
                     </Accordion>
                   )

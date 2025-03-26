@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from "react"
+import { forwardRef, useCallback, useRef, useState } from "react"
 
 import Icon from "@components/Icon"
 import { iconSizes } from "@utils/styles"
@@ -11,27 +11,31 @@ interface AccordionProps {
   children: React.ReactNode
 }
 
-const Accordion = ({ title, isOpenedByDefault = false, children }: AccordionProps) => {
-  const [isCollapsed, setIsCollapsed] = useState<boolean>(isOpenedByDefault)
-  const contentRef = useRef<HTMLDivElement>(null)
+const Accordion = forwardRef(
+  ({ title, isOpenedByDefault = false, children }: AccordionProps, ref: React.ForwardedRef<HTMLDivElement>) => {
+    const [isExpanded, setIsExpanded] = useState<boolean>(isOpenedByDefault)
+    const contentRef = useRef<HTMLDivElement>(null)
 
-  const contentHeight = !isCollapsed ? 0 : contentRef?.current?.scrollHeight
+    const contentHeight = !isExpanded ? 0 : contentRef?.current?.scrollHeight
 
-  const handleCollapseToggle = useCallback(() => {
-    setIsCollapsed(!isCollapsed)
-  }, [isCollapsed])
+    const handleCollapseToggle = useCallback(() => {
+      setIsExpanded(!isExpanded)
+    }, [isExpanded])
 
-  return (
-    <StyledAccordion>
-      <TitleWrapper $isCollapsed={isCollapsed} onClick={handleCollapseToggle}>
-        <Title>{title}</Title>
-        <Icon code="expand_more" size={iconSizes._25} color="#263238" />
-      </TitleWrapper>
-      <ContentWrapper $maxHeight={contentHeight}>
-        <Content ref={contentRef}>{children}</Content>
-      </ContentWrapper>
-    </StyledAccordion>
-  )
-}
+    return (
+      <StyledAccordion>
+        <TitleWrapper $isExpanded={isExpanded} onClick={handleCollapseToggle} ref={ref} data-is-expanded={isExpanded}>
+          <Title>{title}</Title>
+          <Icon code="expand_more" size={iconSizes._25} color="#263238" />
+        </TitleWrapper>
+        <ContentWrapper $maxHeight={contentHeight}>
+          <Content ref={contentRef}>{children}</Content>
+        </ContentWrapper>
+      </StyledAccordion>
+    )
+  },
+)
+
+Accordion.displayName = "Accordion"
 
 export default Accordion
