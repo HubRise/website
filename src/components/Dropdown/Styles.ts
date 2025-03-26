@@ -40,7 +40,7 @@ export const DropdownMenu = styled.div<{ $position: TPosition }>`
   position: absolute;
   top: 2rem;
   width: max-content;
-  background-color: ${colors.white};
+  background-color: ${colors.backgroundWhite};
   border: 1px solid ${colors.borderLight};
   border-radius: 0.75rem;
   box-shadow:

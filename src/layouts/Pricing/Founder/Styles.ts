@@ -23,7 +23,7 @@ export const ImageWrapper = styled(Image)`
   width: 12.5rem;
   height: 12.5rem;
   border-radius: 50%;
-  background-color: ${colors.white};
+  background-color: ${colors.backgroundWhite};
   display: block;
   margin: 0 auto;
 `

@@ -5,7 +5,7 @@ import { boxShadows, breakpoints, colors } from "@utils/styles"
 import { SidePosition } from "./types"
 
 export const Container = styled.div<{ $side: SidePosition }>`
-  background-color: ${colors.white};
+  background-color: ${colors.backgroundWhite};
   padding: 1rem;
   border-radius: 0.875rem;
   box-shadow: ${boxShadows.card};

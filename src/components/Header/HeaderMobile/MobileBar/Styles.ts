@@ -20,7 +20,7 @@ export const Container = styled.div<{ $isOpen: boolean }>`
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: ${colors.white};
+  background-color: ${colors.backgroundWhite};
   z-index: ${zIndexValues.mobileBarMenu};
   overflow: auto;
 `

@@ -59,7 +59,7 @@ export const FeatureBlocks = styled.div`
 `
 
 export const FeatureBlock = styled.div<{ $isActive: boolean }>`
-  background-color: ${({ $isActive }) => ($isActive ? `${colors.white}` : `${colors.backgroundLightest}`)};
+  background-color: ${({ $isActive }) => ($isActive ? `${colors.backgroundWhite}` : `${colors.backgroundLightest}`)};
   box-shadow: ${({ $isActive }) => ($isActive ? "0px 0px 25px #a6a6a699" : "none")};
   transform: ${({ $isActive }) => ($isActive ? "scale(1)" : "scale(0.9)")};
   text-align: left;

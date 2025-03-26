@@ -44,12 +44,12 @@ export const InnerContainer = styled.div`
 
   &::before {
     left: 0;
-    background: linear-gradient(270deg, #ffffff00 0%, ${colors.white} 100%);
+    background: linear-gradient(270deg, #ffffff00 0%, ${colors.backgroundWhite} 100%);
   }
 
   &::after {
     right: 0;
-    background: linear-gradient(270deg, ${colors.white} 0%, #ffffff00 100%);
+    background: linear-gradient(270deg, ${colors.backgroundWhite} 0%, #ffffff00 100%);
   }
 `
 
@@ -75,7 +75,7 @@ export const LogoContainer = styled.div<{ $moveShift: number; $nbCards: number }
 export const AppCard = styled.div`
   ${mixin.centerElement}
   box-shadow: ${boxShadows.card};
-  background-color: ${colors.white};
+  background-color: ${colors.backgroundWhite};
   border-radius: 0.875rem;
   width: 6.25rem;
   height: 6.25rem;

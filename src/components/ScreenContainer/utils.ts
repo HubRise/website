@@ -10,7 +10,7 @@ export const linkContainerBgColor = (bgColor: ScreenContainerBgColor) => {
     case "backgroundLight":
       return colors.backgroundLight
     case "white":
-      return colors.white
+      return colors.backgroundWhite
     default:
       return colors.primary
   }
