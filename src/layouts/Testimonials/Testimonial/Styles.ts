@@ -7,7 +7,7 @@ export const Card = styled.div`
   max-width: ${sizes.maxWidth};
   margin: 8.75rem auto;
   padding: 135px 1.25rem 55px;
-  background-color: ${colors.white};
+  background-color: ${colors.backgroundWhite};
   box-shadow: ${boxShadows.card};
 
   @media (min-width: ${breakpoints.large}) {

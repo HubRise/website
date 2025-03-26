@@ -91,7 +91,7 @@ export const AppBoxStatic = styled.div`
   justify-content: center;
   padding: 1rem;
   color: ${colors.textDark};
-  background-color: ${colors.white};
+  background-color: ${colors.backgroundWhite};
 
   &:hover,
   &:focus {

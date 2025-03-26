@@ -148,13 +148,6 @@ export const mixin = {
       color: ${colors.textDarkest};
     }
   `,
-  button: css`
-    padding: 0.4rem 1.5rem;
-    text-transform: uppercase;
-    font-size: ${fontSizes._16};
-    font-weight: 500;
-    border-radius: ${sizes.borderRadius};
-  `,
   buttonOver: (color: string, backgroundColor: string): RuleSet => css`
     transition:
       color 0.2s ease,
@@ -245,7 +238,6 @@ export const mixin = {
 export const zIndexValues = {
   appsLogosGradient: 9,
   header: 10,
-  mobileBarBackdrop: 20,
   mobileBarMenu: 30,
   slideshow: 100,
   modalOverlay: 150,

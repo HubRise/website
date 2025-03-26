@@ -4,7 +4,7 @@ import { StyledBreadcrumbs } from "@components/Breadcrumbs/Styles"
 import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
 
 export const Container = styled.div`
-  background-color: ${colors.white};
+  background-color: ${colors.backgroundWhite};
   padding: 3.5rem 1rem;
   margin-bottom: -3.5rem;
   text-align: center;

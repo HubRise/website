@@ -9,7 +9,7 @@ export const Card = styled.div`
   &:last-child {
     margin-bottom: 5rem;
   }
-  background-color: ${colors.white};
+  background-color: ${colors.backgroundWhite};
   display: grid;
   grid-template-columns: 1fr;
 

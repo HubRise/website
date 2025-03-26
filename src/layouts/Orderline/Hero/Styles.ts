@@ -31,7 +31,7 @@ export const ContentBlock = styled.p`
       right: 0;
       width: 100%;
       height: 1px;
-      background-color: ${colors.white};
+      background-color: ${colors.backgroundWhite};
 
       @media (min-width: ${breakpoints.large}) {
         top: 0;

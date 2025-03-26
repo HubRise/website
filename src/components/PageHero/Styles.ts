@@ -3,7 +3,7 @@ import styled, { css } from "styled-components"
 import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
 
 export const Container = styled.div<{ $isTextCentered: boolean }>`
-  background-color: ${colors.white};
+  background-color: ${colors.backgroundWhite};
   padding: 3.5rem 1rem;
 
   ${({ $isTextCentered }) =>

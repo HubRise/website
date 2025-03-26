@@ -7,7 +7,7 @@ export const StyledNav = styled.div<{ $isSticky: boolean }>`
   position: sticky;
   top: ${sizes.headerHeight};
   z-index: ${zIndexValues.header};
-  background-color: ${colors.white};
+  background-color: ${colors.backgroundWhite};
   padding: 0.5rem 0.625rem;
   transition: background-color 0.1s ease-in-out;
 
@@ -91,7 +91,7 @@ export const CategoryList = styled.ul<{ $isExpanded: boolean }>`
   top: calc(100% + 0.6rem);
   left: 0;
   width: 100%;
-  background-color: ${colors.white};
+  background-color: ${colors.backgroundWhite};
   border-radius: 0.5rem;
   box-shadow: ${boxShadows.large};
   text-align: left;
@@ -125,7 +125,7 @@ export const CategoryItem = styled.li<{ $isActive: boolean }>`
   transition: background-color 0.3s ease-in;
   ${mixin.clickable}
 
-  background-color: ${({ $isActive }) => ($isActive ? colors.backgroundLight : colors.white)};
+  background-color: ${({ $isActive }) => ($isActive ? colors.backgroundLight : colors.backgroundWhite)};
   color: ${({ $isActive }) => ($isActive ? colors.primary : colors.textDark)};
 
   &:hover {
@@ -158,7 +158,7 @@ export const SearchIcon = styled(Icon).attrs({ size: iconSizes._25 })`
 export const WhiteBlock = styled.div`
   width: 100%;
   height: 3.5rem;
-  background-color: ${colors.white};
+  background-color: ${colors.backgroundWhite};
   margin-top: -1px;
 
   @media (min-width: ${breakpoints.large}) {
