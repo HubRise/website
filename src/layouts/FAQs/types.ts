@@ -1,9 +1,12 @@
-type TFAQSection = {
+export type TQuestion = {
+  question: string
+  id: number
+  answer: string
+}
+
+export type TFAQSection = {
   title: string
-  questions: Array<{
-    question: string
-    answer: string
-  }>
+  questions: Array<TQuestion>
 }
 
 export interface FAQsYaml {

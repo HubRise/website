@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 import { StyledIcon } from "@components/Icon/Styles"
-import { colors, fontSizeMixins } from "@utils/styles"
+import { colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const StyledAccordion = styled.div`
   padding-bottom: 1rem;
@@ -16,14 +16,14 @@ export const StyledAccordion = styled.div`
   }
 `
 
-export const TitleWrapper = styled.div<{ $isCollapsed: boolean | undefined }>`
+export const TitleWrapper = styled.div<{ $isExpanded: boolean | undefined }>`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  cursor: pointer;
+  ${mixin.clickable}
 
   ${StyledIcon} {
-    transform: ${({ $isCollapsed }) => $isCollapsed && `rotate(180deg)`};
+    transform: ${({ $isExpanded }) => $isExpanded && `rotate(180deg)`};
   }
 `
 
