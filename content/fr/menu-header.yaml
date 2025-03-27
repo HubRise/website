@@ -18,11 +18,11 @@
         link_label: Find out more
         link: /fr/orderline
         image: orderline.png
-      - title: Dashboard
-        description: Some text here...
-        link_label: Find out more
-        link: /
-        image: dashboard.png
+      # - title: Dashboard
+      #   description: Some text here...
+      #   link_label: Find out more
+      #   link: /
+      #   image: dashboard.png
 - title: Tarifs
   to: /fr/tarifs
 - title: Partners

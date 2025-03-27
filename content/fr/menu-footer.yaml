@@ -21,7 +21,7 @@ sections:
       - title: Help
         to: /fr/docs
       - title: FAQ
-        to: /faqs
+        to: /fr/faqs
       - title: Contribuer à la documentation
         to: /fr/contribuer
   - title: Partners
