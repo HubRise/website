@@ -17,11 +17,11 @@
         link_label: Find out more
         link: /orderline
         image: orderline.png
-      - title: Dashboard
-        description: Some text here...
-        link_label: Find out more
-        link: /
-        image: dashboard.png
+      # - title: Dashboard
+      #   description: Some text here...
+      #   link_label: Find out more
+      #   link: /
+      #   image: dashboard.png
 - title: Pricing
   to: /pricing
 - title: Partners
