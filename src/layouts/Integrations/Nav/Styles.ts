@@ -6,10 +6,10 @@ import { colors, mixin, sizes, zIndexValues, iconSizes, boxShadows, breakpoints 
 export const StyledNav = styled.div<{ $isSticky: boolean }>`
   position: sticky;
   top: ${sizes.headerHeight};
-  z-index: ${zIndexValues.header};
+  z-index: ${zIndexValues.integrationsNav};
   background-color: ${colors.backgroundWhite};
   padding: 0.5rem 0.625rem;
-  transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s;
 
   @media (min-width: ${breakpoints.large}) {
     padding: 0.5rem 0.625rem;
@@ -18,7 +18,6 @@ export const StyledNav = styled.div<{ $isSticky: boolean }>`
   ${(props) =>
     props.$isSticky &&
     css`
-      padding-bottom: 0.5rem !important;
       background-color: ${colors.primary};
     `}
 `
@@ -101,8 +100,8 @@ export const CategoryList = styled.ul<{ $isExpanded: boolean }>`
   pointer-events: none;
   overflow: hidden;
 
-  ${(props) =>
-    props.$isExpanded &&
+  ${({ $isExpanded }) =>
+    $isExpanded &&
     css`
       visibility: visible;
       opacity: 1;
@@ -139,7 +138,7 @@ export const CheckIcon = styled(Icon).attrs({ size: iconSizes._20 })`
 
 export const ArrowIcon = styled(Icon).attrs({ size: iconSizes._25 })`
   color: ${colors.textDarkest};
-  margin-left: 0.25;
+  margin-left: 0.25rem;
 
   @media (min-width: ${breakpoints.large}) {
     margin-left: 0.5rem;
@@ -155,7 +154,7 @@ export const SearchIcon = styled(Icon).attrs({ size: iconSizes._25 })`
   }
 `
 
-export const WhiteBlock = styled.div`
+export const WhiteBlock = styled.div<{ $isSticky: boolean }>`
   width: 100%;
   height: 3.5rem;
   background-color: ${colors.backgroundWhite};
@@ -164,4 +163,10 @@ export const WhiteBlock = styled.div`
   @media (min-width: ${breakpoints.large}) {
     height: 5rem;
   }
+
+  ${({ $isSticky }) =>
+    $isSticky &&
+    css`
+      opacity: 0;
+    `}
 `

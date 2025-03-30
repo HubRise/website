@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { StyledCard } from "@components/Card/Styles"
 import { StyledIcon } from "@components/Icon/Styles"
 import { StyledUnderline } from "@components/Underline/Styles"
-import { breakpoints, mixin } from "@utils/styles"
+import { breakpoints, colors, mixin } from "@utils/styles"
 
 export const CardTitle = styled.h4<{ $isExpanded: boolean }>`
   ${mixin.cardTitle}
@@ -12,10 +12,7 @@ export const CardTitle = styled.h4<{ $isExpanded: boolean }>`
   justify-content: space-between;
 
   ${StyledIcon} {
-    ${mixin.clickable}
-    opacity: 0;
     transform: ${({ $isExpanded }) => $isExpanded && `rotate(180deg)`};
-    transition: all 0.25s ease-in-out;
   }
 `
 
@@ -32,15 +29,7 @@ export const Content = styled.div`
   }
 
   ${StyledUnderline} {
-    margin-bottom: 1.25rem;
-  }
-
-  ${StyledCard} {
-    &:hover {
-      ${CardTitle} ${StyledIcon} {
-        opacity: 1;
-      }
-    }
+    margin-bottom: 0.25rem;
   }
 
   ${StyledCard}:nth-child(odd):not(:last-child) {
@@ -62,4 +51,14 @@ export const Content = styled.div`
       padding-right: 3.5rem;
     }
   }
+`
+
+export const ExpandIconWrapper = styled.div`
+  width: 2.75rem;
+  height: 2.75rem;
+  ${mixin.centerElement}
+  ${mixin.clickable}
+  border-radius: 0.5rem;
+  background-color: ${colors.backgroundLight};
+  margin-right: -0.5rem;
 `

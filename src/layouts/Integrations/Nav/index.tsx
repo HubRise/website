@@ -6,7 +6,7 @@ import useTranslation from "@hooks/client/useTranslation"
 import { IntegrationsYaml } from "@layouts/Integrations/types"
 import { remIntoPixels } from "@utils/dom"
 import { Language } from "@utils/locales"
-import { sizes } from "@utils/styles"
+import { colors, sizes } from "@utils/styles"
 
 import {
   StyledNav,
@@ -56,6 +56,21 @@ const Index = ({
     onCategoryChange(category)
     setIsExpanded(false)
   }
+
+  React.useEffect(() => {
+    const desktopHeader = document.querySelectorAll<HTMLDivElement>('[data-testid="header:desktop"]')[0]
+    const mobileHeader = document.querySelectorAll<HTMLDivElement>('[data-testid="header:mobile"]')[0]
+    const stickyBorderColor = colors.primary
+    const unstickyBorderColor = colors.headerBorder
+
+    if (isSticky) {
+      desktopHeader.style.borderColor = stickyBorderColor
+      mobileHeader.style.borderColor = stickyBorderColor
+    } else {
+      desktopHeader.style.borderColor = unstickyBorderColor
+      mobileHeader.style.borderColor = unstickyBorderColor
+    }
+  }, [isSticky])
 
   return (
     <>
@@ -107,7 +122,7 @@ const Index = ({
           </CategoryFilterWrapper>
         </Container>
       </StyledNav>
-      <WhiteBlock />
+      <WhiteBlock $isSticky={isSticky} />
     </>
   )
 }

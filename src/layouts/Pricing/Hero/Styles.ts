@@ -1,11 +1,10 @@
 import Link from "next/link"
 import styled from "styled-components"
 
-import { boxShadows, breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const PriceingBlock = styled.div`
   margin-top: 2.5rem;
-  box-shadow: ${boxShadows.card};
   border-radius: 0.875rem;
   padding-bottom: 2.5rem;
 

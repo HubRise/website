@@ -82,6 +82,10 @@ export const AppCard = styled.div`
   padding: 1.5rem 0.75rem;
   position: relative;
 
+  & img {
+    width: fit-content;
+  }
+
   @media (min-width: ${breakpoints.biggest}) {
     width: 8.5rem;
     height: 8.5rem;

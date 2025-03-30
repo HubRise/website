@@ -22,7 +22,7 @@ export const StyledIcon = styled.span<StyledIconProps>`
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-  transition: 0.5s transform ease-out;
+  transition: 0.1s transform ease-out;
   ${({ left, top }) =>
     left === undefined && top === undefined
       ? ""

@@ -6,5 +6,5 @@ export const headerStyle = css`
   height: ${sizes.headerHeight};
   z-index: ${zIndexValues.header};
   background-color: ${colors.backgroundWhite};
-  border-bottom: 3px solid #4ca30d80;
+  border-bottom: 3px solid ${colors.headerBorder};
 `

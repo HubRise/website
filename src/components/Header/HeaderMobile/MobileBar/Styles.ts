@@ -1,7 +1,11 @@
 import Link from "next/link"
 import styled, { css } from "styled-components"
 
-import { StyledAccordion } from "@components/Accordion/Styles"
+import {
+  StyledAccordion,
+  TitleWrapper as AccordionTitle,
+  ContentWrapper as AccordionContent,
+} from "@components/Accordion/Styles"
 import { StyledButton } from "@components/Button/Styles"
 import { ProductsList } from "@components/Header/Products/Styles"
 import Icon from "@components/Icon"
@@ -28,7 +32,7 @@ export const Container = styled.div<{ $isOpen: boolean }>`
 export const Header = styled.header`
   position: relative;
   height: ${sizes.headerHeight};
-  border-bottom: 3px solid #4ca30d80;
+  border-bottom: 3px solid ${colors.headerBorder};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,8 +52,15 @@ export const Nav = styled.div`
 
   ${StyledAccordion} {
     margin-bottom: 0;
-    padding: 0.75rem 0;
     border: none;
+
+    ${AccordionTitle} {
+      padding: 0.75rem 0;
+    }
+
+    ${AccordionContent} {
+      margin-bottom: 0;
+    }
 
     h4 {
       ${fontSizeMixins.fontSizeTextMd}

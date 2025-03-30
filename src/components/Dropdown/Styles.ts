@@ -63,6 +63,9 @@ export const DropdownMenu = styled.div<{ $position: TPosition }>`
 
 export const DropdownList = styled.ul`
   padding: 0.125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 `
 
 export const DropdownListItem = styled.li<{ $isActive: boolean }>`
@@ -74,11 +77,21 @@ export const DropdownListItem = styled.li<{ $isActive: boolean }>`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  ${mixin.linkOver(colors.primary)};
+
+  &:hover {
+    background-color: ${colors.backgroundLightest};
+  }
 
   ${({ $isActive }) =>
     $isActive &&
     css`
       background-color: ${colors.backgroundLight};
+
+      &:hover {
+        background-color: ${colors.backgroundLight};
+        color: ${colors.textDarkest};
+      }
     `}
 `
 
