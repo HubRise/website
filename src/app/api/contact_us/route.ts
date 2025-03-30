@@ -7,14 +7,14 @@ const SCORE_THRESHOLD = 0.3
 const verifyRecaptcha = async (token: string) => {
   const apiKey = process.env.RECAPTCHA_API_KEY
   const projectID = process.env.RECAPTCHA_PROJECT_ID
-  const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY
+  const keyId = process.env.NEXT_PUBLIC_RECAPTCHA_KEY_ID
   const response = await axios.post(
     `https://recaptchaenterprise.googleapis.com/v1/projects/${projectID}/assessments?key=${apiKey}`,
     {
       event: {
         token,
         expectedAction: "send_email",
-        siteKey,
+        siteKey: keyId,
       },
     },
   )
@@ -23,7 +23,12 @@ const verifyRecaptcha = async (token: string) => {
   const riskScore = response.data.riskAnalysis?.score ?? 0
 
   if (!isTokenValid || riskScore < SCORE_THRESHOLD) {
-    throw new Error(`Captcha validation failed: ${JSON.stringify(response.data)}`)
+    // 30/3/2025: WE ARE DISABLING CAPTCHA VALIDATION FOR THE TIME BEING
+    // See https://docs.google.com/document/d/1x5BU3Ss8N7pDZA4cbKsNRZwIgd-6g7SgTbWEJ62p-eY/edit?tab=t.0
+    console.log(`Captcha validation failed: ${JSON.stringify(response.data)} - IGNORING AND SENDING EMAIL ANYWAY`)
+
+    // TO RE-ENABLE CAPTCHA VALIDATION, UNCOMMENT THE LINE BELOW AND REMOVE THE PREVIOUS LOG
+    //throw new Error(`Captcha validation failed: ${JSON.stringify(response.data)}`)
   }
 }
 

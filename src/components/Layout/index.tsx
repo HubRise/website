@@ -30,9 +30,7 @@ const Layout = ({ language, header, footer, children }: LayoutProps): JSX.Elemen
           <GoogleAnalytics id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} />
         )}
 
-        {process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY && (
-          <Recaptcha siteKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} />
-        )}
+        {process.env.NEXT_PUBLIC_RECAPTCHA_KEY_ID && <Recaptcha keyId={process.env.NEXT_PUBLIC_RECAPTCHA_KEY_ID} />}
 
         <CommonClientStyles />
 

@@ -9,7 +9,7 @@ const requiredEnvVars = [
   "NEXT_PUBLIC_SENTRY_DSN",
   "NEXT_PUBLIC_INTERACTIVE_DEV_MODE",
   "NEXT_PUBLIC_GOOGLE_ANALYTICS_ID",
-  "NEXT_PUBLIC_RECAPTCHA_SITE_KEY",
+  "NEXT_PUBLIC_RECAPTCHA_KEY_ID",
 ]
 const missingVars = requiredEnvVars.filter((key) => !(key in process.env))
 if (missingVars.length > 0) {
