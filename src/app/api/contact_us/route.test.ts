@@ -38,7 +38,9 @@ describe("/api/contact_us", () => {
     mockedCreateTransport.mockReturnValueOnce({ sendMail: sendMailMock } as any)
   }
 
-  it("should return 400 on invalid token", async () => {
+  // 30/3/2025: WE ARE DISABLING CAPTCHA VALIDATION FOR THE TIME BEING
+  // See https://docs.google.com/document/d/1x5BU3Ss8N7pDZA4cbKsNRZwIgd-6g7SgTbWEJ62p-eY/edit?tab=t.0
+  it.skip("should return 400 on invalid token (CAPTCHA temporarily disabled)", async () => {
     mockRecaptcha(false)
 
     const response = await sendRequest()
@@ -49,7 +51,9 @@ describe("/api/contact_us", () => {
     })
   })
 
-  it("should return 400 on valid token but low score", async () => {
+  // 30/3/2025: WE ARE DISABLING CAPTCHA VALIDATION FOR THE TIME BEING
+  // See https://docs.google.com/document/d/1x5BU3Ss8N7pDZA4cbKsNRZwIgd-6g7SgTbWEJ62p-eY/edit?tab=t.0
+  it.skip("should return 400 on valid token but low score (CAPTCHA temporarily disabled)", async () => {
     mockRecaptcha(true, 0.1)
 
     const response = await sendRequest()
