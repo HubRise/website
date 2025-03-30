@@ -1,6 +1,6 @@
 import { TResources } from "../shared/types"
 
-import { ResourcesTitle, ResourcesDescription, ResourcesLinks, ResourcesLink } from "./Styles"
+import { ResourcesContainer, ResourcesTitle, ResourcesDescription, ResourcesLinks, ResourcesLink } from "./Styles"
 
 interface ResourcesProps {
   resources: TResources
@@ -8,7 +8,7 @@ interface ResourcesProps {
 
 const Resources = ({ resources }: ResourcesProps) => {
   return (
-    <>
+    <ResourcesContainer>
       <ResourcesTitle>{resources.title}</ResourcesTitle>
       <ResourcesDescription>{resources.description}</ResourcesDescription>
       <ResourcesLinks>
@@ -20,7 +20,7 @@ const Resources = ({ resources }: ResourcesProps) => {
           )
         })}
       </ResourcesLinks>
-    </>
+    </ResourcesContainer>
   )
 }
 

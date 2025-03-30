@@ -1,7 +1,13 @@
 import Link from "next/link"
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizeMixins, fontSizes, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
+
+export const ResourcesContainer = styled.div`
+  @media (min-width: ${breakpoints.burgerMenu}) {
+    width: 13rem;
+  }
+`
 
 export const ResourcesTitle = styled.h4`
   color: ${colors.textDarkest};
@@ -30,15 +36,10 @@ export const ResourcesDescription = styled.p`
 export const ResourcesLinks = styled.div`
   display: flex;
   flex-direction: column;
-
-  @media (min-width: ${breakpoints.burgerMenu}) {
-    flex-direction: row;
-    gap: 3rem;
-    margin-top: 1.25rem;
-  }
 `
 
 export const ResourcesLink = styled(Link)`
+  position: relative;
   ${fontSizeMixins.fontSizeTextMd}
   font-weight: 600;
   position: relative;
@@ -47,20 +48,12 @@ export const ResourcesLink = styled(Link)`
   padding: 0.75rem 0;
 
   @media (min-width: ${breakpoints.burgerMenu}) {
-    padding: 0;
+    padding: 0.75rem 0.5rem;
+    margin: 0 -0.5rem;
+    border-radius: 0.5rem;
 
-    &::after {
-      content: "•";
-      font-size: ${fontSizes._24};
-      color: ${colors.primary};
-      position: absolute;
-      right: -1.8rem;
-    }
-
-    &:last-child {
-      &::after {
-        display: none;
-      }
+    &:hover {
+      background-color: ${colors.backgroundLightest};
     }
   }
 `

@@ -12,7 +12,7 @@ import ScreenContainer from "@components/ScreenContainer"
 import Underline from "@components/Underline"
 import { iconSizes } from "@utils/styles"
 
-import { CardTitle, Content } from "./Styles"
+import { CardTitle, Content, ExpandIconWrapper } from "./Styles"
 import { FAQsYaml, TQuestion } from "./types"
 
 interface FAQProps {
@@ -81,12 +81,9 @@ const FAQs = ({ yaml, getInTouch }: FAQProps): JSX.Element => {
               <Card key={sIdx} padding="big">
                 <CardTitle $isExpanded={sectionsExpanding[sIdx]?.isExpanded}>
                   {title}
-                  <Icon
-                    onClick={() => handleClickExpandIcon(questions, sIdx)}
-                    code="expand_more"
-                    size={iconSizes._32}
-                    color="#263238"
-                  />
+                  <ExpandIconWrapper onClick={() => handleClickExpandIcon(questions, sIdx)}>
+                    <Icon code="expand_more" size={iconSizes._25} color="#263238" />
+                  </ExpandIconWrapper>
                 </CardTitle>
                 <Underline />
                 {questions.map((question, qIdx) => {

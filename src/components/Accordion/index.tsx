@@ -28,7 +28,7 @@ const Accordion = forwardRef(
           <Title>{title}</Title>
           <Icon code="expand_more" size={iconSizes._25} color="#263238" />
         </TitleWrapper>
-        <ContentWrapper $maxHeight={contentHeight}>
+        <ContentWrapper $maxHeight={contentHeight} $isExpanded={isExpanded}>
           <Content ref={contentRef}>{children}</Content>
         </ContentWrapper>
       </StyledAccordion>

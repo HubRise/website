@@ -11,9 +11,19 @@ export const ProductsList = styled.div`
   gap: 1.375rem;
 `
 
-export const Product = styled.div`
+export const Product = styled(Link)`
   display: flex;
   gap: 1.25rem;
+
+  @media (min-width: ${breakpoints.burgerMenu}) {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: -0.5rem -0.5rem;
+
+    &:hover {
+      background-color: ${colors.backgroundLightest};
+    }
+  }
 `
 
 export const ProductContent = styled.div`
@@ -40,7 +50,7 @@ export const ProductDescription = styled.p`
   }
 `
 
-export const ProductLink = styled(Link)`
+export const ProductLink = styled.span`
   display: flex;
   align-items: center;
   color: ${colors.primary};

@@ -73,10 +73,12 @@ export const colors = {
   backgroundWhite: "#fff",
 
   borderMedium: "#ccc",
-  borderLight: "#eaecf0",
+  borderLight: "#e0e0e0",
   borderLighter: "#f0f0f0",
   borderLightest: "#f8f8f8",
   borderInputFocus: "#555",
+
+  headerBorder: "#4ca30d80",
 }
 
 export const boxShadows = {
@@ -237,6 +239,7 @@ export const mixin = {
 
 export const zIndexValues = {
   appsLogosGradient: 9,
+  integrationsNav: 9,
   header: 10,
   mobileBarMenu: 30,
   slideshow: 100,

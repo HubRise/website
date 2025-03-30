@@ -16,12 +16,12 @@ const Products = ({ products }: ProductsProps) => {
     <ProductsList>
       {products.map((product, index) => {
         return (
-          <Product key={index}>
+          <Product key={index} href={product.link}>
             <Image src={`/images/header/${product.image}`} alt={product.title} width={144} height={80} />
             <ProductContent>
               <ProductTitle>{product.title}</ProductTitle>
               <ProductDescription>{product.description}</ProductDescription>
-              <ProductLink href={product.link}>
+              <ProductLink>
                 {product.link_label}
                 <Icon code="arrow_forward" size={iconSizes._20} />
               </ProductLink>
