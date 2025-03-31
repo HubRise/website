@@ -8,16 +8,25 @@ const verifyRecaptcha = async (token: string) => {
   const apiKey = process.env.RECAPTCHA_API_KEY
   const projectID = process.env.RECAPTCHA_PROJECT_ID
   const keyId = process.env.NEXT_PUBLIC_RECAPTCHA_KEY_ID
-  const response = await axios.post(
-    `https://recaptchaenterprise.googleapis.com/v1/projects/${projectID}/assessments?key=${apiKey}`,
-    {
-      event: {
-        token,
-        expectedAction: "send_email",
-        siteKey: keyId,
+
+  let response
+  try {
+    response = await axios.post(
+      `https://recaptchaenterprise.googleapis.com/v1/projects/${projectID}/assessments?key=${apiKey}`,
+      {
+        event: {
+          token,
+          expectedAction: "send_email",
+          siteKey: keyId,
+        },
       },
-    },
-  )
+      // 30/3/2025: When captcha validation fails, the request takes a long time to respond
+      { timeout: 1000 },
+    )
+  } catch (error) {
+    console.error("Captcha validation failed or timed out - IGNORING AND SENDING EMAIL ANYWAY. ", error)
+    return
+  }
 
   const isTokenValid = response.data.tokenProperties?.valid
   const riskScore = response.data.riskAnalysis?.score ?? 0
