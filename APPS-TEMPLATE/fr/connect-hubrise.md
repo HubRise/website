@@ -56,8 +56,8 @@ Pour connecter SOLUTION et faciliter le traitement de vos demandes de support, v
 Pour donner accès à SOLUTION, procédez comme suit :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
-2. Dans la section **Permissions**, ajoutez `contact@SOLUTION.com` et sélectionnez **Manager** dans la liste déroulante des rôles.
-3. Cliquez sur **Modifier les permissions** et sélectionnez les permissions pour accorder au support SOLUTION un accès à votre compte ou à votre point de vente.
+2. Dans la section **Permissions**, ajoutez `contact@SOLUTION.com`.
+3. Cliquez sur **Modifier les permissions** puis attribuez les droits nécessaires afin d’accorder au support SOLUTION un accès à votre compte ou à votre point de vente.Parmi les rôles prédéfinis du menu déroulant, delui de **Partenaire technique** est recommandé.
 
 L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre compte HubRise ou au point de vente. Le partage de mot de passe est déconseillé pour des raisons de sécurité. Pour plus d'informations sur les permissions, voir notre aide en ligne, page [Permissions](/docs/permissions).
 
@@ -71,6 +71,6 @@ Indiquez dans votre demande le nom de votre compte HubRise, son identifiant HubR
 
 Si vous avez besoin d'arrêter temporairement la réception des commandes envoyées sur HubRise, vous pouvez bloquer la connexion entre SOLUTION et HubRise. Pour plus d'informations, voir [Bloquer ou déconnecter une application](/docs/connections#block-or-disconnect).
 
-Si vous souhaitez arrêter définitivement l'envoi de commandes SOLUTION à HubRise, il est préférable de déconnecter SOLUTION de HubRise via le back-office de SOLUTION.
+Si, au contraire, vous souhaitez arrêter définitivement l'envoi de commandes SOLUTION à HubRise, il est préférable de déconnecter SOLUTION de HubRise via le back-office de SOLUTION.
 \-- OU --
-Si vous souhaitez arrêter définitivement l'envoi de commandes SOLUTION à HubRise, il est préférable de contacter le support SOLUTION.
+Si, au contraire, vous souhaitez arrêter définitivement l'envoi de commandes SOLUTION à HubRise, il est préférable de contacter le support SOLUTION.
