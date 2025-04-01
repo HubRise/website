@@ -74,4 +74,4 @@ If you need to temporarily stop [receiving orders from HubRise], you can block t
 
 If, on the contrary, you need to stop sending SOLUTION orders to HubRise altogether, it is preferable to disconnect SOLUTION from HubRise via the SOLUTION back office.
 -- OR --
-If you need to stop sending SOLUTION orders to HubRise altogether, it is preferable to contact SOLUTION support.
+If, on the contrary, you need to stop sending SOLUTION orders to HubRise altogether, it is preferable to contact SOLUTION support.

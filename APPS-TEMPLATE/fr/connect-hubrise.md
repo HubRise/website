@@ -57,7 +57,7 @@ Pour donner accès à SOLUTION, procédez comme suit :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
 2. Dans la section **Permissions**, ajoutez `contact@SOLUTION.com`.
-3. Cliquez sur **Modifier les permissions** puis attribuez les droits nécessaires afin d’accorder au support SOLUTION un accès à votre compte ou à votre point de vente.Parmi les rôles prédéfinis du menu déroulant, delui de **Partenaire technique** est recommandé.
+3. Cliquez sur **Modifier les permissions** et sélectionnez les permissions pour accorder au support SOLUTION un accès à votre compte ou à votre point de vente. Parmi les rôles prédéfinis du menu déroulant, le rôle **Partenaire Technique** est recommandé.
 
 L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre compte HubRise ou au point de vente. Le partage de mot de passe est déconseillé pour des raisons de sécurité. Pour plus d'informations sur les permissions, voir notre aide en ligne, page [Permissions](/docs/permissions).
 
