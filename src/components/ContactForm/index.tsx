@@ -16,8 +16,11 @@ const ContactForm = (): JSX.Element => {
   const { t } = useTranslation()
 
   async function onSubmit(values: FormikValues, { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void }) {
-    const recaptchaKeyId = process.env.NEXT_PUBLIC_RECAPTCHA_KEY_ID
-    const token = (await (window as any).grecaptcha.enterprise.execute(recaptchaKeyId)) as string
+    // AM 31/3/2025 - Disable recaptcha verification, due to time out errors on the client side
+    // See https://docs.google.com/document/d/1x5BU3Ss8N7pDZA4cbKsNRZwIgd-6g7SgTbWEJ62p-eY/edit?tab=t.0
+    // const recaptchaKeyId = process.env.NEXT_PUBLIC_RECAPTCHA_KEY_ID
+    // const token = (await (window as any).grecaptcha.enterprise.execute(recaptchaKeyId)) as string
+    const token = null // Remove this line when re-enabling recaptcha
 
     const { name, email, message } = values
     const response = await axios.post("/api/contact_us", { name, email, message, token })
