@@ -14,16 +14,6 @@ export const ProductsList = styled.div`
 export const Product = styled(Link)`
   display: flex;
   gap: 1.25rem;
-
-  @media (min-width: ${breakpoints.burgerMenu}) {
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    margin: -0.5rem -0.5rem;
-
-    &:hover {
-      background-color: ${colors.backgroundLightest};
-    }
-  }
 `
 
 export const ProductContent = styled.div`

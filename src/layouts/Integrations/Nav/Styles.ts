@@ -1,7 +1,8 @@
 import styled, { css } from "styled-components"
 
 import Icon from "@components/Icon"
-import { colors, mixin, sizes, zIndexValues, iconSizes, boxShadows, breakpoints } from "@utils/styles"
+import { StyledIcon } from "@components/Icon/Styles"
+import { colors, mixin, sizes, zIndexValues, iconSizes, boxShadows, breakpoints, fontSizeMixins } from "@utils/styles"
 
 export const StyledNav = styled.div<{ $isSticky: boolean }>`
   position: sticky;
@@ -78,11 +79,33 @@ export const CategoryFilterWrapper = styled.div`
   }
 `
 
-export const CategoryFilter = styled.button`
+export const CategoryFilter = styled.button<{ $isExpanded: boolean }>`
   display: flex;
   align-items: center;
-  color: ${colors.textDarkest};
+  color: ${colors.textDark};
+  font-weight: 600;
   ${mixin.clickable}
+  ${mixin.linkOver(colors.primary)}
+
+  ${StyledIcon} {
+    color: ${colors.textDark};
+  }
+
+  &:hover {
+    ${StyledIcon} {
+      color: ${colors.primary};
+    }
+  }
+
+  ${({ $isExpanded }) =>
+    $isExpanded &&
+    css`
+      color: ${colors.primary};
+
+      ${StyledIcon} {
+        color: ${colors.primary};
+      }
+    `}
 `
 
 export const CategoryList = styled.ul<{ $isExpanded: boolean }>`
@@ -119,13 +142,12 @@ export const CategoryItem = styled.li<{ $isActive: boolean }>`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  transition: background-color 0.3s ease-in;
+  padding: 0.6rem 0.875rem;
+  transition: background-color 0.1s ease-in;
   ${mixin.clickable}
-
   background-color: ${({ $isActive }) => ($isActive ? colors.backgroundLight : colors.backgroundWhite)};
-  color: ${({ $isActive }) => ($isActive ? colors.primary : colors.textDark)};
+  color: ${colors.textDarkest};
+  ${fontSizeMixins.fontSizeTextMd}
 
   &:hover {
     background-color: ${colors.backgroundLight};
@@ -136,9 +158,15 @@ export const CheckIcon = styled(Icon).attrs({ size: iconSizes._20 })`
   color: ${colors.primary};
 `
 
-export const ArrowIcon = styled(Icon).attrs({ size: iconSizes._25 })`
+export const ArrowIcon = styled(Icon).attrs({ size: iconSizes._25 })<{ $isExpanded: boolean }>`
   color: ${colors.textDarkest};
   margin-left: 0.25rem;
+
+  ${({ $isExpanded }) =>
+    $isExpanded &&
+    css`
+      transform: rotate(180deg);
+    `}
 
   @media (min-width: ${breakpoints.large}) {
     margin-left: 0.5rem;

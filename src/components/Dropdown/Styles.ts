@@ -19,7 +19,7 @@ export const DropdownTrigger = styled.div<{ $isOpen: boolean }>`
   ${fontSizeMixins.fontSizeTextMd}
   font-weight: 600;
   ${mixin.clickable}
-  ${mixin.linkOver(colors.primary)};
+  ${mixin.linkOver(colors.primary)}
 
   @media (min-width: ${breakpoints.biggest}) {
     ${fontSizeMixins.fontSizeTextLg}
@@ -77,11 +77,7 @@ export const DropdownListItem = styled.li<{ $isActive: boolean }>`
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  ${mixin.linkOver(colors.primary)};
-
-  &:hover {
-    background-color: ${colors.backgroundLightest};
-  }
+  ${mixin.linkOver(colors.primary)}
 
   ${({ $isActive }) =>
     $isActive &&
@@ -89,7 +85,6 @@ export const DropdownListItem = styled.li<{ $isActive: boolean }>`
       background-color: ${colors.backgroundLight};
 
       &:hover {
-        background-color: ${colors.backgroundLight};
         color: ${colors.textDarkest};
       }
     `}
