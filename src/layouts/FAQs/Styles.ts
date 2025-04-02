@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+import { expandIconWrapperMixin } from "@components/Accordion/Styles"
 import { StyledCard } from "@components/Card/Styles"
 import { StyledIcon } from "@components/Icon/Styles"
 import { StyledUnderline } from "@components/Underline/Styles"
@@ -54,11 +55,6 @@ export const Content = styled.div`
 `
 
 export const ExpandIconWrapper = styled.div`
-  width: 2.75rem;
-  height: 2.75rem;
-  ${mixin.centerElement}
-  ${mixin.clickable}
-  border-radius: 0.5rem;
+  ${expandIconWrapperMixin}
   background-color: ${colors.backgroundLight};
-  margin-right: -0.5rem;
 `

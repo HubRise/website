@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 import { StyledIcon } from "@components/Icon/Styles"
 import { colors, fontSizeMixins, mixin } from "@utils/styles"
@@ -42,4 +42,25 @@ export const ContentWrapper = styled.div<{ $maxHeight: number | undefined; $isEx
 export const Content = styled.div`
   ${fontSizeMixins.fontSizeTextMd}
   margin-top: 0.25rem;
+`
+
+export const expandIconWrapperMixin = css`
+  width: 2.75rem;
+  height: 2.75rem;
+  ${mixin.centerElement}
+  ${mixin.clickable}
+  border-radius: 0.5rem;
+  transition: all 0.1s ease-in;
+
+  &:hover {
+    background-color: ${colors.backgroundDarker};
+
+    ${StyledIcon} {
+      color: ${colors.white};
+    }
+  }
+`
+
+export const ExpandIconWrapper = styled.div`
+  ${expandIconWrapperMixin}
 `

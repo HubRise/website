@@ -89,9 +89,9 @@ const Index = ({
           </SearchWrapper>
 
           <CategoryFilterWrapper ref={$categoryListRef} data-testid="apps:categoryfilter">
-            <CategoryFilter onClick={() => setIsExpanded((v) => !v)}>
+            <CategoryFilter onClick={() => setIsExpanded((v) => !v)} $isExpanded={isExpanded}>
               {selectedCategoryLabel}
-              <ArrowIcon code={isExpanded ? "expand_less" : "expand_more"} />
+              <ArrowIcon code="expand_more" $isExpanded={isExpanded} />
             </CategoryFilter>
 
             <CategoryList $isExpanded={isExpanded}>

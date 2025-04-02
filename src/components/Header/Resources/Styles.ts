@@ -36,6 +36,10 @@ export const ResourcesDescription = styled.p`
 export const ResourcesLinks = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (min-width: ${breakpoints.burgerMenu}) {
+    padding-top: 0.6rem;
+  }
 `
 
 export const ResourcesLink = styled(Link)`
@@ -44,16 +48,10 @@ export const ResourcesLink = styled(Link)`
   font-weight: 600;
   position: relative;
   color: ${colors.textDark};
-  ${mixin.linkOver(colors.primary)};
+  ${mixin.linkOver(colors.primary)}
   padding: 0.75rem 0;
 
   @media (min-width: ${breakpoints.burgerMenu}) {
-    padding: 0.75rem 0.5rem;
-    margin: 0 -0.5rem;
-    border-radius: 0.5rem;
-
-    &:hover {
-      background-color: ${colors.backgroundLightest};
-    }
+    padding: 0.6rem 0;
   }
 `

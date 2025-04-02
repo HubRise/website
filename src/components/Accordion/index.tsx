@@ -3,7 +3,7 @@ import { forwardRef, useCallback, useRef, useState } from "react"
 import Icon from "@components/Icon"
 import { iconSizes } from "@utils/styles"
 
-import { StyledAccordion, Title, ContentWrapper, Content, TitleWrapper } from "./Styles"
+import { StyledAccordion, Title, ContentWrapper, Content, TitleWrapper, ExpandIconWrapper } from "./Styles"
 
 interface AccordionProps {
   title: string
@@ -26,7 +26,9 @@ const Accordion = forwardRef(
       <StyledAccordion>
         <TitleWrapper $isExpanded={isExpanded} onClick={handleCollapseToggle} ref={ref} data-is-expanded={isExpanded}>
           <Title>{title}</Title>
-          <Icon code="expand_more" size={iconSizes._25} color="#263238" />
+          <ExpandIconWrapper>
+            <Icon code="expand_more" size={iconSizes._25} color="#263238" />
+          </ExpandIconWrapper>
         </TitleWrapper>
         <ContentWrapper $maxHeight={contentHeight} $isExpanded={isExpanded}>
           <Content ref={contentRef}>{children}</Content>
