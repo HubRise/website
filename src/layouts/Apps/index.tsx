@@ -41,7 +41,7 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
         return {
           title,
           slug,
-          apps: apps.filter((app) => app.country === null || app.country?.includes(selectedCountry.code)),
+          apps: apps.filter((app) => !app.country || app.country.includes(selectedCountry.code)),
           has_suggest_app,
         }
       })

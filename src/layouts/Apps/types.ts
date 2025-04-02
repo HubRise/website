@@ -25,13 +25,13 @@ export interface AppsYaml {
       slug: string
       has_suggest_app: boolean
       apps: Array<{
-        website: string
-        documentation: string
+        website: string | null | undefined
+        documentation: string | null | undefined
         logo: string
-        country: string | null
+        country: string | null | undefined
         title: string
         description: string
-        additional_info: string
+        additional_info: string | null | undefined
       }>
     }>
     countries: Array<TCountry>
