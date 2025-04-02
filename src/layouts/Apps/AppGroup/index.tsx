@@ -4,6 +4,8 @@ import { AppsYaml } from "@layouts/Apps/types"
 import { ContentImage } from "@utils/contentImage"
 import { text } from "@utils/misc"
 
+import NoResults from "../NoResults"
+
 import {
   Group,
   AppBoxLink,
@@ -29,10 +31,11 @@ const AppGroup = ({ title, slug, apps, logoImages, additionalSections, hasSugges
   const { t } = useTranslation()
 
   return (
-    <Block backgroundColor="none" title={title} titleAnchor={slug}>
+    <Block backgroundColor="none" title={apps.length === 0 ? undefined : title} titleAnchor={slug}>
+      {apps.length === 0 && <NoResults />}
       <Group>
         {apps.map((app, idx) => (
-          <AppBoxLink key={idx} href={app.documentation || app.website} data-test="apps:result">
+          <AppBoxLink key={idx} href={app.documentation || app.website || "#"} data-test="apps:result">
             {logoImages[app.logo] && (
               <AppLogo>
                 <AppLogoImage {...logoImages[app.logo]} alt={app.title} />

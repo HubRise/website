@@ -65,7 +65,7 @@ export const Input = styled.input`
   }
 `
 
-export const CategoryFilterWrapper = styled.div`
+export const FilterWrapper = styled.div`
   margin-left: 0.5rem;
   flex-grow: 1;
   flex-shrink: 0;
@@ -80,14 +80,14 @@ export const CategoryFilterWrapper = styled.div`
   }
 `
 
-export const CategoryFilter = styled.button`
+export const FilterButton = styled.button`
   display: flex;
   align-items: center;
   color: ${colors.primary};
   ${mixin.clickable}
 `
 
-export const CategoryList = styled.ul<{ $isExpanded: boolean }>`
+export const FilterList = styled.ul<{ $isExpanded: boolean }>`
   position: absolute;
   top: calc(100% + 0.6rem);
   left: 0;
@@ -115,7 +115,7 @@ export const CategoryList = styled.ul<{ $isExpanded: boolean }>`
   }
 `
 
-export const CategoryItem = styled.li<{ $isActive: boolean }>`
+export const FilterListItem = styled.li<{ $isActive: boolean }>`
   cursor: pointer;
   padding: 0.5rem 1rem;
   transition: background-color 0.3s ease-in;
