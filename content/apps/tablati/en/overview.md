@@ -30,7 +30,7 @@ Tablati is simple to use and designed for customer autonomy:
 - **Autonomous table ordering**: Customers scan a QR code placed on the table to view the digital menu in their browser, no app installation required.
 - **Multilingual menu**: The menu is available in several languages to accommodate a wide range of customers.
 - **Fast and secure payment**: Customers pay directly from their smartphone, with multiple payment options available.
-- **Tip management simplified**:  Tablati enables tipping via predefined suggestions (5%, 10%, 15%) or a free amount.
+- **Tip management simplified**: Tablati enables tipping via predefined suggestions (5%, 10%, 15%) or a free amount.
 - **Google review collection**: After settling the bill, customers are invited to leave a Google review, helping to strengthen the restaurant’s online presence.
 - **Loyalty programme**: Tablati helps retain customers through Miamus, a built-in reward system offering discounts and special deals to encourage return visits.
 - **Comprehensive back office for managing your business**: Dashboard, accounting, menu creation, and review management.

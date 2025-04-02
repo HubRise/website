@@ -18,12 +18,13 @@ meta:
 
 Pour connecter Tablati à HubRise, suivez ces étapes :
 
-1. Depuis le back-office de Tablati, cliquez sur **Paramètres** puis **Connexion HubRise**. 
+1. Depuis le back-office de Tablati, cliquez sur **Paramètres** puis **Connexion HubRise**.
 2. Cliquez sur le bouton **Connecter**. Vous êtes redirigé vers l'interface HubRise. S'il s'agit de votre première connexion, créez un compte HubRise. Pour plus d'informations, consultez notre [Guide de démarrage](/docs/get-started).
 3. Si votre compte possède plusieurs points de vente, développez **Choisissez le point de vente**, sélectionnez le point de vente à connecter, puis cliquez sur **Autoriser**. Si le point de vente sélectionné possède plusieurs listes de clients ou catalogues, cliquez sur **Suivant** pour afficher les listes déroulantes correspondantes, puis sélectionnez les options souhaitées.
 4. Cliquez sur **Autoriser**.
 5. Vous êtes redirigé vers l'interface Tablati et la connexion à HubRise est établie.
 
+![Connecter et Déconnecter Tablati de HubRise](./images/001-2x-tablati-disconnect.png)
 
 ## Donner accès au support de Tablati
 
@@ -33,7 +34,7 @@ Pour donner accès à Tablati, procédez comme suit :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
 2. Dans la section **Permissions**, ajoutez `contact@tablati.ma`.
-3. Cliquez sur **Modifier les permissions** puis attribuez les droits nécessaires afin d’accorder au support Tablati l’accès à votre compte ou à votre point de vente. Parmi les rôles prédéfinis du menu déroulant, celui de **Partenaire technique** est recommandé. 
+3. Cliquez sur **Modifier les permissions** puis attribuez les droits nécessaires afin d’accorder au support Tablati l’accès à votre compte ou à votre point de vente. Parmi les rôles prédéfinis du menu déroulant, celui de **Partenaire technique** est recommandé.
 
 L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre compte HubRise ou au point de vente. Le partage de mot de passe est déconseillé pour des raisons de sécurité. Pour plus d'informations sur les permissions, voir notre aide en ligne, page [Permissions](/docs/permissions).
 
@@ -52,7 +53,5 @@ Si, au contraire, vous souhaitez arrêter définitivement l'envoi de commandes T
 Pour déconnecter Tablati de HubRise, suivez ces étapes :
 
 1. Depuis le back-office de Tablati, cliquez sur **Paramètres** puis **Connexion HubRise**.
-2. Cliquez sur le bouton **Déconnecter**. 
+2. Cliquez sur le bouton **Déconnecter**.
 3. Vous êtes déconnecté. Le message suiovant s'affiche sur fond vert **Le Token a été supprimé avec succès !**
-
-![Connecter et Déconnecter Tablati de HubRise](./images/001-2x-tablati-disconnect.png)

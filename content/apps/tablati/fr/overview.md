@@ -20,11 +20,13 @@ app_info:
 ## Description
 
 Tablati transforme l’expérience en restaurant en offrant une solution intuitive de commande et de paiement autonomes via QR code. Conçue pour améliorer la gestion des établissements et simplifier le service, elle permet aux clients de :
+
 - Accéder à un menu digital interactif sans téléchargement d’application.
 - Commander directement depuis leur smartphone.
 - Partager et régler l’addition rapidement.
 
 L’utilisation de Tablati est simple, fluide et pensée pour l’autonomie des clients :
+
 - **Commande à table en autonomie** : Les clients scannent un QR code placé sur leur
   table pour accéder au menu digital via leur navigateur, sans besoin d’installer une
   application.
@@ -43,6 +45,7 @@ L’utilisation de Tablati est simple, fluide et pensée pour l’autonomie des 
   menus et gestion des avis.
 
 L’intégration de Tablati avec HubRise permet une transmission automatique des commandes et paiements vers le logiciel de caisse du restaurant. Cette connexion garantit :
+
 - Un enregistrement en temps réel des transactions, sans ressaisie manuelle.
 - Une réduction des erreurs de commande et une gestion plus fluide des flux en cuisine et en
   salle.
@@ -53,7 +56,7 @@ L’intégration de Tablati avec HubRise permet une transmission automatique des
 Connecter Tablati à HubRise permet à votre solution de commande et de paiement à table de :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
-- Envoyer les modifications de commandes à HubRise. 
+- Envoyer les modifications de commandes à HubRise.
 - Envoyer les informations clients à HubRise.
 
 ---
