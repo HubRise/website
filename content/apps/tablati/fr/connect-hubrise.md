@@ -24,7 +24,7 @@ Pour connecter Tablati à HubRise, suivez ces étapes :
 4. Cliquez sur **Autoriser**.
 5. Vous êtes redirigé vers l'interface Tablati et la connexion à HubRise est établie.
 
-![Connecter et Déconnecter Tablati de HubRise](./images/001-2x-tablati-disconnect.png)
+![Connecter et Déconnecter Tablati de HubRise](./images/001-2x-tablati-hubrise-configuration.png)
 
 ## Donner accès au support de Tablati
 
@@ -54,4 +54,4 @@ Pour déconnecter Tablati de HubRise, suivez ces étapes :
 
 1. Depuis le back-office de Tablati, cliquez sur **Paramètres** puis **Connexion HubRise**.
 2. Cliquez sur le bouton **Déconnecter**.
-3. Vous êtes déconnecté. Le message suiovant s'affiche sur fond vert **Le Token a été supprimé avec succès !**
+3. Vous êtes déconnecté. Le message suivant s'affiche sur fond vert **Le Token a été supprimé avec succès !**

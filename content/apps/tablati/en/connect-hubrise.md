@@ -24,7 +24,7 @@ To can connect Tablati to HubRise, follow these steps :
 4. Click **Authorise**.
 5. You are redirected to the Tablati's interface, and the connection to HubRise is established.
 
-![Connect and Disconnect Tablati from HubRise](./images/001-2x-tablati-disconnect.png)
+![Connect and Disconnect Tablati from HubRise](./images/001-2x-tablati-hubrise-configuration.png)
 
 ## Give Access to Tablati Support
 
