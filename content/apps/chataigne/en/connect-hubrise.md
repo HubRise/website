@@ -22,7 +22,9 @@ To can connect Châtaigne to HubRise, follow these steps :
 2. Find HubRise, and click the **Connecter** (Connect) button. You are redirected to the HubRise interface. If this is your first time logging in, create a HubRise account. For more information, check out our [Getting Started Guide](/docs/get-started).
 3. If your account has multiple locations, expand the **Choose location** section to select the desired location, and click **Allow**. For locations with multiple customer lists or catalogs, click **Next** to display the corresponding dropdown lists, and select the desired options.
 4. Click **Authorise**.
-5. You are redirected to the SOLUTION interface, and the connection to HubRise is established.
+5. You are redirected to the Châtaigne's interface, and the connection to HubRise is established.
+
+![Châtaigne's HubRise configuration page](./images/001-2x-chataigne-hubrise-configuration.png)
 
 ## Grant Access to Châtaigne Support
 
@@ -45,5 +47,3 @@ If you need to stop sending Châtaigne orders to HubRise altogether, it is prefe
 1. From Châtaigne's back office of, click **Paramètres du Restaurant** (Restaurant Settings) and then **Intégrations** (Integrations).
 2. Find HubRise, and then click the settings button, represented by a gear icon.
 3. On a red background, you will find the **Déconnecter HubRise** (Disconnect HubRise) button.
-
-![Châtaigne User Interface to disconnect HubRise](./images/001-2x-chataigne-disconnect-hubrise.png)

@@ -33,7 +33,7 @@ Connecter Châtaigne à HubRise permet à votre solution de commande via WhatsAp
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.
 - Envoyer les commandes à HubRise, dont les statuts de commande.
-- Envoyer les informations clients à HubRise. 
+- Envoyer les informations clients à HubRise.
 - Recevoir un catalogue de HubRise, avec support des variantes.
 - Synchroniser les horaires d'ouverture avec HubRise.
 
