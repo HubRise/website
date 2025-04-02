@@ -455,6 +455,12 @@ content:
           logo: superdigital.png
           title: SuperDigital.fr
           description: SuperDigital.fr est une solution complète permettant aux restaurateurs de créer un site de commande en ligne en marque blanche. Les restaurateurs peuvent personnaliser leur site de manière autonome depuis le back-office.
+        - website: https://tablati.ma
+          documentation: /fr/apps/tablati
+          logo: tablati.png
+          title: Tablati
+          description: Tablati est une solution de commande et de paiement à table via QR code depuis un smartphone. Elle inclut des fonctionnalités comme la gestion des pourboires, la collecte d’avis Google et un programme de fidélité.
+          additional_info: Intégration en cours.
         - website: https://www.tastycloud.fr
           documentation: /fr/apps/tastycloud
           logo: tastycloud.png
