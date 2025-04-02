@@ -540,6 +540,7 @@ content:
         - website: https://tablati.ma
           documentation: /fr/apps/tablati
           logo: tablati.png
+          country:
           title: Tablati
           description: Tablati est une solution de commande et de paiement à table via QR code depuis un smartphone. Elle inclut des fonctionnalités comme la gestion des pourboires, la collecte d’avis Google et un programme de fidélité.
           additional_info: Intégration en cours.

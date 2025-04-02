@@ -538,6 +538,7 @@ content:
         - website: https://tablati.ma
           documentation: /apps/tablati
           logo: tablati.png
+          country:
           title: Tablati
           description: Tablati is a table ordering and payment solution via QR code from a smartphone. It includes features such as tip management, Google review collection, and a built-in loyalty programme.
           additional_info: Integration in progress.

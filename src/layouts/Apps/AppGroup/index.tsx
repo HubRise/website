@@ -31,7 +31,7 @@ const AppGroup = ({ title, slug, apps, logoImages, additionalSections, hasSugges
   const { t } = useTranslation()
 
   return (
-    <Block backgroundColor="none" title={title} titleAnchor={slug}>
+    <Block backgroundColor="none" title={apps.length === 0 ? undefined : title} titleAnchor={slug}>
       {apps.length === 0 && <NoResults />}
       <Group>
         {apps.map((app, idx) => (
