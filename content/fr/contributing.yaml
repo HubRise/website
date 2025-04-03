@@ -4,7 +4,10 @@ meta:
 content:
   hero:
     slug: contributing
-    title: Contribuer à la documentation
+    title:
+      contribute: Contribuer
+      to: à la
+      doc: documentation
     description: Vous avez repéré une erreur sur notre site, ou vous souhaitez mettre à jour la documentation de votre solution ? Nous vous expliquons comment procéder.
   thumbs:
     - title: Comment contribuer
@@ -36,4 +39,3 @@ content:
     title: Need Help Getting Started?
     description: Our integration support team is here for you at every step of the process.
     button_label: Contact us
-    button_link: link
