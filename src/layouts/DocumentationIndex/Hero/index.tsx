@@ -16,7 +16,11 @@ const Hero = (hero: DocumentationIndexYaml["content"]["hero"]): JSX.Element => {
     }
 
     if (slug === "contributing") {
-      return <>{title}</>
+      return (
+        <>
+          <span>{title.contribute}</span> {title.to} <span>{title.doc}</span>
+        </>
+      )
     }
   }
 

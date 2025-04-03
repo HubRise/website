@@ -1,10 +1,12 @@
 import { TGetStarted } from "@components/GetStarted/types"
 
-type TDevelopersTitle = {
-  connect: string
-  app: string
-  to: string
-  hubrise: string
+type THeroTitle = {
+  connect?: string
+  contribute?: string
+  app?: string
+  to?: string
+  hubrise?: string
+  doc?: string
 }
 
 export interface DocumentationIndexYaml {
@@ -15,7 +17,7 @@ export interface DocumentationIndexYaml {
   content: {
     hero: {
       slug: "developers" | "contributing"
-      title: TDevelopersTitle
+      title: THeroTitle
       description: string
     }
     thumbs: Array<{

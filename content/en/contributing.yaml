@@ -4,7 +4,10 @@ meta:
 content:
   hero:
     slug: contributing
-    title: Contribute to the Documentation
+    title:
+      contribute: Contribute
+      to: to the
+      doc: Documentation
     description: If you would like to give us feedback or if you need to update your app documentation, you are in the right page. Here you will find information on how to contribute to the documentation available on this website.
   thumbs:
     - title: How to Contribute
@@ -35,4 +38,3 @@ content:
     title: Need Help Getting Started?
     description: Our integration support team is here for you at every step of the process.
     button_label: Contact us
-    button_link: link
