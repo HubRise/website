@@ -3,12 +3,13 @@ meta:
   description:
 content:
   hero:
-    title: Connect Your Application to HubRise
-    description:
-      paragraph_1: An integration to HubRise connects your app to the HubRise ecosystem.
-      paragraph_2:
-        button: Contact us
-        text: for any questions on your integration.
+    slug: developers
+    title:
+      connect: Connect
+      app: Your Application
+      to: to
+      hubrise: HubRise
+    description: An integration to HubRise connects your app to the HubRise ecosystem.
   thumbs:
     - title: Quick Start
       description: 10-minute guide to learn how to send your first API requests

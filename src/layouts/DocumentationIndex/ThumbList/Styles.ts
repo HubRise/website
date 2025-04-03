@@ -2,44 +2,54 @@ import OriginalLink from "next/link"
 import styled from "styled-components"
 
 import Icon from "@components/Icon"
-import { breakpoints, colors, fontSizes, sizes } from "@utils/styles"
-
-const gap = "4rem"
+import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const StyledThumbList = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: ${gap};
-`
-
-export const Thumb = styled.div`
-  flex: 0 0 100%;
-  padding: 0 ${sizes.mobilePadding};
-  text-align: left;
+  max-width: 90rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 
   @media (min-width: ${breakpoints.large}) {
-    flex: 0 0 calc((100% - ${gap}) / 2);
-    padding: 0;
+    padding: 0 3.5rem;
+    grid-template-columns: 1fr 1fr;
   }
 `
 
 export const Link = styled(OriginalLink)`
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+`
+
+export const IconWrapper = styled.div`
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  background-color: ${colors.primary};
+  ${mixin.centerElement}
 `
 
 export const StyledIcon = styled(Icon)`
-  color: ${colors.primary};
+  color: ${colors.white};
 `
 
-export const Content = styled.div``
+export const Content = styled.div`
+  text-align: center;
+`
 
 export const Title = styled.div`
-  font-size: ${fontSizes._24};
+  ${fontSizeMixins.fontSizeTextXl}
+  font-weight: 600;
   color: ${colors.textDarkest};
-  font-weight: bold;
+
+  @media (min-width: ${breakpoints.biggest}) {
+    ${fontSizeMixins.fontSizeText2Xl}
+  }
 `
 
 export const Description = styled.div`
-  color: ${colors.textMedium};
+  ${mixin.cardText}
 `
