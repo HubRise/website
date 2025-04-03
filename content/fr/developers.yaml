@@ -27,3 +27,9 @@ content:
       description: Conventions utilisées par les autres développeurs pour les cas spéciaux (en anglais)
       to: /fr/developers/conventions
       icon: menu_book
+  # Need to translate
+  getStarted:
+    title: Need Help Getting Started?
+    description: Our integration support team is here for you at every step of the process.
+    button_label: Contact us
+    button_link: link

@@ -27,3 +27,8 @@ content:
       description: Conventions used by other developers to cover edge cases
       to: /developers/conventions
       icon: menu_book
+  getStarted:
+    title: Need Help Getting Started?
+    description: Our integration support team is here for you at every step of the process.
+    button_label: Contact us
+    button_link: link

@@ -1,3 +1,5 @@
+import { TGetStarted } from "@components/GetStarted/types"
+
 type TDevelopersTitle = {
   connect: string
   app: string
@@ -22,5 +24,6 @@ export interface DocumentationIndexYaml {
       to: string
       icon: string
     }>
+    getStarted: TGetStarted
   }
 }
