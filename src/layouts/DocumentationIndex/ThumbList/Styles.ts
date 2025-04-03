@@ -2,7 +2,7 @@ import OriginalLink from "next/link"
 import styled from "styled-components"
 
 import Icon from "@components/Icon"
-import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
+import { breakpoints, colors, mixin } from "@utils/styles"
 
 export const StyledThumbList = styled.div`
   max-width: 90rem;
@@ -40,16 +40,10 @@ export const Content = styled.div`
   text-align: center;
 `
 
-export const Title = styled.div`
-  ${fontSizeMixins.fontSizeTextXl}
-  font-weight: 600;
-  color: ${colors.textDarkest};
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeText2Xl}
-  }
+export const Title = styled.h4`
+  ${mixin.smallCardTitle}
 `
 
-export const Description = styled.div`
+export const Description = styled.p`
   ${mixin.cardText}
 `

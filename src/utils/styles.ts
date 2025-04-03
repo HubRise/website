@@ -222,6 +222,15 @@ export const mixin = {
       ${fontSizeMixins.fontSizeTextXl}
     }
   `,
+  smallCardTitle: css`
+    ${fontSizeMixins.fontSizeTextXl}
+    font-weight: 600;
+    color: ${colors.textDarkest};
+
+    @media (min-width: ${breakpoints.biggest}) {
+      ${fontSizeMixins.fontSizeText2Xl}
+    }
+  `,
   cardTitle: css`
     ${fontSizeMixins.fontSizeText2Xl}
     font-weight: 600;
