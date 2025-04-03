@@ -31,3 +31,9 @@ content:
       description: Instructions pour créer des diagrammes (en anglais).
       to: /fr/contribuer/guide-des-diagrammes
       icon: schema
+  # Need to translate
+  getStarted:
+    title: Need Help Getting Started?
+    description: Our integration support team is here for you at every step of the process.
+    button_label: Contact us
+    button_link: link
