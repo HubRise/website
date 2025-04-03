@@ -1,25 +1,47 @@
 sections:
-  - title: Integrations
+  - title: Integrations & Apps
     links:
-      - title: Apps
+      - title: All Integrations
         to: /apps
-      - title: Contribute to the Documentation
-        to: /contributing
-  - title: Developers
+      - title: OrderLine
+        to: /orderline
+  - title: Resources
     links:
-      - title: Quick Start
+      - title: Developers Quick Start
         to: /developers/quick-start
       - title: Integration Guide
         to: /developers/integration-guide
       - title: API Reference
         to: /developers/api/general-concepts
-  - title: Resources
+      - title: Blog
+        to: /blog
+  - title: Help Center
     links:
-      - title: User Guide
+      - title: Help
         to: /docs
+      - title: FAQ
+        to: /faqs
+      - title: Contribute
+        to: /contributing
+  - title: Partners
+    links:
+      - title: Become an Integrated Partner
+        to: /
+      - title: Become a Reseller
+        to: /
   - title: Company
     links:
       - title: Testimonials
         to: /testimonials
       - title: Branding Guidelines
         to: /branding
+      - title: Contact Us
+        to: /contact-us
+      - title: LinkedIn
+        icon: linkedin
+        to: https://www.linkedin.com/company/hubrise
+copyright:
+  terms_link:
+    title: Terms of service
+    # TODO: There is no this page for english version
+    link: /fr/legal/conditions-generales

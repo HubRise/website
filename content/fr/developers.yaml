@@ -3,12 +3,13 @@ meta:
   description:
 content:
   hero:
-    title: Connectez votre application à HubRise
-    description:
-      paragraph_1: Une seule intégration rend votre application compatible avec tout l'écosystème HubRise.
-      paragraph_2:
-        button: Contactez-nous
-        text: pour plus d'informations ou pour toute question technique.
+    slug: developers
+    title:
+      connect: Connectez
+      app: votre application
+      to: à
+      hubrise: HubRise
+    description: Une seule intégration rend votre application compatible avec tout l'écosystème HubRise.
   thumbs:
     - title: Démarrage rapide
       description: Guide de 10 minutes pour envoyer vos premières requêtes (en anglais)
@@ -26,3 +27,8 @@ content:
       description: Conventions utilisées par les autres développeurs pour les cas spéciaux (en anglais)
       to: /fr/developers/conventions
       icon: menu_book
+  # Need to translate
+  getStarted:
+    title: Need Help Getting Started?
+    description: Our integration support team is here for you at every step of the process.
+    button_label: Contact us

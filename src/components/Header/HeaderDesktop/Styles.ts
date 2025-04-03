@@ -1,7 +1,8 @@
 import Link from "next/link"
 import styled, { css } from "styled-components"
 
-import { breakpoints, colors, mixin } from "@utils/styles"
+import { StyledButton } from "@components/Button/Styles"
+import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 import { headerStyle } from "../shared/styles"
 
@@ -14,18 +15,18 @@ export const StyledHeader = styled.div`
     top: 0;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2%;
+    padding: 0 3%;
     ${headerStyle};
   }
 `
 
 export const Menu = styled.ul`
   display: flex;
+  gap: 2rem;
 `
 
 export const MenuItem = styled.li<{ $isActive: boolean }>`
   ${mixin.clickable};
-  ${mixin.dotSeparatedList("0.5rem")};
 
   ${({ $isActive }) =>
     $isActive &&
@@ -35,7 +36,9 @@ export const MenuItem = styled.li<{ $isActive: boolean }>`
 `
 
 export const MenuLink = styled(Link)<{ $isActive: boolean }>`
-  color: ${colors.textDarkest};
+  ${fontSizeMixins.fontSizeTextMd}
+  font-weight: 600;
+  color: ${colors.textDark};
   ${mixin.linkOver(colors.primary)};
 
   ${({ $isActive }) =>
@@ -43,23 +46,18 @@ export const MenuLink = styled(Link)<{ $isActive: boolean }>`
     css`
       color: ${colors.primary};
     `}
+
+  @media (min-width: ${breakpoints.biggest}) {
+    ${fontSizeMixins.fontSizeTextLg}
+  }
 `
 
-const callToAction = css`
-  margin-left: 0.6em;
-  white-space: nowrap;
-  ${mixin.button};
-  ${mixin.buttonOver(colors.white, colors.textDarkest)};
-`
+export const RightSide = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
 
-export const Signup = styled.a`
-  ${callToAction};
-  color: ${colors.textDark};
-  background-color: #eeeeee;
-`
-
-export const Login = styled.a`
-  ${callToAction};
-  color: ${colors.white};
-  background-color: ${colors.primary};
+  ${StyledButton} {
+    margin-top: 0;
+  }
 `

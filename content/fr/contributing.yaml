@@ -3,9 +3,12 @@ meta:
   description: Tout le monde peut contribuer à la documentation en ligne de HubRise. Découvrez comment mettre à jour ou compléter une documentation, ou corriger directement une erreur sur notre site.
 content:
   hero:
-    title: Contribuer à la documentation
-    description:
-      paragraph_1: Vous avez repéré une erreur sur notre site, ou vous souhaitez mettre à jour la documentation de votre solution ? Nous vous expliquons comment procéder.
+    slug: contributing
+    title:
+      contribute: Contribuer
+      to: à la
+      doc: documentation
+    description: Vous avez repéré une erreur sur notre site, ou vous souhaitez mettre à jour la documentation de votre solution ? Nous vous expliquons comment procéder.
   thumbs:
     - title: Comment contribuer
       description: Ce que vous devez savoir avant de contribuer.
@@ -31,3 +34,8 @@ content:
       description: Instructions pour créer des diagrammes (en anglais).
       to: /fr/contribuer/guide-des-diagrammes
       icon: schema
+  # Need to translate
+  getStarted:
+    title: Need Help Getting Started?
+    description: Our integration support team is here for you at every step of the process.
+    button_label: Contact us

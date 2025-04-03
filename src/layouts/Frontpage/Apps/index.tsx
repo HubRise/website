@@ -1,55 +1,46 @@
 import Image from "next/image"
-import { MDXRemote } from "next-mdx-remote"
-import type { MDXRemoteSerializeResult } from "next-mdx-remote"
+import { useEffect, useRef, useState } from "react"
 
-import Block from "@components/Block"
+import { ContentImageMap } from "@utils/contentImage"
 
-import { Text } from "../shared/Styles"
+import { TApp } from "../types"
 
-import { Item, ImageOver, ImageDefault, ImageLink, List } from "./Styles"
+import { Container, InnerContainer, LogoContainer, AppCard } from "./Styles"
 
 interface AppsProps {
-  title: string
-  descriptionMdx: MDXRemoteSerializeResult
-  link_url: string
-  categories: Array<string>
+  apps: Array<TApp>
+  appLogosMap: ContentImageMap
 }
 
-const Apps = ({ title, link_url, descriptionMdx, categories }: AppsProps): JSX.Element => {
-  const side = (
-    <ImageLink href={link_url}>
-      <ImageDefault>
-        <Image src="/images/frontpage/apps.png" alt="Apps" width={501} height={395} />
-      </ImageDefault>
-      <ImageOver>
-        <Image src="/images/frontpage/apps-hover.png" alt="Apps" width={501} height={395} />
-      </ImageOver>
-    </ImageLink>
-  )
+const Apps = ({ apps, appLogosMap }: AppsProps): JSX.Element => {
+  const logoContainerWidth = useRef<HTMLInputElement>(null)
+  const innerContainerWidth = useRef<HTMLInputElement>(null)
+  const [moveShiftWidth, setMoveShiftWidth] = useState<number>(0)
+
+  useEffect(() => {
+    if (logoContainerWidth?.current && innerContainerWidth?.current) {
+      setMoveShiftWidth(logoContainerWidth?.current?.clientWidth - innerContainerWidth?.current?.clientWidth)
+    }
+  }, [])
 
   return (
-    <Block
-      backgroundColor="white"
-      verticalSpacing="small"
-      padding="small"
-      beforeExpansion={false}
-      afterExpansion={true}
-      title={title}
-      side={side}
-      sidePosition="left"
-      horizontalAlign="centerOnMobile"
-      desktopVerticalAlign="center"
-    >
-      <Text $backgroundColor="white">
-        <MDXRemote {...descriptionMdx} />
-
-        <List>
-          {categories.map((category, index) => (
-            <Item key={index}>{category}</Item>
-          ))}
-        </List>
-      </Text>
-    </Block>
+    <Container>
+      <InnerContainer ref={innerContainerWidth}>
+        <LogoContainer ref={logoContainerWidth} $moveShift={moveShiftWidth} $nbCards={apps.length}>
+          {apps.map(({ logo }, index) => {
+            return (
+              <AppCard key={index}>
+                <Image
+                  style={{ maxHeight: "100%" }}
+                  {...appLogosMap[logo]}
+                  alt={logo.substring(0, logo.length - 4)}
+                ></Image>
+              </AppCard>
+            )
+          })}
+        </LogoContainer>
+      </InnerContainer>
+    </Container>
   )
 }
 

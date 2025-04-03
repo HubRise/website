@@ -9,25 +9,20 @@ export const StyledHeader = styled.div`
   position: sticky;
   top: 0;
   ${headerStyle};
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.625rem;
 
   @media (min-width: ${breakpoints.burgerMenu}) {
     display: none;
   }
 `
 
-export const Button = styled.div`
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 4rem; // Large clickable area
+export const BurgerIcon = styled.div`
+  padding: 0 0.5rem;
   display: flex;
-  align-items: center;
-  ${mixin.clickable};
-
-  &:focus {
-    outline: none;
-  }
+  ${mixin.clickable}
 `
 
 export const LogoLink = styled(Link)`
