@@ -31,7 +31,8 @@ Pour exporter manuellement un catalogue vers HubRise, suivez les étapes suivant
 
 1. Depuis le back-office de Tick'Eat, cliquez sur l'icône de catalogue représentée par un menu.
 2. Identifiez le catalogue à exporter.
-3. En face du catalogue, cliquez sur l'icône en forme de flèche vers la droite, puis confirmez en cliquant sur **Publier**.
+3. Vérifiez que **HubRise** apparaît dans les connecteurs associés au catalogue. Si ce n'est pas le cas, cliquez sur l'icône d'édition en forme de crayon, puis ajoutez le connecteur HubRise et cliquez sur **Valider**. Si le connecteur HubRise n'est pas visible, contactez le support de Tick'Eat pour l'ajouter.
+4. En face du catalogue, cliquez sur l'icône en forme de flèche vers la droite, puis confirmez en cliquant sur **Publier**.
 
 Vous devez maintenant importer le catalogue HubRise dans vos autres applications connectées à HubRise. Pour effectuer cette opération, référez-vous à la documentation de ces applications sur le site de HubRise.
 
