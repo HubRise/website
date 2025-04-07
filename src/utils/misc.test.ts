@@ -1,3 +1,5 @@
+import { describe, expect, it } from "vitest"
+
 import { createHeaderAnchor, slugify } from "./misc"
 
 describe("createSlug", () => {
