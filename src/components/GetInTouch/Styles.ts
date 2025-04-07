@@ -31,6 +31,8 @@ export const Content = styled.div`
   }
 
   @media (min-width: ${breakpoints.medium}) {
+    width: calc(100% - 225px);
+
     ${StyledButton} {
       width: fit-content;
     }

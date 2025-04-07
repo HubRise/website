@@ -15,7 +15,7 @@ content:
       to: /fr/contribuer/comment-contribuer
       icon: fast_forward
     - title: Guide de style
-      description: Conventions de style à suivre par les contributeurs.
+      description: Conventions de style à suivre par les contributeurs.
       to: /fr/contribuer/guide-de-style
       icon: check
     - title: Référencer votre solution
@@ -23,19 +23,19 @@ content:
       to: /fr/contribuer/referencer-votre-solution-sur-hubrise
       icon: edit
     - title: Guide des captures d'écran
-      description: Spécifications pour les captures d'écran et convention de nommage des fichiers (en anglais).
+      description: Spécifications pour les captures d'écran et convention de nommage des fichiers (en anglais).
       to: /fr/contribuer/guide-des-captures-ecran
       icon: computer
     - title: Guide des vidéos
-      description: Commandes utiles pour générer de courtes vidéos explicatives (en anglais).
+      description: Commandes utiles pour générer de courtes vidéos explicatives (en anglais).
       to: /fr/contribuer/guide-des-videos
       icon: play_circle
     - title: Guide des diagrammes
-      description: Instructions pour créer des diagrammes (en anglais).
+      description: Instructions pour créer des diagrammes (en anglais).
       to: /fr/contribuer/guide-des-diagrammes
       icon: schema
   # Need to translate
   getStarted:
     title: Need Help Getting Started?
     description: Our integration support team is here for you at every step of the process.
-    button_label: Contact us
+    button_label: Send Us a Message
