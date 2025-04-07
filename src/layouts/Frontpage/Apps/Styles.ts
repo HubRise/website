@@ -1,52 +1,93 @@
-import Link from "next/link"
-import styled from "styled-components"
+import styled, { css, keyframes } from "styled-components"
 
-import { breakpoints, fontSizes, mixin } from "@utils/styles"
+import { boxShadows, breakpoints, colors, mixin, zIndexValues } from "@utils/styles"
 
-export const ImageDefault = styled.div`
-  max-width: 100%;
-  z-index: 0;
-  filter: drop-shadow(5px 5px 10px #eee);
+const move = (moveShift: number) => keyframes`
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -${moveShift}px;
+  }
+  100% {
+    left: 0;
+  }
 `
 
-export const ImageOver = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 100%;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.2s linear;
+export const Container = styled.div`
+  background-color: #fdfdfd;
+  padding: 3.5rem 0;
+
+  @media (min-width: ${breakpoints.large}) {
+    padding: 5.5rem 0;
+  }
 `
 
-export const ImageLink = styled(Link)`
-  display: block;
+export const InnerContainer = styled.div`
+  max-width: ${breakpoints.biggest};
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  margin-bottom: -2rem;
+  overflow: hidden;
   position: relative;
 
-  @media (min-width: ${breakpoints.large}) {
-    grid-row: 1;
-    grid-column: 1;
-    margin: 3rem;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 7.625rem;
+    height: 100%;
+    padding: 1.875rem 0;
+    z-index: ${zIndexValues.appsLogosGradient};
   }
 
-  &:hover {
-    ${ImageOver} {
-      opacity: 1;
-    }
+  &::before {
+    left: 0;
+    background: linear-gradient(270deg, #ffffff00 0%, ${colors.backgroundWhite} 100%);
+  }
+
+  &::after {
+    right: 0;
+    background: linear-gradient(270deg, ${colors.backgroundWhite} 0%, #ffffff00 100%);
   }
 `
 
-export const List = styled.ul`
-  display: flex;
-  flex-flow: row wrap;
+export const LogoContainer = styled.div<{ $moveShift: number; $nbCards: number }>`
+  display: grid;
+  grid-template-columns: repeat(${({ $nbCards }) => Math.ceil($nbCards / 3)}, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.75rem;
+  position: relative;
+  width: fit-content;
 
-  justify-content: center;
-  @media (min-width: ${breakpoints.large}) {
-    justify-content: flex-start;
+  ${({ $moveShift }) =>
+    $moveShift > 0 &&
+    css`
+      animation: ${move($moveShift)} 70s linear infinite;
+    `}
+
+  & > div:nth-child(even) {
+    top: 2rem;
   }
 `
 
-export const Item = styled.li`
-  ${mixin.dotSeparatedList("0.5rem")};
-  font-size: ${fontSizes._18};
+export const AppCard = styled.div`
+  ${mixin.centerElement}
+  box-shadow: ${boxShadows.card};
+  background-color: ${colors.backgroundWhite};
+  border-radius: 0.875rem;
+  width: 6.25rem;
+  height: 6.25rem;
+  padding: 1.5rem 0.75rem;
+  position: relative;
+
+  & img {
+    width: fit-content;
+  }
+
+  @media (min-width: ${breakpoints.biggest}) {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
 `

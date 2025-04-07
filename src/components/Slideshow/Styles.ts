@@ -21,7 +21,6 @@ const slideControl = css`
     opacity: 1;
     background-color: ${colors.backgroundDark};
   }
-}
 `
 
 const arrow = css`

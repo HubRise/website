@@ -1,6 +1,6 @@
 "use client"
 
-import Block from "@components/Block"
+import GetStarted from "@components/GetStarted"
 
 import Hero from "./Hero"
 import ThumbList from "./ThumbList"
@@ -10,10 +10,8 @@ const DocumentationIndex = ({ yaml }: { yaml: DocumentationIndexYaml }): JSX.Ele
   return (
     <>
       <Hero {...yaml.content.hero} />
-
-      <Block backgroundColor="white">
-        <ThumbList thumbs={yaml.content.thumbs} />
-      </Block>
+      <ThumbList thumbs={yaml.content.thumbs} />
+      <GetStarted getStarted={yaml.content.getStarted} />
     </>
   )
 }

@@ -7,13 +7,21 @@ import type { StyledIconProps } from "./Styles"
 
 // See available codes on https://fonts.google.com/icons
 export type IconCode =
+  | "arrow_forward"
+  | "bolt"
+  | "check"
   | "chevron_left"
   | "chevron_right"
   | "close"
+  | "credit_card"
   | "done"
   | "error"
   | "expand_more"
   | "expand_less"
+  | "language"
+  | "location_on"
+  | "mail"
+  | "menu"
   | "navigate_before"
   | "search"
 
