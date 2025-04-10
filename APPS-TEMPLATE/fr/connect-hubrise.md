@@ -79,10 +79,4 @@ Pour déconnecter SOLUTION de HubRise, procédez comme suit :
 
 Pour déconnecter SOLUTION de HubRise, contactez le support de SOLUTION.
 
-Si vous avez besoin d'arrêter temporairement [la réception de commandes depuis HubRise], vous pouvez simplement bloquer la connexion entre SOLUTION et HubRise. Pour plus d'informations, voir [Bloquer ou déconnecter une application](/docs/connections#block-or-disconnect).
-
-Si vous avez besoin d'arrêter temporairement la réception des commandes envoyées sur HubRise, vous pouvez bloquer la connexion entre SOLUTION et HubRise. Pour plus d'informations, voir [Bloquer ou déconnecter une application](/docs/connections#block-or-disconnect).
-
-Si, au contraire, vous souhaitez arrêter définitivement l'envoi de commandes SOLUTION à HubRise, il est préférable de déconnecter SOLUTION de HubRise via le back-office de SOLUTION.
-\-- OU --
-Si, au contraire, vous souhaitez arrêter définitivement l'envoi de commandes SOLUTION à HubRise, il est préférable de contacter le support SOLUTION.
+Si vous souhaitez seulement stopper temporairement [la réception de commandes depuis HubRise], vous pouvez bloquer la connexion entre SOLUTION et HubRise. Pour plus d'informations, voir [Bloquer ou déconnecter une application](/docs/connections#block-or-disconnect).

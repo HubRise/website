@@ -80,8 +80,4 @@ To disconnect SOLUTION from HubRise, proceed as follows:
 
 To disconnect SOLUTION from HubRise, contact SOLUTION support.
 
-If you need to temporarily stop [receiving orders from HubRise], you can block the connection between SOLUTION and HubRise. For more information, see [Block or Disconnect App](/docs/connections#block-or-disconnect).
-
-If, on the contrary, you need to stop sending SOLUTION orders to HubRise altogether, it is preferable to disconnect SOLUTION from HubRise via the SOLUTION back office.
--- OR --
-If, on the contrary, you need to stop sending SOLUTION orders to HubRise altogether, it is preferable to contact SOLUTION support.
+If you just need to temporarily stop [receiving orders from HubRise], you can block the connection between SOLUTION and HubRise. For more information, see [Block or Disconnect App](/docs/connections#block-or-disconnect).
