@@ -56,8 +56,10 @@ To connect SOLUTION and facilitate the handling of your support requests, you ne
 To grant access to SOLUTION, proceed as follows:
 
 1. From the HubRise back office, select **SETTINGS** in the left-hand menu.
-1. In the **Permissions** section, enter `contact@SOLUTION.com` and select **Manager** in the dropdown list of roles.
-1. Click the **+** icon to grant SOLUTION support access to your account or location.
+1. In the **Permissions** section, enter `contact@SOLUTION.com`.
+1. Click on **Add User**.
+1. In the dropdown menu for selecting a predefined role, select **Technical Partner**.
+1. Click on **Set Permissions**.
 
 Adding a user is the recommended way to grant access to a third party to your HubRise account or location. Sharing passwords is not recommended for security reasons. For more information on permissions, see the [Permissions](/docs/permissions) help page.
 
@@ -78,4 +80,4 @@ To disconnect SOLUTION from HubRise, proceed as follows:
 
 To disconnect SOLUTION from HubRise, contact SOLUTION support.
 
-If you need to temporarily stop [receiving orders from HubRise], you can block the connection between SOLUTION and HubRise instead. For more information, see [Block or Disconnect App](/docs/connections#block-or-disconnect).
+If you just need to temporarily stop [receiving orders from HubRise], you can block the connection between SOLUTION and HubRise. For more information, see [Block or Disconnect App](/docs/connections#block-or-disconnect).
