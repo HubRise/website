@@ -26,9 +26,9 @@ Pour connecter Clyo à HubRise, suivez les étapes suivantes :
 1. Cliquez sur **Autoriser**.
 1. Un code s'affiche. Copiez ce code en cliquant sur l'icône de copie.
    ![Clyo - Copier le code](./images/001-2x-clyo-connection-code.png)
-2. Fermez la fenêtre de connexion HubRise, retournez dans l'interface de Clyo, et collez le code dans le champ prévu à cet effet.
+1. Fermez la fenêtre de connexion HubRise, retournez dans l'interface de Clyo, et collez le code dans le champ prévu à cet effet.
 1. Cliquez sur **OK**. La connexion à HubRise est maintenant établie.
-   ![Clyo - Connexion établie](./images/002-clyo-connection-success.png)   
+   ![Clyo - Connexion établie](./images/002-clyo-connection-success.png)
 
 ## Donner accès au support de Clyo {#give-access}
 
@@ -37,8 +37,10 @@ Pour faciliter la prise en charge de vos demandes de support, nous vous recomman
 Pour donner accès à Clyo, procédez comme suit :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
-1. Dans la section **Permissions**, ajoutez support@clyosystems.com en sélectionnant l'option **Manager** dans la liste déroulante des rôles.
-1. Cliquez sur l'icône **+** pour ajouter le nouvel utilisateur.
+1. Dans la section **Permissions**, ajoutez `support@clyosystems.com`.
+1. Cliquez sur **Ajouter l'utilisateur**.
+1. Dans le menu déroulant de choix d'un rôle prédéfini, sélectionnez **Partenaire Technique**.
+1. Cliquez sur **Définir les permissions**.
 
 L'ajout d'un utilisateur est le moyen le plus sûr de donner accès à un tiers. Le partage de mot de passe est déconseillé pour des raisons de sécurité.
 
