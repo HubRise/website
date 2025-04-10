@@ -69,6 +69,8 @@ Include in your request the name of your HubRise account, its HubRise identifier
 
 ## Disconnect SOLUTION
 
+To disconnect SOLUTION from HubRise, proceed as follows:
+
 1. From the SOLUTION back-office, click on ...
 1. SOLUTION is disconnected from HubRise.
 

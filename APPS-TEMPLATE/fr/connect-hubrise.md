@@ -69,6 +69,8 @@ Indiquez dans votre demande le nom de votre compte HubRise, son identifiant HubR
 
 ## Déconnecter SOLUTION
 
+Pour déconnecter SOLUTION de HubRise, procédez comme suit :
+
 1. Depuis le back-office de SOLUTION, cliquez sur ...
 2. SOLUTION est déconnecté de HubRise.
 
