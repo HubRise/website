@@ -5,26 +5,18 @@ position: 7
 layout: documentation
 meta:
   title: Online Ordering Solutions | SOLUTION | HubRise
-  description: Integrating SOLUTION with online ordering solutions requires you to specify particular ref codes in Lightspeed and in the ordering solution configuration page.
----
-
-To connect SOLUTION to online ordering solutions, use the configuration parameters provided below.
-
-By convention, SOLUTION support team uses these predefined codes when they set up the integration. If you configure the SOLUTION back office autonomously, we recommend that you use the same codes, as this simplifies troubleshooting.
-
----
-
-**IMPORTANT NOTE:** These codes must be present in your SOLUTION back office and must be included in the configuration page of the online ordering solution.
-
+  description: Learn how to connect SOLUTION to your online ordering solution by configuring the correct ref codes for service types, payments, fees, and discounts.
 ---
 
 ---
 
-**IMPORTANT NOTE:** For codes related to the configuration of food ordering and delivery platforms such as Deliveroo, Uber Eats, and Just Eat, see [Food Ordering Platforms](/apps/SOLUTION/food-ordering-platforms).
+**IMPORTANT NOTE:** This page is about white-label online ordering websites. For food ordering and delivery platforms such as Deliveroo, Uber Eats, and Just Eat, see [Food Ordering Platforms](/apps/SOLUTION/food-ordering-platforms).
 
 ---
 
-In your online ordering solution configuration page, use the following codes.
+To connect SOLUTION to your online ordering solution, you must use specific ref codes. These ref codes allow your EPOS to correctly interpret and process incoming orders.
+
+In the configuration page of your online ordering solution, use the following settings:
 
 | Section       | Name                          | Ref code      |
 | ------------- | ----------------------------- | ------------- |

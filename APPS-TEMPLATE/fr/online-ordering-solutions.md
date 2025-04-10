@@ -5,26 +5,18 @@ position: 7
 layout: documentation
 meta:
   title: Solutions de commande en ligne | SOLUTION | HubRise
-  description: Pour intégrer SOLUTION à des solutions de commande en ligne, vous devez spécifier des codes ref dans Lightspeed et dans la page de configuration de la solution de commande.
----
-
-Pour connecter SOLUTION à plusieurs solutions de commande en ligne, utilisez les paramètres de configuration fournis ci-dessous.
-
-Par convention, l'équipe de support SOLUTION utilise ces codes prédéfinis lorsqu'elle configure l'intégration. Si vous configurez vous-même le back-office SOLUTION, nous vous recommandons d'utiliser les mêmes codes, car cela simplifie le dépannage.
-
----
-
-**REMARQUE IMPORTANTE** : Ces codes doivent être présents dans votre back-office SOLUTION et doivent figurer sur la page de configuration de la solution de commande en ligne.
-
+  description: Découvrez comment connecter SOLUTION à votre solution de commande en ligne en configurant les bons codes ref pour les types de service, paiements, frais et remises.
 ---
 
 ---
 
-**REMARQUE IMPORTANTE** : Pour les plateformes de commande et de livraison repas telles que Deliveroo, Uber Eats et Just Eat en revanche, il y a des codes prédéfinis, consultez [Plateformes de commande de repas](/apps/SOLUTION/food-ordering-platforms).
+**REMARQUE IMPORTANTE** : Cette page concerne les sites de commande en ligne en marque blanche. Pour les plateformes de commande et de livraison de repas, telles que Deliveroo, Uber Eats et Just Eat, consultez [Plateformes de commande de repas](/apps/SOLUTION/food-ordering-platforms).
 
 ---
 
-Dans la page de configuration de votre solution de commande en ligne, utilisez les paramètres suivants.
+Pour connecter SOLUTION à votre solution de commande en ligne, vous devez utiliser des codes ref spécifiques. Ces codes ref permettent à votre logiciel de caisse de comprendre et traiter correctement les commandes reçues.
+
+Dans la page de configuration de votre solution de commande en ligne, utilisez les paramètres suivants :
 
 | Section          | Nom                                 | Code ref      |
 | ---------------- | ----------------------------------- | ------------- |
