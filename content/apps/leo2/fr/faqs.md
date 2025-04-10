@@ -10,3 +10,4 @@ meta:
 
 - [Les commandes HubRise n'arrivent pas dans LEO2. Que faire ?](/apps/leo2/faqs/orders-not-received-errors)
 - [Des informations n'apparaissent pas sur les tickets de caisse](/apps/leo2/faqs/missing-information-on-receipts)
+- [Comment supprimer une commande bloquée dans LEO2 ?](/apps/leo2/faqs/remove-blocked-order)

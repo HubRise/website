@@ -20,7 +20,7 @@ Each row in the page shows the following information about an operation:
 
 - **TIME**: The date and time of the order.
 - **ORDER**: The HubRise order ID, for order operations.
-- **DESCRIPTION**: An optional description for operations that are not related to a specific order. It could be empty, or inform of a `System request` or a `Catalog push`.
+- **DESCRIPTION**: An optional description for operations that are not related to a specific order. It could be empty, or inform of a specific action such as `System request` or `Catalog push`.
 - **STATUS**: The status of the order. The value `OK` indicates that the order has been successfully transmitted. If there is an issue, an error code will be displayed in red, such as `400`.
 
 The **System request** label indicates that the operation is not related to a specific order.
@@ -66,7 +66,7 @@ From the actions page, you can push the catalog to WooCommerce. For more details
 
 To access the WooCommerce Bridge configuration page, click **Configuration** at the top of the screen. From this page, you will be able to customise the behaviour of WooCommerce Bridge. For more details, see [Configuration](/apps/woocommerce/configuration).
 
-![WooCommerce Bridge configuration page](./images/016-woocommerce-configuration-1.png)
+![WooCommerce Bridge configuration page](./images/016-woocommerce-configuration.png)
 
 ## Language and Navigation
 

@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: Full documentation of this integration will be available soon.
+**IMPORTANT NOTE:** Full documentation of this integration will be available soon.
 
 ---
 
@@ -42,7 +42,8 @@ Connecting SwooPOS to HubRise allows your EPOS to:
 
 - Pull orders from HubRise, including order status.
 - Pull customer information from HubRise.
-- Push a catalog into HubRise.
+- Push a catalog into HubRise, with variants support.
+- Synchronise opening hours with HubRise.
 
 ---
 

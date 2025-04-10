@@ -2,16 +2,29 @@ import axios from "axios"
 import { NextResponse } from "next/server"
 import nodemailer from "nodemailer"
 
-const verifyRecaptcha = async (recaptchaResponse: string) => {
-  const secret = process.env.RECAPTCHA_SECRET_KEY
-  const response = await axios.post("https://www.google.com/recaptcha/api/siteverify", null, {
-    params: {
-      secret,
-      response: recaptchaResponse,
-    },
-  })
+const SCORE_THRESHOLD = 0.3
 
-  if (!response.data.success) {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const verifyRecaptcha = async (token: string) => {
+  const apiKey = process.env.RECAPTCHA_API_KEY
+  const projectID = process.env.RECAPTCHA_PROJECT_ID
+  const keyId = process.env.NEXT_PUBLIC_RECAPTCHA_KEY_ID
+
+  const response = await axios.post(
+    `https://recaptchaenterprise.googleapis.com/v1/projects/${projectID}/assessments?key=${apiKey}`,
+    {
+      event: {
+        token,
+        expectedAction: "send_email",
+        siteKey: keyId,
+      },
+    },
+  )
+
+  const isTokenValid = response.data.tokenProperties?.valid
+  const riskScore = response.data.riskAnalysis?.score ?? 0
+
+  if (!isTokenValid || riskScore < SCORE_THRESHOLD) {
     throw new Error(`Captcha validation failed: ${JSON.stringify(response.data)}`)
   }
 }
@@ -39,11 +52,14 @@ const sendEmail = async (name: string, email: string, message: string) => {
 
 export async function POST(req: Request) {
   const body = req.json != null ? await req.json() : req.body
-  const { recaptchaResponse, name, email, message } = body
-  console.log("Sending email", { recaptchaResponse, name, email, message })
+  const { token, name, email, message } = body
+  console.log("Sending email", { token, name, email, message })
 
   try {
-    await verifyRecaptcha(recaptchaResponse)
+    // AM 31/3/2025 - Disable recaptcha verification, due to time out errors on the client side
+    // See https://docs.google.com/document/d/1x5BU3Ss8N7pDZA4cbKsNRZwIgd-6g7SgTbWEJ62p-eY/edit?tab=t.0
+    //await verifyRecaptcha(token)
+
     await sendEmail(name, email, message)
   } catch (error: any) {
     console.error(error)

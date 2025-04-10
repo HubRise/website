@@ -18,7 +18,7 @@ Pour plus d'informations, consultez les pages d'aide de ces plateformes sur notr
 
 Popina utilise le code ref de type de service pour identifier la plateforme à l'origine d'une commande.
 
-Popina reconnaît les codes suivants : `UBEREATS`, `DELIVEROO` et `JUSTEAT`. Vous pouvez ajouter un texte libre après le code ref, pour identifier une marque virtuelle. Par exemple, `UBEREATS-PizzaTime`.
+Popina reconnaît les codes suivants : `UBEREATS`, `DELIVEROO` et `JUSTEAT`. Vous pouvez ajouter un texte libre après le code ref, pour identifier une marque virtuelle. Par exemple, `UBEREATS-Pizza30`. Pour plus d'informations sur les types de service, consultez [Types de service](/apps/popina/receive-orders#service-types).
 
 ## Deliveroo
 
@@ -114,6 +114,5 @@ Dans la page de configuration de Uber Eats Bridge, utilisez les paramètres suiv
 | Paiements           | Code ref paiement en ligne                   | Créer un mode de paiement dans Popina et utiliser son code ref.        |
 | Paiements           | Code ref paiement en espèces                 | (laisser vide)                                                         |
 | Clients             | Dupliquer le code d'accès téléphone [...]    | Laisser la case décochée                                               |
-| Catalogue           | Activer les notes de préparation [...]       | Cocher si vous souhaitez les activer                                   |
 
 (\*) Applicable uniquement si vous proposez des jetables, tels que des couverts, serviettes, etc.

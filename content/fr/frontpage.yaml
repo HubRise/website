@@ -42,7 +42,7 @@ content:
     title: Tarification juste pour le commerçant
     description: |
       Pas de frais d'installation. Pas d'engagement. Pas de contrat.
-      Nombre de connexions illimité. 25€ HT par mois.
+      Nombre de connexions illimité. 35€ HT par mois.
     button_label: Démarrer l'essai gratuit
     button_url: https://manager.hubrise.com/signup
     link_label: Page Tarifs
@@ -56,14 +56,14 @@ content:
     team_members:
       - name: Alberto
         filename: alberto.jpg
-      - name: Alex
-        filename: alex.jpg
       - name: Antoine
         filename: antoine.jpg
-      - name: Dan
-        filename: dan.jpg
       - name: Dimitri
         filename: dimitri.jpg
+      - name: Félix L.
+        filename: felix_l.jpg
+      - name: Janaina
+        filename: janaina.jpg
       - name: Nick
         filename: nick.jpg
       - name: Vova

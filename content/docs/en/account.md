@@ -50,7 +50,7 @@ Finally, enter the correct **Currency** for the market that you operate in.
 
 ---
 
-**IMPORTANT NOTE**: The currency value can only be set when the Account is created, and can not be modified. If the currency for the HubRise Account does not match the currency set on the connected apps, errors may occur. Create a new Account with the correct currency and use that Account to connect your apps instead.
+**IMPORTANT NOTE:** The currency value can only be set when the Account is created, and can not be modified. If the currency for the HubRise Account does not match the currency set on the connected apps, errors may occur. Create a new Account with the correct currency and use that Account to connect your apps instead.
 
 ---
 
@@ -70,6 +70,6 @@ To modify an existing Account, follow these steps:
 
 ---
 
-**IMPORTANT NOTE**: In some countries, providing your Intra-Community VAT number is a legal requirement. HubRise will display a notification to update the VAT number if this information is missing from your Account.
+**IMPORTANT NOTE:** In some countries, providing your Intra-Community VAT number is a legal requirement. HubRise will display a notification to update the VAT number if this information is missing from your Account.
 
 ---

@@ -14,7 +14,7 @@ gallery:
 app_info:
   category: Commande en ligne
   availability: Monde entier
-  price_range: null
+  price_range:
   website: https://woocommerce.com
 ---
 
@@ -32,7 +32,7 @@ La connexion de WooCommerce permet à HubRise de :
 
 - Recevoir les commandes de WooCommerce, dont le statut de commande.
 - Recevoir les informations clients de WooCommerce.
-- Envoyer un catalogue vers WooCommerce.
+- Envoyer un catalogue vers WooCommerce, avec support des variantes.
 - Synchroniser l'inventaire avec WooCommerce.
 
 ## Pourquoi se connecter ?

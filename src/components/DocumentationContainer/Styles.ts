@@ -118,6 +118,7 @@ export const StyledContainer = styled.div`
 
   ul li {
     position: relative;
+    margin-left: 1rem;
     padding-left: 1rem;
 
     &:before {
@@ -130,6 +131,10 @@ export const StyledContainer = styled.div`
       position: absolute;
       top: 0.6rem;
     }
+  }
+
+  li img {
+    margin: 0.5rem 0;
   }
 
   hr {

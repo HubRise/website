@@ -18,7 +18,7 @@ Les champs d'une commande HubRise sont utilisés de la façon suivante dans Kezi
 | `service_type_ref`   | Non utilisé.                                                                                                                               |
 | `expected_time`      | Heure souhaitée de récupération ou de livraison de la commande.                                                                            |
 | `collection_code`    | Référence unique de la commande.                                                                                                           |
-| `item.sku_ref`       | Code de l'article dans le catalogue Kezia II.                                                                                              |
+| `item.sku_ref`       | Code ref de l'article, qui est soit son **code interne** soit son **IDART**.                                                               |
 | `item.product_name`  | Nom donné à l'article si `item.sku_ref` n'est pas reconnu.                                                                                 |
 | `charges`            | Permet de créer l'article _FRAIS DE PORT TTC_ dans le catalogue Kezia II, correspondant au forfait livraison (seul type de frais accepté). |
 | `payment.type`       | Moyen de paiement. S'il est égal à `cash`, la commande est considérée comme non payée. Sinon, elle est considérée comme déjà payée.        |

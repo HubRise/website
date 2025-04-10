@@ -1,7 +1,7 @@
 ---
 title: Dépannage
 path_override: depannage
-position: 8
+position: 9
 layout: documentation
 meta:
   title: Dépannage | WooCommerce | HubRise
@@ -102,7 +102,7 @@ Suivez ces étapes :
    ![Option OAuth1 dans WooCommerce Bridge](./images/013-woocommerce-step-1-advanced.png)
 4. Poursuivez la configuration telle qu'elle est décrite dans [Connexion à HubRise](/apps/woocommerce/connect-hubrise).
 
-Vérifiez si cette modification a permis de résoudre les erreurs 401. Si ce n'est pas le cas, consultez les autres étapes de dépannage ou contactez HubRise sur support\@hubrise.com.
+Vérifiez si cette modification a permis de résoudre les erreurs 401. Si ce n'est pas le cas, consultez les autres étapes de dépannage.
 
 ### URL incorrecte lors de la configuration
 
@@ -131,3 +131,75 @@ Voici comment effectuer la correction :
 1. Réinitialiser la configuration de WooCommerce Bridge. Pour savoir comment faire, voir [Réinitialiser la configuration](/apps/woocommerce/configuration#reset).
 2. Reprenez la configuration du bridge depuis le début. À la première étape, saisissez l'URL de votre boutique WooCommerce, en veillant à ce qu'elle corresponde exactement à votre site internet (attention à la présence ou non de `www`).
 3. Poursuivez la configuration telle qu'elle est décrite dans [Connexion à HubRise](/apps/woocommerce/connect-hubrise).
+
+Voici la traduction en français :
+
+## Erreurs 422
+
+Lorsque la synchronisation des commandes WooCommerce avec HubRise échoue, vous pouvez rencontrer une erreur 422 avec le corps de réponse suivant :
+
+```json
+{
+  "message": "Validation failed",
+  "errors": [
+    {
+      "field": "/private_ref",
+      "message": "is already used ('21824' given)"
+    }
+  ],
+  "error_type": "unprocessable_entity"
+}
+```
+
+Cette erreur indique que l'ID de commande (`private_ref`) envoyé est déjà utilisé. Cela se produit généralement après une restauration de base de données dans WooCommerce, qui réinitialise la valeur d'auto-incrémentation de la table `wp_posts`, provoquant des ID en double pour les nouvelles commandes.
+
+Suivez ces étapes pour résoudre le problème.
+
+### Étape 1 : Accéder à votre base de données
+
+Vous devez avoir accès à votre base de données MySQL WooCommerce. Si vous n'avez pas **phpMyAdmin** ou un autre outil de base de données, vous pouvez utiliser une extension WordPress simple :
+
+- Installez l'extension [Run SQL Query](https://wordpress.com/plugins/run-sql-query).
+
+### Étape 2 : Ouvrir l'outil "Run SQL Query"
+
+1. Dans votre panneau d'administration WordPress, allez dans **Outils** > **Run SQL Query**.
+2. Cet outil vous permet d'exécuter des commandes SQL directement depuis votre tableau de bord WordPress.
+
+L'interface devrait ressembler à ceci :
+
+![Interface Run SQL Query](../images/run_sql_query.png)
+
+### Étape 3 : Identifier la table `wp_posts`
+
+Votre table des articles peut avoir un préfixe personnalisé. Recherchez une table se terminant par `_posts`. Par exemple, dans la capture d'écran ci-dessus, la table s'appelle `mod488_posts`.
+
+### Étape 4 : Trouver l'ID le plus élevé dans la table
+
+Exécutez la requête SQL suivante pour trouver l'ID le plus élevé actuellement utilisé dans la table `wp_posts`. Remplacez `mod488_posts` par le nom réel de votre table :
+
+```sql
+SELECT id FROM mod488_posts ORDER BY id DESC LIMIT 1;
+```
+
+Cela retournera l'ID le plus élevé actuellement utilisé.
+
+### Étape 5 : Mettre à jour la valeur d'auto-incrémentation
+
+Ajoutez 1 à l'ID le plus élevé et définissez la valeur `AUTO_INCREMENT` en conséquence. Par exemple, si l'ID le plus élevé est **22060**, définissez la valeur d'auto-incrémentation à **22061**.
+
+Exécutez la commande SQL suivante, en remplaçant `mod488_posts` et `22061` par le nom réel de votre table et la nouvelle valeur d'auto-incrémentation :
+
+```sql
+ALTER TABLE `mod488_posts` AUTO_INCREMENT = 22061;
+```
+
+### Étape 6 : Passer une commande test
+
+Créez une nouvelle commande test dans WooCommerce et vérifiez qu'elle se synchronise correctement avec HubRise.
+
+Si l'erreur 422 n'apparaît plus, le problème est résolu !
+
+## Besoin d'aide supplémentaire ?
+
+Si vous rencontrez toujours des problèmes après avoir suivi ces étapes, n'hésitez pas à contacter support@hubrise.com pour obtenir de l'aide.

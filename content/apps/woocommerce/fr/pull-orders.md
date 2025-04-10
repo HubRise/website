@@ -1,7 +1,7 @@
 ---
 title: Récupérer des commandes
 path_override: recuperer-commandes
-position: 7
+position: 8
 layout: documentation
 meta:
   title: Récupérer des commandes | WooCommerce | HubRise
@@ -81,7 +81,7 @@ WooCommerce prend en charge quatre types de paiements dans une commande :
 
 ---
 
-**REMARQUE IMPORTANTE** : Les codes ref de paiement seront bientôt personnalisables depuis la page de configuration. Pour plus d'informations, contactez HubRise sur support\@hubrise.com.
+**REMARQUE IMPORTANTE :** Les codes ref de paiement seront bientôt personnalisables depuis la page de configuration. Pour plus d'informations, contactez HubRise sur support@hubrise.com.
 
 ---
 
@@ -91,9 +91,12 @@ Les remises WooCommerce sont envoyées à HubRise, si elles sont présentes dans
 
 ## Frais
 
-WooCommerce ne prend en charge que les frais de livraison, qui sont envoyés à HubRise s'ils figurent dans une commande.
+WooCommerce prend en charge deux types de frais :
 
----
+- Frais d'expédition.
+- Frais additionnels.
+
+Les deux types sont envoyés à HubRise, lorsqu'ils sont présents dans une commande.
 
 ## Références techniques
 
@@ -130,7 +133,7 @@ Un produit peut avoir au maximum une option rattachée.
 
 <details>
 
-Voici un exemple de requête contenant un article unique avec une option.
+<summary>Exemple de JSON pour un article unique avec une option</summary>
 
 ```json
 "items": [
@@ -168,19 +171,17 @@ WooCommerce Bridge encode toutes les données clients à partir de WooCommerce, 
 - `phone` : numéro de téléphone du client
 - `delivery_notes` : notes de livraison que le client laisse au moment du paiement
 
-### Frais de livraison
+### Frais
 
-Des frais de livraison s'appliquent aux commandes livrées par le restaurant.
+Les frais comprennent les frais d'expédition et les frais additionnels. Les champs envoyés sont les suivants :
 
-Les champs disponibles dans les requêtes sont les suivants :
-
-- `name` : intitulé des frais de livraison, par défaut `Delivery charge` (Frais de livraison)
-- `ref` : code ref des frais. La valeur par défaut peut être définie dans la page de configuration de WooCommerce Bridge. Elle doit correspondre à la valeur définie dans votre logiciel de caisse.
-- `price` : montant total des frais de livraison
+- `name` : intitulé des frais. Pour les frais d'expédition, il s'agit de `Frais de livraison`.
+- `ref` : Pour les frais d'expédition, le code ref défini dans la configuration WooCommerce Bridge. Pour les frais additionnels, ce champ est `null`.
+- `price` : montant des frais.
 
 <details>
 
-Voici un exemple de requête pour les frais.
+<summary>Exemple de JSON pour les frais</summary>
 
 ```json
 "charges": [
@@ -194,16 +195,16 @@ Voici un exemple de requête pour les frais.
 
 </details>
 
-## Remises
+### Remises
 
 La remise appliquée à la commande est transmise dans un objet unique dans le tableau `discounts` de HubRise.
 
-Les champs disponibles dans la requête sont les suivants :
+Les champs envoyés sont les suivants :
 
 - `name` : nom de la remise
 - `price_off` : montant total de la remise
 
-## Champs personnalisés
+### Champs personnalisés
 
 L'objet `custom_fields` est utilisé par WooCommerce Bridge pour stocker les métadonnées que WooCommerce envoie dans la commande. Ces informations ne sont pas fournies par défaut par l'API WooCommerce, mais le format réel dépend des plugins installés et de la personnalisation du code effectuée sur le site internet.
 

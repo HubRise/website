@@ -24,7 +24,7 @@ Les points de vente sont affichés avec :
 
 ---
 
-**REMARQUE IMPORTANTE** : pour connaître la convention de dénomination recommandée pour les points de vente, voir la rubrique [Créer un point de vente](/docs/locations#add-location).
+**REMARQUE IMPORTANTE** : pour connaître la convention de nommage recommandée pour les points de vente, voir la rubrique [Créer un point de vente](/docs/locations#add-location).
 
 ---
 
@@ -33,12 +33,12 @@ Les points de vente sont affichés avec :
 Pour afficher les détails du point de vente, procédez comme suit :
 
 1. Rendez-vous dans **CONFIGURATION**.
-1. Si vous avez accès à plusieurs comptes, sélectionnez le compte associé au point de vente.
-1. Dans la liste déroulante **Point de vente**, cliquez sur le nom du point de vente.
+2. Si vous avez accès à plusieurs comptes, sélectionnez le compte associé au point de vente.
+3. Dans la liste déroulante **Point de vente**, cliquez sur le nom du point de vente.
 
 Les points de vente sont gérés de la même manière que les comptes, mais les informations sont spécifiques au point de vente sélectionné.
 
-Des configurations différentes pour des points de vente spécifiques vous permettent de paramétrer des [modes de paiement distincts suivant le point de vente](/docs/payment#account-or-location-payments), des [permissions](/docs/permissions) différentes pour chaque utilisateur, et ainsi de suite. Pour plus d'informations, voir la rubrique [Comptes](/docs/account).
+Des configurations différentes pour des points de vente spécifiques vous permettent de paramétrer des [modes de paiement distincts suivant le point de vente](/docs/payment#account-or-location-payments), des [permissions](/docs/permissions) différentes pour chaque utilisateur, et ainsi de suite. Pour plus d'informations, voir la rubrique [Comptes](/docs/account/).
 
 Dans le cas où vous exercez votre activité dans un pays où l'inclusion du numéro de TVA intracommunautaire constitution une obligation légale, HubRise affichera une notification pour vous inviter à mettre à jour le numéro de TVA si cette information n'apparaît pas dans votre compte.
 
@@ -48,17 +48,17 @@ Dans le cas où vous exercez votre activité dans un pays où l'inclusion du num
 
 ---
 
-## Créer un point de vente {#add-location}
+## Ajouter un point de vente {#add-location}
 
 Le premier point de vente est créé en même temps que le compte. Pour plus d'informations, voir la rubrique [Créer un compte](/docs/account#create-account).
 
 Pour ajouter un nouveau point de vente à un compte existant, procédez comme suit :
 
 1. Cliquez sur **CONFIGURATION**.
-1. Si vous avez accès à plusieurs comptes, sélectionnez le compte auquel vous devez ajouter un point de vente.
-1. Dans la section **Compte**, cliquez sur **Ajouter un point de vente**.
-1. Saisissez les informations requises.
-1. Cliquez sur **Créer** pour sauvegarder le nouveau point de vente.
+2. Si vous avez accès à plusieurs comptes, sélectionnez le compte auquel vous devez ajouter un point de vente.
+3. Dans la section **Compte**, cliquez sur **Ajouter un point de vente**.
+4. Saisissez les informations requises.
+5. Cliquez sur **Créer** pour sauvegarder le nouveau point de vente.
 
 Il est recommandé de nommer le point de vente d'après la ville, le quartier ou la rue où il se trouve. À titre d'exemple, si vous exploitez un seul point de vente à Paris, vous pouvez le nommer `Paris`. Si vous exploitez plusieurs points de vente à Paris, vous pouvez nommer ceux-ci d'après leur adresse, par exemple `Montmartre`, `Montparnasse` et `Le Marais`.
 
@@ -67,10 +67,10 @@ Il est recommandé de nommer le point de vente d'après la ville, le quartier ou
 Pour mettre à jour le nom et l'adresse d'un point de vente, procédez comme suit :
 
 1. Cliquez sur **CONFIGURATION**.
-1. Si vous avez accès à plusieurs comptes, sélectionnez le compte auquel le point de vente sera ajouté.
-1. Sélectionnez le point de vente à mettre à jour.
-1. Dans la section **Point de vente**, cliquez sur **Modifier**.
-1. Mettez les valeurs à jour suivant les besoins.
-1. Si ce point de vente dispose d'un numéro de TVA distinct de celui du compte, indiquez-le dans le champ **Numéro de TVA intracommunautaire** prévu à cet effet.
-1. Si l'adresse de facturation est différente de celle du point de vente, cochez la case **L'adresse de facturation est différente de celle du point de vente** et remplissez le formulaire.
-1. Cliquez sur **Mettre à jour** pour enregistrer la configuration.
+2. Si vous avez accès à plusieurs comptes, sélectionnez le compte auquel le point de vente sera ajouté.
+3. Sélectionnez le point de vente à mettre à jour.
+4. Dans la section **Point de vente**, cliquez sur **Modifier**.
+5. Mettez les valeurs à jour suivant les besoins.
+6. Si ce point de vente dispose d'un numéro de TVA distinct de celui du compte, indiquez-le dans le champ **Numéro de TVA intracommunautaire** prévu à cet effet.
+7. Si l'adresse de facturation est différente de celle du point de vente, cochez la case **L'adresse de facturation est différente de celle du point de vente** et remplissez le formulaire.
+8. Cliquez sur **Mettre à jour** pour enregistrer la configuration.

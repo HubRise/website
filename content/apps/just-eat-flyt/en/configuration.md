@@ -31,6 +31,10 @@ Service types such as platform delivery, restaurant delivery or takeaway might r
 
 Additionally, from this section, you can choose to categorise orders fulfilled by Just Eat as either delivery or collection orders. Orders fulfilled by the restaurant fleet are always marked as delivery orders. This feature is useful to address specific business requirements or to differentiate these orders in financial reports.
 
+### Special Items
+
+Some markets such as Ireland require deposits on certain items. If your business requires this, you can specify the ref code for the deposit item in this section. The deposit item must first be created as an option in your EPOS. Once configured, it will be automatically added to any items that require a deposit.
+
 ### Discounts
 
 In this section, include the ref code associated with Just Eat discounts on your EPOS.
@@ -71,6 +75,23 @@ All EPOS systems integrated with HubRise can read delivery notes. If your EPOS h
 Catalog variants give you the flexibility to disable specific items or adjust prices for Just Eat.
 
 If your catalog includes variants, you have the option to select which ones to use. You can select different variants for the delivery and collection menus, or use the same variant for both. When **(none)** is selected, all items along with their standard prices are sent to Just Eat.
+
+### Special Menus
+
+Special menus allow you to schedule different catalog variants for specific days and times. This feature is useful for offering separate breakfast or lunch menus, for example.
+
+To configure special menus:
+
+1. Ensure your catalog contains the necessary variants.
+2. Select the number of special menus you want to set up (up to 5) from the dropdown menu.
+3. For each special menu:
+    - Select the days of the week when this menu should be active.
+    - Set the start time (**From**) and end time (**to**) for the menu.
+    - Choose the delivery and collection catalog variants to use during this time period.
+
+When special menus are configured, Just Eat will automatically switch to the appropriate catalog variant based on the order expected time and whether it's for delivery or collection.
+
+If there is no special menu active at a particular time, Just Eat will use the default catalog variants specified in the **Catalog variant to push** settings for delivery and collection.
 
 ### Service Types
 

@@ -90,7 +90,7 @@ Deliveroo Bridge maps HubRise deals to products with modifiers on Deliveroo.
 
 ### Images
 
-Deliveroo requires images to be 1200x800 pixels.
+Deliveroo requires images to be 1920x1080 pixels.
 
 ## Technical Reference
 
@@ -116,6 +116,7 @@ Products have one or several skus. For every product with multiple skus, Deliver
 - `price`: The minimum price of all skus
 - `tags`: Tags describing the characteristics and restrictions of the product, such as allergens or spiciness. See [Product Tags](#product-tags).
 - `image`: The URL of the image of the parent product
+- `barcodes`: The barcodes of the sku. There can be multiple barcodes for a single sku.
 
 The list of skus is attached to the product as an array of modifiers.
 
@@ -132,24 +133,25 @@ For more information about skus in the HubRise catalog, see [Skus](/developers/a
 
 The table below lists the tags that can be set on products.
 
-| Tag                                  | Description                            |
-| ------------------------------------ | -------------------------------------- |
-| `alcoholic`                          | Contains alcohol.                      |
-| `deal_only`                          | Can only be ordered as part of a deal. |
-| `allergen_celery`                    | Contains this allergen.                |
-| `allergen_crustaceans`               | Contains this allergen.                |
-| `allergen_eggs`                      | Contains this allergen.                |
-| `allergen_fish`                      | Contains this allergen.                |
-| `allergen_gluten`                    | Contains this allergen.                |
-| `allergen_lupin`                     | Contains this allergen.                |
-| `allergen_milk`                      | Contains this allergen.                |
-| `allergen_molluscs`                  | Contains this allergen.                |
-| `allergen_mustard`                   | Contains this allergen.                |
-| `allergen_nuts`                      | Contains this allergen.                |
-| `allergen_peanuts`                   | Contains this allergen.                |
-| `allergen_sesame_seeds`              | Contains this allergen.                |
-| `allergen_soybeans`                  | Contains this allergen.                |
-| `allergen_sulphur_dioxide_sulphites` | Contains this allergen.                |
+| Tag                                  | Description                                     |
+| ------------------------------------ | ----------------------------------------------- |
+| `alcoholic`                          | Contains alcohol.                               |
+| `deal_only`                          | Can only be ordered as part of a deal.          |
+| `allergen_celery`                    | Contains this allergen.                         |
+| `allergen_crustaceans`               | Contains this allergen.                         |
+| `allergen_eggs`                      | Contains this allergen.                         |
+| `allergen_fish`                      | Contains this allergen.                         |
+| `allergen_gluten`                    | Contains this allergen.                         |
+| `allergen_lupin`                     | Contains this allergen.                         |
+| `allergen_milk`                      | Contains this allergen.                         |
+| `allergen_molluscs`                  | Contains this allergen.                         |
+| `allergen_mustard`                   | Contains this allergen.                         |
+| `allergen_nuts`                      | Contains this allergen.                         |
+| `allergen_peanuts`                   | Contains this allergen.                         |
+| `allergen_sesame_seeds`              | Contains this allergen.                         |
+| `allergen_soybeans`                  | Contains this allergen.                         |
+| `allergen_sulphur_dioxide_sulphites` | Contains this allergen.                         |
+| `deposit_cc`                         | Requires a deposit. `cc` is an amount in cents. |
 
 If a product does not contain any allergens, Deliveroo Bridge automatically adds the `no_allergens` tag.
 

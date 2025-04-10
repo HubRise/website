@@ -19,7 +19,7 @@ Each row in the page shows the following information about an operation:
 
 - **TIME**: The date and time of the order.
 - **ORDER**: The HubRise order ID, for order operations.
-- **DESCRIPTION**: An optional description for operations that are not related to a specific order. It could be empty, or inform of a `System request` or a `Catalog push`.
+- **DESCRIPTION**: An optional description for operations that are not related to a specific order. It could be empty, or inform of a specific action such as `System request` or `Catalog push`.
 - **STATUS**: The status of the order. The value `OK` indicates that the order has been successfully sent, otherwise an error code will be displayed in red.
 
 The **System request** label indicates that the operation is not related to a specific order.

@@ -8,7 +8,7 @@ export const Menu = styled.div`
   position: relative;
 `
 
-export const MenuTitle = styled.h5`
+export const MenuTitle = styled.div`
   position: relative;
   padding: 1rem ${sizes.mobilePadding};
   color: ${colors.textLight};
@@ -81,6 +81,7 @@ export const ItemLink = styled(Link)<{ $isActive: boolean }>`
   @media (min-width: ${breakpoints.blogStickyMenu}) {
     padding: 0.5rem ${sizes.desktopPadding};
   }
+  ${mixin.clickable};
 
   color: ${({ $isActive }) => ($isActive ? colors.primary : colors.textDark)};
   ${mixin.linkOver(colors.primary)};

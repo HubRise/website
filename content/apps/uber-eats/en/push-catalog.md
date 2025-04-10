@@ -58,9 +58,11 @@ The following sections provide more details on how your HubRise catalog is mappe
 
 ### Categories
 
-Uber Eats Bridge maps HubRise categories one-to-one to categories of products on Uber Eats.
+Uber Eats Bridge maps HubRise categories to Uber Eats categories. The category name, ref code, and description are sent to Uber Eats. By default, categories are flattened.
 
-The category name, ref code, and description are sent to Uber Eats.
+For retail stores, two-level mode can be enabled. In this mode, top-level categories are sent as menus, with their subcategories listed within each menu. In Uber Eats, menus appear as main categories, similar to supermarket aisles (e.g., Drinks → Sodas, Beers).
+
+Two-level mode is only available for retail stores. It must be enabled by Uber Eats support and activated in the [Configuration Page](/apps/uber-eats/configuration#category-structure).
 
 ### Products and Skus
 
@@ -87,7 +89,7 @@ Uber Eats Bridge maps HubRise deals to products with modifiers on Uber Eats.
 
 ### Images
 
-Uber Eats requires images to be 320x320 pixels.
+Menu item images on Uber Eats must have dimensions between 320x320 pixels and 6000x6000 pixels.
 
 ## Technical Reference
 
@@ -113,6 +115,7 @@ For every [product](/developers/api/catalogs#products) with multiple skus, Uber 
 - `price`: The minimum price of all skus.
 - `image`: The URL of the image of the parent product.
 - `tags`: Tags describing the characteristics and restrictions of the product, such as allergens or spiciness. For the list of available tags on Uber Eats, see [Product Tags](#product-tags).
+- `barcodes`: Only the first barcode is sent, if present.
 
 The list of skus is attached to the product as an array of modifiers.
 
@@ -129,27 +132,28 @@ For more information about skus in the HubRise catalog, see [Skus](/developers/a
 
 The table below lists the tags that can be set on products.
 
-| Tag                                  | Description                            |
-| ------------------------------------ | -------------------------------------- |
-| `alcoholic`                          | Contains alcohol.                      |
-| `deal_only`                          | Can only be ordered as part of a deal. |
-| `gluten_free`                        | Contains no gluten.                    |
-| `vegan`                              | Contains no animal product.            |
-| `vegetarian`                         | Contains no meat.                      |
-| `allergen_celery`                    | Contains this allergen.                |
-| `allergen_crustaceans`               | Contains this allergen.                |
-| `allergen_eggs`                      | Contains this allergen.                |
-| `allergen_fish`                      | Contains this allergen.                |
-| `allergen_gluten`                    | Contains this allergen.                |
-| `allergen_lupin`                     | Contains this allergen.                |
-| `allergen_milk`                      | Contains this allergen.                |
-| `allergen_molluscs`                  | Contains this allergen.                |
-| `allergen_mustard`                   | Contains this allergen.                |
-| `allergen_nuts`                      | Contains this allergen.                |
-| `allergen_peanuts`                   | Contains this allergen.                |
-| `allergen_sesame_seeds`              | Contains this allergen.                |
-| `allergen_soybeans`                  | Contains this allergen.                |
-| `allergen_sulphur_dioxide_sulphites` | Contains this allergen.                |
+| Tag                                  | Description                                     |
+| ------------------------------------ | ----------------------------------------------- |
+| `alcoholic`                          | Contains alcohol.                               |
+| `deal_only`                          | Can only be ordered as part of a deal.          |
+| `gluten_free`                        | Contains no gluten.                             |
+| `vegan`                              | Contains no animal product.                     |
+| `vegetarian`                         | Contains no meat.                               |
+| `allergen_celery`                    | Contains this allergen.                         |
+| `allergen_crustaceans`               | Contains this allergen.                         |
+| `allergen_eggs`                      | Contains this allergen.                         |
+| `allergen_fish`                      | Contains this allergen.                         |
+| `allergen_gluten`                    | Contains this allergen.                         |
+| `allergen_lupin`                     | Contains this allergen.                         |
+| `allergen_milk`                      | Contains this allergen.                         |
+| `allergen_molluscs`                  | Contains this allergen.                         |
+| `allergen_mustard`                   | Contains this allergen.                         |
+| `allergen_nuts`                      | Contains this allergen.                         |
+| `allergen_peanuts`                   | Contains this allergen.                         |
+| `allergen_sesame_seeds`              | Contains this allergen.                         |
+| `allergen_soybeans`                  | Contains this allergen.                         |
+| `allergen_sulphur_dioxide_sulphites` | Contains this allergen.                         |
+| `deposit_cc`                         | Requires a deposit. `cc` is an amount in cents. |
 
 ### Options
 

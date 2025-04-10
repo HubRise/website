@@ -2,6 +2,11 @@ import styled from "styled-components"
 
 export const StyledImage = styled.span<{ width?: string; height?: string }>`
   display: inline-block;
-  width: ${(props) => `${props.width}px` || "auto"};
-  height: ${(props) => `${props.height}px` || "auto"};
+  width: ${({ width }) => (width ? `${width}px` : "auto")};
+  height: ${({ height }) => (height ? `${height}px` : "auto")};
+  margin: 0 0.25rem;
+
+  > img {
+    margin: 0 !important;
+  }
 `

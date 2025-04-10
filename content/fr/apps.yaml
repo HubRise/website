@@ -104,6 +104,12 @@ content:
           logo: nestor.png
           title: Nestor
           description: Nestor est un logiciel de caisse conçu pour la livraison à domicile et la vente à emporter.
+        - website: https://www.netfood.cloud
+          documentation: /apps/netfood
+          logo: netfood.png
+          title: NetFood
+          description: NetFood, développé par .Net Informatica, est un logiciel de caisse italien pour la restauration et les débits de boissons. NetFood est proposé avec une solution de commande en ligne et une application mobile, ainsi qu'un kiosque de commande.
+          additional_info:
         - website: https://nextorder.com/fr-fr
           documentation: /fr/apps/next-order
           logo: next-order.png
@@ -128,13 +134,13 @@ content:
         - website: https://www.partech.com/pixel-point-software/
           documentation: /fr/apps/pixelpoint-bridge
           logo: par-pixelpoint-web-api.png
-          title: PixelPoint (web API)
+          title: PAR PixelPoint (web API)
           description: PixelPoint, édité par PAR, intégré via son API web, répond aux besoins de la restauration et du divertissement, avec un focus sur la gestion des coûts, la prévention des pertes et la fidélisation.
           additional_info: Intégration par API web.
         - website: https://www.partech.com/pixel-point-software/
           documentation: /fr/apps/pixelpoint-windows-api
           logo: par-pixelpoint.png
-          title: PixelPoint (Windows API)
+          title: PAR PixelPoint (Windows API)
           description: PixelPoint, édité par PAR, intégré via son API Windows, répond aux besoins de la restauration et du divertissement, avec un focus sur la gestion des coûts, la prévention des pertes et la fidélisation.
           additional_info: Intégration par API Windows, réalisée par Slowey Systems.
         - website: https://www.pointone-epos.co.uk/
@@ -154,6 +160,12 @@ content:
           logo: pos-helper.png
           title: POS HELPER
           description: POS HELPER est un logiciel de caisse pour les restaurants, qui inclut des fonctionnalités de production, de gestion, de pilotage et de facturation. POS HELPER propose aussi un écran cuisine, une borne de commande et un système de commande en ligne.
+          additional_info:
+        - website: https://www.cunninghams.co.uk
+          documentation: /fr/apps/quantum
+          logo: quantum.png
+          title: Quantum by Cunninghams EPOS Group
+          description: Quantum, développé par Cunninghams EPOS Group, propose un logiciel de caisse pour divers secteurs, offrant la gestion des ventes, le contrôle des stocks, la fidélisation, une solution de eCommerce et des rapports en temps réel.
           additional_info:
         - website: https://www.rmpos.com/
           documentation: /fr/apps/restaurant-manager
@@ -196,6 +208,11 @@ content:
           title: TASK
           description: TASK est un logiciel de caisse conçu pour les acteurs internationaux de l'hôtellerie et de la restauration. Il propose des rapports en temps réel avec fonctionnalités de Business Intelligence, la gestion des stocks, ainsi que des solutions de commande via kiosques, plateformes en ligne et applications mobiles. TASK est particulièrement adapté pour la gestion de la relation client, de la fidélisation et des promotions.
           additional_info:
+        - website: https://tickeat.io
+          documentation: /fr/apps/tickeat
+          logo: tickeat.png
+          title: Tick'Eat
+          description: Tick'Eat est une caisse enregistreuse multiplateforme conçue par et pour des restaurateurs. Elle permet la gestion des commandes sur place et en ligne, y compris les commandes des plateformes de livraison de repas, et permet une mise à jour facile des menus. Elle inclut également une fonction de dispatching pour les livreurs.
         - website: https://www.ultimapos.fr/
           documentation: /fr/apps/ultimapos
           logo: ultimapos.png
@@ -282,7 +299,7 @@ content:
         - website: https://www.justeattakeaway.com/
           documentation: /fr/apps/just-eat-takeaway
           logo: takeaway.png
-          title: Takeaway.com
+          title: Just Eat Takeaway
           description: Takeaway.com est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Disponible en Belgique, au Luxembourg, au Portugal, en Roumanie, et en Bulgarie.
           additional_info:
         - website: https://www.talabat.com
@@ -301,7 +318,7 @@ content:
           documentation: /fr/apps/uber-eats
           logo: ubereats.png
           title: Uber Eats
-          description: Uber Eats est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Disponible dans 45 pays and 6.000 villes.
+          description: Uber Eats est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une application mobile. Disponible dans 45 pays et 6.000 villes.
           additional_info:
     - title: Commande en ligne
       slug: online-ordering
@@ -318,6 +335,12 @@ content:
           title: AquilaCMS
           description: Aquila CMS est une solution open source, disponible pour l'édition et la création de sites e-commerce. Aquila CMS peut être téléchargé, ou utilisé avec les services de développement et d'hébergement proposés par l'éditeur.
           additional_info:
+        - website: https://chataigne.ai/fr
+          documentation: /fr/apps/chataigne
+          logo: chataigne.png
+          title: Chataîgne
+          description: Châtaigne permet aux restaurants de proposer des services de livraison et de vente à emporter via WhatsApp. Les clients peuvent consulter le menu, passer commande, puis payer de manière sécurisée directement depuis WhatsApp, sans avoir à télécharger d'application ni créer de compte. L’objectif est de simplifier le passage de commandes, en évitant les appels et les frais des plateformes traditionnelles.
+          additional_info:
         - website: https://dishop.co/
           documentation: /fr/apps/dishop
           logo: dishop.png
@@ -329,11 +352,22 @@ content:
           logo: dood.png
           title: DOOD
           description: DOOD est une solution e-commerce et e-marketing destinés au food retail. Adaptée aux indépendants comme aux chaînes, la solution de commande en ligne en marque blanche de DOOD permet le click & collect, la livraison, et le service à table. DOOD inclut une suite d'outils marketing pour développer la fidélisation client.
+        - website: https://eddress.co
+          documentation: /fr/apps/eddress
+          logo: eddress.png
+          title: eddress
+          description: eddress est une solution de commande en ligne pour les restaurants et les épiceries, avec gestion de livreurs intégrée. Elle convient aux enseignes de toute taille, indépendantes ou franchisées. Disponible en 20 langues et déployée dans plus de 17 pays.
         - website: https://www.gonnaorder.com/?lang=fr
           documentation: /fr/apps/gonnaorder
           logo: gonnaorder.png
           title: GonnaOrder
           description: GonnaOrder propose un système de commande en ligne économique, disponible dans 14 pays. Via un site personnalisé et des applications iOS et Android natives, GonnaOrder permet de commander à emporter, en livraison ou à table dans des restaurants, bars, pubs et cafés.
+          additional_info:
+        - website: https://kurvekiosks.com
+          documentation: /fr/apps/kurvekiosks
+          logo: kurvekiosks.png
+          title: Kurve Kiosks
+          description: Kurve Kiosks conçoit et développe des kiosques de commande pour les restaurants et les hôtels. La plateforme est personnalisable, riche en fonctionnalités et fiable, facilitant ainsi la transition vers la technologie de libre-service.
           additional_info:
         - website: https://latoquemagique.com/
           documentation: /fr/apps/la-toque-magique
@@ -368,7 +402,7 @@ content:
           documentation: /fr/apps/obypay
           logo: obypay.png
           title: Obypay
-          description: Obypay est une solution de commande en ligne et de commande à table pour les restaurants avec une conciergierie digitale pour les hotels.
+          description: Obypay propose une solution de commande en ligne et à table pour les restaurants, une conciergerie digitale pour les hôtels, et des bornes de commande pour la restauration.
         - website: https://www.prestashop.com/fr
           documentation: /fr/apps/prestashop
           logo: prestashop.png
@@ -381,11 +415,23 @@ content:
           title: RestaJet
           description: RestaJet propose une application mobile pour les réservations et un site de commande en ligne pour les restaurants. Des outils de gestion de contenu et de marketing sont disponibles sur la console RestaJet.
           additional_info:
+        - website: https://www.restaur-app.fr/
+          documentation: /fr/apps/restaur-app
+          logo: restaur-app.png
+          title: Restaur'App
+          description: Restaur'App permet aux restaurateurs de disposer de leur propre site web et application mobile pour présenter leur établissement et gérer les commandes en ligne, ainsi que les livraisons, sans commission sur les ventes. Restaur'App est une solution dédiée à la restauration rapide et à la vente à emporter.
+          additional_info:
         - website: https://restaurant-internet.com
           documentation: /fr/apps/restaurant-internet
           logo: restaurant-internet.png
           title: Restaurant-internet
           description: Restaurant-internet propose un site vitrine avec réservation de table et solution de commande en ligne. La solution couvre en particulier les besoins de la livraison à domicile et la vente à emporter.
+          additional_info:
+        - website: https://servier.bar
+          documentation: /fr/apps/servier-bar
+          logo: servier-bar.png
+          title: servier.bar
+          description: Servier.bar propose des solutions de commande conçues pour les restaurants et les hôtels. Ces solutions permettent aux clients de commander et de payer directement depuis leurs smartphones via une application web, pour améliorer le service sans embaucher de personnel supplémentaire.
           additional_info:
         - website: https://www.shopify.com/
           documentation: /fr/apps/shopify
@@ -415,6 +461,12 @@ content:
           logo: superdigital.png
           title: SuperDigital.fr
           description: SuperDigital.fr est une solution complète permettant aux restaurateurs de créer un site de commande en ligne en marque blanche. Les restaurateurs peuvent personnaliser leur site de manière autonome depuis le back-office.
+        - website: https://tablati.ma
+          documentation: /fr/apps/tablati
+          logo: tablati.png
+          title: Tablati
+          description: Tablati est une solution de commande et de paiement à table via QR code depuis un smartphone. Elle inclut des fonctionnalités comme la gestion des pourboires, la collecte d’avis Google et un programme de fidélité.
+          additional_info: Intégration en cours.
         - website: https://www.tastycloud.fr
           documentation: /fr/apps/tastycloud
           logo: tastycloud.png
@@ -442,12 +494,18 @@ content:
     - title: Gestion de livreurs
       slug: delivery-management
       apps:
+        - website: https://biteberry.com
+          documentation: /fr/apps/biteberry
+          logo: biteberry.png
+          title: BiteBerry
+          description: Le système de gestion des livraisons de BiteBerry rationalise l'ensemble du processus de livraison pour les restaurants et leurs livreurs. Des fonctionnalités telles que le suivi en temps réel, l'optimisation des trajets et la gestion des commandes, garantissent des opérations efficaces et des livraisons à temps.
+          additional_info:
         - website: http://www.captain.ai
           documentation: /fr/apps/captain
           logo: captain.png
           title: Captain
-          description: Captain est une solution de traitement des commandes et de tracking des livreurs.
-          additional_info: Intégration en cours.
+          description: Captain permet aux restaurateurs de gérer la livraison des commandes et aux clients de les suivre en temps réel. Un écran d'affichage en cuisine prioritise la séquence de cuisson. Un module complémentaires permet l'utilisation de services de livraison tiers.
+          additional_info:
         - website: https://coursicab.com
           documentation: /fr/apps/coursicab
           logo: coursicab.png
@@ -482,6 +540,12 @@ content:
           logo: stuart.png
           title: Stuart
           description: Stuart propose aux commerces de toutes tailles et de tous secteurs, des services de livraison rapide sur demande avec une méthode de transport personnalisée. Disponible dans 4 pays et 100 villes.
+          additional_info:
+        - website: https://trapar.co.uk
+          documentation: /fr/apps/trapar
+          logo: trapar.png
+          title: Trapar
+          description: Trapar facilite la livraison du dernier kilomètre avec suivi en temps réel et l'option d'utiliser ses propres livreurs ou de faire appel à ceux de Trapar.
           additional_info:
     - title: Fidélité et marketing
       slug: loyalty-and-marketing
@@ -557,7 +621,7 @@ content:
           documentation: /fr/apps/koust
           logo: koust.png
           title: Koust
-          description: Koust permet à tout type de restaurant de gérer ses stocks, analyser ses ventes et sa marge brute, optimiser ses achats et construire son menu.
+          description: Koust est un logiciel de gestion destiné aux restaurateurs et hôteliers, permettant de gérer les stocks, analyser les ventes et les marges brutes, optimiser les achats, et ajuster les menus pour améliorer l'offre tout en contrôlant les marges.
         - website: https://malba.io/
           documentation: /fr/apps/melba
           logo: melba.png
@@ -569,11 +633,22 @@ content:
           title: RapidBar
           description: RapidBar simplifie la gestion des inventaires de votre restaurant, hôtel ou bar. RapidBar vous aide à contrôler votre chaîne d'approvisionnement, en centralisant les menus, les inventaires et les commandes fournisseurs dans une seule application cloud.
           additional_info:
+        - website: https://www.sage.com/fr-fr/sage-business-cloud/sage-x3
+          documentation: /fr/apps/sage-x3
+          logo: sage.png
+          title: Sage X3
+          description: Sage X3 est un ERP conçu pour les entreprises de taille moyenne à grande. Il offre des fonctionnalités de gestion financière, contrôle des stocks, planification de la production et approvisionnement, permettant de rationaliser les opérations et d'améliorer la prise de décision.
+          additional_info: Intégration réalisée par Gigavee Technology.
         - website: https://www.somm-it.com/
           documentation: /fr/apps/somm-it
           logo: somm-it.png
           title: SOMM'IT
           description: SOMM'IT vous accompagne dans la gestion de votre carte des vins. Synchronisez votre inventaire avec votre EPOS, et éditez une carte des vins à jour. SOMM'IT inclut une large bibliothèque de vins, et un module de gestion des commandes fournisseurs.
+        - website: https://www.stocktake-online.com
+          documentation: /fr/apps/stocktake-online
+          logo: stocktake-online.png
+          title: StockTake Online
+          description: StockTake Online est un système de gestion d'inventaire conçu pour les restaurants, les bars, les discothèques, et plus encore. Il aide à organiser les opérations en simplifiant les achats, en minimisant les déchets et en améliorant la rentabilité.
     - title: Autres applications
       slug: other-apps
       apps:
@@ -591,8 +666,13 @@ content:
           documentation: /fr/apps/orderline
           logo: orderline.png
           title: OrderLine
-          description: OrderLine centralise les commandes passées depuis un site marchand ou autre plateforme de commande en ligne. Les commandes sont ainsi gérées et imprimés. OrderLine est un logiciel gratuit édité par HubRise.
+          description: OrderLine centralise les commandes passées depuis un site marchand ou autre plateforme de commande en ligne. Les commandes sont ainsi gérées et imprimés. OrderLine est un logiciel gratuit édité par HubRise.
           additional_info:
+        - website: https://www.qwenta.ch
+          documentation: /fr/apps/qwenta
+          logo: qwenta.png
+          title: Qwenta
+          description: Qwenta est une solution de paiement à table par QR code conçue pour les restaurants suisses. Les clients peuvent diviser l'addition, ajouter un pourboire et donner un avis avant de finaliser le paiement.
         - website: https://www.satoeurope.com/fr
           documentation: /fr/apps/sato
           logo: sato.png
@@ -602,7 +682,7 @@ content:
           documentation: /fr/apps/tickncook
           logo: tickncook.png
           title: TicknCook
-          description: TicknCook est un écran cuisine (KDS), qui peut recevoir les commandes depuis tous vos canaux de vente. La solution est personnalisable avec possibilité de mettre en place des écrans spécialisés pour le bar, la cuisine, ou autres ateliers.
+          description: TicknCook est un écran cuisine (KDS), qui peut recevoir les commandes depuis tous vos canaux de vente. La solution est personnalisable avec possibilité de mettre en place des écrans spécialisés pour le bar, la cuisine, ou autres ateliers.
         - website: https://1bot.io
           documentation: /fr/apps/1bot
           logo: 1bot.png

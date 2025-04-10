@@ -209,9 +209,9 @@ To create an account-level catalog:
 
 ### 1.4. Update Catalog
 
-Update a catalog. The request parameters are the same as for the [create catalog](#create-catalog) request.
+Update a catalog. The request parameters are the same as for the [create catalog](#create-catalog) request. If the `data` field is passed, the whole catalog content is cleared and recreated from the passed data.
 
-If the `data` field is passed, the whole catalog content is cleared and recreated from the passed data.
+There is no individual endpoint to update a particular item of the catalog (eg. a SKU or an option). To update a single item, you must use this endpoint and pass the whole catalog content.
 
 <CallSummaryTable endpoint="PUT /catalogs/:id" accessLevel="account" />
 
@@ -494,6 +494,15 @@ A product contains one or several skus. A sku is always attached to a product.
 | `price_overrides`                            | [PriceOverrides](#price-overrides)                        | Price overrides in different contexts, such as a specific service type.                                                 |
 | `option_list_refs` <Label type="optional" /> | string[]                                                  | The refs of the option lists this sku is attached to.                                                                   |
 | `tags` <Label type="optional" />             | string[]                                                  | List of tags.                                                                                                           |
+| `barcodes` <Label type="optional" />         | string[]                                                  | List of barcodes. See [Barcodes](#barcodes) for more information.                                                       |
+
+#### Barcodes {#barcodes}
+
+Each SKU may be associated with multiple barcodes. This is useful for products sourced from different suppliers, each assigning a unique barcode, or for products that carry multiple types of identifiers.
+
+Applications that support only one barcode will typically use the first listed.
+
+Each barcode must be a numeric string comprising exactly 8, 12, or 13 digits. Example formats that meet these requirements include EAN-8, GTIN-12, EAN-13, ISBN-13, ISSN-13.
 
 ##### Example:
 
@@ -512,7 +521,8 @@ A product contains one or several skus. A sku is always attached to a product.
     }
   ],
   "option_list_refs": ["SAUCE", "PIZZA_TOPPINGS"],
-  "tags": ["hidden"]
+  "tags": ["hidden"],
+  "barcodes": ["1234567890123", "1234567890124"]
 }
 ```
 
@@ -1127,13 +1137,22 @@ All conditions must be met simultaneously for a rule to match. When one or sever
 
 Images can be attached to products and deals, via their `image_ids` fields.
 
-Images must be uploaded before catalog data, since the images' `id`s must be passed in the products and deals. The sequence is therefore:
+### Image Management {#image-management}
 
-1. If you are not reusing an existing catalog, create an empty one first: `POST /catalogs`.
-1. Upload all your images: `POST /catalogs/:catalog_id/images`.
-1. Finally, upload the catalog: `PUT /catalogs/:catalog_id`.
+Images must be uploaded before catalog data. The sequence is:
 
-There is no endpoint to delete an image. Images which are not used for 30 days are automatically removed.
+1. If you are not reusing a catalog, create an empty one first: `POST /catalogs`.
+1. Upload all images: `POST /catalogs/:catalog_id/images` and retain their `id`s for the following step.
+1. Upload the catalog: `PUT /catalogs/:catalog_id`, using the image `id`s.
+
+If you are updating an existing catalog, you should only upload new images to reduce the amount of data to be sent. Follow this sequence:
+
+1. Fetch the existing images: `GET /catalogs/:catalog_id/images`. This request returns the `id`s and `md5` hashes of the existing images.
+1. Determine which images are new, either by `id` or by calculating the `md5` hash of each image to upload.
+1. Upload the new images: `POST /catalogs/:catalog_id/images` and retain their `id`s.
+1. Update the catalog: `PUT /catalogs/:catalog_id`, using the existing and new image `id`s.
+
+There is no endpoint to delete an image. Images that are not used for 30 days are automatically removed.
 
 ### 13.1. Create Image
 

@@ -28,8 +28,10 @@ Lightspeed Restaurant Bridge is an app developed by HubRise used to connect Ligh
 
 Connecting Lightspeed Restaurant Bridge to HubRise allows your EPOS to:
 
-- Pull orders from HubRise, including order status.
-- Push paid orders into HubRise, including order status.
+- Pull orders from HubRise.
+- Pull order modifications from HubRise: payments changes only.
+- Push paid orders into HubRise.
+- Push order modifications into HubRise: payments and item changes.
 - Pull customer information from HubRise.
 - Push customer information into HubRise.
 - Push a catalog into HubRise.
@@ -44,4 +46,4 @@ With HubRise, you can synchronise your menu, customer information, and orders be
 
 ## Prerequisites
 
-You need a Lightspeed Restaurant license to complete the connection.
+You need a Lightspeed Restaurant licence to complete the connection.

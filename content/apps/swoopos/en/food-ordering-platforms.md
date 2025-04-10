@@ -80,6 +80,5 @@ In the Uber Eats Bridge configuration page, use the following settings:
 | Payments       | Online payment ref code               | `card`                                                 |
 | Payments       | Cash payment ref code                 | `cash`                                                 |
 | Customers      | Duplicate phone access code in [...]  | Tick this box                                          |
-| Catalog        | Enable customer notes on products     | Tick if you wish to enable them                        |
 
 (\*) Only applies if you offer disposable items, such as cutlery, napkins, etc.

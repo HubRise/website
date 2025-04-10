@@ -27,7 +27,7 @@ Lightspeed Restaurant Bridge fetches new orders every 30 seconds. There can be a
 
 ---
 
-**IMPORTANT NOTE:** Only paid sales are pulled into HubRise.
+**IMPORTANT NOTE:** Only sales that are registered in Lightspeed and paid are pulled into HubRise. Orders placed from third-party apps that are directly connected to the EPOS, and not via HubRise, are not pulled.
 
 ---
 
@@ -43,7 +43,7 @@ Information about the course number is not received in HubRise.
 
 ### Order Statuses
 
-Orders are created in HubRise with the default status `accepted`.
+If the bridge is configured to mark orders as completed, Lightspeed orders are created in HubRise with the default status `completed`. Otherwise, they are created with the status `received`. For more information, refer to the [Order Statuses](/apps/lightspeed-restaurant/configuration#order-statuses) section of the Configuration page.
 
 ### Payments
 

@@ -1,7 +1,7 @@
 ---
 title: Pull Orders
 path_override: pull-orders
-position: 7
+position: 8
 layout: documentation
 meta:
   title: Pull Orders | WooCommerce | HubRise
@@ -81,7 +81,7 @@ WooCommerce supports four types of payments in an order:
 
 ---
 
-**IMPORTANT NOTE**: Payment ref codes will soon be customisable from the configuration page. For more information, contact HubRise on support@hubrise.com.
+**IMPORTANT NOTE:** Payment ref codes will soon be customisable from the configuration page. For more information, contact HubRise on support@hubrise.com.
 
 ---
 
@@ -91,9 +91,12 @@ WooCommerce discounts are sent to HubRise, if present in an order.
 
 ## Charges
 
-WooCommerce supports only delivery charges, which are sent to HubRise if present in an order.
+WooCommerce supports two types of charges:
 
----
+- Shipping charges.
+- Additional fees.
+
+Both types are sent to HubRise, when present in an order.
 
 ## Technical Reference
 
@@ -130,7 +133,7 @@ A product can have at most one attached option.
 
 <details>
 
-Below is a sample payload containing a single item with an option.
+<summary>Sample JSON containing a single item with an option</summary>
 
 ```json
 "items": [
@@ -168,19 +171,17 @@ WooCommerce Bridge encodes all the available customer's details from WooCommerce
 - `phone`: The customer's phone number.
 - `delivery_notes`: The delivery notes that the customer includes at checkout.
 
-### Delivery Charges
+### Charges
 
-Delivery charges are applied for orders delivered by the restaurant.
+Charges encompass shipping and additional fees. The fields sent are the following:
 
-The available fields in the payloads are the following:
-
-- `name`: The name of the delivery charge, which is `Delivery charge` by default.
-- `ref`: The ref code of the charge. Its default value can be set from the Configuration page of WooCommerce Bridge and should match the value in your EPOS.
-- `price`: The total amount of the delivery charge.
+- `name`: The name of the charge. For shipping charges, this is `Delivery charge`.
+- `ref`: For shipping charges, the ref code set from the WooCommerce Bridge configuration. For additional fees, this field is `null`.
+- `price`: The amount of the charge.
 
 <details>
 
-Below is a sample payload for charges.
+<summary>Sample JSON for charges</summary>
 
 ```json
 "charges": [
@@ -194,16 +195,16 @@ Below is a sample payload for charges.
 
 </details>
 
-## Discounts
+### Discounts
 
 The discount applied to the order is passed in a single object in the HubRise `discounts` array.
 
-The available fields in the payload are the following:
+The fields sent are the following:
 
 - `name`: The name of the discount.
 - `price_off`: The total amount of the discount.
 
-## Custom Fields
+### Custom Fields
 
 The `custom_fields` object is used by WooCommerce Bridge to store the metadata that WooCommerce sends in the order. This information is not provided by default by the WooCommerce API, but the actual format depends on the installed plugins and code customisation made on the website.
 

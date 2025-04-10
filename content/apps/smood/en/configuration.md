@@ -69,6 +69,7 @@ The checkboxes in this section control the synchronisation workflow between Smoo
 
 - **Enable automatic sync of the catalog**: When checked, the Smood menu is automatically updated when the HubRise catalog changes.
 - **Enable automatic sync of the inventory**: When checked, items are automatically removed from the Smood menu when they are out of stock in the HubRise inventory.
+- **Enable automatic sync of opening hours**: When checked, the opening hours are automatically updated in Smood when they change in HubRise.
 - **Enable automatic sync of status from Smood to HubRise**: When an order is cancelled on Smood, the status update is always sent to HubRise. When this option is checked, other Smood statuses are also sent.
 
 ### Save Your Changes

@@ -19,6 +19,6 @@ Si vous ne voyez que le lien **Synchroniser les magasins**, contactez le support
 
 ---
 
-**REMARQUE IMPORTANTE** : Cette opération va remplacer votre catalogue Dishop actuel.
+**REMARQUE IMPORTANTE :** Cette opération va remplacer votre catalogue Dishop actuel.
 
 ---

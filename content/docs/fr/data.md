@@ -4,8 +4,8 @@ path_override: donnees
 position: 5
 layout: documentation
 meta:
-  title: Données commandes, clients et catalogues | HubRise
-  description: Enregistrements concernant les commandes, les clients et les catalogues dans HubRise. Comment les consulter et comprendre leur contenu.
+  title: Données | HubRise
+  description: Comment gérer les connexions à HubRise.
 ---
 
 La section Données fournit des informations sur les commandes, les clients et les catalogues. Vous pouvez à tout moment sélectionner le compte et les points de vente à afficher.
@@ -24,10 +24,11 @@ La page **COMMANDES** affiche les commandes dans l'ordre inverse de leur date de
 Pour filtrer les commandes par dates de début et de fin, procédez comme suit :
 
 1. Sélectionnez les champs **Du** et **Au** et définissez les plages de dates à filtrer.
-1. Sélectionnez l'icône de recherche <InlineImage width="17" height="17">![Icône Rechercher](../images/061-search.png)</InlineImage> pour filtrer les enregistrements d'après ces dates.
-1. Pour effacer les filtres de date, supprimez les dates contenues dans les champs **Du** et **Au**, puis sélectionnez l'icône de recherche <InlineImage width="17" height="17">![Icône Rechercher](../images/061-search.png)</InlineImage>.
+2. Sélectionnez l'icône de recherche <InlineImage>![Icône Rechercher](../images/061-search.png)</InlineImage> pour filtrer les enregistrements d'après ces dates.
+3. Pour effacer les filtres de date, supprimez les dates contenues dans les champs **Du** et **Au**, puis sélectionnez l'icône de recherche <InlineImage>![Icône Rechercher](../images/061-search.png)</InlineImage>.
 
-Cliquez sur la date de la commande pour afficher les détails complets. Pour afficher les détails complets de la requête, cliquez sur la date et l'heure dans la section **Logs**. Pour plus d'informations, voir [Logs](/docs/data#logs).
+Cliquez sur la date de la commande pour afficher les détails complets.
+Pour afficher les détails complets de la requête, cliquez sur la date et l'heure dans la section **Logs**. Pour plus d'informations, voir [Logs](/docs/data#logs).
 
 ---
 
@@ -49,9 +50,9 @@ Les enregistrements contenus sur cette page affichent les attributs suivants :
 Pour filtrer les clients par nom ou adresse e-mail, procédez comme suit :
 
 1. S'il existe plusieurs listes de clients associées au compte ou au point de vente, sélectionnez la liste déroulante en regard de l'intitulé **Clients**, puis sélectionnez la liste de clients à afficher.
-1. Cliquez sur le champ **Rechercher par nom ou email** et saisissez le texte à rechercher.
-1. Sélectionnez l'icône de recherche pour filtrer les enregistrements de client.
-1. Pour revenir à la liste clients complète et non filtrée, supprimez tout le texte contenu dans le champ **Rechercher par nom ou email**, puis sélectionnez l'icône de recherche <InlineImage width="17" height="17">![Icône Rechercher](../images/061-search.png)</InlineImage>.
+2. Cliquez sur le champ **Rechercher par nom ou email** et saisissez le texte à rechercher.
+3. Sélectionnez l'icône de recherche pour filtrer les enregistrements de client.
+4. Pour revenir à la liste clients complète et non filtrée, supprimez tout le texte contenu dans le champ **Rechercher par nom ou email**, puis sélectionnez l'icône de recherche <InlineImage>![Icône Rechercher](../images/061-search.png)</InlineImage>.
 
 Pour afficher les détails complets d'un client, cliquez sur le nom de celui-ci. Pour voir les logs complets de toutes les requêtes liées à la liste de clients, cliquez sur **Voir les logs**.
 
@@ -61,17 +62,19 @@ Pour créer, modifier ou supprimer une liste de clients, voir [Listes de clients
 
 À partir de la page **CATALOGUES**, vous pouvez afficher les catalogues présents dans HubRise et les logs des requêtes liées à chacun des catalogues.
 
-Les applications connectées qui ont accès à votre catalogue HubRise peuvent télécharger ou modifier les catalogues. Un logiciel de caisse connecté peut par exemple pousser son catalogue de produits dans HubRise pour qu'un site internet d'e-commerce puisse l'utiliser. Si nécessaire, vous pouvez aussi éditer le catalogue dans Catalog Manager, une application gratuite disponible sur HubRise.
+Les applications connectées qui ont accès à votre catalogue HubRise peuvent télécharger ou modifier les catalogues. Un logiciel de caisse connecté peut par exemple pousser son catalogue de produits dans HubRise pour qu'un site internet d'e-commerce puisse l'utiliser. Si nécessaire, vous pouvez aussi éditer le catalogue dans **Catalog Manager**, une application gratuite disponible sur HubRise. Pour plus d'informations, voir [Catalogue](/apps/catalog-manager/overview).
 
-### Afficher le catalogue
+### Afficher le catalogue {#view-catalog}
 
 Les comptes et les points de vente peuvent contenir plusieurs catalogues. Pour afficher un catalogue spécifique, sélectionnez-le dans la liste déroulante en regard de l'intitulé **Catalogues**.
 
 Les catalogues sont présentés dans trois onglets :
 
 - **SKUS** : articles que vous vendez aux clients.
-- **PROMOTIONS** : offres spéciales disponibles dans le catalogue. Une promotion permet de bénéficier d'une remise tarifaire sur des combinaisons de produits achetés ensemble. La promotion **Un article acheté, un gratuit**, par exemple, est une offre spéciale qui s'applique à deux produits. Elle prévoit une réduction de prix égale au prix du produit le moins cher.
-- **REMISES** : rabais disponibles dans le catalogue. Les codes de remise s'appliquent non pas à des produits spécifiques, mais à l'ensemble de la commande. Le code **LIVRAISONOFFERTE**, par exemple, peut supprimer les frais de livraison pour l'ensemble de la commande, tandis que le code **CESTVENDREDI** peut offrir une remise de 10 % sur l'ensemble de la commande le vendredi.
+- **PROMOTIONS** : offres spéciales disponibles dans le catalogue.
+  Les promotions s'appliquent non pas à des produits spécifiques, mais à l'ensemble de la commande. A titre d'exemple, une formule avec trois choix (entrée, plat et dessert), ou une offre **Un acheté - Un offert**.
+- **REMISES** : rabais disponibles dans le catalogue.
+  Les remises s'appliquent non pas à des produits spécifiques, mais à l'ensemble de la commande. Le code **LIVRAISON-OFFERTE**, par exemple, peut supprimer les frais de livraison pour l'ensemble de la commande, tandis que le code **C'EST-VENDREDI** peut offrir une remise de 10 % sur l'ensemble de la commande le vendredi.
 
 ![Onglets du catalogue HubRise](./images/053-2x-catalog-tabs.png)
 
@@ -92,7 +95,21 @@ Pour voir les logs complets de toutes les requêtes liées au catalogue, cliquez
 
 Pour créer, modifier ou supprimer un catalogue, voir [Catalogues](/docs/catalog).
 
-## Logs {#logs}
+## Inventaire
+
+La page **INVENTAIRE** affiche les entrées d'inventaire pour le point de vente sélectionné. Vous devez sélectionner un point de vente pour consulter son inventaire. Si aucun point de vente n'est sélectionné, un message vous invite à en sélectionner un.
+
+Les entrées d'inventaire sont organisées avec les SKUs en premier, triés par code ref, suivis des options, également triées par code ref. Les SKUs et options n'ayant pas d'entrée d'inventaire sont considérés comme disponibles en quantité illimitée.
+
+Les attributs suivants sont affichés pour chaque entrée d'inventaire :
+
+- **REF / OPTION**: Le type d'entrée d'inventaire, **SKU** ou **Option**.
+- **REF**: Le code ref du SKU ou de l'option.
+- **STOCK** : Niveau de stock actuel. Si le niveau de stock est `0`, l'article est en rupture de stock.
+
+Pour voir les logs complets de toutes les requêtes liées à l'inventaire, cliquez sur **Voir les logs**. Pour plus d'informations, voir [Logs](/docs/data#logs).
+
+## Les logs {#logs}
 
 Chaque page de la section **DONNÉES** fournit des informations complémentaires à travers sa page de logs.
 
@@ -102,12 +119,20 @@ La page de logs affiche une liste récapitulative des requêtes par ordre chrono
 
 - **HEURE (UTC+02:00)** : date et heure de la requête au format UTC.
 - **ORIGINE** : application à partir de laquelle la requête a été créée.
+- **RESSOURCE** : objet affecté par la requête.
 - **POINT DE TERMINAISON** : point de terminaison de la requête, dont la méthode HTTP et l'URL.
+- **URL** : adresse URL de la requête.
 - **RÉPONSE** : code de réponse HTTP.
 
 D'autres détails sur les logs sont disponibles à l'intention des utilisateurs avancés et des développeurs pour leur permettre de visualiser les communications entre les applications et de résoudre les problèmes. Pour afficher les détails d'une entrée parmi les logs, procédez comme suit :
 
 1. Cliquez sur la ligne à afficher. La liste complète des détails relatifs à la requête et à la réponse s'affiche.
-1. Pour télécharger la requête ou la réponse, sélectionnez l'icône de téléchargement <InlineImage width="15" height="14">![Icône de téléchargement](../images/058-download.png)</InlineImage>. La requête ou la réponse sélectionnée sera délivrée sous forme de fichier JSON.
+2. Pour télécharger la requête ou la réponse, sélectionnez l'icône de téléchargement <InlineImage>![Icône de téléchargement](../images/058-download.png)</InlineImage>. La requête ou la réponse sélectionnée sera délivrée sous forme de fichier JSON.
+
+Les logs peuvent être filtrés en fonction de critères spécifiques, y compris la ressource, la méthode et la période de temps. Pour filtrer les logs :
+
+1. Cliquez sur la section **Filtrer** située en haut de la page. En cliquant, vous verrez les options de filtrage apparaître.
+2. Appliquer un ou plusieurs filtres. Les entrées de logs s'actualisent automatiquement.
+3. Pour revenir à l'affichage de toutes les entrées de logs, cliquez sur **Réinitialiser**.
 
 Pour plus d'informations, voir la rubrique [Comprendre les logs HubRise](/docs/hubrise-logs/overview). Pour une référence complète sur l'API HubRise, voir la [page de référence de l'API HubRise](/developers/api/general-concepts) (en anglais).

@@ -1,14 +1,16 @@
 ---
 title: Pull Orders
 path_override: pull-orders
-position: 7
+position: 8
 layout: documentation
 meta:
   title: Pull Orders | PrestaShop | HubRise
   description: Find out the technical details of how orders are pulled from PrestaShop into HubRise, which fields are passed and which are not.
 ---
 
-Connecting PrestaShop to HubRise allows you to receive orders directly in your EPOS or any other solution connected to your HubRise account.
+When you connect PrestaShop Bridge to HubRise, orders placed on your PrestaShop store are automatically pulled into HubRise. This allows you to process these orders directly in your EPOS or any other solution connected to your HubRise account.
+
+If orders are not syncing as expected, see [Troubleshooting](/apps/prestashop/troubleshooting#orders-not-syncing) for help.
 
 This page describes the information that HubRise receives from PrestaShop for your orders.
 
@@ -50,7 +52,7 @@ For every item in the order, PrestaShop Bridge provides the following informatio
 
 <details>
 
-Below is a sample payload containing a single item.
+<summary>Sample JSON containing a single item</summary>
 
 ```json
 "items": [
@@ -82,7 +84,7 @@ PrestaShop does not provide any ref code for discounts.
 
 <details>
 
-Below is a sample payload for discounts.
+<summary>Sample JSON for discounts</summary>
 
 ```json
 "discounts": [
@@ -119,7 +121,7 @@ The available fields in the payloads are the following:
 
 <details>
 
-Below is a sample payload for charges.
+<summary>Sample JSON for charges</summary>
 
 ```json
 "charges": [

@@ -32,11 +32,11 @@ Additionally, from this section, you can choose to categorise orders fulfilled b
 
 ### Special Items
 
-By default, Uber Eats activates a checkbox in the checkout flow for costumers to **Request utensils, straws, etc.**, as shown in the screenshot below.
+Uber Eats offers an option to include a checkbox in the checkout flow for customers to **Request utensils, napkins, etc.**, as shown in the image below.
 
 ![Disposable items checkbox in Uber Eats checkout](./images/009-disposable-items.png)
 
-You can request Uber Eats to disable this functionality. If you prefer to keep it, create a "Disposable items" product in your EPOS, and use its ref code in the **Disposable items ref code** field.
+To enable this feature, create a "Disposable items" product in your EPOS, use its ref code in the **Disposable items ref code** field, and request Uber Eats to turn on this option.
 
 ### Discounts
 
@@ -76,15 +76,35 @@ Catalog variants give you the flexibility to disable specific items or adjust pr
 
 If your catalog includes variants, you have the option to select which ones to use. You can select different variants for the delivery and collection menus, or use the same variant for both. When **(none)** is selected, all items along with their standard prices are sent to Uber Eats.
 
+### Category Structure {#category-structure}
+
+Uber Eats allows two types of category structures:
+
+- **Single level**: all categories are at the same level. 
+- **Two-level**: categories are nested (e.g., Snacks → Biscuits & Crackers).
+
+Restaurants always use a single level, while retail stores can opt for a two-level hierarchy if enabled by Uber Eats support. If unsure, keep **Single level** selected.
+
+### Special Menus
+
+Special menus allow you to schedule different catalog variants for specific days and times. This feature is useful for offering separate breakfast or lunch menus, for example.
+
+To configure special menus:
+
+1. Ensure your catalog contains the necessary variants.
+2. Select the number of special menus you want to set up (up to 5) from the dropdown menu.
+3. For each special menu:
+   - Select the days of the week when this menu should be active.
+   - Set the start time (**From**) and end time (**to**) for the menu.
+   - Choose the delivery and collection catalog variants to use during this time period.
+
+When special menus are configured, Uber Eats will automatically switch to the appropriate catalog variant based on the order expected time and whether it's for delivery or collection.
+
+If there is no special menu active at a particular time, Uber Eats will use the default catalog variants specified in the **Catalog variant to push** settings for delivery and collection.
+
 ### Automatic Catalog Push
 
 Select the **Enable automatic catalog push** checkbox to synchronise your HubRise catalog with Uber Eats whenever it gets updated.
-
-### Customer Notes
-
-Customer notes for individual products can be activated by contacting Uber Eats support. This integration feature is supported, but it cannot be activated by HubRise.
-
-If you enable customer notes, make sure that your connected EPOS supports product level customer notes.
 
 ## Location {#location}
 

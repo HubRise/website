@@ -12,7 +12,7 @@ A **callback** notifies a client of changes that occurred on a set of resources.
 
 ---
 
-**IMPORTANT NOTE**: A client does not receive notifications for the events it generated. If you are testing callbacks, you need to use a separate client to trigger events.
+**IMPORTANT NOTE:** A client does not receive notifications for the events it generated. If you are testing callbacks, you need to use a separate client to trigger events.
 
 ---
 
@@ -69,30 +69,50 @@ If the callback fails to acknowledge the event after 6 retries, HubRise deletes 
 
 #### Event Signatures
 
-To check the authenticity of an event received by your callback, in other words to make sure that it comes from HubRise, you can compute the signature of the event (see code below) and compare it with the `X-HubRise-Hmac-SHA256` header of the event. If they are different, simply return an error and ignore the event.
+To check the authenticity of an event received by your callback, in other words to make sure that it comes from HubRise, you can compute the signature of the event and compare it with the `X-HubRise-Hmac-SHA256` header of the event. If they are different, simply return an error and ignore the event.
 
-To compute the event signature in Ruby:
+To compute the event signature, use one of the following code snippets:
+
+<details>
+<summary>Ruby</summary>
 
 ```ruby
 require "openssl"
 
 client_secret = "your_client_secret"
 payload = request.raw_body
-
 digest = OpenSSL::Digest.new("sha256")
 calculated_hmac = OpenSSL::HMAC.hexdigest(digest, client_secret, payload)
 ```
 
-The same script in Javascript, using Node's `crypto` lib:
+</details>
+
+<details>
+<summary>JavaScript (Node.js)</summary>
 
 ```javascript
 import { createHmac } from "crypto"
 
-client_secret = "your_client_secret"
-payload = req.rawBody
-
+const client_secret = "your_client_secret"
+const payload = req.rawBody
 const calculatedHmac = createHmac("sha256", client_secret).update(payload).digest("hex")
 ```
+
+</details>
+
+<details>
+<summary>Python</summary>
+
+```python
+import hmac
+import hashlib
+
+client_secret = b"your_client_secret"
+payload = request.get_data()
+calculated_hmac = hmac.new(client_secret, payload, hashlib.sha256).hexdigest()
+```
+
+</details>
 
 ### Passive Callbacks
 
@@ -157,11 +177,12 @@ Creates a callback if none exists, replace the existing callback otherwise.
 | `events` | map    | A map with the keys being _resource type_ and the values being the *event type*s to monitor. |
 
 - _resource type_ is one of: `catalog`, `customer`, `delivery`, `inventory`, `location` and `order`.
-- _event type_ is one of: `create`, `patch` and `update`.
+- _event type_ is one of: `create`, `delete`, `patch` and `update`.
 
 The allowed combinations of resource and event types are:
 
 - `catalog.create`
+- `catalog.delete`
 - `catalog.update`
 - `customer.create`
 - `customer.update`

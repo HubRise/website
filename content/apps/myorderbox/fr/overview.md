@@ -26,7 +26,7 @@ MyOrderBox propose aux restaurants une solution complète reposant sur une plate
 
 La logiciel de caisse MyOrderBox a été conçue pour gérer les commandes entrantes en provenance de plusieurs types de sources, puis de les envoyer en cuisine en temps opportun pour la préparation. Sa solution de gestion de livreurs automatise le flux des livraisons, tandis que ses applications destinées aux livreurs offrent la possibilité de superviser et organiser ceux-ci. Un site internet de commande en ligne estampillé d'une marque peut être créé gratuitement grâce aux applications iOS ou Android afin d'encourager les clients à commander en ligne, directement depuis le restaurant, en quelques clics.
 
-MyOrderBox dispose de nombreuses autres fonctionnalités entièrement intégrées, dont la gestion des centres d'appels, la gestion des stocks, la génération de rapports internes pour aider les propriétaires et gestionnaires à analyser les tendances en temps réel, ainsi que différents modes de paiement, pour ne citer que quelques exemples.
+MyOrderBox dispose de nombreuses autres fonctionnalités entièrement intégrées, dont la gestion des centres d'appels, la gestion des stocks, la génération de rapports internes pour aider les propriétaires et gestionnaires à analyser les tendances en temps réel, ainsi que différentes méthodes de paiement, pour ne citer que quelques exemples.
 
 ## Fonctionnalités de l'intégration
 

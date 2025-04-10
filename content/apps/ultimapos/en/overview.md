@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: Full documentation available <Link href="/fr/apps/ultimapos">in French only</Link>.
+**IMPORTANT NOTE:** Full documentation available <Link href="/fr/apps/ultimapos">in French only</Link>.
 
 ---
 
@@ -53,4 +53,4 @@ With HubRise, you can synchronise your menu, customer information, and orders be
 
 ## Prerequisites
 
-To establish a connection between UltimaPOS and HubRise, you must have a Premium UltimaPOS license.
+To establish a connection between UltimaPOS and HubRise, you must have a Premium UltimaPOS licence.

@@ -8,7 +8,8 @@ const yaml = require("yaml")
 const requiredEnvVars = [
   "NEXT_PUBLIC_SENTRY_DSN",
   "NEXT_PUBLIC_INTERACTIVE_DEV_MODE",
-  "NEXT_PUBLIC_RECAPTCHA_SITE_KEY",
+  "NEXT_PUBLIC_GOOGLE_ANALYTICS_ID",
+  "NEXT_PUBLIC_RECAPTCHA_KEY_ID",
 ]
 const missingVars = requiredEnvVars.filter((key) => !(key in process.env))
 if (missingVars.length > 0) {
@@ -22,6 +23,11 @@ finalConfig = {
   compiler: {
     styledComponents: {}, // The presence of this empty object makes SC use human-readable class names in dev mode.
   },
+  transpilePackages: [
+    // Workaround for Error [ERR_REQUIRE_ESM]: require() of ES Module - see
+    // https://github.com/hashicorp/next-mdx-remote/issues/381#issuecomment-2057520430
+    "next-mdx-remote"
+  ],
   redirects: async () => {
     const yamlFile = join(process.cwd(), "content", "redirects.yaml")
     const data = await fs.readFile(yamlFile, "utf8")
