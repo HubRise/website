@@ -57,7 +57,9 @@ To grant access to SOLUTION, proceed as follows:
 
 1. From the HubRise back office, select **SETTINGS** in the left-hand menu.
 1. In the **Permissions** section, enter `contact@SOLUTION.com`.
-1. Click on **Edit permissions** and select the permissions to grant SOLUTION support access to your account or location.Among the predefined roles in the dropdown menu, the **Technical Partner** role is recommended.
+1. Click on **Add User**.
+1. In the dropdown menu for selecting a predefined role, select **Technical Partner**.
+1. Click on **Set Permissions**.
 
 Adding a user is the recommended way to grant access to a third party to your HubRise account or location. Sharing passwords is not recommended for security reasons. For more information on permissions, see the [Permissions](/docs/permissions) help page.
 

@@ -56,8 +56,10 @@ Pour connecter SOLUTION et faciliter le traitement de vos demandes de support, v
 Pour donner accès à SOLUTION, procédez comme suit :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
-2. Dans la section **Permissions**, ajoutez `contact@SOLUTION.com`.
-3. Cliquez sur **Modifier les permissions** et sélectionnez les permissions pour accorder au support SOLUTION un accès à votre compte ou à votre point de vente. Parmi les rôles prédéfinis du menu déroulant, le rôle **Partenaire Technique** est recommandé.
+1. Dans la section **Permissions**, ajoutez `contact@SOLUTION.com`.
+1. Cliquez sur **Ajouter l'utilisateur**.
+1. Dans le menu déroulant de choix d'un rôle prédéfini, sélectionnez **Partenaire Technique**.
+1. Cliquez sur **Définir les permissions**.
 
 L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre compte HubRise ou au point de vente. Le partage de mot de passe est déconseillé pour des raisons de sécurité. Pour plus d'informations sur les permissions, voir notre aide en ligne, page [Permissions](/docs/permissions).
 
@@ -73,7 +75,7 @@ Pour déconnecter SOLUTION de HubRise, procédez comme suit :
 
 1. Depuis le back-office de SOLUTION, cliquez sur ...
 2. SOLUTION est déconnecté de HubRise.
--- OU --
+   -- OU --
 
 Pour déconnecter SOLUTION de HubRise, contactez le support de SOLUTION.
 
