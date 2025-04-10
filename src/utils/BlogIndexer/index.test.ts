@@ -1,20 +1,20 @@
 import * as fs from "fs/promises"
 
-import { mocked } from "jest-mock"
+import { beforeEach, describe, expect, it, vi } from "vitest"
 
-import { setupFsMocks } from "@utils/jest-helpers/mockFsSetup"
+import { setupFsMocks } from "@utils/test-helpers/mockFsSetup"
 
 import BlogIndexer from "./index"
 
-jest.mock("fs/promises")
+vi.mock("fs/promises")
 
 describe("BlogIndexer", () => {
   let indexer: BlogIndexer
 
   beforeEach(() => {
     indexer = new BlogIndexer("/blog")
-    mocked(fs.readdir).mockClear()
-    mocked(fs.readFile).mockClear()
+    vi.mocked(fs.readdir).mockClear()
+    vi.mocked(fs.readFile).mockClear()
   })
 
   it("initializes and indexes blog posts", async () => {
