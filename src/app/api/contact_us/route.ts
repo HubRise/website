@@ -4,10 +4,12 @@ import nodemailer from "nodemailer"
 
 const SCORE_THRESHOLD = 0.3
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const verifyRecaptcha = async (token: string) => {
   const apiKey = process.env.RECAPTCHA_API_KEY
   const projectID = process.env.RECAPTCHA_PROJECT_ID
   const keyId = process.env.NEXT_PUBLIC_RECAPTCHA_KEY_ID
+
   const response = await axios.post(
     `https://recaptchaenterprise.googleapis.com/v1/projects/${projectID}/assessments?key=${apiKey}`,
     {
@@ -23,12 +25,7 @@ const verifyRecaptcha = async (token: string) => {
   const riskScore = response.data.riskAnalysis?.score ?? 0
 
   if (!isTokenValid || riskScore < SCORE_THRESHOLD) {
-    // 30/3/2025: WE ARE DISABLING CAPTCHA VALIDATION FOR THE TIME BEING
-    // See https://docs.google.com/document/d/1x5BU3Ss8N7pDZA4cbKsNRZwIgd-6g7SgTbWEJ62p-eY/edit?tab=t.0
-    console.log(`Captcha validation failed: ${JSON.stringify(response.data)} - IGNORING AND SENDING EMAIL ANYWAY`)
-
-    // TO RE-ENABLE CAPTCHA VALIDATION, UNCOMMENT THE LINE BELOW AND REMOVE THE PREVIOUS LOG
-    //throw new Error(`Captcha validation failed: ${JSON.stringify(response.data)}`)
+    throw new Error(`Captcha validation failed: ${JSON.stringify(response.data)}`)
   }
 }
 
@@ -59,7 +56,10 @@ export async function POST(req: Request) {
   console.log("Sending email", { token, name, email, message })
 
   try {
-    await verifyRecaptcha(token)
+    // AM 31/3/2025 - Disable recaptcha verification, due to time out errors on the client side
+    // See https://docs.google.com/document/d/1x5BU3Ss8N7pDZA4cbKsNRZwIgd-6g7SgTbWEJ62p-eY/edit?tab=t.0
+    //await verifyRecaptcha(token)
+
     await sendEmail(name, email, message)
   } catch (error: any) {
     console.error(error)

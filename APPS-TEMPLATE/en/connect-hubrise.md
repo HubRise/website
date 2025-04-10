@@ -69,6 +69,14 @@ Include in your request the name of your HubRise account, its HubRise identifier
 
 ## Disconnect SOLUTION
 
+To disconnect SOLUTION from HubRise, proceed as follows:
+
+1. From the SOLUTION back-office, click on ...
+1. SOLUTION is disconnected from HubRise.
+
+-- OR --
+
+To disconnect SOLUTION from HubRise, contact SOLUTION support.
 
 If you need to temporarily stop [receiving orders from HubRise], you can block the connection between SOLUTION and HubRise. For more information, see [Block or Disconnect App](/docs/connections#block-or-disconnect).
 

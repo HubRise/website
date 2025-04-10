@@ -335,6 +335,12 @@ content:
           title: AquilaCMS
           description: Aquila CMS est une solution open source, disponible pour l'édition et la création de sites e-commerce. Aquila CMS peut être téléchargé, ou utilisé avec les services de développement et d'hébergement proposés par l'éditeur.
           additional_info:
+        - website: https://chataigne.ai/fr
+          documentation: /fr/apps/chataigne
+          logo: chataigne.png
+          title: Chataîgne
+          description: Châtaigne permet aux restaurants de proposer des services de livraison et de vente à emporter via WhatsApp. Les clients peuvent consulter le menu, passer commande, puis payer de manière sécurisée directement depuis WhatsApp, sans avoir à télécharger d'application ni créer de compte. L’objectif est de simplifier le passage de commandes, en évitant les appels et les frais des plateformes traditionnelles.
+          additional_info:
         - website: https://dishop.co/
           documentation: /fr/apps/dishop
           logo: dishop.png
@@ -455,6 +461,12 @@ content:
           logo: superdigital.png
           title: SuperDigital.fr
           description: SuperDigital.fr est une solution complète permettant aux restaurateurs de créer un site de commande en ligne en marque blanche. Les restaurateurs peuvent personnaliser leur site de manière autonome depuis le back-office.
+        - website: https://tablati.ma
+          documentation: /fr/apps/tablati
+          logo: tablati.png
+          title: Tablati
+          description: Tablati est une solution de commande et de paiement à table via QR code depuis un smartphone. Elle inclut des fonctionnalités comme la gestion des pourboires, la collecte d’avis Google et un programme de fidélité.
+          additional_info: Intégration en cours.
         - website: https://www.tastycloud.fr
           documentation: /fr/apps/tastycloud
           logo: tastycloud.png

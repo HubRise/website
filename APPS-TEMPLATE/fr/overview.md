@@ -68,6 +68,7 @@ SOLUTION peut être connecté à HubRise via le support de SOLUTION.
 SOLUTION peut être connecté à HubRise depuis le back-office de SOLUTION.
 SOLUTION peut être connecté à HubRise depuis le back-office de HubRise.
 SOLUTION peut être connecté à HubRise depuis le back-office de HubRise ou celui de SOLUTION.
+Pour plus d'information, consultez la page [Connexion à HubRise](/apps/SOLUTION/connect-hubrise).
 
 ## Pourquoi se connecter ?
 
