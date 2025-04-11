@@ -32,7 +32,7 @@ Terms beginning with a capital letter in these General Terms and Conditions, whe
 - "**Content**" denotes, without being limited to this list, the structure of the Site, editorial content, drawings, illustrations, images, photographs, graphic charters, trademarks, logos, acronyms, trade names, audiovisual works, multimedia works, visual content, and audio content, as well as any other content present on the Site and Services.
 
 - "**User Data**" (or "**Data**") refers to data belonging to the User, which are stored or processed by the Services. They include, without being exhaustive, lists of products, personal contact information, and orders.
-~~~~
+
 - "**Services**" refers to the various free and paid functions and services developed and offered by HubRise, accessible in SaaS mode.
 
 - "**Site**" refers to the HubRise website, accessible at the following web address: https://www.hubrise.com/.
@@ -104,7 +104,7 @@ As such, the right of withdrawal does not apply to services ordered from HubRise
 
 HubRise provides the User with a free and limited version of the Services. The usage limit is indicated on the HubRise Pricing page.
 
-When the usage limit is reached, a monthly Subscription fee shall become payable by the User for the current billing period. HubRise shall inform the User, who shall have a maximum period of ten (10) days to either settle the monthly fee or subscribe to a Subscription. If the User fails to pay the monthly fee within the specified period, HubRise may suspend the Services and delete the User’s Data.
+When the usage limit is reached, a monthly Subscription fee shall become payable by the User for the current billing period. HubRise shall inform the User, who shall have a maximum period of ten (10) days to either settle the monthly fee or upgrade to a paid Subscription. If the User fails to pay the monthly fee within the specified period, HubRise may suspend the Services and delete the User’s Data.
 
 The User may switch from the paid version to the free version of the Services at any time, provided they comply with the usage limits of the free version and have settled all outstanding amounts owed to HubRise.
 
@@ -199,7 +199,7 @@ Without limiting the generality of the foregoing, HubRise does not warrant that 
 
 ### 8.4. ''
 
-In the event of a force majeure or any other circumstance beyond the reasonable control of either Party which prevents it from fulfilling its contractual obligations, the affected Party must notify the other Party as soon as possible by any means. The obligations of the Parties shall be suspended for the duration of the force majeure event, and both Parties shall use all reasonable efforts to limit its duration and effects.
+In the event of a force majeure or any other circumstance beyond the reasonable control of either Party which prevents it from fulfilling its contractual obligations, the affected Party must notify the other Party as soon as possible by any means. The Parties’ obligations will be suspended for the duration of the force majeure event, and both Parties shall use all reasonable efforts to limit its duration and effects.
 
 However, if the suspension of obligations due to force majeure exceeds one (1) month, either Party may terminate the contract by registered letter with acknowledgement of receipt. In such cases, termination shall take effect fifteen (15) days following receipt of said letter.
 
