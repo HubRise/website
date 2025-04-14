@@ -197,7 +197,7 @@ HubRise gives no warranties—express, implied, statutory, or otherwise—and ex
 
 Without limiting the generality of the foregoing, HubRise does not warrant that the Services will meet the User’s specific requirements or that their use will be uninterrupted, timely, secure, or error-free.
 
-### 8.4. ''
+### 8.4. Force majeure
 
 In the event of a force majeure or any other circumstance beyond the reasonable control of either Party which prevents it from fulfilling its contractual obligations, the affected Party must notify the other Party as soon as possible by any means. The Parties’ obligations will be suspended for the duration of the force majeure event, and both Parties shall use all reasonable efforts to limit its duration and effects.
 
