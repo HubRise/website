@@ -30,8 +30,10 @@ Pour connecter NetFood, vous devez donner accès au support de NetFood à votre 
 Pour donner accès à NetFood, procédez comme suit :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
-2. Dans la section **Permissions**, ajoutez `amministrazione@netinformatica.eu` et sélectionnez **Manager** dans la liste déroulante des rôles.
-3. Cliquez sur l'icône **+** pour permettre au support de NetFood d'accéder à votre compte.
+1. Dans la section **Permissions**, ajoutez `amministrazione@netinformatica.eu`.
+1. Cliquez sur **Ajouter l'utilisateur**.
+1. Dans le menu déroulant de choix d'un rôle prédéfini, sélectionnez **Partenaire Technique**.
+1. Cliquez sur **Définir les permissions**.
 
 L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre compte HubRise ou au point de vente. Le partage de mot de passe est déconseillé pour des raisons de sécurité. Pour plus d'informations sur les permissions, voir notre aide en ligne, page [Permissions](/docs/permissions).
 

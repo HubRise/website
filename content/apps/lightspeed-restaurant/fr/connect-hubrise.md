@@ -46,13 +46,13 @@ Lorsque vous faites votre demande à HubRise, précisez quelles applications vou
 
 Nous recommandons de fournir, au service de support Lightspeed, l'accès à votre point de vente HubRise connecté à Lightspeed Restaurant. Ils pourront ainsi résoudre les éventuels problèmes en examinant les logs de Lightspeed Restaurant Bridge.
 
-Pour donner au support Lightspeed l'accès à votre point de vente, suivez ces étapes.
+Pour donner au support Lightspeed l'accès à votre point de vente, suivez ces étapes :
 
-1. Si vous avez plusieurs comptes, cliquez sur la flèche vers le bas située à côté de **Compte** et sélectionnez le compte approprié.
-1. Dans le back-office HubRise, sélectionnez **CONFIGURATION**.
-1. Dans la section **Utilisation**, sélectionnez l'emplacement connecté à Lightspeed dans la colonne **Point de vente**.
-1. Dans la section **Permissions**, ajoutez *k-series.support@lightspeedhq.com* à la liste et sélectionnez **Manager** dans le menu déroulant.
-1. Cliquez sur l'icône **+** pour confirmer.
+1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
+1. Dans la section **Permissions**, ajoutez `k-series.support@lightspeedhq.com`.
+1. Cliquez sur **Ajouter l'utilisateur**.
+1. Dans le menu déroulant de choix d'un rôle prédéfini, sélectionnez **Partenaire Technique**.
+1. Cliquez sur **Définir les permissions**.
 
 ---
 

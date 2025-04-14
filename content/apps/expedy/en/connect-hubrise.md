@@ -45,8 +45,10 @@ For your support tickets to be properly handled, we advise you to give the Exped
 To grant access to Expedy, follow these steps:
 
 1. From the HubRise back office, select **SETTINGS** in the left-hand menu.
-2. In the **Permissions** section, add support@expedy.fr and select **Manager** in the Role drop-down list.
-3. Click the **+** icon to add the new user.
+1. In the **Permissions** section, enter `support@expedy.fr`.
+1. Click on **Add User**.
+1. In the dropdown menu for selecting a predefined role, select **Technical Partner**.
+1. Click on **Set Permissions**.
 
 Adding a user is the recommended way to grant a third party access to your location. Sharing passwords is not recommended for security reasons.
 
