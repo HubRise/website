@@ -1,15 +1,16 @@
 import axios from "axios"
 import { createRequest } from "node-mocks-http"
 import nodemailer from "nodemailer"
+import { describe, expect, it, MockedFunction, vi } from "vitest"
 
 import { POST } from "./route"
 
-jest.mock("axios")
-jest.mock("nodemailer")
+vi.mock("axios")
+vi.mock("nodemailer")
 
 describe("/api/contact_us", () => {
-  const mockedAxiosPost = axios.post as jest.MockedFunction<typeof axios.post>
-  const mockedCreateTransport = nodemailer.createTransport as jest.MockedFunction<typeof nodemailer.createTransport>
+  const mockedAxiosPost = axios.post as MockedFunction<typeof axios.post>
+  const mockedCreateTransport = nodemailer.createTransport as MockedFunction<typeof nodemailer.createTransport>
 
   const sendRequest = async () => {
     const req = createRequest({
@@ -34,7 +35,7 @@ describe("/api/contact_us", () => {
   }
 
   const mockSendGrid = (success: boolean) => {
-    const sendMailMock = jest.fn().mockResolvedValueOnce({ rejected: success ? [] : ["john@example.com"] })
+    const sendMailMock = vi.fn().mockResolvedValueOnce({ rejected: success ? [] : ["john@example.com"] })
     mockedCreateTransport.mockReturnValueOnce({ sendMail: sendMailMock } as any)
   }
 

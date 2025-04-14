@@ -56,8 +56,10 @@ Pour connecter SOLUTION et faciliter le traitement de vos demandes de support, v
 Pour donner accès à SOLUTION, procédez comme suit :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
-2. Dans la section **Permissions**, ajoutez `contact@SOLUTION.com` et sélectionnez **Manager** dans la liste déroulante des rôles.
-3. Cliquez sur l'icône **+** pour permettre au support de SOLUTION d'accéder à votre compte ou à votre point de vente.
+1. Dans la section **Permissions**, ajoutez `contact@SOLUTION.com`.
+1. Cliquez sur **Ajouter l'utilisateur**.
+1. Dans le menu déroulant de choix d'un rôle prédéfini, sélectionnez **Partenaire Technique**.
+1. Cliquez sur **Définir les permissions**.
 
 L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre compte HubRise ou au point de vente. Le partage de mot de passe est déconseillé pour des raisons de sécurité. Pour plus d'informations sur les permissions, voir notre aide en ligne, page [Permissions](/docs/permissions).
 
@@ -69,8 +71,12 @@ Indiquez dans votre demande le nom de votre compte HubRise, son identifiant HubR
 
 ## Déconnecter SOLUTION
 
-Vous pouvez déconnecter SOLUTION de HubRise depuis le back-office de Déconnecter SOLUTION.
-\-- OU --
-Pour déconnecter SOLUTION de HubRise, contactez le support SOLUTION.
+Pour déconnecter SOLUTION de HubRise, procédez comme suit :
 
-Si vous avez besoin d'arrêter temporairement [la réception des commandes envoyées sur HubRise], vous pouvez bloquer la connexion entre SOLUTION et HubRise. Pour plus d'informations, voir [Bloquer ou déconnecter une application](/docs/connections#block-or-disconnect).
+1. Depuis le back-office de SOLUTION, cliquez sur ...
+2. SOLUTION est déconnecté de HubRise.
+   -- OU --
+
+Pour déconnecter SOLUTION de HubRise, contactez le support de SOLUTION.
+
+Si vous souhaitez seulement stopper temporairement [la réception de commandes depuis HubRise], vous pouvez bloquer la connexion entre SOLUTION et HubRise. Pour plus d'informations, voir [Bloquer ou déconnecter une application](/docs/connections#block-or-disconnect).

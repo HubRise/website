@@ -1,7 +1,7 @@
 import { PathLike } from "fs"
 import * as fs from "fs/promises"
 
-import { mocked } from "jest-mock"
+import { vi } from "vitest"
 
 type MockEntry = { type: "file"; name: string } | { type: "dir"; name: string }
 
@@ -22,7 +22,7 @@ export function setupFsMocks(config: MockConfig) {
   }
 
   // Set up fs.readdir mock
-  const readdirMock = mocked(fs.readdir)
+  const readdirMock = vi.mocked(fs.readdir)
   readdirMock.mockImplementation((path) => {
     const response = findResponse(path, readdirResponses)
     const convertedResponse = response.map((entry) => ({
@@ -34,7 +34,7 @@ export function setupFsMocks(config: MockConfig) {
   })
 
   // Set up fs.readFile mock
-  const readFileMock = mocked(fs.readFile)
+  const readFileMock = vi.mocked(fs.readFile)
   readFileMock.mockImplementation((path) => {
     return findResponse(path, readFileResponses) as any
   })

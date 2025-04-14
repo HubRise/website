@@ -35,8 +35,10 @@ Pour faciliter la prise en charge de vos demandes de support, nous vous recomman
 Pour donner accès à My Lemonade, procédez comme suit :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
-1. Dans la section **Permissions**, ajoutez contact@mylemonade.app en sélectionnant l'option **Manager** dans la liste déroulante des rôles.
-1. Cliquez sur l'icône **+** pour ajouter le nouvel utilisateur.
+1. Dans la section **Permissions**, ajoutez `contact@mylemonade.app`.
+1. Cliquez sur **Ajouter l'utilisateur**.
+1. Dans le menu déroulant de choix d'un rôle prédéfini, sélectionnez **Partenaire Technique**.
+1. Cliquez sur **Définir les permissions**.
 
 L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre point de vente. Le partage de mot de passe est déconseillé pour des raisons de sécurité.
 

@@ -30,8 +30,10 @@ To connect Sage X3, you need to grant Gigavee Technology support access to your 
 To grant access to Gigavee Technology, proceed as follows:
 
 1. From the HubRise back office, select **SETTINGS** in the left-hand menu.
-1. In the **Permissions** section, enter `support@gigavee.com` and select **Manager** in the drop-down list of roles.
-1. Click the **+** icon to grant Gigavee Technology support access to your account.
+1. In the **Permissions** section, enter `support@gigavee.com`.
+1. Click on **Add User**.
+1. In the dropdown menu for selecting a predefined role, select **Technical Partner**.
+1. Click on **Set Permissions**.
 
 Adding a user is the recommended way to grant access to a third party to your HubRise account or location. Sharing passwords is not recommended for security reasons. For more information on permissions, see the [Permissions](/docs/permissions) help page.
 
