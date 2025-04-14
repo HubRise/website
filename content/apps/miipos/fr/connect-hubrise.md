@@ -31,8 +31,10 @@ Pour connecter MiiPos, et faciliter la prise en charge de vos demandes de suppor
 Pour donner accès à MiiPos, procédez comme suit :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
-1. Dans la section **Permissions**, ajoutez contact@arcsolu.com en sélectionnant l'option **Manager** dans la liste déroulante des rôles.
-1. Cliquez sur l'icône **+** pour ajouter le nouvel utilisateur.
+1. Dans la section **Permissions**, ajoutez `contact@arcsolu.com`.
+1. Cliquez sur **Ajouter l'utilisateur**.
+1. Dans le menu déroulant de choix d'un rôle prédéfini, sélectionnez **Partenaire Technique**.
+1. Cliquez sur **Définir les permissions**.
 
 L'ajout d'un utilisateur est le moyen recommandé de donner l'autorisation d'accès à un tiers à votre compte, ou à votre point de vente HubRise. Le partage de mot de passe est déconseillé pour des raisons de sécurité.
 

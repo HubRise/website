@@ -33,8 +33,10 @@ To connect Châtaigne and facilitate the handling of your support requests, you 
 To grant access to Châtaigne, proceed as follows:
 
 1. From the HubRise back office, select **SETTINGS** in the left-hand menu.
-2. In the **Permissions** section, add `contact@chataigne.ai`.
-3. Click on **Edit permissions** and select the permissions to grant Châtaigne support for access to your account or location.
+1. In the **Permissions** section, enter `contact@chataigne.ai`.
+1. Click on **Add User**.
+1. In the dropdown menu for selecting a predefined role, select **Technical Partner**.
+1. Click on **Set Permissions**.
 
 Adding a user is the recommended way to grant access to a third party to your HubRise account or location. Sharing passwords is not recommended for security reasons. For more information on permissions, see the [Permissions](/docs/permissions) help page.
 

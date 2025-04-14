@@ -33,8 +33,10 @@ Pour connecter Châtaigne et faciliter le traitement de vos demandes de support,
 Pour donner accès à Châtaigne, procédez comme suit :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
-2. Dans la section **Permissions**, ajoutez `contact@chataigne.ai`.
-3. Cliquez sur **Modifier les permissions** et sélectionnez les permissions à attribuer pour permettre au support de Châtaigne d'accéder à votre compte ou à votre point de vente.
+1. Dans la section **Permissions**, ajoutez `contact@chataigne.ai`.
+1. Cliquez sur **Ajouter l'utilisateur**.
+1. Dans le menu déroulant de choix d'un rôle prédéfini, sélectionnez **Partenaire Technique**.
+1. Cliquez sur **Définir les permissions**.
 
 L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre compte HubRise ou au point de vente. Le partage de mot de passe est déconseillé pour des raisons de sécurité. Pour plus d'informations sur les permissions, voir notre aide en ligne, page [Permissions](/docs/permissions).
 

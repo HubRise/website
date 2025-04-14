@@ -34,8 +34,10 @@ Pour faciliter la prise en charge de vos demandes de support, nous vous recomman
 Pour donner accès à Tick'Eat, procédez comme suit :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
-1. Dans la section **Permissions**, ajoutez contact@tickeat.io en sélectionnant l'option **Manager** dans la liste déroulante des rôles.
-1. Cliquez sur l'icône **+** pour ajouter le nouvel utilisateur.
+1. Dans la section **Permissions**, ajoutez `contact@tickeat.io`.
+1. Cliquez sur **Ajouter l'utilisateur**.
+1. Dans le menu déroulant de choix d'un rôle prédéfini, sélectionnez **Partenaire Technique**.
+1. Cliquez sur **Définir les permissions**.
 
 L'ajout d'un utilisateur est le moyen le plus sûr de donner accès à un tiers. Le partage de mot de passe est déconseillé pour des raisons de sécurité.
 

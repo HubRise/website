@@ -46,13 +46,14 @@ When you make your request to HubRise, specify which apps you would like to conn
 
 We recommend providing Lightspeed support with access to your HubRise location connected with Lightspeed Restaurant. If needed, they will be able to troubleshoot issues by inspecting the logs of Lightspeed Restaurant Bridge.
 
-To give Lightspeed support access to your location, follow these steps.
+To give Lightspeed support access to your location, follow these steps:
 
-1. If you have multiple accounts, click the down arrow next to **Account** to select the appropriate account.
-1. From your HubRise back office, select **CONFIGURATION**.
-1. From the **Usage** section, select the location connected to Lightspeed from the **Location** column.
-1. In the **Permissions** section, add *k-series.support@lightspeedhq.com* to the list, and select **Manager** from the dropdown menu.
-1. Click on the **+** plus icon to confirm.
+1. From the HubRise back office, select **SETTINGS** in the left-hand menu.
+1. In the **Permissions** section, enter `k-series.support@lightspeedhq.com`.
+1. Click on **Add User**.
+1. In the dropdown menu for selecting a predefined role, select **Technical Partner**.
+1. Click on **Set Permissions**.
+
 
 ---
 
