@@ -1,3 +1,5 @@
+import { beforeEach, describe, expect, it } from "vitest"
+
 import { FallbackRoutes, LayoutName, Route, RouteName, Routes } from "./types"
 
 import { Router } from "./index"

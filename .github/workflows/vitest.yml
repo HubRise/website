@@ -1,8 +1,8 @@
-name: jest
+name: vitest
 on: push
 
 jobs:
-  jest:
+  vitest:
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
@@ -14,10 +14,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18.17.1
-          cache: 'yarn'
+          cache: "yarn"
 
       - name: Install JS dependencies
         run: yarn install
 
-      - name: Jest test suite
+      - name: Vitest test suite
         run: yarn test
