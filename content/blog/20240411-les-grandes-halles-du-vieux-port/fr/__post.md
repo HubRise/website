@@ -49,12 +49,10 @@ D'abord, pour son expérience auprès d'autres food court, qui est vraiment un c
 
 Cela fluidifie le processus de commande à tous points de vue. Les clients qui choisissent la commande à table sont autonomes, ce qui réduit les files d'attente au niveau des comptoirs et désengorge donc l'intérieur des halles, en particulier sur les périodes de rush. Cela libère du temps aux équipes, qui peuvent mieux se consacrer à la préparation des commandes. Les clients sont donc plus rapidement servis, ce qui contribue à améliorer leur niveau de satisfaction. Sans compter que cela influe positivement sur les taux de rotation et donc sur le renouvellement de la clientèle. Même si notre positionnement, c'est plutôt d'inviter nos clients à rester le plus possible pour profiter de l'ambiance des lieux en continu et découvrir l'ensemble de nos services et prestations. Après tout, notre promesse, c'est quand même “Boire, manger, tchatcher ! À n'importe quelle heure de la journée” !
 
----
-
+<Inset>
 **Felix, un client embHALLÉ par les HALLES !**
 
 “Manger, boire, tchater” c'est la promesse des Grandes Halles du Vieux Port et c'est justement ce que sont venus faire Felix et ses 2 amis d'enfance en ce dimanche midi. C'est une belle journée d'hiver comme la Provence en a le secret, et le vieux port de Marseille bourdonne de vie. Les Halles sont bondées mais on y circule bien et l'atmosphère décontractée met rapidement les trentenaires à leur aise. Après avoir commandé un verre au comptoir du Bar Central, ils prennent place sur la grande terrasse inondée de soleil, aux côtés d'une clientèle cosmopolite.
 Tout en bavardant et en sirotant leur verre, ils parcourent les cartes digitales des 11 échoppes grâce au QR code qu'ils se sont amusés à scanner. C'est d'ailleurs depuis son smartphone que l'un d'entre eux commande un plateau de fruits de mer de chez Coquillages Claude. Pour Félix et son ami, ce sera une pizza et un burger, commandés directement aux comptoirs du Grill des Halles et de la 500 Degrés Pizza, “parce que c'est sympa aussi de flâner et de se balader dans ce lieu de vie : un vrai micro quartier dans le quartier !” précise Felix.
 Si l'endroit les invite à la détente et au partage, il est aussi un véritable spectacle en soi, aussi vivant et animé que peut l'être la cité Phocéenne. Heureux d'avoir choisi ce lieu pour leurs joyeuses retrouvailles, les trois amis se promettent d'ailleurs d'y revenir bientôt… L'occasion peut-être de tester de nouvelles saveurs culinaires et de profiter de l'un des nombreux événements festifs organisés aux Halles !
-
----
+</Inset>
