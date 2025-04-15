@@ -4,14 +4,7 @@ import styled from "styled-components"
 import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const Wrapper = styled.div`
-  @media (min-width: ${breakpoints.large}) {
-    padding: 0 5rem;
-  }
-`
-
-export const InnerWrapper = styled.div`
-  max-width: 90rem;
-  margin: 0 auto;
+  ${mixin.containerWrapper}
 
   @media (min-width: ${breakpoints.large}) {
     display: flex;

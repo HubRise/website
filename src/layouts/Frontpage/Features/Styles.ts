@@ -5,10 +5,11 @@ import { StyledCard } from "@components/Card/Styles"
 import { breakpoints, mixin } from "@utils/styles"
 
 export const Cards = styled.div`
+  ${mixin.containerWrapper}
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
-  margin: 4rem auto 0;
+  margin-top: 3.5rem;
 
   ${StyledCard} {
     justify-content: space-between;
@@ -27,13 +28,6 @@ export const Cards = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2.5rem;
     row-gap: 1.875rem;
-    max-width: 90rem;
-    padding: 0 3.75rem;
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    max-width: 120rem;
-    padding: 0 7rem;
   }
 `
 

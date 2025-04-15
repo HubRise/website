@@ -10,14 +10,19 @@ export const StyledHeader = styled.div`
   display: none;
 
   @media (min-width: ${breakpoints.burgerMenu}) {
-    display: flex;
+    display: block;
     position: sticky;
     top: 0;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 3%;
     ${headerStyle};
   }
+`
+
+export const HeaderWrapper = styled.div`
+  ${mixin.containerWrapper}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 `
 
 export const Menu = styled.ul`

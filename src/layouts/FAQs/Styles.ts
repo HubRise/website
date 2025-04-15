@@ -18,8 +18,7 @@ export const CardTitle = styled.h4<{ $isExpanded: boolean }>`
 `
 
 export const Content = styled.div`
-  max-width: 90rem;
-  margin: 0 auto;
+  ${mixin.containerWrapper}
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
@@ -42,8 +41,6 @@ export const Content = styled.div`
   }
 
   @media (min-width: ${breakpoints.large}) {
-    padding: 0 3.5rem;
-
     ${StyledCard}:nth-child(odd):not(:last-child) {
       padding-left: 3.5rem;
     }

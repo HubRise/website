@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { breakpoints, colors, mixin } from "@utils/styles"
+import { colors, mixin } from "@utils/styles"
 
 export const Footer = styled.div`
   background-color: ${colors.backgroundWhite};
@@ -8,16 +8,12 @@ export const Footer = styled.div`
 `
 
 export const FooterWrapper = styled.div`
-  ${mixin.container};
-  padding: 1.5rem 0;
+  ${mixin.containerWrapper};
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-
-  @media (min-width: ${breakpoints.large}) {
-    padding-left: 0;
-    padding-right: 0;
-  }
 `
 export const IconButton = styled.button`
   height: 1.5rem;

@@ -1,17 +1,11 @@
 import styled from "styled-components"
 
 import { StyledCard } from "@components/Card/Styles"
-import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
-
-export const Wrapper = styled.div`
-  @media (min-width: ${breakpoints.large}) {
-    padding: 0 5rem;
-  }
-`
+import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const Content = styled.div`
-  max-width: 90rem;
-  margin: 2.75rem auto 0;
+  ${mixin.containerWrapper}
+  margin-top: 2.75rem;
 `
 
 export const PricingListCards = styled.div`

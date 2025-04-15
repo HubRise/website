@@ -4,14 +4,13 @@ import { StyledCard } from "@components/Card/Styles"
 import { breakpoints, colors, mixin } from "@utils/styles"
 
 export const Cards = styled.div`
-  max-width: 90rem;
-  margin: 2.75rem auto 0;
+  ${mixin.containerWrapper}
+  margin-top: 2.75rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.25rem;
 
   @media (min-width: ${breakpoints.large}) {
-    padding: 0 3.5rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
     ${StyledCard} {
@@ -20,11 +19,6 @@ export const Cards = styled.div`
         top: 1.5rem;
       }
     }
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    max-width: 120rem;
-    padding: 0 5rem;
   }
 `
 

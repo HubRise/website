@@ -5,14 +5,12 @@ import Icon from "@components/Icon"
 import { breakpoints, colors, mixin } from "@utils/styles"
 
 export const StyledThumbList = styled.div`
-  max-width: 90rem;
-  margin: 0 auto;
+  ${mixin.containerWrapper}
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
 
   @media (min-width: ${breakpoints.large}) {
-    padding: 0 3.5rem;
     grid-template-columns: 1fr 1fr;
   }
 `

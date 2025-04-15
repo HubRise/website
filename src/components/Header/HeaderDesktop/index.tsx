@@ -16,7 +16,7 @@ import { IHeaderLink } from "../shared/types"
 import { isHeaderLinkActive } from "../shared/utils"
 
 import LanguageLinks from "./LanguageLinks"
-import { StyledHeader, Menu, MenuItem, MenuLink, RightSide } from "./Styles"
+import { StyledHeader, Menu, MenuItem, MenuLink, RightSide, HeaderWrapper } from "./Styles"
 
 interface HeaderDesktopProps {
   languagePaths: LanguagePaths
@@ -30,45 +30,47 @@ const HeaderDesktop = ({ languagePaths, menuItems }: HeaderDesktopProps): JSX.El
 
   return (
     <StyledHeader data-testid="header:desktop">
-      <div>
-        <Link href={home}>
-          <Image src="/images/logo.png" alt="HubRise" width={150} height={40} />
-        </Link>
-      </div>
+      <HeaderWrapper>
+        <div>
+          <Link href={home}>
+            <Image src="/images/logo.png" alt="HubRise" width={150} height={40} />
+          </Link>
+        </div>
 
-      <Menu>
-        {menuItems.map(({ title, to, content, mobile_only }, idx) => {
-          if (mobile_only) return
-          const isActive = isHeaderLinkActive(currentPathname, to)
-          return (
-            <div key={idx}>
-              {content ? (
-                <Dropdown
-                  value={title}
-                  menuContent={
-                    <>
-                      {content.products?.length && <Products products={content?.products} />}
-                      {content.resources && <Resources resources={content?.resources} />}
-                    </>
-                  }
-                />
-              ) : (
-                <MenuItem $isActive={isActive}>
-                  <MenuLink href={to} $isActive={isActive}>
-                    {title}
-                  </MenuLink>
-                </MenuItem>
-              )}
-            </div>
-          )
-        })}
-      </Menu>
+        <Menu>
+          {menuItems.map(({ title, to, content, mobile_only }, idx) => {
+            if (mobile_only) return
+            const isActive = isHeaderLinkActive(currentPathname, to)
+            return (
+              <div key={idx}>
+                {content ? (
+                  <Dropdown
+                    value={title}
+                    menuContent={
+                      <>
+                        {content.products?.length && <Products products={content?.products} />}
+                        {content.resources && <Resources resources={content?.resources} />}
+                      </>
+                    }
+                  />
+                ) : (
+                  <MenuItem $isActive={isActive}>
+                    <MenuLink href={to} $isActive={isActive}>
+                      {title}
+                    </MenuLink>
+                  </MenuItem>
+                )}
+              </div>
+            )
+          })}
+        </Menu>
 
-      <RightSide>
-        <LanguageLinks languagePaths={languagePaths} />
-        <Button link={login} label={t(`layout.header.buttons.login`)} type="secondary" />
-        <Button link={signup} label={t(`layout.header.buttons.signup`)} />
-      </RightSide>
+        <RightSide>
+          <LanguageLinks languagePaths={languagePaths} />
+          <Button link={login} label={t(`layout.header.buttons.login`)} type="secondary" />
+          <Button link={signup} label={t(`layout.header.buttons.signup`)} />
+        </RightSide>
+      </HeaderWrapper>
     </StyledHeader>
   )
 }

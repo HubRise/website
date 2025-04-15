@@ -55,6 +55,8 @@ export const InnerContainer = styled.div`
 
 export const LogoContainer = styled.div<{ $moveShift: number; $nbCards: number }>`
   display: grid;
+  // In some cases when removing or adding new app probably need to change Math.ceil for repeat function
+  // E.g. Math.ceil($nbCards / 3) or Math.ceil($nbCards / 3 + 1)
   grid-template-columns: repeat(${({ $nbCards }) => Math.ceil($nbCards / 3)}, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 0.75rem;
@@ -64,7 +66,7 @@ export const LogoContainer = styled.div<{ $moveShift: number; $nbCards: number }
   ${({ $moveShift }) =>
     $moveShift > 0 &&
     css`
-      animation: ${move($moveShift)} 70s linear infinite;
+      animation: ${move($moveShift)} 140s linear infinite;
     `}
 
   & > div:nth-child(even) {

@@ -169,11 +169,6 @@ export const mixin = {
     cursor: pointer;
     user-select: none;
   `,
-  container: css`
-    max-width: 96%;
-    width: ${sizes.maxWidth};
-    margin: 0 auto;
-  `,
   expandBefore: ({ width, color }: { width: string; color: string }): RuleSet => css`
     &::before {
       content: "";
@@ -242,6 +237,20 @@ export const mixin = {
 
     @media (min-width: ${breakpoints.biggest}) {
       ${fontSizeMixins.fontSizeDisplayMd}
+    }
+  `,
+  containerWrapper: css`
+    max-width: ${breakpoints.biggest};
+    margin: 0 auto;
+
+    @media (min-width: ${breakpoints.large}) {
+      padding-left: 3.75rem;
+      padding-right: 3.75rem;
+    }
+
+    @media (min-width: ${breakpoints.biggest}) {
+      padding-left: 5rem;
+      padding-right: 5rem;
     }
   `,
 }

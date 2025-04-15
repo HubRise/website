@@ -4,20 +4,16 @@ import { breakpoints, colors, mixin } from "@utils/styles"
 
 export const StyledFooter = styled.footer`
   color: ${colors.white};
+  background-color: ${colors.backgroundDarker};
 `
 
 export const Wrapper = styled.div`
-  background-color: ${colors.backgroundDarker};
+  ${mixin.containerWrapper}
   position: relative;
   padding: 0 1rem;
-
-  @media (min-width: ${breakpoints.medium}) {
-    padding: 0;
-  }
 `
 
 export const LogoWrapper = styled.div`
-  ${mixin.container};
   padding-top: 4rem;
 `
 
@@ -38,7 +34,6 @@ export const Nav = styled.div`
   text-align: center;
 
   @media (min-width: ${breakpoints.medium}) {
-    ${mixin.container};
     grid-template-columns: repeat(2, 1fr);
     text-align: left;
   }

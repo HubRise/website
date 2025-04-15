@@ -5,8 +5,8 @@ import { StyledCard } from "@components/Card/Styles"
 import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const TestimonialsWrapper = styled.div`
-  max-width: ${breakpoints.biggest};
-  margin: 3.5rem auto 0;
+  ${mixin.containerWrapper}
+  margin-top: 3.5rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
@@ -29,7 +29,6 @@ export const TestimonialsWrapper = styled.div`
   }
 
   @media (min-width: ${breakpoints.large}) {
-    padding: 0 5rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
     ${StyledCard} {
@@ -38,10 +37,6 @@ export const TestimonialsWrapper = styled.div`
         top: 1.75rem;
       }
     }
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    padding: 0 10.5rem;
   }
 `
 

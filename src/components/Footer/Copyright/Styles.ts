@@ -12,15 +12,13 @@ export const StyledCopyright = styled.div`
 `
 
 export const Container = styled.div`
-  padding: 1.5rem 0 2.5rem 0;
+  ${mixin.containerWrapper}
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid #ffffff33;
-
-  @media (min-width: ${breakpoints.medium}) {
-    ${mixin.container};
-  }
 `
 
 export const Text = styled.span`

@@ -2,15 +2,9 @@ import styled from "styled-components"
 
 import { breakpoints, colors, mixin } from "@utils/styles"
 
-export const Wrapper = styled.div`
-  @media (min-width: ${breakpoints.large}) {
-    padding: 0 5rem;
-  }
-`
-
 export const Cards = styled.div`
-  max-width: 90rem;
-  margin: 2.75rem auto 0;
+  ${mixin.containerWrapper}
+  margin-top: 2.75rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
