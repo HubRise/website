@@ -43,5 +43,4 @@ sections:
 copyright:
   terms_link:
     title: Terms of service
-    # TODO: There is no this page for english version
-    link: /fr/legal/conditions-generales
+    link: /legal/general-terms-and-conditions
