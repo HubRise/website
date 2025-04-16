@@ -1,11 +1,11 @@
 import Block from "@components/Block"
 import { BlockContent, BlockContentButton, BlockContentLink } from "@components/BlockContent"
 import { useLayoutContext } from "@components/LayoutContext"
-import { AppsYaml } from "@layouts/Apps/types"
+import { IntegrationsYaml } from "@layouts/Integrations/types"
 import { text } from "@utils/misc"
 
 interface HeroProps {
-  hero: AppsYaml["content"]["hero"]
+  hero: IntegrationsYaml["content"]["hero"]
 }
 
 const Hero = ({ hero }: HeroProps): JSX.Element => {

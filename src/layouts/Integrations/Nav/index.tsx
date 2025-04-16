@@ -3,7 +3,7 @@ import * as React from "react"
 import useOnClickOutside from "@hooks/client/useOnClickOutside"
 import useSticky from "@hooks/client/useSticky"
 import useTranslation from "@hooks/client/useTranslation"
-import { AppsYaml, TCountry } from "@layouts/Apps/types"
+import { IntegrationsYaml, TCountry } from "@layouts/Integrations/types"
 import { remIntoPixels } from "@utils/dom"
 import { Language } from "@utils/locales"
 import { sizes } from "@utils/styles"
@@ -23,8 +23,8 @@ import {
 
 interface NavProps {
   language: Language
-  categories: AppsYaml["content"]["categories"]
-  countries: AppsYaml["content"]["countries"]
+  categories: IntegrationsYaml["content"]["categories"]
+  countries: IntegrationsYaml["content"]["countries"]
   allAppsLabel: string
   searchInputValue: string
   onSearchInputChange: (value: string) => void

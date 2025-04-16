@@ -3,7 +3,7 @@ export type TCountry = {
   code: string
 }
 
-export interface AppsYaml {
+export interface IntegrationsYaml {
   meta: {
     title: string
     description: string

@@ -1,6 +1,6 @@
 import Block from "@components/Block"
 import useTranslation from "@hooks/client/useTranslation"
-import { AppsYaml } from "@layouts/Apps/types"
+import { IntegrationsYaml } from "@layouts/Integrations/types"
 import { ContentImage } from "@utils/contentImage"
 import { text } from "@utils/misc"
 
@@ -19,9 +19,9 @@ import {
 interface AppGroupProps {
   title: string
   slug: string
-  apps: AppsYaml["content"]["categories"][0]["apps"]
+  apps: IntegrationsYaml["content"]["categories"][0]["apps"]
   logoImages: { [logo: string]: ContentImage }
-  additionalSections: AppsYaml["content"]["additional_sections"]
+  additionalSections: IntegrationsYaml["content"]["additional_sections"]
   hasSuggestApp: boolean
 }
 

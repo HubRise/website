@@ -1,4 +1,4 @@
-import Apps from "@layouts/Apps"
+import Integrations from "@layouts/Integrations"
 import contentImage, { ContentImage } from "@utils/contentImage"
 import { Route, RouteName } from "@utils/router/types"
 
@@ -12,7 +12,7 @@ const apps = async (route: Route<RouteName, "apps">): Promise<JSX.Element> => {
     }),
   )
 
-  return <Apps language={route.language} yaml={route.context.yaml} logoImages={logoImages} />
+  return <Integrations language={route.language} yaml={route.context.yaml} logoImages={logoImages} />
 }
 
 export default apps

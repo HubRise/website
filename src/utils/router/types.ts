@@ -1,7 +1,7 @@
-import { AppsYaml } from "@layouts/Apps/types"
 import { DocumentationIndexYaml } from "@layouts/DocumentationIndex/types"
 import { DocumentationSimpleFrontMatter } from "@layouts/DocumentationSimple/types"
 import { FrontpageYaml } from "@layouts/Frontpage/types"
+import { IntegrationsYaml } from "@layouts/Integrations/types"
 import { PartnersYaml } from "@layouts/Partners/types"
 import { PricingYaml } from "@layouts/Pricing/types"
 import { TestimonialsYaml } from "@layouts/Testimonials/types"
@@ -55,7 +55,7 @@ export type LayoutName =
   | "pricing"
   | "testimonials"
 export type Context<L extends LayoutName> = L extends "apps"
-  ? { context: { yaml: AppsYaml } }
+  ? { context: { yaml: IntegrationsYaml } }
   : L extends "blog-index"
   ? { context: { mdFiles: Array<BlogMdFile>; archives: BlogArchives } }
   : L extends "blog-post"

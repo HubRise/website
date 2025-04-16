@@ -4,12 +4,12 @@ import { afterAll, beforeAll, describe, expect, it, vi } from "vitest"
 import { readYamlFile } from "@utils/files"
 import { render } from "@utils/test-helpers/render"
 
-import { AppsYaml } from "./types"
+import { IntegrationsYaml } from "./types"
 
 import Apps from "."
 
 describe("Renders Integrations page", async () => {
-  const yaml = await readYamlFile<AppsYaml>("/en", "apps")
+  const yaml = await readYamlFile<IntegrationsYaml>("/en", "apps")
   const logoImages = {}
 
   const scrollIntoViewMock = vi.fn()
