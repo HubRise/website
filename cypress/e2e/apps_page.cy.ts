@@ -2,7 +2,7 @@
 
 describe("Apps page", () => {
   describe("Searchbar", () => {
-    const appsResults = () => cy.get("[data-test='apps:result']")
+    const appsResults = () => cy.get("[data-testid='apps:result']")
     const categoryFilter = () => cy.get("[data-testid='apps:categoryfilter']")
 
     it("searches apps by category", () => {

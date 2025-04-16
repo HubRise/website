@@ -1,3 +1,8 @@
+export type TCountry = {
+  title: string
+  code: string
+}
+
 export interface IntegrationsYaml {
   meta: {
     title: string
@@ -20,14 +25,16 @@ export interface IntegrationsYaml {
       slug: string
       has_suggest_app: boolean
       apps: Array<{
-        website: string
-        documentation: string
+        website: string | null | undefined
+        documentation: string | null | undefined
         logo: string
+        country: string | null | undefined
         title: string
         description: string
-        additional_info: string
+        additional_info: string | null | undefined
       }>
     }>
+    countries: Array<TCountry>
     additional_sections: {
       suggest_app: {
         description: string

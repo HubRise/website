@@ -32,7 +32,7 @@ const AppGroup = ({ title, slug, apps, logoImages, additionalSections, hasSugges
     <Block backgroundColor="none" title={title} titleAnchor={slug}>
       <Group>
         {apps.map((app, idx) => (
-          <AppBoxLink key={idx} href={app.documentation || app.website} data-test="apps:result">
+          <AppBoxLink key={idx} href={app.documentation || app.website || "#"} data-testid="apps:result">
             {logoImages[app.logo] && (
               <AppLogo>
                 <AppLogoImage {...logoImages[app.logo]} alt={app.title} />
