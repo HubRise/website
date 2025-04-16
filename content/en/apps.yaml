@@ -19,13 +19,13 @@ content:
         - website: https://3s-pos.com
           documentation: /apps/3s-pos
           logo: 3spos.png
-          country: CA
+          country:
           title: 3S POS
           description: 3S POS offers a complete EPOS suite for all types of hospitality businesses. Suitable for single and multi-store businesses and feature-rich, 3S POS can be customised to fit specific business and operational requirements.
         - website: https://adipos.fr/en
           documentation: /apps/adipos
           logo: adipos.png
-          country: FR,CA
+          country:
           title: Adipos
           description: Adipos is a Point of Sales for iOS and Android dedicated to catering. It covers the needs of dine-in, delivery and Click & Collect, for single or multi-store setups. Adipos comes with a number of interconnected applications, including self ordering kiosks, online ordering and a Kitchen Display System.
           additional_info:
@@ -272,7 +272,7 @@ content:
         - website: https://delicity.com
           documentation: /apps/delicity
           logo: delicity.png
-          country: GB
+          country: FR
           title: Delicity
           description: Delicity is a food ordering and delivery service platform available. Instead of charging restaurants a commission on orders, Delicity bills a fixed cost per order, along with a delivery cost. Delicity is present in several major cities in France.
         - website: https://www.deliveroo.com
@@ -754,43 +754,43 @@ content:
         - website:
           documentation: /apps/catalog-manager
           logo: catalog-manager.png
-          country: GB
+          country:
           title: Catalog Manager
           description: Catalog Manager allows you to create, edit and manage your HubRise catalogs. Catalogs can be pulled from or pushed into integrated solutions, such as EPOS, online ordering solutions or food ordering and delivery platforms. Catalog Manager is a free app edited by HubRise.
         - website: https://www.expedy.fr
           documentation: /apps/expedy
           logo: expedy-print.png
-          country: FR
+          country:
           title: Expedy Print
           description: Expedy Print is used to automate printing of orders received from e-commerce websites or any other web application to one or more printers simultaneously. Connection can be done by ETHERNET, 3G/4G or Wifi.
         - website:
           documentation: /apps/orderline
           logo: orderline.png
-          country: AU
+          country:
           title: OrderLine
           description: OrderLine centralises orders received from an e-commerce website and food ordering and delivery platforms. Orders can be managed and printed from OderLine. OrderLine is free app edited by HubRise.
         - website: https://www.qwenta.ch
           documentation: /apps/qwenta
           logo: qwenta.png
-          country: JP
+          country:
           title: Qwenta
           description: Qwenta is a QR code-based table payment solution tailored for Swiss restaurants. Guests can split the bill, add a tip, and leave feedback before completing their payment.
         - website: https://www.satoeurope.com
           documentation: /apps/sato
           logo: sato.png
-          country: DE,JP
+          country:
           title: SATO
           description: SATO provides autonomous customisable printers for retail stores and restaurants. SATO printers are used in over 90 countries.
         - website: https://tickncook.com
           documentation: /apps/tickncook
           logo: tickncook.png
-          country: ES
+          country:
           title: TicknCook
           description: TicknCook is a Kitchen Display System that handles orders coming from all sales channels. TicknCook can be customised with specialised screens for bar, pastry or kitchen.
         - website: https://1bot.io
           documentation: /apps/1bot
           logo: 1bot.png
-          country: IT
+          country:
           title: 1Bot
           description: 1Bot is a personal assistant. This chatbot can answer customers' questions and send a summary of the conversation by SMS to the store.
   countries:
@@ -808,8 +808,6 @@ content:
       code: ES
     - title: Italy
       code: IT
-    - title: Japan
-      code: JP
     - title: Australia
       code: AU
   additional_sections:

@@ -34,7 +34,7 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
       const filteredApps = apps.filter(
         (app) =>
           (!filterSearch || doesSearchTextMatch(app.title, filterSearch)) &&
-          (!app.country || app.country.includes(selectedCountry.code)) &&
+          (selectedCountry.code === "all" || !app.country || app.country.includes(selectedCountry.code)) &&
           (selectedCategory === content.all_apps || selectedCategory === title),
       )
 
@@ -50,26 +50,24 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
   }, [content.categories, content.all_apps, filterSearch, selectedCountry.code, selectedCategory])
 
   const scrollIntoView = () => {
-    const appsResults = document.getElementById("apps-results")
-    appsResults!.scrollIntoView({ behavior: "auto" })
+    setTimeout(() => {
+      const appsResults = document.getElementById("apps-results")
+      appsResults!.scrollIntoView({ behavior: "auto" })
+    }, 0)
   }
 
   const onSearchInputChange = (value: string) => {
     setFilterSearch(value)
-    setSelectedCategory(content.all_apps)
-    setSelectedCountry(content.countries[0])
     scrollIntoView()
   }
 
   const onCategoryChange = (category: string) => {
     setSelectedCategory(category)
-    setFilterSearch("")
     scrollIntoView()
   }
 
   const onCountryChange = (country: TCountry) => {
     setSelectedCountry(country)
-    setFilterSearch("")
     scrollIntoView()
   }
 

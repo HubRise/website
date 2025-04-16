@@ -19,13 +19,13 @@ content:
         - website: https://3s-pos.com
           documentation: /fr/apps/3s-pos
           logo: 3spos.png
-          country: CA
+          country:
           title: 3S POS
           description: 3S POS est une suite complète aux fonctionnalités personnalisables pour répondre aux besoins de chaque restaurant ou hôtelier.
         - website: https://adipos.fr/
           documentation: /fr/apps/adipos
           logo: adipos.png
-          country: FR,CA
+          country:
           title: Adipos
           description: Adipos est une solution de caisse pour iOS et Android. Elle est adaptée aux besoins de la restauration en salle, livraison et click & collect, pour les entreprises mono ou multi établissements. Adipos propose des applications interconnectées, dont des bornes de commande, une solution de commande en ligne et un écran cuisine.
           additional_info:
@@ -267,7 +267,7 @@ content:
         - website: https://delicity.com
           documentation: /fr/apps/delicity
           logo: delicity.png
-          country: GB
+          country: FR
           title: Delicity
           description: Delicity est une plateforme de commande et de livraison de repas. Plutôt que d'appliquer une commission sur les commandes, Delicity facture au restaurateur un coût fixe par commande ainsi qu'un coût de livraison. Disponible en France.
         - website: https://www.deliveroo.com
@@ -762,64 +762,62 @@ content:
         - website:
           documentation: /fr/apps/catalog-manager
           logo: catalog-manager.png
-          country: GB
+          country:
           title: Catalog Manager
           description: Catalog Manager permet de créer, modifier et gérer vos catalogues HubRise. Ces catalogues peuvent être reçus de ou envoyés à des solutions connectées telles que votre caisse, votre solutions de commande en ligne ou des plateformes de livraison de repas. Catalog Manager est un logiciel gratuit édité par HubRise.
         - website: https://www.expedy.fr
           documentation: /fr/apps/expedy
           logo: expedy-print.png
-          country: FR
+          country:
           title: Expedy Print
           description: Expedy Print permet d'automatiser l'impression de commandes reçues de sites marchands ou toute autre application web à une ou plusieurs imprimantes en même temps. La connexion se fait par ETHERNET, 3G/4G, ou Wifi.
         - website:
           documentation: /fr/apps/orderline
           logo: orderline.png
-          country: AU
+          country:
           title: OrderLine
           description: OrderLine centralise les commandes passées depuis un site marchand ou autre plateforme de commande en ligne. Les commandes sont ainsi gérées et imprimés. OrderLine est un logiciel gratuit édité par HubRise.
           additional_info:
         - website: https://www.qwenta.ch
           documentation: /fr/apps/qwenta
           logo: qwenta.png
-          country: JP
+          country:
           title: Qwenta
           description: Qwenta est une solution de paiement à table par QR code conçue pour les restaurants suisses. Les clients peuvent diviser l'addition, ajouter un pourboire et donner un avis avant de finaliser le paiement.
         - website: https://www.satoeurope.com/fr
           documentation: /fr/apps/sato
           logo: sato.png
-          country: DE,JP
+          country:
           title: SATO
           description: SATO fournit des imprimantes autonomes personnalisables pour les commerces de proximité et les restaurants. Les imprimantes sont utilisées dans plus de 90 pays.
         - website: https://tickncook.com
           documentation: /fr/apps/tickncook
           logo: tickncook.png
-          country: ES
+          country:
           title: TicknCook
           description: TicknCook est un écran cuisine (KDS), qui peut recevoir les commandes depuis tous vos canaux de vente. La solution est personnalisable avec possibilité de mettre en place des écrans spécialisés pour le bar, la cuisine, ou autres ateliers.
         - website: https://1bot.io
           documentation: /fr/apps/1bot
           logo: 1bot.png
-          country: IT
+          country:
           title: 1Bot
           description: 1Bot est un assistant personnel. Ce chatbot répond aux questions des clients et transmet un résumé de la conversation au magasin par SMS. Il est possible de prendre un rendez-vous, demander un rappel ou poser une question.
   countries:
-    - title: All countries
+    - title: Tous les pays
       code: all
-    - title: United Kingdom
+    - title: Royaume-Uni
       code: GB
     - title: France
       code: FR
     - title: Canada
       code: CA
-    - title: Germany
+    - title: Allemagne
       code: DE
-    - title: Spain
+    - title: Espagne
       code: ES
-    - title: Italy
+    - title: Italie
       code: IT
-    - title: Japan
-      code: JP
-    - title: Australia
+    - title: Australie
       code: AU
   additional_sections:
     suggest_app:

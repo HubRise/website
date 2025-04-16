@@ -129,17 +129,19 @@ const Index = ({
             </FilterButton>
 
             <FilterList $isExpanded={isCountriesExpanded}>
-              {countries.map((country, idx) => {
-                return (
-                  <FilterListItem
-                    key={idx}
-                    $isActive={selectedCountryLabel === country.title}
-                    onClick={() => handleCountryItemClick(country)}
-                  >
-                    {country.title}
-                  </FilterListItem>
-                )
-              })}
+              {countries
+                .sort((a, b) => a.title.localeCompare(b.title))
+                .map((country, idx) => {
+                  return (
+                    <FilterListItem
+                      key={idx}
+                      $isActive={selectedCountryLabel === country.title}
+                      onClick={() => handleCountryItemClick(country)}
+                    >
+                      {country.title}
+                    </FilterListItem>
+                  )
+                })}
             </FilterList>
           </FilterWrapper>
         </Container>
