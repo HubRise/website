@@ -30,36 +30,24 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
   }, [filterSearch, selectedCategory, content.all_apps])
 
   const filteredAppsByCategory = React.useMemo(() => {
-    let filterResults
+    const filteredCategories = content.categories.map(({ title, slug, apps, has_suggest_app }) => {
+      const filteredApps = apps.filter(
+        (app) =>
+          (!filterSearch || doesSearchTextMatch(app.title, filterSearch)) &&
+          (!app.country || app.country.includes(selectedCountry.code)) &&
+          (selectedCategory === content.all_apps || selectedCategory === title),
+      )
 
-    if (filterSearch === "") {
-      if (selectedCountry.code === "all") {
-        return content.categories
-      }
-
-      filterResults = content.categories.map(({ title, slug, apps, has_suggest_app }) => {
-        return {
-          title,
-          slug,
-          apps: apps.filter((app) => !app.country || app.country.includes(selectedCountry.code)),
-          has_suggest_app,
-        }
-      })
-
-      return filterResults
-    }
-
-    filterResults = content.categories.map(({ title, slug, apps, has_suggest_app }) => {
       return {
         title,
         slug,
-        apps: apps.filter((app) => doesSearchTextMatch(app.title, filterSearch)),
+        apps: filteredApps,
         has_suggest_app,
       }
     })
 
-    return filterResults.filter(({ apps }) => apps.length > 0)
-  }, [filterSearch, content.categories, selectedCountry])
+    return filteredCategories.filter(({ apps }) => apps.length > 0)
+  }, [content.categories, content.all_apps, filterSearch, selectedCountry.code, selectedCategory])
 
   const scrollIntoView = () => {
     const appsResults = document.getElementById("apps-results")
@@ -105,23 +93,17 @@ const Apps = ({ language, yaml, logoImages }: AppsProps): JSX.Element => {
       <div id="apps-results" />
 
       {filteredAppsByCategory.length > 0 ? (
-        <>
-          {filteredAppsByCategory.map(({ title, slug, apps, has_suggest_app }, idx) => {
-            if (selectedCategory === content.all_apps || selectedCategory === title) {
-              return (
-                <AppGroup
-                  key={idx}
-                  title={title}
-                  slug={slug}
-                  apps={apps}
-                  logoImages={logoImages}
-                  additionalSections={content.additional_sections}
-                  hasSuggestApp={has_suggest_app && !hasFiltersApplied}
-                />
-              )
-            }
-          })}
-        </>
+        filteredAppsByCategory.map(({ title, slug, apps, has_suggest_app }, idx) => (
+          <AppGroup
+            key={idx}
+            title={title}
+            slug={slug}
+            apps={apps}
+            logoImages={logoImages}
+            additionalSections={content.additional_sections}
+            hasSuggestApp={has_suggest_app && !hasFiltersApplied}
+          />
+        ))
       ) : (
         <NoResults />
       )}
