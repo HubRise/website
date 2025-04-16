@@ -49,6 +49,7 @@ const Index = ({
   const [isCountriesExpanded, setIsCountriesExpanded] = React.useState(false)
 
   const $navRef = React.useRef<HTMLDivElement>(null)
+  const $inputRef = React.useRef<HTMLInputElement>(null)
   const $categoryListRef = useOnClickOutside(() => {
     setIsCategoriesExpanded(false)
   })
@@ -60,6 +61,13 @@ const Index = ({
   const isSticky = useSticky($navRef, headerHeightInPixels)
 
   const { t } = useTranslation()
+
+  const handleSearchWrapperClick = () => {
+    if ($inputRef.current) {
+      $inputRef.current.focus()
+      $inputRef.current.select()
+    }
+  }
 
   const handleCategoryItemClick = (category: string) => {
     onCategoryChange(category)
@@ -75,15 +83,15 @@ const Index = ({
     <>
       <StyledNav ref={$navRef} $isSticky={isSticky}>
         <Container $isSticky={isSticky}>
-          <SearchWrapper>
+          <SearchWrapper onClick={handleSearchWrapperClick}>
             <SearchIcon code="search" />
             <Input
+              ref={$inputRef}
               autoFocus
               value={searchInputValue}
               placeholder={t("apps.search_input_placeholder")}
-              onChange={(e) => {
-                onSearchInputChange(e.target.value)
-              }}
+              onChange={(e) => onSearchInputChange(e.target.value)}
+              onFocus={(e) => e.target.select()}
             />
           </SearchWrapper>
 
@@ -96,9 +104,7 @@ const Index = ({
             <FilterList $isExpanded={isCategoriesExpanded}>
               <FilterListItem
                 $isActive={selectedCategoryLabel === allAppsLabel}
-                onClick={() => {
-                  handleCategoryItemClick(allAppsLabel)
-                }}
+                onClick={() => handleCategoryItemClick(allAppsLabel)}
               >
                 {allAppsLabel}
               </FilterListItem>
@@ -107,9 +113,7 @@ const Index = ({
                   <FilterListItem
                     key={idx}
                     $isActive={selectedCategoryLabel === category.title}
-                    onClick={() => {
-                      handleCategoryItemClick(category.title)
-                    }}
+                    onClick={() => handleCategoryItemClick(category.title)}
                   >
                     {category.title}
                   </FilterListItem>
@@ -130,9 +134,7 @@ const Index = ({
                   <FilterListItem
                     key={idx}
                     $isActive={selectedCountryLabel === country.title}
-                    onClick={() => {
-                      handleCountryItemClick(country)
-                    }}
+                    onClick={() => handleCountryItemClick(country)}
                   >
                     {country.title}
                   </FilterListItem>
