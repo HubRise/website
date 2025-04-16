@@ -96,8 +96,6 @@ const Index = ({
     }
   }, [isSticky])
 
-
-
   return (
     <>
       <StyledNav ref={$navRef} $isSticky={isSticky}>
@@ -115,54 +113,44 @@ const Index = ({
           </SearchWrapper>
 
           <FilterWrapper ref={$categoryListRef} data-testid="apps:categoryfilter">
-            <FilterButton onClick={() => setIsCategoriesExpanded((v) => !v)}>
+            <FilterButton onClick={() => setIsCategoriesExpanded((v) => !v)} $isExpanded={isCategoriesExpanded}>
               {selectedCategoryLabel}
               <ArrowIcon code="expand_more" $isExpanded={isCategoriesExpanded} />
             </FilterButton>
 
             <FilterList $isExpanded={isCategoriesExpanded}>
-              <FilterListItem
-                $isActive={selectedCategoryLabel === allAppsLabel}
-                onClick={() => handleCategoryItemClick(allAppsLabel)}
-              >
-                {allAppsLabel}
-                {selectedCategoryLabel === category.title && <CheckIcon code="check" />}
-              </FilterListItem>
-              {categories.map((category, idx) => {
-                return (
-                  <FilterListItem
-                    key={idx}
-                    $isActive={selectedCategoryLabel === category.title}
-                    onClick={() => handleCategoryItemClick(category.title)}
-                  >
-                    {category.title}
-                    {selectedCategoryLabel === category.title && <CheckIcon code="check" />}
-                  </FilterListItem>
-                )
-              })}
+              {[allAppsLabel, ...categories.map((category) => category.title)].map((label, idx) => (
+                <FilterListItem
+                  key={idx}
+                  $isActive={selectedCategoryLabel === label}
+                  onClick={() => handleCategoryItemClick(label)}
+                >
+                  {label}
+                  {selectedCategoryLabel === label && <CheckIcon code="check" />}
+                </FilterListItem>
+              ))}
             </FilterList>
           </FilterWrapper>
 
           <FilterWrapper ref={$countryListRef} data-testid="apps:countryfilter">
-            <FilterButton onClick={() => setIsCountriesExpanded((v) => !v)}>
+            <FilterButton onClick={() => setIsCountriesExpanded((v) => !v)} $isExpanded={isCountriesExpanded}>
               {selectedCountryLabel}
-              <ArrowIcon code="expand_more" $isExpanded={isCountriesExpanded} />            </FilterButton>
+              <ArrowIcon code="expand_more" $isExpanded={isCountriesExpanded} />{" "}
+            </FilterButton>
 
             <FilterList $isExpanded={isCountriesExpanded}>
               {countries
                 .sort((a, b) => a.title.localeCompare(b.title))
-                .map((country, idx) => {
-                  return (
-                    <FilterListItem
-                      key={idx}
-                      $isActive={selectedCountryLabel === country.title}
-                      onClick={() => handleCountryItemClick(country)}
-                    >
-                      {country.title}
-                      {selectedCountryLabel === country.title && <CheckIcon code="check" />}
-                    </FilterListItem>
-                  )
-                })}
+                .map((country, idx) => (
+                  <FilterListItem
+                    key={idx}
+                    $isActive={selectedCountryLabel === country.title}
+                    onClick={() => handleCountryItemClick(country)}
+                  >
+                    {country.title}
+                    {selectedCountryLabel === country.title && <CheckIcon code="check" />}
+                  </FilterListItem>
+                ))}
             </FilterList>
           </FilterWrapper>
         </Container>
