@@ -31,11 +31,9 @@ const HeaderDesktop = ({ languagePaths, menuItems }: HeaderDesktopProps): JSX.El
   return (
     <StyledHeader data-testid="header:desktop">
       <HeaderWrapper>
-        <div>
-          <Link href={home}>
-            <Image src="/images/logo.png" alt="HubRise" width={150} height={40} />
-          </Link>
-        </div>
+        <Link href={home}>
+          <Image src="/images/logo.png" alt="HubRise" width={150} height={40} />
+        </Link>
 
         <Menu>
           {menuItems.map(({ title, to, content, mobile_only }, idx) => {

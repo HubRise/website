@@ -81,18 +81,16 @@ const Index = ({
     setIsCountriesExpanded(false)
   }
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     const desktopHeader = document.querySelectorAll<HTMLDivElement>('[data-testid="header:desktop"]')[0]
     const mobileHeader = document.querySelectorAll<HTMLDivElement>('[data-testid="header:mobile"]')[0]
-    const stickyBorderColor = colors.primary
-    const unstickyBorderColor = colors.headerBorder
 
     if (isSticky) {
-      desktopHeader.style.borderColor = stickyBorderColor
-      mobileHeader.style.borderColor = stickyBorderColor
+      desktopHeader.style.borderColor = colors.primary
+      mobileHeader.style.borderColor = colors.primary
     } else {
-      desktopHeader.style.borderColor = unstickyBorderColor
-      mobileHeader.style.borderColor = unstickyBorderColor
+      desktopHeader.style.borderColor = colors.headerBorder
+      mobileHeader.style.borderColor = colors.headerBorder
     }
   }, [isSticky])
 

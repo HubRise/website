@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { useEffect, useState } from "react"
+import * as React from "react"
 
 import Icon from "@components/Icon"
 import useClientRoutes from "@hooks/client/useClientRoutes"
@@ -19,10 +19,10 @@ interface HeaderMobileProps {
 }
 
 const HeaderMobile = ({ languagePaths, menuItems }: HeaderMobileProps): JSX.Element => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = React.useState(false)
   const { home } = useClientRoutes()
 
-  useEffect(() => {
+  React.useLayoutEffect(() => {
     if (isOpen) {
       document.body.style.overflowY = "hidden"
     } else {
