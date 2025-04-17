@@ -6,7 +6,8 @@ import * as React from "react"
 import Icon from "@components/Icon"
 import useClientRoutes from "@hooks/client/useClientRoutes"
 import type { LanguagePaths } from "@utils/locales"
-import { iconSizes } from "@utils/styles"
+import { colors, iconSizes } from "@utils/styles"
+import { useIntegrationsContext } from "context/IntegrationsContext"
 
 import { IHeaderLink } from "../shared/types"
 
@@ -19,8 +20,10 @@ interface HeaderMobileProps {
 }
 
 const HeaderMobile = ({ languagePaths, menuItems }: HeaderMobileProps): JSX.Element => {
+  const mobileHeaderRef = React.useRef<HTMLDivElement>(null)
   const [isOpen, setIsOpen] = React.useState(false)
   const { home } = useClientRoutes()
+  const { isIntegrationsNavSticky } = useIntegrationsContext()
 
   React.useLayoutEffect(() => {
     if (isOpen) {
@@ -34,9 +37,19 @@ const HeaderMobile = ({ languagePaths, menuItems }: HeaderMobileProps): JSX.Elem
     }
   }, [isOpen])
 
+  React.useLayoutEffect(() => {
+    if (mobileHeaderRef.current) {
+      if (isIntegrationsNavSticky) {
+        mobileHeaderRef.current.style.borderColor = colors.primary
+      } else {
+        mobileHeaderRef.current.style.borderColor = colors.headerBorder
+      }
+    }
+  }, [isIntegrationsNavSticky, mobileHeaderRef])
+
   return (
     <>
-      <StyledHeader data-testid="header:mobile">
+      <StyledHeader data-testid="header:mobile" ref={mobileHeaderRef}>
         <BurgerIcon onClick={() => setIsOpen(true)}>
           <Icon code="menu" size={iconSizes._32} />
         </BurgerIcon>

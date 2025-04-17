@@ -6,7 +6,8 @@ import useTranslation from "@hooks/client/useTranslation"
 import { IntegrationsYaml, TCountry } from "@layouts/Integrations/types"
 import { remIntoPixels } from "@utils/dom"
 import { Language } from "@utils/locales"
-import { colors, sizes } from "@utils/styles"
+import { sizes } from "@utils/styles"
+import { useIntegrationsContext } from "context/IntegrationsContext"
 
 import {
   StyledNav,
@@ -49,6 +50,7 @@ const Index = ({
 }: NavProps): JSX.Element => {
   const [isCategoriesExpanded, setIsCategoriesExpanded] = React.useState(false)
   const [isCountriesExpanded, setIsCountriesExpanded] = React.useState(false)
+  const { setIsIntegrationsNavSticky } = useIntegrationsContext()
 
   const $navRef = React.useRef<HTMLDivElement>(null)
   const $inputRef = React.useRef<HTMLInputElement>(null)
@@ -81,18 +83,9 @@ const Index = ({
     setIsCountriesExpanded(false)
   }
 
-  React.useLayoutEffect(() => {
-    const desktopHeader = document.querySelectorAll<HTMLDivElement>('[data-testid="header:desktop"]')[0]
-    const mobileHeader = document.querySelectorAll<HTMLDivElement>('[data-testid="header:mobile"]')[0]
-
-    if (isSticky) {
-      desktopHeader.style.borderColor = colors.primary
-      mobileHeader.style.borderColor = colors.primary
-    } else {
-      desktopHeader.style.borderColor = colors.headerBorder
-      mobileHeader.style.borderColor = colors.headerBorder
-    }
-  }, [isSticky])
+  React.useEffect(() => {
+    setIsIntegrationsNavSticky(isSticky)
+  }, [setIsIntegrationsNavSticky, isSticky])
 
   return (
     <>

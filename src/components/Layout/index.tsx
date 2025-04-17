@@ -8,6 +8,7 @@ import { LayoutContextProvider } from "@components/LayoutContext"
 import LayoutForms from "@components/LayoutForms"
 import ToastProvider from "@components/Toast"
 import { Language } from "@utils/locales"
+import { IntegrationsContextProvider } from "context/IntegrationsContext"
 
 import GoogleAnalytics from "./GoogleAnalytics"
 import Recaptcha from "./Recaptcha"
@@ -24,23 +25,25 @@ const Layout = ({ language, header, footer, children }: LayoutProps): JSX.Elemen
   return (
     <LayoutContextProvider language={language}>
       <ToastProvider>
-        {process.env.NEXT_PUBLIC_INTERACTIVE_DEV_MODE === "true" && <ContentHotReload />}
+        <IntegrationsContextProvider>
+          {process.env.NEXT_PUBLIC_INTERACTIVE_DEV_MODE === "true" && <ContentHotReload />}
 
-        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
-          <GoogleAnalytics id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} />
-        )}
+          {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
+            <GoogleAnalytics id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} />
+          )}
 
-        {process.env.NEXT_PUBLIC_RECAPTCHA_KEY_ID && <Recaptcha keyId={process.env.NEXT_PUBLIC_RECAPTCHA_KEY_ID} />}
+          {process.env.NEXT_PUBLIC_RECAPTCHA_KEY_ID && <Recaptcha keyId={process.env.NEXT_PUBLIC_RECAPTCHA_KEY_ID} />}
 
-        <CommonClientStyles />
+          <CommonClientStyles />
 
-        <KeepInFirstPositionImportant />
+          <KeepInFirstPositionImportant />
 
-        {header}
-        <Main>{children}</Main>
-        {footer}
+          {header}
+          <Main>{children}</Main>
+          {footer}
 
-        <LayoutForms />
+          <LayoutForms />
+        </IntegrationsContextProvider>
       </ToastProvider>
     </LayoutContextProvider>
   )

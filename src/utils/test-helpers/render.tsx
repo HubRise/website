@@ -3,11 +3,14 @@ import React from "react"
 
 import { LayoutContextProvider } from "@components/LayoutContext"
 import ToastProvider from "@components/Toast"
+import { IntegrationsContextProvider } from "context/IntegrationsContext"
 
 export const generateAppWrapper = ({ children }: { children: React.ReactNode }): JSX.Element => {
   return (
     <LayoutContextProvider language="en">
-      <ToastProvider>{children}</ToastProvider>
+      <ToastProvider>
+        <IntegrationsContextProvider>{children}</IntegrationsContextProvider>
+      </ToastProvider>
     </LayoutContextProvider>
   )
 }
