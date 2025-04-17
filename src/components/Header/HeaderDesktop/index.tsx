@@ -7,11 +7,10 @@ import * as React from "react"
 
 import Button from "@components/Button"
 import Dropdown from "@components/Dropdown"
+import { useLayoutContext } from "@components/LayoutContext"
 import useClientRoutes from "@hooks/client/useClientRoutes"
 import useTranslation from "@hooks/client/useTranslation"
 import type { LanguagePaths } from "@utils/locales"
-import { colors } from "@utils/styles"
-import { useIntegrationsContext } from "context/IntegrationsContext"
 
 import Products from "../Products"
 import Resources from "../Resources"
@@ -27,24 +26,13 @@ interface HeaderDesktopProps {
 }
 
 const HeaderDesktop = ({ languagePaths, menuItems }: HeaderDesktopProps): JSX.Element => {
-  const desktopHeaderRef = React.useRef<HTMLDivElement>(null)
   const { t } = useTranslation()
   const { home, signup, login } = useClientRoutes()
   const currentPathname = usePathname()
-  const { isIntegrationsNavSticky } = useIntegrationsContext()
-
-  React.useLayoutEffect(() => {
-    if (desktopHeaderRef.current) {
-      if (isIntegrationsNavSticky) {
-        desktopHeaderRef.current.style.borderColor = colors.primary
-      } else {
-        desktopHeaderRef.current.style.borderColor = colors.headerBorder
-      }
-    }
-  }, [isIntegrationsNavSticky, desktopHeaderRef])
+  const { isIntegrationsNavSticky } = useLayoutContext()
 
   return (
-    <StyledHeader data-testid="header:desktop" ref={desktopHeaderRef}>
+    <StyledHeader data-testid="header:desktop" $isIntegrationsNavSticky={isIntegrationsNavSticky}>
       <HeaderWrapper>
         <Link href={home}>
           <Image src="/images/logo.png" alt="HubRise" width={150} height={40} />

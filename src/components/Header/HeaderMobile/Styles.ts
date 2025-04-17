@@ -5,7 +5,7 @@ import { breakpoints, mixin } from "@utils/styles"
 
 import { headerStyle } from "../shared/styles"
 
-export const StyledHeader = styled.div`
+export const StyledHeader = styled.div<{ $isIntegrationsNavSticky: boolean }>`
   position: sticky;
   top: 0;
   ${headerStyle};

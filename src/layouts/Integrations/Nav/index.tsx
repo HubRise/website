@@ -1,5 +1,6 @@
 import * as React from "react"
 
+import { useLayoutContext } from "@components/LayoutContext"
 import useOnClickOutside from "@hooks/client/useOnClickOutside"
 import useSticky from "@hooks/client/useSticky"
 import useTranslation from "@hooks/client/useTranslation"
@@ -7,7 +8,6 @@ import { IntegrationsYaml, TCountry } from "@layouts/Integrations/types"
 import { remIntoPixels } from "@utils/dom"
 import { Language } from "@utils/locales"
 import { sizes } from "@utils/styles"
-import { useIntegrationsContext } from "context/IntegrationsContext"
 
 import {
   StyledNav,
@@ -50,7 +50,7 @@ const Index = ({
 }: NavProps): JSX.Element => {
   const [isCategoriesExpanded, setIsCategoriesExpanded] = React.useState(false)
   const [isCountriesExpanded, setIsCountriesExpanded] = React.useState(false)
-  const { setIsIntegrationsNavSticky } = useIntegrationsContext()
+  const { setIsIntegrationsNavSticky } = useLayoutContext()
 
   const $navRef = React.useRef<HTMLDivElement>(null)
   const $inputRef = React.useRef<HTMLInputElement>(null)

@@ -10,6 +10,8 @@ export interface LayoutContextInterface {
     }
   }
   language: Language
+  isIntegrationsNavSticky: boolean
+  setIsIntegrationsNavSticky: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 const LayoutContext = React.createContext<LayoutContextInterface>({} as LayoutContextInterface)
@@ -20,7 +22,8 @@ interface LayoutContextProviderProps {
 }
 
 const LayoutContextProvider = ({ language, children }: LayoutContextProviderProps): JSX.Element => {
-  const [isContactVisible, setContactVisibility] = React.useState(false)
+  const [isContactVisible, setContactVisibility] = React.useState<boolean>(false)
+  const [isIntegrationsNavSticky, setIsIntegrationsNavSticky] = React.useState<boolean>(false)
 
   return (
     <LayoutContext.Provider
@@ -32,6 +35,8 @@ const LayoutContextProvider = ({ language, children }: LayoutContextProviderProp
           },
         },
         language,
+        isIntegrationsNavSticky,
+        setIsIntegrationsNavSticky,
       }}
     >
       {children}

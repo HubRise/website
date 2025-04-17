@@ -6,7 +6,7 @@ import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 import { headerStyle } from "../shared/styles"
 
-export const StyledHeader = styled.div`
+export const StyledHeader = styled.div<{ $isIntegrationsNavSticky: boolean }>`
   display: none;
 
   @media (min-width: ${breakpoints.burgerMenu}) {
