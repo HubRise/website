@@ -125,12 +125,12 @@ If the order has no delivery, a `404 - Not Found` error is returned.
   "driver_name": "John",
   "driver_phone": "+33612345678",
   "driver_phone_access_code": "1234",
+  "driver_latitude": "48.856702",
+  "driver_longitude": "2.35222",
   "assigned_at": "2023-01-01T12:11:03+01:00",
   "pickup_at": null,
   "delivered_at": null,
-  "cancelled_at": null,
-  "driver_latitude": "48.856702",
-  "driver_longitude": "2.35222"
+  "cancelled_at": null
 }
 ```
 
