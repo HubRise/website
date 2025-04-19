@@ -3,6 +3,7 @@ meta:
   description: Liste des applications intégrées ou en cours d'intégration à l'écosystème HubRise. Les applications intégrées partagent leurs données en temps réel.
 content:
   hero:
+    # TODO: Need to translate
     title: Applications intégrées
     description:
       paragraph_1_text: Vous êtes commerçant et votre application ne figure pas dans cette liste ?

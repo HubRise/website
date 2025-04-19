@@ -16,7 +16,7 @@ type ColorMap = Record<BackgroundColor, string>
 
 export const bgColorMap: ColorMap = {
   none: "transparent",
-  white: colors.white,
+  white: colors.backgroundWhite,
   green: colors.primary,
 }
 
