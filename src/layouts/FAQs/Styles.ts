@@ -6,7 +6,7 @@ import { StyledIcon } from "@components/Icon/Styles"
 import { StyledUnderline } from "@components/Underline/Styles"
 import { breakpoints, colors, mixin } from "@utils/styles"
 
-export const CardTitle = styled.h4<{ $isExpanded: boolean }>`
+export const CardTitle = styled.h2<{ $isExpanded: boolean }>`
   ${mixin.cardTitle}
   display: flex;
   align-items: center;

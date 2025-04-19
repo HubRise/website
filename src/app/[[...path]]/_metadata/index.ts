@@ -23,8 +23,8 @@ export const metadata = async (route: Route<RouteName, LayoutName>): Promise<Met
       return (route as Route<RouteName, "documentation">).context.mdFile.frontMatter.meta
     case "documentation-index":
       return (route as Route<RouteName, "documentation-index">).context.yaml.meta
-    case "documentation-simple":
-      return (route as Route<RouteName, "documentation-simple">).context.frontMatter.meta
+    case "branding":
+      return (route as Route<RouteName, "branding">).context.yaml.meta
     case "contact-us":
       return (route as Route<RouteName, "contact-us">).context.yaml.meta
     case "faqs":

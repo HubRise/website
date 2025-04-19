@@ -1,8 +1,8 @@
 import { GetInTouchYaml } from "@components/GetInTouch/types"
 import { GetStartedYaml } from "@components/GetStarted/types"
+import { BrandingYaml } from "@layouts/Branding/types"
 import { ContactUsYaml } from "@layouts/ContactUs/types"
 import { DocumentationIndexYaml } from "@layouts/DocumentationIndex/types"
-import { DocumentationSimpleFrontMatter } from "@layouts/DocumentationSimple/types"
 import { FAQsYaml } from "@layouts/FAQs/types"
 import { FrontpageYaml } from "@layouts/Frontpage/types"
 import { IntegrationsYaml } from "@layouts/Integrations/types"
@@ -57,7 +57,7 @@ export type LayoutName =
   | "contact-us"
   | "documentation"
   | "documentation-index"
-  | "documentation-simple"
+  | "branding"
   | "faqs"
   | "frontpage"
   | "orderline"
@@ -76,8 +76,8 @@ export type Context<L extends LayoutName> = L extends "apps"
   ? { context: { mdFile: DocMdFile; folder: DocFolder } }
   : L extends "documentation-index"
   ? { context: { yaml: DocumentationIndexYaml } }
-  : L extends "documentation-simple"
-  ? { context: { content: string; frontMatter: DocumentationSimpleFrontMatter } }
+  : L extends "branding"
+  ? { context: { yaml: BrandingYaml } }
   : L extends "faqs"
   ? { context: { yaml: FAQsYaml }; getInTouch: { yaml: GetInTouchYaml } }
   : L extends "frontpage"
