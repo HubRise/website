@@ -41,7 +41,8 @@ sections:
       - title: LinkedIn
         icon: linkedin
         to: https://www.linkedin.com/company/hubrise
-copyright:
-  terms_link:
-    title: Terms of service
+copyright_links:
+  - title: Terms and Conditions
     link: /fr/legal/conditions-generales
+  - title: Legal Notices
+    link: /fr/legal/mentions-legales

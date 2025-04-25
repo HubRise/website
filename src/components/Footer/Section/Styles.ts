@@ -18,6 +18,14 @@ export const Header = styled.h4`
   }
 `
 
+export const HeaderUnderline = styled.div`
+  width: 5rem;
+  height: 0.125rem;
+  border-radius: 6.25rem;
+  background-color: ${colors.borderMedium};
+  margin-bottom: 1rem;
+`
+
 export const List = styled.ul`
   display: flex;
   flex-direction: column;

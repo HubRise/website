@@ -7,10 +7,8 @@ export interface IFooter {
       to: string
     }>
   }>
-  copyright: {
-    terms_link: {
-      title: string
-      link: string
-    }
-  }
+  copyright_links: Array<{
+    title: string
+    link: string
+  }>
 }

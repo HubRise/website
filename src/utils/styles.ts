@@ -67,7 +67,7 @@ export const colors = {
   textDefault: "#475467",
 
   backgroundDarker: "#333",
-  backgroundDark: "#555",
+  backgroundDark: "#404040",
   backgroundLight: "#efefef",
   backgroundLightest: "#f8f8f8",
   backgroundWhite: "#fff",
