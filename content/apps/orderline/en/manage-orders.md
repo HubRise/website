@@ -8,7 +8,7 @@ meta:
   description: Instructions on how to view order details, to update the order status, and to print a receipt. Connect apps and synchronise your data.
 ---
 
-OrderLine users can change the statuses flow to manage orders in the way that best suits the business. This section describes the default status flow to accept, or print the order receipt by selecting the corresponding button. To customise this flow, see [Order Status Flow](/apps/orderline/settings/#order-status-flow).
+OrderLine users can change the statuses flow to manage orders in the way that best suits the business. This section describes the default status flow to accept, or print the order receipt by selecting the corresponding button. To customise this flow, see [Order Status Flow](/apps/orderline/settings#order-status-flow).
 
 ## Receive Orders
 
@@ -18,7 +18,7 @@ OrderLine can also emit a sound notification to inform you of new orders. To con
 
 ---
 
-**IMPORTANT NOTE:** Browsers may block sound notifications. To keep them permanently enabled, follow the instructions in the FAQ [How Do I Keep Sound Notifications Enabled](/apps/orderline/faqs/keep-sound-notifications-enabled/).
+**IMPORTANT NOTE:** Browsers may block sound notifications. To keep them permanently enabled, follow the instructions in the FAQ [How Do I Keep Sound Notifications Enabled](/apps/orderline/faqs/keep-sound-notifications-enabled).
 
 ---
 
@@ -26,7 +26,7 @@ On first connection, OrderLine synchronises all orders from the past 30 days.
 
 ![OrderLine Order displays](./images/018-2x-order-displays.png)
 
-## View Order
+## View Order {#view-order}
 
 To view the order details, click on the order card. To close it, click the close icon <InlineImage width="23" height="23">![OrderLine Close icon](../images/032-close.png)</InlineImage> or anywhere outside the card.
 
@@ -46,7 +46,7 @@ Order cards display all the details needed to process the order, including the f
 
 To update an order's status, open the order card and choose the appropriate status button.
 
-Depending on your OrderLine configuration, you may have the option to add extra details during specific status updates. To adjust the configuration, see [Additional Data Prompt](/apps/orderline/settings/#additional-data-prompt). These prompts can be useful in certain situations, such as:
+Depending on your OrderLine configuration, you may have the option to add extra details during specific status updates. To adjust the configuration, see [Additional Data Prompt](/apps/orderline/settings#additional-data-prompt). These prompts can be useful in certain situations, such as:
 
 - Providing an optional **Message for the customer** when marking an order as **Cancelled**, to justify the cancellation.
 - Specifying a **Confirmed time** for delivery, when an order is marked as **Accepted** but cannot be delivered at the expected time. If no **Confirmed time** is specified, the initial expected delivery time will be used.
@@ -61,7 +61,7 @@ To modify the delivery time or add a message for your client, click on the pen i
 
 ---
 
-Certain status updates, such as marking an order as **Completed**, might cause the order to disappear from the **Today's Orders** tab, depending on your OrderLine configuration. To view it again, click **VIEW** on the **hidden orders** card, or select the **Order History** tab. To adjust the hidden statuses, see [Hide Orders](/apps/orderline/settings/#hide-orders).
+Certain status updates, such as marking an order as **Completed**, might cause the order to disappear from the **Today's Orders** tab, depending on your OrderLine configuration. To view it again, click **VIEW** on the **hidden orders** card, or select the **Order History** tab. To adjust the hidden statuses, see [Hide Orders](/apps/orderline/settings#hide-orders).
 
 ![OrderLine Hidden Orders Card](./images/039-2x-hidden-orders-card.png)
 

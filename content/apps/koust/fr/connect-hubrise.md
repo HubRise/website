@@ -10,11 +10,11 @@ meta:
 
 Vous pouvez connecter Koust à HubRise de manière autonome, en seulement quelques étapes.
 
-## Connecter Koust
+## Connecter Koust {#connect}
 
 Pour établir la connexion entre Koust et HubRise :
 
-1. Assurez-vous d'avoir un compte HubRise. Pour plus d'informations sur la création d'un compte HubRise, consultez le [Guide de prise en main](/docs/getting-started/).
+1. Assurez-vous d'avoir un compte HubRise. Pour plus d'informations sur la création d'un compte HubRise, consultez le [Guide de prise en main](/docs/get-started).
 1. Ouvrez le tableau de bord Koust, puis cliquez sur le nom de votre entreprise dans la barre de menu (en haut à droite). Un menu déroulant s'affiche.
 1. Sélectionnez **Paramètres**. La page **Paramètres de l'établissement** s'affiche.
 1. Sélectionnez l'onglet **Intégrations**.
@@ -42,14 +42,16 @@ Pour faciliter la prise en charge de vos demandes de support, nous vous recomman
 Pour donner accès à Koust, procédez comme suit :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
-1. Dans la section **Permissions**, ajoutez contact@koust.fr en sélectionnant l'option **Manager** dans la liste déroulante des rôles.
-1. Cliquez sur l'icône **+** pour ajouter le nouvel utilisateur.
+1. Dans la section **Permissions**, ajoutez `contact@koust.fr`.
+1. Cliquez sur **Ajouter l'utilisateur**.
+1. Dans le menu déroulant de choix d'un rôle prédéfini, sélectionnez **Partenaire Technique**.
+1. Cliquez sur **Définir les permissions**.
 
 L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre point de vente. Le partage de mot de passe est déconseillé pour des raisons de sécurité.
 
 ## Déconnecter Koust
 
-1. Suivez les 3 premières étapes de la partie [Se connecter](/apps/koust/connexion-hubrise#se-connecter).
+1. Suivez les 3 premières étapes de la partie [Se connecter](/apps/koust/connect-hubrise#connect).
    ![Connexion à HubRise - Onglet Intégrations après connexion](./images/004-koust-connected.png)
 1. Cliquez sur le bloc **HubRise** présent dans la liste des intégrations. Une boîte de dialogue s'affiche.
    ![Connexion à HubRise - Se déconnecter](./images/005-koust-hubrise-information.png)

@@ -23,7 +23,7 @@ Pour une inclusion sur cette page, transmettez-nous les éléments suivants :
 
 ## Documentation de l'intégration
 
-Cette documentation présente la solution, et la démarche à suivre pour la connecter à HubRise. Elle vise à rendre les utilisateurs et les équipes de support autonomes dans l'installation et le dépannage de la connexion. Pour voir un exemple, consultez la documentation de [Nestor](/apps/nestor).
+Cette documentation présente la solution, et la démarche à suivre pour la connecter à HubRise. Elle vise à rendre les utilisateurs et les équipes de support autonomes dans l'installation et le dépannage de la connexion. Pour voir un exemple, consultez la documentation de [Nestor](/apps/nestor/overview).
 
 Pour la page d'aperçu, qui est la première page visible de cette documentation, vous devez fournir les éléments suivants :
 

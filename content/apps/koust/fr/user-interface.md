@@ -25,4 +25,4 @@ Après avoir importé un catalogue HubRise, vous pouvez retrouver les articles d
 
 Lors de la réception d'une commande, Koust utilise les codes ref des articles pour rechercher les produits correspondants dans le catalogue importé depuis HubRise. Les articles non trouvés sont créés automatiquement et peuvent être consultés sur cette page.
 
-Pour vous assurer que les articles des commandes soient associés aux bons produits du catalogue, vérifiez la valeur des codes ref en suivant les étapes de la page [Associer les codes ref](/apps/koust/associer-codes-ref#produits).
+Pour vous assurer que les articles des commandes soient associés aux bons produits du catalogue, vérifiez la valeur des codes ref en suivant les étapes de la page [Associer les codes ref](/apps/koust/map-ref-codes#products).

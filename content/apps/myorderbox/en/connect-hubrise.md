@@ -12,7 +12,7 @@ You can connect MyOrderBox to HubRise autonomously from your MyOrderBox back off
 
 To activate the connection between MyOrderBox and HubRise, follow these steps.
 
-1. Log in to your [MyOrderBox back office](https://go.myorderboxhq.com/).
+1. Log in to your [MyOrderBox back office](https://go.myorderboxhq.com).
 1. From the navigation menu, select **Setup** > **Add Ons** > **HubRise**.
 1. Click the **Connect HubRise** button.
 1. From the HubRise authorisation page, select the location you want to connect and click **Allow** to give MyOrderBox access to your data.

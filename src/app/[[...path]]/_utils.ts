@@ -1,12 +1,11 @@
 import { allLanguages, Language } from "@utils/locales"
-import router from "@utils/router"
+import { Router } from "@utils/router"
 
 export type Params = { path?: Array<string> }
 
-export const findRoute = async (params: Params) => {
-  const theRouter = await router()
+export const findRoute = async (params: Params, router: Router) => {
   const href = params.path ? `/${params.path.join("/")}` : "/"
-  return theRouter.getRouteFromHref(href)
+  return router.getRouteFromHref(href)
 }
 
 export const pathLanguage404 = (path?: Array<string>): Language => {

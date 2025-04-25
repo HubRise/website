@@ -10,7 +10,7 @@ describe("Pages", () => {
     ["/apps/livepepper", "Overview"],
     ["/apps/livepepper/connect-hubrise", "Connect to HubRise"],
     ["/developers", "Quick Start"],
-    ["/developers/api/account-management", "Account Management"],
+    ["/developers/api/accounts", "Locations, Accounts and Users"],
     ["/fr", "Intégration pour le commerce"],
     ["/fr/apps", "Applications intégrées"],
   ].forEach(([page, ...keywords]) => {

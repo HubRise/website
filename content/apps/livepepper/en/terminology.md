@@ -11,10 +11,10 @@ meta:
 HubRise and LivePepper each use their own terminology. The same concept can therefore have a different designation in each solution. The correspondence table below shows these differences.
 
 | LivePepper             | HubRise  | Description                                        |
-| ---------------------- | -------- | -------------------------------------------------- |
+| ---------------------- |----------| -------------------------------------------------- |
 | Account                | User ID  | Restaurant Managers unique identifier.             |
 | Branch                 | Location | The actual restaurant.                             |
-| Variant                | Sku      | A product variant, such as the size or crust type. |
+| Variant                | SKU      | A product variant, such as the size or crust type. |
 | Deal on Specific Items | Deal     | Special offer on specific items.                   |
 | Deal on the Order      | Discount | Special offer on the overall order.                |
 | Menu                   | Catalog  | List of products.                                  |

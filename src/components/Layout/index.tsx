@@ -1,6 +1,5 @@
 "use client"
 
-import Script from "next/script"
 import * as React from "react"
 
 import CommonClientStyles from "@components/CommonClientStyles"
@@ -10,6 +9,8 @@ import LayoutForms from "@components/LayoutForms"
 import ToastProvider from "@components/Toast"
 import { Language } from "@utils/locales"
 
+import GoogleAnalytics from "./GoogleAnalytics"
+import Recaptcha from "./Recaptcha"
 import { Main } from "./Styles"
 
 interface LayoutProps {
@@ -25,11 +26,11 @@ const Layout = ({ language, header, footer, children }: LayoutProps): JSX.Elemen
       <ToastProvider>
         {process.env.NEXT_PUBLIC_INTERACTIVE_DEV_MODE === "true" && <ContentHotReload />}
 
-        {process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY && (
-          <Script
-            src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
-          />
+        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
+          <GoogleAnalytics id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} />
         )}
+
+        {process.env.NEXT_PUBLIC_RECAPTCHA_KEY_ID && <Recaptcha keyId={process.env.NEXT_PUBLIC_RECAPTCHA_KEY_ID} />}
 
         <CommonClientStyles />
 

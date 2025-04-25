@@ -10,7 +10,7 @@ meta:
 
 Connecting Just Eat to HubRise allows you to receive Just Eat orders directly in your EPOS or any other solution connected to your HubRise account.
 
-The Just Eat OrderPad will need to remain switched on to receive orders in HubRise. For more information, see [Can I Turn Off the Orderpad?](/apps/just-eat-flyt/faqs/turn-off-orderpad/). Orders can either be manually accepted on the OrderPad, or auto-accepted in some Just Eat markets. For more information, see [Do I Want Auto-Accept Activated?](/apps/just-eat-flyt/faqs/auto-accept/)
+The Just Eat OrderPad will need to remain switched on to receive orders in HubRise. For more information, see [Can I Turn Off the Orderpad?](/apps/just-eat-flyt/faqs/turn-off-orderpad). Orders can either be manually accepted on the OrderPad, or auto-accepted in some Just Eat markets. For more information, see [Do I Want Auto-Accept Activated?](/apps/just-eat-flyt/faqs/auto-accept)
 
 This page describes the information Just Eat sends to HubRise. It helps you understand how orders will be received on your EPOS.
 
@@ -63,7 +63,7 @@ These are typically associated with specific ref codes in your EPOS, which you c
 
 ## Order Times
 
-Just Eat provides the time when the eater expects to receive or collect the order. Just Eat Flyt Bridge sends this time to HubRise as the `expected_time` field. This time cannot be changed by the EPOS.
+For restaurant delivery orders, Just Eat provides the time the customer expects the order to be delivered. For other types of orders, it provides the time the order should be ready for pickup, either by the customer or a delivery rider. In both scenarios, this time is transmitted to HubRise as the `expected_time` field. This time cannot be changed by the EPOS.
 
 ## Customer Details
 
@@ -113,7 +113,7 @@ Every option has single quantity. Multiple identical options are encoded in sepa
 
 <details>
 
-Below is a sample payload containing a single item with an option.
+<summary>Sample JSON containing a single item with an option</summary>
 
 ```json
 "items": [
@@ -157,7 +157,7 @@ For restaurant delivery orders only, Just Eat Flyt Bridge receives the following
 
 <details>
 
-Below is a sample payload with customer details.
+<summary>Sample JSON with customer details</summary>
 
 ```json
 "customer": {
@@ -201,7 +201,7 @@ The available fields in the payloads are the following:
 
 <details>
 
-Below is a sample payload for charges.
+<summary>Sample JSON for charges</summary>
 
 ```json
 {

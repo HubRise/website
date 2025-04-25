@@ -20,4 +20,4 @@ In the top right corner of the screen, you can click on the arrow <InlineImage w
 
 Clicking on each operation on the main page will take you to the detailed logs of that specific operation.
 
-Logs are a powerful debugging tool in case of issues. To understand in detail how to read logs, see [Understanding HubRise Logs](/docs/hubrise-logs/).
+Logs are a powerful debugging tool in case of issues. To understand in detail how to read logs, see [Understanding HubRise Logs](/docs/hubrise-logs/overview).

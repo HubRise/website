@@ -2,7 +2,9 @@ import { AppsYaml } from "@layouts/Apps/types"
 import { DocumentationIndexYaml } from "@layouts/DocumentationIndex/types"
 import { DocumentationSimpleFrontMatter } from "@layouts/DocumentationSimple/types"
 import { FrontpageYaml } from "@layouts/Frontpage/types"
+import { PartnersYaml } from "@layouts/Partners/types"
 import { PricingYaml } from "@layouts/Pricing/types"
+import { TestimonialsYaml } from "@layouts/Testimonials/types"
 import { BlogArchives } from "@utils/BlogIndexer/types"
 import DocIndexer, { Folder } from "@utils/DocIndexer"
 import { ContentDirName, readMdFile, readYamlFile } from "@utils/files"
@@ -16,7 +18,6 @@ import type { FallbackRoutes, RouteNameDynamic, Routes } from "./types"
 import { createRoute } from "./types"
 
 export const fallbackRoutes: FallbackRoutes = {
-  apps_category: "apps",
   apps_page: "apps",
   blog_archive: "blog",
   blog_post: "blog",
@@ -33,37 +34,21 @@ const staticRoutes = async (): Promise<Routes> => {
     createRoute({ href: "/apps", language: "en", name: "apps", layout: "apps", context: { yaml: await readYamlFile<AppsYaml>("/en", "apps") } }),
     createRoute({ href: "/pricing", language: "en", name: "pricing", layout: "pricing", context: { yaml: await readYamlFile<PricingYaml>("/en", "pricing") } }),
     createRoute({ href: "/developers", language: "en", name: "developers", layout: "documentation-index", context: { yaml: await readYamlFile<DocumentationIndexYaml>("/en", "developers") } }),
-    createRoute({ href: "/branding", language: "en", name: "branding", layout: "documentation-simple", context: await readMdFile<DocumentationSimpleFrontMatter>("/en", "branding") }), 
+    createRoute({ href: "/faqs", language: "en", name: "faqs", layout: "documentation-simple", context: await readMdFile<DocumentationSimpleFrontMatter>("/en", "faqs") }),
+    createRoute({ href: "/branding", language: "en", name: "branding", layout: "documentation-simple", context: await readMdFile<DocumentationSimpleFrontMatter>("/en", "branding") }),
     createRoute({ href: "/contributing", language: "en", name: "contributing", layout: "documentation-index", context: { yaml: await readYamlFile<DocumentationIndexYaml>("/en", "contributing") } }),
+    createRoute({ href: "/testimonials", language: "en", name: "testimonials", layout: "testimonials", context: { yaml: await readYamlFile<TestimonialsYaml>("/en", "testimonials") } }),
+    createRoute({ href: "/partners", language: "en", name: "partners", layout: "partners", context: { yaml: await readYamlFile<PartnersYaml>("/en", "partners") } }),
     createRoute({ href: "/fr", language: "fr", name: "frontpage", layout: "frontpage", context: { yaml: await readYamlFile<FrontpageYaml>("/fr", "frontpage") } }),
     createRoute({ href: "/fr/apps", language: "fr", name: "apps", layout: "apps", context: { yaml: await readYamlFile<AppsYaml>("/fr", "apps") } }),
     createRoute({ href: "/fr/tarifs", language: "fr", name: "pricing", layout: "pricing", context: { yaml: await readYamlFile<PricingYaml>("/fr", "pricing") } }),
     createRoute({ href: "/fr/developers", language: "fr", name: "developers", layout: "documentation-index", context: { yaml: await readYamlFile<DocumentationIndexYaml>("/fr", "developers") } }),
     createRoute({ href: "/fr/faqs", language: "fr", name: "faqs", layout: "documentation-simple", context: await readMdFile<DocumentationSimpleFrontMatter>("/fr", "faqs") }),
-    createRoute({ href: "/fr/branding", language: "fr", name: "branding", layout: "documentation-simple", context: await readMdFile<DocumentationSimpleFrontMatter>("/fr", "branding") }),
-    createRoute({ href: "/fr/contributing", language: "fr", name: "contributing", layout: "documentation-index", context: { yaml: await readYamlFile<DocumentationIndexYaml>("/fr", "contributing") } }),
+    createRoute({ href: "/fr/marque", language: "fr", name: "branding", layout: "documentation-simple", context: await readMdFile<DocumentationSimpleFrontMatter>("/fr", "branding") }),
+    createRoute({ href: "/fr/contribuer", language: "fr", name: "contributing", layout: "documentation-index", context: { yaml: await readYamlFile<DocumentationIndexYaml>("/fr", "contributing") } }),
+    createRoute({ href: "/fr/temoignages", language: "fr", name: "testimonials", layout: "testimonials", context: { yaml: await readYamlFile<TestimonialsYaml>("/fr", "testimonials") } }),
+    createRoute({ href: "/fr/partenaires", language: "fr", name: "partners", layout: "partners", context: { yaml: await readYamlFile<PartnersYaml>("/fr", "partners") } }),
   ]
-}
-
-const appRoutes = async (): Promise<Routes> => {
-  const routes: Routes = []
-  for (const language of allLanguages) {
-    const yaml = await readYamlFile<AppsYaml>(`/${language}`, "apps")
-    yaml.content.categories.forEach((category) => {
-      const slug = category.title.replace(/ +/g, "-").toLowerCase()
-      routes.push(
-        createRoute({
-          href: language === defaultLanguage ? `/apps/${slug}` : `/${language}/apps/${slug}`,
-          language,
-          name: "apps_category",
-          params: { categoryTitle: category.title },
-          layout: "apps",
-          context: { yaml },
-        }),
-      )
-    })
-  }
-  return routes
 }
 
 const blogRoutes = async (contentDirName: ContentDirName): Promise<Routes> => {
@@ -150,7 +135,6 @@ const buildRoutes = async (): Promise<Routes> => {
   console.log("Building routes...")
   return [
     ...(await staticRoutes()),
-    ...(await appRoutes()),
     ...(await blogRoutes("/blog")),
     ...(await docRoutes("/apps", "apps_page")),
     ...(await docRoutes("/contributing", "contributing_page")),

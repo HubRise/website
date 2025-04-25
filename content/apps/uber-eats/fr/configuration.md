@@ -5,65 +5,135 @@ position: 4
 layout: documentation
 meta:
   title: Configuration | Uber Eats | HubRise
-  description: Configuration d'Uber Eats Bridge pour recevoir vos commandes Uber Eats dans votre logiciel de caisse ou d'autres applications connectées à HubRise.
+  description: Instructions pour configurer Uber Eats Bridge afin qu'il fonctionne parfaitement avec Uber Eats et votre logiciel de caisse ou d'autres apps connectées à HubRise. La configuration est simple.
 ---
-
-La page Configuration est accessible en cliquant sur la flèche <InlineImage width="20" height="20">![icône fléchée](../images/arrow-icon.jpg)</InlineImage> dans le coin supérieur droit de la page principale. Pour plus de détails, voir la rubrique [Interface utilisateur](/apps/uber-eats/interface-utilisateur).
 
 La page Configuration permet de personnaliser le comportement d'Uber Eats Bridge.
 
-Elle est divisée en plusieurs sections pour faciliter la navigation.
-
-![Page de configuration de Uber Eats Bridge](./images/002-configuration-page.png)
-
 ## Langue
 
-Dans cette section, vous pouvez choisir la langue d'édition de vos reçus.
+![Page de configuration Uber Eats Bridge, section Langue](./images/012-uber-eats-configuration-page-language.png)
 
-## Types de service
+Choisissez la langue à utiliser pour les éléments génériques tels que `Delivery charge` (Frais de livraison). Ces noms peuvent apparaître dans votre logiciel de caisse et sur les reçus des clients.
 
-Les types de service tels que la livraison par Uber Eats, la livraison par le restaurant, la vente à emporter ou la consommation sur place peuvent nécessiter la saisie du code ref correspondant. Reportez-vous à la documentation de votre logiciel de caisse sur le site Web de HubRise.
+## Commandes
 
-## Articles spéciaux
+![Page de configuration Uber Eats Bridge, section Commandes](./images/013-uber-eats-configuration-page-orders.png)
 
-Le **code ref des articles jetables** désigne le code ref utilisé lorsque les clients incluent des articles jetables à leurs commandes. Tous les restaurants Uber Eats n'offrent pas à leurs clients la possibilité de demander des articles jetables, tels que des couverts, pailles ou serviettes. Toutefois, si c'est votre cas, vous devez fournir un code ref. Créez un produit "Articles jetables" sur votre logiciel de caisse et spécifiez le code ref ici.
+### Statuts de commande
 
-La capture d'écran suivante montre la case **Demander des couverts, pailles, etc.** que les clients peuvent cocher pour demander des articles jetables.
+Dans le menu déroulant, sélectionnez le statut HubRise qui doit permettre à la commande d'être acceptée dans Uber Eats. Pour connaître les exigences de votre logiciel de caisse, reportez-vous à sa documentation sur le site internet de HubRise.
 
-![Case à cocher des articles jetables dans Uber Eats](./images/009-disposable-items.png)
+### Types de service
 
-## Promotions
+Les types de service tels que la livraison par Uber Eats, la livraison par le restaurant, la vente à emporter ou la consommation sur place peuvent nécessiter la saisie du code ref correspondant. Pour connaître les exigences de votre logiciel de caisse, reportez-vous à sa documentation sur le site internet de HubRise.
 
-Le **code ref de promotion** est le code associé aux promotions Uber Eats sur votre logiciel de caisse. Pour savoir comment gérer les promotions dans votre logiciel de caisse, reportez-vous à la documentation de votre logiciel de caisse sur le site Web de HubRise.
+Dans cette section, vous pouvez également choisir de marquer les commandes livrées par Uber Eats comme étant en livraison ou à emporter. Les commandes livrées par le restaurant sont toujours marquées comme des commandes en livraison. Cette fonctionnalité permet de répondre à des besoins spécifiques de votre entreprise ou à différencier ces commandes dans les rapports d'activité.
 
-## Paiements
+### Articles spéciaux
 
-Le **code ref de paiement** est le code qui est associé aux paiements Uber Eats sur votre logiciel de caisse. En l'absence de code, votre logiciel de caisse pourrait ne pas identifier et traiter correctement les paiements Uber Eats. Pour plus d'informations sur la configuration des paiements, reportez-vous à la documentation de votre logiciel de caisse sur le site Web de HubRise.
+Uber Eats propose en option d'inclure une case à cocher dans le processus de commande pour permettre aux clients de **Demander des couverts, pailles, etc.**, comme montré dans l'image ci-dessous.
 
-## Autres statuts
+![Case à cocher des articles jetables lors du paiement sur Uber Eats](./images/009-disposable-items.png)
 
-Uber Eats prend en charge les trois statuts de commande suivants :
+Pour activer cette fonctionnalité, créez un produit "Objets jetables" dans votre logiciel de caisse, saisissez son code ref dans le champ **Code de référence des objets jetables**, et demandez à Uber Eats d'activer cette option.
 
-- `accepted` : la commande a été acceptée par la logiciel de caisse.
-- `rejected` : l'envoi de la commande à la logiciel de caisse a échoué.
-- `cancelled` : la commande a été annulée par la logiciel de caisse.
+### Remises
 
-Uber Eats Bridge vous permet de choisir les statuts HubRise qui déclenchent un statut donné dans Uber Eats. Cette option est utile pour gérer différents scénarios lorsque votre logiciel de caisse actualise le statut de la commande. Par exemple, si votre logiciel de caisse marque une commande acceptée comme `received` sur HubRise, vous pouvez configurer le bridge pour qu'Uber Eats reconnaisse que la commande a été acceptée.
+Le **Code ref remise** est le code ref associé aux remises Uber Eats dans votre logiciel de caisse. Pour savoir comment gérer les remises dans celui-ci, reportez-vous à sa documentation sur le site internet de HubRise.
 
-Pour chaque statut de commande Uber Eats, sélectionnez le comportement souhaité dans le menu déroulant. Pour savoir quels statuts sont supportée par votre logiciel de caisse, reportez-vous à la documentation de votre logiciel de caisse sur le site Web de HubRise.
+### Frais
 
-## Sauvegarde de la configuration
+Dans cette section, ajoutez les codes ref relatifs aux frais suivants :
 
-Lorsque vous êtes satisfait de la configuration d'Uber Eats Bridge, cliquez sur **Enregistrer** en haut de la page pour revenir à la page Opérations.
+- Frais de livraison
+- Supplément petite commande
+- Pourboire
 
-## Réinitialisation de la configuration
+Les codes ref de cette section ne s'appliquent qu'aux commandes livrées par les livreurs de votre restaurant.
 
-Si vous souhaitez réinitialiser la configuration et effacer ses valeurs, cliquez sur **Réinitialiser la configuration** en bas de la page.
+### Paiements
+
+Les clients Uber Eats peuvent régler leur commande en ligne, ou en espèces en cas de livraison par le restaurant.
+
+Cette section de la page de configuration permet de spécifier les codes ref pour les deux types de paiement. Pour connaître les codes à utiliser, consultez la documentation de votre logiciel de caisse sur le site internet de HubRise.
+
+## Clients
+
+![Page de configuration Uber Eats Bridge, section Clients](./images/017-uber-eats-configuration-page-customers.png)
+
+Activez l'option **Dupliquer le code d'accès téléphone dans les notes de livraison** si votre logiciel de caisse ne supporte pas nativement la récupération des codes d'accès au téléphone.
+
+Tous les systèmes de caisse intégrés à HubRise peuvent lire les notes de livraison. Si votre logiciel de caisse présente un support natif et que cette option est activée, le code apparaîtra en double. Reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise pour savoir quelle valeur utiliser.
+
+## Catalogue {#catalog}
+
+![Page de configuration Uber Eats Bridge, section Catalogue](./images/014-uber-eats-configuration-page-catalog.png)
+
+### Variante de catalogue à envoyer
+
+Les variantes de catalogue vous donnent la flexibilité de désactiver des articles ou d'ajuster les prix spécifiquement pour Uber Eats.
+
+Si votre catalogue comprend des variantes, vous pouvez sélectionner celles que vous souhaitez utiliser. Vous pouvez choisir des variantes différentes pour les menus livraison et à emporter, ou utiliser la même pour les deux menus. Lorsque la valeur **(aucune)** est sélectionnée, tous les articles ainsi que leurs prix standards sont envoyés à Uber Eats.
+
+### Structure des catégories {#category-structure}
+
+Uber Eats permet deux types de structures de catégories :
+
+- **Niveau unique** : toutes les catégories sont au même niveau.
+- **Deux niveaux** : les catégories sont imbriquées (par exemple, Épicerie Salée → Biscuits & Crackers).
+
+Les restaurants utilisent toujours un niveau unique, tandis que les commerces de détail peuvent choisir une hiérarchie à deux niveaux si elle est activée par le support Uber Eats. Si vous n'êtes pas sûr, gardez **Niveau unique** sélectionné.
+
+### Menus spéciaux
+
+Les menus spéciaux vous permettent de planifier des variantes de catalogue à des jours et des heures spécifiques. Cette fonctionnalité est utile pour proposer des menus distincts pour le petit déjeuner et le déjeuner, par exemple.
+
+Pour configurer des menus spéciaux :
+
+1. Assurez-vous que votre catalogue contient les variantes nécessaires.
+2. Sélectionnez le nombre de menus spéciaux que vous souhaitez configurer (jusqu'à 5) dans le menu déroulant.
+3. Pour chaque menu spécial :
+   - Sélectionnez les jours de la semaine où le menu doit être actif.
+   - Sélectionner l'heure de début (**De**) et l'heure de fin (**A**) du menu.
+   - Choisissez les variantes de catalogue à utiliser pour la livraison et le retrait durant cette période.
+
+Lorsque des menus spéciaux sont configurés, Uber Eats basculera automatiquement vers la variante appropriée du catalogue en fonction du délai de commande prévu, que ce soit pour la livraison ou le retrait.
+
+S'il n'y a pas de menu spécial actif à un moment donné, Uber Eats utilisera les variantes de catalogue par défaut configurées dans les paramètres **Variante de catalogue à envoyer** pour la livraison et la vente à emporter.
+
+### Envoi automatique du catalogue
+
+Sélectionnez la case **Activer l'envoi automatique du catalogue** pour synchroniser votre catalogue HubRise avec Uber Eats chaque fois qu'il est mis à jour.
+
+## Point de vente {#location}
+
+![Page de configuration Uber Eats Bridge, section Point de vente](./images/015-uber-eats-configuration-page-location.png)
+
+Sélectionnez **Activer l'envoi automatique des horaires d'ouverture** pour synchroniser vos horaires d'ouverture HubRise avec Uber Eats. Pour activer cette option, vous devez d'abord définir vos horaires d'ouverture dans HubRise, puis activer l'envoi automatique du catalogue.
+
+Si vous utilisez des horaires d'ouverture spécifiques pour Uber Eats, vous pouvez les définir comme tels en sélectionnant **Utiliser des horaires d'ouverture spécifiques pour Uber Eats**, puis en saisissant vos horaires d'ouverture. Cette option remplacera les horaires définis dans HubRise.
+
+## Inventaire
+
+![Page de configuration Uber Eats Bridge, section Inventaire](./images/016-uber-eats-configuration-page-inventory.png)
+
+Grâce à la synchronisation de l'inventaire, les produits et options dont la quantité en stock est nulle peuvent être masqués sur votre restaurant Uber Eats.
+
+Sélectionnez la case **Activer l'envoi automatique de l'inventaire** pour synchroniser votre inventaire HubRise avec Uber Eats chaque fois qu'il est mis à jour.
+
+## Enregistrer la configuration
+
+Pour enregistrer la configuration, cliquez sur **Enregistrer** en haut de la page.
+
+## Réinitialiser la configuration
+
+Si vous avez besoin de réinitialiser la configuration, cliquez sur **Réinitialiser la configuration** en bas de la page.
 
 ---
 
-**REMARQUE IMPORTANTE :** La réinitialisation de la configuration effacera également votre UUID de magasin Uber Eats. Pour recevoir à nouveau les commandes Uber Eats, vous devrez resaisir votre UUID de magasin.
+**REMARQUE IMPORTANTE :** La réinitialisation de la configuration déconnecte instantanément le bridge d'Uber Eats. Vous aurez besoin de votre UUID de restaurant Uber Eats pour rétablir la connexion.
 
 ---
 
-La réinitialisation de la configuration ne supprime pas les fichiers journaux des opérations affichés sur la page principale.
+La réinitialisation de la configuration ne supprime pas les logs des opérations affichés sur la page principale.

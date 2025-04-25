@@ -12,7 +12,7 @@ The logs page on PixelPoint Bridge is divided into two parts: Request and Respon
 
 To understand the logs in PixelPoint Bridge, you need to know how to read XML files first.
 
-## An XML Primer
+## An XML Primer {#xml-primer}
 
 XML is a format to store and transfer information organised in nodes of key-value pairs with a hierarchical structure. Each piece of information is divided into:
 
@@ -41,23 +41,23 @@ Finally, the `DebugMode` node only appears if debug mode is selected from the Co
 
 ### The EOIAuthenticationToken Node
 
-This node has a single value that represents the PixelPoint API token saved in PixelPoint Bridge. For more information, see [Connect to HubRise](/apps/pixelpoint-bridge/connect-hubrise/).
+This node has a single value that represents the PixelPoint API token saved in PixelPoint Bridge. For more information, see [Connect to HubRise](/apps/pixelpoint-bridge/connect-hubrise).
 
 ### The Transaction Node
 
 The `Transaction` node and its subnodes are especially relevant to diagnose possible problems in the request. The main subnodes of interest are:
 
-- `SaleTypeNum`: The service type associated with the order. For more information, see [Setting Service Types](apps/pixelpoint-bridge/map-ref-codes/#service-types).
+- `SaleTypeNum`: The service type associated with the order. For more information, see [Setting Service Types](apps/pixelpoint-bridge/map-ref-codes#service-types).
 
 - `ScheduleTime`: If present, it indicates the date and time the order should be delivered or expected to be ready for collection. It is not present if the customer does not specify the time for collection, or if delivery is scheduled within 30 minutes of the order or as soon as possible.
 
 - `Items`: Must contain at least one `Item` node. For each `Item` node, the following subnodes are generally present:
 
-  - `ProdNum`: The unique product code that is associated with the product in your EPOS catalog. For more information, see [Mapping Ref Codes](/apps/pixelpoint-bridge/map-ref-codes/).
+  - `ProdNum`: The unique product code that is associated with the product in your EPOS catalog. For more information, see [Mapping Ref Codes](/apps/pixelpoint-bridge/map-ref-codes).
   - `CouponNum`: The unique product code associated with a discount in your EPOS catalog. `CouponNum` and `ProdNum` are mutually exclusive, therefore only one must be present inside the `Item` node.
   - `CostEach`: The cost of each `Item`.
   - `Quantity`: The product quantity ordered by the customer.
-  - `ItemId` and `ParentId`: Integer numbers used together to identify products from options. For more information, see [Recognising Products and Options](/apps/pixelpoint-bridge/understanding-logs/#recognising-products-and-options).
+  - `ItemId` and `ParentId`: Integer numbers used together to identify products from options. For more information, see [Recognising Products and Options](/apps/pixelpoint-bridge/understanding-logs#products-and-options).
   - `ComboItemId`: It is present when the product is part of a deal. The value associated with this key represents the code for the deal in your EPOS catalog. For more information, see Setting the Product Catalog.
   - `PriceApplied`: This value is always `13`.
 
@@ -72,7 +72,7 @@ The `Transaction` node and its subnodes are especially relevant to diagnose poss
 
 - `CustomRecFooter`: When the order is paid upon delivery, the `Payment` node is not created and the payment method name is encoded in this node.
 
-### Recognising Products and Options
+### Recognising Products and Options {#products-and-options}
 
 To tell the difference between an actual product and an optional change in a PixelPoint request, you need to check the value for `ParentId` and compare it with the `ItemId` of the product:
 

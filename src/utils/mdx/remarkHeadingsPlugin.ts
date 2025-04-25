@@ -5,7 +5,7 @@ import { VFile } from "vfile"
 
 import { createHeaderAnchor } from "@utils/misc"
 
-export type HeaderLink = { title: string; depth: number; id: string }
+export type HeaderLink = { title: string; depth: number; generatedId: string; customId?: string }
 
 interface HProperties {
   id?: string
@@ -17,23 +17,29 @@ const remarkHeadingsPlugin = (headerLinks: Array<HeaderLink>) => {
     visit(node, `heading`, (heading: Heading) => {
       const textNode = heading.children.find((child) => child.type === "text") as { value: string }
 
-      // Informations envoyées à Deliveroo(#information-sent-to-deliveroo)
+      // Optional custom id
+      // Informations envoyées à Deliveroo {#information-sent-to-deliveroo}
       // -> information-sent-to-deliveroo
-      let id = createHeaderAnchor(textNode.value)
-      const match = /(.*)\s*\(#(.*)\)$/.exec(textNode.value)
+      let customId: string | undefined
+      const match = /(.*)\s+{#(.*)}$/.exec(textNode.value)
       if (match) {
         textNode.value = match[1] // Strip the anchor from the text
-        id = match[2]
+        customId = match[2]
       }
 
+      // Generated id
+      const generatedId = createHeaderAnchor(textNode.value)
+
+      // Add id to heading
       heading.data = heading.data || {}
       heading.data.hProperties = heading.data.hProperties || {}
-      ;(heading.data.hProperties as HProperties).id = id
+      ;(heading.data.hProperties as HProperties).id = generatedId
 
       headerLinks.push({
         title: (heading.children[0] as any).value,
         depth: heading.depth,
-        id,
+        generatedId,
+        customId,
       })
     })
   }

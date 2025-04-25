@@ -7,7 +7,6 @@ import { usePathname } from "next/navigation"
 import useClientRoutes from "@hooks/client/useClientRoutes"
 import useTranslation from "@hooks/client/useTranslation"
 import type { LanguagePaths } from "@utils/locales"
-import { generateKey } from "@utils/misc"
 
 import LanguageLinks from "../LanguageLinks"
 import { IHeaderLink } from "../shared/types"
@@ -38,7 +37,7 @@ const HeaderDesktop = ({ languagePaths, menuItems }: HeaderDesktopProps): JSX.El
           if (mobile_only) return
           const isActive = isHeaderLinkActive(currentPathname, to)
           return (
-            <MenuItem key={generateKey(title, idx)} $isActive={isActive}>
+            <MenuItem key={idx} $isActive={isActive}>
               <MenuLink href={to} $isActive={isActive}>
                 {title}
               </MenuLink>

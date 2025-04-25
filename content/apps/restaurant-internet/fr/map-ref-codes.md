@@ -18,7 +18,7 @@ meta:
 
 Une SKU (_Stock Keeping Unit_) dans HubRise est une taille de produit sur Restaurant-internet. Restaurant-internet permet de créer jusqu'à 5 tailles par produit.
 
-Pour modifier les codes ref des tailles d'un produit, suivez les étapes suivantes :
+Pour modifier les codes ref des tailles d'un produit, suivez ces étapes :
 
 1. Dans la barre de menu principale sur Restaurant-internet, sélectionnez **Carte**.
 2. Cliquez sur le nom de votre établissement.
@@ -32,7 +32,7 @@ Restaurant-internet permet de saisir un code ref sur le produit. Ce code n'est p
 
 Restaurant-internet supporte les options à choix unique et à choix multiple. Vous pouvez indiquer un code ref par option et par taille du produit.
 
-Pour modifier les codes ref des options d'un produit, suivez les étapes suivantes :
+Pour modifier les codes ref des options d'un produit, suivez ces étapes :
 
 1. Dans la barre de menu principale sur Restaurant-internet, sélectionnez **Carte**.
 2. Cliquez sur le nom de votre établissement.
@@ -55,7 +55,7 @@ Restaurant-internet n'a pas de fonctionnalité équivalente aux remises HubRise.
 
 Restaurant-internet permet de définir des frais de livraison, ainsi que des frais de gestion pour chacun des trois types de service (livraison, sur place, à emporter).
 
-Pour modifier le code ref des frais, suivez les étapes suivantes :
+Pour modifier le code ref des frais, suivez ces étapes :
 
 1. Depuis votre tableau de bord Restaurant-internet, sélectionnez **Paramétrages**.
    ![Associer les codes ref - Paramétrages](./images/006-restaurant-internet-settings.png)
@@ -64,7 +64,7 @@ Pour modifier le code ref des frais, suivez les étapes suivantes :
 
 ## Méthodes de paiement
 
-Une méthode de paiement dans HubRise correspond à un mode de paiement dans Restaurant-internet. Pour modifier leur code ref, suivez les étapes suivantes :
+Une méthode de paiement dans HubRise correspond à un mode de paiement dans Restaurant-internet. Pour modifier leur code ref, suivez ces étapes :
 
 1. Depuis votre tableau de bord Restaurant-internet, dans la partie **Modules**, sélectionnez **Marketplace Autres modules**.
 2. Sélectionnez **Hubrise - Connection Caisse Gratuit**.
@@ -73,7 +73,7 @@ Une méthode de paiement dans HubRise correspond à un mode de paiement dans Res
 
 ## Types de service
 
-Pour modifier le code ref de vos types de service, suivez les étapes suivantes :
+Pour modifier le code ref de vos types de service, suivez ces étapes :
 
 1. Depuis votre tableau de bord Restaurant-internet, sélectionnez **Paramétrages**.
 2. Sélectionnez l'onglet **Commande en ligne**, ou alors, dans la partie **Commande en ligne**, cliquez sur **Retrait sur place**, **A emporter**, ou **Livraison**.

@@ -35,6 +35,6 @@ Once you have installed PixelPoint's EOI and with your API token in hand, you ca
 
 ---
 
-**IMPORTANT NOTE:** PixelPoint Bridge does not check the validity of the API token. Make sure to include the HubRise vendor identifier before submitting the form. If you have entered an incorrect token, [reset the configuration](/apps/pixelpoint-bridge/configuration#resetting-the-configuration) and try again.
+**IMPORTANT NOTE:** PixelPoint Bridge does not check the validity of the API token. Make sure to include the HubRise vendor identifier before submitting the form. If you have entered an incorrect token, [reset the configuration](/apps/pixelpoint-bridge/configuration#reset-configuration) and try again.
 
 ---

@@ -40,6 +40,6 @@ Regards, [Your Name]
 
 ---
 
-**Related FAQ**: [How Do I Create an Account for Another Business Without Sharing Access?](/docs/faqs/create-an-account-for-another-business-no-access-sharing/)
+**Related FAQ**: [How Do I Create an Account for Another Business Without Sharing Access?](/docs/faqs/create-an-account-for-another-business-no-access-sharing)
 
 ---

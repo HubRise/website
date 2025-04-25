@@ -20,7 +20,7 @@ To view the order list:
 1. Click on **Statistiques** (Statistics).
 1. Select the **Tickets** tab (Ticket).
 
-If you have correctly connected Zelty to HubRise and mapped all ref codes on other apps but orders are not automatically received, and you would like to investigate why, see [Troubleshooting](/apps/zelty/troubleshooting). You can also check logs for every transaction in HubRise. For more information, see the [Logs section](/docs/data/#logs) of the HubRise user guide.
+If you have correctly connected Zelty to HubRise and mapped all ref codes on other apps but orders are not automatically received, and you would like to investigate why, see [Troubleshooting](/apps/zelty/troubleshooting). You can also check logs for every transaction in HubRise. For more information, see the [Logs section](/docs/data#logs) of the HubRise user guide.
 
 ## Order Data
 

@@ -1,0 +1,23 @@
+name: vitest
+on: push
+
+jobs:
+  vitest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18.17.1
+          cache: "yarn"
+
+      - name: Install JS dependencies
+        run: yarn install
+
+      - name: Vitest test suite
+        run: yarn test

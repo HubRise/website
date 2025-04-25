@@ -51,10 +51,10 @@ To connect Just Eat Flyt Bridge to HubRise, follow these steps.
 
 After connecting the bridge, you need to configure a few parameters on the **Configuration** page to send orders correctly to your EPOS.
 
-For more information about the configuration page and how to navigate to it, see [Configuration Page](/apps/just-eat-flyt/user-interface/#configuration-page). For details on how to configure the parameters of Just Eat Flyt Bridge, see [Configuration](/apps/just-eat-flyt/configuration).
+For more information about the configuration page and how to navigate to it, see [Configuration Page](/apps/just-eat-flyt/user-interface#configuration). For details on how to configure the parameters of Just Eat Flyt Bridge, see [Configuration](/apps/just-eat-flyt/configuration).
 
 ## 4. Push Your Menu
 
 For the Just Eat Flyt integration to be activated, you need to push your HubRise catalog into Just Eat Flyt.
 
-To learn how to push your HubRise catalog into Just Eat, see [Push the Catalog](/apps/just-eat-flyt/push-catalog). For more information on HubRise catalogs, see [Catalogs](/docs/catalog/).
+To learn how to push your HubRise catalog into Just Eat, see [Push the Catalog](/apps/just-eat-flyt/push-catalog). For more information on HubRise catalogs, see [Catalogs](/docs/catalog).

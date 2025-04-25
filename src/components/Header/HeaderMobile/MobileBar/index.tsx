@@ -4,7 +4,6 @@ import LanguageLinks from "@components/Header/LanguageLinks"
 import useClientRoutes from "@hooks/client/useClientRoutes"
 import useTranslation from "@hooks/client/useTranslation"
 import type { LanguagePaths } from "@utils/locales"
-import { generateKey } from "@utils/misc"
 import { iconSizes } from "@utils/styles"
 
 import { IHeaderLink } from "../../shared/types"
@@ -51,7 +50,7 @@ const MobileBar = ({ languagePaths, menuItems, isOpen, close }: MobileBarProps):
           {menuItems.map(({ title, to }, idx) => {
             const isActive = isHeaderLinkActive(currentPathname, to)
             return (
-              <NavLink key={generateKey(title, idx)} href={to} onClick={close} $isActive={isActive}>
+              <NavLink key={idx} href={to} onClick={close} $isActive={isActive}>
                 {title}
               </NavLink>
             )

@@ -33,7 +33,7 @@ export const AppLogoImage = styled(Image)`
 export const AppDocumentation = styled.div`
   padding: 1rem;
   color: ${colors.textDark};
-  background-color: #ffffff;
+  background-color: ${colors.backgroundWhite};
   transition: background-color 0.2s ease;
 `
 
@@ -68,7 +68,7 @@ const appBox = css`
   flex-direction: column;
   height: 100%;
   min-height: 15rem;
-  background-color: #fafafa;
+  background-color: ${colors.backgroundLightest};
   border-radius: ${sizes.borderRadius};
   box-shadow: ${boxShadows.medium};
   text-align: center;

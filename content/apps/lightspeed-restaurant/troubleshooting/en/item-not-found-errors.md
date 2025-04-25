@@ -56,7 +56,7 @@ This is generally due to two possible reasons:
 
 ### Incorrect Ref Codes
 
-If you receive orders from a connected app, for example a food delivery platform, you need to make sure that ref codes are properly configured there. An incorrect ref code in your food delivery platform menu can cause a whole order to be rejected by the Lightspeed Restaurant EPOS.
+If you receive orders from a connected app, for example a food delivery platform, you need to make sure that ref codes are properly configured there. An incorrect ref code in the menu of your connected ordering solutions can cause a whole order to be rejected by the Lightspeed Restaurant EPOS.
 
 In the error message, the `sku` in the `reason` field (e.g. `abc123` in the example above) indicates the missing ref code in the Lightspeed EPOS. To solve the issue, include the correct ref code in the third party app that sent the order.
 

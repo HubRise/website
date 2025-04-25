@@ -29,7 +29,7 @@ There are two possible causes for this error:
 
 ### Missing ref codes
 
-Items without a ref code are [ignored by Lightspeed Restaurant Bridge](/apps/lightspeed-restaurant/push-orders#items-and-options) and not sent to the EPOS, thus causing the error. To solve the issue, ensure that all items available in the online ordering or food delivery platform have a ref code.
+Items without a ref code are [ignored by Lightspeed Restaurant Bridge](/apps/lightspeed-restaurant/push-orders#items-and-options) and not sent to the EPOS, thus causing the error. To solve the issue, ensure that all items available in third party apps connected to your account have a ref code.
 
 ### Price rounding errors
 

@@ -14,7 +14,7 @@ This guide establishes standard requirements to improve the readability and over
 
 Where the HubRise style guide does not deal with a specific situation, the [Google developer documentation style guide](https://developers.google.com/style) can be used for reference.
 
-The [Merriam-Webster dictionary](https://www.merriam-webster.com/) should be used as a spelling reference when we have multiple ways of spelling the same word. In addition the [Cambridge Dictionary](https://dictionary.cambridge.org/) can be used as a secondary reference only where necessary.
+The [Merriam-Webster dictionary](https://www.merriam-webster.com) should be used as a spelling reference when we have multiple ways of spelling the same word. In addition the [Cambridge Dictionary](https://dictionary.cambridge.org) can be used as a secondary reference only where necessary.
 
 Terminology and spelling decisions are informed in our XTM tool, only for internal use.
 
@@ -38,7 +38,7 @@ Don't use gender-specific pronouns unless the person you're referring to is actu
 
 In particular, don't use **he**, **him**, **his**, **she**, or **her** as gender-neutral pronouns, and don't use **he/she** or **(s)he** or other such punctuational approaches.
 
-## Capitalisation
+## Capitalisation {#capitalisation}
 
 If it is an official title or name, something that can be or is trademarked or copyrighted, or the name of something that is unique in the universe, capitalise it. Otherwise, do not.
 
@@ -54,7 +54,7 @@ Words such as a, an, and, but, for, nor, of, or, so, the, to, and yet must not b
 
 > Right: If You Are Unsure on Whether to Capitalise Something or Not, Do Not Capitalise It
 
-You may use [Capitalize My Title](https://capitalizemytitle.com/) to help you capitalise your headings. Choose the “APA” style.
+You may use [Capitalize My Title](https://capitalizemytitle.com) to help you capitalise your headings. Choose the “APA” style.
 
 ## Punctuation
 
@@ -67,15 +67,15 @@ The first letter following a colon should always be capitalised.
 
 > Right: Defined locations as follows: The Account name followed by the city.
 
-### Commas
+### Commas {#commas}
 
 If you have a list of three or more items, add a comma before the last item. For instance: I'd like to order a focaccia, a margherita, and a tiramisu. In this list of three items, the comma after the second item is the Oxford or serial comma.
 
 ### Hyphenation
 
-If you are in doubt whether to hyphenate a set of words or not, first look up the word in the [Merriam-Webster dictionary](https://www.merriam-webster.com/) and follow the rules established there. For instance, the Merriam-Webster spells **well known** with a hyphen: **well-known**.
+If you are in doubt whether to hyphenate a set of words or not, first look up the word in the [Merriam-Webster dictionary](https://www.merriam-webster.com) and follow the rules established there. For instance, the Merriam-Webster spells **well known** with a hyphen: **well-known**.
 
-A second rule of thumb is that, if the set of words does not play the same role in a sentence without hyphenation, you should use the version adequate to the role you wish it to play in the sentence. For example, the [Merriam-Webster dictionary](https://www.merriam-webster.com/) states that **kick off** is a verb and **kickoff** is a noun. **What time does the game kick off?** uses the verb, whereas **Kickoff will be at 11 o'clock prompt** uses the noun.
+A second rule of thumb is that, if the set of words does not play the same role in a sentence without hyphenation, you should use the version adequate to the role you wish it to play in the sentence. For example, the [Merriam-Webster dictionary](https://www.merriam-webster.com) states that **kick off** is a verb and **kickoff** is a noun. **What time does the game kick off?** uses the verb, whereas **Kickoff will be at 11 o'clock prompt** uses the noun.
 
 For sets of two words only, if the dictionary indicates that there is an alternative without a hyphen, then use that alternative instead of the hyphenated version.
 
@@ -114,33 +114,33 @@ From the main page, you can perform the following actions:
 
 Avoid using lists to repeat all fields to fill in shown in the UI. For context, include a screenshot instead and refer to fields you need to provide information on.
 
-## References
+## Links
 
-### Cross-references
+### External Links
 
-Cross-references can be used to guide readers to related information within the same document or in an external page.
+To create a link to an external website, use the following format:
 
-Cross-references are hyperlinked to the header being referred to, with the final section linked. For example, if we are linking to the Colon section of the documentation in this format:
+`[Visit Google](https://www.google.com/)`
 
-> Style Guide &#8594; Punctuation &#8594; **Colon** &#8592; Linking here
+External links start with `https://` or `http://`. They open in a new tab.
 
-The link will be on **Colon**.
+### Internal Links
 
-Do not attach the cross-reference directly to a word in the text. Rather, use a separate sentence to introduce the cross-reference with the exact name of the header.
+To create a link to another page in the documentation, use the following format:
 
-> Wrong: We use [commas](#commas) to separate words.
+`[Deliveroo](/apps/deliveroo/overview)`
 
-> Right: We use commas to separate words. For more information on use of commas, refer to [Commas](#commas).
+Internal links start with `/` and include the file path, relative to the `content` directory. The language folder (`en` or `fr`) is omitted.
 
----
+### Anchors
 
-**IMPORTANT**: This is different from UI menu representation, which uses the greater than sign (**>**) to indicate a sub-level. For more information on UI menu representation, see [Menus](#menus).
+Anchors are used to direct readers to a specific section within a page. To create an anchor, use the following format in the section heading:
 
----
+`## Integration Features {#features}`
 
-### Links
+With this anchor set up, you can link to the section using the following link:
 
-Always use relative paths for internal links or cross-references, and absolute paths for external links. Relative paths will open the link in the same tab. Absolute paths will open a new tab.
+`[Deliveroo Integration Features](/apps/deliveroo/overview#features)`
 
 ## Readability
 
@@ -227,7 +227,7 @@ Adjectives shall be used with thrift. Keep in mind that the tone is neither comm
 
 ## Bold
 
-Bold is also used for UI references. For example: Select **CONNECTIONS** from the HubRise menu. For more information on UI menu representation, see [Menus](#menus).
+Bold is also used for UI references. For example: Select **CONNECTIONS** from the HubRise menu. For more information on UI menu representation, see ...
 
 When you need to **emphasise** a important word, expression, or sentence, you can also use bold without over doing it.
 
@@ -249,7 +249,7 @@ Do not use contractions. For instance, write **do not** instead of **don't**.
 
 You may use italics for tech terms except code. Do not use it to identify examples, make a sentence instead.
 
-## Notices
+## Notices {#notices}
 
 Notices give important or useful information that is not necessarily part of the flow of the text. Notices can inlude Important Notes and Frequently Asked Questions.
 
@@ -265,7 +265,7 @@ If you foresee an issue that may form part of the Frequently Asked Questions, th
 
 ---
 
-**Related FAQ**: [How Do I Create a User Profile for Another Person?](/docs/faqs/create-a-user-profile-for-another-person/)
+**Related FAQ**: [How Do I Create a User Profile for Another Person?](/docs/faqs/create-a-user-profile-for-another-person)
 
 ---
 
@@ -273,7 +273,7 @@ If you foresee an issue that may form part of the Frequently Asked Questions, th
 
 The following styles are used to specify how User Interfaces are described.
 
-### Menus
+### Menus {#menus}
 
 Menus are described in the order they are selected. They are presented in bold with a greater than sign separating each step. If a user is to select File, then Save, this would be displayed as: **File** > **Save**
 
@@ -336,7 +336,7 @@ Section headings should be marked with the appropriate heading style. In the hie
 ## File name
 
 Files should be given a contextual name written in lower case. Separate words with hyphens, not underscores. Use only standard ASCII alphanumeric characters.
-For image, video or diagram file names, see [Image file names](/contributing/screenshots-guide/#naming-convention).
+For image, video or diagram file names, see [Image file names](/contributing/screenshots-guide#naming-convention).
 
 ## Meta Title and Description
 

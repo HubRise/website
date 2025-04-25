@@ -1,3 +1,5 @@
+import { beforeEach, describe, expect, it } from "vitest"
+
 import { FallbackRoutes, LayoutName, Route, RouteName, Routes } from "./types"
 
 import { Router } from "./index"
@@ -85,5 +87,13 @@ describe("changeLanguage", () => {
   it("should fallback to the default route when no fallback route is found", () => {
     const targetRoute = router.changeLanguage(route("/fr/faqs"), "en")
     expect(targetRoute.href).toEqual("/")
+  })
+})
+
+describe("findDocumentationRoute", () => {
+  it("should find route", () => {
+    const route = router.findDocumentationRoute("/apps/uber", "overview", "fr")
+    expect(route).toBeDefined()
+    expect(route!.href).toEqual("/fr/apps/uber")
   })
 })

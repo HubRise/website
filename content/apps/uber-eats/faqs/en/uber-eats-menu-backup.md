@@ -13,7 +13,7 @@ When you push a HubRise catalog into Uber Eats, the existing menu is erased. If 
 To make a copy of the Uber Eats menu, follow these steps:
 
 1. Pull your Uber Eats menu into a HubRise catalog. For more information, see [Pull the Catalog](/apps/uber-eats/pull-catalog).
-1. Duplicate the catalog using Catalog Manager. Use an easily identifiable name, such as **Uber Eats Backup**. This catalog should not be edited. For more information, see [Duplicate a Catalog](/apps/catalog-manager/faqs/duplicate-catalog).
+1. Duplicate the catalog using Catalog Manager. Use an easily identifiable name, such as **Uber Eats Backup**. This catalog should not be edited. For more information, see [Duplicate a Catalog](/apps/catalog-manager/catalogs#duplicate).
 1. Edit the first catalog in Catalog Manager, or use another app to overwrite the catalog.
 1. When the catalog is ready, push it back to Uber Eats. For more information, see [Push the Catalog](/apps/uber-eats/push-catalog).
 

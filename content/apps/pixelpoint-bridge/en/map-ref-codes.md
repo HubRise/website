@@ -22,7 +22,7 @@ PixelPoint has no support for SKUs, so PixelPoint product code is used as the SK
 
 PixelPoint does not differentiate between products and options. The option ref code in HubRise is the product code of the corresponding product in PixelPoint.
 
-## Deals
+## Deals {#deals}
 
 Deals in HubRise are combos in PixelPoint. Combos are a particular type of product that contains a list of products and/or options.
 
@@ -34,7 +34,7 @@ The combo price is defined in the **Pricing** section. Additional charges may be
 
 ![PixelPoint combos - combo items](./images/011-combos-items.png)
 
-## Discounts
+## Discounts {#discounts}
 
 Discounts in HubRise are coupons in PixelPoint.
 
@@ -59,4 +59,4 @@ Each service type (delivery, collection, eat-in) must be associated with the cor
 
 PixelPoint has a different code for each payment method. Each payment method allowed in the system to connect must be defined in the PixelPoint EPOS and must be specified with the corresponding code. Contact your PAR representative to get the correct values.
 
-TODO: When the customer chooses to pay upon delivery or collection, no payment information is sent to the EPOS, as doing so would close the transaction.
+When the customer chooses to pay upon delivery or collection, no payment information should be sent to the EPOS, as doing so would close the transaction.

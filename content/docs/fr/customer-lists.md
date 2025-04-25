@@ -1,11 +1,11 @@
 ---
 title: Listes de clients
 path_override: listes-clients
-position: 13
+position: 14
 layout: documentation
 meta:
   title: Listes de clients | HubRise
-  description: Gestion des listes de clients sur HubRise. Visualiser leur contenu. Ajouter ou supprimer des listes de clients. Convention de nommage pour mieux s'y retrouver.
+  description: Gestion des listes de clients sur HubRise.
 ---
 
 La section **Liste de clients** de la page **CONFIGURATION** vous permet d'ajouter, modifier et supprimer des listes de clients.
@@ -37,7 +37,7 @@ Pour ajouter une liste de clients, procédez comme suit :
 La section **Liste des clients** affiche les informations suivantes :
 
 - **Nom** : appellation de la liste de clients, suivie de son identifiant unique. Cet identifiant unique ne change pas même si le nom de la liste de clients est modifié. Exemple : la liste de clients `Avenue d'Italie` apparaîtra comme `Avenue d'Italie - abc123`. Si la liste de clients `Avenue d'Italie` est renommée `Rue Denfert-Rochereau`, elle apparaîtra comme `Rue Denfert-Rochereau - abc123`.
-- **Nombre de clients** : nombre de clients importés dans HubRise. Pour afficher les détails de la liste des clients, voir [Clients](/docs/donnees#clients).
+- **Nombre de clients** : nombre de clients importés dans HubRise. Pour afficher les détails de la liste des clients, voir [Clients](/docs/data#customers).
 
 Pour afficher les détails d'une liste de clients, cliquez sur le nom de la liste en question. Vous serez alors automatiquement redirigé sur la page **DONNÉES** > **Clients** de la liste spécifique.
 

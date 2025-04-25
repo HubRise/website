@@ -33,7 +33,7 @@ To verify your billing information at Account level, follow these steps:
 1. Fill in the information required under **Billing details**.
 1. Click **Update**.
 
-Follow the exact same steps to verify your billing information for payment at Location level but click **Modify location**. For step by step information, see [Account or Location Payments](/docs/payment#billing-information-at-location-level).
+Follow the exact same steps to verify your billing information for payment at Location level but click **Modify location**. For step by step information, see [Account or Location Payments](/docs/payment#account-or-location-payments).
 
 ## Pay Online
 
@@ -51,4 +51,4 @@ When your payment method is set up, the first request for payment should be char
 
 ---
 
-Subsequent payments to HubRise will be automated until you change usage plan or your payment method expires. For more information about HubRise usage plans, see [Usage and Plans](/docs/usage-plan/).
+Subsequent payments to HubRise will be automated until you change usage plan or your payment method expires. For more information about HubRise usage plans, see [Usage and Plans](/docs/usage-plan).

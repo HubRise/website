@@ -1,7 +1,7 @@
 ---
 title: Pull Orders
 path_override: pull-orders
-position: 7
+position: 8
 layout: documentation
 meta:
   title: Pull Orders | WooCommerce | HubRise
@@ -62,7 +62,7 @@ In the default WooCommerce installation, the service type is always `delivery`. 
 
 ---
 
-**Related FAQ**: [How Can I Encode Custom Metadata In An Order?](/apps/woocommerce/faqs/encode-custom-metadata/)
+**Related FAQ**: [How Can I Encode Custom Metadata In An Order?](/apps/woocommerce/faqs/encode-custom-metadata)
 
 ---
 
@@ -81,7 +81,7 @@ WooCommerce supports four types of payments in an order:
 
 ---
 
-**IMPORTANT NOTE**: Payment ref codes will soon be customisable from the configuration page. For more information, [contact HubRise support](mailto:support@hubrise.com).
+**IMPORTANT NOTE:** Payment ref codes will soon be customisable from the configuration page. For more information, contact HubRise on support@hubrise.com.
 
 ---
 
@@ -91,9 +91,12 @@ WooCommerce discounts are sent to HubRise, if present in an order.
 
 ## Charges
 
-WooCommerce supports only delivery charges, which are sent to HubRise if present in an order.
+WooCommerce supports two types of charges:
 
----
+- Shipping charges.
+- Additional fees.
+
+Both types are sent to HubRise, when present in an order.
 
 ## Technical Reference
 
@@ -101,20 +104,23 @@ This section describes how orders are encoded in the JSON payloads you receive f
 
 ### Items
 
-WooCommerce products in an order are mapped to HubRise in three different ways.
+The mapping of items from WooCommerce to HubRise depends on the configuration of WooCommerce Bridge, especially the **Order Item Metadata** section. For configuration details, refer to [Order Item Metadata](/apps/woocommerce/configuration#order-item-metadata).
 
-- Simple products are sent to HubRise as products without sku.
-- Variable products with an attributes list named "sku" are sent to HubRise as products with a sku.
-- Variable products with an attributes list name different from "sku" are sent to HubRise as products with options.
+WooCommerce products in an order are mapped to products with or without a SKU, according to the following rules:
 
-For every item in the order, WooCommerce Bridge provides the following information:
+- Simple products are sent as products without a SKU.
+- Variable products with an attribute whose name matches the **Metadata key(s) for SKU name** field are sent as products with a SKU, where the SKU name is the attribute's value.
+- Variable products with attributes that do not match the criteria are sent as products without a SKU.
 
-- `product_name`: The name of the product
-- `sku_name`: The name of the sku, for WooCommerce variable products with attribute name "sku". Otherwise, the defaul value is `null`.
-- `sku_ref`: The ref code of the item
-- `price`: The price for a single item
-- `quantity`: The quantity of items included in the order
-- `options`: The array of options attached to the item, for WooCommerce variable products with attribute name other than "sku". Otherwise, the default value is an empty array.
+For every item in the order, WooCommerce Bridge sends the following information to HubRise:
+
+- `product_name`: The name of the product.
+- `sku_name`: The SKU name for products with a SKU, or `null` for products without. See the note above for details.
+- `sku_ref`: The ref code of the item.
+- `price`: The price for a single item.
+- `quantity`: The number of items included in the order.
+- `customer_notes`: Customer notes for the item, derived from the attribute with a key that matches the **Metadata key(s) for customer notes** field, if available.
+- `options`: An array of options attached to the item, sourced from attributes that are neither used as SKU name nor customer notes, and do not match the **Discarded metadata keys** field.
 
 ### Options
 
@@ -127,7 +133,7 @@ A product can have at most one attached option.
 
 <details>
 
-Below is a sample payload containing a single item with an option.
+<summary>Sample JSON containing a single item with an option</summary>
 
 ```json
 "items": [
@@ -165,19 +171,17 @@ WooCommerce Bridge encodes all the available customer's details from WooCommerce
 - `phone`: The customer's phone number.
 - `delivery_notes`: The delivery notes that the customer includes at checkout.
 
-### Delivery Charges
+### Charges
 
-Delivery charges are applied for orders delivered by the restaurant.
+Charges encompass shipping and additional fees. The fields sent are the following:
 
-The available fields in the payloads are the following:
-
-- `name`: The name of the delivery charge, which is `Delivery charge` by default.
-- `ref`: The ref code of the charge. Its default value can be set from the Configuration page of WooCommerce Bridge and should match the value in your EPOS.
-- `price`: The total amount of the delivery charge.
+- `name`: The name of the charge. For shipping charges, this is `Delivery charge`.
+- `ref`: For shipping charges, the ref code set from the WooCommerce Bridge configuration. For additional fees, this field is `null`.
+- `price`: The amount of the charge.
 
 <details>
 
-Below is a sample payload for charges.
+<summary>Sample JSON for charges</summary>
 
 ```json
 "charges": [
@@ -191,16 +195,16 @@ Below is a sample payload for charges.
 
 </details>
 
-## Discounts
+### Discounts
 
 The discount applied to the order is passed in a single object in the HubRise `discounts` array.
 
-The available fields in the payload are the following:
+The fields sent are the following:
 
 - `name`: The name of the discount.
 - `price_off`: The total amount of the discount.
 
-## Custom Fields
+### Custom Fields
 
 The `custom_fields` object is used by WooCommerce Bridge to store the metadata that WooCommerce sends in the order. This information is not provided by default by the WooCommerce API, but the actual format depends on the installed plugins and code customisation made on the website.
 

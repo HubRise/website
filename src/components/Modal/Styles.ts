@@ -19,7 +19,7 @@ export const StyledModal = styled.div`
   width: 100vw;
   padding: 2.5rem;
   border-radius: ${sizes.borderRadius};
-  background: #f5f5f5;
+  background: ${colors.backgroundLight};
   z-index: ${zIndexValues.modal};
   position: relative;
 

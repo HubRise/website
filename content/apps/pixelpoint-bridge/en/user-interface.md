@@ -16,7 +16,7 @@ The main page of PixelPoint Bridge displays the latest received orders. Each row
 
 - **TIME**: The date and time of the order.
 - **ORDER**: The HubRise order ID.
-- **DESCRIPTION**: An optional description for operations that are not related to a specific order. It could be empty, or inform of a `System request` or a `Catalog push`.
+- **DESCRIPTION**: An optional description for operations that are not related to a specific order. It could be empty, or inform of a specific action such as `System request` or `Catalog push`.
 - **STATUS**: The status of the order. The value `OK` indicates that the order has been successfully sent, otherwise an error code will be displayed in red.
 
 Clicking on an order will open a new page displaying all the information about it.

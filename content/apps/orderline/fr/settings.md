@@ -24,7 +24,7 @@ Dans **Paramètres** > **Général**, vous pouvez sélectionner la langue d'affi
 
 ![Paramètres généraux](./images/009-2x-settings-general.png)
 
-## Enchaînement des statuts de commande
+## Enchaînement des statuts de commande {#order-status-flow}
 
 Dans les **Paramètres** > **Statut de commande**, vous pouvez configurer l'enchaînement des statuts de commande, qui détermine les statuts dans lesquels une commande peut passer en fonction de son statut actuel. Personnalisez l'enchaînement des statuts pour qu'il corresponde au mieux à vos besoins opérationnels.
 
@@ -57,7 +57,7 @@ Pour modifier l'enchaînement des statuts, procédez comme suit :
 
 Par exemple, pour ajouter **Échec livraison** comme statut possible après **En livraison**, sélectionnez **Échec livraison** dans la liste **En livraison**.
 
-## Saisies complémentaires
+## Saisies complémentaires {#additional-data-prompt}
 
 Lorsqu'une commande est dans certains statuts spécifiques, OrderLine peut permettre à l'utilisateur de modifier l'**heure de livraison**, ou d'ajouter un **commentaire**.
 
@@ -79,7 +79,7 @@ Les utilisateurs peuvent être invités à ajouter un commentaire lorsque la com
 1. Trouvez la section **Saisir un commentaire lorsque la commande passe dans l'un des statuts suivants**.
 1. Sélectionnez le symbole <InlineImage width="40" height="42">![L'icône d'ajout de OrderLine](../images/034-orderline-status-add-specific.jpg)</InlineImage> pour sélectionner les statuts dans lesquels l'utilisateur pourra saisir un commentaire. Pour désélectionner tous les statuts, cliquez **Tout décocher**. La coche <InlineImage width="40" height="40">![Icône de validation d'ajout de statut dans OrderLine](../images/037-orderline-status-added.jpg)</InlineImage> indique que le statut a déjà été sélectionné.
 
-## Masquer les commandes
+## Masquer les commandes {#hide-orders}
 
 Vous pouvez masquer les commandes de l'onglet **Aujourd'hui** qui sont dans certains statuts spécifiques. Les commandes masquées peuvent être affichées dans l'onglet **Aujourd'hui**, en cliquant sur la carte des **commandes masquées**.
 
@@ -90,7 +90,7 @@ Pour masquer des commandes dans la liste **Aujourd'hui**, procédez comme suit 
 
 ![Exemple d'enchaînement des statuts](./images/015-2x-setting-hidden-completed.png)
 
-## Notifications
+## Notifications {#notifications}
 
 Vous pouvez être averti par un son lors de l'arrivée de nouvelles commandes dans OrderLine, en fonction des paramètres de notification. Cela s'applique aux commandes de l'onglet **Aujourd'hui** comme à celles de l'onglet **Jours suivants**.
 

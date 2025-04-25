@@ -10,7 +10,7 @@ meta:
 
 ## Mécanismes de communication
 
-HubRise permet de partager facilement des données entre des applications, par échange de requêtes d'API. Ce mécanisme de communication implique toujours une seconde application, qui envoie des données à HubRise ou en reçoit de sa part. Tous les échanges sont enregistrés dans le back-office de HubRise, et les logs complets peuvent être consultés et débogués. Pour savoir comment trouver les logs dans le back-office, consultez l'[aide de HubRise : logs de données](/docs/data/#logs).
+HubRise permet de partager facilement des données entre des applications, par échange de requêtes d'API. Ce mécanisme de communication implique toujours une seconde application, qui envoie des données à HubRise ou en reçoit de sa part. Tous les échanges sont enregistrés dans le back-office de HubRise, et les logs complets peuvent être consultés et débogués. Pour savoir comment trouver les logs dans le back-office, consultez l'[aide de HubRise : logs de données](/docs/data#logs).
 
 Le cycle de vie typique d'un tel échange se décline en trois parties :
 
@@ -95,15 +95,15 @@ Elle apparaît dans chaque requête sous la clé **X-Access-Token** et est parti
 
 ### Corps
 
-Le corps de la requête est représenté par le contenu JSON de celle-ci. Pour consulter un exemple de contenu JSON, voir [Exemple pratique](/docs/hubrise-logs/un-exemple-pratique).
+Le corps de la requête est représenté par le contenu JSON de celle-ci. Pour consulter un exemple de contenu JSON, voir [Exemple pratique](/docs/hubrise-logs/a-practical-example).
 
-Pour plus de détails sur le contenu JSON des requêtes dans HubRise, voir [Modèle de données HubRise](/docs/hubrise-logs/modele-donnees-hubrise).
+Pour plus de détails sur le contenu JSON des requêtes dans HubRise, voir [Modèle de données HubRise](/docs/hubrise-logs/hubrise-data-model).
 
 ## Exemple de réponse HubRise typique
 
-### Code
+### Code {#code}
 
-Le code de réponse indique le résultat de la requête. Le code 200 indique une requête ayant abouti, tandis que les autres codes correspondent à divers types d'erreurs. Le tableau suivant présente les erreurs les plus courantes. Pour connaître les stratégies de dépannage possibles en fonction du code, voir [Résolution des problèmes liés aux requêtes](/docs/hubrise-logs/deboguer-requetes).
+Le code de réponse indique le résultat de la requête. Le code 200 indique une requête ayant abouti, tandis que les autres codes correspondent à divers types d'erreurs. Le tableau suivant présente les erreurs les plus courantes. Pour connaître les stratégies de dépannage possibles en fonction du code, voir [Résolution des problèmes liés aux requêtes](/docs/hubrise-logs/troubleshooting-requests).
 
 | Code de réponse | Description                                                                                            |
 | --------------- | ------------------------------------------------------------------------------------------------------ |

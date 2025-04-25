@@ -10,7 +10,7 @@ meta:
 
 Les navigateurs internet peuvent empêcher les sites de jouer des notifications sonores. Il s'agit d'une sécurité visant à empêcher les sons indésirables.
 
-Lorsque les notifications sonores sont bloquées par votre navigateur, OrderLine affiche une popup rouge. Vous pouvez cliquer sur cette popup pour activer les notifications sonores pour la session en cours. Ce comportement est documenté dans le Guide de dépannage, section [Popup de notification sonore désactivée](/apps/orderline/depannage/#popup-de-notifications-sonores-d-sactiv-es).
+Lorsque les notifications sonores sont bloquées par votre navigateur, OrderLine affiche une popup rouge. Vous pouvez cliquer sur cette popup pour activer les notifications sonores pour la session en cours. Ce comportement est documenté dans le Guide de dépannage, section [Popup de notification sonore désactivée](/apps/orderline/troubleshooting#disabled-popup).
 
 Pour éviter de refaire cette manipulation à chaque fois que vous lancez OrderLine, vous pouvez configurer votre navigateur pour autoriser les notifications sonores pour OrderLine de manière permanente.
 

@@ -34,3 +34,4 @@ OrderLine features include:
 - Printing of order receipts.
 - Update of order status and delivery time.
 - Order history.
+- Opening hours adjustment.

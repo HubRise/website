@@ -3,7 +3,7 @@ import * as React from "react"
 import useTranslation from "@hooks/client/useTranslation"
 import { DocMdFile } from "@utils/DocIndexer/types"
 
-import { Section, ItemLink, ListItem, Description, List } from "./Styles"
+import { ItemLink, ListItem, Description, List, StyledInstructions } from "./Styles"
 
 export interface InstructionsProps {
   mdFile: DocMdFile
@@ -16,7 +16,7 @@ const Instructions = ({ mdFile }: InstructionsProps): JSX.Element => {
   const supportEmail = "mailto:support@hubrise.com"
 
   return (
-    <Section>
+    <StyledInstructions>
       <Description>{t(`misc.feedback.documentation.description`)}</Description>
 
       <List>
@@ -29,7 +29,7 @@ const Instructions = ({ mdFile }: InstructionsProps): JSX.Element => {
           </ItemLink>
         </ListItem>
       </List>
-    </Section>
+    </StyledInstructions>
   )
 }
 

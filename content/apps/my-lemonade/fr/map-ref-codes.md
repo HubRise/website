@@ -16,7 +16,7 @@ Les SKUs dans HubRise correspondent aux variante dans My Lemonade.
 
 Un produit est toujours composé d'au moins une SKU. HubRise ignore le code ref du produit et prend en compte le code ref de la SKU.
 
-Pour modifier le code ref d'une variante, suivez les étapes suivantes :
+Pour modifier le code ref d'une variante, suivez ces étapes :
 
 1. Dans le menu latéral du back office, sélectionnez **Gestion du Menu**.
 2. Dans la section **Carte**, sélectionnez la catégorie du produit.
@@ -26,7 +26,7 @@ Pour modifier le code ref d'une variante, suivez les étapes suivantes :
 
 ## Options
 
-Pour modifier le code ref d'une option, suivez les étapes suivantes :
+Pour modifier le code ref d'une option, suivez ces étapes :
 
 1. Dans le menu latéral du back office, sélectionnez **Gestion du Menu**.
 2. Sélectionnez l'onglet **OPTIONS**.
@@ -38,7 +38,7 @@ Pour modifier le code ref d'une option, suivez les étapes suivantes :
 
 Une promotion dans HubRise correspond à une offre dans My Lemonade.
 
-Pour modifier le code ref d'une offre, suivez les étapes suivantes :
+Pour modifier le code ref d'une offre, suivez ces étapes :
 
 1. Dans le menu latéral du back office, sélectionnez **Gestion du Menu**.
 2. Sélectionnez l'onglet **OFFRES**.
@@ -50,7 +50,7 @@ Pour modifier le code ref d'une offre, suivez les étapes suivantes :
 
 Une méthode de paiement dans HubRise correspond à un service de paiement dans My Lemonade.
 
-Pour modifier le code ref d'un service de paiement, suivez les étapes suivantes :
+Pour modifier le code ref d'un service de paiement, suivez ces étapes :
 
 1. Dans le menu latéral du back office, sélectionnez **Paramètres**.
 2. Sélectionnez l'onglet **PAIEMENT**.
@@ -59,7 +59,7 @@ Pour modifier le code ref d'un service de paiement, suivez les étapes suivantes
 
 ## Types de service
 
-Pour modifier le code ref d'un type de service, suivez les étapes suivantes :
+Pour modifier le code ref d'un type de service, suivez ces étapes :
 
 1. Dans le menu latéral du back office, sélectionnez **Paramètres**.
 2. Sélectionnez l'onglet **CAISSE**.

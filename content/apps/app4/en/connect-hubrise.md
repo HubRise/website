@@ -32,4 +32,4 @@ To connect App4 to HubRise, contact the App4 support team and request them to co
 
 To disconnect App4 from HubRise, contact App4 support.
 
-If you need to temporarily stop sending orders from HubRise, you can block the connection between App4 and HubRise instead. For more information, see [Block or Disconnect App](/docs/connections#block-or-disconnect-app).
+If you need to temporarily stop sending orders from HubRise, you can block the connection between App4 and HubRise instead. For more information, see [Block or Disconnect App](/docs/connections#block-or-disconnect).

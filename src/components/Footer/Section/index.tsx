@@ -1,5 +1,3 @@
-import { generateKey } from "@utils/misc"
-
 import type { IFooter } from "../types"
 
 import { Header, Item, ItemLink } from "./Styles"
@@ -10,7 +8,7 @@ const FooterSection = ({ title, links }: IFooter["sections"][number]): JSX.Eleme
 
     <ul>
       {links.map(({ title, to }, idx) => (
-        <Item key={generateKey(title, idx)}>
+        <Item key={idx}>
           <ItemLink href={to}>{title}</ItemLink>
         </Item>
       ))}

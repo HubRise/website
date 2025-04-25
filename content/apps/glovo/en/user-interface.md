@@ -19,12 +19,12 @@ Each row in the page shows the following information about an operation:
 
 - **TIME**: The date and time of the order.
 - **ORDER**: The HubRise order ID, for order operations.
-- **DESCRIPTION**: An optional description for operations that are not related to a specific order. It could be empty, or inform of a `System request` or a `Catalog push`.
+- **DESCRIPTION**: An optional description for operations that are not related to a specific order. It could be empty, or inform of a specific action such as `System request` or `Catalog push`.
 - **STATUS**: The status of the order. The value `OK` indicates that the order has been successfully sent, otherwise an error code will be displayed in red.
 
 The **System request** label indicates that the operation is not related to a specific order.
 
-[//]: # (<!-- TODO: ADD SCREENSHOT -->)
+[//]: # "<!-- TODO: ADD SCREENSHOT -->"
 
 Clicking on a row will open a new page displaying the logs associated with the operation.
 
@@ -42,9 +42,9 @@ Each row in the logs displays the following information:
 
 Clicking on a request will expand it to reveal the detailed logs of the request and its response.
 
-[//]: # (<!-- TODO: ADD SCREENSHOT -->)
+[//]: # "<!-- TODO: ADD SCREENSHOT -->"
 
-Logs are a powerful debugging tool in case of issues. To understand in detail how to read logs, see [Understanding HubRise Logs](/docs/hubrise-logs/).
+Logs are a powerful debugging tool in case of issues. To understand in detail how to read logs, see [Understanding HubRise Logs](/docs/hubrise-logs/overview).
 
 ### System Request Operation
 
@@ -56,7 +56,7 @@ System requests are generally sent by Glovo Bridge to notify HubRise about a cha
 
 System request pages can provide useful debugging insights to support teams, but are rarely of interest to other users.
 
-## Configuration
+## Configuration {#configuration}
 
 To access the Glovo Bridge configuration page, click **Configuration**.
 

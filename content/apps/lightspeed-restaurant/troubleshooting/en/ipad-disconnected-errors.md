@@ -22,7 +22,7 @@ In certain circumstances, orders may fail, causing the following error message t
 }
 ```
 
-This problem arises due to the fact that online ordering has not been enabled on the relevant iPad. To resolve this issue, you should activate online ordering on the iPad. For more information, see [API Activation in the Tablet](/apps/lightspeed-restaurant/faqs/troubleshooting-failed-orders/#api-activation-in-the-tablet).
+This problem arises due to the fact that online ordering has not been enabled on the relevant iPad. To resolve this issue, you should activate online ordering on the iPad. For more information, see [API Activation in the Tablet](/apps/lightspeed-restaurant/faqs/troubleshooting-failed-orders#api-activation).
 
 ## No Available Devices
 

@@ -10,7 +10,7 @@ meta:
 
 Lorsque Nestor est connecté à HubRise, les commandes envoyées à HubRise arrivent automatiquement dans votre logiciel de caisse.
 
-## Recevoir des commandes
+## Recevoir des commandes {#receive-orders}
 
 Nestor vérifie l'arrivée de nouvelles commandes toutes les 20 secondes grâce à l'utilitaire WebNES. Une alerte visuelle et sonore signale l'arrivée d'une nouvelle commande.
 ![Commandes - Alerte commande web](./images/012-nestor-order-alert.png)
@@ -20,7 +20,7 @@ Pour voir la liste des commandes en attente, cliquez sur l'alerte. Pour voir le 
 
 ### Commande avec des articles inconnus
 
-Lorsqu'une commande contient des articles dont le code ref n'est pas reconnu, ces derniers sont remplacés par des articles nommés **Article inconnu**. Il est alors impossible de valider la commande. Pour remédier à ce problème, suivez les étapes suivantes :
+Lorsqu'une commande contient des articles dont le code ref n'est pas reconnu, ces derniers sont remplacés par des articles nommés **Article inconnu**. Il est alors impossible de valider la commande. Pour remédier à ce problème, suivez ces étapes :
 
 1. Sélectionnez votre commande pour en voir le détail. Certaines lignes intituées **Article inconnu** sont présentes.
 1. Sélectionnez la dernière ligne vide. Votre menu apparaît.
@@ -31,9 +31,9 @@ Lorsqu'une commande contient des articles dont le code ref n'est pas reconnu, ce
 1. Répétez ces étapes pour chaque ligne **Article inconnu**.
 1. Validez la commande.
 
-Pour éviter que ce problème se reproduise, assurez-vous que les codes ref de vos produits ont bien été saisis. Pour plus d'informations, consultez la page [Associer les codes ref](/apps/nestor/associer-codes-ref).
+Pour éviter que ce problème se reproduise, assurez-vous que les codes ref de vos produits ont bien été saisis. Pour plus d'informations, consultez la page [Associer les codes ref](/apps/nestor/map-ref-codes).
 
-### Articles avec des prix différents
+### Articles avec des prix différents {#prices-differences}
 
 Lorsqu'une commande contient des articles dont le prix ne correspond pas à celui de Nestor, une remise en pourcentage est appliquée automatiquement.
 

@@ -1,17 +1,23 @@
+import * as React from "react"
+
+import { text } from "@utils/misc"
+
 import { BackgroundColor, HorizontalAlign } from "../utils"
 
-import { StyledTitle } from "./Styles"
+import { Anchor, StyledTitle } from "./Styles"
 
 interface TitleProps {
   backgroundColor: BackgroundColor
   horizontalAlign: HorizontalAlign
-  children: React.ReactNode
+  anchor?: string
+  children: string
 }
 
-const Title = ({ backgroundColor, horizontalAlign, children }: TitleProps): JSX.Element => {
+const Title = ({ backgroundColor, horizontalAlign, anchor, children }: TitleProps): JSX.Element => {
+  const title = text(children)
   return (
-    <StyledTitle $backgroundColor={backgroundColor} $horizontalAlign={horizontalAlign}>
-      {children}
+    <StyledTitle $backgroundColor={backgroundColor} $horizontalAlign={horizontalAlign} id={anchor}>
+      {anchor ? <Anchor href={`#${anchor}`}>{title}</Anchor> : title}
     </StyledTitle>
   )
 }

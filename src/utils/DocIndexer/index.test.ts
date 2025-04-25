@@ -1,20 +1,20 @@
 import * as fs from "fs/promises"
 
-import { mocked } from "jest-mock"
+import { beforeEach, describe, expect, it, vi } from "vitest"
 
-import { setupFsMocks } from "@utils/jest-helpers/mockFsSetup"
+import { setupFsMocks } from "@utils/test-helpers/mockFsSetup"
 
 import DocIndexer from "./index"
 
-jest.mock("fs/promises")
+vi.mock("fs/promises")
 
 describe("DocIndexer", () => {
   let indexer: DocIndexer
 
   beforeEach(() => {
     indexer = new DocIndexer("/apps")
-    mocked(fs.readdir).mockClear()
-    mocked(fs.readFile).mockClear()
+    vi.mocked(fs.readdir).mockClear()
+    vi.mocked(fs.readFile).mockClear()
   })
 
   it("indexes a folder", async () => {
@@ -123,14 +123,22 @@ describe("DocIndexer", () => {
           { type: "dir", name: "en" },
           { type: "dir", name: "fr" },
         ],
-        "/apps/en": [{ type: "file", name: "file1.md" }],
-        "/apps/fr": [{ type: "file", name: "file2.md" }],
+        "/apps/en": [
+          { type: "file", name: "file1.md" },
+          { type: "file", name: "file3.md" },
+        ],
+        "/apps/fr": [
+          { type: "file", name: "file2.md" },
+          { type: "file", name: "file3.md" },
+        ],
       },
       readFileResponses: {
         "/apps/en/customization.yaml": "name: Apps",
         "/apps/en/file1.md": "---\n---",
+        "/apps/en/file3.md": "---\n---",
         "/apps/fr/customization.yaml": "name: Logiciels\ncopy_files_from: en",
         "/apps/fr/file2.md": "---\n---",
+        "/apps/fr/file3.md": "---\n---",
       },
     })
 
@@ -148,12 +156,28 @@ describe("DocIndexer", () => {
           frontMatter: {},
           content: "",
         },
+        {
+          contentDirName: "/apps/en",
+          basename: "file3",
+          uri: "/apps/file3",
+          language: "en",
+          frontMatter: {},
+          content: "",
+        },
       ],
       fr: [
         {
           contentDirName: "/apps/fr",
           basename: "file2",
           uri: "/fr/apps/file2",
+          language: "fr",
+          frontMatter: {},
+          content: "",
+        },
+        {
+          contentDirName: "/apps/fr",
+          basename: "file3",
+          uri: "/fr/apps/file3",
           language: "fr",
           frontMatter: {},
           content: "",

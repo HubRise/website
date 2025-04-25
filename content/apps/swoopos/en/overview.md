@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: Full documentation of this integration will be available soon.
+**IMPORTANT NOTE:** Full documentation of this integration will be available soon.
 
 ---
 
@@ -42,7 +42,8 @@ Connecting SwooPOS to HubRise allows your EPOS to:
 
 - Pull orders from HubRise, including order status.
 - Pull customer information from HubRise.
-- Push the menu into a HubRise catalog.
+- Push a catalog into HubRise, with variants support.
+- Synchronise opening hours with HubRise.
 
 ---
 
@@ -56,7 +57,7 @@ SwooPOS can be connected to HubRise via the SwooPOS support line.
 
 By connecting SwooPOS to HubRise, your EPOS can communicate with your other everyday applications. Receive orders from your online ordering solution, or food delivery platforms in your EPOS. Export your menu into other apps.
 
-Thanks to HubRise, you can synchronise your menu, your customer information and your orders with your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management solutions or delivery services, eMarketing (SMS/emailing) solutions, business intelligence, inventory management and customer loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our [Apps page](/apps).
+With HubRise, you can synchronise your menu, customer information, and orders between your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats, and Just Eat), delivery management solutions or delivery services, eMarketing solutions (SMS/emailing), business intelligence, inventory, and customer loyalty systems, and much more. The number of compatible applications increases every month. To discover the apps you can connect, visit our [Apps page](/apps).
 
 ## Prerequisites
 

@@ -8,4 +8,4 @@ meta:
   description: Commonly asked questions about integrating Smood with HubRise.
 ---
 
-- [Why Are My Deals Not Imported?](/apps/smood/faqs/deals-not-imported/)
+- [Why Are My Deals Not Imported?](/apps/smood/faqs/deals-not-imported)

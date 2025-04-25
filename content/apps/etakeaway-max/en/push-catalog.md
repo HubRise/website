@@ -14,7 +14,7 @@ This page describes how to export your eTakeaway Max catalog and what informatio
 
 To export your catalog to HubRise, follow these steps:
 
-1. From the main dashboard, select **Menu > Categories**.
+1. From the main dashboard, select **Menu** > **Categories**.
 1. From the **Categories** page, click **Export to HubRise**.
    ![eTakeaway Max categories page for store managers](./images/011-etm-export-storeman.png)
 1. You will redirect to the catalog export page.
@@ -24,7 +24,7 @@ To export your catalog to HubRise, follow these steps:
 
 ---
 
-**IMPORTANT NOTE**: This operation will replace your current HubRise catalog.
+**IMPORTANT NOTE:** This operation will replace your current HubRise catalog.
 
 ---
 
@@ -33,6 +33,12 @@ Depending on how large your catalog is, it might take a few minutes for your Hub
 ## Information Sent to HubRise
 
 The following sections provide more details on how your eTakeaway Max catalog is mapped to HubRise.
+
+### Variants
+
+Variants allow you to customise prices and availability across different ordering channels.
+
+Variants must be set up by eTakeaway Max support. If your menu includes variants, they will be sent to HubRise.
 
 ### Categories
 
@@ -50,6 +56,7 @@ eTakeaway Max does not support products with skus. For every item in the catalog
 - Images
 - Price
 - Options
+- Price and availability overrides (if you have variants)
 
 ### Options
 
@@ -101,4 +108,4 @@ For every option, the following information is sent to HubRise:
 - `lines`: The product lines included in the deal.
 
 Each product line contains the `label`, `pricing_effect`, and `skus` fields.
-For more information about HubRise deals, see [Deals](/developers/api/catalog-management#deal-in-catalog-upload).
+For more information about HubRise deals, see [Deals](/developers/api/catalogs#deal-in-catalog-upload).

@@ -21,7 +21,7 @@ To update your User Profile:
 
 ---
 
-**IMPORTANT NOTE**: When changing your email address, verify that it is accurate and able to receive emails. Otherwise password resets and other notifications will not work.
+**IMPORTANT NOTE:** When changing your email address, verify that it is accurate and able to receive emails. Otherwise password resets and other notifications will not work.
 
 ---
 
@@ -39,13 +39,13 @@ To update your password:
 
 ---
 
-**IMPORTANT NOTE**: If you suspect your password has been compromised, it is strongly recommended that you logout from all devices after updating your password. Refer to [Logout From All Devices](#logout-from-all-devices) below for more information.
+**IMPORTANT NOTE:** If you suspect your password has been compromised, it is strongly recommended that you logout from all devices after updating your password. Refer to [Logout From All Devices](#logout-from-all-devices) below for more information.
 
 ---
 
 ![HubRise Change password](./images/055-2x-change-password.png)
 
-## Logout From All Devices
+## Logout From All Devices {#logout-from-all-devices}
 
 If your HubRise account is logged in on multiple devices, you can log out from all of them at once. This is useful if you have lost a device, or if you want to prevent someone else from accessing your account.
 
@@ -71,18 +71,18 @@ To remove your access to an Account or a Location:
 
 ---
 
-**IMPORTANT NOTE**: You cannot remove yourself from an Account if you are the only Admin. If you attempt to do so, an error message will be displayed. If you need to remove yourself as the last Admin for an Account, create another user as an Admin for that Account, then remove yourself.
+**IMPORTANT NOTE:** You cannot remove yourself from an Account if you are the only Admin. If you attempt to do so, an error message will be displayed. If you need to remove yourself as the last Admin for an Account, create another user as an Admin for that Account, then remove yourself.
 
 ---
 
-For more information, see [Permissions](/docs/permissions/).
+For more information, see [Permissions](/docs/permissions).
 
 ## Create an Account
 
 To create a new Account:
 
 1. Click your name in the top right corner of HubRise the back office, then click **Profile**.
-1. In the **Permissions** section, click **Create Account**. For more information, see [Create an Account](/docs/account#create-an-account).
+1. In the **Permissions** section, click **Create Account**. For more information, see [Create an Account](/docs/account#create-account).
 
 ![HubRise My Permissions](./images/056-2x-my-permissions.png)
 
@@ -92,7 +92,7 @@ If you are a registered user but you have lost or forgotten your password, go to
 
 ---
 
-**IMPORTANT NOTE**: If you do not see the password reset instructions in your email's Inbox folder within a few minutes, refresh your Inbox and check your Spam or Trash folders.
+**IMPORTANT NOTE:** If you do not see the password reset instructions in your email's Inbox folder within a few minutes, refresh your Inbox and check your Spam or Trash folders.
 
 ---
 

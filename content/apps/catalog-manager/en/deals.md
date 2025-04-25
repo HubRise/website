@@ -27,7 +27,7 @@ To create a deal, click on **Deals** > **New deal** and enter a name. After you 
 
 ### Buy One Get One Free
 
-To set up a `Buy One Get One FREE` deal, create one line item to represent the `Buy One` part of the deal. This will be set at its normal price by selecting **Unchanged**. Then add a second line item to represent the `Get One FREE` part of the deal. Enter a percentage off pricing effect of `100%` for this line item. For each line item, choose the allowed products by selecting **Attach SKUs** in the **Deal lines** section.
+To set up a `Buy One Get One FREE` deal, create one line item to represent the `Buy One` part of the deal. This will be set at its normal price by selecting **Unchanged**. Then add a second line item to represent the `Get One FREE` part of the deal. Enter a percentage off **Pricing effect** of `100%` for this line item. For each line item, choose the allowed products by selecting **Attach SKUs** in the **Deal lines** section.
 
 ![Catalog Manager Deal Details](./images/012-2x-deal-details.png)
 

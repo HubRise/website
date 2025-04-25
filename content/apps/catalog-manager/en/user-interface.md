@@ -16,7 +16,8 @@ To edit an existing catalog, click **Open** next to the catalog name.
 On the **Catalogs** page, you can also perform the following actions:
 
 - Create a new catalog
-- Duplicate an existing catalog
+- Rename a catalog
+- Duplicate a catalog
 - Delete a catalog
 
 For more information, see [Catalogs](/apps/catalog-manager/catalogs).
@@ -26,13 +27,13 @@ For more information, see [Catalogs](/apps/catalog-manager/catalogs).
 ## Catalog Editing Flow
 
 Editing a catalog is a complex task that often requires multiple iterations.
-Catalog Manager is designed to simplify this process with its modular interface.
+Catalog Manager is designed to simplify this process with its modular user interface.
 
 When you edit a catalog, you typically perform the following steps:
 
-1. You edit the basic information about your products, including ref codes, prices, and images.
-2. If needed, you create multiple variants of the catalog, for example to support different prices and availabilities on different delivery platforms.
-3. You preview how the catalog appears as a whole to verify that everything is as expected.
+1. You edit the basic information about your products, including options, prices, images and ref codes.
+1. You create variants of your catalog to support price differences or product availability per sales channel, if needed.
+1. You preview your catalog online appearance to verify that your product offerings are presented as expected.
 
 The **Edit**, **Grid**, and **Preview** views in Catalog Manager let you perform these actions in an iterative way.
 
@@ -46,7 +47,7 @@ From the **Edit** view, you can create and manage products, options, deals, disc
 ## The Grid View
 
 After you create your products, options, and deals, you can review them from the **Grid** view, where they are presented in a tabular form for easier comparison.
-The **Grid** view also lets you create and manage variants of your catalog, to control availability and prices for different platforms.
+The **Grid** view also lets you create and manage variants of your catalog, to control availability and prices for different sales channels. For more information, see [Catalog Variants](/apps/catalog-manager/variants).
 
 ![Catalog Manager Grid View](./images/020-grid-view.png)
 

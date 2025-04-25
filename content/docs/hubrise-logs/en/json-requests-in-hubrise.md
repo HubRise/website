@@ -10,7 +10,7 @@ meta:
 
 ## Communication Mechanisms
 
-HubRise allows easy sharing of data between different applications by exchanging API requests. This communication mechanism always involves a second application that either sends data to or receives data from HubRise. All these exchanges are recorded in the HubRise back office and the complete logs can be inspected and debugged. For information on how to find the logs in the back office, see [HubRise Help, Data Logs](/docs/data/#logs).
+HubRise allows easy sharing of data between different applications by exchanging API requests. This communication mechanism always involves a second application that either sends data to or receives data from HubRise. All these exchanges are recorded in the HubRise back office and the complete logs can be inspected and debugged. For information on how to find the logs in the back office, see [HubRise Help, Data Logs](/docs/data#logs).
 
 The typical lifecycle of such an exchange involves three components:
 
@@ -101,7 +101,7 @@ For more details about the JSON content of the requests in HubRise, see [HubRise
 
 ## A Typical HubRise Response
 
-### Code
+### Code {#code}
 
 The response code tells the outcome of the request. The code 200 indicates a successful request, while other codes are related to various types of errors. The following table highlights the main errors. For possible troubleshooting strategies depending on the code, see [Troubleshooting Requests](/docs/hubrise-logs/troubleshooting-requests).
 

@@ -14,11 +14,11 @@ HubRise and Smood each use their own terminology. The same concept can therefore
 
 | Smood               | HubRise  | Description                                                                |
 | ------------------- | -------- | -------------------------------------------------------------------------- |
-| Discount voucher    | Discount | Discount that applies on the order total, when the customer enters a code. |
+| Voucher             | Discount | Discount that applies on the order total, when the customer enters a code. |
 | Promotion           | Deal     | BOGOF or percentage off on items.                                          |
 | Restaurant or Store | Location | The actual restaurant.                                                     |
 
-## Service Types
+## Smood Service Types {#smood-service-types}
 
 Smood offers three types of services to its customers:
 

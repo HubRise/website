@@ -2,7 +2,7 @@ import Block from "@components/Block"
 import useTranslation from "@hooks/client/useTranslation"
 import { AppsYaml } from "@layouts/Apps/types"
 import { ContentImage } from "@utils/contentImage"
-import { generateKey } from "@utils/misc"
+import { text } from "@utils/misc"
 
 import {
   Group,
@@ -16,30 +16,23 @@ import {
   AppLogoImage,
 } from "./Styles"
 
-interface AppSectionProps {
+interface AppGroupProps {
   title: string
-  showTitle: boolean
+  slug: string
   apps: AppsYaml["content"]["categories"][0]["apps"]
   logoImages: { [logo: string]: ContentImage }
   additionalSections: AppsYaml["content"]["additional_sections"]
   hasSuggestApp: boolean
 }
 
-const App = ({
-  title,
-  showTitle,
-  apps,
-  logoImages,
-  additionalSections,
-  hasSuggestApp,
-}: AppSectionProps): JSX.Element => {
+const AppGroup = ({ title, slug, apps, logoImages, additionalSections, hasSuggestApp }: AppGroupProps): JSX.Element => {
   const { t } = useTranslation()
 
   return (
-    <Block backgroundColor="none" title={showTitle ? title : undefined}>
+    <Block backgroundColor="none" title={title} titleAnchor={slug}>
       <Group>
         {apps.map((app, idx) => (
-          <AppBoxLink key={generateKey(title, idx)} href={app.documentation || app.website}>
+          <AppBoxLink key={idx} href={app.documentation || app.website || "#"} data-testid="apps:result">
             {logoImages[app.logo] && (
               <AppLogo>
                 <AppLogoImage {...logoImages[app.logo]} alt={app.title} />
@@ -50,9 +43,9 @@ const App = ({
               {app.documentation ? t("apps.view_documentation") : t("apps.visit_website")}
             </AppDocumentation>
 
-            <AppDescription>{app.description}</AppDescription>
+            <AppDescription>{text(app.description)}</AppDescription>
 
-            {app.additional_info && <AppAdditionalInfo>{app.additional_info}</AppAdditionalInfo>}
+            {app.additional_info && <AppAdditionalInfo>{text(app.additional_info)}</AppAdditionalInfo>}
           </AppBoxLink>
         ))}
 
@@ -67,4 +60,4 @@ const App = ({
   )
 }
 
-export default App
+export default AppGroup

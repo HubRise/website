@@ -20,7 +20,7 @@ Each row in the page shows the following information about an operation:
 
 - **TIME**: The date and time of the order.
 - **ORDER**: The HubRise order ID, for order operations.
-- **DESCRIPTION**: An optional description for operations that are not related to a specific order. It could be empty, or inform of a `System request` or a `Catalog push`.
+- **DESCRIPTION**: An optional description for operations that are not related to a specific order. It could be empty, or inform of a specific action such as `System request` or `Catalog push`.
 - **STATUS**: The status of the order. The value `OK` indicates that the order has been successfully sent, otherwise an error code will be displayed in red.
 
 The **System request** label indicates that the operation is not related to a specific order.
@@ -45,7 +45,7 @@ Clicking on a request will expand it to reveal the detailed logs of the request 
 
 ![Order logs page on Just Eat Takeaway Bridge](./images/004-jet-order-logs.png)
 
-Logs are a powerful debugging tool in case of issues. To understand in detail how to read logs, see [Understanding HubRise Logs](/docs/hubrise-logs/).
+Logs are a powerful debugging tool in case of issues. To understand in detail how to read logs, see [Understanding HubRise Logs](/docs/hubrise-logs/overview).
 
 ### System Request Operation
 
@@ -57,7 +57,7 @@ System requests are generally sent by Just Eat Takeaway Bridge to notify HubRise
 
 System request pages can provide useful debugging insights to support teams, but are rarely of interest to other users.
 
-## Configuration
+## Configuration {#configuration}
 
 To access the Just Eat Takeaway Bridge configuration page, click **Configuration** at the top of the screen.
 

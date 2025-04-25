@@ -31,6 +31,7 @@ export const TitleLink = styled(Link)`
 
 export const StyledTitle = styled(Title)`
   font-size: ${fontSizes._24};
+  margin-bottom: 1.5rem;
 `
 
 export const BannerLink = styled(Link)`
@@ -60,6 +61,7 @@ export const ReadMore = styled(Link)`
   color: ${colors.white};
   background: ${colors.textDark};
   border-radius: ${sizes.borderRadius};
+  ${mixin.clickable};
 
   ${mixin.buttonOver(colors.white, colors.primary)};
 

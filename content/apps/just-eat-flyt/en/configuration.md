@@ -11,20 +11,29 @@ meta:
 The configuration page allows you to customise the behaviour of Just Eat Flyt Bridge based on your preferences.
 These are divided into different sections for an easier navigation.
 
-![Just Eat Flyt Bridge configuration page](./images/011-just-eat-configuration-page-cropped.png)
-
 ## Language
+
+![Just Eat Flyt Bridge configuration page, Language section](./images/019-just-eat-configuration-page-language.png)
 
 Choose the language to use for generic items such as `Delivery charge`. These names may appear in your EPOS and in customer receipts.
 
 ## Orders
 
+![Just Eat Flyt Bridge configuration page, Orders section](./images/011-just-eat-configuration-page-orders.png)
+
+### Order Statuses
+
+Just Eats requires you to acknowledge every order you receive. In this section, you can select which HubRise status sends an order confirmation back to Just Eats. Refer to your EPOS documentation on the HubRise website to verify the correct value.
+
 ### Service Types
 
 Service types such as platform delivery, restaurant delivery or takeaway might require the corresponding ref code entry. Refer to your EPOS documentation on the HubRise website to verify.
 
-Additionally, from this section you can choose to mark Just Eat orders as delivery orders or collection orders.
-This is useful if you have specific business requirements for financial reporting.
+Additionally, from this section, you can choose to categorise orders fulfilled by Just Eat as either delivery or collection orders. Orders fulfilled by the restaurant fleet are always marked as delivery orders. This feature is useful to address specific business requirements or to differentiate these orders in financial reports.
+
+### Special Items
+
+Some markets such as Ireland require deposits on certain items. If your business requires this, you can specify the ref code for the deposit item in this section. The deposit item must first be created as an option in your EPOS. Once configured, it will be automatically added to any items that require a deposit.
 
 ### Discounts
 
@@ -49,28 +58,66 @@ Just Eat customers can pay for their order either online or by cash for restaura
 
 This section of the configuration page allows you to specify the ref codes for these two payment methods. Refer to your EPOS documentation on the HubRise website to verify the correct codes to use.
 
-## Catalog
+## Customers
+
+![Just Eat Flyt Bridge configuration page, Customers section](./images/013-just-eat-configuration-page-customers.png)
+
+Enable the **Duplicate phone access code in delivery notes** option if your EPOS lacks native support for fetching phone access codes.
+
+All EPOS systems integrated with HubRise can read delivery notes. If your EPOS has native support and this option is enabled, the code will appear duplicated. Refer to your EPOS documentation on the HubRise website to verify the correct value.
+
+## Catalog {#catalog}
+
+![Just Eat Flyt Bridge configuration page, Catalog section](./images/012-just-eat-configuration-page-catalog.png)
+
+### Catalog Variant to Push
+
+Catalog variants give you the flexibility to disable specific items or adjust prices for Just Eat.
+
+If your catalog includes variants, you have the option to select which ones to use. You can select different variants for the delivery and collection menus, or use the same variant for both. When **(none)** is selected, all items along with their standard prices are sent to Just Eat.
+
+### Special Menus
+
+Special menus allow you to schedule different catalog variants for specific days and times. This feature is useful for offering separate breakfast or lunch menus, for example.
+
+To configure special menus:
+
+1. Ensure your catalog contains the necessary variants.
+2. Select the number of special menus you want to set up (up to 5) from the dropdown menu.
+3. For each special menu:
+    - Select the days of the week when this menu should be active.
+    - Set the start time (**From**) and end time (**to**) for the menu.
+    - Choose the delivery and collection catalog variants to use during this time period.
+
+When special menus are configured, Just Eat will automatically switch to the appropriate catalog variant based on the order expected time and whether it's for delivery or collection.
+
+If there is no special menu active at a particular time, Just Eat will use the default catalog variants specified in the **Catalog variant to push** settings for delivery and collection.
+
+### Service Types
+
+In this section, you can specify the service types that your restaurant offers, such as delivery, collection, or both. Your preferences will be sent to Just Eat on the next catalog push.
+
+### Automatic Catalog Push
 
 Select the **Enable automatic catalog push** checkbox to synchronise your HubRise catalog with Just Eat whenever it gets updated.
 
-![Just Eat Flyt Bridge configuration page, Catalog section](./images/012-just-eat-configuration-page-menu.png)
+## Location
 
-### Opening Hours
+![Just Eat Flyt Bridge configuration page, Location section](./images/015-just-eat-configuration-page-location.png)
 
-In the **Opening hours** section, you can choose to make your products available for delivery, collection, or both.
+Select **Enable automatic opening hours push** to synchronise your HubRise opening hours with Just Eat. To enable this option, you must first set your opening hours in HubRise, and enable automatic catalog push.
 
-For each day of the week, set the opening and closing times of your store by specifying one or two time shifts. Customers will not be able to order from your Just Eat store outside of these time windows.
-
-If your restaurant is closed on a specific day, click **Close the day**.
-To quickly copy opening hours to all the following days on the list, click **Copy to bottom**.
+If you use specific opening hours for Just Eat, you can set them for Just Eat only by selecting **Use specific opening hours for Just Eat**, then entering your opening hours for Delivery and Collection, depending on the service types you offer. This option will override the opening hours set in HubRise.
 
 ---
 
-**IMPORTANT NOTE:** By default, closing times for delivery will be set half an hour earlier on the Just Eat store than the value you set on Just Eat Flyt Bridge. Closing times for collection, instead, are not modified.
+**IMPORTANT NOTE:** By default, closing times for delivery will be set half an hour earlier on the Just Eat store than the value you set on Just Eat Flyt Bridge or HubRise. Closing times for collection, however, are not modified.
 
 ---
 
 ## Inventory
+
+![Just Eat Flyt Bridge configuration page, Inventory section](./images/014-just-eat-configuration-page-inventory.png)
 
 Through inventory synchronisation, products and options that have a stock quantity of zero can be hidden can be hidden on your Just Eat store.
 

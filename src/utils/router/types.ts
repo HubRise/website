@@ -2,7 +2,9 @@ import { AppsYaml } from "@layouts/Apps/types"
 import { DocumentationIndexYaml } from "@layouts/DocumentationIndex/types"
 import { DocumentationSimpleFrontMatter } from "@layouts/DocumentationSimple/types"
 import { FrontpageYaml } from "@layouts/Frontpage/types"
+import { PartnersYaml } from "@layouts/Partners/types"
 import { PricingYaml } from "@layouts/Pricing/types"
+import { TestimonialsYaml } from "@layouts/Testimonials/types"
 import { BlogArchives, BlogMdFile } from "@utils/BlogIndexer/types"
 import { Href, DocMdFile, DocFolder } from "@utils/DocIndexer/types"
 import { ContentDirName } from "@utils/files"
@@ -19,23 +21,22 @@ export type RouteNameStatic =
   | "docs"
   | "faqs"
   | "frontpage"
+  | "partners"
   | "pricing"
-export type RouteNameDynamic =
-  | "apps_category"
+  | "testimonials"
+export type RouteNameDocumentation =
   | "apps_page"
-  | "blog_archive"
   | "blog_post"
   | "contributing_page"
   | "developers_page"
   | "docs_page"
   | "legal_page"
+export type RouteNameDynamic = "blog_archive" | RouteNameDocumentation
 export type RouteName = RouteNameStatic | RouteNameDynamic
 
-export type RouteParamsDynamic<R extends RouteNameDynamic> = R extends "apps_category"
-  ? { categoryTitle: string }
-  : R extends "blog_archive"
+export type RouteParamsDynamic<R extends RouteNameDynamic> = R extends "blog_archive"
   ? { year: number }
-  : R extends "apps_page" | "blog_post" | "contributing_page" | "developers_page" | "docs_page" | "legal_page"
+  : R extends RouteNameDocumentation
   ? { contentDirName: ContentDirName; basename: string }
   : never
 type RouteParams<R extends RouteName> = R extends RouteNameDynamic ? { params: RouteParamsDynamic<R> } : object
@@ -50,7 +51,9 @@ export type LayoutName =
   | "documentation-index"
   | "documentation-simple"
   | "frontpage"
+  | "partners"
   | "pricing"
+  | "testimonials"
 export type Context<L extends LayoutName> = L extends "apps"
   ? { context: { yaml: AppsYaml } }
   : L extends "blog-index"
@@ -65,8 +68,12 @@ export type Context<L extends LayoutName> = L extends "apps"
   ? { context: { content: string; frontMatter: DocumentationSimpleFrontMatter } }
   : L extends "frontpage"
   ? { context: { yaml: FrontpageYaml } }
+  : L extends "partners"
+  ? { context: { yaml: PartnersYaml } }
   : L extends "pricing"
   ? { context: { yaml: PricingYaml } }
+  : L extends "testimonials"
+  ? { context: { yaml: TestimonialsYaml } }
   : never
 
 // Main types

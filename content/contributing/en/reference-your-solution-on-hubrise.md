@@ -23,7 +23,7 @@ To include your solution on this page, please send us the following elements:
 
 ## Documentation of the Integration
 
-This documentation presents the solution and the procedure to follow to connect it to HubRise. It is intended to allow users and support teams to install the solution autonomously and troubleshoot the connection. By way of example, refer to the documentation done for [LivePepper](/apps/livepepper).
+This documentation presents the solution and the procedure to follow to connect it to HubRise. It is intended to allow users and support teams to install the solution autonomously and troubleshoot the connection. By way of example, refer to the documentation done for [LivePepper](/apps/livepepper/overview).
 
 For the overview page, which is the first visible page of this documentation, you must provide the following elements:
 

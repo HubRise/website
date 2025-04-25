@@ -4,7 +4,7 @@ path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | SuperDigital.fr | HubRise
+  title: Connexion à HubRise | SuperDigital.fr | HubRise
   description: Étapes pour établir une connexion entre SuperDigital.fr et HubRise. Connectez votre caisse et synchronisez vos données avec d'autres applications.
 ---
 
@@ -16,7 +16,7 @@ meta:
 
 ## Connecter SuperDigital.fr
 
-Pour connecter votre solution de commande en ligne SuperDigital.fr à HubRise, suivez les étapes suivantes :
+Pour connecter votre solution de commande en ligne SuperDigital.fr à HubRise, suivez ces étapes :
 
 1. Dans le menu latéral de votre espace SuperDigital.fr, sélectionnez **RestroPress** > **Settings**.
 2. Sélectionnez l'onglet **HubRise**.
@@ -25,17 +25,19 @@ Pour connecter votre solution de commande en ligne SuperDigital.fr à HubRise, s
 5. Cliquez sur **Autoriser**.
    ![Connexion - Page de connexion](./images/001-connection-page.png)
 
-En cas de besoin, l'éditeur de la solution SuperDigital.fr peut vous venir en aide. Pour leur donner accès à votre compte HubRise, [ajoutez les permissions nécessaires](/apps/superdigital/connexion-hubrise#donner-acc-s-au-support-de-superdigital-fr).
+En cas de besoin, l'éditeur de la solution SuperDigital.fr peut vous venir en aide. Pour leur donner accès à votre compte HubRise, [ajoutez les permissions nécessaires](/apps/superdigital/connect-hubrise#give-access).
 
-## Donner accès au support de SuperDigital.fr
+## Donner accès au support de SuperDigital.fr {#give-access}
 
 Pour faciliter la prise en charge de vos demandes de support, nous vous recommandons de donner accès à votre compte HubRise à l'éditeur de la solution SuperDigital.fr.
 
 Pour donner accès à SuperDigital.fr, procédez comme suit :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
-1. Dans la section **Permissions**, ajoutez contact@superdigital.fr en sélectionnant l'option **Manager** dans la liste déroulante des rôles.
-1. Cliquez sur l'icône **+** pour ajouter le nouvel utilisateur.
+1. Dans la section **Permissions**, ajoutez `contact@superdigital.fr`.
+1. Cliquez sur **Ajouter l'utilisateur**.
+1. Dans le menu déroulant de choix d'un rôle prédéfini, sélectionnez **Partenaire Technique**.
+1. Cliquez sur **Définir les permissions**.
 
 L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre point de vente. Le partage de mot de passe est déconseillé pour des raisons de sécurité.
 

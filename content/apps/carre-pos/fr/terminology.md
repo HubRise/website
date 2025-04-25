@@ -1,16 +1,16 @@
 ---
 title: Terminologie
 path_override: terminologie
-position: 5
+position: 19
 layout: documentation
 meta:
-  title: Terminologie | Carré POS | HubRise
-  description: Table de correspondance entre les termes utilisés par Carré POS et HubRise pour le même concept. Connectez vos apps et synchronisez vos données.
+  title: Terminologie | Carré POS | HubRise
+  description: Table de correspondance entre les termes utilisés par Carré POS et HubRise pour le même concept. Connectez vos apps et synchronisez vos données.
 ---
 
-HubRise et Carré POS utilisent chacun leur propre terminologie. Un même concept peut donc avoir une désignation différente dans chaque solution. La table de correspondance ci-dessous indique ces différences.
+HubRise et Carré POS utilisent chacun leur propre terminologie. Un même concept peut donc avoir une désignation différente dans chaque solution. La table de correspondance ci-dessous indique ces différences.
 
-| Carré POS        | HubRise             | Description                             |
+| Carré POS        | HubRise             | Description                             |
 | ---------------- | ------------------- | --------------------------------------- |
 | Groupe d'options | Liste d'options     | Liste d'options                         |
 | Compte client    | Client              | Informations du client                  |

@@ -37,7 +37,7 @@ Flyt is available on the following Just Eat platforms:
 
 ---
 
-**IMPORTANT NOTE:** To connect a store in a different Just Eat market, you should use [Just Eat Takeaway Bridge](/apps/just-eat-takeaway/) instead.
+**IMPORTANT NOTE:** To connect a store in a different Just Eat market, you should use [Just Eat Takeaway Bridge](/apps/just-eat-takeaway/overview) instead.
 
 ---
 
@@ -51,14 +51,14 @@ Connecting Just Eat Flyt Bridge allows you to:
 
 - Pull orders from Just Eat, including order status.
 - Pull customer information from Just Eat, for orders delivered by the restaurant.
-- Push a catalog into Just Eat.
+- Push a catalog into Just Eat, with variants support.
 - Synchronise inventory with HubRise.
 
 ![Diagram of the connection flow between Just Eat, Just Eat Flyt Bridge, and HubRise for receiving orders](./images/000-2x-just-eat-connection-diagram.png)
 
 ---
 
-**IMPORTANT NOTE:** The Just Eat OrderPad will need to remain switched on to receive orders in HubRise. For some markets, auto-accept can be activated. For more information, see [Can I Turn Off the Orderpad?](/apps/just-eat-flyt/faqs/turn-off-orderpad/).
+**IMPORTANT NOTE:** The Just Eat OrderPad will need to remain switched on to receive orders in HubRise. For some markets, auto-accept can be activated. For more information, see [Can I Turn Off the Orderpad?](/apps/just-eat-flyt/faqs/turn-off-orderpad).
 
 ---
 

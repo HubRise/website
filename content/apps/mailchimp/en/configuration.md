@@ -4,39 +4,38 @@ path_override: configuration
 position: 3
 layout: documentation
 meta:
-  title: Configuration Guide | Mailchimp | HubRise
+  title: Configuration | Mailchimp | HubRise
   description: Instructions on configuring Mailchimp to work seamlessly with your EPOS or other apps connected to HubRise. Configuration is simple.
 ---
 
-## Configuration Options
+The configuration page allows you to customise the behaviour of Mailchimp Bridge based on your preferences.
 
-In order to configure your connection to Mailchimp:
+![Mailchimp Configuration Page](./images/004-mailchimp-configuration.png)
 
-1. Open your Mailchimp Bridge. For assistance, see [Open an App](/docs/connections/#open-an-app).
+## General Settings
 
-1. In the top right hand corner, click the down arrow <InlineImage width="28" height="21">![Down arrow icon](../images/009-arrow.jpg)</InlineImage> next to your **Location name** and select **Configuration**.
+- **Mailchimp account**: Displays the Mailchimp account connected to your HubRise location.
 
-1. In the configuration section you have three options:
+- **Mailchimp list**: Indicates the Mailchimp Audience where customers are exported. You can select the desired audience from the drop-down list. The selected audience is also displayed in the Mailchimp header, below your business name.
 
-   - **Mailchimp account**: This option indicates which Mailchimp account is connected to your HubRise location.
+- **Create a contact in Mailchimp when**: Defines when a contact is created in Mailchimp. You can choose from:
+  - **An order is placed in HubRise** – _Recommended_  
+    When an order is placed, both customer details and order information are available, allowing more data to be attached to the Mailchimp member. See [Additional Fields](#additional-fields) for more information.
+  - **A customer is added to HubRise** _(obsolete)_  
+    This mode does not include order details, and is no longer recommended.
 
-   - **Mailchimp list**: This option indicates the Mailchimp Audience where the customers are exported to. In the drop-down list, you can select the Mailchimp audience to use. The selected audience also appears in the far right hand side of the Mailchimp header, immediately below the name of your business.
-     ![Mailchimp Bridge Configuration](./images/004-2x-connected-mailchimp-list.png)
+## Additional Fields {#additional-fields}
 
-   - **Create a contact in Mailchimp when**: This option allows you to specify when a contact is created in Mailchimp. In the drop-down list you can either select **a customer is added to HubRise** or **an order is placed in HubRise**.
+Additional information can be sent to Mailchimp when **An order is placed in HubRise** is selected.
 
-1. Once you have set the configuration according to your preferences, click **Save**.
+All fields except **SMS marketing opt-in/out** are exported as merge fields in Mailchimp. The **SMS marketing opt-in/out** field is sent as a member tag.
+
+For more details on how customers are synced with Mailchimp audience members, see [Sync Customers](/apps/mailchimp/sync-customers).
+
+## Save the Configuration
+
+To save the configuration, click **Save** at the top of the page.
+
+## Reset the Configuration
 
 If you need to reset the configuration, click **Reset the configuration** at the bottom of the page.
-
-![Mailchimp Bridge Configuration](./images/010-2x-mailchimp-configuration.png)
-
-## Customer Export
-
-If you already have customers registered in HubRise when you connect Mailchimp, you can export your data to Mailchimp through the following steps:
-
-1. Open Mailchimp Bridge. For assistance, see [Open An App](/docs/connections/#open-an-app).
-1. In the top right hand corner, click the down arrow <InlineImage width="28" height="21">![Down arrow icon](../images/009-arrow.jpg)</InlineImage> next to your **Location name** and select **Configuration**.
-1. In the **Actions** section, select **Export all HubRise customers to Mailchimp**.
-
-This will export the customers in your HubRise customer list to your Mailchimp audience.

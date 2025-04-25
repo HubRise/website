@@ -12,7 +12,7 @@ Once your TastyCloud website is connected with HubRise, some configuration is re
 
 For example, if an EPOS is connected to your HubRise Location, you will need to associate items on TastyCloud with the corresponding items on your EPOS. This process is called "ref code mapping" and it must be done manually from the Tasty Cloud back office, as explained below.
 
-## Products and Options
+## Products and Options {#products-and-options}
 
 ---
 

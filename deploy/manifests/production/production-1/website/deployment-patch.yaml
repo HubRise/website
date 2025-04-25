@@ -15,8 +15,8 @@ spec:
           resources:
             requests:
               cpu: 300m
-              memory: 500Mi
+              memory: 1000Mi
             limits:
               # We need some CPU for short periods of time after startup, when optimised images are not yet cached.
               cpu: 1000m
-              memory: 750Mi
+              memory: 1500Mi

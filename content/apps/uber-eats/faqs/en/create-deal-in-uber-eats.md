@@ -14,8 +14,8 @@ This page describes the conventional structure you need to use to create deals.
 
 If your EPOS supports deals, and you want to receive them in your Uber Eats orders, you have the following two options:
 
-- If you [push your HubRise catalog](/apps/uber-eats/pulling-menu) into Uber Eats with Uber Eats Bridge, deals are automatically created with the correct format on Uber Eats.
-- If you manually create your menu with [Menu Maker](https://merchants.ubereats.com/us/en/technology/simplify-operations/menu-management/), the catalog management tool in Uber Eats back office, create your deals following the steps on this page.
+- If you [push your HubRise catalog](/apps/uber-eats/push-catalog) into Uber Eats with Uber Eats Bridge, deals are automatically created with the correct format on Uber Eats.
+- If you manually create your menu with [Menu Maker](https://merchants.ubereats.com/us/en/technology/simplify-operations/menu-management), the catalog management tool in Uber Eats back office, create your deals following the steps on this page.
 
 ## Deal Structure
 
@@ -58,7 +58,7 @@ The following sections explains the steps required to create deals.
 
 To create the individual products that are part of every deal line follow these steps:
 
-1. Log in to your [Uber Eats back office](https://restaurant.uber.com/).
+1. Log in to your [Uber Eats back office](https://restaurant.uber.com).
 1. Select **Menu** > **Items**, then click **New item**.
 1. Fill in the details for your product.
    - Enter the name of the product, for example `Pizza Margherita 8"`.

@@ -22,7 +22,8 @@ export async function generateStaticParams(): Promise<Array<Params>> {
 }
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
-  const route = await findRoute(params)
+  const theRouter = await router()
+  const route = await findRoute(params, theRouter)
   if (route) {
     return await metadata(route)
   } else {
@@ -31,7 +32,8 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 }
 
 export default async function Page({ params }: { params: Params }): Promise<JSX.Element> {
-  const route = await findRoute(params)
+  const theRouter = await router()
+  const route = await findRoute(params, theRouter)
 
   if (route) {
     const { language } = route
@@ -39,7 +41,7 @@ export default async function Page({ params }: { params: Params }): Promise<JSX.
       en: language === "en" ? undefined : (await router()).changeLanguage(route, "en").href,
       fr: language === "fr" ? undefined : (await router()).changeLanguage(route, "fr").href,
     }
-    const content = await renderContent(route)
+    const content = await renderContent(route, theRouter)
     return render(language, languagePaths, content)
   } else {
     const language = pathLanguage404(params.path)

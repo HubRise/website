@@ -2,31 +2,7 @@ import styled from "styled-components"
 
 import { colors, mixin } from "@utils/styles"
 
-import { Section as OriginalSection } from "../Styles"
-
-export const Section = styled(OriginalSection)`
-  position: relative;
-  background-color: #fbfbfb;
-  display: grid;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #fbfbfb;
-  }
-
-  &::before {
-    right: 100%;
-  }
-
-  &::after {
-    left: 100%;
-  }
-`
+export const StyledInstructions = styled.div``
 
 export const Description = styled.div``
 

@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components"
 
 import { BackgroundColor, titleColorMap, HorizontalAlign, linkColorMap } from "@components/Block/utils"
-import { breakpoints, fontSizes, lineHeights } from "@utils/styles"
+import { breakpoints, fontSizes, lineHeights, mixin, sizes } from "@utils/styles"
 
 export const StyledTitle = styled.h3<{
   $backgroundColor: BackgroundColor
@@ -9,6 +9,9 @@ export const StyledTitle = styled.h3<{
 }>`
   margin-bottom: 2.5rem;
   position: relative;
+
+  scroll-snap-align: start;
+  scroll-margin-top: ${sizes.headerHeight};
 
   color: ${({ $backgroundColor }) => titleColorMap[$backgroundColor]};
   font-family: "Poppins", sans-serif;
@@ -37,4 +40,8 @@ export const StyledTitle = styled.h3<{
       }
     }
   `}
+`
+
+export const Anchor = styled.a`
+  ${mixin.clickable};
 `

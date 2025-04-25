@@ -16,13 +16,24 @@ This page attempts to be a comprehensive list of the most widespread conventions
 
 ## General conventions
 
+### Tags on products
+
+The following tag can be set at the product level.
+
+| Tag          | Description                                                                                                                     |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| `deal_only`  | The product is only available as part of a deal.                                                                                |
+| `deposit_cc` | The product requires a deposit. `cc` is an amount in cents, e.g. `deposit_25`. The deposit is charged on top of the item price. |
+
+For more information on the `deposit_cc` tag, read our <Link href="/blog/bottle-deposits">blog post on deposits</Link>.
+
 ### Tags on SKUs
 
-The following tag can be set at the SKU level:
+The following tags can be set at the SKU level.
 
-| Tag         | Description                                  |
-| ----------- | -------------------------------------------- |
-| `deal_only` | The SKU is only available as part of a deal. |
+| Tag          | Description                                                                                                                 |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| `deposit_cc` | Same as the product tag, but applies to a specific SKU. `cc` is an amount in cents. When set, it overrides the product tag. |
 
 ## Conventions for restaurants
 
@@ -96,7 +107,7 @@ Typical uses:
 
 </details>
 
-### Half & half products
+### Half & half products {#half-half-products}
 
 Half & half products are a common occurrence in the restaurant industry, especially the pizzeria industry. A half & half product lets customers mix two recipes, and customise each of them separately. Think of a half & half pizza as a normal size pizza split in two halves, each half having its own ingredients.
 
@@ -181,9 +192,9 @@ A half & half product is a product with one or more skus. It has the following f
 
 The following custom field can be set on a location:
 
-| Custom field         | Encoding                                                    | Description                                                       |
-| -------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------- |
-| `delivery.door_time` | [decimal](/developers/api/general-concepts/#decimal-values) | Minimum time in minutes between order creation and customer door. |
+| Custom field         | Encoding                                                   | Description                                                       |
+| -------------------- | ---------------------------------------------------------- | ----------------------------------------------------------------- |
+| `delivery.door_time` | [decimal](/developers/api/general-concepts#decimal-values) | Minimum time in minutes between order creation and customer door. |
 
 Typical uses:
 
@@ -210,15 +221,21 @@ Typical uses:
 
 ### Orders custom fields
 
+---
+
+**IMPORTANT NOTE:** Orders delivery custom fields have been deprecated in favor of the [Delivery resource](/developers/api/deliveries).
+
+---
+
 The following custom fields can be attached to an order to provide details about the delivery:
 
-| Custom field                    | Encoding                                                  | Description                                                                   |
-| ------------------------------- | --------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| `delivery.driver_assigned_time` | [Time](/developers/api/general-concepts/#dates-and-times) | The time the driver was assigned the delivery.                                |
-| `delivery.driver_pickup_time`   | [Time](/developers/api/general-concepts/#dates-and-times) | The time the driver is expected to pick up the delivery.                      |
-| `delivery.tracking_url`         | `string`                                                  | URL of the page showing the status of the delivery.                           |
-| `delivery.driver.first_name`    | `string`                                                  | Driver's first name.                                                          |
-| `delivery.driver.phone`         | `string`                                                  | Driver's phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164). |
+| Custom field                                                | Encoding                                                 | Description                                                                   |
+| ----------------------------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| `delivery.driver_assigned_time` <Label type="deprecated" /> | [Time](/developers/api/general-concepts#dates-and-times) | The time the driver was assigned the delivery.                                |
+| `delivery.driver_pickup_time` <Label type="deprecated" />   | [Time](/developers/api/general-concepts#dates-and-times) | The time the driver is expected to pick up the delivery.                      |
+| `delivery.tracking_url` <Label type="deprecated" />         | `string`                                                 | URL of the page showing the status of the delivery.                           |
+| `delivery.driver.first_name` <Label type="deprecated" />    | `string`                                                 | Driver's first name.                                                          |
+| `delivery.driver.phone` <Label type="deprecated" />         | `string`                                                 | Driver's phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164). |
 
 Typical workflow:
 
@@ -255,6 +272,37 @@ Typical workflow:
 </details>
 
 ## Conventions for EPOS
+
+### Location custom fields
+
+The following custom field can be attached to a location:
+
+| Custom field        | Encoding | Description                                                                                     |
+| ------------------- | -------- | ----------------------------------------------------------------------------------------------- |
+| `epos.push_catalog` | `number` | When this value changes, the EPOS pushes its catalog to HubRise. Only works for supported EPOS. |
+
+Typical uses:
+
+- The `epos.push_catalog` custom field triggers the EPOS to push its catalog to HubRise when its value changes, applicable for supported EPOS systems. It is recommended to increment this value or set it to 0 the first time.
+
+<details>
+
+<summary>Example of a location with EPOS information</summary>
+
+```json
+{
+  "id": "3r4s3-1",
+  "name": "Paris",
+  ...,
+  "custom_fields": {
+    "epos": {
+      "push_catalog": 11
+    }
+  }
+}
+```
+
+</details>
 
 ### Order custom fields
 

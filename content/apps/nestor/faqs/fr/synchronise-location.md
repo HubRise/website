@@ -4,7 +4,7 @@ path_override: synchroniser-points-vente
 position: 2
 layout: documentation
 meta:
-  title: Synchronisation menu commun | FAQs Nestor | HubRise
+  title: Synchronisation menu commun | FAQ Nestor | HubRise
   description: Comment synchroniser un menu utilisé dans plusieurs points de vente Nestor avec HubRise.
 ---
 

@@ -6,8 +6,8 @@ export const Table = styled.table`
   border-collapse: collapse;
   margin-bottom: 1.5rem;
   width: 100%;
-  background-color: #fefefe;
-  border: 1px solid #f1f1f1;
+  background-color: ${colors.backgroundLightest};
+  border: 1px solid ${colors.borderLighter};
 `
 
 export const Row = styled.tr`

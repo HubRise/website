@@ -16,7 +16,7 @@ After you connect your store to HubRise, you can continue to manage your incomin
 
 Once you accept an order in the Orderpad, you will see it in the connected EPOS, and you can manage it from there.
 
-If you want to manage orders directly from your connected EPOS without interation with the Orderpad, you can request the Just Eat team to enable Auto-Accept for your store. For more information on Auto-Accept and its availability across different Just Eat markets, see how to [enable Auto-Accept](/apps/just-eat-flyt/faqs/auto-accept/).
+If you want to manage orders directly from your connected EPOS without interation with the Orderpad, you can request the Just Eat team to enable Auto-Accept for your store. For more information on Auto-Accept and its availability across different Just Eat markets, see how to [enable Auto-Accept](/apps/just-eat-flyt/faqs/auto-accept).
 
 ---
 

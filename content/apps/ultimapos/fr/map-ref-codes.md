@@ -19,7 +19,7 @@ Il y a deux façons de procéder :
 
 Seules certaines applications permettent l'import d'un catalogue depuis HubRise. Pour les autres, il faudra saisir manuellement les codes ref.
 
-## Produits
+## Produits {#products}
 
 Pour retrouver le code ref d'un produit, suivez ces étapes :
 
@@ -37,12 +37,12 @@ UltimaPOS ne permet pas de créer de SKU. Pour remplacer cette fonctionnalité, 
 ## Options
 
 Les options dans HubRise sont des articles dans UltimaPOS.
-Pour retrouver le code ref d'une option, suivez les étapes de la section [Produits](#produits).
+Pour retrouver le code ref d'une option, suivez les étapes de la section [Produits](#products).
 
 ## Frais
 
 Les frais dans HubRise sont des articles dans UltimaPOS.
-Pour retrouver le code ref d'un type de frais, suivez les étapes de la section [Produits](#produits).
+Pour retrouver le code ref d'un type de frais, suivez les étapes de la section [Produits](#products).
 
 ## Promotions
 

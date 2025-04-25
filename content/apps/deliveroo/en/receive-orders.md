@@ -10,7 +10,7 @@ meta:
 
 Connecting Deliveroo to HubRise allows you to receive Deliveroo orders directly in your EPOS or any other solution connected to your HubRise account.
 
-You have the option to either manually accept orders on the tablet or set up auto-accept. If you prefer not to use a tablet, you can leave it switched off or not have one at all. For more information, see [Can I Stop Using the Deliveroo Tablet?](/apps/deliveroo/faqs/deliveroo-tabletless/).
+You have the option to either manually accept orders on the tablet or set up auto-accept. If you prefer not to use a tablet, you can leave it switched off or not have one at all. For more information, see [Can I Stop Using the Deliveroo Tablet?](/apps/deliveroo/faqs/deliveroo-tabletless).
 
 This page describes the information Deliveroo sends to HubRise. It helps you understand how orders will be received on your EPOS.
 
@@ -101,7 +101,9 @@ These are typically associated with specific ref codes in your EPOS. For more in
 
 ## Order Times
 
-Deliveroo provides the time when the eater expects to receive or collect the order. Deliveroo Bridge sends this time to HubRise as the `expected_time` field. This time cannot be changed by the EPOS.
+For restaurant delivery orders, Deliveroo provides the time the customer expects the order to be delivered. For other types of orders, it provides the time the order should be ready for pickup, either by the customer or a Deliveroo rider. In both scenarios, this time is transmitted to HubRise as the `expected_time` field, and cannot be modified by the EPOS.
+
+To delay an order, update the `confirmed_time` field in HubRise. Deliveroo Bridge will calculate the delay between `expected_time` and `confirmed_time`, and send it to Deliveroo when the order status changes to `in_preparation`. The delay is rounded to the nearest even number of minutes between 0 and 10. Updating this field after the order has been marked as in preparation will have no effect.
 
 ## Customer
 
@@ -146,7 +148,6 @@ Deliveroo Bridge can encode three types of charges:
 The available fields in the payloads are the following:
 
 - `name`: The name of the charge, which is either `Delivery charge`, `Surcharge` or `Bag fee`.
-- `type`: The type of charge. It has the value `delivery` for delivery charges, and `other` for small order surcharges and bag fees.
 - `ref`: The ref code of the charge. Its default value can be set from the Configuration page of Deliveroo Bridge and should match the value in your EPOS.
 - `price`: The amount of the charge.
 

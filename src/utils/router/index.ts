@@ -1,12 +1,15 @@
 import { Href } from "@utils/DocIndexer/types"
 import { Language } from "utils/locales"
 
+import { ContentDirName } from "../files"
+
 import allRoutes, { fallbackRoutes } from "./allRoutes"
 import type {
   FallbackRoutes,
   LayoutName,
   Route,
   RouteName,
+  RouteNameDocumentation,
   RouteNameDynamic,
   RouteNameStatic,
   RouteParamsDynamic,
@@ -48,6 +51,21 @@ export class Router {
     }
 
     return targetRoute
+  }
+
+  findDocumentationRoute(
+    contentDirName: ContentDirName,
+    basename: string,
+    language: Language,
+  ): Route<RouteNameDocumentation, LayoutName> | undefined {
+    return this.routes.find((route) => {
+      if (!("params" in route) || !("contentDirName" in route.params) || !("basename" in route.params)) return false
+      return (
+        route.language === language &&
+        route.params.contentDirName === contentDirName &&
+        route.params.basename === basename
+      )
+    }) as Route<RouteNameDocumentation, LayoutName> | undefined
   }
 
   private findRoute(

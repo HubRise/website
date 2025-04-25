@@ -4,10 +4,10 @@ path_override: produit-non-exporte
 position: 1
 layout: documentation
 meta:
-  title: Produit non exporté | FAQs Kezia II | HubRise
+  title: Produit non exporté | FAQ Kezia II | HubRise
   description: Comment activer l'export d'un produit vers HubRise dans Kezia II.
 ---
 
 Seuls les produits marqués comme exportables sont envoyés vers HubRise.
 
-Pour rendre un produit exportable, suivez les étapes décrites dans [Exporter le catalogue](/apps/kezia/associer-codes-ref#exporter-le-catalogue).
+Pour rendre un produit exportable, suivez les étapes décrites dans [Exporter le catalogue](/apps/kezia/map-ref-codes#export-catalog).

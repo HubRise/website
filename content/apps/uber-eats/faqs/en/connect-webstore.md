@@ -22,7 +22,7 @@ Yes, it is indeed possible to connect your own branded webstore on Uber Eats to 
 
 Yes, your delivery store and your branded webstore on Uber Eats share the same UUID. This id is crucial for establishing the connection to the Uber Eats API.
 
-For instructions on how to find your Uber Eats UUID, see [How Do I Find My Uber Eats UUID?](/apps/uber-eats/faqs/find-uber-eats-uuid/)
+For instructions on how to find your Uber Eats UUID, see [How Do I Find My Uber Eats UUID?](/apps/uber-eats/faqs/find-uber-eats-uuid)
 
 **Can I receive orders only from the delivery store or the webstore?**
 

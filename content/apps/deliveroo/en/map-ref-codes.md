@@ -18,7 +18,7 @@ Most EPOS solutions require a ref code for each product and option to properly i
 
 To assign ref codes to your Deliveroo products with the Menu Manager tool in Deliveroo back office, follow these steps:
 
-1. Log in to your [Deliveroo back office](https://restaurant-hub.deliveroo.net/).
+1. Log in to your [Deliveroo back office](https://restaurant-hub.deliveroo.net).
 1. From the menu on the left, select **Menus**.
 1. Click **Edit menu**. If you have multiple menus, make sure you edit the correct one.
    ![Deliveroo back office](./images/008-2x-deliveroo-back-office.png)

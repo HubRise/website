@@ -15,7 +15,7 @@ To create an account for another business without giving them access :
 1. Log in to your [HubRise account](https://manager.hubrise.com).
 1. Click your name in the top right corner, then click **Profile**.
 1. In the **Permissions** section, click **Create Account**.
-1. Proceed with the account creation process as usual. For more information, see [Create an Account](/docs/account#create-an-account).
+1. Proceed with the account creation process as usual. For more information, see [Create an Account](/docs/account#create-account).
 
 The account will be created without any additional users.
 
@@ -23,6 +23,6 @@ The account will be created without any additional users.
 
 ---
 
-**Related FAQ**: [How Do I Create an Account for Another Business and Share Access?](/docs/faqs/create-an-account-for-another-business/)
+**Related FAQ**: [How Do I Create an Account for Another Business and Share Access?](/docs/faqs/create-an-account-for-another-business-share-access)
 
 ---

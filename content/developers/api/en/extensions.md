@@ -1,7 +1,7 @@
 ---
 title: API Extensions
 path_override: extensions
-position: 7
+position: 9
 layout: documentation
 meta:
   title: API Extensions | API | HubRise
@@ -18,7 +18,7 @@ Extensions let clients implement use cases not natively supported by the API.
 
 The HubRise development team monitors how extensions are used in an effort to document and "standardize" the most common fields and endpoints. You can <ContactFormToggle text="contact us" /> to discuss about your use case and see if it could fit into existing and well supported extensions.
 
-## 1. Custom Fields
+## 1. Custom Fields {#custom-fields}
 
 Custom fields can be defined on the following resources:
 

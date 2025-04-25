@@ -8,8 +8,13 @@ meta:
   description: Find out how to push a catalog from HubRise to the Just Eat platform, how items and options are encoded, and which features are supported.
 ---
 
-Just Eat does not provide a back office to populate and customise the items in your menu.
-You can use Just Eat Flyt Bridge to push your HubRise catalog into your Just Eat store with a single click.
+---
+
+**IMPORTANT NOTE:** Once HubRise is connected, you should always update your menu through HubRise. If you ask Just Eat support to update it, the connection will be broken, and you will stop receiving orders. If this happens, simply proceed with a Manual Catalog Push to restore the connection.
+
+---
+
+Just Eat does not provide a back office to populate and customise the items in your menu. You can use Just Eat Flyt Bridge to push your HubRise catalog into your Just Eat store with a single click.
 
 You can also configure the bridge to push your catalog into the platform every time it is updated on HubRise. For more information, see [Catalog](/apps/just-eat-flyt/configuration#catalog).
 
@@ -81,7 +86,7 @@ For every category, the following HubRise fields are pushed into Just Eat:
 
 ### Products and Skus
 
-Products in the `products` array of a HubRise catalog can have several skus. This notion of products/skus is not supported on Just Eat. Every sku is mapped to an individual product on Just Eat. For more information about products in HubRise, see the [Products](/developers/api/catalog-management/#products) section of our API documentation.
+Products in the `products` array of a HubRise catalog can have several skus. This notion of products/skus is not supported on Just Eat. Every sku is mapped to an individual product on Just Eat. For more information about products in HubRise, see the [Products](/developers/api/catalogs#products) section of our API documentation.
 
 Emojis are not supported in Just Eat. If you use emojis in your HubRise catalog, they will be removed when pushed to Just Eat.
 
@@ -94,41 +99,44 @@ For every `sku` object in a product, Just Eat Flyt Bridge pushes the following i
 - `option_list_refs`: The list of options attached to the sku
 - `tags`: Tags describing the characteristics and restrictions of the product, such as allergens or spiciness. See [Product Tags](#product-tags).
 - `image`: The URL of the image of the parent product
+- `barcodes`: Only the first barcode is sent, if present
 
-For more information about skus in the HubRise catalog, see the [Skus](/developers/api/catalog-management/#skus) section of our API documentation.
-
----
-
-**IMPORTANT NOTE:** Products without a ref code are not pushed to Just Eat. For more information, see [Why Are Some Products Not Exported](/apps/just-eat-flyt/faqs/products-not-pushed/).
+For more information about skus in the HubRise catalog, see the [Skus](/developers/api/catalogs#skus) section of our API documentation.
 
 ---
 
-### Product Tags
+**IMPORTANT NOTE:** Products without a ref code are not pushed to Just Eat. For more information, see [Why Are Some Products Not Exported](/apps/just-eat-flyt/faqs/products-not-pushed).
+
+---
+
+### Product Tags {#product-tags}
 
 The table below lists the tags that can be set on products.
 
-| Tag                                  | Description             |
-| ------------------------------------ | ----------------------- |
-| `alcoholic`                          | Contains alcohol.       |
-| `spicy_1`                            | Midly spicy.            |
-| `spicy_2`                            | Spicy.                  |
-| `spicy_3`                            | Very spicy.             |
-| `vegan`                              | Vegan dish.             |
-| `vegetarian`                         | Vegetarian dish.        |
-| `allergen_celery`                    | Contains this allergen. |
-| `allergen_crustaceans`               | Contains this allergen. |
-| `allergen_eggs`                      | Contains this allergen. |
-| `allergen_fish`                      | Contains this allergen. |
-| `allergen_gluten`                    | Contains this allergen. |
-| `allergen_lupin`                     | Contains this allergen. |
-| `allergen_milk`                      | Contains this allergen. |
-| `allergen_molluscs`                  | Contains this allergen. |
-| `allergen_mustard`                   | Contains this allergen. |
-| `allergen_nuts`                      | Contains this allergen. |
-| `allergen_peanuts`                   | Contains this allergen. |
-| `allergen_sesame_seeds`              | Contains this allergen. |
-| `allergen_soybeans`                  | Contains this allergen. |
-| `allergen_sulphur_dioxide_sulphites` | Contains this allergen. |
+| Tag                                  | Description                                     |
+| ------------------------------------ | ----------------------------------------------- |
+| `alcoholic`                          | Contains alcohol.                               |
+| `deal_only`                          | Can only be ordered as part of a deal.          |
+| `spicy_1`                            | Midly spicy.                                    |
+| `spicy_2`                            | Spicy.                                          |
+| `spicy_3`                            | Very spicy.                                     |
+| `vegan`                              | Vegan dish.                                     |
+| `vegetarian`                         | Vegetarian dish.                                |
+| `allergen_celery`                    | Contains this allergen.                         |
+| `allergen_crustaceans`               | Contains this allergen.                         |
+| `allergen_eggs`                      | Contains this allergen.                         |
+| `allergen_fish`                      | Contains this allergen.                         |
+| `allergen_gluten`                    | Contains this allergen.                         |
+| `allergen_lupin`                     | Contains this allergen.                         |
+| `allergen_milk`                      | Contains this allergen.                         |
+| `allergen_molluscs`                  | Contains this allergen.                         |
+| `allergen_mustard`                   | Contains this allergen.                         |
+| `allergen_nuts`                      | Contains this allergen.                         |
+| `allergen_peanuts`                   | Contains this allergen.                         |
+| `allergen_sesame_seeds`              | Contains this allergen.                         |
+| `allergen_soybeans`                  | Contains this allergen.                         |
+| `allergen_sulphur_dioxide_sulphites` | Contains this allergen.                         |
+| `deposit_cc`                         | Requires a deposit. `cc` is an amount in cents. |
 
 ### Options
 
@@ -158,4 +166,4 @@ Discounts are not supported on Just Eat. Therefore, discounts present in your Hu
 
 ### Opening hours
 
-When you push your HubRise catalog to Just Eat, you also update the opening hours of your store, based on the values set on the [configuration page](/apps/just-eat-flyt/configuration/#catalog).
+When you push your HubRise catalog to Just Eat, you also update the opening hours of your store, based on the values set on the [configuration page](/apps/just-eat-flyt/configuration#catalog).

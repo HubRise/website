@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting
 path_override: troubleshooting
-position: 5
+position: 6
 layout: documentation
 meta:
   title: Troubleshooting | Mailchimp | HubRise
@@ -42,4 +42,4 @@ To inspect the logs exchanged between HubRise and Mailchimp:
 
 If the status is not `OK`, check the **Response** drop-down to see the error.
 
-The information contained in the **Request** and **Response** logs are in JSON format. For more information on reading and understanding JSON, check our [JSON logs documentation](/docs/hubrise-logs).
+The information contained in the **Request** and **Response** logs are in JSON format. For more information on reading and understanding JSON, check our [JSON logs documentation](/docs/hubrise-logs/overview).

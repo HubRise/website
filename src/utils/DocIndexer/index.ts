@@ -171,6 +171,9 @@ class DocIndexer {
 
     for (const filename of filenames) {
       if (filename.endsWith(".md")) {
+        // Files created through copyFromLanguage should not override existing files
+        if (copyFromLanguage && folder.mdFiles[language]?.some(({ basename }) => basename === this.basename(filename)))
+          continue
         await this.handleMdFile(contentDirName, filename, folder, language, copyFromLanguage)
       }
     }
@@ -183,7 +186,7 @@ class DocIndexer {
     language: Language,
     copyFromLanguage?: Language,
   ): Promise<void> {
-    const basename = filename.replace(/\.md$/, "")
+    const basename = this.basename(filename)
     const { frontMatter, content } = await readMdFile<DocFrontMatter>(contentDirName, basename)
 
     let uri: Href = folder.uri(language)
@@ -208,6 +211,10 @@ class DocIndexer {
 
   private async readCustomizationYaml(contentDirName: ContentDirName): Promise<FolderCustomisation | undefined> {
     return await readYamlFile<FolderCustomisation>(contentDirName, "customization", true)
+  }
+
+  private basename(filename: string): string {
+    return filename.replace(/\.md$/, "")
   }
 }
 

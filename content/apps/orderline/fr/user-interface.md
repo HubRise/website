@@ -14,7 +14,7 @@ L'onglet **Aujourd'hui** affiche toutes les commandes dont la date de livraison 
 
 Les commandes sont triées en fonction de leur heure de livraison ou de collecte souhaitée, avec les commandes à traiter le plus vite en haut de la liste.
 
-Les commandes peuvent être masquées, selon la personnalisation choisie pour le paramètre **Masquer les commandes**. Vous pouvez retrouver ces commandes masquées dans l'onglet **Aujourd'hui** en cliquant sur **VOIR** dans la carte commande cachée. Pour plus d'informations, voir la rubrique [Enchaînement des statuts de commande](/apps/orderline/parametres/#encha-nement-des-statuts-de-commande/).
+Les commandes peuvent être masquées, selon la personnalisation choisie pour le paramètre **Masquer les commandes**. Vous pouvez retrouver ces commandes masquées dans l'onglet **Aujourd'hui** en cliquant sur **VOIR** dans la carte commande cachée. Pour plus d'informations, voir la rubrique [Enchaînement des statuts de commande](/apps/orderline/settings#order-status-flow).
 
 ![Onglet Aujourd'hui de OrderLine](./images/006-todays-orders.png)
 

@@ -1,35 +1,35 @@
 import * as fs from "fs/promises"
 
-import { mocked } from "jest-mock"
+import { beforeEach, describe, expect, it, vi } from "vitest"
 
-import { setupFsMocks } from "@utils/jest-helpers/mockFsSetup"
+import { setupFsMocks } from "@utils/test-helpers/mockFsSetup"
 
 import BlogIndexer from "./index"
 
-jest.mock("fs/promises")
+vi.mock("fs/promises")
 
 describe("BlogIndexer", () => {
   let indexer: BlogIndexer
 
   beforeEach(() => {
     indexer = new BlogIndexer("/blog")
-    mocked(fs.readdir).mockClear()
-    mocked(fs.readFile).mockClear()
+    vi.mocked(fs.readdir).mockClear()
+    vi.mocked(fs.readFile).mockClear()
   })
 
   it("initializes and indexes blog posts", async () => {
     setupFsMocks({
       readdirResponses: {
-        "/blog": [{ type: "dir", name: "en" }],
-        "/blog/en": [{ type: "dir", name: "20230101-test-post" }],
-        "/blog/en/20230101-test-post": [
+        "/blog": [{ type: "dir", name: "test-post" }],
+        "/blog/test-post": [{ type: "dir", name: "en" }],
+        "/blog/test-post/en": [
           { type: "file", name: "__post.md" },
           { type: "file", name: "__banner.png" },
         ],
       },
       readFileResponses: {
-        "/blog/en/20230101-test-post/__post.md":
-          "---\ntitle: Test Post\ndate: 2023-01-01\nauthor: Bob\n---\nContent here",
+        "/blog/test-post/en/__post.md":
+          "---\ntitle: Test Post\npath_override: post-testing\ndate: 2023-01-01\nauthor: Bob\n---\nContent here",
       },
     })
 
@@ -38,11 +38,11 @@ describe("BlogIndexer", () => {
     expect(indexer.mdFiles).toEqual({
       en: [
         {
-          contentDirName: "/blog/en/20230101-test-post",
+          contentDirName: "/blog/test-post/en",
           baseName: "__post",
-          uri: "/blog/test-post",
+          uri: "/blog/post-testing",
           language: "en",
-          frontMatter: { title: "Test Post", date: "2023-01-01", author: "Bob" },
+          frontMatter: { title: "Test Post", path_override: "post-testing", date: "2023-01-01", author: "Bob" },
           content: "Content here",
           bannerFileName: "__banner.png",
         },
@@ -54,20 +54,22 @@ describe("BlogIndexer", () => {
     beforeEach(async () => {
       setupFsMocks({
         readdirResponses: {
-          "/blog": [{ type: "dir", name: "en" }],
-          "/blog/en": [
-            { type: "dir", name: "20230101-post1" },
-            { type: "dir", name: "20220202-post2" },
-            { type: "dir", name: "20230110-post3" },
+          "/blog": [
+            { type: "dir", name: "post1" },
+            { type: "dir", name: "post2" },
+            { type: "dir", name: "post3" },
           ],
-          "/blog/en/20230101-post1": [{ type: "file", name: "__post.md" }],
-          "/blog/en/20220202-post2": [{ type: "file", name: "__post.md" }],
-          "/blog/en/20230110-post3": [{ type: "file", name: "__post.md" }],
+          "/blog/post1": [{ type: "dir", name: "en" }],
+          "/blog/post2": [{ type: "dir", name: "en" }],
+          "/blog/post3": [{ type: "dir", name: "en" }],
+          "/blog/post1/en": [{ type: "file", name: "__post.md" }],
+          "/blog/post2/en": [{ type: "file", name: "__post.md" }],
+          "/blog/post3/en": [{ type: "file", name: "__post.md" }],
         },
         readFileResponses: {
-          "/blog/en/20230101-post1/__post.md": "---\ndate: 2023-01-01\n---\n",
-          "/blog/en/20220202-post2/__post.md": "---\ndate: 2022-02-02\n---\n",
-          "/blog/en/20230110-post3/__post.md": "---\ndate: 2023-01-10\n---\n",
+          "/blog/post1/en/__post.md": "---\npath_override: post-1\ndate: 2023-01-01\n---\n",
+          "/blog/post2/en/__post.md": "---\npath_override: post-2\ndate: 2022-02-02\n---\n",
+          "/blog/post3/en/__post.md": "---\npath_override: post-3\ndate: 2023-01-10\n---\n",
         },
       })
 

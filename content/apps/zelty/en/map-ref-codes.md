@@ -25,7 +25,7 @@ You can export the whole menu containing all the products. To export the entire 
 1. Go to the Zelty **Marketplace**.
 1. Click on **HubRise**.
 1. Select **Gérer** and **Exporter ma carte vers HubRise** from the dropdown which appears.
-1. Check the catalog import on HubRise. For more information on how to manage catalogs in HubRise, see our [Catalog Guide](/docs/catalog/).
+1. Check the catalog import on HubRise. For more information on how to manage catalogs in HubRise, see our [Catalog Guide](/docs/catalog).
 
 ### Export a Subset of Your Menu
 
@@ -45,7 +45,7 @@ To export a subset of the menu:
 1. Next to the name of the catalog, click the down arrow and select **Envoyer vers** (Send to).
 1. Click on the **HubRise** button available under the heading **Partenaires disponibles** (Available partners).
 1. A message will indicate that the **Le catalogue est en cours de transfert vers HubRise** (the catalog is being sent to HubRise).
-1. Check the catalog import on HubRise. For more information on how to manage catalogs in HubRise, see our [Catalog Guide](/docs/catalog/).
+1. Check the catalog import on HubRise. For more information on how to manage catalogs in HubRise, see our [Catalog Guide](/docs/catalog).
 
 ---
 
@@ -53,7 +53,7 @@ To export a subset of the menu:
 
 ---
 
-## Products
+## Products {#products}
 
 If other apps connected to your HubRise account cannot use HubRise catalogs, you can export all ref codes in a CSV, or an Excel file format. The export includes ref codes for products, menus, and options, which you can manually enter in other systems.
 

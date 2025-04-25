@@ -4,6 +4,7 @@ import { Language } from "@utils/locales"
 
 export interface BlogFrontMatter {
   title: string
+  path_override: string
   date: string
   author: string
   meta: {

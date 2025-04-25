@@ -8,7 +8,7 @@ meta:
   description: Instructions pour afficher les détails de la commande, mettre à jour le statut de la commande et imprimer un reçu. Connectez vos applications et synchronisez vos données.
 ---
 
-Vous pouvez personnaliser l'enchaînement des statuts afin d'adapter la gestion des commandes à votre activité. Cette section décrit l'enchaînement des statuts par défaut, ainsi que les actions permettant d'accepter ou d'imprimer les commandes. Pour personnaliser cet enchaînement, consultez la page [Statuts de commande](/apps/orderline/parametres/#encha-nement-des-statuts-de-commande/).
+Vous pouvez personnaliser l'enchaînement des statuts afin d'adapter la gestion des commandes à votre activité. Cette section décrit l'enchaînement des statuts par défaut, ainsi que les actions permettant d'accepter ou d'imprimer les commandes. Pour personnaliser cet enchaînement, consultez la page [Statuts de commande](/apps/orderline/settings#order-status-flow).
 
 ## Recevoir des commandes
 
@@ -18,7 +18,7 @@ OrderLine peut également émettre une notification sonore pour vous informer de
 
 ---
 
-**NOTE IMPORTANTE :** Les navigateurs peuvent bloquer les notifications sonores. Pour les maintenir activées en permanence, suivez les instructions dans la FAQ [Comment puis-je garder les notifications sonores activées ?](/apps/orderline/faqs/garder-notifications-sonores-activees/).
+**NOTE IMPORTANTE :** Les navigateurs peuvent bloquer les notifications sonores. Pour les maintenir activées en permanence, suivez les instructions dans la FAQ [Comment puis-je garder les notifications sonores activées ?](/apps/orderline/faqs/keep-sound-notifications-enabled).
 
 ---
 
@@ -26,7 +26,7 @@ Lors de la première connexion, OrderLine récupère les commandes des 30 dernie
 
 ![Affichage d'une commande dans OrderLine](./images/018-2x-order-displays.png)
 
-## Voir une commande
+## Voir une commande {#view-order}
 
 Pour consulter les détails de la commande, cliquez sur la carte de la commande. Pour fermer la carte, cliquez sur l'icône de fermeture <InlineImage width="23" height="23">![Icône de fermeture OrderLine](../images/032-close.png)</InlineImage> ou n'importe où en dehors de la carte.
 
@@ -46,7 +46,7 @@ La carte d'une commande affiche toutes les informations nécessaires à son trai
 
 Pour modifier le statut d'une commande, cliquez la fiche de commande et choisissez le bouton de statut approprié.
 
-Selon votre configuration OrderLine, vous aurez l'option d'ajouter des informations supplémentaires lors de mises à jour de statut spécifiques. Pour ajuster cette configuration, consultez [Saisies complémentaires](/apps/orderline/parametres/#saisies-compl-mentaires). Ces saisies de données supplémentaires peuvent être utiles dans certaines situations, telles que :
+Selon votre configuration OrderLine, vous aurez l'option d'ajouter des informations supplémentaires lors de mises à jour de statut spécifiques. Pour ajuster cette configuration, consultez [Saisies complémentaires](/apps/orderline/settings#additional-data-prompt). Ces saisies de données supplémentaires peuvent être utiles dans certaines situations, telles que :
 
 - Renseigner un **message pour le client** lors du passage d'une commande au statut **Annulée**, pour justifier l'annulation.
 - Indiquer une **heure confirmée** de livraison, lorsque la commande est marquée comme **Acceptée** mais ne peut pas être livrée à l'heure prévue. Si aucune **Heure confirmée** n'est spécifiée, l'heure initialement souhaitée pour la livraison de la commande sera utilisée.
@@ -61,7 +61,7 @@ Pour modifier l'heure de livraison ou ajouter un message pour votre client, cliq
 
 ---
 
-Certaines mises à jour de statut, telles que marquer une commande comme **Terminée**, peuvent faire disparaître la commande de l'onglet **Aujourd'hui**, en fonction de votre configuration OrderLine. Pour retrouver la commande, cliquez sur **AFFICHER** sur la carte **des commandes masquées**, ou sélectionnez l'onglet **Historique des commandes**. Pour configurer les statuts dans lesquels les commandes sont masquées, voir [Masquer les commandes](/apps/orderline/parametres/#masquer-les-commandes).
+Certaines mises à jour de statut, telles que marquer une commande comme **Terminée**, peuvent faire disparaître la commande de l'onglet **Aujourd'hui**, en fonction de votre configuration OrderLine. Pour retrouver la commande, cliquez sur **AFFICHER** sur la carte **des commandes masquées**, ou sélectionnez l'onglet **Historique des commandes**. Pour configurer les statuts dans lesquels les commandes sont masquées, voir [Masquer les commandes](/apps/orderline/settings#hide-orders).
 
 ![Carte de commandes cachées de OrderLine](./images/039-2x-hidden-orders-card.png)
 
@@ -77,7 +77,7 @@ Pour imprimer un reçu de commande, suivez ces étapes :
 
 ## Reçus
 
-Pour une meilleure lisibilité, les reçus sont présentés sous forme de sections délimitées par un trait plein, reflétant les informations de la carte de commande. Pour plus d'informations sur les cartes de commande, consultez la rubrique [Voir une commande](#voir-une-commande).
+Pour une meilleure lisibilité, les reçus sont présentés sous forme de sections délimitées par un trait plein, reflétant les informations de la carte de commande. Pour plus d'informations sur les cartes de commande, consultez la rubrique [Voir une commande](#view-order).
 
 Les reçus contiennent les informations suivantes :
 

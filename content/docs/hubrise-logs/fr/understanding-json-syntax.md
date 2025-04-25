@@ -12,7 +12,7 @@ meta:
 
 Considérons à nouveau la commande initiale : « Une pizza margherita avec supplément olives et deux hamburgers au bacon, pour un montant total de 20,45 euros, à payer en espèces à l'encaissement ».
 
-Pour plus de détails, voir [Exemple pratique](/docs/hubrise-logs/un-exemple-pratique).
+Pour plus de détails, voir [Exemple pratique](/docs/hubrise-logs/a-practical-example).
 
 Une transcription possible de cette commande au format JSON est la suivante.
 
@@ -47,7 +47,7 @@ Une transcription possible de cette commande au format JSON est la suivante.
 
 Une première remarque concernant la requête JSON ci-dessus est l'indentation, c'est-à-dire la quantité d'espace vide à gauche de chaque ligne.
 
-Au niveau 0 de l'indentation, les deux accolades marquent le début et la fin de la requête. Au niveau 1, on trouve les nœuds correspondant aux types d'article, de paiement et de service. Plus le niveau d'indentation est élevé, plus l'élément s'inscrit en profondeur dans la structure de l'objet JSON. Notez que ces niveaux coïncident avec ceux du diagramme que nous avons créé précédemment. Pour plus de détails, voir [Organisation des informations](/docs/hubrise-logs/organisation-informations).
+Au niveau 0 de l'indentation, les deux accolades marquent le début et la fin de la requête. Au niveau 1, on trouve les nœuds correspondant aux types d'article, de paiement et de service. Plus le niveau d'indentation est élevé, plus l'élément s'inscrit en profondeur dans la structure de l'objet JSON. Notez que ces niveaux coïncident avec ceux du diagramme que nous avons créé précédemment. Pour plus de détails, voir [Organisation des informations](/docs/hubrise-logs/organising-information).
 
 Chaque niveau d'indentation dépend du niveau qui lui est hiérarchiquement supérieur. Pour savoir par exemple combien de hamburgers au bacon contient la commande, procédez comme suit :
 

@@ -50,7 +50,7 @@ For every item in the order, Shopify Bridge provides the following information:
 
 <details>
 
-Below is a sample payload containing a single item.
+<summary>Sample JSON containing a single item</summary>
 
 ```json
 "items": [
@@ -69,7 +69,7 @@ Below is a sample payload containing a single item.
 
 Shopify Bridge always includes all the personal details provided by the customer in the `customer` object.
 This information is stored in a HubRise customer and can be retrieved using the HubRise customer ID.
-For more information, see [how to retrieve customer's details](/developers/api/customer-management#retrieve-customer).
+For more information, see [how to retrieve customer's details](/developers/api/customers#retrieve-customer).
 
 ### Discounts
 
@@ -84,7 +84,7 @@ Shopify does not provide any ref code for discounts.
 
 <details>
 
-Below is a sample payload for discounts.
+<summary>Sample JSON for discounts</summary>
 
 ```json
 "discounts": [
@@ -111,7 +111,7 @@ Shopify does not provide any ref code for delivery charges.
 
 <details>
 
-Below is a sample payload for charges.
+<summary>Sample JSON for charges</summary>
 
 ```json
 "charges": [

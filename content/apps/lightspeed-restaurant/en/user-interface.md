@@ -18,9 +18,9 @@ The main page of Lightspeed Restaurant Bridge displays the latest operations. Ea
 - **TIME**: The date and time of the operation.
 - **STATUS**: The status of the operation. The value OK indicates that the operation has been successfull, otherwise a message will explain the type of error occurred.
 
-Clicking on a row will open a new page displaying all the information about it.
+Clicking on a row will open a new page displaying all the information about [the operation](#operation).
 
-On the top right corner of the Lightspeed Restaurant Bridge main page, the HubRise user and location connected are displayed, together with the Lightspeed business location currently used. Clicking the down arrow <InlineImage width="28" height="21">![Down arrow icon](../images/001-arrow.jpg)</InlineImage> expands a menu where it is possible to change the language of the interface and to access the **Configuration page**.
+In the top right corner of the Lightspeed Restaurant Bridge main page, the connected HubRise user and location are displayed, alongside with the Lightspeed Business Location ID currently used. Clicking the down arrow expands a menu where it is possible to change the language of the interface and to access the **Configuration page**.
 
 ---
 
@@ -30,7 +30,7 @@ On the top right corner of the Lightspeed Restaurant Bridge main page, the HubRi
 
 ![Main page](./images/003-2x-main-page-truncated.png)
 
-## Operation Page
+## Operation Page {#operation}
 
 Selecting an operation from the list will display all the logs of the API requests exchanged between HubRise and the Lightspeed Restaurant EPOS via Lightspeed Restaurant Bridge.
 
@@ -44,7 +44,7 @@ Clicking on a request will expand it to reveal the detailed logs of the request 
 
 ![Order page](./images/005-2x-operations-page.png)
 
-Logs are a powerful debugging tool in case of issues. To understand in detail how to read logs, see [Understanding HubRise Logs](/docs/hubrise-logs/).
+Logs are a powerful debugging tool in case of issues. To understand in detail how to read logs, see [Understanding HubRise Logs](/docs/hubrise-logs/overview).
 
 ## Configuration Page
 

@@ -11,19 +11,29 @@ meta:
 The configuration page allows you to customise the behaviour of Deliveroo Bridge based on your preferences.
 These are divided into different sections for an easier navigation.
 
-![Deliveroo Bridge configuration page](./images/014-configuration-page-cropped.png)
-
 ## Language
+
+![Deliveroo Bridge configuration page, Language section](./images/019-configuration-page-language.png)
 
 Choose the language to use for generic items such as `Delivery charge`. These names may appear in your EPOS and in customer receipts.
 
 ## Orders
 
+![Deliveroo Bridge configuration page, Orders section](./images/014-configuration-page-orders.png)
+
+### Order Statuses
+
+Deliveroo requires you to acknowledge every order you receive. In this section, you can select which HubRise status sends an order confirmation back to Deliveroo. Refer to your EPOS documentation on the HubRise website to verify the correct value.
+
 ### Service Types
 
 Service types such as delivery by Deliveroo, restaurant delivery or takeaway might require the corresponding ref code entry. Refer to your EPOS documentation on the HubRise website to verify.
 
-Additionally, from this section you can choose to mark Deliveroo orders as delivery orders or collection orders. This is useful if you have specific business requirements for financial reporting.
+Additionally, from this section, you can choose to categorise orders fulfilled by Deliveroo as either delivery or collection orders. Orders fulfilled by the restaurant fleet are always marked as delivery orders. This feature is useful to address specific business requirements or to differentiate these orders in financial reports.
+
+### Special Items
+
+Some markets such as Ireland require deposits on certain items. If your business requires this, you can specify the ref code for the deposit item in this section. The deposit item must first be created as an option in your EPOS. Once configured, it will be automatically added to any items that require a deposit.
 
 ### Discounts
 
@@ -45,17 +55,50 @@ Deliveroo customers can pay for their order either online or by cash for restaur
 
 This section of the configuration page allows you to specify the ref codes for these two payment methods. Refer to your EPOS documentation on the HubRise website to verify the correct codes to use.
 
-### Order Statuses
+## Customers
 
-Deliveroo requires you to acknowledge every order you receive. In this section, you can select which HubRise status sends an order confirmation back to Deliveroo. Refer to your EPOS documentation on the HubRise website to verify the correct value.
+![Deliveroo Bridge configuration page, Customers section](./images/016-configuration-page-customers.png)
 
-## Catalog
+Enable the **Duplicate phone access code in delivery notes** option if your EPOS lacks native support for fetching phone access codes.
 
-![Deliveroo Bridge configuration page, Catalog section](./images/015-configuration-page-menu.png)
+All EPOS systems integrated with HubRise can read delivery notes. If your EPOS has native support and this option is enabled, the code will appear duplicated. Refer to your EPOS documentation on the HubRise website to verify the correct value.
+
+## Catalog {#catalog}
+
+![Deliveroo Bridge configuration page, Catalog section](./images/015-configuration-page-catalog.png)
+
+### Catalog Variant to Push
+
+Catalog variants give you the flexibility to disable specific items or adjust prices for Deliveroo.
+
+If your catalog includes variants, you have the option to select which one to use. When **(none)** is selected, the default items along with their standard prices are used.
+
+### Special Menus
+
+Special menus allow you to schedule different catalog variants for specific days and times. This feature is useful for offering separate breakfast or lunch menus, for example.
+
+To configure special menus:
+
+1. Ensure your catalog contains the necessary variants.
+1. Select the number of special menus you want to set up (up to 5) from the dropdown menu.
+1. For each special menu:
+   - Select the days of the week when this menu should be active.
+   - Set the start time (**From**) and end time (**to**) for the menu.
+   - Choose the catalog variant to use during this time period.
+
+When special menus are configured, Deliveroo will automatically switch to the appropriate catalog variant based on the order expected time.
+
+If there is no special menu active at a particular time, Deliveroo will use the default catalog variant specified in the **Catalog Variant to Push** setting.
+
+### Deliveroo menu
+
+The **Brand ID** and **Menu ID** fields identify the menu you wish to update on Deliveroo. The default values generally work for most users.
+
+### Automatic Catalog Push
 
 Select the **Enable automatic catalog push** checkbox to synchronise your HubRise catalog with Deliveroo whenever it gets updated.
 
-The **Brand ID** and **Menu ID** fields identify the menu you wish to update on Deliveroo. The default values generally work for most users.
+### Appearance
 
 The **Menu description** and **Menu banner** replace the current description and banner image on Deliveroo when you push your catalog. The requirements for the banner image are as follows:
 
@@ -69,7 +112,15 @@ The **Menu description** and **Menu banner** replace the current description and
 
 ---
 
+## Location
+
+![Deliveroo Bridge configuration page, Location section](./images/017-configuration-page-location.png)
+
+Select the **Enable automatic opening hours push** checkbox to update your opening hours in Deliveroo whenever they get updated in HubRise.
+
 ## Inventory
+
+![Deliveroo Bridge configuration page, Inventory section](./images/018-configuration-page-inventory.png)
 
 Through inventory synchronisation, products and options that have a stock quantity of zero can be hidden on your Deliveroo store.
 

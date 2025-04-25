@@ -46,7 +46,7 @@ To find the ref codes for specific skus, options, discounts, and charges, follow
 
 You can then copy the codes in the connected app. For detailed instructions, follow the documentation for the connected app in the HubRise website.
 
-Note that charges and discounts must be created as items to be compatible with the HubRise data model. For more information see [Create Ref Codes](/apps/lightspeed-restaurant/create-ref-codes).
+Note that charges and discounts must be created as items to be compatible with the HubRise data model. For more information see [Create Ref Codes](/apps/lightspeed-restaurant/faqs/create-ref-codes).
 
 ### Production Instructions
 
@@ -60,18 +60,18 @@ When you map production instructions to connected apps, add `+` before the ref c
 
 ---
 
-**IMPORTANT NOTE:** Production instructions have no associated price. Adding a price in a connected app can cause [price differences errors](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors/).
+**IMPORTANT NOTE:** Production instructions have no associated price. Adding a price in a connected app can cause [price differences errors](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors).
 
 ---
 
-### Service Types
+### Service Types {#service-types}
 
 Service types are called _account profiles_ on Lightspeed. To find the ref code for a specific service type, follow these steps:
 
 1. From your Lightspeed back office, select **Configuration**, then select **Settings** > **Account profiles**.
 1. For each service type available under the **Name** column, you can find the corresponding ref code under the **Code** column.
 
-### Payment Methods
+### Payment Methods {#payment-methods}
 
 To find the ref code for a payment method, follow these steps:
 

@@ -4,7 +4,7 @@ path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connexion | POS HELPER | HubRise
+  title: Connexion à HubRise | POS HELPER | HubRise
   description: "Connecter POS HELPER à HubRise : étapes à suivre pour recevoir vos commandes dans votre logiciel de caisse POS HELPER."
 ---
 
@@ -18,7 +18,7 @@ Vous pouvez connecter POS HELPER à HubRise en quelques clics.
 
 ## Connecter POS HELPER
 
-Pour connecter POS HELPER à HubRise, suivez les étapes suivantes :
+Pour connecter POS HELPER à HubRise, suivez ces étapes :
 
 1. Ouvrez le back-office de POS HELPER.
 2. Dans la barre de menu, cliquez sur **Ventes**, puis sélectionnez l'onglet **HUBRISE INTEGRATION**.
@@ -40,8 +40,10 @@ Pour faciliter la prise en charge de vos demandes de support, nous vous recomman
 Pour donner accès à POS HELPER, procédez comme suit :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
-1. Dans la section **Permissions**, ajoutez support@poshelper.fr en sélectionnant l'option **Manager** dans la liste déroulante des rôles.
-1. Cliquez sur l'icône **+** pour ajouter le nouvel utilisateur.
+1. Dans la section **Permissions**, ajoutez `support@poshelper.fr`.
+1. Cliquez sur **Ajouter l'utilisateur**.
+1. Dans le menu déroulant de choix d'un rôle prédéfini, sélectionnez **Partenaire Technique**.
+1. Cliquez sur **Définir les permissions**.
 
 L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers à votre point de vente. Le partage de mot de passe est déconseillé pour des raisons de sécurité.
 

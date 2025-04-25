@@ -16,6 +16,8 @@ export interface ContentImage {
   blurDataURL: string
 }
 
+export type ContentImageMap = { [filename: string]: ContentImage }
+
 export interface ContentImageWithAlt extends ContentImage {
   alt?: string
 }
@@ -26,7 +28,6 @@ export interface ContentImageWithAlt extends ContentImage {
  * @param contentDirName The directory name(s) to search in. Can be a string or an array.
  * @param filename
  */
-
 const contentImage = async (
   contentDirName: ContentDirName | Array<ContentDirName>,
   filename: string,
@@ -54,6 +55,23 @@ const contentImage = async (
   const blurDataURL = await generateBlurDataURL(file)
 
   return { src: imagePath, width: displayedWidth, height: displayedHeight, blurDataURL }
+}
+
+/**
+ * Fetches multiple images at once. Must be used from a server component.
+ * @param filenames
+ */
+export const contentImageMap = async (
+  contentDirName: ContentDirName | Array<ContentDirName>,
+  filenames: Array<string>,
+): Promise<ContentImageMap> => {
+  const imageMap: ContentImageMap = {}
+  await Promise.all(
+    filenames.map(async (filename) => {
+      imageMap[filename] = await contentImage(contentDirName, filename)
+    }),
+  )
+  return imageMap
 }
 
 /**
