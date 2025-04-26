@@ -1,6 +1,6 @@
 ---
 title: Présentation générale
-path_override: "/"
+path_override: /
 position: 1
 layout: documentation
 meta:
@@ -22,9 +22,9 @@ app_info:
 
 ## Description
 
-Uber Direct est un service de livraison en marque blanche proposé par Uber. Les entreprises peuvent l'utiliser pour proposer un service de livraison à la demande.
+Uber Direct est un service de livraison en marque blanche proposé par Uber. Les commerces de proximité peuvent l'utiliser pour proposer un service de livraison à la demande.
 
-Plutôt que de gérer leur propre livreurs, les entreprises peuvent compter sur Uber Direct pour expédier des colis, des produits ou des marchandises directement à leurs clients. Ce service est spécialement conçu pour les restaurants, restaurants virtuels, épiceries, supérettes, commerces de détail en tout genre, cavistes, animaleries et fleuristes, sans toutefois s’y limiter. Il permet aux commerces de bénéficier du vaste réseau de livreurs Uber Eats pour les livraisons programmées, le jour même, ou immédiates.
+Plutôt que de gérer leur propre livreurs, les commerçants peuvent compter sur Uber Direct pour expédier des colis, des produits ou tout type de marchandises directement à leurs clients. Ce service est spécialement conçu pour les restaurants, restaurants virtuels, épiceries, supérettes, commerces de détail en tout genre, cavistes, animaleries et fleuristes, sans toutefois s’y limiter. Il permet aux commerces de bénéficier du vaste réseau de livreurs Uber Eats pour les livraisons programmées, le jour même, ou immédiates.
 
 Uber Direct se connecte à votre compte HubRise grâce à Uber Direct Bridge, une application développée par HubRise.
 
