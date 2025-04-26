@@ -636,7 +636,7 @@ content:
         - website: https://merchants.ubereats.com/fr/en/services/uber-direct
           documentation: /apps/uber-direct
           logo: uber-direct.png
-          title: Uber
+          title: Uber Direct
           description: Uber Direct is a white-label delivery service offered by Uber. It allows businesses to send packages, products, or goods to their customers thanks to Uber Eats' extensive driver network.
     - title: Loyalty and Marketing
       slug: loyalty-and-marketing
