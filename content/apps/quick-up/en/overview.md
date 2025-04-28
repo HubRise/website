@@ -11,13 +11,7 @@ app_info:
   availability: United Kingdom
   price_range:
   website: https://quickup.uk
-  contact: +44 (161)-879-12-70 / support@quickup.uk
----
-
----
-
-**IMPORTANT NOTE:** This documentation is available <Link href="/fr/apps/Quick Up" addLocalePrefix={false}>in French only</Link>.
-
+  contact: +44 161-879-12-70 / support@quickup.uk
 ---
 
 ## Description
@@ -26,7 +20,7 @@ Quick Up is an on-demand courier and delivery platform for restaurants, takeaway
 
 With the Quick Up dashboard and mobile app, your team can book same-day or scheduled pickups, track every order in real time, set recurring routes or bespoke delivery rules, and assign preferred drivers—all from a single, intuitive control panel.
 
-Customers order through your branded website, a marketplace, a food-ordering platform, by phone or any other sales channel, and Quick Up’s drivers collect and deliver those orders. Behind the scenes, dynamic route optimisation, live driver data and cost analytics work together to cut wait times and keep delivery costs under control.
+Customers order through your branded website, a marketplace, a food-ordering platform, by phone or any other sales channel, and Quick Up’s drivers collect and deliver those orders. Behind the scenes, dynamic route optimisation, real-time driver geolocation and cost analysis combine to cut waiting times and keep delivery costs under control.
 
 ## Integration Features
 

@@ -11,13 +11,7 @@ app_info:
   availability: Royaume-Uni
   price_range: null
   website: https://quickup.uk
-  contact: +44 (161)-879-12-70 / support@quickup.uk
----
-
----
-
-**REMARQUE IMPORTANTE :** Cette documentation est disponible <Link href="/apps/quick-up" addLocalePrefix={false}>en anglais uniquement</Link>.
-
+  contact: +44 161-879-12-70 / support@quickup.uk
 ---
 
 ## Description
