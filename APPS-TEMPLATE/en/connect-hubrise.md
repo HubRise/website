@@ -40,6 +40,8 @@ To connect SOLUTION Bridge to HubRise, follow these steps:
 
 -- CONNECT - option 3 --
 
+To ask the SOLUTION support team to connect your SOLUTION to HubRise, proceed as follows:
+-- OR --
 Only the SOLUTION support team can connect your [EPOS] to HubRise.
 
 To connect SOLUTION to HubRise, proceed as follows:
@@ -50,6 +52,8 @@ To connect SOLUTION to HubRise, proceed as follows:
 ## Grant Access to SOLUTION Support {#give-access}
 
 To facilitate the handling of your support requests, you need to grant your SOLUTION provider access to your HubRise account.
+-- OR --
+To ask the SOLUTION support team to connect your Quick Up app and to facilitate the handling of your support requests thereafter, you need to grant your SOLUTION provider access to your HubRise account.
 -- OR --
 To connect SOLUTION and facilitate the handling of your support requests, you need to grant your SOLUTION provider access to your HubRise account.
 
@@ -73,11 +77,11 @@ Include in your request the name of your HubRise account, its HubRise identifier
 
 To disconnect SOLUTION from HubRise, proceed as follows:
 
-1. From the SOLUTION back-office, click on ...
-1. SOLUTION is disconnected from HubRise.
+1. From the SOLUTION back office, click on ...
+1. SOLUTION is now disconnected from HubRise.
 
 -- OR --
 
 To disconnect SOLUTION from HubRise, contact SOLUTION support.
 
-If you just need to temporarily stop [receiving orders from HubRise], you can block the connection between SOLUTION and HubRise. For more information, see [Block or Disconnect App](/docs/connections#block-or-disconnect).
+If you only need to temporarily stop [receiving orders from HubRise], you can block the connection between SOLUTION and HubRise. For more information, see [Block or Disconnect App](/docs/connections#block-or-disconnect).
