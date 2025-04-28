@@ -3,10 +3,6 @@ import styled from "styled-components"
 import { StyledUnderline } from "@components/Underline/Styles"
 import { colors, mixin } from "@utils/styles"
 
-export const HeroDescription = styled.p`
-  ${mixin.description}
-`
-
 export const Content = styled.div``
 
 export const ContentWrapper = styled.div`

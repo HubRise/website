@@ -1,12 +1,14 @@
 import styled from "styled-components"
 
-import { colors } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
 
 export const Container = styled.div`
-  color: ${colors.textMedium};
-  margin-bottom: 1rem;
-`
+  color: ${colors.primary};
+  ${fontSizeMixins.fontSizeTextSm}
+  font-weight: 600;
+  margin: 0.75rem 0;
 
-export const StyledDate = styled.span`
-  color: ${colors.textDark};
+  @media (min-width: ${breakpoints.biggest}) {
+    ${fontSizeMixins.fontSizeTextMd}
+  }
 `

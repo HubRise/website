@@ -1,8 +1,6 @@
 import PageHero from "@components/PageHero"
 import { DocumentationIndexYaml } from "@layouts/DocumentationIndex/types"
 
-import { HeroDescription } from "./Styles"
-
 const Hero = (hero: DocumentationIndexYaml["content"]["hero"]): JSX.Element => {
   const { slug, title, description } = hero
 
@@ -24,11 +22,7 @@ const Hero = (hero: DocumentationIndexYaml["content"]["hero"]): JSX.Element => {
     }
   }
 
-  return (
-    <PageHero title={renderTitle()}>
-      <HeroDescription>{description}</HeroDescription>
-    </PageHero>
-  )
+  return <PageHero title={renderTitle()} description={description} />
 }
 
 export default Hero

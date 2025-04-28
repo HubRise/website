@@ -7,7 +7,9 @@
   },
   "blog": {
     "hero": {
-      "title": "Le blog HubRise",
+      "meta_title": "Le blog HubRise",
+      "title_part_1": "Le blog",
+      "title_part_2": "HubRise",
       "description": "Nouvelles apps, évolutions de l'API et cas d'utilisation de HubRise"
     },
     "other_posts": "Autres articles",
@@ -86,8 +88,6 @@
     ],
     "colon": " :",
     "read_more": "Lire la suite",
-    "posted_on": "Publié le",
-    "by": "par",
     "success": "Succès",
     "failure": "Échec",
     "messages": {

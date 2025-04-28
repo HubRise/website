@@ -1,12 +1,6 @@
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
-
-export const SupportingText = styled.span`
-  display: block;
-  ${fontSizeMixins.fontSizeTextXl};
-  margin-top: 1.25rem;
-`
+import { breakpoints, colors, mixin } from "@utils/styles"
 
 export const Content = styled.div`
   display: flex;

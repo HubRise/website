@@ -6,7 +6,7 @@ import ScreenContainer from "@components/ScreenContainer"
 import { ContentWrapper } from "../shared/Styles"
 import { TOrderlineHero } from "../types"
 
-import { Content, ContentBlock, SupportingText } from "./Styles"
+import { Content, ContentBlock } from "./Styles"
 
 interface HeroProps {
   hero: TOrderlineHero
@@ -22,8 +22,8 @@ const Hero = ({ hero }: HeroProps) => {
             <span>{title.centralise}</span> {title.all} <span>{title.orders}</span> {title.operations}
           </>
         }
+        description={supporting_text}
       >
-        <SupportingText>{supporting_text}</SupportingText>
         <Image src="/images/orderline/hero.png" alt="" width={1050} height={900} />
       </PageHero>
       <ScreenContainer bgColor="green" verticalPadding="small">

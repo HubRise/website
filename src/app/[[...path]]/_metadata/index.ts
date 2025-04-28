@@ -16,7 +16,7 @@ export const metadata = async (route: Route<RouteName, LayoutName>): Promise<Met
     case "apps":
       return (route as Route<RouteName, "apps">).context.yaml.meta
     case "blog-index":
-      return { title: getTranslation(route.language, "blog.hero.title") }
+      return { title: getTranslation(route.language, "blog.hero.meta_title") }
     case "blog-post":
       return (route as Route<RouteName, "blog-post">).context.mdFile.frontMatter.meta
     case "documentation":

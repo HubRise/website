@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components"
 
-import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const Container = styled.div<{ $isTextCentered: boolean }>`
   background-color: ${colors.backgroundWhite};
@@ -38,4 +38,8 @@ export const Title = styled.h1`
   @media (min-width: ${breakpoints.biggest}) {
     ${fontSizeMixins.fontSizeDisplay2Xl}
   }
+`
+
+export const Description = styled.p`
+  ${mixin.description}
 `

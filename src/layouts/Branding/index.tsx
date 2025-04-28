@@ -7,7 +7,7 @@ import PageHero from "@components/PageHero"
 import ScreenContainer from "@components/ScreenContainer"
 import Underline from "@components/Underline"
 
-import { CardTitle, Content, ContentWrapper, HeroDescription } from "./Styles"
+import { CardTitle, Content, ContentWrapper } from "./Styles"
 import { BrandingYaml } from "./types"
 
 interface BrandingProps {
@@ -25,10 +25,8 @@ const Branding = ({ yaml }: BrandingProps): JSX.Element => {
             <span>{content.hero.title.part_1}</span> {content.hero.title.part_2}
           </>
         }
-      >
-        <HeroDescription>{content.hero.description}</HeroDescription>
-        <Underline position="center" />
-      </PageHero>
+        description={content.hero.description}
+      />
       <ScreenContainer bgColor="backgroundLight" verticalPadding="big">
         <ContentWrapper>
           {content.sections.map(({ title, content }, Idx) => {
