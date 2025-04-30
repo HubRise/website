@@ -11,6 +11,7 @@ gallery:
   - __gallery-002.png
   - __gallery-003.png
   - __gallery-004.png
+  - __gallery-006.png
   - __gallery-005.png
 app_info:
   category: Logiciels de caisse
@@ -22,13 +23,19 @@ app_info:
 
 ## Description
 
-Carré POS est un logiciel de caisse qui fonctionne sous Windows.
+CarréPOS, caisse connectée pensée pour les métiers de bouche
 
-Carré POS enregistre les informations client et l'historique de commandes. Il peut se connecter à de nombreux périphériques métiers tels que des imprimantes de préparation, des monnayeurs automatiques, et des terminaux bancaires.
+CarréPOS est un logiciel de caisse puissant et intuitif, conçu pour Windows et pensé pour les besoins des restaurateurs, boulangers et autres professionnels des métiers de bouche.
 
-Le back-office Carré POS Cloud est consultable depuis un navigateur internet, et permet de visualiser et d'éditer votre menu, de consulter votre chiffre d'affaire et vos rapports de vente, ou encore de visualiser l'historique de vos commandes.
+CarréPOS est né d’une volonté simple, rendre la gestion de caisse plus fluide, plus rapide et mieux connectée aux besoins du quotidien.
 
-Carré POS a reçu la certification NF525, le rendant conforme à la loi française anti-fraude 2018.
+Depuis plus de 10 ans, CarréPOS accompagne les commerçants dans la digitalisation de leur point de vente. Son écosystème complet comprend des outils de caisse, de gestion des ventes, de suivi des performances, de fidélité, et d’intégration avec de nombreuses solutions métiers, comme la comptabilité, la commande en ligne ou la gestion du personnel.
+
+Il centralise les informations clients, l’historique des commandes et se connecte facilement à un large éventail d’équipements métiers : imprimantes ou écrans de préparation en cuisine, monnayeurs automatiques, terminaux de paiement, balances connectées, et bien plus encore. Son partenariat avec HubRise renforce encore sa promesse d’ouverture et de connectivité afin d’automatiser les flux et de gagner un temps précieux.
+
+Grâce à son back-office en ligne, vous pouvez suivre votre activité, où que vous soyez : modifier prix ou les produits, suivre le chiffre d'affaires en temps réel, accéder aux rapports de vente détaillés, ou encore consulter l’historique des encaissements.
+
+Conforme à la loi française anti-fraude 2018, CarréPOS est certifié NF525, garantissant la sécurité, l’inaltérabilité et la traçabilité des données de caisse.
 
 ## Fonctionnalités de l'intégration
 
