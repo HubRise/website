@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
 
-export const Container = styled.div`
+export const StyledDateAndAuthor = styled.div`
   color: ${colors.primary};
   ${fontSizeMixins.fontSizeTextSm}
   font-weight: 600;

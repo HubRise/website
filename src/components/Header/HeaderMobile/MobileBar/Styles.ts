@@ -5,6 +5,7 @@ import {
   StyledAccordion,
   TitleWrapper as AccordionTitle,
   ContentWrapper as AccordionContent,
+  ExpandIconWrapper,
 } from "@components/Accordion/Styles"
 import { StyledButton } from "@components/Button/Styles"
 import { ProductsList } from "@components/Header/Products/Styles"
@@ -51,9 +52,6 @@ export const Nav = styled.div`
   padding: 1.5rem 1rem;
 
   ${StyledAccordion} {
-    margin-bottom: 0;
-    border: none;
-
     ${AccordionTitle} {
       padding: 0.75rem 0;
     }
@@ -65,6 +63,11 @@ export const Nav = styled.div`
     h4 {
       ${fontSizeMixins.fontSizeTextMd}
       color: ${colors.textDark};
+    }
+
+    ${ExpandIconWrapper} {
+      width: auto;
+      height: auto;
     }
   }
 

@@ -14,7 +14,7 @@ export const MapContainer = styled.div`
   @media (min-width: ${breakpoints.large}) {
     ${StyledCard} {
       margin: 0;
-      max-width: 30rem;
+      max-width: 26.5rem;
       position: absolute;
       top: 6rem;
       right: 6rem;

@@ -1,6 +1,7 @@
 import Link from "next/link"
 import styled from "styled-components"
 
+import { StyledIcon } from "@components/Icon/Styles"
 import { breakpoints, colors, fontSizes, mixin, sizes } from "@utils/styles"
 
 export const StyledBreadcrumbs = styled.ul`
@@ -24,7 +25,7 @@ export const Item = styled.li`
 
   &::after {
     content: ">";
-    margin: 0 0.5rem;
+    margin: 0 1rem;
     color: ${colors.textLighter};
     font-size: ${fontSizes._18};
     vertical-align: middle;
@@ -43,4 +44,8 @@ export const Item = styled.li`
 
 export const ItemLink = styled(Link)`
   ${mixin.linkOver(colors.primary)};
+
+  ${StyledIcon} {
+    vertical-align: middle;
+  }
 `

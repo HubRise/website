@@ -10,7 +10,7 @@ import { OrderlineYaml } from "@layouts/Orderline/types"
 import { PartnersYaml } from "@layouts/Partners/types"
 import { PricingYaml } from "@layouts/Pricing/types"
 import { TestimonialsYaml } from "@layouts/Testimonials/types"
-import { BlogArchives, BlogMdFile } from "@utils/BlogIndexer/types"
+import { BlogMdFile } from "@utils/BlogIndexer/types"
 import { Href, DocMdFile, DocFolder } from "@utils/DocIndexer/types"
 import { ContentDirName } from "@utils/files"
 import { Language } from "@utils/locales"
@@ -67,9 +67,9 @@ export type LayoutName =
 export type Context<L extends LayoutName> = L extends "apps"
   ? { context: { yaml: IntegrationsYaml } }
   : L extends "blog-index"
-  ? { context: { mdFiles: Array<BlogMdFile>; archives: BlogArchives } }
+  ? { context: { mdFiles: Array<BlogMdFile> } }
   : L extends "blog-post"
-  ? { context: { mdFile: BlogMdFile; archives: BlogArchives } }
+  ? { context: { mdFile: BlogMdFile; mdFiles: Array<BlogMdFile> } }
   : L extends "contact-us"
   ? { context: { yaml: ContactUsYaml } }
   : L extends "documentation"

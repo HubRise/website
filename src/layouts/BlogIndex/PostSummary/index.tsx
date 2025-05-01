@@ -3,12 +3,11 @@ import Link from "next/link"
 import * as React from "react"
 
 import Button from "@components/Button"
+import DateAndAuthor from "@components/DateAndAuthor"
 import useTranslation from "@hooks/client/useTranslation"
 import { BlogMdFile } from "@utils/BlogIndexer/types"
 import { ContentImage } from "@utils/contentImage"
 import { text } from "@utils/misc"
-
-import DateAndAuthor from "../../../components/Blog/shared/components/DateAndAuthor"
 
 import { BannerImage, CardText, CardTitle, ReadMoreWrapper } from "./Styles"
 

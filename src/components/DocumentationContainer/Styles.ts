@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components"
 
-import { breakpoints, colors, fontSizes, lineHeights, mixin } from "@utils/styles"
+import { boxShadows, breakpoints, colors, fontSizeMixins, fontSizes, lineHeights, mixin } from "@utils/styles"
 
 const commonTitleStyles = css`
   color: ${colors.textDarkest};
@@ -19,8 +19,8 @@ const underlineMixin = css`
   right: inherit;
   top: 100%;
   margin: 10px auto;
-  width: 5rem;
-  height: 0.1875rem;
+  width: 6.25rem;
+  height: 2px;
   background: ${colors.primary};
   border-radius: 6.25rem;
 
@@ -43,20 +43,29 @@ export const StyledContainer = styled.div`
       font-size: ${fontSizes._42};
     }
 
-    &:after {
+    &::after {
       ${underlineMixin}
     }
   }
 
   h2 {
-    ${commonTitleStyles};
+    ${fontSizeMixins.fontSizeTextXl}
+    font-weight: 600;
+    color: ${colors.textDarkest};
     position: relative;
-    font-size: ${fontSizes._24};
-    font-weight: bold;
     margin: 2.5rem 0 2.5rem 0;
 
-    &:after {
+    &::after {
       ${underlineMixin}
+    }
+
+    @media (min-width: ${breakpoints.large}) {
+      ${fontSizeMixins.fontSizeText2Xl}
+    }
+
+    @media (min-width: ${breakpoints.biggest}) {
+      font-size: 1.875rem;
+      line-height: 2.5rem;
     }
   }
 
@@ -79,14 +88,36 @@ export const StyledContainer = styled.div`
     margin-bottom: 0.5rem;
   }
 
-  p {
+  p,
+  ul,
+  ol {
     margin-bottom: ${paragraphSpacing};
+    font-weight: 500;
+    ${fontSizeMixins.fontSizeTextMd}
+
+    @media (min-width: ${breakpoints.large}) {
+      ${fontSizeMixins.fontSizeTextLg}
+    }
+
+    @media (min-width: ${breakpoints.biggest}) {
+      ${fontSizeMixins.fontSizeTextXl}
+    }
   }
 
   p + ul,
   p + table,
   p + .prism-code {
     margin-top: calc(0.5rem - ${paragraphSpacing});
+  }
+
+  p:has(> em) {
+    border-left: solid 2px ${colors.primary};
+    padding-left: 1rem;
+
+    & > em {
+      font-weight: 500;
+      color: #101828;
+    }
   }
 
   h5 + ul,
@@ -100,11 +131,6 @@ export const StyledContainer = styled.div`
   td a {
     color: ${colors.primary};
     ${mixin.linkOver(colors.textDarkest)};
-  }
-
-  ul,
-  ol {
-    margin-bottom: 1rem;
   }
 
   ol {
@@ -122,7 +148,7 @@ export const StyledContainer = styled.div`
     margin-left: 1rem;
     padding-left: 1rem;
 
-    &:before {
+    &::before {
       content: "";
       width: 6px;
       height: 6px;
@@ -168,17 +194,23 @@ export const StyledContainer = styled.div`
   }
 
   blockquote {
-    margin: 0 0 2rem;
-    padding: 0.25rem 0 0.25rem 1.25rem;
-    border-left: 3px solid ${colors.borderLight};
+    padding: 4rem 1rem 1rem 1rem;
+    margin: 0 0 1rem 0;
+    box-shadow: ${boxShadows.card};
+    border-radius: 0.75rem;
+    font-weight: 500;
+    background-image: url("/images/quote-green.svg");
+    background-repeat: no-repeat;
+    background-size: 52px 36px;
+    background-position: 1rem 1rem;
 
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    @media (min-width: ${breakpoints.large}) {
+      padding: 6.75rem 1.75rem 2.75rem 1.75rem;
+      background-position: 1.75rem 2.75rem;
+    }
 
     p {
-      margin: 0;
-      font-style: italic;
+      margin-bottom: 0;
     }
   }
 `

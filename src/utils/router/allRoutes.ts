@@ -10,7 +10,6 @@ import { OrderlineYaml } from "@layouts/Orderline/types"
 import { PartnersYaml } from "@layouts/Partners/types"
 import { PricingYaml } from "@layouts/Pricing/types"
 import { TestimonialsYaml } from "@layouts/Testimonials/types"
-import { BlogArchives } from "@utils/BlogIndexer/types"
 import DocIndexer, { Folder } from "@utils/DocIndexer"
 import { ContentDirName, readYamlFile } from "@utils/files"
 
@@ -70,9 +69,6 @@ const blogRoutes = async (contentDirName: ContentDirName): Promise<Routes> => {
     if (!mdFiles) continue
 
     const mainBlogUri: Href = language === defaultLanguage ? "/blog" : `/${language}/blog`
-    const archives: BlogArchives = {
-      years: indexer.allYears(language).map((year) => ({ year, uri: `${mainBlogUri}/${year}` })),
-    }
 
     routes.push(
       createRoute({
@@ -80,7 +76,7 @@ const blogRoutes = async (contentDirName: ContentDirName): Promise<Routes> => {
         language,
         name: "blog",
         layout: "blog-index",
-        context: { mdFiles: indexer.allMdFiles(language), archives },
+        context: { mdFiles: indexer.allMdFiles(language) },
       }),
     )
 
@@ -92,7 +88,7 @@ const blogRoutes = async (contentDirName: ContentDirName): Promise<Routes> => {
           name: "blog_archive",
           params: { year: year },
           layout: "blog-index",
-          context: { mdFiles: indexer.mdFilesByYear(language, year), archives },
+          context: { mdFiles: indexer.mdFilesByYear(language, year) },
         }),
       )
     })
@@ -105,7 +101,7 @@ const blogRoutes = async (contentDirName: ContentDirName): Promise<Routes> => {
           name: "blog_post",
           params: { contentDirName: mdFile.contentDirName, basename: mdFile.baseName },
           layout: "blog-post",
-          context: { mdFile, archives },
+          context: { mdFile, mdFiles: indexer.allMdFiles(language) },
         }),
       )
     }

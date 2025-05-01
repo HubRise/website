@@ -1,16 +1,16 @@
 import { BlogFrontMatter } from "@utils/BlogIndexer/types"
 
-import { Container } from "./Styles"
+import { StyledDateAndAuthor } from "./Styles"
 
 const DateAndAuthor = ({ frontMatter }: { frontMatter: BlogFrontMatter }): JSX.Element => {
   const dateAsString = new Date(frontMatter.date).toLocaleDateString("en-GB")
 
   return (
-    <Container>
+    <StyledDateAndAuthor>
       <span>
         {frontMatter.author} &#x2022; {dateAsString}
       </span>
-    </Container>
+    </StyledDateAndAuthor>
   )
 }
 

@@ -6,20 +6,28 @@ import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
 import { ButtonType, linkButtonBgColor, linkButtonColor } from "./utils"
 
-export const StyledButton = styled(Link)<{ $type: ButtonType }>`
+export const buttonStyles = css`
   ${mixin.centerElement}
   width: fit-content;
+  font-size: ${fontSizes._16};
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+
+  @media (min-width: ${breakpoints.biggest}) {
+    font-size: ${fontSizes._20};
+  }
+`
+
+export const StyledButton = styled(Link)<{ $type: ButtonType }>`
+  ${buttonStyles}
   height: ${({ $type }) => ($type === "link" ? "auto" : "3rem")};
   line-height: ${({ $type }) => ($type === "link" ? "normal" : "3rem")};
   background-color: ${({ $type }) => linkButtonBgColor($type)};
   color: ${({ $type }) => linkButtonColor($type)};
-  font-size: ${fontSizes._16};
-  font-weight: 600;
-  border-radius: 0.5rem;
   padding: ${({ $type }) => ($type === "link" ? "0" : "0 1.125rem")};
   margin-top: 2rem;
-  transition: all 0.5s ease;
-  white-space: nowrap;
 
   ${StyledIcon} {
     margin-left: 0.375rem;
@@ -43,6 +51,5 @@ export const StyledButton = styled(Link)<{ $type: ButtonType }>`
   @media (min-width: ${breakpoints.biggest}) {
     height: ${({ $type }) => ($type === "link" ? "auto" : "3.375rem")};
     line-height: ${({ $type }) => ($type === "link" ? "normal" : "3.375rem")};
-    font-size: ${fontSizes._20};
   }
 `

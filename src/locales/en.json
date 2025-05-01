@@ -13,7 +13,12 @@
       "description": "New apps, evolutions of the API and real-world uses of HubRise"
     },
     "other_posts": "Other posts",
-    "title": "Blog"
+    "title": "Blog",
+    "get_started": {
+      "title": "Have questions about this blog post?",
+      "description": "Whether you're looking for more details about something specific in this article or want to find out how HubRise can help your business, we're here for you.",
+      "button_label": "Contact us"
+    }
   },
   "documentation": {
     "app_info": {
@@ -88,6 +93,7 @@
     ],
     "colon": ":",
     "read_more": "Read More",
+    "copy_link": "Copy Link",
     "success": "Success",
     "failure": "Failure",
     "messages": {

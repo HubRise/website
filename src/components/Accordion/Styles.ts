@@ -8,8 +8,6 @@ export const StyledAccordion = styled.div`
   border-bottom: 1px solid ${colors.borderLight};
 
   &:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
     border-bottom: none;
   }
 `
