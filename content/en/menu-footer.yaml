@@ -25,10 +25,10 @@ sections:
         to: /contributing
   - title: Partners
     links:
-      - title: Become an Integrated Partner
+      - title: Become a Partner
         to: /
-      - title: Become a Reseller
-        to: /
+      - title: Hire an Expert
+        to: /partners
   - title: Company
     links:
       - title: Testimonials
