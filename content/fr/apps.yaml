@@ -42,6 +42,13 @@ content:
           title: Clyo Systems
           description: Clyo Systems est une solution de caisse tout-en-un pour les restaurants, incluant la gestion des stocks, la fidélité, les écrans cuisine, la gestion du temps du personnel et la commande en ligne. Sa conception modulaire permet l'ajout de modules adaptés aux besoins spécifiques de chaque établissement.
           additional_info: Intégration en cours.
+        - website: https://www.csy.co.uk
+          documentation: /fr/apps/csy
+          logo: csy.png
+          country: GB
+          title: CSY Vector EPOS
+          description: CSY Vector EPOS est un logiciel de caisse conçu pour la restauration et tous les types de commerces de détail. Adapté aux établissements multi-sites, il inclut en natif de nombreuses fonctionnalités personnalisables ainsi que des écrans cuisine, commande à table, plan de salle, imprimantes.
+          additional_info:
         - website: https://www.epostechnologies.co.uk/
           documentation: /fr/apps/epos-technologies
           logo: epostechnologies.png
