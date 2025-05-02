@@ -16,7 +16,7 @@ interface TestimonialsProps {
 
 const Testimonials = ({ title, testimonials, testimonialLogoMap }: TestimonialsProps) => {
   return (
-    <ScreenContainer bgColor="backgroundLight" verticalPadding="big" withHeader title={title}>
+    <ScreenContainer withHeader title={title}>
       <TestimonialsWrapper>
         {testimonials.map((testimonial, index) => {
           return (

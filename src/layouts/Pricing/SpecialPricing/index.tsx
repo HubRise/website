@@ -18,7 +18,7 @@ const SpecialPricing = ({ special_pricing }: SpecialPricingProps): JSX.Element =
   const resellers_and_partners = special_pricing.resellers_and_partners
 
   return (
-    <ScreenContainer bgColor="backgroundLight" verticalPadding="big" withHeader title={special_pricing.title}>
+    <ScreenContainer withHeader title={special_pricing.title}>
       <Content>
         <PricingListCards>
           <Card padding="big">

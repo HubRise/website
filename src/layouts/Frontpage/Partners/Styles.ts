@@ -7,17 +7,22 @@ export const Wrapper = styled.div`
   ${mixin.containerWrapper}
   display: flex;
   flex-direction: column;
-  gap: 3.75rem;
+  gap: 2rem;
 
   @media (min-width: ${breakpoints.large}) {
     flex-direction: row;
+    gap: 3.75rem;
   }
 `
 
-export const ImageWrapper = styled.div``
+export const ImageWrapper = styled.div`
+  flex-basis: 50%;
+  text-align: center;
+`
 
 export const ContentWrapper = styled.div`
   text-align: center;
+  flex-basis: 50%;
 
   p:last-child {
     margin-top: 1.25rem;

@@ -18,7 +18,7 @@ interface IntegrationsProps {
 
 const Integrations = ({ title, integration_apps }: IntegrationsProps) => {
   return (
-    <ScreenContainer bgColor="backgroundLight" verticalPadding="big" withHeader title={title}>
+    <ScreenContainer withHeader title={title}>
       <SideBlocks>
         {integration_apps.map((integrationApp, index) => {
           return (

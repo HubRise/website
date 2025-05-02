@@ -21,8 +21,6 @@ const Features = ({ featuresContent, descriptionMdx, featuresImagesMap }: Featur
   return (
     <FeaturesContainer>
       <ScreenContainer
-        bgColor="backgroundLight"
-        verticalPadding="big"
         isTextCentered
         withHeader
         title={title}

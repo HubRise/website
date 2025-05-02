@@ -1,14 +1,9 @@
 import Image from "next/image"
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizes, mixin, sizes } from "@utils/styles"
+import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
 export const Card = styled.div`
-  max-width: ${sizes.maxWidth};
-  margin: 0 auto 1.5rem auto;
-  &:last-child {
-    margin-bottom: 5rem;
-  }
   background-color: ${colors.backgroundWhite};
   display: grid;
   grid-template-columns: 1fr;

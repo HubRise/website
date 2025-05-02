@@ -8,8 +8,8 @@ import { ScreenContainerBgColor, ScreenContainerVerticalPadding } from "./utils"
 
 interface ScreenContainerProps {
   children: React.ReactNode
-  bgColor: ScreenContainerBgColor
-  verticalPadding: ScreenContainerVerticalPadding
+  bgColor?: ScreenContainerBgColor
+  verticalPadding?: ScreenContainerVerticalPadding
   isTextCentered?: boolean
   withHeader?: boolean
   title?: string
@@ -21,8 +21,8 @@ interface ScreenContainerProps {
 
 const ScreenContainer = ({
   children,
-  bgColor,
-  verticalPadding,
+  bgColor = "backgroundLight",
+  verticalPadding = "big",
   isTextCentered = false,
   withHeader = false,
   title = "",

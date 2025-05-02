@@ -27,7 +27,7 @@ const Branding = ({ yaml }: BrandingProps): JSX.Element => {
         }
         description={content.hero.description}
       />
-      <ScreenContainer bgColor="backgroundLight" verticalPadding="big">
+      <ScreenContainer>
         <ContentWrapper>
           {content.sections.map(({ title, content }, Idx) => {
             return (

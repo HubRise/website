@@ -74,7 +74,7 @@ const FAQs = ({ yaml, getInTouch }: FAQProps): JSX.Element => {
           </>
         }
       />
-      <ScreenContainer bgColor="backgroundLight" verticalPadding="big">
+      <ScreenContainer>
         <Content>
           {content.faq_sections.map(({ title, questions }, sIdx) => {
             return (

@@ -9,7 +9,7 @@ import { Link, Title, StyledThumbList, Description, Content, StyledIcon, IconWra
 
 const ThumbList = ({ thumbs }: { thumbs: DocumentationIndexYaml["content"]["thumbs"] }): JSX.Element => {
   return (
-    <ScreenContainer bgColor="backgroundLight" verticalPadding="big">
+    <ScreenContainer>
       <StyledThumbList>
         {thumbs.map(({ title, description, to, icon }, index) => (
           <Card key={index}>

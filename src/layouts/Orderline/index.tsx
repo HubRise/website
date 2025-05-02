@@ -42,7 +42,7 @@ const Orderline = ({
         featuresImagesMap={featuresImagesMap}
       />
       <Discover discoverContent={content.discover} descriptionMdx={discoverDescriptionMdx} />
-      <ScreenContainer bgColor="backgroundLight" verticalPadding="big">
+      <ScreenContainer>
         <ContentWrapper>
           <GetInTouch title={title} description={description} button_label={button_label} button_link={button_link} />
         </ContentWrapper>

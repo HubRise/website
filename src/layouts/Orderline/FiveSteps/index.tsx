@@ -12,7 +12,7 @@ interface FiveStepsProps {
 const FiveSteps = ({ fiveSteps }: FiveStepsProps) => {
   const { title, steps } = fiveSteps
   return (
-    <ScreenContainer bgColor="backgroundLight" verticalPadding="big" withHeader title={title}>
+    <ScreenContainer withHeader title={title}>
       <Cards>
         {steps.map(({ title, description }, index) => {
           return (

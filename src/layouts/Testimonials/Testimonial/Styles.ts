@@ -1,26 +1,15 @@
 import styled from "styled-components"
 
-import { boxShadows, breakpoints, colors, fontSizes, lineHeights, sizes } from "@utils/styles"
+import { boxShadows, colors, fontSizes, lineHeights } from "@utils/styles"
 
 export const Card = styled.div`
   position: relative;
-  max-width: ${sizes.maxWidth};
-  margin: 8.75rem auto;
+  margin: 5rem auto 0;
+  width: 100%;
   padding: 135px 1.25rem 55px;
   background-color: ${colors.backgroundWhite};
   box-shadow: ${boxShadows.card};
-
-  @media (min-width: ${breakpoints.large}) {
-    padding-left: 7.85rem;
-    padding-right: 7.85rem;
-    margin-top: 9.75rem;
-    margin-bottom: 9.75rem;
-    border-radius: 0.5rem;
-  }
-
-  &:last-child {
-    margin-bottom: 5rem;
-  }
+  border-radius: 0.5rem;
 `
 
 export const Picture = styled.div`
@@ -42,8 +31,8 @@ export const Quote = styled.div`
   text-align: center;
   color: ${colors.textDark};
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: "“";
     font-weight: 700;
   }

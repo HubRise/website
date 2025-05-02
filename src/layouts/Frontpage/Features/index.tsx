@@ -17,13 +17,7 @@ interface FeaturesProps {
 
 const Features = ({ title, features_cards, descriptionMdx, featuresImagesMap }: FeaturesProps): JSX.Element => {
   return (
-    <ScreenContainer
-      bgColor="backgroundLight"
-      verticalPadding="big"
-      withHeader
-      title={title}
-      descriptionMdx={descriptionMdx}
-    >
+    <ScreenContainer withHeader title={title} descriptionMdx={descriptionMdx}>
       <Cards>
         {features_cards.map(({ title, description, image }, index) => {
           return (

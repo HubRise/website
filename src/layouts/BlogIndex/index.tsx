@@ -30,7 +30,7 @@ const BlogIndex = ({ mdFiles, bannerImages }: BlogIndexProps): JSX.Element => {
         description={t("blog.hero.description")}
       />
 
-      <ScreenContainer bgColor="backgroundLight" verticalPadding="small">
+      <ScreenContainer verticalPadding="small">
         <Posts>
           {mdFiles.map((mdFile, idx) => (
             <Card key={idx}>
