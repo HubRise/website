@@ -40,8 +40,6 @@ To connect SOLUTION Bridge to HubRise, follow these steps:
 
 -- CONNECT - option 3 --
 
-To ask the SOLUTION support team to connect your SOLUTION to HubRise, proceed as follows:
--- OR --
 Only the SOLUTION support team can connect your [EPOS] to HubRise.
 
 To connect SOLUTION to HubRise, proceed as follows:
@@ -49,13 +47,21 @@ To connect SOLUTION to HubRise, proceed as follows:
 1. Grant SOLUTION access to your HubRise account. For more information, see [Grant Access to SOLUTION Support](#give-access).
 1. Contact the SOLUTION support team who will establish the connection to HubRise. For more information, see [Contact SOLUTION Support](#contact).
 
+-- CONNECT - option 4 --
+
+To ask the SOLUTION support team to connect your [EPOS] to HubRise, proceed as follows:
+(insert steps from option 3)
+
+To connect SOLUTION to HubRise autonomously, follow these steps:
+(insert steps from option 1)
+
 ## Grant Access to SOLUTION Support {#give-access}
 
 To facilitate the handling of your support requests, you need to grant your SOLUTION provider access to your HubRise account.
 -- OR --
-To ask the SOLUTION support team to connect your Quick Up app and to facilitate the handling of your support requests thereafter, you need to grant your SOLUTION provider access to your HubRise account.
--- OR --
 To connect SOLUTION and facilitate the handling of your support requests, you need to grant your SOLUTION provider access to your HubRise account.
+-- OR --
+To ask the SOLUTION support team to connect your [EPOS] and to facilitate the handling of your support requests, you need to grant your SOLUTION provider access to your HubRise account.
 
 To grant access to SOLUTION, proceed as follows:
 
