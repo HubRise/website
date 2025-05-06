@@ -21,16 +21,16 @@ app_info:
 
 ## Description
 
-Drive Eat fournit un logiciel de caisse et des outils de digitalisation des commandes pour les restaurants, snack-bars et boulangeries. Son offre comprend Drive Eat Caisse, une application logicielle disponible sur Android et iOS, conçue pour simplifier la gestion des établissements, améliorer l'efficacité opérationnelle, réduire les temps d'attente et enrichir l'expérience client.
+Drive Eat fournit un logiciel de caisse et des outils de digitalisation des commandes pour les restaurants, snack-bars et boulangeries. Son offre comprend Drive Eat Caisse, une application disponible sur Android et iOS, conçue pour simplifier la gestion des établissements, améliorer l'efficacité opérationnelle, réduire les temps d'attente et enrichir l'expérience client.
 
 ### Services et solutions proposés
 
-- **Logiciel de caisse et écran cuisine** : outils de gestion des commandes et de l'encaissement.
-- **Bornes de commande** : permettent aux clients de passer commandes de manière autonome.
-- **Tablettes sur table** : offrent aux clients la possibilité de commander directement depuis leur table.
-- **Applications mobiles** : proposent aux clients de commander à distance et aident à renforcer la fidélité.
-- **Click & Collect** : permet aux clients de commander en ligne et de récupérer la commande au restaurant.
-- **Monnayeur automatique** : sécurise les transactions en espèces et réduit les erreurs humaines.
+- Le logiciel de caisse et l’écran cuisine permettent de gérer les commandes et l’encaissement.
+- Les bornes de commande permettent aux clients de passer commande de manière autonome.
+- Les tablettes sur table offrent aux clients la possibilité de commander directement depuis leur table.
+- Les applications mobiles proposent aux clients de commander à distance et aident à renforcer la fidélité.
+- Le Click & Collect permet aux clients de commander en ligne et de récupérer la commande au restaurant.
+- Le monnayeur automatique sécurise les transactions en espèces et réduit les erreurs humaines.
 
 Drive Eat est conforme à la loi française anti-fraude 2018.
 
