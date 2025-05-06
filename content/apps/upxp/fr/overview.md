@@ -11,7 +11,7 @@ app_info:
   category: Fidélité et marketing
   availability: Royaume-Uni, France
   price_range:
-  website: https://upxp.io/programme-de-fidelite/
+  website: https://openflow.pro
   contact: contact@upxp.io / +44 20 4577 0522
 ---
 

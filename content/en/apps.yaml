@@ -42,7 +42,7 @@ content:
           country:
           title: Clyo Systems
           description: Clyo Systems is an all-in-one EPOS solution for restaurants, including inventory management, loyalty management, Kitchen Display Systems, time-tracking, and online ordering. Its modular design allows for the integration of customisable add-ons.
-          additional_info: Integration in progress.
+          additional_info:
         - website: https://www.epostechnologies.co.uk/
           documentation: /apps/epos-technologies
           logo: epostechnologies.png
@@ -673,7 +673,7 @@ content:
           country:
           title: Service Management Group
           description: SMG combines technology and services to collect, analyse, and share feedback on data for brands to make decisions with insights across their enterprise.
-        - website: https://upxp.io
+        - website: https://openflow.pro/home-en
           documentation: /apps/upxp
           logo: upxp.png
           country:
@@ -689,13 +689,6 @@ content:
           title: Apicbase
           description: Apicbase is a Food and Beverage management software for multi-store food businesses and hotels. Apicbase helps you control food costs, inventory, and purchasing. Access your data at any time, wherever you are, on any device.
           additional_info:
-        - website: https://barratio.fr/en
-          documentation: /apps/barratio
-          logo: barratio.png
-          country:
-          title: Barratio
-          description: Barratio digitalises invoices and delivery slips. It tracks invoices discrepancies. The full Barratio suite offers a theoretical inventory and a global overview of your business by analysing purchases, costs per recipe and sales data.
-          additional_info: Integration in progress.
         - website: https://www.foodreport.fr
           documentation: /apps/foodreport
           logo: foodreport.png
