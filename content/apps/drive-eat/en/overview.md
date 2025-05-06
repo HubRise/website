@@ -1,6 +1,6 @@
 ---
-title: Overview
-path_override: "/"
+title: Présentation générale
+path_override: /
 position: 1
 layout: documentation
 meta:
@@ -12,18 +12,11 @@ gallery:
   - __gallery-002.jpg
   - __gallery-004.png
 app_info:
-  category: Point of Sales
+  category: EPOS
   availability: France
   price_range:
   website: https://drive-eat.solutions
   contact: +33 7 60 13 21 84 / contact@drive-eat.fr
----
-
-
----
-
-**IMPORTANT NOTE:** The full documentation is available <Link href="/fr/apps/Drive Eat" addLocalePrefix={false}>in French only</Link>.
-
 ---
 
 ## Description
@@ -31,12 +24,13 @@ app_info:
 Drive Eat provides an EPOS system and ordering digitalisation tools for restaurants, snack bars and bakeries. Its offering includes Drive Eat Caisse, a software application available on Android and iOS, designed to simplify business management, improve operational efficiency, reduce waiting times and enhance the customer experience.
 
 ### Services and Solutions Offered
-- **EPOS and Kitchen Display Systems**: tools for managing orders and payments.
-- **Ordering kiosks**: let customers place their orders autonomously.
-- **Tabletop tablets**: enable customers to order directly from their table.
-- **Mobile app**: allows customers to order remotely and helps strengthen loyalty.
-- **Click & Collect**: offer customers the convenience to order online and collect their orders at the restaurant.
-- **Cash payment machine**: secures cash transactions and reduces human error.
+
+- The EPOS system and Kitchen Display System allow you to manage orders and payments.
+- Ordering kiosks let customers place their orders autonomously.
+- Tabletop tablets give customers the ability to order directly from their table.
+- Mobile apps let customers order remotely and help strengthen loyalty.
+- Click & Collect allows customers to order online and collect their order at the restaurant.
+- The Cash payment machine secures cash transactions and reduces human error.
 
 Drive Eat complies with the 2018 French Anti-Fraud Act.
 
