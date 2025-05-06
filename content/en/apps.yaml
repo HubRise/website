@@ -43,6 +43,19 @@ content:
           title: Clyo Systems
           description: Clyo Systems is an all-in-one EPOS solution for restaurants, including inventory management, loyalty management, Kitchen Display Systems, time-tracking, and online ordering. Its modular design allows for the integration of customisable add-ons.
           additional_info: Integration in progress.
+        - website: https://www.csy.co.uk
+          documentation: /apps/csy
+          logo: csy.png
+          country: GB
+          title: CSY Vector EPOS
+          description: CSY Vector EPOS is tailored for busy hospitality and retail environments. Well-suited for multi-site operations, it combines ease of use with customisable features and includes built-in support for kitchen screens, table ordering, a table planner, printers, and more.
+          additional_info:
+        - website: https://drive-eat.solutions
+          documentation: /apps/drive-eat
+          logo: drive-eat.png
+          country: FR
+          title: Drive Eat
+          description: Drive Eat provides an EPOS system combined with digital ordering solutions for restaurants, snack bars, and bakeries. It includes kiosks, mobile apps, Click & Collect, kitchen displays, and cash payment machines, all designed to streamline operations, reduce waiting times, and improve the customer experience.
         - website: https://www.epostechnologies.co.uk/
           documentation: /apps/epos-technologies
           logo: epostechnologies.png
@@ -679,7 +692,7 @@ content:
           country:
           title: Service Management Group
           description: SMG combines technology and services to collect, analyse, and share feedback on data for brands to make decisions with insights across their enterprise.
-        - website: https://upxp.io
+        - website: https://openflow.pro/home-en
           documentation: /apps/upxp
           logo: upxp.png
           country:
@@ -695,13 +708,6 @@ content:
           title: Apicbase
           description: Apicbase is a Food and Beverage management software for multi-store food businesses and hotels. Apicbase helps you control food costs, inventory, and purchasing. Access your data at any time, wherever you are, on any device.
           additional_info:
-        - website: https://barratio.fr/en
-          documentation: /apps/barratio
-          logo: barratio.png
-          country:
-          title: Barratio
-          description: Barratio digitalises invoices and delivery slips. It tracks invoices discrepancies. The full Barratio suite offers a theoretical inventory and a global overview of your business by analysing purchases, costs per recipe and sales data.
-          additional_info: Integration in progress.
         - website: https://www.foodreport.fr
           documentation: /apps/foodreport
           logo: foodreport.png
