@@ -50,6 +50,12 @@ content:
           title: CSY Vector EPOS
           description: CSY Vector EPOS is tailored for busy hospitality and retail environments. Well-suited for multi-site operations, it combines ease of use with customisable features and includes built-in support for kitchen screens, table ordering, a table planner, printers, and more.
           additional_info:
+        - website: https://drive-eat.solutions
+          documentation: /apps/drive-eat
+          logo: drive-eat.png
+          country: FR
+          title: Drive Eat
+          description: Drive Eat provides an EPOS system combined with digital ordering solutions for restaurants, snack bars, and bakeries. It includes kiosks, mobile apps, Click & Collect, kitchen displays, and cash payment machines, all designed to streamline operations, reduce waiting times, and improve the customer experience.
         - website: https://www.epostechnologies.co.uk/
           documentation: /apps/epos-technologies
           logo: epostechnologies.png

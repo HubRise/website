@@ -48,6 +48,12 @@ content:
           country: GB
           title: CSY Vector EPOS
           description: CSY Vector EPOS est un logiciel de caisse conçu pour la restauration et tous les types de commerces de détail. Adapté aux établissements multi-sites, il inclut en natif de nombreuses fonctionnalités personnalisables ainsi que des écrans cuisine, commande à table, plan de salle, imprimantes.
+        - website: https://drive-eat.solutions
+          documentation: /fr/apps/drive-eat
+          logo: drive-eat.png
+          country: FR
+          title: Drive Eat
+          description: Drive Eat propose un logiciel de caisse combiné à des solutions de commande digitale pour les restaurants, snacks et boulangeries. Ses services incluent des bornes de commande, des applications mobiles, des solutions Click & Collect, des écrans cuisine et des monnayeurs, le tout conçu pour optimiser les opérations, réduire les temps d'attente et améliorer l'expérience client.
           additional_info:
         - website: https://www.epostechnologies.co.uk/
           documentation: /fr/apps/epos-technologies
