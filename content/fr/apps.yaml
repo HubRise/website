@@ -42,6 +42,12 @@ content:
           title: Clyo Systems
           description: Clyo Systems est une solution de caisse tout-en-un pour les restaurants, incluant la gestion des stocks, la fidélité, les écrans cuisine, la gestion du temps du personnel et la commande en ligne. Sa conception modulaire permet l'ajout de modules adaptés aux besoins spécifiques de chaque établissement.
           additional_info: Intégration en cours.
+        - website: https://www.csy.co.uk
+          documentation: /fr/apps/csy
+          logo: csy.png
+          country: GB
+          title: CSY Vector EPOS
+          description: CSY Vector EPOS est un logiciel de caisse conçu pour la restauration et tous les types de commerces de détail. Adapté aux établissements multi-sites, il inclut en natif de nombreuses fonctionnalités personnalisables ainsi que des écrans cuisine, commande à table, plan de salle, imprimantes.
         - website: https://drive-eat.solutions
           documentation: /fr/apps/drive-eat
           logo: drive-eat.png
@@ -635,7 +641,7 @@ content:
           logo: stuart.png
           country:
           title: Stuart
-          description: Stuart propose aux commerces de toutes tailles et de tous secteurs, des services de livraison rapide sur demande avec une méthode de transport personnalisée. Disponible dans 4 pays et 100 villes.
+          description: Stuart propose aux commerces de toutes tailles et de tous secteurs, des services de livraison rapide sur demande avec une méthode de transport personnalisée. Disponible dans 4 pays et 100 villes.
           additional_info:
         - website: https://trapar.co.uk
           documentation: /fr/apps/trapar
@@ -689,7 +695,7 @@ content:
           title: Service Management Group
           description: SMG associe la technologie et le service pour collecter et analyser vos données, afin de comprendre les comportements de vos clients et d'agir en conséquence.
           additional_info:
-        - website: https://upxp.io
+        - website: https://openflow.pro/
           documentation: /fr/apps/upxp
           logo: upxp.png
           country:
@@ -705,13 +711,6 @@ content:
           title: Apicbase
           description: Apicbase est un logiciel de gestion pour les restaurants et les hôtels à plusieurs points de vente. Apicbase vous permet de contrôler les coûts des produits finis, l'inventaire et les achats. Vos données sont disponibles à tout moment, où que vous soyez et sur tout type d'appareil.
           additional_info:
-        - website: https://barratio.fr
-          documentation: /fr/apps/barratio
-          logo: barratio.png
-          country:
-          title: Barratio
-          description: Barratio dématérialise vos factures ou bons de livraison et traque les erreurs de facturations. La gestion complète du cycle des achats, le calcul de la rentabilité par recette et la remontée de vos ventes, permet d'obtenir un inventaire théorique et une visibilité globale sur votre activité.
-          additional_info: Intégration en cours.
         - website: https://www.foodreport.fr
           documentation: /fr/apps/foodreport
           logo: foodreport.png

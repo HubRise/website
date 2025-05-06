@@ -29,7 +29,7 @@ servier.bar est une solution de commande pour les restaurants et les hôtels. Il
 
 Comment ça marche ?
 
-- **Commande de table** : les clients scannent un QR code et commandent via un navigateur web. Aucun téléchargement et aucune création de compte nécessaire.
+- **Commande à table** : les clients scannent un QR code et commandent via un navigateur web. Aucun téléchargement et aucune création de compte nécessaire.
 - **Commande en ligne**: les clients peuvent commander à l'avance, ou passer commande pour une consommation ou livraison immédiate.
 - **Multilingue** : Le menu est disponible en 5 langues pour faciliter la commande pour tous les clients.
 - **Pourboire** : encouragez le pourboire et définissez des taux prédéfinis, par exemple 5 %, 10 % et 15 %.

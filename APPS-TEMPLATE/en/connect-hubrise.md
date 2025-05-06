@@ -47,11 +47,21 @@ To connect SOLUTION to HubRise, proceed as follows:
 1. Grant SOLUTION access to your HubRise account. For more information, see [Grant Access to SOLUTION Support](#give-access).
 1. Contact the SOLUTION support team who will establish the connection to HubRise. For more information, see [Contact SOLUTION Support](#contact).
 
+-- CONNECT - option 4 --
+
+To ask the SOLUTION support team to connect your [EPOS] to HubRise, proceed as follows:
+(insert steps from option 3)
+
+To connect SOLUTION to HubRise autonomously, follow these steps:
+(insert steps from option 1)
+
 ## Grant Access to SOLUTION Support {#give-access}
 
 To facilitate the handling of your support requests, you need to grant your SOLUTION provider access to your HubRise account.
 -- OR --
 To connect SOLUTION and facilitate the handling of your support requests, you need to grant your SOLUTION provider access to your HubRise account.
+-- OR --
+To ask the SOLUTION support team to connect your [EPOS] and to facilitate the handling of your support requests, you need to grant your SOLUTION provider access to your HubRise account.
 
 To grant access to SOLUTION, proceed as follows:
 
@@ -73,11 +83,11 @@ Include in your request the name of your HubRise account, its HubRise identifier
 
 To disconnect SOLUTION from HubRise, proceed as follows:
 
-1. From the SOLUTION back-office, click on ...
-1. SOLUTION is disconnected from HubRise.
+1. From the SOLUTION back office, click on ...
+1. SOLUTION is now disconnected from HubRise.
 
 -- OR --
 
 To disconnect SOLUTION from HubRise, contact SOLUTION support.
 
-If you just need to temporarily stop [receiving orders from HubRise], you can block the connection between SOLUTION and HubRise. For more information, see [Block or Disconnect App](/docs/connections#block-or-disconnect).
+If you only need to temporarily stop receiving orders from HubRise, you can block the connection between SOLUTION and HubRise. For more information, see [Block or Disconnect App](/docs/connections#block-or-disconnect).
