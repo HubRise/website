@@ -11,7 +11,7 @@ meta:
 HubRise and CSY Vector EPOS each use their own terminology. The same concept can therefore have a different designation in each
 solution. The correspondence table below shows these differences.
 
-| SOLUTION | HubRise     | Description                                                                  |
-|---------|-------------|------------------------------------------------------------------------------|
-| Company | Account     | Business brand.                                                                |
-| Branches | Locations   | The actual restaurant or retail store                                        |
+| SOLUTION | HubRise  | Description                            |
+| -------- | -------- | -------------------------------------- |
+| Company  | Account  | Business brand.                        |
+| Branch   | Location | The actual restaurant or retail store. |

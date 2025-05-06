@@ -19,11 +19,13 @@ app_info:
 CSY’s Vector EPOS is built to meet the demands of busy hospitality and retail environments. From rapid order-taking to efficient table and tab management, it streamlines operations to help serve customers faster and better.
 
 Top 3 Features:
+
 - **Table Planner**: Visualise your dining layout and assign tables easily. Track availability and waiting times to optimise turnover and service flow.
 - **Kitchen Screens**: Replace handwritten orders and printouts with real-time digital displays in the kitchen. Improve communication and reduce errors to deliver faster, more accurate service.
 - **Table Ordering**: Guests can scan a QR code to view menus, place orders, and pay—all from their smartphones, enhancing convenience and reducing wait times.
 
 Other Key Features:
+
 - Click & Collect functionality
 - Save tab and split bill options
 - Wastage tracking directly at the EPOS
@@ -33,8 +35,6 @@ Other Key Features:
 - Comprehensive reporting suite
 
 Seamless integration between CSY Vector EPOS and delivery services unifies online and in-store operations. For hospitality businesses, this ensures smooth order management and accurate kitchen preparation. For grocery stores, it keeps inventory up to date and guarantees that Click & Collect orders are ready on time, improving efficiency and overall customer satisfaction.
-
-
 
 ## Integration Features
 

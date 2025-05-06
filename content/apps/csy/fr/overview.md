@@ -26,9 +26,9 @@ Le logiciel de caisse Vector EPOS de CSY est conçu pour répondre aux exigences
 
 3 fonctionnalités différenciantes :
 
-- **Gestion de Table** : Visualisez votre disposition de salle à manger et attribuez des tables facilement. Suivez la disponibilité et les temps d'attente pour optimiser le chiffre d'affaires et le flux de service.
+- **Gestion de tables** : Visualisez votre disposition de salle à manger et attribuez des tables facilement. Suivez la disponibilité et les temps d'attente pour optimiser le chiffre d'affaires et le flux de service.
 - **Écrans cuisine** : Remplacez les commandes manuscrites et les tickets imprimés par des affichages numériques en temps réel dans la cuisine. Améliorez la communication et réduisez les erreurs pour un service plus rapide et plus précis.
-- **Commande de Table** : Les clients peuvent scanner un QR code pour consulter le menu, passer commande et payer directement depuis leur smartphone, pour plus de confort et moins d’attente.
+- **Commande à table** : Les clients peuvent scanner un QR code pour consulter le menu, passer commande et payer directement depuis leur smartphone, pour plus de confort et moins d’attente.
 
 Autres fonctionnalités clés :
 
