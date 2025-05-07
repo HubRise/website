@@ -4,15 +4,15 @@ path_override: envoyer-commandes
 position: 4
 layout: documentation
 meta:
-  title: Envoyer les commandes | My Lemonade | HubRise
-  description: My Lemonade envoie les commandes vers HubRise et synchronise les statuts de commande. Connectez vos apps et synchronisez vos données.
+  title: Envoyer les commandes | Get Resto | HubRise
+  description: Get Resto envoie les commandes vers HubRise et synchronise les statuts de commande. Connectez vos apps et synchronisez vos données.
 ---
 
-Dès que My Lemonade est connecté à HubRise, les commandes enregistrées sur My Lemonade sont envoyées automatiquement vers HubRise.
+Dès que Get Resto est connecté à HubRise, les commandes enregistrées sur Get Resto sont envoyées automatiquement vers HubRise.
 
 ## Liste des commandes
 
-Pour voir la liste des commandes sur My Lemonade :
+Pour voir la liste des commandes sur Get Resto :
 
 1.  Dans le menu latéral du back office, sélectionnez **Commandes**.
 1.  Sélectionnez l'onglet correspondant au statut de la commande désirée : **Reçu**, **En préparation**, **Terminé** ou **Annulé**.
@@ -29,14 +29,14 @@ Pour voir les détails d'une commande :
 
 ## Synchronisation des statuts de commande
 
-Les statuts de commande sont synchronisés dans les deux sens entre My Lemonade et HubRise :
+Les statuts de commande sont synchronisés dans les deux sens entre Get Resto et HubRise :
 
-- Si vous modifiez le statut d'une commande dans My Lemonade, le nouveau statut est envoyé à HubRise.
-- Si le statut d'une commande est modifié par une solution tierce, par exemple le logiciel de caisse, le nouveau statut apparaît automatiquement dans My Lemonade.
+- Si vous modifiez le statut d'une commande dans Get Resto, le nouveau statut est envoyé à HubRise.
+- Si le statut d'une commande est modifié par une solution tierce, par exemple le logiciel de caisse, le nouveau statut apparaît automatiquement dans Get Resto.
 
-Pour modifier le statut d'une commande dans My Lemonade, cliquez sur le bouton correspondant dans le détail de la commande.
+Pour modifier le statut d'une commande dans Get Resto, cliquez sur le bouton correspondant dans le détail de la commande.
 
-Les statuts de commande de My Lemonade sont identiques aux statuts de HubRise :
+Les statuts de commande de Get Resto sont identiques aux statuts de HubRise :
 
 - _new_ : la commande a été créée.
 - _received_ : la commande a été reçue.
