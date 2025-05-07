@@ -43,6 +43,19 @@ content:
           title: Clyo Systems
           description: Clyo Systems est une solution de caisse tout-en-un pour les restaurants, incluant la gestion des stocks, la fidélité, les écrans cuisine, la gestion du temps du personnel et la commande en ligne. Sa conception modulaire permet l'ajout de modules adaptés aux besoins spécifiques de chaque établissement.
           additional_info: Intégration en cours.
+        - website: https://www.csy.co.uk
+          documentation: /fr/apps/csy
+          logo: csy.png
+          country: GB
+          title: CSY Vector EPOS
+          description: CSY Vector EPOS est un logiciel de caisse conçu pour la restauration et tous les types de commerces de détail. Adapté aux établissements multi-sites, il inclut en natif de nombreuses fonctionnalités personnalisables ainsi que des écrans cuisine, commande à table, plan de salle, imprimantes.
+        - website: https://drive-eat.solutions
+          documentation: /fr/apps/drive-eat
+          logo: drive-eat.png
+          country: FR
+          title: Drive Eat
+          description: Drive Eat propose un logiciel de caisse combiné à des solutions de commande digitale pour les restaurants, snacks et boulangeries. Ses services incluent des bornes de commande, des applications mobiles, des solutions Click & Collect, des écrans cuisine et des monnayeurs, le tout conçu pour optimiser les opérations, réduire les temps d'attente et améliorer l'expérience client.
+          additional_info:
         - website: https://www.epostechnologies.co.uk/
           documentation: /fr/apps/epos-technologies
           logo: epostechnologies.png
@@ -416,6 +429,13 @@ content:
           country:
           title: eddress
           description: eddress est une solution de commande en ligne pour les restaurants et les épiceries, avec gestion de livreurs intégrée. Elle convient aux enseignes de toute taille, indépendantes ou franchisées. Disponible en 20 langues et déployée dans plus de 17 pays.
+        - website: https://www.get-resto.com
+          documentation: /fr/apps/get-resto
+          logo: get-resto.png
+          country:
+          title: Get Resto
+          description: Get Resto est une solution de commande à table. Le client scanne le QR code ou le tag NFC placés sur la table, accède au menu dans sa langue sur son smartphone, et commande en ligne. Aucune app à installer.
+          additional_info:
         - website: https://www.gonnaorder.com/?lang=fr
           documentation: /fr/apps/gonnaorder
           logo: gonnaorder.png
@@ -449,13 +469,6 @@ content:
           country:
           title: Loca'Touch
           description: Loca'Touch propose des bornes de commande en location ou en vente. Le client passe commande et paye en toute autonomie, et reçoit des propositions de produits complémentaires pendant le cycle d'achat. Mises à jour régulières du logiciel système.
-          additional_info:
-        - website: https://www.mylemonade.fr
-          documentation: /fr/apps/my-lemonade
-          logo: my-lemonade.png
-          country:
-          title: My Lemonade
-          description: My Lemonade est une solution de commande à table. Le client scanne le QR code ou le tag NFC placés sur la table, accède au menu dans sa langue sur son smartphone, et commande en ligne. Aucune app à installer.
           additional_info:
         - website: https://mynober.nl/en/home-2/
           documentation: /fr/apps/mynober
@@ -624,12 +637,18 @@ content:
           country:
           title: Dismatch
           description: Dismatch est un service de livraison à domicile indépendant proposé par Smood, qui couvre l'ensemble du marché suisse. Dismatch permet à des enseignes qui ne sont pas partenaires de Smood de bénéficier de leur service de livraison.
+        - website: https://quickup.uk
+          documentation: /fr/apps/quick-up
+          logo: quick-up.png
+          country: GB
+          title: Quick Up
+          description: Quick Up est un service de livraison à la demande pour restaurants, épiceries et autres commerces de proximité, avec optimisation des tournées, géolocalisation en temps réel des livreurs. Quick Up permet la réduction des délais d’attente et la maîtrise des coûts de livraison.
         - website: https://stuart.com/fr
           documentation: /fr/apps/stuart
           logo: stuart.png
           country:
           title: Stuart
-          description: Stuart propose aux commerces de toutes tailles et de tous secteurs, des services de livraison rapide sur demande avec une méthode de transport personnalisée. Disponible dans 4 pays et 100 villes.
+          description: Stuart propose aux commerces de toutes tailles et de tous secteurs, des services de livraison rapide sur demande avec une méthode de transport personnalisée. Disponible dans 4 pays et 100 villes.
           additional_info:
         - website: https://trapar.co.uk
           documentation: /fr/apps/trapar
@@ -637,6 +656,11 @@ content:
           country:
           title: Trapar
           description: Trapar facilite la livraison du dernier kilomètre avec suivi en temps réel et l'option d'utiliser ses propres livreurs ou de faire appel à ceux de Trapar.
+        - website: https://merchants.ubereats.com/fr/fr/services/uber-direct/
+          documentation: /fr/apps/uber-direct
+          logo: uber-direct.png
+          title: Uber Direct
+          description: Uber Direct est un service de livraison en marque blanche proposé par Uber. Il permet aux entreprises d'envoyer des produits ou colis à leurs clients en s'appuyant sur le vaste réseau de chauffeurs d'Uber Eats.
           additional_info:
     - title: Fidélité et marketing
       slug: loyalty-and-marketing
@@ -683,7 +707,7 @@ content:
           title: Service Management Group
           description: SMG associe la technologie et le service pour collecter et analyser vos données, afin de comprendre les comportements de vos clients et d'agir en conséquence.
           additional_info:
-        - website: https://upxp.io
+        - website: https://openflow.pro/
           documentation: /fr/apps/upxp
           logo: upxp.png
           country:
@@ -699,13 +723,6 @@ content:
           title: Apicbase
           description: Apicbase est un logiciel de gestion pour les restaurants et les hôtels à plusieurs points de vente. Apicbase vous permet de contrôler les coûts des produits finis, l'inventaire et les achats. Vos données sont disponibles à tout moment, où que vous soyez et sur tout type d'appareil.
           additional_info:
-        - website: https://barratio.fr
-          documentation: /fr/apps/barratio
-          logo: barratio.png
-          country:
-          title: Barratio
-          description: Barratio dématérialise vos factures ou bons de livraison et traque les erreurs de facturations. La gestion complète du cycle des achats, le calcul de la rentabilité par recette et la remontée de vos ventes, permet d'obtenir un inventaire théorique et une visibilité globale sur votre activité.
-          additional_info: Intégration en cours.
         - website: https://www.foodreport.fr
           documentation: /fr/apps/foodreport
           logo: foodreport.png

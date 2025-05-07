@@ -43,6 +43,19 @@ content:
           title: Clyo Systems
           description: Clyo Systems is an all-in-one EPOS solution for restaurants, including inventory management, loyalty management, Kitchen Display Systems, time-tracking, and online ordering. Its modular design allows for the integration of customisable add-ons.
           additional_info: Integration in progress.
+        - website: https://www.csy.co.uk
+          documentation: /apps/csy
+          logo: csy.png
+          country: GB
+          title: CSY Vector EPOS
+          description: CSY Vector EPOS is tailored for busy hospitality and retail environments. Well-suited for multi-site operations, it combines ease of use with customisable features and includes built-in support for kitchen screens, table ordering, a table planner, printers, and more.
+          additional_info:
+        - website: https://drive-eat.solutions
+          documentation: /apps/drive-eat
+          logo: drive-eat.png
+          country: FR
+          title: Drive Eat
+          description: Drive Eat provides an EPOS system combined with digital ordering solutions for restaurants, snack bars, and bakeries. It includes kiosks, mobile apps, Click & Collect, kitchen displays, and cash payment machines, all designed to streamline operations, reduce waiting times, and improve the customer experience.
         - website: https://www.epostechnologies.co.uk/
           documentation: /apps/epos-technologies
           logo: epostechnologies.png
@@ -417,6 +430,12 @@ content:
           country:
           title: eddress
           description: eddress is an online ordering solution for restaurants and grocery stores, with integrated delivery management. It is suitable for businesses of all sizes, whether independent or franchised. Available in 20 languages and deployed in more than 17 countries.
+        - website: https://www.get-resto.com
+          documentation: /apps/get-resto
+          logo: get-resto.png
+          country:
+          title: Get Resto
+          description: Get Resto is a table ordering solution. Customers flash the QR code or use the NFC tag placed on their table, access the menu on their smartphone in their language, and order from it. No app installation required.
         - website: https://www.gonnaorder.com
           documentation: /apps/gonnaorder
           logo: gonnaorder.png
@@ -450,12 +469,6 @@ content:
           title: Loca'Touch
           description: Loca'Touch offers self ordering kiosks for leasing or sale. Customers can order and pay autonomously, and receive complementary products suggestions during purchase. Regular system software updates.
           additional_info:
-        - website: https://www.mylemonade.fr
-          documentation: /apps/my-lemonade
-          logo: my-lemonade.png
-          country:
-          title: My Lemonade
-          description: My Lemonade is a table ordering solution. Customers flash the QR code or use the NFC tag placed on their table, access the menu on their smartphone in their language, and order from it. No app installation required.
         - website: https://mynober.nl/en/home-2
           documentation: /apps/mynober
           logo: mynober.png
@@ -619,6 +632,12 @@ content:
           country:
           title: Dismatch
           description: Dismatch is an independent home delivery service offered by Smood, which covers the entire Swiss market. With Dismatch, non-Smood partners can benefit from their delivery service.
+        - website: https://quickup.uk
+          documentation: /apps/quick-up
+          logo: quick-up.png
+          country: GB
+          title: Quick Up
+          description: Quick Up is an on-demand delivery service for restaurants, grocery stores, and other local businesses. It offers route optimisation and real-time driver geolocation, helping reduce waiting times and control delivery costs.
         - website: https://stuart.com
           documentation: /apps/stuart
           logo: stuart.png
@@ -633,6 +652,11 @@ content:
           title: Trapar
           description: Trapar is a last-mile delivery solution for businesses, handling orders from various channels with a real-time tracking app. Trapar offers the option to use one's own delivery staff or Trapar's on-demand drivers/riders.
           additional_info:
+        - website: https://merchants.ubereats.com/fr/en/services/uber-direct
+          documentation: /apps/uber-direct
+          logo: uber-direct.png
+          title: Uber Direct
+          description: Uber Direct is a white-label delivery service offered by Uber. It allows businesses to send products or packages to their customers by leveraging Uber Eats' extensive driver network
     - title: Loyalty and Marketing
       slug: loyalty-and-marketing
       apps:
@@ -673,7 +697,7 @@ content:
           country:
           title: Service Management Group
           description: SMG combines technology and services to collect, analyse, and share feedback on data for brands to make decisions with insights across their enterprise.
-        - website: https://upxp.io
+        - website: https://openflow.pro/home-en
           documentation: /apps/upxp
           logo: upxp.png
           country:
@@ -689,13 +713,6 @@ content:
           title: Apicbase
           description: Apicbase is a Food and Beverage management software for multi-store food businesses and hotels. Apicbase helps you control food costs, inventory, and purchasing. Access your data at any time, wherever you are, on any device.
           additional_info:
-        - website: https://barratio.fr/en
-          documentation: /apps/barratio
-          logo: barratio.png
-          country:
-          title: Barratio
-          description: Barratio digitalises invoices and delivery slips. It tracks invoices discrepancies. The full Barratio suite offers a theoretical inventory and a global overview of your business by analysing purchases, costs per recipe and sales data.
-          additional_info: Integration in progress.
         - website: https://www.foodreport.fr
           documentation: /apps/foodreport
           logo: foodreport.png

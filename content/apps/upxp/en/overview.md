@@ -11,7 +11,7 @@ app_info:
   category: Loyalty and Marketing
   availability: United Kingdom, France
   price_range:
-  website: https://upxp.io/
+  website: https://openflow.pro/home-en
   contact: contact@upxp.io / +44 20 4577 0522
 ---
 
