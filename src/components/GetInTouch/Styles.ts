@@ -4,6 +4,10 @@ import { StyledButton } from "@components/Button/Styles"
 import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const Wrapper = styled.div`
+  ${mixin.containerWrapper}
+`
+
+export const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;

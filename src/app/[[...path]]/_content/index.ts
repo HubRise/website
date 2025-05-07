@@ -1,6 +1,7 @@
 import { Router } from "@utils/router"
 import { LayoutName, Route, RouteName } from "@utils/router/types"
 
+import becomePartner from "./becomePartner"
 import blogIndex from "./blogIndex"
 import blogPost from "./blogPost"
 import branding from "./branding"
@@ -19,6 +20,8 @@ export const renderContent = async (route: Route<RouteName, LayoutName>, router:
   switch (route.layout) {
     case "apps":
       return await integrations(route as Route<RouteName, "apps">)
+    case "become-partner":
+      return await becomePartner(route as Route<RouteName, "become-partner">)
     case "blog-index":
       return await blogIndex(route as Route<RouteName, "blog-index">)
     case "blog-post":

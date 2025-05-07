@@ -1,9 +1,6 @@
-import { HeroAppColor } from "./Hero/utils"
+import { TMetric } from "@components/Metrics"
 
-export type TMetric = {
-  number: string
-  title: string
-}
+import { HeroAppColor } from "./Hero/utils"
 
 export type THeroApp = {
   title: string

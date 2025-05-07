@@ -10,9 +10,11 @@ interface PageHeroProps {
 const PageHero = ({ children, isTextCentered = true, title, description }: PageHeroProps): JSX.Element => (
   <Container $isTextCentered={isTextCentered}>
     <Wrapper>
-      {title && <Title>{title}</Title>}
-      {description && <Description>{description}</Description>}
-      {children}
+      <div>
+        {title && <Title>{title}</Title>}
+        {description && <Description>{description}</Description>}
+      </div>
+      <div>{children}</div>
     </Wrapper>
   </Container>
 )

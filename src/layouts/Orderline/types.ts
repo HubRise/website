@@ -1,3 +1,5 @@
+import { TTwoSidesContent } from "@components/TwoSidesContent"
+
 export type TOrderlineHero = {
   title: {
     centralise: string
@@ -6,10 +8,7 @@ export type TOrderlineHero = {
     operations: string
   }
   supporting_text: string
-  content: {
-    part_1: string
-    part_2: string
-  }
+  content: TTwoSidesContent
 }
 
 export type TFiveSteps = {

@@ -24,8 +24,6 @@
       #   image: dashboard.png
 - title: Pricing
   to: /pricing
-- title: Partners
-  to: /partners
 - title: Resources
   to: /
   content:

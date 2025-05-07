@@ -3,11 +3,12 @@ import styled from "styled-components"
 import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const Wrapper = styled.div`
-  ${mixin.centerElement};
-  margin: 0 -0.5rem;
-  column-gap: 0.25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
 
   @media (min-width: ${breakpoints.medium}) {
+    ${mixin.centerElement};
     column-gap: 2rem;
   }
 

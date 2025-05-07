@@ -1,8 +1,11 @@
 import ScreenContainer from "@components/ScreenContainer"
 
-import { TMetric } from "../types"
-
 import { MetricBlock, Number, Text, Wrapper } from "./Styles"
+
+export type TMetric = {
+  number: string
+  title: string
+}
 
 interface MetricsProps {
   metrics: Array<TMetric>

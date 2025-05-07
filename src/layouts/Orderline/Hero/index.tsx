@@ -1,12 +1,9 @@
 import Image from "next/image"
 
 import PageHero from "@components/PageHero"
-import ScreenContainer from "@components/ScreenContainer"
+import TwoSidesContent from "@components/TwoSidesContent"
 
-import { ContentWrapper } from "../shared/Styles"
 import { TOrderlineHero } from "../types"
-
-import { Content, ContentBlock } from "./Styles"
 
 interface HeroProps {
   hero: TOrderlineHero
@@ -14,6 +11,7 @@ interface HeroProps {
 
 const Hero = ({ hero }: HeroProps) => {
   const { title, supporting_text, content } = hero
+
   return (
     <>
       <PageHero
@@ -24,16 +22,14 @@ const Hero = ({ hero }: HeroProps) => {
         }
         description={supporting_text}
       >
-        <Image src="/images/orderline/hero.png" alt="" width={1050} height={900} />
+        <Image
+          src="/images/orderline/hero.png"
+          alt={`${title.centralise} ${title.all} ${title.orders} ${title.operations}`}
+          width={1050}
+          height={900}
+        />
       </PageHero>
-      <ScreenContainer bgColor="green" verticalPadding="small">
-        <ContentWrapper>
-          <Content>
-            <ContentBlock>{content.part_1}</ContentBlock>
-            <ContentBlock>{content.part_2}</ContentBlock>
-          </Content>
-        </ContentWrapper>
-      </ScreenContainer>
+      <TwoSidesContent content={content} />
     </>
   )
 }

@@ -12,7 +12,7 @@ import ScreenContainer from "@components/ScreenContainer"
 import Underline from "@components/Underline"
 import { iconSizes } from "@utils/styles"
 
-import { CardTitle, Content, ExpandIconWrapper } from "./Styles"
+import { CardTitle, Content, ExpandIconWrapper, GetInTouchWrapper } from "./Styles"
 import { FAQsYaml, TQuestion } from "./types"
 
 interface FAQProps {
@@ -96,9 +96,11 @@ const FAQs = ({ yaml, getInTouch }: FAQProps): JSX.Element => {
               </Card>
             )
           })}
-          <GetInTouch title={title} description={description} button_label={button_label} button_link={button_link} />
         </Content>
       </ScreenContainer>
+      <GetInTouchWrapper>
+        <GetInTouch title={title} description={description} button_label={button_label} button_link={button_link} />
+      </GetInTouchWrapper>
     </>
   )
 }

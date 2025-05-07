@@ -1,6 +1,10 @@
 import styled from "styled-components"
 
-import { breakpoints, colors, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
+
+export const TwoSidesContentWrapper = styled.div`
+  ${mixin.containerWrapper}
+`
 
 export const Content = styled.div`
   display: flex;
@@ -13,9 +17,8 @@ export const Content = styled.div`
 `
 
 export const ContentBlock = styled.p`
-  ${mixin.description}
   position: relative;
-  margin-top: 0;
+  ${fontSizeMixins.fontSizeTextMd}
 
   &:first-child {
     &::after {
@@ -34,5 +37,9 @@ export const ContentBlock = styled.p`
         height: 100%;
       }
     }
+  }
+
+  @media (min-width: ${breakpoints.biggest}) {
+    ${fontSizeMixins.fontSizeTextLg}
   }
 `

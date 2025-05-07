@@ -4,7 +4,6 @@ import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 
 import GetInTouch from "@components/GetInTouch"
 import { GetInTouchYaml } from "@components/GetInTouch/types"
-import ScreenContainer from "@components/ScreenContainer"
 import { OrderlineYaml } from "@layouts/Orderline/types"
 import { ContentImageMap } from "@utils/contentImage"
 
@@ -12,7 +11,6 @@ import Discover from "./Discover"
 import Features from "./Features"
 import FiveSteps from "./FiveSteps"
 import Hero from "./Hero"
-import { ContentWrapper } from "./shared/Styles"
 
 interface OrderlineProps {
   yaml: OrderlineYaml
@@ -42,11 +40,7 @@ const Orderline = ({
         featuresImagesMap={featuresImagesMap}
       />
       <Discover discoverContent={content.discover} descriptionMdx={discoverDescriptionMdx} />
-      <ScreenContainer>
-        <ContentWrapper>
-          <GetInTouch title={title} description={description} button_label={button_label} button_link={button_link} />
-        </ContentWrapper>
-      </ScreenContainer>
+      <GetInTouch title={title} description={description} button_label={button_label} button_link={button_link} />
     </>
   )
 }

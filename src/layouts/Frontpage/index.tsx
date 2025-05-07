@@ -2,6 +2,7 @@
 
 import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 
+import Metrics from "@components/Metrics"
 import { FrontpageYaml } from "@layouts/Frontpage/types"
 import { ContentImageMap } from "@utils/contentImage"
 
@@ -9,7 +10,6 @@ import Apps from "./Apps"
 import Features from "./Features"
 import Hero from "./Hero"
 import Integrations from "./Integrations"
-import Metrics from "./Metrics"
 import Partners from "./Partners"
 import Pricing from "./Pricing"
 import Testimonials from "./Testimonials"

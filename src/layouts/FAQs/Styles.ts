@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { expandIconWrapperMixin } from "@components/Accordion/Styles"
 import { StyledCard } from "@components/Card/Styles"
 import { StyledIcon } from "@components/Icon/Styles"
+import { Container } from "@components/ScreenContainer/Styles"
 import { StyledUnderline } from "@components/Underline/Styles"
 import { breakpoints, colors, mixin } from "@utils/styles"
 
@@ -54,4 +55,10 @@ export const Content = styled.div`
 export const ExpandIconWrapper = styled.div`
   ${expandIconWrapperMixin}
   background-color: ${colors.backgroundLight};
+`
+
+export const GetInTouchWrapper = styled.div`
+  ${Container} {
+    padding-top: 0;
+  }
 `

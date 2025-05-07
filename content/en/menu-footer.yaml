@@ -26,7 +26,7 @@ sections:
   - title: Partners
     links:
       - title: Become a Partner
-        to: /
+        to: /become-partner
       - title: Hire an Expert
         to: /partners
   - title: Company

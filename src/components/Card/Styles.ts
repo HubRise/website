@@ -11,6 +11,7 @@ export const StyledCard = styled.div<{ $padding: CardPadding }>`
   background-color: ${colors.backgroundWhite};
   padding: ${({ $padding }) => ($padding === "small" ? "1.5rem" : "2rem 1rem")};
   box-shadow: ${boxShadows.card};
+  color: ${colors.textDark};
 
   @media (min-width: ${breakpoints.large}) {
     padding: ${({ $padding }) => ($padding === "small" ? "1.5rem" : "2.5rem")};
