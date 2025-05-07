@@ -24,8 +24,9 @@ To ask the Quick Up support team to connect your Quick Up app to HubRise, procee
 To connect Quick Up to HubRise autonomously, follow these steps:
 
 1. From the Quick Up back office, click on **Settings**, then **User Store List** in the left-hand menu.
-1. Click on the **Add User Store** button. 
+1. Click on the **Add User Store** button.
 1. On the **Create User Store** page, select the `HubRise` Channel and click **Submit**; leave all other fields empty.
+   ![Quick Up connection to HubRise](./images/001-quickup-connection.png)
 1. You are redirected to the HubRise interface. If this is your first time logging in, create a HubRise account. For more information, check out our [Getting Started Guide](/docs/get-started).
 1. If your account has multiple locations, expand the **Choose location** section to select the desired location, and click **Allow**. For locations with multiple customer lists or catalogs, click **Next** to display the corresponding dropdown lists, and select the desired options.
 1. Click **Authorise**.
