@@ -4,15 +4,15 @@ path_override: associer-codes-ref
 position: 3
 layout: documentation
 meta:
-  title: Associer les codes ref | My Lemonade | HubRise
-  description: Instructions pour associer les codes ref des produits My Lemonade avec d'autres applications connectées à HubRise pour la synchronisation des données.
+  title: Associer les codes ref | Get Resto | HubRise
+  description: Instructions pour associer les codes ref des produits Get Resto avec d'autres applications connectées à HubRise pour la synchronisation des données.
 ---
 
-Une fois My Lemonade connecté à HubRise, vous devez configurer My Lemonade afin que les différents éléments présents dans les commandes envoyées soient bien identifiés par vos autres applications connectées, telles que votre logiciel de caisse.
+Une fois Get Resto connecté à HubRise, vous devez configurer Get Resto afin que les différents éléments présents dans les commandes envoyées soient bien identifiés par vos autres applications connectées, telles que votre logiciel de caisse.
 
 ## Produits et SKUs
 
-Les SKUs dans HubRise correspondent aux variante dans My Lemonade.
+Les SKUs dans HubRise correspondent aux variante dans Get Resto.
 
 Un produit est toujours composé d'au moins une SKU. HubRise ignore le code ref du produit et prend en compte le code ref de la SKU.
 
@@ -36,7 +36,7 @@ Pour modifier le code ref d'une option, suivez ces étapes :
 
 ## Promotions
 
-Une promotion dans HubRise correspond à une offre dans My Lemonade.
+Une promotion dans HubRise correspond à une offre dans Get Resto.
 
 Pour modifier le code ref d'une offre, suivez ces étapes :
 
@@ -48,7 +48,7 @@ Pour modifier le code ref d'une offre, suivez ces étapes :
 
 ## Méthodes de paiement
 
-Une méthode de paiement dans HubRise correspond à un service de paiement dans My Lemonade.
+Une méthode de paiement dans HubRise correspond à un service de paiement dans Get Resto.
 
 Pour modifier le code ref d'un service de paiement, suivez ces étapes :
 

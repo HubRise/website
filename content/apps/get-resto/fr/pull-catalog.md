@@ -4,11 +4,11 @@ path_override: importer-catalogue
 position: 5
 layout: documentation
 meta:
-  title: Importer le catalogue | My Lemonade | HubRise
-  description: Comment importer le catalogue depuis HubRise dans votre menu My Lemonade.
+  title: Importer le catalogue | Get Resto | HubRise
+  description: Comment importer le catalogue depuis HubRise dans votre menu Get Resto.
 ---
 
-My Lemonade peut importer un catalogue depuis HubRise. L'importation a lieu dans l'un des trois cas suivants :
+Get Resto peut importer un catalogue depuis HubRise. L'importation a lieu dans l'un des trois cas suivants :
 
 - Importation initiale au moment de la connexion avec HubRise.
 - Importation manuelle déclenchée par l'utilisateur.
@@ -16,7 +16,7 @@ My Lemonade peut importer un catalogue depuis HubRise. L'importation a lieu dans
 
 ### Importation initiale
 
-Le catalogue est importé automatiquement dans My Lemonade au moment de la connexion avec HubRise.
+Le catalogue est importé automatiquement dans Get Resto au moment de la connexion avec HubRise.
 
 ### Importation manuelle
 
@@ -28,13 +28,13 @@ Le catalogue est importé automatiquement dans My Lemonade au moment de la conne
 
 ---
 
-**REMARQUE IMPORTANTE :** Cette opération remplace votre menu My Lemonade actuel.
+**REMARQUE IMPORTANTE :** Cette opération remplace votre menu Get Resto actuel.
 
 ---
 
 ### Auto-importation
 
-Les mises à jour de catalogue dans HubRise peuvent être automatiquement importées dans My Lemonade. Pour cela, vous devez activer l'auto-importation en suivant ces étapes :
+Les mises à jour de catalogue dans HubRise peuvent être automatiquement importées dans Get Resto. Pour cela, vous devez activer l'auto-importation en suivant ces étapes :
 
 1.  Dans le menu latéral du back office, sélectionnez **Paramètres**.
 1.  Sélectionnez l'onglet **Caisse**.

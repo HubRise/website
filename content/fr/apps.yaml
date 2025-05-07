@@ -428,6 +428,13 @@ content:
           country:
           title: eddress
           description: eddress est une solution de commande en ligne pour les restaurants et les épiceries, avec gestion de livreurs intégrée. Elle convient aux enseignes de toute taille, indépendantes ou franchisées. Disponible en 20 langues et déployée dans plus de 17 pays.
+        - website: https://www.get-resto.com
+          documentation: /fr/apps/get-resto
+          logo: get-resto.png
+          country:
+          title: Get Resto
+          description: Get Resto est une solution de commande à table. Le client scanne le QR code ou le tag NFC placés sur la table, accède au menu dans sa langue sur son smartphone, et commande en ligne. Aucune app à installer.
+          additional_info:
         - website: https://www.gonnaorder.com/?lang=fr
           documentation: /fr/apps/gonnaorder
           logo: gonnaorder.png
@@ -461,13 +468,6 @@ content:
           country:
           title: Loca'Touch
           description: Loca'Touch propose des bornes de commande en location ou en vente. Le client passe commande et paye en toute autonomie, et reçoit des propositions de produits complémentaires pendant le cycle d'achat. Mises à jour régulières du logiciel système.
-          additional_info:
-        - website: https://www.mylemonade.fr
-          documentation: /fr/apps/my-lemonade
-          logo: my-lemonade.png
-          country:
-          title: My Lemonade
-          description: My Lemonade est une solution de commande à table. Le client scanne le QR code ou le tag NFC placés sur la table, accède au menu dans sa langue sur son smartphone, et commande en ligne. Aucune app à installer.
           additional_info:
         - website: https://mynober.nl/en/home-2/
           documentation: /fr/apps/mynober

@@ -430,6 +430,12 @@ content:
           country:
           title: eddress
           description: eddress is an online ordering solution for restaurants and grocery stores, with integrated delivery management. It is suitable for businesses of all sizes, whether independent or franchised. Available in 20 languages and deployed in more than 17 countries.
+        - website: https://www.get-resto.com
+          documentation: /apps/get-resto
+          logo: get-resto.png
+          country:
+          title: Get Resto
+          description: Get Resto is a table ordering solution. Customers flash the QR code or use the NFC tag placed on their table, access the menu on their smartphone in their language, and order from it. No app installation required.
         - website: https://www.gonnaorder.com
           documentation: /apps/gonnaorder
           logo: gonnaorder.png
@@ -463,12 +469,6 @@ content:
           title: Loca'Touch
           description: Loca'Touch offers self ordering kiosks for leasing or sale. Customers can order and pay autonomously, and receive complementary products suggestions during purchase. Regular system software updates.
           additional_info:
-        - website: https://www.mylemonade.fr
-          documentation: /apps/my-lemonade
-          logo: my-lemonade.png
-          country:
-          title: My Lemonade
-          description: My Lemonade is a table ordering solution. Customers flash the QR code or use the NFC tag placed on their table, access the menu on their smartphone in their language, and order from it. No app installation required.
         - website: https://mynober.nl/en/home-2
           documentation: /apps/mynober
           logo: mynober.png
