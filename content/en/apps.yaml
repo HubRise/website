@@ -632,6 +632,12 @@ content:
           country:
           title: Dismatch
           description: Dismatch is an independent home delivery service offered by Smood, which covers the entire Swiss market. With Dismatch, non-Smood partners can benefit from their delivery service.
+        - website: https://quickup.uk
+          documentation: /apps/quick-up
+          logo: quick-up.png
+          country: GB
+          title: Quick Up
+          description: Quick Up is an on-demand delivery service for restaurants, grocery stores, and other local businesses. It offers route optimisation and real-time driver geolocation, helping reduce waiting times and control delivery costs.
         - website: https://stuart.com
           documentation: /apps/stuart
           logo: stuart.png
