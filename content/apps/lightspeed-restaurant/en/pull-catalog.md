@@ -68,12 +68,7 @@ Lightspeed supports skus, but not products. For every item in the Lightspeed cat
 
 Lightspeed supports groups of items, which are sent to HubRise as option lists and options.
 
-The HubRise option type is selected according to the following rule:
-
-- A group with selection policy **Select exactly one item** is converted to a single-choice option list.
-- A group with any other selection policy is converted to a multiple-choice option list.
-
-![Selection policy in the Lightspeed back office](./images/021-2x-lightspeed-selection-policy.png)
+![Selection policy in the Lightspeed back office](./images/021-2x-lightspeed-selection-rules.png)
 
 ### Lightspeed Production Instructions
 
