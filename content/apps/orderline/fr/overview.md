@@ -24,7 +24,7 @@ Les commandes peuvent provenir de diverses solutions telles que :
 - Solutions de commande en ligne pour les commerces et les restaurants.
 - Plateformes de livraison de repas à domicile.
 - Kiosques de commande en libre-service.
-- Applications de commande de table.
+- Applications de commande à table.
 
 OrderLine aide les commerçants, restaurants et franchisés à gérer leurs commandes lorsque leur logiciel de caisse n'est pas intégré avec HubRise. OrderLine prend en charge les commandes en livraison, sur place et en emporté. Il se connecte à des points de vente HubRise individuels.
 
