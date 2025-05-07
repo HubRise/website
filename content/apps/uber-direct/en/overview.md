@@ -9,9 +9,9 @@ meta:
 app_info:
   category: Delivery Management
   availability: United Kingdom, France, and other Uber Eats markets
-  price_range: 
+  price_range:
   website: https://merchants.ubereats.com/fr/en/services/uber-direct
-  contact: 
+  contact:
 ---
 
 ---
@@ -19,7 +19,6 @@ app_info:
 **IMPORTANT NOTE**: Full documentation of this integration will be available soon.
 
 ---
-
 
 ## Description
 
@@ -37,10 +36,7 @@ Connecting Uber Direct to HubRise allows your delivery service provider to:
 - Pull customer information from HubRise.
 - Synchronise final delivery time with HubRise.
 
-
-![Diagram of the connection flow between Ubner Direct, Uber Direct Bridge, and HubRise](./images/000-2x-connection-diagram.png)
-
-Deliveroo Bridge can be connected to HubRise from the HubRise back office.
+Uber Direct Bridge can be connected to HubRise from the HubRise back office.
 
 ## Why Connect?
 
