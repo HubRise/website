@@ -1,9 +1,10 @@
 ---
-title: Connection to HubRise
+title: Connect to HubRise
+path_override: connect-hubrise
 position: 2
 layout: documentation
 meta:
-  title: Connection to HubRise | Mailchimp | HubRise
+  title: Connect to HubRise | Mailchimp | HubRise
   description: Instructions on connecting Mailchimp with HubRise for your EPOS to work with other apps as a cohesive whole. Connect apps and synchronise your data.
 ---
 
@@ -11,7 +12,7 @@ Connecting Mailchimp to HubRise can be done with a few simple steps.
 
 ---
 
-**IMPORTANT NOTE:** If you don't already have a HubRise account, start by registering on the [HubRise Signup Page](https://manager.hubrise.com/signup). It only takes a minute!
+**IMPORTANT NOTE:** If you do not have a HubRise account yet, register on our [Signup Page](https://manager.hubrise.com/signup). It only takes a minute!
 
 ---
 
@@ -39,10 +40,10 @@ Once your HubRise location is connected to Mailchimp, customer information is pu
 
 ---
 
-**IMPORTANT NOTE**: For every location in HubRise, you will need to perform a new connection to Mailchimp. Once all connections are set, you need to configure Mailchimp Bridge for contacts to be synced. For more information, see [Configuration](/apps/mailchimp/configuration/).
+**IMPORTANT NOTE:** For every location in HubRise, you will need to perform a new connection to Mailchimp. Once all connections are set, you need to configure Mailchimp Bridge for contacts to be synced. For more information, see [Configuration](/apps/mailchimp/configuration).
 
 ---
 
 ## Disconnect Mailchimp
 
-In order to disconnect your HubRise location from Mailchimp, follow [Disconnect Apps](/docs/connections/#disconnect-app) instruction on the HubRise User guide.
+In order to disconnect your HubRise location from Mailchimp, follow [Disconnect Apps](/docs/connections#block-or-disconnect) instruction on the HubRise User guide.

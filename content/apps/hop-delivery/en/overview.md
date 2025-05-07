@@ -1,23 +1,23 @@
 ---
 title: Overview
+path_override: "/"
 position: 1
 layout: documentation
 meta:
   title: Overview | Hop Delivery | HubRise
   description: Hop Delivery overview, reasons for connecting Hop Delivery to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 gallery:
-path_override: /
 app_info:
   category: Food Ordering Platforms
   availability: Geneva, Switzerland
   price_range:
   website: https://www.hop.delivery
-  contact: +41 22 518 70 47 / hello@hop.delivery
+  contact: "+41 22 518 70 47 / hello@hop.delivery"
 ---
 
 ---
 
-**IMPORTANT NOTE:** This documentation is available <Link to="/fr/apps/hop-delivery" addLocalePrefix={false}>in French only</Link>.
+**IMPORTANT NOTE:** This documentation is available <Link href="/fr/apps/hop-delivery">in French only</Link>.
 
 ---
 
@@ -31,6 +31,7 @@ Connecting Hop Delivery to HubRise allows your ordering and delivery platform t
 
 - Push orders into HubRise, including order status.
 - Push customer information into HubRise.
+- Pull a catalog from HubRise.
 
 ---
 
@@ -44,7 +45,7 @@ Hop Delivery can be connected to HubRise via the Hop Delivery support line. Th
 
 By connecting Hop Delivery to HubRise, your ordering and delivery platform can communicate with your other everyday applications. Send Hop Deliver online orders to your EPOS, to an autonomous printer, a Kitchen Display Screen, or to your inventory management solution.
 
-Thanks to HubRise, you can synchronise your menu, your customer information and your orders with your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management solutions or delivery services, eMarketing (SMS/emailing) solutions, business intelligence, inventory management and customer loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our [Apps page](/apps).
+With HubRise, you can synchronise your menu, customer information, and orders between your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats, and Just Eat), delivery management solutions or delivery services, eMarketing solutions (SMS/emailing), business intelligence, inventory, and customer loyalty systems, and much more. The number of compatible applications increases every month. To discover the apps you can connect, visit our [Apps page](/apps).
 
 ## Prerequisites
 

@@ -1,5 +1,6 @@
 ---
 title: API Reference
+path_override: api-reference
 position: 2
 layout: documentation
 meta:

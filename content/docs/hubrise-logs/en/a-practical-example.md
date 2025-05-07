@@ -1,5 +1,6 @@
 ---
 title: A Practical Example
+path_override: a-practical-example
 position: 3
 layout: documentation
 meta:
@@ -49,7 +50,7 @@ The last node at the top level of the order is the service type chosen by the cu
 We broke down the original order into three main nodes of information, and for each of them we listed the various features that they must have. We organised information in a hierarchical way.
 
 To make the structure of the order even clearer, we can draw the following diagram.
-![JSON Information Structure](../images/003-en-2x-sample-order.png)
+![JSON Information Structure](./images/003-2x-sample-order.png)
 
 The main nodes at the top of the order are "items", “payment”, and “service type”. From each of the nodes stems a connection to increasingly detailed levels of information.
 

@@ -1,0 +1,118 @@
+{
+  "apps": {
+    "view_documentation": "Consulter la documentation",
+    "visit_website": "Accéder au site de l'éditeur",
+    "search_input_placeholder": "Chercher une app par nom",
+    "no_results_message": "Aucune application trouvée"
+  },
+  "blog": {
+    "hero": {
+      "title": "Le blog HubRise",
+      "description": "Nouvelles apps, évolutions de l'API et cas d'utilisation de HubRise"
+    },
+    "other_posts": "Autres articles",
+    "title": "Blog"
+  },
+  "documentation": {
+    "app_info": {
+      "availability": "Disponibilité",
+      "category": "Catégorie",
+      "contact": "Contact",
+      "price_range": "Gamme de prix",
+      "website": "Site Internet"
+    },
+    "language_warning": {
+      "en": "Cette documentation est disponible en anglais uniquement.",
+      "fr": "Cette documentation est disponible en français uniquement."
+    }
+  },
+  "layout": {
+    "404": {
+      "meta": {
+        "title": "404 - Page non trouvée"
+      },
+      "title": "Oups ! 🙃",
+      "content": {
+        "text_before_link": "La page que vous cherchez n'est pas sur notre carte. Mais ne vous inquiétez pas, de nombreuses aventures vous attendent.",
+        "text_link": "Retournez à la page d'accueil",
+        "text_after_link": "pour continuer votre voyage.",
+        "signature": "- L'équipe HubRise"
+      }
+    },
+    "header": {
+      "buttons": {
+        "signup": "Créer un compte",
+        "login": "Connexion"
+      }
+    },
+    "footer": {
+      "contacts": {
+        "title": "Contact",
+        "email": "contact@hubrise.com"
+      },
+      "copyright": "Copyright © {{ year }} HubRise"
+    }
+  },
+  "misc": {
+    "feedback": {
+      "blog": {
+        "title": "Commentaires sur cet article",
+        "part_1": "Faites nous part de vos commentaires",
+        "part_2": "en nous envoyant un message",
+        "part_3": "Nous vous répondrons."
+      },
+      "documentation": {
+        "title": "Commentaires sur cette page",
+        "description": "Si vous avez repéré une erreur ou souhaitez améliorer cette page, vous pouvez :",
+        "options": {
+          "send_email": "Nous envoyer un email",
+          "edit_page": "Ou éditer cette page et nous soumettre un Pull Request"
+        }
+      }
+    },
+    "month_list": [
+      "Janvier",
+      "Février",
+      "Mars",
+      "Avril",
+      "Mai",
+      "Juin",
+      "Juillet",
+      "Août",
+      "Septembre",
+      "Octobre",
+      "Novembre",
+      "Décembre"
+    ],
+    "colon": " :",
+    "read_more": "Lire la suite",
+    "posted_on": "Publié le",
+    "by": "par",
+    "success": "Succès",
+    "failure": "Échec",
+    "messages": {
+      "email_send_success": "Votre message a bien été envoyé et nous allons vous répondre rapidement",
+      "email_send_failure": "Zut... Une erreur s'est produite durant l'envoi de votre message. Vous pouvez réessayer ou nous écrire directement sur contact@hubrise.com"
+    }
+  },
+  "forms": {
+    "validation": {
+      "min": "Ce champ doit contenir une valeur d'au moins {{ length }} caractères.",
+      "required": "Ce champ est obligatoire.",
+      "email": "L'adresse email est invalide.",
+      "email_required": "Veuillez indiquer une adresse email.",
+      "message_min": "Votre message doit contenir au moins {{ length }} caractères.",
+      "message_required": "Un message vide ?",
+      "name_required": "Veuillez indiquer votre nom."
+    },
+    "contact": {
+      "button": "Envoyer",
+      "modal_title": "Contactez-nous",
+      "placeholders": {
+        "email": "Votre email",
+        "message": "Votre message",
+        "name": "Votre nom"
+      }
+    }
+  }
+}

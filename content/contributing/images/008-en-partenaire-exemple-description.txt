@@ -1,3 +1,0 @@
-Vincent is a front/back end Full Stack Developer, Graphic Designer and Web Integrator. He uses HTML5, CSS3, BOOTSTRAP, LESS, and develops in PHP5 (object) / MySQL. He creates bespoke or WordPress turnkey web sites with a personalized administration interface and HubRise integration.
-
-Creation of a PHP gateway combined with HTML/SASS integration to make your website communicate with your Hubrise account: product catalogue, customer listing and order management.

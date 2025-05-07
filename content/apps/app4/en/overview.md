@@ -1,5 +1,6 @@
 ---
 title: Overview
+path_override: "/"
 position: 1
 layout: documentation
 meta:
@@ -8,7 +9,6 @@ meta:
 gallery:
   - __gallery-001.png
   - __gallery-002.png
-path_override: /
 app_info:
   category: Online Ordering
   availability: United Kingdom
@@ -29,7 +29,7 @@ Connecting App4 to HubRise allows the online ordering solution to:
 
 - Push orders into HubRise, including order status.
 - Push customer information into HubRise.
-- Pull the menu from a HubRise catalog.
+- Pull a catalog from HubRise, with variants support.
 
 App4 can be connected to HubRise via the App4 support line.
 

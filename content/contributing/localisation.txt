@@ -1,5 +1,0 @@
-fr-FR source
-20210324 Référencer votre solution sur HubRise - en_GB to fr_FR (translation by Guy Parker)
-
-en-GB Source
-20210416 How to contribute - en_GB to fr_FR (translation by Laurent Hiaa)

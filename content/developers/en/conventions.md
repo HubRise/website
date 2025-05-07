@@ -1,5 +1,6 @@
 ---
 title: Conventions and special cases
+path_override: conventions
 position: 4
 layout: documentation
 meta:
@@ -15,19 +16,24 @@ This page attempts to be a comprehensive list of the most widespread conventions
 
 ## General conventions
 
-### Tags on categories
+### Tags on products
 
-| Tag      | Description                                                                                                          |
-| -------- | -------------------------------------------------------------------------------------------------------------------- |
-| `hidden` | The category is hidden, but its products are available. Typically used to hide products only available within deals. |
+The following tag can be set at the product level.
+
+| Tag          | Description                                                                                                                     |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| `deal_only`  | The product is only available as part of a deal.                                                                                |
+| `deposit_cc` | The product requires a deposit. `cc` is an amount in cents, e.g. `deposit_25`. The deposit is charged on top of the item price. |
+
+For more information on the `deposit_cc` tag, read our <Link href="/blog/bottle-deposits">blog post on deposits</Link>.
 
 ### Tags on SKUs
 
-The following tag can be set at the SKU level:
+The following tags can be set at the SKU level.
 
-| Tag         | Description                                  |
-| ----------- | -------------------------------------------- |
-| `deal_only` | The SKU is only available as part of a deal. |
+| Tag          | Description                                                                                                                 |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| `deposit_cc` | Same as the product tag, but applies to a specific SKU. `cc` is an amount in cents. When set, it overrides the product tag. |
 
 ## Conventions for restaurants
 
@@ -101,7 +107,7 @@ Typical uses:
 
 </details>
 
-### Half & half products
+### Half & half products {#half-half-products}
 
 Half & half products are a common occurrence in the restaurant industry, especially the pizzeria industry. A half & half product lets customers mix two recipes, and customise each of them separately. Think of a half & half pizza as a normal size pizza split in two halves, each half having its own ingredients.
 
@@ -186,9 +192,9 @@ A half & half product is a product with one or more skus. It has the following f
 
 The following custom field can be set on a location:
 
-| Custom field         | Encoding                                                    | Description                                                       |
-| -------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------- |
-| `delivery.door_time` | [decimal](/developers/api/general-concepts/#decimal-values) | Minimum time in minutes between order creation and customer door. |
+| Custom field         | Encoding                                                   | Description                                                       |
+| -------------------- | ---------------------------------------------------------- | ----------------------------------------------------------------- |
+| `delivery.door_time` | [decimal](/developers/api/general-concepts#decimal-values) | Minimum time in minutes between order creation and customer door. |
 
 Typical uses:
 
@@ -215,20 +221,28 @@ Typical uses:
 
 ### Orders custom fields
 
+---
+
+**IMPORTANT NOTE:** Orders delivery custom fields have been deprecated in favor of the [Delivery resource](/developers/api/deliveries).
+
+---
+
 The following custom fields can be attached to an order to provide details about the delivery:
 
-| Custom field                  | Encoding | Description                                                                                                                       |
-| ----------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| `delivery.driver_pickup_time` | `string` | The time in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601) format when the driver is expected to pick up the delivery. |
-| `delivery.tracking_url`       | `string` | URL of the page showing the status of the delivery.                                                                               |
-| `delivery.driver.first_name`  | `string` | Driver's first name.                                                                                                              |
-| `delivery.driver.phone`       | `string` | Driver's phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).                                                     |
+| Custom field                                                | Encoding                                                 | Description                                                                   |
+| ----------------------------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| `delivery.driver_assigned_time` <Label type="deprecated" /> | [Time](/developers/api/general-concepts#dates-and-times) | The time the driver was assigned the delivery.                                |
+| `delivery.driver_pickup_time` <Label type="deprecated" />   | [Time](/developers/api/general-concepts#dates-and-times) | The time the driver is expected to pick up the delivery.                      |
+| `delivery.tracking_url` <Label type="deprecated" />         | `string`                                                 | URL of the page showing the status of the delivery.                           |
+| `delivery.driver.first_name` <Label type="deprecated" />    | `string`                                                 | Driver's first name.                                                          |
+| `delivery.driver.phone` <Label type="deprecated" />         | `string`                                                 | Driver's phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164). |
 
-Typical uses:
+Typical workflow:
 
-- The delivery solution sets the `delivery.driver_pickup_time` custom field, and it is displayed in the EPOS for the staff to prepare the order in time.
-- The delivery solution sets the `delivery.driver.first_name` and `delivery.driver.phone` custom fields, and they are displayed in the EPOS to provide the staff with a convenient way to reach out to the driver.
-- The delivery solution sets the `delivery.tracking_url` custom fields, and it is displayed in the ordering application for customers to track their delivery.
+- An order is placed from an ordering solution.
+- The delivery solution is notified about the order, via a webhook. The delivery solution sets the `delivery.xxx` custom fields.
+- The EPOS is informed about the order update via a webhook. It displays `delivery.driver_pickup_time` for the staff to prepare the order in time, and `delivery.driver.first_name` and `delivery.driver.phone` for the staff to reach out to the driver if needed.
+- The ordering solution is also informed about the order update, and it displays a link to `delivery.tracking_url`, so the customer can track their delivery.
 
 <details>
 
@@ -243,6 +257,7 @@ Typical uses:
   ...,
   "custom_fields": {
     "delivery": {
+      "driver_assigned_time": "2021-03-02T12:31:20+02:00",
       "driver_pickup_time": "2021-03-02T12:55:00+02:00",
       "tracking_url": "https://delivery-service.com/track/664566410894-dbfqs",
       "driver": {
@@ -258,16 +273,47 @@ Typical uses:
 
 ## Conventions for EPOS
 
+### Location custom fields
+
+The following custom field can be attached to a location:
+
+| Custom field        | Encoding | Description                                                                                     |
+| ------------------- | -------- | ----------------------------------------------------------------------------------------------- |
+| `epos.push_catalog` | `number` | When this value changes, the EPOS pushes its catalog to HubRise. Only works for supported EPOS. |
+
+Typical uses:
+
+- The `epos.push_catalog` custom field triggers the EPOS to push its catalog to HubRise when its value changes, applicable for supported EPOS systems. It is recommended to increment this value or set it to 0 the first time.
+
+<details>
+
+<summary>Example of a location with EPOS information</summary>
+
+```json
+{
+  "id": "3r4s3-1",
+  "name": "Paris",
+  ...,
+  "custom_fields": {
+    "epos": {
+      "push_catalog": 11
+    }
+  }
+}
+```
+
+</details>
+
 ### Order custom fields
 
 The following custom fields can be attached to an order:
 
-| Custom field           | Encoding         | Description                                                                                         |
-| ---------------------- | ---------------- | --------------------------------------------------------------------------------------------------- |
-| `epos.order_id`        | `string`         | Order identifier on the EPOS.                                                                       |
-| `epos.rejection`       | (see&nbsp;below) | Information about an order rejection. Can only be present if the order status is `rejected`.        |
-| `epos.rejection.cause` | `string`         | Short description of the problem. Ideally includes resolution steps. Use Markdown syntax for links. |
-| `epos.rejection.info`  | `object`         | Free-format JSON object containing information about the problem.                                   |
+| Custom field           | Encoding         | Description                                                                                                                    |
+| ---------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `epos.order_id`        | `string`         | Order identifier on the EPOS.                                                                                                  |
+| `epos.rejection`       | (see&nbsp;below) | Information about an order rejection. Can only be present if the order status is `rejected`.                                   |
+| `epos.rejection.cause` | `string`         | Short description of the problem. Ideally includes resolution steps. Use Markdown syntax for links, code blocks, and emphasis. |
+| `epos.rejection.info`  | `object`         | Free-format JSON object containing information about the problem.                                                              |
 
 Typical uses:
 

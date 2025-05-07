@@ -1,5 +1,6 @@
 ---
 title: Profile and Password
+path_override: profile-password
 position: 6
 layout: documentation
 meta:
@@ -20,29 +21,48 @@ To update your User Profile:
 
 ---
 
-**IMPORTANT NOTE**: When changing your email address, verify that it is accurate and able to receive emails. Otherwise password resets and other notifications will not work.
+**IMPORTANT NOTE:** When changing your email address, verify that it is accurate and able to receive emails. Otherwise password resets and other notifications will not work.
 
 ---
 
-![HubRise User Profile](../images/054-en-2x-profile.png)
+![HubRise User Profile](./images/054-2x-profile.png)
 
 ## Update Password
 
 To update your password:
 
 1. Click your name in the top right corner of HubRise the back office, then click **Profile**.
-1. Enter your current password in the **Current password** field.
-1. Enter your new password in **New password** and **Confirm new password** fields. Both fields must match.
-1. Click **Update**.
+2. Click **Change password**.
+3. Enter your current password in the **Current password** field.
+4. Enter your new password in **New password** and **Confirm new password** fields. Both fields must match.
+5. Click **Update**.
 
-![HubRise Change password](../images/055-en-2x-change-password.png)
+---
+
+**IMPORTANT NOTE:** If you suspect your password has been compromised, it is strongly recommended that you logout from all devices after updating your password. Refer to [Logout From All Devices](#logout-from-all-devices) below for more information.
+
+---
+
+![HubRise Change password](./images/055-2x-change-password.png)
+
+## Logout From All Devices {#logout-from-all-devices}
+
+If your HubRise account is logged in on multiple devices, you can log out from all of them at once. This is useful if you have lost a device, or if you want to prevent someone else from accessing your account.
+
+To log out from all devices:
+
+1. Click your name in the top right corner of HubRise the back office, then click **Profile**.
+2. Click **Logout from all devices**.
+3. Click **Confirm**.
+
+This will instantly log you out from all devices where your HubRise account is active. You will need your password to log in again.
 
 ## User Permissions
 
 The Profile page includes information on your User Profile **Permissions**. This includes:
 
-- The **Account** and **Location** that you have access to.
-- The **Role** you have been assigned for the Account or Location. It could be a Manager or an Admin role.
+- The **ACCOUNT** and **LOCATION** that you have access to.
+- The **ROLE** you have been assigned for the Account or Location. It could be a Manager or an Admin role.
 
 To remove your access to an Account or a Location:
 
@@ -51,20 +71,20 @@ To remove your access to an Account or a Location:
 
 ---
 
-**IMPORTANT NOTE**: You cannot remove yourself from an Account if you are the only Admin. If you attempt to do so, an error message will be displayed. If you need to remove yourself as the last Admin for an Account, create another user as an Admin for that Account, then remove yourself.
+**IMPORTANT NOTE:** You cannot remove yourself from an Account if you are the only Admin. If you attempt to do so, an error message will be displayed. If you need to remove yourself as the last Admin for an Account, create another user as an Admin for that Account, then remove yourself.
 
 ---
 
-For more information, see [Permissions](/docs/permissions/).
+For more information, see [Permissions](/docs/permissions).
 
 ## Create an Account
 
 To create a new Account:
 
 1. Click your name in the top right corner of HubRise the back office, then click **Profile**.
-1. In the **Permissions** section, click **Create Account**. For more information, see [Create an Account](/docs/account#create-an-account).
+1. In the **Permissions** section, click **Create Account**. For more information, see [Create an Account](/docs/account#create-account).
 
-![HubRise My Permissions](../images/056-en-2x-my-permissions.png)
+![HubRise My Permissions](./images/056-2x-my-permissions.png)
 
 ## Reset a Lost Password
 
@@ -72,8 +92,8 @@ If you are a registered user but you have lost or forgotten your password, go to
 
 ---
 
-**IMPORTANT NOTE**: If you do not see the password reset instructions in your email's Inbox folder within a few minutes, refresh your Inbox and check your Spam or Trash folders.
+**IMPORTANT NOTE:** If you do not see the password reset instructions in your email's Inbox folder within a few minutes, refresh your Inbox and check your Spam or Trash folders.
 
 ---
 
-![Reset password screen](../images/002-en-reset-password.png)
+![Reset password screen](./images/002-reset-password.png)

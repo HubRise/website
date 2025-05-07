@@ -1,5 +1,6 @@
 ---
 title: Troubleshooting
+path_override: troubleshooting
 position: 7
 layout: documentation
 meta:
@@ -11,7 +12,7 @@ meta:
 
 If a product or option ref code is missing or not recognised on an order that HubRise sends to MyOrderBox, the following note is included at the bottom of the order receipt.
 
-![Invalid ref code in MyOrderBox receipt](../images/001-invalid-ref-code.png)
+![Invalid ref code in MyOrderBox receipt](./images/001-invalid-ref-code.png)
 
 To resolve the issue, check the ref code of the missing product or option. See [Map Ref Codes](/apps/myorderbox/map-ref-codes).
 

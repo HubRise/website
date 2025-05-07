@@ -1,5 +1,6 @@
 ---
 title: How Do I Connect My Aquila Site to an Existing HubRise Account?
+path_override: connect-site-to-existing-hubrise-account
 position: 1
 layout: documentation
 meta:

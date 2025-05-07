@@ -1,16 +1,16 @@
 ---
 title: Overview
+path_override: "/"
 position: 1
 layout: documentation
 meta:
   title: Overview | Shopify | HubRise
   description: Shopify overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 gallery:
-  - __gallery-en-001.png
-  - __gallery-en-002.png
-  - __gallery-en-003.png
-  - __gallery-en-004.png
-path_override: /
+  - __gallery-001.png
+  - __gallery-002.png
+  - __gallery-003.png
+  - __gallery-004.png
 app_info:
   category: Online Ordering
   availability: Worldwide
@@ -29,19 +29,18 @@ In 2020, it reported having more than 1,000,000 websites operating in approximat
 
 ## Integration Features
 
-Connecting Shopify to HubRise allows Shopify to:
+Connecting Shopify Bridge allows HubRise to:
 
-- Push orders into HubRise.
-- Pull order status from HubRise into Shopify.
-- Push customer information into HubRise.
-- Pull a product catalog from HubRise.
-- Synchronise inventory with HubRise.
+- Pull orders from Shopify, including order status.
+- Pull customer information from Shopify.
+- Push a catalog into Shopify, with variants support.
+- Synchronise inventory with Shopify.
 
 ## Why Connect?
 
 Shopify can be connected to HubRise for your website and other apps you use every day to work as a cohesive whole. It could be your EPOS or your preferred marketing solution. Connecting with HubRise allows you to sync your product catalog, your stock, your customer and order information.
 
-Thanks to HubRise, synchronise your menu, your customer and order information with your EPOS, online ordering, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management, delivery services, eMarketing (SMS/emailing), business intelligence, stock management, loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our [Apps page](/apps).
+With HubRise, you can synchronise your menu, customer information, and orders between your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats, and Just Eat), delivery management solutions or delivery services, eMarketing solutions (SMS/emailing), business intelligence, inventory, and customer loyalty systems, and much more. The number of compatible applications increases every month. To discover the apps you can connect, visit our [Apps page](/apps).
 
 ## Prerequisites
 

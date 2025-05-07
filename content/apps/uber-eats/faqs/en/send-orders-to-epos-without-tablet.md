@@ -1,6 +1,7 @@
 ---
 title: Can Orders Be Sent Directly To My EPOS Without Using Uber Eats Tablets?
-position: 2
+path_override: send-orders-to-epos-without-tablet
+position: 1
 layout: documentation
 meta:
   title: Sending orders to EPOS directly | Uber Eats FAQs | HubRise

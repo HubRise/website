@@ -1,5 +1,6 @@
 ---
 title: Terminology
+path_override: terminology
 position: 7
 layout: documentation
 meta:
@@ -7,7 +8,16 @@ meta:
   description: Correspondence table showing terms used by Just Eat Flyt and those used on HubRise for the same concept. Connect apps and synchronise your data.
 ---
 
-## Correspondence table
+## Just Eat Terms
+
+The following table explains the terms that are specific to Just Eat Flyt.
+
+| Term     | Description                                        |
+| -------- | -------------------------------------------------- |
+| Orderpad | Just Eat's official app to manage incoming orders. |
+| Scoober  | Just Eat delivery service.                         |
+
+## Correspondence Table
 
 HubRise and Just Eat Flyt each use their own terminology. The same concept can therefore have a different designation in each solution. The correspondence table below shows these differences.
 
@@ -20,6 +30,6 @@ HubRise and Just Eat Flyt each use their own terminology. The same concept can t
 
 Just Eat Flyt offers three types of services to its customers:
 
-- **Platform delivery**: The platform (Just Eat, MenuLog, or SkipTheDishes) dispatches a driver to collect the order from the restaurant. Available in a limited number of markets and cities.
+- **Platform delivery**: Just Eat dispatches a driver to collect the order from the restaurant. Available in a limited number of markets and cities.
 - **Restaurant delivery**: The restaurant is responsible for delivering the order.
 - **Takeaway**: The customer collects the order from the restaurant.

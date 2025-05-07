@@ -1,5 +1,6 @@
 ---
 title: How Can I Encode Custom Metadata In An Order?
+path_override: encode-custom-metadata
 position: 1
 layout: documentation
 meta:

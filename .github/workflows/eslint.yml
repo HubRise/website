@@ -1,0 +1,26 @@
+name: eslint
+on: push
+
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18.17.1
+          cache: 'yarn'
+
+      - name: Install JS dependencies
+        run: yarn install
+
+      - name: Use the development environment
+        run: cp .env.development .env
+
+      - name: Run linter
+        run: yarn eslint

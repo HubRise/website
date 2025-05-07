@@ -1,5 +1,6 @@
 ---
 title: How Do I Pay For My First Invoice?
+path_override: pay-first-invoice
 position: 15
 layout: documentation
 meta:
@@ -32,7 +33,7 @@ To verify your billing information at Account level, follow these steps:
 1. Fill in the information required under **Billing details**.
 1. Click **Update**.
 
-Follow the exact same steps to verify your billing information for payment at Location level but click **Modify location**. For step by step information, see [Account or Location Payments](/docs/payment#billing-information-at-location-level).
+Follow the exact same steps to verify your billing information for payment at Location level but click **Modify location**. For step by step information, see [Account or Location Payments](/docs/payment#account-or-location-payments).
 
 ## Pay Online
 
@@ -41,7 +42,7 @@ When your payment method is set up, the first request for payment should be char
 1. In your HubRise back office, click on **SETTINGS**.
 2. In the **Requests for payment** section, review the details of the outstanding payment. You can see the description of the payment, the payment deadline, and the total amount due. Depending on your setup, requests for payment might be available at Account or Location levels.
 3. Click the <InlineImage width="17" height="17">![Cart icon](../../images/068-cart-icon.png)</InlineImage> cart icon under **PAY**.
-   ![Pay your first invoice for an outstanding HubRise invoice](../../images/069-en-outstanding-payment.png)
+   ![Pay your first invoice for an outstanding HubRise invoice](./images/069-outstanding-payment.png)
 4. Follow the instructions to complete the payment.
 
 ---
@@ -50,4 +51,4 @@ When your payment method is set up, the first request for payment should be char
 
 ---
 
-Subsequent payments to HubRise will be automated until you change usage plan or your payment method expires. For more information about HubRise usage plans, see [Usage](/docs/usage-plan/).
+Subsequent payments to HubRise will be automated until you change usage plan or your payment method expires. For more information about HubRise usage plans, see [Usage and Plans](/docs/usage-plan).

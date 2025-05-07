@@ -1,10 +1,11 @@
 ---
-title: FAQs
+title: FAQ
+path_override: faq
 position: 7
 layout: documentation
 meta:
-  title: FAQs | Solution | HubRise
-  description: Questions et réponses fréquemment posées sur l'intégration de Solution avec HubRise.
+  title: FAQ | SOLUTION | HubRise
+  description: FAQ sur la connexion SOLUTION à HubRise afin que votre logiciel de caisse fonctionne harmonieusement avec d'autres apps. Connectez les apps et synchronisez vos données.
 ---
 
-- <Link to="/apps/solution/faqs/connecter-plusieurs-restaurants/">Comment connecter plusieurs restaurants&nbsp;?</Link>
+- <Link href="/apps/SOLUTION/faqs/connecting-multiple-instances/">Comment puis-je connecter plusieurs instances ?

@@ -17,7 +17,13 @@ sections:
     links:
       - title: User Guide
         to: /docs
+      - title: General Terms and Conditions
+        to: /legal/general-terms-and-conditions
+      - title: Legal Notices
+        to: /legal/legal-notices
   - title: Company
     links:
+      - title: Testimonials
+        to: /testimonials
       - title: Branding Guidelines
         to: /branding

@@ -1,5 +1,6 @@
 ---
 title: Can I Receive GPS Coordinates For My Customer's Delivery Address?
+path_override: gps-coordinates
 position: 1
 layout: documentation
 meta:

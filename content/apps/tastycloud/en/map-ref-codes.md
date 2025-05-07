@@ -1,5 +1,6 @@
 ---
 title: Map Ref Codes
+path_override: map-ref-codes
 position: 3
 layout: documentation
 meta:
@@ -11,7 +12,7 @@ Once your TastyCloud website is connected with HubRise, some configuration is re
 
 For example, if an EPOS is connected to your HubRise Location, you will need to associate items on TastyCloud with the corresponding items on your EPOS. This process is called "ref code mapping" and it must be done manually from the Tasty Cloud back office, as explained below.
 
-## Products and Options
+## Products and Options {#products-and-options}
 
 ---
 
@@ -56,15 +57,15 @@ Follow the instructions in the previous section. In the **Mapping des produits**
 
 ## Discounts (Promotions)
 
-Promotions in TastyCloud are called discounts in HubRise. Discounts cannot be mapped on TastyCloud, which means that they are sent to HubRise without a ref code. This may create issues with some EPOS systems. Refer to your connected EPOS documentation on the HubRise website to verify if this works for you, or contact TastyCloud support.
+Promotions in TastyCloud are called discounts in HubRise. Discounts cannot be mapped on TastyCloud, which means that they are sent to HubRise without a ref code. This may create issues with some EPOS systems. Refer to your EPOS documentation on the HubRise website to verify if this works for you, or contact TastyCloud support.
 
 ## Payment Methods
 
-TastyCloud offers various payment methods, including cash and online payment. TastyCloud informs HubRise of the selected payment method, but it does not specify the corresponding ref code required by some EPOS. Refer to your connected EPOS documentation on the HubRise website to verify if this works for you, or contact TastyCloud support.
+TastyCloud offers various payment methods, including cash and online payment. TastyCloud informs HubRise of the selected payment method, but it does not specify the corresponding ref code required by some EPOS. Refer to your EPOS documentation on the HubRise website to verify if this works for you, or contact TastyCloud support.
 
 ## Service Types
 
-Service Types such as Delivery, Collection or Eat in are supported. TastyCloud does not associate ref codes to service types, but this might be required for certain EPOS systems. Refer to your connected EPOS documentation on the HubRise website to verify if this works for you, or contact TastyCloud support.
+Service Types such as Delivery, Collection or Eat in are supported. TastyCloud does not associate ref codes to service types, but this might be required for certain EPOS systems. Refer to your EPOS documentation on the HubRise website to verify if this works for you, or contact TastyCloud support.
 
 ## Charges
 

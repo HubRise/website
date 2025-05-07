@@ -1,5 +1,6 @@
 ---
 title: Organising Information
+path_override: organising-information
 position: 2
 layout: documentation
 meta:
@@ -34,7 +35,7 @@ For example, consider the sentence "The pizza margherita has a size of 12 inches
 
 The following diagram illustrates how the information in this example is organised in three different levels.
 
-![JSON Objects](../images/001-en-2x-nested-json-object.png)
+![JSON Objects](./images/001-2x-nested-json-object.png)
 
 The main key, "pizza margherita", is attached to a value that is actually a JSON object. Notice the curly bracket above the two keys, “size” and “price”, and their relative values.
 
@@ -57,7 +58,7 @@ In some cases, a single key can have multiple values. For example, consider the 
 
 The situation is illustrated in the following diagram.
 
-![JSON List of Elements](../images/002-en-2x-json-list.png)
+![JSON List of Elements](./images/002-2x-json-list.png)
 
 The main node, "pizza margherita", is still linked to a JSON object that has a single key, “ingredients”. This key, in turn, is associated with a _list_ of two values: Notice the square bracket above them in the diagram.
 

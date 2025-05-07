@@ -1,6 +1,7 @@
 ---
 title: Video Guide
-position: 4
+path_override: video-guide
+position: 5
 layout: documentation
 meta:
   title: Video Guide | HubRise
@@ -43,4 +44,4 @@ ffmpeg -i source.mov -r 15 -f gif - | gifsicle  > target.gif
 
 ## Naming Convention
 
-File naming convention for videos follow the exact same logic as images. For more information, see [Image Naming Convention](/contributing/screenshots-guide/#naming-convention).
+File naming convention for videos follow the exact same logic as images. For more information, see [Image Naming Convention](/contributing/screenshots-guide#naming-convention).

@@ -11,17 +11,12 @@ spec:
     spec:
       containers:
         - name: website
+
           resources:
             requests:
-              cpu: 30m
-              memory: 80Mi
+              cpu: 300m
+              memory: 1000Mi
             limits:
-              cpu: 200m
-              memory: 200Mi
-          env:
-            - name: SENTRY_DSN
-              value: https://96b4d1defd7648308c6e30f8a3470cfd@sentry.io/1776244
-            - name: RECAPTCHA_SITE_KEY
-              value: 6LfjbNYUAAAAAPx_tCv_YyhueK2JIjf58b2HGU8d
-            - name: CONTACT_MESSAGE_URL
-              value: https://manager.hubrise.com/api/contact_message
+              # We need some CPU for short periods of time after startup, when optimised images are not yet cached.
+              cpu: 1000m
+              memory: 1500Mi

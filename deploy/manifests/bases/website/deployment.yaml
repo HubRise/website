@@ -26,12 +26,21 @@ spec:
         - name: website
           image: hubrise/website
 
+          envFrom:
+            - secretRef:
+                name: website-env
+
           readinessProbe:
             httpGet:
-              path: /
+              path: /api/live
               port: 80
             initialDelaySeconds: 10
             periodSeconds: 5
 
-  revisionHistoryLimit: 2
+          livenessProbe:
+            httpGet:
+              path: /api/live
+              port: 80
+            periodSeconds: 15
 
+  revisionHistoryLimit: 2

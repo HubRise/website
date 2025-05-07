@@ -1,6 +1,7 @@
 ---
 title: Customer Lists
-position: 13
+path_override: customer-lists
+position: 14
 layout: documentation
 meta:
   title: Customer Lists | HubRise
@@ -12,7 +13,7 @@ The **Customer lists** section in the **SETTINGS** page allows you to add, edit,
 Customer Lists can be added to Accounts and Locations with the following conditions:
 
 - By default, Accounts define one Customer list named after the Account. Locations do not have a Customer list defined by default.
-- An Account **must** have at least one Customer list. If you attempt to delete the last Customer list of an Account, an error notification will be displayed.
+- An Account must have at least one Customer list. If you attempt to delete the last Customer list of an Account, an error notification will be displayed.
 - You can create as many Customer lists as you need. For example:
   - You can create a test Customer list to be used without impacting production.
   - You can create a Customer list for a Location that have different Customers than other Locations.
@@ -36,7 +37,7 @@ To add a customer list, follow these steps:
 The **Customer lists** section displays the following information:
 
 - **Name**: The name of the customer list, followed by its unique identifier. This unique identifier does not change even if the name of the customer list is changed. For example: The customer list `Baker Street` would be displayed as `Baker Street - abc123`. If the catalog `Baker Street` is renamed to `Dunning Street`, it will be displayed as `Dunning Street - abc123`.
-- **Customer Count**: The number of customers imported into HubRise. To view customer list details, see [Customers](/docs/data/#customers).
+- **Customer Count**: The number of customers imported into HubRise. To view customer list details, see [Customers](/docs/data#customers).
 
 To view the details of a customer list, click the name of the list. It will automatically link you to the **DATA** > **Customers** page for the specific list.
 
@@ -45,11 +46,11 @@ To view the details of a customer list, click the name of the list. It will auto
 To change the name of a customer list:
 
 1. In **SETTINGS**.
-1. In the **Customer lists** section, click the edit icon <InlineImage width="15" height="15">![Edit Icon](../images/028-en-pen-icon.png)</InlineImage> for the customer list to update.
+1. In the **Customer lists** section, click the edit icon <InlineImage width="15" height="15">![Edit Icon](../images/028-pen-icon.png)</InlineImage> for the customer list to update.
 1. Enter the new name of the customer list.
 1. Click **Update** to save the changes.
 
-![Edit or remove a customer list](../images/074-en-edit-remove-customer-list.png)
+![Edit or remove a customer list](./images/074-edit-remove-customer-list.png)
 
 ## Remove a Customer List
 

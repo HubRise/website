@@ -1,5 +1,6 @@
 ---
 title: How Do I Get A Lightspeed Test Account?
+path_override: get-lightspeed-test-account
 position: 1
 layout: documentation
 meta:
@@ -12,4 +13,4 @@ If you are a software editor and want a Lightspeed test account to use during th
 Having a Lightspeed test account is useful, but it is not essential to create a successful integration.
 In fact, you do not need to know how Lightspeed Restaurant works in detail, but you should let HubRise do the heavy lifting for you!
 
-Follow our [best practices](/developers/integration-guide#general-best-practices) while you build your integration and let HubRise confirm that it works with Lightspeed Restaurant during the [audit call](/developers/integration-guide#assessing-the-integration). Finally, verify that everything works as expected with your first Lightspeed pilot user.
+Follow our [best practices](/developers/integration-guide#general-best-practices) while you build your integration and let HubRise confirm that it works with Lightspeed Restaurant during the [audit call](/developers/integration-guide#assess). Finally, verify that everything works as expected with your first Lightspeed pilot user.

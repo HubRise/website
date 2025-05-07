@@ -1,11 +1,11 @@
 ---
 title: Overview
+path_override: "/"
 position: 1
 layout: documentation
 meta:
   title: Overview | Zenorder | HubRise
   description: Zenorder overview, reasons for connecting Zenorder to HubRise and summary of integrated features. Synchronise data between your EPOS, Zenorder and your apps.
-path_override: /
 app_info:
   category: Online Ordering
   availability: France
@@ -34,8 +34,9 @@ Zenorder incorporates a back office where you can customise the product offer, a
 
 Once connected to HubRise, Zenorder can be used to:
 
+- Pull orders from HubRise.
 - Push orders into HubRise.
-- Pull customer information from HubRise.
+- Pull a catalog from HubRise, with variants support.
 
 Zenorder can be connected to HubRise from the Zenorder back office.
 
@@ -43,7 +44,7 @@ Zenorder can be connected to HubRise from the Zenorder back office.
 
 By connecting Zenorder to HubRise, your online ordering solution can send orders to your other everyday applications, such as your POS software, your inventory solution or your connected printer.
 
-Thanks to HubRise, you can synchronise your menu, your customer information and your orders with your EPOS solution, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management solutions or delivery services, eMarketing (SMS/emailing) solutions, business intelligence, stock management and customer loyalty systems, and more. The number of compatible applications is constantly increasing. To see which apps you can connect, see our [Apps page](/apps).
+With HubRise, you can synchronise your menu, customer information, and orders between your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats, and Just Eat), delivery management solutions or delivery services, eMarketing solutions (SMS/emailing), business intelligence, inventory, and customer loyalty systems, and much more. The number of compatible applications increases every month. To discover the apps you can connect, visit our [Apps page](/apps).
 
 ## Prerequisites
 

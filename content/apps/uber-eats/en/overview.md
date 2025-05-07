@@ -1,14 +1,14 @@
 ---
 title: Overview
+path_override: "/"
 position: 1
 layout: documentation
 meta:
   title: Overview | Uber Eats | HubRise
   description: Uber Eats overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 gallery:
-  - __gallery-en-001.png
-  - __gallery-en-002.png
-path_override: /
+  - __gallery-001.png
+  - __gallery-002.png
 app_info:
   category: Food Ordering Platforms
   availability: 30+ countries
@@ -25,18 +25,15 @@ Uber Eats connects to your HubRise account through Uber Eats Bridge, an app deve
 
 ## Integration Features
 
-Connecting Uber Eats Bridge allows Uber Eats to:
+Connecting Uber Eats Bridge allows HubRise to:
 
-- Push orders to HubRise, including order status.
-- Push delivery information to HubRise, for orders delivered by your team.
+- Pull orders from Uber Eats, including order status.
+- Pull customer information from Uber Eats, for orders delivered by the restaurant.
+- Push a catalog into Uber Eats, with variants support.
+- Pull a catalog from Uber Eats.
+- Synchronise inventory with HubRise.
 
-![Diagram of the connection flow between Uber Eats, Uber Eats Bridge, and HubRise](../images/000-en-2x-connection-diagram.png)
-
----
-
-**IMPORTANT NOTE:** Pulling catalog and inventory from HubRise will soon be supported. Contact us for more information.
-
----
+![Diagram of the connection flow between Uber Eats, Uber Eats Bridge, and HubRise](./images/000-2x-connection-diagram.png)
 
 Uber Eats Bridge can receive orders when Uber Eats tablets are switched off.
 

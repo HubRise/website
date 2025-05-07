@@ -1,5 +1,6 @@
 ---
 title: Map Ref Codes
+path_override: map-ref-codes
 position: 5
 layout: documentation
 meta:
@@ -13,57 +14,66 @@ This page explains how to find the ref codes by either downloading your Lightspe
 
 You can also export your Lightspeed catalog directly into HubRise with Lightspeed Restaurant Bridge.
 Some connected apps offer the ability to import the catalog directly from HubRise, and therefore to autopopulate the ref codes.
-For more details about this feature and its limitations in Lightspeed Restaurant Bridge, see [Pushing the Catalog](/apps/lightspeed-restaurant/pushing-catalog).
+For more details about this feature and its limitations in Lightspeed Restaurant Bridge, see [Pull the Catalog](/apps/lightspeed-restaurant/pull-catalog).
 
-## Downloading The Catalog In Bulk
+## Download the Catalog in Bulk
 
 You can download your Lightspeed catalog to manage the items and the ref codes with a separate software.
 
-To download the Lightspeed catalog, follow these steps.
+To download the Lightspeed catalog, follow these steps:
 
 1. From your Lightspeed back office, select **Configuration**, then select **Items** > **Items**.
 1. Click the **Export** button.
-1. ![Export button in the items page of the Lightspeed back office](../images/006-en-lightspeed-export-items.png)
+   ![Export button in the items page of the Lightspeed back office](./images/006-2x-lightspeed-export-items.png)
 1. In the popup window, choose your operating system type: Mac or Windows (or Manual configuration), then click **Export**.
-   ![Choosing the operating system when exporting the catalog in Lightspeed](../images/007-en-lightspeed-system-choice.png)
+   ![Choosing the operating system when exporting the catalog in Lightspeed](./images/007-2x-lightspeed-system-choice.png)
 1. After the export is complete, select **Click here to download the exported file** to download the CSV file with your menu.
-   ![Download items CSV](../images/008-en-2x-lightspeed-download-csv.png)
+   ![Download items CSV](./images/008-2x-lightspeed-download-csv.png)
 
 To check the ref codes for the items, you can open the downloaded CSV file in Excel or a text editor. The ref codes appear under the **SKU** column.
 
-## Finding Ref Codes For Individual Items
+## Find Ref Codes for Individual Items
 
 You can find the ref codes for skus, options, deals, discounts, charges, service types, and payments from your Lightspeed back office.
 
-### Skus, Options, And Charges
+### Skus, Options, Discounts, and Charges
 
-To find the ref codes for specific skus and options, follow these steps.
+To find the ref codes for specific skus, options, discounts, and charges, follow these steps:
 
 1. From the top menu in your Lightspeed back office, select **Configuration**, then **Items** > **Items**.
-1. The ref codes for skus and options appear under the **Code** column.
-   ![](../images/009-en-lightspeed-skus-options-codes.png)
+1. The ref codes appear under the **Code** column.
+   ![](./images/009-2x-lightspeed-skus-options-codes.png)
 
 You can then copy the codes in the connected app. For detailed instructions, follow the documentation for the connected app in the HubRise website.
 
-If you created charges as skus, as described in [Create Ref Codes](/apps/lightspeed-restaurant/create-ref-codes#charges), you will find their ref codes in the same way as above.
+Note that charges and discounts must be created as items to be compatible with the HubRise data model. For more information see [Create Ref Codes](/apps/lightspeed-restaurant/faqs/create-ref-codes).
 
-### Service Types
+### Production Instructions
 
-Service types are called _account profiles_ on Lightspeed. To find the ref code for a specific service type, follow these steps.
+Production instructions in Lightspeed can be mapped to HubRise options. To find the ref codes for production instructions, follow these steps:
+
+1. From your Lightspeed back office, select **Configuration**, then select **Settings** > **Production instructions**.
+1. To download the complete list of production instructions, click **Export to csv**.
+1. In the CSV file, ref codes appear under the **identifier** column.
+
+When you map production instructions to connected apps, add `+` before the ref code. For example, if your instruction has ref code `52355651338378`, use `+52355651338378` to map it to connected apps.
+
+---
+
+**IMPORTANT NOTE:** Production instructions have no associated price. Adding a price in a connected app can cause [price differences errors](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors).
+
+---
+
+### Service Types {#service-types}
+
+Service types are called _account profiles_ on Lightspeed. To find the ref code for a specific service type, follow these steps:
 
 1. From your Lightspeed back office, select **Configuration**, then select **Settings** > **Account profiles**.
 1. For each service type available under the **Name** column, you can find the corresponding ref code under the **Code** column.
 
-### Discounts
+### Payment Methods {#payment-methods}
 
-To find the ref code for a specific discount, follow these steps.
-
-1. From your Lightspeed back office, select **Configuration**, then select **Settings** > **Discounts**.
-1. For each discount, you can find the corresponding ref code under the **Code** column.
-
-### Payment Methods
-
-To find the ref code for a payment method, follow these steps.
+To find the ref code for a payment method, follow these steps:
 
 1. From your Lightspeed back office, select **Configuration**, then select **Settings** > **Payment methods**.
 1. For each payment method available under the **Name** column, you can find the corresponding ref code under the **Code** column.

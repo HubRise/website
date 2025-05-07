@@ -1,5 +1,6 @@
 ---
 title: iPad Errors
+path_override: ipad-disconnected-errors
 position: 9
 layout: documentation
 meta:
@@ -9,35 +10,50 @@ meta:
 
 This page describes how to troubleshoot errors due to a disconnected or misconfigured iPad.
 
-## iPad EPOS Not Available
+## Business Location Not Accepting Online Orders
 
-In some cases, orders can fail with error messages similar to the following:
+In certain circumstances, orders may fail, causing the following error message to appear:
 
-- The specified business location doesn't accept online orders at the moment.
+```json
+{
+  "status": "FAILURE",
+  "reason": "The specified business location doesn't accept online orders at the moment.",
+  "thirdPartyReference": "xxx|xxx-0|yyy"
+}
+```
 
-  ```
-  {
-    "status": "FAILURE",
-    "reason": "The specified business location doesn't accept online orders at the moment.",
-    "thirdPartyReference": "zrk8p|wbv7z-0|2ve7gq"
-  }
-  ```
+This problem arises due to the fact that online ordering has not been enabled on the relevant iPad. To resolve this issue, you should activate online ordering on the iPad. For more information, see [API Activation in the Tablet](/apps/lightspeed-restaurant/faqs/troubleshooting-failed-orders#api-activation).
 
-- No devices available to handle the task, the task has been rejected.
+## No Available Devices
 
-  ```
-  {
-    "reason": "No devices available to handle the task, the task has been rejected.",
-    "thirdPartyReference": "zrk8p|wbv7z-0|3vdg0x",
-    "businessLocationId": 210001112231,
-    "status": "FAILURE",
-    "type": "ORDER"
-  }
-  ```
+Occasionally, order processing can fail due to a lack of available devices. This problem can lead to two equivalent error messages:
 
-Both these errors can happen in the following cases:
+```json
+{
+  "reason": "Not processed before validity ended",
+  "thirdPartyReference": "xxx|xxx-0|yyy",
+  "businessLocationId": 123456789,
+  "status": "FAILURE",
+  "type": "ORDER"
+}
+```
 
-- There is no device available to receive orders.
-- The iPad is connected, but the app runs in the background, for example when the user is not on the Lightspeed app.
-- The iPad is offline or not connected to the Internet.
-- Online ordering has not been enabled on the iPad. For more information, see [API Activation in the Tablet](/apps/lightspeed-restaurant/faqs/troubleshooting-failed-orders/#api-activation-in-the-tablet).
+and
+
+```json
+{
+  "reason": "No devices available to handle the task, the task has been rejected.",
+  "thirdPartyReference": "xxx|xxx-0|yyy",
+  "businessLocationId": 123456789,
+  "status": "FAILURE",
+  "type": "ORDER"
+}
+```
+
+These errors typically arise under the following circumstances:
+
+- No iPads are available to receive orders.
+- The iPad is turned off or is not connected to the internet.
+- The iPad is connected, but the Lightspeed app is running in the background, for example when the user is not on the Lightspeed app.
+
+HubRise sets the validity period of the order to 12 hours by default. If no device is active within this 12-hour validity period, the order will fail.

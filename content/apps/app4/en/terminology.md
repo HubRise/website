@@ -1,6 +1,7 @@
 ---
 title: Terminology
-position: 5
+path_override: terminology
+position: 8
 layout: documentation
 meta:
   title: Terminology | App4 | HubRise

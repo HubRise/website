@@ -7,5 +7,9 @@
   to: /pricing
 - title: Developers
   to: /developers
+- title: Blog
+  to: /blog
 - title: Help
   to: /docs
+- title: FAQs
+  to: /faqs

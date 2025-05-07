@@ -1,14 +1,14 @@
 ---
 title: Overview
+path_override: "/"
 position: 1
 layout: documentation
 meta:
   title: Overview | Mailchimp | HubRise
   description: Mailchimp overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 gallery:
-  - __gallery-en-001.png
-  - __gallery-en-002.png
-path_override: /
+  - __gallery-001.png
+  - __gallery-002.png
 app_info:
   category: Loyalty and Marketing
   availability: Worldwide
@@ -30,7 +30,7 @@ Connecting Mailchimp to HubRise allows your eMarketing solution to:
 - Pull orders from HubRise.
 - Pull customer information from HubRise.
 
-![Mailchimp Bridge Workflow](../images/007-en-2x-connection-diagram.png)
+![Mailchimp Bridge Workflow](./images/007-2x-connection-diagram.png)
 
 Mailchimp Bridge can be connected to HubRise from the HubRise back office.
 

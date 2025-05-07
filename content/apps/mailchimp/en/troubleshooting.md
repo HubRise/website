@@ -1,6 +1,7 @@
 ---
 title: Troubleshooting
-position: 5
+path_override: troubleshooting
+position: 6
 layout: documentation
 meta:
   title: Troubleshooting | Mailchimp | HubRise
@@ -15,7 +16,7 @@ If contacts are not synced with Mailchimp, first check that Mailchimp is connect
 1. Select **CONNECTIONS**.
 1. The Mailchimp Bridge app should appear.
 
-If Mailchimp does not appear, connect your HubRise location to your Mailchimp account. For assistance, see [Connection to HubRise](/apps/mailchimp/connect-hubrise).
+If Mailchimp does not appear, connect your HubRise location to your Mailchimp account. For assistance, see [Connect to HubRise](/apps/mailchimp/connect-hubrise).
 
 ## Check that Contacts are Pushed to Mailchimp
 
@@ -41,4 +42,4 @@ To inspect the logs exchanged between HubRise and Mailchimp:
 
 If the status is not `OK`, check the **Response** drop-down to see the error.
 
-The information contained in the **Request** and **Response** logs are in JSON format. For more information on reading and understanding JSON, check our [JSON logs documentation](/docs/hubrise-logs).
+The information contained in the **Request** and **Response** logs are in JSON format. For more information on reading and understanding JSON, check our [JSON logs documentation](/docs/hubrise-logs/overview).

@@ -1,8 +1,9 @@
 ---
 title: Configuration
+path_override: configuration
 position: 4
 layout: documentation
 meta:
-  title: Configuration | Solution | HubRise
-  description: Configurer Solution pour recevoir vos commandes Solution dans votre solution d'encaissement ou d'autres applications connectées à HubRise.
+  title: Configuration | SOLUTION | HubRise
+  description: Instructions pour configurer SOLUTION afin qu'[il/elle] fonctionne parfaitement avec votre logiciel de caisse et les autres apps connectées à HubRise. La configuration est simple.
 ---

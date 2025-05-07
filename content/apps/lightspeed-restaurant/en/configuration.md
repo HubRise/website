@@ -1,5 +1,6 @@
 ---
 title: Configuration
+path_override: configuration
 position: 4
 layout: documentation
 meta:
@@ -10,32 +11,50 @@ meta:
 The configuration page allows you to customise the behaviour of Lightspeed Restaurant Bridge based on your preferences.
 These are divided into different sections for an easier navigation.
 
-![Lightspeed Restaurant Bridge configuration page](../images/014-en-configuration-page.png)
+![Lightspeed Restaurant Bridge configuration page](./images/014-configuration-page.png)
 
 ## Language
 
-From this section, you can decide which language is used to localise your receipts.
-
-## Menu
-
-This section allows you to choose which Lightspeed menu to use when you want to pull your catalog to HubRise.
-Select a value from the drop-down list.
+Choose the language to use for generic items such as `Delivery charge`. These names may appear in customer receipts.
 
 ## Orders
 
 From this section, you can customise how Lightspeed Restaurant Bridge handles orders.
 
-If you want to delay all orders by a specific amount, enter the value in minutes in the **Delay future orders** field.
+### Order Statuses {#order-statuses}
 
-By default, Lightspeed Restaurant Bridge does not pull local orders into HubRise.
-If you want to pull local orders to HubRise as soon as they are paid, from **Behaviour** select **Pull sales from Lightspeed on payment**.
+Lightspeed closes orders as soon as they are paid. By default, Lightspeed Restaurant Bridge marks orders as `completed` in HubRise when they are closed in Lightspeed.
 
-## Saving the Configuration
+If you use a different app to update order statuses in HubRise, for example a Kitchen Display System, you can unselect **Mark closed orders as completed in HubRise**.
 
-Once you are happy with the configuration of Lightspeed Restaurant Bridge, click **Save** at the top of the page to go back to the Operations page.
+### Push Orders to Lightspeed
 
-## Resetting the Configuration
+Orders are pushed to Lightspeed as soon as they are created in HubRise.
 
-If you want to reset the configuration and erase its values, click **Reset the configuration**.
+If you want to delay orders until shortly before the delivery time, you can set the **Display time** field. If you leave it empty, orders will be displayed immediately on Lightspeed.
 
-Resetting the configuration does not remove the operation logs displayed in the main page.
+### Pull orders from Lightspeed
+
+By default, Lightspeed Restaurant Bridge does not pull Lightspeed sales into HubRise.
+
+To enable this feature, select **Enabled for dine-in sales** or **Enabled for all sales** from **Pull orders**.
+
+## Catalog
+
+This section allows you to choose which Lightspeed menu to use when you want to pull your catalog to HubRise. Select a value from the drop-down list.
+
+## Save the Configuration
+
+To save the configuration, click **Save** at the top of the page.
+
+## Reset the Configuration
+
+If you need to reset the configuration, click **Reset the configuration** at the bottom of the page.
+
+---
+
+**IMPORTANT NOTE:** Resetting the configuration will instantly disconnect the bridge from Lightspeed Restaurant.
+
+---
+
+Resetting the configuration does not delete the operation logs displayed in the main page.

@@ -1,5 +1,6 @@
 ---
 title: Orders Not Received
+path_override: orders-not-received-errors
 position: 10
 layout: documentation
 meta:
@@ -13,13 +14,13 @@ This page describes how to troubleshoot orders not received in the EPOS
 
 In some cases, you might not receive HubRise orders even if no apparent error is displayed in the logs.
 
-Looking at the [order logs](/apps/lightspeed-restaurant/user-interface#operation-page), the affected orders display the following message:
+Looking at the [order logs](/apps/lightspeed-restaurant/user-interface#operation), the affected orders display the following message:
 
-```
+```json
 {
   "status": "received"
 }
 ```
 
 In this case, the probable cause of the missing orders is that HubRise was not enabled on Lightspeed.
-To solve the issue, contact Lightspeed support, and request to enable the HubRise connection for your EPOS.
+To solve the issue, contact Lightspeed support, and request to enable the HubRise connection for your EPOS. For more information, see [Enable the HubRise Integration](/apps/lightspeed-restaurant/connect-hubrise#enable-integration).

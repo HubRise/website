@@ -1,12 +1,12 @@
 ---
 title: Overview
+path_override: "/"
 position: 1
 layout: documentation
 meta:
   title: Overview | SOMM'IT | HubRise
   description: SOMM'IT overview, reasons for connecting SOMM'IT to HubRise and summary of integrated features. Synchronise data SOMM'IT, your EPOS and your other apps.
 gallery:
-path_override: /
 app_info:
   category: Operations and Inventory
   availability: France
@@ -17,6 +17,6 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: This documentation is available <Link to="/fr/apps/somm-it" addLocalePrefix={false}>in French only</Link>.
+**IMPORTANT NOTE:** This documentation is available <Link href="/fr/apps/somm-it">in French only</Link>.
 
 ---

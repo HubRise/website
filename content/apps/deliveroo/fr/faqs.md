@@ -1,12 +1,14 @@
 ---
-title: FAQs
-position: 7
+title: FAQ
+path_override: faq
+position: 11
 layout: documentation
 meta:
-  title: FAQs | Deliveroo | HubRise
-  description: Questions et réponses fréquemment posées sur l'intégration de Deliveroo avec HubRise.
+  title: FAQ | Deliveroo | HubRise
+  description: FAQ sur la connexion de Deliveroo à HubRise afin que votre logiciel de caisse fonctionne harmonieusement avec d'autres apps. Connectez les apps et synchronisez vos données.
 ---
 
-- <Link to="/apps/deliveroo/faqs/trouver-mon-identifiant-de-restaurant-deliveroo/">Comment trouver mon identifiant de restaurant Deliveroo&nbsp;?</Link>
-- <Link to="/apps/deliveroo/faqs/commandes-non-recues-code-ref-manquants/">Pourquoi mes commandes Deliveroo n'apparaissent-elles pas sur HubRise&nbsp;?</Link>
-- <Link to="/apps/deliveroo/faqs/connecter-plusieurs-restaurants-deliveroo/">Puis-je connecter plusieurs restaurants Deliveroo au même point de vente HubRise&nbsp;?</Link>
+- [Puis-je connecter plusieurs restaurants Deliveroo au même point de vente HubRise ?](/apps/deliveroo/faqs/connecting-multiple-instances-deliveroo)
+- [Comment trouver mon identifiant de restaurant Deliveroo ?](/apps/deliveroo/faqs/find-deliveroo-restaurant-id)
+- [Puis-je arrêter d'utiliser la tablette Deliveroo ?](/apps/deliveroo/faqs/deliveroo-tabletless)
+- [Puis-je connecter HubRise depuis le back-office de Deliveroo ?](/apps/deliveroo/faqs/connect-from-deliveroo-back-office)

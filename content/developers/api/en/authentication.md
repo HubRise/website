@@ -1,5 +1,6 @@
 ---
 title: Authentication
+path_override: authentication
 position: 2
 layout: documentation
 meta:
@@ -24,7 +25,7 @@ Although it seems complicated at first, OAuth actually makes things simpler for 
 - Your application can only access the data that it needs. For example, your application can request access to orders but not catalogs. Or it can request read-only access.
 - Users can easily revoke access to a potentially insecure or compromised application, without resetting their password.
 
-## 2. OAuth scopes
+## 2. OAuth Scopes {#oauth-scopes}
 
 A _scope_ controls the set of resources an application has access to. Users can see the scope before granting access to an application. The good practice is to limit your application's scope to the minimum it needs: not only does this reduce the impact of a potential security breach, it also makes your users more comfortable authorising your application.
 
@@ -34,7 +35,7 @@ A scope combines an **access-level set of permissions** and **general permission
 
 An **access-level set of permissions** is made of an access-level keyword, which can be `location` or `account`, followed by a comma separated list of permissions between square brackets.
 
-Each permission consists of a resource, which can be `orders`, `customer_list`, `catalog`, `all_customer_lists`, or `all_catalogs`, and an access right keyword, which can be `read` or `write`, separated with a dot.
+Each permission consists of a resource, which can be `orders`, `customer_list`, `catalog`, `inventory`, `all_customer_lists`, or `all_catalogs`, and an access right keyword, which can be `read` or `write`, separated with a dot.
 
 **General permissions** can be `profile`, or `profile_with_email`.
 
@@ -57,8 +58,10 @@ Each permission consists of a resource, which can be `orders`, `customer_list`, 
   - Your application can access the profile of the user, including their email.
 
 - `location[orders.read]` and `location[orders.write]`:
+
   - The user selects a location.
   - Your application can read the location's orders. With the `write` scope, it can also create orders in the location, and update any location's order.
+
 - `account[orders.read]` and `account[orders.write]`:
 
   - The user selects an account.
@@ -68,11 +71,22 @@ Each permission consists of a resource, which can be `orders`, `customer_list`, 
 
   - The user selects a location, and a catalog belonging to the selected location or to the location's account.
   - Your application can read the catalog. With the `write` scope, it can also update the catalog, even if it belongs to the account.
+  - For historical reasons, the `catalog.read` and `catalog.write` scopes allow read and write access to the inventory of a location. This behaviour is however deprecated, and you should use the `inventory.read` and `inventory.write` scopes instead.
 
 - `account[catalog.read]` and `account[catalog.write]`:
 
   - The user selects an account, and a catalog belonging to the account or to any location of the account.
   - Your application can read the catalog. With the `write` scope, it can also update the catalog.
+
+- `location[inventory.read]` and `location[inventory.write]`:
+
+  - The user selects a location.
+  - Your application can read the inventory of the location. With the `write` scope, it can also update the inventory.
+
+- `account[inventory.read]` and `account[inventory.write]`:
+
+  - The user selects an account.
+  - Your application can read the inventory of any location in the account. With the `write` scope, it can also update the inventory.
 
 - `location[all_catalogs.read]` and `location[all_catalogs.write]`:
 
@@ -85,9 +99,9 @@ Each permission consists of a resource, which can be `orders`, `customer_list`, 
 
 The `customer_list` and `all_customer_lists` resources work similarly to `catalog` and `all_catalogs`.
 
-## 3. Web application workflow
+## 3. Web Application Workflow
 
-### 3.1. Request authorisation
+### 3.1. Request Authorisation
 
 To get access to a user's data, your application should redirect the user to this page:
 
@@ -98,24 +112,37 @@ https://manager.hubrise.com/oauth2/v1/authorize?
   scope=location[orders.write,customer_list.write,catalog.read]&
   country=FR&
   account_name=Aux+Délices&
-  location_name=Paris
+  location_name=Paris&
+  state=<<OPTIONAL-STATE>>
 ```
+
+##### Parameters:
+
+| Parameter     | Required | Description                                                                   |
+| ------------- | -------- | ----------------------------------------------------------------------------- |
+| redirect_uri  | Yes      | The URL to which the user is redirected after authorisation.                  |
+| client_id     | Yes      | The client ID of your application.                                            |
+| scope         | Yes      | The permissions your application requires. See [OAuth Scopes](#oauth-scopes). |
+| country       | No       | 2 letter ISO country code. Used to pre-select the country in the signup form. |
+| account_name  | No       | Pre-fills the account name in the signup form.                                |
+| location_name | No       | Pre-fills the location name in the signup form.                               |
+| state         | No       | This value is passed back to your application in the redirect URI.            |
 
 When the page loads, HubRise:
 
-- Authenticates the user. Users can log in if they already have a HubRise account. If they don't, they can create an account in a few simple steps: `country`, `account_name` and `location_name` parameters are then used to prefill the signup form.
+- Authenticates the user. Users can log in if they already have a HubRise account. If they don't, they can create an account in a few simple steps.
 - Prompts the user to select the location, catalog and/or customer list to connect.
 - Requests user approval to access the data.
 
-If the user approves the request, HubRise calls the `redirect_uri` URL you specified, and includes the authorisation code in the `code` query parameter:
+If the user approves the request, HubRise calls the `redirect_uri` URL you specified, and includes the authorisation code in the `code` query parameter and the `state` parameter if you provided one:
 
 ```http
-https://<<YOUR-DOMAIN-HERE>>/oauth_callback?code=ffae0047c4d6b9e02f95e76a3f6a32
+https://<<YOUR-DOMAIN-HERE>>/oauth_callback?code=ffae0047c4d6b9e02f95e76a3f6e906d&state=<<OPTIONAL-STATE>>
 ```
 
 ---
 
-**IMPORTANT NOTE**: authorisation codes are one-use throw-away codes that expire after 10 minutes. They are used to generate API tokens, which do not expire. The next section explains how to get an API token from an authorisation code.
+**IMPORTANT NOTE:** Authorisation codes are one-use throw-away codes that expire after 10 minutes. They are used to generate API tokens, which do not expire. The next section explains how to get an API token from an authorisation code.
 
 ---
 
@@ -125,30 +152,34 @@ If the authorisation fails, HubRise calls the `redirect_uri` URL, with an error 
 https://<<YOUR-DOMAIN-HERE>>/oauth_callback?error=access_denied
 ```
 
-### 3.2. Get an access token
+### 3.2. Get an Access Token
 
 Once your application gets an authorisation code, it can establish a connection. This step is necessary to get an access token and start sending requests to the API.
 
-To get the access token, send the `POST` request below, and include the authorisation code, client id and client secret in the request body:
+To get the access token, send a `POST` request with your client id and secret passed in the HTTP Basic `Authorization` header, and include the authorisation code in the request body.
 
 ```http
 POST https://manager.hubrise.com/oauth2/v1/token HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
+Authorization: Basic Y2xpZW50X2lkOmNsaWVudF9zZWNyZXQ=
 ---
-code=ffae0047c4d6b9e02f95e76a3f&
-client_id=407408718192.clients.hubrise.com&
-client_secret=*********
+code=ffae0047c4d6b9e02f95e76a3f6e906d
 ```
 
-If the request succeeds, the response contains the access token. You must save this token, as you will need to include it in all further requests to the API.
+The `Authorization` header is the base64-encoded concatenation of the client id and secret, separated by a colon. If you cannot use HTTP Basic, you can pass `client_id` and `client_secret` in the request body instead, but this is not recommended and only supported for backwards compatibility.
+
+The request must be sent from a server, not a browser, to prevent a CORS error. This is because sending the request from a browser would expose your client secret to malicious users. For more information about our CORS policies, see [CORS](/developers/api/general-concepts#cors).
+
+If the request succeeds, the server returns a `200` response containing the access token. You must save this token, as you will need to include it in all further requests to the API.
 
 The response also contains the ids and names of the resources your application has access to. You should save these identifiers and make them easily accessible from your user interface. They are a convenient way for users to confirm that their connection is bound to the right resources.
 
-#### Example of response:
+##### Example of response:
 
 ```json
 {
   "access_token": "b9922a78d3ffab6b95e9d72e88",
+  "token_type": "Bearer",
   "account_id": "3r4s3",
   "location_id": "3r4s3-1",
   "catalog_id": "psmlf",
@@ -160,7 +191,7 @@ The response also contains the ids and names of the resources your application h
 }
 ```
 
-Note that the request will fail if the authorisation code has expired, or has already been used.
+The request fails with a `400` status code if the authorisation code has expired or has already been used. It fails with a `401` status code if the client id or secret are incorrect.
 
 ### 3.3. Connect to the API
 
@@ -175,7 +206,23 @@ X-Access-Token: b9922a78d3ffab6b95e9d72e88
 
 Note that you don't need to specify a location's id, because your connection is bound to a single location.
 
-## 4. Installed app workflow
+### 3.4 Revoke an Access Token
+
+When you no longer need an access token, you can revoke it. This is done by sending a `POST` request to the `/oauth2/v1/revoke` endpoint, passing the access token in the request body.
+
+```http
+POST https://manager.hubrise.com/oauth2/v1/revoke HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic Y2xpZW50X2lkOmNsaWVudF9zZWNyZXQ=
+---
+token=b9922a78d3ffab6b95e9d72e88
+```
+
+This request must be sent from a server, not a browser, to prevent a CORS error and protect your client secret. For more information about our CORS policies, see [CORS](/developers/api/general-concepts#cors).
+
+If the server returns a `200` response, the access token is revoked and can no longer be used.
+
+## 4. Installed App Workflow
 
 The preceding workflow is not convenient for installed apps, as they generally cannot expose a callback URL to the outside.
 
@@ -199,23 +246,50 @@ After granting access, the user is redirected to a page where the authorisation 
 
 Note that you will need to ship your client secret within your application binary to implement this workflow.
 
-## 5. Connection reuse
+## 5. Connection Reuse
 
 The `access_token` returned by `GET /oauth2/v1/token` is specific to a given client and a given location. Re-authorising the same location with the same client always returns the same token.
 
 ---
 
-**IMPORTANT NOTE**: if a different catalog (or customer list) is selected when re-authorising the location, the token will no
-longer allow access to the former catalog (or customer list) when the new authorisation completes.
+**IMPORTANT NOTE:** if a different catalog (or customer list) is selected when re-authorising the location, the token will no longer allow access to the former catalog (or customer list) when the new authorisation completes.
 
 ---
 
-You can bypass this behaviour and force a new token to be issued by passing a `device_id` parameter when redirecting the
-user to the authorisation page, eg:
+You can bypass this behaviour and force a new token to be issued by passing a `name` parameter when redirecting the user to the authorisation page, eg:
 
 ```http
-GET https://manager.hubrise.com/oauth2/v1/authorize?device_id=100&redirect_uri=https://YOUR-DOMAIN-HERE.com/oauth_callback&client_id=459691768564.clients.hubrise.com&scope=location[orders.write,customer_list.write,catalog.read] HTTP/1.1
+GET https://manager.hubrise.com/oauth2/v1/authorize?name=100&redirect_uri=https://YOUR-DOMAIN-HERE.com/oauth_callback&client_id=459691768564.clients.hubrise.com&scope=location[orders.write,customer_list.write,catalog.read] HTTP/1.1
 ```
 
-If the provided `device_id` has never been authorised for the location, a new access token is returned. Otherwise,
-the access token previously associated with this `device_id` is returned.
+If the provided `name` has never been authorised for the location, a new access token is returned. Otherwise, the access token previously associated with this `name` is returned.
+
+## 6. Token Invalidity
+
+At times, access tokens may become invalid, leading to request failures with a `401` status code with an error message in the response body:
+
+```json
+{
+  "message": "The connection has been blocked",
+  "error_type": "unauthorized"
+}
+```
+
+Token invalidity can arise from:
+
+| Cause                                    | Error message                                                                 |
+| ---------------------------------------- | ----------------------------------------------------------------------------- |
+| Non-payment of subscription              | `The account/location has been suspended for non payment of the subscription` |
+| Token revocation or manual disconnection | `The access token is invalid or the connection has been revoked`              |
+| Temporary blocking                       | `The connection has been blocked`                                             |
+
+Here are the recommended steps to handle such situations:
+
+- **Minimise side effects**: Ensure that a `401` error does not create widespread disruptions. For example, it should not prevent customers from placing orders, but alert the user (the business employee) instead.
+- **Flag the connection**: Implement a `last_failed_at` timestamp for each connection. Set it to the current timestamp when a `401` error occurs, and reset to `null` on successful request completion. Optionally, you can also implement a `last_failed_reason` field to store the error message.
+- **Alert the user**: Show a message to the user when `last_failed_at` is set, e.g., "All requests failed since [timestamp]. Reconnect HubRise to resolve.".
+
+When the user reconnects, the following will happen:
+
+- For non-payment issues, the HubRise authorisation page will display a message indicating the issue.
+- For disconnections and blocks, reconnection via the integrated application will resolve the issue.

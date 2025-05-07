@@ -1,5 +1,6 @@
 ---
 title: Account
+path_override: account
 position: 7
 layout: documentation
 meta:
@@ -31,7 +32,7 @@ The main differences between the settings for Accounts and Locations are the fol
 - Currency settings are set at the Account level, and can not be changed once created. If you have made a mistake in the currency selection, you will have to create a new Account with the correct currency value.
 - If you have markets with different currencies, you will have to create an Account for each market. The recommended practice is to create a different Account for each country you have a market in, even if they share the same currency.
 
-## Create an Account
+## Create an Account {#create-account}
 
 When creating a new Account, the first Location must be created at the same time through the following steps:
 
@@ -39,7 +40,7 @@ When creating a new Account, the first Location must be created at the same time
 2. From the **Permissions** section, click **Create Account**.
 3. Enter the information required, then click **Create**.
 
-![Create an account on HubRise](../images/064-en-2x-create-account.png)
+![Create an account on HubRise](./images/064-2x-create-account.png)
 
 The **Account Name** is the name you give your business or brand. For example, if your brand is called Fast Pizza, the **Account Name** will be `Fast Pizza`.
 
@@ -49,17 +50,17 @@ Finally, enter the correct **Currency** for the market that you operate in.
 
 ---
 
-**IMPORTANT NOTE**: The currency value can only be set when the Account is created, and can not be modified. If the currency for the HubRise Account does not match the currency set on the connected apps, errors may occur. Create a new Account with the correct currency and use that Account to connect your apps instead.
+**IMPORTANT NOTE:** The currency value can only be set when the Account is created, and can not be modified. If the currency for the HubRise Account does not match the currency set on the connected apps, errors may occur. Create a new Account with the correct currency and use that Account to connect your apps instead.
 
 ---
 
 ---
 
-**Related FAQ**: <Link to="/docs/faqs/how-can-i-clear-accounts/">Too Many Accounts for My Business on HubRise. How Can I Clear the System?</Link>
+**Related FAQ**: [Too Many Accounts for My Business on HubRise. How Can I Clear the System?](/docs/faqs/how-can-i-clear-accounts)
 
 ---
 
-## Modify Account Details
+## Modify Account Details {#modify-account-details}
 
 To modify an existing Account, follow these steps:
 
@@ -69,6 +70,6 @@ To modify an existing Account, follow these steps:
 
 ---
 
-**IMPORTANT NOTE**: In some countries, providing your Intra-Community VAT number is a legal requirement. HubRise will display a notification to update the VAT number if this information is missing from your Account.
+**IMPORTANT NOTE:** In some countries, providing your Intra-Community VAT number is a legal requirement. HubRise will display a notification to update the VAT number if this information is missing from your Account.
 
 ---

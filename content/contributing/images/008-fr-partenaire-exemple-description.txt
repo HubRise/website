@@ -1,3 +1,0 @@
-Développeur web full-stack, graphiste et intégrateur web, Vincent a plus de cinq années d'expérience en HTML5, CSS3, Bootstrap, LESS, et développe en PHP5 (objet) / MySQL. Il crée des sites clé en main sur mesure ou via WordPress, avec interface d'administration personnalisée et intégration HubRise.
-
-Création d'une passerelle PHP couplée avec une intégration HTML / SaaS permettant de faire communiquer le site avec HubRise, afin de synchroniser le catalogue de produits, le listing des clients et les commandes.

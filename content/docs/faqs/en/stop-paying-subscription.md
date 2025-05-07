@@ -1,6 +1,7 @@
 ---
 title: How Do I Stop Paying For My Subscription?
-position: 16
+path_override: stop-paying-subscription
+position: 17
 layout: documentation
 meta:
   title: Stop Paying a Subscription | HubRise
@@ -32,7 +33,7 @@ If you no longer wish to pay for your HubRise subscription, remove your payment 
 1. Under **Usage**, click on the location that you want to downgrade.
 1. In the **Location** page, under **Usage**, click on **Change plan**.
 1. In the **Change plan** page, click **Downgrade**.
-   ![Downgrade your HubRise location to a free plan](../../images/070-en-downgrade-plan.png)
+   ![Downgrade your HubRise location to a free plan](./images/070-downgrade-plan.png)
 
 The status changes to **Requested plan** and your location will switch automatically to the free plan at the end of the current billing cycle.
 

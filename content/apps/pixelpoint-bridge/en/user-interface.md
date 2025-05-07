@@ -1,6 +1,7 @@
 ---
 title: User Interface
-position: 4
+path_override: user-interface
+position: 3
 layout: documentation
 meta:
   title: User Interface | PixelPoint Bridge | HubRise
@@ -15,7 +16,8 @@ The main page of PixelPoint Bridge displays the latest received orders. Each row
 
 - **TIME**: The date and time of the order.
 - **ORDER**: The HubRise order ID.
-- **STATUS**: The status of the order. The value OK indicates that the order has been successfully sent, otherwise a message will explain the type of error occurred.
+- **DESCRIPTION**: An optional description for operations that are not related to a specific order. It could be empty, or inform of a specific action such as `System request` or `Catalog push`.
+- **STATUS**: The status of the order. The value `OK` indicates that the order has been successfully sent, otherwise an error code will be displayed in red.
 
 Clicking on an order will open a new page displaying all the information about it.
 
@@ -27,7 +29,7 @@ On the top right corner of the PixelPoint Bridge main page, the HubRise user and
 
 ---
 
-![Main page](../images/004-en-main-page.png)
+![Main page](./images/004-main-page.png)
 
 ## Order Page
 
@@ -35,22 +37,26 @@ Selecting an order from the list will display all the logs of the API requests e
 
 Requests are ordered with the latest on top, and each of them displays the following information:
 
-- **TIME**: The date and time the order was placed.
-- **DIRECTION**: The apps sending and receiving the request, in the format Origin → Destination.
-- **STATUS**: The status of the request. The value OK indicates that the request has been successfully received, otherwise a message will explain the type of error occurred. Clicking on a request will expand it to reveal the detailed logs of the request and its response. A detailed description of the logs can be found in [Understanding Logs](/apps/pixelpoint-bridge/understanding-logs).
+- **Time**: The date and time the order was placed.
+- **Direction**: The apps sending and receiving the request, in the format Origin → Destination.
+- **Endpoint**: The status of the request. The value `OK` indicates that the request has been successfully received, otherwise a message will explain the type of error occurred.
 
-![Order page](../images/002-en-orders-page.png)
+Clicking on a request will expand it to reveal the detailed logs of the request and its response.
+
+![Order page](./images/002-orders-page.png)
+
+A detailed description of the logs can be found in [Understanding Logs](/apps/pixelpoint-bridge/understanding-logs).
+
+## Configuration
+
+To access the PixelPoint Bridge Configuration page, click on the arrow <InlineImage width="20" height="20">![Arrow icon](../images/007-arrow.jpg)</InlineImage> in the top right corner of the page to expand the menu, then click **Configuration**.
+
+![PixelPoint Bridge configuration page](./images/003-configuration.png)
+
+From this page, you will be able to customise the behaviour of PixelPoint Bridge. For more details, see [Configuration](/apps/pixelpoint-bridge/configuration).
 
 ## Language and Navigation
 
-At the top right corner of the main page, you can click on the arrow <InlineImage width="20" height="20">![Arrow icon](../images/007-arrow.jpg)</InlineImage> to expand the menu. From there, you can change the language of the page to English or French.
+In the top right corner of the screen, you can click on the arrow <InlineImage width="20" height="20">![Arrow icon](../images/007-arrow.jpg)</InlineImage> to expand the menu. From there, you can change the language of the page to English or French.
 
-Clicking on the PixelPoint and HubRise logos on top of any page of PixelPoint Bridge will bring you back to the main page.
-
-## Configuration Page
-
-To access the PixelPoint Bridge Configuration page, click on the arrow <InlineImage width="20" height="20">![Arrow icon](../images/007-arrow.jpg)</InlineImage> at the top right corner of the page to expand the menu, then click **Configuration**.
-
-![PixelPoint Bridge configuration page](../images/003-en-pixelpoint-configuration-page.png)
-
-From this page, you will be able to customise the behaviour of PixelPoint Bridge. For more details, see [Configuration](/apps/pixelpoint-bridge/configuration).
+Clicking on the PixelPoint and HubRise logos on top of any page of PixelPoint Bridge will bring you back to the **Latest Operations** page.

@@ -1,6 +1,7 @@
 ---
 title: How to Contribute
-position: 0
+path_override: how-to-contribute
+position: 1
 layout: documentation
 meta:
   title: Contribution Guidelines | HubRise
@@ -26,7 +27,7 @@ Anyone is welcome to contribute. Editors of integrated apps are proactively enco
 
 When you are on a technical documentation page, scroll down to the bottom. At the bottom of the page, you will find the **Feedback on this page** link. Click on the link which will open a dropdown list of options.
 
-![Feedback link at the bottom of the page](../images/007-en-feedback-dropdown-list.png)
+![Feedback link at the bottom of the page](./images/007-feedback-dropdown-list.png)
 
 A simple email can be sent but all our technical documentation is available in a public repository. If you are familiar with GitHub you can edit the page yourself and submit a Pull Request. The documentation has been written in Markdown. Your suggested modifications will be reviewed by the HubRise team.
 

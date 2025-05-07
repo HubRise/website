@@ -1,5 +1,6 @@
 ---
 title: Map Ref Codes
+path_override: map-ref-codes
 position: 4
 layout: documentation
 meta:
@@ -19,7 +20,7 @@ To export the OrderLord menu to HubRise, follow these steps.
 
 ---
 
-**IMPORTANT NOTE**: Exporting the OrderLord catalog will overwrite your current HubRise products.
+**IMPORTANT NOTE:** Exporting the OrderLord catalog will overwrite your current HubRise products.
 
 ---
 

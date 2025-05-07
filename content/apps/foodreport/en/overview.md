@@ -1,12 +1,12 @@
 ---
 title: Overview
+path_override: "/"
 position: 1
 layout: documentation
 meta:
   title: Overview | FOODREPORT | HubRise
   description: FOODREPORT overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise your EPOS and your other apps date with FOODREPORT.
 gallery:
-path_override: /
 app_info:
   category: Inventory and Operations Management
   availability: France and overseas France (France d'outre-mer)
@@ -17,7 +17,7 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE**: Full documentation of this integration will be available soon.
+**IMPORTANT NOTE:** Full documentation of this integration will be available soon.
 
 ---
 
@@ -48,7 +48,7 @@ Food Report can be connected to HubRise via the Food Report support line.
 
 Connecting Food Report to HubRise allows you to pull orders and customer information from your EPOS, your online ordering solution, or food delivery platforms used into Food Report.
 
-Thanks to HubRise, synchronise your menu, your customer and order information with your EPOS, online ordering, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management, delivery services, eMarketing (SMS/emailing), business intelligence, stock management, loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our [Apps page](/apps).
+With HubRise, you can synchronise your menu, customer information, and orders between your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats, and Just Eat), delivery management solutions or delivery services, eMarketing solutions (SMS/emailing), business intelligence, inventory, and customer loyalty systems, and much more. The number of compatible applications increases every month. To discover the apps you can connect, visit our [Apps page](/apps).
 
 ## Prerequisites
 

@@ -1,5 +1,6 @@
 ---
 title: Overview
+path_override: "/"
 position: 1
 layout: documentation
 meta:
@@ -7,7 +8,6 @@ meta:
   description: TastyCloud overview, reasons for connecting TastyCloud to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 gallery:
   - __gallery-001.png
-path_override: /
 app_info:
   category: Online Ordering
   availability: France
@@ -30,9 +30,9 @@ The restaurateur can set up delivery and click & collect systems.
 
 Once connected to HubRise, TastyCloud can be used to:
 
-- Push orders into HubRise, including order statuses.
+- Push orders into HubRise, including order status.
 - Push customer information into HubRise.
-- Pull the menu from a HubRise catalog.
+- Pull a catalog from HubRise.
 
 TastyCloud can be connected to HubRise via the TastyCloud support line.
 
@@ -40,7 +40,7 @@ TastyCloud can be connected to HubRise via the TastyCloud support line.
 
 By connecting TastyCloud to HubRise, your online ordering solution can communicate with your other everyday applications. Push online orders to your EPOS, your connected printer, your kitchen display screen or your inventory management solution. Import your EPOS solution's product catalog into TastyCloud.
 
-Thanks to HubRise, you can synchronise your menu, your customer information and your orders with your EPOS solution, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management solutions or delivery services, eMarketing (SMS/emailing) solutions, business intelligence, stock management and customer loyalty systems, and more. The number of compatible applications is constantly increasing. To see which apps you can connect, see our [Apps page](/apps).
+With HubRise, you can synchronise your menu, customer information, and orders between your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats, and Just Eat), delivery management solutions or delivery services, eMarketing solutions (SMS/emailing), business intelligence, inventory, and customer loyalty systems, and much more. The number of compatible applications increases every month. To discover the apps you can connect, visit our [Apps page](/apps).
 
 ## Prerequisites
 

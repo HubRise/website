@@ -1,6 +1,7 @@
 ---
 title: How Do I Configure HubRise for Uber Eats Disposable Items to Show In My EPOS?
-position: 2
+path_override: uber-eats-disposable-items
+position: 3
 layout: documentation
 meta:
   title: Configure Uber Eats Disposable | Uber Eats FAQs | HubRise
@@ -9,7 +10,7 @@ meta:
 
 When placing an order on the Uber Eats platform, customers may request disposable, single-use items like utensils, straws and napkins. To receive this request in your EPOS, or other apps connected to your HubRise account, you need to configure Uber Eats Bridge accordingly.
 
-Not all Uber Eats restaurants offer their customers the option to request disposable items. It can be disabled on Uber Eats. Nonetheless, HubRise recommends configuring it in case this option is enabled at a later date.
+Not all Uber Eats restaurants offer their customers the option to request disposable items. By default, this feature is disabled on Uber Eats. To enable it, you need to contact Uber Eats support. HubRise recommends configuring it in your EPOS even if it's currently disabled, in case you decide to use it in the future.
 
 To configure the Uber Eats Bridge disposable items on HubRise, follow these steps:
 

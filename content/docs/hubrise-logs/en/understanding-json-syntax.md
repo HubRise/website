@@ -1,5 +1,6 @@
 ---
 title: Understanding JSON Syntax
+path_override: understanding-json-syntax
 position: 4
 layout: documentation
 meta:

@@ -1,5 +1,6 @@
 ---
 title: User Interface
+path_override: user-interface
 position: 4
 layout: documentation
 meta:
@@ -7,29 +8,39 @@ meta:
   description: Today's Orders, Future Orders and Order History tabs are available for ease of access on OrderLine. Synchronise data between your EPOS and your apps.
 ---
 
-## View Today's Orders
+## Today's Orders
 
-When OrderLine fetches an Order from HubRise with the same delivery date as the current day, it displays an order counter notification on the top right-hand corner of the corresponding tab and plays a notification sound to alert the user.
+The **Today's Orders** tab displays all orders with a delivery date equal to today's date. Alongside, an easy-to-spot order counter reflects the count of orders currently in the **New** status.
 
-Orders may be hidden depending on the **Hide Order Status** setting. These Orders can be seen from **Today's Orders** tab by selecting **View** on the hidden order card. For more information, see [Order Status](/apps/orderline/settings/#set-order-statuses).
+Orders are sorted by their expected delivery or collection time, with the earliest orders at the beginning of the list.
 
-![OrderLine Today's Order Tab](../images/006-en-todays-orders.png)
+Orders may be hidden depending on the **Hide Order** setting customisation. These orders can be seen from **Today's Orders** tab by selecting **VIEW** on the hidden order card. For more information, see [Order Status Flow](/apps/orderline/settings#order-status-flow).
 
-## View Future Orders
+![OrderLine Today's Order Tab](./images/006-todays-orders.png)
 
-When OrderLine fetches an order with the delivery date in the future, it displays an order counter next to the OrderLine's **FUTURE ORDERS** tab. It also plays a notification sound to alert the user that a new order has been received.
+## Future Orders
 
-![OrderLine Future Orders Tab](../images/007-en-future-orders.png)
+The **Future Orders** tab displays all orders with a delivery date greater than today's date. The order counter reflects the count of future orders currently in the **New** status.
 
-## Check Orders History
+![OrderLine Future Orders Tab](./images/007-future-orders.png)
 
-OrderLine aggregates today's orders, future orders, and all orders completed in the last 30 days in a list. To view this list, click **ORDERS HISTORY**.
+## Orders History
 
-Orders are displayed in descending order by date, with the most recent date first.
+OrderLine provides a comprehensive view of all orders: past, present, and future. To view this list, click **Order history**.
 
-You may filter orders by a combination of:
+The orders are displayed starting with the most recent.
 
-- Customer name or Order reference.
+For a targeted search within your order history, you can use the available filters, which include:
+
+- Customer name or order reference.
 - Delivery date range.
 
-![OrderLine Orders History Tab](../images/008-en-orders-history.png)
+![OrderLine Orders History Tab](./images/008-orders-history.png)
+
+## Opening Hours
+
+The **Opening Hours** tab lets you configure the operating times of your establishment. Opening hours can be synchronised with your ordering and delivery platforms.
+
+![OrderLine Opening Hours Tab](./images/005-ui-opening-hours.png)
+
+For more information on managing your opening hours, see [Opening Hours](/apps/orderline/opening-hours).

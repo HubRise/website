@@ -1,10 +1,11 @@
 ---
 title: Get Started
+path_override: get-started
 position: 2
 layout: documentation
 meta:
   title: Get Started | HubRise
-  description: Instructions on starting with LivePepper and HubRise connection.
+  description: Instructions on how to get started with HubRise. Create a user profile and an account on HubRise. Set your preferences and get familiar with the platform.
 ---
 
 You can access HubRise from a web browser on any device: your desktop, tablet, or smartphone.
@@ -15,11 +16,11 @@ To start using HubRise, create a User Profile. Registration is free, and only ta
 
 ---
 
-**Related FAQ**: How Do I Create a User Profile for [Another Person](/docs/faqs/create-a-user-profile-for-another-person/) or for [Another Business?](/docs/faqs/create-an-account-for-another-business/)
+**Related FAQ**: How Do I Create a User Profile for [Another Person](/docs/faqs/create-a-user-profile-for-another-person) or for [Another Business?](/docs/faqs/create-an-account-for-another-business-share-access)
 
 ---
 
-## Create an Account
+## Create an Account {#create-account}
 
 When you log in to HubRise for the first time, you will be asked to create an Account and a Location.
 A HubRise Account identifies your brand, while a Location refers to the point of sales within this brand, typically the physical outlet.
@@ -33,13 +34,13 @@ A HubRise Account identifies your brand, while a Location refers to the point of
 
 ---
 
-![Create an account on HubRise](../images/064-en-2x-create-account.png)
+![Create an account on HubRise](./images/064-2x-create-account.png)
 
-A small business will have one Account with one Location, while a larger business will have one Account with multiple Locations. For more information, see [Accounts](/docs/account/) and [Locations](/docs/locations/).
+A small business will have one Account with one Location, while a larger business will have one Account with multiple Locations. For more information, see [Accounts](/docs/account) and [Locations](/docs/locations).
 
-![Accounts and Locations example](../images/046-en-2x-accounts-locations.png)
+![Accounts and Locations example](./images/046-2x-accounts-locations.png)
 
-A User Profile can have access to multiple Accounts. On the other hand, different User Profiles can have access to the same Account with different permission levels. For more information, see [Permissions](/docs/permissions/).
+A User Profile can have access to multiple Accounts. On the other hand, different User Profiles can have access to the same Account with different permission levels. For more information, see [Permissions](/docs/permissions).
 
 ## Set Language Preference
 
@@ -49,13 +50,13 @@ You can set the language for your HubRise session by clicking the down arrow <In
 
 The HubRise interface is organised into the following sections:
 
-- **Dashboard**: Get an overview of your organisation's sales, orders, and new customers.
-- **Connections**: Connect new applications to your HubRise Account, and manage your existing connections.
-- **Data**: View orders, catalogs, customers and corresponding logs across your locations.
-- **Settings**: Add new locations, manage employee access and roles, view platform usage, check payment history or payment methods.
-- **Developer**: Access for developers to integrate new applications with HubRise.
+- **DASHBOARD**: Get an overview of your organisation's sales, orders, and new customers.
+- **CONNECTIONS**: Connect new applications to your HubRise Account, and manage your existing connections.
+- **DATA**: View orders, catalogs, customers and corresponding logs across your locations.
+- **SETTINGS**: Add new locations, manage employee access and roles, view platform usage, check payment history or payment methods.
+- **DEVELOPER**: Access for developers to integrate new applications with HubRise.
 
-![HubRise dashboard](../images/078-en-hubrise-dashboard.png)
+![HubRise dashboard](./images/078-hubrise-dashboard.png)
 
 If you want to get an overall view of an Account's performance, select **All locations**. If you want to narrow results to one Location within an Account, select the Account then the corresponding Location.
 
@@ -66,11 +67,11 @@ If you want to get an overall view of an Account's performance, select **All loc
 
 To log in to HubRise, visit the [HubRise Login page](https://manager.hubrise.com/login) or the [HubRise home page](https://www.hubrise.com). Enter your email address and password, then click **Login**.
 
-![HubRise Login Screen](../images/001-en-hubrise-login.png)
+![HubRise Login Screen](./images/001-hubrise-login.png)
 
 ---
 
-**Related FAQ**: <Link to="/docs/faqs/check-if-i-already-have-a-user-profile-in-hubrise/">How Do I Check If I Already Have a User Profile in HubRise?</Link>
+**Related FAQ**: [How Do I Check If I Already Have a User Profile in HubRise?](/docs/faqs/check-if-i-already-have-a-user-profile-in-hubrise)
 
 ---
 

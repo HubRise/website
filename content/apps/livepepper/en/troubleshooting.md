@@ -1,23 +1,22 @@
 ---
 title: Troubleshooting
-position: 5
+path_override: troubleshooting
+position: 6
 layout: documentation
 meta:
   title: Troubleshooting | LivePepper | HubRise
   description: Troubleshooting LivePepper connection with HubRise for your EPOS and other apps to work as a cohesive whole. Connect apps and synchronise your data.
 ---
 
-## Verify Product Mapping
+## Verify Product Mapping {#verify-mapping}
 
-To verify that all LivePepper menu items have had an EPOS code assigned, select **Maintenance** > **Custom Actions** menu from the left navigation panel. One of the reports displayed is **Missing POS codes**. It shows all products, deals and related attributes that do not have EPOS ref codes assigned.
+To confirm that every LivePepper menu item has an associated EPOS code, navigate to **Maintenance** > **Custom Actions** from the left navigation panel. Among the various reports displayed, you'll find one labeled **Missing POS codes**. This report lists all products, deals, and their related attributes lacking assigned EPOS ref codes.
 
-[comment]: # "Might want to include screenshot of this page here"
-
-Missing EPOS ref codes for payment methods, service type and delivery charges will not be reported here as these depend on the EPOS you are connecting with.
+Please note that missing EPOS ref codes for payment methods, service types, and delivery charges will not be reported in this section. Not all EPOS systems require these codes, so their absence isn't necessarily indicative of an error.
 
 ## Verify the Connection to HubRise
 
-These steps require that you have already connected LivePepper to HubRise. For more information on connecting LivePepper to HubRise, see [Connect to HubRise](/apps/livepepper/connect-hubrise/).
+These steps require that you have already connected LivePepper to HubRise. For more information on connecting LivePepper to HubRise, see [Connect to HubRise](/apps/livepepper/connect-hubrise).
 
 To verify the connection between LivePepper and HubRise, place a test order in LivePepper and check that it is transmitted to HubRise.
 
@@ -34,11 +33,11 @@ When LivePepper is connected to HubRise, orders placed in LivePepper are transmi
 
 To verify that your test order was transmitted to HubRise, follow these steps:
 
-1. Log in to your HubRise account. This can be done from your LivePepper back office by selecting **Settings > Add-ons**, then click **Go to your HubRise account**.
-1. If prompted, log in to your HubRise user account.
-1. From HubRise, click **Data** > **Orders**.
+1. Log in to your [HubRise account](https://manager.hubrise.com).
+1. If prompted, log in with your HubRise user profile, which is the email address you used when you created your account.
+1. From HubRise, click **DATA** > **ORDERS**.
 1. Find your test order. If you can see the order, the connection between LivePepper and HubRise is working correctly.
 
 ## LivePepper Support
 
-The LivePepper support team can be contacted at [support@livepepper.com](mailto:support@livepepper.com) for issues with the configuration of the online ordering system.
+The LivePepper support team can be contacted at support@livepepper.com for issues with the configuration of the online ordering system.

@@ -1,6 +1,7 @@
 ---
 title: Understanding Logs
-position: 4
+path_override: understanding-logs
+position: 5
 layout: documentation
 meta:
   title: Understanding Logs | Mailchimp | HubRise
@@ -9,19 +10,19 @@ meta:
 
 The main page on Mailchimp Bridge shows **Latest operations**. Each operation consists of requests sent from HubRise to Mailchimp Bridge, and from Mailchimp Bridge to Mailchimp.
 
-Logs are in JSON format. For more information, check our [documentation on JSON logs](/docs/hubrise-logs).
+Logs are in JSON format. For more information, check our [documentation on JSON logs](/docs/hubrise-logs/overview).
 
 ## Operations table
 
-The **Latest operations** table might contain an **ORDER** and/or a **CUSTOMER** column depending on the configuration options chosen. For more information, see [Configurations Options](/apps/mailchimp/configuration/#configuration-options).
+The **Latest operations** table might contain an **ORDER** and/or a **CUSTOMER** column depending on the configuration options chosen. For more information, see [Configurations Options](/apps/mailchimp/configuration).
 
 Operations with a **Customer** or **Order** entry indicate that a single customer was transferred to Mailchimp.
 
-![Mailchimp Bridge Operations Page](../images/001-en-2x-mailchimp-operations.png)
+![Mailchimp Bridge Operations Page](./images/001-2x-mailchimp-operations.png)
 
 You might also find automated **System request** entries. These can be ignored.
 
-![Mailchimp Bridge Operations Page](../images/002-en-mailchimp-operations-system-requests.png)
+![Mailchimp Bridge Operations Page](./images/002-mailchimp-operations-system-requests.png)
 
 Click on an operation to displays the JSON logs exchanged between HubRise and Mailchimp via Mailchimp Bridge. Information about each log is contained in three columns:
 
@@ -29,7 +30,7 @@ Click on an operation to displays the JSON logs exchanged between HubRise and Ma
 - **Direction**: The direction of the operation, i.e. whether data was sent from HubRise to Mailchimp Bridge or from Mailchimp Bridge to Mailchimp.
 - **Status**: The status of the request. The value `OK` indicates that the request processed successfully. The value `401` or any other value showing in red means that the request failed.
 
-![Mailchimp Logs](../images/003-en-mailchimp-operation-logs.png)
+![Mailchimp Logs](./images/003-mailchimp-operation-logs.png)
 
 Each log is divided into two parts: Request and Response. The former displays the information sent in the request, and the latter the response received.
 

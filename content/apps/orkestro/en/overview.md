@@ -1,5 +1,6 @@
 ---
 title: Overview
+path_override: "/"
 position: 1
 layout: documentation
 meta:
@@ -8,7 +9,6 @@ meta:
 gallery:
   - __gallery-001.png
   - __gallery-002.png
-path_override: /
 app_info:
   category: Delivery Management
   availability: United Kingdom
@@ -19,6 +19,6 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE:** This documentation is available <Link to="/fr/apps/orkestro" addLocalePrefix={false}>in French only</Link>.
+**IMPORTANT NOTE:** This documentation is available <Link href="/fr/apps/orkestro">in French only</Link>.
 
 ---

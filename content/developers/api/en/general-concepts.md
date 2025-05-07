@@ -1,5 +1,6 @@
 ---
 title: General Concepts
+path_override: general-concepts
 position: 1
 layout: documentation
 meta:
@@ -11,38 +12,37 @@ This chapter takes a close look at the API. If you're looking for a brief introd
 
 ## 1. Endpoints
 
-HubRise API is based on REST. It uses POST, GET, PATCH, PUT and DELETE HTTP methods to create, retrieve, list, update and delete resources. Data is transmitted in the JSON format.
+HubRise API is based on REST. It uses **POST**, **GET**, **PATCH**, **PUT** and **DELETE** HTTP methods to create, retrieve, list, update and delete resources. Data is exchanged in JSON format.
 
-An **endpoint** is an API operation. It comprises a URL and HTTP method. Endpoints URLs are rooted at https://api.hubrise.com/v1.
+An **endpoint** defines an API function, consisting of a URL and HTTP method. Endpoints URLs are rooted at `https://api.hubrise.com/v1`.
 
-Versions are included in the endpoints URLs for compatibility purposes. No breaking change will be made without changing the version, and old versions will be supported for a while.
+API versions are embedded in the endpoints URLs for compatibility purposes. Breaking changes will only occur with version updates, and older versions will remain supported for a while.
 
-Every API request must include an access token, which uniquely identifies the connection. The token is passed in the `X-Access-Token` header:
+Each API call must include an access token, which uniquely identifies the connection. The token is passed in the `X-Access-Token` header:
 
 ```http
 GET https://api.hubrise.com/v1/location/orders
 X-Access-Token: [your_access_token]
 ```
 
-Access tokens are created via OAuth 2.0. See [Authentication](/developers/api/authentication).
+Access tokens are generated via OAuth 2.0. For more details, see [Authentication](/developers/api/authentication).
 
-**Note**: further in this documentation, the root part of the request URLs will be omitted. For example, we will use `GET /location/orders` in lieu of `GET https://api.hubrise.com/v1/location/orders`.
+In this documentation, URLs are abbreviated for clarity. For instance, `GET /location/orders` will be used instead of the full `GET https://api.hubrise.com/v1/location/orders`.
 
 ## 2. Pagination
 
-**Index endpoints** return a collection of results. For example, `GET /location/orders` is an index endpoint.
+Some endpoints like `GET /location/orders` return a collection of results. They are called **index endpoints**.
 
-Index endpoints paginate results. A maximum of 100 results are returned in a response. If more results exist, the request returns the first set of results along with a `X-Cursor-Next` response header.
+These endpoints paginate their results. Each response can contain up to 100 results. If there are more results available, the response will include the initial batch and an `X-Cursor-Next` header.
 
-To get the next set of results, send a new request and include the previously returned cursor value in the `cursor` URL query parameter. Repeat until the request returns no cursor value, which indicates the last set has been returned.
+To retrieve the next batch of results, send a new request and include the previously returned cursor value in the `cursor` URL query parameter. Repeat until there is no cursor value in the response, which indicates that you have received the final batch.
 
-Index endpoints accept 2 optional parameters:
+All index endpoints accept two parameters:
 
-- `count`: the maximum number of results to return per request. The default (and maximum) value is 100. Decrease this value if needed.
+- `count`: The maximum number of results to return per request. The default and maximum value is 100. Decrease this value if needed.
+- `cursor`: The next batch of results to return. Must be set to the value received in the previous `X-Cursor-Next` response header to iterate through the results. If left unset, the first batch is returned.
 
-- `cursor`: the next subset of results to return. Must be set to the value received in the previous `X-Cursor-Next` response header to iterate through the results. If this parameter is omitted, the first set of results is returned.
-
-### Example for a request returning 150 results:
+##### Example of request with 150 results:
 
 First request:
 
@@ -72,7 +72,7 @@ Body:
   ]
 ```
 
-## 3. Rate Limiting
+## 3. Rate Limiting {#rate-limiting}
 
 If a connection makes too many requests over a defined time window, HubRise will return a `429` (Too Many Requests) HTTP status code. This keeps HubRise performance consistent for all users.
 
@@ -103,16 +103,16 @@ This parameter is **not** accepted in a GET request, since a GET request should 
 
 ## 5. Common Data Types
 
-### Monetary Values
+### Monetary Values {#monetary-values}
 
 A number with 2 decimal digits, followed by a space and the [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency name. Can be preceded by a `-` sign for negative amounts.
 
-#### Examples:
+##### Examples:
 
 - `8.90 EUR`
 - `-0.05 GBP`
 
-### Decimal Values
+### Decimal Values {#decimal-values}
 
 HubRise represent decimal values as **strings** to eliminate any ambiguity and loss of precision during the parsing.
 
@@ -120,32 +120,47 @@ Most JSON implementations parse decimal numbers (eg `1.5`) as floating point num
 
 In order to enforce the use of a "precise" decimal type and to avoid the default floating point number conversion by JSON parsers, decimal values are encoded as strings in HubRise. These strings should be handled using either a decimal built-in type or a fixed point number library (such as `bigdecimal` in Ruby) and never converted to floating point numbers.
 
-#### Examples:
+##### Examples:
 
 - `"1"`
 - `"-2.5"`
 
-### Dates and Times
+### Dates and Times {#dates-and-times}
 
 Dates and times are encoded in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601).
 
 Locations have a default timezone, which can be configured from the back office. HubRise converts times to the location default timezone, for all resources attached to a location (eg orders).
 
-#### Examples:
+##### Examples:
 
 - Date: `2020-08-20`
 - Time: `2020-08-20T06:42:46+02:00`
 
-### Days of the Week
+### Days of the Week {#days-of-the-week}
 
 A `DOW` (= "Days of the Week") value designates specific days of the week.
 
 It is a string of 7 characters, where each character represents a day of the week, from Monday (`1`) to Sunday (`7`). When the digit is replaced by `-`, the particular day is excluded from the list.
 
-#### Examples:
+##### Examples:
 
 - `1234567`: every day of the week
 - `12----7`: Monday, Tuesday and Sunday
+
+### Timezones {#timezones}
+
+Timezones are encoded in this format:
+
+```json
+{
+  "name": "Europe/Paris",
+  "offset": 3600
+}
+```
+
+The timezone `name` is encoded in [IANA Time Zone Database format](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). For example, the timezone name for Paris is `Europe/Paris`.
+
+The timezone `offset` is deprecated and will be removed in a future version of the API, as it does not provide information about daylight saving time.
 
 ## 6. HTTP Status Codes
 
@@ -187,23 +202,33 @@ The possible `error_type`s are:
 - `internal_error`
 - `routing_error`
 
-The response may also include a field breakdown, like this:
+Depending on the error, the response may include:
 
-```json
-{
-  "message": "Validation failed",
-  "errors": [
+- A field breakdown for `422` errors:
+
+  ```json
     {
-      "field": "price",
-      "message": "'abc' is not a valid monetary amount"
-    },
-    ...
-  ],
-  "error_type": "unprocessable_entity"
-}
-```
+      "message": "Validation failed",
+      "errors": [
+        {
+          "field": "price",
+          "message": "'abc' is not a valid monetary amount"
+        },
+        ...
+      ],
+      "error_type": "unprocessable_entity"
+    }
+  ```
 
-## 8. Private Refs
+- An error message for `401` errors:
+  ```json
+  {
+    "message": "The connection has been blocked",
+    "error_type": "unauthorized"
+  }
+  ```
+
+## 8. Private Refs {#private-refs}
 
 HubRise allows API clients to attach their own internal references to various objects, such as orders, order items, customers, and a few others. This can be convenient when clients need to link HubRise objects to their internal objects, but they cannot store HubRise ids.
 
@@ -221,7 +246,7 @@ When client A later retrieves the order, the `private_ref` is included in the re
 
 **CLIENT A**: `GET /location/orders/sd89mm`
 
-#### Response:
+##### Response:
 
 ```json
 {
@@ -235,7 +260,7 @@ However, when client B retrieves that same order, no `private_ref` is included i
 
 **CLIENT B**: `GET /location/orders/sd89mm`
 
-#### Response:
+##### Response:
 
 ```json
 {
@@ -251,7 +276,7 @@ HubRise indexes private refs efficiently, which allows clients to use private re
 
 **CLIENT A**: `GET /location/orders?private_ref=6986`
 
-#### Response:
+##### Response:
 
 ```json
 [
@@ -262,3 +287,14 @@ HubRise indexes private refs efficiently, which allows clients to use private re
   }
 ]
 ```
+
+## 9. CORS {#cors}
+
+CORS (Cross-Origin Resource Sharing) is a mechanism that restricts the origins that can execute requests against a given API.
+
+HubRise API and HubRise oAuth 2.0 server use different CORS policies:
+
+- HubRise API allows requests to be sent from a browser, from any origin. This is done by setting the `Access-Control-Allow-Origin` header to `*`.
+- HubRise oAuth 2.0 server enforces the stricter default CORS policy. As a result, you will not be able to create or revoke tokens from a browser. The rationale is that doing so would expose your client secret.
+
+If you choose to send API requests from the user's browser rather from your server, this will give your users access to their personal access token. You may only do this if your page can only be accessed by trusted users. For security reasons, prefer to use a proxy server to hide the access token.

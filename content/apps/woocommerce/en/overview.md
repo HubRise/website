@@ -1,16 +1,16 @@
 ---
 title: Overview
+path_override: "/"
 position: 1
 layout: documentation
 meta:
   title: Overview | WooCommerce | HubRise
   description: WooCommerce overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 gallery:
-  - __gallery-en-001.jpg
-  - __gallery-en-002.png
-  - __gallery-en-003.png
-  - __gallery-en-004.png
-path_override: /
+  - __gallery-001.jpg
+  - __gallery-002.png
+  - __gallery-003.png
+  - __gallery-004.png
 app_info:
   category: Online Ordering
   availability: Worldwide
@@ -20,26 +20,26 @@ app_info:
 
 ## Description
 
-WooCommerce is an open source e-commerce platform, built on WordPress, designed for small to large-sized online merchants. Businesses can sell digital and physical products, manage inventory and shipping, take secure payments, and sort taxes automatically.
+WooCommerce is an open-source e-commerce platform, built on WordPress, specifically tailored for online merchants ranging from small to large-sized businesses. This platform enables businesses to sell both digital and physical products, manage inventory and shipping, process secure payments, and automatically handle taxes.
 
-WooCommerce is a plugin that must be installed on a WordPress website. While it offers a lot of features out of the box, you can also expand the functionality of WooCommerce via themes, plugins, extensions, or even by editing the plugin code itself.
+WooCommerce operates as a plugin that requires installation on a WordPress website. Despite providing a broad range of features natively, you have the option to enhance WooCommerce's functionality. This can be achieved through themes, additional plugins, extensions, or even by modifying the plugin's code directly.
 
-WooCommerce was launched in 2011. It is the most widely used e-commerce solution in 2020, powering 4 out of 10 online ordering websites.
+Since its launch in 2011, WooCommerce has become the most prevalent e-commerce solution. By 2020, it powered 4 out of every 10 online ordering websites, solidifying its position as a leading player in the online marketplace.
 
 ## Integration Features
 
-Connecting WooCommerce to HubRise allows WooCommerce to:
+Connecting WooCommerce Bridge allows HubRise to:
 
-- Push orders into HubRise.
-- Pull order status from HubRise into WooCommerce.
-- Push customer information into HubRise.
-- Pull a product catalog from HubRise.
+- Pull orders from WooCommerce, including order status.
+- Pull customer information from WooCommerce.
+- Push a catalog into WooCommerce, with variants support.
+- Synchronise inventory with WooCommerce.
 
 ## Why Connect?
 
 WooCommerce can be connected to HubRise for your website and other apps you use every day to work as a cohesive whole. It could be your EPOS or your preferred marketing solution. Connecting with HubRise allows you to sync your product catalog, your customer and order information.
 
-Thanks to HubRise, synchronise your menu, your customer and order information with your EPOS, online ordering, food delivery platforms (including Deliveroo, Uber Eats and Just Eat), delivery management, delivery services, eMarketing (SMS/emailing), business intelligence, stock management, loyalty systems, and more. The number of compatible applications increases every month. To see which apps you can connect, see our [Apps page](/apps).
+With HubRise, you can synchronise your menu, customer information, and orders between your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats, and Just Eat), delivery management solutions or delivery services, eMarketing solutions (SMS/emailing), business intelligence, inventory, and customer loyalty systems, and much more. The number of compatible applications increases every month. To discover the apps you can connect, visit our [Apps page](/apps).
 
 ## Prerequisites
 

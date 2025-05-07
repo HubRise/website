@@ -14,7 +14,8 @@ content:
   apps:
     title: New integrations for your app
     description: |
-      HubRise connects your app to the ones your customers use. Focus on the development of your app, while we look after integrations. [More than 80 available integrations](/apps).
+      HubRise connects your app to the ones your customers use. Focus on the development of your app, while we look after integrations. [More than 100 available integrations](/apps).
+    link_url: /apps
     categories:
       - EPOS
       - Online Ordering
@@ -22,9 +23,6 @@ content:
       - Marketing Solutions
       - Loyalty cards
       - And More
-    image:
-      normal: frontpage/app-lists.png
-      hover: frontpage/app-lists-hover.png
 
   api:
     title: Public and easy to use API
@@ -44,7 +42,7 @@ content:
     title: Fair pricing for stores
     description: |
       No setup fee. No commitment. No contract.
-      Unlimited number of connections. 25€ per month.
+      Unlimited number of connections. €35 per month.
     button_label: Start free trial
     button_url: https://manager.hubrise.com/signup
     link_label: Pricing page
@@ -58,14 +56,14 @@ content:
     team_members:
       - name: Alberto
         filename: alberto.jpg
-      - name: Alex
-        filename: alex.jpg
       - name: Antoine
         filename: antoine.jpg
-      - name: Dan
-        filename: dan.jpg
       - name: Dimitri
         filename: dimitri.jpg
+      - name: Félix L.
+        filename: felix_l.jpg
+      - name: Janaina
+        filename: janaina.jpg
       - name: Nick
         filename: nick.jpg
       - name: Vova

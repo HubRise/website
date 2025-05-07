@@ -1,59 +1,63 @@
 module.exports = {
   root: true,
-  ignorePatterns: ["*.js"],
+  ignorePatterns: ["**/*.js"],
   parser: "@typescript-eslint/parser",
-  parserOptions: {
-    ecmaFeatures: {
-      impliedStrict: true,
-    },
-    sourceType: "module",
-  },
   env: {
     browser: true,
     node: true,
     jest: true,
     "cypress/globals": true,
   },
+  plugins: ["unused-imports", "cypress"],
   extends: [
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:cypress/recommended",
+    "next",
+    "next/core-web-vitals",
+    "prettier",
     "plugin:import/typescript",
     "plugin:import/errors",
     "plugin:import/warnings",
+    "plugin:cypress/recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended", // To display prettier errors as ESLint errors. Make sure this is always the last configuration.
   ],
-  plugins: ["prettier", "cypress"],
+  globals: {
+    React: "readonly",
+  },
   rules: {
     // Separate import groups.
     "import/order": [
       "error",
       {
         "newlines-between": "always",
+        groups: ["builtin", "external", "internal", "parent", "sibling", "index", "object"],
+        alphabetize: {
+          order: "asc",
+        },
       },
     ],
-    "prettier/prettier": "error",
-    "import/prefer-default-export": "off",
-    "react/prop-types": 0, // prop-types are irrelevant with TypeScript
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
     "cypress/no-assigning-return-values": "error",
     "cypress/no-unnecessary-waiting": "error",
     "cypress/assertion-before-screenshot": "warn",
-    "@typescript-eslint/ban-ts-comment": 0,
+    "import/prefer-default-export": "off",
+    "prettier/prettier": "error",
+    "unused-imports/no-unused-imports-ts": "error",
     "@typescript-eslint/no-explicit-any": 0,
-    "@typescript-eslint/no-unused-vars": 0,
-    "@typescript-eslint/no-non-null-assertion": 0,
+    "@typescript-eslint/no-unused-vars": [
+      2,
+      {
+        argsIgnorePattern: "^_", // Ignore method arguments matching this regexp
+      },
+    ],
   },
   settings: {
     "import/resolver": {
-      // Allow `@/` to map to `src/client/`
       alias: {
         map: [
-          ["@assets", "./src/assets"],
-          ["@layouts", "./src/layouts"],
-          ["@utils", "./src/utils"],
+          ["@app", "./app"],
+          ["@components", "./components"],
+          ["@hooks", "./hooks"],
+          ["@layouts", "./layouts"],
+          ["@utils", "./utils"],
         ],
         extensions: [".ts", ".tsx", ".js", ".jsx", ".json"],
       },

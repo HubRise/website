@@ -1,5 +1,6 @@
 ---
 title: Manage Orders
+path_override: manage-orders
 position: 5
 layout: documentation
 meta:
@@ -7,101 +8,86 @@ meta:
   description: Instructions on how to view order details, to update the order status, and to print a receipt. Connect apps and synchronise your data.
 ---
 
-OrderLine users can change the statuses flow to manage orders in the way that best suits the business. This section describes the default status flow to accept, or print the order receipt by selecting the corresponding button. To customise this flow, see [Set Order Statuses](/apps/orderline/settings/#set-order-statuses).
+OrderLine users can change the statuses flow to manage orders in the way that best suits the business. This section describes the default status flow to accept, or print the order receipt by selecting the corresponding button. To customise this flow, see [Order Status Flow](/apps/orderline/settings#order-status-flow).
 
-## View Order
+## Receive Orders
 
-To view the order details, select the Order Card. Click the close icon <InlineImage width="23" height="23">![OrderLine Close icon](../images/032-close.png)</InlineImage> or anywhere outside the Order Card to close it.
+Upon order receipt, OrderLine displays it under the **Today's Orders** or **Future Orders** tab, based on the delivery date.
 
-<video controls title="OrderLine Open and Close Orders Example">
-  <source src="../images/018-en-order-card-open-close.webm" type="video/webm"/>
-</video>
+OrderLine can also emit a sound notification to inform you of new orders. To configure sound notifications, go to the **Settings** page and open the **Notifications** tab. For more information, see [Notifications](/apps/orderline/settings#notifications).
 
-Order Cards display all the details needed to process the Order, including the following:
+---
+
+**IMPORTANT NOTE:** Browsers may block sound notifications. To keep them permanently enabled, follow the instructions in the FAQ [How Do I Keep Sound Notifications Enabled](/apps/orderline/faqs/keep-sound-notifications-enabled).
+
+---
+
+On first connection, OrderLine synchronises all orders from the past 30 days.
+
+![OrderLine Order displays](./images/018-2x-order-displays.png)
+
+## View Order {#view-order}
+
+To view the order details, click on the order card. To close it, click the close icon <InlineImage width="23" height="23">![OrderLine Close icon](../images/032-close.png)</InlineImage> or anywhere outside the card.
+
+Order cards display all the details needed to process the order, including the following:
 
 - Client address. A **View in Google Maps** link will be displayed if the online ordering solutions sends the GPS coordinates to HubRise.
-- Creation date and time the order was made.
+- Order creation date and time.
 - Expected date and time for delivery or collection requested by the customer.
-- Confirmed date and time will equal the expected time until an OrderLine user updates this to the actual delivery time the order can be processed.
-- Type indicates how the Order will be processed. Types include **DELIVERY**, **COLLECTION** or **EAT-IN**.
-- The order's current status. Users can update the status for an order, or print the order receipt by selecting the corresponding button.
+- Confirmed date and time, which initially matches the expected time, until an OrderLine user updates it to the actual delivery time.
+- Order type, indicating processing mode: **DELIVERY**, **COLLECTION** or **EAT-IN**.
+- List of products to prepare, including customer notes if any.
+- Current order status. Users can update the status for an order, or print the order receipt by selecting the corresponding button.
 
-![OrderLine Order Card Details](../images/019-en-order-card-details.png)
+![OrderLine Order Card Details](./images/019-2x-order-card-details.png)
 
-## Accept Order
+## Update Order's Status
 
-To accept an Order, open the Order Card and click **ACCEPTED**.
+To update an order's status, open the order card and choose the appropriate status button.
 
-Users can add a personalised message to the customer, adjust the delivery time, and have those updates delivered to the customer. To update the date or add a comment, click on the pen <InlineImage width="44" height="38">![OrderLine Pen Icon](../images/036-pen.jpg)</InlineImage>, adjust the date and time, write your message and click **ACCEPTED**. An automated email will be sent to the customer with your message and the updated delivery time.
+Depending on your OrderLine configuration, you may have the option to add extra details during specific status updates. To adjust the configuration, see [Additional Data Prompt](/apps/orderline/settings#additional-data-prompt). These prompts can be useful in certain situations, such as:
+
+- Providing an optional **Message for the customer** when marking an order as **Cancelled**, to justify the cancellation.
+- Specifying a **Confirmed time** for delivery, when an order is marked as **Accepted** but cannot be delivered at the expected time. If no **Confirmed time** is specified, the initial expected delivery time will be used.
+
+To modify the delivery time or add a message for your client, click on the pen icon beside the status button. After making your adjustments, click the status button to confirm.
+
+![Status flow example](./images/012-2x-add-prompt-in-delivery.png)
 
 ---
 
-**IMPORTANT NOTE:** Delivery time updates and messaging must be supported by your online ordering system. For more information on how to set it up, see [Additional Data Prompt](/apps/orderline/settings/##additional-data-prompt).
+**IMPORTANT NOTE:** Your online ordering system must support delivery time updates and messaging for additional data prompts to be taken into account.
 
 ---
 
-Once accepted, the Order status changes to **Accepted**. You may print the order receipt and change the status again when you are ready.
+Certain status updates, such as marking an order as **Completed**, might cause the order to disappear from the **Today's Orders** tab, depending on your OrderLine configuration. To view it again, click **VIEW** on the **hidden orders** card, or select the **Order History** tab. To adjust the hidden statuses, see [Hide Orders](/apps/orderline/settings#hide-orders).
 
-<video controls title="OrderLine Accept Order Example">
-  <source src="../images/020-en-accept-order.webm" type="video/webm"/>
-</video>
-
-## Reject Order
-
-To reject an order, go to the order details and click **REJECTED**. You may add a comment when rejecting the order. For more information, see [Additional Data Prompt](/apps/orderline/settings/#additional-data-prompt).
-
-Once rejected, the order disappears from **Today's Orders** list and becomes hidden. You can click on **Today's Orders** hidden card to see all orders and reopen them if needed.
-
-<video controls title="OrderLine Reject Order Example">
-  <source src="../images/021-en-reject-order.webm" type="video/webm"/>
-</video>
-
-## Mark Order as In Delivery
-
-With the order in **Accepted** status, select **IN DELIVERY** when the Order is being delivered to the customer.
-
-<video controls title="OrderLine Order in Delivery Example">
-  <source src="../images/022-en-order-set-status-in-delivery.webm" type="video/webm"/>
-</video>
-
-## Complete Order
-
-Orders set with the status **In Delivery** can be updated to the following:
-
-- Click **COMPLETED** when the Order has been delivered finished. Once set to completed, you can print the order receipt but not change its status again.
-- Click **DELIVERY FAILED** if the Order can not be successfully delivered.
-
-Completed Orders are hidden from **Today's Orders** by default. Click the **Today's Orders** hidden card to see it again.
-
-<video controls title="OrderLine Complete Order Example">
-  <source src="../images/023-en-order-set-completed.webm" type="video/webm"/>
-</video>
+![OrderLine Hidden Orders Card](./images/039-2x-hidden-orders-card.png)
 
 ## Print Order
 
-OrderLine connects to printers recognised by the operating system. It uses the system print dialog to print receipts.
+OrderLine supports printing on any printer recognised by your web browser via the system's print dialog.
 
-To print an Order receipt from a local printer, follow these steps:
+To print an order receipt, follow these steps:
 
-1. View order details.
+1. Open the order card.
 1. Click **PRINT**.
 1. Follow the instructions on the browser print dialog.
 
-OrderLine also prints order receipts automatically upon order reception, skipping the print dialog. Auto printing requires the printer to be registered in Google Cloud Print. For more details, see [Printing](/apps/orderline/settings/#printing).
+## Receipts
 
-Receipts are presented into sections for readability with a solid line starting and ending each section. These reflect the same information as listed on the Order Card. For more information on Order Cards see [OrderLine View Order](#view-order).
-
-![OrderLine Order Receipt Example](../images/030-en-2x-receipt-example.jpg)
+Receipts are presented into sections for readability with a solid line starting and ending each section, mirroring the order card's information. For more information on order cards, see [View Order](#view-order).
 
 Receipts include the following information:
 
-- The Order type. Types include **DELIVERY**, **COLLECTION** or **EAT-IN**.
-- Payment type.
-- The address and delivery comments with GPS coordinates, if the online ordering solutions sends the GPS coordinates to HubRise.
-- The delivery time confirmed by users to reflect the actual delivery time, if supported by the EPOS system. For more information, see [Additional Data Prompt](/apps/orderline/settings/#additional-data-prompt).
-- Deals are listed with the name of the deal followed by the list of products included in the deal.
-- Products the client ordered are grouped together with additions and exclusions listed in bullet points including:
-  - Standard items removed from the product are struck out with a solid line.
-  - Options.
-  - Toppings or other additions.
-- Reference displays the Order number. Delivery date and time will display only if the confirmed delivery time differs from the original delivery time.
+- Order type: **DELIVERY**, **COLLECTION** or **EAT-IN**.
+- Payment method.
+- Delivery address, comments, and GPS coordinates (if supplied by the online ordering solution).
+- Expected date and time.
+- Confirmed date and time will only be displayed if it differs from the expected delivery time.
+- Deal names followed by the associated products.
+- Ordered products, grouped with any included additions or exclusions. Standard options that were removed are struck out.
+- Order number reference.
+
+![OrderLine Order Receipt Example](./images/030-2x-receipt-example.png)

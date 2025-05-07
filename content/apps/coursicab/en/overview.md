@@ -1,16 +1,16 @@
 ---
 title: Overview
+path_override: "/"
 position: 1
 layout: documentation
 meta:
   title: Overview | CoursiCab | HubRise
   description: CoursiCab overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
-path_override: /
 ---
 
 ---
 
-**IMPORTANT NOTE**: Full documentation available <Link to="/fr/apps/coursicab" addLocalePrefix={false}>in French</Link>.
+**IMPORTANT NOTE:** Full documentation available <Link href="/fr/apps/coursicab">in French</Link>.
 
 ---
 

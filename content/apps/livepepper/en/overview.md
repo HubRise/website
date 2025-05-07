@@ -1,5 +1,6 @@
 ---
 title: Overview
+path_override: "/"
 position: 1
 layout: documentation
 meta:
@@ -10,11 +11,10 @@ gallery:
   - __gallery-002.png
   - __gallery-003.png
   - __gallery-004.png
-path_override: /
 app_info:
   category: Online Ordering
   availability: Worldwide
-  price_range: €69-€109 / month
+  price_range: "€69-€109 / month"
   website: https://www.livepepper.com
   contact: contact@livepepper.com / +33 4 92 38 09 82
 ---
@@ -29,13 +29,12 @@ Designed for both independent restaurants and franchises, LivePepper comes with 
 
 LivePepper can create a full website including static marketing pages and online ordering. Restaurants can also incorporate LivePepper's online ordering module into an existing marketing website. LivePepper websites can be customised from a template, or designed from scratch and tailored to the restaurant's graphical charter and specifications.
 
-Restaurant managers have complete control over their LivePepper website.
-From the back office they can:
+Restaurant managers have complete control over their LivePepper website. From the back office they can:
 
 - Make changes to the marketing website copy and assets.
 - Create and update the online menu, with product customisation and limit on toppings.
 - Set up promotions, loyalty and a referral program.
-- Change business hours and vacation periods.
+- Change business hours and holiday periods.
 - Configure available delivery methods, times and areas as well as preparation time and charges.
 - See statistics on a dashboard or export data for external analysis.
 - Add new payment methods.
@@ -47,12 +46,12 @@ Finally, customers can contract LivePepper to manually populate their catalog's 
 
 Connecting LivePepper to HubRise allows LivePepper to:
 
-- Push orders into HubRise, including order status.
 - Pull orders from HubRise, including order status.
-- Push customer information into HubRise, including loyalty.
 - Pull customer information from HubRise, including loyalty.
-- Push the menu into a HubRise catalog.
-- Pull the menu from a HubRise catalog.
+- Push orders into HubRise, including order status.
+- Push customer information into HubRise, including loyalty.
+- Push a catalog into HubRise.
+- Pull a catalog from HubRise.
 - Synchronise final delivery time with HubRise.
 
 LivePepper can be connected to HubRise from the LivePepper back office.

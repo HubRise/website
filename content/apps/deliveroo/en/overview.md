@@ -1,14 +1,14 @@
 ---
 title: Overview
+path_override: "/"
 position: 1
 layout: documentation
 meta:
   title: Overview | Deliveroo | HubRise
   description: Deliveroo overview, reasons for connecting it to HubRise and summary of integrated features. Synchronise data between your EPOS and your apps.
 gallery:
-  - __gallery-en-001.png
-  - __gallery-en-002.png
-path_override: /
+  - __gallery-001.png
+  - __gallery-002.png
 app_info:
   category: Food Ordering Platforms
   availability: United Kingdom, Netherlands, France, Belgium, Ireland, Spain, Italy, Australia, New Zealand, Singapore, Hong Kong, United Arab Emirates, and Kuwait
@@ -18,29 +18,24 @@ app_info:
 
 ## Description
 
-Deliveroo is an online delivery platform for restaurants and convenience stores.
-It is based in the United Kingdom but operates in 13 different countries in Europe, Asia, and Oceania.
+Deliveroo is an online ordering and delivery platform for restaurants and convenience stores. It is based in the United Kingdom but operates in 13 different countries in Europe, Asia, and Oceania.
 
 Deliveroo connects to your HubRise account through Deliveroo Bridge, an app developed by HubRise.
 
 ## Integration Features
 
-Connecting Deliveroo Bridge allows Deliveroo to:
+Connecting Deliveroo Bridge allows HubRise to:
 
-- Push orders to HubRise, including order status.
-- Push delivery information to HubRise, for orders delivered by your team.
+- Pull orders from Deliveroo, including order status.
+- Pull customer information from Deliveroo, for orders delivered by the restaurant.
+- Push a catalog into Deliveroo, with variants support.
+- Synchronise inventory with HubRise.
 
-![Diagram of the connection flow between Deliveroo, Deliveroo Bridge, and HubRise](../images/000-en-2x-connection-diagram.png)
-
----
-
-**IMPORTANT NOTE:** Pulling catalog and inventory from HubRise will soon be supported. Contact us for more information.
+![Diagram of the connection flow between Deliveroo, Deliveroo Bridge, and HubRise](./images/000-2x-connection-diagram.png)
 
 ---
 
----
-
-**IMPORTANT NOTE:** OrderPad tablets are currently required to receive orders in HubRise. Deliveroo is planning to support tabletless integration by mid-2022.
+**IMPORTANT NOTE:** HubRise has partnered with Deliveroo to offer a new tabletless integration experience. This allows you to receive Deliveroo orders directly in HubRise without the need for a Deliveroo tablet. For more information, see [Can I Stop Using the Deliveroo Tablet?](/apps/deliveroo/faqs/deliveroo-tabletless).
 
 ---
 
