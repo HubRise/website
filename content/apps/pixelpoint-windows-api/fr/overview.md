@@ -36,6 +36,7 @@ Connecter PAR PixelPoint à HubRise permet à votre logiciel de caisse de :
 
 - Recevoir les commandes de HubRise.
 - Recevoir les informations clients de HubRise.
+- Envoyer un catalogue à HubRise.
 
 PixelPoint Windows API peut être connecté à HubRise via le support de Slowey Systems.
 
