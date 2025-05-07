@@ -3,12 +3,12 @@ meta:
   description: Anyone can contribute to the HubRise online documentation. Check this page if you want to kow how to contribute by giving feedback or updating technical documentation content.
 content:
   hero:
-    title: Contribute to the Documentation
-    description:
-      paragraph_1: If you would like to give us feedback or if you need to update your app documentation, you are in the right page. Here you will find information on how to contribute to the documentation available on this website.
-      # paragraph_2:
-      #  button: more sense
-      #  text: than this random content.
+    slug: contributing
+    title:
+      contribute: Contribute
+      to: to the
+      doc: Documentation
+    description: If you would like to give us feedback or if you need to update your app documentation, you are in the right page. Here you will find information on how to contribute to the documentation available on this website.
   thumbs:
     - title: How to Contribute
       description: Things to know before contributing.
@@ -34,3 +34,7 @@ content:
       description: Instructions to create diagrams.
       to: /contributing/diagram-guide
       icon: schema
+  getStarted:
+    title: Need Help Getting Started?
+    description: Our integration support team is here for you at every step of the process.
+    button_label: Send Us a Message

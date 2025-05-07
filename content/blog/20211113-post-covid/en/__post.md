@@ -9,7 +9,7 @@ meta:
 excerpt: "Press Release: HubRise Speeds Up Digital Transition for Retailers and Restaurateurs Post-COVID by Simplifying Integration with Over 70 Third-Party Applications."
 ---
 
-**Forced to accelerate their digital transformation during the crisis, merchants and restaurateurs aare now using an increasing number of applications. As they reopen, it is crucial to optimise operations to avoid multiple screens, manual data entry, imports/exports, and copy/pasting. HubRise, an innovation born in Sophia-Antipolis, meets this challenge by easily connecting more than 70 third-party applications, offering merchants a digital environment and tools previously reserved for large market players only.**
+_Forced to accelerate their digital transformation during the crisis, merchants and restaurateurs aare now using an increasing number of applications. As they reopen, it is crucial to optimise operations to avoid multiple screens, manual data entry, imports/exports, and copy/pasting. HubRise, an innovation born in Sophia-Antipolis, meets this challenge by easily connecting more than 70 third-party applications, offering merchants a digital environment and tools previously reserved for large market players only._
 
 ## Retail and Restaurant Businesses Must Adapt to a More Digitalised, Connected "Post-COVID" World
 

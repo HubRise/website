@@ -1,27 +1,28 @@
-import Block from "@components/Block"
-import { BlockContent, BlockContentButton } from "@components/BlockContent"
-import { useLayoutContext } from "@components/LayoutContext"
+import PageHero from "@components/PageHero"
 import { DocumentationIndexYaml } from "@layouts/DocumentationIndex/types"
-import { text } from "@utils/misc"
 
 const Hero = (hero: DocumentationIndexYaml["content"]["hero"]): JSX.Element => {
-  const { forms } = useLayoutContext()
-  const { title, description } = hero
+  const { slug, title, description } = hero
 
-  return (
-    <Block backgroundColor="white" title={title}>
-      <BlockContent>
-        <div>{text(description.paragraph_1)}</div>
+  const renderTitle = () => {
+    if (slug === "developers") {
+      return (
+        <>
+          {title.connect} <span>{title.app}</span> {title.to} <span>{title.hubrise}</span>
+        </>
+      )
+    }
 
-        {description.paragraph_2 && (
-          <div>
-            <BlockContentButton onClick={forms.contact.toggle}>{description.paragraph_2.button}</BlockContentButton>
-            {text(description.paragraph_2.text)}
-          </div>
-        )}
-      </BlockContent>
-    </Block>
-  )
+    if (slug === "contributing") {
+      return (
+        <>
+          <span>{title.contribute}</span> {title.to} <span>{title.doc}</span>
+        </>
+      )
+    }
+  }
+
+  return <PageHero title={renderTitle()} description={description} />
 }
 
 export default Hero

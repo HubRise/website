@@ -2,21 +2,23 @@
 
 import * as React from "react"
 
-import Layout from "@components/Blog/Layout"
-import Post from "@components/Blog/Post"
 import Breadcrumbs from "@components/Breadcrumbs"
 import DocumentationWrapper from "@components/DocumentationWrapper"
+import GetStarted from "@components/GetStarted"
 import useTranslation from "@hooks/client/useTranslation"
-import { BlogArchives, BlogMdFile } from "@utils/BlogIndexer/types"
+import { BlogMdFile } from "@utils/BlogIndexer/types"
 import { DocLink, Href } from "@utils/DocIndexer/types"
 import { ContentImage, ContentImageWithAlt } from "@utils/contentImage"
+
+import Post from "./Post"
+import { BlogPostContainer, BlogPostWrapper } from "./Styles"
 
 export interface BlogPostProps {
   blogIndexUri: Href
   mdFile: BlogMdFile
   bannerImage?: ContentImage
-  archives: BlogArchives
   contentImages: Array<ContentImageWithAlt>
+  mdFiles: Array<BlogMdFile>
   children: React.ReactNode
 }
 
@@ -24,26 +26,32 @@ const BlogPost = ({
   blogIndexUri,
   mdFile,
   bannerImage,
-  archives,
   contentImages,
+  mdFiles,
   children,
 }: BlogPostProps): JSX.Element => {
   const { t } = useTranslation()
 
-  const breadcrumbs: Array<DocLink> = [
-    { label: t("blog.title"), uri: blogIndexUri },
-    { label: mdFile.frontMatter.title, uri: mdFile.uri },
-  ]
+  const breadcrumbs: Array<DocLink> = [{ label: t("blog.title"), uri: blogIndexUri }]
+
+  const getStarted = {
+    title: t("blog.get_started.title"),
+    description: t("blog.get_started.description"),
+    button_label: t("blog.get_started.button_label"),
+  }
 
   return (
     <DocumentationWrapper contentImages={contentImages} title={mdFile.frontMatter.title}>
-      <Breadcrumbs breadcrumbs={breadcrumbs} />
+      <BlogPostWrapper>
+        <BlogPostContainer>
+          <Breadcrumbs breadcrumbs={breadcrumbs} />
 
-      <Layout archives={archives}>
-        <Post mdFile={mdFile} bannerImage={bannerImage}>
-          {children}
-        </Post>
-      </Layout>
+          <Post mdFile={mdFile} mdFiles={mdFiles} bannerImage={bannerImage}>
+            {children}
+          </Post>
+        </BlogPostContainer>
+      </BlogPostWrapper>
+      <GetStarted getStarted={getStarted} />
     </DocumentationWrapper>
   )
 }

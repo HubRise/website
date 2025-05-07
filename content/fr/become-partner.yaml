@@ -1,0 +1,82 @@
+meta:
+  title: Become a partner | HubRise
+  description:
+content:
+  hero:
+    title:
+      part_1: One
+      part_2: API to Connect
+      part_3: All
+      part_4: the Apps Your Clients Need
+    description: Save time, focus on your product. We focus on helping our partners succeed by taking care of integrations. We add value to your product or service offering by making our apps available as white-label solutions skinned to match your branding. Save time and focus on what matters most — your product.
+  features:
+    - title: Robust API
+      description: Leverage our flexible and reliable API to support a wide range of integration needs and handle the high-volume order flows required by multi-location brands.
+    - title: Seamless Integrations
+      description: Connect with EPOS systems, delivery platforms, ordering solutions, and other business tools to ensure smooth, reliable operations.
+    - title: White-Label Service
+      description: Offer a fully integrated solution under your own brand, with HubRise powering the backend while remaining invisible to your clients.
+    - title: Integration Support
+      description: Get expert support throughout the integration process, along with audit tools that validate your setup and ensure long-term reliability.
+    - title: Unified Documentation
+      description: Access a single, comprehensive API with clear documentation covering all HubRise features — making development and integration faster and easier.
+    - title: Real-Time Synchronisation
+      description: Keep all systems aligned with real-time synchronisation of menus, stock levels, orders, customer data, and opening hours.
+    - title: Custom Branding
+      description: Apply your logo and brand identity to HubRise apps when needed, delivering a professional, cohesive experience to your users.
+    - title: Transparent Logs
+      description: Use detailed, accessible logs to simplify troubleshooting and gain full visibility into your integrations and data flows.
+  benefits:
+    title: Commercial Benefits Of An Integration
+    benefit_cards:
+      - title: Faster Time to Market
+        description: Accelerate your go-to-market strategy with a single integration that unlocks access to multiple delivery platforms, reducing onboarding time and sales friction for your clients.
+        image: faster-time-to-market.svg
+      - title: Value-Added Services
+        description: Enhance your product offering with integrated third-party solutions and services, helping you stand out from competitors and better meet your clients' operational needs.
+        image: value-added-services.svg
+      - title: Access to New Revenue Streams
+        description: Generate additional income through our partnership program, and create upsell opportunities by offering data centralisation and integrations to your existing customer base.
+        image: access-to-new-revenue-streams.svg
+      - title: Improved Client Retention
+        description: Deliver a smoother user experience by eliminating manual processes and syncing orders directly with EPOS systems — increasing client satisfaction and long-term loyalty.
+        image: improved-client-retention.svg
+  middleware:
+    title: HubRise, The Middleware That Simplifies Integrations
+    description: With a single integration effort, connect to an ever-growing ecosystem of complementary solutions integrated with HubRise. Transactions are stored in HubRise, giving your apps real-time access to your product catalogue, customer data, and orders.
+    content:
+      firstSide: HubRise offers software providers a streamlined way to enhance their products by delivering ready-made integrations with Point of Sale systems, food ordering platforms, online ordering, self ordering kiosks, delivery management or delivery services, loyalty and marketing tools, operations and inventory systems, and more.
+      secondSide: Connections can be managed by HubRise, or offered under your own brand. Our white-label connections and apps let you expand your integration offering under your own brand, providing your clients with the tools they need to complement your solution and deliver a fully integrated environment — without the complexity of managing multiple systems.
+  apps:
+    title: HubRise Apps, Your Branding
+    description: Software editors, resellers, dark kitchens and restaurant chains can now offer HubRise's order and product management apps under their own brand—with their logo, favicon, colors, and domain name.
+    tabs:
+      - label: Your Branded Order Manager
+        key: 0
+        content:
+          title: Your Branded Order Manager
+          description: Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+          image: frontpage/white-label.gif
+      - label: Your Branded Catalog Manager
+        key: 1
+        content:
+          title: Your Branded Catalog Manager
+          description: Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+          image: become-partner/catalog-manager.png
+      - label: |
+          Coming next: Your Branded Dashboard
+        key: 2
+        content:
+          title: |
+            Coming next: Your Branded Dashboard
+          description: Stay tuned — HubRise will also make its Dashboard available as a white-label app, fully skinned with your branding.
+          image: become-partner/branded-dashboard.png
+  metrics:
+    - number: 2M
+      title: API calls per day
+    - number: 99,98%
+      title: Uptime in 12 months
+    - number: 99,95%
+      title: Successful order injection
+    - number: 95%
+      title: API calls under 100ms

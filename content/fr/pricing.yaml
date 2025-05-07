@@ -4,30 +4,103 @@ meta:
   description:
 content:
   hero:
-    title: Un tarif accessible, sans engagement
-  plan:
-    pricing:
-      chunk_1: 35€ HT / mois
-      chunk_2: par point de vente
-    features:
-      - Nombre de commandes illimité
-      - Nombre de connexions illimité
-      - Pas de frais d'installation
-      - Aucun engagement
-    link:
-      text: Démarrer maintenant
-      to: https://manager.hubrise.com/signup
-  infos:
-    - title: Franchises / Chaînes
-      text: Bénéficiez d'une remise dès le 6ème point de vente.
-      link:
-        text: Voir les tarifs
-        to: /fr/faqs#chaines
-    - title: Dark Kitchen
-      text: Centralisez les commandes de vos marques virtuelles sur un seul point de vente.
-      link:
-        text: Voir les tarifs
-        to: /fr/faqs#dark-kitchen
-    - title: Revendeurs
-      text: Nous proposons un programme de partenariat, avec ou sans marque blanche.
-      button: Nous contacter
+    title:
+      simple: Simple,
+      fair: Fair
+      and: and
+      transparent: Transparent
+      pricing: Pricing
+    plan:
+      price: €35
+      tax: excl. VAT
+      period: per month / per location
+    proposals:
+      - title: Unlimited orders
+        text: No limit to the number of transactions sent through your account
+      - title: Unlimited connections
+        text: Connect as many apps as you like to your account
+      - title: No setup fee
+        text: Create an account. Your subscription starts when you are ready
+      - title: No commitment
+        text: Cancel your subscription autonomously, any time
+    included_features:
+      title: Included Features
+      description: Features are available with your HubRise subscription
+      button_label: Start today
+      button_link: link
+      list:
+        - text: Epos integration
+        - text: Other integrations, see our
+          link_label: Integrations page
+          link: /link
+        - text: Order management
+        - text: Menu Management
+        - text: Business Analytics
+        - text: Inventory Management
+        - text: Snoozing Products
+        - text: Pause Orders
+        - text: Opening hours Management
+        - text: Multi-location Support, see
+          link_label: special pricing
+          link: /link
+    additional_features:
+      title: Additional Features
+      description: Features available at an additional cost, with HubRise or one of HubRise +100 integrated partners
+      list:
+        - text: Connection of virtual brands, see
+          link_label: special pricing
+          link: /link
+        - text: Kitchen Display Screen
+        - text: Kiosks
+        - text: Online Ordering
+        - text: Dine-in apps
+        - text: Auto-Print
+        - text: Operations Management (Inventory, Purchasing)
+        - text: Delivery Management
+        - text: Delivery Services
+        - text: And more…
+  founder:
+    image: antoine.png
+    name: Antoine Monnier
+    job_title: Founder, HubRise
+    text: Since 2015, we've offered a solution 2-5x cheaper than alternativeplayers with comparable features. Our team is made up primarily of engineers, not salespeople, and as a self-funded company, we answer only to our customers." Antoine Monnier, Founder, HubRise
+  why_choose:
+    title: Why Choose HubRise?
+    cards:
+      - title: Specialsed Focus
+        text: HubRise is a middleware with a strong focus on its API and the quality of integrations, relying partners for solutions and services HubRise users need.
+      - title: Experienced team
+        text: HubRise team support and development team are composed of experienced engineers.
+      - title: Code and Infrastructure
+        text: Our code base highly technical, with a focus on robustness, scalability, and reliability.
+  special_pricing:
+    title: Special Pricing
+    chain_and_franchise:
+      title: Chain and Franchise pricing
+      description: Benefit from a volume discount for 6 locations or more, reduce your per location cost as you grow.
+      pricing_list:
+        - text: Locations 1 to 5
+          price: €35
+        - text: Locations 6 to 30
+          price: €30
+        - text: Locations 31 and more
+          price: €27
+      special_proposal: For 12 locations, the subscription will be €35 for the first 5 locations, then €30 for the next 7.
+    dark_kitchen:
+      title: Dark Kitchen
+      description: Specific pricing applies to dark kitchens operating multiple virtual brands. Subscription fees are volume-based, with a setup fee of €25 per brand, per platform, with discounts available for multiple connections
+      pricing_list_description: |
+        Monthly subscription varies depending on the number of orders:
+      pricing_list:
+        - text: 0 to 1,500 orders per month
+          price: €35
+        - text: 1,501 to 3,000 orders per month - standard subscription
+          price: €55
+        - text: 3,001 to 4,500 orders per month
+          price: €75
+      special_proposal: And so on, with an additional €20 for every additional 1,500 orders.
+    resellers_and_partners:
+      title: Resellers and Partners
+      description: HubRise offer a partnership program, with or without white labelling.
+      button_label: Find out more
+      button_link: link
