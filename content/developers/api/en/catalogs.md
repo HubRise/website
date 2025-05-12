@@ -381,15 +381,26 @@ A product belongs to a category. A product has one or several skus.
 
 ##### Parameters:
 
-| Name                                    | Type           | Description                                                                                                     |
-| --------------------------------------- | -------------- | --------------------------------------------------------------------------------------------------------------- |
-| `ref` <Label type="optional" />         | string         | The ref of the product.                                                                                         |
-| `category_ref`                          | string         | The ref of the parent category.                                                                                 |
-| `name`                                  | string         | The name of the product.                                                                                        |
-| `description` <Label type="optional" /> | string         | The description of the product.                                                                                 |
-| `tags` <Label type="optional" />        | string[]       | List of tags. A tag is a free text used to describe some particular characteristics of a product or a category. |
-| `image_ids` <Label type="optional" />   | string[]       | List of image ids attached to the product                                                                       |
-| `skus`                                  | [Sku](#skus)[] | List of skus of this product. A product must contain at least one sku.                                          |
+| Name                                            | Type                                                       | Description                                                                                                     |
+| ----------------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `ref` <Label type="optional" />                 | string                                                     | The ref of the product.                                                                                         |
+| `category_ref`                                  | string                                                     | The ref of the parent category.                                                                                 |
+| `name`                                          | string                                                     | The name of the product.                                                                                        |
+| `description` <Label type="optional" />         | string                                                     | The description of the product.                                                                                 |
+| `tags` <Label type="optional" />                | string[]                                                   | List of tags. A tag is a free text used to describe some particular characteristics of a product or a category. |
+| `tax_rate_delivery` <Label type="optional" />   | [decimal](/developers/api/general-concepts#decimal-values) | Tax rate (%) for delivery orders. See [Tax Rates](#product-tax-rates) for more information.                     |
+| `tax_rate_collection` <Label type="optional" /> | [decimal](/developers/api/general-concepts#decimal-values) | Tax rate (%) for collection orders.                                                                             |
+| `tax_rate_eat_in` <Label type="optional" />     | [decimal](/developers/api/general-concepts#decimal-values) | Tax rate (%) for eat-in orders.                                                                                 |
+| `image_ids` <Label type="optional" />           | string[]                                                   | List of image ids attached to the product                                                                       |
+| `skus`                                          | [Sku](#skus)[]                                             | List of skus of this product. A product must contain at least one sku.                                          |
+
+#### Tax Rates {#product-tax-rates}
+
+Each product in the catalog may specify a tax rate for different service types. Tax rates are decimal values representing percentages — for example, `"20.0"` means a 20% tax rate. If the rate is unknown, the field should be omitted or set to `null`. Do not use `"0"`, as it may be misinterpreted as a 0% rate.
+
+Tax rates are typically used by ordering solutions to return per-item tax breakdowns in orders and to display taxes to end users.
+
+Whether prices are tax-inclusive or tax-exclusive depends on the market. See the [Orders – Tax Rates](/developers/api/orders#tax-rates) section for more details.
 
 ##### Example:
 
@@ -399,6 +410,8 @@ A product belongs to a category. A product has one or several skus.
   "category_ref": "PIZ",
   "name": "Regina",
   "tags": ["pizza", "vegetarian"],
+  "tax_rate_delivery": "20.0",
+  "tax_rate_collection": "10.0",
   "image_ids": ["clom9"],
   "skus": [
     {
@@ -415,16 +428,19 @@ A product belongs to a category. A product has one or several skus.
 
 <CallSummaryTable endpoint="GET /catalogs/:catalog_id/products/:id" accessLevel="location, account" />
 
-| Name          | Type             | Description                               |
-| ------------- | ---------------- | ----------------------------------------- |
-| `id`          | string           | The id of the product.                    |
-| `ref`         | string or `null` | The ref of the product.                   |
-| `category_id` | string           | The id of the parent category.            |
-| `name`        | string           | The name of the product.                  |
-| `description` | string or `null` | The description of the product.           |
-| `tags`        | string[]         | List of tags.                             |
-| `image_ids`   | string[]         | List of image ids attached to the product |
-| `skus`        | [Sku](#skus)[]   | List of skus of this product.             |
+| Name                  | Type                                                       | Description                                                                                 |
+| --------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| `id`                  | string                                                     | The id of the product.                                                                      |
+| `ref`                 | string or `null`                                           | The ref of the product.                                                                     |
+| `category_id`         | string                                                     | The id of the parent category.                                                              |
+| `name`                | string                                                     | The name of the product.                                                                    |
+| `description`         | string or `null`                                           | The description of the product.                                                             |
+| `tags`                | string[]                                                   | List of tags.                                                                               |
+| `tax_rate_delivery`   | [decimal](/developers/api/general-concepts#decimal-values) | Tax rate (%) for delivery orders. See [Tax Rates](#product-tax-rates) for more information. |
+| `tax_rate_collection` | [decimal](/developers/api/general-concepts#decimal-values) | Tax rate (%) for collection orders.                                                         |
+| `tax_rate_eat_in`     | [decimal](/developers/api/general-concepts#decimal-values) | Tax rate (%) for eat-in orders.                                                             |
+| `image_ids`           | string[]                                                   | List of image ids attached to the product                                                   |
+| `skus`                | [Sku](#skus)[]                                             | List of skus of this product.                                                               |
 
 ##### Example request:
 
@@ -435,6 +451,12 @@ A product belongs to a category. A product has one or several skus.
   "id": "abg5a",
   "category_id": "lsndh",
   "name": "Margarita",
+  "description": "A classic pizza with tomato sauce and mozzarella",
+  "tags": [],
+  "tax_rate_delivery": "20.0",
+  "tax_rate_collection": "10.0",
+  "tax_rate_eat_in": null,
+  "images_ids": [],
   "skus": [
     {
       "id": "sb65k",
@@ -495,6 +517,7 @@ A product contains one or several skus. A sku is always attached to a product.
 | `option_list_refs` <Label type="optional" /> | string[]                                                  | The refs of the option lists this sku is attached to.                                                                   |
 | `tags` <Label type="optional" />             | string[]                                                  | List of tags.                                                                                                           |
 | `barcodes` <Label type="optional" />         | string[]                                                  | List of barcodes. See [Barcodes](#barcodes) for more information.                                                       |
+| `custom_fields` <Label type="optional" />    | [CustomFields](/developers/api/extensions#custom-fields)  | Additional data attached to the sku.                                                                                    |
 
 #### Barcodes {#barcodes}
 
@@ -522,7 +545,8 @@ Each barcode must be a numeric string comprising exactly 8, 12, or 13 digits. Ex
   ],
   "option_list_refs": ["SAUCE", "PIZZA_TOPPINGS"],
   "tags": ["hidden"],
-  "barcodes": ["1234567890123", "1234567890124"]
+  "barcodes": ["1234567890123", "1234567890124"],
+  "custom_fields": {}
 }
 ```
 
@@ -558,7 +582,12 @@ Each barcode must be a numeric string comprising exactly 8, 12, or 13 digits. Ex
   "price": "9.80 EUR",
   "price_overrides": [],
   "option_list_ids": ["e2sfj"],
-  "tags": ["hidden"]
+  "tags": ["hidden"],
+  "barcodes": [],
+  "tax_rate_delivery": null,
+  "tax_rate_collection": null,
+  "tax_rate_eat_in": null,
+  "custom_fields": {}
 }
 ```
 
