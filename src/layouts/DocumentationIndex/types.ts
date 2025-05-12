@@ -1,4 +1,4 @@
-import { TGetStarted } from "@components/GetStarted/types"
+import { TActionBlock } from "@components/ActionBlock"
 
 type THeroTitle = {
   connect?: string
@@ -26,6 +26,6 @@ export interface DocumentationIndexYaml {
       to: string
       icon: string
     }>
-    getStarted: TGetStarted
+    action_block: TActionBlock
   }
 }

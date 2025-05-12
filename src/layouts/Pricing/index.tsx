@@ -1,7 +1,6 @@
 "use client"
 
-import GetStarted from "@components/GetStarted"
-import { GetStartedYaml } from "@components/GetStarted/types"
+import ActionBlock from "@components/ActionBlock"
 import { ContentImageMap } from "@utils/contentImage"
 
 import Founder from "./Founder"
@@ -12,11 +11,10 @@ import type { PricingYaml } from "./types"
 
 interface PricingProps {
   yaml: PricingYaml
-  getStarted: GetStartedYaml
   founderImageMap: ContentImageMap
 }
 
-const Pricing = ({ yaml, getStarted, founderImageMap }: PricingProps): JSX.Element => {
+const Pricing = ({ yaml, founderImageMap }: PricingProps): JSX.Element => {
   const { content } = yaml
 
   return (
@@ -25,7 +23,7 @@ const Pricing = ({ yaml, getStarted, founderImageMap }: PricingProps): JSX.Eleme
       <Founder {...content.founder} founderImageMap={founderImageMap} />
       <WhyChoose why_choose={content.why_choose} />
       <SpecialPricing special_pricing={content.special_pricing} />
-      <GetStarted getStarted={getStarted.content} />
+      <ActionBlock actionBlockData={content.action_block} />
     </>
   )
 }

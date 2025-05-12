@@ -1,5 +1,4 @@
 import { GetInTouchYaml } from "@components/GetInTouch/types"
-import { GetStartedYaml } from "@components/GetStarted/types"
 import { BecomePartnerYaml } from "@layouts/BecomePartner/types"
 import { BrandingYaml } from "@layouts/Branding/types"
 import { ContactUsYaml } from "@layouts/ContactUs/types"
@@ -92,7 +91,7 @@ export type Context<L extends LayoutName> = L extends "apps"
   : L extends "partners"
   ? { context: { yaml: PartnersYaml } }
   : L extends "pricing"
-  ? { context: { yaml: PricingYaml }; getStarted: { yaml: GetStartedYaml } }
+  ? { context: { yaml: PricingYaml } }
   : L extends "testimonials"
   ? { context: { yaml: TestimonialsYaml } }
   : never

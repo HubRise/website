@@ -104,3 +104,7 @@ content:
       description: HubRise offer a partnership program, with or without white labelling.
       button_label: Find out more
       button_link: link
+  action_block:
+    title: Ready to Get Started?
+    description: If you have more questions about features or pricing? We're here to help you take the next step.
+    button_label: Send Us a Message

@@ -34,7 +34,7 @@ content:
       description: Instructions to create diagrams.
       to: /contributing/diagram-guide
       icon: schema
-  getStarted:
+  action_block:
     title: Need Help Getting Started?
     description: Our integration support team is here for you at every step of the process.
     button_label: Send Us a Message

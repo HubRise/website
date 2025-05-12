@@ -2,9 +2,9 @@
 
 import * as React from "react"
 
+import ActionBlock from "@components/ActionBlock"
 import Breadcrumbs from "@components/Breadcrumbs"
 import DocumentationWrapper from "@components/DocumentationWrapper"
-import GetStarted from "@components/GetStarted"
 import useTranslation from "@hooks/client/useTranslation"
 import { BlogMdFile } from "@utils/BlogIndexer/types"
 import { DocLink, Href } from "@utils/DocIndexer/types"
@@ -34,7 +34,7 @@ const BlogPost = ({
 
   const breadcrumbs: Array<DocLink> = [{ label: t("blog.title"), uri: blogIndexUri }]
 
-  const getStarted = {
+  const actionBlockData = {
     title: t("blog.get_started.title"),
     description: t("blog.get_started.description"),
     button_label: t("blog.get_started.button_label"),
@@ -51,7 +51,7 @@ const BlogPost = ({
           </Post>
         </BlogPostContainer>
       </BlogPostWrapper>
-      <GetStarted getStarted={getStarted} />
+      <ActionBlock actionBlockData={actionBlockData} />
     </DocumentationWrapper>
   )
 }

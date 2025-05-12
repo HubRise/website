@@ -1,3 +1,4 @@
+import { TActionBlock } from "@components/ActionBlock"
 import { TMetric } from "@components/Metrics"
 import { TTabItem } from "@components/Tabs"
 import { TTwoSidesContent } from "@components/TwoSidesContent"
@@ -58,5 +59,6 @@ export interface BecomePartnerYaml {
     middleware: TMiddleware
     apps: TApps
     metrics: Array<TMetric>
+    action_block: TActionBlock
   }
 }

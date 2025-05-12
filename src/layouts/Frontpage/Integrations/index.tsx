@@ -26,7 +26,12 @@ const Integrations = ({ title, integration_apps }: IntegrationsProps) => {
               key={index}
               side={index % 2 ? "left" : "right"}
               secondaryContent={
-                <Image src={`/images/frontpage/${integrationApp.image}`} alt="Documentation" width={915} height={750} />
+                <Image
+                  src={`/images/frontpage/${integrationApp.image}`}
+                  alt={integrationApp.title}
+                  width={1040}
+                  height={820}
+                />
               }
               secondaryPosition={index % 2 ? "left" : "right"}
             >

@@ -44,7 +44,7 @@ const ScreenContainer = ({
           )}
           {headerButtonLabel && <Button label={headerButtonLabel} link={headerButtonLink} />}
         </HeaderWrapper>
-        {withDivider && <Underline position="center" />}
+        {withDivider && bgColor !== "green" && <Underline position="center" />}
       </>
     )}
     {children}

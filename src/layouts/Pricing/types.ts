@@ -1,3 +1,5 @@
+import { TActionBlock } from "@components/ActionBlock"
+
 type TProposal = {
   title: string
   text: string
@@ -91,5 +93,6 @@ export interface PricingYaml {
     }
     why_choose: TWhyChoose
     special_pricing: TSpecialPricing
+    action_block: TActionBlock
   }
 }

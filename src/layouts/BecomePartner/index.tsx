@@ -2,6 +2,7 @@
 
 import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 
+import ActionBlock from "@components/ActionBlock"
 import GetInTouch from "@components/GetInTouch"
 import { GetInTouchYaml } from "@components/GetInTouch/types"
 import Metrics from "@components/Metrics"
@@ -38,7 +39,7 @@ const BecomePartner = ({
       <Apps apps={content.apps} descriptionMdx={appsDescriptionMdx} />
       <Metrics metrics={content.metrics} />
       <div>Testimonials: In progress</div>
-      <div>Action Block: In progress</div>
+      <ActionBlock actionBlockData={content.action_block} />
       <GetInTouch title={title} description={description} button_label={button_label} button_link={button_link} />
     </>
   )

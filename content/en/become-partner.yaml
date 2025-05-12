@@ -80,3 +80,7 @@ content:
       title: Successful order injection
     - number: 95%
       title: API calls under 100ms
+  action_block:
+    title: Partner With HubRise and expand your software capabilities
+    button_label: View Our Developer's Page
+    button_link: /developers
