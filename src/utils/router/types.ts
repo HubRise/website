@@ -73,7 +73,11 @@ export type Context<L extends LayoutName> = L extends "apps"
   : L extends "blog-post"
   ? { context: { mdFile: BlogMdFile; mdFiles: Array<BlogMdFile> } }
   : L extends "become-partner"
-  ? { context: { yaml: BecomePartnerYaml }; getInTouch: { yaml: GetInTouchYaml } }
+  ? {
+      context: { yaml: BecomePartnerYaml }
+      getInTouch: { yaml: GetInTouchYaml }
+      testimonials: { yaml: TestimonialsYaml }
+    }
   : L extends "contact-us"
   ? { context: { yaml: ContactUsYaml } }
   : L extends "documentation"
@@ -85,7 +89,7 @@ export type Context<L extends LayoutName> = L extends "apps"
   : L extends "faqs"
   ? { context: { yaml: FAQsYaml }; getInTouch: { yaml: GetInTouchYaml } }
   : L extends "frontpage"
-  ? { context: { yaml: FrontpageYaml } }
+  ? { context: { yaml: FrontpageYaml }; testimonials: { yaml: TestimonialsYaml } }
   : L extends "orderline"
   ? { context: { yaml: OrderlineYaml }; getInTouch: { yaml: GetInTouchYaml } }
   : L extends "partners"

@@ -1,31 +1,39 @@
 import Image from "next/image"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 import { StyledCard } from "@components/Card/Styles"
 import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
-export const TestimonialsWrapper = styled.div`
+export const TestimonialsWrapper = styled.div<{ $nbMobileDisplay: number }>`
   ${mixin.containerWrapper}
   margin-top: 3.5rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
 
-  ${StyledCard} {
-    &:not(:nth-child(-n + 2)) {
-      display: none;
-    }
-  }
+  ${({ $nbMobileDisplay }) =>
+    $nbMobileDisplay &&
+    css`
+      ${StyledCard} {
+        &:not(:nth-child(-n + ${$nbMobileDisplay})) {
+          display: none;
+        }
+      }
+    `}
 
   @media (min-width: ${breakpoints.medium}) {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 
-    ${StyledCard} {
-      &:not(:nth-child(-n + 2)) {
-        display: flex;
-      }
-    }
+    ${({ $nbMobileDisplay }) =>
+      $nbMobileDisplay &&
+      css`
+        ${StyledCard} {
+          &:not(:nth-child(-n + ${$nbMobileDisplay})) {
+            display: flex;
+          }
+        }
+      `}
   }
 
   @media (min-width: ${breakpoints.large}) {

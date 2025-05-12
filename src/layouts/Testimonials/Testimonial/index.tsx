@@ -18,16 +18,15 @@ const Testimonial = ({ testimonial, image }: TestimonialProps): JSX.Element => {
 
   return (
     <Card>
-      <Picture>{image && <Image {...image} alt={`${person_details[0]}, ${person_details[2]}`} />}</Picture>
+      <Picture>{image && <Image {...image} alt={`${person_details.name}, ${person_details.company}`} />}</Picture>
       <Quote>{text(quote)}</Quote>
       <Underline position="center" />
       <Details>
-        {person_details.map((detail, index) => (
-          <React.Fragment key={index}>
-            <Detail>{text(detail)}</Detail>
-            {index < person_details.length - 1 && <Bullet />}
-          </React.Fragment>
-        ))}
+        <Detail>{person_details.name}</Detail>
+        <Bullet />
+        <Detail>{person_details.job_title}</Detail>
+        <Bullet />
+        <Detail>{person_details.company}</Detail>
       </Details>
     </Card>
   )

@@ -62,7 +62,7 @@ content:
         content:
           title: Your Branded Catalog Manager
           description: Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-          image: become-partner/catalog-manager.png
+          image: become-partner/catalog-manager.gif
       - label: |
           Coming next: Your Branded Dashboard
         key: 2
@@ -80,6 +80,11 @@ content:
       title: Successful order injection
     - number: 95%
       title: API calls under 100ms
+  testimonials:
+    - 0
+    - 1
+    - 2
+    - 3
   action_block:
     title: Partner With HubRise and Expand Your Software Capabilities
     button_label: View Our Developer's Page

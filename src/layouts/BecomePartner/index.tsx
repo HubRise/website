@@ -6,6 +6,9 @@ import ActionBlock from "@components/ActionBlock"
 import GetInTouch from "@components/GetInTouch"
 import { GetInTouchYaml } from "@components/GetInTouch/types"
 import Metrics from "@components/Metrics"
+import TestimonialsBlock from "@components/TestimonialsBlock"
+import { TestimonialsYaml } from "@layouts/Testimonials/types"
+import { ContentImageMap } from "@utils/contentImage"
 
 import Apps from "./Apps"
 import Benefits from "./Benefits"
@@ -16,16 +19,20 @@ import { BecomePartnerYaml } from "./types"
 
 interface BecomePartnerProps {
   yaml: BecomePartnerYaml
+  testimonials: TestimonialsYaml
   getInTouch: GetInTouchYaml
   middlewareDescriptionMdx: MDXRemoteSerializeResult
   appsDescriptionMdx: MDXRemoteSerializeResult
+  testimonialLogoMap: ContentImageMap
 }
 
 const BecomePartner = ({
   yaml,
+  testimonials,
   getInTouch,
   middlewareDescriptionMdx,
   appsDescriptionMdx,
+  testimonialLogoMap,
 }: BecomePartnerProps): JSX.Element => {
   const content = yaml.content
   const { title, description, button_label, button_link } = getInTouch.content
@@ -38,7 +45,12 @@ const BecomePartner = ({
       <Middleware middleware={content.middleware} descriptionMdx={middlewareDescriptionMdx} />
       <Apps apps={content.apps} descriptionMdx={appsDescriptionMdx} />
       <Metrics metrics={content.metrics} />
-      <div>Testimonials: In progress</div>
+      <TestimonialsBlock
+        title={testimonials.content.block_title}
+        testimonials={testimonials.content.testimonials}
+        idXToDisplay={content.testimonials}
+        testimonialLogoMap={testimonialLogoMap}
+      />
       <ActionBlock actionBlockData={content.action_block} />
       <GetInTouch title={title} description={description} button_label={button_label} button_link={button_link} />
     </>
