@@ -815,12 +815,6 @@ content:
           country:
           title: TicknCook
           description: TicknCook est un écran cuisine (KDS), qui peut recevoir les commandes depuis tous vos canaux de vente. La solution est personnalisable avec possibilité de mettre en place des écrans spécialisés pour le bar, la cuisine, ou autres ateliers.
-        - website: https://1bot.io
-          documentation: /fr/apps/1bot
-          logo: 1bot.png
-          country:
-          title: 1Bot
-          description: 1Bot est un assistant personnel. Ce chatbot répond aux questions des clients et transmet un résumé de la conversation au magasin par SMS. Il est possible de prendre un rendez-vous, demander un rappel ou poser une question.
   countries:
     - title: Tous les pays
       code: all
