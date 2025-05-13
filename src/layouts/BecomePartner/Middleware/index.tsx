@@ -1,3 +1,4 @@
+import Image from "next/image"
 import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 
 import ScreenContainer from "@components/ScreenContainer"
@@ -15,7 +16,9 @@ const Middleware = ({ middleware, descriptionMdx }: MiddlewareProps): JSX.Elemen
   return (
     <>
       <ScreenContainer bgColor="white" title={middleware.title} descriptionMdx={descriptionMdx} withHeader>
-        <Wrapper>image</Wrapper>
+        <Wrapper>
+          <Image src="/images/become-partner/middleware.png" width={3750} height={2015} alt={middleware.title} />
+        </Wrapper>
       </ScreenContainer>
       <TwoSidesContent content={middleware.content} />
     </>

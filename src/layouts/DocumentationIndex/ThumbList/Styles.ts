@@ -1,8 +1,7 @@
 import OriginalLink from "next/link"
 import styled from "styled-components"
 
-import Icon from "@components/Icon"
-import { breakpoints, colors, mixin } from "@utils/styles"
+import { breakpoints, mixin } from "@utils/styles"
 
 export const StyledThumbList = styled.div`
   ${mixin.containerWrapper}
@@ -20,18 +19,6 @@ export const Link = styled(OriginalLink)`
   flex-direction: column;
   align-items: center;
   gap: 1.25rem;
-`
-
-export const IconWrapper = styled.div`
-  width: 5rem;
-  height: 5rem;
-  border-radius: 100%;
-  background-color: ${colors.primary};
-  ${mixin.centerElement}
-`
-
-export const StyledIcon = styled(Icon)`
-  color: ${colors.white};
 `
 
 export const Content = styled.div`

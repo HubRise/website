@@ -38,7 +38,7 @@ const TestimonialsBlock = ({
                   <LogoImage
                     {...testimonialLogoMap[testimonial.person_details.logo]}
                     alt={testimonial.person_details.logo.substring(0, testimonial.person_details.logo.length - 4)}
-                  ></LogoImage>
+                  />
                 )}
               </Card>
             )

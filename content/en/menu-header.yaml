@@ -17,27 +17,44 @@
         link_label: Find out more
         link: /orderline
         image: orderline.png
-      # - title: Dashboard
-      #   description: Some text here...
-      #   link_label: Find out more
-      #   link: /
-      #   image: dashboard.png
+      - title: Dashboard
+        description: Some text here...
+        link_label: Find out more
+        link: /
+        image: dashboard.png
 - title: Pricing
   to: /pricing
 - title: Resources
   to: /
   content:
     resources:
-      title: Resources
-      description: Get started and learn more about our products.
+      get_in_touch:
+        main_question: Specific needs?
+        question: Want to talk?
+        button_label: Get in Touch
+        button_link: /contact-us
       links:
         - link_label: Help
           link: /docs
-        - link_label: FAQs
-          link: /faqs
-        - link_label: Developers
-          link: /developers
-        - link_label: Testimonials
-          link: /testimonials
+          link_description: Quick answers to navigate and use HubRise.
+        - link_label: Become a Partner
+          link: /become-partner
+          link_description: Grow through integrations and white branded tools.
         - link_label: Blog
           link: /blog
+          link_description: Product updates, tips, and industry insights.
+        - link_label: FAQs
+          link: /faqs
+          link_description: Common questions clarified in one convenient spot.
+        - link_label: Developers
+          link: /developers
+          link_description: API docs, quick start and integration guides.
+        - link_label: Testimonials
+          link: /testimonials
+          link_description: Real customer and integrated partner feedback.
+        - link_label: Contact Us
+          link: /contact-us
+          link_description: Get in touch with our team
+        - link_label: Hire an Expert
+          link: /partners
+          link_description: Connect with an experienced partner for tailored development.

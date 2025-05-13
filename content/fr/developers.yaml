@@ -14,20 +14,20 @@ content:
     - title: Démarrage rapide
       description: Guide de 10 minutes pour envoyer vos premières requêtes (en anglais)
       to: /fr/developers/quick-start
-      icon: fast_forward
+      icon: start.svg
     - title: Référence de l'API
       description: Documentation complète des ressources et des concepts de l'API (en anglais)
       to: /fr/developers/api/general-concepts
-      icon: code
+      icon: api-reference.svg
     - title: Guide d'intégration
       description: Checklist et bonnes pratiques d'intégration à HubRise (en anglais)
       to: /fr/developers/integration-guide
-      icon: checklist
+      icon: integration-guide.svg
     - title: Conventions et cas spéciaux
       description: Conventions utilisées par les autres développeurs pour les cas spéciaux (en anglais)
       to: /fr/developers/conventions
-      icon: menu_book
-  # Need to translate
+      icon: edge-cases.svg
+  # TODO: Need to translate
   action_block:
     title: Need Help Getting Started?
     description: Our integration support team is here for you at every step of the process.

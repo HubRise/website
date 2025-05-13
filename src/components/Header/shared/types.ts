@@ -7,11 +7,16 @@ export type TProduct = {
 }
 
 export type TResources = {
-  title: string
-  description: string
+  get_in_touch: {
+    main_question: string
+    question: string
+    button_label: string
+    button_link: string
+  }
   links: Array<{
     link_label: string
     link: string
+    link_description: string
   }>
 }
 

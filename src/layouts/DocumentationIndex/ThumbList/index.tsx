@@ -1,22 +1,26 @@
+import Image from "next/image"
+
 import Card from "@components/Card"
-import { IconCode } from "@components/Icon"
 import ScreenContainer from "@components/ScreenContainer"
 import { DocumentationIndexYaml } from "@layouts/DocumentationIndex/types"
+import { ContentImageMap } from "@utils/contentImage"
 import { text } from "@utils/misc"
-import { iconSizes } from "@utils/styles"
 
-import { Link, Title, StyledThumbList, Description, Content, StyledIcon, IconWrapper } from "./Styles"
+import { Link, Title, StyledThumbList, Description, Content } from "./Styles"
 
-const ThumbList = ({ thumbs }: { thumbs: DocumentationIndexYaml["content"]["thumbs"] }): JSX.Element => {
+interface ThumbListProps {
+  thumbs: DocumentationIndexYaml["content"]["thumbs"]
+  thumbIconsMap: ContentImageMap
+}
+
+const ThumbList = ({ thumbs, thumbIconsMap }: ThumbListProps): JSX.Element => {
   return (
     <ScreenContainer>
       <StyledThumbList>
         {thumbs.map(({ title, description, to, icon }, index) => (
           <Card key={index}>
             <Link href={to}>
-              <IconWrapper>
-                <StyledIcon code={icon as IconCode} size={iconSizes._32} />
-              </IconWrapper>
+              {thumbIconsMap[icon] && <Image {...thumbIconsMap[icon]} alt={title} width={80} height={80} />}
               <Content>
                 <Title>{text(title)}</Title>
                 <Description>{text(description)}</Description>

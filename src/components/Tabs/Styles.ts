@@ -3,13 +3,11 @@ import styled, { css } from "styled-components"
 import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const StyledTabs = styled.div`
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
 
   @media (min-width: ${breakpoints.large}) {
     padding: 0 2rem;
-    margin-top: 3.5rem;
   }
 `
 
