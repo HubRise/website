@@ -11,7 +11,7 @@ gallery:
   - __gallery-002.jpg
 app_info:
   category: Logiciels de caisse
-  availability: France, Suisse, Luxembourg, Belgique, Afrique francophone
+  availability: France, Suisse, Luxembourg, Belgique, Maroc, Afrique francophone
   website: https://www.clyosystems.com
   contact: contact@clyosystems.com / +33 1 84 25 27 77
 ---
