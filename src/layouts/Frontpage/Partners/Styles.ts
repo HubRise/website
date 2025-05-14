@@ -11,6 +11,10 @@ export const Wrapper = styled.div`
 
   @media (min-width: ${breakpoints.large}) {
     flex-direction: row;
+    gap: 0;
+  }
+
+  @media (min-width: ${breakpoints.biggest}) {
     gap: 3.75rem;
   }
 `
@@ -18,6 +22,26 @@ export const Wrapper = styled.div`
 export const ImageWrapper = styled.div`
   flex-basis: 50%;
   text-align: center;
+
+  img {
+    width: 100%;
+  }
+
+  @media (min-width: ${breakpoints.large}) {
+    flex-basis: 60%;
+    position: relative;
+    left: -7rem;
+  }
+
+  @media (min-width: ${breakpoints.extraLarge}) {
+    flex-basis: 65%;
+    left: -8rem;
+  }
+
+  @media (min-width: ${breakpoints.biggest}) {
+    flex-basis: 50%;
+    left: initial;
+  }
 `
 
 export const ContentWrapper = styled.div`
