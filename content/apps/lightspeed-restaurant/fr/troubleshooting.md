@@ -15,3 +15,4 @@ Cette page contient une liste d'erreurs courantes que vous pourriez rencontrer a
 - [Erreur de différence de prix](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors)
 - [Erreurs liées aux iPad](/apps/lightspeed-restaurant/troubleshooting/ipad-disconnected-errors)
 - [Commandes non reçues](/apps/lightspeed-restaurant/troubleshooting/orders-not-received-errors)
+- [Erreur Forbidden lors de l'import du catalogue](/apps/lightspeed-restaurant/troubleshooting/forbidden-menu-pull-error)

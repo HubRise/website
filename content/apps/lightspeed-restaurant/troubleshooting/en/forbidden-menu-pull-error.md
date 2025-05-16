@@ -19,8 +19,7 @@ When you trigger a catalog pull from Lightspeed Restaurant Bridge, the operation
 }
 ```
 
-The reason is that the Lightspeed user account employed by Lightspeed Restaurant Bridge does not have sufficient rights in the Lightspeed back office. Specifically, the permission **BO-WRITE** is required for the API endpoint that exports the menu.  
-This situation is common when the connection is made with a dedicated technical user rather than the main Lightspeed administrator.
+The reason is that the Lightspeed user account employed by Lightspeed Restaurant Bridge does not have sufficient rights in the Lightspeed back office. Specifically, the permission **BO-WRITE** is required for the API endpoint that exports the menu. This situation is common when the connection is made with a dedicated technical user rather than the main Lightspeed administrator.
 
 To solve the problem:
 
