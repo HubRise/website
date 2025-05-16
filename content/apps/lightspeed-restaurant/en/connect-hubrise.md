@@ -30,6 +30,12 @@ Lightspeed Restaurant Bridge connects to a HubRise location. You must repeat the
    - Click **Save**.
 1. You have now connected your EPOS to your HubRise location. Orders sent to HubRise will be flowing into Lightspeed Restaurant once the [HubRise integration is enabled](#enable-integration).
 
+---
+
+**IMPORTANT NOTE:** The Lightspeed user employed during the connection must have the **BO-WRITE** permission in the Lightspeed back office. If this permission is missing, certain operations such as the catalog pull will fail with a *403 Forbidden* error. See [403 Forbidden Error When Pulling the Catalog](/apps/lightspeed-restaurant/troubleshooting/forbidden-menu-pull-error) for details.
+
+---
+
 ## 2. Enable the HubRise Integration {#enable-integration}
 
 Email HubRise at support@hubrise.com to request activation of the connection. No data will flow from HubRise into Lightspeed Restaurant until Lightspeed activates the API for HubRise in your account. HubRise will facilitate this activation by writing to k-series.support@lightspeedhq.com. 

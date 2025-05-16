@@ -31,7 +31,10 @@ To pull a catalog using the Lightspeed Restaurant Bridge, follow these steps:
 
 ---
 
-Depending on the size of your catalog, it might take a few minutes for your HubRise catalog to be fully updated.
+Depending on the size of your catalog, it might take a few minutes for your HubRise catalog to be fully updated. 
+
+If the operation fails with a *403 Forbidden* error, refer to [Forbidden Error When Pulling the Catalog](/apps/lightspeed-restaurant/troubleshooting/forbidden-menu-pull-error) for the solution.
+
 
 ### Pulling from a Third-Party Solution
 

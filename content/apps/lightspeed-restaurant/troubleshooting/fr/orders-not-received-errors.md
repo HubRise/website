@@ -1,7 +1,7 @@
 ---
 title: Commandes non reçues
 path_override: commandes-non-recues
-position: 10
+position: 5
 layout: documentation
 meta:
   title: Résoudre les erreurs liées aux commandes non reçues | Lightspeed Restaurant | HubRise
