@@ -41,7 +41,7 @@ content:
           country: BE, CH, FR, MA
           title: Clyo Systems
           description: Clyo Systems est une solution de caisse tout-en-un pour les restaurants, incluant la gestion des stocks, la fidélité, les écrans cuisine, la gestion du temps du personnel et la commande en ligne. Sa conception modulaire permet l'ajout de modules adaptés aux besoins spécifiques de chaque établissement.
-          additional_info: Intégration en cours.
+          additional_info:
         - website: https://www.csy.co.uk
           documentation: /fr/apps/csy
           logo: csy.png

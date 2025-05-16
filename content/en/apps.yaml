@@ -41,7 +41,7 @@ content:
           country: BE, CH, FR, MA
           title: Clyo Systems
           description: Clyo Systems is an all-in-one EPOS solution for restaurants, including inventory management, loyalty management, Kitchen Display Systems, time-tracking, and online ordering. Its modular design allows for the integration of customisable add-ons.
-          additional_info: Integration in progress.
+          additional_info:
         - website: https://www.csy.co.uk
           documentation: /apps/csy
           logo: csy.png

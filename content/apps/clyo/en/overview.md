@@ -11,14 +11,14 @@ gallery:
   - __gallery-002.jpg
 app_info:
   category: Point of sale systems
-  availability: France, Switzerland, Luxembourg, Belgium, French-speaking Africa
+  availability: France, Switzerland, Luxembourg, Belgium, Morocco, French-speaking Africa
   website: https://www.clyosystems.com
   contact: contact@clyosystems.com / +33 1 84 25 27 77
 ---
 
 ---
 
-**IMPORTANT NOTE:** Full documentation of this integration will be available soon.
+**IMPORTANT NOTE:** This documentation is available <Link href="/fr/apps/clyo" addLocalePrefix={false}>in French only</Link>.
 
 ---
 
