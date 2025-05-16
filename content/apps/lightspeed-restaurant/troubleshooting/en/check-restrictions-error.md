@@ -1,7 +1,7 @@
 ---
 title: Check Restrictions Error
 path_override: check-restrictions-error
-position: 5
+position: 2
 layout: documentation
 meta:
   title: Troubleshoot The "Check Restrictions" Error | Lightspeed Restaurant | HubRise

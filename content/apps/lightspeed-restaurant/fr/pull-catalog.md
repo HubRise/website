@@ -25,6 +25,8 @@ Pour récupérer un catalogue depuis Lightspeed, suivez ces étapes :
 
 Selon la taille du catalogue, la mise à jour complète de votre catalogue HubRise peut durer quelques minutes.
 
+Si l'opération échoue avec une erreur _403 Forbidden_, consultez [Erreur Forbidden lors de l'import du catalogue] (/apps/lightspeed-restaurant/troubleshooting/forbidden-menu-pull-error) pour la résolution.
+
 ## Informations envoyées à HubRise
 
 Les sections suivantes expliquent en détail comment votre catalogue Lightspeed est associé à HubRise.

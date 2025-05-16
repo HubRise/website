@@ -15,3 +15,4 @@ This pages contains a list of common errors you might find with Lightspeed Resta
 - [Price Difference Errors](/apps/lightspeed-restaurant/troubleshooting/price-differences-errors)
 - [iPad Disconnected Errors](/apps/lightspeed-restaurant/troubleshooting/ipad-disconnected-errors)
 - [Orders Not Received](/apps/lightspeed-restaurant/troubleshooting/orders-not-received-errors)
+- [Forbidden Error When Pulling the Catalog](/apps/lightspeed-restaurant/troubleshooting/forbidden-menu-pull-error)

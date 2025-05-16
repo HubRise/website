@@ -1,7 +1,7 @@
 ---
 title: Erreur liée à des restrictions
 path_override: erreur-liee-a-des-restrictions
-position: 5
+position: 2
 layout: documentation
 meta:
   title: Résoudre l'erreur "Check Restrictions" | Lightspeed Restaurant | HubRise
