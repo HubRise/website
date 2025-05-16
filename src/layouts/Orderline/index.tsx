@@ -2,6 +2,7 @@
 
 import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 
+import FiveSteps from "@components/FiveSteps"
 import GetInTouch from "@components/GetInTouch"
 import { GetInTouchYaml } from "@components/GetInTouch/types"
 import { OrderlineYaml } from "@layouts/Orderline/types"
@@ -9,7 +10,6 @@ import { ContentImageMap } from "@utils/contentImage"
 
 import Discover from "./Discover"
 import Features from "./Features"
-import FiveSteps from "./FiveSteps"
 import Hero from "./Hero"
 
 interface OrderlineProps {

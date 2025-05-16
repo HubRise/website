@@ -16,7 +16,7 @@ export const StyledActionBlock = styled.div`
 `
 
 export const Description = styled.p`
-  margin: 0 auto;
+  margin: 1rem auto 0;
   max-width: 50rem;
   ${fontSizeMixins.fontSizeTextLg}
 
@@ -26,5 +26,26 @@ export const Description = styled.p`
 
   @media (min-width: ${breakpoints.biggest}) {
     ${fontSizeMixins.fontSizeText2Xl}
+  }
+`
+
+export const Buttons = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+
+  ${StyledButton} {
+    width: 100%;
+    margin: 0;
+  }
+
+  @media (min-width: ${breakpoints.medium}) {
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    ${StyledButton} {
+      width: fit-content;
+    }
   }
 `

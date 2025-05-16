@@ -1,3 +1,4 @@
+import { TFiveSteps } from "@components/FiveSteps"
 import { TTwoSidesContent } from "@components/TwoSidesContent"
 
 export type TOrderlineHero = {
@@ -9,14 +10,6 @@ export type TOrderlineHero = {
   }
   supporting_text: string
   content: TTwoSidesContent
-}
-
-export type TFiveSteps = {
-  title: string
-  steps: Array<{
-    title: string
-    description: string
-  }>
 }
 
 export type TFeatures = {

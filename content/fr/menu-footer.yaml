@@ -4,8 +4,10 @@ sections:
     links:
       - title: All Integrations
         to: /fr/apps
+      - title: Catalog Manager
+        to: /fr/catalog-manager
       - title: OrderLine
-        to: /orderline
+        to: /fr/orderline
   - title: Ressources
     links:
       - title: Démarrage Rapide

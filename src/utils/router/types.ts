@@ -1,6 +1,7 @@
 import { GetInTouchYaml } from "@components/GetInTouch/types"
 import { BecomePartnerYaml } from "@layouts/BecomePartner/types"
 import { BrandingYaml } from "@layouts/Branding/types"
+import { CatalogManagerYaml } from "@layouts/CatalogManager/types"
 import { ContactUsYaml } from "@layouts/ContactUs/types"
 import { DocumentationIndexYaml } from "@layouts/DocumentationIndex/types"
 import { FAQsYaml } from "@layouts/FAQs/types"
@@ -21,6 +22,7 @@ export type RouteNameStatic =
   | "apps"
   | "blog"
   | "become-partner"
+  | "catalog-manager"
   | "branding"
   | "contact-us"
   | "contributing"
@@ -56,6 +58,7 @@ export type LayoutName =
   | "blog-index"
   | "blog-post"
   | "become-partner"
+  | "catalog-manager"
   | "contact-us"
   | "documentation"
   | "documentation-index"
@@ -78,6 +81,8 @@ export type Context<L extends LayoutName> = L extends "apps"
       getInTouch: { yaml: GetInTouchYaml }
       testimonials: { yaml: TestimonialsYaml }
     }
+  : L extends "catalog-manager"
+  ? { context: { yaml: CatalogManagerYaml }; getInTouch: { yaml: GetInTouchYaml } }
   : L extends "contact-us"
   ? { context: { yaml: ContactUsYaml } }
   : L extends "documentation"

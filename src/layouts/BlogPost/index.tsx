@@ -37,7 +37,11 @@ const BlogPost = ({
   const actionBlockData = {
     title: t("blog.get_started.title"),
     description: t("blog.get_started.description"),
-    button_label: t("blog.get_started.button_label"),
+    buttons: [
+      {
+        button_label: t("blog.get_started.button_label"),
+      },
+    ],
   }
 
   return (

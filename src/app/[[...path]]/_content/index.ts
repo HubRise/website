@@ -5,6 +5,7 @@ import becomePartner from "./becomePartner"
 import blogIndex from "./blogIndex"
 import blogPost from "./blogPost"
 import branding from "./branding"
+import catalogManager from "./catalogManager"
 import contactUs from "./contactUs"
 import documentation from "./documentation"
 import documentationIndex from "./documentationIndex"
@@ -26,6 +27,8 @@ export const renderContent = async (route: Route<RouteName, LayoutName>, router:
       return await blogIndex(route as Route<RouteName, "blog-index">)
     case "blog-post":
       return await blogPost(route as Route<RouteName, "blog-post">, router)
+    case "catalog-manager":
+      return await catalogManager(route as Route<RouteName, "catalog-manager">)
     case "documentation":
       return await documentation(route as Route<RouteName, "documentation">, router)
     case "documentation-index":

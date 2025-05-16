@@ -10,7 +10,7 @@
       - title: Catalog Manager
         description: Centralise your menus
         link_label: Find out more
-        link: /
+        link: /catalog-manager
         image: catalog-manager.png
       - title: OrderLine
         description: Centralise your orders

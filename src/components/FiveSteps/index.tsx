@@ -1,9 +1,15 @@
 import Card from "@components/Card"
 import ScreenContainer from "@components/ScreenContainer"
 
-import { TFiveSteps } from "../types"
-
 import { CardNumber, Cards, CardText, CardTitle } from "./Styles"
+
+export type TFiveSteps = {
+  title: string
+  steps: Array<{
+    title: string
+    description: string
+  }>
+}
 
 interface FiveStepsProps {
   fiveSteps: TFiveSteps

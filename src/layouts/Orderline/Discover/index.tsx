@@ -7,12 +7,12 @@ import { TDiscover } from "../types"
 
 import { Buttons } from "./Styles"
 
-interface FiveStepsProps {
+interface DiscoverProps {
   discoverContent: TDiscover
   descriptionMdx: MDXRemoteSerializeResult
 }
 
-const Discover = ({ discoverContent, descriptionMdx }: FiveStepsProps) => {
+const Discover = ({ discoverContent, descriptionMdx }: DiscoverProps) => {
   const { title, buttons } = discoverContent
   return (
     <ScreenContainer

@@ -3,6 +3,8 @@ sections:
     links:
       - title: All Integrations
         to: /apps
+      - title: Catalog Manager
+        to: /catalog-manager
       - title: OrderLine
         to: /orderline
   - title: Resources

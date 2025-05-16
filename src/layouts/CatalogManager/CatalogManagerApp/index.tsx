@@ -6,17 +6,17 @@ import ScreenContainer from "@components/ScreenContainer"
 import Tabs from "@components/Tabs"
 
 import { Wrapper } from "../shared/Styles"
-import { TApps } from "../types"
+import { TApp } from "../types"
 
 import { Tab, TabText, TabTitle } from "./Styles"
 
-interface AppsProps {
-  apps: TApps
+interface CatalogManagerAppProps {
+  app: TApp
   descriptionMdx: MDXRemoteSerializeResult
 }
 
-const Apps = ({ apps, descriptionMdx }: AppsProps): JSX.Element => {
-  const { tabs } = apps
+const CatalogManagerApp = ({ app, descriptionMdx }: CatalogManagerAppProps): JSX.Element => {
+  const { tabs } = app
   const [activeTabNumber, setActiveTabNumber] = useState<number>(0)
 
   const handleTabChange = (key: number) => {
@@ -24,7 +24,7 @@ const Apps = ({ apps, descriptionMdx }: AppsProps): JSX.Element => {
   }
 
   return (
-    <ScreenContainer title={apps.title} descriptionMdx={descriptionMdx} withHeader>
+    <ScreenContainer title={app.title} descriptionMdx={descriptionMdx} withHeader>
       <Wrapper>
         <Tabs items={tabs} activeKey={activeTabNumber} onChange={handleTabChange}>
           <Tab>
@@ -33,8 +33,8 @@ const Apps = ({ apps, descriptionMdx }: AppsProps): JSX.Element => {
             <Image
               src={`/images/${tabs[activeTabNumber].content.image}`}
               alt={tabs[activeTabNumber].content.title}
-              width={1100}
-              height={800}
+              width={1045}
+              height={880}
             />
           </Tab>
         </Tabs>
@@ -43,4 +43,4 @@ const Apps = ({ apps, descriptionMdx }: AppsProps): JSX.Element => {
   )
 }
 
-export default Apps
+export default CatalogManagerApp
