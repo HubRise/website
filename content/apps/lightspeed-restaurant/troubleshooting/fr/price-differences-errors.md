@@ -1,7 +1,7 @@
 ---
 title: Erreur de différence de prix
 path_override: erreur-de-difference-de-prix
-position: 6
+position: 3
 layout: documentation
 meta:
   title: Résoudre l'erreur de différence de prix | Lightspeed Restaurant | HubRise

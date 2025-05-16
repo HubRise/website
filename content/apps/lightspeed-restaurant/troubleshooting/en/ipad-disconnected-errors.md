@@ -1,7 +1,7 @@
 ---
 title: iPad Errors
 path_override: ipad-disconnected-errors
-position: 9
+position: 4
 layout: documentation
 meta:
   title: Troubleshoot iPad Errors | Lightspeed Restaurant | HubRise

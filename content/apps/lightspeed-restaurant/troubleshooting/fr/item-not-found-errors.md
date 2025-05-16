@@ -1,7 +1,7 @@
 ---
 title: Article introuvable
 path_override: article-introuvable
-position: 3
+position: 1
 layout: documentation
 meta:
   title: Résoudre l'erreur "Item not found" | Lightspeed Restaurant | HubRise

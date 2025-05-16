@@ -71,7 +71,6 @@ To create a charge, you need to create an item by following these steps:
    - To use a specific ref code, click **Add custom SKU** and enter a ref code. Alternatively, a ref code will be automatically generated.
 1. Fill in the other sections in the page as needed, then click **Save**.
 1. Repeat the process for all the charges you support on every solution.
-2. 
 
 ## Payment Methods
 
