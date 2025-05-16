@@ -54,7 +54,6 @@ content:
           country: FR
           title: Drive Eat
           description: Drive Eat propose un logiciel de caisse combiné à des solutions de commande digitale pour les restaurants, snacks et boulangeries. Ses services incluent des bornes de commande, des applications mobiles, des solutions Click & Collect, des écrans cuisine et des monnayeurs, le tout conçu pour optimiser les opérations, réduire les temps d'attente et améliorer l'expérience client.
-          additional_info:
         - website: https://www.epostechnologies.co.uk
           documentation: /fr/apps/epos-technologies
           logo: epostechnologies.png
@@ -289,7 +288,6 @@ content:
           country: BE, FR, IE, IT, GB
           title: Deliveroo
           description: Deliveroo est une plateforme de commande de repas et d'épicerie en ligne. Les clients peuvent commander en ligne ou via une app mobile. Disponible dans 12 pays and 500 villes.
-          additional_info:
         - website: https://www.deliveryhero.com
           documentation: /fr/apps/delivery-hero
           logo: delivery-hero.png
@@ -385,7 +383,6 @@ content:
           country: AU, BE, CA, FR, DE, IE, NL, ES, CH, GB
           title: Uber Eats
           description: Uber Eats est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une application mobile. Disponible dans 45 pays et 6.000 villes.
-          additional_info:
     - title: Commande en ligne
       slug: online-ordering
       apps:
@@ -402,7 +399,6 @@ content:
           country: FR
           title: AquilaCMS
           description: Aquila CMS est une solution open source, disponible pour l'édition et la création de sites e-commerce. Aquila CMS peut être téléchargé, ou utilisé avec les services de développement et d'hébergement proposés par l'éditeur.
-          additional_info:
         - website: https://chataigne.ai/fr
           documentation: /fr/apps/chataigne
           logo: chataigne.png
@@ -435,7 +431,6 @@ content:
           country: FR
           title: Get Resto
           description: Get Resto est une solution de commande à table. Le client scanne le QR code ou le tag NFC placés sur la table, accède au menu dans sa langue sur son smartphone, et commande en ligne. Aucune app à installer.
-          additional_info:
         - website: https://www.gonnaorder.com/?lang=fr
           documentation: /fr/apps/gonnaorder
           logo: gonnaorder.png
@@ -462,7 +457,6 @@ content:
           country:
           title: LivePepper
           description: LivePepper est une solution de commande en ligne pour les restaurants, conçue pour la livraison à domicile et la vente à emporter. Adaptée aux indépendants comme aux chaînes. LivePepper est untilisé en France, en Grande-Bretagne et à l'international.
-          additional_info:
         - website: https://locatouch.com
           documentation: /fr/apps/locatouch
           logo: locatouch.png
@@ -510,7 +504,6 @@ content:
           country: FR
           title: Restaurant-internet
           description: Restaurant-internet propose un site vitrine avec réservation de table et solution de commande en ligne. La solution couvre en particulier les besoins de la livraison à domicile et la vente à emporter.
-          additional_info:
         - website: https://servier.bar
           documentation: /fr/apps/servier-bar
           logo: servier-bar.png
@@ -524,7 +517,6 @@ content:
           country:
           title: Shopify
           description: Shopify est une solution e-commerce pour tout type d'activité. Elle offre une expérience utilisateur omnicanale sur le web, les smartphones, les réseaux sociaux, les places de marché et en boutique.
-          additional_info:
         - website: https://smartresto.net
           documentation: /fr/apps/smartresto
           logo: smartresto.png
@@ -564,7 +556,6 @@ content:
           country: FR
           title: TastyCloud
           description: TastyCloud propose des menus digitalisés in et out store pour les restaurants et les hôtels. L'offre comprend des menus sur tablettes, des porte-menus extérieurs, un site de click & collect, des écrans dynamiques, et une application mobile de prise de commande par scan de QR codes.
-          additional_info:
         - website: https://woocommerce.com
           documentation: /fr/apps/woocommerce
           logo: woocommerce.png
@@ -616,7 +607,6 @@ content:
           country: all
           title: OrderLord
           description: OrderLord est une solution conçue pour les entreprises de livraison et les restaurants, permettant de suivre les livraisons grâce à une application mobile utilisant le GPS. OrderLord apporte aux clients une expérience de livraison transparente.
-          additional_info:
         - website: https://orkestro.com
           documentation: /fr/apps/orkestro
           logo: orkestro.png
@@ -662,7 +652,6 @@ content:
           country: AU, CA, FR, DE, ES, GB
           title: Uber Direct
           description: Uber Direct est un service de livraison en marque blanche proposé par Uber. Il permet aux entreprises d'envoyer des produits ou colis à leurs clients en s'appuyant sur le vaste réseau de chauffeurs d'Uber Eats.
-          additional_info:
     - title: Fidélité et marketing
       slug: loyalty-and-marketing
       apps:
@@ -679,35 +668,30 @@ content:
           country:
           title: dotdigital
           description: dotdigital est un outil d'automatisation marketing omnicanal utilisé pour engager et créer des relations avec ses clients grâce à des campagnes marketing par e-mail, SMS, notifications en push, chat et annonces sur les réseaux sociaux.
-          additional_info:
         - website: https://myemma.com
           documentation: /fr/apps/emma
           logo: emma.png
           country:
           title: Emma
           description: Emma est une solution d'envoi d'e-mails et de newsletters personnalisés, avec support à la stratégie et à la conception de la campagne marketing.
-          additional_info:
         - website: https://mailchimp.com
           documentation: /fr/apps/mailchimp
           logo: mailchimp.png
           country:
           title: MailChimp
           description: MailChimp est une solution d'envoi d'e-mails, de newsletters personnalisés et de SMS.
-          additional_info:
         - website: https://sailplay.com
           documentation: /fr/apps/sailplay
           logo: sailplay.png
           country: all
           title: SailPlay
           description: SailPlay est une plateforme utilisée pour l'automatisation des campagnes d'e-mailing. Elle permet de mieux connaître ses clients afin de les fidéliser.
-          additional_info:
         - website: https://www.smg.com
           documentation: /fr/apps/smg
           logo: smg.png
           country: all
           title: Service Management Group
           description: SMG associe la technologie et le service pour collecter et analyser vos données, afin de comprendre les comportements de vos clients et d'agir en conséquence.
-          additional_info:
         - website: https://openflow.pro
           documentation: /fr/apps/upxp
           logo: upxp.png
@@ -796,7 +780,6 @@ content:
           country:
           title: OrderLine
           description: OrderLine centralise les commandes passées depuis un site marchand ou autre plateforme de commande en ligne. Les commandes sont ainsi gérées et imprimés. OrderLine est un logiciel gratuit édité par HubRise.
-          additional_info:
         - website: https://www.qwenta.ch
           documentation: /fr/apps/qwenta
           logo: qwenta.png
@@ -818,16 +801,18 @@ content:
   countries:
     - title: Tous les pays
       code: all
+    - title: Allemagne
+      code: DE
     - title: Australie
       code: AU
     - title: Belgique
       code: BE
     - title: Canada
       code: CA
+    - title: Espagne
+      code: ES
     - title: France
       code: FR
-    - title: Allemagne
-      code: DE
     - title: Irlande
       code: IE
     - title: Italie
@@ -836,12 +821,10 @@ content:
       code: MA
     - title: Pays-Bas
       code: NL
-    - title: Espagne
-      code: ES
-    - title: Suisse
-      code: CH
     - title: Royaume-Uni
       code: GB
+    - title: Suisse
+      code: CH
   additional_sections:
     suggest_app:
       description: Votre application ne se trouve pas dans cette liste ? Envoyez-nous quelques informations. HubRise se chargera de contacter l'éditeur de votre part pour leur proposer une intégration.

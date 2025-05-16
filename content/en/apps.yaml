@@ -35,7 +35,6 @@ content:
           country: FR
           title: Carré POS
           description: Carré POS is a Point of Sales designed for fast ordering. It adapts to all types of businesses, including restaurants, bakeries, local stores, boutiques, hairdressers, and florists.
-          additional_info:
         - website: https://www.clyosystems.com
           documentation: /apps/clyo
           logo: clyo.png
@@ -49,7 +48,6 @@ content:
           country: GB
           title: CSY Vector EPOS
           description: CSY Vector EPOS is tailored for busy hospitality and retail environments. Well-suited for multi-site operations, it combines ease of use with customisable features and includes built-in support for kitchen screens, table ordering, a table planner, printers, and more.
-          additional_info:
         - website: https://drive-eat.solutions
           documentation: /apps/drive-eat
           logo: drive-eat.png
@@ -97,7 +95,6 @@ content:
           country: FR
           title: Kezia II by JDC
           description: Kezia II by JDC offers the qualities sought by a traditional EPOS. It adapts to all types of businesses and offers multi-site, logistics, inventory, purchasing, loyalty, statistics and team management functions.
-          additional_info:
         - website: http://www.leo2.co.uk
           documentation: /apps/leo2
           logo: leo2.png
@@ -135,7 +132,6 @@ content:
           country: FR
           title: Nestor
           description: Nestor is a French Point of Sales solution designed for home delivery and takeaway restaurants.
-          additional_info:
         - website: https://www.netfood.cloud
           documentation: /apps/netfood
           logo: netfood.png
@@ -149,7 +145,6 @@ content:
           country: AU, IE, GB
           title: Next Order
           description: Next Order offers a software suite for takeaway, delivery and full-service restaurants. Cloud based, Next Order can be used in any device. Feature-rich, the Next Order Point of Sales helps streamline operations.
-          additional_info:
         - website: https://www.orderlord.com
           documentation: /apps/orderlord
           logo: orderlord.png
@@ -278,7 +273,6 @@ content:
           country: BE, FR
           title: Zelty
           description: Zelty is a complete suite of solutions designed for multi-site. Zelty is suitable for any type of restaurant from fast food to traditional catering.
-          additional_info:
     - title: Food Ordering Platforms
       slug: food-ordering-platforms
       apps:
@@ -408,8 +402,8 @@ content:
         - website: https://chataigne.ai/fr
           documentation: /apps/chataigne
           logo: chataigne.png
-          title: Chataîgne
           country: CH, FR
+          title: Chataîgne
           description: Châtaigne enables restaurants to offer delivery and takeaway services via WhatsApp. Customers can browse the menu, place orders, and pay securely within WhatsApp. No need to download an app or create an account. The goal is to simplify the ordering process, reduce inbound calls, and move away from delivery platforms.
           additional_info:
         - website: https://dishop.co
@@ -652,7 +646,6 @@ content:
           country: GB
           title: Trapar
           description: Trapar is a last-mile delivery solution for businesses, handling orders from various channels with a real-time tracking app. Trapar offers the option to use one's own delivery staff or Trapar's on-demand drivers/riders.
-          additional_info:
         - website: https://merchants.ubereats.com/fr/en/services/uber-direct
           documentation: /apps/uber-direct
           logo: uber-direct.png
@@ -734,7 +727,6 @@ content:
           country: FR, CH
           title: Koust
           description: Koust is an operations management solution designed for restaurants and hotels, enabling them to manage inventory, analyse sales and gross margin, optimise purchases, and adjust menus to enhance offerings while ensuring margin control.
-          additional_info:
         - website: https://malba.io
           documentation: /apps/melba
           logo: melba.png
