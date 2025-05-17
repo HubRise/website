@@ -4,7 +4,7 @@ describe("Contact popup", () => {
   it("opens the 'Contact us' modal and closes it", () => {
     const modal = () => cy.get("[role='modal']")
 
-    cy.visit("/developers")
+    cy.visit("/apps")
     cy.contains("button", "Contact us").click()
     modal().should("be.visible")
 
