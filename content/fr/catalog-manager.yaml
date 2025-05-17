@@ -68,6 +68,6 @@ content:
     description: You have questions about Catalog Manager or HubRise in general? Our support, and technical teams are here to help.
     buttons:
       - button_label: Explore OrderLine
-        button_link: /orderline
+        button_link: /fr/orderline
       - button_label: View Our Dashboard
-        button_link: /dashboard
+        button_link: /fr/dashboard

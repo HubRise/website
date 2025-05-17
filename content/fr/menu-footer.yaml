@@ -8,6 +8,8 @@ sections:
         to: /fr/catalog-manager
       - title: OrderLine
         to: /fr/orderline
+      - title: Dashboard
+        to: /fr/dashboard
   - title: Ressources
     links:
       - title: Démarrage Rapide

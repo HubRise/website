@@ -3,6 +3,7 @@ import { BecomePartnerYaml } from "@layouts/BecomePartner/types"
 import { BrandingYaml } from "@layouts/Branding/types"
 import { CatalogManagerYaml } from "@layouts/CatalogManager/types"
 import { ContactUsYaml } from "@layouts/ContactUs/types"
+import { DashboardYaml } from "@layouts/Dashboard/types"
 import { DocumentationIndexYaml } from "@layouts/DocumentationIndex/types"
 import { FAQsYaml } from "@layouts/FAQs/types"
 import { FrontpageYaml } from "@layouts/Frontpage/types"
@@ -43,6 +44,7 @@ const staticRoutes = async (): Promise<Routes> => {
     createRoute({ href: "/become-partner", language: "en", name: "become-partner", layout: "become-partner", context: { yaml: await readYamlFile<BecomePartnerYaml>("/en", "become-partner") }, getInTouch: { yaml: await readYamlFile<GetInTouchYaml>("/en", "get-in-touch") }, testimonials: { yaml: await readYamlFile<TestimonialsYaml>("/en", "testimonials") } }),
     createRoute({ href: "/branding", language: "en", name: "branding", layout: "branding", context: { yaml: await readYamlFile<BrandingYaml>("/en", "branding") }}),
     createRoute({ href: "/catalog-manager", language: "en", name: "catalog-manager", layout: "catalog-manager", context: { yaml: await readYamlFile<CatalogManagerYaml>("/en", "catalog-manager") }, getInTouch: { yaml: await readYamlFile<GetInTouchYaml>("/en", "get-in-touch") } }),
+    createRoute({ href: "/dashboard", language: "en", name: "dashboard", layout: "dashboard", context: { yaml: await readYamlFile<DashboardYaml>("/en", "dashboard") }, getInTouch: { yaml: await readYamlFile<GetInTouchYaml>("/en", "get-in-touch") } }),
     createRoute({ href: "/contributing", language: "en", name: "contributing", layout: "documentation-index", context: { yaml: await readYamlFile<DocumentationIndexYaml>("/en", "contributing") } }),
     createRoute({ href: "/testimonials", language: "en", name: "testimonials", layout: "testimonials", context: { yaml: await readYamlFile<TestimonialsYaml>("/en", "testimonials") } }),
     createRoute({ href: "/partners", language: "en", name: "partners", layout: "partners", context: { yaml: await readYamlFile<PartnersYaml>("/en", "partners") } }),
@@ -56,6 +58,7 @@ const staticRoutes = async (): Promise<Routes> => {
     createRoute({ href: "/fr/become-partner", language: "fr", name: "become-partner", layout: "become-partner", context: { yaml: await readYamlFile<BecomePartnerYaml>("/fr", "become-partner") }, getInTouch: { yaml: await readYamlFile<GetInTouchYaml>("/fr", "get-in-touch") }, testimonials: { yaml: await readYamlFile<TestimonialsYaml>("/fr", "testimonials") } }),
     createRoute({ href: "/fr/marque", language: "fr", name: "branding", layout: "branding", context: { yaml: await readYamlFile<BrandingYaml>("/fr", "branding") } }),
     createRoute({ href: "/fr/catalog-manager", language: "fr", name: "catalog-manager", layout: "catalog-manager", context: { yaml: await readYamlFile<CatalogManagerYaml>("/fr", "catalog-manager") }, getInTouch: { yaml: await readYamlFile<GetInTouchYaml>("/fr", "get-in-touch") } }),
+    createRoute({ href: "/fr/dashboard", language: "fr", name: "dashboard", layout: "dashboard", context: { yaml: await readYamlFile<DashboardYaml>("/fr", "dashboard") }, getInTouch: { yaml: await readYamlFile<GetInTouchYaml>("/fr", "get-in-touch") } }),
     createRoute({ href: "/fr/contribuer", language: "fr", name: "contributing", layout: "documentation-index", context: { yaml: await readYamlFile<DocumentationIndexYaml>("/fr", "contributing") } }),
     createRoute({ href: "/fr/temoignages", language: "fr", name: "testimonials", layout: "testimonials", context: { yaml: await readYamlFile<TestimonialsYaml>("/fr", "testimonials") } }),
     createRoute({ href: "/fr/partenaires", language: "fr", name: "partners", layout: "partners", context: { yaml: await readYamlFile<PartnersYaml>("/fr", "partners") } }),

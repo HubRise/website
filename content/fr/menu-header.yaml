@@ -21,7 +21,7 @@
       - title: Dashboard
         description: Some text here...
         link_label: Find out more
-        link: /
+        link: /fr/dashboard
         image: dashboard.png
 - title: Tarifs
   to: /fr/tarifs

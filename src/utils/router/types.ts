@@ -3,6 +3,7 @@ import { BecomePartnerYaml } from "@layouts/BecomePartner/types"
 import { BrandingYaml } from "@layouts/Branding/types"
 import { CatalogManagerYaml } from "@layouts/CatalogManager/types"
 import { ContactUsYaml } from "@layouts/ContactUs/types"
+import { DashboardYaml } from "@layouts/Dashboard/types"
 import { DocumentationIndexYaml } from "@layouts/DocumentationIndex/types"
 import { FAQsYaml } from "@layouts/FAQs/types"
 import { FrontpageYaml } from "@layouts/Frontpage/types"
@@ -26,6 +27,7 @@ export type RouteNameStatic =
   | "branding"
   | "contact-us"
   | "contributing"
+  | "dashboard"
   | "developers"
   | "docs"
   | "faqs"
@@ -60,6 +62,7 @@ export type LayoutName =
   | "become-partner"
   | "catalog-manager"
   | "contact-us"
+  | "dashboard"
   | "documentation"
   | "documentation-index"
   | "branding"
@@ -85,6 +88,8 @@ export type Context<L extends LayoutName> = L extends "apps"
   ? { context: { yaml: CatalogManagerYaml }; getInTouch: { yaml: GetInTouchYaml } }
   : L extends "contact-us"
   ? { context: { yaml: ContactUsYaml } }
+  : L extends "dashboard"
+  ? { context: { yaml: DashboardYaml }; getInTouch: { yaml: GetInTouchYaml } }
   : L extends "documentation"
   ? { context: { mdFile: DocMdFile; folder: DocFolder } }
   : L extends "documentation-index"

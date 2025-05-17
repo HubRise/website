@@ -1,0 +1,45 @@
+meta:
+  title: Dashboard | HubRise
+  description:
+content:
+  hero:
+    title:
+      part_1: Track
+      part_2: Sales to Make
+      part_3: Smarter
+      part_4: Business Decisions
+    description: Check your order data on the HubRise Dashboard to see how your business is performing across all locations and sales channels. Track revenue trends, compare performance over time, and identify your best-selling products and busiest hours.
+    content:
+      firstSide: Retail stores and restaurants generate a large amount of data — much of it valuable for analysis. When used effectively, this data helps business owners and managers make informed decisions, improve performance, and drive growth.
+      secondSide: The HubRise Dashboard provides easy access to ready-made reports from all connected sales channels. View aggregated data for a specific location or across all locations — anytime, on any device — to support data-driven understanding and decision-making.
+  features:
+    title: Features
+    cards:
+      - title: Real-Time Data
+        description: Access up-to-date sales data as it happens. Monitor performance across your business in real time, on any device, from anywhere, so you can respond quickly to changes, spot issues early, and act with confidence.
+        image: real-time.svg
+      - title: Ready-Made Reports
+        description: See ready-made reports from your connected apps, saving time and reducing manual work. Share access to these easy-to-understand reports with local managers to keep teams informed, engaged, and focused on performance.
+        image: ready-made-reports.svg
+      - title: Consolidated Data Across All Locations
+        description: View aggregated data from all your locations and connected sales channels in one place. Gain a global overview of your business, without switching between systems or apps.
+        image: consolidated-data-locations.svg
+      - title: Granular Performance Insights
+        description: Analyse performance by sales channel or location to understand where you are doing well and where adjustments are needed. Compare trends across locations to support informed operational decisions.
+        image: granular-performance.svg
+      - title: Revenue Over Time
+        description: Track revenue trends by day, week, month, year, or custom date range to identify growth patterns and seasonality. Use historical data to compare performance with previous years, improve forecasting, and plan with confidence.
+        image: revenue-over-time.svg
+      - title: Top-Selling Products
+        description: See your 30 most popular items at a glance, ranked by sales volume — or view the full list for deeper insights. Use this data to fine-tune your catalogue or menu, plan targeted promotions, and optimise inventory and purchasing decisions.
+        image: top-selling-products.svg
+  details:
+    title: Everything You Need to Keep Your Catalogs Updated
+  action_block:
+    title: Discover other apps to streamline your operations
+    description: Discover the benefits offered by other tools design to complement your operations, optimise workflows, and simplify reporting.
+    buttons:
+      - button_label: Explore the Catalog Manager
+        button_link: /catalog-manager
+      - button_label: View OrderLine
+        button_link: /orderline

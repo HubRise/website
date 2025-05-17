@@ -7,6 +7,7 @@ import blogPost from "./blogPost"
 import branding from "./branding"
 import catalogManager from "./catalogManager"
 import contactUs from "./contactUs"
+import dashboard from "./dashboard"
 import documentation from "./documentation"
 import documentationIndex from "./documentationIndex"
 import faqs from "./faqs"
@@ -29,6 +30,8 @@ export const renderContent = async (route: Route<RouteName, LayoutName>, router:
       return await blogPost(route as Route<RouteName, "blog-post">, router)
     case "catalog-manager":
       return await catalogManager(route as Route<RouteName, "catalog-manager">)
+    case "dashboard":
+      return await dashboard(route as Route<RouteName, "dashboard">)
     case "documentation":
       return await documentation(route as Route<RouteName, "documentation">, router)
     case "documentation-index":

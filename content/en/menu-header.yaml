@@ -20,7 +20,7 @@
       - title: Dashboard
         description: Some text here...
         link_label: Find out more
-        link: /
+        link: /dashboard
         image: dashboard.png
 - title: Pricing
   to: /pricing
