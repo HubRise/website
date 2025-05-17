@@ -1,7 +1,7 @@
 ---
 title: Price Difference Errors
 path_override: price-differences-errors
-position: 6
+position: 3
 layout: documentation
 meta:
   title: Troubleshoot Price Difference Errors | Lightspeed Restaurant | HubRise
