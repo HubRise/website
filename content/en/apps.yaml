@@ -424,6 +424,12 @@ content:
           country:
           title: DOOD
           description: DOOD is an e-commerce and e-marketing solution for the food retail industry. DOOD online ordering supports Click & Collect, delivery, and table ordering. DOOD's suite of marketing tools is designed to increase customer loyalty.
+        - website: https://www.eatself.com
+          documentation: /apps/eatself
+          logo: eatself.png
+          country: BE, CH, FR, BE, MA
+          title: eEatself
+          description: EatSelf helps digitise restaurants on-site and remotely. It offers tools for online ordering, table ordering, self-service kiosks, loyalty programmes, and reservations without intermediaries or commission fees.
         - website: https://eddress.co
           documentation: /apps/eddress
           logo: eddress.png
