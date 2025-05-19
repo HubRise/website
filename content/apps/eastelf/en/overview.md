@@ -21,6 +21,12 @@ app_info:
   contact: +33 1 84 25 27 77
 ---
 
+---
+
+**IMPORTANT NOTE:** The full documentation is available <Link href="/fr/apps/eatself" addLocalePrefix={false}>in French only</Link>.
+
+---
+
 ## Description
 
 Eatself is a solution designed for restaurant owners looking to digitalise their business, without intermediaries or commissions. With Eatself, you can deploy a complete solution — with no technical skills required — Eatself to manage customer relationships and sales both on-site and remotely, via various digital channels.
