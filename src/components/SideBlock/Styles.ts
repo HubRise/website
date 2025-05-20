@@ -44,6 +44,11 @@ export const MainContant = styled.div`
 
 export const SecondaryContent = styled.div`
   grid-area: secondary;
+  overflow: hidden;
+
+  img {
+    transition: all 0.3s ease-in-out;
+  }
 `
 
 export const Content = styled.div<{ $secondaryPosition: SidePosition; $contentFirst: boolean }>`
@@ -91,10 +96,26 @@ export const Content = styled.div<{ $secondaryPosition: SidePosition; $contentFi
         ? css`
             grid-template-columns: 1fr 1fr;
             grid-template-areas: "secondary main";
+
+            ${SecondaryContent} {
+              img {
+                &:hover {
+                  transform: scale(1.1) translateX(-30px);
+                }
+              }
+            }
           `
         : css`
             grid-template-columns: 1fr 1fr;
             grid-template-areas: "main secondary";
+
+            ${SecondaryContent} {
+              img {
+                &:hover {
+                  transform: scale(1.1) translateX(30px);
+                }
+              }
+            }
           `}
   }
 

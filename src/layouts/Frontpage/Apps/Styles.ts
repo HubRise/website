@@ -72,6 +72,10 @@ export const LogoContainer = styled.div<{ $moveShift: number; $nbCards: number }
   & > div:nth-child(even) {
     top: 2rem;
   }
+
+  &:hover {
+    animation-play-state: paused;
+  }
 `
 
 export const AppCard = styled.div`
