@@ -1,7 +1,7 @@
 ---
 title: Récupérer le catalogue
 path_override: recuperer-catalogue
-position: 6
+position: 5
 layout: documentation
 meta:
   title: Récupérer le catalogue | Eatself | HubRise
@@ -64,7 +64,7 @@ L'envoi du catalogue HubRise vers Eatself entraîne la récupération de l'inven
 
 Par défaut, Eatself ne récupère pas les remises du catalogue HubRise, afin de ne pas écraser vos codes promo Eatself. 
 
-Vous pouvez activer la synchronisation des remises dans la page de configuration du back-office de Eatself. Pour plus d'informations, voir [Remises et frais](/apps/eatself/configuration#discount-charges)
+Vous pouvez activer la synchronisation des remises dans la page de configuration du back-office de Eatself. Pour plus d'informations, voir [Codes promo(/apps/eatself/configuration#promo-codes)
 
 ### Frais
 

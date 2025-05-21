@@ -21,35 +21,52 @@ Pour accéder à la page de configuration Eatself, procédez comme suit :
 
 ![Connecter Eatself à HubRise](./images/003-2x-eatself-configuration.png)
 
-## Remises et frais {#discount-charges}
+## Récupération du catalogue
 
-Tous les éléments du catalogue HubRise ne sont pas transmis par défaut à Eatself, en particulier les **Remises** et les **Frais**. HubRise peut cependant les envoyer automatiquement à chaque envoi de catalogue.
-Pour activer cette fonctionnalité, rendez-vous section **RÉCUPÉRER AUTOMATIQUEMENT LES CODES PROMO DEPUIS HUBRISE ?** puis faites glisser le bouton `NON` vers la droite jusqu'à obtenir `OUI`.
+### Récupération automatique
+
+Le catalogue HubRise peut être automatiquement transmis à Eatself.
+Pour activer cette fonctionnalité, dans la section **RÉCUPÉRER AUTOMATIQUEMENT LE CATALOGUE ?**, faites glisser le bouton vers la droite pour passer de `NON` à `OUI`.
+
+### Codes promo {#promo-codes}
+
+Par défaut, Eatself ne récupère pas les codes promo, mais vous pouvez changer ce paramètre si vous préférez les gérer dans HubRise. 
+Pour activer cette fonctionnalité, dans la section **RÉCUPÉRER AUTOMATIQUEMENT LES CODES PROMO DEPUIS HUBRISE ?**, faites glisser le bouton vers la droite pour passer de `NON` à `OUI`.
+
+### Variantes de catalogue
+
+Vous pouvez définir trois types de prix distincts dans un catalogue Eatself, pour la livraison, la vente à emporter, et la consommation sur place.
+
+Si vous utilisez des tarifs différenciés, assurez-vous que les variantes de catalogue nécessaires sont présentes dans HubRise. Pour plus de précisions, voir notre aide en ligne [Variantes de Catalog Manager](/apps/catalog-manager/variants).
+
+La section **Les ref code des variante de prix sur HubRise** dans la page de configuration Eatself vous permet de spécifier le code ref associé à chaque variante de catalogue HubRise. Ces codes sont disponibles dans le back-office de gestion des variantes de **Catalog Manager**.
+
+## Envoi des commandes
+
+---
+
+**REMARQUE IMPORTANTE :** Pour obtenir les codes ref à utiliser dans les sections suivantes, consultez la documentation de votre logiciel de caisse sur le site internet de HubRise.
+
+---
 
 
-## Remises
+### Remises
 
-La section **Code ref article remise** permet de spécifier le code ref de la remise appliquée à vos produits, dans le cas où vous en utilisez sur Eatself. Pour obtenir le code ref correspondant, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
+La section **Ref code article remise** permet de spécifier le code ref de la remise appliquée à vos produits, dans le cas où vous en utilisez sur Eatself.
 
-## Frais
+### Frais
 
-Si des frais de livraison, de traitement ou un pourboire s'appliquent, un code ref peut être nécessaire. Reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise pour vérifier.
-Section **Ref code frais de livraison** permet de spécifier le code ref correspondant.
+Si des frais de livraison s'appliquent, un code ref peut être nécessaire.
+La section **Ref code frais de Livraison** permet de spécifier le code ref correspondant.
 
-## Variantes de catalogue
+### Types de service
 
-Il est possible de définir trois types de prix distincts dans un catalogue Eatself : un prix pour la livraison, un autre pour la vente à emporter, et un troisième pour une consommation sur place.
-Si vous utilisez des prix différenciés, assurez-vous que les variantes de catalogue nécessaires sont présentes dans HubRise. Pour plus de précisions, voir notre aide en ligne [Variantes de Catalog Manager](https://www.hubrise.com/fr/apps/catalog-manager/variantes).
-Section **Code ref des variantes de prix sur HubRise** dans la page de configuration Eatself vous permet de spécifier les codes ref correspondant à chaque variante de catalogue HubRise. Ces codes sont disponibles dans le back-office de gestion des variantes de **Catalog Manager**.
+Les types de service tels que la livraison, vente à emporter et consommation sur place peuvent nécessiter la saisie du code ref correspondant.
+Pour configurer ces références, utilisez la section **Référence des mode de consommation selon votre caisse**.
 
-## Types de service
 
-Les types de service tels que la livraison, vente à emporter et consommation sur place peuvent nécessiter la saisie du code ref correspondant. Reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise pour vérifier.
-Pour le configurer, référez-vous à la colonne **Référence des modes de consommation caisse**.
-
-## Paiements
+### Paiements
 
 Sur Eatself, les clients peuvent régler leur commande en ligne, en espèces ou par le biais de points de fidélité.
-Section **Référence de paiement caisse** permet de spécifier les codes ref pour ces trois types de paiement. Pour connaître les codes à utiliser, consultez la documentation de votre logiciel de caisse sur le site internet de HubRise.
-
+La section **Référence de paiement selon votre caisse** permet de spécifier les codes ref pour ces trois types de paiement.
 
