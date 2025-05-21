@@ -44,11 +44,11 @@ The solution includes:
 Key benefits of Eatself:
 
 - **0% commission**: Unlike traditional delivery platforms, Eatself takes no commission on sales. Restaurant owners keep all their profit margins.
-- **You stay connected with your customers**: Orders are placed via your own interface, not a marketplace. You have access to your customers’ contact details and you can run your own loyalty and marketing campaigns.
+- **You stay connected with your customers**: Orders are placed via your own interface, not a marketplace. You have access to your customers' contact details and you can run your own loyalty and marketing campaigns.
 - **Quick setup**: The solution comes pre-configured and training is included. It is designed to be up and running from day one, with no specific technical knowledge required.
 - **Measurable impact on sales**: On average, restaurant owners using Eatself see a 26% increase in revenue. This is thanks to a smooth interface, reduced queues via kiosks, better presentation of menus, and easier upselling.
 - **Cost-effective ordering kiosk**: The touchscreen kiosk is provided with no hidden fees or commission. The Eatself kiosk offers a budget-friendly alternative to typically more expensive market options.
-- **Dedicated customer support**: Personalised support is available to help you get the most out of the solution’s features.
+- **Dedicated customer support**: Personalised support is available to help you get the most out of the solution's features.
 - **Integration with delivery platforms**: If you use delivery platforms, Eatself can connect them directly to your EPOS. Your orders are automatically centralised — no manual entry required — and fully integrated into your existing workflow.
 
 ## Integration Features

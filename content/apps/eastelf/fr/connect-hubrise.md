@@ -13,7 +13,7 @@ meta:
 
 Pour connecter Eatself à HubRise, suivez ces étapes :
 
-1. Depuis le back-office de Eatself, cliquez sur le burger menu pour ouvrir la barre de menu à gauche de l’écran.
+1. Depuis le back-office de Eatself, cliquez sur le burger menu pour ouvrir la barre de menu à gauche de l'écran.
 1. En bas de page, section **RÉGLAGES PAIEMENT**, cliquez sur **Compte HubRise**.
 1. Cliquez sur le bouton **ME CONNECTER**. Vous êtes redirigé vers l'interface HubRise. S'il s'agit de votre première connexion, créez un compte HubRise. Pour plus d'informations, consultez notre [Guide de démarrage](/docs/get-started). 
 1. Si votre compte possède plusieurs points de vente, développez **Choisissez le point de vente**, sélectionnez le point de vente à connecter, puis cliquez sur **Autoriser**. Si le point de vente sélectionné possède plusieurs listes de clients ou catalogues, cliquez sur **Suivant** pour afficher les listes déroulantes correspondantes, puis sélectionnez les options souhaitées.
@@ -47,7 +47,7 @@ L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers �
 
 Pour déconnecter Eatself de HubRise, procédez comme suit :
 
-1. Depuis le back-office de Eatself, cliquez sur le burger menu pour ouvrir la barre de menu à gauche de l’écran.
+1. Depuis le back-office de Eatself, cliquez sur le burger menu pour ouvrir la barre de menu à gauche de l'écran.
 1. Section **RÉGLAGES PAIEMENT** cliquer sur **Compte HubRise**.
 1. Cliquez sur le bouton **ME DÉCONNECTER**.
 1. Eatself est déconnecté de HubRise.

@@ -8,9 +8,9 @@ meta:
   description: Instructions pour configurer Eatself afin qu'il fonctionne parfaitement avec votre logiciel de caisse et les autres applications connectées à HubRise. La configuration est simple.
 ---
 
-La connexion de Eatself s’effectue en quelques étapes simples et rapides. Il est toutefois nécessaire de réaliser quelques réglages pour que la connexion se comporte exactement comme vous le souhaitez.
+La connexion de Eatself s'effectue en quelques étapes simples et rapides. Il est toutefois nécessaire de réaliser quelques réglages pour que la connexion se comporte exactement comme vous le souhaitez.
 
-Si vous connectez Eatself à un logiciel de caisse via HubRise, vous devrez utiliser des codes ref spécifiques. Ces codes permettent d’identifier de manière unique les produits, les remises, les frais, ou encore les moyens de paiement, afin que toutes les données soient correctement interprétées par votre caisse et les autres applications connectées à HubRise.
+Si vous connectez Eatself à un logiciel de caisse via HubRise, vous devrez utiliser des codes ref spécifiques. Ces codes permettent d'identifier de manière unique les produits, les remises, les frais, ou encore les moyens de paiement, afin que toutes les données soient correctement interprétées par votre caisse et les autres applications connectées à HubRise.
 
 Pour accéder à la page de configuration Eatself, procédez comme suit :
 
@@ -18,6 +18,8 @@ Pour accéder à la page de configuration Eatself, procédez comme suit :
 1. En bas de page, section **RÉGLAGES PAIEMENT**, cliquez sur **Compte HubRise**.
 1. Sur la page de configuration, effectuez les modifications nécessaires.
 1. Cliquez **ENREGISTRER** pour que les modifications soient prises en compte.
+
+![Connecter Eatself à HubRise](./images/003-2x-eatself-configuration.png)
 
 ## Remises et frais {#discount-charges}
 
@@ -27,11 +29,11 @@ Pour activer cette fonctionnalité, rendez-vous section **RÉCUPÉRER AUTOMATIQU
 
 ## Remises
 
-Section **Code ref article remise** permet de spécifier le code ref de la remise appliquée à vos produits, dans le cas où utilisez des offres sur Eatself. Pour obtenir le code ref correspondant, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
+La section **Code ref article remise** permet de spécifier le code ref de la remise appliquée à vos produits, dans le cas où vous en utilisez sur Eatself. Pour obtenir le code ref correspondant, reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise.
 
 ## Frais
 
-Si des frais de livraison, de traitement ou un pourboire s’appliquent, un code ref peut être nécessaire. Reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise pour vérifier.
+Si des frais de livraison, de traitement ou un pourboire s'appliquent, un code ref peut être nécessaire. Reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise pour vérifier.
 Section **Ref code frais de livraison** permet de spécifier le code ref correspondant.
 
 ## Variantes de catalogue
@@ -51,4 +53,3 @@ Sur Eatself, les clients peuvent régler leur commande en ligne, en espèces ou 
 Section **Référence de paiement caisse** permet de spécifier les codes ref pour ces trois types de paiement. Pour connaître les codes à utiliser, consultez la documentation de votre logiciel de caisse sur le site internet de HubRise.
 
 
-![Connecter Eatself à HubRise](./images/003-2x-eatself-configuration.png)
