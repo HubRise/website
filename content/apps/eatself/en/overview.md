@@ -29,27 +29,25 @@ app_info:
 
 ## Description
 
-Eatself is a solution designed for restaurant owners looking to digitalise their business, without intermediaries or commissions. With Eatself, you can deploy a complete solution — with no technical skills required — Eatself to manage customer relationships and sales both on-site and remotely, via various digital channels.
+Eatself is a solution designed for restaurant owners looking to digitalise their business, without intermediaries or commissions. With Eatself, you can deploy a complete solution to manage customer relationships and sales both on-site and remotely, via various digital channels.
 
 The solution includes:
 
-- **Online ordering**: Click & Collect, home delivery, and pay at the table via QR code.
-- **Ordering kiosk**: Touchscreen self-ordering kiosks available in various formats (countertop, freestanding, wall-mounted) to manage in-house customer flow.
-- **Digital menu**: Online menu, facilitating real time updates, with allergen and dietary information management.
-- **Online booking**: Integrated booking system to reduce the number of phone calls related to reservations.
-- **Loyalty**: Points-based loyalty programme to reward returning customers.
-- **Delivery**: Option to use your own drivers or connect with third-party providers such as Stuart or Uber Direct.
-- **Fair pricing**, with a free plan and paid options depending on the features activated.
+- Online ordering: Click & Collect, home delivery, and pay at the table via QR code.
+- Ordering kiosk: Touchscreen kiosks available in various formats (countertop, freestanding, wall-mounted) to manage in-house customer flow.
+- Digital menu: Online menu with real-time updates, allergen and dietary information management.
+- Online booking: Integrated reservation system to reduce phone calls.
+- Loyalty: Points-based programme to reward returning customers.
+- Delivery: Option to use your own drivers or connect with third-party providers (Stuart, Uber Direct).
 
-Key benefits of Eatself:
+Eatself offers several advantages:
 
-- **0% commission**: Unlike traditional delivery platforms, Eatself takes no commission on sales. Restaurant owners keep all their profit margins.
-- **You stay connected with your customers**: Orders are placed via your own interface, not a marketplace. You have access to your customers' contact details and you can run your own loyalty and marketing campaigns.
-- **Quick setup**: The solution comes pre-configured and training is included. It is designed to be up and running from day one, with no specific technical knowledge required.
-- **Measurable impact on sales**: On average, restaurant owners using Eatself see a 26% increase in revenue. This is thanks to a smooth interface, reduced queues via kiosks, better presentation of menus, and easier upselling.
-- **Cost-effective ordering kiosk**: The touchscreen kiosk is provided with no hidden fees or commission. The Eatself kiosk offers a budget-friendly alternative to typically more expensive market options.
-- **Dedicated customer support**: Personalised support is available to help you get the most out of the solution's features.
-- **Integration with delivery platforms**: If you use delivery platforms, Eatself can connect them directly to your EPOS. Your orders are automatically centralised — no manual entry required — and fully integrated into your existing workflow.
+- No commission on sales, unlike delivery platforms.
+- Control over customer relationships, with orders placed on the restaurant's website rather than a marketplace.
+- Quick setup with included training.
+- Self-ordering kiosk with no hidden fees or commissions.
+- Personalized customer support.
+- Possible integration with delivery platforms, allowing orders to be centralized directly to your EPOS system.
 
 ## Integration Features
 
