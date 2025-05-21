@@ -5,7 +5,7 @@ position: 1
 layout: documentation
 meta:
   title: Présentation générale | Eatself | HubRise
-  description: Présentation générale de Eatself, les raisons de connecter Eastelf à HubRise et fonctionnalités de l'intégration avec HubRise. Synchronisez vos données.
+  description: Présentation générale de Eatself, les raisons de connecter Eatself à HubRise et fonctionnalités de l'intégration avec HubRise. Synchronisez vos données.
 gallery:
   - __gallery-001.jpg
   - __gallery-002.jpg
