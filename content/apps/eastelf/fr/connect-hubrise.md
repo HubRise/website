@@ -47,7 +47,7 @@ L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers �
 
 Pour déconnecter Eatself de HubRise, procédez comme suit :
 
-1. Depuis le back-office de Eatself, cliquez sur Le burger menu pour ouvrir la barre de menu à gauche de l’écran.
+1. Depuis le back-office de Eatself, cliquez sur le burger menu pour ouvrir la barre de menu à gauche de l’écran.
 1. Section **RÉGLAGES PAIEMENT** cliquer sur **Compte HubRise**.
 1. Cliquez sur le bouton **ME DÉCONNECTER**.
 1. Eatself est déconnecté de HubRise.

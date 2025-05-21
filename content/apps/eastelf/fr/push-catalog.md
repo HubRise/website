@@ -12,7 +12,7 @@ Avec Eatself, vous pouvez envoyer votre catalogue HubRise vers votre restaurant 
 
 Vous pouvez également configurer le bridge de manière à envoyer votre catalogue vers Eatself à chaque fois qu'il est modifié sur HubRise. Pour plus d'informations, voir [Catalogue](/apps/deliveroo/configuration#catalog).
 
-Cette page explique comment envoyer votre catalogue et quelles informations sont envoyées à Eastsef.
+Cette page explique comment envoyer votre catalogue et quelles informations sont envoyées à Eastself.
 
 ---
 

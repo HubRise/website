@@ -42,7 +42,7 @@ Section **Code ref des variantes de prix sur HubRise** dans la page de configura
 
 ## Types de service
 
-Les types de service tels que la livraison, vente à emporter àu consommation sur place peuvent nécessiter la saisie du code ref correspondant. Reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise pour vérifier.
+Les types de service tels que la livraison, vente à emporter et consommation sur place peuvent nécessiter la saisie du code ref correspondant. Reportez-vous à la documentation de votre logiciel de caisse sur le site internet de HubRise pour vérifier.
 Pour le configurer, référez-vous à la colonne **Référence des modes de consommation caisse**.
 
 ## Paiements

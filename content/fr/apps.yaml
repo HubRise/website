@@ -422,9 +422,9 @@ content:
         - website: https://www.eatself.com
           documentation: /fr/apps/eatself
           logo: eatself.png
-          country: BE, CH, FR, BE, MA
+          country: BE, CH, FR, MA
           title: eEatself
-          description: EatSelf est une solution conçue pour les restaurateurs qui souhaitent digitaliser leur activité, gérer la relation client et les ventes, sur place comme à distance, via différents canaux numériques. Elle intègre des outils de commande en ligne, commande à table, bornes interactives, fidélisation client et réservation en ligne, le tout sans intermédiaires ni commissions.
+          description: EatSelf est une solution de commande en ligne, commande à table, bornes interactives, fidélisation client et réservation en ligne, le tout sans intermédiaires ni commissions. Elle est conçue pour les restaurateurs qui souhaitent digitaliser leur activité sur place et à distance.
         - website: https://eddress.co
           documentation: /fr/apps/eddress
           logo: eddress.png

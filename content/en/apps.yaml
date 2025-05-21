@@ -422,9 +422,9 @@ content:
         - website: https://www.eatself.com
           documentation: /apps/eatself
           logo: eatself.png
-          country: BE, CH, FR, BE, MA
+          country: BE, CH, FR, MA
           title: eEatself
-          description: EatSelf helps digitise restaurants on-site and remotely. It offers tools for online ordering, table ordering, self-service kiosks, loyalty programmes, and reservations without intermediaries or commission fees.
+          description: EatSelf is an online ordering, table ordering, self-service kiosk, loyalty programme, and reservations solution, all without intermediaries or commissions. It is designed for restaurateurs who want to digitise their activity on-site and remotely.
         - website: https://eddress.co
           documentation: /apps/eddress
           logo: eddress.png
