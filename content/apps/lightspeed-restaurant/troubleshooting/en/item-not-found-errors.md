@@ -1,7 +1,7 @@
 ---
 title: Item Not Found Errors
 path_override: item-not-found-errors
-position: 3
+position: 1
 layout: documentation
 meta:
   title: Troubleshoot Item Not Found Errors | Lightspeed Restaurant | HubRise

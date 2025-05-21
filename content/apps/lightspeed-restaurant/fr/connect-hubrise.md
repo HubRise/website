@@ -30,6 +30,12 @@ Lightspeed Restaurant Bridge se connecte à un point de vente HubRise. Vous deve
    - Cliquez sur **Enregistrer**.
 1. Votre logiciel de caisse est désormais connecté à votre point de vente HubRise. Les commandes envoyées à HubRise apparaîtront dans le restaurant Lightspeed une fois que l'intégration [HubRise sera activée](#enable-integration).
 
+---
+
+**REMARQUE IMPORTANTE :** L'utilisateur Lightspeed utilisé lors de la connexion doit disposer de l'autorisation **BO-WRITE** dans le back-office Lightspeed. Si cette permission est absente, certaines opérations, comme l'import du catalogue, échoueront avec une erreur _403 Forbidden_. Consultez [Erreur Forbidden lors de l'import du catalogue](/apps/lightspeed-restaurant/troubleshooting/forbidden-menu-pull-error) pour plus de détails.
+
+---
+
 ## 2. Activer l'intégration à HubRise {#enable-integration}
 
 Envoyez un e-mail à support@hubrise.com pour demander l'activation de la connexion. Aucune donnée ne sera transmise de HubRise à Lightspeed Restaurant tant que Lightspeed n'aura pas activé l'API pour HubRise dans votre compte. HubRise facilitera cette activation en écrivant à k-series.support@lightspeedhq.com.

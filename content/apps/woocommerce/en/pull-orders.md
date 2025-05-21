@@ -66,6 +66,12 @@ In the default WooCommerce installation, the service type is always `delivery`. 
 
 ---
 
+## Order Times
+
+WooCommerce does not natively support expected delivery or collection times, so a plugin is required to implement this functionality. The WooCommerce Bridge supports multiple formats and plugins for order time data, which can be stored either in the order's metadata or in the shipping lines metadata depending on the plugin used.
+
+For configuration details and supported time formats, refer to the [Expected time](/apps/woocommerce/configuration#expected-time) section of the Configuration page.
+
 ## Customer Details
 
 WooCommerce Bridge provides full customer information about orders, including name, delivery address, and contact details, and saves it in HubRise.
@@ -207,5 +213,3 @@ The fields sent are the following:
 ### Custom Fields
 
 The `custom_fields` object is used by WooCommerce Bridge to store the metadata that WooCommerce sends in the order. This information is not provided by default by the WooCommerce API, but the actual format depends on the installed plugins and code customisation made on the website.
-
-For example, the `custom_fields` object can encode the service type or the expected delivery time for the order.

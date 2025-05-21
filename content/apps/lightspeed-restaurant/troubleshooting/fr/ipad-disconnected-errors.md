@@ -1,7 +1,7 @@
 ---
 title: Erreurs liées aux iPad
 path_override: erreurs-liees-aux-ipad
-position: 9
+position: 4
 layout: documentation
 meta:
   title: Résoudre les erreurs liées aux iPad | Lightspeed Restaurant | HubRise

@@ -19,29 +19,29 @@ content:
         - website: https://3s-pos.com
           documentation: /fr/apps/3s-pos
           logo: 3spos.png
-          country:
+          country: GB
           title: 3S POS
           description: 3S POS est une suite complète aux fonctionnalités personnalisables pour répondre aux besoins de chaque restaurant ou hôtelier.
-        - website: https://adipos.fr/
+        - website: https://adipos.fr
           documentation: /fr/apps/adipos
           logo: adipos.png
-          country:
+          country: CH, FR
           title: Adipos
           description: Adipos est une solution de caisse pour iOS et Android. Elle est adaptée aux besoins de la restauration en salle, livraison et click & collect, pour les entreprises mono ou multi établissements. Adipos propose des applications interconnectées, dont des bornes de commande, une solution de commande en ligne et un écran cuisine.
           additional_info:
-        - website: https://www.carrepos-online.fr/
+        - website: https://www.carrepos-online.fr
           documentation: /fr/apps/carre-pos
           logo: carrepos.png
-          country:
+          country: FR
           title: Carré POS
           description: Carré POS est un logiciel de caisse qui permet une prise de commande rapide et s'adapte à tous les types de commerces, dont les restaurants, les boulangeries, les boutiques, les coiffeurs ou encore les fleuristes.
         - website: https://www.clyosystems.com
           documentation: /apps/clyo
           logo: clyo.png
-          country:
+          country: BE, CH, FR, MA
           title: Clyo Systems
           description: Clyo Systems est une solution de caisse tout-en-un pour les restaurants, incluant la gestion des stocks, la fidélité, les écrans cuisine, la gestion du temps du personnel et la commande en ligne. Sa conception modulaire permet l'ajout de modules adaptés aux besoins spécifiques de chaque établissement.
-          additional_info: Intégration en cours.
+          additional_info:
         - website: https://www.csy.co.uk
           documentation: /fr/apps/csy
           logo: csy.png
@@ -54,52 +54,51 @@ content:
           country: FR
           title: Drive Eat
           description: Drive Eat propose un logiciel de caisse combiné à des solutions de commande digitale pour les restaurants, snacks et boulangeries. Ses services incluent des bornes de commande, des applications mobiles, des solutions Click & Collect, des écrans cuisine et des monnayeurs, le tout conçu pour optimiser les opérations, réduire les temps d'attente et améliorer l'expérience client.
-          additional_info:
-        - website: https://www.epostechnologies.co.uk/
+        - website: https://www.epostechnologies.co.uk
           documentation: /fr/apps/epos-technologies
           logo: epostechnologies.png
-          country:
+          country: GB
           title: EPOS Technologies
           description: Epos Technologies, adapté à tout type de commerce, offre de nombreuses fonctionnalités dont un système de gestion de livreurs, un kiosque, un écran cuisine, ainsi qu'une solution de commande en ligne et de commande à table.
           additional_info:
-        - website: https://www.etakeawaymax.co.uk/
+        - website: https://www.etakeawaymax.co.uk
           documentation: /fr/apps/etakeaway-max
           logo: etakeawaymax.png
-          country:
+          country: GB
           title: eTakeaway Max
           description: eTakeaway Max est un logiciel de caisse et de commande en ligne pour les restaurants.
           additional_info:
-        - website: https://www.frenchcaisse.fr/
+        - website: https://www.frenchcaisse.fr
           documentation: /fr/apps/french-caisse
           logo: french-caisse.png
-          country:
+          country: CH, DE, FR, MA
           title: French Caisse
           description: French Caisse est une caisse enregistreuse tactile utilisable dans de nombreux types de commerces. L'éditeur propose également une borne de commande, un site e-commerce et une carte de fidélité.
           additional_info:
         - website: https://iikosoftware.com
           documentation: /fr/apps/iiko
           logo: iiko.png
-          country:
+          country: all
           title: iiko
           description: iiko est une solution cloud facile à déployer et à faire évoluer. Plus de 30.000 entreprises mono ou multisites l'utilisent pour automatiser leurs opérations.
           additional_info: Intégration en cours.
         - website: https://www.jdc.fr/caisse-enregistreuse
           documentation: /fr/apps/jalia
           logo: jalia.png
-          country:
+          country: FR
           title: Jalia par JDC
           description: Jalia de JDC, est un logiciel de caisse cloud sur tablette iOS ou Android, qui favorise la mobilité. L'installation est rapide et l'interface optimisée pour une prise de commande rapide.
           additional_info:
         - website: https://www.jdc.fr/caisse-enregistreuse
           documentation: /fr/apps/kezia
           logo: kezia.png
-          country:
+          country: FR
           title: Kezia II
           description: Kezia II de JDC allie gestion et encaissement avec les qualités recherchées par une caisse enregistreuse traditionnelle. Kezia II s'adapte à tous types de commerces et offre des fonctions de logistique, inventaire, achats, fidélité, statistiques et gestion des équipes. Il fonctionne en multisite et multiposte.
-        - website: https://www.leo2.fr/
+        - website: https://www.leo2.fr
           documentation: /fr/apps/leo2
           logo: leo2.png
-          country:
+          country: FR, MA
           title: LEO2 / Atoo
           description: LEO2 est un logiciel de caisse développé par Atoo. LEO2 s'adapte à tous les types de commerces, dont les restaurants, les boulangeries, les épiceries, les bouchers ou encore les fleuristes.
           additional_info:
@@ -112,166 +111,166 @@ content:
         - website: https://mealenium.io
           documentation: /fr/apps/mealenium
           logo: mealenium.png
-          country:
+          country: FR
           title: Mealenium
           description: Mealenium est un logiciel de caisse multi-plateforme (Windows, iOS et Android), destiné au secteur de la restauration. Son ergonomie et ses fonctionnalités facilitent le pilotage quotidien d'un établissement, de la prise de commande à la gestion détaillée de l'activité.
         - website: https://www.miipos.fr
           documentation: /fr/apps/miipos
           logo: miipos.png
-          country:
+          country: FR, CH, IE, GB
           title: MiiPos
           description: MiiPos édité par Arcsolu, est une caisse enregistreuse multi-plateformes (Windows, Android, iOS, Linux), avec un boost de technologie cloud, disponible en chinois, et conçue pour répondre aux besoins de nombreux types de commerces. Elle inclut les fonctionnalités nécessaires pour gérer les commerces et aider à la prise de décisions.
         - website: http://www.myorderboxhq.com
           documentation: /fr/apps/myorderbox
           logo: myorderbox.png
-          country:
+          country: GB
           title: MyOrderBox
           description: MyOrderBox est un logiciel de caisse facile à installer et à utiliser.
         - website: http://www.logiciel-de-livraison.com
           documentation: /fr/apps/nestor
           logo: nestor.png
-          country:
+          country: FR
           title: Nestor
           description: Nestor est un logiciel de caisse conçu pour la livraison à domicile et la vente à emporter.
         - website: https://www.netfood.cloud
           documentation: /apps/netfood
           logo: netfood.png
-          country:
+          country: IT
           title: NetFood
           description: NetFood, développé par .Net Informatica, est un logiciel de caisse italien pour la restauration et les débits de boissons. NetFood est proposé avec une solution de commande en ligne et une application mobile, ainsi qu'un kiosque de commande.
           additional_info:
         - website: https://nextorder.com/fr-fr
           documentation: /fr/apps/next-order
           logo: next-order.png
-          country:
+          country: AU, IE, GB
           title: Next Order
           description: Next Order propose une suite logicielle complète pour tout type de restaurant. Next Order fonctionne en mode Cloud et peut être utilisé sur n'importe quel appareil. Riche en fonctionnalités, Next Order aide à rationaliser les opérations.
         - website: https://www.orderlord.com
           documentation: /fr/apps/orderlord
           logo: orderlord.png
-          country:
+          country: all
           title: OrderLord POS
           description: OrderLord est un logiciel de caisse spécialisé pour la livraison. OrderLord offre de nombreuses fonctionnalités pour faciliter le travail en cuisine, la gestion de livreurs et l'analyse des données.
-        - website: https://orderwire.com/
+        - website: https://orderwire.com
           documentation: /fr/apps/orderwire
           logo: orderwire.png
-          country:
+          country: IE, GB
           title: OrderWire
           description: OrderWire est une solution de caisse cloud conçue pour la livraison. OrderWire se déploie aussi bien dans de simples cafés que dans des chaînes de restauration multi établissements, des restaurants traditionnels ou des Dark Kitchens.
-        - website: hhttps://pandaepos.com/
+        - website: https://pandaepos.com
           documentation: /fr/apps/panda-epos
           logo: panda-epos.png
-          country:
+          country: GB
           title: Panda EPOS
           description: Panda EPOS centralise les commandes de tous les canaux, le fichier clients et le menu. Il offre une plate-forme unique pour les restaurants avec un ou plusieurs emplacements pour gérer les livraisons et les commandes à emporter.
           additional_info: Intégration en cours.
-        - website: https://www.partech.com/pixel-point-software/
+        - website: https://www.partech.com/pixel-point-software
           documentation: /fr/apps/pixelpoint-bridge
           logo: par-pixelpoint-web-api.png
-          country:
+          country: CA, GB
           title: PAR PixelPoint (web API)
           description: PixelPoint, édité par PAR, intégré via son API web, répond aux besoins de la restauration et du divertissement, avec un focus sur la gestion des coûts, la prévention des pertes et la fidélisation.
           additional_info: Intégration par API web.
-        - website: https://www.partech.com/pixel-point-software/
+        - website: https://www.partech.com/pixel-point-software
           documentation: /fr/apps/pixelpoint-windows-api
           logo: par-pixelpoint.png
-          country:
+          country: CA, IE, GB
           title: PAR PixelPoint (Windows API)
           description: PixelPoint, édité par PAR, intégré via son API Windows, répond aux besoins de la restauration et du divertissement, avec un focus sur la gestion des coûts, la prévention des pertes et la fidélisation.
           additional_info: Intégration par API Windows, réalisée par Slowey Systems.
-        - website: https://www.pointone-epos.co.uk/
+        - website: https://www.pointone-epos.co.uk
           documentation: /fr/apps/pointone
           logo: pointone.png
-          country:
+          country: GB
           title: pointOne
           description: pointOne est un logiciel de caisse complète et simple à utiliser, avec gestion de stock, rapports et analyse des données.
           additional_info: Intégration en cours.
-        - website: https://www.popina.com/fr/
+        - website: https://www.popina.com/fr
           documentation: /fr/apps/popina
           logo: popina.png
-          country:
+          country: CH, FR
           title: Popina
           description: Popina est une caisse iPad pour les restaurants, simple et intuitive à utiliser. Popina est accompagnée d'un système de gestion et de nombreux accessoires pour enrichir l'expérience utilisateur et client.
           additional_info:
-        - website: https://poshelper.fr/
+        - website: https://poshelper.fr
           documentation: /fr/apps/pos-helper
           logo: pos-helper.png
-          country:
+          country: FR
           title: POS HELPER
           description: POS HELPER est un logiciel de caisse pour les restaurants, qui inclut des fonctionnalités de production, de gestion, de pilotage et de facturation. POS HELPER propose aussi un écran cuisine, une borne de commande et un système de commande en ligne.
           additional_info:
         - website: https://www.cunninghams.co.uk
           documentation: /fr/apps/quantum
           logo: quantum.png
-          country:
+          country: IE, GB
           title: Quantum by Cunninghams EPOS Group
           description: Quantum, développé par Cunninghams EPOS Group, propose un logiciel de caisse pour divers secteurs, offrant la gestion des ventes, le contrôle des stocks, la fidélisation, une solution de eCommerce et des rapports en temps réel.
           additional_info:
-        - website: https://www.rmpos.com/
+        - website: https://www.rmpos.com
           documentation: /fr/apps/restaurant-manager
           logo: restaurant-manager.png
-          country:
+          country: all
           title: Restaurant Manager
           description: Restaurant Manager, vendu dans le monde entier par des revendeurs agréés, est conçu pour répondre aux besoins de tous types d'établissements de la restauration au bars.
           additional_info: Intégration par Crystal Mind.
-        - website: https://www.synapsy.fr/
+        - website: https://www.synapsy.fr
           documentation: /fr/apps/synapsy
           logo: synapsy.png
-          country:
+          country: FR
           title: Synapsy
           description: Synapsy est une solution de gestion pour les métiers de bouche et de commerce de détail, qui inclut logiciel de caisse, bornes de commande et click & collect. Synapsy intègre des outils décisionnels et marketing, et répond aux besoins des indépendants et des réseaux de magasins.
           additional_info:
-        - website: https://www.sicom.com/
+        - website: https://www.sicom.com
           documentation: /fr/apps/sicom
           logo: sicom.png
-          country:
+          country: IT
           title: SICOM
           description: SICOM propose une suite complète pour la restauration rapide. Les franchises et les gérants utilisent SICOM pour gérer, contrôler et standardiser les processus en capturant et analysant des données.
           additional_info: Intégration par MyTec en cours.
         - website: http://www.akksofttech.com
           documentation: /fr/apps/akk-softtech
           logo: akk-softtech.png
-          country:
+          country: GB
           title: AKK Softtech
           description: La solution de caisse AKK, éditée par Softtech, répond aux besoins des restaurants asiatiques, spécifiquement des restaurants thaïs. L'interface utilisateur de la caisse AKK est disponible en anglais et en thaï.
         - website: https://swoopos.com
           documentation: /fr/apps/swoopos
           logo: swoopos.png
-          country:
+          country: GB
           title: SwooPOS
           description: SwooPOS est un logiciel de caisse mobile, multi-fonctions, facile à utiliser et économique conçue pour la restauration et le commerce de proximité. Elle inclut une solution de paiement, de réservation et de commande commande à table par QR code.
           additional_info:
-        - website: http://www.talc.fr/
+        - website: http://www.talc.fr
           documentation: /fr/apps/talc
           logo: talc.png
-          country:
+          country: FR
           title: T.A.L.C Informatique
           description: T.A.L.C Informatique est une caisse adaptée aux besoins de la restauration, qui permet de gérer un ou plusieurs points de vente avec dispatching des coursiers, gestion du stock, des achats, géolocalisation des clients et envoi de SMS.
           additional_info:
         - website: https://tasksoftware.com
           documentation: /fr/apps/task-software
           logo: task.png
-          country:
+          country: AU, CA
           title: TASK
           description: TASK est un logiciel de caisse conçu pour les acteurs internationaux de l'hôtellerie et de la restauration. Il propose des rapports en temps réel avec fonctionnalités de Business Intelligence, la gestion des stocks, ainsi que des solutions de commande via kiosques, plateformes en ligne et applications mobiles. TASK est particulièrement adapté pour la gestion de la relation client, de la fidélisation et des promotions.
           additional_info:
         - website: https://tickeat.io
           documentation: /fr/apps/tickeat
           logo: tickeat.png
-          country:
+          country: FR
           title: Tick'Eat
           description: Tick'Eat est une caisse enregistreuse multiplateforme conçue par et pour des restaurateurs. Elle permet la gestion des commandes sur place et en ligne, y compris les commandes des plateformes de livraison de repas, et permet une mise à jour facile des menus. Elle inclut également une fonction de dispatching pour les livreurs.
-        - website: https://www.ultimapos.fr/
+        - website: https://www.ultimapos.fr
           documentation: /fr/apps/ultimapos
           logo: ultimapos.png
-          country:
+          country: FR
           title: UltimaPOS
           description: UltimaPOS de UltimaSOFT propose des logiciels de caisse et de gestion de point de vente adaptés aux besoins des restaurants, ainsi que des épiceries, instituts de beauté, pressing et laveries. Un back office permet de paramétrer son système et consulter ses résultats.
           additional_info:
         - website: https://zelty.fr
           documentation: /fr/apps/zelty
           logo: zelty.png
-          country:
+          country: BE, FR
           title: Zelty
           description: Zelty est une caisse enregistreuse sur iPad, offrant une solution complète et pensée pour les chaînes. La solution s'adapte cependant à tout type de restaurant.
     - title: Plateformes de livraison de repas
@@ -286,140 +285,138 @@ content:
         - website: https://www.deliveroo.com
           documentation: /fr/apps/deliveroo
           logo: deliveroo.png
-          country:
+          country: BE, FR, IE, IT, GB
           title: Deliveroo
           description: Deliveroo est une plateforme de commande de repas et d'épicerie en ligne. Les clients peuvent commander en ligne ou via une app mobile. Disponible dans 12 pays and 500 villes.
-          additional_info:
         - website: https://www.deliveryhero.com
           documentation: /fr/apps/delivery-hero
           logo: delivery-hero.png
-          country:
+          country: all
           title: Delivery Hero
           description: Delivery Hero est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Disponible dans plus de 50 pays répartis sur quatre continents.
           additional_info: Intégration en cours.
-        - website: https://www.foodpanda.com/
+        - website: https://www.foodpanda.com
           documentation: /fr/apps/foodpanda
           logo: foodpanda.png
-          country:
+          country: all
           title: Foodpanda
           description: Foodpanda est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Disponible dans 14 pays.
           additional_info:
         - website: https://glovoapp.com
           documentation: /fr/apps/glovo
           logo: glovo.png
-          country:
+          country: ES, IT, MA
           title: Glovo
           description: Glovo est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Glovo propose également des services de livraison sur demande. Disponible dans 25 pays en Europe, en Asie occidentale et en Afrique.
           additional_info:
         - website:
           documentation: /fr/apps/hop-delivery
           logo: hop-delivery.png
-          country:
+          country: CH
           title: Hop Delivery
           description: Hop Delivery est un service de commande en ligne et de livraison pour les restaurants et autres commerces. Les clients  commandent en ligne, soit depuis la plateforme Hop Delivery, soit sur le site en marque blanche fourni par Hop Delivery. Hop Delivery livre à Genève, en Suisse.
           additional_info:
-        - website: https://www.just-eat.fr/
+        - website: https://www.just-eat.fr
           documentation: /fr/apps/just-eat-flyt
           logo: just-eat.png
-          country:
+          country: IE, IT, ES, GB
           title: Just Eat
           description: Just Eat est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Disponible dans 13 pays en Europe, en Asie, en Océanie et dans les Amériques.
-        - website: https://www.lieferando.de/en/
+        - website: https://www.lieferando.de/en
           documentation: /fr/apps/just-eat-takeaway
           logo: lieferando.png
-          country:
+          country: DE
           title: lieferando.de and lieferando.at
           description: Lieferando est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Disponible en Allemagne et en Autriche.
           additional_info:
-        - website: https://www.menulog.com.au/
+        - website: https://www.menulog.com.au
           documentation: /fr/apps/just-eat-flyt
           logo: menulog.png
-          country:
+          country: AU
           title: Menulog
           description: Menulog est une plateforme de commande de repas et de boissons avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Disponible en Australie et en Nouvelle-Zélande.
           additional_info:
-        - website: https://www.pyszne.pl/fr/
+        - website: https://www.pyszne.pl/fr
           documentation: /fr/apps/just-eat-takeaway
           logo: pyszne.png
-          country:
+          country: all
           title: Pyszne
           description: Pyszne est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Disponible en Pologne.
           additional_info:
-        - website: https://www.skipthedishes.com/fr/
+        - website: https://www.skipthedishes.com/fr
           documentation: /fr/apps/just-eat-flyt
           logo: skipthedishes.png
-          country:
+          country: CA
           title: Skip The Dishes
           description: Skip The Dishes est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander un repas ou des boissons alcoolisées en ligne ou via une app mobile. Disponible au Canada.
           additional_info:
         - website: https://www.smood.ch/fr
           documentation: /fr/apps/smood
           logo: smood.png
-          country:
+          country: CH
           title: Smood
           description: Smood est une plateforme de commande et de livraison de repas qui opère sur tout le marché suisse. Les clients peuvent commander en ligne ou via une app mobile dans leurs restaurants préférés ainsi que dans le Migros le plus proche.
-        - website: https://www.justeattakeaway.com/
+        - website: https://www.justeattakeaway.com
           documentation: /fr/apps/just-eat-takeaway
           logo: takeaway.png
-          country:
+          country: BE, CH
           title: Just Eat Takeaway
           description: Takeaway.com est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Disponible en Belgique, au Luxembourg, au Portugal, en Roumanie, et en Bulgarie.
           additional_info:
         - website: https://www.talabat.com
           documentation: /fr/apps/talabat
           logo: talabat.png
-          country:
+          country: all
           title: Talabat
           description: Talabat est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Disponible au Koweït, en Arabie saoudite, au Bahreïn, aux Émirats Arabes Unis, à Oman, au Qatar, en Jordanie, en Égypte et en Irak.
           additional_info: Intégration en cours.
-        - website: https://www.thuisbezorgd.nl/fr/
+        - website: https://www.thuisbezorgd.nl/fr
           documentation: /fr/apps/just-eat-takeaway
           logo: thuisbezorgd.png
-          country:
+          country: NL
           title: Thuisbezorgd
           description: Thuisbezorgd est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une app mobile. Disponiblau au Pays-Bas.
           additional_info:
         - website: https://www.ubereats.com
           documentation: /fr/apps/uber-eats
           logo: ubereats.png
-          country:
+          country: AU, BE, CA, FR, DE, IE, NL, ES, CH, GB
           title: Uber Eats
           description: Uber Eats est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une application mobile. Disponible dans 45 pays et 6.000 villes.
-          additional_info:
     - title: Commande en ligne
       slug: online-ordering
       apps:
-        - website: https://www.app4.co.uk/
+        - website: https://www.app4.co.uk
           documentation: /fr/apps/app4
           logo: app4.png
-          country:
+          country: GB
           title: App4
           description: App4 est une solution de commande en ligne et application mobile, qui s'adapte aux besoins de la vente à emporter, des cafés/restaurants et des commerces de détail alimentaire.
           additional_info:
-        - website: https://www.aquila-cms.com/
+        - website: https://www.aquila-cms.com
           documentation: /fr/apps/aquila-cms
           logo: aquila-cms.png
-          country:
+          country: FR
           title: AquilaCMS
           description: Aquila CMS est une solution open source, disponible pour l'édition et la création de sites e-commerce. Aquila CMS peut être téléchargé, ou utilisé avec les services de développement et d'hébergement proposés par l'éditeur.
-          additional_info:
         - website: https://chataigne.ai/fr
           documentation: /fr/apps/chataigne
           logo: chataigne.png
+          country: CH, FR
           title: Chataîgne
           description: Châtaigne permet aux restaurants de proposer des services de livraison et de vente à emporter via WhatsApp. Les clients peuvent consulter le menu, passer commande, puis payer de manière sécurisée directement depuis WhatsApp, sans avoir à télécharger d'application ni créer de compte. L’objectif est de simplifier le passage de commandes, en évitant les appels et les frais des plateformes traditionnelles.
           additional_info:
-        - website: https://dishop.co/
+        - website: https://dishop.co
           documentation: /fr/apps/dishop
           logo: dishop.png
-          country:
+          country: FR
           title: Dishop
           description: Dishop est une solution de commande en ligne et de gestion de  livreurs, destinée principalement aux franchises de restauration et aux dark kitchens. L'offre inclut des applications mobile et web, et la mise en relation avec des livreurs indépendants.
           additional_info:
-        - website: https://www.dood.com/fr/
+        - website: https://www.dood.com/fr
           documentation: /fr/apps/dood
           logo: dood.png
-          country:
+          country: FR
           title: DOOD
           description: DOOD est une solution e-commerce et e-marketing destinés au food retail. Adaptée aux indépendants comme aux chaînes, la solution de commande en ligne en marque blanche de DOOD permet le click & collect, la livraison, et le service à table. DOOD inclut une suite d'outils marketing pour développer la fidélisation client.
         - website: https://www.eatself.com
@@ -431,34 +428,33 @@ content:
         - website: https://eddress.co
           documentation: /fr/apps/eddress
           logo: eddress.png
-          country:
+          country: CH, DE, FR, IE, GB
           title: eddress
           description: eddress est une solution de commande en ligne pour les restaurants et les épiceries, avec gestion de livreurs intégrée. Elle convient aux enseignes de toute taille, indépendantes ou franchisées. Disponible en 20 langues et déployée dans plus de 17 pays.
         - website: https://www.get-resto.com
           documentation: /fr/apps/get-resto
           logo: get-resto.png
-          country:
+          country: FR
           title: Get Resto
           description: Get Resto est une solution de commande à table. Le client scanne le QR code ou le tag NFC placés sur la table, accède au menu dans sa langue sur son smartphone, et commande en ligne. Aucune app à installer.
-          additional_info:
         - website: https://www.gonnaorder.com/?lang=fr
           documentation: /fr/apps/gonnaorder
           logo: gonnaorder.png
-          country:
+          country: AU, BE, CA, FR, DE, IE, IT, NL, GB
           title: GonnaOrder
           description: GonnaOrder propose un système de commande en ligne économique, disponible dans 14 pays. Via un site personnalisé et des applications iOS et Android natives, GonnaOrder permet de commander à emporter, en livraison ou à table dans des restaurants, bars, pubs et cafés.
           additional_info:
         - website: https://kurvekiosks.com
           documentation: /fr/apps/kurvekiosks
           logo: kurvekiosks.png
-          country:
+          country: IE, GB
           title: Kurve Kiosks
           description: Kurve Kiosks conçoit et développe des kiosques de commande pour les restaurants et les hôtels. La plateforme est personnalisable, riche en fonctionnalités et fiable, facilitant ainsi la transition vers la technologie de libre-service.
           additional_info:
-        - website: https://latoquemagique.com/
+        - website: https://latoquemagique.com
           documentation: /fr/apps/la-toque-magique
           logo: la-toque-magique.png
-          country:
+          country: FR
           title: La Toque Magique
           description: La Toque Magique est une solution de commande en ligne optimisée pour le SEO et les réseaux sociaux. Elle permet de regrouper sur une seule interface les commandes et les livraisons de tous les canaux, dont les plateformes de livraison de repas.
         - website: https://www.livepepper.fr
@@ -467,25 +463,24 @@ content:
           country:
           title: LivePepper
           description: LivePepper est une solution de commande en ligne pour les restaurants, conçue pour la livraison à domicile et la vente à emporter. Adaptée aux indépendants comme aux chaînes. LivePepper est untilisé en France, en Grande-Bretagne et à l'international.
-          additional_info:
-        - website: https://locatouch.com/
+        - website: https://locatouch.com
           documentation: /fr/apps/locatouch
           logo: locatouch.png
-          country:
+          country: FR
           title: Loca'Touch
           description: Loca'Touch propose des bornes de commande en location ou en vente. Le client passe commande et paye en toute autonomie, et reçoit des propositions de produits complémentaires pendant le cycle d'achat. Mises à jour régulières du logiciel système.
           additional_info:
-        - website: https://mynober.nl/en/home-2/
+        - website: https://mynober.nl
           documentation: /fr/apps/mynober
           logo: mynober.png
-          country:
+          country: NL
           title: MynOber
           description: MynOber propose une solution de commande en ligne, un kiosque de commande et un logiciel de caisse simplifié pour l'hôtellerie et la restauration. MynOber peut être utilisé comme solution autonome ou combiné avec un autre logiciel de caisse.
           additional_info:
         - website: https://obypay.fr
           documentation: /fr/apps/obypay
           logo: obypay.png
-          country:
+          country: FR
           title: Obypay
           description: Obypay propose une solution de commande en ligne et à table pour les restaurants, une conciergerie digitale pour les hôtels, et des bornes de commande pour la restauration.
         - website: https://www.prestashop.com/fr
@@ -495,82 +490,79 @@ content:
           title: PrestaShop
           description: PrestaShop est une solution open source de création de site e-commerce. Solution multilingue, multidevise, et omnicanale, PrestaShop peut être hébergé ou fonctionner sur votre propre serveur. PrestaShop est personnalisable et s'adapte à vos besoins.
           additional_info:
-        - website: https://www.restajet.com/
+        - website: https://www.restajet.com
           documentation: /fr/apps/restajet
           logo: restajet.png
-          country:
+          country: IE, GB
           title: RestaJet
           description: RestaJet propose une application mobile pour les réservations et un site de commande en ligne pour les restaurants. Des outils de gestion de contenu et de marketing sont disponibles sur la console RestaJet.
           additional_info:
-        - website: https://www.restaur-app.fr/
+        - website: https://www.restaur-app.fr
           documentation: /fr/apps/restaur-app
           logo: restaur-app.png
-          country:
+          country: FR
           title: Restaur'App
           description: Restaur'App permet aux restaurateurs de disposer de leur propre site web et application mobile pour présenter leur établissement et gérer les commandes en ligne, ainsi que les livraisons, sans commission sur les ventes. Restaur'App est une solution dédiée à la restauration rapide et à la vente à emporter.
           additional_info:
         - website: https://restaurant-internet.com
           documentation: /fr/apps/restaurant-internet
           logo: restaurant-internet.png
-          country:
+          country: FR
           title: Restaurant-internet
           description: Restaurant-internet propose un site vitrine avec réservation de table et solution de commande en ligne. La solution couvre en particulier les besoins de la livraison à domicile et la vente à emporter.
-          additional_info:
         - website: https://servier.bar
           documentation: /fr/apps/servier-bar
           logo: servier-bar.png
-          country:
+          country: DE
           title: servier.bar
           description: Servier.bar propose des solutions de commande conçues pour les restaurants et les hôtels. Ces solutions permettent aux clients de commander et de payer directement depuis leurs smartphones via une application web, pour améliorer le service sans embaucher de personnel supplémentaire.
           additional_info:
-        - website: https://www.shopify.com/
+        - website: https://www.shopify.com
           documentation: /fr/apps/shopify
           logo: shopify.png
           country:
           title: Shopify
           description: Shopify est une solution e-commerce pour tout type d'activité. Elle offre une expérience utilisateur omnicanale sur le web, les smartphones, les réseaux sociaux, les places de marché et en boutique.
-          additional_info:
-        - website: https://smartresto.net/
+        - website: https://smartresto.net
           documentation: /fr/apps/smartresto
           logo: smartresto.png
-          country:
+          country: FR
           title: SmartResto.Net
           description: SmartResto.Net propose des menu digitalisés interactifs accessibles par QR code, et des sites de click & collect. La solution est conçue pour les cafés, restaurants, traiteurs, street food, hôtels et tout autre métier de la restauration.
           additional_info:
         - website: https://www.smilein.io
           documentation: /fr/apps/smilein
           logo: smilein.png
-          country:
+          country: FR
           title: smilein
           description: smilein est une solution de commande pour l'hôtellerie et la restauration qui intègre tous les parcours clients. Son offre multi-sites, multi-stands et panier multi-convives en fait la référence reconnue des chaînes et des food courts.
           additional_info:
         - website: https://storefactory.y-proximite.fr
           documentation: /fr/apps/store-factory
           logo: storefactory.png
-          country:
+          country: FR
           title: Store Factory
           description: Store Factory est utilisé par les PME et les petits commerçants ayant une connaissance technique limitée pour la création de sites marchand. Le support technique, la maintenance et le conseil en référencement sont assurés par l'éditeur.
-        - website: http://superdigital.fr/
+        - website: http://superdigital.fr
           documentation: /fr/apps/superdigital
           logo: superdigital.png
-          country:
+          country: FR
           title: SuperDigital.fr
           description: SuperDigital.fr est une solution complète permettant aux restaurateurs de créer un site de commande en ligne en marque blanche. Les restaurateurs peuvent personnaliser leur site de manière autonome depuis le back-office.
         - website: https://tablati.ma
           documentation: /fr/apps/tablati
           logo: tablati.png
-          country:
+          country: MA
           title: Tablati
           description: Tablati est une solution de commande et de paiement à table via QR code depuis un smartphone. Elle inclut des fonctionnalités comme la gestion des pourboires, la collecte d’avis Google et un programme de fidélité.
           additional_info: Intégration en cours.
         - website: https://www.tastycloud.fr
           documentation: /fr/apps/tastycloud
           logo: tastycloud.png
-          country:
+          country: FR
           title: TastyCloud
           description: TastyCloud propose des menus digitalisés in et out store pour les restaurants et les hôtels. L'offre comprend des menus sur tablettes, des porte-menus extérieurs, un site de click & collect, des écrans dynamiques, et une application mobile de prise de commande par scan de QR codes.
-          additional_info:
-        - website: https://woocommerce.com/
+        - website: https://woocommerce.com
           documentation: /fr/apps/woocommerce
           logo: woocommerce.png
           country:
@@ -580,14 +572,14 @@ content:
         - website: https://www.zenorder.fr
           documentation: /fr/apps/zenorder
           logo: zenorder.png
-          country:
+          country: FR
           title: Zenorder
           description: Zenorder est une solution de commande en ligne en marque blanche pour les métiers de bouche, couplée à une suite d'outils de marketing et de fidélisation client.
           additional_info:
         - website: https://www.zuplyit.com
           documentation: /fr/apps/zuplyit
           logo: zuplyit.png
-          country:
+          country: BE, IE, IT, ES, GB
           title: Zuplyit
           description: Zuplyit de AirTouchMedia est une solution de commande en ligne en marque blanche pour les métiers de bouche, combinée avec une solution de gestion de livreurs, et une suite d'outils de fidélisation et de promotion.
           additional_info:
@@ -611,35 +603,34 @@ content:
         - website: https://coursicab.com
           documentation: /fr/apps/coursicab
           logo: coursicab.png
-          country:
+          country: FR
           title: Coursicab
           description: Coursicab est une plateforme de livraison en express ou sur rendez-vous, par taxi ou à vélo. Grâce à la géolocalisation, vos clients peuvent suivre leurs colis en temps réel. Présent dans 6 pays européens, disponible 24h/7.
           additional_info:
         - website: https://www.orderlord.com
           documentation: /fr/apps/orderlord
           logo: orderlord.png
-          country:
+          country: all
           title: OrderLord
           description: OrderLord est une solution conçue pour les entreprises de livraison et les restaurants, permettant de suivre les livraisons grâce à une application mobile utilisant le GPS. OrderLord apporte aux clients une expérience de livraison transparente.
-          additional_info:
         - website: https://orkestro.com
           documentation: /fr/apps/orkestro
           logo: orkestro.png
-          country:
+          country: GB
           title: Orkestro
           description: Orkestro permet de gérer les livraisons en interne ou de les externaliser à des opérateurs offrant des services de livraison à la demande.
           additional_info:
         - website: https://postmates.com
           documentation: /fr/apps/postmates
           logo: postmates.png
-          country:
+          country: all
           title: Postmates
           description: Postmates propose des services de livraison de plats préparés aux restaurateurs et à d'autres types d'enseignes aux États-Unis.
           additional_info: Intégration en cours.
         - website: https://www.smood.ch/fr
           documentation: /fr/apps/smood-dismatch
           logo: smood.png
-          country:
+          country: CH
           title: Dismatch
           description: Dismatch est un service de livraison à domicile indépendant proposé par Smood, qui couvre l'ensemble du marché suisse. Dismatch permet à des enseignes qui ne sont pas partenaires de Smood de bénéficier de leur service de livraison.
         - website: https://quickup.uk
@@ -651,22 +642,22 @@ content:
         - website: https://stuart.com/fr
           documentation: /fr/apps/stuart
           logo: stuart.png
-          country:
+          country: FR, IT, ES, GB
           title: Stuart
           description: Stuart propose aux commerces de toutes tailles et de tous secteurs, des services de livraison rapide sur demande avec une méthode de transport personnalisée. Disponible dans 4 pays et 100 villes.
           additional_info:
         - website: https://trapar.co.uk
           documentation: /fr/apps/trapar
           logo: trapar.png
-          country:
+          country: GB
           title: Trapar
           description: Trapar facilite la livraison du dernier kilomètre avec suivi en temps réel et l'option d'utiliser ses propres livreurs ou de faire appel à ceux de Trapar.
         - website: https://merchants.ubereats.com/fr/fr/services/uber-direct/
           documentation: /fr/apps/uber-direct
           logo: uber-direct.png
+          country: AU, CA, FR, DE, ES, GB
           title: Uber Direct
           description: Uber Direct est un service de livraison en marque blanche proposé par Uber. Il permet aux entreprises d'envoyer des produits ou colis à leurs clients en s'appuyant sur le vaste réseau de chauffeurs d'Uber Eats.
-          additional_info:
     - title: Fidélité et marketing
       slug: loyalty-and-marketing
       apps:
@@ -677,86 +668,81 @@ content:
           title: Como
           description: Como est une solution de fidélité client pour les commerçants, les hôteliers et les restaurateurs permettant de personnaliser les offres grâce à l'analyse des données clients.
           additional_info:
-        - website: https://dotdigital.com/
+        - website: https://dotdigital.com
           documentation: /fr/apps/dotdigital
           logo: dotdigital.png
           country:
           title: dotdigital
           description: dotdigital est un outil d'automatisation marketing omnicanal utilisé pour engager et créer des relations avec ses clients grâce à des campagnes marketing par e-mail, SMS, notifications en push, chat et annonces sur les réseaux sociaux.
-          additional_info:
         - website: https://myemma.com
           documentation: /fr/apps/emma
           logo: emma.png
           country:
           title: Emma
           description: Emma est une solution d'envoi d'e-mails et de newsletters personnalisés, avec support à la stratégie et à la conception de la campagne marketing.
-          additional_info:
         - website: https://mailchimp.com
           documentation: /fr/apps/mailchimp
           logo: mailchimp.png
           country:
           title: MailChimp
           description: MailChimp est une solution d'envoi d'e-mails, de newsletters personnalisés et de SMS.
-          additional_info:
         - website: https://sailplay.com
           documentation: /fr/apps/sailplay
           logo: sailplay.png
-          country:
+          country: all
           title: SailPlay
           description: SailPlay est une plateforme utilisée pour l'automatisation des campagnes d'e-mailing. Elle permet de mieux connaître ses clients afin de les fidéliser.
-          additional_info:
         - website: https://www.smg.com
           documentation: /fr/apps/smg
           logo: smg.png
-          country:
+          country: all
           title: Service Management Group
           description: SMG associe la technologie et le service pour collecter et analyser vos données, afin de comprendre les comportements de vos clients et d'agir en conséquence.
-          additional_info:
-        - website: https://openflow.pro/
+        - website: https://openflow.pro
           documentation: /fr/apps/upxp
           logo: upxp.png
-          country:
+          country: FR, MA, IE, GB
           title: UPXP
           description: UPXP est la première crypto-monnaie dédiée aux restaurateurs. La solution de fidélité UPXP récompense les clients avec une crypto-monnaie qu'ils peuvent utiliser dans d'autres commerces. Fidélisez les clients sans verser de commissions aux banques et aux solutions tierces.
     - title: Gestion et inventaire
       slug: operations-and-inventory
       apps:
-        - website: https://get.apicbase.com/fr/
+        - website: https://get.apicbase.com/fr
           documentation: /fr/apps/apicbase
           logo: apicbase.png
-          country:
+          country: BE, FR, DE, IE, IT, NL, ES, CH, GB
           title: Apicbase
           description: Apicbase est un logiciel de gestion pour les restaurants et les hôtels à plusieurs points de vente. Apicbase vous permet de contrôler les coûts des produits finis, l'inventaire et les achats. Vos données sont disponibles à tout moment, où que vous soyez et sur tout type d'appareil.
           additional_info:
         - website: https://www.foodreport.fr
           documentation: /fr/apps/foodreport
           logo: foodreport.png
-          country:
+          country: FR
           title: Food Report
           description: Food Report propose des outils d'aide à la décision destinés à la restauration rapide et traditionnelle. Food Report permet de créer des rapports en ligne temps réel, à partir de vos données clients, commandes et catalogues venant de HubRise.
-        - website: https://link.inpulse.ai/hubrise
+        - website: https://en.inpulse.ai
           documentation: /fr/apps/inpulse
           logo: inpulse.png
-          country:
+          country: FR
           title: Inpulse
           description: Inpulse est une solution IA qui permet d'anticiper les ventes, afin d'améliorer la gestion des stocks et des commandes fournisseurs, et d'augmenter la marge. Inpulse répond aux besoins des restaurants, dark kitchens et corners thématiques.
           additional_info:
-        - website: https://koust.net/
+        - website: https://koust.net
           documentation: /fr/apps/koust
           logo: koust.png
-          country:
+          country: CH, FR
           title: Koust
           description: Koust est un logiciel de gestion destiné aux restaurateurs et hôteliers, permettant de gérer les stocks, analyser les ventes et les marges brutes, optimiser les achats, et ajuster les menus pour améliorer l'offre tout en contrôlant les marges.
-        - website: https://malba.io/
+        - website: https://malba.io
           documentation: /fr/apps/melba
           logo: melba.png
-          country:
+          country: FR
           title: Melba
           description: Melba par Foodmeup est un outil de gestion des opérations pour les métiers de bouche. Melba peut gérer stocks, commandes fournisseurs, fiches techniques, production, ventes & devis, étiquettes fournisseurs, DLC secondaires, étiquettes INCO, relevés des huiles et des températures et tâches d'hygiène.
         - website: https://rapidbarapp.com/fr
           documentation: /fr/apps/rapidbar
           logo: rapidbar.png
-          country:
+          country: CA, IE, GB
           title: RapidBar
           description: RapidBar simplifie la gestion des inventaires de votre restaurant, hôtel ou bar. RapidBar vous aide à contrôler votre chaîne d'approvisionnement, en centralisant les menus, les inventaires et les commandes fournisseurs dans une seule application cloud.
           additional_info:
@@ -770,13 +756,13 @@ content:
         - website: https://www.somm-it.com/
           documentation: /fr/apps/somm-it
           logo: somm-it.png
-          country:
+          country: FR
           title: SOMM'IT
           description: SOMM'IT vous accompagne dans la gestion de votre carte des vins. Synchronisez votre inventaire avec votre EPOS, et éditez une carte des vins à jour. SOMM'IT inclut une large bibliothèque de vins, et un module de gestion des commandes fournisseurs.
         - website: https://www.stocktake-online.com
           documentation: /fr/apps/stocktake-online
           logo: stocktake-online.png
-          country:
+          country: AU, CA, IE, GB
           title: StockTake Online
           description: StockTake Online est un système de gestion d'inventaire conçu pour les restaurants, les bars, les discothèques, et plus encore. Il aide à organiser les opérations en simplifiant les achats, en minimisant les déchets et en améliorant la rentabilité.
     - title: Autres applications
@@ -791,7 +777,7 @@ content:
         - website: https://www.expedy.fr
           documentation: /fr/apps/expedy
           logo: expedy-print.png
-          country:
+          country: BE, FR, DE, IE, IT, MA, NL, ES, CH, GB
           title: Expedy Print
           description: Expedy Print permet d'automatiser l'impression de commandes reçues de sites marchands ou toute autre application web à une ou plusieurs imprimantes en même temps. La connexion se fait par ETHERNET, 3G/4G, ou Wifi.
         - website:
@@ -800,11 +786,10 @@ content:
           country:
           title: OrderLine
           description: OrderLine centralise les commandes passées depuis un site marchand ou autre plateforme de commande en ligne. Les commandes sont ainsi gérées et imprimés. OrderLine est un logiciel gratuit édité par HubRise.
-          additional_info:
         - website: https://www.qwenta.ch
           documentation: /fr/apps/qwenta
           logo: qwenta.png
-          country:
+          country: CH
           title: Qwenta
           description: Qwenta est une solution de paiement à table par QR code conçue pour les restaurants suisses. Les clients peuvent diviser l'addition, ajouter un pourboire et donner un avis avant de finaliser le paiement.
         - website: https://www.satoeurope.com/fr
@@ -819,29 +804,33 @@ content:
           country:
           title: TicknCook
           description: TicknCook est un écran cuisine (KDS), qui peut recevoir les commandes depuis tous vos canaux de vente. La solution est personnalisable avec possibilité de mettre en place des écrans spécialisés pour le bar, la cuisine, ou autres ateliers.
-        - website: https://1bot.io
-          documentation: /fr/apps/1bot
-          logo: 1bot.png
-          country:
-          title: 1Bot
-          description: 1Bot est un assistant personnel. Ce chatbot répond aux questions des clients et transmet un résumé de la conversation au magasin par SMS. Il est possible de prendre un rendez-vous, demander un rappel ou poser une question.
   countries:
     - title: Tous les pays
       code: all
-    - title: Royaume-Uni
-      code: GB
-    - title: France
-      code: FR
-    - title: Canada
-      code: CA
     - title: Allemagne
       code: DE
-    - title: Espagne
-      code: ES
-    - title: Italie
-      code: IT
     - title: Australie
       code: AU
+    - title: Belgique
+      code: BE
+    - title: Canada
+      code: CA
+    - title: Espagne
+      code: ES
+    - title: France
+      code: FR
+    - title: Irlande
+      code: IE
+    - title: Italie
+      code: IT
+    - title: Maroc
+      code: MA
+    - title: Pays-Bas
+      code: NL
+    - title: Royaume-Uni
+      code: GB
+    - title: Suisse
+      code: CH
   additional_sections:
     suggest_app:
       description: Votre application ne se trouve pas dans cette liste ? Envoyez-nous quelques informations. HubRise se chargera de contacter l'éditeur de votre part pour leur proposer une intégration.
