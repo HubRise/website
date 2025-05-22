@@ -18,6 +18,12 @@ export type TFeature = {
   image: string
 }
 
+export type TContentBlock = {
+  title: string
+  content: string
+  image: string
+}
+
 export interface DashboardYaml {
   meta: {
     title: string
@@ -31,6 +37,7 @@ export interface DashboardYaml {
     }
     details: {
       title: string
+      content_blocks: Array<TContentBlock>
     }
     action_block: TActionBlock
   }

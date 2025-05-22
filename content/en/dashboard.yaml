@@ -35,6 +35,31 @@ content:
         image: top-selling-products.svg
   details:
     title: Everything You Need to Keep Your Catalogs Updated
+    content_blocks:
+      - title: Revenue Breakdown
+        content: |
+          <p>HubRise breaks down your revenue from three angles:</p>
+          <ul>
+            <li>Sales Channel - your website versus ordering platforms or other apps.</li>
+            <li>Connection Name - your main brand and virtual brands.</li>
+            <li>Location - your stores driving the most revenue.</li>
+          </ul>
+        image: revenue-breakdown.png
+      - title: Revenue Over Time
+        content: |
+          <p>The line chart shows how your revenue, sales volume, and average order value evolve, with granularity that adapts to your selected date range.</p>
+          <p>A summary panel highlights key metrics and shows their growth or decline at a glance.</p>
+        image: revenue-over-time.png
+      - title: Peak Hours
+        content: |
+          <p>This heatmap reveals when your sales are highest, broken down by day and hour.</p>
+          <p>Understand your peak hours can be wisely used to optimise staffing, plan promotions, and manage inventory more efficiently.</p>
+        image: peak-hours.png
+      - title: Top Selling Products
+        content: |
+          <p>See your 30 best-performing items by sales volume.</p>
+          <p>Filter by location and date to understand trends and customer preferences.</p>
+        image: top-selling-products.png
   action_block:
     title: Discover other apps to streamline your operations
     description: Discover the benefits offered by other tools design to complement your operations, optimise workflows, and simplify reporting.
