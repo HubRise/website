@@ -1,5 +1,5 @@
-import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react"
 import Image from "next/image"
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react"
 
 import ScreenContainer from "@components/ScreenContainer"
 import Underline from "@components/Underline"
@@ -31,7 +31,7 @@ const Details = ({ title, content_blocks }: DetailsProps): JSX.Element => {
 
   const handleScroll = useCallback(() => {
     setScrollYOffset(window.scrollY)
-  }, [scrollYOffset])
+  }, [])
 
   useLayoutEffect(() => {
     setScrollYOffset(window.scrollY)

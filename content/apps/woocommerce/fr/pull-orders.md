@@ -66,6 +66,12 @@ Dans l'installation WooCommerce par défaut, le type de service est toujours `de
 
 ---
 
+## Horaires des commandes
+
+WooCommerce ne prend pas en charge nativement les heures de livraison ou de collecte, vous devez utiliser un plugin pour ajouter cette fonctionnalité. WooCommerce Bridge prend en charge plusieurs formats pour les horaires des commandes, qui peuvent être envoyées soit dans les métadonnées de la commande, soit dans les métadonnées des lignes d'expédition, selon le plugin utilisé.
+
+Pour les détails de configuration et les formats d'heure pris en charge, consultez la section [Heure souhaitée](/apps/woocommerce/configuration#expected-time) de la page de configuration.
+
 ## Données clients
 
 WooCommerce Bridge transmet des données clients complètes pour les commandes, notamment le nom, l'adresse de livraison et le numéro de téléphone, et les enregistre dans HubRise.
@@ -207,5 +213,3 @@ Les champs envoyés sont les suivants :
 ### Champs personnalisés
 
 L'objet `custom_fields` est utilisé par WooCommerce Bridge pour stocker les métadonnées que WooCommerce envoie dans la commande. Ces informations ne sont pas fournies par défaut par l'API WooCommerce, mais le format réel dépend des plugins installés et de la personnalisation du code effectuée sur le site internet.
-
-Par exemple, l'objet `custom_fields` peut encoder le type de service ou l'heure de livraison estimée pour la commande.

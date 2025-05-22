@@ -58,7 +58,7 @@ Your WooCommerce installation must be able to send to HubRise a metadata key and
 
 In the **Service type ref code** field, enter the ref code for the service that your EPOS expects. Refer to your EPOS documentation on our [Apps page](/apps) to check requirements.
 
-### Expected time
+### Expected time {#expected-time}
 
 ![WooCommerce Bridge configuration page, expected time](./images/016-woocommerce-configuration-expected-time.png)
 
@@ -68,7 +68,7 @@ If you do not use expected times, leave the **Metadata keys** drop-down menu set
 
 Otherwise, you will have to decide between two options for how expected times are encoded by your plugin: **One value containing both date and time**, or **Two values: one for date, one for time**.
 
-To determine how your plugin encodes the expected time, place a test order and review the logs on the [Orders page](/docs/data#orders). Look for the `meta_data` field at the topmost JSON level of the order. This is not to be confused with `meta_data` fields that might be nested under `line_items` JSON elements. Identify the attribute(s) within this field that contains the expected date and time. If you cannot find the expected time in the `meta_data` field, contact the plugin developer for support.
+To determine how your plugin encodes the expected time, place a test order and review the logs on the [Orders page](/docs/data#orders). Look for the `meta_data` field at the topmost JSON level of the order, or within `shipping_lines` elements depending on your selection above. Identify the attribute(s) that contains the expected date and time. If you cannot find the expected time in the metadata, contact the plugin developer for support.
 
 Based on the selected option in the **Metadata keys** drop-down, one or two fields will appear, where you can specify the metadata key name(s) that contain the expected date and time.
 
@@ -81,6 +81,10 @@ If your plugin uses two metadata keys, the supported formats are the following:
 
 - The date must be a parsable date or time, for example: `dd/mm/yyyy`, `yyyy-mm-dd`, or an ISO 8601 string where the time part is ignored.
 - The time must be a parsable time, for example: `hh:mm:ss`, `hh:mm`, or an ISO 8601 string where the date part is ignored.
+
+From the **Metadata in** drop-down menu, select where the expected time metadata is stored:
+- **Order**, if the expected time is in the order's metadata
+- **Shipping lines**, if the expected time is in the shipping lines metadata
 
 ### Misc Order Metadata
 
