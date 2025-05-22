@@ -8,36 +8,42 @@ import { Route, RouteName } from "@utils/router/types"
 
 const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Element> => {
   const yaml = route.context.yaml
-  const teamFilenames = yaml.content.developers.team_members.map((member) => member.filename)
+  const testimonials = route.testimonials.yaml
+  const testimonialLogos: string[] = testimonials.content.testimonials.map(
+    (testimonial) => testimonial.person_details.logo,
+  )
+  const featuresImages: string[] = yaml.content.features.features_cards.map((feature) => feature.image)
+  const appLogos: Array<string> = yaml.content.apps.map(({ logo }) => logo)
 
   const [
     heroDescriptionMdx,
-    appsDescriptionMdx,
-    apiDescriptionMdx,
-    documentationDescriptionMdx,
+    appLogosMap,
+    featuresDescriptionMdx,
+    featuresImagesMap,
     pricingDescriptionMdx,
-    developersDescriptionMdx,
-    teamImageMap,
+    partnersDescriptionMdx,
+    testimonialLogoMap,
   ] = await Promise.all([
     serializeFrontpage(yaml.hero.description),
-    serializeFrontpage(yaml.content.apps.description),
-    serializeFrontpage(yaml.content.api.description),
-    serializeFrontpage(yaml.content.documentation.description),
+    contentImageMap("/images/app-logos", appLogos),
+    serializeFrontpage(yaml.content.features.description),
+    contentImageMap("/images/proposals", featuresImages),
     serializeFrontpage(yaml.content.pricing.description),
-    serializeFrontpage(yaml.content.developers.description),
-    contentImageMap("/images/team", teamFilenames),
+    serializeFrontpage(yaml.content.partners.description),
+    contentImageMap("/images/app-logos", testimonialLogos),
   ])
 
   return (
     <Frontpage
       yaml={yaml}
+      testimonials={testimonials}
       heroDescriptionMdx={heroDescriptionMdx}
-      appsDescriptionMdx={appsDescriptionMdx}
-      apiDescriptionMdx={apiDescriptionMdx}
-      documentationDescriptionMdx={documentationDescriptionMdx}
+      appLogosMap={appLogosMap}
+      featuresDescriptionMdx={featuresDescriptionMdx}
+      featuresImagesMap={featuresImagesMap}
       pricingDescriptionMdx={pricingDescriptionMdx}
-      developersDescriptionMdx={developersDescriptionMdx}
-      teamImageMap={teamImageMap}
+      partnersDescriptionMdx={partnersDescriptionMdx}
+      testimonialLogoMap={testimonialLogoMap}
     />
   )
 }

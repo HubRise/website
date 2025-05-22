@@ -1,3 +1,14 @@
+import { TActionBlock } from "@components/ActionBlock"
+
+type THeroTitle = {
+  connect?: string
+  contribute?: string
+  app?: string
+  to?: string
+  hubrise?: string
+  doc?: string
+}
+
 export interface DocumentationIndexYaml {
   meta: {
     title: string
@@ -5,14 +16,9 @@ export interface DocumentationIndexYaml {
   }
   content: {
     hero: {
-      title: string
-      description: {
-        paragraph_1: string
-        paragraph_2: {
-          button: string
-          text: string
-        }
-      }
+      slug: "developers" | "contributing"
+      title: THeroTitle
+      description: string
     }
     thumbs: Array<{
       title: string
@@ -20,5 +26,6 @@ export interface DocumentationIndexYaml {
       to: string
       icon: string
     }>
+    action_block: TActionBlock
   }
 }
