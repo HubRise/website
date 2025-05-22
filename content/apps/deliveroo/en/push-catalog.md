@@ -74,6 +74,7 @@ Deliveroo Bridge maps single sku products one-to-one to products on Deliveroo, s
 - Sku ref code
 - Description
 - Images
+- Tax rates
 - Price
 - Options
 
@@ -115,6 +116,7 @@ Products have one or several skus. For every product with multiple skus, Deliver
 - `description`: The description of the product
 - `price`: The minimum price of all skus
 - `tags`: Tags describing the characteristics and restrictions of the product, such as allergens or spiciness. See [Product Tags](#product-tags).
+- `tax_rate`: The delivery tax rate for the product. Deliveroo only accepts certain tax rates in each country (for example, 0%, 5%, 12.5%, and 20% in the UK). If your HubRise tax rate doesn't match, it will be rounded to the closest accepted rate. In countries where Deliveroo doesn't restrict tax rates, your rate is used as-is.
 - `image`: The URL of the image of the parent product
 - `barcodes`: The barcodes of the sku. There can be multiple barcodes for a single sku.
 
