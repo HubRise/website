@@ -126,4 +126,4 @@ By facilitating the integration of your products into your clients working IT en
 
 You have a question, an idea, or a project? Let's talk: contact@hubrise.com!
 
-Keep up to date with new integrations into the HubRise ecosystem by following us on [LinkedIn](https://www.linkedin.com/company/26869469/admin).
+Keep up to date with new integrations into the HubRise ecosystem by following us on [LinkedIn](https://www.linkedin.com/company/hubrise).

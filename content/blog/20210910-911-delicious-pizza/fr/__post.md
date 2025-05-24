@@ -126,4 +126,4 @@ En facilitant l'intégration de vos produits à leur futur environnement informa
 
 Vous avez une question, une idée ou un projet ? Parlons-en : contact@hubrise.com !
 
-Pour vous tenir informé de nouvelles intégrations à l'écosystème de solutions intégrées, suivez HubRise sur [LinkedIn](https://www.linkedin.com/company/26869469/admin).
+Pour vous tenir informé de nouvelles intégrations à l'écosystème de solutions intégrées, suivez HubRise sur [LinkedIn](https://www.linkedin.com/company/hubrise).
