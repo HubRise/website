@@ -3,7 +3,7 @@ meta:
   description: List of apps integrated or in the process of integrating with the HubRise ecosystem. Integrated apps can share order, customer, or product data in real time.
 content:
   hero:
-    title: Integrated Apps
+    title: Integrations
     description:
       paragraph_1_text: You are a store manager and some applications you use are not on this page?
       paragraph_1_link_text: Contact us

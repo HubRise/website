@@ -1,3 +1,47 @@
+import { TMetric } from "@components/Metrics"
+
+import { HeroAppColor } from "./Hero/utils"
+
+export type THeroTitle = {
+  part_1: string
+  part_2: string
+  part_3: string
+  part_4: string
+}
+
+export type THeroApp = {
+  title: string
+  type: string
+  color: HeroAppColor
+}
+
+export type TFeatureCard = {
+  title: string
+  description: string
+  image: string
+}
+
+export type TIntegrationApp = {
+  title: string
+  image: string
+  advantages: Array<{
+    text: string
+  }>
+  button_label: string
+  button_link: string
+}
+
+export type TTestimonial = {
+  name: string
+  job_title: string
+  text: string
+  logo: string
+}
+
+export type TApp = {
+  logo: string
+}
+
 export interface FrontpageYaml {
   path: string
   meta: {
@@ -5,60 +49,39 @@ export interface FrontpageYaml {
     description: string
   }
   hero: {
-    title: string
+    title: THeroTitle
     description: string
     button_label: string
-    button_url: string
+    apps: Array<THeroApp>
   }
   content: {
-    apps: {
+    metrics: Array<TMetric>
+    apps: Array<TApp>
+    features: {
       title: string
       description: string
-      link_url: string
-      categories: Array<string>
-    }
-    api: {
-      title: string
-      description: string
-      image: string
-    }
-    documentation: {
-      title: string
-      description: string
-      image: string
+      features_cards: Array<TFeatureCard>
     }
     pricing: {
+      title: {
+        start: string
+        price: string
+        end: string
+      }
+      description: string
+      button_label: string
+    }
+    integrations: {
+      title: string
+      integration_apps: Array<TIntegrationApp>
+    }
+    partners: {
       title: string
       description: string
       button_label: string
-      button_url: string
-      link_label: string
-      link_url: string
+      button_link: string
+      image: string
     }
-    developers: {
-      title: string
-      description: string
-      team_members: Array<{
-        name: string
-        filename: string
-      }>
-    }
-    mission_and_scalability: {
-      mission: {
-        title: string
-        description: string
-      }
-      scalability: {
-        title: string
-        description: string
-      }
-    }
-    join: {
-      title: string
-      button_label: string
-      button_url: string
-      link_label: string
-      link_url: string
-    }
+    testimonials: Array<number>
   }
 }
