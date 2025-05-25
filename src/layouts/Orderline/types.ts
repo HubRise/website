@@ -3,10 +3,10 @@ import { TTwoSidesContent } from "@components/TwoSidesContent"
 
 export type TOrderlineHero = {
   title: {
-    centralise: string
-    all: string
-    orders: string
-    operations: string
+    part_1: string
+    part_2: string
+    part_3: string
+    part_4: string
   }
   supporting_text: string
   content: TTwoSidesContent

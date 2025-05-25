@@ -27,7 +27,7 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
     serializeFrontpage(yaml.hero.description),
     contentImageMap("/images/app-logos", appLogos),
     serializeFrontpage(yaml.content.features.description),
-    contentImageMap("/images/proposals", featuresImages),
+    contentImageMap("/images/frontpage/proposals", featuresImages),
     serializeFrontpage(yaml.content.pricing.description),
     serializeFrontpage(yaml.content.partners.description),
     contentImageMap("/images/app-logos", testimonialLogos),

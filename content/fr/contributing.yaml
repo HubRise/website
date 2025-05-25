@@ -5,9 +5,9 @@ content:
   hero:
     slug: contributing
     title:
-      contribute: Contribuer
-      to: à la
-      doc: documentation
+      part_1: Contribuer
+      part_2: à la
+      part_3: documentation
     description: Vous avez repéré une erreur sur notre site, ou vous souhaitez mettre à jour la documentation de votre solution ? Nous vous expliquons comment procéder.
   thumbs:
     - title: Comment contribuer

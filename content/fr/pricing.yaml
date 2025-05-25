@@ -1,3 +1,4 @@
+# TODO: Need to translate
 path: /tarifs
 meta:
   title: Tarifs | HubRise
@@ -5,11 +6,10 @@ meta:
 content:
   hero:
     title:
-      simple: Simple,
-      fair: Fair
-      and: and
-      transparent: Transparent
-      pricing: Pricing
+      part_1: Simple, Fair
+      part_2: and
+      part_3: Transparent
+      part_4: Pricing
     plan:
       price: €35
       tax: excl. VAT

@@ -2,7 +2,7 @@ import styled, { css } from "styled-components"
 
 import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
-export const Container = styled.div<{ $isTextCentered: boolean }>`
+export const StyledPageHero = styled.div<{ $isTextCentered: boolean }>`
   background-color: ${colors.backgroundWhite};
   padding: 3.5rem 1rem;
 
@@ -42,4 +42,13 @@ export const Title = styled.h1`
 
 export const Description = styled.p`
   ${mixin.description}
+`
+
+export const DescriptionMdx = styled.div`
+  max-width: 45rem;
+  margin: 0 auto;
+
+  p {
+    ${mixin.description}
+  }
 `

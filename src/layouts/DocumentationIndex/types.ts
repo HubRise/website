@@ -1,12 +1,10 @@
 import { TActionBlock } from "@components/ActionBlock"
 
 type THeroTitle = {
-  connect?: string
-  contribute?: string
-  app?: string
-  to?: string
-  hubrise?: string
-  doc?: string
+  part_1?: string
+  part_2?: string
+  part_3?: string
+  part_4?: string
 }
 
 export interface DocumentationIndexYaml {

@@ -23,11 +23,10 @@ type TSpecialPricingItem = {
 
 export type THero = {
   title: {
-    simple: string
-    fair: string
-    and: string
-    transparent: string
-    pricing: string
+    part_1: string
+    part_2: string
+    part_3: string
+    part_4: string
   }
   plan: {
     price: string

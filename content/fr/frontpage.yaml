@@ -1,3 +1,4 @@
+# TODO: Need to translate
 path: /
 meta:
   title: HubRise - Intégration pour le commerce et la restauration
@@ -5,10 +6,10 @@ meta:
 
 hero:
   title:
-    start: Seamless Integration for
-    highlight1: Restaurants
-    and: and
-    highlight2: Retail
+    part_1: Seamless Integration for
+    part_2: Restaurants
+    part_3: and
+    part_4: Retail
   description: |
     Connect your EPOS, online ordering, and inventory tools into one powerful platform.
   button_label: Create your account today

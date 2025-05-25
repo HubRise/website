@@ -34,11 +34,10 @@ const Hero = ({ hero }: HeroProps): JSX.Element => {
     <PageHero
       title={
         <>
-          <span>{title.simple} </span>
-          <span>{title.fair} </span>
-          {title.and}
-          <span> {title.transparent} </span>
-          {title.pricing}
+          <span>{title.part_1} </span>
+          {title.part_2}
+          <span> {title.part_3} </span>
+          {title.part_4}
         </>
       }
     >

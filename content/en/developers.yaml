@@ -5,10 +5,10 @@ content:
   hero:
     slug: developers
     title:
-      connect: Connect
-      app: Your Application
-      to: to
-      hubrise: HubRise
+      part_1: Connect
+      part_2: Your Application
+      part_3: to
+      part_4: HubRise
     description: An integration to HubRise connects your app to the HubRise ecosystem.
   thumbs:
     - title: Quick Start

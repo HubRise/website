@@ -1,61 +1,31 @@
 import styled from "styled-components"
 
 import { StyledButton } from "@components/Button/Styles"
-import { breakpoints, colors, fontSizeMixins, fontSizes, mixin } from "@utils/styles"
+import { StyledPageHero } from "@components/PageHero/Styles"
+import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
 import { HeroAppColor, linkHeroAppBorderColor } from "./utils"
 
-export const Container = styled.div`
-  position: relative;
-  background-color: ${colors.backgroundLightest};
-  padding: 3.5rem 1rem;
-  text-align: center;
+export const FrontpageHero = styled.div`
+  ${StyledPageHero} {
+    background-color: ${colors.backgroundLightest};
 
-  ${StyledButton} {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media (min-width: ${breakpoints.medium}) {
-    ${StyledButton} {
-      width: fit-content;
+    h1 {
+      max-width: 65rem;
+      margin: 0 auto;
     }
-  }
 
-  @media (min-width: ${breakpoints.large}) {
-    padding: 5.5rem 1rem;
-  }
-`
+    ${StyledButton} {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-export const Title = styled.h1`
-  ${fontSizeMixins.fontSizeDisplaySm}
-  line-height: 2.5rem;
-  font-weight: 600;
-  color: ${colors.textDarkest};
-  max-width: 65rem;
-  margin: 0 auto;
-
-  @media (min-width: ${breakpoints.large}) {
-    ${fontSizeMixins.fontSizeDisplayXl}
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeDisplay2Xl}
-  }
-`
-
-export const TitleHighlight = styled.span`
-  color: ${colors.primary};
-`
-
-export const Description = styled.div`
-  ${mixin.description}
-  max-width: 45rem;
-  margin: 0.75rem auto 0;
-
-  @media (min-width: ${breakpoints.large}) {
-    margin: 1.5rem auto 0;
+    @media (min-width: ${breakpoints.medium}) {
+      ${StyledButton} {
+        width: fit-content;
+      }
+    }
   }
 `
 

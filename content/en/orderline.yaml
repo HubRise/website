@@ -4,10 +4,10 @@ meta:
 content:
   hero:
     title:
-      centralise: Centralise
-      all: all
-      orders: Orders
-      operations: and ease Operations
+      part_1: Centralise
+      part_2: all
+      part_3: Orders
+      part_4: and ease Operations
     supporting_text: Consolidate orders from diverse sales channels into into one single app, OrderLine.
     content:
       firstSide: |
@@ -53,6 +53,6 @@ content:
     description: Discover the benefits offered by other tools design to complement your operations, optimise workflows, and simplify reporting.
     buttons:
       - button_label: Explore the Catalog Manager
-        button_link: link
+        button_link: /catalog-manager
       - button_label: View our Dashboard
-        button_link: link
+        button_link: /dashboard

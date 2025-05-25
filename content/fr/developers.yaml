@@ -5,10 +5,10 @@ content:
   hero:
     slug: developers
     title:
-      connect: Connectez
-      app: votre application
-      to: à
-      hubrise: HubRise
+      part_1: Connectez
+      part_2: votre application
+      part_3: à
+      part_4: HubRise
     description: Une seule intégration rend votre application compatible avec tout l'écosystème HubRise.
   thumbs:
     - title: Démarrage rapide

@@ -8,7 +8,7 @@ const Hero = (hero: DocumentationIndexYaml["content"]["hero"]): JSX.Element => {
     if (slug === "developers") {
       return (
         <>
-          {title.connect} <span>{title.app}</span> {title.to} <span>{title.hubrise}</span>
+          {title.part_1} <span>{title.part_2}</span> {title.part_3} <span>{title.part_4}</span>
         </>
       )
     }
@@ -16,7 +16,7 @@ const Hero = (hero: DocumentationIndexYaml["content"]["hero"]): JSX.Element => {
     if (slug === "contributing") {
       return (
         <>
-          <span>{title.contribute}</span> {title.to} <span>{title.doc}</span>
+          <span>{title.part_1}</span> {title.part_2} <span>{title.part_3}</span>
         </>
       )
     }

@@ -2,6 +2,13 @@ import { TMetric } from "@components/Metrics"
 
 import { HeroAppColor } from "./Hero/utils"
 
+export type THeroTitle = {
+  part_1: string
+  part_2: string
+  part_3: string
+  part_4: string
+}
+
 export type THeroApp = {
   title: string
   type: string
@@ -42,12 +49,7 @@ export interface FrontpageYaml {
     description: string
   }
   hero: {
-    title: {
-      start: string
-      highlight1: string
-      highlight2: string
-      and: string
-    }
+    title: THeroTitle
     description: string
     button_label: string
     apps: Array<THeroApp>

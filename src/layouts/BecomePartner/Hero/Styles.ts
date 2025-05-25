@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { Container, Wrapper } from "@components/PageHero/Styles"
+import { StyledPageHero, Wrapper } from "@components/PageHero/Styles"
 import { breakpoints, mixin } from "@utils/styles"
 
 export const BecomePartnerHero = styled.div`
@@ -27,7 +27,7 @@ export const BecomePartnerHero = styled.div`
       }
     }
 
-    ${Container} {
+    ${StyledPageHero} {
       padding-left: 0;
       padding-right: 0;
     }

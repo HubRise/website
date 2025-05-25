@@ -17,14 +17,14 @@ const Hero = ({ hero }: HeroProps) => {
       <PageHero
         title={
           <>
-            <span>{title.centralise}</span> {title.all} <span>{title.orders}</span> {title.operations}
+            <span>{title.part_1}</span> {title.part_2} <span>{title.part_3}</span> {title.part_4}
           </>
         }
         description={supporting_text}
       >
         <Image
           src="/images/orderline/hero.png"
-          alt={`${title.centralise} ${title.all} ${title.orders} ${title.operations}`}
+          alt={`${title.part_1} ${title.part_2} ${title.part_3} ${title.part_4}`}
           width={1050}
           height={900}
         />
