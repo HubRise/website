@@ -39,6 +39,7 @@ Connecter Clyo Systems à HubRise permet à votre logiciel de caisse de :
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.
 - Envoyer un catalogue à HubRise.
+- Synchroniser l'inventaire avec HubRise.
 
 Vous pouvez consulter la [présentation de l'intégration avec HubRise](https://www.clyosystems.com/hubrise-est-integre-avec-clyo-systems) sur le site Internet de Clyo Systems.
 
