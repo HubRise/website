@@ -28,7 +28,7 @@ Pour connecter SOLUTION à HubRise, suivez ces étapes :
 
 \-- CONNECTER - option 2 --
 
-Pour connecter SOLUTION Bridge à HubRise, procédez comme suit:
+Pour connecter SOLUTION Bridge à HubRise, procédez comme suit :
 
 1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com).
 2. Dans le menu déroulant, sélectionnez le point de vente que vous souhaitez connecter.
