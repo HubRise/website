@@ -38,6 +38,8 @@ The solution includes:
 - Digital menu: Online menu with real-time updates, allergen and dietary information management.
 - Online booking: Integrated reservation system to reduce phone calls.
 - Loyalty: Points-based programme to reward returning customers.
+- SMS campaigns: Easily send personalised and targeted promotional or follow-up messages, tailored to your audience and connected to your sales data.
+- Customer reviews management: Automatically collect feedback after each order to identify areas for improvement and showcase your best reviews online.
 - Delivery: Option to use your own drivers or connect with third-party providers (Stuart, Uber Direct).
 
 Eatself offers several advantages:
@@ -47,7 +49,6 @@ Eatself offers several advantages:
 - Quick setup with included training.
 - Self-ordering kiosk with no hidden fees or commissions.
 - Personalized customer support.
-- Possible integration with delivery platforms, allowing orders to be centralized directly to your EPOS system.
 
 ## Integration Features
 
