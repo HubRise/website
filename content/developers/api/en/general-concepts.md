@@ -230,7 +230,7 @@ Depending on the error, the response may include:
 
 ## 8. Private Refs {#private-refs}
 
-HubRise allows API clients to attach their own internal references to various objects, such as orders, order items, customers, and a few others. This can be convenient when clients need to link HubRise objects to their internal objects, but they cannot store HubRise ids.
+HubRise allows API clients to attach their own internal references (≤ 255 chars) to various objects, such as orders, order items, customers, and a few others. This can be convenient when clients need to link HubRise objects to their internal objects, but they cannot store HubRise ids.
 
 A private ref is only visible to the client that set it. For example, let's assume client A assigns a private ref to an order:
 
