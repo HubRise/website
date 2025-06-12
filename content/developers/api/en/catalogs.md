@@ -1181,27 +1181,26 @@ There is no endpoint to delete an image. Images that have not been attached to a
 
 #### When Creating a Catalog
 
-If you are creating a catalog, you should upload all images before uploading the catalog data. The recommended sequence is:
+If you are creating a catalog, you should upload images before the catalog. The recommended sequence is:
 
-1. First create an empty catalog: `POST /catalogs`.
-
-2. Upload images on the catalog: `POST /catalogs/:catalog_id/images`, keep the returned `id`s for the next step.
+1. Create an empty catalog: `POST /catalogs`.
+2. Upload images for the catalog: `POST /catalogs/:catalog_id/images`, and keep the returned `id`s for the next step. Optionally add `?private_ref=...` to supply a unique `private_ref` per image to ease future deduplication. See [When Updating a Catalog](#images-update-catalog) for details about deduplication.
 
 3. Upload the catalog: `PUT /catalogs/:catalog_id`, using the image `id`s.
 
-#### When Updating a Catalog
+#### When Updating a Catalog {#images-update-catalog}
 
-If you are updating a catalog, you should only upload new images to reduce the amount of data and speed up the process. Here is the recommended sequence:
+If you are updating a catalog, you should only upload new images to minimise data transfer and speed up the process. Here is the recommended sequence:
 
 1. Fetch the existing images: `GET /catalogs/:catalog_id/images`.
    This returns each image `id`, `md5` checksum and, if it was supplied at creation time, its `private_ref`.
 2. Decide which images must be created. You can either:
 
    - compare `md5` if you still have the original bytes
-   - or compare the `private_ref` you supplied earlier, if you no longer have the raw image or checksum.
+   - or compare the `private_ref` you supplied earlier. This assumes that each distinct image binary content has a unique `private_ref`.
 
-3. Upload the new images: `POST /catalogs/:catalog_id/images` (add `?private_ref=` to supply an optional ref) and keep their `id`s.
-4. Update the catalog: `PUT /catalogs/:catalog_id`, using the existing and new image `id`s.
+3. Upload the new images: `POST /catalogs/:catalog_id/images`, optionally add `?private_ref=...` to supply unique refs, and keep the image `id`s.
+4. Update the catalog: `PUT /catalogs/:catalog_id`, supplying the reused or new image `id`s for each product or deal.
 
 ### 13.1. Create Image
 
