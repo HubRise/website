@@ -1173,24 +1173,34 @@ All conditions must be met simultaneously for a rule to match. When one or sever
 
 ## 13. Images {#images}
 
-Images can be attached to products and deals, via their `image_ids` fields.
+Images can be attached to products and deals through their `image_ids` fields. Each image must be created first, then referenced from the catalog payload.
 
-### Image Management {#image-management}
+There is no endpoint to delete an image. Images that have not been attached to any product or deal for 30 days are automatically removed.
 
-Images must be uploaded before catalog data. The sequence is:
+### Recommendations for Image Upload {#image-management}
 
-1. If you are not reusing a catalog, create an empty one first: `POST /catalogs`.
-1. Upload all images: `POST /catalogs/:catalog_id/images` and retain their `id`s for the following step.
-1. Upload the catalog: `PUT /catalogs/:catalog_id`, using the image `id`s.
+#### When Creating a Catalog
 
-If you are updating an existing catalog, you should only upload new images to reduce the amount of data to be sent. Follow this sequence:
+If you are creating a catalog, you should upload images before the catalog. The recommended sequence is:
 
-1. Fetch the existing images: `GET /catalogs/:catalog_id/images`. This request returns the `id`s and `md5` hashes of the existing images.
-1. Determine which images are new, either by `id` or by calculating the `md5` hash of each image to upload.
-1. Upload the new images: `POST /catalogs/:catalog_id/images` and retain their `id`s.
-1. Update the catalog: `PUT /catalogs/:catalog_id`, using the existing and new image `id`s.
+1. Create an empty catalog: `POST /catalogs`.
+2. Upload images for the catalog: `POST /catalogs/:catalog_id/images`, and keep the returned `id`s for the next step. Optionally add `?private_ref=...` to supply a unique `private_ref` per image to ease future deduplication. See [When Updating a Catalog](#images-update-catalog) for details about deduplication.
 
-There is no endpoint to delete an image. Images that are not used for 30 days are automatically removed.
+3. Upload the catalog: `PUT /catalogs/:catalog_id`, using the image `id`s.
+
+#### When Updating a Catalog {#images-update-catalog}
+
+If you are updating a catalog, you should only upload new images to minimise data transfer and speed up the process. Here is the recommended sequence:
+
+1. Fetch the existing images: `GET /catalogs/:catalog_id/images`.
+   This returns each image `id`, `md5` checksum and, if it was supplied at creation time, its `private_ref`.
+2. Decide which images must be created. You can either:
+
+   - compare `md5` if you still have the original bytes
+   - or compare the `private_ref` you supplied earlier. This assumes that each distinct image binary content has a unique `private_ref`.
+
+3. Upload the new images: `POST /catalogs/:catalog_id/images`, optionally add `?private_ref=...` to supply unique refs, and keep the image `id`s.
+4. Update the catalog: `PUT /catalogs/:catalog_id`, supplying the reused or new image `id`s for each product or deal.
 
 ### 13.1. Create Image
 
@@ -1203,6 +1213,12 @@ HubRise supports the following image formats: `JPEG`, `PNG`, `WEBP`, `GIF`, and 
 HubRise does not impose any restrictions on image dimensions. However, we recommend using images in `1200x800` format or larger to ensure a good quality across all channels.
 
 <CallSummaryTable endpoint="POST /catalogs/:catalog_id/images" accessLevel="location, account" />
+
+##### Parameters:
+
+| Name                                    | Type   | Description                                                                                                                                                          |
+| --------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `private_ref` <Label type="optional" /> | string | A client‑side reference used to identify already uploaded images. Must be unique for the catalog. See [Private Refs](/developers/api/general-concepts#private-refs). |
 
 ##### Example request:
 
@@ -1221,6 +1237,7 @@ Response:
   "type": "image/jpeg",
   "size": 126934,
   "md5": "39857d16289e814484f4229ca40cc2b1",
+  "private_ref": "sku-98765",
   "seconds_before_removal": 2592000
 }
 ```
@@ -1237,6 +1254,7 @@ Response:
 | `type`                   | string  | The MIME type of the image. Example values: `image/jpeg`, `image/png`.                                                                           |
 | `size`                   | integer | Image size in bytes.                                                                                                                             |
 | `md5`                    | string  | MD5-hash of the image data.                                                                                                                      |
+| `private_ref`            | string  | The `private_ref` supplied at creation, or `null`.                                                                                               |
 | `seconds_before_removal` | integer | Time left before this image is removed. For unattached images only. This field is null if the image is attached to at least one product or deal. |
 
 ##### Example request:
@@ -1249,13 +1267,14 @@ Response:
   "type": "image/jpeg",
   "size": 240330,
   "md5": "39857d16289e814484f4229ca40cc2b1",
+  "private_ref": "sku-123",
   "seconds_before_removal": 33102
 }
 ```
 
 ### 13.3. Retrieve Image Data
 
-Return the image data. The reply's `Content-Type` header contains the MIME image type.
+Return the raw image data. The reply's `Content-Type` header contains the MIME image type.
 
 <CallSummaryTable endpoint="GET /catalogs/:catalog_id/images/:id/data" accessLevel="location, account" />
 
@@ -1265,7 +1284,7 @@ Return the image data. The reply's `Content-Type` header contains the MIME image
 
 ```http
 Content-Type: image/jpeg
-Response body: image data
+Response body: [image data]
 ```
 
 ### 13.4. List Images
@@ -1274,7 +1293,30 @@ Retrieve the list of images in the catalog.
 
 <CallSummaryTable endpoint="GET /catalogs/:catalog_id/images" accessLevel="location, account" />
 
-##### Example request:
+##### Parameters:
+
+| Name                                    | Type   | Description                                                                   |
+| --------------------------------------- | ------ | ----------------------------------------------------------------------------- |
+| `private_ref` <Label type="optional" /> | string | Return only the image that matches this `private_ref` for the current client. |
+
+##### Example request: filter by `private_ref`
+
+`GET /catalogs/87yu4/images?private_ref=sku-98765`
+
+```json
+[
+  {
+    "id": "tsll2",
+    "type": "image/jpeg",
+    "size": 240330,
+    "md5": "39857d16289e814484f4229ca40cc2b1",
+    "private_ref": "sku-98765",
+    "seconds_before_removal": null
+  }
+]
+```
+
+##### Example request: list all images
 
 `GET /catalogs/87yu4/images`
 
@@ -1285,11 +1327,16 @@ Retrieve the list of images in the catalog.
     "type": "image/jpeg",
     "size": 240330,
     "md5": "39857d16289e814484f4229ca40cc2b1",
+    "private_ref": "sku-123",
     "seconds_before_removal": 33102
   },
   {
-    "id": "mpsml"
-    ...
+    "id": "mpsml",
+    "type": "image/png",
+    "size": 198764,
+    "md5": "40a0d6644167654926e153c68c040b1d",
+    "private_ref": null,
+    "seconds_before_removal": null
   }
 ]
 ```
