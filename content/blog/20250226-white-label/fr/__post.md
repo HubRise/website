@@ -2,7 +2,7 @@
 title: HubRise en marque blanche – Votre marque, nos applications
 path_override: marque-blanche
 date: 2025-02-26
-author: Janaina Wittner
+author: Antoine Monnier
 meta:
   title: Présentation de HubRise Marque Blanche | Blog | HubRise
   description: HubRise Marque Blanche permet aux partenaires de proposer nos solutions sous leur propre marque, offrant une expérience fluide à leurs clients.
