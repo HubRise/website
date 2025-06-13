@@ -13,6 +13,8 @@ sections:
         to: /fr/developers/integration-guide
       - title: Référence de l'API
         to: /fr/developers/api/general-concepts
+      - title: Changelog
+        to: /fr/developers/changelog
   - title: Ressources
     links:
       - title: Guide utilisateur
