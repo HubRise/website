@@ -12,7 +12,7 @@ Connecting Uber Eats to HubRise allows you to receive Uber Eats orders directly 
 
 Your Uber Eats tablet can be switched off if you have enabled tabletless integration. For more information, see [Can Orders Be Sent Directly To My EPOS Without Using Uber Eats Tablets?](/apps/uber-eats/faqs/send-orders-to-epos-without-tablet).
 
-This page describes the information Uber Eats sends to HubRise. It helps you understand how orders will be received on your EPOS.
+This page describes the information Uber Eats sends to HubRise **and** the way delivery information is synchronised between the two platforms. It helps you understand how orders will be received on your EPOS and how delivery tracking works when you use your own couriers (BYOC — _Bring Your Own Courier_).
 
 ## Items and Options
 
@@ -64,7 +64,7 @@ Status update rules:
 
 ### When the Status Changes in HubRise
 
-Uber Eats Bridge lets you decide which HubRise status triggers the `Accepted` status on Uber Eats. This is useful to handle different scenarios when your EPOS updates the order status. For example, if your EPOS marks an accepted order as `received` on HubRise, you can still notify Uber Eats that the order has been accepted.
+Uber Eats Bridge lets you decide which HubRise status triggers the `Accepted` status on Uber Eats. This is useful to handle different scenarios when your EPOS updates the order status. For example, if your EPOS marks an accepted order as `received` on HubRise, you can still notify Uber Eats that the order is `Accepted`.
 
 When the status of an order changes to `rejected` in HubRise, Uber Eats Bridge notifies Uber Eats that the order is `Denied`, but only if the order has not been accepted yet.
 
@@ -84,6 +84,63 @@ Other HubRise statuses are not supported and are not sent to Uber Eats.
 When eaters cancel their orders, Uber Eats immediately marks them as `cancelled` on HubRise.
 
 When Uber Eats rejects orders because you fail to acknowledge them in time, it does not update their status on HubRise.
+
+## Delivery Tracking {#delivery-tracking}
+
+We keep Uber Eats and HubRise in sync for delivery progress and driver position. The direction of the updates depends on who provides the courier:
+
+- Delivery by Uber Eats: Uber Eats sends driver status and location to HubRise.
+- Delivery by the restaurant: HubRise sends status and driver location to Uber Eats.
+
+### Delivery by Uber Eats
+
+Each time the delivery moves to a new state (for example, driver en route, driver arrived, delivered), the Bridge updates the corresponding Delivery resource attached to the HubRise order:
+
+- The delivery `status` is updated according to the following mapping:
+
+| Uber Eats status      | HubRise Delivery status |
+| --------------------- | ----------------------- |
+| `SCHEDULED`           | `pending`               |
+| `EN_ROUTE_TO_PICKUP`  | `pickup_enroute`        |
+| `ARRIVED_AT_PICKUP`   | `pickup_waiting`        |
+| `EN_ROUTE_TO_DROPOFF` | `dropoff_enroute`       |
+| `ARRIVED_AT_DROPOFF`  | `dropoff_waiting`       |
+| `COMPLETED`           | `delivered`             |
+| `FAILED`              | `cancelled`             |
+
+- Driver and delivery details are written to the HubRise delivery when provided by Uber Eats. This includes:
+  - `status` (using the mapping above)
+  - `estimated_pickup_at`
+  - `estimated_dropoff_at`
+  - `driver_pickup_url`
+  - `driver_name`
+  - `driver_phone`
+  - `driver_phone_access_code`
+  - `driver_latitude`
+  - `driver_longitude`
+
+### Delivery by the Restaurant
+
+When you use your own couriers (BYOC), you can update the delivery status and driver location in HubRise. The Bridge then relays this information to Uber Eats.
+
+#### a. Updating the delivery status
+
+The Bridge maps the HubRise Delivery's `status` field to the corresponding Uber Eats status:
+
+| HubRise Delivery status                  | Uber Eats BYOC status |
+| ---------------------------------------- | --------------------- |
+| `dropoff_enroute`                        | `started`             |
+| `dropoff_approaching`, `dropoff_waiting` | `arriving`            |
+| `delivered`                              | `delivered`           |
+
+#### b. Updating the driver location
+
+If both of the following conditions are true:
+
+1. The driver coordinates (`driver_latitude`, `driver_longitude`) in HubRise changed and are not empty.
+2. The HubRise delivery status is _not_ `delivered` (Uber Eats stops showing the map once the order is completed).
+
+then the Bridge forwards the new position to Uber Eats.
 
 ## Service Types
 
@@ -111,7 +168,7 @@ For every type of order, Uber Eats Bridge retrieves the following information fr
 - `first_name`: The customer's first name.
 - `last_name`: The initial of the customer's last name.
 - `phone`: Uber Eats support number. Note: This is not the customer's phone number.
-- `delivery_notes`: The access code to identify the order when calling Uber Eats support and the delivery notes left by the customer, in the format "Phone access code: `access_code`. `note`".
+- `delivery_notes`: The access code to identify the order when calling Uber Eats support and the delivery notes left by the customer, in the format `Phone access code: <access_code>. <note>`.
 
 Additionally, for restaurant delivery orders, Uber Eats Bridge retrieves the following fields:
 
@@ -136,7 +193,7 @@ The available fields in the payload are the following:
 
 Uber Eats Bridge includes charges for restaurant delivery orders only. Charges for every other type of orders are collected by Uber Eats and therefore not transmitted to the restaurant.
 
-Uber Eats Bridge encodes the following types of charges: delivery charges, and small order fee, and tip for the restaurant.
+Uber Eats Bridge encodes the following types of charges: delivery charges, small order fee, and tip for the restaurant.
 
 For each charge present in the order, the available fields are the following:
 
