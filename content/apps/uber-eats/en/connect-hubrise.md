@@ -8,12 +8,12 @@ meta:
   description: Instructions on connecting Uber Eats with HubRise for your EPOS to work with other apps as a cohesive whole. Connect apps and synchronise your data.
 ---
 
-Connecting Uber Eats to HubRise can be done with a few steps. You can connect both kinds of Uber Eats storefronts:
+Connecting Uber Eats to HubRise can be done in a few steps. You can connect both types of Uber Eats storefronts:
 
 - Your store hosted on the main Uber Eats platform, accessible at www.ubereats.com.
-- Your own branded webstore on Uber Eats, identified by URLs that begin with www.order.store.
+- Your own branded webstore on Uber Eats, identified by URLs beginning with www.order.store.
 
-If you have a branded webstore, make sure you have read our [FAQ](/apps/uber-eats/faqs/connect-webstore) before proceeding.
+If you have a branded webstore, ensure you have read our [FAQ](/apps/uber-eats/faqs/connect-webstore) before proceeding.
 
 ---
 
@@ -28,48 +28,76 @@ First set up the Uber Eats Bridge in HubRise by following these steps:
 - Log in to your [HubRise account](https://manager.hubrise.com).
 - Select the location you want to connect from the dropdown menu.
 - Select **CONNECTIONS**, then **View available apps**.
-- Select **Uber Eats** from the list of apps.
+- Select **Uber Eats Bridge** from the list of apps.
 - Click **Connect**.
 - Click **Allow** to grant Uber Eats Bridge access to your registered location on HubRise. If your account has multiple locations, expand the **Choose location** section to select the desired location, and then click **Allow**.
 
-The bridge now shows the **Connect your Uber Eats store** page. Four connection methods are available.
+The bridge now shows the **Connect your Uber Eats store** page. Four connection methods are available, see below for details on each method.
 
-### 1.1 Connect with your Uber Eats account
+When any of the four flows completes, the bridge activates the integration and opens the **Configuration** page.
 
-Use this method when you are physically with the store owner, you are the owner yourself, or you can log in to the store in Uber Eats Manager.
+### 1.1 Connect With Your Uber Eats Account
 
-First open the bridge as described above, then:
+Use this method if you are the store owner, are with them, or if you have access to Uber Eats Manager.
 
-- Click **Connect with Uber Eats** and sign in to Uber Eats Manager.
+First, open the bridge as described above, then:
+
+- Select **Connect with your Uber Eats account**.
+- Click **Connect with Uber Eats** – you will be redirected to Uber Eats Manager.
+- Sign in to Uber Eats if you are not already logged in.
 - Approve the requested permissions.
-- If several stores are listed, pick the correct one and click **Connect store**.
+- You will be redirected back to HubRise.
+- Select the store to connect and click **Connect store**.
 
-![Connect with your account] TO BE DONE
+![Connect with your account](./images/030-connect-with-uber-eats-account.png)
 
-### 1.2 Send a connection link to the owner
+### 1.2 Send a Connection Link to the Owner
 
-This path is ideal for support teams. It spares the owner from any technical steps: they simply click a link, sign in, and are done. The HubRise brand is not shown during their experience.
+This method suits support teams: the owner simply clicks a link, signs in to their Uber Eats account, and they’re done. The HubRise brand remains mostly hidden during the process.
 
 First open the bridge as described above, then:
 
 - Select **Send a connection link to the owner** and enter your email address. You will be notified when the link is used.
 - Click the icon to copy the link and send it to the owner.
-- Wait for the email confirmation when the owner clicks the link.
+- Wait for the email confirmation once the owner clicks the link.
 - Complete the setup.
 
-Here is what the owner sees when they click the link:
+![Send a connection link to the owner](./images/031-connect-with-connection-link.png)
 
-![Owner – Connect] TO BE DONE
-![Owner – Success] TO BE DONE
+The owner will see these pages when they click the link:
 
-### 1.4. Connect with Store UUID (legacy method)
+![Owner – Connect](./images/034-connection-link-page-1.png)
+![Owner – Authorise](./images/035-connection-link-page-2.png)
+![Owner – Success](./images/036-connection-link-page-3.png)
 
-Use this only if HubRise or Uber Eats support specifically instructs you to. Before you can proceed, email support@hubrise.com with:
+### 1.3 Reuse an Existing Connection
 
-- The UUID of your restaurant. For example: `dc638853-bff1-411c-adba-8aa4d7abddd2`. For more information on how to find your UUID, see our [FAQ](/apps/uber-eats/faqs/find-uber-eats-uuid).
-- The public URL of your restaurant on Uber Eats. For example: https://www.ubereats.com/store/camile-thai-epsom/V6j2cjCWX9e0WXNyGTdYsg.
+Use this method when another store for the same legal owner has already been connected with one of the first two methods.
+
+- Open the bridge for the already‑connected store.
+- Open the **Configuration** page.
+- Copy the connection code (format `UE-XXXXXXX`) in the footer.
+- Close the page.
+
+Then:
+
+- Open the bridge for the new store.
+- Choose **Reuse an existing connection**
+- Paste the code.
+- Click **Reuse connection**.
+
+Note that the connection code appears only for stores connected via one of the first two methods and with authorisation under one year old. If you don't see the code, connect the new store using one of the other methods.
+
+![Reuse an existing connection](./images/032-connect-reuse-connection-code.png)
+
+### 1.4. Connect With Store Uuid (Legacy Method)
+
+Use this method only if HubRise or Uber Eats support specifically instructs you to. Before you can proceed, email support@hubrise.com with:
+
+- The UUID of your store. For example: `dc638853-bff1-411c-adba-8aa4d7abddd2`. For more information on how to find your UUID, see our [FAQ](/apps/uber-eats/faqs/find-uber-eats-uuid).
+- The public URL of your store on Uber Eats. For example: https://www.ubereats.com/store/camile-thai-epsom/V6j2cjCWX9e0WXNyGTdYsg.
 - Your HubRise location name and identifier. For example: `Fast Pizza London z6q31-0`.
-- The order acceptance mode: `Manual accept` or `Offered state` mode. For more details, see our [FAQ](/apps/uber-eats/faqs/send-orders-to-epos-without-tablet).
+- The order acceptance mode: **Manual accept** or **Offered state** mode. For more details, see our [FAQ](/apps/uber-eats/faqs/send-orders-to-epos-without-tablet).
 
 After HubRise confirms that Uber Eats support has enabled the integration, open the bridge as described above, then:
 
@@ -77,9 +105,7 @@ After HubRise confirms that Uber Eats support has enabled the integration, open 
 - Enter the UUID.
 - Click **Connect with Store UUID**.
 
-![Legacy Store UUID method](./images/001-store-uuid.png)
-
-When any of the four flows completes, the bridge activates the integration and opens the _Configuration_ page.
+![Legacy Store UUID method](./images/033-connect-store-uuid.png)
 
 ## 2. Configure Your Preferences
 
@@ -95,7 +121,7 @@ Most apps require a ref code for each product to process orders correctly. To le
 
 Before you start receiving orders from real customers, we recommend that you test the whole integration workflow.
 
-You should place a few orders on your Uber Eats restaurant, make sure they are correctly received by your EPOS, and then cancel them to get a refund. This will ensure that your restaurant is ready to go live.
+You should place a few orders on your Uber Eats store, make sure they are correctly received by your EPOS, and then cancel them to get a refund. This will ensure that your restaurant is ready to go live.
 
 If you want, you will also be able to get rid of your Uber Eats tablet by switching to a direct integration.
 For more details, see [Can Orders Be Sent Directly To My EPOS Without Using Uber Eats Tablets](/apps/uber-eats/faqs/send-orders-to-epos-without-tablet).
