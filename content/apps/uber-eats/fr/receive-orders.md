@@ -109,7 +109,6 @@ HubRise et Uber Eats synchronisent le statut de livraison et la position du livr
 | `FAILED`              | `cancelled`             |
 
 - Les informations sur le livreur et la livraison sont enregistrées dans les champs suivants de l'objet Delivery lorsqu'elles sont fournies par Uber Eats :
-
   - `status` (avec le mapping ci-dessus)
   - `estimated_pickup_at`
   - `estimated_dropoff_at`
