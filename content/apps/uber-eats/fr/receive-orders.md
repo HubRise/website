@@ -12,7 +12,7 @@ En connectant Uber Eats à HubRise, vous pouvez recevoir des commandes directeme
 
 Votre tablette Uber Eats peut être éteinte si vous avez activé l'intégration sans tablette. Pour plus de détails, voir [Puis-je recevoir les commandes directement sur mon logiciel de caisse sans utiliser les tablettes Uber Eats ?](/apps/uber-eats/faqs/send-orders-to-epos-without-tablet)
 
-Cette page décrit les informations qu'Uber Eats envoie à HubRise. Elle peut vous aider à comprendre comment les commandes seront reçues dans votre logiciel de caisse.
+Cette page décrit les informations qu'Uber Eats envoie à HubRise et la manière dont les informations de livraison sont synchronisées entre les deux plateformes. Elle peut vous aider à comprendre comment les commandes seront reçues dans votre logiciel de caisse et comment fonctionne le suivi des livraisons si vous utilisez vos propres livreurs (BYOC — _Bring Your Own Courier_).
 
 ## Articles et options
 
@@ -84,6 +84,60 @@ Les autres statuts HubRise ne sont ni pris en charge, ni envoyés à Uber Eats.
 Quand les clients annulent leurs commandes, Uber Eats les marque immédiatement comme `cancelled` (annulée) dans HubRise.
 
 Lorsqu'Uber Eats rejette des commandes car l'accusé de réception n'a pas été effectué à temps, cela n'actualise pas leur statut dans HubRise.
+
+## Suivi de livraison {#delivery-tracking}
+
+HubRise et Uber Eats synchronisent le statut de livraison et la position du livreur. Le sens des mises à jour dépend de l'opérateur de la livraison :
+
+- Livraison par Uber : Uber Eats envoie le statut et la position du livreur à HubRise.
+- Livraison par le restaurant : HubRise envoie le statut et la position du livreur à Uber Eats.
+
+### Livraison par Uber
+
+À chaque changement d'état de la livraison (par exemple, en route, arrivé, livré), le Bridge met à jour la ressource Delivery correspondante liée à la commande HubRise :
+
+- Le champ `status` de la livraison est mis à jour selon la correspondance suivante :
+
+| Statut Uber Eats      | Statut HubRise Delivery |
+| --------------------- | ----------------------- |
+| `SCHEDULED`           | `pending`               |
+| `EN_ROUTE_TO_PICKUP`  | `pickup_enroute`        |
+| `ARRIVED_AT_PICKUP`   | `pickup_waiting`        |
+| `EN_ROUTE_TO_DROPOFF` | `dropoff_enroute`       |
+| `ARRIVED_AT_DROPOFF`  | `dropoff_waiting`       |
+| `COMPLETED`           | `delivered`             |
+| `FAILED`              | `cancelled`             |
+
+- Les informations sur le livreur et la livraison sont enregistrées dans les champs suivants de l'objet Delivery lorsqu'elles sont fournies par Uber Eats :
+  - `status` (avec le mapping ci-dessus)
+  - `estimated_pickup_at`
+  - `estimated_dropoff_at`
+  - `driver_pickup_url`
+  - `driver_name`
+  - `driver_phone`
+  - `driver_phone_access_code`
+  - `driver_latitude`
+  - `driver_longitude`
+
+### Livraison par le restaurant
+
+Si vous utilisez vos propres livreurs (BYOC), vous pouvez mettre à jour le statut de la livraison et la position du livreur dans HubRise. Le Bridge relaie alors cette information à Uber Eats.
+
+#### Mise à jour du statut de livraison
+
+Le Bridge mappe le champ `status` de la livraison HubRise au statut Uber Eats correspondant :
+
+| Statut HubRise Delivery                  | Statut Uber Eats BYOC |
+| ---------------------------------------- | --------------------- |
+| `dropoff_enroute`                        | `started`             |
+| `dropoff_approaching`, `dropoff_waiting` | `arriving`            |
+| `delivered`                              | `delivered`           |
+
+#### Mise à jour de la position du livreur
+
+Lorsque les coordonnées du livreur (`driver_latitude`, `driver_longitude`) changent dans HubRise, le bridge transmet la nouvelle position à Uber Eats.
+
+Si la commande est marquée comme `delivered`, Uber Eats cesse d'afficher la carte et n'accepte plus les mises à jour de position.
 
 ## Types de service
 
