@@ -21,7 +21,7 @@ Si vous avez une boutique en ligne personnalisée sur Uber Eats, assurez-vous d'
 
 ---
 
-## 1. Connectez Uber Eats Bridge
+## 1. Connectez Uber Eats Bridge {#connect-uber-eats-bridge}
 
 Commencez par connecter Uber Eats Bridge à HubRise en suivant ces étapes :
 

@@ -21,7 +21,7 @@ If you have a branded webstore, ensure you have read our [FAQ](/apps/uber-eats/f
 
 ---
 
-## 1. Connect Uber Eats Bridge
+## 1. Connect Uber Eats Bridge {#connect-uber-eats-bridge}
 
 First set up the Uber Eats Bridge in HubRise by following these steps:
 
