@@ -119,8 +119,6 @@ Most apps require a ref code for each product to process orders correctly. To le
 
 ## 4. Receive Test Orders
 
-Before you start receiving orders from real customers, we recommend that you test the whole integration workflow.
-
 You should place a few orders on your Uber Eats store, make sure they are correctly received by your EPOS, and then cancel them to get a refund. This will ensure that your restaurant is ready to go live.
 
 If you want, you will also be able to get rid of your Uber Eats tablet by switching to a direct integration.

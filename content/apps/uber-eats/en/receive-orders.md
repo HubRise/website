@@ -12,7 +12,7 @@ Connecting Uber Eats to HubRise allows you to receive Uber Eats orders directly 
 
 Your Uber Eats tablet can be switched off if you have enabled tabletless integration. For more information, see [Can Orders Be Sent Directly To My EPOS Without Using Uber Eats Tablets?](/apps/uber-eats/faqs/send-orders-to-epos-without-tablet).
 
-This page describes the information Uber Eats sends to HubRise **and** the way delivery information is synchronised between the two platforms. It helps you understand how orders will be received on your EPOS and how delivery tracking works when you use your own couriers (BYOC — _Bring Your Own Courier_).
+This page describes the information Uber Eats sends to HubRise and the way delivery information is synchronised between the two platforms. It helps you understand how orders will be received on your EPOS and how delivery tracking works when you use your own couriers (BYOC — _Bring Your Own Courier_).
 
 ## Items and Options
 
@@ -108,7 +108,7 @@ Each time the delivery moves to a new state (for example, driver en route, dri
 | `COMPLETED`           | `delivered`             |
 | `FAILED`              | `cancelled`             |
 
-- Driver and delivery details are written to the HubRise delivery when provided by Uber Eats. This includes:
+- Driver and delivery details are saved in the following HubRise delivery fields when provided by Uber Eats:
   - `status` (using the mapping above)
   - `estimated_pickup_at`
   - `estimated_dropoff_at`
@@ -123,7 +123,7 @@ Each time the delivery moves to a new state (for example, driver en route, dri
 
 When you use your own couriers (BYOC), you can update the delivery status and driver location in HubRise. The Bridge then relays this information to Uber Eats.
 
-#### a. Updating the delivery status
+#### Updating the Delivery Status
 
 The Bridge maps the HubRise Delivery's `status` field to the corresponding Uber Eats status:
 
@@ -133,14 +133,11 @@ The Bridge maps the HubRise Delivery's `status` field to the corresponding Uber 
 | `dropoff_approaching`, `dropoff_waiting` | `arriving`            |
 | `delivered`                              | `delivered`           |
 
-#### b. Updating the driver location
+#### Updating the Driver Location
 
-If both of the following conditions are true:
+When the driver coordinates (`driver_latitude`, `driver_longitude`) change in HubRise, the bridge forwards the new position to Uber Eats.
 
-1. The driver coordinates (`driver_latitude`, `driver_longitude`) in HubRise changed and are not empty.
-2. The HubRise delivery status is _not_ `delivered` (Uber Eats stops showing the map once the order is completed).
-
-then the Bridge forwards the new position to Uber Eats.
+If the order is marked as `delivered`, Uber Eats stops displaying the map and no longer accepts location updates.
 
 ## Service Types
 
