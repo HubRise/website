@@ -80,7 +80,7 @@ Pour recevoir les commandes de Just Eat Flyt dans KEZIA II avec l'API Flyt, vous
 Dans la page de configuration de Just Eat Flyt Bridge, utilisez les paramètres suivants.
 
 | Section             | Nom                                                   | Code ref                                            |
-| ------------------- | ----------------------------------------------------- | --------------------------------------------------- |
+| ------------------- |-------------------------------------------------------| --------------------------------------------------- |
 | Statuts de commande | Marquer les commandes comme Acceptées                 | `lorsque leur statut HubRise passe à "Reçue"`       |
 | Types de service    | Code ref livraison par la plateforme                  | (laisser vide)                                      |
 | Types de service    | Code ref livraison par le restaurant                  | (laisser vide)                                      |
@@ -90,7 +90,8 @@ Dans la page de configuration de Just Eat Flyt Bridge, utilisez les paramètres 
 | Frais               | Code ref frais de livraison                           | Voir [Frais de livraison et autres frais](#charges) |
 | Frais               | Code ref surcharge                                    | Voir [Frais de livraison et autres frais](#charges) |
 | Frais               | Code ref frais d'emballage                            | Voir [Frais de livraison et autres frais](#charges) |
-| Frais               | Code ref pourboire livreur                            | Voir [Frais de livraison et autres frais](#charges) |
+| Frais               | Code ref frais d'emballage                            | Voir [Frais de livraison et autres frais](#charges) |
+| Frais               | Code ref supplément petite commande                   | Voir [Frais de livraison et autres frais](#charges) |
 | Frais               | Code ref autres frais                                 | Voir [Frais de livraison et autres frais](#charges) |
 | Paiements           | Code ref paiement en ligne                            | Vois [Moyens de paiement](#payment-methods)         |
 | Paiements           | Code ref paiement en espèces                          | (laisser vide)                                      |

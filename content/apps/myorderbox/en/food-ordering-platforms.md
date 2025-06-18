@@ -101,6 +101,7 @@ In the Just Eat Flyt Bridge configuration page, use the following settings:
 | Charges        | Delivery charge ref code                 | `delivery`                                                 |
 | Charges        | Service charge ref code                  | `service`                                                  |
 | Charges        | Bag fee ref code                         | `service`                                                  |
+| Charges        | Small order fee ref code                 | `service`                                                  |
 | Charges        | Driver tip ref code                      | `service`                                                  |
 | Charges        | Other charge ref code                    | `service`                                                  |
 | Payments       | Online payment ref code                  | (leave empty)                                              |

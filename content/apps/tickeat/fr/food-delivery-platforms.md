@@ -76,23 +76,24 @@ Pour recevoir les commandes de Just Eat Flyt dans Tick'Eat avec l'API Flyt, vous
 
 Dans la page de configuration de Just Eat Flyt Bridge, utilisez les paramètres suivants.
 
-| Section             | Nom                                                   | Code ref                                                                                                |
-| ------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| Statuts de commande | Marquer les commandes comme Acceptées                 | `lorsque leur statut HubRise passe à "Reçue"`                                                           |
-| Types de service    | Code ref livraison par la plateforme                  | `just_eat`                                                                                              |
-| Types de service    | Code ref livraison par le restaurant                  | `just_eat`                                                                                              |
-| Types de service    | Code ref à emporter                                   | `just_eat`                                                                                              |
-| Types de service    | Envoyer les commandes livrées par la plateforme [...] | `commandes à emporter`                                                                                  |
-| Articles spéciaux   | Code ref option consigne                              | (laisser vide)                                                                                          |
-| Remises             | Code ref remise                                       | (laisser vide)                                                                                          |
-| Frais               | Code ref frais de livraison                           | `delivery_fees`                                                                                         |
-| Frais               | Code ref surcharge                                    | Si applicable, créer un article `Surcharge` dans Tick'Eat et utiliser son code ref. Laisser vide sinon. |
-| Frais               | Code ref frais d'emballage                            | Si applicable, créer un article `Emballage` dans Tick'Eat et utiliser son code ref. Laisser vide sinon. |
-| Frais               | Code ref pourboire livreur                            | Si applicable, créer un article `Pourboire` dans Tick'Eat et utiliser son code ref. Laisser vide sinon. |
-| Frais               | Code ref autres frais                                 | (laisser vide)                                                                                          |
-| Paiements           | Code ref paiement en ligne                            | Créer un moyen de paiement dans Tick'Eat et utiliser son code ref                                       |
-| Paiements           | Code ref paiement en espèces                          | (laisser vide)                                                                                          |
-| Clients             | Dupliquer le code d'accès téléphone [...]             | Laisser la case décochée                                                                                |
+| Section             | Nom                                                   | Code ref                                                                                                      |
+| ------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Statuts de commande | Marquer les commandes comme Acceptées                 | `lorsque leur statut HubRise passe à "Reçue"`                                                                 |
+| Types de service    | Code ref livraison par la plateforme                  | `just_eat`                                                                                                    |
+| Types de service    | Code ref livraison par le restaurant                  | `just_eat`                                                                                                    |
+| Types de service    | Code ref à emporter                                   | `just_eat`                                                                                                    |
+| Types de service    | Envoyer les commandes livrées par la plateforme [...] | `commandes à emporter`                                                                                        |
+| Articles spéciaux   | Code ref option consigne                              | (laisser vide)                                                                                                |
+| Remises             | Code ref remise                                       | (laisser vide)                                                                                                |
+| Frais               | Code ref frais de livraison                           | `delivery_fees`                                                                                               |
+| Frais               | Code ref surcharge                                    | Si applicable, créer un article `Surcharge` dans Tick'Eat et utiliser son code ref. Laisser vide sinon.       |
+| Frais               | Code ref frais d'emballage                            | Si applicable, créer un article `Emballage` dans Tick'Eat et utiliser son code ref. Laisser vide sinon.       |
+| Frais               | Code ref supplément petite commande                   | Si applicable, créer un article `Petite commande` dans Tick'Eat et utiliser son code ref. Laisser vide sinon. |
+| Frais               | Code ref pourboire livreur                            | Si applicable, créer un article `Pourboire` dans Tick'Eat et utiliser son code ref. Laisser vide sinon.       |
+| Frais               | Code ref autres frais                                 | (laisser vide)                                                                                                |
+| Paiements           | Code ref paiement en ligne                            | Créer un moyen de paiement dans Tick'Eat et utiliser son code ref                                             |
+| Paiements           | Code ref paiement en espèces                          | (laisser vide)                                                                                                |
+| Clients             | Dupliquer le code d'accès téléphone [...]             | Laisser la case décochée                                                                                      |
 
 ## Uber Eats
 

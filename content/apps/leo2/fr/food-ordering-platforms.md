@@ -86,6 +86,7 @@ Dans la page de configuration de Just Eat Flyt Bridge, utilisez les paramètres 
 | Frais               | Code ref frais de livraison                           | Créer un produit dans LEO2 et utiliser son code ref.                 |
 | Frais               | Code ref surcharge                                    | Créer un produit dans LEO2 et utiliser son code ref.                 |
 | Frais               | Code ref frais d'emballage                            | Créer un produit dans LEO2 et utiliser son code ref.                 |
+| Frais               | Code ref supplément petite commande                   | Créer un produit dans LEO2 et utiliser son code ref.                 |
 | Frais               | Code ref pourboire livreur                            | Créer un produit dans LEO2 et utiliser son code ref.                 |
 | Frais               | Code ref autres frais                                 | Créer un produit dans LEO2 et utiliser son code ref.                 |
 | Paiements           | Code ref paiement en ligne                            | Créer un mode de règlement dans LEO2 et utiliser son code ref.       |
