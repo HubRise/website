@@ -50,6 +50,7 @@ Dans cette section, vous pouvez spécifier les codes ref relatifs aux frais suiv
 - Frais de service
 - Frais d'emballage
 - Pourboire livreur
+- Supplément petite commande
 - Autres frais
 
 ### Paiements

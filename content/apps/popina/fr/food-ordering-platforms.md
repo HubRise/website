@@ -86,6 +86,7 @@ Dans la page de configuration de Just Eat Flyt Bridge, utilisez les paramètres 
 | Frais               |                                           | Code ref frais de livraison                           | (laisser vide)                                                  |
 | Frais               |                                           | Code ref surcharge                                    | (laisser vide)                                                  |
 | Frais               |                                           | Code ref frais d'emballage                            | (laisser vide)                                                  |
+| Frais               |                                           | Code ref supplément petite commande                   | (laisser vide)                                                  |
 | Frais               |                                           | Code ref pourboire livreur                            | (laisser vide)                                                  |
 | Frais               |                                           | Code ref autres frais                                 | (laisser vide)                                                  |
 | Paiements           |                                           | Code ref paiement en ligne                            | Créer un mode de paiement dans Popina et utiliser son code ref. |

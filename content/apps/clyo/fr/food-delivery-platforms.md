@@ -82,6 +82,7 @@ Dans la page de configuration de Just Eat Flyt Bridge, utilisez les paramètres 
 | Frais               |     | Code ref frais de livraison                           | Créer un produit à prix libre positif dans Clyo Systems et utiliser son code ref. |
 | Frais               |     | Code ref surcharge                                    | Créer un produit à prix libre positif dans Clyo Systems et utiliser son code ref. |
 | Frais               |     | Code ref frais d'emballage                            | Créer un produit à prix libre positif dans Clyo Systems et utiliser son code ref. |
+| Frais               |     | Code ref supplément petite commande                   | Créer un produit à prix libre positif dans Clyo Systems et utiliser son code ref. |
 | Frais               |     | Code ref pourboire livreur                            | Créer un produit à prix libre positif dans Clyo Systems et utiliser son code ref. |
 | Frais               |     | Code ref autres frais                                 | Créer un produit à prix libre positif dans Clyo Systems et utiliser son code ref. |
 | Paiements           |     | Code ref paiement en ligne                            | Créer un type de règlement dans Clyo Systems et utiliser son code ref.            |
@@ -94,21 +95,21 @@ Pour recevoir les commandes de Uber Eats dans Clyo, vous devez d'abord connecter
 
 Dans la page de configuration de Uber Eats Bridge, utilisez les paramètres suivants.
 
-| Section             | Nom                                               | Code ref                                                                          |
-| ------------------- | ------------------------------------------------- | --------------------------------------------------------------------------------- |
-| Types de service    | Code ref livraison Uber                           | `Uber Eats`                                                                       |
-| Types de service    | Code ref livraison par le restaurant              | `Uber Eats`                                                                       |
-| Types de service    | Code ref à emporter                               | `Uber Eats`                                                                       |
-| Types de service    | Code ref sur place                                | `Uber Eats`                                                                       |
-| Types de service    | Envoyer les commandes livrées par Uber [...]      | `commandes à emporter`                                                            |
-| Articles spéciaux   | Code ref jetables                                 | Créer un article `Jetables` dans Clyo et utiliser son code ref. (\*)              |
-| Remises             | Code ref remise                                   | Créer un produit à prix libre négatif dans Clyo Systems et utiliser son code ref. |
-| Frais               | Code ref frais de livraison                       | Créer un produit à prix libre positif dans Clyo Systems et utiliser son code ref. |
-| Frais               | Code ref supplément petite commande               | Créer un produit à prix libre positif dans Clyo Systems et utiliser son code ref. |
-| Frais               | Code ref pourboire                                | Créer un produit à prix libre positif dans Clyo Systems et utiliser son code ref. |
-| Paiements           | Code ref paiement en ligne                        | Créer un type de règlement dans Clyo Systems et utiliser son code ref.            |
-| Paiements           | Code ref paiement en espèces                      | (laisser vide)                                                                    |
-| Statuts de commande | Marquer les commandes comme Acceptées             | `lorsque leur statut HubRise passe à "Reçue"`                                     |
+| Section             | Nom                                          | Code ref                                                                          |
+| ------------------- | -------------------------------------------- | --------------------------------------------------------------------------------- |
+| Types de service    | Code ref livraison Uber                      | `Uber Eats`                                                                       |
+| Types de service    | Code ref livraison par le restaurant         | `Uber Eats`                                                                       |
+| Types de service    | Code ref à emporter                          | `Uber Eats`                                                                       |
+| Types de service    | Code ref sur place                           | `Uber Eats`                                                                       |
+| Types de service    | Envoyer les commandes livrées par Uber [...] | `commandes à emporter`                                                            |
+| Articles spéciaux   | Code ref jetables                            | Créer un article `Jetables` dans Clyo et utiliser son code ref. (\*)              |
+| Remises             | Code ref remise                              | Créer un produit à prix libre négatif dans Clyo Systems et utiliser son code ref. |
+| Frais               | Code ref frais de livraison                  | Créer un produit à prix libre positif dans Clyo Systems et utiliser son code ref. |
+| Frais               | Code ref supplément petite commande          | Créer un produit à prix libre positif dans Clyo Systems et utiliser son code ref. |
+| Frais               | Code ref pourboire                           | Créer un produit à prix libre positif dans Clyo Systems et utiliser son code ref. |
+| Paiements           | Code ref paiement en ligne                   | Créer un type de règlement dans Clyo Systems et utiliser son code ref.            |
+| Paiements           | Code ref paiement en espèces                 | (laisser vide)                                                                    |
+| Statuts de commande | Marquer les commandes comme Acceptées        | `lorsque leur statut HubRise passe à "Reçue"`                                     |
 
 (\*) Applicable uniquement si vous proposez des jetables, tels que des couverts, serviettes, etc.
 
