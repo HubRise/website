@@ -20,6 +20,8 @@ sections:
         to: /fr/developers/api/general-concepts
       - title: Blog
         to: /fr/blog
+      - title: Changelog
+        to: /fr/developers/changelog
   - title: Help Center
     links:
       - title: Help

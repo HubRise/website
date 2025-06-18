@@ -94,6 +94,7 @@ Sur la page de configuration de Just Eat Flyt Bridge, utilisez les paramètres s
 | Frais               | Code ref frais de livraison                           | (laisser vide)                                                |
 | Frais               | Code ref frais de service                             | (laisser vide)                                                |
 | Frais               | Code ref frais d'emballage                            | (laisser vide)                                                |
+| Frais               | Code ref supplément petite commande                   | (laisser vide)                                                |
 | Frais               | Code ref pourboire livreur                            | (laisser vide)                                                |
 | Frais               | Code ref autres frais                                 | (laisser vide)                                                |
 | Paiements           | Code ref paiement en ligne                            | (laisser vide)                                                |

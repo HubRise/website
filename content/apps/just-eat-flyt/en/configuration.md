@@ -50,6 +50,7 @@ In this section, you can specify the ref codes for the following charges:
 - Service charge
 - Bag fee
 - Driver tip
+- Small order fee
 - Other charge
 
 ### Payments

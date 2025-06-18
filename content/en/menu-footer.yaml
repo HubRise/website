@@ -19,6 +19,8 @@ sections:
         to: /developers/api/general-concepts
       - title: Blog
         to: /blog
+      - title: Changelog
+        to: /developers/changelog
   - title: Help Center
     links:
       - title: Help

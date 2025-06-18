@@ -637,8 +637,8 @@ content:
           documentation: /apps/quick-up
           logo: quick-up.png
           country: GB
-          title: Quick Up
-          description: Quick Up is an on-demand delivery service for restaurants, grocery stores, and other local businesses. It offers route optimisation and real-time driver geolocation, helping reduce waiting times and control delivery costs.
+          title: QUICK UP
+          description: QUICK UP is an on-demand delivery service for restaurants, grocery stores, and other local businesses. It offers route optimisation and real-time driver geolocation, helping reduce waiting times and control delivery costs.
         - website: https://stuart.com
           documentation: /apps/stuart
           logo: stuart.png
