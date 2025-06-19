@@ -15,8 +15,6 @@ export type TOrderlineHero = {
 export type TFeatures = {
   title: string
   description: string
-  button_label: string
-  button_link: string
   list: Array<{
     title: string
     image: string

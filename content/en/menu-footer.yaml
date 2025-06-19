@@ -46,6 +46,7 @@ sections:
       - title: LinkedIn
         icon: linkedin
         to: https://www.linkedin.com/company/hubrise
+        is_external: true
 copyright_links:
   - title: Terms and Conditions
     link: /legal/general-terms-and-conditions

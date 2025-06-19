@@ -17,17 +17,10 @@ interface FeaturesProps {
 }
 
 const Features = ({ featuresContent, descriptionMdx, featuresImagesMap }: FeaturesProps) => {
-  const { title, button_label, button_link, list } = featuresContent
+  const { title, list } = featuresContent
   return (
     <FeaturesContainer>
-      <ScreenContainer
-        isTextCentered
-        withHeader
-        title={title}
-        descriptionMdx={descriptionMdx}
-        headerButtonLabel={button_label}
-        headerButtonLink={button_link}
-      >
+      <ScreenContainer isTextCentered withHeader title={title} descriptionMdx={descriptionMdx}>
         <SideBlocks>
           {list.map(({ title, image, description }, index) => {
             return (

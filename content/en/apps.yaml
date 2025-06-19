@@ -841,3 +841,5 @@ content:
       paragraph_2:
         chunk_1: HubRise users are professionals looking for solutions to modernize their business.
         chunk_2: There is a lot to do, and today's good ideas are the standards of tomorrow.
+    button_label: Start integration
+    button_link: /developers

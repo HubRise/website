@@ -1,7 +1,6 @@
 import { BlockContentButton, BlockContentLink } from "@components/BlockContent"
 import { useLayoutContext } from "@components/LayoutContext"
 import PageHero from "@components/PageHero"
-import Underline from "@components/Underline"
 import { IntegrationsYaml } from "@layouts/Integrations/types"
 import { text } from "@utils/misc"
 
@@ -30,7 +29,6 @@ const Hero = ({ hero }: HeroProps): JSX.Element => {
             {text(hero.description.paragraph_2_link_text)}
           </BlockContentLink>
         </p>
-        <Underline position="center" />
       </Content>
     </PageHero>
   )

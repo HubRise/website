@@ -95,7 +95,6 @@ export const ResourcesContainer = styled.div`
 
   @media (min-width: ${breakpoints.burgerMenu}) {
     flex-direction: row;
-    align-items: center;
     gap: 2.5rem;
   }
 `

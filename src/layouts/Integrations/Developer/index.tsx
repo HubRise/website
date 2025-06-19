@@ -1,3 +1,4 @@
+import Button from "@components/Button"
 import ScreenContainer from "@components/ScreenContainer"
 import { IntegrationsYaml } from "@layouts/Integrations/types"
 import { text } from "@utils/misc"
@@ -9,7 +10,7 @@ interface DevelopersProps {
 }
 
 const Developer = ({ developers }: DevelopersProps): JSX.Element => {
-  const { title, description } = developers
+  const { title, description, button_label, button_link } = developers
 
   return (
     <ScreenContainer bgColor="green" verticalPadding="small" withHeader title={title} isTextCentered>
@@ -21,6 +22,7 @@ const Developer = ({ developers }: DevelopersProps): JSX.Element => {
           {text(description.paragraph_2.chunk_2)}
         </p>
       </Description>
+      <Button label={button_label} type="secondary" link={button_link} />
     </ScreenContainer>
   )
 }

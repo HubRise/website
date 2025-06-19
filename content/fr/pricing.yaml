@@ -27,7 +27,7 @@ content:
       title: Included Features
       description: Features are available with your HubRise subscription
       button_label: Start today
-      button_link: link
+      button_link: https://manager.hubrise.com/signup?locale=fr-FR
       list:
         - text: Epos integration
         - text: Other integrations, see our
@@ -103,7 +103,7 @@ content:
       title: Resellers and Partners
       description: HubRise offer a partnership program, with or without white labelling.
       button_label: Find out more
-      button_link: link
+      button_link: /fr/become-partner
   action_block:
     title: Ready to Get Started?
     description: If you have more questions about features or pricing? We're here to help you take the next step.

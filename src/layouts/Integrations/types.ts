@@ -49,6 +49,8 @@ export interface IntegrationsYaml {
           chunk_2: string
         }
       }
+      button_label: string
+      button_link: string
     }
   }
 }

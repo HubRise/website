@@ -4,7 +4,8 @@ type TContactUsCard = {
   email: string
   buttons?: Array<{
     button_label: string
-    button_link: string
+    button_link?: string
+    popup_link?: boolean
   }>
 }
 

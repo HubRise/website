@@ -1,5 +1,5 @@
 import Link from "next/link"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
@@ -40,7 +40,7 @@ export const Item = styled.li`
   }
 `
 
-export const ItemLink = styled(Link)`
+const linkMixin = css`
   display: flex;
   align-items: center;
   color: ${colors.textLighter};
@@ -52,4 +52,12 @@ export const ItemLink = styled(Link)`
     fill: ${colors.white};
     margin-right: 0.5rem;
   }
+`
+
+export const ItemLink = styled(Link)`
+  ${linkMixin}
+`
+
+export const ExternalLink = styled.a`
+  ${linkMixin}
 `

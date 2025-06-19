@@ -12,9 +12,9 @@ content:
         email: contact@hubrise.com
         buttons:
           - button_label: Schedule a call
-            button_link: link
+            button_link: https://calendar.app.google/tJBYJ2X78qVgD6AR6
           - button_label: Send a message
-            button_link: link
+            popup_link: true
       - title: Support
         description: You need support connecting your apps, managing your product catalog or troubleshooting
         email: support@hubrise.com

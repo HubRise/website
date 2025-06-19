@@ -5,6 +5,7 @@ export interface IFooter {
       title: string
       icon?: string
       to: string
+      is_external?: boolean
     }>
   }>
   copyright_links: Array<{

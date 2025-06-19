@@ -13,7 +13,7 @@ hero:
     Connect your EPOS, online ordering, and inventory tools into one powerful platform.
   button_label: Create your account today
   apps:
-    - title: Points of sale
+    - title: Points of sales
       color: green
     - title: Delivery Platforms
       color: greenLight
@@ -219,7 +219,7 @@ content:
           - text: Ensure consistency across sales channels.
           - text: Scale product updates without extra effort.
         button_label: Explore Catalog Manager
-        button_link: a
+        button_link: /catalog-manager
       - title: Access automated reports on the HubRise Dashboard
         image: dashboard.png
         advantages:
@@ -230,7 +230,7 @@ content:
           - text: Share automated reports with your team.
           - text: Visualize KPIs in a clean, customizable dashboard.
         button_label: Discover the HubRise Dashboard
-        button_link: a
+        button_link: /dashboard
 
   partners:
     title: White Label for Resellers

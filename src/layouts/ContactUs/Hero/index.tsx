@@ -1,6 +1,7 @@
 import Button from "@components/Button"
 import Card from "@components/Card"
 import Icon from "@components/Icon"
+import { useLayoutContext } from "@components/LayoutContext"
 import PageHero from "@components/PageHero"
 import { iconSizes } from "@utils/styles"
 
@@ -14,7 +15,9 @@ interface HeroProps {
 }
 
 const Hero = ({ hero }: HeroProps): JSX.Element => {
+  const { forms } = useLayoutContext()
   const { title, cards } = hero
+
   return (
     <PageHero
       title={
@@ -35,16 +38,28 @@ const Hero = ({ hero }: HeroProps): JSX.Element => {
               <CardPart>
                 {buttons?.length && (
                   <Buttons>
-                    {buttons.map(({ button_label, button_link }, index) => {
-                      return (
-                        <Button
-                          type="link"
-                          label={button_label}
-                          link={button_link}
-                          key={index}
-                          icon={<Icon code="arrow_forward" size={iconSizes._25} />}
-                        />
-                      )
+                    {buttons.map(({ button_label, button_link, popup_link }, index) => {
+                      if (popup_link) {
+                        return (
+                          <Button
+                            type="link"
+                            label={button_label}
+                            key={index}
+                            icon={<Icon code="arrow_forward" size={iconSizes._25} />}
+                            onClick={forms.contact.toggle}
+                          />
+                        )
+                      } else {
+                        return (
+                          <Button
+                            type="link"
+                            label={button_label}
+                            link={button_link}
+                            key={index}
+                            icon={<Icon code="arrow_forward" size={iconSizes._25} />}
+                          />
+                        )
+                      }
                     })}
                   </Buttons>
                 )}

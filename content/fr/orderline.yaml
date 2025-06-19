@@ -31,8 +31,6 @@ content:
   features:
     title: OrderLine, your Free HubRise Order Management app.
     description: Centralise all orders in OrderLine and manage them effortlessly from a single user interface. Update order statuses, pause delivery platforms or adjust opening hours, and control product availability—all tailored to your workflow.
-    button_label: Find out more
-    button_link: link
     list:
       - title: Centralise all orders
         image: all-orders.png
