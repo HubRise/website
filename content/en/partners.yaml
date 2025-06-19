@@ -5,12 +5,6 @@ content:
   title: Join our Ecosystem
   description: Find an Expert. If you want to build a custom integration with HubRise, we have developers, agencies, and consultants that have already done it and could help
   partners:
-    - name: TYREX
-      site_url: http://ty-rex.fr
-      filename: tyrex.png
-      descriptions:
-        - "Développer web full-stack front/back end, graphiste et intégrateur web. Vincent utilise du HTML5, CSS3, BOOTSTRAP, LESS, et développe en PHP5 (objet) / MySQL. Il créé des sites clé en main sur-mesure ou via WordPress, avec interface d'administration"
-        - "Création d'une passerelle PHP couplée avec une intégration HTML / SASS permettant de faire communiquer un site internet (eg: Yoji Su) avec un système de caisse (eg: Nestor) via votre compte Hubrise : catalogue de produits, listing des clients et gestion des"
     - name: Crystal Mind
       site_url: https://www.crystal-mind.com
       filename: crystal-mind.png
