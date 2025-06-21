@@ -1,4 +1,4 @@
-import Block from "@components/Block"
+import ScreenContainer from "@components/ScreenContainer"
 import useTranslation from "@hooks/client/useTranslation"
 import { IntegrationsYaml } from "@layouts/Integrations/types"
 import { ContentImage } from "@utils/contentImage"
@@ -29,7 +29,7 @@ const AppGroup = ({ title, slug, apps, logoImages, additionalSections, hasSugges
   const { t } = useTranslation()
 
   return (
-    <Block backgroundColor="none" title={title} titleAnchor={slug}>
+    <ScreenContainer withHeader title={title} anchor={slug}>
       <Group>
         {apps.map((app, idx) => (
           <AppBoxLink key={idx} href={app.documentation || app.website || "#"} data-testid="apps:result">
@@ -56,7 +56,7 @@ const AppGroup = ({ title, slug, apps, logoImages, additionalSections, hasSugges
           </AppBoxStatic>
         )}
       </Group>
-    </Block>
+    </ScreenContainer>
   )
 }
 

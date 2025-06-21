@@ -61,3 +61,7 @@ export const Description = styled.div`
   text-align: center;
   margin: 1.25rem auto 0;
 `
+
+export const Anchor = styled.a`
+  ${mixin.clickable};
+`

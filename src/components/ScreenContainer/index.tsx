@@ -3,7 +3,7 @@ import { MDXRemote, type MDXRemoteSerializeResult } from "next-mdx-remote"
 import Button from "@components/Button"
 import Underline from "@components/Underline"
 
-import { Container, Description, HeaderWrapper, Title } from "./Styles"
+import { Anchor, Container, Description, HeaderWrapper, Title } from "./Styles"
 import { ScreenContainerBgColor, ScreenContainerVerticalPadding } from "./utils"
 
 interface ScreenContainerProps {
@@ -17,6 +17,7 @@ interface ScreenContainerProps {
   headerButtonLabel?: string
   headerButtonLink?: string
   withDivider?: boolean
+  anchor?: string
 }
 
 const ScreenContainer = ({
@@ -30,12 +31,13 @@ const ScreenContainer = ({
   headerButtonLabel = "",
   headerButtonLink = "",
   withDivider = true,
+  anchor = "",
 }: ScreenContainerProps) => (
   <Container $bgColor={bgColor} $vPadding={verticalPadding} $textCentered={isTextCentered}>
     {withHeader && (
       <>
         <HeaderWrapper>
-          {title && <Title $bgColor={bgColor}>{title}</Title>}
+          {title && <Title $bgColor={bgColor}>{anchor ? <Anchor href={`#${anchor}`}>{title}</Anchor> : title}</Title>}
 
           {descriptionMdx && (
             <Description>

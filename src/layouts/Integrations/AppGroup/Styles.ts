@@ -8,6 +8,7 @@ export const Group = styled.div`
   display: grid;
   grid-gap: 1.25rem;
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  ${mixin.containerWrapper}
   margin-top: 1rem;
 `
 export const AppLogo = styled.div`

@@ -36,7 +36,7 @@ export const TestimonialsWrapper = styled.div<{ $nbMobileDisplay: number }>`
       `}
   }
 
-  @media (min-width: ${breakpoints.large}) {
+  @media (min-width: ${breakpoints.extraLarge}) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
     ${StyledCard} {

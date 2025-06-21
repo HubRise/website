@@ -11,6 +11,7 @@ import Developer from "./Developer"
 import Hero from "./Hero"
 import Nav from "./Nav"
 import NoResults from "./NoResults"
+import { MainContent } from "./Styles"
 
 interface IntegrationsProps {
   language: Language
@@ -90,21 +91,23 @@ const Integrations = ({ language, yaml, logoImages }: IntegrationsProps): JSX.El
 
       <div id="apps-results" />
 
-      {filteredAppsByCategory.length > 0 ? (
-        filteredAppsByCategory.map(({ title, slug, apps, has_suggest_app }, idx) => (
-          <AppGroup
-            key={idx}
-            title={title}
-            slug={slug}
-            apps={apps}
-            logoImages={logoImages}
-            additionalSections={content.additional_sections}
-            hasSuggestApp={has_suggest_app && !hasFiltersApplied}
-          />
-        ))
-      ) : (
-        <NoResults />
-      )}
+      <MainContent>
+        {filteredAppsByCategory.length > 0 ? (
+          filteredAppsByCategory.map(({ title, slug, apps, has_suggest_app }, idx) => (
+            <AppGroup
+              key={idx}
+              title={title}
+              slug={slug}
+              apps={apps}
+              logoImages={logoImages}
+              additionalSections={content.additional_sections}
+              hasSuggestApp={has_suggest_app && !hasFiltersApplied}
+            />
+          ))
+        ) : (
+          <NoResults />
+        )}
+      </MainContent>
 
       <Developer developers={content.developers} />
     </>

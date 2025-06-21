@@ -10,7 +10,11 @@ export const Cards = styled.div`
   grid-template-columns: 1fr;
   gap: 1.25rem;
 
-  @media (min-width: ${breakpoints.large}) {
+  @media (min-width: ${breakpoints.medium}) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: ${breakpoints.extraLarge}) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
     ${StyledCard} {

@@ -275,6 +275,7 @@ content:
           description: Zelty is a complete suite of solutions designed for multi-site. Zelty is suitable for any type of restaurant from fast food to traditional catering.
     - title: Food Ordering Platforms
       slug: food-ordering-platforms
+      has_suggest_app: true
       apps:
         - website: https://delicity.com
           documentation: /apps/delicity
@@ -385,6 +386,7 @@ content:
           description: Uber Eats is an online food ordering and delivery platform for local restaurants. Customers can order food online or via a mobile app. Available in 45 markets and 6,000 cities.
     - title: Online Ordering
       slug: online-ordering
+      has_suggest_app: true
       apps:
         - website: https://www.app4.co.uk
           documentation: /apps/app4
@@ -585,6 +587,7 @@ content:
           additional_info:
     - title: Delivery Management
       slug: delivery-management
+      has_suggest_app: true
       apps:
         - website: https://biteberry.com
           documentation: /apps/biteberry
@@ -660,6 +663,7 @@ content:
           description: Uber Direct is a white-label delivery service offered by Uber. It allows businesses to send products or packages to their customers by leveraging Uber Eats' extensive driver network
     - title: Loyalty and Marketing
       slug: loyalty-and-marketing
+      has_suggest_app: true
       apps:
         - website: https://www.como.com
           documentation: /apps/como
@@ -706,6 +710,7 @@ content:
           description: UPXP is the first cryptocurrency dedicated to restaurateurs. UPXP rewards customers with cryptocurrency they can use in other businesses. Engage clients and avoid paying commissions to banks and third-parties.
     - title: Operations and Inventory
       slug: operations-and-inventory
+      has_suggest_app: true
       apps:
         - website: https://get.apicbase.com
           documentation: /apps/apicbase
@@ -767,6 +772,7 @@ content:
           description: StockTake Online is an inventory management system designed for restaurants, bars, nightclubs, and more. It helps organise operations by simplifying purchasing, minimising waste, and enhancing profitability.
     - title: Other Apps
       slug: other-apps
+      has_suggest_app: true
       apps:
         - website:
           documentation: /apps/catalog-manager
