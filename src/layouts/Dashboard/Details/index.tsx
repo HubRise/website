@@ -64,15 +64,15 @@ const Details = ({ title, content_blocks }: DetailsProps): JSX.Element => {
 
   useEffect(() => {
     if (detailsContainerRef.current) {
-      if (scrollYOffset <= detailsContainerRef.current?.offsetTop) {
+      if (scrollYOffset <= detailsContainerRef.current?.offsetTop - 150) {
         setProgress(0)
       } else if (
-        scrollYOffset >= detailsContainerRef.current?.offsetTop &&
+        scrollYOffset >= detailsContainerRef.current?.offsetTop - 150 &&
         scrollYOffset <= detailsContainerRef.current?.offsetTop + detailsContainerRef.current?.clientHeight
       ) {
         setProgress(
           Math.ceil(
-            ((scrollYOffset - detailsContainerRef.current?.offsetTop + 150) /
+            ((scrollYOffset - detailsContainerRef.current?.offsetTop + 200) /
               detailsContainerRef.current?.clientHeight) *
               100,
           ),

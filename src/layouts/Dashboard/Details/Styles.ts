@@ -136,6 +136,19 @@ export const ProgressBar = styled.div<{ $progress: number }>`
   transition: all 0.2s;
   position: relative;
 
+  &::after {
+    content: "";
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: -0.375rem;
+    background-color: ${colors.primary};
+    border-radius: 100%;
+    filter: blur(0.75rem);
+  }
+
   &::before {
     content: "";
     display: block;
