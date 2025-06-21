@@ -1,21 +1,41 @@
 import styled from "styled-components"
 
 import { StyledBreadcrumbs } from "@components/Breadcrumbs/Styles"
-import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const Container = styled.div`
   background-color: ${colors.backgroundWhite};
-  padding: 3.5rem 1rem;
-  margin-bottom: -3.5rem;
-  text-align: center;
+`
+
+export const Content = styled.div`
+  ${mixin.containerWrapper}
+  min-height: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 
   ${StyledBreadcrumbs} {
-    margin: 0 auto;
-    width: fit-content;
+    margin: 0;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0;
   }
 
   @media (min-width: ${breakpoints.large}) {
-    padding: 5rem;
+    min-height: 21rem;
+  }
+
+  @media (min-width: ${breakpoints.extraLarge}) {
+    ${StyledBreadcrumbs} {
+      left: 10rem;
+    }
+  }
+
+  @media (min-width: ${breakpoints.biggest}) {
+    ${StyledBreadcrumbs} {
+      left: 22rem;
+    }
   }
 `
 
@@ -24,7 +44,6 @@ export const Title = styled.h1`
   font-weight: 600;
   color: ${colors.textDarkest};
   text-transform: capitalize;
-  margin-top: 1rem;
 
   @media (min-width: ${breakpoints.large}) {
     ${fontSizeMixins.fontSizeDisplayXl}

@@ -1,10 +1,9 @@
 import * as React from "react"
 
 import Breadcrumbs from "@components/Breadcrumbs"
-import Underline from "@components/Underline"
 import { DocLink } from "@utils/DocIndexer/types"
 
-import { Container, Title } from "./Styles"
+import { Container, Content, Title } from "./Styles"
 
 interface HeroProps {
   breadcrumbs: Array<DocLink>
@@ -14,9 +13,10 @@ interface HeroProps {
 const Hero = ({ breadcrumbs, title }: HeroProps): JSX.Element => {
   return (
     <Container>
-      <Breadcrumbs breadcrumbs={breadcrumbs} />
-      <Underline position="center" />
-      <Title>{title}</Title>
+      <Content>
+        <Title>{title}</Title>
+        <Breadcrumbs breadcrumbs={breadcrumbs} />
+      </Content>
     </Container>
   )
 }

@@ -8,7 +8,7 @@ const gap = "1rem"
 
 export const Page = styled.div`
   max-width: ${sizes.maxWidth};
-  margin: ${sizes.blockVerticalPadding} auto;
+  margin: 1rem auto;
 
   @media (min-width: ${breakpoints.large}) {
     display: grid;
