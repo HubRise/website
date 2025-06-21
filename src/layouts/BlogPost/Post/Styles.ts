@@ -39,16 +39,10 @@ export const BannerImage = styled(Image)`
   margin-top: 1.25rem;
   margin-bottom: 3.5rem;
   width: 100%;
-  max-height: 300px;
 
   @media (min-width: ${breakpoints.large}) {
-    max-height: 720px;
     margin-top: 2.75rem;
     margin-bottom: 5.5rem;
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    max-height: 850px;
   }
 `
 
