@@ -31,7 +31,7 @@ content:
         - text: Epos integration
         - text: Other integrations, see our
           link_label: Integrations page
-          link: /link
+          link: /apps
         - text: Order management
         - text: Menu Management
         - text: Business Analytics
@@ -41,14 +41,14 @@ content:
         - text: Opening hours Management
         - text: Multi-location Support, see
           link_label: special pricing
-          link: /link
+          link: /pricing#special-pricing
     additional_features:
       title: Additional Features
       description: Features available at an additional cost, with HubRise or one of HubRise +100 integrated partners
       list:
         - text: Connection of virtual brands, see
           link_label: special pricing
-          link: /link
+          link: /pricing#special-pricing
         - text: Kitchen Display Screen
         - text: Kiosks
         - text: Online Ordering

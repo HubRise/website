@@ -44,7 +44,6 @@ export const MainContant = styled.div`
 
 export const SecondaryContent = styled.div`
   grid-area: secondary;
-  overflow: hidden;
 
   img {
     transition: all 0.3s ease-in-out;
@@ -100,7 +99,7 @@ export const Content = styled.div<{ $secondaryPosition: SidePosition; $contentFi
             ${SecondaryContent} {
               img {
                 &:hover {
-                  transform: scale(1.1) translateX(-30px);
+                  transform: scale(1.1) translateX(-15px);
                 }
               }
             }
@@ -112,7 +111,7 @@ export const Content = styled.div<{ $secondaryPosition: SidePosition; $contentFi
             ${SecondaryContent} {
               img {
                 &:hover {
-                  transform: scale(1.1) translateX(30px);
+                  transform: scale(1.1) translateX(15px);
                 }
               }
             }

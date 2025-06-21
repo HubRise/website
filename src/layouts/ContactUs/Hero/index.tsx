@@ -8,7 +8,7 @@ import { iconSizes } from "@utils/styles"
 import { CardText, CardTitle } from "../shared/Styles"
 import { THero } from "../types"
 
-import { Cards, CardPart, Email, Buttons } from "./Styles"
+import { Cards, CardPart, Email, Buttons, ExternalLink } from "./Styles"
 
 interface HeroProps {
   hero: THero
@@ -51,13 +51,10 @@ const Hero = ({ hero }: HeroProps): JSX.Element => {
                         )
                       } else {
                         return (
-                          <Button
-                            type="link"
-                            label={button_label}
-                            link={button_link}
-                            key={index}
-                            icon={<Icon code="arrow_forward" size={iconSizes._25} />}
-                          />
+                          <ExternalLink href={button_link} key={index} target="_blank">
+                            {button_label}
+                            <Icon code="arrow_forward" size={iconSizes._25} />
+                          </ExternalLink>
                         )
                       }
                     })}

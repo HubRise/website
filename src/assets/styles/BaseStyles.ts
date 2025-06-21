@@ -5,6 +5,7 @@ import { colors, lineHeights, sizes } from "@utils/styles"
 export const BaseStyles = createGlobalStyle`
   html {
     scroll-padding-top: ${sizes.headerHeight};
+    scroll-behavior: smooth;
   }
 
   body {

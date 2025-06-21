@@ -21,6 +21,24 @@ export const MapContainer = styled.div`
       z-index: 1;
     }
   }
+
+  @media (min-width: ${breakpoints.biggest}) {
+    ${StyledCard} {
+      right: 20rem;
+    }
+  }
+
+  @media (min-width: 2048px) {
+    ${StyledCard} {
+      right: 30rem;
+    }
+  }
+
+  @media (min-width: 2560px) {
+    ${StyledCard} {
+      right: 70rem;
+    }
+  }
 `
 
 export const MapWrapper = styled.div`

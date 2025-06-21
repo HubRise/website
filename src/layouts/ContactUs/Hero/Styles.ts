@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { StyledButton } from "@components/Button/Styles"
+import { buttonStyles, StyledButton } from "@components/Button/Styles"
 import { StyledCard } from "@components/Card/Styles"
 import { breakpoints, mixin } from "@utils/styles"
 
@@ -25,7 +25,6 @@ export const CardPart = styled.div``
 export const Buttons = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   gap: 1rem;
   margin-top: 2rem;
   margin-bottom: 0.625rem;
@@ -41,4 +40,12 @@ export const Buttons = styled.div`
 
 export const Email = styled.a`
   ${mixin.link}
+`
+
+export const ExternalLink = styled.a`
+  ${buttonStyles}
+
+  span {
+    margin-left: 0.625rem;
+  }
 `
