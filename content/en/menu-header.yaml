@@ -54,7 +54,10 @@
           link_description: Real customer and integrated partner feedback.
         - link_label: Contact Us
           link: /contact-us
-          link_description: Get in touch with our team
+          link_description: Get in touch with our team.
+        - link_label: Changelog
+          link: /changelog
+          link_description: View the latest integrations, API improvements, and fixes for on HubRise.
         - link_label: Hire an Expert
           link: /partners
           link_description: Connect with an experienced partner for tailored development.
