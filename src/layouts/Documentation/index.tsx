@@ -2,6 +2,7 @@
 
 import * as React from "react"
 
+import Breadcrumbs from "@components/Breadcrumbs"
 import DocumentationContainer from "@components/DocumentationContainer"
 import DocumentationWrapper from "@components/DocumentationWrapper"
 import useTranslation from "@hooks/client/useTranslation"
@@ -39,9 +40,10 @@ const Documentation = ({
 
   return (
     <DocumentationWrapper contentImages={contentImages} title={[folder.name, mdFile.frontMatter.title].join(" - ")}>
-      <Hero breadcrumbs={mdFile.breadcrumbs} title={folder.name} />
+      <Hero title={folder.name} />
 
       <Page>
+        <Breadcrumbs breadcrumbs={mdFile.breadcrumbs} />
         {mdFile.copyFromLanguage && <Warning>{t("documentation.language_warning." + mdFile.copyFromLanguage)}</Warning>}
 
         {logoImage && (

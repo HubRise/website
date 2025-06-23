@@ -36,14 +36,8 @@ export const Title = styled.h1`
 `
 
 export const BannerImage = styled(Image)`
-  margin-top: 1.25rem;
   margin-bottom: 3.5rem;
   width: 100%;
-
-  @media (min-width: ${breakpoints.large}) {
-    margin-top: 2.75rem;
-    margin-bottom: 5.5rem;
-  }
 `
 
 export const Content = styled.div`

@@ -242,11 +242,13 @@ content:
     image: white-label.gif
 
   testimonials:
-    - 0
-    - 1
-    - 2
-    - 3
-    - 4
-    - 5
-    - 6
-    - 7
+    link: /testimonials
+    list:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7

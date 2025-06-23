@@ -59,6 +59,12 @@ export const DropdownMenu = styled.div<{ $position: TPosition }>`
       left: 50%;
       transform: translate(-50%, 0);
     `}
+  
+  ${({ $position }) =>
+    $position === "bigMenu" &&
+    css`
+      transform: translate(-62%, 0);
+    `}
 `
 
 export const DropdownList = styled.ul`

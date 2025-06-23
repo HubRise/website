@@ -19,7 +19,7 @@ export type TDropdownOption = {
   link: string
 }
 
-export type TPosition = "left" | "center"
+export type TPosition = "left" | "center" | "bigMenu"
 
 interface DropdownProps {
   value: string

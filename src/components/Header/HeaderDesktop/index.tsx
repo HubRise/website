@@ -53,7 +53,7 @@ const HeaderDesktop = ({ languagePaths, menuItems }: HeaderDesktopProps): JSX.El
                         {content.resources && <Resources resources={content?.resources} />}
                       </>
                     }
-                    position={content.resources ? "center" : "left"}
+                    position={content.resources ? "bigMenu" : "left"}
                   />
                 ) : (
                   <MenuItem $isActive={isActive}>

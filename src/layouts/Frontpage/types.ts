@@ -82,6 +82,9 @@ export interface FrontpageYaml {
       button_link: string
       image: string
     }
-    testimonials: Array<number>
+    testimonials: {
+      link: string
+      list: Array<number>
+    }
   }
 }

@@ -52,7 +52,8 @@ const Frontpage = ({
       <TestimonialsBlock
         title={testimonials.content.block_title}
         testimonials={testimonials.content.testimonials}
-        idXToDisplay={content.testimonials}
+        idXToDisplay={content.testimonials.list}
+        link={content.testimonials.link}
         nbToDisplayOnMobile={2}
         testimonialLogoMap={testimonialLogoMap}
       />

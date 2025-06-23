@@ -5,7 +5,7 @@ import ScreenContainer from "@components/ScreenContainer"
 import { TTestimonial } from "@layouts/Testimonials/types"
 import { ContentImageMap } from "@utils/contentImage"
 
-import { TestimonialsWrapper, Name, JobTitle, Text, LogoImage } from "./Styles"
+import { TestimonialsWrapper, Name, JobTitle, Text, LogoImage, CardLink } from "./Styles"
 
 interface TestimonialsProps {
   title: string
@@ -13,6 +13,7 @@ interface TestimonialsProps {
   idXToDisplay: Array<number>
   nbToDisplayOnMobile?: number
   testimonialLogoMap: ContentImageMap
+  link: string
 }
 
 const TestimonialsBlock = ({
@@ -21,6 +22,7 @@ const TestimonialsBlock = ({
   idXToDisplay,
   nbToDisplayOnMobile = 4,
   testimonialLogoMap,
+  link,
 }: TestimonialsProps) => {
   return (
     <ScreenContainer withHeader title={title}>
@@ -29,18 +31,20 @@ const TestimonialsBlock = ({
           .filter((testimonial) => idXToDisplay.includes(testimonial.id))
           .map((testimonial, index) => {
             return (
-              <Card key={index}>
-                <Image src="/images/quote-green.svg" alt="Quote" width={62} height={44} />
-                <Name>{`- ${testimonial.person_details.name}`}</Name>
-                <JobTitle>{testimonial.person_details.job_title}</JobTitle>
-                <Text>{testimonial.quote}</Text>
-                {testimonialLogoMap[testimonial.person_details.logo] && (
-                  <LogoImage
-                    {...testimonialLogoMap[testimonial.person_details.logo]}
-                    alt={testimonial.person_details.logo.substring(0, testimonial.person_details.logo.length - 4)}
-                  />
-                )}
-              </Card>
+              <CardLink key={index} href={link}>
+                <Card>
+                  <Image src="/images/quote-green.svg" alt="Quote" width={62} height={44} />
+                  <Name>{`- ${testimonial.person_details.name}`}</Name>
+                  <JobTitle>{testimonial.person_details.job_title}</JobTitle>
+                  <Text>{testimonial.quote}</Text>
+                  {testimonialLogoMap[testimonial.person_details.logo] && (
+                    <LogoImage
+                      {...testimonialLogoMap[testimonial.person_details.logo]}
+                      alt={testimonial.person_details.logo.substring(0, testimonial.person_details.logo.length - 4)}
+                    />
+                  )}
+                </Card>
+              </CardLink>
             )
           })}
       </TestimonialsWrapper>

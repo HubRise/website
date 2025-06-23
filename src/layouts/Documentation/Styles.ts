@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import styled from "styled-components"
 
+import { StyledBreadcrumbs } from "@components/Breadcrumbs/Styles"
 import { breakpoints, colors, mixin, sizes, zIndexValues } from "@utils/styles"
 
 const gap = "1rem"
@@ -9,6 +10,7 @@ const gap = "1rem"
 export const Page = styled.div`
   max-width: ${sizes.maxWidth};
   margin: 1rem auto;
+  position: relative;
 
   @media (min-width: ${breakpoints.large}) {
     display: grid;
@@ -17,6 +19,13 @@ export const Page = styled.div`
     grid-template-columns: 75% 25%;
     grid-template-areas: "warning warning" "main logo" "main navigation";
     grid-template-rows: min-content min-content 1fr;
+  }
+
+  ${StyledBreadcrumbs} {
+    margin: 0;
+    position: absolute;
+    top: -3.25rem;
+    width: -webkit-fill-available;
   }
 `
 

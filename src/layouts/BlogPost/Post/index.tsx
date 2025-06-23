@@ -33,10 +33,11 @@ const Post = ({ mdFile, mdFiles, bannerImage, children }: PostProps): JSX.Elemen
 
       <DateAndAuthor frontMatter={frontMatter} />
 
-      {bannerImage && <BannerImage {...bannerImage} alt={mdFile.frontMatter.title} />}
-
       <Content>
-        <DocumentationContainer>{children}</DocumentationContainer>
+        <DocumentationContainer>
+          {bannerImage && <BannerImage {...bannerImage} alt={mdFile.frontMatter.title} />}
+          {children}
+        </DocumentationContainer>
         <SideBar
           otherPosts={mdFiles
             .filter((post) => post.uri !== locationPathname)

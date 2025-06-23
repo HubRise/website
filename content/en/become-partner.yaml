@@ -81,10 +81,12 @@ content:
     - number: 95%
       title: API calls under 100ms
   testimonials:
-    - 0
-    - 1
-    - 2
-    - 3
+    link: /testimonials
+    list:
+      - 0
+      - 1
+      - 2
+      - 3
   action_block:
     title: Partner With HubRise and expand your software capabilities
     buttons:

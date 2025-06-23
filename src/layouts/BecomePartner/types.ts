@@ -59,7 +59,10 @@ export interface BecomePartnerYaml {
     middleware: TMiddleware
     apps: TApps
     metrics: Array<TMetric>
-    testimonials: Array<number>
+    testimonials: {
+      link: string
+      list: Array<number>
+    }
     action_block: TActionBlock
   }
 }

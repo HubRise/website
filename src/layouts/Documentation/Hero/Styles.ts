@@ -1,6 +1,5 @@
 import styled from "styled-components"
 
-import { StyledBreadcrumbs } from "@components/Breadcrumbs/Styles"
 import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const Container = styled.div`
@@ -15,27 +14,8 @@ export const Content = styled.div`
   justify-content: center;
   position: relative;
 
-  ${StyledBreadcrumbs} {
-    margin: 0;
-    position: absolute;
-    bottom: 0.5rem;
-    left: 0;
-  }
-
   @media (min-width: ${breakpoints.large}) {
     min-height: 21rem;
-  }
-
-  @media (min-width: ${breakpoints.extraLarge}) {
-    ${StyledBreadcrumbs} {
-      left: 10rem;
-    }
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${StyledBreadcrumbs} {
-      left: 22rem;
-    }
   }
 `
 
