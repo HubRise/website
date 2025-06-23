@@ -63,6 +63,11 @@ These are typically associated with specific ref codes in your EPOS, which you c
 
 ## Order Times
 
+Just Eat pushes orders to HubRise when a courier is assigned, or when the courier is the store’s preparation-time away.
+
+- You can adjust the preparation time per store directly in the Just Eat portal.
+- If you want Just Eat to push orders to HubRise as soon as they are placed, contact us at support@hubrise.com.
+
 For restaurant delivery orders, Just Eat provides the time the customer expects the order to be delivered. For other types of orders, it provides the time the order should be ready for pickup, either by the customer or a delivery rider. In both scenarios, this time is transmitted to HubRise as the `expected_time` field. This time cannot be changed by the EPOS.
 
 ## Customer Details
