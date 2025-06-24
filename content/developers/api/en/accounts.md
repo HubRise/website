@@ -127,7 +127,7 @@ The `order_acceptance` object has the following fields:
 | `mode`                                | `online` \| `busy` \| `paused`                           | Current acceptance mode.                                                                                                                        |
 | `resume_at` <Label type="optional" /> | [Time](/developers/api/general-concepts#dates-and-times) | Timestamp at which `mode` automatically reverts to `online`, when mode is `busy` or `paused`. If `null`, the location must be updated manually. |
 | `extra_preparation_time`              | integer                                                  | Additional minutes added to `preparation_time`, when mode is `busy`.                                                                            |
-| `reason` <Label type="optional" />    | string (max 255)                                         | Free-text explanation shown to customers, when mode is `paused`.                                                                                |
+| `reason` <Label type="optional" />    | string                                                   | Free-text explanation shown to customers, when mode is `paused`.                                                                                |
 
 ### 1.2 Update Location
 
@@ -144,17 +144,19 @@ The following fields can be updated: `cutoff_time`, `opening_hours`, `preparatio
 If the `order_acceptance` object is provided, it must match one of the following templates:
 
 ```jsonc
-// 1. Accepting orders normally
-{ "mode": "online" }
+// Accepting orders normally
+{
+  "mode": "online"
+}
 
-// 2. Busy — accepting with delay
+// Accepting with delay
 {
   "mode": "busy",
   "resume_at": <ISO-8601 timestamp>    // optional
   "extra_preparation_time": <integer>, // required
 }
 
-// 3. Paused — not accepting orders
+// Not accepting orders
 {
   "mode": "paused",
   "resume_at": <ISO-8601 timestamp>,   // optional
