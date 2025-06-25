@@ -5,13 +5,20 @@ export interface TestimonialsYaml {
   }
   content: {
     title: string
+    block_title: string
     description: string
-    testimonials: Array<Testimonial>
+    testimonials: Array<TTestimonial>
   }
 }
 
-export interface Testimonial {
+export interface TTestimonial {
   quote: string
-  person_details: Array<string>
+  id: number
+  person_details: {
+    name: string
+    job_title: string
+    company: string
+    logo: string
+  }
   filename: string
 }

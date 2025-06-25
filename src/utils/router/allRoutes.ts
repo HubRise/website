@@ -1,13 +1,19 @@
-import { AppsYaml } from "@layouts/Apps/types"
+import { GetInTouchYaml } from "@components/GetInTouch/types"
+import { BecomePartnerYaml } from "@layouts/BecomePartner/types"
+import { BrandingYaml } from "@layouts/Branding/types"
+import { CatalogManagerYaml } from "@layouts/CatalogManager/types"
+import { ContactUsYaml } from "@layouts/ContactUs/types"
+import { DashboardYaml } from "@layouts/Dashboard/types"
 import { DocumentationIndexYaml } from "@layouts/DocumentationIndex/types"
-import { DocumentationSimpleFrontMatter } from "@layouts/DocumentationSimple/types"
+import { FAQsYaml } from "@layouts/FAQs/types"
 import { FrontpageYaml } from "@layouts/Frontpage/types"
+import { IntegrationsYaml } from "@layouts/Integrations/types"
+import { OrderlineYaml } from "@layouts/Orderline/types"
 import { PartnersYaml } from "@layouts/Partners/types"
 import { PricingYaml } from "@layouts/Pricing/types"
 import { TestimonialsYaml } from "@layouts/Testimonials/types"
-import { BlogArchives } from "@utils/BlogIndexer/types"
 import DocIndexer, { Folder } from "@utils/DocIndexer"
-import { ContentDirName, readMdFile, readYamlFile } from "@utils/files"
+import { ContentDirName, readYamlFile } from "@utils/files"
 
 import BlogIndexer from "../BlogIndexer"
 import { Href } from "../DocIndexer/types"
@@ -30,24 +36,34 @@ const staticRoutes = async (): Promise<Routes> => {
   // eslint-disable-next-line max-len
   // prettier-ignore
   return [
-    createRoute({ href: "/", language: "en", name: "frontpage", layout: "frontpage", context: { yaml: await readYamlFile<FrontpageYaml>("/en", "frontpage") } }),
-    createRoute({ href: "/apps", language: "en", name: "apps", layout: "apps", context: { yaml: await readYamlFile<AppsYaml>("/en", "apps") } }),
+    createRoute({ href: "/", language: "en", name: "frontpage", layout: "frontpage", context: { yaml: await readYamlFile<FrontpageYaml>("/en", "frontpage") }, testimonials: { yaml: await readYamlFile<TestimonialsYaml>("/en", "testimonials") } }),
+    createRoute({ href: "/apps", language: "en", name: "apps", layout: "apps", context: { yaml: await readYamlFile<IntegrationsYaml>("/en", "apps") } }),
     createRoute({ href: "/pricing", language: "en", name: "pricing", layout: "pricing", context: { yaml: await readYamlFile<PricingYaml>("/en", "pricing") } }),
     createRoute({ href: "/developers", language: "en", name: "developers", layout: "documentation-index", context: { yaml: await readYamlFile<DocumentationIndexYaml>("/en", "developers") } }),
-    createRoute({ href: "/faqs", language: "en", name: "faqs", layout: "documentation-simple", context: await readMdFile<DocumentationSimpleFrontMatter>("/en", "faqs") }),
-    createRoute({ href: "/branding", language: "en", name: "branding", layout: "documentation-simple", context: await readMdFile<DocumentationSimpleFrontMatter>("/en", "branding") }),
+    createRoute({ href: "/faqs", language: "en", name: "faqs", layout: "faqs", context: { yaml: await readYamlFile<FAQsYaml>("/en", "faqs") }, getInTouch: { yaml: await readYamlFile<GetInTouchYaml>("/en", "get-in-touch") } }),
+    createRoute({ href: "/become-partner", language: "en", name: "become-partner", layout: "become-partner", context: { yaml: await readYamlFile<BecomePartnerYaml>("/en", "become-partner") }, getInTouch: { yaml: await readYamlFile<GetInTouchYaml>("/en", "get-in-touch") }, testimonials: { yaml: await readYamlFile<TestimonialsYaml>("/en", "testimonials") } }),
+    createRoute({ href: "/branding", language: "en", name: "branding", layout: "branding", context: { yaml: await readYamlFile<BrandingYaml>("/en", "branding") }}),
+    createRoute({ href: "/catalog-manager", language: "en", name: "catalog-manager", layout: "catalog-manager", context: { yaml: await readYamlFile<CatalogManagerYaml>("/en", "catalog-manager") }, getInTouch: { yaml: await readYamlFile<GetInTouchYaml>("/en", "get-in-touch") } }),
+    createRoute({ href: "/dashboard", language: "en", name: "dashboard", layout: "dashboard", context: { yaml: await readYamlFile<DashboardYaml>("/en", "dashboard") }, getInTouch: { yaml: await readYamlFile<GetInTouchYaml>("/en", "get-in-touch") } }),
     createRoute({ href: "/contributing", language: "en", name: "contributing", layout: "documentation-index", context: { yaml: await readYamlFile<DocumentationIndexYaml>("/en", "contributing") } }),
     createRoute({ href: "/testimonials", language: "en", name: "testimonials", layout: "testimonials", context: { yaml: await readYamlFile<TestimonialsYaml>("/en", "testimonials") } }),
     createRoute({ href: "/partners", language: "en", name: "partners", layout: "partners", context: { yaml: await readYamlFile<PartnersYaml>("/en", "partners") } }),
-    createRoute({ href: "/fr", language: "fr", name: "frontpage", layout: "frontpage", context: { yaml: await readYamlFile<FrontpageYaml>("/fr", "frontpage") } }),
-    createRoute({ href: "/fr/apps", language: "fr", name: "apps", layout: "apps", context: { yaml: await readYamlFile<AppsYaml>("/fr", "apps") } }),
+    createRoute({ href: "/contact-us", language: "en", name: "contact-us", layout: "contact-us", context: { yaml: await readYamlFile<ContactUsYaml>("/en", "contact-us") } }),
+    createRoute({ href: "/orderline", language: "en", name: "orderline", layout: "orderline", context: { yaml: await readYamlFile<OrderlineYaml>("/en", "orderline") }, getInTouch: { yaml: await readYamlFile<GetInTouchYaml>("/en", "get-in-touch") } }),
+    createRoute({ href: "/fr", language: "fr", name: "frontpage", layout: "frontpage", context: { yaml: await readYamlFile<FrontpageYaml>("/fr", "frontpage") }, testimonials: { yaml: await readYamlFile<TestimonialsYaml>("/fr", "testimonials") } }),
+    createRoute({ href: "/fr/apps", language: "fr", name: "apps", layout: "apps", context: { yaml: await readYamlFile<IntegrationsYaml>("/fr", "apps") } }),
     createRoute({ href: "/fr/tarifs", language: "fr", name: "pricing", layout: "pricing", context: { yaml: await readYamlFile<PricingYaml>("/fr", "pricing") } }),
     createRoute({ href: "/fr/developers", language: "fr", name: "developers", layout: "documentation-index", context: { yaml: await readYamlFile<DocumentationIndexYaml>("/fr", "developers") } }),
-    createRoute({ href: "/fr/faqs", language: "fr", name: "faqs", layout: "documentation-simple", context: await readMdFile<DocumentationSimpleFrontMatter>("/fr", "faqs") }),
-    createRoute({ href: "/fr/marque", language: "fr", name: "branding", layout: "documentation-simple", context: await readMdFile<DocumentationSimpleFrontMatter>("/fr", "branding") }),
+    createRoute({ href: "/fr/faqs", language: "fr", name: "faqs", layout: "faqs", context: { yaml: await readYamlFile<FAQsYaml>("/fr", "faqs") }, getInTouch: { yaml: await readYamlFile<GetInTouchYaml>("/fr", "get-in-touch") } }),
+    createRoute({ href: "/fr/become-partner", language: "fr", name: "become-partner", layout: "become-partner", context: { yaml: await readYamlFile<BecomePartnerYaml>("/fr", "become-partner") }, getInTouch: { yaml: await readYamlFile<GetInTouchYaml>("/fr", "get-in-touch") }, testimonials: { yaml: await readYamlFile<TestimonialsYaml>("/fr", "testimonials") } }),
+    createRoute({ href: "/fr/marque", language: "fr", name: "branding", layout: "branding", context: { yaml: await readYamlFile<BrandingYaml>("/fr", "branding") } }),
+    createRoute({ href: "/fr/catalog-manager", language: "fr", name: "catalog-manager", layout: "catalog-manager", context: { yaml: await readYamlFile<CatalogManagerYaml>("/fr", "catalog-manager") }, getInTouch: { yaml: await readYamlFile<GetInTouchYaml>("/fr", "get-in-touch") } }),
+    createRoute({ href: "/fr/dashboard", language: "fr", name: "dashboard", layout: "dashboard", context: { yaml: await readYamlFile<DashboardYaml>("/fr", "dashboard") }, getInTouch: { yaml: await readYamlFile<GetInTouchYaml>("/fr", "get-in-touch") } }),
     createRoute({ href: "/fr/contribuer", language: "fr", name: "contributing", layout: "documentation-index", context: { yaml: await readYamlFile<DocumentationIndexYaml>("/fr", "contributing") } }),
     createRoute({ href: "/fr/temoignages", language: "fr", name: "testimonials", layout: "testimonials", context: { yaml: await readYamlFile<TestimonialsYaml>("/fr", "testimonials") } }),
     createRoute({ href: "/fr/partenaires", language: "fr", name: "partners", layout: "partners", context: { yaml: await readYamlFile<PartnersYaml>("/fr", "partners") } }),
+    createRoute({ href: "/fr/contact-us", language: "fr", name: "contact-us", layout: "contact-us", context: { yaml: await readYamlFile<ContactUsYaml>("/fr", "contact-us") } }),
+    createRoute({ href: "/fr/orderline", language: "fr", name: "orderline", layout: "orderline", context: { yaml: await readYamlFile<OrderlineYaml>("/fr", "orderline") }, getInTouch: { yaml: await readYamlFile<GetInTouchYaml>("/fr", "get-in-touch") } }),
   ]
 }
 
@@ -61,9 +77,6 @@ const blogRoutes = async (contentDirName: ContentDirName): Promise<Routes> => {
     if (!mdFiles) continue
 
     const mainBlogUri: Href = language === defaultLanguage ? "/blog" : `/${language}/blog`
-    const archives: BlogArchives = {
-      years: indexer.allYears(language).map((year) => ({ year, uri: `${mainBlogUri}/${year}` })),
-    }
 
     routes.push(
       createRoute({
@@ -71,7 +84,7 @@ const blogRoutes = async (contentDirName: ContentDirName): Promise<Routes> => {
         language,
         name: "blog",
         layout: "blog-index",
-        context: { mdFiles: indexer.allMdFiles(language), archives },
+        context: { mdFiles: indexer.allMdFiles(language) },
       }),
     )
 
@@ -83,7 +96,7 @@ const blogRoutes = async (contentDirName: ContentDirName): Promise<Routes> => {
           name: "blog_archive",
           params: { year: year },
           layout: "blog-index",
-          context: { mdFiles: indexer.mdFilesByYear(language, year), archives },
+          context: { mdFiles: indexer.mdFilesByYear(language, year) },
         }),
       )
     })
@@ -96,7 +109,7 @@ const blogRoutes = async (contentDirName: ContentDirName): Promise<Routes> => {
           name: "blog_post",
           params: { contentDirName: mdFile.contentDirName, basename: mdFile.baseName },
           layout: "blog-post",
-          context: { mdFile, archives },
+          context: { mdFile, mdFiles: indexer.allMdFiles(language) },
         }),
       )
     }

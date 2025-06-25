@@ -9,7 +9,7 @@ meta:
 excerpt: "Communiqué de presse : HubRise accélère la transition numérique pour les commerçants et les restaurateurs en ère post-COVID, en simplifiant l'intégration avec plus de 70 applications tierces."
 ---
 
-**Contraints d'accélérer leur transformation digitale pendant la crise, les commerçants et les restaurateurs utilisent aujourd'hui de plus en plus d'applications. A l'heure de la réouverture, il faut optimiser les opérations, pour éviter les écrans multiples, les saisies manuelles, les imports/exports et les copier/coller. Un défi auquel permet de répondre HubRise, une innovation née à Sophia-Antipolis et qui permet de connecter facilement plus de 70 applications tierces entre elles, offrant ainsi aux commerçants un environnement digital et des outils jusque-là réservés aux grands groupes.**
+_Contraints d'accélérer leur transformation digitale pendant la crise, les commerçants et les restaurateurs utilisent aujourd'hui de plus en plus d'applications. A l'heure de la réouverture, il faut optimiser les opérations, pour éviter les écrans multiples, les saisies manuelles, les imports/exports et les copier/coller. Un défi auquel permet de répondre HubRise, une innovation née à Sophia-Antipolis et qui permet de connecter facilement plus de 70 applications tierces entre elles, offrant ainsi aux commerçants un environnement digital et des outils jusque-là réservés aux grands groupes._
 
 ## Les commerces et les restaurants doivent s'adapter à un monde “post-COVID” plus digitalisé et plus connecté
 

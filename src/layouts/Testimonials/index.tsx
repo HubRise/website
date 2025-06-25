@@ -1,9 +1,11 @@
 "use client"
 
-import Block from "@components/Block"
+import PageHero from "@components/PageHero"
+import ScreenContainer from "@components/ScreenContainer"
 import Testimonial from "@layouts/Testimonials/Testimonial"
 import { ContentImageMap } from "@utils/contentImage"
 
+import { TestimonialCards } from "./Styles"
 import type { TestimonialsYaml } from "./types"
 
 interface TestimonialsProps {
@@ -16,19 +18,15 @@ const Testimonials = ({ yaml, imageMap }: TestimonialsProps) => {
 
   return (
     <>
-      <Block
-        backgroundColor="white"
-        verticalSpacing="small"
-        padding="small"
-        title={content.title}
-        horizontalAlign="center"
-      >
-        {content.description}
-      </Block>
+      <PageHero title={content.title} description={content.description} />
 
-      {content.testimonials.map((testimonial, index) => (
-        <Testimonial key={index} testimonial={testimonial} image={imageMap[testimonial.filename]} />
-      ))}
+      <ScreenContainer>
+        <TestimonialCards>
+          {content.testimonials.map((testimonial, index) => (
+            <Testimonial key={index} testimonial={testimonial} image={imageMap[testimonial.filename]} />
+          ))}
+        </TestimonialCards>
+      </ScreenContainer>
     </>
   )
 }
