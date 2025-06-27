@@ -34,6 +34,8 @@ First set up the Uber Eats Bridge in HubRise by following these steps:
 
 The bridge now shows the **Connect your Uber Eats store** page. Four connection methods are available, see below for details on each method.
 
+Uber Eats applies default integration settings during onboarding, which you can change later. These settings are documented in the [Default integration settings](/apps/uber-eats/faqs/default-integration-settings) FAQ.
+
 When any of the four flows completes, the bridge activates the integration and opens the **Configuration** page.
 
 ### 1.1 Connect With Your Uber Eats Account
@@ -90,7 +92,7 @@ Note that the connection code appears only for stores connected via one of the f
 
 ![Reuse an existing connection](./images/032-connect-reuse-connection-code.png)
 
-### 1.4. Connect With Store Uuid (Legacy Method)
+### 1.4. Connect With Store UUID (Legacy Method)
 
 Use this method only if HubRise or Uber Eats support specifically instructs you to. Before you can proceed, email support@hubrise.com with:
 
@@ -109,7 +111,9 @@ After HubRise confirms that Uber Eats support has enabled the integration, open 
 
 ## 2. Configure Your Preferences
 
-After connecting the bridge, you need to configure a few parameters on the **Configuration** page to send orders correctly to your EPOS.
+After connecting the bridge, configure the parameters on the **Configuration** page for correct order transmission to your EPOS.
+
+Some options (for example, status mappings and catalog variants) are visible in the bridge. Other parameters, such as _RD-Optional_, _Auto-Cancel_ and _Acceptance mode_, can only be changed through the HubRise support team. For the complete list, see [Default integration settings](/apps/uber-eats/faqs/default-integration-settings).
 
 For more information about the configuration page and how to navigate to it, see [Configuration page](/apps/uber-eats/user-interface#configuration). For details on how to configure the parameters of the Uber Eats Bridge, see [Configuration](/apps/uber-eats/configuration).
 
