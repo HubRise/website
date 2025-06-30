@@ -14,7 +14,7 @@ Lorsque vous connectez Uber Eats Bridge en utilisant l'une des trois premières 
 | ----------------------------- | -------------------------------------------------------------------------------------------------- | ---------------------------------------- |
 | **RD-Optionnel**              | Permet au restaurant de fonctionner sans tablette Uber Eats.                                       | **Activé**                               |
 | **Mode d’acceptation**        | Détermine si les commandes doivent être acceptées sur la tablette avant d’être envoyées à HubRise. | **Offered-state** (sans action manuelle) |
-| **Annulation automatique**    | Annule les commandes qui n’ont pas pu être transmises au logiciel de caisse.                       | **Désactivée**                           |
+| **Annulation automatique**    | Annule les commandes qui n'ont pas été validées par la caisse dans un délai de 10 minutes.         | **Activée**                              |
 | **Accès à l’éditeur de menu** | Contrôle l'accès à l'éditeur de menu dans le back office Uber Eats.                                | **Bloqué**                               |
 
 Ces paramètres ne peuvent pas être modifiés depuis l'interface HubRise. Si vous souhaitez une configuration différente, écrivez-nous à **support@hubrise.com** en précisant le UUID de la boutique et les valeurs souhaitées.
