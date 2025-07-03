@@ -257,3 +257,9 @@ The available fields in the payloads are the following:
 ## Customer Notes
 
 If the order contains special requirements or allergy information, these are available in the `customer_notes` field.
+
+## Pause
+
+When order acceptance sync is enabled, Glovo Bridge syncs the `order_acceptance` field from HubRise to Glovo.
+
+The `order_acceptance.mode` field controls the store status: `normal` or `busy` keeps the store open, while `paused` closes it.
