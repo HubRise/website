@@ -155,7 +155,7 @@ The available fields in the payloads are the following:
 
 Order-level customer notes are encoded in the `customer_notes` field.
 
-## Pause and Preparation Time
+## Pause and Preparation Time {#pause-and-preparation-time}
 
 When order acceptance and preparation time sync is enabled, Deliveroo Bridge syncs the `order_acceptance` and `preparation_time` fields from HubRise to Deliveroo.
 

@@ -155,7 +155,7 @@ Les champs disponibles dans les requêtes sont les suivants :
 
 Les notes de préparation du client au niveau de la commande sont encodées dans le champ `customer_notes`.
 
-## Mise en pause et temps de préparation
+## Mise en pause et temps de préparation {#pause-and-preparation-time}
 
 Lorsque la synchronisation de l'acceptation des commandes et du temps de préparation est activée, Deliveroo Bridge synchronise les champs `order_acceptance` et `preparation_time` de HubRise vers Deliveroo.
 

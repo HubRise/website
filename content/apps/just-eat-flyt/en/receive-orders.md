@@ -233,7 +233,7 @@ The available fields in the payloads are the following:
 
 The total price paid for the order, including charges applied, is encoded in the `total` field.
 
-## Pause
+## Pause {#pause}
 
 When order acceptance sync is enabled, Just Eat Flyt Bridge syncs the `order_acceptance` field from HubRise to Just Eat.
 

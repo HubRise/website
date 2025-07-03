@@ -258,7 +258,7 @@ The available fields in the payloads are the following:
 
 If the order contains special requirements or allergy information, these are available in the `customer_notes` field.
 
-## Pause
+## Pause {#pause}
 
 When order acceptance sync is enabled, Glovo Bridge syncs the `order_acceptance` field from HubRise to Glovo.
 

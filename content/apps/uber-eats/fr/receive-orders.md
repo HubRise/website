@@ -203,7 +203,7 @@ Pour chacun des frais présents dans la commande, les champs disponibles sont le
 
 Les notes de préparation au niveau du produit sont encodées dans le champ `customer_notes`.
 
-## Mise en pause et temps de préparation
+## Mise en pause et temps de préparation {#pause-and-preparation-time}
 
 Lorsque la synchronisation de l'acceptation des commandes et du temps de préparation est activée, Uber Eats Bridge synchronise les champs `order_acceptance` et `preparation_time` de HubRise vers Uber Eats.
 
