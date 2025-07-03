@@ -58,6 +58,16 @@ If your catalog has multiple variants, this section lets you select which varian
 Additionally, choose if you want to push your HubRise catalog to Glovo every time it is updated on HubRise by selecting the **Enable automatic catalog push** checkbox.
 By default, this option is turned off.
 
+## Location
+
+![Glovo Bridge configuration page, Location section](./images/003-configuration-location.png)
+
+### Order Acceptance
+
+Select **Enable order acceptance sync** to sync your Glovo store availability with HubRise.
+
+When enabled, you can pause and resume your Glovo store from your EPOS or other connected apps.
+
 ## Inventory
 
 ![Glovo Bridge configuration page, Inventory section](./images/007-configuration-inventory.png)

@@ -59,12 +59,12 @@ The category name is sent to HubRise, while category ref code and descriptions a
 
 Lightspeed supports skus, but not products. For every item in the Lightspeed catalog, Lightspeed Restaurant Bridge creates a corresponding sku in HubRise with the following information (if available):
 
-- Sku name.
-- Sku ref code.
-- Description.
-- Images.
-- Price.
-- Options.
+- Sku name
+- Sku ref code
+- Description
+- Images
+- Price
+- Options
 
 ### Options
 

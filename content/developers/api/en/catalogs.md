@@ -1179,28 +1179,28 @@ There is no endpoint to delete an image. Images that have not been attached to a
 
 ### Recommendations for Image Upload {#image-management}
 
-#### When Creating a Catalog
+#### Catalog creation
 
-If you are creating a catalog, you should upload images before the catalog. The recommended sequence is:
+When you create a catalog, upload images before the catalog. Follow this sequence:
 
-1. Create an empty catalog: `POST /catalogs`.
-2. Upload images for the catalog: `POST /catalogs/:catalog_id/images`, and keep the returned `id`s for the next step. Optionally add `?private_ref=...` to supply a unique `private_ref` per image to ease future deduplication. See [When Updating a Catalog](#images-update-catalog) for details about deduplication.
+- If your scope allows it, create an empty catalog: `POST /catalogs`. Otherwise, use the catalog attached to the connection.
 
-3. Upload the catalog: `PUT /catalogs/:catalog_id`, using the image `id`s.
+- Upload images for the catalog: `POST /catalogs/:catalog_id/images`, and keep the returned `id`s for the next step. Optionally add `?private_ref=...` to supply a unique `private_ref` per image to ease future deduplication when updating the catalog.
 
-#### When Updating a Catalog {#images-update-catalog}
+- Upload the catalog: `PUT /catalogs/:catalog_id`, using the image `id`s.
 
-If you are updating a catalog, you should only upload new images to minimise data transfer and speed up the process. Here is the recommended sequence:
+#### Catalog update {#images-update-catalog}
 
-1. Fetch the existing images: `GET /catalogs/:catalog_id/images`.
-   This returns each image `id`, `md5` checksum and, if it was supplied at creation time, its `private_ref`.
-2. Decide which images must be created. You can either:
+When you update a catalog, only upload new images to minimise data transfer. Follow this sequence:
 
-   - compare `md5` if you still have the original bytes
-   - or compare the `private_ref` you supplied earlier. This assumes that each distinct image binary content has a unique `private_ref`.
+- Fetch the existing images: `GET /catalogs/:catalog_id/images`.
+  This returns each image `id`, `md5` checksum and, if it was supplied at creation time, its `private_ref`.
 
-3. Upload the new images: `POST /catalogs/:catalog_id/images`, optionally add `?private_ref=...` to supply unique refs, and keep the image `id`s.
-4. Update the catalog: `PUT /catalogs/:catalog_id`, supplying the reused or new image `id`s for each product or deal.
+- Identify the images to reuse, and the images to upload. You can either use the `md5` fields (if you still have the original image binary content), or the `private_ref` fields (if you supplied them earlier).
+
+- Upload the new images: `POST /catalogs/:catalog_id/images`, optionally add `?private_ref=...` to supply unique refs, and keep the image `id`s for the next step.
+
+- Update the catalog: `PUT /catalogs/:catalog_id`, supplying the reused or new image `id`s for each product or deal.
 
 ### 13.1. Create Image
 
