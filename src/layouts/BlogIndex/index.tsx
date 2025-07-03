@@ -1,51 +1,44 @@
 "use client"
 
-import Hero from "@components/Blog/Hero"
-import Layout from "@components/Blog/Layout"
-import PostSummary from "@components/Blog/PostSummary"
-import { getYearArchiveTitle } from "@components/Blog/Sidebar/helpers"
-import Breadcrumbs from "@components/Breadcrumbs"
+import Card from "@components/Card"
+import PageHero from "@components/PageHero"
+import ScreenContainer from "@components/ScreenContainer"
 import useTranslation from "@hooks/client/useTranslation"
-import { BlogArchives, BlogMdFile } from "@utils/BlogIndexer/types"
-import { DocLink, Href } from "@utils/DocIndexer/types"
+import { BlogMdFile } from "@utils/BlogIndexer/types"
 import { ContentImage } from "@utils/contentImage"
 
-export interface BlogFilter {
-  year?: number
-}
+import PostSummary from "./PostSummary"
+import { Posts } from "./Styles"
 
 interface BlogIndexProps {
-  blogIndexUri: Href
-  archives: BlogArchives
   mdFiles: Array<BlogMdFile>
   bannerImages: { [blogUri: string]: ContentImage }
-  filter: BlogFilter
 }
 
-const BlogIndex = ({ blogIndexUri, archives, mdFiles, bannerImages, filter }: BlogIndexProps): JSX.Element => {
+const BlogIndex = ({ mdFiles, bannerImages }: BlogIndexProps): JSX.Element => {
   const { t } = useTranslation()
-
-  let breadcrumbs: Array<DocLink> | undefined
-  if (filter.year) {
-    breadcrumbs = [
-      { label: "Blog", uri: blogIndexUri },
-      { label: getYearArchiveTitle(filter.year, t), uri: blogIndexUri },
-    ]
-  }
 
   return (
     <>
-      {breadcrumbs ? (
-        <Breadcrumbs breadcrumbs={breadcrumbs} />
-      ) : (
-        <Hero title={t("blog.hero.title")} description={t("blog.hero.description")} />
-      )}
+      <PageHero
+        title={
+          <>
+            <span>{t("blog.hero.title_part_1")} </span>
+            {t("blog.hero.title_part_2")}
+          </>
+        }
+        description={t("blog.hero.description")}
+      />
 
-      <Layout archives={archives}>
-        {mdFiles.map((mdFile, idx) => (
-          <PostSummary key={idx} mdFile={mdFile} bannerImage={bannerImages[mdFile.uri]} />
-        ))}
-      </Layout>
+      <ScreenContainer verticalPadding="small">
+        <Posts>
+          {mdFiles.map((mdFile, idx) => (
+            <Card key={idx}>
+              <PostSummary mdFile={mdFile} bannerImage={bannerImages[mdFile.uri]} />
+            </Card>
+          ))}
+        </Posts>
+      </ScreenContainer>
     </>
   )
 }

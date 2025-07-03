@@ -2,13 +2,15 @@ import Image from "next/image"
 import Link from "next/link"
 import styled from "styled-components"
 
+import { StyledBreadcrumbs } from "@components/Breadcrumbs/Styles"
 import { breakpoints, colors, mixin, sizes, zIndexValues } from "@utils/styles"
 
 const gap = "1rem"
 
 export const Page = styled.div`
   max-width: ${sizes.maxWidth};
-  margin: ${sizes.blockVerticalPadding} auto;
+  margin: 1rem auto;
+  position: relative;
 
   @media (min-width: ${breakpoints.large}) {
     display: grid;
@@ -17,6 +19,13 @@ export const Page = styled.div`
     grid-template-columns: 75% 25%;
     grid-template-areas: "warning warning" "main logo" "main navigation";
     grid-template-rows: min-content min-content 1fr;
+  }
+
+  ${StyledBreadcrumbs} {
+    margin: 0;
+    position: absolute;
+    top: -3.25rem;
+    width: -webkit-fill-available;
   }
 `
 
@@ -40,10 +49,13 @@ export const Main = styled.div`
 `
 
 export const Content = styled.div`
-  padding: ${sizes.blockVerticalPadding} 0.9375rem;
+  padding: 2rem 1rem;
   background-color: ${colors.backgroundWhite};
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 
   @media (min-width: ${breakpoints.large}) {
+    padding: 2rem 4rem 2rem 1rem;
     position: relative;
     ${mixin.expandBefore({ width: "100vw", color: colors.backgroundWhite })};
   }
@@ -56,6 +68,7 @@ export const LogoLink = styled(Link)`
   background-color: ${colors.backgroundWhite};
   line-height: 0;
   ${mixin.centerElement};
+  border-radius: 0.5rem;
 
   @media (min-width: ${breakpoints.large}) {
     padding: ${sizes.desktopPadding};
@@ -74,12 +87,13 @@ export const LogoImage = styled(Image)`
 export const Navigation = styled.div`
   grid-area: navigation;
   background-color: ${colors.backgroundWhite};
-
   position: sticky;
   top: calc(${sizes.headerHeight} + ${gap});
+  border-radius: 0.5rem;
 
   @media (max-width: ${breakpoints.large}) {
     top: ${sizes.headerHeight};
     z-index: ${zIndexValues.header};
+    border-radius: 0;
   }
 `
