@@ -1,7 +1,7 @@
 ---
 title: Associer les codes ref
 path_override: associer-codes-ref
-position: 3
+position: 4
 layout: documentation
 meta:
   title: Associer les codes ref | Kezia II | HubRise
@@ -48,14 +48,20 @@ Vous pouvez ensuite exporter de nouveau votre catalogue en suivant les étapes d
 
 ## Produits {#products}
 
-Un produit dans HubRise correspond à un article dans Kezia II. Pour retrouver le code ref d'un article, suivez ces étapes :
+Un produit dans HubRise correspond à un article dans Kezia II. Le code ref d'un produit dépend de l'option **Associer les articles par codes internes** configurée dans les [Options avancées](/apps/kezia/configuration#advanced-options) :
+
+- Option décochée (par défaut) : Le code ref est l'**IDART**, un identifiant numérique généré automatiquement par Kezia II. C'est le choix recommandé pour les points de vente indépendants, car il garantit l'unicité des codes ref sans action manuelle.
+
+- Option cochée : Le code ref est le **code interne** s'il est renseigné, sinon l'**IDART**. Les codes internes permettent d'unifier les codes ref sur plusieurs points de vente, mais nécessitent une gestion manuelle rigoureuse.
+
+Pour retrouver le code ref d'un article :
 
 1. Depuis l'écran d'accueil, sélectionnez **ARTICLES**.
-1. Double-cliquez sur le produit désiré.
-1. Le code ref d'un produit est son **code interne** s'il est renseigné, ou son **IDART** sinon.
-   - Le **code interne** est affiché après le label **Code interne :**. La valeur **NC** indique qu'il n'est pas renseigné.
-   - L'**IDART** est affiché en haut à gauche et se présente sous forme de numéro, par exemple **2** dans l'image ci-dessous.
-     ![Associer les codes ref - Fiche article](./images/005-kezia-product-details.png)
+2. Double-cliquez sur le produit désiré.
+3. L'**IDART** est affiché en haut à gauche (par exemple **2** dans l'image ci-dessous).
+4. Le **code interne** est affiché après le label **Code interne :**. La valeur **NC** indique qu'il n'est pas renseigné.
+
+![Associer les codes ref - Fiche article](./images/005-kezia-product-details.png)
 
 ## SKUs
 
