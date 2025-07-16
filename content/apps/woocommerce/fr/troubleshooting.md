@@ -14,11 +14,13 @@ Pour recevoir des commandes dans HubRise, la première étape consiste à connec
 
 Si vous avez connecté WooCommerce à HubRise, mais vous ne recevez pas de commandes dans HubRise, vérifiez les éléments suivants.
 
-### Vérifier les crochets Web WooCommerce
+### Vérifier les crochets Web WooCommerce {#check-woocommerce-webhooks}
 
 Lorsque vous connectez WooCommerce Bridge, il crée deux crochets Web sur votre site internet WooCommerce. Ceux-ci sont essentiels pour transmettre les commandes de WooCommerce à HubRise.
 
 Vous devez vérifier la présence de ces crochets Web, mais aussi vous assurer que leur statut est **Active**. Si leur statut est **Inactive**, ils ne fonctionneront pas. Vous devrez les réactiver en cliquant sur leur nom.
+
+Si vous constatez que les crochets Web ont été désactivés, il est probable que WooCommerce n'a pas été configuré pour empêcher leur désactivation automatique - voir [Crochets Web automatiquement désactivés](#webhooks-automatically-disabled) ci-dessous.
 
 Pour vérifier que les crochets Web ont été créés :
 
@@ -27,8 +29,10 @@ Pour vérifier que les crochets Web ont été créés :
 3. Ensuite, cliquez sur **Crochets Web**.
    ![Saisie du code ref dans le champ SKU pour une variante WooCommerce](./images/010-woocommerce-webhooks.png)
 4. Trouvez les deux entrées suivantes :
-   - `HubRise {{id_point_de_vente}}: Order updated`
-   - `HubRise {{id_point_de_vente}}: Order created`
+
+- `HubRise {{id_point_de_vente}}: Order updated`
+- `HubRise {{id_point_de_vente}}: Order created`
+
 5. Vérifiez le statut de chaque entrée. Si l'un d'entre eux est défini sur **Inactive**, cliquez sur son nom pour changer le statut en **Active**.
 
 Si ces entrées sont présentes et actives, c'est signe que la connexion avec HubRise a bien été établie. Vous pouvez passer à l'étape suivante.
@@ -54,21 +58,19 @@ Pour vérifier que votre commande fictive a bien été transmise à HubRise, sui
 
 Si vous voyez la commande, la connexion entre WooCommerce et HubRise fonctionne correctement.
 
+## Crochets Web automatiquement désactivés {#webhooks-automatically-disabled}
+
+Si vos crochets Web WooCommerce sont automatiquement désactivés, cela est probablement dû à des échecs d'envoi répétés. Par défaut, WooCommerce désactive les crochets Web après 5 échecs consécutifs.
+
+Pour empêcher la désactivation automatique des crochets Web, consultez les instructions détaillées dans [Empêcher la désactivation automatique des crochets Web](/apps/woocommerce/connect-hubrise#prevent-automatic-webhook-disabling) dans la documentation Connexion à HubRise.
+
+Si les crochets Web ont déjà été désactivés, vous devrez les réactiver manuellement en suivant les étapes de [Vérifier les crochets Web WooCommerce](#check-woocommerce-webhooks) ci-dessus.
+
 ## Commandes reçues dans HubRise avec du retard
 
-Par défaut, les commandes sont transmises de WooCommerce à HubRise par un processus appelé **cron**. Il s'exécute très régulièrement et transmet toutes les commandes qui ne l'ont pas encore été. Cela peut retarder la création des commandes et la mise à jour des statuts.
+Par défaut, WooCommerce traite les crochets Web de manière asynchrone, ce qui peut retarder la transmission des commandes vers HubRise de plusieurs minutes.
 
-Vous pouvez choisir de transmettre les commandes immédiatement, sans attendre l'exécution du cron. On parle dans ce cas de **crochets Web synchrones**. Pour activer les crochets Web synchrones, suivez ces étapes :
-
-1. Accédez aux fichiers de votre site WordPress en utilisant un client FTP ou le gestionnaire de fichiers du panneau de commande de l'hébergeur.
-2. Accédez au répertoire `wp-content/themes/[votre-thème]`, où `[votre-thème]` représente le dossier de votre thème actif.
-3. Ouvrez le fichier `functions.php` et ajoutez l'extrait de code suivant à la fin du fichier :
-   ```
-   add_filter( 'woocommerce_webhook_deliver_async', '__return_false' );
-   ```
-4. Enregistrez le fichier. Les modifications prendront effet immédiatement.
-
-Si vous n'êtes pas sûr de savoir comment modifier le fichier `functions.php`, contactez le développeur de votre site WooCommerce.
+Pour activer la transmission immédiate des commandes, vous devez configurer l'envoi synchrone des crochets Web. Pour des instructions détaillées, voir [Activer l'envoi synchrone des crochets Web](/apps/woocommerce/connect-hubrise#enable-synchronous-webhook-delivery) dans la documentation Connexion à HubRise.
 
 ## Erreurs 401
 
@@ -102,7 +104,7 @@ Suivez ces étapes :
    ![Option OAuth1 dans WooCommerce Bridge](./images/013-woocommerce-step-1-advanced.png)
 4. Poursuivez la configuration telle qu'elle est décrite dans [Connexion à HubRise](/apps/woocommerce/connect-hubrise).
 
-Vérifiez si cette modification a permis de résoudre les erreurs 401. Si ce n'est pas le cas, consultez les autres étapes de dépannage.
+Vérifiez si cette modification a permis de résoudre les erreurs 401.
 
 ### URL incorrecte lors de la configuration
 
@@ -131,8 +133,6 @@ Voici comment effectuer la correction :
 1. Réinitialiser la configuration de WooCommerce Bridge. Pour savoir comment faire, voir [Réinitialiser la configuration](/apps/woocommerce/configuration#reset).
 2. Reprenez la configuration du bridge depuis le début. À la première étape, saisissez l'URL de votre boutique WooCommerce, en veillant à ce qu'elle corresponde exactement à votre site internet (attention à la présence ou non de `www`).
 3. Poursuivez la configuration telle qu'elle est décrite dans [Connexion à HubRise](/apps/woocommerce/connect-hubrise).
-
-Voici la traduction en français :
 
 ## Erreurs 422
 
