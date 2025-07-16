@@ -232,3 +232,9 @@ Les champs disponibles dans les requêtes sont les suivants :
 ### Prix total
 
 Le prix global réglé pour la commande, y compris les frais appliqués, est encodé dans le champ `total`.
+
+## Mise en pause {#pause}
+
+Lorsque la synchronisation de l'acceptation des commandes est activée, Just Eat Flyt Bridge synchronise le champ `order_acceptance` de HubRise vers Just Eat.
+
+Le champ `order_acceptance.mode` contrôle le statut du magasin : `normal` ou `busy` garde le magasin ouvert, tandis que `paused` le ferme.

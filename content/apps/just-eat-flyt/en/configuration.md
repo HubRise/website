@@ -106,6 +106,8 @@ Select the **Enable automatic catalog push** checkbox to synchronise your HubRis
 
 ![Just Eat Flyt Bridge configuration page, Location section](./images/015-just-eat-configuration-page-location.png)
 
+### Opening Hours
+
 Select **Enable automatic opening hours push** to synchronise your HubRise opening hours with Just Eat. To enable this option, you must first set your opening hours in HubRise, and enable automatic catalog push.
 
 If you use specific opening hours for Just Eat, you can set them for Just Eat only by selecting **Use specific opening hours for Just Eat**, then entering your opening hours for Delivery and Collection, depending on the service types you offer. This option will override the opening hours set in HubRise.
@@ -113,6 +115,18 @@ If you use specific opening hours for Just Eat, you can set them for Just Eat on
 ---
 
 **IMPORTANT NOTE:** By default, closing times for delivery will be set half an hour earlier on the Just Eat store than the value you set on Just Eat Flyt Bridge or HubRise. Closing times for collection, however, are not modified.
+
+---
+
+### Order Acceptance
+
+Select **Enable order acceptance sync** to sync your Just Eat store availability with HubRise.
+
+When enabled, you can pause and resume your Just Eat store from your EPOS or other connected apps.
+
+---
+
+**IMPORTANT NOTE:** Order acceptance synchronisation is only supported in certain markets including Australia, Spain, United Kingdom, Ireland, and Italy.
 
 ---
 

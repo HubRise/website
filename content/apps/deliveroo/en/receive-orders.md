@@ -154,3 +154,14 @@ The available fields in the payloads are the following:
 ## Customer Notes
 
 Order-level customer notes are encoded in the `customer_notes` field.
+
+## Pause and Preparation Time {#pause-and-preparation-time}
+
+When order acceptance and preparation time sync is enabled, Deliveroo Bridge syncs the `order_acceptance` and `preparation_time` fields from HubRise to Deliveroo.
+
+The `order_acceptance.mode` field controls the store status:
+- `normal`: Store open with quiet preparation time
+- `busy`: Store open with busy preparation time  
+- `paused`: Store closed
+
+The quiet preparation time uses the `preparation_time` value from HubRise, defaulting to 15 minutes if not set. The busy preparation time is calculated as `preparation_time` plus `order_acceptance.extra_preparation_time`.

@@ -72,6 +72,23 @@ Les variantes de catalogue vous donnent la flexibilité de désactiver des artic
 
 Si votre catalogue comprend des variantes, vous pouvez sélectionner celle que vous souhaitez utiliser. Lorsque **(aucune)** est sélectionné, les articles par défaut ainsi que leurs prix standards sont utilisés.
 
+### Menus spéciaux
+
+Les menus spéciaux vous permettent de planifier des variantes de catalogue à des jours et des heures spécifiques. Cette fonctionnalité est utile pour proposer des menus distincts pour le petit déjeuner et le déjeuner, par exemple.
+
+Pour configurer des menus spéciaux :
+
+1. Assurez-vous que votre catalogue contient les variantes nécessaires.
+1. Sélectionnez le nombre de menus spéciaux que vous souhaitez configurer (jusqu'à 5) dans le menu déroulant.
+1. Pour chaque menu spécial :
+   - Sélectionnez les jours de la semaine où le menu doit être actif.
+   - Sélectionner l'heure de début (**De**) et l'heure de fin (**A**) du menu.
+   - Choisissez la variante de catalogue à utiliser durant cette période.
+
+Lorsque des menus spéciaux sont configurés, Deliveroo basculera automatiquement vers la variante de catalogue appropriée en fonction de l'heure souhaitée de la commande.
+
+S'il n'y a pas de menu spécial actif à un moment donné, Deliveroo utilisera la variante de catalogue par défaut spécifiée dans le paramètre **Variante de catalogue à envoyer**.
+
 ### Menu Deliveroo
 
 Les champs **Identifiant de la marque** et **Identifiant du menu** identifient le menu que vous souhaitez mettre à jour sur Deliveroo. Les valeurs par défaut fonctionnent généralement pour la plupart des utilisateurs.
@@ -98,7 +115,15 @@ La **description du menu** et la **bannière du menu** remplacent la description
 
 ![Page de configuration de Deliveroo Bridge, section Point de vente](./images/017-configuration-page-location.png)
 
+### Horaires d'ouverture
+
 Sélectionnez la case **Activer l'envoi automatique des horaires d'ouverture** pour mettre à jour vos horaires d'ouverture dans Deliveroo chaque fois qu'ils sont mis à jour dans HubRise.
+
+### Acceptation des commandes et temps de préparation
+
+Sélectionnez **Activer la synchronisation de l'acceptation des commandes et du temps de préparation** pour synchroniser la disponibilité de votre restaurant Deliveroo avec HubRise.
+
+Lorsque cette option est activée, les changements du statut et du temps de préparation de votre boutique dans HubRise se mettent automatiquement à jour sur Deliveroo. Cela inclut la mise en pause des commandes, le passage en mode forte affluence, et l'ajustement du temps de préparation depuis votre logiciel de caisse ou d'autres applications connectées.
 
 ## Inventaire
 
