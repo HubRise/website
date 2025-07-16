@@ -32,8 +32,8 @@ La solution comprend :
 - Menu digital : Carte consultable en ligne, mise à jour en temps réel, avec gestion des allergènes et des régimes alimentaires.
 - Réservation en ligne : Système de réservation intégré pour limiter les appels téléphoniques.
 - Fidélisation : Programme de points pour proposer des avantages aux clients récurrents.
-- Campagnes SMS : Envoyez facilement des SMS promotionnels ou de relance, ciblés et connectés à vos données de vente.
-- Collecte et gestion des avis clients : Recueillez automatiquement des avis après chaque commande pour identifier les points à améliorer et valorisez vos meilleurs retours en ligne.
+- Campagnes SMS : Envoyez des SMS promotionnels ou de relance ciblés.
+- Gestion des avis clients : Collecte automatique après chaque commande pour améliorer votre service et valoriser vos meilleurs retours.
 - Livraison : Possibilité d'utiliser une flotte interne de livreurs ou de recourir à un prestataire externe (Stuart, Uber Direct).
 
 Eatself présente plusieurs avantages :

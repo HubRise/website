@@ -38,8 +38,8 @@ The solution includes:
 - Digital menu: Online menu with real-time updates, allergen and dietary information management.
 - Online booking: Integrated reservation system to reduce phone calls.
 - Loyalty: Points-based programme to reward returning customers.
-- SMS campaigns: Easily send personalised and targeted promotional or follow-up messages, tailored to your audience and connected to your sales data.
-- Customer reviews management: Automatically collect feedback after each order to identify areas for improvement and showcase your best reviews online.
+- SMS campaigns: Send personalised and targeted promotional or follow-up messages.
+- Customer reviews: Automatic collection after each order to improve your service and highlight positive feedback.
 - Delivery: Option to use your own drivers or connect with third-party providers (Stuart, Uber Direct).
 
 Eatself offers several advantages:
