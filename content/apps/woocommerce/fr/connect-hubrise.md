@@ -43,7 +43,55 @@ Une fois la connexion effectuée, vous devez renseigner quelques paramètres sur
 
 Pour plus d'informations sur la page Configuration et la manière d'y accéder, voir la rubrique Configuration de la page [Interface Utilisateur](/apps/woocommerce/user-interface#configuration). Pour plus de détails sur la configuration des paramètres WooCommerce Bridge, voir la rubrique [Configuration](/apps/woocommerce/configuration).
 
-## 3. Envoyer votre menu
+## 3. Configurer les crochets Web WooCommerce
+
+Après avoir connecté WooCommerce Bridge, configurez vos crochets Web WooCommerce pour la transmission des commandes vers HubRise.
+
+### Activer l'envoi synchrone des crochets Web (Optionnel) {#enable-synchronous-webhook-delivery}
+
+Par défaut, WooCommerce traite les crochets Web de manière asynchrone via un processus en arrière-plan appelé **cron**. Ce processus s'exécute toutes les quelques minutes et peut retarder la transmission des commandes vers HubRise.
+
+Pour transmettre les commandes immédiatement sans attendre le cron, vous pouvez activer l'envoi synchrone des crochets Web :
+
+1. Accédez aux fichiers de votre site WordPress en utilisant un client FTP ou le gestionnaire de fichiers du panneau de commande de l'hébergeur.
+2. Accédez au répertoire `wp-content/themes/[votre-thème]`, où `[votre-thème]` représente le dossier de votre thème actif.
+3. Ouvrez le fichier `functions.php` et ajoutez l'extrait de code suivant à la fin du fichier :
+   ```php
+   add_filter( 'woocommerce_webhook_deliver_async', '__return_false' );
+   ```
+4. Enregistrez le fichier. Les modifications prendront effet immédiatement.
+
+---
+
+**REMARQUE IMPORTANTE :** Ce paramètre affecte tous les crochets Web de votre boutique WooCommerce, pas seulement ceux de HubRise. Assurez-vous que tous vos points de terminaison de crochets Web peuvent traiter les requêtes rapidement pour éviter de ralentir l'étape de finalisation de commande pour vos clients.
+
+---
+
+### Empêcher la désactivation automatique des crochets Web (Recommandé) {#prevent-automatic-webhook-disabling}
+
+Par défaut, WooCommerce désactive automatiquement les crochets Web après 5 échecs d'envoi consécutifs. Cela peut interrompre votre connexion avec HubRise en cas de désactivation temporaire du bridge ou de problèmes de réseau.
+
+Pour empêcher WooCommerce de désactiver automatiquement les crochets Web :
+
+1. Accédez aux fichiers de votre site WordPress en utilisant un client FTP ou le gestionnaire de fichiers du panneau de commande de l'hébergeur.
+2. Accédez au répertoire `wp-content/themes/[votre-thème]`.
+3. Ouvrez le fichier `functions.php` et ajoutez le code suivant :
+   ```php
+   add_filter( 'woocommerce_max_webhook_delivery_failures', function() {
+       return PHP_INT_MAX; // Tentatives d'envoi illimitées
+   } );
+   ```
+4. Enregistrez le fichier.
+
+---
+
+**REMARQUE IMPORTANTE :** Ce paramètre affecte tous les crochets Web de votre boutique WooCommerce. PHP_INT_MAX autorise un nombre illimité de tentatives en cas d'échec.
+
+---
+
+Si vous ne savez pas comment modifier le fichier `functions.php`, contactez le développeur de votre site WooCommerce.
+
+## 4. Envoyer votre menu
 
 Si vous disposez d'un catalogue de produits sur HubRise, vous pouvez l'envoyer dans votre boutique WooCommerce d'un seul clic.
 

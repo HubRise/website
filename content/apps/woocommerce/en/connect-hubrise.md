@@ -43,7 +43,55 @@ After connecting the Bridge, you need to configure a few parameters in the Confi
 
 For more information about the configuration page and how to navigate to it, see the Configuration section in [User Interface](/apps/woocommerce/user-interface#configuration). For details on how to set up the parameters of WooCommerce Bridge, see [Configuration](/apps/woocommerce/configuration).
 
-## 3. Upload Your Menu
+## 3. Configure WooCommerce Webhooks
+
+After connecting WooCommerce Bridge, configure your WooCommerce webhooks for order transmission to HubRise.
+
+### Enable Synchronous Webhook Delivery (Optional) {#enable-synchronous-webhook-delivery}
+
+By default, WooCommerce processes webhooks asynchronously through a background process called a **cron**. This process runs every few minutes and can delay order transmission to HubRise.
+
+To transmit orders immediately without waiting for the cron, you can enable synchronous webhook delivery:
+
+1. Access your WordPress site files using an FTP client or your hosting control panel's file manager.
+2. Navigate to the `wp-content/themes/[your-theme]` directory, where `[your-theme]` is the folder of your active theme.
+3. Open the `functions.php` file and append the following code snippet at the end of the file:
+   ```php
+   add_filter( 'woocommerce_webhook_deliver_async', '__return_false' );
+   ```
+4. Save the file and the changes will take effect immediately.
+
+---
+
+**IMPORTANT NOTE:** This setting affects all webhooks in your WooCommerce store, not just HubRise webhooks. Ensure all your webhook endpoints can process requests quickly to avoid slowing down your customer checkout experience.
+
+---
+
+### Prevent Automatic Webhook Disabling (Recommended) {#prevent-automatic-webhook-disabling}
+
+By default, WooCommerce automatically disables webhooks after 5 consecutive failed delivery attempts. This can interrupt your connection with HubRise if the bridge is temporarily disabled, or in case of network issues.
+
+To prevent WooCommerce from automatically disabling webhooks:
+
+1. Access your WordPress site files using an FTP client or your hosting control panel's file manager.
+2. Navigate to the `wp-content/themes/[your-theme]` directory.
+3. Open the `functions.php` file and add the following code:
+   ```php
+   add_filter( 'woocommerce_max_webhook_delivery_failures', function() {
+       return PHP_INT_MAX; // Effectively unlimited retries
+   } );
+   ```
+4. Save the file.
+
+---
+
+**IMPORTANT NOTE:** This setting affects all webhooks in your WooCommerce store. Setting it to PHP_INT_MAX provides effectively unlimited retries.
+
+---
+
+If you are not sure how to edit the `functions.php` file, contact the developer of your WooCommerce website.
+
+## 4. Upload Your Menu
 
 If you have a catalog of products on HubRise, you can upload it to your WooCommerce store with a single click.
 
