@@ -31,10 +31,12 @@ Pour connecter WooCommerce Bridge à HubRise, suivez ces étapes :
 8. Si vous avez déjà rencontré des problèmes de connexion, vous pouvez configurer les **Options avancées**. Sinon, ne les modifiez pas. Pour plus d'informations, consultez notre guide de [Dépannage](/apps/woocommerce/troubleshooting).
 9. Cliquez sur **Enregistrer** pour confirmer.
 10. Cliquez sur **Connecter WooCommerce**. Vous êtes redirigé vers la page d'autorisation WooCommerce.
-    - Si vous n'êtes pas connecté à WooCommerce, saisissez vos identifiant et mot de passe, puis cliquez sur **Connexion**.
-      ![Page de connexion WooCommerce](./images/006-woocommerce-login.png)
-    - Cliquez sur **Approuver** pour autoriser la connexion à HubRise.
-      ![Page d'autorisation WooCommerce](./images/007-woocommerce-authorisation.png)
+
+- Si vous n'êtes pas connecté à WooCommerce, saisissez vos identifiant et mot de passe, puis cliquez sur **Connexion**.
+  ![Page de connexion WooCommerce](./images/006-woocommerce-login.png)
+- Cliquez sur **Approuver** pour autoriser la connexion à HubRise.
+  ![Page d'autorisation WooCommerce](./images/007-woocommerce-authorisation.png)
+
 11. Vous êtes redirigé vers la page de configuration de WooCommerce Bridge, où vous pouvez personnaliser votre connexion à HubRise.
 
 ## 2. Configurer vos préférences
@@ -56,9 +58,11 @@ Pour transmettre les commandes immédiatement sans attendre le cron, vous pouvez
 1. Accédez aux fichiers de votre site WordPress en utilisant un client FTP ou le gestionnaire de fichiers du panneau de commande de l'hébergeur.
 2. Accédez au répertoire `wp-content/themes/[votre-thème]`, où `[votre-thème]` représente le dossier de votre thème actif.
 3. Ouvrez le fichier `functions.php` et ajoutez l'extrait de code suivant à la fin du fichier :
-   ```php
-   add_filter( 'woocommerce_webhook_deliver_async', '__return_false' );
-   ```
+
+```php
+add_filter( 'woocommerce_webhook_deliver_async', '__return_false' );
+```
+
 4. Enregistrez le fichier. Les modifications prendront effet immédiatement.
 
 ---
@@ -76,11 +80,13 @@ Pour empêcher WooCommerce de désactiver automatiquement les crochets Web :
 1. Accédez aux fichiers de votre site WordPress en utilisant un client FTP ou le gestionnaire de fichiers du panneau de commande de l'hébergeur.
 2. Accédez au répertoire `wp-content/themes/[votre-thème]`.
 3. Ouvrez le fichier `functions.php` et ajoutez le code suivant :
-   ```php
-   add_filter( 'woocommerce_max_webhook_delivery_failures', function() {
-       return PHP_INT_MAX; // Tentatives d'envoi illimitées
-   } );
-   ```
+
+```php
+add_filter( 'woocommerce_max_webhook_delivery_failures', function() {
+    return PHP_INT_MAX; // Tentatives d'envoi illimitées
+} );
+```
+
 4. Enregistrez le fichier.
 
 ---

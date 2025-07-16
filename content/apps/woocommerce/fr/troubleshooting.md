@@ -29,8 +29,10 @@ Pour vérifier que les crochets Web ont été créés :
 3. Ensuite, cliquez sur **Crochets Web**.
    ![Saisie du code ref dans le champ SKU pour une variante WooCommerce](./images/010-woocommerce-webhooks.png)
 4. Trouvez les deux entrées suivantes :
-   - `HubRise {{id_point_de_vente}}: Order updated`
-   - `HubRise {{id_point_de_vente}}: Order created`
+
+- `HubRise {{id_point_de_vente}}: Order updated`
+- `HubRise {{id_point_de_vente}}: Order created`
+
 5. Vérifiez le statut de chaque entrée. Si l'un d'entre eux est défini sur **Inactive**, cliquez sur son nom pour changer le statut en **Active**.
 
 Si ces entrées sont présentes et actives, c'est signe que la connexion avec HubRise a bien été établie. Vous pouvez passer à l'étape suivante.
@@ -102,7 +104,7 @@ Suivez ces étapes :
    ![Option OAuth1 dans WooCommerce Bridge](./images/013-woocommerce-step-1-advanced.png)
 4. Poursuivez la configuration telle qu'elle est décrite dans [Connexion à HubRise](/apps/woocommerce/connect-hubrise).
 
-Vérifiez si cette modification a permis de résoudre les erreurs 401. Si ce n'est pas le cas, consultez les autres étapes de dépannage.
+Vérifiez si cette modification a permis de résoudre les erreurs 401.
 
 ### URL incorrecte lors de la configuration
 
@@ -131,8 +133,6 @@ Voici comment effectuer la correction :
 1. Réinitialiser la configuration de WooCommerce Bridge. Pour savoir comment faire, voir [Réinitialiser la configuration](/apps/woocommerce/configuration#reset).
 2. Reprenez la configuration du bridge depuis le début. À la première étape, saisissez l'URL de votre boutique WooCommerce, en veillant à ce qu'elle corresponde exactement à votre site internet (attention à la présence ou non de `www`).
 3. Poursuivez la configuration telle qu'elle est décrite dans [Connexion à HubRise](/apps/woocommerce/connect-hubrise).
-
-Voici la traduction en français :
 
 ## Erreurs 422
 
