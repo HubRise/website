@@ -67,7 +67,7 @@ add_filter( 'woocommerce_webhook_deliver_async', '__return_false' );
 
 ---
 
-**REMARQUE IMPORTANTE :** Ce paramètre affecte tous les crochets Web de votre boutique WooCommerce, pas seulement ceux de HubRise. Assurez-vous que tous vos points de terminaison de crochets Web peuvent traiter les requêtes rapidement pour éviter de ralentir l'étape de finalisation de commande pour vos clients.
+**REMARQUE IMPORTANTE :** Ce paramètre affecte tous les crochets Web de votre boutique WooCommerce. Vérifiez que vos crochets Web traitent les requêtes rapidement pour ne pas ralentir la finalisation des commandes.
 
 ---
 
