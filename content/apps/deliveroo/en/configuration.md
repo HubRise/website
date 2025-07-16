@@ -116,7 +116,15 @@ The **Menu description** and **Menu banner** replace the current description and
 
 ![Deliveroo Bridge configuration page, Location section](./images/017-configuration-page-location.png)
 
+### Opening Hours
+
 Select the **Enable automatic opening hours push** checkbox to update your opening hours in Deliveroo whenever they get updated in HubRise.
+
+### Order Acceptance and Preparation Time
+
+Select **Enable order acceptance and preparation time sync** to sync your Deliveroo store availability with HubRise.
+
+When enabled, changes to your store status and preparation times in HubRise automatically update on Deliveroo. This includes pausing orders, switching to busy mode, and adjusting preparation times from your EPOS or other connected apps.
 
 ## Inventory
 

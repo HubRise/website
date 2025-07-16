@@ -76,6 +76,7 @@ Uber Eats Bridge maps single sku products one-to-one to products on Uber Eats, s
 - Options
 - Tags including allergens
 - Tax rates
+- Time restrictions
 
 For products with multiple skus, Uber Eats Bridge creates a product, a modifier list, and one modifier for each sku.
 Options are attached to each sku as an extra layer of modifiers.
@@ -122,11 +123,12 @@ The list of skus is attached to the product as an array of modifiers.
 
 For every `sku` object in a product, Uber Eats Bridge sends the following information to Uber Eats:
 
-- `ref`: The ref of the sku, which will be passed along in orders
-- `name`: The name of the sku
-- `price`: The price difference with the main product, if present
+- `ref`: The ref of the sku, which will be passed along in orders.
+- `name`: The name of the sku.
+- `price`: The price difference with the main product, if present.
 - `barcodes`: Only the first barcode is sent, if present.
-- `option_list_refs`: The list of options attached to the sku
+- `restrictions`: Time restrictions are sent if `dow`, `start_time`, and `end_time` are set.
+- `option_list_refs`: The list of options attached to the sku.
 
 For more information about skus in the HubRise catalog, see [Skus](/developers/api/catalogs#skus).
 

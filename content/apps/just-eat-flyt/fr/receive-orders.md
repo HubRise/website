@@ -63,6 +63,11 @@ Ils sont généralement associés à des codes ref spécifiques dans votre logic
 
 ## Horaires des commandes
 
+Just Eat envoie les commandes à HubRise lorsqu’un coursier est assigné, ou lorsque le coursier se trouve à une distance correspondant au temps de préparation défini pour le point de vente.
+
+- Vous pouvez modifier le temps de préparation directement dans le portail Just Eat.
+- Si vous souhaitez que Just Eat envoie les commandes à HubRise dès qu’elles sont passées, contactez-nous à support@hubrise.com.
+
 Pour les commandes livrées par le restaurant, Just Eat fournit l'heure à laquelle le client attend la livraison de sa commande. Pour les autres types de commande, il fournit l'heure à laquelle la commande doit être prête à emporter, que ce soit par le client ou par un livreur. Dans les deux cas, l'horaire est transmis à HubRise via le champ `expected_time` (heure prévue). Cet horaire ne peut pas être modifié par le logiciel de caisse.
 
 ## Données clients
@@ -227,3 +232,9 @@ Les champs disponibles dans les requêtes sont les suivants :
 ### Prix total
 
 Le prix global réglé pour la commande, y compris les frais appliqués, est encodé dans le champ `total`.
+
+## Mise en pause {#pause}
+
+Lorsque la synchronisation de l'acceptation des commandes est activée, Just Eat Flyt Bridge synchronise le champ `order_acceptance` de HubRise vers Just Eat.
+
+Le champ `order_acceptance.mode` contrôle le statut du magasin : `normal` ou `busy` garde le magasin ouvert, tandis que `paused` le ferme.

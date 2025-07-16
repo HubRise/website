@@ -105,6 +105,7 @@ Ces plateformes utilisent l'API Just Eat via Flyt. Sur la page de configuration 
 | Frais               | Code ref frais de livraison                                 | `JE77`                                                                   |
 | Frais               | Code ref frais de service                                   | `JE66`                                                                   |
 | Frais               | Code ref frais d'emballage                                  | Créez un produit avec un prix positif variable et utilisez son **Code**. |
+| Frais               | Code ref supplément petite commande                         | Créez un produit avec un prix positif variable et utilisez son **Code**. |
 | Frais               | Code ref pourboire livreur                                  | Créez un produit avec un prix positif variable et utilisez son **Code**. |
 | Frais               | Code ref autres frais                                       | Créez un produit avec un prix positif variable et utilisez son **Code**. |
 | Paiements           | Code ref paiement en ligne                                  | `JEPM`                                                                   |
