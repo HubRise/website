@@ -63,7 +63,7 @@ To transmit orders immediately without waiting for the cron, you can enable sync
 
 ---
 
-**IMPORTANT NOTE:** This setting affects all webhooks in your WooCommerce store, not just HubRise webhooks. Ensure all your webhook endpoints can process requests quickly to avoid slowing down your customer checkout experience.
+**IMPORTANT NOTE:** This setting affects all webhooks in your WooCommerce store. Ensure your webhooks process requests quickly to avoid slowing down checkout.
 
 ---
 
