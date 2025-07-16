@@ -21,7 +21,7 @@ To receive Deliveroo orders in Next Order, you first need to connect Deliveroo B
 In the Deliveroo Bridge configuration page, use the following settings:
 
 | Section        | Name                                  | Ref code                                                  |
-| -------------- | ------------------------------------- |-----------------------------------------------------------|
+| -------------- | ------------------------------------- | --------------------------------------------------------- |
 | Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Accepted"`         |
 | Service types  | Deliveroo delivery ref code           | PLATFORM_DELIVERY-DELIVEROO                               |
 | Service types  | Restaurant delivery ref code          | STORE_DELIVERY-DELIVEROO                                  |
@@ -44,24 +44,24 @@ To receive Just Eat orders in Next Order via Flyt API, you first need to connect
 
 In the Just Eat Flyt Bridge configuration page, use the following settings:
 
-| Section        | Name                                     | Ref code                                                 |
-| -------------- | ---------------------------------------- |----------------------------------------------------------|
-| Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Accepted"`        |
-| Service types  | Just Eat delivery ref code               | PLATFORM_DELIVERY-JUST_EAT                               |
-| Service types  | Restaurant delivery ref code             | STORE_DELIVERY-JUST_EAT                                  |
-| Service types  | Takeaway ref code                        | PICKUP-JUST_EAT                                          |
-| Service types  | Send orders delivered by the platform as | `delivery orders`                                        |
+| Section        | Name                                     | Ref code                                                  |
+| -------------- | ---------------------------------------- | --------------------------------------------------------- |
+| Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Accepted"`         |
+| Service types  | Just Eat delivery ref code               | PLATFORM_DELIVERY-JUST_EAT                                |
+| Service types  | Restaurant delivery ref code             | STORE_DELIVERY-JUST_EAT                                   |
+| Service types  | Takeaway ref code                        | PICKUP-JUST_EAT                                           |
+| Service types  | Send orders delivered by the platform as | `delivery orders`                                         |
 | Special items  | Deposit option ref code                  | Create an option in Next Order and use its ref code. (\*) |
-| Discounts      | Discount ref code                        | DISCOUNT                                                 |
-| Charges        | Delivery charge ref code                 | DELIVERY                                                 |
-| Charges        | Service charge ref code                  | (leave empty)                                            |
-| Charges        | Bag fee ref code                         | (leave empty)                                            |
-| Charges        | Small order fee ref code                 | MIN_ORDER_VALUE                                          |
-| Charges        | Driver tip ref code                      | TIP                                                      |
-| Charges        | Other charge ref code                    | (leave empty)                                            |
-| Payments       | Online payment ref code                  | (leave empty)                                            |
-| Payments       | Cash payment ref code                    | (leave empty)                                            |
-| Customers      | Duplicate phone access code in [...]     | Tick this box                                           |
+| Discounts      | Discount ref code                        | DISCOUNT                                                  |
+| Charges        | Delivery charge ref code                 | DELIVERY                                                  |
+| Charges        | Service charge ref code                  | (leave empty)                                             |
+| Charges        | Bag fee ref code                         | (leave empty)                                             |
+| Charges        | Small order fee ref code                 | MIN_ORDER_VALUE                                           |
+| Charges        | Driver tip ref code                      | TIP                                                       |
+| Charges        | Other charge ref code                    | (leave empty)                                             |
+| Payments       | Online payment ref code                  | (leave empty)                                             |
+| Payments       | Cash payment ref code                    | (leave empty)                                             |
+| Customers      | Duplicate phone access code in [...]     | Tick this box                                             |
 
 (\*) Only applies if some of your products require a deposit.
 
@@ -71,24 +71,24 @@ To receive Menulog orders in Next Order via Flyt API, you first need to connect 
 
 In the Just Eat Flyt Bridge configuration page, use the following settings:
 
-| Section        | Name                                     | Ref code                                                |
-| -------------- | ---------------------------------------- |---------------------------------------------------------|
-| Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Accepted"`       |
-| Service types  | Just Eat delivery ref code               | PLATFORM_DELIVERY-MENULOG                               |
-| Service types  | Restaurant delivery ref code             | STORE_DELIVERY-MENULOG                                  |
-| Service types  | Takeaway ref code                        | PICKUP-MENULOG                                          |
-| Service types  | Send orders delivered by the platform as | `delivery orders`                                       |
+| Section        | Name                                     | Ref code                                                  |
+| -------------- | ---------------------------------------- | --------------------------------------------------------- |
+| Order statuses | Mark orders as Accepted                  | `when their HubRise status changes to "Accepted"`         |
+| Service types  | Just Eat delivery ref code               | PLATFORM_DELIVERY-MENULOG                                 |
+| Service types  | Restaurant delivery ref code             | STORE_DELIVERY-MENULOG                                    |
+| Service types  | Takeaway ref code                        | PICKUP-MENULOG                                            |
+| Service types  | Send orders delivered by the platform as | `delivery orders`                                         |
 | Special items  | Deposit option ref code                  | Create an option in Next Order and use its ref code. (\*) |
-| Discounts      | Discount ref code                        | DISCOUNT                                                |
-| Charges        | Delivery charge ref code                 | DELIVERY                                                |
-| Charges        | Service charge ref code                  | (leave empty)                                           |
-| Charges        | Bag fee ref code                         | (leave empty)                                           |
-| Charges        | Small order fee ref code                 | MIN_ORDER_VALUE                                         |
-| Charges        | Driver tip ref code                      | TIP                                                     |
-| Charges        | Other charge ref code                    | (leave empty)                                           |
-| Payments       | Online payment ref code                  | (leave empty)                                           |
-| Payments       | Cash payment ref code                    | (leave empty)                                           |
-| Customers      | Duplicate phone access code in [...]     | Tick this box                                           |
+| Discounts      | Discount ref code                        | DISCOUNT                                                  |
+| Charges        | Delivery charge ref code                 | DELIVERY                                                  |
+| Charges        | Service charge ref code                  | (leave empty)                                             |
+| Charges        | Bag fee ref code                         | (leave empty)                                             |
+| Charges        | Small order fee ref code                 | MIN_ORDER_VALUE                                           |
+| Charges        | Driver tip ref code                      | TIP                                                       |
+| Charges        | Other charge ref code                    | (leave empty)                                             |
+| Payments       | Online payment ref code                  | (leave empty)                                             |
+| Payments       | Cash payment ref code                    | (leave empty)                                             |
+| Customers      | Duplicate phone access code in [...]     | Tick this box                                             |
 
 ## Uber Eats
 
@@ -96,21 +96,21 @@ To receive Uber Eats orders in Next Order, you first need to connect Uber Eats B
 
 In the Uber Eats Bridge configuration page, use the following settings:
 
-| Section        | Name                                  | Ref code or value                                       |
-| -------------- | ------------------------------------- |---------------------------------------------------------|
-| Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Received"`       |
-| Service types  | Uber Eats delivery ref code           | PLATFORM_DELIVERY-UBER_EATS                             |
-| Service types  | Restaurant delivery ref code          | STORE_DELIVERY-UBER_EATS                                |
-| Service types  | Takeaway ref code                     | PICKUP-UBER_EATS                                        |
-| Service types  | Eat-in ref code                       | DINE_IN-UBER_EATS                                       |
-| Service types  | Send orders delivered by Uber Eats as | `delivery orders`                                       |
+| Section        | Name                                  | Ref code or value                                         |
+| -------------- | ------------------------------------- | --------------------------------------------------------- |
+| Order statuses | Mark orders as Accepted               | `when their HubRise status changes to "Received"`         |
+| Service types  | Uber Eats delivery ref code           | PLATFORM_DELIVERY-UBER_EATS                               |
+| Service types  | Restaurant delivery ref code          | STORE_DELIVERY-UBER_EATS                                  |
+| Service types  | Takeaway ref code                     | PICKUP-UBER_EATS                                          |
+| Service types  | Eat-in ref code                       | DINE_IN-UBER_EATS                                         |
+| Service types  | Send orders delivered by Uber Eats as | `delivery orders`                                         |
 | Special items  | Disposable items ref code             | Create a product in Next Order and use its ref code. (\*) |
-| Discounts      | Discount ref code                     | DISCOUNT                                                |
-| Charges        | Delivery charge ref code              | DELIVERY                                                |
-| Charges        | Small order fee ref code              | MIN_ORDER_VALUE                                         |
-| Charges        | Tip ref code                          | TIP                                                     |
-| Payments       | Online payment ref code               | (leave empty)                                           |
-| Payments       | Cash payment ref code                 | (leave empty)                                           |
-| Customers      | Duplicate phone access code in [...]  | Tick this box                                           |
+| Discounts      | Discount ref code                     | DISCOUNT                                                  |
+| Charges        | Delivery charge ref code              | DELIVERY                                                  |
+| Charges        | Small order fee ref code              | MIN_ORDER_VALUE                                           |
+| Charges        | Tip ref code                          | TIP                                                       |
+| Payments       | Online payment ref code               | (leave empty)                                             |
+| Payments       | Cash payment ref code                 | (leave empty)                                             |
+| Customers      | Duplicate phone access code in [...]  | Tick this box                                             |
 
 (\*) Only applies if you offer disposable items, such as cutlery, napkins, etc.
