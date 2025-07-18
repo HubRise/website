@@ -50,6 +50,21 @@ et
 }
 ```
 
+## Lightspeed Fermé
+
+Si le logiciel de caisse Lightspeed est fermé avant qu'une commande soit terminée, Lightspeed rejettera la commande et enverra le message d’erreur suivant :
+
+```json
+{
+"reason": "reload error: NF",
+"thirdPartyReference": "1b529|1k9kz-0|nvjhf3i",
+"businessLocationId": 713780614933345,
+"type": "ORDER",
+"status": "FAILURE",
+"completionMode": "IMMEDIATE"
+}
+```
+
 Ces erreurs apparaissent généralement dans les circonstances suivantes :
 
 - Aucun iPad n'est disponible pour recevoir des commandes.

@@ -50,6 +50,21 @@ and
 }
 ```
 
+## Lightspeed Closed
+
+If the Lightspeed EPOS is closed before an order is completed, Lightspeed will reject the order and send this error messages:
+
+```json
+{
+"reason": "reload error: NF",
+"thirdPartyReference": "1b529|1k9kz-0|nvjhf3i",
+"businessLocationId": 713780614933345,
+"type": "ORDER",
+"status": "FAILURE",
+"completionMode": "IMMEDIATE"
+}
+```
+
 These errors typically arise under the following circumstances:
 
 - No iPads are available to receive orders.
