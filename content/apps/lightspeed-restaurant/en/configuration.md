@@ -33,11 +33,13 @@ Orders are pushed to Lightspeed as soon as they are created in HubRise.
 
 If you want to delay orders until shortly before the delivery time, you can set the **Display time** field. If you leave it empty, orders will be displayed immediately on Lightspeed.
 
-### Pull orders from Lightspeed
+### Pull orders from Lightspeed {#pull-orders-from-lightspeed}
 
 By default, Lightspeed Restaurant Bridge does not pull Lightspeed sales into HubRise.
 
 To enable this feature, select **Enabled for dine-in sales** or **Enabled for all sales** from **Pull orders**.
+
+When pulling orders is enabled, an additional **Delivery account profiles** field appears. Use this field to specify which Lightspeed account profile codes should be treated as delivery orders. Enter one or more codes, separated by commas (for example: `DELIVERY, UBER_EATS, DELIVEROO`).
 
 ## Catalog
 

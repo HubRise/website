@@ -21,8 +21,6 @@ To start pulling Lightspeed orders into HubRise, you need to enable the feature 
 1. From the **Pull orders from Lightspeed** section, select the **Enabled for dine-in sales** or **Enabled for all paid sales** option, depending on your needs.
 1. Click **Save** to confirm.
 
-![Enable the feature to pull local Lightspeed orders to HubRise from the configuration page of Lightspeed Restaurant Bridge](./images/014-configuration-page.png)
-
 Lightspeed Restaurant Bridge fetches new orders every 30 seconds. There can be a delay of up to 30 seconds between the time an order is paid for and the time it appears in HubRise.
 
 ---
@@ -49,9 +47,19 @@ If the bridge is configured to mark orders as completed, Lightspeed orders are c
 
 Lightspeed Restaurant Bridge receives the complete information about the payment in a local order, including name, EPOS ref code, and amount.
 
-### Service Types
+### Service Type
 
-Dine-in sales in Lightspeed are created in HubRise as `eat-in` orders, while take-away sales are created as `collection` orders. There is no way to differentiate between take-away and delivery orders.
+Orders pulled from Lightspeed are assigned a service type in HubRise based on the following rules:
+
+- `eat_in`: Dine-in sales in Lightspeed.
+- `collection`: Take-away sales in Lightspeed, unless they are matched as delivery.
+- `delivery`: Orders with an account profile code matching those configured in the [Pull orders from Lightspeed](/apps/lightspeed-restaurant/configuration#pull-orders-from-lightspeed) section.
+
+Without delivery account profiles configured, all take-away orders will be marked as `collection` in HubRise, as there is no native way to distinguish delivery orders in Lightspeed.
+
+### Customer Data
+
+When the customer data is available in Lightspeed, it is pulled into HubRise. This includes the customer's name, phone number, email address, and address.
 
 ### Additional Information
 
