@@ -5,6 +5,13 @@ content:
   title: Pourquoi vous aimerez travailler avec HubRise
   description: Ne nous croyez pas sur parole, voici ce que nos partenaires et nos clients disent de nous.
   testimonials:
+    - quote: Chez Food Hero, nous gérons 10 marques, chacune avec plusieurs canaux de commande — plus de 40 au total. Nous avons testé plusieurs solutions, dont Deliverect, mais c’est HubRise que nous avons retenu. Les réponses arrivent dans la journée, et la mise en place a été d’une simplicité surprenante. Rien à voir avec les autres. Les commandes sont directement envoyées à Lightspeed et s’affichent sur les écrans cuisine TicknCook, avant d’être dispatchées par nos livreurs avec l’aide de Captain.ai. Menus, disponibilités, horaires, tout est centralisé. Nous avons atteint une optimisation maximale des opérations, de la production à la livraison.
+      person_details:
+        - Gael Di Giusto
+        - Co-Founder & CEO
+        - FOOD HERO, La Manufacture & Ghostacos, Suisse
+      filename:
+        - gael-di-giusto.png
     - quote: Nous fournissons des solutions de logiciels de caisse flexibles, innovantes et tournées vers l'avenir. HubRise nous aide à aller plus loin et à offrir un écosystème complet sans devoir faire les intégrations nous-mêmes. Nous avons intégré PAR PixelPoint avec HubRise, nos clients profitent maintenant des avantages. Les intégrations ont fonctionné de manière impeccable jusqu'à présent.
       person_details:
         - Keith Slowey
