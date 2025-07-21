@@ -17,7 +17,7 @@ At the heart of the system: HubRise, the middleware that makes it easy to integr
 
 ## From La Manufacture to Food Hero: Growth Built For Delivery
 
-It all began in 2016, with the opening of [La Manufacture](https://www.lamanufacture-restaurant.com/gundeli-fr.html): a cosy spot in Basel serving gourmet burgers, tartines, brunches, and homemade bagels. Gael and his brother developed an artisanal, home-cooked cuisine.
+It all began in 2016, with the opening of [La Manufacture](https://www.lamanufacture-restaurant.com/gundeli-en.html): a cosy spot in Basel serving gourmet burgers, tartines, brunches, and homemade bagels. Gael and his brother developed an artisanal, home-cooked cuisine.
 When the pandemic hit, the team accelerated its digital shift. An online ordering site was launched with [LivePepper](https://www.livepepper.com), followed soon after by a mobile app from the same provider.
 
 **In June 2021, a new milestone is reached: a second location is opened, exclusively dedicated to delivery**. The goal was to build a business model optimised for delivery, and viable in uncertain times.
@@ -38,7 +38,7 @@ Building on tools that had already proven effective at La Manufacture, Gael adde
 - [TicknCook](https://tickncook.com) for the Kitchen Display System, to simplify the management of different workstations by sending only the information relevant to each one,
 - [Captain.ai](https://www.captain.ai) to manage delivery, internal drivers, and customer tracking,
 - [Expedy](https://www.expedy.io/en) to automate receipt printing in Food Hero kitchens or at licensed partner sites,
-- and finally [HubRise to connect](https://www.hubrise.com/fr/apps) all these solutions together, for centralising menus, and ensuring that the orders, their statuses, inventories and opening hours are synchronised, with a single click, from one interface.
+- and finally [HubRise to connect](https://www.hubrise.com/apps) all these solutions together, for centralising menus, and ensuring that the orders, their statuses, inventories and opening hours are synchronised, with a single click, from one interface.
 
 > “Each brand has its own Uber Eats account, Just Eat... We manage over 40 of them. Without HubRise, we’d have to re-enter everything manually. Now, orders go straight into the till and kitchen screens. ”
 
