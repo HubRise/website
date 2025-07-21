@@ -19,18 +19,12 @@ content:
         - Slowey Systems, Ireland
       filename:
         keith_slowey.jpg
-    - quote: Without the integration to our EPOS, we could simply not have coped with the increase in online orders during the COVID lockdown. it went up 70% for some of our restaurants from one day to the other.
+    - quote: TicknCook is a production screen for fast food fully integrated with HubRise. TicknCook uses HubRise's API to easily integrate with all the EPOS solutions in their ecosystem. We also use its sign-up and login system. The integration was quick, their API is super easy to use. Communication with HubRise is also very smooth. Despite comprehensive online documentation, the HubRise team is surprisingly quick and efficient when it comes to answering our questions or solving specific needs.
       person_details:
-        - Alan Cadden
-        - General Manager
-        - Saba to Go, Ireland
-      filename: alan_cadden.jpg
-    - quote: As a Sage ERP Consultant with more than 13 years of experience implementing and customising Sage X3 and Sage Intacct solutions, I am passionate about software integration and development. HubRise bridges a significant gap in hospitality solutions, by offering an intuitive API that empowers developers to construct robust integrations. This enables the integration of various systems like ERP, CRM, and E-Commerce with EPOS software. HubRise's integration support team and partner team have been extremely helpful with my enquiries and I could not thank them enough for this experience.
-      person_details:
-        - Amir Shahi
-        - Sage Consultant
-        - GigaVee, Australia
-      filename: amir_shahi.jpg
+        - Thomas Rondepierre
+        - Co-founder & CTO
+        - TicknCook, France
+      filename: thomas_rondepierre.png
     - quote: I was a pilot in 2020 for the first connection to Uber Eats via HubRise. I was afraid of being a guinea pig, but not at all. My configuration requests at the start were resolved very quickly. The HubRise technical team was responsive and attentive. Since then, my Uber Eats orders arrive directly in my EPOS, the operational team is delighted, and so am I!
       person_details:
         - Camille Candela
@@ -43,12 +37,18 @@ content:
         - Manager
         - LivePepper, France
       filename: laurent_vigouroux.jpg
-    - quote: TicknCook is a production screen for fast food fully integrated with HubRise. TicknCook uses HubRise's API to easily integrate with all the EPOS solutions in their ecosystem. We also use its sign-up and login system. The integration was quick, their API is super easy to use. Communication with HubRise is also very smooth. Despite comprehensive online documentation, the HubRise team is surprisingly quick and efficient when it comes to answering our questions or solving specific needs.
+    - quote: As a Sage ERP Consultant with more than 13 years of experience implementing and customising Sage X3 and Sage Intacct solutions, I am passionate about software integration and development. HubRise bridges a significant gap in hospitality solutions, by offering an intuitive API that empowers developers to construct robust integrations. This enables the integration of various systems like ERP, CRM, and E-Commerce with EPOS software. HubRise's integration support team and partner team have been extremely helpful with my enquiries and I could not thank them enough for this experience.
       person_details:
-        - Thomas Rondepierre
-        - Co-founder & CTO
-        - TicknCook, France
-      filename: thomas_rondepierre.jpg
+        - Amir Shahi
+        - Sage Consultant
+        - GigaVee, Australia
+      filename: amir_shahi.jpg
+    - quote: Without integration with our EPOS, we simply couldn’t have handled the surge in online orders during the COVID lockdown. Some of our restaurants saw a 70% spike overnight — but the experience remained smooth and seamless.
+      person_details:
+        - Alan Cadden
+        - General Manager
+        - Saba to Go, Ireland
+      filename: alan_cadden.jpg
     - quote: The complete integration was done in a few days, our client was connected to his EPOS the same week. The support was top-notch and thanks to this integration we can connect ObyPay to a multitude of other EPOSes.
       person_details:
         - Arthur Broutin
