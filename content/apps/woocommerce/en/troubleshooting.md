@@ -141,7 +141,7 @@ To prevent new orphaned records, update WooCommerce to version 9.8 or later, whi
 
 ## 401 Errors
 
-If you see 401 errors in WooCommerce Bridge, it means that WooCommerce Bridge is unable to authenticate with WooCommerce.
+If you see `401` errors in WooCommerce Bridge, it means that WooCommerce Bridge is unable to authenticate with WooCommerce.
 
 ![401 errors in WooCommerce Bridge](./images/015-woocommerce-401-errors.png)
 
@@ -161,7 +161,7 @@ If the `HubRise - API` key is not present, it means it has been removed, and you
 
 ### HTTP Basic Authentication Fail
 
-If your WooCommerce setup does not work with the default HTTP Basic authentication method, it may also result in 401 errors. In such cases, you need to switch to the fallback OAuth1 method.
+If your WooCommerce setup does not work with the default HTTP Basic authentication method, it may also result in `401` errors. In such cases, you need to switch to the fallback OAuth1 method.
 
 To do this:
 
@@ -171,7 +171,7 @@ To do this:
    ![OAuth1 option in WooCommerce Bridge](./images/013-woocommerce-step-1-advanced.png)
 1. Proceed with the configuration as described in [Connect to HubRise](/apps/woocommerce/connect-hubrise).
 
-After making this change, verify if the 401 errors are resolved.
+After making this change, verify if the `401` errors are resolved.
 
 ### Incorrect URL During Setup
 
@@ -197,7 +197,7 @@ In this case, the error message indicates that the signature provided does not m
 
 Here is how to correct this:
 
-1. Reset the WooCommerce Bridge configuration. To find out how, see [Reset the Configuration](/apps/woocommerce/configuration#reset).
+1. Reset the WooCommerce Bridge configuration, see [Reset the Configuration](/apps/woocommerce/configuration#reset) for instructions.
 1. Configure the bridge again from scratch. When you reach the first step of the configuration, enter the correct URL of your WooCommerce store, ensuring the URL matches exactly with your website (pay attention to whether your website uses `www` or not).
 1. Proceed with the configuration as described in [Connect to HubRise](/apps/woocommerce/connect-hubrise).
 
