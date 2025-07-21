@@ -1,78 +1,87 @@
 ---
-title: "La Fée des Champs: How a Parisian Shop Synchronises Its Catalogue and Sales to Save Precious Time"
-path_override: la-fee-des-champs
-date: 2025-05-23
-author: Janaina Wittner
+title: "Dark Kitchen, Multi-Brand and Delivery: Behind the Scenes of a Swiss Model Powered by HubRise"
+path_override: dark-kitchen-food-hero
+date: 2025-07-21
+author: Sophie Lecomte
 meta:
-  title: "Case Study: La Fée des Champs | Blog | HubRise"
-  description: Discover how La Fée des Champs optimises its multichannel strategy through integration between its Kezia II EPOS and its Shopify e-commerce site via HubRise.
-excerpt: "La Fée des Champs is a Parisian shop specialising in natural cosmetics and zero-waste products. HubRise enables it to optimise its multichannel strategy by synchronising in real time its products, prices, and inventory between its Kezia II EPOS software and its Shopify e-commerce site. Automation that represents considerable time savings, reduces errors, and ensures customer satisfaction with every order."
+  title: "Case Study: Food Hero | Blog | HubRise"
+  description: Food Hero streamlines 10 Dark Kitchen restaurant brands, from order to delivery, with smooth, centralised management thanks to HubRise.
+excerpt: "How do you manage 10 restaurant brands, multiple sales channels, and dozens of accounts on food delivery platforms—all from a single location? In Basel, Food Hero rose to the challenge. With HubRise as its backbone, this Swiss business shows how a connected ecosystem can turn complexity into agility."
 ---
 
-**How does La Fée des Champs, a Parisian shop, synchronise its sales and save precious time?**
+## A Swiss Dark Kitchen with Orchestrated Growth
 
-The convergence between physical shop and online store represents a major operational challenge for many store managers. [La Fée des Champs](https://www.lafeedeschamps.fr), a small shop offering natural cosmetics and zero-waste products tucked away in the Butte aux Cailles district in Paris, overcame this challenge by relying on HubRise to synchronise its catalogue, prices, and inventory in real time between its [Kezia II EPOS by JDC](https://www.jdc.fr) and its e-commerce site [Shopify](https://www.shopify.com). A case study of a simple and effective technical integration, delivering tangible benefits: streamlined operations and satisfied customers with every order.
+[Food Hero](https://foodherogroup.ch/english.html) is the story of a Dark Kitchen born in a time of crisis, now a model of technological efficiency. In Switzerland, [Gael di Giusto](https://www.linkedin.com/in/gael-di-giusto-7a8a4349/?) runs 10 restaurant brands from a single location, thanks to a connected infrastructure built from the ground up for agility.
 
-## About La Fée des Champs
+At the heart of the system: HubRise, the middleware that makes it easy to integrate business tools.
 
-### An eco-friendly, multichannel adventure
+## From La Manufacture to Food Hero: Growth Built For Delivery
 
-Founded by Nadia Dumont-Martinez, who is committed to more responsible consumption, La Fée des Champs offers a selection of natural cosmetics and zero-waste products crafted by small French producers. To reach both local residents and a wider clientele, Nadia quickly adopted a multichannel strategy:
+It all began in 2016, with the opening of [La Manufacture](https://www.lamanufacture-restaurant.com/gundeli-fr.html): a cosy spot in Basel serving gourmet burgers, tartines, brunches, and homemade bagels. Gael and his brother developed an artisanal, home-cooked cuisine.
+When the pandemic hit, the team accelerated its digital shift. An online ordering site was launched with [LivePepper](https://www.livepepper.com), followed soon after by a mobile app from the same provider.
 
-- a physical shop in the heart of the Butte aux Cailles district, in the 13th arrondissement in Paris;
-- a website on Shopify, created autonomously and launched in September 2024;
-- corporate exhibitions to showcase her products to new clients.
+**In June 2021, a new milestone is reached: a second location is opened, exclusively dedicated to delivery**. The goal was to build a business model optimised for delivery, and viable in uncertain times.
 
-While Nadia's journey — a literature graduate who spent several years in IT before embarking on an eco-friendly venture — is inspiring, it's the technical aspect of her organisation that draws our attention: how can one effectively manage products, inventory, and prices across multiple channels without increasing the risk of manual errors?
+That was the birth of Food Hero: a sales point with no dining area, initially hosting 7, then 10 brands. Among them: **Gringos** (Mexican), **Waku Waku** (Japanese sandwiches), **MOB** (Californian burgers), and **Nonna** (fresh pasta). A model designed to appeal to families, groups, and businesses.
 
-![Nadia Dumont-Martinez in her shop La Fée des Champs](../images/001_nadia-dumont-martinez.png)
+![FOOD HERO, artisanal and homemade cooking](../images/001_food-hero-cuisine-artisanale-faite-maison.jpeg)
+© Food Hero
 
-## Before HubRise
+## A Tech Stack Designed for Agility
 
-### A Kezia II EPOS and an online shop on Shopify
+Running 10 brands, each with multiple ordering channels, can quickly become a logistical nightmare. That’s where Food Hero’s connected ecosystem comes into play.
+Building on tools that had already proven effective at La Manufacture, Gael added others, tailored to the new Dark Kitchen model, to maximise efficiency from production to delivery.
 
-From the creation of her e-commerce site, Nadia was confronted with the lack of integration between her Kezia II EPOS and her Shopify store. To avoid double entry of the product catalogue and centralise orders and inventory data, she sought an automated synchronisation solution.
+- [LivePepper](https://www.livepepper.com) for the Food Hero white label and multi-brand online ordering website, and mobile app,
+- The platforms Uber Eats, Just Eat Takeaway, and Smood with a dedicated page for each of the brands,
+- [Lightspeed K Series](https://www.lightspeedhq.com) as the EPOS system, used to register walk-in or phone orders,
+- [TicknCook](https://tickncook.com) for the Kitchen Display System, to simplify the management of different workstations by sending only the information relevant to each one,
+- [Captain.ai](https://www.captain.ai) to manage delivery, internal drivers, and customer tracking,
+- [Expedy](https://www.expedy.io/en) to automate receipt printing in Food Hero kitchens or at licensed partner sites,
+- and finally [HubRise to connect](https://www.hubrise.com/fr/apps) all these solutions together, for centralising menus, and ensuring that the orders, their statuses, inventories and opening hours are synchronised, with a single click, from one interface.
 
-Without this synchronisation, Nadia had to manually update prices and inventory each day, with all the risks of human errors — such as out-of-stock products appearing online and discrepancies in accounting. "It was a daily headache," she confides.
+> “Each brand has its own Uber Eats account, Just Eat... We manage over 40 of them. Without HubRise, we’d have to re-enter everything manually. Now, orders go straight into the till and kitchen screens. ”
 
-## Discovering HubRise
+## One Menu, 10 Brands, Seamless Management
 
-### HubRise, a privileged JDC integration partner, appeared as the obvious answer
+One of the standout features of Gael’s setup, is the ability to order dishes from multiple brands in a single order—via a unified site built by LivePepper. Today, a single menu, synchronised via HubRise, makes everything easier to manage.
 
-"I was immediately reassured to know that JDC and HubRise work hand in hand," explains Nadia. This close relationship allowed her to take the plunge without apprehension. This proximity was the guarantee of smooth support and quick resolution of any possible incidents.
+> “We hide specific items depending on the brand. If there’s a stock issue—fries, for example—we can remove them from all menus with one click. ”
 
-## The connection between Kezia II and Shopify via HubRise
+This approach also allows for real-time availability management while ensuring consistency across platforms.
 
-### An assisted setup, mapping and testing
+## Cross-Brand Orders and In-House Delivery
 
-JDC put Nadia in contact with HubRise so that she could benefit from personalised support in configuring the solutions to be connected. After a few exchanges, the HubRise support team explained how to create her account on HubRise, connect Shopify, refine the mapping of ref codes and verify online sales were correctly reported in the EPOS. JDC, on their side, handled the connection between Kezia II and HubRise. A few weeks of tests and some adjustments, particularly on inventories, were enough to get the connection fully operational.
+One of the standout features of Gael’s setup, is the ability to order dishes from multiple brands in a single order—via a unified site built by LivePepper.
 
-## Concrete results
+> “Whether you're with friends or at the office—someone wants a burrito, someone else a burger— no problem, it's all-in-one. ”
 
-### Synchronised sales, always up-to-date stocks
+On the delivery side, Food Hero uses Captain.ai and its own fleet (e-bikes, cars). Customers can track their orders live on a map.
+Uber Eats still brings in the largest order volumes, but their own site is gaining ground, thanks to word of mouth and direct customer interactions. Increasing orders through their white-label site designed by LivePepper, is a strategic goal.
 
-Thanks to HubRise, Nadia explains that the synchronisation between the Kezia II EPOS and the Shopify e-commerce site is now fully automated: "When an online purchase is made, it is instantly recorded in the EPOS as a classic sale, while being identified as coming from the site — a crucial point for accounting. Stocks are updated in real-time in both directions, whether the sale occurs in-store or online. Moreover, any price changes made in the EPOS are automatically reflected on the site, without any manual intervention. Similarly, when restocking in the store, inventories are immediately updated on Shopify. It was so easy, I couldn't believe it!"
+## Events, Brand Licensing, and Growth Plans
 
-## Future perspectives
+Food Hero isn’t limited to digital. For the summer, the team set up a rooftop kitchen at a local club, serving a mixed-brand menu.
+Another growth area: brand licensing.
 
-While Nadia doesn't plan to connect any other solutions for now, she knows that HubRise offers the flexibility to add additional apps in the future thanks to its ecosystem of integrated apps (Mailchimp, ERP, CRM…).
+> “We offer branding, recipes, and processes. No long-term commitment: partners can stop every three months if they like. ”
 
-"Once configured, HubRise is a tool that is simple to use," says Nadia, then she adds: "when creating a new product, only two elements need to be entered to activate the synchronisation. Just tick a box in Kezia II and provide the unique ID of the product in Shopify. This identification ensures precise matching between the two systems, avoiding any mix-up of products through a link based on this unique ID."
+HubRise plays a central role in this development. Thanks to its integration with Expedy, each partner site can print incoming orders locally, while the Food Hero team handles sales reports and accounting remotely through their usual tools.
 
-For any retailer looking to secure and automate the synchronisation between EPOS and e-commerce, the connection between Kezia II by JDC and Shopify via HubRise is a proven and accessible solution, even for a small business such as La Fée des Champs. Simple to set up, cost-effective, and supported by a responsive technical support team, it helps avoid manual entry and synchronisation errors, freeing up time to focus on what matters most: growing the business.
+## A Tailor-Made Collaboration with HubRise
 
-## And what about HubRise?
+Over time, Gael has refined his production tools with partners like TicknCook.
 
-HubRise, middleware that facilitates integrations, was designed to meet the needs of local businesses as well as software publishers, regardless of their industry.
+> “When we started in 2021, TicknCook was just launching. We worked closely together to shape or refine features like routing items to hot or cold stations, the parcel prep table, and so on.  ”
 
-### For retailers
+Nothing was left to chance. Gael tested several tools and integration solutions with their ecosystem, including Deliverect. But in the end, HubRise won out, offering the right mix of features, responsiveness, and cost.
 
-By enabling different software solutions, even disparate ones, to connect, HubRise allows you to gain in peace of mind, productivity, and profitability.
+> “HubRise added licence management at our request. We get answers within a day. And honestly, setup was super simple. Invisible to the end customer, but essential for multiple brands and tools to work together seamlessly. ”
 
-### For software publishers
+Food Hero shows what a well-designed digital ecosystem can achieve: experiment, grow, scale—without complicating operations. HubRise is the backbone. Invisible to the end customer, but essential for multiple brands and tools to work together seamlessly.
 
-By facilitating the integration of your solutions into your clients' IT and technology environments, HubRise enables you to focus on your core business. You can also offer your clients combinations of solutions they previously didn't have access to, an effective way to secure long-term loyalty.
-
-Do you have a question, idea, or project? Let's talk about it: contact@hubrise.com!
+___
 
 To stay informed about new integrations to the ecosystem of integrated apps, follow HubRise on [LinkedIn](https://www.linkedin.com/company/hubrise).
+
+___
