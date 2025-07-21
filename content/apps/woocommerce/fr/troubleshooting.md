@@ -163,7 +163,7 @@ S'il n'y a pas de clé `HubRise - API`, cela signifie qu'elle a été supprimée
 
 ### Échec de l'authentification Basic HTTP
 
-Si votre configuration WooCommerce ne fonctionne pas avec la méthode d'authentification Basic HTTP par défaut, cela peut également entraîner des erreurs 401. Vous devez alors passer à la méthode OAuth1.
+Si votre configuration WooCommerce ne fonctionne pas avec la méthode d'authentification de base HTTP par défaut, cela peut également entraîner des erreurs `401`. Vous devez alors passer à la méthode OAuth1.
 
 Suivez ces étapes :
 
@@ -199,7 +199,7 @@ Dans ce cas, le message d'erreur indique que la signature fournie ne correspond 
 
 Voici comment effectuer la correction :
 
-1. Réinitialiser la configuration de WooCommerce Bridge, voir [Réinitialiser la configuration](/apps/woocommerce/configuration#reset) pour les instructions.
+1. Réinitialiser la configuration du bridge WooCommerce, voir [Réinitialiser la configuration](/apps/woocommerce/configuration#reset) pour les instructions.
 2. Reprenez la configuration du bridge depuis le début. À la première étape, saisissez l'URL de votre boutique WooCommerce, en veillant à ce qu'elle corresponde exactement à votre site internet (attention à la présence ou non de `www`).
 3. Poursuivez la configuration telle qu'elle est décrite dans [Connexion à HubRise](/apps/woocommerce/connect-hubrise).
 
