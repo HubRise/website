@@ -32,7 +32,7 @@ app_info:
 
 ---
 
-**IMPORTANT NOTE:** This documentation is available <Link href="/fr/apps/SOLUTION" addLocalePrefix={false}>in French only</Link>.
+**IMPORTANT NOTE:** The full documentation is available <Link href="/fr/apps/SOLUTION" addLocalePrefix={false}>in French only</Link>.
 
 ---
 

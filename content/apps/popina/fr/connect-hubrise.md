@@ -16,7 +16,7 @@ meta:
 
 ## Delivera {#delivera}
 
-**Delivera** sert d'application intermédiaire pour établir la connexion entre Popina et HubRise. Pour procéder à la configuration, accédez à Delivera via le site web : https://delivera-popina.web.app.
+**Delivera** sert d'application intermédiaire pour établir la connexion entre Popina et HubRise. Pour procéder à la configuration, accédez à Delivera via le site web : https://delivera.web.app/login.
 
 Vos identifiants Delivera sont les mêmes que ceux de Popina.
 
@@ -24,7 +24,7 @@ Vos identifiants Delivera sont les mêmes que ceux de Popina.
 
 Pour connecter Popina à HubRise, suivez ces étapes :
 
-1. Ouvrez [Delivera](https://delivera-popina.web.app). Pour plus d'informations, voir la section [Delivera](#delivera) de cette documentation.
+1. Ouvrez [Delivera](https://delivera.web.app/login). Pour plus d'informations, voir la section [Delivera](#delivera) de cette documentation.
 2. Dans le menu, sélectionnez **HubRise**, puis cliquez sur **CONNEXION**. Vous êtes redirigé vers l'interface HubRise.
 3. Si vous avez plusieurs points de vente, choisissez le point de vente à connecter. Si le point de vente sélectionné possède plusieurs listes de clients ou catalogues, cliquez sur **Suivant** pour afficher les listes déroulantes correspondantes, puis sélectionnez les options voulues.
 4. Cliquez sur **Autoriser**. Vous êtes redirigé vers l'interface de Popina.
@@ -49,7 +49,7 @@ L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers �
 
 ## Déconnecter Popina
 
-1. Ouvrez [Delivera](https://delivera-popina.web.app). Pour plus d'informations, voir la section [Delivera](#delivera) de cette documentation.
+1. Ouvrez [Delivera](https://delivera.web.app/login). Pour plus d'informations, voir la section [Delivera](#delivera) de cette documentation.
 2. Dans le menu, sélectionnez **HubRise**
 3. Cliquez sur **DECONNEXION** et confirmez.
 4. Popina est déconnecté de HubRise.

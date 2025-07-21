@@ -83,7 +83,7 @@ Uber Eats permet deux types de structures de catégories :
 - **Niveau unique** : toutes les catégories sont au même niveau.
 - **Deux niveaux** : les catégories sont imbriquées (par exemple, Épicerie Salée → Biscuits & Crackers).
 
-Les restaurants utilisent toujours un niveau unique, tandis que les commerces de détail peuvent choisir une hiérarchie à deux niveaux si elle est activée par le support Uber Eats. Si vous n'êtes pas sûr, gardez **Niveau unique** sélectionné.
+Les restaurants utilisent toujours un niveau unique, tandis que les commerces de détail peuvent choisir une hiérarchie à deux niveaux si elle est activée par le support Uber Eats. En cas de doute, laissez **Niveau unique** sélectionné.
 
 ### Menus spéciaux
 
@@ -94,9 +94,10 @@ Pour configurer des menus spéciaux :
 1. Assurez-vous que votre catalogue contient les variantes nécessaires.
 2. Sélectionnez le nombre de menus spéciaux que vous souhaitez configurer (jusqu'à 5) dans le menu déroulant.
 3. Pour chaque menu spécial :
-   - Sélectionnez les jours de la semaine où le menu doit être actif.
-   - Sélectionner l'heure de début (**De**) et l'heure de fin (**A**) du menu.
-   - Choisissez les variantes de catalogue à utiliser pour la livraison et le retrait durant cette période.
+
+- Sélectionnez les jours de la semaine où le menu doit être actif.
+- Sélectionner l'heure de début (**De**) et l'heure de fin (**A**) du menu.
+- Choisissez les variantes de catalogue à utiliser pour la livraison et le retrait durant cette période.
 
 Lorsque des menus spéciaux sont configurés, Uber Eats basculera automatiquement vers la variante appropriée du catalogue en fonction du délai de commande prévu, que ce soit pour la livraison ou le retrait.
 
@@ -110,9 +111,17 @@ Sélectionnez la case **Activer l'envoi automatique du catalogue** pour synchron
 
 ![Page de configuration Uber Eats Bridge, section Point de vente](./images/015-uber-eats-configuration-page-location.png)
 
+### Horaires d'ouverture
+
 Sélectionnez **Activer l'envoi automatique des horaires d'ouverture** pour synchroniser vos horaires d'ouverture HubRise avec Uber Eats. Pour activer cette option, vous devez d'abord définir vos horaires d'ouverture dans HubRise, puis activer l'envoi automatique du catalogue.
 
 Si vous utilisez des horaires d'ouverture spécifiques pour Uber Eats, vous pouvez les définir comme tels en sélectionnant **Utiliser des horaires d'ouverture spécifiques pour Uber Eats**, puis en saisissant vos horaires d'ouverture. Cette option remplacera les horaires définis dans HubRise.
+
+### Acceptation des commandes et temps de préparation
+
+Sélectionnez **Activer la synchronisation de l'acceptation des commandes et du temps de préparation** pour synchroniser la disponibilité de votre enseigne Uber Eats avec HubRise.
+
+Lorsque cette option est activée, les changements du statut de votre enseigne et du temps de préparation dans HubRise se mettent automatiquement à jour sur Uber Eats. Cela inclut la mise en pause des commandes, le passage en mode forte affluence, et l'ajustement du temps de préparation depuis votre logiciel de caisse ou d'autres applications connectées.
 
 ## Inventaire
 

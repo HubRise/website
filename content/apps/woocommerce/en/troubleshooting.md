@@ -14,11 +14,13 @@ The first step to receive orders in HubRise is to connect WooCommerce to HubRise
 
 If you have connected WooCommerce to HubRise, but you are not receiving orders in HubRise, check the following items.
 
-### Check WooCommerce Webhooks
+### Check WooCommerce Webhooks {#check-woocommerce-webhooks}
 
 When you connect WooCommerce Bridge, it creates two webhooks on your WooCommerce website. These webhooks are essential to transmit orders from WooCommerce to HubRise.
 
 Not only should you verify the presence of these webhooks, but you also need to ensure that their status is **Active**. If the status is **Inactive**, the webhooks will not work. You will need to reactivate them by clicking on their names.
+
+If you find the webhooks have been disabled, this often indicates that WooCommerce has not been configured to prevent automatic webhook disabling - see [Webhooks Automatically Disabled](#webhooks-automatically-disabled) below.
 
 To check that the webhooks have been created:
 
@@ -54,21 +56,19 @@ To verify that your test order was transmitted to HubRise, follow these steps:
 
 If you can see the order, the connection between WooCommerce and HubRise is working correctly.
 
+## Webhooks Automatically Disabled {#webhooks-automatically-disabled}
+
+If your WooCommerce webhooks are being automatically disabled, this is likely due to repeated delivery failures. By default, WooCommerce disables webhooks after 5 consecutive failed attempts.
+
+To prevent webhooks from being disabled automatically, see detailed instructions in [Prevent Automatic Webhook Disabling](/apps/woocommerce/connect-hubrise#prevent-automatic-webhook-disabling) in the Connect to HubRise documentation.
+
+If webhooks have already been disabled, you'll need to manually reactivate them by following the steps in [Check WooCommerce Webhooks](#check-woocommerce-webhooks) above.
+
 ## Orders Received in HubRise With a Delay
 
-By default, orders are transmitted from WooCommerce to HubRise by a process called a **cron**. This process runs every few minutes and transmits all orders that have not been transmitted yet. This can delay order creation and status updates.
+By default, WooCommerce processes webhooks asynchronously, which can delay order transmission to HubRise by several minutes.
 
-You can opt to transmit orders immediately, without waiting for the cron to run. This is called **synchronous webhooks**. To enable synchronous webhooks, follow these steps:
-
-1. Access your WordPress site files using an FTP client or your hosting control panel's file manager.
-1. Navigate to the `wp-content/themes/[your-theme]` directory, where `[your-theme]` is the folder of your active theme.
-1. Open the `functions.php` file and append the following code snippet at the end of the file:
-   ```
-   add_filter( 'woocommerce_webhook_deliver_async', '__return_false' );
-   ```
-1. Save the file and the changes will take effect immediately.
-
-If you are not sure how to do edit the `functions.php` file, contact the developer of your WooCommerce website.
+To enable immediate order transmission, you need to configure synchronous webhook delivery. For detailed instructions, see [Enable Synchronous Webhook Delivery](/apps/woocommerce/connect-hubrise#enable-synchronous-webhook-delivery) in the Connect to HubRise documentation.
 
 ## 401 Errors
 

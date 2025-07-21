@@ -50,6 +50,7 @@ Dans cette section, vous pouvez spécifier les codes ref relatifs aux frais suiv
 - Frais de service
 - Frais d'emballage
 - Pourboire livreur
+- Supplément petite commande
 - Autres frais
 
 ### Paiements
@@ -76,6 +77,24 @@ Les variantes de catalogue vous donnent la flexibilité de désactiver des artic
 
 Si votre catalogue comprend des variantes, vous pouvez sélectionner celles que vous souhaitez utiliser. Vous pouvez choisir des variantes différentes pour les menus livraison et vente à emporter, ou utiliser la même pour les deux menus. Lorsque la valeur **(aucune)** est sélectionnée, tous les articles ainsi que leurs prix standards sont envoyés à Just Eat.
 
+### Menus spéciaux
+
+Les menus spéciaux vous permettent de planifier des variantes de catalogue à des jours et des heures spécifiques. Cette fonctionnalité est utile pour proposer des menus distincts pour le petit déjeuner et le déjeuner, par exemple.
+
+Pour configurer des menus spéciaux :
+
+1. Assurez-vous que votre catalogue contient les variantes nécessaires.
+2. Sélectionnez le nombre de menus spéciaux que vous souhaitez configurer (jusqu'à 5) dans le menu déroulant.
+3. Pour chaque menu spécial :
+
+- Sélectionnez les jours de la semaine où le menu doit être actif.
+- Sélectionner l'heure de début (**De**) et l'heure de fin (**A**) du menu.
+- Choisissez les variantes de catalogue à utiliser pour la livraison et le retrait durant cette période.
+
+Lorsque des menus spéciaux sont configurés, Just Eat basculera automatiquement vers la variante de catalogue appropriée en fonction de l'heure souhaitée de la commande, que ce soit pour la livraison ou le retrait.
+
+S'il n'y a pas de menu spécial actif à un moment donné, Just Eat utilisera les variantes de catalogue par défaut configurées dans les paramètres **Variante de catalogue à envoyer** pour la livraison et la vente à emporter.
+
 ### Types de service
 
 Dans cette section, vous pouvez spécifier les types de service que votre restaurant propose, tels que la livraison, la vente à emporter, ou les deux. Vos préférences seront envoyées à Just Eat lors du prochain envoi du catalogue.
@@ -88,6 +107,8 @@ Sélectionnez la case **Activer l'envoi automatique du catalogue** pour synchron
 
 ![Page de configuration Just Eat Flyt Bridge, section Point de vente](./images/015-just-eat-configuration-page-location.png)
 
+### Horaires d'ouverture
+
 Sélectionnez **Activer l'envoi automatique des horaires d'ouverture** pour synchroniser vos horaires d'ouverture HubRise avec Just Eat. Pour activer cette option, vous devez d'abord définir vos horaires d'ouverture dans HubRise, puis activer l'envoi automatique du catalogue.
 
 Si vous utilisez des horaires d'ouverture spécifiques pour Just Eat, vous pouvez les définir comme tels en sélectionnant **Utiliser des horaires d'ouverture spécifiques pour Just Eat**, puis en saisissant vos horaires d'ouverture pour la livraison et la vente à emporter, en fonction des types de service que vous proposez. Cette option remplacera les horaires définis dans HubRise.
@@ -95,6 +116,18 @@ Si vous utilisez des horaires d'ouverture spécifiques pour Just Eat, vous pouve
 ---
 
 **REMARQUE IMPORTANTE :** Par défaut, les heures de fermeture pour la livraison sont définies une demi-heure plus tôt sur le restaurant Just Eat par rapport à la valeur que vous avez spécifiée dans Just Eat Flyt Bridge ou HubRise. Les heures de fermeture pour la vente à emporter, en revanche, restent inchangées.
+
+---
+
+### Acceptation des commandes
+
+Sélectionnez **Activer l'acceptation des commandes** pour synchroniser la disponibilité de votre magasin Just Eat avec HubRise.
+
+Lorsque cette option est activée, vous pouvez mettre en pause et réactiver votre magasin Just Eat depuis votre logiciel de caisse ou d'autres applications connectées.
+
+---
+
+**REMARQUE IMPORTANTE :** La synchronisation de l'acceptation des commandes n'est disponible que dans certains pays, notamment l'Australie, l'Espagne, le Royaume-Uni, l'Irlande et l'Italie.
 
 ---
 

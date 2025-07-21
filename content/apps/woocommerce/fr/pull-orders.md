@@ -14,7 +14,11 @@ Cette page décrit les informations sur les commandes que HubRise reçoit de Woo
 
 ## Articles et options
 
-Les commandes WooCommerce contiennent les informations complètes sur les articles et les options, par exemple le nom, le code ref du logiciel de caisse, la quantité et le prix. Le prix des options WooCommerce est toujours équivalent à zéro. Les promotions ne sont pas prises en charge.
+Les commandes WooCommerce contiennent toutes les informations nécessaires pour chaque produit, notamment le nom, le code ref, la quantité et le prix.
+
+Les lignes d'options contiennent le nom de l'option et, lorsque disponible, un code ref. Ce code est extrait si la valeur de l’option suit le format `Nom de l’option [[CODE_REF]]` ; sinon, la valeur complète est utilisée comme nom et aucun code ref n’est transmis. Les prix des options sont toujours à zéro dans WooCommerce.
+
+Les promotions (deals) ne sont pas prises en charge.
 
 De même, les avis formulés par les clients sur des produits individuels ne sont pas pris en charge dans WooCommerce. Si vous comptez sur ces avis pour les instructions de préparation ou de présentation (par exemple « Cuisson à point » ou « Couper en tranches »), vous devez ajouter les articles correspondants dans votre logiciel de caisse, puis les inclure en tant qu'options dans le menu WooCommerce. Ils seront ainsi correctement encodés.
 

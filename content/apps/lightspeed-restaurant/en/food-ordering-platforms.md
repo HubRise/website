@@ -105,6 +105,7 @@ These platforms use the Just Eat via Flyt API. In the Just Eat Flyt Bridge confi
 | Charges        | Delivery charge ref code                 | `JE77`                                                              |
 | Charges        | Service charge ref code                  | `JE66`                                                              |
 | Charges        | Bag fee ref code                         | Create a product with variable positive price and use its **Code**. |
+| Charges        | Small order fee ref code                 | Create a product with variable positive price and use its **Code**. |
 | Charges        | Driver tip ref code                      | Create a product with variable positive price and use its **Code**. |
 | Charges        | Other charge ref code                    | Create a product with variable positive price and use its **Code**. |
 | Payments       | Online payment ref code                  | `JEPM`                                                              |

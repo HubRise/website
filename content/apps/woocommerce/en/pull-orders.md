@@ -14,7 +14,11 @@ This page describes the information that HubRise receives from WooCommerce for y
 
 ## Items and Options
 
-WooCommerce orders contain the complete information about items and options, including name, POS ref code, quantity, and price. However, WooCommerce options have always zero as a price. Deals are not supported.
+WooCommerce orders provide complete information for each product item, including the name, ref code, quantity, and price.
+
+Option lines supply the option name and, when available, a ref code. The ref code is extracted when the option value follows the pattern `Option Name [[REF_CODE]]`; otherwise the entire value is used as the name and no ref is sent. Option prices are always zero in WooCommerce.
+
+Deals are not supported.
 
 Customers' comments on single products are not supported on WooCommerce. If you rely on these comments for cooking or serving instructions (for example, "Medium rare cooking", or "Cut in slices"), you should add the corresponding items in your EPOS and include them as options in the WooCommerce menu, so that they are correctly encoded.
 
