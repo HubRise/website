@@ -8,6 +8,12 @@ meta:
   description: Réceptionner et modifier le statut des commandes HubRise reçues dans Zelty. Connectez vos apps et synchronisez vos données.
 ---
 
+---
+
+**REMARQUE IMPORTANTE :** Une intégration plus complète est disponible. Consultez [Zelty Bridge](/apps/zelty-bridge/overview) pour bénéficier de fonctionnalités avancées.
+
+---
+
 Une fois HubRise connecté à Zelty et les codes ref associés, aucune autre action n'est nécessaire. Votre logiciel de caisse Zelty reçoit automatiquement toutes les commandes envoyées à HubRise par d'autres applications.
 
 ## Recevoir des commandes
