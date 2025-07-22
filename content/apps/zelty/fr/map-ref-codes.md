@@ -8,6 +8,12 @@ meta:
   description: Instructions pour associer les codes ref des produits Zelty avec d'autres applications connectées à HubRise pour la synchronisation des données.
 ---
 
+---
+
+**REMARQUE IMPORTANTE :** Une intégration plus complète est disponible. Consultez [Zelty Bridge](/apps/zelty-bridge/overview) pour bénéficier de fonctionnalités avancées.
+
+---
+
 Pour recevoir des commandes depuis HubRise, Zelty a besoin de codes ref spécifiques pour chaque produit et option. Vous devez vous assurer que vos applications connectées utilisent les bons codes ref pour que les commandes soient traitées correctement.
 
 Pour obtenir les codes ref, vous devez exporter votre carte. L'export inclut les codes ref des produits, menus et options.

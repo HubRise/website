@@ -6,12 +6,20 @@ layout: documentation
 meta:
   title: Présentation générale | Zelty | HubRise
   description: Présentation générale de Zelty, les raisons de connecter votre caisse à HubRise et les fonctionnalités de l'intégration avec HubRise.
+gallery:
+  - __gallery-001.png
 app_info:
   category: Logiciels de caisse
   availability: France
   price_range:
   website: https://zelty.fr
   contact: contact@zelty.fr / +33 9 72 53 55 72
+---
+
+---
+
+**REMARQUE IMPORTANTE :** Une intégration plus complète est disponible. Consultez [Zelty Bridge](/apps/zelty-bridge/overview) pour bénéficier de fonctionnalités avancées.
+
 ---
 
 ## Description
@@ -32,7 +40,7 @@ Connecter Zelty à HubRise permet à votre logiciel de caisse de :
 
 ---
 
-**REMARQUE IMPORTANTE :** L'envoi des commandes et des informations clients à HubRise sera bientôt possible. Contactez Zelty pour plus d'information à ce sujet.
+**REMARQUE IMPORTANTE :** L'intégration [Zelty Bridge](/apps/zelty-bridge/overview) est plus complète que celle-ci, et nous recommandons de l'utiliser pour toute nouvelle connexion. Zelty Bridge offre des fonctionnalités supplémentaires incluant la synchronisation bidirectionnelle des commandes, la gestion de l'inventaire, le support des variantes, et d'autres fonctionnalités avancées.
 
 ---
 

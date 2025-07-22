@@ -10,6 +10,12 @@ meta:
 
 ---
 
+**REMARQUE IMPORTANTE :** Une intégration plus complète est disponible. Consultez [Zelty Bridge](/apps/zelty-bridge/overview) pour bénéficier de fonctionnalités avancées.
+
+---
+
+---
+
 **REMARQUE IMPORTANTE :** Si vous ne possédez pas encore de compte HubRise, commencez par en ouvrir un sur la [page d'inscription à HubRise](https://manager.hubrise.com/signup). L'inscription ne prend que quelques minutes !
 
 ---

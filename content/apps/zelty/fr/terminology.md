@@ -8,6 +8,12 @@ meta:
   description: Table de correspondance entre les termes utilisés par Zelty et HubRise pour le même concept. Connectez vos apps et synchronisez vos données.
 ---
 
+---
+
+**REMARQUE IMPORTANTE :** Une intégration plus complète est disponible. Consultez [Zelty Bridge](/apps/zelty-bridge/overview) pour bénéficier de fonctionnalités avancées.
+
+---
+
 HubRise et Zelty utilisent chacun leur propre terminologie. Un même concept peut donc exister sous une désignation différente dans les deux solutions. Le tableau de correspondance ci-dessous indique ces différences.
 
 | Zelty           | HubRise         | Description                                    |

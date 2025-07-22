@@ -8,6 +8,12 @@ meta:
   description: Comment importer le catalogue depuis HubRise dans votre menu Zelty.
 ---
 
+---
+
+**REMARQUE IMPORTANTE :** Une intégration plus complète est disponible. Consultez [Zelty Bridge](/apps/zelty-bridge/overview) pour bénéficier de fonctionnalités avancées.
+
+---
+
 Zelty permet d'exporter la carte vers un catalogue HubRise. Vous pouvez ainsi synchroniser vos produits entre Zelty et vos autres applications.
 
 Si l'application que vous souhaitez connecter ne permet pas d'importer un catalogue HubRise, vous devrez renseigner manuellement les codes ref des produits. Pour vérifier, reportez-vous à la documentation de l'autre application sur le site Internet de HubRise.
