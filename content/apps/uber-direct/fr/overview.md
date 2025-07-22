@@ -34,7 +34,7 @@ Connecter Uber Direct à HubRise permet à votre service de livraison de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.
-- Synchroniser le délai de livraison avec HubRise.
+- Synchroniser l'heure de livraison avec HubRise.
 
 Uber Direct Bridge peut être connecté à HubRise depuis le back-office de HubRise.
 
