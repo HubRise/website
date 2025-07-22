@@ -28,9 +28,9 @@ Cette fonctionnalité est utile si vous utilisez :
 - Des systèmes d'analyse de données qui nécessitent toutes vos commandes
 - D'autres applications qui ont besoin d'accéder à l'ensemble de vos ventes
 
-## Catalogue {#catalogue}
+## Catalogue {#catalog}
 
-### Choisissez quels produits importer depuis Zelty
+### Choisissez quels produits importer depuis Zelty {#select-catalog}
 
 Vous avez deux options pour l'import du catalogue :
 

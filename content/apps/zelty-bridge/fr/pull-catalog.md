@@ -27,7 +27,7 @@ L'opération peut prendre quelques minutes selon la taille de votre catalogue.
 
 ### Via le back-office Zelty {#via-zelty-bo}
 
-Si vous avez activé la récupération automatique du catalogue dans la [configuration](/apps/zelty-bridge/configuration#catalogue), vous pouvez également déclencher l'import depuis le back-office Zelty.
+Si vous avez activé la récupération automatique du catalogue dans la [configuration](/apps/zelty-bridge/configuration#catalog), vous pouvez également déclencher l'import depuis le back-office Zelty.
 
 Pour déclencher une mise à jour du catalogue depuis Zelty :
 
@@ -49,6 +49,14 @@ Pour déclencher une mise à jour du catalogue depuis Zelty :
 
 ## Informations envoyées à HubRise
 
+### Variantes
+
+Zelty Bridge crée des variantes de catalogue dans les deux cas suivants :
+
+- Lorsque l'option **Créer des variantes pour les prix livraison, à emporter et Happy Hour** est activée, Zelty Bridge crée des variantes pour chacun de ces tarifs.
+
+- Lorsque plusieurs catalogues sont sélectionnés, Zelty Bridge crée une variante de catalogue pour chaque catalogue Zelty. Pour plus de détails, consultez [Choisissez quels produits importer depuis Zelty](/apps/zelty-bridge/configuration#select-catalog).
+
 ### Catégories
 
 Les catégories Zelty sont importées avec les informations suivantes :
@@ -56,8 +64,12 @@ Les catégories Zelty sont importées avec les informations suivantes :
 - Nom de la catégorie
 - Code ref (identifiant unique Zelty)
 - Description de la catégorie
+- Parent de la catégorie : les catégories imbriquées sont conservées avec leur structure hiérarchique
 
-Les catégories imbriquées sont conservées avec leur structure hiérarchique.
+Zelty Bridge peut également créer automatiquement deux catégories spéciales :
+
+- "Produits cachés pour les menus" pour les produits sans catégorie utilisés dans des menus. Ces produits sont marqués avec le tag `deal_only` dans HubRise.
+- "Produits sans tag" pour les produits sans catégorie dans Zelty.
 
 ### Produits
 
@@ -72,53 +84,27 @@ Pour chaque produit Zelty, les informations suivantes sont importées :
 - Listes d'options associées au produit
 - Image principale du produit
 
+Zelty n'a pas de notion de SKU multiple. Les produits sont donc créés dans HubRise avec une seule SKU.
+
 ### Options
 
 Les options sont importées avec leur structure complète :
 
 - Nom de la liste d'options (par exemple "Taille", "Suppléments")
-- Options disponibles avec leur nom, prix et code ref
+- Valeurs disponibles avec leur nom, prix et code ref
 - Contraintes de sélection (nombre minimum et maximum de sélections)
 
-### Menus (Deals)
+### Menus (Promotions)
 
-Les menus Zelty sont convertis en deals HubRise avec :
+Les menus Zelty sont convertis en promotions HubRise avec :
 
 - Nom du menu tel qu'affiché dans Zelty
 - Code ref (identifiant unique du menu)
 - Prix total du menu
 - Lignes du deal, pour chaque partie du menu :
-  - Nom de la catégorie (entrées, plats, desserts...)
+  - Libellé de la ligne (par exemple "Entrée", "Plat principal")
   - Produits disponibles dans cette catégorie
-  - Suppléments éventuels pour certains produits
 
 ### Inventaire
 
-Si la synchronisation de l'inventaire est activée dans la configuration, l'état de rupture de stock est également importé :
-
-- Les produits en rupture dans Zelty sont marqués avec un stock de 0 dans HubRise
-- Les produits disponibles sont marqués avec un stock illimité
-
-## Références techniques
-
-### Structure du catalogue
-
-Zelty Bridge utilise deux sources de données pour construire le catalogue HubRise :
-
-1. **Le data lake Zelty** : Contient toutes les informations produits (noms, descriptions, options, images)
-2. **Les catalogues spécifiques** : Fournissent la structure, les prix et les tags
-
-### Gestion des variantes
-
-Lorsque l'option **Créer des variantes pour les prix livraison, à emporter et Happy Hour** est activée, Zelty Bridge crée automatiquement des variantes dans HubRise pour :
-
-- À emporter (utilise le prix `price_togo`)
-- Livraison (utilise le prix `price_delivery`)
-- Happy Hour (utilise le prix `happy_price`)
-
-### Catégories spéciales
-
-Zelty Bridge peut créer automatiquement des catégories spéciales :
-
-- "Produits cachés pour les menus" pour les produits utilisés uniquement dans les menus. Chacun de ces produits est marqué avec le tag `deal_only`.
-- "Produits sans tag" pour les produits sans tag dans Zelty.
+Si l'option **Activer la récupération automatique de l'inventaire** est activée dans la configuration, l'état de rupture de stock est également importé automatiquement après la récupération du catalogue. Pour plus de détails sur la synchronisation de l'inventaire, consultez la section [Inventaire](/apps/zelty-bridge/configuration#inventory-sync) de la page Configuration.
