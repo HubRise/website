@@ -52,7 +52,7 @@ La connexion de LivePepper à HubRise permet à LivePepper de :
 - Recevoir les informations clients de HubRise, dont la fidélité.
 - Envoyer un catalogue à HubRise.
 - Recevoir un catalogue de HubRise.
-- Synchroniser le délai de livraison avec HubRise.
+- Synchroniser l'heure de livraison avec HubRise.
 
 LivePepper peut être connecté à HubRise depuis le back-office de LivePepper.
 
