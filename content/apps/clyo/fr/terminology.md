@@ -1,7 +1,7 @@
 ---
 title: Terminologie
 path_override: terminologie
-position: 6
+position: 7
 layout: documentation
 meta:
   title: Terminologie | Clyo Systems | HubRise
