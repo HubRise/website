@@ -14,20 +14,15 @@ La page de configuration vous permet de personnaliser le comportement de Zelty B
 
 ## Langue
 
-Sélectionnez la langue à utiliser pour les éléments génériques dans les reçus clients. Les langues disponibles sont :
-
-- Français
-- English
-
-Cette langue sera utilisée pour les libellés standards comme "Frais de livraison" ou "Remise" qui peuvent apparaître sur les reçus.
+Choisissez la langue à utiliser pour les éléments génériques tels que `Adresse par défaut`. Ces noms peuvent apparaître dans votre logiciel de caisse et sur les reçus des clients.
 
 ## Commandes
 
 ### Récupérer les commandes Zelty dans HubRise
 
-Activez cette option pour recevoir dans HubRise les commandes créées directement dans Zelty. Cela permet de centraliser toutes vos commandes, qu'elles proviennent de votre caisse ou d'autres canaux, dans un seul système.
+Activez l'option **Récupérer les commandes Zelty dans HubRise** pour recevoir dans HubRise les commandes créées directement dans Zelty. Cela permet de centraliser toutes vos commandes, qu'elles proviennent de votre caisse ou d'autres canaux, dans un seul système.
 
-Cette fonctionnalité est particulièrement utile si vous utilisez :
+Cette fonctionnalité est utile si vous utilisez :
 
 - Des solutions de paiement à table connectées à HubRise
 - Des systèmes d'analyse de données qui nécessitent toutes vos commandes
@@ -44,65 +39,71 @@ Vous avez deux options pour l'import du catalogue :
 
 ### Variantes de prix
 
-Cochez l'option **Créer des variantes pour les prix livraison, à emporter et Happy Hour** pour gérer automatiquement les différents tarifs selon le type de service ou l'heure de la journée.
-
-Lorsque cette option est activée, Zelty Bridge créera automatiquement des variantes dans votre catalogue HubRise pour :
-
-- Les prix à emporter
-- Les prix livraison
-- Les prix Happy Hour
-
-Cela permet à vos applications connectées d'appliquer automatiquement les bons tarifs selon le contexte de la commande.
+Cochez l'option **Créer des variantes pour les prix livraison, à emporter et Happy Hour** pour importer ces tarifs dans HubRise. Lorsque cette option est activée, Zelty Bridge créera automatiquement une variante de catalogue HubRise par tarif.
 
 ### Récupération automatique du catalogue
 
-Activez cette option pour que votre catalogue HubRise soit automatiquement mis à jour lorsque vous modifiez votre menu dans Zelty.
+Cochez l'option **Activer la récupération automatique du catalogue** pour que votre catalogue HubRise soit automatiquement mis à jour lorsque vous le publiez depuis le back-office Zelty.
 
-Le catalogue spécifié sera mis à jour automatiquement chaque fois que :
+Pour déclencher une mise à jour du catalogue depuis Zelty :
 
-- Vous ajoutez ou supprimez des produits dans Zelty
-- Vous modifiez des prix ou des descriptions
-- Vous réorganisez vos catégories
+1. Ouvrez le back-office Zelty
+2. Allez dans **La carte** > **Les catalogues**
+3. Choisissez n'importe quel catalogue (pas nécessairement celui spécifié dans la configuration)
+4. Cliquez sur les 3 points verticaux à droite
+5. Sélectionnez **Envoyer vers**
+6. Cochez **HubRise V2**
+7. Cliquez sur **Suivant**
 
-Cette synchronisation automatique garantit que toutes vos applications connectées disposent toujours des informations à jour.
+![Envoi du catalogue depuis Zelty](./images/005-2x-zelty-push-catalog.png)
 
 ## Point de vente
 
 ### Horaires d'ouverture
 
-Activez la synchronisation des horaires d'ouverture pour que vos horaires définis dans Zelty soient automatiquement transmis à HubRise et à toutes vos applications connectées.
+Activez l'option **Activer la synchronisation des horaires d'ouverture** pour que vos horaires définis dans Zelty soient automatiquement transmis à HubRise et à toutes vos applications connectées.
+
+Cette option synchronise les **Horaires d'ouverture du restaurant** depuis le back-office Zelty (et non les horaires de livraison). La synchronisation est déclenchée automatiquement lorsque vous modifiez vos horaires dans Zelty :
+
+1. Dans le back-office Zelty, allez dans **Configuration** > **Horaires**
+2. Modifiez vos horaires d'ouverture
+3. Cliquez sur **Sauvegarder**
+
+Les nouveaux horaires sont alors immédiatement envoyés à HubRise.
 
 ### Acceptation des commandes et temps de préparation
 
-Cette option synchronise deux paramètres importants :
+Activez l'option **Activer la synchronisation de l'acceptation des commandes et du temps de préparation** pour synchroniser automatiquement :
 
-- **Le statut d'acceptation des commandes** : indique si vous acceptez actuellement les commandes en ligne
-- **Le temps de préparation** : le délai nécessaire pour préparer une commande
+- Le statut d'acceptation des commandes : indique si vous acceptez actuellement les commandes en ligne sur votre site Web et vos plateformes de livraison
+- Le temps de préparation additionnel : le retard à ajouter au temps de préparation standard
 
-Ces informations sont particulièrement importantes pour les plateformes de commande en ligne et de livraison, qui les utilisent pour informer les clients et gérer les attentes de livraison.
+Ces paramètres sont gérés depuis votre caisse Zelty :
+
+1. Dans Zelty Caisse, allez dans **Paramètres** > **Commandes en ligne**
+2. Utilisez le bouton **Activer la commande en ligne** pour accepter ou refuser les commandes
+3. Définissez le **Délai supplémentaire** en minutes
+4. Cliquez sur **Valider**
+
+![Paramètres de commande en ligne dans Zelty](./images/006-2x-zelty-online-ordering.png)
+
+La synchronisation est déclenchée immédiatement lorsque vous cliquez sur **Valider**. Ces informations sont utilisées par les plateformes de commande en ligne et de livraison pour informer les clients et gérer les attentes de livraison.
 
 ## Inventaire
 
-### Activer la récupération automatique de l'inventaire
+### Activer la récupération automatique de l'inventaire {#inventory-sync}
 
-Lorsque cette option est activée, Zelty Bridge synchronise automatiquement vos niveaux de stock avec HubRise.
+Activez l'option **Activer la récupération automatique de l'inventaire** pour synchroniser automatiquement les ruptures de stock entre Zelty et HubRise.
 
-Les mises à jour d'inventaire sont déclenchées lorsque :
+Cette fonction synchronise l'état de rupture de stock de vos produits et options, et non les quantités d'inventaire. La gestion se fait depuis votre caisse Zelty :
 
-- Un produit est marqué comme indisponible dans Zelty
-- Un produit redevient disponible
-- Les quantités en stock changent
+1. Dans Zelty Caisse, allez dans **Paramètres** > **Rupture produits**
+2. Utilisez les onglets **En rupture**, **Disponible** ou **Tous** pour filtrer l'affichage
+3. Cliquez sur le bouton vert à droite de chaque produit pour basculer sa disponibilité
 
-Cette synchronisation permet à toutes vos applications connectées (sites de commande en ligne, plateformes de livraison) de refléter en temps réel la disponibilité de vos produits.
+![Gestion des ruptures de stock dans Zelty](./images/007-2x-zelty-out-of-stock.png)
 
-## Actions
-
-En bas de la page Configuration, vous trouverez deux boutons d'action :
-
-- **Récupérer le catalogue** : Lance manuellement l'import du catalogue depuis Zelty vers HubRise
-- **Récupérer l'inventaire** : Lance manuellement la synchronisation de l'inventaire
-
-Ces actions manuelles sont utiles lorsque vous souhaitez forcer une mise à jour immédiate sans attendre la synchronisation automatique.
+La synchronisation est déclenchée immédiatement lorsqu'un produit ou une option est marqué(e) en rupture ou remis(e) en stock. Cette synchronisation permet à vos applications connectées de refléter en temps réel la disponibilité de vos produits.
 
 ## Enregistrer la configuration
 
