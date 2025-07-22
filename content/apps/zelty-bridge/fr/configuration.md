@@ -28,7 +28,7 @@ Cette fonctionnalité est utile si vous utilisez :
 - Des systèmes d'analyse de données qui nécessitent toutes vos commandes
 - D'autres applications qui ont besoin d'accéder à l'ensemble de vos ventes
 
-## Catalogue
+## Catalogue {#catalogue}
 
 ### Choisissez quels produits importer depuis Zelty
 
@@ -45,17 +45,7 @@ Cochez l'option **Créer des variantes pour les prix livraison, à emporter et H
 
 Cochez l'option **Activer la récupération automatique du catalogue** pour que votre catalogue HubRise soit automatiquement mis à jour lorsque vous le publiez depuis le back-office Zelty.
 
-Pour déclencher une mise à jour du catalogue depuis Zelty :
-
-1. Ouvrez le back-office Zelty
-2. Allez dans **La carte** > **Les catalogues**
-3. Choisissez n'importe quel catalogue (pas nécessairement celui spécifié dans la configuration)
-4. Cliquez sur les 3 points verticaux à droite
-5. Sélectionnez **Envoyer vers**
-6. Cochez **HubRise V2**
-7. Cliquez sur **Suivant**
-
-![Envoi du catalogue depuis Zelty](./images/005-2x-zelty-push-catalog.png)
+Lorsque cette option est activée, vous pouvez déclencher une mise à jour du catalogue directement depuis le back-office Zelty. Pour plus de détails, consultez [Récupérer le catalogue](/apps/zelty-bridge/pull-catalog#via-zelty-bo).
 
 ## Point de vente
 
