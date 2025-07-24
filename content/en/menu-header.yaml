@@ -3,7 +3,7 @@
   mobile_only: true
 - title: Integrations
   to: /apps
-- title: Products
+- title: Apps
   to: /
   content:
     products:
@@ -18,8 +18,8 @@
         link: /orderline
         image: orderline.png
       - title: Dashboard
-        description: Some text here...
-        link_label: Check your sales reports
+        description: Check your sales reports
+        link_label: Find out more
         link: /dashboard
         image: dashboard.png
 - title: Pricing
