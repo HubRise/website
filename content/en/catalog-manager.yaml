@@ -48,26 +48,26 @@ content:
       - label: Set Prices
         key: 2
         content:
-          title: Set Channel or Location-Specific Pricing
-          description: Adjust pricing for individual sales channels or locations using catalogue variants — tailor your pricing strategy to different market segments.
+          title: Set Channel- or Location-Specific Pricing
+          description: Adjust pricing for individual sales channels or locations using catalogue variants. Tailor your pricing strategy to different market segments.
           image: catalog-manager/tabs/set-channels.png
       - label: Enable Items
         key: 3
         content:
-          title: Activate Channel or Location-Specific Items
-          description: Enable or disable specific items by sales channel, location, or collection method to match your operations or marketing plans thanks to catalogue variants.
+          title: Activate Channel- or Location-Specific Items
+          description: Enable or disable specific items by sales channel, location, or collection method to match your operational or marketing needs using catalogue variants.
           image: catalog-manager/tabs/control-availability.png
       - label: Preview Catalogues
         key: 4
         content:
           title: Preview Before Publishing
-          description: Ensure accuracy and consistency across all catalogue variants your created by previewing before saving to push changes live everywhere.
+          description: Ensure accuracy and consistency across all catalogue variants you’ve created by previewing before saving. Push changes live across all associated sales channels.
           image: catalog-manager/tabs/preview-mode.png
   action_block:
     title: Discover More Apps to Streamline Your Operations
-    description: You have questions about Catalog Manager or HubRise in general? Our support, and technical teams are here to help.
+    description: Check out the benefits of other free HubRise apps designed to streamline operations, optimise workflows, and simplify reporting.
     buttons:
       - button_label: Explore OrderLine
         button_link: /orderline
-      - button_label: View Our Dashboard
+      - button_label: View the Dashboard
         button_link: /dashboard
