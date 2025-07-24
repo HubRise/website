@@ -10,8 +10,8 @@ content:
       part_4: Business Decisions
     description: Check your order data on the HubRise Dashboard to see how your business is performing across all locations and sales channels. Track revenue trends, compare performance over time, and identify your best-selling products and busiest hours.
     content:
-      firstSide: Retail stores and restaurants generate a large amount of data — much of it valuable for analysis. When used effectively, this data helps business owners and managers make informed decisions, improve performance, and drive growth.
-      secondSide: The HubRise Dashboard provides easy access to ready-made reports from all connected sales channels. View aggregated data for a specific location or across all locations — anytime, on any device — to support data-driven understanding and decision-making.
+      firstSide: Retail stores and restaurants generate a large amount of data—much of it valuable for analysis. When used effectively, this data helps business owners and managers make informed decisions, improve performance, and drive growth.
+      secondSide: The HubRise Dashboard provides easy access to ready-made reports from all connected sales channels. View aggregated data for a specific location or across all locations—anytime, on any device—to support data-driven understanding and decision-making.
   features:
     title: Features
     cards:
@@ -19,9 +19,9 @@ content:
         description: Access up-to-date sales data as it happens. Monitor performance across your business in real time, on any device, from anywhere, so you can respond quickly to changes, spot issues early, and act with confidence.
         image: real-time.svg
       - title: Ready-Made Reports
-        description: See ready-made reports from your connected apps, saving time and reducing manual work. Share access to these easy-to-understand reports with local managers to keep teams informed, engaged, and focused on performance.
+        description: See ready-made reports from data collected from your connected apps, saving time and reducing manual work. Share access to these easy-to-understand reports with local managers to keep teams informed, engaged, and focused on performance.
         image: ready-made-reports.svg
-      - title: Consolidated Data Across All Locations
+      - title: Consolidated Data
         description: View aggregated data from all your locations and connected sales channels in one place. Gain a global overview of your business, without switching between systems or apps.
         image: consolidated-data-locations.svg
       - title: Granular Performance Insights
@@ -31,17 +31,17 @@ content:
         description: Track revenue trends by day, week, month, year, or custom date range to identify growth patterns and seasonality. Use historical data to compare performance with previous years, improve forecasting, and plan with confidence.
         image: revenue-over-time.svg
       - title: Top-Selling Products
-        description: See your 30 most popular items at a glance, ranked by sales volume — or view the full list for deeper insights. Use this data to fine-tune your catalogue or menu, plan targeted promotions, and optimise inventory and purchasing decisions.
+        description: See your 30 most popular items at a glance, ranked by sales volume—or view the full list for deeper insights. Use this data to fine-tune your catalogue or menu, plan targeted promotions, and optimise inventory and purchasing decisions.
         image: top-selling-products.svg
   details:
-    title: Everything You Need to Keep Your Catalogs Updated
+    title: Understand Your Business Through Data
     content_blocks:
       - title: Revenue Breakdown
         content: |
           <p>HubRise breaks down your revenue from three angles:</p>
           <ul>
-            <li>Sales Channel - your website versus ordering platforms or other apps.</li>
-            <li>Connection Name - your main brand and virtual brands.</li>
+            <li>Sales Channel - delivery platforms versus your own website or other apps.</li>
+            <li>Connection Name - your main brand and virtual dark kitchen brands.</li>
             <li>Location - your stores driving the most revenue.</li>
           </ul>
         image: revenue-breakdown.png
@@ -52,19 +52,19 @@ content:
         image: revenue-over-time.png
       - title: Peak Hours
         content: |
-          <p>This heatmap reveals when your sales are highest, broken down by day and hour.</p>
+          <p>A heatmap reveals when your sales are highest, broken down by day and hour.</p>
           <p>Understand your peak hours can be wisely used to optimise staffing, plan promotions, and manage inventory more efficiently.</p>
         image: peak-hours.png
       - title: Top Selling Products
         content: |
-          <p>See your 30 best-performing items by sales volume.</p>
-          <p>Filter by location and date to understand trends and customer preferences.</p>
+          <p>See your 30 best-performing items and their sales volume at a glance, or expand the view to see all products.</p>
+          <p>Filter by location and date to uncover seasonal trends and better understand customer preferences.</p>
         image: top-selling-products.png
   action_block:
-    title: Discover other apps to streamline your operations
-    description: Discover the benefits offered by other tools design to complement your operations, optimise workflows, and simplify reporting.
+    title: Discover More Apps to Streamline Your Operations
+    description: Discover the benefits of other free HubRise apps designed to streamline operations, ensure consistency across your content, and optimise workflows.
     buttons:
-      - button_label: Explore the Catalog Manager
+      - button_label: Explore Catalog Manager
         button_link: /catalog-manager
       - button_label: View OrderLine
         button_link: /orderline
