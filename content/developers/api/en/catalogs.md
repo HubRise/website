@@ -16,7 +16,9 @@ Account-level catalogs are accessible by all locations of the account, while loc
 
 Catalogs are identified by their name. Catalog names must be unique for any account or location. For instance, two locations can have two different location-level catalogs with the same name. But a location and its holding account cannot have two catalogs with the same name.
 
-### 1.1. Retrieve Catalog
+### 1.1. Retrieve Catalog {#retrieve-catalog}
+
+Returns the complete catalog data in a single request. This endpoint is recommended over the paginated list endpoints (categories, products, skus, etc.) as it provides all catalog information at once without requiring multiple API calls.
 
 <CallSummaryTable endpoint="GET /catalogs/:id" accessLevel="Location, Account" />
 
@@ -351,9 +353,9 @@ The tree is sorted. Categories and products are retrieved in the same order as t
 
 ### 3.3. List Categories
 
-Return the categories of the catalog. Categories are returned in a deep first traversal order (category 1, then category 1's children, then category 2, then category 2's children, etc.)
+Return the categories of the catalog. Categories are returned in a deep first traversal order (category 1, then category 1's children, then category 2, then category 2's children, etc.).
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/categories" accessLevel="Location, Account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/categories" accessLevel="Location, Account" paginated />
 
 ##### Example request:
 
@@ -372,6 +374,8 @@ Return the categories of the catalog. Categories are returned in a deep first tr
   ...
 ]
 ```
+
+**Note:** This endpoint is paginated. Consider using the [Retrieve Catalog](#retrieve-catalog) endpoint to get all categories in a single request.
 
 ## 4. Products {#products}
 
@@ -490,7 +494,7 @@ Whether prices are tax-inclusive or tax-exclusive depends on the market. See the
 
 Retrieve the list of products in the catalog.
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/products" accessLevel="Location, Account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/products" accessLevel="Location, Account" paginated />
 
 ##### Example request:
 
@@ -507,6 +511,8 @@ Retrieve the list of products in the catalog.
   ...
 ]
 ```
+
+**Note:** This endpoint is paginated. Consider using the [Retrieve Catalog](#retrieve-catalog) endpoint to get all products in a single request.
 
 ## 5. Skus {#skus}
 
@@ -602,7 +608,7 @@ Each barcode must be a numeric string comprising exactly 8, 12, or 13 digits. Ex
 
 ### 5.3. List Skus
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/products/:product_id/skus" accessLevel="Location, Account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/products/:product_id/skus" accessLevel="Location, Account" paginated />
 
 ##### Example request:
 
@@ -618,6 +624,8 @@ Each barcode must be a numeric string comprising exactly 8, 12, or 13 digits. Ex
   }
 ]
 ```
+
+**Note:** This endpoint is paginated. Consider using the [Retrieve Catalog](#retrieve-catalog) endpoint to get all skus in a single request.
 
 ## 6. Option Lists {#option-lists}
 
@@ -712,7 +720,7 @@ Retrieve an option list and the possible choices (options).
 
 ### 6.3. List Option Lists
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/option_lists" accessLevel="Location, Account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/option_lists" accessLevel="Location, Account" paginated />
 
 ##### Example request:
 
@@ -729,6 +737,8 @@ Retrieve an option list and the possible choices (options).
   ...
 ]
 ```
+
+**Note:** This endpoint is paginated. Consider using the [Retrieve Catalog](#retrieve-catalog) endpoint to get all option lists in a single request.
 
 ## 7. Options {#options}
 
@@ -800,10 +810,7 @@ Retrieve an option list and the possible choices (options).
 
 ### 7.3. List Options
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/option_lists/:option_list_id/options"
-  accessLevel="Location, Account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/option_lists/:option_list_id/options" accessLevel="Location, Account" paginated />
 
 ##### Example request:
 
@@ -821,6 +828,8 @@ Retrieve an option list and the possible choices (options).
   ...
 ]
 ```
+
+**Note:** This endpoint is paginated. Consider using the [Retrieve Catalog](#retrieve-catalog) endpoint to get all options in a single request.
 
 ## 8. Deals {#deals}
 
@@ -911,7 +920,7 @@ Retrieve an option list and the possible choices (options).
 
 ### 8.2. List Deals
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/deals" accessLevel="Location, Account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/deals" accessLevel="Location, Account" paginated />
 
 ##### Example request:
 
@@ -929,6 +938,8 @@ Retrieve an option list and the possible choices (options).
   ...
 ]
 ```
+
+**Note:** This endpoint is paginated. Consider using the [Retrieve Catalog](#retrieve-catalog) endpoint to get all deals in a single request.
 
 ## 9. Discounts {#discounts}
 
@@ -986,7 +997,7 @@ A discount is a reduction of the order total price.
 
 ### 9.3. List Discounts
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/discounts" accessLevel="Location, Account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/discounts" accessLevel="Location, Account" paginated />
 
 ##### Example request:
 
@@ -1004,6 +1015,8 @@ A discount is a reduction of the order total price.
   ...
 ]
 ```
+
+**Note:** This endpoint is paginated. Consider using the [Retrieve Catalog](#retrieve-catalog) endpoint to get all discounts in a single request.
 
 ## 10. Charges {#charges}
 
@@ -1063,7 +1076,7 @@ A charge is an additional fee billed to the customer. Examples of charges includ
 
 Retrieve the list of charges in the catalog.
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/charges" accessLevel="Location, Account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/charges" accessLevel="Location, Account" paginated />
 
 ##### Example request:
 
@@ -1081,6 +1094,8 @@ Retrieve the list of charges in the catalog.
   ...
 ]
 ```
+
+**Note:** This endpoint is paginated. Consider using the [Retrieve Catalog](#retrieve-catalog) endpoint to get all charges in a single request.
 
 ## 11. Restrictions {#restrictions}
 
@@ -1287,7 +1302,7 @@ Content-Type: image/jpeg
 Response body: [image data]
 ```
 
-### 13.4. List Images
+### 13.4. List Images {#list-images}
 
 Retrieve the list of images in the catalog.
 
