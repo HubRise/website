@@ -154,7 +154,7 @@ content:
         image: use-customer-database.png
       - title: Centralise Orders
         description: |
-          Send all orders to your EPOS, or use HubRise to view and manage orders from all your sales channels in one single app. Update order statuses, track approaching drivers, print receipts, edit opening hours, or pause online stores—all in one click.
+          Send all orders to your EPOS, or use HubRise to view and manage orders from all your sales channels in one single app. Update order statuses, track approaching drivers, print receipts, edit opening hours, or pause online stores — all in one click.
         image: use-centralise-orders.png
       - title: Make informed decisions
         description: |
