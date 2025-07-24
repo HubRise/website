@@ -8,7 +8,7 @@
   content:
     products:
       - title: Catalog Manager
-        description: Centralise your menus
+        description: Centralise your catalogues
         link_label: Find out more
         link: /catalog-manager
         image: catalog-manager.png
@@ -19,7 +19,7 @@
         image: orderline.png
       - title: Dashboard
         description: Some text here...
-        link_label: Find out more
+        link_label: Check your sales reports
         link: /dashboard
         image: dashboard.png
 - title: Pricing
@@ -52,12 +52,12 @@
         - link_label: Testimonials
           link: /testimonials
           link_description: Real customer and integrated partner feedback.
-        - link_label: Contact Us
-          link: /contact-us
-          link_description: Get in touch with our team.
         - link_label: Changelog
           link: /changelog
-          link_description: View the latest integrations, API improvements, and fixes for on HubRise.
+          link_description: View the latest integrations, API improvements, and fixes.
         - link_label: Hire an Expert
           link: /partners
-          link_description: Connect with an experienced partner for tailored development.
+          link_description: Connect with experienced partners for development work.
+        - link_label: Contact Us
+          link: /contact-us
+          link_description: Get in touch with our team members.
