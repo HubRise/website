@@ -16,12 +16,6 @@ content:
       slug: point-of-sales
       has_suggest_app: true
       apps:
-        - website: https://3s-pos.com
-          documentation: /apps/3s-pos
-          logo: 3spos.png
-          country: GB
-          title: 3S POS
-          description: 3S POS offers a complete EPOS suite for all types of hospitality businesses. Suitable for single and multi-store businesses and feature-rich, 3S POS can be customised to fit specific business and operational requirements.
         - website: https://adipos.fr/en
           documentation: /apps/adipos
           logo: adipos.png
@@ -75,13 +69,6 @@ content:
           title: French Caisse
           description: French Caisse is a touchscreen EPOS that can be used in many types of businesses. It comes with a self ordering kiosk, an e-commerce site and a loyalty card.
           additional_info:
-        - website: https://iikosoftware.com
-          documentation: /apps/iiko
-          logo: iiko.png
-          country: all
-          title: iiko
-          description: iiko is 100% cloud, easy to deploy and scale for single and multi-store businesses. Over 30,000 businesses use iiko to automate every aspect of their operations.
-          additional_info: Integration in progress.
         - website: https://www.jdc.fr/caisse-enregistreuse
           documentation: /apps/jalia
           logo: jalia.png
@@ -178,13 +165,6 @@ content:
           title: PAR PixelPoint (Windows API)
           description: PixelPoint by PAR, integrated via its Windows API, is a Point of Sale solution for restaurants and entertainment industry sectors. PixelPoint is used for cost management, loss prevention and loyalty programs.
           additional_info: Windows API integration by Slowey Systems.
-        - website: https://www.pointone-epos.co.uk
-          documentation: /apps/pointone
-          logo: pointone.png
-          country: GB
-          title: pointOne
-          description: pointOne is an easy to use touch-screen Point of Sales. It includes online ordering, kitchen screens, smart phone applications, reporting as well as stock control.
-          additional_info: Integration in progress.
         - website: https://www.popina.com/fr
           documentation: /apps/popina
           logo: popina.png
@@ -431,25 +411,12 @@ content:
           country: CH, DE, FR, IE, GB
           title: eddress
           description: eddress is an online ordering solution for restaurants and grocery stores, with integrated delivery management. It is suitable for businesses of all sizes, whether independent or franchised. Available in 20 languages and deployed in more than 17 countries.
-        - website: https://www.get-resto.com
-          documentation: /apps/get-resto
-          logo: get-resto.png
-          country: FR
-          title: Get Resto
-          description: Get Resto is a table ordering solution. Customers flash the QR code or use the NFC tag placed on their table, access the menu on their smartphone in their language, and order from it. No app installation required.
         - website: https://www.gonnaorder.com
           documentation: /apps/gonnaorder
           logo: gonnaorder.png
           country: AU, BE, CA, FR, DE, IE, IT, NL, GB
           title: GonnaOrder
           description: GonnaOrder offers a cost-effective online ordering and payment system available in 14 countries. Via a branded website and native iOS and Android apps, GonnaOrder supports takeaway, delivery and table service orders for restaurants, bars, pubs, and cafes.
-          additional_info:
-        - website: https://kurvekiosks.com
-          documentation: /apps/kurvekiosks
-          logo: kurvekiosks.png
-          country: IE, GB
-          title: Kurve Kiosks
-          description: Kurve Kiosks designs and develops self ordering kiosks tailored for hospitality operators. The platform is customisable, rich in features, and reliable, easing the transition to self-service technology.
           additional_info:
         - website: https://latoquemagique.com
           documentation: /apps/la-toque-magique
@@ -463,13 +430,6 @@ content:
           country:
           title: LivePepper
           description: LivePepper is an online ordering solution for home delivery and takeaway restaurants. LivePepper is used by independent restaurants and large franchises based in France, in the UK and internationally.
-        - website: https://locatouch.com
-          documentation: /apps/locatouch
-          logo: locatouch.png
-          country: FR
-          title: Loca'Touch
-          description: Loca'Touch offers self ordering kiosks for leasing or sale. Customers can order and pay autonomously, and receive complementary products suggestions during purchase. Regular system software updates.
-          additional_info:
         - website: https://mynober.nl
           documentation: /apps/mynober
           logo: mynober.png
@@ -543,12 +503,6 @@ content:
           country: FR
           title: Store Factory
           description: Store Factory is used by SMEs and smaller retail stores with limited technical knowledge to create e-commerce websites. Technical support, maintenance and SEO services are provided by the publisher.
-        - website: http://superdigital.fr
-          documentation: /apps/superdigital
-          logo: superdigital.png
-          country: FR
-          title: SuperDigital.fr
-          description: SuperDigital.fr is a complete solution for restaurants to create a white label online ordering website. Restaurant owners can personalise their site autonomously from the back office.
         - website: https://tablati.ma
           documentation: /apps/tablati
           logo: tablati.png
@@ -583,6 +537,29 @@ content:
           title: Zuplyit
           description: Zuplyit by AirTouchMedia is a white label online ordering solution for the food industry, combined with a Delivery Management Solution, as well as a suite of customer loyalty and promotion tools.
           additional_info:
+    - title: Self-Ordering Kiosk
+      slug: kiosk
+      apps:
+        - website: https://www.eatself.com
+          documentation: /apps/eatself
+          logo: eatself.png
+          country: BE, CH, FR, MA
+          title: eEatself
+          description: EatSelf includes a self-service kiosk, online ordering, table ordering, loyalty programme, and reservations, all without intermediaries or commissions. It is designed for restaurateurs who want to digitise their activity on-site and remotely.
+        - website: https://kurvekiosks.com
+          documentation: /apps/kurvekiosks
+          logo: kurvekiosks.png
+          country: IE, GB
+          title: Kurve Kiosks
+          description: Kurve Kiosks designs and develops self ordering kiosks tailored for hospitality operators. The platform is customisable, rich in features, and reliable, easing the transition to self-service technology.
+          additional_info:
+        - website: https://locatouch.com
+          documentation: /apps/locatouch
+          logo: locatouch.png
+          country: FR
+          title: Loca'Touch
+          description: Loca'Touch offers self ordering kiosks for leasing or sale. Customers can order and pay autonomously, and receive complementary products suggestions during purchase. Regular system software updates.
+          additional_info:
     - title: Delivery Management
       slug: delivery-management
       apps:
@@ -607,12 +584,6 @@ content:
           title: Coursicab
           description: Coursicab is a delivery platform used for express and scheduled deliveries, by taxi or bike. Thanks to geolocation, your customers can track their packages real-time. Present in 6 European countries, available 24/7.
           additional_info:
-        - website: https://www.orderlord.com
-          documentation: /apps/orderlord
-          logo: orderlord.png
-          country: all
-          title: OrderLord
-          description: OrderLord delivery management solution can be used by restaurants, retails or delivery services agencies. Orderlord includes a dashboard for managers, an app for couriers and a tracking system for customers.
         - website: https://orkestro.com
           documentation: /apps/orkestro
           logo: orkestro.png
