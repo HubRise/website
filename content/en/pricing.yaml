@@ -11,34 +11,36 @@ content:
       part_4: Pricing
     plan:
       price: €35
-      tax: excl. VAT
-      period: per month / per location
+      tax:
+      period:
     proposals:
-      - title: Unlimited orders
+      - title: Subscription Fee
+        text: Excl. VAT / per month / per location
+      - title: No Commitment
+        text: Cancel our subscription autonomously, any time
+      - title: No Setup Fee
+        text: Create an account. Connect apps. Your subscription starts when you are ready
+      - title: Unlimited Orders
         text: No limit to the number of transactions sent through your account
-      - title: Unlimited connections
+      - title: Unlimited Connections
         text: Connect as many apps as you like to your account
-      - title: No setup fee
-        text: Create an account. Your subscription starts when you are ready
-      - title: No commitment
-        text: Cancel your subscription autonomously, any time
     included_features:
       title: Included Features
-      description: Features are available with your HubRise subscription
+      description: Features available with your HubRise subscription
       button_label: Start today
       button_link: https://manager.hubrise.com/signup?locale=en-GB
       list:
-        - text: Epos integration
+        - text: EPOS integration
         - text: Other integrations, see our
           link_label: Integrations page
           link: /apps
         - text: Order management
-        - text: Menu Management
-        - text: Business Analytics
-        - text: Inventory Management
-        - text: Snoozing Products
-        - text: Pause Orders
-        - text: Opening hours Management
+        - text: Menu management
+        - text: Business analytics
+        - text: Inventory management
+        - text: Snoozing products
+        - text: Pause orders
+        - text: Opening hours management
         - text: Multi-location Support, see
           link_label: special pricing
           link: /pricing#special-pricing
@@ -50,33 +52,34 @@ content:
           link_label: special pricing
           link: /pricing#special-pricing
         - text: Kitchen Display Screen
-        - text: Kiosks
-        - text: Online Ordering
+        - text: Self-ordering kiosks
+        - text: Online ordering
+        - text: Mobile, voice, or chat ordering apps
         - text: Dine-in apps
         - text: Auto-Print
-        - text: Operations Management (Inventory, Purchasing)
-        - text: Delivery Management
-        - text: Delivery Services
+        - text: Operations management (inventory, purchasing)
+        - text: Delivery management
+        - text: Delivery services
         - text: And more…
   founder:
     image: antoine.png
     name: Antoine Monnier
     job_title: Founder, HubRise
-    text: Since 2015, we've offered a solution 2-5x cheaper than alternativeplayers with comparable features. Our team is made up primarily of engineers, not salespeople, and as a self-funded company, we answer only to our customers." Antoine Monnier, Founder, HubRise
+    text: Since 2015, we've offered a solution 2-5x cheaper than alternative players with comparable features. Our team is made up primarily of engineers, not sales people, and as a self-funded company, we answer only to our customers.
   why_choose:
     title: Why Choose HubRise?
     cards:
-      - title: Specialsed Focus
-        text: HubRise is a middleware with a strong focus on its API and the quality of integrations, relying partners for solutions and services HubRise users need.
-      - title: Experienced team
-        text: HubRise team support and development team are composed of experienced engineers.
+      - title: Specialised Focus
+        text: HubRise is a middleware with a strong focus on its API and the quality of integrations. HubRise relies on partners for solutions and services HubRise users need.
+      - title: Experienced Team
+        text: HubRise support and development teams are composed of informed, experienced and motivated engineers.
       - title: Code and Infrastructure
-        text: Our code base highly technical, with a focus on robustness, scalability, and reliability.
+        text: Our code base is highly technical, with a focus on robustness, scalability, and reliability.
   special_pricing:
     title: Special Pricing
     chain_and_franchise:
-      title: Chain and Franchise pricing
-      description: Benefit from a volume discount for 6 locations or more, reduce your per location cost as you grow.
+      title: Chain and Franchise Pricing
+      description: Benefit from a volume discount for 6 locations or more. Reduce your per location cost as you grow.
       pricing_list:
         - text: Locations 1 to 5
           price: €35
@@ -84,12 +87,11 @@ content:
           price: €30
         - text: Locations 31 and more
           price: €27
-      special_proposal: For 12 locations, the subscription will be €35 for the first 5 locations, then €30 for the next 7.
+      special_proposal: For example, if you have 12 locations, the subscription will be €35 for the first 5 locations, then €30 for the next 7.
     dark_kitchen:
       title: Dark Kitchen
-      description: Specific pricing applies to dark kitchens operating multiple virtual brands. Subscription fees are volume-based, with a setup fee of €25 per brand, per platform, with discounts available for multiple connections
+      description: Specific pricing applies to stores operating multiple virtual dark kitchen brands. Monthly subscription depends on order volume, with a one-time €25 setup fee per brand, per platform.
       pricing_list_description: |
-        Monthly subscription varies depending on the number of orders:
       pricing_list:
         - text: 0 to 1,500 orders per month
           price: €35
@@ -97,14 +99,14 @@ content:
           price: €55
         - text: 3,001 to 4,500 orders per month
           price: €75
-      special_proposal: And so on, with an additional €20 for every additional 1,500 orders.
+      special_proposal: Add €20 for every additional 1,500 orders. Discounts apply for grouped setups.
     resellers_and_partners:
-      title: Resellers and Partners
-      description: HubRise offer a partnership program, with or without white labelling.
+      title: Resellers and Integrated Partners
+      description: HubRise offers a partnership programme—with or without white labelling.
       button_label: Find out more
       button_link: /become-partner
   action_block:
     title: Ready to Get Started?
-    description: If you have more questions about features or pricing? We're here to help you take the next step.
+    description: If you have more questions about features or pricing, we're here to help. Contact us, and we'll assist you in taking the next step.
     buttons:
-      - button_label: Send Us a Message
+      - button_label: Contact Us
