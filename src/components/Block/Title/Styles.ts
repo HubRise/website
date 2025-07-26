@@ -27,9 +27,14 @@ export const StyledTitle = styled.h3<{
     right: ${({ $horizontalAlign }) => ($horizontalAlign === "left" ? "auto" : "0")};
     top: 100%;
     margin: 10px auto;
-    width: 15%;
-    height: 3px;
+    width: 5rem;
+    height: 0.1875rem;
     background-color: ${({ $backgroundColor }) => linkColorMap[$backgroundColor]};
+    border-radius: 6.25rem;
+
+    @media (min-width: ${breakpoints.biggest}) {
+      width: 7.5rem;
+    }
   }
 
   ${({ $horizontalAlign }) => css`

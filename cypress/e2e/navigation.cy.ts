@@ -5,7 +5,7 @@ describe("Navigation", () => {
 
   it("navigates to the apps page", () => {
     cy.visit("/")
-    headerDesktop().contains("Apps").click()
+    headerDesktop().contains("Integrations").click()
     cy.url().should("include", "/apps")
   })
 })
