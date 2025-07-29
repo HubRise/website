@@ -68,6 +68,7 @@ export const contentImageMap = async (
   const imageMap: ContentImageMap = {}
   await Promise.all(
     filenames.map(async (filename) => {
+      if (!filename) throw Error("Empty filename found in: " + JSON.stringify(filenames))
       imageMap[filename] = await contentImage(contentDirName, filename)
     }),
   )

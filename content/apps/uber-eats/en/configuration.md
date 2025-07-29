@@ -80,7 +80,7 @@ If your catalog includes variants, you have the option to select which ones to u
 
 Uber Eats allows two types of category structures:
 
-- **Single level**: all categories are at the same level. 
+- **Single level**: all categories are at the same level.
 - **Two-level**: categories are nested (e.g., Snacks → Biscuits & Crackers).
 
 Restaurants always use a single level, while retail stores can opt for a two-level hierarchy if enabled by Uber Eats support. If unsure, keep **Single level** selected.
@@ -110,9 +110,17 @@ Select the **Enable automatic catalog push** checkbox to synchronise your HubRis
 
 ![Uber Eats Bridge configuration page, Location section](./images/015-uber-eats-configuration-page-location.png)
 
+### Opening Hours
+
 Select **Enable automatic opening hours push** to synchronise your HubRise opening hours with Uber Eats. To enable this option, you must first set your opening hours in HubRise, and enable automatic catalog push.
 
 If you use specific opening hours for Uber Eats, you can set them for Uber Eats only by selecting **Use specific opening hours for Uber Eats**, then entering your opening hours. This option will override the opening hours set in HubRise.
+
+### Order Acceptance and Preparation Time
+
+Select **Enable order acceptance and preparation time sync** to sync your Uber Eats store availability with HubRise.
+
+When enabled, changes to your store status and preparation times in HubRise automatically update on Uber Eats. This includes pausing orders, switching to busy mode, and adjusting preparation times from your EPOS or other connected apps.
 
 ## Inventory
 

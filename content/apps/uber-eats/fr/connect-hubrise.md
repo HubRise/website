@@ -34,6 +34,8 @@ Commencez par connecter Uber Eats Bridge à HubRise en suivant ces étapes :
 
 Le bridge affiche maintenant la page **Connecter un magasin Uber Eats**. Quatre méthodes de connexion sont disponibles, détaillées ci-dessous.
 
+Uber Eats applique des paramètres d'intégration par défaut lors de la mise en place, que vous pouvez modifier plus tard. Ces paramètres sont documentés dans la FAQ [Paramètres d'intégration par défaut](/apps/uber-eats/faqs/default-integration-settings).
+
 Une fois l'une de ces méthodes finalisée, le bridge active l'intégration et ouvre la page **Configuration**.
 
 ### 1.1 Connexion avec votre compte Uber Eats
@@ -109,7 +111,9 @@ Une fois que HubRise aura confirmé que le support Uber Eats a activé l’inté
 
 ## 2. Configurez vos préférences
 
-Une fois la connexion du bridge effectuée, vous devez renseigner quelques paramètres sur la page **Configuration** afin que les commandes soient transmises correctement à votre logiciel de caisse.
+Une fois la connexion du bridge effectuée, configurez les paramètres sur la page **Configuration** pour que commandes soient transmises correctement à votre logiciel de caisse.
+
+Certaines options (par exemple, la correspondance des statuts et les variantes de catalogue) sont visibles dans le bridge. D'autres paramètres, tels que _RD-Optionnel_, _Auto-Annulation_ et _Mode d'Acceptation_, ne peuvent être modifiés que par l'équipe de support HubRise. Pour la liste complète, voir [Paramètres d'intégration par défaut](/apps/uber-eats/faqs/default-integration-settings).
 
 Pour plus d'informations sur la page Configuration et la manière d'y accéder, voir [Page de configuration](/apps/uber-eats/user-interface#configuration). Pour plus de détails sur la configuration des paramètres d'Uber Eats Bridge, voir [Configuration](/apps/uber-eats/configuration).
 

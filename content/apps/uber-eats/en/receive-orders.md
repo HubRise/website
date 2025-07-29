@@ -202,3 +202,13 @@ For each charge present in the order, the available fields are the following:
 ## Customer Notes
 
 Product-level customer notes are encoded in the `customer_notes` field.
+
+## Pause and Preparation Time {#pause-and-preparation-time}
+
+When order acceptance and preparation time sync is enabled, Uber Eats Bridge syncs the `order_acceptance` and `preparation_time` fields from HubRise to Uber Eats.
+
+The `order_acceptance.mode` field controls the store status:
+- `normal` or `busy`: Store open
+- `paused`: Store paused with optional reason passed to Uber Eats
+
+The preparation time sent to Uber Eats is `preparation_time` in normal mode, or `preparation_time` plus `order_acceptance.extra_preparation_time` in busy mode.

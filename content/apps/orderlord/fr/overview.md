@@ -42,7 +42,7 @@ Connecter OrderLord à HubRise permet à votre logiciel de caisse de :
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.
 - Envoyer un catalogue à HubRise.
-- Synchroniser le délai de livraison avec HubRise.
+- Synchroniser l'heure de livraison avec HubRise.
 
 OrderLord peut être connecté à HubRise via le support d'OrderLord.
 

@@ -1,7 +1,7 @@
 ---
 title: Can I Connect My Uber Eats Webstore to HubRise?
 path_override: connect-webstore
-position: 9
+position: 10
 layout: documentation
 meta:
   title: Connect Uber Eats Webstores | Uber Eats FAQs | HubRise
