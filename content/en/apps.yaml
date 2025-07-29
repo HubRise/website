@@ -540,6 +540,12 @@ content:
     - title: Self-Ordering Kiosk
       slug: kiosk
       apps:
+        - website: https://www.bwares.fr
+          documentation: /fr/apps/bwares
+          logo: bwares.png
+          country: FR
+          title: BWares
+          description: Conceived and developed in Bordeaux, France, by a dedicated and motivated team, BWares provides intuitive self-ordering kiosks. Showcase your flagship products and boost average spend with intelligent suggestions for complementary items.
         - website: https://www.eatself.com
           documentation: /apps/eatself
           logo: eatself.png

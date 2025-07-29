@@ -540,6 +540,12 @@ content:
     - title: Borne de Commande
       slug: borne
       apps:
+        - website: https://www.bwares.fr
+          documentation: /fr/apps/bwares
+          logo: bwares.png
+          country: FR
+          title: BWares
+          description: Conçue et développée à Bordeaux par une équipe dévouée et motivée, BWares propose des bornes de commande intuitives. Mettez en avant vos produits phares et augmentez le panier moyen grâce à des suggestions intelligentes d’articles complémentaires.
         - website: https://www.eatself.com
           documentation: /fr/apps/eatself
           logo: eatself.png
