@@ -16,31 +16,9 @@ meta:
 
 ## Connecter BWares
 
-\-- CONNECTER - option 1 --
+Il est possible de connecter votre borne de commande à HubRise de manière autonome depuis le back office de BWares, section **INTÉGRATIONS**. Nous recommandons cependant de faire appel à l'équipe de support de BWares.
 
-Pour connecter BWares à HubRise, suivez ces étapes :
-
-1. Depuis le back-office de BWares, cliquez sur ...
-2. Cliquez sur le bouton **CONNECTER**. Vous êtes redirigé vers l'interface HubRise. S'il s'agit de votre première connexion, créez un compte HubRise. Pour plus d'informations, consultez notre [Guide de démarrage](/docs/get-started).
-3. Si votre compte possède plusieurs points de vente, développez **Choisissez le point de vente**, sélectionnez le point de vente à connecter, puis cliquez sur **Autoriser**. Si le point de vente sélectionné possède plusieurs listes de clients ou catalogues, cliquez sur **Suivant** pour afficher les listes déroulantes correspondantes, puis sélectionnez les options souhaitées.
-4. Cliquez sur **Autoriser**.
-5. Vous êtes redirigé vers l'interface BWares et la connexion à HubRise est établie.
-
-\-- CONNECTER - option 2 --
-
-Pour connecter BWares Bridge à HubRise, procédez comme suit :
-
-1. Connectez-vous à votre [compte HubRise](https://manager.hubrise.com).
-2. Dans le menu déroulant, sélectionnez le point de vente que vous souhaitez connecter.
-3. Sélectionnez **CONNEXIONS**, puis **Voir les apps disponibles**.
-4. Sélectionnez **BWares Bridge** dans la liste des applications.
-5. Cliquez sur **Connecter**.
-6. Cliquez sur **Autoriser** pour autoriser BWares Bridge à accéder à votre point de vente enregistré sur HubRise. Si votre compte possède plusieurs points de vente, développez **Choisissez le point de vente**, sélectionnez le point de vente à connecter, puis cliquez sur **Autoriser**. Si le point de vente sélectionné possède plusieurs listes de clients ou catalogues, cliquez sur **Suivant** pour afficher les listes déroulantes correspondantes, puis sélectionnez les options souhaitées.
-7. Sur une nouvelle page, vous êtes invité à indiquer votre BWares ID. Saisissez l'identifiant, puis cliquez sur **Enregistrer** pour terminer le processus de connexion.
-
-\-- CONNECTER - option 3 --
-
-Seule l'équipe de support de BWares peut connecter votre [logiciel de caisse] à HubRise.
+![BWares, connexion à HubRise](./images/000-2x-page-accueil.png)
 
 Pour connecter BWares à HubRise, procédez comme suit :
 
@@ -49,14 +27,12 @@ Pour connecter BWares à HubRise, procédez comme suit :
 
 ## Donner accès au support de BWares {#give-access}
 
-Pour faciliter le traitement de vos demandes de support, vous devez accorder à votre fournisseur BWares l'accès à votre compte HubRise.
-\-- OU --
 Pour connecter BWares et faciliter le traitement de vos demandes de support, vous devez accorder à votre fournisseur BWares l'accès à votre compte HubRise.
 
 Pour donner accès à BWares, procédez comme suit :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
-1. Dans la section **Permissions**, ajoutez `contact@BWares.com`.
+1. Dans la section **Permissions**, ajoutez `sav@tbsys.fr`.
 1. Cliquez sur **Ajouter l'utilisateur**.
 1. Dans le menu déroulant de choix d'un rôle prédéfini, sélectionnez **Partenaire Technique**.
 1. Cliquez sur **Définir les permissions**.
@@ -65,18 +41,21 @@ L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers �
 
 ## Contacter le support de BWares {#contact}
 
-Pour demander la connexion de votre [logiciel de caisse], contactez le support de BWares par e-mail sur contact@BWares.com. Vous pouvez inclure support@hubrise.com en copie pour un suivi coordonné entre nos deux équipes.
+Pour demander la connexion de votre borne de commande, contactez le support de BWares par e-mail sur sav@tbsys.fr. Vous pouvez inclure support@hubrise.com en copie pour un suivi coordonné entre nos deux équipes.
 
 Indiquez dans votre demande le nom de votre compte HubRise, son identifiant HubRise et le point de vente à connecter. Pour plus d'informations, voir [Nom et identifiant du point de vente](/docs/locations#location-name-and-id).
 
 ## Déconnecter BWares
 
-Pour déconnecter BWares de HubRise, procédez comme suit :
+Si vous souhaitez seulement stopper temporairement la réception des commandes de votre borne sur HubRise, vous pouvez bloquer la connexion entre BWares et HubRise. Pour plus d'informations, voir [Bloquer ou déconnecter une application](/docs/connections#block-or-disconnect).
 
-1. Depuis le back-office de BWares, cliquez sur ...
-2. BWares est déconnecté de HubRise.
-   -- OU --
+Pour déconnecter BWares de HubRise de manière définitive, procédez comme suit :
 
-Pour déconnecter BWares de HubRise, contactez le support de BWares.
+1. Depuis la page d'accueil du back-office de BWares, cliquez sur **INTÉGRATIONS**.
+2. Ouvrir la connexion HubRise. 
+3. Cliquer sur **Se Déconnecter**.
+4. BWares est déconnecté de HubRise.
 
-Si vous souhaitez seulement stopper temporairement [la réception de commandes depuis HubRise], vous pouvez bloquer la connexion entre BWares et HubRise. Pour plus d'informations, voir [Bloquer ou déconnecter une application](/docs/connections#block-or-disconnect).
+![BWares, déconnexion de HubRise](./images/003-2x-modification-configuration.png)
+
+Pour déconnecter BWares de HubRise, vous pouvez également contacter le support de BWares.
