@@ -53,7 +53,7 @@ Lorsque cette option est activée, vous pouvez déclencher une mise à jour du c
 
 Activez l'option **Activer la synchronisation des horaires d'ouverture** pour que vos horaires définis dans Zelty soient automatiquement transmis à HubRise et à toutes vos applications connectées.
 
-Cette option synchronise les **Horaires d'ouverture du restaurant** depuis le back-office Zelty (et non les horaires de livraison). La synchronisation est déclenchée automatiquement lorsque vous modifiez vos horaires dans Zelty :
+Cette option synchronise les **Horaires d'ouverture du restaurant** depuis le back-office Zelty. La synchronisation est déclenchée automatiquement lorsque vous modifiez vos horaires dans Zelty :
 
 1. Dans le back-office Zelty, allez dans **Configuration** > **Horaires**
 2. Modifiez vos horaires d'ouverture

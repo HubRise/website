@@ -51,7 +51,7 @@ Pour déclencher une mise à jour du catalogue depuis Zelty :
 
 ### Variantes
 
-Zelty Bridge crée des variantes de catalogue dans les deux cas suivants :
+Zelty Bridge crée les variantes de catalogue suivantes :
 
 - Lorsque l'option **Créer des variantes pour les prix livraison, à emporter et Happy Hour** est activée, Zelty Bridge crée des variantes pour chacun de ces tarifs.
 
