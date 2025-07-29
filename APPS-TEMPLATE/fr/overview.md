@@ -13,7 +13,7 @@ gallery:
   - __gallery-004.png ?
 app_info:
   category:
-    - Logiciels de caisse - Plateformes de livraison de repas - Commande en ligne - Gestion de livreurs - Fidélité et marketing - Gestion et inventaire - Autres applications
+    - Logiciels de caisse - Plateformes de livraison de repas - Commande en ligne - Gestion de livreurs - Borne de commande - Fidélité et marketing - Gestion et inventaire - Autres applications
   availability:
     - Royaume-Uni
     - France
@@ -61,7 +61,7 @@ Connecter SOLUTION à HubRise permet à votre [logiciel de caisse] de :
  
 ---
 
-**REMARQUE IMPORTANTE :** L'envoi des commandes et des informations clients à HubRise sera bientôt possible. Contactez SOLUTION pour plus d'information à ce sujet.
+**REMARQUE IMPORTANTE :** L'envoi des commandes et des informations clients à HubRise sera bientôt possible. Contactez SOLUTION pour plus d'informations.
 
 ---
 
@@ -73,9 +73,9 @@ Pour plus d'information, consultez la page [Connexion à HubRise](/apps/SOLUTION
 
 ## Pourquoi se connecter ?
 
-En connectant SOLUTION à HubRise, vous permettez à votre [logiciel de caisse] de communiquer avec d'autres applications que vous utilisez de manière quotidienne. Recevez les commandes provenant de votre site de commande en ligne ou des plateformes de livraison de repas sur votre [logiciel de caisse]. Envoyez les commandes en ligne vers votre logiciel de caisse, une imprimante intelligente et connectée, un écran cuisine ou votre système de gestion de stock. Envoyez votre [menu / catalogue de produits] vers d'autres applications.
+En connectant SOLUTION à HubRise, vous permettez à votre [logiciel de caisse] de communiquer avec d'autres applications que vous utilisez de manière quotidienne. Recevez les commandes provenant de votre site de commande en ligne ou des plateformes de livraison de repas sur votre [logiciel de caisse]. Envoyez les commandes en ligne vers votre logiciel de caisse, une imprimante autonome, un écran cuisine ou votre système de gestion de stock. Envoyez votre [menu / catalogue de produits] vers d'autres applications.
 
-Grâce à HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes avec votre logiciel de caisse, votre solution de commande en ligne, les plateformes de livraison de repas (dont Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs, les services de livraison, les solutions d'e-marketing (SMS/e-mail), les systèmes de business intelligence, de gestion de stock et de fidélisation client, et bien d'autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, rendez-vous sur notre [page Apps](/apps).
+Grâce à HubRise, vous pouvez synchroniser votre menu, vos informations clients et vos commandes avec votre logiciel de caisse, votre solution de commande en ligne, les plateformes de livraison de repas (dont Deliveroo, Uber Eats et Just Eat), les solutions de gestion de livreurs, les services de livraison, les solutions d'e-marketing (SMS/e-mail), les outils de business intelligence, de gestion des stocks et de fidélisation client, et bien d'autres encore. Le nombre d'applications compatibles augmente chaque mois. Pour voir les applications que vous pouvez connecter, rendez-vous sur notre [page Apps](/apps).
 
 ## Prérequis
 

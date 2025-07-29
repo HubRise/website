@@ -21,7 +21,7 @@ Name uniqueness is ruled by the same constraints as catalogs:
 
 Returns a customer list.
 
-<CallSummaryTable endpoint="GET /customer_lists/:customer_list_id" accessLevel="location, account" />
+<CallSummaryTable endpoint="GET /customer_lists/:customer_list_id" accessLevel="Location, Account" />
 
 ##### Example request:
 
@@ -41,7 +41,8 @@ Returns a location's Customer Lists. Includes location and account level Custome
 <CallSummaryTable
   endpoint="GET /locations/:location_id/customer_lists"
   shortEndpoint="GET /location/customer_lists (location only)"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
+  paginated
 />
 
 Account level Customer Lists of an account:
@@ -49,7 +50,8 @@ Account level Customer Lists of an account:
 <CallSummaryTable
   endpoint="GET /accounts/:account_id/customer_lists"
   shortEndpoint="GET /account/customer_lists (account only)"
-  accessLevel="account"
+  accessLevel="Account"
+  paginated
 />
 
 ##### Example request:
@@ -80,7 +82,7 @@ To create a location-level customer list, use this request:
 <CallSummaryTable
   endpoint="POST /locations/:location_id/customer_lists"
   shortEndpoint="POST /location/customer_lists (location only)"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 To create an account-level customer list:
@@ -88,7 +90,7 @@ To create an account-level customer list:
 <CallSummaryTable
   endpoint="POST /accounts/:account_id/customer_lists"
   shortEndpoint="POST /account/customer_lists (account only)"
-  accessLevel="account"
+  accessLevel="Account"
 />
 
 ##### Request parameters:
@@ -113,7 +115,7 @@ If a customer list with the same name already exists, it returns an error.
 
 Update a customer list.
 
-<CallSummaryTable endpoint="PATCH /customer_lists/:id" accessLevel="location, account" />
+<CallSummaryTable endpoint="PATCH /customer_lists/:id" accessLevel="Location, Account" />
 
 ##### Example request:
 
@@ -133,7 +135,7 @@ Delete a customer list. Customers and loyalty cards belonging to the list are al
 
 No event is fired in the process.
 
-<CallSummaryTable endpoint="DELETE /customer_lists/:id" accessLevel="location, account" />
+<CallSummaryTable endpoint="DELETE /customer_lists/:id" accessLevel="Location, Account" />
 
 ##### Example request:
 
@@ -147,7 +149,7 @@ Returns a customer's details.
 
 <CallSummaryTable
   endpoint="GET /customer_lists/:customer_list_id/customers/:customer_id"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 ##### Example request:
@@ -200,7 +202,7 @@ Returns a customer's details.
 
 Returns customers belonging to a customer list. Filters can be specified.
 
-<CallSummaryTable endpoint="GET /customer_lists/:customer_list_id/customers" accessLevel="location, account" />
+<CallSummaryTable endpoint="GET /customer_lists/:customer_list_id/customers" accessLevel="Location, Account" paginated />
 
 ##### Request parameters:
 
@@ -237,7 +239,7 @@ Creates a new customer.
 
 There is no mandatory field so a customer can be created with no information then referred to by its unique id.
 
-<CallSummaryTable endpoint="POST /customer_lists/:customer_list_id/customers" accessLevel="location, account" />
+<CallSummaryTable endpoint="POST /customer_lists/:customer_list_id/customers" accessLevel="Location, Account" />
 
 ##### Request parameters:
 
@@ -299,7 +301,7 @@ Updates a customer. Only the fields present in the request are updated.
 
 <CallSummaryTable
   endpoint="PATCH /customer_lists/:customer_list_id/customers/:customer_id"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 ##### Example request:
@@ -318,7 +320,7 @@ Deletes a customer's personal information.
 
 <CallSummaryTable
   endpoint="POST /customer_lists/:customer_list_id/customers/:customer_id/anonymise"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 The anonymised fields are: `email`, `first_name`, `last_name`, `gender`, `birth_date`, `company_name`, `phone`, `phone_access_code`, `address_1`, `address_2`, `postal_code`, `latitude`, `longitude`, `delivery_notes`.
@@ -333,7 +335,7 @@ When a customer is anonymised, an [Event](/developers/api/callbacks#events) with
 
 <CallSummaryTable
   endpoint="POST /customer_lists/:customer_list_id/customers/:customer_id/anonymise"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 ##### Example request:
@@ -358,7 +360,7 @@ Returns a loyalty card.
 
 <CallSummaryTable
   endpoint="GET /customer_lists/:customer_list_id/loyalty_cards/:loyalty_card_id"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 ##### Example request:
@@ -379,7 +381,7 @@ Returns a loyalty card.
 
 Returns loyalty cards belonging to a customer list. Filters can be specified.
 
-<CallSummaryTable endpoint="GET /customer_lists/:customer_list_id/loyalty_cards" accessLevel="location, account" />
+<CallSummaryTable endpoint="GET /customer_lists/:customer_list_id/loyalty_cards" accessLevel="Location, Account" paginated />
 
 ##### Request parameters:
 
@@ -432,7 +434,7 @@ Returns loyalty cards belonging to a customer list. Filters can be specified.
 
 Creates a new loyalty card for a customer.
 
-<CallSummaryTable endpoint="POST /customer_lists/:customer_list_id/loyalty_cards" accessLevel="location, account" />
+<CallSummaryTable endpoint="POST /customer_lists/:customer_list_id/loyalty_cards" accessLevel="Location, Account" />
 
 ##### Request parameters:
 
@@ -462,7 +464,7 @@ Update a loyalty card.
 
 <CallSummaryTable
   endpoint="PATCH /customer_lists/:customer_list_id/loyalty_cards/:loyalty_card_id"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 ##### Request parameters:
@@ -494,7 +496,7 @@ Returns a loyalty card operation.
 
 <CallSummaryTable
   endpoint="GET /customer_lists/:customer_list_id/loyalty_cards/:loyalty_card_id/operations/:operation_id"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 ##### Example request:
@@ -520,7 +522,8 @@ Returns the operations on a given loyalty card, sorted by descending chronologic
 
 <CallSummaryTable
   endpoint="GET /customer_lists/:customer_list_id/loyalty_cards/:loyalty_card_id/operations"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
+  paginated
 />
 
 ##### Example request:
@@ -545,7 +548,7 @@ Create a loyalty card operation and updates the balance accordingly.
 
 <CallSummaryTable
   endpoint="POST /customer_lists/:customer_list_id/loyalty_cards/:loyalty_card_id/operations"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 ##### Request parameters:

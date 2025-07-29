@@ -13,7 +13,7 @@ gallery:
   - __gallery-004.png ?
 app_info:
   category:
-    - Point of Sales - Food Ordering Platforms - Online Ordering - Delivery Management - Loyalty and Marketing - Operations and Inventory - Other Apps
+    - Point of Sales - Food Ordering Platforms - Online Ordering - Self-Ordering Kiosk - Delivery Management - Loyalty and Marketing - Operations and Inventory - Other Apps
   availability:
     - United Kingdom
     - France
@@ -73,7 +73,7 @@ For more information, see [Connect to HubRise](/apps/SOLUTION/connect-hubrise).
 
 ## Why Connect?
 
-By connecting SOLUTION to HubRise, your [EPOS] can communicate with your other everyday applications. Receive orders from your online ordering solution, or food delivery platforms in your [EPOS]. Send online orders to your EPOS, to an autonomous printer, a Kitchen Display System or to your inventory management solution. Push your [menu / product catalog] into other apps.
+By connecting SOLUTION to HubRise, your [EPOS] can communicate with your other everyday applications. Receive orders from your online ordering solution, or food delivery platforms in your [EPOS]. Send online orders to your EPOS, an autonomous printer, a Kitchen Display System or your inventory management solution. Push your [menu / product catalog] into other apps.
 
 With HubRise, you can synchronise your menu, customer information, and orders between your EPOS, your online ordering solution, food delivery platforms (including Deliveroo, Uber Eats, and Just Eat), delivery management solutions or delivery services, eMarketing solutions (SMS/emailing), business intelligence, inventory, and customer loyalty systems, and much more. The number of compatible applications increases every month. To discover the apps you can connect, visit our [Apps page](/apps).
 
