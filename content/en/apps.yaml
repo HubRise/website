@@ -253,6 +253,13 @@ content:
           country: BE, FR
           title: Zelty
           description: Zelty is a complete suite of solutions designed for multi-site. Zelty is suitable for any type of restaurant from fast food to traditional catering.
+          additional_info: A newer, more complete integration is available. See Zelty Bridge.
+        - website: https://zelty.fr
+          documentation: /apps/zelty-bridge
+          logo: zelty-bridge.png
+          country: BE, FR
+          title: Zelty Bridge
+          description: Zelty Bridge is the advanced Zelty integration, offering bidirectional order synchronisation, inventory management, variant support, and other advanced features. Compatible with any Zelty EPOS, this integration replaces the previous one.
     - title: Food Ordering Platforms
       slug: food-ordering-platforms
       has_suggest_app: true

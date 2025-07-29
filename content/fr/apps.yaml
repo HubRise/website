@@ -253,6 +253,13 @@ content:
           country: BE, FR
           title: Zelty
           description: Zelty est une caisse enregistreuse sur iPad, offrant une solution complète et pensée pour les chaînes. La solution s'adapte cependant à tout type de restaurant.
+          additional_info: Une intégration plus récente et complète est disponible. Voir Zelty Bridge.
+        - website: https://zelty.fr
+          documentation: /fr/apps/zelty-bridge
+          logo: zelty-bridge.png
+          country: BE, FR
+          title: Zelty Bridge
+          description: Zelty Bridge est l'intégration avancée de Zelty, offrant une synchronisation bidirectionnelle des commandes, la gestion de l'inventaire, le support des variantes, et d'autres fonctionnalités. Compatible avec toute caisse Zelty, cette intégration remplace la précédente.
     - title: Plateformes de livraison de repas
       slug: food-ordering-platforms
       has_suggest_app: true
