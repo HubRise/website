@@ -8,6 +8,12 @@ meta:
   description: Étapes pour régler les problèmes de connexion entre Zelty et HubRise. Connectez votre caisse et synchronisez vos données avec d'autres applications.
 ---
 
+---
+
+**REMARQUE IMPORTANTE :** Une intégration plus complète est disponible. Consultez [Zelty Bridge](/apps/zelty-bridge/overview) pour bénéficier de fonctionnalités avancées.
+
+---
+
 ## Vérifiez la connexion à HubRise
 
 La première étape en cas de problème de connexion entre Zelty et HubRise consiste à vérifier la connexion.
