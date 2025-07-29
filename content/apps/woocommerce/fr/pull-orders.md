@@ -14,7 +14,11 @@ Cette page décrit les informations sur les commandes que HubRise reçoit de Woo
 
 ## Articles et options
 
-Les commandes WooCommerce contiennent les informations complètes sur les articles et les options, par exemple le nom, le code ref du logiciel de caisse, la quantité et le prix. Le prix des options WooCommerce est toujours équivalent à zéro. Les promotions ne sont pas prises en charge.
+Les commandes WooCommerce contiennent toutes les informations nécessaires pour chaque produit, notamment le nom, le code ref, la quantité et le prix.
+
+Les lignes d'options contiennent le nom de l'option et, lorsque disponible, un code ref. Ce code est extrait si la valeur de l’option suit le format `Nom de l’option [[CODE_REF]]` ; sinon, la valeur complète est utilisée comme nom et aucun code ref n’est transmis. Les prix des options sont toujours à zéro dans WooCommerce.
+
+Les promotions (deals) ne sont pas prises en charge.
 
 De même, les avis formulés par les clients sur des produits individuels ne sont pas pris en charge dans WooCommerce. Si vous comptez sur ces avis pour les instructions de préparation ou de présentation (par exemple « Cuisson à point » ou « Couper en tranches »), vous devez ajouter les articles correspondants dans votre logiciel de caisse, puis les inclure en tant qu'options dans le menu WooCommerce. Ils seront ainsi correctement encodés.
 
@@ -65,6 +69,12 @@ Dans l'installation WooCommerce par défaut, le type de service est toujours `de
 **FAQ associée** : [Comment encoder des métadonnées personnalisées dans une commande ?](/apps/woocommerce/faqs/encode-custom-metadata)
 
 ---
+
+## Horaires des commandes
+
+WooCommerce ne prend pas en charge nativement les heures de livraison ou de collecte, vous devez utiliser un plugin pour ajouter cette fonctionnalité. WooCommerce Bridge prend en charge plusieurs formats pour les horaires des commandes, qui peuvent être envoyées soit dans les métadonnées de la commande, soit dans les métadonnées des lignes d'expédition, selon le plugin utilisé.
+
+Pour les détails de configuration et les formats d'heure pris en charge, consultez la section [Heure souhaitée](/apps/woocommerce/configuration#expected-time) de la page de configuration.
 
 ## Données clients
 
@@ -207,5 +217,3 @@ Les champs envoyés sont les suivants :
 ### Champs personnalisés
 
 L'objet `custom_fields` est utilisé par WooCommerce Bridge pour stocker les métadonnées que WooCommerce envoie dans la commande. Ces informations ne sont pas fournies par défaut par l'API WooCommerce, mais le format réel dépend des plugins installés et de la personnalisation du code effectuée sur le site internet.
-
-Par exemple, l'objet `custom_fields` peut encoder le type de service ou l'heure de livraison estimée pour la commande.

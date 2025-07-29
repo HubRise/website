@@ -34,3 +34,6 @@ next-env.d.ts
 cypress/downloads
 cypress/screenshots
 cypress/videos
+
+# AI tools
+.claude

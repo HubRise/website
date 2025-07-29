@@ -58,7 +58,7 @@ Votre installation WooCommerce doit pouvoir envoyer à HubRise une clé de méta
 
 Dans le champ **Code ref du type de service**, saisissez le code ref du service attendu par votre logiciel de caisse. Pour connaître ses exigences, reportez-vous à la documentation de votre logiciel de caisse sur notre [page Apps](/apps).
 
-### Heure souhaitée
+### Heure souhaitée {#expected-time}
 
 ![Page de configuration de WooCommerce Bridge, heure souhaitée](./images/016-woocommerce-configuration-expected-time.png)
 
@@ -68,7 +68,7 @@ Si vous n'utilisez pas les heures souhaitées, laissez le menu déroulant **Clé
 
 Sinon, vous devrez choisir entre deux options d'encodage de l'heure de livraison par votre plugin : **Une valeur contenant la date et l'heure** ou **Deux valeurs : une pour la date, une pour l'heure**.
 
-Pour déterminer comment votre plugin encode l'heure souhaitée, passez une commande de test et examinez les logs sur la [page des commandes](/docs/data#orders). Recherchez le champ `meta_data` au niveau le plus élevé du JSON de la commande. Veillez à ne pas confondre avec les champs `meta_data` qui pourraient être imbriqués sous les éléments JSON `line_items`. Identifiez le ou les attributs dans ce champ qui contiennent la date et l'heure souhaitées. Si vous ne trouvez pas l'heure souhaitée dans le champ `meta_data`, contactez le développeur du plugin pour obtenir de l'aide.
+Pour déterminer comment votre plugin encode l'heure souhaitée, passez une commande de test et examinez les logs sur la [page des commandes](/docs/data#orders). Recherchez le champ `meta_data` au niveau le plus élevé du JSON de la commande, ou au sein des éléments `shipping_lines` en fonction de la sélection précédente. Identifiez le ou les attributs dans ce champ qui contiennent la date et l'heure souhaitées. Si vous ne trouvez pas l'heure souhaitée dans le champ `meta_data`, contactez le développeur du plugin pour obtenir de l'aide.
 
 En fonction de l'option sélectionnée dans le menu déroulant **Clés de métadonnées**, un ou deux champs apparaîtront, où vous pourrez spécifier le(s) nom(s) de clé de métadonnées contenant la date et l'heure souhaitées.
 
@@ -82,11 +82,16 @@ Si votre plugin utilise deux clés de métadonnées, les formats pris en charge 
 - La date doit être une date ou une heure analysable, par exemple : `dd/mm/yyyy`, `yyyy-mm-dd`, ou une chaîne ISO 8601 dont la partie heure est ignorée.
 - L'heure doit être une heure analysable, par exemple : `hh:mm:ss`, `hh:mm`, ou une chaîne ISO 8601 dont la partie date est ignorée.
 
+Dans le menu déroulant **Métadonnée(s) dans**, sélectionnez l'emplacement des métadonnées :
+
+- **La commande**, si l'heure souhaitée se trouve dans les métadonnées de la commande
+- **Les lignes d'expédition**, si l'heure souhaitée se trouve dans les métadonnées des lignes d'expédition
+
 ### Autres métadonnées de commande
 
 ![Page de configuration de WooCommerce Bridge, métadonnées diverses de commande](./images/016-woocommerce-configuration-misc-order-metadata.png)
 
-Dans cette section, vous pouvez spécifier la clé de métadonnée que WooCommerce utilise pour les notes de préparation du client au niveau de la commande.
+Dans cette section, vous pouvez spécifier la clé de métadonnée que WooCommerce utilise pour les notes de préparation du client au niveau de la commande. Vous pouvez entrer plusieurs clés séparées par des virgules.
 
 ### Métadonnées des articles de la commande {#order-item-metadata}
 
@@ -165,7 +170,7 @@ Si vous utilisez des plugins qui stockent les informations clients dans les mét
 
 ### Variante de catalogue à envoyer
 
-Les variantes de catalogue vous donnent la flexibilité de désactiver des articles et d'ajuster les prix spécifiquement pour votre site internet WooCommerce.
+Les variantes de catalogue vous donnent la flexibilité de désactiver des articles et d'ajuster les prix spécifiquement pour votre site internet WooCommerce. Pour plus d'informations, voir [Variantes de catalogues](/apps/catalog-manager/variants) dans notre documentation en ligne du Catalog Manager.
 
 Si votre catalogue comprend des variantes, vous pouvez sélectionner celle que vous souhaitez utiliser. Lorsque **(aucun)** est sélectionné, les articles par défaut ainsi que leurs prix standards sont utilisés. Si votre catalogue n'a pas de variantes, le menu sera masqué et un message s'affichera.
 

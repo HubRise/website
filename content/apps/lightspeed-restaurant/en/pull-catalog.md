@@ -33,6 +33,8 @@ To pull a catalog using the Lightspeed Restaurant Bridge, follow these steps:
 
 Depending on the size of your catalog, it might take a few minutes for your HubRise catalog to be fully updated.
 
+If the operation fails with a _403 Forbidden_ error, refer to [Forbidden Error When Pulling the Catalog](/apps/lightspeed-restaurant/troubleshooting/forbidden-menu-pull-error) for the solution.
+
 ### Pulling from a Third-Party Solution
 
 Some integrated solutions, such as digital ordering systems, offer a catalog pull feature. If your solution supports this feature, you will typically find a button labeled "Update Catalog" or something similar in their back office.
@@ -57,12 +59,12 @@ The category name is sent to HubRise, while category ref code and descriptions a
 
 Lightspeed supports skus, but not products. For every item in the Lightspeed catalog, Lightspeed Restaurant Bridge creates a corresponding sku in HubRise with the following information (if available):
 
-- Sku name.
-- Sku ref code.
-- Description.
-- Images.
-- Price.
-- Options.
+- Sku name
+- Sku ref code
+- Description
+- Images
+- Price
+- Options
 
 ### Options
 

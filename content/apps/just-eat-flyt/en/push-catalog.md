@@ -98,6 +98,7 @@ For every `sku` object in a product, Just Eat Flyt Bridge pushes the following i
 - `price`: The price of the sku
 - `option_list_refs`: The list of options attached to the sku
 - `tags`: Tags describing the characteristics and restrictions of the product, such as allergens or spiciness. See [Product Tags](#product-tags).
+- `tax_rate`: The delivery and collection tax rates of the parent product
 - `image`: The URL of the image of the parent product
 - `barcodes`: Only the first barcode is sent, if present
 

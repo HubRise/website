@@ -5,7 +5,7 @@ position: 3
 layout: documentation
 meta:
   title: Créer des codes ref | Lightspeed Restaurant | HubRise
-  description: 'Instructions pour créer des codes ref Lightspeed Restaurant requis pour que le logiciel de caisse fonctionne avec d''autres apps connectées (ex : plateforme de commande en ligne).'
+  description: "Instructions pour créer des codes ref Lightspeed Restaurant requis pour que le logiciel de caisse fonctionne avec d'autres apps connectées (ex : plateforme de commande en ligne)."
 ---
 
 Si vous connectez Lightspeed Restaurant à des plateformes de livraison comme Deliveroo, Uber Eats et Just Eat, ou à toute autre solution de commande en ligne, vous devez créer des types de service, des paiements, des frais et des remises spécifiques à chaque solution que vous prenez en charge. Pour simplifier le dépannage, nous vous recommandons d'utiliser les codes spécifiques fournis pour les [Plateformes de commande de repas](/apps/lightspeed-restaurant/food-ordering-platforms) et les [Solutions de commande en ligne](/apps/lightspeed-restaurant/online-ordering-solutions).

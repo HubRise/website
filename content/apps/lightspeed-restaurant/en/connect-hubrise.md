@@ -30,9 +30,15 @@ Lightspeed Restaurant Bridge connects to a HubRise location. You must repeat the
    - Click **Save**.
 1. You have now connected your EPOS to your HubRise location. Orders sent to HubRise will be flowing into Lightspeed Restaurant once the [HubRise integration is enabled](#enable-integration).
 
+---
+
+**IMPORTANT NOTE:** The Lightspeed user employed during the connection must have the **BO-WRITE** permission in the Lightspeed back office. If this permission is missing, certain operations such as the catalog pull will fail with a _403 Forbidden_ error. See [403 Forbidden Error When Pulling the Catalog](/apps/lightspeed-restaurant/troubleshooting/forbidden-menu-pull-error) for details.
+
+---
+
 ## 2. Enable the HubRise Integration {#enable-integration}
 
-Email HubRise at support@hubrise.com to request activation of the connection. No data will flow from HubRise into Lightspeed Restaurant until Lightspeed activates the API for HubRise in your account. HubRise will facilitate this activation by writing to k-series.support@lightspeedhq.com. 
+Email HubRise at support@hubrise.com to request activation of the connection. No data will flow from HubRise into Lightspeed Restaurant until Lightspeed activates the API for HubRise in your account. HubRise will facilitate this activation by writing to k-series.support@lightspeedhq.com.
 
 When you make your request to HubRise, specify which apps you would like to connect. Also let us know whether you require the standard VAT to be applied or if your business is subject to unique VAT rates. To verify the standard VAT rates configured by Lightspeed when activating the API for HubRise, refer to this article: [VAT rates for restaurants in France, Switzerland, and Belgium](https://www.lightspeedhq.ch/blog/comparaison-taux-tva/) (In French).
 
@@ -53,7 +59,6 @@ To give Lightspeed support access to your location, follow these steps:
 1. Click on **Add User**.
 1. In the dropdown menu for selecting a predefined role, select **Technical Partner**.
 1. Click on **Set Permissions**.
-
 
 ---
 

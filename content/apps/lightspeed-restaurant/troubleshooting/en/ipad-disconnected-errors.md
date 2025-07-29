@@ -1,7 +1,7 @@
 ---
 title: iPad Errors
 path_override: ipad-disconnected-errors
-position: 9
+position: 4
 layout: documentation
 meta:
   title: Troubleshoot iPad Errors | Lightspeed Restaurant | HubRise
@@ -50,10 +50,39 @@ and
 }
 ```
 
+## Lightspeed Closed
+
+If an HubRise order is completed on HubRise while Lightspeed EPOS is not running, or running in the background, the order might be rejected with one of the following error messages:
+
+```json
+{
+  "reason": "reload error: NF",
+  "thirdPartyReference": "xxx|xxx-0|yyy",
+  "businessLocationId": 123456789,
+  "type": "ORDER",
+  "status": "FAILURE",
+  "completionMode": "IMMEDIATE"
+}
+```
+
+and
+
+```json
+{
+  "reason": "update error:  An error occurred while connecting to iPad4 (599621)",
+  "thirdPartyReference": "xxx|xxx-0|yyy",
+  "businessLocationId": 123456789,
+  "type": "ORDER",
+  "status": "FAILURE",
+  "completionMode": "MANUALLY"
+}
+```
+
 These errors typically arise under the following circumstances:
 
 - No iPads are available to receive orders.
 - The iPad is turned off or is not connected to the internet.
 - The iPad is connected, but the Lightspeed app is running in the background, for example when the user is not on the Lightspeed app.
+- Orders are sent to the iPad set as **Active**. To avoid issues, all other iPads should be set to **Passive**. Contact Lightspeed support to confirm your configuration.
 
 HubRise sets the validity period of the order to 12 hours by default. If no device is active within this 12-hour validity period, the order will fail.

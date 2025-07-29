@@ -12,10 +12,18 @@ Cette page décrit comment récupérer un catalogue depuis Lightspeed dans HubRi
 
 ## Récupérer le catalogue dans HubRise
 
-Pour récupérer un catalogue depuis Lightspeed, suivez ces étapes :
+Il existe deux méthodes pour récupérer un catalogue depuis Lightspeed dans HubRise :
 
-1. Depuis la page principale de Lightspeed Restaurant Bridge, sélectionnez l'onglet **Actions**, puis cliquez sur **Récupérer le catalogue**.
-2. Cliquez sur **Confirmer** lorsque vous y êtes invité.
+- Via Lightspeed Restaurant Bridge
+- Via une solution tierce
+
+### Récupération via Lightspeed Restaurant Bridge
+
+Pour récupérer un catalogue via Lightspeed Restaurant Bridge, suivez ces étapes :
+
+1. Depuis la page principale de Lightspeed Restaurant Bridge, sélectionnez l'onglet **Actions**.
+2. Cliquez sur **Récupérer le catalogue**.
+3. Cliquez sur **Confirmer** lorsque vous y êtes invité.
 
 ---
 
@@ -24,6 +32,18 @@ Pour récupérer un catalogue depuis Lightspeed, suivez ces étapes :
 ---
 
 Selon la taille du catalogue, la mise à jour complète de votre catalogue HubRise peut durer quelques minutes.
+
+Si l'opération échoue avec une erreur _403 Forbidden_, consultez [Erreur Forbidden lors de l'import du catalogue](/apps/lightspeed-restaurant/troubleshooting/forbidden-menu-pull-error) pour la résolution.
+
+### Récupération via une solution tierce
+
+Certaines solutions intégrées, comme les systèmes de commande en ligne, offrent une fonctionnalité de récupération du catalogue. Si votre solution prend en charge cette fonctionnalité, vous trouverez généralement un bouton intitulé "Mettre à jour le catalogue" ou similaire dans leur back-office.
+
+Pour utiliser cette fonctionnalité :
+
+1. Vérifiez auprès de votre fournisseur de solution s'ils prennent en charge la récupération de catalogue depuis Lightspeed.
+2. Si c'est le cas, recherchez l'option de mise à jour du catalogue dans le back-office de votre solution.
+3. Utilisez cette option quand vous le souhaitez. La récupération du catalogue peut prendre quelques minutes, selon la taille de votre catalogue.
 
 ## Informations envoyées à HubRise
 
@@ -69,15 +89,15 @@ Les sections suivantes fournissent des informations techniques sur l'encodage de
 
 Pour chaque catégorie, les champs suivants sont envoyés à HubRise :
 
-- `name` : nom de la catégorie.
+- `name` : nom de la catégorie.
 - `ref` : Un numéro séquentiel est automatiquement généré pour chaque catégorie.
 
 ### SKU
 
 Pour chaque SKU, Lightspeed envoie les informations suivantes à HubRise :
 
-- `name` : nom de la SKU
-- `description` : description de la SKU
+- `name` : nom de la SKU
+- `description` : description de la SKU
 - `image_ids` : liste des ID d'images associées à la SKU
 - `skus` : liste contenant une seule SKU
   - `skus[0].ref` : code ref de la SKU, transmis dans les commandes
@@ -88,12 +108,12 @@ Pour chaque SKU, Lightspeed envoie les informations suivantes à HubRise :
 
 Chaque liste d'options a une `ref` séquentielle qui commence par `deal_`. Pour chaque option, les informations suivantes sont envoyées à HubRise :
 
-- `name` : nom de l'option
-- `ref` : code ref de l'option
-- `price` : prix de l'option
+- `name` : nom de l'option
+- `ref` : code ref de l'option
+- `price` : prix de l'option
 
 Chaque groupe d'instructions de production est associé à HubRise sous forme de liste d'options. Pour chaque instruction, les informations suivantes sont envoyées à HubRise :
 
-- `name` : nom de l'instruction
+- `name` : nom de l'instruction
 - `ref` : Le code ref de l'instruction, précédé d'un signe `+`.
 - `price` : toujours 0

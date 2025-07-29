@@ -19,7 +19,7 @@ Almost all the fields are optional. In fact the simplest order that can be creat
 <CallSummaryTable
   endpoint="POST /locations/:location_id/orders"
   shortEndpoint="POST /location/orders (location only)"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 ##### Parameters:
@@ -157,7 +157,7 @@ Returns an order resource.
 <CallSummaryTable
   endpoint="GET /locations/:location_id/orders/:order_id"
   shortEndpoint="GET /location/orders/:order_id (location only)"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 All the fields of an order creation request are returned, plus a few more:
@@ -366,7 +366,8 @@ Orders of a given location:
 <CallSummaryTable
   endpoint="GET /locations/:location_id/orders"
   shortEndpoint="GET /location/orders (location only)"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
+  paginated
 />
 
 Orders of any location of the account:
@@ -374,7 +375,8 @@ Orders of any location of the account:
 <CallSummaryTable
   endpoint="GET /accounts/:account_id/orders"
   shortEndpoint="GET /account/orders (account only)"
-  accessLevel="account"
+  accessLevel="Account"
+  paginated
 />
 
 ##### Parameters:
@@ -426,7 +428,7 @@ Updates an order.
 <CallSummaryTable
   endpoint="PATCH /locations/:location_id/orders/:order_id"
   shortEndpoint="PATCH /location/orders/:order_id (location only)"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 The following fields can be updated by sending their new value:

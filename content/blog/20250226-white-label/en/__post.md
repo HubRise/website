@@ -2,7 +2,7 @@
 title: HubRise White Label – Your Brand, Our Applications
 path_override: white-label
 date: 2025-02-26
-author: Janaina Wittner
+author: Antoine Monnier
 meta:
   title: Introducing HubRise White Label | Blog | HubRise
   description: HubRise White Label allows partners to offer our solutions under their own brand, providing a seamless experience for their customers.

@@ -14,5 +14,6 @@ meta:
 - [Can I Back Up My Uber Eats Menu Before a Catalog Push?](/apps/uber-eats/faqs/uber-eats-menu-backup)
 - [How to Create a Product With Variations in Uber Eats?](/apps/uber-eats/faqs/create-product-with-skus)
 - [How to Create a Deal in Uber Eats?](/apps/uber-eats/faqs/create-deal-in-uber-eats)
+- [What Are the Default Integration Settings?](/apps/uber-eats/faqs/default-integration-settings)
 - [How Do I Find My Uber Eats UUID?](/apps/uber-eats/faqs/find-uber-eats-uuid)
 - [Can I Connect My Uber Eats Webstore to HubRise?](/apps/uber-eats/faqs/connect-webstore)

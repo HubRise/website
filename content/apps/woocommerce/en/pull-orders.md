@@ -14,7 +14,11 @@ This page describes the information that HubRise receives from WooCommerce for y
 
 ## Items and Options
 
-WooCommerce orders contain the complete information about items and options, including name, POS ref code, quantity, and price. However, WooCommerce options have always zero as a price. Deals are not supported.
+WooCommerce orders provide complete information for each product item, including the name, ref code, quantity, and price.
+
+Option lines supply the option name and, when available, a ref code. The ref code is extracted when the option value follows the pattern `Option Name [[REF_CODE]]`; otherwise the entire value is used as the name and no ref is sent. Option prices are always zero in WooCommerce.
+
+Deals are not supported.
 
 Customers' comments on single products are not supported on WooCommerce. If you rely on these comments for cooking or serving instructions (for example, "Medium rare cooking", or "Cut in slices"), you should add the corresponding items in your EPOS and include them as options in the WooCommerce menu, so that they are correctly encoded.
 
@@ -65,6 +69,12 @@ In the default WooCommerce installation, the service type is always `delivery`. 
 **Related FAQ**: [How Can I Encode Custom Metadata In An Order?](/apps/woocommerce/faqs/encode-custom-metadata)
 
 ---
+
+## Order Times
+
+WooCommerce does not natively support expected delivery or collection times, so a plugin is required to implement this functionality. The WooCommerce Bridge supports multiple formats and plugins for order time data, which can be stored either in the order's metadata or in the shipping lines metadata depending on the plugin used.
+
+For configuration details and supported time formats, refer to the [Expected time](/apps/woocommerce/configuration#expected-time) section of the Configuration page.
 
 ## Customer Details
 
@@ -207,5 +217,3 @@ The fields sent are the following:
 ### Custom Fields
 
 The `custom_fields` object is used by WooCommerce Bridge to store the metadata that WooCommerce sends in the order. This information is not provided by default by the WooCommerce API, but the actual format depends on the installed plugins and code customisation made on the website.
-
-For example, the `custom_fields` object can encode the service type or the expected delivery time for the order.

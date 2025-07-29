@@ -105,6 +105,7 @@ Ces plateformes utilisent l'API Just Eat via Flyt. Sur la page de configuration 
 | Frais               | Code ref frais de livraison                                 | `JE77`                                                                   |
 | Frais               | Code ref frais de service                                   | `JE66`                                                                   |
 | Frais               | Code ref frais d'emballage                                  | Créez un produit avec un prix positif variable et utilisez son **Code**. |
+| Frais               | Code ref supplément petite commande                         | Créez un produit avec un prix positif variable et utilisez son **Code**. |
 | Frais               | Code ref pourboire livreur                                  | Créez un produit avec un prix positif variable et utilisez son **Code**. |
 | Frais               | Code ref autres frais                                       | Créez un produit avec un prix positif variable et utilisez son **Code**. |
 | Paiements           | Code ref paiement en ligne                                  | `JEPM`                                                                   |
@@ -179,21 +180,21 @@ Pour recevoir des commandes Uber Eats dans Lightspeed Restaurant, vous devez d'a
 
 Sur la page de configuration d'Uber Eats Bridge, utilisez les paramètres suivants :
 
-| Section             | Nom                                                         | Code ref                                                                           |
-| ------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| Statuts de commande | Marquer les commandes comme Acceptées                       | `lorsque leur statut HubRise passe à "Reçue"`                                      |
-| Types de service    | Code ref livraison Uber                                     | `UEAP`                                                                             |
-| Types de service    | Code ref livraison par le restaurant                        | `UENDAP`                                                                           |
-| Types de service    | Code ref à emporter                                         | `UEPUAP`                                                                           |
-| Types de service    | Code ref sur place                                          | `UEDIAP`                                                                           |
-| Types de service    | Envoyer les commandes livrées par Uber en tant que          | `commandes en livraison`                                                           |
-| Articles spéciaux   | Code ref jetables                                           | Créez un produit avec un prix = 0 dans Lightspeed et utilisez son **Code**. (\*) |
-| Remises             | Code ref remise                                             | `UE99`                                                                             |
-| Frais               | Code ref frais de livraison                                 | `UE77`                                                                             |
-| Frais               | Code ref supplément petite commande                         | Créez un produit avec un prix positif variable et utilisez son **Code**.           |
-| Frais               | Code ref pourboire                                          | Créez un produit avec un prix positif variable et utilisez son **Code**.           |
-| Paiements           | Code ref paiement en ligne                                  | `UEPM`                                                                             |
-| Paiements           | Code ref paiement en espèces                                | (laisser vide)                                                                     |
-| Clients             | Code d'accès au téléphone en double dans [...]              | Cochez cette case                                                                  |
+| Section             | Nom                                                | Code ref                                                                         |
+| ------------------- | -------------------------------------------------- | -------------------------------------------------------------------------------- |
+| Statuts de commande | Marquer les commandes comme Acceptées              | `lorsque leur statut HubRise passe à "Reçue"`                                    |
+| Types de service    | Code ref livraison Uber                            | `UEAP`                                                                           |
+| Types de service    | Code ref livraison par le restaurant               | `UENDAP`                                                                         |
+| Types de service    | Code ref à emporter                                | `UEPUAP`                                                                         |
+| Types de service    | Code ref sur place                                 | `UEDIAP`                                                                         |
+| Types de service    | Envoyer les commandes livrées par Uber en tant que | `commandes en livraison`                                                         |
+| Articles spéciaux   | Code ref jetables                                  | Créez un produit avec un prix = 0 dans Lightspeed et utilisez son **Code**. (\*) |
+| Remises             | Code ref remise                                    | `UE99`                                                                           |
+| Frais               | Code ref frais de livraison                        | `UE77`                                                                           |
+| Frais               | Code ref supplément petite commande                | Créez un produit avec un prix positif variable et utilisez son **Code**.         |
+| Frais               | Code ref pourboire                                 | Créez un produit avec un prix positif variable et utilisez son **Code**.         |
+| Paiements           | Code ref paiement en ligne                         | `UEPM`                                                                           |
+| Paiements           | Code ref paiement en espèces                       | (laisser vide)                                                                   |
+| Clients             | Code d'accès au téléphone en double dans [...]     | Cochez cette case                                                                |
 
 (\*) Ne s'applique que si vous proposez des articles jetables tels que des couverts, des serviettes, etc.

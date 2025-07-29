@@ -28,7 +28,7 @@ Pour connecter Clyo à HubRise, suivez les étapes suivantes :
    ![Clyo - Copier le code](./images/001-2x-clyo-connection-code.png)
 1. Fermez la fenêtre de connexion HubRise, retournez dans l'interface de Clyo, et collez le code dans le champ prévu à cet effet.
 1. Cliquez sur **OK**. La connexion à HubRise est maintenant établie.
-   ![Clyo - Connexion établie](./images/002-clyo-connection-success.png)
+   ![Clyo - Connexion établie](./images/002-clyo-configuration.png)
 
 ## Donner accès au support de Clyo {#give-access}
 

@@ -63,6 +63,11 @@ These are typically associated with specific ref codes in your EPOS, which you c
 
 ## Order Times
 
+Just Eat pushes orders to HubRise when a courier is assigned, or when the courier is the store’s preparation-time away.
+
+- You can adjust the preparation time per store directly in the Just Eat portal.
+- If you want Just Eat to push orders to HubRise as soon as they are placed, contact us at support@hubrise.com.
+
 For restaurant delivery orders, Just Eat provides the time the customer expects the order to be delivered. For other types of orders, it provides the time the order should be ready for pickup, either by the customer or a delivery rider. In both scenarios, this time is transmitted to HubRise as the `expected_time` field. This time cannot be changed by the EPOS.
 
 ## Customer Details
@@ -227,3 +232,9 @@ The available fields in the payloads are the following:
 ### Total Price
 
 The total price paid for the order, including charges applied, is encoded in the `total` field.
+
+## Pause {#pause}
+
+When order acceptance sync is enabled, Just Eat Flyt Bridge syncs the `order_acceptance` field from HubRise to Just Eat.
+
+The `order_acceptance.mode` field controls the store status: `normal` or `busy` keeps the store open, while `paused` closes it.

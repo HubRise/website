@@ -1,7 +1,7 @@
 ---
 title: Orders Not Received
 path_override: orders-not-received-errors
-position: 10
+position: 5
 layout: documentation
 meta:
   title: Troubleshoot Orders Not Received | Lightspeed Restaurant | HubRise

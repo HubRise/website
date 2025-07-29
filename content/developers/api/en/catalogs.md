@@ -16,9 +16,11 @@ Account-level catalogs are accessible by all locations of the account, while loc
 
 Catalogs are identified by their name. Catalog names must be unique for any account or location. For instance, two locations can have two different location-level catalogs with the same name. But a location and its holding account cannot have two catalogs with the same name.
 
-### 1.1. Retrieve Catalog
+### 1.1. Retrieve Catalog {#retrieve-catalog}
 
-<CallSummaryTable endpoint="GET /catalogs/:id" accessLevel="location, account" />
+Returns the complete catalog data in a single request. This endpoint is recommended over the paginated list endpoints (categories, products, skus, etc.) as it provides all catalog information at once without requiring multiple API calls.
+
+<CallSummaryTable endpoint="GET /catalogs/:id" accessLevel="Location, Account" />
 
 ##### Request parameters:
 
@@ -63,7 +65,7 @@ Return the catalogs a location has access to, including the account-level and lo
 <CallSummaryTable
   endpoint="GET /locations/:location_id/catalogs"
   shortEndpoint="GET /location/catalogs (location only)"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 Return the account-level catalogs of an account:
@@ -71,7 +73,7 @@ Return the account-level catalogs of an account:
 <CallSummaryTable
   endpoint="GET /accounts/:account_id/catalogs"
   shortEndpoint="GET /account/catalogs (account only)"
-  accessLevel="account"
+  accessLevel="Account"
 />
 
 Catalogs returned by the location level form of this request can be either location or account level catalogs:
@@ -116,7 +118,7 @@ To create a location-level catalog, use this request:
 <CallSummaryTable
   endpoint="POST /locations/:location_id/catalogs"
   shortEndpoint="POST /location/catalogs (location only)"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 To create an account-level catalog:
@@ -124,7 +126,7 @@ To create an account-level catalog:
 <CallSummaryTable
   endpoint="POST /accounts/:account_id/catalogs"
   shortEndpoint="POST /account/catalogs (account only)"
-  accessLevel="account"
+  accessLevel="Account"
 />
 
 ##### Request parameters:
@@ -213,7 +215,7 @@ Update a catalog. The request parameters are the same as for the [create catalog
 
 There is no individual endpoint to update a particular item of the catalog (eg. a SKU or an option). To update a single item, you must use this endpoint and pass the whole catalog content.
 
-<CallSummaryTable endpoint="PUT /catalogs/:id" accessLevel="account" />
+<CallSummaryTable endpoint="PUT /catalogs/:id" accessLevel="Account" />
 
 <details>
 
@@ -251,7 +253,7 @@ There is no individual endpoint to update a particular item of the catalog (eg. 
 
 Delete a catalog and all its content (ie categories, products, ...).
 
-<CallSummaryTable endpoint="DELETE /catalogs/:id" accessLevel="location, account" />
+<CallSummaryTable endpoint="DELETE /catalogs/:id" accessLevel="Location, Account" />
 
 <details>
 
@@ -323,7 +325,7 @@ The tree is sorted. Categories and products are retrieved in the same order as t
 
 ### 3.2. Retrieve Category
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/categories/:id" accessLevel="location, account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/categories/:id" accessLevel="Location, Account" />
 
 | Name          | Type             | Description                                                                                                     |
 | ------------- | ---------------- | --------------------------------------------------------------------------------------------------------------- |
@@ -351,9 +353,9 @@ The tree is sorted. Categories and products are retrieved in the same order as t
 
 ### 3.3. List Categories
 
-Return the categories of the catalog. Categories are returned in a deep first traversal order (category 1, then category 1's children, then category 2, then category 2's children, etc.)
+Return the categories of the catalog. Categories are returned in a deep first traversal order (category 1, then category 1's children, then category 2, then category 2's children, etc.).
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/categories" accessLevel="location, account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/categories" accessLevel="Location, Account" paginated />
 
 ##### Example request:
 
@@ -373,6 +375,8 @@ Return the categories of the catalog. Categories are returned in a deep first tr
 ]
 ```
 
+**Note:** This endpoint is paginated. Consider using the [Retrieve Catalog](#retrieve-catalog) endpoint to get all categories in a single request.
+
 ## 4. Products {#products}
 
 A product belongs to a category. A product has one or several skus.
@@ -381,15 +385,34 @@ A product belongs to a category. A product has one or several skus.
 
 ##### Parameters:
 
-| Name                                    | Type           | Description                                                                                                     |
-| --------------------------------------- | -------------- | --------------------------------------------------------------------------------------------------------------- |
-| `ref` <Label type="optional" />         | string         | The ref of the product.                                                                                         |
-| `category_ref`                          | string         | The ref of the parent category.                                                                                 |
-| `name`                                  | string         | The name of the product.                                                                                        |
-| `description` <Label type="optional" /> | string         | The description of the product.                                                                                 |
-| `tags` <Label type="optional" />        | string[]       | List of tags. A tag is a free text used to describe some particular characteristics of a product or a category. |
-| `image_ids` <Label type="optional" />   | string[]       | List of image ids attached to the product                                                                       |
-| `skus`                                  | [Sku](#skus)[] | List of skus of this product. A product must contain at least one sku.                                          |
+| Name                                    | Type                          | Description                                                                                                     |
+| --------------------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `ref` <Label type="optional" />         | string                        | The ref of the product.                                                                                         |
+| `category_ref`                          | string                        | The ref of the parent category.                                                                                 |
+| `name`                                  | string                        | The name of the product.                                                                                        |
+| `description` <Label type="optional" /> | string                        | The description of the product.                                                                                 |
+| `tags` <Label type="optional" />        | string[]                      | List of tags. A tag is a free text used to describe some particular characteristics of a product or a category. |
+| `tax_rate` <Label type="optional" />    | [TaxRate](#product-tax-rates) | Tax rates (%) for each service type. See [Tax Rates](#product-tax-rates) for details on the expected structure. |
+| `image_ids` <Label type="optional" />   | string[]                      | List of image ids attached to the product                                                                       |
+| `skus`                                  | [Sku](#skus)[]                | List of skus of this product. A product must contain at least one sku.                                          |
+
+#### Tax Rates {#product-tax-rates}
+
+Each product can define a `tax_rate` object with three keys, one per service type:
+
+```json
+{
+  "delivery": "20.0",
+  "collection": "10.0",
+  "eat_in": "10.0"
+}
+```
+
+All three keys must be either present, or the `tax_rate` object omitted or set to `null`. The values are decimal strings representing percentages — for example, `"20.0"` means a 20 % rate.
+
+Tax rates are typically used by ordering solutions to return per-item tax breakdowns in orders and to display taxes to end users.
+
+Whether prices are tax-inclusive or tax-exclusive depends on the market. See the [Orders – Tax Rates](/developers/api/orders#tax-rates) section for more details.
 
 ##### Example:
 
@@ -399,6 +422,11 @@ A product belongs to a category. A product has one or several skus.
   "category_ref": "PIZ",
   "name": "Regina",
   "tags": ["pizza", "vegetarian"],
+  "tax_rate": {
+    "delivery": "20.0",
+    "collection": "5.5",
+    "eat_in": "5.5"
+  },
   "image_ids": ["clom9"],
   "skus": [
     {
@@ -413,18 +441,19 @@ A product belongs to a category. A product has one or several skus.
 
 ### 4.2. Retrieve Product
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/products/:id" accessLevel="location, account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/products/:id" accessLevel="Location, Account" />
 
-| Name          | Type             | Description                               |
-| ------------- | ---------------- | ----------------------------------------- |
-| `id`          | string           | The id of the product.                    |
-| `ref`         | string or `null` | The ref of the product.                   |
-| `category_id` | string           | The id of the parent category.            |
-| `name`        | string           | The name of the product.                  |
-| `description` | string or `null` | The description of the product.           |
-| `tags`        | string[]         | List of tags.                             |
-| `image_ids`   | string[]         | List of image ids attached to the product |
-| `skus`        | [Sku](#skus)[]   | List of skus of this product.             |
+| Name          | Type                                    | Description                                                               |
+| ------------- | --------------------------------------- | ------------------------------------------------------------------------- |
+| `id`          | string                                  | The id of the product.                                                    |
+| `ref`         | string or `null`                        | The ref of the product.                                                   |
+| `category_id` | string                                  | The id of the parent category.                                            |
+| `name`        | string                                  | The name of the product.                                                  |
+| `description` | string or `null`                        | The description of the product.                                           |
+| `tags`        | string[]                                | List of tags.                                                             |
+| `tax_rate`    | [TaxRate](#product-tax-rates) or `null` | Tax rates (%) for each service type. See [Tax Rates](#product-tax-rates). |
+| `image_ids`   | string[]                                | List of image ids attached to the product                                 |
+| `skus`        | [Sku](#skus)[]                          | List of skus of this product.                                             |
 
 ##### Example request:
 
@@ -435,6 +464,14 @@ A product belongs to a category. A product has one or several skus.
   "id": "abg5a",
   "category_id": "lsndh",
   "name": "Margarita",
+  "description": "A classic pizza with tomato sauce and mozzarella",
+  "tags": [],
+  "tax_rate": {
+    "delivery": "20.0",
+    "collection": "10.0",
+    "eat_in": null
+  },
+  "images_ids": [],
   "skus": [
     {
       "id": "sb65k",
@@ -457,7 +494,7 @@ A product belongs to a category. A product has one or several skus.
 
 Retrieve the list of products in the catalog.
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/products" accessLevel="location, account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/products" accessLevel="Location, Account" paginated />
 
 ##### Example request:
 
@@ -474,6 +511,8 @@ Retrieve the list of products in the catalog.
   ...
 ]
 ```
+
+**Note:** This endpoint is paginated. Consider using the [Retrieve Catalog](#retrieve-catalog) endpoint to get all products in a single request.
 
 ## 5. Skus {#skus}
 
@@ -495,6 +534,7 @@ A product contains one or several skus. A sku is always attached to a product.
 | `option_list_refs` <Label type="optional" /> | string[]                                                  | The refs of the option lists this sku is attached to.                                                                   |
 | `tags` <Label type="optional" />             | string[]                                                  | List of tags.                                                                                                           |
 | `barcodes` <Label type="optional" />         | string[]                                                  | List of barcodes. See [Barcodes](#barcodes) for more information.                                                       |
+| `custom_fields` <Label type="optional" />    | [CustomFields](/developers/api/extensions#custom-fields)  | Additional data attached to the sku.                                                                                    |
 
 #### Barcodes {#barcodes}
 
@@ -522,13 +562,14 @@ Each barcode must be a numeric string comprising exactly 8, 12, or 13 digits. Ex
   ],
   "option_list_refs": ["SAUCE", "PIZZA_TOPPINGS"],
   "tags": ["hidden"],
-  "barcodes": ["1234567890123", "1234567890124"]
+  "barcodes": ["1234567890123", "1234567890124"],
+  "custom_fields": {}
 }
 ```
 
 ### 5.2. Retrieve Sku
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/products/:product_id/skus/:id" accessLevel="location, account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/products/:product_id/skus/:id" accessLevel="Location, Account" />
 
 | Name              | Type                                                      | Description                                                         |
 | ----------------- | --------------------------------------------------------- | ------------------------------------------------------------------- |
@@ -541,6 +582,7 @@ Each barcode must be a numeric string comprising exactly 8, 12, or 13 digits. Ex
 | `price_overrides` | [PriceOverrides](#price-overrides)                        | Price overrides in different contexts.                              |
 | `option_list_ids` | string[]                                                  | The ids of the option lists this sku is attached to.                |
 | `tags`            | string[]                                                  | List of tags.                                                       |
+| `custom_fields`   | [CustomFields](/developers/api/extensions#custom-fields)  | Additional data attached to the sku.                                |
 
 ##### Example request:
 
@@ -558,13 +600,15 @@ Each barcode must be a numeric string comprising exactly 8, 12, or 13 digits. Ex
   "price": "9.80 EUR",
   "price_overrides": [],
   "option_list_ids": ["e2sfj"],
-  "tags": ["hidden"]
+  "tags": ["hidden"],
+  "barcodes": [],
+  "custom_fields": {}
 }
 ```
 
 ### 5.3. List Skus
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/products/:product_id/skus" accessLevel="location, account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/products/:product_id/skus" accessLevel="Location, Account" paginated />
 
 ##### Example request:
 
@@ -580,6 +624,8 @@ Each barcode must be a numeric string comprising exactly 8, 12, or 13 digits. Ex
   }
 ]
 ```
+
+**Note:** This endpoint is paginated. Consider using the [Retrieve Catalog](#retrieve-catalog) endpoint to get all skus in a single request.
 
 ## 6. Option Lists {#option-lists}
 
@@ -635,7 +681,7 @@ The `type` field is deprecated and should be replaced with `min_selections` and 
 
 Retrieve an option list and the possible choices (options).
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/option_lists/:id" accessLevel="location, account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/option_lists/:id" accessLevel="Location, Account" />
 
 | Name                               | Type                 | Description                                                                                                                       |
 | ---------------------------------- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -674,7 +720,7 @@ Retrieve an option list and the possible choices (options).
 
 ### 6.3. List Option Lists
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/option_lists" accessLevel="location, account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/option_lists" accessLevel="Location, Account" paginated />
 
 ##### Example request:
 
@@ -691,6 +737,8 @@ Retrieve an option list and the possible choices (options).
   ...
 ]
 ```
+
+**Note:** This endpoint is paginated. Consider using the [Retrieve Catalog](#retrieve-catalog) endpoint to get all option lists in a single request.
 
 ## 7. Options {#options}
 
@@ -732,7 +780,7 @@ Retrieve an option list and the possible choices (options).
 
 <CallSummaryTable
   endpoint="GET /catalogs/:catalog_id/option_lists/:option_list_id/options/:id"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 | Name              | Type                                                      | Description                            |
@@ -762,10 +810,7 @@ Retrieve an option list and the possible choices (options).
 
 ### 7.3. List Options
 
-<CallSummaryTable
-  endpoint="GET /catalogs/:catalog_id/option_lists/:option_list_id/options"
-  accessLevel="location, account"
-/>
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/option_lists/:option_list_id/options" accessLevel="Location, Account" paginated />
 
 ##### Example request:
 
@@ -783,6 +828,8 @@ Retrieve an option list and the possible choices (options).
   ...
 ]
 ```
+
+**Note:** This endpoint is paginated. Consider using the [Retrieve Catalog](#retrieve-catalog) endpoint to get all options in a single request.
 
 ## 8. Deals {#deals}
 
@@ -840,7 +887,7 @@ Retrieve an option list and the possible choices (options).
 
 ### 8.2. Retrieve Deal
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/deals/:id" accessLevel="location, account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/deals/:id" accessLevel="Location, Account" />
 
 ##### Example request:
 
@@ -873,7 +920,7 @@ Retrieve an option list and the possible choices (options).
 
 ### 8.2. List Deals
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/deals" accessLevel="location, account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/deals" accessLevel="Location, Account" paginated />
 
 ##### Example request:
 
@@ -891,6 +938,8 @@ Retrieve an option list and the possible choices (options).
   ...
 ]
 ```
+
+**Note:** This endpoint is paginated. Consider using the [Retrieve Catalog](#retrieve-catalog) endpoint to get all deals in a single request.
 
 ## 9. Discounts {#discounts}
 
@@ -927,7 +976,7 @@ A discount is a reduction of the order total price.
 
 ### 9.2. Retrieve Discount
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/discounts/:id" accessLevel="location, account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/discounts/:id" accessLevel="Location, Account" />
 
 ##### Example request:
 
@@ -948,7 +997,7 @@ A discount is a reduction of the order total price.
 
 ### 9.3. List Discounts
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/discounts" accessLevel="location, account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/discounts" accessLevel="Location, Account" paginated />
 
 ##### Example request:
 
@@ -966,6 +1015,8 @@ A discount is a reduction of the order total price.
   ...
 ]
 ```
+
+**Note:** This endpoint is paginated. Consider using the [Retrieve Catalog](#retrieve-catalog) endpoint to get all discounts in a single request.
 
 ## 10. Charges {#charges}
 
@@ -995,7 +1046,7 @@ A charge is an additional fee billed to the customer. Examples of charges includ
 
 ### 10.2. Retrieve Charge
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/charges/:id" accessLevel="location, account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/charges/:id" accessLevel="Location, Account" />
 
 ##### Parameters:
 
@@ -1025,7 +1076,7 @@ A charge is an additional fee billed to the customer. Examples of charges includ
 
 Retrieve the list of charges in the catalog.
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/charges" accessLevel="location, account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/charges" accessLevel="Location, Account" paginated />
 
 ##### Example request:
 
@@ -1043,6 +1094,8 @@ Retrieve the list of charges in the catalog.
   ...
 ]
 ```
+
+**Note:** This endpoint is paginated. Consider using the [Retrieve Catalog](#retrieve-catalog) endpoint to get all charges in a single request.
 
 ## 11. Restrictions {#restrictions}
 
@@ -1135,24 +1188,34 @@ All conditions must be met simultaneously for a rule to match. When one or sever
 
 ## 13. Images {#images}
 
-Images can be attached to products and deals, via their `image_ids` fields.
+Images can be attached to products and deals through their `image_ids` fields. Each image must be created first, then referenced from the catalog payload.
 
-### Image Management {#image-management}
+There is no endpoint to delete an image. Images that have not been attached to any product or deal for 30 days are automatically removed.
 
-Images must be uploaded before catalog data. The sequence is:
+### Recommendations for Image Upload {#image-management}
 
-1. If you are not reusing a catalog, create an empty one first: `POST /catalogs`.
-1. Upload all images: `POST /catalogs/:catalog_id/images` and retain their `id`s for the following step.
-1. Upload the catalog: `PUT /catalogs/:catalog_id`, using the image `id`s.
+#### Catalog creation
 
-If you are updating an existing catalog, you should only upload new images to reduce the amount of data to be sent. Follow this sequence:
+When you create a catalog, upload images before the catalog. Follow this sequence:
 
-1. Fetch the existing images: `GET /catalogs/:catalog_id/images`. This request returns the `id`s and `md5` hashes of the existing images.
-1. Determine which images are new, either by `id` or by calculating the `md5` hash of each image to upload.
-1. Upload the new images: `POST /catalogs/:catalog_id/images` and retain their `id`s.
-1. Update the catalog: `PUT /catalogs/:catalog_id`, using the existing and new image `id`s.
+- If your scope allows it, create an empty catalog: `POST /catalogs`. Otherwise, use the catalog attached to the connection.
 
-There is no endpoint to delete an image. Images that are not used for 30 days are automatically removed.
+- Upload images for the catalog: `POST /catalogs/:catalog_id/images`, and keep the returned `id`s for the next step. Optionally add `?private_ref=...` to supply a unique `private_ref` per image to ease future deduplication when updating the catalog.
+
+- Upload the catalog: `PUT /catalogs/:catalog_id`, using the image `id`s.
+
+#### Catalog update {#images-update-catalog}
+
+When you update a catalog, only upload new images to minimise data transfer. Follow this sequence:
+
+- Fetch the existing images: `GET /catalogs/:catalog_id/images`.
+  This returns each image `id`, `md5` checksum and, if it was supplied at creation time, its `private_ref`.
+
+- Identify the images to reuse, and the images to upload. You can either use the `md5` fields (if you still have the original image binary content), or the `private_ref` fields (if you supplied them earlier).
+
+- Upload the new images: `POST /catalogs/:catalog_id/images`, optionally add `?private_ref=...` to supply unique refs, and keep the image `id`s for the next step.
+
+- Update the catalog: `PUT /catalogs/:catalog_id`, supplying the reused or new image `id`s for each product or deal.
 
 ### 13.1. Create Image
 
@@ -1164,7 +1227,13 @@ HubRise supports the following image formats: `JPEG`, `PNG`, `WEBP`, `GIF`, and 
 
 HubRise does not impose any restrictions on image dimensions. However, we recommend using images in `1200x800` format or larger to ensure a good quality across all channels.
 
-<CallSummaryTable endpoint="POST /catalogs/:catalog_id/images" accessLevel="location, account" />
+<CallSummaryTable endpoint="POST /catalogs/:catalog_id/images" accessLevel="Location, Account" />
+
+##### Parameters:
+
+| Name                                    | Type   | Description                                                                                                                                                          |
+| --------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `private_ref` <Label type="optional" /> | string | A client‑side reference used to identify already uploaded images. Must be unique for the catalog. See [Private Refs](/developers/api/general-concepts#private-refs). |
 
 ##### Example request:
 
@@ -1183,13 +1252,14 @@ Response:
   "type": "image/jpeg",
   "size": 126934,
   "md5": "39857d16289e814484f4229ca40cc2b1",
+  "private_ref": "sku-98765",
   "seconds_before_removal": 2592000
 }
 ```
 
 ### 13.2. Retrieve Image
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/images/:id" accessLevel="location, account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/images/:id" accessLevel="Location, Account" />
 
 ##### Parameters:
 
@@ -1199,6 +1269,7 @@ Response:
 | `type`                   | string  | The MIME type of the image. Example values: `image/jpeg`, `image/png`.                                                                           |
 | `size`                   | integer | Image size in bytes.                                                                                                                             |
 | `md5`                    | string  | MD5-hash of the image data.                                                                                                                      |
+| `private_ref`            | string  | The `private_ref` supplied at creation, or `null`.                                                                                               |
 | `seconds_before_removal` | integer | Time left before this image is removed. For unattached images only. This field is null if the image is attached to at least one product or deal. |
 
 ##### Example request:
@@ -1211,15 +1282,16 @@ Response:
   "type": "image/jpeg",
   "size": 240330,
   "md5": "39857d16289e814484f4229ca40cc2b1",
+  "private_ref": "sku-123",
   "seconds_before_removal": 33102
 }
 ```
 
 ### 13.3. Retrieve Image Data
 
-Return the image data. The reply's `Content-Type` header contains the MIME image type.
+Return the raw image data. The reply's `Content-Type` header contains the MIME image type.
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/images/:id/data" accessLevel="location, account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/images/:id/data" accessLevel="Location, Account" />
 
 ##### Example request:
 
@@ -1227,16 +1299,39 @@ Return the image data. The reply's `Content-Type` header contains the MIME image
 
 ```http
 Content-Type: image/jpeg
-Response body: image data
+Response body: [image data]
 ```
 
-### 13.4. List Images
+### 13.4. List Images {#list-images}
 
 Retrieve the list of images in the catalog.
 
-<CallSummaryTable endpoint="GET /catalogs/:catalog_id/images" accessLevel="location, account" />
+<CallSummaryTable endpoint="GET /catalogs/:catalog_id/images" accessLevel="Location, Account" />
 
-##### Example request:
+##### Parameters:
+
+| Name                                    | Type   | Description                                                                   |
+| --------------------------------------- | ------ | ----------------------------------------------------------------------------- |
+| `private_ref` <Label type="optional" /> | string | Return only the image that matches this `private_ref` for the current client. |
+
+##### Example request: filter by `private_ref`
+
+`GET /catalogs/87yu4/images?private_ref=sku-98765`
+
+```json
+[
+  {
+    "id": "tsll2",
+    "type": "image/jpeg",
+    "size": 240330,
+    "md5": "39857d16289e814484f4229ca40cc2b1",
+    "private_ref": "sku-98765",
+    "seconds_before_removal": null
+  }
+]
+```
+
+##### Example request: list all images
 
 `GET /catalogs/87yu4/images`
 
@@ -1247,11 +1342,16 @@ Retrieve the list of images in the catalog.
     "type": "image/jpeg",
     "size": 240330,
     "md5": "39857d16289e814484f4229ca40cc2b1",
+    "private_ref": "sku-123",
     "seconds_before_removal": 33102
   },
   {
-    "id": "mpsml"
-    ...
+    "id": "mpsml",
+    "type": "image/png",
+    "size": 198764,
+    "md5": "40a0d6644167654926e153c68c040b1d",
+    "private_ref": null,
+    "seconds_before_removal": null
   }
 ]
 ```
@@ -1273,7 +1373,7 @@ Returns the inventory of SKUs and options in the specified catalog.
 <CallSummaryTable
   endpoint="GET /catalogs/:id/locations/:id/inventory"
   shortEndpoint="GET /catalogs/:id/location/inventory (location only)"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 ##### Example request:
@@ -1323,7 +1423,7 @@ The request body has the same format as the [Retrieve Inventory](#retrieve-inven
 <CallSummaryTable
   endpoint="PUT /catalogs/:id/locations/:id/inventory"
   shortEndpoint="PUT /catalogs/:id/location/inventory (location only)"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 ##### Example request:
@@ -1359,7 +1459,7 @@ The response returns only the modified entries for brevity and utility.
 <CallSummaryTable
   endpoint="PATCH /catalogs/:id/locations/:id/inventory"
   shortEndpoint="PATCH /catalogs/:id/location/inventory (location only)"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 ##### Example request:

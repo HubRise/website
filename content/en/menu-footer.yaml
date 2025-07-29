@@ -13,6 +13,8 @@ sections:
         to: /developers/integration-guide
       - title: API Reference
         to: /developers/api/general-concepts
+      - title: Changelog
+        to: /developers/changelog
   - title: Resources
     links:
       - title: User Guide
