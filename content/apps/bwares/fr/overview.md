@@ -19,6 +19,12 @@ app_info:
   contact: +33 5 56 94 26 96 / contact@tbsys.fr
 ---
 
+---
+
+**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
+
+---
+
 ## Description
 
 Conçue et développée à Bordeaux par une équipe dévouée et motivée, BWares propose des bornes de commande intuitives pour permettre aux clients de passer commande de manière autonome. Elle s’intègre aux logiciels de caisse pour transmettre automatiquement les commandes aux postes de production.
@@ -38,6 +44,7 @@ Connecter BWares à HubRise permet à votre borne de commande de :
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Envoyer les informations clients à HubRise.
 - Recevoir un catalogue de HubRise, avec support des variantes.
+- Synchroniser l'inventaire avec HubRise.
 - Synchroniser les horaires d'ouverture avec HubRise.
 
 ---

@@ -19,6 +19,12 @@ app_info:
   contact: +33 5 56 94 26 96 / contact@tbsys.fr
 ---
 
+---
+
+**IMPORTANT NOTE:** The full documentation is available <Link href="/fr/apps/bwares" addLocalePrefix={false}>in French only</Link>.
+
+---
+
 ## Description
 
 Designed and developed in Bordeaux by a dedicated and motivated team, BWares offers intuitive self-ordering kiosks that allow customers to place orders autonomously. It integrates with EPOS solutions to automatically send orders to production stations.
@@ -32,11 +38,12 @@ BWares is suitable for various types of businesses (quick service restaurants, b
 
 ## Integration Features
 
-Connecter BWares à HubRise permet à votre borne de commande de :
+Connecting BWares to HubRise allows your self-ordering kiosk to:
 
 - Push orders into HubRise, including order status.
 - Push customer information into HubRise.
 - Pull a catalog from HubRise, with variants support.
+- Synchronise inventory with HubRise.
 - Synchronise opening hours with HubRise.
 
 ---

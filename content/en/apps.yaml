@@ -541,7 +541,7 @@ content:
       slug: kiosk
       apps:
         - website: https://www.bwares.fr
-          documentation: /fr/apps/bwares
+          documentation: /apps/bwares
           logo: bwares.png
           country: FR
           title: BWares
