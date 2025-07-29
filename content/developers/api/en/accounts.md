@@ -17,7 +17,7 @@ Get location details.
 <CallSummaryTable
   endpoint="GET /locations/:id"
   shortEndpoint="GET /location (location only)"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 <details>
@@ -136,7 +136,7 @@ Updates a location.
 <CallSummaryTable
   endpoint="PATCH /locations/:id"
   shortEndpoint="PATCH /location (location only)"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 The following fields can be updated: `cutoff_time`, `opening_hours`, `preparation_time`, `order_acceptance`, and `custom_fields`.
@@ -211,7 +211,7 @@ If the `order_acceptance` object is provided, it must match one of the following
 
 Returns the locations of the account.
 
-<CallSummaryTable endpoint="GET /locations/" accessLevel="account" />
+<CallSummaryTable endpoint="GET /locations/" accessLevel="Account" paginated />
 
 ##### Example request:
 
@@ -241,7 +241,7 @@ Returns the locations of the account.
 
 Get account details.
 
-<CallSummaryTable endpoint="GET /accounts/:id" shortEndpoint="GET /account" accessLevel="account" />
+<CallSummaryTable endpoint="GET /accounts/:id" shortEndpoint="GET /account" accessLevel="Account" />
 
 ##### Example request:
 

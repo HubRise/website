@@ -8,9 +8,10 @@ interface CallSummaryTableProps {
   endpoint: string
   shortEndpoint?: string
   accessLevel: string
+  paginated?: boolean
 }
 
-const CallSummaryTable = ({ endpoint, shortEndpoint, accessLevel }: CallSummaryTableProps): JSX.Element => {
+const CallSummaryTable = ({ endpoint, shortEndpoint, accessLevel, paginated }: CallSummaryTableProps): JSX.Element => {
   const [url, extra] = shortEndpoint ? shortEndpoint.split(`(`) : []
 
   return (
@@ -35,6 +36,14 @@ const CallSummaryTable = ({ endpoint, shortEndpoint, accessLevel }: CallSummaryT
           <TableCell>Access level:</TableCell>
           <TableCell>{accessLevel}</TableCell>
         </Row>
+        {paginated && (
+          <Row>
+            <TableCell>Paginated:</TableCell>
+            <TableCell>
+              Yes (see <a href="/developers/api/general-concepts#pagination">pagination</a>)
+            </TableCell>
+          </Row>
+        )}
       </tbody>
     </Table>
   )

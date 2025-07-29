@@ -17,7 +17,7 @@ Attaches a delivery to an order.
 <CallSummaryTable
 endpoint="POST /locations/:location_id/orders/:order_id/delivery"
 shortEndpoint="POST /location/orders/:order_id/delivery (location only)"
-accessLevel="location, account"
+accessLevel="Location, Account"
 />
 
 This endpoint can only be called if:
@@ -98,7 +98,7 @@ Retrieves the delivery attached to an order.
 <CallSummaryTable
 endpoint="GET /locations/:location_id/orders/:order_id/delivery"
 shortEndpoint="GET /location/orders/:order_id/delivery (location only)"
-accessLevel="location, account"
+accessLevel="Location, Account"
 />
 
 If the order has no delivery, a `404 - Not Found` error is returned.
@@ -143,7 +143,7 @@ Updates the delivery attached to an order.
 <CallSummaryTable
 endpoint="PATCH /locations/:location_id/orders/:order_id/delivery"
 shortEndpoint="PATCH /location/orders/:order_id/delivery (location only)"
-accessLevel="location, account"
+accessLevel="Location, Account"
 />
 
 All fields can be updated, except: `carrier`, `carrier_ref`, `fee`.
