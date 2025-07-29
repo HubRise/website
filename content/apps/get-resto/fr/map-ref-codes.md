@@ -12,7 +12,7 @@ Une fois Get Resto connecté à HubRise, vous devez configurer Get Resto afin qu
 
 ## Produits et SKUs
 
-Les SKUs dans HubRise correspondent aux variante dans Get Resto.
+Les SKUs dans HubRise correspondent aux variantes dans Get Resto.
 
 Un produit est toujours composé d'au moins une SKU. HubRise ignore le code ref du produit et prend en compte le code ref de la SKU.
 

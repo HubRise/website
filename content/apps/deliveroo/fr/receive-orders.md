@@ -154,3 +154,15 @@ Les champs disponibles dans les requêtes sont les suivants :
 ## Notes de préparation du client
 
 Les notes de préparation du client au niveau de la commande sont encodées dans le champ `customer_notes`.
+
+## Mise en pause et temps de préparation {#pause-and-preparation-time}
+
+Lorsque la synchronisation de l'acceptation des commandes et du temps de préparation est activée, Deliveroo Bridge synchronise les champs `order_acceptance` et `preparation_time` de HubRise vers Deliveroo.
+
+Le champ `order_acceptance.mode` contrôle le statut du magasin :
+
+- `normal` : Magasin ouvert avec temps de préparation calme
+- `busy`: Magasin ouvert avec temps de préparation forte affluence
+- `paused` : Magasin fermé
+
+Le temps de préparation calme utilise la valeur `preparation_time` de HubRise, par défaut 15 minutes si non définie. Le temps de préparation forte affluence est calculé comme la somme de `preparation_time` et de `order_acceptance.extra_preparation_time`.

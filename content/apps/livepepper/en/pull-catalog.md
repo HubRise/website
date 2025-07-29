@@ -31,3 +31,16 @@ To pull a HubRise catalog into LivePepper:
 **IMPORTANT NOTE:** Pulling a HubRise catalog will overwrite all existing products in LivePepper. This action cannot be reverted.
 
 ---
+
+## Technical Details
+
+### Option Lists
+
+When importing from HubRise, each option list is categorised in LivePepper according to the following rules:
+
+- **Ingredients**: multiple-choice list whose name starts with "Ingredients" or "Composition" (case-insensitive).
+- **Toppings**: multiple-choice list whose name starts with "Extras" or "Toppings" (case-insensitive).
+- **Options**: multiple-choice list whose name does not match any of the above prefixes.
+- **Variants**: single-choice list.
+
+LivePepper only supports one list for each of the first three categories. If multiple lists meet the same criteria, only one of them will be imported.
