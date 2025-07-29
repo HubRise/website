@@ -52,37 +52,37 @@ et
 
 ## Lightspeed Fermé
 
-Si le logiciel de caisse Lightspeed est fermé avant que le traitement d'une commande ne soit terminé, Lightspeed rejettera la commande et enverra l’un des messages d’erreur suivants :
+Si une commande HubRise est marquée comme terminée sur HubRise alors que Lightspeed EPOS n'est pas en cours d'exécution ou fonctionne en arrière-plan, l'ordre peut être rejeté avec l'un des messages d'erreur suivants :
 
 ```json
 {
-"reason": "reload error: NF",
-"thirdPartyReference": "1b339|1w8xz-0|nvjgb3i",
-"businessLocationId": 663970614933366,
-"type": "ORDER",
-"status": "FAILURE",
-"completionMode": "IMMEDIATE"
+  "reason": "reload error: NF",
+  "thirdPartyReference": "xxx|xxx-0|yyy",
+  "businessLocationId": 123456789,
+  "type": "ORDER",
+  "status": "FAILURE",
+  "completionMode": "IMMEDIATE"
 }
 ```
+
 et
 
 ```json
 {
-"reason": "Une erreur s'est produite lors de la connexion à iPad4 (599621)",
-"thirdPartyReference": "1b77|1h6lz-0|yduuqbj",
-"businessLocationId": 789780614935672,
-"type": "ORDER",
-"status": "FAILURE",
-"completionMode": "MANUALLY"
+  "reason": "update error:  An error occurred while connecting to iPad4 (599621)",
+  "thirdPartyReference": "xxx|xxx-0|yyy",
+  "businessLocationId": 123456789,
+  "type": "ORDER",
+  "status": "FAILURE",
+  "completionMode": "MANUALLY"
 }
 ```
-
 
 Ces erreurs apparaissent généralement dans les circonstances suivantes :
 
 - Aucun iPad n'est disponible pour recevoir des commandes.
 - L'iPad est éteint ou n'est pas connecté à internet.
-- L'iPad est connecté, mais l'application Lightspeed s'exécute en arrière-plan, par exemple lorsque l'utilisateur n'est pas sur l'application. Si un changement d'application est nécessaire, il ne devrait pas durer plus de 5 minutes.
+- L'iPad est connecté, mais l'application Lightspeed s'exécute en arrière-plan, par exemple lorsque l'utilisateur n'est pas sur l'application.
 - Les commandes sont envoyées à l'iPad défini comme **Active** (Actif). Pour éviter les problèmes, tous les autres iPads doivent être réglés sur **Passive** (Passif). Contactez le support de Lightspeed pour confirmer votre configuration.
 
 Par défaut, HubRise définit la période de validité de la commande à 12 heures. Si aucun appareil n'est actif pendant ces 12 heures, la commande échoue.
