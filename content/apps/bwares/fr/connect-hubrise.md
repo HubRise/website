@@ -16,7 +16,7 @@ meta:
 
 ## Connecter BWares
 
-Il est possible de connecter votre borne de commande à HubRise de manière autonome depuis le back office de BWares, section **INTÉGRATIONS**. Nous recommandons cependant de faire appel à l'équipe de support de BWares.
+Vous pouvez connecter votre borne de commande à HubRise de manière autonome depuis le back-office de BWares, section **INTÉGRATIONS**. Nous recommandons cependant de faire appel à l'équipe de support de BWares.
 
 ![BWares, connexion à HubRise](./images/000-2x-page-accueil.png)
 
@@ -27,7 +27,7 @@ Pour connecter BWares à HubRise, procédez comme suit :
 
 ## Donner accès au support de BWares {#give-access}
 
-Pour connecter BWares et faciliter le traitement de vos demandes de support, vous devez accorder à votre fournisseur BWares l'accès à votre compte HubRise.
+Pour connecter BWares et faciliter le traitement de vos demandes de support, vous devez accorder à BWares l'accès à votre compte HubRise.
 
 Pour donner accès à BWares, procédez comme suit :
 
@@ -52,7 +52,7 @@ Si vous souhaitez seulement stopper temporairement la réception des commandes d
 Pour déconnecter BWares de HubRise de manière définitive, procédez comme suit :
 
 1. Depuis la page d'accueil du back-office de BWares, cliquez sur **INTÉGRATIONS**.
-2. Ouvrir la connexion HubRise. 
+2. Ouvrir la connexion HubRise.
 3. Cliquer sur **Se Déconnecter**.
 4. BWares est déconnecté de HubRise.
 

@@ -537,15 +537,15 @@ content:
           title: Zuplyit
           description: Zuplyit de AirTouchMedia est une solution de commande en ligne en marque blanche pour les métiers de bouche, combinée avec une solution de gestion de livreurs, et une suite d'outils de fidélisation et de promotion.
           additional_info:
-    - title: Borne de commande
-      slug: borne
+    - title: Bornes de commande
+      slug: self-ordering-kiosks
       apps:
         - website: https://www.bwares.fr
           documentation: /fr/apps/bwares
           logo: bwares.png
           country: FR
           title: BWares
-          description: Conçue et développée à Bordeaux par une équipe dévouée et motivée, BWares propose des bornes de commande intuitives. Mettez en avant vos produits phares et augmentez le panier moyen grâce à des suggestions intelligentes d’articles complémentaires.
+          description: BWares est une solution dédiée de bornes de commande, conçue et développée à Bordeaux. Les bornes sont personnalisables, avec des développements sur mesure possibles pour répondre à des besoins spécifiques.
         - website: https://www.eatself.com
           documentation: /fr/apps/eatself
           logo: eatself.png
@@ -817,4 +817,4 @@ content:
       paragraph_1: Utilisez notre API pour créer une application utile aux commerçants. Proposez-la aux utilisateurs d'HubRise en la publiant sur notre site.
       paragraph_2:
         chunk_1: Nos utilisateurs sont des professionnels à la recherche de solutions pour moderniser leur activité.
-        chunk_2: Il reste beaucoup à faire, et les bonnes idées d'aujourd'hui sont les standards de demain.
+        chunk_2: Il y a beaucoup à faire, et les bonnes idées d'aujourd'hui sont les standards de demain.

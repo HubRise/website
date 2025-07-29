@@ -537,15 +537,15 @@ content:
           title: Zuplyit
           description: Zuplyit by AirTouchMedia is a white label online ordering solution for the food industry, combined with a Delivery Management Solution, as well as a suite of customer loyalty and promotion tools.
           additional_info:
-    - title: Self-Ordering Kiosk
-      slug: kiosk
+    - title: Self-Ordering Kiosks
+      slug: self-ordering-kiosks
       apps:
         - website: https://www.bwares.fr
           documentation: /apps/bwares
           logo: bwares.png
           country: FR
           title: BWares
-          description: Conceived and developed in Bordeaux, France, BWares provides intuitive self-ordering kiosks. Showcase your flagship products and boost average spend with suggestions for complementary items.
+          description: BWares is a dedicated ordering kiosk solution, designed and developed in Bordeaux. The kiosks are customizable, with custom development possible to meet specific needs.
         - website: https://www.eatself.com
           documentation: /apps/eatself
           logo: eatself.png
@@ -817,4 +817,4 @@ content:
       paragraph_1: Use our API to build a useful application for restaurants or retail stores. Share it with HubRise users by listing it on our website and app store.
       paragraph_2:
         chunk_1: HubRise users are professionals looking for solutions to modernise their business.
-        chunk_2: There’s a lot to be done—today’s good ideas are tomorrow’s standards.
+        chunk_2: There's a lot to be done - today's good ideas are tomorrow's standards.
