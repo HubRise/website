@@ -20,6 +20,8 @@ app_info:
 
 ## Description
 
+Zelty Bridge est une application développée par HubRise, qui permet à votre logiciel de caisse Zelty d'échanger des données avec votre écosystème d'applications HubRise.
+
 Zelty est un logiciel de caisse complet, conçu pour les restaurants traditionnels avec service à table, les établissements de restauration rapide, les franchises et les chaînes. Cette solution est dotée d'une interface permettant de gérer l'activité en temps réel, où que vous soyez. Elle s'adapte aux entreprises grâce à différents modules, un plan des tables, un système d'affichage en cuisine, la gestion des clients, livraisons et réservations, des commandes en ligne et bien plus encore.
 
 Utilisée par 4 000 restaurants, cette solution française sur le marché depuis 2015 permet de centraliser tous les canaux de vente sur un seul écran iPad. La prise de commande et l'encaissement peuvent se faire depuis la caisse au comptoir, un iPhone mobile, le site internet, des bornes tactiles, un code QR ou les plateformes de livraison. Le back-office accessible à distance permet de modifier les cartes, suivre les commandes en temps réel, analyser les performances et gérer les équipes depuis n'importe quel appareil.
