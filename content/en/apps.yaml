@@ -545,19 +545,19 @@ content:
           logo: bwares.png
           country: FR
           title: BWares
-          description: Conceived and developed in Bordeaux, France, by a dedicated and motivated team, BWares provides intuitive self-ordering kiosks. Showcase your flagship products and boost average spend with intelligent suggestions for complementary items.
+          description: Conceived and developed in Bordeaux, France, BWares provides intuitive self-ordering kiosks. Showcase your flagship products and boost average spend with suggestions for complementary items.
         - website: https://www.eatself.com
           documentation: /apps/eatself
           logo: eatself.png
           country: BE, CH, FR, MA
           title: eEatself
-          description: EatSelf includes a self-service kiosk, online ordering, table ordering, loyalty programme, and reservations, all without intermediaries or commissions. It is designed for restaurateurs who want to digitise their activity on-site and remotely.
+          description: EatSelf includes a self-service kiosk, online ordering, table ordering, loyalty programme, and reservations. It is designed for restaurateurs who want to digitise their activity on-site and remotely.
         - website: https://kurvekiosks.com
           documentation: /apps/kurvekiosks
           logo: kurvekiosks.png
           country: IE, GB
           title: Kurve Kiosks
-          description: Kurve Kiosks designs and develops self ordering kiosks tailored for hospitality operators. The platform is customisable, rich in features, and reliable, easing the transition to self-service technology.
+          description: Kurve Kiosks designs and develops self-ordering kiosks tailored for hospitality operators. The platform is customisable, rich in features, and reliable, easing the transition to self-service technology.
           additional_info:
         - website: https://locatouch.com
           documentation: /apps/locatouch
