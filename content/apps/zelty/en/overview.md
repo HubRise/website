@@ -16,6 +16,12 @@ app_info:
   contact: contact@zelty.fr / +33 9 72 53 55 72
 ---
 
+---
+
+**IMPORTANT NOTE:** A more complete integration is available. Check out [Zelty Bridge](/apps/zelty-bridge/overview) for advanced features.
+
+---
+
 ## Description
 
 Zelty provides a complete EPOS solution designed for traditional restaurants with table service, fast food outlets, franchises and chains. It comes with an interface to manage activity in real time, wherever you are. It adapts to businesses thanks to its various modules, seating plan, kitchen display system, customer management, delivery management, online reservations and online ordering and much more.
