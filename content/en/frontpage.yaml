@@ -28,13 +28,13 @@ hero:
 
 content:
   metrics:
-    - number: 40+
+    - number: 35+
       title: EPOS integrated
-    - number: 100+
+    - number: 110+
       title: Integrations
     - number: 20+
       title: Countries
-    - number: 2000
+    - number: 2,000+
       title: Customers
 
   apps:
@@ -172,9 +172,9 @@ content:
     button_label: Get Started Now
 
   integrations:
-    title: Free HubRise Apps for Seamless Operations
+    title: Included Apps with Your Subscription
     integration_apps:
-      - title: Centralise Orders with OrderLine
+      - title: OrderLine - Receive Orders in One Place
         image: orderline.png
         advantages:
           - text: Centralise orders from all sales channels
@@ -186,7 +186,7 @@ content:
           - text: Update opening hours or temporarily pause stores
         button_label: Learn more about OrderLine
         button_link: /orderline
-      - title: Centralise Product Management with Catalog Manager
+      - title: Catalog Manager - Edit and Publish Your Product Catalogues
         image: catalog-manager.png
         advantages:
           - text: Manage product catalogues for all locations and sales channels
@@ -198,7 +198,7 @@ content:
           - text: Handle complex menus with modifiers, options, discounts, and bundles
         button_label: Explore Catalog Manager
         button_link: /catalog-manager
-      - title: Access Reports on the HubRise Dashboard
+      - title: Dashboard - Analyse Your Sales Data
         image: dashboard.png
         advantages:
           - text: View aggregated sales data by sales channel and location

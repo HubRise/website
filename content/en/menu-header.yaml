@@ -3,20 +3,20 @@
   mobile_only: true
 - title: Integrations
   to: /apps
-- title: Apps
+- title: Included Apps
   to: /
   content:
     products:
-      - title: Catalog Manager
-        description: Centralise your catalogues
-        link_label: Find out more
-        link: /catalog-manager
-        image: catalog-manager.png
       - title: OrderLine
         description: Centralise your orders
         link_label: Find out more
         link: /orderline
         image: orderline.png
+      - title: Catalog Manager
+        description: Centralise your catalogues
+        link_label: Find out more
+        link: /catalog-manager
+        image: catalog-manager.png
       - title: Dashboard
         description: Check your sales reports
         link_label: Find out more
@@ -53,7 +53,7 @@
           link: /testimonials
           link_description: Real customer and integrated partner feedback.
         - link_label: Changelog
-          link: /changelog
+          link: /developers/changelog
           link_description: View the latest integrations, API improvements, and fixes.
         - link_label: Hire an Expert
           link: /partners
