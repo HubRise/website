@@ -14,7 +14,7 @@ gallery:
 app_info:
   category: Commande en ligne
   availability: Monde entier
-  price_range: De 69 à 109 € / mois
+  price_range: De 79 à 159 € / mois
   website: https://www.livepepper.fr
   contact: contact@livepepper.com / +33 4 92 38 09 82
 ---
@@ -50,8 +50,8 @@ La connexion de LivePepper à HubRise permet à LivePepper de :
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Envoyer les informations clients à HubRise, dont les données du programme de fidélité.
 - Recevoir les informations clients de HubRise, dont la fidélité.
-- Envoyer un catalogue à HubRise.
-- Recevoir un catalogue de HubRise.
+- Recevoir un catalogue de HubRise, avec support des variantes.
+- Envoyer un catalogue à HubRise, avec support des variantes.
 - Synchroniser l'heure de livraison avec HubRise.
 
 LivePepper peut être connecté à HubRise depuis le back-office de LivePepper.
