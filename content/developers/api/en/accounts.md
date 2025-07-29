@@ -17,7 +17,7 @@ Get location details.
 <CallSummaryTable
   endpoint="GET /locations/:id"
   shortEndpoint="GET /location (location only)"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 <details>
@@ -52,7 +52,7 @@ Get location details.
   },
   "preparation_time": 15,
   "order_acceptance": {
-    "mode": "online"
+    "mode": "normal"
   },
   "custom_fields": {
     "delivery": {
@@ -116,7 +116,7 @@ The `cutoff_time` is a location level field, with a default value of `06:00`. It
 
 Controls whether a location is currently accepting new orders. Three modes are available:
 
-- `online`: The location is accepting orders normally.
+- `normal`: The location is accepting orders normally.
 - `busy`: The location is accepting orders with a delay. The `extra_preparation_time` field specifies the additional time added to the base `preparation_time`.
 - `paused`: The location is not accepting orders. The `reason` field can be used to provide a free-text explanation.
 
@@ -124,8 +124,8 @@ The `order_acceptance` object has the following fields:
 
 | Name                                  | Type                                                     | Description                                                                                                                                     |
 | ------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| `mode`                                | `online` \| `busy` \| `paused`                           | Current acceptance mode.                                                                                                                        |
-| `resume_at` <Label type="optional" /> | [Time](/developers/api/general-concepts#dates-and-times) | Timestamp at which `mode` automatically reverts to `online`, when mode is `busy` or `paused`. If `null`, the location must be updated manually. |
+| `mode`                                | `normal` \| `busy` \| `paused`                           | Current acceptance mode.                                                                                                                        |
+| `resume_at` <Label type="optional" /> | [Time](/developers/api/general-concepts#dates-and-times) | Timestamp at which `mode` automatically reverts to `normal`, when mode is `busy` or `paused`. If `null`, the location must be updated manually. |
 | `extra_preparation_time`              | integer                                                  | Additional minutes added to `preparation_time`, when mode is `busy`.                                                                            |
 | `reason` <Label type="optional" />    | string                                                   | Free-text explanation shown to customers, when mode is `paused`.                                                                                |
 
@@ -136,7 +136,7 @@ Updates a location.
 <CallSummaryTable
   endpoint="PATCH /locations/:id"
   shortEndpoint="PATCH /location (location only)"
-  accessLevel="location, account"
+  accessLevel="Location, Account"
 />
 
 The following fields can be updated: `cutoff_time`, `opening_hours`, `preparation_time`, `order_acceptance`, and `custom_fields`.
@@ -146,7 +146,7 @@ If the `order_acceptance` object is provided, it must match one of the following
 ```jsonc
 // Accepting orders normally
 {
-  "mode": "online"
+  "mode": "normal"
 }
 
 // Accepting with delay
@@ -211,7 +211,7 @@ If the `order_acceptance` object is provided, it must match one of the following
 
 Returns the locations of the account.
 
-<CallSummaryTable endpoint="GET /locations/" accessLevel="account" />
+<CallSummaryTable endpoint="GET /locations/" accessLevel="Account" paginated />
 
 ##### Example request:
 
@@ -228,7 +228,7 @@ Returns the locations of the account.
       "currency": "EUR"
     },
     "preparation_time": 15,
-    "order_acceptance": { "mode": "online" }
+    "order_acceptance": { "mode": "normal" }
     ...
   }
   ...
@@ -241,7 +241,7 @@ Returns the locations of the account.
 
 Get account details.
 
-<CallSummaryTable endpoint="GET /accounts/:id" shortEndpoint="GET /account" accessLevel="account" />
+<CallSummaryTable endpoint="GET /accounts/:id" shortEndpoint="GET /account" accessLevel="Account" />
 
 ##### Example request:
 

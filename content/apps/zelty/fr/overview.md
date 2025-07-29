@@ -16,7 +16,7 @@ app_info:
 
 ## Description
 
-Zelty propose une logiciel de caisse complète conçue pour les restaurants traditionnels avec service à table, les établissements de restauration rapide, les franchises et les chaînes. Cette solution est dotée d'une interface permettant de gérer l'activité en temps réel, où que vous soyez. Elle s'adapte aux entreprises grâce à différents modules, un plan des tables, un système d'affichage en cuisine, la gestion des clients, livraisons et réservations, des commandes en ligne et bien plus encore.
+Zelty propose un logiciel de caisse complet, conçu pour les restaurants traditionnels avec service à table, les établissements de restauration rapide, les franchises et les chaînes. Cette solution est dotée d'une interface permettant de gérer l'activité en temps réel, où que vous soyez. Elle s'adapte aux entreprises grâce à différents modules, un plan des tables, un système d'affichage en cuisine, la gestion des clients, livraisons et réservations, des commandes en ligne et bien plus encore.
 
 Il s'agit d'une solution ouverte qui s'intègre aux outils existants des clients, directement ou via HubRise.
 

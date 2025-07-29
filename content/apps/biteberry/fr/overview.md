@@ -32,7 +32,7 @@ De l'attribution des commandes aux livreurs au suivi de leur progression sur une
 Connecter BiteBerry à HubRise permet à votre système de gestion de livreurs de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
-- Synchroniser le délai de livraison avec HubRise.
+- Synchroniser l'heure de livraison avec HubRise.
 
 ---
 
