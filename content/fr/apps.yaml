@@ -537,7 +537,7 @@ content:
           title: Zuplyit
           description: Zuplyit de AirTouchMedia est une solution de commande en ligne en marque blanche pour les métiers de bouche, combinée avec une solution de gestion de livreurs, et une suite d'outils de fidélisation et de promotion.
           additional_info:
-    - title: Borne de Commande
+    - title: Borne de commande
       slug: borne
       apps:
         - website: https://www.bwares.fr
