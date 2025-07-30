@@ -548,6 +548,7 @@ content:
           additional_info:
     - title: Self-Ordering Kiosks
       slug: self-ordering-kiosks
+      has_suggest_app: true
       apps:
         - website: https://www.bwares.fr
           documentation: /apps/bwares

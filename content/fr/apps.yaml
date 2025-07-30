@@ -548,6 +548,7 @@ content:
           additional_info:
     - title: Bornes de commande
       slug: self-ordering-kiosks
+      has_suggest_app: true
       apps:
         - website: https://www.bwares.fr
           documentation: /fr/apps/bwares
