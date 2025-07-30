@@ -9,7 +9,7 @@ meta:
 excerpt: "The 911 Delicious Company franchise network has succeeded in its digital transformation thanks to HubRise, transitioning from a multitude of disparate solutions to an integrated working enviroment. Abderrahim Baka, their Technical and IT Manager, takes us through the different stages and challenges of their digital transformation."
 ---
 
-_How did 911 Pizza become 911 Delicious Company, and how did this franchise network achieve its digital, IT, and technological mutation with the help of HubRise?_
+**How did 911 Pizza become 911 Delicious Company, and how did this franchise network achieve its digital, IT, and technological mutation with the help of HubRise?**
 
 Abderrahim Baka, head of marketing and technology within the [911 Delicious Company](https://www.911dc.com) network, delves into the steps and challenges of their transformative journey, which he fondly described as a "revolution". This change is already beneficial for him and his team today and promises a robust environment for upcoming franchisees.
 
