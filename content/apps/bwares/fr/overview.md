@@ -53,8 +53,6 @@ Connecter BWares à HubRise permet à votre borne de commande de :
 
 BWares peut être connecté à HubRise depuis le back-office de BWares.
 
-Vous pouvez consulter la [documentation HubRise](https://bwares.notion.site/HubRise-23e20882788c8014a9adf1dad49ce6e7) sur le site Internet de BWares pour plus d'informations sur le fonctionnement de l'intégration.
-
 ## Pourquoi se connecter ?
 
 En connectant BWares à HubRise, vous permettez à votre borne de commande de communiquer avec d'autres applications que vous utilisez de manière quotidienne. Envoyez les commandes enregistrées sur votre borne de commande dans votre logiciel de caisse, vers une imprimante autonome, un écran cuisine ou votre système de gestion des stocks. Importez votre menu dans BWares.
