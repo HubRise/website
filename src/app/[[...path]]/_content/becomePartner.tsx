@@ -10,7 +10,7 @@ const becomePartner = async (route: Route<RouteName, "become-partner">): Promise
   const yaml = route.context.yaml
   const getInTouch = route.getInTouch.yaml
   const testimonials = route.testimonials.yaml
-  const testimonialLogos: string[] = testimonials.content.testimonials.map(
+  const testimonialLogos: Array<string> = testimonials.content.testimonials.map(
     (testimonial) => testimonial.person_details.logo,
   )
 

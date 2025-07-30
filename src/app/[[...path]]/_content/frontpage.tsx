@@ -8,12 +8,11 @@ import { Route, RouteName } from "@utils/router/types"
 
 const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Element> => {
   const yaml = route.context.yaml
+  const appLogos: Array<string> = yaml.content.apps.map((app) => app.logo)
+  const featuresImages: Array<string> = yaml.content.features.features_cards.map((feature) => feature.image)
+
   const testimonials = route.testimonials.yaml
-  const testimonialLogos: string[] = testimonials.content.testimonials.map(
-    (testimonial) => testimonial.person_details.logo,
-  )
-  const featuresImages: string[] = yaml.content.features.features_cards.map((feature) => feature.image)
-  const appLogos: Array<string> = yaml.content.apps.map(({ logo }) => logo)
+  const testimonialLogos: Array<string> = testimonials.content.testimonials.map((t) => t.person_details.logo)
 
   const [
     heroDescriptionMdx,
@@ -36,13 +35,13 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
   return (
     <Frontpage
       yaml={yaml}
-      testimonials={testimonials}
       heroDescriptionMdx={heroDescriptionMdx}
       appLogosMap={appLogosMap}
       featuresDescriptionMdx={featuresDescriptionMdx}
       featuresImagesMap={featuresImagesMap}
       pricingDescriptionMdx={pricingDescriptionMdx}
       partnersDescriptionMdx={partnersDescriptionMdx}
+      testimonials={testimonials}
       testimonialLogoMap={testimonialLogoMap}
     />
   )

@@ -17,25 +17,25 @@ import Pricing from "./Pricing"
 
 interface FrontpageProps {
   yaml: FrontpageYaml
-  testimonials: TestimonialsYaml
   heroDescriptionMdx: MDXRemoteSerializeResult
   appLogosMap: ContentImageMap
   featuresDescriptionMdx: MDXRemoteSerializeResult
   featuresImagesMap: ContentImageMap
   pricingDescriptionMdx: MDXRemoteSerializeResult
   partnersDescriptionMdx: MDXRemoteSerializeResult
+  testimonials: TestimonialsYaml
   testimonialLogoMap: ContentImageMap
 }
 
 const Frontpage = ({
   yaml,
-  testimonials,
   heroDescriptionMdx,
   appLogosMap,
   featuresDescriptionMdx,
   featuresImagesMap,
   pricingDescriptionMdx,
   partnersDescriptionMdx,
+  testimonials,
   testimonialLogoMap,
 }: FrontpageProps): JSX.Element => {
   const { hero, content } = yaml

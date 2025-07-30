@@ -9,7 +9,7 @@ import { Route, RouteName } from "@utils/router/types"
 const orderline = async (route: Route<RouteName, "orderline">): Promise<JSX.Element> => {
   const yaml = route.context.yaml
   const getInTouch = route.getInTouch.yaml
-  const featuresImages: string[] = yaml.content.features.list.map((feature) => feature.image)
+  const featuresImages: Array<string> = yaml.content.features.list.map((feature) => feature.image)
 
   const [featuresDescriptionMdx, featuresImagesMap, discoverDescriptionMdx] = await Promise.all([
     serializeOrderlineContent(yaml.content.features.description),
