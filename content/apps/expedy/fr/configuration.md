@@ -14,20 +14,22 @@ Le back-office de Expedy permet de configurer le comportement de l'imprimante et
 
 Expedy permet de sélectionner le statut de commande qui déclenche l'impression. Vous pouvez ainsi choisir d'imprimer les commandes lorsqu'elles passent dans l'un des 3 statuts suivants sur HubRise :
 
-- _Nouvelle_
-- _Reçue_
-- _Acceptée_
+- **new** (nouvelle)
+- **received** (reçue)
+- **accepted** (acceptée).
 
 Expedy permet aussi d'effectuer une action supplémentaire lors de la réception d'une commande. Vous pouvez ainsi configurer l'imprimante pour qu'elle change le statut d'une commande en :
 
-- _Reçue_
-- _Acceptée_
+- **none** (non) : aucun changement de statut ne sera effectué.
+- **received** (reçue) : le statut de la commande sera mis à jour en reçue.
+- **accepted** (acceptée) : le statut de la commande sera mis à jour en acceptée.
+
 
 Pour configurer ces paramètres, suivez ces étapes :
 
-1. Depuis la page d'accueil du back-office Expedy, cliquez sur **Imprimantes**.
-1. Cliquez sur l'icône de configuration de l'imprimante connectée <InlineImage width="20" height="20">![icône Crayon](../images/__configuration-icon.png)</InlineImage>.
-1. Défilez vers le bas jusqu'à la section **HubRise**.
+1. Depuis la page d'accueil du back-office Expedy, cliquez sur **Printers** (Imprimantes).
+1. Cliquez sur l'icône de configuration de l'imprimante à connecter <InlineImage width="25" height="25">![icône Crayon](../images/__configuration-icon.png)</InlineImage>.
+1. Section **CONNECTIONS & PLUGINS** défilez vers le bas jusqu'à **HubRise**.
 1. Section **A la récéption d'une commande** choisir quand imprimer. Vous pouvez également mettre en place une action section **Effectuer une des actions supplémentaires suivantes ?**
    ![Interface utilisateur - Paramètres HubRise](./images/008-2x-expedy-hubrise-actions.png)
 1. Cliquez sur **SAUVEGARDER** pour enregistrer les modifications.
@@ -38,9 +40,9 @@ Vous pouvez configurer le nom et le logo de votre société en tête des tickets
 
 Pour configurer la mise en page des tickets, suivez ces étapes :
 
-1. Depuis la page d'accueil du back-office Expedy, cliquez sur **Imprimantes**.
-1. Cliquez sur l'icône de configuration de l'imprimante connectée <InlineImage width="20" height="20">![icône Crayon](../images/__configuration-icon.png)</InlineImage>.
-1. Faites défiler vers le bas jusqu'à la section **PARAMETRES D'IMPRESSION POUR HUBRISE / GOODBARBER / SHOPIFY / WIX**.
+1. Depuis la page d'accueil du back-office Expedy, cliquez sur **Printers** (Imprimantes).
+1. Cliquez sur l'icône de configuration de l'imprimante à connecter <InlineImage width="25" height="25">![icône Crayon](../images/__configuration-icon.png)</InlineImage>.
+1. Section **CONNECTIONS & PLUGINS** défilez vers le bas jusqu'à **HubRise**.
    ![Configuration - Personnaliser vos impressions](./images/004-2x-expedy-print-settings.png)
 1. Ajustez les paramètres d'impression selon vos besoins.
 1. Cliquez sur **SAUVEGARDER** pour enregistrer les modifications.
@@ -53,8 +55,8 @@ Vous pouvez paramétrer le nombre de copies et l'utilisation optionnelle d'une i
 
 Pour paramétrer ces options, suivez ces étapes :
 
-1. Depuis la page d'accueil du back-office Expedy, cliquez sur **Imprimantes**.
-1. Cliquez sur l'icône de configuration de l'imprimante connectée <InlineImage width="20" height="20">![icône Crayon](../images/__configuration-icon.png)</InlineImage>.
-1. Faites défiler vers le bas jusqu'à la section **PARAMETRES D'IMPRESSION POUR HUBRISE / GOODBARBER / SHOPIFY / WIX**.
+1. Depuis la page d'accueil du back-office Expedy, cliquez sur **Printers** (Imprimantes).
+1. Cliquez sur l'icône de configuration de l'imprimante à connecter <InlineImage width="25" height="25">![icône Crayon](../images/__configuration-icon.png)</InlineImage>.
+1. Section **CONNECTIONS & PLUGINS** défilez vers le bas jusqu'à **HubRise**.
 1. Section **Options Avancées** choisir le nombre de copies d'impressions et un affichage complet ou non des options.
    ![Configuration - Paramètres d'impression](./images/009-2x-expedy-hubrise-advanced-options.png)

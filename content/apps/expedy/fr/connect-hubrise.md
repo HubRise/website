@@ -18,25 +18,29 @@ meta:
 
 Pour connecter votre imprimante Expedy à HubRise, suivez ces étapes :
 
-1. Depuis la page d'accueil du back-office Expedy, cliquez sur **Imprimantes**.
-1. Si vous souhaitez renommer votre imprimante, cliquez sur **Edit** .
+1. Depuis la page d'accueil du back-office Expedy, cliquez sur **Printers** (Imprimantes).
+1. Si vous souhaitez renommer votre imprimante, cliquez sur l'icône stilot à droite de **My SHOP** .
    ![Connexion à HubRise - Sélectioner l'imprimante Expedy Print à connecter](./images/005-2x-expedy-hubrise-printer-to-connect.png)
-1. Cliquez sur l'icône de configuration de l'imprimante à connecter <InlineImage width="20" height="20">![icône Crayon](../images/__configuration-icon.png)</InlineImage>.
-1. Défilez vers le bas jusqu'à la section **HubRise**.
+1. Cliquez sur l'icône de configuration de l'imprimante à connecter <InlineImage width="25" height="25">![icône Crayon](../images/__configuration-icon.png)</InlineImage>.
+1. Section **CONNECTIONS & PLUGINS** défilez vers le bas jusqu'à **HubRise**.
+1. Cliquez sur **CONNECT HUBRISE**.
    ![Connexion à HubRise - Connecter HubRise](./images/006-2x-expedy-hubrise-connect.png)
-1. Cliquez sur **Cliquez pour connecter cette imprimante à un de vos comptes HubRise**.
 1. Vous êtes redirigé vers l'interface HubRise.
 1. Si vous avez plusieurs points de vente, choisissez le point de vente à connecter. Si le point de vente sélectionné possède plusieurs listes de clients ou catalogues, cliquez sur **Suivant** pour afficher les listes déroulantes correspondantes, puis sélectionnez les options voulues.
 1. Cliquez sur **Autoriser**. La connexion est active.
+1. Vous êtes redirigé vers la page d’accueil de la console Expedy et le message suivant s’affiche.
+   ![Connexion à HubRise - Confirmation](./images/013-2x-expedy-connection-confirmation.png)
+
+
 
 ## Vérifier la connexion
 
-1. Depuis la page d'accueil du back-office Expedy, cliquez sur **Imprimantes**.
-1. Cliquez sur l'icône de configuration de l'imprimante connectée <InlineImage width="20" height="20">![icône Crayon](../images/__configuration-icon.png)</InlineImage>.
-1. Défilez vers le bas jusqu'à la section **HubRise**.
-1. La mention **Cette imprimante est connectée à votre compte HubRise** indique que la connexion est bien établie.
+1. Depuis la page d'accueil du back-office Expedy, cliquez sur **Printers** (Imprimantes).
+1. Cliquez sur l'icône de configuration de l'imprimante à connecter <InlineImage width="25" height="25">![icône Crayon](../images/__configuration-icon.png)</InlineImage>.
+1. Section **CONNECTIONS & PLUGINS** défilez vers le bas jusqu'à **HubRise**.
+1. La mention **This printer is connected to your account HubRise** (Cette imprimante est connectée à votre compte HubRise) indique que la connexion est bien établie.
 1. Vérifiez également le nom du point de vente et du catalogue que vous avez connectés.
-   ![Connexion à HubRise - HubRise connecté](./images/007-2x-expedy-hubrise-connected.png)
+   ![Connexion à HubRise - Détails de connection](./images/014-2x-expedy-connection-details.png)
 
 ## Donner accès au support de Expedy {#give-access}
 
@@ -54,7 +58,8 @@ L'ajout d'un utilisateur est le moyen recommandé de donner accès à un tiers �
 
 ## Déconnecter Expedy
 
-1. Depuis la page d'accueil du back-office Expedy, cliquez sur **Imprimantes**.
-1. Cliquez sur l'icône de configuration de l'imprimante à connecter. <InlineImage width="20" height="20">![icône Crayon](../images/__configuration-icon.png)</InlineImage>.
-1. Défilez vers le bas jusqu'à la section **HubRise**.
-1. Cliquez sur **Déconnecter**.
+1. Depuis la page d'accueil du back-office Expedy, cliquez sur **Printers** (Imprimantes).
+1. Cliquez sur l'icône de configuration de l'imprimante à connecter <InlineImage width="25" height="25">![icône Crayon](../images/__configuration-icon.png)</InlineImage>.
+1. Section **CONNECTIONS & PLUGINS** défilez vers le bas jusqu'à **HubRise**.
+1. Cliquez sur **Disconnect** (Déconnecter).
+   ![Connexion à HubRise - Détails de connection](./images/014-2x-expedy-connection-details.png)

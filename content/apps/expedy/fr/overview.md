@@ -18,12 +18,12 @@ app_info:
 
 ## Description
 
-Expedy propose des imprimantes autonomes à destination des restaurateurs et des commerces de proximité.
+Expedy propose des solutions d’impression autonomes à destination des restaurateurs et des commerces de proximité.
 Ces imprimantes permettent d’imprimer les tickets de commande reçus depuis un site marchand ou des plateformes de livraison de repas, sur une seule et même imprimante.
 
-Les commandes peuvent être imprimées en plusieurs exemplaires pour faciliter la préparation, et l’envoi automatique d’un SMS peut être déclenché à chaque impression.
-Le format des tickets est uniformisé quel que soit le canal de vente (site marchand, plateforme de livraison, etc.), ce qui simplifie la lecture et le traitement des commandes.
-La présentation du ticket est personnalisable : adresse postale, logo, et autres éléments peuvent être adaptés selon vos besoins.
+Chaque commande peut être imprimée en plusieurs exemplaires pour faciliter la préparation, et un SMS peut être envoyé automatiquement à chaque impression.
+Le format des tickets est uniformisé, quel que soit le canal de vente (site marchand, plateforme de livraison, etc.), ce qui simplifie la lecture et le traitement des commandes.
+La présentation du ticket et son contenu sont personnalisables : adresse postale, logo, et autres éléments peuvent être adaptés selon vos besoins.
 
 Les imprimantes Expedy se connectent au réseau Internet de l’établissement via WiFi, Ethernet ou réseau mobile grâce à une clé 4G.
 La configuration et la connexion aux applications tierces se font depuis un back-office dédié.
