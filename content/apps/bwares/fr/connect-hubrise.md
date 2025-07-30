@@ -19,17 +19,17 @@ meta:
 Pour connecter BWares à HubRise, suivez ces étapes :
 
 1. Depuis le back-office de BWares, cliquez sur **INTÉGRATIONS**.
-   ![BWares, connexion à HubRise](./images/000-page-accueil.png)
-2. Section **GESTION DES INTÉGRATIONS**, trouvez HubRise et cliquez sur le bouton **+**. 
+   ![BWares, connexion à HubRise](./images/000-2x-page-accueil.png)
+2. Page **GESTION DES INTÉGRATIONS**, trouvez HubRise et cliquez sur le bouton **+**. 
 3. Section **Renseigner un nom pour la nouvelle configuration**, donnez un nom à la configuration, **HubRise** par exemple, puis validez en cliquant sur **OK**. 
 4. Cliquez sur **OBTENIR UN CODE**. Vous êtes redirigé vers l'interface HubRise. S'il s'agit de votre première connexion, créez un compte HubRise. Pour plus d'informations, consultez notre [Guide de démarrage](/docs/get-started). 
 5. Si votre compte possède plusieurs points de vente, développez **Choisissez le point de vente**, sélectionnez le point de vente à connecter, puis cliquez sur **Autoriser**. Si le point de vente sélectionné possède plusieurs listes de clients ou catalogues, cliquez sur **Suivant** pour afficher les listes déroulantes correspondantes, puis sélectionnez les options souhaitées.
 6. Cliquez sur **Autoriser**. 
 7. On vous propose alors de copier un code. Cliquez sur **Copier**.
 8. Une fois le code **-Copié !**, retournez dans le back-office BWares pour coller ce code dans le champ **Code d’authentification**.
-   ![BWares, code d'authentification](./images/005-code-authentification.png)
+   ![BWares, code d'authentification](./images/005-2x-code-authentification.png)
 9. Cliquez sur **TESTER** pour finaliser l’installation. La connexion à HubRise est désormais établie.
-   ![BWares, connecté à HubRise](./images/006-connection-seule.png)
+   ![BWares, connecté à HubRise](./images/006-2x-connection-seule.png)
 
 
 Si ces étapes vous semblent trop complexes, vous pouvez également faire appel à l’équipe support de BWares pour connecter BWares à HubRise. Pour cela :
@@ -68,6 +68,6 @@ Pour déconnecter BWares de HubRise de manière définitive, procédez comme sui
 3. Cliquer sur **Se Déconnecter**.
 4. BWares est déconnecté de HubRise.
 
-![BWares, déconnexion de HubRise](./images/003-connection.png)
+![BWares, déconnexion de HubRise](./images/003-2x-connection.png)
 
 Pour déconnecter BWares de HubRise, vous pouvez également contacter le support de BWares.
