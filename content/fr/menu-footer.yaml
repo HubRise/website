@@ -33,7 +33,7 @@ sections:
   - title: Partners
     links:
       - title: Become a Partner
-        to: /fr/become-partner
+        to: /fr/devenir-partenaire
       - title: Hire an Expert
         to: /fr/partenaires
   - title: Company
@@ -43,7 +43,7 @@ sections:
       - title: Guide de la marque
         to: /fr/marque
       - title: Contact Us
-        to: /fr/contact-us
+        to: /fr/contactez-nous
       - title: LinkedIn
         icon: linkedin
         to: https://www.linkedin.com/company/hubrise
