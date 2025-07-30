@@ -37,3 +37,6 @@ cypress/videos
 
 # AI tools
 .claude
+
+# Screenshots
+screenshots/
