@@ -66,21 +66,22 @@ export const staticRoutes = async (): Promise<Routes> => {
   } as const
 
   // Create the static routes
+  const nope = () => ({})
   // prettier-ignore
   const routePairs = await Promise.all([
     routePair("/", "/fr", "frontpage", "frontpage", (lang) => shared[lang].testimonials),
-    routePair("/apps", "/fr/apps", "apps", "apps", () => ({})),
-    routePair("/pricing", "/fr/tarifs", "pricing", "pricing", () => ({})),
-    routePair("/developers", "/fr/developers", "developers", "documentation-index", () => ({})),
+    routePair("/apps", "/fr/apps", "apps", "apps", nope),
+    routePair("/pricing", "/fr/tarifs", "pricing", "pricing", nope),
+    routePair("/developers", "/fr/developers", "developers", "documentation-index", nope),
     routePair("/faqs", "/fr/faqs", "faqs", "faqs", (lang) => shared[lang].getInTouch),
     routePair("/become-partner", "/fr/devenir-partenaire", "become-partner", "become-partner", (lang) => ({ ...shared[lang].getInTouch, ...shared[lang].testimonials })),
-    routePair("/branding", "/fr/marque", "branding", "branding", () => ({})),
+    routePair("/branding", "/fr/marque", "branding", "branding", nope),
     routePair("/catalog-manager", "/fr/catalog-manager", "catalog-manager", "catalog-manager", (lang) => shared[lang].getInTouch),
     routePair("/dashboard", "/fr/dashboard", "dashboard", "dashboard", (lang) => shared[lang].getInTouch),
-    routePair("/contributing", "/fr/contribuer", "contributing", "documentation-index", () => ({})),
-    routePair("/testimonials", "/fr/temoignages", "testimonials", "testimonials", () => ({})),
-    routePair("/partners", "/fr/partenaires", "partners", "partners", () => ({})),
-    routePair("/contact-us", "/fr/contactez-nous", "contact-us", "contact-us", () => ({})),
+    routePair("/contributing", "/fr/contribuer", "contributing", "documentation-index", nope),
+    routePair("/testimonials", "/fr/temoignages", "testimonials", "testimonials", nope),
+    routePair("/partners", "/fr/partenaires", "partners", "partners", nope),
+    routePair("/contact-us", "/fr/contactez-nous", "contact-us", "contact-us", nope),
     routePair("/orderline", "/fr/orderline", "orderline", "orderline", (lang) => shared[lang].getInTouch),
   ])
 
