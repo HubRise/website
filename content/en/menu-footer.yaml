@@ -1,5 +1,5 @@
 sections:
-  - title: Integrations & Apps
+  - title: Integrations & Products
     links:
       - title: All Integrations
         to: /apps
@@ -17,8 +17,6 @@ sections:
         to: /developers/integration-guide
       - title: API Reference
         to: /developers/api/general-concepts
-      - title: Blog
-        to: /blog
       - title: Changelog
         to: /developers/changelog
   - title: Help Center
@@ -27,18 +25,20 @@ sections:
         to: /docs
       - title: FAQ
         to: /faqs
+      - title: Blog
+        to: /blog
       - title: Contribute
         to: /contributing
   - title: Partners
     links:
       - title: Become a Partner
         to: /become-partner
+      - title: Testimonials
+        to: /testimonials
       - title: Hire an Expert
         to: /partners
   - title: Company
     links:
-      - title: Testimonials
-        to: /testimonials
       - title: Branding Guidelines
         to: /branding
       - title: Contact Us

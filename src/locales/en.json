@@ -48,8 +48,8 @@
     },
     "header": {
       "buttons": {
-        "signup": "Register",
-        "login": "Log in"
+        "signup": "Sign Up",
+        "login": "Log In"
       }
     },
     "footer": {

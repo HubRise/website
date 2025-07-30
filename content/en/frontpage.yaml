@@ -1,7 +1,7 @@
 path: /
 meta:
   title: HubRise - Integration for retail and hospitality solutions
-  description: HubRise is a developer friendly solution to connect to a growing ecosystem of retail and hospitality solutions with a single integration.
+  description: HubRise is a middleware solution used by developers to connect to a growing ecosystem of retail and hospitality solutions with a single integration.
 
 hero:
   title:
@@ -10,8 +10,8 @@ hero:
     part_3: and
     part_4: Retail
   description: |
-    Connect your EPOS, online ordering, and inventory tools into one powerful platform.
-  button_label: Create your account today
+    Connect your EPOS, all your on-premises and remote sales channels, and your operations management solutions or services into a single, powerful middleware.
+  button_label: Create Your Account
   apps:
     - title: Points of Sales
       color: green
@@ -28,18 +28,16 @@ hero:
 
 content:
   metrics:
-    - number: 40+
+    - number: 35+
       title: EPOS integrated
-    - number: 100+
+    - number: 110+
       title: Integrations
     - number: 20+
       title: Countries
-    - number: 2000
+    - number: 2,000+
       title: Customers
 
   apps:
-    - logo: 1bot.png
-    - logo: 3spos.png
     - logo: adipos.png
     - logo: akk-softtech.png
     - logo: apicbase.png
@@ -51,7 +49,6 @@ content:
     - logo: carrepos.png
     - logo: catalog-manager.png
     - logo: clyo.png
-    - logo: como.png
     - logo: coursicab.png
     - logo: delicity.png
     - logo: deliveroo.png
@@ -60,6 +57,7 @@ content:
     - logo: dood.png
     - logo: dotdigital.png
     - logo: eat.png
+    - logo: eatself.png
     - logo: eddress.png
     - logo: emma.png
     - logo: epostechnologies.png
@@ -68,18 +66,14 @@ content:
     - logo: foodpanda.png
     - logo: foodreport.png
     - logo: french-caisse.png
-    - logo: get-resto.png
     - logo: glovo.png
     - logo: gonnaorder.png
     - logo: hop-delivery.png
-    - logo: iiko.png
     - logo: inpulse.png
-    - logo: jalia.png
     - logo: just-eat.png
     - logo: kezia.png
     - logo: koust.png
     - logo: kurvekiosks.png
-    - logo: la-toque-magique.png
     - logo: leo2.png
     - logo: lieferando.png
     - logo: lightspeed-restaurant.png
@@ -90,7 +84,6 @@ content:
     - logo: melba.png
     - logo: menulog.png
     - logo: miipos.png
-    - logo: mynober.png
     - logo: myorderbox.png
     - logo: nestor.png
     - logo: netfood.png
@@ -98,13 +91,9 @@ content:
     - logo: nextsourcia.png
     - logo: obypay.png
     - logo: orderline.png
-    - logo: orderlord.png
     - logo: orderwire.png
-    - logo: orkestro.png
     - logo: panda-epos.png
-    - logo: par-pixelpoint-web-api.png
     - logo: par-pixelpoint.png
-    - logo: pointone.png
     - logo: popina.png
     - logo: pos-helper.png
     - logo: postmates.png
@@ -114,26 +103,16 @@ content:
     - logo: qwenta.png
     - logo: rapidbar.png
     - logo: restajet.png
-    - logo: restaur-app.png
-    - logo: restaurant-internet.png
-    - logo: restaurant-manager.png
     - logo: sage.png
-    - logo: sailplay.png
-    - logo: sato.png
-    - logo: seconds.png
     - logo: servier-bar.png
     - logo: shopify.png
-    - logo: sicom.png
     - logo: skipthedishes.png
     - logo: smartresto.png
-    - logo: smg.png
-    - logo: smilein.png
     - logo: smood.png
     - logo: somm-it.png
     - logo: stocktake-online.png
     - logo: storefactory.png
     - logo: stuart.png
-    - logo: superdigital.png
     - logo: swoopos.png
     - logo: synapsy.png
     - logo: takeaway.png
@@ -147,7 +126,6 @@ content:
     - logo: trapar.png
     - logo: ubereats.png
     - logo: ultimapos.png
-    - logo: upxp.png
     - logo: woocommerce.png
     - logo: zelty.png
     - logo: zenorder.png
@@ -156,19 +134,19 @@ content:
   features:
     title: Use HubRise to Streamline Your Store Operations
     description: |
-      Seamlessly connect with your preferred digital partners and sales channels while eliminating the hassle of managing product catalogs across multiple platforms. Centralise orders, customers, data, and analytics for streamlined operations in a tailored working environment.
+      Seamlessly connect with your preferred digital partners and sales channels while eliminating the hassle of managing product catalogs and inventory across multiple platforms. Centralise all orders, customers, data, and analytics for streamlined operations in a tailored working environment.
     features_cards:
       - title: Connect Apps
         description: |
-          Use HubRise to connect your EPOS as well as other solutions you use on your day to day operations : solutions, Delivery platforms, online ordering, kiosks, Inventory Management solutions and more.
+          Use HubRise to connect your EPOS as well as other solutions you use on your day to day operations: table ordering, online ordering, food delivery platforms, self ordering kiosks, e-markering, inventory management solutions, cloud printers and more.
         image: use-connect-apps.png
       - title: Manage Products
         description: |
-          Centralise the management of your product catalogs in one app, for all sales channels and all locations. Products and prices might be different, even complex catalogs are supported.
+          Centralise the management of your product catalogs in one app, for all sales channels and all locations. Products and prices might be different. Complex catalogs with modifiers, multiple options and promotions are supported.
         image: use-manage-products.png
       - title: Synchronise Inventory
         description: |
-          Automatically update inventory or remove unavailable items across all sales channels via integration. If you don't keep track of inventory, snooze products for a short or an undetermined period.
+          Synchronise inventory automatically across all your sales channels through integration. If you don't keep track of inventory, you can snooze products to hide unavailable items, helping customers focus on what's available and streamlining your operations.
         image: use-synchronise-inventory.png
       - title: Build a Customer Database
         description: |
@@ -176,68 +154,69 @@ content:
         image: use-customer-database.png
       - title: Centralise Orders
         description: |
-          Use HubRise to see and manage orders arriving from all your different sales channels into one app, change order statuses, see drivers approaching and print receipts.
+          Send all orders to your EPOS, or use HubRise to view and manage orders from all your sales channels in one single app. Update order statuses, track approaching drivers, print receipts, edit opening hours, or pause online stores—all in one click.
         image: use-centralise-orders.png
       - title: Make informed decisions
         description: |
-          Check aggregated sales data for all locations or per location, per sales channels, for the week, the month or any other custom period of time. Find out which products you sale most, and which peak production time to expect
+          Check aggregated sales data across all locations or per location, by sales channels, for the week, the month, or any other custom period of time. Identify best-selling products and peak time to gain clear operational visibility.
         image: use-informed-decisions.png
 
   pricing:
     title:
-      start: Fair pricing at
+      start: Fair Pricing,
       price: €35
-      end: per store
+      end: Per Store
     description: |
-      No setup fee. No commitment. No contract.
+      No setup fee. No commitment. No contract. No credit card required.
       Unlimited number of connections. No hidden costs.
-    button_label: Start today
+    button_label: Get Started Now
 
   integrations:
-    title: Free HubRise apps to complete your integrations when needed
+    title: Included Apps with Your Subscription
     integration_apps:
-      - title: Centralise orders with OrderLine
+      - title: OrderLine - Receive Orders in One Place
         image: orderline.png
         advantages:
-          - text: Centralise orders from all platforms.
-          - text: Adjust product availability.
-          - text: Update opening hours.
-          - text: Print receipts directly from the app.
-          - text: Reduce errors with synchronized data.
-          - text: Get a unified view of customer preferences for better decision-making.
-          - text: Streamline kitchen workflows by grouping orders efficiently.
+          - text: Centralise orders from all sales channels
+          - text: View expected delivery times and track driver
+          - text: Update order statuses in real time
+          - text: Print receipts
+          - text: Adjust product availability
+          - text: Customise your order workflow
+          - text: Update opening hours or temporarily pause stores
         button_label: Learn more about OrderLine
         button_link: /orderline
-      - title: Centralise product management with Catalog Manager
+      - title: Catalog Manager - Edit and Publish Your Product Catalogs
         image: catalog-manager.png
         advantages:
-          - text: Manage product catalogs for all locations.
-          - text: Adjust prices and menus by location.
-          - text: Sync updates across platforms instantly.
-          - text: Support complex or seasonal menus.
-          - text: Handle complex, seasonal, or custom menus.
-          - text: Ensure consistency across sales channels.
-          - text: Scale product updates without extra effort.
+          - text: Manage product catalogs for all locations and sales channels
+          - text: Create time-specific menus (e.g. breakfast, lunch, dinner, or happy hour)
+          - text: Easily support seasonal menus (e.g. Christmas, Easter, etc.)
+          - text: Ensure consistency across menus and sales channels
+          - text: Adjust prices and products by location
+          - text: Preview and sync catalog updates across all systems
+          - text: Handle complex menus with modifiers, options, discounts, and bundles
         button_label: Explore Catalog Manager
         button_link: /catalog-manager
-      - title: Access automated reports on the HubRise Dashboard
+      - title: Dashboard - Analyse Your Sales Data
         image: dashboard.png
         advantages:
-          - text: View aggregated sales data by channel and location.
-          - text: Track top-performing products and peak times.
-          - text: Analyze trends across custom timeframes.
-          - text: Create tailored reports for business insights.
-          - text: Share automated reports with your team.
-          - text: Visualize KPIs in a clean, customizable dashboard.
+          - text: View aggregated sales data by sales channel and location
+          - text: Track top-performing products and peak service times
+          - text: Analyse trends across custom timeframes
+          - text: Create tailored reports to support business decisions
+          - text: Share reports with key stakeholders
+          - text: Visualise KPIs in a clean, customisable dashboard
+          - text: Monitor performance of your dark kitchen operations
         button_label: Discover the HubRise Dashboard
         button_link: /dashboard
 
   partners:
     title: White Label for Resellers
     description: |
-      Empower your clients with HubRise web apps tailored to your branding. Host them on your custom URL, with your logo, and colours. Provide your clients with tools to manage products or centralise orders, all branded with your identity. 
-      To find out more, check our Reller's page.
-    button_label: Check out Partner's page
+      Empower your clients with HubRise web apps customised to reflect your brand. Host them on your own URL, with your logo, favicon and colours. Your clients can use these tools to manage products, centralise orders, control product availability or inventory, and update opening hours. You choose which features to activate or hide.
+      HubRise white label apps appeals to with software providers looking to complete their solutions with additional features, consultants seeking to expand their service offering, and franchises aiming to increase the value they provide to their franchisees.
+    button_label: Check Partnership Opportunities
     button_link: /become-partner
     image: white-label.gif
 
