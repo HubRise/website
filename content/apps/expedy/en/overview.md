@@ -13,7 +13,7 @@ app_info:
   availability: France
   price_range: null
   website: https://www.expedy.io/en
-  contact: commercial@expedy.fr
+  contact: https://www.expedy.io/en/contact
 ---
 
 ## Description
@@ -25,6 +25,9 @@ Expedy Print is a standalone printing solution able to confirm the printing of r
 Expedy printers connect to the establishment's Internet network via Wi-Fi or Ethernet, or to the mobile network with a 4G key. The setup and connection to external applications can be configured from a back office. Once configured, Expedy printers operate autonomously, without any human intervention.
 
 If you prefer to keep your existing printer, you can use the Expedy PrintBox module, which is compatible with ESC/POS printers (Epson, Star, Brother, Toshiba, Zebra, etc.). With this module, your standalone printer benefits from features similar to those of Expedy printers.
+
+https://www.expedy.io/en/cloudprint/partners/hubrise
+
 
 ## Integration Features
 
