@@ -31,7 +31,7 @@ content:
         description: Track revenue trends by day, week, month, year, or custom date range to identify growth patterns and seasonality. Use historical data to compare performance with previous years, improve forecasting, and plan with confidence.
         image: revenue-over-time.svg
       - title: Top-Selling Products
-        description: See your 30 most popular items at a glance, ranked by sales volume—or view the full list for deeper insights. Use this data to fine-tune your catalogue or menu, plan targeted promotions, and optimise inventory and purchasing decisions.
+        description: See your 30 most popular items at a glance, ranked by sales volume—or view the full list for deeper insights. Use this data to fine-tune your catalog or menu, plan targeted promotions, and optimise inventory and purchasing decisions.
         image: top-selling-products.svg
   details:
     title: Understand Your Business Through Data

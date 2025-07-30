@@ -13,7 +13,7 @@
         link: /orderline
         image: orderline.png
       - title: Catalog Manager
-        description: Centralise your catalogues
+        description: Centralise your catalogs
         link_label: Find out more
         link: /catalog-manager
         image: catalog-manager.png

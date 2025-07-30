@@ -12,10 +12,10 @@ content:
       firstSide: |
         Customers expect to order anytime, on the channel that suits them best. To meet this growing market demand, businesses go digital, but quickly face new challenges. As the number of channels increases, so does the complexity of managing them effectively and consistently.
       secondSide: |
-        Managing separate catalogues becomes a burden when juggling different channels, prices, and menus for breakfast, lunch, dinner, or happy hour. Catalog Manager helps centralise everything, keeping catalogues consistent, up to date, and fully in sync across your entire operation.
+        Managing separate catalogs becomes a burden when juggling different channels, prices, and menus for breakfast, lunch, dinner, or happy hour. Catalog Manager helps centralise everything, keeping catalogs consistent, up to date, and fully in sync across your entire operation.
   sales_channels:
     title: One Catalog, All Sales Channels
-    description: Use HubRise catalogue variants to manage a single catalogue across all your sales channels and locations, even when prices or product availability vary.
+    description: Use HubRise catalog variants to manage a single catalog across all your sales channels and locations, even when prices or product availability vary.
   five_steps:
     title: Get Started in 5 Steps
     steps:
@@ -24,14 +24,14 @@ content:
       - title: Connect Your Apps
         description: Contact HubRise support to help you connect Catalog Manager and other apps you use daily—such as your EPOS, delivery platforms, and online ordering systems. We'll ensure your data flows smoothly between systems.
       - title: Get Set Up
-        description: Pull your catalogue or menu from your EPOS, Uber Eats, or any other app integrated with HubRise. Create catalogue variants to customise pricing and enable items per channel or location, then link each variant to the corresponding app.
-      - title: Edit Catalogues
+        description: Pull your catalog or menu from your EPOS, Uber Eats, or any other app integrated with HubRise. Create catalog variants to customise pricing and enable items per channel or location, then link each variant to the corresponding app.
+      - title: Edit Catalogs
         description: Add or update products, options, modifiers, images, descriptions, and tags, or create new categories, special offers, discounts, and bundles. Run bulk price updates and choose which products to display on each sales channel.
       - title: Manage and Publish
-        description: Use Catalog Manager to make ongoing changes to your catalogues or menus anytime, from anywhere. Rename, delete, or duplicate them when working on large updates. Click save to publish—all associated sales channels will be updated simultaneously.
+        description: Use Catalog Manager to make ongoing changes to your catalogs or menus anytime, from anywhere. Rename, delete, or duplicate them when working on large updates. Click save to publish—all associated sales channels will be updated simultaneously.
   app:
-    title: Catalog Manager, Your Free Catalogue Management App
-    description: Centralise all your catalogues in Catalog Manager and manage them effortlessly from a single interface. Create a master catalogue for all your locations and all your brands—including dark kitchens—and publish updates instantly with a simple click.
+    title: Catalog Manager, Your Free Catalog Management App
+    description: Centralise all your catalogs in Catalog Manager and manage them effortlessly from a single interface. Create a master catalog for all your locations and all your brands—including dark kitchens—and publish updates instantly with a simple click.
     tabs:
       - label: Create Products
         key: 0
@@ -49,19 +49,19 @@ content:
         key: 2
         content:
           title: Set Channel- or Location-Specific Pricing
-          description: Adjust pricing for individual sales channels or locations using catalogue variants. Tailor your pricing strategy to different market segments.
+          description: Adjust pricing for individual sales channels or locations using catalog variants. Tailor your pricing strategy to different market segments.
           image: catalog-manager/tabs/set-channels.png
       - label: Enable Items
         key: 3
         content:
           title: Activate Channel- or Location-Specific Items
-          description: Enable or disable specific items by sales channel, location, or collection method to match your operational or marketing needs using catalogue variants.
+          description: Enable or disable specific items by sales channel, location, or collection method to match your operational or marketing needs using catalog variants.
           image: catalog-manager/tabs/control-availability.png
-      - label: Preview Catalogues
+      - label: Preview Catalogs
         key: 4
         content:
           title: Preview Before Publishing
-          description: Ensure accuracy and consistency across all catalogue variants you’ve created by previewing before saving. Push changes live across all associated sales channels.
+          description: Ensure accuracy and consistency across all catalog variants you’ve created by previewing before saving. Push changes live across all associated sales channels.
           image: catalog-manager/tabs/preview-mode.png
   action_block:
     title: Discover More Apps to Streamline Your Operations

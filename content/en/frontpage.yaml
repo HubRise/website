@@ -134,7 +134,7 @@ content:
   features:
     title: Use HubRise to Streamline Your Store Operations
     description: |
-      Seamlessly connect with your preferred digital partners and sales channels while eliminating the hassle of managing product catalogues and inventory across multiple platforms. Centralise all orders, customers, data, and analytics for streamlined operations in a tailored working environment.
+      Seamlessly connect with your preferred digital partners and sales channels while eliminating the hassle of managing product catalogs and inventory across multiple platforms. Centralise all orders, customers, data, and analytics for streamlined operations in a tailored working environment.
     features_cards:
       - title: Connect Apps
         description: |
@@ -142,7 +142,7 @@ content:
         image: use-connect-apps.png
       - title: Manage Products
         description: |
-          Centralise the management of your product catalogues in one app, for all sales channels and all locations. Products and prices might be different. Complex catalogues with modifiers, multiple options and promotions are supported.
+          Centralise the management of your product catalogs in one app, for all sales channels and all locations. Products and prices might be different. Complex catalogs with modifiers, multiple options and promotions are supported.
         image: use-manage-products.png
       - title: Synchronise Inventory
         description: |
@@ -186,15 +186,15 @@ content:
           - text: Update opening hours or temporarily pause stores
         button_label: Learn more about OrderLine
         button_link: /orderline
-      - title: Catalog Manager - Edit and Publish Your Product Catalogues
+      - title: Catalog Manager - Edit and Publish Your Product Catalogs
         image: catalog-manager.png
         advantages:
-          - text: Manage product catalogues for all locations and sales channels
+          - text: Manage product catalogs for all locations and sales channels
           - text: Create time-specific menus (e.g. breakfast, lunch, dinner, or happy hour)
           - text: Easily support seasonal menus (e.g. Christmas, Easter, etc.)
           - text: Ensure consistency across menus and sales channels
           - text: Adjust prices and products by location
-          - text: Preview and sync catalogue updates across all systems
+          - text: Preview and sync catalog updates across all systems
           - text: Handle complex menus with modifiers, options, discounts, and bundles
         button_label: Explore Catalog Manager
         button_link: /catalog-manager

@@ -43,13 +43,13 @@ content:
         image: improved-client-retention.svg
   middleware:
     title: HubRise, the Middleware That Simplifies Integrations
-    description: With a single integration effort, connect to an ever-growing ecosystem of complementary solutions integrated with HubRise. Transactions are stored in HubRise, giving your apps real-time access to product catalogues, inventory levels, store opening hours, customer data, and orders.
+    description: With a single integration effort, connect to an ever-growing ecosystem of complementary solutions integrated with HubRise. Transactions are stored in HubRise, giving your apps real-time access to product catalogs, inventory levels, store opening hours, customer data, and orders.
     content:
       firstSide: HubRise offers software providers a streamlined way to enhance their products by delivering ready-made integrations with EPOS systems, food ordering platforms, online ordering, self ordering kiosks, delivery management or delivery services, loyalty and marketing tools, operations and inventory systems, and more.
       secondSide: Connections can be managed by HubRise or offered under your own brand. With white-labelling, you can expand your integration offering—providing your clients with the tools they need to complement your solution or service and deliver a fully integrated environment, without the complexity of dealing with multiple contacts and systems.
   apps:
     title: HubRise Apps, Your Branding
-    description: Software providers, resellers, dark kitchens and restaurant chains can now offer HubRise's order and product catalogue management apps under their own brand—with their logo, favicon, colours, and domain name.
+    description: Software providers, resellers, dark kitchens and restaurant chains can now offer HubRise's order and product catalog management apps under their own brand—with their logo, favicon, colours, and domain name.
     tabs:
       - label: Your Branded Order Manager
         key: 0
@@ -61,7 +61,7 @@ content:
         key: 1
         content:
           title: Your Branded Catalog Manager
-          description: Your clients might want to use your branded catalogue manager to centralise catalogues from all sales channels into a single app, or to complement features you haven’t integrated yet—such as adding product images, descriptions, tags, allergens, options, or modifiers, as well as managing deals and promotions.
+          description: Your clients might want to use your branded catalog manager to centralise catalogs from all sales channels into a single app, or to complement features you haven’t integrated yet—such as adding product images, descriptions, tags, allergens, options, or modifiers, as well as managing deals and promotions.
           image: become-partner/tabs/catalog-manager.gif
       - label: |
           Coming next: Your Branded Dashboard
