@@ -146,15 +146,16 @@ const docRoutes = async (contentDirName: ContentDirName, name: RouteNameDynamic)
 
 const buildRoutes = async (): Promise<Routes> => {
   console.log("Building routes...")
-  return [
-    ...(await staticRoutes()),
-    ...(await blogRoutes("/blog")),
-    ...(await docRoutes("/apps", "apps_page")),
-    ...(await docRoutes("/contributing", "contributing_page")),
-    ...(await docRoutes("/developers", "developers_page")),
-    ...(await docRoutes("/docs", "docs_page")),
-    ...(await docRoutes("/legal", "legal_page")),
-  ]
+  const routes = await Promise.all([
+    staticRoutes(),
+    blogRoutes("/blog"),
+    docRoutes("/apps", "apps_page"),
+    docRoutes("/contributing", "contributing_page"),
+    docRoutes("/developers", "developers_page"),
+    docRoutes("/docs", "docs_page"),
+    docRoutes("/legal", "legal_page"),
+  ])
+  return routes.flat()
 }
 
 const allRoutes = executeWithTimestampCache(buildRoutes, async () => {
