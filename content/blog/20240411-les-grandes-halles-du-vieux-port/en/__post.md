@@ -11,7 +11,7 @@ excerpt: To enhance customer service and streamline client flow, Les Grandes Hal
 
 In less than two years, the establishment located in the heart of Marseille has become a symbol of the Mediterranean culinary scene. It must be said that there are no less than 11 restaurants, or rather "échoppes" as they are called here, as well as 4 beverage profit centres, enough to cater for all desires and appetites. But more than just a food court, the Grandes Halles du Vieux Port is above all a vibrant hub for exchange and sharing, where families and friends meet to “drink, eat and chat”.
 
-\*\*The absolute priority here is the client experience: regardless of the crowd size, it must be seamless, enjoyable, and unhindered. Bearing this in mind, the three co-founders and friends have decided to introduce digital solutions. Les Grandes Halles is indeed a hybrid concept where clients can choose to order directly at the counter or online through a dedicated marketplace developed by DOOD and connected via HubRise to Kezia II and Jalia, the EPOS solutions used by the stalls.
+**The absolute priority here is the client experience: regardless of the crowd size, it must be seamless, enjoyable, and unhindered. Bearing this in mind, the three co-founders and friends have decided to introduce digital solutions. Les Grandes Halles is indeed a hybrid concept where clients can choose to order directly at the counter or online through a dedicated marketplace developed by DOOD and connected via HubRise to Kezia II and Jalia, the EPOS solutions used by the stalls.**
 
 ![Les Grandes Halles du Vieux Port](../images/001-les-grandes-halles-du-veux-port.jpg)
 
