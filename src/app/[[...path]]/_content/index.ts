@@ -28,18 +28,18 @@ export const renderContent = async (route: Route<RouteName, LayoutName>, router:
       return await blogIndex(route as Route<RouteName, "blog-index">)
     case "blog-post":
       return await blogPost(route as Route<RouteName, "blog-post">, router)
+    case "branding":
+      return await branding(route as Route<RouteName, "branding">)
     case "catalog-manager":
       return await catalogManager(route as Route<RouteName, "catalog-manager">)
+    case "contact-us":
+      return await contactUs(route as Route<RouteName, "contact-us">)
     case "dashboard":
       return await dashboard(route as Route<RouteName, "dashboard">)
     case "documentation":
       return await documentation(route as Route<RouteName, "documentation">, router)
     case "documentation-index":
       return await documentationIndex(route as Route<RouteName, "documentation-index">)
-    case "branding":
-      return await branding(route as Route<RouteName, "branding">)
-    case "contact-us":
-      return await contactUs(route as Route<RouteName, "contact-us">)
     case "faqs":
       return await faqs(route as Route<RouteName, "faqs">)
     case "frontpage":
@@ -52,5 +52,7 @@ export const renderContent = async (route: Route<RouteName, LayoutName>, router:
       return await pricing(route as Route<RouteName, "pricing">)
     case "testimonials":
       return await testimonials(route as Route<RouteName, "testimonials">)
+    default:
+      return route.layout satisfies never // TS check that all layouts are handled
   }
 }

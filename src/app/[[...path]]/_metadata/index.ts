@@ -21,18 +21,18 @@ export const metadata = async (route: Route<RouteName, LayoutName>): Promise<Met
       return { title: getTranslation(route.language, "blog.hero.meta_title") }
     case "blog-post":
       return (route as Route<RouteName, "blog-post">).context.mdFile.frontMatter.meta
+    case "branding":
+      return (route as Route<RouteName, "branding">).context.yaml.meta
     case "catalog-manager":
       return (route as Route<RouteName, "catalog-manager">).context.yaml.meta
+    case "contact-us":
+      return (route as Route<RouteName, "contact-us">).context.yaml.meta
     case "dashboard":
       return (route as Route<RouteName, "dashboard">).context.yaml.meta
     case "documentation":
       return (route as Route<RouteName, "documentation">).context.mdFile.frontMatter.meta
     case "documentation-index":
       return (route as Route<RouteName, "documentation-index">).context.yaml.meta
-    case "branding":
-      return (route as Route<RouteName, "branding">).context.yaml.meta
-    case "contact-us":
-      return (route as Route<RouteName, "contact-us">).context.yaml.meta
     case "faqs":
       return (route as Route<RouteName, "faqs">).context.yaml.meta
     case "frontpage":
@@ -46,6 +46,6 @@ export const metadata = async (route: Route<RouteName, LayoutName>): Promise<Met
     case "testimonials":
       return (route as Route<RouteName, "testimonials">).context.yaml.meta
     default:
-      return (route as Route<RouteName, "apps">).context.yaml.meta
+      return route.layout satisfies never // TS check that all layouts are handled
   }
 }
