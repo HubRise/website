@@ -5,7 +5,7 @@ position: 1
 layout: documentation
 meta:
   title: Overview | Smartendr | HubRise
-  description: Smartendr overview, reasons for connecting Smartendr to HubRise and summary of integrated features. Synchronise data between your and your other apps.
+  description: Smartendr overview, reasons for connecting Smartendr to HubRise and summary of integrated features. Synchronise data between Smartendr and your other apps.
 gallery:
    - __gallery-001.png
    - __gallery-002.png
@@ -19,7 +19,7 @@ app_info:
 
 ## Description
 
-Smartendr is an ordering and loyalty platform designed to support hospitality businesses through data-driven decision-making. The solution simplifies the ordering and payment process, and uses AI and analytics to help improve customer engagement, pricing strategies, and operational efficiency.
+Smartendr is an ordering and loyalty platform designed to support hospitality businesses through data-driven decision-making. It simplifies the ordering and payment process, and uses AI and analytics to help improve customer engagement, pricing strategies, and operational efficiency.
 
 ## Integration Features
 
