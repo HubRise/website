@@ -28,9 +28,14 @@ Pour connecter votre imprimante Expedy à HubRise, suivez ces étapes :
 1. Vous êtes redirigé vers l'interface HubRise.
 1. Si vous avez plusieurs points de vente, choisissez le point de vente à connecter. Si le point de vente sélectionné possède plusieurs listes de clients ou catalogues, cliquez sur **Suivant** pour afficher les listes déroulantes correspondantes, puis sélectionnez les options voulues.
 1. Cliquez sur **Autoriser**. La connexion est active.
-1. Vous êtes redirigé vers la page d’accueil de la console Expedy et le message suivant s’affiche.
+1. Vous êtes redirigé vers la page d’accueil de la console Expedy, qui est disponible uniquement en anglais, et le message suivant s’affiche.
    ![Connexion à HubRise - Confirmation](./images/013-2x-expedy-connection-confirmation.png)
 
+---
+
+**REMARQUE IMPORTANTE :** Une imprimante Expedy ne peut être connectée qu’à un seul point de vente HubRise. Elle ne peut pas être partagée entre plusieurs points de vente.
+
+---
 
 
 ## Vérifier la connexion

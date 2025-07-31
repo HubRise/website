@@ -31,6 +31,12 @@ To connect your Expedy printer to HubRise, follow these steps:
 9. You are redirected to the Expedy console home page and the following message is displayed.
   ![Connection to HubRise - Confirmation](./images/013-2x-expedy-connection-confirmation.png)
 
+---
+
+IMPORTANT NOTE: An Expedy printer can be connected to one HubRise location only. It cannot be shared across multiple locations.
+
+---
+
 ## Check Connection
 
 1. From the Expedy back office homepage, click **Printers**.
