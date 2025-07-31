@@ -145,7 +145,7 @@ export const FilterListItem = styled.li<{ $isActive: boolean }>`
   padding: 0.6rem 0.875rem;
   transition: background-color 0.1s ease-in;
   ${mixin.clickable}
-  background-color: ${({ $main }) => ($main ? colors.backgroundLight : colors.backgroundWhite)};
+  background-color: ${({ $isActive }) => ($isActive ? colors.backgroundLight : colors.backgroundWhite)};
   color: ${colors.textDarkest};
   ${fontSizeMixins.fontSizeTextMd}
 

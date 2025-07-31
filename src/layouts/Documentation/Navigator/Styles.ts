@@ -102,7 +102,7 @@ export const Item = styled.li<{ $isActive: boolean }>`
   display: inline-block;
 
   ${(props) =>
-    props.$main &&
+    props.$isActive &&
     css`
       color: ${colors.white};
     `}
