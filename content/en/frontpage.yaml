@@ -171,9 +171,9 @@ content:
       Unlimited number of connections. No hidden costs.
     button_label: Get Started Now
 
-  integrations:
+  included_apps:
     title: Included Apps with Your Subscription
-    integration_apps:
+    apps:
       - title: OrderLine - Receive Orders in One Place
         image: orderline.png
         advantages:

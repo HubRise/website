@@ -11,7 +11,7 @@ import { ContentImageMap } from "@utils/contentImage"
 import Apps from "./Apps"
 import Features from "./Features"
 import Hero from "./Hero"
-import Integrations from "./Integrations"
+import IncludedApps from "./IncludedApps"
 import Partners from "./Partners"
 import Pricing from "./Pricing"
 
@@ -47,7 +47,7 @@ const Frontpage = ({
       <Apps apps={content.apps} appLogosMap={appLogosMap} />
       <Features {...content.features} descriptionMdx={featuresDescriptionMdx} featuresImagesMap={featuresImagesMap} />
       <Pricing {...content.pricing} descriptionMdx={pricingDescriptionMdx} />
-      <Integrations {...content.integrations} />
+      <IncludedApps {...content.included_apps} />
       <Partners {...content.partners} descriptionMdx={partnersDescriptionMdx} />
       <TestimonialsBlock
         title={testimonials.content.block_title}

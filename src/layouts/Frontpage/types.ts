@@ -21,7 +21,7 @@ export type TFeatureCard = {
   image: string
 }
 
-export type TIntegrationApp = {
+export type TIncludedApp = {
   title: string
   image: string
   advantages: Array<{
@@ -29,13 +29,6 @@ export type TIntegrationApp = {
   }>
   button_label: string
   button_link: string
-}
-
-export type TTestimonial = {
-  name: string
-  job_title: string
-  text: string
-  logo: string
 }
 
 export type TApp = {
@@ -71,9 +64,9 @@ export interface FrontpageYaml {
       description: string
       button_label: string
     }
-    integrations: {
+    included_apps: {
       title: string
-      integration_apps: Array<TIntegrationApp>
+      apps: Array<TIncludedApp>
     }
     partners: {
       title: string

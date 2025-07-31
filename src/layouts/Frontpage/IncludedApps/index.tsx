@@ -7,20 +7,20 @@ import { SideBlock } from "@components/SideBlock"
 import Underline from "@components/Underline"
 import { iconSizes } from "@utils/styles"
 
-import { TIntegrationApp } from "../types"
+import { TIncludedApp } from "../types"
 
 import { SideBlocks, ContentWrapper, Title, Advantage, Advantages, IconWrapper, AdvantageText } from "./Styles"
 
-interface IntegrationsProps {
+interface IncludedAppsProps {
   title: string
-  integration_apps: Array<TIntegrationApp>
+  apps: Array<TIncludedApp>
 }
 
-const Integrations = ({ title, integration_apps }: IntegrationsProps) => {
+const IncludedApps = ({ title, apps }: IncludedAppsProps) => {
   return (
     <ScreenContainer withHeader title={title}>
       <SideBlocks>
-        {integration_apps.map((integrationApp, index) => {
+        {apps.map((integrationApp, index) => {
           return (
             <SideBlock
               key={index}
@@ -65,4 +65,4 @@ const Integrations = ({ title, integration_apps }: IntegrationsProps) => {
   )
 }
 
-export default Integrations
+export default IncludedApps

@@ -194,9 +194,9 @@ content:
       Unlimited number of connections. No hidden costs.
     button_label: Start today
 
-  integrations:
+  included_apps:
     title: Free HubRise apps to complete your integrations when needed
-    integration_apps:
+    apps:
       - title: Centralise orders with OrderLine
         image: orderline.png
         advantages:
