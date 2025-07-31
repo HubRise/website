@@ -484,6 +484,12 @@ content:
           title: servier.bar
           description: Servier.bar propose des solutions de commande conçues pour les restaurants et les hôtels. Ces solutions permettent aux clients de commander et de payer directement depuis leurs smartphones via une application web, pour améliorer le service sans embaucher de personnel supplémentaire.
           additional_info:
+        - website: https://www.smartendr.com
+          documentation: /fr/apps/smartendr
+          logo: smartendr.png
+          country: BE
+          title: Smartendr
+          description: Smartendr propose des solutions de commande et de fidélisation pour l’hôtellerie et la restauration. Elle simplifie la prise de commande et utilise l’IA pour améliorer l’engagement client.
         - website: https://www.shopify.com
           documentation: /fr/apps/shopify
           logo: shopify.png
