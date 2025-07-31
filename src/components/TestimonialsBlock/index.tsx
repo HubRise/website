@@ -5,7 +5,7 @@ import ScreenContainer from "@components/ScreenContainer"
 import { TTestimonial } from "@layouts/Testimonials/types"
 import { ContentImageMap } from "@utils/contentImage"
 
-import { TestimonialsWrapper, Name, JobTitle, Text, LogoImage, CardLink } from "./Styles"
+import { TestimonialsWrapper, Name, JobTitle, Quote, LogoImage, CardLink } from "./Styles"
 
 interface TestimonialsProps {
   title: string
@@ -36,7 +36,7 @@ const TestimonialsBlock = ({
                   <Image src="/images/quote-green.svg" alt="Quote" width={62} height={44} />
                   <Name>{`- ${testimonial.person_details.name}`}</Name>
                   <JobTitle>{testimonial.person_details.job_title}</JobTitle>
-                  <Text>{testimonial.quote}</Text>
+                  <Quote>{testimonial.quote}</Quote>
                   {testimonialLogoMap[testimonial.person_details.logo] && (
                     <LogoImage
                       {...testimonialLogoMap[testimonial.person_details.logo]}

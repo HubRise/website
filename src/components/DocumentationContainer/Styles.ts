@@ -62,11 +62,6 @@ export const StyledContainer = styled.div`
     @media (min-width: ${breakpoints.large}) {
       ${fontSizeMixins.fontSizeText2Xl}
     }
-
-    @media (min-width: ${breakpoints.biggest}) {
-      font-size: 1.875rem;
-      line-height: 2.5rem;
-    }
   }
 
   h3 {
@@ -92,16 +87,7 @@ export const StyledContainer = styled.div`
   ul,
   ol {
     margin-bottom: ${paragraphSpacing};
-    font-weight: 500;
-    ${fontSizeMixins.fontSizeTextMd}
-
-    @media (min-width: ${breakpoints.large}) {
-      ${fontSizeMixins.fontSizeTextLg}
-    }
-
-    @media (min-width: ${breakpoints.biggest}) {
-      ${fontSizeMixins.fontSizeTextXl}
-    }
+    ${fontSizeMixins.fontSizeTextMd};
   }
 
   p + ul,

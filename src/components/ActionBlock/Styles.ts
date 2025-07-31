@@ -18,14 +18,10 @@ export const StyledActionBlock = styled.div`
 export const Description = styled.p`
   margin: 1rem auto 0;
   max-width: 50rem;
-  ${fontSizeMixins.fontSizeTextLg}
+  ${fontSizeMixins.fontSizeTextLg};
 
   @media (min-width: ${breakpoints.large}) {
-    ${fontSizeMixins.fontSizeTextXl}
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeText2Xl}
+    ${fontSizeMixins.fontSizeTextXl};
   }
 `
 

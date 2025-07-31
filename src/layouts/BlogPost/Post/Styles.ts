@@ -8,31 +8,20 @@ export const StyledPost = styled.div`
   padding-bottom: 3.5rem;
 
   ${StyledDateAndAuthor} {
-    ${fontSizeMixins.fontSizeTextLg}
+    ${fontSizeMixins.fontSizeTextLg};
   }
 
   @media (min-width: ${breakpoints.large}) {
     padding-bottom: 5.5rem;
   }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${StyledDateAndAuthor} {
-      ${fontSizeMixins.fontSizeTextXl}
-    }
-  }
 `
 
 export const Title = styled.h1`
-  font-size: 1.875rem;
+  ${fontSizeMixins.fontSizeDisplaySm};
   line-height: 2.5rem;
   font-weight: 700;
   color: ${colors.textDarkest};
   margin-top: 0.5rem;
-
-  @media (min-width: ${breakpoints.biggest}) {
-    font-size: 2.125rem;
-    line-height: 2.75rem;
-  }
 `
 
 export const BannerImage = styled(Image)`

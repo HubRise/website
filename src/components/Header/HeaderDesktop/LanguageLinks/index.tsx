@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
 
-import Dropdown, { TDropdownOption } from "@components/Dropdown"
 import type { LanguagePaths } from "@utils/locales"
 import { allLanguages } from "@utils/locales"
+
+import Dropdown, { TDropdownOption } from "../../Dropdown"
 
 interface LanguageSwitcherProps {
   languagePaths: LanguagePaths

@@ -4,31 +4,31 @@ import styled from "styled-components"
 import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const PriceAndSellingPoints = styled.div`
-  margin-top: 2.5rem;
+  margin: 2.5rem 0;
   padding-bottom: 2.5rem;
 
   @media (min-width: ${breakpoints.large}) {
-    margin-top: 5.5rem;
+    margin: 5.5rem 0;
   }
 `
 
 export const Price = styled.div`
-  p {
-    ${fontSizeMixins.fontSizeTextMd}
-    font-weight: 500;
+  ${fontSizeMixins.fontSizeTextMd}
+  font-weight: 500;
+  font-size: 3.75rem;
+  line-height: 4rem;
+  font-weight: 600;
+  color: ${colors.textDarkest};
+  letter-spacing: -2px;
+`
 
-    span {
-      font-size: 3.75rem;
-      line-height: 4rem;
-      font-weight: 600;
-      color: ${colors.textDarkest};
-      letter-spacing: -2px;
-    }
-  }
+export const Period = styled.div`
+  ${fontSizeMixins.fontSizeTextMd}
+  font-weight: 500;
 `
 
 export const SellingPoints = styled.div`
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
@@ -38,28 +38,25 @@ export const SellingPoints = styled.div`
 export const SellingPoint = styled.div``
 
 export const SellingPointTitle = styled.h4`
-  ${fontSizeMixins.fontSizeTextMd}
+  ${fontSizeMixins.fontSizeTextLg};
   color: ${colors.textDarkest};
   font-weight: 600;
 `
 
 export const SellingPointText = styled.p`
-  ${fontSizeMixins.fontSizeTextMd}
+  ${fontSizeMixins.fontSizeTextMd};
 `
 
 export const FeatureBlocks = styled.div`
-  margin-top: 2rem;
-
   @media (min-width: ${breakpoints.large}) {
     display: flex;
     gap: 2rem;
   }
 `
 
-export const FeatureBlock = styled.div<{ $isActive: boolean }>`
-  background-color: ${({ $isActive }) => ($isActive ? `${colors.backgroundWhite}` : `${colors.backgroundLightest}`)};
-  box-shadow: ${({ $isActive }) => ($isActive ? "0px 0px 25px #a6a6a699" : "none")};
-  transform: ${({ $isActive }) => ($isActive ? "scale(1)" : "scale(0.9)")};
+export const FeatureBlock = styled.div<{ $main: boolean }>`
+  background-color: ${({ $main }) => ($main ? `${colors.backgroundWhite}` : `${colors.backgroundLightest}`)};
+  box-shadow: ${({ $main }) => ($main ? "0px 0px 25px #a6a6a699" : "none")};
   text-align: left;
   border-radius: 0.875rem;
   padding: 2.5rem 3.5rem;
@@ -86,10 +83,6 @@ export const FeatureText = styled.span`
   display: inline-block;
   margin-left: 0.875rem;
   ${fontSizeMixins.fontSizeTextMd};
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextXl}
-  }
 `
 
 export const IconWrapper = styled.div`
@@ -99,11 +92,6 @@ export const IconWrapper = styled.div`
   height: 1.5rem;
   ${mixin.centerElement};
   flex-shrink: 0;
-
-  @media (min-width: ${breakpoints.biggest}) {
-    width: 1.75rem;
-    height: 1.75rem;
-  }
 `
 
 export const StyledLink = styled(Link)`

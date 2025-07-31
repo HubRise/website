@@ -18,7 +18,6 @@ export const CardTitle = styled.h4`
 
 export const CardText = styled.p`
   ${mixin.cardText}
-  font-weight: 600;
 `
 
 export const ReadMoreWrapper = styled.div`

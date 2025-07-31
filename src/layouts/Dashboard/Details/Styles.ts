@@ -75,13 +75,6 @@ export const ContentBlock = styled.div<{ $activeDetailsView: number }>`
     }
   }
 
-  @media (min-width: ${breakpoints.biggest}) {
-    p,
-    ul {
-      ${fontSizeMixins.fontSizeText2Xl}
-    }
-  }
-
   ${ContentWrapper} {
     ${({ $activeDetailsView }) => css`
       &:nth-child(${$activeDetailsView}) {

@@ -30,7 +30,6 @@ export type THero = {
   }
   plan: {
     price: string
-    tax: string
     period: string
   }
   selling_points: Array<TSellingPoint>

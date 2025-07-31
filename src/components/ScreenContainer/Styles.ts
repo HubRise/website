@@ -42,22 +42,18 @@ export const HeaderWrapper = styled.div`
 `
 
 export const Title = styled.h2<{ $bgColor: ScreenContainerBgColor }>`
-  ${fontSizeMixins.fontSizeDisplaySm}
+  ${fontSizeMixins.fontSizeDisplaySm};
   font-weight: 600;
   color: ${({ $bgColor }) => ($bgColor === "green" ? `${colors.white}` : `${colors.textDarkest}`)};
   text-align: center;
 
   @media (min-width: ${breakpoints.large}) {
-    ${fontSizeMixins.fontSizeDisplayMd}
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeDisplayLg}
+    ${fontSizeMixins.fontSizeDisplayMd};
   }
 `
 
 export const Description = styled.div`
-  ${mixin.description}
+  ${mixin.description};
   text-align: center;
   margin: 1.25rem auto 0;
 `

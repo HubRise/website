@@ -34,16 +34,12 @@ export const Cards = styled.div`
 export const CardContent = styled.div``
 
 export const CardTitle = styled.h4`
-  ${mixin.smallCardTitle}
+  ${mixin.smallCardTitle};
   margin-top: 1.25rem;
-
-  @media (min-width: ${breakpoints.biggest}) {
-    margin-top: 1.5rem;
-  }
 `
 
 export const CardText = styled.p`
-  ${mixin.cardText}
+  ${mixin.cardText};
 `
 
 export const CardImage = styled(Image)`

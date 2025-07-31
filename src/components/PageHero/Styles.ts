@@ -23,7 +23,7 @@ export const Wrapper = styled.div`
 `
 
 export const Title = styled.h1`
-  ${fontSizeMixins.fontSizeDisplaySm}
+  ${fontSizeMixins.fontSizeDisplayMd};
   font-weight: 600;
   color: ${colors.textDarkest};
 
@@ -33,10 +33,6 @@ export const Title = styled.h1`
 
   @media (min-width: ${breakpoints.large}) {
     ${fontSizeMixins.fontSizeDisplayXl}
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeDisplay2Xl}
   }
 `
 

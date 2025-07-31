@@ -26,13 +26,9 @@ export const Content = styled.div`
 `
 
 export const Name = styled.h4`
-  ${fontSizeMixins.fontSizeTextLg}
-  font-weight: 700;
+  ${fontSizeMixins.fontSizeText2Xl};
+  font-weight: 600;
   margin-top: 1.5rem;
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeText2Xl}
-  }
 `
 
 export const JobTitle = styled.h5`

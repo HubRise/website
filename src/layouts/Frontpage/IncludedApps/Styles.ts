@@ -68,9 +68,4 @@ export const IconWrapper = styled.div`
   height: 1.5rem;
   ${mixin.centerElement}
   flex-shrink: 0;
-
-  @media (min-width: ${breakpoints.biggest}) {
-    width: 1.75rem;
-    height: 1.75rem;
-  }
 `

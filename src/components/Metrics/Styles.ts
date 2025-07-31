@@ -37,22 +37,13 @@ export const Number = styled.span`
     font-size: 3.375rem;
     line-height: 4rem;
   }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    font-size: 3.75rem;
-    line-height: 4.5rem;
-  }
 `
 
 export const Text = styled.span`
-  ${fontSizeMixins.fontSizeTextSm}
+  ${fontSizeMixins.fontSizeTextMd}
   text-align: center;
 
   @media (min-width: ${breakpoints.large}) {
     ${fontSizeMixins.fontSizeTextLg}
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeText2Xl}
   }
 `

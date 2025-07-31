@@ -12,8 +12,7 @@ content:
       part_4: Pricing
     plan:
       price: €35
-      tax: excl. VAT
-      period: per month / per location
+      period: Excl. VAT / location / month
     selling_points:
       - title: Unlimited orders
         text: No limit to the number of transactions sent through your account

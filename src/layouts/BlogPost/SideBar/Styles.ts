@@ -10,12 +10,8 @@ export const StyledSideBar = styled.div`
   width: 100%;
 
   @media (min-width: ${breakpoints.large}) {
-    width: 396px;
+    width: 25rem;
     flex-shrink: 0;
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    width: 480px;
   }
 `
 
@@ -34,7 +30,7 @@ export const Buttons = styled.div`
 export const SideBarButtonLink = styled.a``
 
 export const SideBarButton = styled.div`
-  ${buttonStyles}
+  ${buttonStyles};
   background-color: ${colors.backgroundLight};
   height: 3rem;
   width: 3rem;
@@ -84,11 +80,7 @@ export const PostLink = styled(Link)`
 `
 
 export const PostLinkText = styled.span`
-  ${fontSizeMixins.fontSizeTextLg}
+  ${fontSizeMixins.fontSizeTextMd}
   font-weight: 600;
   color: #636363;
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextXl}
-  }
 `

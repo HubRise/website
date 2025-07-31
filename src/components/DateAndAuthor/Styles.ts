@@ -1,14 +1,10 @@
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
+import { colors, fontSizeMixins } from "@utils/styles"
 
 export const StyledDateAndAuthor = styled.div`
   color: ${colors.primary};
-  ${fontSizeMixins.fontSizeTextSm}
+  ${fontSizeMixins.fontSizeTextSm};
   font-weight: 600;
   margin: 0.75rem 0;
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextMd}
-  }
 `

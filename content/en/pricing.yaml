@@ -11,11 +11,8 @@ content:
       part_4: Pricing
     plan:
       price: €35
-      tax:
-      period:
+      period: Excl. VAT / location / month
     selling_points:
-      - title: Subscription Fee
-        text: Excl. VAT / per month / per location
       - title: No Commitment
         text: Cancel our subscription autonomously, any time
       - title: No Setup Fee

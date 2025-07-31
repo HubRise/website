@@ -44,19 +44,16 @@ export const Content = styled.div`
 `
 
 export const Title = styled.h3`
-  ${fontSizeMixins.fontSizeDisplaySm}
+  ${fontSizeMixins.fontSizeDisplaySm};
   font-weight: 600;
   color: ${colors.textDarkest};
 
   @media (min-width: ${breakpoints.large}) {
     ${fontSizeMixins.fontSizeDisplayMd}
   }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeDisplayLg}
-  }
 `
 
 export const Description = styled.p`
-  ${mixin.description}
+  margin-top: 1rem;
+  ${fontSizeMixins.fontSizeTextMd};
 `

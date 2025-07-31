@@ -22,29 +22,17 @@ export const ResourcesLink = styled(Link)`
   @media (min-width: ${breakpoints.burgerMenu}) {
     max-width: 14rem;
   }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    max-width: 17rem;
-  }
 `
 
 export const LinkName = styled.p`
   color: ${colors.textDarkest};
   font-weight: 600;
-  ${fontSizeMixins.fontSizeTextMd}
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextLg}
-  }
+  ${fontSizeMixins.fontSizeTextMd};
 `
 
 export const LinkDescription = styled.span`
   color: ${colors.textDark};
-  ${fontSizeMixins.fontSizeTextSm}
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextMd}
-  }
+  ${fontSizeMixins.fontSizeTextSm};
 `
 
 export const GetInTouchCard = styled.div`
@@ -68,11 +56,6 @@ export const GetInTouchCard = styled.div`
   @media (min-width: ${breakpoints.burgerMenu}) {
     width: 14rem;
   }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    width: 17rem;
-    height: 11rem;
-  }
 `
 
 export const ResourcesContainer = styled.div`
@@ -85,11 +68,6 @@ export const ResourcesContainer = styled.div`
       font-weight: 600;
       ${fontSizeMixins.fontSizeText2Xl}
       color: ${colors.white};
-
-      @media (min-width: ${breakpoints.biggest}) {
-        font-size: 1.75rem;
-        line-height: 2.375rem;
-      }
     }
   }
 

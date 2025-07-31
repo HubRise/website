@@ -18,7 +18,7 @@ export const Content = styled.div`
 
 export const ContentBlock = styled.p`
   position: relative;
-  ${fontSizeMixins.fontSizeTextMd}
+  ${fontSizeMixins.fontSizeTextLg};
 
   &:first-child {
     &::after {
@@ -37,9 +37,5 @@ export const ContentBlock = styled.p`
         height: 100%;
       }
     }
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextLg}
   }
 `

@@ -7,14 +7,10 @@ export const Header = styled.h4`
   font-weight: 600;
   margin-bottom: 1rem;
   text-align: left;
-  ${fontSizeMixins.fontSizeTextMd}
+  ${fontSizeMixins.fontSizeTextMd};
 
   @media (min-width: ${breakpoints.large}) {
-    ${fontSizeMixins.fontSizeTextLg}
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextXl}
+    ${fontSizeMixins.fontSizeTextLg};
   }
 `
 
@@ -33,11 +29,7 @@ export const List = styled.ul`
 `
 
 export const Item = styled.li`
-  ${fontSizeMixins.fontSizeTextSm}
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextLg}
-  }
+  ${fontSizeMixins.fontSizeTextSm};
 `
 
 const linkMixin = css`

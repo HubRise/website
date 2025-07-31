@@ -53,14 +53,10 @@ export const TestimonialsWrapper = styled.div<{ $nbMobileDisplay: number }>`
 `
 
 export const Name = styled.h4`
-  ${fontSizeMixins.fontSizeTextLg}
-  font-weight: 700;
+  ${fontSizeMixins.fontSizeTextXl}
+  font-weight: 600;
   color: ${colors.textDarkest};
   margin-top: 1.5rem;
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeText2Xl}
-  }
 `
 
 export const JobTitle = styled.h5`
@@ -68,10 +64,9 @@ export const JobTitle = styled.h5`
   margin-top: 0.25rem;
 `
 
-export const Text = styled.p`
+export const Quote = styled.p`
   ${mixin.cardText}
   font-family: "Inter", sans-serif;
-  font-weight: 600;
   margin-top: 1.5rem;
   margin-bottom: 0.25rem;
 `

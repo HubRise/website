@@ -4,10 +4,14 @@ import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
 export const Container = styled.div`
   background-color: ${colors.backgroundWhite};
+
+  @media not (min-width: ${breakpoints.large}) {
+    display: none;
+  }
 `
 
 export const Content = styled.div`
-  ${mixin.containerWrapper}
+  ${mixin.containerWrapper};
   min-height: 14rem;
   display: flex;
   align-items: center;
@@ -20,16 +24,8 @@ export const Content = styled.div`
 `
 
 export const Title = styled.h1`
-  ${fontSizeMixins.fontSizeDisplaySm}
+  ${fontSizeMixins.fontSizeDisplayLg};
   font-weight: 600;
   color: ${colors.textDarkest};
   text-transform: capitalize;
-
-  @media (min-width: ${breakpoints.large}) {
-    ${fontSizeMixins.fontSizeDisplayXl}
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeDisplay2Xl}
-  }
 `

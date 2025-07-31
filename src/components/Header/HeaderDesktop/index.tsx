@@ -6,12 +6,12 @@ import { usePathname } from "next/navigation"
 import * as React from "react"
 
 import Button from "@components/Button"
-import Dropdown from "@components/Dropdown"
 import { useLayoutContext } from "@components/LayoutContext"
 import useClientRoutes from "@hooks/client/useClientRoutes"
 import useTranslation from "@hooks/client/useTranslation"
 import type { LanguagePaths } from "@utils/locales"
 
+import Dropdown from "../Dropdown"
 import Products from "../Products"
 import Resources from "../Resources"
 import { IHeaderLink } from "../shared/types"

@@ -14,11 +14,13 @@ export const StyledCopyright = styled.div`
 export const Container = styled.div`
   min-height: 5rem;
   ${mixin.containerWrapper}
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   display: flex;
   gap: 2rem;
   flex-direction: column;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  color: ${colors.textLighter};
+  ${fontSizeMixins.fontSizeTextMd};
 
   @media (min-width: ${breakpoints.medium}) {
     flex-direction: row;
@@ -30,30 +32,18 @@ export const Container = styled.div`
 `
 
 export const Text = styled.span`
-  color: ${colors.textLighter};
-  ${fontSizeMixins.fontSizeTextSm}
   order: 1;
 
   @media (min-width: ${breakpoints.medium}) {
     order: initial;
   }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextLg}
-  }
 `
 
 export const Links = styled.div`
-  color: ${colors.textLighter};
-  ${fontSizeMixins.fontSizeTextSm}
   display: flex;
-  gap: 0.75rem;
+  gap: 1.5rem;
 
   a {
     ${mixin.linkOver(colors.white)}
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextLg}
   }
 `

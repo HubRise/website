@@ -7,21 +7,17 @@ import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 import { ButtonType, linkButtonBgColor, linkButtonColor } from "./utils"
 
 export const buttonStyles = css`
-  ${mixin.centerElement}
+  ${mixin.centerElement};
   width: fit-content;
   font-size: ${fontSizes._16};
   font-weight: 600;
   border-radius: 0.5rem;
   transition: all 0.2s ease;
   white-space: nowrap;
-
-  @media (min-width: ${breakpoints.biggest}) {
-    font-size: ${fontSizes._20};
-  }
 `
 
 export const StyledButton = styled(Link)<{ $type: ButtonType }>`
-  ${buttonStyles}
+  ${buttonStyles};
   height: ${({ $type }) => ($type === "link" ? "auto" : "3rem")};
   line-height: ${({ $type }) => ($type === "link" ? "normal" : "3rem")};
   background-color: ${({ $type }) => linkButtonBgColor($type)};
@@ -46,10 +42,5 @@ export const StyledButton = styled(Link)<{ $type: ButtonType }>`
     ${StyledIcon} {
       margin-left: 0.625rem;
     }
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    height: ${({ $type }) => ($type === "link" ? "auto" : "3.375rem")};
-    line-height: ${({ $type }) => ($type === "link" ? "normal" : "3.375rem")};
   }
 `

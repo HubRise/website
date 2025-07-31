@@ -2,13 +2,13 @@ import Link from "next/link"
 import styled from "styled-components"
 
 import { StyledIcon } from "@components/Icon/Styles"
-import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
+import { colors, fontSizeMixins } from "@utils/styles"
 
 export const ProductsList = styled.div`
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1.375rem;
+  gap: 2rem;
 `
 
 export const Product = styled(Link)`
@@ -24,34 +24,22 @@ export const ProductContent = styled.div`
 
 export const ProductTitle = styled.h4`
   color: ${colors.textDarkest};
-  ${fontSizeMixins.fontSizeTextMd}
+  ${fontSizeMixins.fontSizeTextMd};
   font-weight: 600;
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextLg}
-  }
 `
 
 export const ProductDescription = styled.p`
-  ${fontSizeMixins.fontSizeTextSm}
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextMd}
-  }
+  ${fontSizeMixins.fontSizeTextSm};
 `
 
 export const ProductLink = styled.span`
   display: flex;
   align-items: center;
   color: ${colors.primary};
-  ${fontSizeMixins.fontSizeTextSm}
+  ${fontSizeMixins.fontSizeTextMd};
   font-weight: 600;
 
   ${StyledIcon} {
     margin-left: 0.5rem;
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextMd}
   }
 `

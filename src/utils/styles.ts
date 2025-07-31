@@ -204,27 +204,15 @@ export const mixin = {
     @media (min-width: ${breakpoints.large}) {
       ${fontSizeMixins.fontSizeTextXl}
     }
-
-    @media (min-width: ${breakpoints.biggest}) {
-      ${fontSizeMixins.fontSizeText2Xl}
-    }
   `,
   cardText: css`
     ${fontSizeMixins.fontSizeTextMd}
     margin-top: 0.625rem;
-
-    @media (min-width: ${breakpoints.biggest}) {
-      ${fontSizeMixins.fontSizeTextXl}
-    }
   `,
   smallCardTitle: css`
     ${fontSizeMixins.fontSizeTextXl}
     font-weight: 600;
     color: ${colors.textDarkest};
-
-    @media (min-width: ${breakpoints.biggest}) {
-      ${fontSizeMixins.fontSizeText2Xl}
-    }
   `,
   cardTitle: css`
     ${fontSizeMixins.fontSizeText2Xl}
@@ -233,10 +221,6 @@ export const mixin = {
 
     @media (min-width: ${breakpoints.large}) {
       ${fontSizeMixins.fontSizeDisplaySm}
-    }
-
-    @media (min-width: ${breakpoints.biggest}) {
-      ${fontSizeMixins.fontSizeDisplayMd}
     }
   `,
   containerWrapper: css`

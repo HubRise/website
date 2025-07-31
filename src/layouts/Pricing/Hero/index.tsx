@@ -21,6 +21,7 @@ import {
   Feature,
   FeatureText,
   IconWrapper,
+  Period,
 } from "./Styles"
 
 interface HeroProps {
@@ -42,13 +43,10 @@ const Hero = ({ hero }: HeroProps): JSX.Element => {
       }
     >
       <PriceAndSellingPoints>
-        <Price>
-          <p>
-            <span>{plan.price}</span> {plan.tax}
-          </p>
-          <p>{plan.period}</p>
-        </Price>
+        <Price> {plan.price} </Price>
+        <Period>{plan.period}</Period>
         <Underline position="center" />
+
         <SellingPoints>
           {selling_points.map(({ title, text }, index) => {
             return (
@@ -62,7 +60,7 @@ const Hero = ({ hero }: HeroProps): JSX.Element => {
       </PriceAndSellingPoints>
 
       <FeatureBlocks>
-        <FeatureBlock $isActive={true}>
+        <FeatureBlock $main={true}>
           <Title>{included_features.title}</Title>
           <Description>{included_features.description}</Description>
           <Underline />
@@ -83,7 +81,7 @@ const Hero = ({ hero }: HeroProps): JSX.Element => {
           <Button label={included_features.button_label} link={included_features.button_link} />
         </FeatureBlock>
 
-        <FeatureBlock $isActive={false}>
+        <FeatureBlock $main={false}>
           <Title>{additional_features.title}</Title>
           <Description>{additional_features.description}</Description>
           <Underline />

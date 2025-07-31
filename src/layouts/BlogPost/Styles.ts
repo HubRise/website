@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 import { StyledBreadcrumbs } from "@components/Breadcrumbs/Styles"
-import { breakpoints, colors, mixin } from "@utils/styles"
+import { breakpoints, colors, sizes } from "@utils/styles"
 
 export const BlogPostWrapper = styled.div`
   background-color: ${colors.backgroundWhite};
@@ -13,7 +13,8 @@ export const BlogPostWrapper = styled.div`
 `
 
 export const BlogPostContainer = styled.div`
-  ${mixin.containerWrapper}
+  max-width: ${sizes.maxWidth};
+  margin: 0 auto;
   padding-top: 3.5rem;
 
   @media (min-width: ${breakpoints.large}) {

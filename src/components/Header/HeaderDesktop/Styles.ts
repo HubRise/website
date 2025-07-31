@@ -41,8 +41,8 @@ export const MenuItem = styled.li<{ $isActive: boolean }>`
 `
 
 export const MenuLink = styled(Link)<{ $isActive: boolean }>`
-  ${fontSizeMixins.fontSizeTextMd}
-  font-weight: 600;
+  ${fontSizeMixins.fontSizeTextMd};
+  font-weight: 500;
   color: ${colors.textDark};
   ${mixin.linkOver(colors.primary)};
 
@@ -51,10 +51,6 @@ export const MenuLink = styled(Link)<{ $isActive: boolean }>`
     css`
       color: ${colors.primary};
     `}
-
-  @media (min-width: ${breakpoints.biggest}) {
-    ${fontSizeMixins.fontSizeTextLg}
-  }
 `
 
 export const RightSide = styled.div`

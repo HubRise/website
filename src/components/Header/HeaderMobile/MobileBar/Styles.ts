@@ -134,8 +134,8 @@ export const LanguageList = styled.ul`
 `
 
 export const LanguageItem = styled.li<{ $isActive: boolean }>`
-  ${({ $isActive }) =>
-    $isActive &&
+  ${({ $main }) =>
+    $main &&
     css`
       color: ${colors.primary};
     `};
