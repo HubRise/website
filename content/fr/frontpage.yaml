@@ -38,7 +38,7 @@ content:
     - number: 2000
       title: Customers
 
-  apps:
+  app_carousel:
     - logo: 1bot.png
     - logo: 3spos.png
     - logo: adipos.png

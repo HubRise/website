@@ -91,9 +91,4 @@ export const AppCard = styled.div`
   & img {
     width: fit-content;
   }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    width: 8.5rem;
-    height: 8.5rem;
-  }
 `

@@ -8,7 +8,7 @@ import { Route, RouteName } from "@utils/router/types"
 
 const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Element> => {
   const yaml = route.context.yaml
-  const appLogos: Array<string> = yaml.content.apps.map((app) => app.logo)
+  const appLogos: Array<string> = yaml.content.app_carousel.map((app) => app.logo)
   const featuresImages: Array<string> = yaml.content.features.features_cards.map((feature) => feature.image)
 
   const testimonials = route.testimonials.yaml

@@ -3,16 +3,16 @@ import { useEffect, useRef, useState } from "react"
 
 import { ContentImageMap } from "@utils/contentImage"
 
-import { TApp } from "../types"
+import { TAppLogo } from "../types"
 
 import { Container, InnerContainer, LogoContainer, AppCard } from "./Styles"
 
-interface AppsProps {
-  apps: Array<TApp>
+interface AppCarouselProps {
+  apps: Array<TAppLogo>
   appLogosMap: ContentImageMap
 }
 
-const Apps = ({ apps, appLogosMap }: AppsProps): JSX.Element => {
+const AppCarousel = ({ apps, appLogosMap }: AppCarouselProps): JSX.Element => {
   const logoContainerWidth = useRef<HTMLInputElement>(null)
   const innerContainerWidth = useRef<HTMLInputElement>(null)
   const [moveShiftWidth, setMoveShiftWidth] = useState<number>(0)
@@ -44,4 +44,4 @@ const Apps = ({ apps, appLogosMap }: AppsProps): JSX.Element => {
   )
 }
 
-export default Apps
+export default AppCarousel

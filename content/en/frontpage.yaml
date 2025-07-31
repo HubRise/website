@@ -37,7 +37,7 @@ content:
     - number: 2,000+
       title: Customers
 
-  apps:
+  app_carousel:
     - logo: adipos.png
     - logo: akk-softtech.png
     - logo: apicbase.png
