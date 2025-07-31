@@ -1,4 +1,4 @@
-# TODO: Need to translate
+
 path: /
 meta:
   title: HubRise - Intégration pour le commerce et la restauration
@@ -12,20 +12,20 @@ hero:
     part_4: Retail
   description: |
     Connect your EPOS, online ordering, and inventory tools into one powerful platform.
-  button_label: Create your account today
+  button_label: Créez votre compte
   apps:
-    - title: Points of Sales
-      color: green
-    - title: Delivery Platforms
-      color: greenLight
-    - title: Loyalty and Marketing
-      color: greenMediumLight
-    - title: Operations and Inventory
-      color: greenLight
-    - title: Delivery Management
-      color: green
-    - title: Online Ordering
-      color: greenLight
+    - title: Logiciels de caisse
+      color: topDark
+    - title: Plateformes de livraison
+      color: bottom
+    - title: Fidélisation et marketing
+      color: topLight
+    - title: Opérations et gestion des stocks
+      color: bottom
+    - title: Gestion des livraisons
+      color: topDark
+    - title: Commande en ligne
+      color: bottom
 
 content:
   metrics:

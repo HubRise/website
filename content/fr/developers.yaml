@@ -27,7 +27,7 @@ content:
       description: Conventions utilisées par les autres développeurs pour les cas spéciaux (en anglais)
       to: /fr/developers/conventions
       icon: edge-cases.svg
-  # TODO: Need to translate
+
   action_block:
     title: Need Help Getting Started?
     description: Our integration support team is here for you at every step of the process.

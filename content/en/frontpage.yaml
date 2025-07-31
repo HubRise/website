@@ -14,17 +14,17 @@ hero:
   button_label: Create Your Account
   apps:
     - title: Points of Sales
-      color: green
+      color: topDark
     - title: Delivery Platforms
-      color: greenLight
+      color: bottom
     - title: Loyalty and Marketing
-      color: greenMediumLight
+      color: topLight
     - title: Operations and Inventory
-      color: greenLight
+      color: bottom
     - title: Delivery Management
-      color: green
+      color: topDark
     - title: Online Ordering
-      color: greenLight
+      color: bottom
 
 content:
   metrics:
