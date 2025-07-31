@@ -54,14 +54,14 @@ export type TSpecialPricing = {
     title: string
     description: string
     pricing_list: Array<TSpecialPricingItem>
-    special_proposal: string
+    special_proposal_html: string
   }
   dark_kitchen: {
     title: string
     description: string
     pricing_list_description: string
     pricing_list: Array<TSpecialPricingItem>
-    special_proposal: string
+    special_proposal_html: string
   }
   resellers_and_partners: {
     title: string

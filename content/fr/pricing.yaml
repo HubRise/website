@@ -85,7 +85,7 @@ content:
           price: €30
         - text: Locations 31 and more
           price: €27
-      special_proposal: For 12 locations, the subscription will be €35 for the first 5 locations, then €30 for the next 7.
+      special_proposal_html: For 12 locations, the subscription will be €35 for the first 5 locations, then €30 for the next 7.
     dark_kitchen:
       title: Dark Kitchen
       description: Specific pricing applies to dark kitchens operating multiple virtual brands. Subscription fees are volume-based, with a setup fee of €25 per brand, per platform, with discounts available for multiple connections
@@ -98,7 +98,7 @@ content:
           price: €55
         - text: 3,001 to 4,500 orders per month
           price: €75
-      special_proposal: And so on, with an additional €20 for every additional 1,500 orders.
+      special_proposal_html: And so on, with an additional €20 for every additional 1,500 orders.
     resellers_and_partners:
       title: Resellers and Partners
       description: HubRise offer a partnership program, with or without white labelling.

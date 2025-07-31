@@ -38,7 +38,7 @@ const SpecialPricing = ({ special_pricing }: SpecialPricingProps): JSX.Element =
                   })}
                 </PricingList>
               </CardTopPart>
-              <Description>{chain_and_franchise.special_proposal}</Description>
+              <Description dangerouslySetInnerHTML={{ __html: chain_and_franchise.special_proposal_html }} />
             </Card>
             <Card padding="big">
               <CardTopPart>
@@ -57,7 +57,7 @@ const SpecialPricing = ({ special_pricing }: SpecialPricingProps): JSX.Element =
                   })}
                 </PricingList>
               </CardTopPart>
-              <Description>{dark_kitchen.special_proposal}</Description>
+              <Description dangerouslySetInnerHTML={{ __html: dark_kitchen.special_proposal_html }} />
             </Card>
           </PricingListCards>
           <Card padding="big">
