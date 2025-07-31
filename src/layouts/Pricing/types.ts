@@ -1,6 +1,6 @@
 import { TActionBlock } from "@components/ActionBlock"
 
-type TProposal = {
+type TSellingPoint = {
   title: string
   text: string
 }
@@ -33,7 +33,7 @@ export type THero = {
     tax: string
     period: string
   }
-  proposals: Array<TProposal>
+  selling_points: Array<TSellingPoint>
   included_features: {
     title: string
     description: string

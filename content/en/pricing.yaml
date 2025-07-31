@@ -13,7 +13,7 @@ content:
       price: €35
       tax:
       period:
-    proposals:
+    selling_points:
       - title: Subscription Fee
         text: Excl. VAT / per month / per location
       - title: No Commitment

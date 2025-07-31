@@ -3,9 +3,8 @@ import styled from "styled-components"
 
 import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
 
-export const PriceingBlock = styled.div`
+export const PriceAndSellingPoints = styled.div`
   margin-top: 2.5rem;
-  border-radius: 0.875rem;
   padding-bottom: 2.5rem;
 
   @media (min-width: ${breakpoints.large}) {
@@ -28,7 +27,7 @@ export const Price = styled.div`
   }
 `
 
-export const Proposals = styled.div`
+export const SellingPoints = styled.div`
   margin-top: 1rem;
   padding: 0 1rem;
   display: flex;
@@ -36,15 +35,15 @@ export const Proposals = styled.div`
   row-gap: 1rem;
 `
 
-export const Proposal = styled.div``
+export const SellingPoint = styled.div``
 
-export const ProposalTitle = styled.h4`
+export const SellingPointTitle = styled.h4`
   ${fontSizeMixins.fontSizeTextMd}
   color: ${colors.textDarkest};
   font-weight: 600;
 `
 
-export const ProposalText = styled.p`
+export const SellingPointText = styled.p`
   ${fontSizeMixins.fontSizeTextMd}
 `
 
@@ -86,7 +85,7 @@ export const Feature = styled.div`
 export const FeatureText = styled.span`
   display: inline-block;
   margin-left: 0.875rem;
-  ${fontSizeMixins.fontSizeTextMd}
+  ${fontSizeMixins.fontSizeTextMd};
 
   @media (min-width: ${breakpoints.biggest}) {
     ${fontSizeMixins.fontSizeTextXl}
@@ -98,7 +97,7 @@ export const IconWrapper = styled.div`
   border-radius: 100%;
   width: 1.5rem;
   height: 1.5rem;
-  ${mixin.centerElement}
+  ${mixin.centerElement};
   flex-shrink: 0;
 
   @media (min-width: ${breakpoints.biggest}) {
@@ -108,5 +107,5 @@ export const IconWrapper = styled.div`
 `
 
 export const StyledLink = styled(Link)`
-  ${mixin.link}
+  ${mixin.link};
 `

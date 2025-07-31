@@ -9,11 +9,11 @@ import { THero } from "../types"
 
 import {
   Price,
-  PriceingBlock,
-  Proposals,
-  Proposal,
-  ProposalTitle,
-  ProposalText,
+  PriceAndSellingPoints,
+  SellingPoints,
+  SellingPoint,
+  SellingPointTitle,
+  SellingPointText,
   FeatureBlocks,
   FeatureBlock,
   StyledLink,
@@ -28,7 +28,7 @@ interface HeroProps {
 }
 
 const Hero = ({ hero }: HeroProps): JSX.Element => {
-  const { title, plan, proposals, included_features, additional_features } = hero
+  const { title, plan, selling_points, included_features, additional_features } = hero
 
   return (
     <PageHero
@@ -41,7 +41,7 @@ const Hero = ({ hero }: HeroProps): JSX.Element => {
         </>
       }
     >
-      <PriceingBlock>
+      <PriceAndSellingPoints>
         <Price>
           <p>
             <span>{plan.price}</span> {plan.tax}
@@ -49,17 +49,18 @@ const Hero = ({ hero }: HeroProps): JSX.Element => {
           <p>{plan.period}</p>
         </Price>
         <Underline position="center" />
-        <Proposals>
-          {proposals.map(({ title, text }, index) => {
+        <SellingPoints>
+          {selling_points.map(({ title, text }, index) => {
             return (
-              <Proposal key={index}>
-                <ProposalTitle>{title}</ProposalTitle>
-                <ProposalText>{text}</ProposalText>
-              </Proposal>
+              <SellingPoint key={index}>
+                <SellingPointTitle>{title}</SellingPointTitle>
+                <SellingPointText>{text}</SellingPointText>
+              </SellingPoint>
             )
           })}
-        </Proposals>
-      </PriceingBlock>
+        </SellingPoints>
+      </PriceAndSellingPoints>
+
       <FeatureBlocks>
         <FeatureBlock $isActive={true}>
           <Title>{included_features.title}</Title>
@@ -81,6 +82,7 @@ const Hero = ({ hero }: HeroProps): JSX.Element => {
           </FeaturesList>
           <Button label={included_features.button_label} link={included_features.button_link} />
         </FeatureBlock>
+
         <FeatureBlock $isActive={false}>
           <Title>{additional_features.title}</Title>
           <Description>{additional_features.description}</Description>
