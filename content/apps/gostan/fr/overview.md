@@ -7,10 +7,10 @@ meta:
   title: Présentation générale | GoStan| HubRise
   description: Présentation générale de GoStan, les raisons de le connecter à HubRise et fonctionnalités de l'intégration avec HubRise. Synchronisez et analysez vos données.
 gallery:
-  - __gallery-000.png
-  - __gallery-001.png
-  - __gallery-002.png
-  - __gallery-003.png
+  - __gallery-001.jpg
+  - __gallery-002.jpg
+  - __gallery-003.jpg
+  - __gallery-004.png
 app_info:
   category: Gestion et inventaire
   availability: France
@@ -21,33 +21,36 @@ app_info:
 
 ## Description
 
-GoStan propose une solution innovante de gestion de cave conçue spécifiquement pour les professionnels de la restauration (restaurateurs,sommeliers, food and beverage managers). Accessible en ligne GoStan offre une visibilité complète sur les stocks et un contrôle précis des données, pour simplifier la gestion des vins et boissons, optimiser les opérations, et faire de la vente de boissons un véritable levier de croissance.
+GoStan est une solution en ligne dédiée à la gestion de cave, conçue spécifiquement pour les professionnels de la restauration (restaurateurs, sommeliers, food & beverage managers). 
 
-Gestion de cave centralisée
+Spécialisée dans la gestion des vins, spiritueux et boissons, GoStan offre une visibilité complète sur les stocks et un contrôle précis des données, pour simplifier la gestion et faire de la vente de boissons un levier de croissance.
+
+
+## Fonctionnalités principales
+
+### Gestion de cave centralisée
 - Suivi des mouvements de stock en temps réel
 - Inventaires simplifiés
 - Approvisionnements optimisés
 
-Intégration avec votre logiciel de caisse
+### Connexion avec votre logiciel de caisse
 - Compatible avec de nombreux logiciels de caisse via HubRise ou en direct
-- Synchronisation fluide avec vos outils
-- Mise à jour  ou en temps réel des ventes et des niveaux de stock
+- Synchronisation avec vos outils
+- Mise à jour automatique ou en temps réel des ventes et des niveaux de stock
 
-Analyse avancée de données
+### Analyse des données
 - Tableaux de bord détaillés et intuitifs
-- Suivi des performances en temps réel, avec analyse par produit
+- Analyse des performances par produit, en temps réel
 - Accès permanent à l’historique de vos données
 
-Outils d'aide à la prise de décision
-- Ajustement stratégique des prix pour maximiser vos marges
+### Outils d'aide à la prise de décision
+- Ajustement des prix en fonction des marges
 - Anticipation des tendances saisonnières pour mieux gérer les stocks
 - Identification d’opportunités basées sur les comportements d’achat
 
-Créé par et pour les restaurateurs, GoStan se démarque par sa spécialisation sur le segment des vins et boissons, ainsi que sa compréhension profonde des enjeux liés à la gestion de la donnée. Notre solution répond aux besoins spécifiques des restaurants souhaitant valoriser leur offre de vins et spiritueux tout en optimisant leur gestion de stock.
+Développée avec une connaissance métier fine, GoStan répond aux besoins spécifiques des établissements souhaitant valoriser leur offre de boissons tout en conservant un pilotage simple et adapté à leur réalité opérationnelle.
 
-Pensée pour s’adapter au fonctionnement quotidien des restaurateurs, GoStan propose une prise en main allégée. L’équipe GoStan prend en charge l’intégration de l’inventaire et la connexion avec le logiciel de caisse, afin de limiter les tâches administratives et techniques pour les utilisateurs.
-
-Les spécificités de chaque établissement sont prises en compte pour ajuster le paramétrage et garantir une utilisation adaptée aux besoins du terrain.
+L’équipe GoStan accompagne la mise en place de la solution, de la connexion avec le système de caisse à l’import initial de l’inventaire. Le paramétrage peut être ajusté en fonction des particularités de chaque restaurant, pour une intégration fluide dans l’environnement existant.
 
 ## Fonctionnalités de l'intégration
 
@@ -59,7 +62,7 @@ GoStan peut être connecté à HubRise via le support de GoStan.
 
 ## Pourquoi se connecter ?
 
-n connectant GoStan à HubRise, votre solution de gestion de cave peut communiquer avec les autres applications que vous utilisez au quotidien.
+En connectant GoStan à HubRise, votre solution de gestion de cave peut communiquer avec les autres applications que vous utilisez au quotidien.
 Recevez dans GoStan les commandes issues de votre site de commande en ligne ou de votre logiciel de caisse.
 Aspirez le catalogue produit de votre logiciel de caisse dans GoStan, où il pourra être exploité pour optimiser vos stocks et vos ventes de boissons.
 

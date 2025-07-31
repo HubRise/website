@@ -698,6 +698,12 @@ content:
           title: Apicbase
           description: Apicbase est un logiciel de gestion pour les restaurants et les hôtels à plusieurs points de vente. Apicbase vous permet de contrôler les coûts des produits finis, l'inventaire et les achats. Vos données sont disponibles à tout moment, où que vous soyez et sur tout type d'appareil.
           additional_info:
+        - website: https://gostan.io
+          documentation: /fr/apps/gostan
+          logo: gostan.png
+          country: FR
+          title: GoStan
+          description: GoStan est une solution en ligne de gestion de cave pour les professionnels de la restauration. GoStan permet de suivre les stocks, simplifier les inventaires et analyser les ventes de boissons pour optimiser la gestion et stimuler la croissance.
         - website: https://www.foodreport.fr
           documentation: /fr/apps/foodreport
           logo: foodreport.png
