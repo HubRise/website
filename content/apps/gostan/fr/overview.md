@@ -21,45 +21,33 @@ app_info:
 
 ## Description
 
-GoStan propose une solution innovante de gestion de cave conçue spécifiquement pour les professionnels de la restauration (restaurateurs,sommeliers, food and beverage managers).
-Notre plateforme accessible en ligne vous offre une visibilité complète sur vos stocks ainsi qu’un contrôle précis de vos données, vous permettant de prendre des décisions éclairées et d'optimiser chaque aspect de la gestion de vos vins et boissons.
-Notre mission : Simplifier la gestion de cave et donner les moyens aux restaurateurs de faire de la vente de boissons leur premier levier de croissance.
-
-Fonctionnalités
+GoStan propose une solution innovante de gestion de cave conçue spécifiquement pour les professionnels de la restauration (restaurateurs,sommeliers, food and beverage managers). Accessible en ligne GoStan offre une visibilité complète sur les stocks et un contrôle précis des données, pour simplifier la gestion des vins et boissons, optimiser les opérations, et faire de la vente de boissons un véritable levier de croissance.
 
 Gestion de cave centralisée
-- Suivi des mouvements de stock en en temps réel
-- Simplification du processus d’inventaire 
-- Optimisation des approvisionnements
+- Suivi des mouvements de stock en temps réel
+- Inventaires simplifiés
+- Approvisionnements optimisés
 
 Intégration avec votre logiciel de caisse
-- GoStan se connecte avec plus de 30 solutions de caisse différentes
-- Synchronisation fluide et sans effort à vos outils
-- Mise à jour quotidienne de vos données de vente et niveaux de stock
+- Compatible avec de nombreux logiciels de caisse via HubRise ou en direct
+- Synchronisation fluide avec vos outils
+- Mise à jour  ou en temps réel des ventes et des niveaux de stock
 
 Analyse avancée de données
 - Tableaux de bord détaillés et intuitifs
-- Suivi de vos performances en temps réel et analyse de vos ratios par produit
-- Historique de vos données accessible en tout temps
+- Suivi des performances en temps réel, avec analyse par produit
+- Accès permanent à l’historique de vos données
 
 Outils d'aide à la prise de décision
 - Ajustement stratégique des prix pour maximiser vos marges
-- Anticipation des tendances saisonnières pour gérer votre approvisionnement
-- Identification d’opportunités additionnelles basées sur les comportements d’achat.
-- 
-Pourquoi choisir GoStan ?
+- Anticipation des tendances saisonnières pour mieux gérer les stocks
+- Identification d’opportunités basées sur les comportements d’achat
+
 Créé par et pour les restaurateurs, GoStan se démarque par sa spécialisation sur le segment des vins et boissons, ainsi que sa compréhension profonde des enjeux liés à la gestion de la donnée. Notre solution répond aux besoins spécifiques des restaurants souhaitant valoriser leur offre de vins et spiritueux tout en optimisant leur gestion de stock.
 
-Une solution clé en main
-Nous comprenons que les restaurateurs n’aient ni l’envie ni le temps de passer des heures derrière un écran d’ordinateur. Votre cœur et votre plus-value sont ailleurs : en salle, auprès de votre équipe, de vos clients et avec les producteurs. C'est pourquoi nous prenons en charge l’intégration de votre inventaire ainsi que la connexion avec votre logiciel de caisse pour vous fournir une solution clé en main.
+Pensée pour s’adapter au fonctionnement quotidien des restaurateurs, GoStan propose une prise en main allégée. L’équipe GoStan prend en charge l’intégration de l’inventaire et la connexion avec le logiciel de caisse, afin de limiter les tâches administratives et techniques pour les utilisateurs.
 
-Un service sur mesure
-Parce que chaque restaurant est unique, nous nous adaptons aux spécificités de votre établissement pour vous offrir une solution parfaitement adaptée à vos besoins.
-
-Commencer avec GoStan
-L’intégration de la solution GoStan dans votre établissement est simple et sans contrainte. Notre équipe s'occupe de tout : depuis l'importation initiale de votre inventaire jusqu'à la connexion avec votre système de caisse. Vous pouvez vous concentrer sereinement sur votre cœur de métier pendant que nous nous chargeons de l'aspect technique.
-Transformez la gestion de votre cave en un véritable atout pour votre établissement avec GoStan.
-
+Les spécificités de chaque établissement sont prises en compte pour ajuster le paramétrage et garantir une utilisation adaptée aux besoins du terrain.
 
 ## Fonctionnalités de l'intégration
 
