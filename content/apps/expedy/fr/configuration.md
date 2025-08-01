@@ -8,7 +8,7 @@ meta:
   description: Configurer Expedy pour recevoir vos commandes Expedy dans votre logiciel de caisse ou d'autres applications connectées à HubRise.
 ---
 
-Le back-office de Expedy permet de configurer le comportement de l'imprimante et la mise en page de vos impressions.
+Le back-office d’Expedy permet de configurer le comportement de l’imprimante ainsi que la mise en page de vos impressions. Vous trouverez des informations utiles sur cette page. Pour en savoir plus sur la configuration de votre imprimante, n’hésitez pas à consulter la [documentation en ligne d'Expedy](https://www.expedy.io/fr/docs/category/cms-plugins/hubrise).
 
 ## Paramètres HubRise
 
