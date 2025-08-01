@@ -53,12 +53,10 @@ export const InnerContainer = styled.div`
   }
 `
 
-export const LogoContainer = styled.div<{ $moveShift: number; $nbCards: number }>`
+export const LogoContainer = styled.div<{ $nbRows: number; $nbCols: number; $moveShift: number }>`
   display: grid;
-  // In some cases when removing or adding new app probably need to change Math.ceil for repeat function
-  // E.g. Math.ceil($nbCards / 3) or Math.ceil($nbCards / 3 + 1)
-  grid-template-columns: repeat(${({ $nbCards }) => Math.ceil($nbCards / 3)}, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(${({ $nbCols }) => $nbCols}, 1fr);
+  grid-template-rows: repeat(${({ $nbRows }) => $nbRows}, 1fr);
   gap: 0.75rem;
   position: relative;
   width: fit-content;

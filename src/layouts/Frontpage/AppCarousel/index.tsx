@@ -23,11 +23,24 @@ const AppCarousel = ({ apps, appLogosMap }: AppCarouselProps): JSX.Element => {
     }
   }, [])
 
+  // - Duplicate each app `nbRows` time, to ensure they fill the grid entirely
+  // - Interleave the apps using a top to bottom, left to right pattern
+  const nbRows = 3
+  const nbCols = apps.length
+  const interleavedApps = []
+
+  for (let row = 0; row < nbRows; row++) {
+    for (let col = 0; col < nbCols; col++) {
+      const appIndex = (row + col * nbRows) % apps.length
+      interleavedApps.push(apps[appIndex])
+    }
+  }
+
   return (
     <Container>
       <InnerContainer ref={innerContainerWidth}>
-        <LogoContainer ref={logoContainerWidth} $moveShift={moveShiftWidth} $nbCards={apps.length}>
-          {apps.map(({ logo }, index) => {
+        <LogoContainer ref={logoContainerWidth} $nbRows={nbRows} $nbCols={nbCols} $moveShift={moveShiftWidth}>
+          {interleavedApps.map(({ logo }, index) => {
             return (
               <AppCard key={index}>
                 <Image
