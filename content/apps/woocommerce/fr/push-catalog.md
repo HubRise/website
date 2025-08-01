@@ -71,26 +71,33 @@ Si la case à cocher **Mettre à jour les prix des produits existants** est sél
 
 Les produits d'un catalogue HubRise sont associés à WooCommerce de deux façons différentes.
 
-- Un produit HubRise sans SKU est associé à un **Produit simple** dans WooCommerce.
-- Un produit HubRise avec des SKUs est associé à un **Produit variable** dans WooCommerce.
+- Les produits HubRise mono-SKU sont associés à des **produits simples**.
+- Les produits HubRise multi-SKU sont associés à des **produits variables**.
 
-Pour chaque produit d'un catalogue HubRise, les informations suivantes sont envoyées à WooCommerce.
+Pour chaque produit du catalogue HubRise, les informations suivantes sont envoyées à WooCommerce :
 
-- `ref` : code ref du produit, transmis dans les commandes
 - `name` : nom du produit
 - `description` : description du produit
-- `price` : prix du produit
 - `images` : images associées au produit
 
-Si des SKUs sont présents, WooCommerce Bridge crée une liste d'attributs et des variations, et les attache au produit. Le nom de la liste est la valeur configurée dans **Clé(s) de métadonnées nom de la SKU** sur la page de configuration du bridge. Les variations sont les noms des SKUs.
+#### Produits mono-SKU
 
-Pour chaque objet `sku` dans un produit, WooCommerce Bridge crée une variante avec ces informations :
+Les produits mono-SKU reçoivent également ces informations :
 
-- `ref` : code ref de la SKU, transmis dans les commandes
-- `name` : nom de la SKU
-- `price` : prix de la SKU
+- `ref` : le code ref de la SKU unique, qui est transmis dans les commandes
+- `price` : le prix de la SKU
+- `barcodes` : le premier code-barres de la SKU, si elle en possède
 
-Les listes d'options rattachées aux produits HubRise sont ignorées.
+#### Produits multi-SKU
+
+Si le produit a plusieurs SKUs, WooCommerce Bridge crée une liste d'attributs et de variations, et les associe au produit. Le nom de la liste est la valeur configurée dans **Clé(s) de métadonnées nom de la SKU** sur la page de configuration du bridge. Les variations sont les noms des SKUs.
+
+Pour chaque objet `sku` dans un produit, WooCommerce Bridge crée une variation avec ces informations :
+
+- `ref` : le code ref de la SKU, transmis dans les commandes
+- `name` : le nom de la SKU
+- `price` : le prix de la SKU
+- `barcodes` : le premier code-barres de la SKU, si elle en possède
 
 Pour plus d'informations sur les produits et les SKU dans les catalogues HubRise, voir notre documentation API, rubriques [Products](/developers/api/catalogs#products) et [Skus](/developers/api/catalogs#skus) (en anglais).
 
