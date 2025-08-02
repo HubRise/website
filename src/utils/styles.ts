@@ -24,6 +24,7 @@ export const fontSizes = {
   _24: "1.5rem",
   _32: "2rem",
   _42: "2.625rem",
+  _66: "4.125rem",
 }
 
 export const iconSizes = {
@@ -95,61 +96,37 @@ export const boxShadows = {
 }
 
 export const fontSizeMixins = {
-  fontSizeTextSm: css`
+  text14: css`
     font-size: ${fontSizes._14};
     line-height: 1.25rem;
   `,
-  fontSizeTextMd: css`
+  text16: css`
     font-size: ${fontSizes._16};
     line-height: 1.5rem;
   `,
-  fontSizeTextLg: css`
+  text18: css`
     font-size: ${fontSizes._18};
     line-height: 1.625rem;
   `,
-  fontSizeTextXl: css`
+  text20: css`
     font-size: ${fontSizes._20};
     line-height: 1.875rem;
   `,
-  fontSizeText2Xl: css`
+  text24: css`
     font-size: ${fontSizes._24};
     line-height: 2rem;
   `,
-
-  fontSizeDisplaySm: css`
+  text32: css`
     font-size: ${fontSizes._32};
     line-height: 2.5rem;
   `,
-  fontSizeDisplayMd: css`
+  text36: css`
     font-size: 2.25rem;
     line-height: 2.75rem;
-  `,
-  fontSizeDisplayLg: css`
-    font-size: 3rem;
-    line-height: 3.75rem;
-  `,
-  fontSizeDisplayXl: css`
-    font-size: 4.125rem;
-    line-height: 4.75rem;
-  `,
-  fontSizeDisplay2Xl: css`
-    font-size: 4.5rem;
-    line-height: 5.125rem;
   `,
 }
 
 export const mixin = {
-  link: css`
-    ${fontSizeMixins.fontSizeTextMd};
-    font-weight: 600;
-    color: ${colors.primary};
-    text-decoration: underline;
-    transition: color 0.2s ease;
-
-    &:hover {
-      color: ${colors.textDarkest};
-    }
-  `,
   buttonOver: (color: string, backgroundColor: string): RuleSet => css`
     transition:
       color 0.2s ease,
@@ -198,29 +175,27 @@ export const mixin = {
     }
   `,
   description: css`
-    ${fontSizeMixins.fontSizeTextMd}
+    ${fontSizeMixins.text16}
     margin-top: 1rem;
-
     @media (min-width: ${breakpoints.large}) {
-      ${fontSizeMixins.fontSizeTextXl}
+      ${fontSizeMixins.text20}
     }
   `,
   cardText: css`
-    ${fontSizeMixins.fontSizeTextMd}
+    ${fontSizeMixins.text16}
     margin-top: 0.625rem;
   `,
   smallCardTitle: css`
-    ${fontSizeMixins.fontSizeTextXl}
+    ${fontSizeMixins.text20}
     font-weight: 600;
     color: ${colors.textDarkest};
   `,
   cardTitle: css`
-    ${fontSizeMixins.fontSizeText2Xl}
+    ${fontSizeMixins.text24}
     font-weight: 600;
     color: ${colors.textDarkest};
-
     @media (min-width: ${breakpoints.large}) {
-      ${fontSizeMixins.fontSizeDisplaySm}
+      ${fontSizeMixins.text32}
     }
   `,
   containerWrapper: css`

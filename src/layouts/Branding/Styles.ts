@@ -21,7 +21,8 @@ export const ContentWrapper = styled.div`
     }
 
     a {
-      ${mixin.link}
+      color: ${colors.primary};
+      ${mixin.linkOver(colors.textDarkest)};
     }
 
     h4 {

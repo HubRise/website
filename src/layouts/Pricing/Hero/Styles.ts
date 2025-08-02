@@ -95,5 +95,6 @@ export const IconWrapper = styled.div`
 `
 
 export const StyledLink = styled(Link)`
-  ${mixin.link};
+  color: ${colors.primary};
+  ${mixin.linkOver(colors.textDarkest)};
 `

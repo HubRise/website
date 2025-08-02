@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 import { buttonStyles, StyledButton } from "@components/Button/Styles"
 import { StyledCard } from "@components/Card/Styles"
-import { breakpoints, mixin } from "@utils/styles"
+import { breakpoints, colors, mixin } from "@utils/styles"
 
 export const Cards = styled.div`
   display: grid;
@@ -39,7 +39,10 @@ export const Buttons = styled.div`
 `
 
 export const Email = styled.a`
-  ${mixin.link}
+  color: ${colors.primary};
+  text-decoration: underline;
+  font-weight: 600;
+  ${mixin.linkOver(colors.textDarkest)};
 `
 
 export const ExternalLink = styled.a`
