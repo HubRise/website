@@ -8,36 +8,41 @@ import { Route, RouteName } from "@utils/router/types"
 
 const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Element> => {
   const yaml = route.context.yaml
-  const teamFilenames = yaml.content.developers.team_members.map((member) => member.filename)
+  const appLogos: Array<string> = yaml.content.app_carousel.map((app) => app.logo)
+  const featuresImages: Array<string> = yaml.content.features.features_cards.map((feature) => feature.image)
+
+  const testimonials = route.testimonials.yaml
+  const testimonialLogos: Array<string> = testimonials.content.testimonials.map((t) => t.person_details.logo)
 
   const [
     heroDescriptionMdx,
-    appsDescriptionMdx,
-    apiDescriptionMdx,
-    documentationDescriptionMdx,
+    appLogosMap,
+    featuresDescriptionMdx,
+    featuresImagesMap,
     pricingDescriptionMdx,
-    developersDescriptionMdx,
-    teamImageMap,
+    partnersDescriptionMdx,
+    testimonialLogoMap,
   ] = await Promise.all([
     serializeFrontpage(yaml.hero.description),
-    serializeFrontpage(yaml.content.apps.description),
-    serializeFrontpage(yaml.content.api.description),
-    serializeFrontpage(yaml.content.documentation.description),
+    contentImageMap("/images/app-logos", appLogos),
+    serializeFrontpage(yaml.content.features.description),
+    contentImageMap("/images/frontpage/proposals", featuresImages),
     serializeFrontpage(yaml.content.pricing.description),
-    serializeFrontpage(yaml.content.developers.description),
-    contentImageMap("/images/team", teamFilenames),
+    serializeFrontpage(yaml.content.partners.description),
+    contentImageMap("/images/app-logos", testimonialLogos),
   ])
 
   return (
     <Frontpage
       yaml={yaml}
       heroDescriptionMdx={heroDescriptionMdx}
-      appsDescriptionMdx={appsDescriptionMdx}
-      apiDescriptionMdx={apiDescriptionMdx}
-      documentationDescriptionMdx={documentationDescriptionMdx}
+      appLogosMap={appLogosMap}
+      featuresDescriptionMdx={featuresDescriptionMdx}
+      featuresImagesMap={featuresImagesMap}
       pricingDescriptionMdx={pricingDescriptionMdx}
-      developersDescriptionMdx={developersDescriptionMdx}
-      teamImageMap={teamImageMap}
+      partnersDescriptionMdx={partnersDescriptionMdx}
+      testimonials={testimonials}
+      testimonialLogoMap={testimonialLogoMap}
     />
   )
 }

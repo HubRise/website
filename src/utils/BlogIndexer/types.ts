@@ -24,7 +24,3 @@ export interface BlogMdFile {
   content: string
   bannerFileName?: string
 }
-
-export interface BlogArchives {
-  years: Array<{ year: number; uri: Href }>
-}
