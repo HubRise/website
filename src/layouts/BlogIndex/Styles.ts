@@ -9,8 +9,12 @@ export const Posts = styled.div`
   grid-template-columns: 1fr;
   gap: 1.25rem;
 
+  @media (min-width: ${breakpoints.medium}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @media (min-width: ${breakpoints.large}) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 
     ${StyledCard} {
       &:nth-child(3n + 2) {

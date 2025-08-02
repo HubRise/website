@@ -2,7 +2,7 @@ import Link from "next/link"
 import styled from "styled-components"
 
 import { StyledButton } from "@components/Button/Styles"
-import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, fontSizes } from "@utils/styles"
 
 export const GetInTouchMainQuestion = styled.h4``
 export const GetInTouchText = styled.div``
@@ -30,8 +30,7 @@ export const LinkName = styled.p`
 `
 
 export const LinkDescription = styled.span`
-  color: ${colors.textDark};
-  ${fontSizeMixins.text14};
+  font-size: ${fontSizes._14};
 `
 
 export const GetInTouchCard = styled.div`

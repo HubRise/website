@@ -1,16 +1,12 @@
 import Link from "next/link"
 import styled, { css } from "styled-components"
 
-import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
+import { colors, fontSizes, mixin } from "@utils/styles"
 
 export const Header = styled.h4`
   font-weight: 600;
   margin-bottom: 1rem;
   text-align: left;
-
-  @media (min-width: ${breakpoints.large}) {
-    ${fontSizeMixins.text18};
-  }
 `
 
 export const HeaderUnderline = styled.div`
@@ -28,7 +24,7 @@ export const List = styled.ul`
 `
 
 export const Item = styled.li`
-  ${fontSizeMixins.text14};
+  font-size: ${fontSizes._14};
 `
 
 const linkMixin = css`

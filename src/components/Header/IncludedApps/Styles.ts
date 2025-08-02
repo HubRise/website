@@ -2,7 +2,7 @@ import Link from "next/link"
 import styled from "styled-components"
 
 import { StyledIcon } from "@components/Icon/Styles"
-import { colors, fontSizeMixins, mixin } from "@utils/styles"
+import { colors, fontSizes, mixin } from "@utils/styles"
 
 export const AppList = styled.div`
   padding: 0.5rem;
@@ -28,7 +28,7 @@ export const AppTitle = styled.h4`
 `
 
 export const AppDescription = styled.p`
-  ${fontSizeMixins.text14};
+  font-size: ${fontSizes._14};
 `
 
 export const AppLink = styled.span`

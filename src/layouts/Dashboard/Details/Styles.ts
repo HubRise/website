@@ -56,7 +56,6 @@ export const ContentBlock = styled.div<{ $activeDetailsView: number }>`
 
   p,
   ul {
-    ${fontSizeMixins.text14}
     margin-top: 1.25rem;
   }
 

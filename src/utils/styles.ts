@@ -96,10 +96,6 @@ export const boxShadows = {
 }
 
 export const fontSizeMixins = {
-  text14: css`
-    font-size: ${fontSizes._14};
-    line-height: 1.25rem;
-  `,
   text18: css`
     font-size: ${fontSizes._18};
     line-height: 1.625rem;
