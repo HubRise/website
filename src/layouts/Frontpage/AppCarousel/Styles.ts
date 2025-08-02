@@ -35,7 +35,7 @@ export const CarouselViewport = styled.div`
     width: 7.625rem;
     height: 100%;
     padding: 1.875rem 0;
-    z-index: ${zIndexValues.appsLogosGradient};
+    z-index: 1;
   }
 
   &::before {
