@@ -6,7 +6,7 @@
 - title: Products
   to: /
   content:
-    products:
+    included_apps:
       - title: OrderLine
         description: Centralise your orders
         link_label: Find out more

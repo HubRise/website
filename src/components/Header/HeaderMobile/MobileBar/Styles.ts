@@ -8,9 +8,9 @@ import {
   ExpandIconWrapper,
 } from "@components/Accordion/Styles"
 import { StyledButton } from "@components/Button/Styles"
-import { ProductsList } from "@components/Header/Products/Styles"
+import { AppList } from "@components/Header/IncludedApps/Styles"
 import Icon from "@components/Icon"
-import { breakpoints, colors, fontSizeMixins, fontSizes, mixin, sizes, zIndexValues } from "@utils/styles"
+import { breakpoints, colors, fontSizes, mixin, sizes, zIndexValues } from "@utils/styles"
 
 export const StyledMobileBar = styled.div`
   @media (min-width: ${breakpoints.burgerMenu}) {
@@ -61,7 +61,7 @@ export const Nav = styled.div`
     }
 
     h4 {
-      ${fontSizeMixins.text16}
+      font-size: ${fontSizes._16};
       color: ${colors.textDark};
     }
 
@@ -71,7 +71,7 @@ export const Nav = styled.div`
     }
   }
 
-  ${ProductsList} {
+  ${AppList} {
     padding-left: 0;
     padding-right: 0;
   }
@@ -79,11 +79,9 @@ export const Nav = styled.div`
 
 export const NavLink = styled(Link)<{ $isActive: boolean }>`
   display: block;
-  width: 100%;
-  ${fontSizeMixins.text16}
+  padding: 0.75rem 0;
   font-weight: 600;
   color: ${colors.textDark};
-  padding: 0.75rem 0;
   ${mixin.linkOver(colors.primary)};
 
   ${({ $isActive }) =>
@@ -107,7 +105,6 @@ export const Buttons = styled.div`
 export const LanguageList = styled.ul`
   display: flex;
   gap: 1.5rem;
-  ${fontSizeMixins.text16}
   padding: 0.75rem 0;
 
   li {

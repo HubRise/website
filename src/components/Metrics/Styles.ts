@@ -40,7 +40,6 @@ export const Number = styled.span`
 `
 
 export const Text = styled.span`
-  ${fontSizeMixins.text16}
   text-align: center;
 
   @media (min-width: ${breakpoints.large}) {

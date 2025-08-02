@@ -3,7 +3,7 @@ import { usePathname } from "next/navigation"
 
 import Accordion from "@components/Accordion"
 import Button from "@components/Button"
-import Products from "@components/Header/Products"
+import IncludedApps from "@components/Header/IncludedApps"
 import Resources from "@components/Header/Resources"
 import useClientRoutes from "@hooks/client/useClientRoutes"
 import useTranslation from "@hooks/client/useTranslation"
@@ -61,8 +61,8 @@ const MobileBar = ({ languagePaths, menuItems, isOpen, close }: MobileBarProps):
               <div key={idx}>
                 {content ? (
                   <Accordion title={title}>
-                    {content.products?.length && <Products products={content?.products} />}
-                    {content.resources && <Resources resources={content?.resources} />}
+                    {content.included_apps?.length && <IncludedApps included_apps={content.included_apps} />}
+                    {content.resources && <Resources resources={content.resources} />}
                   </Accordion>
                 ) : (
                   <NavLink href={to} onClick={close} $isActive={isActive}>

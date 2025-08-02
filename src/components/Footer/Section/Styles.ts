@@ -7,7 +7,6 @@ export const Header = styled.h4`
   font-weight: 600;
   margin-bottom: 1rem;
   text-align: left;
-  ${fontSizeMixins.text16};
 
   @media (min-width: ${breakpoints.large}) {
     ${fontSizeMixins.text18};

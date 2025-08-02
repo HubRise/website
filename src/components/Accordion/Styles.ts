@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components"
 
 import { StyledIcon } from "@components/Icon/Styles"
-import { colors, fontSizeMixins, mixin } from "@utils/styles"
+import { colors, fontSizes, mixin } from "@utils/styles"
 
 export const StyledAccordion = styled.div`
   color: ${colors.textDarkest};
@@ -26,7 +26,7 @@ export const TitleWrapper = styled.div<{ $isExpanded: boolean | undefined }>`
 `
 
 export const Title = styled.h4`
-  ${fontSizeMixins.text18}
+  font-size: ${fontSizes._18};
   font-weight: 600;
 `
 
@@ -38,7 +38,6 @@ export const ContentWrapper = styled.div<{ $maxHeight: number | undefined; $isEx
 `
 
 export const Content = styled.div`
-  ${fontSizeMixins.text16}
   margin-top: 0.25rem;
 `
 

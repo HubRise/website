@@ -87,7 +87,6 @@ export const StyledContainer = styled.div`
   ul,
   ol {
     margin-bottom: ${paragraphSpacing};
-    ${fontSizeMixins.text16};
   }
 
   p + ul,

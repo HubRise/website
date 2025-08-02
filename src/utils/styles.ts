@@ -100,10 +100,6 @@ export const fontSizeMixins = {
     font-size: ${fontSizes._14};
     line-height: 1.25rem;
   `,
-  text16: css`
-    font-size: ${fontSizes._16};
-    line-height: 1.5rem;
-  `,
   text18: css`
     font-size: ${fontSizes._18};
     line-height: 1.625rem;
@@ -175,14 +171,16 @@ export const mixin = {
     }
   `,
   description: css`
-    ${fontSizeMixins.text16}
+    font-size: ${fontSizes._16};
+    line-height: 1.5rem;
     margin-top: 1rem;
     @media (min-width: ${breakpoints.large}) {
       ${fontSizeMixins.text20}
     }
   `,
   cardText: css`
-    ${fontSizeMixins.text16}
+    font-size: ${fontSizes._16};
+    line-height: 1.5rem;
     margin-top: 0.625rem;
   `,
   smallCardTitle: css`

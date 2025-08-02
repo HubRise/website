@@ -1,4 +1,4 @@
-export type TProduct = {
+export type TIncludedApp = {
   title: string
   description: string
   link_label: string
@@ -24,7 +24,7 @@ export interface IHeaderLink {
   title: string
   to: string
   content?: {
-    products?: Array<TProduct>
+    included_apps?: Array<TIncludedApp>
     resources?: TResources
   }
   mobile_only?: boolean

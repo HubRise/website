@@ -1,7 +1,7 @@
 import Link from "next/link"
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, fontSizes, mixin } from "@utils/styles"
 
 export const PriceAndSellingPoints = styled.div`
   margin: 2.5rem 0;
@@ -13,17 +13,14 @@ export const PriceAndSellingPoints = styled.div`
 `
 
 export const Price = styled.div`
-  ${fontSizeMixins.text16}
-  font-weight: 500;
-  font-size: 3.75rem;
-  line-height: 4rem;
+  font-size: ${fontSizes._66};
+  line-height: 1;
   font-weight: 600;
   color: ${colors.textDarkest};
   letter-spacing: -2px;
 `
 
 export const Period = styled.div`
-  ${fontSizeMixins.text16}
   font-weight: 500;
 `
 
@@ -43,9 +40,7 @@ export const SellingPointTitle = styled.h4`
   font-weight: 600;
 `
 
-export const SellingPointText = styled.p`
-  ${fontSizeMixins.text16};
-`
+export const SellingPointText = styled.p``
 
 export const FeatureBlocks = styled.div`
   @media (min-width: ${breakpoints.large}) {
@@ -82,7 +77,6 @@ export const Feature = styled.div`
 export const FeatureText = styled.span`
   display: inline-block;
   margin-left: 0.875rem;
-  ${fontSizeMixins.text16};
 `
 
 export const IconWrapper = styled.div`

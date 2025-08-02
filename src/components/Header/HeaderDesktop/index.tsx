@@ -12,7 +12,7 @@ import useTranslation from "@hooks/client/useTranslation"
 import type { LanguagePaths } from "@utils/locales"
 
 import Dropdown from "../Dropdown"
-import Products from "../Products"
+import IncludedApps from "../IncludedApps"
 import Resources from "../Resources"
 import { IHeaderLink } from "../shared/types"
 import { isHeaderLinkActive } from "../shared/utils"
@@ -49,8 +49,8 @@ const HeaderDesktop = ({ languagePaths, menuItems }: HeaderDesktopProps): JSX.El
                     value={title}
                     menuContent={
                       <>
-                        {content.products?.length && <Products products={content?.products} />}
-                        {content.resources && <Resources resources={content?.resources} />}
+                        {content.included_apps?.length && <IncludedApps included_apps={content.included_apps} />}
+                        {content.resources && <Resources resources={content.resources} />}
                       </>
                     }
                     position={content.resources ? "bigMenu" : "left"}

@@ -2,7 +2,7 @@ import Link from "next/link"
 import styled, { css } from "styled-components"
 
 import { StyledIcon } from "@components/Icon/Styles"
-import { colors, fontSizeMixins, mixin } from "@utils/styles"
+import { colors, mixin } from "@utils/styles"
 
 import { TPosition } from "./index"
 
@@ -16,7 +16,6 @@ export const DropdownTrigger = styled.div<{ $isOpen: boolean }>`
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  ${fontSizeMixins.text16};
   font-weight: 500;
   ${mixin.clickable};
   ${mixin.linkOver(colors.primary)};
@@ -71,14 +70,13 @@ export const DropdownList = styled.ul`
 `
 
 export const DropdownListItem = styled.li<{ $isActive: boolean }>`
-  ${fontSizeMixins.text16};
-  font-weight: 600;
   padding: 0.5rem;
-  border-radius: 0.5rem;
-  color: ${colors.textDarkest};
   display: flex;
-  align-items: center;
   gap: 0.5rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  font-weight: 600;
+  color: ${colors.textDarkest};
   ${mixin.linkOver(colors.primary)}
 
   ${({ $isActive }) =>

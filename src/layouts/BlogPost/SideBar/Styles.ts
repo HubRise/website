@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { buttonStyles, StyledButton } from "@components/Button/Styles"
 import { StyledCard } from "@components/Card/Styles"
 import { StyledIcon } from "@components/Icon/Styles"
-import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
+import { breakpoints, colors } from "@utils/styles"
 
 export const StyledSideBar = styled.div`
   width: 100%;
@@ -80,7 +80,6 @@ export const PostLink = styled(Link)`
 `
 
 export const PostLinkText = styled.span`
-  ${fontSizeMixins.text16}
   font-weight: 600;
   color: #636363;
 `

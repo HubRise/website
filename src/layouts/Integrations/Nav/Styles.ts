@@ -2,7 +2,7 @@ import styled, { css } from "styled-components"
 
 import Icon from "@components/Icon"
 import { StyledIcon } from "@components/Icon/Styles"
-import { colors, mixin, sizes, zIndexValues, iconSizes, boxShadows, breakpoints, fontSizeMixins } from "@utils/styles"
+import { colors, mixin, sizes, zIndexValues, iconSizes, boxShadows, breakpoints, lineHeights } from "@utils/styles"
 
 export const StyledNav = styled.div<{ $isSticky: boolean }>`
   position: sticky;
@@ -72,7 +72,6 @@ export const FilterWrapper = styled.div`
   align-items: center;
   cursor: pointer;
   font-size: 1rem;
-  line-height: 1;
 
   @media (min-width: ${breakpoints.large}) {
     margin-left: 1rem;
@@ -147,7 +146,7 @@ export const FilterListItem = styled.li<{ $isActive: boolean }>`
   ${mixin.clickable}
   background-color: ${({ $isActive }) => ($isActive ? colors.backgroundLight : colors.backgroundWhite)};
   color: ${colors.textDarkest};
-  ${fontSizeMixins.text16}
+  line-height: ${lineHeights.compact};
 
   &:hover {
     background-color: ${colors.backgroundLight};

@@ -27,7 +27,6 @@ export const ResourcesLink = styled(Link)`
 export const LinkName = styled.p`
   color: ${colors.textDarkest};
   font-weight: 600;
-  ${fontSizeMixins.text16};
 `
 
 export const LinkDescription = styled.span`

@@ -45,9 +45,7 @@ export const PricingListItem = styled.div`
   }
 `
 
-export const PriceDescription = styled.span`
-  ${fontSizeMixins.text16}
-`
+export const PriceDescription = styled.span``
 
 export const Price = styled.span`
   ${fontSizeMixins.text20}
