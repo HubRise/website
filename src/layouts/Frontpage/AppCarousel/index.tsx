@@ -18,7 +18,6 @@ const AppCarousel = ({ apps, appLogosMap }: AppCarouselProps): JSX.Element => {
 
   useLayoutEffect(() => {
     setMaxTranslate(appGridRef!.current!.clientWidth / 2)
-    console.log("appGridRef!.current!.clientWidth = ", appGridRef!.current!.clientWidth)
   }, [])
 
   // - Duplicate each app `nbRows` time, to ensure they fill the grid entirely
