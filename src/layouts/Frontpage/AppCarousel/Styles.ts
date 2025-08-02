@@ -2,15 +2,12 @@ import styled, { css, keyframes } from "styled-components"
 
 import { boxShadows, breakpoints, colors, mixin, zIndexValues } from "@utils/styles"
 
-const move = (moveShift: number) => keyframes`
-  0% {
-    left: 0;
+const translateGrid = (maxTranslate: number) => keyframes`
+  from {
+    transform: translateX(0);
   }
-  50% {
-    left: -${moveShift}px;
-  }
-  100% {
-    left: 0;
+  to {
+    transform: translateX(-${maxTranslate}px);
   }
 `
 
@@ -25,9 +22,8 @@ export const Container = styled.div`
 
 export const CarouselViewport = styled.div`
   max-width: ${breakpoints.biggest};
-  margin: 0 auto;
+  margin: 0 auto -2rem auto;
   padding-bottom: 4rem;
-  margin-bottom: -2rem;
   overflow: hidden;
   position: relative;
 
@@ -53,7 +49,7 @@ export const CarouselViewport = styled.div`
   }
 `
 
-export const AppGrid = styled.div<{ $nbRows: number; $nbCols: number; $moveShift: number }>`
+export const AppGrid = styled.div<{ $nbRows: number; $nbCols: number; $maxTranslate: number }>`
   display: grid;
   grid-template-columns: repeat(${({ $nbCols }) => $nbCols}, 1fr);
   grid-template-rows: repeat(${({ $nbRows }) => $nbRows}, 1fr);
@@ -61,22 +57,18 @@ export const AppGrid = styled.div<{ $nbRows: number; $nbCols: number; $moveShift
   position: relative;
   width: fit-content;
 
-  ${({ $moveShift }) =>
-    $moveShift > 0 &&
+  ${({ $nbCols, $maxTranslate }) =>
+    $maxTranslate &&
     css`
-      animation: ${move($moveShift)} 140s linear infinite;
+      animation: ${translateGrid($maxTranslate)} ${$nbCols * 0.5}s linear infinite;
     `}
-
-  & > div:nth-child(even) {
-    top: 2rem;
-  }
 
   &:hover {
     animation-play-state: paused;
   }
 `
 
-export const AppCard = styled.div`
+export const AppCard = styled.div<{ $index: number }>`
   ${mixin.centerElement}
   box-shadow: ${boxShadows.card};
   background-color: ${colors.backgroundWhite};
@@ -85,6 +77,7 @@ export const AppCard = styled.div`
   height: 6.25rem;
   padding: 1.5rem 0.75rem;
   position: relative;
+  ${({ $index }) => ($index % 2 === 0 ? "top: 0;" : "top: 2rem;")}
 
   & img {
     width: fit-content;
