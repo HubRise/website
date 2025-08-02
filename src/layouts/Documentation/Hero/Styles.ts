@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizes, lineHeights, mixin } from "@utils/styles"
 
 export const Container = styled.div`
   background-color: ${colors.backgroundWhite};
@@ -24,7 +24,8 @@ export const Content = styled.div`
 `
 
 export const Title = styled.h1`
-  ${fontSizeMixins.fontSizeDisplayLg};
+  font-size: ${fontSizes._42};
+  line-height: ${lineHeights.compact};
   font-weight: 600;
   color: ${colors.textDarkest};
   text-transform: capitalize;

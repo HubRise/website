@@ -61,7 +61,7 @@ export const Nav = styled.div`
     }
 
     h4 {
-      ${fontSizeMixins.fontSizeTextMd}
+      ${fontSizeMixins.text16}
       color: ${colors.textDark};
     }
 
@@ -80,7 +80,7 @@ export const Nav = styled.div`
 export const NavLink = styled(Link)<{ $isActive: boolean }>`
   display: block;
   width: 100%;
-  ${fontSizeMixins.fontSizeTextMd}
+  ${fontSizeMixins.text16}
   font-weight: 600;
   color: ${colors.textDark};
   padding: 0.75rem 0;
@@ -107,7 +107,7 @@ export const Buttons = styled.div`
 export const LanguageList = styled.ul`
   display: flex;
   gap: 1.5rem;
-  ${fontSizeMixins.fontSizeTextMd}
+  ${fontSizeMixins.text16}
   padding: 0.75rem 0;
 
   li {

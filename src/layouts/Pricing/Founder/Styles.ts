@@ -26,7 +26,7 @@ export const Content = styled.div`
 `
 
 export const Name = styled.h4`
-  ${fontSizeMixins.fontSizeText2Xl};
+  ${fontSizeMixins.text24};
   font-weight: 600;
   margin-top: 1.5rem;
 `

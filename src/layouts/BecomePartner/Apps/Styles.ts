@@ -47,6 +47,6 @@ export const TabTitle = styled.h3`
 `
 
 export const TabText = styled.p`
-  ${fontSizeMixins.fontSizeTextLg};
+  ${fontSizeMixins.text18};
   margin: 1.5rem auto 2.5rem;
 `

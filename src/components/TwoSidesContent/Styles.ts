@@ -18,7 +18,7 @@ export const Content = styled.div`
 
 export const ContentBlock = styled.p`
   position: relative;
-  ${fontSizeMixins.fontSizeTextLg};
+  ${fontSizeMixins.text18};
 
   &:first-child {
     &::after {

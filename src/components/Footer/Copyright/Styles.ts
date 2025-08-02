@@ -20,7 +20,7 @@ export const Container = styled.div`
   gap: 2rem;
   flex-direction: column;
   color: ${colors.textLighter};
-  ${fontSizeMixins.fontSizeTextMd};
+  ${fontSizeMixins.text16};
 
   @media (min-width: ${breakpoints.medium}) {
     flex-direction: row;

@@ -49,7 +49,7 @@ export const StyledContainer = styled.div`
   }
 
   h2 {
-    ${fontSizeMixins.fontSizeTextXl}
+    ${fontSizeMixins.text20}
     font-weight: 600;
     color: ${colors.textDarkest};
     position: relative;
@@ -60,7 +60,7 @@ export const StyledContainer = styled.div`
     }
 
     @media (min-width: ${breakpoints.large}) {
-      ${fontSizeMixins.fontSizeText2Xl}
+      ${fontSizeMixins.text24}
     }
   }
 
@@ -87,7 +87,7 @@ export const StyledContainer = styled.div`
   ul,
   ol {
     margin-bottom: ${paragraphSpacing};
-    ${fontSizeMixins.fontSizeTextMd};
+    ${fontSizeMixins.text16};
   }
 
   p + ul,

@@ -147,7 +147,7 @@ export const FilterListItem = styled.li<{ $isActive: boolean }>`
   ${mixin.clickable}
   background-color: ${({ $isActive }) => ($isActive ? colors.backgroundLight : colors.backgroundWhite)};
   color: ${colors.textDarkest};
-  ${fontSizeMixins.fontSizeTextMd}
+  ${fontSizeMixins.text16}
 
   &:hover {
     background-color: ${colors.backgroundLight};

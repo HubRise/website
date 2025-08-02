@@ -13,7 +13,7 @@ export const PriceAndSellingPoints = styled.div`
 `
 
 export const Price = styled.div`
-  ${fontSizeMixins.fontSizeTextMd}
+  ${fontSizeMixins.text16}
   font-weight: 500;
   font-size: 3.75rem;
   line-height: 4rem;
@@ -23,7 +23,7 @@ export const Price = styled.div`
 `
 
 export const Period = styled.div`
-  ${fontSizeMixins.fontSizeTextMd}
+  ${fontSizeMixins.text16}
   font-weight: 500;
 `
 
@@ -38,13 +38,13 @@ export const SellingPoints = styled.div`
 export const SellingPoint = styled.div``
 
 export const SellingPointTitle = styled.h4`
-  ${fontSizeMixins.fontSizeTextLg};
+  ${fontSizeMixins.text18};
   color: ${colors.textDarkest};
   font-weight: 600;
 `
 
 export const SellingPointText = styled.p`
-  ${fontSizeMixins.fontSizeTextMd};
+  ${fontSizeMixins.text16};
 `
 
 export const FeatureBlocks = styled.div`
@@ -82,7 +82,7 @@ export const Feature = styled.div`
 export const FeatureText = styled.span`
   display: inline-block;
   margin-left: 0.875rem;
-  ${fontSizeMixins.fontSizeTextMd};
+  ${fontSizeMixins.text16};
 `
 
 export const IconWrapper = styled.div`

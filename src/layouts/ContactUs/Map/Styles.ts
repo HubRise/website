@@ -59,7 +59,7 @@ export const AddressWrapper = styled.div`
 `
 
 export const AddressText = styled.span`
-  ${fontSizeMixins.fontSizeTextMd};
+  ${fontSizeMixins.text16};
   font-weight: 600;
   color: ${colors.primary};
 `

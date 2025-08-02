@@ -31,7 +31,7 @@ export const Tab = styled.div<{ $isSelected: boolean }>`
   padding-top: 1.125rem;
   padding-bottom: 1.125rem;
   ${mixin.clickable}
-  ${fontSizeMixins.fontSizeTextLg}
+  ${fontSizeMixins.text18}
   font-weight: 600;
   color: ${colors.textDarkest};
 

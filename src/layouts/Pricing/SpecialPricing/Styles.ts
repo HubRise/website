@@ -46,11 +46,11 @@ export const PricingListItem = styled.div`
 `
 
 export const PriceDescription = styled.span`
-  ${fontSizeMixins.fontSizeTextMd}
+  ${fontSizeMixins.text16}
 `
 
 export const Price = styled.span`
-  ${fontSizeMixins.fontSizeTextXl}
+  ${fontSizeMixins.text20}
   font-weight: 600;
   color: ${colors.textDarkest};
 `

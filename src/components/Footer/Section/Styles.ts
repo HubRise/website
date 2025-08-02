@@ -7,10 +7,10 @@ export const Header = styled.h4`
   font-weight: 600;
   margin-bottom: 1rem;
   text-align: left;
-  ${fontSizeMixins.fontSizeTextMd};
+  ${fontSizeMixins.text16};
 
   @media (min-width: ${breakpoints.large}) {
-    ${fontSizeMixins.fontSizeTextLg};
+    ${fontSizeMixins.text18};
   }
 `
 
@@ -29,7 +29,7 @@ export const List = styled.ul`
 `
 
 export const Item = styled.li`
-  ${fontSizeMixins.fontSizeTextSm};
+  ${fontSizeMixins.text14};
 `
 
 const linkMixin = css`

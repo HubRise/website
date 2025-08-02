@@ -8,7 +8,7 @@ export const StyledPost = styled.div`
   padding-bottom: 3.5rem;
 
   ${StyledDateAndAuthor} {
-    ${fontSizeMixins.fontSizeTextLg};
+    ${fontSizeMixins.text18};
   }
 
   @media (min-width: ${breakpoints.large}) {
@@ -17,7 +17,7 @@ export const StyledPost = styled.div`
 `
 
 export const Title = styled.h1`
-  ${fontSizeMixins.fontSizeDisplaySm};
+  ${fontSizeMixins.text32};
   line-height: 2.5rem;
   font-weight: 700;
   color: ${colors.textDarkest};

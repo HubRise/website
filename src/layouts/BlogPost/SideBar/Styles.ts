@@ -80,7 +80,7 @@ export const PostLink = styled(Link)`
 `
 
 export const PostLinkText = styled.span`
-  ${fontSizeMixins.fontSizeTextMd}
+  ${fontSizeMixins.text16}
   font-weight: 600;
   color: #636363;
 `

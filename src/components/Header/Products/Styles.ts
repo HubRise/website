@@ -24,19 +24,19 @@ export const ProductContent = styled.div`
 
 export const ProductTitle = styled.h4`
   color: ${colors.textDarkest};
-  ${fontSizeMixins.fontSizeTextMd};
+  ${fontSizeMixins.text16};
   font-weight: 600;
 `
 
 export const ProductDescription = styled.p`
-  ${fontSizeMixins.fontSizeTextSm};
+  ${fontSizeMixins.text14};
 `
 
 export const ProductLink = styled.span`
   display: flex;
   align-items: center;
   color: ${colors.primary};
-  ${fontSizeMixins.fontSizeTextMd};
+  ${fontSizeMixins.text16};
   font-weight: 600;
 
   ${StyledIcon} {

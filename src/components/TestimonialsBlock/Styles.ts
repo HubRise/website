@@ -53,7 +53,7 @@ export const TestimonialsWrapper = styled.div<{ $nbMobileDisplay: number }>`
 `
 
 export const Name = styled.h4`
-  ${fontSizeMixins.fontSizeTextXl}
+  ${fontSizeMixins.text20}
   font-weight: 600;
   color: ${colors.textDarkest};
   margin-top: 1.5rem;

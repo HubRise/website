@@ -27,12 +27,12 @@ export const ResourcesLink = styled(Link)`
 export const LinkName = styled.p`
   color: ${colors.textDarkest};
   font-weight: 600;
-  ${fontSizeMixins.fontSizeTextMd};
+  ${fontSizeMixins.text16};
 `
 
 export const LinkDescription = styled.span`
   color: ${colors.textDark};
-  ${fontSizeMixins.fontSizeTextSm};
+  ${fontSizeMixins.text14};
 `
 
 export const GetInTouchCard = styled.div`
@@ -66,7 +66,7 @@ export const ResourcesContainer = styled.div`
   ${GetInTouchCard} {
     ${GetInTouchMainQuestion} {
       font-weight: 600;
-      ${fontSizeMixins.fontSizeText2Xl}
+      ${fontSizeMixins.text24}
       color: ${colors.white};
     }
   }
@@ -78,5 +78,5 @@ export const ResourcesContainer = styled.div`
 `
 
 export const GetInTouchQuestion = styled.span`
-  ${fontSizeMixins.fontSizeTextLg}
+  ${fontSizeMixins.text18}
 `

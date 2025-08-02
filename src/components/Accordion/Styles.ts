@@ -26,7 +26,7 @@ export const TitleWrapper = styled.div<{ $isExpanded: boolean | undefined }>`
 `
 
 export const Title = styled.h4`
-  ${fontSizeMixins.fontSizeTextLg}
+  ${fontSizeMixins.text18}
   font-weight: 600;
 `
 
@@ -38,7 +38,7 @@ export const ContentWrapper = styled.div<{ $maxHeight: number | undefined; $isEx
 `
 
 export const Content = styled.div`
-  ${fontSizeMixins.fontSizeTextMd}
+  ${fontSizeMixins.text16}
   margin-top: 0.25rem;
 `
 

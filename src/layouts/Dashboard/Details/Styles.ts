@@ -56,7 +56,7 @@ export const ContentBlock = styled.div<{ $activeDetailsView: number }>`
 
   p,
   ul {
-    ${fontSizeMixins.fontSizeTextSm}
+    ${fontSizeMixins.text14}
     margin-top: 1.25rem;
   }
 
@@ -71,7 +71,7 @@ export const ContentBlock = styled.div<{ $activeDetailsView: number }>`
 
     p,
     ul {
-      ${fontSizeMixins.fontSizeTextLg}
+      ${fontSizeMixins.text18}
     }
   }
 

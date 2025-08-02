@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components"
 
-import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizes, lineHeights, mixin } from "@utils/styles"
 
 export const StyledPageHero = styled.div<{ $isTextCentered: boolean }>`
   background-color: ${colors.backgroundWhite};
@@ -23,7 +23,8 @@ export const Wrapper = styled.div`
 `
 
 export const Title = styled.h1`
-  ${fontSizeMixins.fontSizeDisplayMd};
+  font-size: ${fontSizes._42};
+  line-height: ${lineHeights.compact};
   font-weight: 600;
   color: ${colors.textDarkest};
 
@@ -32,7 +33,7 @@ export const Title = styled.h1`
   }
 
   @media (min-width: ${breakpoints.large}) {
-    ${fontSizeMixins.fontSizeDisplayXl}
+    font-size: ${fontSizes._66};
   }
 `
 

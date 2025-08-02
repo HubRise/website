@@ -29,7 +29,7 @@ export const MetricBlock = styled.div`
 `
 
 export const Number = styled.span`
-  ${fontSizeMixins.fontSizeText2Xl}
+  ${fontSizeMixins.text24}
   font-weight: 600;
   margin-bottom: 0.5rem;
 
@@ -40,10 +40,10 @@ export const Number = styled.span`
 `
 
 export const Text = styled.span`
-  ${fontSizeMixins.fontSizeTextMd}
+  ${fontSizeMixins.text16}
   text-align: center;
 
   @media (min-width: ${breakpoints.large}) {
-    ${fontSizeMixins.fontSizeTextLg}
+    ${fontSizeMixins.text18}
   }
 `
