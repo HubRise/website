@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, fontSizes, mixin } from "@utils/styles"
 
 export const Wrapper = styled.div`
   display: grid;
@@ -29,13 +29,12 @@ export const MetricBlock = styled.div`
 `
 
 export const Number = styled.span`
-  ${fontSizeMixins.text24}
+  font-size: ${fontSizes._32};
   font-weight: 600;
   margin-bottom: 0.5rem;
 
   @media (min-width: ${breakpoints.large}) {
-    font-size: 3.375rem;
-    line-height: 4rem;
+    font-size: ${fontSizes._42};
   }
 `
 

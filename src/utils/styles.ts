@@ -104,10 +104,6 @@ export const fontSizeMixins = {
     font-size: ${fontSizes._20};
     line-height: 1.875rem;
   `,
-  text24: css`
-    font-size: ${fontSizes._24};
-    line-height: 2rem;
-  `,
   text32: css`
     font-size: ${fontSizes._32};
     line-height: 2.5rem;
@@ -185,7 +181,8 @@ export const mixin = {
     color: ${colors.textDarkest};
   `,
   cardTitle: css`
-    ${fontSizeMixins.text24}
+    font-size: ${fontSizes._24};
+    line-height: ${lineHeights.compact};
     font-weight: 600;
     color: ${colors.textDarkest};
     @media (min-width: ${breakpoints.large}) {

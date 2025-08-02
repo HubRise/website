@@ -1,7 +1,7 @@
 import Image from "next/image"
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, fontSizes, mixin } from "@utils/styles"
 
 export const Wrapper = styled.div`
   ${mixin.containerWrapper}
@@ -26,7 +26,7 @@ export const Content = styled.div`
 `
 
 export const Name = styled.h4`
-  ${fontSizeMixins.text24};
+  font-size: ${fontSizes._24};
   font-weight: 600;
   margin-top: 1.5rem;
 `

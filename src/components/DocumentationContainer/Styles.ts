@@ -60,7 +60,7 @@ export const StyledContainer = styled.div`
     }
 
     @media (min-width: ${breakpoints.large}) {
-      ${fontSizeMixins.text24}
+      font-size: ${fontSizes._24};
     }
   }
 

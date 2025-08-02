@@ -63,8 +63,8 @@ export const ResourcesContainer = styled.div`
 
   ${GetInTouchCard} {
     ${GetInTouchMainQuestion} {
+      font-size: ${fontSizes._24};
       font-weight: 600;
-      ${fontSizeMixins.text24}
       color: ${colors.white};
     }
   }
