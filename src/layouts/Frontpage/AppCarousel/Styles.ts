@@ -1,6 +1,6 @@
 import styled, { css, keyframes } from "styled-components"
 
-import { boxShadows, breakpoints, colors, mixin, zIndexValues } from "@utils/styles"
+import { boxShadows, breakpoints, colors, mixin } from "@utils/styles"
 
 const translateGrid = (maxTranslate: number) => keyframes`
   from {
