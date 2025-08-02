@@ -23,7 +23,7 @@ export const Container = styled.div`
   }
 `
 
-export const InnerContainer = styled.div`
+export const CarouselViewport = styled.div`
   max-width: ${breakpoints.biggest};
   margin: 0 auto;
   padding-bottom: 4rem;
@@ -53,7 +53,7 @@ export const InnerContainer = styled.div`
   }
 `
 
-export const LogoContainer = styled.div<{ $nbRows: number; $nbCols: number; $moveShift: number }>`
+export const AppGrid = styled.div<{ $nbRows: number; $nbCols: number; $moveShift: number }>`
   display: grid;
   grid-template-columns: repeat(${({ $nbCols }) => $nbCols}, 1fr);
   grid-template-rows: repeat(${({ $nbRows }) => $nbRows}, 1fr);

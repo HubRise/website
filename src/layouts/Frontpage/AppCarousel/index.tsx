@@ -5,7 +5,7 @@ import { ContentImageMap } from "@utils/contentImage"
 
 import { TAppLogo } from "../types"
 
-import { Container, InnerContainer, LogoContainer, AppCard } from "./Styles"
+import { Container, CarouselViewport, AppGrid, AppCard } from "./Styles"
 
 interface AppCarouselProps {
   apps: Array<TAppLogo>
@@ -38,8 +38,8 @@ const AppCarousel = ({ apps, appLogosMap }: AppCarouselProps): JSX.Element => {
 
   return (
     <Container>
-      <InnerContainer ref={innerContainerWidth}>
-        <LogoContainer ref={logoContainerWidth} $nbRows={nbRows} $nbCols={nbCols} $moveShift={moveShiftWidth}>
+      <CarouselViewport ref={innerContainerWidth}>
+        <AppGrid ref={logoContainerWidth} $nbRows={nbRows} $nbCols={nbCols} $moveShift={moveShiftWidth}>
           {interleavedApps.map(({ logo }, index) => {
             return (
               <AppCard key={index}>
@@ -51,8 +51,8 @@ const AppCarousel = ({ apps, appLogosMap }: AppCarouselProps): JSX.Element => {
               </AppCard>
             )
           })}
-        </LogoContainer>
-      </InnerContainer>
+        </AppGrid>
+      </CarouselViewport>
     </Container>
   )
 }
