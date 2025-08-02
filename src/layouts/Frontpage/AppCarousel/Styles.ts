@@ -57,15 +57,13 @@ export const AppGrid = styled.div<{ $nbRows: number; $nbCols: number; $maxTransl
   position: relative;
   width: fit-content;
 
-  ${({ $nbCols, $maxTranslate }) =>
-    $maxTranslate &&
-    css`
-      animation: ${translateGrid($maxTranslate)} ${$nbCols * 0.5}s linear infinite;
-    `}
-
-  &:hover {
-    animation-play-state: paused;
-  }
+  ${({ $nbCols, $maxTranslate }) => {
+    const columnsPerSecond = 2
+    if ($maxTranslate)
+      return css`
+        animation: ${translateGrid($maxTranslate)} ${$nbCols / columnsPerSecond}s linear infinite;
+      `
+  }}
 `
 
 export const AppCard = styled.div<{ $index: number }>`
