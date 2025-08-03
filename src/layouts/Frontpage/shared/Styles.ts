@@ -1,9 +1,10 @@
 import styled from "styled-components"
 
-import { breakpoints, fontSizeMixins, fontSizes } from "@utils/styles"
+import { breakpoints, fontSizeMixins, fontSizes, lineHeights } from "@utils/styles"
 
 export const Title = styled.h2`
-  ${fontSizeMixins.text32}
+  font-size: ${fontSizes._32};
+  line-height: ${lineHeights.compact};
   font-weight: 600;
 `
 

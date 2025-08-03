@@ -104,14 +104,6 @@ export const fontSizeMixins = {
     font-size: ${fontSizes._20};
     line-height: 1.875rem;
   `,
-  text32: css`
-    font-size: ${fontSizes._32};
-    line-height: 2.5rem;
-  `,
-  text36: css`
-    font-size: 2.25rem;
-    line-height: 2.75rem;
-  `,
 }
 
 export const mixin = {
@@ -185,8 +177,9 @@ export const mixin = {
     line-height: ${lineHeights.compact};
     font-weight: 600;
     color: ${colors.textDarkest};
+
     @media (min-width: ${breakpoints.large}) {
-      ${fontSizeMixins.text32}
+      font-size: ${fontSizes._32};
     }
   `,
   containerWrapper: css`

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 import { StyledButton } from "@components/Button/Styles"
-import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizes, lineHeights, mixin } from "@utils/styles"
 
 import {
   ScreenContainerBgColor,
@@ -42,7 +42,8 @@ export const HeaderWrapper = styled.div`
 `
 
 export const Title = styled.h2<{ $bgColor: ScreenContainerBgColor }>`
-  ${fontSizeMixins.text32};
+  font-size: ${fontSizes._32};
+  line-height: ${lineHeights.compact};
   font-weight: 600;
   color: ${({ $bgColor }) => ($bgColor === "green" ? `${colors.white}` : `${colors.textDarkest}`)};
   text-align: center;

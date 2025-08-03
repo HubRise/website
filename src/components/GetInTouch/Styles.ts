@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 import { StyledButton } from "@components/Button/Styles"
-import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, fontSizes, lineHeights, mixin } from "@utils/styles"
 
 export const Wrapper = styled.div`
   ${mixin.containerWrapper}
@@ -44,7 +44,8 @@ export const Content = styled.div`
 `
 
 export const Title = styled.h3`
-  ${fontSizeMixins.text32};
+  font-size: ${fontSizes._32};
+  line-height: ${lineHeights.compact};
   font-weight: 600;
   color: ${colors.textDarkest};
 `

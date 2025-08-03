@@ -2,7 +2,7 @@ import Image from "next/image"
 import styled from "styled-components"
 
 import { StyledDateAndAuthor } from "@components/DateAndAuthor/Styles"
-import { breakpoints, colors, fontSizeMixins } from "@utils/styles"
+import { breakpoints, colors, fontSizeMixins, fontSizes, lineHeights } from "@utils/styles"
 
 export const StyledPost = styled.div`
   padding-bottom: 3.5rem;
@@ -17,8 +17,8 @@ export const StyledPost = styled.div`
 `
 
 export const Title = styled.h1`
-  ${fontSizeMixins.text32};
-  line-height: 2.5rem;
+  font-size: ${fontSizes._32};
+  line-height: ${lineHeights.compact};
   font-weight: 700;
   color: ${colors.textDarkest};
   margin-top: 0.5rem;

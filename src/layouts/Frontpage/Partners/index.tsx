@@ -26,6 +26,7 @@ const Partners = ({ title, descriptionMdx, button_label, button_link, image }: P
         <ImageWrapper>
           <Image src={`/images/frontpage/${image}`} alt={title} width={708} height={521} />
         </ImageWrapper>
+
         <ContentWrapper>
           <Title>{title}</Title>
           <Description>
