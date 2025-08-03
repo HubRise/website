@@ -8,7 +8,7 @@ content:
       part_1: Contribuer
       part_2: à la
       part_3: documentation
-    description: Vous avez repéré une erreur sur notre site, ou vous souhaitez mettre à jour la documentation de votre solution ? Nous vous expliquons comment procéder.
+    description: Vous avez repéré une erreur sur notre site, ou vous souhaitez mettre à jour la documentation de votre solution ? Voici comment procéder.
   thumbs:
     - title: Comment contribuer
       description: Ce que vous devez savoir avant de contribuer.

@@ -47,7 +47,7 @@ export const breakpoints = {
   biggest: "120rem", // 1920px
   documentationStickyMenu: "64rem",
   blogStickyMenu: "40rem",
-  burgerMenu: "75rem",
+  burgerMenu: "90rem",
 }
 
 export const colors = {

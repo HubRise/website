@@ -9,9 +9,9 @@ export const StyledHeader = styled.div<{ $isIntegrationsNavSticky: boolean }>`
   position: sticky;
   top: 0;
   ${headerStyle};
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
   padding: 0 0.625rem;
 
   @media (min-width: ${breakpoints.burgerMenu}) {
