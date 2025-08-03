@@ -37,8 +37,6 @@ export const JobTitle = styled.h5`
 `
 
 export const Text = styled.p`
-  ${mixin.cardText}
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
+  font-size: ${fontSizes._19};
   margin-top: 2rem;
 `

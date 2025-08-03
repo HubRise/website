@@ -30,8 +30,6 @@ const underlineMixin = css`
 `
 
 export const StyledContainer = styled.div`
-  font-family: "Poppins", sans-serif;
-
   h1 {
     ${commonTitleStyles};
     font-weight: bold;
@@ -166,11 +164,7 @@ export const StyledContainer = styled.div`
 
   code {
     display: inline;
-    font-family:
-      Consolas,
-      Liberation Mono,
-      Courier,
-      monospace;
+    font-family: "Consolas", "Liberation Mono", "Courier", monospace;
     word-wrap: break-word;
     max-width: 100%;
     padding: 0.125rem 0.3125rem 0.0625rem;
