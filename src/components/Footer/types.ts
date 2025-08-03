@@ -12,4 +12,5 @@ export interface IFooter {
     title: string
     link: string
   }>
+  all_rights_reserved: string
 }

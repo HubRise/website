@@ -8,15 +8,18 @@ type TCopyright = {
     title: string
     link: string
   }>
+  allRightsReserved: string
 }
 
-const Copyright = ({ copyrightLinks }: TCopyright): JSX.Element => {
+const Copyright = ({ copyrightLinks, allRightsReserved }: TCopyright): JSX.Element => {
   const year = new Date(Date.now()).getFullYear()
 
   return (
     <StyledCopyright>
       <Container>
-        <Text>&copy; {year} HubRise. All rights reserved.</Text>
+        <Text>
+          &copy; {year} HubRise. {allRightsReserved}
+        </Text>
         <Image src="/images/logo_footer.png" alt="HubRise" width={123} height={32} />
         <Links>
           {copyrightLinks.map(({ title, link }, index) => {

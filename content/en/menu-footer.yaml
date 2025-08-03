@@ -1,5 +1,5 @@
 sections:
-  - title: Integrations & Products
+  - title: Product & Integrations
     links:
       - title: All Integrations
         to: /apps
@@ -9,14 +9,14 @@ sections:
         to: /orderline
       - title: Dashboard
         to: /dashboard
-  - title: Resources
+  - title: Developers
     links:
-      - title: Developers Quick Start
+      - title: API Reference
+        to: /developers/api/general-concepts
+      - title: Quick Start
         to: /developers/quick-start
       - title: Integration Guide
         to: /developers/integration-guide
-      - title: API Reference
-        to: /developers/api/general-concepts
       - title: Changelog
         to: /developers/changelog
   - title: Help Center
@@ -25,20 +25,20 @@ sections:
         to: /docs
       - title: FAQ
         to: /faqs
-      - title: Blog
-        to: /blog
-      - title: Contribute
+      - title: Contribute to the Documentation
         to: /contributing
   - title: Partners
     links:
       - title: Become a Partner
         to: /become-partner
-      - title: Testimonials
-        to: /testimonials
       - title: Hire an Expert
         to: /partners
   - title: Company
     links:
+      - title: Blog
+        to: /blog
+      - title: Testimonials
+        to: /testimonials
       - title: Branding Guidelines
         to: /branding
       - title: Contact Us
@@ -52,3 +52,4 @@ copyright_links:
     link: /legal/general-terms-and-conditions
   - title: Legal Notices
     link: /legal/legal-notices
+all_rights_reserved: All rights reserved.

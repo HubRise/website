@@ -35,7 +35,7 @@
         - link_label: Devenir Partenaire
           link: /fr/devenir-partenaire
           link_description: Intégrations et outils en marque blanche pour les éditeurs.
-        - link_label: Journal des modifications
+        - link_label: Journal des changements
           link: /developers/changelog
           link_description: Nouveautés et améliorations.
 - title: Ressources

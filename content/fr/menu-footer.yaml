@@ -1,54 +1,55 @@
 sections:
-  - title: Integrations & Apps
+  - title: Produit & Intégrations
     links:
-      - title: All Integrations
+      - title: Toutes les intégrations
         to: /fr/apps
       - title: Catalog Manager
         to: /fr/catalog-manager
       - title: OrderLine
         to: /fr/orderline
-      - title: Dashboard
+      - title: Tableau de bord
         to: /fr/dashboard
-  - title: Ressources
+  - title: Développeurs
     links:
+      - title: Référence de l'API
+        to: /fr/developers/api/general-concepts
       - title: Démarrage Rapide
         to: /fr/developers/quick-start
       - title: Guide d'Intégration
         to: /fr/developers/integration-guide
-      - title: Référence de l'API
-        to: /fr/developers/api/general-concepts
-      - title: Blog
-        to: /fr/blog
-      - title: Changelog
+      - title: Journal des changements
         to: /fr/developers/changelog
-  - title: Help Center
+  - title: Centre d'aide
     links:
-      - title: Help
+      - title: Aide
         to: /fr/docs
       - title: FAQ
         to: /fr/faqs
       - title: Contribuer à la documentation
         to: /fr/contribuer
-  - title: Partners
+  - title: Partenaires
     links:
-      - title: Become a Partner
+      - title: Devenir partenaire
         to: /fr/devenir-partenaire
-      - title: Hire an Expert
+      - title: Trouver un expert
         to: /fr/partenaires
-  - title: Company
+  - title: Société
     links:
+      - title: Blog
+        to: /fr/blog
       - title: Témoignages
         to: /fr/temoignages
       - title: Guide de la marque
         to: /fr/marque
-      - title: Contact Us
+      - title: Nous contacter
         to: /fr/contactez-nous
       - title: LinkedIn
         icon: linkedin
         to: https://www.linkedin.com/company/hubrise
         is_external: true
 copyright_links:
-  - title: Terms and Conditions
+  - title: Conditions Générales
     link: /fr/legal/conditions-generales
-  - title: Legal Notices
+  - title: Mentions Légales
     link: /fr/legal/mentions-legales
+all_rights_reserved: Tous droits réservés.
