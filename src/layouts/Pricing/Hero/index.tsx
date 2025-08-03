@@ -39,6 +39,7 @@ const Hero = ({ hero }: HeroProps): JSX.Element => {
           {title.part_2}
           <span> {title.part_3} </span>
           {title.part_4}
+          <span> {title.part_5} </span>
         </>
       }
     >

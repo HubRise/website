@@ -33,6 +33,10 @@ export const PricingList = styled.div`
   padding: 3.5rem 0;
 `
 
+export const PricingListDescription = styled.p`
+  margin-bottom: 1rem;
+`
+
 export const PricingListItem = styled.div`
   display: flex;
   align-items: center;
@@ -52,3 +56,5 @@ export const Price = styled.span`
   font-weight: 600;
   color: ${colors.textDarkest};
 `
+
+export const CardBottom = styled.div``

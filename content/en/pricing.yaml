@@ -9,6 +9,7 @@ content:
       part_2: and
       part_3: Transparent
       part_4: Pricing
+      part_5:
     plan:
       price: €35
       period: Excl. VAT / location / month
@@ -18,9 +19,9 @@ content:
       - title: No Setup Fee
         text: Create an account. Connect apps. Your subscription starts when you are ready
       - title: Unlimited Orders
-        text: No limit to the number of transactions sent through your account
+        text: No limit to the number of transactions sent through your location
       - title: Unlimited Connections
-        text: Connect as many apps as you like to your account
+        text: Connect as many apps as you like to your location
     included_features:
       title: Included Features
       description: Features available with your HubRise subscription
@@ -76,7 +77,8 @@ content:
     title: Special Pricing
     chain_and_franchise:
       title: Chain and Franchise Pricing
-      description: Benefit from a volume discount for 6 locations or more. Reduce your per location cost as you grow.
+      description: Volume discounts make your per location cost decrease as you grow.
+      pricing_list_description: 'Monthly fee per location:'
       pricing_list:
         - text: Locations 1 to 5
           price: €35
@@ -84,26 +86,28 @@ content:
           price: €30
         - text: Locations 31 and more
           price: €27
-      special_proposal_html: For example, if you have 12 locations, the subscription will be €35 for the first 5 locations, then €30 for the next 7.
+      special_proposal_html: 'Example for 12 locations: (5 x €35) + (7 x €30) = €385 per month.'
     dark_kitchen:
       title: Dark Kitchen
-      description: Specific pricing applies to stores operating multiple virtual dark kitchen brands. Monthly subscription depends on order volume, with a one-time €25 setup fee per brand, per platform.
-      pricing_list_description: |
+      description: Special monthly and setup fees apply to stores operating multiple virtual brands.
+      pricing_list_description: 'Monthly fee depends on the number of orders received for the location:'
       pricing_list:
-        - text: 0 to 1,500 orders per month
+        - text: 0 to 1,500 orders per month - standard fee
           price: €35
-        - text: 1,501 to 3,000 orders per month - standard subscription
+        - text: 1,501 to 3,000 orders per month
           price: €55
         - text: 3,001 to 4,500 orders per month
           price: €75
-      special_proposal_html: Add €20 for every additional 1,500 orders.<br/>Discounts apply for grouped setups.
+        - text: Add €20 for every additional 1,500 monthly orders
+          price:
+      special_proposal_html: One-time €25 setup fee per brand, per platform. Discounts apply for grouped setups.
     resellers_and_partners:
       title: Resellers and Integrated Partners
-      description: HubRise offers a partnership programme—with or without white labelling.
+      description: HubRise offers a partnership programme, with or without white labelling.
       button_label: Find out more
       button_link: /become-partner
   action_block:
     title: Ready to Get Started?
-    description: If you have more questions about features or pricing, we're here to help. Contact us, and we'll assist you in taking the next step.
+    description: Contact us to discuss your needs and find out how HubRise can help.
     buttons:
       - button_label: Contact Us

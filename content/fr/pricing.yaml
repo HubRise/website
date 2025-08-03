@@ -6,65 +6,66 @@ meta:
 content:
   hero:
     title:
-      part_1: Simple, Fair
-      part_2: and
-      part_3: Transparent
-      part_4: Pricing
+      part_1:
+      part_2: Tarification
+      part_3: Abordable, Simple
+      part_4: Et
+      part_5: Transparente
     plan:
-      price: €35
-      period: Excl. VAT / location / month
+      price: 35 €
+      period: HT / point de vente / mois
     selling_points:
-      - title: Unlimited orders
-        text: No limit to the number of transactions sent through your account
-      - title: Unlimited connections
-        text: Connect as many apps as you like to your account
-      - title: No setup fee
-        text: Create an account. Your subscription starts when you are ready
-      - title: No commitment
-        text: Cancel your subscription autonomously, any time
+      - title: Aucun engagement
+        text: Annulez votre abonnement à tout moment.
+      - title: Pas de frais d'installation
+        text: Créez un compte. Connectez des intégrations. Votre abonnement commence quand vous êtes prêt.
+      - title: Commandes illimitées
+        text: Pas de limite au nombre de transactions envoyées, à l'exception des Dark Kitchen.
+      - title: Intégrations illimitées
+        text: Connectez autant d'intégrations que vous le souhaitez.
     included_features:
-      title: Included Features
-      description: Features are available with your HubRise subscription
-      button_label: Start today
+      title: Fonctionnalités standard
+      description: Inclus dans votre abonnement HubRise.
+      button_label: Commencer aujourd'hui
       button_link: https://manager.hubrise.com/signup?locale=fr-FR
       list:
-        - text: Epos integration
-        - text: Other integrations, see our
-          link_label: Integrations page
+        - text: Intégration logiciel de caisse (EPOS)
+        - text: Autres intégrations, voir la
+          link_label: page Intégrations
           link: /fr/apps
-        - text: Order management
-        - text: Menu Management
-        - text: Business Analytics
-        - text: Inventory Management
-        - text: Snoozing Products
-        - text: Pause Orders
-        - text: Opening hours Management
-        - text: Multi-location Support, see
-          link_label: special pricing
+        - text: Réception et traitement des commandes
+        - text: Edition centralisée des menus
+        - text: Analyses d'activité
+        - text: Gestion des stocks
+        - text: Mise en pause des produits
+        - text: Mise en pause des commandes
+        - text: Centralisation des horaires d'ouverture
+        - text: Support multi-sites, voir
+          link_label: tarification spéciale
           link: /fr/tarifs#special-pricing
     additional_features:
-      title: Additional Features
-      description: Features available at an additional cost, with HubRise or one of HubRise +100 integrated partners
+      title: Fonctionnalités additionnelles
+      description: Fonctionnalités disponibles avec un coût supplémentaire, via HubRise ou l'un de nos plus de 100 partenaires intégrés
       list:
-        - text: Connection of virtual brands, see
-          link_label: special pricing
+        - text: Connexion de marques virtuelles, voir
+          link_label: tarification spéciale
           link: /fr/tarifs#special-pricing
-        - text: Kitchen Display Screen
-        - text: Kiosks
-        - text: Online Ordering
-        - text: Dine-in apps
-        - text: Auto-Print
-        - text: Operations Management (Inventory, Purchasing)
-        - text: Delivery Management
-        - text: Delivery Services
-        - text: And more…
+        - text: Ecran cuisine (KDS)
+        - text: Bornes de commande
+        - text: Commande en ligne
+        - text: Commande à table
+        - text: Impression automatique
+        - text: Gestion des achats
+        - text: Gestion des livraisons
+        - text: Services de livraison
+        - text: Et bien plus…
   founder:
     image: antoine.png
     name: Antoine Monnier
-    job_title: Founder, HubRise
-    text: Since 2015, we've offered a solution 2-5x cheaper than alternativeplayers with comparable features. Our team is made up primarily of engineers, not salespeople, and as a self-funded company, we answer only to our customers." Antoine Monnier, Founder, HubRise
+    job_title: Fondateur, HubRise
+    text: Depuis 2015, nous proposons une solution 2 à 5 fois moins chère que Deliverect avec des fonctionnalités comparables. Notre équipe est composée principalement d'ingénieurs, pas de commerciaux, et en tant qu'entreprise autofinancée, nous répondons uniquement à nos clients.
   why_choose:
-    title: Why Choose HubRise?
+    title: Pourquoi choisir HubRise ?
     cards:
       - title: Specialsed Focus
         text: HubRise is a middleware with a strong focus on its API and the quality of integrations, relying partners for solutions and services HubRise users need.
@@ -73,38 +74,40 @@ content:
       - title: Code and Infrastructure
         text: Our code base highly technical, with a focus on robustness, scalability, and reliability.
   special_pricing:
-    title: Special Pricing
+    title: Tarifs spéciaux
     chain_and_franchise:
-      title: Chain and Franchise pricing
-      description: Benefit from a volume discount for 6 locations or more, reduce your per location cost as you grow.
+      title: Tarifs Chaînes et Franchises
+      description: Une remise au volume diminue le coût par point de vente avec la croissance du réseau.
+      pricing_list_description: 'Tarif mensuel par point de vente :'
       pricing_list:
-        - text: Locations 1 to 5
-          price: €35
-        - text: Locations 6 to 30
-          price: €30
-        - text: Locations 31 and more
-          price: €27
-      special_proposal_html: For 12 locations, the subscription will be €35 for the first 5 locations, then €30 for the next 7.
+        - text: Points de vente 1 à 5
+          price: 35 €
+        - text: Points de vente 6 à 30
+          price: 30 €
+        - text: Points de vente 31 et plus
+          price: 27 €
+      special_proposal_html: 'Exemple pour 12 points de vente : (5 x 35 €) + (7 x 30 €) = 385 € par mois.'
     dark_kitchen:
       title: Dark Kitchen
-      description: Specific pricing applies to dark kitchens operating multiple virtual brands. Subscription fees are volume-based, with a setup fee of €25 per brand, per platform, with discounts available for multiple connections
-      pricing_list_description: |
-        Monthly subscription varies depending on the number of orders:
+      description: Un tarif mensuel spécial et des frais d'installation s'appliquent aux établissements gérant plusieurs marques virtuelles.
+      pricing_list_description: "Le tarif mensuel dépend du nombre de commandes reçues par le point de vente :"
       pricing_list:
-        - text: 0 to 1,500 orders per month
-          price: €35
-        - text: 1,501 to 3,000 orders per month - standard subscription
-          price: €55
-        - text: 3,001 to 4,500 orders per month
-          price: €75
-      special_proposal_html: And so on, with an additional €20 for every additional 1,500 orders.
+        - text: 0 à 1 500 commandes par mois - tarif standard
+          price: 35 €
+        - text: 1 501 à 3 000 commandes par mois
+          price: 55 €
+        - text: 3 001 à 4 500 commandes par mois
+          price: 75 €
+        - text: Ajouter 20 € pour chaque tranche de 1 500 commandes supplémentaires
+          price:
+      special_proposal_html: Frais d'installation de 25 € par marque et par plateforme, négociables pour les installations groupées.
     resellers_and_partners:
-      title: Resellers and Partners
-      description: HubRise offer a partnership program, with or without white labelling.
-      button_label: Find out more
+      title: Partenaires et Revendeurs
+      description: HubRise offre un programme de partenariat, avec ou sans marque blanche.
+      button_label: En savoir plus
       button_link: /fr/devenir-partenaire
   action_block:
-    title: Ready to Get Started?
-    description: If you have more questions about features or pricing? We're here to help you take the next step.
+    title: Prêt à commencer ?
+    description: Contactez-nous pour discuter de vos besoins et découvrir comment HubRise peut vous aider.
     buttons:
-      - button_label: Send Us a Message
+      - button_label: Nous contacter

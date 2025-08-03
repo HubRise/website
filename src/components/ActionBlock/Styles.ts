@@ -17,7 +17,7 @@ export const StyledActionBlock = styled.div`
 
 export const Description = styled.p`
   margin: 1rem auto 0;
-  max-width: 50rem;
+  max-width: 60rem;
   font-size: ${fontSizes._19};
 `
 

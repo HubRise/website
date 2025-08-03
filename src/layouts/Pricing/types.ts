@@ -23,10 +23,11 @@ type TSpecialPricingItem = {
 
 export type THero = {
   title: {
-    part_1: string
-    part_2: string
-    part_3: string
-    part_4: string
+    part_1?: string
+    part_2?: string
+    part_3?: string
+    part_4?: string
+    part_5?: string
   }
   plan: {
     price: string
@@ -47,21 +48,18 @@ export type THero = {
   }
 }
 
+type TSpecialPricingWithList = {
+  title: string
+  description: string
+  pricing_list_description?: string
+  pricing_list: Array<TSpecialPricingItem>
+  special_proposal_html?: string
+}
+
 export type TSpecialPricing = {
   title: string
-  chain_and_franchise: {
-    title: string
-    description: string
-    pricing_list: Array<TSpecialPricingItem>
-    special_proposal_html: string
-  }
-  dark_kitchen: {
-    title: string
-    description: string
-    pricing_list_description: string
-    pricing_list: Array<TSpecialPricingItem>
-    special_proposal_html: string
-  }
+  chain_and_franchise: TSpecialPricingWithList
+  dark_kitchen: TSpecialPricingWithList
   resellers_and_partners: {
     title: string
     description: string
