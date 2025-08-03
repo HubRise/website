@@ -1,10 +1,9 @@
 import styled, { css } from "styled-components"
 
 import { StyledIcon } from "@components/Icon/Styles"
-import { colors, fontSizes, mixin } from "@utils/styles"
+import { colors, mixin } from "@utils/styles"
 
 export const StyledAccordion = styled.div`
-  color: ${colors.textDarkest};
   border-bottom: 1px solid ${colors.borderLight};
 
   &:last-child {
@@ -26,7 +25,6 @@ export const TitleWrapper = styled.div<{ $isExpanded: boolean | undefined }>`
 `
 
 export const Title = styled.h4`
-  font-size: ${fontSizes._19};
   font-weight: 600;
 `
 

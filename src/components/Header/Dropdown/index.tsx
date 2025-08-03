@@ -54,6 +54,7 @@ const Dropdown = ({
         {value}
         <Icon code="expand_more" size={iconSizes._20} />
       </DropdownTrigger>
+
       {isMenuOpen && (
         <DropdownMenu $position={position}>
           {withOptions ? (

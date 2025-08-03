@@ -7,7 +7,7 @@ export type TIncludedApp = {
 }
 
 export type TResources = {
-  get_in_touch: {
+  get_in_touch?: {
     main_question: string
     question: string
     button_label: string

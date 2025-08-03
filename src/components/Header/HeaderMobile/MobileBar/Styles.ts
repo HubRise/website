@@ -60,11 +60,6 @@ export const Nav = styled.div`
       margin-bottom: 0;
     }
 
-    h4 {
-      font-size: ${fontSizes._16};
-      color: ${colors.textDark};
-    }
-
     ${ExpandIconWrapper} {
       width: auto;
       height: auto;

@@ -1,60 +1,68 @@
 - title: Accueil
   to: /fr
   mobile_only: true
-- title: Integrations
+- title: Intégrations
   to: /fr/apps
-- title: Products
+- title: Apps Incluses
   to: /
   content:
     included_apps:
       - title: OrderLine
-        description: Centralise your orders
-        link_label: Find out more
+        description: Centralisez vos commandes
+        link_label: En savoir plus
         link: /fr/orderline
         image: orderline.png
       - title: Catalog Manager
-        description: Centralise your menus
-        link_label: Find out more
+        description: Gérez vos produits en un seul endroit
+        link_label: En savoir plus
         link: /fr/catalog-manager
         image: catalog-manager.png
-      - title: Dashboard
+      - title: Tableau de bord
         description: Some text here...
-        link_label: Find out more
+        link_label: En savoir plus
         link: /fr/dashboard
         image: dashboard.png
 - title: Tarifs
   to: /fr/tarifs
-- title: Resources
+- title: Développeurs
+  to: /
+  content:
+    resources:
+      links:
+        - link_label: Documentation Développeurs
+          link: /fr/developers
+          link_description: API docs, quick start and integration guides.
+        - link_label: Devenir Partenaire
+          link: /fr/devenir-partenaire
+          link_description: Grow through integrations and white branded tools.
+        - link_label: Changelog
+          link: /developers/changelog
+          link_description: Intégrations récentes, améliorations de l'API et corrections de bugs.
+- title: Ressources
   to: /
   content:
     resources:
       get_in_touch:
-        main_question: Specific needs?
-        question: Want to talk?
-        button_label: Get in Touch
+        main_question: Des besoins spécifiques ?
+        question: Vous souhaitez en parler ?
+        button_label: Contactez-nous
         button_link: /fr/contactez-nous
       links:
         - link_label: Aide
           link: /fr/docs
           link_description: Quick answers to navigate and use HubRise.
-        - link_label: Become a Partner
-          link: /fr/devenir-partenaire
-          link_description: Grow through integrations and white branded tools.
         - link_label: Blog
           link: /fr/blog
           link_description: Product updates, tips, and industry insights.
         - link_label: FAQ
           link: /fr/faqs
           link_description: Common questions clarified in one convenient spot.
-        - link_label: Développeurs
-          link: /fr/developers
-          link_description: API docs, quick start and integration guides.
         - link_label: Témoignages
           link: /fr/temoignages
           link_description: Real customer and integrated partner feedback.
-        - link_label: Contact Us
+        - link_label: Nous contacter
           link: /fr/contactez-nous
           link_description: Get in touch with our team
-        - link_label: Hire an Expert
+        - link_label: Recruter un Expert
           link: fr/partenaires
-          link_description: Connect with an experienced partner for tailored development.
+          link_description: Contacter un partenaire expérimenté pour vos développements.

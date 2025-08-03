@@ -24,6 +24,20 @@
         image: dashboard.png
 - title: Pricing
   to: /pricing
+- title: Developers
+  to: /
+  content:
+    resources:
+      links:
+        - link_label: Developer documentation
+          link: /developers
+          link_description: API docs, quick start and integration guides.
+        - link_label: Become a Partner
+          link: /become-partner
+          link_description: Grow through integrations and white branded tools.
+        - link_label: Changelog
+          link: /developers/changelog
+          link_description: View the latest integrations, API improvements, and fixes.
 - title: Resources
   to: /
   content:
@@ -37,24 +51,15 @@
         - link_label: Help
           link: /docs
           link_description: Quick answers to navigate and use HubRise.
-        - link_label: Become a Partner
-          link: /become-partner
-          link_description: Grow through integrations and white branded tools.
         - link_label: Blog
           link: /blog
           link_description: Product updates, tips, and industry insights.
         - link_label: FAQs
           link: /faqs
           link_description: Common questions clarified in one convenient spot.
-        - link_label: Developers
-          link: /developers
-          link_description: API docs, quick start and integration guides.
         - link_label: Testimonials
           link: /testimonials
           link_description: Real customer and integrated partner feedback.
-        - link_label: Changelog
-          link: /developers/changelog
-          link_description: View the latest integrations, API improvements, and fixes.
         - link_label: Hire an Expert
           link: /partners
           link_description: Connect with experienced partners for development work.

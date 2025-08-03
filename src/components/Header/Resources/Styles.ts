@@ -14,7 +14,8 @@ export const ResourcesLinks = styled.div`
   grid-template-columns: 1fr;
 
   @media (min-width: ${breakpoints.burgerMenu}) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, auto);
   }
 `
 
@@ -25,12 +26,13 @@ export const ResourcesLink = styled(Link)`
 `
 
 export const LinkName = styled.p`
-  color: ${colors.textDarkest};
   font-weight: 600;
+  color: ${colors.textDarkest};
 `
 
 export const LinkDescription = styled.span`
   font-size: ${fontSizes._14};
+  color: ${colors.textDark};
 `
 
 export const GetInTouchCard = styled.div`

@@ -31,17 +31,20 @@ const Resources = ({ resources }: ResourcesProps) => {
           )
         })}
       </ResourcesLinks>
-      <GetInTouchCard>
-        <GetInTouchText>
-          <GetInTouchMainQuestion>{resources.get_in_touch.main_question}</GetInTouchMainQuestion>
-          <GetInTouchQuestion>{resources.get_in_touch.question}</GetInTouchQuestion>
-        </GetInTouchText>
-        <Button
-          type="secondary"
-          label={resources.get_in_touch.button_label}
-          link={resources.get_in_touch.button_link}
-        />
-      </GetInTouchCard>
+
+      {resources.get_in_touch && (
+        <GetInTouchCard>
+          <GetInTouchText>
+            <GetInTouchMainQuestion>{resources.get_in_touch.main_question}</GetInTouchMainQuestion>
+            <GetInTouchQuestion>{resources.get_in_touch.question}</GetInTouchQuestion>
+          </GetInTouchText>
+          <Button
+            type="secondary"
+            label={resources.get_in_touch.button_label}
+            link={resources.get_in_touch.button_link}
+          />
+        </GetInTouchCard>
+      )}
     </ResourcesContainer>
   )
 }
