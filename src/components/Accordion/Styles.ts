@@ -26,7 +26,7 @@ export const TitleWrapper = styled.div<{ $isExpanded: boolean | undefined }>`
 `
 
 export const Title = styled.h4`
-  font-size: ${fontSizes._18};
+  font-size: ${fontSizes._19};
   font-weight: 600;
 `
 

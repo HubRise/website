@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import styled, { css } from "styled-components"
 
-import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
 export const CardLink = styled(Link)`
   display: flex;
@@ -53,15 +53,14 @@ export const TestimonialsWrapper = styled.div<{ $nbMobileDisplay: number }>`
 `
 
 export const Name = styled.h4`
-  ${fontSizeMixins.text20}
+  font-size: ${fontSizes._19};
   font-weight: 600;
   color: ${colors.textDarkest};
   margin-top: 1.5rem;
 `
 
 export const JobTitle = styled.h5`
-  ${mixin.cardText}
-  margin-top: 0.25rem;
+  font-size: ${fontSizes._16};
 `
 
 export const Quote = styled.p`

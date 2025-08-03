@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { boxShadows, breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
+import { boxShadows, breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
 export const Tab = styled.div`
   background-color: ${colors.backgroundWhite};
@@ -47,6 +47,6 @@ export const TabTitle = styled.h3`
 `
 
 export const TabText = styled.p`
-  ${fontSizeMixins.text18};
+  font-size: ${fontSizes._19};
   margin: 1.5rem auto 2.5rem;
 `

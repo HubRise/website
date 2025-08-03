@@ -4,7 +4,7 @@ import styled, { css } from "styled-components"
 import { colors, fontSizes, mixin } from "@utils/styles"
 
 export const BlockContent = styled.div`
-  font-size: ${fontSizes._18};
+  font-size: ${fontSizes._19};
   display: flex;
   flex-direction: column;
   gap: 1rem;

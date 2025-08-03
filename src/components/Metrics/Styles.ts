@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizeMixins, fontSizes, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
 export const Wrapper = styled.div`
   display: grid;
@@ -26,12 +26,13 @@ export const MetricBlock = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 1;
 `
 
 export const Number = styled.span`
   font-size: ${fontSizes._32};
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 
   @media (min-width: ${breakpoints.large}) {
     font-size: ${fontSizes._42};
@@ -42,6 +43,6 @@ export const Text = styled.span`
   text-align: center;
 
   @media (min-width: ${breakpoints.large}) {
-    ${fontSizeMixins.text18}
+    font-size: ${fontSizes._19};
   }
 `

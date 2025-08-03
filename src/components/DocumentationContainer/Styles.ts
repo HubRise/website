@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components"
 
-import { boxShadows, breakpoints, colors, fontSizeMixins, fontSizes, lineHeights, mixin } from "@utils/styles"
+import { boxShadows, breakpoints, colors, fontSizes, lineHeights, mixin } from "@utils/styles"
 
 const commonTitleStyles = css`
   color: ${colors.textDarkest};
@@ -49,7 +49,8 @@ export const StyledContainer = styled.div`
   }
 
   h2 {
-    ${fontSizeMixins.text20}
+    font-size: ${fontSizes._19};
+    line-height: ${lineHeights.compact};
     font-weight: 600;
     color: ${colors.textDarkest};
     position: relative;

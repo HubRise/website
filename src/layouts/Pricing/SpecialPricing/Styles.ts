@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 import { StyledCard } from "@components/Card/Styles"
-import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
 export const Content = styled.div`
   ${mixin.containerWrapper}
@@ -48,7 +48,7 @@ export const PricingListItem = styled.div`
 export const PriceDescription = styled.span``
 
 export const Price = styled.span`
-  ${fontSizeMixins.text20}
+  font-size: ${fontSizes._19};
   font-weight: 600;
   color: ${colors.textDarkest};
 `

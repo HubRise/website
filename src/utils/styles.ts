@@ -19,8 +19,7 @@ export const fontSizes = {
   _12: ".75rem",
   _14: ".875rem",
   _16: "1rem",
-  _18: "1.125rem",
-  _20: "1.25rem",
+  _19: "1.1875rem",
   _24: "1.5rem",
   _32: "2rem",
   _42: "2.625rem",
@@ -95,17 +94,6 @@ export const boxShadows = {
   `,
 }
 
-export const fontSizeMixins = {
-  text18: css`
-    font-size: ${fontSizes._18};
-    line-height: 1.625rem;
-  `,
-  text20: css`
-    font-size: ${fontSizes._20};
-    line-height: 1.875rem;
-  `,
-}
-
 export const mixin = {
   buttonOver: (color: string, backgroundColor: string): RuleSet => css`
     transition:
@@ -156,10 +144,9 @@ export const mixin = {
   `,
   description: css`
     font-size: ${fontSizes._16};
-    line-height: 1.5rem;
     margin-top: 1rem;
     @media (min-width: ${breakpoints.large}) {
-      ${fontSizeMixins.text20}
+      font-size: ${fontSizes._19};
     }
   `,
   cardText: css`
@@ -168,7 +155,7 @@ export const mixin = {
     margin-top: 0.625rem;
   `,
   smallCardTitle: css`
-    ${fontSizeMixins.text20}
+    font-size: ${fontSizes._19};
     font-weight: 600;
     color: ${colors.textDarkest};
   `,

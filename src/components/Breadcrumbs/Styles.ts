@@ -27,7 +27,7 @@ export const Item = styled.li`
     content: ">";
     margin: 0 1rem;
     color: ${colors.textLighter};
-    font-size: ${fontSizes._18};
+    font-size: ${fontSizes._19};
     vertical-align: middle;
   }
 

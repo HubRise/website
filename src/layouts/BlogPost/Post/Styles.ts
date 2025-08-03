@@ -2,13 +2,13 @@ import Image from "next/image"
 import styled from "styled-components"
 
 import { StyledDateAndAuthor } from "@components/DateAndAuthor/Styles"
-import { breakpoints, colors, fontSizeMixins, fontSizes, lineHeights } from "@utils/styles"
+import { breakpoints, colors, fontSizes, lineHeights } from "@utils/styles"
 
 export const StyledPost = styled.div`
   padding-bottom: 3.5rem;
 
   ${StyledDateAndAuthor} {
-    ${fontSizeMixins.text18};
+    font-size: ${fontSizes._19};
   }
 
   @media (min-width: ${breakpoints.large}) {

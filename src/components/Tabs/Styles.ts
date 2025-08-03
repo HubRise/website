@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components"
 
-import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
 export const StyledTabs = styled.div`
   display: flex;
@@ -30,8 +30,8 @@ export const Tab = styled.div<{ $isSelected: boolean }>`
   border-top: 4px solid ${colors.white};
   padding-top: 1.125rem;
   padding-bottom: 1.125rem;
-  ${mixin.clickable}
-  ${fontSizeMixins.text18}
+  ${mixin.clickable};
+  font-size: ${fontSizes._19};
   font-weight: 600;
   color: ${colors.textDarkest};
 

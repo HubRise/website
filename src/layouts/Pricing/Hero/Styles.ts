@@ -1,7 +1,7 @@
 import Link from "next/link"
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizeMixins, fontSizes, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
 export const PriceAndSellingPoints = styled.div`
   margin: 2.5rem 0;
@@ -35,7 +35,7 @@ export const SellingPoints = styled.div`
 export const SellingPoint = styled.div``
 
 export const SellingPointTitle = styled.h4`
-  ${fontSizeMixins.text18};
+  font-size: ${fontSizes._19};
   color: ${colors.textDarkest};
   font-weight: 600;
 `

@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components"
 
 import { Container } from "@components/ScreenContainer/Styles"
-import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
 export const DetailsContainer = styled.div`
   ${Container} {
@@ -70,7 +70,7 @@ export const ContentBlock = styled.div<{ $activeDetailsView: number }>`
 
     p,
     ul {
-      ${fontSizeMixins.text18}
+      font-size: ${fontSizes._19};
     }
   }
 

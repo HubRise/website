@@ -2,7 +2,7 @@ import Link from "next/link"
 import styled, { css } from "styled-components"
 
 import { StyledButton } from "@components/Button/Styles"
-import { breakpoints, colors, fontSizeMixins, mixin } from "@utils/styles"
+import { breakpoints, colors, mixin } from "@utils/styles"
 
 import { headerStyle } from "../shared/styles"
 

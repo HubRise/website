@@ -41,7 +41,7 @@ export const Content = styled.div`
 `
 
 export const Title = styled.div`
-  font-size: ${fontSizes._18};
+  font-size: ${fontSizes._19};
   font-weight: 500;
 `
 
