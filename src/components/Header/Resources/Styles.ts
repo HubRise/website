@@ -29,7 +29,7 @@ export const ResourcesLinks = styled.div`
 
 export const ResourcesLink = styled(Link)`
   @media (min-width: ${breakpoints.burgerMenu}) {
-    max-width: 14rem;
+    max-width: 15rem;
   }
 `
 

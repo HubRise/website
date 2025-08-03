@@ -37,7 +37,7 @@
           link_description: Grow through integrations and white branded tools.
         - link_label: Changelog
           link: /developers/changelog
-          link_description: View the latest integrations, API improvements, and fixes.
+          link_description: New features and improvements.
 - title: Resources
   to: /
   content:

@@ -18,7 +18,7 @@
         link: /fr/catalog-manager
         image: catalog-manager.png
       - title: Tableau de bord
-        description: Some text here...
+        description: Suivez vos performances
         link_label: En savoir plus
         link: /fr/dashboard
         image: dashboard.png
@@ -29,15 +29,15 @@
   content:
     resources:
       links:
-        - link_label: Documentation Développeurs
+        - link_label: Documentation
           link: /fr/developers
-          link_description: API docs, quick start and integration guides.
+          link_description: Documentation API, guides de démarrage et d'intégration.
         - link_label: Devenir Partenaire
           link: /fr/devenir-partenaire
-          link_description: Grow through integrations and white branded tools.
-        - link_label: Changelog
+          link_description: Intégrations et outils en marque blanche pour les éditeurs.
+        - link_label: Journal des modifications
           link: /developers/changelog
-          link_description: Intégrations récentes, améliorations de l'API et corrections de bugs.
+          link_description: Nouveautés et améliorations.
 - title: Ressources
   to: /
   content:
