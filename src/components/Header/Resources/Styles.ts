@@ -4,8 +4,16 @@ import styled from "styled-components"
 import { StyledButton } from "@components/Button/Styles"
 import { breakpoints, colors, fontSizes } from "@utils/styles"
 
-export const GetInTouchMainQuestion = styled.h4``
-export const GetInTouchText = styled.div``
+export const ResourcesContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  @media (min-width: ${breakpoints.burgerMenu}) {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+`
 
 export const ResourcesLinks = styled.div`
   display: grid;
@@ -54,29 +62,18 @@ export const GetInTouchCard = styled.div`
   }
 
   @media (min-width: ${breakpoints.burgerMenu}) {
-    width: 14rem;
+    width: 18rem;
   }
 `
 
-export const ResourcesContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+export const GetInTouchText = styled.div``
 
-  ${GetInTouchCard} {
-    ${GetInTouchMainQuestion} {
-      font-size: ${fontSizes._24};
-      font-weight: 600;
-      color: ${colors.white};
-    }
-  }
-
-  @media (min-width: ${breakpoints.burgerMenu}) {
-    flex-direction: row;
-    gap: 2.5rem;
-  }
+export const GetInTouchMainQuestion = styled.h4`
+  font-size: ${fontSizes._19};
+  font-weight: 600;
+  color: ${colors.white};
 `
 
 export const GetInTouchQuestion = styled.span`
-  font-size: ${fontSizes._19};
+  font-size: ${fontSizes._16};
 `

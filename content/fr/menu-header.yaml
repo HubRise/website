@@ -44,25 +44,25 @@
     resources:
       get_in_touch:
         main_question: Des besoins spécifiques ?
-        question: Vous souhaitez en parler ?
+        question: Vous préférez en parler ?
         button_label: Contactez-nous
         button_link: /fr/contactez-nous
       links:
         - link_label: Aide
           link: /fr/docs
-          link_description: Quick answers to navigate and use HubRise.
+          link_description: Guide d'utilisation de notre plateforme.
         - link_label: Blog
           link: /fr/blog
-          link_description: Product updates, tips, and industry insights.
+          link_description: Evolutions, cas d'utilisation et témoignages.
         - link_label: FAQ
           link: /fr/faqs
-          link_description: Common questions clarified in one convenient spot.
+          link_description:
         - link_label: Témoignages
           link: /fr/temoignages
-          link_description: Real customer and integrated partner feedback.
-        - link_label: Nous contacter
-          link: /fr/contactez-nous
-          link_description: Get in touch with our team
+          link_description: Retours de nos clients et partenaires.
         - link_label: Recruter un Expert
           link: fr/partenaires
-          link_description: Contacter un partenaire expérimenté pour vos développements.
+          link_description: Partenaires expérimentés pour vos développements.
+        - link_label: Nous contacter
+          link: /fr/contactez-nous
+          link_description:

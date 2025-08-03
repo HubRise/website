@@ -43,8 +43,8 @@
   content:
     resources:
       get_in_touch:
-        main_question: Specific needs?
-        question: Want to talk?
+        main_question: Any specific needs?
+        question: Prefer to discuss?
         button_label: Get in Touch
         button_link: /contact-us
       links:
