@@ -63,16 +63,16 @@ content:
     image: antoine.png
     name: Antoine Monnier
     job_title: Fondateur, HubRise
-    text: Depuis 2015, nous proposons une solution 2 à 5 fois moins chère que Deliverect avec des fonctionnalités comparables. Notre équipe est composée principalement d'ingénieurs, pas de commerciaux, et en tant qu'entreprise autofinancée, nous répondons uniquement à nos clients.
+    text: "Depuis 2015, nous offrons une alternative solide à Deliverect avec des fonctionnalités comparables pour un coût 2 à 5 fois inférieur. En tant qu'entreprise autofinancée, nous investissons dans la technologie et le support plutôt que dans l'expansion forcée. Notre équipe d'ingénieurs expérimentés se concentre sur ce qui compte vraiment : votre infrastructure digitale."
   why_choose:
     title: Pourquoi choisir HubRise ?
     cards:
-      - title: Specialsed Focus
-        text: HubRise is a middleware with a strong focus on its API and the quality of integrations, relying partners for solutions and services HubRise users need.
-      - title: Experienced team
-        text: HubRise team support and development team are composed of experienced engineers.
-      - title: Code and Infrastructure
-        text: Our code base highly technical, with a focus on robustness, scalability, and reliability.
+      - title: Fonctionnalités & prix
+        text: "Des fonctionnalités comparables à Deliverect, à un tarif abordable et stable : une seule hausse depuis 2015. Intégrations illimitées et pas de frais d’installation."
+      - title: Modèle économique
+        text: "Autofinancés, nous n’investissons pas dans des salons ni dans une hyper-croissance à l’étranger. Nous privilégions le produit et le support, et distribuons surtout via des partenaires, sans démarchage."
+      - title: Fiabilité & transparence
+        text: "API ouverte et journaux complets accessibles dans le back-office. Infrastructure robuste opérée par une équipe d’ingénieurs, pensée pour les environnements exigeants."
   special_pricing:
     title: Tarifs spéciaux
     chain_and_franchise:
