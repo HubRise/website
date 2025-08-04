@@ -97,7 +97,7 @@ Cliquez sur **Récupérer le catalogue** pour importer votre catalogue Zelty dan
 
 L'inventaire sera également mis à jour par cette action, mais uniquement si l'option **Activer la récupération automatique de l'inventaire** est activée dans la [configuration](/apps/zelty-bridge/configuration#inventory-sync).
 
-### Récupérer l'inventaire depuis Zelty
+### Récupérer l'inventaire depuis Zelty {#pull-inventory}
 
 Cliquez sur **Récupérer l'inventaire** pour synchroniser les ruptures de stock depuis Zelty vers HubRise.
 
