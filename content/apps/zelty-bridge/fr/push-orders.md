@@ -44,10 +44,13 @@ Comme pour les articles, les options sont transmises à Zelty sans nom, seul le 
 
 ## Promotions
 
-Les promotions (deals) dans HubRise sont envoyée comme des menus à Zelty :
+Les promotions (deals) dans HubRise sont envoyées comme des menus à Zelty. Le menu doit avoir un code ref numérique (`ref`), sinon il sera ignoré, et les articles de la promotion ne seront pas envoyés.
 
-- Le menu doit avoir un code ref numérique (`ref`). Les menus sans code ref ou avec des codes ref non numériques sont ignorés.
-- Chaque ligne de promotion dans HubRise est associée à une rubrique de menu dans Zelty. Si le menu contient 3 rubriques dans Zelty, la promotion doit contenir autant de lignes dans HubRise. Les lignes de promotion HubRise sont associées aux rubriques de menu Zelty dans l'ordre où elles apparaissent.
+Chaque ligne de promotion dans HubRise correspond à une rubrique de menu dans Zelty, dans l'ordre où elles apparaissent. Zelty vérifie que chaque article sélectionné est bien disponible dans la rubrique correspondante. Si un article n'est pas valide pour sa rubrique, la commande sera rejetée. Dans ce cas, le message d'erreur envoyé par Zelty est ambigu, et indique que le code ref de la promotion est invalide, alors qu'il s'agit en réalité d'un problème de correspondance des articles.
+
+Vous pouvez omettre des rubriques, mais uniquement en partant de la fin. Par exemple, pour un menu comprenant entrée, plat et dessert, vous pouvez commander sans le dessert, ou sans le plat et le dessert, mais vous ne pouvez pas omettre l'entrée seule.
+
+Certains paramètres de configuration Zelty ne sont pas pris en compte lors de l'envoi des commandes. Le paramètre **Cette rubrique est obligatoire** n'affecte pas la validation des commandes. De même, le champ **Nombre de produits choisissables** n'est pas respecté. Si vous souhaitez permettre plusieurs choix dans une rubrique, vous devez dupliquer explicitement les rubriques dans le menu Zelty.
 
 Si le code ref du menu n'existe pas dans Zelty, la commande sera rejetée. Voir [Commandes rejetées](#rejected-orders).
 

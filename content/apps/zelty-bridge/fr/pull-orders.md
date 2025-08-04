@@ -20,7 +20,7 @@ Pour activer l'import des commandes de Zelty vers HubRise, activez l'option **Re
 
 ### Articles standards
 
-Pour chaque article de type "plat" dans la commande Zelty, les informations suivantes sont transmises à HubRise :
+Pour chaque article de la commande Zelty, les informations suivantes sont transmises à HubRise :
 
 - `product_name` : nom de l'article
 - `sku_ref` : identifiant de l'article dans Zelty
@@ -29,7 +29,7 @@ Pour chaque article de type "plat" dans la commande Zelty, les informations suiv
 - `quantity` : toujours défini à "1" (Zelty gère les quantités en répétant les lignes)
 - `options` : liste des modificateurs associés
 
-### Menus et promotions
+### Promotions
 
 Les menus Zelty sont convertis en promotions (deals) dans HubRise :
 
@@ -38,7 +38,7 @@ Les menus Zelty sont convertis en promotions (deals) dans HubRise :
 - Le prix du premier plat inclut le prix de base du menu
 - Les plats supplémentaires ont un prix correspondant à leur supplément éventuel
 
-### Options et modificateurs
+### Options
 
 Les modificateurs Zelty sont transmis comme options HubRise avec :
 
@@ -85,8 +85,6 @@ Les remises appliquées dans Zelty sont transmises à HubRise avec :
 
 - `name` : libellé de la remise
 - `price_off` : montant de la remise
-
-Seules les remises avec un montant supérieur à zéro sont transmises.
 
 ## Statuts de commande {#order-status}
 
