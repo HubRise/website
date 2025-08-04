@@ -1,7 +1,7 @@
 ---
 title: Récupérer le catalogue
 path_override: recuperer-catalogue
-position: 6
+position: 8
 layout: documentation
 meta:
   title: Récupérer le catalogue | Zelty Bridge | HubRise

@@ -1,7 +1,7 @@
 ---
 title: Envoyer des commandes
 path_override: envoyer-commandes
-position: 7
+position: 6
 layout: documentation
 meta:
   title: Envoyer des commandes | Zelty Bridge | HubRise
@@ -106,20 +106,13 @@ Zelty peut envoyer des mises à jour de statut ultérieures à HubRise, selon la
 
 ## Types de service
 
-Zelty prend en charge trois types de service qui sont mappés depuis HubRise :
+Zelty prend en charge les trois valeurs possibles de `service_type` dans la commande HubRise : `delivery`, `collection` et `eat_in`.
 
-- **delivery** : pour les commandes livrées
-- **collection** → **takeaway** : pour les commandes à emporter
-- **eat_in** : pour les commandes sur place
+Pour les commandes en livraison, Zelty Bridge détermine le type de livraison de la manière suivante :
 
-### Types de livraison
-
-Pour les commandes en livraison, Zelty distingue deux types de fulfillment :
-
-- `deliver_by_partner` : livraison par une plateforme partenaire (par défaut)
-- `deliver_by_restaurant` : livraison par le restaurant (si l'adresse de livraison et l'ID client sont présents)
-
-Le type est déterminé automatiquement en fonction du code ref du type de service (`service_type_ref`) : si le code est `LIV_PARTENAIRE`, la livraison est assurée par le partenaire.
+- Si le `service_type_ref` de la commande est `LIV_PARTENAIRE`, la commande est considérée comme livrée par un partenaire.
+- Si l'adresse de livraison est présente et que l'ID client est renseigné, la commande est considérée comme livrée par le restaurant.
+- Si aucune de ces conditions n'est remplie, la commande est considérée comme livrée par un partenaire.
 
 ## Informations client
 
@@ -134,12 +127,12 @@ Si le client a un identifiant HubRise (`customer.id`), Zelty Bridge :
 Les informations client synchronisées incluent :
 
 - Nom et prénom
+- Nom de la société
 - Numéro de téléphone (au format E.164)
 - Adresse e-mail
 - Préférences marketing (SMS et e-mail)
 - Date de naissance
-- Carte de fidélité
-- Nom de l'entreprise
+- Numéro de carte de fidélité
 
 ### Client invité
 
