@@ -28,7 +28,7 @@ Les articles sans code ref ou avec des codes ref non numériques sont ignorés.
 
 Notez que le nom du produit (`product_name`) et celui de la SKU (`sku_name`) ne sont pas transmis à Zelty, qui utilise uniquement le code ref pour identifier les articles.
 
-Les articles avec un code ref valide mais inconnu dans le catalogue Zelty génèrent une erreur de validation : la commande n'apparaîtra pas dans Zelty, et un message d'erreur sera affiché sur la commande dans le back office HubRise.
+Les articles avec un code ref valide mais inconnu de Zelty génèrent une erreur de validation. Pour plus d'informations, consultez [Commandes rejetées](#rejected-orders).
 
 ### Encodage des options
 
@@ -40,7 +40,7 @@ Pour chaque option ou modificateur de la commande, Zelty Bridge transmet :
 
 Les options sans code ref ou avec des codes ref non numériques sont ignorées.
 
-Comme pour les articles, les options sont transmises à Zelty sans nom, seul le code ref étant utilisé pour les identifier. Si le code ref de l'option n'existe pas dans le catalogue Zelty, la commande sera rejetée, et une erreur sera affichée dans le back office HubRise.
+Comme pour les articles, les options sont transmises à Zelty sans nom, seul le code ref étant utilisé pour les identifier. Si le code ref de l'option n'existe pas dans Zelty, la commande sera rejetée. Voir [Commandes rejetées](#rejected-orders).
 
 ## Promotions
 
@@ -49,7 +49,7 @@ Les promotions (deals) dans HubRise sont envoyée comme des menus à Zelty :
 - Le menu doit avoir un code ref numérique (`ref`). Les menus sans code ref ou avec des codes ref non numériques sont ignorés.
 - Chaque ligne de promotion dans HubRise est associée à une rubrique de menu dans Zelty. Si le menu contient 3 rubriques dans Zelty, la promotion doit contenir autant de lignes dans HubRise. Les lignes de promotion HubRise sont associées aux rubriques de menu Zelty dans l'ordre où elles apparaissent.
 
-Si le code ref du menu n'existe pas dans le catalogue Zelty, la commande sera rejetée, et une erreur sera affichée dans le back office HubRise.
+Si le code ref du menu n'existe pas dans Zelty, la commande sera rejetée. Voir [Commandes rejetées](#rejected-orders).
 
 ## Frais additionnels
 
@@ -58,7 +58,7 @@ Les frais dans HubRise (livraison, service, etc.) sont envoyés comme des articl
 - `ref` : code ref, doit être numérique et correspondre à un article dans Zelty.
 - `price` : montant
 
-Les frais sans code ref numérique sont ignorés.
+Les mêmes règles s'appliquent que pour les articles, concernant les codes ref.
 
 ## Remises
 
@@ -72,6 +72,8 @@ Contrairement à HubRise, Zelty n'accepte qu'une seule remise par commande. Si p
 - Seul le champ `ref` de la première remise est pris en compte
 - Le montant envoyé est la somme des montants de toutes les remises
 
+Si le code ref de la remise n'existe pas dans Zelty, la commande sera rejetée. Voir [Commandes rejetées](#rejected-orders).
+
 ## Paiements
 
 Zelty Bridge transmet les informations de paiement de la commande HubRise :
@@ -79,20 +81,18 @@ Zelty Bridge transmet les informations de paiement de la commande HubRise :
 - `ref` : code ref du mode de paiement, doit être numérique et correspondre à une méthode de paiement dans Zelty.
 - `amount` : montant du paiement
 
-Les paiements sans code ref ou avec un code ref non numérique sont ignorés.
+Comme HubRise, Zelty prend en charge les paiements multiples.
 
-### Gestion des paiements multiples
-
-Zelty prend en charge les paiements multiples. Chaque paiement de la commande HubRise est transmis séparément.
+Les paiements sans code ref ou avec un code ref non numérique sont ignorés. Si le code ref du mode de paiement n'existe pas dans Zelty, la commande sera rejetée. Voir [Commandes rejetées](#rejected-orders).
 
 ## Statuts de commande
 
-### Réception des commandes
+### Envoi de la commande
 
-Lorsqu'une commande est reçue dans Zelty, le système informe HubRise en envoyant l'un des statuts suivants :
+Lorsqu'une commande est envoyée à Zelty, Zelty Bridge informe HubRise en mettant à jour le statut de la commande :
 
 - `accepted` : la commande a été acceptée par Zelty
-- `rejected` : la commande a été rejetée (code ref manquant, erreur de format, etc.)
+- `rejected` : la commande a été rejetée (code ref manquant, erreur de format, etc.). Voir [Commandes rejetées](#rejected-orders).
 
 Le rejet peut survenir pour plusieurs raisons :
 
@@ -100,9 +100,14 @@ Le rejet peut survenir pour plusieurs raisons :
 - Options avec des identifiants invalides
 - Informations client incomplètes pour une livraison
 
-### Mise à jour des statuts
+### Lorsque le statut change dans HubRise
 
-Zelty peut envoyer des mises à jour de statut ultérieures à HubRise, selon la configuration du système et le workflow du restaurant.
+Zelty Bridge réagit aux changements de statut suivants dans HubRise :
+
+- `in_preparation` : démarre la production de la commande (impression tickets, affichage écrans)
+- `cancelled` et `completed` : clôture la commande si elle est entièrement payée. Zelty ne permet pas de clôturer une commande qui n'est pas payée.
+
+Les autres statuts HubRise ne déclenchent aucune action dans Zelty.
 
 ## Types de service
 
@@ -177,3 +182,17 @@ Les informations suivantes de la commande HubRise sont également envoyées à Z
 ### Informations de TVA
 
 Si disponible, le taux de TVA (`tax_rate`) est transmis pour chaque article.
+
+## Commandes rejetées {#rejected-orders}
+
+Lorsqu'une commande est rejetée par Zelty, un message d'erreur détaillé est affiché dans le back-office HubRise. Pour voir ce message :
+
+1. Dans le back-office HubRise, allez dans **Commandes**.
+2. Cliquez sur la commande concernée.
+3. Le message d'erreur apparaît en haut de la page, sous le titre de la page.
+
+![Message d'erreur pour une commande rejetée dans HubRise](./images/008-zelty-order-rejected.png)
+
+Lorsque ce message apparaît, la commande n'est pas visible dans Zelty.
+
+Les causes de rejet les plus fréquentes sont des erreurs de codes ref. Pour résoudre ces erreurs, vérifiez que tous les codes ref sont correctement configurés dans vos applications connectées. Consultez la page [Associer les codes ref](/apps/zelty-bridge/map-ref-codes) pour plus de détails.
