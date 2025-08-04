@@ -71,7 +71,7 @@ Pour retrouver le code ref d'une méthode de paiement :
 2. Sélectionnez le moyen de paiement concerné.
 3. Le code ref est l'identifiant numérique visible dans l'URL de la page méthode de paiement, par exemple `https://bo.zelty.fr/transaction-methods/edit/12345?redirectURI=`, où `12345` est le code ref de la méthode de paiement.
 
-Alternativement, si Zelty Bridge est déjà connecté à Zelty, vous pouvez récupérer les codes ref des méthodes de paiement depuis la page **Statut** de Zelty Bridge, dans la section **Méthodes de paiement**. Cette section affiche les méthodes de paiement disponibles dans Zelty avec leurs codes ref correspondants.
+Alternativement, si Zelty Bridge est déjà connecté à Zelty, vous pouvez récupérer les codes ref des méthodes de paiement depuis la page **Statut** de Zelty Bridge, dans la section **Méthodes de paiement**. Cette section affiche les méthodes de paiement disponibles dans Zelty avec leurs codes ref correspondants. Voir aussi la [page Statut](/apps/zelty-bridge/user-interface#status).
 
 ## Types de service {#service-types}
 
