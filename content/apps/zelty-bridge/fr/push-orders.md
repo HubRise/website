@@ -44,15 +44,16 @@ Comme pour les articles, les options sont transmises à Zelty sans nom, seul le 
 
 ## Promotions
 
-Les promotions (deals) dans HubRise sont envoyées comme des menus à Zelty. Le menu doit avoir un code ref numérique (`ref`), sinon il sera ignoré, et les articles de la promotion ne seront pas envoyés.
+Les promotions dans HubRise sont envoyées comme des menus à Zelty. Le menu doit avoir un code ref numérique (`ref`), sinon il sera ignoré, et les articles de la promotion ne seront pas envoyés. Si le code ref du menu n'existe pas dans Zelty, la commande sera rejetée. Voir [Commandes rejetées](#rejected-orders).
 
-Chaque ligne de promotion dans HubRise correspond à une rubrique de menu dans Zelty, dans l'ordre où elles apparaissent. Zelty vérifie que chaque article sélectionné est bien disponible dans la rubrique correspondante. Si un article n'est pas valide pour sa rubrique, la commande sera rejetée. Dans ce cas, le message d'erreur envoyé par Zelty est ambigu, et indique que le code ref de la promotion est invalide, alors qu'il s'agit en réalité d'un problème de correspondance des articles.
+Les lignes de la promotion dans HubRise sont associées aux rubriques du menu dans Zelty, dans l'ordre où elles apparaissent. Chaque article sélectionné doit être disponible dans la rubrique correspondante. A défaut, la commande sera rejetée, avec un message d'erreur Zelty ambigu, indiquant que le code ref de la promotion est invalide.
 
 Vous pouvez omettre des rubriques, mais uniquement en partant de la fin. Par exemple, pour un menu comprenant entrée, plat et dessert, vous pouvez commander sans le dessert, ou sans le plat et le dessert, mais vous ne pouvez pas omettre l'entrée seule.
 
-Certains paramètres de configuration Zelty ne sont pas pris en compte lors de l'envoi des commandes. Le paramètre **Cette rubrique est obligatoire** n'affecte pas la validation des commandes. De même, le champ **Nombre de produits choisissables** n'est pas respecté. Si vous souhaitez permettre plusieurs choix dans une rubrique, vous devez dupliquer explicitement les rubriques dans le menu Zelty.
+Certains paramètres de Zelty ne sont pas pris en compte :
 
-Si le code ref du menu n'existe pas dans Zelty, la commande sera rejetée. Voir [Commandes rejetées](#rejected-orders).
+- Le paramètre **Cette rubrique est obligatoire** n'affecte pas la validation des commandes.
+- Le champ **Nombre de produits choisissables** n'est pas respecté. Si vous souhaitez permettre plusieurs choix dans une rubrique, vous devez dupliquer explicitement les rubriques dans le menu Zelty.
 
 ## Frais additionnels
 
