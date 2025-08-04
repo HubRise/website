@@ -16,9 +16,9 @@ Cette page décrit les informations transmises de Zelty vers HubRise lorsque vou
 
 Pour activer l'import des commandes de Zelty vers HubRise, activez l'option **Recevoir les commandes de Zelty** dans la page de configuration de Zelty Bridge. Pour plus d'informations, consultez la page [Configuration](/apps/zelty-bridge/configuration).
 
-## Articles et options {#items-and-options}
+## Articles et options
 
-### Articles standards
+### Articles
 
 Pour chaque article de la commande Zelty, les informations suivantes sont transmises à HubRise :
 
@@ -28,15 +28,6 @@ Pour chaque article de la commande Zelty, les informations suivantes sont transm
 - `tax_rate` : taux de TVA appliqué
 - `quantity` : toujours défini à "1" (Zelty gère les quantités en répétant les lignes)
 - `options` : liste des modificateurs associés
-
-### Promotions
-
-Les menus Zelty sont convertis en promotions (deals) dans HubRise :
-
-- Chaque menu génère une promotion avec un `name` et un `ref` correspondant au menu Zelty
-- Les plats du menu sont ajoutés comme lignes de promotion avec une référence `deal_key`
-- Le prix du premier plat inclut le prix de base du menu
-- Les plats supplémentaires ont un prix correspondant à leur supplément éventuel
 
 ### Options
 
@@ -48,7 +39,16 @@ Les modificateurs Zelty sont transmis comme options HubRise avec :
 - `price` : prix du modificateur
 - `quantity` : quantité du modificateur
 
-## Informations client {#customer}
+## Promotions
+
+Les menus Zelty sont convertis en promotions (deals) dans HubRise :
+
+- Chaque menu génère une promotion avec un `name` et un `ref` correspondant au menu Zelty
+- Les plats du menu sont ajoutés comme lignes de promotion avec une référence `deal_key`
+- Le prix du premier plat inclut le prix de base du menu
+- Les plats supplémentaires ont un prix correspondant à leur supplément éventuel
+
+## Informations client
 
 Si la commande Zelty contient des informations client, Zelty Bridge :
 
@@ -69,7 +69,7 @@ Les informations client synchronisées incluent :
 - `email_marketing` : consentement marketing e-mail
 - `loyalty_cards` : carte de fidélité (si disponible)
 
-## Paiements {#payments}
+## Paiements
 
 Les transactions Zelty sont converties en paiements HubRise :
 
@@ -79,14 +79,14 @@ Les transactions Zelty sont converties en paiements HubRise :
 
 Zelty Bridge prend en charge les paiements multiples sur une même commande.
 
-## Remises {#discounts}
+## Remises
 
 Les remises appliquées dans Zelty sont transmises à HubRise avec :
 
 - `name` : libellé de la remise
 - `price_off` : montant de la remise
 
-## Statuts de commande {#order-status}
+## Statuts de commande
 
 Zelty Bridge synchronise les statuts de commande selon la correspondance suivante :
 
@@ -98,11 +98,11 @@ Zelty Bridge synchronise les statuts de commande selon la correspondance suivant
 | `cancelled`  | `cancelled`           | Commande annulée                 |
 | `closed`     | `completed`           | Commande clôturée                |
 
-## Types de service {#service-types}
+## Types de service
 
 Le modes de commande Zelty est converti en type de service HubRise : `delivery`, `collection` ou `eat_in`.
 
-## Informations supplémentaires {#additional-info}
+## Informations supplémentaires
 
 ### Identifiants de commande
 
