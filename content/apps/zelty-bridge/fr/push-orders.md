@@ -173,7 +173,7 @@ Zelty Bridge extrait automatiquement le numéro de rue du début de `address_1` 
 
 Les informations suivantes de la commande HubRise sont également envoyées à Zelty, avec la correspondance suivante :
 
-- `collection_code` : ID de commande
+- `collection_code` : numéro d'affichage de la commande
 - `expected_time` : heure attendue de la commande
 - `customer_notes` : commentaire de la commande
 - `custom_fields.restaurant.table_name` : numéro de table pour les commandes sur place
