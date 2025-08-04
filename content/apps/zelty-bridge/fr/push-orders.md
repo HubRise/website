@@ -118,7 +118,7 @@ Pour les commandes en livraison, Zelty Bridge détermine le type de livraison de
 
 ### Client enregistré
 
-Si le client a un identifiant HubRise (`customer.id`), Zelty Bridge :
+Si le client a un identifiant HubRise (`id`), Zelty Bridge :
 
 1. Crée ou met à jour le client dans Zelty
 2. Associe la commande au client Zelty
@@ -126,51 +126,54 @@ Si le client a un identifiant HubRise (`customer.id`), Zelty Bridge :
 
 Les informations client synchronisées incluent :
 
-- Nom et prénom
-- Nom de la société
-- Numéro de téléphone (au format E.164)
-- Adresse e-mail
-- Préférences marketing (SMS et e-mail)
-- Date de naissance
-- Numéro de carte de fidélité
+- `first_name` : prénom
+- `last_name` : nom de famille
+- `company_name` : nom de la société
+- `phone` : numéro de téléphone (converti au format E.164)
+- `email` : adresse e-mail
+- `sms_marketing` : consentement marketing SMS
+- `email_marketing` : consentement marketing e-mail
+- `birth_date` : date de naissance
+- `loyalty_cards` : le champ `ref` de la première carte de fidélité est transmis comme identifiant de fidélité (si disponible). Le solde de la carte de fidélité n'est pas synchronisé.
 
 ### Client invité
 
 Pour les commandes sans identifiant client, Zelty Bridge transmet :
 
-- `first_name` : prénom et nom concaténés
-- `phone` : numéro de téléphone et code d'accès séparés par " / "
-- `address` : adresse de livraison complète (pour les livraisons uniquement)
+- `first_name` et `last_name` : concaténés en un seul champ
+- `phone` : numéro de téléphone, concaténé avec `phone_access_code` si disponible
+
+Pour les livraisons uniquement :
+
+- `address_1`, `postal_code`, `city` : adresse de livraison
+- `address_2`, `delivery_notes` : transmis comme complément d'adresse
+- `latitude` et `longitude` : coordonnées GPS
 
 ### Gestion des adresses
 
-Zelty Bridge extrait automatiquement le numéro de rue du début de l'adresse (ex: "12 bis" dans "12 bis rue de la Paix"). L'adresse est décomposée en :
+Zelty Bridge extrait automatiquement le numéro de rue du début de `address_1` (ex: "12 bis" dans "12 bis rue de la Paix"). Les champs HubRise utilisés sont :
 
-- `street_num` : numéro de rue
-- `street` : nom de la rue
-- `zip_code` : code postal
+- `address_1` : adresse principale (numéro et rue extraits automatiquement)
+- `address_2` : complément d'adresse
+- `postal_code` : code postal
 - `city` : ville
-- `address_more` : complément d'adresse et notes de livraison
-- `location` : coordonnées GPS [latitude, longitude]
+- `delivery_notes` : notes de livraison
+- `latitude` et `longitude` : coordonnées GPS
 
 ## Informations supplémentaires
 
-### Identifiant de commande
-
-Zelty Bridge génère un identifiant unique pour chaque commande HubRise :
-
-- Format : `hr_id_[ID_HUBRISE]`
-- Cet identifiant permet de tracer les commandes créées via HubRise
-
 ### Autres champs transmis
 
-- `display_id` : code de collection de la commande
-- `due_date` : heure attendue de la commande
-- `comment` : notes client sur la commande
-- `table` : nom de la table (pour les commandes sur place)
-- `source` : origine de la commande (ubereats, deliveroo, justeat, web, mobile, kiosk, pos)
-- `virtual_brand_name` : nom de la marque virtuelle (nom de la connexion HubRise)
+Les informations suivantes de la commande HubRise sont également envoyées à Zelty, avec la correspondance suivante :
 
-### Informations de taxe
+- `collection_code` : ID de commande
+- `expected_time` : heure attendue de la commande
+- `customer_notes` : commentaire de la commande
+- `custom_fields.restaurant.table_name` : numéro de table pour les commandes sur place
+- `created_by` : si la commande vient d'une plateforme de commande (Uber Eats, Deliveroo, ou Just Eat), le nom de la plateforme est transmis comme source de la commande.
+- `channel` : source de la commande. Seules les valeurs `web`, `mobile`, `kiosk`, et `pos` sont prises en charge, les autres sont ignorées.
+- `connection_name` : marque virtuelle
 
-Si disponible, le taux de taxe (`tax_rate`) est transmis pour chaque article. Cela permet à Zelty de calculer correctement les montants HT et TTC.
+### Informations de TVA
+
+Si disponible, le taux de TVA (`tax_rate`) est transmis pour chaque article.
