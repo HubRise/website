@@ -13,6 +13,7 @@ HubRise et Zelty utilisent chacun leur propre terminologie. Un même concept peu
 | Zelty            | HubRise            | Description                                                |
 | ---------------- | ------------------ | ---------------------------------------------------------- |
 | Catalogue        | Variante           | Version différente du menu avec des prix spécifiques.      |
+| Tag              | Catégorie          | Un groupe de produits.                                     |
 | Option           | Liste d'options    | Groupe de modificateurs (ex: taille, suppléments).         |
 | Valeur d'option  | Option             | Choix spécifique dans une liste d'options.                 |
 | Menu             | Promotion          | Offre combinée de plusieurs produits à prix réduit.        |
