@@ -8,7 +8,7 @@ meta:
   description: Découvrez les détails techniques sur la réception des commandes de Zelty vers HubRise, la correspondance des champs et le workflow de mise à jour des statuts.
 ---
 
-Zelty Bridge peut importer les commandes de votre logiciel de caisse Zelty vers HubRise en temps réel. Cela inclut les commandes créées dans Zelty, ainsi que toutes les modifications apportées aux commandes (ajout ou suppression d'articles et de paiements).
+Zelty Bridge peut importer les commandes de votre logiciel de caisse Zelty vers HubRise en temps réel. Cela inclut les commandes créées dans Zelty, ainsi que toutes les modifications apportées aux commandes, dont l'ajout et la suppression d'articles et de paiements.
 
 Cette page décrit les informations transmises de Zelty vers HubRise lorsque vous activez l'import des commandes.
 
@@ -33,9 +33,9 @@ Pour chaque article de la commande Zelty, les informations suivantes sont transm
 
 Les modificateurs Zelty sont transmis comme options HubRise avec :
 
-- `option_list_name` : nom générique de la liste d'options
+- `option_list_name` : la valeur est toujours "Options", Zelty ne communiquant pas le nom de la liste d'options
 - `name` : nom du modificateur
-- `ref` : identifiant du modificateur
+- `ref` : identifiant du modificateur dans Zelty
 - `price` : prix du modificateur
 - `quantity` : quantité du modificateur
 
@@ -44,15 +44,57 @@ Les modificateurs Zelty sont transmis comme options HubRise avec :
 Les menus Zelty sont convertis en promotions (deals) dans HubRise :
 
 - Chaque menu génère une promotion avec un `name` et un `ref` correspondant au menu Zelty
-- Les plats du menu sont ajoutés comme lignes de promotion avec une référence `deal_key`
+- Les plats du menu sont ajoutés comme lignes de promotion
 - Le prix du premier plat inclut le prix de base du menu
 - Les plats supplémentaires ont un prix correspondant à leur supplément éventuel
+
+## Remises
+
+Les remises appliquées dans Zelty sont transmises à HubRise avec :
+
+- `name` : libellé de la remise
+- `price_off` : montant de la remise
+
+## Paiements
+
+Les transactions Zelty sont converties en paiements HubRise :
+
+- `name` : méthode de paiement
+- `amount` : montant du paiement
+- `ref` : identifiant de la méthode de paiement
+
+Zelty Bridge prend en charge les paiements multiples sur une même commande.
+
+## Statuts de commande
+
+Zelty Bridge synchronise les statuts de commande selon la correspondance suivante :
+
+| Statut Zelty | Statut HubRise        | Description                      |
+| ------------ | --------------------- | -------------------------------- |
+| `production` | `in_preparation`      | Commande en cours de préparation |
+| `ready`      | `awaiting_collection` | Commande prête                   |
+| `ended`      | `completed`           | Commande terminée                |
+| `cancelled`  | `cancelled`           | Commande annulée                 |
+| `closed`     | `completed`           | Commande clôturée                |
+
+## Modification des commandes
+
+Lorsqu'une commande est modifiée dans Zelty, Zelty Bridge modifie la commande correspondante dans HubRise, peu importe qu'elle ait été créée depuis HubRise ou depuis Zelty puis importée dans HubRise. Les modifications supportées sont :
+
+- Ajout ou suppression d'articles
+- Ajout ou suppression de paiements
+
+Cette synchronisation bidirectionnelle permet de couvrir de multiples scénarios : dans le cas du paiement à table par exemple, une commande peut être payée intégralement dans l'application, ou payée partiellement dans Zelty puis le solde réglé dans l'application. De même, des articles peuvent être ajoutés alternativement dans Zelty et dans une application de commande à table.
+
+## Types de service
+
+Le modes de commande Zelty est converti en type de service HubRise : `delivery`, `collection` ou `eat_in`.
 
 ## Informations client
 
 Si la commande Zelty contient des informations client, Zelty Bridge :
 
-1. Vérifie si le client existe déjà dans HubRise (via `private_ref`)
+1. Vérifie si le client existe déjà dans HubRise
 2. Crée ou met à jour le client si nécessaire
 3. Associe la commande au client HubRise
 
@@ -67,40 +109,7 @@ Les informations client synchronisées incluent :
 - `company_name` : nom de la société
 - `sms_marketing` : consentement marketing SMS
 - `email_marketing` : consentement marketing e-mail
-- `loyalty_cards` : carte de fidélité (si disponible)
-
-## Paiements
-
-Les transactions Zelty sont converties en paiements HubRise :
-
-- `name` : méthode de paiement
-- `amount` : montant du paiement
-- `ref` : identifiant de la méthode de paiement
-
-Zelty Bridge prend en charge les paiements multiples sur une même commande.
-
-## Remises
-
-Les remises appliquées dans Zelty sont transmises à HubRise avec :
-
-- `name` : libellé de la remise
-- `price_off` : montant de la remise
-
-## Statuts de commande
-
-Zelty Bridge synchronise les statuts de commande selon la correspondance suivante :
-
-| Statut Zelty | Statut HubRise        | Description                      |
-| ------------ | --------------------- | -------------------------------- |
-| `production` | `in_preparation`      | Commande en cours de préparation |
-| `ready`      | `awaiting_collection` | Commande prête                   |
-| `ended`      | `completed`           | Commande terminée                |
-| `cancelled`  | `cancelled`           | Commande annulée                 |
-| `closed`     | `completed`           | Commande clôturée                |
-
-## Types de service
-
-Le modes de commande Zelty est converti en type de service HubRise : `delivery`, `collection` ou `eat_in`.
+- `loyalty_cards` : carte de fidélité avec `ref` correspondant à l'identifiant de fidélité Zelty. Le solde de la carte n'est pas synchronisé.
 
 ## Informations supplémentaires
 
@@ -113,25 +122,3 @@ Le modes de commande Zelty est converti en type de service HubRise : `delivery`,
 
 - `customer_notes` : commentaire de la commande
 - `custom_fields.restaurant.table_name` : numéro de table, pour les commandes sur place
-
-## Modification des commandes
-
-Zelty Bridge gère les modifications de commandes :
-
-1. Ajout d'articles : les nouveaux articles sont ajoutés à la commande existante
-2. Suppression d'articles : les articles supprimés sont marqués comme `deleted: true`
-3. Modification des quantités : gérée par ajout/suppression de lignes
-4. Ajout de paiements : les nouveaux paiements sont ajoutés
-5. Suppression de paiements : les paiements supprimés sont marqués comme `deleted: true`
-
-Cette approche permet de maintenir un historique complet des modifications tout en reflétant l'état actuel de la commande.
-
-### Commandes créées par HubRise
-
-Si une commande a été initialement créée dans HubRise et envoyée à Zelty, Zelty Bridge reconnaît cette commande grâce à son identifiant unique. Dans ce cas :
-
-- Les modifications apportées dans Zelty sont synchronisées vers HubRise
-- La commande n'est pas dupliquée
-- L'historique complet des modifications est préservé
-
-Cela permet une synchronisation bidirectionnelle complète entre Zelty et HubRise.
