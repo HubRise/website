@@ -94,12 +94,6 @@ Lorsqu'une commande est envoyée à Zelty, Zelty Bridge informe HubRise en metta
 - `accepted` : la commande a été acceptée par Zelty
 - `rejected` : la commande a été rejetée (code ref manquant, erreur de format, etc.). Voir [Commandes rejetées](#rejected-orders).
 
-Le rejet peut survenir pour plusieurs raisons :
-
-- Articles avec des codes ref manquants ou non numériques
-- Options avec des identifiants invalides
-- Informations client incomplètes pour une livraison
-
 ### Lorsque le statut change dans HubRise
 
 Zelty Bridge réagit aux changements de statut suivants dans HubRise :
@@ -108,6 +102,14 @@ Zelty Bridge réagit aux changements de statut suivants dans HubRise :
 - `cancelled` et `completed` : clôture la commande si elle est entièrement payée. Zelty ne permet pas de clôturer une commande qui n'est pas payée.
 
 Les autres statuts HubRise ne déclenchent aucune action dans Zelty.
+
+## Modification des commandes
+
+Lorsqu'une commande existante est modifiée dans HubRise, Zelty Bridge transmet les nouveaux articles et paiements à Zelty.
+
+Cette fonctionnalité permet d'intégrer des solutions de commande ou de paiement à table, où une commande initiale est créée dans HubRise, puis des articles ou paiements supplémentaires sont ajoutés ultérieurement.
+
+En revanche, Zelty ne permet pas de supprimer des articles ou des paiements d'une commande existante. Les suppressions effectuées dans HubRise sont donc ignorées.
 
 ## Types de service
 
