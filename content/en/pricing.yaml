@@ -15,11 +15,11 @@ content:
       period: Excl. VAT / location / month
     selling_points:
       - title: No Commitment
-        text: Cancel our subscription autonomously, any time
+        text: Cancel your subscription at any time
       - title: No Setup Fee
         text: Create an account. Connect apps. Your subscription starts when you are ready
       - title: Unlimited Orders
-        text: No limit to the number of transactions sent through your location
+        text: No limit to the number of transactions sent, except for Dark Kitchen
       - title: Unlimited Connections
         text: Connect as many apps as you like to your location
     included_features:
@@ -55,7 +55,7 @@ content:
         - text: Mobile, voice, or chat ordering apps
         - text: Dine-in apps
         - text: Auto-Print
-        - text: Operations management (inventory, purchasing)
+        - text: Purchasing management
         - text: Delivery management
         - text: Delivery services
         - text: And more…
@@ -63,14 +63,14 @@ content:
     image: antoine.png
     name: Antoine Monnier
     job_title: Founder, HubRise
-    text: "Since 2015, we’ve offered a strong alternative to Deliverect with comparable features at 2–5x lower cost. As a self-funded company, we invest in technology and support rather than aggressive expansion. Our experienced engineering team focuses on what truly matters: your digital infrastructure."
+    text: "We offer a strong alternative to Deliverect with comparable features at 2–5x lower cost. As a self-funded company with a partnership-based model with publishers, we invest in what truly matters for our clients: technology and support."
   why_choose:
     title: Why choose HubRise?
     cards:
       - title: Features & pricing
-        text: "Comparable features to Deliverect at an affordable and stable rate: only one increase since 2015. Unlimited integrations and no setup fees."
-      - title: Business model
-        text: "Self-funded: we do not spend on trade shows or hyper-growth abroad. We prioritize product and support, and primarily distribute through partners without outbound sales."
+        text: "Comparable features to Deliverect at a fair and stable rate: only one increase since 2015. Unlimited integrations and no setup fees."
+      - title: Expert and responsive support
+        text: "Our model allows us to focus on the essentials: a robust product and quality customer support. You interact directly with technical experts who know the platform perfectly and can solve your problems quickly."
       - title: Reliability & transparency
         text: "Open API and full logs available in the back office. Robust infrastructure run by an engineering team, built for demanding environments."
   special_pricing:
@@ -78,7 +78,7 @@ content:
     chain_and_franchise:
       title: Chain and Franchise Pricing
       description: Volume discounts make your per location cost decrease as you grow.
-      pricing_list_description: 'Monthly fee per location:'
+      pricing_list_description: "Monthly fee per location:"
       pricing_list:
         - text: Locations 1 to 5
           price: €35
@@ -86,11 +86,11 @@ content:
           price: €30
         - text: Locations 31 and more
           price: €27
-      special_proposal_html: 'Example for 12 locations: (5 x €35) + (7 x €30) = €385 per month.'
+      special_proposal_html: "Example for 12 locations: (5 x €35) + (7 x €30) = €385 per month."
     dark_kitchen:
       title: Dark Kitchen
       description: Special monthly and setup fees apply to stores operating multiple virtual brands.
-      pricing_list_description: 'Monthly fee depends on the number of orders received for the location:'
+      pricing_list_description: "Monthly fee depends on the number of orders received for the location:"
       pricing_list:
         - text: 0 to 1,500 orders per month - standard fee
           price: €35
@@ -100,7 +100,7 @@ content:
           price: €75
         - text: Add €20 for every additional 1,500 monthly orders
           price:
-      special_proposal_html: One-time €25 setup fee per brand, per platform. Discounts apply for grouped setups.
+      special_proposal_html: One-time €25 setup fee per brand, per platform. Negotiable for grouped setups.
     resellers_and_partners:
       title: Resellers and Integrated Partners
       description: HubRise offers a partnership programme, with or without white labelling.

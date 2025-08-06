@@ -1,4 +1,3 @@
-
 path: /tarifs
 meta:
   title: Tarifs | HubRise
@@ -8,7 +7,7 @@ content:
     title:
       part_1:
       part_2: Tarification
-      part_3: Abordable, Simple
+      part_3: Juste, Simple
       part_4: Et
       part_5: Transparente
     plan:
@@ -53,7 +52,8 @@ content:
         - text: Ecran cuisine (KDS)
         - text: Bornes de commande
         - text: Commande en ligne
-        - text: Commande à table
+        - text: Commande mobile, vocale ou par chat
+        - text: Applications de commande sur place
         - text: Impression automatique
         - text: Gestion des achats
         - text: Gestion des livraisons
@@ -63,22 +63,22 @@ content:
     image: antoine.png
     name: Antoine Monnier
     job_title: Fondateur, HubRise
-    text: "Depuis 2015, nous offrons une alternative solide à Deliverect avec des fonctionnalités comparables pour un coût 2 à 5 fois inférieur. En tant qu'entreprise autofinancée, nous investissons dans la technologie et le support plutôt que dans l'expansion forcée. Notre équipe d'ingénieurs expérimentés se concentre sur ce qui compte vraiment : votre infrastructure digitale."
+    text: "Nous offrons une alternative solide à Deliverect avec des fonctionnalités comparables pour un coût 2 à 5 fois inférieur. En tant qu'entreprise autofinancée, avec un modèle basé sur les partenariats avec des éditeurs, nous investissons dans ce qui compte vraiment pour nos clients, la technologie et le support."
   why_choose:
     title: Pourquoi choisir HubRise ?
     cards:
       - title: Fonctionnalités & prix
-        text: "Des fonctionnalités comparables à Deliverect, à un tarif abordable et stable : une seule hausse depuis 2015. Intégrations illimitées et pas de frais d’installation."
-      - title: Modèle économique
-        text: "Autofinancés, nous n’investissons pas dans des salons ni dans une hyper-croissance à l’étranger. Nous privilégions le produit et le support, et distribuons surtout via des partenaires, sans démarchage."
+        text: "Des fonctionnalités comparables à Deliverect, à un tarif juste et stable : une seule hausse depuis 2015. Intégrations illimitées et pas de frais d’installation."
+      - title: Support expert et réactif
+        text: "Notre modèle nous permet de nous concentrer sur l'essentiel : un produit robuste et un support client de qualité. Vous échangez directement avec des experts techniques qui connaissent parfaitement la plateforme et peuvent résoudre vos problèmes rapidement."
       - title: Fiabilité & transparence
         text: "API ouverte et journaux complets accessibles dans le back-office. Infrastructure robuste opérée par une équipe d’ingénieurs, pensée pour les environnements exigeants."
   special_pricing:
     title: Tarifs spéciaux
     chain_and_franchise:
       title: Tarifs Chaînes et Franchises
-      description: Une remise au volume diminue le coût par point de vente avec la croissance du réseau.
-      pricing_list_description: 'Tarif mensuel par point de vente :'
+      description: Le coût par point de vente diminue avec la croissance de votre réseau.
+      pricing_list_description: "Tarif mensuel par point de vente :"
       pricing_list:
         - text: Points de vente 1 à 5
           price: 35 €
@@ -86,7 +86,7 @@ content:
           price: 30 €
         - text: Points de vente 31 et plus
           price: 27 €
-      special_proposal_html: 'Exemple pour 12 points de vente : (5 x 35 €) + (7 x 30 €) = 385 € par mois.'
+      special_proposal_html: "Exemple pour 12 points de vente : (5 x 35 €) + (7 x 30 €) = 385 € par mois."
     dark_kitchen:
       title: Dark Kitchen
       description: Un tarif mensuel spécial et des frais d'installation s'appliquent aux établissements gérant plusieurs marques virtuelles.
