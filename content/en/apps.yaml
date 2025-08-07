@@ -234,6 +234,13 @@ content:
           title: TASK
           description: TASK is an EPOS solution engineered for the global hospitality and dining sectors. It offers features such as real-time reporting enhanced with Business Intelligence capabilities, inventory management, and ordering solutions through kiosks, web platforms, and mobile apps. TASK excels in the management of customer relationship, loyalty, and promotions.
           additional_info:
+        - website: https://toporder.fr
+          documentation: /apps/toporder
+          logo: toporder.png
+          country: FR
+          title: Toporder
+          description: Toporder is an EPOS on iPad, designed for local businesses. It centralises payments, inventory, sales tracking, customer loyalty, online ordering, and automatic caller identification. Compatible with myPOS, it accepts all payment methods.
+          additional_info:
         - website: https://tickeat.io
           documentation: /apps/tickeat
           logo: tickeat.png
