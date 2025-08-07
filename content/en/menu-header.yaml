@@ -4,28 +4,26 @@
 - title: Integrations
   to: /apps
 - title: Included Apps
-  to: /
   content:
     included_apps:
       - title: OrderLine
-        description: Centralise your orders
+        description: Centralise all your orders
         link_label: Find out more
         link: /orderline
         image: orderline.png
       - title: Catalog Manager
-        description: Centralise your catalogs
+        description: Manage all your products in one place
         link_label: Find out more
         link: /catalog-manager
         image: catalog-manager.png
       - title: Dashboard
-        description: Check your sales reports
+        description: View your sales reports
         link_label: Find out more
         link: /dashboard
         image: dashboard.png
 - title: Pricing
   to: /pricing
 - title: Developers
-  to: /
   content:
     resources:
       links:
@@ -37,32 +35,31 @@
           link_description: New features and improvements.
         - link_label: Become a Partner
           link: /become-partner
-          link_description: Grow through integrations and white branded tools.
+          link_description: Grow through integrations and white-label tools.
 - title: Resources
-  to: /
   content:
     resources:
       get_in_touch:
         main_question: Any specific needs?
         question: Prefer to discuss?
-        button_label: Get in Touch
+        button_label: Contact Us
         button_link: /contact-us
       links:
         - link_label: Help
           link: /docs
-          link_description: Quick answers to navigate and use HubRise.
+          link_description: Quick answers to help you navigate and use HubRise.
         - link_label: Blog
           link: /blog
-          link_description: Product updates, tips, and industry insights.
+          link_description: Product updates, tips and customer stories.
         - link_label: FAQs
           link: /faqs
-          link_description: Common questions clarified in one convenient spot.
+          link_description:
         - link_label: Testimonials
           link: /testimonials
-          link_description: Real customer and integrated partner feedback.
+          link_description: Feedback from our customers and partners.
         - link_label: Hire an Expert
           link: /partners
-          link_description: Connect with experienced partners for development work.
+          link_description: Experienced partners for your development needs.
         - link_label: Contact Us
           link: /contact-us
-          link_description: Get in touch with our team members.
+          link_description:

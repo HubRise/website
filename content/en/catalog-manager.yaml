@@ -6,13 +6,14 @@ content:
     title:
       part_1: Manage all Your Products in
       part_2: One Place
-    description: |
-      Centralise all products across multiple sales channels and locations into a single app—Catalog Manager.
+      part_3: with
+      part_4: Catalog Manager
+    description: Centralise products across multiple sales channels and locations. Update prices, items, and availability, and see changes reflected instantly across all your platforms.
     content:
       firstSide: |
         Customers expect to order anytime, on the channel that suits them best. To meet this growing market demand, businesses go digital, but quickly face new challenges. As the number of channels increases, so does the complexity of managing them effectively and consistently.
       secondSide: |
-        Managing separate catalogs becomes a burden when juggling different channels, prices, and menus for breakfast, lunch, dinner, or happy hour. Catalog Manager helps centralise everything, keeping catalogs consistent, up to date, and fully in sync across your entire operation.
+        Managing separate catalogs becomes a burden when juggling different channels, prices, and menus for breakfast, lunch, dinner, or happy hour. Catalog Manager centralises your menus, keeping them consistent, up to date, and fully in sync across your entire operation.
   sales_channels:
     title: One Catalog, All Sales Channels
     description: Use HubRise catalog variants to manage a single catalog across all your sales channels and locations, even when prices or product availability vary.
@@ -20,52 +21,52 @@ content:
     title: Get Started in 5 Steps
     steps:
       - title: Create a HubRise Account
-        description: Sign up to create your HubRise account and centralise product catalogs or menus across locations and sales channels. Stop updating menus manually across multiple platforms—no more errors, no duplicated effort.
+        description: Sign up to create your HubRise account and centralise product catalogs or menus across locations and sales channels. No more manual updates across multiple platforms. Avoid errors and duplicated effort.
       - title: Connect Your Apps
-        description: Contact HubRise support to help you connect Catalog Manager and other apps you use daily—such as your EPOS, delivery platforms, and online ordering systems. We'll ensure your data flows smoothly between systems.
+        description: Contact HubRise support to help you connect Catalog Manager and other apps you use daily, such as your EPOS, delivery platforms, and online ordering systems. We'll ensure your data flows smoothly between systems.
       - title: Get Set Up
-        description: Pull your catalog or menu from your EPOS, Uber Eats, or any other app integrated with HubRise. Create catalog variants to customise pricing and enable items per channel or location, then link each variant to the corresponding app.
+        description: Import your catalog or menu from your EPOS, Uber Eats, or any app integrated with HubRise. Create catalog variants to customise pricing and enable items per channel or location, then link each variant to the relevant app.
       - title: Edit Catalogs
-        description: Add or update products, options, modifiers, images, descriptions, and tags, or create new categories, special offers, discounts, and bundles. Run bulk price updates and choose which products to display on each sales channel.
+        description: Add or update products, options, modifiers, images, descriptions, and tags. Create new categories, special offers, discounts, and bundles. Run bulk price updates and choose which products to display on each channel.
       - title: Manage and Publish
-        description: Use Catalog Manager to make ongoing changes to your catalogs or menus anytime, from anywhere. Rename, delete, or duplicate them when working on large updates. Click save to publish—all associated sales channels will be updated simultaneously.
+        description: Use Catalog Manager to make changes to your catalogs or menus anytime, from anywhere. Rename, delete, or duplicate catalogs when working on large updates. Click save to publish. Updates go live instantly across all your channels.
   app:
-    title: Catalog Manager, Your Free Catalog Management App
-    description: Centralise all your catalogs in Catalog Manager and manage them effortlessly from a single interface. Create a master catalog for all your locations and all your brands—including dark kitchens—and publish updates instantly with a simple click.
+    title: Catalog Manager, Your Catalog Management App
+    description: Centralise your catalogs and manage them from a single interface. Create a master catalog for your locations and brands, including dark kitchens, and publish updates instantly with one click.
     tabs:
-      - label: Create Products
+      - label: Add Products
         key: 0
         content:
-          title: Create Products, Options and Modifiers
-          description: Create products with associated modifiers, options, or option lists. Attach the appropriate option lists to product modifiers, giving you the flexibility to adjust prices and options based on product size.
+          title: Create Products and Option Lists
+          description: Create products, and group options into reusable option lists. Assign specific option lists to each product size for full flexibility in managing choices and prices.
           image: catalog-manager/tabs/create-products.png
-      - label: Customise Deals
+      - label: Set Up Deals
         key: 1
         content:
           title: Customise Deals and Discounts
-          description: Set up Deals—special offers configured with menu items, such as a three-course meal limited to a selection of items—or apply Discounts, which are percentage or fixed-amount reductions applied to the total purchase.
+          description: Set up Deals, which are special offers built with menu items, such as a three-course meal limited to selected items. You can also create Discounts, which apply a percentage or fixed-amount reduction to the total.
           image: catalog-manager/tabs/customise-deals.png
-      - label: Set Prices
+      - label: Fine-Tune Pricing
         key: 2
         content:
-          title: Set Channel- or Location-Specific Pricing
-          description: Adjust pricing for individual sales channels or locations using catalog variants. Tailor your pricing strategy to different market segments.
+          title: Set Pricing by Channel or Location
+          description: Adjust pricing for each sales channel or location using catalog variants. Use bulk update to quickly apply percentage increases or decreases to a variant, so you can easily tailor your pricing strategy to different market segments.
           image: catalog-manager/tabs/set-channels.png
-      - label: Enable Items
+      - label: Customise Offering
         key: 3
         content:
-          title: Activate Channel- or Location-Specific Items
-          description: Enable or disable specific items by sales channel, location, or collection method to match your operational or marketing needs using catalog variants.
+          title: Enable Items by Channel or Location
+          description: Use catalog variants to enable items by sales channel, location, or collection method, to match your operational and marketing needs.
           image: catalog-manager/tabs/control-availability.png
-      - label: Preview Catalogs
+      - label: Preview & Publish
         key: 4
         content:
           title: Preview Before Publishing
-          description: Ensure accuracy and consistency across all catalog variants you’ve created by previewing before saving. Push changes live across all associated sales channels.
+          description: Ready to publish? Preview each catalog variant to double-check for accuracy and consistency. When everything looks right, publish your changes to all channels instantly.
           image: catalog-manager/tabs/preview-mode.png
   action_block:
-    title: Discover More Apps to Streamline Your Operations
-    description: Check out the benefits of other free HubRise apps designed to streamline operations, optimise workflows, and simplify reporting.
+    title: Included Apps to Streamline Your Operations
+    description: Discover the other apps included with HubRise to streamline your operations, optimise workflows, and simplify reporting.
     buttons:
       - button_label: Explore OrderLine
         button_link: /orderline

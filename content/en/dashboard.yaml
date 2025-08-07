@@ -61,8 +61,8 @@ content:
           <p>Filter by location and date to uncover seasonal trends and better understand customer preferences.</p>
         image: top-selling-products.png
   action_block:
-    title: Discover More Apps to Streamline Your Operations
-    description: Discover the benefits of other free HubRise apps designed to streamline operations, ensure consistency across your content, and optimise workflows.
+    title: Included Apps to Streamline Your Operations
+    description: Discover the other apps included with HubRise to streamline your operations, optimise workflows, and simplify reporting.
     buttons:
       - button_label: Explore Catalog Manager
         button_link: /catalog-manager

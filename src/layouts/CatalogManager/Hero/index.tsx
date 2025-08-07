@@ -20,7 +20,8 @@ const Hero = ({ hero }: HeroProps): JSX.Element => {
         <PageHero
           title={
             <>
-              {title.part_1} <span>{title.part_2}</span>
+              {title.part_1} <span>{title.part_2} </span>
+              {title.part_3} <span>{title.part_4} </span>
             </>
           }
           description={description}
@@ -28,7 +29,7 @@ const Hero = ({ hero }: HeroProps): JSX.Element => {
         >
           <Image
             src="/images/catalog-manager/hero.png"
-            alt={`${title.part_1} ${title.part_2}`}
+            alt={`${title.part_1} ${title.part_2} ${title.part_3} ${title.part_4}`}
             width={1380}
             height={860}
           />

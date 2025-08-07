@@ -4,28 +4,26 @@
 - title: Intégrations
   to: /fr/apps
 - title: Apps Incluses
-  to: /
   content:
     included_apps:
       - title: OrderLine
-        description: Centralisez vos commandes
+        description: Centralisez toutes vos commandes
         link_label: En savoir plus
         link: /fr/orderline
         image: orderline.png
       - title: Catalog Manager
-        description: Gérez vos produits en un seul endroit
+        description: Gérez tous vos produits en un seul endroit
         link_label: En savoir plus
         link: /fr/catalog-manager
         image: catalog-manager.png
       - title: Tableau de bord
-        description: Suivez vos performances
+        description: Consultez vos rapports de vente
         link_label: En savoir plus
         link: /fr/dashboard
         image: dashboard.png
 - title: Tarifs
   to: /fr/tarifs
 - title: Développeurs
-  to: /
   content:
     resources:
       links:
@@ -37,9 +35,8 @@
           link_description: Nouveautés et améliorations.
         - link_label: Devenir Partenaire
           link: /fr/devenir-partenaire
-          link_description: Intégrations et outils en marque blanche pour les éditeurs.
+          link_description: Développez votre activité grâce aux intégrations et aux outils en marque blanche.
 - title: Ressources
-  to: /
   content:
     resources:
       get_in_touch:
@@ -50,10 +47,10 @@
       links:
         - link_label: Aide
           link: /fr/docs
-          link_description: Guide d'utilisation de notre plateforme.
+          link_description: Réponses rapides pour naviguer et utiliser HubRise.
         - link_label: Blog
           link: /fr/blog
-          link_description: Evolutions, cas d'utilisation et témoignages.
+          link_description: Evolutions du produit, conseils et témoignages.
         - link_label: FAQ
           link: /fr/faqs
           link_description:
@@ -61,8 +58,8 @@
           link: /fr/temoignages
           link_description: Retours de nos clients et partenaires.
         - link_label: Recruter un Expert
-          link: fr/partenaires
-          link_description: Partenaires expérimentés pour vos développements.
+          link: /fr/partenaires
+          link_description: Des partenaires expérimentés pour vos développements.
         - link_label: Nous contacter
           link: /fr/contactez-nous
           link_description:
