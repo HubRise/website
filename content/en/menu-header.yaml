@@ -32,12 +32,12 @@
         - link_label: Developer documentation
           link: /developers
           link_description: API docs, quick start and integration guides.
-        - link_label: Become a Partner
-          link: /become-partner
-          link_description: Grow through integrations and white branded tools.
         - link_label: Changelog
           link: /developers/changelog
           link_description: New features and improvements.
+        - link_label: Become a Partner
+          link: /become-partner
+          link_description: Grow through integrations and white branded tools.
 - title: Resources
   to: /
   content:

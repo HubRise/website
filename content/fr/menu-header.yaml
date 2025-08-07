@@ -32,12 +32,12 @@
         - link_label: Documentation
           link: /fr/developers
           link_description: Documentation API, guides de démarrage et d'intégration.
-        - link_label: Devenir Partenaire
-          link: /fr/devenir-partenaire
-          link_description: Intégrations et outils en marque blanche pour les éditeurs.
         - link_label: Journal des changements
           link: /developers/changelog
           link_description: Nouveautés et améliorations.
+        - link_label: Devenir Partenaire
+          link: /fr/devenir-partenaire
+          link_description: Intégrations et outils en marque blanche pour les éditeurs.
 - title: Ressources
   to: /
   content:
