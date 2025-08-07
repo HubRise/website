@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 import { StyledButton } from "@components/Button/Styles"
 import { StyledPageHero } from "@components/PageHero/Styles"
-import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizes, lineHeights, mixin } from "@utils/styles"
 
 import { HeroAppColor, linkHeroAppBorderColor } from "./utils"
 
@@ -64,8 +64,8 @@ export const AppInner = styled.div<{ $color: HeroAppColor }>`
   position: relative;
 
   span {
-    font-size: 0.625rem;
-    line-height: 0.75rem;
+    font-size: ${fontSizes._12};
+    line-height: ${lineHeights.compact};
     font-weight: 700;
   }
 
@@ -76,8 +76,7 @@ export const AppInner = styled.div<{ $color: HeroAppColor }>`
     padding: 1.25rem;
 
     span {
-      font-size: ${fontSizes._14};
-      line-height: normal;
+      font-size: ${fontSizes._16};
     }
   }
 
@@ -86,10 +85,6 @@ export const AppInner = styled.div<{ $color: HeroAppColor }>`
     width: 11.875rem;
     height: 11.875rem;
     padding: 1.5rem;
-
-    span {
-      font-size: ${fontSizes._16};
-    }
   }
 `
 
