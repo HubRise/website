@@ -10,9 +10,9 @@ meta:
 
 HubRise peut envoyer les commandes de différentes solutions connectées directement dans votre logiciel de caisse Lightspeed Restaurant. Pour cela, il vous suffit de connecter Lightspeed Restaurant Bridge à HubRise. Aucune configuration supplémentaire n'est requise.
 
-Cette page détaille les informations envoyées par HubRise à votre logiciel de caisse.
+## Informations envoyées à Lightspeed
 
-## Articles et options {#items-and-options}
+### Articles et options {#items-and-options}
 
 Lightspeed Restaurant Bridge envoie à votre logiciel de caisse des informations complètes sur les articles et les options, y compris le nom, le code ref du produit, la quantité et le prix.
 
@@ -20,7 +20,7 @@ Lightspeed Restaurant Bridge convertit les options avec un code ref qui commence
 
 Chaque article sur Lightspeed doit avoir un code ref. Les commandes contenant des articles avec des codes ref incorrects ou manquants sont rejetées par le logiciel de caisse. Ainsi, lorsqu'il envoie une commande au logiciel de caisse, Lightspeed Restaurant Bridge ignore tous les articles sans code ref.
 
-## Statuts de commande
+### Statuts de commande
 
 Lightspeed Restaurant Bridge crée une commande dans Lightspeed pour chaque commande créée sur HubRise. Le statut de la commande HubRise est mis à jour comme suit :
 
@@ -31,15 +31,15 @@ Lightspeed Restaurant Bridge crée une commande dans Lightspeed pour chaque comm
 
 Lorsqu'une commande est marquée comme `cancelled` dans HubRise, Lightspeed Restaurant imprime un message sur l'imprimante connectée pour indiquer l'annulation. Selon vos paramètres, ce message peut également apparaître à l'écran de la caisse. La commande reste présente dans Lightspeed et n'est pas supprimée.
 
-## Paiements
+### Paiements
 
-Lightspeed ne prend pas en charge les paiements fractionnés. Par conséquent, lorsqu'une commande contient plusieurs paiements, Lightspeed Restaurant Bridge envoie seulement le premier paiement de la liste, et les autres sont supprimés.
+Zéro, un ou plusieurs paiements peuvent être associés à une commande.
 
 Le code ref du paiement est utilisé pour associer la commande HubRise au mode de paiement correct dans Lightspeed. Lightspeed Restaurant Bridge ignore les paiements sans code ref.
 
-Pour savoir comment vérifier les codes ref des modes de paiement disponibles dans votre back-office Lightspeed, consultez [Associer les codes ref](/apps/lightspeed-restaurant/map-ref-codes#payment-methods).
+Pour savoir comment vérifier les codes ref des types de service disponibles dans votre back-office Lightspeed, consultez [Associer les codes ref](/apps/lightspeed-restaurant/map-ref-codes#payment-methods).
 
-### Gérer les différences de prix
+#### Gérer les différences de prix
 
 Lorsque le montant total du paiement ne correspond pas au prix total de la commande calculé par Lightspeed Restaurant, deux scénarios peuvent se produire :
 
@@ -52,13 +52,13 @@ Lorsque le montant total du paiement ne correspond pas au prix total de la comma
 
 ---
 
-### Arrondi suisse
+#### Règles d'arrondi du marché suisse
 
 Sur le marché suisse, en raison de l'absence de pièces de 1 et 2 centimes, Lightspeed arrondit automatiquement le total de la commande au multiple de 5 centimes le plus proche, comme la loi suisse l'exige.
 
 Pour éviter les écarts entre le total de la commande et le montant du paiement, HubRise applique les mêmes règles d'arrondi. Par exemple, un total de CHF 12,03 est arrondi à CHF 12,05.
 
-## Types de service
+### Types de service
 
 Lightspeed Restaurant exige que chaque type de service (livraison, à emporter, sur place) soit défini comme un profil de compte.
 
@@ -66,7 +66,7 @@ Le code ref du type de service est utilisé pour associer la commande HubRise au
 
 Pour savoir comment vérifier les codes ref des types de service disponibles dans votre back-office Lightspeed, consultez [Associer les codes ref](/apps/lightspeed-restaurant/map-ref-codes#service-types).
 
-## Informations client
+### Informations client
 
 Lightspeed Restaurant Bridge envoie à Lightspeed les informations complètes sur le client, si elles sont disponibles, y compris le nom, l'e-mail et l'adresse de livraison.
 
@@ -74,7 +74,7 @@ Si ces informations ne sont pas disponibles, Lightspeed Restaurant Bridge crée 
 
 ## Modifications de commande {#order-modifications}
 
-Les commandes créées dans HubRise sont synchronisées dans les deux sens. Lorsqu'une commande créée dans HubRise est modifiée dans Lightspeed, Lightspeed Restaurant Bridge envoie à HubRise les modifications des articles et des paiements. Lorsque la commande est modifiée dans HubRise, Lightspeed Restaurant Bridge envoie à Lightspeed les nouveaux articles et paiements, mais n'envoie pas les modifications des articles ou paiements existants.
+Les commandes créées dans HubRise sont synchronisées dans les deux sens. Lorsque la commande est modifiée dans HubRise, Lightspeed Restaurant Bridge envoie à Lightspeed les nouveaux articles et paiements, mais n'envoie pas les modifications des articles ou paiements existants. Lorsqu'une commande créée dans HubRise est modifiée dans Lightspeed, Lightspeed Restaurant Bridge envoie à HubRise les modifications des articles et des paiements.
 
 Les commandes créées dans Lightspeed peuvent être importées dans HubRise uniquement lorsqu'elles sont clôturées. Les modifications apportées à ces commandes ne sont pas envoyées à HubRise. Pour plus d'informations, voir [Importer les commandes](/apps/lightspeed-restaurant/pull-orders).
 
