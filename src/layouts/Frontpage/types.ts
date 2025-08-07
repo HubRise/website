@@ -31,10 +31,6 @@ export type TIncludedApp = {
   button_link: string
 }
 
-export type TAppLogo = {
-  logo: string
-}
-
 export interface FrontpageYaml {
   path: string
   meta: {
@@ -49,7 +45,6 @@ export interface FrontpageYaml {
   }
   content: {
     metrics: Array<TMetric>
-    app_carousel: Array<TAppLogo>
     features: {
       title: string
       description: string

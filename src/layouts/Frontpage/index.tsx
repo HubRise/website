@@ -6,7 +6,7 @@ import Metrics from "@components/Metrics"
 import TestimonialsBlock from "@components/TestimonialsBlock"
 import { FrontpageYaml } from "@layouts/Frontpage/types"
 import { TestimonialsYaml } from "@layouts/Testimonials/types"
-import { ContentImageMap } from "@utils/contentImage"
+import { ContentImage, ContentImageMap } from "@utils/contentImage"
 
 import AppCarousel from "./AppCarousel"
 import Features from "./Features"
@@ -44,7 +44,7 @@ const Frontpage = ({
     <>
       <Hero {...hero} descriptionMdx={heroDescriptionMdx} />
       <Metrics metrics={content.metrics} />
-      <AppCarousel apps={content.app_carousel} appLogosMap={appLogosMap} />
+      <AppCarousel appLogosMap={appLogosMap} />
       <Features {...content.features} descriptionMdx={featuresDescriptionMdx} featuresImagesMap={featuresImagesMap} />
       <Pricing {...content.pricing} descriptionMdx={pricingDescriptionMdx} />
       <IncludedApps {...content.included_apps} />

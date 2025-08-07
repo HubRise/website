@@ -2,13 +2,12 @@ import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 import { serialize } from "next-mdx-remote/serialize"
 
 import Frontpage from "@layouts/Frontpage"
-import { contentImageMap } from "@utils/contentImage"
+import { contentImageMap, contentImagesFromFolder } from "@utils/contentImage"
 import remarkTextPlugin from "@utils/mdx/remarkTextPlugin"
 import { Route, RouteName } from "@utils/router/types"
 
 const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Element> => {
   const yaml = route.context.yaml
-  const appLogos: Array<string> = yaml.content.app_carousel.map((app) => app.logo)
   const featuresImages: Array<string> = yaml.content.features.features_cards.map((feature) => feature.image)
 
   const testimonials = route.testimonials.yaml
@@ -24,7 +23,7 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
     testimonialLogoMap,
   ] = await Promise.all([
     serializeFrontpage(yaml.hero.description),
-    contentImageMap("/images/app-logos", appLogos),
+    contentImagesFromFolder("/images/app-logos"),
     serializeFrontpage(yaml.content.features.description),
     contentImageMap("/images/frontpage/proposals", featuresImages),
     serializeFrontpage(yaml.content.pricing.description),

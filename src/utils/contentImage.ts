@@ -76,6 +76,24 @@ export const contentImageMap = async (
 }
 
 /**
+ * Fetches all images from a specific folder.
+ * @param contentDirName The directory name(s) to search in. Can be a string or an array.
+ */
+export const contentImagesFromFolder = async (
+  contentDirName: ContentDirName | Array<ContentDirName>,
+): Promise<ContentImageMap> => {
+  const contentDirs = Array.isArray(contentDirName) ? contentDirName : [contentDirName]
+  const imageMaps = await Promise.all(
+    contentDirs.map(async (dirName) => {
+      const files = await fs.readdir(join(contentDirectory, dirName))
+      const imageFiles = files.filter((file) => /\.(jpg|jpeg|png|gif|svg|webp)$/i.test(file))
+      return contentImageMap(dirName, imageFiles)
+    }),
+  )
+  return Object.assign({}, ...imageMaps)
+}
+
+/**
  * Returns the path to the first image found, or throws an error.
  * @param contentDirName The directory name(s) to search in. Can be a string or an array.
  * @param filename
