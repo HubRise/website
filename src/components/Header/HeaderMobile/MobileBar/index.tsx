@@ -46,7 +46,7 @@ const MobileBar = ({ languagePaths, menuItems, isOpen, close }: MobileBarProps):
         <Header onClick={close}>
           <HeaderIcon code="close" size={iconSizes._32} />
           <LogoLink href={home}>
-            <Image src="/images/logo.png" alt="HubRise" width={142} height={38} />
+            <Image src="/images/logo.svg" alt="HubRise" width={142} height={38} />
           </LogoLink>
         </Header>
 

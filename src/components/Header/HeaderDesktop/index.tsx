@@ -35,7 +35,7 @@ const HeaderDesktop = ({ languagePaths, menuItems }: HeaderDesktopProps): JSX.El
     <StyledHeader data-testid="header:desktop" $isIntegrationsNavSticky={isIntegrationsNavSticky}>
       <HeaderWrapper>
         <Link href={home}>
-          <Image src="/images/logo.png" alt="HubRise" width={150} height={40} />
+          <Image src="/images/logo.svg" alt="HubRise" width={150} height={40} />
         </Link>
 
         <Menu>

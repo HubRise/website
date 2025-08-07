@@ -44,7 +44,7 @@ const HeaderMobile = ({ languagePaths, menuItems }: HeaderMobileProps): JSX.Elem
         </BurgerIcon>
 
         <LogoLink href={home}>
-          <Image src="/images/logo.png" alt="HubRise" width={142} height={38} />
+          <Image src="/images/logo.svg" alt="HubRise" width={142} height={38} />
         </LogoLink>
       </StyledHeader>
 
