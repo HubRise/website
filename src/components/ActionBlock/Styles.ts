@@ -1,24 +1,12 @@
 import styled from "styled-components"
 
 import { StyledButton } from "@components/Button/Styles"
-import { breakpoints, fontSizes } from "@utils/styles"
-
-export const StyledActionBlock = styled.div`
-  ${StyledButton} {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-
-    @media (min-width: ${breakpoints.medium}) {
-      width: fit-content;
-    }
-  }
-`
+import { breakpoints, mixin } from "@utils/styles"
 
 export const Description = styled.p`
   margin: 1rem auto 0;
   max-width: 60rem;
-  font-size: ${fontSizes._19};
+  ${mixin.responsiveText};
 `
 
 export const Buttons = styled.div`
