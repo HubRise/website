@@ -2,6 +2,15 @@ import styled from "styled-components"
 
 import { boxShadows, breakpoints, colors, mixin } from "@utils/styles"
 
+export const Wrapper = styled.div`
+  ${mixin.containerWrapper}
+  margin-top: 2rem;
+
+  @media (min-width: ${breakpoints.large}) {
+    margin-top: 3.5rem;
+  }
+`
+
 export const Tab = styled.div`
   background-color: ${colors.backgroundWhite};
   border-radius: 0.625rem;
@@ -43,10 +52,11 @@ export const Tab = styled.div`
 `
 
 export const TabTitle = styled.h3`
-  ${mixin.cardTitle}
+  ${mixin.cardTitle};
 `
 
 export const TabText = styled.p`
-  ${mixin.description}
-  margin-bottom: 1.5rem;
+  ${mixin.description};
+  margin: 2.5rem auto 2.5rem auto;
+  max-width: 65rem;
 `

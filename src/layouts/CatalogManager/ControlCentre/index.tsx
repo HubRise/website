@@ -5,17 +5,16 @@ import { useState } from "react"
 import ScreenContainer from "@components/ScreenContainer"
 import Tabs from "@components/Tabs"
 
-import { Wrapper } from "../shared/Styles"
 import { TApp } from "../types"
 
-import { Tab, TabText, TabTitle } from "./Styles"
+import { Tab, TabText, TabTitle, Wrapper } from "./Styles"
 
-interface CatalogManagerAppProps {
+interface ControlCentreProps {
   app: TApp
   descriptionMdx: MDXRemoteSerializeResult
 }
 
-const CatalogManagerApp = ({ app, descriptionMdx }: CatalogManagerAppProps): JSX.Element => {
+const ControlCentre = ({ app, descriptionMdx }: ControlCentreProps): JSX.Element => {
   const { tabs } = app
   const [activeTabNumber, setActiveTabNumber] = useState<number>(0)
 
@@ -43,4 +42,4 @@ const CatalogManagerApp = ({ app, descriptionMdx }: CatalogManagerAppProps): JSX
   )
 }
 
-export default CatalogManagerApp
+export default ControlCentre

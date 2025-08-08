@@ -7,7 +7,7 @@ import FiveSteps from "@components/FiveSteps"
 import GetInTouch from "@components/GetInTouch"
 import { GetInTouchYaml } from "@components/GetInTouch/types"
 
-import CatalogManagerApp from "./CatalogManagerApp"
+import ControlCentre from "./ControlCentre"
 import Hero from "./Hero"
 import SalesChannels from "./SalesChannels"
 import { CatalogManagerYaml } from "./types"
@@ -33,7 +33,7 @@ const CatalogManager = ({
       <Hero hero={content.hero} />
       <SalesChannels salesChannels={content.sales_channels} descriptionMdx={salesChannelsDescriptionMdx} />
       <FiveSteps fiveSteps={content.five_steps} />
-      <CatalogManagerApp app={content.app} descriptionMdx={appDescriptionMdx} />
+      <ControlCentre app={content.app} descriptionMdx={appDescriptionMdx} />
       <ActionBlock actionBlockData={content.action_block} />
       <GetInTouch title={title} description={description} button_label={button_label} button_link={button_link} />
     </>

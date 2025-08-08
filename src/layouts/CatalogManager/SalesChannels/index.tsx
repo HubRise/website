@@ -3,8 +3,9 @@ import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 
 import ScreenContainer from "@components/ScreenContainer"
 
-import { Wrapper } from "../shared/Styles"
 import { TSalesChannels } from "../types"
+
+import { ImageWrapper } from "./Styles"
 
 interface SalesChannelsProps {
   salesChannels: TSalesChannels
@@ -15,14 +16,14 @@ const SalesChannels = ({ salesChannels, descriptionMdx }: SalesChannelsProps): J
   return (
     <>
       <ScreenContainer bgColor="white" title={salesChannels.title} descriptionMdx={descriptionMdx} withHeader>
-        <Wrapper>
+        <ImageWrapper>
           <Image
             src="/images/catalog-manager/sales-channels.png"
             width={3750}
             height={2480}
             alt={salesChannels.title}
           />
-        </Wrapper>
+        </ImageWrapper>
       </ScreenContainer>
     </>
   )
