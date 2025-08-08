@@ -53,10 +53,11 @@ export const Tab = styled.div`
 
 export const TabTitle = styled.h3`
   ${mixin.cardTitle};
+  margin-top: 1rem;
 `
 
 export const TabText = styled.p`
   ${mixin.description};
-  margin: 2.5rem auto 2.5rem auto;
+  margin: 2rem auto;
   max-width: 65rem;
 `
