@@ -18,8 +18,7 @@ const PageNotFound = (): JSX.Element => {
           <p>{text(t("layout.404.content.text_before_link"))}</p>
 
           <p>
-            <ContentLink href={home}>{t("layout.404.content.text_link")}</ContentLink>
-            {" "}
+            <ContentLink href={home}>{t("layout.404.content.text_link")}</ContentLink>{" "}
             {text(t("layout.404.content.text_after_link"))}
           </p>
 
