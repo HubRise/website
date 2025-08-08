@@ -73,7 +73,7 @@ export const AppCard = styled.div<{ $index: number }>`
   border-radius: 0.875rem;
   width: 6.25rem;
   height: 6.25rem;
-  padding: 1.5rem 0.75rem;
+  padding: 0.5rem;
   position: relative;
   ${({ $index }) => ($index % 2 === 0 ? "top: 0;" : "top: 2rem;")}
 
