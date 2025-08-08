@@ -4,11 +4,9 @@ import { useState } from "react"
 
 import ScreenContainer from "@components/ScreenContainer"
 import Tabs from "@components/Tabs"
+import { Tab, TabText, TabTitle } from "@components/Tabs/commonStyles"
 
-import { Wrapper } from "../shared/Styles"
 import { TApps } from "../types"
-
-import { Tab, TabText, TabTitle } from "./Styles"
 
 interface AppsProps {
   apps: TApps
@@ -25,20 +23,18 @@ const Apps = ({ apps, descriptionMdx }: AppsProps): JSX.Element => {
 
   return (
     <ScreenContainer title={apps.title} descriptionMdx={descriptionMdx} withHeader>
-      <Wrapper>
-        <Tabs items={tabs} activeKey={activeTabNumber} onChange={handleTabChange}>
-          <Tab>
-            <TabTitle>{tabs[activeTabNumber].content.title}</TabTitle>
-            <TabText>{tabs[activeTabNumber].content.description}</TabText>
-            <Image
-              src={`/images/${tabs[activeTabNumber].content.image}`}
-              alt={tabs[activeTabNumber].content.title}
-              width={1100}
-              height={800}
-            />
-          </Tab>
-        </Tabs>
-      </Wrapper>
+      <Tabs items={tabs} activeKey={activeTabNumber} onChange={handleTabChange}>
+        <Tab>
+          <TabTitle>{tabs[activeTabNumber].content.title}</TabTitle>
+          <TabText>{tabs[activeTabNumber].content.description}</TabText>
+          <Image
+            src={`/images/${tabs[activeTabNumber].content.image}`}
+            alt={tabs[activeTabNumber].content.title}
+            width={1100}
+            height={800}
+          />
+        </Tab>
+      </Tabs>
     </ScreenContainer>
   )
 }

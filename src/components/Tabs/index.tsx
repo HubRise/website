@@ -1,6 +1,6 @@
 import React from "react"
 
-import { StyledTabs, TabItems, Tab } from "./Styles"
+import { StyledTabs, Menu, MenuItem, Wrapper } from "./Styles"
 
 export interface TTabItem {
   label: string
@@ -16,18 +16,21 @@ interface TabsProps {
 
 const Tabs = ({ items, onChange, activeKey, children }: TabsProps): JSX.Element => {
   return (
-    <StyledTabs>
-      <TabItems>
-        {items.map(({ label, key }, Idx) => {
-          return (
-            <Tab key={Idx} $isSelected={key === activeKey} onClick={() => onChange(Idx)}>
-              {label}
-            </Tab>
-          )
-        })}
-      </TabItems>
-      {children}
-    </StyledTabs>
+    <Wrapper>
+      <StyledTabs>
+        <Menu>
+          {items.map(({ label, key }, Idx) => {
+            return (
+              <MenuItem key={Idx} $isSelected={key === activeKey} onClick={() => onChange(Idx)}>
+                {label}
+              </MenuItem>
+            )
+          })}
+        </Menu>
+
+        {children}
+      </StyledTabs>
+    </Wrapper>
   )
 }
 

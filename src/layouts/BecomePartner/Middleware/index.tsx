@@ -4,8 +4,9 @@ import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 import ScreenContainer from "@components/ScreenContainer"
 import TwoSidesContent from "@components/TwoSidesContent"
 
-import { Wrapper } from "../shared/Styles"
 import { TMiddleware } from "../types"
+
+import { Wrapper } from "./Styles"
 
 interface MiddlewareProps {
   middleware: TMiddleware

@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { boxShadows, breakpoints, colors, fontSizes, mixin } from "@utils/styles"
+import { boxShadows, breakpoints, colors, mixin } from "@utils/styles"
 
 export const Tab = styled.div`
   background-color: ${colors.backgroundWhite};
@@ -44,9 +44,12 @@ export const Tab = styled.div`
 
 export const TabTitle = styled.h3`
   ${mixin.cardTitle};
+  margin-top: 1rem;
 `
 
 export const TabText = styled.p`
-  font-size: ${fontSizes._19};
-  margin: 1.5rem auto 2.5rem;
+  ${mixin.responsiveText};
+  margin: 2rem auto;
+  max-width: 70rem;
+  padding: 0 2.5rem;
 `

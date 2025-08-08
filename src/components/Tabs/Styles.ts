@@ -2,6 +2,15 @@ import styled, { css } from "styled-components"
 
 import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
+export const Wrapper = styled.div`
+  ${mixin.containerWrapper}
+  margin-top: 2rem;
+
+  @media (min-width: ${breakpoints.large}) {
+    margin-top: 3.5rem;
+  }
+`
+
 export const StyledTabs = styled.div`
   display: flex;
   flex-direction: column;
@@ -11,7 +20,7 @@ export const StyledTabs = styled.div`
   }
 `
 
-export const TabItems = styled.div`
+export const Menu = styled.div`
   display: flex;
   flex-direction: column;
   order: 1;
@@ -24,7 +33,7 @@ export const TabItems = styled.div`
   }
 `
 
-export const Tab = styled.div<{ $isSelected: boolean }>`
+export const MenuItem = styled.div<{ $isSelected: boolean }>`
   flex-grow: 1;
   text-align: center;
   border-top: 4px solid ${colors.white};
