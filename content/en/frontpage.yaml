@@ -10,7 +10,7 @@ hero:
     part_3: and
     part_4: Retail
   description: |
-    Connect your EPOS, all your on-premises and remote sales channels, and your operations management solutions or services into a single, powerful middleware.
+    Connect your EPOS, in-store and online sales channels, and management tools so they work together through one powerful middleware platform.
   button_label: Create Your Account
   apps:
     - title: Points of Sales
@@ -48,23 +48,23 @@ content:
         image: use-connect-apps.png
       - title: Manage Products
         description: |
-          Centralise the management of your product catalogs in one app, for all sales channels and all locations. Products and prices might be different. Complex catalogs with modifiers, multiple options and promotions are supported.
+          Centralise your product catalogs in one app for all sales channels and locations. Set different products and prices as needed. Handle complex catalogs with product sizes, multiple options, and promotions.
         image: use-manage-products.png
       - title: Synchronise Inventory
         description: |
-          Synchronise inventory automatically across all your sales channels through integration. If you don't keep track of inventory, you can snooze products to hide unavailable items, helping customers focus on what's available and streamlining your operations.
+          Synchronise inventory with your EPOS, or manually snooze products in our app. Changes are instantly reflected across all channels, helping customers see only what is available and streamlining your operations.
         image: use-synchronise-inventory.png
       - title: Build a Customer Database
         description: |
-          Collect, aggregate, and centralise customer information from all connected sales channels into a unified list. Effortlessly share this data with targeted marketing campaign apps to enhance customer engagement and increase loyalty.
+          Collect and centralise customer information from all your sales channels in a unified list. Share it with targeted marketing apps to boost engagement and build loyalty.
         image: use-customer-database.png
       - title: Centralise Orders
         description: |
-          Send all orders to your EPOS, or use HubRise to view and manage orders from all your sales channels in one single app. Update order statuses, track approaching drivers, print receipts, edit opening hours, or pause online stores—all in one click.
+          Send all orders to your EPOS, or use HubRise to view and manage orders from all your sales channels in one app. Update statuses, track drivers, print receipts, adjust opening hours, or pause online stores—all in one click.
         image: use-centralise-orders.png
       - title: Make informed decisions
         description: |
-          Check aggregated sales data across all locations or per location, by sales channels, for the week, the month, or any other custom period of time. Identify best-selling products and peak time to gain clear operational visibility.
+          View aggregated sales data, broken down by location or sales channel, for any week, month, or custom period of time. Identify best-selling products and peak times to gain clear operational insight.
         image: use-informed-decisions.png
 
   pricing:
