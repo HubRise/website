@@ -646,6 +646,7 @@ content:
           country: AU, CA, FR, DE, ES, GB
           title: Uber Direct
           description: Uber Direct is a white-label delivery service offered by Uber. It allows businesses to send products or packages to their customers by leveraging Uber Eats' extensive driver network
+          additional_info: Integration in progress.
     - title: Loyalty and Marketing
       slug: loyalty-and-marketing
       has_suggest_app: true
