@@ -5,7 +5,7 @@ import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.75rem;
+  gap: 2rem 0.75rem;
 
   @media (min-width: ${breakpoints.medium}) {
     ${mixin.centerElement};
@@ -26,11 +26,11 @@ export const MetricBlock = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 1;
 `
 
 export const Number = styled.span`
   font-size: ${fontSizes._32};
+  line-height: 1;
   font-weight: 600;
   margin-bottom: 1rem;
 
@@ -41,8 +41,5 @@ export const Number = styled.span`
 
 export const Text = styled.span`
   text-align: center;
-
-  @media (min-width: ${breakpoints.large}) {
-    font-size: ${fontSizes._19};
-  }
+  ${mixin.responsiveText};
 `
