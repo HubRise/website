@@ -17,7 +17,8 @@ const Hero = ({ hero }: HeroProps) => {
       <PageHero
         title={
           <>
-            <span>{title.part_1}</span> {title.part_2} <span>{title.part_3}</span> {title.part_4}
+            {title.part_1} <span> {title.part_2} </span>
+            {title.part_3} <span> {title.part_4} </span>
           </>
         }
         description={supporting_text}

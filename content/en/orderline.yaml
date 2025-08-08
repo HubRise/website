@@ -5,15 +5,15 @@ content:
   hero:
     title:
       part_1: Centralise
-      part_2: all
-      part_3: Orders
-      part_4: and Ease Operations
-    supporting_text: Consolidate orders from multiple sales channels into a single app—OrderLine.
+      part_2: all Orders
+      part_3: with
+      part_4: OrderLine
+    supporting_text: Consolidate orders from multiple sales channels into a single app, with real-time updates and clear alerts for upcoming orders.
     content:
       firstSide: |
-        If your EPOS cannot be connected or you prefer to manage orders separately, OrderLine offers a comprehensive view of your orders, displaying the origin of each one, the associated brand if you operate a dark kitchen, and its final destination. Visual notifications keep you informed about orders that need to be ready soon.
+        Whether or not your EPOS is connected, OrderLine gives you a clear overview of every order, including its origin, the associated brand if you run a dark kitchen, and its final destination. You can also manage opening hours and product availability for all your sales channels from a single interface.
       secondSide: |
-        Connect all your sales channels to HubRise and manage both on-premises and remote orders in a single web app, no matter their origin. Orders may come from table ordering, self-ordering kiosks, delivery platforms, your branded online ordering solution. All orders are transmitted in real time to your EPOS and routed to back-of-house operations.
+        Connect table ordering, self-service kiosks, delivery platforms, and your branded online ordering site to HubRise, and manage both on-premises and remote orders in one app. Orders are transmitted in real time to your back-of-house operations, with visual notifications to alert you when they need to be ready.
   five_steps:
     title: Get Started in 5 Steps
     steps:

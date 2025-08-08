@@ -12,7 +12,7 @@
         link: /orderline
         image: orderline.png
       - title: Catalog Manager
-        description: Manage all your products in one place
+        description: Manage your products in one place
         link_label: Find out more
         link: /catalog-manager
         image: catalog-manager.png
