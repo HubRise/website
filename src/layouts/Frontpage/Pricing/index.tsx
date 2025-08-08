@@ -29,9 +29,11 @@ const Pricing = ({ title, button_label, descriptionMdx }: PricingProps) => {
         <TitleHighlight> {title.price} </TitleHighlight>
         {title.end}
       </Title>
+
       <Description>
         <MDXRemote {...descriptionMdx} />
       </Description>
+
       <ButtonWrapper>
         <Button label={button_label} link={signup} type="tertiary" />
       </ButtonWrapper>

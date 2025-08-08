@@ -29,9 +29,11 @@ const Partners = ({ title, descriptionMdx, button_label, button_link, image }: P
 
         <ContentWrapper>
           <Title>{title}</Title>
+
           <Description>
             <MDXRemote {...descriptionMdx} />
           </Description>
+
           <Button
             label={button_label}
             link={button_link}

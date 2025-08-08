@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components"
 
 import { Container } from "@components/ScreenContainer/Styles"
-import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
+import { breakpoints, colors, mixin } from "@utils/styles"
 
 export const DetailsContainer = styled.div`
   ${Container} {
@@ -57,6 +57,7 @@ export const ContentBlock = styled.div<{ $activeDetailsView: number }>`
   p,
   ul {
     margin-top: 1.25rem;
+    ${mixin.responsiveText};
   }
 
   ul {
@@ -67,11 +68,6 @@ export const ContentBlock = styled.div<{ $activeDetailsView: number }>`
   @media (min-width: ${breakpoints.large}) {
     width: 50%;
     padding-left: 6.25rem;
-
-    p,
-    ul {
-      font-size: ${fontSizes._19};
-    }
   }
 
   ${ContentWrapper} {

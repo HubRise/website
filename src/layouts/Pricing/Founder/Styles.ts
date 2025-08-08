@@ -37,6 +37,6 @@ export const JobTitle = styled.h5`
 `
 
 export const Text = styled.p`
-  font-size: ${fontSizes._19};
   margin-top: 2rem;
+  ${mixin.responsiveText};
 `

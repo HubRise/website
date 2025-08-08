@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
+import { breakpoints, colors, mixin } from "@utils/styles"
 
 export const TwoSidesContentWrapper = styled.div`
   ${mixin.containerWrapper}
@@ -19,7 +19,7 @@ export const Content = styled.div`
 
 export const ContentBlock = styled.p`
   position: relative;
-  font-size: ${fontSizes._19};
+  ${mixin.responsiveText};
 
   @media (min-width: ${breakpoints.large}) {
     &:first-child {

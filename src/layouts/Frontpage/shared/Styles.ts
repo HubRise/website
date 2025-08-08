@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { fontSizes, lineHeights } from "@utils/styles"
+import { fontSizes, lineHeights, mixin } from "@utils/styles"
 
 export const Title = styled.h2`
   font-size: ${fontSizes._32};
@@ -14,8 +14,5 @@ export const TitleHighlight = styled.span`
 
 export const Description = styled.div`
   margin-top: 1rem;
-
-  p {
-    font-size: ${fontSizes._19};
-  }
+  ${mixin.responsiveText};
 `
