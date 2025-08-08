@@ -84,7 +84,7 @@ content:
         image: orderline.png
         advantages:
           - text: Centralise orders from all sales channels
-          - text: View expected delivery times and track driver
+          - text: View expected delivery times and track drivers
           - text: Update order statuses in real time
           - text: Print receipts
           - text: Adjust product availability
@@ -92,6 +92,7 @@ content:
           - text: Update opening hours or temporarily pause stores
         button_label: Learn more about OrderLine
         button_link: /orderline
+
       - title: Catalog Manager - Edit and Publish Your Product Catalogs
         image: catalog-manager.png
         advantages:
@@ -99,29 +100,29 @@ content:
           - text: Create time-specific menus (e.g. breakfast, lunch, dinner, or happy hour)
           - text: Easily support seasonal menus (e.g. Christmas, Easter, etc.)
           - text: Ensure consistency across menus and sales channels
-          - text: Adjust prices and products by location
+          - text: Adjust prices and availability by location
           - text: Preview and sync catalog updates across all systems
-          - text: Handle complex menus with modifiers, options, discounts, and bundles
+          - text: Handle complex menus with product sizes, options, discounts, and bundles
         button_label: Explore Catalog Manager
         button_link: /catalog-manager
+
       - title: Dashboard - Analyse Your Sales Data
         image: dashboard.png
         advantages:
           - text: View aggregated sales data by sales channel and location
           - text: Track top-performing products and peak service times
           - text: Analyse trends across custom timeframes
-          - text: Create tailored reports to support business decisions
           - text: Share reports with key stakeholders
-          - text: Visualise KPIs in a clean, customisable dashboard
-          - text: Monitor performance of your dark kitchen operations
+          - text: Visualise KPIs in a clear dashboard
+          - text: Monitor performance of dark kitchen operations
         button_label: Discover the HubRise Dashboard
         button_link: /dashboard
 
   partners:
-    title: White Label for Resellers
+    title: White Label for Partners
     description: |
-      Empower your clients with HubRise web apps customised to reflect your brand. Host them on your own URL, with your logo, favicon and colours. Your clients can use these tools to manage products, centralise orders, control product availability or inventory, and update opening hours. You choose which features to activate or hide.
-      HubRise white label apps appeals to with software providers looking to complete their solutions with additional features, consultants seeking to expand their service offering, and franchises aiming to increase the value they provide to their franchisees.
+      Empower your clients with HubRise web apps customised to your brand. Host them on your domain name, with your logo, favicon, and colours. Your clients can use these tools to manage products, centralise orders, control product availability or inventory, and update opening hours. You decide which features to activate or hide.
+      HubRise white label apps appeal to software providers looking to enhance their solutions with additional features, consultants seeking to expand their service offering, and franchises aiming to increase the value they deliver to franchisees.
     button_label: Check Partnership Opportunities
     button_link: /become-partner
     image: white-label.gif

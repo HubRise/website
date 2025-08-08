@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
 
   @media (min-width: ${breakpoints.large}) {
     flex-direction: row;
+    align-items: center;
     gap: 0;
   }
 
@@ -45,10 +46,10 @@ export const ImageWrapper = styled.div`
 `
 
 export const ContentWrapper = styled.div`
-  text-align: center;
   flex-basis: 50%;
+  text-align: center;
 
-  p:last-child {
+  p {
     margin-top: 1.25rem;
   }
 
