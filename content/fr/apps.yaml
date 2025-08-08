@@ -642,6 +642,7 @@ content:
           country: AU, CA, FR, DE, ES, GB
           title: Uber Direct
           description: Uber Direct est un service de livraison en marque blanche proposé par Uber. Il permet aux entreprises d'envoyer des produits ou colis à leurs clients en s'appuyant sur le vaste réseau de chauffeurs d'Uber Eats.
+          additional_info: Intégration en cours.
     - title: Fidélité et marketing
       slug: loyalty-and-marketing
       apps:
