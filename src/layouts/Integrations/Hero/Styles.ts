@@ -1,6 +1,7 @@
-import styled from "styled-components"
+import Link from "next/link"
+import styled, { css } from "styled-components"
 
-import { breakpoints, mixin } from "@utils/styles"
+import { breakpoints, colors, mixin } from "@utils/styles"
 
 export const Content = styled.div`
   ${mixin.responsiveText};
@@ -12,4 +13,21 @@ export const Content = styled.div`
   @media (min-width: ${breakpoints.large}) {
     margin: 1rem 0 -3rem;
   }
+`
+
+const linkCss = css`
+  color: ${colors.primary};
+  ${mixin.linkOver(colors.textDarkest)};
+  &::before,
+  &::after {
+    content: "\\00a0"; // &nbsp;
+  }
+`
+
+export const ContentButton = styled.button`
+  ${linkCss};
+`
+
+export const ContentLink = styled(Link)`
+  ${linkCss};
 `
