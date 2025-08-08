@@ -18,34 +18,34 @@ content:
     title: Get Started in 5 Steps
     steps:
       - title: Create a HubRise Account
-        description: Sign up to create your HubRise account and access centralised order management features.
+        description: Sign up to HubRise to access OrderLine and over 100 integrations. Your account is ready in minutes.
       - title: Connect Your Sales Channels
-        description: Contact HubRise support to help you connect your sales channels to your account, enabling seamless order integration.
-      - title: Get Set Up
-        description: Customise your workflow by configuring order statuses and selecting your preferred sound notifications. Connect your printer to your device, add an OrderLine shortcut to your home screen and open OrderLine through your browser.
+        description: Add your delivery platforms, table ordering, kiosks, or other apps to your HubRise account. Support is available if you need help.
+      - title: Set Up OrderLine
+        description: Configure your order statuses, sound notifications, and printing preferences. Add an OrderLine shortcut to your home screen for quick access from any device.
       - title: Start Receiving Orders
-        description: Once your sales channels are connected, orders will flow into OrderLine in real time, allowing you to monitor and manage them effortlessly. You can enable auto-accept and auto-print for greater efficiency.
+        description: Once your sales channels are connected, orders will flow into OrderLine in real time, allowing you to monitor and manage them. You can enable auto-accept for greater efficiency.
       - title: Manage Operations
-        description: Update inventory or product availability across all sales channels, adjust opening hours, or temporarily pause delivery platforms—all with a single click.
+        description: Adjust opening hours, pause delivery platforms, and update product availability across all channels in a few clicks.
   features:
-    title: OrderLine, Your Free HubRise Order Management App
-    description: Centralise orders from all your sales channels in OrderLine and manage them effortlessly from a single interface. Update order statuses, track approaching drivers, print receipts, adjust opening hours, pause online stores and control product availability—all tailored to your workflow.
+    title: Manage Orders From All Your Channels
+    description: Centralise orders from all your sales channels and manage them easily in one place. Update order statuses, track drivers, print receipts, adjust opening hours, pause online stores, and control product availability — all tailored to your workflow.
     list:
       - title: Centralise All Orders
         image: all-orders.png
-        description: Eliminate the hassle of managing multiple devices. Even with an EPOS integration, OrderLine lets you receive and manage all orders from a single web app—without disrupting in-store operations. Monitor order statuses in real time, from confirmation to delivery.
+        description: Manage every order in one web app, even if you use an EPOS. Avoid juggling multiple devices and keep in-store operations running smoothly. Track order statuses in real time, from confirmation to delivery.
       - title: Ensure Status Accuracy
         image: accuracy.png
-        description: Never miss an order—or an order item—again. Stay on top of preparation times, delivery schedules, and destinations. See drivers approaching for orders to be ready, helping you maintain smooth operations and a positive customer experience.
-      - title: Manage opening hours
+        description: Never miss an order—or an order item—again. Stay on top of preparation times, delivery schedules, and destinations, and see when drivers are approaching so orders are ready on time.
+      - title: Manage Opening Hours
         image: opening-hours.png
-        description: Easily update your opening hours across all platforms with a single click. During peak times, temporarily pause delivery platform orders to prioritise on-premises guests or orders from your own branded online ordering website.
-      - title: Manage inventory
+        description: Update opening hours across all platforms with a single click. During peak times, pause delivery platform orders to prioritise on-premises guests or orders from your own online ordering site.
+      - title: Manage Inventory
         image: inventory.png
-        description: Prevent overselling products and add-ons by keeping product availability up to date across all sales channels. Temporarily mark products as unavailable for a few hours, until the next day, or for an indefinite period. Update inventory manually in OrderLine or via your EPOS integration.
-      - title: Tailored to your operations
+        description: Keep product availability accurate across all channels to prevent overselling. Mark items unavailable for hours, until the next day, or indefinitely.
+      - title: Tailored to Your Operations
         image: operations.png
-        description: Customise your order workflow to suit your operations. Automatically accept orders as soon as they arrive in HubRise, and configure specific order statuses for your restaurant. Print receipts manually, or automate the process by connecting a third-party cloud printer.
+        description: Configure OrderLine to match your workflow. Automatically accept orders, set custom statuses for your restaurant, and print receipts manually or automatically with a connected cloud printer.
   discover:
     title: Included Apps to Streamline Your Operations
     description: Discover the other apps included with HubRise to streamline your operations, optimise workflows, and simplify reporting.
