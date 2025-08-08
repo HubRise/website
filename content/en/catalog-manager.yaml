@@ -15,8 +15,8 @@ content:
       secondSide: |
         Managing separate catalogs becomes a burden when juggling different channels, prices, and menus for breakfast, lunch, dinner, or happy hour. Catalog Manager centralises your menus, keeping them consistent, up to date, and fully in sync across your entire operation.
   sales_channels:
-    title: One Catalog, All Sales Channels
-    description: Use HubRise catalog variants to manage a single catalog across all your sales channels and locations, even when prices or product availability vary.
+    title: A Single Catalog for Every Channel
+    description: Manage a single catalog across all your locations, brands, and sales channels — even dark kitchens. Use catalog variants to adapt prices and availability, per channel or location.
   five_steps:
     title: Get Started in 5 Steps
     steps:
@@ -31,8 +31,8 @@ content:
       - title: Manage and Publish
         description: Use Catalog Manager to make changes to your catalogs or menus anytime, from anywhere. Rename, delete, or duplicate catalogs when working on large updates. Click save to publish. Updates go live instantly across all your channels.
   app:
-    title: Catalog Manager, Your Catalog Management App
-    description: Centralise your catalogs and manage them from a single interface. Create a master catalog for your locations and brands, including dark kitchens, and publish updates instantly with one click.
+    title: Your Control Centre for Product Data
+    description: Catalog Manager lets you manage your products from a single interface. Create a master catalog for your locations and brands, including dark kitchens, and publish updates instantly with one click.
     tabs:
       - label: Add Products
         key: 0
@@ -50,7 +50,7 @@ content:
         key: 2
         content:
           title: Set Pricing by Channel or Location
-          description: Adjust pricing for each sales channel or location using catalog variants. Use bulk update to quickly apply percentage increases or decreases to a variant, so you can easily tailor your pricing strategy to different market segments.
+          description: Adjust prices for each sales channel or location using catalog variants. Use bulk update to apply percentage increases or decreases to a variant, so you can easily tailor your pricing to different market segments.
           image: catalog-manager/tabs/set-channels.png
       - label: Customise Offering
         key: 3
