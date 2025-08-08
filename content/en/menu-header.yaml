@@ -12,12 +12,12 @@
         link: /orderline
         image: orderline.png
       - title: Catalog Manager
-        description: Manage your products in one place
+        description: Manage all your products in one place
         link_label: Find out more
         link: /catalog-manager
         image: catalog-manager.png
       - title: Dashboard
-        description: View your sales reports
+        description: Track your business performance
         link_label: Find out more
         link: /dashboard
         image: dashboard.png

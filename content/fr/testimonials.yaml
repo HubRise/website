@@ -2,7 +2,11 @@ meta:
   title: Témoignages | HubRise
   description: Découvrez ce que nos partenaires et nos clients disent de leur expérience HubRise.
 content:
-  title: Pourquoi vous aimerez travailler avec HubRise
+  title:
+    part_1: Pourquoi vous
+    part_2: aimerez
+    part_3: travailler avec
+    part_4: HubRise
   block_title: Témoignages
   description: Ne nous croyez pas sur parole, voici ce que nos partenaires et nos clients disent de nous.
   testimonials:

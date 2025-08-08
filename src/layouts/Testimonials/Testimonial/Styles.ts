@@ -1,15 +1,21 @@
 import styled from "styled-components"
 
-import { boxShadows, colors, fontSizes, lineHeights } from "@utils/styles"
+import { boxShadows, breakpoints, colors, lineHeights, mixin } from "@utils/styles"
 
 export const Card = styled.div`
+  max-width: 60rem;
+  margin: 7.5rem auto 0;
+  padding: 135px 3.5rem 55px;
   position: relative;
-  margin: 5rem auto 0;
-  width: 100%;
-  padding: 135px 1.25rem 55px;
   background-color: ${colors.backgroundWhite};
   box-shadow: ${boxShadows.card};
   border-radius: 0.5rem;
+  text-align: center;
+
+  @media (min-width: ${breakpoints.large}) {
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+  }
 `
 
 export const Picture = styled.div`
@@ -27,8 +33,7 @@ export const Picture = styled.div`
 
 export const Quote = styled.div`
   font-style: italic;
-  font-size: ${fontSizes._16};
-  text-align: center;
+  font-size: ${mixin.responsiveText};
   color: ${colors.textDark};
 
   &::before,
@@ -48,14 +53,13 @@ export const Details = styled.div`
 `
 
 export const Detail = styled.span`
-  font-size: ${fontSizes._16};
+  font-size: ${mixin.responsiveText};
   font-weight: 600;
   line-height: ${lineHeights.compact};
   letter-spacing: 0.04em;
-  white-space: nowrap;
 `
 
-export const Bullet = styled.div`
+export const Dot = styled.div`
   width: 5px;
   height: 5px;
   background-color: ${colors.borderMedium};

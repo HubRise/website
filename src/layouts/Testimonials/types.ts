@@ -4,7 +4,12 @@ export interface TestimonialsYaml {
     description: string
   }
   content: {
-    title: string
+    title: {
+      part_1: string
+      part_2: string
+      part_3: string
+      part_4: string
+    }
     block_title: string
     description: string
     testimonials: Array<TTestimonial>

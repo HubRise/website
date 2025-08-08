@@ -2,7 +2,11 @@ meta:
   title: Testimonials | HubRise
   description: Find out what other businesses and individuals are saying about their HubRise experience.
 content:
-  title: Why You Will Love Working with HubRise
+  title:
+    part_1: Why You Will
+    part_2: Love
+    part_3: Working with
+    part_4: HubRise
   block_title: Testimonials
   description: Don't just take our word for it, here's what our partners and clients are saying about us.
   testimonials:

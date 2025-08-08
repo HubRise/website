@@ -6,7 +6,7 @@ import { TTestimonial } from "@layouts/Testimonials/types"
 import { ContentImage } from "@utils/contentImage"
 import { text } from "@utils/misc"
 
-import { Picture, Details, Quote, Card, Detail, Bullet } from "./Styles"
+import { Picture, Details, Quote, Card, Detail, Dot } from "./Styles"
 
 interface TestimonialProps {
   testimonial: TTestimonial
@@ -23,9 +23,9 @@ const Testimonial = ({ testimonial, image }: TestimonialProps): JSX.Element => {
       <Underline position="center" />
       <Details>
         <Detail>{person_details.name}</Detail>
-        <Bullet />
+        <Dot />
         <Detail>{person_details.job_title}</Detail>
-        <Bullet />
+        <Dot />
         <Detail>{person_details.company}</Detail>
       </Details>
     </Card>

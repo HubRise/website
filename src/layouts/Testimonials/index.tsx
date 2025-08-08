@@ -2,10 +2,10 @@
 
 import PageHero from "@components/PageHero"
 import ScreenContainer from "@components/ScreenContainer"
-import Testimonial from "@layouts/Testimonials/Testimonial"
 import { ContentImageMap } from "@utils/contentImage"
 
 import { TestimonialCards } from "./Styles"
+import Testimonial from "./Testimonial"
 import type { TestimonialsYaml } from "./types"
 
 interface TestimonialsProps {
@@ -18,7 +18,16 @@ const Testimonials = ({ yaml, imageMap }: TestimonialsProps) => {
 
   return (
     <>
-      <PageHero title={content.title} description={content.description} />
+      <PageHero
+        title={
+          <>
+            {content.title.part_1} <span> {content.title.part_2} </span>
+            {/* Add nbsp to prevent "HubRise" from appearing alone on a new line */}
+            {content.title.part_3}&nbsp;<span>{content.title.part_4} </span>
+          </>
+        }
+        description={content.description}
+      />
 
       <ScreenContainer>
         <TestimonialCards>
