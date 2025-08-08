@@ -21,15 +21,15 @@ content:
     title: Get Started in 5 Steps
     steps:
       - title: Create a HubRise Account
-        description: Sign up to create your HubRise account and centralise product catalogs or menus across locations and sales channels. No more manual updates across multiple platforms. Avoid errors and duplicated effort.
+        description: Sign up to HubRise to access Catalog Manager and over 100 integrations. Your account is ready in minutes.
       - title: Connect Your Apps
-        description: Contact HubRise support to help you connect Catalog Manager and other apps you use daily, such as your EPOS, delivery platforms, and online ordering systems. We'll ensure your data flows smoothly between systems.
-      - title: Get Set Up
-        description: Import your catalog or menu from your EPOS, Uber Eats, or any app integrated with HubRise. Create catalog variants to customise pricing and enable items per channel or location, then link each variant to the relevant app.
-      - title: Edit Catalogs
-        description: Add or update products, options, modifiers, images, descriptions, and tags. Create new categories, special offers, discounts, and bundles. Run bulk price updates and choose which products to display on each channel.
-      - title: Manage and Publish
-        description: Use Catalog Manager to make changes to your catalogs or menus anytime, from anywhere. Rename, delete, or duplicate catalogs when working on large updates. Click save to publish. Updates go live instantly across all your channels.
+        description: Add Catalog Manager, your EPOS, delivery platforms, and any other apps to your HubRise account. Once connected, they start sharing data automatically. Support is available if you need help.
+      - title: Set Up Your Catalog
+        description: Build your catalog from scratch, or import it from your EPOS, Uber Eats, or Deliveroo so you do not start from zero. If needed, enhance it with images, options, and descriptions, and organise it into categories.
+      - title: Create Variants
+        description: Use variants to adapt your master catalog for specific sales channels or locations. Change prices and availability without duplicating your catalog.
+      - title: Publish
+        description: Push your catalog to all connected sales channels instantly. Any update you make in Catalog Manager is automatically reflected across your platforms.
   app:
     title: Your Control Centre for Product Data
     description: Catalog Manager lets you manage your products from a single interface. Create a master catalog for your locations and brands, including dark kitchens, and publish updates instantly with one click.
