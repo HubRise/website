@@ -6,7 +6,7 @@ import Metrics from "@components/Metrics"
 import TestimonialsBlock from "@components/TestimonialsBlock"
 import { FrontpageYaml } from "@layouts/Frontpage/types"
 import { TestimonialsYaml } from "@layouts/Testimonials/types"
-import { ContentImage, ContentImageMap } from "@utils/contentImage"
+import { ContentImageMap } from "@utils/contentImage"
 
 import AppCarousel from "./AppCarousel"
 import Features from "./Features"
