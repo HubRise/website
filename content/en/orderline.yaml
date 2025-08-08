@@ -33,16 +33,16 @@ content:
     list:
       - title: Centralise All Orders
         image: all-orders.png
-        description: Manage every order in one web app, even if you use an EPOS. Avoid juggling multiple devices and keep in-store operations running smoothly. Track order statuses in real time, from confirmation to delivery.
+        description: View and control every order in one web app, even if you use an EPOS. Avoid juggling multiple devices and keep in-store operations running smoothly. Track order statuses in real time, from confirmation to delivery.
       - title: Ensure Status Accuracy
         image: accuracy.png
         description: Never miss an order—or an order item—again. Stay on top of preparation times, delivery schedules, and destinations, and see when drivers are approaching so orders are ready on time.
-      - title: Manage Opening Hours
+      - title: Control Opening Hours
         image: opening-hours.png
-        description: Update opening hours across all platforms with a single click. During peak times, pause delivery platform orders to prioritise on-premises guests or orders from your own online ordering site.
-      - title: Manage Inventory
+        description: Update opening hours across all platforms with a single click. When it's busy, pause delivery platform orders to prioritise on-premises guests or orders from your own online ordering site.
+      - title: Keep Inventory in Sync
         image: inventory.png
-        description: Keep product availability accurate across all channels to prevent overselling. Mark items unavailable for hours, until the next day, or indefinitely.
+        description: Keep product availability up to date across all channels to prevent overselling. Mark items unavailable for hours, until the next day, or indefinitely.
       - title: Tailored to Your Operations
         image: operations.png
         description: Configure OrderLine to match your workflow. Automatically accept orders, set custom statuses for your restaurant, and print receipts manually or automatically with a connected cloud printer.
