@@ -5,7 +5,7 @@ content:
   hero:
     title:
       part_1: Centralise
-      part_2: all Orders
+      part_2: Your Orders
       part_3: with
       part_4: OrderLine
     supporting_text: Consolidate orders from multiple sales channels into a single app, with real-time updates and clear alerts for upcoming orders.

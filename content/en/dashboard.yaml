@@ -4,10 +4,10 @@ meta:
 content:
   hero:
     title:
-      part_1: Track
-      part_2: Sales to Make
-      part_3: Smarter
-      part_4: Business Decisions
+      part_1: Make
+      part_2: Informed
+      part_3: Business Decisions with
+      part_4: HubRise Dashboard
     description: Check your order data on the HubRise Dashboard to see how your business is performing across all locations and sales channels. Track revenue trends, compare performance over time, and identify your best-selling products and busiest hours.
     content:
       firstSide: Retail stores and restaurants generate a large amount of data—much of it valuable for analysis. When used effectively, this data helps business owners and managers make informed decisions, improve performance, and drive growth.
@@ -16,7 +16,7 @@ content:
     title: Features
     cards:
       - title: Real-Time Data
-        description: Access up-to-date sales data as it happens. Monitor performance across your business in real time, on any device, from anywhere, so you can respond quickly to changes, spot issues early, and act with confidence.
+        description: Access sales data the moment it happens. Monitor performance across your business in real time, with figures that update instantly to reflect every new order, so you can respond quickly to changes, spot issues early, and act with confidence.
         image: real-time.svg
       - title: Ready-Made Reports
         description: See ready-made reports from data collected from your connected apps, saving time and reducing manual work. Share access to these easy-to-understand reports with local managers to keep teams informed, engaged, and focused on performance.
@@ -38,27 +38,27 @@ content:
     content_blocks:
       - title: Revenue Breakdown
         content: |
-          <p>HubRise breaks down your revenue from three angles:</p>
+          <p>See your revenue from three perspectives:</p>
           <ul>
-            <li>Sales Channel - delivery platforms versus your own website or other apps.</li>
-            <li>Connection Name - your main brand and virtual dark kitchen brands.</li>
-            <li>Location - your stores driving the most revenue.</li>
+            <li><strong>Channel</strong> – compare delivery platforms with your own website or other apps.</li>
+            <li><strong>Connection Name</strong> – distinguish your main brand from virtual or dark kitchen brands.</li>
+            <li><strong>Location</strong> – identify which stores generate the most revenue.</li>
           </ul>
         image: revenue-breakdown.png
       - title: Revenue Over Time
         content: |
-          <p>The line chart shows how your revenue, sales volume, and average order value evolve, with granularity that adapts to your selected date range.</p>
-          <p>A summary panel highlights key metrics and shows their growth or decline at a glance.</p>
+          <p>The line chart tracks how revenue, sales volume, and average order value change over time, with granularity that adapts to your selected date range.</p>
+          <p>A summary panel highlights key metrics and shows growth or decline at a glance.</p>
         image: revenue-over-time.png
       - title: Peak Hours
         content: |
-          <p>A heatmap reveals when your sales are highest, broken down by day and hour.</p>
-          <p>Understand your peak hours can be wisely used to optimise staffing, plan promotions, and manage inventory more efficiently.</p>
+          <p>A heatmap shows your busiest periods by day and hour.</p>
+          <p>Use these insights to optimise staffing, plan promotions, and manage inventory more efficiently.</p>
         image: peak-hours.png
       - title: Top Selling Products
         content: |
-          <p>See your 30 best-performing items and their sales volume at a glance, or expand the view to see all products.</p>
-          <p>Filter by location and date to uncover seasonal trends and better understand customer preferences.</p>
+          <p>View your 30 best-selling items and their sales volumes, or expand to see all products.</p>
+          <p>Filter by location and date to uncover seasonal trends and understand customer preferences.</p>
         image: top-selling-products.png
   action_block:
     title: Included Apps to Streamline Your Operations
