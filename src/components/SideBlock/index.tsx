@@ -1,4 +1,4 @@
-import { Container, Content, MainContant, SecondaryContent } from "./Styles"
+import { Container, Content, MainContent, SecondaryContent } from "./Styles"
 import { SidePosition } from "./types"
 
 interface SideBlockProps {
@@ -19,7 +19,7 @@ export const SideBlock = ({
   return (
     <Container $side={side}>
       <Content $secondaryPosition={secondaryPosition} $contentFirst={contentFirst}>
-        <MainContant>{children}</MainContant>
+        <MainContent>{children}</MainContent>
         {secondaryContent && <SecondaryContent>{secondaryContent}</SecondaryContent>}
       </Content>
     </Container>

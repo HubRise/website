@@ -16,16 +16,13 @@ export const Container = styled.div<{ $side: SidePosition }>`
 
   @media (min-width: ${breakpoints.large}) {
     padding: 3.5rem 0;
-    max-width: 90%;
-    width: -moz-available;
-    width: -webkit-fill-available;
-    width: fill-available;
+    width: 95%;
 
     ${({ $side }) =>
       $side === "left"
         ? css`
             margin-right: auto;
-            border-radius: 0px 0.875rem 0.875rem 0px;
+            border-radius: 0 0.875rem 0.875rem 0;
 
             ${Content} {
               margin-left: auto;
@@ -33,12 +30,16 @@ export const Container = styled.div<{ $side: SidePosition }>`
           `
         : css`
             margin-left: auto;
-            border-radius: 0.875rem 0px 0px 0.875rem;
+            border-radius: 0.875rem 0 0 0.875rem;
           `}
+  }
+
+  @media (min-width: ${breakpoints.extraLarge}) {
+    max-width: calc(50% + 50rem);
   }
 `
 
-export const MainContant = styled.div`
+export const MainContent = styled.div`
   grid-area: main;
 `
 
@@ -54,11 +55,12 @@ export const Content = styled.div<{ $secondaryPosition: SidePosition; $contentFi
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  max-width: 100rem;
 
   ${({ $contentFirst }) =>
     $contentFirst
       ? css`
-          ${MainContant} {
+          ${MainContent} {
             order: 1;
           }
 
@@ -67,7 +69,7 @@ export const Content = styled.div<{ $secondaryPosition: SidePosition; $contentFi
           }
         `
       : css`
-          ${MainContant} {
+          ${MainContent} {
             order: 2;
           }
 
@@ -79,7 +81,6 @@ export const Content = styled.div<{ $secondaryPosition: SidePosition; $contentFi
   @media (min-width: ${breakpoints.large}) {
     display: grid;
     gap: 4.5rem;
-    max-width: 100rem;
     align-items: center;
     padding: 0 3rem;
 
