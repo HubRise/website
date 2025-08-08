@@ -8,6 +8,5 @@ export const Title = styled.h3`
 `
 
 export const Description = styled.p`
-  ${mixin.description}
-  margin-top: 0;
+  ${mixin.responsiveText};
 `

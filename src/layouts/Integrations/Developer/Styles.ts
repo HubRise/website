@@ -4,7 +4,7 @@ import { StyledButton } from "@components/Button/Styles"
 import { breakpoints, mixin } from "@utils/styles"
 
 export const Description = styled.div`
-  ${mixin.description}
+  ${mixin.responsiveText};
   display: flex;
   flex-direction: column;
   gap: 1rem;

@@ -57,7 +57,7 @@ export const TabTitle = styled.h3`
 `
 
 export const TabText = styled.p`
-  ${mixin.description};
+  ${mixin.responsiveText};
   margin: 2rem auto;
   max-width: 65rem;
 `

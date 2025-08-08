@@ -38,7 +38,8 @@ export const Title = styled.h1`
 `
 
 export const Description = styled.p`
-  ${mixin.description}
+  margin-top: 1rem;
+  ${mixin.responsiveText};
 `
 
 export const DescriptionMdx = styled.div`
@@ -46,6 +47,7 @@ export const DescriptionMdx = styled.div`
   margin: 0 auto;
 
   p {
-    ${mixin.description}
+    margin-top: 1rem;
+    ${mixin.responsiveText};
   }
 `

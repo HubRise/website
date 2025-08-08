@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { breakpoints, mixin } from "@utils/styles"
 
 export const Content = styled.div`
-  ${mixin.description}
+  ${mixin.responsiveText};
   margin: 1rem 0 -1rem;
   display: flex;
   flex-direction: column;

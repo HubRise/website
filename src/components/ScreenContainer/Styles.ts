@@ -50,7 +50,7 @@ export const Title = styled.h2<{ $bgColor: ScreenContainerBgColor }>`
 `
 
 export const Description = styled.div`
-  ${mixin.description};
+  ${mixin.responsiveText};
   text-align: center;
   margin: 1.25rem auto 0;
 `

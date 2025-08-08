@@ -142,9 +142,8 @@ export const mixin = {
       color: ${color};
     }
   `,
-  description: css`
+  responsiveText: css`
     font-size: ${fontSizes._16};
-    margin-top: 1rem;
     @media (min-width: ${breakpoints.large}) {
       font-size: ${fontSizes._19};
     }

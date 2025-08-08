@@ -44,7 +44,8 @@ export const Title = styled.h3`
 `
 
 export const Description = styled.p`
-  ${mixin.description}
+  margin-top: 1rem;
+  ${mixin.responsiveText};
 `
 
 export const HandDrawnArrow = styled.div<{ $isFlipped: boolean }>`
