@@ -79,9 +79,12 @@ const FAQs = ({ yaml, getInTouch }: FAQProps): JSX.Element => {
           {content.faq_sections.map(({ title, questions }, sIdx) => {
             return (
               <Card key={sIdx} padding="big">
-                <CardTitle $isExpanded={sectionsExpanding[sIdx]?.isExpanded}>
+                <CardTitle
+                  $isExpanded={sectionsExpanding[sIdx]?.isExpanded}
+                  onClick={() => handleClickExpandIcon(questions, sIdx)}
+                >
                   {title}
-                  <ExpandIconWrapper onClick={() => handleClickExpandIcon(questions, sIdx)}>
+                  <ExpandIconWrapper>
                     <Icon code="expand_more" size={iconSizes._25} color="#263238" />
                   </ExpandIconWrapper>
                 </CardTitle>

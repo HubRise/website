@@ -11,19 +11,6 @@ export const StyledAccordion = styled.div`
   }
 `
 
-export const TitleWrapper = styled.div<{ $isExpanded: boolean | undefined }>`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  ${mixin.clickable}
-  padding-top: 1rem;
-  padding-bottom: ${({ $isExpanded }) => !$isExpanded && `1rem`};
-
-  ${StyledIcon} {
-    transform: ${({ $isExpanded }) => $isExpanded && `rotate(180deg)`};
-  }
-`
-
 export const Title = styled.h4`
   font-weight: 600;
 `
@@ -58,4 +45,21 @@ export const expandIconWrapperMixin = css`
 
 export const ExpandIconWrapper = styled.div`
   ${expandIconWrapperMixin}
+`
+
+export const TitleWrapper = styled.div<{ $isExpanded: boolean | undefined }>`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  ${mixin.clickable}
+  padding-top: 1rem;
+  padding-bottom: ${({ $isExpanded }) => !$isExpanded && `1rem`};
+
+  ${StyledIcon} {
+    transform: ${({ $isExpanded }) => $isExpanded && `rotate(180deg)`};
+  }
+
+  &:hover ${ExpandIconWrapper} {
+    background-color: ${colors.backgroundLight};
+  }
 `

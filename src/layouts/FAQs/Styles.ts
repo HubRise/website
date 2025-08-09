@@ -7,19 +7,29 @@ import { Container } from "@components/ScreenContainer/Styles"
 import { StyledUnderline } from "@components/Underline/Styles"
 import { breakpoints, colors, mixin } from "@utils/styles"
 
+export const ExpandIconWrapper = styled.div`
+  ${expandIconWrapperMixin};
+  background-color: ${colors.backgroundLight};
+`
+
 export const CardTitle = styled.h2<{ $isExpanded: boolean }>`
-  ${mixin.cardTitle}
+  ${mixin.cardTitle};
   display: flex;
   align-items: center;
   justify-content: space-between;
+  ${mixin.clickable};
 
   ${StyledIcon} {
     transform: ${({ $isExpanded }) => $isExpanded && `rotate(180deg)`};
   }
+
+  &:hover ${ExpandIconWrapper} {
+    background-color: #ccc;
+  }
 `
 
 export const Content = styled.div`
-  ${mixin.containerWrapper}
+  ${mixin.containerWrapper};
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
@@ -50,11 +60,6 @@ export const Content = styled.div`
       padding-right: 3.5rem;
     }
   }
-`
-
-export const ExpandIconWrapper = styled.div`
-  ${expandIconWrapperMixin}
-  background-color: ${colors.backgroundLight};
 `
 
 export const GetInTouchWrapper = styled.div`
