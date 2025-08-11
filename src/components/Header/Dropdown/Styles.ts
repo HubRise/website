@@ -6,41 +6,11 @@ import { colors, mixin } from "@utils/styles"
 
 import { TPosition } from "./index"
 
-export const DropdownContainer = styled.div`
-  position: relative;
-  display: flex;
-  height: 1.5rem;
-`
-
-export const DropdownTrigger = styled.div<{ $isOpen: boolean }>`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-weight: 500;
-  ${mixin.clickable};
-  ${mixin.linkOver(colors.primary)};
-
-  ${({ $isOpen }) =>
-    $isOpen &&
-    css`
-      color: ${colors.primary};
-
-      ${StyledIcon} {
-        transform: rotate(180deg);
-      }
-    `}
-`
-
-export const DropdownMenu = styled.div<{ $position: TPosition }>`
+export const DropdownMenuWrapper = styled.div<{ $position: TPosition }>`
+  display: none;
   position: absolute;
-  top: 2rem;
-  width: max-content;
-  background-color: ${colors.backgroundWhite};
-  border: 1px solid ${colors.borderLight};
-  border-radius: 0.75rem;
-  box-shadow:
-    0px 12px 16px -4px #10182814,
-    0px 4px 6px -2px #10182808;
+  top: 1.5rem;
+  padding-top: 0.5rem;
 
   ${({ $position }) =>
     $position === "left" &&
@@ -60,6 +30,41 @@ export const DropdownMenu = styled.div<{ $position: TPosition }>`
     css`
       transform: translate(-62%, 0);
     `}
+`
+
+export const DropdownMenu = styled.div`
+  width: max-content;
+  background-color: ${colors.backgroundWhite};
+  border: 1px solid ${colors.borderLight};
+  border-radius: 0.75rem;
+  box-shadow:
+    0px 12px 16px -4px #10182814,
+    0px 4px 6px -2px #10182808;
+`
+
+export const DropdownTrigger = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  ${mixin.clickable};
+  ${mixin.linkOver(colors.primary)};
+`
+
+export const DropdownContainer = styled.div`
+  position: relative;
+  display: flex;
+  height: 1.5rem;
+
+  &:hover {
+    ${DropdownMenuWrapper} {
+      display: block;
+    }
+
+    ${DropdownTrigger} ${StyledIcon} {
+      transform: rotate(180deg);
+    }
+  }
 `
 
 export const DropdownList = styled.ul`
