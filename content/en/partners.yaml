@@ -9,19 +9,19 @@ content:
       site_url: "https://www.zpf.fr"
       filename: ze-prog-factory.png
       descriptions:
-        - "ZPF is the software consultancy studio of [Michael Engelmann](https://www.linkedin.com/in/michaelengelmann/), a freelance developer specialising in custom mobile and logistics applications, with solid expertise in Microsoft technologies. He has developed several business applications, including Syscall, StockAPPro, and a front-end ERP."
+        - "ZPF is the software consultancy studio owned by [Michael Engelmann](https://www.linkedin.com/in/michaelengelmann/), a freelance developer specialising in custom mobile and logistics applications, with solid expertise in Microsoft technologies. He has developed several business applications, including Syscall, StockAPPro, and a front-end ERP."
         - "Michael Engelmann created a gateway for integrating Syscall with HubRise, has an in-depth knowledge of the HubRise API, and can offer management, connection, integration, or data analysis services."
     - name: Slowey Systems
       site_url: https://slowey.ie
       filename: slowey-systems.png
       descriptions:
         - "Slowey Systems meets the needs of restaurants, bars, hotels, theatres, nightclubs, and similar venues with a rich range of products developed in-house or by partners: EPOS software, kitchen display systems, stock management, table ordering, online ordering, mobile apps, self-service kiosks, delivery management, loyalty and marketing, and head office management."
-        - "Slowey Systems has developed two EPOS integrations with HubRise and uses it completely independently to connect numerous solutions to its own ecosystem. Slowey Systems also provides integration and development services to support your bespoke projects."
+        - "Slowey Systems has developed two EPOS integrations with HubRise and uses it autonomously to connect numerous solutions to its own ecosystem. Slowey Systems also provides integration and development services to support your bespoke projects."
     - name: JDC SA
       site_url: https://www.jdc.fr
       filename: jdc.png
       descriptions:
-        - "Since 1989, JDC SA has been a multi-specialist in solutions for local businesses, recognised for its expertise in many areas: cash registers, payment terminals, weighing scales, HACCP hygiene, cash recyclers, beverage management, alarms, and video surveillance. JDC SA supports more than 150,000 clients across France through local service provided by a network of 38 branches, with 170 sales advisors and 400 technicians."
+        - "Since 1989, JDC SA has been a multi-specialist in solutions for local businesses, recognised for its expertise in many areas: cash registers, payment terminals, weighing scales, HACCP hygiene, cash recyclers, beverage management, alarms, and CCTV. JDC SA supports more than 150,000 clients across France through local service provided by a network of 38 branches, with 170 sales advisors and 400 technicians."
         - "JDC SA puts all its expertise at the service of a complete, connected, and scalable ecosystem of solutions, of which HubRise is an integral part."
     - name: "NextSourcia"
       site_url: "https://www.nextsourcia.com"
