@@ -31,6 +31,24 @@ Lightspeed Restaurant Bridge crée une commande dans Lightspeed pour chaque comm
 
 Lorsqu'une commande est marquée comme `cancelled` dans HubRise, Lightspeed Restaurant imprime un message sur l'imprimante connectée pour indiquer l'annulation. Selon vos paramètres, ce message peut également apparaître à l'écran de la caisse. La commande reste présente dans Lightspeed et n'est pas supprimée.
 
+### Remises
+
+Les remises sont envoyées à Lightspeed Restaurant avec leur nom, leur code ref, et le montant de la remise.
+
+Les remises doivent être créées en tant que produits dans Lightspeed. Pour savoir comment créer et vérifier les codes ref des remises dans votre back-office Lightspeed, consultez [Associer les codes ref](/apps/lightspeed-restaurant/map-ref-codes#skus-options-discounts-charges).
+
+Les remises avec codes ref incorrects ou manquants sont rejetées par la caisse, c'est pourquoi Lightspeed Restaurant Bridge ignore les remises sans code ref.
+
+### Frais
+
+Les frais sont envoyés à Lightspeed Restaurant avec leur nom, leur code ref, et leur prix.
+
+Les frais doivent être créés en tant que produits dans Lightspeed. Pour savoir comment créer et vérifier les codes ref des frais dans votre back-office Lightspeed, consultez [Associer les codes ref](/apps/lightspeed-restaurant/map-ref-codes#skus-options-discounts-charges).
+
+Les frais avec codes ref incorrects ou manquants sont rejetés par le logiciel de caisse, c'est pourquoi Lightspeed Restaurant Bridge ignore les frais sans code ref.
+
+Il y a une exception : les frais avec le code ref `TIP` ne sont pas envoyés en tant qu'articles mais sont inclus dans le paiement en tant que pourboire. Dans Lightspeed, les pourboires font partie du paiement et ne peuvent pas exister sans lui. Pour ajouter un pourboire sans paiement, utilisez des frais avec un code ref différent, qui correspond à un article dans Lightspeed.
+
 ### Paiements
 
 Zéro, un ou plusieurs paiements peuvent être associés à une commande.
