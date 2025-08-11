@@ -11,7 +11,8 @@ hero:
     part_4: Retail
   description: |
     Connect your EPOS, in-store and online sales channels, and management tools so they work together through one powerful middleware platform.
-  button_label: Create Your Account
+  button_label: Browse Integrations
+  button_link: /apps
   apps:
     - title: Points of Sales
       color: topDark

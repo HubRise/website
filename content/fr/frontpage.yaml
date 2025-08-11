@@ -12,7 +12,8 @@ hero:
     part_4: Retail
   description: |
     Connect your EPOS, online ordering, and inventory tools into one powerful platform.
-  button_label: Créez votre compte
+  button_label: Parcourez nos intégrations
+  button_link: /fr/apps
   apps:
     - title: Logiciels de caisse
       color: topDark

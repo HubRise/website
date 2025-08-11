@@ -41,6 +41,7 @@ export interface FrontpageYaml {
     title: THeroTitle
     description: string
     button_label: string
+    button_link: string
     apps: Array<THeroApp>
   }
   content: {
