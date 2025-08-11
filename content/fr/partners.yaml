@@ -1,6 +1,6 @@
 meta:
-  title: Partners | HubRise
-  description: Find out what other businesses and individuals are saying about their HubRise experience.
+  title: Partenaires | HubRise
+  description: Trouvez un expert pour créer une intégration personnalisée avec HubRise, faites appel à des développeurs, agences ou consultants expérimentés qui peuvent vous aider.
 content:
   title: Rejoignez notre écosystème
   description: Trouver un expert. Si vous souhaitez créer une intégration personnalisée avec HubRise, nous avons des développeurs, des agences et des consultants qui l'ont déjà fait et qui peuvent vous aider.
@@ -12,7 +12,7 @@ content:
         - "ZPF est le studio technique de [Michael Engelmann](https://www.linkedin.com/in/michaelengelmann/), développeur freelance spécialisé dans la conception d’applications sur mesure pour le mobile et la logistique, avec une solide expertise Microsoft. Il a développé plusieurs applications métiers, dont Syscall, StockAPPro ou encore front-end ERP."
         - "Michael Engelmann a conçu une passerelle pour l’intégration de Syscall à HubRise, maîtrise parfaitement l’API HubRise et peut proposer des services de gestion, de connexion, d’intégration ou d’analyse de données."
     - name: Slowey Systems
-      site_url: https://www.sloweysys.com
+      site_url: https://slowey.ie
       filename: slowey-systems.png
       descriptions:
         - "Slowey Systems répond aux besoins des restaurants, bars, hôtels, théâtres et boîtes de nuit avec une gamme de produits riche, développés en interne ou par des partenaires : logiciel de caisse, écran cuisine, gestion des stocks, prise de commande à table, commande en ligne, application mobile, borne de commande, gestion des livreurs, fidélité et marketing, gestion du siège."
