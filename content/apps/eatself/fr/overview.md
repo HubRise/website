@@ -50,7 +50,9 @@ Connecter Eatself à HubRise permet à vos solutions de commande à distance et 
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
 - Recevoir un catalogue de HubRise, avec support des variantes.
+- Envoyer un catalogue à HubRise, avec support des variantes.
 - Synchroniser l'inventaire avec HubRise.
+- Synchroniser les horaires d'ouverture avec HubRise.
 
 ---
 

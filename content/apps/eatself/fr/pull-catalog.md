@@ -32,7 +32,7 @@ Vous pouvez aussi alimenter un catalogue HubRise en récupérant un menu existan
 Une fois que vous avez alimenté votre catalogue sur HubRise et assigné des codes ref à tous les produits et options, vous pouvez le récupérer dans Eatself en suivant ces étapes :
 
 1. Depuis le back-office d'Eatself, cliquez sur le burger menu pour ouvrir la barre de menu à gauche de l'écran.
-1. Section **RÉGLAGES PAIEMENT** cliquer sur **Compte HubRise**.
+1. En bas de page, section **INTÉGRATION CAISSES**, cliquer sur **Compte HubRise**.
 1. Section **Vous êtes actuellement connecté au compte** assurez-vous d'être connecté au bon catalogue HubRise.
 1. Cliquez sur le bouton **RÉCUPÉRER MON CATALOGUE** en bas de page.
 1. Une popup indiquant Le catalogue a été importé avec succès s'affiche.
@@ -49,7 +49,7 @@ Une fois que vous avez alimenté votre catalogue sur HubRise et assigné des cod
 Eatself peut récupérer automatiquement votre catalogue HubRise à chaque fois qu'il est modifié dans HubRise. Cela signifie que vous n'avez pas besoin de vous connecter manuellement à Eatself pour mettre à jour votre menu. Par défaut, cette option est activée. Vous pouvez la désactiver en suivant ces étapes :
 
 1. Depuis le back-office d'Eatself, cliquez sur le burger menu pour ouvrir la barre de menu à gauche de l'écran.
-1. Section **RÉGLAGES PAIEMENT** cliquez sur **Compte HubRise**.
+1. En bas de page, section **INTÉGRATION CAISSES**, cliquez sur **Compte HubRise**.
 1. Option **RECUPERER AUTOMATIQUEMENT LE CATALOGUE ?** faites glisser le bouton `OUI` vers la gauche pour le désactiver.
 
 ![Récupération automatique du catalogue HubRise par Eatself](./images/002-2x-automatic-catalog-push.png)
