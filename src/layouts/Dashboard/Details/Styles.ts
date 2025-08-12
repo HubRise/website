@@ -33,6 +33,9 @@ export const ContentContainer = styled.div`
 `
 
 export const ContentWrapper = styled.div`
+  opacity: 0.2;
+  transition: all 0.2s ease-in-out;
+
   img {
     display: block;
     margin: 1.5rem auto 0;
@@ -40,8 +43,6 @@ export const ContentWrapper = styled.div`
 
   @media (min-width: ${breakpoints.large}) {
     padding-bottom: 15rem;
-    opacity: 0.2;
-    transition: all 0.2s ease-in-out;
 
     img {
       display: none;
