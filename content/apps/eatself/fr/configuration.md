@@ -15,7 +15,7 @@ Si vous connectez Eatself à un logiciel de caisse via HubRise, vous devrez util
 Pour accéder à la page de configuration Eatself, procédez comme suit :
 
 1. Depuis le back-office de Eatself, cliquez sur le burger menu pour ouvrir la barre de menu à gauche de l'écran.
-1. En bas de page, section **RÉGLAGES PAIEMENT**, cliquez sur **Compte HubRise**.
+1. En bas de page, section **INTÉGRATION CAISSES**, cliquez sur **Compte HubRise**.
 1. Sur la page de configuration, effectuez les modifications nécessaires.
 1. Cliquez **ENREGISTRER** pour que les modifications soient prises en compte.
 
@@ -32,6 +32,11 @@ Pour activer cette fonctionnalité, dans la section **RÉCUPÉRER AUTOMATIQUEMEN
 
 Par défaut, Eatself ne récupère pas les codes promo, mais vous pouvez changer ce paramètre si vous préférez les gérer dans HubRise. 
 Pour activer cette fonctionnalité, dans la section **RÉCUPÉRER AUTOMATIQUEMENT LES CODES PROMO DEPUIS HUBRISE ?**, faites glisser le bouton vers la droite pour passer de `NON` à `OUI`.
+
+### Annulation automatique des commandes
+
+Par défaut, Eatself n'annule jamais une commande. Vous pouvez cependant configurer l’annulation automatique des commandes non récupérées par votre logiciel de caisse après un délai de 10 minutes.
+Pour activer cette fonctionnalité, dans la section **ACTIVER L'ANNULATION AUTOMATIQUE DES COMMANDES NON RÉCUPÉRÉES EN CAISSE APRÈS 10 MINUTES ?**, faites glisser le bouton vers la droite pour passer de `NON` à `OUI`.
 
 ### Variantes de catalogue
 
