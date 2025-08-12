@@ -7,7 +7,7 @@ describe("Documentation", () => {
     it("switches language via header links", () => {
       cy.visit("/fr/apps/0test")
       cy.contains("Connecter Acme à HubRise")
-      languagesDropdown().click()
+      languagesDropdown().trigger("mouseover")
       languagesDropdown().find("a").contains("EN").click()
       cy.contains("Connecting Acme to HubRise")
     })

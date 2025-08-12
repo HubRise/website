@@ -1,7 +1,8 @@
+import Image from "next/image"
 import styled from "styled-components"
 
 import { StyledButton } from "@components/Button/Styles"
-import { StyledPageHero } from "@components/PageHero/Styles"
+import { PageHeroTitle, StyledPageHero } from "@components/PageHero/Styles"
 import { breakpoints, colors, fontSizes, lineHeights, mixin } from "@utils/styles"
 
 import { HeroAppColor, linkHeroAppBorderColor } from "./utils"
@@ -10,7 +11,7 @@ export const FrontpageHero = styled.div`
   ${StyledPageHero} {
     background-color: ${colors.backgroundLightest};
 
-    h1 {
+    ${PageHeroTitle} {
       max-width: 65rem;
       margin: 0 auto;
     }
@@ -56,6 +57,14 @@ export const Apps = styled.div`
   }
 `
 
+export const AppImage = styled(Image)``
+
+export const AppInnerTitle = styled.span`
+  font-size: 0.625rem;
+  line-height: ${lineHeights.compact};
+  font-weight: 700;
+`
+
 export const AppInner = styled.div<{ $color: HeroAppColor }>`
   ${mixin.centerElement};
   border-style: solid;
@@ -67,17 +76,11 @@ export const AppInner = styled.div<{ $color: HeroAppColor }>`
   border-radius: 100%;
   position: relative;
 
-  span {
-    font-size: 0.625rem;
-    line-height: ${lineHeights.compact};
-    font-weight: 700;
-  }
-
   @media (min-width: ${breakpoints.small}) {
     width: 6rem;
     height: 6rem;
 
-    span {
+    ${AppInnerTitle} {
       font-size: ${fontSizes._12};
     }
   }
@@ -88,7 +91,7 @@ export const AppInner = styled.div<{ $color: HeroAppColor }>`
     height: 9.75rem;
     padding: 1.25rem;
 
-    span {
+    ${AppInnerTitle} {
       font-size: ${fontSizes._16};
     }
   }
@@ -126,7 +129,7 @@ export const App = styled.div<{ $index: number }>`
       top: -0.975rem;
     }
 
-    img {
+    ${AppImage} {
       inset: auto 0 0 0 !important;
     }
   }
@@ -209,7 +212,7 @@ export const AppWrapper = styled.div`
   justify-content: center;
   position: relative;
 
-  img {
+  ${AppImage} {
     height: 4rem !important;
   }
 
@@ -220,7 +223,7 @@ export const AppWrapper = styled.div`
   @media (min-width: ${breakpoints.extraLarge}) {
     width: 12.625rem;
 
-    img {
+    ${AppImage} {
       height: 6.5rem !important;
     }
   }
@@ -228,7 +231,7 @@ export const AppWrapper = styled.div`
   @media (min-width: ${breakpoints.biggest}) {
     width: 15.25rem;
 
-    img {
+    ${AppImage} {
       height: 8rem !important;
     }
   }

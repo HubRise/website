@@ -1,7 +1,7 @@
 import { MDXRemote } from "next-mdx-remote"
 import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 
-import { StyledPageHero, Wrapper, Title, Description, DescriptionMdx } from "./Styles"
+import { StyledPageHero, Wrapper, PageHeroTitle, Description, DescriptionMdx } from "./Styles"
 
 interface PageHeroProps {
   children?: React.ReactNode
@@ -21,7 +21,7 @@ const PageHero = ({
   <StyledPageHero $isTextCentered={isTextCentered}>
     <Wrapper>
       <div>
-        {title && <Title>{title}</Title>}
+        {title && <PageHeroTitle>{title}</PageHeroTitle>}
         {description && <Description>{description}</Description>}
         {descriptionMdx && (
           <DescriptionMdx>

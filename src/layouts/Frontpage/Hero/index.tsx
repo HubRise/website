@@ -1,4 +1,3 @@
-import Image from "next/image"
 import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 
 import Button from "@components/Button"
@@ -6,7 +5,7 @@ import PageHero from "@components/PageHero"
 
 import { THeroApp, THeroTitle } from "../types"
 
-import { FrontpageHero, Apps, AppWrapper, AppInner, App } from "./Styles"
+import { FrontpageHero, Apps, AppImage, AppInnerTitle, AppWrapper, AppInner, App } from "./Styles"
 import { getHeroAppsImageSource } from "./utils"
 
 interface HeroProps {
@@ -34,9 +33,9 @@ const Hero = ({ title, button_label, button_link, apps, descriptionMdx }: HeroPr
             return (
               <App $index={index} key={index}>
                 <AppWrapper>
-                  <Image src={getHeroAppsImageSource(color)} alt="Hero Apps" fill={true} />
+                  <AppImage src={getHeroAppsImageSource(color)} alt="Hero Apps" fill={true} />
                   <AppInner $color={color}>
-                    <span>{title}</span>
+                    <AppInnerTitle>{title}</AppInnerTitle>
                   </AppInner>
                 </AppWrapper>
               </App>
