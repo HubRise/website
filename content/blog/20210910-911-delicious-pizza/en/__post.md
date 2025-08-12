@@ -27,7 +27,7 @@ Azim Karym, Nasser Baka, and Abderrahim Baka are the co-founders. Although all t
 
 Today, the brand is entering a new phase in its evolution. Indeed, within a few weeks, the four restaurants will transition from '911 Pizza' to '911 Delicious Company,' the new name selected by the three entrepreneurs to spearhead their franchise network. While the vision for franchising was there from day one, it wasn't until October 2019, twelve years after launching their first establishment in Talant, that they actively pursued this ambition.
 
-This is when Abderrahim Baka officially joined the business venture with his brother and their childhood friend. As a digital enthusiast, Abderrahim had already been influential in molding the 911 Pizza brand, offering his expertise as an advisor and consultant.  When Nasser and Aziz opened their first restaurant in 2007, Abderrahim was pursuing a solo career in the communications sphere but developped in parallel the brand's visual identity. In 2016, he joined Smart Traffik and helped major clients such as Bouygues Telecom, Axa, and Armani enhance their omnichannel strategies. Over 11 years, his expertise in marketing and digital arenas paralleled Nasser and Aziz's refinement of the original 911 Pizza brand, which matured and evolved to become the successful 911 Pizza concept we know today.
+This is when Abderrahim Baka officially joined the business venture with his brother and their childhood friend. As a digital enthusiast, Abderrahim had already been influential in molding the 911 Pizza brand, offering his expertise as an advisor and consultant. When Nasser and Aziz opened their first restaurant in 2007, Abderrahim was pursuing a solo career in the communications sphere but developped in parallel the brand's visual identity. In 2016, he joined Smart Traffik and helped major clients such as Bouygues Telecom, Axa, and Armani enhance their omnichannel strategies. Over 11 years, his expertise in marketing and digital arenas paralleled Nasser and Aziz's refinement of the original 911 Pizza brand, which matured and evolved to become the successful 911 Pizza concept we know today.
 
 By the end of 2019, joined forces to move forward with the franchise project and co-founded 911 Delicious Company.
 
@@ -38,13 +38,13 @@ By the end of 2019, joined forces to move forward with the franchise project and
 With his experiences, career path, and affinity for digital aspects of a business, Abderrahim naturally took on the head of marketing and technology manager hat. With this brand where digital takes a 'pole position'as he likes to say, there's never a shortage of projects. 911 Pizza, has always been a connected brand, present on multiple channels.
 
 - Sit-in orders or orders at the counter, takeaway, or delivery, with its own dedicated fleet of delivery drivers.
-- An online ordering website and dedicated ordering app. 
+- An online ordering website and dedicated ordering app.
 - Self ordering kiosks on site.
 - A srong presence in all major food ordering and delivery platforms.
 - A dedicated phone reservation line for each location.
 - The brand was also about to launch a table ordering solution with QR code as well as a drive-through service for certain locations.
 
-> "While these tools make life easier for customers, they also complicate matters for us. Customers and orders come from everywhere: from the kiosk, the mobile app, face to face, from food ordering platforms, from the website, and soon also from the table-ordering app and  drive-through. Can you imagine the number of ordering channels? If nothing is connected, if you don't have an integrated computer system that consolidates, gathers, organises, and displays products to be prepared in a clear and simple way, it quickly becomes a nightmare in the kitchen!"
+> "While these tools make life easier for customers, they also complicate matters for us. Customers and orders come from everywhere: from the kiosk, the mobile app, face to face, from food ordering platforms, from the website, and soon also from the table-ordering app and drive-through. Can you imagine the number of ordering channels? If nothing is connected, if you don't have an integrated computer system that consolidates, gathers, organises, and displays products to be prepared in a clear and simple way, it quickly becomes a nightmare in the kitchen!"
 
 Abderrahim immediately identifies major pain points and the project to prioritise was clearly integration. Thanks to his experience at Smart Traffik, he knows that setting up an integrated computer system facilitates the team's work and provides a significant competitive advantage.
 

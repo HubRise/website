@@ -49,12 +49,12 @@ First, for their experience with other food courts, which is truly a unique dini
 
 This streamlines the ordering process in every way. Clients who choose to order at the table are autonomous, which reduces queues at the counters and therefore unclogs the interior of the halls, especially during peak periods. This frees up the stall staff's time, allowing them to focus more on preparing orders. Clients are served more rapidly, which helps improve their level of satisfaction. Not to mention that this has a positive impact on client turnover rates freeing space for new visitors... even if we encourage clients to stay as long as possible to continuously enjoy the atmosphere and explore all our services and amenities. After all, our promise is still “Drink, eat, chat! At any time of the day!
 
-----
+---
 
 **Felix, a client charmed by the HALLES!**
 
-**"Eating, drinking, chatting" is the promise of the Grandes Halles du Vieux Port and that's exactly what Felix and his 2 childhood friends came to do on this Sunday afternoon. It's a beautiful winter day, the kind only Provence can offer, and the old port of Marseille buzzes with life. The Halles are crowded but easy to navigate and the relaxed atmosphere quickly puts the three friends at ease. After ordering a drink at the Bar Central counter, they take a seat on the large sun-drenched terrace, alongside a cosmopolitan clientele.
+"Eating, drinking, chatting" is the promise of the Grandes Halles du Vieux Port and that's exactly what Felix and his 2 childhood friends came to do on this Sunday afternoon. It's a beautiful winter day, the kind only Provence can offer, and the old port of Marseille buzzes with life. The Halles are crowded but easy to navigate and the relaxed atmosphere quickly puts the three friends at ease. After ordering a drink at the Bar Central counter, they take a seat on the large sun-drenched terrace, alongside a cosmopolitan clientele.
 While chatting and sipping their drink, they browse through the digital menus of the 11 stalls thanks to the QR code they had fun scanning. One of them orders a seafood platter from Coquillages Claude directly in his smartphone. For Felix and his friend, it will be a pizza and a burger, ordered directly at the counters of the Grill des Halles and the 500 Degrés Pizza "because it's delightful to wander and explore this enchanting place: a real micro neighborhood within the neighborhood!" Felix specifies.
-If Les Halles invites them to relax and share, it is also a real show in itself, as lively and animated as the city of Marseille can be. Happy to have chosen Les Halles for their joyful reunion, the three friends also promise to return soon... Perhaps an opportunity to try new culinary flavours and enjoy one of the many festive events organised at Les Grandes Halles du Vieux Port!**
+If Les Halles invites them to relax and share, it is also a real show in itself, as lively and animated as the city of Marseille can be. Happy to have chosen Les Halles for their joyful reunion, the three friends also promise to return soon... Perhaps an opportunity to try new culinary flavours and enjoy one of the many festive events organised at Les Grandes Halles du Vieux Port!
 
-----
+---

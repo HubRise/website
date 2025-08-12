@@ -12,7 +12,7 @@ _Last updated: 12 May 2021._
 
 These terms are entered into between:
 
-- HubRise SAS, a French company registered with the Cannes Trade and Companies Register (RCS) under number 820 071 561 00014, with its registered office located at 150 avenue des Clos, 06250 Mougins, France, hereinafter referred to as **"HubRise"**,
+- HubRise SAS, a French company registered with the Cannes Trade and Companies Register (RCS) under number 820 071 561 00014, with its registered office located at 630 route des Dolines, Ophira 2, 06560 Valbonne, France, hereinafter referred to as **"HubRise"**,
 - Any individual or legal entity, whether acting in a private or professional capacity, and whether governed by private or public law, wishing to access or use one or more of the services offered by HubRise, hereinafter referred to as the **"User"**. If the User is acting on behalf of an entity, they declare and affirm that they have the authority to bind said entity.
 
 The User and HubRise are hereinafter collectively referred to as the **"Parties"**.
