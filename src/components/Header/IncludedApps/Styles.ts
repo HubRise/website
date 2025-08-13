@@ -11,11 +11,6 @@ export const AppList = styled.div`
   gap: 2rem;
 `
 
-export const App = styled(Link)`
-  display: flex;
-  gap: 1.25rem;
-`
-
 export const AppContent = styled.div`
   display: flex;
   flex-direction: column;
@@ -25,10 +20,12 @@ export const AppContent = styled.div`
 export const AppTitle = styled.h4`
   color: ${colors.textDarkest};
   font-weight: 600;
+  transition: color 0.2s ease;
 `
 
 export const AppDescription = styled.p`
   font-size: ${fontSizes._14};
+  transition: color 0.2s ease;
 `
 
 export const AppLink = styled.span`
@@ -41,4 +38,18 @@ export const AppLink = styled.span`
   ${StyledIcon} {
     margin-left: 0.5rem;
   }
+`
+
+export const App = styled(Link)`
+  display: flex;
+  gap: 1.25rem;
+
+  &:hover {
+    ${AppTitle} {
+      color: ${colors.primary};
+    }
+
+    ${AppDescription} {
+      color: ${colors.textDarkest};
+    }
 `
