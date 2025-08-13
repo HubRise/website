@@ -70,7 +70,7 @@ export const DropdownContainer = styled.div`
     ${DropdownTrigger} {
       color: ${colors.primary};
     }
-
+    
     ${DropdownMenuWrapper} {
       opacity: 1;
       visibility: visible;
