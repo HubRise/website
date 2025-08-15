@@ -37,7 +37,11 @@ const ScreenContainer = ({
     {withHeader && (
       <>
         <HeaderWrapper>
-          {title && <Title $bgColor={bgColor}>{anchor ? <Anchor href={`#${anchor}`}>{title}</Anchor> : title}</Title>}
+          {title && (
+            <Title $bgColor={bgColor} id={anchor ? anchor : ""}>
+              {anchor ? <Anchor href={`#${anchor}`}>{title}</Anchor> : title}
+            </Title>
+          )}
 
           {descriptionMdx && (
             <Description>

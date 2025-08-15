@@ -44,19 +44,19 @@ const Details = ({ title, content_blocks }: DetailsProps): JSX.Element => {
 
   useEffect(() => {
     if (detailsContainerRef.current) {
-      if (scrollYOffset < detailsContainerRef.current?.offsetTop + 340) {
+      if (scrollYOffset < detailsContainerRef.current?.offsetTop + 240) {
         setActiveDetailsView(1)
       } else if (
-        scrollYOffset > detailsContainerRef.current?.offsetTop + 330 &&
-        scrollYOffset < detailsContainerRef.current?.offsetTop + 710
+        scrollYOffset > detailsContainerRef.current?.offsetTop + 230 &&
+        scrollYOffset < detailsContainerRef.current?.offsetTop + 660
       ) {
         setActiveDetailsView(2)
       } else if (
-        scrollYOffset > detailsContainerRef.current?.offsetTop + 700 &&
-        scrollYOffset < detailsContainerRef.current?.offsetTop + 1250
+        scrollYOffset > detailsContainerRef.current?.offsetTop + 650 &&
+        scrollYOffset < detailsContainerRef.current?.offsetTop + 1150
       ) {
         setActiveDetailsView(3)
-      } else if (scrollYOffset > detailsContainerRef.current?.offsetTop + 1150) {
+      } else if (scrollYOffset > detailsContainerRef.current?.offsetTop + 1050) {
         setActiveDetailsView(4)
       }
     }
@@ -64,15 +64,15 @@ const Details = ({ title, content_blocks }: DetailsProps): JSX.Element => {
 
   useEffect(() => {
     if (detailsContainerRef.current) {
-      if (scrollYOffset <= detailsContainerRef.current?.offsetTop - 150) {
+      if (scrollYOffset <= detailsContainerRef.current?.offsetTop - 250) {
         setProgress(0)
       } else if (
-        scrollYOffset >= detailsContainerRef.current?.offsetTop - 150 &&
+        scrollYOffset >= detailsContainerRef.current?.offsetTop - 250 &&
         scrollYOffset <= detailsContainerRef.current?.offsetTop + detailsContainerRef.current?.clientHeight
       ) {
         setProgress(
           Math.ceil(
-            ((scrollYOffset - detailsContainerRef.current?.offsetTop + 200) /
+            ((scrollYOffset - detailsContainerRef.current?.offsetTop + 350) /
               detailsContainerRef.current?.clientHeight) *
               100,
           ),

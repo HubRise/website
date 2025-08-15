@@ -22,7 +22,7 @@ export const Wrapper = styled.div`
   margin: 0 auto;
 `
 
-export const Title = styled.h1`
+export const PageHeroTitle = styled.h1`
   font-size: ${fontSizes._42};
   line-height: ${lineHeights.compact};
   font-weight: 600;
