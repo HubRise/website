@@ -12,17 +12,18 @@ import {
 
 export const Container = styled.div<{
   $bgColor: ScreenContainerBgColor
-  $vPadding: ScreenContainerVerticalPadding
+  $verticalPadding: ScreenContainerVerticalPadding
   $textCentered: boolean
+  $overflowVisible: boolean
 }>`
   background-color: ${({ $bgColor }) => linkContainerBgColor($bgColor)};
   padding: 3.5rem 1rem;
   color: ${({ $bgColor }) => ($bgColor === "green" ? `${colors.white}` : "inherit")};
   text-align: ${({ $textCentered }) => ($textCentered ? "center" : "initial")};
-  overflow: hidden;
+  overflow: ${({ $overflowVisible }) => ($overflowVisible ? "visible" : "hidden")};
 
   @media (min-width: ${breakpoints.large}) {
-    padding: ${({ $vPadding }) => linkContainerVerticalPadding($vPadding)};
+    padding: ${({ $verticalPadding }) => linkContainerVerticalPadding($verticalPadding)};
   }
 `
 
