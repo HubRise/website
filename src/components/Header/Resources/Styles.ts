@@ -27,20 +27,32 @@ export const ResourcesLinks = styled.div`
   }
 `
 
-export const ResourcesLink = styled(Link)`
-  @media (min-width: ${breakpoints.burgerMenu}) {
-    max-width: 15rem;
-  }
-`
-
 export const LinkName = styled.p`
   font-weight: 600;
   color: ${colors.textDarkest};
+  transition: color 0.2s ease;
 `
 
 export const LinkDescription = styled.span`
   font-size: ${fontSizes._14};
   color: ${colors.textDark};
+  transition: color 0.2s ease;
+`
+
+export const ResourcesLink = styled(Link)`
+  &:hover {
+    ${LinkName} {
+      color: ${colors.primary};
+    }
+
+    ${LinkDescription} {
+      color: ${colors.textDarkest};
+    }
+  }
+
+  @media (min-width: ${breakpoints.burgerMenu}) {
+    max-width: 15rem;
+  }
 `
 
 export const GetInTouchCard = styled.div`

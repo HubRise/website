@@ -51,8 +51,8 @@ export default async function Page({ params }: { params: Params }): Promise<JSX.
 }
 
 const render = async (language: Language, languagePaths: LanguagePaths, content: JSX.Element): Promise<JSX.Element> => {
-  const header = <Header language={language} languagePaths={languagePaths} />
-  const footer = <Footer language={language} />
+  const header = await Header({ language, languagePaths })
+  const footer = await Footer({ language })
   return (
     <Layout language={language} header={header} footer={footer}>
       {content}
