@@ -16,8 +16,8 @@ export const linkContainerBgColor = (bgColor: ScreenContainerBgColor) => {
   }
 }
 
-export const linkContainerVerticalPadding = (vPadding: ScreenContainerVerticalPadding) => {
-  switch (vPadding) {
+export const linkContainerVerticalPadding = (verticalPadding: ScreenContainerVerticalPadding) => {
+  switch (verticalPadding) {
     case "small":
       return "3.5rem 0"
     case "big":

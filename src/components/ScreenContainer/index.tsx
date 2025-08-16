@@ -15,6 +15,7 @@ interface ScreenContainerProps {
   descriptionMdx?: MDXRemoteSerializeResult
   withDivider?: boolean
   anchor?: string
+  overflowVisible?: boolean
 }
 
 const ScreenContainer = ({
@@ -27,8 +28,14 @@ const ScreenContainer = ({
   descriptionMdx,
   withDivider = true,
   anchor = "",
+  overflowVisible = false,
 }: ScreenContainerProps) => (
-  <Container $bgColor={bgColor} $vPadding={verticalPadding} $textCentered={isTextCentered}>
+  <Container
+    $bgColor={bgColor}
+    $verticalPadding={verticalPadding}
+    $textCentered={isTextCentered}
+    $overflowVisible={overflowVisible}
+  >
     {withHeader && (
       <>
         <HeaderWrapper>
