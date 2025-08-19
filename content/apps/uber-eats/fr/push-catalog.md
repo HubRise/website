@@ -75,6 +75,8 @@ Uber Eats Bridge associe les produits à SKU unique et les produits sur Uber Eat
 - Prix
 - Options
 - Tags indiquant des allergènes
+- Taux de TVA
+- Restrictions temporelles
 
 Pour les produits ayant plusieurs SKU, Uber Eats Bridge crée un produit avec un modificateur pour chaque SKU.
 Les options sont associées à chaque SKU sous forme de couche supplémentaire de modificateurs.
@@ -89,7 +91,7 @@ Uber Eats Bridge associe les promotions HubRise et les produits avec modificateu
 
 ### Images
 
-Les images de produits sur Uber Eats doivent avoir des dimensions entre 320x320 pixels et 6000x6000 pixels.
+Les images doivent avoir des dimensions entre 320×320 et 6000×6000 pixels, avec un rapport largeur/hauteur entre 1:1 et 1,5:1.
 
 ## Référence technique
 
@@ -115,16 +117,18 @@ Pour chaque [produit](/developers/api/catalogs#products) avec plusieurs SKU, Ube
 - `price` : prix minimum de tous les SKU
 - `image` : adresse URL de l'image du produit parent
 - `tags` : tags décrivant les caractéristiques et les restrictions du produit, telles que les allergènes ou la saveur épicée. Pour consulter la liste des tags disponibles sur Uber Eats, voir [Tags produit](#product-tags).
-- `barcodes` : seul le premier code-barres est envoyé, s'il est présent.
+- `tax_rate` : taux de TVA en livraison et vente à emporter pour le produit.
 
 La liste des SKU est associée au produit sous forme de tableau de modificateurs.
 
 Pour chaque objet `sku` dans un produit, Uber Eats Bridge envoie les informations suivantes à Uber Eats :
 
-- `ref` : code ref de la SKU, qui sera transmis dans les commandes
-- `name` : nom de la SKU
-- `price` : différence éventuelle de prix avec le produit principal
-- `option_list_refs` : liste des options rattachées à la SKU
+- `ref` : code ref de la SKU, qui sera transmis dans les commandes.
+- `name` : nom de la SKU.
+- `price` : différence éventuelle de prix avec le produit principal.
+- `barcodes` : seul le premier code-barres est envoyé, s'il est présent.
+- `restrictions` : les restrictions temporelles sont envoyées si `dow`, `start_time` et `end_time` sont définis.
+- `option_list_refs` : liste des options rattachées à la SKU.
 
 Pour plus d'informations sur les SKU dans le catalogue HubRise, voir [Skus](/developers/api/catalogs#skus) (en anglais).
 
@@ -132,28 +136,28 @@ Pour plus d'informations sur les SKU dans le catalogue HubRise, voir [Skus](/dev
 
 Le tableau ci-dessous répertorie les tags qui peuvent être définis sur les produits.
 
-| Tag                                  | Description                                                                            |
-| ------------------------------------ | -------------------------------------------------------------------------------------- |
-| `alcoholic`                          | Contient de l'alcool.                                                  |
-| `deal_only`                          | Ne peut être commandé que dans le cadre d'une promotion.               |
-| `gluten_free`                        | Ne contient pas de gluten.                                             |
-| `vegan`                              | Ne contient aucun produit animal.                                      |
-| `vegetarian`                         | Ne contient pas de viande.                                             |
-| `allergen_celery`                    | Contient l'allergène indiqué.                                          |
-| `allergen_crustaceans`               | Contient l'allergène indiqué.                                          |
-| `allergen_eggs`                      | Contient l'allergène indiqué.                                          |
-| `allergen_fish`                      | Contient l'allergène indiqué.                                          |
-| `allergen_gluten`                    | Contient l'allergène indiqué.                                          |
-| `allergen_lupin`                     | Contient l'allergène indiqué.                                          |
-| `allergen_milk`                      | Contient l'allergène indiqué.                                          |
-| `allergen_molluscs`                  | Contient l'allergène indiqué.                                          |
-| `allergen_mustard`                   | Contient l'allergène indiqué.                                          |
-| `allergen_nuts`                      | Contient l'allergène indiqué.                                          |
-| `allergen_peanuts`                   | Contient l'allergène indiqué.                                          |
-| `allergen_sesame_seeds`              | Contient l'allergène indiqué.                                          |
-| `allergen_soybeans`                  | Contient l'allergène indiqué.                                          |
-| `allergen_sulphur_dioxide_sulphites` | Contient l'allergène indiqué.                                          |
-| `deposit_cc`                         | Nécessite un acompte. `cc` est un montant en centimes. |
+| Tag                                  | Description                                              |
+| ------------------------------------ | -------------------------------------------------------- |
+| `alcoholic`                          | Contient de l'alcool.                                    |
+| `deal_only`                          | Ne peut être commandé que dans le cadre d'une promotion. |
+| `gluten_free`                        | Ne contient pas de gluten.                               |
+| `vegan`                              | Ne contient aucun produit animal.                        |
+| `vegetarian`                         | Ne contient pas de viande.                               |
+| `allergen_celery`                    | Contient l'allergène indiqué.                            |
+| `allergen_crustaceans`               | Contient l'allergène indiqué.                            |
+| `allergen_eggs`                      | Contient l'allergène indiqué.                            |
+| `allergen_fish`                      | Contient l'allergène indiqué.                            |
+| `allergen_gluten`                    | Contient l'allergène indiqué.                            |
+| `allergen_lupin`                     | Contient l'allergène indiqué.                            |
+| `allergen_milk`                      | Contient l'allergène indiqué.                            |
+| `allergen_molluscs`                  | Contient l'allergène indiqué.                            |
+| `allergen_mustard`                   | Contient l'allergène indiqué.                            |
+| `allergen_nuts`                      | Contient l'allergène indiqué.                            |
+| `allergen_peanuts`                   | Contient l'allergène indiqué.                            |
+| `allergen_sesame_seeds`              | Contient l'allergène indiqué.                            |
+| `allergen_soybeans`                  | Contient l'allergène indiqué.                            |
+| `allergen_sulphur_dioxide_sulphites` | Contient l'allergène indiqué.                            |
+| `deposit_cc`                         | Nécessite un acompte. `cc` est un montant en centimes.   |
 
 ### Options
 

@@ -31,7 +31,7 @@ Pour vérifier les codes ref des articles, vous pouvez ouvrir le fichier CSV té
 
 Vous pouvez trouver les codes ref des SKUs, options, promotions, remises, frais, types de service et paiements dans votre back-office Lightspeed.
 
-### SKU, options, remises et frais
+### SKUs, options, remises et frais {#skus-options-discounts-charges}
 
 Pour trouver les codes ref des SKUs, options, remises et frais, suivez ces étapes :
 

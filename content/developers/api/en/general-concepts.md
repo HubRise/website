@@ -29,15 +29,15 @@ Access tokens are generated via OAuth 2.0. For more details, see [Authentication
 
 In this documentation, URLs are abbreviated for clarity. For instance, `GET /location/orders` will be used instead of the full `GET https://api.hubrise.com/v1/location/orders`.
 
-## 2. Pagination
+## 2. Pagination {#pagination}
 
-Some endpoints like `GET /location/orders` return a collection of results. They are called **index endpoints**.
+Some endpoints paginate their results. These are called **paginated endpoints**. When an endpoint is paginated, this is explicitly indicated in its documentation.
 
-These endpoints paginate their results. Each response can contain up to 100 results. If there are more results available, the response will include the initial batch and an `X-Cursor-Next` header.
+Paginated endpoints return up to 100 results per response. If there are more results available, the response will include the initial batch and an `X-Cursor-Next` header.
 
 To retrieve the next batch of results, send a new request and include the previously returned cursor value in the `cursor` URL query parameter. Repeat until there is no cursor value in the response, which indicates that you have received the final batch.
 
-All index endpoints accept two parameters:
+Paginated endpoints accept two parameters:
 
 - `count`: The maximum number of results to return per request. The default and maximum value is 100. Decrease this value if needed.
 - `cursor`: The next batch of results to return. Must be set to the value received in the previous `X-Cursor-Next` response header to iterate through the results. If left unset, the first batch is returned.

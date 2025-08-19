@@ -31,6 +31,24 @@ Lightspeed Restaurant Bridge creates an order in Lightspeed for each order from 
 
 When an order is marked as `cancelled` in HubRise, Lightspeed Restaurant prints a message on the connected printer to indicate the cancellation. Depending on your settings, this message may also appear on the EPOS screen. The order remains in Lightspeed and is not deleted.
 
+### Discounts
+
+Discounts are sent to Lightspeed Restaurant, including their name, ref code, and discount amount.
+
+Discounts must be created as items in Lightspeed. To find out how to create and check discount ref codes in your Lightspeed back office, see [Map Ref Codes](/apps/lightspeed-restaurant/map-ref-codes#skus-options-discounts-charges).
+
+Discounts with incorrect or missing ref codes are rejected by the EPOS, therefore Lightspeed Restaurant Bridge skips discounts without a ref code.
+
+### Charges
+
+Charges are sent to Lightspeed Restaurant, including their name, ref code, and price.
+
+Charges must be created as items in Lightspeed. To find out how to create and check charge ref codes in your Lightspeed back office, see [Map Ref Codes](/apps/lightspeed-restaurant/map-ref-codes#skus-options-discounts-charges).
+
+Charges with incorrect or missing ref codes are rejected by the EPOS, therefore Lightspeed Restaurant Bridge skips charges without a ref code.
+
+There is one exception: charges with ref code `TIP` are not sent as items but are instead included in the payment as a tip amount. In Lightspeed, tips are part of the payment and cannot exist without one. To add a tip without a payment, use a charge with a different ref code that corresponds to an item in Lightspeed.
+
 ### Payments
 
 Zero, one, or multiple payments can be associated with an order.
@@ -74,9 +92,7 @@ When customer information is not available, Lightspeed Restaurant Bridge creates
 
 ## Order Modifications {#order-modifications}
 
-When an order created in HubRise is modified in Lightspeed, Lightspeed Restaurant Bridge sends both item and payment changes to HubRise.
-
-However, when an order is modified in HubRise, Lightspeed Restaurant Bridge only sends payment changes to Lightspeed. Support for pushing item changes to Lightspeed may be added in the future. If you need this feature, please contact us.
+Orders created in HubRise are synchronised in both directions. When an order created in HubRise is modified in Lightspeed, Lightspeed Restaurant Bridge sends both item and payment changes to HubRise. When the order is modified in HubRise, Lightspeed Restaurant Bridge sends any new items and payments to Lightspeed, but does not send modifications to existing items or payments.
 
 Orders created in Lightspeed can be pulled into HubRise only when they are closed. Modifications to these orders are not sent to HubRise. For more information, see [Pull Orders](/apps/lightspeed-restaurant/pull-orders).
 
@@ -84,11 +100,11 @@ Orders created in Lightspeed can be pulled into HubRise only when they are close
 
 Local orders in Lightspeed correspond to orders with a service type of `eat-in` in HubRise. When a table name is associated with a local order, it is handled slightly differently. Here are the specifics:
 
-- When a local order is created, the bridge checks if the table name is already associated with an open check in Lightspeed. If it is, the bridge will add the items and payments from the open check to the HubRise order.
-- If the table name is associated with an open check, but another HubRise order is already associated with that table name, the bridge will mark the new HubRise order as `rejected`.
+- When a local order is created, the bridge checks if the table is already open in Lightspeed. If it is, the bridge will add the items and payments from the check to the HubRise order.
+- If the table is open, but another HubRise order is already associated with that table, the bridge will mark the new HubRise order as `rejected`.
 
 The following scenarios illustrate how local orders can be used:
 
 - **Booking solution:** When the customer checks in, the booking solution creates an empty eat-in order in HubRise with the table name. When the customer orders and pays, the booking solution is informed of the order and payment details.
-- **Table ordering app:** When the customer places an order, the app creates an eat-in order in HubRise. The order can be either paid immediately via the app, or later via the app or at the counter. As mentioned in [Order Modifications](#order-modifications), the bridge does not currently support adding more items for the same table: the app must pay the order and create a new one.
+- **Table ordering app:** When the customer places an order, the app creates an eat-in order in HubRise. This order can be supplemented with additional items later, either via the app or directly in Lightspeed (for example, if a server adds items). At the end of the meal, the order can be paid either through the app or in Lightspeed, with one or multiple payments.
 - **Pay-at-the-table solution:** When the customer is ready to pay, the app creates an empty eat-in order in HubRise with the table name. The bridge then fetches the open check for that table and adds the items in HubRise. The app is notified of the update, and it displays the items and payment amount to the customer. When the customer pays, the app sends the payment to HubRise, which closes the check in Lightspeed.

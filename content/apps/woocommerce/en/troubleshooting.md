@@ -12,13 +12,15 @@ meta:
 
 The first step to receive orders in HubRise is to connect WooCommerce to HubRise. If you have not done so, follow the steps in [Connect to HubRise](/apps/woocommerce/connect-hubrise) first.
 
-If you have connected WooCommerce to HubRise, but you are not receiving orders in HubRise, check the following items.
+If you have connected WooCommerce to HubRise, but you are not receiving orders in HubRise, check the following common issues.
 
-### Check WooCommerce Webhooks
+### Check WooCommerce Webhooks {#check-woocommerce-webhooks}
 
 When you connect WooCommerce Bridge, it creates two webhooks on your WooCommerce website. These webhooks are essential to transmit orders from WooCommerce to HubRise.
 
 Not only should you verify the presence of these webhooks, but you also need to ensure that their status is **Active**. If the status is **Inactive**, the webhooks will not work. You will need to reactivate them by clicking on their names.
+
+If you find the webhooks have been disabled, this often indicates that WooCommerce has not been configured to prevent automatic webhook disabling - see [Webhooks Automatically Disabled](#webhooks-automatically-disabled) below.
 
 To check that the webhooks have been created:
 
@@ -34,6 +36,52 @@ To check that the webhooks have been created:
 If these entries are present and active, it is a good sign that the connection to HubRise was successfully established. You can proceed to the next verification step.
 
 If you cannot find the two entries, you need to reconnect the bridge and check WooCommerce webhooks again. For more information on connecting the bridge, see [Connect to HubRise](/apps/woocommerce/connect-hubrise).
+
+### Check WooCommerce Logs
+
+If the webhooks are present and active but orders are still not being received, check the WooCommerce logs for more details:
+
+1. Navigate to **WooCommerce** > **Status** > **Logs** in your WooCommerce back office.
+2. Check the `webhooks-delivery` log from the day of the order to verify if webhook calls were made to HubRise.
+3. Review the `fatal-errors` log for any issues around that time.
+4. Check the specific `place-order-debug-[id]` log for that order if available.
+
+Remember to account for timezone differences: WooCommerce logs use the server's timezone (such as UTC), while WooCommerce Bridge logs use local time.
+
+For more details on WooCommerce logs, see [WooCommerce Logs](#woocommerce-logs).
+
+### Webhooks Automatically Disabled {#webhooks-automatically-disabled}
+
+If your WooCommerce webhooks are being automatically disabled, this is likely due to repeated delivery failures. By default, WooCommerce disables webhooks after 5 consecutive failed attempts.
+
+To prevent webhooks from being disabled automatically, see detailed instructions in [Prevent Automatic Webhook Disabling](/apps/woocommerce/connect-hubrise#prevent-automatic-webhook-disabling) in the Connect to HubRise documentation.
+
+If webhooks have already been disabled, you'll need to manually reactivate them by following the steps in [Check WooCommerce Webhooks](#check-woocommerce-webhooks) above.
+
+### Error 422 - Private Ref Already Used
+
+When WooCommerce orders fail to sync with HubRise, you may encounter a `422` error with the following response body:
+
+```json
+{
+  "message": "Validation failed",
+  "errors": [
+    {
+      "field": "/private_ref",
+      "message": "is already used ('21824' given)"
+    }
+  ],
+  "error_type": "unprocessable_entity"
+}
+```
+
+This error indicates that the order ID (`private_ref`) being sent is already in use. This typically happens after a database restore in WooCommerce, which resets the auto-increment value for the `wp_posts` table, causing new orders to have duplicate IDs.
+
+To resolve this issue:
+
+1. Use the SQL query tool to find the highest ID in your posts table (see [Using the SQL Query Tool](#using-sql-query-tool)).
+2. Update the auto-increment value to be 1 higher than the current highest ID.
+3. Place a test order to verify the issue is resolved.
 
 ### Place a Test Order in WooCommerce
 
@@ -56,31 +104,65 @@ If you can see the order, the connection between WooCommerce and HubRise is work
 
 ## Orders Received in HubRise With a Delay
 
-By default, orders are transmitted from WooCommerce to HubRise by a process called a **cron**. This process runs every few minutes and transmits all orders that have not been transmitted yet. This can delay order creation and status updates.
+By default, WooCommerce processes webhooks asynchronously, which can delay order transmission to HubRise by several minutes.
 
-You can opt to transmit orders immediately, without waiting for the cron to run. This is called **synchronous webhooks**. To enable synchronous webhooks, follow these steps:
+To enable immediate order transmission, you need to configure synchronous webhook delivery. For detailed instructions, see [Enable Synchronous Webhook Delivery](/apps/woocommerce/connect-hubrise#enable-synchronous-webhook-delivery) in the Connect to HubRise documentation.
 
-1. Access your WordPress site files using an FTP client or your hosting control panel's file manager.
-1. Navigate to the `wp-content/themes/[your-theme]` directory, where `[your-theme]` is the folder of your active theme.
-1. Open the `functions.php` file and append the following code snippet at the end of the file:
+## Catalog Updates Not Working
+
+### Orphaned Records
+
+If catalog updates from HubRise to WooCommerce are failing, this could be caused by orphaned records in the `wp_wc_product_meta_lookup` table, a [known WooCommerce bug](https://github.com/woocommerce/woocommerce/pull/55097) fixed in version 9.8.
+
+To confirm this is the problem:
+
+1. In WooCommerce Bridge, find the failing Catalog push operation (showing error code `400`).
+2. Click on the operation to view its details.
+3. Expand the **RESPONSE** section to view the error details.
+
+![Catalog push error response showing woocommerce_rest_product_not_created](./images/020-woocommerce-orphaned-records.png)
+
+If you see an error message like the following, this confirms the orphaned records issue:
+
+```json
+{
+  "code": "woocommerce_rest_product_not_created",
+  "message": "L'UGS (2200) que vous tentez d'insérer est déjà en cours de traitement",
+  "data": {
+    "status": 400
+  }
+}
+```
+
+The error indicates that the SKU you're trying to insert is already being processed, which happens due to orphaned records in the database.
+
+To clean the orphaned records:
+
+1. Install the SQL query tool. Refer to [Using the SQL Query Tool](#using-sql-query-tool).
+
+2. Run this SQL query (replace `wp_` with your table prefix):
+
+   ```sql
+   DELETE pm FROM wp_wc_product_meta_lookup pm
+   LEFT JOIN wp_posts p ON pm.product_id = p.ID
+   WHERE p.ID IS NULL OR p.post_status = 'trash'
    ```
-   add_filter( 'woocommerce_webhook_deliver_async', '__return_false' );
-   ```
-1. Save the file and the changes will take effect immediately.
 
-If you are not sure how to do edit the `functions.php` file, contact the developer of your WooCommerce website.
+3. Try your catalog update again. It should work now.
+
+To prevent new orphaned records, update WooCommerce to version 9.8 or later, which includes a fix for this issue.
 
 ## 401 Errors
 
-If you see 401 errors in WooCommerce Bridge, it means that WooCommerce Bridge is unable to authenticate with WooCommerce.
+If you see `401` errors in WooCommerce Bridge, it means that WooCommerce Bridge is unable to authenticate with WooCommerce.
 
 ![401 errors in WooCommerce Bridge](./images/015-woocommerce-401-errors.png)
 
-There are three common causes for 401 errors:
+There are three common causes for `401` errors:
 
 ### API Key Removed
 
-If the API key for HubRise has been removed in WooCommerce, it will lead to 401 errors. To check this:
+If the API key for HubRise has been removed in WooCommerce, it will lead to `401` errors. To check this:
 
 1. Open your WordPress dashboard.
 1. Navigate to **WooCommerce** > **Settings** > **Advanced** > **REST API**.
@@ -92,7 +174,7 @@ If the `HubRise - API` key is not present, it means it has been removed, and you
 
 ### HTTP Basic Authentication Fail
 
-If your WooCommerce setup does not work with the default HTTP Basic authentication method, it may also result in 401 errors. In such cases, you need to switch to the fallback OAuth1 method.
+If your WooCommerce setup does not work with the default HTTP Basic authentication method, it may also result in `401` errors. In such cases, you need to switch to the fallback OAuth1 method.
 
 To do this:
 
@@ -102,7 +184,7 @@ To do this:
    ![OAuth1 option in WooCommerce Bridge](./images/013-woocommerce-step-1-advanced.png)
 1. Proceed with the configuration as described in [Connect to HubRise](/apps/woocommerce/connect-hubrise).
 
-After making this change, verify if the 401 errors are resolved.
+After making this change, verify if the `401` errors are resolved.
 
 ### Incorrect URL During Setup
 
@@ -128,75 +210,74 @@ In this case, the error message indicates that the signature provided does not m
 
 Here is how to correct this:
 
-1. Reset the WooCommerce Bridge configuration. To find out how, see [Reset the Configuration](/apps/woocommerce/configuration#reset).
+1. Reset the WooCommerce Bridge configuration, see [Reset the Configuration](/apps/woocommerce/configuration#reset) for instructions.
 1. Configure the bridge again from scratch. When you reach the first step of the configuration, enter the correct URL of your WooCommerce store, ensuring the URL matches exactly with your website (pay attention to whether your website uses `www` or not).
 1. Proceed with the configuration as described in [Connect to HubRise](/apps/woocommerce/connect-hubrise).
 
-## 422 Errors
+## WooCommerce Logs {#woocommerce-logs}
 
-When WooCommerce orders fail to sync with HubRise, you may encounter a 422 error with the following response body:
+WooCommerce logs provide information about webhook deliveries, order processing, and server errors.
 
-```json
-{
-  "message": "Validation failed",
-  "errors": [
-    {
-      "field": "/private_ref",
-      "message": "is already used ('21824' given)"
-    }
-  ],
-  "error_type": "unprocessable_entity"
-}
-```
+### Accessing the Logs
 
-This error indicates that the order ID (`private_ref`) being sent is already in use. This typically happens after a database restore in WooCommerce, which resets the auto-increment value for the `wp_posts` table, causing new orders to have duplicate IDs.
+To view WooCommerce logs:
 
-Follow these steps to resolve the issue.
+1. Open your WooCommerce back office.
+2. Navigate to **WooCommerce** > **Status** > **Logs**.
+3. The page displays available log files. Use the pagination controls at the bottom to navigate to older logs.
 
-### Step 1: Access Your Database
+![WooCommerce logs browse interface](./images/021-woocommerce-logs-browse.png)
 
-You need access to your WooCommerce MySQL database. If you don't have **phpMyAdmin** or another database tool, you can use a simple WordPress plugin:
+### Log Files to Check
 
-- Install the [Run SQL Query](https://wordpress.com/plugins/run-sql-query) plugin.
+Look for the log files created around the time of the issue you're investigating. If the issue is older than the available logs, consider extending the retention period in the [log settings](#log-settings).
 
-### Step 2: Open the "Run SQL Query" Tool
+Focus on the following log sources:
 
-1. In your WordPress Admin Panel, go to **Tools** > **Run SQL Query**.
-2. This tool allows you to execute SQL commands directly from your WordPress dashboard.
+- **webhooks-delivery**: Shows each webhook call to HubRise. While the content may be obfuscated, the timestamps are useful for verifying if webhooks were actually sent. Note that times are displayed in the server's timezone (often UTC).
 
-The interface should look like this:
+- **fatal-errors**: Check this log for any critical issues that might have occurred during order processing or webhook delivery.
+
+- **place-order-debug-[id]**: Each order creates its own log file with a unique ID suffix (e.g., `place-order-debug-9da29b23`). These logs contain detailed timing and status information for a specific order.
+
+### Log Settings {#log-settings}
+
+To adjust log retention and other settings:
+
+1. From the Logs page, click **Settings** at the top.
+2. Consider setting the retention period to 30 days or more to ensure sufficient history.
+3. Consider setting the logging level threshold to **None** to capture all events. This may generate larger log files.
+
+## Using the SQL Query Tool {#using-sql-query-tool}
+
+Several troubleshooting steps require running SQL queries directly on your WooCommerce database. Here's how to do this safely:
+
+### Installing the SQL Query Tool
+
+1. Install the [Run SQL Query](https://wordpress.com/plugins/run-sql-query) plugin from your WordPress Admin Panel.
+2. Once installed, navigate to **Tools** > **Run SQL Query**.
+
+The interface will look like this:
 
 ![Run SQL Query UI](../images/run_sql_query.png)
 
-### Step 3: Identify the `wp_posts` Table
+### Finding Your Table Prefix
 
-Your posts table may have a custom prefix. Look for a table ending with `_posts`. For example, in the screenshot above, the table is named `mod488_posts`.
+WooCommerce tables may have a custom prefix instead of the default `wp_`. To find your prefix:
 
-### Step 4: Find the Highest ID in the Table
+1. Look at the list of tables shown in the SQL query tool.
+2. Find a table ending with `_posts` (e.g., `mod488_posts`).
+3. The prefix is everything before `_posts`. In the example `mod488_posts`, the prefix is `mod488_`.
 
-Run the following SQL query to find the highest `id` currently used in the `wp_posts` table. Replace `mod488_posts` with your actual table name:
+### Running SQL Queries
 
-```sql
-SELECT id FROM mod488_posts ORDER BY id DESC LIMIT 1;
-```
+When following troubleshooting steps:
 
-This will return the highest ID currently in use.
+1. Replace the `wp_` prefix in the SQL queries with your actual table prefix.
+2. Copy the complete SQL query into the query box.
+3. Click **Run Query** to execute.
 
-### Step 5: Update the Auto-Increment Value
-
-Add 1 to the highest `id` and set the `AUTO_INCREMENT` value accordingly. For example, if the highest `id` is **22060**, set the auto-increment value to **22061**.
-
-Run the following SQL command, replacing `mod488_posts` and `22061` with your actual table name and new auto-increment value:
-
-```sql
-ALTER TABLE `mod488_posts` AUTO_INCREMENT = 22061;
-```
-
-### Step 6: Place a Test Order
-
-Create a new test order in WooCommerce and ensure it syncs successfully with HubRise.
-
-If the 422 error no longer appears, the issue is resolved!
+For example, if your prefix is `mod488_`, you would replace `wp_posts` with `mod488_posts`.
 
 ## Need More Help?
 

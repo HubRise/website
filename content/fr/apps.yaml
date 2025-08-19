@@ -16,12 +16,6 @@ content:
       slug: point-of-sales
       has_suggest_app: true
       apps:
-        - website: https://3s-pos.com
-          documentation: /fr/apps/3s-pos
-          logo: 3spos.png
-          country: GB
-          title: 3S POS
-          description: 3S POS est une suite complète aux fonctionnalités personnalisables pour répondre aux besoins de chaque restaurant ou hôtelier.
         - website: https://adipos.fr
           documentation: /fr/apps/adipos
           logo: adipos.png
@@ -75,13 +69,6 @@ content:
           title: French Caisse
           description: French Caisse est une caisse enregistreuse tactile utilisable dans de nombreux types de commerces. L'éditeur propose également une borne de commande, un site e-commerce et une carte de fidélité.
           additional_info:
-        - website: https://iikosoftware.com
-          documentation: /fr/apps/iiko
-          logo: iiko.png
-          country: all
-          title: iiko
-          description: iiko est une solution cloud facile à déployer et à faire évoluer. Plus de 30.000 entreprises mono ou multisites l'utilisent pour automatiser leurs opérations.
-          additional_info: Intégration en cours.
         - website: https://www.jdc.fr/caisse-enregistreuse
           documentation: /fr/apps/jalia
           logo: jalia.png
@@ -178,13 +165,6 @@ content:
           title: PAR PixelPoint (Windows API)
           description: PixelPoint, édité par PAR, intégré via son API Windows, répond aux besoins de la restauration et du divertissement, avec un focus sur la gestion des coûts, la prévention des pertes et la fidélisation.
           additional_info: Intégration par API Windows, réalisée par Slowey Systems.
-        - website: https://www.pointone-epos.co.uk
-          documentation: /fr/apps/pointone
-          logo: pointone.png
-          country: GB
-          title: pointOne
-          description: pointOne est un logiciel de caisse complète et simple à utiliser, avec gestion de stock, rapports et analyse des données.
-          additional_info: Intégration en cours.
         - website: https://www.popina.com/fr
           documentation: /fr/apps/popina
           logo: popina.png
@@ -273,6 +253,13 @@ content:
           country: BE, FR
           title: Zelty
           description: Zelty est une caisse enregistreuse sur iPad, offrant une solution complète et pensée pour les chaînes. La solution s'adapte cependant à tout type de restaurant.
+          additional_info: Une intégration plus récente et complète est disponible. Voir Zelty Bridge.
+        - website: https://zelty.fr
+          documentation: /fr/apps/zelty-bridge
+          logo: zelty-bridge.png
+          country: BE, FR
+          title: Zelty Bridge
+          description: Zelty Bridge est l'intégration avancée de Zelty, offrant une synchronisation bidirectionnelle des commandes, la gestion de l'inventaire, le support des variantes, et d'autres fonctionnalités. Compatible avec toute caisse Zelty, cette intégration remplace la précédente.
     - title: Plateformes de livraison de repas
       slug: food-ordering-platforms
       apps:
@@ -431,25 +418,12 @@ content:
           country: CH, DE, FR, IE, GB
           title: eddress
           description: eddress est une solution de commande en ligne pour les restaurants et les épiceries, avec gestion de livreurs intégrée. Elle convient aux enseignes de toute taille, indépendantes ou franchisées. Disponible en 20 langues et déployée dans plus de 17 pays.
-        - website: https://www.get-resto.com
-          documentation: /fr/apps/get-resto
-          logo: get-resto.png
-          country: FR
-          title: Get Resto
-          description: Get Resto est une solution de commande à table. Le client scanne le QR code ou le tag NFC placés sur la table, accède au menu dans sa langue sur son smartphone, et commande en ligne. Aucune app à installer.
         - website: https://www.gonnaorder.com/?lang=fr
           documentation: /fr/apps/gonnaorder
           logo: gonnaorder.png
           country: AU, BE, CA, FR, DE, IE, IT, NL, GB
           title: GonnaOrder
           description: GonnaOrder propose un système de commande en ligne économique, disponible dans 14 pays. Via un site personnalisé et des applications iOS et Android natives, GonnaOrder permet de commander à emporter, en livraison ou à table dans des restaurants, bars, pubs et cafés.
-          additional_info:
-        - website: https://kurvekiosks.com
-          documentation: /fr/apps/kurvekiosks
-          logo: kurvekiosks.png
-          country: IE, GB
-          title: Kurve Kiosks
-          description: Kurve Kiosks conçoit et développe des kiosques de commande pour les restaurants et les hôtels. La plateforme est personnalisable, riche en fonctionnalités et fiable, facilitant ainsi la transition vers la technologie de libre-service.
           additional_info:
         - website: https://latoquemagique.com
           documentation: /fr/apps/la-toque-magique
@@ -463,13 +437,6 @@ content:
           country:
           title: LivePepper
           description: LivePepper est une solution de commande en ligne pour les restaurants, conçue pour la livraison à domicile et la vente à emporter. Adaptée aux indépendants comme aux chaînes. LivePepper est untilisé en France, en Grande-Bretagne et à l'international.
-        - website: https://locatouch.com
-          documentation: /fr/apps/locatouch
-          logo: locatouch.png
-          country: FR
-          title: Loca'Touch
-          description: Loca'Touch propose des bornes de commande en location ou en vente. Le client passe commande et paye en toute autonomie, et reçoit des propositions de produits complémentaires pendant le cycle d'achat. Mises à jour régulières du logiciel système.
-          additional_info:
         - website: https://mynober.nl
           documentation: /fr/apps/mynober
           logo: mynober.png
@@ -543,12 +510,6 @@ content:
           country: FR
           title: Store Factory
           description: Store Factory est utilisé par les PME et les petits commerçants ayant une connaissance technique limitée pour la création de sites marchand. Le support technique, la maintenance et le conseil en référencement sont assurés par l'éditeur.
-        - website: http://superdigital.fr
-          documentation: /fr/apps/superdigital
-          logo: superdigital.png
-          country: FR
-          title: SuperDigital.fr
-          description: SuperDigital.fr est une solution complète permettant aux restaurateurs de créer un site de commande en ligne en marque blanche. Les restaurateurs peuvent personnaliser leur site de manière autonome depuis le back-office.
         - website: https://tablati.ma
           documentation: /fr/apps/tablati
           logo: tablati.png
@@ -583,6 +544,35 @@ content:
           title: Zuplyit
           description: Zuplyit de AirTouchMedia est une solution de commande en ligne en marque blanche pour les métiers de bouche, combinée avec une solution de gestion de livreurs, et une suite d'outils de fidélisation et de promotion.
           additional_info:
+    - title: Bornes de commande
+      slug: self-ordering-kiosks
+      apps:
+        - website: https://www.bwares.fr
+          documentation: /fr/apps/bwares
+          logo: bwares.png
+          country: FR
+          title: BWares
+          description: BWares est une solution dédiée de bornes de commande, conçue et développée à Bordeaux. Les bornes sont personnalisables, avec des développements sur mesure possibles pour répondre à des besoins spécifiques.
+        - website: https://www.eatself.com
+          documentation: /fr/apps/eatself
+          logo: eatself.png
+          country: BE, CH, FR, MA
+          title: eEatself
+          description: EatSelf est une solution de commande en ligne, commande à table, bornes interactives, fidélisation client et réservation en ligne, le tout sans intermédiaires ni commissions. Elle est conçue pour les restaurateurs qui souhaitent digitaliser leur activité sur place et à distance.
+        - website: https://kurvekiosks.com
+          documentation: /fr/apps/kurvekiosks
+          logo: kurvekiosks.png
+          country: IE, GB
+          title: Kurve Kiosks
+          description: Kurve Kiosks conçoit et développe des kiosques de commande pour les restaurants et les hôtels. La plateforme est personnalisable, riche en fonctionnalités et fiable, facilitant ainsi la transition vers la technologie de libre-service.
+          additional_info:
+        - website: https://locatouch.com
+          documentation: /fr/apps/locatouch
+          logo: locatouch.png
+          country: FR
+          title: Loca'Touch
+          description: Loca'Touch propose des bornes de commande en location ou en vente. Le client passe commande et paye en toute autonomie, et reçoit des propositions de produits complémentaires pendant le cycle d'achat. Mises à jour régulières du logiciel système.
+          additional_info:
     - title: Gestion de livreurs
       slug: delivery-management
       apps:
@@ -607,12 +597,6 @@ content:
           title: Coursicab
           description: Coursicab est une plateforme de livraison en express ou sur rendez-vous, par taxi ou à vélo. Grâce à la géolocalisation, vos clients peuvent suivre leurs colis en temps réel. Présent dans 6 pays européens, disponible 24h/7.
           additional_info:
-        - website: https://www.orderlord.com
-          documentation: /fr/apps/orderlord
-          logo: orderlord.png
-          country: all
-          title: OrderLord
-          description: OrderLord est une solution conçue pour les entreprises de livraison et les restaurants, permettant de suivre les livraisons grâce à une application mobile utilisant le GPS. OrderLord apporte aux clients une expérience de livraison transparente.
         - website: https://orkestro.com
           documentation: /fr/apps/orkestro
           logo: orkestro.png
@@ -658,6 +642,7 @@ content:
           country: AU, CA, FR, DE, ES, GB
           title: Uber Direct
           description: Uber Direct est un service de livraison en marque blanche proposé par Uber. Il permet aux entreprises d'envoyer des produits ou colis à leurs clients en s'appuyant sur le vaste réseau de chauffeurs d'Uber Eats.
+          additional_info: Intégration en cours.
     - title: Fidélité et marketing
       slug: loyalty-and-marketing
       apps:
@@ -837,7 +822,7 @@ content:
   developers:
     title: Vous êtes développeur ?
     description:
-      paragraph_1: Utilisez notre API pour construire une application utile aux commerçants. Proposez-la aux utilisateurs d'HubRise en la publiant sur notre site.
+      paragraph_1: Utilisez notre API pour créer une application utile aux commerçants. Proposez-la aux utilisateurs d'HubRise en la publiant sur notre site.
       paragraph_2:
-        chunk_1: Nos utilisateurs sont des professionnels en recherche de solutions pour moderniser leur activité.
+        chunk_1: Nos utilisateurs sont des professionnels à la recherche de solutions pour moderniser leur activité.
         chunk_2: Il y a beaucoup à faire, et les bonnes idées d'aujourd'hui sont les standards de demain.
