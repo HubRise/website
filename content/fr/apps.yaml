@@ -766,6 +766,12 @@ content:
           country:
           title: Catalog Manager
           description: Catalog Manager permet de créer, modifier et gérer vos catalogues HubRise. Ces catalogues peuvent être reçus de ou envoyés à des solutions connectées telles que votre caisse, votre solutions de commande en ligne ou des plateformes de livraison de repas. Catalog Manager est un logiciel gratuit édité par HubRise.
+        - website: https://app-check.fr
+          documentation: /fr/apps/check
+          logo: check.png
+          country: FR
+          title: Check
+          description: Check est une solution de tickets de caisse digitalisés, qui permet aux commerçants de mieux connaître et de fidéliser leurs clients grâce à des outils marketing basés sur les données d’achat.
         - website: https://www.expedy.fr
           documentation: /fr/apps/expedy
           logo: expedy-print.png

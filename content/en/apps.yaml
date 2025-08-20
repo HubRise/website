@@ -766,6 +766,12 @@ content:
           country:
           title: Catalog Manager
           description: Catalog Manager allows you to create, edit and manage your HubRise catalogs. Catalogs can be pulled from or pushed into integrated solutions, such as EPOS, online ordering solutions or food ordering and delivery platforms. Catalog Manager is a free app edited by HubRise.
+        - website: https://app-check.fr
+          documentation: /apps/check
+          logo: check.png
+          country: FR
+          title: Check
+          description: Check is a digital receipt solution that helps merchants better understand and retain their customers through marketing tools based on purchase data.
         - website: https://www.expedy.fr
           documentation: /apps/expedy
           logo: expedy-print.png
