@@ -25,7 +25,7 @@ app_info:
 
 Toporder est un logiciel de caisse tactile sur iPad conçu pour répondre aux besoins des commerces de proximité, notamment les boulangeries, pâtisseries, chocolateries, fromageries, cavistes, boucheries, snacks et restaurants.
 
-Toporder inclus plusieurs fonctions : encaissement, gestion des stocks, suivi des ventes, commande en ligne et fidélisation client, le tout via une interface accessible sur tablette ou à distance.
+Toporder inclut plusieurs fonctions : encaissement, gestion des stocks, suivi des ventes, commande en ligne et fidélisation client, le tout via une interface accessible sur tablette ou à distance.
 
 Grâce à son intégration avec myPOS, Toporder accepte tous les types de paiements, y compris les cartes bancaires, Google Pay et Apple Pay, via une gamme de terminaux de paiement (TPE).
 
@@ -40,11 +40,9 @@ Fonctionnalités principales :
 - Rapports de vente automatisés.
 - Gestion des produits et formules.
 
-Toporder peut être utilisé en boutique ou en point de vente mobile, avec ou sans connexion Internet.
-Le matériel proposé inclut une caisse sur iPad, un tiroir-caisse, une imprimante ticket, ainsi qu’un terminal de paiement myPOS.
+Toporder peut être utilisé en boutique ou en point de vente mobile, avec ou sans connexion Internet. Le matériel proposé inclut une caisse sur iPad, un tiroir-caisse, une imprimante ticket, ainsi qu’un terminal de paiement myPOS.
 
-Avec chaque installation, Toporder inclut une formation personnalisée appuyée par des tutoriels vidéo.
-L’accompagnement se poursuit ensuite par le biais d’un support client réactif via email, téléphone ou WhatsApp.
+Avec chaque installation, Toporder inclut une formation personnalisée accompagnée de tutoriels vidéo. L’accompagnement se poursuit ensuite par le biais d’un support client réactif par email, téléphone ou WhatsApp.
 
 Toporder est conforme à la loi anti-fraude française de 2018 et dispose de la certification NF525.
 

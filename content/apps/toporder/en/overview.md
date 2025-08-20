@@ -23,30 +23,28 @@ app_info:
 
 ## Description
 
-Toporder is a touchscreen EPOS for iPad, designed to meet the needs of local businesses, including bakeries, wine shops, butchers, snack bars,  restaurants and more.
+Toporder is a touchscreen EPOS for iPad, designed to meet the needs of local businesses such as bakeries, wine shops, butchers, snack bars, restaurants, and more.
 
-Toporder includes several features: payments, stock management, sales tracking, online ordering, and customer loyalty, all accessible from an Orderpad or remotely.
+Toporder includes several features: payments, stock management, sales tracking, online ordering, and customer loyalty — all accessible from the Orderpad or remotely.
 
-Thanks to its integration with myPOS, Toporder accepts all types of payment, including bank cards, Google Pay and Apple Pay, through a range of payment terminals.
+Thanks to its integration with myPOS, Toporder accepts all types of payment, including bank cards, Google Pay, and Apple Pay, through a range of payment terminals.
 
-Key Features :
+Key features:
 
-- Automatic client identification on inbound calls.
+- Automatic customer identification on inbound calls.
 - Loyalty programme with customer accounts and loyalty cards.
-- Communication tool to inform customers about offers and news.
+- Communication tools to inform customers about offers and news.
 - Online ordering solution.
 - Stock management with automated restocking calculations.
-- Real-time sales tracking from the POS or a remote dashboard.
+- Real-time sales tracking from the EPOS or a remote dashboard.
 - Automated sales reports.
 - Product and menu management.
 
-Toporder can be used in-store or in mobile sales settings, with or without an internet connection.
-The provided hardware includes an iPad-based EPOS system, cash drawer, receipt printer, and a myPOS payment terminal.
+Toporder can be used in-store or in mobile sales settings, with or without an internet connection. The provided hardware includes an iPad-based EPOS system, cash drawer, receipt printer, and a myPOS payment terminal.
 
-Each installation includes personalised training supported by video tutorials.
-Ongoing support is available via email, phone, or WhatsApp.
+Each installation comes with personalised training supported by video tutorials. Ongoing support is available via email, phone, or WhatsApp.
 
-Toporder complies with the 2018 French anti-fraud law and is certified NF525.
+Toporder complies with the 2018 French anti-fraud law and is NF525-certified.
 
 ## Integration Features
 
