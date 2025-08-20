@@ -1,31 +1,55 @@
 sections:
-  - title: Integrations
+  - title: Product & Integrations
     links:
-      - title: Apps
+      - title: All Integrations
         to: /apps
-      - title: Contribute to the Documentation
-        to: /contributing
+      - title: Catalog Manager
+        to: /catalog-manager
+      - title: OrderLine
+        to: /orderline
+      - title: Dashboard
+        to: /dashboard
   - title: Developers
     links:
+      - title: API Reference
+        to: /developers/api/general-concepts
       - title: Quick Start
         to: /developers/quick-start
       - title: Integration Guide
         to: /developers/integration-guide
-      - title: API Reference
-        to: /developers/api/general-concepts
       - title: Changelog
         to: /developers/changelog
-  - title: Resources
+  - title: Help Center
     links:
-      - title: User Guide
+      - title: Help
         to: /docs
-      - title: General Terms and Conditions
-        to: /legal/general-terms-and-conditions
-      - title: Legal Notices
-        to: /legal/legal-notices
+      - title: FAQ
+        to: /faqs
+      - title: Contribute to the Documentation
+        to: /contributing
+  - title: Partners
+    links:
+      - title: Become a Partner
+        to: /become-partner
+      - title: Hire an Expert
+        to: /partners
   - title: Company
     links:
+      - title: Blog
+        to: /blog
       - title: Testimonials
         to: /testimonials
       - title: Branding Guidelines
         to: /branding
+      - title: Contact Us
+        to: /contact-us
+      - title: LinkedIn
+        icon: linkedin
+        to: https://www.linkedin.com/company/hubrise
+        is_external: true
+copyright_links:
+  - title: Terms and Conditions
+    link: /legal/general-terms-and-conditions
+  - title: Legal Notices
+    link: /legal/legal-notices
+all_rights_reserved: All rights reserved.

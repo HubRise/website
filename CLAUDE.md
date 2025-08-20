@@ -4,7 +4,9 @@
 - Vitest: `npx vitest run`
 - ESLint: `npx eslint .`
 
-## Visual Inspection
+## Taking screenshots
+
+- Do not start the server, as it is usually already started by the user.
 
 - Screenshot: `yarn screenshot [url] [options]` - Takes a screenshot and saves to ./screenshots/
   - Desktop (default): `yarn screenshot /apps`
