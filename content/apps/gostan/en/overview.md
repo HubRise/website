@@ -27,31 +27,31 @@ With a focus in the management of wines, spirits, and beverages, GoStan provides
 
 ## Key Features
 
-### Centralised Cellar Management
+Centralised Cellar Management:
 
 - Real-time stock movement tracking
 - Simplified inventory processes
 - Optimised restocking
 
-### Integration with Your EPOS
+Integration with Your EPOS:
 
 - Compatible with many EPOS systems via HubRise or through direct integrations
 - Seamless synchronisation with your tools
 - Automatic or real-time updates of sales and stock levels
 
-### Data Analysis
+Data Analysis:
 
 - Detailed and intuitive dashboards
 - Real-time product performance analysis
 - Continuous access to historical data
 
-### Decision Support Tools
+Decision Support Tools:
 
 - Price adjustments based on margins
 - Anticipation of seasonal trends for better stock planning
 - Identification of opportunities based on purchasing behaviour
 
-Developed with in-depth industry knowledge, GoStan meets the specific needs of venues looking to enhance their beverage offering while maintaining simple, operationally aligned control.
+Developed in collaboration with hospitality professionals, GoStan meets the specific needs of venues looking to enhance their beverage offering while maintaining simple, operationally aligned control.
 
 The GoStan team supports the full setup process—from connecting to the EPOS to importing the initial inventory. Settings can be tailored to reflect each venue’s specific requirements, ensuring smooth integration into the existing environment.
 
