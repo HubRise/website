@@ -712,6 +712,12 @@ content:
           country: FR
           title: Food Report
           description: Food Report propose des outils d'aide à la décision destinés à la restauration rapide et traditionnelle. Food Report permet de créer des rapports en ligne temps réel, à partir de vos données clients, commandes et catalogues venant de HubRise.
+        - website: https://gostan.io
+          documentation: /fr/apps/gostan
+          logo: gostan.png
+          country: FR
+          title: GoStan
+          description: GoStan est une solution en ligne de gestion de cave pour les professionnels de la restauration. GoStan permet de suivre les stocks, simplifier les inventaires et analyser les ventes de boissons pour optimiser votre gestion.
         - website: https://en.inpulse.ai
           documentation: /fr/apps/inpulse
           logo: inpulse.png

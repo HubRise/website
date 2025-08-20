@@ -712,6 +712,12 @@ content:
           country: FR
           title: Food Report
           description: Food Report offers decision support tools for all types of restaurants. With Food Report you can create real-time online reports using your HubRise customer, order, and product data.
+        - website: https://gostan.io
+          documentation: /apps/gostan
+          logo: gostan.png
+          country: FR
+          title: GoStan
+          description: GoStan is an online cellar management solution for hospitality professionals. It enables stock tracking, simplifies inventories, and analyses beverage sales to optimise management.
         - website: https://www.inpulse.ai
           documentation: /apps/inpulse
           logo: inpulse.png
