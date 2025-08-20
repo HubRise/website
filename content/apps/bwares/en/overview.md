@@ -53,8 +53,6 @@ Connecting BWares to HubRise allows your self-ordering kiosk to:
 
 BWares can be connected to HubRise from the BWares back office.
 
-You can refer to the [HubRise documentation](https://bwares.notion.site/HubRise-23e20882788c8014a9adf1dad49ce6e7) on the BWares website for more information on how the integration works.
-
 ## Why Connect?
 
 By connecting BWares Kiosks to HubRise, your self-ordering kiosk can communicate with your other everyday applications. Push the orders saved on your self-ordering kiosk into your EPOS, to an autonomous printer, a Kitchen Display System, or your inventory management system. Import your menu into BWares.

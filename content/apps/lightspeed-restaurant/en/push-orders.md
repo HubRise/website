@@ -31,6 +31,24 @@ Lightspeed Restaurant Bridge creates an order in Lightspeed for each order from 
 
 When an order is marked as `cancelled` in HubRise, Lightspeed Restaurant prints a message on the connected printer to indicate the cancellation. Depending on your settings, this message may also appear on the EPOS screen. The order remains in Lightspeed and is not deleted.
 
+### Discounts
+
+Discounts are sent to Lightspeed Restaurant, including their name, ref code, and discount amount.
+
+Discounts must be created as items in Lightspeed. To find out how to create and check discount ref codes in your Lightspeed back office, see [Map Ref Codes](/apps/lightspeed-restaurant/map-ref-codes#skus-options-discounts-charges).
+
+Discounts with incorrect or missing ref codes are rejected by the EPOS, therefore Lightspeed Restaurant Bridge skips discounts without a ref code.
+
+### Charges
+
+Charges are sent to Lightspeed Restaurant, including their name, ref code, and price.
+
+Charges must be created as items in Lightspeed. To find out how to create and check charge ref codes in your Lightspeed back office, see [Map Ref Codes](/apps/lightspeed-restaurant/map-ref-codes#skus-options-discounts-charges).
+
+Charges with incorrect or missing ref codes are rejected by the EPOS, therefore Lightspeed Restaurant Bridge skips charges without a ref code.
+
+There is one exception: charges with ref code `TIP` are not sent as items but are instead included in the payment as a tip amount. In Lightspeed, tips are part of the payment and cannot exist without one. To add a tip without a payment, use a charge with a different ref code that corresponds to an item in Lightspeed.
+
 ### Payments
 
 Zero, one, or multiple payments can be associated with an order.

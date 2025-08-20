@@ -8,27 +8,28 @@ meta:
   description: Configure Expedy to receive your Expedy orders in your EPOS or other applications connected to HubRise.
 ---
 
-From the Expedy back office, you can configure the printer behaviour and the print layout.
+From the Expedy back office, you can configure the printer’s behaviour and the layout of your printouts. You’ll find useful information on this page. For more details on how to set up your printer, you can also refer to the [Expedy online documentation](https://www.expedy.io/fr/docs/category/cms-plugins/hubrise).
 
 ## HubRise Settings
 
 With Expedy, you can select the order status that triggers printing. You can choose to print the orders when they reach one of these 3 statuses on HubRise:
 
-- _New_
-- _Received_
-- _Accepted_
+- **new**
+- **received**
+- **accepted**.
 
 Expedy also allows another action when receiving an order. You can configure the printer to change the status of an order into:
 
-- _Received_
-- _Accepted_
+- **none**: no status changes will be made.
+- **received**: the order status will be updated to received.
+- **accepted** : the order status will be updated to accepted.
 
 To configure these settings, follow these steps:
 
-1. From Expedy back office homepage, click **Printers**.
-2. Click the configuration icon next to the connected printer <InlineImage width="20" height="20">![Configuration icon](../images/__configuration-icon.png)</InlineImage>.
-3. Scroll down to the **HubRise** section.
-4. In section **A la réception d'une commande** (When receiving an order), choose when to print. You can also configure an action in section **Effectuer une des actions supplémentaires suivantes ?** (Perform one of the following extra actions?)
+1. From the Expedy back office homepage, click **Printers**.
+2. Click the Configuration icon next to the printer to connect <InlineImage width="25" height="25">![Configuration icon](../images/__configuration-icon.png)</InlineImage>.
+3. Section **CONNECTIONS & PLUGINS** scroll down to **HubRise**.
+4. In section **When receiving an order**, choose when to print. You can also configure an action in section **Perform one of the following extra actions?**
    ![User Interface - HubRise settings](./images/008-2x-expedy-hubrise-actions.png)
 5. Click **SAVE** to save the changes.
 
@@ -38,9 +39,9 @@ You can display the name and logo of your company in the header of receipts, and
 
 To configure the layout of receipts, follow these steps:
 
-1. From Expedy back office homepage, click **Printers**.
-2. Click the configuration icon next to the connected printer <InlineImage width="20" height="20">![Configuration icon](../images/__configuration-icon.png)</InlineImage>.
-3. Scroll down to section **PRINT SETTINGS FOR ONLY HUBRISE | GOODBARBER | SHOPIFY | WIX**.
+1. From the Expedy back office homepage, click **Printers**.
+2. Click the Configuration icon next to the printer to connect <InlineImage width="25" height="25">![Configuration icon](../images/__configuration-icon.png)</InlineImage>.
+3. Section **CONNECTIONS & PLUGINS** scroll down to **HubRise**.
    ![Configuration - Customise your prints](./images/004-2x-expedy-print-settings.png)
 4. Adjust print settings accordingly.
 5. Click **SAVE** to save the changes.
@@ -53,8 +54,8 @@ You can set the number of copies and the optional use of an additional printer. 
 
 To configure the options, follow these steps:
 
-1. From Expedy back office homepage, click **Printers**.
-2. Click the configuration icon next to the connected printer <InlineImage width="20" height="20">![Configuration icon](../images/__configuration-icon.png)</InlineImage>.
-3. Scroll down to section **PRINT SETTINGS FOR ONLY HUBRISE | GOODBARBER | SHOPIFY | WIX**.
+1. From the Expedy back office homepage, click **Printers**.
+2. Click the Configuration icon next to the printer to connect <InlineImage width="25" height="25">![Configuration icon](../images/__configuration-icon.png)</InlineImage>.
+3. Section **CONNECTIONS & PLUGINS** scroll down to **HubRise**.
 4. In the **Advanced Options** section, choose the number of copies and whether to display the options in full or not.
    ![Configuration - Print settings](./images/009-2x-expedy-hubrise-advanced-options.png)
