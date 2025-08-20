@@ -56,7 +56,9 @@ Connecting Eatself to HubRise allows your remote and on-site ordering solutions 
 
 - Push orders into HubRise, including order status.
 - Pull a catalog from HubRise, with variants support.
+- Push a catalog into HubRise, with variants support.
 - Synchronise inventory with HubRise.
+- Synchronise opening hours with HubRise.
 
 ---
 
