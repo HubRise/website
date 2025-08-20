@@ -41,7 +41,7 @@ Integration with Your EPOS:
 
 Data Analysis:
 
-- Detailed and intuitive dashboards
+- Detailed dashboards
 - Real-time product performance analysis
 - Continuous access to historical data
 

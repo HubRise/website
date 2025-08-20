@@ -41,7 +41,7 @@ Connexion avec votre logiciel de caisse :
 
 Analyse des données :
 
-- Tableaux de bord détaillés et intuitifs
+- Tableaux de bord détaillés
 - Analyse des performances par produit, en temps réel
 - Accès permanent à l’historique de vos données
 
