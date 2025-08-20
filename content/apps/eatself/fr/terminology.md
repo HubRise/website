@@ -15,9 +15,9 @@ HubRise et Eatself utilisent chacun leur propre terminologie. Un même concept p
 | MappingProductId   | Code ref        | Code du produit ou de l'option dans votre logiciel de caisse.                                                                                                   |
 | (non supporté)     | SKU                | Une variante de produit, telle que la taille ou la couleur. Eatself utilise indifféremment des groupes d'options pour les variantes de produits et les options. |
 | Groupe d'options   | Liste d'options | Une liste d'options attachée à un produit, par exemple "Sauce", "Accompagnement", etc.                                                                          |
-| Menu               | Promotion          | Offre spéciale sur des articles spécifiques.                                                         |
+| Menu               | Promotion          | Offre combinée de plusieurs produits à prix réduit.                                                         |
 | Etape              | Ligne de promotion | Chacun des choix d'une promotion, comme un plat principal ou un dessert.                             |
-| Code promotion     | Remise          | Offre spéciale appliquée à la commande globale                                                                                                                  
+| Code promotion     | Remise          | Remise appliquée à la commande globale                                                                                                                  
 | Régime alimentaire | Tag             | Indique un régime alimentaire spécifique : halal, végétarien, végan, etc.                                                                                       | |
 | Magasin            | Compte          | Pour une chaîne ou une franchise, le compte HubRise (nom commercial) correspond à un magasin dans Eatself.                                                      |
 | Magasin            | Point de vente  | Pour un restaurant indépendant, un point de vente HubRise correspond à un magasin dans Eatself.                                                                 |

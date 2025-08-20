@@ -1,7 +1,7 @@
 ---
 title: Récupérer le catalogue
 path_override: recuperer-catalogue
-position: 6
+position: 8
 layout: documentation
 meta:
   title: Récupérer le catalogue | Zelty Bridge | HubRise
@@ -49,6 +49,30 @@ Pour déclencher une mise à jour du catalogue depuis Zelty :
 
 ## Informations envoyées à HubRise
 
+### Sélection du catalogue
+
+La configuration choisie dans Zelty Bridge affecte les catégories et produits importés dans HubRise. Voir [Choisissez quels produits importer depuis Zelty](/apps/zelty-bridge/configuration#select-catalog).
+
+#### Import de tous les produits
+
+Lorsque vous choisissez d'importer tous les produits, options et menus :
+
+- Les catégories dans HubRise sont créées à partir des **tags** Zelty.
+- Le premier tag de chaque produit est utilisé comme catégorie dans HubRise.
+
+Les produits sans tag sont placés dans une catégorie spéciale "Produits sans tag".
+
+#### Import de catalogues spécifiques
+
+Lorsque vous sélectionnez des catalogues spécifiques :
+
+- Les catégories dans HubRise sont créées en fusionnant les **catégories** des catalogues Zelty sélectionnés.
+- Seuls les produits, options et menus appartenant aux catalogues sélectionnés sont importés.
+
+Si une catégorie est présente dans plusieurs catalogues, elle est fusionnée dans une seule catégorie HubRise. La structure hiérarchique de la première occurrence de la catégorie est conservée.
+
+Si plusieurs catalogues sont sélectionnés, une variante de catalogue est créée pour chaque catalogue Zelty.
+
 ### Variantes
 
 Zelty Bridge crée les variantes de catalogue suivantes :
@@ -63,13 +87,13 @@ Les catégories Zelty sont importées avec les informations suivantes :
 
 - Nom de la catégorie
 - Code ref (identifiant unique Zelty)
-- Description de la catégorie
-- Parent de la catégorie : les catégories imbriquées sont conservées avec leur structure hiérarchique
+- Description du tag ou de la catégorie, selon la méthode d'import
+- Parent de la catégorie
 
 Zelty Bridge peut également créer automatiquement deux catégories spéciales :
 
 - "Produits cachés pour les menus" pour les produits sans catégorie utilisés dans des menus. Ces produits sont marqués avec le tag `deal_only` dans HubRise.
-- "Produits sans tag" pour les produits sans catégorie dans Zelty.
+- "Produits sans tag" pour les produits sans tag dans Zelty, si l'option **Importer tous les produits, options et menus** est sélectionnée.
 
 ### Produits
 
@@ -88,10 +112,10 @@ Zelty n'a pas de notion de SKU multiple. Les produits sont donc créés dans Hub
 
 ### Options
 
-Les options sont importées avec leur structure complète :
+Les options Zelty correspondent aux listes d'options dans HubRise. Elles sont importées avec leur structure complète :
 
 - Nom de la liste d'options (par exemple "Taille", "Suppléments")
-- Valeurs disponibles avec leur nom, prix et code ref
+- Valeurs d'option disponibles avec leur nom, prix et code ref
 - Contraintes de sélection (nombre minimum et maximum de sélections)
 
 ### Menus (Promotions)
