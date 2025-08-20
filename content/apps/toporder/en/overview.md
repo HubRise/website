@@ -25,7 +25,7 @@ app_info:
 
 Toporder is a touchscreen EPOS for iPad, designed to meet the needs of local businesses such as bakeries, wine shops, butchers, snack bars, restaurants, and more.
 
-Toporder includes several features: payments, stock management, sales tracking, online ordering, and customer loyalty — all accessible from the Orderpad or remotely.
+Toporder includes several features: payments, stock management, sales tracking, online ordering, and customer loyalty, all accessible from an Orderpad or remotely.
 
 Thanks to its integration with myPOS, Toporder accepts all types of payment, including bank cards, Google Pay, and Apple Pay, through a range of payment terminals.
 
