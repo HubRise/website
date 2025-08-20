@@ -38,9 +38,19 @@ To pull a HubRise catalog into LivePepper:
 
 When importing from HubRise, each option list is categorised in LivePepper according to the following rules:
 
+- **Variants**: single-choice list.
 - **Ingredients**: multiple-choice list whose name starts with "Ingredients" or "Composition" (case-insensitive).
 - **Toppings**: multiple-choice list whose name starts with "Extras" or "Toppings" (case-insensitive).
 - **Options**: multiple-choice list whose name does not match any of the above prefixes.
-- **Variants**: single-choice list.
 
 LivePepper only supports one list for each of the first three categories. If multiple lists meet the same criteria, only one of them will be imported.
+
+### Product and Option Order
+
+When a catalog is imported from HubRise into LivePepper, option lists are not guaranteed to appear in the same order as in HubRise. LivePepper applies its own predefined order for option categories: **Variants** > **Ingredients** > **Toppings** > **Options**.
+
+If you require a specific display order, check with the LivePepper team to confirm whether adjustments are possible with a custom design website.
+
+Within each category, product items are imported in the same order as they are defined in HubRise.
+
+
