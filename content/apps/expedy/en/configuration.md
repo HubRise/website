@@ -30,7 +30,7 @@ To configure these settings, follow these steps:
 2. Click the Configuration icon next to the printer to connect <InlineImage width="25" height="25">![Configuration icon](../images/__configuration-icon.png)</InlineImage>.
 3. Section **CONNECTIONS & PLUGINS** scroll down to **HubRise**.
 4. In section **When receiving an order**, choose when to print. You can also configure an action in section **Perform one of the following extra actions?**
-  ![User Interface - HubRise settings](./images/008-2x-expedy-hubrise-actions.png)
+   ![User Interface - HubRise settings](./images/008-2x-expedy-hubrise-actions.png)
 5. Click **SAVE** to save the changes.
 
 ## Customise Receipts {#customise-receipts}
@@ -42,7 +42,7 @@ To configure the layout of receipts, follow these steps:
 1. From the Expedy back office homepage, click **Printers**.
 2. Click the Configuration icon next to the printer to connect <InlineImage width="25" height="25">![Configuration icon](../images/__configuration-icon.png)</InlineImage>.
 3. Section **CONNECTIONS & PLUGINS** scroll down to **HubRise**.
-  ![Configuration - Customise your prints](./images/004-2x-expedy-print-settings.png)
+   ![Configuration - Customise your prints](./images/004-2x-expedy-print-settings.png)
 4. Adjust print settings accordingly.
 5. Click **SAVE** to save the changes.
 
@@ -58,4 +58,4 @@ To configure the options, follow these steps:
 2. Click the Configuration icon next to the printer to connect <InlineImage width="25" height="25">![Configuration icon](../images/__configuration-icon.png)</InlineImage>.
 3. Section **CONNECTIONS & PLUGINS** scroll down to **HubRise**.
 4. In the **Advanced Options** section, choose the number of copies and whether to display the options in full or not.
-  ![Configuration - Print settings](./images/009-2x-expedy-hubrise-advanced-options.png)
+   ![Configuration - Print settings](./images/009-2x-expedy-hubrise-advanced-options.png)

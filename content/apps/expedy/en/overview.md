@@ -18,16 +18,11 @@ app_info:
 
 ## Description
 
-Expedy provides autonomous printing solutions for restaurants and other local businesses.
-These printers are used to print order receipts received from an online shop or from food delivery platforms from a single device. Expedy can also change the status of the order to indicate that it has been received.
+Expedy provides autonomous printing solutions for restaurants and other local businesses. These printers are used to print order receipts received from an online shop or from food delivery platforms from a single device. Expedy can also change the status of the order to indicate that it has been received.
 
-Orders can be printed in multiple copies to assist with preparation, and a text message can be sent automatically with each print.
-Receipts format is standardised across all sales channels (e.g. online ordering, delivery platforms), making it easier to read and process orders.
-The layout and content of the ticket are fully customisable – including address, logo, and other details as needed.
+Orders can be printed in multiple copies to assist with preparation, and a text message can be sent automatically with each print. Receipts format is standardised across all sales channels (e.g. online ordering, delivery platforms), making it easier to read and process orders. The layout and content of the ticket are fully customisable – including address, logo, and other details as needed.
 
-Expedy printers connect to the establishment’s internet network via WiFi, Ethernet, or a mobile connection using a 4G dongle.
-Setup and connection to third-party applications are managed via a dedicated back office.
-Once configured, the printers operate autonomously, without human intervention.
+Expedy printers connect to the establishment’s internet network via WiFi, Ethernet, or a mobile connection using a 4G dongle. Setup and connection to third-party applications are managed via a dedicated back office. Once configured, the printers operate autonomously, without human intervention.
 
 For businesses wishing to keep their existing printer, Expedy also offers an adaptor compatible with ESC/POS printers (Epson, Star, Brother, Toshiba, Zebra, etc.).
 This adaptor enables existing printers to benefit from the same features as Expedy’s cloud-connected devices.

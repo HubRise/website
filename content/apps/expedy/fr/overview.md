@@ -18,19 +18,13 @@ app_info:
 
 ## Description
 
-Expedy propose des solutions d’impression autonomes à destination des restaurateurs et des commerces de proximité.
-Ces imprimantes permettent d’imprimer les tickets de commande reçus depuis un site marchand ou des plateformes de livraison de repas, sur une seule et même imprimante. Expedy peut également de changer le statut de la commande pour confirmer sa réception. 
+Expedy propose des solutions d’impression autonomes à destination des restaurateurs et des commerces de proximité. Ces imprimantes permettent d’imprimer les tickets de commande reçus depuis un site marchand ou des plateformes de livraison de repas, sur une seule et même imprimante. Expedy peut également de changer le statut de la commande pour confirmer sa réception.
 
-Chaque commande peut être imprimée en plusieurs exemplaires pour faciliter la préparation, et un SMS peut être envoyé automatiquement à chaque impression.
-Le format des tickets est uniformisé, quel que soit le canal de vente (site marchand, plateforme de livraison, etc.), ce qui simplifie la lecture et le traitement des commandes.
-La présentation du ticket et son contenu sont personnalisables : adresse postale, logo, et autres éléments peuvent être adaptés selon vos besoins.
+Chaque commande peut être imprimée en plusieurs exemplaires pour faciliter la préparation, et un SMS peut être envoyé automatiquement à chaque impression. Le format des tickets est uniformisé, quel que soit le canal de vente (site marchand, plateforme de livraison, etc.), ce qui simplifie la lecture et le traitement des commandes. La présentation du ticket et son contenu sont personnalisables : adresse postale, logo, et autres éléments peuvent être adaptés selon vos besoins.
 
-Les imprimantes Expedy se connectent au réseau Internet de l’établissement via WiFi, Ethernet ou réseau mobile grâce à une clé 4G.
-La configuration et la connexion aux applications tierces se font depuis un back-office dédié.
-Une fois configurées, les imprimantes fonctionnent de manière totalement autonome, sans intervention manuelle. 
+Les imprimantes Expedy se connectent au réseau Internet de l’établissement via WiFi, Ethernet ou réseau mobile grâce à une clé 4G. La configuration et la connexion aux applications tierces se font depuis un back-office dédié. Une fois configurées, les imprimantes fonctionnent de manière totalement autonome, sans intervention manuelle.
 
-Pour les établissements souhaitant conserver leur imprimante existante, Expedy propose également un adaptateur compatible avec les imprimantes ESC/POS (Epson, Star, Brother, Toshiba, Zebra, etc.).
-Cet adaptateur permet de bénéficier des mêmes fonctionnalités que les imprimantes cloud Expedy.
+Pour les établissements souhaitant conserver leur imprimante existante, Expedy propose également un adaptateur compatible avec les imprimantes ESC/POS (Epson, Star, Brother, Toshiba, Zebra, etc.). Cet adaptateur permet de bénéficier des mêmes fonctionnalités que les imprimantes cloud Expedy.
 
 Les utilisateurs de HubRise bénéficient d’un tarif préférentiel : [voir offre](https://www.expedy.io/fr/cloudprint/partenaires/hubrise).
 
@@ -51,4 +45,4 @@ Avec HubRise, vous pouvez synchroniser votre menu, vos informations clients et v
 
 ## Prérequis
 
-Pour établir la connexion entre Expedy et HubRise, vous devez posséder une imprimante Expedy et un abonnement Expedy cloud print. 
+Pour établir la connexion entre Expedy et HubRise, vous devez posséder une imprimante Expedy et un abonnement Expedy cloud print.

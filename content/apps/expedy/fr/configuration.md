@@ -24,7 +24,6 @@ Expedy permet aussi d'effectuer une action supplémentaire lors de la réception
 - **received** (reçue) : le statut de la commande sera mis à jour en reçue.
 - **accepted** (acceptée) : le statut de la commande sera mis à jour en acceptée.
 
-
 Pour configurer ces paramètres, suivez ces étapes :
 
 1. Depuis la page d'accueil du back-office Expedy, cliquez sur **Printers** (Imprimantes).
