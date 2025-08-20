@@ -71,26 +71,34 @@ If the **Update prices of existing products** checkbox is selected in the Config
 
 Products in a HubRise catalog are mapped to WooCommerce in two different ways.
 
-- A HubRise product without skus is mapped to a **Simple product** in WooCommerce.
-- A HubRise product with skus is mapped to a **Variable product** in WooCommerce.
+- Single-SKU HubRise products are mapped to **Simple products**.
+- Multi-SKU HubRise products are mapped to **Variable products**.
 
-For every product in the HubRise catalog, the following information is sent to WooCommerce.
+For every product in the HubRise catalog, the following information is sent to WooCommerce:
 
-- `ref`: The ref code of the product, which will be passed along in orders
 - `name`: The name of the product
 - `description`: The description of the product
-- `price`: The price of the product
 - `images`: The images associated with the product
 
-If skus are present, WooCommerce Bridge creates a list of attributes and variations, and attaches them to the product. The name of the list is the configured **Metadata key(s) for SKU name** in the bridge **Configuration** page. The variations are the names of the skus.
+#### Single-SKU Products
 
-For every `sku` object in a product, WooCommerce Bridge creates a variation with this information:
+Single-SKU products receive the following additional information:
 
-- `ref`: The ref code of the sku, which will be passed along in orders
-- `name`: The name of the sku
-- `price`: The price of the sku
+- `ref`: The ref code of the product SKU, which will be passed along in orders
+- `price`: The price of the product SKU
+- `barcodes`: The first barcode of the product SKU, if any
 
-Lists of options attached to HubRise products are ignored.
+#### Multi-SKU Products
+
+If the product has multiple SKUs, WooCommerce Bridge creates a list of attributes and variations, and attaches them to the product. The name of
+the list is the configured **Metadata key(s) for SKU name** in the bridge **Configuration** page. The variations are the names of the skus.
+
+For every `sku` in the product, WooCommerce Bridge creates a variation with this information:
+
+- `ref`: The ref code of the SKU, which will be passed along in orders
+- `name`: The name of the SKU
+- `price`: The price of the SKU
+- `barcodes`: The first barcode of the SKU, if any
 
 For more information about products and skus in HubRise catalogs, see our API documentation on [Products](/developers/api/catalogs#products) and [Skus](/developers/api/catalogs#skus).
 
