@@ -34,13 +34,19 @@ Pour récupérer un catalogue HubRise dans LivePepper :
 
 ## Détails techniques
 
+### Produits
+
+Dans chaque catégorie, les produits sont importés dans le même ordre que celui défini dans HubRise.
+
 ### Listes d'options
 
 Lors de l'import depuis HubRise, chaque liste d'options est classée dans LivePepper selon les règles suivantes :
 
+- **Variantes** : liste à choix unique.
 - **Ingrédients** : liste à choix multiple dont le nom commence par "Ingrédients" ou "Composition" (casse indifférente).
 - **Suppléments** : liste à choix multiple dont le nom commence par "Suppléments" ou "Toppings" (casse indifférente).
 - **Options** : liste à choix multiple dont le nom ne correspond à aucun des préfixes ci‑dessus.
-- **Variantes** : liste à choix unique.
 
-LivePepper ne prend en charge qu'une seule liste pour chacune des trois premières catégories. Si plusieurs listes remplissent le même critère, seule l'une d'entre elles sera importée.
+LivePepper ne supporte qu'une seule liste par catégorie de liste à choix multiples. Si plusieurs listes remplissent le critère, une seule d'entre elles sera importée.
+
+Par défaut, LivePepper applique un ordre prédéfini pour les catégories d’options : **Variantes** > **Ingrédients** > **Suppléments** > **Options**. Si vous avez besoin d’un ordre d’affichage spécifique, contactez l’équipe LivePepper afin de vérifier si des ajustements sont possibles.
