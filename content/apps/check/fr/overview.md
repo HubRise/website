@@ -21,7 +21,9 @@ app_info:
 
 ## Description
 
-Check permet aux commerçants de mieux connaître leurs clients et de les fidéliser grâce à des outils marketing basés sur les tickets de caisse digitalisés. Pour les consommateurs, l’application mobile offre un service simple de numérisation et de centralisation des tickets, cartes de fidélité et justificatifs d’achat. L’installation se fait depuis l’App Store ou Google Play, sans abonnement ni engagement.
+Check est une application mobile qui permet aux consommateurs de numériser et centraliser leurs tickets de caisse, cartes de fidélité et justificatifs d'achat. Pour les commerçants, elle fournit des outils marketing basés sur ces tickets digitalisés, afin d'identifier leurs clients, mieux les connaître et renforcer leur fidélisation.
+
+L'installation se fait depuis l'App Store ou Google Play, sans abonnement ni engagement.
 
 ## Fonctionnalités de l'intégration
 

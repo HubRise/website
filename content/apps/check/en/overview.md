@@ -21,7 +21,9 @@ app_info:
 
 ## Description
 
-Check helps merchants better understand their customers and build loyalty through marketing tools based on digitalised receipts. For consumers, the mobile app provides a simple way to scan and store receipts, loyalty cards, and proof of purchase in one place. It can be installed from the App Store or Google Play, with no subscription or commitment required.
+Check is a mobile app that lets consumers digitise and centralise their receipts, loyalty cards, and purchase proofs. For merchants, it provides marketing tools based on these digital receipts, helping them identify their customers, gain deeper insights, and strengthen loyalty.
+
+The app can be installed from the App Store or Google Play, with no subscription or commitment required.
 
 ## Integration Features
 

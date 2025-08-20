@@ -763,7 +763,7 @@ content:
           logo: check.png
           country: FR
           title: Check
-          description: Check, a digital receipt solution, helps merchants identify and better understand their customers, and build loyalty through marketing tools based on purchase data.
+          description: Check is a digital receipt solution that helps merchants better understand and retain their customers through marketing tools based on purchase data.
         - website: https://www.expedy.fr
           documentation: /apps/expedy
           logo: expedy-print.png
