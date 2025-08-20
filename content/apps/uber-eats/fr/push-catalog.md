@@ -91,7 +91,7 @@ Uber Eats Bridge associe les promotions HubRise et les produits avec modificateu
 
 ### Images
 
-Les images de produits sur Uber Eats doivent avoir des dimensions entre 320x320 pixels et 6000x6000 pixels.
+Les images doivent avoir des dimensions entre 320×320 et 6000×6000 pixels, avec un rapport largeur/hauteur entre 1:1 et 1,5:1.
 
 ## Référence technique
 
@@ -136,28 +136,28 @@ Pour plus d'informations sur les SKU dans le catalogue HubRise, voir [Skus](/dev
 
 Le tableau ci-dessous répertorie les tags qui peuvent être définis sur les produits.
 
-| Tag                                  | Description                                                                            |
-| ------------------------------------ | -------------------------------------------------------------------------------------- |
-| `alcoholic`                          | Contient de l'alcool.                                                  |
-| `deal_only`                          | Ne peut être commandé que dans le cadre d'une promotion.               |
-| `gluten_free`                        | Ne contient pas de gluten.                                             |
-| `vegan`                              | Ne contient aucun produit animal.                                      |
-| `vegetarian`                         | Ne contient pas de viande.                                             |
-| `allergen_celery`                    | Contient l'allergène indiqué.                                          |
-| `allergen_crustaceans`               | Contient l'allergène indiqué.                                          |
-| `allergen_eggs`                      | Contient l'allergène indiqué.                                          |
-| `allergen_fish`                      | Contient l'allergène indiqué.                                          |
-| `allergen_gluten`                    | Contient l'allergène indiqué.                                          |
-| `allergen_lupin`                     | Contient l'allergène indiqué.                                          |
-| `allergen_milk`                      | Contient l'allergène indiqué.                                          |
-| `allergen_molluscs`                  | Contient l'allergène indiqué.                                          |
-| `allergen_mustard`                   | Contient l'allergène indiqué.                                          |
-| `allergen_nuts`                      | Contient l'allergène indiqué.                                          |
-| `allergen_peanuts`                   | Contient l'allergène indiqué.                                          |
-| `allergen_sesame_seeds`              | Contient l'allergène indiqué.                                          |
-| `allergen_soybeans`                  | Contient l'allergène indiqué.                                          |
-| `allergen_sulphur_dioxide_sulphites` | Contient l'allergène indiqué.                                          |
-| `deposit_cc`                         | Nécessite un acompte. `cc` est un montant en centimes. |
+| Tag                                  | Description                                              |
+| ------------------------------------ | -------------------------------------------------------- |
+| `alcoholic`                          | Contient de l'alcool.                                    |
+| `deal_only`                          | Ne peut être commandé que dans le cadre d'une promotion. |
+| `gluten_free`                        | Ne contient pas de gluten.                               |
+| `vegan`                              | Ne contient aucun produit animal.                        |
+| `vegetarian`                         | Ne contient pas de viande.                               |
+| `allergen_celery`                    | Contient l'allergène indiqué.                            |
+| `allergen_crustaceans`               | Contient l'allergène indiqué.                            |
+| `allergen_eggs`                      | Contient l'allergène indiqué.                            |
+| `allergen_fish`                      | Contient l'allergène indiqué.                            |
+| `allergen_gluten`                    | Contient l'allergène indiqué.                            |
+| `allergen_lupin`                     | Contient l'allergène indiqué.                            |
+| `allergen_milk`                      | Contient l'allergène indiqué.                            |
+| `allergen_molluscs`                  | Contient l'allergène indiqué.                            |
+| `allergen_mustard`                   | Contient l'allergène indiqué.                            |
+| `allergen_nuts`                      | Contient l'allergène indiqué.                            |
+| `allergen_peanuts`                   | Contient l'allergène indiqué.                            |
+| `allergen_sesame_seeds`              | Contient l'allergène indiqué.                            |
+| `allergen_soybeans`                  | Contient l'allergène indiqué.                            |
+| `allergen_sulphur_dioxide_sulphites` | Contient l'allergène indiqué.                            |
+| `deposit_cc`                         | Nécessite un acompte. `cc` est un montant en centimes.   |
 
 ### Options
 

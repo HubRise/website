@@ -60,7 +60,7 @@ Pour accéder à la page de configuration de Zelty Bridge, cliquez sur **Configu
 
 Cette page vous permet de personnaliser le comportement de Zelty Bridge. Pour plus de détails, voir [Configuration](/apps/zelty-bridge/configuration).
 
-## Statut
+## Statut {#status}
 
 La page **Statut** affiche les informations récupérées depuis l'API Zelty concernant votre restaurant et votre intégration.
 
@@ -97,7 +97,7 @@ Cliquez sur **Récupérer le catalogue** pour importer votre catalogue Zelty dan
 
 L'inventaire sera également mis à jour par cette action, mais uniquement si l'option **Activer la récupération automatique de l'inventaire** est activée dans la [configuration](/apps/zelty-bridge/configuration#inventory-sync).
 
-### Récupérer l'inventaire depuis Zelty
+### Récupérer l'inventaire depuis Zelty {#pull-inventory}
 
 Cliquez sur **Récupérer l'inventaire** pour synchroniser les ruptures de stock depuis Zelty vers HubRise.
 
