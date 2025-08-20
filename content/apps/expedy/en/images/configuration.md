@@ -8,7 +8,7 @@ meta:
   description: Configure Expedy to receive your Expedy orders in your EPOS or other applications connected to HubRise.
 ---
 
-From the Expedy back office, you can configure the printer’s behaviour and the layout of your printouts. You’ll find useful information on this page. For more details on how to set up your printer, you can also refer to the [Expedy online documentation](https://www.expedy.io/fr/docs/category/cms-plugins/hubrise).
+From the Expedy back office, you can configure the printer behaviour and the print layout.
 
 ## HubRise Settings
 
@@ -29,7 +29,7 @@ To configure these settings, follow these steps:
 1. From the Expedy back office homepage, click **Printers**.
 2. Click the Configuration icon next to the printer to connect <InlineImage width="25" height="25">![Configuration icon](../images/__configuration-icon.png)</InlineImage>.
 3. Section **CONNECTIONS & PLUGINS** scroll down to **HubRise**.
-4. In section **When receiving an order**, choose when to print. You can also configure an action in section **Perform one of the following extra actions?**
+4. In section **A la réception d'une commande** (When receiving an order), choose when to print. You can also configure an action in section **Effectuer une des actions supplémentaires suivantes ?** (Perform one of the following extra actions?)
    ![User Interface - HubRise settings](./images/008-2x-expedy-hubrise-actions.png)
 5. Click **SAVE** to save the changes.
 
