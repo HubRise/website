@@ -15,7 +15,7 @@ HubRise et LivePepper utilisent chacun leur propre terminologie. Un même concep
 | Compte                                 | Profil utilisateur | Identifiant unique des responsables de restaurant.               |
 | Point de vente                         | Point de vente     | Le restaurant proprement dit.                                    |
 | Variante                               | SKU                | Variante d'un produit, par exemple la taille ou le type de pâte. |
-| Promotion sur des articles spécifiques | Promotion          | Offre spéciale sur des articles spécifiques.                     |
+| Promotion sur des articles spécifiques | Promotion          | Offre combinée de plusieurs produits à prix réduit.                     |
 | Promotion sur la commande              | Remise             | Offre spéciale appliquée à la commande.                          |
 | Menu                                   | Catalogue          | Liste de produits.                                               |
 | Code logiciel                          | Code ref           | Code produit.                                                    |

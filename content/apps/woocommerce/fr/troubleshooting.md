@@ -39,6 +39,19 @@ Si ces entrées sont présentes et actives, c'est signe que la connexion avec Hu
 
 Si vous ne trouvez pas les deux entrées, vous devez reconnecter le bridge et vérifier à nouveau les crochets Web WooCommerce. Pour plus d'informations sur la connexion du bridge, voir [Connexion à HubRise](/apps/woocommerce/connect-hubrise).
 
+### Vérifier les journaux WooCommerce
+
+Si les crochets Web sont présents et actifs mais que les commandes ne sont toujours pas reçues, consultez les journaux WooCommerce pour plus de détails :
+
+1. Naviguez vers **WooCommerce** > **État** > **Journaux** dans votre back-office WooCommerce.
+2. Consultez le journal `webhooks-delivery` du jour de la commande pour vérifier si des appels de crochets Web ont été effectués vers HubRise.
+3. Consultez le journal `fatal-errors` pour détecter d'éventuels problèmes survenus à ce moment-là.
+4. Consultez le journal spécifique `place-order-debug-[id]` pour cette commande s'il est disponible.
+
+N'oubliez pas de tenir compte des différences de fuseau horaire : les journaux WooCommerce utilisent le fuseau horaire du serveur (comme UTC), tandis que les journaux de WooCommerce Bridge utilisent l'heure locale.
+
+Pour plus de détails sur les journaux WooCommerce, voir [Journaux WooCommerce](#journaux-woocommerce).
+
 ### Crochets Web automatiquement désactivés {#webhooks-automatically-disabled}
 
 Si vos crochets Web WooCommerce sont automatiquement désactivés, cela est probablement dû à des échecs d'envoi répétés. Par défaut, WooCommerce désactive les crochets Web après 5 échecs consécutifs.
@@ -202,6 +215,40 @@ Voici comment effectuer la correction :
 1. Réinitialiser la configuration du bridge WooCommerce, voir [Réinitialiser la configuration](/apps/woocommerce/configuration#reset) pour les instructions.
 2. Reprenez la configuration du bridge depuis le début. À la première étape, saisissez l'URL de votre boutique WooCommerce, en veillant à ce qu'elle corresponde exactement à votre site internet (attention à la présence ou non de `www`).
 3. Poursuivez la configuration telle qu'elle est décrite dans [Connexion à HubRise](/apps/woocommerce/connect-hubrise).
+
+## Journaux WooCommerce {#journaux-woocommerce}
+
+Les journaux WooCommerce fournissent des informations sur les envois de crochets Web, le traitement des commandes et les erreurs serveur.
+
+### Accès aux journaux
+
+Pour consulter les journaux WooCommerce :
+
+1. Ouvrez votre back-office WooCommerce.
+2. Naviguez vers **WooCommerce** > **État** > **Journaux**.
+3. La page affiche les fichiers journaux disponibles. Utilisez les contrôles de pagination en bas pour naviguer vers les journaux plus anciens.
+
+![Interface de navigation des journaux WooCommerce](./images/021-woocommerce-logs-browse.png)
+
+### Fichiers journaux à vérifier
+
+Recherchez les fichiers journaux créés au moment du problème que vous examinez. Si le problème est plus ancien que les journaux disponibles, envisagez d'augmenter la période de conservation dans les [réglages des journaux](#log-settings).
+
+Concentrez-vous sur les sources de journaux suivantes :
+
+- **webhooks-delivery** : Affiche chaque appel de crochet Web vers HubRise. Bien que le contenu puisse être masqué, les horodatages sont utiles pour vérifier si les crochets Web ont bien été envoyés. Notez que les heures sont affichées dans le fuseau horaire du serveur (souvent UTC).
+
+- **fatal-errors** : Consultez ce journal pour détecter tout problème critique survenu lors du traitement des commandes ou de l'envoi des crochets Web.
+
+- **place-order-debug-[id]** : Chaque commande crée son propre fichier journal avec un suffixe d'ID unique (par exemple, `place-order-debug-9da29b23`). Ces journaux contiennent des informations détaillées sur le timing et le statut d'une commande spécifique.
+
+### Réglages des journaux {#log-settings}
+
+Pour ajuster la rétention des journaux et d'autres paramètres :
+
+1. Depuis la page Journaux, cliquez sur **Réglages** en haut.
+2. Envisagez de définir la période de conservation à 30 jours ou plus pour garantir un historique suffisant.
+3. Envisagez de définir le seuil du niveau de journalisation sur **Aucun** pour capturer tous les événements. Cela peut générer des fichiers journaux plus volumineux.
 
 ## Utilisation de SQL Query Tool {#using-sql-query-tool}
 

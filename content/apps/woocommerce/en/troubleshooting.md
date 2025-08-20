@@ -37,6 +37,19 @@ If these entries are present and active, it is a good sign that the connection t
 
 If you cannot find the two entries, you need to reconnect the bridge and check WooCommerce webhooks again. For more information on connecting the bridge, see [Connect to HubRise](/apps/woocommerce/connect-hubrise).
 
+### Check WooCommerce Logs
+
+If the webhooks are present and active but orders are still not being received, check the WooCommerce logs for more details:
+
+1. Navigate to **WooCommerce** > **Status** > **Logs** in your WooCommerce back office.
+2. Check the `webhooks-delivery` log from the day of the order to verify if webhook calls were made to HubRise.
+3. Review the `fatal-errors` log for any issues around that time.
+4. Check the specific `place-order-debug-[id]` log for that order if available.
+
+Remember to account for timezone differences: WooCommerce logs use the server's timezone (such as UTC), while WooCommerce Bridge logs use local time.
+
+For more details on WooCommerce logs, see [WooCommerce Logs](#woocommerce-logs).
+
 ### Webhooks Automatically Disabled {#webhooks-automatically-disabled}
 
 If your WooCommerce webhooks are being automatically disabled, this is likely due to repeated delivery failures. By default, WooCommerce disables webhooks after 5 consecutive failed attempts.
@@ -200,6 +213,40 @@ Here is how to correct this:
 1. Reset the WooCommerce Bridge configuration, see [Reset the Configuration](/apps/woocommerce/configuration#reset) for instructions.
 1. Configure the bridge again from scratch. When you reach the first step of the configuration, enter the correct URL of your WooCommerce store, ensuring the URL matches exactly with your website (pay attention to whether your website uses `www` or not).
 1. Proceed with the configuration as described in [Connect to HubRise](/apps/woocommerce/connect-hubrise).
+
+## WooCommerce Logs {#woocommerce-logs}
+
+WooCommerce logs provide information about webhook deliveries, order processing, and server errors.
+
+### Accessing the Logs
+
+To view WooCommerce logs:
+
+1. Open your WooCommerce back office.
+2. Navigate to **WooCommerce** > **Status** > **Logs**.
+3. The page displays available log files. Use the pagination controls at the bottom to navigate to older logs.
+
+![WooCommerce logs browse interface](./images/021-woocommerce-logs-browse.png)
+
+### Log Files to Check
+
+Look for the log files created around the time of the issue you're investigating. If the issue is older than the available logs, consider extending the retention period in the [log settings](#log-settings).
+
+Focus on the following log sources:
+
+- **webhooks-delivery**: Shows each webhook call to HubRise. While the content may be obfuscated, the timestamps are useful for verifying if webhooks were actually sent. Note that times are displayed in the server's timezone (often UTC).
+
+- **fatal-errors**: Check this log for any critical issues that might have occurred during order processing or webhook delivery.
+
+- **place-order-debug-[id]**: Each order creates its own log file with a unique ID suffix (e.g., `place-order-debug-9da29b23`). These logs contain detailed timing and status information for a specific order.
+
+### Log Settings {#log-settings}
+
+To adjust log retention and other settings:
+
+1. From the Logs page, click **Settings** at the top.
+2. Consider setting the retention period to 30 days or more to ensure sufficient history.
+3. Consider setting the logging level threshold to **None** to capture all events. This may generate larger log files.
 
 ## Using the SQL Query Tool {#using-sql-query-tool}
 
