@@ -40,7 +40,7 @@ Pour faciliter la prise en charge de vos demandes de support, nous vous recomman
 Pour donner accès à Popina, procédez comme suit :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONFIGURATION** dans le menu de gauche.
-1. Dans la section **Permissions**, ajoutez `pport@popina.com`.
+1. Dans la section **Permissions**, ajoutez `support@popina.com`.
 1. Cliquez sur **Ajouter l'utilisateur**.
 1. Dans le menu déroulant de choix d'un rôle prédéfini, sélectionnez **Partenaire Technique**.
 1. Cliquez sur **Définir les permissions**.

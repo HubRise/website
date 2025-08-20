@@ -36,7 +36,7 @@ To check the ref codes for the items, you can open the downloaded CSV file in Ex
 
 You can find the ref codes for skus, options, deals, discounts, charges, service types, and payments from your Lightspeed back office.
 
-### Skus, Options, Discounts, and Charges
+### Skus, Options, Discounts, and Charges {#skus-options-discounts-charges}
 
 To find the ref codes for specific skus, options, discounts, and charges, follow these steps:
 
