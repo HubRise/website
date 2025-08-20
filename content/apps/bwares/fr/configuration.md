@@ -5,48 +5,39 @@ position: 4
 layout: documentation
 meta:
   title: Configuration | BWares | HubRise
-  description: Instructions pour configurer la connexion BWares avec HubRise afin qu'elle fonctionne parfaitement avec votre logiciel de caisse et les autres apps connectées. 
+  description: Instructions pour configurer la connexion BWares avec HubRise afin qu'elle fonctionne parfaitement avec votre logiciel de caisse et les autres apps connectées.
 ---
 
-Une fois la connexion entre BWares et HubRise établie, vous pouvez lancer la configuration depuis le back-office de BWares. Pour cela :
+Une fois la connexion entre BWares et HubRise établie, vous pouvez configurer l'intégration dans le back-office de BWares. Pour cela :
+
 1. Depuis le back-office de BWares, cliquez sur **INTÉGRATIONS**.
 2. Sur la page **GESTION DES INTÉGRATIONS**, trouvez HubRise et cliquez sur le bouton correspondant.
 3. La configuration s’effectue depuis la page **MODIFICATION D'UNE CONFIGURATION EXISTANTE**.
 
-
 ## Type de vente
 
-Il est possible de définir deux types de service pour HubRise : **SUR PLACE** ou **À EMPORTER**. 
+Si votre logiciel de caisse le nécessite, vous pouvez configurer les codes de ref des types de service, en utilisant les champs **SUR PLACE** ou **À EMPORTER**.
 
-Pour chaque type de service, vous pouvez indiquer un code ref correspondant. Ce code ref peut être nécessaire au bon fonctionnement de votre logiciel de caisse également connecté via HubRise.
-Une variante de catalogue peut également être associée à chaque type de vente. Cette association est facultative. Il est possible qu'il n'y ait pas de variante de catalogue disponible sur HubRise. 
+Dans cette section, vous pouvez également configurer la variante de catalogue HubRise utilisée lors de la récupération du catalogue, pour chaque type de vente.
 
 ![BWares, type de vente à configurer](./images/007-2x-type-de-vente.png)
 
 ## Type de paiement
 
-Il est possible de définir deux types de paiement pour HubRise : **CARTE BANCAIRE** ou **ESPÈCES**. 
-
-Pour chaque type de paiement, vous pouvez indiquer un code ref correspondant. Ce code ref peut être nécessaire au bon fonctionnement de votre logiciel de caisse également connecté via HubRise.
+Si votre logiciel de caisse le nécessite, vous pouvez définir les codes ref de paiement dans les champs **CARTE BANCAIRE** ou **ESPÈCES**.
 
 ![BWares, type de paiement à configurer](./images/008-2x-type-de-paiement.png)
 
 ## Options de Synchronisation
 
-Vous pouvez choisir de synchroniser les horaires d’ouverture, le catalogue produits et les inventaires de BWares avec ceux disponibles sur HubRise. Il vous suffit de cocher les cases correspondantes :
+Vous pouvez choisir de synchroniser les horaires d’ouverture, le catalogue produits et les disponibilités de BWares avec ceux disponibles sur HubRise en cochant les cases correspondantes. La synchronisation devient alors automatique :
 
-- **Synchroniser les horaires d’ouverture** : Cela impacte les horaires de l’établissement. En dehors de ces horaires, les bornes seront bloquées.
-- **Synchroniser le catalogue** : Cela impacte la carte présentée au client. Les produits et la mise en page seront mis à jour.
-- **Synchroniser l’inventaire** : Permet de mettre à jour les quantités disponibles pour chaque produit.
+- **Synchroniser les horaires d’ouverture** : Les bornes sont bloquées en dehors des horaires définis dans HubRise.
+- **Synchroniser le catalogue** : La carte présentée au client est mise à jour à chaque modification dans HubRise.
+- **Synchroniser l’inventaire** : Les produits et ingrédients sont automatiquement retirés de la vente dès qu’ils sont en rupture de stock dans HubRise.
 
 ![BWares, options de Synchronisation](./images/009-2x-option-de-synchronisation.png)
 
----
+## Pour aller plus loin
 
-**REMARQUE IMPORTANTE :** Une synchronisation automatique est déclenchée dès qu’une modification est détectée sur HubRise.
-
----
-
-## Mapping et synchronisation de données
-
-Pour plus d’informations sur le fonctionnement de l’intégration et les données échangées lors de la synchronisation, vous pouvez consulter la documentation disponible sur le site Internet de BWares, section [Intégration HubRise](https://bwares.notion.site/HubRise-23e20882788c8014a9adf1dad49ce6e7). 
+Pour plus d’informations sur le fonctionnement de l’intégration et les données échangées lors de la synchronisation, consultez la documentation disponible sur le site Internet de BWares, section [Intégration HubRise](https://bwares.notion.site/HubRise-23e20882788c8014a9adf1dad49ce6e7).
