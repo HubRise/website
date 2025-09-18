@@ -14,34 +14,11 @@ You have the option to either manually accept orders on the tablet or set up aut
 
 This page describes the information Deliveroo sends to HubRise. It helps you understand how orders will be received on your EPOS.
 
-## Items and Options
+## Order Transmission Time
 
-If your EPOS solution relies on item and option ref codes to correctly parse the item, make sure that items and options in your Deliveroo menu are mapped to the correct EPOS ref code. For more details, see [Map Ref Codes](/apps/deliveroo/map-ref-codes).
+Deliveroo sends orders to HubRise as soon they are placed by the customer.
 
-Otherwise, if your EPOS solution does not support ref codes, leave this information blank in your Deliveroo back office.
-
-Customers' comments on single items are not provided by Deliveroo API. If you rely on these comments for cooking or serving instructions (for example, "Medium rare cooking", or "Cut in slices"), you should add the corresponding items in your EPOS and include them as options in the Deliveroo menu, so that they are correctly encoded.
-
-### Items Encoding
-
-For every item in the order, Deliveroo Bridge provides the following information:
-
-- `sku_ref`: The ref code of the item.
-- `product_name`: The ref code of the item, if present. Otherwise, the item name.
-- `price`: The price for a single item.
-- `quantity`: The quantity of items included in the order.
-- `options`: The array of options attached to the item.
-
-### Options Encoding
-
-For every option in the order, Deliveroo Bridge provides the following information:
-
-- `option_list_name`: The default value is "Options".
-- `ref`: The ref code of the option.
-- `name`: The ref code of the option, if present. Otherwise, the option name.
-- `price`: The price for a single option.
-
-Every option has single quantity. Multiple identical options are encoded in separate option objects.
+For the vast majority of orders, this means they should be prepared immediately, as customers generally expect their food to be served as quickly as possible. The actual due time is indicated in the order details.
 
 ## Order Statuses
 
@@ -127,6 +104,35 @@ For other types of orders, Deliveroo Bridge provides the following details:
 - `first_name`: The customer's first name.
 - `phone`: Deliveroo support number. Note: This is not the customer's phone number.
 
+## Items and Options
+
+If your EPOS solution relies on item and option ref codes to correctly parse the item, make sure that items and options in your Deliveroo menu are mapped to the correct EPOS ref code. For more details, see [Map Ref Codes](/apps/deliveroo/map-ref-codes).
+
+Otherwise, if your EPOS solution does not support ref codes, leave this information blank in your Deliveroo back office.
+
+Customers' comments on single items are not provided by Deliveroo API. If you rely on these comments for cooking or serving instructions (for example, "Medium rare cooking", or "Cut in slices"), you should add the corresponding items in your EPOS and include them as options in the Deliveroo menu, so that they are correctly encoded.
+
+### Items Encoding
+
+For every item in the order, Deliveroo Bridge provides the following information:
+
+- `sku_ref`: The ref code of the item.
+- `product_name`: The ref code of the item, if present. Otherwise, the item name.
+- `price`: The price for a single item.
+- `quantity`: The quantity of items included in the order.
+- `options`: The array of options attached to the item.
+
+### Options Encoding
+
+For every option in the order, Deliveroo Bridge provides the following information:
+
+- `option_list_name`: The default value is "Options".
+- `ref`: The ref code of the option.
+- `name`: The ref code of the option, if present. Otherwise, the option name.
+- `price`: The price for a single option.
+
+Every option has single quantity. Multiple identical options are encoded in separate option objects.
+
 ## Discounts
 
 The discount applied to the order is passed in a single object in the HubRise `discounts` array.
@@ -160,8 +166,9 @@ Order-level customer notes are encoded in the `customer_notes` field.
 When order acceptance and preparation time sync is enabled, Deliveroo Bridge syncs the `order_acceptance` and `preparation_time` fields from HubRise to Deliveroo.
 
 The `order_acceptance.mode` field controls the store status:
+
 - `normal`: Store open with quiet preparation time
-- `busy`: Store open with busy preparation time  
+- `busy`: Store open with busy preparation time
 - `paused`: Store closed
 
 The quiet preparation time uses the `preparation_time` value from HubRise, defaulting to 15 minutes if not set. The busy preparation time is calculated as `preparation_time` plus `order_acceptance.extra_preparation_time`.

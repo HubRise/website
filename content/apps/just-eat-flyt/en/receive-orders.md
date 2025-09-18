@@ -14,11 +14,21 @@ The Just Eat OrderPad will need to remain switched on to receive orders in HubRi
 
 This page describes the information Just Eat sends to HubRise. It helps you understand how orders will be received on your EPOS.
 
-## Items and Options
+## Order Transmission Time
 
-Just Eat orders contain the complete information about items and options, including name, POS ref code, quantity, and price.
+By default, Just Eat sends an order to HubRise when one of the following conditions is met:
 
-Customers' comments on single products are not supported on Just Eat. If you rely on these comments for cooking or serving instructions (for example, "Medium rare cooking", or "Cut in slices"), you should add the corresponding items in your EPOS and include them as options in the Just Eat menu, so that they are correctly encoded.
+- A courier is assigned to the order.
+- The time the order must be ready minus the preparation time has been reached.
+
+For example, if preparation time is set to 7 minutes and the order must be ready by 7:00 PM, the order is sent to HubRise at 6:53 PM, unless a courier is assigned earlier.
+
+You can customise this behaviour in two ways:
+
+- Adjust the preparation time if the default 7 minutes is not suitable.
+- Request immediate transmission of orders as soon as they are placed by customers.
+
+Both options can be configured at the store level by contacting your Just Eat account manager.
 
 ## Order Statuses
 
@@ -77,6 +87,12 @@ The customer's details provided by Just Eat depend on the service type for the o
 - For orders delivered by the restaurant, HubRise receives the customer name and address.
 - For pick-up orders, only the customer name is received.
 - For orders delivered by Just Eat, the customer name may be received, depending on the market. The address is never received.
+
+## Items and Options
+
+Just Eat orders contain the complete information about items and options, including name, POS ref code, quantity, and price.
+
+Customers' comments on single products are not supported on Just Eat. If you rely on these comments for cooking or serving instructions (for example, "Medium rare cooking", or "Cut in slices"), you should add the corresponding items in your EPOS and include them as options in the Just Eat menu, so that they are correctly encoded.
 
 ## Discounts
 

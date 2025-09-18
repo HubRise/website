@@ -14,11 +14,21 @@ L'OrderPad Just Eat doit rester allumé pour recevoir les commandes dans HubRise
 
 Cette page décrit les informations que Just Eat envoie à HubRise. Elle peut vous aider à comprendre comment les commandes seront reçues dans votre logiciel de caisse.
 
-## Articles et options
+## Heure de transmission des commandes
 
-Les commandes Just Eat contiennent des informations complètes sur les articles et les options, y compris le nom, le code ref du produit, la quantité et le prix.
+Par défaut, Just Eat envoie une commande à HubRise dès que l'une de ces conditions est remplie :
 
-De même, les avis formulés par les clients sur des produits individuels ne sont pas pris en charge dans Just Eat. Si vous comptez sur ces avis pour les instructions de préparation ou de présentation (par exemple "Cuisson à point" ou "Couper en tranches"), vous devez ajouter les articles correspondants dans votre logiciel de caisse, puis les inclure en tant qu'options dans le menu Just Eat. Ils seront ainsi correctement encodés.
+- Un coursier est affecté à la commande.
+- L'heure à laquelle la commande doit être prête diminuée du temps de préparation est atteinte.
+
+Par exemple, si le temps de préparation est de 7 minutes et que la commande doit être prête à 19h00, elle sera envoyée à HubRise à 18h53, sauf si un coursier est affecté avant.
+
+Vous pouvez personnaliser ce comportement de deux manières :
+
+- Modifier le temps de préparation si la valeur par défaut de 7 minutes n’est pas adaptée.
+- Demander la transmission immédiate des commandes dès qu’elles sont passées par les clients.
+
+Ces deux options peuvent être configurées au niveau du magasin en contactant votre gestionnaire de compte Just Eat.
 
 ## Statuts de commande
 
@@ -77,6 +87,12 @@ Les coordonnées du client fournies par Just Eat dépendent du type de service a
 - Pour les commandes livrées par le restaurant, HubRise reçoit le nom et l'adresse du client.
 - Pour les commandes à emporter, seul le nom du client est reçu.
 - Pour les commandes livrées par Just Eat, le nom du client peut être reçu, en fonction du marché. L'adresse n'est par contre jamais reçue.
+
+## Articles et options
+
+Les commandes Just Eat contiennent des informations complètes sur les articles et les options, y compris le nom, le code ref du produit, la quantité et le prix.
+
+Les notes de préparation des clients sur les produits individuels ne sont pas pris en charge dans Just Eat. Si vous avez besoin de ces notes pour la préparation ou la présentation (par exemple "Cuisson à point" ou "Couper en tranches"), vous devez ajouter les articles correspondants dans votre logiciel de caisse, puis les inclure en tant qu'options dans le menu Just Eat.
 
 ## Remises
 

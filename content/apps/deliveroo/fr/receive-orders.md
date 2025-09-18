@@ -14,34 +14,11 @@ Vous avez la possibilité d'accepter manuellement les commandes sur la tablette 
 
 Cette page décrit les informations que Deliveroo envoie à HubRise. Elle peut vous aider à comprendre comment les commandes seront reçues dans votre logiciel de caisse.
 
-## Articles et options
+## Heure de transmission des commandes
 
-Si votre logiciel de caisse utilise les codes ref pour retrouver les articles et les options, assurez-vous que les articles et options de votre menu Deliveroo sont associés aux codes ref correspondants dans votre logiciel de caisse. Pour plus de détails, voir [Associer les codes ref](/apps/deliveroo/map-ref-codes).
+Deliveroo envoie les commandes à HubRise dès qu’elles sont passées par le client.
 
-Sinon, si votre logiciel de caisse ne prend pas en charge les code ref, laissez ce champ vide dans votre back-office Deliveroo.
-
-Les commentaires des clients sur les articles individuels ne sont pas fournis par l'API Deliveroo. Si vous comptez sur ces avis pour les instructions de préparation ou de présentation (par exemple « Cuisson à point » ou « Couper en tranches »), vous devez ajouter les articles correspondants dans votre logiciel de caisse, puis les inclure en tant qu'options dans le menu Deliveroo. Ils seront ainsi correctement encodés.
-
-### Encodage des articles
-
-Pour chaque article inclus dans la commande, Deliveroo Bridge indique les informations suivantes :
-
-- `sku_ref` : code ref de l'article.
-- `product_name` : code ref de l'article, si présent. Sinon, nom de l'article.
-- `price` : prix unitaire de l'article.
-- `quantity` : quantité d'articles inclus dans la commande.
-- `options` : sélection des options rattachées à l'article.
-
-### Encodage des options
-
-Pour chaque option incluse dans la commande, Deliveroo Bridge indique les informations suivantes :
-
-- `option_list_name` : la valeur par défaut est "Options".
-- `ref` : code ref de l'option.
-- `name` : code ref de l'option, si présent. Sinon, nom de l'option.
-- `price` : prix unitaire de l'option.
-
-Chaque option a une quantité égale à 1. Les options multiples identiques sont encodées dans des objets d'option distincts.
+Pour la grande majorité des commandes, cela signifie qu’elles doivent être préparées immédiatement, car les clients s’attendent généralement à ce que leur repas soit servi le plus rapidement possible. L’heure exacte à laquelle la commande doit être prête est indiquée dans les détails de la commande.
 
 ## Statuts de commande
 
@@ -126,6 +103,35 @@ Pour les autres types de commandes, Deliveroo Bridge fournit les informations su
 
 - `first_name` : prénom du client.
 - `phone` : numéro d'assistance Deliveroo. Remarque : il ne s'agit pas du numéro de téléphone du client.
+
+## Articles et options
+
+Si votre logiciel de caisse utilise les codes ref pour retrouver les articles et les options, assurez-vous que les articles et options de votre menu Deliveroo sont associés aux codes ref correspondants dans votre logiciel de caisse. Pour plus de détails, voir [Associer les codes ref](/apps/deliveroo/map-ref-codes).
+
+Sinon, si votre logiciel de caisse ne prend pas en charge les code ref, laissez ce champ vide dans votre back-office Deliveroo.
+
+Les commentaires des clients sur les articles individuels ne sont pas fournis par l'API Deliveroo. Si vous comptez sur ces avis pour les instructions de préparation ou de présentation (par exemple « Cuisson à point » ou « Couper en tranches »), vous devez ajouter les articles correspondants dans votre logiciel de caisse, puis les inclure en tant qu'options dans le menu Deliveroo. Ils seront ainsi correctement encodés.
+
+### Encodage des articles
+
+Pour chaque article inclus dans la commande, Deliveroo Bridge indique les informations suivantes :
+
+- `sku_ref` : code ref de l'article.
+- `product_name` : code ref de l'article, si présent. Sinon, nom de l'article.
+- `price` : prix unitaire de l'article.
+- `quantity` : quantité d'articles inclus dans la commande.
+- `options` : sélection des options rattachées à l'article.
+
+### Encodage des options
+
+Pour chaque option incluse dans la commande, Deliveroo Bridge indique les informations suivantes :
+
+- `option_list_name` : la valeur par défaut est "Options".
+- `ref` : code ref de l'option.
+- `name` : code ref de l'option, si présent. Sinon, nom de l'option.
+- `price` : prix unitaire de l'option.
+
+Chaque option a une quantité égale à 1. Les options multiples identiques sont encodées dans des objets d'option distincts.
 
 ## Remises
 
