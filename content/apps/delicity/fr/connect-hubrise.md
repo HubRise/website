@@ -1,5 +1,6 @@
 ---
 title: Connexion à HubRise
+path_override: connexion-hubrise
 position: 2
 layout: documentation
 meta:
@@ -21,7 +22,7 @@ Pour connecter Delicity à HubRise, suivez ces étapes :
 1. Depuis le back-office de Delicity, cliquez sur **Intégrations**
    ![Connexion HubRise sur Delicity](./images/001-delicity-connect.png)
 
-1. Dans la section **HubRise**, cliquez sur **CONNECTER**.
+1. Dans la section **HubRise**, cliquez sur **Connexion**.
 1. Vous êtes redirigé vers l'interface HubRise.
 1. Si vous avez plusieurs points de vente, choisissez le point de vente à connecter. Si le point de vente sélectionné possède plusieurs listes de clients ou catalogues, cliquez sur **Suivant** pour afficher les listes déroulantes correspondantes, puis sélectionnez les options voulues.
 1. Cliquez sur **Autoriser**.
@@ -49,7 +50,8 @@ Pensez à indiquer le nom de votre compte HubRise, son identifiant HubRise et le
 ## Déconnecter Delicity
 
 1. Depuis le back-office de Delicity, cliquez sur **Intégrations**
-2. Dans la section **HubRise**, cliquez sur **Deconnexion**.
+2. Dans la section **HubRise**, cliquez sur **Paramètres**.
+3. Cliquez sur **Déconnexion de HubRise** en bas de la page.
    ![Déconnexion d'HubRise sur Delicity](./images/002-delicity-disconnect.png)
 
 3. Delicity est déconnecté de HubRise.

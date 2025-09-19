@@ -30,7 +30,11 @@ Delicity est présent dans plusieurs grandes villes en France.
 Connecter Delicity à HubRise permet à votre plateforme de commande en ligne :
 
 - Envoyer les commandes à HubRise, dont les statuts de commande.
-- Recevoir un catalogue de HubRise.
+- Recevoir un catalogue de HubRise, avec support des variantes.
+- Synchroniser l'inventaire avec HubRise.
+- Synchroniser l'heure de livraison avec HubRise.
+- Synchroniser les horaires d'ouverture avec HubRise.
+- Synchroniser l'ouverture ou fermeture de la commande en ligne, et le temps de préparation moyen.
 
 Delicity peut être connecté à HubRise depuis le back-office de Delicity.
 
