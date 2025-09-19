@@ -25,10 +25,8 @@ For example, if preparation time is set to 7 minutes and the order must be ready
 
 You can customise this behaviour in two ways:
 
-- Adjust the preparation time if the default 7 minutes is not suitable.
-- Request immediate transmission of orders as soon as they are placed by customers.
-
-Both options can be configured at the store level by contacting your Just Eat account manager.
+- Adjust the preparation time from the Just Eat OrderPad.
+- Request immediate transmission of orders. To enable this option, contact your Just Eat account manager.
 
 ## Order Statuses
 
@@ -73,12 +71,11 @@ These are typically associated with specific ref codes in your EPOS, which you c
 
 ## Order Times
 
-Just Eat pushes orders to HubRise when a courier is assigned, or when the courier is the store’s preparation-time away.
+For restaurant delivery orders, Just Eat provides the time the customer expects the order to be delivered.
 
-- You can adjust the preparation time per store directly in the Just Eat portal.
-- If you want Just Eat to push orders to HubRise as soon as they are placed, contact us at support@hubrise.com.
+For other types of orders, it provides the time the order should be ready for pickup, either by the customer or a delivery rider.
 
-For restaurant delivery orders, Just Eat provides the time the customer expects the order to be delivered. For other types of orders, it provides the time the order should be ready for pickup, either by the customer or a delivery rider. In both scenarios, this time is transmitted to HubRise as the `expected_time` field. This time cannot be changed by the EPOS.
+In both scenarios, this time is transmitted to HubRise as the `expected_time` field. This time cannot be changed by the EPOS.
 
 ## Customer Details
 

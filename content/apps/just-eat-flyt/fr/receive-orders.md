@@ -25,10 +25,8 @@ Par exemple, si le temps de préparation est de 7 minutes et que la commande doi
 
 Vous pouvez personnaliser ce comportement de deux manières :
 
-- Modifier le temps de préparation si la valeur par défaut de 7 minutes n’est pas adaptée.
-- Demander la transmission immédiate des commandes dès qu’elles sont passées par les clients.
-
-Ces deux options peuvent être configurées au niveau du magasin en contactant votre gestionnaire de compte Just Eat.
+- Modifiez le temps de préparation depuis l'OrderPad Just Eat.
+- Demandez la transmission immédiate des commandes. Pour activer cette option, contactez votre gestionnaire de compte Just Eat.
 
 ## Statuts de commande
 
@@ -67,18 +65,17 @@ Just Eat prend en charge trois types de service :
 
 - Livraison par un coursier Just Eat
 - Livraison par un livreur du restaurant
-- Retrait par les clients.
+- Retrait par les clients
 
 Ils sont généralement associés à des codes ref spécifiques dans votre logiciel de caisse, que vous pouvez définir sur la page de configuration du bridge. Pour plus d'informations sur les codes ref, consultez la documentation de votre logiciel de caisse sur notre [page Apps](/apps).
 
 ## Horaires des commandes
 
-Just Eat envoie les commandes à HubRise lorsqu’un coursier est assigné, ou lorsque le coursier se trouve à une distance correspondant au temps de préparation défini pour le point de vente.
+Pour les commandes livrées par le restaurant, Just Eat fournit l'heure à laquelle le client attend la livraison de sa commande.
 
-- Vous pouvez modifier le temps de préparation directement dans le portail Just Eat.
-- Si vous souhaitez que Just Eat envoie les commandes à HubRise dès qu’elles sont passées, contactez-nous à support@hubrise.com.
+Pour les autres types de commande, il fournit l'heure à laquelle la commande doit être prête à emporter, que ce soit par le client ou par un livreur.
 
-Pour les commandes livrées par le restaurant, Just Eat fournit l'heure à laquelle le client attend la livraison de sa commande. Pour les autres types de commande, il fournit l'heure à laquelle la commande doit être prête à emporter, que ce soit par le client ou par un livreur. Dans les deux cas, l'horaire est transmis à HubRise via le champ `expected_time` (heure prévue). Cet horaire ne peut pas être modifié par le logiciel de caisse.
+Dans les deux cas, l'horaire est transmis à HubRise via le champ `expected_time` (heure prévue). Cet horaire ne peut pas être modifié par le logiciel de caisse.
 
 ## Données clients
 
@@ -115,10 +112,10 @@ Il s'agit de l'identifiant de référence de la commande que le client voit s'af
 
 Pour chaque article inclus dans la commande, Just Eat Flyt Bridge indique les informations suivantes :
 
-- `sku_ref` : code ref de l'article
+- `sku_ref` : code ref de l'article
 - `product_name` : nom du produit
-- `price` : prix unitaire de l'article
-- `quantity` : quantité d'articles dans la commande
+- `price` : prix unitaire de l'article
+- `quantity` : quantité d'articles dans la commande
 - `options` : options associées à l'article
 
 ### Encodage des options
@@ -127,7 +124,7 @@ Pour chaque option incluse dans la commande, Just Eat Flyt Bridge indique les in
 
 - `option_list_name` : emplacement réservé pour le nom de la liste d'options, avec la valeur par défaut `Options`
 - `ref` : code ref de l'option
-- `name` : nom de l'option
+- `name` : nom de l'option
 - `price` : prix unitaire de l'option
 
 Chaque option a une quantité égale à 1. Les options multiples identiques sont encodées dans des objets d'option distincts.
