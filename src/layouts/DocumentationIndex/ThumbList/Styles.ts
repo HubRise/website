@@ -1,45 +1,34 @@
 import OriginalLink from "next/link"
 import styled from "styled-components"
 
-import Icon from "@components/Icon"
-import { breakpoints, colors, fontSizes, sizes } from "@utils/styles"
-
-const gap = "4rem"
+import { breakpoints, mixin } from "@utils/styles"
 
 export const StyledThumbList = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: ${gap};
-`
-
-export const Thumb = styled.div`
-  flex: 0 0 100%;
-  padding: 0 ${sizes.mobilePadding};
-  text-align: left;
+  ${mixin.containerWrapper}
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 
   @media (min-width: ${breakpoints.large}) {
-    flex: 0 0 calc((100% - ${gap}) / 2);
-    padding: 0;
+    grid-template-columns: 1fr 1fr;
   }
 `
 
 export const Link = styled(OriginalLink)`
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
 `
 
-export const StyledIcon = styled(Icon)`
-  color: ${colors.primary};
+export const Content = styled.div`
+  text-align: center;
 `
 
-export const Content = styled.div``
-
-export const Title = styled.div`
-  font-size: ${fontSizes._24};
-  color: ${colors.textDarkest};
-  font-weight: bold;
+export const Title = styled.h4`
+  ${mixin.smallCardTitle}
 `
 
-export const Description = styled.div`
-  color: ${colors.textMedium};
+export const Description = styled.p`
+  ${mixin.cardText}
 `

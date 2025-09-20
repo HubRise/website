@@ -1,29 +1,35 @@
-import { Company, StyledCopyright, Logo, SocialLink, Contact, EmailLink, Container } from "./Styles"
-import { LinkedInSVG, TwitterSVG } from "./svg"
+import Image from "next/image"
+import Link from "next/link"
 
-const Copyright = (): JSX.Element => {
+import { StyledCopyright, Container, Text, Links } from "./Styles"
+
+type TCopyright = {
+  copyrightLinks: Array<{
+    title: string
+    link: string
+  }>
+  allRightsReserved: string
+}
+
+const Copyright = ({ copyrightLinks, allRightsReserved }: TCopyright): JSX.Element => {
   const year = new Date(Date.now()).getFullYear()
 
   return (
     <StyledCopyright>
       <Container>
-        <Company>&copy; {year} HubRise</Company>
-
-        <Logo src="/images/logo_footer.png" alt="HubRise" width={200} height={52} />
-
-        <Contact>
-          <EmailLink href="mailto:contact@hubrise.com" target="_blank" rel="noopener noreferrer">
-            contact@hubrise.com
-          </EmailLink>
-
-          <SocialLink href="https://www.linkedin.com/company/hubrise" target="_blank" rel="noopener noreferrer">
-            <LinkedInSVG />
-          </SocialLink>
-
-          <SocialLink href="https://twitter.com/HubRiseHQ" target="_blank" rel="noopener noreferrer">
-            <TwitterSVG />
-          </SocialLink>
-        </Contact>
+        <Text>
+          &copy; {year} HubRise. {allRightsReserved}
+        </Text>
+        <Image src="/images/logo_footer.png" alt="HubRise" width={123} height={32} />
+        <Links>
+          {copyrightLinks.map(({ title, link }, index) => {
+            return (
+              <Link key={index} href={link}>
+                {title}
+              </Link>
+            )
+          })}
+        </Links>
       </Container>
     </StyledCopyright>
   )

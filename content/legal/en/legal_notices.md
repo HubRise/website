@@ -10,7 +10,7 @@ meta:
 
 ## Website Publisher
 
-HubRise SAS, a company governed by French law, registered with the Cannes Trade and Companies Register under number 820 071 561 00014. Registered office: 150 avenue des Clos, 06250 Mougins, France. APE code: 6202A. VAT number: FR09 820071561. Publication Director: Antoine Monnier.
+HubRise SAS, a company governed by French law, registered with the Cannes Trade and Companies Register under number 820 071 561 00014. Registered office: 630 route des Dolines, Ophira 2, 06560 Valbonne, France. APE code: 6202A. VAT number: FR09 820071561. Publication Director: Antoine Monnier.
 
 This website is subject to French and international legislation on copyright and intellectual property. All reproduction rights are reserved, including iconographic and photographic content.
 
