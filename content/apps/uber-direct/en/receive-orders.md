@@ -5,91 +5,88 @@ position: 5
 layout: documentation
 meta:
   title: Receive Orders | Uber Direct | HubRise
-  description: Find out the technical details of how orders trigger Uber Direct deliveries, how delivery status updates are synchronised, and how to track courier location in real-time.
+  description: Learn how orders trigger Uber Direct deliveries, how delivery status updates are synchronised, and how to track the courier’s position in real time.
 ---
 
-When Uber Direct Bridge is connected to HubRise, it automatically requests delivery quotes or bookings to Uber Direct for orders created or updated in HubRise.
+When Uber Direct Bridge is connected to HubRise, orders created or updated in HubRise trigger delivery quote or booking requests to Uber Direct.
 
-This page describes how orders trigger delivery requests, how delivery status is synchronised between Uber Direct and HubRise, and the information sent to Uber Direct when creating a delivery.
+This page explains the conditions for triggering delivery requests, how delivery statuses are synchronised between Uber Direct and HubRise, and the information sent to Uber Direct when a delivery is created.
 
-## Order Processing Flow
+## Quote and Delivery Requests
 
-When an order is created or updated in HubRise, Uber Direct Bridge evaluates whether a delivery should be requested based on the criteria defined in the [Configuration](/apps/uber-direct/configuration#delivery-criteria) page.
+Each time an order is created or modified in HubRise, Uber Direct Bridge can send a quote request or a delivery request to Uber Direct, based on the criteria defined on the [Configuration](/apps/uber-direct/configuration#delivery-criteria) page.
 
-### Delivery Quote Creation
+### Quote Request
 
-If the order matches the delivery criteria and no quote has been created yet, Uber Direct Bridge will:
+If the order meets the delivery criteria and no quote has yet been created, Uber Direct Bridge:
 
-1. Request a delivery quote to Uber Direct. See [Delivery Information Sent to Uber Direct](#delivery-information) for the information sent.
-2. Saves the quote in HubRise as a delivery quote resource attached to the order. The saved information includes:
-   - **Carrier**: `Uber Direct`
-   - **Carrier ref**: `uber_direct`
-   - **Quote reference**: The unique quote ID from Uber Direct
-   - **Fee**: The estimated delivery cost
-   - **Estimated pickup time**: When the courier is expected to arrive at your location
-   - **Estimated dropoff time**: When the courier is expected to deliver the order
+1. Requests a delivery quote from Uber Direct. See [Information Sent to Uber Direct](#delivery-information) for the data sent.
+2. Saves the quote in HubRise as a _Delivery Quote_ attached to the order. The saved information includes:
 
-### Delivery Creation
+   - Carrier name: `Uber Direct`
+   - Carrier ref code: `uber_direct`
+   - Quote ref code, which is the unique quote ID in Uber Direct
+   - Delivery fee
+   - Pickup time
+   - Dropoff time
+
+### Booking the Delivery
 
 Depending on the booking mode configured in Uber Direct Bridge:
 
 - **Auto-book deliveries**: The delivery is created immediately.
-- **Request a quote and wait for confirmation**: The delivery is only created when the quote is accepted.
+- **Request a quote and wait for confirmation**: The delivery is created only when the quote is accepted.
 
-When the delivery is created, Uber Direct Bridge:
+When sending a delivery request, Uber Direct Bridge:
 
-1. Sends a delivery creation request to Uber Direct with the quote ID and full order details.
-2. Creates a delivery resource attached to the HubRise order. The delivery resource includes:
-   - **Carrier**: `Uber Direct`
-   - **Carrier ref**: `uber_direct`
-   - **Delivery reference**: The unique delivery ID from Uber Direct
-   - **Status**: `pending`
-   - **Fee**: The final delivery cost
-   - **Estimated pickup time**: When the courier will arrive at your location
-   - **Estimated dropoff time**: When the order will be delivered
-   - **Tracking URL**: A link to track the courier in real-time
-   - **Driver name**: The name of the assigned courier
-   - **Driver phone**: The phone number to contact the courier
+1. Sends the quote ID and order details to Uber Direct.
+2. Attaches a _Delivery_ resource to the HubRise order, which contains the quote details plus the following additional information:
 
-## Delivery Information Sent to Uber Direct {#delivery-information}
+   - Delivery ref code, which is the unique delivery ID in Uber Direct
+   - Delivery status, initialised to `pending`
+   - Tracking URL to locate the courier in real time
+   - Courier name
+   - Courier phone number
 
-When creating a delivery, Uber Direct Bridge sends the following information from HubRise to Uber Direct:
+## Information Sent to Uber Direct {#delivery-information}
+
+When a delivery is created, Uber Direct Bridge sends the following information to Uber Direct:
 
 ### Pickup Information
 
-- Business name (from configuration)
-- Pickup address (from configuration)
-- Pickup phone number (from configuration)
-- Pickup latitude and longitude (from configuration)
-- Pickup instructions (from configuration)
+These details come from the Uber Direct Bridge configuration.
+
+- Business name
+- Pickup address, including latitude and longitude
+- Phone number
+- Instructions for the courier
 
 ### Dropoff Information
 
-- Customer name (from order `customer.first_name` and `customer.last_name`)
-- Delivery address (from order `customer` address fields)
-- Delivery phone number (from order `customer.phone`)
-- Delivery business name (from order `customer.company_name`, if available)
-- Delivery latitude and longitude (from order `customer.latitude` and `customer.longitude`, if available)
-- Delivery notes (from order `customer.delivery_notes`)
+- Customer full name
+- Customer phone number
+- Delivery address, including latitude and longitude
+- Order delivery notes
+- Delivery time requested by the customer, from the order `expected_time` field. If this field is not set, Uber Direct will dispatch a courier as soon as possible.
 
 ### Order Information
 
-- Order ID (as external ID)
-- Collection code (from order `collection_code`, used as manifest reference)
-- Expected delivery time (from order `expected_time`, if available)
-- Total order value
-- List of items with names, quantities, and prices (including options)
+- Collection code, from the `collection_code` field
+- Order total amount
+- List of items with labels, quantities, prices, and options
 
-### Delivery Settings
+### Return Settings
 
-- Undeliverable action: `leave_at_door` or `return` (from configuration)
-- Return instructions (from configuration, if applicable)
+These settings are defined in the Uber Direct Bridge configuration.
 
-## Delivery Status Updates {#delivery-status-updates}
+- Action if delivery fails: leave at the door or return the order
+- Return instructions
 
-Uber Direct sends real-time updates about the delivery status via webhooks. The delivery status on Uber Direct comprises two fields: `status` and `courier_imminent`. The `courier_imminent` field indicates that the courier is approximately 1 minute away from the pickup or dropoff location.
+## Delivery Status
 
-Uber Direct Bridge maps the HubRise order status and delivery status according to the following table:
+Uber Direct sends real-time delivery status updates via webhooks. The delivery status on Uber Direct is defined by the `status` and `courier_imminent` fields. The `courier_imminent` field indicates that the courier is approximately 1 minute away from the pickup or dropoff point.
+
+Uber Direct Bridge updates the order and delivery status in HubRise according to the following table:
 
 | Uber Direct Status | Courier Imminent | HubRise Delivery Status | HubRise Order Status |
 | ------------------ | ---------------- | ----------------------- | -------------------- |
@@ -103,28 +100,20 @@ Uber Direct Bridge maps the HubRise order status and delivery status according t
 | `canceled`         | -                | `cancelled`             | `delivery_failed`    |
 | `returned`         | -                | -                       | `delivery_failed`    |
 
-## Courier Location Updates {#courier-location}
+## Courier Position
 
-In addition to status updates, Uber Direct sends real-time courier location updates approximately every 20 seconds while the courier is en route.
+While the courier is travelling, Uber Direct sends position updates roughly every 20 seconds.
 
-When a courier location update is received, Uber Direct Bridge updates the following fields in the HubRise delivery resource:
+Upon receiving these updates, Uber Direct Bridge updates the following fields in the _Delivery_ resource attached to the HubRise order:
 
-- **Driver phone**: The phone number to contact the courier
-- **Driver phone access code**: A PIN code required when calling the driver
-- **Driver latitude**: The current latitude of the courier
-- **Driver longitude**: The current longitude of the courier
+- Courier phone number and access code, as soon as they are available
+- Courier latitude and longitude
 
-## Delivery Time
+## Simulated Delivery
 
-The `expected_time` field in the HubRise order is used as the dropoff ready time in Uber Direct. This indicates when the order should be ready for the courier to pick up and deliver to the customer.
+Uber Direct offers a feature to simulate real deliveries for testing purposes. In this mode, Uber Direct simulates the full delivery lifecycle, including status changes and courier position updates.
 
-If the `expected_time` is not set, Uber Direct will aim to pick up and deliver the order as soon as possible.
-
-## Testing Deliveries {#testing-deliveries}
-
-Uber Direct provides an **Automated Delivery Testing** feature that simulates courier movement and status changes at predefined intervals (approximately every 30 seconds). This is useful for testing the integration without requesting real deliveries.
-
-To enable automated testing, add a custom field to your HubRise order:
+To enable automated tests, add a custom field to your HubRise order as follows:
 
 ```json
 {
@@ -141,6 +130,6 @@ To enable automated testing, add a custom field to your HubRise order:
 }
 ```
 
-When this custom field is present, Uber Direct will simulate the delivery lifecycle, including all status changes from `pending` to `delivered`.
+When this custom field is present, Uber Direct simulates the delivery lifecycle, including status changes from `pending` to `delivered`.
 
-You can further customise the testing behaviour, by setting the `robo_courier` custom field to any supported `robo_courier_specification` value in the [Uber Direct API documentation](https://developer.uber.com/docs/deliveries/guides/robocourier). For example, you can set the mode to `custom` and define specific status changes at given timestamps.
+In the `robo_courier` custom field, you can provide any `robo_courier_specification` value supported in the [Uber Direct API documentation](https://developer.uber.com/docs/deliveries/guides/robocourier). For example, you can set the mode to `custom` and specify the desired timings for each status change.

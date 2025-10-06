@@ -9,9 +9,9 @@ meta:
 app_info:
   category: Gestion de livreurs
   availability: Royaume-Uni, France, et autres marchés Uber Eats
-  price_range: null
+  price_range:
   website: https://merchants.ubereats.com/fr/fr/services/uber-direct/
-  contact: null
+  contact:
 ---
 
 ---
@@ -24,7 +24,7 @@ app_info:
 
 Uber Direct est un service de livraison en marque blanche proposé par Uber. Les commerces de proximité peuvent l'utiliser pour proposer un service de livraison à la demande.
 
-Plutôt que de gérer leur propre livreurs, les commerçants peuvent compter sur Uber Direct pour expédier des colis, des produits ou tout type de marchandises directement à leurs clients. Ce service est spécialement conçu pour les restaurants, restaurants virtuels, épiceries, supérettes, commerces de détail en tout genre, cavistes, animaleries et fleuristes, sans toutefois s’y limiter. Il permet aux commerces de bénéficier du vaste réseau de livreurs Uber Eats pour des livraisons programmées, le jour même, voire immédiates.
+Plutôt que de gérer leur propre livreurs, les commerçants peuvent compter sur Uber Direct pour expédier des colis, des produits ou tout type de marchandises directement à leurs clients. Ce service est spécialement conçu pour les restaurants, restaurants virtuels, épiceries, supérettes, commerces de détail en tout genre, cavistes, animaleries et fleuristes, sans toutefois s'y limiter. Il permet aux commerces de bénéficier du vaste réseau de livreurs Uber Eats pour des livraisons programmées, le jour même, voire immédiates.
 
 Uber Direct se connecte à votre compte HubRise grâce à Uber Direct Bridge, une application développée par HubRise.
 

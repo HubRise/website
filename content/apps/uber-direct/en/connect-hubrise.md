@@ -83,6 +83,6 @@ To ensure everything is working correctly, perform the following tests:
 
 - Create a test order in a connected application, such as your online ordering system or EPOS.
 - Verify that the order triggers a quote or delivery request in Uber Direct, according to your settings.
-- If a delivery was requested, check that delivery status updates are received in HubRise, .
+- If a delivery was requested, check that delivery status updates are received in HubRise.
 
 If you encounter problems during the tests, contact us at support@hubrise.com.
