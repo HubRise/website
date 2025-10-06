@@ -61,6 +61,6 @@ Cette page vous permet de personnaliser le comportement d'Uber Direct Bridge. Po
 
 ## Langue et navigation
 
-En haut à droite de l'écran, vous pouvez cliquer sur la flèche <InlineImage width="20" height="20">![Icône flèche](../images/arrow-icon.jpg)</InlineImage> pour développer le menu et modifier la langue de la page en anglais ou en français.
+En haut à droite de l'écran, vous pouvez cliquer sur la flèche <InlineImage width="20" height="20">![Icône flèche](../images/arrow-icon.jpg)</InlineImage> pour développer le menu. De là, vous pouvez alterner l'affichage de la page en anglais ou en français.
 
 Un clic sur le logo d'Uber Direct ou de HubRise en haut de n'importe quelle page d'Uber Direct Bridge vous ramène à la page **Dernières opérations**.
