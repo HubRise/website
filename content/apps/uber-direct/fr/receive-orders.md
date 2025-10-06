@@ -22,6 +22,7 @@ Si la commande répond aux critères de livraison et qu'aucun devis n'a encore �
 
 1. Demande un devis de livraison à Uber Direct. Voir [Informations de livraison envoyées à Uber Direct](#delivery-information) pour les informations envoyées.
 2. Enregistre le devis dans HubRise en tant que _Delivery Quote_ rattaché à la commande. Les informations enregistrées incluent :
+
    - Le nom du transporteur : `Uber Direct`
    - Le code ref du transporteur : `uber_direct`
    - Le code ref du devis, qui est l'ID unique du devis dans Uber Direct
@@ -40,6 +41,7 @@ Lors de l'envoi d'une demande de livraison, Uber Direct Bridge :
 
 1. Envoie à Uber Direct l'ID du devis et les détails de la commande.
 2. Attache à la commande HubRise une ressource _Delivery_, qui contient les informations du devis ainsi que les informations complémentaires suivantes :
+
    - Le code ref de la livraison, qui est l'ID unique de la livraison dans Uber Direct
    - Le statut de la livraison, initialisé à `pending`
    - Un URL de suivi, pour localiser le coursier en temps réel
@@ -86,17 +88,17 @@ Uber Direct envoie des mises à jour en temps réel sur le statut de livraison v
 
 Uber Direct Bridge met à jour le statut de la commande et de livraison dans HubRise selon le tableau suivant :
 
-| Statut Uber Direct | Coursier imminent | Statut de livraison HubRise | Statut de commande HubRise |
-| ------------------ | ----------------- | --------------------------- | -------------------------- |
-| `pending`          | -                 | `pending`                   | -                          |
-| `pickup`           | `false`           | `pickup_enroute`            | -                          |
-| `pickup`           | `true`            | `pickup_approaching`        | -                          |
-| `pickup_complete`  | -                 | `pickup_waiting`            | `in_delivery`              |
-| `dropoff`          | `false`           | `dropoff_enroute`           | -                          |
-| `dropoff`          | `true`            | `dropoff_approaching`       | -                          |
-| `delivered`        | -                 | `delivered`                 | `completed`                |
-| `canceled`         | -                 | `cancelled`                 | `delivery_failed`          |
-| `returned`         | -                 | -                           | `delivery_failed`          |
+| Statut Uber Direct | Courier Imminent | Statut de livraison HubRise | Statut de commande HubRise |
+| ------------------ | ---------------- | --------------------------- | -------------------------- |
+| `pending`          | -                | `pending`                   | -                          |
+| `pickup`           | `false`          | `pickup_enroute`            | -                          |
+| `pickup`           | `true`           | `pickup_approaching`        | -                          |
+| `pickup_complete`  | -                | `pickup_waiting`            | `in_delivery`              |
+| `dropoff`          | `false`          | `dropoff_enroute`           | -                          |
+| `dropoff`          | `true`           | `dropoff_approaching`       | -                          |
+| `delivered`        | -                | `delivered`                 | `completed`                |
+| `canceled`         | -                | `cancelled`                 | `delivery_failed`          |
+| `returned`         | -                | -                           | `delivery_failed`          |
 
 ## Position du coursier
 

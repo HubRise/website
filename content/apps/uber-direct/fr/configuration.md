@@ -57,14 +57,14 @@ Uber Direct Bridge envoie une demande un coursier pour toute commande correspond
 
 #### Statut de commande
 
-Sélectionnez le ou les statuts de commande devant déclencher une demande de livraison. Par exemple, si vous souhaitez demander un coursier uniquement lorsqu'une commande est prête pour le retrait, sélectionnez `awaiting_shipment`.
+Sélectionnez le ou les statuts de commande devant déclencher une demande de livraison. Par exemple, si vous souhaitez demander un coursier uniquement lorsqu'une commande est prête pour le retrait, sélectionnez `En attente livraison`.
 
 Par défaut, les statuts suivants sont sélectionnés :
 
-- `reçue`
-- `acceptée`
-- `in_preparation`
-- `attente livraison`
+- `Reçue`
+- `Acceptée`
+- `En préparation`
+- `Attente livraison`
 
 #### Code ref du type de service
 

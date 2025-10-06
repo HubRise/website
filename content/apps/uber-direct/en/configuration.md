@@ -57,14 +57,14 @@ Uber Direct Bridge will request a courier for every order that matches the follo
 
 #### Order Status
 
-Select the order status(es) that should trigger a delivery request. For example, if you only want to request a courier when an order is ready for pickup, select `awaiting_shipment`.
+Select the order status(es) that should trigger a delivery request. For example, if you only want to request a courier when an order is ready for pickup, select `Awaiting shipment`.
 
 By default, the following statuses are selected:
 
-- `received`
-- `accepted`
-- `in_preparation`
-- `awaiting_shipment`
+- `Received`
+- `Accepted`
+- `In preparation`
+- `Awaiting shipment`
 
 #### Service Type Ref Code
 
