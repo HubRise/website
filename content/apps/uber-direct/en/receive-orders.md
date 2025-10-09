@@ -67,10 +67,10 @@ These details come from the Uber Direct Bridge configuration.
 - Customer phone number
 - Delivery address, including latitude and longitude
 - Order delivery notes
-- Delivery time requested by the customer, from the order `expected_time` field. If this field is not set, Uber Direct will dispatch a courier as soon as possible.
 
 ### Order Information
 
+- Requested pickup or delivery time, based on `expected_time` and `expected_time_pickup`. If `expected_time_pickup` is `true`, it is a pickup time; otherwise, it is a delivery time. If `expected_time` is empty, or `delivery_asap` is `true`, Uber Direct dispatches a courier ASAP
 - Collection code, from the `collection_code` field
 - Order total amount
 - List of items with labels, quantities, prices, and options
