@@ -225,4 +225,4 @@ The `order_acceptance.mode` field controls the store status:
 - `normal` or `busy`: Store open
 - `paused`: Store paused with optional reason passed to Uber Eats
 
-The preparation time sent to Uber Eats is `preparation_time` in normal mode, or `preparation_time` plus `order_acceptance.extra_preparation_time` in busy mode.
+The preparation time sent to Uber Eats is `preparation_time` in normal mode, or `preparation_time` plus `order_acceptance.extra_preparation_time` in busy mode. The maximum allowed preparation time is 3 hours (180 minutes).

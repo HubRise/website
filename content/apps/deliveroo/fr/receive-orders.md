@@ -171,4 +171,4 @@ Le champ `order_acceptance.mode` contrôle le statut du magasin :
 - `busy`: Magasin ouvert avec temps de préparation forte affluence
 - `paused` : Magasin fermé
 
-Le temps de préparation calme utilise la valeur `preparation_time` de HubRise, par défaut 15 minutes si non définie. Le temps de préparation forte affluence est calculé comme la somme de `preparation_time` et de `order_acceptance.extra_preparation_time`.
+Le temps de préparation calme utilise la valeur `preparation_time` de HubRise, par défaut 15 minutes si non définie. Le temps de préparation forte affluence est calculé comme la somme de `preparation_time` et de `order_acceptance.extra_preparation_time`. Les temps de préparation maximum autorisés sont de 90 minutes pour le mode calme et 240 minutes (4 heures) pour le mode forte affluence.
