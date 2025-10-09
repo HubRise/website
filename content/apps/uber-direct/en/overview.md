@@ -14,12 +14,6 @@ app_info:
   contact:
 ---
 
----
-
-**IMPORTANT NOTE**: Full documentation of this integration will be available soon.
-
----
-
 ## Description
 
 Uber Direct is a white-label delivery service offered by Uber. Businesses can use it to offer on-demand delivery.
