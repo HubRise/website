@@ -14,7 +14,7 @@ You have the option to either manually accept orders on the tablet or set up aut
 
 This page describes the information Deliveroo sends to HubRise. It helps you understand how orders will be received on your EPOS.
 
-## Order Transmission Time
+## Order Transmission
 
 Deliveroo sends orders to HubRise as soon they are placed by the customer.
 

@@ -14,7 +14,7 @@ Votre tablette Uber Eats peut être éteinte si vous avez activé l'intégration
 
 Cette page décrit les informations qu'Uber Eats envoie à HubRise et la manière dont les informations de livraison sont synchronisées entre les deux plateformes. Elle peut vous aider à comprendre comment les commandes seront reçues dans votre logiciel de caisse et comment fonctionne le suivi des livraisons si vous utilisez vos propres livreurs (BYOC — _Bring Your Own Courier_).
 
-## Heure de transmission des commandes
+## Transmission des commandes
 
 Uber Eats envoie les commandes à HubRise à l’heure de retrait diminuée du temps de préparation.
 

@@ -14,7 +14,7 @@ The Just Eat OrderPad will need to remain switched on to receive orders in HubRi
 
 This page describes the information Just Eat sends to HubRise. It helps you understand how orders will be received on your EPOS.
 
-## Order Transmission Time
+## Order Transmission
 
 By default, Just Eat sends an order to HubRise when one of the following conditions is met:
 
