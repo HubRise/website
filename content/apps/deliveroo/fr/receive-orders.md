@@ -14,7 +14,7 @@ Vous avez la possibilité d'accepter manuellement les commandes sur la tablette 
 
 Cette page décrit les informations que Deliveroo envoie à HubRise. Elle peut vous aider à comprendre comment les commandes seront reçues dans votre logiciel de caisse.
 
-## Heure de transmission des commandes
+## Transmission des commandes
 
 Deliveroo envoie les commandes à HubRise dès qu’elles sont passées par le client.
 

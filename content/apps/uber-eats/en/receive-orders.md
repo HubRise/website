@@ -14,7 +14,7 @@ Your Uber Eats tablet can be switched off if you have enabled tabletless integra
 
 This page describes the information Uber Eats sends to HubRise and the way delivery information is synchronised between the two platforms. It helps you understand how orders will be received on your EPOS and how delivery tracking works when you use your own couriers (BYOC — _Bring Your Own Courier_).
 
-## Order Transmission Time
+## Order Transmission
 
 Uber Eats sends orders to HubRise at the pickup time minus the preparation time.
 
