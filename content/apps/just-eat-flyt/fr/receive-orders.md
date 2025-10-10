@@ -14,7 +14,7 @@ L'OrderPad Just Eat doit rester allumé pour recevoir les commandes dans HubRise
 
 Cette page décrit les informations que Just Eat envoie à HubRise. Elle peut vous aider à comprendre comment les commandes seront reçues dans votre logiciel de caisse.
 
-## Heure de transmission des commandes
+## Transmission des commandes
 
 Par défaut, Just Eat envoie une commande à HubRise dès que l'une de ces conditions est remplie :
 

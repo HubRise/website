@@ -14,12 +14,6 @@ app_info:
   contact:
 ---
 
----
-
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
-
----
-
 ## Description
 
 Uber Direct est un service de livraison en marque blanche proposé par Uber. Les commerces de proximité peuvent l'utiliser pour proposer un service de livraison à la demande.

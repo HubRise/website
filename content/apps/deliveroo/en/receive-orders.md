@@ -14,7 +14,7 @@ You have the option to either manually accept orders on the tablet or set up aut
 
 This page describes the information Deliveroo sends to HubRise. It helps you understand how orders will be received on your EPOS.
 
-## Order Transmission Time
+## Order Transmission
 
 Deliveroo sends orders to HubRise as soon they are placed by the customer.
 
@@ -171,4 +171,4 @@ The `order_acceptance.mode` field controls the store status:
 - `busy`: Store open with busy preparation time
 - `paused`: Store closed
 
-The quiet preparation time uses the `preparation_time` value from HubRise, defaulting to 15 minutes if not set. The busy preparation time is calculated as `preparation_time` plus `order_acceptance.extra_preparation_time`.
+The quiet preparation time uses the `preparation_time` value from HubRise, defaulting to 15 minutes if not set. The busy preparation time is calculated as `preparation_time` plus `order_acceptance.extra_preparation_time`. The maximum allowed preparation times are 90 minutes for quiet and 240 minutes (4 hours) for busy.

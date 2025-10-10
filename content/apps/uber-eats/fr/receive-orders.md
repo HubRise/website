@@ -14,7 +14,7 @@ Votre tablette Uber Eats peut être éteinte si vous avez activé l'intégration
 
 Cette page décrit les informations qu'Uber Eats envoie à HubRise et la manière dont les informations de livraison sont synchronisées entre les deux plateformes. Elle peut vous aider à comprendre comment les commandes seront reçues dans votre logiciel de caisse et comment fonctionne le suivi des livraisons si vous utilisez vos propres livreurs (BYOC — _Bring Your Own Courier_).
 
-## Heure de transmission des commandes
+## Transmission des commandes
 
 Uber Eats envoie les commandes à HubRise à l’heure de retrait diminuée du temps de préparation.
 
@@ -25,7 +25,7 @@ L'heure de retrait est définie comme suit :
 - Pour les commandes à emporter, il s’agit du moment où le client vient récupérer la commande.
 - Pour les commandes en livraison, il s’agit du moment où le coursier sort du restaurant.
 
-Vous pouvez ajuster l’heure de transmission en modifiant le temps de préparation via l’API HubRise. Voir [Mise en pause et temps de préparation](#pause-and-preparation-time) pour plus de détails. You can also change the preparation time in the Uber Eats restaurant dashboard.
+Vous pouvez ajuster l’heure de transmission en modifiant le temps de préparation via l’API HubRise. Voir [Mise en pause et temps de préparation](#pause-and-preparation-time) pour plus de détails. Vous pouvez également modifier ce temps dans le tableau de bord restaurant Uber Eats.
 
 ## Statuts de commande
 
@@ -225,4 +225,4 @@ Le champ `order_acceptance.mode` contrôle le statut du magasin :
 - `normal` ou `busy` : Magasin ouvert
 - `paused` : Magasin en pause avec raison optionnelle transmise à Uber Eats
 
-Le temps de préparation envoyé à Uber Eats est `preparation_time` en mode normal, ou la somme de `preparation_time` et de `order_acceptance.extra_preparation_time` en mode forte affluence.
+Le temps de préparation envoyé à Uber Eats est `preparation_time` en mode normal, ou la somme de `preparation_time` et de `order_acceptance.extra_preparation_time` en mode forte affluence. Le temps de préparation maximum autorisé est de 3 heures (180 minutes).
