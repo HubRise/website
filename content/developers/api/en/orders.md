@@ -24,32 +24,32 @@ Almost all the fields are optional. In fact the simplest order that can be creat
 
 ##### Parameters:
 
-| Name                                                                  | Type                                                     | Description                                                                                                                                                                         |
-| --------------------------------------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `channel` <Label type="optional" />                                   | string                                                   | Identifies the order source. Used in dashboards and order reception tools. Defaults to the API client's name if not provided.                                                       |
-| `ref` <Label type="optional" />                                       | string                                                   | Order reference on the app creating the order. Uniqueness is recommended but not enforced.                                                                                          |
-| `private_ref` <Label type="optional" />                               | string                                                   | Unique private order reference used for lookups. See [Private Refs](/developers/api/general-concepts#private-refs).                                                                 |
-| `status`                                                              | [OrderStatus](#status)                                   | Current order status.                                                                                                                                                               |
-| `service_type` <Label type="optional" />                              | string                                                   | Delivery/serving method. Can be: `delivery`, `collection`, or `eat_in`.                                                                                                             |
-| `service_type_ref` <Label type="optional" />                          | string                                                   | Order type identifier. Can indicate channel, brand, and delivery method.                                                                                                            |
-| `expected_time` <Label type="optional" />                             | [Time](/developers/api/general-concepts#dates-and-times) | The date and time the order should be ready or delivered.                                                                                                                           |
-| `expected_time_pickup` <Label type="optional" />                      | boolean                                                  | Delivery orders only. If true, the `expected_time` is the pickup time, otherwise it is the delivery time. By default, false.                                                        |
-| `delivery_asap` <Label type="optional" />                             | boolean                                                  | Delivery orders only. If true, the order can be made any time, and `expected_time` is the latest acceptable time. By default, false if `expected_time` is provided, true otherwise. |
-| `confirmed_time` <Label type="optional" />                            | [Time](/developers/api/general-concepts#dates-and-times) | The date and time confirmed by the merchant. Used to override the customer's expected time.                                                                                         |
-| `customer_notes` <Label type="optional" />                            | string                                                   | Customer-provided instructions, such as allergies or special requests.                                                                                                              |
-| `seller_notes` <Label type="optional" />                              | string                                                   | Merchant-provided information, such as product substitution notices.                                                                                                                |
-| `collection_code` <Label type="optional" />                           | string                                                   | Short order identifier shared with the customer, and used for simplified collection or delivery. Not necessarily unique.                                                            |
-| `coupon_codes` <Label type="optional" />                              | string[]                                                 | Coupon codes applied to the order.                                                                                                                                                  |
-| `items` <Label type="optional" />                                     | [OrderItem](#items)[]                                    | Items included in the order.                                                                                                                                                        |
-| `deals` <Label type="optional" />                                     | [OrderDealMap](#deals)                                   | Deals used in the order.                                                                                                                                                            |
-| `discounts` <Label type="optional" />                                 | [OrderDiscount](#discounts)[]                            | Discounts applied to the order.                                                                                                                                                     |
-| `charges` <Label type="optional" />                                   | [OrderCharge](#charges)[]                                | Additional charges incurred on the order.                                                                                                                                           |
-| `payments` <Label type="optional" />                                  | [OrderPayment](#payments)[]                              | Payment methods used for the order.                                                                                                                                                 |
-| `customer_id` <Label type="optional" />                               | string                                                   | ID of the customer placing the order. Cannot be used with `customer_list_id`, `customer_private_ref`, or `customer`. See [Order's Customer](#customer).                             |
-| `customer_list_id` & `customer_private_ref` <Label type="optional" /> | string                                                   | Customer list and private reference for the customer placing the order. Cannot be used with `customer_id` or `customer`. See [Order's Customer](#customer).                         |
-| `customer` <Label type="optional" />                                  | [Customer](#customer)                                    | Details specific to a guest order, used when `customer_id`, `customer_list_id`, or `customer_private_ref` are not provided. See [Order's Customer](#customer).                      |
-| `loyalty_operations` <Label type="optional" />                        | [OrderLoyaltyOperation](#loyalty-operations)[]           | Operations to add or remove points from customer loyalty cards. Only for customer-linked orders.                                                                                    |
-| `custom_fields` <Label type="optional" />                             | [CustomFields](/developers/api/extensions#custom-fields) | Additional data attached to the order.                                                                                                                                              |
+| Name                                                                  | Type                                                     | Description                                                                                                                                                    |
+| --------------------------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `channel` <Label type="optional" />                                   | string                                                   | Identifies the order source. Used in dashboards and order reception tools. Defaults to the API client's name if not provided.                                  |
+| `ref` <Label type="optional" />                                       | string                                                   | Order reference on the app creating the order. Uniqueness is recommended but not enforced.                                                                     |
+| `private_ref` <Label type="optional" />                               | string                                                   | Unique private order reference used for lookups. See [Private Refs](/developers/api/general-concepts#private-refs).                                            |
+| `status`                                                              | [OrderStatus](#status)                                   | Current order status.                                                                                                                                          |
+| `service_type` <Label type="optional" />                              | string                                                   | Delivery/serving method. Can be: `delivery`, `collection`, or `eat_in`.                                                                                        |
+| `service_type_ref` <Label type="optional" />                          | string                                                   | Order type identifier. Can indicate channel, brand, and delivery method.                                                                                       |
+| `expected_time` <Label type="optional" />                             | [Time](/developers/api/general-concepts#dates-and-times) | The date and time the order should be ready or delivered.                                                                                                      |
+| `expected_time_pickup` <Label type="optional" />                      | boolean                                                  | Delivery orders only. If true, the `expected_time` is the pickup time, otherwise it is the delivery time. By default, false.                                   |
+| `asap` <Label type="optional" />                                      | boolean                                                  | If true, the order can be made any time, and `expected_time` is the latest acceptable time. Defaults to true if `expected_time` is not set, false otherwise.   |
+| `confirmed_time` <Label type="optional" />                            | [Time](/developers/api/general-concepts#dates-and-times) | The date and time confirmed by the merchant. Used to override the customer's expected time.                                                                    |
+| `customer_notes` <Label type="optional" />                            | string                                                   | Customer-provided instructions, such as allergies or special requests.                                                                                         |
+| `seller_notes` <Label type="optional" />                              | string                                                   | Merchant-provided information, such as product substitution notices.                                                                                           |
+| `collection_code` <Label type="optional" />                           | string                                                   | Short order identifier shared with the customer, and used for simplified collection or delivery. Not necessarily unique.                                       |
+| `coupon_codes` <Label type="optional" />                              | string[]                                                 | Coupon codes applied to the order.                                                                                                                             |
+| `items` <Label type="optional" />                                     | [OrderItem](#items)[]                                    | Items included in the order.                                                                                                                                   |
+| `deals` <Label type="optional" />                                     | [OrderDealMap](#deals)                                   | Deals used in the order.                                                                                                                                       |
+| `discounts` <Label type="optional" />                                 | [OrderDiscount](#discounts)[]                            | Discounts applied to the order.                                                                                                                                |
+| `charges` <Label type="optional" />                                   | [OrderCharge](#charges)[]                                | Additional charges incurred on the order.                                                                                                                      |
+| `payments` <Label type="optional" />                                  | [OrderPayment](#payments)[]                              | Payment methods used for the order.                                                                                                                            |
+| `customer_id` <Label type="optional" />                               | string                                                   | ID of the customer placing the order. Cannot be used with `customer_list_id`, `customer_private_ref`, or `customer`. See [Order's Customer](#customer).        |
+| `customer_list_id` & `customer_private_ref` <Label type="optional" /> | string                                                   | Customer list and private reference for the customer placing the order. Cannot be used with `customer_id` or `customer`. See [Order's Customer](#customer).    |
+| `customer` <Label type="optional" />                                  | [Customer](#customer)                                    | Details specific to a guest order, used when `customer_id`, `customer_list_id`, or `customer_private_ref` are not provided. See [Order's Customer](#customer). |
+| `loyalty_operations` <Label type="optional" />                        | [OrderLoyaltyOperation](#loyalty-operations)[]           | Operations to add or remove points from customer loyalty cards. Only for customer-linked orders.                                                               |
+| `custom_fields` <Label type="optional" />                             | [CustomFields](/developers/api/extensions#custom-fields) | Additional data attached to the order.                                                                                                                         |
 
 <details>
 
@@ -65,7 +65,7 @@ Almost all the fields are optional. In fact the simplest order that can be creat
   "service_type_ref": "WEBSITE-DEL",
   "expected_time": "2021-06-24T11:30:00+02:00",
   "expected_time_pickup": false,
-  "delivery_asap": true,
+  "asap": true,
   "items": [
     {
       "product_name": "Margarita",
@@ -205,7 +205,7 @@ In addition, each `item`, `charge`, `payment` and `discount` is returned with a 
   "connection_name": null,
   "expected_time": "2021-06-24T19:07:52+02:00",
   "expected_time_pickup": false,
-  "delivery_asap": true,
+  "asap": true,
   "confirmed_time": null,
   "customer_notes": null,
   "seller_notes": null,
@@ -416,7 +416,7 @@ Orders of any location of the account:
    "created_by": "MyClient",
    "expected_time": "2021-06-24T19:07:52+02:00",
    "expected_time_pickup": null,
-   "delivery_asap": null,
+   "asap": true,
    "confirmed_time": null,
    "items": [
      ...
