@@ -67,10 +67,10 @@ Ces informations proviennent de la configuration d'Uber Direct Bridge.
 - Numéro de téléphone du client
 - Adresse de livraison, dont la latitude et la longitude
 - Notes de livraison de la commande
-- Heure de livraison souhaitée par le client, indiquée dans le champ `expected_time` de la commande. Si ce champ n'est pas défini, Uber Direct envoie un livreur aussi tôt que possible.
 
 ### Informations de commande
 
+- Heure de récupération ou de livraison souhaitée, basée sur les champs `expected_time` et `expected_time_pickup`. Si `asap` est égal à `true`, Uber Direct envoie un livreur aussi tôt que possible
 - Code de récupération, indiqué dans le champ `collection_code`
 - Montant total de la commande
 - Liste des articles avec libellés, quantités, prix, et options

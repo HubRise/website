@@ -70,7 +70,7 @@ These details come from the Uber Direct Bridge configuration.
 
 ### Order Information
 
-- Requested pickup or delivery time, based on `expected_time` and `expected_time_pickup`. If `expected_time_pickup` is `true`, it is a pickup time; otherwise, it is a delivery time. If `expected_time` is empty, or `delivery_asap` is `true`, Uber Direct dispatches a courier ASAP
+- Requested pickup or delivery time, based on `expected_time` and `expected_time_pickup`. If `asap` is `true`, Uber Direct dispatches a courier as soon as possible
 - Collection code, from the `collection_code` field
 - Order total amount
 - List of items with labels, quantities, prices, and options
