@@ -30,7 +30,7 @@ If the order meets the delivery criteria and no quote has yet been created, Uber
    - Pickup time
    - Dropoff time
 
-### Booking the Delivery
+### Delivery Request
 
 Depending on the booking mode configured in Uber Direct Bridge:
 
@@ -66,21 +66,25 @@ These details come from the Uber Direct Bridge configuration.
 - Customer full name
 - Customer phone number
 - Delivery address, including latitude and longitude
-- Order delivery notes
+- Delivery notes
 
-### Order Information
+### Delivery Information
 
-- Requested pickup or delivery time, based on `expected_time` and `expected_time_pickup`. If `asap` is `true`, Uber Direct dispatches a courier as soon as possible
-- Collection code, from the `collection_code` field
-- Order total amount
-- List of items with labels, quantities, prices, and options
+The timing information below applies to pickup if `expected_time_pickup` is `true`, or to delivery otherwise. With every order, we send:
 
-### Return Settings
+- Start time: For ASAP orders, this is the current time plus the preparation time. For scheduled orders, no start time is sent, and Uber Direct only uses the deadline.
+- Deadline: from the `expected_time` field, if present
 
-These settings are defined in the Uber Direct Bridge configuration.
+The following settings defined in the bridge configuration are also sent to Uber Direct:
 
 - Action if delivery fails: leave at the door or return the order
 - Return instructions
+
+### Order Information
+
+- Manifest reference, from the `collection_code` field
+- Total amount
+- List of items with labels, quantities, prices, and options
 
 ## Delivery Status
 

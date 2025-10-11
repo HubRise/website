@@ -52,7 +52,7 @@ Lors de l'envoi d'une demande de livraison, Uber Direct Bridge :
 
 Lors de la création d'une livraison, Uber Direct Bridge envoie les informations suivantes à Uber Direct :
 
-### Informations de récupération
+### Informations pour la récupération
 
 Ces informations proviennent de la configuration d'Uber Direct Bridge.
 
@@ -61,26 +61,30 @@ Ces informations proviennent de la configuration d'Uber Direct Bridge.
 - Numéro de téléphone
 - Instructions pour le coursier
 
-### Informations de livraison
+### Informations pour la remise de la commande
 
 - Nom complet du client
 - Numéro de téléphone du client
 - Adresse de livraison, dont la latitude et la longitude
-- Notes de livraison de la commande
+- Notes de livraison
 
-### Informations de commande
+### Informations de livraison
 
-- Heure de récupération ou de livraison souhaitée, basée sur les champs `expected_time` et `expected_time_pickup`. Si `asap` est égal à `true`, Uber Direct envoie un livreur aussi tôt que possible
-- Code de récupération, indiqué dans le champ `collection_code`
-- Montant total de la commande
-- Liste des articles avec libellés, quantités, prix, et options
+Les heures ci-dessous s'appliquent à la récupération si `expected_time_pickup` est égal à `true`, ou à la livraison dans le cas contraire. Pour chaque commande, le bridge envoie :
 
-### Paramètres de retour
+- Heure minimale : Pour les commandes ASAP, il s'agit de l'heure actuelle plus le temps de préparation. Pour les commandes à l'avance, aucune heure de début n'est envoyée, et Uber Direct utilise uniquement l'heure limite.
+- Heure limite : issue du champ `expected_time`, si présent
 
-Ces paramètres sont définis dans la configuration d'Uber Direct Bridge.
+Les paramètres suivants définis dans la configuration du bridge sont également envoyés à Uber Direct :
 
 - Action en cas de non-livraison : déposer devant la porte ou rapporter la commande
 - Instructions de retour
+
+### Informations sur la commande
+
+- Référence du bordereau, indiqué dans le champ `collection_code`
+- Montant total
+- Liste des articles avec libellés, quantités, prix, et options
 
 ## Statut de livraison
 
