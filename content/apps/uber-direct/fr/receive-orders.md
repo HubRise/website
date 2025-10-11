@@ -30,7 +30,7 @@ Si la commande répond aux critères de livraison et qu'aucun devis n'a encore �
    - L'heure de récupération
    - L'heure de livraison
 
-### Réservation de la livraison
+### Demande de livraison
 
 Selon le mode de réservation paramétré dans Uber Direct Bridge :
 
