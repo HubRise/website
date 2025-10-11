@@ -47,6 +47,8 @@ Pour définir l'adresse :
 
 ### Temps de préparation
 
+![Page de configuration Uber Direct Bridge, Temps de préparation](./images/014-uber-direct-configuration-prep-time.png)
+
 Le temps de préparation est utilisé pour les commandes ASAP, pour que les coursiers n'arrivent pas trop tôt.
 
 Par défaut, le temps de préparation est synchronisé avec les paramètres du point de vente HubRise. Si vous souhaitez utiliser une valeur différente, décochez **Synchroniser le temps de préparation avec HubRise** et saisissez la valeur souhaitée en minutes.
