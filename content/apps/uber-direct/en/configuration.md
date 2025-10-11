@@ -45,6 +45,12 @@ To set the address:
 
 ![Uber Direct Bridge configuration page, Edit Address section](./images/012-uber-direct-configuration-collection-edit-address.png)
 
+### Preparation Time
+
+The preparation time is used for ASAP orders, to ensure that couriers do not arrive too early.
+
+By default, the preparation time is synchronised with the HubRise location settings. If you need to use a different value, uncheck **Sync preparation time with HubRise** and enter the desired time in minutes.
+
 ## Delivery
 
 This section defines when and how Uber Direct deliveries should be requested.
