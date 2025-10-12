@@ -39,7 +39,7 @@ For a targeted search within your order history, you can use the available filte
 
 ## Opening Hours
 
-The **Opening Hours** tab lets you configure the operating times of your establishment. Opening hours can be synchronised with your ordering and delivery platforms.
+The **Opening Hours** tab allows you to configure the operating times of your store. Opening hours can be synchronised with online ordering solutions or food ordering and delivery platforms connected to your HubRise account.
 
 ![OrderLine Opening Hours Tab](./images/005-ui-opening-hours.png)
 
