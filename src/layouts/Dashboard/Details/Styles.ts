@@ -1,56 +1,22 @@
-import styled, { css } from "styled-components"
+import Image from "next/image"
+import styled from "styled-components"
 
-import { Container } from "@components/ScreenContainer/Styles"
 import { breakpoints, colors, mixin } from "@utils/styles"
 
-export const DetailsContainer = styled.div`
-  ${Container} {
-    overflow: visible;
-  }
-`
-
-export const DetailsWrapper = styled.div`
+export const Container = styled.div`
   ${mixin.containerWrapper}
+  position: relative;
   margin-top: 3.5rem;
   display: flex;
-  column-gap: 7rem;
   flex-direction: column;
-  position: relative;
 
   @media (min-width: ${breakpoints.large}) {
     flex-direction: row;
+    gap: 7rem;
   }
 `
 
-export const ContentContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-
-  @media (min-width: ${breakpoints.large}) {
-    gap: 0;
-  }
-`
-
-export const ContentWrapper = styled.div`
-  opacity: 0.2;
-  transition: all 0.2s ease-in-out;
-
-  img {
-    display: block;
-    margin: 1.5rem auto 0;
-  }
-
-  @media (min-width: ${breakpoints.large}) {
-    padding-bottom: 15rem;
-
-    img {
-      display: none;
-    }
-  }
-`
-
-export const ContentBlock = styled.div<{ $activeDetailsView: number }>`
+export const Main = styled.div`
   width: 100%;
   padding-left: 2.5rem;
   position: relative;
@@ -70,40 +36,55 @@ export const ContentBlock = styled.div<{ $activeDetailsView: number }>`
     width: 50%;
     padding-left: 6.25rem;
   }
+`
 
-  ${ContentWrapper} {
-    ${({ $activeDetailsView }) => css`
-      &:nth-child(${$activeDetailsView}) {
-        opacity: 1;
-      }
-    `};
+export const Blocks = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media (min-width: ${breakpoints.large}) {
+    gap: 0;
   }
 `
 
-export const ContentTitle = styled.h3`
+export const Block = styled.div<{ $isActive: boolean }>`
+  transition: all 0.2s ease-in-out;
+  opacity: ${({ $isActive }) => ($isActive ? 1 : 0.2)};
+
+  @media (min-width: ${breakpoints.large}) {
+    padding-bottom: 15rem;
+  }
+`
+
+export const Title = styled.h3`
   ${mixin.cardTitle}
 `
 
-export const ImageBlock = styled.div<{ $activeDetailsView: number }>`
+export const MobileImage = styled(Image)`
+  display: block;
+  margin: 1.5rem auto 0;
+
+  @media (min-width: ${breakpoints.large}) {
+    display: none;
+  }
+`
+
+export const DesktopImages = styled.div`
   display: none;
 
   @media (min-width: ${breakpoints.large}) {
     display: block;
     width: 50%;
-
-    img {
-      position: sticky;
-      top: 7rem;
-      opacity: 0;
-      transition: all 0.2s ease-in-out;
-
-      ${({ $activeDetailsView }) => css`
-        &:nth-child(${$activeDetailsView}) {
-          opacity: 1;
-        }
-      `};
-    }
   }
+`
+
+export const DesktopImage = styled(Image)<{ $isActive: boolean; $top: number; $shiftToTop: boolean }>`
+  position: absolute;
+  top: ${({ $top }) => `${$top}px`};
+  ${({ $shiftToTop }) => ($shiftToTop ? "transform: translateY(-20%);" : "")};
+  transition: all 0.2s ease-in-out;
+  opacity: ${({ $isActive }) => ($isActive ? 1 : 0)};
 `
 
 export const ProgressBarWrapper = styled.div`
@@ -116,15 +97,18 @@ export const ProgressBarWrapper = styled.div`
   border-radius: 0.375rem;
 `
 
-export const ProgressBar = styled.div<{ $progress: number }>`
+export const ProgressBar = styled.div.attrs<{ $progress: number }>(({ $progress }) => ({
+  // Set height by inline style to avoid creating many CSS classes
+  style: { height: `${$progress}%` },
+}))<{ $progress: number }>`
+  position: relative;
   width: 0.25rem;
-  height: ${({ $progress }) => `${$progress}%`};
   max-height: 100%;
   background-color: ${colors.primary};
   border-radius: 0.375rem;
   transition: all 0.2s;
-  position: relative;
 
+  &::before,
   &::after {
     content: "";
     display: block;
@@ -135,18 +119,9 @@ export const ProgressBar = styled.div<{ $progress: number }>`
     left: -0.375rem;
     background-color: ${colors.primary};
     border-radius: 100%;
-    filter: blur(0.75rem);
   }
 
-  &::before {
-    content: "";
-    display: block;
-    width: 1rem;
-    height: 1rem;
-    position: absolute;
-    bottom: 0;
-    left: -0.375rem;
-    background-color: ${colors.primary};
-    border-radius: 100%;
+  &::after {
+    filter: blur(0.75rem);
   }
 `
