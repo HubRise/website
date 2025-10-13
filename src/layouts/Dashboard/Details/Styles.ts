@@ -79,9 +79,10 @@ export const DesktopImages = styled.div`
   }
 `
 
-export const DesktopImage = styled(Image)<{ $isActive: boolean }>`
-  position: sticky;
-  top: 7rem;
+export const DesktopImage = styled(Image)<{ $isActive: boolean; $top: number; $shiftToTop: boolean }>`
+  position: absolute;
+  top: ${({ $top }) => `${$top}px`};
+  ${({ $shiftToTop }) => ($shiftToTop ? "transform: translateY(-20%);" : "")};
   transition: all 0.2s ease-in-out;
   opacity: ${({ $isActive }) => ($isActive ? 1 : 0)};
 `
@@ -96,10 +97,12 @@ export const ProgressBarWrapper = styled.div`
   border-radius: 0.375rem;
 `
 
-export const ProgressBar = styled.div<{ $progress: number }>`
+export const ProgressBar = styled.div.attrs<{ $progress: number }>(({ $progress }) => ({
+  // Set height by inline style to avoid creating many CSS classes
+  style: { height: `${$progress}%` },
+}))<{ $progress: number }>`
   position: relative;
   width: 0.25rem;
-  height: ${({ $progress }) => `${$progress}%`};
   max-height: 100%;
   background-color: ${colors.primary};
   border-radius: 0.375rem;

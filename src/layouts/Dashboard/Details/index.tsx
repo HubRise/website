@@ -29,7 +29,7 @@ const Details = ({ title, content_blocks }: DetailsProps): JSX.Element => {
   const contentRefs = useRef<(HTMLDivElement | null)[]>([])
   const blockTops = useRef<number[]>([])
 
-  const [activeIndex, setActiveIndex] = useState<number>(1)
+  const [activeIndex, setActiveIndex] = useState<number>(0)
   const [progress, setProgress] = useState<number>(0)
   const [readingY, setReadingY] = useState<number>(0)
 
@@ -39,7 +39,11 @@ const Details = ({ title, content_blocks }: DetailsProps): JSX.Element => {
     const handleScroll = calculateReadingY
     const handleResize = () => {
       calculateReadingY()
-      blockTops.current = contentRefs.current.map((ref) => ref!.getBoundingClientRect().top + window.scrollY)
+
+      const calculateBlockTops = () =>
+        (blockTops.current = contentRefs.current.map((ref) => ref!.getBoundingClientRect().top + window.scrollY))
+      calculateBlockTops()
+      setTimeout(calculateBlockTops, 250) // Let transitions and layout settle then recalculate
     }
     handleScroll()
     handleResize()
@@ -54,8 +58,13 @@ const Details = ({ title, content_blocks }: DetailsProps): JSX.Element => {
   }, [])
 
   useEffect(() => {
-    const activeIndex = findLastIndex(blockTops.current, (top) => top <= readingY)
-    setActiveIndex(activeIndex)
+    // Select a block as soon as the reading position is below 70% of the way to the next block
+    const factor = 0.7
+    const thresholds = blockTops.current.map((top, index) =>
+      index === 0 ? top : blockTops.current[index - 1] + (top - blockTops.current[index - 1]) * factor,
+    )
+    const activeIndex = findLastIndex(thresholds, (top) => top <= readingY)
+    setActiveIndex(activeIndex == -1 ? 0 : activeIndex)
   }, [readingY])
 
   useEffect(() => {
@@ -101,6 +110,8 @@ const Details = ({ title, content_blocks }: DetailsProps): JSX.Element => {
               height={535}
               alt={title}
               $isActive={activeIndex === index}
+              $top={blockTops.current[index] - blockTops.current[0]}
+              $shiftToTop={index !== 0}
             />
           ))}
         </DesktopImages>
