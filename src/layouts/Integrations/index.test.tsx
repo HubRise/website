@@ -26,16 +26,15 @@ describe("Renders Integrations page", async () => {
     })
   })
 
-  // it("Renders only apps from one category", async () => {
-  //   render(<Apps language="en" yaml={yaml} logoImages={logoImages} />)
+  it("Renders only apps from one category", async () => {
+    render(<Apps language="en" yaml={yaml} logoImages={logoImages} />)
 
-  //   const category = yaml.content.categories[0]
-  //   fireEvent.click(screen.getByText(category.title, { selector: "li" }), { target: { value: category.title } })
-  //   await waitFor(() => expect(mockRouter.asPath).includes(category.slug))
+    const category = yaml.content.categories[0]
+    fireEvent.click(screen.getByText(category.title, { selector: "li" }), { target: { value: category.title } })
 
-  //   expect(screen.getAllByTestId("apps:result").length).toBe(category.apps.length)
-  //   expect(screen.getByText(category.title, { selector: "a" })).toBeInTheDocument()
-  // })
+    expect(screen.getAllByTestId("apps:result").length).toBe(category.apps.length)
+    expect(screen.getByText(category.title, { selector: "a" })).toBeInTheDocument()
+  })
 
   it("Renders a single app", () => {
     render(<Apps language="en" yaml={yaml} logoImages={logoImages} />)

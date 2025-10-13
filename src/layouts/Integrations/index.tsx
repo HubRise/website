@@ -1,5 +1,4 @@
 "use client"
-import { useSearchParams, useRouter, usePathname } from "next/navigation"
 import * as React from "react"
 
 import { IntegrationsYaml, TCountry } from "@layouts/Integrations/types"
@@ -23,30 +22,9 @@ interface IntegrationsProps {
 const Integrations = ({ language, yaml, logoImages }: IntegrationsProps): JSX.Element => {
   const { content } = yaml
 
-  const router = useRouter()
-  const pathname = usePathname()
-  const searchParams = useSearchParams()
-  const params = new URLSearchParams(searchParams)
-
   const [filterSearch, setFilterSearch] = React.useState("")
   const [selectedCategory, setSelectedCategory] = React.useState(content.all_apps)
   const [selectedCountry, setSelectedCountry] = React.useState(content.countries[0])
-
-  React.useEffect(() => {
-    if (searchParams.get("type") || searchParams.get("country")) {
-      const category = content.categories.find((category) => category.slug === searchParams.get("type"))
-      const country = content.countries.find((country) => country.code.toLowerCase() === searchParams.get("country"))
-
-      if (category?.title !== undefined) {
-        setSelectedCategory(category?.title)
-      }
-      if (country !== undefined) {
-        setSelectedCountry(country)
-      }
-
-      scrollIntoView()
-    }
-  }, [searchParams, content])
 
   const hasFiltersApplied = React.useMemo(() => {
     return !(selectedCategory === content.all_apps && filterSearch === "")
@@ -72,19 +50,6 @@ const Integrations = ({ language, yaml, logoImages }: IntegrationsProps): JSX.El
     return filteredCategories.filter(({ apps }) => apps.length > 0)
   }, [content.categories, content.all_apps, filterSearch, selectedCountry.code, selectedCategory])
 
-  const replacePath = (key: string, value: string) => {
-    params.set(key, value.replace(/\s+/g, "-").toLowerCase())
-    const newUrl = `${pathname}?${params.toString()}`
-    router.push(newUrl)
-  }
-
-  const deleteParams = (key: string) => {
-    params.delete(key)
-    const queryString = params.toString()
-    const newUrl = `${pathname}${queryString ? `?${queryString}` : ""}`
-    router.push(newUrl)
-  }
-
   const scrollIntoView = () => {
     setTimeout(() => {
       const appsResults = document.getElementById("apps-results")
@@ -98,23 +63,13 @@ const Integrations = ({ language, yaml, logoImages }: IntegrationsProps): JSX.El
   }
 
   const onCategoryChange = (category: string) => {
-    if (category === content.all_apps) {
-      deleteParams("type")
-      setSelectedCategory(category)
-      scrollIntoView()
-    } else {
-      replacePath("type", category)
-    }
+    setSelectedCategory(category)
+    scrollIntoView()
   }
 
   const onCountryChange = (country: TCountry) => {
-    if (country.code === "all") {
-      deleteParams("country")
-      setSelectedCountry(country)
-      scrollIntoView()
-    } else {
-      replacePath("country", country.code)
-    }
+    setSelectedCountry(country)
+    scrollIntoView()
   }
 
   return (
