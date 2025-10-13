@@ -2,7 +2,7 @@ import { MDXRemote, type MDXRemoteSerializeResult } from "next-mdx-remote"
 
 import Underline from "@components/Underline"
 
-import { Anchor, Container, Description, HeaderWrapper, Title } from "./Styles"
+import { Container, Description, HeaderWrapper, Title } from "./Styles"
 import { ScreenContainerBgColor, ScreenContainerVerticalPadding } from "./utils"
 
 interface ScreenContainerProps {
@@ -33,8 +33,8 @@ const ScreenContainer = ({
       <>
         <HeaderWrapper>
           {title && (
-            <Title $bgColor={bgColor} id={anchor ? anchor : ""}>
-              {anchor ? <Anchor href={`#${anchor}`}>{title}</Anchor> : title}
+            <Title $bgColor={bgColor} id={anchor}>
+              {title}
             </Title>
           )}
 

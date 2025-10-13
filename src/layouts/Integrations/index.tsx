@@ -1,5 +1,6 @@
 "use client"
 import * as React from "react"
+import { useSearchParams, useRouter, usePathname } from "next/navigation"
 
 import { IntegrationsYaml, TCountry } from "@layouts/Integrations/types"
 import { ContentImage } from "@utils/contentImage"
@@ -21,10 +22,25 @@ interface IntegrationsProps {
 
 const Integrations = ({ language, yaml, logoImages }: IntegrationsProps): JSX.Element => {
   const { content } = yaml
+  const router = useRouter()
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
 
   const [filterSearch, setFilterSearch] = React.useState("")
-  const [selectedCategory, setSelectedCategory] = React.useState(content.all_apps)
-  const [selectedCountry, setSelectedCountry] = React.useState(content.countries[0])
+
+  const categorySlug = searchParams.get("category")
+  const selectedCategory = React.useMemo(() => {
+    if (!categorySlug) return content.all_apps
+    const category = content.categories.find((c) => c.slug === categorySlug)
+    return category ? category.title : content.all_apps
+  }, [categorySlug, content.categories, content.all_apps])
+
+  const countryCode = searchParams.get("country")
+  const selectedCountry = React.useMemo(() => {
+    if (!countryCode) return content.countries[0]
+    const country = content.countries.find((c) => c.code === countryCode)
+    return country || content.countries[0]
+  }, [countryCode, content.countries])
 
   const hasFiltersApplied = React.useMemo(() => {
     return !(selectedCategory === content.all_apps && filterSearch === "")
@@ -50,6 +66,32 @@ const Integrations = ({ language, yaml, logoImages }: IntegrationsProps): JSX.El
     return filteredCategories.filter(({ apps }) => apps.length > 0)
   }, [content.categories, content.all_apps, filterSearch, selectedCountry.code, selectedCategory])
 
+  const updateUrlParams = React.useCallback(
+    (updates: { category?: string | null; country?: string | null }) => {
+      const params = new URLSearchParams(searchParams.toString())
+
+      if (updates.category !== undefined) {
+        if (updates.category) {
+          params.set("category", updates.category)
+        } else {
+          params.delete("category")
+        }
+      }
+
+      if (updates.country !== undefined) {
+        if (updates.country) {
+          params.set("country", updates.country)
+        } else {
+          params.delete("country")
+        }
+      }
+
+      const query = params.toString()
+      router.replace(pathname + (query ? `?${query}` : ""), { scroll: false })
+    },
+    [searchParams, pathname, router],
+  )
+
   const scrollIntoView = () => {
     setTimeout(() => {
       const appsResults = document.getElementById("apps-results")
@@ -63,12 +105,18 @@ const Integrations = ({ language, yaml, logoImages }: IntegrationsProps): JSX.El
   }
 
   const onCategoryChange = (category: string) => {
-    setSelectedCategory(category)
+    const isAllApps = category === content.all_apps
+    const categorySlug = isAllApps
+      ? null
+      : content.categories.find((c) => c.title === category)?.slug || null
+
+    updateUrlParams({ category: categorySlug })
     scrollIntoView()
   }
 
   const onCountryChange = (country: TCountry) => {
-    setSelectedCountry(country)
+    const isAllCountries = country.code === "all"
+    updateUrlParams({ country: isAllCountries ? null : country.code })
     scrollIntoView()
   }
 
