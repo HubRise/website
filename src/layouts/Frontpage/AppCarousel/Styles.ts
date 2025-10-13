@@ -21,7 +21,6 @@ export const Container = styled.div`
 `
 
 export const CarouselViewport = styled.div`
-  max-width: ${breakpoints.biggest};
   margin: 0 auto -2rem auto;
   padding-bottom: 4rem;
   overflow: hidden;

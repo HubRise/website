@@ -131,7 +131,7 @@ const Index = ({
 
             <FilterList $isExpanded={isCountriesExpanded}>
               {countries
-                .sort((a, b) => a.title.localeCompare(b.title))
+                .sort((a, b) => (a.code === "all" ? -1 : a.title.localeCompare(b.title)))
                 .map((country, idx) => (
                   <FilterListItem
                     key={idx}

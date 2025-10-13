@@ -32,7 +32,7 @@ const Map = ({ map }: MapProps): JSX.Element => {
           style={{ width: "100%", height: "100%" }}
           styles={mapStyles}
           defaultCenter={{ lat: 43.6214593381594, lng: 7.0392507747754625 }}
-          defaultZoom={17}
+          defaultZoom={5}
           disableDefaultUI={true}
         >
           <Marker position={{ lat: 43.6214593381594, lng: 7.0392507747754625 }} />
