@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 import { StyledButton } from "@components/Button/Styles"
 import { PageHeroTitle, StyledPageHero } from "@components/PageHero/Styles"
-import { breakpoints, colors, fontSizes, lineHeights, mixin } from "@utils/styles"
+import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
 import { HeroAppColor, linkHeroAppBorderColor } from "./utils"
 
@@ -33,30 +33,17 @@ export const AppCategories = styled.div`
   margin: 3.5rem auto 1.875rem;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(3, 5.75rem);
-  grid-template-rows: repeat(2, 5.75rem);
+  grid-template-columns: repeat(3, min(10rem, 30vw));
+  grid-auto-rows: min(10rem, 30vw);
   row-gap: 1rem;
 
-  @media (min-width: ${breakpoints.small}) {
-    grid-template-columns: repeat(3, 7.75rem);
-    grid-template-rows: repeat(2, 7.75rem);
-  }
-
   @media (min-width: ${breakpoints.large}) {
-    grid-template-columns: repeat(6, 7.75rem);
-    grid-template-rows: 7.75rem;
+    grid-template-columns: repeat(6, min(15rem, 15vw));
+    grid-auto-rows: min(15rem, 15vw);
   }
 
   @media (min-width: ${breakpoints.extraLarge}) {
-    grid-template-columns: repeat(6, 15.25rem);
-    grid-template-rows: 15.25rem;
-    margin-bottom: 2.875rem;
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    grid-template-columns: repeat(6, 15.25rem);
-    grid-template-rows: 15.25rem;
-    margin-bottom: 3.625rem;
+    margin-bottom: 3rem;
   }
 `
 
@@ -67,28 +54,9 @@ export const AppCategory = styled.div<{ $index: number }>`
 
 export const Arrow = styled.div<{ $isTop: boolean }>`
   position: absolute;
-
-  width: calc(100% + 4px);
-  height: calc(50% + 4px);
-  ${({ $isTop }) => ($isTop ? "top: -3px;" : "bottom: -3px;")};
-
-  @media (min-width: ${breakpoints.small}) {
-    width: calc(100% + 6px);
-    height: calc(50% + 6px);
-    ${({ $isTop }) => ($isTop ? "top: -4px;" : "bottom: -4px;")};
-  }
-
-  @media (min-width: ${breakpoints.extraLarge}) {
-    width: calc(100% + 10px);
-    height: calc(50% + 10px);
-    ${({ $isTop }) => ($isTop ? "top: -7px;" : "bottom: -7px;")};
-  }
-
-  @media (min-width: ${breakpoints.extraLarge}) {
-    width: calc(100% + 12px);
-    height: calc(50% + 12px);
-    ${({ $isTop }) => ($isTop ? "top: -9px;" : "bottom: -9px;")};
-  }
+  width: calc(105%);
+  height: calc(55%);
+  ${({ $isTop }) => ($isTop ? "top: -3.5%;" : "bottom: -3.5%;")};
 `
 
 export const Circle = styled.div<{ $color: HeroAppColor }>`
@@ -98,21 +66,17 @@ export const Circle = styled.div<{ $color: HeroAppColor }>`
   width: 85%;
   height: 85%;
   border-radius: 100%;
-  border-width: 10px;
+  border-width: min(calc(10px + 0.8vw), 25px);
   padding: 5%;
-
-  @media (min-width: ${breakpoints.extraLarge}) {
-    border-width: 26px;
-  }
 `
 
 export const Title = styled.span`
   line-height: 1.5;
   font-weight: 700;
-  font-size: 0.625rem;
+  font-size: ${fontSizes._12};
 
-  @media (min-width: ${breakpoints.small}) {
-    font-size: ${fontSizes._12};
+  @media (min-width: ${breakpoints.large}) {
+    font-size: ${fontSizes._14};
   }
 
   @media (min-width: ${breakpoints.extraLarge}) {
