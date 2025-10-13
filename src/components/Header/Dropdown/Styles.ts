@@ -7,10 +7,15 @@ import { colors, mixin } from "@utils/styles"
 import { TPosition } from "./index"
 
 export const DropdownMenuWrapper = styled.div<{ $position: TPosition }>`
-  display: none;
-  position: absolute;
   top: 1.5rem;
   padding-top: 0.5rem;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+  pointer-events: none;
 
   ${({ $position }) =>
     $position === "left" &&
@@ -47,18 +52,29 @@ export const DropdownTrigger = styled.div`
   align-items: center;
   gap: 0.5rem;
   font-weight: 500;
+  transition: color 0.2s ease;
   ${mixin.clickable};
-  ${mixin.linkOver(colors.primary)};
+
+  ${StyledIcon} {
+    transition: transform 0.2s ease;
+  }
 `
 
 export const DropdownContainer = styled.div`
   position: relative;
   display: flex;
   height: 1.5rem;
+  padding: 1rem;
 
   &:hover {
+    ${DropdownTrigger} {
+      color: ${colors.primary};
+    }
+
     ${DropdownMenuWrapper} {
-      display: block;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
     }
 
     ${DropdownTrigger} ${StyledIcon} {

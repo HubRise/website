@@ -27,11 +27,12 @@ export const HeaderWrapper = styled.div`
 
 export const Menu = styled.ul`
   display: flex;
-  gap: 2rem;
+  align-items: center;
 `
 
 export const MenuItem = styled.li<{ $isActive: boolean }>`
   ${mixin.clickable};
+  padding: 1rem;
 
   ${({ $isActive }) =>
     $isActive &&
