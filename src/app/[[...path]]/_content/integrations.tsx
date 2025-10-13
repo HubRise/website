@@ -1,5 +1,3 @@
-import { Suspense } from "react"
-
 import Integrations from "@layouts/Integrations"
 import contentImage, { ContentImage } from "@utils/contentImage"
 import { Route, RouteName } from "@utils/router/types"
@@ -14,11 +12,7 @@ const integrations = async (route: Route<RouteName, "apps">): Promise<JSX.Elemen
     }),
   )
 
-  return (
-    <Suspense>
-      <Integrations language={route.language} yaml={route.context.yaml} logoImages={logoImages} />
-    </Suspense>
-  )
+  return <Integrations language={route.language} yaml={route.context.yaml} logoImages={logoImages} />
 }
 
 export default integrations
