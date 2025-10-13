@@ -1,6 +1,5 @@
-
 content:
-  title: Need help with something else?
-  description: Looking for help beyond pricing or features? You have general questions about HubRise? Our support, sales, and technical teams are here to help.
-  button_label: Get in Touch
+  title: Besoin d'aide pour autre chose ?
+  description: Vous cherchez de l'aide au-delà des tarifs ou des fonctionnalités ? Pour toute question, nos équipes support, commerciales et techniques sont là pour vous aider.
+  button_label: Nous contacter
   button_link: /fr/contactez-nous

@@ -68,11 +68,11 @@ content:
     title: Pourquoi choisir HubRise ?
     cards:
       - title: Fonctionnalités & prix
-        text: "Des fonctionnalités comparables à Deliverect, à un tarif juste et stable : une seule hausse depuis 2015. Intégrations illimitées et pas de frais d’installation."
+        text: "Des fonctionnalités comparables à Deliverect, à un tarif juste et stable : une seule hausse depuis 2015. Intégrations illimitées et pas de frais d'installation."
       - title: Support expert et réactif
         text: "Notre modèle nous permet de nous concentrer sur l'essentiel : un produit robuste et un support client de qualité. Vous échangez directement avec des experts techniques qui connaissent parfaitement la plateforme et peuvent résoudre vos problèmes rapidement."
       - title: Fiabilité & transparence
-        text: "API ouverte et journaux complets accessibles dans le back-office. Infrastructure robuste opérée par une équipe d’ingénieurs, pensée pour les environnements exigeants."
+        text: "API ouverte et journaux complets accessibles dans le back-office. Infrastructure robuste opérée par une équipe d'ingénieurs, pensée pour les environnements exigeants."
   special_pricing:
     title: Tarifs spéciaux
     chain_and_franchise:
