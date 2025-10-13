@@ -41,6 +41,7 @@ export const lineHeights = {
 }
 
 export const breakpoints = {
+  small: "26.5rem", // 424px
   medium: "40rem", // 640px
   large: "64rem", // 1024px
   extraLarge: "90rem", // 1440px

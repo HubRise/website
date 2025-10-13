@@ -1,11 +1,9 @@
-import { useState } from "react"
-
 import Icon from "@components/Icon"
-import useOnClickOutside from "@hooks/client/useOnClickOutside"
 import { colors, iconSizes } from "@utils/styles"
 
 import {
   DropdownTrigger,
+  DropdownMenuWrapper,
   DropdownMenu,
   DropdownList,
   DropdownListItem,
@@ -38,25 +36,15 @@ const Dropdown = ({
   menuContent,
   position = "left",
 }: DropdownProps) => {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
-
-  const handleTriggerClick = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
-
-  const $dropdownContainerRef = useOnClickOutside(() => {
-    setIsMenuOpen(false)
-  })
-
   return (
-    <DropdownContainer ref={$dropdownContainerRef} data-testid={dataTestid}>
-      <DropdownTrigger onClick={handleTriggerClick} $isOpen={isMenuOpen}>
+    <DropdownContainer data-testid={dataTestid}>
+      <DropdownTrigger>
         {value}
         <Icon code="expand_more" size={iconSizes._20} />
       </DropdownTrigger>
 
-      {isMenuOpen && (
-        <DropdownMenu $position={position}>
+      <DropdownMenuWrapper $position={position}>
+        <DropdownMenu>
           {withOptions ? (
             <DropdownList>
               {options?.map((option, index) => {
@@ -82,7 +70,7 @@ const Dropdown = ({
             <DropdownMenuContent>{menuContent}</DropdownMenuContent>
           )}
         </DropdownMenu>
-      )}
+      </DropdownMenuWrapper>
     </DropdownContainer>
   )
 }

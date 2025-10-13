@@ -9,7 +9,7 @@ export type THeroTitle = {
   part_4: string
 }
 
-export type THeroApp = {
+export type THeroAppCategory = {
   title: string
   type: string
   color: HeroAppColor
@@ -42,7 +42,7 @@ export interface FrontpageYaml {
     description: string
     button_label: string
     button_link: string
-    apps: Array<THeroApp>
+    app_categories: Array<THeroAppCategory>
   }
   content: {
     metrics: Array<TMetric>

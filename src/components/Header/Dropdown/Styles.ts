@@ -6,41 +6,16 @@ import { colors, mixin } from "@utils/styles"
 
 import { TPosition } from "./index"
 
-export const DropdownContainer = styled.div`
-  position: relative;
-  display: flex;
-  height: 1.5rem;
-`
-
-export const DropdownTrigger = styled.div<{ $isOpen: boolean }>`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-weight: 500;
-  ${mixin.clickable};
-  ${mixin.linkOver(colors.primary)};
-
-  ${({ $isOpen }) =>
-    $isOpen &&
-    css`
-      color: ${colors.primary};
-
-      ${StyledIcon} {
-        transform: rotate(180deg);
-      }
-    `}
-`
-
-export const DropdownMenu = styled.div<{ $position: TPosition }>`
+export const DropdownMenuWrapper = styled.div<{ $position: TPosition }>`
+  top: 1.5rem;
+  padding-top: 0.5rem;
   position: absolute;
-  top: 2rem;
-  width: max-content;
-  background-color: ${colors.backgroundWhite};
-  border: 1px solid ${colors.borderLight};
-  border-radius: 0.75rem;
-  box-shadow:
-    0px 12px 16px -4px #10182814,
-    0px 4px 6px -2px #10182808;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+  pointer-events: none;
 
   ${({ $position }) =>
     $position === "left" &&
@@ -60,6 +35,52 @@ export const DropdownMenu = styled.div<{ $position: TPosition }>`
     css`
       transform: translate(-62%, 0);
     `}
+`
+
+export const DropdownMenu = styled.div`
+  width: max-content;
+  background-color: ${colors.backgroundWhite};
+  border: 1px solid ${colors.borderLight};
+  border-radius: 0.75rem;
+  box-shadow:
+    0px 12px 16px -4px #10182814,
+    0px 4px 6px -2px #10182808;
+`
+
+export const DropdownTrigger = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  ${mixin.clickable};
+
+  ${StyledIcon} {
+    transition: transform 0.2s ease;
+  }
+`
+
+export const DropdownContainer = styled.div`
+  position: relative;
+  display: flex;
+  height: 1.5rem;
+  padding: 1rem;
+
+  &:hover {
+    ${DropdownTrigger} {
+      color: ${colors.primary};
+    }
+
+    ${DropdownMenuWrapper} {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    ${DropdownTrigger} ${StyledIcon} {
+      transform: rotate(180deg);
+    }
+  }
 `
 
 export const DropdownList = styled.ul`
