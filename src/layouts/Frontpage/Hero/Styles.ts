@@ -57,15 +57,15 @@ export const AppCategories = styled.div`
   }
 `
 
-export const AppImage = styled(Image)``
+export const Arrow = styled(Image)``
 
-export const AppInnerTitle = styled.span`
+export const Title = styled.span`
   font-size: 0.625rem;
   line-height: ${lineHeights.compact};
   font-weight: 700;
 `
 
-export const AppInner = styled.div<{ $color: HeroAppColor }>`
+export const Circle = styled.div<{ $color: HeroAppColor }>`
   ${mixin.centerElement};
   border-style: solid;
   border-color: ${({ $color }) => linkHeroAppBorderColor($color)};
@@ -80,7 +80,7 @@ export const AppInner = styled.div<{ $color: HeroAppColor }>`
     width: 6rem;
     height: 6rem;
 
-    ${AppInnerTitle} {
+    ${Title} {
       font-size: ${fontSizes._12};
     }
   }
@@ -91,7 +91,7 @@ export const AppInner = styled.div<{ $color: HeroAppColor }>`
     height: 9.75rem;
     padding: 1.25rem;
 
-    ${AppInnerTitle} {
+    ${Title} {
       font-size: ${fontSizes._16};
     }
   }
@@ -117,7 +117,7 @@ export const AppCategory = styled.div<{ $index: number }>`
   }
 
   &:nth-child(odd) {
-    ${AppInner} {
+    ${Circle} {
       top: 0.975rem;
     }
   }
@@ -125,11 +125,11 @@ export const AppCategory = styled.div<{ $index: number }>`
   &:nth-child(even) {
     top: 2.375rem;
 
-    ${AppInner} {
+    ${Circle} {
       top: -0.975rem;
     }
 
-    ${AppImage} {
+    ${Arrow} {
       inset: auto 0 0 0 !important;
     }
   }
@@ -145,7 +145,7 @@ export const AppCategory = styled.div<{ $index: number }>`
     }
 
     &:nth-child(odd) {
-      ${AppInner} {
+      ${Circle} {
         top: 0.875rem;
       }
     }
@@ -153,7 +153,7 @@ export const AppCategory = styled.div<{ $index: number }>`
     &:nth-child(even) {
       top: 1.875rem;
 
-      ${AppInner} {
+      ${Circle} {
         top: -0.875rem;
       }
     }
@@ -173,7 +173,7 @@ export const AppCategory = styled.div<{ $index: number }>`
     left: ${(props) => -props.$index * 12}px !important;
 
     &:nth-child(odd) {
-      ${AppInner} {
+      ${Circle} {
         top: 1.375rem;
       }
     }
@@ -181,7 +181,7 @@ export const AppCategory = styled.div<{ $index: number }>`
     &:nth-child(even) {
       top: 2.875rem;
 
-      ${AppInner} {
+      ${Circle} {
         top: -1.375rem;
       }
     }
@@ -191,7 +191,7 @@ export const AppCategory = styled.div<{ $index: number }>`
     left: ${(props) => -props.$index * 11}px !important;
 
     &:nth-child(odd) {
-      ${AppInner} {
+      ${Circle} {
         top: 1.625rem;
       }
     }
@@ -199,20 +199,20 @@ export const AppCategory = styled.div<{ $index: number }>`
     &:nth-child(even) {
       top: 3.625rem;
 
-      ${AppInner} {
+      ${Circle} {
         top: -1.625rem;
       }
     }
   }
 `
 
-export const AppWrapper = styled.div`
+export const Wrapper = styled.div`
   width: 5.75rem;
   display: flex;
   justify-content: center;
   position: relative;
 
-  ${AppImage} {
+  ${Arrow} {
     height: 4rem !important;
   }
 
@@ -223,7 +223,7 @@ export const AppWrapper = styled.div`
   @media (min-width: ${breakpoints.extraLarge}) {
     width: 12.625rem;
 
-    ${AppImage} {
+    ${Arrow} {
       height: 6.5rem !important;
     }
   }
@@ -231,7 +231,7 @@ export const AppWrapper = styled.div`
   @media (min-width: ${breakpoints.biggest}) {
     width: 15.25rem;
 
-    ${AppImage} {
+    ${Arrow} {
       height: 8rem !important;
     }
   }
