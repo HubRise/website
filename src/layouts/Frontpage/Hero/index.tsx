@@ -3,20 +3,20 @@ import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 import Button from "@components/Button"
 import PageHero from "@components/PageHero"
 
-import { THeroApp, THeroTitle } from "../types"
+import { THeroAppCategory, THeroTitle } from "../types"
 
-import { FrontpageHero, Apps, AppImage, AppInnerTitle, AppWrapper, AppInner, App } from "./Styles"
+import { FrontpageHero, AppCategories, AppImage, AppInnerTitle, AppWrapper, AppInner, AppCategory } from "./Styles"
 import { getHeroAppsImageSource } from "./utils"
 
 interface HeroProps {
   title: THeroTitle
   button_label: string
   button_link: string
-  apps: Array<THeroApp>
+  app_categories: Array<THeroAppCategory>
   descriptionMdx: MDXRemoteSerializeResult
 }
 
-const Hero = ({ title, button_label, button_link, apps, descriptionMdx }: HeroProps): JSX.Element => {
+const Hero = ({ title, button_label, button_link, app_categories, descriptionMdx }: HeroProps): JSX.Element => {
   return (
     <FrontpageHero>
       <PageHero
@@ -28,20 +28,21 @@ const Hero = ({ title, button_label, button_link, apps, descriptionMdx }: HeroPr
         descriptionMdx={descriptionMdx}
       >
         <Button label={button_label} link={button_link} />
-        <Apps>
-          {apps.map(({ title, color }, index) => {
+
+        <AppCategories>
+          {app_categories.map(({ title, color }, index) => {
             return (
-              <App $index={index} key={index}>
+              <AppCategory $index={index} key={index}>
                 <AppWrapper>
                   <AppImage src={getHeroAppsImageSource(color)} alt="Hero Apps" fill={true} />
                   <AppInner $color={color}>
                     <AppInnerTitle>{title}</AppInnerTitle>
                   </AppInner>
                 </AppWrapper>
-              </App>
+              </AppCategory>
             )
           })}
-        </Apps>
+        </AppCategories>
       </PageHero>
     </FrontpageHero>
   )

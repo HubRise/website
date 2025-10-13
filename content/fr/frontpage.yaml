@@ -14,7 +14,7 @@ hero:
     Connect your EPOS, online ordering, and inventory tools into one powerful platform.
   button_label: Parcourez nos intégrations
   button_link: /fr/apps
-  apps:
+  app_categories:
     - title: Logiciels de caisse
       color: topDark
     - title: Plateformes de livraison

@@ -13,7 +13,7 @@ hero:
     Connect your EPOS, in-store and online sales channels, and management tools so they work together through one powerful middleware platform.
   button_label: Browse Integrations
   button_link: /apps
-  apps:
+  app_categories:
     - title: Points of Sales
       color: topDark
     - title: Delivery Platforms

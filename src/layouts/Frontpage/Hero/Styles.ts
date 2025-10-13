@@ -30,7 +30,7 @@ export const FrontpageHero = styled.div`
   }
 `
 
-export const Apps = styled.div`
+export const AppCategories = styled.div`
   max-width: 17.5rem;
   margin: 3.5rem auto 1.875rem;
   display: flex;
@@ -104,7 +104,7 @@ export const AppInner = styled.div<{ $color: HeroAppColor }>`
   }
 `
 
-export const App = styled.div<{ $index: number }>`
+export const AppCategory = styled.div<{ $index: number }>`
   position: relative;
 
   &:nth-child(-n + 3) {
