@@ -1,3 +1,4 @@
+import Image from "next/image"
 import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 
 import Button from "@components/Button"
@@ -33,7 +34,9 @@ const Hero = ({ title, button_label, button_link, app_categories, descriptionMdx
           {app_categories.map(({ title, color }, index) => {
             return (
               <AppCategory $index={index} key={index}>
-                <Arrow src={getHeroAppsImageSource(color)} alt="Hero Apps" fill={true} />
+                <Arrow $isTop={index % 2 == 0}>
+                  <Image src={getHeroAppsImageSource(color)} alt="Hero Apps" fill={true} />
+                </Arrow>
                 <Circle $color={color}>
                   <Title>{title}</Title>
                 </Circle>
