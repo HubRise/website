@@ -1,6 +1,6 @@
 "use client"
-import * as React from "react"
 import { useSearchParams, useRouter, usePathname } from "next/navigation"
+import * as React from "react"
 
 import { IntegrationsYaml, TCountry } from "@layouts/Integrations/types"
 import { ContentImage } from "@utils/contentImage"
@@ -70,21 +70,11 @@ const Integrations = ({ language, yaml, logoImages }: IntegrationsProps): JSX.El
     (updates: { category?: string | null; country?: string | null }) => {
       const params = new URLSearchParams(searchParams.toString())
 
-      if (updates.category !== undefined) {
-        if (updates.category) {
-          params.set("category", updates.category)
-        } else {
-          params.delete("category")
+      Object.entries(updates).forEach(([key, value]) => {
+        if (value !== undefined) {
+          value ? params.set(key, value) : params.delete(key)
         }
-      }
-
-      if (updates.country !== undefined) {
-        if (updates.country) {
-          params.set("country", updates.country)
-        } else {
-          params.delete("country")
-        }
-      }
+      })
 
       const query = params.toString()
       router.replace(pathname + (query ? `?${query}` : ""), { scroll: false })
@@ -106,9 +96,7 @@ const Integrations = ({ language, yaml, logoImages }: IntegrationsProps): JSX.El
 
   const onCategoryChange = (category: string) => {
     const isAllApps = category === content.all_apps
-    const categorySlug = isAllApps
-      ? null
-      : content.categories.find((c) => c.title === category)?.slug || null
+    const categorySlug = isAllApps ? null : content.categories.find((c) => c.title === category)?.slug || null
 
     updateUrlParams({ category: categorySlug })
     scrollIntoView()
