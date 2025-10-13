@@ -31,38 +31,41 @@ export const FrontpageHero = styled.div`
 `
 
 export const AppCategories = styled.div`
-  max-width: 17.5rem;
   margin: 3.5rem auto 1.875rem;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 5.75rem);
   row-gap: 2.875rem;
 
   @media (min-width: ${breakpoints.small}) {
-    max-width: 23.5rem;
+    grid-template-columns: repeat(3, 7.75rem);
   }
 
   @media (min-width: ${breakpoints.large}) {
-    max-width: 46.5rem;
-    flex-wrap: nowrap;
+    grid-template-columns: repeat(6, 7.75rem);
   }
 
   @media (min-width: ${breakpoints.extraLarge}) {
-    max-width: 72rem;
+    grid-template-columns: repeat(6, 12.625rem);
     margin-bottom: 2.875rem;
   }
 
   @media (min-width: ${breakpoints.biggest}) {
-    max-width: 88.375rem;
+    grid-template-columns: repeat(6, 15.25rem);
     margin-bottom: 3.625rem;
   }
 `
 
-export const Arrow = styled(Image)``
+export const Arrow = styled(Image)`
+  height: 4rem !important;
 
-export const Title = styled.span`
-  font-size: 0.625rem;
-  line-height: ${lineHeights.compact};
-  font-weight: 700;
+  @media (min-width: ${breakpoints.extraLarge}) {
+    height: 6.5rem !important;
+  }
+
+  @media (min-width: ${breakpoints.biggest}) {
+    height: 8rem !important;
+  }
 `
 
 export const Circle = styled.div<{ $color: HeroAppColor }>`
@@ -79,10 +82,6 @@ export const Circle = styled.div<{ $color: HeroAppColor }>`
   @media (min-width: ${breakpoints.small}) {
     width: 6rem;
     height: 6rem;
-
-    ${Title} {
-      font-size: ${fontSizes._12};
-    }
   }
 
   @media (min-width: ${breakpoints.extraLarge}) {
@@ -90,10 +89,6 @@ export const Circle = styled.div<{ $color: HeroAppColor }>`
     width: 9.75rem;
     height: 9.75rem;
     padding: 1.25rem;
-
-    ${Title} {
-      font-size: ${fontSizes._16};
-    }
   }
 
   @media (min-width: ${breakpoints.biggest}) {
@@ -104,7 +99,23 @@ export const Circle = styled.div<{ $color: HeroAppColor }>`
   }
 `
 
+export const Title = styled.span`
+  font-size: 0.625rem;
+  line-height: ${lineHeights.compact};
+  font-weight: 700;
+
+  @media (min-width: ${breakpoints.small}) {
+    font-size: ${fontSizes._12};
+  }
+
+  @media (min-width: ${breakpoints.extraLarge}) {
+    font-size: ${fontSizes._16};
+  }
+`
+
 export const AppCategory = styled.div<{ $index: number }>`
+  display: flex;
+  justify-content: center;
   position: relative;
 
   &:nth-child(-n + 3) {
@@ -202,37 +213,6 @@ export const AppCategory = styled.div<{ $index: number }>`
       ${Circle} {
         top: -1.625rem;
       }
-    }
-  }
-`
-
-export const Wrapper = styled.div`
-  width: 5.75rem;
-  display: flex;
-  justify-content: center;
-  position: relative;
-
-  ${Arrow} {
-    height: 4rem !important;
-  }
-
-  @media (min-width: ${breakpoints.small}) {
-    width: 7.75rem;
-  }
-
-  @media (min-width: ${breakpoints.extraLarge}) {
-    width: 12.625rem;
-
-    ${Arrow} {
-      height: 6.5rem !important;
-    }
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
-    width: 15.25rem;
-
-    ${Arrow} {
-      height: 8rem !important;
     }
   }
 `

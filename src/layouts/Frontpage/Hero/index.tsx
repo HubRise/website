@@ -5,7 +5,7 @@ import PageHero from "@components/PageHero"
 
 import { THeroAppCategory, THeroTitle } from "../types"
 
-import { FrontpageHero, AppCategories, Arrow, Title, Wrapper, Circle, AppCategory } from "./Styles"
+import { FrontpageHero, AppCategories, Arrow, Title, Circle, AppCategory } from "./Styles"
 import { getHeroAppsImageSource } from "./utils"
 
 interface HeroProps {
@@ -33,12 +33,10 @@ const Hero = ({ title, button_label, button_link, app_categories, descriptionMdx
           {app_categories.map(({ title, color }, index) => {
             return (
               <AppCategory $index={index} key={index}>
-                <Wrapper>
-                  <Arrow src={getHeroAppsImageSource(color)} alt="Hero Apps" fill={true} />
-                  <Circle $color={color}>
-                    <Title>{title}</Title>
-                  </Circle>
-                </Wrapper>
+                <Arrow src={getHeroAppsImageSource(color)} alt="Hero Apps" fill={true} />
+                <Circle $color={color}>
+                  <Title>{title}</Title>
+                </Circle>
               </AppCategory>
             )
           })}
