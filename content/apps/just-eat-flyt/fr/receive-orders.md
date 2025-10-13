@@ -14,11 +14,19 @@ L'OrderPad Just Eat doit rester allumé pour recevoir les commandes dans HubRise
 
 Cette page décrit les informations que Just Eat envoie à HubRise. Elle peut vous aider à comprendre comment les commandes seront reçues dans votre logiciel de caisse.
 
-## Articles et options
+## Transmission des commandes
 
-Les commandes Just Eat contiennent des informations complètes sur les articles et les options, y compris le nom, le code ref du produit, la quantité et le prix.
+Par défaut, Just Eat envoie une commande à HubRise dès que l'une de ces conditions est remplie :
 
-De même, les avis formulés par les clients sur des produits individuels ne sont pas pris en charge dans Just Eat. Si vous comptez sur ces avis pour les instructions de préparation ou de présentation (par exemple "Cuisson à point" ou "Couper en tranches"), vous devez ajouter les articles correspondants dans votre logiciel de caisse, puis les inclure en tant qu'options dans le menu Just Eat. Ils seront ainsi correctement encodés.
+- Un coursier est affecté à la commande.
+- L'heure à laquelle la commande doit être prête diminuée du temps de préparation est atteinte.
+
+Par exemple, si le temps de préparation est de 7 minutes et que la commande doit être prête à 19h00, elle sera envoyée à HubRise à 18h53, sauf si un coursier est affecté avant.
+
+Vous pouvez personnaliser ce comportement de deux manières :
+
+- Modifiez le temps de préparation depuis l'OrderPad Just Eat.
+- Demandez la transmission immédiate des commandes. Pour activer cette option, contactez votre gestionnaire de compte Just Eat.
 
 ## Statuts de commande
 
@@ -57,18 +65,17 @@ Just Eat prend en charge trois types de service :
 
 - Livraison par un coursier Just Eat
 - Livraison par un livreur du restaurant
-- Retrait par les clients.
+- Retrait par les clients
 
 Ils sont généralement associés à des codes ref spécifiques dans votre logiciel de caisse, que vous pouvez définir sur la page de configuration du bridge. Pour plus d'informations sur les codes ref, consultez la documentation de votre logiciel de caisse sur notre [page Apps](/apps).
 
 ## Horaires des commandes
 
-Just Eat envoie les commandes à HubRise lorsqu’un coursier est assigné, ou lorsque le coursier se trouve à une distance correspondant au temps de préparation défini pour le point de vente.
+Pour les commandes livrées par le restaurant, Just Eat fournit l'heure à laquelle le client attend la livraison de sa commande.
 
-- Vous pouvez modifier le temps de préparation directement dans le portail Just Eat.
-- Si vous souhaitez que Just Eat envoie les commandes à HubRise dès qu’elles sont passées, contactez-nous à support@hubrise.com.
+Pour les autres types de commande, il fournit l'heure à laquelle la commande doit être prête à emporter, que ce soit par le client ou par un livreur.
 
-Pour les commandes livrées par le restaurant, Just Eat fournit l'heure à laquelle le client attend la livraison de sa commande. Pour les autres types de commande, il fournit l'heure à laquelle la commande doit être prête à emporter, que ce soit par le client ou par un livreur. Dans les deux cas, l'horaire est transmis à HubRise via le champ `expected_time` (heure prévue). Cet horaire ne peut pas être modifié par le logiciel de caisse.
+Dans les deux cas, l'horaire est transmis à HubRise via le champ `expected_time` (heure prévue). Cet horaire ne peut pas être modifié par le logiciel de caisse.
 
 ## Données clients
 
@@ -77,6 +84,12 @@ Les coordonnées du client fournies par Just Eat dépendent du type de service a
 - Pour les commandes livrées par le restaurant, HubRise reçoit le nom et l'adresse du client.
 - Pour les commandes à emporter, seul le nom du client est reçu.
 - Pour les commandes livrées par Just Eat, le nom du client peut être reçu, en fonction du marché. L'adresse n'est par contre jamais reçue.
+
+## Articles et options
+
+Les commandes Just Eat contiennent des informations complètes sur les articles et les options, y compris le nom, le code ref du produit, la quantité et le prix.
+
+Les notes de préparation des clients sur les produits individuels ne sont pas pris en charge dans Just Eat. Si vous avez besoin de ces notes pour la préparation ou la présentation (par exemple "Cuisson à point" ou "Couper en tranches"), vous devez ajouter les articles correspondants dans votre logiciel de caisse, puis les inclure en tant qu'options dans le menu Just Eat.
 
 ## Remises
 
@@ -99,10 +112,10 @@ Il s'agit de l'identifiant de référence de la commande que le client voit s'af
 
 Pour chaque article inclus dans la commande, Just Eat Flyt Bridge indique les informations suivantes :
 
-- `sku_ref` : code ref de l'article
+- `sku_ref` : code ref de l'article
 - `product_name` : nom du produit
-- `price` : prix unitaire de l'article
-- `quantity` : quantité d'articles dans la commande
+- `price` : prix unitaire de l'article
+- `quantity` : quantité d'articles dans la commande
 - `options` : options associées à l'article
 
 ### Encodage des options
@@ -111,7 +124,7 @@ Pour chaque option incluse dans la commande, Just Eat Flyt Bridge indique les in
 
 - `option_list_name` : emplacement réservé pour le nom de la liste d'options, avec la valeur par défaut `Options`
 - `ref` : code ref de l'option
-- `name` : nom de l'option
+- `name` : nom de l'option
 - `price` : prix unitaire de l'option
 
 Chaque option a une quantité égale à 1. Les options multiples identiques sont encodées dans des objets d'option distincts.

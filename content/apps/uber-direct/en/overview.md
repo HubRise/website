@@ -14,12 +14,6 @@ app_info:
   contact:
 ---
 
----
-
-**IMPORTANT NOTE**: Full documentation of this integration will be available soon.
-
----
-
 ## Description
 
 Uber Direct is a white-label delivery service offered by Uber. Businesses can use it to offer on-demand delivery.
@@ -34,7 +28,7 @@ Connecting Uber Direct to HubRise allows your delivery service provider to:
 
 - Pull orders from HubRise, including order status.
 - Pull customer information from HubRise.
-- Synchronise final delivery time with HubRise.
+- Synchronise delivery information, including the driver position.
 
 Uber Direct Bridge can be connected to HubRise from the HubRise back office.
 
