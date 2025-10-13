@@ -48,8 +48,8 @@ export const AppCategories = styled.div`
   }
 
   @media (min-width: ${breakpoints.extraLarge}) {
-    grid-template-columns: repeat(6, 12.625rem);
-    grid-template-rows: 12.625rem;
+    grid-template-columns: repeat(6, 15.25rem);
+    grid-template-rows: 15.25rem;
     margin-bottom: 2.875rem;
   }
 
@@ -70,21 +70,24 @@ export const Arrow = styled.div<{ $isTop: boolean }>`
 
   width: calc(100% + 4px);
   height: calc(50% + 4px);
-  top: ${({ $isTop }) => ($isTop ? "-3px" : "auto")};
-  bottom: ${({ $isTop }) => ($isTop ? "auto" : "-3px")};
+  ${({ $isTop }) => ($isTop ? "top: -3px;" : "bottom: -3px;")};
 
   @media (min-width: ${breakpoints.small}) {
     width: calc(100% + 6px);
     height: calc(50% + 6px);
-    top: ${({ $isTop }) => ($isTop ? "-4px" : "auto")};
-    bottom: ${({ $isTop }) => ($isTop ? "auto" : "-4px")};
+    ${({ $isTop }) => ($isTop ? "top: -4px;" : "bottom: -4px;")};
   }
 
   @media (min-width: ${breakpoints.extraLarge}) {
     width: calc(100% + 10px);
     height: calc(50% + 10px);
-    top: ${({ $isTop }) => ($isTop ? "-7px" : "auto")};
-    bottom: ${({ $isTop }) => ($isTop ? "auto" : "-7px")};
+    ${({ $isTop }) => ($isTop ? "top: -7px;" : "bottom: -7px;")};
+  }
+
+  @media (min-width: ${breakpoints.extraLarge}) {
+    width: calc(100% + 12px);
+    height: calc(50% + 12px);
+    ${({ $isTop }) => ($isTop ? "top: -9px;" : "bottom: -9px;")};
   }
 `
 
@@ -96,18 +99,15 @@ export const Circle = styled.div<{ $color: HeroAppColor }>`
   height: 85%;
   border-radius: 100%;
   border-width: 10px;
+  padding: 5%;
 
   @media (min-width: ${breakpoints.extraLarge}) {
-    border-width: 20px;
-  }
-
-  @media (min-width: ${breakpoints.biggest}) {
     border-width: 26px;
   }
 `
 
 export const Title = styled.span`
-  line-height: ${lineHeights.compact};
+  line-height: 1.5;
   font-weight: 700;
   font-size: 0.625rem;
 
