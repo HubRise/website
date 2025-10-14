@@ -63,7 +63,7 @@ export const Circle = styled.div<{ $color: HeroAppColor }>`
   width: 82%;
   height: 82%;
   border-radius: 100%;
-  border-width: min(calc(12px + 0.8vw), 25px);
+  border-width: min(calc(15px + 0.5vw), 25px);
   padding: 5%;
 `
 
