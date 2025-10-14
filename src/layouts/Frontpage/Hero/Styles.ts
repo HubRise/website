@@ -30,20 +30,17 @@ export const FrontpageHero = styled.div`
 `
 
 export const AppCategories = styled.div`
-  margin: 3.5rem auto 1.875rem;
+  margin: 3.5rem auto 1rem;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(3, min(10rem, 30vw));
-  grid-auto-rows: min(10rem, 30vw);
-  row-gap: 1rem;
-
-  @media (min-width: ${breakpoints.large}) {
-    grid-template-columns: repeat(6, min(15rem, 15vw));
-    grid-auto-rows: min(15rem, 15vw);
-  }
+  grid-template-columns: repeat(3, min(12rem, 30vw));
+  grid-auto-rows: min(12rem, 30vw);
+  row-gap: 2rem;
 
   @media (min-width: ${breakpoints.extraLarge}) {
     margin-bottom: 3rem;
+    grid-template-columns: repeat(6, min(15rem, 15vw));
+    grid-auto-rows: min(15rem, 15vw);
   }
 `
 
@@ -63,21 +60,17 @@ export const Circle = styled.div<{ $color: HeroAppColor }>`
   ${mixin.centerElement};
   border-style: solid;
   border-color: ${({ $color }) => linkHeroAppBorderColor($color)};
-  width: 85%;
-  height: 85%;
+  width: 82%;
+  height: 82%;
   border-radius: 100%;
-  border-width: min(calc(10px + 0.8vw), 25px);
+  border-width: min(calc(12px + 0.8vw), 25px);
   padding: 5%;
 `
 
 export const Title = styled.span`
   line-height: 1.5;
   font-weight: 700;
-  font-size: ${fontSizes._12};
-
-  @media (min-width: ${breakpoints.large}) {
-    font-size: ${fontSizes._14};
-  }
+  font-size: ${fontSizes._14};
 
   @media (min-width: ${breakpoints.extraLarge}) {
     font-size: ${fontSizes._16};
