@@ -11,7 +11,9 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
   const featuresImages: Array<string> = yaml.content.features.features_cards.map((feature) => feature.image)
 
   const testimonials = route.testimonials.yaml
-  const testimonialLogos: Array<string> = testimonials.content.testimonials.map((t) => t.person_details.logo)
+  const testimonialLogos: Array<string> = testimonials.content.testimonials
+    .map((testimonial) => testimonial.person_details.logo)
+    .filter(Boolean) as Array<string>
 
   const [
     heroDescriptionMdx,
@@ -28,7 +30,7 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
     contentImageMap("/images/frontpage/proposals", featuresImages),
     serializeFrontpage(yaml.content.pricing.description),
     serializeFrontpage(yaml.content.partners.description),
-    contentImageMap("/images/app-logos", testimonialLogos),
+    contentImageMap("/images", testimonialLogos),
   ])
 
   return (

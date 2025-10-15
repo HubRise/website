@@ -37,7 +37,7 @@ const TestimonialsBlock = ({
                   <Name>{`- ${testimonial.person_details.name}`}</Name>
                   <JobTitle>{testimonial.person_details.job_title}</JobTitle>
                   <Quote>{testimonial.quote}</Quote>
-                  {testimonialLogoMap[testimonial.person_details.logo] && (
+                  {testimonial.person_details.logo && testimonialLogoMap[testimonial.person_details.logo] && (
                     <LogoImage
                       {...testimonialLogoMap[testimonial.person_details.logo]}
                       alt={testimonial.person_details.logo.substring(0, testimonial.person_details.logo.length - 4)}

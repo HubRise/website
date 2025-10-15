@@ -10,14 +10,14 @@ const becomePartner = async (route: Route<RouteName, "become-partner">): Promise
   const yaml = route.context.yaml
   const getInTouch = route.getInTouch.yaml
   const testimonials = route.testimonials.yaml
-  const testimonialLogos: Array<string> = testimonials.content.testimonials.map(
-    (testimonial) => testimonial.person_details.logo,
-  )
+  const testimonialLogos: Array<string> = testimonials.content.testimonials
+    .map((testimonial) => testimonial.person_details.logo)
+    .filter(Boolean) as Array<string>
 
   const [middlewareDescriptionMdx, appsDescriptionMdx, testimonialLogoMap] = await Promise.all([
     serializeBecomePartnerContent(yaml.content.middleware.description),
     serializeBecomePartnerContent(yaml.content.apps.description),
-    contentImageMap("/images/app-logos", testimonialLogos),
+    contentImageMap("/images", testimonialLogos),
   ])
 
   return (

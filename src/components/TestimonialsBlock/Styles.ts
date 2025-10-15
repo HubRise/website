@@ -73,7 +73,8 @@ export const Quote = styled.p`
 export const LogoImage = styled(Image)`
   position: relative;
   width: fit-content;
-  height: 1.5rem;
+  max-width: 7.5rem;
+  max-height: 4rem;
   margin-left: auto;
   margin-top: auto;
 `
