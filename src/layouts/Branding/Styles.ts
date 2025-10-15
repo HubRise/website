@@ -32,7 +32,7 @@ export const ContentWrapper = styled.div`
     }
 
     blockquote {
-      border-left: 0.1875rem solid ${colors.borderLight};
+      border-left: 3px solid ${colors.borderLight};
       margin-left: 0;
       padding-left: 2rem;
 

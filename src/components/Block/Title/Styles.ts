@@ -28,7 +28,7 @@ export const StyledTitle = styled.h3<{
     top: 100%;
     margin: 10px auto;
     width: 5rem;
-    height: 0.1875rem;
+    height: 3px;
     background-color: ${({ $backgroundColor }) => linkColorMap[$backgroundColor]};
     border-radius: 6.25rem;
 
