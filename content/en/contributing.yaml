@@ -35,7 +35,7 @@ content:
       to: /contributing/diagram-guide
       icon: diagram.svg
   action_block:
-    title: Need Help Getting Started?
-    description: Our integration support team is here for you at every step of the process.
+    title: Need Help?
+    description: Contact our team if you have any questions about updating the documentation.
     buttons:
-      - button_label: Send Us a Message
+      - button_label: Contact Us

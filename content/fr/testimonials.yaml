@@ -80,7 +80,7 @@ content:
         name: Arthur Broutin
         job_title: Co-fondateur
         company: Obypay, France
-        logo:
+        logo: app-logos/obypay.png
       filename: arthur-broutin.jpg
     - quote: Dans le cadre de notre stratégie de développement et d'acquisition rapide de parts de marché, nous avons décidé de passer par HubRise pour nous intégrer avec de nombreuses solutions d'encaissement et autres applications annexes. Au-delà de la complétude de leur écosystème, nous avons fortement apprécié leur professionnalisme tant dans la réactivité en cas de nouveaux besoins que la qualité de leur support.
       id: 1
@@ -88,7 +88,7 @@ content:
         name: Isabelle Saffar
         job_title: Co-fondateur
         company: Smilein, France
-        logo:
+        logo: app-logos/smilein.png
       filename: isabelle-saffar.jpg
     - quote: Dans ma longue expérience avec des entreprises de restauration de toute taille, et étant moi-même un ancien exploitant, je ne peux que recommander de travailler avec une solution comme HubRise. HubRise est une solution intelligente, suffisamment flexible pour éliminer les tracas des intégrations directes. Avec leur middleware, vous pouvez lier votre logiciel de restaurant préféré, votre site de commande en ligne et/ou une autre solution. C'est aussi facile et fluide qu'abordable. En plus de cela, je n'ai eu que des interactions positives à tous les niveaux avec les membres de l'équipe HubRise.
       id: 0
@@ -96,5 +96,5 @@ content:
         name: Muhammad Mehmood
         job_title: Fondateur
         company: Zeera Hub, Angleterre
-        logo:
+        logo: testimonials/companies/zeera-hub.jpg
       filename: muhammad-mehmood.jpg

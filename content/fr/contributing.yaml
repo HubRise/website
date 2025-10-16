@@ -34,9 +34,8 @@ content:
       description: Instructions pour créer des diagrammes (en anglais).
       to: /fr/contribuer/guide-des-diagrammes
       icon: diagram.svg
-
   action_block:
-    title: Need Help Getting Started?
-    description: Our integration support team is here for you at every step of the process.
+    title: Besoin d'aide ?
+    description: Contactez notre équipe si vous avez des questions sur les mises à jour de la documentation.
     buttons:
-      - button_label: Send Us a Message
+      - button_label: Nous écrire
