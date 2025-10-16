@@ -34,11 +34,6 @@ export const Content = styled.div`
   flex-direction: column;
   row-gap: 3rem;
 
-  ul {
-    list-style: inside;
-    margin: 0.5rem 0 0.5rem 1rem;
-  }
-
   ${StyledUnderline} {
     margin-bottom: 0.25rem;
   }
@@ -59,6 +54,15 @@ export const Content = styled.div`
     ${StyledCard}:nth-child(even):not(:last-child) {
       padding-right: 3.5rem;
     }
+  }
+`
+
+export const Reply = styled.div`
+  max-width: 60rem;
+
+  ul {
+    list-style: inside;
+    margin: 0.5rem 0 0.5rem 1rem;
   }
 `
 

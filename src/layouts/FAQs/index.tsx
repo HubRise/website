@@ -12,7 +12,7 @@ import ScreenContainer from "@components/ScreenContainer"
 import Underline from "@components/Underline"
 import { iconSizes } from "@utils/styles"
 
-import { CardTitle, Content, ExpandIconWrapper, GetInTouchWrapper } from "./Styles"
+import { CardTitle, Content, ExpandIconWrapper, GetInTouchWrapper, Reply } from "./Styles"
 import { FAQsYaml, TQuestion } from "./types"
 
 interface FAQProps {
@@ -88,11 +88,13 @@ const FAQs = ({ yaml, getInTouch }: FAQProps): JSX.Element => {
                     <Icon code="expand_more" size={iconSizes._25} color="#263238" />
                   </ExpandIconWrapper>
                 </CardTitle>
+
                 <Underline />
+
                 {questions.map((question, qIdx) => {
                   return (
                     <Accordion key={qIdx} title={question.question} ref={(el) => handleAddRefToArray(el)}>
-                      <div dangerouslySetInnerHTML={{ __html: question.answer }} />
+                      <Reply dangerouslySetInnerHTML={{ __html: question.answer }} />
                     </Accordion>
                   )
                 })}
@@ -101,6 +103,7 @@ const FAQs = ({ yaml, getInTouch }: FAQProps): JSX.Element => {
           })}
         </Content>
       </ScreenContainer>
+
       <GetInTouchWrapper>
         <GetInTouch title={title} description={description} button_label={button_label} button_link={button_link} />
       </GetInTouchWrapper>
