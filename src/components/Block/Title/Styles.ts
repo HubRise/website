@@ -17,7 +17,7 @@ export const StyledTitle = styled.h3<{
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: ${fontSizes._42};
-  line-height: ${lineHeights.compact};
+  line-height: ${lineHeights.largeTitle};
   text-align: ${({ $horizontalAlign }) => ($horizontalAlign === "left" ? "left" : "center")};
 
   &::after {

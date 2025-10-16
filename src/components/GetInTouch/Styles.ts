@@ -45,7 +45,7 @@ export const Content = styled.div`
 
 export const Title = styled.h3`
   font-size: ${fontSizes._32};
-  line-height: ${lineHeights.compact};
+  line-height: ${lineHeights.largeTitle};
   font-weight: 600;
   color: ${colors.textDarkest};
 `

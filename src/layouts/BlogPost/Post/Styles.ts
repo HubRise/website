@@ -18,7 +18,7 @@ export const StyledPost = styled.div`
 
 export const Title = styled.h1`
   font-size: ${fontSizes._32};
-  line-height: ${lineHeights.compact};
+  line-height: ${lineHeights.largeTitle};
   font-weight: 700;
   color: ${colors.textDarkest};
   margin-top: 0.5rem;

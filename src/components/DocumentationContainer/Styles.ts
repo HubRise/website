@@ -4,7 +4,7 @@ import { boxShadows, breakpoints, colors, fontSizes, lineHeights, mixin } from "
 
 const commonTitleStyles = css`
   color: ${colors.textDarkest};
-  line-height: ${lineHeights.comfortable};
+  line-height: ${lineHeights.text};
 
   &:first-child {
     margin-top: 0;
@@ -49,7 +49,7 @@ export const StyledContainer = styled.div`
 
   h2 {
     font-size: ${fontSizes._19};
-    line-height: ${lineHeights.compact};
+    line-height: ${lineHeights.mediumTitle};
     font-weight: 700;
     color: ${colors.textDarkest};
     position: relative;

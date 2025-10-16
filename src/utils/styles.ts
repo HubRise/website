@@ -36,8 +36,9 @@ export const iconSizes = {
 }
 
 export const lineHeights = {
-  comfortable: "1.6",
-  compact: "1.3",
+  text: "1.6",
+  mediumTitle: "1.45",
+  largeTitle: "1.3",
 }
 
 export const breakpoints = {
@@ -161,7 +162,7 @@ export const mixin = {
   `,
   cardTitle: css`
     font-size: ${fontSizes._24};
-    line-height: ${lineHeights.compact};
+    line-height: ${lineHeights.mediumTitle};
     font-weight: 600;
     color: ${colors.textDarkest};
 

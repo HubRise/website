@@ -9,7 +9,7 @@ export const Group = styled.div`
   grid-gap: 1.25rem;
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   ${mixin.containerWrapper}
-  margin-top: 1rem;
+  margin-top: 2rem;
 `
 export const AppLogo = styled.div`
   height: 100px;

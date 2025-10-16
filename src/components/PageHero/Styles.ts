@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
 
 export const PageHeroTitle = styled.h1`
   font-size: ${fontSizes._42};
-  line-height: ${lineHeights.compact};
+  line-height: ${lineHeights.largeTitle};
   font-weight: 600;
   color: ${colors.textDarkest};
 

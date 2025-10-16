@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 import { StyledIcon } from "@components/Icon/Styles"
-import { colors, lineHeights, mixin } from "@utils/styles"
+import { colors, mixin } from "@utils/styles"
 
 export const StyledAppInfo = styled.div`
   color: ${colors.textDark};
@@ -13,7 +13,6 @@ export const StyledAppInfo = styled.div`
 export const Item = styled.div`
   display: flex;
   align-items: center;
-  line-height: ${lineHeights.compact};
 `
 
 export const Label = styled.span``

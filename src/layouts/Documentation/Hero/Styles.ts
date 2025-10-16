@@ -25,7 +25,7 @@ export const Content = styled.div`
 
 export const Title = styled.h1`
   font-size: ${fontSizes._42};
-  line-height: ${lineHeights.compact};
+  line-height: ${lineHeights.largeTitle};
   font-weight: 600;
   color: ${colors.textDarkest};
   text-transform: capitalize;

@@ -44,7 +44,7 @@ export const HeaderWrapper = styled.div`
 
 export const Title = styled.h2<{ $bgColor: ScreenContainerBgColor }>`
   font-size: ${fontSizes._32};
-  line-height: ${lineHeights.compact};
+  line-height: ${lineHeights.mediumTitle};
   font-weight: 600;
   color: ${({ $bgColor }) => ($bgColor === "green" ? `${colors.white}` : `${colors.textDarkest}`)};
   text-align: center;
