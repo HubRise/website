@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { usePathname } from "next/navigation"
+import { useState } from "react"
 
 import Accordion from "@components/Accordion"
 import Button from "@components/Button"
@@ -39,6 +40,7 @@ const MobileBar = ({ languagePaths, menuItems, isOpen, close }: MobileBarProps):
   const { t } = useTranslation()
   const { signup, login, home } = useClientRoutes()
   const currentPathname = usePathname()
+  const [expandedAccordionIdx, setExpandedAccordionIdx] = useState<number | null>(null)
 
   return (
     <StyledMobileBar>
@@ -60,7 +62,11 @@ const MobileBar = ({ languagePaths, menuItems, isOpen, close }: MobileBarProps):
             return (
               <div key={idx}>
                 {content ? (
-                  <Accordion title={title}>
+                  <Accordion
+                    title={title}
+                    expanded={expandedAccordionIdx === idx}
+                    onExpandedChange={(expanded) => setExpandedAccordionIdx(expanded ? idx : null)}
+                  >
                     {content.included_apps?.length && <IncludedApps included_apps={content.included_apps} />}
                     {content.resources && <Resources resources={content.resources} />}
                   </Accordion>
