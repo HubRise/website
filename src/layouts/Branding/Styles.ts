@@ -18,7 +18,6 @@ export const ContentWrapper = styled.div`
   ${Content} {
     & > p {
       margin-top: 1rem;
-      ${mixin.responsiveText};
     }
 
     a {
