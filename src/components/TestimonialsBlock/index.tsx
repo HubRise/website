@@ -1,37 +1,38 @@
 import Image from "next/image"
+import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 
 import Card from "@components/Card"
 import ScreenContainer from "@components/ScreenContainer"
 import { TTestimonial } from "@layouts/Testimonials/types"
 import { ContentImageMap } from "@utils/contentImage"
 
-import { TestimonialsWrapper, Name, JobTitle, Quote, LogoImage, CardLink } from "./Styles"
+import { TestimonialsWrapper, Name, JobTitle, Quote, LogoImage, CardWrapper } from "./Styles"
 
 interface TestimonialsProps {
   title: string
+  descriptionMdx: MDXRemoteSerializeResult
   testimonials: Array<TTestimonial>
   idXToDisplay: Array<number>
   nbToDisplayOnMobile?: number
   testimonialLogoMap: ContentImageMap
-  link: string
 }
 
 const TestimonialsBlock = ({
   title,
+  descriptionMdx,
   testimonials,
   idXToDisplay,
   nbToDisplayOnMobile = 4,
   testimonialLogoMap,
-  link,
 }: TestimonialsProps) => {
   return (
-    <ScreenContainer withHeader title={title}>
+    <ScreenContainer withHeader title={title} descriptionMdx={descriptionMdx}>
       <TestimonialsWrapper $nbMobileDisplay={nbToDisplayOnMobile}>
         {testimonials
           .filter((testimonial) => idXToDisplay.includes(testimonial.id))
           .map((testimonial, index) => {
             return (
-              <CardLink key={index} href={link}>
+              <CardWrapper key={index}>
                 <Card>
                   <Image src="/images/quote-green.svg" alt="Quote" width={62} height={44} />
                   <Name>{`- ${testimonial.person_details.name}`}</Name>
@@ -44,7 +45,7 @@ const TestimonialsBlock = ({
                     />
                   )}
                 </Card>
-              </CardLink>
+              </CardWrapper>
             )
           })}
       </TestimonialsWrapper>

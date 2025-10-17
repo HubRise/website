@@ -64,7 +64,7 @@ content:
     title: Included Apps to Streamline Your Operations
     description: Discover the other apps included with HubRise to streamline your operations, optimise workflows, and simplify reporting.
     buttons:
-      - button_label: Explore Catalog Manager
+      - button_label: Manage Your Catalogs
         button_link: /catalog-manager
-      - button_label: View OrderLine
+      - button_label: Centralise Your Orders
         button_link: /orderline

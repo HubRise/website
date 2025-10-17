@@ -21,7 +21,9 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
     featuresDescriptionMdx,
     featuresImagesMap,
     pricingDescriptionMdx,
+    includedAppsDescriptionMdx,
     partnersDescriptionMdx,
+    testimonialDescriptionMdx,
     testimonialLogoMap,
   ] = await Promise.all([
     serializeFrontpage(yaml.hero.description),
@@ -29,7 +31,9 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
     serializeFrontpage(yaml.content.features.description),
     contentImageMap("/images/frontpage/proposals", featuresImages),
     serializeFrontpage(yaml.content.pricing.description),
+    serializeFrontpage(yaml.content.included_apps.description),
     serializeFrontpage(yaml.content.partners.description),
+    serializeFrontpage(yaml.content.testimonials.description),
     contentImageMap("/images", testimonialLogos),
   ])
 
@@ -41,8 +45,10 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
       featuresDescriptionMdx={featuresDescriptionMdx}
       featuresImagesMap={featuresImagesMap}
       pricingDescriptionMdx={pricingDescriptionMdx}
+      includedAppsDescriptionMdx={includedAppsDescriptionMdx}
       partnersDescriptionMdx={partnersDescriptionMdx}
       testimonials={testimonials}
+      testimonialDescriptionMdx={testimonialDescriptionMdx}
       testimonialLogoMap={testimonialLogoMap}
     />
   )

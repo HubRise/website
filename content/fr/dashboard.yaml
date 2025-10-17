@@ -64,7 +64,7 @@ content:
     title: Apps incluses pour optimiser vos opérations
     description: Découvrez les autres apps incluses avec HubRise pour optimiser vos opérations, fluidifier vos flux de travail et simplifier le reporting.
     buttons:
-      - button_label: Explorer Catalog Manager
+      - button_label: Gérez vos catalogues
         button_link: /fr/catalog-manager
-      - button_label: Voir OrderLine
+      - button_label: Centralisez vos commandes
         button_link: /fr/orderline

@@ -9,8 +9,8 @@ hero:
     part_2: Commerces
     part_3: et
     part_4: Restaurants
-  description: Connectez vos canaux de vente en ligne à votre logiciel de caisse et vos outils de gestion. Ou utilisez nos apps incluses pour centraliser vos commandes et gérer vos produits.
-  button_label: Parcourez nos intégrations
+  description: Connectez vos canaux de vente en ligne à votre logiciel de caisse et vos outils de gestion. Utilisez nos apps incluses pour centraliser vos commandes et gérer vos produits.
+  button_label: Voir toutes les intégrations
   button_link: /fr/apps
   app_categories:
     - title: Logiciels de caisse
@@ -34,13 +34,13 @@ content:
       title: Intégrations
     - number: 20+
       title: Pays
-    - number: 2 500+
+    - number: 2500+
       title: Clients
 
   features:
-    title: Utilisez HubRise pour simplifier la gestion de votre commerce
+    title: Connectez tous vos outils. Gardez vos systèmes synchronisés.
     description: |
-      Reliez vos solutions digitales et canaux de vente préférés, et simplifiez la gestion de vos catalogues produits et de vos stocks sur plusieurs canaux et points de vente. Centralisez vos commandes, vos données clients, et vos statistiques dans un environnement de travail unifié.
+      Reliez vos solutions et canaux de vente numériques, et simplifiez la gestion des catalogues produits et des stocks sur tous vos canaux et points de vente. Centralisez vos commandes, vos données clients, et vos statistiques dans un environnement de travail unifié.
     features_cards:
       - title: Connectez vos applications
         description: |
@@ -52,7 +52,7 @@ content:
         image: use-manage-products.png
       - title: Synchronisez vos stocks
         description: |
-          Synchronisez votre stock avec votre caisse ou mettez manuellement des produits en pause dans notre application. Les modifications sont immédiatement répercutées sur tous vos canaux, ce qui permet à vos clients de ne voir que les produits disponibles et d'éviter les mauvaises expériences.
+          Synchronisez votre stock avec votre caisse ou mettez manuellement des produits en pause dans notre application. Les modifications sont immédiatement répercutées sur tous vos canaux, pour que vos clients ne voient que les produits disponibles et éviter les mauvaises expériences.
         image: use-synchronise-inventory.png
       - title: Construisez votre base clients
         description: |
@@ -73,27 +73,29 @@ content:
       price: 35 €
       end: par point de vente
     description: |
-      Aucun frais d'installation. Aucun engagement. Aucun contrat. Aucun coût caché.  
+      Aucuns frais d'installation. Aucun engagement. Aucun coût caché.
       Nombre illimité de connexions par point de vente.
-    button_label: Commencer maintenant
+    button_label: Voir les tarifs
+    button_link: /fr/pricing
 
   included_apps:
     title: Apps incluses dans votre abonnement
+    description: |
+      Ces apps développées par HubRise sont incluses dans votre abonnement. Adoptées par des petites entreprises comme par des chaînes, elles complètent les fonctionnalités de vos solutions existantes.
     apps:
-      - title: OrderLine – Recevez toutes vos commandes au même endroit
+      - title: OrderLine – Une app pour recevoir vos commandes
         image: orderline.png
         advantages:
           - text: Centralisez les commandes de tous vos canaux de vente
           - text: Consultez les heures de livraison prévues et suivez les livreurs
           - text: Mettez à jour les statuts des commandes en temps réel
           - text: Imprimez les tickets
-          - text: Ajustez la disponibilité des produits
+          - text: Contrôlez la disponibilité des produits et boutiques
           - text: Personnalisez votre flux de traitement des commandes
-          - text: Mettez à jour les horaires d'ouverture ou mettez vos boutiques en pause temporairement
-        button_label: En savoir plus sur OrderLine
+        button_label: Commencez à recevoir des commandes
         button_link: /fr/orderline
 
-      - title: Catalog Manager – Éditez et publiez vos catalogues produits
+      - title: Catalog Manager – Éditez vos catalogues produits
         image: catalog-manager.png
         advantages:
           - text: Gérez les catalogues produits pour tous vos établissements et canaux de vente
@@ -103,7 +105,7 @@ content:
           - text: Ajustez les prix et la disponibilité par établissement
           - text: Prévisualisez et synchronisez les mises à jour de catalogues sur tous vos systèmes
           - text: Gérez des menus complexes avec tailles, options, remises et offres groupées
-        button_label: Explorer Catalog Manager
+        button_label: Gérez vos catalogues
         button_link: /fr/catalog-manager
 
       - title: Dashboard – Analysez vos données de vente
@@ -115,7 +117,7 @@ content:
           - text: Partagez des rapports avec vos collaborateurs
           - text: Visualisez vos indicateurs clés dans un tableau de bord
           - text: Suivez les performances de vos dark kitchens
-        button_label: Découvrir le Dashboard HubRise
+        button_label: Analysez vos ventes
         button_link: /fr/dashboard
 
   partners:
@@ -123,12 +125,13 @@ content:
     description: |
       Proposez à vos clients les apps HubRise sur votre nom de domaine, avec votre logo, votre favicon et vos couleurs. Vos clients peuvent ainsi gérer leurs produits, centraliser leurs commandes, contrôler la disponibilité ou le stock, et mettre à jour leurs horaires d'ouverture. Vous décidez quelles fonctionnalités activer ou masquer.  
       Nos apps en marque blanche s'adressent aux éditeurs de logiciels qui souhaitent enrichir leur solution, aux consultants qui veulent étendre leurs services, et aux franchises qui cherchent à renforcer la valeur offerte à leurs franchisés.
-    button_label: Découvrir les opportunités de partenariat
+    button_label: Devenir partenaire
     button_link: /fr/devenir-partenaire
     image: white-label.gif
 
   testimonials:
-    link: /fr/temoignages
+    title: Ce que disent nos clients et partenaires
+    description: HubRise est utilisé par plus de 2 500 entreprises dans le monde. [Voir d'autres témoignages](/fr/temoignages).
     list:
       - 10
       - 9

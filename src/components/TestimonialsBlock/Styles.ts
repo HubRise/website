@@ -1,10 +1,9 @@
 import Image from "next/image"
-import Link from "next/link"
 import styled, { css } from "styled-components"
 
 import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
-export const CardLink = styled(Link)`
+export const CardWrapper = styled.div`
   display: flex;
 `
 
@@ -18,7 +17,7 @@ export const TestimonialsWrapper = styled.div<{ $nbMobileDisplay: number }>`
   ${({ $nbMobileDisplay }) =>
     $nbMobileDisplay &&
     css`
-      ${CardLink} {
+      ${CardWrapper} {
         &:not(:nth-child(-n + ${$nbMobileDisplay})) {
           display: none;
         }
@@ -32,7 +31,7 @@ export const TestimonialsWrapper = styled.div<{ $nbMobileDisplay: number }>`
     ${({ $nbMobileDisplay }) =>
       $nbMobileDisplay &&
       css`
-        ${CardLink} {
+        ${CardWrapper} {
           &:not(:nth-child(-n + ${$nbMobileDisplay})) {
             display: flex;
           }
@@ -43,7 +42,7 @@ export const TestimonialsWrapper = styled.div<{ $nbMobileDisplay: number }>`
   @media (min-width: ${breakpoints.extraLarge}) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
-    ${CardLink} {
+    ${CardWrapper} {
       &:nth-child(even) {
         position: relative;
         top: 1.75rem;

@@ -51,7 +51,13 @@ export const Title = styled.h2<{ $bgColor: ScreenContainerBgColor }>`
 `
 
 export const Description = styled.div`
+  max-width: 65rem;
   ${mixin.responsiveText};
   text-align: center;
   margin: 1.25rem auto 0;
+
+  a {
+    color: ${colors.primary};
+    ${mixin.linkOver(colors.textDarkest)};
+  }
 `

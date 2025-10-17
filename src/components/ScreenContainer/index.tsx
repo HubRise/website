@@ -24,10 +24,10 @@ const ScreenContainer = ({
   verticalPadding = "big",
   isTextCentered = false,
   withHeader = false,
-  title = "",
+  title,
   descriptionMdx,
   withDivider = true,
-  anchor = "",
+  anchor,
   overflowVisible = false,
 }: ScreenContainerProps) => (
   <Container

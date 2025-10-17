@@ -59,9 +59,11 @@ export interface FrontpageYaml {
       }
       description: string
       button_label: string
+      button_link: string
     }
     included_apps: {
       title: string
+      description: string
       apps: Array<TIncludedApp>
     }
     partners: {
@@ -72,7 +74,8 @@ export interface FrontpageYaml {
       image: string
     }
     testimonials: {
-      link: string
+      title: string
+      description: string
       list: Array<number>
     }
   }
