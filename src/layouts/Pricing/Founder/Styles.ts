@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
 export const Wrapper = styled.div`
-  ${mixin.containerWrapper}
+  ${mixin.containerWrapper};
 
   @media (min-width: ${breakpoints.large}) {
     display: flex;
@@ -23,6 +23,7 @@ export const ImageWrapper = styled(Image)`
 
 export const Content = styled.div`
   color: ${colors.white};
+  flex: 1;
 `
 
 export const Name = styled.h4`
@@ -37,6 +38,7 @@ export const JobTitle = styled.h5`
 `
 
 export const Text = styled.p`
+  max-width: 65rem;
   margin-top: 2rem;
   ${mixin.responsiveText};
 `
