@@ -22,7 +22,7 @@ content:
         description: You are an engineer and need help with an integration or you would like to proceed with an integration audit.
         email: integration@hubrise.com
   map:
-    title: Address
-    description: HubRise is located in the heart of Sophia Antipolis, the largest French technopole, located in the French Riviera.
+    title: Where Are We?
+    description: HubRise is based in the heart of Sophia Antipolis, the largest technology park in France, on the French Riviera.
     image: address.png
     address: 630 Route des Dolines, 06560 Valbonne Sophia Antipolis, France

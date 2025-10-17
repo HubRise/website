@@ -22,7 +22,7 @@ content:
         description: Vous êtes ingénieur et avez besoin d'aide pour une intégration ou vous souhaitez effectuer un audit d'intégration.
         email: integration@hubrise.com
   map:
-    title: Adresse
+    title: Où sommes-nous ?
     description: HubRise est situé au cœur de Sophia Antipolis, la plus grande technopole de France, sur la Côte d'Azur.
     image: address.png
     address: 630 Route des Dolines, 06560 Valbonne Sophia Antipolis, France
