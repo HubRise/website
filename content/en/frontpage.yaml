@@ -9,7 +9,7 @@ hero:
     part_2: Restaurants
     part_3: and
     part_4: Retail
-  description: Connect your online sales channels to your EPOS and management tools. Use our included apps to centralise orders and manage products.
+  description: Connect your EPOS, your delivery platforms, and your digital solutions in one ecosystem. Manage orders, sync products, and keep inventory up to date.
   button_label: See All Integrations
   button_link: /apps
   app_categories:
@@ -40,7 +40,7 @@ content:
   features:
     title: Connect All Your Tools. Keep Your Systems in Sync.
     description: |
-      Connect your digital solutions and sales channels, and eliminate the hassle of managing product catalogs and inventory across multiple platforms. Centralise orders, customers and analytics in a unified workspace.
+      Connect your digital solutions, sales channels, delivery services, marketing tools, and more. Eliminate the hassle of managing product catalogs and inventory across multiple platforms. Centralise orders, customers and analytics in a unified workspace.
     features_cards:
       - title: Connect Apps
         description: |
@@ -71,11 +71,11 @@ content:
     title:
       start: Fair Pricing,
       price: €35
-      end: Per Store
+      end: per Month
     description: |
       No setup fees. No commitment. No hidden costs.
       Unlimited number of connections per location.
-    button_label: View Pricing
+    button_label: View Pricing Page
     button_link: /pricing
 
   included_apps:

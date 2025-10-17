@@ -9,7 +9,7 @@ hero:
     part_2: Commerces
     part_3: et
     part_4: Restaurants
-  description: Connectez vos canaux de vente en ligne à votre logiciel de caisse et vos outils de gestion. Utilisez nos apps incluses pour centraliser vos commandes et gérer vos produits.
+  description: Connectez votre caisse, vos plateformes de livraison et vos solutions digitales dans un même écosystème. Gérez vos commandes, synchronisez vos produits et maintenez votre stock à jour.
   button_label: Voir toutes les intégrations
   button_link: /fr/apps
   app_categories:
@@ -40,7 +40,7 @@ content:
   features:
     title: Connectez tous vos outils. Gardez vos systèmes synchronisés.
     description: |
-      Reliez vos solutions et canaux de vente numériques, et simplifiez la gestion des catalogues produits et des stocks sur tous vos canaux et points de vente. Centralisez vos commandes, vos données clients, et vos statistiques dans un environnement de travail unifié.
+      Connectez vos solutions digitales, vos canaux de vente, vos services de livraison, vos outils marketing et bien plus. Simplifiez la gestion des catalogues produits et des stocks sur tous vos canaux et points de vente. Centralisez vos commandes, vos données clients, et vos statistiques dans un environnement de travail unifié.
     features_cards:
       - title: Connectez vos applications
         description: |
@@ -71,11 +71,11 @@ content:
     title:
       start: Tarification juste,
       price: 35 €
-      end: par point de vente
+      end: par mois
     description: |
       Aucuns frais d'installation. Aucun engagement. Aucun coût caché.
       Nombre illimité de connexions par point de vente.
-    button_label: Voir les tarifs
+    button_label: Voir la page tarifs
     button_link: /fr/pricing
 
   included_apps:
