@@ -1,8 +1,8 @@
 import type { MDXRemoteSerializeResult } from "next-mdx-remote"
-import { MDXRemote } from "next-mdx-remote"
 
 import Button from "@components/Button"
 import ScreenContainer from "@components/ScreenContainer"
+import SerializedMdxContent from "@components/SerializedMdxContent"
 
 import { Title, TitleHighlight, Description } from "../shared/Styles"
 
@@ -29,7 +29,7 @@ const Pricing = ({ title, button_label, button_link, descriptionMdx }: PricingPr
       </Title>
 
       <Description>
-        <MDXRemote {...descriptionMdx} />
+        <SerializedMdxContent content={descriptionMdx} />
       </Description>
 
       <ButtonWrapper>

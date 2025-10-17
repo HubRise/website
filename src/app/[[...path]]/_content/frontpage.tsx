@@ -1,9 +1,6 @@
-import type { MDXRemoteSerializeResult } from "next-mdx-remote"
-import { serialize } from "next-mdx-remote/serialize"
-
+import { serializeContent } from "@components/SerializedMdxContent/serialize"
 import Frontpage from "@layouts/Frontpage"
 import { contentImageMap, contentImagesFromFolder } from "@utils/contentImage"
-import remarkTextPlugin from "@utils/mdx/remarkTextPlugin"
 import { Route, RouteName } from "@utils/router/types"
 
 const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Element> => {
@@ -26,14 +23,14 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
     testimonialDescriptionMdx,
     testimonialLogoMap,
   ] = await Promise.all([
-    serializeFrontpage(yaml.hero.description),
+    serializeContent(yaml.hero.description),
     contentImagesFromFolder("/images/app-logos"),
-    serializeFrontpage(yaml.content.features.description),
+    serializeContent(yaml.content.features.description),
     contentImageMap("/images/frontpage/proposals", featuresImages),
-    serializeFrontpage(yaml.content.pricing.description),
-    serializeFrontpage(yaml.content.included_apps.description),
-    serializeFrontpage(yaml.content.partners.description),
-    serializeFrontpage(yaml.content.testimonials.description),
+    serializeContent(yaml.content.pricing.description),
+    serializeContent(yaml.content.included_apps.description),
+    serializeContent(yaml.content.partners.description),
+    serializeContent(yaml.content.testimonials.description),
     contentImageMap("/images", testimonialLogos),
   ])
 
@@ -55,11 +52,3 @@ const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Elem
 }
 
 export default frontpage
-
-const serializeFrontpage = async (markdown: string): Promise<MDXRemoteSerializeResult> => {
-  return serialize(markdown.replace(/\n/g, "\n\n"), {
-    mdxOptions: {
-      remarkPlugins: [remarkTextPlugin],
-    },
-  })
-}

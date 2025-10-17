@@ -67,7 +67,12 @@ export const Website = styled.a`
 export const Description = styled.div`
   color: ${colors.textMedium};
 
-  &:not(:last-child) {
+  a {
+    color: ${colors.primary};
+    ${mixin.linkOver(colors.textDarkest)};
+  }
+
+  p:not(:last-child) {
     &::after {
       display: block;
       color: ${colors.textLight};

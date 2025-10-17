@@ -10,7 +10,7 @@ import { TestimonialsWrapper, Name, JobTitle, Quote, LogoImage, CardWrapper } fr
 
 interface TestimonialsProps {
   title: string
-  descriptionMdx: MDXRemoteSerializeResult
+  descriptionMdx?: MDXRemoteSerializeResult
   testimonials: Array<TTestimonial>
   idXToDisplay: Array<number>
   nbToDisplayOnMobile?: number

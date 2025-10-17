@@ -1,9 +1,6 @@
-import type { MDXRemoteSerializeResult } from "next-mdx-remote"
-import { serialize } from "next-mdx-remote/serialize"
-
+import { serializeContent } from "@components/SerializedMdxContent/serialize"
 import Orderline from "@layouts/Orderline"
 import { contentImageMap } from "@utils/contentImage"
-import remarkTextPlugin from "@utils/mdx/remarkTextPlugin"
 import { Route, RouteName } from "@utils/router/types"
 
 const orderline = async (route: Route<RouteName, "orderline">): Promise<JSX.Element> => {
@@ -12,9 +9,9 @@ const orderline = async (route: Route<RouteName, "orderline">): Promise<JSX.Elem
   const featuresImages: Array<string> = yaml.content.features.list.map((feature) => feature.image)
 
   const [featuresDescriptionMdx, featuresImagesMap, discoverDescriptionMdx] = await Promise.all([
-    serializeOrderlineContent(yaml.content.features.description),
+    serializeContent(yaml.content.features.description),
     contentImageMap("/images/orderline", featuresImages),
-    serializeOrderlineContent(yaml.content.discover.description),
+    serializeContent(yaml.content.discover.description),
   ])
 
   return (
@@ -29,11 +26,3 @@ const orderline = async (route: Route<RouteName, "orderline">): Promise<JSX.Elem
 }
 
 export default orderline
-
-const serializeOrderlineContent = async (markdown: string): Promise<MDXRemoteSerializeResult> => {
-  return serialize(markdown.replace(/\n/g, "\n\n"), {
-    mdxOptions: {
-      remarkPlugins: [remarkTextPlugin],
-    },
-  })
-}

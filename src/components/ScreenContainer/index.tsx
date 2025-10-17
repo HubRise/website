@@ -1,5 +1,6 @@
-import { MDXRemote, type MDXRemoteSerializeResult } from "next-mdx-remote"
+import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 
+import SerializedMdxContent from "@components/SerializedMdxContent"
 import Underline from "@components/Underline"
 
 import { Container, Description, HeaderWrapper, Title } from "./Styles"
@@ -47,7 +48,7 @@ const ScreenContainer = ({
 
           {descriptionMdx && (
             <Description>
-              <MDXRemote {...descriptionMdx} />
+              <SerializedMdxContent content={descriptionMdx} />
             </Description>
           )}
         </HeaderWrapper>

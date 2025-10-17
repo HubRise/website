@@ -1,5 +1,6 @@
-import { MDXRemote } from "next-mdx-remote"
 import type { MDXRemoteSerializeResult } from "next-mdx-remote"
+
+import SerializedMdxContent from "@components/SerializedMdxContent"
 
 import { StyledPageHero, Wrapper, PageHeroTitle, Description, DescriptionMdx } from "./Styles"
 
@@ -25,7 +26,7 @@ const PageHero = ({
         {description && <Description>{description}</Description>}
         {descriptionMdx && (
           <DescriptionMdx>
-            <MDXRemote {...descriptionMdx} />
+            <SerializedMdxContent content={descriptionMdx} />
           </DescriptionMdx>
         )}
       </div>

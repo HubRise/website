@@ -1,9 +1,6 @@
-import type { MDXRemoteSerializeResult } from "next-mdx-remote"
-import { serialize } from "next-mdx-remote/serialize"
-
+import { serializeContent } from "@components/SerializedMdxContent/serialize"
 import BecomePartner from "@layouts/BecomePartner"
 import { contentImageMap } from "@utils/contentImage"
-import remarkTextPlugin from "@utils/mdx/remarkTextPlugin"
 import { Route, RouteName } from "@utils/router/types"
 
 const becomePartner = async (route: Route<RouteName, "become-partner">): Promise<JSX.Element> => {
@@ -15,8 +12,8 @@ const becomePartner = async (route: Route<RouteName, "become-partner">): Promise
     .filter(Boolean) as Array<string>
 
   const [middlewareDescriptionMdx, appsDescriptionMdx, testimonialLogoMap] = await Promise.all([
-    serializeBecomePartnerContent(yaml.content.middleware.description),
-    serializeBecomePartnerContent(yaml.content.apps.description),
+    serializeContent(yaml.content.middleware.description),
+    serializeContent(yaml.content.apps.description),
     contentImageMap("/images", testimonialLogos),
   ])
 
@@ -33,11 +30,3 @@ const becomePartner = async (route: Route<RouteName, "become-partner">): Promise
 }
 
 export default becomePartner
-
-const serializeBecomePartnerContent = async (markdown: string): Promise<MDXRemoteSerializeResult> => {
-  return serialize(markdown.replace(/\n/g, "\n\n"), {
-    mdxOptions: {
-      remarkPlugins: [remarkTextPlugin],
-    },
-  })
-}

@@ -50,7 +50,6 @@ const BecomePartner = ({
         testimonials={testimonials.content.testimonials}
         idXToDisplay={content.testimonials.list}
         testimonialLogoMap={testimonialLogoMap}
-        link={content.testimonials.link}
       />
       <ActionBlock actionBlockData={content.action_block} />
       <GetInTouch title={title} description={description} button_label={button_label} button_link={button_link} />
