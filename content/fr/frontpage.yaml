@@ -76,7 +76,7 @@ content:
       Aucuns frais d'installation. Aucun engagement. Aucun coût caché.
       Nombre illimité de connexions par point de vente.
     button_label: Voir la page tarifs
-    button_link: /fr/pricing
+    button_link: /fr/tarifs
 
   included_apps:
     title: Apps incluses dans votre abonnement
