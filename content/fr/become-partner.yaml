@@ -88,5 +88,5 @@ content:
   action_block:
     title: Devenez partenaire de HubRise et enrichissez votre solution avec de nouvelles intégrations
     buttons:
-      - button_label: Voir la page développeurs
-        button_link: /fr/developers
+      - button_label: Contactez-nous
+        button_link: /fr/contactez-nous

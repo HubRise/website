@@ -8,7 +8,7 @@ content:
       part_2: vous aider ?
     cards:
       - title: Demandes générales
-        description: Vous êtes un commerçant, un éditeur de logiciel ou un revendeur et vous souhaitez en savoir plus sur HubRise.
+        description: Vous êtes un commerçant, un éditeur de logiciel ou un revendeur et vous souhaitez en savoir plus sur HubRise ou discuter d'un partenariat.
         email: contact@hubrise.com
         buttons:
           - button_label: Planifier un appel
@@ -19,7 +19,7 @@ content:
         description: Vous avez besoin d'aide pour connecter vos applications, gérer votre catalogue produits ou résoudre un problème technique.
         email: support@hubrise.com
       - title: Intégration
-        description: Vous êtes ingénieur et avez besoin d'aide pour une intégration ou vous souhaitez effectuer un audit d'intégration.
+        description: Vous êtes ingénieur et vous avez besoin d'aide pour une intégration ou vous souhaitez effectuer un audit de votre intégration.
         email: integration@hubrise.com
   map:
     title: Où sommes-nous ?

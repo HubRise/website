@@ -5,7 +5,6 @@ import { Route, RouteName } from "@utils/router/types"
 
 const becomePartner = async (route: Route<RouteName, "become-partner">): Promise<JSX.Element> => {
   const yaml = route.context.yaml
-  const getInTouch = route.getInTouch.yaml
   const testimonials = route.testimonials.yaml
   const testimonialLogos: Array<string> = testimonials.content.testimonials
     .map((testimonial) => testimonial.person_details.logo)
@@ -23,7 +22,6 @@ const becomePartner = async (route: Route<RouteName, "become-partner">): Promise
     <BecomePartner
       yaml={yaml}
       testimonials={testimonials}
-      getInTouch={getInTouch}
       middlewareDescriptionMdx={middlewareDescriptionMdx}
       appsDescriptionMdx={appsDescriptionMdx}
       testimonialDescriptionMdx={testimonialDescriptionMdx}

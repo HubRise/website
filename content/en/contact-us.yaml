@@ -8,7 +8,7 @@ content:
       part_2: Help You?
     cards:
       - title: General Queries
-        description: You are a store owner, a software editor or a reseller and you would like to know more about HubRise.
+        description: You are a store owner, a software editor or a reseller and you would like to know more about HubRise or explore partnership opportunities.
         email: contact@hubrise.com
         buttons:
           - button_label: Schedule a call

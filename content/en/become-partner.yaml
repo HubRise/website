@@ -88,5 +88,5 @@ content:
   action_block:
     title: Partner with HubRise and Expand Your Software Capabilities
     buttons:
-      - button_label: View the Developers Page
-        button_link: /developers
+      - button_label: Contact Us
+        button_link: /contact-us
