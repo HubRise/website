@@ -78,14 +78,15 @@ content:
     - number: 95%
       title: Appels API en dessous de 100 ms
   testimonials:
-    link: /fr/temoignages
+    title: Ce que disent nos partenaires
+    description: Plus de 100 partenaires dans le monde font confiance à HubRise. [Voir d'autres témoignages](/fr/temoignages).
     list:
-      - 0
       - 1
-      - 2
-      - 3
+      - 5
+      - 7
+      - 9
   action_block:
-    title: Devenez partenaire de HubRise et enrichissez votre solution de nouvelles intégrations
+    title: Devenez partenaire de HubRise et enrichissez votre solution avec de nouvelles intégrations
     buttons:
       - button_label: Voir la page développeurs
         button_link: /fr/developers

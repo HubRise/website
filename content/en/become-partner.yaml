@@ -78,12 +78,13 @@ content:
     - number: 95%
       title: API calls under 100ms
   testimonials:
-    link: /testimonials
+    title: Testimonials from Our Partners
+    description: HubRise is trusted by more than 100+ partners worldwide. [View other testimonials](/testimonials).
     list:
-      - 0
       - 1
-      - 2
-      - 3
+      - 5
+      - 7
+      - 9
   action_block:
     title: Partner with HubRise and Expand Your Software Capabilities
     buttons:

@@ -11,11 +11,13 @@ const becomePartner = async (route: Route<RouteName, "become-partner">): Promise
     .map((testimonial) => testimonial.person_details.logo)
     .filter(Boolean) as Array<string>
 
-  const [middlewareDescriptionMdx, appsDescriptionMdx, testimonialLogoMap] = await Promise.all([
-    serializeContent(yaml.content.middleware.description),
-    serializeContent(yaml.content.apps.description),
-    contentImageMap("/images", testimonialLogos),
-  ])
+  const [middlewareDescriptionMdx, appsDescriptionMdx, testimonialDescriptionMdx, testimonialLogoMap] =
+    await Promise.all([
+      serializeContent(yaml.content.middleware.description),
+      serializeContent(yaml.content.apps.description),
+      serializeContent(yaml.content.testimonials.description),
+      contentImageMap("/images", testimonialLogos),
+    ])
 
   return (
     <BecomePartner
@@ -24,6 +26,7 @@ const becomePartner = async (route: Route<RouteName, "become-partner">): Promise
       getInTouch={getInTouch}
       middlewareDescriptionMdx={middlewareDescriptionMdx}
       appsDescriptionMdx={appsDescriptionMdx}
+      testimonialDescriptionMdx={testimonialDescriptionMdx}
       testimonialLogoMap={testimonialLogoMap}
     />
   )

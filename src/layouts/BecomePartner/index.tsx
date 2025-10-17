@@ -23,6 +23,7 @@ interface BecomePartnerProps {
   getInTouch: GetInTouchYaml
   middlewareDescriptionMdx: MDXRemoteSerializeResult
   appsDescriptionMdx: MDXRemoteSerializeResult
+  testimonialDescriptionMdx: MDXRemoteSerializeResult
   testimonialLogoMap: ContentImageMap
 }
 
@@ -32,6 +33,7 @@ const BecomePartner = ({
   getInTouch,
   middlewareDescriptionMdx,
   appsDescriptionMdx,
+  testimonialDescriptionMdx,
   testimonialLogoMap,
 }: BecomePartnerProps): JSX.Element => {
   const content = yaml.content
@@ -46,7 +48,8 @@ const BecomePartner = ({
       <Apps apps={content.apps} descriptionMdx={appsDescriptionMdx} />
       <Metrics metrics={content.metrics} />
       <TestimonialsBlock
-        title={testimonials.content.block_title}
+        title={yaml.content.testimonials.title}
+        descriptionMdx={testimonialDescriptionMdx}
         testimonials={testimonials.content.testimonials}
         idXToDisplay={content.testimonials.list}
         testimonialLogoMap={testimonialLogoMap}

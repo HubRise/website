@@ -22,7 +22,7 @@ export const TestimonialsWrapper = styled.div<{ $nbMobileDisplay: number }>`
           display: none;
         }
       }
-    `}
+    `};
 
   @media (min-width: ${breakpoints.medium}) {
     grid-template-columns: 1fr 1fr;
@@ -76,4 +76,5 @@ export const LogoImage = styled(Image)`
   max-height: 4rem;
   margin-left: auto;
   margin-top: auto;
+  padding-top: 2rem;
 `
