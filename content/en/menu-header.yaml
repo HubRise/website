@@ -1,15 +1,65 @@
 - title: Home
   to: /
   mobile_only: true
-- title: Apps
+- title: Integrations
   to: /apps
+- title: Included Apps
+  content:
+    included_apps:
+      - title: OrderLine
+        description: Centralise your orders
+        link_label: Find out more
+        link: /orderline
+        image: orderline.png
+      - title: Catalog Manager
+        description: Manage your products in one place
+        link_label: Find out more
+        link: /catalog-manager
+        image: catalog-manager.png
+      - title: Dashboard
+        description: Track your business performance
+        link_label: Find out more
+        link: /dashboard
+        image: dashboard.png
 - title: Pricing
   to: /pricing
 - title: Developers
-  to: /developers
-- title: Blog
-  to: /blog
-- title: Help
-  to: /docs
-- title: FAQs
-  to: /faqs
+  content:
+    resources:
+      links:
+        - link_label: Developer documentation
+          link: /developers
+          link_description: API docs, quick start and integration guides.
+        - link_label: Changelog
+          link: /developers/changelog
+          link_description: New features and improvements.
+        - link_label: Become a Partner
+          link: /become-partner
+          link_description: Grow through integrations and white-label tools.
+- title: Resources
+  content:
+    resources:
+      get_in_touch:
+        main_question: Any specific needs?
+        question: Prefer to discuss?
+        button_label: Contact Us
+        button_link: /contact-us
+      links:
+        - link_label: Help
+          link: /docs
+          link_description: Quick answers to help you navigate and use HubRise.
+        - link_label: Blog
+          link: /blog
+          link_description: Product updates, tips and customer stories.
+        - link_label: FAQs
+          link: /faqs
+          link_description:
+        - link_label: Testimonials
+          link: /testimonials
+          link_description: Feedback from our customers and partners.
+        - link_label: Hire an Expert
+          link: /partners
+          link_description: Experienced partners for your development needs.
+        - link_label: Contact Us
+          link: /contact-us
+          link_description:

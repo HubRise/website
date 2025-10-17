@@ -2,49 +2,65 @@
 
 import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 
+import Metrics from "@components/Metrics"
+import TestimonialsBlock from "@components/TestimonialsBlock"
 import { FrontpageYaml } from "@layouts/Frontpage/types"
+import { TestimonialsYaml } from "@layouts/Testimonials/types"
 import { ContentImageMap } from "@utils/contentImage"
 
-import Api from "./Api"
-import Apps from "./Apps"
-import Developers from "./Developers"
-import Documentation from "./Documentation"
+import AppCarousel from "./AppCarousel"
+import Features from "./Features"
 import Hero from "./Hero"
-import Join from "./Join"
+import IncludedApps from "./IncludedApps"
+import Partners from "./Partners"
 import Pricing from "./Pricing"
 
 interface FrontpageProps {
   yaml: FrontpageYaml
   heroDescriptionMdx: MDXRemoteSerializeResult
-  appsDescriptionMdx: MDXRemoteSerializeResult
-  apiDescriptionMdx: MDXRemoteSerializeResult
-  documentationDescriptionMdx: MDXRemoteSerializeResult
+  appLogosMap: ContentImageMap
+  featuresDescriptionMdx: MDXRemoteSerializeResult
+  featuresImagesMap: ContentImageMap
   pricingDescriptionMdx: MDXRemoteSerializeResult
-  developersDescriptionMdx: MDXRemoteSerializeResult
-  teamImageMap: ContentImageMap
+  includedAppsDescriptionMdx: MDXRemoteSerializeResult
+  partnersDescriptionMdx: MDXRemoteSerializeResult
+  testimonials: TestimonialsYaml
+  testimonialDescriptionMdx: MDXRemoteSerializeResult
+  testimonialLogoMap: ContentImageMap
 }
 
 const Frontpage = ({
   yaml,
   heroDescriptionMdx,
-  appsDescriptionMdx,
-  apiDescriptionMdx,
-  documentationDescriptionMdx,
+  appLogosMap,
+  featuresDescriptionMdx,
+  featuresImagesMap,
   pricingDescriptionMdx,
-  developersDescriptionMdx,
-  teamImageMap,
+  includedAppsDescriptionMdx,
+  partnersDescriptionMdx,
+  testimonials,
+  testimonialDescriptionMdx,
+  testimonialLogoMap,
 }: FrontpageProps): JSX.Element => {
   const { hero, content } = yaml
 
   return (
     <>
       <Hero {...hero} descriptionMdx={heroDescriptionMdx} />
-      <Apps {...content.apps} descriptionMdx={appsDescriptionMdx} />
-      <Api {...content.api} descriptionMdx={apiDescriptionMdx} />
-      <Documentation {...content.documentation} descriptionMdx={documentationDescriptionMdx} />
+      <Metrics metrics={content.metrics} />
+      <AppCarousel appLogosMap={appLogosMap} />
+      <Features {...content.features} descriptionMdx={featuresDescriptionMdx} featuresImagesMap={featuresImagesMap} />
       <Pricing {...content.pricing} descriptionMdx={pricingDescriptionMdx} />
-      <Developers {...content.developers} descriptionMdx={developersDescriptionMdx} teamImageMap={teamImageMap} />
-      <Join {...content.join} />
+      <IncludedApps {...content.included_apps} descriptionMdx={includedAppsDescriptionMdx} />
+      <Partners {...content.partners} descriptionMdx={partnersDescriptionMdx} />
+      <TestimonialsBlock
+        title={content.testimonials.title}
+        descriptionMdx={testimonialDescriptionMdx}
+        testimonials={testimonials.content.testimonials}
+        idXToDisplay={content.testimonials.list}
+        nbToDisplayOnMobile={2}
+        testimonialLogoMap={testimonialLogoMap}
+      />
     </>
   )
 }

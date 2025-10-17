@@ -21,7 +21,6 @@ const slideControl = css`
     opacity: 1;
     background-color: ${colors.backgroundDark};
   }
-}
 `
 
 const arrow = css`
@@ -43,7 +42,7 @@ export const StyledSlideshow = styled.div`
 
   color: ${colors.white};
   background-color: rgba(0, 0, 0, 0.7);
-  font-size: ${fontSizes._18};
+  font-size: ${fontSizes._19};
 `
 
 export const Topbar = styled.div`

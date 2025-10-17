@@ -5,29 +5,24 @@ import { breakpoints, mixin } from "@utils/styles"
 
 import { headerStyle } from "../shared/styles"
 
-export const StyledHeader = styled.div`
+export const StyledHeader = styled.div<{ $isIntegrationsNavSticky: boolean }>`
   position: sticky;
   top: 0;
   ${headerStyle};
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 0 0.625rem;
 
   @media (min-width: ${breakpoints.burgerMenu}) {
     display: none;
   }
 `
 
-export const Button = styled.div`
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 4rem; // Large clickable area
+export const BurgerIcon = styled.div`
+  padding: 0 0.5rem;
   display: flex;
-  align-items: center;
-  ${mixin.clickable};
-
-  &:focus {
-    outline: none;
-  }
+  ${mixin.clickable}
 `
 
 export const LogoLink = styled(Link)`

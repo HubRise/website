@@ -1,0 +1,69 @@
+meta:
+  title: Catalog Manager | HubRise
+  description:
+content:
+  hero:
+    title:
+      part_1: Gérez vos produits
+      part_2: en un seul endroit
+      part_3: avec
+      part_4: Catalog Manager
+    description: Centralisez vos produits sur plusieurs canaux de vente et établissements. Mettez à jour les prix, les articles et la disponibilité, et voyez les changements se refléter instantanément sur toutes les plateformes.
+    content:
+      firstSide: |
+        Les clients veulent pouvoir commander à tout moment et sur le canal qui leur convient. Pour répondre à cette demande croissante, les commerces se digitalisent, mais se heurtent rapidement à de nouveaux défis. Plus les canaux de vente se multiplient, plus leur gestion devient complexe.
+      secondSide: |
+        Gérer des catalogues séparés devient vite une contrainte lorsqu'il faut jongler entre différents canaux, prix et menus pour le petit déjeuner, le déjeuner, le dîner ou l'happy hour. Catalog Manager centralise vos menus pour les garder cohérents, à jour et parfaitement synchronisés dans toute votre organisation.
+  sales_channels:
+    title: Un seul catalogue pour tous vos canaux
+    description: Gérez un catalogue unique pour tous vos établissements, marques et canaux de vente — même les dark kitchens. Utilisez des variantes de catalogue pour adapter les prix et la disponibilité par canal ou par établissement.
+  five_steps:
+    title: Démarrez en 5 étapes
+    steps:
+      - title: Créez un compte HubRise
+        description: Inscrivez-vous sur HubRise pour accéder à Catalog Manager et à plus de 100 intégrations. Votre compte est prêt en quelques minutes.
+      - title: Connectez vos applications
+        description: Ajoutez Catalog Manager, votre caisse, vos plateformes de livraison et toutes vos autres applications à votre compte HubRise. Une fois connectées, elles partagent automatiquement leurs données. Notre support est disponible si vous avez besoin d'aide.
+      - title: Configurez votre catalogue
+        description: Créez votre catalogue à partir de zéro ou importez-le depuis votre caisse, Uber Eats ou Deliveroo pour ne pas repartir de rien. Si besoin, enrichissez-le avec des images, des options et des descriptions, puis organisez-le en catégories.
+      - title: Créez des variantes
+        description: Utilisez les variantes pour adapter votre catalogue principal à des canaux ou établissements spécifiques. Modifiez les prix et la disponibilité sans dupliquer votre catalogue.
+      - title: Publiez
+        description: Diffusez votre catalogue sur tous vos canaux de vente connectés en un clic. Toute modification effectuée dans Catalog Manager est automatiquement appliquée à vos plateformes.
+  app:
+    title: Votre centre de contrôle pour les données produits
+    description: Catalog Manager vous permet de gérer vos produits depuis une interface unique. Créez un catalogue principal pour vos établissements et marques, y compris les dark kitchens, et publiez les mises à jour instantanément en un clic.
+    tabs:
+      - label: Ajouter des produits
+        content:
+          title: Créez des produits et des listes d'options
+          description: Créez des produits et regroupez les options dans des listes réutilisables. Attribuez des listes d'options spécifiques à chaque taille de produit pour une flexibilité maximale dans la gestion des choix et des prix.
+          image: catalog-manager/tabs/create-products.png
+      - label: Configurer des offres
+        content:
+          title: Personnalisez des offres et des remises
+          description: Créez des offres spéciales à partir d'articles du menu, comme un menu trois plats limité à certains produits. Vous pouvez aussi créer des remises, appliquant une réduction en pourcentage ou en montant fixe sur le total.
+          image: catalog-manager/tabs/customise-deals.png
+      - label: Ajuster les prix
+        content:
+          title: Définissez les prix par canal ou établissement
+          description: Ajustez les prix pour chaque canal ou établissement à l'aide de variantes de catalogue. Utilisez la mise à jour en masse pour appliquer des augmentations ou réductions en pourcentage, et adapter facilement vos prix à différents segments de marché.
+          image: catalog-manager/tabs/set-channels.png
+      - label: Personnaliser l'offre
+        content:
+          title: Activez les articles par canal ou établissement
+          description: Utilisez les variantes de catalogue pour activer des articles selon le canal de vente, l'établissement ou le mode de commande, afin d'adapter votre offre à vos besoins opérationnels et marketing.
+          image: catalog-manager/tabs/control-availability.png
+      - label: Prévisualiser et publier
+        content:
+          title: Prévisualisez avant de publier
+          description: Prêt à publier ? Prévisualisez chaque variante de catalogue pour vérifier sa cohérence et son exactitude. Une fois tout validé, publiez instantanément vos modifications sur tous les canaux.
+          image: catalog-manager/tabs/preview-mode.png
+  action_block:
+    title: Apps incluses pour optimiser vos opérations
+    description: Découvrez les autres apps incluses avec HubRise pour optimiser vos opérations, fluidifier vos flux de travail et simplifier le reporting.
+    buttons:
+      - button_label: Centralisez vos commandes
+        button_link: /fr/orderline
+      - button_label: Analysez vos ventes
+        button_link: /fr/dashboard

@@ -6,13 +6,13 @@ export interface PartnersYaml {
   content: {
     title: string
     description: string
-    partners: Array<Partners>
+    partners: Array<Partner>
   }
 }
 
-export interface Partners {
+export interface Partner {
   name: string
   site_url: string
   filename: string
-  descriptions: Array<string>
+  description: string
 }

@@ -6,7 +6,7 @@ import { Route, RouteName } from "@utils/router/types"
 
 const blogPost = async (route: Route<RouteName, "blog-post">, router: Router): Promise<JSX.Element> => {
   const { language, context } = route
-  const { mdFile, archives } = context
+  const { mdFile, mdFiles } = context
   const { mdxElement, contentImages } = await renderDocumentationMdx(
     mdFile.content,
     mdFile.contentDirName,
@@ -26,8 +26,8 @@ const blogPost = async (route: Route<RouteName, "blog-post">, router: Router): P
       blogIndexUri={blogIndexUri}
       mdFile={mdFile}
       bannerImage={bannerImage}
-      archives={archives}
       contentImages={contentImages}
+      mdFiles={mdFiles}
     >
       {mdxElement}
     </BlogPost>

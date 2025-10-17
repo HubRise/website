@@ -1,0 +1,70 @@
+meta:
+  title: Dashboard | HubRise
+  description:
+content:
+  hero:
+    title:
+      part_1: Make
+      part_2: Informed
+      part_3: Business Decisions with
+      part_4: HubRise Dashboard
+    description: Check your order data on the HubRise Dashboard to see how your business is performing across all locations and sales channels. Track revenue trends, compare performance over time, and identify your best-selling products and busiest hours.
+    content:
+      firstSide: Retail stores and restaurants generate a large amount of data—much of it valuable for analysis. When used effectively, this data helps business owners and managers make informed decisions, improve performance, and drive growth.
+      secondSide: The HubRise Dashboard provides easy access to ready-made reports from all connected sales channels. View aggregated data for a specific location or across all locations—anytime, on any device—to support data-driven understanding and decision-making.
+  features:
+    title: Features
+    cards:
+      - title: Real-Time Data
+        description: Access sales data the moment it happens. Monitor performance across your business in real time, with figures that update instantly to reflect every new order, so you can respond quickly to changes, spot issues early, and act with confidence.
+        image: real-time.svg
+      - title: Ready-Made Reports
+        description: See ready-made reports from data collected from your connected apps, saving time and reducing manual work. Share access to these easy-to-understand reports with local managers to keep teams informed, engaged, and focused on performance.
+        image: ready-made-reports.svg
+      - title: Consolidated Data
+        description: View aggregated data from all your locations and connected sales channels in one place. Gain a global overview of your business, without switching between systems or apps.
+        image: consolidated-data-locations.svg
+      - title: Granular Performance Insights
+        description: Analyse performance by sales channel or location to understand where you are doing well and where adjustments are needed. Compare trends across locations to support informed operational decisions.
+        image: granular-performance.svg
+      - title: Revenue Over Time
+        description: Track revenue trends by day, week, month, year, or custom date range to identify growth patterns and seasonality. Use historical data to compare performance with previous years, improve forecasting, and plan with confidence.
+        image: revenue-over-time.svg
+      - title: Top-Selling Products
+        description: See your 30 most popular items at a glance, ranked by sales volume—or view the full list for deeper insights. Use this data to fine-tune your catalog or menu, plan targeted promotions, and optimise inventory and purchasing decisions.
+        image: top-selling-products.svg
+  details:
+    title: Understand Your Business Through Data
+    content_blocks:
+      - title: Revenue Breakdown
+        content: |
+          <p>See your revenue from three perspectives:</p>
+          <ul>
+            <li><strong>Channel</strong> – compare delivery platforms with your own website or other apps.</li>
+            <li><strong>Connection Name</strong> – distinguish your main brand from virtual or dark kitchen brands.</li>
+            <li><strong>Location</strong> – identify which stores generate the most revenue.</li>
+          </ul>
+        image: revenue-breakdown.png
+      - title: Revenue Over Time
+        content: |
+          <p>The line chart tracks how revenue, sales volume, and average order value change over time, with granularity that adapts to your selected date range.</p>
+          <p>A summary panel highlights key metrics and shows growth or decline at a glance.</p>
+        image: revenue-over-time.png
+      - title: Peak Hours
+        content: |
+          <p>A heatmap shows your busiest periods by day and hour.</p>
+          <p>Use these insights to optimise staffing, plan promotions, and manage inventory more efficiently.</p>
+        image: peak-hours.png
+      - title: Top Selling Products
+        content: |
+          <p>View your 30 best-selling items and their sales volumes, or expand to see all products.</p>
+          <p>Filter by location and date to uncover seasonal trends and understand customer preferences.</p>
+        image: top-selling-products.png
+  action_block:
+    title: Included Apps to Streamline Your Operations
+    description: Discover the other apps included with HubRise to streamline your operations, optimise workflows, and simplify reporting.
+    buttons:
+      - button_label: Manage Your Catalogs
+        button_link: /catalog-manager
+      - button_label: Centralise Your Orders
+        button_link: /orderline

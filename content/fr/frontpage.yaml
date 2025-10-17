@@ -4,85 +4,140 @@ meta:
   description: HubRise permet de connecter votre app à un écosystème de solutions commerce et restauration, avec une seule intégration.
 
 hero:
-  title: Intégration pour le commerce et la restauration
-  description: |
-    Conçu pour les développeurs, HubRise connecte votre app à une multitude de solutions en une seule intégration.
-  button_label: Commencer l'intégration
-  button_url: /fr/developers
+  title:
+    part_1: L'intégration sans effort pour les
+    part_2: Commerces
+    part_3: et
+    part_4: Restaurants
+  description: Connectez votre caisse, vos plateformes de livraison et vos solutions digitales dans un même écosystème. Gérez vos commandes, synchronisez vos produits et maintenez votre stock à jour.
+  button_label: Voir toutes les intégrations
+  button_link: /fr/apps
+  app_categories:
+    - title: Logiciels de caisse
+      color: topDark
+    - title: Plateformes de livraison
+      color: bottom
+    - title: Fidélisation et marketing
+      color: topLight
+    - title: Opérations et gestion des stocks
+      color: bottom
+    - title: Gestion des livraisons
+      color: topDark
+    - title: Commande en ligne
+      color: bottom
 
 content:
-  apps:
-    title: Nouvelles intégrations pour votre app
-    description: |
-      HubRise connecte votre app à celles que vos clients utilisent. Concentrez-vous sur le développement de votre app, nous nous occupons des intégrations. [Plus de 100 intégrations disponibles](/fr/apps).
-    link_url: /fr/apps
-    categories:
-      - Logiciels de caisse
-      - Commande en ligne
-      - Plateformes de livraison de repas
-      - Solutions marketing
-      - Cartes de fidélité
-      - Et plus encore
+  metrics:
+    - number: 35+
+      title: Caisses intégrées
+    - number: 110+
+      title: Intégrations
+    - number: 20+
+      title: Pays
+    - number: 2500+
+      title: Clients
 
-  api:
-    title: Une API publique et facile à utiliser
+  features:
+    title: Connectez tous vos outils. Gardez vos systèmes synchronisés.
     description: |
-      Synchronisez les commandes, les clients et les produits. Une documentation soignée, une collection Postman, et un SDK Ruby permettent une intégration fluide.
-      Pour le plaisir, nous avons écrit une app complète et intégrée en quelques lignes de code, que vous pouvez [consulter sur GitHub](https://github.com/HubRise/tiny-tablet).
-    image: api.png
-
-  documentation:
-    title: Documentation détaillée
-    description: |
-      Nous documentons les fonctionnalités, les flux de données et les "pièges" de chaque intégration, pour vous faire gagner du temps.
-      La documentation est publiquement accessible depuis [la page Apps](/fr/apps).
-    image: documentation.png
+      Connectez vos solutions digitales, vos canaux de vente, vos services de livraison, vos outils marketing et bien plus. Simplifiez la gestion des catalogues produits et des stocks sur tous vos canaux et points de vente. Centralisez vos commandes, vos données clients, et vos statistiques dans un environnement de travail unifié.
+    features_cards:
+      - title: Connectez vos applications
+        description: |
+          Utilisez HubRise pour connecter votre caisse ainsi que les solutions que vous utilisez au quotidien : commande à table, commande en ligne, plateformes de livraison, bornes en libre-service, marketing digital, gestion de stock, imprimantes cloud, et bien plus encore.
+        image: use-connect-apps.png
+      - title: Gérez vos produits
+        description: |
+          Centralisez vos catalogues produits pour tous vos canaux de vente et vos établissements. Configurez des produits et des prix différents selon vos besoins. Gérez des catalogues complexes incluant tailles de produits, options multiples, informations nutritionnelles, taxes et promotions.
+        image: use-manage-products.png
+      - title: Synchronisez vos stocks
+        description: |
+          Synchronisez votre stock avec votre caisse ou mettez manuellement des produits en pause dans notre application. Les modifications sont immédiatement répercutées sur tous vos canaux, pour que vos clients ne voient que les produits disponibles et éviter les mauvaises expériences.
+        image: use-synchronise-inventory.png
+      - title: Construisez votre base clients
+        description: |
+          Collectez et centralisez les informations de vos clients provenant de tous vos canaux de vente dans une liste unique. Partagez ces données avec des applications marketing ciblées pour renforcer l'engagement et la fidélité.
+        image: use-customer-database.png
+      - title: Centralisez les commandes
+        description: |
+          Envoyez toutes vos commandes à votre caisse ou utilisez HubRise pour consulter et gérer les commandes de tous vos canaux de vente dans une seule application. Mettez à jour les statuts, suivez les livreurs, imprimez les tickets, ajustez les horaires d'ouverture ou mettez temporairement vos boutiques en pause — en un seul clic.
+        image: use-centralise-orders.png
+      - title: Prenez les bonnes décisions
+        description: |
+          Visualisez vos données de vente agrégées, par point de vente ou canal de vente, pour une semaine, un mois ou toute période personnalisée. Identifiez les produits les plus vendus et les périodes de pointe pour obtenir une vision opérationnelle claire.
+        image: use-informed-decisions.png
 
   pricing:
-    title: Tarification juste pour le commerçant
+    title:
+      start: Tarification juste,
+      price: 35 €
+      end: par mois
     description: |
-      Pas de frais d'installation. Pas d'engagement. Pas de contrat.
-      Nombre de connexions illimité. 35€ HT par mois.
-    button_label: Démarrer l'essai gratuit
-    button_url: https://manager.hubrise.com/signup
-    link_label: Page Tarifs
-    link_url: /fr/tarifs
+      Aucuns frais d'installation. Aucun engagement. Aucun coût caché.
+      Nombre illimité de connexions par point de vente.
+    button_label: Voir la page tarifs
+    button_link: /fr/tarifs
 
-  developers:
-    title: Nous aidons les développeurs
+  included_apps:
+    title: Apps incluses dans votre abonnement
     description: |
-      Nous sommes développeurs aussi. Comptez sur nous pour répondre rapidement à toutes vos questions d'intégration.
-      Une fois intégré, nous auditons et documentons le travail réalisé, et nous communiquons sur votre intégration.
-    team_members:
-      - name: Alberto
-        filename: alberto.jpg
-      - name: Antoine
-        filename: antoine.jpg
-      - name: Dimitri
-        filename: dimitri.jpg
-      - name: Félix L.
-        filename: felix_l.jpg
-      - name: Janaina
-        filename: janaina.jpg
-      - name: Nick
-        filename: nick.jpg
-      - name: Vova
-        filename: vova.jpg
+      Ces apps développées par HubRise sont incluses dans votre abonnement. Adoptées par des petites entreprises comme par des chaînes, elles complètent les fonctionnalités de vos solutions existantes.
+    apps:
+      - title: OrderLine – Une app pour recevoir vos commandes
+        image: orderline.png
+        advantages:
+          - text: Centralisez les commandes de tous vos canaux de vente
+          - text: Consultez les heures de livraison prévues et suivez les livreurs
+          - text: Mettez à jour les statuts des commandes en temps réel
+          - text: Imprimez les tickets
+          - text: Contrôlez la disponibilité des produits et boutiques
+          - text: Personnalisez votre flux de traitement des commandes
+        button_label: Commencez à recevoir des commandes
+        button_link: /fr/orderline
 
-  mission_and_scalability:
-    mission:
-      title: Notre vision
-      description: |
-        We want integrations to not be a challenge anymore. We make this possible by moving, unifying and securing data to its rightful place, in the cloud, to be accessed real-time when authorised.
+      - title: Catalog Manager – Éditez vos catalogues produits
+        image: catalog-manager.png
+        advantages:
+          - text: Gérez les catalogues produits pour tous vos établissements et canaux de vente
+          - text: Créez des menus spécifiques selon l'heure (ex. petit déjeuner, déjeuner, dîner, happy hour)
+          - text: Gérez facilement les menus saisonniers (ex. Noël, Pâques, etc.)
+          - text: Garantissez la cohérence entre tous vos menus et canaux de vente
+          - text: Ajustez les prix et la disponibilité par établissement
+          - text: Prévisualisez et synchronisez les mises à jour de catalogues sur tous vos systèmes
+          - text: Gérez des menus complexes avec tailles, options, remises et offres groupées
+        button_label: Gérez vos catalogues
+        button_link: /fr/catalog-manager
 
-    scalability:
-      title: Maintenance réduite et scalabilité
-      description: |
-        Votre équipe de support et vos utilisateurs peuvent se connecter en un clic. Les requêtes à l'API sont visibles depuis le back-office. Pas besoin d'être développeur pour investiguer les problèmes.
+      - title: Dashboard – Analysez vos données de vente
+        image: dashboard.png
+        advantages:
+          - text: Visualisez les données de vente agrégées par canal de vente et par établissement
+          - text: Identifiez les produits les plus performants et les périodes de forte activité
+          - text: Analysez les tendances sur des périodes personnalisées
+          - text: Partagez des rapports avec vos collaborateurs
+          - text: Visualisez vos indicateurs clés dans un tableau de bord
+          - text: Suivez les performances de vos dark kitchens
+        button_label: Analysez vos ventes
+        button_link: /fr/dashboard
 
-  join:
-    title: Prêt à rejoindre l'écosystème ?
-    button_label: Connecter votre app
-    button_url: /fr/developers
-    link_label: Créer un compte gratuit
-    link_url: https://manager.hubrise.com/signup
+  partners:
+    title: Marque blanche pour nos partenaires
+    description: |
+      Proposez à vos clients les apps HubRise sur votre nom de domaine, avec votre logo, votre favicon et vos couleurs. Vos clients peuvent ainsi gérer leurs produits, centraliser leurs commandes, contrôler la disponibilité ou le stock, et mettre à jour leurs horaires d'ouverture. Vous décidez quelles fonctionnalités activer ou masquer.  
+      Nos apps en marque blanche s'adressent aux éditeurs de logiciels qui souhaitent enrichir leur solution, aux consultants qui veulent étendre leurs services, et aux franchises qui cherchent à renforcer la valeur offerte à leurs franchisés.
+    button_label: Devenir partenaire
+    button_link: /fr/devenir-partenaire
+    image: white-label.gif
+
+  testimonials:
+    title: Ce que disent nos clients et partenaires
+    description: HubRise est utilisé par plus de 2 500 entreprises dans le monde. [Voir d'autres témoignages](/fr/temoignages).
+    list:
+      - 10
+      - 9
+      - 8
+      - 7
+      - 6
+      - 5
+      - 4
+      - 3

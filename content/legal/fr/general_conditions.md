@@ -12,7 +12,7 @@ _Dernière mise à jour le 12 mai 2021._
 
 Les présentes sont conclues entre :
 
-- La société HubRise SAS, inscrite au RCS de Cannes sous le numéro 820 071 561 00014, société de droit français, ayant son siège au 150 avenue des Clos, 06250 Mougins, ci-après nommée « **HubRise** »,
+- La société HubRise SAS, inscrite au RCS de Cannes sous le numéro 820 071 561 00014, société de droit français, ayant son siège au 630 route des Dolines, Ophira 2, 06560 Valbonne, ci-après nommée « **HubRise** »,
 - Et entre toute personne physique ou morale, particulier ou professionnel, de droit privé ou de droit public souhaitant s'engager dans une ou plusieurs des prestations fournies par la société HubRise, ci-après nommée l'« **Utilisateur** ». Si l'Utilisateur est une personne agissant au nom d'une entité, elle déclare et affirme disposer des droits pour lier cette entité.
 
 L'Utilisateur et HubRise sont ci-après désignées ensemble les « **Parties** ».

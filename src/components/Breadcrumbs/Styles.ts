@@ -1,6 +1,7 @@
 import Link from "next/link"
 import styled from "styled-components"
 
+import { StyledIcon } from "@components/Icon/Styles"
 import { breakpoints, colors, fontSizes, mixin, sizes } from "@utils/styles"
 
 export const StyledBreadcrumbs = styled.ul`
@@ -17,24 +18,34 @@ export const StyledBreadcrumbs = styled.ul`
 
 export const Item = styled.li`
   font-size: ${fontSizes._14};
-  color: ${colors.textDarkest};
+  font-weight: 500;
+  color: ${colors.textDark};
   white-space: nowrap;
+  text-transform: capitalize;
 
   &::after {
     content: ">";
-    margin: 0 0.5rem;
+    margin: 0 1rem;
+    color: ${colors.textLighter};
+    font-size: ${fontSizes._19};
+    vertical-align: middle;
   }
 
   &:last-of-type {
-    color: ${colors.textMedium};
+    color: #344054;
+    font-weight: 600;
 
     &::after {
       content: "";
+      margin: 0;
     }
   }
 `
 
 export const ItemLink = styled(Link)`
-  color: ${colors.textDarkest};
   ${mixin.linkOver(colors.primary)};
+
+  ${StyledIcon} {
+    vertical-align: middle;
+  }
 `

@@ -1,3 +1,36 @@
+import { TMetric } from "@components/Metrics"
+
+import { HeroAppColor } from "./Hero/utils"
+
+export type THeroTitle = {
+  part_1: string
+  part_2: string
+  part_3: string
+  part_4: string
+}
+
+export type THeroAppCategory = {
+  title: string
+  type: string
+  color: HeroAppColor
+}
+
+export type TFeatureCard = {
+  title: string
+  description: string
+  image: string
+}
+
+export type TIncludedApp = {
+  title: string
+  image: string
+  advantages: Array<{
+    text: string
+  }>
+  button_label: string
+  button_link: string
+}
+
 export interface FrontpageYaml {
   path: string
   meta: {
@@ -5,60 +38,45 @@ export interface FrontpageYaml {
     description: string
   }
   hero: {
-    title: string
+    title: THeroTitle
     description: string
     button_label: string
-    button_url: string
+    button_link: string
+    app_categories: Array<THeroAppCategory>
   }
   content: {
-    apps: {
+    metrics: Array<TMetric>
+    features: {
       title: string
       description: string
-      link_url: string
-      categories: Array<string>
-    }
-    api: {
-      title: string
-      description: string
-      image: string
-    }
-    documentation: {
-      title: string
-      description: string
-      image: string
+      features_cards: Array<TFeatureCard>
     }
     pricing: {
+      title: {
+        start: string
+        price: string
+        end: string
+      }
+      description: string
+      button_label: string
+      button_link: string
+    }
+    included_apps: {
+      title: string
+      description: string
+      apps: Array<TIncludedApp>
+    }
+    partners: {
       title: string
       description: string
       button_label: string
-      button_url: string
-      link_label: string
-      link_url: string
+      button_link: string
+      image: string
     }
-    developers: {
+    testimonials: {
       title: string
       description: string
-      team_members: Array<{
-        name: string
-        filename: string
-      }>
-    }
-    mission_and_scalability: {
-      mission: {
-        title: string
-        description: string
-      }
-      scalability: {
-        title: string
-        description: string
-      }
-    }
-    join: {
-      title: string
-      button_label: string
-      button_url: string
-      link_label: string
-      link_url: string
+      list: Array<number>
     }
   }
 }
