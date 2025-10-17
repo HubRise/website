@@ -36,7 +36,6 @@ Connecter Delivery System à HubRise permet à votre logiciel de caisse de :
 - Recevoir les commandes de HubRise.
 - Envoyer les informations clients à HubRise
 - Recevoir les informations clients de HubRise.
-- Envoyer un catalogue à HubRise.
 
 ---
 
