@@ -22,8 +22,10 @@ interface FrontpageProps {
   featuresDescriptionMdx: MDXRemoteSerializeResult
   featuresImagesMap: ContentImageMap
   pricingDescriptionMdx: MDXRemoteSerializeResult
+  includedAppsDescriptionMdx: MDXRemoteSerializeResult
   partnersDescriptionMdx: MDXRemoteSerializeResult
   testimonials: TestimonialsYaml
+  testimonialDescriptionMdx: MDXRemoteSerializeResult
   testimonialLogoMap: ContentImageMap
 }
 
@@ -34,8 +36,10 @@ const Frontpage = ({
   featuresDescriptionMdx,
   featuresImagesMap,
   pricingDescriptionMdx,
+  includedAppsDescriptionMdx,
   partnersDescriptionMdx,
   testimonials,
+  testimonialDescriptionMdx,
   testimonialLogoMap,
 }: FrontpageProps): JSX.Element => {
   const { hero, content } = yaml
@@ -47,13 +51,13 @@ const Frontpage = ({
       <AppCarousel appLogosMap={appLogosMap} />
       <Features {...content.features} descriptionMdx={featuresDescriptionMdx} featuresImagesMap={featuresImagesMap} />
       <Pricing {...content.pricing} descriptionMdx={pricingDescriptionMdx} />
-      <IncludedApps {...content.included_apps} />
+      <IncludedApps {...content.included_apps} descriptionMdx={includedAppsDescriptionMdx} />
       <Partners {...content.partners} descriptionMdx={partnersDescriptionMdx} />
       <TestimonialsBlock
-        title={testimonials.content.block_title}
+        title={content.testimonials.title}
+        descriptionMdx={testimonialDescriptionMdx}
         testimonials={testimonials.content.testimonials}
         idXToDisplay={content.testimonials.list}
-        link={content.testimonials.link}
         nbToDisplayOnMobile={2}
         testimonialLogoMap={testimonialLogoMap}
       />

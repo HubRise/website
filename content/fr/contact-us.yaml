@@ -1,29 +1,28 @@
-
 meta:
-  title: Contact Us | HubRise
+  title: Contactez-nous | HubRise
   description:
 content:
   hero:
     title:
-      part_1: We'd Love to Hear From
-      part_2: You
+      part_1: Comment pouvons-nous
+      part_2: vous aider ?
     cards:
-      - title: General Queries
-        description: You are a store owner, a software editor or a reseller and you would like to know more about HubRise
+      - title: Demandes générales
+        description: Vous êtes un commerçant, un éditeur de logiciel ou un revendeur et vous souhaitez en savoir plus sur HubRise ou discuter d'un partenariat.
         email: contact@hubrise.com
         buttons:
-          - button_label: Schedule a call
+          - button_label: Planifier un appel
             button_link: https://calendar.app.google/tJBYJ2X78qVgD6AR6
-          - button_label: Send a message
+          - button_label: Envoyer un message
             popup_link: true
       - title: Support
-        description: You need support connecting your apps, managing your product catalog or troubleshooting
+        description: Vous avez besoin d'aide pour connecter vos applications, gérer votre catalogue produits ou résoudre un problème technique.
         email: support@hubrise.com
-      - title: Integration
-        description: You are an engineer and you need support with the integration or you would like to proceed with an integration audit.
+      - title: Intégration
+        description: Vous êtes ingénieur et vous avez besoin d'aide pour une intégration ou vous souhaitez effectuer un audit de votre intégration.
         email: integration@hubrise.com
   map:
-    title: Address
-    description: HubRise is located in the heart of Sophia Antipolis, the largest French technopole located in the French Riviera
+    title: Où sommes-nous ?
+    description: HubRise est situé au cœur de Sophia Antipolis, la plus grande technopole de France, sur la Côte d'Azur.
     image: address.png
     address: 630 Route des Dolines, 06560 Valbonne Sophia Antipolis, France

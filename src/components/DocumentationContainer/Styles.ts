@@ -4,7 +4,8 @@ import { boxShadows, breakpoints, colors, fontSizes, lineHeights, mixin } from "
 
 const commonTitleStyles = css`
   color: ${colors.textDarkest};
-  line-height: ${lineHeights.comfortable};
+  line-height: ${lineHeights.text};
+
   &:first-child {
     margin-top: 0;
   }
@@ -19,9 +20,7 @@ const underlineMixin = css`
   right: inherit;
   top: 100%;
   margin: 10px auto;
-  width: 6.25rem;
-  height: 2px;
-  background: ${colors.primary};
+  height: 3px;
   border-radius: 6.25rem;
 
   @media (min-width: ${breakpoints.biggest}) {
@@ -42,20 +41,24 @@ export const StyledContainer = styled.div`
     }
 
     &::after {
-      ${underlineMixin}
+      ${underlineMixin};
+      background: ${colors.primary};
+      width: 15%;
     }
   }
 
   h2 {
     font-size: ${fontSizes._19};
-    line-height: ${lineHeights.compact};
-    font-weight: 600;
+    line-height: ${lineHeights.mediumTitle};
+    font-weight: 700;
     color: ${colors.textDarkest};
     position: relative;
     margin: 2.5rem 0 2.5rem 0;
 
     &::after {
-      ${underlineMixin}
+      ${underlineMixin};
+      background: ${colors.backgroundLight};
+      width: 10%;
     }
 
     @media (min-width: ${breakpoints.large}) {
@@ -94,14 +97,7 @@ export const StyledContainer = styled.div`
     margin-top: calc(0.5rem - ${paragraphSpacing});
   }
 
-  p:has(> em) {
-    border-left: solid 2px ${colors.primary};
-    padding-left: 1rem;
-
-    & > em {
-      font-weight: 500;
-      color: #101828;
-    }
+  em {
   }
 
   h5 + ul,

@@ -23,7 +23,7 @@ export interface TTestimonial {
     name: string
     job_title: string
     company: string
-    logo: string
+    logo: string | null
   }
   filename: string
 }

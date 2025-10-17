@@ -8,24 +8,16 @@ content:
     - name: "ZeProgFactory"
       site_url: "https://www.zpf.fr"
       filename: ze-prog-factory.png
-      descriptions:
-        - "ZPF est le studio technique de [Michael Engelmann](https://www.linkedin.com/in/michaelengelmann/), développeur freelance spécialisé dans la conception d’applications sur mesure pour le mobile et la logistique, avec une solide expertise Microsoft. Il a développé plusieurs applications métiers, dont Syscall, StockAPPro ou encore front-end ERP."
-        - "Michael Engelmann a conçu une passerelle pour l’intégration de Syscall à HubRise, maîtrise parfaitement l’API HubRise et peut proposer des services de gestion, de connexion, d’intégration ou d’analyse de données."
+      description: "ZPF est le studio technique de [Michael Engelmann](https://www.linkedin.com/in/michaelengelmann/), développeur freelance spécialisé dans la conception d'applications sur mesure pour le mobile et la logistique, avec une solide expertise Microsoft. Il a développé plusieurs applications métiers, dont Syscall, StockAPPro ou encore front-end ERP.\n\nMichael Engelmann a conçu une passerelle pour l'intégration de Syscall à HubRise, maîtrise parfaitement l'API HubRise et peut proposer des services de gestion, de connexion, d'intégration ou d'analyse de données."
     - name: Slowey Systems
       site_url: https://slowey.ie
       filename: slowey-systems.png
-      descriptions:
-        - "Slowey Systems répond aux besoins des restaurants, bars, hôtels, théâtres et boîtes de nuit avec une gamme de produits riche, développés en interne ou par des partenaires : logiciel de caisse, écran cuisine, gestion des stocks, prise de commande à table, commande en ligne, application mobile, borne de commande, gestion des livreurs, fidélité et marketing, gestion du siège."
-        - "Slowey Systems a développé deux intégrations caisse avec HubRise et l'utilise de manière totalement autonome pour connecter de nombreuses solutions à son propre écosystème. Slowey Systems propose également des services d’intégration et de développement pour accompagner vos projets sur mesure."
+      description: "Slowey Systems répond aux besoins des restaurants, bars, hôtels, théâtres et boîtes de nuit avec une gamme de produits riche, développés en interne ou par des partenaires : logiciel de caisse, écran cuisine, gestion des stocks, prise de commande à table, commande en ligne, application mobile, borne de commande, gestion des livreurs, fidélité et marketing, gestion du siège.\n\nSlowey Systems a développé deux intégrations caisse avec HubRise et l'utilise de manière totalement autonome pour connecter de nombreuses solutions à son propre écosystème. Slowey Systems propose également des services d'intégration et de développement pour accompagner vos projets sur mesure."
     - name: JDC SA
       site_url: https://www.jdc.fr
       filename: jdc.png
-      descriptions:
-        - "JDC SA, multispécialiste des solutions pour les commerces de proximité depuis 1989, est reconnue pour son expertise dans de nombreux domaines : caisses enregistreuses, terminaux de paiement, balances de pesage, hygiène HACCP, monnayeurs automatiques, gestion de boissons, alarmes et vidéoprotection. JDC SA accompagne plus de 150 000 clients partout en France, grâce à un accompagnement local assuré par un réseau de 38 agences, avec 170 conseillers commerciaux et 400 techniciens."
-        - "JDC SA met toute son expertise au service d’un écosystème de solutions complètes, connectées et évolutives, dont HubRise fait pleinement partie."
+      description: "JDC SA, multispécialiste des solutions pour les commerces de proximité depuis 1989, est reconnue pour son expertise dans de nombreux domaines : caisses enregistreuses, terminaux de paiement, balances de pesage, hygiène HACCP, monnayeurs automatiques, gestion de boissons, alarmes et vidéoprotection. JDC SA accompagne plus de 150 000 clients partout en France, grâce à un accompagnement local assuré par un réseau de 38 agences, avec 170 conseillers commerciaux et 400 techniciens.\n\nJDC SA met toute son expertise au service d'un écosystème de solutions complètes, connectées et évolutives, dont HubRise fait pleinement partie."
     - name: "NextSourcia"
       site_url: "https://www.nextsourcia.com"
       filename: nextsourcia.png
-      descriptions:
-        - "NextSourcia est une société de conseil et d’ingénierie spécialisée dans les infrastructures IT et la transformation numérique. Elle propose un large panel de services : gestion d’infrastructure, externalisation de DSI, développement web et mobile, R&D technologique — notamment autour de sa solution open source Aquila CMS."
-        - "Depuis l’intégration d’Aquila CMS avec HubRise, permettant une synchronisation fluide des données, NextSourcia propose des services d’intégration et de développement pour accompagner vos projets personnalisés autour de HubRise."
+      description: "NextSourcia est une société de conseil et d'ingénierie spécialisée dans les infrastructures IT et la transformation numérique. Elle propose un large panel de services : gestion d'infrastructure, externalisation de DSI, développement web et mobile, R&D technologique — notamment autour de sa solution open source Aquila CMS.\n\nDepuis l'intégration d'Aquila CMS avec HubRise, permettant une synchronisation fluide des données, NextSourcia propose des services d'intégration et de développement pour accompagner vos projets personnalisés autour de HubRise."

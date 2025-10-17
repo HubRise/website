@@ -16,9 +16,9 @@ content:
       content: |
         <p>Voici deux descriptions, une courte, l'autre longue, en français et en anglais. Vous pouvez les adapter et les réutiliser pour faire référence à votre intégration avec HubRise. Elles résument en quelques mots ce que vos clients doivent savoir sur HubRise et comment nous pouvons leur venir en aide.</p>
         <h4>Description en français</h4>
-        <p>Description courte (\<50 mots):</p>
+        <p>Description courte (<50 mots):</p>
         <blockquote>HubRise connecte [Nom de l'App intégrée] aux solutions que vous utilisez tous les jours. Recevez vos commandes dans votre logiciel de caisse, transmettez les livraisons à votre transporteur, synchronisez vos clients avec vos listes e-marketing, connectez votre carte de fidélité digitale, et bien plus encore... Réalisez tous vos rêves d'intégration.</blockquote>
-        <p>Description longue (\<200 mots):</p>
+        <p>Description longue (<200 mots):</p>
         <blockquote>
           <p>HubRise est un middleware qui facilite les intégrations techniques entre solutions tierces. Les transactions sont enregistrées dans HubRise pour permettre aux applications de partager en temps réel votre catalogue de produits, votre fichier clients ou vos commandes.</p>
           <p>Grâce à son intégration HubRise, [Nom de l'App intégrée] peut se connecter à un écosystème de solutions : logiciels de caisse, solution de gestion de livreurs, services de livraison, solutions eMarketing (SMS / eMailing), business intelligence, systèmes de gestion de stock et de fidélisation client. Le nombre d'applications compatibles augmente chaque mois. Si l'application que vous souhaitez utiliser ne figure pas encore dans l'écosystème, vous pouvez contacter HubRise, qui prendra contact avec l'éditeur en vue d'une intégration. L'API publique et ouverte de HubRise vous permet également de créer vos propres intégrations.</p>
@@ -26,9 +26,9 @@ content:
         </blockquote>
 
         <h4>Description en anglais</h4>
-        <p>Description courte (\<50 mots):</p>
+        <p>Description courte (<50 mots):</p>
         <blockquote>HubRise helps you connect [Integrated App's Name] to the apps you use to run your business. Receive orders in your EPOS, send deliveries to your courier service, synchronise customers with your e-marketing lists, connect your digital loyalty card, and a whole lot more... Make your integration dreams come true.</blockquote>
-        <p>Description longue (\<200 mots):</p>
+        <p>Description longue (<200 mots):</p>
         <blockquote>
           <p>HubRise is a middleware used to facilitate technical integrations between third party solutions. Transactions are saved in HubRise to provide apps with real-time access to your product catalogue, your customer data or your orders.</p>
           <p>Thanks to its integration with HubRise, [Integrated App's Name] can connect to an ever growing ecosystem of solutions: Point Of Sale, online ordering, delivery management, delivery services, eMarketing (SMS/emailing), business intelligence, stock management, loyalty systems, and more. The number of compatible applications increases every month.</p>

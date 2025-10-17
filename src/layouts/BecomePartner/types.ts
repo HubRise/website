@@ -60,7 +60,8 @@ export interface BecomePartnerYaml {
     apps: TApps
     metrics: Array<TMetric>
     testimonials: {
-      link: string
+      title: string
+      description: string
       list: Array<number>
     }
     action_block: TActionBlock

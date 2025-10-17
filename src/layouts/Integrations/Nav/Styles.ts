@@ -2,7 +2,7 @@ import styled, { css } from "styled-components"
 
 import Icon from "@components/Icon"
 import { StyledIcon } from "@components/Icon/Styles"
-import { colors, mixin, sizes, zIndexValues, iconSizes, boxShadows, breakpoints, lineHeights } from "@utils/styles"
+import { colors, mixin, sizes, zIndexValues, iconSizes, boxShadows, breakpoints } from "@utils/styles"
 
 export const StyledNav = styled.div<{ $isSticky: boolean }>`
   position: sticky;
@@ -141,12 +141,11 @@ export const FilterListItem = styled.li<{ $isActive: boolean }>`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.6rem 0.875rem;
+  padding: 0.3rem 0.875rem;
   transition: background-color 0.1s ease-in;
   ${mixin.clickable}
   background-color: ${({ $isActive }) => ($isActive ? colors.backgroundLight : colors.backgroundWhite)};
   color: ${colors.textDarkest};
-  line-height: ${lineHeights.compact};
 
   &:hover {
     background-color: ${colors.backgroundLight};
@@ -154,6 +153,7 @@ export const FilterListItem = styled.li<{ $isActive: boolean }>`
 `
 
 export const CheckIcon = styled(Icon).attrs({ size: iconSizes._20 })`
+  margin-left: 1rem;
   color: ${colors.primary};
 `
 

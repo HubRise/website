@@ -1,10 +1,10 @@
 import Image from "next/image"
 import type { MDXRemoteSerializeResult } from "next-mdx-remote"
-import { MDXRemote } from "next-mdx-remote"
 
 import Button from "@components/Button"
 import Icon from "@components/Icon"
 import ScreenContainer from "@components/ScreenContainer"
+import SerializedMdxContent from "@components/SerializedMdxContent"
 import { iconSizes } from "@utils/styles"
 
 import { Description, Title } from "../shared/Styles"
@@ -31,7 +31,7 @@ const Partners = ({ title, descriptionMdx, button_label, button_link, image }: P
           <Title>{title}</Title>
 
           <Description>
-            <MDXRemote {...descriptionMdx} />
+            <SerializedMdxContent content={descriptionMdx} />
           </Description>
 
           <Button

@@ -239,7 +239,7 @@ content:
           logo: toporder.png
           country: FR
           title: Toporder
-          description: Toporder est un logiciel de caisse tactile sur iPad pour les commerces de proximité. Il centralise encaissement, gestion des stocks, suivi des ventes, fidélisation client, commande en ligne et  identification automatique des clients à l’appel. Compatible avec myPOS, il accepte tous type de paiements.
+          description: Toporder est un logiciel de caisse tactile sur iPad pour les commerces de proximité. Il centralise encaissement, gestion des stocks, suivi des ventes, fidélisation client, commande en ligne et  identification automatique des clients à l'appel. Compatible avec myPOS, il accepte tous type de paiements.
           additional_info:
         - website: https://tickeat.io
           documentation: /fr/apps/tickeat
@@ -400,7 +400,7 @@ content:
           logo: chataigne.png
           country: CH, FR
           title: Chataîgne
-          description: Châtaigne permet aux restaurants de proposer des services de livraison et de vente à emporter via WhatsApp. Les clients peuvent consulter le menu, passer commande, puis payer de manière sécurisée directement depuis WhatsApp, sans avoir à télécharger d'application ni créer de compte. L’objectif est de simplifier le passage de commandes, en évitant les appels et les frais des plateformes traditionnelles.
+          description: Châtaigne permet aux restaurants de proposer des services de livraison et de vente à emporter via WhatsApp. Les clients peuvent consulter le menu, passer commande, puis payer de manière sécurisée directement depuis WhatsApp, sans avoir à télécharger d'application ni créer de compte. L'objectif est de simplifier le passage de commandes, en évitant les appels et les frais des plateformes traditionnelles.
           additional_info:
         - website: https://dishop.co
           documentation: /fr/apps/dishop
@@ -524,7 +524,7 @@ content:
           logo: tablati.png
           country: MA
           title: Tablati
-          description: Tablati est une solution de commande et de paiement à table via QR code depuis un smartphone. Elle inclut des fonctionnalités comme la gestion des pourboires, la collecte d’avis Google et un programme de fidélité.
+          description: Tablati est une solution de commande et de paiement à table via QR code depuis un smartphone. Elle inclut des fonctionnalités comme la gestion des pourboires, la collecte d'avis Google et un programme de fidélité.
           additional_info: Intégration en cours.
         - website: https://www.tastycloud.fr
           documentation: /fr/apps/tastycloud
@@ -633,7 +633,7 @@ content:
           logo: quick-up.png
           country: GB
           title: QUICK UP
-          description: QUICK UP est un service de livraison à la demande pour restaurants, épiceries et autres commerces de proximité, avec optimisation des tournées, géolocalisation en temps réel des livreurs. QUICK UP permet la réduction des délais d’attente et la maîtrise des coûts de livraison.
+          description: QUICK UP est un service de livraison à la demande pour restaurants, épiceries et autres commerces de proximité, avec optimisation des tournées, géolocalisation en temps réel des livreurs. QUICK UP permet la réduction des délais d'attente et la maîtrise des coûts de livraison.
         - website: https://stuart.com/fr
           documentation: /fr/apps/stuart
           logo: stuart.png
@@ -784,7 +784,7 @@ content:
           logo: check.png
           country: FR
           title: Check
-          description: Check est une solution de tickets de caisse digitalisés, qui permet aux commerçants de mieux connaître et de fidéliser leurs clients grâce à des outils marketing basés sur les données d’achat.
+          description: Check est une solution de tickets de caisse digitalisés, qui permet aux commerçants de mieux connaître et de fidéliser leurs clients grâce à des outils marketing basés sur les données d'achat.
         - website: https://www.expedy.fr
           documentation: /fr/apps/expedy
           logo: expedy-print.png
@@ -852,5 +852,5 @@ content:
       paragraph_2:
         chunk_1: Nos utilisateurs sont des professionnels à la recherche de solutions pour moderniser leur activité.
         chunk_2: Il y a beaucoup à faire, et les bonnes idées d'aujourd'hui sont les standards de demain.
-    button_label: Start integration
+    button_label: Commencer l'intégration
     button_link: /fr/developers

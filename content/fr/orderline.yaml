@@ -1,57 +1,56 @@
-
 meta:
-  title: Orderline | HubRise
+  title: OrderLine | HubRise
   description:
 content:
   hero:
     title:
-      part_1: Centralise
-      part_2: all
-      part_3: Orders
-      part_4: and ease Operations
-    supporting_text: Consolidate orders from diverse sales channels into into one single app, OrderLine.
+      part_1: Centralisez
+      part_2: vos commandes
+      part_3: avec
+      part_4: OrderLine
+    supporting_text: Consolidez les commandes de vos canaux de vente dans une seule app. Mettez les à jour à chaque étape de préparation, et recevez des alertes lorsque les commandes doivent être prêtes.
     content:
       firstSide: |
-        Connect all your sales channels to HubRise and manage both on-premises and remote orders in a single web app, no matter their origin. Orders may come from table ordering, self-ordering kiosks, delivery platforms, your branded online ordering solution. All orders are transmitted in real time to your EPOS and routed to back-of-house operations.
+        Que votre caisse soit connectée ou non, OrderLine vous offre une vue claire de chaque commande, y compris son origine, la marque associée si vous gérez une dark kitchen, et sa destination finale. Vous pouvez également gérer les horaires d'ouverture et la disponibilité des produits pour tous vos canaux de vente depuis une seule interface.
       secondSide: |
-        If your EPOS cannot be connected or you prefer to manage orders separately, OrderLine offers a comprehensive view of your operations, displaying the origin of each order, the associated brand if you have a Dark Kitchen, and its final destination. Visual notifications keep you informed about orders that need to be ready soon.
+        Connectez vos systèmes de commande à table, bornes libre-service, plateformes de livraison et site de commande en ligne à HubRise, et gérez les commandes sur place et à distance dans une seule application. Votre cuisine reçoit les commandes en temps réel, avec des notifications visuelles pour vous avertir lorsqu'elles doivent être préparées.
   five_steps:
-    title: Get Started in 5 Steps
+    title: Démarrez en 5 étapes
     steps:
-      - title: Create a HubRise Account
-        description: Sign up to create your HubRise account and access centralised order management features.
-      - title: Connect Your Sales Channels
-        description: Contact HubRise support to connect your sales channels to your account, enabling seamless order integration.
-      - title: Get Set Up
-        description: Customise your workflow by configuring order statuses and selecting your preferred sound notifications. Connect your printer to your tablet and open OrderLine through your browser.
-      - title: Start Receiving Orders
-        description: Once your sales channels are connected, orders will flow into OrderLine in real-time, allowing you to monitor and manage them effortlessly.
-      - title: Manage Operations
-        description: Update product availability across all sales channels, adjust opening hours, or temporarily pause delivery platforms, all with a single click.
+      - title: Créez un compte HubRise
+        description: Inscrivez-vous sur HubRise pour accéder à OrderLine et à plus de 100 intégrations. Votre compte est prêt en quelques minutes.
+      - title: Connectez vos canaux de vente
+        description: Ajoutez vos plateformes de livraison, systèmes de commande à table, bornes ou autres applications à votre compte HubRise. Notre support est disponible en cas de besoin.
+      - title: Configurez OrderLine
+        description: Paramétrez vos statuts de commande, notifications sonores et préférences d'impression. Ajoutez un raccourci OrderLine à votre écran d'accueil pour un accès rapide depuis n'importe quel appareil.
+      - title: Commencez à recevoir des commandes
+        description: Une fois vos canaux de vente connectés, les commandes arrivent en temps réel dans OrderLine, prêtes à être suivies et gérées. Vous pouvez activer l'acceptation automatique pour plus d'efficacité.
+      - title: Gérez vos opérations
+        description: Ajustez les horaires d'ouverture, mettez en pause les plateformes de livraison et mettez à jour la disponibilité des produits sur tous les canaux en quelques clics.
   features:
-    title: OrderLine, your Free HubRise Order Management app.
-    description: Centralise all orders in OrderLine and manage them effortlessly from a single user interface. Update order statuses, pause delivery platforms or adjust opening hours, and control product availability—all tailored to your workflow.
+    title: Gérez les commandes de tous vos canaux
+    description: Centralisez les commandes de tous vos canaux de vente et gérez-les facilement depuis une seule interface. Mettez à jour les statuts de commande, suivez les livreurs, imprimez les tickets, ajustez les horaires d'ouverture, mettez en pause les boutiques en ligne et contrôlez la disponibilité des produits.
     list:
-      - title: Centralise all orders
+      - title: Centralisez vos commandes
         image: all-orders.png
-        description: Eliminate the hassle of managing multiple tablets. With or without an EPOS, OrderLine allows you to receive and manage all orders in one single web app. Monitor order statuses in real-time — whether on-site or remotely — from order confirmation to delivery.
-      - title: Ensure order accuracy
+        description: Visualisez et contrôlez chaque commande dans une seule application web, même si vous utilisez une caisse. Évitez de jongler avec plusieurs appareils et gardez vos opérations sur place fluides. Suivez les statuts des commandes en temps réel, de la confirmation à la livraison.
+      - title: Suivez le statut des commandes
         image: accuracy.png
-        description: Never miss an order, or an order item again. Stay on top of preparation times, delivery schedules, and destinations. Get notifications when orders need to be ready, ensuring smooth operations and a superior customer experience.
-      - title: Manage opening hours
+        description: Ne manquez plus jamais une commande ou un article. Gardez le contrôle sur les temps de préparation, les horaires de livraison et les destinations, et soyez alerté lorsque les livreurs approchent, afin que les commandes soient prêtes à temps.
+      - title: Contrôlez les horaires d'ouverture
         image: opening-hours.png
-        description: Easily update your opening hours across all platforms with a single click. During peak time, temporary pause delivery platform orders to prioritise on-premises guests or orders from your own branded online ordering website.
-      - title: Manage inventory
+        description: Mettez à jour les horaires d'ouverture sur toutes les plateformes en un seul clic. En période de forte affluence, mettez temporairement en pause les commandes des plateformes de livraison afin de prioriser les clients sur place ou ceux de votre propre site de commande en ligne.
+      - title: Gardez les stock synchronisés
         image: inventory.png
-        description: Prevent overselling products and add-ons by keeping product availability up to date across all sales channels in one click. Temporarily mark products as unavailable for a few hours, until the following day or for an undetermined period of time. Update inventory manually in OrderLine or via your EPOS integration.
-      - title: Tailored to your operations
+        description: Maintenez la disponibilité des produits à jour sur tous les canaux afin d'éviter les ventes en rupture. Marquez des articles comme indisponibles pour quelques heures, jusqu'au lendemain ou pour une durée indéterminée.
+      - title: Adaptez OrderLine à vos besoins
         image: operations.png
-        description: Customsie your order workflow to suit your operational needs. Automatically accept orders as soon as they arrive in HubRise, configure specific order statusesfor your restaurant. Print receipts manually or automate the process by connecting a third-party cloud printer.
+        description: Configurez OrderLine selon vos besoins opérationnels. Acceptez automatiquement les commandes, définissez des statuts personnalisés pour votre restaurant et imprimez les tickets manuellement ou automatiquement avec une imprimante cloud connectée.
   discover:
-    title: Discover other apps to streamline your operations
-    description: Discover the benefits offered by other tools design to complement your operations, optimise workflows, and simplify reporting.
+    title: Apps incluses pour optimiser vos opérations
+    description: Découvrez les autres apps incluses avec HubRise pour optimiser vos opérations, fluidifier vos flux de travail et simplifier le reporting.
     buttons:
-      - button_label: Explore the Catalog Manager
+      - button_label: Gérez vos catalogues
         button_link: /fr/catalog-manager
-      - button_label: View our Dashboard
+      - button_label: Analysez vos ventes
         button_link: /fr/dashboard

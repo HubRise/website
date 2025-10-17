@@ -27,7 +27,7 @@ export const BaseStyles = createGlobalStyle`
   optgroup,
   select,
   textarea {
-    line-height: ${lineHeights.comfortable};
+    line-height: ${lineHeights.text};
   }
 
     // Hide the "protected by reCaptcha" badge in the bottom left of the screen

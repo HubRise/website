@@ -3,8 +3,6 @@
 import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 
 import ActionBlock from "@components/ActionBlock"
-import GetInTouch from "@components/GetInTouch"
-import { GetInTouchYaml } from "@components/GetInTouch/types"
 import Metrics from "@components/Metrics"
 import TestimonialsBlock from "@components/TestimonialsBlock"
 import { TestimonialsYaml } from "@layouts/Testimonials/types"
@@ -20,22 +18,21 @@ import { BecomePartnerYaml } from "./types"
 interface BecomePartnerProps {
   yaml: BecomePartnerYaml
   testimonials: TestimonialsYaml
-  getInTouch: GetInTouchYaml
   middlewareDescriptionMdx: MDXRemoteSerializeResult
   appsDescriptionMdx: MDXRemoteSerializeResult
+  testimonialDescriptionMdx: MDXRemoteSerializeResult
   testimonialLogoMap: ContentImageMap
 }
 
 const BecomePartner = ({
   yaml,
   testimonials,
-  getInTouch,
   middlewareDescriptionMdx,
   appsDescriptionMdx,
+  testimonialDescriptionMdx,
   testimonialLogoMap,
 }: BecomePartnerProps): JSX.Element => {
   const content = yaml.content
-  const { title, description, button_label, button_link } = getInTouch.content
 
   return (
     <>
@@ -46,14 +43,13 @@ const BecomePartner = ({
       <Apps apps={content.apps} descriptionMdx={appsDescriptionMdx} />
       <Metrics metrics={content.metrics} />
       <TestimonialsBlock
-        title={testimonials.content.block_title}
+        title={yaml.content.testimonials.title}
+        descriptionMdx={testimonialDescriptionMdx}
         testimonials={testimonials.content.testimonials}
         idXToDisplay={content.testimonials.list}
         testimonialLogoMap={testimonialLogoMap}
-        link={content.testimonials.link}
       />
       <ActionBlock actionBlockData={content.action_block} />
-      <GetInTouch title={title} description={description} button_label={button_label} button_link={button_link} />
     </>
   )
 }

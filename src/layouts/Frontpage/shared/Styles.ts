@@ -4,7 +4,7 @@ import { fontSizes, lineHeights, mixin } from "@utils/styles"
 
 export const Title = styled.h2`
   font-size: ${fontSizes._32};
-  line-height: ${lineHeights.compact};
+  line-height: ${lineHeights.largeTitle};
   font-weight: 600;
 `
 

@@ -1,71 +1,70 @@
-
 meta:
   title: Dashboard | HubRise
   description:
 content:
   hero:
     title:
-      part_1: Track
-      part_2: Sales to Make
-      part_3: Smarter
-      part_4: Business Decisions
-    description: Check your order data on the HubRise Dashboard to see how your business is performing across all locations and sales channels. Track revenue trends, compare performance over time, and identify your best-selling products and busiest hours.
+      part_1: Prenez les
+      part_2: bonnes
+      part_3: décisions avec le
+      part_4: Dashboard HubRise
+    description: Consultez vos données de commande dans le Dashboard HubRise pour suivre les performances de votre activité sur tous vos établissements et canaux de vente. Analysez les tendances de chiffre d'affaires, comparez les résultats dans le temps et identifiez vos produits les plus vendus et vos heures de pointe.
     content:
-      firstSide: Retail stores and restaurants generate a large amount of data — much of it valuable for analysis. When used effectively, this data helps business owners and managers make informed decisions, improve performance, and drive growth.
-      secondSide: The HubRise Dashboard provides easy access to ready-made reports from all connected sales channels. View aggregated data for a specific location or across all locations — anytime, on any device — to support data-driven understanding and decision-making.
+      firstSide: Les commerces et restaurants génèrent une grande quantité de données — souvent précieuses pour l'analyse. Bien exploitées, ces données permettent aux dirigeants et responsables de prendre des décisions éclairées, d'améliorer la performance et de stimuler la croissance.
+      secondSide: Le Dashboard HubRise donne un accès simple à des rapports prêts à l'emploi provenant de tous vos canaux de vente connectés. Consultez des données agrégées pour un établissement ou l'ensemble de votre réseau — à tout moment et depuis n'importe quel appareil — pour soutenir une prise de décision basée sur les données.
   features:
-    title: Features
+    title: Fonctionnalités
     cards:
-      - title: Real-Time Data
-        description: Access up-to-date sales data as it happens. Monitor performance across your business in real time, on any device, from anywhere, so you can respond quickly to changes, spot issues early, and act with confidence.
+      - title: Données en temps réel
+        description: Accédez aux données de vente au moment même où elles sont générées. Suivez la performance de votre activité en temps réel grâce à des chiffres qui se mettent à jour instantanément à chaque commande. Réagissez rapidement aux évolutions, détectez les problèmes à temps et agissez en toute confiance.
         image: real-time.svg
-      - title: Ready-Made Reports
-        description: See ready-made reports from your connected apps, saving time and reducing manual work. Share access to these easy-to-understand reports with local managers to keep teams informed, engaged, and focused on performance.
+      - title: Rapports prêts à l'emploi
+        description: Accédez à des rapports automatiques issus de vos applications connectées, sans travail manuel fastidieux. Partagez ces rapports clairs et faciles à comprendre avec les responsables locaux pour garder vos équipes informées, impliquées et concentrées sur la performance.
         image: ready-made-reports.svg
-      - title: Consolidated Data Across All Locations
-        description: View aggregated data from all your locations and connected sales channels in one place. Gain a global overview of your business, without switching between systems or apps.
+      - title: Données consolidées
+        description: Visualisez les données agrégées de tous vos établissements et canaux de vente dans un seul endroit. Obtenez une vue d'ensemble globale de votre activité, sans avoir à passer d'un système ou d'une application à l'autre.
         image: consolidated-data-locations.svg
-      - title: Granular Performance Insights
-        description: Analyse performance by sales channel or location to understand where you are doing well and where adjustments are needed. Compare trends across locations to support informed operational decisions.
+      - title: Analyse fine des performances
+        description: Analysez les résultats par canal de vente ou par établissement pour identifier les points forts et les axes d'amélioration. Comparez les tendances entre sites afin de soutenir des décisions opérationnelles éclairées.
         image: granular-performance.svg
-      - title: Revenue Over Time
-        description: Track revenue trends by day, week, month, year, or custom date range to identify growth patterns and seasonality. Use historical data to compare performance with previous years, improve forecasting, and plan with confidence.
+      - title: Évolution du chiffre d'affaires
+        description: Suivez les tendances de votre chiffre d'affaires par jour, semaine, mois, année ou période personnalisée pour identifier les schémas de croissance et la saisonnalité. Utilisez les données historiques pour comparer les performances avec les années précédentes, affiner vos prévisions et planifier sereinement.
         image: revenue-over-time.svg
-      - title: Top-Selling Products
-        description: See your 30 most popular items at a glance, ranked by sales volume — or view the full list for deeper insights. Use this data to fine-tune your catalogue or menu, plan targeted promotions, and optimise inventory and purchasing decisions.
+      - title: Produits les plus vendus
+        description: Visualisez vos 30 produits les plus populaires en un coup d'œil, classés par volume de ventes — ou affichez la liste complète pour une analyse plus approfondie. Utilisez ces informations pour ajuster votre catalogue, planifier des promotions ciblées et optimiser vos achats.
         image: top-selling-products.svg
   details:
-    title: Everything You Need to Keep Your Catalogs Updated
+    title: Comprenez votre activité grâce aux données
     content_blocks:
-      - title: Revenue Breakdown
+      - title: Répartition du chiffre d'affaires
         content: |
-          <p>HubRise breaks down your revenue from three angles:</p>
+          <p>Visualisez votre chiffre d'affaires selon trois axes :</p>
           <ul>
-            <li>Sales Channel - your website versus ordering platforms or other apps.</li>
-            <li>Connection Name - your main brand and virtual brands.</li>
-            <li>Location - your stores driving the most revenue.</li>
+            <li><strong>Canal</strong> – comparez les plateformes de livraison à votre propre site ou à d'autres applications.</li>
+            <li><strong>Nom de connexion</strong> – distinguez votre marque principale des marques virtuelles ou dark kitchens.</li>
+            <li><strong>Établissement</strong> – identifiez les points de vente qui génèrent le plus de revenus.</li>
           </ul>
         image: revenue-breakdown.png
-      - title: Revenue Over Time
+      - title: Évolution du chiffre d'affaires
         content: |
-          <p>The line chart shows how your revenue, sales volume, and average order value evolve, with granularity that adapts to your selected date range.</p>
-          <p>A summary panel highlights key metrics and shows their growth or decline at a glance.</p>
+          <p>Le graphique en courbes suit l'évolution du chiffre d'affaires, du volume de ventes et du panier moyen dans le temps, avec une granularité qui s'adapte à la période sélectionnée.</p>
+          <p>Un panneau de synthèse met en avant les indicateurs clés et les tendances à la hausse ou à la baisse.</p>
         image: revenue-over-time.png
-      - title: Peak Hours
+      - title: Heures de pointe
         content: |
-          <p>This heatmap reveals when your sales are highest, broken down by day and hour.</p>
-          <p>Understand your peak hours can be wisely used to optimise staffing, plan promotions, and manage inventory more efficiently.</p>
+          <p>Une carte thermique affiche vos périodes les plus fréquentées par jour et par heure.</p>
+          <p>Exploitez ces informations pour optimiser le personnel, planifier des promotions et mieux gérer les stocks.</p>
         image: peak-hours.png
-      - title: Top Selling Products
+      - title: Produits les plus vendus
         content: |
-          <p>See your 30 best-performing items by sales volume.</p>
-          <p>Filter by location and date to understand trends and customer preferences.</p>
+          <p>Consultez vos 30 articles les plus vendus et leurs volumes de vente, ou affichez l'ensemble de votre catalogue.</p>
+          <p>Filtrez par établissement et par période pour repérer les tendances saisonnières et mieux comprendre les préférences de vos clients.</p>
         image: top-selling-products.png
   action_block:
-    title: Discover other apps to streamline your operations
-    description: Discover the benefits offered by other tools design to complement your operations, optimise workflows, and simplify reporting.
+    title: Apps incluses pour optimiser vos opérations
+    description: Découvrez les autres apps incluses avec HubRise pour optimiser vos opérations, fluidifier vos flux de travail et simplifier le reporting.
     buttons:
-      - button_label: Explore the Catalog Manager
+      - button_label: Gérez vos catalogues
         button_link: /fr/catalog-manager
-      - button_label: View OrderLine
+      - button_label: Centralisez vos commandes
         button_link: /fr/orderline

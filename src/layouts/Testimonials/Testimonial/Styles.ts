@@ -55,7 +55,7 @@ export const Details = styled.div`
 export const Detail = styled.span`
   font-size: ${mixin.responsiveText};
   font-weight: 600;
-  line-height: ${lineHeights.compact};
+  line-height: ${lineHeights.largeTitle};
   letter-spacing: 0.04em;
 `
 

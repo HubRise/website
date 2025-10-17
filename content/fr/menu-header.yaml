@@ -7,12 +7,12 @@
   content:
     included_apps:
       - title: OrderLine
-        description: Centralisez toutes vos commandes
+        description: Centralisez vos commandes
         link_label: En savoir plus
         link: /fr/orderline
         image: orderline.png
       - title: Catalog Manager
-        description: Gérez tous vos produits en un seul endroit
+        description: Gérez vos produits en un seul endroit
         link_label: En savoir plus
         link: /fr/catalog-manager
         image: catalog-manager.png

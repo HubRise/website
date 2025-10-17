@@ -6,6 +6,20 @@ import { colors, mixin } from "@utils/styles"
 
 import { TPosition } from "./index"
 
+export const DropdownOverlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  pointer-events: none;
+  z-index: 999;
+`
+
 export const DropdownMenuWrapper = styled.div<{ $position: TPosition }>`
   top: 1.5rem;
   padding-top: 0.5rem;
@@ -16,6 +30,7 @@ export const DropdownMenuWrapper = styled.div<{ $position: TPosition }>`
     opacity 0.2s ease,
     visibility 0.2s ease;
   pointer-events: none;
+  z-index: 1000;
 
   ${({ $position }) =>
     $position === "left" &&
@@ -29,7 +44,7 @@ export const DropdownMenuWrapper = styled.div<{ $position: TPosition }>`
       left: 50%;
       transform: translate(-50%, 0);
     `}
-  
+
   ${({ $position }) =>
     $position === "bigMenu" &&
     css`
@@ -79,6 +94,11 @@ export const DropdownContainer = styled.div`
 
     ${DropdownTrigger} ${StyledIcon} {
       transform: rotate(180deg);
+    }
+
+    ~ ${DropdownOverlay} {
+      opacity: 1;
+      visibility: visible;
     }
   }
 `

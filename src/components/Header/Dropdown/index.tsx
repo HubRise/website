@@ -10,6 +10,7 @@ import {
   DropdownMenuContent,
   DropdownContainer,
   DropdownListLink,
+  DropdownOverlay,
 } from "./Styles"
 
 export type TDropdownOption = {
@@ -37,41 +38,45 @@ const Dropdown = ({
   position = "left",
 }: DropdownProps) => {
   return (
-    <DropdownContainer data-testid={dataTestid}>
-      <DropdownTrigger>
-        {value}
-        <Icon code="expand_more" size={iconSizes._20} />
-      </DropdownTrigger>
+    <>
+      <DropdownContainer data-testid={dataTestid}>
+        <DropdownTrigger>
+          {value}
+          <Icon code="expand_more" size={iconSizes._20} />
+        </DropdownTrigger>
 
-      <DropdownMenuWrapper $position={position}>
-        <DropdownMenu>
-          {withOptions ? (
-            <DropdownList>
-              {options?.map((option, index) => {
-                const isActive = option.link_label.toLocaleLowerCase() === value.toLocaleLowerCase()
-                return (
-                  <DropdownListItem $isActive={isActive} key={index}>
-                    {isActive ? (
-                      <>
-                        {option.link_label}
-                        {isActive && <Icon code="check" size={iconSizes._20} color={colors.primary} />}
-                      </>
-                    ) : (
-                      <DropdownListLink href={option.link}>
-                        {option.link_label}
-                        {isActive && <Icon code="check" size={iconSizes._20} color={colors.primary} />}
-                      </DropdownListLink>
-                    )}
-                  </DropdownListItem>
-                )
-              })}
-            </DropdownList>
-          ) : (
-            <DropdownMenuContent>{menuContent}</DropdownMenuContent>
-          )}
-        </DropdownMenu>
-      </DropdownMenuWrapper>
-    </DropdownContainer>
+        <DropdownMenuWrapper $position={position}>
+          <DropdownMenu>
+            {withOptions ? (
+              <DropdownList>
+                {options?.map((option, index) => {
+                  const isActive = option.link_label.toLocaleLowerCase() === value.toLocaleLowerCase()
+                  return (
+                    <DropdownListItem $isActive={isActive} key={index}>
+                      {isActive ? (
+                        <>
+                          {option.link_label}
+                          {isActive && <Icon code="check" size={iconSizes._20} color={colors.primary} />}
+                        </>
+                      ) : (
+                        <DropdownListLink href={option.link}>
+                          {option.link_label}
+                          {isActive && <Icon code="check" size={iconSizes._20} color={colors.primary} />}
+                        </DropdownListLink>
+                      )}
+                    </DropdownListItem>
+                  )
+                })}
+              </DropdownList>
+            ) : (
+              <DropdownMenuContent>{menuContent}</DropdownMenuContent>
+            )}
+          </DropdownMenu>
+        </DropdownMenuWrapper>
+      </DropdownContainer>
+
+      <DropdownOverlay />
+    </>
   )
 }
 

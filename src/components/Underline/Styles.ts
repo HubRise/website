@@ -7,7 +7,7 @@ import { UnderlinePosition } from "."
 export const StyledUnderline = styled.div<{ $position: UnderlinePosition }>`
   margin: ${({ $position }) => ($position === "center" ? "0 auto" : "0")};
   width: 7.5rem;
-  height: 0.1875rem;
+  height: 3px;
   border-radius: 6.25rem;
   background-color: ${colors.primary};
   margin-top: 1rem;

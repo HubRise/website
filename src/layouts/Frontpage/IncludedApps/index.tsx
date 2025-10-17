@@ -1,4 +1,5 @@
 import Image from "next/image"
+import type { MDXRemoteSerializeResult } from "next-mdx-remote"
 
 import Button from "@components/Button"
 import Icon from "@components/Icon"
@@ -13,12 +14,13 @@ import { SideBlocks, ContentWrapper, Title, Advantage, Advantages, IconWrapper, 
 
 interface IncludedAppsProps {
   title: string
+  descriptionMdx: MDXRemoteSerializeResult
   apps: Array<TIncludedApp>
 }
 
-const IncludedApps = ({ title, apps }: IncludedAppsProps) => {
+const IncludedApps = ({ title, descriptionMdx, apps }: IncludedAppsProps) => {
   return (
-    <ScreenContainer withHeader title={title}>
+    <ScreenContainer withHeader title={title} descriptionMdx={descriptionMdx}>
       <SideBlocks>
         {apps.map((integrationApp, index) => {
           return (

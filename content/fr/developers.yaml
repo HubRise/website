@@ -29,7 +29,7 @@ content:
       icon: edge-cases.svg
 
   action_block:
-    title: Need Help Getting Started?
-    description: Our integration support team is here for you at every step of the process.
+    title: Besoin d'aide pour démarrer ?
+    description: Notre équipe de support intégration vous accompagne à chaque étape du processus.
     buttons:
-      - button_label: Send Us a Message
+      - button_label: Nous écrire

@@ -9,9 +9,8 @@ hero:
     part_2: Restaurants
     part_3: and
     part_4: Retail
-  description: |
-    Connect your EPOS, in-store and online sales channels, and management tools so they work together through one powerful middleware platform.
-  button_label: Browse Integrations
+  description: Connect your EPOS, your delivery platforms, and your digital solutions in one ecosystem. Manage orders, sync products, and keep inventory up to date.
+  button_label: See All Integrations
   button_link: /apps
   app_categories:
     - title: Points of Sales
@@ -35,25 +34,25 @@ content:
       title: Integrations
     - number: 20+
       title: Countries
-    - number: 2,000+
+    - number: 2,500+
       title: Customers
 
   features:
-    title: Use HubRise to Streamline Your Store Operations
+    title: Connect All Your Tools. Keep Your Systems in Sync.
     description: |
-      Seamlessly connect with your preferred digital partners and sales channels while eliminating the hassle of managing product catalogs and inventory across multiple platforms. Centralise all orders, customers, data, and analytics for streamlined operations in a tailored working environment.
+      Connect your digital solutions, sales channels, delivery services, marketing tools, and more. Eliminate the hassle of managing product catalogs and inventory across multiple platforms. Centralise orders, customers and analytics in a unified workspace.
     features_cards:
       - title: Connect Apps
         description: |
-          Use HubRise to connect your EPOS as well as other solutions you use on your day to day operations: table ordering, online ordering, food delivery platforms, self ordering kiosks, e-markering, inventory management solutions, cloud printers and more.
+          Use HubRise to connect your EPOS as well as other solutions you use in your day to day operations: table ordering, online ordering, food delivery platforms, self ordering kiosks, e-marketing, inventory management solutions, cloud printers, and more.
         image: use-connect-apps.png
       - title: Manage Products
         description: |
-          Centralise your product catalogs in one app for all sales channels and locations. Set different products and prices as needed. Handle complex catalogs with product sizes, multiple options, and promotions.
+          Centralise your product catalogs for all your sales channels and locations. Set different products and prices as needed. Handle complex catalogs with product sizes, multiple options, nutrition information, tax, and promotions.
         image: use-manage-products.png
       - title: Synchronise Inventory
         description: |
-          Synchronise inventory with your EPOS, or manually snooze products in our app. Changes are instantly reflected across all channels, helping customers see only what is available and streamlining your operations.
+          Synchronise inventory with your EPOS, or manually snooze products in our app. Changes are instantly reflected across all channels, so customers only see what's available and you avoid negative reviews.
         image: use-synchronise-inventory.png
       - title: Build a Customer Database
         description: |
@@ -61,9 +60,9 @@ content:
         image: use-customer-database.png
       - title: Centralise Orders
         description: |
-          Send all orders to your EPOS, or use HubRise to view and manage orders from all your sales channels in one app. Update statuses, track drivers, print receipts, adjust opening hours, or pause online stores—all in one click.
+          Send all orders to your EPOS, or use HubRise to view and manage orders from all sales channels in one app. Update statuses, track drivers, print receipts, adjust opening hours, or pause online stores—all in one click.
         image: use-centralise-orders.png
-      - title: Make informed decisions
+      - title: Make Informed Decisions
         description: |
           View aggregated sales data, broken down by location or sales channel, for any week, month, or custom period of time. Identify best-selling products and peak times to gain clear operational insight.
         image: use-informed-decisions.png
@@ -72,29 +71,31 @@ content:
     title:
       start: Fair Pricing,
       price: €35
-      end: Per Store
+      end: per Month
     description: |
-      No setup fee. No commitment. No contract. No credit card required.
-      Unlimited number of connections. No hidden costs.
-    button_label: Get Started Now
+      No setup fees. No commitment. No hidden costs.
+      Unlimited number of connections per location.
+    button_label: View Pricing Page
+    button_link: /pricing
 
   included_apps:
     title: Included Apps with Your Subscription
+    description: |
+      These apps developed by HubRise are included in your subscription. Used by small businesses and chains alike, they complement the features of your existing solutions.
     apps:
-      - title: OrderLine - Receive Orders in One Place
+      - title: OrderLine - Receive Your Orders in One Place
         image: orderline.png
         advantages:
           - text: Centralise orders from all sales channels
           - text: View expected delivery times and track drivers
           - text: Update order statuses in real time
           - text: Print receipts
-          - text: Adjust product availability
+          - text: Control product and store availability
           - text: Customise your order workflow
-          - text: Update opening hours or temporarily pause stores
-        button_label: Learn more about OrderLine
+        button_label: Start Receiving Orders
         button_link: /orderline
 
-      - title: Catalog Manager - Edit and Publish Your Product Catalogs
+      - title: Catalog Manager - Edit And Publish Product Catalogs
         image: catalog-manager.png
         advantages:
           - text: Manage product catalogs for all locations and sales channels
@@ -104,7 +105,7 @@ content:
           - text: Adjust prices and availability by location
           - text: Preview and sync catalog updates across all systems
           - text: Handle complex menus with product sizes, options, discounts, and bundles
-        button_label: Explore Catalog Manager
+        button_label: Manage Your Catalogs
         button_link: /catalog-manager
 
       - title: Dashboard - Analyse Your Sales Data
@@ -116,7 +117,7 @@ content:
           - text: Share reports with key stakeholders
           - text: Visualise KPIs in a clear dashboard
           - text: Monitor performance of dark kitchen operations
-        button_label: Discover the HubRise Dashboard
+        button_label: Analyse Your Sales
         button_link: /dashboard
 
   partners:
@@ -124,12 +125,13 @@ content:
     description: |
       Empower your clients with HubRise web apps customised to your brand. Host them on your domain name, with your logo, favicon, and colours. Your clients can use these tools to manage products, centralise orders, control product availability or inventory, and update opening hours. You decide which features to activate or hide.
       HubRise white label apps appeal to software providers looking to enhance their solutions with additional features, consultants seeking to expand their service offering, and franchises aiming to increase the value they deliver to franchisees.
-    button_label: Check Partnership Opportunities
+    button_label: Become a Partner
     button_link: /become-partner
     image: white-label.gif
 
   testimonials:
-    link: /testimonials
+    title: What Our Customers And Partners Are Saying
+    description: HubRise is trusted by more than 2,500 businesses worldwide. [View other testimonials](/testimonials).
     list:
       - 10
       - 9
