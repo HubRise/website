@@ -38,7 +38,8 @@ export const PageHeroTitle = styled.h1`
 `
 
 export const Description = styled.p`
-  margin-top: 1rem;
+  margin: 1rem auto 0;
+  max-width: 65rem;
   ${mixin.responsiveText};
 `
 

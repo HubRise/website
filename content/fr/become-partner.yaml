@@ -8,24 +8,24 @@ content:
       part_2: pour connecter
       part_3: toutes les applications
       part_4: dont vos clients ont besoin
-    description: "Gagnez du temps, concentrez-vous sur votre produit. Nous aidons nos partenaires à réussir en prenant en charge les intégrations. Nous ajoutons de la valeur à votre offre produit ou service en proposant nos applications en marque blanche, adaptées à votre identité visuelle. Vous gagnez du temps et vous vous concentrez sur l'essentiel: votre produit."
+    description: "Nous aidons nos partenaires à réussir en prenant en charge leurs intégrations et en proposant nos applications en marque blanche, adaptées à leur identité visuelle. Nos partenaires gagnent du temps et peuvent se concentrer sur l'essentiel : leur produit."
   features:
     - title: API robuste
-      description: Bénéficiez de notre API flexible et fiable pour répondre à une large gamme de besoins d'intégration et gérer les flux de commandes à haut volume exigés par les marques multi-établissements.
+      description: Bénéficiez d'une API flexible et robuste pour répondre à une large gamme de besoins d'intégration et gérer les flux de commandes à haut volume exigés par les marques multi-établissements.
     - title: Intégrations transparentes
       description: Connectez-vous aux systèmes de caisse, plateformes de livraison, solutions de commande et autres outils métiers pour garantir des opérations fluides et fiables.
     - title: Service en marque blanche
       description: Proposez une solution entièrement intégrée sous votre propre marque, avec HubRise en back-end, invisible pour vos clients.
     - title: Accompagnement à l'intégration
-      description: Bénéficiez d'un accompagnement expert tout au long du processus d'intégration, ainsi que d'outils d'audit pour valider votre configuration et garantir sa fiabilité sur le long terme.
+      description: Bénéficiez d'un accompagnement expert tout au long du partenariat, ainsi que d'outils d'audit pour valider votre intégration et assurer sa mise à jour sur le long terme.
     - title: Documentation unifiée
-      description: Accédez à une API unique et complète avec une documentation claire couvrant toutes les fonctionnalités HubRise — pour un développement et une intégration plus rapides et plus simples.
+      description: Accédez à une API unique et complète avec une documentation claire couvrant toutes les fonctionnalités HubRise, pour une intégration plus simple et plus rapide pour vos développeurs.
     - title: Synchronisation en temps réel
-      description: Gardez tous vos systèmes alignés grâce à la synchronisation en temps réel des menus, niveaux de stock, commandes, données clients et horaires d'ouverture.
+      description: Gardez tous les systèmes alignés grâce à la synchronisation en temps réel des menus, niveaux de stock, commandes, données clients, et réglages opérationnels.
     - title: Marque personnalisée
       description: Appliquez votre logo et votre identité visuelle aux applications HubRise pour offrir une expérience fluide et professionnelle à vos utilisateurs.
-    - title: Journaux transparents
-      description: Utilisez des journaux détaillés et accessibles pour simplifier le diagnostic et obtenir une visibilité complète sur vos intégrations et vos flux de données.
+    - title: Journaux détaillés
+      description: Consultez nos journaux accessibles et détaillés pour simplifier le diagnostic et obtenir une visibilité complète sur vos intégrations et vos flux de données.
   benefits:
     title: Les avantages commerciaux d'une intégration
     benefit_cards:
@@ -39,17 +39,17 @@ content:
         description: Générez des revenus additionnels grâce à notre programme de partenariat et créez des opportunités d'upsell en proposant la centralisation des données et des intégrations à votre base de clients existante.
         image: access-to-new-revenue-streams.svg
       - title: Meilleure rétention client
-        description: Offrez une expérience utilisateur plus fluide en éliminant les processus manuels et en synchronisant les commandes directement avec les systèmes de caisse — pour une satisfaction client accrue et une fidélité renforcée.
+        description: Améliorez l'expérience utilisateur en éliminant les processus manuels et en synchronisant les commandes directement avec les systèmes de caisse — pour une satisfaction client accrue et une fidélité renforcée.
         image: improved-client-retention.svg
   middleware:
-    title: HubRise, la solution middleware qui simplifie les intégrations
-    description: Avec une seule intégration, connectez-vous à un écosystème en constante expansion de solutions complémentaires intégrées à HubRise. Les transactions sont stockées dans HubRise, offrant à vos applications un accès en temps réel à votre catalogue produits, vos données clients et vos commandes.
+    title: HubRise, la solution middleware qui simplifie vos intégrations
+    description: Avec une seule intégration, vous êtes connecté à un écosystème de solutions complémentaires en expansion constante. Les transactions sont stockées dans HubRise, offrant à vos applications un accès en temps réel à votre catalogue produits, vos données clients et vos commandes.
     content:
-      firstSide: HubRise offre aux éditeurs de logiciels un moyen simplifié d'enrichir leur produit en proposant des intégrations prêtes à l'emploi avec des systèmes de caisse, des plateformes de commande en ligne, des bornes libre-service, des plateformes de livraison, des outils de fidélité et marketing, des systèmes opérationnels et de gestion des stocks, et bien plus encore.
+      firstSide: HubRise permet aux éditeurs de logiciels d'enrichir leur produit en proposant des intégrations prêtes à l'emploi avec des systèmes de caisse, des plateformes de commande en ligne, des bornes libre-service, des plateformes de livraison, des outils de fidélité et de marketing, des systèmes de gestion des opérations et des stocks, et bien plus encore.
       secondSide: Les connexions peuvent être gérées par HubRise ou proposées sous votre propre marque. Nos connexions et applications en marque blanche vous permettent d'élargir votre offre d'intégration sous votre identité, en fournissant à vos clients les outils nécessaires pour compléter votre solution et offrir un environnement totalement intégré — sans la complexité de la gestion de multiples systèmes.
   apps:
     title: Les applications HubRise, avec votre marque
-    description: Les éditeurs de logiciels, revendeurs, dark kitchens et chaînes de restaurants peuvent désormais proposer les applications HubRise de gestion des commandes et des produits sous leur propre marque — avec leur logo, favicon, couleurs et nom de domaine.
+    description: Les éditeurs de logiciels, revendeurs, dark kitchens et chaînes de restaurants peuvent proposer les applications HubRise de gestion des commandes et des produits sous leur propre marque — avec leur logo, favicon, couleurs et nom de domaine.
     tabs:
       - label: Votre OrderLine en marque blanche
         key: 0

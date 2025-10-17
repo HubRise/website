@@ -8,12 +8,12 @@ content:
       part_2: vos commandes
       part_3: avec
       part_4: OrderLine
-    supporting_text: Consolidez les commandes de vos canaux de vente dans une seule app, avec des mises à jour en temps réel et des alertes pour les commandes à préparer.
+    supporting_text: Consolidez les commandes de vos canaux de vente dans une seule app. Mettez les à jour à chaque étape de préparation, et recevez des alertes lorsque les commandes doivent être prêtes.
     content:
       firstSide: |
         Que votre caisse soit connectée ou non, OrderLine vous offre une vue claire de chaque commande, y compris son origine, la marque associée si vous gérez une dark kitchen, et sa destination finale. Vous pouvez également gérer les horaires d'ouverture et la disponibilité des produits pour tous vos canaux de vente depuis une seule interface.
       secondSide: |
-        Connectez vos systèmes de commande à table, bornes libre-service, plateformes de livraison et site de commande en ligne à HubRise, et gérez à la fois les commandes sur place et à distance dans une seule application. Les commandes sont transmises en temps réel à vos opérations en cuisine, avec des notifications visuelles pour vous avertir lorsqu'elles doivent être prêtes.
+        Connectez vos systèmes de commande à table, bornes libre-service, plateformes de livraison et site de commande en ligne à HubRise, et gérez les commandes sur place et à distance dans une seule application. Votre cuisine reçoit les commandes en temps réel, avec des notifications visuelles pour vous avertir lorsqu'elles doivent être préparées.
   five_steps:
     title: Démarrez en 5 étapes
     steps:
@@ -29,7 +29,7 @@ content:
         description: Ajustez les horaires d'ouverture, mettez en pause les plateformes de livraison et mettez à jour la disponibilité des produits sur tous les canaux en quelques clics.
   features:
     title: Gérez les commandes de tous vos canaux
-    description: Centralisez les commandes de tous vos canaux de vente et gérez-les facilement depuis une seule interface. Mettez à jour les statuts de commande, suivez les livreurs, imprimez les tickets, ajustez les horaires d'ouverture, mettez en pause les boutiques en ligne et contrôlez la disponibilité des produits — tout cela selon votre flux de travail.
+    description: Centralisez les commandes de tous vos canaux de vente et gérez-les facilement depuis une seule interface. Mettez à jour les statuts de commande, suivez les livreurs, imprimez les tickets, ajustez les horaires d'ouverture, mettez en pause les boutiques en ligne et contrôlez la disponibilité des produits.
     list:
       - title: Centralisez vos commandes
         image: all-orders.png
@@ -43,7 +43,7 @@ content:
       - title: Gardez les stock synchronisés
         image: inventory.png
         description: Maintenez la disponibilité des produits à jour sur tous les canaux afin d'éviter les ventes en rupture. Marquez des articles comme indisponibles pour quelques heures, jusqu'au lendemain ou pour une durée indéterminée.
-      - title: Adapté à vos opérations
+      - title: Adaptez OrderLine à vos besoins
         image: operations.png
         description: Configurez OrderLine selon vos besoins opérationnels. Acceptez automatiquement les commandes, définissez des statuts personnalisés pour votre restaurant et imprimez les tickets manuellement ou automatiquement avec une imprimante cloud connectée.
   discover:
