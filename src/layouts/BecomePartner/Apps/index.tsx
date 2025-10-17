@@ -15,21 +15,21 @@ interface AppsProps {
 
 const Apps = ({ apps, descriptionMdx }: AppsProps): JSX.Element => {
   const { tabs } = apps
-  const [activeTabNumber, setActiveTabNumber] = useState<number>(0)
+  const [activeTabIndex, setActiveTabIndex] = useState<number>(0)
 
-  const handleTabChange = (key: number) => {
-    setActiveTabNumber(key)
+  const handleTabChange = (index: number) => {
+    setActiveTabIndex(index)
   }
 
   return (
     <ScreenContainer title={apps.title} descriptionMdx={descriptionMdx} withHeader>
-      <Tabs items={tabs} activeKey={activeTabNumber} onChange={handleTabChange}>
+      <Tabs items={tabs} activeIndex={activeTabIndex} onChange={handleTabChange}>
         <Tab>
-          <TabTitle>{tabs[activeTabNumber].content.title}</TabTitle>
-          <TabText>{tabs[activeTabNumber].content.description}</TabText>
+          <TabTitle>{tabs[activeTabIndex].content.title}</TabTitle>
+          <TabText>{tabs[activeTabIndex].content.description}</TabText>
           <Image
-            src={`/images/${tabs[activeTabNumber].content.image}`}
-            alt={tabs[activeTabNumber].content.title}
+            src={`/images/${tabs[activeTabIndex].content.image}`}
+            alt={tabs[activeTabIndex].content.title}
             width={1100}
             height={800}
           />

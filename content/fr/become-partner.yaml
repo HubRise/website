@@ -52,20 +52,17 @@ content:
     description: Les éditeurs de logiciels, revendeurs, dark kitchens et chaînes de restaurants peuvent proposer les applications HubRise de gestion des commandes et des produits sous leur propre marque — avec leur logo, favicon, couleurs et nom de domaine.
     tabs:
       - label: Votre OrderLine en marque blanche
-        key: 0
         content:
           title: Votre OrderLine en marque blanche
           description: Proposez à vos clients une application de gestion des commandes en marque blanche, entièrement adaptée à votre identité visuelle.
           image: frontpage/white-label.gif
       - label: Votre Catalog Manager en marque blanche
-        key: 1
         content:
           title: Votre Catalog Manager en marque blanche
           description: Permettez à vos clients de gérer facilement leurs produits avec notre application Catalog Manager en marque blanche, personnalisée à votre image.
           image: become-partner/tabs/catalog-manager.gif
       - label: |
           Prochainement : votre Dashboard en marque blanche
-        key: 2
         content:
           title: |
             Prochainement : votre Dashboard en marque blanche

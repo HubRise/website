@@ -35,31 +35,26 @@ content:
     description: Catalog Manager vous permet de gérer vos produits depuis une interface unique. Créez un catalogue principal pour vos établissements et marques, y compris les dark kitchens, et publiez les mises à jour instantanément en un clic.
     tabs:
       - label: Ajouter des produits
-        key: 0
         content:
           title: Créez des produits et des listes d'options
           description: Créez des produits et regroupez les options dans des listes réutilisables. Attribuez des listes d'options spécifiques à chaque taille de produit pour une flexibilité maximale dans la gestion des choix et des prix.
           image: catalog-manager/tabs/create-products.png
       - label: Configurer des offres
-        key: 1
         content:
           title: Personnalisez des offres et des remises
           description: Créez des offres spéciales à partir d'articles du menu, comme un menu trois plats limité à certains produits. Vous pouvez aussi créer des remises, appliquant une réduction en pourcentage ou en montant fixe sur le total.
           image: catalog-manager/tabs/customise-deals.png
       - label: Ajuster les prix
-        key: 2
         content:
           title: Définissez les prix par canal ou établissement
           description: Ajustez les prix pour chaque canal ou établissement à l'aide de variantes de catalogue. Utilisez la mise à jour en masse pour appliquer des augmentations ou réductions en pourcentage, et adapter facilement vos prix à différents segments de marché.
           image: catalog-manager/tabs/set-channels.png
       - label: Personnaliser l'offre
-        key: 3
         content:
           title: Activez les articles par canal ou établissement
           description: Utilisez les variantes de catalogue pour activer des articles selon le canal de vente, l'établissement ou le mode de commande, afin d'adapter votre offre à vos besoins opérationnels et marketing.
           image: catalog-manager/tabs/control-availability.png
       - label: Prévisualiser et publier
-        key: 4
         content:
           title: Prévisualisez avant de publier
           description: Prêt à publier ? Prévisualisez chaque variante de catalogue pour vérifier sa cohérence et son exactitude. Une fois tout validé, publiez instantanément vos modifications sur tous les canaux.

@@ -4,24 +4,23 @@ import { StyledTabs, Menu, MenuItem, Wrapper } from "./Styles"
 
 export interface TTabItem {
   label: string
-  key: number
 }
 
 interface TabsProps {
   items: Array<TTabItem>
-  onChange: (key: number) => void
-  activeKey: number
+  onChange: (index: number) => void
+  activeIndex: number
   children: React.ReactNode
 }
 
-const Tabs = ({ items, onChange, activeKey, children }: TabsProps): JSX.Element => {
+const Tabs = ({ items, onChange, activeIndex, children }: TabsProps): JSX.Element => {
   return (
     <Wrapper>
       <StyledTabs>
         <Menu>
-          {items.map(({ label, key }, Idx) => {
+          {items.map(({ label }, index) => {
             return (
-              <MenuItem key={Idx} $isSelected={key === activeKey} onClick={() => onChange(Idx)}>
+              <MenuItem key={index} $isSelected={index === activeIndex} onClick={() => onChange(index)}>
                 {label}
               </MenuItem>
             )

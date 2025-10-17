@@ -35,31 +35,26 @@ content:
     description: Catalog Manager lets you manage your products from a single interface. Create a master catalog for your locations and brands, including dark kitchens, and publish updates instantly with one click.
     tabs:
       - label: Add Products
-        key: 0
         content:
           title: Create Products and Option Lists
           description: Create products, and group options into reusable option lists. Assign specific option lists to each product size for full flexibility in managing choices and prices.
           image: catalog-manager/tabs/create-products.png
       - label: Set Up Deals
-        key: 1
         content:
           title: Customise Deals and Discounts
           description: Set up Deals, which are special offers built with menu items, such as a three-course meal limited to selected items. You can also create Discounts, which apply a percentage or fixed-amount reduction to the total.
           image: catalog-manager/tabs/customise-deals.png
       - label: Fine-Tune Pricing
-        key: 2
         content:
           title: Set Pricing by Channel or Location
           description: Adjust prices for each sales channel or location using catalog variants. Use bulk update to apply percentage increases or decreases to a variant, so you can easily tailor your pricing to different market segments.
           image: catalog-manager/tabs/set-channels.png
       - label: Customise Offering
-        key: 3
         content:
           title: Enable Items by Channel or Location
           description: Use catalog variants to enable items by sales channel, location, or collection method, to match your operational and marketing needs.
           image: catalog-manager/tabs/control-availability.png
       - label: Preview & Publish
-        key: 4
         content:
           title: Preview Before Publishing
           description: Ready to publish? Preview each catalog variant to double-check for accuracy and consistency. When everything looks right, publish your changes to all channels instantly.

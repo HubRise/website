@@ -8,7 +8,7 @@ content:
       part_2: to Connect
       part_3: All the Apps
       part_4: Your Clients Need
-    description: Save time and focus on what matters most—your product. Let us handle the integrations. We also add value to your product or service offering by providing white-label apps fully skinned to match your branding.
+    description: We help our partners succeed by handling their integrations and offering our apps as white-label solutions, tailored to their brand identity. Our partners save time and can focus on what matters most—their product.
   features:
     - title: Robust API
       description: Leverage our flexible and reliable API to support a wide range of integration needs and handle the high-volume order flows required by multi-location brands.
@@ -43,33 +43,30 @@ content:
         image: improved-client-retention.svg
   middleware:
     title: HubRise, the Middleware That Simplifies Integrations
-    description: With a single integration effort, connect to an ever-growing ecosystem of complementary solutions integrated with HubRise. Transactions are stored in HubRise, giving your apps real-time access to product catalogs, inventory levels, store opening hours, customer data, and orders.
+    description: With a single integration effort, connect to an ever-growing ecosystem of complementary solutions integrated with HubRise. Transactions are stored in HubRise, giving your apps real-time access to product catalogs, customer data, and orders.
     content:
-      firstSide: HubRise offers software providers a streamlined way to enhance their products by delivering ready-made integrations with EPOS systems, food ordering platforms, online ordering, self ordering kiosks, delivery management or delivery services, loyalty and marketing tools, operations and inventory systems, and more.
-      secondSide: Connections can be managed by HubRise or offered under your own brand. With white-labelling, you can expand your integration offering—providing your clients with the tools they need to complement your solution or service and deliver a fully integrated environment, without the complexity of dealing with multiple contacts and systems.
+      firstSide: HubRise offers software providers a streamlined way to enhance their products by delivering ready-made integrations with EPOS systems, online ordering platforms, self-service kiosks, delivery platforms, loyalty and marketing tools, operations and inventory management systems, and more.
+      secondSide: Connections can be managed by HubRise or offered under your own brand. Our white-label connections and apps allow you to expand your integration offering under your own identity, providing your clients with the tools they need to complement your solution and deliver a fully integrated environment—without the complexity of managing multiple systems.
   apps:
     title: HubRise Apps, Your Branding
     description: Software providers, resellers, dark kitchens and restaurant chains can now offer HubRise's order and product catalog management apps under their own brand—with their logo, favicon, colours, and domain name.
     tabs:
       - label: Your Branded Order Manager
-        key: 0
         content:
           title: Your Branded Order Manager
-          description: Your clients might want to use your branded order manager to centralise and manage orders from all sales channels, or to complement features you haven’t integrated yet—such as tracking approaching drivers, managing inventory, updating opening hours, or pausing sales.
+          description: Offer your clients a white-label order management app, fully tailored to your brand identity.
           image: frontpage/white-label.gif
       - label: Your Branded Catalog Manager
-        key: 1
         content:
           title: Your Branded Catalog Manager
-          description: Your clients might want to use your branded catalog manager to centralise catalogs from all sales channels into a single app, or to complement features you haven’t integrated yet—such as adding product images, descriptions, tags, allergens, options, or modifiers, as well as managing deals and promotions.
+          description: Allow your clients to easily manage their products with our white-label Catalog Manager app, customised to your brand.
           image: become-partner/tabs/catalog-manager.gif
       - label: |
           Coming next: Your Branded Dashboard
-        key: 2
         content:
           title: |
             Coming Next: Your Branded Dashboard
-          description: Stay tuned—HubRise will soon make its Dashboard available as a white-label app, fully skinned with your branding. For now, this feature is only available in the HubRise back office.
+          description: You will soon be able to offer your clients a white-label Dashboard app, enabling real-time sales statistics tracking under your own brand.
           image: become-partner/tabs/branded-dashboard.png
   metrics:
     - number: 2M
