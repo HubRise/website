@@ -19,7 +19,7 @@ content:
       - title: No Setup Fee
         text: Create an account. Connect apps. Your subscription starts when you are ready
       - title: Unlimited Orders
-        text: No limit to the number of transactions sent, except for Dark Kitchen
+        text: No limit for standard locations. See Dark Kitchen pricing for high-volume operations
       - title: Unlimited Connections
         text: Connect as many apps as you like to your location
     included_features:
@@ -36,26 +36,25 @@ content:
         - text: Menu management
         - text: Business analytics
         - text: Inventory management
+        - text: Opening hours and pausing orders
         - text: Snoozing products
-        - text: Pause orders
-        - text: Opening hours management
-        - text: Multi-location Support, see
+        - text: Multi-location support, see
+          link_label: special pricing
+          link: /pricing#special-pricing
+        - text: Virtual brands, see
           link_label: special pricing
           link: /pricing#special-pricing
     additional_features:
       title: Additional Features
-      description: Features available at an additional cost, with HubRise or one of HubRise +100 integrated partners
+      description: Features available at an additional cost, via one of HubRise 100+ integrated partners
       list:
-        - text: Connection of virtual brands, see
-          link_label: special pricing
-          link: /pricing#special-pricing
         - text: Kitchen Display Screen
         - text: Self-ordering kiosks
         - text: Online ordering
         - text: Mobile, voice, or chat ordering apps
         - text: Dine-in apps
-        - text: Auto-Print
-        - text: Purchasing management
+        - text: Smart printers
+        - text: Purchase management
         - text: Delivery management
         - text: Delivery services
         - text: And more…
@@ -63,7 +62,7 @@ content:
     image: antoine.png
     name: Antoine Monnier
     job_title: Founder, HubRise
-    text: "We offer a strong alternative to Deliverect with comparable features at 2–5x lower cost. As a self-funded company with a partnership-based model with publishers, we invest in what truly matters for our clients: technology and support."
+    text: "We offer a strong alternative to Deliverect with comparable features at 2–5x lower cost. As a self-funded company, we're not beholden to investors demanding rapid profit maximization. This means stable, fair pricing and a long-term focus in what truly matters for our clients: technology and support."
   why_choose:
     title: Why choose HubRise?
     cards:

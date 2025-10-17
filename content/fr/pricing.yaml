@@ -19,7 +19,7 @@ content:
       - title: Pas de frais d'installation
         text: Créez un compte. Connectez des intégrations. Votre abonnement commence quand vous êtes prêt.
       - title: Commandes illimitées
-        text: Pas de limite au nombre de transactions envoyées, à l'exception des Dark Kitchen.
+        text: Pas de limite pour les établissements standard. Voir les tarifs Dark Kitchen pour les opérations à volume élevé.
       - title: Intégrations illimitées
         text: Connectez autant d'intégrations que vous le souhaitez.
     included_features:
@@ -36,25 +36,24 @@ content:
         - text: Edition centralisée des menus
         - text: Analyses d'activité
         - text: Gestion des stocks
+        - text: Centralisation des horaires d'ouverture et mise en pause des commandes
         - text: Mise en pause des produits
-        - text: Mise en pause des commandes
-        - text: Centralisation des horaires d'ouverture
         - text: Support multi-sites, voir
+          link_label: tarification spéciale
+          link: /fr/tarifs#special-pricing
+        - text: Marques virtuelles, voir
           link_label: tarification spéciale
           link: /fr/tarifs#special-pricing
     additional_features:
       title: Fonctionnalités additionnelles
-      description: Fonctionnalités disponibles avec un coût supplémentaire, via HubRise ou l'un de nos plus de 100 partenaires intégrés
+      description: Fonctionnalités disponibles avec un coût supplémentaire, via l'un des plus de 100 partenaires intégrés HubRise
       list:
-        - text: Connexion de marques virtuelles, voir
-          link_label: tarification spéciale
-          link: /fr/tarifs#special-pricing
         - text: Ecran cuisine (KDS)
         - text: Bornes de commande
         - text: Commande en ligne
         - text: Commande mobile, vocale ou par chat
         - text: Applications de commande sur place
-        - text: Impression automatique
+        - text: Imprimantes intelligentes
         - text: Gestion des achats
         - text: Gestion des livraisons
         - text: Services de livraison
@@ -63,7 +62,7 @@ content:
     image: antoine.png
     name: Antoine Monnier
     job_title: Fondateur, HubRise
-    text: "Nous offrons une alternative solide à Deliverect avec des fonctionnalités comparables pour un coût 2 à 5 fois inférieur. En tant qu'entreprise autofinancée, avec un modèle basé sur les partenariats avec des éditeurs, nous investissons dans ce qui compte vraiment pour nos clients, la technologie et le support."
+    text: "Nous offrons une alternative solide à Deliverect avec des fonctionnalités comparables pour un coût 2 à 5 fois inférieur. En tant qu'entreprise autofinancée, nous ne sommes pas soumis aux investisseurs qui exigent une maximisation rapide des profits. Cela se traduit par une tarification stable et juste, et un engagement à long terme sur ce qui compte vraiment pour nos clients : la technologie et le support."
   why_choose:
     title: Pourquoi choisir HubRise ?
     cards:
