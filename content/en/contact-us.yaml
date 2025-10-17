@@ -16,10 +16,10 @@ content:
           - button_label: Send a message
             popup_link: true
       - title: Support
-        description: You need support connecting your apps, managing your product catalog or troubleshooting.
+        description: You need help connecting your apps, managing your product catalog or resolving a technical issue.
         email: support@hubrise.com
       - title: Integration
-        description: You are an engineer and you need support with the integration or you would like to proceed with an integration audit.
+        description: You are an engineer and need help with an integration or you would like to proceed with an integration audit.
         email: integration@hubrise.com
   map:
     title: Address

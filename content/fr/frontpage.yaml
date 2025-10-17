@@ -28,9 +28,9 @@ hero:
 
 content:
   metrics:
-    - number: 40+
+    - number: 35+
       title: Caisses intégrées
-    - number: 100+
+    - number: 110+
       title: Intégrations
     - number: 20+
       title: Pays
