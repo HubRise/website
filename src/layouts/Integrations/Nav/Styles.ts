@@ -27,13 +27,25 @@ export const Container = styled.div<{ $isSticky: boolean }>`
   max-width: ${sizes.maxWidth};
   width: 100%;
   margin: 0 auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, 1fr);
   align-items: center;
   background-color: ${colors.backgroundLight};
   position: relative;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
   border-radius: 0.5rem;
+
+  @media (min-width: ${breakpoints.medium}) {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  @media (min-width: ${breakpoints.large}) {
+    grid-template-columns: 1fr auto auto;
+    grid-template-rows: 1fr;
+  }
 `
 
 export const SearchWrapper = styled.div`
@@ -41,9 +53,19 @@ export const SearchWrapper = styled.div`
   display: flex;
   align-items: center;
   padding: 0.75rem 0;
-  border-right: 1px solid ${colors.borderLight};
+  border-bottom: 1px solid ${colors.borderLight};
   flex-grow: 0;
   flex-shrink: 1;
+
+  @media (min-width: ${breakpoints.medium}) {
+    grid-column: 1 / 3;
+  }
+
+  @media (min-width: ${breakpoints.large}) {
+    grid-column: 1 / 2;
+    border-bottom: none;
+    border-right: 1px solid ${colors.borderLight};
+  }
 `
 
 export const Input = styled.input`
@@ -65,6 +87,7 @@ export const Input = styled.input`
 `
 
 export const FilterWrapper = styled.div`
+  height: 100%;
   margin-left: 0.5rem;
   flex-grow: 1;
   flex-shrink: 0;
@@ -81,6 +104,7 @@ export const FilterWrapper = styled.div`
 export const FilterButton = styled.button<{ $isExpanded: boolean }>`
   display: flex;
   align-items: center;
+  text-align: left;
   color: ${colors.textDark};
   font-weight: 600;
   ${mixin.clickable}

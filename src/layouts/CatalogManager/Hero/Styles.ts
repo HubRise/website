@@ -5,7 +5,7 @@ import { breakpoints, mixin } from "@utils/styles"
 
 export const CatalogManagerHero = styled.div`
   ${Wrapper} {
-    ${mixin.containerWrapper}
+    ${mixin.containerWrapper};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,16 +18,20 @@ export const CatalogManagerHero = styled.div`
     ${Wrapper} {
       text-align: left;
       flex-wrap: nowrap;
+      padding-right: 0;
 
       & > div {
         &:first-child {
-          flex-basis: 50%;
+          flex-basis: 45%;
         }
 
         &:last-child {
-          flex-basis: 60%;
+          flex-basis: 55%;
+        }
+
+        &:last-child img {
           position: relative;
-          right: -8rem;
+          right: -6rem;
         }
 
         h1 {
@@ -47,7 +51,7 @@ export const CatalogManagerHero = styled.div`
       align-items: flex-start;
 
       & > div {
-        &:last-child {
+        &:last-child img {
           right: -9rem;
         }
 
@@ -67,7 +71,9 @@ export const CatalogManagerHero = styled.div`
 
         &:last-child {
           flex-basis: 50%;
-          position: relative;
+        }
+
+        &:last-child img {
           right: 0;
         }
 
