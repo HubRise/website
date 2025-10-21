@@ -10,13 +10,15 @@ meta:
 
 Connecting Just Eat to HubRise allows you to receive Just Eat orders directly in your EPOS or any other solution connected to your HubRise account.
 
-The Just Eat OrderPad will need to remain switched on to receive orders in HubRise. For more information, see [Can I Turn Off the Orderpad?](/apps/just-eat-flyt/faqs/turn-off-orderpad). Orders can either be manually accepted on the OrderPad, or auto-accepted in some Just Eat markets. For more information, see [Do I Want Auto-Accept Activated?](/apps/just-eat-flyt/faqs/auto-accept)
-
 This page describes the information Just Eat sends to HubRise. It helps you understand how orders will be received on your EPOS.
 
 ## Order Transmission
 
-By default, Just Eat sends an order to HubRise when one of the following conditions is met:
+The Just Eat OrderPad will need to remain switched on to receive orders in HubRise. For more information, see [Can I Turn Off the Orderpad?](/apps/just-eat-flyt/faqs/turn-off-orderpad).
+
+Orders can either be manually accepted on the OrderPad, or auto-accepted in some Just Eat markets. For more information, see [Do I Want Auto-Accept Activated?](/apps/just-eat-flyt/faqs/auto-accept)
+
+Once an order is accepted, Just Eat sends it to HubRise when one of the following conditions is met:
 
 - A courier is assigned to the order.
 - The time the order must be ready minus the preparation time has been reached.
