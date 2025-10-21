@@ -33,14 +33,19 @@ export const AppCategories = styled.div`
   margin: 3.5rem auto 1rem;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(3, min(12rem, 30vw));
-  grid-auto-rows: min(12rem, 30vw);
+  grid-template-columns: repeat(2, min(45vw, 12rem));
+  grid-auto-rows: min(45vw, 12rem);
   row-gap: 2rem;
+
+  @media (min-width: ${breakpoints.medium}) {
+    grid-template-columns: repeat(3, min(30vw, 12rem));
+    grid-auto-rows: min(30vw, 12rem);
+  }
 
   @media (min-width: ${breakpoints.extraLarge}) {
     margin-bottom: 3rem;
-    grid-template-columns: repeat(6, min(15rem, 15vw));
-    grid-auto-rows: min(15rem, 15vw);
+    grid-template-columns: repeat(6, min(15vw, 15rem));
+    grid-auto-rows: min(15vw, 15rem);
   }
 `
 

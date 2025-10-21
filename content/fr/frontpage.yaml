@@ -13,7 +13,7 @@ hero:
   button_label: Voir toutes les intégrations
   button_link: /fr/apps
   app_categories:
-    - title: Logiciels de caisse
+    - title: Logiciels de caisse
       color: topDark
     - title: Plateformes de livraison
       color: bottom
@@ -23,7 +23,7 @@ hero:
       color: bottom
     - title: Gestion des livraisons
       color: topDark
-    - title: Commande en ligne
+    - title: Commande en ligne
       color: bottom
 
 content:
@@ -70,7 +70,7 @@ content:
   pricing:
     title:
       start: Tarification juste,
-      price: 35 €
+      price: 35 €
       end: par mois
     description: |
       Aucuns frais d'installation. Aucun engagement. Aucun coût caché.

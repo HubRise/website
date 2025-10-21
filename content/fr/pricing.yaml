@@ -11,7 +11,7 @@ content:
       part_4: Et
       part_5: Transparente
     plan:
-      price: 35 €
+      price: 35 €
       period: HT / point de vente / mois
     selling_points:
       - title: Aucun engagement
@@ -80,26 +80,26 @@ content:
       pricing_list_description: "Tarif mensuel par point de vente :"
       pricing_list:
         - text: Points de vente 1 à 5
-          price: 35 €
+          price: 35 €
         - text: Points de vente 6 à 30
-          price: 30 €
+          price: 30 €
         - text: Points de vente 31 et plus
-          price: 27 €
-      special_proposal_html: "Exemple pour 12 points de vente : (5 x 35 €) + (7 x 30 €) = 385 € par mois."
+          price: 27 €
+      special_proposal_html: "Exemple pour 12 points de vente : (5 x 35 €) + (7 x 30 €) = 385 € par mois."
     dark_kitchen:
       title: Dark Kitchen
       description: Un tarif mensuel spécial et des frais d'installation s'appliquent aux établissements gérant plusieurs marques virtuelles.
       pricing_list_description: "Le tarif mensuel dépend du nombre de commandes reçues par le point de vente :"
       pricing_list:
         - text: 0 à 1 500 commandes par mois - tarif standard
-          price: 35 €
+          price: 35 €
         - text: 1 501 à 3 000 commandes par mois
-          price: 55 €
+          price: 55 €
         - text: 3 001 à 4 500 commandes par mois
-          price: 75 €
-        - text: Ajouter 20 € pour chaque tranche de 1 500 commandes supplémentaires
+          price: 75 €
+        - text: Ajouter 20 € pour chaque tranche de 1 500 commandes supplémentaires
           price:
-      special_proposal_html: Frais d'installation de 25 € par marque et par plateforme, négociables pour les installations groupées.
+      special_proposal_html: Frais d'installation de 25 € par marque et par plateforme, négociables pour les installations groupées.
     resellers_and_partners:
       title: Partenaires et Revendeurs
       description: HubRise offre un programme de partenariat, avec ou sans marque blanche.
