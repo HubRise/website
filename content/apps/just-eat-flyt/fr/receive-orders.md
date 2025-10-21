@@ -10,13 +10,15 @@ meta:
 
 En connectant Just Eat à HubRise, vous pouvez recevoir des commandes directement dans votre logiciel de caisse ou toute autre solution connectée à votre compte HubRise.
 
-L'OrderPad Just Eat doit rester allumé pour recevoir les commandes dans HubRise. Pour plus d'informations, voir [Puis-je désactiver la tablette ?](/apps/just-eat-flyt/faqs/turn-off-orderpad) Les commandes doivent être acceptées, soit manuellement depuis l'OrderPad, soit automatiquement sur certains marchés Just Eat. Pour plus d'informations, voir [Pourquoi activer l'acceptation automatique sur Just Eat ?](/apps/just-eat-flyt/faqs/auto-accept)
-
 Cette page décrit les informations que Just Eat envoie à HubRise. Elle peut vous aider à comprendre comment les commandes seront reçues dans votre logiciel de caisse.
 
 ## Transmission des commandes
 
-Par défaut, Just Eat envoie une commande à HubRise dès que l'une de ces conditions est remplie :
+L'OrderPad Just Eat doit rester allumé pour recevoir les commandes dans HubRise. Pour plus d'informations, voir [Puis-je désactiver la tablette ?](/apps/just-eat-flyt/faqs/turn-off-orderpad)
+
+Les commandes doivent être acceptées, soit manuellement depuis l'OrderPad, soit automatiquement sur certains marchés Just Eat. Pour plus d'informations, voir [Pourquoi activer l'acceptation automatique sur Just Eat ?](/apps/just-eat-flyt/faqs/auto-accept)
+
+Une fois la commande acceptée, Just Eat l'envoie à HubRise dès que l'une de ces conditions est remplie :
 
 - Un coursier est affecté à la commande.
 - L'heure à laquelle la commande doit être prête diminuée du temps de préparation est atteinte.
@@ -203,7 +205,7 @@ Les champs disponibles dans les requêtes sont les suivants :
 
 - `name` : intitulé des frais, par défaut `Frais de livraison`.
 - `type` : type de frais. La valeur est toujours `delivery` (livraison).
-- `ref` : code ref des frais. La valeur par défaut peut être définie à partir de la page de configuration de Just Eat Bridge. Elle doit correspondre à la valeur définie dans votre logiciel de caisse.
+- `ref` : code ref des frais. La valeur par défaut peut être définie à partir de la page de configuration de Just Eat Bridge, et elle doit correspondre à la valeur définie dans votre logiciel de caisse.
 - `price` : montant total des frais de livraison
 
 ### Frais de service Just Eat
@@ -214,7 +216,7 @@ Les champs disponibles dans les requêtes sont les suivants :
 
 - `name` : intitulé des frais, par défaut `Frais de service`.
 - `type` : type de frais. La valeur est toujours `other` (autre).
-- `ref` : code ref des frais. La valeur par défaut peut être définie à partir de la page de configuration de Just Eat Bridge. Elle doit correspondre à la valeur définie dans votre logiciel de caisse.
+- `ref` : code ref des frais. La valeur par défaut peut être définie à partir de la page de configuration de Just Eat Bridge, et elle doit correspondre à la valeur définie dans votre logiciel de caisse.
 - `price` : montant total du petit supplément à la commande
 
 <details>
