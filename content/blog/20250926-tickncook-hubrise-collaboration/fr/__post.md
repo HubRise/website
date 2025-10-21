@@ -24,12 +24,14 @@ Thomas, développeur freelance passionné, cherche de nouveaux défis. Antoine l
 
 L'idée séduit immédiatement Thomas. En quelques semaines, la version 0.01 de TicknCook voit le jour.
 
-> « Antoine avait identifié le besoin, moi j'avais les compétences techniques. J'ai voulu tester le marché avec une première version très simple. » - Thomas, fondateur TicknCook
+> « Antoine avait identifié le besoin, moi j'avais les compétences techniques. J'ai voulu tester le marché avec une première version très simple. » Thomas Rondepierre, co-fondateur, TicknCook.
 
 ## Les premiers pas
 Pour la charte graphique, Thomas fait appel à Karen, qui dirige une agence de communication. Elle crée l'identité visuelle de TicknCook sans imaginer qu'elle deviendrait plus tard associée de l'aventure.
 La version 0.01 circule. Les premiers retours arrivent. Le concept fonctionne. Même si c’est une première version très limitée, cela permet à Thomas de récupérer de précieux retours qui plus tard serviront à améliorer TicknCook.
 Mais à cette époque Thomas reste concentré sur ses missions freelance. TicknCook reste en sommeil.
+
+![Identité visuelle de TicknCook par Karen Texier](./004_tickncook_banner.png)
 
 ## COVID : l'accélérateur inattendu
 Mars 2020. La pandémie frappe. La restauration bascule vers le digital en mode turbo. Thomas reçoit de plus en plus de demandes pour TicknCook. 
@@ -40,18 +42,61 @@ Le moment est venu de passer à la vitesse supérieure.
 ## L'équipe se forme
 Fin 2021. Thomas pense à s’entourer d’une équipe pour accélérer le développement de TicknCook. Et ça tombe bien car il a l’habitude de travailler avec l’agence de communication de Karen, et sur des projets d’édition de logiciel avec Baptiste. Les trois freelances se connaissent, et ils se font confiance.
 
-> « Thomas nous a proposé de transformer TicknCook en vraie startup. On avait déjà travaillé ensemble, on savait qu'on fonctionnait bien en équipe. » Karen, co-fondatrice TicknCook
+> « Thomas nous a proposé de transformer TicknCook en vraie startup. On avait déjà travaillé ensemble, on savait qu'on fonctionnait bien en équipe. » Karen Texier, co-fondatrice, TicknCook.
+
 
 Début 2022, la nouvelle version TicknCook est lancée.
 
 ## Le décollage immédiat grâce à HubRise
-Dès le lancement, les inscriptions affluent. L'avantage HubRise joue à plein : au lieu de développer des dizaines d'intégrations, TicknCook hérite instantanément de tout l'écosystème.
-les plateformes de livraison, les différents systèmes de prise de commande, comme Livepepper…  Tout fonctionne out-of-the-box.
-"Sans HubRise, on aurait passé 2 ans à faire des intégrations au lieu de développer notre produit. Dès le premier jour, nos clients avaient leurs commandes sur les écrans." - Thomas
+Dès le lancement, les inscriptions affluent. L'avantage HubRise joue à plein : au lieu de développer des dizaines d'intégrations, TicknCook hérite instantanément de tout l'écosystème : led logiciels de caisse, les plateformes de livraison, les différents systèmes de prise de commande, comme LivePepper…  Tout fonctionne out-of-the-box.
 
+> « Sans HubRise, on aurait passé 2 ans à faire des intégrations au lieu de développer notre produit. Dès le premier jour, nos clients avaient leurs commandes sur les écrans. » Thomas Rondepierre, co-fondateur, TicknCook.
+
+![Installation TicknCook](./001_tickncook_on_wall.png) 
+
+
+----
+
+Découvrez l'article de blog complet sur Food Hero](https://www.hubrise.com/fr/blog/dark-kitchen-food-hero)
+
+----
+
+
+## Food Hero prouve le concept
+Été 2021, déjà. Gaël di Giusto lance Food Hero, sa dark kitchen suisse multi-marques. Le défi ? Gérer 10 marques, 40+ points de ventes sur les plateformes de livraison de repas.
+Food Hero devient le terrain d'expérimentation parfait pour TicknCook connecté via HubRise.
+Résultat : 250 commandes par jour gérées sans accroc. Chaque poste de cuisine ne voit que ses commandes. Zero ticket papier.
+
+> « Nous avons beaucoup collaboré avec TicknCook pour développer des fonctionnalités sur mesure, comme les filtres par poste de travail. » Gaël di Giusto, Food Hero.
 
 ___
 
 Pour vous tenir informé de nouvelles intégrations à l'écosystème de solutions intégrées, suivez HubRise sur [LinkedIn](https://www.linkedin.com/company/hubrise).
 
 ___
+
+![Installation TicknCook](./003_tickncook_or_paper.png)
+
+## L'effet boule de neige
+Le succès attire le succès. D'autres développeurs s'inspirent du modèle TicknCook.
+SOS Soirée intègre HubRise en quasi-autonomie. Captain.ai rejoint l'écosystème. Chaque nouvelle app renforce l'ensemble.
+Plus il y a d'intégrations sur HubRise, plus TicknCook devient accessible. Plus TicknCook performe, plus HubRise attire de nouveaux développeurs.
+
+## Le succès aujourd'hui
+TicknCook équipe des milliers de restaurants dans une dizaine de pays. Traduit en 6 langues. De la pizzeria familiale aux chaînes internationales.
+HubRise connecte plus de 100 applications dans une vingtaine de pays.
+
+> « Thomas et son équipe ont montré qu'un développeur pouvait créer une solution métier mondiale en s'appuyant sur notre API. » Antoine Monnier, fondateur, HubRise.
+
+## Le message aux développeurs
+L'histoire TicknCook prouve qu'une idée simple peut devenir globale. Si vous avez identifié un besoin dans la foodtech ou tout autre commerce de proximité, HubRise peut être votre rampe de lancement. Son API est documentée, testée, éprouvée par une centaine de solutions déjà connectées et des milliers de connexions.
+Comme Thomas en 2018, vous êtes peut-être dans une phase de conversion, dans le lancement d'une solution qui sera une success story.
+
+> « Il y a beaucoup à faire dans la foodtech, et les bonnes idées d'aujourd'hui sont les standards de demain. » Antoine Monnier, fondateur, HubRise.
+
+---
+
+Développeur ? Lancez votre application avec HubRise !
+Voir comment sur notre [page Développeurs](/developers).
+
+---
