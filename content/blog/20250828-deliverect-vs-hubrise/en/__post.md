@@ -27,13 +27,13 @@ Unlike Deliverect, HubRise is entirely self-funded and HubRise focuses its resou
 ## Why Restaurants Choose HubRise
 
 ### Centralised Orders
-HubRise routes orders from multiple sales channels—including delivery platforms and your own branded online ordering website or self ordering kiosks—directly to your EPOS or into OrderLine, a HubRise app, where orders can be managed, printed, and tracked. Delivery platforms can be temporarily paused during peak times to prioritise your own website and in-store orders.
+HubRise routes orders from multiple sales channels, including delivery platforms and your own branded online ordering website or self ordering kiosks—directly to your EPOS or into OrderLine, a HubRise app, where orders can be managed, printed, and tracked. Delivery platforms can be temporarily paused during peak times to prioritise your own website and in-store orders.
 
 ### Centralised Inventory and Opening Hours
 HubRise automatically syncs inventory from your EPOS or allows you to manage it manually. Update opening hours once in HubRise, and they instantly apply across connected delivery platforms and other sales channels that integrated this feature.
 
 ### Centralised Menu Management
-HubRise synchronises menus from your EPOS to all connected sales channels. Menus can also be created and managed directly in HubRise. Location-specific variants—such as different prices or available items—are supported, making HubRise ideal for chains and franchises or dark kitchens that share certain menu items (e.g., desserts or drinks) but have unique main offerings.
+HubRise synchronises menus from your EPOS to all connected sales channels. Menus can also be created and managed directly in HubRise. Location, or sales channel specific catalog variants, such as different prices or available items, are supported. This makes HubRise an ideal solution for chains and franchises or dark kitchens that share certain menu items (e.g., desserts or drinks) but have unique main offerings.
 
 ### Large Ecosystem of Integrated Solutions
 HubRise connects with a wide range of EPOS systems, kitchen displays, cloud printers, kiosks, online ordering solutions, table-ordering apps, WhatsApp ordering, delivery platforms, marketing tools, operations management platforms, delivery management solutions, and more. Each restaurant can build its own custom ecosystem.
