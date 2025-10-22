@@ -377,6 +377,13 @@ content:
           country: AU, BE, CA, FR, DE, IE, NL, ES, CH, GB
           title: Uber Eats
           description: Uber Eats is an online food ordering and delivery platform for local restaurants. Customers can order food online or via a mobile app. Available in 45 markets and 6,000 cities.
+        - website: https://wolt.com/
+          documentation: /apps/wolt
+          logo: wolt.png
+          country: DE
+          title: Wolt
+          description: Wolt is a delivery platform that connects customers with local restaurants, grocery stores, and couriers. Customers can order through its app or website. The service is available in 30 markets worldwide.
+          additional_info: integration in progress
     - title: Online Ordering
       slug: online-ordering
       apps:
