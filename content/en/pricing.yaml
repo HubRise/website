@@ -44,6 +44,9 @@ content:
         - text: Virtual brands, see
           link_label: special pricing
           link: /pricing#special-pricing
+        - text: White label apps, see
+          link_label: special pricing
+          link: /pricing#special-pricing
     additional_features:
       title: Additional Features
       description: Features available at an additional cost, via one of HubRise 100+ integrated partners
@@ -62,16 +65,16 @@ content:
     image: antoine.png
     name: Antoine Monnier
     job_title: Founder, HubRise
-    text: "We offer a strong alternative to Deliverect with comparable features, but not so expensive to run. As a self-funded company, we're not beholden to investors demanding rapid profit maximisation. This means stable, fair pricing and a long-term focus in what truly matters for our clients: state of the art integrations and support."
+    text: "HubRise offers a strong alternative to Deliverect with comparable features and fair, transparent pricing 2 to 5 times cheaper. Being self-funded means we're not beholden to investors demanding rapid profit maximisation. We are free to focus in what truly matters for our clients: state of the art integrations and support."
   why_choose:
     title: Why choose HubRise?
     cards:
-      - title: Features & pricing
-        text: "Comparable features to Deliverect at a fair and stable rate: only one increase since 2015. Unlimited integrations and no setup fees."
-      - title: Expert and responsive support
-        text: "Our model allows us to focus on the essentials: a robust product and quality customer support. You interact directly with technical experts who know the platform perfectly and can solve your problems quickly."
-      - title: Reliability & transparency
-        text: "Open API and full logs available in the back office. Robust infrastructure run by an engineering team, built for demanding environments."
+      - title: Features & Pricing
+        text: "HubRise is a middleware with a strong focus on its API, and the quality of integrations at a fair and stable subscription cost: only one increase since 2015. Unlimited integrations and no setup fees."
+      - title: Expert & Swift Support
+        text: "We focus on what matters: a robust product and quality customer support. You interact directly with technical experts and engineers who know HubRise inside out and fix problems rapidly."
+      - title: Reliability & Transparency
+        text: "Open API and full logs available in the back office, accessible to clients, support and engineers. Robust infrastructure, run by engineers, and built for demanding environments."
   special_pricing:
     title: Special Pricing
     chain_and_franchise:
@@ -99,10 +102,10 @@ content:
           price: €75
         - text: Add €20 for every additional 1,500 monthly orders
           price:
-      special_proposal_html: One-time €25 setup fee per brand, per platform. Negotiable for grouped setups.
+      special_proposal_html: One-time €25 setup fee per brand, per platform. Discount available for grouped setups.
     resellers_and_partners:
       title: Resellers and Integrated Partners
-      description: HubRise offers a partnership programme, with or without white labelling.
+      description: HubRise offers a partnership programme, for grey label or white label installations.
       button_label: Find out more
       button_link: /become-partner
   action_block:
