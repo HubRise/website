@@ -9,7 +9,7 @@ hero:
     part_2: Restaurants
     part_3: and
     part_4: Retail
-  description: Connect your EPOS, your delivery platforms, and your digital solutions in one ecosystem. Manage orders, sync products, and keep inventory up to date.
+  description: Connect your EPOS, your delivery platforms, and your other digital solutions within a single ecosystem. Manage orders, synchronise products, and keep both inventory and opening hours up to date.
   button_label: See All Integrations
   button_link: /apps
   app_categories:
@@ -28,7 +28,7 @@ hero:
 
 content:
   metrics:
-    - number: 35+
+    - number: 40+
       title: EPOS integrated
     - number: 110+
       title: Integrations
@@ -40,23 +40,23 @@ content:
   features:
     title: Connect All Your Tools. Keep Your Systems in Sync.
     description: |
-      Connect your digital solutions, sales channels, delivery services, marketing tools, and more. Eliminate the hassle of managing product catalogs and inventory across multiple platforms. Centralise orders, customers and analytics in a unified workspace.
+      Connect your digital solutions through HubRise's ever growing ecosystem including, in-house and third-party sales channels, delivery services, marketing tools, and more. Eliminate the complexity of maintaining menus or product catalogs and inventory across multiple platforms. Centralise orders, customer information, and analytics within a unified workspace.
     features_cards:
       - title: Connect Apps
         description: |
-          Use HubRise to connect your EPOS as well as other solutions you use in your day to day operations: table ordering, online ordering, food delivery platforms, self ordering kiosks, e-marketing, inventory management solutions, cloud printers, and more.
+          Use HubRise to connect your EPOS as well as other solutions you use in your day to day operations: table ordering, online ordering, food delivery platforms, self ordering kiosks, kitchen display screens, inventory management solutions, e-marketing, cloud printers, delivery services, and more.
         image: use-connect-apps.png
       - title: Manage Products
         description: |
-          Centralise your product catalogs for all your sales channels and locations. Set different products and prices as needed. Handle complex catalogs with product sizes, multiple options, nutrition information, tax, and promotions.
+          Centralise your menus or product catalogs with your EPOS, or in a HubRise app, for all your sales channels and locations. Set different products and prices as needed. Handle complex catalogs with product sizes, multiple options, nutrition information, tax, and promotions.
         image: use-manage-products.png
       - title: Synchronise Inventory
         description: |
-          Synchronise inventory with your EPOS, or manually snooze products in our app. Changes are instantly reflected across all channels, so customers only see what's available and you avoid negative reviews.
+          Synchronise inventory with your EPOS, or manually snooze products via a HubRise app. Changes are instantly propagated across all channels, so customers only see what's really available, eliminating unnecessary calls to change orders, and helping to prevent negative reviews.
         image: use-synchronise-inventory.png
       - title: Build a Customer Database
         description: |
-          Collect and centralise customer information from all your sales channels in a unified list. Share it with targeted marketing apps to boost engagement and build loyalty.
+          Send customer data into your EPOS, or collect and centralise it from all your sales channels in a unified list. Share this customer list with targeted marketing apps to boost engagement and build loyalty.
         image: use-customer-database.png
       - title: Centralise Orders
         description: |
@@ -75,13 +75,14 @@ content:
     description: |
       No setup fees. No commitment. No hidden costs.
       Unlimited number of connections per location.
+      Volume discounts for chains and franchises. Special pricing for resellers.
     button_label: View Pricing Page
     button_link: /pricing
 
   included_apps:
-    title: Included Apps with Your Subscription
+    title: Apps Included with Your Subscription
     description: |
-      These apps developed by HubRise are included in your subscription. Used by small businesses and chains alike, they complement the features of your existing solutions.
+      These free apps developed by HubRise are included in your HubRise subscription. Used by both small businesses and large chains, they help streamline operations by providing features that complement other third-party solutions connected to your HubRise account. These apps can also be white-labelled for HubRise resellers, integrated partners, and franchises looking to increase the added value offered to their franchisees.
     apps:
       - title: OrderLine - Receive Your Orders in One Place
         image: orderline.png
