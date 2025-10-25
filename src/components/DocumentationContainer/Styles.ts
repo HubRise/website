@@ -1,10 +1,11 @@
 import styled, { css } from "styled-components"
 
-import { colors, fontSizes, lineHeights, mixin } from "@utils/styles"
+import { boxShadows, breakpoints, colors, fontSizes, lineHeights, mixin } from "@utils/styles"
 
 const commonTitleStyles = css`
   color: ${colors.textDarkest};
-  line-height: ${lineHeights.comfortable};
+  line-height: ${lineHeights.text};
+
   &:first-child {
     margin-top: 0;
   }
@@ -12,9 +13,22 @@ const commonTitleStyles = css`
 
 const paragraphSpacing = "1rem"
 
-export const StyledContainer = styled.div`
-  font-family: "Poppins", sans-serif;
+const underlineMixin = css`
+  content: "";
+  position: absolute;
+  left: 0;
+  right: inherit;
+  top: 100%;
+  margin: 10px auto;
+  height: 3px;
+  border-radius: 6.25rem;
 
+  @media (min-width: ${breakpoints.biggest}) {
+    width: 7.5rem;
+  }
+`
+
+export const StyledContainer = styled.div`
   h1 {
     ${commonTitleStyles};
     font-weight: bold;
@@ -26,36 +40,29 @@ export const StyledContainer = styled.div`
       font-size: ${fontSizes._42};
     }
 
-    &:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: inherit;
-      top: 100%;
-      margin: 10px auto;
-      width: 15%;
-      height: 3px;
+    &::after {
+      ${underlineMixin};
       background: ${colors.primary};
+      width: 15%;
     }
   }
 
   h2 {
-    ${commonTitleStyles};
+    font-size: ${fontSizes._19};
+    line-height: ${lineHeights.mediumTitle};
+    font-weight: 700;
+    color: ${colors.textDarkest};
     position: relative;
-    font-size: ${fontSizes._24};
-    font-weight: bold;
     margin: 2.5rem 0 2.5rem 0;
 
-    &:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: inherit;
-      top: 100%;
-      margin: 10px auto;
+    &::after {
+      ${underlineMixin};
+      background: ${colors.backgroundLight};
       width: 10%;
-      height: 3px;
-      background: #ececec;
+    }
+
+    @media (min-width: ${breakpoints.large}) {
+      font-size: ${fontSizes._24};
     }
   }
 
@@ -78,7 +85,9 @@ export const StyledContainer = styled.div`
     margin-bottom: 0.5rem;
   }
 
-  p {
+  p,
+  ul,
+  ol {
     margin-bottom: ${paragraphSpacing};
   }
 
@@ -86,6 +95,9 @@ export const StyledContainer = styled.div`
   p + table,
   p + .prism-code {
     margin-top: calc(0.5rem - ${paragraphSpacing});
+  }
+
+  em {
   }
 
   h5 + ul,
@@ -99,11 +111,6 @@ export const StyledContainer = styled.div`
   td a {
     color: ${colors.primary};
     ${mixin.linkOver(colors.textDarkest)};
-  }
-
-  ul,
-  ol {
-    margin-bottom: 1rem;
   }
 
   ol {
@@ -121,7 +128,7 @@ export const StyledContainer = styled.div`
     margin-left: 1rem;
     padding-left: 1rem;
 
-    &:before {
+    &::before {
       content: "";
       width: 6px;
       height: 6px;
@@ -153,11 +160,7 @@ export const StyledContainer = styled.div`
 
   code {
     display: inline;
-    font-family:
-      Consolas,
-      Liberation Mono,
-      Courier,
-      monospace;
+    font-family: "Consolas", "Liberation Mono", "Courier", monospace;
     word-wrap: break-word;
     max-width: 100%;
     padding: 0.125rem 0.3125rem 0.0625rem;
@@ -167,17 +170,23 @@ export const StyledContainer = styled.div`
   }
 
   blockquote {
-    margin: 0 0 2rem;
-    padding: 0.25rem 0 0.25rem 1.25rem;
-    border-left: 3px solid ${colors.borderLight};
+    padding: 4rem 1rem 1rem 1rem;
+    margin: 0 0 1rem 0;
+    box-shadow: ${boxShadows.card};
+    border-radius: 0.75rem;
+    font-weight: 500;
+    background-image: url("/images/quote-green.svg");
+    background-repeat: no-repeat;
+    background-size: 52px 36px;
+    background-position: 1rem 1rem;
 
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    @media (min-width: ${breakpoints.large}) {
+      padding: 6.75rem 1.75rem 2.75rem 1.75rem;
+      background-position: 1.75rem 2.75rem;
+    }
 
     p {
-      margin: 0;
-      font-style: italic;
+      margin-bottom: 0;
     }
   }
 `

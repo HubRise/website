@@ -3,13 +3,16 @@
 import Image from "next/image"
 import * as React from "react"
 
+import Icon from "@components/Icon"
+import { useLayoutContext } from "@components/LayoutContext"
 import useClientRoutes from "@hooks/client/useClientRoutes"
 import type { LanguagePaths } from "@utils/locales"
+import { iconSizes } from "@utils/styles"
 
 import { IHeaderLink } from "../shared/types"
 
 import MobileBar from "./MobileBar"
-import { StyledHeader, LogoLink, Button } from "./Styles"
+import { StyledHeader, LogoLink, BurgerIcon } from "./Styles"
 
 interface HeaderMobileProps {
   languagePaths: LanguagePaths
@@ -19,16 +22,29 @@ interface HeaderMobileProps {
 const HeaderMobile = ({ languagePaths, menuItems }: HeaderMobileProps): JSX.Element => {
   const [isOpen, setIsOpen] = React.useState(false)
   const { home } = useClientRoutes()
+  const { isIntegrationsNavSticky } = useLayoutContext()
+
+  React.useLayoutEffect(() => {
+    if (isOpen) {
+      document.body.style.overflowY = "hidden"
+    } else {
+      document.body.style.overflowY = "auto"
+    }
+
+    return () => {
+      document.body.style.overflowY = "auto"
+    }
+  }, [isOpen])
 
   return (
     <>
-      <StyledHeader data-testid="header:mobile">
-        <Button onClick={() => setIsOpen(true)}>
-          <Image src="/images/burger_button.png" alt="Menu" width={21} height={21} />
-        </Button>
+      <StyledHeader data-testid="header:mobile" $isIntegrationsNavSticky={isIntegrationsNavSticky}>
+        <BurgerIcon onClick={() => setIsOpen(true)}>
+          <Icon code="menu" size={iconSizes._32} />
+        </BurgerIcon>
 
         <LogoLink href={home}>
-          <Image src="/images/logo.png" alt="HubRise" width={150} height={40} />
+          <Image src="/images/logo.svg" alt="HubRise" width={142} height={38} />
         </LogoLink>
       </StyledHeader>
 

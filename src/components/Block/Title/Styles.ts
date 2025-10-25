@@ -17,7 +17,7 @@ export const StyledTitle = styled.h3<{
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: ${fontSizes._42};
-  line-height: ${lineHeights.compact};
+  line-height: ${lineHeights.largeTitle};
   text-align: ${({ $horizontalAlign }) => ($horizontalAlign === "left" ? "left" : "center")};
 
   &::after {
@@ -27,9 +27,14 @@ export const StyledTitle = styled.h3<{
     right: ${({ $horizontalAlign }) => ($horizontalAlign === "left" ? "auto" : "0")};
     top: 100%;
     margin: 10px auto;
-    width: 15%;
+    width: 5rem;
     height: 3px;
     background-color: ${({ $backgroundColor }) => linkColorMap[$backgroundColor]};
+    border-radius: 6.25rem;
+
+    @media (min-width: ${breakpoints.biggest}) {
+      width: 7.5rem;
+    }
   }
 
   ${({ $horizontalAlign }) => css`

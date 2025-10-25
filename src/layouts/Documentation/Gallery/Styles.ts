@@ -1,10 +1,10 @@
 import Image from "next/image"
 import styled from "styled-components"
 
-import { breakpoints } from "@utils/styles"
+import { breakpoints, colors } from "@utils/styles"
 
 export const Thumbnail = styled(Image)`
-  border-radius: 0.6rem;
+  border: solid 0.25rem ${colors.backgroundLight};
 `
 
 export const ThumbnailGrid = styled.div`

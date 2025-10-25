@@ -1,31 +1,38 @@
 import Link from "next/link"
 import styled, { css } from "styled-components"
 
+import { StyledButton } from "@components/Button/Styles"
 import { breakpoints, colors, mixin } from "@utils/styles"
 
 import { headerStyle } from "../shared/styles"
 
-export const StyledHeader = styled.div`
+export const StyledHeader = styled.div<{ $isIntegrationsNavSticky: boolean }>`
   display: none;
 
   @media (min-width: ${breakpoints.burgerMenu}) {
-    display: flex;
+    display: block;
     position: sticky;
     top: 0;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2%;
     ${headerStyle};
   }
 `
 
+export const HeaderWrapper = styled.div`
+  ${mixin.containerWrapper}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+`
+
 export const Menu = styled.ul`
   display: flex;
+  align-items: center;
 `
 
 export const MenuItem = styled.li<{ $isActive: boolean }>`
   ${mixin.clickable};
-  ${mixin.dotSeparatedList("0.5rem")};
+  padding: 1rem;
 
   ${({ $isActive }) =>
     $isActive &&
@@ -35,7 +42,7 @@ export const MenuItem = styled.li<{ $isActive: boolean }>`
 `
 
 export const MenuLink = styled(Link)<{ $isActive: boolean }>`
-  color: ${colors.textDarkest};
+  font-weight: 500;
   ${mixin.linkOver(colors.primary)};
 
   ${({ $isActive }) =>
@@ -45,21 +52,12 @@ export const MenuLink = styled(Link)<{ $isActive: boolean }>`
     `}
 `
 
-const callToAction = css`
-  margin-left: 0.6em;
-  white-space: nowrap;
-  ${mixin.button};
-  ${mixin.buttonOver(colors.white, colors.textDarkest)};
-`
+export const RightSide = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
 
-export const Signup = styled.a`
-  ${callToAction};
-  color: ${colors.textDark};
-  background-color: #eeeeee;
-`
-
-export const Login = styled.a`
-  ${callToAction};
-  color: ${colors.white};
-  background-color: ${colors.primary};
+  ${StyledButton} {
+    margin-top: 0;
+  }
 `

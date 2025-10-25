@@ -3,7 +3,7 @@ meta:
   description: List of apps integrated or in the process of integrating with the HubRise ecosystem. Integrated apps can share order, customer, or product data in real time.
 content:
   hero:
-    title: Integrated Apps
+    title: Integrations
     description:
       paragraph_1_text: You are a store manager and some applications you use are not on this page?
       paragraph_1_link_text: Contact us
@@ -269,6 +269,7 @@ content:
           description: Zelty Bridge is the advanced Zelty integration, offering bidirectional order synchronisation, inventory management, variant support, and other advanced features. Compatible with any Zelty EPOS, this integration replaces the previous one.
     - title: Food Ordering Platforms
       slug: food-ordering-platforms
+      has_suggest_app: true
       apps:
         - website: https://delicity.com
           documentation: /apps/delicity
@@ -386,6 +387,7 @@ content:
           additional_info: integration in progress
     - title: Online Ordering
       slug: online-ordering
+      has_suggest_app: true
       apps:
         - website: https://www.app4.co.uk
           documentation: /apps/app4
@@ -560,6 +562,7 @@ content:
           additional_info:
     - title: Self-Ordering Kiosks
       slug: self-ordering-kiosks
+      has_suggest_app: true
       apps:
         - website: https://www.bwares.fr
           documentation: /apps/bwares
@@ -589,6 +592,7 @@ content:
           additional_info:
     - title: Delivery Management
       slug: delivery-management
+      has_suggest_app: true
       apps:
         - website: https://biteberry.com
           documentation: /apps/biteberry
@@ -659,6 +663,7 @@ content:
           additional_info: Integration in progress.
     - title: Loyalty and Marketing
       slug: loyalty-and-marketing
+      has_suggest_app: true
       apps:
         - website: https://www.como.com
           documentation: /apps/como
@@ -705,6 +710,7 @@ content:
           description: UPXP is the first cryptocurrency dedicated to restaurateurs. UPXP rewards customers with cryptocurrency they can use in other businesses. Engage clients and avoid paying commissions to banks and third-parties.
     - title: Operations and Inventory
       slug: operations-and-inventory
+      has_suggest_app: true
       apps:
         - website: https://get.apicbase.com
           documentation: /apps/apicbase
@@ -772,6 +778,7 @@ content:
           description: StockTake Online is an inventory management system designed for restaurants, bars, nightclubs, and more. It helps organise operations by simplifying purchasing, minimising waste, and enhancing profitability.
     - title: Other Apps
       slug: other-apps
+      has_suggest_app: true
       apps:
         - website:
           documentation: /apps/catalog-manager
@@ -852,3 +859,5 @@ content:
       paragraph_2:
         chunk_1: HubRise users are professionals looking for solutions to modernise their business.
         chunk_2: There's a lot to be done - today's good ideas are tomorrow's standards.
+    button_label: Start integration
+    button_link: /developers

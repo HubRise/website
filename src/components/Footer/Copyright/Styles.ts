@@ -1,76 +1,48 @@
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
+import { breakpoints, colors, mixin } from "@utils/styles"
 
 export const StyledCopyright = styled.div`
-  background-color: ${colors.textDarkest};
+  background-color: ${colors.backgroundDark};
+  padding: 0 1rem;
+
+  @media (min-width: ${breakpoints.large}) {
+    padding: 0;
+  }
 `
 
 export const Container = styled.div`
-  padding: 0.8em 0 0.5em 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1em;
-  justify-items: center;
-  align-items: center;
-
-  ${mixin.container};
-
-  @media (min-width: ${breakpoints.large}) {
-    grid-template-columns: 3fr 1fr 3fr;
-  }
-`
-
-export const Company = styled.div`
-  text-align: center;
-
-  @media (min-width: ${breakpoints.large}) {
-    text-align: left;
-  }
-`
-
-export const Logo = styled.img`
-  position: relative;
-  bottom: 0.15em;
-`
-
-export const Contact = styled.div`
+  min-height: 5rem;
+  ${mixin.containerWrapper}
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+  color: ${colors.textLighter};
 
-  @media (min-width: ${breakpoints.large}) {
-    justify-content: flex-end;
+  @media (min-width: ${breakpoints.medium}) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 `
 
-const contactGap = "0.75rem"
+export const Text = styled.span`
+  order: 1;
 
-export const EmailLink = styled.a`
-  color: ${colors.white};
-  ${mixin.linkOver(colors.primary)};
-
-  &:after {
-    content: "●";
-    display: inline-block;
-    margin-left: ${contactGap};
-    font-size: ${fontSizes._12};
-    color: ${colors.textMedium};
+  @media (min-width: ${breakpoints.medium}) {
+    order: initial;
   }
 `
 
-export const SocialLink = styled.a`
-  margin-left: ${contactGap};
-  ${mixin.centerElement};
+export const Links = styled.div`
+  display: flex;
+  gap: 1.5rem;
 
-  svg {
-    width: 1.3rem;
-    height: 1.3rem;
-    fill: ${colors.white};
-    transition: fill 0.2s ease;
-
-    &:hover {
-      fill: ${colors.primary};
-    }
+  a {
+    ${mixin.linkOver(colors.white)}
   }
 `

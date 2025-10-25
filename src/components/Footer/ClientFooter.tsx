@@ -7,7 +7,8 @@ import { Nav, StyledFooter, Wrapper } from "./Styles"
 import { IFooter } from "./types"
 
 const ClientFooter = ({ footerData }: { footerData: IFooter }) => {
-  const { sections } = footerData
+  const { sections, copyright_links, all_rights_reserved } = footerData
+
   return (
     <StyledFooter>
       <Wrapper>
@@ -20,7 +21,7 @@ const ClientFooter = ({ footerData }: { footerData: IFooter }) => {
         <ScrollUpButton />
       </Wrapper>
 
-      <Copyright />
+      <Copyright copyrightLinks={copyright_links} allRightsReserved={all_rights_reserved} />
     </StyledFooter>
   )
 }

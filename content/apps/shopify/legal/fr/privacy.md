@@ -12,7 +12,7 @@ meta:
 
 ### Informations personnelles collectées par l'Application
 
-Lorsque vous installez l'Applications, nous sommes automatiquement en mesure d'accéder à certains types d'informations de votre compte Shopify :
+Lorsque vous installez l'Application, nous sommes automatiquement en mesure d'accéder à certains types d'informations de votre compte Shopify :
 
 - Vos commandes
 - Votre catalogue de produits
@@ -28,13 +28,11 @@ Nous collectons les informations personnelles directement via l'API Shopify.
 
 ### Comment utilisons-nous les informations personnelles de vos clients ?
 
-Les informations personnelles que nous collectons de vos clients nous permettent de fournir le Service et de faire fonctionner l'Application.
-Ces informations ne sont partagées qu'avec les applications que vous avez explicitement sélectionnées dans le back-office de HubRise.
+Les informations personnelles que nous collectons de vos clients nous permettent de fournir le Service et de faire fonctionner l'Application. Ces informations ne sont partagées qu'avec les applications que vous avez explicitement sélectionnées dans le back-office de HubRise.
 
 ### Partage de vos informations personnelles
 
-Nous ne partageons pas vos informations personnelles avec des services tiers.
-Nous pouvons les partager afin de nous conformer aux lois et réglementations en vigueur, de répondre à une assignation, un mandat de perquisition ou toute autre demande légale d'information que nous recevons, ou de protéger nos droits.
+Nous ne partageons pas vos informations personnelles avec des services tiers. Nous pouvons les partager afin de nous conformer aux lois et réglementations en vigueur, de répondre à une assignation, un mandat de perquisition ou toute autre demande légale d'information que nous recevons, ou de protéger nos droits.
 
 ### Vos droits
 
@@ -50,7 +48,6 @@ Lorsque vos clients passent une commande via le Site, nous conservons leurs info
 
 Cette politique de confidentialité pourra être mise à jour de temps en temps afin de refléter par exemple des changements dans nos pratiques ou pour d'autres raisons opérationnelles, juridiques ou réglementaires.
 
-Nous contacter
-Pour plus d'informations sur nos pratiques en matière de confidentialité, pour toute question, ou si vous souhaitez déposer une plainte, veuillez nous contacter par e-mail à contact\@hubrise.com ou par courrier en utilisant les coordonnées ci-dessous :
+Pour plus d'informations sur nos pratiques en matière de confidentialité, pour toute question ou pour déposer une réclamation, veuillez nous contacter par e-mail à l'adresse contact@hubrise.com, ou par courrier aux coordonnées suivantes :
 
-HubRise - Business Pôle entrée A - 1047 route des Dolines - Allée Pierre Ziller - 06560 Valbonne
+HubRise - 630 route des Dolines - Ophira 2 - 06560 Valbonne

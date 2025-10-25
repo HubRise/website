@@ -8,7 +8,9 @@ meta:
   description: Cette page explique pourquoi vous ne pouvez pas désactiver la tablette lorsque vous connectez votre enseigne à HubRise avec Just Eat Flyt Bridge.
 ---
 
-Vous devez laisser la tablette Just Eat allumée pour pouvoir recevoir des commandes, même après avoir connecté votre restaurant à HubRise. Si vous l'éteignez, les commandes n'apparaîtront pas sur votre compte HubRise.
+Vous devez laisser la tablette Just Eat allumée pour pouvoir recevoir des commandes, même après avoir connecté votre restaurant à HubRise.
+
+Avec la tablette éteinte, il se peut que des commandes arrivent dans HubRise, mais la réception n'est pas garantie et Just Eat déconseille de le faire. Si vous êtes au Royaume-Uni, en Irlande, en Espagne, en Italie ou en Australie, aucune commande n'arrivera dans HubRise si la tablette est éteinte.
 
 Après avoir connecté votre restaurant à HubRise, vous pouvez continuer à gérer vos commandes entrantes depuis la tablette, ou bien utiliser votre logiciel de caisse connecté.
 

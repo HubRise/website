@@ -13,6 +13,7 @@ import { HeaderLink } from "@utils/mdx/remarkHeadingsPlugin"
 import AppInfo from "./AppInfo"
 import Feedback from "./Feedback"
 import Gallery from "./Gallery"
+import Hero from "./Hero"
 import Navigator from "./Navigator"
 import { Content, LogoImage, LogoLink, Main, Navigation, Page, Warning } from "./Styles"
 
@@ -39,9 +40,10 @@ const Documentation = ({
 
   return (
     <DocumentationWrapper contentImages={contentImages} title={[folder.name, mdFile.frontMatter.title].join(" - ")}>
-      <Breadcrumbs breadcrumbs={mdFile.breadcrumbs} />
+      <Hero title={folder.name} />
 
       <Page>
+        <Breadcrumbs breadcrumbs={mdFile.breadcrumbs} />
         {mdFile.copyFromLanguage && <Warning>{t("documentation.language_warning." + mdFile.copyFromLanguage)}</Warning>}
 
         {logoImage && (

@@ -32,8 +32,10 @@ Almost all the fields are optional. In fact the simplest order that can be creat
 | `status`                                                              | [OrderStatus](#status)                                   | Current order status.                                                                                                                                          |
 | `service_type` <Label type="optional" />                              | string                                                   | Delivery/serving method. Can be: `delivery`, `collection`, or `eat_in`.                                                                                        |
 | `service_type_ref` <Label type="optional" />                          | string                                                   | Order type identifier. Can indicate channel, brand, and delivery method.                                                                                       |
-| `expected_time` <Label type="optional" />                             | [Time](/developers/api/general-concepts#dates-and-times) | Time the customer expects to receive the order. Leave empty for As Soon As Possible (ASAP) orders.                                                             |
-| `confirmed_time` <Label type="optional" />                            | [Time](/developers/api/general-concepts#dates-and-times) | Confirmed time for the customer to receive the order.                                                                                                          |
+| `expected_time` <Label type="optional" />                             | [Time](/developers/api/general-concepts#dates-and-times) | The date and time the order should be ready or delivered.                                                                                                      |
+| `expected_time_pickup` <Label type="optional" />                      | boolean                                                  | Delivery orders only. If true, the `expected_time` is the pickup time, otherwise it is the delivery time. By default, false.                                   |
+| `asap` <Label type="optional" />                                      | boolean                                                  | If true, the order can be made any time, and `expected_time` is the latest acceptable time. Defaults to true if `expected_time` is not set, false otherwise.   |
+| `confirmed_time` <Label type="optional" />                            | [Time](/developers/api/general-concepts#dates-and-times) | The date and time confirmed by the merchant. Used to override the customer's expected time.                                                                    |
 | `customer_notes` <Label type="optional" />                            | string                                                   | Customer-provided instructions, such as allergies or special requests.                                                                                         |
 | `seller_notes` <Label type="optional" />                              | string                                                   | Merchant-provided information, such as product substitution notices.                                                                                           |
 | `collection_code` <Label type="optional" />                           | string                                                   | Short order identifier shared with the customer, and used for simplified collection or delivery. Not necessarily unique.                                       |
@@ -62,6 +64,8 @@ Almost all the fields are optional. In fact the simplest order that can be creat
   "service_type": "delivery",
   "service_type_ref": "WEBSITE-DEL",
   "expected_time": "2021-06-24T11:30:00+02:00",
+  "expected_time_pickup": false,
+  "asap": true,
   "items": [
     {
       "product_name": "Margarita",
@@ -200,6 +204,8 @@ In addition, each `item`, `charge`, `payment` and `discount` is returned with a 
   "channel": "Website",
   "connection_name": null,
   "expected_time": "2021-06-24T19:07:52+02:00",
+  "expected_time_pickup": false,
+  "asap": true,
   "confirmed_time": null,
   "customer_notes": null,
   "seller_notes": null,
@@ -409,6 +415,8 @@ Orders of any location of the account:
    "created_at": "2021-06-24T17:07:53+02:00",
    "created_by": "MyClient",
    "expected_time": "2021-06-24T19:07:52+02:00",
+   "expected_time_pickup": null,
+   "asap": true,
    "confirmed_time": null,
    "items": [
      ...
