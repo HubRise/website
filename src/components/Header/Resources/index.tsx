@@ -16,15 +16,16 @@ import {
 
 interface ResourcesProps {
   resources: TResources
+  onLinkClick?: () => void
 }
 
-const Resources = ({ resources }: ResourcesProps) => {
+const Resources = ({ resources, onLinkClick }: ResourcesProps) => {
   return (
     <ResourcesContainer>
       <ResourcesLinks>
         {resources.links?.map(({ link, link_label, link_description }, index) => {
           return (
-            <ResourcesLink href={link} key={index}>
+            <ResourcesLink href={link} key={index} onClick={onLinkClick}>
               <LinkName>{link_label}</LinkName>
               <LinkDescription>{link_description}</LinkDescription>
             </ResourcesLink>
