@@ -383,7 +383,7 @@ content:
           logo: wolt.png
           country: DE
           title: Wolt
-          description: Wolt est une plateforme de livraison à domicile qui met en relation les clients, les restaurants, les épiceries et les coursiers. Les commandes peuvent être passées via l’application ou le site web. Service est disponible dans 30 pays à travers le monde.
+          description: Wolt est une plateforme de livraison à domicile qui met en relation les clients, les restaurants, les épiceries et les coursiers. Les commandes peuvent être passées via l’application ou le site web. Le service est disponible dans 30 pays à travers le monde.
           additional_info: intégration en cours
     - title: Commande en ligne
       slug: online-ordering

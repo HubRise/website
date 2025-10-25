@@ -22,11 +22,11 @@ app_info:
 
 ## Description
 
-Wolt a pour mission de faciliter la vie urbaine en permettant à chacun de découvrir et de profiter du meilleur que sa ville a à offrir, livré directement à sa porte.
+Fondée à Helsinki, en Finlande, en 2014, Wolt a pour mission de faciliter la vie urbaine en permettant aux gens de découvrir et de profiter du meilleur de ce que leur ville a à offrir, livré directement à leur porte.
 
-Grâce à l’application et au site web Wolt, les clients peuvent parcourir une large sélection de restaurants et de boutiques, passer une commande et se faire livrer rapidement par un réseau de coursiers indépendants. La plateforme prend également en charge les commandes à emporter, permettant aux utilisateurs d’éviter les files d’attente et de récupérer leurs achats directement.
+Grâce à l'application et au site web Wolt, les clients peuvent parcourir une large sélection de restaurants et de boutiques, passer une commande et se faire livrer rapidement par un réseau de coursiers indépendants. La plateforme prend également en charge les commandes à emporter, permettant aux utilisateurs d'éviter les files d'attente et de récupérer leurs achats directement.
 
-Au-delà de la livraison de repas, Wolt s’est développée dans le domaine de la livraison de produits de détail et d’épicerie, en proposant la livraison le jour même de produits essentiels provenant de grandes chaînes de supermarchés comme de commerces locaux.
+Au-delà de la livraison de repas, Wolt s’est développée dans la logistique de détail et d'épicerie, en proposant la livraison le jour même de produits essentiels provenant de grandes chaînes de supermarchés et de commerces locaux.
 
 Wolt est présente dans environ 30 pays, avec une forte implantation en Europe du Nord, centrale et de l’Est, ainsi que dans certains pays d’Asie et du Moyen-Orient. En 2022, Wolt a rejoint DoorDash.
 

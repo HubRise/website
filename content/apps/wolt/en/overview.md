@@ -22,7 +22,7 @@ app_info:
 
 ## Description
 
-Founded in Helsinki, Finland, in 2014, Wolt’s mission is to make city life easier by enabling people to discover and enjoy the best their city has to offer, conveniently delivered to their door.
+Founded in Helsinki, Finland, in 2014, Wolt's mission is to make city life easier by enabling people to discover and enjoy the best their city has to offer, conveniently delivered to their door.
 
 Through the Wolt app and website, clients can browse a wide selection of restaurants and shops, place an order, and have it delivered quickly by a network of independent couriers. The platform also supports pickup orders, allowing users to skip queues and collect their purchases directly. 
 
