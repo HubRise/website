@@ -1,11 +1,18 @@
-import { AppsYaml } from "@layouts/Apps/types"
+import { GetInTouchYaml } from "@components/GetInTouch/types"
+import { BecomePartnerYaml } from "@layouts/BecomePartner/types"
+import { BrandingYaml } from "@layouts/Branding/types"
+import { CatalogManagerYaml } from "@layouts/CatalogManager/types"
+import { ContactUsYaml } from "@layouts/ContactUs/types"
+import { DashboardYaml } from "@layouts/Dashboard/types"
 import { DocumentationIndexYaml } from "@layouts/DocumentationIndex/types"
-import { DocumentationSimpleFrontMatter } from "@layouts/DocumentationSimple/types"
+import { FAQsYaml } from "@layouts/FAQs/types"
 import { FrontpageYaml } from "@layouts/Frontpage/types"
+import { IntegrationsYaml } from "@layouts/Integrations/types"
+import { OrderlineYaml } from "@layouts/Orderline/types"
 import { PartnersYaml } from "@layouts/Partners/types"
 import { PricingYaml } from "@layouts/Pricing/types"
 import { TestimonialsYaml } from "@layouts/Testimonials/types"
-import { BlogArchives, BlogMdFile } from "@utils/BlogIndexer/types"
+import { BlogMdFile } from "@utils/BlogIndexer/types"
 import { Href, DocMdFile, DocFolder } from "@utils/DocIndexer/types"
 import { ContentDirName } from "@utils/files"
 import { Language } from "@utils/locales"
@@ -15,12 +22,17 @@ import { Language } from "@utils/locales"
 export type RouteNameStatic =
   | "apps"
   | "blog"
+  | "become-partner"
+  | "catalog-manager"
   | "branding"
+  | "contact-us"
   | "contributing"
+  | "dashboard"
   | "developers"
   | "docs"
   | "faqs"
   | "frontpage"
+  | "orderline"
   | "partners"
   | "pricing"
   | "testimonials"
@@ -47,27 +59,49 @@ export type LayoutName =
   | "apps"
   | "blog-index"
   | "blog-post"
+  | "become-partner"
+  | "catalog-manager"
+  | "contact-us"
+  | "dashboard"
   | "documentation"
   | "documentation-index"
-  | "documentation-simple"
+  | "branding"
+  | "faqs"
   | "frontpage"
+  | "orderline"
   | "partners"
   | "pricing"
   | "testimonials"
 export type Context<L extends LayoutName> = L extends "apps"
-  ? { context: { yaml: AppsYaml } }
+  ? { context: { yaml: IntegrationsYaml } }
   : L extends "blog-index"
-  ? { context: { mdFiles: Array<BlogMdFile>; archives: BlogArchives } }
+  ? { context: { mdFiles: Array<BlogMdFile> } }
   : L extends "blog-post"
-  ? { context: { mdFile: BlogMdFile; archives: BlogArchives } }
+  ? { context: { mdFile: BlogMdFile; mdFiles: Array<BlogMdFile> } }
+  : L extends "become-partner"
+  ? {
+      context: { yaml: BecomePartnerYaml }
+      getInTouch: { yaml: GetInTouchYaml }
+      testimonials: { yaml: TestimonialsYaml }
+    }
+  : L extends "catalog-manager"
+  ? { context: { yaml: CatalogManagerYaml }; getInTouch: { yaml: GetInTouchYaml } }
+  : L extends "contact-us"
+  ? { context: { yaml: ContactUsYaml } }
+  : L extends "dashboard"
+  ? { context: { yaml: DashboardYaml }; getInTouch: { yaml: GetInTouchYaml } }
   : L extends "documentation"
   ? { context: { mdFile: DocMdFile; folder: DocFolder } }
   : L extends "documentation-index"
   ? { context: { yaml: DocumentationIndexYaml } }
-  : L extends "documentation-simple"
-  ? { context: { content: string; frontMatter: DocumentationSimpleFrontMatter } }
+  : L extends "branding"
+  ? { context: { yaml: BrandingYaml } }
+  : L extends "faqs"
+  ? { context: { yaml: FAQsYaml }; getInTouch: { yaml: GetInTouchYaml } }
   : L extends "frontpage"
-  ? { context: { yaml: FrontpageYaml } }
+  ? { context: { yaml: FrontpageYaml }; testimonials: { yaml: TestimonialsYaml } }
+  : L extends "orderline"
+  ? { context: { yaml: OrderlineYaml }; getInTouch: { yaml: GetInTouchYaml } }
   : L extends "partners"
   ? { context: { yaml: PartnersYaml } }
   : L extends "pricing"

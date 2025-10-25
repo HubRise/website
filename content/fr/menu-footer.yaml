@@ -1,31 +1,55 @@
 sections:
-  - title: Intégrations
+  - title: Produit & Intégrations
     links:
-      - title: Apps
+      - title: Toutes les intégrations
         to: /fr/apps
-      - title: Contribuer à la documentation
-        to: /fr/contribuer
+      - title: Catalog Manager
+        to: /fr/catalog-manager
+      - title: OrderLine
+        to: /fr/orderline
+      - title: Tableau de bord
+        to: /fr/dashboard
   - title: Développeurs
     links:
+      - title: Référence de l'API
+        to: /fr/developers/api/general-concepts
       - title: Démarrage Rapide
         to: /fr/developers/quick-start
       - title: Guide d'Intégration
         to: /fr/developers/integration-guide
-      - title: Référence de l'API
-        to: /fr/developers/api/general-concepts
-      - title: Changelog
+      - title: Journal des changements
         to: /fr/developers/changelog
-  - title: Ressources
+  - title: Centre d'aide
     links:
-      - title: Guide utilisateur
+      - title: Aide
         to: /fr/docs
-      - title: Conditions Générales
-        to: /fr/legal/conditions-generales
-      - title: Mentions Légales
-        to: /fr/legal/mentions-legales
+      - title: FAQ
+        to: /fr/faqs
+      - title: Contribuer à la documentation
+        to: /fr/contribuer
+  - title: Partenaires
+    links:
+      - title: Devenir partenaire
+        to: /fr/devenir-partenaire
+      - title: Trouver un expert
+        to: /fr/partenaires
   - title: Société
     links:
+      - title: Blog
+        to: /fr/blog
       - title: Témoignages
         to: /fr/temoignages
       - title: Guide de la marque
         to: /fr/marque
+      - title: Nous contacter
+        to: /fr/contactez-nous
+      - title: LinkedIn
+        icon: linkedin
+        to: https://www.linkedin.com/company/hubrise
+        is_external: true
+copyright_links:
+  - title: Conditions Générales
+    link: /fr/legal/conditions-generales
+  - title: Mentions Légales
+    link: /fr/legal/mentions-legales
+all_rights_reserved: Tous droits réservés.

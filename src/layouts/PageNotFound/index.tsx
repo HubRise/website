@@ -1,12 +1,11 @@
 "use client"
 
 import Block from "@components/Block"
-import { BlockContent, BlockContentLink } from "@components/BlockContent"
 import useClientRoutes from "@hooks/client/useClientRoutes"
 import useTranslation from "@hooks/client/useTranslation"
 import { text } from "@utils/misc"
 
-import { StyledImage } from "./Styles"
+import { Content, ContentLink, StyledImage } from "./Styles"
 
 const PageNotFound = (): JSX.Element => {
   const { t } = useTranslation()
@@ -15,18 +14,18 @@ const PageNotFound = (): JSX.Element => {
   return (
     <>
       <Block backgroundColor="white" title={t("layout.404.title")}>
-        <BlockContent>
+        <Content>
           <p>{text(t("layout.404.content.text_before_link"))}</p>
 
           <p>
-            <BlockContentLink href={home}>{t("layout.404.content.text_link")}</BlockContentLink>
+            <ContentLink href={home}>{t("layout.404.content.text_link")}</ContentLink>{" "}
             {text(t("layout.404.content.text_after_link"))}
           </p>
 
           <p>{text(t("layout.404.content.signature"))}</p>
 
           <StyledImage alt="404 not found" src="/images/404.png" width={920} height={467} />
-        </BlockContent>
+        </Content>
       </Block>
     </>
   )

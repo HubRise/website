@@ -19,10 +19,11 @@ export const fontSizes = {
   _12: ".75rem",
   _14: ".875rem",
   _16: "1rem",
-  _18: "1.125rem",
+  _19: "1.1875rem",
   _24: "1.5rem",
   _32: "2rem",
   _42: "2.625rem",
+  _66: "4.125rem",
 }
 
 export const iconSizes = {
@@ -35,32 +36,40 @@ export const iconSizes = {
 }
 
 export const lineHeights = {
-  comfortable: "1.6",
-  compact: "1.3",
+  text: "1.6",
+  mediumTitle: "1.45",
+  largeTitle: "1.3",
 }
 
 export const breakpoints = {
-  medium: "40rem",
-  large: "64rem",
+  small: "26.5rem", // 424px
+  medium: "40rem", // 640px
+  large: "64rem", // 1024px
+  extraLarge: "90rem", // 1440px
+  biggest: "120rem", // 1920px
   documentationStickyMenu: "64rem",
   blogStickyMenu: "40rem",
-  burgerMenu: "75rem",
+  burgerMenu: "90rem",
 }
 
 export const colors = {
-  primary: "#6db24f",
+  primary: "#4ca30d",
   danger: "#b2564f",
   warning: "#fcfaed",
   white: "#fff",
+
+  greenLight: "#87c76c",
+  greenMediumLight: "#6db24f",
 
   textDarkest: "#333",
   textDark: "#555",
   textMedium: "#777",
   textLight: "#999",
-  textLighter: "#ccc",
+  textLighter: "#d0d5dd",
+  textDefault: "#555",
 
   backgroundDarker: "#333",
-  backgroundDark: "#555",
+  backgroundDark: "#404040",
   backgroundLight: "#efefef",
   backgroundLightest: "#f8f8f8",
   backgroundWhite: "#fff",
@@ -70,6 +79,8 @@ export const colors = {
   borderLighter: "#f0f0f0",
   borderLightest: "#f8f8f8",
   borderInputFocus: "#555",
+
+  headerBorder: "#4ca30d80",
 }
 
 export const boxShadows = {
@@ -77,16 +88,15 @@ export const boxShadows = {
   image: `0 0 5px rgba(0, 0, 0, 0.05)`,
   medium: `0 5px 10px rgba(0, 0, 0, 0.1)`,
   large: `5px 10px 15px rgba(0, 0, 0, 0.15)`,
+  card: `
+    -5px 49px 19px #b5b5b503,
+    -2.5px 27px 17px #b5b5b50d,
+    -1px 12px 12px #b5b5b517,
+    0px 2.5px 6.5px #b5b5b51a;
+  `,
 }
 
 export const mixin = {
-  button: css`
-    padding: 0.4rem 1.5rem;
-    text-transform: uppercase;
-    font-size: ${fontSizes._16};
-    font-weight: 500;
-    border-radius: ${sizes.borderRadius};
-  `,
   buttonOver: (color: string, backgroundColor: string): RuleSet => css`
     transition:
       color 0.2s ease,
@@ -105,26 +115,6 @@ export const mixin = {
   clickable: css`
     cursor: pointer;
     user-select: none;
-  `,
-  container: css`
-    max-width: 96%;
-    width: ${sizes.maxWidth};
-    margin: 0 auto;
-  `,
-  dotSeparatedList: (gap: string, color = colors.textLighter): RuleSet => css`
-    display: flex;
-    align-items: center;
-
-    &:not(:last-child) {
-      margin-right: ${gap};
-
-      &::after {
-        content: "●";
-        margin-left: ${gap};
-        font-size: ${fontSizes._12};
-        color: ${color};
-      }
-    }
   `,
   expandBefore: ({ width, color }: { width: string; color: string }): RuleSet => css`
     &::before {
@@ -154,11 +144,51 @@ export const mixin = {
       color: ${color};
     }
   `,
+  responsiveText: css`
+    font-size: ${fontSizes._16};
+    @media (min-width: ${breakpoints.large}) {
+      font-size: ${fontSizes._19};
+    }
+  `,
+  cardText: css`
+    font-size: ${fontSizes._16};
+    line-height: 1.5rem;
+    margin-top: 0.625rem;
+  `,
+  smallCardTitle: css`
+    font-size: ${fontSizes._19};
+    font-weight: 600;
+    color: ${colors.textDarkest};
+  `,
+  cardTitle: css`
+    font-size: ${fontSizes._24};
+    line-height: ${lineHeights.mediumTitle};
+    font-weight: 600;
+    color: ${colors.textDarkest};
+
+    @media (min-width: ${breakpoints.large}) {
+      font-size: ${fontSizes._32};
+    }
+  `,
+  containerWrapper: css`
+    max-width: ${breakpoints.biggest};
+    margin: 0 auto;
+
+    @media (min-width: ${breakpoints.large}) {
+      padding-left: 3.75rem;
+      padding-right: 3.75rem;
+    }
+
+    @media (min-width: ${breakpoints.biggest}) {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  `,
 }
 
 export const zIndexValues = {
+  integrationsNav: 9,
   header: 10,
-  mobileBarBackdrop: 20,
   mobileBarMenu: 30,
   slideshow: 100,
   modalOverlay: 150,

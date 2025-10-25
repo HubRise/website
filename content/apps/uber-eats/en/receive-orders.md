@@ -14,29 +14,18 @@ Your Uber Eats tablet can be switched off if you have enabled tabletless integra
 
 This page describes the information Uber Eats sends to HubRise and the way delivery information is synchronised between the two platforms. It helps you understand how orders will be received on your EPOS and how delivery tracking works when you use your own couriers (BYOC — _Bring Your Own Courier_).
 
-## Items and Options
+## Order Transmission
 
-### Items Encoding
+Uber Eats sends orders to HubRise at the pickup time minus the preparation time.
 
-For every item in the order, Uber Eats Bridge provides the following information:
+For example, if preparation time is set to 7 minutes and the order must be ready by 7:00 PM, the order is sent to HubRise at 6:53 PM.
 
-- `sku_ref`: The ref code of the item.
-- `product_name`: The product name.
-- `sku_name`: The name of the SKU, if available. SKUs are a special kind of modifiers in Uber Eats: their ref code always equals `MULTISKU`.
-- `price`: The price for a single item.
-- `quantity`: The quantity of items included in the order.
-- `options`: The modifiers attached to the item.
+The pickup time is defined as:
 
-### Options Encoding
+- For takeaway orders, this is when the customer collects the order.
+- For delivery orders, this is when the driver leaves the restaurant.
 
-For every modifier in the order, Uber Eats Bridge provides the following information:
-
-- `option_list_name`: The name of the modifier group.
-- `name`: The modifier name.
-- `ref`: The modifier ref code.
-- `price`: The price for a single modifier.
-
-Every option has single quantity. Multiple identical modifiers are encoded in separate option objects.
+You can adjust the transmission time by changing the preparation time via the HubRise API. See [Pause and Preparation Time](#pause-and-preparation-time) for details. You can also change the preparation time in the Uber Eats restaurant dashboard.
 
 ## Order Statuses
 
@@ -176,6 +165,30 @@ Additionally, for restaurant delivery orders, Uber Eats Bridge retrieves the fol
 - `latitude`: The latitude of the address.
 - `longitude`: The longitude of the address.
 
+## Items and Options
+
+### Items Encoding
+
+For every item in the order, Uber Eats Bridge provides the following information:
+
+- `sku_ref`: The ref code of the item.
+- `product_name`: The product name.
+- `sku_name`: The name of the SKU, if available. SKUs are a special kind of modifiers in Uber Eats: their ref code always equals `MULTISKU`.
+- `price`: The price for a single item.
+- `quantity`: The quantity of items included in the order.
+- `options`: The modifiers attached to the item.
+
+### Options Encoding
+
+For every modifier in the order, Uber Eats Bridge provides the following information:
+
+- `option_list_name`: The name of the modifier group.
+- `name`: The modifier name.
+- `ref`: The modifier ref code.
+- `price`: The price for a single modifier.
+
+Every option has single quantity. Multiple identical modifiers are encoded in separate option objects.
+
 ## Discounts
 
 The discounts applied to the order are passed in the HubRise `discounts` array.
@@ -208,7 +221,8 @@ Product-level customer notes are encoded in the `customer_notes` field.
 When order acceptance and preparation time sync is enabled, Uber Eats Bridge syncs the `order_acceptance` and `preparation_time` fields from HubRise to Uber Eats.
 
 The `order_acceptance.mode` field controls the store status:
+
 - `normal` or `busy`: Store open
 - `paused`: Store paused with optional reason passed to Uber Eats
 
-The preparation time sent to Uber Eats is `preparation_time` in normal mode, or `preparation_time` plus `order_acceptance.extra_preparation_time` in busy mode.
+The preparation time sent to Uber Eats is `preparation_time` in normal mode, or `preparation_time` plus `order_acceptance.extra_preparation_time` in busy mode. The maximum allowed preparation time is 3 hours (180 minutes).

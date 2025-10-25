@@ -1,0 +1,70 @@
+meta:
+  title: Dashboard | HubRise
+  description:
+content:
+  hero:
+    title:
+      part_1: Prenez les
+      part_2: bonnes
+      part_3: décisions avec le
+      part_4: Dashboard HubRise
+    description: Consultez vos données de commande dans le Dashboard HubRise pour suivre les performances de votre activité sur tous vos établissements et canaux de vente. Analysez les tendances de chiffre d'affaires, comparez les résultats dans le temps et identifiez vos produits les plus vendus et vos heures de pointe.
+    content:
+      firstSide: Les commerces et restaurants génèrent une grande quantité de données — souvent précieuses pour l'analyse. Bien exploitées, ces données permettent aux dirigeants et responsables de prendre des décisions éclairées, d'améliorer la performance et de stimuler la croissance.
+      secondSide: Le Dashboard HubRise donne un accès simple à des rapports prêts à l'emploi provenant de tous vos canaux de vente connectés. Consultez des données agrégées pour un établissement ou l'ensemble de votre réseau — à tout moment et depuis n'importe quel appareil — pour soutenir une prise de décision basée sur les données.
+  features:
+    title: Fonctionnalités
+    cards:
+      - title: Données en temps réel
+        description: Accédez aux données de vente au moment même où elles sont générées. Suivez la performance de votre activité en temps réel grâce à des chiffres qui se mettent à jour instantanément à chaque commande. Réagissez rapidement aux évolutions, détectez les problèmes à temps et agissez en toute confiance.
+        image: real-time.svg
+      - title: Rapports prêts à l'emploi
+        description: Accédez à des rapports automatiques issus de vos applications connectées, sans travail manuel fastidieux. Partagez ces rapports clairs et faciles à comprendre avec les responsables locaux pour garder vos équipes informées, impliquées et concentrées sur la performance.
+        image: ready-made-reports.svg
+      - title: Données consolidées
+        description: Visualisez les données agrégées de tous vos établissements et canaux de vente dans un seul endroit. Obtenez une vue d'ensemble globale de votre activité, sans avoir à passer d'un système ou d'une application à l'autre.
+        image: consolidated-data-locations.svg
+      - title: Analyse fine des performances
+        description: Analysez les résultats par canal de vente ou par établissement pour identifier les points forts et les axes d'amélioration. Comparez les tendances entre sites afin de soutenir des décisions opérationnelles éclairées.
+        image: granular-performance.svg
+      - title: Évolution du chiffre d'affaires
+        description: Suivez les tendances de votre chiffre d'affaires par jour, semaine, mois, année ou période personnalisée pour identifier les schémas de croissance et la saisonnalité. Utilisez les données historiques pour comparer les performances avec les années précédentes, affiner vos prévisions et planifier sereinement.
+        image: revenue-over-time.svg
+      - title: Produits les plus vendus
+        description: Visualisez vos 30 produits les plus populaires en un coup d'œil, classés par volume de ventes — ou affichez la liste complète pour une analyse plus approfondie. Utilisez ces informations pour ajuster votre catalogue, planifier des promotions ciblées et optimiser vos achats.
+        image: top-selling-products.svg
+  details:
+    title: Comprenez votre activité grâce aux données
+    content_blocks:
+      - title: Répartition du chiffre d'affaires
+        content: |
+          <p>Visualisez votre chiffre d'affaires selon trois axes :</p>
+          <ul>
+            <li><strong>Canal</strong> – comparez les plateformes de livraison à votre propre site ou à d'autres applications.</li>
+            <li><strong>Nom de connexion</strong> – distinguez votre marque principale des marques virtuelles ou dark kitchens.</li>
+            <li><strong>Établissement</strong> – identifiez les points de vente qui génèrent le plus de revenus.</li>
+          </ul>
+        image: revenue-breakdown.png
+      - title: Évolution du chiffre d'affaires
+        content: |
+          <p>Le graphique en courbes suit l'évolution du chiffre d'affaires, du volume de ventes et du panier moyen dans le temps, avec une granularité qui s'adapte à la période sélectionnée.</p>
+          <p>Un panneau de synthèse met en avant les indicateurs clés et les tendances à la hausse ou à la baisse.</p>
+        image: revenue-over-time.png
+      - title: Heures de pointe
+        content: |
+          <p>Une carte thermique affiche vos périodes les plus fréquentées par jour et par heure.</p>
+          <p>Exploitez ces informations pour optimiser le personnel, planifier des promotions et mieux gérer les stocks.</p>
+        image: peak-hours.png
+      - title: Produits les plus vendus
+        content: |
+          <p>Consultez vos 30 articles les plus vendus et leurs volumes de vente, ou affichez l'ensemble de votre catalogue.</p>
+          <p>Filtrez par établissement et par période pour repérer les tendances saisonnières et mieux comprendre les préférences de vos clients.</p>
+        image: top-selling-products.png
+  action_block:
+    title: Apps incluses pour optimiser vos opérations
+    description: Découvrez les autres apps incluses avec HubRise pour optimiser vos opérations, fluidifier vos flux de travail et simplifier le reporting.
+    buttons:
+      - button_label: Gérez vos catalogues
+        button_link: /fr/catalog-manager
+      - button_label: Centralisez vos commandes
+        button_link: /fr/orderline

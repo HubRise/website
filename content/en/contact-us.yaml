@@ -1,0 +1,28 @@
+meta:
+  title: Contact Us | HubRise
+  description:
+content:
+  hero:
+    title:
+      part_1: How Can We
+      part_2: Help You?
+    cards:
+      - title: General Queries
+        description: You are a store owner, a software editor or a reseller and you would like to know more about HubRise or explore partnership opportunities.
+        email: contact@hubrise.com
+        buttons:
+          - button_label: Schedule a call
+            button_link: https://calendar.app.google/tJBYJ2X78qVgD6AR6
+          - button_label: Send a message
+            popup_link: true
+      - title: Support
+        description: You need help connecting your apps, managing your product catalog or resolving a technical issue.
+        email: support@hubrise.com
+      - title: Integration
+        description: You are an engineer and need help with an integration or you would like to proceed with an integration audit.
+        email: integration@hubrise.com
+  map:
+    title: Where Are We?
+    description: HubRise is based in the heart of Sophia Antipolis, the largest technology park in France, on the French Riviera.
+    image: address.png
+    address: 630 Route des Dolines, 06560 Valbonne Sophia Antipolis, France

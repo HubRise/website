@@ -11,7 +11,7 @@ excerpt: To consolidate orders, including those from Uber Eats and Deliveroo, Th
 
 **Who better than our technical partners to talk to you about integration? We turn to Théo Vandemeulebroucke, CEO and co-founder of SOS Soirée, who has just completed his integration with HubRise, in almost complete autonomy.**
 
-With the help of our open and public API, his computing skills, and our technical documentation, he swapped his CEO hat for that of a developer. Here's a look back at his experience.\*\*
+**With the help of our open and public API, his computing skills, and our technical documentation, he swapped his CEO hat for that of a developer. Here's a look back at his experience.**
 
 Founded in 2011 by three friends studying computer science, SOS Soirée has become a major player in aperitifs and spirits delivery in the areas of Annecy and Tignes, two French cities.
 

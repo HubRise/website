@@ -10,7 +10,7 @@ meta:
 
 ## Editeur du site
 
-HubRise SAS, société de droit français, immatriculée au RCS de Cannes sous le numéro 820 071 561 00014. Siège social: 150 avenue des Clos, 06250 Mougins, France. Code APE : 6202A. N° TVA : FR09 820071561. Directeur de la publication : Antoine Monnier.
+HubRise SAS, société de droit français, immatriculée au RCS de Cannes sous le numéro 820 071 561 00014. Siège social: 630 route des Dolines, Ophira 2, 06560 Valbonne, France. Code APE : 6202A. N° TVA : FR09 820071561. Directeur de la publication : Antoine Monnier.
 
 L'ensemble de ce site relève des législations françaises et internationales sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents iconographiques et photographiques.
 

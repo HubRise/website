@@ -1,53 +1,54 @@
-import type { MDXRemoteSerializeResult } from "next-mdx-remote"
-import { serialize } from "next-mdx-remote/serialize"
-
+import { serializeContent } from "@components/SerializedMdxContent/serialize"
 import Frontpage from "@layouts/Frontpage"
-import { contentImageMap } from "@utils/contentImage"
-import remarkTextPlugin from "@utils/mdx/remarkTextPlugin"
+import { contentImageMap, contentImagesFromFolder } from "@utils/contentImage"
 import { Route, RouteName } from "@utils/router/types"
 
 const frontpage = async (route: Route<RouteName, "frontpage">): Promise<JSX.Element> => {
   const yaml = route.context.yaml
-  const teamFilenames = yaml.content.developers.team_members.map((member) => member.filename)
+  const featuresImages: Array<string> = yaml.content.features.features_cards.map((feature) => feature.image)
+
+  const testimonials = route.testimonials.yaml
+  const testimonialLogos: Array<string> = testimonials.content.testimonials
+    .map((testimonial) => testimonial.person_details.logo)
+    .filter(Boolean) as Array<string>
 
   const [
     heroDescriptionMdx,
-    appsDescriptionMdx,
-    apiDescriptionMdx,
-    documentationDescriptionMdx,
+    appLogosMap,
+    featuresDescriptionMdx,
+    featuresImagesMap,
     pricingDescriptionMdx,
-    developersDescriptionMdx,
-    teamImageMap,
+    includedAppsDescriptionMdx,
+    partnersDescriptionMdx,
+    testimonialDescriptionMdx,
+    testimonialLogoMap,
   ] = await Promise.all([
-    serializeFrontpage(yaml.hero.description),
-    serializeFrontpage(yaml.content.apps.description),
-    serializeFrontpage(yaml.content.api.description),
-    serializeFrontpage(yaml.content.documentation.description),
-    serializeFrontpage(yaml.content.pricing.description),
-    serializeFrontpage(yaml.content.developers.description),
-    contentImageMap("/images/team", teamFilenames),
+    serializeContent(yaml.hero.description),
+    contentImagesFromFolder("/images/app-logos"),
+    serializeContent(yaml.content.features.description),
+    contentImageMap("/images/frontpage/proposals", featuresImages),
+    serializeContent(yaml.content.pricing.description),
+    serializeContent(yaml.content.included_apps.description),
+    serializeContent(yaml.content.partners.description),
+    serializeContent(yaml.content.testimonials.description),
+    contentImageMap("/images", testimonialLogos),
   ])
 
   return (
     <Frontpage
       yaml={yaml}
       heroDescriptionMdx={heroDescriptionMdx}
-      appsDescriptionMdx={appsDescriptionMdx}
-      apiDescriptionMdx={apiDescriptionMdx}
-      documentationDescriptionMdx={documentationDescriptionMdx}
+      appLogosMap={appLogosMap}
+      featuresDescriptionMdx={featuresDescriptionMdx}
+      featuresImagesMap={featuresImagesMap}
       pricingDescriptionMdx={pricingDescriptionMdx}
-      developersDescriptionMdx={developersDescriptionMdx}
-      teamImageMap={teamImageMap}
+      includedAppsDescriptionMdx={includedAppsDescriptionMdx}
+      partnersDescriptionMdx={partnersDescriptionMdx}
+      testimonials={testimonials}
+      testimonialDescriptionMdx={testimonialDescriptionMdx}
+      testimonialLogoMap={testimonialLogoMap}
     />
   )
 }
 
 export default frontpage
-
-const serializeFrontpage = async (markdown: string): Promise<MDXRemoteSerializeResult> => {
-  return serialize(markdown.replace(/\n/g, "\n\n"), {
-    mdxOptions: {
-      remarkPlugins: [remarkTextPlugin],
-    },
-  })
-}

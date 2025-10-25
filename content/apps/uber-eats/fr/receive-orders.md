@@ -14,29 +14,18 @@ Votre tablette Uber Eats peut être éteinte si vous avez activé l'intégration
 
 Cette page décrit les informations qu'Uber Eats envoie à HubRise et la manière dont les informations de livraison sont synchronisées entre les deux plateformes. Elle peut vous aider à comprendre comment les commandes seront reçues dans votre logiciel de caisse et comment fonctionne le suivi des livraisons si vous utilisez vos propres livreurs (BYOC — _Bring Your Own Courier_).
 
-## Articles et options
+## Transmission des commandes
 
-### Encodage des articles
+Uber Eats envoie les commandes à HubRise à l’heure de retrait diminuée du temps de préparation.
 
-Pour chaque article de la commande, Uber Eats Bridge fournit les informations suivantes :
+Par exemple, si le temps de préparation est de 7 minutes et que la commande doit être prête à 19h00, elle sera envoyée à HubRise à 18h53.
 
-- `sku_ref` : code ref de l'article
-- `product_name` : nom du produit
-- `sku_name` : nom de la SKU, le cas échéant. Les SKU sont un type spécifique de modificateur dans Uber Eats : leur code ref correspond toujours à `MULTISKU`.
-- `price` : prix unitaire de l'article
-- `quantity` : quantité d'articles dans la commande
-- `options` : modificateurs associés à l'article
+L'heure de retrait est définie comme suit :
 
-### Encodage des options
+- Pour les commandes à emporter, il s’agit du moment où le client vient récupérer la commande.
+- Pour les commandes en livraison, il s’agit du moment où le coursier sort du restaurant.
 
-Pour chaque modificateur de la commande, Uber Eats Bridge fournit les informations suivantes :
-
-- `option_list_name` : nom du groupe de modificateurs
-- `name` : nom du modificateur
-- `ref` : code ref du modificateur
-- `price` : prix unitaire d'un modificateur
-
-Chaque option a une quantité égale à 1. Les modificateurs identiques sont encodés dans des objets d'option distincts.
+Vous pouvez ajuster l’heure de transmission en modifiant le temps de préparation via l’API HubRise. Voir [Mise en pause et temps de préparation](#pause-and-preparation-time) pour plus de détails. Vous pouvez également modifier ce temps dans le tableau de bord restaurant Uber Eats.
 
 ## Statuts de commande
 
@@ -176,6 +165,30 @@ De plus, pour les commandes livrées par le restaurant, Uber Eats Bridge récup�
 - `latitude` : latitude de l'adresse
 - `longitude` : longitude de l'adresse
 
+## Articles et options
+
+### Encodage des articles
+
+Pour chaque article de la commande, Uber Eats Bridge fournit les informations suivantes :
+
+- `sku_ref` : code ref de l'article
+- `product_name` : nom du produit
+- `sku_name` : nom de la SKU, le cas échéant. Les SKU sont un type spécifique de modificateur dans Uber Eats : leur code ref correspond toujours à `MULTISKU`.
+- `price` : prix unitaire de l'article
+- `quantity` : quantité d'articles dans la commande
+- `options` : modificateurs associés à l'article
+
+### Encodage des options
+
+Pour chaque modificateur de la commande, Uber Eats Bridge fournit les informations suivantes :
+
+- `option_list_name` : nom du groupe de modificateurs
+- `name` : nom du modificateur
+- `ref` : code ref du modificateur
+- `price` : prix unitaire d'un modificateur
+
+Chaque option a une quantité égale à 1. Les modificateurs identiques sont encodés dans des objets d'option distincts.
+
 ## Remises
 
 Les remises appliquées à la commande sont transmises dans le tableau `discounts` de HubRise.
@@ -212,4 +225,4 @@ Le champ `order_acceptance.mode` contrôle le statut du magasin :
 - `normal` ou `busy` : Magasin ouvert
 - `paused` : Magasin en pause avec raison optionnelle transmise à Uber Eats
 
-Le temps de préparation envoyé à Uber Eats est `preparation_time` en mode normal, ou la somme de `preparation_time` et de `order_acceptance.extra_preparation_time` en mode forte affluence.
+Le temps de préparation envoyé à Uber Eats est `preparation_time` en mode normal, ou la somme de `preparation_time` et de `order_acceptance.extra_preparation_time` en mode forte affluence. Le temps de préparation maximum autorisé est de 3 heures (180 minutes).

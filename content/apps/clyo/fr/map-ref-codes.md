@@ -23,7 +23,7 @@ Les remises dans HubRise sont créés comme des produits à prix libre négatif 
 
 ## Frais
 
-Les frais de livraison ou de service doivent être créés comme des produits à prix libre positif dans LEO2. Pour trouver le code ref des frais, procédez comme pour les [produits](#products).
+Les frais de livraison ou de service doivent être créés comme des produits à prix libre positif dans Clyo Systems. Pour trouver le code ref des frais, procédez comme pour les [produits](#products).
 
 ## Méthodes de paiement
 

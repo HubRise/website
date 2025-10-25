@@ -1,6 +1,11 @@
+import Image from "next/image"
 import { usePathname } from "next/navigation"
+import { useState } from "react"
 
-import LanguageLinks from "@components/Header/LanguageLinks"
+import Accordion from "@components/Accordion"
+import Button from "@components/Button"
+import IncludedApps from "@components/Header/IncludedApps"
+import Resources from "@components/Header/Resources"
 import useClientRoutes from "@hooks/client/useClientRoutes"
 import useTranslation from "@hooks/client/useTranslation"
 import type { LanguagePaths } from "@utils/locales"
@@ -8,20 +13,20 @@ import { iconSizes } from "@utils/styles"
 
 import { IHeaderLink } from "../../shared/types"
 import { isHeaderLinkActive } from "../../shared/utils"
+import LanguageLinks from "../LanguageLinks"
+import { LogoLink } from "../Styles"
 
 import {
-  Backdrop,
   Container,
-  HeaderTitle,
   StyledMobileBar,
   Header,
   Nav,
   NavLink,
   LanguageItem,
   LanguageList,
-  NavLinkLogin,
   LanguageLink,
   HeaderIcon,
+  Buttons,
 } from "./Styles"
 
 interface MobileBarProps {
@@ -33,39 +38,52 @@ interface MobileBarProps {
 
 const MobileBar = ({ languagePaths, menuItems, isOpen, close }: MobileBarProps): JSX.Element => {
   const { t } = useTranslation()
-  const { signup, login } = useClientRoutes()
+  const { signup, login, home } = useClientRoutes()
   const currentPathname = usePathname()
+  const [expandedAccordionIdx, setExpandedAccordionIdx] = useState<number | null>(null)
 
   return (
     <StyledMobileBar>
-      <Backdrop $isOpen={isOpen} onClick={close} />
-
       <Container $isOpen={isOpen}>
         <Header onClick={close}>
-          <HeaderIcon code="navigate_before" size={iconSizes._32} />
-          <HeaderTitle>Menu</HeaderTitle>
+          <HeaderIcon code="close" size={iconSizes._32} />
+          <LogoLink href={home}>
+            <Image src="/images/logo.svg" alt="HubRise" width={142} height={38} />
+          </LogoLink>
         </Header>
 
         <Nav>
-          {menuItems.map(({ title, to }, idx) => {
+          <LanguageList>
+            <LanguageLinks languagePaths={languagePaths} MenuItem={LanguageItem} MenuLink={LanguageLink} />
+          </LanguageList>
+
+          {menuItems.map(({ title, to, content }, idx) => {
             const isActive = isHeaderLinkActive(currentPathname, to)
             return (
-              <NavLink key={idx} href={to} onClick={close} $isActive={isActive}>
-                {title}
-              </NavLink>
+              <div key={idx}>
+                {content ? (
+                  <Accordion
+                    title={title}
+                    expanded={expandedAccordionIdx === idx}
+                    onExpandedChange={(expanded) => setExpandedAccordionIdx(expanded ? idx : null)}
+                  >
+                    {content.included_apps?.length && <IncludedApps included_apps={content.included_apps} />}
+                    {content.resources && <Resources resources={content.resources} />}
+                  </Accordion>
+                ) : (
+                  <NavLink href={to} onClick={close} $isActive={isActive}>
+                    {title}
+                  </NavLink>
+                )}
+              </div>
             )
           })}
 
-          <NavLink href={signup} $topMargin={true} $isActive={false}>
-            {t(`layout.header.buttons.signup`)}
-          </NavLink>
-
-          <NavLinkLogin href={login}>{t(`layout.header.buttons.login`)}</NavLinkLogin>
+          <Buttons>
+            <Button link={signup} label={t(`layout.header.buttons.signup`)} />
+            <Button link={login} label={t(`layout.header.buttons.login`)} type="secondary" />
+          </Buttons>
         </Nav>
-
-        <LanguageList>
-          <LanguageLinks languagePaths={languagePaths} MenuItem={LanguageItem} MenuLink={LanguageLink} />
-        </LanguageList>
       </Container>
     </StyledMobileBar>
   )
