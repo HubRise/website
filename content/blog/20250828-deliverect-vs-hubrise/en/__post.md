@@ -27,29 +27,35 @@ Unlike Deliverect, HubRise is entirely self-funded and HubRise focuses its resou
 ## Why Restaurants Choose HubRise
 
 ### Centralised Orders
+
 HubRise routes orders from multiple sales channels, including delivery platforms and your own branded online ordering website or self ordering kiosks—directly to your EPOS or into OrderLine, a HubRise app, where orders can be managed, printed, and tracked. Delivery platforms can be temporarily paused during peak times to prioritise your own website and in-store orders.
 
 ### Centralised Inventory and Opening Hours
+
 HubRise automatically syncs inventory from your EPOS or allows you to manage it manually. Update opening hours once in HubRise, and they instantly apply across connected delivery platforms and other sales channels that integrated this feature.
 
 ### Centralised Menu Management
+
 HubRise synchronises menus from your EPOS to all connected sales channels. Menus can also be created and managed directly in HubRise. Location, or sales channel specific catalog variants, such as different prices or available items, are supported. This makes HubRise an ideal solution for chains and franchises or dark kitchens that share certain menu items (e.g., desserts or drinks) but have unique main offerings.
 
 ### Large Ecosystem of Integrated Solutions
+
 HubRise connects with a wide range of EPOS systems, kitchen displays, cloud printers, kiosks, online ordering solutions, table-ordering apps, WhatsApp ordering, delivery platforms, marketing tools, operations management platforms, delivery management solutions, and more. Each restaurant can build its own custom ecosystem.
 
 ### Support by engineers
+
 When you need assistance, you communicate directly with onboarding and support engineers by email or through a scheduled call or web-conference. This ensures your questions are answered by the people perfectly informed, providing clear, technical, and reliable solutions without delays or scripted chatbot responses.
 
 ### Transparent, Flat-Pricing Model
+
 HubRise offers a simple, predictable pricing model: **€35 per location**, with no setup fees, no long-term contracts, and no per-order fees. Many customers switching from Deliverect cite cost savings as an important factor in their decision.
 
-
 ## Simple Migration from Deliverect
+
 Switching from Deliverect to HubRise is straightforward, often as simple as creating a HubRise account and reconnecting apps. Our onboarding and support team is here to guide you, so if you’re thinking about migrating, [schedule a call](https://calendar.app.google/htwzrZQMbq9pSvaR9), or get in touch with support@hubrise.com and we’ll make the process quick and painless.
 
-___
+---
 
 To stay informed about new integrations to the ecosystem of integrated apps, follow HubRise on [LinkedIn](https://www.linkedin.com/company/hubrise).
 
-___
+---
