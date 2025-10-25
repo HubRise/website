@@ -20,7 +20,7 @@ Antoine Monnier, fondateur de HubRise a l'API, il a l’habitude de travailler a
 ## La rencontre avec Thomas, co-fondateur de TicknCook
 Thomas, développeur freelance passionné cherche de nouveaux défis. Antoine lui expose le besoin : 
 
-> « créer un écran cuisine ou Kitchen Display System (KDS) qui s'intègre parfaitement à HubRise. »
+> « Créer un écran cuisine ou Kitchen Display System (KDS) qui s'intègre parfaitement à HubRise. »
 
 L'idée séduit immédiatement Thomas. En quelques semaines, la version 0.01 de TicknCook voit le jour.
 
@@ -70,7 +70,7 @@ Résultat : 250 commandes par jour gérées sans accroc. Chaque poste de cuisine
 
 ----
 
-[Découvrez l'article de blog complet sur Food Hero](https://www.hubrise.com/fr/blog/dark-kitchen-food-hero)
+[Lire l'article de blog sur Food Hero](https://www.hubrise.com/fr/blog/dark-kitchen-food-hero)
 
 ----
 
@@ -82,7 +82,7 @@ Plus il y a d'intégrations sur HubRise, plus TicknCook devient accessible. Plus
 
 ----
 
-[Découvrez l'article de blog complet sur SOS Soirée](https://www.hubrise.com/fr/blog/sos-soiree)
+[Lire l'article de blog sur SOS Soirée](https://www.hubrise.com/fr/blog/sos-soiree)
 
 ----
 
