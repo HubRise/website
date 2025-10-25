@@ -1,5 +1,5 @@
 ---
-title: HubRise en marque blanche – Votre marque, nos applications
+title: "HubRise en marque blanche : Votre marque, nos applications"
 path_override: marque-blanche
 date: 2025-02-26
 author: Antoine Monnier

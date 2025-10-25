@@ -1,5 +1,5 @@
 ---
-title: "TicknCook and HubRise: The story of a collaboration that digitises restaurant kitchens"
+title: "TicknCook and HubRise: The Story of a Collaboration That Digitises Restaurant Kitchens"
 path_override: tickncook-hubrise-collaboration
 date: 2025-09-26
 author: Sophie Lecomte
