@@ -150,7 +150,7 @@ content:
           country: GB
           title: Panda EPOS
           description: Panda EPOS centralise les commandes de tous les canaux, le fichier clients et le menu. Il offre une plate-forme unique pour les restaurants avec un ou plusieurs emplacements pour gérer les livraisons et les commandes à emporter.
-          additional_info: Intégration en cours.
+          additional_info:
         - website: https://www.partech.com/pixel-point-software
           documentation: /fr/apps/pixelpoint-bridge
           logo: par-pixelpoint-web-api.png
@@ -378,6 +378,13 @@ content:
           country: AU, BE, CA, FR, DE, IE, NL, ES, CH, GB
           title: Uber Eats
           description: Uber Eats est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une application mobile. Disponible dans 45 pays et 6.000 villes.
+        - website: https://wolt.com/
+          documentation: /fr/apps/wolt
+          logo: wolt.png
+          country: DE
+          title: Wolt
+          description: Wolt est une plateforme de livraison à domicile qui met en relation les clients, les restaurants, les épiceries et les coursiers. Les commandes peuvent être passées via l’application ou le site web. Le service est disponible dans 30 pays à travers le monde.
+          additional_info: intégration en cours
     - title: Commande en ligne
       slug: online-ordering
       has_suggest_app: true
@@ -653,7 +660,7 @@ content:
           country: AU, CA, FR, DE, ES, GB
           title: Uber Direct
           description: Uber Direct est un service de livraison en marque blanche proposé par Uber. Il permet aux entreprises d'envoyer des produits ou colis à leurs clients en s'appuyant sur le vaste réseau de chauffeurs d'Uber Eats.
-          additional_info: Intégration en cours.
+          additional_info:
     - title: Fidélité et marketing
       slug: loyalty-and-marketing
       has_suggest_app: true
@@ -756,7 +763,7 @@ content:
           country:
           title: Sage X3
           description: Sage X3 est un ERP conçu pour les entreprises de taille moyenne à grande. Il offre des fonctionnalités de gestion financière, contrôle des stocks, planification de la production et approvisionnement, permettant de rationaliser les opérations et d'améliorer la prise de décision.
-          additional_info: Intégration réalisée par Gigavee Technology.
+          additional_info: Intégration réalisée par ERPExpert.
         - website: https://www.somm-it.com/
           documentation: /fr/apps/somm-it
           logo: somm-it.png

@@ -5,6 +5,14 @@ content:
   title: Rejoignez notre écosystème
   description: Trouver un expert. Si vous souhaitez créer une intégration personnalisée avec HubRise, nous avons des développeurs, des agences et des consultants qui l'ont déjà fait et qui peuvent vous aider.
   partners:
+    - name: "OnyLab"
+      site_url: "https://onylab.com"
+      filename: onylab.png
+      description: "Chez OnyLab, nous concevons des applications intelligentes pour aider les commerces de proximité et les restaurants à accélérer leur croissance. Nous facilitons l’acquisition de nouveaux clients, la fluidité des opérations, la gestion des commandes et l’augmentation du chiffre d’affaires. Nos applications sont conçues par des commerçants pour des commerçants, avec un fort accent sur la fiabilité, l’innovation et le support.\n\nHubRise joue un rôle clé en tant que connecteur vers des dizaines d’autres applications. Cela nous permet d’exploiter et de partager les données entre les différentes solutions utilisées par nos clients. Ainsi, OnyLab apporte une forte valeur ajoutée aux commerces de proximité et aux restaurateurs."
+    - name: "ERP Expert"
+      site_url: "https://www.erpexpert.com.au"
+      filename: erpexpert.png
+      description: "ERP Expert est un cabinet de conseil basé en Australie, spécialisé dans la sélection et le déploiement d’ERP. Ils intègrent vos solutions internes à des ERP établis afin de rationaliser les processus et d’améliorer l’efficacité opérationnelle dans différents secteurs.\n\nEn s’appuyant sur des technologies et méthodologies d’intégration modernes, ERP Expert connecte votre ERP à HubRise. ERP Expert couvre une multitude d’objets, notamment les commandes, les produits, les catalogues, les listes de prix, les paiements, les retours et les remboursements, garantissant un échange de données cohérent et efficace dans l’ensemble de votre écosystème métier."
     - name: "ZeProgFactory"
       site_url: "https://www.zpf.fr"
       filename: ze-prog-factory.png

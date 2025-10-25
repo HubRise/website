@@ -1,5 +1,5 @@
 ---
-title: HubRise White Label – Your Brand, Our Applications
+title: "HubRise White Label: Your Brand, Our Applications"
 path_override: white-label
 date: 2025-02-26
 author: Antoine Monnier
