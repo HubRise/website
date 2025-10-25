@@ -59,8 +59,7 @@ De nombreux clients ayant quitté Deliverect citent les économies réalisées c
 ## Une migration simple depuis Deliverect
 
 Passer de Deliverect à HubRise est simple : dans la plus grande partie des cas, il suffit de créer un compte HubRise et de reconnecter vos applications.
-Notre équipe de mise en service, de prise en main et de support vous accompagne à chaque étape. Si vous envisagez une migration, [planifiez un appel](https://calendar.app.google/htwzrZQMbq9pSvaR9)
-ou contactez-nous à support@hubrise.com, et nous rendrons le process rapide et fluide.
+Notre équipe support vous accompagne à chaque étape pour la mise en service et la prise en main. Si vous envisagez une migration, [planifiez un appel](https://calendar.app.google/htwzrZQMbq9pSvaR9) ou contactez-nous sur support@hubrise.com, et nous vous aiderons à rendre le processus simple et rapide.
 
 ---
 
