@@ -67,8 +67,10 @@ const MobileBar = ({ languagePaths, menuItems, isOpen, close }: MobileBarProps):
                     expanded={expandedAccordionIdx === idx}
                     onExpandedChange={(expanded) => setExpandedAccordionIdx(expanded ? idx : null)}
                   >
-                    {content.included_apps?.length && <IncludedApps included_apps={content.included_apps} />}
-                    {content.resources && <Resources resources={content.resources} />}
+                    {content.included_apps?.length && (
+                      <IncludedApps included_apps={content.included_apps} onLinkClick={close} />
+                    )}
+                    {content.resources && <Resources resources={content.resources} onLinkClick={close} />}
                   </Accordion>
                 ) : (
                   <NavLink href={to} onClick={close} $isActive={isActive}>

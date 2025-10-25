@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 import Icon from "@components/Icon"
 import { colors, iconSizes } from "@utils/styles"
 
@@ -37,16 +39,23 @@ const Dropdown = ({
   menuContent,
   position = "left",
 }: DropdownProps) => {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
     <>
-      <DropdownContainer data-testid={dataTestid}>
+      <DropdownContainer
+        data-testid={dataTestid}
+        $isOpen={isOpen}
+        onMouseEnter={() => setIsOpen(true)}
+        onMouseLeave={() => setIsOpen(false)}
+      >
         <DropdownTrigger>
           {value}
           <Icon code="expand_more" size={iconSizes._20} />
         </DropdownTrigger>
 
         <DropdownMenuWrapper $position={position}>
-          <DropdownMenu>
+          <DropdownMenu onClick={() => setIsOpen(false)}>
             {withOptions ? (
               <DropdownList>
                 {options?.map((option, index) => {

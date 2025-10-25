@@ -58,8 +58,8 @@ export const DropdownMenu = styled.div`
   border: 1px solid ${colors.borderLight};
   border-radius: 0.75rem;
   box-shadow:
-    0px 12px 16px -4px #10182814,
-    0px 4px 6px -2px #10182808;
+    0 12px 16px -4px #10182814,
+    0 4px 6px -2px #10182808;
 `
 
 export const DropdownTrigger = styled.div`
@@ -75,32 +75,34 @@ export const DropdownTrigger = styled.div`
   }
 `
 
-export const DropdownContainer = styled.div`
+export const DropdownContainer = styled.div<{ $isOpen?: boolean }>`
   position: relative;
   display: flex;
   height: 1.5rem;
   padding: 1rem;
 
-  &:hover {
-    ${DropdownTrigger} {
-      color: ${colors.primary};
-    }
+  ${({ $isOpen }) =>
+    $isOpen &&
+    css`
+      ${DropdownTrigger} {
+        color: ${colors.primary};
+      }
 
-    ${DropdownMenuWrapper} {
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
-    }
+      ${DropdownMenuWrapper} {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
 
-    ${DropdownTrigger} ${StyledIcon} {
-      transform: rotate(180deg);
-    }
+      ${DropdownTrigger} ${StyledIcon} {
+        transform: rotate(180deg);
+      }
 
-    ~ ${DropdownOverlay} {
-      opacity: 1;
-      visibility: visible;
-    }
-  }
+      ~ ${DropdownOverlay} {
+        opacity: 1;
+        visibility: visible;
+      }
+    `}
 `
 
 export const DropdownList = styled.ul`
