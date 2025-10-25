@@ -10,6 +10,14 @@ content:
   block_title: Testimonials
   description: Don't just take our word for it, here's what our partners and clients are saying about us.
   testimonials:
+    - quote: As a developer, HubRise has saved me countless hours by letting me connect my apps to multiple EPOS solutions, delivery platforms, and other business tools through a well-designed API. I can bring far greater value with my restaurant-facing applications. HubRise is robust, built by developers who clearly care about quality, and backed by an exceptionally responsive, knowledgeable support team. A great partner for building better apps for restaurateurs.
+      id: 11
+      person_details:
+        name: Paul Bun
+        job_title: Co-Founder & CEO
+        company: OnyLab, Canada and France
+        logo: testimonials/companies/onylab.png
+      filename: paul-bun.jpeg
     - quote: At Food Hero, we manage 10 brands, each with multiple ordering channels — more than 40 in total. We tested several solutions, including Deliverect, but ultimately chose HubRise. We get responses within the day, and the setup was surprisingly simple — nothing like the others. Orders are sent directly to Lightspeed and display simultaneously on the TicknCook kitchen screens before being dispatched by our delivery staff with the help of Captain.ai. Menus, availability, opening hours — everything is centralised. We've achieved maximum optimisation across all operations, from production to delivery.
       id: 10
       person_details:
