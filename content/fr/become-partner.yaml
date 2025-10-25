@@ -1,0 +1,92 @@
+meta:
+  title: Devenir partenaire | HubRise
+  description:
+content:
+  hero:
+    title:
+      part_1: Une seule API
+      part_2: pour connecter
+      part_3: toutes les applications
+      part_4: dont vos clients ont besoin
+    description: "Nous aidons nos partenaires à réussir en prenant en charge leurs intégrations et en proposant nos applications en marque blanche, adaptées à leur identité visuelle. Nos partenaires gagnent du temps et peuvent se concentrer sur l'essentiel : leur produit."
+  features:
+    - title: API robuste
+      description: Bénéficiez d'une API flexible et robuste pour répondre à une large gamme de besoins d'intégration et gérer les flux de commandes à haut volume exigés par les marques multi-établissements.
+    - title: Intégrations transparentes
+      description: Connectez-vous aux systèmes de caisse, plateformes de livraison, solutions de commande et autres outils métiers pour garantir des opérations fluides et fiables.
+    - title: Service en marque blanche
+      description: Proposez une solution entièrement intégrée sous votre propre marque, avec HubRise en back-end, invisible pour vos clients.
+    - title: Accompagnement à l'intégration
+      description: Bénéficiez d'un accompagnement expert tout au long du partenariat, ainsi que d'outils d'audit pour valider votre intégration et assurer sa mise à jour sur le long terme.
+    - title: Documentation unifiée
+      description: Accédez à une API unique et complète avec une documentation claire couvrant toutes les fonctionnalités HubRise, pour une intégration plus simple et plus rapide pour vos développeurs.
+    - title: Synchronisation en temps réel
+      description: Gardez tous les systèmes alignés grâce à la synchronisation en temps réel des menus, niveaux de stock, commandes, données clients, et réglages opérationnels.
+    - title: Marque personnalisée
+      description: Appliquez votre logo et votre identité visuelle aux applications HubRise pour offrir une expérience fluide et professionnelle à vos utilisateurs.
+    - title: Journaux détaillés
+      description: Consultez nos journaux accessibles et détaillés pour simplifier le diagnostic et obtenir une visibilité complète sur vos intégrations et vos flux de données.
+  benefits:
+    title: Les avantages commerciaux d'une intégration
+    benefit_cards:
+      - title: Mise sur le marché plus rapide
+        description: Accélérez votre stratégie de mise sur le marché grâce à une seule intégration qui ouvre l'accès à plusieurs plateformes de livraison, réduisant ainsi le temps d'onboarding et les frictions commerciales pour vos clients.
+        image: faster-time-to-market.svg
+      - title: Services à forte valeur ajoutée
+        description: Enrichissez votre offre avec des solutions et services tiers intégrés, afin de vous démarquer de la concurrence et de mieux répondre aux besoins opérationnels de vos clients.
+        image: value-added-services.svg
+      - title: Nouvelles sources de revenus
+        description: Générez des revenus additionnels grâce à notre programme de partenariat et créez des opportunités d'upsell en proposant la centralisation des données et des intégrations à votre base de clients existante.
+        image: access-to-new-revenue-streams.svg
+      - title: Meilleure rétention client
+        description: Améliorez l'expérience utilisateur en éliminant les processus manuels et en synchronisant les commandes directement avec les systèmes de caisse — pour une satisfaction client accrue et une fidélité renforcée.
+        image: improved-client-retention.svg
+  middleware:
+    title: HubRise, la solution middleware qui simplifie vos intégrations
+    description: Avec une seule intégration, vous êtes connecté à un écosystème de solutions complémentaires en expansion constante. Les transactions sont stockées dans HubRise, offrant à vos applications un accès en temps réel à votre catalogue produits, vos données clients et vos commandes.
+    content:
+      firstSide: HubRise permet aux éditeurs de logiciels d'enrichir leur produit en proposant des intégrations prêtes à l'emploi avec des systèmes de caisse, des plateformes de commande en ligne, des bornes libre-service, des plateformes de livraison, des outils de fidélité et de marketing, des systèmes de gestion des opérations et des stocks, et bien plus encore.
+      secondSide: Les connexions peuvent être gérées par HubRise ou proposées sous votre propre marque. Nos connexions et applications en marque blanche vous permettent d'élargir votre offre d'intégration sous votre identité, en fournissant à vos clients les outils nécessaires pour compléter votre solution et offrir un environnement totalement intégré — sans la complexité de la gestion de multiples systèmes.
+  apps:
+    title: Les applications HubRise, avec votre marque
+    description: Les éditeurs de logiciels, revendeurs, dark kitchens et chaînes de restaurants peuvent proposer les applications HubRise de gestion des commandes et des produits sous leur propre marque — avec leur logo, favicon, couleurs et nom de domaine.
+    tabs:
+      - label: Votre OrderLine en marque blanche
+        content:
+          title: Votre OrderLine en marque blanche
+          description: Proposez à vos clients une application de gestion des commandes en marque blanche, entièrement adaptée à votre identité visuelle.
+          image: frontpage/white-label.gif
+      - label: Votre Catalog Manager en marque blanche
+        content:
+          title: Votre Catalog Manager en marque blanche
+          description: Permettez à vos clients de gérer facilement leurs produits avec notre application Catalog Manager en marque blanche, personnalisée à votre image.
+          image: become-partner/tabs/catalog-manager.gif
+      - label: |
+          Prochainement : votre Dashboard en marque blanche
+        content:
+          title: |
+            Prochainement : votre Dashboard en marque blanche
+          description: Vous pourrez bientôt offrir à vos clients une application Dashboard en marque blanche, permettant de suivre les statistiques de vente en temps réel, sous votre propre marque.
+          image: become-partner/tabs/branded-dashboard.png
+  metrics:
+    - number: 2M
+      title: Appels API par jour
+    - number: 99,98%
+      title: Disponibilité sur 12 mois
+    - number: 99,95%
+      title: Commandes injectées avec succès
+    - number: 95%
+      title: Appels API en dessous de 100 ms
+  testimonials:
+    title: Ce que disent nos partenaires
+    description: Plus de 100 partenaires dans le monde font confiance à HubRise. [Voir d'autres témoignages](/fr/temoignages).
+    list:
+      - 1
+      - 5
+      - 7
+      - 9
+  action_block:
+    title: Devenez partenaire de HubRise et enrichissez votre solution avec de nouvelles intégrations
+    buttons:
+      - button_label: Contactez-nous
+        button_link: /fr/contactez-nous

@@ -8,7 +8,9 @@ meta:
   description: This page explains why you cannot turn off Orderpad when connecting your store to HubRise with Just Eat Flyt Bridge.
 ---
 
-Just Eat Orderpad must remain switched on to receive orders, even after you connect your store to HubRise. If you switch off your Orderpad, orders will not appear in your HubRise account.
+Just Eat Orderpad must remain switched on to receive orders, even after you connect your store to HubRise.
+
+With the Orderpad switched off, orders might arrive in HubRise, but this is not guaranteed and Just Eat advises against it. If you are in the UK, Ireland, Spain, Italy, or Australia, no orders will arrive in HubRise if the Orderpad is switched off.
 
 After you connect your store to HubRise, you can continue to manage your incoming orders from your Orderpad, or use your connected EPOS instead.
 

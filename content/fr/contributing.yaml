@@ -3,31 +3,39 @@ meta:
   description: Tout le monde peut contribuer à la documentation en ligne de HubRise. Découvrez comment mettre à jour ou compléter une documentation, ou corriger directement une erreur sur notre site.
 content:
   hero:
-    title: Contribuer à la documentation
-    description:
-      paragraph_1: Vous avez repéré une erreur sur notre site, ou vous souhaitez mettre à jour la documentation de votre solution ? Nous vous expliquons comment procéder.
+    slug: contributing
+    title:
+      part_1: Contribuer
+      part_2: à la
+      part_3: documentation
+    description: Vous avez repéré une erreur sur notre site, ou vous souhaitez mettre à jour la documentation de votre solution ? Voici comment procéder.
   thumbs:
     - title: Comment contribuer
       description: Ce que vous devez savoir avant de contribuer.
       to: /fr/contribuer/comment-contribuer
-      icon: fast_forward
+      icon: contribute.svg
     - title: Guide de style
-      description: Conventions de style à suivre par les contributeurs.
+      description: Conventions de style à suivre par les contributeurs.
       to: /fr/contribuer/guide-de-style
-      icon: check
+      icon: style.svg
     - title: Référencer votre solution
       description: Eléments à fournir pour référencer votre solution sur HubRise.
       to: /fr/contribuer/referencer-votre-solution-sur-hubrise
-      icon: edit
+      icon: referral.svg
     - title: Guide des captures d'écran
-      description: Spécifications pour les captures d'écran et convention de nommage des fichiers (en anglais).
+      description: Spécifications pour les captures d'écran et convention de nommage des fichiers (en anglais).
       to: /fr/contribuer/guide-des-captures-ecran
-      icon: computer
+      icon: screenshot.svg
     - title: Guide des vidéos
-      description: Commandes utiles pour générer de courtes vidéos explicatives (en anglais).
+      description: Commandes utiles pour générer de courtes vidéos explicatives (en anglais).
       to: /fr/contribuer/guide-des-videos
-      icon: play_circle
+      icon: video.svg
     - title: Guide des diagrammes
-      description: Instructions pour créer des diagrammes (en anglais).
+      description: Instructions pour créer des diagrammes (en anglais).
       to: /fr/contribuer/guide-des-diagrammes
-      icon: schema
+      icon: diagram.svg
+  action_block:
+    title: Besoin d'aide ?
+    description: Contactez notre équipe si vous avez des questions sur les mises à jour de la documentation.
+    buttons:
+      - button_label: Nous écrire

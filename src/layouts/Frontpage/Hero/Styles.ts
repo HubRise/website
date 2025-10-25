@@ -1,89 +1,83 @@
-import Link from "next/link"
 import styled from "styled-components"
 
-import { breakpoints, colors, fontSizes, lineHeights, mixin } from "@utils/styles"
+import { StyledButton } from "@components/Button/Styles"
+import { PageHeroTitle, StyledPageHero } from "@components/PageHero/Styles"
+import { breakpoints, colors, fontSizes, mixin } from "@utils/styles"
 
-export const Container = styled.div`
-  position: relative;
-  display: flex;
-  flex-flow: column-reverse;
+import { HeroAppColor, linkHeroAppBorderColor } from "./utils"
 
-  @media (min-width: ${breakpoints.large}) {
-    display: block;
-  }
-`
+export const FrontpageHero = styled.div`
+  ${StyledPageHero} {
+    background-color: ${colors.backgroundLightest};
 
-export const Banner = styled.div`
-  background: black url(/images/hero_image.jpg) no-repeat;
-  background-size: cover;
-  background-position-x: 100%;
-  height: 20rem;
+    ${PageHeroTitle} {
+      max-width: 65rem;
+      margin: 0 auto;
+    }
 
-  @media (min-width: ${breakpoints.large}) {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: auto;
-    background-position-x: 50%;
-  }
-`
+    ${StyledButton} {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-export const TextContainer = styled.div`
-  @media (min-width: ${breakpoints.large}) {
-    ${mixin.container};
-    padding: 11rem 0;
-  }
-`
-
-export const TextWrapper = styled.div`
-  @media (min-width: ${breakpoints.large}) {
-    max-width: 45rem;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    position: relative;
-
-    &::before {
-      content: "";
-      background-color: ${colors.primary};
-      width: 9999px;
-      height: 100%;
-      position: absolute;
-      right: 100%;
+    @media (min-width: ${breakpoints.large}) {
+      ${StyledButton} {
+        width: fit-content;
+      }
     }
   }
 `
 
-export const Text = styled.div`
-  padding: 4em 1rem;
-  background-color: ${colors.primary};
-  color: ${colors.white};
-  text-align: center;
+export const AppCategories = styled.div`
+  margin: 3.5rem auto 1rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, min(45vw, 12rem));
+  grid-auto-rows: min(45vw, 12rem);
+  row-gap: 2rem;
 
-  @media (min-width: ${breakpoints.large}) {
-    text-align: left;
-    padding-left: 0;
-    padding-right: 2em;
+  @media (min-width: ${breakpoints.medium}) {
+    grid-template-columns: repeat(3, min(30vw, 12rem));
+    grid-auto-rows: min(30vw, 12rem);
+  }
+
+  @media (min-width: ${breakpoints.extraLarge}) {
+    margin-bottom: 3rem;
+    grid-template-columns: repeat(6, min(15vw, 15rem));
+    grid-auto-rows: min(15vw, 15rem);
   }
 `
 
-export const Title = styled.h1`
-  font-weight: bold;
-  font-size: ${fontSizes._42};
-  line-height: ${lineHeights.compact};
+export const AppCategory = styled.div<{ $index: number }>`
+  ${mixin.centerElement};
+  position: relative;
 `
 
-export const Description = styled.div`
-  margin: 0.75rem 0;
-  font-size: ${fontSizes._18};
+export const Arrow = styled.div<{ $isTop: boolean }>`
+  position: absolute;
+  width: calc(105%);
+  height: calc(55%);
+  ${({ $isTop }) => ($isTop ? "top: -3.5%;" : "bottom: -3.5%;")};
 `
 
-export const Button = styled(Link)`
-  display: inline-block;
-  color: ${colors.primary};
-  background-color: ${colors.backgroundWhite};
+export const Circle = styled.div<{ $color: HeroAppColor }>`
+  ${mixin.centerElement};
+  border-style: solid;
+  border-color: ${({ $color }) => linkHeroAppBorderColor($color)};
+  width: 82%;
+  height: 82%;
+  border-radius: 100%;
+  border-width: min(calc(15px + 0.5vw), 25px);
+  padding: 5%;
+`
 
-  ${mixin.button};
-  ${mixin.buttonOver(colors.white, colors.textDarkest)};
+export const Title = styled.span`
+  line-height: 1.5;
+  font-weight: 700;
+  font-size: ${fontSizes._14};
+
+  @media (min-width: ${breakpoints.extraLarge}) {
+    font-size: ${fontSizes._16};
+  }
 `

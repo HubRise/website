@@ -53,7 +53,7 @@ const field = (status: FieldStatus) => css`
   padding: 0.5rem;
   margin-bottom: 0.3rem;
   color: ${colors.textDarkest};
-  background: ${colors.white};
+  background: ${colors.backgroundWhite};
 
   ${status === "error" &&
   css`

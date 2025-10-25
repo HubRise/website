@@ -239,7 +239,7 @@ content:
           logo: toporder.png
           country: FR
           title: Toporder
-          description: Toporder est un logiciel de caisse tactile sur iPad pour les commerces de proximité. Il centralise encaissement, gestion des stocks, suivi des ventes, fidélisation client, commande en ligne et  identification automatique des clients à l’appel. Compatible avec myPOS, il accepte tous type de paiements.
+          description: Toporder est un logiciel de caisse tactile sur iPad pour les commerces de proximité. Il centralise encaissement, gestion des stocks, suivi des ventes, fidélisation client, commande en ligne et  identification automatique des clients à l'appel. Compatible avec myPOS, il accepte tous type de paiements.
           additional_info:
         - website: https://tickeat.io
           documentation: /fr/apps/tickeat
@@ -269,6 +269,7 @@ content:
           description: Zelty Bridge est l'intégration avancée de Zelty, offrant une synchronisation bidirectionnelle des commandes, la gestion de l'inventaire, le support des variantes, et d'autres fonctionnalités. Compatible avec toute caisse Zelty, cette intégration remplace la précédente.
     - title: Plateformes de livraison de repas
       slug: food-ordering-platforms
+      has_suggest_app: true
       apps:
         - website: https://delicity.com
           documentation: /fr/apps/delicity
@@ -377,8 +378,16 @@ content:
           country: AU, BE, CA, FR, DE, IE, NL, ES, CH, GB
           title: Uber Eats
           description: Uber Eats est une plateforme de commande de repas avec service de livraison à domicile. Les clients peuvent commander en ligne ou via une application mobile. Disponible dans 45 pays et 6.000 villes.
+        - website: https://wolt.com/
+          documentation: /fr/apps/wolt
+          logo: wolt.png
+          country: DE
+          title: Wolt
+          description: Wolt est une plateforme de livraison à domicile qui met en relation les clients, les restaurants, les épiceries et les coursiers. Les commandes peuvent être passées via l’application ou le site web. Le service est disponible dans 30 pays à travers le monde.
+          additional_info: intégration en cours
     - title: Commande en ligne
       slug: online-ordering
+      has_suggest_app: true
       apps:
         - website: https://www.app4.co.uk
           documentation: /fr/apps/app4
@@ -398,7 +407,7 @@ content:
           logo: chataigne.png
           country: CH, FR
           title: Chataîgne
-          description: Châtaigne permet aux restaurants de proposer des services de livraison et de vente à emporter via WhatsApp. Les clients peuvent consulter le menu, passer commande, puis payer de manière sécurisée directement depuis WhatsApp, sans avoir à télécharger d'application ni créer de compte. L’objectif est de simplifier le passage de commandes, en évitant les appels et les frais des plateformes traditionnelles.
+          description: Châtaigne permet aux restaurants de proposer des services de livraison et de vente à emporter via WhatsApp. Les clients peuvent consulter le menu, passer commande, puis payer de manière sécurisée directement depuis WhatsApp, sans avoir à télécharger d'application ni créer de compte. L'objectif est de simplifier le passage de commandes, en évitant les appels et les frais des plateformes traditionnelles.
           additional_info:
         - website: https://dishop.co
           documentation: /fr/apps/dishop
@@ -522,7 +531,7 @@ content:
           logo: tablati.png
           country: MA
           title: Tablati
-          description: Tablati est une solution de commande et de paiement à table via QR code depuis un smartphone. Elle inclut des fonctionnalités comme la gestion des pourboires, la collecte d’avis Google et un programme de fidélité.
+          description: Tablati est une solution de commande et de paiement à table via QR code depuis un smartphone. Elle inclut des fonctionnalités comme la gestion des pourboires, la collecte d'avis Google et un programme de fidélité.
           additional_info: Intégration en cours.
         - website: https://www.tastycloud.fr
           documentation: /fr/apps/tastycloud
@@ -553,6 +562,7 @@ content:
           additional_info:
     - title: Bornes de commande
       slug: self-ordering-kiosks
+      has_suggest_app: true
       apps:
         - website: https://www.bwares.fr
           documentation: /fr/apps/bwares
@@ -582,6 +592,7 @@ content:
           additional_info:
     - title: Gestion de livreurs
       slug: delivery-management
+      has_suggest_app: true
       apps:
         - website: https://biteberry.com
           documentation: /fr/apps/biteberry
@@ -629,7 +640,7 @@ content:
           logo: quick-up.png
           country: GB
           title: QUICK UP
-          description: QUICK UP est un service de livraison à la demande pour restaurants, épiceries et autres commerces de proximité, avec optimisation des tournées, géolocalisation en temps réel des livreurs. QUICK UP permet la réduction des délais d’attente et la maîtrise des coûts de livraison.
+          description: QUICK UP est un service de livraison à la demande pour restaurants, épiceries et autres commerces de proximité, avec optimisation des tournées, géolocalisation en temps réel des livreurs. QUICK UP permet la réduction des délais d'attente et la maîtrise des coûts de livraison.
         - website: https://stuart.com/fr
           documentation: /fr/apps/stuart
           logo: stuart.png
@@ -652,6 +663,7 @@ content:
           additional_info: Intégration en cours.
     - title: Fidélité et marketing
       slug: loyalty-and-marketing
+      has_suggest_app: true
       apps:
         - website: https://fr.como.com
           documentation: /fr/apps/como
@@ -698,6 +710,7 @@ content:
           description: UPXP est la première crypto-monnaie dédiée aux restaurateurs. La solution de fidélité UPXP récompense les clients avec une crypto-monnaie qu'ils peuvent utiliser dans d'autres commerces. Fidélisez les clients sans verser de commissions aux banques et aux solutions tierces.
     - title: Gestion et inventaire
       slug: operations-and-inventory
+      has_suggest_app: true
       apps:
         - website: https://get.apicbase.com/fr
           documentation: /fr/apps/apicbase
@@ -765,6 +778,7 @@ content:
           description: StockTake Online est un système de gestion d'inventaire conçu pour les restaurants, les bars, les discothèques, et plus encore. Il aide à organiser les opérations en simplifiant les achats, en minimisant les déchets et en améliorant la rentabilité.
     - title: Autres applications
       slug: other-apps
+      has_suggest_app: true
       apps:
         - website:
           documentation: /fr/apps/catalog-manager
@@ -777,7 +791,7 @@ content:
           logo: check.png
           country: FR
           title: Check
-          description: Check est une solution de tickets de caisse digitalisés, qui permet aux commerçants de mieux connaître et de fidéliser leurs clients grâce à des outils marketing basés sur les données d’achat.
+          description: Check est une solution de tickets de caisse digitalisés, qui permet aux commerçants de mieux connaître et de fidéliser leurs clients grâce à des outils marketing basés sur les données d'achat.
         - website: https://www.expedy.fr
           documentation: /fr/apps/expedy
           logo: expedy-print.png
@@ -845,3 +859,5 @@ content:
       paragraph_2:
         chunk_1: Nos utilisateurs sont des professionnels à la recherche de solutions pour moderniser leur activité.
         chunk_2: Il y a beaucoup à faire, et les bonnes idées d'aujourd'hui sont les standards de demain.
+    button_label: Commencer l'intégration
+    button_link: /fr/developers

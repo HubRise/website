@@ -14,14 +14,20 @@ meta:
 
 ---
 
-## Prérequis
+## Activer l'intégration HubRise dans Zelty
 
-Avant de connecter Zelty Bridge à HubRise, vous devez obtenir une clé API Zelty. Voici la procédure à suivre :
+Avant de connecter Zelty Bridge à HubRise, vous devez activer l'intégration et obtenir votre clé API depuis le back-office Zelty. Voici comment procéder :
 
-1. Envoyez un e-mail à support@hubrise.com pour demander l'activation de l'intégration Zelty Bridge.
-2. L'équipe HubRise contactera Zelty pour vous.
-3. Zelty vous enverra sous quelques jours ouvrés un lien pour créer votre clé API.
-4. Conservez précieusement cette clé API, puis poursuivez avec la connexion de Zelty Bridge.
+1. Depuis le back-office Zelty, ouvrez la page [Marketplace > Hubrise V2](https://bo.zelty.fr/marketplace/hubrise-v2/status).
+2. Cliquez sur **Activer**.
+
+![Marketplace Zelty - HubRise V2](./images/009-zelty-marketplace.png)
+
+3. L'application HubRise V2 est maintenant activée et votre clé API s'affiche immédiatement.
+
+![Clé API activée](./images/010-zelty-marketplace-enabled.png)
+
+4. Copiez cette clé API, vous en aurez besoin pour l'étape suivante.
 
 ## Connecter Zelty Bridge
 
@@ -37,7 +43,7 @@ Pour connecter Zelty Bridge à HubRise, procédez comme suit :
 
 ![Page de configuration - Étape 1](./images/001-zelty-config-step-1.png)
 
-8. Dans le champ **Clé API**, saisissez la clé API Zelty obtenue à l'étape précédente.
+8. Dans le champ **Clé API**, saisissez la clé API Zelty que vous avez copiée depuis la marketplace Zelty.
 9. Cliquez sur **Terminer la configuration**.
 10. La page de configuration complète s'affiche. Pour plus d'informations sur les différentes options disponibles, consultez la page [Configuration](/apps/zelty-bridge/configuration).
 11. Une fois la configuration terminée, vous pouvez cliquer sur **Enregistrer** pour enregistrer vos paramètres.
@@ -64,11 +70,16 @@ Pour donner accès à Zelty, procédez comme suit :
 
 ## Déconnecter Zelty Bridge
 
-Pour déconnecter Zelty Bridge de HubRise, suivez ces étapes :
+Pour déconnecter Zelty Bridge, suivez ces étapes :
 
 1. Depuis le back-office de HubRise, sélectionnez **CONNEXIONS** dans le menu de gauche.
 2. Trouvez Zelty Bridge dans la liste des applications connectées.
 3. Cliquez sur **Actions** > **Déconnecter**.
 4. Confirmez la déconnexion.
+
+Vous pouvez également désactiver l'intégration depuis Zelty :
+
+1. Depuis le back-office Zelty, ouvrez la page [Marketplace > Hubrise V2](https://bo.zelty.fr/marketplace/hubrise-v2/status).
+2. Dans le menu **Gérer**, cliquez sur **Désactiver**.
 
 Si vous souhaitez seulement stopper temporairement la réception de commandes depuis HubRise, vous pouvez bloquer la connexion entre Zelty Bridge et HubRise au lieu de la déconnecter. Pour plus d'informations, voir [Bloquer ou déconnecter une application](/docs/connections#block-or-disconnect).

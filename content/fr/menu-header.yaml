@@ -1,15 +1,65 @@
 - title: Accueil
   to: /fr
   mobile_only: true
-- title: Apps
+- title: Intégrations
   to: /fr/apps
+- title: Apps Incluses
+  content:
+    included_apps:
+      - title: OrderLine
+        description: Centralisez vos commandes
+        link_label: En savoir plus
+        link: /fr/orderline
+        image: orderline.png
+      - title: Catalog Manager
+        description: Gérez vos produits en un seul endroit
+        link_label: En savoir plus
+        link: /fr/catalog-manager
+        image: catalog-manager.png
+      - title: Tableau de bord
+        description: Consultez vos rapports de vente
+        link_label: En savoir plus
+        link: /fr/dashboard
+        image: dashboard.png
 - title: Tarifs
   to: /fr/tarifs
 - title: Développeurs
-  to: /fr/developers
-- title: Blog
-  to: /fr/blog
-- title: Aide
-  to: /fr/docs
-- title: FAQ
-  to: /fr/faqs
+  content:
+    resources:
+      links:
+        - link_label: Documentation
+          link: /fr/developers
+          link_description: Documentation API, guides de démarrage et d'intégration.
+        - link_label: Journal des changements
+          link: /developers/changelog
+          link_description: Nouveautés et améliorations.
+        - link_label: Devenir Partenaire
+          link: /fr/devenir-partenaire
+          link_description: Développez votre activité grâce aux intégrations et aux outils en marque blanche.
+- title: Ressources
+  content:
+    resources:
+      get_in_touch:
+        main_question: Des besoins spécifiques ?
+        question: Vous préférez en parler ?
+        button_label: Contactez-nous
+        button_link: /fr/contactez-nous
+      links:
+        - link_label: Aide
+          link: /fr/docs
+          link_description: Réponses rapides pour naviguer et utiliser HubRise.
+        - link_label: Blog
+          link: /fr/blog
+          link_description: Evolutions du produit, conseils et témoignages.
+        - link_label: FAQ
+          link: /fr/faqs
+          link_description:
+        - link_label: Témoignages
+          link: /fr/temoignages
+          link_description: Retours de nos clients et partenaires.
+        - link_label: Recruter un Expert
+          link: /fr/partenaires
+          link_description: Des partenaires expérimentés pour vos développements.
+        - link_label: Nous contacter
+          link: /fr/contactez-nous
+          link_description:

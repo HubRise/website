@@ -53,11 +53,6 @@ Get location details.
   "preparation_time": 15,
   "order_acceptance": {
     "mode": "normal"
-  },
-  "custom_fields": {
-    "delivery": {
-      "door_time": "35"
-    }
   }
 }
 ```
@@ -196,11 +191,6 @@ If the `order_acceptance` object is provided, it must match one of the following
     "mode": "busy",
     "resume_at": "2025-06-04T19:30:00+02:00",
     "extra_preparation_time": 25
-  },
-  "custom_fields": {
-    "delivery": {
-      "door_time": "35"
-    }
   }
 }
 ```

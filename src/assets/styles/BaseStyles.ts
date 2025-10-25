@@ -5,6 +5,7 @@ import { colors, lineHeights, sizes } from "@utils/styles"
 export const BaseStyles = createGlobalStyle`
   html {
     scroll-padding-top: ${sizes.headerHeight};
+    scroll-behavior: smooth;
   }
 
   body {
@@ -26,7 +27,7 @@ export const BaseStyles = createGlobalStyle`
   optgroup,
   select,
   textarea {
-    line-height: ${lineHeights.comfortable};
+    line-height: ${lineHeights.text};
   }
 
     // Hide the "protected by reCaptcha" badge in the bottom left of the screen

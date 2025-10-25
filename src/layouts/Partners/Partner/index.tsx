@@ -1,16 +1,20 @@
-import { Partners } from "@layouts/Partners/types"
+import type { MDXRemoteSerializeResult } from "next-mdx-remote"
+
+import SerializedMdxContent from "@components/SerializedMdxContent"
+import { Partner } from "@layouts/Partners/types"
 import { ContentImage } from "@utils/contentImage"
 import { text } from "@utils/misc"
 
 import { Description, Logo, Title, Information, Name, PartnerImage, Website, Card } from "./Styles"
 
 interface PartnerProps {
-  partner: Partners
+  partner: Partner
   image?: ContentImage
+  descriptionMdx?: MDXRemoteSerializeResult
 }
 
-const Partner = ({ partner, image }: PartnerProps): JSX.Element => {
-  const { descriptions, name, site_url } = partner
+const Partner = ({ partner, image, descriptionMdx }: PartnerProps): JSX.Element => {
+  const { name, site_url } = partner
 
   return (
     <Card>
@@ -24,9 +28,11 @@ const Partner = ({ partner, image }: PartnerProps): JSX.Element => {
           </Website>
         </Title>
 
-        {descriptions.map((description, index) => (
-          <Description key={index}>{text(description)}</Description>
-        ))}
+        {descriptionMdx && (
+          <Description>
+            <SerializedMdxContent content={descriptionMdx} />
+          </Description>
+        )}
       </Information>
     </Card>
   )

@@ -7,11 +7,18 @@
   },
   "blog": {
     "hero": {
-      "title": "The HubRise Blog",
+      "meta_title": "The HubRise Blog",
+      "title_part_1": "The HubRise",
+      "title_part_2": "Blog",
       "description": "New apps, evolutions of the API and real-world uses of HubRise"
     },
     "other_posts": "Other posts",
-    "title": "Blog"
+    "title": "Blog",
+    "get_started": {
+      "title": "Have questions about this blog post?",
+      "description": "Whether you're looking for more details about something specific in this article or want to find out how HubRise can help your business, we're here for you.",
+      "button_label": "Contact us"
+    }
   },
   "documentation": {
     "app_info": {
@@ -41,8 +48,8 @@
     },
     "header": {
       "buttons": {
-        "signup": "Sign up",
-        "login": "Log in"
+        "signup": "Sign Up",
+        "login": "Log In"
       }
     },
     "footer": {
@@ -86,8 +93,7 @@
     ],
     "colon": ":",
     "read_more": "Read More",
-    "posted_on": "Posted on",
-    "by": "by",
+    "copy_link": "Copy Link",
     "success": "Success",
     "failure": "Failure",
     "messages": {
