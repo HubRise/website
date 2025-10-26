@@ -40,7 +40,7 @@ content:
   features:
     title: Connect All Your Tools. Keep Your Systems in Sync.
     description: |
-      Connect your digital solutions, sales channels, delivery services, marketing tools, and more. Eliminate the hassle of managing product catalogs and inventory across multiple platforms. Centralise orders, customer information and analytics in a unified workspace.
+      Connect your digital solutions, sales channels, delivery services, marketing tools, and more. Eliminate the hassle of managing product catalogs and inventory across multiple platforms. Centralise orders, customer database and analytics in a unified workspace.
     features_cards:
       - title: Connect Apps
         description: |
@@ -48,7 +48,7 @@ content:
         image: use-connect-apps.png
       - title: Manage Products
         description: |
-          Centralise your menus or product catalogs for all your sales channels and locations, in your EPOS or a HubRise app. Set different products and prices for each channel. Handle complex catalogs with product sizes, options, nutrition information, tax, and promotions.
+          Centralise your menus or product catalogs for all your sales channels and locations, in your EPOS or a HubRise app. Set different availabilities and prices for each channel. Handle complex catalogs with product sizes, options, nutrition information, tax, and promotions.
         image: use-manage-products.png
       - title: Synchronise Inventory
         description: |

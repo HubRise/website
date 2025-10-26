@@ -62,16 +62,16 @@ content:
     image: antoine.png
     name: Antoine Monnier
     job_title: Fondateur, HubRise
-    text: "Nous offrons une alternative solide à Deliverect avec des fonctionnalités comparables pour un coût 2 à 5 fois inférieur. En tant qu'entreprise autofinancée, nous ne sommes pas soumis aux investisseurs qui exigent une maximisation rapide des profits. Cela se traduit par une tarification stable et juste, et un engagement à long terme sur ce qui compte vraiment pour nos clients : la technologie et le support."
+    text: "HubRise offre une alternative solide à Deliverect, avec des fonctionnalités comparables, pour un coût 2 à 5 fois inférieur. En tant qu'entreprise autofinancée, nous ne sommes pas soumis à des investisseurs exigeant une maximisation rapide des profits. Cela se traduit par une tarification stable et juste, et un engagement à long terme sur ce qui compte vraiment pour nos clients : le produit, le support et les intégrations."
   why_choose:
     title: Pourquoi choisir HubRise ?
     cards:
       - title: Fonctionnalités & prix
-        text: "Des fonctionnalités comparables à Deliverect, à un tarif juste et stable : une seule hausse depuis 2015. Intégrations illimitées et pas de frais d'installation."
+        text: "HubRise se concentre sur les apps et la qualité des intégrations, à un coût d'abonnement juste et stable : une seule hausse depuis 2015."
       - title: Support expert et réactif
-        text: "Notre modèle nous permet de nous concentrer sur l'essentiel : un produit robuste et un support client de qualité. Vous échangez directement avec des experts techniques qui connaissent parfaitement la plateforme et peuvent résoudre vos problèmes rapidement."
-      - title: Fiabilité & transparence
-        text: "API ouverte et journaux complets accessibles dans le back-office. Infrastructure robuste opérée par une équipe d'ingénieurs, pensée pour les environnements exigeants."
+        text: "Notre modèle nous permet d'offrir un support client avec des experts techniques, pas des robots IA. Vous échangerez directement avec des personnes qui connaissent bien la plateforme et peuvent résoudre vos problèmes rapidement."
+      - title: Transparence & fiabilité
+        text: "Journaux d'API complets disponibles dans le back-office, accessibles aux clients, ingénieurs et équipes de support. Infrastructure robuste conçue pour les environnements exigeants."
   special_pricing:
     title: Tarifs spéciaux
     chain_and_franchise:
@@ -102,7 +102,7 @@ content:
       special_proposal_html: Frais d'installation de 25 € par marque et par plateforme, négociables pour les installations groupées.
     resellers_and_partners:
       title: Partenaires et Revendeurs
-      description: HubRise offre un programme de partenariat, avec ou sans marque blanche.
+      description: HubRise offre un programme de partenariat, en marque grise ou marque blanche.
       button_label: En savoir plus
       button_link: /fr/devenir-partenaire
   action_block:
