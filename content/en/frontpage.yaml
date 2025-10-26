@@ -9,7 +9,7 @@ hero:
     part_2: Restaurants
     part_3: and
     part_4: Retail
-  description: Connect your EPOS, your delivery platforms, and your digital solutions in one ecosystem. Manage orders, sync products, and keep inventory up to date.
+  description: Connect your EPOS, delivery platforms, and other digital solutions within a single ecosystem. Manage orders, synchronise products, and centralise inventory.
   button_label: See All Integrations
   button_link: /apps
   app_categories:
@@ -28,7 +28,7 @@ hero:
 
 content:
   metrics:
-    - number: 35+
+    - number: 40+
       title: EPOS integrated
     - number: 110+
       title: Integrations
@@ -40,27 +40,27 @@ content:
   features:
     title: Connect All Your Tools. Keep Your Systems in Sync.
     description: |
-      Connect your digital solutions, sales channels, delivery services, marketing tools, and more. Eliminate the hassle of managing product catalogs and inventory across multiple platforms. Centralise orders, customers and analytics in a unified workspace.
+      Connect your digital solutions, sales channels, delivery services, marketing tools, and more. Eliminate the hassle of managing product catalogs and inventory across multiple platforms. Centralise orders, customer database and analytics in a unified workspace.
     features_cards:
       - title: Connect Apps
         description: |
-          Use HubRise to connect your EPOS as well as other solutions you use in your day to day operations: table ordering, online ordering, food delivery platforms, self ordering kiosks, e-marketing, inventory management solutions, cloud printers, and more.
+          Use HubRise to connect your EPOS and solutions you use in your day to day operations: table ordering, online ordering, food delivery platforms, self ordering kiosks, kitchen display screens, e-marketing, inventory management solutions, cloud printers, delivery services, and more.
         image: use-connect-apps.png
       - title: Manage Products
         description: |
-          Centralise your product catalogs for all your sales channels and locations. Set different products and prices as needed. Handle complex catalogs with product sizes, multiple options, nutrition information, tax, and promotions.
+          Centralise your menus or product catalogs for all your sales channels and locations, in your EPOS or a HubRise app. Set different availabilities and prices for each channel. Handle complex catalogs with product sizes, options, nutrition information, tax, and promotions.
         image: use-manage-products.png
       - title: Synchronise Inventory
         description: |
-          Synchronise inventory with your EPOS, or manually snooze products in our app. Changes are instantly reflected across all channels, so customers only see what's available and you avoid negative reviews.
+          Synchronise inventory with your EPOS, or manually snooze products in a HubRise app. Changes are instantly reflected across all channels, so customers only see what's really available. Eliminate unnecessary calls to change orders, and avoid negative reviews.
         image: use-synchronise-inventory.png
       - title: Build a Customer Database
         description: |
-          Collect and centralise customer information from all your sales channels in a unified list. Share it with targeted marketing apps to boost engagement and build loyalty.
+          Collect and centralise customer information from all your sales channels and EPOS into a unified database. Share your customer database with targeted marketing apps to boost engagement and build loyalty.
         image: use-customer-database.png
       - title: Centralise Orders
         description: |
-          Send all orders to your EPOS, or use HubRise to view and manage orders from all sales channels in one app. Update statuses, track drivers, print receipts, adjust opening hours, or pause online stores—all in one click.
+          Send orders to your EPOS, or use HubRise to view and manage orders from all sales channels in one app. Update statuses, track drivers, print receipts, adjust opening hours, or pause online stores. The intuitive interface requires minimal staff training.
         image: use-centralise-orders.png
       - title: Make Informed Decisions
         description: |
@@ -75,11 +75,12 @@ content:
     description: |
       No setup fees. No commitment. No hidden costs.
       Unlimited number of connections per location.
+      Volume discount for chains and franchises.
     button_label: View Pricing Page
     button_link: /pricing
 
   included_apps:
-    title: Included Apps with Your Subscription
+    title: Apps Included with Your Subscription
     description: |
       These apps developed by HubRise are included in your subscription. Used by small businesses and chains alike, they complement the features of your existing solutions.
     apps:
