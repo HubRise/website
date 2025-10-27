@@ -19,7 +19,7 @@ app_info:
 
 ## Description
 
-EatsTek est une entreprise britannique spécialisée dans le commerce de détail et la restauration. Sa borne de commande en livre-service et son logiciel de caisse simplifie le processus de commande.
+EatsTek est une entreprise britannique spécialisée dans le commerce de détail et la restauration. Sa borne de commande en livre-service et son logiciel de caisse simplifient le processus de commande.
 
 ## Fonctionnalités de l'intégration
 

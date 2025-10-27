@@ -53,7 +53,7 @@ content:
           logo: eatstek.png
           country: GB
           title: EatsTek
-          description: EatsTek is a UK-based company specialising in retail and hospitality. Its self-ordering kiosk and EPOS solution streamline the ordering and checkout experience.
+          description: Eatstek is a UK-based EPOS and self-service ordering kiosk solution that simplifies the ordering process.
         - website: https://www.epostechnologies.co.uk
           documentation: /apps/epos-technologies
           logo: epostechnologies.png

@@ -53,7 +53,7 @@ content:
           logo: eatstek.png
           country: GB
           title: EatsTek
-          description: Eatstek est une entreprise britannique spécialisée dans le commerce de détail et la restauration. Sa borne de commande en livre-service et son logiciel de caisse simplifie le processus de commande.
+          description: Eatstek est une solution britannique de logiciel de caisse et de borne de commande en livre-service, qui simplifie le processus de commande.
         - website: https://www.epostechnologies.co.uk
           documentation: /fr/apps/epos-technologies
           logo: epostechnologies.png
