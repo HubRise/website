@@ -28,7 +28,7 @@ content:
           logo: bonappio.png
           country:
           title: BonAppio
-          description: BonAppio est un logiciel de caisse tout-en-un pour la restauration au Pays-Bas. Il comprend des modules dédiés pour la commande en ligne, la commande via QR code, des bornes, les écrans de cuisine, les canaux marketing, la planification du personnel, la gestion des stocks, la réservation de tables et bien plus encore.
+          description: BonAppio est un logiciel de caisse tout-en-un pour la restauration aux Pays-Bas. Il comprend des modules dédiés pour la commande en ligne, la commande via QR code, des bornes, les écrans de cuisine, les canaux marketing, la planification du personnel, la gestion des stocks, la réservation de tables et bien plus encore.
           additional_info:
         - website: https://www.carrepos-online.fr
           documentation: /fr/apps/carre-pos
