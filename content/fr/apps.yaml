@@ -23,6 +23,13 @@ content:
           title: Adipos
           description: Adipos est une solution de caisse pour iOS et Android. Elle est adaptée aux besoins de la restauration en salle, livraison et click & collect, pour les entreprises mono ou multi établissements. Adipos propose des applications interconnectées, dont des bornes de commande, une solution de commande en ligne et un écran cuisine.
           additional_info:
+        - website: https://bonappio.com
+          documentation: /fr/apps/bonappio
+          logo: bonappio.png
+          country:
+          title: BonAppio
+          description: BonAppio est un logiciel de caisse tout-en-un pour la restauration au Pays-Bas. Il comprend des modules dédiés pour la commande en ligne, la commande via QR code, des bornes, les écrans de cuisine, les canaux marketing, la planification du personnel, la gestion des stocks, la réservation de tables et bien plus encore.
+          additional_info:
         - website: https://www.carrepos-online.fr
           documentation: /fr/apps/carre-pos
           logo: carrepos.png

@@ -23,6 +23,13 @@ content:
           title: Adipos
           description: Adipos is a Point of Sales for iOS and Android dedicated to catering. It covers the needs of dine-in, delivery and Click & Collect, for single or multi-store setups. Adipos comes with a number of interconnected applications, including self ordering kiosks, online ordering and a Kitchen Display System.
           additional_info:
+        - website: https://bonappio.com
+          documentation: /apps/bonappio
+          logo: bonappio.png
+          country:
+          title: BonAppio
+          description: BonAppio is an all-in-one EPOS for the hospitality industry in Netherlands. It includes modules for online ordering, self-service kiosks, QR code ordering, kitchen screens, marketing channels, staff scheduling, inventory management, table reservations and more.
+          additional_info:
         - website: https://www.carrepos-online.fr
           documentation: /apps/carre-pos
           logo: carrepos.png
