@@ -48,6 +48,12 @@ content:
           country: FR
           title: Drive Eat
           description: Drive Eat propose un logiciel de caisse combiné à des solutions de commande digitale pour les restaurants, snacks et boulangeries. Ses services incluent des bornes de commande, des applications mobiles, des solutions Click & Collect, des écrans cuisine et des monnayeurs, le tout conçu pour optimiser les opérations, réduire les temps d'attente et améliorer l'expérience client.
+        - website: https://www.eatstek.co.uk
+          documentation: /fr/apps/eatstek
+          logo: eatstek.png
+          country: GB
+          title: EatsTek
+          description: Eatstek est une entreprise britannique spécialisée dans le commerce de détail et la restauration. Sa borne de commande en livre-service et son logiciel de caisse simplifie le processus de commande.
         - website: https://www.epostechnologies.co.uk
           documentation: /fr/apps/epos-technologies
           logo: epostechnologies.png
@@ -660,7 +666,7 @@ content:
           country: AU, CA, FR, DE, ES, GB
           title: Uber Direct
           description: Uber Direct est un service de livraison en marque blanche proposé par Uber. Il permet aux entreprises d'envoyer des produits ou colis à leurs clients en s'appuyant sur le vaste réseau de chauffeurs d'Uber Eats.
-          additional_info: Intégration en cours.
+          additional_info:
     - title: Fidélité et marketing
       slug: loyalty-and-marketing
       has_suggest_app: true
