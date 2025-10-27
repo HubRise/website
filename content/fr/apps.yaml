@@ -156,7 +156,7 @@ content:
           country: GB
           title: Panda EPOS
           description: Panda EPOS centralise les commandes de tous les canaux, le fichier clients et le menu. Il offre une plate-forme unique pour les restaurants avec un ou plusieurs emplacements pour gérer les livraisons et les commandes à emporter.
-          additional_info: Intégration en cours.
+          additional_info:
         - website: https://www.partech.com/pixel-point-software
           documentation: /fr/apps/pixelpoint-bridge
           logo: par-pixelpoint-web-api.png

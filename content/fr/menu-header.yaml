@@ -31,7 +31,7 @@
           link: /fr/developers
           link_description: Documentation API, guides de démarrage et d'intégration.
         - link_label: Journal des changements
-          link: /developers/changelog
+          link: /fr/developers/changelog
           link_description: Nouveautés et améliorations.
         - link_label: Devenir Partenaire
           link: /fr/devenir-partenaire
