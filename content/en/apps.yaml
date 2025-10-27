@@ -55,6 +55,12 @@ content:
           country: FR
           title: Drive Eat
           description: Drive Eat provides an EPOS system combined with digital ordering solutions for restaurants, snack bars, and bakeries. It includes kiosks, mobile apps, Click & Collect, kitchen displays, and cash payment machines, all designed to streamline operations, reduce waiting times, and improve the customer experience.
+        - website: https://www.eatstek.co.uk
+          documentation: /apps/eatstek
+          logo: eatstek.png
+          country: GB
+          title: EatsTek
+          description: Eatstek is a UK-based EPOS and self-service ordering kiosk solution that simplifies the ordering process.
         - website: https://www.epostechnologies.co.uk
           documentation: /apps/epos-technologies
           logo: epostechnologies.png
