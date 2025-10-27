@@ -48,6 +48,12 @@ content:
           country: FR
           title: Drive Eat
           description: Drive Eat propose un logiciel de caisse combiné à des solutions de commande digitale pour les restaurants, snacks et boulangeries. Ses services incluent des bornes de commande, des applications mobiles, des solutions Click & Collect, des écrans cuisine et des monnayeurs, le tout conçu pour optimiser les opérations, réduire les temps d'attente et améliorer l'expérience client.
+        - website: https://www.eatstek.co.uk
+          documentation: /fr/apps/eatstek
+          logo: eatstek.png
+          country: GB
+          title: EatsTek
+          description: Eatstek est une solution britannique de logiciel de caisse et de borne de commande en livre-service, qui simplifie le processus de commande.
         - website: https://www.epostechnologies.co.uk
           documentation: /fr/apps/epos-technologies
           logo: epostechnologies.png
