@@ -1,7 +1,7 @@
 ---
 title: Catalog Variants
 path_override: catalog-variants
-date: 2023-05-10
+date: 2024-07-10
 author: Antoine Monnier
 meta:
   title: Catalog variants | Blog | HubRise
