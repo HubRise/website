@@ -15,14 +15,8 @@ app_info:
   category: Point of Sales
   availability: United Kingdom, Australia and New Zealand
   price_range: From £29 / month
-  website: https://nextorder.com/en-gb
+  website: https://nextorder.com
   contact: "+44 330 818 7219 / support@nextorder.com"
----
-
----
-
-**IMPORTANT NOTE:** Full documentation of this integration will be available soon.
-
 ---
 
 ## Description
@@ -43,7 +37,15 @@ Connecting Next Order to HubRise allows your EPOS to:
 
 - Pull orders from HubRise, including order status.
 - Pull customer information from HubRise.
+- Push orders into HubRise, including order status.
 - Push a catalog into HubRise.
+- Synchronise opening hours with HubRise.
+
+---
+
+**IMPORTANT NOTE** : Next Order is working on a major integration updates to synchronise inventory with HubRise, as well as the average preparation time and the final delivery time. These integration features will be supported in the future. Contact Next Order for more information.
+
+---
 
 Next Order can be connected to HubRise via the Next Order support line.
 
