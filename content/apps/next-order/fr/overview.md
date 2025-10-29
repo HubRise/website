@@ -15,14 +15,8 @@ app_info:
   category: Logiciels de caisse
   availability: Royaume-Uni, Australie et Nouvelle-Zélande
   price_range: A partir de 75€ / mois
-  website: https://nextorder.com/fr-fr
+  website: https://nextorder.com
   contact: "+44 330 818 7219 / support@nextorder.com"
----
-
----
-
-**REMARQUE IMPORTANTE :** Une documentation complète de cette intégration sera bientôt disponible.
-
 ---
 
 ## Description
@@ -43,7 +37,15 @@ Connecter Next Order à HubRise permet à votre logiciel de caisse de :
 
 - Recevoir les commandes de HubRise, dont les statuts de commande.
 - Recevoir les informations clients de HubRise.
+- Envoyer les commandes à HubRise, dont les statuts de commande.
 - Envoyer un catalogue à HubRise.
+- Synchroniser les horaires d'ouverture avec HubRise.
+
+---
+
+**REMARQUE IMPORTANTE :** Next Order travaille sur une mise à jour majeure de l’intégration afin de synchroniser les stocks avec HubRise, ainsi que les temps moyens de préparation et de l'horaire définitif de livraison. Ces fonctionnalités d’intégration seront bientôt possible. Contactez Next Order pour plus d’informations.
+
+---
 
 Next Order peut être connecté à HubRise via le support de Next Order.
 
