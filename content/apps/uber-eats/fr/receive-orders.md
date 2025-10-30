@@ -70,9 +70,13 @@ Les autres statuts HubRise ne sont ni pris en charge, ni envoyés à Uber Eats.
 
 ### Lorsque le statut change dans Uber Eats
 
-Quand les clients annulent leurs commandes, Uber Eats les marque immédiatement comme `cancelled` (annulée) dans HubRise.
+Uber Eats actualise les statuts de commande dans HubRise dans les cas suivants :
 
-Lorsqu'Uber Eats rejette des commandes car l'accusé de réception n'a pas été effectué à temps, cela n'actualise pas leur statut dans HubRise.
+- Quand un client annule une commande, Uber Eats la marque immédiatement comme `cancelled` (annulée) dans HubRise.
+- Pour les commandes livrées par Uber Eats, le statut est actualisé en `in_delivery` (en livraison) quand le livreur quitte le restaurant, et en `completed` (terminée) une fois la commande livrée.
+- Si la livraison échoue, Uber Eats actualise le statut en `delivery_failed` (échec de livraison).
+
+Cependant, si Uber Eats rejette une commande qui n'a pas été acceptée à temps, le statut n'est pas actualisé dans HubRise.
 
 ## Suivi de livraison {#delivery-tracking}
 

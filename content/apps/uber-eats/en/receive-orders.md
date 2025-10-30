@@ -70,9 +70,13 @@ Other HubRise statuses are not supported and are not sent to Uber Eats.
 
 ### When the Status Changes in Uber Eats
 
-When eaters cancel their orders, Uber Eats immediately marks them as `cancelled` on HubRise.
+Uber Eats updates order statuses in HubRise in the following cases:
 
-When Uber Eats rejects orders because you fail to acknowledge them in time, it does not update their status on HubRise.
+- When an eater cancels an order, Uber Eats immediately marks it as `cancelled` in HubRise.
+- For orders delivered by Uber Eats, the status is updated to `in_delivery` when the driver leaves the restaurant, and to `completed` once the order has been delivered.
+- If delivery fails, Uber Eats updates the status to `delivery_failed`.
+
+However, if Uber Eats rejects an order because it was not acknowledged in time, the status is not updated in HubRise.
 
 ## Delivery Tracking {#delivery-tracking}
 
