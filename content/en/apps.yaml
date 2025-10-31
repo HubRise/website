@@ -776,7 +776,7 @@ content:
           country:
           title: Sage X3
           description: Sage X3 is an ERP software designed for medium to large businesses. It offers features of financial management, inventory control, production planning, and procurement, helping to streamline operations and improve decision-making.
-          additional_info: Integration made by ERPExpert.
+          additional_info: Integration made by ERP Expert.
         - website: https://www.somm-it.com/
           documentation: /apps/somm-it
           logo: somm-it.png
