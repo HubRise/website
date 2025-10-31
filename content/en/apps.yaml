@@ -513,6 +513,12 @@ content:
           title: servier.bar
           description: servier.bar offers ordering solutions designed for restaurants and hotels. These solutions allow customers to order and pay directly from their smartphones via a web app, to improve service without hiring additional staff.
           additional_info:
+        - website: https://www.smartendr.com
+          documentation: /apps/smartendr
+          logo: smartendr.png
+          country: BE
+          title: Smartendr
+          description: Smartendr provides ordering and loyalty solutions for hospitality. It simplifies ordering and uses AI to improve customer engagement.
         - website: https://www.shopify.com
           documentation: /apps/shopify
           logo: shopify.png
