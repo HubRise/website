@@ -15,8 +15,8 @@ app_info:
   category: Operations and Inventory
   availability: Worldwide
   price_range:
-  website: https://www.gigavee.com
-  contact: info@gigavee.com / +61 2 8005 8183
+  website: https://www.erpexpert.com.au
+  contact: +61 2 5563 2112
 ---
 
 ## Description
